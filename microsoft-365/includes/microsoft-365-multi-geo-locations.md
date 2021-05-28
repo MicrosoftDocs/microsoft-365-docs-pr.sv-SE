@@ -1,18 +1,19 @@
 
-|  Geo-plats               |  Kodrad  |  plats för eDiscovery-data        |
+|  Geoplats               |  Kod  |  eDiscovery-dataplats        |
 |:----------------------------|:-------|:---------------------------------|
-|Asia-Pacific                 |PROCEDUR     |Systemdata Center för Sydostasien och Östasien|
-|Australien                    |Australien     |Systemdata Center för Sydostasien och Östasien|
-|Kanada                       |VÄLJA     |AMERIKANSKA data Center                    |
-|Europe/Mellanöstern/Afrika|EUR     |Europe-datacenter                |
-|Frankrike                       ||     |Europe-datacenter                |
-|Tyskland                      |DEU     |Europe-datacenter                |
-|Indien                        |IND     |Systemdata Center för Sydostasien och Östasien|
-|Japan                         |JPN     |Systemdata Center för Sydostasien och Östasien|
-|Korea                        |KOR     |Systemdata Center för Sydostasien och Östasien|
-|Nordamerika                |Vietnam     |AMERIKANSKA data Center                    |
-|Norge                       |BEHÖVS     |(eDiscovery data plats snart)|
-|Sydafrika                 |ZAF     |Systemdata Center för Sydostasien och Östasien|
-|Schweiz                  |CHE     |Europe-datacenter                |
-|Förenade Arabemiraten         |UPPDATERAS     |Systemdata Center för Sydostasien och Östasien|
-|Storbritannien               |GBR     |Europe-datacenter                |
+|Asia-Pacific                 |APC     |Datacenter i Sydostasien eller Östasien|
+|Australien                    |AUS     |Datacenter i Sydostasien eller Östasien|
+|Brasilien                       |BRA     |(eDiscovery-dataplats kommer snart)|
+|Kanada                       |CAN     |Datacenter i USA                    |
+|Europa/Mellanöstern/Afrika|EUR     |Datacenter i Europa                |
+|Frankrike                       |FRA     |Datacenter i Europa                |
+|Tyskland                      |DEU     |Datacenter i Europa                |
+|Indien                        |IND     |Datacenter i Sydostasien eller Östasien|
+|Japan                         |JPN     |Datacenter i Sydostasien eller Östasien|
+|Korea                         |KOR     |Datacenter i Sydostasien eller Östasien|
+|Nordamerika                |NAM     |Datacenter i USA                    |
+|Norge                       |NOR     |(eDiscovery-dataplats kommer snart)|
+|Sydafrika                 |ZAF     |Datacenter i Sydostasien eller Östasien|
+|Schweiz                  |CHE     |Datacenter i Europa                |
+|Förenade Arabemiraten         |ARE     |Datacenter i Sydostasien eller Östasien|
+|Storbritannien               |GBR     |Datacenter i Europa                |

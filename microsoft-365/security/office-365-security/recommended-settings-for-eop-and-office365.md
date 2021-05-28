@@ -19,12 +19,12 @@ ms.collection:
 description: Vad är metodtips för Exchange Online Protection (EOP) och Defender för Office 365 säkerhetsinställningar? Vilka är de aktuella rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vad får du om du även använder Defender för Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: b6661c31d0cc05a1bdfd51de986af1e7b22c9d70
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683277"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696532"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet
 
@@ -44,7 +44,7 @@ Information om hur du automatiskt använder standardinställningarna eller strik
 > [!NOTE]
 > Skräppostregeln måste aktiveras på postlådor för att filtreringen ska fungera ordentligt. Det är aktiverat som standard, men du bör kontrollera om filtrering inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-I den här artikeln beskrivs standardinställningarna och även de rekommenderade inställningarna Standard och Strikt för att skydda dina användare.
+I den här artikeln beskrivs standardinställningarna och även de rekommenderade inställningarna Standard och Strikt för att skydda dina användare. Tabellerna innehåller inställningarna i Säkerhetscenter Microsoft 365 PowerShell (Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell för organisationer utan Exchange Online postlådor).
 
 > [!TIP]
 > Med Office 365 orCA-modulen (Advanced Threat Protection Recommended Configuration Analyzer) för PowerShell kan du (administratörer) hitta de aktuella värdena i de här inställningarna. Mer specifikt genererar **cmdlet:en Get-ORCAReport** en bedömning av skydd mot skräppost, nätfiske och andra inställningar för meddelanden. Du kan ladda ned ORCA-modulen hos <https://www.powershellgallery.com/packages/ORCA/> .
@@ -65,26 +65,26 @@ Information om hur du skapar och konfigurerar principer för skydd mot skräppos
 |---|:---:|:---:|:---:|---|
 |**Identifieringsåtgärd** för skräppost <p> _SpamAction_|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Sätt meddelande i karantän** <p> `Quarantine`||
 |**Identifiering av skräppost med hög** säkerhet <p> _HighConfidenceSpamAction_|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Sätt meddelande i karantän** <p> `Quarantine`|**Sätt meddelande i karantän** <p> `Quarantine`||
-|**Identifieringsåtgärd för nätfiske** <p> _PhishSpamAction_|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Sätt meddelande i karantän** <p> `Quarantine`|**Sätt meddelande i karantän** <p> `Quarantine`||
-|**Identifieringsåtgärd för nätfiske** med hög säkerhet <p> _HighConfidencePhishAction_|**Sätt meddelande i karantän** <p> `Quarantine`|**Sätt meddelande i karantän** <p> `Quarantine`|**Sätt meddelande i karantän** <p> `Quarantine`||
-|**Identifieringsåtgärd för massutskick av** e-post <p> _BulkSpamAction_|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Sätt meddelande i karantän** <p> `Quarantine`||
-|Tröskelvärde för massutskick av e-post <p> _BulkThreshold_|7|6|4|Mer information finns i [Nivå för mass klagomål (BCL) i Office 365](bulk-complaint-level-values.md).|
-|Bevarandeperiod för karantän <p> _QuarantineRetentionPeriod_|15 dagar|30 dagar|30 dagar||
-|**Säkerhets- Tips** <p> _InlineSafetyTipsEnabled_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
+|**Identifiering av** nätfiske <p> _PhishSpamAction_|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Sätt meddelande i karantän** <p> `Quarantine`|**Sätt meddelande i karantän** <p> `Quarantine`||
+|**Identifiering av nätfiske med** hög säkerhet <p> _HighConfidencePhishAction_|**Sätt meddelande i karantän** <p> `Quarantine`|**Sätt meddelande i karantän** <p> `Quarantine`|**Sätt meddelande i karantän** <p> `Quarantine`||
+| Massidentifieringsåtgärd <p> _BulkSpamAction_|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Sätt meddelande i karantän** <p> `Quarantine`||
+|**Tröskelvärde för massutskick av e-post** <p> _BulkThreshold_|7|6|4|Mer information finns i [Nivå för mass klagomål (BCL) i Office 365](bulk-complaint-level-values.md).|
+|_MarkAsSpamBulkMail_|På|På|På|Den här inställningen är endast tillgänglig i PowerShell.|
+|**Behålla skräppost i karantän så här många dagar** <p> _QuarantineRetentionPeriod_|15 dagar|30 dagar|30 dagar||
+|**Aktivera säkerhetstips för skräppost** <p> _InlineSafetyTipsEnabled_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
 |Tillåtna avsändare <p> _AllowedSenders_|Inga|Inga|Inga||
-|Tillåtna avsändardomäner <p> _AllowedSenderDomains_|Inga|Inga|Inga|Det kan vara en mycket dålig idé att lägga till domäner i listan med tillåtna avsändare. Attacker skulle kunna skicka e-post som annars skulle kunna filtreras bort. <p> Använd [förfalskningsinformation](learn-about-spoof-intelligence.md) och klientorganisationens lista över [tillåtna/blockerade](tenant-allow-block-list.md) avsändare i säkerhets- och efterlevnadscentret för & för att granska alla avsändare som förfalskningsavsändar-e-postadresser på organisationens e-postdomäner eller förfalskning av avsändar-e-postadresser på externa domäner.|
+|Tillåtna avsändardomäner <p> _AllowedSenderDomains_|Inga|Inga|Inga|Det kan vara en mycket dålig idé att lägga till domäner i listan med tillåtna avsändare. Attacker skulle kunna skicka e-post som annars skulle kunna filtreras bort. <p> Använd [förfalskningsinformation](learn-about-spoof-intelligence.md) och klientorganisationens lista över [tillåtna/blockerade](tenant-allow-block-list.md) avsändare för att granska alla avsändare som kapar avsändar-e-postadresser i organisationens e-postdomäner eller förfalskning av avsändar-e-postadresser i externa domäner.|
 |Spärrade avsändare <p> _BlockedSenders_|Inga|Inga|Inga||
 |Spärrade avsändardomäner <p> _BlockedSenderDomains_|Inga|Inga|Inga||
 |**Aktivera skräppost-aviseringar för slutanvändaren** <p> _EnableEndUserSpamNotifications_|Inaktiverad <p> `$false`|Aktiverad <p> `$true`|Aktiverad <p> `$true`||
 |**Skicka skräppost-aviseringar till slutanvändare var (dagar)** <p> _EndUserSpamNotificationFrequency_|3 dagar|3 dagar|3 dagar||
-|**Spam ZAP** <p> _SpamZapEnabled_|Aktiverad <p> `$true`|Aktiverad <p> `$true`|Aktiverad <p> `$true`||
-|**Phish ZAP** <p> _PhishZapEnabled_|Aktiverad <p> `$true`|Aktiverad <p> `$true`|Aktiverad <p> `$true`||
-|_MarkAsSpamBulkMail_|På|På|På|Den här inställningen är endast tillgänglig i PowerShell.|
+|Aktivera zap (Zero-hour auto purge) för nätfiskemeddelanden <p> _PhishZapEnabled_|Aktiverad <p> `$true`|Aktiverad <p> `$true`|Aktiverad <p> `$true`||
+|Aktivera ZAP för skräppostmeddelande <p> _SpamZapEnabled_|Aktiverad <p> `$true`|Aktiverad <p> `$true`|Aktiverad <p> `$true`||
 |
 
-Det finns flera andra avancerade asf-inställningar (Advanced Spam Filter) i principer mot skräppost som håller på att föraktas. Mer information om tidslinjerna för avskrivningen av dessa funktioner anges utanför den här artikeln.
+Det finns många avancerade inställningar för skräppostfilter (ASF) i principer mot skräppost som håller på att föraktas. Mer information om tidslinjerna för avskrivningen av dessa funktioner anges utanför den här artikeln.
 
-Vi rekommenderar att du inaktiverar de här **ASF-inställningarna** för både **standard-** och **strikt-nivåer.** Mer information om ASF-inställningar finns i [Avancerade inställningar för skräppostfilter (ASF) i Office 365.](advanced-spam-filtering-asf-options.md)
+Vi rekommenderar att du lämnar följande ASF-inställningar **Av** för både **standard-** och **striktnivåer.** Mer information om ASF-inställningar finns i [Avancerade inställningar för skräppostfilter (ASF) i Office 365.](advanced-spam-filtering-asf-options.md)
 
 <br>
 

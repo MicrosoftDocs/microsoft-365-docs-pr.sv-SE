@@ -20,12 +20,12 @@ description: Administratörer kan läsa mer om skydd mot hot i Microsoft 365 kon
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683337"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696556"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -50,6 +50,8 @@ Skyddsfunktioner för hot ingår i *alla* Microsoft- eller Office 365 prenumerat
 > [!TIP]
 > Lägg märke till att, förutom anvisningarna för att aktivera *granskning,* börjar du med åtgärder mot skadlig programvara, skydd mot nätfiske och skräppost, som markeras som en del av Office 365 Exchange Online Protection **(EOP).** Det här kan verka konstigt i en Defender Office 365 artikel, tills du kommer ihåg att ( Defender för **Office 365**) innehåller, och bygger på, EOP.
 
+<br>
+
 ****
 
 |Skyddstyp|Prenumerationskrav|
@@ -67,6 +69,8 @@ Skyddsfunktioner för hot ingår i *alla* Microsoft- eller Office 365 prenumerat
 
 Om du vill konfigurera Defender Office 365-principer måste du ha tilldelats en lämplig roll i [& Säkerhets- och efterlevnadscenter.](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) I tabellen nedan ser du vilka roller som kan utföra de här åtgärderna.
 
+<br>
+
 ****
 
 |Roll eller rollgrupp|Här kan du lära dig mer|
@@ -82,20 +86,22 @@ Mer information finns i [Behörigheter i Säkerhets- & Kompatibilitetscenter.](p
 
 - Starta granskningsloggningen tidigt. Du måste granska vara PÅ **för** vissa av följande steg. Granskningsloggning är tillgänglig i prenumerationer som innehåller [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Om du vill visa data i skyddsrapporter om [](view-email-security-reports.md)hot, till exempel i säkerhetspanelen, [](security-dashboard.md)e-postsäkerhetsrapporter och [Utforskaren,](threat-explorer.md)måste granskningsloggning vara *På.* Mer information finns i [Aktivera eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)
 
-## <a name="part-1---anti-malware-protection"></a>Del 1 – Skydd mot skadlig programvara
+## <a name="part-1---anti-malware-protection-in-eop"></a>Del 1 – Skydd mot skadlig programvara i EOP
 
 Mer information om rekommenderade inställningar för skydd mot skadlig programvara finns i Inställningar för [EOP-policy mot skadlig programvara.](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)
 
 1. Öppna <https://security.microsoft.com/antimalwarev2> .
 
-2. Välj Standardprincip genom att klicka på namnet på principen.
+2. På sidan **mot skadlig programvara** väljer du principen **Standardprincip genom** att klicka på namnet.
 
 3. Klicka på Redigera skyddsinställningar i den utfäll plats som öppnas med **principinformation** och konfigurera sedan följande inställningar:
    - Välj **Aktivera filtret för vanliga bifogade filer om** du vill aktivera filtret för vanliga bifogade filer. Klicka **på Anpassa filtyper om** du vill lägga till fler filtyper.
    - Kontrollera att **Aktivera automatisk rensning utan timme för skadlig programvara** är markerat.
    - Kontrollera att ingen av inställningarna i **meddelandeavsnittet** är markerad.
 
-   När du är klar klickar du på **Spara**
+   Klicka på **Spara** när du är klar.
+
+4. Klicka på Stäng när principinformationen **visas.**
 
 Detaljerade instruktioner för konfigurering av principer för skadlig programvara finns i [Konfigurera principer för skydd mot skadlig programvara i EOP.](configure-anti-malware-policies.md)
 
@@ -135,23 +141,23 @@ Här beskrivs hur du konfigurerar en princip mot nätfiske i Microsoft Defender 
 
 Mer information om alternativen för nätfiskeprincip finns i Konfigurera principer för skydd [mot nätfiske i Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
 
-## <a name="part-3---anti-spam-protection"></a>Del 3 – Skydd mot skräppost
+## <a name="part-3---anti-spam-protection-in-eop"></a>Del 3 – Skydd mot skräppost i EOP
 
-[Skydd mot skräppost är](anti-spam-protection.md) tillgängligt i prenumerationer som innehåller [EOP.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+Mer information om rekommenderade inställningar för skydd mot skräppost finns i Inställningarna för [EOP-policy](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)mot skräppost.
 
-1. I [säkerhets- & säkerhets- och efterlevnadscenter](https://protection.office.com)väljer **du** Policy \> **för** \> **hothantering Mot skräppost.**
+1. Öppna <https://security.microsoft.com/antispam> .
 
-2. Aktivera **Anpassade** inställningar på fliken Anpassad.
+2. På sidan **Anti-spam policies** väljer du principen **Anti-spam inbound policy** from the list by clicking on the name.
 
-3. Expandera **Standardprincip för skräppostfilter,** **klicka på Redigera** princip och ange sedan följande inställningar:
+3. I den utfällklara  principinformationen som visas klickar du på Tröskelvärde för redigering av skräppost och egenskaper i avsnittet Tröskelvärde för **massutskick & skräppost.**
 
-   - I avsnittet **Skräppost- och massåtgärder** anger du tröskelvärdet till värdet 5 eller 6.
+4. I **tröskelvärdet för skräppost och** de  egenskaper som visas anger du tröskelvärdet för Massutskick av e-post till 5 (strikt) eller 6 (standard). När du är klar klickar du på **Spara**
 
-   - I avsnittet **Allow lists** granskar (och/eller redigerar) dina tillåtna avsändare och domäner.
+5. När du vill gå tillbaka till  den utfällna policyinformationen går du till avsnittet Tillåtna och blockerade avsändare och domäner och granskar eller redigerar dina tillåtna avsändare och tillåtna domäner.
 
-4. Klicka på **Spara**.
+6. Klicka på **Stäng** när du är klar.
 
-Mer information om policyalternativen för skydd mot skräppost finns i [Konfigurera principer för skydd mot skräppost i EOP.](configure-your-spam-filter-policies.md)
+Detaljerade instruktioner för hur du konfigurerar principer för skydd mot skräppost finns [i Konfigurera principer för skydd mot skräppost i EOP.](configure-your-spam-filter-policies.md)
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Del 4 – Skydd mot skadliga URL:er och filer (Valv och bifogade Valv i Defender för Office 365)
 
