@@ -16,12 +16,12 @@ ms.collection:
 description: Administratörer kan ta reda på hur de konfigurerar tillåts och block i listan över tillåtna/blockerade klienter i säkerhetsportalen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 270e38d65857de2f4d06460fb3bb77f72a165ecf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538969"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694491"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Hantera Klientorganisationens Tillåt/blockera listan
 
@@ -44,7 +44,6 @@ Med klientorganisationens lista över tillåtna/blockerade & säkerhets- och eft
 
 - URL:er som ska blockeras.
 - Filer som ska blockeras.
-- Massutskick av avsändardomäner som ska tillåtas. Mer information om massutskick, BCL (Bulk Confidence Level) och massfiltrering efter principer för skräppost finns i Nivå för massklagomål [(BCL) i EOP.](bulk-complaint-level-values.md)
 - Förfalskningsavsändare som ska tillåta eller blockera. Om du åsidosätter blockeringen av tillåtande eller blockering av förfalskningsinformation [blir](learn-about-spoof-intelligence.md)den falska avsändaren en  manuell tillåta- eller blockeringspost som bara visas på fliken Förfalskning i innehavarlistan över tillåtna/blockerade avsändare. Här kan du även manuellt skapa tillåta eller blockera poster för förfalskningsavsändare innan de identifieras av förfalskningsinformation.
 
 Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/blockerade klientorganisationer i Säkerhets- och efterlevnadscenter för & eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
@@ -76,7 +75,7 @@ Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter i Exchange Online innan du kan genomföra procedurerna i den här artikeln:
-  - **URL:er, filer och tillåt massavsändare:**
+  - **URL:er och filer:**
     - Om du vill lägga till och ta bort värden från klientorganisationens lista över tillåtna/blockerade användare måste du vara medlem i rollgrupperna Organisationshantering eller **Säkerhetsadministratör.** 
     - För skrivskyddad åtkomst till listan över tillåtna/blockerade klientorganisationer måste du vara medlem i rollgrupperna **Global Reader** **eller Säkerhetsläsare.**
   - **Förfalskning**: En av följande kombinationer:
@@ -135,26 +134,6 @@ Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/
 
 4. När du är klar klickar du på Lägg **till**.
 
-## <a name="use-the-security--compliance-center-to-create-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & säkerhets- och efterlevnadscenter för att skapa domänposter för massutskick av avsändare i listan Över tillåtna/blockerade klientorganisationen
-
-1. I Säkerhets- & säkerhets- och efterlevnadscenter går du till **listan** över \>  \> **tillåtna/blockerade hotprinciper för klientorganisationen.**
-
-2. På sidan **Lista över tillåtna/blockerade klienter** väljer du avsändardomänerna för **BCL-förbikopplingsfliken** och klickar sedan på Lägg **till**.
-
-3. Konfigurera följande **inställningar i den utfällklara menyn** Lägg till avsändardomän för BCL som visas:
-
-   - **Lägga till avsändardomäner för** BCL-förbikoppling: Ange en källdomän för bra massutskick per rad, upp till högst 20.
-
-   - **Upphör aldrig** att gälla: Gör något av följande:
-
-     - Kontrollera att inställningen är inaktiverad (inaktiverad) och ange utgångsdatumet för posterna ![ ](../../media/scc-toggle-off.png) i rutan Förfaller. 
-
-     eller
-
-     - Flytta reglaget till höger för att konfigurera posterna så att de aldrig upphör att gälla: ![Växlingsknapp aktiverad](../../media/scc-toggle-on.png).
-
-4. När du är klar klickar du på Lägg **till**.
-
 ## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & säkerhets- och efterlevnadscenter för att skapa tillåta eller blockera förfalskning av avsändare i listan Tillåt/blockera klientorganisation
 
 **Anmärkningar**:
@@ -198,11 +177,6 @@ Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/
      - **Datum för senaste uppdatering**
      - **Förfallodatum**
      - **Obs!**
-
-   - **Sender domains for BCL bypass**
-     - **Värde:** Avsändardomänen för massutskick.
-     - **Datum för senaste uppdatering**
-     - **Förfallodatum**
 
    - **Förfalskning**
      - **Spoofed användare**
@@ -312,23 +286,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 Detaljerad information om syntax och parametrar finns i [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-add-allow-bulk-mail-sender-domain-entries-to-the-tenant-allowblock-list"></a>Använda PowerShell för att lägga till domänposter för massutskick av avsändare i listan Över tillåtna/blockerade klientorganisationen
-
-Om du vill lägga till domänposterna tillåt massutskick av avsändare i listan Tillåt/blockera klientorganisation använder du följande syntax:
-
-```powershell
-New-TenantAllowBlockListItems -ListType BulkSender -Block:$false -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-I det här exemplet läggs en post för tillåtna massavsändare till för den angivna domänen som aldrig förfaller.
-
-```powershell
-New-TenantAllowBlockListItem -ListType BulkSender -Block:$false -Entries contosodailydeals.com
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-Detaljerad information om syntax och parametrar finns i [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
 ### <a name="use-powershell-to-add-allow-or-block-spoofed-sender-entries-to-the-tenant-allowblock-list"></a>Använd PowerShell för att lägga till posterna tillåta eller blockera förfalskning av avsändare i klientorganisationens lista över tillåtna/blockerade avsändare
 
 Om du vill lägga till förfalskningsposter från klientorganisationens lista över tillåtna/blockerade avsändare använder du följande syntax:
@@ -357,28 +314,6 @@ I det här exemplet returneras alla blockerade URL-adresser.
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Block
-```
-
-Detaljerad information om syntax och parametrar finns i [Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
-
-### <a name="use-powershell-to-view-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Använda PowerShell för att visa tillåta domänposter för massutskick av avsändare i listan Över tillåtna/blockerade klientorganisationen
-
-Om du vill visa tillåt domänposter för massutskick av avsändare i listan Tillåt/blockera klientorganisation använder du följande syntax:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender [-Entry <BulkSenderDomainValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-Det här exemplet returnerar alla tillåtna domäner för massutskick.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender
-```
-
-Det här exemplet returnerar information om den angivna domänen för massavsändare.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "contosodailydeals.com"
 ```
 
 Detaljerad information om syntax och parametrar finns i [Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
@@ -427,22 +362,6 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 Detaljerad information om syntax och parametrar finns i [Set-TenantAllowBlockListItems.](/powershell/module/exchange/set-tenantallowblocklistitems)
 
-### <a name="use-powershell-to-modify-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Använda PowerShell för att ändra tillåta domänposter för massutskick av avsändare i listan Tillåt/Blockera klientorganisation
-
-Om du vill ändra tillåta domänposter för massutskick av avsändare i listan Tillåt/blockera klientorganisation använder du följande syntax:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-I det här exemplet ändras förfallotiden för angiven domänpost för massutskick av avsändare så att den aldrig upphör att gälla.
-
-```powershell
-Set-TenantAllowBlockListItems -ListType BulkSender -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -NoExpiration
-```
-
-Detaljerad information om syntax och parametrar finns i [Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
-
 ### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Använda PowerShell för att ändra posterna för tillåta eller blockera förfalskning av avsändare i listan över tillåtna/blockerade klientorganisationen
 
 Om du vill ändra tillåta eller blockera förfalskning av avsändare i listan över tillåtna eller blockerade avsändare använder du följande syntax:
@@ -459,12 +378,12 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 Detaljerad information om syntax och parametrar finns i [Set-TenantAllowBlockListSpoofItems.](/powershell/module/exchange/set-tenantallowblocklistspoofitems)
 
-### <a name="use-powershell-to-remove-bulk-mail-sender-domain-file-and-domain-entries-from-the-tenant-allowblock-list"></a>Använda PowerShell för att ta bort domän-, fil- och domänposter för massutskick från klientorganisationens lista över tillåtna/blockerade avsändare
+### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Använda PowerShell för att ta bort URL-adresser eller filposter från klientorganisationens lista över tillåtna/blockerade adresser
 
-Om du vill ta bort tillåta domänposter för massutskick, blockera filposter och blockera URL-poster från klientorganisationens lista över tillåtna/blockerade avsändare använder du följande syntax:
+Använd följande syntax för att ta bort fil- och URL-poster från klientorganisationens lista över tillåtna/blockerade adresser:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <BulkSender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 Det här exemplet tar bort den angivna blockerings-URL-posten från klientorganisationens lista över tillåtna/blockerade adresser.

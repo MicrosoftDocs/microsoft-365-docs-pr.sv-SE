@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934291"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694479"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Information om sekretess – Microsoft Defender för Slutpunkt i iOS
 
@@ -39,6 +39,9 @@ ms.locfileid: "51934291"
 Defender för Slutpunkt på iOS samlar in information från dina konfigurerade iOS-enheter och lagrar den i samma klientorganisation där du har Defender för Slutpunkt. Informationen samlas in för att hålla Defender för Endpoint på iOS säker, uppdaterad och fungerar som förväntat, och för att stödja tjänsten.
 
 Mer information om datalagring finns i [Microsoft Defender för Slutpunktens datalagring och sekretess.](data-storage-privacy.md)
+
+
+Mer information om de flesta vanliga sekretessfrågor om Microsoft Defender för slutpunkt på mobila enheter med Android och iOS finns i Microsoft Defender för Slutpunkt och sekretess på mobila [enheter med Android och iOS.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
 
 ## <a name="required-data"></a>Data som krävs 
 
@@ -60,9 +63,9 @@ Här är en lista över de typer av data som samlas in:
 
 - Information om klientorganisation, enhet och användare 
 
-    - Enhets-ID (AD) för Azure Active Directory och Azure Användar-ID – Identifierar enheten, respektive användaren vid Azure Active Directory. 
+    - Azure Active Directory (AD) Enhets-ID och Azure Användar-ID – Identifierar unikt enheten, användaren respektive i Azure Active Directory. 
 
-    - Azure-klientorganisations-ID – GUID som identifierar organisationen i Azure Active Directory. 
+    - Azure-klientorganisations-ID – GUID som identifierar organisationen Azure Active Directory. 
 
     - Microsoft Defender för slutpunktens organisations-ID – Unikt ID som associeras med företaget som enheten tillhör. Gör att Microsoft kan identifiera om det finns problem som påverkar en uppsättning utvalda företag och antalet företag som påverkas. 
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13c0a575fd2614f58eb6a2163cda04118c2a391d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 2f9d56b7e72befb8acddf6d9f810a7ba5cec1083
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636284"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694371"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Felsöka problem och hitta svar på vanliga frågor och svar i Microsoft Defender för Endpoint i iOS
 
@@ -60,18 +60,21 @@ När den är aktiverad som standard kan det finnas fall där du måste inaktiver
 
 ## <a name="issues-with-multiple-vpn-profiles"></a>Problem med flera VPN-profiler
 
-Apple iOS stöder inte flera vpn som gäller hela enheten för att vara aktiva samtidigt. Även om flera VPN-profiler kan finnas på enheten kan bara ett VPN vara aktivt i taget.
+Apple iOS stöder inte flera **vpn som gäller hela enheten** för att vara aktiva samtidigt. Även om flera VPN-profiler kan finnas på enheten kan bara ett VPN vara aktivt i taget.
 
+Microsoft Defender för endpoint VPN kan finnas tillsammans med andra VPN som är konfigurerade *som per app* eller *"Personligt".*
 
 ## <a name="battery-consumption"></a>Batteriförbrukning
 
-Batterianvändningen från en app beräknas av Apple baserat på en mängd faktorer, bland annat PROCESSOR- och nätverksanvändning. Microsoft Defender för Endpoint använder en lokal/loop-back VPN i bakgrunden för att kontrollera webbtrafiken efter skadliga webbplatser eller anslutningar. Nätverkspaket från alla appar går igenom den här kontrollen och det gör att batterianvändningen av Microsoft Defender för Endpoint beräknas felaktigt. Det ger användaren ett falskt intryck. Den faktiska batteriförbrukningen i Microsoft Defender för Endpoint är mindre än vad som visas på Inställningar batteri på enheten. Det här baseras på utförda tester som utförts i appen Microsoft Defender för Slutpunkt för att förstå batterianvändningen.
+I Inställningar visar iOS endast batterianvändningen av appar som är synliga för användaren under en viss tid. Batterianvändningen från appar som visas på skärmen gäller bara under den tiden och beräknas av iOS baserat på en mängd faktorer, till exempel CPU och nätverksanvändning. Microsoft Defender för Endpoint använder en lokal/loop-back VPN i bakgrunden för att kontrollera webbtrafiken efter skadliga webbplatser eller anslutningar. Nätverkspaket från alla appar går igenom den här kontrollen och det gör att batterianvändningen av Microsoft Defender för Endpoint beräknas felaktigt. Den faktiska batteriförbrukningen i Microsoft Defender för Endpoint är mycket mindre än vad som visas på sidan Inställningar batteri på enheten.
 
-Dessutom är VPN som används en lokal VPN och till skillnad från en traditionell VPN skickas inte nätverkstrafik utanför enheten.
+Batterianvändning per dag av Microsoft Defender för Slutpunkt som körs i bakgrunden är cirka **8,81**% av det totala batteriet som använts den dagen. Det här måttet rapporteras av Apple baserat på faktisk användning av Microsoft Defender för Endpoint på slutanvändareenheter och på grund av orsaker som nämns ovan kan även redovisas för andra appar som har nätverksaktivitet.
+
+Vpn som används är också en lokal VPN och till skillnad från en traditionell VPN skickas inte nätverkstrafik utanför enheten.
 
 ## <a name="data-usage"></a>Dataanvändning
 
-Microsoft Defender för Endpoint använder ett vpn som ger lokal/loopback för att kontrollera webbtrafik efter skadliga webbplatser eller anslutningar. På grund av den här orsaken konton Apple dataanvändning till Microsoft Defender för slutpunkt felaktigt. Den faktiska dataanvändningen av Microsoft Defender för Endpoint är inte signifikant och mycket mindre än vad som visas på Inställningar på enheten.
+Microsoft Defender för Endpoint använder ett vpn som ger lokal/loopback för att kontrollera webbtrafik efter skadliga webbplatser eller anslutningar. På grund av den här orsaken kan Microsoft Defender för Slutpunktsdataanvändning redovisas felaktigt. Den faktiska dataanvändningen av Microsoft Defender för Endpoint är inte signifikant och mindre än vad som visas på Inställningar på enheten.
 
 ## <a name="report-unsafe-site"></a>Rapportera osäker webbplats
 

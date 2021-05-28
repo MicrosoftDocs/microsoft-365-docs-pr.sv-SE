@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3d9dd871edba29ec6119329f98ada990abad6e8d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4a051742775c3d4e8b36bf0ba7a4fd2502763014
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246422"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694467"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender för Endpoint för iOS
 
@@ -62,9 +62,6 @@ ms.locfileid: "52246422"
 
 - Åtkomst till [Microsoft Endpoint Manager ,](https://go.microsoft.com/fwlink/?linkid=2109431)för att distribuera programmet till registrerade användargrupper i organisationen.
 
-**Nätverkskrav**
-- För att Microsoft Defender för slutpunkt i iOS ska fungera när du är ansluten till ett nätverk måste brandväggen/proxyn konfigureras för att aktivera åtkomst till URL:er för [Microsoft Defender för slutpunktstjänsten](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
-
 **Systemkrav**
 
 - iOS-enheter med iOS 11.0 och högre. iPad officiellt från och med version 1.1.15010101.
@@ -72,7 +69,7 @@ ms.locfileid: "52246422"
 - Enheten är registrerad med Intune-företagsportal [appen](https://apps.apple.com/us/app/intune-company-portal/id719171358).
 
 > [!NOTE]
-> **Microsoft Defender ATP (Microsoft Defender för slutpunkt) på iOS är nu tillgängligt på [Apple App Store.](https://aka.ms/mdatpiosappstore)**
+> **Microsoft Defender för slutpunkt i iOS är tillgängligt på [Apple App Store.](https://aka.ms/mdatpiosappstore)**
 
 ## <a name="installation-instructions"></a>Installationsanvisningar
 

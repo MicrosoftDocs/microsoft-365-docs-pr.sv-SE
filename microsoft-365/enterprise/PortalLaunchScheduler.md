@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: I den här artikeln beskrivs hur du kan starta portalen med hjälp av portalstartschemaläggeren
-ms.openlocfilehash: d7ea64b3a9fef25ddfde43e61624e49d2b7d4352
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280976"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694359"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Starta portalen med hjälp SharePoint- eller portalstartschemaläggeren
 
@@ -95,7 +95,7 @@ Tidigare kunde portalstarter bara schemaläggas via SharePoint PowerShell. Nu ha
     - Mindre än 10 000 användare: två vågor
     - 10k-till-30k-användare: Tre vågor 
     - 30k+ till 100 000 användare: Fem vågor
-    - Fler än 100 000 användare: Fem vågor och kontakta ditt Microsoft-kontoteam
+    - Fler än 100 000 användare: Fem vågor och kontakta microsoft via stegen som anges i Starta portalen med över 100 000 användare. 
 
 5.  Fastställ sedan vilken **typ av omdirigering som** behövs:
 
@@ -118,6 +118,26 @@ Tidigare kunde portalstarter bara schemaläggas via SharePoint PowerShell. Nu ha
 
 8.  Bekräfta portalstartinformationen och välj **Schemalägg**. När lanseringen har schemalagts måste ändringar på startsidan för SharePoint-portalen få ett felfritt diagnostikresultat innan portalstarten återupptas.
 
+### <a name="launch-portal-with-over-100k-users"></a>Starta portalen med över 100 000 användare
+
+Om du planerar att migrera över 100 TB kan du skicka en supportbegäran enligt stegen nedan. Se till att inkludera all information som efterfrågas.
+
+Gör så här:
+1. Gå till https://admin.microsoft.com
+2. Se till att du använder den nya förhandsversionen av administrationscentret.
+3. I navigeringsfönstret till vänster väljer **du Support** och sedan **Ny tjänstbegäran.** 
+
+
+   Detta aktiverar fönstret **Behöver du hjälp?** till höger på skärmen.
+
+4.  Ange **"Starta e-SharePoint** med 100 000 användare" i området Beskriv problemet kort.</br>
+5. Välj **Kontakta support.**
+6. Under **Beskrivning** anger du "Starta SharePoint portal med 100 000 användare". 
+7. Fyll i resten av informationen och välj **Kontakta mig**.
+8. När biljetten har skapats bör du ange följande information för supportagenten:
+- Starta URL:en för portalen 
+- Antal användare som förväntat
+- Beräknad starttid 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>Göra ändringar i en schemalagd portalstart
 

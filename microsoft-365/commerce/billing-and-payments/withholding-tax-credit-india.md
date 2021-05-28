@@ -18,16 +18,21 @@ description: Läs om hur du begär en kredit för ditt konto för undanhållen m
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689031"
+ms.locfileid: "52694227"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Begära en kredit för att undanhålla moms för ditt konto (Indien-kunder)
+
+> [!NOTE]
+>
+> Om din organisation inte är baserad i Indien kan du gå till Begär en kredit för att undanhålla moms för ditt [konto (globala kunder).](withholding-tax-credit-global.md)
 
 Kunder i Indien får Web Direct-fakturor (Azure och Microsoft 365) som faktureras av Microsoft Regional Sales Pte Ltd. Singapore (MRS) och gör betalningar över kantlinjer till Singapore för att godkänna fakturan. Om du undanhåller skatter när du gör en betalning förklarar den här artikeln processen för att begära en kredit för VAT (Withholding Tax) i ditt konto med MRS.
 

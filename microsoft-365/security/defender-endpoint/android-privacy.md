@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: c72e9491303d3f14ddb184e6a302a518643f709d
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939630"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694347"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender för Endpoint för Android – Sekretessinformation
 
@@ -38,6 +38,8 @@ Mer information om datalagring finns i [Microsoft Defender för Slutpunktens dat
 
 Information samlas in för att hålla Defender för Endpoint för Android säkert och uppdaterat så att det fungerar som förväntat och för att stödja tjänsten.
 
+Mer information om de flesta vanliga sekretessfrågor om Microsoft Defender för slutpunkt på mobila enheter med Android och iOS finns i Microsoft Defender för Slutpunkt och sekretess på mobila [enheter med Android och iOS.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
+
 ## <a name="required-data"></a>Data som krävs 
 
 Data som krävs består av data som krävs för att Defender för Slutpunkt för Android ska fungera som förväntat. Dessa data är viktiga för att tjänsten ska kunna användas och kan innehålla data relaterade till slutanvändare, organisation, enhet och appar. Här är en lista över de typer av data som samlas in:
@@ -47,7 +49,7 @@ Data som krävs består av data som krävs för att Defender för Slutpunkt för
 Information om **skadliga** Android-programpaket (APKs) på enheten, inklusive
 
 -  Installera källa
--  Lagringsplats (sökväg) för APK
+-  Storage sökväg (sökväg) till APK
 -  Tid för installation, storlek på APK och behörigheter
 
 ### <a name="web-page--network-information"></a>Webbsida/nätverksinformation
@@ -66,9 +68,9 @@ Information om **skadliga** Android-programpaket (APKs) på enheten, inklusive
     - Slumpmässigt genererad globalt unik identifierare (GUID)
 
 - Information om klientorganisation, enhet och användare
-    -   Enhets-ID för Azure Active Directory (AD) och Azure Användar-ID: Identifierar enheten, respektive användaren vid Azure Active Directory.
+    -   Azure Active Directory (AD) Enhets-ID och Azure Användar-ID: Unikt identifierar enheten respektive användaren i Azure Active Directory.
 
-    -   Azure-klientorganisations-ID – GUID som identifierar organisationen i Azure Active Directory
+    -   Azure-klientorganisations-ID – GUID som identifierar organisationen Azure Active Directory
 
     -   Microsoft Defender för slutpunktens organisations-ID – Unikt ID som associeras med företaget som enheten tillhör. Gör att Microsoft kan identifiera huruvida problem påverkar en uppsättning utvalda företag och hur många företag som påverkas 
 

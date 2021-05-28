@@ -23,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Lär dig hur du konfigurerar din Microsoft 365 Business Standard-abonnemang.
-ms.openlocfilehash: ce45b4869000892b5640730e765dbfc9c21386ed
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: När du köper Microsoft 365 Business Standard får du möjlighet att använda en domän som du äger eller köpa en under registreringen.
+ms.openlocfilehash: ca9cc359aaabfc16a5d0c57a75362c7826dea0db
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244461"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635636"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Konfigurera Microsoft Business Standard
 
@@ -50,7 +50,7 @@ När du köper Microsoft 365 Business Standard får du möjlighet att använda e
 4. Under steget **Lägg till domän** anger du domännamnet du vill använda (t.ex. contoso.com).
 
     > [!IMPORTANT]
-    > Om du har köpt en domän under registreringen ser du inte steget **Lägg till en domän** här. Gå istället till [Lägg till användare](#add-users-and-assign-licenses).
+    > Om du har köpt en domän under registreringen ser du inte steget **Lägg till en domän** här. Gå i stället till [Lägg till användare](#add-users-and-assign-licenses).
 
     
 4. Följ anvisningarna i guiden för att [Skapa DNS-poster på vilken DNS-värd som helst för Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) som verifierar att du äger domänen. Om du vet vilken din domänvärd är kan du även se [Värdspecifika anvisningar](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
@@ -81,7 +81,7 @@ För att få igång tjänsten måste du uppdatera några poster hos din DNS-vär
 1. Installationsguiden identifierar normalt din domänregistrator och ger dig en länk till stegvisa instruktioner för att uppdatera dina NS-poster på registratorns webbplats. Om det inte gör det, [ ändra namnservrar för att konfigurera Office 365 med valfri domänregistrator](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
 
     - Om du har befintliga DNS-poster, t. ex. en befintlig webbplats, men din DNS-värd är aktiverad för [Domain Connect](/office365/admin/get-help-with-domains/domain-connect)väljer du **Lägga till poster för mig**. På sidan **Välj onlinetjänster** accepterar du alla standardinställningar och väljer **Nästa** och väljer **Auktorisera** på DNS-värdens sida.
-    - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverad för domänanslutning), ska du hantera dina egna DNS-poster för att se till att de befintliga tjänsterna fortsätter att vara anslutna. Mer information finns i [domängrunder](/office365/admin/get-help-with-domains/dns-basics).
+    - Om du har befintliga DNS-poster med andra DNS-värdar (inte aktiverad för domänanslutning), ska du hantera dina egna DNS-poster för att se till att de befintliga tjänsterna fortsätter att vara anslutna. Mer information finns i [grundläggande information för domän](/office365/admin/get-help-with-domains/dns-basics).
 
 2. Följ stegen i guiden så kommer e-postmeddelanden och andra tjänster att konfigureras åt dig.
 
@@ -103,6 +103,8 @@ För att få igång tjänsten måste du uppdatera några poster hos din DNS-vär
 
 3. Ange din Microsoft e-postadress och välj **Anslut**.
 
+## <a name="watch-set-up-outlook-for-email"></a>Titta: Konfigurera Outlook för e-post
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
 Mer information finns i [Konfigurera Outlook för e-post](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f).
@@ -123,6 +125,8 @@ Om du tidigare använde Outlook med ett annat e-postkonto kan du importera din t
 
     Den här gången väljer du **Importera från ett annat program eller en fil** och följer anvisningarna för att importera säkerhetskopian som du skapade när du exporterade din gamla e-post.
 
+## <a name="watch-import-and-redirect-email"></a>Titta: importera och omdirigera e-post
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
   
 Mer information finns i [Importera e-post med Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
@@ -137,6 +141,11 @@ Microsoft 365 inkluderar inte en offentlig webbplats för ditt företag. Om du v
 
 2. Välj **Mer information** under något av alternativen och registrera dig sedan med en webbplatspartner och använd deras verktyg för att konfigurera och utforma webbplatsen.
 
+## <a name="watch-create-your-business-website"></a>Titta: skapa din företagswebbplats
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-Se mer på [Använda en offentlig webbplats](../../business-video/create-web-site.md).
+## <a name="related-content"></a>Relaterat innehåll
+
+[Skapa en webbplats](../../business-video/create-web-site.md) (video)\
+[Microsoft 365 för företaget](../../business-video/index.yml) (länksida)

@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur du konfigurerar Exchange Server en lokal konfiguration för att använda modern hybridautentisering (HMA), som ger dig säkrare användarautentisering och auktorisering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ae7a09387b62abc9e8c74f4a38c2fe8750bab19
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f52b7c011b717c5dcb91270ab0a7dd2015131c0e
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244557"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694455"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Så här konfigurerar Exchange Server lokal användning av modern hybridautentisering
 
@@ -140,7 +140,7 @@ Om OAuth saknas på en server och någon av de fyra virtuella katalogerna måste
 Återgå till den lokala Exchange för det senaste kommandot. Nu kan du verifiera att din lokala tjänst har en post för autentiseringsprovidern för windows-säkerhet:
 
 ```powershell
-Get-AuthServer | where {$_.Name -eq "EvoSts"}
+Get-AuthServer | where {$_.Name -like "EvoSts"}
 ```
 
 Dina utdata bör visa autentiseringsservern för Name EllerSts och statusen "Enabled" ska vara True. Om du inte ser det bör du ladda ned och köra den senaste versionen av hybridkonfigurationsguiden.
@@ -162,7 +162,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 Om EXCH-versionen är Exchange 2016 (CU18 eller senare) eller Exchange 2019 (CU7 eller senare) och hybrid konfigurerades med HCW som laddats ned efter september 2020 kör du följande kommando i Exchange Management Shell lokalt:
 
 ```powershell
-Set-AuthServer -Identity "EvoSTS - {GUID}" -Domain "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
+Set-AuthServer -Identity "EvoSTS - {GUID}" -DomainName "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
