@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 9a73f14662deb0fc68ac6c2a8552d988efc1d351
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: 62e65f9be25e2c482cca78577048d504ee93097a
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696472"
+ms.locfileid: "52698982"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Införande av Microsoft SharePoint Syntex: Komma igång
 
@@ -146,4 +146,4 @@ För att förbereda dig för SharePoint Syntex måste du:
 
 ## <a name="see-also"></a>Se även
 
-[Scenarier och användningsfall i SharePoint Syntex](adoption-scenarios.md)
+[Scenarier och användningsfall för SharePoint Syntex](adoption-scenarios.md)

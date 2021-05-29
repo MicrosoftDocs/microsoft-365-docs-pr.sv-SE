@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: I den här artikeln kan administratörer läsa mer om skydd mot Valv-länkar i Defender för Office 365 för att skydda organisationen från nätfiske och andra angrepp som använder skadliga URL:er.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 675de13410ac98e18a8b72125c2226d2c9c62821
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593575"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698994"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Valv Länkar i Microsoft Defender för Office 365
 
@@ -74,7 +74,7 @@ Den här artikeln innehåller detaljerade beskrivningar av följande typer av in
   - [Valv Inställningar för länkar för Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - ["Skriva inte om följande URL-listor i principer Valv Länkar](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Global Valv för länkar:** De här inställningarna är konfigurerade globalt, inte i Valv principer för länkar. Men inställningarna gäller endast för användare som ingår i principer för Valv aktiva länkar. Inställningarna omfattar:
+- **Global Valv för länkar:** De här inställningarna är konfigurerade globalt, inte i Valv principer för länkar. Inställningarna omfattar:
 
   - [Valv Inställningar för länkar Office 365 appar](#safe-links-settings-for-office-365-apps)
   - [Listan "Blockera följande URL:er" för Valv Länkar](#block-the-following-urls-list-for-safe-links)
