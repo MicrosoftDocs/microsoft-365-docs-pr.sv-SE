@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Oavsett om det handlar om att lägga till nya lösningar till efterlevnadscentret, uppdatera befintliga funktioner baserat på din feedback eller distribuera ny och uppdaterad dokumentation hjälper Microsoft 365 dig att hålla dig uppdaterad om den föränderliga miljön för efterlevnad. Ta reda på vad vi har gjort den här månaden.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 11055e6f27df08a1726fb3ba65a5accafbf93723
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52162824"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698958"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nyheter i Microsoft 365 Efterlevnad
 
@@ -34,7 +34,39 @@ Oavsett om det handlar om att lägga till nya lösningar till efterlevnadscentre
 
 > [!TIP]
 > Vill du veta vad som händer i andra administrationscenter? Läs följande artiklar:<br>[Vad är nytt i Microsoft 365 administrationscenter](/office365/admin/whats-new-in-preview)<br>[Vad är nytt i SharePoint administrationscenter](/sharepoint/what-s-new-in-admin-center)<br>[Nyheter i Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
-Besök även [Microsoft 365 Översikt](https://www.microsoft.com/en-us/microsoft-365/roadmap) och lär dig Microsoft 365 funktioner som släppts, håller på att lanseras, är under utveckling, har avbrutits eller släppts tidigare.
+Besök även [Microsoft 365 Översikt](https://www.microsoft.com/microsoft-365/roadmap) och lär dig Microsoft 365 funktioner som släppts, håller på att lanseras, är under utveckling, har avbrutits eller släppts tidigare.
+
+## <a name="april-2021"></a>April 2021
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+- [Begränsningar i Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Organisationer kan nu exportera upp till 5 miljoner objekt eller 500 MB, beroende på vilket som är mindre, i en enda export av objekt från en granskningsuppsättning.
+
+### <a name="data-classification"></a>Dataklassificering
+
+- [Märka aktiviteter som är tillgängliga i Aktivitetsutforskaren](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
+
+### <a name="data-connectors"></a>Datakopplingar
+
+- [Konfigurera en koppling för att arkivera Cisco Jabber på Oracle-data]/microsoft-365/compliance/archive-ciscojabberonora datacenter-data)
+- [Konfigurera en koppling för att arkivera Cisco Jabber på PostgreSQL-data](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
+
+### <a name="data-loss-prevention"></a>Dataförlustskydd
+
+- Nytt ämne för [referens för policyn för skydd mot dataförlust](/microsoft-365/compliance/dlp-policy-tips-reference).
+- Nytt ämne för [Läs mer om skydd mot dataförlust](/microsoft-365/compliance/dlp-learn-about-dlp).
+- Nytt ämne för [Komma igång med instrumentpanelen för skydd mot dataförlust](/microsoft-365/compliance/dlp-alerts-dashboard-get-started).
+
+### <a name="retention-policies-and-retention-label-policies"></a>Bevarandeprinciper och bevarandeprinciper för etiketter
+
+- Platsen Microsoft 365 Grupper har nu stöd för att tillämpa bevarandeinställningarna på bara Microsoft 365-postlådor eller bara de anslutna SharePoint-webbplatserna med hjälp av [PowerShell-cmdleten Set-RetentionCompliancePolicy med](/powershell/module/exchange/set-retentioncompliancepolicy) parametern Applications.
+
+### <a name="sensitivity-labels"></a>Känslighetsetiketter
+
+Outlook och uppdateringar:
+- De inbyggda etiketterna har nu stöd för olika inställningar för standardetiketter och obligatorisk etikettering, tidigare med stöd för enbart AIP-unified [labeling-klienten](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
+- Encrypt-Only stöds nu av macOS, iOS och Android
+- Hantera känslighetsetiketter i [Office-appar](/microsoft-365/compliance/sensitivity-labels-office-apps) som uppdaterats med nya poster [](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling) i tabellen [för Outlook-funktioner](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook) för Olika inställningar för standardetiketter och obligatoriska etiketter för den nya Outlook-funktionssläppet för inbyggd etikett för att stödja en annan standardetikett och undantag från obligatorisk märkning. Dessutom stöds Encrypt-Only nu av macOS/iOS/Android, och alla dynamiska markeringar med variabler stöds nu i alla Outlook klienter. Nu lanseras obligatoriska etiketter för återstående plattformar.
 
 ## <a name="march-2021"></a>Mars 2021
 
@@ -42,27 +74,27 @@ Här är några av de ändringar Microsoft 365 av efterlevnadslösningar och inn
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- **Advanced eDiscovery nu** med stöd för verktyget [och arbetsflödet för nya samlingar.](https://docs.microsoft.com/microsoft-365/compliance/collections-overview) Andra nya ämnen är [att skapa ett utkast ,](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)spara ett utkast [till](https://docs.microsoft.com/microsoft-365/compliance/commit-draft-collection)en granskningsuppsättning och samla in statistik [och rapporter.](https://docs.microsoft.com/microsoft-365/compliance/collection-statistics-reports)
-- **Exportera dokument** i en granskning som är inställd på [Azure Storage](https://docs.microsoft.com/microsoft-365/compliance/download-export-jobs) konto.
-- **Prediktiv kodningsmodul för Advanced eDiscovery**. Titta först på de nya [funktionerna för förutsägelsekodning](https://docs.microsoft.com/microsoft-365/compliance/predictive-coding-overview) som ersätter den indragna relevansmodulen.
+- **Advanced eDiscovery nu** med stöd för verktyget [och arbetsflödet för nya samlingar.](/microsoft-365/compliance/collections-overview) Andra nya ämnen är [att skapa ett utkast ,](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)spara ett utkast [till](/microsoft-365/compliance/commit-draft-collection)en granskningsuppsättning och samla in statistik [och rapporter.](/microsoft-365/compliance/collection-statistics-reports)
+- **Exportera dokument** i en granskning som är inställd på [Azure Storage](/microsoft-365/compliance/download-export-jobs) konto.
+- **Prediktiv kodningsmodul för Advanced eDiscovery**. Titta först på de nya [funktionerna för förutsägelsekodning](/microsoft-365/compliance/predictive-coding-overview) som ersätter den indragna relevansmodulen.
 
 ### <a name="data-classification"></a>Dataklassificering
 
-- **Dataklassificeringsutforskaren**. [Komma igång med](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer) dataklassificeringsutforskaren.
+- **Dataklassificeringsutforskaren**. [Komma igång med](/microsoft-365/compliance/data-classification-activity-explorer) dataklassificeringsutforskaren.
 
 ### <a name="data-connectors"></a>Datakopplingar
 
-- **Privata nycklar**. Stöd för privata nycklar har lagts till i [Bloomberg Message-data,](https://docs.microsoft.com/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) [ICE-chattdata](https://docs.microsoft.com/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) och [snabbkopplingar för Bloomberg-data.](https://docs.microsoft.com/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys)
+- **Privata nycklar**. Stöd för privata nycklar har lagts till i [Bloomberg Message-data,](/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) [ICE-chattdata](/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) och [snabbkopplingar för Bloomberg-data.](/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys)
 
 ### <a name="data-loss-prevention"></a>Skydd mot dataförlust
 
-- **Microsoft Teams support**. Stöd för dataförlustskydd utökad [till Microsoft Teams.](https://docs.microsoft.com/microsoft-365/compliance/dlp-teams-default-policy)
-- **Microsoft Compliance-tillägg.** Komma igång med tillägget [Microsoft Compliance](https://docs.microsoft.com/microsoft-365/compliance/dlp-chrome-get-started).
+- **Microsoft Teams support**. Stöd för dataförlustskydd utökad [till Microsoft Teams.](/microsoft-365/compliance/dlp-teams-default-policy)
+- **Microsoft Compliance-tillägg.** Komma igång med tillägget [Microsoft Compliance](/microsoft-365/compliance/dlp-chrome-get-started).
 
 ### <a name="encryption"></a>Kryptering
 
-- **Kundnyckel för Microsoft 365**. [Översikt över kundnyckeln för](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level) Microsoft 365 på innehavarnivå (offentlig förhandsversion).
-- **Dubbelnyckelkryptering**. Läs mer om [hur du aktiverar stöd för etiketterade och skyddade dokument](https://docs.microsoft.com/microsoft-365/compliance/double-key-encryption) i SharePoint och OneDrive för företag.
+- **Kundnyckel för Microsoft 365**. [Översikt över kundnyckeln för](/microsoft-365/compliance/customer-key-tenant-level) Microsoft 365 på innehavarnivå (offentlig förhandsversion).
+- **Dubbelnyckelkryptering**. Läs mer om [hur du aktiverar stöd för etiketterade och skyddade dokument](/microsoft-365/compliance/double-key-encryption) i SharePoint och OneDrive för företag.
 
 ### <a name="insider-risk-management"></a>Hantering av insiderrisk
 
@@ -82,16 +114,16 @@ Följande uppdateringar av insider-riskhanteringsfunktionerna släpptes för off
 
 Följande avsnitt har uppdaterats eller lagts till som stöd för dessa nya funktioner:
 
-- [Lär dig mer om hantering av insiderrisker](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management)
-- [Planera för hantering av insiderrisker](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-plan)
-- [Komma igång med inställningar för Insider-riskhantering](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings)
-- [Komma igång med hantering av Insider-riskhantering](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
-- [Skapa och hantera principer för hantering av insiderrisker](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-policies)
-- [Undersöka aviseringar för insiderrisker](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-alerts)
-- [Vidta åtgärder för insiderriskärenden](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-cases)
-- [Granska aktiviteter med granskningsloggen för Insider-risker](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-audit-log)
-- [Granska data med innehållsutforskaren för insiderrisker](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-content-explorer)
-- [Hantera arbetsflödet med instrumentpanelen Användare](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-users)
+- [Lär dig mer om hantering av insiderrisker](/microsoft-365/compliance/insider-risk-management)
+- [Planera för hantering av insiderrisker](/microsoft-365/compliance/insider-risk-management-plan)
+- [Komma igång med inställningar för Insider-riskhantering](/microsoft-365/compliance/insider-risk-management-settings)
+- [Komma igång med hantering av Insider-riskhantering](/microsoft-365/compliance/insider-risk-management-configure)
+- [Skapa och hantera principer för hantering av insiderrisker](/microsoft-365/compliance/insider-risk-management-policies)
+- [Undersöka aviseringar för insiderrisker](/microsoft-365/compliance/insider-risk-management-alerts)
+- [Vidta åtgärder för insiderriskärenden](/microsoft-365/compliance/insider-risk-management-cases)
+- [Granska aktiviteter med granskningsloggen för Insider-risker](/microsoft-365/compliance/insider-risk-management-audit-log)
+- [Granska data med innehållsutforskaren för insiderrisker](/microsoft-365/compliance/insider-risk-management-content-explorer)
+- [Hantera arbetsflödet med instrumentpanelen Användare](/microsoft-365/compliance/insider-risk-management-users)
 
 ### <a name="records-management"></a>Hantering av arkivhandlingar
 
@@ -102,13 +134,13 @@ Följande avsnitt har uppdaterats eller lagts till som stöd för dessa nya funk
 
 Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
-- [Komma igång med anpassad typ av känslig information](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type)
-- [Läs mer om typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [Skapa anpassade typer av känslig information med exakt datamatchning baserad klassificering](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Skapa meddelanden för exakt datamatchning](https://docs.microsoft.com/microsoft-365/compliance/sit-edm-notifications-activities)
-- [Definitioner för typ av känslig information](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
-- [Skapa en anpassad typ av känslig information med PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Skapa en nyckelordsordlista](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary)
+- [Komma igång med anpassad typ av känslig information](/microsoft-365/compliance/create-a-custom-sensitive-information-type)
+- [Mer information om typer av känslig information](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [Skapa anpassade typer av känslig information med Exact Data Match-baserad klassificering](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [Skapa meddelanden för exakt datamatchning](/microsoft-365/compliance/sit-edm-notifications-activities)
+- [Definitioner för typ av känslig information](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [Skapa en anpassad typ av känslig information med PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [Skapa en nyckelordsordlista](/microsoft-365/compliance/create-a-keyword-dictionary)
 
 ### <a name="sensitivity-labels"></a>Känslighetsetiketter
 
@@ -122,15 +154,15 @@ Här är några av de ändringar Microsoft 365 av efterlevnadslösningar och -in
 
 ### <a name="auditing"></a>Granskning
 
-- **Hantera bevarandeprinciper för granskningsloggar.** Läs mer om den nya [instrumentpanelen för granskningsbevarandeprinciper.](https://docs.microsoft.com/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1)
-- **Söka i granskningsloggen**. [Använd PowerShell-skript för att söka i granskningsloggen](https://docs.microsoft.com/microsoft-365/compliance/audit-log-search-script).
+- **Hantera bevarandeprinciper för granskningsloggar.** Läs mer om den nya [instrumentpanelen för granskningsbevarandeprinciper.](/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1)
+- **Söka i granskningsloggen**. [Använd PowerShell-skript för att söka i granskningsloggen](/microsoft-365/compliance/audit-log-search-script).
 
 ### <a name="data-classification-content-explorer"></a>Dataklassificering – Innehållsutforskaren
 
 Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
-- [Kom igång med innehållsutforskaren](https://docs.microsoft.com/microsoft-365/compliance/data-classification-content-explorer)
-- [Viktig information för dataklassificering](https://docs.microsoft.com/microsoft-365/compliance/data-classification-pub-preview-relnotes)
+- [Kom igång med innehållsutforskaren](/microsoft-365/compliance/data-classification-content-explorer)
+- [Viktig information för dataklassificering](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>Skydd mot dataförlust
 
@@ -141,8 +173,8 @@ Innehållet har lagts till eller uppdaterats i följande avsnitt:
 - [Lär dig mer Microsoft 365 skanner för dataförlustskydd på en lokal skanner](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-learn)
 - [Komma igång med dataförlustskydd i lokal skanner](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 - [Skapa en DLP-princip för att skydda dokument med FCI eller andra egenskaper](https://docs.microsoft.com/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [Använda skydd mot Endpoint data förlust](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-using)
-- [Komma igång med data förlust skydd för Endpoint](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started)
+- [Använda dataförlustskydd för slutpunkter](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-using)
+- [Komma igång med dataförlustskydd för slutpunkt](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>eDiscovery
 
@@ -179,7 +211,7 @@ Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
 Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
-- [Läs mer om typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [Mer information om typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
 - [Skapa en anpassad typ av känslig information med PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
 - [Skapa en anpassad typ av känslig information med exakt datamatchning baserad klassificering](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
 - [Entitetsdefinitioner för typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
@@ -221,7 +253,7 @@ Först och främst är innehåll som binder samman våra Insider-risklösningar:
 
 - [Ny landningssida för insiderrisklösningar](insider-risk-solution-overview.md). Innehåller information om risker som lösningarna kan hjälpa till att minimera, licenskrav, distributionssekvens, arkitekturbilder, utbildningsresurser med mera.
 - Nya översiktsartiklar för varje insider-risklösning. Vägledning och länkar till artiklar som hjälper dig att lära dig mer om, planera, distribuera och hantera varje lösning:
-  - [Efterlevnad av kommunikation](communication-compliance-solution-overview.md)
+  - [Kommunikationsefterlevnad](communication-compliance-solution-overview.md)
   - [Hantering av insiderrisk](insider-risk-management-solution-overview.md)
   - [Informationsbarriärer](information-barriers-solution-overview.md)
   - [Privilegierad åtkomsthantering](privileged-access-management-solution-overview.md)
@@ -256,46 +288,3 @@ Rollgruppen [för hantering av arkivhandlingar beviljar](get-started-with-record
 
 - [Automatiskt märka data i Azure Purview (förhandsversion).](/azure/purview/create-sensitivity-label) Nu kan du skapa och automatiskt tillämpa känslighetsetiketter på tillgångar i Azure Purview, till exempel filer i Azure Blob-lagring och databaskolumner i SQL Server.
 - [Kräv att användare använder en etikett för objekt](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents). Det här nya alternativet kallas även för obligatorisk märkning och kräver att användarna väljer och använder en känslighetsetikett under de specifika scenarierna.
-
-## <a name="november-2020"></a>November 2020
-Vi vill påminna om att vi ofta släpper nya och uppdaterade funktioner i förhandsversioner för att lära oss hur de används så att vi kan finslipa och förbättra dem innan de släpps till allmän tillgänglighet. Din feedback är viktig under förhandsversionen (och därefter), så se till att berätta för oss vad du tycker genom att öppna Feedback-kortet längst ned till höger i efterlevnadscentret.
-
-![feedback](../media/Feedback_card_MCC.JPG)
-
-### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight: Dataförlustskydd i slutpunkt (DLP) har släppts
-
-[Slutpunkt DLP](endpoint-dlp-learn-about.md) utökar funktionerna för övervakning och skydd av aktiviteter i DLP till känslig information på Windows 10 enheter. När enheter har [introducerats](dlp-configure-endpoints.md) till Microsoft 365 efterlevnadscenter kan du konfigurera DLP-principer för att skydda känslig information på dessa enheter.
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-För att göra det enklare att hantera krypterat innehåll i eDiscovery-arbetsflödet införlivar Microsoft 365 eDiscovery-verktygen nu [dekryptering](ediscovery-decryption.md) av krypterade filer som bifogas i e-postmeddelanden och skickas i Exchange. Dessutom kan krypterade dokument som lagras SharePoint och OneDrive dekrypteras i Advanced eDiscovery.
-
-### <a name="compliance-manager"></a>Efterlevnadshanteraren
-
-- [Stöd för Microsoft 365 för myndigheter.](compliance-manager.md) Efterlevnadshanteraren är nu tillgänglig för kunder i amerikanska government community (GCC) måttliga och höga kunder.
-- [Microsoft Compliance Configuration Analyzer för Efterlevnadshanteraren.](compliance-manager-mcca.md) Nytt PowerShell-baserat verktyg som hjälper dig att komma igång med Efterlevnadshanteraren genom att skanna organisationens aktuella konfigurationer och validera dem mot Microsoft 365 rekommenderade metodtips.
-- [Nya mallar](compliance-manager-templates-list.md). Lade till 56 nya mallar, vilket innebär att totalt antal mallar för Efterlevnadshanteraren läggs till i över 230.
-
-### <a name="data-connectors"></a>Datakopplingar
-
-[Fem nya Veritas-kopplingar i förhandsgranskning](archiving-third-party-data.md#third-party-data-connectors). Nya kopplingar är Reuters Dealing, Reuters FX, CellTrust, XIP, generic MS SQL Database data.
-
-### <a name="retention-labels-disposition-review"></a>Bevarandeetiketter (dispositionsgranskning)
-
-För att visa objekt under en dispositionsgranskning måste användarna nu vara medlemmar i rollgrupperna Innehållsutforskaren Innehållsvisare och [Visningsprogram för innehållsutforskaren.](disposition.md#permissions-for-disposition) Även om det krävs för att granska objekt, är de här rollgrupperna inte nödvändiga för att slutföra dispositionsgranskningen.
-
-### <a name="sensitivity-labels"></a>Känslighetsetiketter
-
-- [(Förhandsgranska) Inställningar för extern delning SharePoint webbplatser](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings). När du skapar en etikett som ska användas för grupper och webbplatser visas ett alternativ för att styra extern delning för SharePoint webbplatser där etiketten används. Du kan ange att delning tillåts för alla, nya och befintliga gäster, endast befintliga gäster eller bara för användare i organisationen. När etiketten används ersätter etikettinställningarna alla inställningar för extern delning som konfigurerats i SharePoint [administrationscenter.](/sharepoint/change-external-sharing-site)
-- [Ta bort etikett och kryptering från ett etiketterat dokument](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document). Om du vill ta bort både en etikett och krypteringen som används från ett etiketterat dokument i SharePoint kan globala administratörer och SharePoint-administratörer köra den nya `Unlock-SPOSensitivityLabelEncryptedFile` cmdleten. Den här cmdleten körs även om administratören inte har åtkomstbehörighet till webbplatsen eller filen, eller om Azure Rights Management-tjänsten inte är tillgänglig.
-
-## <a name="october-2020"></a>Oktober 2020
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-[CJK-språkstöd](ediscovery-cjk-support.md). Advanced eDiscovery har nu stöd för språk med teckenuppsättning med dubbla byte, som gemensamt kallas CJK-språk (inklusive förenklad kinesiska, traditionell kinesiska, japanska och koreanska). De kan användas i flera avancerade granskningsscenarier.
-
-### <a name="sensitivity-labels"></a>Känslighetsetiketter
-
-- [Etikettomfattning](sensitivity-labels.md#label-scopes). När du skapar en känslighetsetikett ser du ett nytt alternativ som definierar etikettens omfattning. Med det här alternativet kan du konfigurera etiketter bara för filer och e-postmeddelanden, behållare (som SharePoint webbplatser och Teams) eller båda.
-- [Dynamisk innehållsmarkering](sensitivity-labels-office-apps.md#dynamic-markings-with-variables). När du konfigurerar innehållsmarkering för en känslighetsetikett kan du nu använda de dynamiska variablerna, till exempel och i textsträngen för sidhuvudet, sidfoten `${Item.Label}` `${Item.Location}` eller vattenstämpeln.
