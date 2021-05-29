@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som Microsoft 365 en användarpostlåda till en annan postlåda i eller utanför organisationen.
-ms.openlocfilehash: eb72204211a8eff929c024fbcede66dfe1f4b879
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635492"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698922"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurera vidarebefordran av e-post i Microsoft 365
 
@@ -40,6 +40,8 @@ Som administratör för en organisation kanske du behöver konfigurera vidarebef
 ## <a name="configure-email-forwarding"></a>Konfigurera vidarebefordran av e-post
 
 Innan du konfigurerar vidarebefordran av e-post ska du observera följande:
+
+- Tillåt att automatiskt vidarebefordrade meddelanden skickas till personer på fjärrdomänen. Mer [information finns i Hantera](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) fjärrdomäner.
 
 - När du har ställt in vidarebefordran av e-post **vidarebefordras** bara nya  *e-postmeddelanden*  som skickas till från postlådan.
 
@@ -104,4 +106,3 @@ Du måste vara Exchange administratör eller global administratör i Microsoft 3
 [Skapa en delad postlåda](../email/create-a-shared-mailbox.md) (artikel)\
 [Skicka e-post från en annan adress](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (artikel)\
 [Ändra ett användarnamn och en e-postadress](../add-users/change-a-user-name-and-email-address.md) (artikel)
-
