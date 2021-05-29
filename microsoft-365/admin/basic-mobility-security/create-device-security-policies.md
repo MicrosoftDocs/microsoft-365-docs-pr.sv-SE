@@ -18,16 +18,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Använd Basic Mobility and Security för att skapa enhetsprinciper som skyddar din organisations information.
-ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 5519351db428faa837a63eedb384b42c8d8ee07c
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023911"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706328"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Skapa säkerhetsprinciper för enheter i Basic Mobility and Security
 
-Du kan använda Grundläggande rörlighet och säkerhet för att skapa enhetsprinciper som skyddar din organisations information om Microsoft 365 mot obehörig åtkomst. Du kan tillämpa principer på alla mobila enheter i organisationen där användaren av enheten har en tillämplig Microsoft 365-licens och har registrerat enheten i Basic Mobility and Security.
+Du kan använda Grundläggande rörlighet och säkerhet för att skapa enhetsprinciper som skyddar din organisations information Microsoft 365 obehörig åtkomst. Du kan tillämpa principer på alla mobila enheter i organisationen där användaren av enheten har en tillämplig Microsoft 365-licens och har registrerat enheten i Basic Mobility and Security.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
@@ -35,12 +35,12 @@ Du kan använda Grundläggande rörlighet och säkerhet för att skapa enhetspri
 > Innan du kan skapa en princip för mobila enheter måste du aktivera och konfigurera Grundläggande rörlighet och säkerhet. Mer information finns i Översikt över Grundläggande rörlighet och säkerhet.
 
 - Läs mer om enheter, appar för mobila enheter och säkerhetsinställningar som stöder Basic Mobility and Security. Läs [mer i Funktioner för grundläggande rörlighet och säkerhet.](capabilities.md)
-- Skapa säkerhetsgrupper som innehåller Microsoft 365-användare som du vill distribuera principer till och för användare som du kanske vill utesluta från att blockeras åtkomst till Microsoft 365. Vi rekommenderar att du innan du distribuerar en ny princip i organisationen testar principen genom att distribuera den till ett litet antal användare. Du kan skapa och använda en säkerhetsgrupp som bara innehåller dig själv eller ett litet antal Microsoft 365-användare som kan testa principen åt dig. Mer information om säkerhetsgrupper finns i [Skapa, redigera eller ta bort en säkerhetsgrupp.](../email/create-edit-or-delete-a-security-group.md)
-- För att skapa och distribuera principer för grundläggande rörlighet och säkerhet i Microsoft 365 måste du vara en global Microsoft 365-administratör. Mer information finns i [Behörigheter i säkerhets- & Säkerhets- och efterlevnadscenter.](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
+- Skapa säkerhetsgrupper som innehåller Microsoft 365 användare som du vill distribuera principer till och för användare som du kanske vill undanta från att blockeras åtkomst till Microsoft 365. Vi rekommenderar att du innan du distribuerar en ny princip i organisationen testar principen genom att distribuera den till ett litet antal användare. Du kan skapa och använda en säkerhetsgrupp som bara innehåller dig själv eller ett litet Microsoft 365 som kan testa principen åt dig. Mer information om säkerhetsgrupper finns i [Skapa, redigera eller ta bort en säkerhetsgrupp.](../email/create-edit-or-delete-a-security-group.md)
+- För att skapa och distribuera principer för grundläggande rörlighet och säkerhet Microsoft 365 användare måste du vara global Microsoft 365 administratör. Mer information finns i [Behörigheter i säkerhets- & Säkerhets- och efterlevnadscenter.](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 - Innan du distribuerar principer bör du meddela organisationen hur de kan påverkas av att registrera en enhet i Basic Mobility and Security. Beroende på hur du installerar principerna kan enheter som inte är kompatibla blockeras från att komma åt Microsoft 365 och data, inklusive installerade program, foton och personlig information på en registrerad enhet, och data kan tas bort.
 
 >[!NOTE]
->Principer och åtkomstregler som skapats i Basic Mobility and Security för Microsoft 365 Business Standard åsidosätter postlådeprinciper för mobila enheter och åtkomstregler för mobila enheter i Exchange ActiveSync som skapats i administrationscentret för Exchange. När en enhet har registrerats i Basic Mobility and Security för Microsoft 365 Business Standard ignoreras eventuella postlådeprinciper för mobila enheter eller enhetsåtkomstregel för Exchange ActiveSync som tillämpas på enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online.](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
+>Principer och åtkomstregler som skapats i Basic Mobility and Security för Microsoft 365 Business Standard åsidosätter Exchange ActiveSync postlådeprinciper för mobila enheter och enhetsåtkomstregler som skapats Exchange administrationscenter. När en enhet har registrerats i Basic Mobility and Security för Microsoft 365 Business Standard ignoreras eventuella Exchange ActiveSync-postlådeprinciper för mobila enheter eller enhetsåtkomstregel som tillämpats på enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Steg 1: Skapa en enhetsprincip och distribuera till en testgrupp
 
@@ -60,7 +60,7 @@ Innan du kan starta bör du kontrollera att du har aktiverat och ställt in Basi
 
 6. Välj **Skapa den här principen.**
 
-Principen skickas till enheten för varje användare och principen gäller nästa gång de loggar in på Microsoft 365 med sin mobila enhet. Om användarna inte har tillämpat en princip på sin mobila enhet tidigare, får de ett meddelande på sin enhet efter att du har distribuerat principen, där det finns instruktioner för att registrera och aktivera Basic Mobility and Security. Mer information finns i [Registrera din mobila enhet med grundläggande rörlighet och säkerhet.](enroll-your-mobile-device.md) Fram till dess att registreringen i Basic Mobility och Security slutförs av Intune-tjänsten är åtkomsten till e-post, OneDrive och andra tjänster begränsad. När registreringen har slutförts med hjälp av appen Intune-företagsportal kan de använda tjänsterna och principen tillämpas på enheten.
+Principen skickas till enheten för varje användare. Principen gäller nästa gång de loggar in på Microsoft 365 sin mobila enhet. Om användarna inte har tillämpat en princip på sin mobila enhet tidigare, får de ett meddelande på sin enhet efter att du har distribuerat principen, där det finns instruktioner för att registrera och aktivera Basic Mobility and Security. Mer information finns i [Registrera din mobila enhet med grundläggande rörlighet och säkerhet.](enroll-your-mobile-device.md) Fram till dess att registreringen i Basic Mobility och Security slutförs av Intune-tjänsten är åtkomsten till e-OneDrive och andra tjänster begränsad. När registreringen har slutförts med hjälp Intune-företagsportal-appen kan de använda tjänsterna och principen tillämpas på deras enhet.
 
 ## <a name="step-2-verify-that-your-policy-works"></a>Steg 2: Kontrollera att principen fungerar
 
@@ -85,13 +85,13 @@ Principen skickas till den mobila enheten för varje användare. Principen gäll
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>Steg 4: Blockera e-poståtkomst för enheter som inte stöds
 
-För att skydda organisationsinformationen bör du blockera appåtkomst till Microsoft 365-e-post för mobila enheter som inte stöds av Basic Mobility and Security. En lista över enheter som stöds finns i [Enheter som stöds.](../../admin/basic-mobility-security/capabilities.md)
+För att skydda organisationsinformationen bör du blockera appåtkomst till e Microsoft 365 för mobila enheter som inte stöds av Basic Mobility and Security. En lista över enheter som stöds finns i [Enheter som stöds.](../../admin/basic-mobility-security/capabilities.md)
 
 **Så här blockerar du appåtkomst:**
 
 1. I webbläsaren skriver du [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 2. Välj **Hantera enhetsåtkomstinställningar för hela organisationen**.
-3. Om du vill blockera enheter som inte stöds väljer du **Blockera** under Om en enhet inte stöds av Basic Mobility and Security för **Microsoft 365** och väljer sedan **Spara**.
+3. Om du vill blockera enheter som inte stöds väljer du **Blockera** under Om en enhet inte stöds av **Basic Mobility and Security** för Microsoft 365 och väljer sedan **Spara**.
 
    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Alternativet Åtkomst för spärr för enkel rörlighet och säkerhet":::
 
@@ -105,7 +105,7 @@ Om du vill exkludera vissa personer från villkorsstyrda åtkomstkontroller på 
 
    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Skapa ett principalternativ för Basic Mobility and Security":::
 
-3. Välj **Lägg** till för att lägga till säkerhetsgruppen som har användare som du vill utesluta från att ha blockerat åtkomst till Microsoft 365. När en användare har lagts till i den här listan kan de komma åt e-post i Microsoft 365 när de använder en enhet som inte stöds.
+3. Välj **Lägg** till för att lägga till säkerhetsgruppen som har användare som du vill utesluta från att ha blockerat åtkomst till Microsoft 365. När en användare har lagts till i den här listan kan de komma åt Microsoft 365 e-post när de använder en enhet som inte stöds.
 
 4. Markera den säkerhetsgrupp som du vill använda i **panelen Välj** grupp.
 
@@ -126,12 +126,12 @@ När du tillämpar en princip på användarnas enheter varierar påverkan på va
 |Blockera dokumentsynkronisering|Nej|Nej|Ja|iOS: Blockera dokument i molnet.|
 |Blockera fotosynkronisering |Nej|Nej|Ja|iOS (inbyggd): Blockera Fotoström.|
 |Blockera skärminspelning |Nej|Ja|Ja|Blockeras när du försöker.|
-|Blockera videokonferens |Nej|Nej|Ja|FaceTime blockeras i iOS, inte på Skype eller andra.|
+|Blockera videokonferens |Nej|Nej|Ja|FaceTime blockeras på iOS, inte på Skype eller andra.|
 |Blockera att diagnostikdata skickas |Nej|Ja|Ja|Blockera att Google kraschar på Android.|
-|Blockera åtkomst till appbutik |Nej|Ja|Ja|App Store-ikonen saknas på Android-startsidan, inaktiverad i Windows, saknas på iOS.|
+|Blockera åtkomst till appbutik |Nej|Ja|Ja|App Store-ikonen saknas på Android-startsidan, inaktiverad på Windows, saknas på iOS.|
 |Kräv lösenord för app store |Nej|Nej|Ja|iOS: Lösenord krävs för iTunes-köp.|
-|Blockera anslutning till flyttbara lagringsmedia |Nej|Ja|Uppgift saknas|Android: SD-kortet är nedtonat i inställningar, Windows meddelar användaren, installerade appar är inte tillgängliga|
-|Blockera Bluetooth-anslutning |Visa anteckningar|Visa anteckningar|Ja|Vi kan inte inaktivera BlueTooth som en inställning i Android. I stället inaktiverar vi alla transaktioner som kräver BlueTooth: Avancerad ljuddistribution, ljud-/videokontroll, handsfreeenheter, headset, telefonboksåtkomst och serieport. Ett litet popup-meddelande visas längst ned på sidan när någon av dessa används.|
+|Blockera anslutning till flyttbara lagringsmedia |Nej|Ja|Uppgift saknas|Android: SD-kort är nedtonat i inställningar, Windows användaren får ett meddelande om att installerade appar inte är tillgängliga|
+|Blockera Bluetooth anslutning |Visa anteckningar|Visa anteckningar|Ja|Vi kan inte inaktivera BlueTooth som en inställning i Android. I stället inaktiverar vi alla transaktioner som kräver BlueTooth: Advanced Audio Distribution, Audio/Video Remote Control, handsfree-enheter, headset, Telefon Book Access och Serial Port. Ett litet popup-meddelande visas längst ned på sidan när någon av dessa används.|
 
 ## <a name="what-happens-when-you-delete-a-policy-or-remove-a-user-from-the-policy"></a>Vad händer när du tar bort en princip eller tar bort en användare från principen?
 
@@ -148,8 +148,7 @@ Principen tas bort från den mobila enheten för varje användare. Principen gä
 
 Du kan också rensa en enhet helt eller selektivt rensa organisationsinformation från enheten. Mer information finns i Rensa [en mobil enhet i Grundläggande rörlighet och säkerhet.](wipe-mobile-device.md)
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-content"></a>Relaterat innehåll
 
-[Översikt över grundläggande Mobility and Security](overview.md)
-
-[Funktioner i grundläggande Mobility and Security](capabilities.md)
+[Översikt över Grundläggande rörlighet och säkerhet](overview.md) (artikel)\
+[Funktioner för basic mobility and security](capabilities.md) (artikel)

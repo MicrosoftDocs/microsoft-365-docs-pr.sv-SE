@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs mer Microsoft 365 för företag, hur du bereder det och hur du förbereder användarnas enheter och datorer för att säkerställa att de skyddas av Microsoft 365 för företag.
-ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293716"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706467"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Komma igång med Microsoft 365 för företag
 
@@ -41,7 +41,7 @@ ms.locfileid: "52293716"
 
 Microsoft 365 för företag är en omfattande uppsättning produktivitets- och samarbetsverktyg för företag, till exempel Outlook, Word, Excel och andra Office-produkter, som alltid är uppdaterade. Du kan skydda dina arbetsfiler på alla dina iOS-, Android- och Windows 10-enheter med säkerhet i företagsklass som är enkel att hantera.
 
-Titta på den här videon för en snabb överblick över Microsoft 365 för företag.<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Titta: Vad är Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -61,7 +61,7 @@ I följande diagram beskrivs hur administratörer konfigurerar Microsoft 365 fö
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-Titta på den här videon för en översikt över konfiguration Microsoft 365 för företag.<br><br>
+## <a name="watch-set-up-microsoft-365-business"></a>Titta: Konfigurera Microsoft 365 Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -109,8 +109,7 @@ Om du behåller en lokal Active Directory-fil som innehåller vissa lokala resur
     
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365 dokumentation och resurser för företag](./index.yml)
-  
-[Hantera Microsoft 365 för företag](manage.md)[Migrera till Microsoft 365 för företag](migrate-to-microsoft-365-business.md)
-
-[Utbildningsvideor för Microsoft 365 Business](../business-video/index.yml)
+[Microsoft 365 dokumentation och resurser för för företag](./index.yml) (länksida)\
+[Hantera Microsoft 365 för företag](manage.md) (artikel)\
+[Migrera till Microsoft 365 för företag](migrate-to-microsoft-365-business.md) (artikel)\
+[Microsoft 365 om utbildningsvideor för företag](../business-video/index.yml) (länksida)

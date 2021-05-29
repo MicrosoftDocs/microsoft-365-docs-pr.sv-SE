@@ -1,5 +1,5 @@
 ---
-title: Aktivera eller inaktivera granskning
+title: Aktivera eller inaktivera granskningar
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,14 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Så här aktiverar eller inaktiverar du funktionen Granskningsloggsökning i Microsoft 365 efterlevnadscenter för att aktivera eller inaktivera administratörers möjlighet att söka i granskningsloggen.
-ms.openlocfilehash: 091331a40a2ab6bf3c05bb289d49f63ab2dd2794
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657739"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706670"
 ---
-# <a name="turn-auditing-on-or-off"></a>Aktivera eller inaktivera granskning
+# <a name="turn-auditing-on-or-off"></a>Aktivera eller inaktivera granskningar
 
 Granskningsloggning är som standard aktiverat för Microsoft 365 och Office 365 Enterprise-organisationer. Det omfattar även organisationer med prenumerationer på E3/G3 eller E5/G5. När granskning i efterlevnadscentret är aktiverad registreras användar- och administratörsaktiviteten från organisationen i granskningsloggen och behålls i 90 dagar och upp till ett år beroende på vilken licens som tilldelats användarna. Det kan dock finnas skäl för organisationen att inte registrera och behålla granskningsloggdata. I sådana fall kan en global administratör välja att inaktivera granskning i Microsoft 365.
 
@@ -63,7 +63,7 @@ Om granskning inte är aktiverat för organisationen kan du aktivera den i efter
 
    Om granskning inte är aktiverat för organisationen visas en banderoll där du uppmanas att börja spela in användar- och administratörsaktivitet.
 
-   ![Banderoll på granskningssida](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+   ![Banderoll på granskningssida](../media/AuditingBanner.png)
 
 3. Klicka på **banderollen Starta inspelning av användar- och administratörsaktivitet.**
 

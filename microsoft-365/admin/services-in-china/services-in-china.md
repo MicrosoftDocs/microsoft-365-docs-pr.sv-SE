@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Läs mer om Office 365 som drivs av 21Vianet och som har utformats för att uppfylla behoven för säkra, tillförlitliga och skalbara molntjänster i Kina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 00710d53033648764ed0e55eeb51ee66518e36f7
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: bc416ca253d26cc5d391d226039223eac02720b0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297062"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706376"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 med 21Vianet
 
@@ -129,11 +129,11 @@ För organisationer som kör äldre eller blandade versioner av Exchange Server 
 | 2013 SP1  <br/> | 2013 SP1  <br/> | Ja  <br/> | Alla  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | Ja  <br/> | Alla, förutom På plats-eDiscovery/Archiving, OWA-åtkomst (se tabell nedan)  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Ja  <br/> | Endast manuellt konfigurerad ledig/upptagen  <br/> |
-| 2010 SP3  <br/> | 2010 SP3  <br/> | Nej  <br/> | Ingen  <br/> |
+| 2010 SP3  <br/> | 2010 SP3  <br/> | Nej  <br/> | Inga  <br/> |
 | 2007  <br/> | 2013 CU5  <br/> | Ja  <br/> | Endast tillgänglig/upptagen  <br/> |
 | 2007  <br/> | 2013 SP1 eller 2010 SP3No  <br/> | Uppgift saknas  <br/> | Stöds inte  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | Uppgift saknas  <br/> | Stöds inte  <br/> |
-| 2003  <br/> | 2010 SP3  <br/> | Nej  <br/> | Ingen  <br/> |
+| 2003  <br/> | 2010 SP3  <br/> | Nej  <br/> | Inga  <br/> |
 
    
 > [!IMPORTANT]
@@ -236,8 +236,6 @@ Mer information och instruktioner finns i [Data Subject Requests (DSR) för GDPR
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Prova eller köp en Microsoft 365 för företag-prenumeration](../../commerce/try-or-buy-microsoft-365.md) (artikel)
-
-[Stöd för Azure Information Protection för Office 365 som drivs av 21Vianet](parity-between-azure-information-protection.md) (artikel)
-
+[Prova eller köp en Microsoft 365 för företag-prenumeration](../../commerce/try-or-buy-microsoft-365.md) (artikel)\
+[Azure Information Protection-stöd för Office 365 som drivs av 21Vianet](parity-between-azure-information-protection.md) (artikel)\
 [Visa din faktura eller skaffa en Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artikel)

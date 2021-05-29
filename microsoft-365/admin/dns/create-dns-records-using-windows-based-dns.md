@@ -1,5 +1,5 @@
 ---
-title: Skapa DNS-poster för Microsoft med Windows-baserad DNS
+title: Skapa DNS-poster för Microsoft Windows DNS-poster
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag – Online och andra tjänster hos Windows-baserad DNS för Microsoft.
-ms.openlocfilehash: fd7c56b6db9fe5f5dbb0637ad5abcb40a64bef8f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+description: Lär dig att verifiera din domän och konfigurera DNS-poster för e-post, Skype för företag Online och andra tjänster på Windows-baserad DNS för Microsoft.
+ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876355"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706124"
 ---
-# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Skapa DNS-poster för Microsoft med Windows-baserad DNS
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Skapa DNS-poster för Microsoft Windows DNS-poster
 
  **[Läs frågor och svar om domäner](../setup/domains-faq.yml)** om du inte hittar det du letar efter. 
    
@@ -39,15 +39,15 @@ För att komma igång måste du hitta [dina DNS-poster i Windows-baserad DNS](#f
 Problem med e-postflöde eller andra problem när du har lagt till DNS-poster, se [Felsöka problem när du har ändrat domännamn eller DNS-poster.](../get-help-with-domains/find-and-fix-issues.md) 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Hitta dina DNS-poster i Windows-baserad DNS
-<a name="BKMK_find_your_dns_1"></a> Gå till sidan som innehåller DNS-posterna för din domän. Om du arbetar i Windows Server 2008 går du till **Starta**  >  **kör.** Om du arbetar i Windows Server 2012 trycker du på Windows-tangenten och **r.** Skriv **dnsmgmnt.msc** och välj sedan **OK.** Expandera Zoner för **\<DNS server name\> \> framåtuppslag i DNS-hanteraren.** Välj din domän. Nu är du redo att skapa DNS-poster.
+<a name="BKMK_find_your_dns_1"></a> Gå till sidan som innehåller DNS-posterna för din domän. Om du arbetar i Windows Server 2008 går du till **Starta**  >  **kör.** Om du arbetar i Windows Server 2012 trycker du på Windows och **r.** Skriv **dnsmgmnt.msc** och välj sedan **OK.** Expandera Zoner för **\<DNS server name\> \> framåtuppslag i DNS-hanteraren.** Välj din domän. Nu är du redo att skapa DNS-poster.
    
 ## <a name="add-mx-record"></a>Lägga till MX-post
 <a name="BKMK_add_MX"> </a>
 
 Lägg till en MX-post så att e-post för din domän kommer till Microsoft.
 - MX-posten du lägger till innehåller  ett värde (värdet Pekar på adress) som ser ut ungefär så här: .mail.protection.outlook.com, där är ett värde som \<MX token\> \<MX token\> MSxxxxxxx. 
-- Kopiera värdet som visas under Pekar på adress från MX-raden i avsnittet Exchange Online på sidan Add DNS records i Microsoft. Du ska använda det här värdet i den post som du skapar i den här uppgiften. 
-- Gå till **Action** Mail Exchanger (MX) på sidan  >  **DNS-hanteraren för domänen.** Information om hur du hittar den här sidan för domänen finns i [Hitta dina DNS-poster i Windows-baserad DNS.](#find-your-dns-records-in-windows-based-dns)  
+- På MX-raden i Exchange Online på sidan Lägg till DNS-poster i Microsoft kopierar du värdet som visas under Pekar på adress. Du ska använda det här värdet i den post som du skapar i den här uppgiften. 
+- Gå till **Action** Mail Exchanger (MX) på sidan  >  **DNS-hanteraren för domänen.** Information om hur du hittar den här sidan för domänen finns i [Hitta dina DNS-poster Windows DNS-posterna.](#find-your-dns-records-in-windows-based-dns)  
 - I **dialogrutan Ny resurspost** kontrollerar du att fälten är inställda på exakt följande värden: 
     - Värdnamn:  
     - @Address: Klistra in värdet Pekar på-adress som du just kopierade från Microsoft här.  
@@ -119,7 +119,7 @@ Lägg till SPF TXT-posten för din domän för att förhindra skräp i e-posten.
 - På sidan DNS-hanteraren för din domän går du till **Action** \> **Text (TXT)**. 
 -  I dialogrutan **Ny resurspost** kontrollerar du att fälten är inställda på exakt följande värden. 
  > [!IMPORTANT]
-> I vissa versioner av Windows DNS-hanteraren kan domänen ha ställts in så att när du skapar en txt-post blir startdomänens standardnamn den överordnade domänen. När du lägger till en TXT-post i det här fallet ska du ange värdnamnet till tomt (inget värde) i stället för att ange det till @ eller domännamnet. 
+> I vissa versioner Windows DNS-hanteraren kan domänen ha ställts in så att när du skapar en txt-post blir hemnamnet som standard den överordnade domänen. När du lägger till en TXT-post i det här fallet ska du ange värdnamnet till tomt (inget värde) i stället för att ange det till @ eller domännamnet. 
 
 -  Värdtyp: @
 -  Posttyp: TXT
@@ -160,7 +160,7 @@ Lägga till SIP SRV-posten för Skype för företag - Online-federation.
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Lägg till en post för att verifiera att du äger domänen, om du inte redan har gjort det
 <a name="BKMK_verify"> </a>
 
-Innan du lägger till DNS-posterna för att konfigurera dina Microsoft-tjänster måste Microsoft bekräfta att du äger den domän som du vill lägga till. Det här gör du genom att lägga till en post enligt stegen nedan.
+Innan du lägger till DNS-posterna för Microsoft-tjänster måste Microsoft bekräfta att du äger den domän som du vill lägga till. Det här gör du genom att lägga till en post enligt stegen nedan.
   
 > [!NOTE]
 > Den här posten används endast för att verifiera att du äger domänen, den påverkar ingenting annat. 
@@ -179,7 +179,7 @@ Lägga till en TXT-post.
 -  I området **För namn på** anpassade värdar i dialogrutan **Ny** resurspost kontrollerar du att fälten är inställda på exakt följande värden. 
 
 > [!IMPORTANT] 
-> I vissa versioner av Windows DNS-hanteraren kan domänen ha ställts in så att när du skapar en txt-post blir startdomänens standardnamn den överordnade domänen. När du lägger till en TXT-post i det här fallet ska du ange värdnamnet till tomt (inget värde) i stället för att ange det till @ eller domännamnet. 
+> I vissa versioner Windows DNS-hanteraren kan domänen ha ställts in så att när du skapar en txt-post blir hemnamnet som standard den överordnade domänen. När du lägger till en TXT-post i det här fallet ska du ange värdnamnet till tomt (inget värde) i stället för att ange det till @ eller domännamnet. 
 
 - Värdnamn: @
 - Typ: TXT
@@ -208,8 +208,6 @@ Om du planerar att synkronisera din lokala Active Directory med Microsoft bör d
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Överföra en domän från Micrsoft 365 till en annan värd](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) (artikel)
-
-[Pilottesta Microsoft 365 från min egen domän](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (artikel)
-
-[Vanliga frågor och svar](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) om domäner (artikel)
+[Överföra en domän från Micrsoft 365 till en annan värd](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (artikel)\
+[Pilot Microsoft 365 från min egen domän](../misc/pilot-microsoft-365-from-my-custom-domain.md) (artikel)\
+[Domänens vanliga frågor och svar](../setup/domains-faq.yml) (artikel)

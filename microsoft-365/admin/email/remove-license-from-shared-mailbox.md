@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 'Ta bort licens från en delad postlåda för att tilldela den till en annan användare. '
-ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 'Ta bort en licens från en delad postlåda för att tilldela den till en annan användare eller returnera licensen så att du inte betalar för den. '
+ms.openlocfilehash: d33487879506402c5f0de2f7942c3299c5698b73
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537589"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706292"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Ta bort en licens från en delad postlåda
 
@@ -74,14 +74,10 @@ Delade postlådor kräver vanligtvis inte en licens. Följ de här anvisningarna
 
 6. Du betalar fortfarande för licensen. Ta bort licensen från prenumerationen [om du vill sluta betala för den.](../../commerce/licenses/buy-licenses.md)
 
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Om delade postlådor](about-shared-mailboxes.md)
-
-[Skapa en delad postlåda](create-a-shared-mailbox.md)
-
-[Konfigurera en delad postlåda](configure-a-shared-mailbox.md)
-
-[Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md)
-
-[Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md)
+[Om delade postlådor](about-shared-mailboxes.md) (artikel)\
+[Skapa en delad postlåda](create-a-shared-mailbox.md) (artikel)\
+[Konfigurera en delad postlåda](configure-a-shared-mailbox.md) (artikel)\
+[Konvertera en användarpostlåda till en delad postlåda](convert-user-mailbox-to-shared-mailbox.md) (artikel)\
+[Lösa problem med delade postlådor](resolve-issues-with-shared-mailboxes.md) (artikel)

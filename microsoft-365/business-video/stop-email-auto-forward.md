@@ -20,23 +20,25 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du stoppar automatisk vidarebefordran av e-postmeddelanden.
-ms.openlocfilehash: f8bd599c7c8bca8d4789188acbcd3574b7473dcb
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Lär dig hur du stoppar automatisk vidarebefordran av e-postmeddelanden genom att skapa en e-postflödesregel för att undvika stöld av upphovsrättsskyddad information.
+ms.openlocfilehash: 82e4c80b0edc501889e0fc4dc28f1ec1ad703568
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903688"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706480"
 ---
 # <a name="stop-email-auto-forward"></a>Stoppa vidarebefordran av e-post automatiskt
+
+## <a name="watch-stop-auto-forwarding-emails"></a>Titta på: Stoppa e-postmeddelanden om automatisk vidarebefordran
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
 Om en hackare får åtkomst till en användares postlåda kan de automatiskt vidarebefordra användarens e-post till en adress utanför företaget och stjäla egen information. Du kan stoppa detta genom att skapa en e-postflödesregel.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. I administrationscentret för Microsoft 365 väljer du **Exchange** **,** e-postflöde och på fliken Regler väljer du plustecknet och **sedan Skapa en ny regel.** 
+1. I Microsoft 365 väljer du **Exchange**, e-postflöde och på  fliken Regler väljer du plustecknet och **väljer skapa en ny regel.** 
 1. Välj **Fler alternativ.** Ge den nya regeln ett namn.
 1. Öppna sedan listrutan för att **tillämpa regeln om**, välj avsändaren **och** sedan är **extern intern**.
 1. Välj **Inom organisationen** och sedan **OK.**
@@ -50,4 +52,6 @@ Om en hackare får åtkomst till en användares postlåda kan de automatiskt vid
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-Lägga till ytterligare [ett e-postalias](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) för en användare (artikel) Konfigurera vidarebefordran av e-post i [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (artikel) Hitta och korrigera problem med e-postleverans som administratör för [Office 365](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) för företag (artikel)
+[Lägga till ytterligare ett e-postalias för en användare](../admin/email/add-another-email-alias-for-a-user.md) (artikel)\
+[Konfigurera vidarebefordran av e-post i Microsoft 365](../admin/email/configure-email-forwarding.md) (artikel)\
+[Hitta och korrigera problem med e-postleverans som Office 365 för företag-administratör](/exchange/troubleshoot/email-delivery/email-delivery-issues) (artikel)

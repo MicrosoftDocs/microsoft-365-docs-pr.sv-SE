@@ -21,22 +21,24 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du lägger till användare i Microsoft 365 för företag.
-ms.openlocfilehash: d1167241a7b4c6012663f900973cb2fdbb7792bb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8a9d9cbf0204d9cf4ef878116ddddbe1b2103ccb
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580720"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706412"
 ---
 # <a name="add-a-new-user"></a>Lägga till en ny användare
 
+## <a name="watch-add-a-user"></a>Titta: Lägga till en användare
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
-När en ny person ansluter till företaget måste du lägga till dem i din Microsoft 365 Business Premium-prenumeration som en ny användare.
+När en ny person ansluter till företaget måste du lägga till dem i Microsoft 365 Business Premium-prenumerationen som en ny användare.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. Gå till Användarhantering i administrationscentret för Microsoft 365 **och** välj Lägg till användare.
+1. I Microsoft 365 går du till **Användarhantering och** väljer Lägg till användare.
 1. Ange den nya användarens **förnamn** **och efternamn.** Visningsnamnet **fylls** i automatiskt, men du kan ändra det.
 1. Ange ett **användarnamn.** Det blir den nya användarens e-postadress. Om du har fler än en domän väljer du rätt domän i listrutan.
 1. Om du vill att ett lösenord ska skapas automatiskt väljer **du Skapa lösenord automatiskt.**
@@ -46,4 +48,4 @@ När en ny person ansluter till företaget måste du lägga till dem i din Micro
 1. Om du vill att användaren ska vara administratör expanderar du Roll **s,** avmarkerar kryssrutan Användare **(ingen** administratörsåtkomst) och väljer en administratörsroll i listan. Mer information om administratörsroller och hur du konfigurerar dem finns [i Vad är en administratör?](what-is-admin.md)
 1. Under **Profilinformation** anger du information om användarens jobb, avdelning, kontor och så vidare. (Du eller den nya användaren kan alltid lägga till den här informationen senare.) Välj **Nästa.**
 1. Granska användarinformationen. Om du behöver köpa ytterligare en licens för användaren visas ett meddelande på sidan Granska. Välj **Slutför tilläggning** och välj sedan **Stäng**.
-1. Kontrollera att användaren har skapats: i det vänstra navigeringsfönstret i administrationscentret för Microsoft 365 väljer du Användare **och** sedan **Aktiva användare.** Den nya användaren ska visas tillsammans med sin tilldelade licens.
+1. Kontrollera att användaren har skapats: i Microsoft 365 vänstra navigeringsfönstret väljer du Användare **och** sedan Aktiva **användare.** Den nya användaren ska visas tillsammans med sin tilldelade licens.

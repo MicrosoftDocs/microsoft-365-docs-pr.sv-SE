@@ -1,5 +1,5 @@
 ---
-title: Översikt över Basic Mobility and Security för Microsoft 365
+title: Översikt över Grundläggande rörlighet och säkerhet för Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,16 +18,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Använd Basic Mobility and Security för att ange säkerhetsprinciper och åtkomstregler för enheter.
-ms.openlocfilehash: e74a5df6d10f8f3fb7b420e428380af97ba75597
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 37be420a4b9499da3d1290b8b6a898b9fcb09c5b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906258"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706316"
 ---
-# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Översikt över Basic Mobility and Security för Microsoft 365
+# <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Översikt över Grundläggande rörlighet och säkerhet för Microsoft 365
 
-Du kan hantera och skydda mobila enheter när de är anslutna till din Microsoft 365-organisation med hjälp av Basic Mobility and Security. Mobila enheter som smartphones och surfplattor som används för att komma åt arbets-e-post, kalender, kontakter och dokument spelar en stor roll för att säkerställa att anställda får jobbet gjort när som helst, var som helst. Därför är det viktigt att du hjälper till att skydda organisationens information när personer använder enheter. Du kan använda Grundläggande rörlighet och säkerhet för att ställa in säkerhetsprinciper och åtkomstregler för enheter, och för att rensa mobila enheter om de försvinner eller blir stulna.
+Du kan hantera och skydda mobila enheter när de är anslutna till din Microsoft 365 organisation med hjälp av Basic Mobility and Security. Mobila enheter som smartphones och surfplattor som används för att komma åt arbets-e-post, kalender, kontakter och dokument spelar en stor roll för att säkerställa att anställda får jobbet gjort när som helst, var som helst. Därför är det viktigt att du hjälper till att skydda organisationens information när personer använder enheter. Du kan använda Grundläggande rörlighet och säkerhet för att ställa in säkerhetsprinciper och åtkomstregler för enheter, och för att rensa mobila enheter om de försvinner eller blir stulna.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Grundläggande rörlighets- och säkerhetskonfiguration":::
 
@@ -39,13 +39,13 @@ Information om vilka stöd för Basic Mobility och Security som stöds för varj
 
 ## <a name="setup-steps-for-basic-mobility-and-security"></a>Konfigurationssteg för Basic Mobility and Security
 
-En global Microsoft 365-administratör måste slutföra följande steg för att aktivera och konfigurera grundläggande rörlighet och säkerhet. Detaljerade instruktioner finns i Konfigurera grundläggande [rörlighet och säkerhet.](set-up.md) 
+En Microsoft 365 global administratör måste utföra följande steg för att aktivera och konfigurera grundläggande rörlighet och säkerhet. Detaljerade instruktioner finns i Konfigurera grundläggande [rörlighet och säkerhet.](set-up.md) 
 
 Här följer en sammanfattning av stegen:
 
 **Steg 1:** Aktivera grundläggande rörlighet och säkerhet genom att följa stegen i  [Konfigurera grundläggande rörlighet och säkerhet.](set-up.md)
 
-**Steg 2:** Konfigurera grundläggande rörlighet och säkerhet genom att till exempel skapa ett APNs-certifikat för att hantera iOS-enheter och lägga till en DNS-post (Domain Name System) för din domän för att stödja Windows-telefoner.
+**Steg 2:** Konfigurera Basic Mobility and Security genom att till exempel skapa ett APNs-certifikat för att hantera iOS-enheter och lägga till en DNS-post (Domain Name System) för din domän för att stödja Windows telefoner.
 
 **Steg 3:** Skapa enhetsprinciper och använd dem på grupper av användare. När du gör det får användarna ett meddelande om registrering på sin enhet, och när registreringen är klar begränsas deras enheter av de principer du har angett för dem. Mer information finns i [Registrera din mobila enhet med grundläggande rörlighet och säkerhet.](enroll-your-mobile-device.md) 
 
@@ -53,18 +53,15 @@ Här följer en sammanfattning av stegen:
 
 ## <a name="device-management-tasks"></a>Uppgifter för enhetshantering
 
-När du har konfigurerat Basic Mobility and Security och dina användare har registrerat sina enheter kan du hantera enheterna, blockera åtkomst eller rensa en enhet om det behövs. Mer information om några vanliga uppgifter för enhetshantering, inklusive var du utför uppgifter, finns i Hantera enheter som är registrerade i Hantering av mobila enheter för [Microsoft 365.](manage-enrolled-devices.md)
+När du har konfigurerat Basic Mobility and Security och dina användare har registrerat sina enheter kan du hantera enheterna, blockera åtkomst eller rensa en enhet om det behövs. Mer information om några vanliga uppgifter för enhetshantering, bland annat var du utför uppgifter, finns i Hantera enheter som är registrerade i Hantering av mobila enheter [för Microsoft 365](manage-enrolled-devices.md).
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>Andra sätt att hantera enheter och appar
 
 Om du bara behöver hantering av mobilappar (MAM), kanske för personer som uppdaterar arbetsprojekt på sina egna enheter, tillhandahåller Intune ett annat alternativ än att registrera och hantera enheter. Med en Intune-prenumeration kan du konfigurera MAM-principer med hjälp av Azure-portalen, även om personers enheter inte är registrerade i Intune. Mer information finns i Översikt [över principer för programskydd](/mem/intune/apps/app-protection-policy).
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-content"></a>Relaterat innehåll
 
-[Konfigurera grundläggande Mobility and Security](set-up.md)
-
-[Registrera din mobila enhet med Basic Mobility and Security](enroll-your-mobile-device.md)
-
-[Hantera enheter som registrerats i Hantering av mobila enheter för Microsoft 365](manage-enrolled-devices.md)
-
-[Få information om enheter som hanteras av Basic Mobility och Security](get-details-about-managed-devices.md)
+[Konfigurera grundläggande rörlighet och säkerhet](set-up.md) (artikel)\
+[Registrera din mobila enhet med hjälp av Basic Mobility and Security](enroll-your-mobile-device.md) (artikel)\
+[Hantera enheter som registrerats i Hantering av mobila enheter för Microsoft 365](manage-enrolled-devices.md) (artikel)\
+[Få information om enheter som hanteras av Basic Mobility and Security](get-details-about-managed-devices.md) (artikel)

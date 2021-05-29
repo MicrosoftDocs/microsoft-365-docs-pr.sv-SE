@@ -18,16 +18,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security kan hjälpa dig att skydda och hantera mobila enheter.
-ms.openlocfilehash: 60de4e3f36427a69ecf0bf52e5dfd34f089991f3
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 41df5bfba7362d9c2b3a47deca4e4586902bbd98
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994979"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706184"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Funktioner i grundläggande Mobility and Security
 
-Basic Mobility and Security kan hjälpa dig att skydda och hantera mobila enheter som iPhone, iPad, Android och Windows Phone-telefoner som används av licensierade Microsoft 365-användare i organisationen. Du kan skapa principer för hantering av mobila enheter med inställningar som kan hjälpa dig att kontrollera åtkomsten till din organisations Microsoft 365-e-post och dokument för mobila enheter och appar som stöds. Om en enhet försvinner eller blir stulen kan du fjärradea enheten för att ta bort känslig information om organisationen.
+Basic Mobility and Security kan hjälpa dig att skydda och hantera mobila enheter som iPhone, iPad, Android och Windows Telefoner som används av licensierade Microsoft 365 användare i organisationen. Du kan skapa principer för hantering av mobila enheter med inställningar som kan hjälpa dig att kontrollera åtkomsten till din organisations e-Microsoft 365 och dokument för mobila enheter och appar som stöds. Om en enhet försvinner eller blir stulen kan du fjärradea enheten för att ta bort känslig information om organisationen.
 
 ## <a name="supported-devices"></a>Enheter som stöds
 
@@ -54,34 +54,34 @@ Du kan använda Basic Mobility and Security för att skydda och hantera följand
 >[!NOTE]
 >Enheter som redan har registrerats med tidigare os-versioner fortsätter att fungera, men funktionerna kan ändras utan föregående meddelande.
 
-Om personer i organisationen använder mobila enheter som inte stöds av Basic Mobility and Security kanske du vill blockera Exchange ActiveSync-appåtkomst till e-post i Microsoft 365 för de enheterna, för att göra organisationens data säkrare. Information om hur du blockerar Exchange ActiveSync finns [i Hantera enhetsåtkomstinställningar i Basic Mobility and Security.](manage-device-access-settings.md)
+Om personer i din organisation använder mobila enheter som inte stöds av Grundläggande rörlighet och säkerhet kanske du vill blockera Exchange ActiveSync-appåtkomst till Microsoft 365-e-post för dessa enheter, för att göra organisationens data säkrare. Information om hur du blockerar Exchange ActiveSync finns i [Hantera inställningar för enhetsåtkomst i Grundläggande rörlighet och säkerhet.](manage-device-access-settings.md)
 
-## <a name="access-control-for-microsoft-365-email-and-documents"></a>Åtkomstkontroll för e-post och dokument i Microsoft 365
+## <a name="access-control-for-microsoft-365-email-and-documents"></a>Åtkomstkontroll för e Microsoft 365 och dokument
 
-Apparna som stöds för de olika typerna av mobila enheter i följande tabell uppmanar användarna att registrera sig i Basic Mobility and Security, där det finns en ny princip för hantering av mobila enheter som gäller för en användares enhet och användaren inte tidigare har registrerat enheten. Om en användares enhet inte uppfyller en princip, beroende på hur du har angett principen, kan en användare blockeras från att komma åt Microsoft 365-resurser i de här apparna, eller så har de åtkomst men Microsoft 365 rapporterar ett principfel.
+Apparna som stöds för de olika typerna av mobila enheter i följande tabell uppmanar användarna att registrera sig i Basic Mobility and Security, där det finns en ny princip för hantering av mobila enheter som gäller för en användares enhet och användaren inte tidigare har registrerat enheten. Om en användares enhet inte uppfyller en princip, beroende på hur du har angett principen, kan en användare blockeras från att komma åt Microsoft 365-resurser i dessa program, eller så kan de ha åtkomst, men Microsoft 365 rapporterar en principbrott.
 
 |**Produkt**|**iOS 10.0 eller senare**|**Android 5.0 eller senare**|
 |:-----|:-----|:-----|
-|**Exchange** Exchange ActiveSync innehåller inbyggd e-post och appar från tredje part, till exempel TouchDown, som använder Exchange ActiveSync version 14.1 eller senare. |E-post |E-post |
-|**Office**   och  **OneDrive för företag** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**På telefoner och surfplattor:**<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Endast på telefoner:** <br/> Office Mobile |
+|**Exchange** Exchange ActiveSync innehåller inbyggda e-post- och tredjepartsprogram, till exempel TouchDown, som använder Exchange ActiveSync version 14.1 eller senare. |E-post |E-post |
+|**Office**   och  **OneDrive för företag** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**På telefoner och surfplattor:**<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Endast på telefoner:** <br/> Office Mobil |
 
 >[!NOTE]
-- >Stöd för iOS 10.0 och senare versioner inkluderar iPhone och iPad-enheter.
+- >Stöd för iOS 10.0 och senare versioner omfattar även iPhone och iPad enheter.
 - >Hantering av BlackBerry OS-enheter stöds inte av Basic Security och Mobility. Använd BlackBerry Business Cloud Services (BBCS) från BlackBerry för att hantera BlackBerry OS-enheter. Blackberry-enheter med Android OS stöds som vanliga Android-enheter
 - >Användarna uppmanas inte att registrera sig och de kommer inte att blockeras eller rapporteras för principbrott om de använder mobilwebbläsaren för att komma åt Microsoft 365 SharePoint-webbplatser, dokument i Office Online eller e-post i Outlook Web App.
 
-Följande diagram visar vad som händer när en användare med en ny enhet loggar in i en app som stöder åtkomstkontroll med Basic Mobility och Security. Användaren blockeras från att komma åt Microsoft 365-resurser i programmet tills de registrerar sin enhet.
+Följande diagram visar vad som händer när en användare med en ny enhet loggar in i en app som stöder åtkomstkontroll med Basic Mobility och Security. Användaren blockeras från att komma åt Microsoft 365 i programmet tills de registrerar sin enhet.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Åtkomstkontroll för enkel rörlighet och säkerhet":::
 
 > [!NOTE]
-> Principer och åtkomstregler som skapats i Basic Mobility and Security för Microsoft 365 Business Standard åsidosätter postlådeprinciper för mobila enheter och åtkomstregler för enheter som skapats i administrationscentret för Exchange ActiveSync. När en enhet har registrerats i Basic Mobility and Security för Microsoft 365 Business Standard ignoreras eventuella postlådeprinciper för mobila enheter eller åtkomstregel för Exchange ActiveSync som tillämpas på enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online.](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
+> Principer och åtkomstregler som skapats i Basic Mobility and Security för Microsoft 365 Business Standard åsidosätter Exchange ActiveSync postlådeprinciper för mobila enheter och åtkomstregler som skapats i Exchange administrationscenter. När en enhet har registrerats i Basic Mobility and Security för Microsoft 365 Business Standard ignoreras eventuella Exchange ActiveSync-postlådeprinciper för mobila enheter eller enhetsåtkomstregel som tillämpas på enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="policy-settings-for-mobile-devices"></a>Principinställningar för mobila enheter
 
 Om du skapar en princip för att blockera åtkomst med vissa inställningar påslagna blockeras användarna från att komma åt Microsoft 365-resurser när de använder ett program som stöds och som finns i Access-kontrollen för e-post och dokument i [Microsoft 365.](capabilities.md) 
 
-Inställningarna som kan blockera användare från att komma åt Microsoft 365-resurser finns i följande avsnitt:
+De inställningar som kan blockera användare från att komma åt Microsoft 365 finns i följande avsnitt:
 
 - Säkerhet
 
@@ -91,11 +91,11 @@ Inställningarna som kan blockera användare från att komma åt Microsoft 365-r
 
 - Hanterad e-postprofil  
 
-Följande diagram visar till exempel vad som händer när en användare med en registrerad enhet inte följer en säkerhetsinställning i en princip för hantering av mobila enheter som gäller för deras enhet. Användaren loggar in på en app som har stöd för åtkomstkontroll med Basic Mobility and Security. De blockeras från att komma åt Microsoft 365-resurser i programmet tills enheten uppfyller säkerhetsinställningen.
+Följande diagram visar till exempel vad som händer när en användare med en registrerad enhet inte följer en säkerhetsinställning i en princip för hantering av mobila enheter som gäller för deras enhet. Användaren loggar in på en app som har stöd för åtkomstkontroll med Basic Mobility and Security. De blockeras från att komma Microsoft 365-resurser i programmet tills enheten uppfyller säkerhetsinställningen.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Meddelande om efterlevnad av grundläggande rörlighet och säkerhet":::
 
-I följande avsnitt visas de principinställningar du kan använda för att skydda och hantera mobila enheter som ansluter till dina Microsoft 365-organisationsresurser.
+I följande avsnitt finns en lista över de principinställningar du kan använda för att skydda och hantera mobila enheter som ansluter Microsoft 365 organisationens resurser.
 
 ## <a name="security-settings"></a>Säkerhetsinställningar
 
@@ -126,7 +126,7 @@ I följande avsnitt visas de principinställningar du kan använda för att skyd
 
 ## <a name="managed-email-profile-option"></a>Alternativ för hanterad e-postprofil 
 
-Följande alternativ kan blockera användare från att komma åt sin e-post i Microsoft 365 om de använder en e-postprofil som skapats manuellt. Användare på iOS-enheter måste ta bort sin manuellt skapade e-postprofil innan de kan komma åt sin e-post. När profilen tas bort skapas automatiskt en ny profil på enheten. Anvisningar om hur slutanvändare följer finns i Ett [befintligt e-postkonto hittades.](/intune-user-help/existing-company-email-account-found)
+Följande alternativ kan blockera användare från att komma åt sin e Microsoft 365-post om de använder en manuellt skapad e-postprofil. Användare på iOS-enheter måste ta bort sin manuellt skapade e-postprofil innan de kan komma åt sin e-post. När profilen tas bort skapas automatiskt en ny profil på enheten. Anvisningar om hur slutanvändare följer finns i Ett [befintligt e-postkonto hittades.](/intune-user-help/existing-company-email-account-found)
 
 |**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -163,7 +163,7 @@ Följande alternativ kan blockera användare från att komma åt sin e-post i Mi
 |**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Blockera anslutning med flyttbara lagringsmedia |Ja|Ja|Nej|
-|Blockera Bluetooth-anslutning |Ja|Ja|Nej|
+|Blockera Bluetooth anslutning |Ja|Ja|Nej|
 
 ## <a name="additional-settings"></a>Ytterligare inställningar
 
@@ -187,9 +187,9 @@ Du kan ange följande ytterligare principinställningar med hjälp av PowerShell
 
 ## <a name="settings-supported-by-windows"></a>Inställningar som stöds av Windows
 
-Du kan hantera Windows 10-enheter genom att registrera dem som mobila enheter. När en tillämplig princip har distribuerats måste användare med Windows 10-enheter registrera sig i Basic Mobility and Security första gången de använder det inbyggda e-postprogrammet för att få åtkomst till sin Microsoft 365-e-post (kräver Azure AD Premium-prenumeration).
+Du kan hantera Windows 10 genom att registrera dem som mobila enheter. När en tillämplig princip har distribuerats måste användare med Windows 10-enheter registrera sig i Basic Mobility and Security första gången de använder det inbyggda e-postprogrammet för att komma åt sin Microsoft 365-e-post (kräver Azure AD Premium-prenumeration).
 
-Följande inställningar stöds för Windows 10-enheter som är registrerade som mobila enheter. Den här inställningen blockerar inte användare från att komma åt Microsoft 365-resurser.
+Följande inställningar stöds för Windows 10 enheter som är registrerade som mobila enheter. Den här inställningen blockerar inte användare från att komma åt Microsoft 365 resurser.
 
 ### <a name="security-settings"></a>Säkerhetsinställningar
 
@@ -206,7 +206,7 @@ Följande inställningar stöds för Windows 10-enheter som är registrerade som
 - Kom ihåg lösenordshistorik och förhindra återanvändning
 
 >[!NOTE]
->Följande inställningar som kontrollerar lösenord styr bara lokala Windows-konton. Windows-konton som tillhandahålls via anslutning till en domän eller Azure Active Directory påverkas inte av de här inställningarna.
+>Följande inställningar som kontrollerar lösenord styr bara lokala Windows konton. Windows konton som tillhandahålls genom att ansluta till en domän eller Azure Active Directory påverkas inte av de här inställningarna.
 
 ### <a name="system-settings"></a>Systeminställningar
 
@@ -234,12 +234,11 @@ Du kan ange de här ytterligare principinställningarna med hjälp av PowerShell
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Radera en mobil enhet via fjärrenhet
 
-Om en enhet försvinner eller blir stulen kan du ta bort känsliga organisationsdata och förhindra åtkomst till dina Microsoft 365-organisationsresurser genom att göra en rensning från Säkerhets- och efterlevnadscenter & > **Dataförlustskydd** Enhetshantering  >  . Du kan göra en selektiv rensning för att endast ta bort organisationsdata eller en fullständig rensning för att ta bort all information från en enhet och återställa den till fabriksinställningarna.
+Om en enhet försvinner eller blir stulen kan du ta bort känsliga organisationsdata och förhindra åtkomst till dina Microsoft 365-organisationsresurser genom att göra en rensning från Säkerhets- & och efterlevnadscenter > **Dataförlustskydd** Enhetshantering  >  . Du kan göra en selektiv rensning för att endast ta bort organisationsdata eller en fullständig rensning för att ta bort all information från en enhet och återställa den till fabriksinställningarna.
 
 Mer information finns i Rensa [en mobil enhet i Basic Mobility and Security.](wipe-mobile-device.md)
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-content"></a>Relaterat innehåll
 
-[Översikt över Basic Mobility and Security för Microsoft 365](overview.md)
-
-[Skapa säkerhetsprinciper för enheter i Basic Mobility and Security](create-device-security-policies.md)
+[Översikt över Grundläggande rörlighet och säkerhet för Microsoft 365](overview.md) (artikel)\
+[Skapa säkerhetsprinciper för enheter i Basic Mobility and Security](create-device-security-policies.md) (artikel)

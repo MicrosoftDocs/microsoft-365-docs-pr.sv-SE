@@ -21,22 +21,24 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du skapar en e-postsignatur för hela företaget.
-ms.openlocfilehash: a1a85826be2a799b56cf3d06b6416778470a116f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 669c61d17784641d1ecc88ac0952a46575c7898b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578957"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706268"
 ---
 # <a name="create-a-company-wide-email-signature"></a>Skapa en företagsomfattande e-postsignatur
+
+## <a name="watch-create-a-company-wide-email-signature"></a>Titta: Skapa en företagsomfattande e-postsignatur
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 
 En företagsomfattande e-postsignatur visas i alla e-postmeddelanden som skickas av personer i organisationen. Du kan använda den för att visa viktig information, till exempel företagets kontaktinformation eller en juridisk ansvarsfriskrivning. 
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. I administrationscentret för Microsoft 365 väljer du **Exchange**.
+1. I Microsoft 365 väljer du **Exchange**.
 1. Välj **E-postflöde**.
 1. Välj **Lägg till +** och välj sedan Använd **ansvarsfriskrivningar.**
 1. På **sidan Ny** regel:

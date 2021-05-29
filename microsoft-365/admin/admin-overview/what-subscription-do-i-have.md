@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Ta reda på vilka prenumerationer din organisation har genom att gå till sidan Dina produkter.
 ms.date: 01/21/2021
-ms.openlocfilehash: c33ba799880e6c687a08c2d49b17cbae8e80552c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535896"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706304"
 ---
 # <a name="what-subscription-do-i-have"></a>Vilken prenumeration har jag?
 
@@ -41,10 +41,7 @@ Om du är administratör kan du kontrollera vilka prenumerationer din organisati
 
 ## <a name="related-content"></a>Relaterat innehåll
   
-[Prenumerationer och fakturering](../../commerce/index.yml) (länkar)
-
-[Visa din faktura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artikel)
-
-[Betala för prenumerationen](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artikel)
-
+[Prenumerationer och fakturering](../../commerce/index.yml) (länkar)\
+[Visa din räkning eller faktura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artikel)\
+[Betala för din prenumeration](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artikel)\
 [Ändra dina faktureringsadresser](../../commerce/billing-and-payments/change-your-billing-addresses.md) (artikel)

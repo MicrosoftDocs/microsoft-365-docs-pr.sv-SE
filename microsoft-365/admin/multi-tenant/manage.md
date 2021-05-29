@@ -18,17 +18,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du använder klientorganisationens omkopplare och om vyer för flera innehavare.
-ms.openlocfilehash: d59760b8a143acc33747aff9f7deaa0b6dd3e711
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+description: Lär dig hur du använder vyerna för klientbyte och flera innehavare som ger dig möjlighet att hantera klientorganisationen från en enda plats.
+ms.openlocfilehash: e0bf6c872d4998c0cd0263fd8474ac5e9c99ef14
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943035"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706160"
 ---
 # <a name="multi-tenant-management"></a>Hantering av flera innehavare
 
-Hantering för flera klientorganisationen erbjuder en enhetlig form av hantering som gör att Microsoft 365-partneradministratörer kan administrera alla klientorganisationen de hanterar från en enda plats. Om du är en partner som hanterar flera klientorganisationar kan du:
+Hantering av flera klientorganisationener erbjuder en enhetlig form av hantering som ger Microsoft 365 partneradministratörer möjlighet att administrera alla klientorganisationen de hanterar från en enda plats. Om du är en partner som hanterar flera klientorganisationar kan du:
 
 - Flytta snabbt mellan klientorganisationar som du hanterar.
 - Utvärdera tjänstehälsa, produkter och fakturering för flera klientorganisationar.
@@ -36,7 +36,7 @@ Hantering för flera klientorganisationen erbjuder en enhetlig form av hantering
 
 ## <a name="move-between-tenants"></a>Flytta mellan klientorganisationen
 
-1. Välj organisationsnamnet i administrationscentret för Microsoft 365.
+1. Välj Microsoft 365 i administrationscentret.
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="Omkopplare för flera innehavare.":::
 
@@ -46,7 +46,7 @@ Hantering för flera klientorganisationen erbjuder en enhetlig form av hantering
 
 ## <a name="view-all-tenants-page"></a>Visa alla klientorganisationssidor
 
-1. I det vänstra navigeringsfältet i administrationscentret för Microsoft 365 väljer du **Alla innehavare.**
+1. Välj Microsoft 365 alla innehavare i det vänstra **navigeringsfältet i administrationscentret.**
 - På **sidan Alla innehavare** kan du
   - Utvärdera tjänstens hälsa
   - Granska licensanvändning
@@ -59,7 +59,7 @@ Om du har markerat en klientorganisation som favorit expanderas den automatiskt 
 
 I vyn Tjänstens hälsa visas om några incidenter eller rådgivningar påverkar klientorganisationen. Där ser du även hur många av dina hanterade klientorganisationar som påverkas.
 
-1. Välj Tjänstens hälsa i flerklientsvyn i administrationscentret för Microsoft 365.
+1. I Microsoft 365 flerklientsvy i administrationscentret väljer du **Tjänstens hälsa.**
 2. På sidan **Tjänstens** hälsa i den sammantagna vyn kan du även se det totala antalet incidenter, det totala antalet rådgivningar som påverkar någon av de hanterade klientorganisationen och antalet tjänster med aktiva incidenter. Du kan också se hur många av dina klienter som påverkas av incidenter och rådgivningar.
 
     - Du kan använda filteralternativet för att visa problem per typ av problem eller tjänst
@@ -73,9 +73,9 @@ I vyn Tjänstens hälsa visas om några incidenter eller rådgivningar påverkar
 
 Listan över berörda klientorganisationen kan exporteras till CSV-format så att administratörer kan dela den med supportteam.
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Visa en enskild klientorganisation i Administrationscenter för Microsoft 365
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Visa en enskild klientorganisation Microsoft 365 administrationscentret
 
-Du kan gå tillbaka till administrationscentret för Microsoft 365 för valfri klientorganisation på **sidan Alla klienter.**
+Du kan gå Microsoft 365 administrationscentret för någon av klientorganisationen på **sidan Alla** klienter.
 
 1. På **sidan Alla innehavare** väljer du det klientnamn som du vill visa administrationscentret för.
 2. Du dirigeras till administrationscentret för den klientorganisationen.

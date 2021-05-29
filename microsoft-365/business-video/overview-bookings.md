@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs mer om Microsoft Bookings.
-ms.openlocfilehash: 826cb84acace03aaf18bcb9d3a58fa5a518d71ee
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Läs mer om Microsoft Bookings, en online- och mobilapp för småföretag som gör att dina kunder kan boka tider.
+ms.openlocfilehash: f797a18616f63aea873ea5c1060a54dffbe078ef
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578753"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706232"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Översikt över Microsoft Bookings
+
+## <a name="watch-overview-of-microsoft-bookings"></a>Titta: Översikt över Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
@@ -35,7 +37,7 @@ Microsoft Bookings är en online- och mobilapp för småföretag som tillhandah�
 
 ## <a name="get-started-with-bookings"></a>Komma igång med Bookings
 
-1. Kom igång genom att logga in på Microsoft 365 och välja **Bookings** från startprogrammet.
+1. Kom igång genom att logga in Microsoft 365 och **välja Bookings** från startprogrammet.
 1. Välj **Skaffa nu** på sidan **Bookings.**
 1. Lägg till din företagsinformation så är du redo att börja använda Bookings.
 

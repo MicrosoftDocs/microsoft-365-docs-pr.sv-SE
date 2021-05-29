@@ -19,24 +19,26 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du enkelt kan dela dina företagsfiler externt.
-ms.openlocfilehash: 469e4b16277b048a539767f6fc9fd54d2ea2e6cf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Lär dig hur du använder en länk för alla i Microsoft 365 för att enkelt dela dina företagsfiler externt.
+ms.openlocfilehash: cbe6a12fd8d0c2b2ec16db32178f9c2559a08c22
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578633"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706504"
 ---
 # <a name="easily-share-files-externally"></a>Dela filer externt på ett enkelt sätt
+
+## <a name="watch-share-files-with-an-anyone-link"></a>Titta: Dela filer med en länk för alla
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 
 Om du vill dela filer med kunder och arbeta på dokument tillsammans använder du länken Alla i Microsoft 365.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. Från din SharePoint-webbplats väljer du den mapp som du vill dela, **väljer Dela** och klickar sedan på knappen för länkinställningar.
-1. I fönstret **Länkinställningar** kontrollerar du att **Alla** är markerat. Om det här alternativet är nedtonat måste det aktiveras i administrationscentret för SharePoint.
+1. På din SharePoint väljer du den mapp som du vill dela, **väljer Dela** och klickar sedan på knappen länkinställningar.
+1. I fönstret **Inställningar** kontrollerar du att **Alla** är markerat. Om det här alternativet är nedtonat måste det aktiveras i SharePoint administrationscentret.
 1. Du kan också markera **kryssrutan Tillåt** redigering och ange ett utgångsdatum för länken.
 1. Välj **Använd**.
 1. I fönstret **Skicka länk** anger du kundens e-postadress, skriver ett meddelande och väljer **Skicka**.

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Lär dig hur du använder efterlevnadsgränser för att skapa logiska gränser som styr användarinnehållsplatser som en eDiscovery-hanterare kan söka i Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b19347ad8e1c87d5b66cb49ed2af152b4765c37
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311922"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706612"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Konfigurera efterlevnadsgränser för eDiscovery-undersökningar
 
@@ -288,6 +288,8 @@ Tänk på följande begränsningar när du hanterar eDiscovery-ärenden och unde
 - Efterlevnadsgränser gäller inte för eDiscovery-ärenden. Det innebär att en eDiscovery-chef på en agentur kan skapa en agentur i en annan agentur. Efterlevnadsgränsen tillämpas emellertid om eDiscovery-hanteraren söker igenom innehållsplatserna för användaren som var satt på en plats. Det innebär att eDiscovery-hanteraren inte kan söka på användarens innehållsplatser, även om de kunde placera användaren på en plats.
 
     Även statistik för att hålla kvar tillämpas endast på innehållsplatser i byrån.
+
+- Om du har tilldelats ett sökbehörighetsfilter (antingen en postlåda eller ett webbplatsfilter) och du försöker exportera icke indexerade objekt för en sökning som innehåller alla SharePoint-webbplatser i organisationen får du följande felmeddelande: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied` . Om du har tilldelats ett sökbehörighetsfilter och du vill exportera icke indexerade objekt från SharePoint måste du köra sökningen igen och inkludera specifika SharePoint att söka på. Annars kan du bara exportera indexerade objekt från en sökning som innehåller alla SharePoint webbplatser. Mer information om alternativen när du exporterar sökresultat finns i [Exportera sökresultat för innehåll.](export-search-results.md#step-1-prepare-search-results-for-export)
 
 - Sökbehörighetsfilter tillämpas inte på Exchange gemensamma mappar.
 

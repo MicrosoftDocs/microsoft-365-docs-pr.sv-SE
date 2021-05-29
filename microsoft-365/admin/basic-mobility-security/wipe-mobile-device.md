@@ -18,20 +18,20 @@ ms.custom:
 search.appverid:
 - MET150
 description: Använd inbyggd basic mobility and security för att ta bort information från registrerade enheter.
-ms.openlocfilehash: 7830a0f4ef609f6465c171ecab2c9e3c48198424
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023863"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706148"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Rensa en mobil enhet i Basic Mobility and Security
 
-Du kan använda den inbyggda grundläggande rörlighet och säkerhet för Microsoft 365 för att ta bort enbart organisationsinformation, eller för att utföra en fabriksåterställning för att ta bort all information från en mobil enhet och återställa den till fabriksinställningarna.
+Du kan använda inbyggda grundläggande rörlighet och säkerhet för Microsoft 365 för att ta bort endast organisationsinformation, eller för att utföra en fabriksåterställning för att ta bort all information från en mobil enhet och återställa den till fabriksinställningarna.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Mobila enheter kan lagra känslig information om organisationen och ge åtkomst till organisationens Microsoft 365-resurser. För att skydda organisationens information kan du göra fabriksåterställning eller ta bort företagsdata:
+Mobila enheter kan lagra känslig information om organisationen och ge åtkomst till organisationens Microsoft 365 resurser. För att skydda organisationens information kan du göra fabriksåterställning eller ta bort företagsdata:
 
 - **Fabriksåterställning:** Tar bort alla data på en användares mobila enhet, inklusive installerade program, foton och personlig information. När rensningen är klar återställs enheten till fabriksinställningarna.
 
@@ -45,7 +45,7 @@ Mobila enheter kan lagra känslig information om organisationen och ge åtkomst 
 
 ## <a name="wipe-a-mobile-device"></a>Rensa en mobil enhet
 
-1. Gå till [administrationscentret för Microsoft 365.](../../admin/admin-overview/about-the-admin-center.md)
+1. Gå till [Microsoft 365 administrationscentret.](../../admin/admin-overview/about-the-admin-center.md)
 
 2. Skriv Hantering av mobila enheter i sökfältet och välj **Hantering av mobila** enheter i listan med resultat.
 
@@ -60,7 +60,7 @@ Mobila enheter kan lagra känslig information om organisationen och ge åtkomst 
 6. Välj den typ av fjärrensning du vill göra.
 
     - Om du vill göra en fullständig rensning och återställa enheten till fabriksinställningarna väljer du **Fabriksåterställning**.
-    - Om du vill göra en selektiv rensning och bara ta bort Microsoft 365-organisationsinformation väljer du **Ta bort företagsdata.**
+    - Om du vill göra en selektiv rensning och bara Microsoft 365 företagsinformation väljer du **Ta bort företagsdata.**
     - Om du vill ta bort enheten från din organisation väljer du **Ta bort enhet**.
 
 7. Bekräfta genom att välja **Ja**.
@@ -83,12 +83,8 @@ Rensningen skickas direkt till den mobila enheten och enheten markeras som inte 
 
 |**Påverkan på innehållet**|**iOS 10 och senare**|**Android 5 och senare**|
 |:-----|:-----|:-----|
-|Appdata för Microsoft 365 rensas om enheten skyddas av App Protection-principer för Intune. Apparna tas inte bort. För enheter som inte skyddas av MAM-principer (Mobile Application Management) tar Outlook och OneDrive inte bort cachelagrade data.<br/>**Obs!** För att använda Intune-appskyddsprinciper måste du ha en Intune-licens.|Ja|Ja|
+|Microsoft 365 programdata rensas om enheten skyddas av Appskyddsprinciper för Intune. Apparna tas inte bort. För enheter som inte skyddas av MAM-principer (Mobile Application Management) Outlook och OneDrive inte cachelagrade data.<br/>**Obs!** För att använda Intune-appskyddsprinciper måste du ha en Intune-licens.|Ja|Ja|
 |Principinställningarna som används av Basic Mobility och Security på enheter tillämpas inte längre. användare kan ändra inställningarna.|Ja|Ja|
 |E-postprofiler som skapats med Basic Mobility and Security tas bort och cachelagrad e-post på enheten tas bort.|Ja|Uppgift saknas|
 >[!NOTE]
->Företagsportalappen finns i App Store för iOS och Play Store för Android-enheter.
-
-## <a name="related-topics"></a>Relaterade ämnen
-
-[Konfigurera grundläggande Mobility and Security](set-up.md)
+>Företagsportal app finns i App Store för iOS och Play Store för Android-enheter.
