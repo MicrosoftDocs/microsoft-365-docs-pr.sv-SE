@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implementera Microsofts Informationsstyrningsfunktioner för att styra dina data för efterlevnad eller regleringskrav.
-ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a62b1a20aa07c8b5d147fd24e3867c4d4c50174e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244570"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683541"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft Informationsstyrning i Microsoft 365
 
@@ -52,3 +52,7 @@ För att hantera högvärdigt innehåll för juridiska-, affärs- eller reglerin
 |Funktion|Vilka problem löser den?|Komma igång|
 |:------|:------------|---------------------|:----------------------------|
 |[Hantering av arkivhandlingar](records-management.md)| En enda lösning för e-post och dokument som integrerar kvarhållningsscheman och krav i en filplan som stöder hela livscykeln för ditt innehåll med arkivhandlingar av deklaration, kvarhållning och disposition <br /><br />Exempel scenario: [Disposition av arkivhandlingar](disposition.md#disposition-of-records)|[Kom igång med hantering av arkivhandlingar](get-started-with-records-management.md) |
+
+## <a name="licensing-requirements"></a>Licensieringskrav
+
+Licensieringskrav för Microsofts informationsstyrning beror på de scenarier och funktioner du använder, i stället för att ange Licensieringskrav för varje funktion som listas på den här sidan. Mer information om dina Licensieringskrav och alternativ finns i avsnitten [Informationsstyrning](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) och [Hantering av arkivhandlingar](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) från Microsoft 365-licensieringsdokumentationen och ladda ned den relaterade PDF- eller Excel-filen.

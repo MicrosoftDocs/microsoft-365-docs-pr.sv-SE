@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig de grundläggande stegen för att skapa en nyckelordsordlista i Säkerhets- och efterlevnadscenter för Office 365.
-ms.openlocfilehash: 94bacc2a2fe91fdc35aad753cc2e7db80a374e29
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 24f6bb636c702438be8ca9520c6523031f297410
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "52162742"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683769"
 ---
 # <a name="create-a-keyword-dictionary"></a>Skapa en nyckelordsordlista
 
@@ -126,99 +126,6 @@ När du behöver skapa en stor ordlista används ofta nyckelord från en fil ell
     ```powershell
     New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
     ```
-
-## <a name="modifying-an-existing-keyword-dictionary"></a>Ändra en befintlig nyckelordsordlista
-
-Du kan behöva ändra nyckelord i någon av dina nyckelordsordlistor eller ändra någon av de inbyggda ordlistorna. För närvarande kan du bara uppdatera en egen nyckelordsordlista med PowerShell. 
-
-Vi kommer till exempel att ändra vissa termer i PowerShell, spara termerna lokalt där du kan ändra dem i ett redigeringsprogram och sedan uppdatera de tidigare termerna. 
-
-Hämta först ordlisteobjektet:
-  
-```powershell
-$dict = Get-DlpKeywordDictionary -Name "Diseases"
-```
-
-Om du skriver ut `$dict` visas de olika variablerna. Nyckelorden lagras i ett objekt i serverdelen, men `$dict.KeywordDictionary` innehåller en strängrepresentation av dem som du använder när du ändrar ordlistan. 
-
-Innan du ändrar ordlistan måste du omvandla strängen med termer till en matris med hjälp av `.split(',')`-metoden. Sedan rensar du bort de oönskade blankstegen mellan nyckelorden med `.trim()`-metoden, så att bara nyckelorden finns kvar. 
-  
-```powershell
-$terms = $dict.KeywordDictionary.split(',').trim()
-```
-
-Nu kan du ta bort vissa termer från ordlistan. Eftersom exempelordlistan bara innehåller några få nyckelord kan du i stället gå vidare till att exportera ordlistan och redigera den i Anteckningar, men ordlistor innehåller vanligtvis en stor mängd text så du får först lära dig det här sättet att redigera dem enkelt i PowerShell.
-  
-I det sista steget sparade du nyckelorden i en matris. Det finns flera sätt att [ta bort objekt från en matris](/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)), men ett enkelt sätt är att skapa en matris med de termer som du vill ta bort från ordlistan och sedan endast kopiera ordlistetermerna som inte finns i listan med termer att ta bort.
-  
-Kör kommandot `$terms` för att visa den aktuella listan med termer. Kommandots utdata ser ut så här: 
-  
-`aarskog's syndrome`
-`abandonment`
-`abasia`
-`abderhalden-kaufmann-lignac`
-`abdominalgia`
-`abduction contracture`
-`abetalipoproteinemia`
-`abiotrophy`
-`ablatio`
-`ablation`
-`ablepharia`
-`abocclusion`
-`abolition`
-`aborter`
-`abortion`
-`abortus`
-`aboulomania`
-`abrami's disease`
-
-Kör kommandot för att ange de termer som du vill ta bort:
-  
-```powershell
-$termsToRemove = @('abandonment', 'ablatio')
-```
-
-Kör kommandot för att ta bort termerna från listan:
-  
-```powershell
-$updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
-```
-
-Kör kommandot `$updatedTerms` för att visa den uppdaterade listan med termer. Kommandots utdata ser ut så här (de angivna termerna har tagits bort): 
-  
-`aarskog's syndrome`
-`abasia`
-`abderhalden-kaufmann-lignac`
-`abdominalgia`
-`abduction contracture`
-`abetalipo proteinemia`
-`abiotrophy`
-`ablation`
-`ablepharia`
-`abocclusion`
-`abolition`
-`aborter`
-`abortion`
-`abortus`
-`aboulomania`
-`abrami's disease`
-```
-
-Now save the dictionary locally and add a few more terms. You could add the terms right here in PowerShell, but you'll still need to export the file locally to ensure it's saved with Unicode encoding and contains the BOM.
-  
-Save the dictionary locally by running the following:
-  
-```powershell
-Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
-```
-
-Öppna filen, lägg till dina andra termer och spara med Unicode-kodning (UTF-16). Nu ska du ladda upp de uppdaterade termerna och uppdatera ordlistan på plats.
-  
-```powershell
-PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
-```
-
-Nu har ordlistan uppdaterats. Fältet `Identity` hämtar namnet på ordlistan. Om du även vill ändra namnet på ordlistan med cmdleten `set-`, behöver du bara lägga till parametern `-Name` i det som visas ovan med det nya ordlistenamnet. 
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Använda nyckelordsordlistor i anpassade typer av känslig information och DLP-principer
 

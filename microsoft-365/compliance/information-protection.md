@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implementera Microsoft Information Protection (MIP) som hjälper dig att skydda känslig information var du än befinner dig eller på språng.
-ms.openlocfilehash: a68f8dee00117af1fa4d7be5f459ed5c850a5100
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 2de9b1e4a3901477df883287a1ee350885de5513
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332756"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683697"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection i Microsoft 365.
 
@@ -41,9 +41,6 @@ Information om hur du styr dina data finns i [Informationsstyrning i Microsoft 3
 
 > [!NOTE]
 > Information om omfattningen om hur du klassificerar och etiketterar data i Azure Purview, som för närvarande är i förhandsversion, finns i[ Märka innehållet i Azure Purview automatiskt](/azure/purview/create-sensitivity-label).
-> 
-> Publiceringsmeddelanden för Azure Purview finns i följande blogginlägg: [Microsoft Information Protection och Microsoft Azure Purview: Better Together](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481) och [Azure Purview på Ignite 2021](https://techcommunity.microsoft.com/t5/azure-purview/azure-purview-at-spring-ignite-2021/ba-p/2175919).
-
 
 För att förstå datalandskapet och identifiera viktiga data i hybridmiljön använder du följande funktioner:
  
@@ -83,3 +80,7 @@ Använd följande funktioner för att förhindra att känslig information förs 
 |[Microsoft-efterlevnadstillägg (förhandsversion)](dlp-chrome-learn-about.md) | Utökar DLP-funktionerna till webbläsaren Chrome | [Kom igång med Microsofts Efterlevnadstillägg (förhandsversion)](dlp-chrome-get-started.md)|
 |[Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)](dlp-on-premises-scanner-learn.md)|Utökar DLP-övervakning av filaktiviteter och skyddsåtgärder för dessa filer till lokala filresurser samt SharePoint-mappar och dokumentbibliotek.|[Kom igång med Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)](dlp-on-premises-scanner-get-started.md)|
 |[Skydda känslig information i Teams-chatt och -kanalmeddelanden i Microsoft Teams](dlp-microsoft-teams.md) | Utökar vissa DLP-funktioner till Teams chatt- och kanalmeddelanden | [Läs mer om standardprincipen för dataförlustskydd i Microsoft Teams (förhandsversion)](dlp-teams-default-policy.md)|
+
+## <a name="licensing-requirements"></a>Licensieringskrav
+
+Licensieringskrav för MIP beror på de scenarier och funktioner du använder, i stället för att ange Licensieringskrav för varje funktion som listas på den här sidan. Mer information om dina Licensieringskrav och alternativ för MIP finns i avsnittet [Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) från Microsoft 365-licensieringsdokumentationen och ladda ned den relaterade PDF- eller Excel-filen.

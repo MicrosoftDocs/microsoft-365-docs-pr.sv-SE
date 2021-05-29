@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Är du redo att börja implementera kvarhållningsprinciper och kvarhållningsetiketter som styr organisationens data, men är osäker på var du ska börja? Läs några praktiska råd för att komma igång.
-ms.openlocfilehash: b39f6246fc9265319e0d4e5b053db6dfddc0d43a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Är du redo att börja implementera kvarhållningsprinciper och kvarhållningsetiketter som styr organisationens data, men är osäker på var du ska börja? Läs några praktiska riktlinjer för att komma igång.
+ms.openlocfilehash: bd3ed5e354ee80831cb1af073b6da6f277418b51
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244594"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689043"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Komma igång med kvarhållningsprinciper och kvarhållningsetiketter
 
 >*[Vägledning för säkerhet och efterlevnad med licensiering i Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Är du redo att börja styra organisationens data genom att behålla det innehåll som du behöver och ta bort innehåll som du inte behöver? Använd följande vägledning för att komma igång:
+Är du redo att börja styra organisationens data genom att behålla det innehåll som du behöver och ta bort innehåll som du inte behöver? Använd följande riktlinjer för att komma igång:
 
 1. **Förstå hur kvarhållning fungerar** i Microsoft 365 och undersök sedan om du behöver använda kvarhållningsprinciper eller kvarhållningsetiketter, eller en kombination: [Mer information om kvarhållning](retention.md)
 
@@ -88,4 +88,4 @@ De flesta kvarhållningsprinciperna fungerar utan att användaren interagerar me
 
 Eftersom kvarhållningsetiketter har en gränssnittsnärvaro i Microsoft 365-appar bör du ge vägledning till slutanvändarna och supportavdelningen innan du distribuerar etiketterna till produktionsnätverket. Om du vill hjälpa användare att använda kvarhållningsetiketter i SharePoint och OneDrive kan du läsa [Använda kvarhållningsetiketter på filer i SharePoint eller OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-Den mest effektiva dokumentationen för slutanvändare är dock den anpassade vägledningen och anvisningarna som du ger för kvarhållningsetiketternas namn och konfigurationer du väljer. Läs följande blogginlägg som har ett nedladdningspaket som du kan använda för att utbilda användarna och påskynda införandet: [Slutanvändarutbildning för kvarhållningsetiketter i M365 – så här påskyndar du införandet](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
+Den mest effektiva dokumentationen för slutanvändare är dock den anpassade vägledningen och anvisningarna som du ger för kvarhållningsetiketternas namn och konfigurationer du väljer. Se följande sida och nedladdningar som du kan använda för att utbilda dina användare: [Utbildning för slutanvändare för kvarhållningsetiketter](https://microsoft.github.io/ComplianceCxE/enduser/retention/).

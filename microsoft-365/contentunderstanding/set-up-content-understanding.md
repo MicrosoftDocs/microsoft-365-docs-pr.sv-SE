@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Konfigurera innehållstolkning i Project Cortex
-ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 7589003505aafb480872b14a09c383cfbe0dff40
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994712"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683559"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
 
@@ -42,6 +42,8 @@ Innan konfigurationen ser du till att planera för det bästa sättet att ställ
 > Du måste ha behörighet som global administratör eller SharePoint-administratör för att kunna komma åt Administrationscenter för Microsoft 365 och konfigurera SharePoint Syntex.
 
 Som administratör kan du också göra ändringar i dina valda inställningar när som helst efter konfigurationen och under inställningarna för hantering av innehållstolkning i Administrationscenter för Microsoft 365.
+
+Om du planerar att använda en anpassad Power Platform-miljö måste du [installera *AI Builder för Project Cortex* -appen i den här miljön](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) och [tilldela AI Builder-krediter](/power-platform/admin/capacity-add-on) till den innan du kan skapa formulärbearbetningsmodeller.
 
 ### <a name="licensing"></a>Licensiering
 
@@ -67,9 +69,9 @@ Gå till [Administrationscenter för Power Platform](https://admin.powerplatform
 
 1. I Administrationscenter för Microsoft 365 välj **Konfiguration** och se sedan **Filer och innehåll** sektionen.
 
-2. I **Filer och innehåll** sektionen välj **Automatisera innehållstolkning**.<br/>
+2. I **Filer och innehåll** sektionen välj **Automatisera innehållstolkning**. Observera att din aktuella AI Builder-kredittillgänglighet visas i avsnittet **I korthet**. <br/>
 
-3. På sidan **Automatisera innehållstolkning** klickar du på **Komma igång** för att gå igenom konfigurationsprocessen.<br/>
+3. På sidan **Automatisera innehållstolkning** klickar du på **Komma igång** för att gå igenom konfigurationsprocessen. <br/>
 
     > [!div class="mx-imgBorder"]
     > ![Starta konfiguration](../media/content-understanding/admin-content-understanding-get-started.png)</br>
@@ -93,7 +95,7 @@ Gå till [Administrationscenter för Power Platform](https://admin.powerplatform
 
     För **Power Platform-miljö** kan du välja:
     - **Använd standardmiljön** för att använda din standardmiljö för Power Platform.
-    - **Använd en anpassad miljö** för att använda en anpassad miljö. Välj den miljö du vill använda från listan. Du måste installera *AI Builder för Project Cortex*-appen i den här miljön och tilldela AI Builder-krediter till den innan du kan skapa formulärbearbetningsmodeller.
+    - **Använd en anpassad miljö** för att använda en anpassad miljö. Välj den miljö du vill använda från listan. ([Se kraven för en anpassad miljö](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements)).
 
     Klicka på **Nästa**.
 
