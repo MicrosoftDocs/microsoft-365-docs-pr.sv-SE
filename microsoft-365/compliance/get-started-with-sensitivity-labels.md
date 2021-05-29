@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Är du redo att distribuera känslighetsetiketter för att skydda organisationens data, men är osäker på var du ska börja? Läs några praktiska riktlinjer som hjälper dig med etiketteringsresan.
-ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: c87289fc7017e75db3b8a5b84a8af3a42dc16a10
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302118"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689127"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Kom igång med känslighetsetiketter
 
@@ -102,7 +102,7 @@ Den mest effektiva dokumentationen för slutanvändare är den anpassade vägled
 - För inbyggd etikett: **Läs mer**-menyalternativet.
 - För Azure Information Protection enhetliga etiketteringsklient: **Hjälp och feedback**-menyalternativ > **Länken Läs mer** i dialogrutan Microsoft Azure Information Protection.
 
-För att hjälpa dig att skriva din anpassade dokumentation, se följande blogginlägg för ett nedladdningspaket som du kan använda för att utbilda användare och driva adoption: [End User Training for Sensitivity Labels in M365 – How to Accelerate Your Adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
+För att hjälpa dig tillhandahålla din anpassade dokumentation, se följande sida och nedladdningar som du kan använda för att hjälpa dig att träna dina användare: [Utbildning för slutanvändare för känslighetsetiketter](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/). 
 
 Du kan också använda följande resurser för grundläggande instruktioner:
 

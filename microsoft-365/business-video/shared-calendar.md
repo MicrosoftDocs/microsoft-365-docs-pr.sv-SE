@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du skapar en delad kalender.
-ms.openlocfilehash: 21b594d1d5f28cc38c907cb8e85085a296ef20b8
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: cbc84523b52b7a38e25a35670abf6758a73d0a70
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464363"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705648"
 ---
 # <a name="create-a-shared-calendar"></a>Skapa en delad kalender
+
+## <a name="watch-create-a-shared-calendar"></a>Titta: Skapa en delad kalender
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWm?autoplay=false]
 
@@ -43,8 +45,6 @@ Med en delad kalender kan du snabbt se när personer är tillgängliga för möt
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Hantera kalender och kontakter i Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (artikel)
-
-[E-postsamarbete](../admin/email/email-collaboration.md) (artikel)
-
+[Hantera din kalender och dina kontakter i Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (artikel)\
+[E-postsamarbete](../admin/email/email-collaboration.md) (artikel)\
 [Översikt över Microsoft 365 administrationscenter](admin-center-overview.md) (artikel)

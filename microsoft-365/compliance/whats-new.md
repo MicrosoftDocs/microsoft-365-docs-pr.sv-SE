@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Oavsett om det handlar om att lägga till nya lösningar till efterlevnadscentret, uppdatera befintliga funktioner baserat på din feedback eller distribuera ny och uppdaterad dokumentation hjälper Microsoft 365 dig att hålla dig uppdaterad om den föränderliga miljön för efterlevnad. Ta reda på vad vi har gjort den här månaden.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698958"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706624"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nyheter i Microsoft 365 Efterlevnad
 
@@ -48,7 +48,7 @@ Besök även [Microsoft 365 Översikt](https://www.microsoft.com/microsoft-365/r
 
 ### <a name="data-connectors"></a>Datakopplingar
 
-- [Konfigurera en koppling för att arkivera Cisco Jabber på Oracle-data]/microsoft-365/compliance/archive-ciscojabberonora datacenter-data)
+- [Konfigurera en koppling för att arkivera Cisco Jabber på Oracle-data](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
 - [Konfigurera en koppling för att arkivera Cisco Jabber på PostgreSQL-data](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
 
 ### <a name="data-loss-prevention"></a>Dataförlustskydd
@@ -59,14 +59,15 @@ Besök även [Microsoft 365 Översikt](https://www.microsoft.com/microsoft-365/r
 
 ### <a name="retention-policies-and-retention-label-policies"></a>Bevarandeprinciper och bevarandeprinciper för etiketter
 
-- Platsen Microsoft 365 Grupper har nu stöd för att tillämpa bevarandeinställningarna på bara Microsoft 365-postlådor eller bara de anslutna SharePoint-webbplatserna med hjälp av [PowerShell-cmdleten Set-RetentionCompliancePolicy med](/powershell/module/exchange/set-retentioncompliancepolicy) parametern Applications.
+- Platsen Microsoft 365 Grupper har nu stöd för att tillämpa bevarandeinställningarna på bara Microsoft 365-postlådor eller bara de anslutna SharePoint-webbplatserna med hjälp av [PowerShell-cmdleten Set-RetentionCompliancePolicy med](/powershell/module/exchange/set-retentioncompliancepolicy) parametern *Applications.*
 
 ### <a name="sensitivity-labels"></a>Känslighetsetiketter
 
 Outlook och uppdateringar:
-- De inbyggda etiketterna har nu stöd för olika inställningar för standardetiketter och obligatorisk etikettering, tidigare med stöd för enbart AIP-unified [labeling-klienten](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
-- Encrypt-Only stöds nu av macOS, iOS och Android
-- Hantera känslighetsetiketter i [Office-appar](/microsoft-365/compliance/sensitivity-labels-office-apps) som uppdaterats med nya poster [](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling) i tabellen [för Outlook-funktioner](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook) för Olika inställningar för standardetiketter och obligatoriska etiketter för den nya Outlook-funktionssläppet för inbyggd etikett för att stödja en annan standardetikett och undantag från obligatorisk märkning. Dessutom stöds Encrypt-Only nu av macOS/iOS/Android, och alla dynamiska markeringar med variabler stöds nu i alla Outlook klienter. Nu lanseras obligatoriska etiketter för återstående plattformar.
+- [Olika inställningar för standardetiketten och obligatoriska](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) etiketter stöds nu för inbyggd etikett. Tidigare fanns stöd för de här inställningarna endast av AIP Unified Labeling-klienten.
+- [Nu stöds Endast](encryption-sensitivity-labels.md#let-users-assign-permissions) kryptering av macOS, iOS och Android.
+- [Obligatoriska etiketter lanseras](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) för återstående plattformar.
+- [Dynamiska markeringar med alla variabler](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) stöds i alla Outlook klienter.
 
 ## <a name="march-2021"></a>Mars 2021
 
@@ -86,7 +87,7 @@ Här är några av de ändringar Microsoft 365 av efterlevnadslösningar och inn
 
 - **Privata nycklar**. Stöd för privata nycklar har lagts till i [Bloomberg Message-data,](/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) [ICE-chattdata](/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) och [snabbkopplingar för Bloomberg-data.](/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys)
 
-### <a name="data-loss-prevention"></a>Skydd mot dataförlust
+### <a name="data-loss-prevention"></a>Dataförlustskydd
 
 - **Microsoft Teams support**. Stöd för dataförlustskydd utökad [till Microsoft Teams.](/microsoft-365/compliance/dlp-teams-default-policy)
 - **Microsoft Compliance-tillägg.** Komma igång med tillägget [Microsoft Compliance](/microsoft-365/compliance/dlp-chrome-get-started).
@@ -164,7 +165,7 @@ Innehållet har lagts till eller uppdaterats i följande avsnitt:
 - [Kom igång med innehållsutforskaren](/microsoft-365/compliance/data-classification-content-explorer)
 - [Viktig information för dataklassificering](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
-### <a name="data-loss-prevention"></a>Skydd mot dataförlust
+### <a name="data-loss-prevention"></a>Dataförlustskydd
 
 Innehållet har lagts till eller uppdaterats i följande avsnitt:
 

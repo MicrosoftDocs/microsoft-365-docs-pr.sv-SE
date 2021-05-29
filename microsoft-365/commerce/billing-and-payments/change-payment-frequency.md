@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Lär dig hur du ändrar hur ofta du faktureras för företagsprenumerationen.
 ms.date: 04/02/2021
-ms.openlocfilehash: 010857d9092ef62d11e1b7c6019f2fe0eaafb58f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 529003210e37897f8c1e0d30a692a6f3a1464a80
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537349"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705576"
 ---
 # <a name="change-your-billing-frequency"></a>Ändra faktureringsfrekvens
 
@@ -39,10 +39,7 @@ När du köper en prenumeration väljer du fakturering per månad eller år. Gö
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Visa din faktura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artikel)
-
-[Betala för prenumerationen](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artikel)
-
-[Läs om hur du hittar och visar din faktura](view-your-bill-or-invoice.md) (artikel)
-
+[Visa din räkning eller faktura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artikel)\
+[Betala för din prenumeration](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artikel)\
+[Läs om hur du hittar och visar din faktura](view-your-bill-or-invoice.md) (artikel)\
 [Ändra dina faktureringsadresser](change-your-billing-addresses.md) (artikel)

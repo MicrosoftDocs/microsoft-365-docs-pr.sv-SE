@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Lär dig hur du anpassar, ordnar och hanterar din SharePoint gruppwebbplats med dokumentbibliotek, listor och nav.
-ms.openlocfilehash: aca2b2ff147fdb030540712133b27eba706b0985
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244521"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706352"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassa din gruppwebbplats för fillagring och delning
 
@@ -103,15 +103,15 @@ Fillagring och dokumenthantering är en bra start, det är även viktigt att del
 
 När du hanterar din gruppwebbplats kan du behöva lägga till eller ta bort användare. Här finns information som hjälper dig att förstå, lägga till och hantera användare på gruppwebbplatsen.
   
-Visa en video om grupper med [Förstå och hantera grupper](https://docs.microsoft.com/learn/m365/). 
+Visa en video om grupper med [Förstå och hantera grupper](/learn/m365/). 
   
 Om du vill lägga till Microsoft 365 en grupp med [användare kan du gå till Lägga till användare och tilldela licenser samtidigt.](../add-users/add-users.md)
   
 Lär dig hur du hanterar åtkomstförfrågningar [med Konfigurera och hantera åtkomstförfrågningar.](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)
   
-## <a name="here-are-more-articles-you-might-be-interested-in"></a>Här är fler artiklar som du kan vara intresserad av
+## <a name="next-steps"></a>Nästa steg
 
-- **Konfigurera Office-appar på surfplattor och telefoner**. Du måste göra detta så att du kan redigera filer som är lagrade på gruppwebbplatsen från en surfplatta eller telefon. Om du inte installerar Office-appar för surfplattan eller telefonen kommer du att kunna visa filerna på gruppwebbplatsen, men inte redigera dem. 
+Du måste konfigurera Office appar på dina enheter så att du kan redigera filer som är lagrade på gruppwebbplatsen från surfplattan eller telefonen. Om du inte installerar Office-appar för surfplattan eller telefonen kommer du att kunna visa filerna på gruppwebbplatsen, men inte redigera dem. 
     
   - [Installera och konfigurera Office android med Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

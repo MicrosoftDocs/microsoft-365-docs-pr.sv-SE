@@ -28,13 +28,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Läs mer om Microsoft 365 Business Premium, en prenumerationstjänst som innehåller Office-appar för produktivitet och avancerat skydd för ditt företag mot cyberhot.
-ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Läs mer Microsoft 365 Business Premium, en prenumerationstjänst som innehåller en Office-appar och avancerat skydd mot cyberhot.
+ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244865"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705531"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Översikt av Microsoft 365 Business Premium
 
@@ -42,7 +42,7 @@ ms.locfileid: "52244865"
 
 Microsoft 365 Business Premium (tidigare Microsoft 365 Business) är en omfattande prenumerationstjänst för företag som har färre än 300 anställda. Det integrerar dina favoritprogram och -tjänster för Office och samarbetsverktyg som Microsoft Teams, med avancerade funktioner för säkerhet och enhetshantering.
 
-I den här videon hittar du en snabb överblick över Microsoft 365 Business Premium.<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Titta: Vad är Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -105,7 +105,7 @@ Dina **enheter skyddas** genom att:
 
 Om du vill se en fullständig lista över säkerhetsfunktioner läser du [Microsoft 365 Business Premium Säkerhetsfunktioner](security-features.md). Efter att du har [konfigurerat Microsoft 365 Business Premium](set-up.md)hittar du information i [öka hotskydd](increase-threat-protection.md) och [konfigurera kompatibla funktioner](set-up-compliance.md) för att komma igång med säkerhetsfunktioner som inte ingår som en del av den guidade konfigurationen. Läs också [De 10 bästa sätten att skydda Office 365 och Microsoft 365 Business Premium-abonnemang](/office365/admin/security-and-compliance/secure-your-business-data) för en bra översikt över hur du konfigurerar skydd mot cyberbrottslingar och hackare.
 
-## <a name="get-microsoft-365-business-premium"></a>Hämta Microsoft 365 Business Premium
+## <a name="next-steps"></a>Nästa steg
 
 - Om du har en partner får de Microsoft 365 Business Premium: [Hämta Microsoft 365 Business Premium från Microsoft-partnercenter](get-microsoft-365-business.md).
 

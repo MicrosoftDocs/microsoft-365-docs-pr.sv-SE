@@ -20,21 +20,23 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du uppdaterar din betalningsmetod för Microsoft 365 för företag.
-ms.openlocfilehash: 3b659da6745c92d777629b2912114ee214582623
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Lär dig hur du uppdaterar betalningsmetoden för Microsoft 365 för företag.
+ms.openlocfilehash: b0ed8541068fe02e0bd1f005a5a9c7ee8f50ae1b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580360"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705544"
 ---
-# <a name="update-yor-payment-method-for-your-subscription"></a>Uppdatera betalningsmetod för din prenumeration
+# <a name="update-the-payment-method-for-your-subscription"></a>Uppdatera betalningsmetoden för din prenumeration
+
+## <a name="watch-update-your-payment-method"></a>Titta: Uppdatera ditt betalningssätt
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-Du kan enkelt uppdatera betalningsmetoden för Microsoft 365 Business-prenumerationen. Du kan ändra information som vilket kreditkort som används, namn eller adress.
+Du kan enkelt uppdatera betalningsmetoden för din Microsoft 365 Business prenumeration. Du kan ändra information som vilket kreditkort som används, namn eller adress.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com).
 1. Välj **Fakturering** och **sedan Betalningsmetoder.** Du ser alla kreditkort som du har sparat.

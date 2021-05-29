@@ -26,16 +26,16 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Upptäck sätt att uppgradera dina Windows-enheter för att Windows 10 Pro använda mer avancerade säkerhets- och affärsnätverksfunktioner.
-ms.openlocfilehash: 0ed24f3560832890c1ba26f89ecbcd1f2ef7b098
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 14a1705a333b2fd4d4dda37ed5170b34acb13abe
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244745"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705563"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Uppgradera Windows enheter till Windows 10 Pro
 
-Titta på en kort video om hur du Windows uppgradera enheter till Windows 10 Pro.<br><br>
+## <a name="watch-upgrade-windows-10-home-to-windows-10-pro"></a>Titta: Uppgradera Windows 10 Home till Windows 10 Pro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
@@ -56,9 +56,11 @@ Om du vill Windows 10 Pro alternativ har du flera alternativ. Du kan:
 > [!NOTE]
 > Om du har Windows-enheter med Windows 7 Pro, Windows 8 Pro eller Windows 8.1 Pro ger din Microsoft 365 för företag-prenumeration dig rätt att uppgradera till Windows Pro 10.
     
-Se [Konfigurera Windows för företag Microsoft 365 för företag för att](set-up-windows-devices.md) slutföra Windows 10 enheter. 
+## <a name="next-steps"></a>Nästa steg
+
+Om du vill slutföra Windows 10 enheter går [du till Konfigurera Windows-enheter för Microsoft 365 för företagsanvändare.](set-up-windows-devices.md) 
   
-Se [Konfigurera mobila enheter för Microsoft 365 för företag-användare för att](set-up-mobile-devices.md) slutföra konfigurera Android- och iOS-enheter. 
+Om du vill slutföra konfigurera Android- och iOS-enheter [går du till Konfigurera mobila enheter för Microsoft 365 för företagsanvändare.](set-up-mobile-devices.md) 
   
 ## <a name="related-content"></a>Relaterat innehåll
 
