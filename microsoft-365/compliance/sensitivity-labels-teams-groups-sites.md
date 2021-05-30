@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd känslighetsetiketter för att skydda innehåll i Sharepoint- och Microsoft Teams-webbplatser samt Microsoft 365-grupper.
-ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531048"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694407"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser
 
@@ -163,6 +163,20 @@ Alla appar har inte stöd för autentiseringskontexter. Om en användare med en 
     - Android: Stöds inte än
 
 Kända begränsningar för den här förhandsversionen:
+
+- Den här funktionen distribueras fortfarande till vissa klientorganisationer. Om principen Villkorsstyrd åtkomst* med ditt valda autentiseringskontext inte verkställs när en användare öppnar webbplatsen kan du använda PowerShell för att bekräfta att konfigurationen är korrekt och att alla krav uppfylls. Du måste ta bort känslighetsetiketten från webbplatsen och sedan konfigurera webbplatsen för autentiseringskontext med hjälp av cmdleten [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) från aktuell [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online). Om den här metoden fungerar bör du vänta några dagar till innan du försöker använda känslighetsetiketten igen.
+    
+    Så här testar du autentiseringskontext med PowerShell:
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
+    ```
+    
+    Om du vill ta bort autentiseringskontext så att du kan prova att använda känslighetsetiketten igen:
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
+    ```
 
 - För OneDrive-synkroniseringsappen, stöds endast för OneDrive, och inte andra webbplatser.
 
