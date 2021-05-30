@@ -20,8 +20,6 @@
           items:
             - name: Översikt över Exchange Online Protection
               href: exchange-online-protection-overview.md
-            - name: Funktioner i EOP
-              href: eop-features.md
             - name: E-postflöde i EOP
               href: mail-flow-in-eop.md
             - name: Karantän
