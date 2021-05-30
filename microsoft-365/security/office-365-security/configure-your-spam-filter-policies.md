@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1241e6ebb838938f82fce5dc08ea93a3038f4ace
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: fb4ba4f48d6f336444861b4407461efd4c8862d0
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624239"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694515"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 

@@ -80,7 +80,7 @@ Det här avsnittet innehåller en översikt över de huvudfunktioner som är til
 
 Mer information om krav, viktiga begränsningar och funktionstillgänglighet för alla EOP-abonnemang finns [i Exchange Online Protection tjänstbeskrivning.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
 
-**Anteckningar**:
+**Anmärkningar**:
 
 - EOP använder flera URL-blockeringslistor som hjälper till att identifiera kända skadliga länkar i meddelanden.
 - EOP använder en omfattande lista med domäner som är kända för att skicka skräppost.
