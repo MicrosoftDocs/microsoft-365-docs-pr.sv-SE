@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Förstå det högsta antalet principer och objekt per princip när det gäller principer för kvarhållning och kvarhållningsetiketter
-ms.openlocfilehash: 007ca6eec50b243e1b820938ffa67553d7882c7b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162930"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698970"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Begränsningar när det gäller principer för kvarhållning och kvarhållningsetiketter
 
@@ -33,13 +33,15 @@ När du använder [ principer för kvarhållning och kvarhållningsetiketter ](r
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Högsta antal principer per klientorganisation
 
-En enskild klientorganisation kan ha högst 10 000 principer (alla konfigurationer). Maxantalet inkluderar olika kvarhållningsprinciper och andra efterlevnadsprinciper, till exempel DLP-principer.
+En enskild klientorganisation kan ha högst 10 000 principer (alla konfigurationer). Maxantalet inkluderar olika kvarhållningsprinciper och andra efterlevnadsprinciper, till exempel DLP-principer, informationsbarriärer, eDiscovery-undantag och känslighetsetiketter.
 
-Högsta antal kvarhållningsprinciper per arbetsbelastning:
+Inom denna gräns på 10.000 principer finns det också några begränsningar för det högsta antalet kvarhållningsprinciper per arbetsbelastning:
 
-- Exchange Online (alla konfigurationer): 1 800
+- Exchange Online (alla konfigurationer): 1 800
 - SharePoint eller OneDrive: (alla webbplatser inkluderas automatiskt): 13
-- SharePoint eller OneDrive (specifika platser inkluderas eller exkluderas): 2 600
+- SharePoint eller OneDrive (specifika platser inkluderas eller exkluderas): 2 600
+
+Även om kvarhållningprinciper för Teams och Yammer använder e-postlådor för att lagra data för kvarhållningssyften, exkluderar de högsta antalet principer för Exchange Online lagringsprinciper för Teams och Yammer.
 
 ## <a name="maximum-number-of-items-per-policy"></a>Högsta antal objekt per princip
 
@@ -47,9 +49,9 @@ Om du använder den valfria konfigurationen för att begränsa dina kvarhållnin
 
 Högsta antal objekt per kvarhållningsprincip:
 
-  - 1 000 postlådor (användarpostlådor eller gruppostlådor)
-  - 1 000 Microsoft 365-grupper
-  - 1 000 användare i Teams privata chattar
+  - 1 000 postlådor (användarpostlådor eller gruppostlådor)
+  - 1 000 Microsoft 365-grupper
+  - 1 000 användare i Teams privata chattar
   - 100 webbplatser (OneDrive eller SharePoint).
 
 Eftersom dessa begränsningar gäller per princip kan du skapa ytterligare principer som har samma kvarhållningsinställningar om du behöver använda specifika inkluderingar eller exkluderingar som leder till att du överskrider dessa antal. I nästa avsnitt finns några [exempel på scenarion och lösningar](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) som använder flera kvarhållningsprinciper av den här anledningen.
@@ -65,7 +67,7 @@ Följande exempel innehåller några designlösningar för när du inte bara kan
 
 Exempel för Exchange:
 
-- **Krav**: I en organisation med över 40 000 användarpostlådor måste de flesta användare kvarhålla sin e-post i 7 år, men en delmängd av de identifierade användarna (425) måste kvarhålla sin e-post i endast 5 år.
+- **Krav**: I en organisation med över 40 000 användarpostlådor måste de flesta användare kvarhålla sin e-post i 7 år, men en delmängd av de identifierade användarna (425) måste kvarhålla sin e-post i endast 5 år.
 
 - **Lösning**: Skapa en kvarhållningsprincip för e-post i Exchange med en kvarhållningsperiod på sju år och exkludera delmängden bland användarna. Skapa sedan en andra kvarhållningsprincip för e-post i Exchange med en kvarhållningsperiod på fem år och inkludera delmängden bland användarna. 
     
@@ -75,7 +77,7 @@ Exempel för Exchange:
 
 Exempel från SharePoint:
 
-- **Krav**: en organisation har flera tusen SharePoint-webbplatser men bara 2 000 webbplatser kräver en kvarhållningsperiod på 10 år och 8 000 webbplatser kräver en kvarhållningsperiod på 4 år.
+- **Krav**: en organisation har flera tusen SharePoint-webbplatser men bara 2 000 webbplatser kräver en kvarhållningsperiod på 10 år och 8 000 webbplatser kräver en kvarhållningsperiod på 4 år.
 
 - **Lösning**: Skapa 20 kvarhållningsprinciper för SharePoint med en kvarhållningsperiod på 10 år som omfattar 100 specifika webbplatser och skapa 80 kvarhållningsprinciper för SharePoint med en kvarhållningsperiod på 4 år som omfattar 100 specifika webbplatser.
     

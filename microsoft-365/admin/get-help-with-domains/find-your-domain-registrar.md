@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: Lär dig hur du hittar din domänregistrator och DNS-värdtjänst med InterNIC-sökning.
-ms.openlocfilehash: 434e30709b112cf591159a1692540b8ef2b6bb65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: af883f53c8c45aee2594b0f5b8b9da57e5717f9e
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655548"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706400"
 ---
 # <a name="find-your-domain-registrar"></a>Hitta din domänregistrator
 
@@ -40,11 +40,11 @@ ms.locfileid: "49655548"
 >[!NOTE]
 > Bara domäner som slutar med *.COM*, *.NET* och *.EDU* fungerar med det här verktyget.
   
-1. På [söksidan InterNIC](https://go.microsoft.com/fwlink/p/?LinkId=402770), i rutan **Whois Search** (Whois-sökning), anger du din domän. Till exempel *contoso.com.* 
+1. På [söksidan för InterNIC](https://go.microsoft.com/fwlink/p/?LinkId=402770), i rutan **Whois-sökning** anger du din domän, till exempel  *contoso.com.* 
     
-2. Välj alternativet **Domain** (Domän) och välj sedan **Submit** (Skicka).
+2. Välj alternativet **Domän** och välj sedan **Skicka**.
     
-3. På sidan **Whois Search Results** (Whois-sökresultat) letar du upp rutan **Registrar** (Registrator). Här hittar du den organisation som tillhandahåller registreringstjänsten för din domän. 
+3. På sidan **Whois sökresultat** letar du upp rutan **Registrator**. Här hittar du den organisation som tillhandahåller registratorstjänsten för din domän. 
     
 ## <a name="dns-hosting-provider"></a>DNS-värdtjänst
   
@@ -53,13 +53,13 @@ ms.locfileid: "49655548"
 >[!NOTE]
 > Bara domäner som slutar med *.COM*, *.NET* och *.EDU* fungerar med det här verktyget.
   
-1. På [söksidan InterNIC]( https://go.microsoft.com/fwlink/p/?LinkId=402770), i rutan **Whois Search** (Whois-sökning), anger du din domän. Till exempel contoso.com. 
+1. På [söksidan för InterNIC]( https://go.microsoft.com/fwlink/p/?LinkId=402770), i rutan **Whois-sökning** anger du din domän, till exempel contoso.com. 
     
 2. Välj alternativet **Domain** (Domän) och välj sedan **Submit** (Skicka).
     
 3. På sidan **Whois Search Results** (Whois-sökresultat) söker du efter den första **Name Server** (Namnserver)-posten. 
     
-4. Kopiera den namnserverinformation som visas efter kolonet (:) och klistra in den i rutan **Search** (Sök) längst upp på sidan. Välj **Nameserver** (Namnserver) och välj sedan **Submit** (Skicka).
+4. Kopiera den namnserverinformation (NS) som visas efter kolonet (:) och klistra in den i rutan **Sök** längst upp på sidan. Välj **Namnserver** och välj sedan **Skicka**.
     
 5. På sidan **Whois Search Results** (Whois-sökresultat) letar du upp rutan **Registrar** (Registrator). Här hittar du namnet på den DNS-tjänstleverantör som äger din domäns namnserver. 
     

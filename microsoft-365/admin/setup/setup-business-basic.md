@@ -24,16 +24,16 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lär dig hur du konfigurerar din Microsoft 365 Business Basic-abonnemang.
-ms.openlocfilehash: 51a83d4cc230fa4bdb78bba71c9c7193a36fd391
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0251f601b8200bcd5f4f5a2d5640ff774cc94562
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535728"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706340"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Konfigurera Microsoft 365 Business Basic
 
- Titta på en kort video om hur du konfigurerar Microsoft 365 Business Basic.<br><br>
+## <a name="watch-set-up-microsoft-365-business-basic"></a>Video: Konfigurera Microsoft 365 Business Basic
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
 

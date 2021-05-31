@@ -1,8 +1,9 @@
 ---
 title: Skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: lauriellis
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,15 +13,14 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Beskriver viktiga skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning
-ms.openlocfilehash: f12cc46e1ffcbc610f50ba327e22ad46a2591521
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: f19017ce8b748644177ac00f4daf7cb29ad522c6
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222275"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706516"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Skillnader mellan modeller för dokumenttolkning och modeller för formulärbearbetning 
-
 
 Med innehållstolkning i Microsoft SharePoint Syntex kan du identifiera och klassificera dokument som har laddats upp till SharePoints dokumentbibliotek och extrahera relevant information från varje fil.  När filer till exempel överförs till ett dokumentbibliotek i SharePoint kan alla filer som identifieras som *Inköpsordrar* klassificeras som sådana och sedan visas i en anpassad vy för dokumentbiblioteket. Du kan också hämta särskild information från varje fil (till exempel *Inköpsordernummer* och *Summa*) och visa den som en kolumn i vyn för dokumentbiblioteket. 
 
@@ -36,16 +36,14 @@ Båda modellerna används vanligtvis för samma syfte och de viktigaste skillnad
 > [!NOTE]
 > Mer information om formulärbearbetning och scenarioexempel på dokumenttolkning finns i [Införande av SharePoint Syntex: kom igång-guide](./adoption-getstarted.md).
 
-
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Strukturerat jämfört med ostrukturerat och halvstrukturerat innehåll
 
 Använd modeller för dokumenttolkning till att identifiera och hämta data från ostrukturerade dokument, till exempel brev eller kontrakt, där de textenheter som du vill extrahera finns i meningar eller i vissa områden i dokumentet. Ett ostrukturerat dokument kan till exempel vara ett avtal om förnyelse som kan skrivas ut på olika sätt. Informationen finns dock konsekvent i brödtexten i varje avtal om förnyelse, till exempel textsträngen *tjänstens startdatum* följt av ett faktiskt datum.
 
-Använd modeller för formulärbearbetning för att identifiera filer och hämta data från strukturerade eller halvstrukturerade dokument, t. ex. formulär och fakturor. Modeller för formulärbearbetning är utbildade för att förstå layouten av ditt formulär från t. ex. dokument och lär sig att leta efter de data du behöver extrahera från liknande platser. Formulär har vanligtvis en mer strukturerad layout där enheter är på samma plats (till exempel ett personnummer i ett momsformulär).
+Använd formulärbearbetning för att identifiera filer och extrahera data från strukturerade eller halvstrukturerade dokument som exempelvis formulär eller fakturor. Modeller för formulärbearbetning är utbildade för att förstå layouten av ditt formulär från exempeldokument och lär sig att leta efter de data du behöver extrahera från liknande platser. Formulär har oftast en mer strukturerad layout där enheterna finns på samma plats (till exempel ett personnummer i en skatteformulär).
 
 > [!NOTE]
 > För att skapa en modell för dokumenttolkning eller för att använda den i ett dokumentbibliotek i SharePoint måste du ha tillgång till en webbplats för innehållscenter. 
-
 
 ## <a name="where-models-are-created"></a>Var modellerna skapas
 
@@ -78,7 +76,7 @@ Använd följande tabell för att förstå när du ska använda formulärbearbet
 | Platser | Tränad för ett enkelt dokumentbibliotek.| Kan tillämpas på flera bibliotek.|
 | Filtyper som stöds| Träna på PDF-, JPG- och PNG-format, totalt 50 MB och 500 sidor.| Träna på 5-10 PDF-, Office- eller e-postfiler, inklusive negativa exempel.<br>Office-filer trunkeras till 64 000 tecken. OCR-skannade filer är begränsade till 20 sidor.|
 | Integrera med hanterade metadata | Nej | Ja, genom att träna entitetsextraktorn till att referera till ett konfigurerat hanterat metadatafält.|
-| Funktionen för efterlevnad integreras när Microsoft Information Protection är aktiverad. | Ställ in publicerade kvarhållningsetiketter.<br>Ställ in känslighetsetiketter är på väg. | Ställ in publicerade kvarhållningsetiketter.<br>Ställ in känslighetsetiketter är på väg. |
+| Funktionen för efterlevnad integreras när Microsoft Information Protection är aktiverad. | Ställ in publicerade kvarhållningsetiketter.<br>Ställ in känslighetsetiketter är på väg. | Ställ in publicerade kvarhållningsetiketter.<br>Ställ in publicerade känslighetsetiketter. |
 | Regioner som stöds| Formulärbearbetning är beroende av Power Platform. Information om global tillgänglighet för Power Platform och AI Builder se [ tillgängligheten för Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Tillgängligt i alla regioner.|
 | Transaktionskostnad | Använder AI Builder-krediter.<br>Krediter kan köpas i omgångar om 1 miljon.<br>1 miljon krediter ingår när över 300 SharePoint Syntex-licenser köps.<br>1 miljon krediter ger möjlighet till bearbetning av 2 000 filsidor.<br>| Uppgift saknas |
 | Kapacitet | Använder standardmiljön för Power Platform (Anpassade miljöer med Dataverse-databas stöds) | Har inga kapacitetsbegränsningar.|

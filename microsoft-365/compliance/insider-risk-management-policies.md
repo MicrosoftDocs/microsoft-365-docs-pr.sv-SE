@@ -1,7 +1,7 @@
 ---
-title: Insider-principer för riskhantering
-description: Läs mer om insider-riskhanteringsprinciper i Microsoft 365
-keywords: Microsoft 365, insider-riskhantering, riskhantering, efterlevnad
+title: Principer för hantering av insiderrisk
+description: Läs mer om principer för hantering av insiderrisk i Microsoft 365
+keywords: Microsoft 365, hantering av insiderrisk, riskhantering, efterlevnad
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -14,370 +14,370 @@ audience: itpro
 ms.collection: m365-security-compliance
 ms.openlocfilehash: 23c2ed180606e61820c6e736e472aef0ae4933a5
 ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 03/30/2021
 ms.locfileid: "52162560"
 ---
-# <a name="insider-risk-management-policies"></a>Insider-principer för riskhantering
+# <a name="insider-risk-management-policies"></a>Principer för hantering av insiderrisk
 
-Insider-principer för riskhantering avgör vilka användare som omfattas och vilka typer av riskindikatorer som konfigureras för varningar. Du kan snabbt skapa en princip som gäller för alla användare i organisationen eller definiera enskilda användare eller grupper för hantering i en princip. Principer stöder innehållsprioriteringar för att fokusera policyvillkor på flera eller specifika Microsoft Teams, SharePoint webbplatser, typer av datakänslighet och dataetiketter. Med mallar kan du välja specifika riskindikatorer och anpassa tröskelvärden för händelser för policyindikatorer, effektivt anpassa riskpoäng och utnivå och frekvens för aviseringar. Dessutom kan riskresultat och avvikande identifieringar hjälpa till att identifiera användaraktiviteter som är av högre prioritet eller mer ovanliga. Med principfönster kan du definiera tidsramen för att tillämpa principen för att aviseringsaktiviteter och används för att fastställa varaktigheten för principen när den har aktiverats.
+Principer för hantering av insiderrisk bestämmer vilka användare som är i omfånget och vilka typer av riskindikatorer som är konfigurerade för varningar. Du kan snabbt skapa en princip som gäller för alla användare i din organisation eller definiera enskilda användare eller grupper för hantering i en princip. Principer stöder innehållsprioriteringar för att fokusera principvillkoren på flera eller specifika Microsoft Teams, SharePoint-webbplatser, datakänslighetstyper och dataetiketter. Med hjälp av mallar kan du välja specifika riskindikatorer och anpassa händelsetrösklar för principindikatorer, effektivt anpassa riskresultat och nivå och frekvens för varningar. Dessutom hjälper boosters för riskpoäng och avkänning av avvikelser att identifiera användaraktivitet som är av högre vikt eller mer ovanlig. Med principfönster kan du definiera tidsramen för att tillämpa principen för varningsaktiviteter och används för att bestämma varaktigheten för principen när den har aktiverats.
 
-Titta på videon [om Konfiguration](https://www.youtube.com/watch?v=kudK5ajZTUo) av Insider-riskhanteringsprinciper för en översikt över hur principer som skapas med inbyggda principmallar kan hjälpa dig att snabbt vidta åtgärder för potentiella risker.
+Kolla in [Konfigurationsvideon för Principer för hantering av insiderrisk](https://www.youtube.com/watch?v=kudK5ajZTUo) för en översikt över hur principer som skapats med inbyggda principmallar kan hjälpa dig att snabbt vidta åtgärder för potentiella risker.
 
-## <a name="policy-dashboard"></a>Principinstrumentpanel
+## <a name="policy-dashboard"></a>Instrumentpanel för principer
 
-Med **instrumentpanelen princip** kan du snabbt se principer i organisationen, status för principen, manuellt lägga till användare i principer och visa status för aviseringar som är associerade med varje princip.
+**Instrumentpanelen** för principer låter dig snabbt se principerna i din organisation, statusen för principen, manuellt lägga till användare i principer och visa status för varningar som är associerade med varje princip.
 
-- **Principnamn:** Namnet som tilldelats principen i principguiden.
-- **Status:** Hälsostatus för varje princip. Visar antalet princip varningar och rekommendationer eller statusen *Felfri för* principer utan problem.  Du kan klicka på principen om du vill se hälsostatusinformation för eventuella varningar eller rekommendationer.
-- **Aktiva aviseringar:** Antalet aktiva aviseringar för varje princip.
-- **Bekräftade aviseringar:** Det totala antalet aviseringar som har lett till ärenden från principen under de senaste 365 dagarna.
-- **Åtgärder som vidtas på** aviseringar: Det totala antalet aviseringar som har bekräftats eller avvisats under de senaste 365 dagarna.
-- **Principaviseringseffektivitet:** Procentandelen som bestäms av totalt antal bekräftade aviseringar dividerat med totalt antal åtgärder som har vidtagits för aviseringar (vilket är summan av aviseringar som har bekräftats eller avvisats under det senaste året).
+- **Principnamn**: Namnet som tilldelats principen i principguiden.
+- **Status**: Hälsostatusen för varje princip. Visar antal principvarningar och rekommendationer eller statusen *Hälsosam* för principer utan problem.  Du kan klicka på principen för att se information om hälsotillståndet för eventuella varningar eller rekommendationer.
+- **Aktiva varningar**: Antalet aktiva varningar för varje princip.
+- **Bekräftade varningar**: Det totala antalet varningar som resulterade i ärenden från principen under de senaste 365 dagarna.
+- **Åtgärder tagna på varningar**: Det totala antalet varningar som har bekräftats eller avvisats de senaste 365 dagarna.
+- **Principvarnings effektivitet**: Procentandelen bestämd av totala bekräftade varningar dividerat med de totalt antal åtgärder som vidtagits för varningar (vilket är summan av varningar som bekräftades eller avvisades under det senaste året).
 
-![Instrumentpanel för Insider-riskhantering](../media/insider-risk-policy-dashboard.png)
+![Instrumentpanel för principer för hantering av insiderrisk](../media/insider-risk-policy-dashboard.png)
 
-## <a name="policy-recommendations-from-analytics-preview"></a>Principrekommendationer från analys (förhandsversion)
+## <a name="policy-recommendations-from-analytics-preview"></a>Principrekommendationer från analys (förhandsvisning)
 
-Med Insider-riskanalyser kan du göra en utvärdering av potentiella Insider-risker i organisationen utan att konfigurera insiderriskprinciper. Den här utvärderingen kan hjälpa din organisation att identifiera potentiella områden med högre användarrisker och hjälpa till att fastställa typ och omfattning för principer för Insider-riskhantering som du kan överväga att konfigurera.
+Insiderriskanalys gör att du kan göra en utvärdering av potentiella insiderrisker i din organisation utan att konfigurera några principer för insiderrisk. Denna utvärdering kan hjälpa din organisation att identifiera potentiella områden med högre användarrisk och hjälpa till att bestämma typen och omfattningen av principer för hantering av insiderrisk som du kan överväga att konfigurera.
 
-Mer information om Insider-riskanalyser och policyrekommendationer finns i [Inställningar för Insider-riskhantering: Analys (förhandsversion)](insider-risk-management-settings.md#analytics-preview).
+Mer information om insiderriskanalys och principrekommendationer finns i [Inställningar för hantering av insiderrisk: Analys (förhandsvisning)](insider-risk-management-settings.md#analytics-preview).
 
 ## <a name="policy-templates"></a>Principmallar
 
-Mallar för Insider-riskhantering är fördefinierade principvillkor som definierar de typer av riskindikatorer och riskbedömningsmodell som används av principen. Varje princip måste ha en mall tilldelad i guiden för att skapa principen innan den skapas. Insider-riskhantering har stöd för upp till fem principer för varje principmall. När du skapar en ny insider-riskprincip med principguiden väljer du någon av följande principmallar:
+Mallar för hantering av insiderrisk är fördefinierade principförhållanden som definierar de typer av riskindikatorer och riskpoängmodell som används i principen. Innan principen skapas måste varje mall ha tilldelats en mall i guiden för skapande av princip. Hantering av insiderrisk stöder upp till fem principer för varje principmall. När du skapar en ny princip för insiderrisk med principguiden väljer du en av följande principmallar:
 
-### <a name="data-theft-by-departing-users"></a>Datastöld genom avgående användare
+### <a name="data-theft-by-departing-users"></a>Datastöld från slutande användare
 
-När användare lämnar organisationen finns det särskilda riskindikatorer som vanligtvis associeras med datastöld av avgående användare. Den här principmallen använder exfiltrationsindikatorer för riskbedömning och fokuserar på identifiering och varningar i det här riskområdet. Datastöld för avgående användare kan inkludera hämtning av filer från SharePoint Online, skriva ut filer och kopiera data till personliga molnmeddelanden och lagringstjänster nära deras anställnings- och slutdatum. Med hjälp av antingen Microsoft 365 HR-koppling eller alternativet att automatiskt övervaka för borttagning av användarkonton i Azure Active Directory för organisationen, startar den här mallen poäng för riskindikatorer som relaterar till dessa aktiviteter och hur de motsvarar anställningsstatus för användare.
+När användare lämnar din organisation finns det specifika riskindikatorer som vanligtvis är associerade med datastöld av användare som slutar. Denna principmall använder exfiltreringsindikatorer för riskbedömning och fokuserar på upptäckt och varningar inom detta riskområde. Datastöld av användare som slutar kan inkludera nedladdning av filer från SharePoint Online, utskrift av filer och kopiering av data till personliga molntjänster och lagringstjänster nära deras avgång och slutdatum. Genom att använda antingen Microsoft 365 HR-anslutning eller alternativet att automatiskt övervaka borttagning av användarkonton i Azure Active Directory för din organisation, börjar den här mallen att sätta poäng på riskindikatorer som rör dessa aktiviteter och hur de korrelerar med användarens anställningsstatus.
 
 >[!IMPORTANT]
->När du använder den här mallen kan du konfigurera en personlig Microsoft 365 personalkontakt för att regelbundet importera information om här och slutdatum för användare i organisationen. I artikeln [Importera data med HR-koppling](import-hr-data.md) finns stegvisa instruktioner för hur du konfigurerar en Microsoft 365 HR-koppling för din organisation. Om du väljer att inte använda HR-kopplingen måste du välja alternativet Användarkonto som tagits bort från Azure AD när du konfigurerar utlösarhändelser i principguiden.
+>När du använder den här mallen kan du konfigurera en Microsoft 365 HR-anslutning för att regelbundet importera information om avgångs- och uppsägningsdatum för användare i din organisation. Se artikeln [Importera data med HR-anslutning](import-hr-data.md) för steg-för-steg-vägledning för att konfigurera Microsoft 365 HR-anslutning för din organisation. Om du väljer att inte använda HR-anslutning, måste du välja alternativet Användarkontot togs bort från Azure Active Directory vid konfigurering av utlösningshändelser i steg-för-steg-guiden.
 
 ### <a name="general-data-leaks"></a>Allmänna dataläckor
 
-Att skydda data och förhindra dataläckor är en konstant utmaning för de flesta organisationer, särskilt med den snabba tillväxten för nya data som skapas av användare, enheter och tjänster. Användarna har rätt att skapa, lagra och dela information över tjänster och enheter som gör att hantering av data läcker ut allt mer komplex och svår. Dataläckor kan inkludera oavsiktligt överformning av information utanför organisationen eller datastöld med skadliga avsikter. Med en tilldelad DLP-princip (Data Loss Prevention) eller den inbyggda utlösande händelsen börjar den här mallen poänga identifieringar i realtid av misstänkta datanedladdningar SharePoint Online, fil- och mappdelning, utskrift av filer och kopiering av data till personliga molnmeddelanden och lagringstjänster.
+Att skydda data och förhindra dataläckage är en ständig utmaning för de flesta organisationer, särskilt med den snabba ökningen av ny data som skapats av användare, enheter och tjänster. Användare har befogenhet att skapa, lagra och dela information över tjänster och enheter som gör hantering av dataläckage alltmer komplicerat och svårt. Dataläckor kan inkludera oavsiktlig överdelning av information utanför organisationen till datastöld med skadligt syfte. Med en tilldelad Princip för dataförlustskydd (DLP) eller den inbyggda utlösningshändelsen börjar den här mallen att göra detekteringar i realtid av misstänkta SharePoint Online-nedladdningar, fildelning och mappdelning, utskrift av filer och kopiering av data till personliga molnmeddelande och lagringstjänster.
 
-När du använder en *mall för Dataläckor* kan du tilldela en DLP-princip för att utlösa indikatorer i Insider-riskprincipen för varningar om hög allvarlighetsgrad i organisationen. När en varning för hög allvarlighetsgrad genereras av en DLP-principregel läggs till i Office 365-granskningsloggen undersöker Insider-riskprinciper som skapas med den här mallen automatiskt DLP-aviseringen med hög allvarlighetsgrad. Om aviseringen innehåller en användare inom omfattningen som definierats i Insider-riskprincipen behandlas aviseringen som en ny avisering och tilldelas en allvarlighetsgrad och ett riskresultat för insiderrisker. Med den här principen kan du utvärdera den här aviseringen i samband med andra aktiviteter som ingår i ärendet. Om du inte väljer en DLP-princip måste du välja den inbyggda utlösarhändelsen.
+Vid användning av en mall för *Dataläckage* kan du tilldela en DLP-princip för att utlösa indikatorer i principen för insiderrisk för varningar med hög allvarlighetsgrad i din organisation. När en varning med hög allvarlighetsgrad genereras av en DLP-principregel, läggs den till i granskningsloggen för Office 365, principer för insiderrisk som skapas med den här mallen undersöker automatiskt DLP-varningen med hög allvarlighet. Om varningen innehåller en användare i omfånget i principen för insiderrisk behandlas varningen av principen för insiderrisk som en ny varning och tilldelas en svårighetsgrad och riskpoäng för insiderrisk. Principen låter dig utvärdera denna varning i sammanhang med andra aktiviteter som ingår i ärendet. Om du inte väljer en DLP-princip, måste du välja den inbyggda utlösande händelsen.
 
-#### <a name="data-leaks-policy-guidelines"></a>Riktlinjer för dataläckor
+#### <a name="data-leaks-policy-guidelines"></a>Riktlinjer för principer för dataläckor
 
-När du skapar eller ändrar DLP-principer för användning med principer för insiderriskhantering bör du tänka på följande riktlinjer:
+När du skapar eller ändrar DLP-principerför användning med principer för hantering av insiderrisk, överväg följande riktlinjer:
 
-- Prioritera datainsamlingshändelser och var selektiv  när du tilldelar inställningar för incidentrapporter till Hög *när* regler konfigureras i DLP-principerna. Till exempel bör e-post av känsliga  dokument till en känd tävlande vara en exfiltrering med hög aviseringsnivå. Om du övertilldelar hög  nivå i rapporternas inställningar för incidenter i andra DLP-principregler kan du öka bruset i varningsarbetsflödet för Insider-riskhantering och göra det svårare för data att analytiker och andra analytiker utvärderar aviseringarna på rätt sätt.  Om du till exempel tilldelar *hög* aviseringsnivåer för åtkomst till denialaktiviteter i DLP-principer blir det svårare att utvärdera verkligt riskfyllda användarbeteende och -aktiviteter.
-- Se till att du förstår och konfigurerar användarna inom både DLP- och Insider-riskhanteringsprinciperna. Endast användare som definierats som in-omfattning för insider-riskhanteringsprinciper med hjälp av mallen **Dataläckor** kommer att ha DLP-principaviseringar med hög allvarlighetsgrad bearbetad. Dessutom kommer endast användare som definieras som inomfångserade i en regel för en DLP-varning med hög allvarlighetsgrad att uppmärksammas av insider-riskhanteringsprincipen. Det är viktigt att du inte på ett oavsiktligt sätt konfigurerar användare inom omfattningen för både DLP- och Insider-riskprinciper på ett konfliktande sätt.
+- Prioritera dataexfiltreringshändelser och var selektiv när du tilldelar inställningar för **Incidentrapporter** till *Hög* när du konfigurerar regler i DLP-principer. Till exempel ska att e-posta känsliga dokument till en känd konkurrent vara en exfiltreringshändelse med *Hög* varningsnivå. För stor tilldelning till *Hög* nivå i inställningarna för **Incidentrapporter** i andra DLP-principregler kan öka bullret i arbetsflödet för hantering av insiderrisk och göra det svårare för dina datautredare och analytiker att korrekt utvärdera dessa varningar. Till exempel gör tilldelning av *Hög* varningsnivå för åtkomst till förnekande aktiviteter i DLP-principer det mer utmanande att utvärdera verkligt riskabelt användarbeteende och aktiviteter.
+- Se till att du förstår och korrekt konfigurerar användarna inom omfattningen i både principen för DLP och den för hantering av insiderrisk. Endast användare som definieras som inom omfattningen för principer för hantering av insiderrisk med hjälp av mallen **Dataläckor** kommer att behandlas med DLP-principvarningar med hög allvarlighetsgrad. Dessutom kommer endast användare som definieras som inom omfattning i en regel för en DLP-varning med hög allvarlighetsgrad att undersökas av principen för hantering av insiderrisk för övervägande. Det är viktigt att du inte omedvetet konfigurerar användare inom omfånget i principerna för DLP och insiderrisk på ett motstridigt sätt.
 
-     Om till exempel DLP-principreglerna bara är begränsade till användare i säljteamet och den Insider-riskprincip som skapas från mallen Dataläckor har definierat alla användare som **inomfångsbaserade** kommer Insider-riskprincipen bara att bearbeta DLP-aviseringar med hög allvarlighetsgrad för användarna i säljteamet. Insider-riskprincipen får inga DLP-aviseringar med hög prioritet så att användare kan bearbeta som inte är definierade i DLP-reglerna i det här exemplet. Om däremot mallen för insider-riskhantering som skapas från **Data läcker** är begränsad till endast användare i säljteamet och den tilldelade DLP-principen är begränsad till alla användare, bearbetas bara DLP-aviseringar med hög allvarlighetsgrad för medlemmar i säljteamet. Insider-riskhanteringsprincipen ignorerar DLP-aviseringar med hög allvarlighetsgrad för alla användare som inte finns i säljteamet.
+     Till exempel, om dina DLP-principregler omfattas av endast användare i säljteamet och principen för insiderrisk som skapats från mallen för **Dataläckor** har definierat alla användare som omfattande, kommer principen för insiderrisk bara att behandla DLP-varningar med hög allvarlighetsgrad för användarna i säljteamet. Principen för insiderrisk kommer inte att få några högprioriterade DLP-varningar för användare att bearbeta som inte definieras i DLP-reglerna i detta exempel. Omvänt, om din princip för hantering av insiderrisk som skapats från mallar för **Dataläckor** endast omfattar användare i säljteamet och den tilldelade DLP-principen omfattar alla användare, kommer principen för insiderrisk endast att behandla DLP-varningar med hög allvarlighetsgrad för medlemmar i säljteamet. Principen för hantering av insiderrisk ignorerar DLP-varningar med hög allvarlighetsgrad för alla användare som inte är med i säljteamet.
 
-- Kontrollera att inställningen för **regel för** incidentrapporter i den DLP-princip som används för den här insiderriskhanteringsmallen är konfigurerad för *varningar* på hög allvarlighetsnivå. Hög *allvarlighetsnivå* är den utlösande händelsen och varningar för Insider-riskhantering kommer inte  att skapas från regler i DLP-principer med fältet Incidentrapporter inställt på *Låg* eller *Medel.*
+- Se till att regelinställningen för **Incidentrapporter** i DLP-principen som används för den här mallen för hantering av insiderrisk är konfigurerad för varningar med *Hög* allvarlighetsgrad. Nivån *Hög* allvarlighetsgrad är utlösande händelser och varningar för hantering av insiderrisk genereras inte från regler i DLP-principer med fältet **Incidentrapporter** inställt på *Låg* eller *Mellan*.
 
-    ![Aviseringsinställning för DLP-princip](../media/insider-risk-DLP-policy-high-severity.png)
+    ![Inställning för DLP-principavisering](../media/insider-risk-DLP-policy-high-severity.png)
 
      >[!NOTE]
-     >När du skapar en ny DLP-princip med hjälp av de inbyggda mallarna måste du  välja alternativet  Skapa eller anpassa avancerade **DLP-regler** för att konfigurera inställningen incidentrapporter för allvarlighetsnivån Hög.
+     >När du skapar en ny DLP-princip med de inbyggda mallarna måste du välja alternativet **Skapa eller anpassa avancerade DLP-regler** för att konfigurera inställningen för **Incidentrapporter** för *Hög* allvarlighetsgrad.
 
-Varje Insider-riskhanteringsprincip som skapas från **mallen Dataläckor** kan bara ha en tilldelad DLP-princip. Du kan skapa en dedikerad DLP-princip som kombinerar de olika aktiviteter som du vill identifiera och agera som utlösande händelser för Insider-riskprinciper som använder **mallen Dataläckor.**
+Varje princip för hantering av insiderrisk som skapas från mallen för **Dataläckor** kan bara tilldelas en DLP-princip. Överväg att skapa en dedikerad DLP-princip som kombinerar de olika aktiviteterna du vill upptäcka och som fungerar som utlösande händelser för principer för insiderrisk som använder mallen för **Dataläckor**.
 
-Stegvisa anvisningar för hur du konfigurerar DLP-principer för organisationen finns i artikeln [Skapa,](create-test-tune-dlp-policy.md) testa och finjustera en DLP-princip.
+Se artikeln [Skapa, testa och ställa in en DLP-princip](create-test-tune-dlp-policy.md) för en steg-för-steg-vägledning för att konfigurera DLP-principer för din organisation.
 
-### <a name="data-leaks-by-priority-users-preview"></a>Dataläsar efter prioriterade användare (förhandsversion)
+### <a name="data-leaks-by-priority-users-preview"></a>Dataläckor av prioritetsanvändare (förhandsversion)
 
-Skydda data och förhindra dataläckor för användare i organisationen kan vara beroende av deras position, åtkomstnivå till känslig information eller riskhistorik. Dataläckor kan inkludera oavsiktliga oversharing av känslig information utanför organisationen eller datastöld i skadliga syften. Med en tilldelad DLP-princip (Data Loss Prevention) börjar den här mallen poänga identifieringar i realtid av misstänkt aktivitet och resulterar i ökad sannolikhet för varningar för Insider-risker och aviseringar med högre allvarlighetsnivåer. Prioritetsanvändare definieras [i prioritetsgrupper som](insider-risk-management-settings.md#priority-user-groups-preview) konfigurerats i området inställningar för Insider-riskhantering.
+Att skydda data och förhindra dataläckor för användare i din organisation kan bero på deras position, åtkomstnivå till känslig information eller riskhistorik. Dataläckor kan inkludera oavsiktlig överdelning av väldigt känslig information utanför organisationen till datastöld med skadligt syfte. Med en tilldelad princip för Skydd mot dataförlust (DLP) börjar denna mall att göra realtidsdetekteringar av misstänkt aktivitet vilket resulterar i en ökad sannolikhet för varningar om insiderrisk och varningar med högre allvarlighetsnivåer. Prioritetsanvändare definieras i [prioriterade användargrupper](insider-risk-management-settings.md#priority-user-groups-preview) som är konfigurerade i inställningsområdet för hantering av insiderrisk.
 
-Som med mallen **Allmänna dataläckor** måste du tilldela en DLP-princip för att utlösa indikatorer i Insider-riskprincipen för varningar om hög allvarlighetsgrad i organisationen. Följ riktlinjerna för Dataläckor-policyn ovan när du skapar en princip med hjälp av den här mallen. Dessutom måste du tilldela prioriterade användargrupper som skapats i **Insider-riskhantering**  >  **Inställningar**  >  **prioritetsanvändargrupper** till principen.
+Som med **mallen Allmänna dataläckor** måste du tilldela en DLP-princip för att utlösa indikatorer i principen för insiderrisk för varningar med hög allvarlighetsgrad i din organisation. Följ riktlinjerna för principer för Dataläckor ovan när du skapar en princip med den här mallen. Dessutom måste du tilldela prioriterade användargrupper som skapats i **Hantering av insiderrisk** > **Inställningar** > **Prioriterade användargrupper** till principen.
 
-### <a name="data-leaks-by-disgruntled-users-preview"></a>Dataläckor av missnöjda användare (förhandsversion)
+### <a name="data-leaks-by-disgruntled-users-preview"></a>Dataläckor av missnöjd användare (förhandsversion)
 
-När användare upplever stressen hos anställning kan de bli oanvända, vilket kan öka risken för insiderrisker. Den här mallen börjar poänga användaraktivitet när en indikator som är associerad med misslydnad identifieras. Några exempel är resultatförbättringar, dålig prestandagranskning och ändringar av status på jobbnivå. Dataläckor för missnöjda användare kan inkludera att ladda ned filer från SharePoint Online och kopiera data till personliga molnmeddelanden och lagringstjänster nära stressorhändelser vid anställning.
+När användare upplever stressfaktorer under anställning kan de bli missnöjda, vilket kan öka risken för insiderriskaktivitet. Denna mall börjar bedöma användaraktivitet när en indikator som är associerad med missnöje identifieras. Exempel inkluderar aviseringar om prestationsförbättring, dåligt resultat från utvärderingar eller ändringar av status på jobbnivå. Dataläckor bland missnöjda användare kan inkludera nedladdning av filer från SharePoint Online och kopiering av data till personliga molntjänster och lagringstjänster nära i tid till stressande händelser i anställningen.
 
-När du använder den här mallen måste du också konfigurera en Microsoft 365 HR-koppling för att regelbundet importera meddelanden om prestandaförbättringar, dålig prestandagranskningsstatus eller ändringsinformation på jobbnivå för användare i organisationen. I artikeln [Importera data med HR-koppling](import-hr-data.md) finns stegvisa instruktioner för hur du konfigurerar en Microsoft 365 HR-koppling för din organisation.
+När du använder den här mallen måste du också konfigurera en Microsoft 365 HR-anslutning för att regelbundet importera aviseringar om prestationsförbättring, dåligt resultat från utvärderingar eller information om ändringar av jobbnivå för användare i din organisation. Se artikeln [Importera data med HR-anslutning](import-hr-data.md) för steg-för-steg-vägledning för att konfigurera Microsoft 365 HR-anslutning för din organisation.
 
-### <a name="general-security-policy-violations-preview"></a>Allmänna brott mot säkerhetsprinciper (förhandsversion)
+### <a name="general-security-policy-violations-preview"></a>Överträdelse av allmän säkerhetsprincip (förhandsversion)
 
-I många organisationer har användare behörighet att installera programvara på sina enheter eller ändra enhetsinställningar för att hjälpa till med sina uppgifter. Antingen oavsiktligt eller med skadliga avsikter kan användare installera skadlig programvara eller inaktivera viktiga säkerhetsfunktioner som hjälper till att skydda information på sin enhet eller på nätverksresurser. Den här principmallen använder säkerhetsvarningar från Microsoft Defender för Endpoint för att starta poängsättning av dessa aktiviteter och identifiering av fokus och aviseringar för det här riskområdet. Använd den här mallen för att få insikter om brott mot säkerhetsprinciper i scenarier där användare kan ha en historik över brott mot säkerhetsprinciper som kan vara en indikator på Insider-risker.
+I många organisationer har användare behörighet att installera programvara på sina enheter eller att ändra enhetsinställningar för att hjälpa dem med deras uppgifter. Användare kan, antingen oavsiktligt eller med skadlig avsikt, installera skadlig kod eller inaktivera viktiga säkerhetsfunktioner som skyddar information på deras enhet eller på dina nätverksresurser. Denna principmall använder säkerhetsvarningar från Microsoft Defender för Endpoint för att börja bedöma dessa aktiviteter och fokusera på upptäckt och varningar i detta riskområde. Använd den här mallen för att ge insikter om överträdelser av säkerhetsprincip i scenarier när användare kan ha ett förflutet med överträdelser av säkerhetsprinciper som kan vara en indikator på insiderrisk.
 
-Du måste ha Microsoft Defender för Slutpunkt konfigurerat i din organisation och aktivera Defender för Slutpunkt för insider-riskhanteringsintegrering i Defender Säkerhetscenter för att importera aviseringar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Slutpunkt för insider-riskhanteringsintegrering finns i [Konfigurera avancerade funktioner i Defender för slutpunkt.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
+Du måste ha Microsoft Defender för Endpoint konfigurerad i din organisation och aktivera Defender för Endpoint för integrering av hantering av insiderrisk i Defender Security Center för att importera varningar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Endpoint för integrering av hantering av insiderrisk finns i [Konfigurera avancerade funktioner i Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
-### <a name="security-policy-violations-by-departing-users-preview"></a>Brott mot säkerhetsprinciper genom avgående användare (förhandsversion)
+### <a name="security-policy-violations-by-departing-users-preview"></a>Överträdelser av säkerhetsprinciper av användare som slutar (förhandsversion)
 
-Att avgående användare, vare sig de lämnar positiva eller negativa villkor, kan vara en högre risk för brott mot säkerhetsprinciperna. För att skydda mot oavsiktliga eller skadliga säkerhetsöverträdelser för avgående användare använder den här principmallen Defender för Slutpunktsaviseringar för att ge insikter i säkerhetsrelaterade aktiviteter. Dessa aktiviteter omfattar användare som installerar skadlig programvara eller andra potentiellt skadliga program och inaktiverar säkerhetsfunktioner på sina enheter. Med hjälp av [antingen Microsoft 365 HR-kopplingen](import-hr-data.md) eller alternativet att automatiskt övervaka för borttagning av användarkonton i Azure Active Directory för din organisation börjar den här mallen poäng för riskindikatorer som relaterar till dessa säkerhetsaktiviteter och hur de motsvarar anställningsstatus för användare.
+Användare som slutar, oavsett om de lämnar frivilligt eller inte, kan vara större risk för överträdelser av säkerhetsprinciper. För att skydda mot oavsiktliga eller skadliga säkerhetsöverträdelser från användare som slutar, använder denna principmall Defender för Endpoint-varningar för att ge insikt i säkerhetsrelaterade aktiviteter. Dessa aktiviteter inkluderar användaren som installerar skadlig programvara eller andra potentiellt skadliga applikationer och inaktiverar säkerhetsfunktioner på sina enheter. Genom att använda antingen [Microsoft 365 HR-anslutning](import-hr-data.md) eller alternativet att automatiskt övervaka borttagning av användarkonton i Azure Active Directory för din organisation, börjar den här mallen att sätta poäng på riskindikatorer som rör dessa säkerhetsaktiviteter och hur de korrelerar med användarens anställningsstatus.
 
-Du måste ha Microsoft Defender för Slutpunkt konfigurerat i din organisation och aktivera Defender för Slutpunkt för insider-riskhanteringsintegrering i Defender Säkerhetscenter för att importera aviseringar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Slutpunkt för insider-riskhanteringsintegrering finns i [Konfigurera avancerade funktioner i Defender för slutpunkt.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
+Du måste ha Microsoft Defender för Endpoint konfigurerad i din organisation och aktivera Defender för Endpoint för integrering av hantering av insiderrisk i Defender Security Center för att importera varningar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Endpoint för integrering av hantering av insiderrisk finns i [Konfigurera avancerade funktioner i Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
-### <a name="security-policy-violations-by-priority-users-preview"></a>Brott mot säkerhetsprinciper för användare med prioritet (förhandsversion)
+### <a name="security-policy-violations-by-priority-users-preview"></a>Överträdelser av säkerhetsprincip efter prioritetsanvändare (förhandsversion)
 
-Skydd mot säkerhetsöverträdelser för användare i organisationen kan vara beroende av deras position, åtkomstnivå till känslig information eller riskhistorik. Eftersom säkerhetsöverträdelser efter prioritet användare kan ha betydande inverkan på organisationens kritiska områden, börjar den här principmallen poäng för dessa indikatorer och använder Microsoft Defender för slutpunktsaviseringar för att ge insikter om säkerhetsrelaterade aktiviteter för dessa användare. Dessa aktiviteter kan omfatta prioritetsanvändare som installerar skadlig programvara eller andra potentiellt skadliga program och inaktiverar säkerhetsfunktioner på sina enheter. Prioritetsanvändare definieras i prioritetsgrupper som konfigurerats i området inställningar för Insider-riskhantering.
+Skydd mot säkerhetsöverträdelser från användare i din organisation kan bero på deras position, åtkomstnivå till känslig information eller riskhistorik. Eftersom säkerhetsöverträdelser från prioritetsanvändare kan ha en betydande inverkan på din organisations kritiska områden, börjar den här principmallen att göra bedömningar av dessa indikatorer och använder Microsoft Defender för Endpoint-varningar för att ge insikt i säkerhetsrelaterade aktiviteter för dessa användare. Dessa aktiviteter kan inkludera prioritetsanvändare som installerar skadlig programvara eller andra potentiellt skadliga applikationer och inaktiverar säkerhetsfunktioner på sina enheter. Prioritetsanvändare definieras i prioriterade användargrupper som är konfigurerade i inställningsområdet för hantering av insiderrisk.
 
-Du måste ha Microsoft Defender för Slutpunkt konfigurerat i din organisation och aktivera Defender för Slutpunkt för insider-riskhanteringsintegrering i Defender Säkerhetscenter för att importera aviseringar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Slutpunkt för insider-riskhanteringsintegrering finns i [Konfigurera avancerade funktioner i Defender för slutpunkt.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) Dessutom måste du tilldela prioriterade användargrupper som skapats i **Insider-riskhantering**  >  **Inställningar**  >  **prioritetsanvändargrupper** till principen.
+Du måste ha Microsoft Defender för Endpoint konfigurerad i din organisation och aktivera Defender för Endpoint för integrering av hantering av insiderrisk i Defender Security Center för att importera varningar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Endpoint för integrering av hantering av insiderrisk finns i [Konfigurera avancerade funktioner i Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center). Dessutom måste du tilldela prioriterade användargrupper som skapats i **Hantering av insiderrisk** > **Inställningar** > **Prioriterade användargrupper** till principen.
 
-### <a name="security-policy-violations-by-disgruntled-users-preview"></a>Brott mot säkerhetsprinciper för användare (förhandsversion)
+### <a name="security-policy-violations-by-disgruntled-users-preview"></a>Överträdelse av säkerhetsprincip av en missnöjd användare (förhandsversion)
 
-Användare som upplever stressen i anställningen kan riskera att oavsiktligt eller skadligt bryter mot säkerhetsprinciper. Dessa stressfaktorer kan inkludera användaren som placeras i en plan för prestandaförbättringar, dålig prestandagranskning eller nedgraderas från sin nuvarande position. Den här principmallen startar riskbedömning baserat på de indikatorer och aktiviteter som är kopplade till dessa händelser för dessa användare.
+Användare som upplever stressfaktorer under anställning kan vara utsatt för högre risk för oavsiktliga eller skadliga överträdelser av säkerhetsprinciper. Dessa stressfaktorer kan inkludera att användaren placeras i ett program för prestationsförbättring, dåligt resultat från utvärdering eller att degraderas från sin nuvarande position. Denna principmall börjar bedöma risk baserat på dessa indikatorer och aktiviteter som är associerade med dessa händelser för dessa användare.
 
-När du använder den här mallen måste du också konfigurera en Microsoft 365 HR-koppling för att regelbundet importera meddelanden om prestandaförbättringar, dålig prestandagranskningsstatus eller ändringsinformation på jobbnivå för användare i organisationen. I artikeln [Importera data med HR-koppling](import-hr-data.md) finns stegvisa instruktioner för hur du konfigurerar en Microsoft 365 HR-koppling för din organisation.
+När du använder den här mallen måste du också konfigurera en Microsoft 365 HR-anslutning för att regelbundet importera aviseringar om prestationsförbättring, dåligt resultat från utvärderingar eller information om ändringar av jobbnivå för användare i din organisation. Se artikeln [Importera data med HR-anslutning](import-hr-data.md) för steg-för-steg-vägledning för att konfigurera Microsoft 365 HR-anslutning för din organisation.
 
-Du måste också ha Microsoft Defender för Slutpunkt konfigurerad i organisationen och aktivera Defender för Slutpunkt för insider-riskhanteringsintegrering i Defender Säkerhetscenter för att importera säkerhetsfelsvarningar. Mer information om hur du konfigurerar Defender för Slutpunkt för insider-riskhanteringsintegrering finns i [Konfigurera avancerade funktioner i Defender för slutpunkt.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
+Du måste också ha Microsoft Defender för Endpoint konfigurerad i din organisation och aktivera Defender för Endpoint för integrering av hantering av insiderrisk i Defender Security Center för att importera varningar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Endpoint för integrering av hantering av insiderrisk finns i [Konfigurera avancerade funktioner i Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center).
 
-### <a name="policy-template-prerequisites-and-triggering-events"></a>Förutsättningarna för principmallen och utlösa händelser
+### <a name="policy-template-prerequisites-and-triggering-events"></a>Förutsättningar för principmall och utlösande händelser
 
-Beroende på vilken mall du väljer för en insider-riskhanteringsprincip varierar händelseutlösaren och förutsättningarna för principen. Utlösande händelser är förutsättningar som bestämmer om en användare är aktiv för en princip för insider-riskhantering. Om en användare läggs till i en princip för insider-riskhantering men inte har en utlösande händelse utvärderas inte användaraktiviteten av principen såvida de inte läggs till manuellt i instrumentpanelen Användare. Principförutsättningarna är obligatoriska objekt så att principen tar emot de signaler eller aktiviteter som krävs för att utvärdera risker.
+Beroende på vilken mall du väljer för en princip för hantering av insiderrisk varierar förutsättningarna för de utlösande händelserna och principerna. Utlösande händelser är förutsättningar som avgör om en användare är aktiv för en princip för hantering av insiderrisk. Om en användare läggs till i en princip för hantering av insiderriskmen inte har en utlösande händelse, utvärderas användaraktiviteten inte av principen såvida de inte läggs till manuellt i användarens instrumentpanel. Förutsättningar för en princip är obligatoriska poster som gör så att principen får de signaler eller aktiviteter som är nödvändiga för att utvärdera risk.
 
-I följande tabell visas utlösande händelser och förutsättningar för principer som skapats från varje mall för Insider-riskhanteringsprinciper:
+Följande tabell visar de utlösande händelserna och förutsättningarna för principer som skapats från varje princip för hantering av insiderrisk:
 
-| **Principmall** | **Utlösa händelser för principer** | **Förutsättningar** |
+| **Principmall** | **Utlösande händelser för principer** | **Förutsättningar** |
 | :------------------ | :--------------------------------- | :---------------- |
-| Datastöld genom avgående användare | Indikator för avslutande eller avslutande datum från HR-kontakt | (valfritt) Microsoft 365 HR-koppling som konfigurerats för datumindikatorer för uppsägning och förfallodatum Azure Active Directory har aktiverats |
-| Allmänna dataläckor | Principaktivitet för dataläckor som skapar en varning för hög allvarlighetsgrad | (valfritt) DLP-princip som konfigurerats för varningar med hög allvarlighetsgrad eller inbyggd data exfiltration som utlöser händelse |
-| Dataläckor efter prioriterade användare | Principaktivitet för dataläckor som skapar *en varning för* hög allvarlighetsgrad eller inbyggd exfiltrationshändelse utlöser | (valfritt) DLP-princip som konfigurerats för varningar med hög allvarlighetsgrad <br><br> Prioriterade användargrupper konfigurerade i inställningar för Insider-risker |
-| Dataläckor av missnöjda användare | Prestandaförbättringar, dåliga prestanda och ändringsindikatorer på arbetsnivå från HR-anslutning | Microsoft 365 HR-koppling konfigurerad för misslydnad-indikatorer |
-| Allmänna brott mot säkerhetsprinciper | Skydd av säkerhetskontroller eller oönskad programvara som upptäckts av Microsoft Defender för Endpoint | Active Microsoft Defender för Endpoint-prenumeration <br><br> Microsoft Defender för slutpunktsintegrering med Microsoft 365 konfigurerad efterlevnadscenter |
-| Brott mot säkerhetsprinciper av avgående användare | Indikatorer för att ta bort eller bli av med ett datum från personalavdelningen Azure Active Directory borttagning av konto | (valfritt) Microsoft 365 HR-koppling som konfigurerats för datumindikatorer för uppsägning och förfallodatum <br><br> Active Microsoft Defender för Endpoint-prenumeration <br><br> Microsoft Defender för slutpunktsintegrering med Microsoft 365 konfigurerad efterlevnadscenter |
-| Brott mot säkerhetsprinciper efter prioritetsanvändare | Skydd av säkerhetskontroller eller oönskad programvara som upptäckts av Microsoft Defender för Endpoint | Active Microsoft Defender för Endpoint-prenumeration <br><br> Microsoft Defender för slutpunktsintegrering med Microsoft 365 konfigurerad efterlevnadscenter <br><br> Prioriterade användargrupper konfigurerade i inställningar för Insider-risker |
-| Brott mot säkerhetsprinciper av en oanvändarlös användare | Prestandaförbättringar, dåliga prestanda och ändringsindikatorer på arbetsnivå från HR-anslutning | Microsoft 365 HR-koppling konfigurerad för misslydnad-indikatorer <br><br> Active Microsoft Defender för Endpoint-prenumeration <br><br> Microsoft Defender för slutpunktsintegrering med Microsoft 365 konfigurerad efterlevnadscenter |
+| Datastöld från slutande användare | Indikator för avgångs- eller uppsägningsdatum från HR-anslutning | (valfritt) Microsoft 365 HR-anslutning konfigurerad för indikatorer för uppsägnings- och avgångsdatum eller aktiverad Azure Active Directory-integrering |
+| Allmänna dataläckor | Princip för aktiviteter relaterade till dataläckor som skapar en varning med Hög allvarlighetsgrad | (valfritt) DLP-princip konfigurerad för varningar med Hög allvarlighetsgrad eller inbyggd händelse som utlöser dataexfiltrering |
+| Dataläckor av prioritetsanvändare | Princip för aktiviteter relaterade till dataläckor som skapar en varning med *Hög allvarlighet* eller inbyggd händelse som utlöser dataexfiltrering. | (valfritt) DLP-princip som är konfigurerad för varningar med Hög allvarlighet <br><br> Prioriterad användargrupper som är konfigurerade i inställningar för insiderrisk |
+| Dataläckage av missnöjda användare | Prestationsförbättring, dålig prestation eller indikatorer för ändring av jobbnivå från HR-anslutning | Microsoft 365 HR-anslutning konfigurerad för indikatorer på missnöje |
+| Överträdelser av allmän säkerhetsprincip | Defensivt undvikande av säkerhetskontroller eller oönskad programvara upptäckt av Microsoft Defender för Endpoint | Aktiv prenumeration på Microsoft Defender för Endpoint <br><br> Konfigurerad integration av Microsoft Defender för Endpoint med Microsoft 365 Efterlevnadscenter |
+| Överträdelser av säkerhetsprincip av användare som slutar | Indikatorer från avgångs- eller uppsägningsdatum från HR-anslutning eller borttagning av Azure Active Directory-konto | (valfritt) Microsoft 365 HR-anslutning konfigurerad för indikatorer för uppsägnings- och avgångsdatum <br><br> Aktiv prenumeration på Microsoft Defender för Endpoint <br><br> Konfigurerad integration av Microsoft Defender för Endpoint med Microsoft 365 Efterlevnadscenter |
+| Överträdelser av säkerhetsprincip av prioritetsanvändare | Defensivt undvikande av säkerhetskontroller eller oönskad programvara upptäckt av Microsoft Defender för Endpoint | Aktiv prenumeration på Microsoft Defender för Endpoint <br><br> Konfigurerad integration av Microsoft Defender för Endpoint med Microsoft 365 Efterlevnadscenter <br><br> Prioriterad användargrupper som är konfigurerade i inställningar för insiderrisk |
+| Överträdelse av säkerhetsprincip av en missnöjd användare | Prestationsförbättring, dålig prestation eller indikatorer för ändring av jobbnivå från HR-anslutning | Microsoft 365 HR-anslutning konfigurerad för indikatorer på missnöje <br><br> Aktiv prenumeration på Microsoft Defender för Endpoint <br><br> Konfigurerad integration av Microsoft Defender för Endpoint med Microsoft 365 Efterlevnadscenter |
 
 ## <a name="prioritize-content-in-policies"></a>Prioritera innehåll i principer
 
-Insider-riskhanteringsprinciper har stöd för att ange högre prioritet för innehåll beroende på var det lagras eller hur det klassificeras. Om du anger innehåll som prioritet ökar riskresultatet för alla associerade aktiviteter, vilket i sin tur ökar risken för att generera en varning med hög allvarlighetsgrad. Men vissa aktiviteter genererar ingen avisering alls om inte relaterat innehåll innehåller inbyggda eller anpassade typer av känslig information eller har angetts som prioritet i principen.
+Principer för hantering av insiderrisk har stöd för att ange en högre prioritet för innehåll beroende på var det lagras eller hur det klassificeras. Att ange innehåll som prioritet ökar riskpoängen för all associerad aktivitet, vilket i sin tur ökar chansen att generera en varning med hög allvarlighetsgrad. Vissa aktiviteter genererar dock inte en varning alls såvida inte det relaterade innehållet innehåller inbyggda eller anpassade känsliga informationstyper eller angavs som en prioritet i principen.
 
-Din organisation har till exempel en dedikerad webbplats SharePoint för ett mycket konfidentiellt projekt. Dataläckor för information på SharePoint webbplats kan avslöja projektet och skulle ha stor inverkan på dess framgång. Genom att prioritera den här SharePoint i en Data-läckaspolicy ökas automatiskt riskpoäng för kvalificerande aktiviteter. Den här prioriteringen ökar sannolikheten för att dessa aktiviteter genererar en insider-riskvarning och upphöjer allvarlighetsnivån för aviseringen.
+Till exempel har din organisation en dedikerad SharePoint-webbplats för ett mycket konfidentiellt projekt. Dataläckor för information på denna SharePoint-webbplats kan äventyra projektet och skulle ha en betydande inverkan på dess framgång. Genom att prioritera denna SharePoint-webbplats i en princip för Dataläckor höjs automatiskt riskpoängen för kvalificerade aktiviteter. Denna prioritering ökar sannolikheten för att dessa aktiviteter genererar en varning om insiderrisk och höjer allvarlighetsnivån för varningen.
 
-När du skapar en princip för insider-riskhantering i principguiden kan du välja bland följande prioriteringar:
+När du skapar en princip för hantering av insiderrisk i principguiden kan du välja mellan följande prioriteringar:
 
-- **SharePoint webbplatser**: Alla aktiviteter som associeras med alla filtyper i definierade SharePoint-webbplatser tilldelas en högre risknivå. 
-- **Typer av känslig information**: En aktivitet som associeras med innehåll som innehåller [typer av känslig information](sensitive-information-type-entity-definitions.md) tilldelas ett högre riskresultat.
-- **Känslighetsetiketter:** En aktivitet som är kopplad till innehåll som har [specifika känslighetsetiketter](sensitivity-labels.md) tillämpas tilldelas en högre risknivå.
+- **SharePoint-webbplatser**: Alla aktiviteter som är associerade med alla filtyper på definierade SharePoint-webbplatser tilldelas en högre riskpoäng. 
+- **Typer av känslig information**: Alla aktiviteter som har associerats med innehåll som innehåller [typer av känslig information](sensitive-information-type-entity-definitions.md) tilldelas en högre riskpoäng.
+- **Känslighetsetiketter**: Alla aktiviteter som associeras med innehåll som har specifika [känslighetsetiketter](sensitivity-labels.md) tilldelas en högre riskpoäng.
 
-## <a name="sequence-detection-preview"></a>Identifiering av sekvens (förhandsgranskning)
+## <a name="sequence-detection-preview"></a>Sekvensidentifiering (förhandsversion)
 
-Riskfyllda aktiviteter kan inte inträffa som isolerade händelser. Dessa risker är ofta en del av en större sekvens av händelser. En sekvens är en grupp med två eller flera användaraktiviteter som utförts en efter den andra som kan föreslå en förhöjd risk. Att identifiera dessa relaterade aktiviteter är en viktig del av utvärderingen av den totala risken. När sekvensidentifiering har aktiverats för principer för datastöld eller  dataläckor visas insikter från aktiviteter med sekvensinformation på fliken Användaraktivitet i ett insider-riskhanteringsfall. Följande principmallar har stöd för identifiering av sekvenser:
+Riskabla aktiviteter kanske inte förekommer som isolerade händelser. Dessa risker ingår ofta i en större händelseförlopp. En sekvens är en grupp av två eller flera användaraktiviteter som utförs efter varandra som kan tyda på en förhöjd risk. Att identifiera dessa relaterade aktiviteter är en viktig del av utvärderingen av den totala risken. När sekvensdetektering är aktiverad för principer för datastöld eller dataläckor visas insikter från sekvensinformationsaktiviteter på fliken **Användaraktivitet** i ett fall för hantering av insiderrisk. Följande principmallar stöder sekvensdetektering:
 
-- Datastöld genom avgående användare
+- Datastöld från slutande användare
 - Allmänna dataläckor
-- Dataläckor efter prioriterade användare
-- Dataläckor av missnöjda användare
+- Dataläckor av prioritetsanvändare
+- Dataläckage av missnöjda användare
 
-Dessa insider-riskhanteringsprinciper kan använda särskilda indikatorer och den ordning som de inträffar för att identifiera varje steg i en sekvens av risk. Filnamn används när du mappar aktiviteter i en sekvens. Dessa risker är ordnade i fyra huvudkategorier av aktivitet:
+Dessa principer för hantering av insiderrisk kan använda specifika indikatorer och den ordning de inträffar för att upptäcka varje steg i en risksekvens. Filnamn används vid mappning av aktiviteter över en sekvens. Dessa risker är organiserade i fyra huvudkategorier av aktiviteter:
 
-- **Samling:** Den här kategorin är en bra signal på nedladdningsaktiviteter från användare inom omfattningen av principen. En exempelaktivitet i den här kategorin skulle vara att hämta filer SharePoint webbplatser.
-- **Exfiltrering:** Den här kategorin signalerar fokus på delnings- eller extraheringsaktiviteter till interna och externa källor av principanvändare inom omfattningen. En exempelaktivitet i den här kategorin är att skicka e-postmeddelanden med bifogade filer från organisationen till externa mottagare.
-- **Obfuscation:** Den här kategorin signalerar fokus på maskering av riskfyllda aktiviteter av användare inom omfattningen av principen. En exempelaktivitet i den här kategorin byter namn på filer på en enhet.
-- **Rensning: Den** här kategorin är en signal på borttagningsaktiviteter från principanvändare inom omfattningen. En exempelaktivitet i den här kategorin är att ta bort filer från en enhet.
+- **Samling**: Dessa kategorisignaler fokuserar på nedladdningsaktiviteter av principanvändare inom omfattningen. Ett exempel på en aktivitet i denna kategori är att ladda ner filer från SharePoint-webbplatser.
+- **Exfiltrering**: Dessa kategorisignaler fokuserar på att dela eller extrahera aktiviteter till interna och externa källor av principanvändare inom omfattningen. Ett exempel på en aktivitet i denna kategori är att skicka e-postmeddelanden med bilagor från din organisation till externa mottagare.
+- **Förvirring**: Dessa kategorisignaler fokuserar på maskering av riskabla aktiviteter av principanvändare inom omfattningen. Ett exempel på en aktivitet i den här kategorin är att byta namn på filer i en enhet.
+- **Rensa**: Dessa kategorisignaler fokuserar på borttagningsaktiviteter av principanvändare inom omfattningen. Ett exempel på en aktivitet i den här kategorin är att ta bort filer från en enhet.
 
 >[!NOTE]
->Sekvensidentifiering använder indikatorer som är aktiverade i de globala inställningarna för Insider-riskhantering och indikatorer som väljs i en princip. Om lämpliga indikatorer inte är markerade fungerar inte sekvensidentifiering.
+>Sekvensdetektering använder indikatorer som är aktiverade i de globala inställningarna för hantering av insiderrisk och indikatorer som väljs i en princip. Om inga lämpliga indikatorer väljs fungerar inte sekvensdetektering.
 
-Du kan anpassa inställningarna för enskilda tröskelvärden för varje identifieringstyp när den konfigureras i principen. Inställningarna för tröskelvärdet justerar aviseringarna baserat på mängden filer som är kopplade till sekvensen.
+Du kan anpassa individuella tröskelinställningar för varje typ av sekvensdetektering när de konfigureras i principen. Dessa tröskelinställningar justerar varningar baserat på volymen av filer som är associerade med sekvensen.
 
-Mer information om hantering av sekvensidentifiering i vyn **Användaraktivitet** finns i [Ärenden för Insider-riskhantering: Användaraktivitet](insider-risk-management-cases.md#user-activity).
+Mer information om hantering av sekvensdetektering finns i vyn **Användaraktivitet** i [Fall av hantering av insiderrisk: Användaraktivitet](insider-risk-management-cases.md#user-activity).
 
-## <a name="cumulative-exfiltration-detection-preview"></a>Identifiering av kumulativ exfiltration (förhandsgranskning)
+## <a name="cumulative-exfiltration-detection-preview"></a>Identifiering av kumulativ dataexfiltrering (förhandsversion)
 
-Insider-riskindikatorer hjälper till att identifiera ovanliga nivåer av riskaktiviteter när de utvärderas dagligen för användare som omfattas av insiderriskprinciper. Identifiering av kumulativ exfiltrering använder maskininlärningsmodeller för att hjälpa dig att identifiera när användar exfiltreringsaktiviteter överstiger organisationens medelvärden när de mäts över tid och över flera exfiltreringsaktivitetstyper. Insider-riskhanteringsanalytiker och -experter kan använda kumulativa insikter för identifiering av exfiltrering för att identifiera exfiltreringsaktiviteter som normalt inte genererar aviseringar men som ligger över det som är typiskt för organisationen. Vissa exempel kan vara avgående användare som långsamt för in data i ett intervall av dagar eller när användarna flera gånger delar data över flera kanaler mer än vanligt för datadelning för organisationen.
+Indikatorer på Insiderrisk hjälper till att identifiera ovanliga nivåer av riskaktiviteter när de utvärderas dagligen för användare som omfattas av principer för insiderrisk. Kumulativ exfiltreringsdetektering använder maskininlärningsmodeller för att hjälpa dig att identifiera när användarexfiltreringsaktiviteter överstiger organisationens genomsnitt vid mätning över tid och över flera typer av exfiltreringsaktiviteter. Anytiker och utredare av hantering av insiderrisk kan använda insikter från identifiering av kumulativ dataexfiltrering för att identifiera exfiltreringsaktiviteter som kanske inte genererar varningar men som är högre än vad som är typiskt för deras organisation. Några exempel kan vara avgående användare som långsamt exfiltrerar data över ett antal dagar, eller när användare upprepade gånger delar data över flera kanaler mer än vanligt för datadelning för din organisation.
 
-Identifiering av kumulativ exfiltration är aktiverat som standard när du använder följande principmallar:
+Identifiering av kumulativ dataexfiltrering är aktiverad som standard när du använder följande principmallar:
 
-- Datastöld genom avgående användare
+- Datastöld från slutande användare
 - Allmänna dataläckor
-- Dataläckor efter prioriterade användare
-- Dataläckor av missnöjda användare
+- Dataläckor av prioritetsanvändare
+- Dataläckage av missnöjda användare
 
 >[!NOTE]
->Identifiering av kumulativ exfiltration använder indikatorer för exfiltration som är aktiverade i de globala inställningarna för insider-riskhantering och exfiltrationsindikatorer som är valda i en princip. Därför utvärderas identifiering av ackumulerad exfiltration endast för de nödvändiga exfiltrationsindikatorer som valts.
+>Identifiering av kumulativ exfiltrering använder exfilreringsindikatorer som är aktiverade i de globala inställningarna för hantering av insiderrisk och exfilreringsindikatorer som väljs i en princip. Som sådan utvärderas identifiering av kumulativ exfiltrering endast för de nödvändiga exfiltreringsindikatorerna.
 
-När identifiering av kumulativ exfiltration har aktiverats för datastöld eller principer  för dataläckor visas insikter från ackumulerad exfiltreringsaktivitet på fliken Användaraktivitet i ett insider-riskhanteringsfall.
+När identifiering av kumulativ exfiltrering är aktiverad för principer för datastöld eller dataläckor visas insikter från kumulativa exfiltreringsaktiviteter på fliken **Användaraktivitet** i ett fall för hantering av insiderrisk.
 
-Mer information om användaraktivitetshantering finns i [Insider-riskhanteringsärenden: Användaraktiviteter.](insider-risk-management-cases.md#user-activity)
+Mer information om hantering av Användaraktvitet finns i [Fall av hantering av insiderrisk: Användaraktivitet](insider-risk-management-cases.md#user-activity).
 
-## <a name="policy-health-preview"></a>Policyhälsa (förhandsversion)
+## <a name="policy-health-preview"></a>Principhälsa (förhandsversion)
 
-Policystatusen ger dig insyn i potentiella problem med insider-riskhanteringsprinciper. Kolumnen Status på fliken Principer kan uppmärksamma dig på problem med principer som kan förhindra att användaraktivitet rapporteras eller varför antalet aktivitetsaviseringar är ovanligt. Status för principens hälsa kan också bekräfta att principen är felfri och inte behöver uppmärksammas eller att konfigurationen ändras.
+Principens hälsostatus ger dig insikt i potentiella problem med dina principer för hantering av insiderrisk. Kolumnen Status på fliken Princip kan varna dig om principfrågor som kan förhindra att användaraktivitet rapporteras eller varför antalet aktivitetsvarningar är ovanligt. Principens hälsostatus kan också bekräfta att principen är hälsosam och inte behöver uppmärksamhet eller konfigurationsändringar.
 
-Om det finns problem med en princip visar hälsostatus för principen varningar och rekommendationer som hjälper dig att vidta åtgärder för att lösa principproblem. De här meddelandena kan hjälpa dig att lösa följande problem:
+Om det finns problem med en princip visar principstatusen varningar och rekommendationer som hjälper dig att vidta åtgärder för att lösa problem med principer. Dessa meddelanden kan hjälpa dig att lösa följande problem:
 
-- Principer med ofullständig konfiguration. Dessa problem kan inkludera saknade användare eller grupper i principen eller andra ofullständiga konfigurationssteg för principen.
-- Principer med problem med indikatorkonfiguration. Indikatorer är en viktig del av varje princip. Om indikatorerna inte är konfigurerade, eller om för få indikatorer väljs, kanske principen inte utvärderar riskfyllda aktiviteter som förväntat.
-- Principutlösare fungerar inte eller så är inte krav på principutlösare korrekt konfigurerade. Principfunktioner kan vara beroende av andra tjänster eller konfigurationskrav för att effektivt identifiera utlösande händelser för att aktivera tilldelning av riskpoäng till användare i principen. Dessa beroenden kan inkludera problem med konfiguration av anslutning, Microsoft Defender för slutpunktsaviseringsdelning eller konfigurationsinställningar för skydd mot dataförlust.
-- Volymbegränsningarna närmar sig eller är över gränser. Insider-principer för riskhantering använder Microsoft 365 tjänster och slutpunkter för aggregerade riskaktivitetssignaler. Beroende på antalet användare i principerna kan volymbegränsningar fördröja identifiering och rapportering av riskaktiviteter. Läs mer om de här begränsningarna i avsnittet Begränsningar för principmallar i den här artikeln.
+- Principer med ofullständig konfiguration. Dessa problem kan innefatta saknade användare eller grupper i principen eller andra ofullständiga konfigurationssteg för principen.
+- Princip med konfigurationsproblem för indikator. Indikatorer är en viktig del av varje princip. Om indikatorer inte är konfigurerade eller om för få indikatorer väljs kan det hända att principen inte utvärderar riskabla aktiviteter som förväntat.
+- Principutlösare fungerar inte, eller så är inte kraven för principutlösare korrekt konfigurerade. Principfunktionalitet kan bero på andra tjänster eller konfigurationskrav för att effektivt upptäcka utlösande händelser för att aktivera tilldelning av riskpoäng till användare i principen. Dessa beroenden kan inkludera problem med konfiguration av anslutning, Microsoft Defender för Endpoint aviseringsdelning eller konfigurationsinställningar för princip för dataförlustskydd.
+- Volymgränser närmar sig eller är över gränser. Principer för hantering av insiderrisk använder flera Microsoft 365-tjänster och slutpunkter för att aggregera riskaktivitetssignaler. Beroende på antalet användare i dina principer kan volymgränser försena identifiering och rapportering av riskaktiviteter. Läs mer om dessa gränser i avsnittet Begränsningar för principmall i den här artikeln.
 
-Om du snabbt vill visa hälsostatus för en princip går du till fliken Princip och kolumnen Status. Här visas följande alternativ för hälsostatus för principen:
+För att snabbt visa hälsostatusen för en princip, navigera på fliken Princip och kolumnen Status. Här ser du följande alternativ för principers hälsostatus för varje princip:
 
-- Felfritt: Inga problem har identifierats med principen.
-- Rekommendationer: Det finns några problem med principen som kan hindra att principen fungerar som förväntat.
-- Varningar: Det finns problem med principen som gör att den inte kan identifiera riskfyllda aktiviteter.
+- Hälsosam: Inga problem har identifierats med principen.
+- Rekommendationer: Det finns några problem med principen som kan hindra principen från att fungera som förväntat.
+- Varningar: Det finns problem med principen som hindrar den från att identifiera riskabla aktiviteter.
 
-Om du vill ha mer information om rekommendationer eller varningar väljer du en princip **på fliken Princip** för att öppna kortet med principinformation. Mer information om rekommendationer och varningar, inklusive anvisningar om hur du ska åtgärda dessa problem, visas i avsnittet Meddelanden på informationskortet.
+För mer information om eventuella rekommendationer eller varningar, välj en princip på fliken **Princip** för att öppna kortet för med information om principen. Mer information om rekommendationerna och varningarna, inklusive vägledning om hur man åtgärdar dessa problem, kommer att visas i avsnittet Aviseringar på informationskortet.
 
-![Hälsoinformation för Insider-riskhanteringspolicy](../media/insider-risk-policy-health.png)
+![Hälsa för principer för hantering av insiderrisk](../media/insider-risk-policy-health.png)
 
-I följande tabell finns mer information om rekommendationer och varningsmeddelanden och åtgärder du kan vidta för att lösa potentiella problem.
+Använd följande tabell för att lära dig mer om rekommendationer och varningsmeddelanden och åtgärder för att lösa potentiella problem.
 
-|**Aviseringsmeddelanden**|**Principmallar**|**Orsaker/ Prova den här åtgärden för att åtgärda**|
+|**Aviseringsmeddelanden**|**Principmallar**|**Orsaker/prova denna åtgärd för att lösa**|
 |:------------------------|:-------------------|:---------------------------|
-| Principen tilldelar inte riskpoäng för aktivitet | Alla principmallar | Du kanske vill granska principens omfattning och utlösa händelsekonfiguration så att principen kan tilldela riskpoäng för aktivitet <br><br> 1. Granska de användare som är valda för principen. Om du har markerat några användare kanske du vill välja fler användare. <br> 2. Om du använder en PERSONAL-koppling kontrollerar du att HR-kopplingen skickar rätt data. <br> 3. Om du använder en DLP-princip som utlösande händelse kontrollerar du konfigurationen av DLP-principen för att säkerställa att den har konfigurerats att användas i den här principen. <br> 4. Information om principer för säkerhetsöverträdelser finns i Microsoft Defender för slutpunktens aviseringsstatus som valts i inställningar för Insider-> intelligenta identifieringar. Kontrollera att aviseringsfiltret inte är för begränsat. |
-| Principen har inte genererat några aviseringar | Alla principmallar | Du kanske vill granska din principkonfiguration så att du analyserar poäng för den aktivitet som är viktigt för dig. <br><br> 1. Kontrollera att du har valt indikatorer som du vill göra poäng för. Ju fler indikatorer som väljs ut, desto fler aktiviteter tilldelas riskpoäng. <br> 2. Granska tröskelvärdet för anpassning av principen. Om de valda tröskelvärdena inte stämmer överens med organisationens riskfaktorer kan du justera valen så att aviseringar skapas baserat på dina föredragna tröskelvärden. <br> 3. Granska de användare och grupper som valts för principen. Bekräfta att du har markerat alla tillämpliga användare och grupper. <br> 4. För principer för säkerhetsfel bekräftar du att du har markerat den aviseringsde triagestatus som du vill poänga för Microsoft Defender för slutpunktsaviseringar i Intelligenta identifieringar i inställningar.|
-| Inga användare eller grupper ingår i den här principen | Alla principmallar | Användare eller grupper tilldelas inte till principen. <br><br> Redigera principen och välj användare eller grupper för principen. |
-| Inga indikatorer har valts för den här principen | Alla principmallar | Indikatorerna har inte valts för principen <br><br> Redigera principen och välj lämpliga policyindikatorer för principen. |
-| Inga prioriterade användargrupper ingår i den här principen | - Dataläsar efter prioriterade användare <br> - Brott mot säkerhetsprinciper efter prioritetsanvändare | Prioritet användargrupper tilldelas inte till principen. <br><br> Konfigurera prioritetsgrupper i inställningar för Insider-riskhantering och tilldela prioritetsgrupper till principen. |
-| Ingen utlösande händelse har valts för den här principen | Alla principmallar | En utlösande händelse har inte konfigurerats för principen <br><br> Riskpoäng tilldelas inte till användaraktiviteter förrän du redigerar principen och väljer en utlösande händelse. |
-| HR-kopplingen är inte konfigurerad eller fungerar som förväntat | - Datastöld genom avgående användare <br> - Brott mot säkerhetsprinciper genom avgående användare <br> – Dataläsar av misslyckade användare <br> - Brott mot säkerhetsprinciper av misslygda användare | Det finns ett problem med HR-kopplingen. <br><br> 1. Om du använder en PERSONAL-koppling kontrollerar du att HR-kopplingen skickar rätt data <br><br> ELLER <br><br> 2. Välj Azure AD-kontot som tog bort händelsen som utlöstes. |
-| Inga enheter är onboarded | - Datastöld genom avgående användare <br> - Allmänna dataläckor <br> – Dataläsar av misslyckade användare <br> - Dataläckor efter prioriterade användare | Enhetsindikatorer markeras men det finns inga enheter som förs in i Microsoft 365 <br><br> Kontrollera om enheterna är onboarded och uppfyller kraven. |
-| HR-anslutningen inte har laddat upp data nyligen | - Datastöld genom avgående användare <br> - Brott mot säkerhetsprinciper genom avgående användare <br> – Dataläsar av misslyckade användare <br> - Brott mot säkerhetsprinciper av misslygda användare | HR-kopplingen har inte importerat data på mer än 7 dagar. <br><br> Kontrollera att HR-kopplingen är korrekt konfigurerad och skicka data. |
-| Vi kan inte kontrollera status för din HR-anslutare just nu. Kontrollera igen senare | - Datastöld genom avgående användare <br> - Brott mot säkerhetsprinciper genom avgående användare <br> – Dataläsar av misslyckade användare <br> - Brott mot säkerhetsprinciper av misslygda användare | Insider-riskhanteringslösningen kan inte kontrollera status för din HR-kontakt. <br><br> Kontrollera att HR-kopplingen är korrekt konfigurerad och skicka data, eller gå tillbaka och kontrollera policystatus.  |
-| DLP-princip har inte valts som utlösande händelse | - Allmänna dataläckor <br> - Dataläsar efter prioriterade användare | En DLP-princip har inte valts som en utlösande händelse eller så har den valda DLP-principen tagits bort. <br><br> Redigera principen och välj antingen en aktiv DLP-princip eller "Användaren utför en exfiltreringsaktivitet" som utlösande händelse i principkonfigurationen. |
-| DLP-principen som används i den här principen är inaktiverad | - Allmänna dataläckor <br> - Dataläsar efter prioriterade användare | DLP-principen som används i den här principen är inaktiverad. <br><br> 1. Aktivera DLP-principen som tilldelats den här principen. <br><br> ELLER <br><br> 2. Redigera den här principen och välj antingen en ny DLP-princip eller "Användaren utför en exfiltreringsaktivitet" som utlösande händelse i principkonfigurationen. |
-| DLP-principen uppfyller inte kraven | - Allmänna dataläckor <br> - Dataläsar efter prioriterade användare | DLP-principer som används som utlösande händelser måste konfigureras för att generera varningar med hög allvarlighetsgrad. <br><br>  1. Redigera DLP-principen och tilldela tillämpliga aviseringar med *hög allvarlighetsgrad.* <br><br> ELLER <br><br> 2. Redigera den här principen och välj Användare utför *en exfiltreringsaktivitet* som utlösande händelse. |
-| Din organisation har ingen Microsoft Defender för Endpoint-prenumeration | - Allmänna brott mot säkerhetsprinciper <br> - Brott mot säkerhetsprinciper av avgående användare <br> - Brott mot säkerhetsprinciper av misslygda användare <br> - Brott mot säkerhetsprinciper efter prioritetsanvändare | En aktiv Microsoft Defender för Endpoint-prenumeration upptäcktes inte för din organisation. <br><br> Förrän en Microsoft Defender för Endpoint-prenumeration läggs till, tilldelar dessa principer inte riskpoäng för användaraktivitet. |
-| Microsoft Endpoint för slutpunktsaviseringar delas inte med efterlevnadscentret | - Allmänna brott mot säkerhetsprinciper <br> - Brott mot säkerhetsprinciper av avgående användare <br> - Brott mot säkerhetsprinciper av misslygda användare <br> - Brott mot säkerhetsprinciper efter prioritetsanvändare | Microsoft Defender för slutpunktsaviseringar delas inte med efterlevnadscentret. <br><br> Konfigurera delning av Microsoft Defender för slutpunktsaviseringar. |
-| Du närmar dig den högsta gränsen för vilka användare som aktivt deltar i den här principmallen. | Alla principmallar | Varje principmall har maximalt antal användare inom omfattningen. Se avsnittsinformationen om mallgräns. <br><br> Granska användarna på fliken Användare och ta bort alla användare som inte behöver poäng längre. |
+| Principen tilldelar inte riskpoäng till aktivitet | Alla principmallar | Du kanske vill granska omfånget för din princip och konfiguration för utlösande händelse så att principen kan tilldela aktivitet till riskpoäng <br><br> 1. Granska de användare som har valts för principen. Om du har valt få användare vill du kanske välja fler användare. <br> 2. Om du använder en HR-anslutning, kontrollera att din HR-anslutning skickar rätt data. <br> 3. Om du använder en DLP-princip som din utlösande händelse, kontrollera konfigurationen av din DLP-princip för att säkerställa att den är konfigurerad att användas i denna princip. <br> 4. För principer för säkerhetsöverträdelse, granska Microsoft Defender för Endpoint status för varningstriage som valts i Inställningar för insiderrisk > Intelligent identifiering. Bekräfta att varningsfiltret inte är för smalt. |
+| Principen har inte genererat några varningar | Alla principmallar | Du kanske vill granska konfigurationen av din princip så att du analyserar poängsättningen av den aktivitet du bryr dig om. <br><br> 1. Bekräfta att du har valt indikatorer som du vill göra poängsätta. Ju fler indikatorer som väljs, desto fler aktiviteter tilldelas riskpoäng. <br> 2. Granska tröskelanpassning för princip. Om de valda trösklarna inte överensstämmer med organisationens risktolerans, justerar du valen så att varningar skapas baserat på dina önskade trösklar. <br> 3. Granska de användare och grupper som har valts för principen. Bekräfta att du har valt alla tillämpliga användare och grupper. <br> 4. För principer för säkerhetsöverträdelser, bekräfta att du har valt den status för varningstriage som du vill poängsätt för Microsoft Defender för Endpoint-varningar i Intelligent identifiering i inställningar.|
+| Inga användare eller grupper ingår i denna princip | Alla principmallar | Användare eller grupper är inte tilldelade till principen. <br><br> Redigera din princip och välj användare eller grupper för principen. |
+| Inga indikatorer har valts för den här principen | Alla principmallar | Inga indikatorer har valts för den här principen <br><br> Redigera din princip och välj lämpliga principindikatorer för principen. |
+| Inga prioriterade användargrupper ingår i den här principen | - Dataläckor av prioritetsanvändare <br> - Överträdelser av säkerhetsprincip av prioritetsanvändare | Prioriterad användargrupper är inte tilldelade till principen. <br><br> Konfigurera prioriterade användargrupper i Inställningar för hantering av insiderrisk och tilldela prioriterade användargrupper till principen. |
+| Ingen utlösande händelse har valts för den här principen | Alla principmallar | Ingen utlösande händelse har konfigurerats för principen <br><br> Riskpoäng tilldelas inte användaraktiviteter förrän du redigerar principen och väljer en utlösande händelse. |
+| HR-anslutning har inte konfigurerats eller fungerar inte som förväntat. | - Datastöld från slutande användare <br> - Överträdelser av säkerhetsprincip av användare som slutar <br> - Dataläckage av missnöjda användare <br> - Överträdelse av säkerhetsprincip av en missnöjd användare | Det finns ett problem med HR-anslutningen. <br><br> 1. Om du använder en HR-anslutning, kontrollera att din HR-anslutning skickar rätt data <br><br> ELLER <br><br> 2. Välj det Azure AD-konto som tog bort utlösande händelse. |
+| Inga enheter har registrerats | - Datastöld från slutande användare <br> - Allmänna dataläckor <br> - Dataläckage av missnöjda användare <br> - Dataläckor av prioritetsanvändare | Enhetsindikatorer är valda men det finns inga enheter registrerade på Microsoft 365 <br><br> Kontrollera om enheter är registrerade och att de uppfyller kraven.  |
+| HR-anslutning har inte laddat upp data nyligen | - Datastöld från slutande användare <br> - Överträdelser av säkerhetsprincip av användare som slutar <br> - Dataläckage av missnöjda användare <br> - Överträdelse av säkerhetsprincip av en missnöjd användare | HR-koppling har inte importerat data på mer än sju dagar. <br><br> Kontrollera att din HR-anslutning är korrekt konfigurerad och skickar data. |
+| Vi kan inte kontrollera statusen för din HR-anslutning just nu. Kontrollera igen senare | - Datastöld från slutande användare <br> - Överträdelser av säkerhetsprincip av användare som slutar <br> - Dataläckage av missnöjda användare <br> - Överträdelse av säkerhetsprincip av en missnöjd användare | Lösningen för hantering av insiderrisk kan inte kontrollera status för din HR-anslutning. <br><br> Kontrollera att din HR-anslutning är korrekt konfigurerad och skickar data, eller kom tillbaka och kontrollera statusen för principen.  |
+| DLP-principen är inte markerad som den utlösande händelsen | - Allmänna dataläckor <br> - Dataläckor av prioritetsanvändare | En DLP-princip har inte valts som en utlösande händelse eller så har den valda DLP-principen tagits bort. <br><br> Redigera principen och välj antingen en aktiv DLP-princip eller "Användaren utför en exfiltreringsaktivitet" som utlösande händelse i konfigurationen av principen. |
+| DLP-principen som används i den här principen är inaktiverad | - Allmänna dataläckor <br> - Dataläckor av prioritetsanvändare | DLP-principen som används i den här principen är inaktiverad. <br><br> 1. Aktivera DLP-principen som är tilldelad till denna princip. <br><br> ELLER <br><br> 2. Redigera den här principen och välj antingen en ny DLP-princip eller "Användaren utför en exfiltreringsaktivitet" som utlösande händelse i konfigurationen av principen. |
+| DLP-principen uppfyller inte kraven | - Allmänna dataläckor <br> - Dataläckor av prioritetsanvändare | DLP-principer som används som utlösande händelser måste konfigureras för att generera varningar med hög allvarlighetsgrad. <br><br>  1. Redigera din DLP-princip för att tilldela tillämpliga varningar som *Hög allvarlighetsgrad*. <br><br> ELLER <br><br> 2. Redigera den här principen och välj *Användaren utförde en exfiltreringsaktivitet* som den utlösande händelsen. |
+| Din organisation har ingen prenumeration på Microsoft Defender för Endpoint | - Överträdelser av allmän säkerhetsprincip <br> - Överträdelser av säkerhetsprincip av användare som slutar <br> - Överträdelse av säkerhetsprincip av en missnöjd användare <br> - Överträdelser av säkerhetsprincip av prioritetsanvändare | Din organisation har ingen aktiv prenumeration på Microsoft Defender för Endpoint. <br><br> Tills en prenumeration på Microsoft Defender för Endpoint har lagts till tilldelar inte principen riskpoäng till användaraktivitet. |
+| Microsoft Defender för Endpoint varningar delas inte med efterlevnadscentern | - Överträdelser av allmän säkerhetsprincip <br> - Överträdelser av säkerhetsprincip av användare som slutar <br> - Överträdelse av säkerhetsprincip av en missnöjd användare <br> - Överträdelser av säkerhetsprincip av prioritetsanvändare | Microsoft Defender för Endpoint varningar delas inte med efterlevnadscentern. <br><br> Konfigurera delning av Microsoft Defender för Endpoint-varningar. |
+| Du närmar dig den maximala gränsen för användare som poängsätts aktivt för denna principmall. | Alla principmallar | Varje principmall har ett maximalt antal användare inom omfattningen. Se avsnittet med information om mallgräns. <br><br> Granska användarna på fliken Användare och ta bort alla användare som inte längre behöver poängsättas. |
 
-## <a name="policy-template-limits"></a>Begränsningar för principmallar
+## <a name="policy-template-limits"></a>Mallgräns för principer
 
-Mallar för Insider-riskhanteringspolicyer använder begränsningar för att hantera volymen och processens omfattning för användarriskaktiviteter och hur den här processen integreras med stöd för Microsoft 365 tjänster. Varje principmall har maximalt antal användare som aktivt kan tilldelas riskpoäng för principen som den kan stödja och effektivt bearbeta och rapportera riskaktiviteter. Användare inom omfattningen är användare som utlöser händelser för principen.
+Mallar för principer för hantering av insiderrisk använder gränser för att hantera volymen och hastigheten för bearbetning av riskaktiviteter för användare inom omfattningen och hur denna process är integrerad med stöd för Microsoft 365-tjänster. Varje principmall har ett maximalt antal användare som aktivt kan tilldelas riskpoäng för principen som den kan stödja och effektivt behandla och rapportera riskaktiviteter. Användare inom omfånget är användare med utlösande händelser för principen.
 
-Gränsen för varje princip beräknas utifrån det totala antalet unika användare som får riskpoäng per typ av principmall. Om antalet användare för en principmalltyp närmar sig eller överskrider användargränsen minskas principprestandan. Om du vill visa det aktuella antalet användare för en princip går du till fliken Princip och kolumnen Användare i omfattning. Du kan ha upp till fem principer för alla principmallar. De här maxgränserna gäller för användare i alla principer som använder en viss principmall.
+Gränsen för varje princip beräknas baserat på det totala antalet unika användare som får riskpoäng per typ av principmall. Om antalet användare för en typ av principmall är nära eller överskrider användargränsen kommer principens prestanda att minska. Om du vill visa det aktuella antalet användare för en princip navigerar du till fliken Princip och kolumnen Användare inom omfånget. Du kan ha upp till fem principer för vilken principmall som helst. Dessa maximala gränser gäller för användare i alla principer med en given principmall.
 
-Använd följande tabell för att avgöra det maximala antal användare inom omfattningen som stöds för varje principmall:
+Använd följande tabell för att bestämma det maximala antalet användare som omfattas av varje principmall:
 
-|**Principmall**|**Maximalt antal användare inom omfattningen**|
+|**Principmall**|**Aktuellt maximalt antal användare inom omfång**|
 |:------------------|:--------------------------------|
-| Allmän dataläcka | 15,000 |
-| Dataläckor av missnöjda användare | 7,500 |
-| Dataläckor efter prioritetsanvändare | 1,000 |
-| Datastöld genom avgående användare | 20,000 |
-| Allmänna brott mot säkerhetsprinciper | 1,000 |
-| Brott mot säkerhetsprincip efter prioritetsanvändare | 1,000 |
-| Brott mot säkerhetsprinciper av avgående användare | 15,000 |
-| Brott mot säkerhetsprinciper av misslygda användare | 7,500 |
+| Allmän dataläcka | 15 000 |
+| Dataläcka av missnöjda användare | 7 500 |
+| Dataläcka av prioritetsanvändare | 1 000 |
+| Datastöld från slutande användare | 20 000 |
+| Överträdelser av allmän säkerhetsprincip | 1 000 |
+| Överträdelse av säkerhetsprincip av prioritetsanvändare | 1 000 |
+| Överträdelser av säkerhetsprincip av användare som slutar | 15 000 |
+| Överträdelse av säkerhetsprincip av en missnöjd användare | 7 500 |
 
 ## <a name="create-a-new-policy"></a>Skapa en ny princip
 
-Om du vill skapa en ny princip för insider-riskhantering ska du använda principguiden i Insider-riskhanteringslösningen i Microsoft 365 efterlevnadscenter. 
+För att skapa en ny princip för hantering av insiderrisk använder du principguiden lösningen **Hantering av insiderrisk** i Microsoft 365 Efterlevnadscenter.
 
-Så här skapar du en ny princip:
+Slutför följande steg för att skapa en ny princip:
 
-1. I Microsoft 365 [säkerhets- och efterlevnadscenter](https://compliance.microsoft.com)går **du till Insider-riskhantering** och väljer **fliken** Principer.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) går du till **Hantering av insiderrisk** och väljer fliken **Princip**.
 2. Välj **Skapa princip** för att öppna principguiden.
-3. Välj en **principkategori** på sidan Principmall och välj sedan mallen för den nya principen. Mallarna består av villkor och indikatorer som definierar de riskaktiviteter du vill identifiera och undersöka. Granska mallförutsättningarna, utlösa händelser och identifierade aktiviteter för att bekräfta att den här principmallen passar dina behov.
+3. På sidan **Principmall** väljer du en principkategori och väljer sedan mallen för den nya principen. De här mallarna består av villkor och indikatorer som definierar den riskaktivitet du vill identifiera och undersöka. Granska förutsättningarna, utlösande händelser och upptäckta aktiviteter flr mallen för att bekräfta att denna principmall passar dina behov.
 
     >[!IMPORTANT]
-    >Vissa principmallar har krav som måste konfigureras för att principen ska kunna generera relevanta aviseringar. Om du inte har konfigurerat tillämpliga principkrav, se **steg 4** ovan.
+    >Vissa principmallar har förutsättningar som måste konfigureras för att principen ska generera relevanta varningar. Om du inte har konfigurerat tillämpliga principförutsättningar, se **Steg 4** ovan.
 
-4. Välj **Nästa för** att fortsätta.
-5. Fyll **i följande fält** på sidan Namn och beskrivning:
-    - **Namn (obligatoriskt)**: Ange ett eget namn för principen. Det här namnet kan inte ändras efter att principen har skapats.
-    - **Beskrivning (valfritt)**: Ange en beskrivning för principen.
+4. Gå vidare genom att klicka på **Nästa.**
+5. På sidan **Namn och beskrivning** färdigställer du följande fält:
+    - **Namn (obligatoriskt)**: Ange ett eget namn på principen. Namnet kan inte ändras när principen har skapats.
+    - **Beskrivning (valfritt)**: Ange en valfri beskrivning av principen.
 
-6. Välj **Nästa för** att fortsätta.
-7. På sidan **Användare** och  grupper väljer du  Inkludera alla användare och grupper eller Inkludera specifika användare och grupper för att definiera vilka användare eller grupper som ska ingå i principen, eller om du har valt en användarbaserad mall för prioritet. välj **Lägg till eller redigera användargrupper med prioritet.** Om **du markerar Inkludera alla användare och** grupper söker du efter utlösande händelser för alla användare och grupper i organisationen för att börja tilldela riskpoäng för principen. Om **du markerar Inkludera specifika användare och** grupper kan du definiera vilka användare och grupper som ska tilldelas till principen.
-8. Välj **Nästa för** att fortsätta.
-9. På sidan **Innehåll som ska prioriteras** kan du tilldela (om det behövs) de källor som ska prioriteras, vilket ökar risken för att generera en hög allvarlighetsvarning för dessa källor. Välj något av följande alternativ:
+6. Gå vidare genom att klicka på **Nästa.**
+7. På sidan **Användare och grupper** väljer du **Inkludera alla användare och grupper** eller **Inkludera specifika användare och grupper** för att definiera vilka användare eller grupper som är inkluderade i principen, eller välj **Lägg till eller redigera prioriterade användargrupper** om du har valt en mall som är baserad på prioriterade användare. Genom att välja **Inkludera alla användare och grupper** kommer den att leta efter utlösande händelser för alla användare och grupper i din organisation för att börja tilldela riskpoäng för principen. Genom att välja **Inkludera specifika användare och grupper** kan du definiera vilka användare och grupper som ska tilldelas till principen.
+8. Gå vidare genom att klicka på **Nästa.**
+9. På sidan **Innehåll som ska prioriteras** kan du tilldela (vid behov) källorna som ska prioriteras, vilket ökar möjligheten till att generera en varning om hög allvarlighet för dessa källor. Välj ett av följande alternativ:
 
-    - **Jag vill ange SharePoint webbplatser, känslighetsetiketter och/eller typer av känslig information som prioritetsinnehåll.** Om du väljer det här alternativet kan informationssidor i guiden konfigurera dessa kanaler.
-    - **Jag vill inte ange prioritetsinnehåll just nu (du kan göra** detta när principen har skapats). Om du väljer det här alternativet hoppar du över kanalinformationssidorna i guiden.
+    - **Jag vill ange SharePoint-webbplatser, känslighetsetiketter och/eller känslig information som prioriterade innehåll**. Om du väljer det här alternativet aktiveras informationssidor i guiden för att konfigurera dessa kanaler.
+    - **Jag vill inte ange prioriterat innehåll just nu (du kan göra det när principen har skapats)**. Om du väljer detta alternativ hoppar du över sidorna med kanalinformation i guiden.
 
-10. Välj **Nästa för** att fortsätta.
+10. Gå vidare genom att klicka på **Nästa.**
 
-11. Om du valde Jag vill ange **SharePoint-webbplatser,** känslighetsetiketter och/eller typer av känslig information som prioritetsinnehåll i föregående steg visas informationssidorna för *SharePoint-webbplatser,* typer av känslig information och känslighetsetiketter.  Använd dessa informationssidor för att SharePoint, typer av känslig information och känslighetsetiketter att prioritera i principen.
+11. Om du i föregående steg valde **Jag vill ange SharePoint-webbplatser, känslighetsetiketter och/eller typer av känslig information som prioriterat innehåll**, kommer du att se informationssidorna för *SharePoint-webbplatser*, *Typer av känslig information* och *Känslighetsetiketter*. Använd dessa informationssidor för att definiera SharePoint, typer av känslig information och känslighetsetiketter som ska prioriteras i principen.
 
-    - **SharePoint webbplatser:** Välj **Lägg SharePoint webbplats** och välj de SharePoint som du har tillgång till och vill prioritera. Till exempel *"group1@contoso.sharepoint.com/sites/group1".*
-    - **Typ av känslig** information: **Välj Lägg till typ av känslig** information och välj de känslighetstyper du vill prioritera. Till exempel *"U.S. Bank Account Number"* *och "Credit Card Number"*.
-    - **Känslighetsetiketter:** **Välj Lägg till känslighetsetikett** och välj de etiketter du vill prioritera. Till exempel *"Konfidentiellt"* och *"Hemligt"*.
+    - **SharePoint-webbplatser**: Välj **Lägg till SharePoint-webbplats** och välj SharePoint-webbplatserna som du har tillgång till och som du vill prioritera. Till exempel *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Typ av känslig information**: Välj **Lägg till typ av känslig information** och välj känslighetstyperna som du vill prioritera. Till exempel *“Amerikanskt bankkontonummer”* och *“Kreditkortsnummer”*
+    - **Känslighetsetiketter**: Välj **Lägg till känslighetsetikett** och välj etiketterna som du vill prioritera. Till exempel *“Konfidentiell”* och *“Hemlighet”*.
 
-12. Välj **Nästa för** att fortsätta.
-13. På sidan **Indikatorer och utlösa händelser** visas [](insider-risk-management-settings.md#indicators) de indikatorer som du har definierat som tillgängliga på sidan Indikatorer för   >  **Insider-risker.** Om du valde en *mall* för Dataläckor i början av guiden måste du välja en DLP-princip i listrutan **för DLP-principen** för att aktivera utlösande indikatorer för principen eller välja den inbyggda utlösande händelsen.
+12. Gå vidare genom att klicka på **Nästa.**
+13. På sidan **Indikatorer och utlösande händelser** kommer du att se [indikatorerna](insider-risk-management-settings.md#indicators) som du har definierat som tillgängliga på sidan **Inställningar för insiderrisk** > **Indikatorer**. Om du valde en mall för *Dataläckor* i början av guiden måste du välja en DLP-princip i **DLP-principens** nedrullningsbara lista för att aktivera utlösande indikatorer för principen eller välja den inbyggda utlösande händelsen.
 
     >[!IMPORTANT]
-    >Om indikatorerna på den här sidan inte kan markeras måste du markera de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer i** guiden eller välja indikatorer på sidan För **Insider-Inställningar**  >    >  **policyindikatorer.**
+    >Om indikatorer på den här sidan inte kan väljas måste du välja de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer** i guiden eller välja indikatorerna på sidan **Hantering av insiderrisk** > **Inställningar** > **Principindikatorer**.
 
-    Markera de indikatorer som du vill tillämpa på principen. Om du inte vill använda standardinställningarna för tröskelvärde för principen för dessa indikatorer inaktiverar du de standardtröskelvärden som rekommenderas av **Microsoft** och anger tröskelvärdena för varje vald indikator.
+    Välj de indikatorer som du vill tillämpa på principen. Om du föredrar att inte använda principens standardtrösklar för dessa indikatorer, inaktivera **Använd standardtrösklar som rekommenderas av Microsoft** och ange tröskelvärdena för varje vald indikator.
 
-    - Om du har valt minst en *Office* *enhetsindikator* väljer du **Risk score-poäng efter** behov. Riskpoäng gäller endast för valda indikatorer.
-    - Om du har valt en principmall *för Datastöld* eller *Dataläckor* väljer du en eller flera sekvensidentifieringsmetoder och en metod för kumulativ  **exfiltrationsidentifiering** som ska tillämpas på principen.
+    - Om du har valt minst en *Office-* eller *Enhetsindikator*, väljer du **Förstärkare av riskpoäng** efter behov. Förstärkare av riskpoäng kan endast användas på valda indikatorer.
+    - Om du har valt en av principmallarna *Datastöld* eller *Dataläckor*, väljer du en eller flera metoder för **Sekvensidentifiering** och en metod för **Identifiering av kumulativ dataexfiltrering** för principen.
 
-14. Välj **Nästa för** att fortsätta.
-15. På sidan **Indikatortröskelvärden** väljer du alternativet om du vill använda standardindikeringströskeln eller ange anpassade tröskelvärden för enskilda indikatorer. För varje indikator väljer du lämplig nivå för att generera önskad nivå av aktivitetsaviseringar.
-16. Välj **Nästa för** att fortsätta.
-17. På sidan **Granska** granskar du de inställningar som du har valt för principen och eventuella förslag eller varningar för dina val. Välj **Redigera** om du vill ändra något av principvärdena eller **välj Skicka** för att skapa och aktivera principen.
+14. Gå vidare genom att klicka på **Nästa.**
+15. På sidan **Tröskelvärden för indikatorn** väljer du alternativet att använda standardindikatortrösklar eller att specificera anpassade trösklar för enskilda indikatorer. Välj lämplig nivå för varje indikator för att generera önskad nivå av aktivitetsvarningar.
+16. Gå vidare genom att klicka på **Nästa.**
+17. På sidan **Granskning** granskar du inställningarna du har valt för principen och eventuella förslag eller varningar för dina val. Välj **Redigera** för att ändra något av principvärdena eller välj **Skicka** för att skapa och aktivera policyn.
 
 ## <a name="update-a-policy"></a>Uppdatera en princip
 
-Om du vill uppdatera en befintlig insider-riskhanteringspolicy använder du principguiden i Insider-riskhanteringslösningen i Microsoft 365 kompatibilitetscenter. 
+För att uppdatera en befintlig princip för hantering av insiderrisk använder du principguiden lösningen **Hantering av insiderrisk** i Microsoft 365 Efterlevnadscenter.
 
-Så här hanterar du en befintlig princip:
+Slutför följande steg för att hantera en befintlig princip:
 
-1. I Microsoft 365 [säkerhets- och efterlevnadscenter](https://compliance.microsoft.com)går **du till Insider-riskhantering** och väljer **fliken** Principer.
-2. Välj den princip du vill hantera på instrumentpanelen för principen.
-3. Välj Redigera princip på sidan **med principinformation**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) går du till **Hantering av insiderrisk** och väljer fliken **Princip**.
+2. Välj principen du vill hantera på principens instrumentpanel.
+3. Välj **Redigera princip** på sidan med principinformation
 4. Du kan inte redigera följande i principguiden:
-    - **Principmall:** Mallen som används för att definiera de typer av riskindikatorer som övervakas av principen.
-    - **Namn**: Principens eget namn
-5. Uppdatera **beskrivningen för** principen i fältet Beskrivning på sidan Namn **och** beskrivning.
-6. Välj **Nästa för** att fortsätta.
-7. På sidan **Användare** och  grupper väljer du  Inkludera alla användare och grupper eller Inkludera specifika användare och grupper för att definiera vilka användare eller grupper som ska ingå i principen, eller om du har valt en användarbaserad mall för prioritet. välj **Lägg till eller redigera användargrupper med prioritet.** Om **du markerar Inkludera alla användare och** grupper söker du efter utlösande händelser för alla användare och grupper i organisationen för att börja tilldela riskpoäng för principen. Om **du markerar Inkludera specifika användare och** grupper kan du definiera vilka användare och grupper som ska tilldelas till principen.
-8. Välj **Nästa för** att fortsätta.
-9. På sidan **Innehåll som ska prioriteras** kan du tilldela (om det behövs) de källor som ska prioriteras, vilket ökar risken för att generera en hög allvarlighetsvarning för dessa källor. Välj något av följande alternativ:
+    - **Principmall**: Mallen som används för att definiera de typer av riskindikatorer som övervakas av principen.
+    - **Namn**: Principens visningsnamn
+5. På sidan **Namn och beskrivning** uppdaterar du beskrivningen för principen i fältet **Beskrivning**.
+6. Gå vidare genom att klicka på **Nästa.**
+7. På sidan **Användare och grupper** väljer du **Inkludera alla användare och grupper** eller **Inkludera specifika användare och grupper** för att definiera vilka användare eller grupper som är inkluderade i principen, eller välj **Lägg till eller redigera prioriterade användargrupper** om du har valt en mall som är baserad på prioriterade användare. Genom att välja **Inkludera alla användare och grupper** kommer den att leta efter utlösande händelser för alla användare och grupper i din organisation för att börja tilldela riskpoäng för principen. Genom att välja **Inkludera specifika användare och grupper** kan du definiera vilka användare och grupper som ska tilldelas till principen.
+8. Gå vidare genom att klicka på **Nästa.**
+9. På sidan **Innehåll som ska prioriteras** kan du tilldela (vid behov) källorna som ska prioriteras, vilket ökar möjligheten till att generera en varning om hög allvarlighet för dessa källor. Välj ett av följande alternativ:
 
-    - **Jag vill ange SharePoint webbplatser, känslighetsetiketter och/eller typer av känslig information som prioritetsinnehåll.** Om du väljer det här alternativet kan informationssidor i guiden konfigurera dessa kanaler.
-    - **Jag vill inte ange prioritetsinnehåll just nu (du kan göra** detta när principen har skapats). Om du väljer det här alternativet hoppar du över kanalinformationssidorna i guiden.
+    - **Jag vill ange SharePoint-webbplatser, känslighetsetiketter och/eller känslig information som prioriterade innehåll**. Om du väljer det här alternativet aktiveras informationssidor i guiden för att konfigurera dessa kanaler.
+    - **Jag vill inte ange prioriterat innehåll just nu (du kan göra det när principen har skapats)**. Om du väljer detta alternativ hoppar du över sidorna med kanalinformation i guiden.
 
-10. Välj **Nästa för** att fortsätta.
+10. Gå vidare genom att klicka på **Nästa.**
 
-11. Om du valde Jag vill ange **SharePoint-webbplatser,** känslighetsetiketter och/eller typer av känslig information som prioritetsinnehåll i föregående steg visas informationssidorna för *SharePoint-webbplatser,* typer av känslig information och känslighetsetiketter.  Använd dessa informationssidor för att SharePoint, typer av känslig information och känslighetsetiketter att prioritera i principen.
+11. Om du i föregående steg valde **Jag vill ange SharePoint-webbplatser, känslighetsetiketter och/eller typer av känslig information som prioriterat innehåll**, kommer du att se informationssidorna för *SharePoint-webbplatser*, *Typer av känslig information* och *Känslighetsetiketter*. Använd dessa informationssidor för att definiera SharePoint, typer av känslig information och känslighetsetiketter som ska prioriteras i principen.
 
-    - **SharePoint webbplatser:** Välj **Lägg SharePoint webbplats** och välj de SharePoint som du har tillgång till och vill prioritera. Till exempel *"group1@contoso.sharepoint.com/sites/group1".*
-    - **Typ av känslig** information: **Välj Lägg till typ av känslig** information och välj de känslighetstyper du vill prioritera. Till exempel *"U.S. Bank Account Number"* *och "Credit Card Number"*.
-    - **Känslighetsetiketter:** **Välj Lägg till känslighetsetikett** och välj de etiketter du vill prioritera. Till exempel *"Konfidentiellt"* och *"Hemligt"*.
+    - **SharePoint-webbplatser**: Välj **Lägg till SharePoint-webbplats** och välj SharePoint-webbplatserna som du har tillgång till och som du vill prioritera. Till exempel *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Typ av känslig information**: Välj **Lägg till typ av känslig information** och välj känslighetstyperna som du vill prioritera. Till exempel *“Amerikanskt bankkontonummer”* och *“Kreditkortsnummer”*
+    - **Känslighetsetiketter**: Välj **Lägg till känslighetsetikett** och välj etiketterna som du vill prioritera. Till exempel *“Konfidentiell”* och *“Hemlighet”*.
 
-12. Välj **Nästa för** att fortsätta.
-13. På sidan **Indikatorer och utlösa händelser** visas [](insider-risk-management-settings.md#indicators) de indikatorer som du har definierat som tillgängliga på sidan Indikatorer för   >  **Insider-risker.** Om du valde en *mall* för Dataläckor i början av guiden måste du välja en DLP-princip i listrutan **för DLP-principen** för att aktivera utlösande indikatorer för principen eller välja den inbyggda utlösande händelsen.
+12. Gå vidare genom att klicka på **Nästa.**
+13. På sidan **Indikatorer och utlösande händelser** kommer du att se [indikatorerna](insider-risk-management-settings.md#indicators) som du har definierat som tillgängliga på sidan **Inställningar för insiderrisk** > **Indikatorer**. Om du valde en mall för *Dataläckor* i början av guiden måste du välja en DLP-princip i **DLP-principens** nedrullningsbara lista för att aktivera utlösande indikatorer för principen eller välja den inbyggda utlösande händelsen.
 
     >[!IMPORTANT]
-    >Om indikatorerna på den här sidan inte kan markeras måste du markera de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer i** guiden eller välja indikatorer på sidan För **Insider-Inställningar**  >    >  **policyindikatorer.**
+    >Om indikatorer på den här sidan inte kan väljas måste du välja de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer** i guiden eller välja indikatorerna på sidan **Hantering av insiderrisk** > **Inställningar** > **Principindikatorer**.
 
-    Markera de indikatorer som du vill tillämpa på principen. Om du inte vill använda standardinställningarna för tröskelvärde för principen för dessa indikatorer inaktiverar du de standardtröskelvärden som rekommenderas av **Microsoft** och anger tröskelvärdena för varje vald indikator.
+    Välj de indikatorer som du vill tillämpa på principen. Om du föredrar att inte använda principens standardtrösklar för dessa indikatorer, inaktivera **Använd standardtrösklar som rekommenderas av Microsoft** och ange tröskelvärdena för varje vald indikator.
 
-    - Om du har valt minst en *Office* *enhetsindikator* väljer du **Risk score-poäng efter** behov. Riskpoäng gäller endast för valda indikatorer.
-    - Om du har valt en principmall *för Datastöld* eller *Dataläckor* väljer du en eller flera sekvensidentifieringsmetoder och en metod för kumulativ  **exfiltrationsidentifiering** som ska tillämpas på principen.
+    - Om du har valt minst en *Office-* eller *Enhetsindikator*, väljer du **Förstärkare av riskpoäng** efter behov. Förstärkare av riskpoäng kan endast användas på valda indikatorer.
+    - Om du har valt en av principmallarna *Datastöld* eller *Dataläckor*, väljer du en eller flera metoder för **Sekvensidentifiering** och en metod för **Identifiering av kumulativ dataexfiltrering** för principen.
 
-14. Välj **Nästa för** att fortsätta.
-15. På sidan **Indikatortröskelvärden** väljer du alternativet om du vill använda standardindikeringströskeln eller ange anpassade tröskelvärden för enskilda indikatorer. För varje indikator väljer du lämplig nivå för att generera önskad nivå av aktivitetsaviseringar.
-16. Välj **Nästa för** att fortsätta.
-17. På sidan **Granska** granskar du de inställningar som du har valt för principen och eventuella förslag eller varningar för dina val. Välj **Redigera** om du vill ändra något av principvärdena eller **välj Skicka** för att skapa och aktivera principen.
+14. Gå vidare genom att klicka på **Nästa.**
+15. På sidan **Tröskelvärden för indikatorn** väljer du alternativet att använda standardindikatortrösklar eller att specificera anpassade trösklar för enskilda indikatorer. Välj lämplig nivå för varje indikator för att generera önskad nivå av aktivitetsvarningar.
+16. Gå vidare genom att klicka på **Nästa.**
+17. På sidan **Granskning** granskar du inställningarna du har valt för principen och eventuella förslag eller varningar för dina val. Välj **Redigera** för att ändra något av principvärdena eller välj **Skicka** för att skapa och aktivera policyn.
 
 ## <a name="copy-a-policy"></a>Kopiera en princip
 
-Du kan behöva skapa en ny princip som liknar en befintlig princip men bara behöver några få konfigurationsändringar. I stället för att skapa en ny princip från grunden kan du kopiera en befintlig princip och sedan ändra de områden som måste uppdateras i den nya principen.
+Du kan behöva skapa en ny princip som liknar en befintlig princip men som bara behöver några konfigurationsändringar. Istället för att skapa en ny princip från grunden kan du kopiera en befintlig princip och sedan ändra de områden som behöver uppdateras i den nya principen.
 
-Så här kopierar du en befintlig princip:
+Slutför följande steg för att kopiera en befintlig princip:
 
-1. I Microsoft 365 säkerhets- och efterlevnadscenter går du till Insider-riskhantering och väljer fliken Principer.
-2. Välj den princip du vill kopiera på instrumentpanelen för principen.
-3. På sidan med principinformation väljer du Kopiera.
-4. Namnge den nya principen i principguiden och uppdatera principkonfigurationen efter behov.
+1. I Microsoft 365 Efterlevnadscenter går du till Hantering av insiderrisk och väljer fliken Princip.
+2. Välj principen du vill kopiera på principens instrumentpanel.
+3. Välj Kopiera på sidan med principinformation.
+4. I principguiden, namnger du den nya principen och uppdaterar principkonfigurationen efter behov.
 
-## <a name="immediately-start-scoring-user-activity"></a>Starta direkt poänganvändaraktivitet
+## <a name="immediately-start-scoring-user-activity"></a>Börja omedelbart att poängsätta användaraktivitet
 
-Det kan finnas scenarier där du omedelbart måste börja tilldela riskpoäng till användare med insiderriskprinciper utanför den Insider-riskhantering som utlöser arbetsflödet för händelser. Använd **Starta** poängaktivitet för  användare på fliken Principer om du manuellt vill lägga till en användare (eller användare) i en eller flera insider-riskprinciper under en viss tid, för att direkt börja tilldela riskpoäng för deras aktivitet och för att kringgå kravet för en användare att ha en utlösande indikator (t.ex. en matchning för en DLP-princip). Du kan också lägga till en orsak till att användaren läggs till i principen, som visas på användarnas aktivitetstidslinje. Användare som läggs till manuellt i principer visas i **instrumentpanelen Användare** och aviseringar skapas om aktiviteten uppfyller tröskelvärdena för principavisering.
+Det kan finnas några scenarier där du måste börja tilldela riskpoäng direkt till användare med principer för insiderrisk utanför det utlösande händelsearbetsflödet för insiderriskhantering.  Använd **Starta poängsättningsaktivitet för användare** på fliken **Principer** för att manuellt lägga till en användare (eller flera användare) till en eller flera principer för insiderrisk för en specifik tid, för att omedelbart börja bedöma riskpoäng på deras aktivitet, och för att kringgå kravet för en användare att ha en utlösande indikator (som en DLP-principmatchning). Du kan också lägga till en anledning till att lägga till användaren i principen, som kommer att visas på användarens tidslinje för aktivitet. Användare som läggs till manuellt till principer visas i instrumentpanelen för **Användare** och varningar skapas om aktivitet uppfyller tröskelvärdena för principen.
 
-Vissa scenarier där du kanske omedelbart vill börja poänga användaraktiviteter:
+Några scenarier där du kanske omedelbart vill börja göra användaraktiviteter:
 
-- När användare identifieras med riskproblem och du omedelbart vill börja tilldela riskpoäng till deras aktivitet för en eller flera av dina principer
-- När det finns en händelse som kan innebära att du omedelbart måste börja tilldela riskpoäng för de berörda användarnas aktiviteter för en eller flera av dina principer
-- När du inte har konfigurerat din HR-anslutning ännu, men du vill börja tilldela riskpoäng till användaraktiviteter för HR-händelser genom att ladda upp en .csv fil för användarna
+- När användarna identifieras med risker och du bör omedelbart börja tilldela riskpoäng till aktiviteter för en eller flera av dina principer
+- När det finns en incident som kan kräva att du omedelbart börjar tilldela riskpoäng för de berörda användarnas aktiviteter för en eller flera av dina principer
+- När du har inte konfigurerat en HR-anslutning ännu, men du kan börja tilldela riskpoäng till användaraktiviteter för HR-händelser genom att ladda upp en CSV-fil för användarna
 
 >[!NOTE]
->Det kan ta flera timmar innan nya manuellt tillagda användare visas på **instrumentpanelen** Användare. Det kan ta upp till 24 timmar innan aktiviteterna för de föregående 90 dagarna för dessa användare visas. Om du vill visa aktiviteter för manuellt tillagda användare  går du till  fliken Användare, väljer användaren på instrumentpanelen Användare och öppnar fliken Användaraktivitet i informationsfönstret. 
+>Det kan ta flera timmar för nya manuellt tillagda användare att visas i instrumentpanelen för **Användare**. Det kan ta upp till 24 timmar att visa aktiviteter för de senaste 90 dagarna för dessa användare. Om du vill visa aktiviteter för användare som har lagts till manuellt navigerar du till fliken **Användare** och väljer användaren på instrumentpanelen för **Användare** och öppnar fliken **Användaraktivitet** i informationsfönstret.
 
-Om du vill starta poängaktivitet för användare manuellt med en eller flera insider-riskhanteringsprinciper slutför du följande steg:
+För att manuellt starta poängsättningsaktivitet för användare i en eller flera principer för hantering av insiderrisk, gör du följande:
 
-1. I Microsoft 365 [säkerhets- och efterlevnadscenter](https://compliance.microsoft.com)går **du till Insider-riskhantering** och väljer **fliken** Principer.
-2. På instrumentpanelen för principen väljer du den princip eller de principer som du vill lägga till användare i.
-3. Välj **Starta poängaktivitet för användare**.
-4. I fältet **Orsak i fönstret** Lägg till användare i flera **principer** lägger du till en orsak till att lägga till användarna.
-5. I fältet Detta ska vara i (välj mellan 5 och **30 dagar)** anger du antalet dagar som användarens aktivitet ska poängas för den princip de läggs till i
-6. Om du vill söka efter användare i Active Directory använder du **sökanvändaren för att lägga till i fältet** principer. Skriv namnet på den användare som du vill lägga till i principerna. Välj användarnamnet och upprepa för att tilldela ytterligare användare till principerna. Listan över användare som du har valt visas i avsnittet användare i fönstret Lägg till användare i flera principer.
-7. Om du vill importera en lista med användare att lägga till i principerna väljer du **Importera** för att importera .csv (kommaavgränsade värden). Filen måste ha följande format och du måste ange användarnas huvudnamn i filen:
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) går du till **Hantering av insiderrisk** och väljer fliken **Princip**.
+2. Välj principen eller principerna du vill lägga till användare till på principens instrumentpanel.
+3. Välj **Starta poängsättningsaktivitet för användare**.
+4. I **Anledningsfältet** i fönstret **Lägg till användare till flera principer**, lägger du till en anledning till att lägga till användarna.
+5. I fältet **Detta ska pågå (välj mellan 5 och 30 dagar)** definierar du antalet dagar som användarens aktivitet ska poängsättas för den princip de läggs till i
+6. För att söka i din Active Directory efter användare, använder du fältet **Sök efter användare att lägga till i principer**. Skriv namnet på användaren som du vill lägga till principerna. Välj användarnamn och upprepa för att tilldela ytterligare användare till principerna. Listan över användare du har valt visas i avsnittet användare i fönstret Lägg till användare i flera principer.
+7. Om du vill importera en lista över användare som ska läggas till i principerna väljer du **Importera** till importera en .csv-fil (kommaavgränsade värden). Filen måste ha följande format och du måste lista användarhuvudnamn i filen:
 
     ```csv
     user principal name
@@ -385,20 +385,20 @@ Om du vill starta poängaktivitet för användare manuellt med en eller flera in
     user2@domain.com
     ```
 
-8. Markera lägg till användare i principer för att acceptera ändringarna och lägga till användare i principerna eller välj Avbryt för att ignorera ändringarna och stänga dialogrutan.
+8. Välj Lägg till användare i principer för att acceptera ändringarna och lägg till användare i principerna eller välj Avbryt för att kassera ändringarna och stänga dialogrutan.
 
-## <a name="stop-scoring-users-in-a-policy"></a>Sluta poänganvändare i en princip
+## <a name="stop-scoring-users-in-a-policy"></a>Sluta poängsätta användare i en princip
 
-Om du vill sluta poänga användare i en princip kan du [läsa Insider-riskhanteringsanvändare:](insider-risk-management-users.md#remove-users-from-in-scope-assignment-to-policies) Ta bort användare från tilldelning inom omfattningen till policyartikeln.
+Gå till artikeln [Användare av hantering av insiderrisk: Ta bort användare från tilldelning inom omfång till principer](insider-risk-management-users.md#remove-users-from-in-scope-assignment-to-policies) för att stoppa poängsästtning av användare i en princip.
 
 ## <a name="delete-a-policy"></a>Ta bort en princip
 
 >[!NOTE]
->När du tar bort en princip tas inte aktiva eller arkiverade aviseringar som genereras från principen bort.
+>Borttagning av en princip tar inte bort aktiva eller arkiverade varningar som genereras från principen.
 
-Så här tar du bort en befintlig princip för insider-riskhantering:
+Ta följande steg för att ta bort en befintlig princip för hantering av internrisk:
 
-1. I Microsoft 365 [säkerhets- och efterlevnadscenter](https://compliance.microsoft.com)går **du till Insider-riskhantering** och väljer **fliken** Principer.
-2. Välj den princip du vill ta bort på instrumentpanelen för principen.
-3. Välj **Ta bort** i instrumentpanelsverktygsfältet.
-4. I dialogrutan **Ta** bort väljer du **Ja för** att ta bort principen, eller så väljer **du Avbryt** för att stänga dialogrutan.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) går du till **Hantering av insiderrisk** och väljer fliken **Princip**.
+2. Välj principen du vill ta bort på principens instrumentpanel.
+3. Välj **Ta bort** på instrumentpanelens verktygsfält.
+4. I dialogfältet **Ta bort** väljer du **Ja** för att ta bort principen, eller välj **Avbryt** för att stänga dialogfältet.

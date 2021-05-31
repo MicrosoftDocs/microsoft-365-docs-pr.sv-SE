@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Använd Exchange Online-övervakning för information om e-postincidenter eller rekommendationer i Microsoft 365.
-ms.openlocfilehash: 53dc7f990f57fd8d4da68bd424947676cbf0e85d
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
+ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572907"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52707302"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Exchange Online-övervakning för Microsoft 365
 
@@ -49,9 +49,9 @@ Med sidan för **Exchange Online**-övervakning kan du se om Exchange Online-tj�
 
 Den här förhandsversionen är aktiverad för kunder som uppfyller följande krav: 
 
-- Din organisation måste ha ett licensantal på minst 10 000, med en eller en kombination av dessa produkter: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Din organisation måste ha ett licensantal på minst 5 000, med en eller en kombination av dessa produkter: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
 
-  Din organisation kan t. ex. ha 3 000 Office 365 E3-licenser och 8 500 Microsoft 365 E5, för totalt 11 500 licenser för de kvalificerande produkterna.
+  Din organisation kan till exempel ha 3 000 Office 365 E3-licenser och 2 500 Microsoft 365 E5 som totalt blir 5 500 licenser av de kvalificerande produkterna.
 
 - Din organisation måste ha minst 50 månatliga aktiva Exchange Online-användare.
 
@@ -95,10 +95,10 @@ Kontrollera först att du har aktiverat det nya Administrationscentret på **Sta
 
 Kontrollera sedan att du uppfyller båda följande krav: 
 
-- Din organisation måste ha ett licensantal på minst 10 000, med en eller en kombination av dessa produkter: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Din organisation måste ha ett licensantal på minst 5 000, med en eller en kombination av dessa produkter: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
 - Din organisation måste ha minst 50 månatliga aktiva Exchange Online-användare.
 
-Om licensantalet för din organisation understiger 10 000 användare och antalet månatliga aktiva användare hamnar under 50 användare aktiveras inte Exchange Online-övervakning förrän dessa kraven uppfyllts.
+Om licensantalet för din organisation understiger 5 000 användare och antalet månatliga aktiva användare hamnar under 50 användare aktiveras inte Exchange Online-övervakning förrän dessa kraven uppfyllts.
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. Antalet aktiva användare på instrumentpanelen för varje klient verkar vara lågt. Vi har många aktiva licenser tilldelade till användare. Vad betyder det här? 
 
