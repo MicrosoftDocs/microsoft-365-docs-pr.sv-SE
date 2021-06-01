@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mer information om de kvarhållningsprinciper som gäller för Yammer.
-ms.openlocfilehash: 0426fdf04090e535a99f8acd3bf376adfb016796
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b99d0915cfb159f821818fb1425d7191a011351
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162004"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710712"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Mer information om kvarhållning för Yammer
 
@@ -49,7 +49,7 @@ Reaktioner från andra i form av uttryckssymboler tas inte med i dessa meddeland
 
 Du kan använda en kvarhållningsprincip för att behålla och ta bort communitymeddelanden och privata meddelanden i Yammer. Privata meddelanden lagras i en dold mapp i postlådan för varje användare som ingår i meddelandet och communitymeddelanden lagras i en liknande dold mapp i gruppostlådan för communityn.
 
-Yammer-meddelanden påverkas inte av kvarhållningsprinciper som har konfigurerats för användar- eller gruppostlådor. Även om Yammer-meddelanden lagras i Exchange omfattas dessa Yammer-data endast av en kvarhållningsprincip som är konfigurerad för platser med **Yammers communitymeddelanden** och **Yammers privata meddelanden**.
+Yammer-meddelanden påverkas inte av kvarhållningsprinciper som har konfigurerats för användar- eller gruppostlådor. Även om Yammer-meddelanden lagras i Exchange omfattas dessa Yammer-data endast av en kvarhållningsprincip som är konfigurerad för platserna **Community-meddelanden i Yammer** och **Användarmeddelanden i Yammer**.
 
 > [!NOTE]
 > Om en användare ingår i en aktiv kvarhållningsprincip som behåller Yammer-data och du tar bort postlådan för en användare som ingår i den principen, konverteras postlådan till en [inaktiv postlåda](inactive-mailboxes-in-office-365.md) för att Yammer-datan ska behållas. Om du inte behöver behålla Yammer-datan för användaren exkluderar du användarkontot från kvarhållningsprincipen innan du tar bort postlådan.
@@ -88,13 +88,13 @@ När kvarhållningsprincipen endast ska behålla eller endast ta bort, är inneh
 
 ## <a name="messages-and-external-users"></a>Meddelanden och externa användare
 
-Som standard gäller en kvarhållningsprincip för privata meddelanden i Yammer alla användare i organisationen, men inte för externa användare. Du kan tillämpa en kvarhållningsprincip på externa användare om du använder **Välj användare** och anger deras konto. 
+Som standard gäller en kvarhållningsprincip för användarmeddelanden i Yammer alla användare i organisationen, men inte för externa användare. Du kan tillämpa en kvarhållningsprincip på externa användare om du använder **Välj användare** och anger deras konto. 
 
 För närvarande stöds inte Azure B2B-gästanvändare.
 
 ## <a name="when-a-user-leaves-the-organization"></a>När en användare lämnar organisationen 
 
-Om användare lämnar organisationen och deras Microsoft 365-konto tas bort, lagras deras privata Yammer-meddelanden som ska behållas i en inaktiv postlåda. Meddelandena finns kvar enligt kvarhållningsprincipen för användaren innan postlådan inaktiverades och innehållet är tillgängligt för eDiscovery-sökningar. Mer information finns i [Inaktiva postlådor i Exchange Online](inactive-mailboxes-in-office-365.md). 
+Om användare lämnar organisationen och deras Microsoft 365-konto tas bort, lagras deras Yammer-användarmeddelanden som ska behållas i en inaktiv postlåda. Meddelandena finns kvar enligt kvarhållningsprincipen för användaren innan postlådan inaktiverades och innehållet är tillgängligt för eDiscovery-sökningar. Mer information finns i [Inaktiva postlådor i Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 Om användaren har lagrat några filer i Yammer kan du se [motsvarande avsnitt](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) för SharePoint och OneDrive.
 
@@ -102,7 +102,7 @@ Om användaren har lagrat några filer i Yammer kan du se [motsvarande avsnitt](
 
 För närvarande finns det en förhandsversion av Yammers kvarhållningsprinciper och vi arbetar kontinuerligt med att optimera kvarhållningsfunktionen. Under tiden bör du vara medveten om följande begränsning när du använder kvarhållning för Yammers communitymeddelanden och privata meddelanden:
 
-- När du väljer **Välj användare** för platsen **Yammers privata meddelanden** kan du se gäster och användare utan postlåda. Kvarhållningsprinciperna är inte avsedda för de här användarna, så välj dem inte.
+- När du väljer **Välj användare** för platsen **Användarmeddelanden i Yammer** kan du se gäster och användare utan postlåda. Kvarhållningsprinciperna är inte avsedda för de här användarna, så välj dem inte.
 
 ## <a name="configuration-guidance"></a>Konfigurationsvägledning
 

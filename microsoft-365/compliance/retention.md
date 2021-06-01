@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om kvarhållningsprinciper och kvarhållningsetiketter som hjälper dig att behålla det du behöver och ta bort det du inte behöver.
-ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625227"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710724"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Mer information om kvarhållningsprinciper och kvarhållningsetiketter
 
@@ -116,7 +116,7 @@ Kvarhållningsprinciper kan tillämpas på följande platser:
 - Teams-kanalmeddelanden
 - Teams-chattar
 - Community-meddelanden i Yammer
-- Privata meddelanden i Yammer
+- Användarmeddelanden i Yammer
 
 Du kan använda en enda princip på flera platser på ett mycket effektivt sätt, eller på specifika platser eller användare.
 
@@ -308,7 +308,7 @@ Förklaring av de fyra nivåerna:
     
     Dokument på den här SharePoint-webbplatsen för marknadsföring behålls i tio år eftersom det är den längsta kvarhållningsperioden.
 
-3. **Explicit vinner över implicit.** Tillämpligt för att avgöra när objekt tas bort: 
+3. **Explicit vinner över implicit för borttagningar.** När konflikter nu är lösta för kvarhållningen finns endast konflikter för borttagningar kvar: 
     
     1. En kvarhållningsetikett (oavsett hur den tillämpats) tillhandahåller explicit kvarhållning i jämförelse med kvarhållningsprinciper, eftersom kvarhållningsinställningarna används för ett enskilt objekt i stället för att tilldelas implicit från en behållare. Det innebär att en borttagningsåtgärd från en kvarhållningsetikett alltid har företräde framför en borttagningsåtgärd från en kvarhållningsprincip.
         

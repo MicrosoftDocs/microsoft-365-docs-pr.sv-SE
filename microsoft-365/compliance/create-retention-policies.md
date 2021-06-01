@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd en kvarhållningsprincip för effektiv kontroll över innehåll som användare genererar med e-post, dokument och konversationer. Behåll det du vill ha och ta bort det du inte vill ha.
-ms.openlocfilehash: 1faeae5dc145d6f908f9137387b875c890d22e14
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280433"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710700"
 ---
 # <a name="create-and-configure-retention-policies"></a>Skapa och konfigurera kvarhållningsprinciper
 
@@ -54,7 +54,7 @@ Den globala administratören för organisationen har fullständig behörighet f�
 - Teams-kanalmeddelanden
 - Teams-chattar
 - Community-meddelanden i Yammer
-- Privata meddelanden i Yammer
+- Användarmeddelanden i Yammer
 
 Om du väljer Teams- eller Yammer-platserna när du skapar en kvarhållningsprincip exkluderas de andra platserna automatiskt. Det innebär att instruktionerna du ska följa beror på om du behöver inkludera Teams- eller Yammer-platserna:
 
@@ -130,11 +130,11 @@ Det är möjligt att en kvarhållningsprincip som används på Microsoft 365-gru
     
     Välj inte **Använd avancerade inställningar för kvarhållning** eftersom det här alternativet inte stöds för Yammer-platser. 
 
-4. För sidan **Välj platser** väljer du **Låt mig välja specifika platser**. Aktivera sedan en eller båda platserna för Yammer: **Community-meddelanden i Yammer** och **Privata meddelanden i Yammer**.
+4. För sidan **Välj platser** väljer du **Låt mig välja specifika platser**. Aktivera sedan en eller båda platserna för Yammer: **Community-meddelanden i Yammer** och **Användarmeddelanden i Yammer**.
     
     Som standard är alla communities och användare markerade, men du kan förfina detta genom att ange communities och användare som ska inkluderas eller exkluderas.
     
-    För privata meddelanden i Yammer: 
+    För användarmeddelanden i Yammer: 
     - Om du lämnar standardvärdet som **Alla** inkluderas inte Azure B2B-gästanvändare. 
     - Om du väljer **Välj användare** kan du tillämpa en kvarhållningsprincip på externa användare om du känner till deras konto.
 
@@ -288,7 +288,7 @@ Om du vill använda den valfria konfigurationen för att begränsa dina kvarhål
 > [!WARNING]
 > Om du konfigurerar inkluderingar och sedan tar bort den sista återgår konfigurationen till **Alla** för platsen.  Kontrollera att det här är den konfiguration du vill använda innan du sparar principen.
 >
-> Om du till exempel anger en SharePoint-webbplats som ska inkluderas i din kvarhållningsprincip som är konfigurerad för att ta bort data, och sedan tar bort den enda webbplatsen, kommer alla SharePoint-webbplatser som standard att omfattas av kvarhållningsprincipen som tar bort data permanent. Samma gäller för Exchange-mottagare, OneDrive-konton, Teams-chattanvändare osv.
+> Om du till exempel anger en SharePoint-webbplats som ska inkluderas i din kvarhållningsprincip som är konfigurerad för att ta bort data, och sedan tar bort den enda webbplatsen, kommer alla SharePoint-webbplatser som standard att omfattas av kvarhållningsprincipen som tar bort data permanent. Samma sak gäller för Exchange-mottagare, OneDrive-konton, Teams-chattanvändare osv.
 >
 > I det här scenariot inaktiverar du platsen om du inte vill att inställningen **Alla** för platsen ska omfattas av kvarhållningsprincipen. Alternativt kan du ange exkluderingar som ska undantas från principen.
 
