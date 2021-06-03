@@ -147,14 +147,6 @@
           items:
             - name: Enhets inventerings rapport
               href: working-with-managed-desktop/device-inventory-report.md
-            - name: Användningsinsikter
-              href: working-with-managed-desktop/usage-insights.md
-            - name: Tillförlitlighetsinsikter
-              href: working-with-managed-desktop/reliability-insights.md
-            - name: Batteriinsikter
-              href: working-with-managed-desktop/battery-insights.md
-            - name: Insikter om Windows-säkerhetsuppdateringar
-              href: working-with-managed-desktop/security-update-insights.md
         - name: Support för administratörer
           href: working-with-managed-desktop/admin-support.md
         - name: Användarsupport

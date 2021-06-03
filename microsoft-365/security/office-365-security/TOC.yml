@@ -254,6 +254,8 @@
           href: detect-and-remediate-outlook-rules-forms-attack.md
         - name: Hantera falska positiva/negativa
           href: air-report-false-positives-negatives.md
+        - name: Administratörsgranskning för rapporterade meddelanden
+          href: admin-review-reported-message.md
         - name: Återställa efter utpressningstrojanattack
           href: recover-from-ransomware.md
         - name: Åtgärda skadlig e-post
