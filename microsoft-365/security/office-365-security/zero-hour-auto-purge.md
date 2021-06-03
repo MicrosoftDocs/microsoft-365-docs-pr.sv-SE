@@ -22,12 +22,12 @@ ms.custom:
 description: Administratörer kan ta reda på hur ZAP (Zero-hour Auto Purge) retroaktivt kan flytta skickade meddelanden i en Exchange Online-postlåda till mappen Skräppost eller karantän som retroaktivt visar sig vara skräppost eller nätfiske.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee5a3fee8e189ff9cc08f187971e728670766d6d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9612f6267a0786b6f81f1c9a3f2ac270e344d0a8
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684201"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730684"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>ZAP (Zero-hour auto purge) i Exchange Online
 
@@ -72,6 +72,12 @@ För lästa eller **olästa** meddelanden som identifieras som nätfiske efter l
 Som standard är ZAP för nätfiske aktiverat i principer för  skydd mot skräppost, och standardåtgärden för filtrering av nätfiskemeddelanden är karantänmeddelande, vilket betyder ZAP för att sätta meddelandet i karantän för nätfiske som standard.
 
 Mer information om konfigurering av skräppostfiltrering av filtreringsprinciper finns i [Konfigurera principer mot skräppost i Microsoft 365.](configure-your-spam-filter-policies.md)
+
+### <a name="zap-for-high-confidence-phishing"></a>ZAP för nätfiske med hög förtroende 
+
+För **lästa eller olästa** meddelanden som identifieras som nätfiske efter leverans sätts meddelandet i karantän av ZAP. Endast administratörer kan visa och hantera meddelanden med hög säkerhet från karantän. 
+
+ZAP för hög konfidens är aktiverat som standard. Mer information finns i [Skydda som standard i Office 365](secure-by-default.md).
 
 ### <a name="zap-for-spam"></a>ZAP för skräppost
 
@@ -119,6 +125,6 @@ ZAP fungerar fortfarande så länge meddelandet inte har tagits bort, eller så 
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Hur påverkar ZAP postlådorna?
 
-ZAP sätts inte i karantän för meddelanden från postlådor. ZAP kan flytta meddelanden till mappen Skräppost baserat på åtgärder som är konfigurerade för skräppost eller nätfiske mot skräppost.
+ZAP sätt meddelanden från postlådor i karantän. ZAP kan flytta meddelanden till mappen Skräppost baserat på åtgärder som är konfigurerade för skräppost eller nätfiske mot skräppost.
 
 Mer information om bevarande i Exchange Online finns i Bevarande av juridiska skäl på plats [i Exchange Online.](/Exchange/security-and-compliance/in-place-and-litigation-holds)

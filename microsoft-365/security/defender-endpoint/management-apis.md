@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 78ab364f8a261b1201fad17ebf86adc1a7456a46
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934466"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730845"
 ---
 # <a name="overview-of-management-and-apis"></a>Översikt över hantering och API:er 
 
@@ -41,7 +41,7 @@ Eftersom kundmiljöer och kundstrukturer kan variera skapades Defender för Endp
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>Slutpunkts onboarding och portalåtkomst 
 
-Enhets onboarding är helt integrerat i Microsoft Endpoint Manager och Microsoft Intune för klientenheter och Azure Defender för serverenheter, med fullständig heltäckande upplevelse av konfiguration, distribution och övervakning. Dessutom har Microsoft Defender för Endpoint stöd för grupprinciper och andra verktyg från tredje part som används för hantering av enheter.
+Registrering av enheter är helt integrerat i Microsoft Endpoint Manager och Microsoft Intune för klientenheter och Azure Defender för serverenheter, med fullständig heltäckande upplevelse av konfiguration, distribution och övervakning. Dessutom har Microsoft Defender för Endpoint stöd för grupprinciper och andra verktyg från tredje part som används för hantering av enheter.
 
 Defender för Endpoint ger mer exakt kontroll över vad användare med åtkomst till portalen kan se och göra genom flexibiliteten hos rollbaserad åtkomstkontroll (RBAC). RBAC-modellen har stöd för alla typer av säkerhetsteamsstruktur:
 - Globalt fördelade organisationer och säkerhetsteam
@@ -71,16 +71,17 @@ I  Undersöknings-API:t visas hur rikt Defender för slutpunkten är – det gö
 
 Med **Response API** kan du vidta åtgärder i tjänsten och på enheter, vilket gör det möjligt för kunder att mata in indikatorer, hantera inställningar, aviseringsstatus och vidta svarsåtgärder på enheter programmässigt, till exempel isolera enheter från nätverket, karantänfiler och andra. 
 
-## <a name="raw-data-streaming-api"></a>API för direktuppspelning av rådata 
-Defender för Endpoints strömnings-API för rådata ger kunder möjlighet att skicka händelser och aviseringar i realtid från sina instanser när de inträffar i en enda dataström, vilket ger en leveransmekanism med låg fördröjning och hög genomflödesleveransmekanism.
+## <a name="streaming-api"></a>Streaming API 
+Direktuppspelnings-API gör det möjligt för kunder att skicka händelser och aviseringar i realtid från sina instanser när de inträffar i en enda dataström, vilket ger en låg latens och hög leveransmekanism för dataflöde.
 
-Defender för slutpunktshändelseinformation skickas direkt till Azure-lagring för lagring av data långsiktigt eller till Azure Event Hubs för förbrukning av visualiseringstjänster eller ytterligare databehandlingsmotorer. 
+Händelseinformation skickas direkt till Azure-lagring för lagring av data långsiktigt eller till Azure Event Hubs för förbrukning av visualiseringstjänster eller ytterligare databehandlingsmotorer. 
 
-Mer information finns i [Raw Data Streaming API](raw-data-export.md).
+>[!NOTE]
+>Streaming API har nu flyttats till Microsoft 365 Defender. Mer information finns i [Streaming API](raw-data-export.md).
 
 
 ## <a name="siem-api"></a>SIEM API
-När du aktiverar säkerhetsinformation och händelsehanteringsintegrering (SIEM) kan du hämta identifieringar från Microsoft Defender Säkerhetscenter med din SIEM-lösning eller genom att ansluta direkt till REST API för identifieringar. Då aktiveras åtkomstinformationsavsnittet för SIEM-anslutningen med ifyllda värden och ett program skapas under Azure Active Directory-klienten (Azure AD). Mer information finns i [SIEM-integrering.](enable-siem-integration.md)
+När du aktiverar säkerhetsinformation och händelsehanteringsintegrering (SIEM) kan du hämta identifieringar från Microsoft Defender Säkerhetscenter med hjälp av din SIEM-lösning eller genom att ansluta direkt till REST API för identifieringar. Detta aktiverar informationsavsnittet för SIEM-koppling med ifyllda värden och ett program skapas under Azure Active Directory (Azure AD) klientorganisation. Mer information finns i [SIEM-integrering.](enable-siem-integration.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Få åtkomst till API:er för Microsoft Defender för slutpunkt ](apis-intro.md)

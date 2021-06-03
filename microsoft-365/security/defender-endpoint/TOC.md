@@ -593,11 +593,6 @@
 ###### [Avancerad jakt med PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Använda OData-frågor](exposed-apis-odata-samples.md)
 
-#### [API för direktuppspelning av rådata]()
-##### [Direktuppspelning av rådata](raw-data-export.md)
-##### [Strömma avancerade jakthändelser till Azure Events-hubben](raw-data-export-event-hub.md)
-##### [Strömma avancerade jakthändelser till ditt lagringskonto](raw-data-export-storage.md)
-
 #### [SIEM-integrering]()
 ##### [Förstå olika threat Intelligence-koncept](threat-indicator-concepts.md)
 ##### [Lär dig mer om olika sätt att dra identifieringar](configure-siem.md)

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 87f5e414a13d966ba2fbb30d84d7d4adae7a1d13
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: da88bc2aa0e001d714d4317948e28cdca633d17d
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624355"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736366"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referens för funktioner för kommunikationsefterlevnad
 
@@ -49,6 +49,23 @@ Principmallar är fördefinierade principinställningar som du kan använda för
 | **Intressekonflikt** | Övervaka kommunikationen mellan två grupper eller två användare för att undvika intressekonflikter | - Platser: Exchange Online, Microsoft Teams, Yammer, Skype för företag <br> - Riktning: Internt <br> - Granska procent: 100 % <br> - Villkor: Inga |
 
 Kommunikationer skannas en gång per dygn från det att principerna har skapats. Om du till exempel skapar en anstötlig språkprincip klockan 11:00 samlar principen in kommunikationsefterlevnadssignaler var 24:e timme kl. 11:00 varje dag. Den här gången ändras inte redigeringen av en princip. Om du vill visa det senaste genomsökningsdatumet och tiden för en princip går du till kolumnen *Senaste* principsökning på **sidan** Princip. När du har skapat en ny princip kan det ta upp till 24 timmar innan den första principsökningens datum och tid visas. Datum och tid för den senaste genomsökningen konverteras till tidszonen för ditt lokala system.
+
+## <a name="pausing-a-policy-preview"></a>Pausa en princip (förhandsversion)
+
+När du har skapat en princip för kommunikationsefterlevnad kan principen pausas tillfälligt om det behövs. Pausa en princip kan användas för att testa eller felsöka principmatchning eller för att optimera principvillkor. I stället för att ta bort en princip under de här omständigheterna bevarar en princip även befintliga policyvarningar och meddelanden för pågående undersökningar och granskningar. Om du pausar en princip förhindrar du att du kontrollerar och avisering generering av alla användarmeddelandevillkor som definierats i principen under den tid principen pausas. För att pausa eller starta om en princip måste användarna vara medlemmar i *rollgruppen* för administratör för kommunikationsefterlevnad.
+
+Om du vill pausa en princip **går** du till sidan Princip, väljer en princip och sedan **Pausa princip** från åtgärdsverktygsfältet. I fönstret **Pausa** princip bekräftar du att du vill pausa principen genom att välja **Pausa**. I vissa fall kan det ta upp till 24 timmar för en princip att pausas. När principen har pausats skapas inga aviseringar om meddelanden som matchar principen. Men meddelanden som är associerade med aviseringar som skapades innan principen pausas förblir tillgängliga för undersökning, granskning och åtgärd.
+
+Principstatus för pausade principer kan ange flera tillstånd:
+
+- **Aktiv**: Principen är aktiv
+- **Pausad:** Principen är helt pausad.
+- **Pausa:** Principen håller på att pausas.
+- **Återuppta:** Principen för att återupptas.
+- **Fel när principen återupptas:** Ett fel har uppstått när principen återupptas. För felstackspårningen hovrar du med musen *över felvärdet* när statusen ska återupptas i kolumnen Status på sidan Princip.
+- **Fel i paus:** Ett fel har uppstått när principen pausas. Håll muspekaren över fel i status *paus i* kolumnen Status på sidan Princip för felstapling.
+
+Om du vill återuppta en princip går du till **sidan Princip,** väljer en princip och väljer **sedan Återuppta princip** i åtgärdsverktygsfältet. I fönstret **Återuppta princip** bekräftar du att du vill återuppta principen genom att välja **Återuppta**. I vissa fall kan det ta upp till 24 timmar innan en princip återupptas. När principen återupptas skapas aviseringar om meddelanden som matchar principen och blir tillgängliga för undersökning, granskning och åtgärd.
 
 ## <a name="permissions"></a>Behörigheter
 
@@ -232,7 +249,7 @@ I följande tabell beskrivs mer information om varje villkor.
 Varje ord som du anger och avgränsar med kommatecken tillämpas separat (endast ett ord måste gälla för att principvillkoret ska gälla för e-postmeddelandet eller den bifogade filen). Vi kan till exempel använda **villkoret,** Meddelandet innehåller något av dessa ord , med nyckelorden "bank", "konfidentiell" och "insider-handel" avgränsade med ett komma (bank, konfidentiellt", "insider-handel"). Principen gäller för alla meddelanden som innehåller ordet "bankman", "konfidentiellt" eller frasen "insider-handel". Endast ett av dessa ord eller fraser måste finnas för att det här principvillkoret ska tillämpas. Orden i meddelandet eller den bifogade filen måste exakt matcha det du skriver.
 
 >[!IMPORTANT]
->När du importerar en egen ordlistefil måste varje ord eller fras avgränsas med en vagnretur och på en separat rad. <br> Ett exempel: <br><br>
+>När du importerar en egen ordlistefil måste varje ord eller fras avgränsas med en vagnretur och på en separat rad. <br> Till exempel: <br><br>
 >*bank* <br>
 >*konfidentiellt* <br>
 >*insider handel*
@@ -393,35 +410,35 @@ Gör följande för att dela ett Power Automate flöde:
 
 1. Gå till Microsoft 365 Policyer för kommunikation och välj principen med den avisering du vill granska i säkerhets- och  >   efterlevnadscentret.
 2. I principen väljer du fliken **Väntande** och väljer en väntande avisering.
-3. Välj **Power Automate** i åtgärdsmenyn för aviseringar.
-4. På sidan **Power Automate flöden** väljer du **fliken Mina flöden** **eller Teamflöden.**
+3. Välj **Power Automate** på aviseringsåtgärdsmenyn.
+4. På sidan **Power Automate-flöden** väljer du fliken **Mina flöden** **eller Teamflöden.**
 5. Välj flödet du vill dela och välj sedan **Dela** på menyn flödesalternativ.
 6. På sidan flödesdelning anger du namnet på den användare eller grupp du vill lägga till som ägare av flödet.
 7. I dialogrutan **Anslutning som används** väljer du OK **för** att bekräfta att den tillagda användaren eller gruppen har fullständig åtkomst till flödet.
 
-### <a name="edit-a-power-automate-flow"></a>Redigera Power Automate flöde
+### <a name="edit-a-power-automate-flow"></a>Redigera ett Power Automate-flöde
 
-Om du behöver redigera ett flöde använder du Power Automate **när** du arbetar direkt i en avisering. Om du vill Power Automate ett arbetsflöde måste du vara medlem i minst en rollgrupp för kommunikationsefterlevnad.
+Om du behöver redigera ett flöde använder du **Power Automate-kontrollen** när du arbetar direkt i en avisering. Om du vill redigera ett Power Automate-flöde måste du vara medlem i minst en rollgrupp för kommunikationsefterlevnad.
 
-Gör följande för att redigera ett Power Automate flöde:
+Så här redigerar du ett Power Automate-flöde:
 
-1. Gå till Microsoft 365 Policyer för kommunikation och välj principen med den avisering du vill granska i säkerhets- och  >   efterlevnadscentret.
+1. I Efterlevnadscenter för Microsoft 365 går du till **Principer** för kommunikationsefterlevnad och väljer  >   principen med den avisering du vill granska.
 2. I principen väljer du fliken **Väntande** och väljer en väntande avisering.
-3. Välj **Power Automate** i åtgärdsmenyn för aviseringar.
-4. På sidan **Power Automate flöde väljer** du flöde för att redigera. Välj **Redigera** på flödeskontrollmenyn.
-5. Markera **ellipsen för**  >  **Inställningar** ändra en flödeskomponentinställning eller **ellips Ta** bort för att ta bort en  >   flödeskomponent.
+3. Välj **Power Automate** på aviseringsåtgärdsmenyn.
+4. På sidan **Power Automate-flöden** väljer du flöde för att redigera. Välj **Redigera** på flödeskontrollmenyn.
+5. Välj **ellipsinställningarna**  >  **för att** ändra en flödeskomponentinställning eller **ellips Ta bort om**  >  **du** vill ta bort en flödeskomponent.
 6. Välj **Spara** och sedan **Stäng för** att slutföra redigeringen av flödet.
 
-### <a name="delete-a-power-automate-flow"></a>Ta bort ett Power Automate flöde
+### <a name="delete-a-power-automate-flow"></a>Ta bort ett Power Automate-flöde
 
-Om du behöver ta bort ett flöde använder du Power Automate **när** du arbetar direkt i en avisering. Om du vill Power Automate ett dataflöde måste du vara medlem i minst en rollgrupp för kommunikationsefterlevnad.
+Om du behöver ta bort ett flöde använder du **Power Automate-kontrollen** när du arbetar direkt i en avisering. Om du vill ta bort ett Power Automate-flöde måste du vara medlem i minst en rollgrupp för kommunikationsefterlevnad.
 
-Gör följande för att ta bort ett Power Automate flöde:
+Så här tar du bort ett Power Automate-flöde:
 
-1. Gå till Microsoft 365 Policyer för kommunikation och välj principen med den avisering du vill granska i säkerhets- och  >   efterlevnadscentret.
+1. I Efterlevnadscenter för Microsoft 365 går du till **Principer** för kommunikationsefterlevnad och väljer  >   principen med den avisering du vill granska.
 2. I principen väljer du fliken **Väntande** och väljer en väntande avisering.
-3. Välj **Power Automate** i åtgärdsmenyn för aviseringar.
-4. På sidan **Power Automate väljer** du flöde för att ta bort. Välj **Ta** bort på flödeskontrollmenyn.
+3. Välj **Power Automate** på aviseringsåtgärdsmenyn.
+4. På sidan **Power Automate-flöden** väljer du flöde för att ta bort. Välj **Ta** bort på flödeskontrollmenyn.
 5. I bekräftelsedialogrutan för borttagning väljer du **Ta bort för** att ta bort flödet eller så väljer du **Avbryt** för att avsluta borttagningsåtgärden.
 
 ## <a name="reports"></a>Rapporter
@@ -451,7 +468,7 @@ Instrumentpanelen **Rapporter** innehåller följande rapportwidgetar och detalj
     - Skapat ärende
     
     Använd alternativet *Exportera* om du vill skapa .csv fil som innehåller rapportinformationen.
-- **Objekt och åtgärder per plats,** detaljerad rapport: Granska och exportera matchande objekt och åtgärdsåtgärder per Microsoft 365 plats. Innehåller information om hur plattformar för arbetsbelastning är kopplade till:
+- **Objekt och åtgärder per plats,** detaljerad rapport: Granska och exportera matchande objekt och åtgärdsåtgärder per Microsoft 365-plats. Innehåller information om hur plattformar för arbetsbelastning är kopplade till:
 
     - Objekt matchade
     - Eskalerade objekt
@@ -480,10 +497,10 @@ Instrumentpanelen **Rapporter** innehåller följande rapportwidgetar och detalj
 
 - **Typ av känslig information per plats** detaljerad rapport (förhandsgranskning): Granska och exportera information om identifiering av typer av känslig information och associerade källor i principer för kommunikationsefterlevnad. Innehåller den totala summan och den specifika uppdelningen av förekomster av känslig information i de källor som konfigurerats i organisationen. Några exempel är:
 
-    - **E-post:** Typer av känslig information som upptäckts Exchange e-postmeddelanden.
-    - **Teams**: Typer av känslig information som upptäckts i Microsoft Teams kanaler och chattmeddelanden.
-    - **Skype för företag**: Typer av känslig information som upptäckts Skype affärskommunikation.
-    - **Yammer**: Typer av känslig information som upptäckts Yammer inkorgar, inlägg, chattar och svar.
+    - **E-post:** Typer av känslig information som upptäckts i e-postmeddelanden i Exchange.
+    - **Team:** Typer av känslig information som upptäckts i Microsoft Teams kanaler och chattmeddelanden.
+    - **Skype för företag:** Typer av känslig information som upptäckts i Skype för företag-kommunikationer.
+    - **Yammer:** Typer av känslig information som upptäckts i Yammer-inkorgar, inlägg, chattar och svar.
     - **Tredjepartskällor: Känslig** informationstyper som upptäckts för aktiviteter som är associerade med kopplingar från tredje part som konfigurerats i organisationen. Om du vill visa detaljerad information om källor från tredje part för en viss typ av känslig information i rapporten håller du muspekaren över värdet för typen av känslig information i kolumnen för tredjepartskälla.
     - **Övriga**: Typer av känslig information som används för intern systembearbetning. Om du markerar eller avmarkerar den här källan för rapporten påverkas inte några värden.
 
@@ -494,7 +511,7 @@ Instrumentpanelen **Rapporter** innehåller följande rapportwidgetar och detalj
 I vissa fall måste du informera regel- eller efterlevnadsgranskningar för att bevisa att du är över över användaraktiviteter och kommunikation. Den här informationen kan vara en sammanfattning av alla aktiviteter som är associerade med en definierad organisationspolicy eller när en princip för kommunikationsefterlevnad ändras. Principer för kommunikationsefterlevnad har inbyggda granskningshistorik för fullständig beredskap för interna eller externa granskningar. Detaljerade granskningshistoriker för varje åtgärd för att skapa, redigera och ta bort fångas upp av dina kommunikationsprinciper för att tillhandahålla bevis på övervakande procedurer.
 
 >[!Important]
->Granskning måste vara aktiverad för organisationen innan händelser för kommunikationsefterlevnad registreras. Information om hur du aktiverar granskning [finns i Aktivera granskningsloggen](communication-compliance-configure.md#step-2-required-enable-the-audit-log). När aktiviteter utlöser händelser som fångas i Microsoft 365-granskningsloggen kan det ta upp till 48 timmar innan dessa händelser kan visas i principer för kommunikationsefterlevnad.
+>Granskning måste vara aktiverad för organisationen innan händelser för kommunikationsefterlevnad registreras. Information om hur du aktiverar granskning [finns i Aktivera granskningsloggen](communication-compliance-configure.md#step-2-required-enable-the-audit-log). När aktiviteter utlöser händelser som fångas i Microsoft 365 granskningsloggen kan det ta upp till 48 timmar innan dessa händelser kan visas i principer för kommunikationsefterlevnad.
 
 Om du vill visa uppdateringsaktiviteter för kommunikationsefterlevnadsprincipen väljer du kontrollen Exportera principuppdateringar på huvudsidan för en princip.  Du måste vara global administratör *eller administratör för* *kommunikationsefterlevnad för att* kunna exportera uppdateringsaktiviteter. Den här åtgärden genererar en granskningsfil i .csv format som innehåller följande information:
 

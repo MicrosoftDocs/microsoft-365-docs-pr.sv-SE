@@ -17,76 +17,122 @@ search.appverid:
 ms.assetid: ''
 description: Tagga dokument i en granskningsuppsättning hjälper till att ta bort onödigt innehåll och identifiera relevant innehåll i Advanced eDiscovery fall.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 83e7a3c9c097968c4d773e6e2092bb3c50154cc3
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 6d6a933f24a034aced99a8eaa70c6ee951765ca0
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "52161612"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736307"
 ---
 # <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Tagga dokument i en granskningsuppsättning i Advanced eDiscovery
 
-Det är viktigt att ordna innehåll i en granskningsuppsättning för att slutföra olika arbetsflöden i eDiscovery-processen. Det omfattar:
+Det är viktigt att ordna innehåll i en granskningsuppsättning för att slutföra olika arbetsflöden i eDiscovery-processen. Detta omfattar följande:
 
 - Ta bort onödigt innehåll
 
 - Identifiera relevant innehåll
- 
-- Identifiera innehåll som måste granskas av en expert eller en jurist
 
-När experter, jurister eller andra användare granskar innehåll i en granskningsuppsättning kan deras åsikter om innehållet fångas upp med hjälp av taggar. Om syftet till exempel är att undvika onödigt innehåll kan en användare tagga dokument med en tagg, till exempel "svarar inte". När innehåll har granskats och taggats kan du skapa en granskningsuppsättningssökning för att utesluta innehåll som är taggat som "icke-responsivt", vilket eliminerar det här innehållet från nästa steg i eDiscovery-arbetsflödet. Märkningspanelen kan anpassas för varje ärende så att taggarna kan stödja det avsedda granskningsarbetsflödet.
+- Identifiera innehåll som måste granskas av en expert eller jurist
+
+När experter, jurister eller andra användare granskar innehåll i en granskningsuppsättning kan deras åsikter om innehållet fångas upp med hjälp av taggar. Om syftet till exempel är att undvika onödigt innehåll kan en användare tagga dokument med en tagg, till exempel "svarar inte". När innehåll har granskats och taggats kan du skapa en sökning med en granskningsuppsättning för att utesluta innehåll som är taggat som "icke-responsivt". Med den här processen elimineras det icke-responsiva innehållet från nästa steg i eDiscovery-arbetsflödet. Taggpanelen i en granskningsuppsättning kan anpassas för varje ärende så att taggarna stöder det avsedda granskningsarbetsflödet för ärendet.
+
+> [!NOTE]
+> Omfattningen av taggar är ett Advanced eDiscovery ärende. Det innebär att ett ärende bara kan ha en uppsättning taggar som granskare kan använda för att tagga dokument med uppsättningsdokument. Du kan inte konfigurera en annan uppsättning taggar för användning i olika granskningsuppsättningar i samma fall.
 
 ## <a name="tag-types"></a>Taggtyper
 
 Advanced eDiscovery innehåller två typer av taggar:
 
-- **Enkelvalstaggar** – Begränsar användare att välja en enskild tagg i en grupp. Det kan vara användbart för att säkerställa att användarna inte väljer taggar i konflikt, till exempel "responsiv" och "svarar inte". De visas som alternativknappar.
+- **Enkelvalstaggar:** Begränsar granskare att välja en enskild tagg i en grupp. Den här typen av taggar kan vara bra att se till att granskare inte väljer taggar i konflikt, till exempel "responsiv" och "svarar inte". Taggar för enstaka val visas som alternativknappar.
 
-- **Flervalstaggar** – tillåt användare att markera flera taggar i en grupp. De visas som kryssrutor.
+- **Flervalstaggar:** Tillåta granskningar att markera flera taggar i en grupp. Den här typen av taggar visas som kryssrutor.
 
 ## <a name="tag-structure"></a>Taggstruktur
 
 Förutom taggtyperna kan strukturen för hur taggar ordnas i taggpanelen användas för att göra taggningen av dokument mer intuitiv. Taggar är grupperade efter avsnitt. Med sökfunktionen för granskning kan du söka efter tagg och taggavsnitt. Det innebär att du kan skapa en granskningsuppsättningssökning för att hämta dokument som är märkta med valfri tagg i ett avsnitt.
 
-![Tagga avsnitt i taggpanelen](../media/Tagtypes.png)
+![Tagga avsnitt i taggpanelen](../media/TagTypes.png)
 
-Taggar kan ordnas ytterligare genom att kapsla in dem i ett avsnitt. Om avsikten till exempel är att identifiera och tagga behörighetsinnehåll kan kapsling användas för att göra det tydligt att en användare kan tagga ett dokument som "behörig" och välja typ av behörighet genom att markera rätt kapslad tagg.
+Du kan ordna taggarna ytterligare genom att kapsla in dem i ett avsnitt. Om syftet till exempel är att identifiera och tagga behörighetsinnehåll kan kapsling användas för att göra det tydligt att granskare kan tagga ett dokument som "privilegierat" och välja typ av behörighet genom att markera rätt kapslad tagg.
 
-![Kapslade taggar i ett taggavsnitt](../media/Nestingtags.png)
+![Kapslade taggar i ett taggavsnitt](../media/NestingTags.png)
+
+## <a name="create-tags"></a>Skapa taggar
+
+Innan du kan använda taggar i dokument i granskningsuppsättningen måste du skapa en taggstruktur.
+
+1. Öppna en granskningsuppsättning, gå till kommandofältet och välj **Tagga efter fråga.**
+
+2. Välj Hantera taggalternativ i **taggpanelen**
+
+3. Välj **Lägg till taggavsnitt**.
+
+4. Skriv en rubrik för tagggruppen och en valfri beskrivning och klicka sedan på **Spara**.
+
+5. Markera den nedrullningsbara menyn med en tre punkt bredvid tagggruppens rubrik och klicka på **Lägg till kryssruta** eller **knappen Lägg till alternativ.**
+
+6. Skriv ett namn och en beskrivning för kryssrutan eller alternativknappen.
+
+7. Upprepa proceduren för att skapa nya taggavsnitt, taggalternativ och kryssrutor.
+
+   ![Konfigurera taggstruktur](../media/ManageTagOptions3.png)
 
 ## <a name="applying-tags"></a>Använda taggar
 
-Det finns flera sätt att använda en tagg på innehåll.
+När taggstrukturen är på plats kan granskare använda taggar i dokument i en granskningsuppsättning. Det finns två olika sätt att använda taggar:
 
-### <a name="tagging-a-single-document"></a>Tagga ett enskilt dokument
+- Tagga filer
 
-När du visar ett dokument i en granskningsuppsättning kan du visa de taggar som en granskning kan använda genom att klicka **på Taggningspanel**.
+- Tagga efter fråga
 
-![Klicka på Taggpanelen för att visa taggpanelen](../media/Singledoctag.png)
+### <a name="tag-files"></a>Tagga filer
 
-Då kan du använda taggar i dokumentet som visas i visningsprogrammet.
+Oavsett om du markerar ett enstaka objekt eller flera objekt i en granskningsuppsättning kan du tillämpa taggar på deras markering genom att klicka **på Tagga** filer i kommandofältet. I taggpanelen kan du välja en tagg och den tillämpas automatiskt på de markerade dokumenten.
 
-### <a name="bulk-tagging"></a>Masstaggar
-
-Du kan masstagga genom att markera flera filer i resultatrutnätet och sedan använda taggarna i panelen Taggning som liknar taggning av enstaka dokument.  Massmarkering kan göras genom att markera taggar två gånger. Det första klicket använder taggen och det andra valet säkerställer att taggen är avmarkerad för alla valda filer.
-
-![En skärmbild av en beskrivning av en mobiltelefon automatiskt genererad](../media/Bulktag.png)
+![Tagga markerade filer](../media/TagFile2.png)
 
 > [!NOTE]
-> Vid masstaggar visar märkningspanelen antalet filer som är märkta för varje tagg i panelen.
+> Taggar kommer endast att tillämpas på markerade objekt i listan med objekt.
 
-### <a name="tagging-in-other-review-panels"></a>Tagga i andra granskningspaneler
+### <a name="tag-by-query"></a>Tagga efter fråga
 
-När du granskar dokument kan du använda de andra granskningspanelerna för att granska andra egenskaper för dokument i resultatrutnätet. Det omfattar granskning av andra relaterade dokument, e-posttrådar, nära dubbletter och hash-dubbletter. När du till exempel granskar relaterade dokument  (med hjälp av panelen Dokumentfamiljgranskning) kan du minska granskningstiden avsevärt genom att masstagga relaterade dokument. Till exempel om ett e-postmeddelande har flera bifogade filer och du vill vara säker på att hela familjen är taggad konsekvent.
+Genom att tagga efter fråga kan du använda taggar för alla objekt som visas av en filterfråga som för närvarande används i granskningsuppsättningen.
 
-Så här visar du till exempel panelen **Taggning när du** använder panelen **Dokumentfamiljgranskning:**
+1. Avmarkera alla objekt i granskningsuppsättningen, gå till kommandofältet och välj **Tagga efter fråga.**
 
-1. Med granskningspanelen öppen för ett markerat dokument (om listan med  relaterat innehåll visas i granskningspanelen för dokumentfamilj klickar du till exempel på **Tagga** dokument under granskningspanelen för dokumentfamilj.
+2. Markera den tagg du vill använda i taggpanelen.
 
-   Taggpanelen visas som ett popup-fönster.
+3. Under **listrutan Taggmarkering** finns det tre alternativ som avgör vilka objekt taggen ska användas för.
 
-2. Välj en eller flera taggar för att använda det valda dokumentet. 
+   - **Objekt som matchar tillämpad** fråga: Tillämpar taggar på specifika objekt som matchar filterfrågans villkor.
 
-3. Om du vill tagga alla  dokument markerar du alla dokument i dokumentfamiljpanelen, klickar på Tagga dokument och väljer sedan de taggar som ska gälla för hela dokumentfamiljen.
+   - **Inkludera associerade familjeobjekt:** Tillämpar taggar på specifika objekt som matchar filterfrågans villkor och tillhörande familjeobjekt. *Familjeobjekt* är objekt som delar samma FamilyId-metadatavärde.  
 
-![En skärmbild av en postbeskrivning i sociala medier som genererats automatiskt](../media/Relatedtag.png)
+   - **Ta med associerade konversationsobjekt:** Tillämpar taggar på objekt som matchar filterfrågans villkor och tillhörande konversationsobjekt. *Konversationsobjekt* är objekt som delar samma metadatavärden för ConversationId.
+
+   ![Taggmarkering](../media/TagByQuery2.png)
+
+4. Klicka **på Starta taggningsjobbet** för att utlösa taggningsjobbet.
+
+## <a name="tag-filter"></a>Taggfilter
+
+Använd taggfiltret i granskningsuppsättningen för att snabbt hitta eller exkludera objekt från frågeresultatet baserat på hur ett objekt är taggat. 
+
+1. Välj **Filter** för att expandera filterpanelen.
+
+2. Markera och expandera **Objektegenskaper**.
+
+3. Rulla nedåt för att hitta filtret **med namnet Tagg**, markera kryssrutan och klicka sedan på **Klar**.
+
+4. Om du vill inkludera eller exkludera objekt med en viss tagg från en fråga gör du något av följande:
+
+   - **Inkludera objekt:** Välj taggvärdet och välj **Lika med något av** i den nedrullningsbara menyn.
+
+      Eller
+
+   - **Uteslut objekt:** Välj taggvärdet och välj **Är lika med inget av i** listrinsmenyn.
+
+     ![Taggfilter utesluter objekt](../media/TagFilterExclude.png)
+
+> [!NOTE]
+> Uppdatera sidan så att taggfiltret visar de senaste ändringarna i taggstrukturen.

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f2c66dca326589807f5712c5548c177a0d08ade0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c10b2863503a5bda829cbf67379a606b687ac2e3
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935731"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730948"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>Microsoft 365 Defender API: er som stöds 
 
@@ -43,6 +43,7 @@ Artikel | Beskrivning
 -|-
 [Advanced jakt-API](api-advanced-hunting.md) | Kör avancerade frågor för sökning.
 [API:er för tillbud](api-incident.md) | Lista och uppdatera incidenter, tillsammans med andra praktiska uppgifter.
+[Direktuppspelnings-API](../defender-endpoint/raw-data-export.md) (förhandsversion) | Leverera händelser och aviseringar i realtid när de inträffar i en enda dataström.
 
 ### <a name="endpoint-uris"></a>Slutpunkts-URI:er
 
@@ -58,7 +59,8 @@ Alla API:er längs sökvägen använder till exempel `/api` [OData-protokollet.]
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Översikt över Microsoft 365 Defender-API:er](api-overview.md)
-- [Åtkomst till Microsoft 365 Defender-API:er](api-access.md)
+- [Microsoft 365 Översikt över Defender-API:er](api-overview.md)
+- [Komma åt Microsoft 365 Defender-API:er](api-access.md)
+- [Streaming API](../defender-endpoint/raw-data-export.md)
 - [Läs mer om API-begränsningar och licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)

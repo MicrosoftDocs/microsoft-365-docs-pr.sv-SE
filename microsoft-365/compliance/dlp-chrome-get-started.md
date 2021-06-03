@@ -1,5 +1,5 @@
 ---
-title: Kom igång med Microsofts efterlevnadstillägg (förhandsversion)
+title: Kom igång med Microsofts efterlevnadstillägg
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,15 +18,15 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Förbereda och distribuera Microsofts efterlevnadstillägg.
-ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Förbered och distribuera Microsofts efterlevnadstillägg.
+ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162979"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730516"
 ---
-# <a name="get-started-with-microsoft-compliance-extension-preview"></a>Kom igång med Microsofts efterlevnadstillägg (förhandsversion)
+# <a name="get-started-with-microsoft-compliance-extension"></a>Kom igång med Microsofts efterlevnadstillägg
 
 Använd de här metoderna för att distribuera Microsofts efterlevnadstillägg.
 
@@ -69,14 +69,14 @@ Data från slutpunkts-DLP kan visas i [Aktivitetsutforskaren](data-classificatio
 - Global administratör
 - Efterlevnadsadministratör
 - Säkerhetsadministratör
-- Efterlevnadsdataadministratör
+- Administratör för efterlevnadsdata
 - Global läsare
 - Säkerhetsläsare
 - Rapportläsare
 
 ### <a name="overall-installation-workflow"></a>Övergripande installationsarbetsflöde
 
-Distribution av Microsofts efterlevnadstillägg är en process i flera faser. Du kan välja att installera på en dator i taget, eller använda Microsoft Endpoint Manager eller en grupprincip för organisationsomfattande distributioner.
+Distributionen av Microsofts efterlevnadstillägg är en process med flera faser. Du kan välja att installera på en dator i taget, använda Microsoft Endpoint Manager eller en grupprincip för organisationsomfattande distributioner.
 
 1. [Förbered dina enheter](#prepare-your-devices).
 2. [Grundläggande konfiguration av en dator med selfhost](#basic-setup-single-machine-selfhost)
@@ -261,9 +261,8 @@ Nu när du har tagit bort Chrome från listan med otillåtna webbläsare/appar k
 
 ### <a name="known-issues-and-limitations"></a>Kända problem och begränsningar
 
-1. Användning av dra-och-släpp vid mappuppladdning stöds inte.
-2. Användning av åsidosättning av blockering för utgående moln stöds inte.
-3. Inkognitoläge stöds inte och måste vara inaktiverat.
+1. Användning av åsidosättning av blockering för utgående moln stöds inte.
+2. Inkognitoläge stöds inte och måste vara inaktiverat.
 
 ## <a name="next-steps"></a>Nästa steg
 Nu när du har registrerat enheter och kan se aktivitetsdata i aktivitetsutforskaren, kan du gå vidare till nästa steg där du skapar DLP-principer som skyddar dina känsliga objekt.
@@ -272,8 +271,8 @@ Nu när du har registrerat enheter och kan se aktivitetsdata i aktivitetsutforsk
 
 ## <a name="see-also"></a>Se även
 
-- [Mer information om dataförlustskydd för slutpunkter ](endpoint-dlp-learn-about.md)
-- [Använda dataförlustskydd för slutpunkter ](endpoint-dlp-using.md)
+- [Mer information om dataförlustskydd för slutpunkter](endpoint-dlp-learn-about.md)
+- [Använda dataförlustskydd för slutpunkter](endpoint-dlp-using.md)
 - [Mer information om dataförlustskydd](dlp-learn-about-dlp.md)
 - [Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)
 - [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md)
@@ -281,4 +280,4 @@ Nu när du har registrerat enheter och kan se aktivitetsdata i aktivitetsutforsk
 - [Registreringsverktyg och metoder för Windows 10-enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365-prenumeration](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure AD-anslutna enheter](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
-- [Ladda ned nya Microsoft Edge som är baserat på Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
+- [Ladda ned nya Microsoft Edge som baseras på Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

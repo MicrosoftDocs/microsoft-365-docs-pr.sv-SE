@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som Microsoft 365 en användarpostlåda till en annan postlåda i eller utanför organisationen.
-ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: dfea738f5d786b6e476dd02dc92fd0aef452d62f
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698922"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730144"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurera vidarebefordran av e-post i Microsoft 365
 
@@ -57,7 +57,16 @@ Du måste vara Exchange administratör eller global administratör i Microsoft 3
 
 4. På sidan för vidarebefordran av e-post väljer du Vidarebefordra alla e-postmeddelanden som skickats till den här postlådan **,** anger adressen för vidarebefordran och väljer om du vill behålla en kopia av vidarebefordrade e-postmeddelanden. Se till att en licens tilldelas till användarkontot om du inte ser det här alternativet. Välj **Spara ändringar**.
 
-    **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook att vidarebefordra till adresserna. Mer information finns i Använda [regler för att automatiskt vidarebefordra meddelanden](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+    **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook att vidarebefordra till adresserna. 
+    
+    1.  Öppna **Outlook**  >    >   **Hemregler >** Välj **Hantera regler och & aviseringar**
+    1. Välj **Ny regel Välj** Använd regel för meddelanden som jag tar  >  **emot** nästan längst ned i listan och klicka sedan på **Nästa.**
+    1. Klicka **på** Ja när du tillfrågas Om den här regeln tillämpas på alla meddelanden du får. 
+    1. I nästa lista väljer du åtgärderna **omdirigerar den till personer eller offentlig grupp** och slutar bearbeta fler **regler**
+    1. Klicka på den **understrukna frasen personer eller** offentlig grupp i den nedre delen av fönstret.
+    1. Skriv **e-postadressen** du vill vidarebefordra e-post till i fältet Till och klicka sedan på **OK.**
+    1. Välj **Slutför**
+    
 
      I administrationscentret kan du skapa en [distributionsgrupp](../setup/create-distribution-lists.md) [,](add-user-or-contact-to-distribution-list.md)lägga till adresser till den och sedan konfigurera vidarebefordran så att den pekar på distributionslistan med hjälp av instruktionerna i den här artikeln.
 

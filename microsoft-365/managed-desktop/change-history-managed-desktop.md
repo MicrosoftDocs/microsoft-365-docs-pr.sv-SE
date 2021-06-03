@@ -1,6 +1,6 @@
 ---
 title: Ändringshistorik för dokumentationen om Microsoft Hanterat skrivbord
-description: Den här artikeln innehåller nya och uppdaterade artiklar för Microsoft Managed Desktop.
+description: Den här artikeln innehåller nya och uppdaterade artiklar för Microsoft Hanterat skrivbord.
 keywords: ändringshistorik
 ms.service: m365-md
 ms.sitesec: library
@@ -13,16 +13,16 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 5e57f21690372b16c86a65fcfe4d00cb5c907391
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: bc04059d3ec63dd9395ed8f7a0e02b948e5cead1
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587533"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730744"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Ändringshistorik för dokumentationen om Microsoft Hanterat skrivbord
 
-Den här artikeln innehåller nya och uppdaterade artiklar i [dokumentationen för Microsoft Managed Desktop.](index.yml) "Uppdaterade" artiklar har innehåller materialrelaterade tillägg eller korrigeringar – mindre korrigeringar, till exempel korrigeringar av skrivfel, stil eller formateringsproblem visas inte. Du kan alltid visa historik över specifika commits (inklusive information om eventuella ändringar) genom att gå till lagringsplatsen [på GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+Den här artikeln innehåller nya och uppdaterade artiklar i [Microsoft Hanterat skrivbord dokumentation.](index.yml) "Uppdaterade" artiklar har innehåller materialrelaterade tillägg eller korrigeringar – mindre korrigeringar, till exempel korrigeringar av skrivfel, stil eller formateringsproblem visas inte. Du kan alltid visa historik över specifika åtgärder (inklusive information om eventuella ändringar) genom att gå till [lagringsplatsen på GitHub.](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
 
 ## <a name="march-2021"></a>Mars 2021
 Ny eller ändrad artikel | Beskrivning
@@ -31,7 +31,7 @@ Ny eller ändrad artikel | Beskrivning
 [Välkomstprogrammet med Autopilot och sidan Registreringsstatus](get-started/esp-first-run.md) | Uppdaterad artikel
 [Positioneringstjänst i Windows 10](get-started/device-location.md) | Ny artikel
 [Enhetsbilder](service-description/device-images.md) | Ny artikel
-[Regioner som stöds för Microsoft Managed Desktop](service-description/regions-languages.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord regioner som stöds](service-description/regions-languages.md) | Uppdaterad artikel
 [Lokalisera användarupplevelsen](get-started/localization.md) | Ny artikel
 
 ## <a name="february-2021"></a>Februari 2021
@@ -55,7 +55,7 @@ Ny eller ändrad artikel | Beskrivning
 [Installera Intune-företagsportal på enheter](get-started/company-portal.md) | Uppdaterad artikel
 [Enhetskrav](service-description/device-requirements.md) | Ny artikel
 [Efterlevnad](intro/compliance.md) | Uppdaterad artikel
-[Hur uppdateringar hanteras i Microsoft Managed Desktop](service-description/updates.md) | Uppdaterad artikel
+[Hur uppdateringar hanteras i Microsoft Hanterat skrivbord](service-description/updates.md) | Uppdaterad artikel
 [Få åtkomst till administrationsportalen](get-started/access-admin-portal.md) | Uppdaterad artikel
 
 
@@ -86,7 +86,7 @@ Ny eller ändrad artikel | Beskrivning
 Ny eller ändrad artikel | Beskrivning
 --- | ---
 [Förutsättningar](get-ready/prerequisites.md) | Uppdaterad artikel
-[Arbeta med insikter](working-with-managed-desktop/insights.md) | Uppdaterad artikel
+Arbeta med insikter | Uppdaterad artikel
 [Steg för partner för att registrera enheter](get-started/register-devices-partner.md) | Uppdaterad artikel
 [Få åtkomst till administrationsportalen](get-started/access-admin-portal.md) | Uppdaterad artikel
 [Distribuera appar till enheter](get-started/deploy-apps.md) | Uppdaterad artikel
@@ -99,27 +99,27 @@ Ny eller ändrad artikel | Beskrivning
 [Sekretess och personlig information](service-description/privacy-personal-data.md) | Ny artikel
 [Förbereda mappade enheter för Microsoft Hanterat skrivbord](get-ready/mapped-drives.md) | Uppdaterad artikel
 [Få hjälp för användare](working-with-managed-desktop/end-user-support.md) | Uppdaterad artikel
-[Referens för konfigurerbara inställningar – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-ref.md) | Uppdaterad artikel
-[Distribuera och spåra konfigurerbara inställningar – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Uppdaterad artikel
+[Referens för konfigurerbara inställningar – Microsoft Hanterat skrivbord](working-with-managed-desktop/config-setting-ref.md) | Uppdaterad artikel
+[Distribuera och spåra konfigurerbara inställningar – Microsoft Hanterat skrivbord](working-with-managed-desktop/config-setting-deploy.md) | Uppdaterad artikel
 [Admin-support för Microsoft Hanterat skrivbord](working-with-managed-desktop/admin-support.md) | Uppdaterad artikel
 [Microsoft Teams](get-started/teams.md) | Ny artikel
 [Få åtkomst till administrationsportalen](get-started/access-admin-portal.md) | Ny artikel
 [Förbereda utskriftsresurser för Microsoft Hanterat skrivbord](get-ready/printing.md) | Uppdaterad artikel
 [Välkomstprogrammet med Autopilot och sidan Registreringsstatus](get-started/esp-first-run.md) | Uppdaterad artikel
 [Registrera nya enheter själv](get-started/register-devices-self.md) | Uppdaterad artikel
-[Förbereda certifikat och nätverksprofiler för Microsoft Hanterat skrivbord](get-ready/certs-wifi-lan.md) | Uppdaterad artikel
+[Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](get-ready/certs-wifi-lan.md) | Uppdaterad artikel
 [Förutsättningar för Microsoft Hanterat skrivbord](get-ready/prerequisites.md) | Uppdaterad artikel
-[Arbeta med insikter](working-with-managed-desktop/insights.md) | Uppdaterad artikel
+Arbeta med insikter| Uppdaterad artikel
 
 ## <a name="august-2020"></a>Augusti 2020
 Ny eller ändrad artikel | Beskrivning
 --- | ---
 [Enhets inventerings rapport](working-with-managed-desktop/device-inventory-report.md) | Ny artikel
-[Ny Microsoft Edge-app](get-started/edge-browser-app.md) | Uppdaterad artikel
+[Ny Microsoft Edge app](get-started/edge-browser-app.md) | Uppdaterad artikel
 [Registrera nya enheter själv](get-started/register-devices-self.md) | Uppdaterad artikel
 [Registrera befintliga enheter själv](get-started/register-reused-devices-self.md) | Uppdaterad artikel
 [Förutsättningar för Microsoft Hanterat skrivbord](get-ready/prerequisites.md) | Uppdaterad artikel
-[Säkerhetsåtgärder i Microsoft Managed Desktop](service-description/security-operations.md) | Ny artikel
+[Säkerhetsåtgärder i Microsoft Hanterat skrivbord](service-description/security-operations.md) | Ny artikel
 [Få åtkomst till administrationsportalen](get-started/access-admin-portal.md) | Uppdaterad artikel
 [Microsoft 365 Apps för företag](get-started/m365-apps.md) | Ny artikel
 [Sekretess och personlig information](service-description/privacy-personal-data.md) | Ny artikel
@@ -127,22 +127,22 @@ Ny eller ändrad artikel | Beskrivning
 ## <a name="july-2020"></a>Juli 2020
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Krav för Microsoft Managed Desktop-appar](service-description/mmd-app-requirements.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord för appar](service-description/mmd-app-requirements.md) | Uppdaterad artikel
 [Efterlevnad](intro/compliance.md) | Uppdaterad artikel
 [Kom igång med appens kontroll](get-started/get-started-app-control.md) | Uppdaterad artikel
 [Arbeta med appens kontroll](working-with-managed-desktop/work-with-app-control.md) | Uppdaterad artikel
 [Förutsättningar för Microsoft Hanterat skrivbord](get-ready/prerequisites.md) | Uppdaterad artikel
 [Appkontroll](service-description/app-control.md) | Uppdaterad artikel
-[Nätverkskonfiguration för Microsoft Hanterat skrivbord](get-ready/network.md) | Uppdaterad artikel
-[Ny Microsoft Edge-app](get-started/edge-browser-app.md) | Uppdaterad artikel
+[Nätverks konfiguration för Microsoft Hanterat skrivbord](get-ready/network.md) | Uppdaterad artikel
+[Ny Microsoft Edge app](get-started/edge-browser-app.md) | Uppdaterad artikel
 [Få åtkomst till administrationsportalen](get-started/access-admin-portal.md) | Ny artikel
 [Appkontroll](service-description/app-control.md) | Ny artikel
-[Installera Microsoft Project eller Microsoft Visio på enheter som hanteras av Microsoft Managed Desktop](get-started/project-visio.md) | Uppdaterad artikel
+[Installera Microsoft Project eller Microsoft Visio på Microsoft Hanterat skrivbord enheter](get-started/project-visio.md) | Uppdaterad artikel
 
 ## <a name="june-2020"></a>Juni 2020
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Ny Microsoft Edge-app](get-started/edge-browser-app.md) | Ny artikel
+[Ny Microsoft Edge app](get-started/edge-browser-app.md) | Ny artikel
 [Enhetskonfiguration](service-description/device-policies.md) | Uppdaterad artikel
 
 
@@ -152,7 +152,7 @@ Ny eller ändrad artikel | Beskrivning
 --- | ---
 [Få hjälp för användare](working-with-managed-desktop/end-user-support.md) | Uppdaterad artikel
 [Steg för partner för att registrera enheter](get-started/register-devices-partner.md) | Uppdaterad artikel
-[Microsoft Managed Desktop-enheter](service-description/device-list.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord enheter](service-description/device-list.md) | Uppdaterad artikel
 [Registrera nya enheter själv](get-started/register-devices-self.md) | Uppdaterad artikel
 
 
@@ -163,7 +163,7 @@ Ny eller ändrad artikel | Beskrivning
 Ny eller ändrad artikel | Beskrivning
 --- | ---
 [Efterlevnad](intro/compliance.md) | Ny artikel
-[Regioner och språk som stöds för Microsoft Managed Desktop](service-description/regions-languages.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord regioner och språk som stöds](service-description/regions-languages.md) | Uppdaterad artikel
 
 
 
@@ -178,11 +178,11 @@ Ny eller ändrad artikel | Beskrivning
 ## <a name="february-2020"></a>Februari 2020
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Säkerhet i Microsoft Managed Desktop](service-description/security.md)| Uppdaterad artikel
-[Arbeta med insikter](working-with-managed-desktop/insights.md) | Uppdaterad artikel
-[Insikter om Windows-säkerhetsuppdateringar](working-with-managed-desktop/security-update-insights.md) | Ny artikel
-[Hur uppdateringar hanteras i Microsoft Managed Desktop](service-description/updates.md) | Uppdaterad artikel
-[Microsoft Hanterade skrivbordsenhetstjänster](service-description/device-services.md) | Uppdaterad artikel
+[Säkerhet i Microsoft Hanterat skrivbord](service-description/security.md)| Uppdaterad artikel
+Arbeta med insikter | Uppdaterad artikel
+Insikter om Windows-säkerhetsuppdateringar| Ny artikel
+[Hur uppdateringar hanteras i Microsoft Hanterat skrivbord](service-description/updates.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord enhetstjänster](service-description/device-services.md) | Uppdaterad artikel
 
 
 
@@ -198,19 +198,19 @@ Ny eller ändrad artikel | Beskrivning
 Ny eller ändrad artikel | Beskrivning
 --- | ---
 [Admin-support för Microsoft Hanterat skrivbord](working-with-managed-desktop/admin-support.md) | Uppdaterad artikel
-[Microsoft Managed Desktop-enheter](service-description/device-list.md) | Uppdaterad artikel
-[Microsoft Managed Desktop-arkiverade enheter](service-description/archived-device-list.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord enheter](service-description/device-list.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord arkiverade enheter](service-description/archived-device-list.md) | Uppdaterad artikel
 
 
 
 ## <a name="november-2019"></a>November 2019
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Arbeta med insikter](working-with-managed-desktop/insights.md) | Ny artikel
-[Användningsinsikter](working-with-managed-desktop/usage-insights.md) | Ny artikel
-[Tillförlitlighetsinsikter](working-with-managed-desktop/reliability-insights.md) | Ny artikel
-[Microsoft Managed Desktop-enheter](service-description/device-list.md) | Uppdaterad artikel
-[Huvudsidan för Microsoft Managed Desktop](./index.yml) | Uppdaterad artikel
+Arbeta med insikter | Ny artikel
+Användningsinsikter | Ny artikel
+Tillförlitlighetsinsikter | Ny artikel
+[Microsoft Hanterat skrivbord enheter](service-description/device-list.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord huvudsida](./index.yml) | Uppdaterad artikel
 [Vad är Microsoft Hanterat skrivbord?](./intro/index.md) | Uppdaterad artikel
 [Få dina användare redo att använda enheter](get-started/get-started-devices.md) | Uppdaterad artikel
 [Undantag från tjänstplanen](service-description/customizing.md) | Uppdaterad artikel
@@ -225,7 +225,7 @@ Ny eller ändrad artikel | Beskrivning
 [Tjänständringar och kommunikation](service-description/servicechanges.md) | Ny artikel
 [Registrera nya enheter själv](get-started/register-devices-self.md) | Uppdaterad artikel
 [Registrera befintliga enheter själv](get-started/register-reused-devices-self.md) | Uppdaterad artikel
-[Regioner och språk som stöds för Microsoft Managed Desktop](service-description/regions-languages.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord regioner och språk som stöds](service-description/regions-languages.md) | Uppdaterad artikel
 
 
 
@@ -235,14 +235,14 @@ Ny eller ändrad artikel | Beskrivning
 --- | ---
 [Teknologier i Microsoft Hanterat skrivbord](intro/technologies.md) | Uppdaterad artikel
 [Få hjälp för användare](working-with-managed-desktop/end-user-support.md) | Uppdaterad artikel
-[Microsoft Managed Desktop-enheter](service-description/device-list.md) | Uppdaterad artikel
-[Distribuera och spåra konfigurerbara inställningar – Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord enheter](service-description/device-list.md) | Uppdaterad artikel
+[Distribuera och spåra konfigurerbara inställningar – Microsoft Hanterat skrivbord](working-with-managed-desktop/config-setting-deploy.md) | Uppdaterad artikel
 [Admin-support för Microsoft Hanterat skrivbord](working-with-managed-desktop/admin-support.md) | Uppdaterad artikel
 [Förutsättningar för Microsoft Hanterat skrivbord](get-ready/prerequisites.md) | Uppdaterad artikel
 [Konfigurera Microsoft Hanterat skrivbord enheter](get-started/set-up-devices.md) | Ny artikel
 [Registrera nya enheter själv](get-started/register-devices-self.md) | Uppdaterad artikel
 [Registrera befintliga enheter själv](get-started/register-reused-devices-self.md) | Ny artikel
-[Hur uppdateringar hanteras i Microsoft Managed Desktop](service-description/updates.md) | Uppdaterad artikel
+[Hur uppdateringar hanteras i Microsoft Hanterat skrivbord](service-description/updates.md) | Uppdaterad artikel
 
 ## <a name="august-2019"></a>Augusti 2019
 Ny eller ändrad artikel | Beskrivning
@@ -269,36 +269,36 @@ Ny eller ändrad artikel | Beskrivning
 [Appar i Microsoft Hanterat skrivbord](get-ready/apps.md) | Uppdaterad artikel
 [Arbeta med Microsoft Consulting Services](get-ready/apps-mcs.md) | Ny artikel
 [Roller och ansvar för Microsoft Hanterat skrivbord](intro/roles-and-responsibilities.md) | Uppdaterad artikel
-[Livscykeln för produkter som hanteras av Microsoft Managed Desktop](service-description/device-lifecycle.md) | Ny artikel
+[Microsoft Hanterat skrivbord produktens livscykel](service-description/device-lifecycle.md) | Ny artikel
 
 
 
 ## <a name="may-2019"></a>Maj 2019
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Regioner och språk som stöds för Microsoft Managed Desktop](service-description/regions-languages.md) | Uppdaterad artikel
-[Microsoft Managed Desktop-enheter](service-description/device-list.md) | Uppdaterad artikel
-[Microsoft Managed Desktop-arkiverade enheter](service-description/archived-device-list.md) | Ny artikel
+[Microsoft Hanterat skrivbord regioner och språk som stöds](service-description/regions-languages.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord enheter](service-description/device-list.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord arkiverade enheter](service-description/archived-device-list.md) | Ny artikel
 [Förbereda mappade enheter för Microsoft Hanterat skrivbord](get-ready/mapped-drives.md) | Ny artikel
-[Förbereda certifikat och nätverksprofiler för Microsoft Hanterat skrivbord](get-ready/certs-wifi-lan.md) | Ny artikel
-[Ordna Microsoft Managed Desktop-enheter](get-started/devices.md) | Uppdaterad artikel
+[Förbereda certifikat och nätverks profiler för Microsoft Hanterat skrivbord](get-ready/certs-wifi-lan.md) | Ny artikel
+[Beställ Microsoft Hanterat skrivbord enheter](get-started/devices.md) | Uppdaterad artikel
 [Få hjälp för användare](working-with-managed-desktop/end-user-support.md) | Ny artikel
 
 ## <a name="april-2019"></a>April 2019
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Installera Intune-företagsportal på Microsoft Managed Desktop-enheter](get-started/company-portal.md) | Ny artikel
-[Installera Microsoft Project och Microsoft Visio på enheter som hanteras av Microsoft Managed Desktop](get-started/project-visio.md) | Ny artikel 
-[Förbereda åtkomst till lokala resurser för Microsoft Hanterat skrivbord](get-ready/authentication.md) | Ny artikel
-[Registrera enheter i Microsoft Managed Desktop](get-started/register-devices-self.md) | Ny artikel
-[Registrera enheter i Microsoft Managed Desktop för partner](get-started/register-devices-partner.md) | Ny artikel
-[Distribuera program till Microsoft Managed Desktop-enheter](get-started/deploy-apps.md) | Uppdaterad artikel
+[Installera Intune-företagsportal på Microsoft Hanterat skrivbord enheter](get-started/company-portal.md) | Ny artikel
+[Installera Microsoft Project och Microsoft Visio på Microsoft Hanterat skrivbord enheter](get-started/project-visio.md) | Ny artikel 
+[Förbereda lokala resurser till gång för Microsoft Hanterat skrivbord](get-ready/authentication.md) | Ny artikel
+[Registrera enheter i Microsoft Hanterat skrivbord](get-started/register-devices-self.md) | Ny artikel
+[Registrera enheter i Microsoft Hanterat skrivbord för partner](get-started/register-devices-partner.md) | Ny artikel
+[Distribuera program till Microsoft Hanterat skrivbord enheter](get-started/deploy-apps.md) | Uppdaterad artikel
 
 ## <a name="march-2019"></a>Mars 2019
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Installera Intune-företagsportal på Microsoft Managed Desktop-enheter](get-started/company-portal.md) | Ny artikel
-[Installera Microsoft Project och Microsoft Visio på enheter som hanteras av Microsoft Managed Desktop](get-started/project-visio.md) | Ny artikel
+[Installera Intune-företagsportal på Microsoft Hanterat skrivbord enheter](get-started/company-portal.md) | Ny artikel
+[Installera Microsoft Project och Microsoft Visio på Microsoft Hanterat skrivbord enheter](get-started/project-visio.md) | Ny artikel
 
 ## <a name="february-2019"></a>Februari 2019
 Ny eller ändrad artikel | Beskrivning
@@ -312,20 +312,20 @@ Ny eller ändrad artikel | Beskrivning
 ## <a name="january-2019"></a>Januari 2019
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Distribuera program för Microsoft Managed Desktop-enheter](get-started/deploy-apps.md) | Ny artikel.
-[Hantera appar för Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md) | Uppdaterat med information om hur du uppdaterar eller går tillbaka till en tidigare version av verksamhetsbaserade appar. 
+[Distribuera program för Microsoft Hanterat skrivbord enheter](get-started/deploy-apps.md) | Ny artikel.
+[Hantera appar för Microsoft Hanterat skrivbord](working-with-managed-desktop/manage-apps.md) | Uppdaterat med information om hur du uppdaterar eller går tillbaka till en tidigare version av verksamhetsbaserade appar. 
 
 ## <a name="december-2018"></a>December 2018
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Åtgärder och övervakning för Microsoft Managed Desktop](service-description/operations-and-monitoring.md) | Lade till ansvarsfördelningstabell och uppdaterade andra tabeller.
+[Åtgärder och övervakning för Microsoft Hanterat skrivbord](service-description/operations-and-monitoring.md) | Lade till ansvarsfördelningstabell och uppdaterade andra tabeller.
 [Admin-support för Microsoft Hanterat skrivbord](working-with-managed-desktop/admin-support.md) | Uppdaterade supporttyper, förklaringar om allvarlighetsgrad och ytterligare information.
 
 ## <a name="november-2018"></a>November 2018
 
 Ny eller ändrad artikel | Beskrivning
 --- | ---
-[Support för Microsoft Managed Desktop](service-description/support.md)<br />och [användarsupport för Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Uppdaterat så att det omfattar Australien.
+[Support för Microsoft Hanterat skrivbord](service-description/support.md)<br />och [användarsupport för Microsoft Hanterat skrivbord](working-with-managed-desktop/end-user-support.md) | Uppdaterat så att det omfattar Australien.
 
 ## <a name="october-30-2018"></a>30 oktober 2018
-Innehåll omorganiserat: tillagt avsnitt för [tjänstbeskrivningen för Microsoft Managed Desktop.](service-description/index.md)
+Innehåll omorganiserat: tillagt avsnitt [för Microsoft Hanterat skrivbord beskrivning av tjänsten](service-description/index.md).

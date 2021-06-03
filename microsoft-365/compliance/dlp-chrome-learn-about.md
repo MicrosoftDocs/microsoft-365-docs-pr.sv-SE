@@ -1,5 +1,5 @@
 ---
-title: Läs mer om Microsofts Efterlevnadstillägg (förhandsversion)
+title: Läs mer om Microsofts Efterlevnadstillägg
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Med Microsofts Efterlevnadstillägg utökas övervakning och kontroll av filaktiviteter och skyddsåtgärder mot Google Chrome-webbläsaren
-ms.openlocfilehash: c8a5795b3be8b393fd3a934504449bf6db0c2f01
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162936"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730492"
 ---
-# <a name="learn-about-the-microsoft-compliance-extension-preview"></a>Läs mer om Microsofts Efterlevnadstillägg (förhandsversion)
+# <a name="learn-about-the-microsoft-compliance-extension"></a>Läs mer om Microsofts Efterlevnadstillägg
 
 [Dataförlustskydd för slutpunkt (slutpunkt DLP)](endpoint-dlp-learn-about.md) utökar funktionerna för aktivitetsövervakning och skydd i [Microsoft 365 dataförlustskydd (DLP)](dlp-learn-about-dlp.md) till känsliga objekt som finns på Windows 10-enheter. När enheter har installerats i efterlevnadslösningar för Microsoft 365 blir informationen om vad användare gör med känsliga objekt synlig i [aktivitetsutforskaren](data-classification-activity-explorer.md) och du kan vidta skyddsåtgärder för dessa objekt via [DLP-principer](create-test-tune-dlp-policy.md).
 
@@ -59,9 +59,9 @@ Se [Komma igång med Microsofts Efterlevnadstillägg](dlp-chrome-get-started.md)
 - [Komma igång med Microsofts Efterlevnadstillägg](dlp-chrome-get-started.md)
 - [Läs mer om dataförlustskydd för slutpunkt i Microsoft 365](endpoint-dlp-learn-about.md)
 - [Komma igång med Microsoft dataförlustskydd för slutpunkt](endpoint-dlp-getting-started.md)
-- [Använda Microsoft dataförlustskydd för slutpunkt](endpoint-dlp-using.md)
+- [Använda Microsofts dataförlustskydd för slutpunkter](endpoint-dlp-using.md)
 - [Mer information om dataförlustskydd](dlp-learn-about-dlp.md)
 - [Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)
-- [Kom igång med Aktivitetsutforskaren](data-classification-activity-explorer.md)
+- [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md)
 - [Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Hantering av insiderrisk](insider-risk-management.md)
+- [Hantering av interna risker](insider-risk-management.md)

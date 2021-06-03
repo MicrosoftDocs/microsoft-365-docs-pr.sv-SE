@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Deklarera poster med hjälp av kvarhållningsetiketter.
-ms.openlocfilehash: fd88858c8d5cd1870f594050607b784a9dc5b78c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162209"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730552"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Deklarera poster med hjälp av kvarhållningsetiketter
 
@@ -41,7 +41,7 @@ Därefter kan du antingen publicera etiketterna i en policy för kvarhållningse
 
 Som standard visas inte alternativet för kvarhållningsetiketter, där innehåll kan markeras som en regelbaserad post, i guiden för kvarhållningsetiketter. Om du vill att det här alternativet ska visas måste du först köra ett PowerShell-kommando:
 
-1. [Ansluta till Säkerhets- och efterlevnadscenter för Office 365 via PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Anslut till Säkerhets- och efterlevnadscenter för Office 365 via PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Kör följande cmdlet:
     
@@ -54,7 +54,7 @@ Om du ångrar dig och inte längre vill att alternativet ska visas i guiden kan 
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Konfigurera kvarhållningsetiketter för att deklarera poster
 
-När du skapar eller redigerar kvarhållningsetiketter via lösningen för **hantering av arkivhandlingar** i Microsoft 365 Efterlevnadscenter får du möjlighet att markera objekt som poster. Om du har kört PowerShell-kommandot enligt anvisningarna i ovanstående avsnitt kan du även markera objekt som regelbaserade poster.
+När du skapar en kvarhållningsetikett via lösningen **Hantering av arkivhandlingar** i Microsoft 365 Efterlevnadscenter får du möjlighet att markera objekt som poster. Om du har kört PowerShell-kommandot enligt anvisningarna i ovanstående avsnitt kan du även markera objekt som regelbaserade poster.
 
 Till exempel:
 

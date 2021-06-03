@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f0c92371e7e9b7a3348f90df788ee8c3a46374b
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572159"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730890"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>API för listincidenter i Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572159"
 
 **Gäller för:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
@@ -151,7 +151,7 @@ osBuild | Versionsversionen för operativsystemet som enheten kör. | 14393
 rbacGroupName | Den [rollbaserade åtkomstkontrollgruppen](/azure/role-based-access-control/overview) (RBAC) som är kopplad till enheten. | WDATP-Ring0
 firstSeen | Tid när enheten sågs första gången. | 2020-02-06T14:16:01.9330135Z
 healthStatus | Status för enheten. | Aktiv
-riskScore | Riskresultatet för enheten. | Högsta
+riskScore | Riskresultatet för enheten. | Hög
 enheter | Alla enheter som har identifierats vara en del av eller relaterade till en viss avisering. | \[\] (mer information om entitetsfälten finns nedan)
 
 ### <a name="entity-format"></a>Enhetsformat

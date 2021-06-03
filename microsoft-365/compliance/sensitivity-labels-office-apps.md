@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Information för IT-administratörer om hur du hanterar känslighetsetiketter i Office-appar för dator, mobila enheter och webben.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd3f1e7329612755a1806b5d9af8e13f07790cd6
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a7ac7415ce5e7f88b21128846b7cff957e388fd5
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625131"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730384"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Använda känslighetsetiketter i Office-appar
 
@@ -387,54 +387,24 @@ Information om när du använder den här inställningen finns i informationen o
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Outlook-specifika alternativ för standardetikett och obligatorisk etikettering
 
-Identifiera de minimiversioner av Outlook som stöder de här funktionerna för inbyggd etikettering med hjälp av [funktionstabellen för Outlook](#sensitivity-label-capabilities-in-outlook) på den här sidan samt rad **Olika inställningar för standardetikett och obligatorisk etikettering**.
+Identifiera de minimiversioner av Outlook som stöder de här funktionerna för inbyggd etikettering med hjälp av [funktionstabellen för Outlook](#sensitivity-label-capabilities-in-outlook) på den här sidan samt rad **Olika inställningar för standardetikett och obligatorisk etikettering**. Alla versioner av Azure Information Protection enhetlig etiketteringsklient stöder de här Outlook-specifika alternativen.
 
-När du väljer inställningar för etikettprincip **Använd den här etiketten som standard för dokument och e-post** och **Kräver att användarna tillämpar en etikett på sin e-post eller dokument**, gäller ditt konfigurationsval för e-postmeddelanden och dokument som standard.
+När Outlook-appen har stöd för en standardetikettinställning som skiljer sig från standardetikettinställningen för dokument gör du så här:
 
-Använd Avancerade inställningar för PowerShell om du vill använda andra inställningar för e-postmeddelanden:
+- I guiden för etikettprinciper på sidan **Ange en standardetikett för e-postmeddelanden** kan du ange valfri känslighetsetikett som ska användas för alla omärkta e-postmeddelanden eller ingen standardetikett. Den här inställningen är oberoende av **Använd den här etiketten som standard på dokument**-inställningen på den föregående sidan **Principinställningar för dokument** i guiden.
 
-- **OutlookDefaultLabel**: Använd den här inställningen om du vill använda en annan standardetikett eller ingen etikett i Outlook.
+När Outlook-appen inte stöder en standardetikettinställning som skiljer sig från standardetikettinställningen för dokument: I Outlook används alltid det värde du anger för **Använd den här etiketten som standard för dokument** på sidan **Principinställningar för dokument** i guiden för etikettprinciper.
 
-- **DisableMandatoryInOutlook**: Använd den här inställningen om du vill att Outlook ska undantas från att uppmana användare att välja en etikett för icke etiketterade e-postmeddelanden.
+När Outlook-appen har stöd för att inaktivera obligatorisk etikettering gör du så här:
 
-Mer information om hur du konfigurerar inställningarna med PowerShell finns i nästa avsnitt.
+- I guiden för etikettprinciper på sidan **Principinställningar** väljer du **Kräv att användare tillämpar en etikett på sin e-post eller sina dokument**. Välj sedan **Nästa** > **Nästa** och avmarkera kryssrutan **Kräv att användare tillämpar en etikett på sina e-postmeddelanden**. Låt kryssrutan vara markerad om du vill använda obligatorisk etikett för e-post och dokument.
 
-### <a name="powershell-advanced-settings-outlookdefaultlabel-and-disablemandatoryinoutlook"></a>Avancerade inställningar för PowerShell OutlookDefaultLabel och DisableMandatoryInOutlook
+När Outlook-appen inte har stöd för att inaktivera obligatorisk etikettering: Om du väljer **Kräv att användare tillämpar en etikett på sin e-post eller sina dokument** som en principinställning, uppmanas användarna alltid att välja en etikett för omärkta e-postmeddelanden.
 
-De här inställningarna stöds genom att använda PowerShell med parametern *AdvancedSettings* och cmdlets för [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) och [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) från PowerShell [Säkerhets- och efterlevnadscenter](/powershell/exchange/scc-powershell). De här två avancerade inställningarna stöds nu för inbyggd etikettering. De hade tidigare endast stöd av Azure Information Protection enhetliga etiketteringsklient.
-
-PowerShell-exempel där etikettprincipen heter **Global**:
-
-- Så här undantar du Outlook från en standardetikett:
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
-    ````
-
-- Så här undantar du Outlook från obligatorisk etikettering:
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
-    ````
-
-För närvarande är OutlookDefaultLabel och DisableMandatoryInOutlook de enda avancerade PowerShell-inställningarna som stöds för både inbyggd etikettering och Azure Information Protection-klienten.
-
-Andra avancerade PowerShell-inställningar stöds fortfarande endast av Azure Information Protection-klienten. Mer information om hur du använder avancerade inställningar för Azure Information Protection-klienten finns i [Administratörsguiden: Anpassade konfigurationer för Azure Information Protection enhetliga etiketteringsklient](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>PowerShell-tips för att ange avancerade inställningar
-
-För att ange en annan standardetikett för Outlook måste du identifiera etiketten efter dess GUID. Du kan använda följande kommando för att hitta det här värdet:
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-Om du vill ta bort någon av de här avancerade inställningarna från en etikettprincip använder du samma AdvancedSettings-parametersyntax men anger ett tom strängvärde. Till exempel:
-
-````powershell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
-````
-
+> [!NOTE]
+> Om du har konfigurerat de avancerade PowerShell-inställningarna **OutlookDefaultLabel** och **DisableMandatoryInOutlook** med cmdlet:erna [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) eller [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy):
+> 
+> De valda värdena för de här PowerShell-inställningarna återspeglas i guiden för etikettprinciper och fungerar automatiskt för Outlook-program som har stöd för de här inställningarna. Andra avancerade PowerShell-inställningar stöds fortfarande endast av Azure Information Protection enhetlig etiketteringsklient.
 
 ## <a name="end-user-documentation"></a>Dokumentation för slutanvändare
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: I den här artikeln definieras metadatafälten för dokument i en granskning, i ett fall Advanced eDiscovery i Microsoft 365.
-ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244606"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730504"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokumentmetadatafält i Advanced eDiscovery
 
@@ -50,7 +50,7 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |Innehåll*|Content||Extraherad text för objektet.|
 |Konversationstext|Konversationstext||Konversationstexten för objektet.|
 |Konversationsämne|Konversationsämne||Konversationsämne för objektet.|
-|Konversations-ID|ConversationId|Email_conversation_ID|Konversations-ID från meddelandet.|
+|Konversations-ID|ConversationId|Conversation_ID|Konversations-ID från meddelandet.|
 |Konversationsindex||Conversation_index|Konversationsindex från meddelandet.|
 |Pdf-tid för konversation|ConversationPdfTime||Datumet när PDF-versionen av konversationen skapades.|
 |Samtal Redaction Burn Time|ConversationRedactionBurnTime||Datum då PDF-versionen av konversationen skapades för chatt.|
@@ -73,12 +73,12 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |Dominant tema|DominantTheme|Dominant_theme|Dominant tema som beräknats för analys.|
 |Duplicera delmängd||Duplicate_subset|Grupp-ID för exakta dubbletter.|
 |EmailAction*||Email_action|Värdena är **Ingen,** **Svara** eller **Vidarebefordra**; baserat på ämnesraden i ett meddelande.|
-|Begärt leveranskvitto för e-post||Email_delivery_receipt_requested|E-postadress som anges i Internethuvuden för leveranskvitto.|
+|Begärt leveranskvitto för e-post||Email_delivery_receipt|E-postadress som anges i Internethuvuden för leveranskvitto.|
 |Prioritet|EmailImportance|Email_importance|Prioritet i meddelandet: **0** – Låg; **1** – Normal; **2** – Hög|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Alla e-posthuvuden från e-postmeddelandet|
 |EmailLevel*||Email_level|Anger nivån för ett meddelande i e-posttråden som det tillhör. bifogade filer ärver det överordnade meddelandets värde.|
 |Id för e-postmeddelande||Email_message_ID|Internetmeddelande-ID från meddelandet.|
-|EmailReadReceiptRequested||Email_read_receipt_requested|E-postadress som anges i Internethuvuden för läskvitto.|
+|EmailReadReceiptRequested||Email_read_receipt|E-postadress som anges i Internethuvuden för läskvitto.|
 |E-postsäkerhet|EmailSecurity|Email_security|Säkerhetsinställning för meddelandet: **0** – Ingen; **1** – Signerat; **2** – Krypterad; **3** – Krypterad och signerad.|
 |Känslighet för e-post|E-postkänslighet|email_sensitivity|Inställningen Känslighet för meddelandet: **0** – Ingen; **1** Personligt; **2** - Privat; **3** – CompanyConfidential.|
 |E-postuppsättning|EmailSet|Email_set|Grupp-ID för alla meddelanden i samma e-postuppsättning.|
@@ -119,7 +119,7 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |Slutdatum för möte|MeetingEndDate|Meeting_end_date|Mötets slutdatum för möten.|
 |Startdatum för möte|MeetingStartDate|Meeting_start_date|Mötets startdatum för möten.|
 |Meddelande sort|MessageKind|Message_kind|Den typ av meddelande du vill söka efter. Möjliga värden: kontakter dokument skicka e-post **<br /> <br /> <br /> <br /> externadata fax im journaler möten <br /> <br /> <br /> <br /> <br /> <br /> microsoftteams** (returnerar objekt från chattar, möten och samtal i Microsoft Teams) anteckningar inlägg **<br /> <br /> <br /> rssfeeds uppgifter <br /> <br /> röstbrevlåda**| 
-|ModernAttachment_ParentId||ModernAttachment_ParentId||
+|Modern överordnad bifogad fil-ID||ModernAttachment_ParentId|Det oföränderliga ID:t för dokumentets överordnade.|
 |Ursprungligt filnamnstillägg|NativeExtension|Native_extension|Ursprungligt tillägg för objektet.|
 |Eget filnamn|NativeFileName|Native_file_name|Det ursprungliga filnamnet för objektet.|
 |NativeMD5||Native_MD5|MD5-hash (128-bitars hashvärde) för filströmmen.|
@@ -131,7 +131,7 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |O365-datum skapat||O365_date_created|Skapat datum från SharePoint.|
 |O365 ändrat datum||O365_date_modified|Senaste ändring från SharePoint.|
 |O365 ändrat av||O365_modified_by|Ändrad av SharePoint.|
-|Överordnat ID|ParentId|Container_ID|Id för objektets överordnade objekt.|
+|Överordnat ID|ParentId|Parent_ID|Id för objektets överordnade objekt.|
 |ParentNode||Parent_node|Det e-postmeddelande som ligger närmast föregående i e-posttråden.|
 |Deltagardomäner|ParticipantDomains|Email_participant_domains|Lista över alla domäner av ett meddelande.|
 |Deltagare|Deltagare|Email_participants|Lista över alla deltagare i ett meddelande. till exempel Avsändare, Till, Kopia, Hemlig kopia.|
@@ -164,6 +164,7 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |Title|Title|Doc_title|Rubrik från dokumentets metadata.|
 |Till|Till|Email_to|Fältet Till för meddelandetyper. Format är **DisplayName \<SmtpAddress>**|
 |Unik i e-postuppsättning|UniqueInEmailSet||**False** om det finns en dubblett av den bifogade filen i dess e-postuppsättning.|
+|Id för versionsgrupp||Version_Group_Id|Grupperar ihop olika versioner av samma dokument.|
 |Åtgärdades|WasRemediated|Was_Remediated|**Sant** om objektet har åtgärdats, annars **falskt.**|
 |Räkna ord|WordCount|Word_count|Antalet ord i objektet.|
 |||||

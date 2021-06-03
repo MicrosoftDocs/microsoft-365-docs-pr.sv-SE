@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: I den här artikeln beskrivs hur du kan starta portalen med hjälp av portalstartschemaläggeren
-ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694359"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730264"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Starta portalen med hjälp SharePoint- eller portalstartschemaläggeren
 
@@ -120,7 +120,7 @@ Tidigare kunde portalstarter bara schemaläggas via SharePoint PowerShell. Nu ha
 
 ### <a name="launch-portal-with-over-100k-users"></a>Starta portalen med över 100 000 användare
 
-Om du planerar att migrera över 100 TB kan du skicka en supportbegäran enligt stegen nedan. Se till att inkludera all information som efterfrågas.
+Om du planerar att starta en portal med över 100 000 användare kan du skicka en supportbegäran enligt anvisningarna nedan. Se till att inkludera all information som efterfrågas.
 
 Gör så här:
 1. Gå till https://admin.microsoft.com

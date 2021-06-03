@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
-description: Lär dig hur du filtrerar data med hjälp av den intelligenta importfunktionen i Office 365 importtjänsten när du importerar PST-filer till Office 365.
-ms.openlocfilehash: fb978332f70495044a457147d29d8cdcf1194264
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+description: Lär dig hur du filtrerar data med hjälp av den intelligenta importfunktionen i Microsoft 365 importtjänsten när du importerar PST-filer till Microsoft 365.
+ms.openlocfilehash: fc89467e3ea9c0af86ec6b9ef6a9d7d61079e116
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684063"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730576"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrera data vid import av PST-filer
 
-Använd den nya funktionen intelligent import i Office 365 importtjänsten för att filtrera objekten i PST-filer som faktiskt importeras till målpostlådorna. Så här fungerar det:
+Använd den nya funktionen Intelligent Import i Microsoft 365 importtjänsten för att filtrera objekten i PST-filer som faktiskt importeras till målpostlådorna. Så här fungerar det:
   
 - När du har skapat och skickat ett PST-importjobb laddas PST-filer upp till ett Azure-lagringsområde i Microsoft-molnet.
   
@@ -66,7 +66,7 @@ När du har skapat ett PST-importjobb följer du de här anvisningarna för att 
   
 1. Gå till <https://compliance.microsoft.com> och logga in med autentiseringsuppgifterna för ett administratörskonto i organisationen.
     
-2. Klicka på Import av informationsstyrning Microsoft 365 vänstra **fönsterrutan i** \> **kompatibilitetscentret.**
+2. Klicka på **Informationsstyrning** \>**Importera** i vänster fönsterruta i Microsoft 365 Efterlevnadscenter.
     
     Importjobben för din organisation visas på **fliken** Importera. Värdet **för slutförd** analys i kolumnen **Status** anger importjobben som har analyserats av Microsoft 365 är klara att importeras.
     
@@ -119,7 +119,7 @@ När du har skapat ett PST-importjobb följer du de här anvisningarna för att 
   
     e. Klicka **på Importera data** för att starta importen. Den totala mängden data som ska importeras visas. 
   
-    eller
+    Eller
   
     a. Klicka **på Nej, jag vill importera allt för** att importera alla data i PST-filerna till Office 365 och klicka sedan på **Nästa.**
   

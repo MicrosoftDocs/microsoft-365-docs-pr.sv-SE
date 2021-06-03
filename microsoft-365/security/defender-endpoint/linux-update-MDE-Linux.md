@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 22ff42cb399b3d07c0ebd8ec4f947352eb6f44aa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9b7699b1a24e7e1d74a48389d02518e814911ecc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934771"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730876"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Schemalägga en uppdatering av Microsoft Defender för Endpoint (Linux)
 
-Information om hur du kör en uppdatering på Microsoft Defender för Slutpunkt på Linux finns i [Distribuera uppdateringar för Microsoft Defender för slutpunkt i Linux.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)
+Information om hur du kör en uppdatering på Microsoft Defender för Slutpunkt på Linux finns i [Distribuera uppdateringar för Microsoft Defender för slutpunkt i Linux.](/microsoft-365/security/defender-endpoint/linux-updates)
 
 Linux (och Unix) har verktyget **t.ex.tab** (liknar Schemaläggaren) för att kunna köra schemalagda aktiviteter.
 
@@ -84,7 +84,7 @@ CRON_TZ=Amerika/Los_Angeles
 
 > #<a name="ubuntu-and-debian-systems"></a>! Ubuntu och Ubuntu systems
 
-`06**sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
+`0 6 * * sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
 > [!NOTE]
 > I exemplen ovan anger vi 00 minuter, 6 timmar i 24-timmarsformat), valfri dag i månaden, valfri månad, på söndagar. [$(datum + d) -le 15] == Körs inte om det inte är lika med eller mindre än den \% 15:e dagen (3:e veckan). Det innebär att den körs var tredje söndag(7) i månaden kl. 06:00. Stilla havet (UTC -8).

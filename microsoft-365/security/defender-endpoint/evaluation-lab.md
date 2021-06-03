@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed2165c0102170256f50964180a550d8eccbce8c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f6ef1d3dbc111e5d10bf4d3c42dfd08e5e9d63e3
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932793"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730645"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender för utvärderingslabb med slutpunkt
 
@@ -45,7 +45,7 @@ Med den förenklade uppsättningen kan du fokusera på att köra egna testscenar
 
 Du har full tillgång till plattformens kraftfulla funktioner, som automatiska undersökningar, avancerad sökning och hotanalys, så att du kan testa den omfattande skyddsstacken som Defender för Slutpunkt erbjuder. 
 
-Du kan lägga till Windows 10- eller Windows Server 2019-enheter som är förkonfigurerade så att de senaste os-versionerna och rätt säkerhetskomponenter och Office 2019 Standard är installerade.
+Du kan lägga till Windows 10 eller Windows Server 2019-enheter som är förkonfigurerade att ha de senaste OS-versionerna och rätt säkerhetskomponenter på plats samt Office 2019 Standard installerat.
 
 Du kan även installera hot. Defender för Endpoint har samarbetat med branschledande simuleringsplattformar för hot som hjälper dig att testa Defender för Slutpunkt-funktioner utan att behöva lämna portalen.
 
@@ -75,9 +75,8 @@ Du kan komma åt labbet från menyn. I navigeringsmenyn väljer du **Utvärderin
 
 >[!NOTE]
 >- Beroende på vilken typ av miljöstruktur du väljer blir enheter tillgängliga under det angivna antalet timmar från aktiveringsdagen.
->- Varje miljö etableras med ett begränsat antal testenheter. När du använt de etablerade enheterna tillhandahålls inga nya enheter. En borttagna enhet uppdaterar inte antalet tillgängliga testenhet.
->- Du kan inte längre använda labbet när resurserna har använts upp. Den återställs inte eller uppdateras inte.
->- Vi rekommenderar att du använder resurserna noggrant. Labbresurserna är begränsade. De återställs inte eller uppdateras inte. 
+>- Varje miljö etableras med ett begränsat antal testenheter. När du har använt de etablerade enheterna och tagit bort dem kan du begära fler enheter. 
+>- Du kan begära labbresurser en gång i månaden. 
 
 Har du redan ett labb? Se till att aktivera de nya hoten och ha aktiva enheter.
 
@@ -109,30 +108,27 @@ När labinstallationen är klar kan du lägga till enheter och köra simuleringa
 
 
 ## <a name="add-devices"></a>Lägg till enheter
-När du lägger till en enhet i din miljö konfigurerar Defender för Endpoint en välkonfigurerad enhet med anslutningsinformation. Du kan lägga till Windows 10- eller Windows Server 2019-enheter.
+När du lägger till en enhet i din miljö konfigurerar Defender för Endpoint en välkonfigurerad enhet med anslutningsinformation. Du kan lägga Windows 10 eller Windows Server 2019-enheter.
 
-Enheten konfigureras med den senaste versionen av operativsystemet och Office 2019 Standard samt med andra appar som Java, Python och SysIntenals. 
-
-   >[!TIP]
-   > Behöver du fler enheter i labbet? Skicka ett supportbegäran om du vill att din begäran ska granskas av Defender för Endpoint-teamet. 
+Enheten konfigureras med den senaste versionen av operativsystemet och Office 2019 Standard samt andra appar som Java, Python och SysIntenals. 
 
 Om du väljer att lägga till en hotbild under installationen av lab kommer alla enheter att ha hotagent installerad på de enheter som du lägger till.
 
-Enheten introduceras automatiskt i din klientorganisation med de rekommenderade Windows-säkerhetskomponenterna påslagna och i granskningsläge – utan ansträngning från din sida. 
+Enheten introduceras automatiskt i din klientorganisation med de rekommenderade Windows och i granskningsläge – utan ansträngning från din sida. 
 
 Följande säkerhetskomponenter är förkonfigurerade i testenheterna:
 
-- [Minskning av attackytan](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
-- [Blockera vid första synen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [Kontrollerad mappåtkomst](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Exploateringsskydd](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
-- [Nätverksskydd](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
-- [Potentiellt oönskad identifiering av program](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Molnbaserat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+- [Minskning av attackytan](attack-surface-reduction.md)
+- [Blockera vid första synen](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [Kontrollerad mappåtkomst](controlled-folders.md)
+- [Exploateringsskydd](enable-exploit-protection.md)
+- [Nätverksskydd](network-protection.md)
+- [Potentiellt oönskad identifiering av program](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+- [Moln levererat skydd](cloud-protection-microsoft-defender-antivirus.md)
+- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender Antivirus är aktiverat (inte i granskningsläge). Om Microsoft Defender Antivirus blockerar dig från att köra din simulering kan du inaktivera realtidsskydd på enheten via Windows-säkerhet. Mer information finns i [Konfigurera alltid-på-skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+> Microsoft Defender Antivirus kommer att vara aktiverat (inte i granskningsläge). Om Microsoft Defender Antivirus hindrar dig från att köra din simulering kan du inaktivera realtidsskydd på enheten via Windows-säkerhet. Mer information finns i [Konfigurera alltid-på-skydd](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 Inställningar för automatisk undersökning beror på klientorganisationsinställningarna. Den konfigureras som standard semi-automatiserad. Mer information finns i [Översikt över automatiserade undersökningar.](automated-investigations.md)
 
@@ -163,10 +159,29 @@ Inställningar för automatisk undersökning beror på klientorganisationsinstä
     ![Bild på fliken Enheter](images/machines-tab.png)
     
 
-    >[!TIP]
-    >I kolumnen **Förnamnsstatus** kan du hovra över informationsikonen för att få information om installationsstatus för en agent.
+    > [!TIP]
+    > I kolumnen **Förnamnsstatus** kan du hovra över informationsikonen för att få information om installationsstatus för en agent.
+
+## <a name="request-for-more-devices"></a>Begär för fler enheter
+När alla befintliga enheter används och tas bort kan du begära ytterligare enheter. Du kan begära labbresurser en gång i månaden. 
 
 
+1. På instrumentpanelen för utvärderingslabb väljer **du Begär för fler enheter.**
+
+   ![Bild på begäran för fler enheter](images/request-more-devices.png)
+
+2. Välj din konfiguration. 
+3. Skicka begäran. 
+
+När begäran har skickats visas en grön bekräftelsebanderoll och datumet för den senaste inskickade överföringen.
+ 
+Du hittar statusen för din begäran på **fliken Användaråtgärder,** som kommer att godkännas efter bara några timmar.
+
+När de begärda enheterna har godkänts läggs de till i labbet och du kan skapa fler enheter. 
+
+
+> [!TIP]
+> Glöm inte att se vårt simuleringsbibliotek för att få ut mer av ditt lab.
 
 ## <a name="simulate-attack-scenarios"></a>Simulera attackscenarier
 Använd testenheterna för att köra egna attack simuleringar genom att ansluta till dem. 
@@ -175,7 +190,7 @@ Du kan simulera attackscenarier med hjälp av:
 - [Attackscenarierna "Gör det själv"](https://securitycenter.windows.com/tutorials)
 - Hotbild
 
-Du kan också använda [Avancerad sökning för](advanced-hunting-query-language.md) att söka efter data och [hotanalyser för](threat-analytics.md) att visa rapporter om nya hot.
+Du kan också använda [Avancerad sökning för](advanced-hunting-overview.md) att söka efter data och [hotanalyser för](threat-analytics.md) att visa rapporter om nya hot.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Gör det själv-attackscenarier
 Om du letar efter en färdig simulering kan du använda våra ["Gör det själv"-attackscenarier](https://securitycenter.windows.com/tutorials). De här skripten är säkra, har dokumenterats och är enkla att använda. De här scenarierna återspeglar Defender för Slutpunkt-funktioner och går igenom undersökningsupplevelsen.
@@ -184,7 +199,7 @@ Om du letar efter en färdig simulering kan du använda våra ["Gör det själv"
 >[!NOTE]
 >Anslutningen till testenheterna görs med RDP. Kontrollera att dina brandväggsinställningar tillåter RDP-anslutningar.
 
-1. Anslut till din enhet och kör en attack simulering genom att välja **Anslut**. 
+1. Anslut till din enhet och köra en attack simulering genom att **välja Anslut**. 
 
     ![Bild på anslutningsknappen för testenheter](images/test-machine-table.png)
 

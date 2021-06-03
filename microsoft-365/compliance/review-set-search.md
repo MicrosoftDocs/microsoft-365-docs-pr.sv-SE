@@ -1,5 +1,5 @@
 ---
-title: Fråga data i en granskningsuppsättning
+title: Skapa en fråga för innehållet i en granskningsuppsättning
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,55 +15,104 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Lär dig hur du skapar och kör en fråga i en granskningsuppsättning för att ordna data för en effektivare granskning i Advanced eDiscovery ärende.
+description: Lär dig hur du skapar och kör en fråga i en granskningsuppsättning för att ordna innehåll för en effektivare granskning i Advanced eDiscovery ärende.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5a03b0c863f9cc2050b18ce83ed11b8a71d1db4d
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 64dbeb8ad68f4188e5768a0a7e0e80ca6c22760b
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345806"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736457"
 ---
-# <a name="query-the-data-in-a-review-set"></a>Fråga data i en granskningsuppsättning
+# <a name="query-and-filter-content-in-a-review-set"></a>Fråga och filtrera innehåll i en granskningsuppsättning
 
-I de flesta fall är det bra att kunna fördjupa sig i data i en granskningsuppsättning och ordna dessa data för att underlätta en effektivare granskning. Med hjälp av Frågor i en granskningsuppsättning kan du fokusera på en delmängd dokument som uppfyller villkoren för din granskning.
+I de flesta fall kan det vara bra att gå djupare in på innehållet i en granskningsuppsättning och ordna den för att underlätta en effektivare granskning. Om du använder filter och frågor i en granskningsuppsättning kan du fokusera på en delmängd dokument som uppfyller villkoren för din granskning.
 
-## <a name="creating-and-running-a-query-in-a-review-set"></a>Skapa och köra en fråga i en granskningsuppsättning
+## <a name="default-filters"></a>Standardfilter
 
-Om du vill skapa och köra en fråga på dokument i en granskningsuppsättning **väljer du Ny fråga** i granskningsuppsättningen. När du har namn upp frågan och definierat villkoren väljer **du Spara** för att spara och köra frågan. Om du vill köra en fråga som har sparats tidigare väljer du en sparad fråga.
+I en granskningsuppsättning finns det fem standardfilter som är förinstallerade i granskningsuppsättningen:
 
-![Granska uppsättningsfrågor](../media/AeDReviewSetQueries.png)
+- Nyckelord
+- Datum
+- Avsändare/författare
+- Ämne/rubrik
+- Taggar
 
-## <a name="building-a-review-set-query"></a>Skapa en granskningsuppsättningsfråga
+![Standardfiltertyper](../media/DefaultFilterTypes.png)
 
-Du kan skapa en fråga genom att använda en kombination av nyckelord, egenskaper och villkor i villkoret Nyckelord. Du kan också gruppera villkor som ett block (kallas *villkorsgrupp)* för att skapa en mer komplex fråga. En lista och en beskrivning av metadataegenskaper som du kan söka i finns i [Dokumentmetadatafält i Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+Klicka på varje filter för att expandera det och tilldela ett värde. Klicka utanför filtret så tillämpas filtret automatiskt på granskningsuppsättningen. Följande skärmbild visar det datumfilter som har konfigurerats för att visa dokument inom ett datumintervall.
 
-### <a name="conditions"></a>Villkor
+![Standardfilter expanderat](../media/ExpandedFilter.png)
 
-Alla sökbara fält i en granskningsuppsättning har motsvarande villkor som du kan använda för att skapa frågan.
+## <a name="add-or-remove-filters"></a>Lägga till eller ta bort filter
 
-Det finns flera typer av villkor:
+Om du vill lägga till eller ta  bort filter som visas för granskningsuppsättningen väljer du Filter för att öppna filterpanelen, som visas på en utfällbladssida. 
 
-- Fritext: Ett fritextvillkor används för textfält som exempelvis ämne. Du kan lista flera sökord genom att avgränsa dem med kommatecken.
+![Filterpanel](../media/FilterPanel.png)
 
-- Datum: Ett datumvillkor används för datumfält som senast ändrad.
+De tillgängliga filtren är ordnade i fyra avsnitt:
 
-- Sökalternativ: Ett sökalternativvillkor tillhandahåller en lista med möjliga värden för det specifika fältet i din granskningsuppsättning. Det här används för fält, till exempel avsändare, där det finns ett ändlig antal möjliga värden i din granskningsuppsättning.
+- **Sök:** Filter som ger olika sökfunktioner.
 
-- Nyckelord: Ett nyckelordsvillkor är en specifik instans av fritextvillkor som du kan använda för att söka efter termer, eller använda KQL-liknande frågespråk. Se nedan för mer information.
+- **Analys &** förutsägelsekodning: Filter för egenskaper som genereras och läggs till i dokument när du kör dokumentet & e-postanalysjobb eller använder prediktiv kodningsmodeller. 
 
-### <a name="query-language"></a>Frågespråk
+- **ID:n:** Filter för alla ID-egenskaper för dokument.
 
-Utöver villkor kan du använda ett KQL-liknande frågespråk i villkoret Nyckelord för att skapa frågan. Frågespråket för granskningsuppsättningsfrågor har stöd för booleska standardoperatorer som **AND,** **OR,** **NOT** och **NEAR.** Det har också stöd för ett jokertecken (?) och ett jokertecken (*).
+- **Objektegenskaper:** Filter för dokumentegenskaper. 
 
-## <a name="filters"></a>Filter
+Expandera varje avsnitt och markera eller avmarkera filter för att lägga till eller ta bort dem i filteruppsättningen. När du lägger till ett filter visas det i filteruppsättningen. 
 
-Förutom frågor som du kan spara kan du använda granskningsuppsättningsfilter för att snabbt tillämpa ytterligare villkor på en frågeuppsättning. Med hjälp av filter kan du förfina resultatet som visas i en granskningsuppsättningsfråga.
+![Lista över filteravsnitt och egenskaper i filterpanelen](../media/FilterPanel2.png)
 
-![Filter för granskningsuppsättning](../media/AeDReviewSetFilters.png)
+> [!NOTE]
+> När du expanderar ett avsnitt i filterpanelen märker du att standardfiltertyperna är markerade. Du kan behålla dessa markerade eller avmarkera dem och ta bort dem från filteruppsättningen. 
 
-Filter skiljer sig från frågor på två väsentliga sätt:
+## <a name="filter-types"></a>Filtertyper
 
-- Filter är tillfälliga. De finns inte kvar efter den befintliga sessionen. Med andra ord kan du inte spara ett filter. Frågor sparas i granskningsuppsättningen och du kommer åt dem när du öppnar granskningsuppsättningen.
+Alla sökbara fält i en granskningsuppsättning har ett motsvarande filter som du kan använda för att filtrera objekt baserat på ett visst fält.
 
-- Filter är alltid additiva. Filter används utöver den aktuella granskningsuppsättningsfrågan. Om du tillämpar en annan fråga ersätts resultatet som returneras av den aktuella frågan.
+Det finns flera typer av filter:
+
+- **Fritext**: Ett fritextfilter används på textfält som exempelvis "Ämne". Du kan lista flera sökord genom att avgränsa dem med kommatecken.
+
+- **Datum:** Ett datumfilter används för datumfält som "Senast ändrad, datum".
+
+- **Sökalternativ:** Ett sökalternativfilter ger en lista med möjliga värden (varje värde visas med en kryssruta som du kan välja) för vissa fält i granskningen. Filtret används för fält, till exempel "Avsändare", där det finns ett ändlig antal möjliga värden i granskningsuppsättningen.
+
+- **Nyckelord:** Ett nyckelordsvillkor är en specifik instans av fritextvillkor som du kan använda för att söka efter termer. Du kan också använda KQL-liknande frågespråk i den här typen av filter. Mer information finns i avsnitten Frågespråk och Avancerat frågeverktyg i det här avsnittet.
+
+## <a name="include-and-exclude-filter-relationships"></a>Inkludera och exkludera filterrelationer
+
+Du kan ändra inkludera- och exkludera-relationen för ett visst filter. I filtret Taggar kan du till exempel utesluta objekt som är märkta med en viss tagg genom att välja **Är lika** med inget av i listrutan. 
+
+![Exkludera taggfilter](../media/TagFilterExclude.png)
+
+## <a name="save-filters-as-queries"></a>Spara filter som frågor
+
+När du är nöjd med dina filter kan du spara filterkombinationen som en filterfråga. Då kan du använda filtret i kommande granskningssessioner.
+
+Om du vill spara ett filter **väljer du Spara frågan** och ge den ett namn. Du eller andra granskare kan köra tidigare sparade filterfrågor genom att välja listrutan Sparade filterfrågor och välja en filterfråga att tillämpa på dokument som **angetts.** 
+
+![Spara en filterfråga](../media/SaveFilterQuery.png)
+
+Om du vill ta bort en filterfråga öppnar du filterpanelen och väljer papperskorgsikonen bredvid frågan.
+
+![Ta bort en filterfråga](../media/DeleteFilterQuery.png)
+
+## <a name="query-language"></a>Frågespråk
+
+Förutom att använda filter kan du också använda ett KQL-liknande frågespråk i filtret Nyckelord för att skapa din frågeuppsättning. Frågespråket för granskningsuppsättningsfrågor har stöd för booleska standardoperatorer som **AND,** **OR,** **NOT** och **NEAR.** Det har också stöd för ett jokertecken (?) och ett jokertecken (*).
+
+## <a name="advanced-query-builder"></a>Avancerat frågeverktyg
+
+Du kan också skapa mer avancerade frågor för att söka efter dokument i en granskningsuppsättning.
+
+1. Öppna filterpanelen, välj **Filter** och expandera **avsnittet** Sök.
+
+  ![Lägga till ett KQL-filter](../media/AddKQLFilter.png)
+
+2. Välj **KQL-filtret** och klicka på **Öppna frågeverktyget**.
+
+   I den här panelen kan du skapa komplexa KQL-frågor med hjälp av frågeverktyget. Du kan lägga till villkor eller villkorsgrupper som består av flera villkor som är logiskt sammankopplade av **OCH-** eller **ELLER-relationer.**
+
+   ![Använda frågeverktyget för att konfigurera komplexa filterfrågor](../media/ComplexQuery.png)

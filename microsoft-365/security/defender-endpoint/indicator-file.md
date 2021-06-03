@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 103f5d0ad9d12a37f3a3b8065f39c24d592cc252
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995063"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730540"
 ---
 # <a name="create-indicators-for-files"></a>Skapa indikatorer för filer
 
@@ -47,19 +47,19 @@ Du kan skapa indikatorer för filer på tre olika sätt:
 
 Det är viktigt att förstå följande förutsättningar innan du skapar indikatorer för filer:
 
-- Den här funktionen är tillgänglig om din organisation **använder Microsoft Defender Antivirus (i** aktivt läge) och **molnbaserat skydd är aktiverat.** Mer information finns i [Hantera molnbaserat skydd](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Den här funktionen är tillgänglig om din **organisation använder Microsoft Defender Antivirus (i aktivt läge) och** **molnbaserat skydd är aktiverat.** Mer information finns i [Hantera molnbaserat skydd](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - Klientversionen av Antimalware måste vara 4.18.1901.x eller senare. Se [Månadsplattform och motorversioner](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
 - Stöds på enheter med Windows 10, version 1703 eller senare, Windows Server 2016 och 2019.
 
-- För att börja blockera filer måste du först aktivera [funktionen "blockera eller tillåt"](advanced-features.md) i Inställningar.
+- För att börja blockera filer måste du först aktivera [funktionen "blockera eller tillåt" i](advanced-features.md) Inställningar.
 
-Den här funktionen är utformad för att förhindra att misstänkt skadlig programvara (eller potentiellt skadliga filer) laddas ned från webben. Den har för närvarande stöd för bärbara körbara (PE) filer, inklusive .exe- och .dll-filer. Täckningen utökas med tiden.
+Den här funktionen är utformad för att förhindra att misstänkt skadlig programvara (eller potentiellt skadliga filer) laddas ned från webben. Det har för närvarande stöd för bärbara körbara (PE) filer, .exe och .dll filer. Täckningen utökas med tiden.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Skapa en indikator för filer från inställningssidan
 
-1. I navigeringsfönstret väljer du **Inställningar > Indikatorer**.
+1. I navigeringsfönstret väljer du Inställningar > **Indikatorer**.
 
 2. Välj fliken **Filhash.**  
 
@@ -89,21 +89,21 @@ Filer som blockeras automatiskt av en indikator visas inte i filens Åtgärdscen
 
 Konflikter i hanteringen av certifikat- och fil-IoC-policyer följer nedanstående ordning:
 
-- Om filen inte tillåts av windows Defender-programkontrollen och AppLocker-framtvinga-principen/-principerna blockerar **du**
+- Om filen inte tillåts av Windows Defender programkontrollen och AppLocker-framtvinga-principen/-principerna blockerar **du**
 
-- Annars om filen tillåts av Defender Anti-Virus Exclusion ska du **tillåta**
+- Annars om filen tillåts av Microsoft Defender Antivirus och sedan **Tillåt**
 
 - Annars om filen blockeras eller varnas av ett block eller varnar fil-IoC ska du **blockera/varna**
 
-- Annars om filen tillåts av en IOC-princip för filen och sedan **Tillåt**
+- Annars om filen tillåts av en IoC-princip för filen klickar du på **Tillåt**
 
 - Om filen annars blockeras av ASR-regler, CFA, AV, SmartScreen och sedan **Blockera**  
 
-- Tillåt **annars** (skickar Windows Defender-programkontroll & AppLocker-principen, inga IoC-regler gäller för den)
+- Tillåt **annars** (skickar Windows Defender programkontroll & AppLocker-principen, inga IoC-regler gäller för den)
 
 Om det finns IoC-principer i konflikt med samma tillämpningstyp och mål tillämpas principen för den säkrare hashen (vilket innebär längre). En SHA-256-IoC-princip för filshashar vinner till exempel över en MD5-IoC-princip för filshashar om båda hashtyperna definierar samma fil.
 
-Observera att funktionerna för hantering av hot och sårbarhet använder fil-IoCs för tillämpning och följer konflikthanteringsordningen ovan.
+Observera att Hantering av hot och säkerhetsrisker blockerat sårbart program använder fil-IoCs för tillämpning och kommer att följa den ordning som beskrivs ovan för hantering av konflikter.
 
 ### <a name="examples"></a>Exempel
 
@@ -113,7 +113,7 @@ Observera att funktionerna för hantering av hot och sårbarhet använder fil-Io
 |Minskningsregel för attackytan |Blockera |Tillåt |Tillåt
 |Windows Defender-programreglering |Tillåt |Blockera |Tillåt |
 |Windows Defender-programreglering |Blockera |Tillåt |Blockera
-|Undantag för Microsoft Defender Antivirus |Tillåt |Blockera |Tillåt
+|Microsoft Defender Antivirus undantag |Tillåt |Blockera |Tillåt
 
 ## <a name="see-also"></a>Se även
 

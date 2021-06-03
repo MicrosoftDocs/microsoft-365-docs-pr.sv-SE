@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: I dataförlustskydd (DLP) i Säkerhetsefterlevnadscenter finns över 200 typer av känslig information som är färdiga att använda i &amp; DLP-principerna. Den här artikeln innehåller alla dessa typer av känslig information och visar vad en DLP-princip söker efter när den identifierar varje typ.
-ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: ff976389e75e96d0a018d7c5379e2831313388dc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52162916"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730480"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitetsdefinitioner för typer av känslig information
 
@@ -38,18 +38,17 @@ Nio siffror som kan vara i ett formaterat eller oformaterat mönster
 
 ### <a name="pattern"></a>Mönster
 
-Formaterat:
-- fyra siffror som börjar med 0, 1, 2, 3, 6, 7 eller 8
-- ett bindestreck
+- två siffror i områdena 00-12, 21-32, 61-72 eller 80
+- två siffror
+- Ett valfritt bindestreck
 - fyra siffror
-- ett bindestreck
+- Ett valfritt bindestreck
 - en siffra
 
-Oformaterade: nio siffror i följd som börjar med 0, 1, 2, 3, 6, 7 eller 8 
 
 ### <a name="checksum"></a>Kontrollsumma
 
-Nej
+Ja
 
 ### <a name="definition"></a>Definition
 
@@ -619,11 +618,12 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 
 ### <a name="format"></a>Format
 
-En bokstav följt av sju siffror
+Åtta eller nio alfanumeriska tecken 
 
 ### <a name="pattern"></a>Mönster
 
-En bokstav (inte en case-sensitive) följt av sju siffror
+- en bokstav (N, E, D, F, A, C, U, X) följt av 7 siffror eller
+- 2 bokstäver (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) följt av 7 siffror.
 
 ### <a name="checksum"></a>Kontrollsumma
 
@@ -632,60 +632,48 @@ Nej
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära uttrycket Regex_australia_passport_number hittar innehåll som matchar mönstret.
-- Ett nyckelord från Keyword_passport eller Keyword_australia_passport_number hittas.
+- Det reguljära `Regex_australia_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord `Keyword_australia_passport_number` från hittas.
+
+En DLP-princip har låg konfidens för att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
+- Det reguljära `Regex_australia_passport_number` uttrycket hittar innehåll som matchar mönstret.
 
 ```xml
-<!-- Australia Passport Number -->
-<Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- Australia Passport Number -->
+    <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_australia_passport_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_passport" />
-          <Match idRef="Keyword_australia_passport_number" />
-        </Any>
-   </Pattern>
-</Entity>   
+        <Match idRef="Keyword_australia_passport_number" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_australia_passport_number" />
+      </Pattern>
+    </Entity>  
 ```
 
 ### <a name="keywords"></a>Nyckelord
 
-#### <a name="keyword_passport"></a>Keyword_passport
-
-- Passport Number
-- Passport No
-- Pass #
-- Pass #
-- PassportID
-- Passportno
-- passportnumber
-- パスポート
-- パスポート番号
-- パスポートのNum
-- パスポート ＃ 
-- Numéro de passeport
-- Passeport n °
-- Passeport Non
-- Passeport #
-- Passeport #
-- PasseportNon
-- Passeportn °
-
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
+- pass #
+- pass #
+- passportid
 - pass
+- passportno
+- passport no
+- passportnumber
+- passnummer
+- passportnumbers
+- passnummer
 - passinformation
 - det här är något som är av samma dag som det
 - Commonwealth of australia
 - department of sås
-- address
-- avdelning för brand och det som är aktivt
-- visa
 - national identity card
-- passnummer
 - resedokument
 - utfärdar behörighet
-   
+
+
 ## <a name="australia-tax-file-number"></a>Australiens skattenummer
 
 ### <a name="format"></a>Format
@@ -967,7 +955,7 @@ En kombination av en bokstav, sju siffror och ett blanksteg:
     
 ### <a name="checksum"></a>Kontrollsumma
 
-inte tillämpligt
+ej tillämpligt
   
 ### <a name="definition"></a>Definition
 
@@ -2001,7 +1989,7 @@ Två bokstäver och följt av sex siffror
   
 ### <a name="checksum"></a>Kontrollsumma
 
-inte tillämpligt
+ej tillämpligt
   
 ### <a name="definition"></a>Definition
 
@@ -4230,7 +4218,7 @@ Den här typen av känslig information kan bara användas i:
   
 ### <a name="checksum"></a>Kontrollsumma
 
-inte tillämpligt
+ej tillämpligt
   
 ### <a name="definition"></a>Definition
 
@@ -4366,7 +4354,7 @@ Den här typen av känslig information kan bara användas i:
     
 ### <a name="checksum"></a>Kontrollsumma
 
-inte tillämpligt
+ej tillämpligt
   
 ### <a name="definition"></a>Definition
 
@@ -8646,7 +8634,7 @@ Mönster måste omfatta alla följande:
 
 Formatet skiljer sig åt mellan olika länder. IBAN-typen för känslig information omfattar dessa 60 länder:
 
-ad, ae, al, at, az, ba, be, bg, jan, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
+ad, ae, al, at, az, ba, be, bg, ch, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mt, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk , sm, tn, tr, vg
 
 ### <a name="checksum"></a>Kontrollsumma
 
@@ -8669,7 +8657,7 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 
 ### <a name="keywords"></a>Nyckelord
 
-Ingen
+Inga
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Internationell klassificering av den internationella klassificeringen (ICD-10-CM)
@@ -9542,7 +9530,7 @@ Två bokstäver eller siffror följt av sju siffror:
     
 ### <a name="checksum"></a>Kontrollsumma
 
-inte tillämpligt
+ej tillämpligt
   
 ### <a name="definition"></a>Definition
 
@@ -10815,7 +10803,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
   
 ### <a name="checksum"></a>Kontrollsumma
 
-inte tillämpligt
+ej tillämpligt
   
 ### <a name="definition"></a>Definition
 
@@ -11062,7 +11050,7 @@ Den här typen av känslig information kan bara användas i:
     
 ### <a name="checksum"></a>Kontrollsumma
 
-Ja
+ja
   
 ### <a name="definition"></a>Definition
 
@@ -12124,7 +12112,7 @@ nio bokstäver eller siffror
   
 ### <a name="checksum"></a>Kontrollsumma
 
-inte tillämpligt
+ej tillämpligt
   
 ### <a name="definition"></a>Definition
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Följ stegen i den här artikeln för att ge en annan anställd åtkomst till den tidigare anställdes OneDrive och Outlook data.
-ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: abcad87498f6670fe7fe2f5457321f1b3f6e0930
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634262"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730204"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Steg 4 – Ge en annan anställd tillgång OneDrive och Outlook data
 
@@ -52,6 +52,30 @@ Om du vill bevara en tidigare OneDrive måste du först ge dig själv åtkomst t
 > [!NOTE]
 > Du kan flytta eller kopiera upp till 500 MB filer och mappar i taget.<br/>
 > När du flyttar eller kopierar dokument som har versionshistorik flyttas bara den senaste versionen.  
+
+Du kan också ge en annan användare åtkomst till en tidigare anställds OneDrive.
+
+1. Logga in i <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret som</a> global administratör eller SharePoint administratör.
+
+    Om du får ett meddelande om att du inte har behörighet att komma åt administrationscentret har du inte administratörsbehörighet i din organisation.
+
+2. I den vänstra rutan väljer du **Administrationscenter** \> **SharePoint**. (Eventuellt måste du välja **Visa alla för** att listan över administrationscenter ska visas.)
+
+3. Om det klassiska SharePoint administrationscentret visas väljer du **Öppna nu** högst upp på sidan för att SharePoint administrationscentret.
+
+4. I det vänstra fönstret väljer du **Fler funktioner.**
+
+5. Under **Användarprofiler** väljer du **Öppna**.
+
+6. Under **Personer** väljer du **Hantera användarprofiler.**
+
+7. Ange den tidigare anställdes namn och välj **Sök**.
+
+8. Högerklicka på användaren och välj sedan Hantera **webbplatssamlingens ägare.**
+
+9. Lägg till användaren i Administratörer **för webbplatssamlingar** och välj **Ok.**
+
+10. Användaren kommer nu att kunna komma åt den tidigare anställdas e-OneDrive via URL-OneDrive. 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>Återkalla administratörsåtkomst till en användares OneDrive
 

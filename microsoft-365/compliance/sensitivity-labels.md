@@ -22,12 +22,12 @@ description: Använd känslighetsetiketter från Microsoft Information Protectio
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 171f449a8b73ff42113358d50dbe8bde909f5d4d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625191"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730252"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Lär dig mer om känslighetsetiketter
 
@@ -182,7 +182,7 @@ När du konfigurerar en etikettprincip kan du göra följande:
 
 - **Välj vilka användare och grupper som ska se etiketterna.** Etiketter kan publiceras till en viss användare eller e-postaktiverad säkerhetsgrupp, distributionsgrupp eller Microsoft 365-grupp (som kan ha [dynamiskt medlemskap](/azure/active-directory/users-groups-roles/groups-create-rule)) i Azure AD.
 
-- **Använd en standardetikett** för alla nya dokument och e-postmeddelanden utan etikett som skapas av användare och grupper som ingår i etikettprincipen, och samma eller en annan standardetikett för behållare (om du har [aktiverat känslighetsetiketter för Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](sensitivity-labels-teams-groups-sites.md)). Med den här inställningen använder Azure Information Protection-klienten för enhetlig etikettering även standardetiketten för befintliga dokument som saknar etikett. Användare kan alltid ändra standardetiketten om det inte är rätt etikett för dokumentet eller e-postmeddelandet.
+- **Ange en standardetikett** för nya dokument, omärkta e-postmeddelanden och nya behållare (när du har [aktiverat känslighetsetiketter för Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](sensitivity-labels-teams-groups-sites.md)). Du kan ange samma etikett för alla tre objektstyper eller olika etiketter. När du anger en standardetikett för dokument tillämpar Azure Information Protection-klienten för enhetlig etikettering även samma etikett på befintliga dokument som är omärkta. Användare kan alltid ändra standardetiketten om det inte är rätt etikett för dokumentet eller e-postmeddelandet.
     
     Överväg att använda en standardetikett för att ange en grundnivå för skyddsinställningar som du vill använda för allt innehåll. Men utan användarutbildning och andra kontroller kan den här inställningen också leda till felaktiga etiketter. Det är oftast en dålig idé att välja en etikett som tillämpar kryptering som standardetikett för dokument. Många organisationer behöver till exempel skicka och dela dokument med externa användare som kanske inte har program som stöder krypteringen eller som kanske inte använder ett konto som kan auktoriseras. Mer information om det här scenariot finns i [Dela krypterade dokument med externa användare](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 
@@ -190,7 +190,7 @@ När du konfigurerar en etikettprincip kan du göra följande:
 
     ![Uppmaning där användarna anger en motivering](../media/Sensitivity-label-justification-required.png)
 
-- **Kräv att användare använder en etikett** med ett alternativ för e-post och dokument och ett annat för behållare. De här alternativen, som även kallas obligatorisk etikettering, gör att en etikett måste användas innan användarna kan spara dokument och skicka e-postmeddelanden och skapa nya grupper eller webbplatser.
+- **Kräv att användare anger en etikett** för dokument och e-postmeddelanden, bara dokument och för behållare. De här alternativen, som även kallas obligatorisk etikettering, gör att en etikett måste användas innan användarna kan spara dokument och skicka e-postmeddelanden och skapa nya grupper eller webbplatser.
     
     För dokument och e-postmeddelanden kan en etikett tilldelas manuellt av användaren, automatiskt som ett resultat av ett villkor som du konfigurerar eller tilldelas som standard (standardalternativet för etiketter som beskrevs tidigare). Ett exempel på en uppmaning som visas i Outlook när en användare måste tilldela en etikett:
 
