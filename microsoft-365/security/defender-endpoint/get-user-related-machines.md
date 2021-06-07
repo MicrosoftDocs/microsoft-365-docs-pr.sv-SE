@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 135dc1d76a1a90cd7fffba0638211d716865cb0c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 230af2311c52437e01cdb28d823236347cf34b8f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166805"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769908"
 ---
 # <a name="get-user-related-machines-api"></a>Hämta API för användarrelaterade datorer
 
@@ -70,7 +71,7 @@ GET /api/users/{id}/machines
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Type (Typ) | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

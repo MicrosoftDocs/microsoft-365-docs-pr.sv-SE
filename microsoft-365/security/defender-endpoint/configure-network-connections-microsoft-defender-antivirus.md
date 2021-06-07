@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/17/2021
+ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ef5a9ffdf45a2f8e7f262ae7f969cd19e848b7a5
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: ca5737a0224825a0c88159c4a3931cc0c310b69b
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572531"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788457"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Konfigurera och verifiera nätverksanslutningar för Microsoft Defender Antivirus
 
@@ -29,12 +29,12 @@ ms.locfileid: "52572531"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Om du Microsoft Defender Antivirus att moln levererat-skydd fungerar korrekt måste du konfigurera nätverket så att anslutningar tillåts mellan slutpunkterna och vissa Microsoft-servrar. Den här artikeln innehåller en lista över de anslutningar som måste tillåtas, till exempel genom att använda brandväggsregler, och innehåller instruktioner för att verifiera anslutningen. Om du konfigurerar skyddet på rätt sätt får du bästa möjliga värde från dina moln leveransskyddstjänster.
+För att Microsoft Defender Antivirus att moln levererat-skydd fungerar korrekt måste säkerhetsteamet konfigurera nätverket så att anslutningar tillåts mellan slutpunkterna och vissa Microsoft-servrar. Den här artikeln innehåller en lista över de anslutningar som måste tillåtas, till exempel genom att använda brandväggsregler, och innehåller instruktioner för att verifiera anslutningen. Om du konfigurerar skyddet på rätt sätt får du bästa möjliga värde från dina moln leveransskyddstjänster.
 
 Mer information om [nätverksanslutningen finns i blogginlägget Viktiga](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) ändringar av Microsoft Active Protection Services-slutpunkten.
 
 > [!TIP]
-> Du kan också besöka demowebbplatsen Microsoft Defender för slutpunkt [på demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) för att bekräfta att följande funktioner fungerar:
+> Besök demowebbplatsen Microsoft Defender för slutpunkt [på demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) för att bekräfta att följande funktioner fungerar:
 >
 > - Molnbaserat skydd
 > - Fast learning (inklusive block vid första synen)
@@ -42,35 +42,34 @@ Mer information om [nätverksanslutningen finns i blogginlägget Viktiga](https:
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Tillåt anslutningar till Microsoft Defender Antivirus molntjänsten
 
-Den Microsoft Defender Antivirus tjänst i molnet ger snabbt och starkt skydd för dina slutpunkter. Aktivering av den molnbaserade skyddstjänsten är valfri, men vi rekommenderar starkt att den ger ett viktigt skydd mot skadlig programvara på slutpunkter och i nätverket.
+Den Microsoft Defender Antivirus tjänst i molnet ger snabbt och starkt skydd för dina slutpunkter. Aktivering av den molnbaserade skyddstjänsten är valfri, men vi rekommenderar starkt att den ger ett viktigt skydd mot skadlig programvara på slutpunkter och i nätverket. Mer [information om](enable-cloud-protection-microsoft-defender-antivirus.md) hur du aktiverar tjänsten med Intune, Microsoft Endpoint Configuration Manager, Grupprincip, PowerShell-cmdlets eller på enskilda klienter i Windows-säkerhet-appen finns i Aktivera moln levererat skydd. 
+
+När du har aktiverat tjänsten kan du behöva konfigurera nätverket eller brandväggen för att tillåta anslutningar mellan den och dina slutpunkter. Eftersom ditt skydd är en molntjänst måste datorerna ha åtkomst till Internet och kunna nå Microsoft Defender för Office 365 maskininlärningstjänster. Exkludera inte URL:en `*.blob.core.windows.net` från någon typ av nätverksinspektion. 
 
 > [!NOTE]
 > Den Microsoft Defender Antivirus molntjänsten är en mekanism för att tillhandahålla uppdaterat skydd till nätverket och slutpunkterna. Trots att det kallas för molntjänst är det inte bara skydd för filer som lagras i molnet utan använder distribuerade resurser och maskininlärning för att ge skydd till slutpunkterna i en takt som är mycket snabbare än traditionella säkerhetsintelligensuppdateringar.
 
-Mer [information om](enable-cloud-protection-microsoft-defender-antivirus.md) hur du aktiverar tjänsten med Intune, Microsoft Endpoint Configuration Manager, Grupprincip, PowerShell-cmdlets eller på enskilda klienter i Windows-säkerhet-appen finns i Aktivera moln levererat skydd. 
+## <a name="services-and-urls"></a>Tjänster och URL:er
 
-När du har aktiverat tjänsten kan du behöva konfigurera nätverket eller brandväggen för att tillåta anslutningar mellan den och dina slutpunkter.
+I tabellen i det här avsnittet visas tjänsterna och deras associerade webbadresser (URL:er). 
 
-Eftersom ditt skydd är en molntjänst måste datorerna ha åtkomst till Internet och kunna nå Microsoft Defender för Office 365 maskininlärningstjänster. Exkludera inte URL:en `*.blob.core.windows.net` från någon typ av nätverksinspektion. 
+Kontrollera att det inte finns några brandväggs- eller nätverksfiltreringsregler som nekar åtkomst till dessa URL:er. I annat fall kan du behöva skapa en tillåta-regel specifikt för dem (exklusive `*.blob.core.windows.net` URL-adressen). URL:erna i följande tabell använder port 443 för kommunikation.
 
-I tabellen nedan visas tjänsterna och deras tillhörande URL:er. Kontrollera att det inte finns några brandväggs- eller nätverksfiltreringsregler som nekar åtkomst till url-adresserna, eller så kan du behöva skapa en tillåta-regel specifikt för dem (undantaget `*.blob.core.windows.net` URL:en). Omnämnande URL:er använder port 443 för kommunikation.
-
-
-| **Tjänst**| **Beskrivning** |**URL** |
-| :--: | :-- | :-- |
-| Microsoft Defender Antivirus moln levererad skyddstjänst, även kallad Microsoft Active Protection Service (MAPS)|Används av Microsoft Defender Antivirus för att ge moln levererat skydd|`*.wdcp.microsoft.com` <br/> `*.wdcpalt.microsoft.com` <br/> `*.wd.microsoft.com`|
-| Microsoft Update Service (MU) <br/> Windows Uppdateringstjänst (WU)|  Säkerhetsinformation och produktuppdateringar   |`*.update.microsoft.com` <br/> `*.delivery.mp.microsoft.com`<br/> `*.windowsupdate.com` <br/><br/> Mer information finns [i Anslutningsslutpunkter för Windows Uppdatering](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|Alternativ nedladdningsplats för säkerhetsintelligensuppdateringar (ADL)|   Alternativ plats för Microsoft Defender Antivirus säkerhetsintelligensuppdateringar om den installerade säkerhetsintelligensen är in date (7 eller fler dagar efter)|    `*.download.microsoft.com`  </br> `*.download.windowsupdate.com`</br>  `go.microsoft.com`</br> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
-| Lagring av inskickade skadlig programvara|Upload plats för filer som skickats till Microsoft via formulär för inskickning eller automatiskt exempel    | `ussus1eastprod.blob.core.windows.net` <br/>    `ussus2eastprod.blob.core.windows.net` <br/>    `ussus3eastprod.blob.core.windows.net` <br/>    `ussus4eastprod.blob.core.windows.net` <br/>    `wsus1eastprod.blob.core.windows.net` <br/>    `wsus2eastprod.blob.core.windows.net` <br/>    `ussus1westprod.blob.core.windows.net` <br/>    `ussus2westprod.blob.core.windows.net` <br/>    `ussus3westprod.blob.core.windows.net` <br/>    `ussus4westprod.blob.core.windows.net` <br/>    `wsus1westprod.blob.core.windows.net` <br/>    `wsus2westprod.blob.core.windows.net` <br/>    `usseu1northprod.blob.core.windows.net` <br/>    `wseu1northprod.blob.core.windows.net` <br/>    `usseu1westprod.blob.core.windows.net` <br/>    `wseu1westprod.blob.core.windows.net` <br/>    `ussuk1southprod.blob.core.windows.net` <br/>    `wsuk1southprod.blob.core.windows.net` <br/>    `ussuk1westprod.blob.core.windows.net` <br/>    `wsuk1westprod.blob.core.windows.net` |
-| Certifikatåterkallningslista (CRL)|Används av Windows när du skapar SSL-anslutningen till KARTOR för att uppdatera CRL   | `http://www.microsoft.com/pkiops/crl/` <br/> `http://www.microsoft.com/pkiops/certs` <br/>   `http://crl.microsoft.com/pki/crl/products` <br/> `http://www.microsoft.com/pki/certs` |
-| Symbolarkiv|Används av Microsoft Defender Antivirus för att återställa vissa kritiska filer under åtgärdsflöden  | `https://msdl.microsoft.com/download/symbols` |
-| Universell telemetriklient| Används av Windows för att skicka klientdiagnostikdata. Microsoft Defender Antivirus använder telemetri för övervakning av produktkvalitet   | Uppdateringen använder SSL (TCP Port 443) för att ladda ned manifest och ladda upp diagnostikdata till Microsoft som använder följande DNS-slutpunkter:   `vortex-win.data.microsoft.com` <br/>   `settings-win.data.microsoft.com`|
+| Tjänst och beskrivning | URL |
+|----|---- |
+| Microsoft Defender Antivirus moln levererad skyddstjänst, även kallad Microsoft Active Protection Service (MAPS)<p>Den här tjänsten används av Microsoft Defender Antivirus för att ge moln levererat skydd|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
+| Microsoft Update Service (MU) och Windows Update Service (WU) <p>Dessa tjänster tillåter säkerhetsinformation och produktuppdateringar   |`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> Mer information finns i [Anslutningsslutpunkter för Windows Uppdatering](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
+|Alternativ nedladdningsplats för säkerhetsintelligensuppdateringar (ADL)<p>Det här är en alternativ plats Microsoft Defender Antivirus säkerhetsintelligensuppdateringar om den installerade säkerhetsintelligensen är in datera (7 eller fler dagar efter)|  `*.download.microsoft.com`  <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+| Lagring av inskickade skadlig programvara <p>Det här är uppladdningsplatsen för filer som skickats till Microsoft via formulär för inskickning eller automatisk exempelinskickning | `ussus1eastprod.blob.core.windows.net` <p>    `ussus2eastprod.blob.core.windows.net` <p>    `ussus3eastprod.blob.core.windows.net` <p>    `ussus4eastprod.blob.core.windows.net` <p>    `wsus1eastprod.blob.core.windows.net` <p>    `wsus2eastprod.blob.core.windows.net` <p>    `ussus1westprod.blob.core.windows.net` <p>    `ussus2westprod.blob.core.windows.net` <p>    `ussus3westprod.blob.core.windows.net` <p>    `ussus4westprod.blob.core.windows.net` <p>    `wsus1westprod.blob.core.windows.net` <p>    `wsus2westprod.blob.core.windows.net` <p>    `usseu1northprod.blob.core.windows.net` <p>    `wseu1northprod.blob.core.windows.net` <p>    `usseu1westprod.blob.core.windows.net` <p>    `wseu1westprod.blob.core.windows.net` <p>    `ussuk1southprod.blob.core.windows.net` <p>    `wsuk1southprod.blob.core.windows.net` <p>    `ussuk1westprod.blob.core.windows.net` <p>    `wsuk1westprod.blob.core.windows.net` |
+| Certifikatåterkallningslista (CRL) <p>Den här listan används av Windows när SSL-anslutningen skapas till KARTOR för att uppdatera CRL   | `http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p>   `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs` |
+| Symbolarkiv <p>Symbolarkivet används av Microsoft Defender Antivirus återställa vissa kritiska filer under åtgärdsflöden   | `https://msdl.microsoft.com/download/symbols` |
+| Universell telemetriklient <p>Den här klienten används av Windows för att skicka klientdiagnostikdata<p> Microsoft Defender Antivirus använder telemetri för övervakning av produktkvalitet    | Uppdateringen använder SSL (TCP Port 443) för att ladda ned manifest och ladda upp diagnostikdata till Microsoft som använder följande DNS-slutpunkter: <p> `vortex-win.data.microsoft.com` <p>   `settings-win.data.microsoft.com`|
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>Verifiera anslutningar mellan ditt nätverk och molnet
 
 När du har tillått webbadresserna ovan kan du testa om du är ansluten till Microsoft Defender Antivirus-molntjänsten och rapporterar och tar emot information på rätt sätt för att säkerställa att du är helt skyddad.
 
-**Använd cmdline-verktyget för att verifiera moln levererat skydd:**
+### <a name="use-the-cmdline-tool-to-validate-cloud-delivered-protection"></a>Använda cmdline-verktyget för att verifiera moln levererat skydd
 
 Använd följande argument med kommandoradsverktyget Microsoft Defender Antivirus ( ) för att verifiera att nätverket kan kommunicera Microsoft Defender Antivirus `mpcmdrun.exe` molntjänsten:
 
@@ -83,7 +82,7 @@ Använd följande argument med kommandoradsverktyget Microsoft Defender Antiviru
 
 Mer information finns i [Hantera Microsoft Defender Antivirus med mpcmdrun.exe-kommandoradsverktyget](command-line-arguments-microsoft-defender-antivirus.md).
 
-**Försök att ladda ned en falsk skadlig fil från Microsoft:**
+### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Försök att ladda ned en falsk skadlig fil från Microsoft
 
 Du kan ladda ned en exempelfil Microsoft Defender Antivirus kan identifiera och blockera om du är korrekt ansluten till molnet.
 
@@ -115,12 +114,3 @@ Du ser också en identifiering under Hot i karantän i avsnittet **Genomsökning
 
    I Windows händelseloggen visas också [Windows Defender klienthändelse-ID 1116.](troubleshoot-microsoft-defender-antivirus.md)
 
-## <a name="related-articles"></a>Relaterade artiklar
-
-- [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-
-- [Aktivera molnbaserat skydd](enable-cloud-protection-microsoft-defender-antivirus.md)
-
-- [Kommandoradsargument](command-line-arguments-microsoft-defender-antivirus.md)
-
-- [Viktiga ändringar av slutpunkten Microsoft Active Protection Services](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006)

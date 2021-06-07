@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: 951f78ba361a12e404a5cce2071f931eab30c43f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689219"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778360"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exportera bedömningar av säkerhetsproblem för programvara per enhet
 

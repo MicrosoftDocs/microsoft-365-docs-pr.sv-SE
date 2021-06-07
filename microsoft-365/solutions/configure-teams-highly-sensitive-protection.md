@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Lär dig hur du distribuerar team med skydd för mycket känslig data.
-ms.openlocfilehash: 7c5485a008434b351eebbec3ea1f20b10d82278a
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583694"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788361"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Konfigurera team med skydd för mycket känslig data
 
@@ -38,6 +38,13 @@ Den mycket känsliga nivån erbjuder följande ytterligare skydd över grundniv�
 - En mer restriktiv länktyp för standarddelning
 - Endast teamägare kan skapa privata kanaler.
 - Åtkomstförfrågningar för den associerade SharePoint-webbplatsen är inaktiverade.
+
+## <a name="video-demonstration"></a>Videodemonstration
+
+Titta på den här videon för en genomgång av procedurerna som beskrivs i den här artikeln.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NzI7]
 
 ## <a name="guest-sharing"></a>Gästdelning
 

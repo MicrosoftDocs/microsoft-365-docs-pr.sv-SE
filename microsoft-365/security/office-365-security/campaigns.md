@@ -1,5 +1,5 @@
 ---
-title: Kampanjvyer i Microsoft Defender för Office 365-abonnemang
+title: Kampanjvyer i Microsoft Defender för Office 365 plan
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,12 +19,12 @@ ms.collection:
 description: Läs mer om kampanjvyer i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3c84b9e6253dd813ff930314fc2c1d0a947e94e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 04e3d76271e95d36d73dd473076029cb60c06900
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207029"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779469"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Kampanjvyer i Microsoft Defender för Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "51207029"
 **Gäller för**
 - [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
 
-Kampanjvyer är en funktion i Microsoft Defender för Office 365 abonnemang 2 (till exempel Microsoft 365 E5 eller organisationer med tillägget Defender för Office 365 abonnemang 2). Kampanjvyer i säkerhets- & säkerhets- och efterlevnadscenter identifierar och kategoriserar nätfiskeattacker i tjänsten. Kampanjvyer kan hjälpa dig att:
+Kampanjvyer är en funktion i Microsoft Defender för Office 365 abonnemang 2 (till exempel Microsoft 365 E5 eller organisationer med tillägget Defender Office 365 abonnemang 2). Kampanjvyer i Microsoft 365 säkerhetscenter identifierar och kategoriserar nätfiskeattacker i tjänsten. Kampanjvyer kan hjälpa dig att:
 
 - Undersök effektivt och svara på nätfiskeattacker.
 - Bättre förståelse för attackens omfattning.
@@ -54,20 +54,20 @@ Microsoft använder sig av de omfattande mängder information om skydd mot nätf
 
 En kampanj kan vara kortlivad eller kan omfatta flera dagar, veckor eller månader med aktiva och inaktiva perioder. En kampanj kan startas mot din specifika organisation eller din organisation kan vara en del av en större kampanj i flera företag.
 
-## <a name="campaign-views-in-the-security--compliance-center"></a>Kampanjvyer i Säkerhets- & Säkerhets- och efterlevnadscenter
+## <a name="campaign-views-in-the-security-center"></a>Kampanjvyer i säkerhetscentret
 
-Kampanjvyer finns i [Säkerhets- & Säkerhets- och efterlevnadscenter](https://protection.office.com) på **kampanjer för** \> **hothantering** eller direkt på <https://protection.office.com/campaigns> .
+Kampanjvyer finns i [säkerhetscentret Microsoft 365](https://security.microsoft.com) **e-post och samarbetskampanjer** \> , & direkt på <https://security.microsoft.com/campaigns> .
 
-![Översikt över kampanjer i Säkerhets- & Efterlevnadscenter](../../media/campaigns-overview.png)
+![Översikt över kampanjer i Microsoft 365 säkerhetscenter](../../media/campaigns-overview.png)
 
 Du kan också komma åt kampanjvyer från:
 
-- **Hothantering** \> **Utforskaren** \> **Visa** \> **Kampanjer**
-- **Hothantering** \> **Utforskaren** \> **Visa** \> **All e-post** \> **Fliken** Kampanj
-- **Hothantering** \> **Utforskaren** \> **Visa** \> **Phish** \> **Fliken** Kampanj
-- **Hothantering** \> **Utforskaren** \> **Visa** \> **Skadlig programvara** \> **Fliken** Kampanj
+- **Skicka e& och samarbete** \> **Utforskaren** \> **Visa** \> **Kampanjer**
+- **Skicka e& och samarbete** \> **Utforskaren** \> **Visa** \> **All e-post** \> **Fliken** Kampanj
+- **Skicka e& och samarbete** \> **Utforskaren** \> **Visa** \> **Phish** \> **Fliken** Kampanj
+- **Skicka e& och samarbete** \> **Utforskaren** \> **Visa** \> **Skadlig programvara** \> **Fliken** Kampanj
 
-För att komma åt kampanjvyer måste du vara medlem  i rollgrupperna Organisationshantering, Säkerhetsadministratör eller Säkerhetsläsare i Säkerhets- & Efterlevnadscenter. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+För att komma åt kampanjvyer måste du vara medlem  i rollgrupperna Organisationshantering, Säkerhetsadministratör eller Säkerhetsläsare i säkerhetscentret. Mer information finns i [Behörigheter i Microsoft 365 säkerhetscenter och Microsoft 365 säkerhetscenter.](permissions-microsoft-365-security-center.md)
 
 ## <a name="campaigns-overview"></a>Översikt över kampanjer
 
@@ -78,7 +78,7 @@ På **standardfliken** Kampanj visar **området Kampanjtyp** ett stapeldiagram s
 > [!TIP]
 > Om du inte ser några kampanjdata kan du prova att ändra datumintervallet eller [filtren](#filters-and-settings).
 
-På resten av översiktssidan visas följande information på **fliken** Kampanj:
+Tabellen under diagrammet på översiktssidan visar följande information på **fliken** Kampanj:
 
 - **Namn**
 
@@ -104,13 +104,13 @@ På resten av översiktssidan visas följande information på **fliken** Kampanj
 
   Observera att **Click rate inte** används i skadlig programvara.
 
-- **Besökt:** Hur många användare som faktiskt tog sig fram till nyttolastwebbplatsen. Om det finns **klickade** värden, men säkra länkar blockerade åtkomsten till webbplatsen, är det här värdet noll.
+- **Besökt:** Hur många användare som faktiskt tog sig fram till nyttolastwebbplatsen. Om det finns **klickade** värden, Valv men länkar blockerad åtkomst till webbplatsen, är det här värdet noll.
 
 På **fliken Kampanjens** ursprung visas meddelandekällorna på en världskarta.
 
 ### <a name="filters-and-settings"></a>Filter och inställningar
 
-Längst upp på sidan Kampanjvyer finns det flera filter- och frågeinställningar som hjälper dig att hitta och isolera specifika kampanjer.
+Längst upp på sidan **Kampanj finns** det flera filter- och frågeinställningar som hjälper dig att hitta och isolera specifika kampanjer.
 
 ![Kampanjfilter](../../media/campaign-filters-and-settings.png)
 
@@ -131,7 +131,6 @@ De filtrerbara kampanjegenskaper som är tillgängliga **i** knappen Kampanjtyp 
   - **Filnamn på bifogad fil**
   - **Familj för skadlig programvara**
   - **Taggar:** Användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton). Mer information om användartaggar finns i [Användartaggar.](user-tags.md)
-  - **System åsidosättningar**
   - **Leveransåtgärd**
   - **Ytterligare åtgärd**
   - **Directionality**
@@ -142,11 +141,13 @@ De filtrerbara kampanjegenskaper som är tillgängliga **i** knappen Kampanjtyp 
 
 - **Avancerat:**
   - **Internetmeddelande-ID:** Tillgängligt i **meddelande-ID-sidhuvudet** i meddelandehuvudet. Ett exempelvärde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observera vinkelparenteserna).
-  - **Nätverksmeddelande-ID:** Ett GUID-värde som är tillgängligt i huvudfältet **X-MS-Exchange-Organization-Network-Message-Id** i meddelandehuvudet.
+  - **Nätverksmeddelande-ID:** Ett GUID-värde som är tillgängligt i **huvudfältet X-MS-Exchange-Organization-Network-Message-Id** i meddelandehuvudet.
   - **Sender IP**
-  - **SHA256 för bifogade** filer: Om du vill hitta HASH-värdet för SHA256 för en fil i Windows kör du följande kommando i kommandotolken: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
+  - **SHA256** för bifogade filer: Om du vill hitta HASH-värdet för SHA256 för en fil i Windows kör du följande kommando i kommandotolken: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
   - **Kluster-ID**
+  - **Aviserings-ID**
   - **Aviseringsprincip-ID**
+  - **Kampanj-ID**
   - **ZAP URL-signal**
 
 - **URL:er:**
@@ -164,11 +165,11 @@ Om du vill använda mer avancerad filtrering, t.ex. filtrering efter flera egens
 
 När du är klar klickar du på **knappen** Fråga.
 
-När du har skapat ett grundläggande eller avancerat filter kan du spara det med hjälp **av Spara fråga** eller Spara fråga **som**. När du senare återgår till kampanjvyer kan du läsa in ett sparat filter genom att klicka **på Sparade frågeinställningar.**
+När du har skapat ett grundläggande eller avancerat filter kan du spara det med hjälp **av Spara fråga** eller Spara fråga **som**. När du senare kommer tillbaka till sidan Kampanjer **kan** du läsa in ett sparat filter genom att klicka på **Sparade frågeinställningar.**
 
 Om du vill exportera diagrammet eller listan med kampanjer klickar du på **Exportera** och väljer **Exportera diagramdata** eller **Exportera kampanjlista**.
 
-Om du har en Microsoft Defender för slutpunkt-prenumeration kan du klicka på **MDE-inställningar** för att ansluta till eller koppla bort kampanjerna med Microsoft Defender för Slutpunkt. Mer information finns i Integrera [Microsoft Defender för Office 365 med Microsoft Defender för slutpunkt.](integrate-office-365-ti-with-mde.md)
+Om du har en Microsoft Defender för slutpunkt-prenumeration kan du klicka på **MDE Inställningar** att ansluta till eller koppla bort kampanjerna med Microsoft Defender för Slutpunkt. Mer information finns i Artikeln [om att integrera Microsoft Defender för Office 365 med Microsoft Defender för slutpunkt.](integrate-office-365-ti-with-mde.md)
 
 ## <a name="campaign-details"></a>Kampanjinformation
 
@@ -178,30 +179,26 @@ När du klickar på namnet på en kampanj visas kampanjinformationen i en utfäl
 
 Högst upp i vyn med kampanjinformation finns följande kampanjinformation:
 
-- **ID**: Unikt kampanj-ID.
-
-- **Startade** **och avslutades:** Startdatum och slutdatum för kampanjen. Observera att de här datumen kan utökas ytterligare än de filterdatum du valde på översiktssidan.
-
-- **Påverkan:** Det här avsnittet innehåller följande data för det datumintervallfilter du valde (eller som du valde i tidslinjen):
-  - Det totala antalet mottagare.
-  - Antalet meddelanden som har "Inkorgen" (det vill säga levererats till Inkorgen, inte till mappen Skräppost).
-  - Hur många användare som klickade på URL-nyttolasten i nätfiskemeddelandet.
-  - Hur många användare som besökt URL:en.
-
-- **Riktad**: Procentandelen som beräknas av: (antalet kampanjmottagare i organisationen) / (det totala antalet mottagare i kampanjen i alla organisationer i tjänsten). Observera att det här värdet beräknas över hela kampanjens livslängd och ändras inte baserat på datumfilter.
-
-- En interaktiv tidslinje med kampanjaktivitet: Tidslinjen visar aktiviteten under hela kampanjens livstid. Som standard innehåller det skuggade området filtret för datumintervall som du valde i översikten. Du kan klicka och dra för att välja en specifik startpunkt och ändpunkt, vilket ändrar <u>de data  </u>som visas i effektområdet och på resten av sidan enligt beskrivningen i nästa avsnitt .
-
-I namnlisten kan du klicka på nedskrivningsikonen Ladda ned kampanj och ladda ned kampanjinformationen till ett **Word-dokument** ![ (standardnamnet ](../../media/download-campaign-write-up-button.png) CampaignReport.docx). Observera att nedladdningen innehåller information om hela kampanjens livslängd (inte bara de filterdatum du valde).
+- **Kampanj-ID:** Den unika kampanjidentifieraren.
+- **Aktivitet**: Kampanjens varaktighet och aktivitet.
+- Följande data för det datumintervallfilter du valde (eller som du väljer på tidslinjen):
+- **Påverkan**
+- **Meddelanden**: Det totala antalet mottagare.
+- **Inkorg:** Antalet meddelanden som har levererats till Inkorgen, inte till mappen Skräppost.
+- **Klickad länk:** Hur många användare som klickade på URL-nyttolasten i nätfiskemeddelandet.
+- **Länk som besökts:** Hur många användare som besökt URL:en.
+- **Riktad(%)**: Procentandelen som beräknas av: (antalet kampanjmottagare i organisationen) / (det totala antalet mottagare i kampanjen i alla organisationer i tjänsten). Observera att det här värdet beräknas över hela kampanjens livslängd och ändras inte baserat på datumfilter.
+- Filter för startdatum/starttid och slutdata/-tid för kampanjflödet enligt beskrivningen i nästa avsnitt.
+- En interaktiv tidslinje med kampanjaktivitet: Tidslinjen visar aktiviteten under hela kampanjens livstid. Du kan hovra över datapunkterna i diagrammet om du vill se antalet identifierade meddelanden.
 
 ![Kampanjinformation](../../media/campaign-details-campaign-info.png)
 
 ### <a name="campaign-flow"></a>Kampanjflöde
 
-I mitten av vyn med kampanjinformation visas viktig information om kampanjen i avsnittet **Flöde** i ett vågrätt flödesdiagram (kallas _Sankey-diagram)._ Den här informationen hjälper dig att förstå kampanjens element och hur de kan påverka din organisation.
+I mitten av vyn med kampanjinformation visas viktig information om kampanjen i ett vågrätt flödesschema (kallas _Sankey-diagram)._ Den här informationen hjälper dig att förstå kampanjens element och hur de kan påverka din organisation.
 
 > [!TIP]
-> Informationen som visas i **flödesschemat** styrs av det skuggade datumintervallet på tidslinjen enligt beskrivningen i föregående avsnitt.
+> Informationen som visas i flödesschemat styrs av filtret för datumintervall på tidslinjen enligt beskrivningen i föregående avsnitt.
 
 ![Kampanjinformation som inte innehåller klick på användar-URL](../../media/campaign-details-no-recipient-actions.png)
 
@@ -213,18 +210,20 @@ Diagrammet innehåller följande information:
 - **Avsändardomäner**
 - **Filtrera omdömen: Bedömningsvärden** är relaterade till tillgängliga filterutskick av nätfiske och skräppost enligt beskrivningen i [Skräppostskyddsrubriker.](anti-spam-message-headers.md) De tillgängliga värdena beskrivs i följande tabell:
 
+  <br>
+
   ****
 
   |Värde|Skräppostfilter för bedömning|Beskrivning|
   |---|---|---|
-  |**Tillåten**|`SFV:SKN` <p> `SFV:SKI`|Meddelandet har markerats som inte skräppost och/eller hoppats över filtrering innan det utvärderas av skräppostfiltrering. Meddelandet har till exempel markerats som inte skräppost av en e-postflödesregel (kallas även transportregel). <p> Meddelandet hoppade över skräppostfiltrering av andra orsaker. Till exempel ser avsändaren och mottagaren ut att vara i samma organisation.|
-  |**Blockerad**|`SFV:SKS`|Meddelandet markerades som skräppost innan det utvärderades av skräppostfiltrering. Till exempel efter en e-postflödesregel.|
+  |**Tillåts**|`SFV:SKN` <p> `SFV:SKI`|Meddelandet har markerats som inte skräppost och/eller hoppats över filtrering innan det utvärderas av skräppostfiltrering. Meddelandet har till exempel markerats som inte skräppost av en e-postflödesregel (kallas även transportregel). <p> Meddelandet hoppade över skräppostfiltrering av andra orsaker. Till exempel ser avsändaren och mottagaren ut att vara i samma organisation.|
+  |**Blockeras**|`SFV:SKS`|Meddelandet markerades som skräppost innan det utvärderades av skräppostfiltrering. Till exempel efter en e-postflödesregel.|
   |**Upptäckt**|`SFV:SPM`|Meddelandet markerades som skräppost av skräppostfiltret.|
   |**Inte upptäckt**|`SFV:NSPM`|Meddelandet har markerats som inte skräppost genom filtrering av skräppost.|
   |**Släppt**|`SFV:SKQ`|Meddelandet hoppade över skräppostfiltreringen eftersom det släpptes från karantän.|
   |**Tillåt klientorganisation**<sup>\*</sup>|`SFV:SKA`|Meddelandet hoppade över skräppostfiltrering på grund av inställningarna i en princip som är skräppostskyddad. Till exempel finns avsändaren i listan med tillåtna avsändare eller domänlistor med tillåtna avsändare.|
   |**Klientorganisationsblock**<sup>\*\*</sup>|`SFV:SKA`|Meddelandet blockerades av skräppostfiltrering på grund av inställningarna i en princip mot skräppost. Till exempel finns avsändaren i listan med tillåtna avsändare eller domänlistor med tillåtna avsändare.|
-  |**Tillåt för användare**<sup>\*</sup>|`SFV:SFE`|Meddelandet hoppade över skräppostfiltreringen eftersom avsändaren fanns med på en användares lista över betrodda avsändare.|
+  |**Tillåt för användare**<sup>\*</sup>|`SFV:SFE`|Meddelandet hoppade över skräppostfiltrering eftersom avsändaren fanns i en användares Valv avsändare.|
   |**Användarblock**<sup>\*\*</sup>|`SFV:BLK`|Meddelandet blockerades av skräppostfiltrering eftersom avsändaren fanns med på en användares lista över spärrade avsändare.|
   |**ZAP**|Ej a|[Zap (Zero-hour auto purge)](zero-hour-auto-purge.md) flyttade det skickade meddelandet till mappen Skräppost eller karantän. Du konfigurerar åtgärden i principen mot skräppost.|
   |
@@ -233,8 +232,8 @@ Diagrammet innehåller följande information:
 
   <sup>\*\*</sup> Läs igenom dina principer för skydd mot skräppost, eftersom dessa meddelanden ska ha karantän och inte levereras.
 
-- Leveransplatser: Du bör troligtvis undersöka meddelanden som har **levererats** till mottagare (antingen till Inkorgen eller mappen Skräppost), även om användarna inte klickade på webbadressen för nyttolasten i meddelandet. Du kan också ta bort meddelanden i karantän. Mer information finns i [EOP i karantän.](quarantine-email-messages.md)
-  - **Borttaget mapp**
+- **Mål** för meddelanden: Du bör troligtvis undersöka meddelanden som har levererats till mottagare (antingen till Inkorgen eller mappen Skräppost), även om användarna inte klickade på webbadressen för nyttolasten i meddelandet. Du kan också ta bort meddelanden i karantän. Mer information finns i [EOP i karantän.](quarantine-email-messages.md)
+  - **Borttagen mapp**
   - **Nedsnad**
   - **Extern:** Mottagaren finns i din lokala e-postorganisation i hybridmiljöer.
   - **Misslyckades**
@@ -255,10 +254,10 @@ När ett nätfiskemeddelande levereras till mottagarens inkorg eller mappen Skr�
 
 Om en användare har klickat på betalningsadressen i nätfiskemeddelandet visas åtgärderna i **området URL-klickningar** i diagrammet i vyn med kampanjinformation.
 
-- **Tillåten**
-- **BlockPage:** Mottagaren har klickat på webbadressen för nyttolasten, men åtkomsten till den skadliga webbplatsen har blockerats av en princip [för](safe-links.md) säkra länkar i organisationen.
-- **BlockPageOverride:** Mottagaren klickade på payload-URL:en i meddelandet, säkra länkar försökte stoppa dem, men fick åsidosätta blockeringen. Kontrollera principerna [för säkra länkar](set-up-safe-links-policies.md) och se varför användarna tillåts åsidosätta safe Links-bedömningen och fortsätta till den skadliga webbplatsen.
-- **VäntandeDetonationPage:** Säkra bifogade filer i Microsoft Defender för Office 365 arbetar med att öppna och undersöka nyttolast-URL:en i en virtuell datormiljö.
+- **Tillåts**
+- **BlockPage:** Mottagaren klickade på webbadressen för nyttolasten, men åtkomsten till den skadliga webbplatsen blockerades [av Valv princip](safe-links.md) för länkar i organisationen.
+- **BlockPageOverride:** Mottagaren klickade på payload URL i meddelandet, Valv Links försökte stoppa dem, men de tillåts åsidosätta blockeringen. Kontrollera principer [Valv länkar för](set-up-safe-links-policies.md) att se varför användarna tillåts åsidosätta Valv länkar för att fortsätta till den skadliga webbplatsen.
+- **PendingDetonationPage:** Valv Attachments in Microsoft Defender for Office 365 is in the process of opening and investigating the payload URL in a virtual computer environment.
 - **VäntandeDetonationPageOverride**: Mottagaren tillåts åsidosätta processen för nyttolast detonation och öppna URL-adressen utan att vänta på resultaten.
 
 ### <a name="tabs"></a>Flikar
@@ -266,7 +265,7 @@ Om en användare har klickat på betalningsadressen i nätfiskemeddelandet visas
 Med flikarna i vyn kampanjinformation kan du undersöka kampanjen ytterligare.
 
 > [!TIP]
-> Informationen som visas på flikarna styrs av det skuggade datumintervallet på tidslinjen enligt beskrivningen i [avsnittet Kampanjinformation.](#campaign-information)
+> Informationen som visas på flikarna styrs av filtret för datumintervall på tidslinjen enligt beskrivningen [i avsnittet Kampanjinformation.](#campaign-information)
 
 - **URL-klick:** Om användarna inte klickade på webbadressen för nyttolasten i meddelandet är det här avsnittet tomt. Om en användare kunde klicka på URL:en fylls följande värden i:
   - **Användare**<sup>\*</sup>
@@ -303,7 +302,11 @@ Med flikarna i vyn kampanjinformation kan du undersöka kampanjen ytterligare.
 
 ### <a name="buttons"></a>Knappar
 
-Med knapparna i vyn med kampanjinformation kan du använda kraften i HotUtforskaren för att undersöka kampanjen ytterligare.
+Med knapparna längst ned i vyn med kampanjinformation kan du undersöka och registrera information om kampanjen:
 
-- **Utforska kampanj:** Öppnar en ny sökflik i Hotutforskaren med **värdet kampanj-ID** som sökfilter.
-- **Utforska inkorgar:** Öppnar en ny sökflik för Hotutforskaren med hjälp av **kampanj-ID** och **leveransplats: Inkorgen** som sökfilter.
+- **Utforska meddelanden:** Undersök kampanjen ytterligare med hjälp av kraften i HotUtforskaren:
+  - **Alla meddelanden:** Öppnar en ny sökflik i Hotutforskaren med **värdet kampanj-ID** som sökfilter.
+  - **Inkorgsmeddelanden:** Öppnar en ny sökflik för Hotutforskaren med hjälp av **kampanj-ID** och **leveransplats: Inkorgen** som sökfilter.
+  - **Interna meddelanden:** Öppnar en ny sökflik i Hotutforskaren med hjälp av **kampanj-ID och riktning: Årsorganisation** som sökfilter. 
+
+- **Ladda ned hotrapporten:** Ladda ned kampanjinformationen till ett Word-dokument (som standard med namnet CampaignReport.docx). Observera att nedladdningen innehåller information om hela kampanjens livslängd (inte bara de filterdatum du valde).

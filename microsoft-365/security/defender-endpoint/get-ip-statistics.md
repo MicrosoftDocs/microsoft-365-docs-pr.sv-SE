@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c47a5e58b1888447a4428fad78e71b85cfe79b69
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 55bf10d01093c17ba2d186ce0a1d1313db2c3a75
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167182"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770091"
 ---
 # <a name="get-ip-statistics-api"></a>Hämta IP-statistik-API
 
@@ -62,13 +63,13 @@ GET /api/ips/{ip}/stats
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Type (Typ) | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 
 ## <a name="request-uri-parameters"></a>Begär URI-parametrar
 
-Namn | Type (Typ) | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 lookBackHours | Int32 | Definierar hur många timmar vi söker tillbaka för att få fram statistiken. Standard är 30 dagar. **Valfritt.**
 

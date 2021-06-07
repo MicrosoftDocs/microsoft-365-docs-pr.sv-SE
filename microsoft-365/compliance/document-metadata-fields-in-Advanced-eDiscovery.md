@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: I den här artikeln definieras metadatafälten för dokument i en granskning, i ett fall Advanced eDiscovery i Microsoft 365.
-ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 42f349bf01d5a777535dd04096b860a0165f1edf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730504"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769575"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokumentmetadatafält i Advanced eDiscovery
 
@@ -75,6 +75,7 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |EmailAction*||Email_action|Värdena är **Ingen,** **Svara** eller **Vidarebefordra**; baserat på ämnesraden i ett meddelande.|
 |Begärt leveranskvitto för e-post||Email_delivery_receipt|E-postadress som anges i Internethuvuden för leveranskvitto.|
 |Prioritet|EmailImportance|Email_importance|Prioritet i meddelandet: **0** – Låg; **1** – Normal; **2** – Hög|
+|Ignorerade bearbetningsfel|ErrorIgnored|Error_Ignored|Felet ignorerades och åtgärdades inte.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Alla e-posthuvuden från e-postmeddelandet|
 |EmailLevel*||Email_level|Anger nivån för ett meddelande i e-posttråden som det tillhör. bifogade filer ärver det överordnade meddelandets värde.|
 |Id för e-postmeddelande||Email_message_ID|Internetmeddelande-ID från meddelandet.|
@@ -88,14 +89,14 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |||Extracted_text_path|Sökväg till den extraherade textfilen i exporten.|
 |ExtractedTextLength*||Extracted_text_length|Antal tecken i den extraherade texten.|
 |FamilyDuplicateSet*||Family_duplicate_set|Numerisk identifierare för familjer som är exakta dubbletter av varandra (samma innehåll och samma bifogade filer).|
-|Familje-ID|FamilyId|Family_ID|Familje-ID grupperar alla objekt; för e-post, detta inkluderar meddelandet och alla bifogade filer; för dokument, till exempel dokumentet och eventuella inbäddade objekt.|
+|Familje-ID|FamilyId|Family_ID|Grupperar alla objekt för e-post. Det inkluderar meddelandet och alla bifogade filer och extraherade objekt.|
 |Familjestorlek||Family_size|Antalet dokument i familjen.|
 |Filklass|FileClass|File_class|För innehåll från SharePoint och OneDrive: **Dokument**; för innehåll från Exchange: **E-post** eller **Bifogad fil**.|
 |Fil-ID|FileId|File_ID|Dokumentidentifierare som är unik i det aktuella ärendet.|
 |Filsystemdatum skapat||File_system_date_created|Skapat datum från filsystem (gäller endast Office 365 data).|
 |Systemdatum för fil som ändrats||File_system_date_modified|Ändrad datum från filsystem (gäller endast icke-Office 365 data).|
 |Filtyp|FileType||Filtypen för objektet baserat på filnamnstillägget.|
-|Grupp-ID|GroupID||Grupp-ID för grupperat innehåll.|
+|Grupp-ID|Grupp-ID|Group_ID|Grupperar alla objekt för e-post och dokument. För e-post omfattar detta meddelandet och alla bifogade filer samt extraherade objekt. För dokument omfattar detta dokumentet och eventuella inbäddade objekt.|
 |Har bifogad fil|HasAttachment|Email_has_attachment|Anger om meddelandet har bifogade filer.|
 |Har jurist|HasAttorney||**Sant** om minst en av deltagarna finns med i juristlistan. annars är värdet **Falskt.**|
 |HasText*||Has_text|Anger om objektet innehåller text; möjliga värden är **Sant** och **Falskt.**|
@@ -126,6 +127,7 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |NativeSHA256||Native_SHA_256|SHA256-hash (256-bitars hashvärde) för filströmmen.|
 |ND/ET-sortering: Exklusive bifogade filer|NdEtSortExclAttach|ND_ET_sort_excl_attach|Sammanfogning av e-posttråduppsättningen (ET) och ND-uppsättningen (Near-duplicate). Det här fältet används för effektiv sortering vid granskning. En **D** föregås av ND-uppsättningar och **E** föregås av ET-uppsättningar.|
 |ND/ET-sortering: Inklusive bifogade filer|NdEtSortInclAttach|ND_ET_sort_incl_attach|Sammanfogning av en e-posttråduppsättning (ET) och en nästan dubblettuppsättning (ND). Det här fältet används för effektiv sortering vid granskning. En **D** föregås av ND-uppsättningar och **E** föregås av ET-uppsättningar. Varje e-postobjekt i en ET-uppsättning följs av lämpliga bifogade filer.|
+|Duplicerad uppsättning nära||ND_set|Objekt som liknar pivotdokumentet delar samma ND_set.|
 |O365-författare||O365_authors|Författare från SharePoint.|
 |O365 som skapats av||O365_created_by|Skapad av SharePoint.|
 |O365-datum skapat||O365_date_created|Skapat datum från SharePoint.|
@@ -155,6 +157,7 @@ I följande tabell visas metadatafälten för dokument i en granskning, som i et
 |Avsändningsdomän|SenderDomain|Email_sender_domain|Domän för avsändaren.|
 |Skickat|Skickat|Email_date_sent|Skickat-datum för meddelandet.|
 |Ange ordning: Inklusive första|SetOrderInclusivesFirst|Set_order_inclusives_first|Fältet Sortering – e-post och bifogade filer: kronologiskt; dokument: pivotera först sedan i fallande likhetspoäng.|
+|Ange ID||Set_ID|Dokument med liknande innehåll (ND_set) eller e-post i samma e-posttråd (Email_set) delar samma Set_ID.|
 |SimilarityPercent||Similarity_percent|Anger hur liknande ett dokument är med pivot för den nästan duplicerade uppsättningen.|
 |Ursprunglig filstorlek|Storlek|Native_size|Antal byte av det ursprungliga objektet.|
 |Ämne|Ämne|Email_subject|Meddelandets ämne.|

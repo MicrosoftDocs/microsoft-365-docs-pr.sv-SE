@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 08188acf1209ea2247a0eb09d722ce74c4540254
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 385227dc67039fb3666d3b9518af5be8eb01dc7a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939618"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769767"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender för slutpunkts-API – Hello World 
 
@@ -47,15 +48,15 @@ Det tar bara 5 minuter att göra i två steg:
 - Använd exempel: kräver endast kopiera/klistra in ett kort PowerShell-skript
 
 ### <a name="do-i-need-a-permission-to-connect"></a>Behöver jag behörighet för att ansluta?
-För registreringssteget för program måste du ha en **global administratörsroll** i Azure Active Directory-klienten (Azure AD).
+För steget Registrering av program måste du ha en **global administratörsroll** i Azure Active Directory klientorganisationen (Azure AD).
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a>Steg 1 - Skapa en app i Azure Active Directory
+### <a name="step-1---create-an-app-in-azure-active-directory"></a>Steg 1 – Skapa ett program i Azure Active Directory
 
 1. Logga in på [Azure med](https://portal.azure.com) den **globala administratörsanvändaren.**
 
-2. Gå till **Azure Active Directory-appregistreringar**  >    >  **Ny registrering.** 
+2. Gå till **Azure Active Directory**  >  **Appregistreringar**  >  **Ny registrering.** 
 
-   ![Bild av Microsoft Azure och navigering till programregistrering](images/atp-azure-new-app2.png)
+   ![Bild av Microsoft Azure navigering till registrering av program](images/atp-azure-new-app2.png)
 
 3. I registreringsformuläret väljer du ett namn på din ansökan och klickar sedan på **Registrera**.
 

@@ -1,5 +1,5 @@
 ---
-title: Anslutning till Power BI för Microsoft Defender för slutpunkts-API:er
+title: Anslutning till microsoft Defender för slutpunkts-API:er Power BI
 ms.reviewer: ''
 description: Skapa en Bi-rapport (Power Business Intelligence) överst i Microsoft Defender för slutpunkts-API:er.
 keywords: apis, API:er som stöds, Power BI, rapporter
@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 5c76784d78837c324922ffc25539746a4921e426
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935047"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769719"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Skapa anpassade rapporter med Power BI
 
@@ -38,7 +39,7 @@ ms.locfileid: "51935047"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-I det här avsnittet får du lära dig att skapa en Power BI-rapport ovanpå Defender för slutpunkts-API:er.
+I det här avsnittet får du lära dig att skapa Power BI över Defender för slutpunkts-API:er.
 
 I det första exemplet visas hur du ansluter Power BI till Advanced Hunting API och det andra exemplet visar en anslutning till våra OData-API:er, till exempel Datoråtgärder eller Varningar.
 
@@ -115,7 +116,7 @@ I det första exemplet visas hur du ansluter Power BI till Advanced Hunting API 
 
 - Du kan duplicera den här tabellen, byta namn på den och redigera frågan Avancerad sökning inuti så att du får de data du vill ha.
 
-## <a name="connect-power-bi-to-odata-apis"></a>Ansluta Power BI till OData-API:er
+## <a name="connect-power-bi-to-odata-apis"></a>Anslut Power BI till OData-API:er
 
 - Den enda skillnaden från exemplet ovan är frågan i redigeraren. 
 
@@ -137,11 +138,11 @@ I det första exemplet visas hur du ansluter Power BI till Advanced Hunting API 
 - Du kan också använda OData-frågor för frågefilter. Mer information finns i [Använda OData-frågor](exposed-apis-odata-samples.md)
 
 
-## <a name="power-bi-dashboard-samples-in-github"></a>Exempel på Power BI-instrumentpanel i GitHub
-Mer information finns i Power [BI-rapportmallar.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)
+## <a name="power-bi-dashboard-samples-in-github"></a>Power BI exempel på instrumentpaneler i GitHub
+Mer information finns i [Power BI rapportmallar](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## <a name="sample-reports"></a>Exempelrapporter
-Visa exemplen på Microsoft Defender för Endpoint Power BI-rapport. Mer information finns i Bläddra [i kodexempel](https://docs.microsoft.com/samples/browse/?products=mdatp).
+Visa exempel för Microsoft Defender Power BI slutpunktsrapport. Mer information finns i Bläddra [i kodexempel](https://docs.microsoft.com/samples/browse/?products=mdatp).
 
 
 ## <a name="related-topic"></a>Relaterat ämne

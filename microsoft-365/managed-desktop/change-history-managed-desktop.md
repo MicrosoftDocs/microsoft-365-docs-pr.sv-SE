@@ -13,16 +13,44 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: bc04059d3ec63dd9395ed8f7a0e02b948e5cead1
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 6b18de29b339c3367bfacb8bdc8ec9725481e3e4
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730744"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779861"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Ändringshistorik för dokumentationen om Microsoft Hanterat skrivbord
 
 Den här artikeln innehåller nya och uppdaterade artiklar i [Microsoft Hanterat skrivbord dokumentation.](index.yml) "Uppdaterade" artiklar har innehåller materialrelaterade tillägg eller korrigeringar – mindre korrigeringar, till exempel korrigeringar av skrivfel, stil eller formateringsproblem visas inte. Du kan alltid visa historik över specifika åtgärder (inklusive information om eventuella ändringar) genom att gå till [lagringsplatsen på GitHub.](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+
+## <a name="may-2021"></a>Maj 2021
+Ny eller ändrad artikel | Beskrivning
+--- | ---
+[Konfigurera Microsoft Hanterat skrivbord enheter](get-started/set-up-devices.md) | Uppdaterad artikel
+[Enhets inventerings rapport](working-with-managed-desktop/device-inventory-report.md) | Uppdaterad artikel
+[Nätverks konfiguration för Microsoft Hanterat skrivbord](get-ready/network.md) | Uppdaterad artikel
+[Diagnostikloggar](service-description/diagnostic-logs.md) | Ny artikel
+[Teknologier i Microsoft Hanterat skrivbord](intro/technologies.md) | Uppdaterad artikel
+[Förutsättningar för gästkonton](get-ready/guest-accounts.md) | Uppdaterad artikel
+[Arbeta med rapporter](working-with-managed-desktop/reports.md) | Uppdaterad artikel
+
+## <a name="april-2021"></a>April 2021
+Ny eller ändrad artikel | Beskrivning
+--- | ---
+[Enhetsprofiler](service-description/profiles.md) | Ny artikel
+[Steg för partner för att registrera enheter](get-started/register-devices-partner.md) | Uppdaterad artikel
+[Registrera nya enheter själv](get-started/register-devices-self.md) | Uppdaterad artikel
+[Registrera befintliga enheter själv](get-started/register-reused-devices-self.md) | Uppdaterad artikel
+[Adressenhetsnamnssamband](get-ready/address-device-names.md) | Ny artikel
+[Enhetsnamn](service-description/device-names.md) | Ny artikel
+[Ta bort enheter](working-with-managed-desktop/remove-devices.md) | Ny artikel
+[Förutsättningar för Microsoft Hanterat skrivbord](get-ready/prerequisites.md) | Uppdaterad artikel
+[Appar i Microsoft Hanterat skrivbord](get-ready/apps.md) | Uppdaterad artikel
+[Verifiera nya enheter](get-started/validate-device.md) | Ny artikel
+[Konfigurera Microsoft Hanterat skrivbord enheter](get-started/set-up-devices.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord produktens livscykel](service-description/device-lifecycle.md) | Uppdaterad artikel
+[Microsoft Hanterat skrivbord enheter](service-description/device-list.md) |Uppdaterad artikel
 
 ## <a name="march-2021"></a>Mars 2021
 Ny eller ändrad artikel | Beskrivning

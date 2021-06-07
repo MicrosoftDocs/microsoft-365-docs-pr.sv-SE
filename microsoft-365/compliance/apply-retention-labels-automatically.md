@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Skapa kvarhållningsetiketter och principer för automatisk etikettering så att du kan använda etiketter automatiskt för att bevara det du behöver och ta bort det du inte behöver
-ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 0324f988402d407e30d10a725aa5acebb0a69964
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162929"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788407"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Använda en kvarhållningsetikett automatiskt för att bevara eller ta bort innehåll
 
@@ -132,21 +132,19 @@ Du kan använda kvarhållningsetiketter för innehåll automatiskt när innehål
 > [!WARNING]
 > Den här konfigurationen har för närvarande en känd begränsning där den valda kvarhållningsetiketten alltid används för alla e-postmeddelanden utan etikett när det finns en matchning för valda typer av känslig information. Även om du till exempel anger specifika användare som omfång för principen för automatisk användning eller väljer andra platser än Exchange för principen, används etiketten alltid på e-postmeddelanden utan etikett när det finns en matchning.
 
-När du skapar principer för automatisk användning av kvarhållningsetiketter för känslig information visas samma lista med principmallar som när du skapar en princip för dataförlustskydd (DLP). Varje mall har förkonfigurerats för att söka efter specifika typer av känslig information. Mallen som visas här söker till exempel efter amerikanska ITIN-, SSN- och passnummer från kategorin **Sekretess** och mallen **Amerikanska PII-data (personligt identifierbar information)**:
+När du skapar principer för automatisk användning av kvarhållningsetiketter för känslig information visas samma lista med principmallar som när du skapar en princip för dataförlustskydd (DLP). Varje mall har förkonfigurerats för att söka efter specifika typer av känslig information. I följande exempel är typerna för känslig information från kategorin **Sekretess** och **U. S personligt identifierbar information (PII)** datamall:
 
 ![Principmallar med typer av känslig information](../media/sensitive-info-configuration.png)
 
 Mer information om typer av känslig information finns i [Entitetsdefinitioner för typer av känslig information](sensitive-information-type-entity-definitions.md). För närvarande stöds inte [exakta datamatchningar](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) och [dokumentfingeravtryck](document-fingerprinting.md) för det här scenariot.
 
-När du har valt en principmall kan du lägga till eller ta bort alla typer av känslig information, och du kan ändra antalet instanser och matcha noggrannheten. I följande exempelskärmbild kommer en kvarhållningsetikett bara att användas automatiskt när:
+När du har valt en principmall kan du lägga till eller ta bort alla typer av känslig information, och du kan ändra konfidensnivå och antalet instanser. I föregående skärmbild har de här alternativen ändrats så att en kvarhållningsetikett kommer att tillämpas automatiskt endast när:
   
-- Typen av känslig information som identifieras har en matchningsnoggrannhet (eller konfidensnivå) på minst 75. Många typer av känslig information definieras med flera mönster, där ett mönster med högre matchningsnoggrannhet kräver att mer bevis hittas (till exempel nyckelord, datum eller adresser), medan ett mönster med lägre matchningsnoggrannhet kräver mindre bevis. Ju lägre **minsta** matchningsnoggrannhet, desto enklare är det för innehållet att matcha villkoret.
+- Typen av känslig information som identifieras har en exakt matchning (eller [konfidensnivå](sensitive-information-type-learn-about.md#more-on-confidence-levels)) på minst **Medelhögkonfidens** för två av de typer av känslig information och **Högkonfidens** för en. Många typer av känslig information definieras med flera mönster, där ett mönster med högre matchningsnoggrannhet kräver att mer bevis hittas (till exempel nyckelord, datum eller adresser), medan ett mönster med lägre matchningsnoggrannhet kräver mindre bevis. Ju lägre konfidensnivå, desto enklare blir det för innehållet att matcha villkoret men med möjlighet till fler falska positiva.
 
-- Innehållet innehåller mellan 1 och 9 instanser av någon av dessa tre typer av känslig information. Du kan ta bort värdet för **till** så att det ändras till **något**, eller alla värden.
+- Innehållet innehåller mellan 1 och 9 instanser av någon av dessa tre typer av känslig information. Standard för den **till** värdet är **Alla**.
 
 Mer information om de här alternativen finns i följande vägledning i DLP-dokumentationen om att [justera regler för att göra dem enklare eller svårare att matcha](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
-    
-![Alternativ för att identifiera typer av känslig information](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
 
 Saker att tänka på när du använder typer av känslig information för automatisk användning av kvarhållningsetiketter:
 

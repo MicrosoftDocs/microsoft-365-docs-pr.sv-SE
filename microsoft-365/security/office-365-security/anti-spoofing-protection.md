@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Administratörer kan läsa mer om de skydd mot förfalskning som finns tillgängliga i Exchange Online Protection (EOP) och som kan hjälpa dig att minska riskerna för nätfiske från falska avsändare och domäner.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17228f634dc4aee9cfd416ca676920a5b4e0fba2
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537973"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779500"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Skydd mot förfalskning i EOP
 
@@ -54,14 +54,14 @@ Här följer de förfalskningsskyddsmetoder som finns tillgängliga i EOP:
 
 - **Tillåt eller blockera falska avsändare i Tillåten av klient/blockeringslista**: När du åsidosätter domen i Insikt om förfalskningsinformation blir den falska avsändaren en manuell tillåtelse eller blockera posten som bara visas på fliken **Falska** i Tillåten av klient/blockeringslistan. Du kan också skapa tillåtna eller blockera poster manuellt för falska avsändare innan de upptäcks av förfalskningsinformation. För mer information se [Hantera Tillåten av klient/blockeringslista i EOP](tenant-allow-block-list.md).
 
-- **Skydd mot nätfiske**: I EOP innehåller principer för skydd mot nätfiske följande inställningar för funktioner mot förfalskning:
+- **Skydd mot nätfiske**: I EOP och Microsoft Defender för Office 365 innehåller principer för skydd mot nätfiske följande inställningar för funktioner mot förfalskning:
   - Aktivera eller inaktivera förfalskningsinformation.
   - Aktivera eller inaktivera identifiering av oautentiserad avsändare i Outlook.
   - Ange åtgärd för blockerade falska avsändare.
 
   Mer information finns i [Principer för skydd mot nätfiske](set-up-anti-phishing-policies.md#spoof-settings).
 
-  **Obs!** Principer för skydd mot nätfiske i Microsoft Defender för Office 365 innehåller ytterligare skydd, inklusive **imitationsskydd**. Mer information finns på [Exklusiva inställningar i principer för skydd mot nätfiske i Microsoft Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+  **Obs!** Principer för skydd mot nätfiske i Defender för Office 365 innehåller ytterligare skydd, inklusive **imitationsskydd**. Mer information finns på [Exklusiva inställningar i principer för skydd mot nätfiske i Microsoft Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 - **Rapport över identifierad förfalskning**: Mer information finns i [Rapport över identifierad förfalskning](view-email-security-reports.md#spoof-detections-report).
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Lär dig att distribuera tillägg till användare och grupper i organisationen med hjälp av centraliserad distribution i administrationscentret.
-ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 796517ba13a4718c38d5200fcf9cbe38b5dc62d0
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636028"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779644"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuera tillägg i administrationscentret
 
@@ -38,7 +38,7 @@ Mer information om hur du fastställer om organisationen kan stödja centraliser
 Mer information om hur du hanterar tillägg efter distributionen finns [i Hantera tillägg i administrationscentret](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  För Word använder Excel och PowerPoint en [SharePoint-programkatalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) för att distribuera tillägg till användare i en lokal miljö utan anslutning till Microsoft 365 och/eller stöd för SharePoint-tillägg som krävs. Du Outlook till Exchange på Kontrollpanelen för att distribuera i en lokal miljö utan anslutning till Microsoft 365.
+>  För Word använder Excel och PowerPoint en [SharePoint-programkatalog](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) för att distribuera tillägg till användare i en lokal miljö utan anslutning till Microsoft 365 och/eller stöd för SharePoint-tillägg som krävs. Du Outlook till Exchange på Kontrollpanelen för att distribuera i en lokal miljö utan anslutning till Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Rekommenderad metod för Office tillägg
 

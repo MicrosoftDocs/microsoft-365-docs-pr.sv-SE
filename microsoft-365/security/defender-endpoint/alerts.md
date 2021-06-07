@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4997d7118b139d993ed94ed917137ca107940e46
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199627"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769815"
 ---
 # <a name="alert-resource-type"></a>Aviseringsresurstyp
 
@@ -40,21 +41,21 @@ ms.locfileid: "51199627"
 
 Metod |Returtyp |Beskrivning
 :---|:---|:---
-[Få en avisering](get-alert-info-by-id.md) | [Avisering](alerts.md) | Få ett enda [aviseringsobjekt.](alerts.md)
-[Listaviseringar](get-alerts.md) | [Aviseringssamling](alerts.md) | Samling [med listaviseringar.](alerts.md)
-[Uppdateringsavisering](update-alert.md) | [Avisering](alerts.md) | Uppdatera specifik [avisering](alerts.md).
+[Få en avisering](get-alert-info-by-id.md) | [Varning](alerts.md) | Få ett enda [aviseringsobjekt.](alerts.md)
+[Listvarningar](get-alerts.md) | [Aviseringssamling](alerts.md) | Samling [med listaviseringar.](alerts.md)
+[Uppdateringsavisering](update-alert.md) | [Varning](alerts.md) | Uppdatera specifik [avisering](alerts.md).
 [Batchuppdateringsaviseringar](batch-update-alerts.md) | | Uppdatera en uppsättning [aviseringar](alerts.md).
-[Skapa avisering](create-alert-by-reference.md)|[Avisering](alerts.md)|Skapa en avisering baserat på händelsedata från [Avancerad sökning.](run-advanced-query-api.md)
+[Skapa varning](create-alert-by-reference.md)|[Varning](alerts.md)|Skapa en avisering baserat på händelsedata från [Avancerad sökning.](run-advanced-query-api.md)
 [Visa relaterade domäner](get-alert-related-domain-info.md)|Domänsamling| List-URL:er som är kopplade till aviseringen.
 [Lista relaterade filer](get-alert-related-files-info.md) | [Filsamling](files.md) |  Lista de [filenheter](files.md) som är associerade med [aviseringen](alerts.md).
 [Lista relaterade IP-adresser](get-alert-related-ip-info.md) | IP-samling | List-IP:er som är associerade med aviseringen.
-[Skaffa relaterade datorer](get-alert-related-machine-info.md) | [Dator](machine.md) | Den [dator](machine.md) som är kopplad till [aviseringen](alerts.md).
+[Skaffa relaterade datorer](get-alert-related-machine-info.md) | [Maskin](machine.md) | Den [dator](machine.md) som är kopplad till [aviseringen](alerts.md).
 [Skaffa relaterade användare](get-alert-related-user-info.md) | [Användare](user.md) | Användaren [som](user.md) är kopplad till [aviseringen](alerts.md).
 
 
 ## <a name="properties"></a>Egenskaper
 
-Egenskap |    Skriv    |    Beskrivning
+Egenskap |    Typ    |    Beskrivning
 :---|:---|:---
 id | Sträng | Aviserings-ID.
 rubrik | Sträng | Aviseringsrubrik.
@@ -78,7 +79,7 @@ threatFamilyName | Sträng | Hotfamilj.
 threatName | Sträng | Hotnamn.
 machineId | Sträng | ID för en [maskin](machine.md) entitet som är associerad med aviseringen.
 computerDnsName | Sträng | [fullständigt](machine.md) kvalificerat namn.
-aadTenantId | Sträng | Azure Active Directory-ID.
+aadTenantId | Sträng | Detta Azure Active Directory ID.
 anslutetId | Sträng | ID för den som utlöste aviseringen.
 kommentarer | Lista med aviseringskommentarer | Aviseringskommentarsobjekt innehåller: kommentarssträng, createdBy-sträng och createTime-datumtid.
 Bevis | Lista med varningsbevis | Bevis som är relaterade till aviseringen. Se exemplet nedan.

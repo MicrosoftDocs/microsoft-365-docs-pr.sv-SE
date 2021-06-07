@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 590bd1dee14e54359dd699e86795664819c23d05
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 1c81d2978677b751a8085f88b5c4732fd4a5a247
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200107"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770055"
 ---
 # <a name="get-machine-logon-users-api"></a>API för att hämta maskininloggningsanvändare
 
@@ -64,7 +66,7 @@ GET /api/machines/{id}/logonusers
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.topic: article
+ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569749"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769335"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Visa händelser för minskning av attackytan
 
@@ -28,7 +29,8 @@ ms.locfileid: "51569749"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> [!TIP]
+> Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink).
 
 Granska händelser för att minska attackytan i Loggboken för att övervaka vilka regler eller inställningar som fungerar. Du kan också bestämma om några inställningar är för "bullriga" eller påverkar det dagliga arbetsflödet.
 
@@ -36,17 +38,17 @@ Det kan vara användbart att granska händelser när du utvärderar funktionerna
 
 Den här artikeln innehåller alla händelser, deras associerade funktion eller inställning och beskriver hur du skapar anpassade vyer för att filtrera efter specifika händelser.
 
-Få detaljerad rapportering om händelser och block som en del av Windows-säkerhet om du har en E5-prenumeration och använder [Microsoft Defender för slutpunkt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
+Få detaljerad rapportering om händelser och block som en del av Windows-säkerhet om du har en E5-prenumeration och använder [Microsoft Defender för slutpunkt.](microsoft-defender-endpoint.md)
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Använda anpassade vyer för att granska funktioner för att minska attackytan
 
-Skapa anpassade vyer i Windows loggboken för att bara visa händelser för specifika funktioner och inställningar. Det enklaste sättet är att importera en anpassad vy som en XML-fil. Du kan kopiera XML-koden direkt från den här sidan.
+Skapa anpassade vyer i Windows loggboken om du bara vill visa händelser för specifika funktioner och inställningar. Det enklaste sättet är att importera en anpassad vy som en XML-fil. Du kan kopiera XML-koden direkt från den här sidan.
 
 Du kan också manuellt navigera till det händelseområde som motsvarar funktionen.
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importera en befintlig ANPASSAD XML-vy
 
-1. Skapa en tom TXT-fil och kopiera XML-koden för den anpassade vyn som du vill använda till TXT-filen. Gör så här för var och en av de anpassade vyer som du vill använda. Byt namn på filerna på följande sätt (kontrollera att du ändrar typen från .txt till .xml):
+1. Skapa en tom .txt och kopiera XML för den anpassade vy du vill använda till den .txt filen. Gör så här för var och en av de anpassade vyer som du vill använda. Byt namn på filerna på följande sätt (se till att ändra typ från .txt till .xml):
     - Kontrollerad mappåtkomsthändelser, anpassad vy: *cfa-events.xml*
     - Den anpassade vyn för sårbarhetsskyddshändelser: *ep-events.xml*
     - Anpassad vy för minskning av attackytor: *asr-events.xml*
@@ -66,7 +68,7 @@ Du kan också manuellt navigera till det händelseområde som motsvarar funktion
 
 ### <a name="copy-the-xml-directly"></a>Kopiera XML direkt
 
-1. Skriv **händelsevisare** på Start-menyn och öppna Windows **loggboken.**
+1. Skriv **händelsevisare** på Start-menyn och öppna Windows **Loggboken**.
 
 2. I den vänstra panelen under **Åtgärder väljer** du Skapa **anpassad vy...**
 
@@ -135,12 +137,12 @@ Du kan också manuellt navigera till det händelseområde som motsvarar funktion
 
 ## <a name="list-of-attack-surface-reduction-events"></a>Lista över minskningar av attackytor
 
-Alla minskningar av attackytor finns under Program- och tjänstloggar **> Microsoft > Windows** och sedan mappen eller leverantören som anges i följande tabell.
+Alla minskningshändelser för attackytor finns under Program- och tjänstloggar **> Microsoft > Windows** och sedan mappen eller leverantören som anges i följande tabell.
 
-Du kan komma åt dessa händelser i Windows händelsevisare:
+Du kan komma åt dessa händelser Windows i händelsevisaren:
 
 1. Öppna **Start-menyn,** skriv **loggboken** och välj sedan **resultatet för Loggboken.**
-2. Expandera **Loggar för program och tjänster > Microsoft > Windows** och gå sedan till mappen som visas under **Leverantör/källa** i tabellen nedan.
+2. Expandera **Loggar för program och > för Microsoft > Windows** och gå sedan till den mapp som visas under **Leverantör/källa** i tabellen nedan.
 3. Dubbelklicka på underobjektet för att visa händelser. Bläddra igenom händelserna för att hitta den du letar efter.
 
    ![Animering som visar hur du använder Loggboken](/windows/security/threat-protection/images/event-viewer)

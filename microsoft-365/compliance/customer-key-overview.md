@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: I den här artikeln får du lära dig hur tjänstkryptering fungerar med kundnyckel i Microsoft 365.
-ms.openlocfilehash: 3d0c86dbca02a66547f0ade643b745ecfc8f92cd
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: d12a5d2f80de11a69fc4a36146a511c5f9a306f8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344776"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769455"
 ---
 # <a name="service-encryption-with-customer-key"></a>Krypteringstjänst med kundnyckel
 
@@ -52,8 +52,11 @@ En datakrypteringsprincip (DEP) definierar krypteringshierarkin. Hierarkin anvä
 - Teams statusmeddelanden
 - Information om användare och Exchange Online
 - Exchange Online-postlådor som inte redan krypteras av postlådekoderna
-- Exakt MIP-data (EDM) – (scheman för datafiler, regelpaket och salter som används för att hashtagga känsliga data).
-  För exakt datamatchning med MIP och Microsoft Teams krypteras nya data från och med den tidpunkt då du tilldelar klientorganisationen data med flera arbetsbelastningar. I Exchange Online krypterar Kundnyckel alla befintliga och nya data.
+- Microsofts informationsskydd:
+
+  - Exakta data matchar (EDM) data, inklusive scheman för datafiler, regelpaket och salter som används för att hashtagga känsliga data. För EDM och Microsoft Teams krypterar dep för flera arbetsbelastningar nya data från den tid du tilldelar dataleverantören till klientorganisationen. I Exchange Online krypterar Kundnyckel alla befintliga och nya data.
+
+  - Etikettkonfiguration för känslighetsetiketter
 
 De data med flera arbetsbelastningar krypterar inte följande typer av data. I stället Microsoft 365 andra typer av kryptering för att skydda dessa data.
 

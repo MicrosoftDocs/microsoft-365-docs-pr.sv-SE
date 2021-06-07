@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender för slutpunktsflödeskoppling
+title: Microsoft Defender för slutpunkt Flow anslutare
 ms.reviewer: ''
-description: Använd Microsoft Defender för Slutpunktsflödeskoppling för att automatisera säkerhet och skapa ett flöde som utlöses varje gång en ny avisering inträffar i klientorganisationen.
+description: Använd Microsoft Defender för Endpoint Flow-anslutning för att automatisera säkerhet och skapa ett flöde som utlöses när en ny avisering inträffar för klientorganisationen.
 keywords: flöde, apis som stöds, api, Microsoft flow, fråga, automation
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 33a7c7b1907ac761dfdde43a70bfb8f515235150
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: dd0cc3c2da134750f905b1f80746d6ec65cc70b2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929305"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769713"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (tidigare Microsoft Flow) och Azure-funktioner
 
@@ -34,7 +35,7 @@ ms.locfileid: "51929305"
 
 - Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Att automatisera säkerhetsprocedurer är ett standardkrav för alla moderna säkerhetsoperationscenter. Brist på professionella cyberbrott tvingar SOC att arbeta på det mest effektiva sättet och automatisering är ett måste. Microsoft Power Automate har stöd för olika kopplingar som skapats exakt för detta. Du kan skapa en end-to-end-procedurautomatisering inom några minuter.
+Att automatisera säkerhetsprocedurer är ett standardkrav för alla moderna säkerhetsoperationscenter. Brist på professionella cyberbrott tvingar SOC att arbeta på det mest effektiva sättet och automatisering är ett måste. Microsoft Power Automate har stöd för olika kopplingar som skapats exakt för det. Du kan skapa en end-to-end-procedurautomatisering inom några minuter.
 
 Microsoft Defender API har en officiell Flow Connector med många funktioner.
 
@@ -46,7 +47,7 @@ Microsoft Defender API har en officiell Flow Connector med många funktioner.
 
 ## <a name="usage-example"></a>Användningsexempel
 
-I följande exempel visas hur du skapar ett flöde som utlöses när en ny avisering inträffar för din klientorganisation.
+I följande exempel visas hur du skapar en Flow som utlöses varje gång en ny avisering inträffar för din klientorganisation.
 
 1. Logga in på [Microsoft Power Automate](https://flow.microsoft.com).
 
@@ -54,11 +55,11 @@ I följande exempel visas hur du skapar ett flöde som utlöses när en ny avise
 
     ![Bild av autentiseringsuppgifter för redigera2](images/api-flow-1.png)
 
-3. Välj ett namn för ditt Flow, sök efter "Microsoft Defender ATP-utlösare" som utlösare och välj sedan den nya aviseringsutlösaren.
+3. Välj ett namn för din Flow, sök efter "Microsoft Defender ATP utlösare" som utlösare och välj sedan den nya aviseringsutlösaren.
 
     ![Bild av autentiseringsuppgifter för redigering3](images/api-flow-2.png)
 
-Nu har du ett Flöde som utlöses varje gång en ny avisering inträffar.
+Nu har du en Flow som utlöses varje gång en ny avisering inträffar.
 
 ![Bild av autentiseringsuppgifter för redigera4](images/api-flow-3.png)
 
@@ -82,7 +83,7 @@ Aviseringsutlösaren anger endast aviserings-ID och maskin-ID. Du kan använda k
 
 2. Kontrollera om allvarlighetsgraden för avisering **är lika med** Hög.
 
-   Om ja lägger du till **åtgärden Microsoft Defender ATP - Isolera** maskin med maskin-ID och en kommentar.
+   Om ja lägger du till **åtgärden Microsoft Defender ATP – Isolera datorn** med maskin-ID:t och en kommentar.
 
     ![Bild av autentiseringsuppgifter för redigera6](images/api-flow-5.png)
 

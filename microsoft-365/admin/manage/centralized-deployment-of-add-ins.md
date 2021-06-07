@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Avgör om klientorganisationen och användarna uppfyller kraven, så att du kan använda centraliserad distribution för Office tillägg.
-ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 531281eba6accfb2e1ffdab1e662a03b077869bd
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635456"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779764"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Avgöra om centraliserad distribution av tillägg fungerar för din organisation
 
@@ -84,7 +84,7 @@ Fråga organisationens Exchange-administratör om vilken konfiguration som anvä
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Kompatibilitetskontroll för centraliserad distribution
 
-Med hjälp av kompatibilitetskontrollen för centraliserad distribution kan du kontrollera om användarna i klientorganisationen är konfigurerade för att använda centraliserad distribution för Word, Excel och PowerPoint. Kompatibilitetskontrollen krävs inte för Outlook-stöd. Ladda ned kompatibilitetskontrollen [här](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+Med hjälp av kompatibilitetskontrollen för centraliserad distribution kan du kontrollera om användarna i klientorganisationen är konfigurerade för att använda centraliserad distribution för Word, Excel och PowerPoint. Kompatibilitetskontrollen krävs inte för Outlook-stöd. Ladda [ned kompatibilitetskontrollen](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
   
 #### <a name="run-the-compatibility-checker"></a>Köra kompatibilitetskontrollen
   
@@ -155,7 +155,7 @@ Om du eller dina användare stöter på problem med att läsa in tillägget när
   
 |**Plattform**|**Felsökningsinformation**|
 |:-----|:-----|
-|Office  <br/> | Charles-/Fiddler-loggar  <br/>  Klientorganisationens id ( [så här gör du](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID. Visa källan för en av Office-sidorna, leta efter värdet för Korrelations-ID och skicka det till supporten:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles-/Fiddler-loggar  <br/>  Klientorganisationens id ( [så här gör du](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Visa källan för en av Office-sidorna, leta efter värdet för Korrelations-ID och skicka det till supporten:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |RTF-klienter (Windows, Mac)  <br/> | Charles-/Fiddler-loggar  <br/>  Versionsnummer för klientappen (helst som en skärmbild från **Arkiv/Konto**)  <br/> |
 
 ## <a name="related-content"></a>Relaterat innehåll

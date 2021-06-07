@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Följ de här stegen om du vill ta bort en tidigare anställds användarkonto.
-ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e9f87f68650394a81c735346db929bf592e91d18
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782387"
+ms.locfileid: "52779837"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Steg 7 – Ta bort en tidigare anställds användarkonto
 
@@ -84,6 +84,8 @@ Här finns information om hur du avslutar en anställds e-post (Exchange).
   
  **Snabbast för en användare med närvaro lokalt och i Exchange-datacentret**: Avbryt sessionen med administrationscentret för Azure Active Directory/administrationscentret för Exchange OCH gör även ändringen i den lokala miljön. Ändringen i administrationscentret för Azure Active Directory/administrationscentret för Exchange kommer annars att skrivas över av DirSync.
   
-## <a name="related-content"></a>Relaterat innehåll
+## <a name="related-articles"></a>Relaterade artiklar
 
-[Återställa en användare](restore-user.md) (artikel)/ [Återställa lösenord](reset-passwords.md) (artikel)
+[Återställa en användare](restore-user.md)
+
+[Återställa lösenord](reset-passwords.md)

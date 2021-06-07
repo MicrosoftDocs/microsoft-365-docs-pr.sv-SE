@@ -23,17 +23,17 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Läs om hur du köper ett domännamn i Microsoft 365.
-ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c4b3b0ac88671e72ed567998ad9d97486dfb6342
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635468"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779692"
 ---
 # <a name="buy-a-domain-name"></a>Köpa ett domännamn
 
 > [!NOTE]
-> Om din organisation använder Office 365 som drivs av 21Vianet i Kina kan du gå till Köpa en domän för Office 365 som drivs av [21Vianet i Kina.](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md)
+> Om din organisation använder Office 365 som drivs av 21Vianet i Kina kan du gå till Köpa en domän för Office 365 som drivs av [21Vianet i Kina.](#how-to-buy-a-domain-for-office-365-operated-by-21vianet)
 
  *Om du vill lägga till, ändra eller ta bort **domäner måste** du vara **global administratör** för ett [företags- eller företagsplan.](https://products.office.com/business/office) Dessa ändringar påverkar hela *klientorganisationen, anpassade* administratörer *eller vanliga* användare kommer inte att kunna göra dessa ändringar.*  
 
@@ -89,9 +89,8 @@ Begär överföringen hos registratorn du vill flytta din domän till. Titta eft
 
 
 ::: moniker range="o365-21vianet"
+
 ## <a name="how-to-buy-a-domain-for-office-365-operated-by-21vianet"></a>Så här köper du en domän för Office 365 som drivs av 21Vianet
-
-
 
 Om du inte redan har en egen domän kan du enkelt köpa en online hos en domännamnsregistrator, en domänåterförsäljare eller hos din nuvarande Internetleverantör. Du får ett domännamn när du registrerar dig för Office 365 med 21Vianet, till exempel contoso.partner.onmschina.cn. Men du kanske vill använda ett eget domännamn, till exempel fourthcoffee.com.
   
@@ -120,5 +119,5 @@ När du har registrerat din domän (hos en domänregistrator) kan du logga in p�
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Lägga till en domän Microsoft 365](../setup/add-domain.md) (artikel)\
-[Vanliga frågor och svar](../setup/domains-faq.yml) om domäner (artikel)\
+[Vanliga frågor och svar om domäner](../setup/domains-faq.yml) (artikel)\
 [Uppdatera DNS-poster för att behålla webbplatsen hos ditt nuvarande webbhotell](../dns/update-dns-records-to-retain-current-hosting-provider.md) (artikel)

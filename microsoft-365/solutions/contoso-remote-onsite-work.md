@@ -1,5 +1,5 @@
 ---
-title: Contosos COVID-19-svar och stöd för distansarbete och arbete på plats
+title: Contosos COVID-19-svar och stöd för hybridarbete
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -13,15 +13,15 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Förstå hur Contoso Corporation besvarade COVID-19-installationen ochkompilerade deras programvaruinstallations- och uppdateringsinfrastruktur för distansarbete och arbete på plats.
-ms.openlocfilehash: 0bc7bc0e457b51e2f65337e355bcf9fced52274d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Förstå hur Contoso Corporation besvarade COVID-19-installationen ochkompilerade deras programvaruinstallations- och uppdateringsinfrastruktur för hybridarbete.
+ms.openlocfilehash: 2d28b0513221f6c14526baba69bf0f5986154805
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245450"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788385"
 ---
-# <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contosos COVID-19-svar och stöd för distansarbete och arbete på plats
+# <a name="contosos-covid-19-response-and-support-for-hybrid-work"></a>Contosos COVID-19-svar och stöd för hybridarbete
 
 Contoso hade alltid stöd för fjärranslutna medarbetare som hade åtkomst till lokala resurser via en central VPN-server i huvudkontoret i Paris. Contoso hade utfärdat alla fjärranslutna medarbetare till en hanterad bärbar dator. Lokala medarbetare hade en blandning av stationära och bärbara datorer.
 
@@ -39,9 +39,9 @@ Här är den resulterande konfigurationen med VPN-enheter som installeras i pari
 
 En fjärransluten anställd med den installerade VPN-klienten använder DNS för att hitta det regionala närmaste kontoret och ansluter till VPN-enheten som är installerad där. Med delade tunnlar skickas trafik till Microsoft 365 och optimerar slutpunkter direkt till den region Microsoft 365 nätverksplatsen. All annan trafik skickas via VPN-anslutningen till VPN-enheten.
 
-## <a name="contosos-support-for-remote-and-onsite-work"></a>Contosos stöd för distansarbete och arbete på plats
+## <a name="contosos-support-for-hybrid-work"></a>Contosos stöd för hybridarbete
 
-Efter att de initiala ändringarna gjorts för att stödja fjärranslutna medarbetare under regionala lockdowns gjorde Contoso infrastrukturändringar för att stödja distansarbete och på plats-arbete där en anställd kan vara:
+Efter att de initiala ändringarna gjorts för att stödja fjärranslutna medarbetare under regionala lockdowns gjorde Contoso infrastrukturändringar för att stödja hybridarbete där en anställd kan vara:
 
 - Alltid fjärrstyrd.
 - Alltid på plats.
@@ -87,4 +87,4 @@ När en anställd loggar in på en ny fjärransluten enhet, baserat på medlemsk
 
 ## <a name="next-step"></a>Nästa steg
 
-[Konfigurera infrastrukturen för distansarbete](empower-people-to-work-remotely.md) i organisationen.
+[Konfigurera infrastrukturen för hybridarbete](empower-people-to-work-remotely.md) i organisationen.

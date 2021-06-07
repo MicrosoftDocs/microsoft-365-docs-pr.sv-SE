@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Lär dig hur du distribuerar team med skydd för känslig data.
-ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583658"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788349"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Konfigurera team med skydd för känslig data
 
@@ -33,6 +33,13 @@ I den här artikeln ska vi titta närmare på hur du konfigurerar ett team för 
 - En känslighetsetikett för teamet som gör att du kan aktivera eller inaktivera gästdelning samt begränsa åtkomst till SharePoint-innehåll till endast webben för ohanterade enheter. Etiketten kan även användas till att klassificera filer.
 - En mer restriktiv länktyp för standarddelning
 - Endast teamägare kan skapa privata kanaler.
+
+## <a name="video-demonstration"></a>Videodemonstration
+
+Titta på den här videon för en genomgång av procedurerna som beskrivs i den här artikeln.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NMS6]
 
 ## <a name="guest-sharing"></a>Gästdelning
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Läs om hur du skapar anpassade typer av känslig information med Exact Data Match-baserad klassificering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0bb75db5b6bb1f3a3b18033b5327f014748f6512
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: 7c6db9df115020902b80328a341606cca2b1c735
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464399"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769467"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Skapa anpassade typer av känslig information med Exact Data Match-baserad klassificering
 
@@ -57,7 +57,7 @@ Med en EDM-baserad klassificering kan du skapa anpassade typer av känslig infor
 > - Koreanska
 > - Japanska
 > 
-> Det här stödet är tillgängligt för typer av känslig information. Se [Viktig information gällande stöd i Information Protection för teckenuppsättningar med dubbla byte (förhandsversion)](mip-dbcs-relnotes.md) för mer information.
+> Stödet är tillgängligt för typer av känslig information. Se [Viktig information gällande stöd i Information Protection för teckenuppsättningar med dubbla byte (förhandsversion)](mip-dbcs-relnotes.md) för mer information.
  
 
 ## <a name="required-licenses-and-permissions"></a>Obligatoriska licenser och behörigheter
@@ -611,10 +611,6 @@ De här platserna har stöd för EDM-baserade typer av känslig information:
 - DLP för SharePoint (filer)
 - DLP-principer för Microsoft Cloud App Security
 - Principer för automatisk etikettering på serversidan
-
-EDM-baserade typer av känslig information för följande scenarier håller fortfarande på att utvecklas och är inte tillgängliga ännu:
-
-- Automatisk klassificering av känslighetsetiketter och kvarhållningsetiketter
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Skapa en DLP-princip med EDM
 

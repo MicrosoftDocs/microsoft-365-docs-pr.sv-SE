@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Inom 30 dagar efter att du tagit bort ett användarkonto kan du återställa kontot och alla data och användaren kan logga in med samma konto.
-ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f849fe8e403aa9a72eccb4dd65665ec9f33618d1
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623827"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779656"
 ---
 # <a name="restore-a-user"></a>Återställa en användare
    
@@ -38,7 +38,7 @@ Här är några tips:
   
 - Se till att det finns tillgängliga licenser att tilldela kontot.
     
-- Om ditt företag använder Active Directory, se [Felsökning av borttagna konton i Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts.md) för instruktioner om återställning av användarkonton. 
+- Om ditt företag använder Active Directory, finns information om hur du återställer ett användarkonto i Felsöka borttagna användarkonton [i Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Återställa ett eller flera användarkonton
 

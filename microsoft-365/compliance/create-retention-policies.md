@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd en kvarhållningsprincip för effektiv kontroll över innehåll som användare genererar med e-post, dokument och konversationer. Behåll det du vill ha och ta bort det du inte vill ha.
-ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710700"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769425"
 ---
 # <a name="create-and-configure-retention-policies"></a>Skapa och konfigurera kvarhållningsprinciper
 
@@ -221,11 +221,11 @@ Om du vill återgå till standardvärdet för både postlådan och SharePoint-we
 
 ### <a name="configuration-information-for-skype-for-business"></a>Konfigurationsinformation för Skype för företag
 
-Till skillnad från Exchange-e-post kan du inte aktivera status för Skype-platsen så att alla användare automatiskt inkluderas. När du aktiverar den platsen måste du manuellt välja de användare vars konversationer du vill behålla:
+Till skillnad från andra platser kan du inte aktivera status för Skype-platsen så att alla användare inkluderas automatiskt. När du aktiverar den platsen måste du istället välja alternativet **Redigera** för att manuellt välja de användare vars konversationer du vill behålla:
 
-![Välj Skype-plats för kvarhållningsprinciper](../media/skype-location-retention-policies.png)
+![Redigera Skype-plats för kvarhållningsprinciper](../media/skype-location-retention-policies.png)
 
-När du väljer **Välj användare** kan du snabbt ta med alla användare genom att markera kryssrutan **Välj alla**. Det är dock viktigt att förstå att varje användare räknas som en specifik inkludering i principen. Så om du inkluderar 1 000 användare genom att markera rutan **Välj alla** är det samma som om du manuellt valde 1 000 användare att inkludera, vilket är det högsta antalet som stöds för Skype för företag.
+När du har valt alternativet **Redigera** kan du snabbt inkludera alla användare i rutan **Skype för företag** genom att markera den dolda rutan före kolumnen **Namnge**. Det är dock viktigt att förstå att varje användare räknas som en specifik inkludering i principen. Så om du inkluderar 1 000 användare genom att markera den här rutan är det samma som om du manuellt valde 1 000 användare att inkluderas, vilket är det högsta antalet som stöds för Skype för företag.
 
 Observera att **Konversationshistorik**, en mapp i Outlook, är en funktion som inte har något med Skype-arkivering att göra. **Konversationshistorik** kan inaktiveras av slutanvändaren, men arkivering för Skype utförs genom att en kopia av Skype-konversationerna lagras i en dold mapp som inte är tillgänglig för användaren men är tillgänglig för eDiscovery.
 

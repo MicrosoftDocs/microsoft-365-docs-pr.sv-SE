@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur Microsoft Productivity Score återspeglar mått för personer och teknikupplevelser och jämför med organisationer av liknande storlek.
-ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593847"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779680"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft produktivitetspoäng 
 
@@ -40,7 +40,7 @@ Vi tillhandahåller mått, insikter och rekommendationer på två områden:
 
 - **Personupplevelser:** kvantifierar hur organisationen fungerar med Microsoft 365-kategorier, t. ex. samarbete, mobilitet, kommunikation, möten och samarbete.  
 
-    För var och en av de nämnda kategorierna tittar vi på offentlig forskning för att identifiera bästa praxis och tillhörande fördelar i form av organisationens effektivitet. Till exempel: [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) research visar att när personer samarbetar och delar innehåll i molnet (istället för bifogade filer med e-post) kan de spara upp till 100 minuter i veckan. Dessutom kan vi kvantifiera användningen av dessa metoder i din organisation så att du kan se var du är på din resa för digital transformation. 
+    För var och en av de nämnda kategorierna tittar vi på offentlig forskning för att identifiera bästa praxis och tillhörande fördelar i form av organisationens effektivitet. Till exempel: Forrester research visar att när personer samarbetar och delar innehåll i molnet (istället för bifogade filer med e-post) kan de spara upp till 100 minuter i veckan. Dessutom kan vi kvantifiera användningen av dessa metoder i din organisation så att du kan se var du är på din resa för digital transformation. 
 
 - **Teknikupplevelser:** din organisations produktivitet beror på pålitlig och högpresterande teknik samt effektiv användning av Microsoft 365. [Slutpunktsanalys](https://aka.ms/endpointanalytics) hjälper dig att förstå hur din organisation kan påverkas av prestanda och problem med din maskinvara och programvara. Microsoft 365-appar kan hjälpa dig att förstå om enheterna i din organisation kör Microsoft 365-appar på rekommenderade kanaler.
 

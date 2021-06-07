@@ -244,17 +244,14 @@
 
 ### [Minskning av attackytan]()
 #### [Översikt för minskning av attackytan](overview-attack-surface-reduction.md)
+#### [Konfigurera funktioner för minskning av attackytan](configure-attack-surface-reduction.md)
+#### [Få mer information om regler för minskning av attackytan](attack-surface-reduction.md)
 #### [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)
-#### [Konfigurationsinställningar för minskning av attackytan](configure-attack-surface-reduction.md)
+#### [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
+#### [Anpassa regler för minskning av attackytan](customize-attack-surface-reduction.md)
 #### [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction-faq.md)
-
-#### [Kontroller för minskning av attackytan]()
-##### [Regler för minskning av attackytan](attack-surface-reduction.md)
-##### [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
-##### [Anpassa regler för minskning av attackytan](customize-attack-surface-reduction.md)
-##### [Visa händelser för minskning av attackytan](event-views.md)
-
-#### [Använda granskningsläge](audit-windows-defender.md)
+#### [Visa händelser för minskning av attackytan](event-views.md)
+#### [Använda granskningsläge för minskning av attackytan](audit-windows-defender.md)
 
 ### Nästa generations skydd
 #### [Översikt över Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
@@ -592,6 +589,13 @@
 ###### [Avancerad jakt med Python](run-advanced-query-sample-python.md)
 ###### [Avancerad jakt med PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Använda OData-frågor](exposed-apis-odata-samples.md)
+
+
+#### [API för direktuppspelning av rådata]()
+##### [Direktuppspelning av rådata](raw-data-export.md)
+##### [Strömma avancerade jakthändelser till Azure Events-hubben](raw-data-export-event-hub.md)
+##### [Strömma avancerade jakthändelser till ditt lagringskonto](raw-data-export-storage.md)
+
 
 #### [SIEM-integrering]()
 ##### [Förstå olika threat Intelligence-koncept](threat-indicator-concepts.md)

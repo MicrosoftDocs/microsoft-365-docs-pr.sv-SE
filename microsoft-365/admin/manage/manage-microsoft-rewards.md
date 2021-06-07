@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Användare som har personliga Microsoft-konton kan tjäna Microsoft Rewards-poäng i samband med sina arbetssökningar om Länka AAD med Rewards-funktionen är aktiverad.
-ms.openlocfilehash: 8cbd88de530ec4aa566962bb74715dc9c417f296
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: 581a7a044ef1b3508591778c9da416ffc3afac2e
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464354"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779668"
 ---
 # <a name="manage-microsoft-rewards"></a>Hantera Microsoft Rewards
 
@@ -36,10 +36,10 @@ Den här funktionen är inte tillgänglig för statliga användare. Administrat�
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Konfigurera Microsoft Search](/microsoftsearch/setup-microsoft-search.md) (artikel)
+[Konfigurera Microsoft Search](/microsoftsearch/setup-microsoft-search) (artikel)
 
 [De 12 viktigaste uppgifterna för säkerhetsteam att stödja arbetet hemifrån](../../security/top-security-tasks-for-remote-work.md) (artikel)
 
-[Vad är nytt i Microsoft 365](https://support.microsoft.com/en-us/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426) (artikel)
+[Vad är nytt i Microsoft 365](https://support.microsoft.com/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426) (artikel)
 
 

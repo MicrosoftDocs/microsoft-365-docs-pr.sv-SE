@@ -1,6 +1,6 @@
 ---
-title: API för avancerad sökning för Microsoft 365 Defender
-description: Lär dig hur du kör avancerade sökfrågor med hjälp av Microsoft 365 Defenders avancerade API för sökning
+title: Microsoft 365 API för avancerad sökning för Defender
+description: Lär dig hur du kör avancerade sökfrågor med Microsoft 365 Defenders avancerade API för sökning
 keywords: Advanced Hunting, API:er, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932899"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769593"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>API för avancerad sökning för Microsoft 365 Defender
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 API för avancerad sökning för Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51932899"
 > [!IMPORTANT]
 > En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
-[Avancerad sökning](advanced-hunting-overview.md) är ett verktyg för hot efter hot som använder särskilt uppbyggda frågor för att undersöka de senaste 30 [dagarnas](advanced-hunting-query-language.md) händelsedata i Microsoft 365 Defender. Du kan använda avancerade sökfrågor för att inspektera ovanlig aktivitet, identifiera möjliga hot och även svara på attacker. Med API:t för avancerad sökning kan du programmässigt fråga händelsedata.
+[Avancerad sökning](advanced-hunting-overview.md) är ett verktyg för hot efter hot som använder specialkonstruktiona frågor för att undersöka de senaste 30 [dagarnas](advanced-hunting-query-language.md) händelsedata i Microsoft 365 Defender. Du kan använda avancerade sökfrågor för att inspektera ovanlig aktivitet, identifiera möjliga hot och även svara på attacker. Med API:t för avancerad sökning kan du programmässigt fråga händelsedata.
 
 ## <a name="quotas-and-resource-allocation"></a>Kvoter och resurstilldelning
 
@@ -47,17 +47,16 @@ Följande villkor gäller för alla frågor.
 1. Frågor utforskar och returnerar data från de senaste 30 dagarna.
 2. Resultatet kan returnera upp till 100 000 rader.
 3. Du kan ringa upp till 15 samtal per minut per klientorganisation.
-4. Du har 10 minuters körning per timme per klientorganisation.
-5. Du har fyra timmar körtid per dag per klientorganisation.
-6. Om en enskild begäran körs i mer än 10 minuter time out och returnerar ett fel.
-7. En HTTP-svarskod anger att du har nått en kvot, antingen genom antal begäranden som skickas `429` eller med tilldelad löpande tid. Läs svarstexten för att förstå gränsen som du har nått. 
+4. Frågor blockeras om klientorganisationen har nått 100 % till efter den kommande 15-minuterscykeln.
+5. Om en enskild begäran körs i mer än 10 minuter time out och returnerar ett fel.
+6. En HTTP-svarskod anger att du har nått en kvot, antingen genom antal begäranden som skickas `429` eller med tilldelad löpande tid. Läs svarstexten för att förstå gränsen som du har nått. 
 
 > [!NOTE]
 > Alla kvoter som anges ovan (till exempel 15 samtal per min) är per klientorganisationsstorlek. Dessa kvoter är de lägsta.
 
 ## <a name="permissions"></a>Behörigheter
 
-En av följande behörigheter krävs för att anropa det avancerade API:t för sökning. Mer information, inklusive hur du väljer behörigheter, finns i Åtkomst till [API:er för Microsoft 365 Defender Protection](api-access.md)
+En av följande behörigheter krävs för att anropa det avancerade API:t för sökning. Mer information, inklusive hur du väljer behörigheter, finns i [Komma åt MICROSOFT 365 Defender Protection-API:er](api-access.md)
 
 Behörighetstyp | Behörighet | Visningsnamn för behörighet
 -|-|-
@@ -87,7 +86,7 @@ Innehållstyp | application/json
 
 Ange följande parametrar för ett JSON-objekt i begärans brödtext:
 
-Parameter | Skriv | Beskrivning
+Parameter | Typ | Beskrivning
 -|-|-
 Fråga | Text | Frågan som ska köras. **Obs! obligatoriskt**
 
@@ -180,7 +179,7 @@ I följande exempel skickar en användare frågan nedan och tar emot ett API-sva
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Åtkomst till Microsoft 365 Defender-API:er](api-access.md)
+- [Komma åt Microsoft 365 Defender-API:er](api-access.md)
 - [Läs mer om API-begränsningar och licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

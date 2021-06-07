@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: När du skapar en känslighetsetikett kan du automatiskt tilldela filer och e-postmeddelanden en etikett, eller så kan du uppmana användarna att välja den etikett som du rekommenderar.
-ms.openlocfilehash: d7559e5fa75db1fb23592dec1a3a5f35bad603df
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c39e5895c3315d77d7bfc211f0ba3e65f06659b
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538544"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769299"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Använda en känslighetsetikett för innehåll automatiskt
 
@@ -93,7 +93,7 @@ I följande tabell kan du identifiera skillnader i beteende för två kompletter
 |Exchange-bilagor som kontrollerats för villkor|Nej | Ja|
 |Använda synliga markeringar |Ja |Ja (endast e-post) |
 |Åsidosätta IRM-kryptering som används utan etikett|Ja, om användaren har den lägsta användningsrättigheten för export |Ja (endast e-post) |
-|Märka inkommande e-post|Nej |Ja (kryptering tillämpas inte) |
+|Märka inkommande e-post|Nej |Ja|
 
 \* Automatisk etikettering är för närvarande inte tillgängligt i alla regioner. Om din klientorganisation inte har stöd för den här funktionen visas inte fliken Automatisk etikettering i administrationscentret för etiketter.
 
@@ -189,7 +189,7 @@ Specifikt för inbyggd etikettering:
 
 - För rekommenderade etiketter i skrivbordsversionerna av Word flaggas det känsliga innehåll som utlöste rekommendationen så att användare kan granska och ta bort det känsliga innehållet i stället för att använda den rekommenderade känslighetsetiketten.
 
-- Mer information om hur de här etiketterna används i Office-appar, exempel på skärmbilder och hur känslig information identifieras finns i [Tillämpa känslighetsetiketter automatiskt eller rekommendera känslighetsetiketter för filer och e-postmeddelanden i Office](https://support.office.com/sv-SE/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Mer information om hur de här etiketterna används i Office-appar, exempel på skärmbilder och hur känslig information identifieras finns i [Tillämpa känslighetsetiketter automatiskt eller rekommendera känslighetsetiketter för filer och e-postmeddelanden i Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Specifikt för Azure Information Protection-klienten för enhetliga etiketter:
 

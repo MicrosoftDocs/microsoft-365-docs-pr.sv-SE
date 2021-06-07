@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: lära dig om tjänsterna och objekttyperna som du kan använda känslighetsetiketter som villkor i DLP-principer
-ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 94d5e9f53471f6113dcc755995a3f94e95a58e53
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651098"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779849"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Använda känslighetsetiketter som villkor i DLP-principer
 
@@ -65,6 +65,9 @@ Du kan använda känslighetsetiketter som villkor för de här objekten och i de
 \* DLP-identifiering av e-postbilagor med känslighetsetiketter stöds endast för Office-filtyper.
 
 \** Bifogade filer som skickas i Teams över 1:1 chatt eller kanaler laddas automatiskt upp till OneDrive för företag och SharePoint. Så om SharePoint Online eller OneDrive för företag ingår som platser i DLP-principen inkluderas etiketterade bifogade filer som skickas i Teams automatiskt inom ramen för detta villkor. Teams som en plats behöver inte väljas i DLP-principen.
+
+> [!NOTE]
+> DLP:ers möjlighet att identifiera känslighetsetiketter i SharePoint och OneDrive för företag är begränsad. Mer information finns i [Aktivera känslighetsetiketter för Office-filer i SharePoint och OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations).
 
 ### <a name="supported-scenarios"></a>Scenarier som stöds
 

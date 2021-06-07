@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om principer för nätfiske som finns i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d20d9c3839cf72d1e99a185186d0716d9a513c5f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 205fd5cd40d187eada4f6b87edf64c0d35f7e3b3
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537865"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788421"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Principer mot nätfiske i Microsoft 365
 
@@ -133,7 +133,7 @@ Inställningar för oautherade avsändare är [](#spoof-settings) en del av inst
 - Aktivera **via-taggen?**: När den här inställningen är aktiverad läggs via-taggen (chris@contoso.com via fabrikam.com) till i rutan Från om domänen i från-adressen (meddelandets avsändare som visas i e-postklienter) skiljer sig från domänen i DKIM-signaturen eller <sup>\*</sup> MAIL <u></u> **FROM-adressen.** Mer information om de här adresserna finns i [En översikt över e-poststandarder.](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
 
 > [!NOTE]
-> För närvarande är **inställningen Aktivera via-taggen inte** tillgänglig i alla organisationer. Om du inte har inställningen Enable **"via"?** styrs  både frågetecknet och via-taggen av inställningen Enable **unauthenticated sender frågetecken (?)** i organisationen.
+> För närvarande är **inställningen Aktivera via-taggen inte** tillgänglig i alla organisationer. Om du inte har inställningen Enable **"via"** så  styrs frågetecknet och via-taggen båda av inställningen Enable **unauthenticated sender frågetecken (?)** i organisationen.
 
 Om du vill förhindra att frågetecknet eller via taggen läggs till i meddelanden från specifika avsändare har du följande alternativ:
 
