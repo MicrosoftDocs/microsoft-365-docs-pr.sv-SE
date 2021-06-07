@@ -15,97 +15,98 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 08188acf1209ea2247a0eb09d722ce74c4540254
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 385227dc67039fb3666d3b9518af5be8eb01dc7a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939618"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769767"
 ---
-# <a name="microsoft-defender-for-endpoint-api---hello-world"></a><span data-ttu-id="6f561-104">Microsoft Defender för slutpunkts-API – Hello World</span><span class="sxs-lookup"><span data-stu-id="6f561-104">Microsoft Defender for Endpoint API - Hello World</span></span> 
+# <a name="microsoft-defender-for-endpoint-api---hello-world"></a><span data-ttu-id="26aa5-104">Microsoft Defender för slutpunkts-API – Hello World</span><span class="sxs-lookup"><span data-stu-id="26aa5-104">Microsoft Defender for Endpoint API - Hello World</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="6f561-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="6f561-105">**Applies to:**</span></span> 
-- [<span data-ttu-id="6f561-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="6f561-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+<span data-ttu-id="26aa5-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="26aa5-105">**Applies to:**</span></span> 
+- [<span data-ttu-id="26aa5-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="26aa5-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-- <span data-ttu-id="6f561-107">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="6f561-107">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="6f561-108">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="6f561-108">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="26aa5-107">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="26aa5-107">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="26aa5-108">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="26aa5-108">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="get-alerts-using-a-simple-powershell-script"></a><span data-ttu-id="6f561-109">Få aviseringar med ett enkelt PowerShell-skript</span><span class="sxs-lookup"><span data-stu-id="6f561-109">Get Alerts using a simple PowerShell script</span></span>
+## <a name="get-alerts-using-a-simple-powershell-script"></a><span data-ttu-id="26aa5-109">Få aviseringar med ett enkelt PowerShell-skript</span><span class="sxs-lookup"><span data-stu-id="26aa5-109">Get Alerts using a simple PowerShell script</span></span>
 
-### <a name="how-long-it-takes-to-go-through-this-example"></a><span data-ttu-id="6f561-110">Hur lång tid tar det att gå igenom det här exemplet?</span><span class="sxs-lookup"><span data-stu-id="6f561-110">How long it takes to go through this example?</span></span>
-<span data-ttu-id="6f561-111">Det tar bara 5 minuter att göra i två steg:</span><span class="sxs-lookup"><span data-stu-id="6f561-111">It only takes 5 minutes done in two steps:</span></span>
-- <span data-ttu-id="6f561-112">Appregistrering</span><span class="sxs-lookup"><span data-stu-id="6f561-112">Application registration</span></span>
-- <span data-ttu-id="6f561-113">Använd exempel: kräver endast kopiera/klistra in ett kort PowerShell-skript</span><span class="sxs-lookup"><span data-stu-id="6f561-113">Use examples: only requires copy/paste of a short PowerShell script</span></span>
+### <a name="how-long-it-takes-to-go-through-this-example"></a><span data-ttu-id="26aa5-110">Hur lång tid tar det att gå igenom det här exemplet?</span><span class="sxs-lookup"><span data-stu-id="26aa5-110">How long it takes to go through this example?</span></span>
+<span data-ttu-id="26aa5-111">Det tar bara 5 minuter att göra i två steg:</span><span class="sxs-lookup"><span data-stu-id="26aa5-111">It only takes 5 minutes done in two steps:</span></span>
+- <span data-ttu-id="26aa5-112">Appregistrering</span><span class="sxs-lookup"><span data-stu-id="26aa5-112">Application registration</span></span>
+- <span data-ttu-id="26aa5-113">Använd exempel: kräver endast kopiera/klistra in ett kort PowerShell-skript</span><span class="sxs-lookup"><span data-stu-id="26aa5-113">Use examples: only requires copy/paste of a short PowerShell script</span></span>
 
-### <a name="do-i-need-a-permission-to-connect"></a><span data-ttu-id="6f561-114">Behöver jag behörighet för att ansluta?</span><span class="sxs-lookup"><span data-stu-id="6f561-114">Do I need a permission to connect?</span></span>
-<span data-ttu-id="6f561-115">För registreringssteget för program måste du ha en **global administratörsroll** i Azure Active Directory-klienten (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="6f561-115">For the Application registration stage, you must have a **Global administrator** role in your Azure Active Directory (Azure AD) tenant.</span></span>
+### <a name="do-i-need-a-permission-to-connect"></a><span data-ttu-id="26aa5-114">Behöver jag behörighet för att ansluta?</span><span class="sxs-lookup"><span data-stu-id="26aa5-114">Do I need a permission to connect?</span></span>
+<span data-ttu-id="26aa5-115">För steget Registrering av program måste du ha en **global administratörsroll** i Azure Active Directory klientorganisationen (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="26aa5-115">For the Application registration stage, you must have a **Global administrator** role in your Azure Active Directory (Azure AD) tenant.</span></span>
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a><span data-ttu-id="6f561-116">Steg 1 - Skapa en app i Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="6f561-116">Step 1 - Create an App in Azure Active Directory</span></span>
+### <a name="step-1---create-an-app-in-azure-active-directory"></a><span data-ttu-id="26aa5-116">Steg 1 – Skapa ett program i Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="26aa5-116">Step 1 - Create an App in Azure Active Directory</span></span>
 
-1. <span data-ttu-id="6f561-117">Logga in på [Azure med](https://portal.azure.com) den **globala administratörsanvändaren.**</span><span class="sxs-lookup"><span data-stu-id="6f561-117">Log on to [Azure](https://portal.azure.com) with your **Global administrator** user.</span></span>
+1. <span data-ttu-id="26aa5-117">Logga in på [Azure med](https://portal.azure.com) den **globala administratörsanvändaren.**</span><span class="sxs-lookup"><span data-stu-id="26aa5-117">Log on to [Azure](https://portal.azure.com) with your **Global administrator** user.</span></span>
 
-2. <span data-ttu-id="6f561-118">Gå till **Azure Active Directory-appregistreringar**  >    >  **Ny registrering.**</span><span class="sxs-lookup"><span data-stu-id="6f561-118">Navigate to **Azure Active Directory** > **App registrations** > **New registration**.</span></span> 
+2. <span data-ttu-id="26aa5-118">Gå till **Azure Active Directory**  >  **Appregistreringar**  >  **Ny registrering.**</span><span class="sxs-lookup"><span data-stu-id="26aa5-118">Navigate to **Azure Active Directory** > **App registrations** > **New registration**.</span></span> 
 
-   ![Bild av Microsoft Azure och navigering till programregistrering](images/atp-azure-new-app2.png)
+   ![Bild av Microsoft Azure navigering till registrering av program](images/atp-azure-new-app2.png)
 
-3. <span data-ttu-id="6f561-120">I registreringsformuläret väljer du ett namn på din ansökan och klickar sedan på **Registrera**.</span><span class="sxs-lookup"><span data-stu-id="6f561-120">In the registration form, choose a name for your application and then click **Register**.</span></span>
+3. <span data-ttu-id="26aa5-120">I registreringsformuläret väljer du ett namn på din ansökan och klickar sedan på **Registrera**.</span><span class="sxs-lookup"><span data-stu-id="26aa5-120">In the registration form, choose a name for your application and then click **Register**.</span></span>
 
-4. <span data-ttu-id="6f561-121">Tillåt att ditt program kommer åt Defender för Endpoint och tilldela **behörigheten Läs alla** aviseringar:</span><span class="sxs-lookup"><span data-stu-id="6f561-121">Allow your Application to access Defender for Endpoint and assign it **'Read all alerts'** permission:</span></span>
+4. <span data-ttu-id="26aa5-121">Tillåt att ditt program kommer åt Defender för Endpoint och tilldela **behörigheten Läs alla** aviseringar:</span><span class="sxs-lookup"><span data-stu-id="26aa5-121">Allow your Application to access Defender for Endpoint and assign it **'Read all alerts'** permission:</span></span>
 
-   - <span data-ttu-id="6f561-122">På programsidan klickar du på **API-behörigheter** Lägg till behörighetS-API:er som min organisation använder >  >    >   **WindowsDefenderATP** och klickar på **WindowsDefenderATP.**</span><span class="sxs-lookup"><span data-stu-id="6f561-122">On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.</span></span>
+   - <span data-ttu-id="26aa5-122">På programsidan klickar du på **API-behörigheter** Lägg till behörighetS-API:er som min organisation använder >  >    >   **WindowsDefenderATP** och klickar på **WindowsDefenderATP.**</span><span class="sxs-lookup"><span data-stu-id="26aa5-122">On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.</span></span>
 
-   - <span data-ttu-id="6f561-123">**Obs!** WindowsDefenderATP visas inte i den ursprungliga listan.</span><span class="sxs-lookup"><span data-stu-id="6f561-123">**Note**: WindowsDefenderATP does not appear in the original list.</span></span> <span data-ttu-id="6f561-124">Du måste börja skriva namnet i textrutan för att det ska visas.</span><span class="sxs-lookup"><span data-stu-id="6f561-124">You need to start writing its name in the text box to see it appear.</span></span>
+   - <span data-ttu-id="26aa5-123">**Obs!** WindowsDefenderATP visas inte i den ursprungliga listan.</span><span class="sxs-lookup"><span data-stu-id="26aa5-123">**Note**: WindowsDefenderATP does not appear in the original list.</span></span> <span data-ttu-id="26aa5-124">Du måste börja skriva namnet i textrutan för att det ska visas.</span><span class="sxs-lookup"><span data-stu-id="26aa5-124">You need to start writing its name in the text box to see it appear.</span></span>
 
    ![Bild av API-åtkomst och API-val1](images/add-permission.png)
 
-   - <span data-ttu-id="6f561-126">Välj **Avisering om**  >  **programbehörigheter.Read.All >** Klicka på Lägg till **behörigheter**</span><span class="sxs-lookup"><span data-stu-id="6f561-126">Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**</span></span>
+   - <span data-ttu-id="26aa5-126">Välj **Avisering om**  >  **programbehörigheter.Read.All >** Klicka på Lägg till **behörigheter**</span><span class="sxs-lookup"><span data-stu-id="26aa5-126">Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**</span></span>
 
    ![Bild av API-åtkomst och API-val2](images/application-permissions.png)
 
-   <span data-ttu-id="6f561-128">**Viktigt meddelande:** Du måste välja rätt behörighet.</span><span class="sxs-lookup"><span data-stu-id="6f561-128">**Important note**: You need to select the relevant permissions.</span></span> <span data-ttu-id="6f561-129">"Läs alla aviseringar" är bara ett exempel!</span><span class="sxs-lookup"><span data-stu-id="6f561-129">'Read All Alerts' is only an example!</span></span>
+   <span data-ttu-id="26aa5-128">**Viktigt meddelande:** Du måste välja rätt behörighet.</span><span class="sxs-lookup"><span data-stu-id="26aa5-128">**Important note**: You need to select the relevant permissions.</span></span> <span data-ttu-id="26aa5-129">"Läs alla aviseringar" är bara ett exempel!</span><span class="sxs-lookup"><span data-stu-id="26aa5-129">'Read All Alerts' is only an example!</span></span>
 
-     <span data-ttu-id="6f561-130">Exempel:</span><span class="sxs-lookup"><span data-stu-id="6f561-130">For instance,</span></span>
+     <span data-ttu-id="26aa5-130">Exempel:</span><span class="sxs-lookup"><span data-stu-id="26aa5-130">For instance,</span></span>
 
-     - <span data-ttu-id="6f561-131">Om [du vill köra avancerade](run-advanced-query-api.md)frågor väljer du behörigheten Kör avancerade frågor</span><span class="sxs-lookup"><span data-stu-id="6f561-131">To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission</span></span>
-     - <span data-ttu-id="6f561-132">Om [du vill isolera en dator](isolate-machine.md)väljer du behörigheten Isolera dator</span><span class="sxs-lookup"><span data-stu-id="6f561-132">To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission</span></span>
-     - <span data-ttu-id="6f561-133">Ta reda på vilken behörighet du behöver i avsnittet Behörigheter **i** det API du är intresserad av att anropa.</span><span class="sxs-lookup"><span data-stu-id="6f561-133">To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.</span></span>
+     - <span data-ttu-id="26aa5-131">Om [du vill köra avancerade](run-advanced-query-api.md)frågor väljer du behörigheten Kör avancerade frågor</span><span class="sxs-lookup"><span data-stu-id="26aa5-131">To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission</span></span>
+     - <span data-ttu-id="26aa5-132">Om [du vill isolera en dator](isolate-machine.md)väljer du behörigheten Isolera dator</span><span class="sxs-lookup"><span data-stu-id="26aa5-132">To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission</span></span>
+     - <span data-ttu-id="26aa5-133">Ta reda på vilken behörighet du behöver i avsnittet Behörigheter **i** det API du är intresserad av att anropa.</span><span class="sxs-lookup"><span data-stu-id="26aa5-133">To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.</span></span>
 
-5. <span data-ttu-id="6f561-134">Klicka **på Bevilja medgivande**</span><span class="sxs-lookup"><span data-stu-id="6f561-134">Click **Grant consent**</span></span>
+5. <span data-ttu-id="26aa5-134">Klicka **på Bevilja medgivande**</span><span class="sxs-lookup"><span data-stu-id="26aa5-134">Click **Grant consent**</span></span>
 
-    - <span data-ttu-id="6f561-135">**Obs!** Varje gång du lägger till behörighet måste du klicka på **Bevilja medgivande** för att den nya behörigheten ska gälla.</span><span class="sxs-lookup"><span data-stu-id="6f561-135">**Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.</span></span>
+    - <span data-ttu-id="26aa5-135">**Obs!** Varje gång du lägger till behörighet måste du klicka på **Bevilja medgivande** för att den nya behörigheten ska gälla.</span><span class="sxs-lookup"><span data-stu-id="26aa5-135">**Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.</span></span>
 
     ![Bild av bevilja behörigheter](images/grant-consent.png)
 
-6. <span data-ttu-id="6f561-137">Gör programmet hemligt.</span><span class="sxs-lookup"><span data-stu-id="6f561-137">Add a secret to the application.</span></span>
+6. <span data-ttu-id="26aa5-137">Gör programmet hemligt.</span><span class="sxs-lookup"><span data-stu-id="26aa5-137">Add a secret to the application.</span></span>
 
-    - <span data-ttu-id="6f561-138">Klicka **på Certifikat & ,** lägg till en beskrivning av hemligheten och klicka på Lägg **till**.</span><span class="sxs-lookup"><span data-stu-id="6f561-138">Click **Certificates & secrets**, add description to the secret and click **Add**.</span></span>
+    - <span data-ttu-id="26aa5-138">Klicka **på Certifikat & ,** lägg till en beskrivning av hemligheten och klicka på Lägg **till**.</span><span class="sxs-lookup"><span data-stu-id="26aa5-138">Click **Certificates & secrets**, add description to the secret and click **Add**.</span></span>
 
-    <span data-ttu-id="6f561-139">**Viktigt:** Efter att du klickat på Lägg **till kopierar du det genererade hemliga värdet**.</span><span class="sxs-lookup"><span data-stu-id="6f561-139">**Important**: After click Add, **copy the generated secret value**.</span></span> <span data-ttu-id="6f561-140">Du kommer inte att kunna hämta igen när du har lämnat!</span><span class="sxs-lookup"><span data-stu-id="6f561-140">You won't be able to retrieve after you leave!</span></span>
+    <span data-ttu-id="26aa5-139">**Viktigt:** Efter att du klickat på Lägg **till kopierar du det genererade hemliga värdet**.</span><span class="sxs-lookup"><span data-stu-id="26aa5-139">**Important**: After click Add, **copy the generated secret value**.</span></span> <span data-ttu-id="26aa5-140">Du kommer inte att kunna hämta igen när du har lämnat!</span><span class="sxs-lookup"><span data-stu-id="26aa5-140">You won't be able to retrieve after you leave!</span></span>
 
     ![Bild av skapa programnyckel](images/webapp-create-key2.png)
 
-7. <span data-ttu-id="6f561-142">Skriv ned ditt program-ID och ditt klient-ID:</span><span class="sxs-lookup"><span data-stu-id="6f561-142">Write down your application ID and your tenant ID:</span></span>
+7. <span data-ttu-id="26aa5-142">Skriv ned ditt program-ID och ditt klient-ID:</span><span class="sxs-lookup"><span data-stu-id="26aa5-142">Write down your application ID and your tenant ID:</span></span>
 
-   - <span data-ttu-id="6f561-143">Gå till Översikt på **programsidan och** kopiera följande:</span><span class="sxs-lookup"><span data-stu-id="6f561-143">On your application page, go to **Overview** and copy the following:</span></span>
+   - <span data-ttu-id="26aa5-143">Gå till Översikt på **programsidan och** kopiera följande:</span><span class="sxs-lookup"><span data-stu-id="26aa5-143">On your application page, go to **Overview** and copy the following:</span></span>
 
    ![Bild på skapad app-ID](images/app-and-tenant-ids.png)
 
 
-<span data-ttu-id="6f561-145">Klart!</span><span class="sxs-lookup"><span data-stu-id="6f561-145">Done!</span></span> <span data-ttu-id="6f561-146">Du har registrerat ett program!</span><span class="sxs-lookup"><span data-stu-id="6f561-146">You have successfully registered an application!</span></span>
+<span data-ttu-id="26aa5-145">Klart!</span><span class="sxs-lookup"><span data-stu-id="26aa5-145">Done!</span></span> <span data-ttu-id="26aa5-146">Du har registrerat ett program!</span><span class="sxs-lookup"><span data-stu-id="26aa5-146">You have successfully registered an application!</span></span>
 
-### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a><span data-ttu-id="6f561-147">Steg 2 – Hämta en token med appen och använd denna token för att få åtkomst till API:t.</span><span class="sxs-lookup"><span data-stu-id="6f561-147">Step 2 - Get a token using the App and use this token to access the API.</span></span>
+### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a><span data-ttu-id="26aa5-147">Steg 2 – Hämta en token med appen och använd denna token för att få åtkomst till API:t.</span><span class="sxs-lookup"><span data-stu-id="26aa5-147">Step 2 - Get a token using the App and use this token to access the API.</span></span>
 
--   <span data-ttu-id="6f561-148">Kopiera skriptet nedan till PowerShell ISE eller en textredigerare och spara det som "**Get-Token.ps1**"</span><span class="sxs-lookup"><span data-stu-id="6f561-148">Copy the script below to PowerShell ISE or to a text editor, and save it as "**Get-Token.ps1**"</span></span>
--   <span data-ttu-id="6f561-149">När du kör det här skriptet genereras en token och den sparas i arbetsmappen under namnet "**Latest-token.txt**".</span><span class="sxs-lookup"><span data-stu-id="6f561-149">Running this script will generate a token and will save it in the working folder under the name "**Latest-token.txt**".</span></span>
+-   <span data-ttu-id="26aa5-148">Kopiera skriptet nedan till PowerShell ISE eller en textredigerare och spara det som "**Get-Token.ps1**"</span><span class="sxs-lookup"><span data-stu-id="26aa5-148">Copy the script below to PowerShell ISE or to a text editor, and save it as "**Get-Token.ps1**"</span></span>
+-   <span data-ttu-id="26aa5-149">När du kör det här skriptet genereras en token och den sparas i arbetsmappen under namnet "**Latest-token.txt**".</span><span class="sxs-lookup"><span data-stu-id="26aa5-149">Running this script will generate a token and will save it in the working folder under the name "**Latest-token.txt**".</span></span>
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -129,20 +130,20 @@ Out-File -FilePath "./Latest-token.txt" -InputObject $token
 return $token
 ```
 
--   <span data-ttu-id="6f561-150">Sanity Check:</span><span class="sxs-lookup"><span data-stu-id="6f561-150">Sanity Check:</span></span><br>
-<span data-ttu-id="6f561-151">Kör skriptet.</span><span class="sxs-lookup"><span data-stu-id="6f561-151">Run the script.</span></span><br>
-<span data-ttu-id="6f561-152">I webbläsaren går du till: https://jwt.ms/</span><span class="sxs-lookup"><span data-stu-id="6f561-152">In your browser go to: https://jwt.ms/</span></span> <br>
-<span data-ttu-id="6f561-153">Kopiera tokenet (innehållet i Latest-token.txt filen).</span><span class="sxs-lookup"><span data-stu-id="6f561-153">Copy the token (the content of the Latest-token.txt file).</span></span><br>
-<span data-ttu-id="6f561-154">Klistra in i den övre rutan.</span><span class="sxs-lookup"><span data-stu-id="6f561-154">Paste in the top box.</span></span><br>
-<span data-ttu-id="6f561-155">Titta efter avsnittet "roller".</span><span class="sxs-lookup"><span data-stu-id="6f561-155">Look for the "roles" section.</span></span> <span data-ttu-id="6f561-156">Leta reda på rollen Avisering.Läs.Alla.</span><span class="sxs-lookup"><span data-stu-id="6f561-156">Find the Alert.Read.All role.</span></span>
+-   <span data-ttu-id="26aa5-150">Sanity Check:</span><span class="sxs-lookup"><span data-stu-id="26aa5-150">Sanity Check:</span></span><br>
+<span data-ttu-id="26aa5-151">Kör skriptet.</span><span class="sxs-lookup"><span data-stu-id="26aa5-151">Run the script.</span></span><br>
+<span data-ttu-id="26aa5-152">I webbläsaren går du till: https://jwt.ms/</span><span class="sxs-lookup"><span data-stu-id="26aa5-152">In your browser go to: https://jwt.ms/</span></span> <br>
+<span data-ttu-id="26aa5-153">Kopiera tokenet (innehållet i Latest-token.txt filen).</span><span class="sxs-lookup"><span data-stu-id="26aa5-153">Copy the token (the content of the Latest-token.txt file).</span></span><br>
+<span data-ttu-id="26aa5-154">Klistra in i den övre rutan.</span><span class="sxs-lookup"><span data-stu-id="26aa5-154">Paste in the top box.</span></span><br>
+<span data-ttu-id="26aa5-155">Titta efter avsnittet "roller".</span><span class="sxs-lookup"><span data-stu-id="26aa5-155">Look for the "roles" section.</span></span> <span data-ttu-id="26aa5-156">Leta reda på rollen Avisering.Läs.Alla.</span><span class="sxs-lookup"><span data-stu-id="26aa5-156">Find the Alert.Read.All role.</span></span>
 
 ![Bild jwt.ms](images/api-jwt-ms.png)
 
-### <a name="lets-get-the-alerts"></a><span data-ttu-id="6f561-158">Låt oss få aviseringarna!</span><span class="sxs-lookup"><span data-stu-id="6f561-158">Lets get the Alerts!</span></span>
+### <a name="lets-get-the-alerts"></a><span data-ttu-id="26aa5-158">Låt oss få aviseringarna!</span><span class="sxs-lookup"><span data-stu-id="26aa5-158">Lets get the Alerts!</span></span>
 
--   <span data-ttu-id="6f561-159">Skriptet nedan använder en **Get-Token.ps1** för att få åtkomst till API:et och får aviseringar under de senaste 48 timmarna.</span><span class="sxs-lookup"><span data-stu-id="6f561-159">The script below will use **Get-Token.ps1** to access the API and will get the past 48 hours Alerts.</span></span>
--   <span data-ttu-id="6f561-160">Spara skriptet i samma mapp som du sparade föregående skript i **Get-Token.ps1**.</span><span class="sxs-lookup"><span data-stu-id="6f561-160">Save this script in the same folder you saved the previous script **Get-Token.ps1**.</span></span> 
--   <span data-ttu-id="6f561-161">Skriptet skapar två filer (json och CSV) med data i samma mapp som skripten.</span><span class="sxs-lookup"><span data-stu-id="6f561-161">The script creates two files (json and csv) with the data in the same folder as the scripts.</span></span>
+-   <span data-ttu-id="26aa5-159">Skriptet nedan använder en **Get-Token.ps1** för att få åtkomst till API:et och får aviseringar under de senaste 48 timmarna.</span><span class="sxs-lookup"><span data-stu-id="26aa5-159">The script below will use **Get-Token.ps1** to access the API and will get the past 48 hours Alerts.</span></span>
+-   <span data-ttu-id="26aa5-160">Spara skriptet i samma mapp som du sparade föregående skript i **Get-Token.ps1**.</span><span class="sxs-lookup"><span data-stu-id="26aa5-160">Save this script in the same folder you saved the previous script **Get-Token.ps1**.</span></span> 
+-   <span data-ttu-id="26aa5-161">Skriptet skapar två filer (json och CSV) med data i samma mapp som skripten.</span><span class="sxs-lookup"><span data-stu-id="26aa5-161">The script creates two files (json and csv) with the data in the same folder as the scripts.</span></span>
 
 ```
 # Returns Alerts created in the past 48 hours.
@@ -180,15 +181,15 @@ Out-File -FilePath $outputJsonPath -InputObject $alerts
 ($alerts | ConvertFrom-Json) | Export-CSV $outputCsvPath -NoTypeInformation 
 ```
 
-<span data-ttu-id="6f561-162">Nu är allt klart!</span><span class="sxs-lookup"><span data-stu-id="6f561-162">You’re all done!</span></span> <span data-ttu-id="6f561-163">Du har just lyckats:</span><span class="sxs-lookup"><span data-stu-id="6f561-163">You have just successfully:</span></span>
--   <span data-ttu-id="6f561-164">Skapad och registrerad och program</span><span class="sxs-lookup"><span data-stu-id="6f561-164">Created and registered and application</span></span>
--   <span data-ttu-id="6f561-165">Beviljad behörighet för det programmet att läsa aviseringar</span><span class="sxs-lookup"><span data-stu-id="6f561-165">Granted permission for that application to read alerts</span></span>
--   <span data-ttu-id="6f561-166">Anslöt API:t</span><span class="sxs-lookup"><span data-stu-id="6f561-166">Connected the API</span></span>
--   <span data-ttu-id="6f561-167">Använde ett PowerShell-skript för att returnera aviseringar som skapats de senaste 48 timmarna</span><span class="sxs-lookup"><span data-stu-id="6f561-167">Used a PowerShell script to return alerts created in the past 48 hours</span></span>
+<span data-ttu-id="26aa5-162">Nu är allt klart!</span><span class="sxs-lookup"><span data-stu-id="26aa5-162">You’re all done!</span></span> <span data-ttu-id="26aa5-163">Du har just lyckats:</span><span class="sxs-lookup"><span data-stu-id="26aa5-163">You have just successfully:</span></span>
+-   <span data-ttu-id="26aa5-164">Skapad och registrerad och program</span><span class="sxs-lookup"><span data-stu-id="26aa5-164">Created and registered and application</span></span>
+-   <span data-ttu-id="26aa5-165">Beviljad behörighet för det programmet att läsa aviseringar</span><span class="sxs-lookup"><span data-stu-id="26aa5-165">Granted permission for that application to read alerts</span></span>
+-   <span data-ttu-id="26aa5-166">Anslöt API:t</span><span class="sxs-lookup"><span data-stu-id="26aa5-166">Connected the API</span></span>
+-   <span data-ttu-id="26aa5-167">Använde ett PowerShell-skript för att returnera aviseringar som skapats de senaste 48 timmarna</span><span class="sxs-lookup"><span data-stu-id="26aa5-167">Used a PowerShell script to return alerts created in the past 48 hours</span></span>
 
 
 
-## <a name="related-topic"></a><span data-ttu-id="6f561-168">Relaterat ämne</span><span class="sxs-lookup"><span data-stu-id="6f561-168">Related topic</span></span>
-- [<span data-ttu-id="6f561-169">Microsoft Defender för slutpunkts-API:er</span><span class="sxs-lookup"><span data-stu-id="6f561-169">Microsoft Defender for Endpoint APIs</span></span>](exposed-apis-list.md)
-- [<span data-ttu-id="6f561-170">Access Microsoft Defender för slutpunkt med programkontext</span><span class="sxs-lookup"><span data-stu-id="6f561-170">Access Microsoft Defender for Endpoint with application context</span></span>](exposed-apis-create-app-webapp.md)
-- [<span data-ttu-id="6f561-171">Använda Microsoft Defender för slutpunkt med användarkontext</span><span class="sxs-lookup"><span data-stu-id="6f561-171">Access Microsoft Defender for Endpoint with user context</span></span>](exposed-apis-create-app-nativeapp.md)
+## <a name="related-topic"></a><span data-ttu-id="26aa5-168">Relaterat ämne</span><span class="sxs-lookup"><span data-stu-id="26aa5-168">Related topic</span></span>
+- [<span data-ttu-id="26aa5-169">Microsoft Defender för slutpunkts-API:er</span><span class="sxs-lookup"><span data-stu-id="26aa5-169">Microsoft Defender for Endpoint APIs</span></span>](exposed-apis-list.md)
+- [<span data-ttu-id="26aa5-170">Access Microsoft Defender för slutpunkt med programkontext</span><span class="sxs-lookup"><span data-stu-id="26aa5-170">Access Microsoft Defender for Endpoint with application context</span></span>](exposed-apis-create-app-webapp.md)
+- [<span data-ttu-id="26aa5-171">Använda Microsoft Defender för slutpunkt med användarkontext</span><span class="sxs-lookup"><span data-stu-id="26aa5-171">Access Microsoft Defender for Endpoint with user context</span></span>](exposed-apis-create-app-nativeapp.md)
