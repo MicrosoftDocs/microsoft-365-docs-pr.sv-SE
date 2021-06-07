@@ -20,12 +20,12 @@ description: Administratörer kan läsa mer om skydd mot hot i Microsoft 365 kon
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: ac90aa853769b239386d422e0b196a1f6140bf95
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696556"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793202"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -101,45 +101,57 @@ Mer information om rekommenderade inställningar för skydd mot skadlig programv
 
    Klicka på **Spara** när du är klar.
 
-4. Klicka på Stäng när principinformationen **visas.**
+4. Tillbaka på utfällda menyn principinformation klickar du **Stäng**.
 
 Detaljerade instruktioner för konfigurering av principer för skadlig programvara finns i [Konfigurera principer för skydd mot skadlig programvara i EOP.](configure-anti-malware-policies.md)
 
-## <a name="part-2---anti-phishing-protection"></a>Del 2 – Skydd mot nätfiske
+## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>Del 2 – Skydd mot nätfiske i EOP och Defender för Office 365
 
 [Skydd mot nätfiske är](anti-phishing-protection.md) tillgängligt i prenumerationer som innehåller [EOP.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) Avancerat skydd mot nätfiske finns i [Defender för Office 365.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-Här beskrivs hur du konfigurerar en princip mot nätfiske i Microsoft Defender för Office 365. Stegen liknar varandra när du konfigurerar en princip mot nätfiske i EOP.
+Mer information om rekommenderade inställningar för principer för skydd mot nätfiske finns i Inställningar för [EOP-princip](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) mot nätfiske och Inställningar för skydd mot nätfiskeprincip i [Microsoft Defender för Office 365.](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)
 
-1. I [Säkerhets- &,](https://protection.office.com)väljer du **Policy för** \> **hothantering mot** \> **nätfiske.**
+Här beskrivs hur du konfigurerar standardprincipen för skydd mot nätfiske. Inställningar som bara finns i Defender för Office 365 är tydligt markerade.
 
-2. Klicka **på Standardprincip.**
+1. Öppna <https://security.microsoft.com/antiphishing> .
 
-3. I avsnittet **Personifiering klickar** du **på Redigera** och anger sedan följande inställningar:
+2. På sidan **Mot nätfiske** väljer du principen **Office365 AntiPhish Default (standard) genom** att klicka på namnet.
 
-   - På fliken **Lägg till användare att** skydda aktiverar du skyddet.  Lägg sedan till användare, till exempel organisationens styrelsemedlemmar, din VD, Ekonomichef och andra högre chefer. (Du kan skriva in en enskild e-postadress eller klicka för att visa en lista.)
+3. Konfigurera följande inställningar i den utfällade menyn med principinformation:
 
-   - På fliken **Lägg till domäner att** skydda aktiverar du Inkludera automatiskt de domäner jag **äger.** Om du har egna domäner kan du lägga till dem nu.
+   - **Tröskelvärde för & skydd:** Klicka **på** Redigera skyddsinställningar och  konfigurera följande inställningar i den utfällklara menyn Redigera skyddsinställningar:
+     - **Tröskelvärde för nätfiske:** <sup>\*</sup> Välj **2 – Aggressiv** (standard) eller **3 – Mer aggressiva** (strikt).
+     - **Personifieringsavsnitt:** <sup>\*</sup> Konfigurera följande värden:
+       - Välj **Aktivera** användare att skydda , klicka på länken Hantera **(nn)** avsändare som visas och lägg sedan till interna och externa avsändare som ska skyddas från personifiering, till exempel företagets styrelsemedlemmar, din VD, CFO och andra högre chefer.
+       - Markera **Aktivera domäner att skydda** och konfigurera sedan följande inställningar som visas:
+         - Välj **Inkludera domäner som jag äger** för att skydda interna avsändare i dina godkända domäner (visas genom att klicka på Visa mina **domäner**) från personifiering.
+         - Om du vill skydda avsändare i andra domäner väljer du Inkludera egna domäner **,** klickar på länken Hantera **(nn)** anpassade domäner som visas och lägger sedan till andra domäner för att skydda mot personifiering.
+     - Avsnittet Lägg till **betrodda** avsändare och domäner: Klicka på Hantera <sup>\*</sup> **(nn)** betrodda avsändare och domäner om du vill konfigurera undantag från avsändar- och avsändardomänen till personifieringsskydd om det behövs.
+     - Inställningar för <sup>\*</sup> postlådeintelligens: Kontrollera att Aktivera postlådeintelligens och Aktivera intelligens **för personifieringsskydd** är markerade. 
+     - **Förfalskningsavsnitt:** **Kontrollera att Aktivera förfalskningsinformation** har markerats.
 
-   - På fliken **Åtgärder** väljer du **Sätt meddelandet i karantän för** både alternativen för den imiterade **användaren** och **den imiterade** domänen. Aktivera även säkerhetstips för personifiering.
+     Klicka på **Spara** när du är klar.
 
-   - Kontrollera att **postlådeintelligens** är aktiverat på fliken Postlådeintelligens och aktivera skydd för postlådeintelligens. I listan **Om e-post skickas från en imiterad användare** väljer du **Sätt meddelandet i karantän.**
+   - **Avsnittet** Åtgärder: Klicka **på Redigera åtgärder** och konfigurera följande inställningar i den **utfällfältet** Redigera åtgärder som öppnas:
+     - **Avsnittet Meddelandeåtgärder:** Konfigurera följande inställningar:
+       - **Om meddelandet identifieras som en imiterad användare:** <sup>\*</sup> Välj Sätt meddelandet i **karantän.**
+       - **Om meddelandet identifieras som en imiterad domän:** <sup>\*</sup> Välj Sätt meddelandet i **karantän.**
+       - **Om postlådeinformation** upptäcker en imiterad användare: Välj Flytta meddelandet till mottagarnas skräppostmappar (Standard) eller Sätt meddelandet <sup>\*</sup> i **karantän** (Strikt). 
+       - **Om meddelandet identifieras som förfalskning** väljer du Flytta meddelandet till mottagarnas skräppostmappar **(Standard)** eller Sätt meddelandet **i** karantän (strikt).
+     - **Säkerhetstips & indikatorer:** Konfigurera följande inställningar:
+       - **Visa användares personifiering säkerhetstips:** <sup>\*</sup> Välj (aktivera).
+       - **Visa domänens personifiering säkerhetstips** <sup>\*</sup> : Välj (aktivera).
+       - **Visa användarpersonifiering ovanliga tecken säkerhetstips** <sup>\*</sup> : Välj (aktivera).
+       - **Visa (?) för oauthenticerade avsändare för förfalskning:** Välj (aktivera).
+       - **Visa via-taggen:** Välj (aktivera) om den här inställningen är tillgänglig.
 
-   - På fliken **Lägg till betrodda avsändare och** domäner anger du de betrodda avsändare eller domäner som du vill lägga till.
+     Klicka på **Spara** när du är klar.
 
-   - **Spara** på **fliken Granska dina** inställningar när du har granskat inställningarna.
+   <sup>\*</sup>Den här inställningen är endast tillgänglig i Defender för Office 365.
 
-4. I avsnittet **Förfalskning** klickar du **på Redigera** och anger sedan följande inställningar:
+4. Klicka **på Spara** och sedan på **Stäng**
 
-   - På **fliken Inställningar för förfalskningsfilter** kontrollerar du att skydd mot förfalskning är aktiverat.
-
-   - Välj **Sätt meddelandet** i **karantän på fliken Åtgärder.**
-
-   - **Spara** på **fliken Granska dina** inställningar när du har granskat ändringarna. (Om du inte har gjort några ändringar kan **du avbryta**.)
-
-5. Stäng sidan med standardprincipinställningar.
-
-Mer information om alternativen för nätfiskeprincip finns i Konfigurera principer för skydd [mot nätfiske i Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
+Detaljerade anvisningar för hur du konfigurerar principer för skydd mot nätfiske finns i Konfigurera principer för skydd mot nätfiske i [EOP](configure-anti-phishing-policies-eop.md) och Konfigurera principer för skydd mot nätfiske i [Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>Del 3 – Skydd mot skräppost i EOP
 
@@ -147,15 +159,13 @@ Mer information om rekommenderade inställningar för skydd mot skräppost finns
 
 1. Öppna <https://security.microsoft.com/antispam> .
 
-2. På sidan **Anti-spam policies** väljer du principen **Anti-spam inbound policy** from the list by clicking on the name.
+2. På sidan **Principer för skräppostskydd** markerar du principen **Anti-spam inbound policy (Default)** i listan genom att klicka på namnet.
 
-3. I den utfällklara  principinformationen som visas klickar du på Tröskelvärde för redigering av skräppost och egenskaper i avsnittet Tröskelvärde för **massutskick & skräppost.**
+3. Gör så här i den utfällade policyinformation som visas:
+   - **Tröskelvärde för massutskick & egenskaper för skräppost:** Klicka **på Redigera tröskelvärde för skräppost och egenskaper**. I **tröskelvärdet för skräppost och** de  egenskaper som visas anger du tröskelvärdet för Massutskick av e-post till 5 (strikt) eller 6 (standard). Klicka på **Spara** när du är klar.
+   - **Avsnittet Tillåtna och blockerade avsändare och domäner:** Granska eller redigera dina tillåtna avsändare och tillåtna domäner.
 
-4. I **tröskelvärdet för skräppost och** de  egenskaper som visas anger du tröskelvärdet för Massutskick av e-post till 5 (strikt) eller 6 (standard). När du är klar klickar du på **Spara**
-
-5. När du vill gå tillbaka till  den utfällna policyinformationen går du till avsnittet Tillåtna och blockerade avsändare och domäner och granskar eller redigerar dina tillåtna avsändare och tillåtna domäner.
-
-6. Klicka på **Stäng** när du är klar.
+4. Klicka på **Stäng** när du är klar.
 
 Detaljerade instruktioner för hur du konfigurerar principer för skydd mot skräppost finns [i Konfigurera principer för skydd mot skräppost i EOP.](configure-your-spam-filter-policies.md)
 

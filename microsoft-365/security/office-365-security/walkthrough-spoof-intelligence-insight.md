@@ -19,12 +19,12 @@ description: Administratörer kan lära sig att använda förfalsknings- och fö
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 821488f79186e1b5c306b587764377989346eea5
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530892"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793214"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Hantera förfalskningsavsändare med förfalsknings- och förfalskningsinformation i EOP
 
@@ -69,7 +69,7 @@ Du kan hantera & förfalskningsinformation i Säkerhets- och efterlevnadscenter 
   - [Konfigurera principer för skydd mot nätfiske i EOP.](configure-anti-phishing-policies-eop.md)
   - [Konfigurera principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md).
 
-- Vi rekommenderar inställningar för förfalskningsinformation i [EOP:s standardinställningar för nätfiskeprincip.](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings)
+- Vi rekommenderar inställningar för förfalskningsinformation i inställningarna för [EOP-policy mot nätfiske.](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)
 
 ## <a name="manage-spoofed-senders"></a>Hantera falska avsändare
 
@@ -96,7 +96,7 @@ Det finns två sätt att tillåta och blockera falska avsändare:
    - **Dina domäner:** Avsändare förfalskning av användare i dina interna domäner.
    - **Externa domäner:** Avsändare förfalskning av användare i externa domäner.
 
-5. Klicka ![ på ](../../media/scc-expand-icon.png) Expandera-ikonen **i kolumnen Tillåts att förfalskning?.** Välj **Ja** om du vill tillåta en förfalskning eller välj **Nej** för att markera meddelandet som förfalskning. Åtgärden styrs av standardprincipen för skydd mot nätfiske eller anpassade principer för skydd mot nätfiske (standardvärdet är Flytta **meddelandet till mappen Skräppost).** Mer information finns i [Inställningar för förfalskning i principer mot nätfiske.](set-up-anti-phishing-policies.md#spoof-settings)
+5. Klicka ![ på ](../../media/scc-expand-icon.png) Expandera-ikonen **i kolumnen Tillåts att förfalskning?.** Välj **Ja** om du vill tillåta en förfalskning eller välj **Nej** för att markera meddelandet som förfalskning. Åtgärden styrs av standardprincipen för skydd mot nätfiske eller anpassade principer för skydd mot nätfiske (standardvärdet är Flytta **meddelandet till mappen Skräppost).** Mer information finns i [Principer för skydd mot nätfiske](set-up-anti-phishing-policies.md#spoof-settings).
 
    ![Skärmbild som visar de utfällda avsändarna och om avsändaren tillåts kapa](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 

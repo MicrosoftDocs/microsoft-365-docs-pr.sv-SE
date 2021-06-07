@@ -19,12 +19,12 @@ ms.collection:
 description: Vad är metodtips för Exchange Online Protection (EOP) och Defender för Office 365 säkerhetsinställningar? Vilka är de aktuella rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vad får du om du även använder Defender för Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6661c31d0cc05a1bdfd51de986af1e7b22c9d70
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: f00e1e2356839e70acafb0f98a5424a1311082e7
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696532"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793226"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet
 
@@ -42,7 +42,7 @@ ms.locfileid: "52696532"
 Information om hur du automatiskt använder standardinställningarna eller striktinställningarna för användarna finns i Förinställda säkerhetsprinciper [i EOP och Microsoft Defender för Office 365.](preset-security-policies.md)
 
 > [!NOTE]
-> Skräppostregeln måste aktiveras på postlådor för att filtreringen ska fungera ordentligt. Det är aktiverat som standard, men du bör kontrollera om filtrering inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor i Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+> Skräppostregeln måste aktiveras på postlådor för att filtreringen ska fungera ordentligt. Det är aktiverat som standard, men du bör kontrollera om filtrering inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
 
 I den här artikeln beskrivs standardinställningarna och även de rekommenderade inställningarna Standard och Strikt för att skydda dina användare. Tabellerna innehåller inställningarna i Säkerhetscenter Microsoft 365 PowerShell (Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell för organisationer utan Exchange Online postlådor).
 
@@ -55,7 +55,7 @@ Skydd mot skräppost, skadlig programvara och nätfiske är EOP-funktioner som k
 
 ### <a name="eop-anti-spam-policy-settings"></a>Principinställningar för skydd mot skräppost i EOP
 
-Information om hur du skapar och konfigurerar principer för skydd mot skräppost [finns i Konfigurera principer för skydd mot Office 365.](configure-your-spam-filter-policies.md)
+Information om hur du skapar och konfigurerar principer för skydd mot skräppost [finns i Konfigurera principer för skydd mot skräppost i EOP.](configure-your-spam-filter-policies.md)
 
 <br>
 
@@ -68,7 +68,7 @@ Information om hur du skapar och konfigurerar principer för skydd mot skräppos
 |**Identifiering av** nätfiske <p> _PhishSpamAction_|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Sätt meddelande i karantän** <p> `Quarantine`|**Sätt meddelande i karantän** <p> `Quarantine`||
 |**Identifiering av nätfiske med** hög säkerhet <p> _HighConfidencePhishAction_|**Sätt meddelande i karantän** <p> `Quarantine`|**Sätt meddelande i karantän** <p> `Quarantine`|**Sätt meddelande i karantän** <p> `Quarantine`||
 | Massidentifieringsåtgärd <p> _BulkSpamAction_|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Flytta meddelandet till mappen Skräppost** <p> `MoveToJmf`|**Sätt meddelande i karantän** <p> `Quarantine`||
-|**Tröskelvärde för massutskick av e-post** <p> _BulkThreshold_|7|6|4|Mer information finns i [Nivå för mass klagomål (BCL) i Office 365](bulk-complaint-level-values.md).|
+|**Tröskelvärde för massutskick av e-post** <p> _BulkThreshold_|7|6|4|Mer information finns i [Nivå för massklagomål (BCL) i EOP.](bulk-complaint-level-values.md)|
 |_MarkAsSpamBulkMail_|På|På|På|Den här inställningen är endast tillgänglig i PowerShell.|
 |**Behålla skräppost i karantän så här många dagar** <p> _QuarantineRetentionPeriod_|15 dagar|30 dagar|30 dagar||
 |**Aktivera säkerhetstips för skräppost** <p> _InlineSafetyTipsEnabled_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
@@ -84,7 +84,7 @@ Information om hur du skapar och konfigurerar principer för skydd mot skräppos
 
 Det finns många avancerade inställningar för skräppostfilter (ASF) i principer mot skräppost som håller på att föraktas. Mer information om tidslinjerna för avskrivningen av dessa funktioner anges utanför den här artikeln.
 
-Vi rekommenderar att du lämnar följande ASF-inställningar **Av** för både **standard-** och **striktnivåer.** Mer information om ASF-inställningar finns i [Avancerade inställningar för skräppostfilter (ASF) i Office 365.](advanced-spam-filtering-asf-options.md)
+Vi rekommenderar att du lämnar följande ASF-inställningar **Av** för både **standard-** och **striktnivåer.** Mer information om ASF-inställningar finns i [Avancerade inställningar för skräppostfilter (ASF) i EOP.](advanced-spam-filtering-asf-options.md)
 
 <br>
 
@@ -94,24 +94,24 @@ Vi rekommenderar att du lämnar följande ASF-inställningar **Av** för både *
 |---|---|
 |**Bildlänkar till fjärrwebbplatser** _(IncreaseScoreWithImageLinks_)||
 |**Numerisk IP-adress i URL** (_IncreaseScoreWithNumericIps_)||
-|**UL-omdirigering till annan port** (_IncreaseScoreWithRedirectToOtherPort_)||
-|**URL till .biz- eller .info-webbplatser** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**URL-omdirigering till annan port** (_IncreaseScoreWithRedirectToOtherPort_)||
+|**Länkar till .biz- eller .info-webbplatser** (_IncreaseScoreWithBizOrInfoUrls_)||
 |**Tomma meddelanden** _(MarkAsSpamEmptyMessages_)||
-|**JavaScript eller VBScript i HTML** (_MarkAsSpamJavaScriptInHtml_)||
-|**Frame- eller IFrame-taggar i HTML** (_MarkAsSpamFramesInHtml_)||
-|**Objekttaggar i HTML** (_MarkAsSpamObjectTagsInHtml_)||
 |**Bädda in taggar i HTML** (_MarkAsSpamEmbedTagsInHtml_)||
+|**JavaScript eller VBScript i HTML** (_MarkAsSpamJavaScriptInHtml_)||
 |**Formulärtaggar i HTML** (_MarkAsSpamFormTagsInHtml_)||
+|**Ram- eller iframe-taggar i HTML** (_MarkAsSpamFramesInHtml_)||
 |**Webbbuggar i HTML** (_MarkAsSpamWebBugsInHtml_)||
-|**Använda listan över känsliga ord** _(MarkAsSpamSensitiveWordList)_||
+|**Objekttaggar i HTML** (_MarkAsSpamObjectTagsInHtml_)||
+|**Känsliga ord** (_MarkAsSpamSensitiveWordList_)||
 |**SPF-post: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
-|**Filtrering av villkorsstyrd avsändar-ID: hard fail** (_MarkAsSpamFromAddressAuthFail_)||
-|**NDR backscatter** (_MarkAsSpamNdrBackscatter_)||
+|**Sender ID filtering hard fail** _(MarkAsSpamFromAddressAuthFail_)||
+|**Bakåtcatter** (_MarkAsSpamNdrBackscatter_)||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>Principinställningar för utgående skräppost i EOP
 
-Information om hur du skapar och konfigurerar principer för utgående skräppost finns i [Konfigurera utgående skräppostfiltrering i Office 365.](configure-the-outbound-spam-policy.md)
+Information om hur du skapar och konfigurerar principer för utgående skräppost finns [i Konfigurera utgående skräppostfiltrering i EOP.](configure-the-outbound-spam-policy.md)
 
 Mer information om standardbegränsningar för sändning i tjänsten finns i [Sändningsgränser.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
@@ -121,15 +121,16 @@ Mer information om standardbegränsningar för sändning i tjänsten finns i [S�
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Maximalt antal mottagare per användare: Gräns för extern timme** <p> _RecipientLimitExternalPerHour_|0|500|400|Standardvärdet 0 innebär att tjänstens standardinställningar används.|
-|**Maximalt antal mottagare per användare: Gräns för intern timme** <p> _RecipientLimitInternalPerHour_|0|1000|800|Standardvärdet 0 innebär att tjänstens standardinställningar används.|
-|**Maximalt antal mottagare per användare: Daglig gräns** <p> _RecipientLimitPerDay_|0|1000|800|Standardvärdet 0 innebär att tjänstens standardinställningar används.|
-|**Åtgärd när en användare överskrider gränserna** <p> _ActionWhenThresholdReached_|**Hindra användaren från att skicka e-post till följande dag** <p> `BlockUserForToday`|**Hindra användaren från att skicka e-post** <p> `BlockUser`|**Hindra användaren från att skicka e-post** <p> `BlockUser`||
+|**Ange en gräns för externa meddelanden** <p> _RecipientLimitExternalPerHour_|0|500|400|Standardvärdet 0 innebär att tjänstens standardinställningar används.|
+|**Ange en gräns för interna meddelanden** <p> _RecipientLimitInternalPerHour_|0|1000|800|Standardvärdet 0 innebär att tjänstens standardinställningar används.|
+|**Ange en daglig meddelandegräns** <p> _RecipientLimitPerDay_|0|1000|800|Standardvärdet 0 innebär att tjänstens standardinställningar används.|
+|**Begränsning som gjorts för användare som når meddelandegränsen** <p> _ActionWhenThresholdReached_|**Begränsa användarens sändning av e-post till följande dag** <p> `BlockUserForToday`|**Hindra användaren från att skicka e-post** <p> `BlockUser`|**Hindra användaren från att skicka e-post** <p> `BlockUser`||
+|**Automatiska vidare vidarebefordransregler** <p> _AutoForwardingMode_|**Automatiskt – systemkontrollerat** <p> `Automatic`|**Automatiskt – systemkontrollerat** <p> `Automatic`|**Automatiskt – systemkontrollerat** <p> `Automatic`|
 |
 
 ### <a name="eop-anti-malware-policy-settings"></a>Principinställningar för skydd mot skadlig programvara i EOP
 
-Information om hur du skapar och konfigurerar principer för skadlig programvara [finns i Konfigurera principer för skadlig programvara i Office 365.](configure-anti-malware-policies.md)
+Information om hur du skapar och konfigurerar principer för skadlig programvara finns [i Konfigurera principer för skydd mot skadlig programvara i EOP.](configure-anti-malware-policies.md)
 
 <br>
 
@@ -144,7 +145,7 @@ Information om hur du skapar och konfigurerar principer för skadlig programvara
 |**Meddela externa avsändare när meddelanden sätts i karantän som skadlig programvara** <p> _EnableExternalSenderNotifications_|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`|Inaktiverad <p> `$false`||
 |
 
-### <a name="eop-default-anti-phishing-policy-settings"></a>Standardinställningar för nätfiskeprincip i EOP
+### <a name="eop-anti-phishing-policy-settings"></a>Inställningar för skydd mot nätfiske i EOP
 
 Mer information om de här inställningarna finns [i Förfalskningsinställningar.](set-up-anti-phishing-policies.md#spoof-settings) Information om hur du konfigurerar de här [inställningarna finns i Konfigurera principer för skydd mot nätfiske i EOP.](configure-anti-phishing-policies-eop.md)
 
@@ -154,9 +155,10 @@ Mer information om de här inställningarna finns [i Förfalskningsinställninga
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Aktivera skydd mot förfalskning** <p> _EnableSpoofIntelligence_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
-|**Aktivera oauthenticerad avsändare** <p> _EnableUnauthenticatedSender_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till ett frågetecken (?) på avsändarens foto i Outlook för oidentifierade falska avsändare. Mer information finns i [Principer för skydd mot nätfiske](set-up-anti-phishing-policies.md).|
-|**Om e-post skickas av någon som inte har tillåtelse att kapa din domän** <p> _AuthenticationFailAction_|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Sätt meddelandet i karantän** <p> `Quarantine`|Den här inställningen gäller för förfalskningsavsändare som [](learn-about-spoof-intelligence.md) automatiskt har blockerats enligt förfalskningsinformation eller som manuellt blockerats i listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)|
+|**Aktivera förfalskningsinformation** <p> _EnableSpoofIntelligence_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
+|**Om e-post identifieras som förfalskning** <p> _AuthenticationFailAction_|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Sätt meddelandet i karantän** <p> `Quarantine`|Den här inställningen gäller för förfalskningsavsändare som [](learn-about-spoof-intelligence.md) automatiskt har blockerats enligt förfalskningsinformation eller som manuellt blockerats i listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)|
+|**Visa (?) för oauthenticerade avsändare för förfalskning** <p> _EnableUnauthenticatedSender_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till ett frågetecken (?) på avsändarens foto i Outlook för oidentifierade falska avsändare. Mer information finns i [Principer för skydd mot nätfiske](set-up-anti-phishing-policies.md).|
+|**Visa via-taggen** <p> _EnableViaTag_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till en via-tagg (chris@contoso.com via fabrikam.com) till från-adressen om den skiljer sig från domänen i DKIM-signaturen eller **MAIL FROM-adressen.** <p> Om du inte kan använda den här  inställningen styrs frågetecknet och via-taggen båda av Show **(?) för oauthenticerade** avsändare för förfalskning i organisationen.|
 |
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender för Office 365 säkerhet
@@ -187,19 +189,18 @@ Mer information om de här inställningarna finns [i Inställningar för personi
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
 |---|:---:|:---:|:---:|---|
-|Skyddade användare: **Lägga till användare som ska skyddas** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Av <p> `$false` <p> none (ingen)|På <p> `$true` <p> \<list of users\>|På <p> `$true` <p> \<list of users\>|Beroende på din organisation rekommenderar vi att du lägger till användare (meddelandeavsändare) i viktiga roller. Internt kan skyddade avsändare vara din VD, CFO och andra högre chefer. Externa användare kan vara skyddade avsändare av direktörer eller direktörer.|
-|Skyddade domäner: **Inkludera automatiskt de domäner jag äger** <p> _EnableOrganizationDomainsProtection_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
+|Skyddade användare (avsändare): **Ge användarna möjlighet att skydda** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Av <p> `$false` <p> none (ingen)|På <p> `$true` <p> \<list of users\>|På <p> `$true` <p> \<list of users\>|Beroende på din organisation rekommenderar vi att du lägger till användare (meddelandeavsändare) i viktiga roller. Internt kan skyddade avsändare vara din VD, CFO och andra högre chefer. Externa användare kan vara skyddade avsändare av direktörer eller direktörer.|
+|Skyddade användare: **Om ett meddelande identifieras som en imiterad användare** <p> _TargetedUserProtectionAction_|**Använd inte någon åtgärd** <p> `NoAction`|**Sätt meddelandet i karantän** <p> `Quarantine`|**Sätt meddelandet i karantän** <p> `Quarantine`||
+|Skyddade domäner: **Inkludera domäner som jag äger** <p> _EnableOrganizationDomainsProtection_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
 |Skyddade domäner: **Inkludera egna domäner** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Av <p> `$false` <p> none (ingen)|På <p> `$true` <p> \<list of domains\>|På <p> `$true` <p> \<list of domains\>|Beroende på din organisation rekommenderar vi att du lägger till domäner (avsändardomäner) som du inte äger men som du ofta interagerar med.|
-|Skyddade användare: **Om e-post skickas av en imiterad användare** <p> _TargetedUserProtectionAction_|**Använd inte någon åtgärd** <p> `NoAction`|**Sätt meddelandet i karantän** <p> `Quarantine`|**Sätt meddelandet i karantän** <p> `Quarantine`||
-|Skyddade domäner: **Om e-post skickas via en imiterad domän** <p> _TargetedDomainProtectionAction_|**Använd inte någon åtgärd** <p> `NoAction`|**Sätt meddelandet i karantän** <p> `Quarantine`|**Sätt meddelandet i karantän** <p> `Quarantine`||
-|**Visa tips för imiterade användare** <p> _EnableSimilarUsersSafetyTips_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
-|**Visa tips för imiterade domäner** <p> _EnableSimilarDomainsSafetyTips_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
-|**Visa tips för ovanliga tecken** <p> _EnableUnusualCharactersSafetyTips_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
-|**Aktivera postlådeintelligens?** <p> _EnableMailboxIntelligence_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
-|**Vill du aktivera postlådeintelligensbaserat personifieringsskydd?** <p> _EnableMailboxIntelligenceProtection_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
-|**Om e-post skickas av en imiterad användare som skyddas av postlådeinformation** <p> _MailboxIntelligenceProtectionAction_|**Använd inte någon åtgärd** <p> `NoAction`|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Sätt meddelandet i karantän** <p> `Quarantine`||
-|**Betrodda avsändare** <p> _Undantagna Kalendrar_|Inga|Inga|Inga|Beroende på din organisation rekommenderar vi att du lägger till användare som felaktigt markeras som nätfiske på grund av endast personifiering och inte andra filter.|
-|**Betrodda domäner** <p> _ExcludedDomains_|Inga|Inga|Inga|Beroende på din organisation rekommenderar vi att du lägger till domäner som felaktigt markeras som nätfiske på grund av endast personifiering och inte andra filter.|
+|Skyddade domäner: **Om meddelandet identifieras som en imiterad domän** <p> _TargetedDomainProtectionAction_|**Använd inte någon åtgärd** <p> `NoAction`|**Sätt meddelandet i karantän** <p> `Quarantine`|**Sätt meddelandet i karantän** <p> `Quarantine`||
+|**Lägga till betrodda avsändare och domäner** <p> _Undantagna Kalendrar_ <p> _ExcludedDomains_|Inga|Inga|Inga|Beroende på din organisation rekommenderar vi att du lägger till avsändare eller domäner som felaktigt identifieras som personifieringsförsök.|
+|**Aktivera postlådeintelligens** <p> _EnableMailboxIntelligence_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
+|**Aktivera intelligens för personifieringsskydd** <p> _EnableMailboxIntelligenceProtection_|Av <p> `$false`|På <p> `$true`|På <p> `$true`|Med den här inställningen kan du använda den angivna åtgärden för identifiering av personifieringar efter postlådeintelligens.|
+|**Om postlådeinformation identifierar och utger sig för att vara användare** <p> _MailboxIntelligenceProtectionAction_|**Använd inte någon åtgärd** <p> `NoAction`|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Sätt meddelandet i karantän** <p> `Quarantine`||
+|**Visa säkerhetstips** <p> _EnableSimilarUsersSafetyTips_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
+|**Visa säkerhetstips** <p> _EnableSimilarDomainsSafetyTips_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
+|**Visa ovanliga tecken för användarpersonifiering säkerhetstips** <p> _EnableUnusualCharactersSafetyTips_|Av <p> `$false`|På <p> `$true`|På <p> `$true`||
 |
 
 #### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Inställningar för förfalskning i principer för nätfiske i Microsoft Defender för Office 365
@@ -211,10 +212,11 @@ Observera att det är samma inställningar som är tillgängliga i inställninga
 ****
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
-|---|---|---|---|---|
-|**Aktivera skydd mot förfalskning** <p> _EnableSpoofIntelligence_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
-|**Aktivera oauthenticerad avsändare** <p> _EnableUnauthenticatedSender_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till ett frågetecken (?) på avsändarens foto i Outlook för oidentifierade falska avsändare. Mer information finns i [Principer för skydd mot nätfiske](set-up-anti-phishing-policies.md).|
-|**Om e-post skickas av någon som inte har tillåtelse att kapa din domän** <p> _AuthenticationFailAction_|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Sätt meddelandet i karantän** <p> `Quarantine`|Den här inställningen gäller för förfalskningsavsändare som [](learn-about-spoof-intelligence.md) automatiskt har blockerats enligt förfalskningsinformation eller som manuellt blockerats i listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)|
+|---|:---:|:---:|:---:|---|
+|**Aktivera förfalskningsinformation** <p> _EnableSpoofIntelligence_|På <p> `$true`|På <p> `$true`|På <p> `$true`||
+|**Om e-post identifieras som förfalskning** <p> _AuthenticationFailAction_|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Flytta meddelandet till mottagarnas skräppostmappar** <p> `MoveToJmf`|**Sätt meddelandet i karantän** <p> `Quarantine`|Den här inställningen gäller för förfalskningsavsändare som [](learn-about-spoof-intelligence.md) automatiskt har blockerats enligt förfalskningsinformation eller som manuellt blockerats i listan över [tillåtna/blockerade klientorganisationen.](tenant-allow-block-list.md)|
+|**Visa (?) för oauthenticerade avsändare för förfalskning** <p> _EnableUnauthenticatedSender_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till ett frågetecken (?) på avsändarens foto i Outlook för oidentifierade falska avsändare. Mer information finns i [Principer för skydd mot nätfiske](set-up-anti-phishing-policies.md).|
+|**Visa via-taggen** <p> _EnableViaTag_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Lägger till en via-tagg (chris@contoso.com via fabrikam.com) till från-adressen om den skiljer sig från domänen i DKIM-signaturen eller **MAIL FROM-adressen.** <p> Om du inte kan använda den här  inställningen styrs frågetecknet och via-taggen båda av Show **(?) för oauthenticerade** avsändare för förfalskning i organisationen.|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Avancerade inställningar i principer för skydd mot nätfiske i Microsoft Defender för Office 365
@@ -227,7 +229,7 @@ Mer information om den här inställningen finns i [Avancerade tröskelvärden f
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Avancerade tröskelvärden för nätfiske** <p> _PhishThresholdLevel_|**1 – Standard** <p> `1`|**2 – Aggressivt** <p> `2`|**3 – Mer aggressiva** <p> `3`||
+|**Tröskelvärde för nätfiske** <p> _PhishThresholdLevel_|**1 – Standard** <p> `1`|**2 – Aggressivt** <p> `2`|**3 – Mer aggressiva** <p> `3`||
 |
 
 ### <a name="safe-links-settings"></a>Valv Inställningar för länkar
@@ -246,9 +248,9 @@ I PowerShell använder du cmdleten [Set-AtpPolicyForO365](/powershell/module/exc
 
 |Namn på säkerhetsfunktion|Standard|Standard|Strikt|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Använda Valv länkar i: Office 365 program** <p> _EnableSafeLinksForO365Clients_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Använd Valv länkar i Office 365 och mobila appar (iOS och Android). Mer information finns i inställningar [Valv länkar för appar Office 365 .](safe-links.md#safe-links-settings-for-office-365-apps)|
-|**Spåra inte när användare klickar Valv länkar** <p> _TrackClicks_|På <p> `$false`|Av <p> `$true`|Av <p> `$true`|Om du inaktiverar den här inställningen _(ange TrackClicks_ `$true` till ) spåras användarens klick i Office 365 program.|
-|**Låt inte användare klicka igenom Valv till den ursprungliga URL:en** <p> _AllowClickThrough_|På <p> `$false`|På <p> `$false`|På <p> `$false`|Om du slår på den här inställningen _(inställningen AllowClickThrough_ till ) går du inte vidare till `$false` den ursprungliga URL:en i Office 365 program.|
+|**Använda Valv länkar i: Office 365 appar** <p> _EnableSafeLinksForO365Clients_|På <p> `$true`|På <p> `$true`|På <p> `$true`|Använd Valv länkar i Office 365 och mobila appar (iOS och Android). Mer information finns i inställningar [Valv länkar för appar Office 365 .](safe-links.md#safe-links-settings-for-office-365-apps)|
+|**Spåra inte när användare klickar på skyddade länkar i Office 365 program** <p> _TrackClicks_|På <p> `$false`|Av <p> `$true`|Av <p> `$true`|Om du inaktiverar den här inställningen _(ange TrackClicks_ `$true` till ) spåras användarens klick i Office 365 program.|
+|**Låt inte användare klicka till den ursprungliga URL:en i Office 365 appar** <p> _AllowClickThrough_|På <p> `$false`|På <p> `$false`|På <p> `$false`|Om du slår på den här inställningen _(inställningen AllowClickThrough_ till ) går du inte vidare till `$false` den ursprungliga URL:en i Office 365 program.|
 |
 
 #### <a name="safe-links-policy-settings"></a>Valv Principinställningar för länkar
