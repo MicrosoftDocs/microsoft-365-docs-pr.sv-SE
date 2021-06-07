@@ -13,7 +13,7 @@
       href: architecture-icons-templates.md
 - name: Microsoft 365 Foundation-lösningar
   items:
-    - name: Konfigurera infrastrukturen för distansarbete
+    - name: Konfigurera din infrastruktur för hybridarbete
       items:
         - name: Översikt
           href: empower-people-to-work-remotely.md
@@ -27,7 +27,7 @@
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: 'Steg 5: Distribuera produktivitetsappar och tjänster'
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: Steg 6. Utbilda distansarbetare
+        - name: Steg 6. Utbilda dina medarbetare
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Konfigurera säkerhet samarbete med hjälp av Microsoft 365
       items:
@@ -225,7 +225,7 @@
       items:
         - name: Microsoft 365-lösningar för Contoso Corporation
           href: contoso-case-study-solutions.md
-        - name: Svar mot COVID-19 och stöd för distans- och på plats-arbete
+        - name: COVID-19 svar och stöd för hybridarbete
           href: contoso-remote-onsite-work.md
         - name: Isolerat team för ett topphemligt projekt
           href: contoso-team-for-top-secret-project.md

@@ -322,7 +322,7 @@
                   items:
                     - name: Microsoft 365 Streaming API
                       href: ../defender-endpoint/raw-data-export.md
-                    - name: Strömma avancerade jakthändelser till Azure Events-hubben
+                    - name: Strömma avancerad sökning till Azure Events-hubben
                       href: ../defender-endpoint/raw-data-export-event-hub.md
                     - name: Strömma avancerade jakthändelser till ditt lagringskonto
                       href: ../defender-endpoint/raw-data-export-storage.md

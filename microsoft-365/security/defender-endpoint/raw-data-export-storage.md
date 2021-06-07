@@ -1,6 +1,6 @@
 ---
-title: Strömma Microsoft Defender för slutpunktshändelser till ditt Storage konto
-description: Läs om hur du konfigurerar Microsoft Defender för Slutpunkt för att strömma Advanced Hunting-händelser till Storage-konto.
+title: Strömma Microsoft 365 Defender-händelser till ditt Storage konto
+description: Läs om hur du konfigurerar Microsoft 365 Defender för att strömma Advanced Hunting-händelser till Storage-konto.
 keywords: raw data export, streaming API, API, Event Hubs, Azure Storage, Storage Account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,80 +16,77 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.custom: api
-ms.openlocfilehash: 6be79e4991c9e20c46458eacd97ac0b7b7466bc8
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9ec8c286828fd6b551bf76c8340b58c9a1407bba
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771663"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778215"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a><span data-ttu-id="78538-104">Konfigurera Microsoft Defender för slutpunkt för att strömma Advanced Hunting-händelser till ditt Storage konto</span><span class="sxs-lookup"><span data-stu-id="78538-104">Configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Storage account</span></span>
+# <a name="configure--microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a><span data-ttu-id="8b878-104">Konfigurera Microsoft 365 Defender för att strömma Advanced Hunting-händelser till ditt Storage konto</span><span class="sxs-lookup"><span data-stu-id="8b878-104">Configure  Microsoft 365 Defender to stream Advanced Hunting events to your Storage account</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="78538-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="78538-105">**Applies to:**</span></span>
-- [<span data-ttu-id="78538-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="78538-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+<span data-ttu-id="8b878-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="8b878-105">**Applies to:**</span></span>
+- [<span data-ttu-id="8b878-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8b878-106">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="78538-107">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="78538-107">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="78538-108">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="78538-108">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
-## <a name="before-you-begin"></a><span data-ttu-id="78538-109">Innan du börjar</span><span class="sxs-lookup"><span data-stu-id="78538-109">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="8b878-107">Innan du börjar:</span><span class="sxs-lookup"><span data-stu-id="8b878-107">Before you begin:</span></span>
 
-1. <span data-ttu-id="78538-110">Skapa ett [Storage konto](/azure/storage/common/storage-account-overview) i klientorganisationen.</span><span class="sxs-lookup"><span data-stu-id="78538-110">Create a [Storage account](/azure/storage/common/storage-account-overview) in your tenant.</span></span>
+1. <span data-ttu-id="8b878-108">Skapa ett [Storage konto](/azure/storage/common/storage-account-overview) i klientorganisationen.</span><span class="sxs-lookup"><span data-stu-id="8b878-108">Create a [Storage account](/azure/storage/common/storage-account-overview) in your tenant.</span></span>
 
-2. <span data-ttu-id="78538-111">Logga in på [din Azure-klientorganisation](https://ms.portal.azure.com/)och gå **till Prenumerationer > din > eller resursleverantörer > Registrera dig på Microsoft.insights.**</span><span class="sxs-lookup"><span data-stu-id="78538-111">Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.insights**.</span></span>
+2. <span data-ttu-id="8b878-109">Logga in på [din Azure-klientorganisation](https://ms.portal.azure.com/)och **gå till Prenumerationer > din > eller resursleverantörer > Registrera dig i Microsoft.Insights.**</span><span class="sxs-lookup"><span data-stu-id="8b878-109">Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.Insights**.</span></span>
 
-## <a name="enable-raw-data-streaming"></a><span data-ttu-id="78538-112">Aktivera direktuppspelning av rådata</span><span class="sxs-lookup"><span data-stu-id="78538-112">Enable raw data streaming</span></span>
+## <a name="enable-raw-data-streaming"></a><span data-ttu-id="8b878-110">Aktivera direktuppspelning av rådata:</span><span class="sxs-lookup"><span data-stu-id="8b878-110">Enable raw data streaming:</span></span>
 
-1. <span data-ttu-id="78538-113">Logga in i [Microsoft Defender för Endpoint-portalen](https://securitycenter.windows.com) som en ***global administratör** _ eller _*_säkerhetsadministratör_\*\*.</span><span class="sxs-lookup"><span data-stu-id="78538-113">Log in to [Microsoft Defender for Endpoint portal](https://securitycenter.windows.com) as a ***Global Administrator** _ or _*_Security Administrator_\*\*.</span></span>
+1. <span data-ttu-id="8b878-111">Logga in på [Microsoft 365 Defender säkerhetscenter](https://security.microsoft.com) som en ***global administratör** _ eller _*_säkerhetsadministratör_\*\*.</span><span class="sxs-lookup"><span data-stu-id="8b878-111">Log in to [Microsoft 365 Defender security center](https://security.microsoft.com) as a ***Global Administrator** _ or _*_Security Administrator_\*\*.</span></span>
 
-2. <span data-ttu-id="78538-114">Gå till [sidan Inställningar för dataexport](https://securitycenter.windows.com/interoperability/dataexport) Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="78538-114">Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.</span></span>
+2. <span data-ttu-id="8b878-112">Gå till [sidan inställningar för dataexport](https://security.microsoft.com/settings/mtp_settings/raw_data_export) i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="8b878-112">Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft Defender Security Center.</span></span>
 
-3. <span data-ttu-id="78538-115">Klicka på Lägg **till inställningar för dataexport.**</span><span class="sxs-lookup"><span data-stu-id="78538-115">Click on **Add data export settings**.</span></span>
+3. <span data-ttu-id="8b878-113">Klicka på Lägg **till inställningar för dataexport.**</span><span class="sxs-lookup"><span data-stu-id="8b878-113">Click on **Add data export settings**.</span></span>
 
-4. <span data-ttu-id="78538-116">Välj ett namn för de nya inställningarna.</span><span class="sxs-lookup"><span data-stu-id="78538-116">Choose a name for your new settings.</span></span>
+4. <span data-ttu-id="8b878-114">Välj ett namn för de nya inställningarna.</span><span class="sxs-lookup"><span data-stu-id="8b878-114">Choose a name for your new settings.</span></span>
 
-5. <span data-ttu-id="78538-117">Välj **Vidarebefordra händelser om du vill Azure Storage**.</span><span class="sxs-lookup"><span data-stu-id="78538-117">Choose **Forward events to Azure Storage**.</span></span>
+5. <span data-ttu-id="8b878-115">Välj **Vidarebefordra händelser om du vill Azure Storage**.</span><span class="sxs-lookup"><span data-stu-id="8b878-115">Choose **Forward events to Azure Storage**.</span></span>
 
-6. <span data-ttu-id="78538-118">Ange ditt **Storage Kontoresurs-ID**.</span><span class="sxs-lookup"><span data-stu-id="78538-118">Type your **Storage Account Resource ID**.</span></span> <span data-ttu-id="78538-119">För att få ditt **Storage Kontoresurs-ID** går du till kontosidan för Storage på fliken Egenskaper för [Azure-portalen](https://ms.portal.azure.com/) > > och kopierar texten under **Storage-kontoresurs-ID:**</span><span class="sxs-lookup"><span data-stu-id="78538-119">In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage account resource ID**:</span></span>
+6. <span data-ttu-id="8b878-116">Ange ditt **Storage Kontoresurs-ID**.</span><span class="sxs-lookup"><span data-stu-id="8b878-116">Type your **Storage Account Resource ID**.</span></span> <span data-ttu-id="8b878-117">För att få ditt **Storage Kontoresurs-ID** går du till din Storage-kontosida på fliken egenskaper i [Azure portal](https://ms.portal.azure.com/) > och kopierar > texten under **Storage Kontoresurs-ID:**</span><span class="sxs-lookup"><span data-stu-id="8b878-117">In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage Account Resource ID**:</span></span>
 
    ![Bild av händelsehubbresurs-ID1](images/storage-account-resource-id.png)
 
-7. <span data-ttu-id="78538-121">Välj de händelser du vill strömma och klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="78538-121">Choose the events you want to stream and click **Save**.</span></span>
+7. <span data-ttu-id="8b878-119">Välj de händelser du vill strömma och klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="8b878-119">Choose the events you want to stream and click **Save**.</span></span>
 
-## <a name="the-schema-of-the-events-in-the-storage-account"></a><span data-ttu-id="78538-122">Schemat för händelserna i Storage konto</span><span class="sxs-lookup"><span data-stu-id="78538-122">The schema of the events in the Storage account</span></span>
+## <a name="the-schema-of-the-events-in-the-storage-account"></a><span data-ttu-id="8b878-120">Schemat för händelserna i det Storage kontot:</span><span class="sxs-lookup"><span data-stu-id="8b878-120">The schema of the events in the Storage account:</span></span>
 
-- <span data-ttu-id="78538-123">En blob-behållare skapas för varje händelsetyp:</span><span class="sxs-lookup"><span data-stu-id="78538-123">A blob container will be created for each event type:</span></span> 
+- <span data-ttu-id="8b878-121">En blob-behållare skapas för varje händelsetyp:</span><span class="sxs-lookup"><span data-stu-id="8b878-121">A blob container will be created for each event type:</span></span> 
 
   ![Bild av händelsehubbresurs-ID2](images/storage-account-event-schema.png)
 
-- <span data-ttu-id="78538-125">Schemat för varje rad i en blob är följande JSON:</span><span class="sxs-lookup"><span data-stu-id="78538-125">The schema of each row in a blob is the following JSON:</span></span> 
+- <span data-ttu-id="8b878-123">Schemat för varje rad i en blob är följande JSON:</span><span class="sxs-lookup"><span data-stu-id="8b878-123">The schema of each row in a blob is the following JSON:</span></span> 
 
   ```
   {
-          "time": "<The time WDATP received the event>"
+          "time": "<The time Microsoft 365 Defender received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <WDATP Advanced Hunting event as Json> }
+          "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
   }               
   ```
 
-- <span data-ttu-id="78538-126">Varje blob innehåller flera rader.</span><span class="sxs-lookup"><span data-stu-id="78538-126">Each blob contains multiple rows.</span></span>
+- <span data-ttu-id="8b878-124">Varje blob innehåller flera rader.</span><span class="sxs-lookup"><span data-stu-id="8b878-124">Each blob contains multiple rows.</span></span>
 
-- <span data-ttu-id="78538-127">Varje rad innehåller händelsenamnet, tiden Defender för Slutpunkt tog emot händelsen, den klientorganisation den tillhör (du får bara händelser från klientorganisationen) och händelsen i JSON-format i en egenskap som kallas "egenskaper".</span><span class="sxs-lookup"><span data-stu-id="78538-127">Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".</span></span>
+- <span data-ttu-id="8b878-125">Varje rad innehåller händelsenamnet, tiden Defender för Slutpunkt tog emot händelsen, den klientorganisation den tillhör (du får bara händelser från klientorganisationen) och händelsen i JSON-format i en egenskap som kallas "egenskaper".</span><span class="sxs-lookup"><span data-stu-id="8b878-125">Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".</span></span>
 
-- <span data-ttu-id="78538-128">Mer information om schemat för Microsoft Defender för slutpunktshändelser finns i Avancerad sökning [– översikt.](advanced-hunting-overview.md)</span><span class="sxs-lookup"><span data-stu-id="78538-128">For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](advanced-hunting-overview.md).</span></span>
+- <span data-ttu-id="8b878-126">Mer information om schemat för de Microsoft 365 Defender-händelser finns i Avancerad sökning [– översikt.](../defender/advanced-hunting-overview.md)</span><span class="sxs-lookup"><span data-stu-id="8b878-126">For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](../defender/advanced-hunting-overview.md).</span></span>
 
-- <span data-ttu-id="78538-129">I tabellen Avancerad sökning finns en kolumn med namnet **MachineGroup** som innehåller enhetens grupp i tabellen **DeviceInfo.**</span><span class="sxs-lookup"><span data-stu-id="78538-129">In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device.</span></span> <span data-ttu-id="78538-130">Här är alla händelser dekorerade med den här kolumnen.</span><span class="sxs-lookup"><span data-stu-id="78538-130">Here every event will be decorated with this column as well.</span></span> <span data-ttu-id="78538-131">Mer information [finns i](machine-groups.md) Enhetsgrupper.</span><span class="sxs-lookup"><span data-stu-id="78538-131">See [Device Groups](machine-groups.md) for more information.</span></span>
 
-## <a name="data-types-mapping"></a><span data-ttu-id="78538-132">Mappning av datatyper</span><span class="sxs-lookup"><span data-stu-id="78538-132">Data types mapping</span></span>
+## <a name="data-types-mapping"></a><span data-ttu-id="8b878-127">Mappning av datatyper:</span><span class="sxs-lookup"><span data-stu-id="8b878-127">Data types mapping:</span></span>
 
-<span data-ttu-id="78538-133">För att hämta datatyperna för våra händelseegenskaper gör du följande:</span><span class="sxs-lookup"><span data-stu-id="78538-133">In order to get the data types for our events properties do the following:</span></span>
+<span data-ttu-id="8b878-128">För att hämta datatyperna för våra händelseegenskaper gör du följande:</span><span class="sxs-lookup"><span data-stu-id="8b878-128">In order to get the data types for our events properties do the following:</span></span>
 
-1. <span data-ttu-id="78538-134">Logga in på [Microsoft Defender Säkerhetscenter](https://securitycenter.windows.com) gå till [sidan Advanced Hunting.](https://securitycenter.windows.com/hunting-package)</span><span class="sxs-lookup"><span data-stu-id="78538-134">Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).</span></span>
+1. <span data-ttu-id="8b878-129">Logga in på [Microsoft 365 säkerhetscenter](https://security.microsoft.com) och gå till [sidan Advanced Hunting](https://security.microsoft.com/hunting-package).</span><span class="sxs-lookup"><span data-stu-id="8b878-129">Log in to [Microsoft 365 security center](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).</span></span>
 
-2. <span data-ttu-id="78538-135">Kör följande fråga för att hämta mappningen av datatyper för varje händelse:</span><span class="sxs-lookup"><span data-stu-id="78538-135">Run the following query to get the data types mapping for each event:</span></span> 
+2. <span data-ttu-id="8b878-130">Kör följande fråga för att hämta mappningen av datatyper för varje händelse:</span><span class="sxs-lookup"><span data-stu-id="8b878-130">Run the following query to get the data types mapping for each event:</span></span> 
 
    ```
    {EventType}
@@ -97,12 +94,12 @@ ms.locfileid: "52771663"
    | project ColumnName, ColumnType 
    ```
 
-- <span data-ttu-id="78538-136">Här är ett exempel för enhetsinfohändelsen:</span><span class="sxs-lookup"><span data-stu-id="78538-136">Here is an example for Device Info event:</span></span> 
+- <span data-ttu-id="8b878-131">Här är ett exempel för enhetsinfohändelsen:</span><span class="sxs-lookup"><span data-stu-id="8b878-131">Here is an example for Device Info event:</span></span> 
 
   ![Bild av händelsehubbresurs-ID3](images/machine-info-datatype-example.png)
 
-## <a name="related-topics"></a><span data-ttu-id="78538-138">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="78538-138">Related topics</span></span>
-- [<span data-ttu-id="78538-139">Översikt över Avancerad sökning</span><span class="sxs-lookup"><span data-stu-id="78538-139">Overview of Advanced Hunting</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="78538-140">Microsoft Defender för slutpunkts-API för direktuppspelning</span><span class="sxs-lookup"><span data-stu-id="78538-140">Microsoft Defender for Endpoint Streaming API</span></span>](raw-data-export.md)
-- [<span data-ttu-id="78538-141">Strömma Microsoft Defender för slutpunktshändelser till ditt Azure Storage-konto</span><span class="sxs-lookup"><span data-stu-id="78538-141">Stream Microsoft Defender for Endpoint events to your Azure storage account</span></span>](raw-data-export-storage.md)
-- [<span data-ttu-id="78538-142">Azure Storage Kontodokumentation</span><span class="sxs-lookup"><span data-stu-id="78538-142">Azure Storage Account documentation</span></span>](/azure/storage/common/storage-account-overview)
+## <a name="related-topics"></a><span data-ttu-id="8b878-133">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="8b878-133">Related topics</span></span>
+- [<span data-ttu-id="8b878-134">Översikt över Avancerad sökning</span><span class="sxs-lookup"><span data-stu-id="8b878-134">Overview of Advanced Hunting</span></span>](../defender/advanced-hunting-overview.md)
+- [<span data-ttu-id="8b878-135">Microsoft 365 Defender Streaming API</span><span class="sxs-lookup"><span data-stu-id="8b878-135">Microsoft 365 Defender Streaming API</span></span>](raw-data-export.md)
+- [<span data-ttu-id="8b878-136">Strömma Microsoft 365 Defender-händelser till ditt Azure Storage-konto</span><span class="sxs-lookup"><span data-stu-id="8b878-136">Stream Microsoft 365 Defender events to your Azure storage account</span></span>](raw-data-export-storage.md)
+- [<span data-ttu-id="8b878-137">Azure Storage Kontodokumentation</span><span class="sxs-lookup"><span data-stu-id="8b878-137">Azure Storage Account documentation</span></span>](/azure/storage/common/storage-account-overview)
