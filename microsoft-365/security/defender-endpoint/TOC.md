@@ -288,6 +288,9 @@
 ##### [Använd cmdlets från PowerShell för att hantera Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ##### [Använd Windows Management Instrumentation (WMI) för att hantera Microsoft Defender Antivirus](use-wmi-microsoft-defender-antivirus.md)
 ##### [Använd verktyget mpcmdrun.exe för att hantera Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md)
+##### [Konfigurera meddelanden som visas på slutpunkter](configure-notifications-microsoft-defender-antivirus.md)
+##### [Ange om användare kan ändra principinställningarna för Microsoft Defender Antivirus lokalt](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [Ange om användarna kan se eller interagera med användargränssnittet för Microsoft Defender Antivirus](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
 #### [Distribuera och rapport om Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Distribuera och aktivera Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
@@ -480,10 +483,10 @@
 ####### [Hämta varningsinformation om användare](get-alert-related-user-info.md)
 
 ###### [Utvärderingar av säkerhetsproblem och säkra konfigurationer]()
-####### [Metod och egenskaper för export](get-assessmnt-1methods-properties.md)
-####### [Exportera utvärdering av säker konfiguration](get-assessmnt-secure-cfg.md)
-####### [LExportera utvärdering av inventerad programvara](get-assessmnt-software-inventory.md)
-####### [Exportera utvärdering av säkerhetsrisker för programvara](get-assessmnt-software-vulnerabilities.md)
+####### [Metod och egenskaper för export](get-assessment-methods-properties.md)
+####### [Exportera utvärdering av säker konfiguration](get-assessment-secure-config.md)
+####### [LExportera utvärdering av inventerad programvara](get-assessment-software-inventory.md)
+####### [Exportera utvärdering av säkerhetsrisker för programvara](get-assessment-software-vulnerabilities.md)
 
 ###### [Automatisk undersökning]()
 ####### [Undersökningsmetoder och -egenskaper](investigation.md)
