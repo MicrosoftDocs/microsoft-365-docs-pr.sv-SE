@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: Läs mer om registreringsnummer och undergranskningsmeddelanden när du köper Microsofts produkter eller tjänster.
 ms.date: 03/17/2021
-ms.openlocfilehash: 8ec97356f9859e928a8ee435f406c15f4f17a4c4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 93cba6c1eebf0b41a94d6a6e3aac83693218f407
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332228"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795976"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Om registreringsnummer och under Granska aviseringar
 
@@ -86,7 +86,7 @@ Följande tabell innehåller exempel på registreringsnumren som samlats in för
 | **Polen**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – skatteidentifieringsnummer<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – Det nationella identifikationsnumret som används i Polen (polska Powszechny Deniczny System Ewidencji Ludnonotci, universellt elektroniskt system för registrering av populationen) |  |  |  |  |
 | **Ryssland**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) – Skatteidentifieringsnummer (ryska "Individualiy Nomer Nalogoplatelshika") |  |  |  |  |
 | **Saudiarabien** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) – skatteidentifieringsnummer |  |  |  |  |
-| **Sydafrika** | TRN – trafikregistreringsnummer |  |  |  |  |
+| **Sydafrika** | TRN – skattereferensnummer |  |  |  |  |
 | **Sydsudan** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – skatteidentifieringsnummer |  |  |  |  |
 | **Tadzjikistan**  | INN – skatteidentifieringsnummer<br>INTR – Anställningsnummer för arbetsgivare<br>KPP – Det här är en kod som återspeglar orsaken till organisationsregistreringen. |  |  |  |  |
 | **Thailand** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – skatteidentifieringsnummer |  |  |  |  |

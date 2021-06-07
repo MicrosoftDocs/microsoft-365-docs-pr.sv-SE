@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 48d299f2318b0a1be251132a4b50a333a1a0c7a8
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e25fab99718c791c64b583283237815736c450ae
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782963"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793190"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurera funktioner för automatisk undersökning och svar i Microsoft 365 Defender
 
@@ -74,7 +74,7 @@ Säkerhetsinställningarna i Office 365 skydda e-post och innehåll. Om du vill 
 1. I säkerhetscentret Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) går du till **Principer & Principer för** hot mot \> **regler.**
 2. Kontrollera att alla följande principer har konfigurerats. Mer information om hur du får hjälp och [rekommendationer finns i Skydda mot hot.](/microsoft-365/security/office-365-security/protect-against-threats)
    - [Skydd mot skadlig programvara](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-   - [Skydd mot nätfiske](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [Skydd mot nätfiske](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
    - [Säkra bifogade filer](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [Säkra länkar](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Skräppostskydd](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)

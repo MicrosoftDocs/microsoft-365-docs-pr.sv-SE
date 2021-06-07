@@ -17,12 +17,12 @@ ms.collection:
 description: Läs om hur du aktiverar tilläggen Rapportmeddelande eller Rapport nätfiske för Outlook och Outlook på webben, för enskilda användare eller för hela organisationen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25c4f7d67fd4fa876544a17df0f4bc1abfd7b3e7
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: ff91cf4c99c9552ab5f5fecd7c6d2efee8d2d9a8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782939"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789262"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Aktivera rapportmeddelandet eller tilläggen för nätfiske
 
@@ -53,7 +53,6 @@ Om du är global administratör eller Exchange Online-administratör och Exchang
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
 - Både tillägget Rapportmeddelande och tillägget Rapportfiske fungerar med de flesta Microsoft 365 prenumerationer och följande produkter:
-
   - Outlook på webben
   - Outlook 2013 SP1 eller senare
   - Outlook 2016 för Mac
@@ -69,6 +68,9 @@ Om du är global administratör eller Exchange Online-administratör och Exchang
 - Administratörer måste vara medlemmar i rollgruppen Globala administratörer. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
 - Mer information om hur du rapporterar ett meddelande med hjälp av funktionen Rapportmeddelande finns i Rapportera falska positiva och falska [negativa resultat i Outlook](report-false-positives-and-false-negatives.md).
+
+> [!IMPORTANT]
+> Vi rekommenderar inte den inbyggda rapporteringsupplevelsen i Outlook eftersom den inte kan använda principen för [användarinskicking.](./user-submission.md) Vi rekommenderar att du använder tilläggen Rapportmeddelande eller Nätfiskerapport i stället.
 
 ## <a name="get-the-report-message-add-in"></a>Hämta tillägget Rapportmeddelande
 

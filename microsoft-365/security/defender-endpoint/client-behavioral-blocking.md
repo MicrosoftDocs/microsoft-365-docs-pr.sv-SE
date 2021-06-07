@@ -19,16 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c58c81cd4623ec03850c167cad285e052413174c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4e416aa9484f251280649035247a59dcc82ce750
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933427"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795964"
 ---
 # <a name="client-behavioral-blocking"></a>Beteendeblockering av klientdator
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -38,7 +36,7 @@ ms.locfileid: "51933427"
 
 ## <a name="overview"></a>Översikt
 
-Klientbeteendeblockering är en komponent i funktioner [för beteendeblockering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) och inneslutning i Defender för Slutpunkt. När misstänkta beteenden identifieras på enheter (kallas även klienter eller slutpunkter) blockeras, kontrolleras och åtgärdas artefakter (till exempel filer eller program) automatiskt. 
+Klientbeteendeblockering är en komponent i funktioner [för beteendeblockering](behavioral-blocking-containment.md) och inneslutning i Defender för Slutpunkt. När misstänkta beteenden identifieras på enheter (kallas även klienter eller slutpunkter) blockeras, kontrolleras och åtgärdas artefakter (till exempel filer eller program) automatiskt. 
 
 :::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Moln- och klientskydd":::
 
@@ -46,9 +44,9 @@ Antivirusskyddet fungerar bäst när det paras ihop med molnskydd.
 
 ## <a name="how-client-behavioral-blocking-works"></a>Så här fungerar klientbeteendeblockering
 
-[Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) kan identifiera misstänkt beteende, skadlig kod, fillösa och minnesattacker och mycket mer på en enhet. När misstänkta beteenden upptäcks övervakar Microsoft Defender Antivirus och skickar de misstänkta beteendena och deras processträd till molnskyddstjänsten. Maskininlärning skiljer mellan skadliga program och bra beteenden inom millisekunder och klassificerar varje artefakt. I nästan realtid blockeras en artefakt på enheten när den visar sig vara skadlig. 
+[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) kan identifiera misstänkt beteende, skadlig kod, fillös och minnesintrång och mycket mer på en enhet. När misstänkta beteenden identifieras Microsoft Defender Antivirus och skickar de misstänkta beteendena och deras processträd till molnskyddstjänsten. Maskininlärning skiljer mellan skadliga program och bra beteenden inom millisekunder och klassificerar varje artefakt. I nästan realtid blockeras en artefakt på enheten när den visar sig vara skadlig. 
 
-När ett misstänkt beteende identifieras genereras [en avisering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue) och visas i Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+När ett misstänkt beteende identifieras genereras [en avisering](alerts-queue.md) och visas i Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
 Klientbeteendeblockering är effektivt eftersom det inte bara hjälper till att förhindra att en attack startar, den kan också stoppa en attack som har börjat köras. Och med [blockering av feedbackslingan](feedback-loop-blocking.md) (en annan funktion för blockering och inneslutning) förhindras attacker på andra enheter i organisationen.
 
@@ -59,19 +57,19 @@ Beteendebaserade identifieringar namnges enligt [MITRE ATT-&CK-matrisen för fö
 
 |Taktik |   Namn på identifiering av hot |
 |----|----|
-|Inledande åtkomst | Beteende:Win32/InitialAccess.*!ml |
-|Körning  | Beteende:Win32/Execution.*!ml |
-|Beständighet    | Beteende:Win32/Persistence.*!ml |
-|Eskalering av behörighet   | Beteende:Win32/PrivilegeEscalation.*!ml |
-|Defense Evasion    | Beteende:Win32/DefenseEvasion.*!ml |
-|Åtkomst till autentiseringsuppgifter  | Beteende:Win32/CredentialAccess.*!ml |
-|Upptäckt  | Beteende:Win32/Discovery.*!ml |
-|Lateral Movement | Beteende:Win32/Movement.*!ml |
-|Samling |   Beteende:Win32/Collection.*!ml |
-|Kommando och kontroll | Beteende:Win32/CommandAndControl.*!ml |
-|Exfiltration   | Beteende:Win32/Exfiltration.*!ml |
-|Påverkan | Beteende:Win32/Impact.*!ml |
-|Ej kategoriserat  | Beteende:Win32/Generic.*!ml |
+|Inledande åtkomst | `Behavior:Win32/InitialAccess.*!ml` |
+|Körning  | `Behavior:Win32/Execution.*!ml` |
+|Beständighet    | `Behavior:Win32/Persistence.*!ml` |
+|Eskalering av behörighet   | `Behavior:Win32/PrivilegeEscalation.*!ml` |
+|Defense Evasion    | `Behavior:Win32/DefenseEvasion.*!ml` |
+|Åtkomst till autentiseringsuppgifter  | `Behavior:Win32/CredentialAccess.*!ml` |
+|Upptäckt  | `Behavior:Win32/Discovery.*!ml` |
+|Lateral Movement | `Behavior:Win32/LateralMovement.*!ml` |
+|Samling |   `Behavior:Win32/Collection.*!ml` |
+|Kommando och kontroll | `Behavior:Win32/CommandAndControl.*!ml` |
+|Exfiltration   | `Behavior:Win32/Exfiltration.*!ml` |
+|Påverkan | `Behavior:Win32/Impact.*!ml` |
+|Ej kategoriserat  | `Behavior:Win32/Generic.*!ml` |
 
 > [!TIP]
 > Mer information om specifika hot finns i den senaste **[globala hotaktiviteten.](https://www.microsoft.com/wdsi/threats)**
@@ -81,22 +79,13 @@ Beteendebaserade identifieringar namnges enligt [MITRE ATT-&CK-matrisen för fö
 
 Om din organisation använder Defender för Slutpunkt är klientbeteendeblockering aktiverat som standard. Om du däremot vill dra nytta av [](behavioral-blocking-containment.md)alla Defender för Slutpunkt-funktioner, inklusive blockering och inneslutning, ska du se till att följande funktioner i Defender för slutpunkt är aktiverade och konfigurerade:
 
-- [Defender för slutpunktsbaslinjer](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)
+- [Defender för slutpunktsbaslinjer](configure-machines-security-baseline.md)
 
-- [Enheter som finns i Defender för Slutpunkt](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure)
+- [Enheter som finns i Defender för Slutpunkt](onboard-configure.md)
 
-- [EDR i blockläge](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
+- [EDR i blockläge](edr-in-block-mode.md)
 
-- [Minskning av attackytan](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+- [Minskning av attackytan](attack-surface-reduction.md)
 
-- [Nästa generations skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (antivirus)
+- [Nästa generations skydd](configure-microsoft-defender-antivirus-features.md) (antivirus, program mot skadlig programvara och andra skyddsfunktioner för hot)
 
-## <a name="related-articles"></a>Relaterade artiklar
-
-- [Beteendeblockering och inneslutning](behavioral-blocking-containment.md)
-
-- [Blockering av feedbackslinga](feedback-loop-blocking.md)
-
-- [(Blogg) Beteendeblockering och inneslutning: Omvandla fiberoptisk till skydd](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
-
-- [Användbara Defender för Slutpunkt-resurser](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/helpful-resources)

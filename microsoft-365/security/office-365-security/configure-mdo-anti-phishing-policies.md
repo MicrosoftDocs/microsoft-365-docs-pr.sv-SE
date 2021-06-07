@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan lära sig att skapa, ändra och ta bort avancerade principer mot nätfiske som är tillgängliga i organisationer med Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cbe517ef2a702e3e4fd7f6af4ee1d7ed1dd13d2
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 9af3824b245cd976d1e859d6ebc4efcda47325e0
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789158"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793094"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer mot nätfiske i Microsoft Defender för Office 365
 
@@ -164,7 +164,7 @@ Om du skapar en anpassad policy för nätfiske i säkerhetscentret skapas samtid
 
        På den **utfällande sidan** Hantera egna domäner för personifiering kan du ta bort poster genom att välja en eller flera poster i listan. Du kan söka efter poster med hjälp av ![ ](../../media/m365-cc-sc-create-icon.png) **sökikonen Sök.**
 
-       När du har markerat minst en post visas ikonen Ta bort, som du kan använda ![ för att ta bort de markerade ](../../media/m365-cc-sc-delete-icon.png)  posterna.
+       När du har valt minst en post visas ikonen Ta bort domäner Ta bort, som du kan använda för ![ att ta bort de markerade ](../../media/m365-cc-sc-delete-icon.png)  posterna.
 
    - **Lägga till betrodda** avsändare och domäner: : Ange undantag för personifieringsskydd för principen genom att klicka på Hantera **(nn)** betrodda avsändare och domäner. I den **utfällande menyn Hantera egna domäner** för personifieringsskydd konfigurerar du följande inställningar:
       - **Avsändare:** Kontrollera att fliken **Avsändare** är markerad och klicka på ![ ikonen Lägg till ](../../media/m365-cc-sc-create-icon.png) avsändare. I den **utfällfältet Lägg till** betrodda avsändare som visas anger du en e-postadress i rutan och klickar sedan på **Lägg till.** Upprepa det här steget så många gånger det behövs. Om du vill ta bort en befintlig post klickar ![ du på Ikonen Ta bort för ](../../media/m365-cc-sc-close-icon.png) posten.
@@ -243,7 +243,7 @@ Om du skapar en anpassad policy för nätfiske i säkerhetscentret skapas samtid
 
    Klicka på **Nästa** när du är klar.
 
-7. Granska inställningarna på sidan **Granska** som visas. Du kan välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet.
+7. Granska inställningarna på sidan **Granska** som visas. Du kan välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet. Du kan också klicka **på** Bakåt eller välja en specifik sida i guiden.
 
    När du är klar klickar du på **Skicka.**
 

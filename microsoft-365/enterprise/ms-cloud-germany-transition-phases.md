@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i den nya tyska datacenterregion.
-ms.openlocfilehash: 6778248b127894102d15d4d94e3d2f099e3bfa37
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3a5b95bac74ae405f4e1d6fa91ba4ab51e4a9d05
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771207"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796048"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
@@ -50,8 +50,7 @@ Migreringsprocessen slutförs under många veckor beroende på organisationens t
 |Power BI & Dynamics 365|15+ dagar|Microsoft|Migrera Power BI innehåll och Dynamics 365.|
 |Slutför Azure AD|1–2 dagar|Microsoft|Slutför klientuppeställningen till hela världen.|
 |Clean-Up|1–2 dagar|Kund|Rensa upp äldre anslutningar till Microsoft Cloud Deutschland, till exempel AD FS (Active Directory Federation Services) Relying Party Trust, Azure AD Anslut och Office klientstarter.|
-|Slutpunkter inaktiverade|30 dagar|Microsoft|30 dagar efter slutförande av Azure AD kommer Microsoft Cloud Deutschland Azure AD-tjänsten att stoppa slutpunktsåtkomst för den övergångs organisationen. Slutpunktsbegäranden, till exempel autentisering, kommer att misslyckas från och med nu mot Microsoft Cloud Deutschland-tjänsten. |
-
+|Slutpunkter inaktiverade|30 dagar|Microsoft|30 dagar efter slutförande av Azure AD kommer Microsoft Cloud Deutschland Azure AD-tjänsten att stoppa slutpunktsåtkomst för den övergångs organisationen. Slutpunktsbegäranden, till exempel autentisering, kommer att misslyckas från och med nu mot Microsoft Cloud Deutschland-tjänsten. Kunder som kör Azure-arbetsbelastningar i den instans som är länkad till Office 365-tjänster i Microsoft Cloud Deutschland flyttas till den sista migreringsfasen senare. |
 
 Faserna och deras åtgärder säkerställer att kritiska data och upplevelser migreras till de Office 365 globala tjänsterna. När klientorganisationen har lagts till i migreringskön slutförs varje arbetsbelastning som en uppsättning steg som körs på backend-tjänsten. Vissa arbetsbelastningar kan kräva åtgärder av administratören (eller användaren), eller så kan migreringen påverka användningen för faserna som körs och diskuteras i Hur [organiseras migreringen?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -136,6 +135,7 @@ Ytterligare överväganden:
 - Om organisationen fortfarande använder SharePoint 2010-arbetsflöden kommer de inte längre att fungera efter den 31 december 2021. SharePoint 2013-arbetsflöden kommer att fortsätta stödjas, även om det är inaktiverat som standard för nya klientorganisationen från och med den 1 november 2020. När migreringen till SharePoint Online-tjänsten är klar rekommenderar vi att du går över till Power Automate andra lösningar som stöds.
  - Microsoft Cloud Deutschland-kunder vars SharePoint Online-instans ännu inte har migrerats måste vara kvar på SharePoint Online PowerShell-modul/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 eller senare. Annars går det inte att SharePoint till online via PowerShell eller objektmodellen på klientsidan.
 - Under den här fasen ändras IP-adresserna SharePoint adresserna. Efter övergången till globala Office 365-tjänster ändras adresserna för de bevaras klientorganisationens URL:er (till exempel och ) till URL:er och IP-adressintervall för `contoso.sharepoint.de` `contoso-my.sharepoint.de` Microsoft 365 Microsoft 365 [(SharePoint Online och OneDrive för företag).](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)
+- Även SharePoint och OneDrive tjänster har övergångar, Office Online kanske inte fungerar som förväntat. 
 
 > [!NOTE]
 > Om du använder eDiscovery ska du kontrollera att du är medveten om [eDiscovery-migreringsupplevelsen.](ms-cloud-germany-transition-add-scc.md)
@@ -256,7 +256,7 @@ Kunder med Dynamics 365 kräver ytterligare engagemang för att migrera organisa
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-| Microsoft Dynamics-resurser | Kunder med Microsoft Dynamics kommer att anlitas av Microsoft Engineering eller Microsoft FastTrack för att övergå Microsoft Dynamics 365 till Office 365 globala tjänstinstansen.* |<ul><li>Efter migreringen validerar administratören organisationen. <</li><li>Administratören ändrar arbetsflöden efter behov. </li><li>Administratören tar bort AdminOnly-läget efter behov.</li><li>Administratören ändrar organisationstypen från begränsat _läge_ efter behov</li><li>Meddela slutanvändarna om den nya URL-adressen för åtkomst till instansen (org).</li><li>Uppdatera alla inkommande anslutningar till den nya slutpunkts-URL:en. </li><li>Dynamics-tjänsten kommer inte att vara tillgänglig för användarna under övergången. </li><li>Användarna måste validera organisationens hälsa och funktioner efter migreringen av varje organisation.</li></ul>|
+| Microsoft Dynamics-resurser | Kunder med Microsoft Dynamics kommer att anlitas av Microsoft Engineering eller Microsoft FastTrack för att övergå Microsoft Dynamics 365 till Office 365 globala tjänstinstansen.* |<ul><li>Efter migreringen validerar administratören organisationen. </li><li>Administratören ändrar arbetsflöden efter behov. </li><li>Administratören tar bort AdminOnly-läget efter behov.</li><li>Administratören ändrar organisationstypen från begränsat _läge_ efter behov</li><li>Meddela slutanvändarna om den nya URL-adressen för åtkomst till instansen (org).</li><li>Uppdatera alla inkommande anslutningar till den nya slutpunkts-URL:en. </li><li>Dynamics-tjänsten kommer inte att vara tillgänglig för användarna under övergången. </li><li>Användarna måste validera organisationens hälsa och funktioner efter migreringen av varje organisation.</li></ul>|
 ||||
 
 \* (i) Kunder med Microsoft Dynamics 365 måste vidta åtgärder i det här migreringsscenariot som definierats av den angivna migreringsprocessen. (ii) Om kunden inte kan vidta någon åtgärd kommer Microsoft inte att kunna slutföra migreringen. (iii) När Microsoft inte kan slutföra migreringen på grund av kundens inaktivitet upphör kundens prenumeration den 29 oktober 2021.

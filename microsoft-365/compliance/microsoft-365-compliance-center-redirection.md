@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Läs mer om hur du automatiskt Office 365 användare i Säkerhets- och efterlevnadscenter Microsoft 365 säkerhets- och efterlevnadscenter.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fb667e8f19b26cbe229b3aceffe194a86133c261
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b51b2e225c833ac499379bbee119f8cb6f4216e9
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772542"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782843"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Omdirigera användare från säkerhets- Office 365 säkerhets- och efterlevnadscentret till Microsoft 365 säkerhets- och efterlevnadscenter
 
@@ -51,7 +51,7 @@ Om du vill gå Office 365 säkerhets- och efterlevnadscenter (protection.microso
 1. Logga in på [Microsoft 365 som global](https://compliance.microsoft.com) administratör eller använd ett konto med efterlevnadsadministratörsbehörigheter i Azure Active Directory.
 2. Gå till **Inställningar**  >  **omdirigering av efterlevnadscentret.**
 3. Ändra inställningen för automatisk omdirigering till **Av**.
-4. Välj **Inaktivera** och dela feedback när du uppmanas att göra det.
+4. Välj **Inaktivera och** dela feedback när du uppmanas att göra det.
 
 När den är inaktiverad dirigeras användarna inte längre till compliance.microsoft.com och de dirigeras Office 365 Säkerhets- och efterlevnadscenter (protection.microsoft.com). Den här inställningen kan aktiveras igen när som helst av globala administratörer eller efterlevnadsadministratörer.
 

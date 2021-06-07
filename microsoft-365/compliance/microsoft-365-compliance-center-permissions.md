@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Läs mer om hur du hanterar behörigheter Microsoft 365 i Kompatibilitetscenter.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 72575fce5f7d43354715c77016a8f444e539887f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7038863c0cbcaf99cf07072445a3b001e7b8ca0b
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772543"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782855"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center"></a>Behörigheter i Microsoft 365 efterlevnadscenter
 
@@ -26,7 +26,7 @@ För att  visa fliken Behörigheter i Microsoft 365 efterlevnadscenter måste an
 
 ![Sidan Behörigheter i Microsoft 365 efterlevnadscenter](../media/m365-compliance-center-permissions.png)
 
-Behörigheter i Microsoft 365 är baserade på den rollbaserade behörighetsmodellen (RBAC). RBAC är samma behörighetsmodell som används av de flesta Microsoft 365-tjänster, så om du är bekant med behörighetsstrukturen i de här tjänsterna känner du till att bevilja behörigheter i Microsoft 365 efterlevnadscenter. Det är viktigt att komma ihåg att de behörigheter som hanteras i Microsoft 365 efterlevnadscenter inte omfattar hanteringen av alla behörigheter som krävs för varje enskild tjänst. Du måste fortfarande hantera vissa tjänstspecifika behörigheter i administrationscentret för den specifika tjänsten. Om du till exempel behöver tilldela behörigheter för arkivering, granskning och bevarandeprinciper måste du hantera de här behörigheterna i administrationscentret Exchange arkivering.
+Behörigheter i Microsoft 365 är baserade på den rollbaserade behörighetsmodellen (RBAC). RBAC är samma behörighetsmodell som används av de flesta Microsoft 365-tjänster, så om du är bekant med behörighetsstrukturen i de här tjänsterna känner du till att bevilja behörigheter i Microsoft 365 efterlevnadscenter. Det är viktigt att komma ihåg att de behörigheter som hanteras i Microsoft 365 efterlevnadscenter inte omfattar hanteringen av alla behörigheter som krävs för varje enskild tjänst. Du måste fortfarande hantera vissa tjänstspecifika behörigheter i administrationscentret för den specifika tjänsten. Om du till exempel behöver tilldela behörigheter för arkivering, granskning och MRM-kvarhållningsprinciper måste du hantera de här behörigheterna i Exchange administrationscenter.
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relation mellan medlemmar, roller och rollgrupper
 

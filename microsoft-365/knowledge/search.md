@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Lär dig hur du kan söka efter ämnen i Microsoft Viva.
-ms.openlocfilehash: 54a143ea0960bf56a0d1c5224658bea404c7621e
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301722"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796000"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Använda Microsoft Search för att hitta ämnen i Microsoft Viva-ämnen
 
@@ -55,8 +55,5 @@ För användare som söker information om att boka en resa för arbete:
 - För användare som ofta söker efter "resor" kan du skapa ett ämne på "Resor" som innehåller den information de förväntar sig. Det kan vara bra att lägga till en länk till den externa samtidiga webbplatsen i beskrivningen av avsnittet. Om länken istället är till en intern resebokningswebbplats hos Microsoft 365 kan du lägga till den i "Fästa resurser".
  
 ### <a name="search-results-priority"></a>Prioritet för sökresultat 
- 
-När en användare söker efter en term som "resor" visas sökresultaten i följande prioritet i Microsoft Search
-1. Publicerade eller bekräftade ämnen 
-2. Bokmärken
-3. Föreslagna ämnen
+
+När en användare söker efter en term som "resa" visas ett bokmärke före ett ämne i användarens sökupplevelse, om ett bokmärke är tillgängligt.

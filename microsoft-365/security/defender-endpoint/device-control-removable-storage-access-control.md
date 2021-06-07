@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 46ea74d11f9c54cd1d967058433a74ef4c1ead19
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 018bc3549cd7a25df5bdd86d98d351e19027c31f
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300238"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796036"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender för endpoint-enhetskontroll, flyttbar Storage access-kontroll
 
@@ -39,7 +39,7 @@ Med Microsoft Defender för Endpoint Device Control Storage och Access Control k
 |Användarbaserad support     |   Ja      |
 |Maskinbaserad support    |    Ja     |
 
-## <a name="prepare-your-endpoints"></a>Förbereda slutpunkter
+## <a name="prepare-your-endpoints"></a>Förbered dina slutpunkter
 
 Distribuera Flyttbart Storage Access Control på Windows 10-enheter med klientversionen mot skadlig programvara **version 4.18.2103.3 eller senare.**
 1. **4.18.2104** eller senare: Add SerialNumberId, VID_PID, filepath-baserat GPO-stöd
@@ -68,7 +68,7 @@ Mer information om varje **enhetsegenskap finns** i avsnittet Enhetsegenskaper o
         - CdRomDevices
     - DeviceId
     - HardwareId
-    - InstancePathId
+    - InstancePathId: InstancePathId är en sträng som unikt identifierar enheten i systemet, till exempel USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. Numret på slutet (till exempel&**0**) representerar den tillgängliga platsen och kan ändras från enhet till enhet. För bästa resultat bör du använda ett jokertecken i slutet. Exempel: USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
     - FriendlyNameId
     - SerialNumberId
     - VID
@@ -196,7 +196,7 @@ Med funktionen Storage och Access Control kan du tillämpa en princip via gruppr
 
 ### <a name="licensing"></a>Licensiering
 
-Innan du kommer igång med Flyttbara Storage Access Control måste du bekräfta din [Microsoft 365-prenumeration.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) För att komma åt och använda Storage Access Control måste du ha Microsoft 365 E5.
+Innan du kommer igång med Flyttbara Storage Access Control måste du bekräfta din [Microsoft 365-prenumeration.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) För att komma åt och använda Storage Access Control måste du ha Microsoft 365 E3.
 
 ### <a name="deploying-policy-via-group-policy"></a>Distribuera princip via grupprincip
 
@@ -241,9 +241,9 @@ För principdistribution i Intune måste kontot ha behörighet att skapa, redige
 **Microsoft Endpoint Manager administrationscenter ( https://endpoint.microsoft.com/) -> -> Konfigurationsprofiler -> Skapa profil ->-plattform: Windows 10 och senare & Profil: Anpassad**
 
 1. Skapa en OMA-URI-regel för varje grupp:
-    - OMA-URI:
+    - OMA-URI: 
 
-      /Leverantör/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b **GroupGUID**%7d/GroupData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b **GroupGUID**%7d/GroupData
 
       För flyttbara **lagrings- och CD-/DVD-grupper** i samplet måste länken till exempel vara:
 
@@ -255,9 +255,9 @@ För principdistribution i Intune måste kontot ha behörighet att skapa, redige
 
 2. För varje princip skapar du även en OMA-URI:
 
-    - OMA-URI:
+    - OMA-URI: 
 
-      /Leverantör/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
+      ./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData
 
       För till exempel regeln **Blockera skrivning och körning av Access men** tillåt godkända amerikanskabs i exemplet måste länken vara: 
 
