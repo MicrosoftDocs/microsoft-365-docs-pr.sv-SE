@@ -1,5 +1,5 @@
 ---
-title: Steg 1. Öka inloggningssäkerheten för distansarbetare med MFA
+title: Steg 1. Öka inloggningssäkerheten för hybridarbetare med MFA
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,21 +16,21 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: Kräv att dina distansarbetare loggar in med multi-factor authentication (MFA).
-ms.openlocfilehash: 1c69f2ee7520a554a726bc0ffd9e2d7ebca64261
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: Kräv att dina hybridarbetare loggar in med multifaktorautentisering (MFA).
+ms.openlocfilehash: 105c2f7170b4bea648427b0fda57ad081cb99a86
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028974"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788970"
 ---
-# <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Steg 1. Öka inloggningssäkerheten för distansarbetare med MFA
+# <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>Steg 1. Öka inloggningssäkerheten för hybridarbetare med MFA
 
-Använd multi-factor authentication (MFA) om du vill öka inloggningssäkerheten för distansarbetare. MFA kräver att användarinloggningar underkastas en ytterligare verifiering utöver lösenordet för användarkontot. Även om en användare som vill vålla skada bestämmer ett lösenord för ett användarkonto, måste de också kunna svara på en ytterligare verifiering, till exempel ett textmeddelande som skickas till en smartphone innan åtkomst beviljas.
+Använd multifaktorautentisering (MFA) om du vill öka inloggningssäkerheten för hybridarbetare. MFA kräver att användarinloggningar underkastas en ytterligare verifiering utöver lösenordet för användarkontot. Även om en användare som vill vålla skada bestämmer ett lösenord för ett användarkonto, måste de också kunna svara på en ytterligare verifiering, till exempel ett textmeddelande som skickas till en smartphone innan åtkomst beviljas.
 
 ![Rätt lösenord plus extra verifiering gör att inloggningen lyckas](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-För alla användare, inklusive distansarbetare och särskilt administratörer, rekommenderar Microsoft starkt MFA.
+För alla användare, inklusive hybridarbetare och särskilt administratörer, rekommenderar Microsoft starkt MFA.
 
 Det finns tre sätt till att kräva att dina användare ska använda MFA baserat på ditt Microsoft 365-abonnemang.
 
@@ -91,7 +91,7 @@ I den här tabellen visas resultatet av att aktivera MFA med standardinställnin
 
 | Metod | Aktiverad | Inaktiverad | Ytterligare autentiseringsmetod |
 |:-------|:-----|:-------|:-------|
-| **Standardinställningar för säkerhet**  | Det går inte att använda principer för villkorsstyrd åtkomst | Det går att använda principer för villkorsstyrd åtkomst | Microsoft Authenticator-appen |
+| **Standardinställningar för säkerhet**  | Det går inte att använda principer för villkorsstyrd åtkomst | Det går att använda principer för villkorsstyrd åtkomst | Microsoft Authenticator-appen |
 | **Principer för villkorsstyrd åtkomst** | Om några är aktiverade kan du inte aktivera standardinställningar för säkerhet | Om alla är inaktiverade kan du aktivera standardinställningar för säkerhet  | Användare anger under MFA-registrering  |
 ||||
 
@@ -101,7 +101,7 @@ Med självbetjäning för återställning av lösenord (SSPR) kan användarna å
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Logga in i SaaS-appar med Azure AD
 
-Förutom att tillhandahålla molnverifiering för användare kan även Azure AD vara ditt primära sätt att skydda alla dina appar, oavsett om de är lokala, i Microsofts moln eller i ett annat moln. Genom att [integrera apparna i Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration) kan du göra det enkelt för distansarbetare att upptäcka vilka program de behöver och att logga in på dem på ett säkert sätt.
+Förutom att tillhandahålla molnverifiering för användare kan även Azure AD vara ditt primära sätt att skydda alla dina appar, oavsett om de är lokala, i Microsofts moln eller i ett annat moln. Genom att [integrera dina appar i Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration) kan du göra det enkelt för hybridarbetare att upptäcka vilka appar de behöver och att logga in på dem på ett säkert sätt.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Tekniska resurser för administratörer om MFA och identitet
 

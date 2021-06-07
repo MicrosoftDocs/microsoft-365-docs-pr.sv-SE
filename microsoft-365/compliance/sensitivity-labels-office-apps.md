@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Information för IT-administratörer om hur du hanterar känslighetsetiketter i Office-appar för dator, mobila enheter och webben.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a7ac7415ce5e7f88b21128846b7cff957e388fd5
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 3da3d971a1ef55d343ac1b61e6457981022c4c92
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730384"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770391"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Använda känslighetsetiketter i Office-appar
 
@@ -88,11 +88,11 @@ Siffrorna som visas är den lägsta Office-programversion som krävs för varje 
 |[Dynamiska markeringar med variabler](#dynamic-markings-with-variables)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Tilldela behörigheter nu](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Låt användare tilldela behörigheter: <br /> – Vidarebefordra inte](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
-|[Låt användare tilldela behörigheter: <br /> – endast kryptering](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ | 4.2112.0+  | 4.2112.0+ | Ja |
+|[Låt användare tilldela behörigheter: <br /> – endast kryptering](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Ja |
 |[Kräva att användare använder en etikett för sin e-post och dokument](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Ja                |
 |[Granska etikettrelaterad användaraktivitet](data-classification-activity-explorer.md) | 2011+ | Under granskning | Under granskning           | Under granskning               | Under granskning |
 |[Använda en känslighetsetikett för innehåll automatiskt](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Under granskning           | Under granskning               | Ja |
-|[Olika inställningar för standardetikett och obligatorisk etikettering](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Ja |
+|[Olika inställningar för standardetikett och obligatorisk etikettering](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Ja |
 |
 
 **Fotnoter:**

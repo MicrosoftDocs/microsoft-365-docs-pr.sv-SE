@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9f011f10a9fe3c3aec535e157abee2367998b1a4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 001b8dcf4b0bfd2550f41454fc840602a6e4361f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166804"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770139"
 ---
 # <a name="get-investigation-api"></a>Get Investigation API
 
@@ -67,7 +68,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations/{id}
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Type (Typ) | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

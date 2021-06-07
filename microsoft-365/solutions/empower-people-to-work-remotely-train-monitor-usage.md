@@ -1,5 +1,5 @@
 ---
-title: 'Steg 6: Träna distansarbetare och få feedback om användningen'
+title: 'Steg 6: Utbilda dina arbetare och hantera feedback om användningen'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,17 +16,17 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: Träna dina användare och se till att hantera problem snabbt.
-ms.openlocfilehash: 66091269e4bb4844456feac1b8cfa28718b0ca36
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: Utbilda dina användare och se till att hantera problem snabbt.
+ms.openlocfilehash: b6581533983c2e00ab8b29d73326deebda52599f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028938"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788829"
 ---
-# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>Steg 6: Träna distansarbetare och få feedback om användningen
+# <a name="step-6-train-your-workers-and-address-usage-feedback"></a>Steg 6: Utbilda dina arbetare och hantera feedback om användningen
 
-Utbilda distansarbetare i följande:
+Utbilda dina hybridarbetare på:
 
 - Lämpliga inloggningsmetoder med MFA, t. ex. registrering av ytterligare verifieringsmetoder.
 - Användningen av enheter och hur principer kan användas för att blockera åtkomsten för enheter som inte följer standard eller ohanterade enheter.
@@ -38,15 +38,15 @@ Utbilda distansarbetare i följande:
 
 I den här utbildningen ska det ingå praktiska övningar så att dina arbetare kan prova funktionerna och se resultaten.
 
-Skapa ett forum för dina distansarbetare där de kan ställa frågor och få hjälp med problem, t.ex. ett team eller en Yammer-grupp.
+Skapa ett forum för dina arbetare där de kan ställa frågor och få problem hanterade, t.ex. ett team eller en Yammer-grupp.
 
 I veckorna efter utbildningen:
 
-- Svara snabbt på feedback från distansarbetare i ditt forum och justera principer och konfigurationer för distansarbetare efter behov.
+- Hantera feedback från arbetare snabbt i ditt forum och justera dina arbetarprinciper och -konfigurationer efter behov.
 - Analysera användningen av Teams, e-post, SharePoint-webbplatser och OneDrive-mappar samt jämför med förväntad användning.
 
 Vidareutbilda då dina användare efter behov.
 
 ## <a name="results-of-step-6"></a>Resultat i steg 6
 
-Dina distansarbetare är utbildade och har ett tillgängligt och öppet forum för att de ska kunna ge feedback och publicera problem med fjärråtkomst och produktivitetsprogram.
+Dina hybridarbetare är utbildade och har ett tillgängligt och öppet forum för att de ska kunna ge feedback och publicera problem med säkerhet, efterlevnad, fjärråtkomst och produktivitetsappar.

@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9066bcdae549f7a6b1372714d567674eb03c1e51
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 8b05dde015bc96e1ccd3f80e25c416a371e03199
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167073"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772395"
 ---
 # <a name="create-alert-api"></a>Skapa aviserings-API
 
@@ -72,7 +73,7 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Type (Typ) | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 Innehållstyp | Sträng | application/json. **Obligatoriskt.**
@@ -81,7 +82,7 @@ Innehållstyp | Sträng | application/json. **Obligatoriskt.**
 
 Ange följande värden i brödtexten för begäran (alla är obligatoriska):
 
-Egenskap | Type (Typ) | Beskrivning
+Egenskap | Typ | Beskrivning
 :---|:---|:---
 eventTime | DateTime(UTC) | Den exakta tiden för händelsen som sträng, från avancerad sökning. t.ex. ```2018-08-03T16:45:21.7115183Z``` **Obligatoriskt**.
 reportId | Sträng | ReportId för händelsen, från avancerad sökning. **Obligatoriskt.**

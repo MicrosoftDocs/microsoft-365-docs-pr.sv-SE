@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratörer kan aktivera stöd för känslighetsetiketter för Word, Excel och PowerPoint filer i SharePoint och OneDrive.
-ms.openlocfilehash: 16186bd1e5c4cd2ca5b1ccd81c24ec81bfd33597
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 8007f085e7bcba7f055f616954e2f0549f6f125a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684033"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770403"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivera känslighetsetiketter för Office-filer i SharePoint och OneDrive
 
@@ -87,6 +87,8 @@ Använd OneDrive synkroniseringsapp version 19.002.0121.0008 eller senare på Wi
     - **Kryptering med dubbla nycklar** har valts.
     
     Etiketter med någon av dessa krypteringskonfigurationer visas inte etiketterna för användare i Office för webben. De nya funktionerna kan inte användas med etiketterade dokument som redan har de här krypteringsinställningarna. Exempelvis returneras de här dokumenten inte i sökresultat, även om de uppdateras.
+
+- Av prestandaskäl kan det ta en stund innan kolumnen Känslighet i dokumentbiblioteket kan visas  när du överför eller sparar ett dokument till SharePoint och filens etikett inte använder kryptering. Faktor för den här fördröjningen om du använder skript eller automatisering som är beroende av etikettnamnet i den här kolumnen.
 
 - Användare kan uppleva fördröjningar i att kunna öppna krypterade dokument i följande Spara som-scenario: Om du använder en skrivbordsversion av Office väljer en användare Spara som för ett dokument som har en känslighetsetikett som tillämpar kryptering. Användaren väljer SharePoint eller OneDrive för platsen och försöker sedan direkt öppna det dokumentet i Office för webben. Om tjänsten fortfarande bearbetar krypteringen ser användaren ett meddelande om att dokumentet måste öppnas i skrivbordsappen. Om de försöker igen om några minuter öppnas dokumentet i Office för webben. 
 
@@ -169,7 +171,8 @@ För att aktivera de nya funktionerna använder du [cmdleten Set-SPOTenant](/pow
 
 1. Använd ett arbets- eller skolkonto med global administratör SharePoint administratörsbehörighet i Microsoft 365 ansluta till SharePoint. Mer information finns i Komma [igång med SharePoint Online Management Shell.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
     
-    Obs! Om du har Microsoft 365 för Multi-Geo ska du använda parametern -URL med [Anslut-SPOService](/powershell/module/sharepoint-online/connect-sposervice)och ange URL-adressen för SharePoint Online Administrationscenter för någon av dina geoplatser.
+    > [!NOTE]
+    > Om du har Microsoft 365 Multi-Geo använder du parametern -URL med [Anslut-SPOService](/powershell/module/sharepoint-online/connect-sposervice)och anger webbadressen till webbplatsen SharePoint Online Administration Center för någon av dina geoplatser.
 
 2. Kör följande kommando och tryck på **Y för** att bekräfta:
 

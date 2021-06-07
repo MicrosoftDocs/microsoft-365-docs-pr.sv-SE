@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bc58241be69a1d8e1a78abc583b2c87dbef9cfa7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 6182b4cb0d1f648f33c3a7fc4da4c648d8996bcd
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199428"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770619"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Partneråtkomst via Microsoft Defender för slutpunkts-API:er
 
@@ -36,10 +37,10 @@ ms.locfileid: "51199428"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-På den här sidan beskrivs hur du skapar ett Azure Active Directory-program (Azure AD) för att få programmässiga åtkomst till Microsoft Defender för Endpoint åt dina kunder.
+På den här sidan beskrivs hur du skapar ett Azure Active Directory -program (Azure AD) för att få programmässiga åtkomst till Microsoft Defender för Endpoint åt dina kunder.
 
 
-Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De HÄR API:erna hjälper dig att automatisera arbetsflöden och nya funktioner baserat på Microsoft Defender för Slutpunkt-funktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 Auktoriseringskodflöde](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De HÄR API:erna hjälper dig att automatisera arbetsflöden och nya funktioner baserat på Microsoft Defender för Slutpunkt-funktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 auktoriseringskod för Flow.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 I allmänhet måste du vidta följande steg för att använda API:er:
 - Skapa ett **Azure AD-program med** flera innehavare.
@@ -53,9 +54,9 @@ Följande steg vägleder dig hur du skapar ett Azure AD-program, hämtar en åtk
 
 1. Logga in på [Azure-klienten med](https://portal.azure.com) användare som har **rollen global** administratör.
 
-2. Gå till **Azure Active Directory-appregistreringar**  >    >  **Ny registrering.** 
+2. Gå till **Azure Active Directory**  >  **Appregistreringar**  >  **Ny registrering.** 
 
-   ![Bild av Microsoft Azure och navigering till programregistrering](images/atp-azure-new-app2.png)
+   ![Bild av Microsoft Azure navigering till registrering av program](images/atp-azure-new-app2.png)
 
 3. I registreringsformuläret:
 
@@ -65,7 +66,7 @@ Följande steg vägleder dig hur du skapar ett Azure AD-program, hämtar en åtk
 
     - Omdirigera URI – typ: Webb, URI: https://portal.azure.com
 
-    ![Bild på registrering av Microsoft Azure-partnerprogram](images/atp-api-new-app-partner.png)
+    ![Bild på registrering Microsoft Azure partnerprogram](images/atp-api-new-app-partner.png)
 
 
 4. Tillåt att programmet får åtkomst till Microsoft Defender för Endpoint och tilldela det med minimal mängd behörigheter som krävs för att slutföra integreringen.
@@ -200,7 +201,7 @@ Se Hämta [token med Python](run-advanced-query-sample-python.md#get-token)
 ### <a name="using-curl"></a>Använda Avokrypt
 
 > [!NOTE]
-> Enligt nedanstående procedur för Avbildning för Windows är redan installerat på datorn
+> Följande procedur ska vara Avig för Windows är redan installerad på datorn
 
 - Öppna ett kommandofönster
 - Ange CLIENT_ID ditt Azure-program-ID
@@ -248,5 +249,5 @@ Sanity-kontroll för att kontrollera att du har fått ett korrekt token:
     ```
 
 ## <a name="see-also"></a>Se även
-- [Microsoft Defender-API:er som stöds för slutpunkts-API:er](exposed-apis-list.md)
+- [Microsoft Defender för Endpoint API:er som stöds](exposed-apis-list.md)
 - [Åtkomst till Microsoft Defender för Endpoint åt en användare](exposed-apis-create-app-nativeapp.md)

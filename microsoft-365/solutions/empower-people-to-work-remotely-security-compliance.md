@@ -1,5 +1,5 @@
 ---
-title: 'Steg 3: Distribuera säkerhet och efterlevnad för distansarbetare'
+title: 'Steg 3: Använd säkerhet och efterlevnad för hybridarbetare'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,30 +16,30 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: Använd säkerhets- och efterlevnadstjänsterna i Microsoft 365 för att skydda appar, data och enheter för distansarbetare.
-ms.openlocfilehash: eb558b276b5e8fe828f62930eb977cc87ce3134f
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: Använd säkerhets- och efterlevnadstjänsterna i Microsoft 365 för att skydda dina appar, data och enheter för hybridarbetare.
+ms.openlocfilehash: fc5a83bfc6c8ec2dcb801e6063514c0a90c83de8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029116"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788938"
 ---
-# <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Steg 3: Distribuera säkerhet och efterlevnad för distansarbetare
+# <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Steg 3: Använd säkerhet och efterlevnad för hybridarbetare
 
-För distansarbetare, som aldrig eller väldigt sällan är på kontoret, är säkerhet och efterlevnad en viktig del av den övergripande lösningen. All deras kommunikation sker via Internet i stället för att begränsas till organisationens intranät. 
+För hybridarbetare, vilka vissa aldrig eller väldigt sällan är på kontoret, är säkerhet och efterlevnad en viktig del av den övergripande lösningen. All deras kommunikation sker via Internet i stället för att begränsas till organisationens intranät. 
 
 Det finns saker du och dina medarbetare kan göra för att fortsätta vara produktiva och minska cybersäkerhetsriskerna, och upprätthålla efterlevnaden av interna principer och dataföreskrifter.
 
 För distansarbetare krävs följande säkerhets- och efterlevnadselement:
 
-- Kontrollerad åtkomst till de produktivitetsprogram som distansarbetarna använder, t.ex. Microsoft Teams 
-- Kontrollerad åtkomst till och skydd för de data som distansarbetarna skapar och använder, t.ex. chattar eller delade filer
+- Kontrollerad åtkomst till de produktivitetsapparna som hybridarbetarna använder, t.ex. Microsoft Teams 
+- Kontrollerad åtkomst till och skydd för de data som hybridarbetarna skapar och använder, t.ex. chattar eller delade filer
 - Skydd för Windows 10-enheter mot skadlig programvara och andra typer av cyberattacker
 - Skydd för e-post, filer och webbplatser med konsekvent etikettering för känslighets- och skyddsnivåer
 - Förhindrande av dataläckage
 - Iakttagande av regionala dataföreskrifter
 
-Här är de funktioner i Microsoft 365 som tillhandahåller säkerhets- och efterlevnadstjänster för distansarbetare.
+Här är de funktioner i Microsoft 365 som tillhandahåller säkerhets- och efterlevnadstjänster för hybridarbetare.
 
 ![Använd dessa Microsoft 365-tjänster för att hålla dig säker och uppfylla efterlevnaden](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
@@ -49,14 +49,18 @@ Skydda dina program och data med de här säkerhetsfunktionerna i Microsoft 365.
 
 | Resurs eller funktion | Varför jag behöver det | Licensiering |
 |:-------|:-----|:-------|
-| Microsoft Defender för Office 365 | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. <br><br> Microsoft Defender för Office 365 samlar in och analyserar signaler från dina appar för identifiering, undersökning och korrigering av säkerhetsrisker och skyddar organisationen mot skadliga hot som finns i e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. Det ger också automatisk konfiguration av klientorganisationens konfigurationsverktyg för standard och strikta säkerhetsställningar. | Microsoft 365 E3 eller E5 | 
-| Skydd mot skadlig programvara | ‎Windows Defender Antivirus och Device Guard tillhandahåller enhetsbaserat skydd mot skadlig programvara. <br><br> SharePoint‎ Online söker automatiskt igenom filuppladdningar efter känd skadlig programvara. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) skyddar molnpostlådor. | Microsoft 365 E3 eller E5 |
+| Microsoft Defender för Office 365 | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. <br><br> Microsoft Defender för Office 365 samlar in och analyserar signaler från dina appar för identifiering, undersökning och åtgärd av säkerhetsrisker och skyddar din organisation mot skadliga hot som uppstår genom e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. Det ger också automatisk utvärdering av klientorganisationens konfiguration och konfigurationsverktyg för standard och strikt säkerhetsstatus. | Microsoft 365 E3 eller E5 | 
+| Skydd mot skadlig programvara | ‎Windows Defender Antivirus och Device Guard tillhandahåller enhetsbaserat skydd mot skadlig programvara. <br><br> SharePoint‎ Online skannar automatiskt igenom filuppladdningar efter känd skadlig kod.<br><br> Exchange Online Protection‎ (‎EOP‎) skyddar molnpostlådor. | Microsoft 365 E3 eller E5 |
 | Microsoft Defender för Endpoint | Skydda din organisationsenheter mot cyberhot och dataintrång och identifiera, undersök och reagera på avancerade hot. | Microsoft 365 E5 |
 | Cloud App Security | Skydda dina molnbaserade tjänster – både Microsoft 365 och andra SaaS-appar – från angrepp. | Microsoft 365 E5 eller individuella Cloud App Security-licenser |
 | Azure AD Identity Protection  | Automatisera identifiering och åtgärder för identitetsbaserade risker. <br><br>Skapa riskbaserade principer för villkorsstyrd åtkomst för att kräva multifaktorautentisering (MFA) för riskfyllda inloggningar. | Microsoft 365 E5 eller E3 med Azure AD Premium P2-licenser |
 ||||
 
-Mer information finns i artikeln om [de 12 viktigaste åtgärderna för säkerhetsteam för att stödja arbete hemifrån](../security/top-security-tasks-for-remote-work.md).
+Ditt första steg bör vara att lära dig om och använda [Microsoft Secure Score ](/microsoft-365/security/defender/microsoft-secure-score).
+
+Mer information finns i [De 12 viktigaste uppgifterna för säkerhetsteam för att stödja arbete hemifrån](../security/top-security-tasks-for-remote-work.md).
+
+Information om säkerhet i Microsoft 365 finns i [dokumentation för Microsoft 365 Säkerhet](/microsoft-365/security).
 
 ## <a name="compliance"></a>Efterlevnad
 
@@ -79,7 +83,7 @@ Mer information finns i artikeln om [snabbuppgifter för att komma igång med Mi
 
 ## <a name="results-of-step-3"></a>Resultat av steg 3
 
-För distansarbetarna har du implementerat:
+För dina hybridarbetare har du implementerat:
 
 - Säkerhet
   - Kontrollerad åtkomst till appar och data som distansarbetarna använder för att kommunicera och samarbeta

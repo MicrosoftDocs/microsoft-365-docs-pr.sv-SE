@@ -1,7 +1,7 @@
 ---
-title: Lista svagheter efter rekommendation
+title: Lista sårbarheter efter rekommendation
 description: Hämtar en lista över säkerhetsproblem som är kopplade till säkerhetsrekommendationerna.
-keywords: apis, graph api, API som stöds, få, lista över säkerhetsproblem, säkerhetsrekommendationer, säkerhetsrekommendationer för säkerhetsproblem, hantering av hot och risker, API för hot och sårbarhetshantering
+keywords: apis, graph api, api som stöds, få, lista över säkerhetsproblem, säkerhetsrekommendationer, säkerhetsrekommendationer för säkerhetsproblem, Hantering av hot och säkerhetsrisker, Hantering av hot och säkerhetsrisker api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b41ee2886d758ab0ab70b78ee6d6d863d0d482a7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 8fc9bb53fd2cfe768710129704c13ee751a695a2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198607"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770451"
 ---
-# <a name="list-vulnerabilities-by-recommendation"></a>Lista svagheter efter rekommendation
+# <a name="list-vulnerabilities-by-recommendation"></a>Lista sårbarheter efter rekommendation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,7 +54,7 @@ GET /api/recommendations/{id}/vulnerabilities
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: e0f68e8a28b302f0ae1ca06a2f892fea38a219b2
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c2b7afef2c090df709f9209f450d8d3aab0424bf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244449"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772155"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>Få en åtgärdsaktivitet efter ID
 
@@ -88,7 +89,7 @@ status | Sträng | Status för åtgärdsaktivitet (Aktiv/slutförd) | Aktiv
 statusLastModifiedOn | DateTime | Datum när statusfältet uppdaterades | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Antal exponerade enheter som denna åtgärd gäller för | 43
 rubrik | Sträng | Rubrik för den här åtgärdsaktiviteten | Microsoft Silverlight
-skriv | Sträng | Åtgärdstyp | Uppdatera
+skriv | Sträng | Åtgärdstyp | Update
 vendorId | Sträng | Relaterade leverantörsnamn | Microsoft
 
 ## <a name="example"></a>Exempel

@@ -16,13 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 78ab364f8a261b1201fad17ebf86adc1a7456a46
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7fdb8ef1689c18945352b30b3ebfe6c176c4034e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730845"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772035"
 ---
 # <a name="overview-of-management-and-apis"></a>Översikt över hantering och API:er 
 
@@ -71,13 +72,14 @@ I  Undersöknings-API:t visas hur rikt Defender för slutpunkten är – det gö
 
 Med **Response API** kan du vidta åtgärder i tjänsten och på enheter, vilket gör det möjligt för kunder att mata in indikatorer, hantera inställningar, aviseringsstatus och vidta svarsåtgärder på enheter programmässigt, till exempel isolera enheter från nätverket, karantänfiler och andra. 
 
-## <a name="streaming-api"></a>Streaming API 
-Direktuppspelnings-API gör det möjligt för kunder att skicka händelser och aviseringar i realtid från sina instanser när de inträffar i en enda dataström, vilket ger en låg latens och hög leveransmekanism för dataflöde.
+## <a name="raw-data-streaming-api"></a>API för direktuppspelning av rådata 
+Defender för Endpoints strömnings-API för rådata ger kunder möjlighet att skicka händelser och aviseringar i realtid från sina instanser när de inträffar i en enda dataström, vilket ger en leveransmekanism med låg fördröjning och hög genomflödesleveransmekanism.
 
-Händelseinformation skickas direkt till Azure-lagring för lagring av data långsiktigt eller till Azure Event Hubs för förbrukning av visualiseringstjänster eller ytterligare databehandlingsmotorer. 
+Defender för slutpunktshändelseinformation skickas direkt till Azure-lagring för lagring av data långsiktigt eller till Azure Event Hubs för förbrukning av visualiseringstjänster eller ytterligare databehandlingsmotorer. 
 
->[!NOTE]
->Streaming API har nu flyttats till Microsoft 365 Defender. Mer information finns i [Streaming API](raw-data-export.md).
+Mer information finns i [Raw Data Streaming API](raw-data-export.md).
+
+I den nya Microsoft 365 Defender Streaming API ingår e-post och aviseringshändelser utöver enhetshändelser. Mer information finns i Microsoft 365 [Defender Streaming API.](../defender/streaming-api.md)
 
 
 ## <a name="siem-api"></a>SIEM API

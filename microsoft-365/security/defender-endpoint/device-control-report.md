@@ -6,19 +6,19 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.reviewer: dansimp
 ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: ee8e7be20076bde41867981008e53a70c134e47e
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 47eb80af58c948db5997dc9f5edfa5737a796837
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893917"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772371"
 ---
 # <a name="protect-your-organizations-data-with-device-control"></a>Skydda organisationens data med enhetskontroll
 
@@ -43,7 +43,7 @@ Granskningshändelserna omfattar:
 
 ## <a name="monitor-device-control-security"></a>Övervaka säkerheten för enhetskontroller
 
-Enhetskontroll i Microsoft Defender för Endpoint ger säkerhetsadministratörer möjlighet att använda verktyg som gör att de kan spåra organisationens enhetskontrollsäkerhet via rapporter. Du hittar rapporten om enhetskontroll i Säkerhetscenter för Microsoft 365 genom att gå till **Rapporter > Enhetsskydd**.
+Enhetskontroll i Microsoft Defender för Endpoint ger säkerhetsadministratörer möjlighet att använda verktyg som gör att de kan spåra organisationens enhetskontrollsäkerhet via rapporter. Du hittar rapporten om enhetskontroll i säkerhetscentret i Microsoft 365 genom att gå till **Rapporter > Enhetsskydd**.
 
 Kortet för enhetsskydd på **instrumentpanelen** Rapporter visar antalet granskningshändelser som genererats av medietyp under de senaste 180 dagarna.
 
@@ -61,7 +61,7 @@ När du väljer en händelse visas en utfällning med mer information:
 
 - **Allmän information:** Datum, åtgärdsläge och principen för den här händelsen.
 - **Medieinformation:** Medieinformation omfattar Medienamn, Klassnamn, Klass-GUID, Enhets-ID, Leverantörs-ID, Volym, Serienummer och Bustyp.
-- **Platsinformation:** Enhetsnamn och MDATP-enhets-ID.
+- **Platsinformation:** Enhetsnamn och MDATP enhets-ID.
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

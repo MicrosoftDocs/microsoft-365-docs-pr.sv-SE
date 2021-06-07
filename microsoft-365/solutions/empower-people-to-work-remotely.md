@@ -1,5 +1,5 @@
 ---
-title: Konfigurera infrastrukturen för distansarbete med Microsoft 365
+title: Konfigurera din infrastruktur för hybridarbete med Microsoft 365
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -18,27 +18,27 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 keywords: arbeta hemifrån, arbeta-hemifrån, distansarbetare, hybridarbete, distansmedarbetare, hybridanslutning, fjärråtkomst, distansarbete, distansarbeta, distansarbete, mobilt arbete, distansarbete, arbeta var som helst, flexibel arbetsplats
-description: Gå igenom infrastrukturens delar så att distansmedarbetarna har säker åtkomst till lokala resurser samt resurser från Microsoft 365.
-ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Gå igenom infrastrukturens delar så att dina hybridmedarbetarna har säker åtkomst till lokala och Microsoft 365 resurser.
+ms.openlocfilehash: 55f1cf5c922166e1fe3932b6fe89fbdfcbfba466
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246326"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788882"
 ---
-# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>Konfigurera infrastrukturen för distansarbete med Microsoft 365
+# <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Konfigurera din infrastruktur för hybridarbete med Microsoft 365
 
-För att säkra och optimera distansarbetares produktivitet och samarbete måste du konfigurera IT- och molninfrastrukturen för att aktivera fjärrarbete och ge åtkomst till organisationens lokala och molnbaserade information, verktyg och resurser. Den här lösningen går igenom distributionen av viktiga delar av infrastruktur som ger dina medarbetare möjlighet att arbeta på så bra som möjligt, oavsett var de befinner sig.
+För att säkra och optimera dina arbetares produktivitet och samarbete måste du tillåta lokala- och fjärrarbetare att enkelt och säkert få åtkomst till din organisations lokala och molnbaserade information, verktyg och resurser. Den här lösningen går igenom distributionen av viktiga delar av infrastruktur som ger dina medarbetare möjlighet att arbeta på så bra som möjligt, oavsett var de befinner sig.
 
-Att låta arbetarna arbeta utanför kontoret är viktigt för många organisationer för att:
+Hybridarbetare kan jobba lokalt eller på distans på olika platser. Att låta arbetarna arbeta utanför ett traditionellt kontor är viktigt för många organisationer för att:
 
-- Spara på kontorsutrymme.
-- Anställa och behålla arbetare som inte vill omlokalisera.
+- Anställa och behålla arbetare som är villiga att omplaceras eller som kräver en flexibel arbetsmiljö.
 - Minska pendlingstid för arbetare vilket ger de mer tid att vara produktiva och kunna utföra stressminskande aktiviteter utanför arbetet.
+- Spara på kontorsutrymme.
 
-Microsoft 365 har förmågan att låta dina medarbetare att arbeta på distans.
+Microsoft 365 har förmågan att möjliggör för dina hybridarbetare att kunna arbeta antingen lokalt eller på distans.
 
-![Underlätta för distansarbetare med Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
+![Möjliggör för dina hybridarbetare med Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 >[!Note]
 >Om du är ny på Microsoft 365, se [de här resurserna](https://www.microsoft.com/microsoft-365).
@@ -49,11 +49,11 @@ Titta på den här videon för att få en översikt över distributionsprocessen
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-För IT-proffs som hanterar plats- och molnbaserad infrastruktur för att möjliggöra arbetsproduktiviteten, erbjuder denna lösning följande viktiga funktioner:
+För IT-proffs som hanterar lokal- och molnbaserad infrastruktur för att möjliggöra hybridarbetares produktivitet, erbjuder denna lösning följande viktiga funktioner:
 
 - Ansluten
 
-  Oavsett tid och plats kan distansarbetare komma åt: 
+  Var som helst i världen, och när som helst, kan dina hybridarbetare få åtkomst till: 
 
   - Molnbaserade tjänster och data i din Microsoft 365-prenumeration. 
 
@@ -65,11 +65,11 @@ För IT-proffs som hanterar plats- och molnbaserad infrastruktur för att möjli
 
 - Hanteras
 
-  Din distansarbetares enheter kan hanteras från molnet med säkerhetsinställningar, tillåtna appar och för att kräva överensstämmelse med systemsäkerheten.
+  Din hybridarbetares enheter kan hanteras från molnet med säkerhetsinställningar, tillåtna appar och för att kräva efterlevnad av systemhälsan.
 
 - Samarbetsvilliga och produktiva
 
-  Dina distansarbetare kan vara lika produktiva som på plats på ett mycket samarbetande sätt med:
+  Dina hybridarbetare kan vara lika produktiva som de lokala på ett mycket samarbetande sätt med:
 
   - Onlinemöten och chattsessioner med Teams. 
 
@@ -77,11 +77,11 @@ För IT-proffs som hanterar plats- och molnbaserad infrastruktur för att möjli
 
   - Delade uppgifter och arbetsflöden för att dela upp arbetet och få saker gjorda. 
 
-För smidig inloggning lokalt bör dina användarkonton i Active Directory Domain Services (AD DS) synkroniseras med Azure Active Directory (Azure AD). För att skydda dina Windows 10-enheter bör de registreras i Intune. Här är en övergripande vy över infrastrukturen.
+För smidig inloggning lokalt bör dina användarkonton i Active Directory Domain Services (AD DS) synkroniseras med Azure Active Directory (Azure AD). För att skydda dina Windows 10-enheter bör de registreras i Intune. Här är en övergripande vy över infrastrukturen.
 
-![Grundläggande infrastruktur för distansarbetare som använder Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![Den grundläggande infrastrukturen för hybridarbetare med Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-Använd de här Microsoft 365-funktionerna om du vill aktivera funktionerna i Microsoft 365 för dina distansarbetare.
+Använd de här Microsoft 365-funktionerna om du vill aktivera funktionerna i Microsoft 365 för dina hybridarbetare.
 
 | Resurs eller funktion | Beskrivning | Licensiering |
 |:-------|:-----|:-------|
@@ -103,13 +103,13 @@ Använd de här Microsoft 365-funktionerna om du vill aktivera funktionerna i Mi
 
 För kriterier för säkerhet och efterlevnad, se [Distribuera säkerhet och efterlevnad för fjärrarbetare](empower-people-to-work-remotely-security-compliance.md).
 
-<a name="poster"></a>För en 2-sidor sammanfattning av denna lösning, se[Stärk affischen för fjärrarbetare](../downloads/empower-remote-workers.pdf).
+<a name="poster"></a> För en 2-sidor sammanfattning av denna lösning, se[Möjliggör för hybridarbetare affischen](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf).
 
-[![Ge distansarbetare goda förutsättningar (affisch)](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
+[![Möjliggör för hybridarbetare affisch](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
-Du kan också ladda ned den här affischen i [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)- eller [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx)-format och skriva ut den i pappersstorleken letter, legal eller tabloid (11 x 17).
+Du kan också ladda ner den här affischen i [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx)-format och skriva ut den på brev, legal eller tabloid papper i storlek (11 x 17).
 
-## <a name="provide-remote-working-for-all-of-your-workers"></a>Tillhandahålla fjärråtkomst för alla dina medarbetare
+## <a name="provide-hybrid-working-for-all-of-your-workers"></a>Tillhandahålla hybridarbete för alla dina medarbetare
 
 Du kan göra så alla dina medarbetare kan vara produktiva var de än befinner sig med dessa enheter:
 
@@ -119,15 +119,15 @@ Du kan göra så alla dina medarbetare kan vara produktiva var de än befinner s
 
 ## <a name="next-steps"></a>Nästa steg
 
-Följ dessa steg för att skydda och optimera åtkomsten till organisationens servrar och molntjänster, och maximera produktiviteten för distansarbetarna.
+Följ dessa steg för att säkra och optimera åtkomsten till din organisations servrar och molntjänster, och maximera din hybridarbetares produktivitet.
 
 1. [Öka inloggningssäkerheten med MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Ge fjärråtkomst till lokala appar och tjänster](empower-people-to-work-remotely-remote-access.md)
 3. [Distribuera säkerhets- och efterlevnadstjänster](empower-people-to-work-remotely-security-compliance.md)
 4. [Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter](empower-people-to-work-remotely-manage-endpoints.md)
-5. [Distribuera produktivitetsappar och tjänster för distansarbetare](empower-people-to-work-remotely-teams-productivity-apps.md)
-6. [Träna distansarbetare och få feedback om användningen](empower-people-to-work-remotely-train-monitor-usage.md)
+5. [Använd produktivitetsappar och -tjänster för hybridarbetare](empower-people-to-work-remotely-teams-productivity-apps.md)
+6. [Träna dina medarbetare och få feedback om användningen](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![Steg för att konfigurera infrastrukturen för distansarbete med Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![Stegen för att konfigurera din infrastruktur för hybridarbete med Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-För att se hur en fiktiv men representativ multinationell organisation har konfigurerat infrastrukturen för distansarbete, gå till [Contosos gensvar på COVID-19 och infrastruktur för distansarbete och arbete på plats](contoso-remote-onsite-work.md).
+För att se hur en fiktiv men representativ multinationell organisation har konfigurerat sin infrastruktur för hybridarbete, gå till [Contosos svar på COVID-19 och infrastruktur för hybridarbete](contoso-remote-onsite-work.md).

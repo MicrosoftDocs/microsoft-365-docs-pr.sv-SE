@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 019fadd672f1d00042c3247520afcfb062cee3ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ec7adcc153d4c6bedfb1984951acad7a401cbd55
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769683"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788817"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Information om Microsoft Defender för Endpoint API
 
@@ -42,7 +42,7 @@ Följande information innehåller uppdateringar av Microsoft Defender för slutp
 
 ### <a name="05252021"></a>05.25.2021
 
-- Nya API Exportera [utvärderingsmetoder och egenskaper per enhet](get-assessmnt-1methods-properties.md)har lagts till.
+- Nya API Exportera [utvärderingsmetoder och egenskaper per enhet](get-assessment-methods-properties.md)har lagts till.
 
 ### <a name="03052021"></a>03.05.2021
 

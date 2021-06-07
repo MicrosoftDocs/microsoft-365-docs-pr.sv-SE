@@ -1,8 +1,8 @@
 ---
-title: Konfigurera och hantera Microsoft Threat Experts-funktioner
+title: Konfigurera och hantera funktioner för Microsoft Hotexperter
 ms.reviewer: ''
 description: Registrera dig hos Microsoft Threats-experter för att konfigurera, hantera och använda det i dina dagliga säkerhetsåtgärder och säkerhetsadministration.
-keywords: Microsoft Threat Experts, hanterad hot-service, MTE, Microsoft hanterad service för fiske
+keywords: Microsoft Hotexperter, hanterad säkerhetstjänst för hot, MTE, Microsoft-hanterad service för hot
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b578436522998ba88cb58f29c5e303ebe0b1ce45
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 226fc389aab24dda2425a17f5fb8d49da93e35d8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166107"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770667"
 ---
-# <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Konfigurera och hantera Microsoft Threat Experts-funktioner
+# <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Konfigurera och hantera funktioner för Microsoft Hotexperter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,37 +38,37 @@ ms.locfileid: "51166107"
 
 ## <a name="before-you-begin"></a>Innan du börjar 
 > [!NOTE]
-> Diskutera kraven för berättigande med din Microsoft-leverantör och ditt kontoteam innan du tillämpar på Microsoft Threat Experts – Riktad attackavisering hanterad säkerhetstjänst för hot.
+> Diskutera kraven för berättigande med din Microsoft-leverantör och ditt kontoteam innan du ansökar om Microsoft Hotexperter – Riktad attackmeddelande hanterad säkerhetstjänst för hot.
 
 Se till att du har Defender för slutpunkt distribuerad i din miljö med registrerade enheter och inte bara på en miljö.
 
-Om du är Defender för slutpunktskund måste du söka efter **Microsoft Threat Experts – Riktade** attackmeddelanden för att få särskilda insikter och analyser som hjälper dig att identifiera de viktigaste hoten, så att du kan svara på dem snabbt. Kontakta ditt kontoteam eller din Microsoft-representant för att prenumerera på **Microsoft Threat Experts – Experts on Demand** och rådgör med våra hotexperter om relevanta identifieringar och adversaries.
+Om du är Defender för slutpunktskund måste du söka efter **Microsoft Hotexperter – Riktade** attackmeddelanden för att få särskilda insikter och analyser som hjälper dig att identifiera de viktigaste hoten, så att du kan svara på dem snabbt. Kontakta ditt kontoteam eller din Microsoft-representant för att prenumerera **på Microsoft Hotexperter - Experts on Demand** och rådgör med våra hotexperter om relevanta identifieringar och adversaries.
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Sök efter Microsoft Threat Experts – riktad tjänst för attackmeddelanden 
-Om du redan är Defender för Slutpunktskund kan du använda den via Microsoft Defender Säkerhetscenter. 
+## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Ansök för Microsoft Hotexperter – riktad tjänst för attackmeddelanden 
+Om du redan är Defender för Slutpunktskund kan du söka via Microsoft Defender Säkerhetscenter. 
 
-1. I navigeringsfönstret går du till Inställningar **> Allmänt > avancerade > Microsoft Threat Experts – Riktade attackmeddelanden.**
+1. Från navigeringsfönstret går du till fliken **Inställningar > för > Avancerade > Microsoft Hotexperter - Riktade attackmeddelanden.**
 
 2. Klicka på **Använd**.
 
-    ![Bild av inställningar för Microsoft Threat Experts](images/mte-collaboratewithmte.png)
+    ![Bild av Microsoft Hotexperter inställningar](images/mte-collaboratewithmte.png)
 
 3. Ange ditt namn och din e-postadress så att Microsoft kan kontakta dig i programmet.
 
-    ![Bild på programmet Microsoft Threat Experts](images/mte-apply.png)
+    ![Bild på Microsoft Hotexperter program](images/mte-apply.png)
 
 4. Läs [sekretesspolicyn och](https://privacy.microsoft.com/en-us/privacystatement)klicka sedan på **Skicka** när du är klar. Du får ett välkomstmeddelande via e-post när din ansökan har godkänts.
 
-    ![Bild på programbekräftelse från Microsoft Threat Experts](images/mte-applicationconfirmation.png)
+    ![Bild på Microsoft Hotexperter programbekräftelse](images/mte-applicationconfirmation.png)
 
 När du accepterar får du ett välkomstmeddelande  via e-post och du ser knappen Använd ändras till en växlingsknapp som är "på". Om du vill ta dig själv från tjänsten Riktad attackmeddelanden drar du reglaget "av" och klickar på Spara **inställningar** längst ned på sidan. 
 
-## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>Var du ser riktade attackmeddelanden från Microsoft Threat Experts 
-Du kan få riktade attackmeddelanden från Microsoft Threat Experts via följande medium:  
+## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>Var du ser riktade attackmeddelanden från Microsoft Hotexperter 
+Du kan få riktade attackmeddelanden från Microsoft Hotexperter via följande medium:  
 - Sidan Incidenter för Defender för **Slutpunktsportalen** 
 - Instrumentpanelen Aviseringar i Defender för **Slutpunktsportalen**  
-- OData-avisering för [API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-alerts) och [REST API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
-- [DeviceAlertEvents-tabell](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) i Avancerad sökning
+- OData-avisering för [API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) och [REST API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- [DeviceAlertEvents-tabell](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) i Avancerad sökning
 - Din e-post, om du väljer att konfigurera den 
 
 Om du vill ta emot riktade attackmeddelanden via e-post skapar du en regel för e-postavisering.
@@ -77,17 +77,17 @@ Om du vill ta emot riktade attackmeddelanden via e-post skapar du en regel för 
 Du kan skapa regler för att skicka e-postaviseringar för aviseringsmottagare. Mer  [information finns i Konfigurera](configure-email-notifications.md) aviseringsmeddelanden för att skapa, redigera, ta bort eller felsöka e-postaviseringar.
 
 ## <a name="view-the-targeted-attack-notification"></a>Visa meddelandet om riktad attack  
-Du kommer att få riktade attackmeddelanden från Microsoft Threat Experts i e-postmeddelandet när du har konfigurerat ditt system för att ta emot e-postaviseringar.  
+Du börjar ta emot riktade attackaviseringar från e Microsoft Hotexperter postmeddelanden när du har konfigurerat systemet för att ta emot e-postaviseringar.  
 
 1. Klicka på länken i e-postmeddelandet för att gå till motsvarande aviseringskontext i instrumentpanelen som är märkt **med hotexperter.** 
 
 2. På instrumentpanelen väljer du samma aviseringsavsnitt som du fick i e-postmeddelandet för att visa informationen.  
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Prenumerera på Microsoft Threat Experts – experter på begäran
-Det här är tillgängligt som en prenumerationstjänst. Om du redan är Defender för Endpoint-kund kan du kontakta din Microsoft-representant för att prenumerera på Microsoft Threat Experts – Experts on Demand. 
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Prenumerera på Microsoft Hotexperter – experter på begäran
+Det här är tillgängligt som en prenumerationstjänst. Om du redan är Defender för Slutpunktskund kan du kontakta din Microsoft-representant för att prenumerera på Microsoft Hotexperter - Experter på begäran. 
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>Kontakta en Microsoft-expert om misstänkt cybersäkerhet i din organisation 
-Du kan samarbeta med Microsoft Threat Experts som kan vara direkt engagerade i Microsoft Defender Säkerhetscenter för att få snabba och korrekta svar. Experter tillhandahåller insikter för att bättre förstå komplexa hot, riktade attackmeddelanden som du får eller om du behöver mer information om aviseringar, en potentiellt komprometterad enhet eller ett informationssammanhang för hot som visas på din portalinstrumentpanel. 
+Ni kan samarbeta med Microsoft Hotexperter som kan vara engagerade direkt i mötet Microsoft Defender Säkerhetscenter få snabba och korrekta svar. Experter tillhandahåller insikter för att bättre förstå komplexa hot, riktade attackmeddelanden som du får eller om du behöver mer information om aviseringar, en potentiellt komprometterad enhet eller ett informationssammanhang för hot som visas på din portalinstrumentpanel. 
 
 > [!NOTE]
 > - Vi har för närvarande inte stöd för förfrågningar som rör din organisations anpassade hotinformation. Kontakta din säkerhetsgrupp eller ditt svarsteam för incidenter.
@@ -97,21 +97,21 @@ Du kan samarbeta med Microsoft Threat Experts som kan vara direkt engagerade i M
 
 2. I den övre högra menyn klickar du på **?** . Välj sedan **Rådgör med en hotexpert**. 
 
-    ![Bild på Microsoft Threat Experts Experts på begäran från menyn](images/mte-eod-menu.png)
+    ![Bild på Microsoft Hotexperter på begäran från menyn](images/mte-eod-menu.png)
 
     En utfälld skärm öppnas. Följande skärm visas när du använder en utvärderingsprenumeration.
 
-    ![Bild på skärmen Microsoft Threat Experts experts on Demand](images/mte-eod.png)
+    ![Bild på Microsoft Hotexperter experter på begäran](images/mte-eod.png)
 
-    Följande skärm visar när du har en komplett Prenumeration på Microsoft Threat Experts – Experter på begäran.
+    Följande skärm visar när du är på en fullständig Microsoft Hotexperter - Experter på begäran-prenumeration.
 
-    ![Bild av Microsoft Threat Experts Experts on Demand i helprenumeration](images/mte-eod-fullsubscription.png)
+    ![Bild på Microsoft Hotexperter för experter på begäran i helprenumeration](images/mte-eod-fullsubscription.png)
 
     Fältet **Inquiry topic** är förifylld med länken till den relevanta sidan för din undersökningsförfrågan. Till exempel en länk till sidan incident, avisering eller enhetsinformation som du var på när du gjorde begäran.
 
-3.  I nästa fält bör du ge Microsoft Threat Experts tillräckligt med information för att starta undersökningen.
+3.  Ange tillräckligt med information i nästa fält för att ge Microsoft Hotexperter tillräckligt med kontext för att starta undersökningen.
   
-4. Ange den e-postadress som du vill använda för att stämma av med Microsoft Threat Experts.
+4. Ange den e-postadress som du vill använda för att motsvara Microsoft Hotexperter.
 
 > [!NOTE]
 > Om du vill spåra statusen för ärenden för experter på begäran via Microsoft Services Hub kan du kontakta din Technical Account Manager. 
@@ -122,7 +122,7 @@ Titta på den här videon för en snabb överblick över Microsoft Services-hubb
 
 
    
-## <a name="sample-investigation-topics-that-you-can-consult-with-microsoft-threat-experts---experts-on-demand"></a>Exempel på undersökningsämnen som du kan rådgöra med Microsoft Threat Experts – Experter på begäran 
+## <a name="sample-investigation-topics-that-you-can-consult-with-microsoft-threat-experts---experts-on-demand"></a>Exempel på undersökningsämnen som du kan rådgöra med Microsoft Hotexperter – experter på begäran 
 
 **Aviseringsinformation**
 - Vi ser en ny typ av avisering för binär aningen off-the-land: [AlertID]. Kan du berätta något mer om den här aviseringen och hur vi kan undersöka ytterligare?
@@ -138,18 +138,18 @@ Titta på den här videon för en snabb överblick över Microsoft Services-hubb
 - Vi har upptäckt ett nätfiskemeddelande som levererade ett skadligt Word-dokument till en användare. Det skadliga Word-dokumentet orsakade en serie misstänkta händelser som utlöste flera Microsoft Defender-varningar för skadlig programvara (malware name). Har du någon information om den här skadlig programvara? Om ja, kan du skicka mig en länk?
 - Jag såg nyligen en referens från [sociala medier, till exempel Twitter eller en blogg] om ett hot som riktar sig till min bransch. Kan du hjälpa mig förstå vilket skydd Defender för Endpoint tillhandahåller mot den här hotspelaren? 
 
-**Aviseringsmeddelanden från Microsoft Threat Experts** 
+**Microsoft Hotexperter aviseringsmeddelanden** 
 - Kan ditt svarsteam för incidenter hjälpa oss att hantera det riktade attackmeddelandet vi fick?
-- Jag fick den här riktade attackmeddelandet från Microsoft Threat Experts. Vi har inte vårt eget svarsteam för incidenter. Vad kan vi göra nu och hur kan vi begränsa händelsen?
-- Jag fick ett meddelande om riktad attack från Microsoft Threat Experts. Vilka data kan du ge oss som vi kan skicka till vårt svarsteam för incidenter?
+- Jag fick den här riktade attackmeddelandet från Microsoft Hotexperter. Vi har inte vårt eget svarsteam för incidenter. Vad kan vi göra nu och hur kan vi begränsa händelsen?
+- Jag fick ett riktad attackmeddelande från Microsoft Hotexperter. Vilka data kan du ge oss som vi kan skicka till vårt svarsteam för incidenter?
 
   >[!NOTE]
-  >Microsoft Threat Experts är en hanterad säkerhetstjänst för cybersäkerhet och inte en incidenttjänst. Vid behov kan experterna vid behov smidigt gå över undersökningen till TJÄNSTEN Microsoft Cybersecurity Solutions Group (CSG) för tjänsten Detection and Response Team (PHOTOSHOP). Du kan också välja att kommunicera med din egen svarsgrupp för incidenter för att åtgärda problem som kräver ett incidentsvar. 
+  >Microsoft Hotexperter är en hanterad säkerhetstjänst för cybersäkerhet och inte en incidenttjänst. Vid behov kan experterna vid behov smidigt gå över undersökningen till TJÄNSTEN Microsoft Cybersecurity Solutions Group (CSG) för tjänsten Detection and Response Team (PHOTOSHOP). Du kan också välja att kommunicera med din egen svarsgrupp för incidenter för att åtgärda problem som kräver ett incidentsvar. 
 
 ## <a name="scenario"></a>Scenario
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>Få en förloppsrapport om din förfrågan om hanterad förfrågan 
-Svaret från Microsoft Threat Experts varierar beroende på din förfrågan. De skickar en förloppsrapport  via e-post till dig om en expert på hot inom två dagar för att informera om undersökningsstatus från följande kategorier: 
+Svar från Microsoft Hotexperter varierar beroende på din förfrågan. De skickar en förloppsrapport  via e-post till dig om en expert på hot inom två dagar för att informera om undersökningsstatus från följande kategorier: 
 - Mer information krävs för att fortsätta med undersökningen 
 - Det krävs en eller flera filexempel för att avgöra det tekniska sammanhanget 
 - Undersökning kräver mer tid   
@@ -157,5 +157,6 @@ Svaret från Microsoft Threat Experts varierar beroende på din förfrågan. De 
 
 Det är centralt att du svarar snabbt för att hålla undersökningen i rörelse. 
 
-## <a name="related-topic"></a>Relaterade ämnen
-- [Översikt över Microsoft Threat Experts](microsoft-threat-experts.md)
+## <a name="related-topic"></a>Relaterat ämne
+- [Översikt över Microsoft Hotexperter](microsoft-threat-experts.md)
+- [Microsoft Hotexperter i Microsoft 365 Översikt](/microsoft-365/security/mtp/microsoft-threat-experts)

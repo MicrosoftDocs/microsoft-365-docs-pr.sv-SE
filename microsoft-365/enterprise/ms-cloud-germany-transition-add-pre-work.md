@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Arbeta i förväg när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i den nya tyska datacenterområdet.'
-ms.openlocfilehash: 66f23d33e9e55c432c33e9d90549d33ea42536db
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 244a784b0e28f9d5629f5af242a6cf8227abdb01
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651026"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770390"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktiviteter före migreringen från Microsoft Cloud Deutschland
 
@@ -98,16 +98,12 @@ TIDE:T kan distribueras på Windows när som helst före fas 9. Om TIDE:t ska st
 
 ## <a name="active-directory-federation-services-ad-fs"></a>AD FS (Active Directory Federation Services)
 
-<!-- before phase 4 -->
-
 **Gäller för:** Kunder som använder AD FS lokalt för att autentisera användare som ansluter till Microsoft Office 365<br>
-**När den används:** Varje gång före fas 4 startar
+**När den används:** Varje gång före fas 2 startar
 
 Läsa och använda [ADFS-migreringsstegen](ms-cloud-germany-transition-add-adfs.md)
 
 ## <a name="sharepoint-online"></a>SharePoint Online
-
-<!-- before phase 4 -->
 
 **Gäller för:** Kunder SharePoint 2013 lokalt<br>
 **När den används:** Varje gång före fas 4 startar

@@ -15,14 +15,14 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0f42da077ca84341824fad01fcb23eae976336a1
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6b96d3d656a89e7102550d09a2f5052fdb5ae818
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207094"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52792962"
 ---
-# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Kontrollera automatisk vidarebefordran av e-post i Microsoft 365
+# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Kontrollera automatisk vidarebefordran av extern e-post i Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,16 +33,14 @@ ms.locfileid: "51207094"
 
 Som administratör kan du behöva begränsa eller styra automatiskt vidarebefordrade meddelanden till externa mottagare (mottagare utanför organisationen). Vidarebefordran av e-post kan vara användbart, men kan också utgöra en säkerhetsrisk på grund av att information kan lämnas ut. Attacker kan använda den här informationen för att attack mot organisationen eller partnern.
 
-
 Följande typer av automatisk vidarebefordran är tillgängliga i Microsoft 365:
 
 - Användare kan konfigurera [inkorgsregler](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) så att meddelanden automatiskt vidarebefordras till externa avsändare (avsiktligt eller som ett resultat av ett komprometterat konto).
-
 - Administratörer kan konfigurera [vidarebefordran av postlådor](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (s.k. _SMTP-vidarebefordran)_ så att meddelanden vidarebefordras automatiskt till externa mottagare. Administratören kan välja om meddelanden ska vidarebefordras eller behålla kopior av vidarebefordrade meddelanden i postlådan.
 
 Du kan använda principer för utgående skräppostfilter för att styra automatisk vidarebefordran till externa mottagare. Det finns tre inställningar:
 
-- **Automatiskt:** Automatisk extern vidarebefordran blockeras. Intern automatisk vidarebefordran av meddelanden fortsätter att fungera. Detta är standardinställningen.
+- **Automatiskt – Systemkontrollerat:** Automatisk extern vidarebefordran är blockerad. Intern automatisk vidarebefordran av meddelanden fortsätter att fungera. Det här är standardinställningen.
 - **På:** Automatisk extern vidarebefordran är tillåtet och inte begränsat.
 - **Av:** Automatisk extern vidarebefordran inaktiveras och resulterar i en rapport om utebliven leverans (kallas även NDR-rapport eller icke-leveranskavsändarmeddelande) till avsändaren.
 
@@ -61,13 +59,11 @@ Anvisningar om hur du konfigurerar de här inställningarna finns i [Konfigurera
 Som administratör kanske du redan har konfigurerat andra kontroller för att tillåta eller blockera automatisk vidarebefordran av e-post. Till exempel:
 
 - [Fjärrdomäner](/exchange/mail-flow-best-practices/remote-domains/remote-domains) för att tillåta eller blockera automatisk vidarebefordran av e-post till vissa eller alla externa domäner.
-
-- Villkor och åtgärder i [Exchange-e-postflödesregler](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transportregler) för att identifiera och blockera automatiskt vidarebefordrade meddelanden till externa mottagare.
+- Villkor och åtgärder i Exchange [e-postflödesregler](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transportregler) för att identifiera och blockera automatiskt vidarebefordrade meddelanden till externa mottagare.
 
 Fjärrdomäninställningar och e-postflödesregler är oberoende av inställningarna i principer för utgående skräppostfilter. Till exempel:
 
 - Du tillåter automatisk vidarebefordran för en fjärrdomän, men du blockerar automatisk vidarebefordran i principer för utgående skräppostfilter. I det här exemplet blockeras automatiskt vidarebefordrade meddelanden.
-
 - Du tillåter automatisk vidarebefordran i principer för utgående skräppostfilter, men du använder e-postflödesregler eller fjärrdomäninställningar för att blockera automatiskt vidarebefordrad e-post. I det här exemplet blockerar e-postflödesregler eller fjärrdomäninställningar automatiskt vidarebefordrade meddelanden.
 
 Det här funktionsoberoendet gör att du (till exempel) tillåter automatisk vidarebefordran i principer för utgående skräppostfilter, men använder fjärrdomäner för att styra externa domäner som användare kan vidarebefordra meddelanden till.
