@@ -694,7 +694,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: Visa dokument i en granskningsuppsättning
               href: view-documents-in-review-set.md
-            - name: Fråga data i en granskningsuppsättning
+            - name: Skapa frågor och filtrera innehåll i en granskningsuppsättning
               href: review-set-search.md
             - name: Tagga dokument i en granskningsuppsättning
               href: tagging-documents.md
