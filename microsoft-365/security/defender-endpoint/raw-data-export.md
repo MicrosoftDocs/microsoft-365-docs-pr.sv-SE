@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 27d1b36f3e49112a2da95f9268c0e05fcaa72c89
-ms.sourcegitcommit: f0118e61e490496cb23189cc5c73b23e2ba939be
+ms.custom: api
+ms.openlocfilehash: c8403dee11070dcf0825fad2502d8d21d54933fd
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780147"
+ms.locfileid: "52782759"
 ---
 # <a name="raw-data-streaming-api"></a>Api för direktuppspelning av rådata
 
@@ -34,7 +35,8 @@ ms.locfileid: "52780147"
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Strömma Advanced Hunting-händelser till händelsehubben och/eller Azure-lagringskontot.
 
-Defender för Slutpunkt har stöd för direktuppspelning av alla händelser som är tillgängliga via [Avancerad](advanced-hunting-overview.md) sökning till ett [händelsenav](/azure/event-hubs/) och/eller [Azure-lagringskonto.](/azure/event-hubs/)
+
+Microsoft Defender för Slutpunkt har stöd för direktuppspelning av händelser som är tillgängliga [via Avancerad](../defender/advanced-hunting-overview.md) sökning till ett [händelsenav](/azure/event-hubs/) och/eller [Azure-lagringskonto.](/azure/storage/common/storage-account-overview)
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
