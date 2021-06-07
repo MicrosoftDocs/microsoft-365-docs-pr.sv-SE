@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lär dig hur du ger feedback till en utbildare i Innehållsutforskaren.
-ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162013"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793070"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Så här tränar du en klassificerare i innehållsutforskaren på nytt
 
@@ -96,7 +96,7 @@ Mer information om det övergripande arbetsflödet för att omtämna en klassifi
 
 12. Granska den rekommenderade åtgärden och förutsägelsejämförelserna för de omtämta och publicerade versionerna av klassificeraren.
 13. Om du är nöjd med resultatet av uttröjningen väljer **du Publicera om.**
-14. Om du inte är nöjd med resultatet av omtämningen kan du välja att ge ytterligare feedback till klassificeraren i gränssnittet för kommunikationsefterlevnad och starta en annan omtrainingscykel eller inte göra någonting. I sådant fall används den publicerade versionen av klassificeraren fortsatt. 
+14. Om du inte är nöjd med resultatet av utträmningen kan du välja att ge ytterligare feedback till klassificeraren i gränssnittet för Innehållsutforskaren och starta en annan omtrainingscykel eller inte göra någonting. I sådant fall används den publicerade versionen av klassificeraren fortsatt. 
 
 ## <a name="details-on-republishing-recommendations"></a>Information om att publicera om rekommendationer
 

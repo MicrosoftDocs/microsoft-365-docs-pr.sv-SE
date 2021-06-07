@@ -1,5 +1,5 @@
 ---
-title: Steg 4. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
+title: Steg 4. Använd slutpunktshantering för dina enheter, datorer och andra slutpunkter
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,17 +16,17 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: Använd Microsoft Endpoint Manager för att hantera dina hanteringsenheter, datorer och andra slutpunkter.
-ms.openlocfilehash: 116f2a92ccae43a36a8a4ceafcd598c532a852c3
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: Använd Microsoft Endpoint Manager för att hantera dina enheter, datorer och andra slutpunkter.
+ms.openlocfilehash: ef43f447b819a6e5d9d0de1d979d7d30887e30fb
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028998"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789115"
 ---
-# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Steg 4. Distribuera slutpunktshantering för enheter, datorer och andra slutpunkter
+# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Steg 4. Använd slutpunktshantering för dina enheter, datorer och andra slutpunkter
 
-Med distansarbetare måste du ha stöd för ett ökande antal personliga enheter. Slutpunktshantering är en principbaserad metod för säkerhet som kräver att enheter följer specifika villkor innan de beviljas åtkomst till resurser. Microsoft Endpoint Manager tillhandahåller moderna hanteringsfunktioner för att skydda dina data i molnet och lokalt. 
+Med hybridarbetare måste du ha stöd för ett ökande antal personliga enheter. Slutpunktshantering är en principbaserad metod för säkerhet som kräver att enheter följer specifika villkor innan de beviljas åtkomst till resurser. Microsoft Endpoint Manager tillhandahåller moderna hanteringsfunktioner för att skydda dina data i molnet och lokalt. 
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) tillhandhåller tjänster och verktyg för hantering av mobila enheter, stationära datorer, virtuella datorer, inbäddade enheter och servrar genom att kombinera följande tjänster som du kanske redan känner till och använder.
 
@@ -38,7 +38,7 @@ Microsoft Intune är en molnbaserad tjänst som fokuserar på hantering av mobil
 
 - **MDM:** för enheter som ägs av organisationen kan du utnyttja fullständig kontroll, t. ex. inställningar, funktioner och säkerhet. Enheter "registreras" i Intune där de får Intune-principer med regler och inställningar. Du kan till exempel ange krav på lösenord och PIN-kod, skapa en VPN-anslutning, konfigurera skydd med hot och mycket mer.
 
-- **MAM:** distansmedarbetare kanske inte vill att du ska ha fullständig kontroll över deras personliga enheter, även kallat bring-your-own device (BYOD). Du kan erbjuda dina distansmedarbetare alternativ och fortfarande skydda din organisation. Distansmedarbetare kan till exempel registrera sina enheter om de vill ha full tillgång till organisationens resurser. Om de här användarna bara vill ha tillgång till e-post eller Microsoft Teams kan du använda skyddsprinciper för appar som kräver multifaktorautentisering (MFA) för att använda de här apparna.
+- **MAM:** distansmedarbetare kanske inte vill att du ska ha fullständig kontroll över deras personliga enheter, även kallat bring-your-own device (BYOD). Du kan erbjuda dina hybridarbetare alternativ och fortfarande skydda din organisation. Hybridarbetare kan till exempel registrera sina enheter om de vill ha full tillgång till din organisations resurser. Om de här användarna bara vill ha tillgång till e-post eller Microsoft Teams kan du använda skyddsprinciper för appar som kräver multifaktorautentisering (MFA) för att använda de här apparna.
 
 Mer information finns i det här [översikt över Microsoft Intune](/intune/fundamentals/what-is-intune).
 
@@ -95,4 +95,4 @@ Du använder paketet med Endpoint Manager-funktioner och -förmågor för att ha
 
 [![Steg 5: Distribuera produktivitetsappar och tjänster för distansarbetare](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
-Fortsätt med [Steg 5](empower-people-to-work-remotely-teams-productivity-apps.md) för att få dina distansmedarbetare att använda Microsoft 365 produktivitetsappar som Microsoft Teams.
+Fortsätt med [Steg 5](empower-people-to-work-remotely-teams-productivity-apps.md) för att få dina hybridarbetare att använda Microsoft 365 produktivitetsappar som Microsoft Teams.

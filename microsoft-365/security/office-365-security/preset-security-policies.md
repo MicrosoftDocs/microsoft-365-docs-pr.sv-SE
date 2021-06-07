@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan läsa om hur standard- och strikt-principinställningarna används i alla skyddsfunktioner i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca65f003b0c206b0f7e23f3498a4ef0d0bc03fa6
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788985"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771231"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förinställda säkerhetsprinciper i EOP och Microsoft Defender för Office 365
 
@@ -119,7 +119,7 @@ Inställningarna i principen för  strikt skydd åsidosätter med andra ord inst
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Använda säkerhetscentret för att tilldela förinställda säkerhetsprinciper till användare
 
-1. I säkerhetscentret går du till Avsnittet Förinställda **&** principer för & för e-postsamarbete i \>  \>  \>  \> **Säkerhetscenter.**
+1. I säkerhetscentret går du till Principer för **&-&** \> **e-post** och samarbete & \>  \> **förinställda säkerhetsprinciper.**
 
 2. Under **Standardskydd eller** **Strikt skydd klickar** du på **Redigera**.
 

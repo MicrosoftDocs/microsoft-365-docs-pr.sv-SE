@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7632efb2014af9f55e9cad700bceeeabe555fb8b
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696580"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793166"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisk undersökning och svar (AIR) i Microsoft Defender för Office 365
 
@@ -78,8 +78,8 @@ Under och efter varje automatisk undersökning kan ditt säkerhetsteam:
 AIR-funktionerna ingår i [Microsoft Defender för Office 365,](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)förutsatt att dina principer och aviseringar har konfigurerats. Behöver du hjälp? Följ instruktionerna i [Skydda mot hot för](protect-against-threats.md) att konfigurera eller konfigurera följande skyddsinställningar:
 
 - [Granskningsloggning](../../compliance/turn-audit-log-search-on-or-off.md) (ska aktiveras)
-- [Principer mot skadlig programvara](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-- [Skydd mot nätfiske](protect-against-threats.md#part-2---anti-phishing-protection)
+- [Skydd mot skadlig kod](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [Skydd mot nätfiske](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Skydd mot skräppost](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [Valv Länkar och Valv bilagor](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [Säkra bilagor för SharePoint, OneDrive och Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)

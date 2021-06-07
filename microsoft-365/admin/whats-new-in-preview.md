@@ -21,12 +21,12 @@ description: I Microsoft 365 – läs mer om de funktioner som har lagts till de
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d4bd7d02b8c14f8b57b6f2e3eef99c2233d820fe
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769092"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779897"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i Microsoft 365 administrationscenter
 
@@ -49,6 +49,18 @@ Och om du vill veta vad som är nytt i andra Microsoft-molntjänster:
 - [Vad är nytt i SharePoint administrationscenter](/sharepoint/what-s-new-in-admin-center)
 - [Office uppdateringar](/OfficeUpdates/)
 - [Så här kontrollerar du Windows släpper hälsa](/windows/deployment/update/check-release-health)
+
+## <a name="june-2021"></a>Juni 2021
+
+### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 sök i administrationscentret
+
+Vi har lagt till ett par nya kategorier i sökfunktionen.
+
+- Nu kan du söka efter Microsoft 365 administratörsroller i global sökning och snabbt visa och hantera rolltilldelningar från valfri sida. Sök till exempel efter **Intune-administratör**.
+
+- Du kan nu hitta förenklade konfigurationsupplevelser med global sökning. Det kan hjälpa dig och din grupp att snabbt komma igång med att använda nya funktioner. Du kan till exempel söka efter **ange att lösenord aldrig ska upphöra.**
+
+Mer information om sökning i administrationscentret finns i [Sök i Microsoft 365 administrationscenter.](manage/search-in-the-mac.md)
 
 ## <a name="may-2021"></a>Maj 2021
 

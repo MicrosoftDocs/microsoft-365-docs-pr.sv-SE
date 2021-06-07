@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Läs om hur du skapar anpassade typer av känslig information med Exact Data Match-baserad klassificering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c6db9df115020902b80328a341606cca2b1c735
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b729cb8a4c30ec13e22f36f9721cb55ecc93942d
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769467"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779873"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Skapa anpassade typer av känslig information med Exact Data Match-baserad klassificering
 
@@ -377,7 +377,7 @@ Om du inte vill exponera en fil med känsliga data kan du hasha den på en dator
 > Om du skapade schemat och mönsterfilerna med guiden för Exact Data Match-schema och typ av känslig information ***måste*** du ladda ned schemat för den här proceduren.
 
 > [!NOTE]
-> Om din organisation har konfigurerat [Kundnyckel för Microsoft 365 på klientorganisationsnivå (allmänt tillgänglig förhandsversion)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) används Exact Data Match automatiskt för krypteringsfunktionen. Det här är endast tillgängligt för E5-licensierade klientorganisationer i det kommersiella molnet.
+> Om din organisation har ställt in [kundnyckel för Microsoft 365](customer-key-overview.md)på klientnivå används exakt datamatchning för krypteringsfunktionen automatiskt. Det här är endast tillgängligt för E5-licensierade klientorganisationer i det kommersiella molnet.
 
 #### <a name="prerequisites"></a>Förutsättningar
 

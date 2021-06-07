@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6460860828acd5ea0c3509e9eb06061d2a9a0cc2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 88ad63d8b7cc71f7d3f809c7cb0371fc41bb9f5d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200155"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771171"
 ---
 # <a name="find-devices-by-tag-api"></a>Hitta enheter med tagg-API
 
@@ -66,13 +68,13 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 
 ## <a name="request-uri-parameters"></a>Begär URI-parametrar
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 tagg | Sträng | Taggnamnet. **Obligatoriskt.**
 useStartsWithFilter | Boolesk | När denna är autent inställd på sant hittar sökningen alla enheter med taggnamn som börjar med den givna taggen i frågan. Falskt som standard. **Valfritt.**

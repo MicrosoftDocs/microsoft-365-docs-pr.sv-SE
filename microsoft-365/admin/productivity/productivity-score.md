@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur Microsoft Productivity Score återspeglar mått för personer och teknikupplevelser och jämför med organisationer av liknande storlek.
-ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: af0e8583bec00b1ddfd62145a4757a4e568108e8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779680"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789045"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft produktivitetspoäng 
 
@@ -42,7 +42,7 @@ Vi tillhandahåller mått, insikter och rekommendationer på två områden:
 
     För var och en av de nämnda kategorierna tittar vi på offentlig forskning för att identifiera bästa praxis och tillhörande fördelar i form av organisationens effektivitet. Till exempel: Forrester research visar att när personer samarbetar och delar innehåll i molnet (istället för bifogade filer med e-post) kan de spara upp till 100 minuter i veckan. Dessutom kan vi kvantifiera användningen av dessa metoder i din organisation så att du kan se var du är på din resa för digital transformation. 
 
-- **Teknikupplevelser:** din organisations produktivitet beror på pålitlig och högpresterande teknik samt effektiv användning av Microsoft 365. [Slutpunktsanalys](https://aka.ms/endpointanalytics) hjälper dig att förstå hur din organisation kan påverkas av prestanda och problem med din maskinvara och programvara. Microsoft 365-appar kan hjälpa dig att förstå om enheterna i din organisation kör Microsoft 365-appar på rekommenderade kanaler.
+- **Teknikupplevelser:** Din organisation produktivitet är beroende på pålitlig och högpresterande teknik samt effektiv användning av Microsoft 365. [Slutpunktsanalys](https://aka.ms/endpointanalytics) hjälper dig att förstå hur din organisation kan påverkas av prestanda och problem med din maskinvara och programvara. Microsoft 365-appar kan hjälpa dig att förstå om enheterna i din organisation kör Microsoft 365-appar på rekommenderade kanaler.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
@@ -53,7 +53,7 @@ För data över personupplevelser måste du ha en Microsoft 365 for Business- el
 > [!NOTE]
 > En licens för Microsoft Workplace Analytics krävs inte för att få funktionen produktivitetspoäng.
 
-Produktivitetspoäng är endast tillgängligt i Microsoft 365 Admin Center och kan bara nås av IT-personal som har någon av följande roller:  
+Produktivitetspoäng är endast tillgängligt i Administrationscenter för Microsoft 365 och kan bara nås av IT-proffs som har någon av följande roller:  
 
 - Global administratör
 - Exchange-administratörer
@@ -116,13 +116,13 @@ För nätverksanslutningar är det rekommenderade riktmärket 80 poäng.
 
 I avsnittet **Detaljnivå för poäng** får du en nedbrytning av din Produktivitetspoäng med riktmärken efter områden för person- och teknikupplevelser.
 
-Poänghistorik visas hur poängen i varje kategori har förändrats under de senaste 6 månaderna.
+Poänghistorik visas hur dina poäng i varje kategori har förändrats under de senaste 6 månaderna.
 
 Områden för **Personupplevelser** och **Teknikupplevelser** innehåller primärinsikter för kategorierna i dessa områden. Du kan klicka på varje kategori för att se djupare insikter.
 
 ## <a name="category-details-pages"></a>Sidor med kategoriinformation
 
-På sidan för varje kategoriinformation visas primär information och stödjande mått samt relaterade forskning och åtgärder som du kan vidta för att driva förändringar i organisationen. Forskning stödjer vikten och motiveringen bakom primärinsikterna för respektive kategori. Om du vill ha mer information [läs Forrester-rapporten](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+På sidan för varje kategoriinformation visas primär information och stödjande mått samt relaterade forskning och åtgärder som du kan vidta för att driva förändringar i organisationen. Forskning stödjer vikten och motiveringen bakom primärinsikterna för respektive kategori. För mer information [läs Forrester-rapporten](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb).
 
 Detaljsidorna är:
 - [Innehållssamarbete – personupplevelser](content-collaboration.md)

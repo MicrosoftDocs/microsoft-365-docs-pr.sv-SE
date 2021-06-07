@@ -12,15 +12,15 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft 365-administratörer kan ta reda på hur de kan återställa efter utpressningstrojaner.
+description: Microsoft 365 administratörer kan ta reda på hur de kan återställa efter utpressningstrojaner.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 242a4a2f43bd91d75caeaeaa0488f23a5ba4319d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207155"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789057"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Återställ från en utpressningstrojanattack i Microsoft 365
 
@@ -49,13 +49,13 @@ Om du har säkerhetskopieringar offline kan du antagligen återställa krypterad
 
 Om du inte har några säkerhetskopior, eller om dina säkerhetskopior också påverkades av utpressningstrojanen, kan du hoppa över det här steget.
 
-## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Steg 2: Inaktivera Exchange ActiveSync och OneDrive-synkronisering
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Steg 2: Inaktivera Exchange ActiveSync och OneDrive synkronisering
 
 Det viktiga här är att stoppa uppslaget av datakryptering genom utpressningstrojanen.
 
-Om du misstänker att e-postmeddelanden är målet för utpressningstrojankryptering inaktiverar du tillfälligt användarnas åtkomst till postlådor. Exchange ActiveSync synkroniserar data mellan enheter och Exchange Online-postlådor.
+Om du misstänker att e-postmeddelanden är målet för utpressningstrojankryptering inaktiverar du tillfälligt användarnas åtkomst till postlådor. Exchange ActiveSync synkroniserar data mellan enheter och Exchange Online postlådor.
 
-Om du vill inaktivera Exchange ActiveSync för en postlåda kan [du gå till Inaktivera Exchange ActiveSync för användare i Exchange Online.](https://support.microsoft.com/help/2795303)
+Information om hur Exchange ActiveSync en postlåda finns i [Inaktivera Exchange ActiveSync för användare i Exchange Online](https://support.microsoft.com/help/2795303).
 
 Information om hur du inaktiverar andra typer av åtkomst till en postlåda finns i:
 
@@ -63,7 +63,7 @@ Information om hur du inaktiverar andra typer av åtkomst till en postlåda finn
 
 - [Aktivera eller inaktivera åtkomst via POP3 eller IMAP4 för en användare](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-Om du pausar OneDrive-synkroniseringen skyddas dina molndata från att uppdateras av potentiellt smittade enheter. Mer information finns i [Pausa och återuppta synkronisering i OneDrive.](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
+Om du pausar OneDrive av synkronisering skyddas dina molndata från att uppdateras med potentiellt smittade enheter. Mer information finns i [Pausa och återuppta synkronisering i OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Steg 3: Ta bort den skadlig programvara från de berörda enheterna
 
@@ -71,25 +71,25 @@ Kör en fullständig, aktuell antivirussökning på alla misstänkta datorer och
 
 Glöm inte att skanna enheter som synkroniserar data eller mål för mappade nätverksenheter.
 
-Du kan använda [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) eller Microsoft Security Essentials (för [äldre klienter).](https://www.microsoft.com/download/details.aspx?id=5201)
+Du kan använda [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) eller (för äldre klienter) [Microsoft Security Essentials.](https://www.microsoft.com/download/details.aspx?id=5201)
 
 Ett alternativ som också hjälper dig att ta bort utpressningstrojaner eller skadlig programvara är verktyget För borttagning av skadlig programvara [(MSRT).](https://www.microsoft.com/download/details.aspx?id=9905)
 
-Om de här alternativen inte fungerar kan du prova [Windows Defender Offline eller](https://support.microsoft.com/help/17466) Felsöka problem med att identifiera och ta bort skadlig [programvara.](https://support.microsoft.com/help/4466982)
+Om de här alternativen inte fungerar kan du prova att Windows Defender Offline eller [Felsöka](https://support.microsoft.com/help/17466) problem med att identifiera [och ta bort skadlig programvara.](https://support.microsoft.com/help/4466982)
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Steg 4: Återställa filer på en rensad dator eller enhet
 
-När du har slutfört det föregående steget för att ta bort utpressningstrojanen från miljön (vilket hindrar [](https://support.microsoft.com/help/17128) utpressningstrojanen från att kryptera eller ta bort filer) kan du använda Filhistorik i Windows 10 och Windows 8.1 eller System Protection i Windows 7 för att försöka återställa dina lokala filer och mappar.
+När du har slutfört det föregående steget för att ta bort utpressningstrojanen från miljön (vilket förhindrar [](https://support.microsoft.com/help/17128) utpressningstrojaner från att kryptera eller ta bort filer) kan du använda Filhistorik i Windows 10 och Windows 8.1 eller System Protection i Windows 7 för att försöka återställa dina lokala filer och mappar.
 
 **Anmärkningar**:
 
 - En del utpressningstrojaner krypterar eller tar bort säkerhetskopiorna, så du kan inte använda Filhistorik eller Systemskydd för att återställa filer. Om det händer behöver du använda säkerhetskopior på externa enheter eller enheter som inte påverkades av utpressningstrojanen eller OneDrive enligt beskrivningen i nästa avsnitt.
 
-- Om en mapp är synkroniserad med OneDrive och du inte använder den senaste versionen av Windows kan det finnas vissa begränsningar i Filhistorik.
+- Om en mapp är synkroniserad OneDrive mapp och du inte använder den senaste versionen av Windows kan det finnas vissa begränsningar i Filhistorik.
 
-## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Steg 5: Återställa filer i OneDrive för företag
+## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>Steg 5: Återskapa filerna i OneDrive för företag
 
-Med Filåterställning i OneDrive för företag kan du återställa hela OneDrive till en föregående tidpunkt under de senaste 30 dagarna. Mer information finns i [Återställa din OneDrive.](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
+Med Filåterställning OneDrive för företag du återställa hela OneDrive till en föregående tidpunkt inom de senaste 30 dagarna. Mer information finns i [Återställ din OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## <a name="step-6-recover-deleted-email"></a>Steg 6: Återskapa borttagna e-postmeddelanden
 
@@ -99,13 +99,13 @@ I de sällsynta fall som utpressningstrojanen tog bort alla dina e-postmeddeland
 
 - [Återskapa borttagna objekt i Outlook för Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Steg 7: Återaktivera Exchange ActiveSync och OneDrive-synkronisering
+## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Steg 7: Återaktivera Exchange ActiveSync och OneDrive synkronisering
 
-När du har rensat dina datorer och enheter och återskapat dina data kan du återaktivera Exchange ActiveSync- och OneDrive-synkronisering som du tidigare [inaktiverade i steg 2.](#step-2-disable-exchange-activesync-and-onedrive-sync)
+När du har rensat dina datorer och enheter och återskapat dina data kan du återaktivera Exchange ActiveSync och OneDrive som du inaktiverade tidigare i [steg 2.](#step-2-disable-exchange-activesync-and-onedrive-sync)
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Steg 8 (valfritt): Blockera OneDrive-synkronisering för specifika filnamnstillägg
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Steg 8 (valfritt): Blockera OneDrive synkronisering för specifika filnamnstillägg
 
-När du har återställt kan du förhindra att OneDrive för företag-klienter synkroniserar filtyper som påverkades av den här utpressningstrojanen. Mer information finns i [Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
+När du har återställt kan du förhindra OneDrive för företag-klienter från att synkronisera de filtyper som påverkades av den här utpressningstrojanen. Mer information finns i [Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
 ## <a name="report-the-attack"></a>Rapportera attacken
 
@@ -129,6 +129,8 @@ På webbplatserna för bedrägerirapportering finns information om hur du kan f�
 
 - Nya Zeeland: [Consumer Affairs Scams](http://www.consumeraffairs.govt.nz/scams)
 
+- Switzerland [Nationales Zentrum für Cybersicherheit NCSC](https://www.ncsc.admin.ch/ncsc/de/home.html)
+
 - Storbritannien: [Åtgärdsbedrägerier](http://www.actionfraud.police.uk/)
 
 - USA: [On Guard Online](http://www.onguardonline.gov/)
@@ -147,15 +149,15 @@ Du kan rapportera nätfiskemeddelanden som innehåller utpressningstrojaner på 
 
 - [NorskSon svarar på utpressningstrojaner med transparens](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [Identifiering av utpressningstrojaner och återställa filer i OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [Identifiering av utpressningstrojaner och återställning av filer i OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
-- [Microsoft Security Intelligence-rapport](https://www.microsoft.com/securityinsights/)
+- [Microsoft Säkerhetsinsikter Rapport](https://www.microsoft.com/securityinsights/)
 
-- [Aktivera eller inaktivera makron i Office-filer](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
+- [Aktivera eller inaktivera makron i Office filer](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [Rekommenderade inställningar för EOP och Microsoft Defender för Office 365-säkerhet](recommended-settings-for-eop-and-office365.md)
+- [Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet](recommended-settings-for-eop-and-office365.md)
 
-- [En värdig uppgradering: Nästa generationens säkerhet i Windows 10 bevisar sin motståndskraft mot utpressningstrojaner under 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+- [En värdig uppgradering: nästa generationens säkerhet på Windows 10 flexibelt mot utpressningstrojaner under 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
 - [Inte mas, Samas: Vad finns i den här utpressningstrojanens modus operandi?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
 

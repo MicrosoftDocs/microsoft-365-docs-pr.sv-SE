@@ -18,17 +18,17 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: I dataförlustskydd (DLP) i Säkerhetsefterlevnadscenter finns över 200 typer av känslig information som är färdiga att använda i &amp; DLP-principerna. Den här artikeln innehåller alla dessa typer av känslig information och visar vad en DLP-princip söker efter när den identifierar varje typ.
-ms.openlocfilehash: ff976389e75e96d0a018d7c5379e2831313388dc
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+description: Det finns 200 typer av känslig information som är färdiga att använda i DLP-principerna. Den här artikeln innehåller alla dessa typer av känslig information och visar vad en DLP-princip söker efter när den identifierar varje typ.
+ms.openlocfilehash: 4efa411f7cc34b4116cc418e328e5c3f7545f788
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730480"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789225"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitetsdefinitioner för typer av känslig information
 
-I dataförlustskydd (DLP) i efterlevnadscentret finns många typer av känslig information som är färdiga att använda i DLP-principerna. Den här artikeln innehåller alla dessa typer av känslig information och visar vad en DLP-princip söker efter när den identifierar varje typ. Mer information om typer av känslig information finns i [Typer av känslig information](sensitive-information-type-learn-about.md)
+I den här artikeln listas alla definitioner av enheter av typen Känslig information. Varje definition visar vad en DLP-princip söker efter för att identifiera varje typ. Mer information om typer av känslig information finns i [Typer av känslig information](sensitive-information-type-learn-about.md)
 
 ## <a name="aba-routing-number"></a>ABA-routningsnummer
 
@@ -147,11 +147,11 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 ### <a name="format"></a>Format
 
-Elva siffror med streck
+11 siffror med streck
 
 ### <a name="pattern"></a>Mönster
 
-Elva siffror med ett streck:
+11 siffror med ett streck:
 - två siffror i 20, 23, 24, 27, 30, 33 eller 34
 - ett bindestreck (-)
 - åtta siffror
@@ -230,7 +230,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 ### <a name="format"></a>Format
 
-Sex till tio siffror med eller utan ett bankkontornummer
+Sex till tio siffror med eller utan ett bankkontorsnummer
 
 ### <a name="pattern"></a>Mönster
 
@@ -573,7 +573,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 10–11 siffror:
 - Den första siffran i intervallet 2–6
-- Nio siffror är en kontrollsiffra
+- En nionde siffra är en kontrollsiffra
 - Tionde siffran är problemets siffra
 - Elfte siffran (valfritt) är det enskilda talet
 
@@ -622,8 +622,8 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 
 ### <a name="pattern"></a>Mönster
 
-- en bokstav (N, E, D, F, A, C, U, X) följt av 7 siffror eller
-- 2 bokstäver (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) följt av 7 siffror.
+- en bokstav (N, E, D, F, A, C, U, X) följt av sju siffror eller
+- Två bokstäver (PA, PB, PC, PD, PE, PF, PU, PW, PX, PZ) följt av sju siffror.
 
 ### <a name="checksum"></a>Kontrollsumma
 
@@ -2745,7 +2745,17 @@ Varierar per provins
 
 ### <a name="pattern"></a>Mönster
 
-Olika mönster täcker Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland/Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec och Saskatchewan
+Olika mönster som täcker:
+- Alberta
+- British Columbia
+- Manitoba
+- New Brunswick
+- Newfoundland/Labrador
+- Nova Scotia
+- Ontario
+- Prince Edward Island
+- Quebec
+- Saskatchewan
 
 ### <a name="checksum"></a>Kontrollsumma
 
@@ -3166,7 +3176,7 @@ Ja
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
 - Funktionen för Func_canadian_sin hittar innehåll som matchar mönstret.
-- Minst två av följande kombinationer:
+- Minst två av följande mönster:
     - Ett nyckelord från Keyword_sin hittas.
     - Ett nyckelord från Keyword_sin_collaborative hittas.
     - Funktionen Func_eu_date hittar ett datum i rätt datumformat.
@@ -3376,7 +3386,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 ### <a name="pattern"></a>Mönster
 
-Komplext och robust mönster som identifierar kort från alla större varumärken över hela världen, inklusive Visa, MasterCard, Discover Card, JCB, American Express, presentkort och betalkort.
+Identifierar kort från alla större varumärken över hela världen, inklusive Visa, MasterCard, Discover Card, JCB, American Express, presentkort och betalkort.
 
 ### <a name="checksum"></a>Kontrollsumma
 
@@ -3831,7 +3841,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 
 ## <a name="croatia-identity-card-number"></a>Kroatiens identitetskortsnummer
-Den här typen av känslig information ingår i den nationella identifieringstypen (EU). Det är tillgängligt som en fristående typ av känslig information.
+Den här enheten ingår i den typ av känsligt id-nummer som är känslig för EU. Det är tillgängligt som en fristående typ av känslig information.
 
 ### <a name="format"></a>Format
 
@@ -6332,7 +6342,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 ## <a name="finland-passport-number"></a>Finland passnummer
 
-Den här typen av känslig information är tillgänglig i typen KÄNSLIG informationstyp EU Passport Number och är tillgänglig som en fristående typ av känslig information.
+Den här entiteten är tillgänglig i typen känslig information av EU-passnummer och är tillgänglig som en fristående typ av känslig information.
 
 ### <a name="format"></a>Format
 kombination av nio bokstäver och siffror
@@ -6412,7 +6422,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 ## <a name="france-drivers-license-number"></a>Frankrikes körkortsnummer
 
-Den här typen av känslig information är tillgänglig i EU-drivrutinens licensnummerkänsliga informationstyp och är tillgänglig som en fristående typ av känslig information.
+Den här enheten är tillgänglig i EU-drivrutinens informationstyp Licensnummerkänslig information och är tillgänglig som en fristående typ av känslig information.
 
 ### <a name="format"></a>Format
 
@@ -6671,7 +6681,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 
    
 ## <a name="france-passport-number"></a>Frankrike passnummer
-Den här typen av känslig information är tillgänglig i typen Känslig information av EU-passnummer. Det är tillgängligt som en fristående typ av känslig information.
+Den här entiteten är tillgänglig i typen Känslig information av eu-passnummer. Det är också tillgängligt som en fristående typ av känslig information.
 
 ### <a name="format"></a>Format
 
@@ -6983,7 +6993,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 ## <a name="germany-drivers-license-number"></a>Tysklands körkortsnummer
 
-Den här typen av känslig information ingår i EU:s typ av licensnummer för känslig information. Det är tillgängligt som en fristående typ av känslig information.
+Den här typen av känslig information ingår i EU:s typ av licensnummer för känslig information. Det är också tillgängligt som en fristående typ av känslig information.
 
 ### <a name="format"></a>Format
 
@@ -7229,7 +7239,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 
 ## <a name="germany-passport-number"></a>Tyskland passnummer
 
-Den här typen av känslig information ingår i typen Känslig information i EU Passport Number och är tillgänglig som en fristående typ av känslig information.
+Den här entiteten ingår i typen KÄNSLIG information av EU-passnummer och är tillgänglig som en fristående typ av känslig information.
 
 ### <a name="format"></a>Format
 
@@ -7446,7 +7456,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 ## <a name="greece-drivers-license-number"></a>Greklands körkortsnummer
 
-Den här typen av känslig information ingår i EU-drivrutinens typ av licensnummerkänslig information och är tillgänglig som en fristående typ av känslig information.
+Den här enheten ingår i EU:s informationstyp Licensnummerkänslig information. Det är också tillgängligt som en fristående typ av känslig information.
 
 ### <a name="format"></a>Format
 
@@ -7750,12 +7760,12 @@ Den här typen av känslig information kan bara användas i:
 
 ### <a name="format"></a>Format
 
-Elva siffror utan blanksteg och avgränsare
+11 siffror utan blanksteg och avgränsare
   
 ### <a name="pattern"></a>Mönster
 
-- 6 siffror som födelsedatum YYMMDD
-- 4 siffror
+- Sex siffror som födelsedatumMMDD
+- Fyra siffror
 - en kontrollsiffra
   
 ### <a name="checksum"></a>Kontrollsumma
@@ -8134,7 +8144,7 @@ Den här typen av känslig information kan bara användas i:
 
 11 siffror:
   
-- En siffra som motsvarar kön (1-man, 2-kvinna, andra siffror är också möjliga för människor som föddes före 1900 eller för att människor med dubbel kön) 
+- En siffra som motsvarar kön, 1 för man, 2 för kvinna. Andra siffror är också möjliga för personer som föddes före 1900 eller för personer med dubbel detknubb.
 - Sex siffror som motsvarar födelsedatum (AMMDD)
 - Tre siffror som motsvarar ett serienummer
 - En kontrollsiffra
@@ -8634,7 +8644,66 @@ Mönster måste omfatta alla följande:
 
 Formatet skiljer sig åt mellan olika länder. IBAN-typen för känslig information omfattar dessa 60 länder:
 
-ad, ae, al, at, az, ba, be, bg, ch, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mt, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk , sm, tn, tr, vg
+- ad
+- ae
+- al
+- at
+- az
+- ba
+- bli
+- bg
+- han/hon
+- ch
+- cr
+- cy
+- cz
+- de
+- dk
+- gör du
+- ee
+- es
+- fi
+- fo
+- fr
+- gb
+- ge
+- gi
+- gl
+- gr
+- hr
+- hu
+- ie
+- il
+- är
+- det
+- kw
+- kz
+- lb
+- li
+- lt
+- lu
+- lv
+- mc
+- md
+- jag
+- mk
+- mr
+- mt
+- mu
+- nl
+- nej
+- pl
+- pt
+- ro
+- rs
+- sa
+- se
+- si
+- sk
+- sm
+- tn
+- tr
+- vg
 
 ### <a name="checksum"></a>Kontrollsumma
 
@@ -9259,7 +9328,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
    
 ## <a name="italy-drivers-license-number"></a>Italiens körkortsnummer
 
-Den här typen av känslig information ingår i EU-drivrutinens typ av licensnummerkänslig information och är tillgänglig som en fristående typ av känslig information.
+Den här typen av entitet ingår i EU-drivrutinens informationstyp Licensnummerkänslig information. Det är också tillgängligt som en fristående typ av känslig information.
 
 ### <a name="format"></a>Format
 
@@ -9447,7 +9516,7 @@ En kombination av 16 tecken och siffror:
 - Tre bokstäver som motsvarar den första, tredje och fjärde konsonanterna i förnamnet
 - två siffror som motsvarar de sista siffrorna i födelsedatumet
 - en bokstav som motsvarar bokstaven för födelsedatumet – bokstäver används i alfabetisk ordning, men bara bokstäverna A till E, H, L, M, P, R till T används (så januari är A och oktober är R)
-- Två siffror som motsvarar dagen i månaden – för att skilja på kön läggs 40 till för kvinnor
+- Två siffror som motsvarar dagen i månaden för att skilja mellan könen läggs 40 till vid födelsedatumet för kvinnor
 - fyra siffror som motsvarar den specifika areakoden för den valuta som personen är föds på (landskoder används för externa länder)
 - en paritetssiffra
     
@@ -11750,7 +11819,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 
 ### <a name="format"></a>Format
 
-eleven character alphanumeric pattern
+Alfanumeriskt mönster med 11 tecken
   
 ### <a name="pattern"></a>Mönster
 
@@ -11937,11 +12006,11 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 
 ### <a name="format"></a>Format
 
-tio siffror utan blanksteg och avgränsare
+10 siffror utan blanksteg och avgränsare
   
 ### <a name="pattern"></a>Mönster
 
-tio siffror
+10 siffror
   
 ### <a name="checksum"></a>Kontrollsumma
 
@@ -12676,7 +12745,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="pattern"></a>Mönster
 
 11 siffror:
-- Sex siffror i formatet DDMMYY som är födelsedatumet 
+- Sex siffror i formatet DDMMYY, som är födelsedatumet 
 - tresiffrigt enskilt nummer 
 - två kontrollsiffror
 
@@ -13032,7 +13101,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
    
 ## <a name="poland-passport-number"></a>Polen passnummer
-Den här typen av känslig information ingår i typen Känslig information i EU Passport Number. Det är tillgängligt som en fristående typ av känslig information.
+Den här typen av känslig information ingår i typen Känslig information i EU Passport Number. Det är också tillgängligt som en fristående typ av känslig information.
 
 ### <a name="format"></a>Format
 
@@ -14380,7 +14449,7 @@ Den här typen av känslig information kan bara användas i:
 
 ### <a name="format"></a>Format
 
-nio eller tio siffror som innehåller valfritt omslag
+nio eller 10 siffror som innehåller valfria omslag
   
 ### <a name="pattern"></a>Mönster
 
@@ -14726,7 +14795,7 @@ Den här typen av känslig information kan bara användas i:
   
 - sju siffror som motsvarar födelsedatumet (DDMMLLL) där "LLL" motsvarar de tre sista siffrorna i födelsedatumet 
 - två siffror som motsvarar födelsedatumet "50"
-- Tre siffror som motsvarar en kombination av kön och serienummer för personer som föds på samma dag (000-499 för man och 500-999 för kvinna)
+- Tre siffror som motsvarar en kombination av kön och serienummer för personer som föds på samma dag. 000–499 för man och 500–999 för kvinna.
 - en checksiffra
     
 ### <a name="checksum"></a>Kontrollsumma
@@ -15615,7 +15684,7 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
-(Tekniskt sett identifierar den här typen av känslig information dessa nyckelord med hjälp av ett reguljärt uttryck, inte en nyckelordslista.)
+Med den här typen av känslig information identifieras dessa nyckelord med hjälp av ett reguljärt uttryck, inte i en nyckelordslista.
 
 - Lösenord eller pwd följt av 0-2 blanksteg, ett likhetstecken (=), 0-2 blanksteg och en asterisk (*) -ELLER-
 - Lösenord eller pwd följt av:
@@ -15626,7 +15695,7 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(Tekniskt sett identifierar den här typen av känslig information dessa nyckelord med hjälp av ett reguljärt uttryck, inte en nyckelordslista.)
+Med den här typen av känslig information identifieras dessa nyckelord med hjälp av ett reguljärt uttryck, inte i en nyckelordslista.
 
 - contoso
 - fabrikam
@@ -15642,11 +15711,11 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 
 ### <a name="format"></a>Format
 
-tio siffror som innehåller ett bindestreck
+10 siffror som innehåller ett bindestreck
   
 ### <a name="pattern"></a>Mönster
 
-tio siffror som innehåller ett bindestreck:
+10 siffror som innehåller ett bindestreck:
   
 - sex siffror 
 - ett bindestreck
@@ -16726,7 +16795,7 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 - Födelsedatum 
    
 ## <a name="uk-national-insurance-number-nino"></a>Storbritannien national insurance number (NINO)
-Den här typen av känslig information ingår i den nationella identifieringstypen (EU). Det är tillgängligt som en fristående typ av känslig information.
+Den här typen av känslig information ingår i den nationella identifieringstypen (EU). Det är också tillgängligt som en fristående typ av känslig information.
 
 ### <a name="format"></a>Format
 

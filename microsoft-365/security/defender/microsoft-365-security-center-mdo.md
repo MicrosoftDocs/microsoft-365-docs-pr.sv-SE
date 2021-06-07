@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 62a917b36355335c8eb52d83caecdbba691f8175
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242138"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770984"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter
 
@@ -33,7 +33,33 @@ ms.locfileid: "52242138"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-Det förbättrade [Microsoft 365 Säkerhetscenter](./overview-security-center.md) i [https://security.microsoft.com](https://security.microsoft.com) kombinerar säkerhetsfunktioner från befintliga säkerhetsportaler i Microsoft, bland annat Microsoft Defender Säkerhetscenter och Säkerhets- och efterlevnadscenter för Office 365. Det här förbättrade centret hjälper säkerhetsteam att skydda organisationen från hot mer produktivt och effektivt.
+## <a name="quick-reference"></a>Snabbreferens
+
+I bilden och i tabellen nedan visas ändringar i navigeringen mellan Office 365 säkerhets- & och säkerhetscentret för Microsoft 365 säkerhetscenter.
+
+> [!div class="mx-imgBorder"]
+> ![Bild av vad som flyttades dit](../../media/mdo-m3d-security-center.png)
+
+<br>
+
+****
+
+|Office 365 Säkerhets- & efterlevnad|Microsoft 365 Säkerhetscenter|Microsoft 365 Efterlevnadscenter|Administrationscentret för Exchange|
+|---|---|---|---|
+|Varningar|E-post och samarbete|||
+|Klassificering||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage)||
+|Dataförlustskydd||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage)||
+|Hantering av arkivhandlingar||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage) ||
+|Informationsstyrning||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage)||
+|Hothantering|E-post och samarbete|||
+|E-postflöde|||Se [Exchange administrationscenter](https://admin.exchange.microsoft.com/#/)|
+|Datasekretess||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage)||
+|Söka|Söka|||
+|Rapporter|Rapport|||
+|Tjänstgranskning|Inställningar|||
+|
+
+Det förbättrade [Microsoft 365 Säkerhetscenter](./overview-security-center.md) i <https://security.microsoft.com> kombinerar säkerhetsfunktioner från befintliga säkerhetsportaler i Microsoft, bland annat Microsoft Defender Säkerhetscenter och Säkerhets- och efterlevnadscenter för Office 365. Det här förbättrade centret hjälper säkerhetsteam att skydda organisationen från hot mer produktivt och effektivt.
 
 Om du är bekant med Office 365 Säkerhets- och efterlevnadsportal (protection.office.com) beskriver den här artikeln några av ändringarna och förbättringarna i Microsoft 365 Säkerhetscenter.
 
@@ -69,7 +95,7 @@ Inga ändringar i dessa områden:
 Titta också i avsnittet **Relaterad information** längst ned i den här artikeln.
 
 > [!IMPORTANT]
-> Microsoft 365 säkerhetsportalen (https://security.microsoft.com) kombinerar säkerhetsfunktioner i https://securitycenter.windows.com och https://protection.office.com. Vad som visas beror dock på din prenumeration. Om du bara har Microsoft Defender för Office 365 Abonnemang 1 eller 2, som fristående prenumerationer, visas inte funktioner för säkerhet för slutpunkter och Defender för Office Abonnemang 1-kunder, ser inte objekt som hotanalys.
+> Säkerhetsportalen Microsoft 365 <https://security.microsoft.com> () kombinerar säkerhetsfunktioner i <https://securitycenter.windows.com> och <https://protection.office.com> . Vad som visas beror dock på din prenumeration. Om du bara har Microsoft Defender för Office 365 Abonnemang 1 eller 2, som fristående prenumerationer, visas inte funktioner för säkerhet för slutpunkter och Defender för Office Abonnemang 1-kunder, ser inte objekt som hotanalys.
 
 > [!TIP]
 > Alla Exchange Online Protection (EOP) ingår i säkerhetscentret i Microsoft 365, eftersom EOP är en av grundelementen i Defender för Office 365.
@@ -147,15 +173,15 @@ Vill du komma igång med att söka efter e-posthot med avancerad sökning? Prova
 
 Avsnittet [Komma igång](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) i artikeln [Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) har en logisk tidig konfigurationsdel som ser ut så här:
 
-1. Konfigurera allt med "anti" i namnet.
-   - anti-skadlig kod
-   - anti-phishing
-   - anti-spam
-2. Konfigurera allt med "säkra" i namnet.
-   - säkra länkar
+1. Konfigurera allt med "Anti" i namnet.
+   - Skydd mot skadlig programvara
+   - Skydd mot nätfiske
+   - Skräppostskydd
+2. Konfigurera allt med "Valv" i namnet.
+   - Säkra länkar
    - Säkra bifogade filer
-3. Försvara arbets belastningarna (t. ex. SharePoint Online, OneDrive och Teams)
-4. Skydda med Zero-Hour auto purge
+3. Försvara arbets belastningarna (t. ex. SharePoint Online, OneDrive och Teams).
+4. Skydda med automatisk rensning utan timme.
 
 Tillsammans med en [länk](../office-365-security/protect-against-threats.md) kan du hoppa direkt in och få igång konfigurationen dag 1.
 
@@ -181,7 +207,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="Sidan Avancerad jakt (under Jakt)med Fråga vald högst upp i frågepanelen och köra en Kusto-fråga för att fånga ZAP-åtgärder under de senaste 7 dagarna.":::
+:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="Sidan Avancerad sökning (under Sök) med Fråga markerad högst upp i frågepanelen och kör en Kusto-fråga för att fånga ZAP-åtgärder under de senaste 7 dagarna.":::
 
 Data från den här frågan visas i resultatpanelen under själva frågan. Resultaten innehåller information som ‘Enhetsnamn’, ‘KontoVisningsNamn’ och ‘ZapTid’ i en anpassningsbar resultatuppsättning. Resultat kan även exporteras för posterna. Om frågan är en du behöver igen väljer du **Spara** > **Spara som** och lägger till frågan i din lista med frågor, delade frågor eller communityfrågor.
 

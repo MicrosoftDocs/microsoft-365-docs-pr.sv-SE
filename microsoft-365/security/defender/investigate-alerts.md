@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: a6e11aea14a7b8d99c0098b68951790328ec593e
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689019"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782915"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Undersöka aviseringar i Microsoft 365 Defender
 
@@ -92,7 +92,7 @@ Aviseringskälla | Insnabbtecken
 Microsoft Defender för Office 365 | `fa{GUID}` <br> Exempel: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender för Endpoint | `da` eller `ed` för aviseringar om anpassad identifiering <br> 
 Microsoft Defender for Identity | `aa{GUID}` <br> Exempel: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Cloud App Security |`ca{GUID}` <br> Exempel: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> Exempel: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 
 

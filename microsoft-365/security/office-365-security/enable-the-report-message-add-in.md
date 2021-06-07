@@ -17,12 +17,12 @@ ms.collection:
 description: Läs om hur du aktiverar tilläggen Rapportmeddelande eller Rapport nätfiske för Outlook och Outlook på webben, för enskilda användare eller för hela organisationen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc54c5b74697ac41a1d4ff0818467dba662b31f5
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 25c4f7d67fd4fa876544a17df0f4bc1abfd7b3e7
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295825"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782939"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Aktivera rapportmeddelandet eller tilläggen för nätfiske
 
@@ -48,7 +48,7 @@ Tillägget Rapport nätfiske ger möjlighet att endast rapportera nätfiskemedde
 
 Om du är enskild användare kan du aktivera båda tilläggen själv.
 
-om du är global administratör eller Exchange Online-administratör och Exchange är konfigurerat till att använda OAuth-autentisering kan du aktivera tillägget Rapportmeddelande och tillägget Rapportfiske för organisationen. Båda tilläggen är nu tillgängliga via [centraliserad distribution.](../../admin/manage/centralized-deployment-of-add-ins.md)
+Om du är global administratör eller Exchange Online-administratör och Exchange har konfigurerats att använda OAuth-autentisering kan du aktivera tilläggen Rapportmeddelande och Rapportera nätfiske för organisationen. Båda tilläggen är nu tillgängliga via [centraliserad distribution.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 

@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/18/2020
+ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4408d5e788449c0d094008261f5e7db9bfe38758
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6ef9a2c34a88d7c9f5506c681088db9dc84cb0cc
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275114"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789033"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Konfigurera funktionerna i Microsoft Defender Antivirus
 
@@ -32,27 +32,24 @@ ms.locfileid: "52275114"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Du kan Microsoft Defender Antivirus med ett antal verktyg, bland annat:
+Du kan Microsoft Defender Antivirus med ett antal verktyg, till exempel:
 
-- Microsoft Intune
-- Microsoft Endpoint Configuration Manager
+- Microsoft Endpoint Manager (som omfattar Microsoft Intune och Microsoft Endpoint Configuration Manager)
 - Grupprincip
 - PowerShell-cmdlets
 - Windows Management Instrumentation (WMI)
 
 Du kan konfigurera följande breda kategorier av funktioner:
 
-- Molnbaserat skydd
-- Ständigt realtidsskydd, inklusive beteende, heuristiskt och maskininlärningsbaserat skydd
-- Hur slutanvändare interagerar med klienten i enskilda slutpunkter
+- Moln levererat skydd. Se [Moln levererat skydd och Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+ 
+- Ständigt realtidsskydd, inklusive beteende, heuristiskt och maskininlärningsbaserat skydd. Se [Konfigurera behavioral, heuristisk och realtidsskydd.](configure-protection-features-microsoft-defender-antivirus.md)
 
-I följande artiklar beskrivs hur du utför viktiga uppgifter när du konfigurerar Microsoft Defender Antivirus. Varje artikel innehåller instruktioner för det tillämpliga konfigurationsverktyget (eller verktygen).
+- Hur slutanvändare interagerar med klienten i enskilda slutpunkter. Se följande resurser:
+   
+   - [Hindra användare från att se eller interagera Microsoft Defender Antivirus användargränssnittet](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
-|Artikel  |Beskrivning  |
-|---------|---------|
-|[Använd Microsofts molnbaserade Microsoft Defender Antivirus skydd](cloud-protection-microsoft-defender-antivirus.md)     | Använd moln levererat skydd för avancerad, snabb och robust antivirusidentifiering.        |
-|[Konfigurera skydd för beteende, heuristisk och realtid](configure-protection-features-microsoft-defender-antivirus.md)     |Aktivera funktionsbaserat, heuristiskt och realtidsskydd för antivirus.         |
-|[Konfigurera slutanvändares interaktion med Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) | Konfigurera hur slutanvändarna i organisationen interagerar med Microsoft Defender Antivirus, vilka meddelanden de ser och om de kan åsidosätta inställningar. |
+   - [Förhindra eller tillåta användare att lokalt ändra Microsoft Defender Antivirus principinställningar](configure-local-policy-overrides-microsoft-defender-antivirus.md) 
 
 > [!TIP]
-> Du kan också läsa avsnittet [Referensavsnitt för hanterings- och konfigurationsverktyg,](configuration-management-reference-microsoft-defender-antivirus.md) där det finns en översikt över de olika verktygen samt länkar till ytterligare hjälp.
+> Läs [Referensavsnitt om hanterings- och konfigurationsverktyg.](configuration-management-reference-microsoft-defender-antivirus.md)

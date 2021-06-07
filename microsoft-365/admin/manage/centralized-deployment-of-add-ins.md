@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Avgör om klientorganisationen och användarna uppfyller kraven, så att du kan använda centraliserad distribution för Office tillägg.
-ms.openlocfilehash: 531281eba6accfb2e1ffdab1e662a03b077869bd
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 63775ed6bab2d595ae87085e1607be5818b355e2
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779764"
+ms.locfileid: "52782495"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Avgöra om centraliserad distribution av tillägg fungerar för din organisation
 
@@ -121,7 +121,7 @@ När verktyget körts klart har en utdatafil i kommaavgränsat format (.csv) gen
 - Postlåda som stöds - om de finns på en OAuth-aktiverad postlåda
 
 > [!NOTE]
-> Multifaktorautentisering stöds inte när du använder PowerShell-modulen för central distribution.
+> Multifaktorautentisering stöds inte när du använder PowerShell-modulen för central distribution. Modulen fungerar bara med grundläggande autentisering.
   
 ## <a name="user-and-group-assignments"></a>Användar- och grupptilldelningar
 

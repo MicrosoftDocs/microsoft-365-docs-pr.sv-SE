@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee2a5e1815dd552753ac7f3dee30df11ac4332e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.custom: api
+ms.openlocfilehash: 456507533265bc085adc1008f3264e123569a6ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076609"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770775"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Hämta aviseringar från MSSP-kundklientorganisationen
 
@@ -48,7 +49,7 @@ Steg 1: Skapa ett program från tredje part
 
 Steg 2: Få åtkomst och uppdatera token från kundens klientorganisation
  
-Steg 3: Tillåt ditt program i Microsoft Defender Säkerhetscenter
+Steg 3: tillåta ditt program på Microsoft Defender Säkerhetscenter
  
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>Steg 1: Skapa ett program i Azure Active Directory (Azure AD)
  
@@ -56,7 +57,7 @@ Du måste skapa ett program och ge det behörighet att hämta aviseringar från 
 
 1. Logga in på [Azure AD-portalen](https://aad.portal.azure.com/).
 
-2. Välj **Azure Active**  >  **Directory-appregistreringar**.
+2. Välj **Azure Active Directory**  >  **Appregistreringar**.
  
 3. Klicka **på Ny registrering**.
 
@@ -85,7 +86,7 @@ Du måste skapa ett program och ge det behörighet att hämta aviseringar från 
  
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>Steg 2: Få åtkomst och uppdatera token från kundens klientorganisation
-I det här avsnittet får du veta hur du använder ett PowerShell-skript för att hämta tokens från kundens klientorganisation. Det här skriptet använder programmet från föregående steg för att få åtkomst och uppdatera tokens med OAuth-auktoriseringskodflödet.
+I det här avsnittet får du veta hur du använder ett PowerShell-skript för att hämta tokens från kundens klientorganisation. Det här skriptet använder programmet från föregående steg för att få åtkomst- och uppdateringstoken med OAuth-auktoriseringskoden för Flow.
 
 När du har lämnat in dina autentiseringsuppgifter måste du ge medgivande till programmet så att programmet etableras i kundens klientorganisation.
 
@@ -159,14 +160,14 @@ När du har lämnat in dina autentiseringsuppgifter måste du ge medgivande till
 
 8. I PowerShell-fönstret får du en åtkomsttoken och en uppdateringstoken. Spara uppdateringstoken för att konfigurera SIEM-kopplingen. 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>Steg 3: Tillåt ditt program i Microsoft Defender Säkerhetscenter
-Du måste tillåta programmet som du skapade i Microsoft Defender Säkerhetscenter.
+### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>Steg 3: Tillåt ditt program på Microsoft Defender Säkerhetscenter
+Du måste tillåta det program som du skapade i Microsoft Defender Säkerhetscenter.
  
 Du måste ha behörigheten **Hantera portalsysteminställningar** för att tillåta programmet. Annars måste du begära att kunden tillåter programmet åt dig.
 
 1. Gå till `https://securitycenter.windows.com?tid=<customer_tenant_id>` (ersätt \<customer_tenant_id\> med kundens klientorganisations-ID.
 
-2. Klicka **på Inställningar**  >  **SIEM.** 
+2. Klicka **Inställningar**  >  **SIEM**. 
 
 3. Välj fliken **MSSP.**
 
@@ -187,6 +188,6 @@ Information om hur du hämtar aviseringar med HJÄLP av REST API finns i [Hämta
 
 
 ## <a name="see-also"></a>Se även
-- [Bevilja MSSP-åtkomst till portalen](grant-mssp-access.md)
-- [Få åtkomst till kundportalen för MSSP](access-mssp-portal.md)
-- [Konfigurera aviseringsmeddelanden](configure-mssp-notifications.md)
+- [Bevilja MSSP åtkomst till portalen](grant-mssp-access.md)
+- [Få åtkomst till MSSP-kundportalen](access-mssp-portal.md)
+- [Konfigurera varningsaviseringar](configure-mssp-notifications.md)

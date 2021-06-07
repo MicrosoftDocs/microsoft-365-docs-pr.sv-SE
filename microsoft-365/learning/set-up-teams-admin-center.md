@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/24/2021
+ms.date: ''
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,68 +15,129 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Lär dig hur du konfigurerar Microsoft Viva Learning (förhandsversion) Teams administrationscentret.
-ms.openlocfilehash: a96a2f3ecf7d4e1ee0c136ae155868218f08aaf4
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 860f16bee7d93f2212072c5d738263402704272f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636140"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789237"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Konfigurera Microsoft Viva Learning (förhandsversion) i Teams administrationscenter
 
 > [!NOTE]
 > Informationen i den här artikeln gäller en förhandsversion av en produkt som kan komma att ändras väsentligt innan den släpps till kommersiellt bruk. 
 
-Administratören Teams viva Learning (förhandsversion) och tillämpar behörighetsprinciper via Teams administrationscenter.
+Administratören Teams utföra vissa steg för att aktivera Viva Learning (förhandsversion) för sina användare i klientorganisationen. De här stegen varierar beroende på hur klientorganisationen är aktiverad: [*Offentlig förhandsversion*](set-up-teams-admin-center.md#public-preview-tenants) eller [ *Privat förhandsversion* (eller betaversion).](set-up-teams-admin-center.md#private-preview-tenants)
 
-1. För Viva Learning (förhandsversion) måste du först ställa in uppdateringsprincipen i Teams. Mer information finns i Microsoft Teams [förhandsgranskning.](/MicrosoftTeams/public-preview-doc-updates)
+## <a name="public-preview-tenants"></a>Offentliga förhandsversionsklienter
 
-    1. Logga in Teams administrationscentret.
+### <a name="administrator-steps-for-public-preview-tenants"></a>Administratörssteg för offentliga förhandsversionsklienter
 
-    2. Välj **Teams**  >  **Uppdatera principer**.
+Eftersom Viva Learning (förhandsversion) ännu inte är tillgängligt i allmänhet krävs vissa steg för att aktivera funktionerna och ange behörigheter för specifika användare eller grupper. 
 
-    3. Välj **Lägg till**. 
+1. Aktivera funktioner för offentlig förhandsversion för Viva Learning -användare (förhandsversion).
 
-    4. Namnge uppdateringsprincipen, lägg till en princip och aktivera Visa **förhandsgranskningsfunktioner.**
+    a. Ändra Teams för att aktivera funktioner för offentlig förhandsgranskning. Se [Microsoft Teams offentlig förhandsversion](/microsoftteams/public-preview-doc-updates).
 
-2. Administratören måste meddela användarna om principuppdateringen så att de flyttar sin version till den offentliga förhandsversionen för Teams. 
+    b. Aktivera uppdateringsprincipen för användare eller grupper som ska testa Viva Learning (förhandsversion). Se [Tilldela principer till användare och grupper.](/microsoftteams/assign-policies-users-and-groups)
 
-    1. Användarna måste välja sin profilbild > **om**  >  **offentlig förhandsversion**.
+2. Ändra appbehörighetsprincipen för Viva Learning-användare (förhandsversion).
+
+    a. Såvida den inte ingår i den globala principen ska du tillåta alla Microsoft-appar i appens behörighetsprincip. Se [Hantera appbehörighetsprinciper i Microsoft Teams](/microsoftteams/teams-app-permission-policies). 
+
+    b. Aktivera appens behörighetsprincip för användare eller grupper som ska utföra Viva Learning-testning (förhandsversion). Se [Tilldela principer till användare och grupper.](/microsoftteams/assign-policies-users-and-groups)
+
+3.  Meddela användare som kommer att testa Viva Learning (förhandsversion) för att [byta sin build-klient till offentlig förhandsversion för Teams](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants).
+
+> [!IMPORTANT]
+> För offentliga förhandsversionsklienter visas Viva Learning (förhandsversion) inte i Hanterade appar i Teams förrän den slutgiltiga produktlansen.  Aktiverade användare av offentlig förhandsversion kan hitta Viva Learning (förhandsversion) i appbutiken Teams och använda den, när rätt principer och behörigheter har angetts.
+
+### <a name="user-steps-for-public-preview-tenants"></a>Användarsteg för offentliga förhandsversionsklienter
+
+Användare som har aktiverats för test av den offentliga förhandsversionen – genom att aktivera de principer som tidigare beskrivits [–](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants) måste växla till offentlig förhandsgranskning i Teams klient. [](/microsoftteams/public-preview-doc-updates#enable-public-preview)
+
+1. Användarna måste välja sin profilbild > **om**  >  **offentlig förhandsversion**.
    
-        ![Övre navigeringsfältet i Teams visar användarens profil](../media/learning/learning-app-select-profile-teams.png)
+    ![Övre navigeringsfältet i Teams visar användarens profil](../media/learning/learning-app-select-profile-teams.png)
     
-    2. Användarna måste godkänna **villkoren för** den offentliga förhandsversionen.
+2. Användarna måste godkänna villkoren för den offentliga förhandsversionen.
 
-        ![Växla till offentlig förhandsversion](../media/learning/learning-app-switch-to-public-preview.png)
+    ![Växla till offentlig förhandsversion](../media/learning/learning-app-switch-to-public-preview.png)
  
-3. För organisationer som har restriktiva principer och behöver aktivera Viva Learning (förhandsversion) följer du processen i nästa avsnitt.
+3. Användare kan nu hitta Viva Learning (förhandsversion) i Teams app store och börja använda den.
 
-## <a name="manage-settings-for-viva-learning-preview"></a>Hantera inställningar för Viva Learning (förhandsversion)
+## <a name="private-preview-tenants"></a>Privata förhandsversionsklienter
 
-Du måste vara administratör i administrationscentret Teams utföra de här uppgifterna.
+### <a name="administrator-steps-for-private-preview-or-beta-tenants"></a>Administratörssteg för privata förhandsversionsklienter (eller betaklienter)
 
-Gör Viva Learning (förhandsversion) tillgängligt för användare i organisationen genom att följa de här stegen:
+Det finns inga ytterligare principer som behöver aktiveras för klientorganisationen av den privata förhandsversionen. Viva Learning (förhandsversion) måste emellertid göras tillgängligt för användare i organisationen.
 
 1. I det vänstra navigeringsfältet i Teams administrationscenter går du till Teams   >  **Hantera appar**.
 
    ![Vänster navigering i Teams administrationscenter som visar Teams program och avsnittet Hantera appar.](../media/learning/learning-app-teams-manage-apps-nav.png)
 
-2. På sidan **Hantera appar** skriver du *Viva learning* i sökrutan och väljer sedan **Viva Learning (förhandsversion).**
+2. På sidan **Hantera appar** skriver du *Viva Learning* i sökrutan och väljer sedan **Viva Learning (förhandsversion).**
 
    ![Sidan Hantera appar i Teams administrationscenter som visar sökrutan.](../media/learning/learning-app-teams-manage-apps-page.png)
 
-3. På **sidan Viva Learning (förhandsversion):**
-
-   1. Under **Status** väljer du **Tillåts** att aktivera Viva Learning (förhandsversion).
-
-   2. På fliken **Inställningar,** under **Appinställningar,** går du till administrationscentret för Microsoft 365 för [att konfigurera källor för utbildningsinnehåll.](content-sources-365-admin-center.md)
+3. På sidan **Viva Learning (förhandsversion)** under **Status** väljer du **Tillåts** att aktivera Viva Learning (förhandsversion).
 
    ![Sidan Utbildning i Teams visar avsnittet Status och Appinställningar.](../media/learning/learning-app-teams-learning-page.png)
 
-4. När **du har hanterat appinställningarna** går du till Behörighetsprinciper och Konfigurationsprinciper för att ge behörighet till anställda som bör ha tillgång till Viva Learning (förhandsversion) som en del av organisationens deltagande i förhandsgranskningen.  
+
+<!---
+The Teams admin installs Viva Learning (Preview) and applies permission policies through the Teams admin center.
+
+1. For Viva Learning (Preview), you must first set the Update policy in Teams. For more information, see [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates).
+
+    1. Sign in to the Teams admin center.
+
+    2. Select **Teams** > **Update policies**.
+
+    3. Select **Add**. 
+
+    4. Name the update policy, add a policy, and turn on **Show preview features**.
+
+2. The admin must notify users of the policy update so that they move their build into the Public Preview for Teams. 
+
+    1. Users must select their profile image > **About** > **Public Preview**.
+   
+        ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
+    
+    2. Users must accept the **Public preview** terms and conditions.
+
+        ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
+ 
+3. For organizations that have restrictive policies and need to enable Viva Learning (Preview), follow the process in the next section.
+
+## Manage settings for Viva Learning (Preview)
+
+You must be an administrator in the Teams admin center to perform these tasks.
+
+To make Viva Learning (Preview) available for users in your organization, follow these steps:
+
+1. In the left navigation of the Teams admin center, go to **Teams apps** > **Manage apps**.
+
+   ![Left navigation in the Teams admin center showing Teams apps and Manage apps section.](../media/learning/learning-app-teams-manage-apps-nav.png)
+
+2. On the **Manage apps** page, in the search box, type *Viva learning*, and then select **Viva Learning (Preview)**.
+
+   ![Manage apps page in the Teams admin center showing the search box.](../media/learning/learning-app-teams-manage-apps-page.png)
+
+3. On the **Viva Learning (Preview)** page:
+
+   1. Under **Status**, select **Allowed** to turn on Viva Learning (Preview).
+
+   2. On the **Settings** tab, under **App settings**, go to the Microsoft 365 admin center to [configure learning content sources](content-sources-365-admin-center.md).
+
+   ![Learning page in the Teams admin center showing Status and App settings section.](../media/learning/learning-app-teams-learning-page.png)
+
+4. After **Manage app** settings, go to **Permission policies** and **Setup policies** to grant permission to employees who should have access to Viva Learning (Preview) as part of your organization's participation in the preview.
 
 > [!NOTE]
->  Om din organisation har Ring 4.0 som en del av Teams TAP100-programmet kan du behöva aktivera godkända användare i Ring 3.0 för att få åtkomst till Viva Learning (förhandsversion). <br><br>Som en del av förhandsversionen släpps Viva Learning (förhandsversion) i Ring 3.0. Om din organisation har Ring 4.0 ser du inte Viva Learning (förhandsversion) på **sidan Hantera** appar. Om du vill testa appen måste du skapa en behörighetsprincip för anpassade appar, ange Tillåt alla appar och tilldela den till Ring 3.0-godkända användare. <br><br>   ![TAP-AppsPermission-Plcy-sidan med Tillåt alla appar markerade.](../media/learning/learning-app-tap-appspermission-plcy.png)
+>  If your organization is in Ring 4.0 as part of Teams TAP100 program, you might need to enable approved users in Ring 3.0 to access Viva Learning (Preview). <br><br>As part of the preview, Viva Learning (Preview) is released in Ring 3.0. If your organization is in Ring 4.0, you won’t see Viva Learning (Preview) on the **Manage apps** page. To test the app, you need to create a custom apps permission policy, set it to **Allow all apps**, and assign it to Ring 3.0 approved users. <br><br>   ![TAP-AppsPermission-Plcy page showing Allow all apps selected.](../media/learning/learning-app-tap-appspermission-plcy.png)
+
+--->
 
 ## <a name="next-step"></a>Nästa steg
 

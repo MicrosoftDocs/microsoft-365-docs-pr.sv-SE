@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams chattar och kanaler har stöd för DLP-principer (Data Loss Prevention).
-ms.openlocfilehash: e55bfa34b2495465f573bcede3ebda2308dbbbbc
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6467ae7fdfc9c8636bd306efde5cb89c100e5e6c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583394"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782567"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Skydd mot dataförlust och Microsoft Teams
 
@@ -58,17 +58,14 @@ DLP-skydd tillämpas olika på Teams enheter.
 |Användarkonton/grupper/lista  |Teams Entitet |DLP-skydd tillgängligt|
 |---------|---------|---------|
 |enskilda användarkonton     |1:1/n chattar         |ja         |
-|     |allmänna chattar         |Nej         |
-|     |delade kanaler         |Nej         |
+|     |allmänna chattar         |nej         |
 |     |privata kanaler         |ja         |
 |säkerhetsgrupper/distributionslistor  | 1:1/n chattar         |ja         |
-|     |allmänna chattar         |Nej         |
-|     |delade kanaler         |Nej      |
+|     |allmänna chattar         |nej         |
 |     |privata kanaler         |ja        |
-|Microsoft 365 grupp    |1:1/n chattar          |Nej         |
+|Microsoft 365 grupp    |1:1/n chattar          |nej         |
 |     |allmänna chattar          |ja        |
-|     |delade kanaler|ja |
-|     |privata kanaler|Nej| 
+|     |privata kanaler|nej| 
 
 
 ## <a name="policy-tips-help-educate-users"></a>Principtips hjälper till att utbilda användare

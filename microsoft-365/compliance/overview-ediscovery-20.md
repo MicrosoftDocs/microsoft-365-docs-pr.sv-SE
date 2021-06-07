@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 description: Läs mer om Advanced eDiscovery lösning i Microsoft 365. Den här artikeln innehåller en översikt över Advanced eDiscovery i Microsoft 365, ett verktyg som hjälper dig att hantera interna och externa undersökningar. Dessutom ramar det till affärsorsaker till att Advanced eDiscovery att hantera juridiska undersökningar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16d18d04c0bb45f0a9328dcebae866c16a575812
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ec5ea7b32abb03edd31ab69abc7b8d3044b1d353
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "52162735"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782795"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Översikt över Microsoft 365 Advanced eDiscovery
 
-The Advanced eDiscovery solution in Microsoft 365 builds on the existing Microsoft eDiscovery and analytics capabilities. Advanced eDiscovery ett end-to-end-arbetsflöde för att bevara, samla in, analysera, granska, analysera och exportera innehåll som svarar på organisationens interna och externa undersökningar. Det gör också att juridiska grupper kan hantera hela arbetsflödet för aviseringar om juridiska frågor och kommunicera med dokumenter som är inblandade i ett ärende.
+The Advanced eDiscovery solution in Microsoft 365 builds on the existing Microsoft eDiscovery and analytics capabilities. Advanced eDiscovery ett end-to-end-arbetsflöde för att bevara, samla in, analysera, granska och exportera innehåll som svarar på organisationens interna och externa undersökningar. Det gör också att juridiska grupper kan hantera hela arbetsflödet för aviseringar om juridiska frågor och kommunicera med dokumenter som är inblandade i ett ärende.
 
 ## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery funktioner
 

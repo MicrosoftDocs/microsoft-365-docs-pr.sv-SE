@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6ef1d3dbc111e5d10bf4d3c42dfd08e5e9d63e3
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: c785dbb759afe77b14f41985b9f451a4ec52e29f
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730645"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778239"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender för utvärderingslabb med slutpunkt
 
@@ -118,17 +118,17 @@ Enheten introduceras automatiskt i din klientorganisation med de rekommenderade 
 
 Följande säkerhetskomponenter är förkonfigurerade i testenheterna:
 
-- [Minskning av attackytan](attack-surface-reduction.md)
-- [Blockera vid första synen](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [Kontrollerad mappåtkomst](controlled-folders.md)
-- [Exploateringsskydd](enable-exploit-protection.md)
-- [Nätverksskydd](network-protection.md)
-- [Potentiellt oönskad identifiering av program](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [Moln levererat skydd](cloud-protection-microsoft-defender-antivirus.md)
-- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+- [Minskning av attackytan](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [Blockera vid första synen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [Kontrollerad mappåtkomst](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [Exploateringsskydd](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [Nätverksskydd](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
+- [Potentiellt oönskad identifiering av program](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [Moln levererat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender Antivirus kommer att vara aktiverat (inte i granskningsläge). Om Microsoft Defender Antivirus hindrar dig från att köra din simulering kan du inaktivera realtidsskydd på enheten via Windows-säkerhet. Mer information finns i [Konfigurera alltid-på-skydd](configure-real-time-protection-microsoft-defender-antivirus.md).
+> Microsoft Defender Antivirus kommer att vara aktiverat (inte i granskningsläge). Om Microsoft Defender Antivirus hindrar dig från att köra din simulering kan du inaktivera realtidsskydd på enheten via Windows-säkerhet. Mer information finns i [Konfigurera alltid-på-skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
 Inställningar för automatisk undersökning beror på klientorganisationsinställningarna. Den konfigureras som standard semi-automatiserad. Mer information finns i [Översikt över automatiserade undersökningar.](automated-investigations.md)
 
@@ -190,7 +190,7 @@ Du kan simulera attackscenarier med hjälp av:
 - [Attackscenarierna "Gör det själv"](https://securitycenter.windows.com/tutorials)
 - Hotbild
 
-Du kan också använda [Avancerad sökning för](advanced-hunting-overview.md) att söka efter data och [hotanalyser för](threat-analytics.md) att visa rapporter om nya hot.
+Du kan också använda [Avancerad sökning för](advanced-hunting-query-language.md) att söka efter data och [hotanalyser för](threat-analytics.md) att visa rapporter om nya hot.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Gör det själv-attackscenarier
 Om du letar efter en färdig simulering kan du använda våra ["Gör det själv"-attackscenarier](https://securitycenter.windows.com/tutorials). De här skripten är säkra, har dokumenterats och är enkla att använda. De här scenarierna återspeglar Defender för Slutpunkt-funktioner och går igenom undersökningsupplevelsen.

@@ -18,12 +18,12 @@ ms.collection:
 description: Lär dig hur du konfigurerar DMARC (Domain-based Message Authentication, Reporting, and Conformance) för att validera meddelanden som skickats från din organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9beada6e0fb61e503392b0bd379f02bd1c025464
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a92c6ec50fb60d15e027a11163aad6b2186e5304
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538681"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779909"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Använda DMARC för att validera e-post
 
@@ -178,7 +178,7 @@ Exempel:
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-När du har skapat posten måste du uppdatera posten hos domänregistratorn. Instruktioner för hur du lägger till DMARC TXT-posten till dina DNS-poster för Microsoft 365 finns i [Skapa DNS-poster för Microsoft 365 när du hanterar dina DNS-poster](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+När du har skapat posten måste du uppdatera posten hos domänregistratorn.
 
 ## <a name="dmarc-mail-public-preview-feature"></a>DMARC-e-post (Allmänt tillgänglig förhandsversionsfunktion)
 > [!CAUTION]
@@ -256,7 +256,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 Alla, eller de flesta, e-postmeddelanden dirigeras först till mail.contoso.com eftersom det är den primära MX-posten och sedan dirigeras e-post till EOP. I vissa fall kanske du inte listar EOP som en MX-post alls och använder bara anslutningsprogram för att dirigera e-post. EOP måste inte vara den första posten för att DMARC-validering ska göras. Den säkerställer bara valideringen, eftersom vi inte kan vara säkra på att alla lokala servrar/icke-O365-servrar kommer att göra DMARC-kontroller.  DMARC kan tillämpas för en kunds domän (inte server) när du konfigurerar DMARC TXT-posten men det är upp till den mottagande servern att faktiskt göra tillämpningen.  Om du konfigurerar EOP som mottagande server gör EOP DMARC-tillämpningen.
 
-![En felsökningsbild för DMARC, av Daniel Mande](../../media/Tp_DMARCTroublehoot.png)
+:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="En felsökningsbild för DMARC, av Daniel Mande" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
 ## <a name="for-more-information"></a>Mer information
 

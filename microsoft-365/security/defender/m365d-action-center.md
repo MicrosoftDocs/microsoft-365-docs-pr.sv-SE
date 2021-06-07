@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 7bea9a1632e7a9ed9d394c2c411123d0601a9397
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: df3ea2d4df0b7a5bedbbabf19e97d4fddc4c2646
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274586"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782987"
 ---
 # <a name="the-action-center"></a>Åtgärdscentret
 
@@ -41,7 +41,7 @@ ms.locfileid: "52274586"
 - Visa en granskningslogg över redan godkända åtgärdsåtgärder.
 - Granska slutförda åtgärder.
 
-Eftersom Åtgärdscenter ger en omfattande vy av Microsoft 365 Defender på jobbet, kan ditt säkerhetsåtgärdsteam arbeta effektivare.
+Eftersom Åtgärdscenter ger en omfattande vy av Microsoft 365 Defender på arbetet, kan ditt säkerhetsåtgärdsteam arbeta effektivare.
 
 ## <a name="the-unified-action-center"></a>Det enhetliga åtgärdscentret
 
@@ -51,8 +51,8 @@ I det enhetliga åtgärdscentret () visas väntande och slutförda åtgärdsåtg
 
 Till exempel: 
 
-- Om du tidigare har använt Säkerhets- och efterlevnadscenter för Office 365 & ( ) kan du prova det enhetliga åtgärdscentret i [https://protection.office.com](https://protection.office.com) Microsoft 365 säkerhetscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Om du använder Åtgärdscenter i Microsoft Defender Säkerhetscenter () kan du prova det enhetliga åtgärdscentret i Säkerhetscenter för [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Microsoft 365 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ().
+- Om du tidigare har använt säkerhets- Office 365 säkerhets- & ( ) kan du prova det enhetliga åtgärdscentret i Microsoft 365 [https://protection.office.com](https://protection.office.com) säkerhetscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Om du använder Åtgärdscenter i Microsoft Defender Säkerhetscenter () kan du prova det enhetliga [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) åtgärdscentret i Microsoft 365 Säkerhetscenter [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ().
 - Om du redan använder Microsoft 365 Säkerhetscenter ( ) ser du [https://security.microsoft.com](https://security.microsoft.com) flera förbättringar i Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 
 I det enhetliga åtgärdscentret samlas åtgärdsåtgärder i Defender för Endpoint och Defender för Office 365. Den definierar ett gemensamt språk för alla åtgärder och ger en enhetlig undersökningsupplevelse. Ditt säkerhetsteam har en "enda fönsterruta av glas" för att visa och hantera åtgärder.  
@@ -103,7 +103,7 @@ Alla åtgärder, oavsett om de väntar på godkännande eller redan har vidtagit
 - Kör antivirusgenomsökning 
 - Stoppa och sätta i karantän 
 
-Förutom åtgärder som vidtas automatiskt som ett resultat [](m365d-autoir.md)av automatiska undersökningar följer åtgärdscentret även åtgärder som säkerhetsgruppen har vidtagit för att hantera identifierade hot och åtgärder som har vidtagits som ett resultat av skyddsfunktioner för hot i Microsoft 365 Defender. Mer information om automatiska och manuella åtgärdsåtgärder finns [i Åtgärder.](m365d-remediation-actions.md)
+Förutom åtgärder som vidtas automatiskt genom automatiska undersökningar [](m365d-autoir.md)följer åtgärdscentret även åtgärder som säkerhetsgruppen har vidtagit för att hantera identifierade hot och åtgärder som har vidtagits som ett resultat av skyddsfunktioner i Microsoft 365 Defender. Mer information om automatiska och manuella åtgärdsåtgärder finns [i Åtgärder.](m365d-remediation-actions.md)
 
 ## <a name="viewing-action-source-details"></a>Visa information om åtgärdskälla
 
@@ -126,8 +126,8 @@ Om du vill utföra uppgifter, till exempel godkänna eller avvisa väntande åtg
 
 |Åtgärdsåtgärd |Roller och behörigheter som krävs |
 |--|----|
-|Microsoft Defender för åtgärd av slutpunkt (enheter) |**Säkerhetsadministratörsroll** som tilldelats i antingen Azure Active Directory (Azure AD) ( ) eller administrationscentret för [https://portal.azure.com](https://portal.azure.com) Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- eller ---<br/>**Rollen Aktiva åtgärdsåtgärder som** tilldelats i Microsoft Defender för Slutpunkt <br/> <br/> Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Skapa och hantera roller för rollbaserad åtkomstkontroll (Microsoft Defender för slutpunkt)](../defender-endpoint/user-roles.md)  |
-|Åtgärder i Microsoft Defender för Office 365 (Office-innehåll och e-post)  |**Säkerhetsadministratörsroll** som har tilldelats i antingen Azure AD ( [https://portal.azure.com](https://portal.azure.com) ) eller administrationscentret för Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- och --- <br/>**Rollen Sök och rensning** i Säkerhets- och & [https://protection.office.com](https://protection.office.com) () <br/><br/>**VIKTIGT:** Om du  bara har tilldelats rollen Säkerhetsadministratör i Efterlevnadscenter för Office 365 & ( ) kan du inte komma åt åtgärdscenter eller [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender-funktioner. Du måste ha rollen **Säkerhetsadministratör** tilldelad i Azure AD eller administrationscentret för Microsoft 365. <br/><br/>Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Behörigheter i Säkerhets- & Säkerhets- och efterlevnadscenter](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender för åtgärd av slutpunkt (enheter) |**Säkerhetsadministratörsroll** som tilldelats i Azure Active Directory (Azure AD) ( [https://portal.azure.com](https://portal.azure.com) ) eller administrationscentret Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- eller ---<br/>**Rollen Aktiva åtgärdsåtgärder som** tilldelats i Microsoft Defender för Slutpunkt <br/> <br/> Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Skapa och hantera roller för rollbaserad åtkomstkontroll (Microsoft Defender för slutpunkt)](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender för Office 365 (för Office och e-post)  |**Säkerhetsadministratörsroll** som har tilldelats i antingen Azure AD ( [https://portal.azure.com](https://portal.azure.com) ) Microsoft 365 administrationscentret [https://admin.microsoft.com](https://admin.microsoft.com) ()<br/>--- och --- <br/>**Rollen Sök och rensning** i Säkerhets- och & [https://protection.office.com](https://protection.office.com) () <br/><br/>**VIKTIGT:** Om du  bara har tilldelats rollen säkerhetsadministratör i kompatibilitetscentret för Office 365 & ( ) kan du inte komma åt Åtgärdscenter eller [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. Du måste ha rollen **Säkerhetsadministratör** tilldelad i Azure AD Microsoft 365 administrationscentret. <br/><br/>Mer information finns i följande resurser: <br/>- [Administratörsrollbehörigheter i Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Behörigheter i Säkerhets- & Säkerhets- och efterlevnadscenter](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Användare som har rollen **Global administratör** tilldelad i Azure AD kan godkänna eller avvisa eventuella väntande åtgärder i Åtgärdscenter. Men det bästa är att organisationen bör begränsa antalet personer som har tilldelats **rollen global** administratör. Vi rekommenderar att du **använder rollerna**  **Säkerhetsadministratör,** Aktiva åtgärder och Sök och rensning som visas i föregående tabell för behörigheter i Åtgärdscenter.

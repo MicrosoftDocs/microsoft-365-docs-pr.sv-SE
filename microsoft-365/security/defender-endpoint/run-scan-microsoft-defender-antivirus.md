@@ -11,21 +11,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 124ebde48c008743a486a4454e7772fd93f9eca7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fdca059633ab0993e07b5b1be0c6f33cfe327fcf
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275366"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789177"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Konfigurera och kör genomsökningar på begäran för Microsoft Defender Antivirus
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
@@ -40,14 +38,12 @@ Snabbsökning söker igenom alla platser där skadlig programvara kan registrera
 > [!IMPORTANT]
 > Microsoft Defender Antivirus körs i kontexten för [LocalSystem-kontot](/windows/win32/services/localsystem-account) när du utför en lokal genomsökning. För nätverkssökningar används enhetskontots kontext. Om domänenhetskontot inte har tillräcklig behörighet för att komma åt resursen fungerar inte genomsökningen. Kontrollera att enheten har behörigheter till den åtkomstnätverksresurs som används.
 
-I [](configure-real-time-protection-microsoft-defender-antivirus.md)kombination med ständigt realtidsskydd – som granskar filer när de öppnas och stängs, och när en användare navigerar till en mapp – ger en snabb genomsökning stark täckning både för skadlig programvara som börjar med systemet och kernel-nivå-skadlig programvara.  
+I kombination [med ständigt realtidsskydd](configure-real-time-protection-microsoft-defender-antivirus.md)ger en snabb genomsökning bra täckning både för skadlig programvara som börjar med system- och kernel-nivå-skadlig programvara. Skydd i realtid granskar alltid filer när de öppnas och stängs, och när en användare navigerar till en mapp. Som standard körs snabbsökningar påmonterade flyttbara enheter, till exempel USB-enheter. I de flesta fall är en snabb genomsökning lämplig för att hitta skadlig programvara som inte hämtades med realtidsskydd.
 
-I de flesta fall är en snabb genomsökning lämplig för att hitta skadlig programvara som inte hämtades med realtidsskydd.
+En fullständig genomsökning kan vara användbar när ett skadlig kodhot rapporteras på en slutpunkt. Sökningen kan identifiera om det finns inaktiva komponenter som kräver en mer omfattande rensning. Microsoft rekommenderar dock att snabbskanningar används i stället för fullständiga skanningar i stället för att göra sökningar i allmänhet. En fullständig genomsökning kan ta några timmar eller dagar att slutföra, beroende på hur mycket och vilken typ av data som behöver skannas. 
 
-En fullständig genomsökning kan vara användbar på slutpunkter som har rapporterat ett hot mot skadlig programvara. Genomsökningen kan identifiera om det finns inaktiva komponenter som kräver en mer omfattande rensning. Det här är bra om din organisation kör genomsökningar på begäran.
-
-> [!NOTE]
-> Som standard körs snabbsökningar påmonterade flyttbara enheter, till exempel USB-enheter.
+> [!TIP]
+> Mer information om skillnaderna mellan snabba och fullständiga skanningar finns i Snabbsökning jämfört med [fullständig genomsökning och anpassad sökning.](scheduled-catch-up-scans-microsoft-defender-antivirus.md#quick-scan-versus-full-scan-and-custom-scan)
 
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>Använda Microsoft Endpoint Manager för att köra en sökning
 

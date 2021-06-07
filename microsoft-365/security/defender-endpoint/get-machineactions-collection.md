@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d86303d115912d1c89b5b782bae03db4ccbba6ec
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 2ee9a4e29dded3e299ffbb2c2997fd02f32d1abf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200407"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771123"
 ---
 # <a name="list-machineactions-api"></a>List MachineActions API
 
@@ -67,7 +69,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

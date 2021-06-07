@@ -1,5 +1,5 @@
 ---
-title: Falska intelligensinsikter
+title: Insikt för förfalskningsinformation
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan få mer information om förfalskningsinformation i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37c5bcb6f2c15c3814fafa198f2905e23b12ba01
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 45ecbe68072441b40477d1b27953b957aeffa9e3
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538753"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793178"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Falska intelligensinsikter i EOP
 
@@ -63,7 +63,7 @@ Resten av den här artikeln förklarar hur du använder förfalskningsinformatio
 
 > [!NOTE]
 >
-> - Endast falska avsändare som identifierats av förfalskningsinformation visas i förfalskningsinformation. När du åsidosätter blockeringen av tillåt eller blockering i insikten blir förfalskningsavsändaren en manuell tillåta- eller blockeringspost som bara visas på fliken Förfalskning i klientorganisationens lista över tillåtna/blockerade avsändare.  Du kan även manuellt skapa tillåta eller blockera poster för förfalskningsavsändare innan de identifieras av förfalskningsinformation. Mer information finns i [Hantera listan över tillåtna/blockerade klientorganisationen i EOP.](tenant-allow-block-list.md)
+> - Endast falska avsändare som identifierats av förfalskningsinformation visas i förfalskningsinformation. När du åsidosätter blockeringen av tillåt eller blockering i insikten blir förfalskningsavsändaren en manuell tillåta- eller blockeringspost som bara visas på fliken Förfalskning i klientorganisationens lista över tillåtna/blockerade avsändare.  Du kan även manuellt skapa tillåta eller blockera poster för förfalskningsavsändare innan de identifieras av förfalskningsinformation. För mer information se [Hantera Tillåten av klient/blockeringslista i EOP](tenant-allow-block-list.md).
 >
 > - Förfalskningsinsikter och **förfalskningsfliken** i listan Tillåt/blockera för klientorganisationen ersätter funktionerna i förfalskningsinformationsprincipen som fanns tillgänglig på sidan policy för skydd mot skräppost i Säkerhets- och & efterlevnadscenter.
 >
@@ -88,7 +88,7 @@ Resten av den här artikeln förklarar hur du använder förfalskningsinformatio
 
 - Du aktiverar och inaktiverar förfalskningsinformation i principer för nätfiske i EOP och Microsoft Defender för Office 365. Förfalskningsinformation är aktiverat som standard. Mer information finns i Konfigurera principer för skydd [mot nätfiske i EOP](configure-anti-phishing-policies-eop.md) eller Konfigurera principer för skydd mot nätfiske [i Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
 
-- Vi rekommenderar inställningar för förfalskningsinformation i [EOP:s standardinställningar för nätfiskeprincip.](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)
+- Vi rekommenderar inställningar för förfalskningsinformation i inställningarna för [EOP-policy mot nätfiske.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Öppna förfalskningsinformation i Säkerhets- & Säkerhets- och efterlevnadscenter
 

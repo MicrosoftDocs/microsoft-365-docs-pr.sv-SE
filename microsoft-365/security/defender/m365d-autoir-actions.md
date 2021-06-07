@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 9e82f1c5de9fe1f4a03385458338edf18c4f35bd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 95c82f815c794662f7eb0ffaabcfb5f81df3e828
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538849"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782999"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Visa och hantera åtgärder i Åtgärdscenter
 
@@ -53,7 +53,7 @@ Det är viktigt att godkänna (eller avvisa) väntande åtgärder så snart som 
 
 2. Välj Åtgärdscenter i **navigeringsfönstret.** 
 
-3. Välj ett objekt i **listan på fliken** Väntande i Åtgärdscenter. Den utfällna rutan öppnas. Här är ett exempel.
+3. Välj ett objekt i listan **på fliken** Väntande i Åtgärdscenter. Den utfällna rutan öppnas. Här är ett exempel.
 
    ![Godkänna eller avvisa en åtgärd](../../media/air-actioncenter-itemselected.png)
 

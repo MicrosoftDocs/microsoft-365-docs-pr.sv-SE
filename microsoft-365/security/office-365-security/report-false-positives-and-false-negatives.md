@@ -13,12 +13,12 @@ ms.collection:
 description: Lär dig hur du rapporterar falska positiva och falska negativa Outlook i funktionen Rapportmeddelande.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f8c4fc327bfd467cdd1d0043c454e222e84125c
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 84a5b697f8a4b46cf79c542485bfafb396328f5c
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625119"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789249"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Rapportera falska positiva och falska negativa i Outlook
 
@@ -38,7 +38,10 @@ I Microsoft 365-organisationer med postlådor i Exchange Online eller lokala pos
 
 - För bästa möjliga användarinskickning använder du tilläggen Rapportmeddelande eller Rapport nätfiske.
 
-- Observera att det här tillägget fungerar för Outlook plattformar – på webben, iOS, Android och skrivbordet.
+  > [!IMPORTANT]
+  > Den inbyggda upplevelsen för att rapportera skräppost och nätfiske i Outlook kan inte använda principen [för användarinskicking.](./user-submission.md) Vi rekommenderar att du använder tilläggen Rapportmeddelande eller Nätfiskerapport i stället.
+
+- Tillägget Rapportmeddelande och tillägget Rapport nätfiske fungerar för alla Outlook plattformar (Outlook på webben, iOS, Android och skrivbordet).
 
 - Om du är administratör i en organisation med Exchange Online postlådor använder du portalen för inskickade inskickade uppgifter i säkerhets- & efterlevnadscenter. Mer information finns i Använda [administratörsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft.](admin-submission.md)
 
@@ -54,29 +57,23 @@ I Microsoft 365-organisationer med postlådor i Exchange Online eller lokala pos
 
 För meddelanden i Inkorgen eller någon annan e-postmapp utom Skräppost använder du följande metod för att rapportera skräppost och nätfiske:
 
-1. Klicka på **ellipsen** Fler åtgärder längst upp till höger  i det markerade meddelandet, klicka på Rapportera meddelande i den nedrullningsbara menyn och välj sedan **Skräppost** eller **Nätfiske.**
+1. Välj **ellipsen** Fler åtgärder längst upp till höger i det markerade meddelandet, välj **Rapportera** meddelande i listrutan och välj sedan **Skräppost** eller **Nätfiske.**
 
-   > [!div class="mx-imgBorder"]
-   > ![Rapportmeddelande – fler åtgärder](../../media/report-message-more-actions.png)
-
-   > [!div class="mx-imgBorder"]
-   > ![Rapportmeddelande – skräppost och nätfiske](../../media/report-message-junk-phishing.png)
+   ![Rapportmeddelande – fler åtgärder](../../media/report-message-more-actions.png)
+   
+   ![Rapportmeddelande – skräppost och nätfiske](../../media/report-message-junk-phishing.png)
 
 2. De valda meddelandena skickas till Microsoft för analys och:
-
-   - Flyttades till mappen Skräppost om den rapporterades som skräppost.
-
-   - Borttagna om det har rapporterats som nätfiske.
+   - Flyttades till mappen Skräppost om de rapporterades som skräppost.
+   - Borttagna om de rapporterats som nätfiske.
 
 ### <a name="report-messages-that-are-not-junk"></a>Rapportera meddelanden som inte är skräppost
 
-1. Klicka på **ellipsen** Fler åtgärder i det övre högra  hörnet av det markerade meddelandet, klicka på Rapportera meddelande i den nedrullningsbara menyn och klicka sedan **på Inte skräppost.**
+1. Välj **ellipsen** Fler åtgärder i det övre högra hörnet av det markerade meddelandet, välj **Rapportera** meddelande i listrutan och välj sedan **Inte skräppost.**
 
-   > [!div class="mx-imgBorder"]
-   > ![Rapportmeddelande – fler åtgärder](../../media/report-message-more-actions.png)
-
-   > [!div class="mx-imgBorder"]
-   > ![Rapportmeddelande – inte skräppost](../../media/report-message-not-junk.png)
+   ![Rapportmeddelande – fler åtgärder](../../media/report-message-more-actions.png)
+   
+   ![Rapportmeddelande – inte skräppost](../../media/report-message-not-junk.png)
 
 2. Det markerade meddelandet skickas till Microsoft för analys och flyttas till Inkorgen eller någon annan angiven mapp.
 
@@ -85,5 +82,4 @@ För meddelanden i Inkorgen eller någon annan e-postmapp utom Skräppost använ
 Om du vill granska meddelanden som användare rapporterar till Microsoft har du följande alternativ:
 
 - Använd portalen för administrationsinskick. Mer information finns i [Visa användarinskick till Microsoft.](admin-submission.md#view-user-submissions-to-microsoft)
-
 - Skapa en e-postflödesregel (kallas även transportregel) för att skicka kopior av rapporterade meddelanden. Instruktioner finns i Använda [e-postflödesregler för att se vad användarna rapporterar till Microsoft.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)

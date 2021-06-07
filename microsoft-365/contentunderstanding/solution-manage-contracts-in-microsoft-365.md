@@ -1,5 +1,5 @@
 ---
-title: Hantera kontrakt med en Microsoft 365 lösning
+title: Hantera kontrakt med en Microsoft 365-lösning
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Lär dig hur du hanterar kontrakt med en Microsoft 365 lösning av SharePoint Syntex, SharePoint listor, Microsoft Teams och Power Automate.
-ms.openlocfilehash: 219ab13eb5787bef566ede0c5dc856da29d96837
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: d12ccd2d4bc777b05489556f0d96ce9de80954a8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651290"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770823"
 ---
-# <a name="manage-contracts-using-a-microsoft-365-solution"></a>Hantera kontrakt med en Microsoft 365 lösning
+# <a name="manage-contracts-using-a-microsoft-365-solution"></a>Hantera kontrakt med en Microsoft 365-lösning
 
 I den här artikeln beskrivs hur du skapar en kontraktshanteringslösning för organisationen med hjälp SharePoint Syntex och komponenter i Microsoft 365. Det ger dig ett ramverk som hjälper dig att planera och skapa en lösning som passar dina unika affärsbehov. Även om den här lösningen inte passar dina affärsbehov som helhet kan delar av den användas i din planering för att skapa en anpassad lösning för kontraktshantering.
 
@@ -73,6 +73,14 @@ Den här lösningen för kontraktshantering innehåller fyra komponenter Microso
 6. Resultatet av den här lösningen är en automatiserad affärsprocess för din organisation. Anställda kan enkelt använda den anpassade panelvyn i Teams initiera och övervaka arbetsflödet för godkännande av dina dokument. 
 
      ![Fliken Kontrakt.](../media/content-understanding/tile-view.png)
+
+### <a name="licensing-requirements"></a>Licensieringskrav
+
+Den här lösningen använder följande funktioner, som alla är tillgängliga som en del av en licens för Microsoft 365 Enterprise (E1, E3, E5, F3) eller Business (Basic, Standard eller Premium):
+
+-   Microsoft SharePoint Syntex
+-   Microsoft Teams
+-   Power Automate
 
 ## <a name="create-the-solution"></a>Skapa lösningen
 

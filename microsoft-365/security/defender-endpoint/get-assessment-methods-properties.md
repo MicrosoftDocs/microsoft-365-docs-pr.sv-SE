@@ -1,0 +1,195 @@
+---
+title: Exportera utvärderingsmetoder och egenskaper per enhet
+description: Ger information om API:er som hämtar "Hantering av hot och säkerhetsrisker"-data. Det finns olika API-anrop för att få olika typer av data. I allmänhet innehåller varje API-anrop nödvändiga data för enheter i organisationen. Eftersom mängden data kan vara stor finns det två sätt att hämta den
+keywords: api, apis, exportutvärdering, per enhetsutvärdering, per maskinutvärdering, sårbarhetsutvärderingsrapport, enhet genom sårbarhetsanalys, enhetsproblemrapport, säker konfigurationsutvärdering, säker konfigurationsrapport, säkerhetsproblem för programvara, sårbarhetsrapport för programvara, sårbarhetsrapport efter maskin,
+search.product: eADQiWindows 10XVcnh
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: v-jweston
+author: jweston-1
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.custom: api
+ms.openlocfilehash: 63f8490984886b8b95e5c090865b5384a0ba04fb
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789388"
+---
+# <a name="export-assessment-methods-and-properties-per-device"></a>Exportera utvärderingsmetoder och egenskaper per enhet
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Gäller för:**
+
+- [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+[!include[Prerelease information](../../includes/prerelease.md)]
+
+## <a name="api-description"></a>API-beskrivning
+
+Tillhandahåller metod- och egenskapsinformation om API:er som hämtar Hantering av hot och säkerhetsrisker data per enhet. Det finns olika API-anrop för att få olika typer av data. I allmänhet innehåller varje API-anrop nödvändiga data för enheter i organisationen.
+
+> [!Note]
+>
+> Om inget annat anges exporteras alla utvärderingsmetoder som **_listas för fullständig export_** **_och_** efter enhet (kallas även **_per enhet)._**
+
+Det finns tre API-metoder som du kan använda för att hämta (exportera) olika typer av information:
+
+1. Exportera utvärdering av säkra konfigurationer
+
+2. LExportera utvärdering av inventerad programvara
+
+3. Exportera utvärdering av säkerhetsrisker för programvara
+
+För varje metod finns det olika API-anrop för att få olika typer av data. Eftersom mängden data kan vara stor kan den hämtas på två sätt:
+
+- **OData**  API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
+
+- **via filer** Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med det här API:t kan du ladda ned alla dina data Azure Storage enligt följande:
+
+  - Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata.
+
+  - Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
+
+Data som samlas in (med hjälp av _antingen OData_ eller _via_ filer) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
+
+## <a name="1-export-secure-configurations-assessment"></a>1. Exportera utvärdering av säkra konfigurationer
+
+Returnerar alla konfigurationer och deras status per enhet.
+
+### <a name="11-methods"></a>1.1 Metoder
+
+Metod | Datatyp | Beskrivning
+:---|:---|:---
+Exportera utvärdering av säker konfiguration **(OData)** | Säker konfiguration efter enhetssamling. Mer information: [1.2 Egenskaper (OData)](#12-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, ConfigurationId. API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst för små organisationer med mindre än 100 K-enheter. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat.
+Exportera utvärdering av säker konfiguration **(via filer)** | Säker konfiguration efter enhetssamling. Mer information: [1.2 Egenskaper (OData)](#12-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, ConfigurationId. Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med detta API kan du ladda ned alla data från Azure Storage enligt följande: 1.  Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata. 2.  Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
+
+### <a name="12-properties-odata"></a>1.2 Egenskaper (OData)
+
+Egenskap (ID) | Datatyp | Beskrivning
+:---|:---|:---
+ConfigurationCategory | sträng | Kategori eller gruppering som konfigurationen tillhör: Program, OS, Nätverk, Konton, Säkerhetskontroller
+ConfigurationId | sträng | Unikt ID för en viss konfiguration
+ConfigurationImpact | sträng | Klassificerad inverkan av konfigurationen på det övergripande konfigurationsresultatet (1–10)
+ConfigurationName | sträng | Visningsnamn för konfigurationen
+ConfigurationSubcategory | sträng | Underkategori eller undergrupp som konfigurationen tillhör. I många fall beskrivs specifika funktioner.
+DeviceId | sträng | Unikt ID för enheten i tjänsten.
+DeviceName | sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten.
+IsApplicable | bool | Anger om konfigurationen eller principen är tillämplig
+IsCompliet | bool | Anger om konfigurationen eller principen är korrekt konfigurerad
+IsExpectedUserImpact | bool | Anger om det kommer att finnas någon påverkan på användaren om konfigurationen ska användas
+OSPlatform | sträng | Operativsystemets plattform som körs på enheten. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. Mer information finns i Operativsystem och plattformar som stöds av TVM.
+RbacGroupName | sträng | Den rollbaserade åtkomstkontrollgruppen (RBAC). Om enheten inte är tilldelad till någon RBAC-grupp kommer värdet att vara "Ej tilldelat". Om organisationen inte innehåller några RBAC-grupper blir värdet "Ingen".
+RekommendationReference | sträng | En referens till det rekommendations-ID som hör till den här programvaran.
+Tidsstämpel | sträng | Senaste gången konfigurationen sågs på enheten
+
+### <a name="13-properties-via-files"></a>1.3 Egenskaper (via filer)
+
+Egenskap (ID) | Datatyp | Beskrivning
+:---|:---|:---
+Exportera filer | \[matrissträng\] | En lista med hämtnings-URL:er för filer som innehåller den aktuella ögonblicksbilden av organisationen.
+GeneratedTime | sträng | Tidpunkten då exporten skapades.
+
+## <a name="2-export-software-inventory-assessment"></a>2. Exportera utvärdering av programvara för lager
+
+Returnerar alla installerade program och deras information på varje enhet.
+
+### <a name="21-methods"></a>2.1 Metoder
+
+Metod | Datatyp | Beskrivning
+:---|:---|:---
+Exportera utvärdering av programvaruinventering **(OData)** | Inventering av programvara efter enhetssamling. Mer information: [2.2 Egenskaper (OData)](#22-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName och SoftwareVersion. API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst för små organisationer med mindre än 100 K-enheter. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat.
+Exportera utvärdering av programvaruinventering **(via filer)** | Inventering av programvara efter enhetsfiler. Mer information: [2.3 Egenskaper (via filer)](#23-properties-via-files) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName och SoftwareVersion. Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med detta API kan du ladda ned alla data från Azure Storage enligt följande: 1.  Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata. 2.  Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
+
+### <a name="22-properties-odata"></a>2.2 Egenskaper (OData)
+
+Egenskap (ID) | Datatyp | Beskrivning
+:---|:---|:---
+DeviceId | sträng | Unikt ID för enheten i tjänsten.
+DeviceName | sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten.
+DiskPaths | Matris[sträng]  | Disk bevis för att produkten är installerad på enheten.
+EndOfSupportDate | sträng | Datumet då supporten för den här programvaran har eller kommer att upphöra.
+EndOfSupportStatus | sträng | Supportstatusen avslutas. Kan innehålla följande möjliga värden: Ingen, EOS-version, Kommande EOS-version, EOS-programvara, kommande EOS-programvara.
+ID | sträng | Unikt ID för posten.
+NumberOfWeaknesses | int|Antal svagheter på den här programvaran på den här enheten
+OSPlatform | sträng | Operativsystemets plattform som körs på enheten. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. Mer information finns i Operativsystem och plattformar som stöds av TVM.
+RbacGroupName | sträng | Den rollbaserade åtkomstkontrollgruppen (RBAC). Om enheten inte är tilldelad till någon RBAC-grupp kommer värdet att vara "Ej tilldelat". Om organisationen inte innehåller några RBAC-grupper blir värdet "Ingen".
+RegistryPaths | Matris[sträng] | Register bevis för att produkten är installerad på enheten.
+SoftwareFirstSeenTimestamp | sträng | Första gången programvaran sågs på enheten.
+SoftwareName | sträng | Namnet på programvaruprodukten.
+SoftwareVendor | sträng | Namnet på programvaruleverantören.
+SoftwareVersion | sträng | Versionsnummer för programvaran.
+
+### <a name="23-properties-via-files"></a>2.3 Egenskaper (via filer)
+
+Egenskap (ID) | Datatyp | Beskrivning
+:---|:---|:---
+Exportera filer | \[matrissträng\] | En lista med hämtnings-URL:er för filer som innehåller den aktuella ögonblicksbilden av organisationen.
+GeneratedTime | sträng | Tidpunkten då exporten skapades.
+
+## <a name="3-export-software-vulnerabilities-assessment"></a>3. Utvärdering av eventuella säkerhetsproblem med programvara
+
+Returnerar alla kända säkerhetsproblem på en enhet och deras information för alla enheter.
+
+### <a name="31-methods"></a>3.1 Metoder
+
+Metod | Datatyp | Beskrivning
+:---|:---|:---
+Utvärdering av säkerhetsproblem i programvara **(OData)** | Samling för undersökning Se: [3.2-egenskaper (OData)](#32-properties-odata) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst för små organisationer med mindre än 100 K-enheter. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat.
+Utvärdering av export av säkerhetsproblem **för programvara (via filer)** | Undersökningsentitet Se: [3.3 Egenskaper (via filer)](#33-properties-via-files) | Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med detta API kan du ladda ned alla data från Azure Storage enligt följande: 1.  Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata. 2.  Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
+
+### <a name="32-properties-odata"></a>3.2 Egenskaper (OData)
+
+Egenskap (ID) | Datatyp | Beskrivning
+:---|:---|:---
+CveId | sträng | Unikt ID tilldelat till säkerhetshålet under systemet för vanliga säkerhetsproblem och exponeringar (CVE).
+CvssScore | sträng | CVSS-poäng för CVE.
+DeviceId | sträng | Unikt ID för enheten i tjänsten.
+DeviceName | sträng | Fullständigt kvalificerat domännamn (FQDN) för enheten.
+DiskPaths | \[Matrissträng\] | Disk bevis för att produkten är installerad på enheten.
+ExploitabilityLevel | sträng | Sårbarhetsnivån för detta sårbarhet (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+FirstSeenTimestamp | sträng | Första gången CVE för den här produkten sågs på enheten.
+ID | sträng | Unikt ID för posten.
+LastSeenTimestamp | sträng | Senaste gången CVE sågs på enheten.
+OSPlatform | sträng | Operativsystemets plattform som körs på enheten. Detta indikerar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. Mer information finns i Operativsystem och plattformar som stöds av TVM.
+RbacGroupName | sträng | Den rollbaserade åtkomstkontrollgruppen (RBAC). Om enheten inte är tilldelad till någon RBAC-grupp kommer värdet att vara "Ej tilldelat". Om organisationen inte innehåller några RBAC-grupper blir värdet "Ingen".
+RekommendationReference | sträng | En referens till det rekommendations-ID som hör till den här programvaran.
+RecommendedSecurityUpdate | sträng | Namn eller beskrivning av säkerhetsuppdateringen som tillhandahålls av programvaruleverantören för att hantera problemet.
+RecommendedSecurityUpdateId | sträng | Identifierare för tillämpliga säkerhetsuppdateringar eller identifierare för motsvarande vägledning eller kunskapsbas (KB) artiklar
+Matrissträng för \[ registersökvägar\] | Register bevis för att produkten är installerad på enheten.
+SoftwareName | sträng | Namnet på programvaruprodukten.
+SoftwareVendor | sträng | Namnet på programvaruleverantören.
+SoftwareVersion | sträng | Versionsnummer för programvaran.
+VulnerabilitySeverityLevel | sträng | Allvarlighetsnivå tilldelad till säkerhetsrisken baserat på CVSS-poäng och dynamiska faktorer som påverkas av hotbilden.
+
+### <a name="33-properties-via-files"></a>3.3 Egenskaper (via filer)
+
+Egenskap (ID) | Datatyp | Beskrivning
+:---|:---|:---
+Exportera filer | \[matrissträng\]  | En lista med hämtnings-URL:er för filer som innehåller den aktuella ögonblicksbilden av organisationen.
+GeneratedTime | sträng | Tidpunkten då exporten skapades.
+
+## <a name="see-also"></a>Se även
+
+- [Exportera utvärdering av säker konfiguration per enhet](get-assessment-secure-config.md)
+
+- [Exportera utvärdering av programvaruinventering per enhet](get-assessment-software-inventory.md)
+
+- [Exportera bedömningar av säkerhetsproblem för programvara per enhet](get-assessment-software-vulnerabilities.md)
+
+Andra relaterade
+
+- [Riskbaserade hot & hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
+
+- [Svagheter i organisationen](tvm-weaknesses.md)

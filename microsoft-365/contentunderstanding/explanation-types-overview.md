@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Mer information om olika typer av förklaringar i Microsoft SharePoint Syntex.
-ms.openlocfilehash: 515fd8af289ec7c64e14eb6d54b236ba3a8aa9f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Läs mer om fraslista, reguljärt uttryck och typer av närhetsförklaringar i Microsoft SharePoint Syntex.
+ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706582"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770871"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Olika typer av förklaringar i Microsoft SharePoint Syntex
 
@@ -114,6 +114,15 @@ Så här lägger du till en förklaringstyp för reguljära uttryck:
    När du lägger till ett reguljärt uttryck med hjälp av en mall läggs namnet och det reguljära uttrycket automatiskt till i textrutan. Om du till exempel väljer mallen **e-postadress** populeras **panelen Lägg till en förklaring**.
 
    ![Skärmbild som visar panelen Skapa en förklaring med mallen E-postadress markerat.](../media/content-understanding/create-regular-expression-email.png)
+
+### <a name="limitations"></a>Begränsningar
+
+I följande tabell visas alternativ för infogade tecken som för närvarande inte är tillgängliga för användning i mönster med reguljära uttryck. 
+
+|Alternativ  |Region  |Aktuella funktioner  |
+|---------|---------|---------|
+|Skiftlägeskänslighet | Stöds inte för närvarande. | Alla matchningar som utförs är inte skiftlägeskänsliga.  |
+|Linjeankare     | Stöds inte för närvarande. | Det går inte att ange en specifik position i en sträng där en matchning måste ske.   |
 
 ## <a name="proximity"></a>Närhet 
 

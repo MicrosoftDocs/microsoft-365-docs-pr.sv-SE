@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Anslut till din Microsoft 365-klientorganisation med PowerShell för Microsoft 365 för att utföra uppgifter i administrationscenter från kommandoraden.
-ms.openlocfilehash: 08005ba1cbdcbfec14585d22614129a9b33352b9
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 70d6aa1373daf2322319d21e385fc1498af3351e
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445762"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782807"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Ansluta till Microsoft 365 med PowerShell
 
@@ -42,7 +42,7 @@ För närvarande ersätter Azure Active Directory PowerShell för Graph-modulen 
 
 **Operativsystem**
 
-Du måste använda en 64-bitarsversion av Windows. Stöd för 32-bitarsversionen av Microsoft Azure Active Directory-modulen för Windows PowerShell utgick i oktober 2014.
+Du måste använda en 64-bitarsversion av Windows. Stödet för den 32-bitarsversionen av Microsoft Azure Active Directory-modulen för Windows PowerShell upphörde 2014.
 
 Du kan använda följande versioner av Windows:
     
@@ -101,7 +101,7 @@ Svara **Ja** eller **Ja till alla** för att fortsätta med installationen.
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Steg 2: Ansluta till Azure AD för din Microsoft 365-prenumeration
 
-För att ansluta till Azure Active Directory (Azure AD) för din Microsoft 365-prenumeration med ett kontonamn och lösenord, eller med multifaktorautentisering (MFA), kör du ett av de här kommandona från en Windows PowerShell-kommandotolk. (Det behöver inte vara upphöjt.)
+För att ansluta till Azure Active Directory (Azure AD) för din Microsoft 365-prenumeration med ett kontonamn och lösenord, eller med multifaktorautentisering (MFA), kör du ett av de här kommandona från en Windows PowerShell-kommandotolk. (Det behöver inte vara upphöjd.)
 
 | Office 365 moln | Kommando |
 |:-------|:-----|
@@ -130,7 +130,7 @@ PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windo
 
 De här stegen krävs bara en gång på din dator. Men du måste troligen uppdatera programvaran regelbundet.
   
-1.  Om du inte kör Windows 10, installera 64-bitarsversionen av Inloggningsassistenten för Microsoft Online Services: [Inloggningsassistenten för Microsoft Online Services för IT-experter RTW](https://www.microsoft.com/Download/details.aspx?id=28177).
+1.  Om du inte kör Windows 10, installera 64-bitarsversionen av Inloggningsassistenten för Microsoft Online Services: [Inloggningsassistenten för Microsoft Online Services för IT-experter RTW](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi).
     
 2. Följ de här stegen för att installera Microsoft Azure Active Directory-modulen för Windows PowerShell:
     
@@ -141,7 +141,7 @@ De här stegen krävs bara en gång på din dator. Men du måste troligen uppdat
     
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Steg 2: Ansluta till Azure AD för din Microsoft 365-prenumeration
 
-För att ansluta till Azure AD för din Microsoft 365-prenumeration med ett kontonamn och lösenord eller med multifaktorautentisering (MFA), kör ett av de här kommandona från en Windows PowerShell-kommandotolk. (Det behöver inte vara upphöjt.)
+Om du vill ansluta till Azure AD för din Microsoft 365-prenumeration med ett kontonamn och lösenord eller multifaktorautentisering (MFA) kör du ett av de här kommandona från en Windows PowerShell-kommandotolk (Det behöver inte vara upphöjd).
 
 | Office 365 moln | Kommando |
 |:-------|:-----|

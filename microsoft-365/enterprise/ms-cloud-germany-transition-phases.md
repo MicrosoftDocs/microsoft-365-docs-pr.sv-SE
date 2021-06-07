@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i den nya tyska datacenterregion.
-ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 6778248b127894102d15d4d94e3d2f099e3bfa37
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651122"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771207"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
@@ -80,7 +80,7 @@ Om du använder enkel inloggning för Office 365 och Azure i Microsoft Cloud Deu
 
 **Vid start:** Innan fas 2 startar
 
-Om du använder Active Directory Federation Services (AD FS) bör du backa [ADFS-konfigurationen](ms-cloud-germany-transition-azure-ad.md) före och  efter att du har lagt till det beroende tredjepartsförtroende för den globala Office 365-tjänsten innan fas 2 börjar.
+Om du använder Active Directory Federation Services (AD FS) bör du backa [ADFS-konfigurationen](ms-cloud-germany-transition-add-adfs.md) före och  efter att du har lagt till det beroende tredjepartsförtroende för den globala Office 365-tjänsten innan fas 2 börjar.
 
 ## <a name="phase-2-azure-ad-migration"></a>Fas 2: Azure AD-migrering
 I den här Azure Active Directory datacentret migreras till det nya datacentret och aktiveras. De gamla Azure AD-slutpunkterna är fortfarande tillgängliga.
@@ -169,7 +169,7 @@ Kunder som inte utför de här DNS-uppdateringarna vid slutförande av migrering
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **Gäller för:** Exchange Online med hjälp Exchange Online PowerShell
 
-Under migreringsfasen kan användning av **PowerShell-cmdlets New-MigrationEndpoint,** **Set-MigrationEndpoint** och **Test-MigrationsServerAvailability** resultera i fel (fel på proxy). Det här inträffar när skiljebrevlådan har migrerats till hela världen men administratörspostlådan inte har det eller vice versa. Du kan lösa problemet genom att använda skiljepostlådan som tips om routning i **ConnectionUri** när du skapar PowerShell-klientsessionen. Ett exempel:
+Under migreringsfasen kan användning av **PowerShell-cmdlets New-MigrationEndpoint,** **Set-MigrationEndpoint** och **Test-MigrationsServerAvailability** resultera i fel (fel på proxy). Det här inträffar när skiljebrevlådan har migrerats till hela världen men administratörspostlådan inte har det eller vice versa. Du kan lösa problemet genom att använda skiljepostlådan som tips om routning i **ConnectionUri** när du skapar PowerShell-klientsessionen. Till exempel:
 
 ```powershell
 New-PSSession 

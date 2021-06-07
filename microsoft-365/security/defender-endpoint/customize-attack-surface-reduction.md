@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 232f7133f177e3d0aa93fcb2835fb86bcfd0d37c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769329"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782879"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Anpassa regler för minskning av attackytan
 
@@ -46,8 +46,14 @@ Du kan ange minskningsregler för attackytan för enheter som kör någon av fö
 
 Du kan välja att undanta filer och mappar från att utvärderas med hjälp av minskningsregler för attackytan. När filen har uteslutits blockeras den inte från att köras även om en minskningsregel för attackytan identifierar att filen innehåller skadligt beteende.
 
+Överväg till exempel utpressningstrojanregeln:
+
+Utpressningstrojanregeln är utformad för att hjälpa företagskunder att minska risken för utpressningstrojaner och samtidigt säkerställa affärskontinuion. Som standard felar utpressningstrojanregeln på ena sidan av försiktigheten och skyddar mot filer som ännu inte har bevarat tillräckligt med rykte och förtroende. För att fasa fram utlöser utpressningstrojanregeln bara filer som inte har fått tillräckligt med positivt rykte och hela tiden utifrån användningsstatistiken för miljoner av våra kunder. Vanligtvis är blocken själv lösta, eftersom varje fils "rykte och förtroende"-värden uppgraderas stegvis allt eftersom användningen inte är problematisk.
+
+I fall där block inte löses i tid kan kunderna på egen _risk_ använda antingen självbetjäningsmekanismen eller en IOC-baserad (Indicator of Compromise) funktion för att ta bort blockeringen av själva filerna.  
+
 > [!WARNING]
-> Det kan potentiellt tillåta att osäkra filer körs och smittar dina enheter. Att utesluta filer eller mappar kan allvarligt minska skyddet som tillhandahålls av minskningsregler för attackytan. Filer som skulle ha blockerats av en regel tillåts köras och ingen rapport eller händelse registreras.
+> Om du utesluter eller tar bort blockering av filer eller mappar kan osäkra filer köras och smitta enheterna. Att utesluta filer eller mappar kan allvarligt minska skyddet som tillhandahålls av minskningsregler för attackytan. Filer som skulle ha blockerats av en regel tillåts köras och ingen rapport eller händelse registreras.
 
 Ett undantag gäller för alla regler som tillåter undantag. Du kan ange en enskild fil, mappsökväg eller det fullständigt kvalificerade domännamnet för en resurs. Du kan dock inte begränsa ett undantag till en viss regel.
 
@@ -57,7 +63,7 @@ Minskning av attackytan stöder miljövariabler och jokertecken. Information om 
 Om du stöter på problem med regler för att identifiera filer som du tror inte ska identifieras kan du använda [granskningsläge för att testa regeln.](evaluate-attack-surface-reduction.md)
 
 | Regelbeskrivning | GUID |
-|:----|:----|:----|
+|:----|:----|
 | Blockera alla Office från att skapa underordnade processer | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | Blockera körning av potentiellt oönskade skript | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
 | Blockera Win32 API-anrop från Office makro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |

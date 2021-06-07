@@ -16,24 +16,24 @@ ms.collection:
 description: Administratörer kan lära sig att identifiera särskilda grupper av användare med användartaggar i Microsoft Defender för Office 365 abonnemang 2. Taggfiltrering är tillgängligt i aviseringar, rapporter och undersökningar i Microsoft Defender för Office 365 för att snabbt identifiera de taggade användarna.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 44b925840700c00c6b2d28c445ac26abd6624d1c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943017"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782867"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Användartaggar i Microsoft Defender för Office 365
 
 > [!NOTE]
-> Funktionen för användartaggar är inte tillgänglig för alla och kan komma att ändras. Mer information om lanseringsschemat finns i Översikt över [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap)
+> Funktionen för användartaggar är inte tillgänglig för alla och kan komma att ändras. Mer information om lanseringsschemat finns i översikten [över Microsoft 365 .](https://www.microsoft.com/microsoft-365/roadmap)
 
-Användartaggar är identifierare för specifika grupper av användare [i Microsoft Defender för Office 365.](defender-for-office-365.md) Det finns två typer av användartaggar:
+Användartaggar är identifierare för specifika användargrupper i [Microsoft Defender för Office 365](defender-for-office-365.md). Det finns två typer av användartaggar:
 
 - **Systemtaggar:** För närvarande [är Prioritet-konton](../../admin/setup/priority-accounts.md) den enda typen av systemtagg.
 - **Anpassade taggar:** Du skapar de här användartaggarna själv.
 
-Om din organisation har Defender för Office 365 abonnemang 2 (ingår i prenumerationen eller som ett tillägg) kan du skapa anpassade användartaggar utöver att använda taggen för prioritetskonton.
+Om din organisation har Defender för Office 365 abonnemang 2 (ingår i din prenumeration eller som ett tillägg) kan du skapa anpassade användartaggar utöver att använda taggen för prioritetskonton.
 
 > [!NOTE]
 > För närvarande kan du bara använda användartaggar för postlådeanvändare.
@@ -44,14 +44,14 @@ När du har tillämpat systemtaggar eller anpassade taggar för användare kan d
 - [Hotutforskaren och identifiering i realtid](threat-explorer.md)
 - [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
 - [Kampanjvyer](campaigns.md)
-- För prioritetskonton kan du använda rapporten [E-postproblem för prioritetskonton](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) i administrationscentret för Exchange (EAC).
+- För prioritetskonton kan du använda rapporten [E-postproblem](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) för prioritetskonton Exchange administrationscenter (EAC).
 
 I den här artikeln förklaras hur du konfigurerar användartaggar & Säkerhets- och efterlevnadscenter. Det finns inga cmdlets i Säkerhets- & för att hantera användartaggar.
 
-Information om hur användartaggar är en del av strategin för att skydda användarkonton med hög effekt finns i Säkerhetsrekommendationer för [prioriterade konton i Microsoft 365.](security-recommendations-for-priority-accounts.md)
+Information om hur användartaggar ingår i strategin för att skydda användarkonton med hög effekt finns i Säkerhetsrekommendationer för [prioriterade konton i Microsoft 365.](security-recommendations-for-priority-accounts.md)
 
 > [!NOTE]
-> Om du använder det enhetliga säkerhetscentret för Microsoft 365 kan du ange taggar här: https://security.microsoft.com/userTags .
+> Om du använder det enhetliga Microsoft 365 säkerhetscentret kan du ange taggar här: https://security.microsoft.com/securitysettings/userTags .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -64,12 +64,13 @@ Information om hur användartaggar är en del av strategin för att skydda anvä
 
   Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
-  **Anmärkningar**:
+  > [!NOTE]
+  >
+  > - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  >
+  > - Hantering av användartaggar styrs av **rollerna Taggläsare** **och Tagghanteraren.**
 
-  - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
-  - Hantering av användartaggar styrs av **rollerna Taggläsare** **och Tagghanteraren.**
-
-- Du kan också hantera och övervaka konton med prioritet i administrationscentret för Microsoft 365. Anvisningar finns i Hantera [och övervaka prioritetskonton.](../../admin/setup/priority-accounts.md)
+- Du kan också hantera och övervaka konton med prioritet Microsoft 365 administrationscentret. Anvisningar finns i Hantera [och övervaka prioritetskonton.](../../admin/setup/priority-accounts.md)
 
 - Information om hur du skyddar _behöriga konton_ (administratörskonton) finns i det [här avsnittet.](/azure/architecture/framework/security/critical-impact-accounts)
 
@@ -83,7 +84,7 @@ Information om hur användartaggar är en del av strategin för att skydda anvä
    - **Namn**: Ange ett unikt, beskrivande namn för taggen. Det här är det värde som du kommer att se och använda.
    - **Beskrivning**: Ange en valfri beskrivning för taggen.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 4. Gör **något av** följande på sidan Tilldela användare:
 
@@ -98,7 +99,7 @@ Information om hur användartaggar är en del av strategin för att skydda anvä
 
    - Klicka **på Importera** för att markera en textfil som innehåller e-postadresserna till användare eller grupper. Kontrollera att textfilen innehåller en post per rad.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 5. Granska **inställningarna på** taggsidan Granska. Du kan klicka **på Redigera** i det specifika avsnittet för att göra ändringar.
 
@@ -126,7 +127,8 @@ Information om hur användartaggar är en del av strategin för att skydda anvä
 
 ## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>Använda Säkerhets- och & för att ta bort användartaggar
 
-**Obs!** Du kan inte ta bort den inbyggda **prioritetskontotaggen.**
+> [!NOTE]
+> Du kan inte ta bort den inbyggda **prioritetskontotaggen.**
 
 1. Gå till Användartaggar för & skydd mot **hothantering** \> **i Säkerhets- och efterlevnadscenter.**
 

@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 1748a33be2c27123eb0437784dcdb2cb7905616a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f1344026878b7fbd6242d82b1afb0e6671c32073
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274694"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789274"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Konfigurera schemalagda snabb- eller fullständiga genomsökningar för Microsoft Defender Antivirus
 
@@ -73,8 +73,8 @@ Använd följande tabell för att välja en genomsökningstyp.
 |Scenario  |Rekommenderad genomsökningstyp  |
 |---------|---------|
 |Du vill ställa in vanliga, schemalagda genomsökningar     | Snabbsökning <p>En snabb genomsökning kontrollerar processer, minne, profiler och vissa platser på enheten. I kombination [med realtidsskydd ger](configure-real-time-protection-microsoft-defender-antivirus.md)en snabb genomsökning stark täckning både för skadlig programvara som börjar med skadlig programvara på system- och kernel-nivå. Realtidsskydd granskar filer när de öppnas och stängs, och när en användare navigerar till en mapp.         |
-|Hot, till exempel skadlig kod, upptäcks på en enhet     | Fullständig sökning <p>En fullständig genomsökning kan hjälpa dig att se om det finns inaktiva komponenter som kräver en mer omfattande rensning.         |
-|Du vill köra en [sökning på begäran](run-scan-microsoft-defender-antivirus.md)     | Fullständig sökning  <p>En fullständig genomsökning tittar på alla filer på enhetens hårddisk, inklusive filer som är inaktuella, arkiverade och inte används dagligen.      |
+|Hot, till exempel skadlig kod, upptäcks på en enskild enhet     | Snabbsökning <p>I de flesta fall fångar och rensar en snabbsökning efter skadlig programvara.   |
+|Du vill köra en [sökning på begäran](run-scan-microsoft-defender-antivirus.md)     | Snabbsökning       |
 | Du vill kontrollera att en bärbar enhet, till exempel en USB-enhet, inte innehåller skadlig programvara | Anpassad sökning <p>Med en anpassad genomsökning kan du välja specifika platser, mappar eller filer och göra en snabbsökning. |
 
 ### <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>Vad mer behöver jag veta om snabba och fullständiga skanningar?
@@ -155,7 +155,7 @@ Använd följande cmdlets:
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-Mer information finns i Använda [PowerShell-cmdlets för att konfigurera och köra Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender-cmdlets.](/powershell/module/defender/)
+Mer information finns i [Hur du använder PowerShell-cmdlets för att konfigurera och köra Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender-cmdlets](/powershell/module/defender/).
 
 ### <a name="use-windows-management-instruction-wmi"></a>Använda Windows instruktionerna för hantering (WMI)
 

@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: I den här artikeln kan administratörer läsa mer om skydd mot Valv-länkar i Defender för Office 365 för att skydda organisationen från nätfiske och andra angrepp som använder skadliga URL:er.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 675de13410ac98e18a8b72125c2226d2c9c62821
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: d42d7563b5267f805756125d1764d506f1700e13
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698994"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793034"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Valv Länkar i Microsoft Defender för Office 365
 
@@ -220,7 +220,7 @@ Följande inställningar Valv länkar är tillgängliga för Office 365 appar:
 
 - **Låt inte användare** klicka sig fram på säkra länkar till [](#warning-pages-from-safe-links) den ursprungliga WEBBADRESSen: Tillåter eller blockerar användare från att klicka på varningssidan till den ursprungliga URL-adressen i skrivbordsversionerna av Word, Excel, PowerPoint och Visio. Standardvärdet och det rekommenderade värdet är **På**.
 
-Information om hur Valv länkar för Office 365 finns i [Konfigurera Valv skydd mot länkar för Office 365 appar.](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center)
+Information om hur Valv länkar för Office 365 finns i [Konfigurera Valv skydd mot länkar för Office 365 appar.](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security-center)
 
 Mer information om rekommenderade värden för principinställningarna Standard och Strikt finns i [Globala inställningar för Valv Länkar.](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links)
 
@@ -257,7 +257,7 @@ Listan **Blockera följande URL:er** definierar de länkar som alltid blockeras 
 
 När en användare i en aktiv Valv-länkprincip klickar på en blockerad länk i en app som stöds kommer de till varningssidan [Blockerad](#blocked-url-warning) URL.
 
-Du konfigurerar listan med URL-adresser i de globala inställningarna för Valv Länkar. Anvisningar finns i [Konfigurera listan "Blockera följande URL:er".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)
+Du konfigurerar listan med URL-adresser i de globala inställningarna för Valv Länkar. Anvisningar finns i [Konfigurera listan "Blockera följande URL:er".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security-center)
 
 **Anmärkningar**:
 

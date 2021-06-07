@@ -1,6 +1,6 @@
 ---
 title: Åtgärdsåtgärder i Microsoft 365 Defender
-description: Få en översikt över åtgärder som följer automatiska undersökningar i Microsoft 365 Defender
+description: Få en översikt över åtgärdsåtgärder som följer automatiska undersökningar i Microsoft 365 Defender
 keywords: automatiserad, undersökning, avisering, utlösare, åtgärd, åtgärd
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 80546d44bc1ba222c736b397a272f9f1f1a01d4a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f025f23242c28f698e6f67755cc59d21c4463914
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269474"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782951"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Åtgärdsåtgärder i Microsoft 365 Defender
 
@@ -44,7 +44,7 @@ Under och efter en automatiserad undersökning i Microsoft 365 Defender identifi
 > - [Hur hot åtgärdas på enheter](../defender-endpoint/automated-investigations.md)
 > - [Hot och åtgärdsåtgärder för e-& och samarbetsinnehåll](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-I följande tabell sammanfattas de åtgärder som stöds för närvarande i Microsoft 365 Defender. 
+I följande tabell sammanfattas de åtgärdsåtgärder som stöds i Microsoft 365 Defender. 
 
 |Åtgärdsåtgärder för enhet (slutpunkt)  |Åtgärder för e-postreparation  |
 |:---------|:---------|

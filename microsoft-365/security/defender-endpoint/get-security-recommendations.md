@@ -1,7 +1,7 @@
 ---
 title: Hämta säkerhetsrekommendationer
 description: Hämtar en samling säkerhetsrekommendationer relaterade till ett visst enhets-ID.
-keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, säkerhetsrekommendationer per enhet, & sårbarhetshantering api, Microsoft Defender för Endpoint tvm api
+keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, säkerhetsrekommendationer per enhet, & hantering av säkerhetsrisker api, Microsoft Defender för Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bc209687d51b3e05bfcfd6028042ba5912b877f6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 44f64334d08d8d0d6a5ed1e8e06baa2880859ad2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935311"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771135"
 ---
 # <a name="get-security-recommendations"></a>Hämta säkerhetsrekommendationer
 
@@ -52,7 +54,7 @@ GET /api/machines/{machineId}/recommendations
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 
