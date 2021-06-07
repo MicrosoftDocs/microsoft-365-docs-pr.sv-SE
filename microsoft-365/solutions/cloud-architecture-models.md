@@ -13,14 +13,14 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 4532afc40c2324b77725d9ddad158587083e6e9b
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 73e29109a429d8a3fffc69b79939c8dff7ecb087
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280957"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769275"
 ---
-# <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Illustrationer för Microsoft moln för företagsarkitektur
+# <a name="microsoft-cloud-for-it-architects-illustrations"></a>Microsoft Cloud för illustrationer av IT-arkitekter
 
 De här molnarkitekturaffischerna ger information om Microsoft-molntjänster, bland annat Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 och lokala och molnbaserade hybridlösningar. 
 
@@ -28,7 +28,7 @@ IT-beslutsfattare och IT-arkitekter kan använda de här resurserna till att hit
 
 
 <a name="identity"></a>
-### <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Microsoft Cloud-identitet för företagsarkitekter
+### <a name="microsoft-cloud-identity-for-it-architects"></a>Microsoft Cloud-identitet för IT-arkitekter
 
 Vilka IT-arkitekter behöver veta om att utforma identitet för organisationer som använder Microsoft-molntjänster och -plattformar.
   
@@ -37,7 +37,7 @@ Vilka IT-arkitekter behöver veta om att utforma identitet för organisationer s
 |[![Miniatyrbild för Microsofts molnidentitetsmodell](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [Visa som PDF](../downloads/MSFT_cloud_architecture_identity.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf) \| [Ladda ned som Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.vsdx)   <br/>Uppdaterad september 2020 | Den här modellen innehåller:  <ul> <li> Introduktion till identitet med Microsofts moln </li><li> Azure AD IDaaS-funktioner </li><li> Integrera AD DS-konton (Active Directory Domain Services) lokalt med Azure AD </li><li> Placera katalogkomponenter i Azure IaaS </li><li> AD DS-alternativ för arbetsbelastningar i Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="security"></a>
-### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft Cloud-säkerhet för företagsarkitekter
+### <a name="microsoft-cloud-security-for-it-architects"></a>Microsoft Cloud-säkerhet för IT-arkitekter
 
 Vilka IT-arkitekter behöver veta om säkerhet i Microsoft-molntjänster och -plattformar.
   
@@ -46,7 +46,7 @@ Vilka IT-arkitekter behöver veta om säkerhet i Microsoft-molntjänster och -pl
 |[![Microsoft Cloud-säkerhet för modellminiatyr för företagsarkitekter](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf)  \| <br/>Uppdaterades april 2021 | Den här modellen innehåller: <ul><li>Microsoft- och kundens säkerhetsansvar</li><li>Identitets- och enhetsåtkomst</li><li>Skydd mot hot</li><li>Informationsskydd </ul><br/>|
    
 <a name="networking"></a>
-### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft-molnnätverk för företagsarkitekter
+### <a name="microsoft-cloud-networking-for-it-architects"></a>Microsoft-molnnätverk för IT-arkitekter
 
 Vilka IT-arkitekter behöver veta om nätverk för Microsoft-molntjänster och Microsoft-plattformar.
   
@@ -55,7 +55,7 @@ Vilka IT-arkitekter behöver veta om nätverk för Microsoft-molntjänster och M
 |[![Thumb-bild för Microsofts molnnätverksmodell](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](../downloads/MSFT_cloud_architecture_networking.pdf) <br/>  [Visa som PDF](../downloads/MSFT_cloud_architecture_networking.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) \| [Ladda ned som Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx)   <br/>Uppdaterades augusti 2020 | Den här modellen innehåller: <ul><li> Utveckla ditt nätverk för molnanslutning </li><li> Vanliga element i Microsofts molnanslutning </li><li> ExpressRoute för Microsoft molnanslutning </li><li> Utforma nätverk för Microsoft SaaS, Azure PaaS och Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
-### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft-hybridmoln för företagsarkitekter
+### <a name="microsoft-hybrid-cloud-for-it-architects"></a>Microsoft-hybridmoln för IT-arkitekter
 
 Vilka IT-arkitekter behöver veta om hybridmoln för Microsoft-tjänster och plattformar.
   

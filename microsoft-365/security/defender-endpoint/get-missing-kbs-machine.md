@@ -1,7 +1,7 @@
 ---
 title: Få saknade KBs efter enhets-ID
 description: Hämtar säkerhetsuppdateringar efter enhets-ID
-keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, enhets-ID, & sårbarhetshantering api, Microsoft Defender för Endpoint tvm api
+keywords: apis, graph api, api som stöds, skaffa, lista, fil, information, enhets-ID, & hantering av säkerhetsrisker api, Microsoft Defender för Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aa22b90b95788d9f5a65d54c7a335a2e0f4c3091
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 97cad51938c4ff3498234dbf2e9d69fd48a52367
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933583"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771879"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Få saknade KBs efter enhets-ID
 
@@ -43,7 +45,7 @@ GET /api/machines/{machineId}/getmissingkbs
 
 ## <a name="request-header"></a>Sidhuvud för begäran
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

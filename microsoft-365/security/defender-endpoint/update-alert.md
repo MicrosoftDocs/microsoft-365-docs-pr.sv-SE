@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 94be185bd30cd36f456a66d5ae30a4361abc0c48
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 043d423e1016d77cad4a175aa41718329f464252
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688255"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768936"
 ---
 # <a name="update-alert"></a>Uppdateringsavisering
 
@@ -68,7 +69,7 @@ PATCH /api/alerts/{id}
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 Innehållstyp | Sträng | application/json. **Obligatoriskt.**
@@ -79,7 +80,7 @@ Ange värden för de relevanta fält som ska uppdateras i begärans brödtext.
 <br>Befintliga egenskaper som inte ingår i begärans brödtext behåller sina tidigare värden eller beräknas om baserat på ändringar av andra egenskapsvärden. 
 <br>För bästa prestanda bör du inte inkludera befintliga värden som inte ändras.
 
-Egenskap | Skriv | Beskrivning
+Egenskap | Typ | Beskrivning
 :---|:---|:---
 status | Sträng | Anger aktuell status för aviseringen. Egenskapsvärdena är: "Ny", "InProgress" och "Löst".
 assignedTo | Sträng | Ägaren av aviseringen

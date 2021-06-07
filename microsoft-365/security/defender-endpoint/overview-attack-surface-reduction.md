@@ -18,14 +18,15 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 68c9bad95e36863a57d27d49adc2ad46744cbd4a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.date: 06/02/2021
+ms.openlocfilehash: b6fb9bb327816b7e166a443a0d07932d30421a19
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933535"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771699"
 ---
-# <a name="overview-of-attack-surface-reduction"></a>Översikt för minskning av attackytan
+# <a name="overview-of-attack-surface-reduction-capabilities"></a>Översikt över funktioner för att minska attackytan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,23 +34,23 @@ ms.locfileid: "51933535"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!TIP]
+> Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink).
 
-
-Minska attackytorna genom att minimera platserna där organisationen är sårbar för cyberhot och attacker. Använd följande resurser för att konfigurera skydd för enheter och program i organisationen.
-
+Dina attackytor är alla platser där organisationen är sårbar för cyberhot och attacker. Defender för Slutpunkt innehåller flera funktioner som hjälper dig att minska attackytorna. I följande video får du lära dig mer om hur du minskar attackytan.<p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4woug]
 
+## <a name="resources-to-learn-more-about-attack-surface-reduction"></a>Resurser för att lära dig mer om att minska attackytan
 
-Artikel | Beskrivning
--|-
-[Minskning av attackytan](./attack-surface-reduction.md) | Minska säkerhetsproblem (attackytor) i dina program med intelligenta regler som hjälper dig att stoppa skadlig programvara. (Kräver Microsoft Defender Antivirus).
-[Maskinvarubaserad isolering](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Skydda och upprätthålla integriteten för ett system när det startar och medan det körs. Verifiera systemintegritet genom lokal och fjärransluten tillförlitlighet. Och använd behållarisolering för Microsoft Edge för att skydda dig mot skadliga webbplatser.
-[Applikationskontroll](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Använd programkontrollen så att programmen måste vara betrodda för att kunna köras.
-[Exploateringsskydd](./exploit-protection.md) | Skydda operativsystem och appar som din organisation använder från att utnyttjas. Sårbarhetsskydd fungerar också med antiviruslösningar från tredje part.
-[Nätverksskydd](./network-protection.md) | Utöka skyddet till nätverkstrafiken och anslutningarna på din organisations enheter. (Kräver Microsoft Defender Antivirus)
-[Webbskydd](./web-protection-overview.md) | Skydda dina enheter mot webbhot och hjälp dig att reglera oönskat innehåll.
-[Kontrollerad mappåtkomst](./controlled-folders.md) | Förhindra skadliga eller misstänkta program (inklusive filkrypterande skadlig kod för utpressningstrojaner) från att göra ändringar i filer i nyckelsystemmapparna (kräver Microsoft Defender Antivirus)
-[Nätverksbrandvägg](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) | Förhindra obehörig trafik från att gå till eller från organisationens enheter med tvåvägsfiltrering av nätverkstrafik.
-[Vanliga frågor och svar för minskning av attackytan](./attack-surface-reduction-faq.md) | Vanliga frågor och svar om regler för att minska attackytan, licensiering med mera.
+Som nämns i videon innehåller Defender för Slutpunkt flera minskningsfunktioner för attackytor. Använd följande resurser för mer information:
+
+| Artikel | Beskrivning |
+|:---|:---|
+| [Maskinvarubaserad isolering](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Skydda och upprätthålla integriteten för ett system när det startar och medan det körs. Verifiera systemintegritet genom lokal och fjärransluten tillförlitlighet. Och använd behållarisolering för att Microsoft Edge skydda dig mot skadliga webbplatser. |
+| [Applikationskontroll](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Använd programkontrollen så att programmen måste vara betrodda för att kunna köras. |
+| [Kontrollerad mappåtkomst](controlled-folders.md) | Förhindra skadliga eller misstänkta program (inklusive filkrypterande skadlig kod för utpressningstrojaner) från att göra ändringar i filer i viktiga systemmappar (kräver Microsoft Defender Antivirus) |
+| [Nätverksskydd](network-protection.md) | Utöka skyddet till nätverkstrafiken och anslutningarna på din organisations enheter. (Kräver Microsoft Defender Antivirus) |
+| [Exploateringsskydd](exploit-protection.md) | Skydda operativsystem och appar som din organisation använder från att utnyttjas. Sårbarhetsskydd fungerar också med antiviruslösningar från tredje part. |
+| [Regler för minskning av attackytan](attack-surface-reduction.md) | Minska säkerhetsproblem (attackytor) i dina program med intelligenta regler som hjälper dig att stoppa skadlig programvara. (Kräver Microsoft Defender Antivirus). |
+| [Enhetskontroll](device-control-report.md) | Skyddar mot dataförlust genom att övervaka och kontrollera media som används på enheter, till exempel flyttbara lagringsenheter och USB-enheter, i organisationen. |

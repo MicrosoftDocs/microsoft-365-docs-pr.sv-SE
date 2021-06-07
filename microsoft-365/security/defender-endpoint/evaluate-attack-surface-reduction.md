@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.topic: article
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 73b23427ff401f2a37c399131d6aa01330ff9de5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c2dea22cc8a0ebb875f83ebd5a3e42f723e5f254
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245306"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771327"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Utvärdera regler för minskning av attackytan
 
@@ -37,10 +37,10 @@ Minskningsregler för attackytan hjälper till att förhindra åtgärder som van
 
 Ange minskningsregler för attackytan för enheter som kör någon av följande utgåvor och versioner av Windows:
 
-- Windows 10 Pro, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows 10 Enterprise, version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows Server, [version 1803 (Halvårskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- Windows 10 Pro, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Enterprise, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Lär dig hur du utvärderar regler för att minska attackytan genom att aktivera granskningsläge för att testa funktionen direkt i organisationen.
 

@@ -16,24 +16,24 @@ ms.custom:
 search.appverid:
 - MET150
 description: Läs mer om Business Assist-programmet och hur det kan hjälpa din organisation med förbättrad hjälp och användning för Microsoft 365 för företag.
-ms.openlocfilehash: 767146cbbb68ff2e6632a7cae74a8b232834b01b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ee0884ec1c95795a6a7847dfeaffdfcb2fac4beb
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929040"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768987"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Business Assist för Microsoft 365
 
 Få ut mesta mesta av prenumerationen med expertråd från småföretags specialister.
 
-**Business Assist för Microsoft 365** har utformats för företag med färre än 5 användare för att ge dig och dina anställda tillgång dygnet runt till att få tillgång till small business-specialister när du växer företaget, från introduktion till daglig användning.
+**Business Assist för Microsoft 365** har utformats för företag med färre än 5 användare som kan ge dig och dina anställda dygnet runt åtkomst till småföretagsspecialister när du växer företaget, från registrering till daglig användning.
 
 ## <a name="business-assist-services"></a>Tjänster i Business Assist
 
-||||
+|&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
-|**Kom igång snabbt** <br> Arbeta med en small business-specialist för att konfigurera Microsoft 365-funktioner som skyddar ditt företag och ger det ett professionellt utseende. |**Ge alla i företaget nya möjligheter** <br> Alla anställda, inte bara den person som ansvarar för IT-ansvarig, kan gå direkt till Microsofts experter för att få kontinuerlig support snabbare. |**Låsa upp företagets potential** <br> Läs mer om underutnyttjade funktioner och få råd om olika sätt att få ut mer värde av prenumerationen. |
+|**Kom igång snabbt** <br> Arbeta med en small business-specialist för att konfigurera Microsoft 365 funktioner som skyddar ditt företag och ger det ett professionellt utseende. |**Ge alla i företaget nya möjligheter** <br> Alla anställda, inte bara den person som ansvarar för IT-ansvarig, kan gå direkt till Microsofts experter för att få kontinuerlig support snabbare. |**Låsa upp företagets potential** <br> Läs mer om underutnyttjade funktioner och få råd om olika sätt att få ut mer värde av prenumerationen. |
 |**Påskynda molnmigrering** <br> Få anpassad hjälp med att flytta alla dina aktuella filer (e-post, lagring, dokument och kommunikation) till Microsoft 365. |**Åtkomstspecialister enkelt** <br> Vårt team tar upp konversationen där du lämnade den senast. Inga biljetter att spåra, inga robotar, inga långa väntetider. |**Håll dig uppdaterad** <br> Regelbundna checkar som hjälper dig att hålla dig aktuell när nya tjänstefunktioner läggs till och ditt företags behov utvecklas. |
 | | | |
 
@@ -42,7 +42,7 @@ Få ut mesta mesta av prenumerationen med expertråd från småföretags special
 
 ## <a name="eligibility-for-business-assist"></a>Berättigande till Business Assist
 
-Kunder med ett aktivt Microsoft 365 för företag-abonnemang kan använda business assist onboarding, migrerings- och hanteringstjänster. Organisationen måste ha 5 eller färre användarlicenser.
+Kunder med ett aktivt Microsoft 365 för företag-abonnemang kan använda Business Assist-onboarding-, migrerings- och hanteringstjänster. Organisationen måste ha 5 eller färre användarlicenser.
 
 > [!IMPORTANT]
 > Business Assist är endast tillgängligt i USA.
@@ -51,9 +51,9 @@ Kunder med ett aktivt Microsoft 365 för företag-abonnemang kan använda busine
 
 Endast organisationer som är kvalificerade ser alternativet att köpa Business Assist. Business Assist kostar 5 USD per användare per månad. Så här kan du köpa Business Assist.
 
-1. Gå till Faktureringsköpstjänster i administrationscentret för Microsoft 365.  >  
+1. I den förenklade vyn för Microsoft 365 går du till fliken **Prenumerationer** och väljer Lägg **till produkter.**
 
-2. Välj **Information** på **Small Business Assist för Microsoft 365** och slutför ditt köp.
+2. På sidan Köptjänster väljer du **Information på** Business Assist för **att Microsoft 365** slutföra ditt köp.
 
 :::image type="content" source="../../media/business-assist-april.png" alt-text="Hakbild: Köp Business Assist från avsnittet Tillägg på sidan Köptjänster":::
 

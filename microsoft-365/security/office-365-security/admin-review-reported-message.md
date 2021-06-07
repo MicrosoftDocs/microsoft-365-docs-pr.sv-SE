@@ -13,12 +13,12 @@ ms.collection:
 description: Lär dig hur du granskar meddelanden som rapporteras och ger feedback till användarna.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 619cd35b6a60f0d50aa6c13e4cad2b8d7ae947a8
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 7386f5b283e2bfabb76eee91d33dfda0e42ec7b1
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730982"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769131"
 ---
 # <a name="admin-review-for-reported-messages"></a>Administratörsgranskning för rapporterade meddelanden
 
@@ -40,12 +40,12 @@ Du kan bara markera och meddela användarna om [granskningsresultat](report-fals
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
 - Du måste vara medlem i någon av följande rollgrupper för att kunna ändra konfigurationen för användarinskick:
-    - Organisationshantering eller säkerhetsadministratör i [Säkerhetscenter](permissions-microsoft-365-compliance-security.md).
-    - Organisationshantering i [Exchange Online](/Exchange/permissions-exo/permissions-exo).
+  - Organisationshantering eller säkerhetsadministratör i [Microsoft 365 säkerhetscenter](permissions-microsoft-365-security-center.md).
+  - Organisationshantering i [Exchange Online](/Exchange/permissions-exo/permissions-exo).
 
 - Du behöver också åtkomst till programmet Exchange Online PowerShell. Om kontot som du försöker använda inte har åtkomst till Exchange Online PowerShell visas felmeddelandet Ange en e-postadress i *din domän.* Mer information om hur du aktiverar eller inaktiverar åtkomst till Exchange Online PowerShell finns i följande avsnitt:
-    - [Aktivera eller inaktivera åtkomst till Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
-    - [Klientåtkomstregler i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [Aktivera eller inaktivera åtkomst till Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
+  - [Klientåtkomstregler i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="configure-the-messages-used-to-notify-users"></a>Konfigurera meddelanden som används för att meddela användarna
 

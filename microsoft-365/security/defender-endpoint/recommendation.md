@@ -1,5 +1,5 @@
 ---
-title: Rekommendationsmetoder och egenskaper
+title: Metoder och egenskaper för rekommendation
 description: Hämtar de senaste aviseringarna.
 keywords: apis, graph api, API som stöds, skaffa, aviseringar, senaste
 search.product: eADQiWindows 10XVcnh
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 6ab4d4e1acab0e4b837195f64c369057d7ceb417
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: bd7aa2af2c7500bbe02108bb8aa5dee452ff2998
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198239"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771603"
 ---
 # <a name="recommendation-resource-type"></a>Rekommendation för resurstyp
 
@@ -42,14 +43,14 @@ ms.locfileid: "51198239"
 Metod |Returtyp |Beskrivning
 :---|:---|:---
 [Lista alla rekommendationer](get-all-recommendations.md) | Samling med rekommendation | Hämtar en lista över alla säkerhetsrekommendationer som påverkar organisationen
-[Få rekommendation från Id](get-recommendation-by-id.md) | Rekommendation | Hämtar en säkerhetsrekommendationer genom sitt ID
+[Hämta rekommendationen efter Id](get-recommendation-by-id.md) | Rekommendation | Hämtar en säkerhetsrekommendationer genom sitt ID
 [Skaffa programvara som du rekommenderas](get-recommendation-software.md)| [Programvara](software.md) | Hämtar en säkerhetsrekommendationer för en viss programvara
 [Få rekommendationsenheter](get-recommendation-machines.md)|MachineRef-samling | Hämtar en lista över enheter som är kopplade till säkerhetsrekommendationer
 [Få rekommendationer om säkerhetsproblem](get-recommendation-vulnerabilities.md) | [Sårbarhetssamling](vulnerability.md) | Hämtar en lista över säkerhetsproblem som är knutna till säkerhetsrekommendationer
 
 
 ## <a name="properties"></a>Egenskaper
-Egenskap |   Skriv   |   Beskrivning
+Egenskap |   Typ   |   Beskrivning
 :---|:---|:---
 id | Sträng | Rekommendations-ID
 productName | Sträng | Namn på relaterad programvara  

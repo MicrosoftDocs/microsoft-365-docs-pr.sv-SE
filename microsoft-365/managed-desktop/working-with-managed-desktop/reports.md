@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 28035a9f0a669c1daa7526d0b1fefac52a77c81a
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b37ce09a0781aa83970502224ddbb3658ed07d69
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52729974"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771891"
 ---
 # <a name="work-with-reports"></a>Arbeta med rapporter
 
-Microsoft Hanterat skrivbord flera rapporter och instrumentpaneler som IT-administratörer i organisationen kan använda för att förstå olika aspekter av populationen av enheter.Du hittar rapporter på två platser: i Microsoft Endpoint Manager [och](https://endpoint.microsoft.com) i [Microsoft 365 Administrationscenter](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop). 
+Microsoft Hanterat skrivbord flera rapporter och instrumentpaneler som IT-administratörer i organisationen kan använda för att förstå olika aspekter av populationen av enheter. 
 
 ## <a name="reports-in-microsoft-endpoint-manager"></a>Rapporter i Microsoft Endpoint Manager
 
@@ -37,6 +37,13 @@ På flera platser i hela Microsoft Endpoint Manager kan du dessutom filtrera rap
 > [!NOTE]
 > Anpassade Microsoft Hanterat skrivbord-roller garanterar att du bara har Microsoft Hanterat skrivbord åtkomst till rapporterna. Information om hur du kommer Microsoft Endpoint Manager, **till** exempel Alla enheter, finns i [Rollbaserad åtkomstkontroll med Microsoft Intune.](/mem/intune/fundamentals/role-based-access-control) 
 
+## <a name="endpoint-analytics"></a>Slutpunktsanalyser
+Microsoft Hanterat skrivbord är nu integrerat med [Slutpunktsanalys.](/mem/analytics/overview) De här rapporterna ger dig insikter som mäter hur organisationen arbetar och kvaliteten på den upplevelse du levererat till användarna. Slutpunktsanalys finns i **menyn** Rapporter i [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Om du vill pivotera ett poängresultat för att endast inkludera enheter som hanteras av Microsoft Hanterat skrivbord går du till en rapport, väljer listrutan **Filter** och väljer **sedan Microsoft Hanterat skrivbord enheter**.
+
+Om Slutpunktsanalyser inte konfigurerades automatiskt för din Azure AD-organisation ("klientorganisation") under registreringen kan du göra det själv. Mer information finns i Introduktion [i Portalen för slutpunktsanalys](/mem/analytics/enroll-intune#bkmk_onboard). Du kan registrera alla dina enheter eller, om du bara vill inkludera Microsoft Hanterat skrivbord enheter, välja grupperna för **moderna** enheter på arbetsplatsen för Test, Första, Snabb och Bred. De här rapporterna kan kräva olika behörigheter. Mer information finns i Behörigheter [för](/mem/analytics/overview#permissions) att säkerställa att du har roller som tilldelats på rätt sätt.
+
+> [!NOTE]
+> För att bättre respektera sekretess för användarnas sekretess måste det finnas fler än 10 Microsoft Hanterat skrivbord enheter som är registrerade med Slutpunktsanalys för att använda det här filtret.
 
  ## <a name="inventory-data"></a>Lagerdata
 

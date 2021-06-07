@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.custom: api
+ms.openlocfilehash: 6716b0eb029b49ec08cb52ebefc23e50b19036ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903124"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771675"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Hämta Microsoft Defender för slutpunktsidentifiering med HJÄLP av SIEM REST API
 
@@ -52,7 +53,7 @@ OAuth 2.0-protokollet har i allmänhet stöd för fyra typer av flöden:
 
 Mer information om OAuth-specifikationer finns på [OAuth-webbplatsen.](http://www.oauth.net)
 
-Microsoft Defender för  Endpoint har  stöd för flöde för auktoriseringsauktorisering och autentiseringsuppgifter för klient för att få åtkomst till identifieringar med Azure Active Directory (AAD) som auktoriseringsserver.
+Microsoft Defender för  Endpoint har  stöd för flöde för auktoriseringsauktorisering och autentiseringsuppgifter för klient för att få åtkomst till dragsidentifieringarna, med Azure Active Directory (AAD) som auktoriseringsserver.
 
 Flödet för auktoriseringsauktoriseringsautentisering använder användarautentiseringsuppgifter för att få en auktoriseringskod som sedan används för att hämta en åtkomsttoken. 
 
@@ -61,7 +62,7 @@ Flödet _för autentiseringsuppgifter för klient använder_ klientautentisering
 Använd följande metod i Microsoft Defender för Endpoint API för att hämta identifieringar i JSON-format.
 
 >[!NOTE]
->I Microsoft Defender Säkerhetscenter slås liknande aviseringsidentifiering ihop till en enda avisering. Detta API hämtar aviseringsidentifiering i sin rådata utifrån de frågeparametrar du anger, så att du kan använda din egen gruppering och filtrering. 
+>Microsoft Defender Säkerhetscenter slår samman liknande aviseringsidentifiering till en enda avisering. Detta API hämtar aviseringsidentifiering i sin rådata utifrån de frågeparametrar du anger, så att du kan använda din egen gruppering och filtrering. 
 
 ## <a name="before-you-begin"></a>Innan du börjar
 - Innan du anropar Microsoft Defender för slutpunktsslutpunkten för att hämta identifieringar måste du aktivera SIEM-integrationsprogrammet i Azure Active Directory (AAD). Mer information finns i Aktivera [SIEM-integrering i Microsoft Defender för slutpunkt.](enable-siem-integration.md)
@@ -111,7 +112,7 @@ Metod | Begär URI
 SKAFFA| Använd URI:en som gäller för din region. <br><br> **För EU:**`https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **För USA:**`https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **För Storbritannien:**`https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
 ### <a name="request-header"></a>Sidhuvud för begäran
-Sidhuvud | Skriv | Beskrivning|
+Sidhuvud | Typ | Beskrivning|
 :--|:--|:--
 Auktorisering | sträng | Obligatoriskt. Azure AD-åtkomsttoken i formuläret **Bearer-token.** &lt;  &gt; |
 

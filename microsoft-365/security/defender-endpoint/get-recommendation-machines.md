@@ -1,7 +1,7 @@
 ---
 title: Lista enheter enligt rekommendation
 description: Hämtar en lista över enheter som är kopplade till säkerhetsrekommendationerna.
-keywords: apis, graph api, API som stöds, få, säkerhetsrekommendationer för sårbara enheter, hot och sårbarhetshantering, API för hot och sårbarhetshantering
+keywords: apis, graph api, api som stöds, få, säkerhetsrekommendationer för sårbara enheter, Hantering av hot och säkerhetsrisker, Hantering av hot och säkerhetsrisker api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 515542f6eca208e92228a8d0b344b6013b11a148
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 6c762a15051444ec950e92998317db4f7e51783c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198278"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771819"
 ---
 # <a name="list-devices-by-recommendation"></a>Lista enheter enligt rekommendation
 
@@ -52,7 +54,7 @@ GET /api/recommendations/{id}/machineReferences
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

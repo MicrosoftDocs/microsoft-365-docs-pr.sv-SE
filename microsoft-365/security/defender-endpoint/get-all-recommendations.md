@@ -1,7 +1,7 @@
 ---
 title: Lista alla rekommendationer
 description: Hämtar en lista över alla säkerhetsrekommendationer som påverkar organisationen.
-keywords: apis, graph api, api som stöds, få, säkerhetsrekommendationer, Microsoft Defender för Endpoint tvm api, api för hot och sårbarhetshantering, API för hot och sårbarhetshantering
+keywords: apis, graph api, api som stöds, få, säkerhetsrekommendationer, Microsoft Defender för Endpoint tvm api, Hantering av hot och säkerhetsrisker, Hantering av hot och säkerhetsrisker api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0cb0a1f8a42b419db960e5097667c335bf7f7877
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 0a58287a9bd48a4d19144a40674e1d3ad3bd256a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935023"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768939"
 ---
 # <a name="list-all-recommendations"></a>Lista alla rekommendationer
 
@@ -56,7 +57,7 @@ GET /api/recommendations
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

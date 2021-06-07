@@ -1,7 +1,7 @@
 ---
 title: Använda Microsoft Defender för slutpunkts-API:er
 ms.reviewer: ''
-description: Lär dig hur du designar en inbyggd Windows-app för att få programåtkomst till Microsoft Defender för Endpoint utan en användare.
+description: Lär dig hur du utformar en Windows-app för att få programtisk åtkomst till Microsoft Defender för Endpoint utan en användare.
 keywords: apis, graph api, apis som stöds, aktör, aviseringar, enhet, användare, domän, ip, fil, avancerad sökning, fråga
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 5e59ff75a7933cf52af857f1a41b0925aa7bb47a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 8f23a0b269986f4caa199ad3744c563fcc6ff6b2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198947"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769107"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Använda Microsoft Defender för slutpunkts-API:er
 
@@ -43,7 +44,7 @@ Om du behöver programmeringsåtkomst till Microsoft Defender för Slutpunkt uta
 
 Om du inte är säker på vilken åtkomst du behöver kan du läsa [introduktionssidan.](apis-intro.md)
 
-Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De här API:erna gör det möjligt att automatisera arbetsflöden och nya funktioner baserat på Microsoft Defender för Slutpunkt-funktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 Auktoriseringskodflöde](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De här API:erna gör det möjligt att automatisera arbetsflöden och nya funktioner baserat på Microsoft Defender för Slutpunkt-funktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 auktoriseringskod för Flow.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 I allmänhet måste du vidta följande steg för att använda API:er:
 - Skapa ett AAD-program
@@ -63,9 +64,9 @@ På den här sidan förklaras hur du skapar ett AAD-program, hämtar en åtkomst
 
 1. Logga in på [Azure](https://portal.azure.com) med ett användarkonto som har **rollen Global** administratör.
 
-2. Gå till **Azure Active Directory-appregistreringar**  >    >  **Ny registrering.** 
+2. Gå till **Azure Active Directory**  >  **Appregistreringar**  >  **Ny registrering.** 
 
-   ![Bild av Microsoft Azure och navigering till programregistrering](images/atp-azure-new-app2.png)
+   ![Bild av Microsoft Azure navigering till registrering av program](images/atp-azure-new-app2.png)
 
 3. När sidan **Registrera ett program** visas anger du registreringsinformationen för ditt program:
 

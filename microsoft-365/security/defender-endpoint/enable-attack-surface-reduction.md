@@ -9,22 +9,21 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b3460e2c9b6073c518bea46147be69d4b89cd96a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/02/2021
+ms.openlocfilehash: 5bdb7ed46bdf01d4fb6075f310b98dcdb98a5a7f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538645"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771927"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivera regler för minskning av attackytan
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
@@ -32,7 +31,7 @@ ms.locfileid: "52538645"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
 
 [Minskningsregler för attackytor](attack-surface-reduction.md) (ASR-regler) hjälper till att förhindra åtgärder som ofta används för missbruk av skadlig programvara för att avslöja enheter och nätverk.
 
@@ -55,7 +54,7 @@ Varje ASR-regel innehåller en av fyra inställningar:
 > [!IMPORTANT]
 > För närvarande stöds inte varningsläge för tre ASR-regler när du konfigurerar ASR-regler i Microsoft Endpoint Manager (MEM). Mer information finns i [Fall där varningsläge inte stöds.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-Vi rekommenderar starkt att du använder ASR-regler med en Windows E5-licens (eller liknande licens-SKU) för att dra nytta av de avancerade funktioner för övervakning och rapportering som finns tillgängliga i [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) för slutpunkt (Defender för slutpunkt). Men för andra licenser som Windows Professional eller E3 som inte har tillgång till avancerade funktioner för övervakning och rapportering kan du utveckla dina egna övervakning- och rapporteringsverktyg ovanpå händelser som genereras vid varje slutpunkt när ASR-regler utlöses (t.ex. vidarebefordran av händelse).
+Vi rekommenderar starkt att du använder ASR-regler med en Windows E5-licens (eller liknande licens-SKU) för att dra nytta av de avancerade funktioner för övervakning och rapportering som finns tillgängliga i [Microsoft Defender](microsoft-defender-endpoint.md) för slutpunkt (Defender för slutpunkt). Men om du har en annan licens, till exempel Windows Professional eller Windows E3 som inte innehåller avancerad övervakning och rapporteringsfunktioner, kan du utveckla dina egna övervaknings- och rapporteringsverktyg ovanpå händelser som genereras vid varje slutpunkt när ASR-regler utlöses (t.ex. vidarebefordran av händelse).
 
 > [!TIP]
 > Mer information om Windows finns i [Windows 10 licensiering](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) och få [volymlicensieringsguiden för Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -74,7 +73,7 @@ Hantering på företagsnivå, till exempel Intune eller Microsoft Endpoint Manag
 
 Du kan utesluta filer och mappar från att utvärderas av de flesta minskningsregler för attackytor. Det innebär att även om en ASR-regel bestämmer att filen eller mappen innehåller skadligt beteende blockerar den inte filen från att köras. Det kan potentiellt tillåta att osäkra filer körs och smittar dina enheter.
 
-Du kan även utesluta ASR-regler från utlösare baserat på certifikat och filshashar genom att tillåta angiven Defender för Slutpunktsfil och certifikatindikatorer. (Se [Hantera indikatorer](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators).)
+Du kan även utesluta ASR-regler från utlösare baserat på certifikat och filshashar genom att tillåta angiven Defender för Slutpunktsfil och certifikatindikatorer. (Se [Hantera indikatorer](manage-indicators.md).)
 
 > [!IMPORTANT]
 > Att utesluta filer eller mappar kan allvarligt minska skyddet som ges av ASR-regler. Undantagna filer tillåts köras och ingen rapport eller händelse registreras.
@@ -82,7 +81,7 @@ Du kan även utesluta ASR-regler från utlösare baserat på certifikat och fils
 
 Du kan ange enskilda filer eller mappar (med hjälp av mappsökvägar eller fullständigt kvalificerade resursnamn), men du kan inte ange vilka regler undantagen ska gälla för. Ett undantag tillämpas endast när det undantagna programmet eller tjänsten startas. Om du till exempel lägger till ett undantag för en uppdateringstjänst som redan körs fortsätter uppdateringstjänsten att utlösa händelser tills tjänsten stoppas och startas om.
 
-ASR-regler stöder miljövariabler och jokertecken. Information om hur du använder jokertecken finns i Använda jokertecken i listorna filnamn och [mappsökväg eller undantag för filnamnstillägg.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
+ASR-regler stöder miljövariabler och jokertecken. Information om hur du använder jokertecken finns i Använda jokertecken i listorna filnamn och [mappsökväg eller undantag för filnamnstillägg.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
 
 Följande procedurer för att aktivera ASR-regler innehåller instruktioner för hur du utesluter filer och mappar.
 
@@ -180,7 +179,7 @@ Du kan använda Microsoft Endpoint Manager (MEM) OMA-URI för att konfigurera an
 
 ## <a name="mdm"></a>MDM
 
-Använd [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) för att individuellt aktivera och ställa in läget för varje regel.
+Använd [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) för att individuellt aktivera och ställa in läget för varje regel.
 
 Följande är ett exempel för referens där [GUID-värden för ASR-regler används.](attack-surface-reduction.md#attack-surface-reduction-rules)
 
@@ -195,7 +194,7 @@ Värdena som du aktiverar (blockera), inaktiverar, varnar eller aktiverar i gran
 - 2: Granska (Utvärdera hur ASR-regeln skulle påverka organisationen om den skulle aktiveras)
 - 6: Varna (aktivera ASR-regeln men tillåt slutanvändaren att kringgå blocket). Varningsläge är nu tillgängligt för de flesta ASR-regler.
 
-Använd [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions-konfigurationstjänsten](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) för att lägga till undantag.
+Använd [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions-konfigurationstjänsten](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) för att lägga till undantag.
 
 Exempel:
 
@@ -275,7 +274,7 @@ Exempel:
     Använd följande cmdlet för att aktivera ASR Blockera missbruk av utnyttjas sårbara signerade drivrutiner:
 
    ```PowerShell
-   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled
    ```
 
     Om du vill inaktivera ASR-regler använder du följande cmdlet:

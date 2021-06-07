@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 487fc87c613d7321e3ae608097d98d2c90f8874e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639413"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771915"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender för Slutpunkt i Microsoft 365 säkerhetscenter
 
@@ -177,6 +177,10 @@ Om du använder [Defender för slutpunkt SIEM API](../defender-endpoint/enable-s
 ### <a name="email-alerts"></a>E-postaviseringar
 
 Du kan fortsätta att använda e-postaviseringar för Defender för Endpoint. Vi har lagt till nya länkar i e-postmeddelandena som pekar på aviseringssidan eller incidentsidan i Microsoft 365 Säkerhetscenter. Mer information finns i [Omdirigera konton från Microsoft Defender för Endpoint till säkerhetscentret Microsoft 365 Microsoft Defender.](./microsoft-365-security-mde-redirection.md)
+
+### <a name="managed-security-service-providers-mssp"></a>Tjänstleverantörer för hanterade säkerhetstjänster (MSSP)
+
+Det går för närvarande inte att logga in på flera klientorganisationar samtidigt i samma webbläsarsession i den enhetliga portalen. Du kan avanmäla dig från den automatiska omdirigeringen genom att återgå till den tidigare Microsoft Defender för [Endpoint-portalen](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal), så att funktionen bibehålls tills problemet är löst.
 
 ## <a name="related-information"></a>Relaterad information
 

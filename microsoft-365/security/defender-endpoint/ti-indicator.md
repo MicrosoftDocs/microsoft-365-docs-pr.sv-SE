@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bbd908c15f4d65d4923c088261c92de6d2d3cc35
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 75b62f1bada67c30dc05237a284f8b64c3c7072d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187315"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771387"
 ---
 # <a name="indicator-resource-type"></a>Indikatorresurstyp
 
@@ -42,14 +43,14 @@ ms.locfileid: "51187315"
 
 Metod|Returtyp |Beskrivning
 :---|:---|:---
-[Listindikatorer](get-ti-indicators-collection.md) | [Indikator](ti-indicator.md) Samling | Enheter [med listindikator.](ti-indicator.md)
-[Indikator för skicka](post-ti-indicator.md) | [Indikator](ti-indicator.md) | Skicka eller uppdatera [indikator entitet.](ti-indicator.md)
-[Importera indikatorer](import-ti-indicators.md) | [Indikator](ti-indicator.md) Samling | Skicka eller uppdatera [indikatorer.](ti-indicator.md)
-[Ta bort-indikator](delete-ti-indicator-by-id.md) | Inget innehåll | Tar bort [indikator entitet.](ti-indicator.md)
+[Lista indikatorer](get-ti-indicators-collection.md) | [Indikator](ti-indicator.md) Samling | Enheter [med listindikator.](ti-indicator.md)
+[Skicka indikator](post-ti-indicator.md) | [Indikator](ti-indicator.md) | Skicka eller uppdatera [indikator entitet.](ti-indicator.md)
+[Importindikatorer](import-ti-indicators.md) | [Indikator](ti-indicator.md) Samling | Skicka eller uppdatera [indikatorer.](ti-indicator.md)
+[Ta bort indikator](delete-ti-indicator-by-id.md) | Inget innehåll | Tar bort [indikator entitet.](ti-indicator.md)
 
 
 ## <a name="properties"></a>Egenskaper
-Egenskap |  Skriv    |   Beskrivning
+Egenskap |  Typ    |   Beskrivning
 :---|:---|:---
 id | Sträng | Identiteten för [indikatorenheten.](ti-indicator.md)
 indicatorValue | Sträng | Värdet på [indikatorn](ti-indicator.md).

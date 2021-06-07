@@ -1,7 +1,7 @@
 ---
 title: Få rekommendation från Id
 description: Hämtar en säkerhetsrekommendationer genom dess ID.
-keywords: apis, graph api, api som stöds, få, säkerhetsrekommendationer, säkerhetsrekommendationer genom ID, hantering av hot och sårbarhet, api för hot och sårbarhetshantering
+keywords: apis, graph api, api som stöds, få, säkerhetsrekommendationer, säkerhetsrekommendationer genom ID, Hantering av hot och säkerhetsrisker, Hantering av hot och säkerhetsrisker api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 45a151fc5855a4a2b1ba63a50b54737c90e6bdd1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 4ec4758453f43cb211143918ed5fe8fe83e91c3f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199519"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771807"
 ---
-# <a name="get-recommendation-by-id"></a>Få rekommendation via ID
+# <a name="get-recommendation-by-id"></a>Hämta rekommendation efter ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -53,7 +55,7 @@ GET /api/recommendations/{id}
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

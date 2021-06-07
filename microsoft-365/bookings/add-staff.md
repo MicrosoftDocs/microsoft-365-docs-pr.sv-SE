@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Använd den här sidan för att skapa en personallista och hantera personalinformation som namn, telefonnummer och e-postadress.
-ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 23757c492986936125eff1203e6a99231164da22
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683325"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768951"
 ---
 # <a name="add-staff-to-bookings"></a>Lägg till personal i Bookings
 
@@ -23,7 +23,7 @@ På sidan Personal i Bookings skapar du en personallista och hanterar personalin
 
 Även om Bookings är en Microsoft 365 är det inte alla anställda som måste ha ett Microsoft 365 konto. Alla anställda måste ha en giltig e-postadress för att kunna ta emot bokningar och schemalägga ändringar.
 
-## <a name="watch-add-your-staff-in-microsoft-bookings"></a>Titta: Lägga till personal i Microsoft Bookings
+## <a name="watch-add-your-staff-to-bookings"></a>Titta: Lägg till personal i Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
@@ -67,14 +67,39 @@ På sidan Personal i Bookings skapar du en personallista och hanterar personalin
     > [!NOTE]
     > När du tilldelar personal till en tjänst är det bara de 31 första anställda som du lägger till på personalsidan som visas.
 
-## <a name="next-steps"></a>Nästa steg
+## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>Göra en Bookings-användare till superanvändare utan att lägga till dem som personal i Bookings
 
-När du har lagt till anställda kan du [schemalägga företagets stängningar](schedule-closures-time-off-vacation.md) och samt ange [principer för schemaläggning.](set-scheduling-policies.md)
+Du kanske vill lägga till en person i personallistan i Bookings utan att göra dem tillgängliga för kunder eller kunder. När du gör dem till superanvändare blir de administratör för bokningspostlådan. Att vara administratör för en bokningspostlåda definieras som att ha fullständig åtkomst och behörighet att skicka som till bokningspostlådan.
 
-## <a name="related-content"></a>Relaterat innehåll
+> [!NOTE]
+> De här stegen fungerar bara om den användare som läggs till inte redan har tilldelats en **visningsroll** i Bookings.
 
-[Microsoft Bookings](bookings-overview.md)
+1. [Anslut att Microsoft 365 med PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-[Schemalägga verksamhetsslut, ledighet och semesterdagar](schedule-closures-time-off-vacation.md)
+2. Tilldela fullständig åtkomst med följande kommandon med hjälp av PowerShell:
 
-[Ange dina principer för schemaläggning](set-scheduling-policies.md)
+    ```powershell
+    Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
+    ```
+
+3. Kör sedan det här kommandot för att tilldela behörigheten Skicka som.
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+Här är ett exempel på PowerShell-kommando för att lägga till Allie Bellew i Contosos dagkalenders bokningspostlåda.
+
+1. Kör först det här kommandot:
+
+    ```powershell
+    Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
+    ```
+
+2. Kör sedan det här kommandot:
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+**Nu har Allie Bellew** administratörsåtkomst, men visas inte som bokbar personal i Bookings.

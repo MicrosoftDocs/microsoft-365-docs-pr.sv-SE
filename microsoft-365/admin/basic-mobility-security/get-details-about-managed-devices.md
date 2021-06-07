@@ -18,16 +18,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Använd Windows PowerShell för att få information om Basic Mobility- och Security-enheter i din organisation.
-ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7cb2369c9a31210f26db12b0453e7a4228e1cccc
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904258"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782447"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Få information om hanterade enheter för enkel rörlighet och säkerhet
 
-Den här artikeln visar hur du använder Windows PowerShell för att få information om de enheter i din organisation som du konfigurerade för grundläggande rörlighet och säkerhet.
+Den här artikeln visar hur du Windows PowerShell för att få information om de enheter i din organisation som du konfigurerade för Basic Mobility and Security.
 
 Här är en sammanfattning av den enhetsinformation som är tillgänglig för dig.
 
@@ -39,17 +39,17 @@ Här är en sammanfattning av den enhetsinformation som är tillgänglig för di
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="PowerShell-parametrarna Basic Mobility and Security":::
 
 >[!NOTE]
->Kommandona och skripten i den här artikeln returnerar också information om enheter som hanteras av [Microsoft Intune.](https://www.microsoft.com/cloud-platform/microsoft-intune)
+>Kommandona och skripten i den här artikeln returnerar också information om enheter som hanteras [av Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
 Det finns några saker du behöver konfigurera för att köra de kommandon och skript som beskrivs i den här artikeln.
 
-### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>Steg 1: Ladda ned och installera Azure Active Directory-modulen för Windows PowerShell
+### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>Steg 1: Ladda ned och installera Azure Active Directory modul för Windows PowerShell
 
-Mer information om de här instruktionerna finns i [Ansluta till Microsoft 365 med PowerShell.](/office365/enterprise/powershell/connect-to-office-365-powershell)
+Mer information om de här anvisningarna finns i [Anslut att Microsoft 365 med PowerShell.](/office365/enterprise/powershell/connect-to-office-365-powershell)
 
-1. Gå till [Microsoft Online Services Sign-In assistenten för IT-proffs RTWl](https://www.microsoft.com/download/details.aspx?id=41950)och välj Ladda   ned för Microsoft Online Services –  **inloggningsassistent.**
+1. Gå till [Microsoft Online Services Sign-In assistenten för IT-proffs RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)och välj Ladda   ned för Microsoft Online Services –  **inloggningsassistent.**
 
 2. Installera Microsoft Azure Active Directory-modulen för Windows PowerShell genom att följa de här stegen:
 
@@ -63,13 +63,13 @@ Mer information om de här instruktionerna finns i [Ansluta till Microsoft 365
 
     5. Stäng PowerShell-kommandofönstret efter installationen.
 
-### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>Steg 2: Anslut till din Microsoft 365-prenumeration
+### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>Steg 2: Anslut din Microsoft 365 prenumeration
 
-1. Kör följande kommando i Windows Azure Active Directory-modulen för Windows PowerShell.  
+1. Kör Windows Azure Active Directory i Windows PowerShell i modulen för Windows PowerShell.  
 
     $UserCredential = Get-Credential
 
-2. I dialogrutan Begäran om autentiseringsuppgifter för Windows PowerShell anger du användarnamn och lösenord för ditt globala administratörskonto för Microsoft 365 och väljer sedan **OK.**
+2. I dialogrutan Windows PowerShell Begäran om autentiseringsuppgifter anger du användarnamn och lösenord för ditt Microsoft 365 globala administratörskonto och väljer sedan **OK.**
 
 3. Kör följande kommando.
 
@@ -82,7 +82,7 @@ Mer information om de här instruktionerna finns i [Ansluta till Microsoft 365
 
 Om du Get-MsolUserDeviceComplianceStatus.ps1 skriptet måste du aktivera körningen av PowerShell-skript.
 
-1. Välj Start på skrivbordet i **Windows** och skriv sedan Windows PowerShell. Högerklicka på Windows PowerShell och välj sedan **Kör som administratör.**
+1. Välj Start Windows skrivbordet **och** skriv sedan texten Windows PowerShell. Högerklicka på Windows PowerShell välj sedan **Kör som administratör.**
 
 2. Kör följande kommando.
 
@@ -92,7 +92,7 @@ Om du Get-MsolUserDeviceComplianceStatus.ps1 skriptet måste du aktivera körnin
 
 **Kör cmdleten Get-MsolDevice-cmdleten för att visa information om alla enheter i organisationen**
 
-1. Öppna Microsoft Azure Active Directory-modulen för Windows PowerShell.  
+1. Öppna Microsoft Azure Active Directory för Windows PowerShell.  
 
 2. Kör följande kommando.
 
@@ -263,11 +263,11 @@ Börja med att spara skriptet på datorn.
 70.  }
     
 
-71.  Spara den som en Windows PowerShell-skriptfil med filtillägget PS1. till exempel Get-MsolUserDeviceComplianceStatus.ps1.   
+71.  Spara den som Windows PowerShell skriptfil med filtillägget .ps1; till exempel Get-MsolUserDeviceComplianceStatus.ps1.   
 
 ## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>Kör skriptet för att hämta enhetsinformation för ett enskilt användarkonto
 
-1. Öppna Microsoft Azure Active Directory-modulen för Windows PowerShell.
+1. Öppna Microsoft Azure Active Directory för Windows PowerShell.
     
 2. Gå till mappen där du sparade skriptet. Om du till exempel sparade det i C:\PS-Scripts kör du följande kommando.
     
@@ -281,11 +281,11 @@ Börja med att spara skriptet på datorn.
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-Informationen exporteras till Windows-skrivbordet som en CSV-fil. Du kan använda ytterligare parametrar för att ange CSV-filens namn och sökväg.
+Informationen exporteras till ditt Windows som en CSV-fil. Du kan använda ytterligare parametrar för att ange CSV-filens namn och sökväg.
 
 ## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Kör skriptet för att hämta enhetsinformation för en grupp användare
 
-1. Öppna Microsoft Azure Active Directory-modulen för Windows PowerShell.
+1. Öppna Microsoft Azure Active Directory för Windows PowerShell.
     
 2. Gå till mappen där du sparade skriptet. Om du till exempel sparade det i C:\PS-Scripts kör du följande kommando.   
 
@@ -299,11 +299,11 @@ Informationen exporteras till Windows-skrivbordet som en CSV-fil. Du kan använd
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-Informationen exporteras till Windows-skrivbordet som en CSV-fil. Du kan använda ytterligare parametrar för att ange CSV-filens namn och sökväg.
+Informationen exporteras till ditt Windows som en CSV-fil. Du kan använda ytterligare parametrar för att ange CSV-filens namn och sökväg.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Microsoft Connect har tagits bort](/collaborate/connect-redirect)
+[Microsoft Anslut har tagits ur bruk](/collaborate/connect-redirect)
 
 [Översikt över grundläggande Mobility and Security](overview.md)
 

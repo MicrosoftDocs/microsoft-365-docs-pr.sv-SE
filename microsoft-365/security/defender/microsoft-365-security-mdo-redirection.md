@@ -1,5 +1,5 @@
 ---
-title: Omdirigera konton från Microsoft Defender för Office 365 till det nya Microsoft 365 säkerhetscentret
+title: Omdirigera konton från säkerhets- Office 365 säkerhets- och efterlevnadscenter till det nya säkerhetscentret Microsoft 365 säkerhetscenter
 description: Hur du omdirigerar från Defender för Office 365 till Microsoft 365 säkerhetscenter.
 keywords: Microsoft 365 säkerhetscenter, Komma igång med Microsoft 365 säkerhetscenter, omdirigering av säkerhetscenter
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 703d3c3c9086aa2bdfada560c009e8738dffbb18
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651386"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768975"
 ---
-# <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>Omdirigera konton från Microsoft Defender för Office 365 till Microsoft 365 säkerhetscenter
+# <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-security-center"></a>Omdirigera konton från säkerhets- Office 365 säkerhets- och efterlevnadscenter till Microsoft 365 säkerhetscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "52651386"
 - Microsoft 365 Defender
 - Defender förr Office 365
 
-Den här artikeln förklarar hur du dirigerar konton till säkerhetscentret i Microsoft 365 genom att aktivera automatisk omdirigering från det tidigare Säkerhets- och efterlevnadscentret för Microsoft (protection.office.com eller securitycenter.microsoft.com) till säkerhetscentret i Microsoft 365 (security.microsoft.com).
+Den här artikeln förklarar hur du dirigerar konton till säkerhetscentret i Microsoft 365 genom att aktivera automatisk omdirigering från det tidigare säkerhets- och efterlevnadscentret för Office 365 (protection.office.com) till säkerhetscentret i Microsoft 365 (security.microsoft.com).
 
 ## <a name="what-to-expect"></a>Vad du kan förvänta dig
 När automatisk omdirigering har aktiverats och aktiverats dirigeras användare som har åtkomst till säkerhetsrelaterade funktioner i Office 365 Security and Compliance (protection.office.com) automatiskt till säkerhetscentret i Microsoft 365 ( https://security.microsoft.com) .  

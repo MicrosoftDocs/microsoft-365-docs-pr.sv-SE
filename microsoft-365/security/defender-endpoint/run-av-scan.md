@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d0db45daa786c1a44272e4d02153af3fe658e781
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3df703fd84c87a2bd34bb2a81f8c83063e468b17
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200215"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771457"
 ---
 # <a name="run-antivirus-scan-api"></a>Kör API för antivirusskanning
 
@@ -35,7 +36,7 @@ ms.locfileid: "51200215"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API-beskrivning
-Starta en sökning i Microsoft Defender Antivirus på en enhet.
+Starta Microsoft Defender Antivirus sökning på en enhet.
 
 
 ## <a name="limitations"></a>Begränsningar
@@ -64,7 +65,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 Innehållstyp | sträng | application/json
@@ -72,7 +73,7 @@ Innehållstyp | sträng | application/json
 ## <a name="request-body"></a>Begärans brödtext
 Ange följande parametrar för ett JSON-objekt i begärans brödtext:
 
-Parameter | Skriv    | Beskrivning
+Parameter | Typ    | Beskrivning
 :---|:---|:---
 Kommentar |   Sträng | Kommentar som ska associeras med åtgärden. **Obligatoriskt.**
 ScanType|   Sträng  | Definierar typen av sökning. **Obligatoriskt.**

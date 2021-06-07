@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 229c1f9e77a0cb85744155e82934b48dd63052b2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3aa58f3df4a4c3562cbd4dfbf6113c30816e2a0f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933415"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769227"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>Lista sårbarheter efter maskin och programvara
 
@@ -43,7 +44,7 @@ Hämtar en lista över alla säkerhetsproblem som påverkar organisationen per [
 - OData ```$filter``` stöds för alla egenskaper.
 
 >[!Tip]
->Det här är bra API för [Power BI-integrering.](api-power-bi.md)
+>Det här är bra API för [Power BI integration.](api-power-bi.md)
 
 ## <a name="permissions"></a>Behörigheter
 En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md) för mer information.
@@ -60,7 +61,7 @@ GET /api/vulnerabilities/machinesVulnerabilities
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 
@@ -119,5 +120,5 @@ Här är ett exempel på svaret.
 
 ## <a name="see-also"></a>Se även
 
-- [Riskbaserade hot och sårbarhetshantering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Riskbaserade Hantering av hot och säkerhetsrisker](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Svagheter i organisationen](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

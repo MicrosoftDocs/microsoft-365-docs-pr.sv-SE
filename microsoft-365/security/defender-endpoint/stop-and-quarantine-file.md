@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 670282f0f87092437bb1f3c6bf7be908e4649042
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ac14f1ecda2b6256dc19223869b8878e6e725b96
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199735"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771419"
 ---
 # <a name="stop-and-quarantine-file-api"></a>API:t för att stoppa och sätta i karantän
 
@@ -65,7 +66,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 Innehållstyp | sträng | application/json. **Obligatoriskt.**
@@ -73,7 +74,7 @@ Innehållstyp | sträng | application/json. **Obligatoriskt.**
 ## <a name="request-body"></a>Begärans brödtext
 Ange följande parametrar för ett JSON-objekt i begärans brödtext:
 
-Parameter | Skriv    | Beskrivning
+Parameter | Typ    | Beskrivning
 :---|:---|:---
 Kommentar |   Sträng |    Kommentar som ska associeras med åtgärden. **Obligatoriskt.**
 Sha1 |  Sträng   | Skuggning1 av filen för att stoppa och sätta i karantän på enheten. **Obligatoriskt.**

@@ -21,12 +21,12 @@ description: I Microsoft 365 – läs mer om de funktioner som har lagts till de
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639558"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769092"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i Microsoft 365 administrationscenter
 
@@ -56,17 +56,17 @@ Och om du vill veta vad som är nytt i andra Microsoft-molntjänster:
 
 ### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>Håll reda på uppdateringar av support ärende med admin-mobilappen
 
-För alla tjänstförfrågningar som skapats i din klientorganisation kan du nu hålla reda på statusen för en biljett, visa biljettinformation och ge /begär ytterligare information genom att lägga till anteckningar & bifogade filer. 
+För alla tjänstförfrågningar som skapats i din klientorganisation kan du nu hålla reda på statusen för en biljett, visa biljettinformation och ge /begär ytterligare information genom att lägga till anteckningar & bifogade filer.
 
-:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="Skärmbild: Spåra uppdateringar av support ärende":::
+:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="Skärmbild: Spåra uppdateringar av support ärende":::
 
-### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Håll dig borta från alla de viktigaste uppdateringarna för appen och din Microsoft 365 prenumeration 
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Håll dig borta från alla de viktigaste uppdateringarna för appen och din Microsoft 365 prenumeration
 
-- Håll dig borta från alla de viktigaste uppdateringarna för Microsoft 365-prenumerationen via push-meddelanden i Meddelandecenter (nu aktiverat som standard). 
+- Håll dig borta från alla de viktigaste uppdateringarna för Microsoft 365-prenumerationen via push-meddelanden i Meddelandecenter (nu aktiverat som standard).
 
 - Håll reda på de senaste funktionerna som är tillgängliga i appen **med hjälp av avsnittet Nyheter.** Gå till **Inställningar**  >  **Vad är nytt?**
 
-:::image type="content" source="../media/whats-new-updates.png" alt-text="Skärmbild: Spåra större uppdateringar och funktioner":::
+:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Skärmbild: Spåra större uppdateringar och funktioner":::
 
 ## <a name="april-2021"></a>April 2021
 

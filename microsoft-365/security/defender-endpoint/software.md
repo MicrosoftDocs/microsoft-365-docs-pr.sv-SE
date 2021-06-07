@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9bfec2c4e65a390189556c14347eaf17236fb95e
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 14291cbbba2272d268a8e79b6df7bd87992885db
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187307"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771423"
 ---
 # <a name="software-resource-type"></a>Programvaruresurstyp
 
@@ -45,16 +46,16 @@ ms.locfileid: "51187307"
 
 Metod |Returtyp |Beskrivning
 :---|:---|:---
-[Listprogramvara](get-software.md) | Insamling av programvara | Lista organisationens programvaruinventering.
-[Hämta programvara genom Id](get-software-by-id.md) | Programvara | Hämta en särskild programvara genom dess programvaru-ID.
-[Lista över distribution av programvaruversion](get-software-ver-distribution.md)| Distributionssamling | Lista distribution av programvaruversion efter programvaru-ID.
-[Lista datorer efter programvara](get-machines-by-software.md)| MachineRef-samling | Hämta en lista över enheter som är associerade med programvaru-ID.
-[Lista säkerhetsproblem efter programvara](get-vuln-by-software.md) | [Sårbarhetssamling](vulnerability.md) | Hämta en lista över säkerhetsproblem som är associerade med programvaru-ID.
-[Få saknade KBs](get-missing-kbs-software.md) | KB-samling | Visa en lista över saknade KB som är kopplade till programvaru-ID:t
+[Lista programvara](get-software.md) | Insamling av programvara | Lista organisationens programvaruinventering.
+[Hämta programvara efter Id](get-software-by-id.md) | Programvara | Hämta en särskild programvara genom dess programvaru-ID.
+[Lista distribution av programvaruversion](get-software-ver-distribution.md)| Distributionssamling | Lista distribution av programvaruversion efter programvaru-ID.
+[Lista maskiner efter programvara](get-machines-by-software.md)| MachineRef-samling | Hämta en lista över enheter som är associerade med programvaru-ID.
+[Lista sårbarhet efter programvara](get-vuln-by-software.md) | [Sårbarhetssamling](vulnerability.md) | Hämta en lista över säkerhetsproblem som är associerade med programvaru-ID.
+[Hämta saknade KB:er](get-missing-kbs-software.md) | KB-samling | Visa en lista över saknade KB som är kopplade till programvaru-ID:t
 
 ## <a name="properties"></a>Egenskaper
 
-Egenskap |   Skriv   |   Beskrivning
+Egenskap |   Typ   |   Beskrivning
 :---|:---|:---
 id | Sträng | Programvaru-ID
 Namn | Sträng | Programvarunamn

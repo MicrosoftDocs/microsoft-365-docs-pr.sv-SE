@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Med Microsoft 365 grupper kan du skapa samarbete i Microsoft 365 genom att ge en grupp personer åtkomst till en samling delade resurser.
-ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 69f7e47bcfb9e0704f8c373cf1addf98ef898cfa
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635756"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782399"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Översikt över Microsoft 365 grupper för administratörer
 
@@ -45,7 +45,7 @@ Microsoft 365 Grupper är den grundläggande medlemskapstjänsten som driver all
 
 Med en Microsoft 365 grupp behöver du inte tilldela behörigheter för var och en av dessa resurser manuellt. Om du lägger till personer i gruppen får de automatiskt de behörigheter de behöver.
 
-Alla användare kan skapa en grupp om du inte [begränsar skapandet av grupper till en särskild uppsättning personer.](../../solutions/manage-creation-of-groups.md) Om du begränsar skapandet av grupper kan användare som inte kan skapa grupper inte skapa SharePoint, Planerare eller team. För de här tjänsterna krävs att personerna som skapar dem ska kunna skapa en grupp. Användare kan fortfarande delta i gruppaktiviteter, till exempel skapa uppgifter i Planner eller använda Teams, förutsatt att de är medlemmar i gruppen.
+Alla användare kan skapa en grupp om du inte [begränsar skapandet av grupper till en särskild uppsättning personer.](../../solutions/manage-creation-of-groups.md) Om du begränsar skapandet av grupper kommer användare som inte kan skapa grupper inte att kunna skapa SharePoint-webbplatser, planerare, team, Outlook-gruppkalendrar, strömma grupper, Yammer-grupper, delade bibliotek i OneDrive eller delade Power BI-arbetsytor. För de här tjänsterna krävs att personerna som skapar dem ska kunna skapa en grupp. Användare kan fortfarande delta i gruppaktiviteter, till exempel skapa uppgifter i Planner eller använda Teams, förutsatt att de är medlemmar i gruppen.
 
 Grupper har följande roller:
 

@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 42bab0a9d20d5e1ef78b98b3538cef209240d890
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ce0dc0ce255e9717082687bd1f8bf5941739261d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187363"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771711"
 ---
 # <a name="submit-or-update-indicator-api"></a>Indikator-API för Skicka eller uppdatera
 
@@ -63,7 +64,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 Innehållstyp | sträng | application/json. **Obligatoriskt.**
@@ -71,7 +72,7 @@ Innehållstyp | sträng | application/json. **Obligatoriskt.**
 ## <a name="request-body"></a>Begärans brödtext
 Ange följande parametrar för ett JSON-objekt i begärans brödtext:
 
-Parameter | Skriv    | Beskrivning
+Parameter | Typ    | Beskrivning
 :---|:---|:---
 indicatorValue | Sträng | Identiteten för [indikatorenheten.](ti-indicator.md) **Obligatoriskt**
 indicatorType | Uppräkning | Typ av indikator. Möjliga värden är: "FileSha1", "FileSha256", "IpAddress", "DomainName" och "Url". **Obligatoriskt**

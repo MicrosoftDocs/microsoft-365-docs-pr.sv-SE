@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 03a1ef11224021703a6f33f82fa2c4f135a317a7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e2b1114cd091c9cd42aa8e4525416f9d73358a65
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934183"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771999"
 ---
 # <a name="offboard-machine-api"></a>Api för Offboard-dator
 
@@ -50,7 +51,7 @@ Offboard-enhet från Defender för Slutpunkt.
 [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 >[!Note]
-> Detta API stöds i Windows 10, version 1703 och senare, eller Windows Server 2019 och senare. Detta API stöds inte på MacOS- eller Linux-enheter.
+> Detta API stöds i Windows 10, version 1703 och senare, eller i Windows Server 2019 och senare. Detta API stöds inte på MacOS- eller Linux-enheter.
 
 ## <a name="permissions"></a>Behörigheter
 En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i [Använda Defender för slutpunkts-API:er](apis-intro.md)
@@ -72,7 +73,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 Innehållstyp | sträng | application/json. **Obligatoriskt.**
@@ -80,7 +81,7 @@ Innehållstyp | sträng | application/json. **Obligatoriskt.**
 ## <a name="request-body"></a>Begärans brödtext
 Ange följande parametrar för ett JSON-objekt i begärans brödtext:
 
-Parameter | Skriv    | Beskrivning
+Parameter | Typ    | Beskrivning
 :---|:---|:---
 Kommentar |   Sträng |    Kommentar som ska associeras med åtgärden. **Obligatoriskt.**
 

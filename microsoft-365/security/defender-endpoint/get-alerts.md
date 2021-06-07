@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f4b62ca7fecb8e66fc082b6cf0972c1c2c06afb5
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166977"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769263"
 ---
 # <a name="list-alerts-api"></a>API för listvarningar
 
@@ -77,7 +78,7 @@ GET /api/alerts
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Type (Typ) | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 

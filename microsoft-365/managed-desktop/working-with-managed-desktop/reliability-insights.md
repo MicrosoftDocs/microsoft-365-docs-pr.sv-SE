@@ -8,40 +8,40 @@ ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.openlocfilehash: 06e1446ca290439c9e6689f4461c825438cf6aaf
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950348"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52739817"
 ---
 # <a name="reliability-insights"></a>Tillförlitlighetsinsikter
 
-I den här vyn får du en översikt över dina hanterade enheter. Om du vill visa pålitlighets data väljer du fliken **pålitlighet** .
+Den här vyn ger dig en hälsosammanfattning av dina hanterade enheter. Om du vill visa tillförlitlighetsdata väljer du **fliken Tillförlitlighet.**
 
 
-![Fönstret tillförlitlighet: tillförlitlighet mellan enheter uppe till vänster, högre tillförlitlighet än tids diagram längst upp till höger, tabellen vanligaste problem nedtill. Knapparna hjälp och feedback längst ned till höger.](../../media/insights_reliability.png)
+![Tillförlitlighetsfönster: Tillförlitlighet på enheter i det övre vänstra hörnet, tillförlitlighet över tid, diagram över övre högra hörnet, den översta problemtabellen längst ned. Knapparna Hjälp och Feedback längst ned till höger.](../../media/insights_reliability.png)
 
-Avsnittet **tillförlitlighet i flera enheter** erbjuder en översikt över de senaste 14 dagarna genom rapportering om procent andelen av enheter som anses vara "felfri" och genomsnittlig tid som observerats sedan det senaste rapporterade felet. 
+I **avsnittet Tillförlitlighet** på enheter får du en snabb sammanfattning av distributionen under de senaste 14 dagarna genom att rapportera procentandel enheter som anses vara "felfria" och den genomsnittliga tiden som observerats sedan det senast rapporterade felet. 
 
  
-Diagrammets **tillförlitlighet över tid** till höger rapporterar antalet enheter med kritiska fel och det totala antalet observerade kritiska fel över tiden.
+I **diagrammet Tillförlitlighet** över tid på höger sida visas antalet enheter med kritiska fel och det totala antalet observerade kritiska fel över tid.
 
-Avsnittet **TOPY** retails visar specifika upptäckta problem som påverkar minst 5% av dina hanterade enheter. Rapporterade uppgifter inkluderar:
+Avsnittet **Om de viktigaste** problemen beskriver specifika identifierade problem som påverkar minst 5 % av dina hanterade enheter. Rapporterad information:
 
 - Typ av problem
-    - Program kraschar, där ett program slutar fungera eller oväntat stoppas
-    - Programmet hänger sig, där ett program slutar svara för inmatning
-    - Kritiska fel, som uppstår när ett problem har uppstått i Windows
+    - Programmet kraschar, där en app slutar fungera eller oväntat slutar fungera
+    - Programmet hänger sig där ett program slutar svara på indata
+    - Kritiska fel som inträffar när Windows har stött på problem kan det inte återställas från
 - Antalet enheter som påverkas av samma problem
-- Procent andelen hanterade enheter som numret representerar
-- Totalt antal förekomster av det specifika problemet
-- Program varu komponenten som verkar vara orsaken till problemet
-- Kategorin för det upptäckta problemet:
+- Procentandelen hanterade enheter som talet representerar
+- Det totala antalet förekomster av ett specifikt problem
+- Programvarukomponenten som verkar vara orsaken till problemet
+- Kategorin för det identifierade problemet:
     - Webbläsare (Edge, Chrome, IE)
-    - Okända (icke-Microsoft-komponenter)
-    - Driv rutin (ljud, grafik eller andra driv rutiner)
-    - Produktivitet (slack, G-sviter, Microsoft Office och tillägg och tillägg, Team)
-    - Media (bild-, musik-eller videoappar
-    - Säkerhet (Windows säkerhets komponenter)
-- Den aktuella statusen som Microsoft Managed Desktop-operationer undersöker och åtgärdar problemet
+    - Okänd (komponenter som inte kommer från Microsoft)
+    - Drivrutin (ljud, grafik eller andra drivrutiner)
+    - Produktivitet (slack, G-Microsoft Office, tillägg och tillägg, Teams)
+    - Media (bild-, musik- eller videoappar)
+    - Säkerhet (Windows säkerhetskomponenter)
+- Den aktuella statusen Microsoft Hanterat skrivbord åtgärder undersöker och åtgärdar problemet
 

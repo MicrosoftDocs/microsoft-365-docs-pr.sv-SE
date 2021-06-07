@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Följ de här stegen om du vill ta bort en tidigare anställds användarkonto.
-ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535944"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782387"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Steg 7 – Ta bort en tidigare anställds användarkonto
 
@@ -56,7 +56,7 @@ Om din organisation synkroniserar användarkonton till Microsoft 365 från en lo
 
 Mer information om hur du tar bort och återställer användarkonton i Active Directory finns [i Ta bort ett användarkonto.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
   
-Om du använder en Azure Active Directory, se [PowerShell-cmdleten Remove-MsolUser.](https://go.microsoft.com/fwlink/?linkid=842230)
+Om du använder en Azure Active Directory, se [PowerShell-cmdleten Remove-MsolUser.](/powershell/module/msonline/remove-msoluser)
   
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>Vad du behöver veta om att avsluta en anställds e-postsession
 
@@ -84,8 +84,6 @@ Här finns information om hur du avslutar en anställds e-post (Exchange).
   
  **Snabbast för en användare med närvaro lokalt och i Exchange-datacentret**: Avbryt sessionen med administrationscentret för Azure Active Directory/administrationscentret för Exchange OCH gör även ändringen i den lokala miljön. Ändringen i administrationscentret för Azure Active Directory/administrationscentret för Exchange kommer annars att skrivas över av DirSync.
   
-## <a name="related-articles"></a>Relaterade artiklar
+## <a name="related-content"></a>Relaterat innehåll
 
-[Återställa en användare](restore-user.md)
-
-[Återställa lösenord](reset-passwords.md)
+[Återställa en användare](restore-user.md) (artikel)/ [Återställa lösenord](reset-passwords.md) (artikel)
