@@ -14,87 +14,88 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 70ce6adce3e14be7ee440b96587b8f9402c0b99f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ef10d2bd7193fc7b4a1604658f496ef38ef33555
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166989"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772356"
 ---
-# <a name="get-alert-related-machine-information-api"></a><span data-ttu-id="ee012-104">Få aviseringsrelaterat API för maskininformation</span><span class="sxs-lookup"><span data-stu-id="ee012-104">Get alert related machine information API</span></span>
+# <a name="get-alert-related-machine-information-api"></a><span data-ttu-id="0fac9-104">Få aviseringsrelaterat API för maskininformation</span><span class="sxs-lookup"><span data-stu-id="0fac9-104">Get alert related machine information API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="ee012-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="ee012-105">**Applies to:**</span></span>
-- [<span data-ttu-id="ee012-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="ee012-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="ee012-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="ee012-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="0fac9-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="0fac9-105">**Applies to:**</span></span>
+- [<span data-ttu-id="0fac9-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="0fac9-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="0fac9-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0fac9-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> <span data-ttu-id="ee012-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="ee012-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="ee012-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="ee012-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="0fac9-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="0fac9-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="0fac9-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="0fac9-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="ee012-110">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="ee012-110">API description</span></span>
-<span data-ttu-id="ee012-111">Hämtar enheten [som](machine.md) är relaterad till en viss avisering.</span><span class="sxs-lookup"><span data-stu-id="ee012-111">Retrieves [Device](machine.md) related to a specific alert.</span></span>
+## <a name="api-description"></a><span data-ttu-id="0fac9-110">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="0fac9-110">API description</span></span>
+<span data-ttu-id="0fac9-111">Hämtar enheten [som](machine.md) är relaterad till en viss avisering.</span><span class="sxs-lookup"><span data-stu-id="0fac9-111">Retrieves [Device](machine.md) related to a specific alert.</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="ee012-112">Begränsningar</span><span class="sxs-lookup"><span data-stu-id="ee012-112">Limitations</span></span>
-1. <span data-ttu-id="ee012-113">Du kan fråga efter aviseringar som senast uppdaterades enligt din konfigurerade lagringstid.</span><span class="sxs-lookup"><span data-stu-id="ee012-113">You can query on alerts last updated according to your configured retention period.</span></span>
-2. <span data-ttu-id="ee012-114">Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.</span><span class="sxs-lookup"><span data-stu-id="ee012-114">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="0fac9-112">Begränsningar</span><span class="sxs-lookup"><span data-stu-id="0fac9-112">Limitations</span></span>
+1. <span data-ttu-id="0fac9-113">Du kan fråga efter aviseringar som senast uppdaterades enligt din konfigurerade lagringstid.</span><span class="sxs-lookup"><span data-stu-id="0fac9-113">You can query on alerts last updated according to your configured retention period.</span></span>
+2. <span data-ttu-id="0fac9-114">Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.</span><span class="sxs-lookup"><span data-stu-id="0fac9-114">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="ee012-115">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="ee012-115">Permissions</span></span>
-<span data-ttu-id="ee012-116">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="ee012-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="ee012-117">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="ee012-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="0fac9-115">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="0fac9-115">Permissions</span></span>
+<span data-ttu-id="0fac9-116">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="0fac9-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="0fac9-117">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="0fac9-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="ee012-118">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="ee012-118">Permission type</span></span> |   <span data-ttu-id="ee012-119">Behörighet</span><span class="sxs-lookup"><span data-stu-id="ee012-119">Permission</span></span>  |   <span data-ttu-id="ee012-120">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="ee012-120">Permission display name</span></span>
+<span data-ttu-id="0fac9-118">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="0fac9-118">Permission type</span></span> |   <span data-ttu-id="0fac9-119">Behörighet</span><span class="sxs-lookup"><span data-stu-id="0fac9-119">Permission</span></span>  |   <span data-ttu-id="0fac9-120">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="0fac9-120">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="ee012-121">Program</span><span class="sxs-lookup"><span data-stu-id="ee012-121">Application</span></span> |   <span data-ttu-id="ee012-122">Machine.Read.All</span><span class="sxs-lookup"><span data-stu-id="ee012-122">Machine.Read.All</span></span> |  <span data-ttu-id="ee012-123">"Läs all maskininformation"</span><span class="sxs-lookup"><span data-stu-id="ee012-123">'Read all machine information'</span></span>
-<span data-ttu-id="ee012-124">Program</span><span class="sxs-lookup"><span data-stu-id="ee012-124">Application</span></span> |   <span data-ttu-id="ee012-125">Machine.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ee012-125">Machine.ReadWrite.All</span></span> | <span data-ttu-id="ee012-126">"Läsa och skriva all maskininformation"</span><span class="sxs-lookup"><span data-stu-id="ee012-126">'Read and write all machine information'</span></span>
-<span data-ttu-id="ee012-127">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="ee012-127">Delegated (work or school account)</span></span> | <span data-ttu-id="ee012-128">Machine.Read</span><span class="sxs-lookup"><span data-stu-id="ee012-128">Machine.Read</span></span> | <span data-ttu-id="ee012-129">"Läs maskininformation"</span><span class="sxs-lookup"><span data-stu-id="ee012-129">'Read machine information'</span></span>
-<span data-ttu-id="ee012-130">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="ee012-130">Delegated (work or school account)</span></span> | <span data-ttu-id="ee012-131">Machine.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ee012-131">Machine.ReadWrite</span></span> | <span data-ttu-id="ee012-132">Maskininformation för läsning och skrivning</span><span class="sxs-lookup"><span data-stu-id="ee012-132">'Read and write machine information'</span></span>
+<span data-ttu-id="0fac9-121">Program</span><span class="sxs-lookup"><span data-stu-id="0fac9-121">Application</span></span> |   <span data-ttu-id="0fac9-122">Machine.Read.All</span><span class="sxs-lookup"><span data-stu-id="0fac9-122">Machine.Read.All</span></span> |  <span data-ttu-id="0fac9-123">"Läs all maskininformation"</span><span class="sxs-lookup"><span data-stu-id="0fac9-123">'Read all machine information'</span></span>
+<span data-ttu-id="0fac9-124">Program</span><span class="sxs-lookup"><span data-stu-id="0fac9-124">Application</span></span> |   <span data-ttu-id="0fac9-125">Machine.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0fac9-125">Machine.ReadWrite.All</span></span> | <span data-ttu-id="0fac9-126">"Läsa och skriva all maskininformation"</span><span class="sxs-lookup"><span data-stu-id="0fac9-126">'Read and write all machine information'</span></span>
+<span data-ttu-id="0fac9-127">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="0fac9-127">Delegated (work or school account)</span></span> | <span data-ttu-id="0fac9-128">Machine.Read</span><span class="sxs-lookup"><span data-stu-id="0fac9-128">Machine.Read</span></span> | <span data-ttu-id="0fac9-129">"Läs maskininformation"</span><span class="sxs-lookup"><span data-stu-id="0fac9-129">'Read machine information'</span></span>
+<span data-ttu-id="0fac9-130">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="0fac9-130">Delegated (work or school account)</span></span> | <span data-ttu-id="0fac9-131">Machine.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0fac9-131">Machine.ReadWrite</span></span> | <span data-ttu-id="0fac9-132">Maskininformation för läsning och skrivning</span><span class="sxs-lookup"><span data-stu-id="0fac9-132">'Read and write machine information'</span></span>
 
 >[!Note]
-> <span data-ttu-id="ee012-133">När du skaffar en token med hjälp av användarautentiseringsuppgifter:</span><span class="sxs-lookup"><span data-stu-id="ee012-133">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="ee012-134">Användaren måste ha minst följande rollbehörighet: 'Visa data' (mer information finns i [Skapa och](user-roles.md) hantera roller)</span><span class="sxs-lookup"><span data-stu-id="ee012-134">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="ee012-135">Användaren måste ha åtkomst till enheten som är kopplad till aviseringen, baserat på enhetsgruppinställningar (mer information finns i Skapa och hantera enhetsgrupper) [](machine-groups.md)</span><span class="sxs-lookup"><span data-stu-id="ee012-135">The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="0fac9-133">När du skaffar en token med hjälp av användarautentiseringsuppgifter:</span><span class="sxs-lookup"><span data-stu-id="0fac9-133">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="0fac9-134">Användaren måste ha minst följande rollbehörighet: 'Visa data' (mer information finns i [Skapa och](user-roles.md) hantera roller)</span><span class="sxs-lookup"><span data-stu-id="0fac9-134">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="0fac9-135">Användaren måste ha åtkomst till enheten som är kopplad till aviseringen, baserat på enhetsgruppinställningar (mer information finns i Skapa och hantera enhetsgrupper) [](machine-groups.md)</span><span class="sxs-lookup"><span data-stu-id="0fac9-135">The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="ee012-136">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="ee012-136">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0fac9-136">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="0fac9-136">HTTP request</span></span>
 
 ```http
 GET /api/alerts/{id}/machine
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ee012-137">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="ee012-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0fac9-137">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="0fac9-137">Request headers</span></span>
 
-<span data-ttu-id="ee012-138">Namn</span><span class="sxs-lookup"><span data-stu-id="ee012-138">Name</span></span> | <span data-ttu-id="ee012-139">Type (Typ)</span><span class="sxs-lookup"><span data-stu-id="ee012-139">Type</span></span> | <span data-ttu-id="ee012-140">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="ee012-140">Description</span></span>
+<span data-ttu-id="0fac9-138">Namn</span><span class="sxs-lookup"><span data-stu-id="0fac9-138">Name</span></span> | <span data-ttu-id="0fac9-139">Typ</span><span class="sxs-lookup"><span data-stu-id="0fac9-139">Type</span></span> | <span data-ttu-id="0fac9-140">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="0fac9-140">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="ee012-141">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="ee012-141">Authorization</span></span> | <span data-ttu-id="ee012-142">Sträng</span><span class="sxs-lookup"><span data-stu-id="ee012-142">String</span></span> | <span data-ttu-id="ee012-143">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="ee012-143">Bearer {token}.</span></span> <span data-ttu-id="ee012-144">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="ee012-144">**Required**.</span></span>
+<span data-ttu-id="0fac9-141">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="0fac9-141">Authorization</span></span> | <span data-ttu-id="0fac9-142">Sträng</span><span class="sxs-lookup"><span data-stu-id="0fac9-142">String</span></span> | <span data-ttu-id="0fac9-143">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="0fac9-143">Bearer {token}.</span></span> <span data-ttu-id="0fac9-144">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="0fac9-144">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="ee012-145">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="ee012-145">Request body</span></span>
-<span data-ttu-id="ee012-146">Tom</span><span class="sxs-lookup"><span data-stu-id="ee012-146">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="0fac9-145">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="0fac9-145">Request body</span></span>
+<span data-ttu-id="0fac9-146">Tom</span><span class="sxs-lookup"><span data-stu-id="0fac9-146">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="ee012-147">Svar</span><span class="sxs-lookup"><span data-stu-id="ee012-147">Response</span></span>
-<span data-ttu-id="ee012-148">Om det lyckas och avisering och enheten finns - 200 OK.</span><span class="sxs-lookup"><span data-stu-id="ee012-148">If successful and alert and device exist - 200 OK.</span></span> <span data-ttu-id="ee012-149">Om aviseringen inte hittas eller om enheten inte hittas – 404 Hittades inte.</span><span class="sxs-lookup"><span data-stu-id="ee012-149">If alert not found or device not found - 404 Not Found.</span></span>
+## <a name="response"></a><span data-ttu-id="0fac9-147">Svar</span><span class="sxs-lookup"><span data-stu-id="0fac9-147">Response</span></span>
+<span data-ttu-id="0fac9-148">Om det lyckas och avisering och enheten finns - 200 OK.</span><span class="sxs-lookup"><span data-stu-id="0fac9-148">If successful and alert and device exist - 200 OK.</span></span> <span data-ttu-id="0fac9-149">Om aviseringen inte hittas eller om enheten inte hittas – 404 Hittades inte.</span><span class="sxs-lookup"><span data-stu-id="0fac9-149">If alert not found or device not found - 404 Not Found.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ee012-150">Exempel</span><span class="sxs-lookup"><span data-stu-id="ee012-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0fac9-150">Exempel</span><span class="sxs-lookup"><span data-stu-id="0fac9-150">Example</span></span>
 
-<span data-ttu-id="ee012-151">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="ee012-151">**Request**</span></span>
+<span data-ttu-id="0fac9-151">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="0fac9-151">**Request**</span></span>
 
-<span data-ttu-id="ee012-152">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="ee012-152">Here is an example of the request.</span></span>
+<span data-ttu-id="0fac9-152">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="0fac9-152">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/machine
 ```
 
-<span data-ttu-id="ee012-153">**Svar**</span><span class="sxs-lookup"><span data-stu-id="ee012-153">**Response**</span></span>
+<span data-ttu-id="0fac9-153">**Svar**</span><span class="sxs-lookup"><span data-stu-id="0fac9-153">**Response**</span></span>
 
-<span data-ttu-id="ee012-154">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="ee012-154">Here is an example of the response.</span></span>
+<span data-ttu-id="0fac9-154">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="0fac9-154">Here is an example of the response.</span></span>
 
 
 ```json

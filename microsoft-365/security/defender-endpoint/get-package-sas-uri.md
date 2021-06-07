@@ -14,78 +14,80 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b9c8877e341e7438532ab3eb3f7af4c2a9114af7
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 054db1766cdab3aa5b49da4940dcdddfe6086434
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893347"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770691"
 ---
-# <a name="get-package-sas-uri-api"></a><span data-ttu-id="6db86-104">Hämta SAS URI API för paket</span><span class="sxs-lookup"><span data-stu-id="6db86-104">Get package SAS URI API</span></span>
+# <a name="get-package-sas-uri-api"></a><span data-ttu-id="afe45-104">Hämta SAS URI API för paket</span><span class="sxs-lookup"><span data-stu-id="afe45-104">Get package SAS URI API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="6db86-105">**Gäller för:** [Microsoft Defender för slutpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="6db86-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="afe45-105">**Gäller för:** [Microsoft Defender för slutpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="afe45-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="6db86-106">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="6db86-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="6db86-107">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="6db86-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="afe45-106">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="afe45-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="afe45-107">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="afe45-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="6db86-108">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="6db86-108">API description</span></span>
-<span data-ttu-id="6db86-109">Hämta en URI som tillåter nedladdning av ett [undersökningspaket.](collect-investigation-package.md)</span><span class="sxs-lookup"><span data-stu-id="6db86-109">Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).</span></span>
+## <a name="api-description"></a><span data-ttu-id="afe45-108">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="afe45-108">API description</span></span>
+<span data-ttu-id="afe45-109">Hämta en URI som tillåter nedladdning av ett [undersökningspaket.](collect-investigation-package.md)</span><span class="sxs-lookup"><span data-stu-id="afe45-109">Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="6db86-110">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="6db86-110">Permissions</span></span>
-<span data-ttu-id="6db86-111">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="6db86-111">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="6db86-112">Mer information, inklusive hur du väljer behörigheter, finns i Åtkomst till [MICROSOFT Defender för slutpunktS-API:er](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="6db86-112">To learn more, including how to choose permissions, see [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="afe45-110">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="afe45-110">Permissions</span></span>
+<span data-ttu-id="afe45-111">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="afe45-111">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="afe45-112">Mer information, inklusive hur du väljer behörigheter, finns i Åtkomst till [MICROSOFT Defender för slutpunktS-API:er](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="afe45-112">To learn more, including how to choose permissions, see [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="6db86-113">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="6db86-113">Permission type</span></span> |   <span data-ttu-id="6db86-114">Behörighet</span><span class="sxs-lookup"><span data-stu-id="6db86-114">Permission</span></span>  |   <span data-ttu-id="6db86-115">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="6db86-115">Permission display name</span></span>
+<span data-ttu-id="afe45-113">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="afe45-113">Permission type</span></span> |   <span data-ttu-id="afe45-114">Behörighet</span><span class="sxs-lookup"><span data-stu-id="afe45-114">Permission</span></span>  |   <span data-ttu-id="afe45-115">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="afe45-115">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="6db86-116">Program</span><span class="sxs-lookup"><span data-stu-id="6db86-116">Application</span></span> |   <span data-ttu-id="6db86-117">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="6db86-117">Machine.CollectForensics</span></span> |  <span data-ttu-id="6db86-118">"Samla in en forensiska"</span><span class="sxs-lookup"><span data-stu-id="6db86-118">'Collect forensics'</span></span>
-<span data-ttu-id="6db86-119">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="6db86-119">Delegated (work or school account)</span></span> | <span data-ttu-id="6db86-120">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="6db86-120">Machine.CollectForensics</span></span> | <span data-ttu-id="6db86-121">"Samla in en forensiska"</span><span class="sxs-lookup"><span data-stu-id="6db86-121">'Collect forensics'</span></span>
+<span data-ttu-id="afe45-116">Program</span><span class="sxs-lookup"><span data-stu-id="afe45-116">Application</span></span> |   <span data-ttu-id="afe45-117">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="afe45-117">Machine.CollectForensics</span></span> |  <span data-ttu-id="afe45-118">"Samla in en forensiska"</span><span class="sxs-lookup"><span data-stu-id="afe45-118">'Collect forensics'</span></span>
+<span data-ttu-id="afe45-119">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="afe45-119">Delegated (work or school account)</span></span> | <span data-ttu-id="afe45-120">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="afe45-120">Machine.CollectForensics</span></span> | <span data-ttu-id="afe45-121">"Samla in en forensiska"</span><span class="sxs-lookup"><span data-stu-id="afe45-121">'Collect forensics'</span></span>
 
 >[!Note]
-> <span data-ttu-id="6db86-122">När du skaffar en token med hjälp av användarautentiseringsuppgifter:</span><span class="sxs-lookup"><span data-stu-id="6db86-122">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="6db86-123">Användaren måste ha minst följande rollbehörighet: "Undersökning av aviseringar" (mer information finns i [Skapa och](user-roles.md) hantera roller)</span><span class="sxs-lookup"><span data-stu-id="6db86-123">The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="6db86-124">Användaren måste ha åtkomst till enheten baserat på enhetsgruppinställningar (mer information finns i [Skapa och](machine-groups.md) hantera enhetsgrupper)</span><span class="sxs-lookup"><span data-stu-id="6db86-124">The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="afe45-122">När du skaffar en token med hjälp av användarautentiseringsuppgifter:</span><span class="sxs-lookup"><span data-stu-id="afe45-122">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="afe45-123">Användaren måste ha minst följande rollbehörighet: "Undersökning av aviseringar" (mer information finns i [Skapa och](user-roles.md) hantera roller)</span><span class="sxs-lookup"><span data-stu-id="afe45-123">The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="afe45-124">Användaren måste ha åtkomst till enheten baserat på enhetsgruppinställningar (mer information finns i [Skapa och](machine-groups.md) hantera enhetsgrupper)</span><span class="sxs-lookup"><span data-stu-id="afe45-124">The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="6db86-125">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="6db86-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="afe45-125">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="afe45-125">HTTP request</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action id}/getPackageUri
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6db86-126">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="6db86-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="afe45-126">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="afe45-126">Request headers</span></span>
 
-<span data-ttu-id="6db86-127">Namn</span><span class="sxs-lookup"><span data-stu-id="6db86-127">Name</span></span> | <span data-ttu-id="6db86-128">Skriv</span><span class="sxs-lookup"><span data-stu-id="6db86-128">Type</span></span> | <span data-ttu-id="6db86-129">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="6db86-129">Description</span></span>
+<span data-ttu-id="afe45-127">Namn</span><span class="sxs-lookup"><span data-stu-id="afe45-127">Name</span></span> | <span data-ttu-id="afe45-128">Typ</span><span class="sxs-lookup"><span data-stu-id="afe45-128">Type</span></span> | <span data-ttu-id="afe45-129">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="afe45-129">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="6db86-130">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="6db86-130">Authorization</span></span> | <span data-ttu-id="6db86-131">Sträng</span><span class="sxs-lookup"><span data-stu-id="6db86-131">String</span></span> | <span data-ttu-id="6db86-132">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="6db86-132">Bearer {token}.</span></span> <span data-ttu-id="6db86-133">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="6db86-133">**Required**.</span></span>
+<span data-ttu-id="afe45-130">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="afe45-130">Authorization</span></span> | <span data-ttu-id="afe45-131">Sträng</span><span class="sxs-lookup"><span data-stu-id="afe45-131">String</span></span> | <span data-ttu-id="afe45-132">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="afe45-132">Bearer {token}.</span></span> <span data-ttu-id="afe45-133">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="afe45-133">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="6db86-134">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="6db86-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="afe45-134">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="afe45-134">Request body</span></span>
 
-<span data-ttu-id="6db86-135">Tom</span><span class="sxs-lookup"><span data-stu-id="6db86-135">Empty</span></span>
+<span data-ttu-id="afe45-135">Tom</span><span class="sxs-lookup"><span data-stu-id="afe45-135">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="6db86-136">Svar</span><span class="sxs-lookup"><span data-stu-id="6db86-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="afe45-136">Svar</span><span class="sxs-lookup"><span data-stu-id="afe45-136">Response</span></span>
 
-<span data-ttu-id="6db86-137">Om det lyckas returnerar den här metoden 200, OK-svarskod med objekt som innehåller länken till paketet i parametern "värde".</span><span class="sxs-lookup"><span data-stu-id="6db86-137">If successful, this method returns 200, Ok response code with object that holds the link to the package in the “value” parameter.</span></span> <span data-ttu-id="6db86-138">Den här länken är giltig under en mycket kort tid och bör användas direkt för att ladda ned paketet till en lokal lagring.</span><span class="sxs-lookup"><span data-stu-id="6db86-138">This link is valid for a very short time and should be used immediately for downloading the package to a local storage.</span></span>
+<span data-ttu-id="afe45-137">Om det lyckas returnerar den här metoden 200, OK-svarskod med objekt som innehåller länken till paketet i parametern "värde".</span><span class="sxs-lookup"><span data-stu-id="afe45-137">If successful, this method returns 200, Ok response code with object that holds the link to the package in the “value” parameter.</span></span> <span data-ttu-id="afe45-138">Den här länken är giltig under en mycket kort tid och bör användas direkt för att ladda ned paketet till en lokal lagring.</span><span class="sxs-lookup"><span data-stu-id="afe45-138">This link is valid for a very short time and should be used immediately for downloading the package to a local storage.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="6db86-139">Exempel</span><span class="sxs-lookup"><span data-stu-id="6db86-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="afe45-139">Exempel</span><span class="sxs-lookup"><span data-stu-id="afe45-139">Example</span></span>
 
-<span data-ttu-id="6db86-140">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="6db86-140">**Request**</span></span>
+<span data-ttu-id="afe45-140">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="afe45-140">**Request**</span></span>
 
-<span data-ttu-id="6db86-141">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="6db86-141">Here is an example of the request.</span></span>
+<span data-ttu-id="afe45-141">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="afe45-141">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
 
 ```
 
-<span data-ttu-id="6db86-142">**Svar**</span><span class="sxs-lookup"><span data-stu-id="6db86-142">**Response**</span></span>
+<span data-ttu-id="afe45-142">**Svar**</span><span class="sxs-lookup"><span data-stu-id="afe45-142">**Response**</span></span>
 
-<span data-ttu-id="6db86-143">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="6db86-143">Here is an example of the response.</span></span>
+<span data-ttu-id="afe45-143">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="afe45-143">Here is an example of the response.</span></span>
 
 ```http
 HTTP/1.1 200 Ok
