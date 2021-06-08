@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Läs mer om grundläggande felsökningssteg du kan vidta för att lösa vanliga problem Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52162826"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809125"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Undersöka, felsöka och lösa vanliga eDiscovery-problem
 
@@ -89,6 +89,20 @@ När du kör en eDiscovery-sökning som innehåller SharePoint Online och One Dr
 1. Kontrollera platsen som identifieras i sökningen för att säkerställa att filens plats är korrekt och läggs till på sökplatserna.
 
 2. Använd procedurerna i Manuellt begära crawlning och [omindexering](/sharepoint/crawl-site-content) av en webbplats, ett bibliotek eller en lista för att indexera om webbplatsen.
+
+## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>Fel/problem: Filen exporterades inte eftersom den inte längre finns. Filen inkluderades i antalet uppskattade sökresultat eftersom den fortfarande finns med i indexet. Filen tas så småningom bort från indexet och orsakar inte något fel i framtiden.
+
+Det felmeddelandet kan visas när du kör en eDiscovery-sökning som innehåller SharePoint Online- och One Drive för företag-platser. eDiscovery använder SPO-indexet för att identifiera filplatserna. Om filen togs bort men SPO-indexet inte uppdaterades än kan det här felet uppstå.
+
+### <a name="resolution"></a>Lösning 
+Öppna SPO-platsen och kontrollera att filen verkligen inte finns där.
+Den föreslagna lösningen är att indexera om webbplatsen manuellt eller vänta tills webbplatsen indexeras om av den automatiska bakgrundsprocessen.
+
+
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Fel/problem: Sökresultatet har inte laddats ned eftersom det är en mapp eller andra objekt som inte kan laddas ned själv, och objekt i mappen eller biblioteket laddas ned.
+
+Det felmeddelandet kan visas när du kör en eDiscovery-sökning som innehåller SharePoint Online- och One Drive för företag-platser. Det innebär att vi skulle försöka exportera objektet som rapporterats i indexet, men det visades vara en mapp så vi exporterade det inte. Som nämns i felet exporterar vi inte mappobjekt men vi exporterar innehållet.
+
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Fel/problem: Sökningen misslyckas eftersom mottagaren inte hittas
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Lär dig hur du ändrar standardtemat för navigeringsfältet högst upp i Microsoft 365 och anpassa det så att det matchar ditt företags logotyp eller färg.
-ms.openlocfilehash: 5f6536d575ef055cda7a97a0860315c491100a1d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e609cbbc116f932d9c41f7ec797bf04a2a9c8ef8
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635932"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809053"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassa Microsoft 365 för din organisation
 
@@ -39,7 +39,7 @@ Du kan lägga till eller uppdatera ett standardtema som gäller för alla i din 
 
 1. I administrationscentret går du till sidan **Inställningar** \> **Organisation Inställningar** och väljer sedan fliken **Organisationsprofil.**
 
-2. På fliken **Organisationsprofil** väljer du **Organisationsschema**.
+2. På fliken **Organisationsprofil** väljer du **Anpassade teman**.
 
 Alla teman kan anpassas på följande flikar.
 
