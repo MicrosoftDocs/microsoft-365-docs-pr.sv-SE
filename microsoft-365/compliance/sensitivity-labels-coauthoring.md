@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Aktivera en inställning som möjliggör samtidig redigering och Spara automatiskt i skrivbordsprogram för etiketterade och krypterade dokument i SharePoint och OneDrive.
-ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332732"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796060"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Aktivera samtidig redigering för filer krypterade med känslighetsetiketter
 
@@ -27,7 +27,7 @@ ms.locfileid: "52332732"
 > [!NOTE]
 > Den här funktionen är i förhandsversion och kan komma att ändras. 
 >
-> Aktivera den här funktionen i en testklientorganisation i stället för en produktionsklientorganisation eftersom:
+> Aktivera den här funktionen i en testklientorganisation i stället för en produktionsklientorganisation eftersom:
 > - Funktionen gör ändringar i etiketteringsmetadata och alla appar på alla plattformar stöder för närvarande inte den här ändringen
 > - Du kan inte själv inaktivera den här funktionen när den är aktiverad
 
@@ -48,7 +48,7 @@ Om du vill läsa lanseringsmeddelandet går du till blogginlägget [Vi presenter
 
 Innan du aktiverar inställningen för samtidig redigering för Office-skrivbordsprogram är det viktigt att förstå att den här åtgärden gör ändringar i de etikettmetadata som sparas i och läses från Office-filer.
 
-Etikettmetadata innehåller information som identifierar din klientorganisation och den tillämpade känslighetsetiketten. Ändringen som den här inställningen gör gäller metadataformatet och platsen för okrypterade filer för Word, Excel och PowerPoint. Det görs inga ändringar i etikettmetadata för krypterade filer och e-postmeddelanden.
+Etikettmetadata innehåller information som identifierar din klientorganisation och den tillämpade känslighetsetiketten. Ändringen som den här inställningen gör gäller metadataformatet och platsen för Word-, Excel- och PowerPoint-filer. Du behöver inte vidta någon åtgärd för krypterade filer eller e-postmeddelanden. Metadataändringen för krypterade filer är bakåtkompatibel och det finns inga ändringar för e-postmeddelanden. Du måste dock vara medveten om metadataändringarna för krypterade filer som kan uppgraderas automatiskt men inte är bakåtkompatibla.
 
 Den här ändringen påverkar både filer som nyligen har etiketterats och filer som redan är etiketterade. När du använder program och tjänster som har stöd för inställningen samtidig redigering:
 - För filer som nyligen har etiketterats används bara det nya formatet och platsen för etikettmetadata.
@@ -60,7 +60,7 @@ Du kan läsa mer om denna metadataändring i följande resurser:
 
 - Öppna specifikationer: [2.6.3 Etikettinfo kontra anpassade dokumentegenskaper](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-Aktivera inte den här inställningen på grund av dessa ändringar om du har appar, tjänster, skript eller verktyg i organisationen som läser eller skriver etikettmetadata till den gamla platsen. Om du gör det visas här några exempel på konsekvenser:
+Aktivera inte den här inställningen på grund av dessa ändringar om du har appar, tjänster, skript eller verktyg i organisationen som läser eller skriver etikettmetadata till den gamla platsen. Här är några exempel på konsekvenser om du skulle göra detta:
 
 - Ett dokument som är etiketterat ser oetiketterat ut för användarna
 
@@ -131,7 +131,7 @@ Innan du aktiverar klientorganisationens inställning för samtidig redigering f
 
 Den här förhandsversionen av samtidig redigering för filer som krypterats med känslighetsetiketter har följande kända problem:
 
-- Användarna kan inte använda etiketter i Office för webben för Word-, Excel- och PowerPoint-filer som är större än 300 MB. För dessa filer kan du använda Office-skrivbordsprogram för att tillämpa en etikett, men du måste vara den enda personen som har filen öppen.
+- Användarna kan inte använda etiketter i Office för webben för Word-, Excel- och PowerPoint-filer som är större än 300 MB. För dessa filer kan du använda Office-skrivbordsprogram för att tillämpa en etikett, men du måste vara den enda personen som har filen öppen.
 
 - När du använder [DLP-principer som använder känslighetsetiketter som villkor](dlp-sensitivity-label-as-condition.md) stöds inte okrypterade bifogade filer för e-postmeddelanden.
 
@@ -142,7 +142,7 @@ Den här förhandsversionen av samtidig redigering för filer som krypterats med
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Så här aktiverar du samtidig redigering för filer med känslighetsetiketter
 
 > [!CAUTION]
-> Att aktivera den här inställningen är en enkelriktiad åtgärd. Med den här funktionen i förhandsversion ska du bara testa den i en icke-produktionsmiljö och bara när du har läst och förstått metadataändringarna, förutsättningar, begränsningar och kända problem som är dokumenterade på den här sidan.
+> Att aktivera den här inställningen är en enkelriktad åtgärd. Med den här funktionen i förhandsversion ska du bara testa den i en icke-produktionsmiljö och bara när du har läst och förstått metadataändringarna, förutsättningar, begränsningar och kända problem som är dokumenterade på den här sidan.
 
 Med förhandsversionen måste du använda en specifik URL för att komma åt den här inställningen i Microsoft 365 Efterlevnadscenter.
 
