@@ -23,22 +23,23 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs om hur du köper nya Microsoft 365 för företag-licenser.
-ms.openlocfilehash: c9077dbb4c653d162df97e7f7bda47d929eb67ce
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.date: 05/11/2021
+ms.openlocfilehash: 239d650bdb765875b60669a4d556f47bcd06dc92
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332216"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821421"
 ---
-# <a name="buy-microsoft-365-licenses"></a>Köpa Microsoft 365-licenser
+# <a name="buy-microsoft-365-licenses"></a>Köp Microsoft 365 licenser
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-När du lägger till nya användare måste du köpa fler Microsoft 365-licenser för dessa användare.
+När du lägger till nya användare måste du köpa fler licenser Microsoft 365 dessa användare.
 
 ## <a name="try-it"></a>Prova själv!
 
-1. I administrationscentret för Microsoft 365 väljer **du Fakturering**, **Dina produkter** och sedan din prenumeration.
+1. I Microsoft 365 väljer du **Fakturering**, **Dina produkter** och sedan din prenumeration.
 1. Välj **Köp licenser**.
 1. Ange antalet licenser du vill köpa.
 1. Välj **Spara**.

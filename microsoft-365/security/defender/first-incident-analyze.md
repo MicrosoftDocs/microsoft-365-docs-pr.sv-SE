@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8eb36ca630a9748de07c5cbe84f0e43ef23a47cf
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297230"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841084"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Steg 1. Triangel och analysera den första incidenten
 
@@ -45,10 +45,10 @@ När ett säkerhetstillbud har upptäckts visar Microsoft 365 Defender informati
 Microsoft 365 Defender tar emot aviseringar och händelser från flera Microsoft-säkerhetsplattformar som identifieringskällor för att skapa en bild och kontext för skadlig aktivitet. Det här är de möjliga identifieringskällorna:
 
 - [Microsoft Defender för Slutpunkt](../defender-endpoint/microsoft-defender-endpoint.md) är en identifiering och åtgärd på slutpunkt-lösning (Identifiering och åtgärd på slutpunkt) som använder Microsoft Defender antivirus samt molnaktiverad avancerad lösning med Microsofts Graph. Defender för Endpoint är en enhetlig plattform för förebyggande skydd, identifiering efter intrång, automatiserad undersökning och svar. It protects endpoints from cyberthreats, detects advanced attacks and data breaches, automates security incidents, and improves security upp. 
-- [Microsoft Defender för](https://docs.microsoft.com/defender-for-identity/what-is) identitet är en molnbaserad säkerhetslösning som använder dina lokala AD DS-signaler (Active Directory Domain Services) för att identifiera, identifiera och undersöka avancerade hot, komprometterade identiteter och skadliga Insider-åtgärder riktade till organisationen. 
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) fungerar som en gatekeeper till företag med tillgång i realtid mellan dina företagsanvändare och de molnresurser de använder, var användarna än befinner sig och oavsett vilken enhet de använder. 
+- [Microsoft Defender för](/defender-for-identity/what-is) identitet är en molnbaserad säkerhetslösning som använder dina lokala AD DS-signaler (Active Directory Domain Services) för att identifiera, identifiera och undersöka avancerade hot, komprometterade identiteter och skadliga Insider-åtgärder riktade till organisationen. 
+- [Microsoft Cloud App Security](/cloud-app-security/) fungerar som en gatekeeper till företag med tillgång i realtid mellan dina företagsanvändare och de molnresurser de använder, var användarna än befinner sig och oavsett vilken enhet de använder. 
 - [Microsoft Defender för Office 365](../office-365-security/overview.md) skyddar organisationen mot skadliga hot i e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. 
-- [Azure Säkerhetscenter](https://docs.microsoft.com/azure/security-center/security-center-introduction) är ett enhetligt säkerhetshanteringssystem för infrastruktur som förstärker säkerheten på dina datacenter och som ger avancerat skydd i både hybridarbetsbelastningen och i molnet. 
+- [Azure Säkerhetscenter](/azure/security-center/security-center-introduction) är ett enhetligt säkerhetshanteringssystem för infrastruktur som förstärker säkerheten på dina datacenter och som ger avancerat skydd i både hybridarbetsbelastningen och i molnet. 
 
 I Microsoft 365 Defender [identifieras incidenter](incidents-overview.md) genom att korrelera aviseringar från de olika identifieringskällorna. I stället för att använda resurssträngar ihop eller urskilja flera aviseringar i sina respektive incidenter kan du börja med incidentkön i Microsoft 365 Defender direkt. På så sätt kan du hantera incidenter på ett effektivt sätt i alla slutpunkter, identiteter, e-post och program, och minska skadan från en attack.
 

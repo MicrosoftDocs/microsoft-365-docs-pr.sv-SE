@@ -21,12 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Ta bort en licens från en delad postlåda för att tilldela den till en annan användare eller returnera licensen så att du inte betalar för den. '
-ms.openlocfilehash: d33487879506402c5f0de2f7942c3299c5698b73
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.date: 05/11/2021
+ms.openlocfilehash: dd2d99d762a4a68a9b0400353d64dabb536a891c
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706292"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821434"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Ta bort en licens från en delad postlåda
 

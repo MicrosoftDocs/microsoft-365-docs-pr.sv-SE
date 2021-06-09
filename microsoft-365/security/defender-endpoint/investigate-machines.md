@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929115"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843584"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Undersöka enheter i listan Microsoft Defender för slutpunktsenheter
 
@@ -39,7 +39,7 @@ ms.locfileid: "51929115"
 Undersök informationen om en avisering som upphöjts på en specifik enhet för att identifiera andra beteenden eller händelser som kan vara relaterade till aviseringen eller den möjliga omfattningen av intrånget.
 
 > [!NOTE]
-> Som en del av undersökningen eller svarsprocessen kan du samla in ett undersökningspaket från en enhet. Gör så här: Samla [in undersökningspaket från enheter](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
+> Som en del av undersökningen eller svarsprocessen kan du samla in ett undersökningspaket från en enhet. Gör så här: Samla [in undersökningspaket från enheter](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
 
 Du kan klicka på berörda enheter när du ser dem i portalen för att öppna en detaljerad rapport om enheten. Enheter som påverkas identifieras i följande områden:
 
@@ -109,12 +109,12 @@ På **fliken** Tidslinje visas en kronologisk vy över händelserna och tillhör
 På tidslinjen kan du även selektivt granska nedåt i händelser som inträffat under en viss tidsperiod. Du kan visa tidssekvensen av händelser som inträffat på en enhet under en viss tidsperiod. Om du vill ha mer kontroll över vyn kan du filtrera efter händelsegrupper eller anpassa kolumnerna.
 
 >[!NOTE]
-> För att brandväggshändelser ska visas måste du aktivera granskningsprincipen i Anslutning till [granskningsfiltreringsplattform.](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
+> För att brandväggshändelser ska visas måste du aktivera granskningsprincipen i Anslutning till [granskningsfiltreringsplattform.](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 >Brandväggen omfattar följande händelser
 >
->- [5025 –](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) brandväggstjänsten har stoppats
->- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) – programmet kan inte acceptera inkommande anslutningar i nätverket
->- [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) – blockerad anslutning
+>- [5025 –](/windows/security/threat-protection/auditing/event-5025) brandväggstjänsten har stoppats
+>- [5031](/windows/security/threat-protection/auditing/event-5031) – programmet kan inte acceptera inkommande anslutningar i nätverket
+>- [5157](/windows/security/threat-protection/auditing/event-5157) – blockerad anslutning
 
 ![Bild av tidslinjen på enheten med händelser](images/timeline-device.png)
 
@@ -134,7 +134,7 @@ Mer information om vissa händelser finns i **avsnittet Ytterligare information.
 - Aktiva hot upptäcktes – hotidentifieringen inträffade medan hoten kördes
 - Åtgärd lyckades inte – ett försök att åtgärda det identifierade hotet anropades men misslyckades
 - Åtgärd lyckades – det identifierade hotet har stoppats och åtgärdats
-- Varning som förbikopplats av användaren – Windows Defender SmartScreen-varningen avvisades och åsidosättdes av en användare
+- Varning som kringgås av användare – Windows Defender SmartScreen-varningen har avvisats och åsidosättts av en användare
 - Misstänkt skript har upptäckts – ett skript som kan vara skadligt hittades när det kördes
 - Aviseringskategorin – om händelsen ledde till en avisering genereras aviseringskategorin ("T.ex. aviseringsrörelse")
 

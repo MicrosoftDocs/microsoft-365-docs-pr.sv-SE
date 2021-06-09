@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Hantera feedback som dina användare kan skicka till Microsoft om Microsoft-produkter.
-ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: 70ea1d5c176dd603f6a5addb09356909f13f9ace
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657013"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840676"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Hantera Microsoft-feedback för din organisation
 
-Som administratör för en Microsoft 365-organisation finns det nu flera principer som hjälper dig att hantera feedbackinsamlingen och kundens engagemang för användarna när de använder Microsoft 365-program. Du kan skapa och använda befintliga Azure Active Directory-grupper i organisationen för var och en av dessa principer. Med de här enheterna kan du styra hur olika avdelningar i organisationen kan skicka feedback till Microsoft. Microsoft granskar all feedback som skickats in av kunder och använder denna feedback för att förbättra produkten. Om du låter **feedbackupplevelsen vara** påslagen kan du se vad användarna säger om de Microsoft-produkter de använder. Den feedback vi samlar in från dina användare kommer snart att finnas tillgänglig i administrationscentret för Microsoft 365.
+Som administratör för en organisation Microsoft 365 finns det nu flera principer som hjälper dig att hantera feedbackinsamlingen och kundgagemang för användarna när du använder Microsoft 365 program. Du kan skapa och använda befintliga Azure Active Directory-grupper i organisationen för var och en av dessa principer. Med de här enheterna kan du styra hur olika avdelningar i organisationen kan skicka feedback till Microsoft. Microsoft granskar all feedback som skickats in av kunder och använder denna feedback för att förbättra produkten. Om du låter **feedbackupplevelsen vara** påslagen kan du se vad användarna säger om de Microsoft-produkter de använder. Den feedback vi samlar in från dina användare kommer snart att bli tillgänglig Microsoft 365 administrationscentret.
 
 Mer information om typer av feedback och hur Microsoft använder feedback från användare finns i [Läs mer om Microsoft-feedback för din organisation.](../misc/feedback-user-control.md)
 
@@ -51,7 +51,7 @@ I tabellen nedan ser du vilka appar och tjänster som för närvarande är anslu
 |**Visio**|Ja|Ja|Ja|Ja|
 |**Yammer**|Ja|Ja|Ja|Ja|
 
-[Här finns några exempel på undersökningar och feedback i produkter.](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
+[Här finns några exempel på undersökningar och feedback i produkter.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
 
 **Metadatasamling**
 
@@ -94,7 +94,7 @@ Enheterna måste ha ett lägsta build-nummer för att kunna använda dessa princ
 1. Sök efter **feedback** och **undersökning**.
 1. För varje princip som visas ställer du in det värde du vill ha.
 
-Mer information finns i [Översikt över office molnprinciptjänsten.](/deployoffice/overview-office-cloud-policy-service)
+Mer information finns i [Översikt över Office molnprinciptjänsten.](/deployoffice/overview-office-cloud-policy-service)
 
 De här principinställningarna är också tillgängliga om du använder Grupprincip. Om du vill använda de här principinställningarna laddar du ned minst version 5146.1000 av administrationsmallfilerna [(ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030)som släpptes den 22 mars 2021.
 

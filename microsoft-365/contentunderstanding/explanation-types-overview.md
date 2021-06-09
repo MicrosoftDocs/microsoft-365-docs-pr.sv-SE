@@ -13,40 +13,40 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Läs mer om fraslista, reguljärt uttryck och typer av närhetsförklaringar i Microsoft SharePoint Syntex.
-ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: cfc217d9e671f2a3a9daa89f80e7d932adeac2c0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770871"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843356"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Olika typer av förklaringar i Microsoft SharePoint Syntex
 
 Förklaringar används för att definiera den information som du vill använda för att ge etiketter och utdrag i dina modeller för dokumenttolkning i Microsoft SharePoint Syntex. När du skapar en förklaring måste du välja en förklaringstyp. Den här artikeln hjälper dig förstå olika förklaringstyper och hur de används.
 
-![Skärmbild av panelen Skapa en förklaring med de tre förklaringstyperna.](../media/content-understanding/explanation-types.png) 
-   
+![Skärmbild av panelen Skapa en förklaring med de tre förklaringstyperna.](../media/content-understanding/explanation-types.png)
+
 Följande förklaringstyper är tillgängliga:
 
 - [**Fraslista**](#phrase-list): lista med ord, fraser, siffror eller andra tecken som du kan använda i det dokument eller den information du extraherar.  Exempel: textsträngen *hänvisande läkare* finns i alla medicinska referensdokument som du identifierar. Eller den hänvisande läkarens *telefonnummer* i alla medicinsk referensdokument som du identifierar.
 
 - [**Ett reguljärt uttryck**](#regular-expression): använder en notation för mönstermatchning för att hitta specifika teckenmönster. Du kan till exempel använda ett reguljärt uttryck för att hitta alla förekomster av ett *postadresmönstret* i en uppsättning dokument.
 
-- [**Närhet**](#proximity): beskriver hur nära förklaringar är med varandra. Till exempel: en fraslista för *gatunummer* ska ligga precis innan fraslistan för *gatunamn* utan tokens emellan (du får lära dig mer om tokens senare i den här artikeln). Med närhetstypen måste du ha minst två förklaringar i modellen, annars är alternativet inaktiverat. 
+- [**Närhet**](#proximity): beskriver hur nära förklaringar är med varandra. Till exempel: en fraslista för *gatunummer* ska ligga precis innan fraslistan för *gatunamn* utan tokens emellan (du får lära dig mer om tokens senare i den här artikeln). Med närhetstypen måste du ha minst två förklaringar i modellen, annars är alternativet inaktiverat.
 
 ## <a name="phrase-list"></a>Fraslista
 
 Förklaringstypen fraslista används vanligtvis för att identifiera och klassificera ett dokument via modellen. Så som det beskrivs i exemplet med etikett för *hänvisande läkare* är det en sträng med ord, fraser, siffror eller tecken är konsekventa i de dokument som du identifierar.
 
-Även om det inte är obligatoriskt kan du få mer framgång med din förklaring om frasen du hämtar finns på en konsekvent plats i ditt dokument. Till exempel kan etiketten *hänvisande läkare* konsekvent finnas i det första stycket i dokumentet. Du kan också använda avancerad inställning för **[Konfigurera var fraser ska visas i dokumentet](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#configure-where-phrases-occur-in-the-document)** för att markera specifika områden där frasen finns, särskilt om det finns en möjlighet att frasen förekommer på flera platser i ditt dokument.
+Även om det inte är obligatoriskt kan du få mer framgång med din förklaring om frasen du hämtar finns på en konsekvent plats i ditt dokument. Till exempel kan etiketten *hänvisande läkare* konsekvent finnas i det första stycket i dokumentet. Du kan också använda avancerad inställning för **[Konfigurera var fraser ska visas i dokumentet](explanation-types-overview.md#configure-where-phrases-occur-in-the-document)** för att markera specifika områden där frasen finns, särskilt om det finns en möjlighet att frasen förekommer på flera platser i ditt dokument.
 
 Om skifteslägeskänslighet är obligatorisk för att identifiera din etikett tillåter användning av fraslista dig att ange det i förklaringen genom att markera kryssrutan **Endast exakta versaler**.
 
-![Skifteslägeskänslighet](../media/content-understanding/case-sensitivity.png) 
+![Skifteslägeskänslighet](../media/content-understanding/case-sensitivity.png)
 
-En frastyp är särskilt användbar när du skapar en förklaring som identifierar och extraherar information i olika format, till exempel datum, telefonnummer och kreditkortsnummer. Till exempel kan ett datum visas i flera olika format (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, eller Jan 1, 2020). Genom att definiera en fraslista blir förklaringen mer effektiv genom att fånga alla möjliga variationer i de data som du försöker identifiera och extrahera. 
+En frastyp är särskilt användbar när du skapar en förklaring som identifierar och extraherar information i olika format, till exempel datum, telefonnummer och kreditkortsnummer. Till exempel kan ett datum visas i flera olika format (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, eller Jan 1, 2020). Genom att definiera en fraslista blir förklaringen mer effektiv genom att fånga alla möjliga variationer i de data som du försöker identifiera och extrahera.
 
-För exemplet *telefonnummer* extraherar du telefonnumret till varje hänvisande läkare från alla medicinska referensdokument som modellen identifierar. När du skapar förklaringen skriver du de olika formaten som ett telefonnummer kan visa i ditt dokument så att du kan fånga upp möjliga variationer. 
+För exemplet *telefonnummer* extraherar du telefonnumret till varje hänvisande läkare från alla medicinska referensdokument som modellen identifierar. När du skapar förklaringen skriver du de olika formaten som ett telefonnummer kan visa i ditt dokument så att du kan fånga upp möjliga variationer.
 
 ![Mönster för telefonnummerfraser](../media/content-understanding/pattern-list.png)
 
@@ -71,7 +71,7 @@ Om du har kapitaliseringskrav i din fraslista kan du välja kryssrutan **Endast 
 ![Endast exakta versaler](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> I stället för att manuellt skapa en förklaring för en fraslista kan du använda [förklaringsbiblioteket](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) för att använda mallar för en vanlig fraslista, till exempel *datum*, *telefonnummer* eller *kreditkortsnummer*.
+> I stället för att manuellt skapa en förklaring för en fraslista kan du använda [förklaringsbiblioteket](explanation-types-overview.md#use-explanation-templates) för att använda mallar för en vanlig fraslista, till exempel *datum*, *telefonnummer* eller *kreditkortsnummer*.
 
 ## <a name="regular-expression"></a>Reguljärt uttryck
 
@@ -81,7 +81,7 @@ Med en förklaringstyp för reguljära uttryck kan du skapa mönster som hjälpe
 - Verifiera text för att säkerställa att den matchar ett fördefinierat mönster (till exempel en e-postadress).
 - Extrahera, redigera, ersätta eller ta bort textundersträngar.
 
-En typ av reguljära uttryck är särskilt användbar när du skapar en förklaring som identifierar och extraherar information i liknande format, till exempel e-postadresser, bankkontonummer eller url-adresser. En e-postadress, till exempel megan@contoso.com, visas i ett visst mönster ("megan" är den första delen, och "com" är den sista delen). 
+En typ av reguljära uttryck är särskilt användbar när du skapar en förklaring som identifierar och extraherar information i liknande format, till exempel e-postadresser, bankkontonummer eller url-adresser. En e-postadress, till exempel megan@contoso.com, visas i ett visst mönster ("megan" är den första delen, och "com" är den sista delen).
 
 Det vanliga uttrycket för en e-postadress är: **[A-Basist-z0-9._%-]+@[A-An-z0-9.-]+. [A-<3>-z]{2,6}**.
 
@@ -117,18 +117,18 @@ Så här lägger du till en förklaringstyp för reguljära uttryck:
 
 ### <a name="limitations"></a>Begränsningar
 
-I följande tabell visas alternativ för infogade tecken som för närvarande inte är tillgängliga för användning i mönster med reguljära uttryck. 
+I följande tabell visas alternativ för infogade tecken som för närvarande inte är tillgängliga för användning i mönster med reguljära uttryck.
 
 |Alternativ  |Region  |Aktuella funktioner  |
 |---------|---------|---------|
 |Skiftlägeskänslighet | Stöds inte för närvarande. | Alla matchningar som utförs är inte skiftlägeskänsliga.  |
 |Linjeankare     | Stöds inte för närvarande. | Det går inte att ange en specifik position i en sträng där en matchning måste ske.   |
 
-## <a name="proximity"></a>Närhet 
+## <a name="proximity"></a>Närhet
 
-Typen närhetsförklaring hjälper modellen att lättare identifiera data genom att definiera hur nära ett annat data kommer till den. I din modell har du till exempel två förklaringar som etiketterar både kundens *gatunummer* och *telefonnummer*. 
+Typen närhetsförklaring hjälper modellen att lättare identifiera data genom att definiera hur nära ett annat data kommer till den. I din modell har du till exempel två förklaringar som etiketterar både kundens *gatunummer* och *telefonnummer*.
 
-Notera att kundens telefonnummer alltid visas före gatunumret. 
+Notera att kundens telefonnummer alltid visas före gatunumret.
 
 Alex Wilburn<br>
 555-555-5555<br>
@@ -141,7 +141,7 @@ Använd närhetsförklaringen för att definiera hur långt bort det är för at
 
 #### <a name="what-are-tokens"></a>Vad är tokens?
 
-Om du vill använda typen för närhetsförklaring måste du förstå vad en token är. Antalet tokens är hur närhetsförklaringen mäter avståndet från en förklaring till en annan. En token är ett sammanhängande intervall (exklusive blanksteg eller skiljetecken) för bokstäver och siffror. 
+Om du vill använda typen för närhetsförklaring måste du förstå vad en token är. Antalet tokens är hur närhetsförklaringen mäter avståndet från en förklaring till en annan. En token är ett sammanhängande intervall (exklusive blanksteg eller skiljetecken) för bokstäver och siffror.
 
 I tabellen nedan visas exempel på hur du kan ta reda på antalet tokens i en fras.
 
@@ -207,8 +207,8 @@ Du kan välja följande alternativ för den här inställningen:
 
    ![Anpassat intervall](../media/content-understanding/custom-file.png)
 
-    I visningsprogrammet kan du manuellt justera urvalsrutan så att den inkluderar platsen där fasen inträffar. För den här inställningen måste du välja en **start**- och en **slut** position. De här värdena representerar antalet tokens från början av dokumentet. Även om du kan ange dessa värden manuellt är det enklare att justera urvalsrutan i visningsprogrammet manuellt. 
-   
+    I visningsprogrammet kan du manuellt justera urvalsrutan så att den inkluderar platsen där fasen inträffar. För den här inställningen måste du välja en **start**- och en **slut** position. De här värdena representerar antalet tokens från början av dokumentet. Även om du kan ange dessa värden manuellt är det enklare att justera urvalsrutan i visningsprogrammet manuellt.
+
 ## <a name="use-explanation-templates"></a>Använda förklaringsmallar
 
 Medan du manuellt kan lägga till olika fraslistvärden för din förklaring kan det vara lättare att använda mallarna som du har fått i förklaringsbiblioteket.
@@ -216,34 +216,34 @@ Medan du manuellt kan lägga till olika fraslistvärden för din förklaring kan
 Till exempel, istället för att manuellt lägga till alla variationer för *datum*, kan du använda fraslistmallen för *datum* eftersom den redan innehåller många värden för fraslistor:
 
 ![Förklaringsbiblioteket](../media/content-understanding/explanation-template.png)
- 
+
 I förklaringsbiblioteket finns flera vanliga förklaringar för *fraslistor*, till exempel:
 
 - Datum: kalenderdatum, alla format. Innehåller text och tal (till exempel "9 dec 2020").
 - Datum (numeriskt): kalenderdatum, alla format. Inkluderar tal (till exempel 1-11-2020).
 - Tid: 12- och 24-timmarsformat.
-- Tal: positiva och negativa tal upp till två decimaler. 
+- Tal: positiva och negativa tal upp till två decimaler.
 - Procent: en lista över mönster som representerar en procentsats. Till exempel, 1 %, 11 %, 100 %, eller 11,11 %.
 - Telefonnummer: Vanliga amerikanska och internationella format. Till exempel, 000 000 0000, 000-000-0000, (000)000-0000, eller (000) 000-0000.
 - Postnummer: amerikanska postnummerformat. Till exempel: 11111, 11111-1111.
-- Första ordet i meningen: vanliga mönster för ord upp till nio tecken. 
+- Första ordet i meningen: vanliga mönster för ord upp till nio tecken.
 - Slutet av mening: vanligt skiljetecken för slutet av en mening.
-- Kreditkort: vanliga talformat för kreditkort. Till exempel: 1111-1111-1111-1111. 
-- Personnummer: US personnummer-format, till exempel, 111-11-1111. 
+- Kreditkort: vanliga talformat för kreditkort. Till exempel: 1111-1111-1111-1111.
+- Personnummer: US personnummer-format, till exempel, 111-11-1111.
 - Kryssruta: en fraslista som representerar variationer på en ifylld kryssruta. Till exempel, _X_, _ _X_.
-- Valuta: vanligaste internationella symboler. Exempel: $. 
+- Valuta: vanligaste internationella symboler. Exempel: $.
 - Kopia i e-post: en fraslista med termen "CC:" som ofta finns nära namnen eller e-postadresserna till andra personer eller grupper som meddelandet skickades till.
 - E-postdatum: en fraslista med termen "Skickat den:" förekommer ofta nära det datum då meddelandet skickades.
 - E-posthälsning: vanliga inledande rader för e-postmeddelanden.
-- E-postmottagare: en fraslista med termen "Till:" som ofta finns nära namnen eller e-postadresserna till personer eller grupper som meddelandet skickades till. 
-- E-postavsändare: en fraslista med termen "Från:" förekommer ofta nära avsändarens namn eller e-postadress. 
+- E-postmottagare: en fraslista med termen "Till:" som ofta finns nära namnen eller e-postadresserna till personer eller grupper som meddelandet skickades till.
+- E-postavsändare: en fraslista med termen "Från:" förekommer ofta nära avsändarens namn eller e-postadress.
 - Ämne för e-post: en fraslista med termen "Ämne:" som ofta finns nära e-postmeddelandets ämne.
 
 I förklaringsbiblioteket finns också flera vanliga förklaringar för *reguljära* uttryck, till exempel:
 
 - 6 till 17 siffror: Matchar ett tal mellan 6 och 17 siffror. Bankkontonummer medborgare i USA passar det här mönstret.
 - E-postadress: matchar en gemensam typ av e-postadress som meganb@contoso.com.
-- ID-nummer för skatteskyldig medborgare i USA: matchar ett 9-siffrigt nummer som börjar med 6 följt av ett 7-siffigt nummer som börjar med 8 eller 8 
+- ID-nummer för skatteskyldig medborgare i USA: matchar ett 9-siffrigt nummer som börjar med 6 följt av ett 7-siffigt nummer som börjar med 8 eller 8
 - Webbadress (URL): Matchar formatet på en webbadress, som börjar med http:// eller https://.
 
 Dessutom finns i förklaringsbiblioteket tre automatiska malltyper som fungerar med de data som du har märkt i exempelfilerna:
@@ -263,7 +263,7 @@ När du väljer mallen förklaringsmallen Före etikett letar den efter den för
 Du kan välja **Lägg** om du vill skapa en förklaring från mallen.  När du lägger till fler exempelfiler identifieras och läggs ytterligare ord till i fraslistan.
 
 ![Lägga till etiketten](../media/content-understanding/before-label-add.png)
- 
+
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Använda en mall från förklaringsbiblioteket
 
 1. Välj **Ny** i avsnittet **Förklaringar** på modellens sida **Träna** och välj **Från en mall**.
@@ -274,7 +274,7 @@ Du kan välja **Lägg** om du vill skapa en förklaring från mallen.  När du l
 
     ![Välj en mall](../media/content-understanding/phone-template.png)
 
-3. Informationen för den mall som du valde visas på sidan **Skapa en förklaring**. Om det behövs kan du redigera namnet på förklaringen och lägga till eller ta bort objekt från fraslistan.  
+3. Informationen för den mall som du valde visas på sidan **Skapa en förklaring**. Om det behövs kan du redigera namnet på förklaringen och lägga till eller ta bort objekt från fraslistan.
 
     ![Redigera mall](../media/content-understanding/phone-template-live.png)
 

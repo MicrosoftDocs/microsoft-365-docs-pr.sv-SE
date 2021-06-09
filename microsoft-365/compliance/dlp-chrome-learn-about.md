@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Med Microsofts Efterlevnadstillägg utökas övervakning och kontroll av filaktiviteter och skyddsåtgärder mot Google Chrome-webbläsaren
-ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: cf7a3cd2e26f2e7d7a116e4a609f98aeea78be19
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730492"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843812"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>Läs mer om Microsofts Efterlevnadstillägg
 
@@ -63,5 +63,5 @@ Se [Komma igång med Microsofts Efterlevnadstillägg](dlp-chrome-get-started.md)
 - [Mer information om dataförlustskydd](dlp-learn-about-dlp.md)
 - [Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)
 - [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md)
-- [Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender för Endpoint](/windows/security/threat-protection/)
 - [Hantering av interna risker](insider-risk-management.md)

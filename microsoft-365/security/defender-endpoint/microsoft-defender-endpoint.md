@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender för Endpoint
 description: Microsoft Defender för Endpoint är en plattform för säkerhet för företagsslutpunkter som hjälper dem att försvara sig mot avancerade fortlöpande hot.
-keywords: Introduktion till Microsoft Defender för Endpoint, introduktion till Microsoft Defender för Endpoint, cybersäkerhet, avancerade fortlöpande hot, företagssäkerhet, sensor för maskinbeteende, molnsäkerhet, analys, hotinformation, minskning av hotytan, nästa generations skydd, automatisk undersökning och åtgärd, microsoft threat-experter, säker poäng, avancerad sökning, Microsoft 365 Defender, cyberhotssäkerhet
+keywords: introduktion till Microsoft Defender för Endpoint, introduktion till Microsoft Defender för Endpoint, cybersäkerhet, avancerade fortlöpande hot, företagssäkerhet, sensor för maskinbeteende, molnsäkerhet, analys, hotinformation, minskning av hotytan, nästa generations skydd, automatisk undersökning och åtgärd, microsoft threat-experter, säker poäng, avancerad sökning, Microsoft 365 Defender, cyberhotssäkerhet
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3bab9d0248a2ed8e83807f3c38215e653cba26eb
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935935"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843560"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender för Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "51935935"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> Mer information om funktionerna i Windows 10 Enterprise Edition finns i [Windows 10 Enterprise Edition.](https://www.microsoft.com/WindowsForBusiness/buy)
+> Mer information om Windows 10 Enterprise Edition-funktioner finns i [Windows 10 Enterprise utgåva.](https://www.microsoft.com/WindowsForBusiness/buy)
 
 Microsoft Defender för Endpoint är en säkerhetsplattform för företag som utformats för att hjälpa företagsnätverk att förhindra, upptäcka, undersöka och hantera avancerade hot.
 <p></p>
@@ -42,14 +42,14 @@ Microsoft Defender för Endpoint är en säkerhetsplattform för företag som ut
 
 Defender för Endpoint använder följande kombination av teknik som är inbyggd i Windows 10 och Microsofts robusta molntjänst:
 
--   **Slutpunktsbeteendesensorer**: Inbäddade i Windows 10, dessa sensorer samlar in och bearbetar funktionssignaler från operativsystemet och skickar sensordata till din privata, isolerade molninstans av Microsoft Defender för Endpoint.
+-   **Slutpunktsbeteendesensorer:** Inbäddade i Windows 10 samlar dessa sensorer in och processbeteendesignaler från operativsystemet och skickar sensordata till din privata, isolerade molninstans av Microsoft Defender för Slutpunkt.
 
 
--   Molnsäkerhetsanalyser: Utnyttja stora data, enhetsinlärning och unik Microsoft-optik över Windows-ekosystemet, företagmolnprodukter (till exempel Office 365) och onlinetillgångar, funktionssignaler översättas till insikter, identifieringar och rekommenderade svar på avancerade hot.
+-   Molnsäkerhetsanalyser: Utnyttja stora data, enhetsinlärning och unik Microsoft-optisk användning över Windows-ekosystem, företagmolnprodukter (till exempel Office 365) och onlinetillgångar, funktionssignaler översättas till insikter, identifieringar och rekommenderade svar på avancerade hot.
 
 -   **Hotinformation:** Genereras av Microsoft-säkerhetsteam, säkerhetsteam och utökas av hotinformation som tillhandahålls av partner, och med hjälp av hotinformation kan Defender för Endpoint identifiera attackersverktyg, tekniker och procedurer, och generera aviseringar när de observeras i insamlade sensordata.
 
-<center><h2>Microsoft Defender för Endpoint</center></h2>
+<center><h2>Microsoft Defender för Slutpunkt</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Hot & sårbarhetshantering</b></center></a></td>
@@ -57,7 +57,7 @@ Defender för Endpoint använder följande kombination av teknik som är inbyggd
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Nästa generations skydd</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Identifiering och svar av slutpunkter</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automatiserad undersökning och åtgärder</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Hotexperter</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
@@ -89,7 +89,7 @@ Minskningsuppsättningen för attackytan ger den första försvarslinjen i höge
 
 <a name="ngp"></a>
 
-**[Nästa generations skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[Nästa generations skydd](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 För att ytterligare förstärka nätverkets säkerhets perimeter använder Microsoft Defender för Endpoint nästa generations skydd som är utformat för att fånga upp alla typer av nya hot.
 
 <a name="edr"></a>
@@ -114,8 +114,8 @@ Defender för Endpoint innehåller Microsoft Secure Score för enheter som hjäl
 Med Microsoft Defender för Endpoints nya tjänst för att hantera hot kan du proaktiva produkter, prioritera samt ytterligare kontext och insikter som ytterligare ger säkerhetscenter (SOCs) möjlighet att identifiera och reagera på hot snabbt och korrekt.
 
 >[!IMPORTANT]
->Defender för Endpoint-kunder måste söka efter Microsoft Threat Experts som hanterat söktjänst för hot för att få proaktiva riktade attackmeddelanden och samarbeta med experter på begäran. Experter på begäran är en tilläggstjänst. Riktade attackmeddelanden inkluderas alltid när du har accepterats i Microsoft Threat Experts som hanterat hot efter hot.<p>
-><p>Om du inte har registrerat dig än och vill <b></b> uppleva fördelarna går du till Inställningar > <b>Allmänna</b> > <b></b> avancerade funktioner som Microsoft > <b>Threat Experts kan</b> använda. När du accepterat, får du fördelarna med riktade attackmeddelanden och påbörja en 90-dagars utvärderingsversion av experter på begäran. Kontakta din Microsoft-representant för att få en fullständig prenumeration för Experter på begäran.
+>Defender för Endpoint-kunder måste söka efter Microsoft Hotexperter-tjänsten för hanterade hot för att få proaktiva riktade attackmeddelanden och samarbeta med experter på begäran. Experter på begäran är en tilläggstjänst. Riktade attackmeddelanden inkluderas alltid när du har godkänts för Microsoft Hotexperter av hot efter hot.<p>
+><p>Om du inte är registrerad ännu och vill uppleva fördelarna går du till fliken <b>Allmänna Inställningar</b> > <b></b> > <b>som du</b> > <b>Microsoft Hotexperter</b> använda. När du accepterat, får du fördelarna med riktade attackmeddelanden och påbörja en 90-dagars utvärderingsversion av experter på begäran. Kontakta din Microsoft-representant för att få en fullständig prenumeration för Experter på begäran.
 
 <a name="apis"></a>
 
@@ -134,8 +134,8 @@ Defender för Endpoint är direkt integrerat med olika Microsoft-lösningar, bla
 - Microsoft Defender för Office
 - Skype för företag
 
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
-Med Microsoft 365 Defender skapar Defender för Endpoint och olika Microsoft-säkerhetslösningar en enhetlig företagssäkerhetssvit före och efter intrång som integrerar inbyggt i slutpunkt, identitet, e-post och program för att identifiera, förhindra, undersöka och automatiskt svara på avancerade attacker.
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+Med Microsoft 365 Defender skapar Defender för Endpoint och olika Microsoft-säkerhetslösningar en enhetlig företagssäkerhetssvit efter intrång som inbyggt integreras i slutpunkt, identitet, e-post och program för att identifiera, förhindra, undersöka och automatiskt reagera på avancerade attacker.
 
 
 ## <a name="related-topic"></a>Relaterat ämne

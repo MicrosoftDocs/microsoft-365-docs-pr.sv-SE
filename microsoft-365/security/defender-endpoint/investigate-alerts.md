@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 8b3b864e716957c24893d2097249440b0a90f10a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 626be9e949170fcda1f0bcf2a88e1b9780bbe764
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186107"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841096"
 ---
 # <a name="investigate-alerts-in-microsoft-defender-for-endpoint"></a>Undersöka aviseringar i Microsoft Defender för Slutpunkt
 
@@ -40,7 +40,7 @@ Undersök aviseringar som påverkar nätverket, förstå vad de betyder och hur 
 
 Välj en avisering från aviseringskön för att gå till aviseringssidan. Den här vyn innehåller aviseringsrubriken, de berörda tillgångarna, informationsfönstret och aviseringsartikeln.
 
-Från aviseringssidan börjar du din undersökning genom att välja de berörda tillgångarna eller någon av enheterna under trädvyn för aviseringsartikeln. Informationsfönstret fylls automatiskt i med ytterligare information om det du har markerat. Om du vill se vilken typ av information du kan visa här kan du läsa [Granska aviseringar i Microsoft Defender för slutpunkt.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/review-alerts)
+Från aviseringssidan börjar du din undersökning genom att välja de berörda tillgångarna eller någon av enheterna under trädvyn för aviseringsartikeln. Informationsfönstret fylls automatiskt i med ytterligare information om det du har markerat. Om du vill se vilken typ av information du kan visa här kan du läsa [Granska aviseringar i Microsoft Defender för slutpunkt.](/microsoft-365/security/defender-endpoint/review-alerts)
 
 ## <a name="investigate-using-the-alert-story"></a>Undersök användning av aviseringsartikeln
 

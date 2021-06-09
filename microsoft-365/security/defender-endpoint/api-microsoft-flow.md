@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dd0cc3c2da134750f905b1f80746d6ec65cc70b2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: a0718f8e3aba27e6fbfc92a4308278f4c629275f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769713"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843800"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (tidigare Microsoft Flow) och Azure-funktioner
 
@@ -42,7 +42,7 @@ Microsoft Defender API har en officiell Flow Connector med många funktioner.
 ![Bild av autentiseringsuppgifter för redigera1](images/api-flow-0.png)
 
 > [!NOTE]
-> Mer information om licenskrav för Premium Connectors finns i [Licensiering för premium-anslutningappar.](https://docs.microsoft.com/power-automate/triggers-introduction#licensing-for-premium-connectors)
+> Mer information om licenskrav för Premium Connectors finns i [Licensiering för premium-anslutningappar.](/power-automate/triggers-introduction#licensing-for-premium-connectors)
 
 
 ## <a name="usage-example"></a>Användningsexempel

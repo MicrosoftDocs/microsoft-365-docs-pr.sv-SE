@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Använd ett lokalt skript för att distribuera konfigurationspaketet på enheter så att de introduceras till tjänsten.
-ms.openlocfilehash: e9efa76af72f9169bdec1acf35d72066ac0a776e
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 55109d8fda52db6651d4398cd84ffd6668b4d871
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "52162762"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843452"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Registrera Windows 10-enheter med ett lokalt skript
 
@@ -50,7 +50,7 @@ Du kan även registrera enskilda enheter manuellt Microsoft 365 skydd mot dataf�
 
 7.  Gå till **Start** och skriv **cmd**.
 
-8.  Högerklicka på **Kommandotolk** och välj **Kör som administratör.**
+8.  Högerklicka på **Kommandotolken** och välj **Kör som administratör**.
 
     ![Start-menyn i ett fönster som pekar på Kör som administratör](../media/dlp-run-as-admin.png)
 
@@ -80,7 +80,7 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
 
 7.  Gå till **Start** och skriv **cmd**.
 
-8.  Högerklicka på **Kommandotolk** och välj **Kör som administratör.**
+8.  Högerklicka på **Kommandotolken** och välj **Kör som administratör**.
 
     ![Start-menyn i ett fönster som pekar på Kör som administratör](../media/dlp-run-as-admin.png)
 
@@ -93,7 +93,7 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
 
 
 ## <a name="monitor-device-configuration"></a>Övervaka enhetskonfiguration
-Du kan följa de olika verifieringsstegen i [Troubleshoot onboarding issues](( för att verifiera att skriptet har slutförts https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) och att agenten körs.
+Du kan följa de olika verifieringsstegen i [Felsök onboarding-problem]((/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) för att verifiera att skriptet har slutförts och att agenten körs.
 
 Övervakning kan också utföras direkt i portalen eller med hjälp av de olika distributionsverktygen.
 

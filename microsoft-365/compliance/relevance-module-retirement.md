@@ -11,14 +11,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 description: Relevansmodulen i Advanced eDiscovery dras tillbaka den 10 mars 2021. I den här artikeln förklaras vad du kan göra innan Relevans dras tillbaka. Mer specifikt kan du avsluta alla oavslutade modeller genom att köra batchberäkningar så att du kan behålla metadata från modellen.
-ms.openlocfilehash: 22a7fc37a62dc665d4d798525d5e1e55250d0cb1
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.openlocfilehash: 0719c2cb1b6b0d867ffc045fe02d57e1e2f32a61
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "52161791"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822003"
 ---
 # <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>Relevansmodulen i Advanced eDiscovery
 

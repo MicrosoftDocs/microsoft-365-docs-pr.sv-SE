@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 71daccdbcb223ac48d80721bf0a296d9c1a7c98c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: a7f343db64174fe3c48eaf8b584b03b53921edcb
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770103"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843620"
 ---
 # <a name="list-exposure-score-by-device-group"></a>Lista över exponeringsresultat per enhetsgrupp
 
@@ -106,5 +106,5 @@ Här är ett exempel på svaret.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Riskbaserade hot & sårbarhetshantering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Exponeringsresultat & för hot](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Riskbaserade hot & sårbarhetshantering](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Exponeringsresultat & för hot](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

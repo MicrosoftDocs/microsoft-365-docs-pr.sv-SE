@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47be07759a72a080a3687ed3bb50cef9d0a959b7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 55c001781ff016d7a23dc5db286d454b39fac5de
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904052"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841060"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Undersöka anslutningshändelser som inträffar bakom vidarebefordrade proxy
 
@@ -45,8 +45,8 @@ Det är möjligt att övervaka nätverksanslutningen bakom en vidarebefordrad pr
 
 Nätverksskyddet kan styras med hjälp av följande lägen:
 
-- **Blockera** <br> Användare eller appar kommer att blockeras från att ansluta till skadliga domäner. Du kan se aktiviteten i Microsoft Defender Säkerhetscenter.
-- **Granskning** <br> Användare eller appar kommer inte att blockeras från att ansluta till skadliga domäner. Men den här aktiviteten visas fortfarande i Microsoft Defender Säkerhetscenter.
+- **Blockera** <br> Användare eller appar kommer att blockeras från att ansluta till skadliga domäner. Du kan se den här aktiviteten i Microsoft Defender Säkerhetscenter.
+- **Granskning** <br> Användare eller appar kommer inte att blockeras från att ansluta till skadliga domäner. Du ser dock fortfarande den här aktiviteten i Microsoft Defender Säkerhetscenter.
 
 
 Om du inaktiverar nätverksskydd blockeras inte användare eller appar från att ansluta till skadliga domäner. Du ser ingen nätverksaktivitet i Microsoft Defender Säkerhetscenter.
@@ -94,4 +94,4 @@ DeviceNetworkEvents
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Tillämpa nätverksskydd med GP – princip-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+- [Tillämpa nätverksskydd med GP – princip-CSP](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

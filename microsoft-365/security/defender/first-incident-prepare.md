@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4fc124bf8787d5880d78a4f5208bd66329da07a0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: da9147955c5da9ea727854420b3d4d160583ef73
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539041"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840952"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Förbered säkerheten för den första händelsen
 
@@ -40,14 +40,14 @@ Förberedelse för incidenthantering omfattar att konfigurera tillräckligt skyd
 
 Microsoft 365 Defender kan åtgärda flera aspekter av incidentskydd: 
 
-- Implementera ett [Zero Trust Framework](https://docs.microsoft.com/security/zero-trust/)
+- Implementera ett [Zero Trust Framework](/security/zero-trust/)
 - Fastställa din säkerhet genom att tilldela ett poäng med [Microsoft Secure Score](microsoft-secure-score.md)
 - Förhindra hot genom sårbarhetsutvärderingar i [hot- och sårbarhetshantering](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Förstå de senaste säkerhetshoten så att du kan förbereda dem
 
 ## <a name="step-1-implement-zero-trust"></a>Steg 1. Implementera nollförtroende
 
-[Zero Trust](https://docs.microsoft.com/security/zero-trust/) är en integrerad säkerhetsstrategi som tar hänsyn till hur komplex en modern miljö är, inklusive den mobila arbetsstyrkan och användare, enheter, program och data, var de än befinner sig. Genom att ha ett enda fönster med fönster för att hantera alla identifieringar på ett konsekvent sätt [](https://docs.microsoft.com/security/zero-trust/#guiding-principles-of-zero-trust) kan Microsoft 365 Defender göra det enklare för din säkerhetsgrupp att implementera de vägledande principerna för Zero Trust. 
+[Zero Trust](/security/zero-trust/) är en integrerad säkerhetsstrategi som tar hänsyn till hur komplex en modern miljö är, inklusive den mobila arbetsstyrkan och användare, enheter, program och data, var de än befinner sig. Genom att ha ett enda fönster med fönster för att hantera alla identifieringar på ett konsekvent sätt [](/security/zero-trust/#guiding-principles-of-zero-trust) kan Microsoft 365 Defender göra det enklare för din säkerhetsgrupp att implementera de vägledande principerna för Zero Trust. 
 
 Komponenter i Microsoft 365 Defender kan visa överträdelser av regler som har implementerats för att upprätta villkorsstyrda åtkomstprinciper för Zero Trust genom att integrera data från Microsoft Defender för slutpunkt (MDE) eller andra mobila säkerhetsleverantörer som en informationskälla för principer för enhetsefterlevnad och implementering av enhetsbaserade villkorsbaserade principer. 
 

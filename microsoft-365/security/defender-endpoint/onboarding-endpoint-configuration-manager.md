@@ -1,6 +1,6 @@
 ---
 title: Introduktion med hjälp av Microsoft Endpoint Configuration Manager
-description: Lär dig hur du onboardar till Microsoft Defender för Endpoint med Hjälp av Konfigurationshanteraren för Microsoft Endpoint
+description: Lär dig hur du onboardar till Microsoft Defender för Endpoint med Microsoft Endpoint Configuration Manager
 keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 84273ce3e060eb86ee246a5cc6a8cae3cba743b5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eab23ddeb9011e80cf2835b8d38b2d3fad4b7089
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934495"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843512"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Introduktion med hjälp av Microsoft Endpoint Configuration Manager
 
@@ -49,73 +49,73 @@ Defender för Endpoint har stöd för registrering av olika slutpunkter och verk
 
 
 Det här avsnittet leder användarna i:
-- Steg 1: Introduktion till Windows-enheter till tjänsten 
+- Steg 1: Windows enheter till tjänsten 
 - Steg 2: Konfigurera Defender för slutpunktsfunktioner
 
-Den här introduktionsvägledningen går igenom följande grundläggande steg som du måste vidta när du använder Konfigurationshanteraren för Microsoft Endpoint:
-- **Skapa en samling i Konfigurationshanteraren för Microsoft Endpoint**
-- **Konfigurera Microsoft Defender för slutpunktsfunktioner med hjälp av Konfigurationshanteraren för Microsoft Endpoint**
+Den här introduktionsvägledningen går igenom följande grundläggande steg som du måste vidta när du använder Microsoft Endpoint Configuration Manager:
+- **Skapa en samling i Microsoft Endpoint Configuration Manager**
+- **Konfigurera Microsoft Defender för slutpunktsfunktioner med Microsoft Endpoint Configuration Manager**
 
 >[!NOTE]
->Endast Windows-enheter omfattas av den här exempeldistributionen. 
+>Endast Windows enheter omfattas av den här exempeldistributionen. 
 
 
 
-## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>Steg 1: Introducera Windows-enheter med Hjälp av Microsoft Endpoint Configuration Manager
+## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>Steg 1: Onboard Windows enheter med Microsoft Endpoint Configuration Manager
 
 ### <a name="collection-creation"></a>Skapa samling
-Om du vill registrera Windows 10-enheter med Microsoft Endpoint Configuration Manager kan distributionen leda till en befintlig samling eller så kan en ny samling skapas för testning. 
+Om du Windows 10 registrera Microsoft Endpoint Configuration Manager-enheter med hjälp av Microsoft Endpoint Configuration Manager kan distributionen ha en befintlig samling som mål, eller så kan en ny samling skapas för testning. 
 
 Registrering med verktyg som grupprincip eller manuell metod installerar inte någon agent i systemet. 
 
-I konsolen för Konfigurationshanteraren för Microsoft Endpoint konfigureras onboarding-processen som en del av inställningarna för efterlevnad i konsolen.
+I Microsoft Endpoint Configuration Manager konsolen konfigureras onboarding-processen som en del av inställningarna för efterlevnad i konsolen.
 
 Alla system som får den här nödvändiga konfigurationen behåller den konfigurationen så länge Konfigurationshanteraren-klienten fortsätter att ta emot den här principen från hanteringspunkten. 
 
-Följ stegen nedan för att registrera slutpunkter med Hjälp av Konfigurationshanteraren för Microsoft Endpoint.
+Följ stegen nedan för att registrera slutpunkter med hjälp Microsoft Endpoint Configuration Manager.
 
-1. Gå till Enhetssamlingar för tillgångar och efterlevnadsöversikt i konsolen **Konfigurationshanteraren \> \> för** Microsoft Endpoint.            
+1. I Microsoft Endpoint Configuration Manager navigera till Enhetssamlingar **för tillgångar och \> \> efterlevnadsöversikt.**            
 
-    ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint1](images/configmgr-device-collections.png)
+    ![Bild på Microsoft Endpoint Configuration Manager 1](images/configmgr-device-collections.png)
 
 2. Högerklicka på **Enhetssamling** och välj **Skapa enhetssamling**.
 
-    ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint2](images/configmgr-create-device-collection.png)
+    ![Bild på Microsoft Endpoint Configuration Manager 2](images/configmgr-create-device-collection.png)
 
 3. Ange ett **namn** och **en begränsad samling** och välj sedan **Nästa.**
 
-    ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint3](images/configmgr-limiting-collection.png)
+    ![Bild på Microsoft Endpoint Configuration Manager 3](images/configmgr-limiting-collection.png)
 
 4. Välj **Lägg till regel** och välj **Frågeregel.**
 
-    ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint4](images/configmgr-query-rule.png)
+    ![Bild av Microsoft Endpoint Configuration Manager guiden4](images/configmgr-query-rule.png)
 
 5.  Klicka **på** Nästa i **guiden Direktmedlemskap och** klicka på Redigera **frågeutdrag.**
 
-     ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint5](images/configmgr-direct-membership.png)
+     ![Bild på Microsoft Endpoint Configuration Manager 5](images/configmgr-direct-membership.png)
 
 6. Välj **Villkor** och välj sedan stjärnikonen.
 
-     ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint6](images/configmgr-criteria.png)
+     ![Bild på Microsoft Endpoint Configuration Manager 6](images/configmgr-criteria.png)
 
 7. Se till att villkorstypen är ett enkelt värde  , välj var som operativsystem **–** versionsnummer , operator som är större än eller lika med och **värde 14393** och klicka på **OK.** 
 
-    ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint7](images/configmgr-simple-value.png)
+    ![Bild på Microsoft Endpoint Configuration Manager 7](images/configmgr-simple-value.png)
 
 8. Välj **Nästa** och **Stäng.**
 
-    ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint8](images/configmgr-membership-rules.png)
+    ![Bild av Microsoft Endpoint Configuration Manager guiden8](images/configmgr-membership-rules.png)
 
 9. Välj **Nästa**.
 
-    ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint9](images/configmgr-confirm.png)
+    ![Bild på Microsoft Endpoint Configuration Manager guiden9](images/configmgr-confirm.png)
 
 
-När du har slutfört den här uppgiften har du en enhetssamling med alla Windows 10-slutpunkter i miljön. 
+När du har slutfört den här uppgiften har du en enhetssamling med Windows 10 alla slutpunkter i miljön. 
 
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Steg 2: Konfigurera Microsoft Defender för slutpunktsfunktioner 
-I det här avsnittet får du hjälp med att konfigurera följande funktioner med Konfigurationshanteraren för Microsoft Endpoint på Windows-enheter:
+I det här avsnittet får du hjälp med att konfigurera följande funktioner Microsoft Endpoint Configuration Manager på Windows enheter:
 
 - [**Identifiering och svar för slutpunkt**](#endpoint-detection-and-response)
 - [**Nästa generations skydd**](#next-generation-protection)
@@ -124,13 +124,13 @@ I det här avsnittet får du hjälp med att konfigurera följande funktioner med
 
 ### <a name="endpoint-detection-and-response"></a>Identifiering och svar av slutpunkt
 #### <a name="windows-10"></a>Windows 10
-I Microsoft Defender Säkerhetscenter kan du ladda ned onboarding-principen som kan användas för att skapa principen i System Center Configuration Manager och distribuera den principen på Windows 10-enheter.
+I Microsoft Defender Säkerhetscenter kan du ladda ned onboarding-principen som kan användas för att skapa principen i System Center Configuration Manager och distribuera den till Windows 10 enheter.
 
-1. Från en Microsoft Defender Säkerhetscenter-portal väljer [du Inställningar och sedan Onboarding](https://securitycenter.windows.com/preferences2/onboarding).
+1. På en Microsoft Defender Säkerhetscenter portal väljer [du Inställningar och sedan Onboarding](https://securitycenter.windows.com/preferences2/onboarding).
 
 
 
-2. Under Distributionsmetod väljer du den version av **Microsoft Endpoint Configuration Manager som stöds.**
+2. Under Distributionsmetod väljer du den version **av** Microsoft Endpoint Configuration Manager .
 
     ![Bild av introduktionsguiden för Microsoft Defender för slutpunkt10](images/mdatp-onboarding-wizard.png)
 
@@ -139,15 +139,15 @@ I Microsoft Defender Säkerhetscenter kan du ladda ned onboarding-principen som 
     ![Bild av introduktionsguiden för Microsoft Defender för slutpunkt11](images/mdatp-download-package.png)
 
 4. Spara paketet på en tillgänglig plats.
-5. I Microsoft Endpoint Configuration Manager går du till: Tillgångar och efterlevnad **> Översikt > Endpoint Protection > Microsoft Defender ATP-principer.**
+5. I Microsoft Endpoint Configuration Manager du till: **Tillgångar och efterlevnad > Översikt > Endpoint Protection > Microsoft Defender ATP Principer.**
 
-6. Högerklicka på **Microsoft Defender ATP-principer** och välj **Skapa Microsoft Defender ATP-princip**.
+6. Högerklicka på Microsoft Defender ATP **och** välj **Skapa Microsoft Defender ATP princip**.
 
-    ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint12](images/configmgr-create-policy.png)
+    ![Bild på Microsoft Endpoint Configuration Manager 12](images/configmgr-create-policy.png)
 
 7. Ange namn och beskrivning, kontrollera **att Onboarding** är markerat och välj sedan **Nästa**.
 
-    ![Bild av guiden Konfigurationshanteraren för Microsoft Endpoint13](images/configmgr-policy-name.png)
+    ![Bild på Microsoft Endpoint Configuration Manager 13](images/configmgr-policy-name.png)
 
 
 8. Klicka **på Bläddra**.
@@ -169,7 +169,7 @@ I Microsoft Defender Säkerhetscenter kan du ladda ned onboarding-principen som 
 
 15. Klicka **på** Stäng när guiden är klar.
 
-16.  Högerklicka på Defender för slutpunktsprincipen som du just skapade i konsolen Konfigurationshanteraren för Microsoft Endpoint och välj **Distribuera**.
+16.  Högerklicka Microsoft Endpoint Configuration Manager Defender för slutpunktsprincip du just skapade i konsolen och välj **Distribuera**.
 
      ![Bild på konfigurationsinställningar4](images/configmgr-deploy.png)
 
@@ -178,10 +178,10 @@ I Microsoft Defender Säkerhetscenter kan du ladda ned onboarding-principen som 
     ![Bild på konfigurationsinställningar5](images/configmgr-select-collection.png)
 
 
-#### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>Tidigare versioner av Windows-klienten (Windows 7 och Windows 8.1)
+#### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>Tidigare versioner av Windows (version Windows 7 och Windows 8.1)
 Följ stegen nedan för att identifiera defender för slutpunktsarbetsyta och arbetsytenyckel, som krävs för registrering av tidigare versioner av Windows.
 
-1. Från en Microsoft Defender Säkerhetscenter-portal väljer **du Inställningar > Onboarding**.
+1. På en Microsoft Defender Säkerhetscenter väljer du **Inställningar > Onboarding**.
 
 2. Under Operativsystem väljer du **Windows 7 SP1 och 8.1.**
 
@@ -190,13 +190,13 @@ Följ stegen nedan för att identifiera defender för slutpunktsarbetsyta och ar
     ![Bild på onboarding](images/91b738e4b97c4272fd6d438d8c2d5269.png)
 
 4. Installera Microsoft Monitoring Agent (MMA). <br>
-    MMA stöds för närvarande (från och med januari 2019) på följande Windows-operativsystem:
+    MMA stöds för närvarande (från och med januari 2019) på följande Windows operativsystem:
 
     -   Server-SKU:er: Windows Server 2008 SP1 eller nyare
 
     -   Klient-SKU:er: Windows 7 SP1 och senare
 
-    MMA-agenten måste installeras på Windows-enheter. För att kunna installera agenten måste vissa system ladda ned uppdateringen för kundupplevelse och diagnostisk [telemetri](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) för att kunna samla in data med MMA. Dessa systemversioner omfattar men kan inte begränsas till:
+    MMA-agenten måste installeras på Windows enheter. För att kunna installera agenten måste vissa system ladda ned uppdateringen för kundupplevelse och diagnostisk [telemetri](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) för att kunna samla in data med MMA. Dessa systemversioner omfattar men kan inte begränsas till:
 
     -   Windows 8.1
 
@@ -208,7 +208,7 @@ Följ stegen nedan för att identifiera defender för slutpunktsarbetsyta och ar
 
     -   Windows Server 2008 R2
 
-    Mer specifikt för Windows 7 SP1 måste följande korrigeringar vara installerade:
+    Mer specifikt Windows 7 SP1 måste följande korrigeringar installeras:
 
     -   Installera [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 
@@ -223,7 +223,7 @@ När den är klar bör du se onboarded endpoints i portalen inom en timme.
 ### <a name="next-generation-protection"></a>Nästa generations skydd 
 Microsoft Defender Antivirus är en inbyggd antimalwarelösning som ger nästa generations skydd för stationära datorer, bärbara datorer och servrar.
 
-1. I konsolen Konfigurationshanteraren för Microsoft Endpoint navigerar du till Assets **and Compliance Overview Endpoint Protection \> \> \> Antimalware Policys** och **väljer Create Antimalware Policy**.
+1. I Microsoft Endpoint Configuration Manager navigerar du till Översikt över tillgångar och **\> efterlevnad Endpoint Protection \> \> antimalware-policyer** och väljer Skapa programprincip för **program mot skadlig programvara.**
 
     ![Bild på program mot skadlig programvara](images/9736e0358e86bc778ce1bd4c516adb8b.png)
 
@@ -234,9 +234,9 @@ Microsoft Defender Antivirus är en inbyggd antimalwarelösning som ger nästa g
     I vissa branscher eller vissa utvalda företagskunder kan ha specifika behov av hur Antivirus är konfigurerat.
 
   
-    [Snabbsökning kontra fullständig sökning och anpassad sökning](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
+    [Snabbsökning kontra fullständig sökning och anpassad sökning](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    Mer information finns i [Windows Security configuration framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+    Mer information finns i Windows-säkerhet [konfigurationsramverket](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
     ![Bild av nästa generations skyddsfönster2](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
@@ -258,7 +258,7 @@ Microsoft Defender Antivirus är en inbyggd antimalwarelösning som ger nästa g
 
     ![Bild av nästa generations skyddsfönster10](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
-4. Rikta den nya principen mot skadlig programvara mot din Windows 10-samling och klicka på **OK.**
+4. Rikta den nya program mot skadlig programvara till din Windows 10 och klicka på **OK.**
 
      ![Bild av nästa generations skyddsfönster11](images/configmgr-select-collection.png)
 
@@ -267,13 +267,13 @@ När du har slutfört den här uppgiften har du nu konfigurerat Windows Defender
 ### <a name="attack-surface-reduction"></a>Minska attackytan
 Minskning av attackytan hos Defender för Endpoint inkluderar funktionsuppsättningen som är tillgänglig under Exploit Guard. ASR-regler (Attack Surface Reduction), kontrollerad mappåtkomst, nätverksskydd och sårbarhetsskydd. 
 
-Alla dessa funktioner ger ett granskningsläge och ett blockläge. I granskningsläge påverkas inte slutanvändarna. Allt som det gör är att samla in ytterligare telemetri och göra den tillgänglig i Microsoft Defender Säkerhetscenter. Syftet med en distribution är att stegvis flytta säkerhetskontroller till blockläge.
+Alla dessa funktioner ger ett granskningsläge och ett blockläge. I granskningsläge påverkas inte slutanvändarna. Allt som samlas in är ytterligare telemetri och gör den tillgänglig i Microsoft Defender Säkerhetscenter. Syftet med en distribution är att stegvis flytta säkerhetskontroller till blockläge.
 
 Så här anger du ASR-regler i granskningsläge:
 
-1. Gå till Konsolen för Konfigurationshanteraren för Microsoft Endpoint, navigera till Tillgångar och Översikt över efterlevnadsslutpunktsskydd **\> Windows Defender Exploit \> \> Guard** och välj **Create Exploit Guard-policy.**
+1. På Microsoft Endpoint Configuration Manager navigerar du till Översikt över tillgångar och **\> efterlevnad Endpoint Protection Windows Defender \> \> Sårbarhetsskydd** och **väljer Skapa sårbarhetspolicy.**
 
-   ![Bild på konsol för Konfigurationshanteraren för Microsoft Endpoint 0](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+   ![Bild på Microsoft Endpoint Configuration Manager konsol0](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 2.  Välj **Minska attackytan**.
    
@@ -281,27 +281,27 @@ Så här anger du ASR-regler i granskningsläge:
 3. Ange att regler **ska granskas** och klicka på **Nästa.**
 
 
-    ![Bild på konsol för Konfigurationshanteraren för Microsoft Endpoint1](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konsol1](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
 
 4. Bekräfta den nya Exploit Guard-policyn genom att klicka på **Nästa.**
 
-    ![Bild på konsol för Konfigurationshanteraren för Microsoft Endpoint2](images/0a6536f2c4024c08709cac8fcf800060.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konsol2](images/0a6536f2c4024c08709cac8fcf800060.png)
 
     
 5. När principen har skapats klickar du på **Stäng.**
 
-    ![Bild på konsol för Konfigurationshanteraren för Microsoft Endpoint3](images/95d23a07c2c8bc79176788f28cef7557.png)
+    ![Bild på Microsoft Endpoint Configuration Manager console3](images/95d23a07c2c8bc79176788f28cef7557.png)
 
-    ![Bild av Konsol för Microsoft Endpoint Manager1](images/95d23a07c2c8bc79176788f28cef7557.png)
+    ![Bild på Microsoft Endpoint Manager konsol1](images/95d23a07c2c8bc79176788f28cef7557.png)
    
 
 6.  Högerklicka på den nya principen och välj **Distribuera.**
     
-    ![Bild på konsol för Konfigurationshanteraren för Microsoft Endpoint4](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konsol4](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Rikta principen mot den nya Windows 10-samlingen och klicka på **OK.**
+7. Rikta principen mot den nya Windows 10 och klicka på **OK.**
 
-    ![Bild på konsol för Konfigurationshanteraren för Microsoft Endpoint5](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konsol5](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
 När du har slutfört den här uppgiften har du nu konfigurerat ASR-regler i granskningsläge.  
   
@@ -324,19 +324,19 @@ Nedan följer ytterligare steg för att verifiera om ASR-regler tillämpas korre
 
     ![En skärmbild av minskningsregler för attackytan2](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
-Mer [information finns i Optimera ASR-regeldistribution](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   och identifieringar.  
+Mer [information finns i Optimera ASR-regeldistribution](/microsoft-365/security/defender-endpoint/configure-machines-asr)   och identifieringar.  
 
 
 #### <a name="set-network-protection-rules-in-audit-mode"></a>Ange nätverksskyddsregler i granskningsläge:
-1. Gå till Konsolen för Konfigurationshanteraren för Microsoft Endpoint, navigera till Tillgångar och Översikt över efterlevnadsslutpunktsskydd **\> Windows Defender Exploit \> \> Guard** och välj **Create Exploit Guard-policy.**
+1. På Microsoft Endpoint Configuration Manager navigerar du till Översikt över tillgångar och **\> efterlevnad Endpoint Protection Windows Defender \> \> Sårbarhetsskydd** och **väljer Skapa sårbarhetspolicy.**
 
-    ![En skärmbild av System Center Configuration Manager1](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+    ![En skärmbild System Center Konfigurationshanteraren1](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 2. Välj **Nätverksskydd**.
 
 3. Ange inställningen Granskning **och** klicka på **Nästa.** 
 
-    ![En skärmbild av System Center Confirugatiom Manager2](images/c039b2e05dba1ade6fb4512456380c9f.png)
+    ![En skärmbild System Center Confirugatiom Manager2](images/c039b2e05dba1ade6fb4512456380c9f.png)
 
 4. Bekräfta den nya Exploit Guard-policyn genom att klicka **på Nästa.**
     
@@ -350,7 +350,7 @@ Mer [information finns i Optimera ASR-regeldistribution](https://docs.microsoft.
 
     ![En skärmbild av Microsoft Endpoint Configuration Manager1](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Välj principen för den nya Windows 10-samlingen och välj **OK.**
+7. Välj principen för den nya Windows 10 och välj **OK**.
 
     ![En skärmbild av Microsoft Endpoint Configuration Manager2](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
@@ -360,7 +360,7 @@ När du har slutfört den här uppgiften har du nu konfigurerat nätverksskydd i
 
 #### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>Så här ställer du in regler för kontrollerad mappåtkomst i granskningsläge:
 
-1. Gå till Konsolen för Konfigurationshanteraren för Microsoft Endpoint, navigera till Tillgångar och Översikt över efterlevnadsslutpunktsskydd **\> Windows Defender Exploit \> \> Guard** och välj **Create Exploit Guard-policy.**
+1. På Microsoft Endpoint Configuration Manager navigerar du till Översikt över tillgångar och **\> efterlevnad Endpoint Protection Windows Defender \> \> Sårbarhetsskydd** och **väljer Skapa sårbarhetspolicy.**
 
     ![En skärmbild av Microsoft Endpoint Configuration Manager3](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
@@ -382,7 +382,7 @@ När du har slutfört den här uppgiften har du nu konfigurerat nätverksskydd i
 
     ![En skärmbild av Microsoft Endpoint Configuration Manager7](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7.  Rikta principen mot den nya Windows 10-samlingen och klicka på **OK.**
+7.  Rikta principen mot den nya Windows 10 och klicka på **OK.**
 
     ![En skärmbild av Microsoft Endpoint Configuration Manager8](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 

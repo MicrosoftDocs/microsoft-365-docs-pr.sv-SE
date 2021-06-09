@@ -1,7 +1,7 @@
 ---
 title: Översikt över informationsskydd i Windows
 ms.reviewer: ''
-description: Läs om hur informationsskydd fungerar i Windows för att identifiera och skydda känslig information
+description: Läs mer om hur informationsskydd fungerar i Windows identifiera och skydda känslig information
 keywords: information, skydd, dlp, data, förlust, skydd, skydda
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65c5161f110e95008f2dc56aa3a2d17266ac1cb1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9d68f879fe8fd9379b286c106ed9229895f91b9a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933355"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841116"
 ---
 # <a name="information-protection-in-windows-overview"></a>Översikt över informationsskydd i Windows
 
@@ -37,16 +37,16 @@ ms.locfileid: "51933355"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Informationsskydd är en integrerad del av Microsoft 365 Enterprise Suite, vilket ger intelligent skydd för att skydda känsliga data samtidigt som produktivitet på arbetsplatsen möjliggörs.
+Informationsskydd är en viktig del av Microsoft 365 Enterprise-programsviten, som ger intelligent skydd för att skydda känsliga data samtidigt som produktivitet på arbetsplatsen möjliggörs.
 
 
 >[!TIP]
-> Läs vårt blogginlägg om hur Microsoft Defender för Endpoint integreras med Microsoft Information Protection för att upptäcka, skydda och [övervaka känsliga data på Windows-enheter.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
+> Läs vårt blogginlägg om hur Microsoft Defender för Endpoint integreras med Microsoft Information Protection för att upptäcka, skydda och [övervaka känsliga data på Windows enheter.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
 
 Defender för Endpoint tillämpar följande metoder för att identifiera, klassificera och skydda data:
 
-- **Dataidentifiering** – Identifiera känsliga data på Windows-enheter på risk
-- **Dataklassificering** – Klassificera data automatiskt utifrån vanliga Microsoft Information Protection-policyer (MIP) som hanteras i Office 365 Security & Compliance Center. Med automatisk klassificering kan du skydda känsliga data även om slutanvändaren inte har klassificerat dem manuellt.
+- **Dataidentifiering** – Identifiera känsliga data på Windows-enheter som är i riskabelt
+- **Dataklassificering** – Klassificera data automatiskt utifrån vanliga MicrosoftS informationsskyddsprinciper (MIP) som hanteras Office 365 säkerhets- & efterlevnadscenter. Med automatisk klassificering kan du skydda känsliga data även om slutanvändaren inte har klassificerat dem manuellt.
 
 
 ## <a name="data-discovery-and-data-classification"></a>Dataidentifiering och dataklassificering
@@ -55,16 +55,16 @@ Defender för Slutpunkt identifierar automatiskt filer med känslighetsetiketter
 
 Känslighetsetiketter klassificerar och hjälper till att skydda känsligt innehåll.
 
-Typer av känslig information i DLP-implementering (Data Loss Prevention) i Office 365 faller under två kategorier:
+Typer av känslig information i Office 365 DLP-implementering (Data Loss Prevention) faller under två kategorier:
 
 - Standard
 - Anpassad
 
-Standardtyper för känslig information är t.ex. bankkontonummer, personnummer och nationella IT-nummer. Mer information finns i Vilken [typ av känslig information letar efter](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for).
+Standardtyper för känslig information är t.ex. bankkontonummer, personnummer och nationella IT-nummer. Mer information finns i Vilken [typ av känslig information letar efter](/office365/securitycompliance/what-the-sensitive-information-types-look-for).
 
-Anpassade typer är sådana som du definierar och som har utformats för att skydda olika typer av känslig information (till exempel anställnings-ID eller projektnummer). Mer information finns i Skapa [en anpassad typ av känslig information.](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)
+Anpassade typer är sådana som du definierar och som har utformats för att skydda olika typer av känslig information (till exempel anställnings-ID eller projektnummer). Mer information finns i Skapa [en anpassad typ av känslig information.](/office365/securitycompliance/create-a-custom-sensitive-information-type)
 
-När en fil skapas eller redigeras på en Windows-enhet söker Defender för slutpunkt igenom innehållet för att utvärdera om det innehåller känslig information.
+När en fil skapas eller redigeras på en Windows söker Defender för Slutpunkt igenom innehållet för att utvärdera om det innehåller känslig information.
 
 Aktivera Azure Information Protection-integreringen så att när en fil som innehåller känslig information upptäcks av Defender för Endpoint, även om etiketter eller informationstyper, vidarebefordras den automatiskt till Azure Information Protection från enheten.
 
@@ -87,9 +87,9 @@ Klicka på en enhet för att visa en lista med filer som observerats på enheten
 
 ## <a name="log-analytics"></a>Logganalys
 
-Dataidentifiering baserat på Defender för slutpunkt är också tillgängligt i [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview), där du kan utföra komplexa frågor över rådata.
+Dataidentifiering baserat på Defender för slutpunkt är också tillgängligt i [Azure Log Analytics](/azure/log-analytics/log-analytics-overview), där du kan utföra komplexa frågor över rådata.
 
-Mer information om Azure Information Protection-analyser finns i [Central rapportering för Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/reports-aip)
+Mer information om Azure Information Protection-analyser finns i [Central rapportering för Azure Information Protection.](/azure/information-protection/reports-aip)
 
 Öppna Azure Log Analytics i Azure Portal och öppna ett frågeverktyg (standard eller klassisk).
 
@@ -104,7 +104,7 @@ InformationProtectionLogs_CL
 
 - Kunder måste ha en prenumeration på Azure Information Protection.
 - Aktivera Azure Information Protection-integrering i Microsoft Defender Säkerhetscenter:
-    - Gå till **Inställningar** i Microsoft Defender Säkerhetscenter, klicka på **Avancerade inställningar** under **Allmänt**.
+    - Gå till **Inställningar** i Microsoft Defender Säkerhetscenter, klicka på **Avancerat Inställningar** under **Allmänt.**
 
 
 

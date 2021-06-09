@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs om hur listan Gästanvändare fylls i Microsoft 365 administrationscentret.
-ms.openlocfilehash: 7c0fbfb57c9710103d1b670eb09024501071d602
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: f7a337b3ce4eb659cb4269f516345d7a24168ecc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683397"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841048"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Gästanvändare i Microsoft 365 administrationscenter
 
@@ -48,12 +48,12 @@ Du måste vara global administratör för att kunna utföra den här uppgiften.
 
 ## <a name="steps-add-guests-in-azure-active-directory"></a>Steg: Lägga till gäster i Azure Active Directory
 
-Om du vill lägga till gäster i Azure Active Directory kan du gå till [Lägga till gästanvändare.](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)
+Om du vill lägga till gäster i Azure Active Directory kan du gå till [Lägga till gästanvändare.](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)
 
 När du har lagt till en användare kan du också tilldela dem till en grupp eller ge dem åtkomst till ett program i din organisation. När du har lagt till en användare i Azure AD-portalen visas den användaren även på sidan Gästanvändare i Microsoft 365 administrationscentret. 
 När en användare läggs till i **listan Gästanvändare** kan de läggas [till i grupper i](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) Microsoft 365 administrationscentret.
 
-Se [lägga till gäster i grupp](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) för att bjuda in flera gäster för att samarbeta med organisationen.
+Se [lägga till gäster i grupp](/azure/active-directory/b2b/tutorial-bulk-invite) för att bjuda in flera gäster för att samarbeta med organisationen.
 
 ## <a name="next-steps-remove-a-guest"></a>Nästa steg: Ta bort en gäst
 
@@ -62,7 +62,7 @@ När samarbetet med en gästanvändare är klart kan du ta bort dem och de har i
 1. I Microsoft 365 expanderar du **Användare och** väljer sedan **Gästanvändare.**
 1. På sidan **Gästanvändare** väljer du den användare du vill ta bort och väljer sedan Ta **bort en användare.**
 
-Information om hur du tar bort användare i Azure AD-portalen finns [i Ta bort en gästanvändare och resurser.](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)
+Information om hur du tar bort användare i Azure AD-portalen finns [i Ta bort en gästanvändare och resurser.](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)
 
 ## <a name="related-content"></a>Relaterat innehåll
 

@@ -20,27 +20,27 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs om hur du ställer in starka lösenordskrav för användarna med Windows PowerShell.
-ms.openlocfilehash: de2f47bb88fe4cb3d00e45698fe006035faa4e5c
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: Lär dig ställa in starka lösenordskrav för användarna med hjälp av Windows PowerShell.
+ms.openlocfilehash: 898eaf30d813e883e88c3ccc8ff500d72ae72854
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222081"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840664"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>Inaktivera starka lösenordskrav för användare
 
-I den här artikeln förklarar vi hur du inaktiverar starka lösenordskrav för användarna. Starka lösenordskrav är aktiverat som standard i din organisation för Microsoft 365 för företag. Din organisation kan behöva inaktivera starka lösenord. Följ stegen nedan för att inaktivera starka lösenordskrav. Du måste utföra de här stegen med PowerShell.
+I den här artikeln förklarar vi hur du inaktiverar starka lösenordskrav för användarna. Starka lösenordskrav är aktiverat som standard i din organisation Microsoft 365 för företag. Din organisation kan behöva inaktivera starka lösenord. Följ stegen nedan för att inaktivera starka lösenordskrav. Du måste utföra de här stegen med PowerShell.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Den här artikeln är för personer som hanterar lösenordspolicyn för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) utföra de här stegen.
+Den här artikeln är för personer som hanterar lösenordspolicyn för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](/microsoft-365/business-video/admin-center-overview) Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) utföra de här stegen.
 
 Du måste också ansluta till Microsoft 365 med PowerShell.
 
 ## <a name="set-strong-passwords"></a>Ange starka lösenord
 
-1. [Anslut till Microsoft 365 med PowerShell.](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+1. [Anslut att Microsoft 365 med PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 2. Med PowerShell kan du inaktivera starka lösenordskrav för alla användare med följande kommando:
 
@@ -58,7 +58,7 @@ Du måste också ansluta till Microsoft 365 med PowerShell.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Ansluta till Microsoft 365 med PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+[Ansluta till Microsoft 365 PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 [Mer information om PowerShell MsolUser-kommandon](/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Förbered och distribuera Microsofts efterlevnadstillägg.
-ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730516"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843836"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Kom igång med Microsofts efterlevnadstillägg
 
@@ -55,7 +55,7 @@ Innan du börjar måste du bekräfta din [Microsoft 365-prenumeration](https://w
 - Microsoft 365 E5 – Informationsskydd och styrning
 - Microsoft 365 A5 – Informationsskydd och styrning
 
-Detaljerad licensvägledning finns i [Vägledning för säkerhet och efterlevnad med licensiering i Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Detaljerad licensvägledning finns i [Vägledning för säkerhet och efterlevnad med licensiering i Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 - Organisationen måste vara licensierad för slutpunkts-DLP
 - Dina enheter måste köra Windows 10 x64 version 1809 eller senare.
@@ -169,7 +169,7 @@ Innan du lägger till Microsofts efterlevnadstillägg i listan med tillägg som 
 
 Om du inte vill använda Microsoft Endpoint Manager kan du använda grupprinciper till att distribuera Microsofts efterlevnadstillägg i hela organisationen
 
-1. Enheterna måste vara hanterbara via grupprincipen och du måste importera alla Chrome ADMX till den centrala lagringsplatsen för grupprincipen. Mer information finns i [Skapa och hantera den centrala lagringsplatsen för grupprincipens administrativa mallar i Windows](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
+1. Enheterna måste vara hanterbara via grupprincipen och du måste importera alla Chrome ADMX till den centrala lagringsplatsen för grupprincipen. Mer information finns i [Skapa och hantera den centrala lagringsplatsen för grupprincipens administrativa mallar i Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
 2.  Skapa ett PowerShell-skript med PowerShell-kommandot:
 
@@ -276,8 +276,8 @@ Nu när du har registrerat enheter och kan se aktivitetsdata i aktivitetsutforsk
 - [Mer information om dataförlustskydd](dlp-learn-about-dlp.md)
 - [Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)
 - [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md)
-- [Microsoft Defender för Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Registreringsverktyg och metoder för Windows 10-enheter](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft Defender för Endpoint](/windows/security/threat-protection/)
+- [Registreringsverktyg och metoder för Windows 10-enheter](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365-prenumeration](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Azure AD-anslutna enheter](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure AD-anslutna enheter](/azure/active-directory/devices/concept-azure-ad-join)
 - [Ladda ned nya Microsoft Edge som baseras på Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

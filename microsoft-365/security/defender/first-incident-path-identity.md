@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c028289a58247075c33e85d6d6f3797b3ddad7b4
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 204530b8b4a87215053ddcb0434e40e45271da3d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297194"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841012"
 ---
 # <a name="example-of-an-identity-based-attack"></a>Exempel på en identitetsbaserad attack
 
@@ -44,7 +44,7 @@ Microsoft 365 Med Defender kan analytiker filtrera aviseringar efter identifieri
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Exempel på filtrering av identifieringskällan för Defender för identitet":::
 
-Om du **väljer den misstänkta overpass-the-hash-attackvarningen** går du till en sida i Microsoft Cloud App Security som visar mer detaljerad information. Du kan alltid ta reda på mer  om en avisering eller [](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) attack genom att välja Läs mer om den här aviseringstypen för att läsa en beskrivning av attacken samt åtgärdsförslag.
+Om du **väljer den misstänkta overpass-the-hash-attackvarningen** går du till en sida i Microsoft Cloud App Security som visar mer detaljerad information. Du kan alltid ta reda på mer  om en avisering eller [](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) attack genom att välja Läs mer om den här aviseringstypen för att läsa en beskrivning av attacken samt åtgärdsförslag.
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Exempel på misstänkt överpass-hash-attackvarning"::: 
 

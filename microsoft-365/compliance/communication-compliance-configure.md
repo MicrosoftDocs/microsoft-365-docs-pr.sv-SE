@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: eed486120673abc513490f4892069ee8fd9bba21
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e258a7fec21bd3499553fe726730ac685ff990b5
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636164"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821385"
 ---
 # <a name="get-started-with-communication-compliance"></a>Kom igång med kommunikationsefterlevnad
 
@@ -133,7 +133,7 @@ Använd följande diagram för att hjälpa dig att konfigurera grupper i organis
   
 När du tilldelar en distributionsgrupp i principen övervakar principen alla e-postmeddelanden Teams och chattar från varje användare i distributionsgruppen. När du tilldelar en Microsoft 365-grupp i principen övervakar principen alla e-postmeddelanden och Teams-chattar som skickas till den gruppen, inte de enskilda e-postmeddelanden och chattar som tas emot av varje gruppmedlem.
 
-Om du är en organisation med en lokal distribution av Exchange eller en extern e-postleverantör och du vill övervaka Microsoft Teams-chattar för användarna måste du skapa en distributionsgrupp som ska övervakas av användare med lokala eller externa postlådor. Senare i de här stegen tilldelar du den här distributionsgruppen som val **av övervakade användare** och grupper i principguiden.
+Om du är en organisation med en lokal distribution av Exchange eller en extern e-postleverantör och du vill övervaka Microsoft Teams-chattar för användarna måste du skapa en distributionsgrupp som ska övervakas av användare med lokala eller externa postlådor. Senare i de här stegen tilldelar du den här distributionsgruppen som val **av övervakade användare** och grupper i principguiden. Mer information om krav och begränsningar för att aktivera molnbaserad lagring och stöd för Teams för lokala användare finns i Söka efter Teams och chattdata för [lokala användare.](search-cloud-based-mailboxes-for-on-premises-users.md)
 
 Om du vill hantera övervakade användare i stora företag kan du behöva övervaka alla användare i stora grupper. Du kan använda PowerShell till att konfigurera en distributionsgrupp för en global princip för kommunikationsefterlevnad för den tilldelade gruppen. På så sätt kan du övervaka tusentals användare med en enda princip och hålla principen för kommunikationsefterlevnad uppdaterad när nya anställda ansluter till organisationen.
 

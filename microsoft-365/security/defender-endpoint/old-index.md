@@ -1,7 +1,7 @@
 ---
 title: Skydd mot hot (Windows 10)
 description: Microsoft Defender för Endpoint är en enhetlig plattform för förebyggande skydd, identifiering efter intrång, automatiserad undersökning och svar.
-keywords: Skydd mot hot, Microsoft Defender för Endpoint, minskning av attackytan, nästa generations skydd, identifiering och svar av slutpunkter, automatisk undersökning och svar, Microsoft Threat-experter, Microsoft Secure Score för enheter, avancerad sökning, sökning efter cyberhot, skydd mot webbhot
+keywords: Skydd mot hot, Microsoft Defender för Endpoint, minskning av attackytan, nästa generations skydd, identifiering och åtgärd på slutpunkt, automatisk undersökning och svar, Microsoft Threat-experter, Microsoft Secure Score för enheter, avancerad sökning, sökning efter cyberhot, skydd mot webbhot
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,28 +14,28 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3db1517d87a47aae254d36cfb28f6c057830ef3e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934939"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841000"
 ---
 # <a name="threat-protection"></a>Skydd mot hot
-[Microsoft Defender för Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) är en enhetlig plattform för förebyggande skydd, identifiering efter intrång, automatiserad undersökning och svar. Defender för Endpoint skyddar slutpunkter mot cyberhot, identifierar avancerade attacker och databrott, automatiserar säkerhetstillbud och förbättrar säkerhetsriskerna.
+[Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) är en enhetlig plattform för förebyggande skydd, identifiering efter intrång, automatiserad undersökning och svar. Defender för Endpoint skyddar slutpunkter mot cyberhot, identifierar avancerade attacker och databrott, automatiserar säkerhetstillbud och förbättrar säkerhetsriskerna.
 
 > [!TIP]
-> Gör det enkelt för användarna att få tillgång till molntjänster och lokala program och möjliggöra moderna hanteringsfunktioner för alla enheter. Mer information finns i Skydda [din fjärranslutna arbetsstyrka.](https://docs.microsoft.com/enterprise-mobility-security/remote-work/) 
+> Gör det enkelt för användarna att få tillgång till molntjänster och lokala program och möjliggöra moderna hanteringsfunktioner för alla enheter. Mer information finns i Skydda [din fjärranslutna arbetsstyrka.](/enterprise-mobility-security/remote-work/) 
 
-<center><h2>Microsoft Defender för Endpoint</center></h2>
+<center><h2>Microsoft Defender för Slutpunkt</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Hot & sårbarhetshantering</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Hot & hantering av säkerhetsrisker</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="attack surface reduction icon"> <br><b>Minskning av attackytan</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="next generation protection icon"><br> <b>Nästa generations skydd</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="endpoint detection and response icon"><br> <b>Identifiering och svar av slutpunkter</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png" alt="automated investigation and remediation icon"><br> <b>Automatiserad undersökning och åtgärder</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="microsoft threat experts icon"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png" alt="microsoft threat experts icon"><br> <b>Microsoft Hotexperter</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
@@ -55,7 +55,7 @@ ms.locfileid: "51934939"
 **[Hot och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)**<br>
 Den inbyggda funktionen använder en spelförändrande riskbaserad metod för identifiering, prioritering och åtgärd av svagheter och felkonfigurationer i slutpunkten.
 
-- [Översikt & om hot och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över & hantering av säkerhetsrisker hot](next-gen-threat-and-vuln-mgt.md)
 - [Komma igång](tvm-prerequisites.md)
 - [Komma åt din säkerhet](tvm-dashboard-insights.md)
 - [Förbättra säkerheten och minska risken](tvm-security-recommendation.md)
@@ -67,24 +67,24 @@ Den inbyggda funktionen använder en spelförändrande riskbaserad metod för id
 Minskningsuppsättningen för attackytan ger den första försvarslinjen i högen. Genom att säkerställa att konfigurationsinställningarna är korrekt inställda och utnyttja tekniker för minskningar tillämpas, kommer dessa uppsättning funktioner att motarbeta attacker och användning.
 
 - [Maskinvarubaserad avgränsning](overview-hardware-based-isolation.md)
-- [Applikationskontroll](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
-- [Enhetskontroll](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+- [Applikationskontroll](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+- [Enhetskontroll](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Exploateringsskydd](exploit-protection.md)
 - [Nätverksskydd](network-protection.md), [webbskydd](web-protection-overview.md)
 - [Kontrollerad mappåtkomst](controlled-folders.md)
-- [Nätverksbrandvägg](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [Nätverksbrandvägg](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [Regler för minskning av attackytan](attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
-**[Nästa generations skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
+**[Nästa generations skydd](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)**<br>
 För att ytterligare förstärka nätverkets säkerhets perimeter använder Microsoft Defender för Endpoint nästa generations skydd som är utformat för att fånga upp alla typer av nya hot.
 
-- [Övervakning av beteende](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
-- [Molnbaserat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
-- [Maskininlärning](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [URL-skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
-- [Automatiserad begränsat lägestjänst](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [Övervakning av beteende](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+- [Molnbaserat skydd](/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
+- [Maskininlärning](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [URL-skydd](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
+- [Automatiserad begränsat lägestjänst](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
 
@@ -93,7 +93,7 @@ Funktioner för identifiering och svar av slutpunkter används för att identifi
 
 - [Varningar](alerts-queue.md)
 - [Historiska slutpunktsdata](investigate-machines.md#timeline)
-- [Svarsreaktion](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
+- [Svarsreaktion](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
 - [Samlingen Collection Collection](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [Hotinformation](threat-indicator-concepts.md)
 - [Avancerad detonation- och analystjänst](respond-file-alerts.md#deep-analysis)
@@ -112,11 +112,11 @@ Förutom att snabbt svara på avancerade attacker erbjuder Microsoft Defender f�
 <a name="mte"></a>
 
 **[Microsoft Hotexperter](microsoft-threat-experts.md)**<br>
-Med Microsoft Defender för Endpoints nya tjänst för att hantera hot får du proaktiva produkter, prioritering samt ytterligare kontext och insikter. Microsoft Threat Experts ger ytterligare möjligheter för säkerhetscenter (SOCs) att identifiera och reagera på hot snabbt och korrekt.
+Med Microsoft Defender för Endpoints nya tjänst för att hantera hot får du proaktiva produkter, prioritering samt ytterligare kontext och insikter. Microsoft Hotexperter ytterligare möjligheter för säkerhetscenter (SOCs) att identifiera och reagera på hot snabbt och korrekt.
 
 - [Riktad attackavisering](microsoft-threat-experts.md)
 - [Experter på begäran](microsoft-threat-experts.md)
-- [Konfigurera den hanterade licenstjänsten för Microsoft 365 Defender](configure-microsoft-threat-experts.md)
+- [Konfigurera den hanterade Microsoft 365 i Defender](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 
@@ -139,5 +139,5 @@ Integrera Microsoft Defender för Slutpunkt i dina befintliga arbetsflöden.
 - Microsoft Cloud App Security
 
 <a name="mtp"></a>
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
- Med Microsoft 365 Defender utgör Microsoft Defender för Endpoint och olika Microsoft-säkerhetslösningar en enhetlig företagssäkerhetssvit före och efter intrång som integrerar inbyggt i slutpunkt, identitet, e-post och program för att identifiera, förhindra, undersöka och automatiskt svara på avancerade attacker.
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+ Med Microsoft 365 Defender skapar Microsoft Defender för Endpoint och olika Microsoft-säkerhetslösningar en enhetlig företagssäkerhetssvit efter intrång som integreras inbyggt i slutpunkt, identitet, e-post och program för att identifiera, förhindra, undersöka och automatiskt svara på avancerade attacker.

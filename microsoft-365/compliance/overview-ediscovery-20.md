@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Läs mer om Advanced eDiscovery lösning i Microsoft 365. Den här artikeln innehåller en översikt över Advanced eDiscovery i Microsoft 365, ett verktyg som hjälper dig att hantera interna och externa undersökningar. Dessutom ramar det till affärsorsaker till att Advanced eDiscovery att hantera juridiska undersökningar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ec5ea7b32abb03edd31ab69abc7b8d3044b1d353
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 16f597fdbbbad89116af73fdd0a607f3f03116ad
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782795"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840844"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Översikt över Microsoft 365 Advanced eDiscovery
 
@@ -105,7 +105,7 @@ För licensiering Advanced eDiscovery krävs rätt organisationsprenumeration oc
 
   - Microsoft 365 Education A5 eller Office 365 Education A5-prenumeration
 
-   Om du inte har ett befintligt Microsoft 365 E5-abonnemang och vill prova Advanced eDiscovery kan du lägga till [](https://www.microsoft.com/microsoft-365/enterprise) [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) i din befintliga prenumeration eller registrera dig för en utvärderingsversion av Microsoft 365 E5.
+   Om du inte har ett befintligt Microsoft 365 E5-abonnemang och vill prova Advanced eDiscovery kan du lägga till [](https://www.microsoft.com/microsoft-365/enterprise) [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) i din befintliga prenumeration eller registrera dig för en utvärderingsversion av Microsoft 365 E5.
 
 - **Licensiering per användare:** Om du vill lägga till en användare som vårdnadshavare i ett Advance eDiscovery-ärende måste användaren tilldelas någon av följande licenser, beroende på organisationens prenumeration:
 
@@ -113,7 +113,7 @@ För licensiering Advanced eDiscovery krävs rätt organisationsprenumeration oc
 
   - Office 365: Användarna måste tilldelas en E5 Office 365 eller en A5 Office 365 Education licens.
 
-   Mer information om hur du tilldelar licenser finns [i Tilldela licenser till användare.](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
+   Mer information om hur du tilldelar licenser finns [i Tilldela licenser till användare.](/microsoft-365/admin/manage/assign-licenses-to-users)
 
 > [!NOTE]
 > Användarna behöver bara en E5- eller A5-licens (eller den lämpliga tilläggslicensen) som ska läggas till som bibliotekare i ett Advanced eDiscovery ärende. IT-administratörer, eDiscovery-hanterare, medarbetare, paralegaler eller medarbetare som använder Advanced eDiscovery för att hantera ärenden och granska ärendedata behöver inte en E5-, A5- eller tilläggslicens.

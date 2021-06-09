@@ -20,12 +20,12 @@ description: Administratörer kan läsa mer om skydd mot hot i Microsoft 365 kon
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac90aa853769b239386d422e0b196a1f6140bf95
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 4c32026ab4f33a68b1f63cb000807671839f6bad
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793202"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821289"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -278,7 +278,7 @@ Mer information om aviseringar finns i [Skapa aktivitetsaviseringar i Säkerhets
 > När du är klar med konfigureringen använder du de här länkarna för att starta undersökningar om arbetsbelastningen:
 >
 >- [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
->- [Använda Säkerhets- & efterlevnadscenter för att hantera filer i karantän](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
+>- [Använda säkerhetscentret för att hantera filer i karantän i Defender för Office 365](manage-quarantined-messages-and-files.md#use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365)
 >- [Vad kan jag göra när en skadlig fil hittas i SharePoint Online, OneDrive och Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
 

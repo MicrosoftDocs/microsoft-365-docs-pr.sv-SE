@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Kom igång med att definiera och hantera aviseringar för principer för dataförlustskydd.
-ms.openlocfilehash: 7f070dd960cc00ad7899c75117cd2a3fcf679973
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: ad117eb0c5460b90c92c664f0c233b81d1882327
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760770"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843872"
 ---
 # <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Komma igång med instrumentpanelen för dataförlustskyddsvarningar
 
-DLP-principer (Data Loss Prevention) kan vidta skyddsåtgärder för att förhindra oavsiktlig delning av känsliga objekt. När en åtgärd vidtas på ett känsligt objekt kan du få ett meddelande genom att konfigurera aviseringar för DLP. I den här artikeln beskrivs hur du definierar principer för avancerade aviseringar som är kopplade till DLP-principer (dataförlustskydd). Du får se hur du använder instrumentpanelen för hantering av [DLP-aviseringar](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) i Efterlevnadscenter för [Microsoft 365](https://compliance.microsoft.com/) för att visa aviseringar, händelser och tillhörande metadata för DLP-principfel.
+DLP-principer (Data Loss Prevention) kan vidta skyddsåtgärder för att förhindra oavsiktlig delning av känsliga objekt. När en åtgärd vidtas på ett känsligt objekt kan du få ett meddelande genom att konfigurera aviseringar för DLP. I den här artikeln beskrivs hur du definierar principer för avancerade aviseringar som är kopplade till DLP-principer (dataförlustskydd). Du får se hur du använder instrumentpanelen för hantering av [DLP-aviseringar](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) i [Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/) för att visa aviseringar, händelser och tillhörande metadata för DLP-principfel.
 
 Om DLP-aviseringar är nytt för dig bör du läsa Mer om instrumentpanelen för skydd mot [dataförlust](dlp-alerts-dashboard-learn.md)
 
@@ -43,16 +43,16 @@ Innan du börjar kontrollerar du att du har de krav som krävs:
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Licensiering för Instrumentpanelen för DLP-aviseringshantering
 
-Alla kvalificerade klientorganisationar för Office 365 DLP har åtkomst till Instrumentpanelen för DLP-aviseringshantering. För att komma igång bör du vara berättigad till Office 365 DLP för Exchange Online, SharePoint Online och OneDrive för företag. Mer information om licenskraven för Office 365 DLP finns i Vilka licenser tillhandahåller rättigheter som en användare kan dra [nytta av tjänsten?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
+Alla kvalificerade klientorganisationar för Office 365 DLP kan komma åt Instrumentpanelen för DLP-aviseringshantering. För att komma igång bör du vara berättigad till DLP Office 365 för Exchange Online, SharePoint Online och OneDrive för företag. Mer information om licenskraven för Office 365 DLP finns i Vilka licenser tillhandahåller rättigheter som en användare kan dra [nytta av tjänsten?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
 
-Kunder som använder [Slutpunkt DLP som](endpoint-dlp-learn-about.md) är kvalificerade för Teams DLP ser deras DLP-principaviseringar för slutpunkten och aviseringar för Teams DLP-princip på instrumentpanelen för hantering av DLP-aviseringar. [](dlp-microsoft-teams.md)
+Kunder som använder Slutpunkt DLP som är kvalificerade för [Teams DLP](dlp-microsoft-teams.md) ser deras DLP-principaviseringar och Teams DLP-principaviseringar på instrumentpanelen för hantering av DLP-aviseringar. [](endpoint-dlp-learn-about.md)
 
 Funktionen **för förhandsgranskning** av innehåll är endast tillgänglig för följande licenser:
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - Advanced Compliance (E5) add on
-- Informationsskydd och styrning i Microsoft 365 E5/A5
+- Microsoft 365 E5/A5 Informationsskydd och styrning
 - Efterlevnad i Microsft 365 E5/A5
 
 ### <a name="licensing-for-alert-configuration-options"></a>Licensiering för alternativ för aviseringskonfiguration
@@ -65,7 +65,7 @@ Funktionen **för förhandsgranskning** av innehåll är endast tillgänglig fö
 - En E1-, F1- eller G1-prenumeration eller en E3- eller G3-prenumeration som innehåller någon av följande funktioner:
     - Office 365 Advanced Threat Protection Plan 2
     - Microsoft 365 E5 Compliance
-    - Tilläggslicens för Microsoft 365 eDiscovery och Granskning
+    - Microsoft 365 för eDiscovery- och Audit-tillägg
 
 ### <a name="roles"></a>Roller
 
@@ -115,7 +115,7 @@ Om din organisation har licens för konfigurationsalternativ för aviseringar f�
 
 Så här arbetar du med Instrumentpanelen för DLP-aviseringshantering:
 
-1. Gå till Skydd mot dataförlust i Efterlevnadscenter **för** [Microsoft 365.](https://www.compliance.microsoft.com)
+1. Gå [till Microsoft 365 dataförlustskydd](https://www.compliance.microsoft.com)i **säkerhets- och efterlevnadscentret.**
 2. Välj fliken **Aviseringar för** att visa instrumentpanelen för DLP-aviseringar.
 3. Välj en avisering om du vill se mer information:
 

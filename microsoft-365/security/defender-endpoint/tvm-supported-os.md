@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a037b9070fff2a208e7ee0a0602ce60cf3e042bf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 8297fac0f733b93b1d8e3eabb25eeee7b1e07acb
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770019"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821983"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Operativsystem, plattformar och funktioner som stöds – för Hantering av hot och säkerhetsrisker
 
@@ -60,7 +60,7 @@ macOS 10.14 "Mojave" och högre | Ja | Ja | Ja (förhandsversion) | Ja (förhand
 Red Hat Enterprise Linux 7.2 eller senare **(förhandsversion)** ( \* se meddelandet "Viktigt" nedan) | Ja | Ja | Ja | Ja | Ja
 CentOS 7.2 eller senare **(förhandsversion)** | Ja | Ja | Ja | Ja | Ja
 Ubuntu 16.04 LTS eller senare LTS **(förhandsversion)** | Ja | Ja | Ja | Ja | Ja
-Oracle Linux 7.2 eller senare | Ja | Ja | Ja | Ja | Ja
+Oracle Linux 7.2 eller senare **(förhandsversion)** | Ja | Ja | Ja | Ja | Ja
 
 >[!IMPORTANT]
 > \* Red Hat Enterprise Linux: "Sårbarhetsdata som tillhandahålls och visas som en del av din Microsoft Defender för Endpoint-tjänster görs tillgängliga för dig i sin rådata, "AS IS", från Red Hat, Inc., och kanske inte är uppdaterade. De data som är tillgängliga i Red Hat Security Data API är licensierade enligt Den internationella Creative Commons Attribution 4.0-licensen. Du tar risken med att använda dessa data. Microsoft och dess tredjepartsleverantörer frånsäger sig allt ansvar för följdskador och andra indirekta skador och underförstådda garantier, inklusive underförstådda garantier för icke-intrång, säljbarhet och lämplighet för ett visst ändamål. © 2020 Red Hat. Med ensamrätt. © 2020 Microsoft. Med ensamrätt."

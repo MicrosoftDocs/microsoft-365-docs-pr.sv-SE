@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Så här implementerar du VPN-delade tunnlar för Office 365
-ms.openlocfilehash: 49d64a40a39a6f8b1f8ea585b2915c26bd1115c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c2195eb9e3af3c591ff59d0b0f87583455b9b119
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114242"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843656"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementera VPN-delade tunnlar för Office 365
 
@@ -328,7 +328,7 @@ Port 80 används endast för sådant som omdirigering till en port 443-session, 
 
 ### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>Fungerar konfiguration av delade tunnlar för Teams i en webbläsare?
 
-Ja, det gör det, via webbläsare som stöds, som visas [i Hämta klienter för Microsoft Teams](https://docs.microsoft.com/microsoftteams/get-clients#web-client).
+Ja, det gör det, via webbläsare som stöds, som visas [i Hämta klienter för Microsoft Teams](/microsoftteams/get-clients#web-client).
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

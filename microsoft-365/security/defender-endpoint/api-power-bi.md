@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5c76784d78837c324922ffc25539746a4921e426
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 0ddb38e713f08c101639976b9f2c8c1ee32e63a3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769719"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843788"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Skapa anpassade rapporter med Power BI
 
@@ -142,7 +142,7 @@ I det första exemplet visas hur du ansluter Power BI till Advanced Hunting API 
 Mer information finns i [Power BI rapportmallar](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## <a name="sample-reports"></a>Exempelrapporter
-Visa exempel för Microsoft Defender Power BI slutpunktsrapport. Mer information finns i Bläddra [i kodexempel](https://docs.microsoft.com/samples/browse/?products=mdatp).
+Visa exempel för Microsoft Defender Power BI slutpunktsrapport. Mer information finns i Bläddra [i kodexempel](/samples/browse/?products=mdatp).
 
 
 ## <a name="related-topic"></a>Relaterat ämne
