@@ -1,5 +1,5 @@
 ---
-title: Ansluta ett lokalt nätverk till ett virtuellt Microsoft Azure-nätverk
+title: Anslut ett lokalt nätverk till ett virtuellt Microsoft Azure nätverk
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: 'Sammanfattning: Lär dig hur du konfigurerar ett virtuellt Azure-nätverk för Office-serverarbetsbelastningar med en VPN-anslutning mellan webbplatser.'
+description: 'Sammanfattning: Lär dig hur du konfigurerar ett virtuellt Azure-Office för serverarbetsbelastning med en VPN-anslutning mellan webbplatser.'
 ms.openlocfilehash: 00fd1c2246e9e9ac3eb55ca5ece9d84ecf49a1d3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,17 +27,17 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907714"
 ---
-# <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Ansluta ett lokalt nätverk till ett virtuellt Microsoft Azure-nätverk
+# <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Anslut ett lokalt nätverk till ett virtuellt Microsoft Azure nätverk
 
 Ett virtuellt Azure-nätverk är anslutet till ditt lokala nätverk och utökar ditt nätverk så att undernät och virtuella datorer som finns i Azures infrastrukturtjänster inkluderas. Med den här anslutningen kan datorer i det lokala nätverket få direkt åtkomst till virtuella datorer i Azure och vice versa. 
 
-Till exempel måste en katalogsynkroniseringsserver som körs på en virtuell Azure-dator fråga dina lokala domänkontrollanter om ändringar i konton och synkronisera dessa ändringar med din Microsoft 365-prenumeration. I den här artikeln finns information om hur du kryssar upp ett virtuellt Azure-nätverk på en plats till en webbplats med en anslutning för virtuellt privat nätverk (VPN) som är redo att vara värd för virtuella Azure-datorer.
+Till exempel måste en katalogsynkroniseringsserver som körs på en virtuell Azure-dator fråga dina lokala domänkontrollanter om kontoändringar och synkronisera dessa ändringar med din Microsoft 365-prenumeration. I den här artikeln finns information om hur du kryssar upp ett virtuellt Azure-nätverk på en plats till en webbplats med en anslutning för virtuellt privat nätverk (VPN) som är redo att vara värd för virtuella Azure-datorer.
 
 ## <a name="configure-a-cross-premises-azure-virtual-network"></a>Konfigurera ett virtuellt Azure-nätverk på plats
 
 Dina virtuella datorer i Azure behöver inte isoleras från din lokala miljö. Om du vill ansluta virtuella Azure-datorer till dina lokala nätverksresurser måste du konfigurera ett virtuellt Azure-nätverk på plats. Följande diagram visar de komponenter som krävs för att distribuera ett virtuellt Azure-nätverk med en virtuell dator i Azure.
   
-![Lokalt nätverk anslutet till Microsoft Azure genom en VPN-anslutning mellan webbplatser](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![Lokalt nätverk som är anslutet Microsoft Azure via en VPN-anslutning mellan webbplatser](../media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
  
 I diagrammet finns det två nätverk som är anslutna med en VPN-anslutning mellan webbplatser: det lokala nätverket och det virtuella Azure-nätverket. VPN-anslutningen mellan webbplatser är:
 
@@ -82,7 +82,7 @@ I följande lista visas de designval som har gjorts för den här lösningsarkit
   
 - Den här lösningen använder ett enda virtuellt Azure-nätverk med en VPN-anslutning mellan webbplatser. Det virtuella Azure-nätverket är värd för ett enda undernät som kan innehålla flera virtuella datorer. 
     
-- Du kan använda routnings- och fjärråtkomsttjänsten (RRAS) i Windows Server 2016 eller Windows Server 2012 för att upprätta en VPN-anslutning mellan det lokala nätverket och det virtuella Azure-nätverket. Du kan också använda andra alternativ, till exempel Cisco eller Juniper Networks VPN-enheter.
+- Du kan använda RRAS (Routing and Remote Access Service) i Windows Server 2016 eller Windows Server 2012 för att upprätta en VPN-anslutning mellan det lokala nätverket och det virtuella Azure-nätverket. Du kan också använda andra alternativ, till exempel Cisco eller Juniper Networks VPN-enheter.
     
 - Det lokala nätverket kan fortfarande ha nätverkstjänster som AD DS (Active Directory Domain Services), DNS (Domain Name System) och proxyservrar. Beroende på dina behov kan det vara bra att placera några av dessa nätverksresurser i det virtuella Azure-nätverket.
     
@@ -210,7 +210,7 @@ Här är konfigurationsresultatet.
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Fas 2: Skapa det virtuella korslokala nätverket i Azure
 <a name="Phase2"></a>
 
-Öppna först en Azure PowerShell-uppmaning. Om du inte har installerat Azure PowerShell kan du gå [till Komma igång med Azure PowerShell.](/powershell/azure/get-started-azureps)
+Öppna först ett meddelande Azure PowerShell meddelande. Om du inte har installerat Azure PowerShell kan du [gå till Komma igång Azure PowerShell](/powershell/azure/get-started-azureps).
 
  
 Sedan loggar du in på ditt Azure-konto med det här kommandot.
@@ -320,7 +320,7 @@ Här är konfigurationsresultatet.
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>Fas 3 (valfritt): Lägg till virtuella datorer
 
-Skapa de virtuella datorer du behöver i Azure. Mer information finns i Skapa [en virtuell Windows-dator med Azure Portal.](https://go.microsoft.com/fwlink/p/?LinkId=393098)
+Skapa de virtuella datorer du behöver i Azure. Mer information finns i [Skapa en Windows virtuell dator med Azure-portalen](https://go.microsoft.com/fwlink/p/?LinkId=393098).
   
 Använd följande inställningar:
   
@@ -336,4 +336,4 @@ Här är konfigurationsresultatet.
   
 ## <a name="next-step"></a>Nästa steg
   
-[Distribuera Microsoft 365-katalogsynkronisering i Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Distribuera Microsoft 365 katalogsynkronisering i Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

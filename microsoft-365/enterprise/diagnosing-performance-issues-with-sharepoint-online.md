@@ -1,5 +1,5 @@
 ---
-title: Diagnostisering av prestandaproblem i SharePoint Online
+title: Diagnostisering av prestandaproblem med SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -26,7 +26,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927618"
 ---
-# <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnostisering av prestandaproblem i SharePoint Online
+# <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnostisering av prestandaproblem med SharePoint Online
 
 I den här artikeln visar vi hur du kan diagnostisera vanliga problem med SharePoint Online-webbplatsen med utvecklarverktygen i Internet Explorer.
   
@@ -36,9 +36,9 @@ Det finns tre olika sätt att identifiera att en sida på en SharePoint Online-w
 
 - Jämförelse med en icke-anpassad originalplan
 
-- Mått för SharePoint Online-svarshuvuden
+- SharePoint Mått för onlinesvarshuvud
 
-I det här avsnittet beskrivs hur du använder var och en av de här metoderna för att diagnostisera prestandaproblem. När du har hittat orsaken till problemet kan du arbeta mot en lösning med hjälp av artiklarna om hur du förbättrar prestanda i SharePoint som du hittar på https://aka.ms/tune .
+I det här avsnittet beskrivs hur du använder var och en av de här metoderna för att diagnostisera prestandaproblem. När du har hittat orsaken till problemet kan du arbeta mot en lösning med hjälp av artiklarna om hur du SharePoint prestanda som du hittar på https://aka.ms/tune .
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Använda F12-verktygsfältet för att diagnostisera prestanda i SharePoint Online
 <a name="F12ToolInfo"> </a>
@@ -59,21 +59,21 @@ På fliken **Nätverk** trycker du på den gröna uppspelningsknappen för att l
   
 På höger sida kan du även se nedladdningstiderna för filerna, som på skärmbilden.
   
-![Diagram som visar den tid det tar att läsa in begärda sidor från SharePoint](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
+![Diagram som visar den tid det tar att läsa in begärda sidor SharePoint](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
   
 Det ger dig en visualisering av hur lång tid det tog att läsa in filen. Den gröna linjen visar när sidan är klar att återges i webbläsaren. Det ger dig en snabb översikt över de olika filer som kan vara orsaken till långsam sidin läses in på webbplatsen.
   
 ## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>Konfigurera en icke-anpassad originalplan för SharePoint Online
 <a name="F12ToolInfo"> </a>
 
-Det bästa sättet att ta reda på var webbplatsen fungerar bäst är att konfigurera en förinställt webbplatssamling i SharePoint Online. På så sätt kan du jämföra olika aspekter av webbplatsen med vad du skulle få utan anpassning på sidan. Startsidan för OneDrive för företag är ett bra exempel på en separat webbplatssamling som det inte är troligt att det finns några anpassningar för.
+Det bästa sättet att ta reda på var webbplatsen fungerar bäst är att konfigurera en förinställt webbplatssamling i SharePoint Online. På så sätt kan du jämföra olika aspekter av webbplatsen med vad du skulle få utan anpassning på sidan. Startsidan OneDrive för företag ett bra exempel på en separat webbplatssamling som inte har några anpassningar.
   
-## <a name="viewing-sharepoint-response-header-information"></a>Visa information om SharePoint-svarshuvuden
+## <a name="viewing-sharepoint-response-header-information"></a>Visa SharePoint i svarshuvuden
 <a name="F12ToolInfo"> </a>
 
 I SharePoint Online kan du komma åt den information som skickas tillbaka till webbläsaren i svarshuvudet för varje fil. Det mest användbara värdet för diagnostisering av prestandaproblem är **SPRequestDuration,** som visar den tid som begäran tog på servern för att bearbetas. Det kan hjälpa dig att avgöra om begäran är mycket tung och resurskrävande. Det här är den bästa insikt du har i hur mycket arbete servern utför för att servera sidan.
 
-### <a name="to-view-sharepoint-response-header-information"></a>Så här visar du information om SharePoint-svarshuvuden
+### <a name="to-view-sharepoint-response-header-information"></a>Så här visar SharePoint i svarshuvuden
   
 1. Kontrollera att du har F12-verktygen installerade. Mer information om hur du laddar ned och installerar dessa verktyg finns [i Vad är nytt i F12-verktygen.](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
 
@@ -90,7 +90,7 @@ I SharePoint Online kan du komma åt den information som skickas tillbaka till w
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>Vad orsakar prestandaproblem i SharePoint Online?
 <a name="F12ToolInfo"> </a>
 
-I artikeln Navigeringsalternativ för [SharePoint Online](navigation-options-for-sharepoint-online.md) visas ett exempel på hur SPRequestDuration-värdet används för att fastställa att komplicerad strukturell navigering var orsaken till att det tog lång tid för sidan att bearbetas på servern. Genom att ta ett värde för en baslinjewebbplats (utan anpassning) kan du avgöra om det tar lång tid att läsa in en viss fil. Det exempel som används [i Navigeringsalternativ för SharePoint Online](navigation-options-for-sharepoint-online.md) är den viktigaste .aspx-filen. Den filen innehåller de flesta ASP.NET kod som körs för sidinläsningen. Beroende på vilken webbplatsmall du använder kan det vara start.aspx, home.aspx, default.aspx eller ett annat namn om du anpassar startsidan. Om det här talet är betydligt högre än baslinjewebbplatsens är det en god indikation på att något komplicerat pågår på sidan som orsakar prestandaproblemen.
+I artikeln [Navigeringsalternativ](navigation-options-for-sharepoint-online.md) för SharePoint Online visas ett exempel på hur SPRequestDuration-värdet används för att fastställa att den komplicerade strukturella navigeringen ledde till att sidan tog lång tid att bearbeta på servern. Genom att ta ett värde för en baslinjewebbplats (utan anpassning) kan du avgöra om det tar lång tid att läsa in en viss fil. Det exempel som används [i Navigeringsalternativ för SharePoint Online](navigation-options-for-sharepoint-online.md) är den viktigaste .aspx-filen. Den filen innehåller de flesta ASP.NET kod som körs för sidinläsningen. Beroende på vilken webbplatsmall du använder kan det vara start.aspx, home.aspx, default.aspx eller ett annat namn om du anpassar startsidan. Om det här talet är betydligt högre än baslinjewebbplatsens är det en god indikation på att något komplicerat pågår på sidan som orsakar prestandaproblemen.
   
 När du har identifierat att ett problem gäller specifikt för din webbplats är det rekommenderade sättet att ta reda på vad som orsakar dåliga prestanda att ta bort alla möjliga orsaker, som sidanpassning, och sedan lägga till dem en och en på webbplatsen. När du har tagit bort tillräckligt många anpassningar för att sidan ska gå bra kan du lägga tillbaka specifika anpassningar en och en.
   

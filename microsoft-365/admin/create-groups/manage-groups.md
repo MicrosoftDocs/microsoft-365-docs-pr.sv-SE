@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Lär dig att hantera Microsoft 365-grupper, inklusive att lägga till ta bort gruppmedlemmar, redigera e-postadressen, gruppnamnet eller beskrivningen och anpassa hur gruppen fungerar.
+description: Lär dig att Microsoft 365 grupper, inklusive att lägga till ta bort gruppmedlemmar, redigera e-postadress, gruppnamn eller beskrivning och anpassa hur gruppen fungerar.
 ms.openlocfilehash: 3ba3dd36ed3929e956ce6359e678d6b684f64bb9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,11 +26,11 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50908716"
 ---
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Hantera en grupp i administrationscentret för Microsoft 365
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Hantera en grupp i Microsoft 365 administrationscenter
 
-När du har [skapat en Microsoft 365-grupp](create-groups.md) och lagt till gruppmedlemmar kan du konfigurera gruppen. Du kan redigera gruppens namn eller beskrivning, hantera ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om kopior av gruppkonversationer ska skickas till medlemmar.
+När du har [skapat Microsoft 365 grupp och](create-groups.md) lagt till gruppmedlemmar kan du konfigurera gruppen. Du kan redigera gruppens namn eller beskrivning, hantera ägare eller medlemmar och ange om externa avsändare kan skicka e-post till gruppen och om kopior av gruppkonversationer ska skickas till medlemmar.
 
-Gå till administrationscentret för Microsoft 365 på [https://admin.microsoft.com](https://admin.microsoft.com) .
+Gå till Microsoft 365 [https://admin.microsoft.com](https://admin.microsoft.com) administrationscenter.
 
 ## <a name="edit-the-group-name-or-description"></a>Redigera gruppens namn eller beskrivning
 
@@ -56,7 +56,7 @@ Gå till administrationscentret för Microsoft 365 på [https://admin.microsoft.
   
 När du använder administrationscentret för att skapa en grupp får användarna som standard inte kopior av gruppmeddelanden och mötesinbjudningar som skickas till deras inkorgar. De måste gå till gruppen för att se konversationer och möten. Du kan ändra den här inställningen i administrationscentret.
 
-När du aktiverar den här inställningen får gruppmedlemmarna en kopia av gruppmeddelanden och mötesinbjudningar som skickas till deras inkorg i Outlook. De kan läsa och ta bort kopian utan att någon annan påverkas. En kopia av e-postmeddelandet finns kvar i gruppens inkorg.
+När du aktiverar den här inställningen får gruppmedlemmarna en kopia av gruppmeddelanden och mötesinbjudningar som skickas till deras Outlook inkorg. De kan läsa och ta bort kopian utan att någon annan påverkas. En kopia av e-postmeddelandet finns kvar i gruppens inkorg.
 
 Gruppmedlemmar kan avanmäla sig från dessa e-postmeddelanden genom att välja att sluta följa gruppen i Outlook.
 
@@ -64,7 +64,7 @@ Gruppmedlemmar kan avanmäla sig från dessa e-postmeddelanden genom att välja 
 
 2. Klicka på namnet på den grupp du vill hantera för att öppna inställningsfönstret.
 
-3. På fliken **Inställningar** väljer du Skicka **kopior** av gruppkonversationer och händelser till gruppmedlemmar om du vill att medlemmarna ska få kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.
+3. På fliken **Inställningar** väljer  du Skicka kopior av gruppkonversationer och händelser till gruppmedlemmar om du vill att medlemmarna ska få kopior av gruppmeddelanden och kalenderobjekt i sin egen inkorg.
 
 4. Välj **Spara**.
 
@@ -76,11 +76,11 @@ Det här alternativet är bra om du vill ha en företags-e-postadress som info@c
 
 2. Klicka på namnet på den grupp du vill hantera för att öppna inställningsfönstret.
 
-3. I listan över grupper i administrationscentret väljer du namnet på den  grupp som du vill ändra och går sedan till fliken Inställningar och väljer Tillåt externa avsändare att skicka e-post till den **här gruppen.**
+3. I listan över grupper i administrationscentret markerar du namnet på den grupp som du vill ändra och går sedan till **fliken Inställningar** väljer Tillåt externa avsändare att skicka e-post till den **här gruppen.**
     
 4. Välj **Spara**.
 
-## <a name="permanently-delete-a-microsoft-365-group"></a>Ta bort en Microsoft 365-grupp permanent
+## <a name="permanently-delete-a-microsoft-365-group"></a>Ta bort en Microsoft 365 grupp permanent
 
 Ibland vill du kanske ta bort en grupp permanent utan att behöva vänta på att den mjuka borttagningsperioden på 30 dagar ska upphöra att gälla. Starta PowerShell och kör det här kommandot för att ta fram gruppens objekt-ID
  
@@ -103,14 +103,14 @@ För att kontrollera att gruppen har tagits bort kör du cmdleten  *Get- AzureAD
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Skapa en Microsoft 365-grupp](create-groups.md)
+[Skapa en Microsoft 365 grupp](create-groups.md)
 
-[Hantera gäståtkomst till Microsoft 365-grupper](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Hantera gäståtkomst till Microsoft 365 grupper](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Välj den domän som ska användas när du skapar Microsoft 365-grupper](../../solutions/choose-domain-to-create-groups.md)
+[Välj den domän som ska användas när du skapar Microsoft 365 grupper](../../solutions/choose-domain-to-create-groups.md)
 
-[Tillåta medlemmar att skicka som eller skicka för en Microsoft 365-grupp](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[Tillåta medlemmar att skicka som eller skicka för en Microsoft 365 grupp](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[Uppgradera distributionslistor till Microsoft 365-grupper](../manage/upgrade-distribution-lists.md)
+[Uppgradera distributionslistor till Microsoft 365 grupper](../manage/upgrade-distribution-lists.md)
 
-[Hantera Microsoft 365-grupper med PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[Hantera Microsoft 365 grupper med PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

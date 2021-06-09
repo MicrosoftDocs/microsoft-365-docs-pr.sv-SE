@@ -50,7 +50,7 @@ I följande tabell visas begränsningar för kvarstående åtgärder som gäller
 
 | Beskrivning av gräns | Gräns |
 |:-----|:-----|
-|Maximalt antal postlådor för ett enskilt ärende håll. Den här gränsen omfattar totalt antal användarpostlådor och postlådorna som är kopplade Microsoft 365 grupper, Microsoft Teams och Yammer grupper. <br/> |1,000  <br/> |
+|Maximalt antal postlådor för ett enskilt ärende håll. Den här gränsen omfattar totalt antal användarpostlådor och postlådorna som är kopplade Microsoft 365 grupper, Microsoft Teams och Yammer grupper. <br/> |1 000  <br/> |
 |Maximalt antal webbplatser i ett enskilt ärende. Den här gränsen omfattar det totala antalet OneDrive för företag, SharePoint webbplatser och webbplatser som är kopplade till grupper Microsoft 365, Microsoft Teams och Yammer grupper.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Indexeringsbegränsningar
@@ -76,12 +76,12 @@ Begränsningarna som beskrivs i det här avsnittet är relaterade till att anvä
 |Maximalt antal sökningar som kan köras samtidigt. |Ingen gräns |
 |Maximalt antal sökningar som en enskild användare kan starta samtidigt. |10 | 
 |Maximalt antal tecken för en sökfråga (inklusive operatorer och villkor). |10 000 &nbsp; <sup>2</sup>|
-|Maximalt antal tecken för en sökfråga för SharePoint och OneDrive för företag (inklusive operatorer och villkor). |10,000<br>4 000 med jokertecken &nbsp; <sup>2</sup>|
+|Maximalt antal tecken för en sökfråga för SharePoint och OneDrive för företag (inklusive operatorer och villkor). |10 000<br>4 000 med jokertecken &nbsp; <sup>2</sup>|
 |Lägsta antal alfatecken för prefix-jokertecken. till exempel **ett _ eller \* *_* set \***.|3 |  
 |Maximalt antal varianter som returneras när prefix med jokertecken används för att söka efter en exakt fras eller när du använder ett prefixtecken (jokertecken) och **operatorn NEAR** boolesk (NEAR). |10 000 &nbsp; <sup>3</sup>|
 |Maximalt antal objekt per användarpostlåda som visas på förhandsgranskningssidan för sökningar. De senaste objekten visas. |100|
-|Maximalt antal objekt från alla postlådor som visas på förhandsgranskningssidan för sökningar.|1,000|
-|Maximalt antal postlådor som kan förhandsgranskas för sökresultat.  Om det finns fler än 1 000 postlådor som innehåller objekt som matchar sökfrågan är endast de 1 000 postlådor som har bäst resultat tillgängliga för förhandsgranskning.|1,000|
+|Maximalt antal objekt från alla postlådor som visas på förhandsgranskningssidan för sökningar.|1 000|
+|Maximalt antal postlådor som kan förhandsgranskas för sökresultat.  Om det finns fler än 1 000 postlådor som innehåller objekt som matchar sökfrågan är endast de 1 000 postlådor som har bäst resultat tillgängliga för förhandsgranskning.|1 000|
 |Maximalt antal objekt från SharePoint och OneDrive för företag som visas på förhandsgranskningssidan för sökningar. De senaste objekten visas. |200|
 |Maximalt antal SharePoint och OneDrive för företag webbplatser som kan förhandsgranskas för sökresultat. Om det finns fler än 200 webbplatser som innehåller objekt som matchar sökfrågan är endast de 200 vanligaste webbplatserna med flest resultat tillgängliga för förhandsgranskning.|200|
 |Maximalt antal objekt per offentlig mapp-postlåda som visas på förhandsgranskningssidan för sökningar. |100|
@@ -91,16 +91,16 @@ Begränsningarna som beskrivs i det här avsnittet är relaterade till att anvä
 
 ## <a name="search-times"></a>Söktider
 
-Microsoft samlar in prestandainformation för sökningar som körs av alla organisationer. Sökfrågans komplexitet kan påverka söktiderna, men den största faktorn som påverkar hur lång tid sökningar tar är antalet postlådor som genomsöks. Även om Microsoft inte tillhandahåller ett servicenivåavtal för söktider visar följande tabell genomsnittliga söktider för sökningar i samlingar baserat på antalet postlådor som ingår i sökningen.
+Microsoft samlar in prestandainformation för sökningar som körs av alla organisationer. Sökfrågans komplexitet påverkar visserligen söktiden, men det är antalet postlådor som genomsöks som har störst påverkan på söktiden. Även om Microsoft inte tillhandahåller ett servicenivåavtal för söktider visar följande tabell genomsnittliga söktider för sökningar i samlingar baserat på antalet postlådor som ingår i sökningen.
   
   | Antal postlådor | Genomsnittlig söktid |
   |:-----|:-----|
   |100  <br/> |30 sekunder  <br/> |
-  |1,000  <br/> |45 sekunder  <br/> |
-  |10,000  <br/> |4 minuter  <br/> |
-  |25,000  <br/> |10 minuter  <br/> |
-  |50,000  <br/> |20 minuter  <br/> |
-  |100,000  <br/> |25 minuter  <br/> |
+  |1 000  <br/> |45 sekunder  <br/> |
+  |10 000  <br/> |4 minuter  <br/> |
+  |25 000  <br/> |10 minuter  <br/> |
+  |50 000  <br/> |20 minuter  <br/> |
+  |100 000  <br/> |25 minuter  <br/> |
   |||
 
 ## <a name="viewer-limits"></a>Begränsningar för visningsprogram

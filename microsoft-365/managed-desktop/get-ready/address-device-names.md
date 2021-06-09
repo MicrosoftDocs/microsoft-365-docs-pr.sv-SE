@@ -20,7 +20,7 @@ ms.locfileid: "51893988"
 ---
 # <a name="address-device-name-dependency"></a>Adressenhetsnamnssamband
 
-Microsoft Managed Desktop använder ett standardiserat namnformat när enheter registreras och byter automatiskt namn på enheter om namnet ändras senare. Mer information finns i [Enhetsnamn](../service-description/device-names.md).
+Microsoft Hanterat skrivbord ett standardiserat namnformat när enheter registreras och automatiskt byter namn på enheter om namnet ändras senare. Mer information finns i [Enhetsnamn](../service-description/device-names.md).
 
 > [!IMPORTANT]
-> Om din miljö är beroende av specifika enhetsnamn (t.ex. för att stödja en viss nätverkskonfiguration) bör du undersöka olika alternativ för att ta bort beroendet innan du registrerar dig i Microsoft Managed Desktop. Om du måste behålla namnsambandet kan [](../working-with-managed-desktop/admin-support.md) du skicka en begäran via administratörsportalen för att inaktivera namnändringsfunktionen och använda önskat namnformat.
+> Om din miljö är beroende av specifika enhetsnamn (t.ex. för att stödja en viss nätverkskonfiguration) bör du undersöka olika alternativ för att ta bort beroendet innan du registrerar Microsoft Hanterat skrivbord. Om du måste behålla namnsambandet kan [](../working-with-managed-desktop/admin-support.md) du skicka en begäran via administratörsportalen för att inaktivera namnändringsfunktionen och använda önskat namnformat.

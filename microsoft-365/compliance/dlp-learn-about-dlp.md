@@ -56,14 +56,14 @@ Alla DLP-övervakade aktiviteter registreras som [standard Microsoft 365](search
 
 En DLP-implementering följer vanligtvis dessa större faser.
 
-- [Planera för DLP](#plan-for-dlp)
+- [Abonnemang för DLP](#plan-for-dlp)
 - [Förbereda för DLP](#prepare-for-dlp)
 - [Distribuera principer i produktionen](#deploy-your-policies-in-production)
 
 
 <!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
 
-### <a name="plan-for-dlp"></a>Planera för DLP
+### <a name="plan-for-dlp"></a>Abonnemang för DLP
 
 Microsoft 365 DLP-övervakning och -skydd ingår i de program som användarna använder varje dag. Det här hjälper till att skydda organisationens känsliga objekt från riskfyllda aktiviteter även om användarna inte är till för skydd mot dataförlust. Om din organisation och dina användare inte har använda metoder för dataförlustskydd kan införandet av DLP kräva en ändring i affärsprocesserna och det kommer att ske ett kulturskifte för användarna. Men med ordentlig planering, testning och justering kommer DLP-principerna att skydda känsliga objekt samtidigt som potentiella driftstörningar i affärsprocessen minimeras.
 
@@ -87,7 +87,7 @@ Du kan tillämpa DLP-principer på data i vila, data som används och data i rö
 
 - Exchange Online e-post
 - SharePoint Onlinewebbplatser
-- OneDrive konton
+- OneDrive-konton
 - Teams chatt- och kanalmeddelanden
 - Microsoft Cloud App Security
 - Windows 10-enheter
@@ -134,9 +134,9 @@ Du har flexibiliteten i hur du skapar och konfigurerar DLP-principer. Du kan utg
     
 plats | inkludera/exkludera efter|
 |---------|---------|
-|Exchange e-post| distributionsgrupper|
+|Exchange-e-post| distributionsgrupper|
 |SharePoint webbplatser |webbplatser |
-|OneDrive konton |konton eller distributionsgrupper |
+|OneDrive-konton |konton eller distributionsgrupper |
 |Teams chatt- och kanalmeddelanden |konton |
 |Windows 10-enheter |användare eller grupp |
 |Microsoft Cloud App Security |instans |
@@ -184,7 +184,7 @@ När DLP vidtar en åtgärd för ett känsligt objekt kan du få ett meddelande 
 > [!div class="mx-imgBorder"]
 > ![Aviseringsinformation](../media/Alert-info-1.png)
 
-Du kan också visa information om den associerade händelsen med omfattande metadata på samma instrumentpanel
+Du kan också se information om den associerade händelsen med omfattande metadata i samma instrumentpanel
 
 > [!div class="mx-imgBorder"]
 > ![händelseinformation](../media/Event-info-1.png)

@@ -1,5 +1,5 @@
 ---
-title: Skapa Microsoft 365-användarkonton med PowerShell
+title: Skapa Microsoft 365-postkonton med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: Så här använder du PowerShell för att skapa enskilda eller flera Microsoft 365-användarkonton.
+description: Så här använder du PowerShell för att skapa enskilda eller Microsoft 365 användarkonton.
 ms.openlocfilehash: c3676acdec3bbba328809ee1528206bbc44f94f1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,33 +26,33 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907570"
 ---
-# <a name="create-microsoft-365-user-accounts-with-powershell"></a>Skapa Microsoft 365-användarkonton med PowerShell
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>Skapa Microsoft 365-postkonton med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan använda PowerShell för Microsoft 365 för att effektivt skapa användarkonton, inklusive flera konton.
+Du kan använda PowerShell för Microsoft 365 effektivt skapa användarkonton, inklusive flera konton.
 
 När du skapar användarkonton i PowerShell krävs alltid vissa kontoegenskaper. Andra egenskaper krävs inte men är viktiga. Se följande tabell.
   
 |**Egenskapsnamn**|**Obligatorisk**|**Beskrivning**|
 |:-----|:-----|:-----|
-|**DisplayName** <br/> |Ja  <br/> |Det här är visningsnamnet som används i Microsoft 365-tjänster. Till exempel *Caleb Några*. <br/> |
-|**UserPrincipalName** <br/> |Ja  <br/> |Det här är kontonamnet som används för att logga in på Microsoft 365-tjänster. Till exempel *kan CalebS \@ contoso.onmicrosoft.com*.  <br/> |
+|**DisplayName** <br/> |Ja  <br/> |Det här är visningsnamnet som används i Microsoft 365 tjänster. Till exempel *Caleb Några*. <br/> |
+|**UserPrincipalName** <br/> |Ja  <br/> |Det här är kontonamnet som används för att logga in på Microsoft 365 tjänster. Till exempel *kan CalebS \@ contoso.onmicrosoft.com*.  <br/> |
 |**Förnamn** <br/> |Nej  <br/> ||
 |**LastName** <br/> |Nej  <br/> ||
-|**LicenseAssignment** <br/> |Nej  <br/> |Det här är licensplanen (kallas även licensplanen eller SKU:n) som en tillgänglig licens tilldelas till användarkontot från. Licensen definierar de Microsoft 365-tjänster som är tillgängliga för kontot. Du behöver inte tilldela en licens till en användare när du skapar kontot, men kontot måste ha en licens för att få åtkomst till Microsoft 365-tjänster. Du har 30 dagar på dig att licensiera användarkontot när du har skapat det. |
+|**LicenseAssignment** <br/> |Nej  <br/> |Det här är licensplanen (kallas även licensplanen eller SKU:n) som en tillgänglig licens tilldelas till användarkontot från. Licensen definierar Microsoft 365 tjänster som är tillgängliga för kontot. Du behöver inte tilldela en licens till en användare när du skapar kontot, men kontot måste ha en licens för åtkomst Microsoft 365 tjänster. Du har 30 dagar på dig att licensiera användarkontot när du har skapat det. |
 |**Lösenord** <br/> |Nej  <br/> | Om du inte anger ett lösenord tilldelas ett slumpmässigt lösenord till användarkontot och lösenordet visas i resultatet av kommandot. Om du anger ett lösenord måste det innehålla 8 till 16 ASCII-texttecken av följande typer: gemener, versaler, siffror och symboler.<br/> |
-|**Användningsbeläggning** <br/> |Nej  <br/> |Det här är en giltig landskod enligt ISO 3166-1 alfa-2. Till exempel *USA* för USA och *FR* för Frankrike. Det är viktigt att tillhandahålla detta värde eftersom vissa Microsoft 365-tjänster inte är tillgängliga i vissa länder. Du kan inte tilldela en licens till ett användarkonto om inte kontot har det här värdet konfigurerat. Mer information finns i [Om licensbegränsningar](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
+|**Användningsbeläggning** <br/> |Nej  <br/> |Det här är en giltig landskod enligt ISO 3166-1 alfa-2. Till exempel *USA* för USA och *FR* för Frankrike. Det är viktigt att tillhandahålla detta värde eftersom vissa Microsoft 365 tjänster inte är tillgängliga i vissa länder. Du kan inte tilldela en licens till ett användarkonto om inte kontot har det här värdet konfigurerat. Mer information finns i [Om licensbegränsningar](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
 
 >[!Note]
->[Lär dig hur du skapar användarkonton](../admin/add-users/add-users.md) med hjälp av administrationscentret för Microsoft 365.
+>[Lär dig hur du skapar användarkonton](../admin/add-users/add-users.md) i Microsoft 365 administrationscenter.
 > 
 > En lista över ytterligare resurser finns i [Hantera användare och grupper.](../admin/add-users/index.yml)
 >   
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph-modulen
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph modul
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 När du har anslutt använder du följande syntax för att skapa ett enskilt konto:
   
@@ -70,9 +70,9 @@ $PasswordProfile.Password="3Rv0y1q39/chsy"
 New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -MailNickName calebs -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory för Windows PowerShell
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="create-an-individual-user-account"></a>Skapa ett enskilt användarkonto
 
@@ -83,7 +83,7 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets som har *Msol* i sitt namn. Kör dessa cmdlets från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell och cmdlets som har *Msol* i sitt namn. Kör dessa cmdlets från Windows PowerShell.
 >
 
 Använd det här kommandot om du vill visa en lista över tillgängliga namn på licensplanen:
@@ -100,7 +100,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
 
 ### <a name="create-multiple-user-accounts"></a>Skapa flera användarkonton
 
-1. Skapa en fil med kommaavgränsade värden (CSV) som innehåller den användarkontoinformation som krävs. Ett exempel:
+1. Skapa en fil med kommaavgränsade värden (CSV) som innehåller den användarkontoinformation som krävs. Till exempel:
 
      ```powershell
      UserPrincipalName,FirstName,LastName,DisplayName,UsageLocation,AccountSkuId
@@ -110,7 +110,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
      ```
 
    >[!NOTE]
-   >Kolumnnamnen och deras ordning i den första raden i CSV-filen är godtyckliga. Men se till att ordningen på data i resten av filen matchar ordningsföljden för kolumnnamnen. Och använd kolumnnamnen för parametervärdena i PowerShell för Microsoft 365-kommandot.
+   >Kolumnnamnen och deras ordning i den första raden i CSV-filen är godtyckliga. Men se till att ordningen på data i resten av filen matchar ordningsföljden för kolumnnamnen. Och använd kolumnnamnen för parametervärdena i PowerShell för Microsoft 365.
     
 2. Använd följande syntax:
     
@@ -124,7 +124,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
     Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
     ```
 
-3. Granska utdatafilen för att se resultatet. Vi har inte angett lösenord, så de slumpmässiga lösenord som Microsoft 365 skapade visas i utdatafilen.
+3. Granska utdatafilen för att se resultatet. Vi har inte angett lösenord, så de slumpmässiga lösenord Microsoft 365 som genereras visas i utdatafilen.
     
 ## <a name="see-also"></a>Se även
 

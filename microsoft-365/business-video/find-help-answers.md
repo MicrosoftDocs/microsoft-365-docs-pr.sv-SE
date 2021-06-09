@@ -1,5 +1,5 @@
 ---
-title: Hitta dokument och utbildning
+title: Sök efter dokument och utbildning
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -28,7 +28,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52245234"
 ---
-# <a name="find-docs-and-training"></a>Hitta dokument och utbildning
+# <a name="find-docs-and-training"></a>Sök efter dokument och utbildning
 
 Om du har en fråga eller behöver hjälp med Microsoft 365 Business Premium finns det flera sätt att få hjälp.
 

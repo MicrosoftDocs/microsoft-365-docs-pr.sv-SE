@@ -1,5 +1,5 @@
 ---
-title: Hantera lösenord för Microsoft 365-användarkonton
+title: Hantera Microsoft 365 lösenord för användarkonton
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Läs mer om hur du hanterar lösenord för användarkonton för Microsoft 365.
+description: Läs mer om hur du Microsoft 365 lösenord för användarkonton.
 ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905098"
 ---
-# <a name="manage-microsoft-365-user-account-passwords"></a>Hantera lösenord för Microsoft 365-användarkonton
+# <a name="manage-microsoft-365-user-account-passwords"></a>Hantera Microsoft 365 lösenord för användarkonton
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan hantera lösenorden för användarkonton för Microsoft 365 på flera olika sätt, beroende på din identitetskonfiguration. Du kan hantera användarkonton i administrationscentret för [Microsoft 365](../admin/add-users/index.yml), i Active Directory Domain Services (AD DS) eller i administrationscentret för Azure Active Directory (Azure AD).
+Du kan hantera Microsoft 365 lösenord för användarkonton på flera olika sätt, beroende på din identitetskonfiguration. Du kan hantera användarkonton [i administrationscentret för Microsoft 365](../admin/add-users/index.yml), i AD DS (Active Directory Domain Services) eller i administrationscentret för Azure Active Directory (Azure AD).
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planera för var och hur du ska hantera lösenorden för ditt användarkonto
 
-Var och hur du kan hantera användarkonton beror på vilken identitetsmodell du vill använda för Microsoft 365. De två modellerna är bara molnbaserade och hybrider.
+Var och hur du kan hantera användarkonton beror på vilken identitetsmodell du vill använda för ditt Microsoft 365. De två modellerna är bara molnbaserade och hybrider.
   
 ### <a name="cloud-only"></a>Endast molnet
 

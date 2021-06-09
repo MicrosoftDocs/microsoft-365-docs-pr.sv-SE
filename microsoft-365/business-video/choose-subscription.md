@@ -33,7 +33,7 @@ ms.locfileid: "52245246"
 
 Att välja rätt Microsoft 365-prenumeration är avgörande för att få ut mesta av tjänsten. Så&#39;du jämföra alternativen och välja ett abonnemang som är&#39;för ditt företag.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 1. I en webbläsare söker du efter **Microsoft 365 Business Premium**.
 2. Öppna sidan **Microsoft 365 Business Premium** och välj sedan **Visa abonnemang och priser.** Här kan du se vilka prenumerationer som är skräddarsydda för mindre företag.

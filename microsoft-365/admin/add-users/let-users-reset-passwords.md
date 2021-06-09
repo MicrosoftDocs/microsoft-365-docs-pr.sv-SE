@@ -75,5 +75,5 @@ Anvisningarna aktiverar Självbetjäning för återställning av lösenord för 
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Ange förfalloprincip för lösenord för din organisation](../manage/set-password-expiration-policy.md) (artikel)\
-[Ange att en enskild användares lösenord aldrig ska upphöra](set-password-to-never-expire.md) (artikel)\
+[Ställa in en enskild användares lösenord för att aldrig ska förfalla](set-password-to-never-expire.md)(artikel)\
 [Microsoft 365 Business utbildningsvideor](../../business-video/index.yml) (länksida)

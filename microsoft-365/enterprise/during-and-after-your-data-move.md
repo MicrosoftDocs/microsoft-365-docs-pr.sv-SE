@@ -71,7 +71,7 @@ När SharePoint Online flyttas flyttas även data för följande tjänster:
     
 - Office i en webbläsare
     
-- Microsoft 365-applikationer för företag
+-  Microsoft 365 Apps för företag
     
 - Visio Pro för Microsoft 365
     

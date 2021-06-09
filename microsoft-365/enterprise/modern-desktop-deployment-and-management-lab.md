@@ -1,5 +1,5 @@
 ---
-title: Windows 10 och Office 365 lab kit
+title: Deployment Lab Kit för Windows 10 och Office 365
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -22,7 +22,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52770679"
 ---
-# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 och Office 365 lab kit
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Deployment Lab Kit för Windows 10 och Office 365
 
 The Windows 10 and Office 365 deployment lab kit is designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise and Microsoft 365-appar för företag. Labben i satsen täcker med Microsoft Endpoint Configuration Manager, skrivbordsanalys, Office Anpassningsverktyget, OneDrive, Windows Autopilot med mera.
 
@@ -47,7 +47,7 @@ Paketet förser dig med en automatiskt konfigurerad miljö för virtuella labb, 
 Det resulterande labbet är utformat för att anslutas till försök för: 
 
   - Microsoft 365 E5
-  - Microsoft 365-applikationer för företag
+  -  Microsoft 365 Apps för företag
   - Office 365 E5 med Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Stegvisa labbuppgifter

@@ -36,11 +36,11 @@ ms.locfileid: "51578436"
 ---
 # <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Hur principer i Microsoft 365 för företag skyddar företagsdata
 
-Den här artikeln gäller Microsoft 365 Business Premium.
+Den här artikeln gäller för Microsoft 365 Business Premium.
 
 Principerna du skapar är specifika för enhetstyper och kan tillämpas för särskilda användargrupper. Det innebär att du kan skapa en princip som gäller för ledningsgruppen och en annan som gäller för alla andra.
   
-För Android- och iOS-enheter kan du lägga till eller redigera programprinciper som skyddar Office-appar och filer som används av Office-appar. Vi kan kontrollera Windows 10-enheter lite mer så att programprinciper kan innehålla fler inställningar, t.ex. kryptering och skydd för nätverks- och molnplatser. Du kan också skapa enhetsprinciper för Windows 10-enheter som framtvingar inställningar som till exempel virusskydd och automatiska uppdateringar. Vi rekommenderar att du be ställer in principerna som skapades under installationen, men om du vill finjustera principerna eller lägga till fler kan du läsa de här artiklarna:
+För Android- och iOS-enheter kan du lägga till eller redigera programprinciper som skyddar Office-appar och filer som används av Office-appar. Vi kan kontrollera Windows 10 enheter lite mer så att programprinciper kan innehålla fler inställningar, t.ex. kryptering och skydd för nätverks- och molnplatser. Du kan också skapa enhetsprinciper för Windows 10-enheter som framtvingar inställningar som till exempel virusskydd och automatiska uppdateringar. Vi rekommenderar att du be ställer in principerna som skapades under installationen, men om du vill finjustera principerna eller lägga till fler kan du läsa de här artiklarna:
   
 [Ställ in appkonfigurationer för Android- och iOS-enheter](app-protection-settings-for-android-and-ios.md)
   

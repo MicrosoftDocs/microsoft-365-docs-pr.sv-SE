@@ -37,7 +37,7 @@ När kokboken har skapats skapar du en mapp med filer i kokboksmappen som precis
 
 `mkdir mdatp/files`
 
-Överför ZIP-filen för Linux Server Onboarding som kan laddas ned från Microsoft Defender Säkerhetscenter-portalen till den här nya filmappen.
+Överför ZIP-filen för Linux Server Onboarding som kan laddas ned från Microsoft Defender Säkerhetscenter-portalen till den nya filmappen.
 
 Gå till mappen mdatp/recipes på arbetsstationen chef. Den här mappen skapas när kokboken skapades. Använd den önskade textredigeraren (t.ex. vi eller nano) för att lägga till följande instruktioner i slutet av filen default.rb:
 -   include_recipe ::onboard_mdatp
@@ -127,7 +127,7 @@ end
 Om du vill ta med det här steget som en del av receptet lägger du include_recipe till ":: settings_mdatp" till filen default.rb i receptmappen.
 Du kan också använda fliken för att schemalägga automatiska uppdateringar [Schemalägga en uppdatering av Microsoft Defender för Endpoint (Linux)](linux-update-MDE-Linux.md).
 
-Avinstallera MDATP-kokboken:
+Avinstallera MDATP Cookbook:
 
 ```powershell
 #Uninstall the Defender package

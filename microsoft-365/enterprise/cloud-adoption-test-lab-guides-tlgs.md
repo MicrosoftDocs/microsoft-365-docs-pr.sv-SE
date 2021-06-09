@@ -1,5 +1,5 @@
 ---
-title: Testa Microsoft 365 med TG-guider (Test Lab Guides)
+title: Test Microsoft 365 testlabbguider (TLGs)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -27,7 +27,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905182"
 ---
-# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Testa Microsoft 365 med TG-guider (Test Lab Guides)
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Test Microsoft 365 testlabbguider (TLGs)
 
 TG hjälper dig att snabbt få mer information om Microsoft-produkter. De är bra för situationer där du behöver utvärdera en teknik eller konfiguration innan du bestämmer om det är rätt för dig och innan du börjar utforma, planera och distribuera till användarna. Med hjälp av funktionen "Jag skapade den själv och det fungerar" får du hjälp att förstå distributionskraven för en ny produkt eller lösning så att du kan planera för värdskap i produktion på ett bättre sätt.
   
@@ -35,21 +35,21 @@ TLG skapar även representativa miljöer för utveckling och testning av program
   
 ![Testlabbguider i Microsoft Cloud](../media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-## <a name="microsoft-365-devtest-environment"></a>Utvecklings-/testmiljö för Microsoft 365
+## <a name="microsoft-365-devtest-environment"></a>Microsoft 365 utvecklings-/testmiljö
 
-Använd följande artiklar för att skapa en utvecklings-/testmiljö för Microsoft 365:
+Använd följande artiklar för att skapa Microsoft 365 utvecklings-/testmiljö:
   
 - [Den enkla baskonfigurationen](lightweight-base-configuration-microsoft-365-enterprise.md)
     
-    Skapa en utvärderingsprenumeration på Microsoft 365 Enterprise E5.
+    Skapa en utvärderingsprenumeration Microsoft 365 Enterprise E5.
 
 - [Baskonfiguration för simulerat företag](simulated-ent-base-configuration-microsoft-365-enterprise.md)
     
-    Skapa ett förenklat intranät som körs i infrastrukturtjänster i Microsoft Azure och en utvärderingsprenumeration på Microsoft 365 Enterprise E5. 
+    Skapa ett förenklat intranät som körs Microsoft Azure infrastrukturtjänster och en utvärderingsprenumeration Microsoft 365 Enterprise E5. 
 
     Det här är valfritt och behövs om du vill skapa en simulerad företagskonfiguration för hybrididentitet.
     
-För ytterligare TLG som gäller för både Office 365 och Microsoft 365 går du till [Testlabbguider](m365-enterprise-test-lab-guides.md).  
+Mer information om ytterligare uppgifter som gäller för både Office 365 och Microsoft 365 finns i [Testlabbguider](m365-enterprise-test-lab-guides.md).  
     
 ## <a name="related-topics"></a>Relaterade ämnen
 

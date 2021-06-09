@@ -149,8 +149,8 @@ Efterlevnadshanteraren är tillgänglig på följande språk:
 - Hebrew
 - Hungarian
 - Italian
-- Japanese
-- Korean
+- Japanska
+- Koreanska
 - Norska
 - Polish
 - Portugisiska (Brasilien)
@@ -166,4 +166,4 @@ Läs om hur du loggar in, tilldelar behörigheter och roller, konfigurerar inst�
 
 Börja sedan anpassa Efterlevnadshanteraren så att du kan följa de branschstandarder som är viktigast för din organisation genom [att konfigurera utvärderingar.](compliance-manager-assessments.md)
 
-För att hjälpa dig att följa regler om datasekretess har vi utformat ett arbetsflöde som vägleder dig genom en end-to-end-process för att planera och implementera funktioner i Microsoft 365, inklusive användning av Efterlevnadshanteraren. Mer information finns i Distribuera [informationsskydd för bestämmelser om datasekretess med hjälp Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+För att hjälpa dig att följa regler om datasekretess har vi utformat ett arbetsflöde som vägleder dig genom en end-to-end-process för att planera och implementera funktioner i Microsoft 365, inklusive användning av Efterlevnadshanteraren. Mer information finns i [Distribuera informationsskydd för föreskrifter för datasekretess med Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 

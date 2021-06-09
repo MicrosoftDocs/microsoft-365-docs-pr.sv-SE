@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
-description: Innehåller en lista med länkar till användbar information för distribution av Office Server-arbetsbelastningar i Microsoft Azure.
+description: Innehåller en lista med länkar till användbar information för Office om Server-arbetsbelastningar i Microsoft Azure.
 ms.openlocfilehash: 47e885d3db7d9211b917414d03efdc5b716dcd1e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,25 +27,25 @@ ms.locfileid: "50907498"
 ---
 # <a name="hybrid-solutions"></a>Hybridlösningar
 
-Med Microsoft Azure kan du distribuera vissa Office Server-arbetsbelastningar som normalt har distribuerats lokalt i Azure-infrastrukturtjänster.
+Med Microsoft Azure kan du distribuera vissa Office serverarbetsbelastningar som normalt har distribuerats lokalt i Azure-infrastrukturtjänster.
   
-För Microsoft 365-identitetsinfrastruktur i Azure:
+Mer Microsoft 365 identitetsinfrastruktur i Azure:
 
-- [Använda Azure AD för SharePoint Server-autentisering](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
+- [Använda Azure AD för SharePoint-serverautentisering](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
-- [Distribuera Microsoft 365-katalogsynkronisering i Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Distribuera Microsoft 365 katalogsynkronisering i Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
-- [Ansluta ett lokalt nätverk till ett virtuellt Microsoft Azure-nätverk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
+- [Anslut ett lokalt nätverk till ett virtuellt Microsoft Azure nätverk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
 - [Distribuera federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
     
 För SharePoint Server 2013-arbetsbelastningar i Azure:
   
-- [Microsoft Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)
+- [Microsoft Azure Arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)
     
 - [SharePoint Server 2013 katastrofåterställning i Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
-- [Internetwebbplatser i Microsoft Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+- [Webbplatser i Microsoft Azure med SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
 ## <a name="related-topics"></a>Relaterade ämnen

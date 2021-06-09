@@ -32,7 +32,7 @@ ms.locfileid: "51578036"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Visa och hantera principer och enheter
 
-Den här artikeln gäller Microsoft 365 Business Premium.
+Den här artikeln gäller för Microsoft 365 Business Premium.
 
 ## <a name="view-and-edit-device-policies"></a>Visa och redigera principer för enheter
 

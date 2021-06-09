@@ -1,5 +1,5 @@
 ---
-title: Optimera sid vikt i moderna webbplatssidor i SharePoint Online
+title: Optimera sid vikt i SharePoint moderna webbplatssidor online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Lär dig hur du använder verktyget Siddiagnostik för att optimera sidvikten på sidor med modern webbplats i SharePoint Online.
+description: Lär dig hur du använder verktyget Siddiagnostik för att optimera sidvikten på SharePoint sidor för moderna webbplatser online.
 ms.openlocfilehash: 780d8ca0debbc5efb834f8f3543b9a5a8d168108
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,23 +28,23 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907450"
 ---
-# <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimera sid vikt i moderna webbplatssidor i SharePoint Online
+# <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimera sid vikt i SharePoint moderna webbplatssidor online
 
-SharePoint Online moderna webbplatssidor innehåller serialiserad kod som krävs för att återge sidans innehåll, inklusive bilder, text, objekt i innehållsområdet under navigerings-/kommandofält och annan HTML-kod som utgör ramen för sidan. Sidvikt är ett mått på den här HTML-koden och bör vara begränsat för optimala inläsningstider för sidor.
+SharePoint Moderna webbplatssidor online innehåller serialiserad kod som krävs för att återge sidans innehåll, inklusive bilder, text, objekt i innehållsområdet under navigerings-/kommandofält och annan HTML-kod som utgör sidans ramverk. Sidvikt är ett mått på den här HTML-koden och bör vara begränsat för optimala inläsningstider för sidor.
 
 Den här artikeln hjälper dig att förstå hur du minskar sidvikten på moderna webbplatssidor.
 
 >[!NOTE]
->Mer information om prestanda i moderna Portaler i SharePoint Online finns i [Prestanda i det moderna SharePoint-programmet.](/sharepoint/modern-experience-performance)
+>Mer information om prestanda i SharePoint moderna portaler finns i [Prestanda i det moderna SharePoint upplevelse.](/sharepoint/modern-experience-performance)
 
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>Använda verktyget Siddiagnostik för SharePoint för att analysera sidvikt
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>Använda siddiagnostik för det SharePoint verktyget för att analysera sidvikt
 
-Verktyget Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna portaler för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer om verktyget Siddiagnostik för SharePoint går du [till Använda verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
+Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna SharePoint Online-portalen och klassiska https://www.microsoft.com/edge) publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer SharePoint siddiagnostikverktyget går du till Använda [verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
 
 >[!NOTE]
->Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
+>Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint systemsida.
 
-När du analyserar en SharePoint-webbplatssida med siddiagnostik för SharePoint-verktyget kan du se information om sidan i sidvikten **under 500 kB** resultatet av fönstret _Diagnostiktest._ Resultatet visas i grönt om sidvikten är under baslinjevärdet och röd om sidvikten överskrider baslinjevärdet.
+När du analyserar en SharePoint-webbplatssida med verktyget Siddiagnostik för SharePoint visas information om sidan i **sidvikten under 500 kB** i fönstret _Diagnostiktest._ Resultatet visas i grönt om sidvikten är under baslinjevärdet och röd om sidvikten överskrider baslinjevärdet.
 
 Möjliga resultat är:
 
@@ -53,7 +53,7 @@ Möjliga resultat är:
 
 Om **Sidvikt under 500 kB visas** i avsnittet Åtgärder **krävs** kan du klicka på resultatet för mer information.
 
-![Förfrågningar om SharePoint-resultat](../media/modern-portal-optimization/pagediag-page-weight.png)
+![Förfrågningar om SharePoint resultat](../media/modern-portal-optimization/pagediag-page-weight.png)
 
 ## <a name="remediate-page-weight-issues"></a>Åtgärda problem med sidvikt
 
@@ -64,7 +64,7 @@ Allmän vägledning för att minska sidvikten omfattar:
 - Begränsa sidinnehållet till ett rimligt belopp och använd flera sidor för relaterat innehåll.
 - Minimera användningen av webbdelar som har stora egenskapsskatter.
 - Använd icke-interaktiva uppslagsvyer när det är möjligt.
-- Optimera bildstorlekar genom att ändra storlek på bilderna på ett lämpligt sätt, med komprimerat bildformat och se till att de laddas ned från ett CDN.
+- Optimera bildstorlekar genom att ändra storlek på bilderna på rätt sätt, med komprimerade bildformat och se till att de laddas ned från en CDN.
 
 Ytterligare anvisningar om hur du begränsar sidvikten finns i följande artikel:
 
@@ -79,11 +79,11 @@ Innan du gör sidändringar för att åtgärda prestandaproblem bör du anteckna
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Justera SharePoint Online-prestanda](tune-sharepoint-online-performance.md)
+[Justera SharePoint onlineprestanda](tune-sharepoint-online-performance.md)
 
-[Justera Office 365-prestanda](tune-microsoft-365-performance.md)
+[Justera Office 365 prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i det moderna SharePoint-programmet](/sharepoint/modern-experience-performance)
+[Prestanda i den moderna SharePoint upplevelsen](/sharepoint/modern-experience-performance)
 
 [Nätverk för innehållsleverans](content-delivery-networks.md)
 

@@ -37,12 +37,12 @@ ms.locfileid: "51578456"
 ---
 # <a name="help-users-connect-to-microsoft-365-business-premium"></a>Hjälpa användare att ansluta till Microsoft 365 Business Premium
 
-När du har slutfört konfigurationen är standardprinciperna för enheter på plats och redo att användas. Användare laddar ned Office-appar på mobila enheter. Principer tillämpas sedan när användaren loggar in med sitt arbets- eller skolkonto. Det återstår en del arbete, exempelvis uppgradering under drift, innan principerna kan användas på Windows-datorer. Visa och dela följande avsnitt för att hjälpa användarna att komma igång och ansluta:
+När du har slutfört konfigurationen är standardprinciperna för enheter på plats och redo att användas. På mobila enheter laddar användare ned Office appar. Principer tillämpas sedan när användaren loggar in med sitt arbets- eller skolkonto. Det återstår en del arbete, exempelvis uppgradering under drift, innan principerna kan användas på Windows-datorer. Visa och dela följande avsnitt för att hjälpa användarna att komma igång och ansluta:
   
-[Konfigurera Windows-enheter för Microsoft 365 Business Premium-användare](set-up-windows-devices.md)
+[Konfigurera Windows enheter för Microsoft 365 Business Premium användare](set-up-windows-devices.md)
   
 [Använda stegvisa anvisningar för att lägga till AutoPilot-enheter och -profiler](add-autopilot-devices-and-profile.md)
   
-[Konfigurera mobila enheter för Microsoft 365 Business Premium-användare](set-up-mobile-devices.md)
+[Konfigurera mobila enheter för Microsoft 365 Business Premium användare](set-up-mobile-devices.md)
   
 

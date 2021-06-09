@@ -83,7 +83,7 @@ Information om felsökning av PowerShell-anslutningsfel finns i:
 
 - [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
 
-- [Anslut säkerhets- & Säkerhets- och efterlevnadscenter PowerShell](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+- [Anslut till Säkerhets- och efterlevnadscenter i PowerShell](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked).
 
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 

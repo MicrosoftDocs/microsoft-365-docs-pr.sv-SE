@@ -18,7 +18,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: Lär dig hur du hanterar användare, licenser och 365-appar för Microsoft 365 med PowerShell.
+description: Lär dig hur du Microsoft 365 användare, licenser och 365-appar med PowerShell.
 ms.openlocfilehash: dee8fbce03e38a954ddea5a8ec86248f9209d96c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,13 +30,13 @@ ms.locfileid: "50905110"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-PowerShell för Microsoft 365 är ett kraftfullt hanteringsverktyg som kompletterar administrationscentret för Microsoft 365. Du kan till exempel använda PowerShell-automation för att enkelt hantera flera användarkonton och licenser och för att skapa rapporter.
+PowerShell för Microsoft 365 är ett kraftfullt hanteringsverktyg som kompletterar Microsoft 365 administrationscentret. Du kan till exempel använda PowerShell-automation för att enkelt hantera flera användarkonton och licenser och för att skapa rapporter.
 
 Välj bland följande avsnitt för att lära dig hur du använder PowerShell för att hantera Microsoft 365:
   
 - [**Komma igång**](getting-started-with-microsoft-365-powershell.md)
 
-    Börja här om du inte är bekant med PowerShell för Microsoft 365 och vill installera Microsoft 365-modulerna och ansluta till din prenumeration.
+    Börja här om du inte är bekant med PowerShell för Microsoft 365, och du vill installera Microsoft 365 och ansluta till din prenumeration.
 
 - [**Användarkonton, licenser och grupper**](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
@@ -60,8 +60,8 @@ Välj bland följande avsnitt för att lära dig hur du använder PowerShell fö
 
 - [**DAP-partner (Delegerade åtkomstbehörigheter)**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    Börja här om du vill använda Partners för Syndication och molnlösningsleverantör (CSP) för att hantera dina Microsoft 365-kundklienter.
+    Börja här om du vill använda Partners för Syndication och Molnlösningsleverantör (CSP) för att hantera dina Microsoft 365-kundklienter.
 
-- [**Skype för företag online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
+- [**Skype för företag – Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
-    Börja här för att hantera Skype för företag – Online.
+    Börja här för att hantera Skype för företag Online.
