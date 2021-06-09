@@ -1,7 +1,7 @@
 ---
 title: Lägga till och verifiera administratörskontakter i administratörsportalen
 description: Berätta vem vi ska kontakta för varje fokusområde.
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -18,40 +18,40 @@ ms.locfileid: "50925898"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Lägga till och verifiera administratörskontakter i administratörsportalen
 
-Tjänsten Microsoft Managed Desktop kommunicerar med kunder på flera olika sätt. För att effektivisera kommunikationen och se till att vi kontrollerar med rätt personer, måste du tillhandahålla en uppsättning administratörskontakter. Microsoft Managed Desktop IT Operations kontaktar dessa personer för att få hjälp med att felsöka problem för klientorganisationen.
+Det finns flera sätt Microsoft Hanterat skrivbord kommunicerar med kunder. För att effektivisera kommunikationen och se till att vi kontrollerar med rätt personer, måste du tillhandahålla en uppsättning administratörskontakter. Microsoft Hanterat skrivbord IT-åtgärder kontaktar dessa personer för att få hjälp med att felsöka problem för klientorganisationen.
 
 > [!IMPORTANT]
-> Du kanske redan har lagt till de här kontakterna i administrationsportalen. I så fall bör du kontrollera att kontaktlistan är korrekt, eftersom Microsoft Managed **Desktop** måste kunna nå dem om ett allvarligt problem inträffar.
+> Du kanske redan har lagt till de här kontakterna i administrationsportalen. I så fall bör du kontrollera att kontaktlistan är korrekt, eftersom  Microsoft Hanterat skrivbord måste kunna nå dem om det inträffar en allvarlig händelse.
 
-## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory-åtkomst för Microsoft Managed Desktop Admin-portalen
+## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory åtkomst Microsoft Hanterat skrivbord administrationsportalen
 
-Microsoft Managed Desktop Admin-portalen kräver att personer som har åtkomst till portalen har någon av dessa Azure Active Directory-roller (AD):
+Microsoft Hanterat skrivbord Administratörsportalen kräver att personer som har åtkomst till portalen har någon av Azure Active Directory-roller (AD):
 - Global administratör
 - Intune-tjänstadministratör
 - Global läsare
 - Tjänstsupportadministratör
 
-Den globala administratören måste vara den som registrerar din organisation i Microsoft Managed Desktop. Alla fem rollerna har samma åtkomst i administrationsportalen för att initiera och visa uppgifter. Mer information om hur du tilldelar de här rollerna i Azure AD finns i [Behörigheter för administratörsroll i Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 
+Den globala administratören måste vara den som registrerar din organisation i Microsoft Hanterat skrivbord. Alla fem rollerna har samma åtkomst i administrationsportalen för att initiera och visa uppgifter. Mer information om hur du tilldelar de här rollerna i Azure AD finns i [Behörigheter för administratörsroller i Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 
 
 ## <a name="admin-contact-areas-of-focus"></a>Administratörskontaktområden i fokus
 
-Administratörskontakter bör vara den bästa personen eller gruppen som kan besvara frågor och fatta beslut inom olika fokusområden. **Microsoft Managed Desktop Operations kommer att kontakta dessa administratörskontakter för frågor som rör supportbegäranden som lämnats in av kunden.** De här administratörskontakterna får aviseringar om uppdateringar av supportbegäran och nya meddelanden. Dessa områden omfattar:
+Administratörskontakter bör vara den bästa personen eller gruppen som kan besvara frågor och fatta beslut inom olika fokusområden. **Microsoft Hanterat skrivbord Åtgärder kommer att kontakta dessa administratörskontakter för frågor som rör supportbegäranden som har lämnats in av kunden.** De här administratörskontakterna får aviseringar om uppdateringar av supportbegäran och nya meddelanden. Dessa områden omfattar:
 
 Fokusområde | För frågor om
 --- | ---
 Appförpackning | Felsökning av appförpackningar
-Enheter | Enhetens hälsa, felsökning med Microsoft Managed Desktop-enheter
-Säkerhet | Felsöka säkerhetsproblem med Microsoft Managed Desktop-enheter
-It-supportavdelningen | i fall där vår supportpersonal ger över användarärenden utanför supportområdena för Microsoft Managed Desktop 
+Enheter | Enhetens hälsa, felsökning med Microsoft Hanterat skrivbord enheter
+Säkerhet | Felsöka säkerhetsproblem med Microsoft Hanterat skrivbord enheter
+It-supportavdelningen | i fall där vår supportpersonal ger över användarärenden utanför Microsoft Hanterat skrivbord supportområden 
 Annat | För problem som inte omfattas av andra områden
 
-**De som du väljer för dessa kontakter måste ha kunskaper och behörighet att fatta beslut om Microsoft Managed Desktop-miljön.** När du onboard your Microsoft Managed Desktop environment, you're prompted to add contacts for your local Helpdesk and Security. 
+**De som du väljer för dessa kontakter måste ha kunskap och behörighet att fatta beslut i din Microsoft Hanterat skrivbord miljö.** När du onboard your Microsoft Hanterat skrivbord environment, you're prompted to add contacts for your local Helpdesk and Security. 
 
 Administratörskontakter krävs när du [skickar en supportbegäran.](../service-description/support.md) Du måste ha en administratörskontakt för fokusområdet i supportbegäran. 
 
 **Lägga till administratörskontakter**
 
-1.  Logga in på [administrationsportalen för Microsoft Managed Desktop.](https://aka.ms/mwaasportal) 
+1.  Logga in på [Microsoft Hanterat skrivbord administrationsportalen](https://aka.ms/mwaasportal). 
 
 2.  Under **Support** väljer du **Administratörskontakter**. 
 
@@ -67,7 +67,7 @@ Administratörskontakter krävs när du [skickar en supportbegäran.](../service
 
 5. Upprepa detta för varje fokusområde. 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Hanterat skrivbord
 
 1. Lägga till och verifiera administratörskontakter i administrationsportalen (det här avsnittet)
 2. [Justera villkorsstyrd åtkomst](conditional-access.md)

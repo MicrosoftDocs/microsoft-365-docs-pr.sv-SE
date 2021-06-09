@@ -1,8 +1,8 @@
 ---
-title: Översikt över Microsoft Threat Experts i Microsoft 365 Defender
+title: Microsoft Hotexperter i Microsoft 365 Defender översikt
 ms.reviewer: ''
-description: Microsoft Threat Experts tillhandahåller ett extra expertlager till Microsoft 365 Defender.
-keywords: tjänst för hantering av hotsökning, hanterad hotsökning, MDR-tjänst (managed detection and response), MTE, Microsoft Threat Experts
+description: Microsoft Hotexperter finns en extra expertlager med information Microsoft 365 Defender.
+keywords: hanterad tjänst för hotsökning, hanterad hotsökning, MDR-tjänst (managed detection and response), MTE, Microsoft Hotexperter
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -22,7 +22,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/14/2021
 ms.locfileid: "51764429"
 ---
-# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Översikt över Microsoft Threat Experts i Microsoft 365
+# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft Hotexperter i Microsoft 365 översikt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -33,27 +33,27 @@ ms.locfileid: "51764429"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Threat Experts – Riktade attackmeddelanden är en hanterad tjänst för hot efter hot. När du har ansökt och godkänts får du riktade attackmeddelanden från Microsofts experter på hot så att du inte missar viktiga hot i din miljö. Dessa meddelanden hjälper dig att skydda din organisations slutpunkter, e-post och identiteter.
-Microsoft Threat Experts – Experter på begäran ger dig expertråd om hot som din organisation står inför. Du kan kontakta om du behöver hjälp med hot som din organisation står inför. Det är tillgängligt som en prenumerationstjänst.
+Microsoft Hotexperter – Riktade attackmeddelanden är en hanterad tjänst för hot efter hot. När du har ansökt och godkänts får du riktade attackmeddelanden från Microsofts experter på hot så att du inte missar viktiga hot i din miljö. Dessa meddelanden hjälper dig att skydda din organisations slutpunkter, e-post och identiteter.
+Microsoft Hotexperter – Med experter på begäran kan du få expertråd om hot som din organisation står inför. Du kan kontakta om du behöver hjälp med hot som din organisation står inför. Det är tillgängligt som en prenumerationstjänst.
 
-## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>Sök efter Microsoft Threat Experts – riktade attackmeddelanden
+## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>Ansök för Microsoft Hotexperter – riktade attackmeddelanden
 
 > [!IMPORTANT]
-> Innan du tillämpar bör du diskutera kraven för berättigande till Microsoft Threat Experts – Riktade attackmeddelanden med din Microsoft-leverantör och ditt kontoteam.
+> Innan du ansökar kontrollerar du att du tar upp kvalificeringskraven för Microsoft Hotexperter – Riktade attackmeddelanden med microsofts tekniska tjänstleverantör och kontoteam.
 
-Om du redan har Microsoft Defender för Endpoint och Microsoft 365 Defender kan du ansöka om Microsoft Threat Experts – Targeted Attack Notifications via Microsoft 365 Defender-portalen. Gå till **Inställningar > slutpunkter > allmänt > avancerade funktioner > Microsoft Threat Experts – Riktade attackmeddelanden** och välj **Använd.** Se [Konfigurera Microsoft Threat Experts-funktioner](./configure-microsoft-threat-experts.md) för en fullständig beskrivning.
+Om du redan har Microsoft Defender för Slutpunkt och Microsoft 365 Defender kan du ansöka om Microsoft Hotexperter – riktade attackmeddelanden via deras Microsoft 365 Defender-portal. Gå till **Inställningar > slutpunkter > allmänt > avancerade > Microsoft Hotexperter – riktade attackmeddelanden** och välj **Använd.** Se [Konfigurera Microsoft Hotexperter funktioner för](./configure-microsoft-threat-experts.md) en fullständig beskrivning.
 
 ![Skärmbild av MTE-programsidan](../../media/mte/mte-collaboratewithmte.png)
 
 När din ansökan har godkänts kommer du att börja ta emot riktade attackmeddelanden när Threat Experts upptäcker ett hot mot din miljö.
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Prenumerera på Microsoft Threat Experts – experter på begäran
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Prenumerera på Microsoft Hotexperter – experter på begäran
 
-Kontakta din Microsoft-representant om du vill prenumerera på Experter på begäran.  Mer [information finns i Konfigurera Microsoft Threat Experts-funktioner.](./configure-microsoft-threat-experts.md)
+Kontakta din Microsoft-representant om du vill prenumerera på Experter på begäran.  Mer [information Microsoft Hotexperter Konfigurera Microsoft Hotexperter](./configure-microsoft-threat-experts.md) funktioner.
 
 ## <a name="receive-targeted-attack-notification"></a>Ta emot riktad attackavisering
 
-Microsoft Threat Experts – targeted attack notification capability provides proactive hunting for the most important threats to your network. Våra hotexperter söker efter mänskliga adversära intrång, hand-på-tangentbordsattacker och avancerade attacker, till exempel cybersäkerhet. Dessa meddelanden visas som en ny avisering. Den hanterade servicen för servicen omfattar:
+Funktionen Microsoft Hotexperter – Riktad attackavisering ger proaktivt skydd för de viktigaste hoten mot ditt nätverk. Våra hotexperter söker efter mänskliga adversära intrång, hand-på-tangentbordsattacker och avancerade attacker, till exempel cybersäkerhet. Dessa meddelanden visas som en ny avisering. Den hanterade servicen för servicen omfattar:
 
 - Övervaka och analysera hot, minska invånartiden och risken för ditt företag
 - Person med utbildning om artificiell intelligens som identifierar och riktar sig mot både kända attacker och nya hot
@@ -62,7 +62,7 @@ Microsoft Threat Experts – targeted attack notification capability provides pr
 
 ## <a name="collaborate-with-experts-on-demand"></a>Samarbeta med experter på begäran
 
-Du kan också kontakta Microsofts hotexperter direkt från Microsoft 365-säkerhetsportalen för att få ett snabbt och korrekt svar på hot.  Experter kan ge insikter för att bättre förstå de komplexa hot din organisation kan möta.  Kontakta en expert för att:
+Du kan också kontakta Microsofts experter på hot direkt Microsoft 365 säkerhetsportalen för att få ett snabbt och korrekt svar på hot.  Experter kan ge insikter för att bättre förstå de komplexa hot din organisation kan möta.  Kontakta en expert för att:
 
 - Samla in ytterligare information om aviseringar och incidenter, inklusive rotorsaker och omfattning
 - Få klarhet i misstänkta enheter, aviseringar och incidenter och få nästa steg vid en avancerad attack
@@ -86,7 +86,7 @@ Alternativet att Kontakta **en expert på hot** finns på flera platser i portal
 ![Skärmbild av menyalternativet MTE-EOD på sidan lager för incidenter](../../media/mte/incidents-inventory-mte-highlighted.png)
 
 > [!NOTE]
-> Om du har en Premier Support-prenumeration mappad till din Microsoft Defender för Office 365-licens kan du spåra status för dina experter på begäran via Microsoft Services Hub.
+> Om du har en Premier Support-prenumeration mappad till din Microsoft Defender för Office 365-licens kan du spåra status för ärenden med experter på begäran via Microsoft Services-hubben.
 
 Titta på den här videon för en snabb överblick över Microsoft Services-hubben.
 
@@ -94,4 +94,4 @@ Titta på den här videon för en snabb överblick över Microsoft Services-hubb
 
 ## <a name="see-also"></a>Se även
 
-- [Konfigurera microsoft Threat Experts-funktioner](./configure-microsoft-threat-experts.md)
+- [Konfigurera Microsoft Hotexperter funktioner](./configure-microsoft-threat-experts.md)

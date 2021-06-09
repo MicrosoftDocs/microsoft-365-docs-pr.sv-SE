@@ -1,6 +1,6 @@
 ---
-title: Ikoner och mallar för Microsoft 365-arkitekturen
-description: Ikoner som används för att bygga arkitektur diagram för Microsoft 365.
+title: Microsoft 365 arkitekturikoner och mallar
+description: Ikoner som kan användas i byggarkitekturdiagram för Microsoft 365.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -17,34 +17,34 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 12/16/2020
 ms.locfileid: "49688823"
 ---
-# <a name="microsoft-365-architecture-icons-and-templates"></a>Ikoner och mallar för Microsoft 365-arkitekturen
+# <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365 arkitekturikoner och mallar
 
-Det är viktigt att hjälpa våra partners och kunder att utforma och skapa nya lösningar. Arkitektur diagram som de som ingår i vår vägledning kan bidra till att utforma beslut och relationer mellan komponenter i en miljö. Vi använder en uppsättning symboler och ikoner tillsammans med Visio-mallar för att skapa arkitektur diagram vi produkten och tillhandahåller de här verktygen för att hjälpa dig att skapa ett anpassat arkitektur diagram för nästa lösning.
+Att hjälpa våra partner och kunder att utforma och konstruera nya lösningar är viktigt. Arkitekturdiagram som de som ingår i våra riktlinjer kan hjälpa dig att kommunicera designbeslut och relationerna mellan komponenter i en miljö. Vi använder en uppsättning symboler och ikoner tillsammans med Visio-mallar för att skapa arkitekturdiagrammen vi använder och tillhandahåller dessa verktyg för att hjälpa dig att skapa ett anpassat arkitekturdiagram för nästa lösning.
 
-Du kan se de här ikonerna, symbolerna och mallarna med nedladdnings bara filer på följande sidor:
+Du kan se dessa ikoner, symboler och mallar i praktiken i nedladdningsbara filer som är tillgängliga på följande sidor:
 
 - [Produktivitets illustrationer](productivity-illustrations.md)
 - [Microsoft Cloud-arkitekturmodeller](cloud-architecture-models.md)
 
 ## <a name="terms-and-download"></a>Villkor och nedladdning
 
-Microsoft tillåter användning av de här ikonerna i arkitektur diagram, utbildningsmaterial och dokumentation. Du får bara kopiera, distribuera och visa ikonerna för tillåten användning såvida inte Microsoft ges uttrycklig tillåtelse. Microsoft reserves all other rights.
+Microsoft tillåter att dessa ikoner används i arkitekturdiagram, utbildningsmaterial eller dokumentation. Du kan kopiera, distribuera och visa ikonerna endast för den tillåtna användningen om inte Microsoft uttryckligen beviljas behörighet. Microsoft reserves all other rights.
 
 
  > [!div class="button"]
- > [Ladda ned SVG-och PNG-ikoner](https://go.microsoft.com/fwlink/?linkid=869455)
+ > [Ladda ned SVG- och PNG-ikoner](https://go.microsoft.com/fwlink/?linkid=869455)
 
  > [!div class="button"]
- > [Ladda ner Visio-mallar och stenciler](https://go.microsoft.com/fwlink/?linkid=2056186)
+ > [Ladda Visio mallar och stenciler](https://go.microsoft.com/fwlink/?linkid=2056186)
 
-## <a name="example-architecture-diagrams"></a>Exempel på arkitektur diagram
+## <a name="example-architecture-diagrams"></a>Exempel på arkitekturdiagram
 
 Du kan använda dessa ikoner och mallar för att skapa diagram som följande exempel:
 
-1. Exempel på Sök arkitektur diagram för SharePoint:
+1. Exempel på sökarkitekturdiagram för SharePoint:
 
-    ![Exempel på Sök arkitektur för SharePoint](../media/configure-search-for-multi-geo-image1-1.png)
+    ![Exempel på sökarkitektur för SharePoint](../media/configure-search-for-multi-geo-image1-1.png)
 
-2. Arkitektur diagram för arbets cykel Teams bevarande:
+2. Teams för bevarandelivscykel:
 
-    ![Arbets cykel för team bevarande](../media/TeamsRetentionLifecycle.png)
+    ![Teams livscykel för bevarande](../media/TeamsRetentionLifecycle.png)

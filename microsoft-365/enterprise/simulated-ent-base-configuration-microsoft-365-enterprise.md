@@ -17,7 +17,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Använd den här testlabbguiden för att skapa en simulerad företagstestmiljö för Microsoft 365 för företag.
+description: Använd den här testlabbguiden om du vill skapa en simulerad företagstestmiljö för Microsoft 365 för företag.
 ms.openlocfilehash: 8df63e1a580b57aa263c11dccaed947f46f2cbb9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.locfileid: "50926050"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Baskonfiguration för simulerat företag
 
-*Den här testlabbguiden kan användas för både Microsoft 365 för företag- och Office 365 Enterprise-testmiljöer.*
+*Den här testlabbguiden kan användas för både Microsoft 365 för företag Office 365 Enterprise för testmiljöer.*
 
-I den här artikeln beskrivs hur du skapar en förenklad miljö för Microsoft 365 för företag som innehåller:
+I den här artikeln beskrivs hur du skapar en förenklad miljö för Microsoft 365 företag som innehåller:
 
 - En utvärderingsprenumeration eller betald prenumeration på Microsoft 365 E5.
 - Ett förenklat organisations intranät som är anslutet till internet och består av tre virtuella datorer i ett virtuellt Azure-nätverk (DC1, APP1 och CLIENT1).
@@ -40,18 +40,18 @@ Att skapa en förenklad testmiljö omfattar två faser:
 - [Fas 1: Skapa ett simulerat intranät](#phase-1-create-a-simulated-intranet)
 - [Fas 2: Skapa en Microsoft 365 E5-prenumeration](#phase-2-create-your-microsoft-365-e5-subscription)
 
-Du kan använda den resulterande miljön för att testa funktionerna i [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) för företag med ytterligare [testlabbguider](m365-enterprise-test-lab-guides.md) eller på egen hand.
+Du kan använda den resulterande miljön för att testa funktionerna i Microsoft 365 för företag [med](https://www.microsoft.com/microsoft-365/enterprise) ytterligare [testlabbguider](m365-enterprise-test-lab-guides.md) eller på egen hand.
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> En visuell karta till alla artiklar i Microsoft 365 testlabbguide-stacken för företag finns i Testlabbguide för [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)för företag.
+> En visuell karta till alla artiklar i Microsoft 365 för företags testlabbguide stack finns i [Microsoft 365 för företags testlabbguide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Fas 1: Skapa ett simulerat intranät
 
 I den här fasen ska du bygga ett simulerat intranät i Azure-infrastrukturtjänster som innehåller en AD DS-domänkontrollant (Active Directory Domain Services), en programserver och en klientdator.
 
-Du kommer att använda dessa datorer i ytterligare [Microsoft 365](m365-enterprise-test-lab-guides.md) för företags testlabbguider för att konfigurera och demonstrera hybrididentitet och andra funktioner.
+Du kommer att använda dessa datorer i ytterligare [Microsoft 365 testlabbguider](m365-enterprise-test-lab-guides.md) för att konfigurera och visa hybrididentitet och andra funktioner.
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>Metod 1: Skapa det simulerade intranätet med en Azure Resource Manager-mall
 
@@ -160,7 +160,7 @@ Du uppmanas att ange ett användarnamn och lösenord för det lokala administrat
   
 Anslut sedan till den virtuella DC1-datorn:
   
-1. I [Azure-portalen](https://portal.azure.com)väljer du **Resursgrupper > <** namnet på **_den nya resursgruppen_*_> > _* DC1**  >  **Connect.**
+1. Välj [Resursgrupper i](https://portal.azure.com) **Azure-portalen > <** namnet på den nya **_resursgruppen_ _ *> > _* DC1-Anslut**  >  .
     
 2. I det öppna fönstret väljer du Ladda **ned RDP-fil**. Öppna DC1.rdp-filen som laddas ned och välj sedan **Anslut**.
     
@@ -168,11 +168,11 @@ Anslut sedan till den virtuella DC1-datorn:
     
    - I Windows 7:
     
-     I dialogrutan **Windows-säkerhet** väljer du Använd **ett annat konto.** I **Användarnamn anger du** namnet på det lokala **\\** < DC1-administratörskontot>.
+     I dialogrutan **Windows-säkerhet** väljer du Använd **ett annat konto**. I **Användarnamn anger du** namnet på det lokala **\\** < DC1-administratörskontot>.
     
    - För Windows 8 eller Windows 10:
     
-     I dialogrutan **Windows-säkerhet** väljer du **Fler alternativ** och sedan Använd **ett annat konto.** I **Användarnamn anger du** namnet på det lokala **\\** < DC1-administratörskontot>.
+     I **Windows-säkerhet** väljer du Fler **alternativ** och sedan Använd **ett annat konto.** I **Användarnamn anger du** namnet på det lokala **\\** < DC1-administratörskontot>.
     
 4. I **Lösenord** anger du lösenordet för det lokala administratörskontot och väljer sedan **OK.**
     
@@ -184,7 +184,7 @@ Lägg sedan till en extra datadisk som en ny volym med enhetsbokstaven F: med de
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-Konfigurera sedan DC1 som domänkontrollant och DNS-server för domänen **testlab.**\<*your public domain*> domän. Ange ditt offentliga domännamn, ta bort vinkelparenteserna och kör sedan dessa kommandon på en Administratörsnivå för Windows PowerShell-kommandotolken i DC1.
+Konfigurera sedan DC1 som domänkontrollant och DNS-server för domänen **testlab.**\<*your public domain*> domän. Ange ditt offentliga domännamn, ta bort vinkelparenteserna och kör sedan dessa kommandon på en administratörsnivå Windows PowerShell kommandotolken i DC1.
   
 ```powershell
 $yourDomain="<your public domain>"
@@ -197,7 +197,7 @@ Observera att dessa kommandon kan ta några minuter att slutföra.
   
 När DC1 har startat om återansluter du till den virtuella datorn DC1.
   
-1. Välj [Resursgrupper i Azure-portalen](https://portal.azure.com) **> <** namnet *på resursgruppen> >* **DC1**  >  **Anslut.**
+1. I [Azure-portalen](https://portal.azure.com)väljer du **Resursgrupper > <** *resursgruppnamnet> >*   >  **DC1-Anslut.**
     
 2. Kör DC1.rdp-filen som laddas ned och välj sedan **Anslut**.
     
@@ -379,13 +379,13 @@ Om du vill konfigurera den nya Office 365 E5-utvärderingsprenumeration följer 
 
 #### <a name="using-an-office-365-e5-test-environment"></a>Använda en Office 365 E5-testmiljö
 
-Om du bara behöver en Office 365-testmiljö behöver du inte läsa resten av den här artikeln.
+Om du bara behöver Office 365 en testmiljö behöver du inte läsa resten av den här artikeln.
 
-Fler testlabbguider som gäller för både Microsoft 365 och Office 365 finns i Testlabbguider för [Microsoft 365 för företag.](m365-enterprise-test-lab-guides.md)
+Fler testlabbguider som gäller för både Microsoft 365 och Office 365 finns [i Microsoft 365 för testlabbguider för företag.](m365-enterprise-test-lab-guides.md)
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Lägga till en utvärderingsprenumeration på Microsoft 365 E5
 
-Om du vill lägga till en provprenumeration på Microsoft 365 E5 och konfigurera användarkonton med licenser följer du anvisningarna i Steg [3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) i testlabbguiden för den lätta baskonfigurationen.
+Om du vill lägga Microsoft 365 E5 provprenumeration och konfigurera användarkonton med licenser utför du anvisningarna i Steg [3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) i testlabbguiden för enkel baskonfiguration.
 
   
 ## <a name="results"></a>Resultat
@@ -400,7 +400,7 @@ Den slutliga konfigurationen ser ut så här:
   
 ![Fas 2 i baskonfiguration för simulerat företag](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-Nu kan du experimentera med ytterligare funktioner i [Microsoft 365 för företag.](https://www.microsoft.com/microsoft-365/enterprise)
+Du är nu redo att experimentera med ytterligare funktioner i [Microsoft 365 för företag.](https://www.microsoft.com/microsoft-365/enterprise)
   
 ## <a name="next-steps"></a>Nästa steg
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365-slutpunkter för Tyskland
+title: Office 365 för Tyskland
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -29,15 +29,15 @@ ms.locfileid: "51759900"
 ---
 # <a name="office-365-germany-endpoints"></a>Slutpunkter för Office 365 Germany
 
- *Gäller för: Office 365-administratör*
+ *Gäller för: Office 365 Admin*
 
 Office 365 kräver internetanslutning. Slutpunkterna nedan bör endast kunna nås av kunder som använder **Office 365 Germany.**
 
 > [!NOTE]
-> För kunder som håller på att övergå till den nya Microsoft 365-datacenterområdet i Tyskland kommer slutpunkterna att ändras.
-> Mer information finns i Migrering från [Microsoft Cloud Deutschland till Office 365-tjänster i de nya tyska datacenterområdena.](ms-cloud-germany-transition.md)
+> För kunder som befinner sig i övergången till den nya Microsoft 365 datacenterområdet i Tyskland kommer slutpunkterna att ändras.
+> Mer information finns i Migrering från [Microsoft Cloud Deutschland till Office 365 i de nya tyska datacenterområdena.](ms-cloud-germany-transition.md)
   
- **Office 365-slutpunkter:** Globalt [(inklusive GCC)](urls-and-ip-address-ranges.md)Office 365 som drivs av   |  [21 Vianet](urls-and-ip-address-ranges-21vianet.md)   |  *Office 365 Germany* Office  |  [365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md)Office  |  [365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
+ **Office 365 slutpunkter:** Globalt [(inklusive GCC)](urls-and-ip-address-ranges.md)Office 365 som drivs av   |  [21 Vianet](urls-and-ip-address-ranges-21vianet.md)   |  *Office 365 Germany* Office 365  |  [U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md)Office 365  |  [U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
 |||
 |:-----|:-----|

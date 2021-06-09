@@ -269,7 +269,7 @@ Du kan filtrera både diagrammet och informationstabellen genom att klicka **på
   - **Godkänd**
   - **Fel**
   - **SoftPass**
-  - **Ingen**
+  - **Inga**
   - **Annat**
 
 - **Förfalskningstyp:** **Intern** och **Extern**
@@ -524,7 +524,7 @@ För att kunna visa och använda rapporterna som beskrivs i den här artikeln m�
 - **Organisationshantering**
 - **Säkerhetsadministratör**
 - **Säkerhetsläsare**
-- **Global Reader**
+- **Global läsare**
 
 Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 

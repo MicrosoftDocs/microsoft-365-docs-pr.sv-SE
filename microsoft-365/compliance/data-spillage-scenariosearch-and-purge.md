@@ -178,7 +178,7 @@ Information om hur du tar bort spillda meddelanden finns [i Söka efter och ta b
 
 Tänk på följande begränsningar när du tar bort data som har spillts:
 
-- Det maximala antalet postlådor i en sökning som du kan använda för att ta bort objekt genom att göra en sök- och rensningsåtgärd är 50 000. Om sökningen som du skapar i steg 3 söker i fler än 50 000 postlådor misslyckas åtgärden för rensning. Sökning i fler än 50 000 postlådor i en enda sökning kan inträffa när du konfigurerar sökningen så att den omfattar alla postlådor i organisationen. Denna begränsning gäller fortfarande även om mindre än 50 000 postlådor innehåller objekt som matchar sökfrågan.
+- Det maximala antalet postlådor i en sökning som du kan använda för att ta bort objekt genom att göra en sök- och rensningsåtgärd är 50 000. Om sökningen som du skapar i steg 3 söker i fler än 50 000 postlådor misslyckas åtgärden för rensning. Sökning i fler än 50 000 postlådor i en enda sökning kan inträffa när du konfigurerar sökningen så att den omfattar alla postlådor i organisationen. Denna begränsning gäller fortfarande även om mindre än 50 000 postlådor innehåller objekt som matchar sökfrågan.
 
 - Du kan ta bort högst tio objekt per postlåda samtidigt. Eftersom funktionen att söka efter och ta bort meddelanden är avsedd att vara ett verktyg för incidentrespons hjälper den här gränsen till att säkerställa att meddelanden snabbt tas bort från postlådor. Den här funktionen är inte avsedd för att rensa i användarnas postlådor.
 

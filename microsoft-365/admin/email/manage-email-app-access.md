@@ -1,5 +1,5 @@
 ---
-title: Hantera åtkomst till e-postappar i Microsoft 365-administrationscentret
+title: Hantera åtkomst till e-postprogrammet Microsoft 365 administrationscenter
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -20,7 +20,7 @@ search.appverid:
 - MBS150
 ms.assetid: d00b6b83-1f14-4e9c-a2c5-dbd9a92816f4
 ROBOTS: NOINDEX, NOFOLLOW
-description: Läs om hur du väljer vilka mobilappar som personer kan använda för att komma åt e-post, kalender och kontakter.
+description: Läs om hur du väljer vilka mobilappar som användare kan använda för att komma åt e-post, kalender och kontakter.
 ms.openlocfilehash: f114aa43b4bbade09d53f415aae4c5c033c20694
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -28,38 +28,38 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/27/2020
 ms.locfileid: "44400058"
 ---
-# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Hantera åtkomst till e-postappar i administrationscentret för Microsoft 365
+# <a name="manage-email-app-access-in-the-microsoft-365-admin-center"></a>Hantera åtkomst till e-postprogrammet Microsoft 365 administrationscenter
 
-Använd inställningarna för mobil e-poståtkomst för att välja vilka mobilappar personer i organisationen kan använda för att komma åt sitt arbets- eller skolkonto för att komma åt e-post, kalender och kontakter.
+Använd inställningarna för åtkomst till mobil e-post och välj vilka mobilappar som personer i organisationen kan använda för att komma åt sitt arbets- eller skolkonto för att komma åt e-post, kalender och kontakter.
   
 > [!IMPORTANT]
-> Din organisation har åtkomst till den här inställningen om du inte använder Microsoft Intune eller om du har konfigurerat inställningar för hantering av mobila enheter i administrationscentret för Exchange. 
+> Organisationen har åtkomst till den här inställningen såvida du inte använder Microsoft Intune eller om du har konfigurerat inställningar för hantering av mobila enheter i Exchange administrationscenter. 
   
-## <a name="manage-email-app-options"></a>Hantera alternativ för e-postappar
+## <a name="manage-email-app-options"></a>Hantera alternativ för e-postappen
 
 > [!IMPORTANT]
->  Om du inte använder den här funktionen kommer det inte att ske några ändringar i användarnas upplevelse. De kan använda alla mobila e-postappar för att komma åt sitt arbets- eller skolkonto för e-post, kalender och kontakter från sin mobila enhet. 
+>  Om du inte använder den här funktionen ändras inte användarupplevelsen. De kommer att kunna använda valfri mobilapp för e-post för att komma åt sitt arbets- eller skolkonto för e-post, kalender och kontakter från sina mobila enheter. 
     
 1. I administrationscentret går du till sidan **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Tjänster och tillägg</a>. 
 
-2. På sidan Alternativ för **åtkomst till e-post** i Mobile markerar du kryssrutan och väljer sedan hur användare i organisationen ska använda e-postappar på sina enheter:
+2. Markera kryssrutan **på sidan Åtkomstalternativ för mobil** e-post och välj sedan hur användare i organisationen använder e-postappar på sina enheter:
   
-Välj alternativet för att ange hur användare i organisationen ska komma åt sitt arbets- eller skolkonto från sina mobila enheter
+Välj alternativet för att ange hur användare i organisationen får åtkomst till sitt arbets- eller skolkonto från sina mobila enheter
   
-- **Endast Outlook** - användare i organisationen måste använda Outlook för Android eller Outlook för iOS-appen på sin mobila enhet. 
+- **Outlook endast** – användare i organisationen måste använda appen Outlook för Android eller Outlook för iOS på sina mobila enheter. 
     
-- **Alla e-postappar** – alla användare i organisationen uppmanas att använda Outlook, men de kan välja att använda vilken e-postapp som helst. 
+- **Alla e-postappar** – alla användare i organisationen uppmanas att använda Outlook, men de kan välja att använda valfri e-postapp. 
     
-- **Alla e-postappar** – nya användare eller enheter i organisationen uppmanas en gång att använda Outlook, men de kan välja att använda vilken e-postapp som helst. 
+- **Alla e-postappar** – nya användare eller enheter i organisationen uppmanas en gång att använda Outlook, men de kan välja att använda valfri e-postapp. 
     
-Mer information finns i [Alternativ för åtkomst till e-post från din mobila enhet](access-email-from-a-mobile-device.md).
+Mer information finns i Alternativ för [att komma åt e-post från din mobila enhet.](access-email-from-a-mobile-device.md)
   
 ## <a name="new-user-or-device-is-activated-in-your-organization"></a>Ny användare eller enhet aktiveras i organisationen
 
-Så snart en användare i organisationen lägger till sin e-post på jobbet eller skolan i en e-postapp från tredje part eller till en ny enhet får de ett e-postmeddelande från **Microsoft för din organisations räkning**. E-postmeddelandet meddelar dem om fördelarna med att använda Outlook-mobilappen och tillhandahåller en länk till hämtningsplatsen. Användarna kan sedan välja om de vill fortsätta använda tredjepartsappen eller välja att använda Mobilappen i Outlook. Under de 24 timmar efter att användaren först tar emot det här e-postmeddelandet kommer deras enhet att vara i karantän och e-post-, kalender- och kontaktdata uppdateras inte. Om de väljer att använda Outlook-mobilappen förblir tredjepartsappen i karantän och data synkroniseras bara med Outlook-mobilappen. Om de bestämmer sig för att fortsätta använda tredjepartsappen börjar data synkroniseras direkt. Om ingen åtgärd vidtas under de första 24 timmarna tas e-postmeddelandet bort från inkorgen och data börjar synkroniseras från servern automatiskt.
+När en användare i organisationen lägger till e-post för arbete eller skola i en e-postapp från tredje part eller på en ny enhet får de ett e-postmeddelande från **Microsoft med din organisations räkning.** I e-postmeddelandet får de information om fördelarna med att Outlook-mobilappen och en länk till nedladdningsplatsen. Användarna kan sedan välja om de vill fortsätta använda tredjepartsappen eller välja att använda Outlook mobilappen. Under de 24 timmarna efter att användaren först får det här e-postmeddelandet kommer deras enhet att finnas i karantän, och e-post, kalender och kontaktdata uppdateras inte. Om de väljer att använda Outlook-mobilappen förblir tredjepartsprogrammet i karantän och data synkroniseras bara med Outlook-mobilappen. Om de bestämmer sig för att fortsätta använda programmet från tredje part synkroniseras data direkt. Om ingen åtgärd vidtas under de första 24 timmarna kommer e-postmeddelandet att tas bort från inkorgen och data börjar synkroniseras från servern automatiskt.
   
 ## <a name="previously-configured-users-in-your-organization"></a>Tidigare konfigurerade användare i organisationen
 
-Om du bestämmer dig för att rekommendera Outlook till alla i organisationen får användare som tidigare har anslutit sitt e-postkonto till ett e-postkonto från en tredje part via e-post via microsoft, utöver den upplevelse som beskrivs ovan för nya användare, ett e-postmeddelande från **Microsoft för din organisations räkning** inom 48 timmar efter att den här inställningen har aktiverats. E-postmeddelandet meddelar dem om fördelarna med att använda Outlook-mobilappen och tillhandahåller en länk till hämtningsplatsen. Användarna kan sedan välja om de vill fortsätta använda tredjepartsappen eller välja att använda Mobilappen i Outlook. Under de 24 timmar efter att användaren först tar emot det här e-postmeddelandet kommer deras enhet att vara i karantän och e-post-, kalender- och kontaktdata uppdateras inte. Om de väljer att använda Outlook-mobilappen förblir tredjepartsappen i karantän och data synkroniseras bara med Outlook-mobilappen. Om de bestämmer sig för att fortsätta använda tredjepartsappen börjar data synkroniseras direkt. Om ingen åtgärd vidtas under de första 24 timmarna tas e-postmeddelandet bort från inkorgen och data börjar synkroniseras från servern automatiskt. 
+Om du bestämmer dig för att rekommendera Outlook till alla i organisationen får, förutom den upplevelse som beskrivs ovan för nya användare, även användare som tidigare har anslutit sitt arbets- eller skolkonto för e-post till en app från tredje part ett e-postmeddelande från **Microsoft** på uppdrag av din organisation inom 48 timmar efter att den här inställningen aktiverats. I e-postmeddelandet får de information om fördelarna med att Outlook-mobilappen och en länk till nedladdningsplatsen. Användarna kan sedan välja om de vill fortsätta använda tredjepartsappen eller välja att använda Outlook mobilappen. Under de 24 timmarna efter att användaren först får det här e-postmeddelandet kommer deras enhet att finnas i karantän, och e-post, kalender och kontaktdata uppdateras inte. Om de väljer att använda Outlook-mobilappen förblir tredjepartsprogrammet i karantän och data synkroniseras bara med Outlook-mobilappen. Om de bestämmer sig för att fortsätta använda programmet från tredje part synkroniseras data direkt. Om ingen åtgärd vidtas under de första 24 timmarna kommer e-postmeddelandet att tas bort från inkorgen och data börjar synkroniseras från servern automatiskt. 
   
 

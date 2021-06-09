@@ -35,7 +35,7 @@ När villkoren i en DLP-princip (Data Loss Prevention) matchas av de åtgärder 
 
 ## <a name="workloads"></a>Arbetsbelastningar
 
-Instrumentpanelen [för DLP-aviseringshantering](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)i [Microsoft 365](https://compliance.microsoft.com/)efterlevnadscenter visar aviseringar för DLP-principer för dessa arbetsbelastningar:
+Instrumentpanelen [för DLP-aviseringshantering](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) [i Microsoft 365,](https://compliance.microsoft.com/)visar aviseringar för DLP-principer för dessa arbetsbelastningar:
 
 - Exchange
 - SharePoint
@@ -44,7 +44,7 @@ Instrumentpanelen [för DLP-aviseringshantering](https://compliance.microsoft.co
 - Windows 10-enheter 
 
 > [!TIP]
-> Kunder som använder [Slutpunkt DLP som](endpoint-dlp-learn-about.md) är kvalificerade för Teams DLP ser deras DLP-principaviseringar för slutpunkten och aviseringar för Teams DLP-princip på instrumentpanelen för hantering av DLP-aviseringar. [](dlp-microsoft-teams.md)
+> Kunder som använder Slutpunkt DLP som är kvalificerade för [Teams DLP](dlp-microsoft-teams.md) ser deras DLP-principaviseringar och Teams DLP-principaviseringar på instrumentpanelen för hantering av DLP-aviseringar. [](endpoint-dlp-learn-about.md)
 
 ## <a name="single-alert-and-aggregate-alert"></a>Enskild avisering och mängdavisering
 
@@ -75,18 +75,18 @@ Här är några av de händelser som associeras med en avisering. I användargr�
 |IP-adress | IP-adress för datorn där DLP-principmatchning inträffade | enhetshändelser|
 |sha1 |SHA-1-hash för filen | enhetshändelser|
 |sha256 | SHA-256-hash för filen | enhetshändelser|
-|MDATP-enhets-ID | slutpunktsenhet MDATP-ID|
+|MDATP enhets-ID | slutpunktsenhet MDATP ID|
 |filstorlek | storlek på filen| SharePoint, OneDrive och enhetshändelser|
-|filsökväg | den absoluta sökvägen till det objekt som ingår i DLP-principmatchning | Händelser i SharePoint, OneDrive och enheter|
-|e-postmottagare |Om ett e-postmeddelande var det känsliga objektet som matchade DLP-principen innehåller det här fältet mottagarna för e-postmeddelandet| Exchange-händelser|
-|e-postämne |e-postmeddelandets ämne som matchade DLP-principen |Exchange-händelser|
-|e-postbilagor | Namnen på de bifogade filerna i e-postmeddelandet som matchade DLP-principen| Exchange-händelser|
-|webbplatsägare |namnet på webbplatsägaren| SharePoint- och OneDrive-händelser|
-|webbplats-URL |full av URL:en för SharePoint- eller OneDrive-webbplatsen där DLP-principmatchning inträffade |SharePoint- och OneDrive-händelser|
-|fil skapad |tidpunkten då filen skapades som matchade DLP-principen |SharePoint- och OneDrive-händelser|
-|fil som senast ändrades | den senaste gången som filen som matchade DLP-principen ändrades | SharePoint- och OneDrive-händelser|
-|filstorlek | Storlek på filen som matchade DLP-principen |SharePoint- och OneDrive-händelser|
-|filägare |ägare av filen som matchade DLP-principen |SharePoint- och OneDrive-händelser|  
+|filsökväg | den absoluta sökvägen till det objekt som ingår i DLP-principmatchning | SharePoint, OneDrive och enheter|
+|e-postmottagare |Om ett e-postmeddelande var det känsliga objektet som matchade DLP-principen innehåller det här fältet mottagarna för e-postmeddelandet| Exchange händelser|
+|e-postämne |e-postmeddelandets ämne som matchade DLP-principen |Exchange händelser|
+|e-postbilagor | Namnen på de bifogade filerna i e-postmeddelandet som matchade DLP-principen| Exchange händelser|
+|webbplatsägare |namnet på webbplatsägaren| SharePoint och OneDrive händelser|
+|webbplats-URL |full av URL:en för den SharePoint eller OneDrive där DLP-principmatchning inträffade |SharePoint och OneDrive händelser|
+|fil skapad |tidpunkten då filen skapades som matchade DLP-principen |SharePoint och OneDrive händelser|
+|fil som senast ändrades | den senaste gången som filen som matchade DLP-principen ändrades | SharePoint och OneDrive händelser|
+|filstorlek | Storlek på filen som matchade DLP-principen |SharePoint och OneDrive händelser|
+|filägare |ägare av filen som matchade DLP-principen |SharePoint och OneDrive händelser|  
 
 ### <a name="policy-details"></a>Principinformation
 

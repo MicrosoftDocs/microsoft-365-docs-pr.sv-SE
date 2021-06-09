@@ -1,7 +1,7 @@
 ---
 title: Tilldela licenser
 description: Som en del av registrering måste du tilldela licenser som du redan har fått till dina användare
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -18,14 +18,14 @@ ms.locfileid: "50925803"
 ---
 # <a name="assign-licenses"></a>Tilldela licenser
 
-När du förbereder för att registrera dig i Microsoft Managed Desktop måste du se till att du har fått nödvändiga licenser. Om du inte redan har fått licenserna kan du läsa [Mer om licenser för](../get-ready/prerequisites.md#more-about-licenses) mer information om exakt vilka licenser du behöver.
+När du förbereder för att registrera Microsoft Hanterat skrivbord måste du se till att du har fått nödvändiga licenser. Om du inte redan har fått licenserna kan du läsa [Mer om licenser för](../get-ready/prerequisites.md#more-about-licenses) mer information om exakt vilka licenser du behöver.
 
 
-Om licenserna är i linje är det dags att tilldela dem till användarna. Vi rekommenderar att du tilldelar licenser genom att dra nytta av [den gruppbaserade licensieringsfunktionen i](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Azure Active Directory.
+Om licenserna är i linje är det dags att tilldela dem till användarna. Vi rekommenderar att du tilldelar licenser genom att dra nytta [av den gruppbaserade licensfunktionen i](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) Azure Active Directory.
 
 Om du har problem med licenstilldelningen kontaktar du [administratörssupport.](../working-with-managed-desktop/admin-support.md)
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Hanterat skrivbord
 
 1. [Lägga till och verifiera administratörskontakter i administratörsportalen](add-admin-contacts.md)
 2. [Justera villkorsstyrd åtkomst](conditional-access.md)

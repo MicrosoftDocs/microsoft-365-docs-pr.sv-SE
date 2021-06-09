@@ -124,7 +124,7 @@ Det första steget är att ladda ned den säkra lagringsnyckeln och verktyget, o
     > [!NOTE]
     > Som tidigare nämnts måste du ha rätt behörighet för att få åtkomst till sidan **Importera** i Microsoft 365 kompatibilitetscenter. 
   
-3. Klicka på **Lägg** till nytt ![ importjobb ](../media/ITPro-EAC-AddIcon.gif) **på fliken Importera.**
+3. På fliken **Importera** klickar du på ikonen ![Lägg till](../media/ITPro-EAC-AddIcon.gif) **Nytt importjobb**.
     
 4. Ange ett namn för PST-importjobbet i guiden för importjobbet och klicka sedan på **Nästa.** Använd gemener, siffror, bindestreck och understreck. Du kan inte använda versaler eller blanksteg i namnet.
     
@@ -178,7 +178,7 @@ Nästa steg är att använda verktyget WAImportExport.exe kopiera PST-filer till
     | `/t:` <br/> |Anger enhetsbeteckningen för hårddisken när den är ansluten till den lokala datorn.  <br/> | `/t:h` <br/> |
     | `/id:` <br/> |Anger namnet på kopieringssessionen. En session definieras som varje gång du kör WAImportExport.exe för att kopiera filer till hårddisken. PST-filerna kopieras till en mapp med sessionsnamnet som anges av den här parametern.  <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |Anger källkatalogen i organisationen som innehåller PST-filerna som ska kopieras under sessionen. Se till att omge värdet för den här parametern med dubbla citattecken (" ").  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |Anger målkatalogen i det Azure Storage i Microsoft-molnet dit PST-filer ska laddas upp. Du måste använda värdet  `ingestiondata/` . Se till att omge värdet för den här parametern med dubbla citattecken (" ").  <br/> Du kan också lägga till en extra sökväg till parameterns värde. Du kan till exempel använda filsökvägen för källkatalogen på hårddisken (konverteras till ett URL-format), som anges i  `/srcdir:` parametern. Ändras till  `\\FILESERVER01\PSTs` exempel till  `FILESERVER01/PSTs` . I det här fallet måste du fortfarande inkludera  `ingestiondata` i sökvägen. I det här exemplet skulle parametervärdet  `/dstdir:` alltså vara  `"ingestiondata/FILESERVER01/PSTs"` .  <br/> En orsak till att lägga till den extra sökvägen är om du har PSTs-filer med samma filnamn.  <br/> > [!NOTE]> Om du tar med den valfria sökvägen innehåller namnområdet för en PST-fil efter att den laddats upp till Azure Storage-området sökvägen och namnet på PST-filen. till exempel `FILESERVER01/PSTs/annb.pst` . Om du inte har ett sökväg är namnområdet bara PST-filnamnet. till exempel  `annb.pst` .           | `/dstdir:"ingestiondata/"` <br/> eller  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/dstdir:` <br/> |Anger målkatalogen i det Azure Storage i Microsoft-molnet dit PST-filer ska laddas upp. Du måste använda värdet  `ingestiondata/` . Se till att omge värdet för den här parametern med dubbla citattecken (" ").  <br/> Du kan också lägga till en extra sökväg till parameterns värde. Du kan till exempel använda filsökvägen för källkatalogen på hårddisken (konverteras till ett URL-format), som anges i  `/srcdir:` parametern. Ändras till  `\\FILESERVER01\PSTs` exempel till  `FILESERVER01/PSTs` . I det här fallet måste du fortfarande inkludera  `ingestiondata` i sökvägen. I det här exemplet skulle parametervärdet  `/dstdir:` alltså vara  `"ingestiondata/FILESERVER01/PSTs"` .  <br/> En orsak till att lägga till den extra sökvägen är om du har PSTs-filer med samma filnamn.  <br/> > [!NOTE]> Om du tar med den valfria sökvägen innehåller namnområdet för en PST-fil efter att den laddats upp till Azure Storage-området sökvägen och namnet på PST-filen. till exempel `FILESERVER01/PSTs/annb.pst` . Om du inte har ett sökväg är namnområdet bara PST-filnamnet. till exempel  `annb.pst` .           | `/dstdir:"ingestiondata/"` <br/> Eller  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/sk:` <br/> |Anger lagringskontonyckeln som du fick i steg 1. Se till att omge värdet för den här parametern med dubbla citattecken (" ").  <br/> | `"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ=="` <br/> |
     | `/blobtype:` <br/> |Anger vilken typ av blobbar i området Azure Storage ska importera PST-filerna till. För att importera PST-filer använder du värdet **BlockBlob.** Den här parametern är obligatorisk.   <br/> | `/blobtype:BlockBlob` <br/> |
     | `/encrypt` <br/> |Den här växeln BitLocker för hårddisken. Den här parametern krävs första gången du kör det WAImportExport.exe verktyget.  <br/> Krypteringsnyckeln BitLocker kopieras till journalfilen och loggfilen som skapas om du använder `/logfile:` parametern. Som tidigare förklarats sparas journalfilen i samma mapp där WAImportExport.exe finns.  <br/> | `/encrypt` <br/> |
@@ -254,7 +254,7 @@ Nästa steg är att skapa PST-importjobbet i importtjänsten i Office 365. Som t
 
 2. I det vänstra navigeringsfönstret i kompatibilitetscentret Microsoft 365 du på **Import av informationsstyrning.** \> 
 
-3. Klicka på **Lägg** till nytt ![ importjobb ](../media/ITPro-EAC-AddIcon.gif) **på fliken Importera.**
+3. På fliken **Importera** klickar du på ikonen ![Lägg till](../media/ITPro-EAC-AddIcon.gif) **Nytt importjobb**.
 
     > [!NOTE]
     > Som tidigare nämnts måste du ha rätt behörighet för att få åtkomst till sidan **Importera** i Microsoft 365 kompatibilitetscenter.
@@ -401,9 +401,9 @@ Så här installerar du Azure Storage Explorer och ansluter till ditt Azure Stor
 
 1. Gå till <https://compliance.microsoft.com> och logga in med autentiseringsuppgifterna för ett administratörskonto i organisationen.
 
-2. I det vänstra fönstret i Microsoft 365 kompatibilitetscenter klickar du på **> Informationsstyrning.**
+2. Klicka på **Informationsstyrning > Importera** i vänster fönsterruta i Microsoft 365 Efterlevnadscenter.
 
-3. Klicka på **Lägg** till nytt ![ importjobb ](../media/ITPro-EAC-AddIcon.gif) **på fliken Importera.**
+3. På fliken **Importera** klickar du på ikonen ![Lägg till](../media/ITPro-EAC-AddIcon.gif) **Nytt importjobb**.
 
 4. Ange ett namn för PST-importjobbet i guiden för importjobbet och klicka sedan på **Nästa.** Använd gemener, siffror, bindestreck och understreck. Du kan inte använda versaler eller blanksteg i namnet.
 

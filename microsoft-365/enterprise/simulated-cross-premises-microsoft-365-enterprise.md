@@ -26,7 +26,7 @@ ms.locfileid: "50926038"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Simulerat virtuellt nätverk på flera platser i en Microsoft 365-testmiljö
 
-*Den här testlabbguiden kan användas för både Microsoft 365 för företag- och Office 365 Enterprise-testmiljöer.*
+*Den här testlabbguiden kan användas för både Microsoft 365 för företag Office 365 Enterprise för testmiljöer.*
 
 I den här artikeln beskrivs hur du använder Microsoft Azure för att skapa en simulerad, hybridbaserad molnmiljö med två virtuella Azure-nätverk. Här är konfigurationsresultatet. 
   
@@ -59,12 +59,12 @@ Konfigurationen av testmiljön består av tre huvudfaser:
 > [!NOTE]
 > Konfigurationen kräver en betald Azure-prenumeration. 
 
-Du kan använda den resulterande miljön för att testa funktionerna i [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) för företag med ytterligare [testlabbguider](m365-enterprise-test-lab-guides.md) eller på egen hand.
+Du kan använda den resulterande miljön för att testa funktionerna i Microsoft 365 för företag [med](https://www.microsoft.com/microsoft-365/enterprise) ytterligare [testlabbguider](m365-enterprise-test-lab-guides.md) eller på egen hand.
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Gå till [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf) för företag Testlabbguide stack för en visuell karta till alla artiklar i Microsoft 365 för företag testlabb guide stack.
+> Gå till [Microsoft 365 för företags testlabbguide](../downloads/Microsoft365EnterpriseTLGStack.pdf) stack för en visuell karta till alla artiklar i Microsoft 365 för företag Test lab guide stack.
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fas 1: Konfigurera det virtuella TestLab-nätverket.
 
@@ -205,7 +205,7 @@ Det här är den aktuella konfigurationen.
   
 Din simulerade Azure-hybridmolnmiljö är nu redo att testas.
   
-Nu kan du experimentera med ytterligare funktioner i [Microsoft 365 för företag.](https://www.microsoft.com/microsoft-365/enterprise)
+Du är nu redo att experimentera med ytterligare funktioner i [Microsoft 365 för företag.](https://www.microsoft.com/microsoft-365/enterprise)
   
 ## <a name="next-steps"></a>Nästa steg
 

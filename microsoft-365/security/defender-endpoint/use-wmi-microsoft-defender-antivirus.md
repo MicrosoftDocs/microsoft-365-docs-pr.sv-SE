@@ -1,6 +1,6 @@
 ---
 title: Konfigurera Microsoft Defender Antivirus med WMI
-description: Lär dig hur du konfigurerar och hanterar Microsoft Defender Antivirus med hjälp av WMI-skript för att hämta, ändra och uppdatera inställningar i Microsoft Defender för Slutpunkt.
+description: Lär dig hur du konfigurerar och Microsoft Defender Antivirus med hjälp av WMI-skript för att hämta, ändra och uppdatera inställningar i Microsoft Defender för Slutpunkt.
 keywords: wmi, skript, instrument för Windows-hantering, konfiguration
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -33,15 +33,15 @@ ms.locfileid: "51764069"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-WMI (Windows Management Instrumentation) är ett skriptgränssnitt där du kan hämta, ändra och uppdatera inställningar.
+Windows WMI (Management Instrumentation) är ett skriptgränssnitt där du kan hämta, ändra och uppdatera inställningar.
 
 Läs mer om WMI på [Microsoft Developer Network System Administration-biblioteket.](/windows/win32/wmisdk/wmi-start-page)
 
 Microsoft Defender Antivirus har ett antal specifika WMI-klasser som kan användas för att utföra de flesta av funktionerna som Grupprincip och andra hanteringsverktyg. Många av klasserna kan jämföras med [Defender PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md).
 
-Referensbiblioteket [för MSDN Windows Defender WMIv2-providern](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) innehåller tillgängliga WMI-klasser för Microsoft Defender Antivirus och innehåller exempelskript.
+I [REFERENSbiblioteket för MSDN Windows Defender WMIv2-providern](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) visas tillgängliga WMI-klasser för Microsoft Defender Antivirus, och exempelskript.
 
-Ändringar som görs med WMI påverkar lokala inställningar i slutpunkten där ändringarna distribueras eller görs. Det innebär att distributioner av principen med Grupprincip, Microsoft Endpoint Configuration Manager eller Microsoft Intune kan skriva över ändringar som gjorts med WMI. 
+Ändringar som görs med WMI påverkar lokala inställningar i slutpunkten där ändringarna distribueras eller görs. Det innebär att distributioner av principen med grupprinciper, Microsoft Endpoint Configuration Manager och Microsoft Intune kan skriva över ändringar som gjorts med WMI. 
 
 Du kan [konfigurera vilka inställningar som kan åsidosättas lokalt med åsidosättningar av lokala policyer.](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Program krav för Microsoft Managed Desktop
+title: Microsoft Hanterat skrivbord för appar
 description: ''
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
@@ -16,29 +16,29 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49659720"
 ---
-# <a name="microsoft-managed-desktop-app-requirements"></a>Program krav för Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft Hanterat skrivbord för appar
 
 <!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
-Microsoft Managed Desktop kräver att vi hanterar enheter med en särskild metod för att garantera prestanda, tillförlitlighet och service möjligheter.
+Microsoft Hanterat skrivbord kräver att vi hanterar enheter med en viss metod för att garantera enheternas prestanda, tillförlitlighet och servicebarhet.
 
 
-|Hanterings område  |Microsoft Managed Desktop-teknik  |
+|Hanteringsområde  |Microsoft Hanterat skrivbord metod  |
 |---------|---------|
-|Enhets konfiguration eller princip hantering     |  Microsoft Intune       |
-|Program hantering     | Microsoft Intune-och företags Portal        |
-|Driv rutins distribution     |  Driv rutiner som ingår i enheten, Windows Update eller Intune       |
-|Enhets säkerhet     | Se [enhetens säkerhet](security.md#device-security)      |
-|Identitets- och åtkomsthantering     | Se [identitets-och åtkomst hantering](security.md#identity-and-access-management)        |
-|Nätverks säkerhet     | Se [nätverks säkerhet](security.md#network-security)        |
-|Informations säkerhet     |  Se [informations säkerhet](security.md#information-security)       |
-|Återställning av data     | OneDrive för företag        |
-|Grundläggande produktivitet     |  Microsoft 365 Apps för företag    |
-|Läsa     | Microsoft Edge        |
+|Enhetskonfiguration eller principhantering     |  Microsoft Intune       |
+|Programhantering     | Microsoft Intune och Företagsportal        |
+|Drivrutinsdistribution     |  Drivrutiner som ingår i enheten, Windows Update eller Intune       |
+|Enhetssäkerhet     | Se [Enhetssäkerhet](security.md#device-security)      |
+|Identitets- och åtkomsthantering     | Se [Identitets- och åtkomsthantering](security.md#identity-and-access-management)        |
+|Nätverkssäkerhet     | Se [Nätverkssäkerhet](security.md#network-security)        |
+|Informationssäkerhet     |  Se [Informationssäkerhet](security.md#information-security)       |
+|Dataåterställning     | OneDrive för företag        |
+|Kärnproduktivitet     |  Microsoft 365 Apps för företag    |
+|Webbläsare     | Microsoft Edge        |
 
 
 
 
-Microsoft Managed Desktop kan övervaka andra program som körs på hanterade enheter. Om det påverkar enhets hantering, enhetens säkerhet, prestanda eller pålitlighet negativt kan du behöva begära ett [undantag för tjänste abonnemanget](customizing.md).
+Microsoft Hanterat skrivbord övervaka annan programvara som körs på hanterade enheter. Om den påverkar enhetshantering, enhetssäkerhet, prestanda och tillförlitlighet negativt kan du behöva begära ett [undantag från tjänstplanen.](customizing.md)

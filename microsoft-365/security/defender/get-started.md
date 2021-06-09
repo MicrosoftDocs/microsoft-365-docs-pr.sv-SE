@@ -1,7 +1,7 @@
 ---
 title: Komma igång med Microsoft 365 Defender
 ms.reviewer: ''
-description: Läs om vad du behöver göra för att komma igång med Microsoft 365 Defender
+description: Lär dig vad du behöver göra för att komma igång med Microsoft 365 Defender
 keywords: get started, microsoft 365 defender, turn on, onboard, deploy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,9 +35,9 @@ ms.locfileid: "51759828"
 
 Microsoft 365 Defender är en enhetlig upplevelse där du kan övervaka och hantera säkerhet i hela företaget. Med integrerade aviseringar för identiteter, slutpunkter, data, appar, e-post och samarbetsverktyg – undersöker och svarar på hot sker det nu på en central plats. 
 
-I det här avsnittet får du de enkla steg du behöver vidta för att komma igång med Microsoft 365 Defender, oavsett om du är nybörjare i Microsoft-paketet med säkerhetsprodukter eller känner till de enskilda arbetsflödena.
+I det här avsnittet får du de enkla steg du behöver vidta för att komma igång med Microsoft 365 Defender, oavsett om du är nybörjare i Microsofts säkerhetsprodukter eller känner till de enskilda arbetsflödena.
 
-![Bild på hur du kommer igång med stegen i Microsoft 365 Defender](../../media/mtp/get-started-m365d.png)
+![Bild på hur du kommer igång Microsoft 365 Defender-steg](../../media/mtp/get-started-m365d.png)
 
 I allmänhet måste du vidta följande steg för att komma igång:
 
@@ -51,7 +51,7 @@ I allmänhet måste du vidta följande steg för att komma igång:
 
 
 ## <a name="key-capabilities"></a>Viktiga funktioner
-Om du slår på Microsoft 365 Defender och distribuerar tjänster får du tillgång till följande nyckelfunktioner:
+Om du Microsoft 365 defender och distribuerar tjänster får du tillgång till följande nyckelfunktioner:
 
 
 | Funktion | Beskrivning |

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-moln-Only-identitet
+title: Microsoft 365 identitet endast i molnet
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,7 +25,7 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Här beskrivs hur du skapar användare och grupper när Microsoft 365-prenumerationen använder moln-Only-identitet.
+description: Här beskrivs hur du skapar användare och grupper när Microsoft 365-prenumerationen använder identiteter som endast är molnbaserade.
 ms.openlocfilehash: 111c42e644913a8f7f6e41d4e8bf65685263f757
 ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
@@ -33,34 +33,34 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 10/01/2020
 ms.locfileid: "48327933"
 ---
-# <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365-moln-Only-identitet
+# <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 identitet endast i molnet
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Med endast Cloud-identitet lagras alla användare, grupper och kontakter i Azure Active Directory (Azure AD)-klient organisationen för Microsoft 365-prenumerationen. Här är de grundläggande komponenterna i moln-Only-identitet.
+Med identiteter som endast är molnbaserade lagras alla dina användare, grupper och kontakter i Azure Active Directory -klientorganisationen (Azure AD) i Microsoft 365-prenumerationen. Här är de grundläggande komponenterna i identiteter som bara är molnbaserade.
  
-![Bas komponenterna i moln-Only-identitet](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![Grundläggande komponenter i identiteter som endast är molnbaserade](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-Användare och användar konton i organisationer kan kategoriseras på flera olika sätt. Vissa är anställda och har permanent status. Vissa är leverantörer, entreprenörer eller partners med tillfällig status. Vissa är externa användare som inte har några användar konton men måste ändå beviljas åtkomst till specifika tjänster och resurser för att stödja samverkan och samarbete. Till exempel:
+Användare och deras användarkonton i organisationer kan kategoriseras på olika sätt. Vissa är till exempel anställda och har permanent status. Vissa är leverantörer, leverantörer eller partners som har en tillfällig status. Vissa är externa användare som inte har några användarkonton men som fortfarande måste beviljas åtkomst till specifika tjänster och resurser för att stödja interaktion och samarbete. Till exempel:
 
-- Klient konton representerar användare inom din organisation som du licensierar för moln tjänster
+- Klientkonton representerar användare i organisationen som du licensierar för molntjänster
 
-- Konton för företag mot företag (B2B) representerar användare utanför organisationen som du bjuder in att delta i samarbete
+- B2B-konton (företag till företag) representerar användare utanför organisationen som du bjuder in att delta i samarbete
 
-Ta lager med olika typer av användare i organisationen. Vad är grupperingarna? Du kan till exempel gruppera användarna efter en hög nivå funktion eller ett syfte för din organisation.
+Gå in på olika typer av användare i organisationen. Vad är grupperingarna? Du kan till exempel gruppera användare efter funktion eller syfte på hög nivå i organisationen.
 
-Dessutom kan vissa moln tjänster delas med användare utanför organisationen utan några användar konton. Du behöver också identifiera dessa användar grupper.
+Dessutom kan vissa molntjänster delas med användare utanför organisationen utan några användarkonton. Du måste även identifiera de här grupperna av användare.
 
-Du kan använda grupper i Azure AD för att förenkla hanteringen av moln miljön. Med Azure AD-grupper kan du till exempel:
+Du kan använda grupper i Azure AD för flera ändamål som förenklar hanteringen av din molnmiljö. Med Azure AD-grupper kan du till exempel:
 
-- Använd gruppbaserad licensiering för att tilldela licenser för Microsoft 365 till dina användar konton automatiskt när de läggs till som medlemmar.
-- Lägga till användar konton i specifika grupper dynamiskt baserat på attribut för användar konton, till exempel avdelnings namn.
-- Tillhandahålla automatiskt användare för program vara som tjänst program (SaaS) och för att skydda åtkomst till dessa program med multifaktorautentisering (MFA) och andra principer för villkorsstyrd åtkomst.
-- Tillhandahåll behörigheter och åtkomst nivåer för SharePoint Online-gruppwebbplatser.
+- Använd gruppbaserad licensiering för att automatiskt tilldela licenser Microsoft 365 till dina användarkonton så snart de läggs till som medlemmar.
+- Lägg till användarkonton i specifika grupper dynamiskt baserat på användarkontoattribut, till exempel avdelningsnamn.
+- Tillhandahålla automatiskt användare för SaaS-program (programvara som en tjänst) och för att skydda åtkomsten till dessa program med multifaktorautentisering (MFA) och andra villkorsstyrda åtkomstprinciper.
+- Etablera behörigheter och åtkomstnivåer för SharePoint Online-gruppwebbplatser.
 
-## <a name="next-steps-for-cloud-only-identity"></a>Nästa steg för moln identitet
+## <a name="next-steps-for-cloud-only-identity"></a>Nästa steg för identitet med endast molnet
 
-- [Hantera användar konton](manage-microsoft-365-accounts.md)
+- [Hantera användarkonton](manage-microsoft-365-accounts.md)
 - [Tilldela licenser till användarkonton](assign-licenses-to-user-accounts.md)
-- [Hantera grupper och grupp medlemskap](manage-microsoft-365-groups.md)
-- [Hantera lösen ord för användar konton](manage-microsoft-365-passwords.md)
+- [Hantera grupper och gruppmedlemskap](manage-microsoft-365-groups.md)
+- [Hantera lösenord för användarkonton](manage-microsoft-365-passwords.md)
