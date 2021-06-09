@@ -1,5 +1,5 @@
 ---
-title: Plats hållare
+title: Platshållarartikel
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -20,6 +20,6 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46694574"
 ---
-# <a name="placeholder-article"></a><span data-ttu-id="4a616-103">Plats hållare</span><span class="sxs-lookup"><span data-stu-id="4a616-103">Placeholder article</span></span>
+# <a name="placeholder-article"></a><span data-ttu-id="21f93-103">Platshållarartikel</span><span class="sxs-lookup"><span data-stu-id="21f93-103">Placeholder article</span></span>
 
-<span data-ttu-id="4a616-104">Den här artikeln är en plats hållare för tillfället.</span><span class="sxs-lookup"><span data-stu-id="4a616-104">This article is a placeholder for now.</span></span>
+<span data-ttu-id="21f93-104">Den här artikeln är en platshållare för tillfället.</span><span class="sxs-lookup"><span data-stu-id="21f93-104">This article is a placeholder for now.</span></span>
