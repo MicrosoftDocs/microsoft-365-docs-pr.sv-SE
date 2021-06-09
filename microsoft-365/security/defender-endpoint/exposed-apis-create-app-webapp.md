@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4742a32fd899f41d4e7772c52415891cdd8895bf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2d78b7ea31c45220735a8579d728f9c0f7bda181
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769527"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842116"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Skapa en app för åtkomst till Microsoft Defender för slutpunkt utan en användare
 
@@ -39,7 +39,7 @@ ms.locfileid: "52769527"
 
 På den här sidan beskrivs hur du skapar ett program för att få programtisk åtkomst till Defender för Endpoint utan en användare. Om du behöver programmeringsåtkomst till Defender för Endpoint för en användares räkning kan du gå till [Få åtkomst med användarkontext](exposed-apis-create-app-nativeapp.md). Om du inte är säker på vilken åtkomst du behöver kan du [gå till Komma igång.](apis-intro.md)
 
-Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De HÄR API:erna hjälper dig att automatisera arbetsflöden och nyfikna baserat på Defender för Slutpunkt-funktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 auktoriseringskod för Flow.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De HÄR API:erna hjälper dig att automatisera arbetsflöden och nyfikna baserat på Defender för Slutpunkt-funktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 auktoriseringskod för Flow.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 I allmänhet måste du vidta följande steg för att använda API:er:
 - Skapa ett Azure Active Directory (Azure AD).
@@ -116,7 +116,7 @@ I den här artikeln förklaras hur du skapar ett Azure AD-program, hämtar en å
 
 ## <a name="get-an-access-token"></a>Hämta en åtkomsttoken
 
-Mer information om Azure AD-token finns i [självstudiekursen om Azure AD.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Mer information om Azure AD-token finns i [självstudiekursen om Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="use-powershell"></a>Använda PowerShell
 

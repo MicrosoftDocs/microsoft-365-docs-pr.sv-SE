@@ -1,6 +1,6 @@
 ---
-title: Introducera enheter som inte är Windows-enheter i Microsoft Defender för slutpunktstjänsten
-description: Konfigurera enheter som inte är Windows-enheter så att de kan skicka sensordata till Microsoft Defender för slutpunktstjänsten.
+title: Introducera icke-Windows-enheter till Microsoft Defender för slutpunktstjänsten
+description: Konfigurera enheter som Windows enheter så att de kan skicka sensordata till Microsoft Defender för slutpunktstjänsten.
 keywords: onboard non-Windows-enheter, macos, linux, enhetshantering, konfigurera Microsoft Defender för slutpunktsenheter
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1c10576b72793ab3833f2e9027e3814a449334ee
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 265a7e9093638caa2111c7d1d82e51c8c2437d12
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933931"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845468"
 ---
-# <a name="onboard-non-windows-devices"></a>Registrera icke-Windows-enheter
+# <a name="onboard-non-windows-devices"></a>Introducera icke-Windows-enheter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,34 +38,34 @@ ms.locfileid: "51933931"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-Defender för Endpoint ger en centraliserad säkerhetsoperationer för Windows och för icke-Windows-plattformar. Du kan se aviseringar från olika operativsystem som stöds (OS) i Microsoft Defender Säkerhetscenter och bättre skydda organisationens nätverk. 
+Defender för Endpoint tillhandahåller en centraliserad säkerhetsoperationer för både Windows och icke-Windows plattformar. Du kan se aviseringar från olika operativsystem som stöds (OS) i Microsoft Defender Säkerhetscenter och bättre skydda organisationens nätverk. 
 
 Du måste känna till exakt vilka Linux-distributioner och macOS-versioner som är kompatibla med Defender för Endpoint för att integreringen ska fungera. Mer information finns i:
 - [Systemkrav för Microsoft Defender för Slutpunkt på Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
 - [Microsoft Defender för Slutpunkt på systemkrav för macOS](microsoft-defender-endpoint-mac.md#system-requirements).
 
-## <a name="onboarding-non-windows-devices"></a>Onboarding icke-Windows-enheter
-Du måste vidta följande steg för att registrera enheter som inte är Windows:
+## <a name="onboarding-non-windows-devices"></a>Onboarding non-Windows-enheter
+Du måste vidta följande steg för att registrera icke-Windows enheter:
 1. Välj önskad onboardingmetod:
 
-   - För macOS-enheter kan du välja att registrera dig via Microsoft Defender för Endpoint eller via en tredjepartslösning. Mer information finns i [Microsoft Defender för slutpunkt på Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - För macOS-enheter kan du välja att registrera dig via Microsoft Defender för Endpoint eller via en tredjepartslösning. Mer information finns i [Microsoft Defender för slutpunkt på Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
-   - För andra enheter som inte är **Windows-enheter väljer du Registrera icke-Windows-enheter via tredjepartsintegrering.**   
+   - För andra enheter som Windows enheter väljer **du Onboard icke-Windows-enheter via tredjepartsintegrering.**   
     1. Välj Partner med **interoperabilitet i**  >  **navigeringsfönstret.** Kontrollera att tredjepartslösningen visas.
-    2. På fliken **Partnerprogram** väljer du den partner som stöder dina enheter som inte är Windows.
+    2. På fliken **Partnerprogram** väljer du den partner som stöder dina icke-Windows enheter.
     3. Välj **Öppna partnersida** för att öppna partnerns sida. Följ instruktionerna på sidan.
     4. När du har skapat ett konto eller prenumererat på partnerlösningen bör du komma till ett steg där en global administratör för klientorganisationen i organisationen uppmanas att acceptera en begäran om behörighet från partnerprogrammet. Läs begäran om behörighet noga så att den stämmer överens med den tjänst du kräver. 
 
         
 2. Kör ett identifieringstest genom att följa anvisningarna för tredjepartslösningen.
 
-## <a name="offboard-non-windows-devices"></a>Offboard-enheter som inte är Windows-enheter
+## <a name="offboard-non-windows-devices"></a>Offboard-enheter som Windows enheter
 
 1. Följ dokumentationen från tredje part för att koppla bort tredjepartslösningen från Microsoft Defender för Endpoint.
 
 2. Ta bort behörigheter för tredjepartslösningen i Azure AD-klientorganisationen.
    1. Logga in på [Azure-portalen](https://portal.azure.com).
-   2. Välj **Azure Active Directory > Enterprise Applications.**
+   2. Välj **Azure Active Directory > Företagsprogram**.
    3. Välj det program du vill ta bort.
    4. Välj knappen **Ta** bort.
 

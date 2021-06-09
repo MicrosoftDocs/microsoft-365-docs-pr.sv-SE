@@ -11,19 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Lär dig att konfigurera och använda en anslutning i Efterlevnadscenter för Microsoft 365 för att importera och arkivera data från Cisco Jabber på Oracle till Microsoft 365.
-ms.openlocfilehash: c3a2d64605eb3cda235c73964507a82c940187fe
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+description: Lär dig att konfigurera och använda en koppling i kompatibilitetscentret för Microsoft 365 för att importera och arkivera data från Cisco Jabber på Oracle till Microsoft 365.
+ms.openlocfilehash: d8e1ba27c4277916614deaa042214ae592bceff2
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51767131"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842764"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data-preview"></a>Konfigurera en koppling för att arkivera Cisco Jabber på Oracle-data (förhandsversion)
 
-Använd en Veritas-anslutning i Microsoft 365 efterlevnadscenter för att importera och arkivera data från Cisco Jabber på Oracle-plattformen till användarpostlådor i din Microsoft 365-organisation. Veritas tillhandahåller en [Cisco Jabber](https://www.veritas.com/insights/merge1/jabber) på Oracle-anslutning som är konfigurerad för att samla in objekt från datakällan från tredje part (regelbundet) och importera dessa objekt till Microsoft 365. Kopplingen konverterar innehåll som filåtgärder, kommentarer och delat innehåll från Cisco Jabber på Oracle till ett e-postmeddelandeformat och importerar sedan de objekten till användarens postlåda i Microsoft 365.
+Använd en Veritas-koppling i efterlevnadscentret för Microsoft 365 för att importera och arkivera data från Cisco Jabber på Oracle-plattformen till användarpostlådor i Microsoft 365 organisation. Veritas tillhandahåller en [Cisco Jabber](https://www.veritas.com/insights/merge1/jabber) på Oracle-anslutning som är konfigurerad för att samla in objekt från datakällan från tredje part (regelbundet) och importera dessa objekt till Microsoft 365. Kopplingen konverterar innehåll som filåtgärder, kommentarer och delat innehåll från Cisco Jabber på Oracle till ett e-postmeddelandeformat och importerar sedan de objekten till användarens postlåda i Microsoft 365.
 
-När Cisco Jabber på Oracle-data lagras i användarpostlådor kan du använda Microsoft 365-efterlevnadsfunktioner som Bevarande av juridiska skäl, eDiscovery, bevarandeprinciper och bevarandeetiketter. Genom att använda en Cisco Jabber på Oracle-anslutning kan du importera och arkivera data i Microsoft 365 för att följa myndighets- och regelpolicyer.
+När Cisco Jabber på Oracle-data lagras i användarpostlådor kan du använda efterlevnadsfunktioner i Microsoft 365, till exempel Bevarande av juridiska skäl, eDiscovery, bevarandeprinciper och bevarandeetiketter. Med en Cisco Jabber på Oracle-anslutning kan du importera och arkivera data i Microsoft 365 för att hjälpa din organisation att följa myndighets- och regelpolicyer.
 
 ## <a name="overview-of-archiving-cisco-jabber-on-oracle-data"></a>Översikt över arkivering av Cisco Jabber på Oracle-data
 
@@ -35,7 +35,7 @@ Följande översikt förklarar processen med att använda en koppling för att a
 
 2. En gång per dygn kopieras Cisco Jabber på Oracle-objekt till Webbplatsen Veritas Merge1. Kopplingen konverterar även Cisco Jabber på Oracle-objekt till ett e-postmeddelandeformat.
 
-3. Cisco Jabber på Oracle-anslutning som du skapar i Microsoft 365 efterlevnadscenter, ansluter till Veritas Merge1-webbplatsen varje dag och överför Jabber-innehållet till en säker Azure Storage-plats i Microsoft-molnet.
+3. Cisco Jabber på Oracle-anslutning som du skapar i efterlevnadscentret för Microsoft 365, ansluter till Veritas Merge1-webbplatsen varje dag och överför Jabber-innehållet till en säker Azure Storage plats i Microsoft-molnet.
 
 4. Kopplingen importerar de konverterade objekten till postlådorna  för specifika användare med värdet för egenskapen E-post för den automatiska användarmappningen enligt beskrivningen [i steg 3.](#step-3-map-users-and-complete-the-connector-setup) En undermapp i mappen Inkorgen med namnet **Cisco Jabber** på Oracle skapas i användarpostlådorna och objekt importeras till den mappen. Kopplingen gör detta med hjälp av värdet för egenskapen *E-post.* Alla Jabber-objekt innehåller den här egenskapen, som fylls i med e-postadresserna för alla deltagare i objektet.
 
@@ -43,11 +43,11 @@ Följande översikt förklarar processen med att använda en koppling för att a
 
 - Skapa ett Merge1-konto för Microsoft-kopplingar. Om du vill göra detta kontaktar [du Veritas kundsupport.](https://www.veritas.com/content/support/en_US) Du måste logga in på det här kontot när du skapar kopplingen i steg 1.
 
-- Användaren som skapar Cisco Jabber på Oracle-kopplingen i steg 1 (och slutför den i steg 3) måste tilldelas rollen Importera och exportera postlåda i Exchange Online. Den här rollen krävs för att lägga till kopplingar på sidan Datakopplingar i **efterlevnadscentret** för Microsoft 365. Som standard är den här rollen inte tilldelad någon rollgrupp i Exchange Online. Du kan lägga till rollen Importera och exportera postlåda i rollgruppen Organisationshantering i Exchange Online. Du kan också skapa en rollgrupp, tilldela rollen Importera och exportera postlåda och sedan lägga till lämpliga användare som medlemmar. Mer information finns i avsnitten [Skapa rollgrupper](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) [och Ändra rollgrupper](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) i artikeln "Hantera rollgrupper i Exchange Online".
+- Användaren som skapar Cisco Jabber på Oracle-kopplingen i steg 1 (och slutför den i steg 3) måste tilldelas rollen Importera och exportera postlåda i Exchange Online. Den här rollen krävs för att lägga till kopplingar **på sidan Datakopplingar** i Microsoft 365 kompatibilitetscenter. Som standard är den här rollen inte tilldelad någon rollgrupp i Exchange Online. Du kan lägga till rollen Importera och exportera postlåda i rollgruppen Organisationshantering i Exchange Online. Du kan också skapa en rollgrupp, tilldela rollen Importera och exportera postlåda och sedan lägga till lämpliga användare som medlemmar. Mer information finns i avsnitten [Skapa rollgrupper](/Exchange/permissions-exo/role-groups#create-role-groups) och [Ändra rollgrupper](/Exchange/permissions-exo/role-groups#modify-role-groups) i artikeln "Hantera rollgrupper i Exchange Online".
 
 ## <a name="step-1-set-up-the-cisco-jabber-on-oracle-connector"></a>Steg 1: Konfigurera Cisco Jabber på Oracle-koppling
 
-Det första steget är att få åtkomst till sidan Datakopplingar i **Efterlevnadscenter** för Microsoft 365 och skapa en koppling för Jabber-data.
+Det första steget är att få åtkomst till sidan **Datakopplingar** i Microsoft 365 och skapa en koppling för Jabber-data.
 
 1. Gå till <https://compliance.microsoft.com> och klicka sedan på **Datakopplingar**  >  **Cisco Jabber på Oracle**.
 
@@ -63,19 +63,19 @@ Det första steget är att få åtkomst till sidan Datakopplingar i **Efterlevna
 
 Det andra steget är att konfigurera Cisco Jabber på Oracle-kopplingen på Veritas Merge1-webbplatsen. Mer information om hur du konfigurerar Cisco Jabber på Oracle-anslutning finns i [Användarhandbok för Merge1 Tredjepartskopplingar](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20Oracle%20User%20Guide.pdf).
 
-När du klickar **& på** Slutför  visas sidan Användarmappning i kopplingsguiden i efterlevnadscentret för Microsoft 365.
+När du har **klickat &**  på Spara eller & visas sidan Användarmappning i kopplingsguiden i Microsoft 365 kompatibilitetscenter.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Steg 3: Mappa användare och slutför kopplingskonfigurationen
 
-Om du vill mappa användare och slutföra anslutningskonfigurationen i efterlevnadscentret för Microsoft 365 gör du så här:
+Om du vill mappa användare och slutföra anslutningskonfigurationen i Microsoft 365 efterlevnadscenter gör du så här:
 
-1. Aktivera automatisk **användarmappning på sidan Cisco Jabber** på Oracle-användare till Microsoft 365-användare. Cisco Jabber på Oracle-objekt innehåller en egenskap som kallas *Email*, som innehåller e-postadresser för användare i organisationen. Om kopplingen kan associera den här adressen med en Microsoft 365-användare importeras objekten till den användarens postlåda.
+1. Aktivera automatisk **användarmappning på sidan Cisco Jabber** på Oracle Microsoft 365 till användare. Cisco Jabber på Oracle-objekt innehåller en egenskap som kallas *Email*, som innehåller e-postadresser för användare i organisationen. Om kopplingen kan associera den här adressen Microsoft 365 en användare importeras objekten till den användarens postlåda.
 
 2. Klicka **på** Nästa, granska dina inställningar och gå sedan till sidan **Datakopplingar** för att se förloppet för importen för den nya anslutningen.
 
 ## <a name="step-4-monitor-the-cisco-jabber-on-oracle-connector"></a>Steg 4: Övervaka Cisco Jabber på Oracle-koppling
 
-När du har skapat Cisco Jabber på Oracle-anslutning kan du visa anslutningsstatusen i kompatibilitetscentret för Microsoft 365.
+När du har skapat Cisco Jabber på Oracle-anslutning kan du visa anslutningsstatusen i Microsoft 365 kompatibilitetscenter.
 
 1. Gå till <https://compliance.microsoft.com/> och klicka på **Datakopplingar** i det vänstra navigeringsfältet.
 

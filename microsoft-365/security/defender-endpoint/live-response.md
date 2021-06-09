@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d5e48f1e4f6bc2cfaa836d90e24f2ce8ba3f2114
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246471"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845336"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Undersök enheter på enheter med live-svar
 
@@ -55,11 +55,11 @@ Innan du kan starta en session på en enhet kontrollerar du att du uppfyller fö
 Enheter måste köra någon av följande versioner av Windows
 
   - **Windows 10**
-    - [Version 1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) eller senare  
-    - [Version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) med [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
-    - [Version 1809 (RS 5)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) [med KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-    - [Version 1803 (RS 4)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) med [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
-    - [Version 1709 (RS 3)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) med [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
+    - [Version 1909](/windows/whats-new/whats-new-windows-10-version-1909) eller senare  
+    - [Version 1903](/windows/whats-new/whats-new-windows-10-version-1903) med [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)
+    - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) [med KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
+    - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) med [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
+    - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) med [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
   - **Windows Server 2019 – endast tillämpligt för offentlig förhandsversion**
     - Version 1903 eller (med [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) senare 
@@ -172,7 +172,7 @@ Följande kommandon är tillgängliga för användarroller som ges möjlighet at
 
 ## <a name="use-live-response-commands"></a>Använda kommandon för livesvar
 
-De kommandon som du kan använda i konsolen följer liknande principer som Windows [Kommandon](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
+De kommandon som du kan använda i konsolen följer liknande principer som Windows [Kommandon](/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 Med avancerade kommandon får du en robustare uppsättning åtgärder som gör att du kan vidta mer kraftfulla åtgärder, till exempel ladda ned och ladda upp en fil, köra skript på enheten och vidta åtgärder för en enhet.
 

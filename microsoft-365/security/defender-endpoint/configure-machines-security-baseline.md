@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fbdc0d02d4c5ba5cfda9773e62082217ba4f8c4e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a5f3d2de452a8a1ab201f558b93d45dfa6ded3e6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933607"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841552"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Öka efterlevnad för Microsoft Defender för slutpunktens säkerhetsbaslinje
 
@@ -33,28 +33,28 @@ ms.locfileid: "51933607"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Säkerhetsbaslinjer säkerställer att säkerhetsfunktionerna konfigureras enligt vägledning från både säkerhetsexperter och experta Windows-systemadministratörer. När den har distribuerats ger Defender för Slutpunktens säkerhetsbaslinje baslinje Defender för slutpunktssäkerhetskontroller för att ge optimalt skydd.
+Säkerhetsbaslinjer säkerställer att säkerhetsfunktionerna konfigureras enligt vägledning från både säkerhetsexperter och experter Windows säkerhetssystemadministratörer. När den har distribuerats ger Defender för Slutpunktens säkerhetsbaslinje baslinje Defender för slutpunktssäkerhetskontroller för att ge optimalt skydd.
 
-Läs följande vanliga frågor och svar för att förstå säkerhetsbaslinjer och hur de tilldelas på Intune [med hjälp av konfigurationsprofiler.](https://docs.microsoft.com/intune/security-baselines#q--a)
+Läs följande vanliga frågor och svar för att förstå säkerhetsbaslinjer och hur de tilldelas på Intune [med hjälp av konfigurationsprofiler.](/intune/security-baselines#q--a)
 
 Innan du kan distribuera och spåra efterlevnad för säkerhetsbaslinjer:
 - [Registrera dina enheter till Intune-hantering](configure-machines.md#enroll-devices-to-intune-management)
 - [Kontrollera att du har de behörigheter som krävs](configure-machines.md#obtain-required-permissions)
 
-## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Jämför Säkerhetsbaslinjer för Microsoft Defender för Slutpunkt och Windows Intune
-Säkerhetsbaslinjen för Windows Intune innehåller en omfattande uppsättning rekommenderade inställningar som krävs för att säkert konfigurera enheter som kör Windows, inklusive webbläsarinställningar, PowerShell-inställningar samt inställningar för vissa säkerhetsfunktioner som Microsoft Defender Antivirus. Defender för slutpunktsbaslinje tillhandahåller däremot inställningar som optimerar alla säkerhetskontroller i Defender för slutpunktsstacken, inklusive inställningar för identifiering av slutpunkt och svar (EDR) samt inställningar som också finns i Windows Intune-säkerhetsbaslinjen. Mer information om varje baslinje finns i:
+## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Jämför Säkerhetsbaslinjer för Microsoft Defender för Endpoint Windows Intune
+Säkerhetsbaslinjen i Windows Intune innehåller en omfattande uppsättning rekommenderade inställningar som krävs för att säkert konfigurera enheter som kör Windows, inklusive webbläsarinställningar, PowerShell-inställningar samt inställningar för vissa säkerhetsfunktioner som Microsoft Defender Antivirus. Defender för slutpunktsbaslinje tillhandahåller däremot inställningar som optimerar alla säkerhetskontroller i Defender för slutpunktsstacken, inklusive inställningar för identifiering och åtgärd på slutpunkt (Identifiering och åtgärd på slutpunkt) samt inställningar som också finns i säkerhetsbaslinjen i Windows Intune. Mer information om varje baslinje finns i:
 
-- [Inställningar för Windows-säkerhetsbaslinje för Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
-- [Baslinjeinställningar för Microsoft Defender för Slutpunkt för Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
+- [Windows inställningar för säkerhetsbaslinje för Intune](/intune/security-baseline-settings-windows)
+- [Baslinjeinställningar för Microsoft Defender för Slutpunkt för Intune](/intune/security-baseline-settings-defender-atp)
 
-Under idealiska förhållanden distribueras enheter som finns i Defender för Slutpunkt med båda baslinjerna: Säkerhetsbaslinjen för Windows Intune till att först skydda Windows och sedan Defender för slutpunktens säkerhetsbaslinje lagd ovanpå för att optimalt konfigurera Defender för slutpunktssäkerhetskontroller. För att dra nytta av de senaste data om risker och hot och för att minimera konflikter allt eftersom baslinjer utvecklas ska du alltid använda de senaste versionerna av baslinjerna för alla produkter så snart de släpps.
+Under idealiska förhållanden distribueras enheter som finns i Defender för Slutpunkt med båda baslinjerna: säkerhetsbaslinjen för Windows Intune till att först skydda Windows och sedan defender för slutpunktens säkerhetsbaslinje lagd högst upp för att optimalt konfigurera Defender för slutpunktssäkerhetskontroller. För att dra nytta av de senaste data om risker och hot och för att minimera konflikter allt eftersom baslinjer utvecklas ska du alltid använda de senaste versionerna av baslinjerna för alla produkter så snart de släpps.
 
 >[!NOTE]
 >Säkerhetsbaslinjen för Defender för slutpunkt har optimerats för fysiska enheter och rekommenderas för närvarande inte för användning på virtuella maskiner eller VDI-slutpunkter. Vissa baslinjeinställningar kan påverka fjärranslutna interaktiva sessioner i virtualiserade miljöer.
 
 ## <a name="monitor-compliance-to-the-defender-for-endpoint-security-baseline"></a>Övervaka efterlevnad av Defender för slutpunktens säkerhetsbaslinje
 
-Kortet **med säkerhetsbaslinje** för hantering av [enhetskonfiguration](configure-machines.md) ger en översikt över efterlevnad för alla Windows 10-enheter som har tilldelats Defender för slutpunktens säkerhetsbaslinje.
+Kortet **med säkerhetsbaslinje** [för hantering](configure-machines.md) av enhetskonfiguration ger en översikt över efterlevnad för Windows 10 enheter som har tilldelats Defender för slutpunktens säkerhetsbaslinje.
 
 ![Baslinjekort för säkerhet](images/secconmgmt_baseline_card.png)<br>
 *Kort som visar efterlevnad för Defender för slutpunktens säkerhetsbaslinje*
@@ -73,12 +73,12 @@ Om du vill granska vissa enheter väljer **du Konfigurera säkerhetsbaslinje** p
 
 ## <a name="review-and-assign-the-microsoft-defender-for-endpoint-security-baseline"></a>Granska och tilldela Microsoft Defender för slutpunktens säkerhetsbaslinje
 
-Enhetshantering övervakar endast grundläggande efterlevnad av Windows 10-enheter som specifikt har tilldelats Microsoft Defender för slutpunktens säkerhetsbaslinje. Du kan enkelt granska baslinjen och tilldela den till enheter med Intune-enhetshantering.
+Hantering av enhetskonfiguration övervakar endast grundläggande efterlevnad av Windows 10 enheter som specifikt har tilldelats Säkerhetsbaslinje för Microsoft Defender för slutpunkt. Du kan enkelt granska baslinjen och tilldela den till enheter med Intune-enhetshantering.
 
 1. Välj **Konfigurera säkerhetsbaslinje** på kortet **Säkerhetsbaslinje** om du vill gå till Intune-enhetshantering. En liknande översikt över grundläggande efterlevnad visas.
 
    >[!TIP]
-   > Alternativt kan du navigera till säkerhetsbaslinjen för Defender för slutpunkt i Microsoft Azure-portalen från Alla tjänster **> Intune > Enhetssäkerhet > Säkerhetsbaslinjer > baslinje > Microsoft Defender ATP.**
+   > Alternativt kan du navigera till Säkerhetsbaslinje för Defender för slutpunkt i Microsoft Azure-portalen från Alla tjänster **> Intune > Enhetssäkerhet > Säkerhetsbaslinjer > Microsoft Defender ATP baslinje.**
 
 
 2. Skapa en ny profil.
@@ -102,7 +102,7 @@ Enhetshantering övervakar endast grundläggande efterlevnad av Windows 10-enhet
    *Skapa säkerhetsbaslinjeprofilen i Intune*
 
 >[!TIP]
->Säkerhetsbaslinjer för Intune är ett bekvämt sätt att skydda dina enheter på ett fullständigt säkert sätt. [Läs mer om säkerhetsbaslinjer i Intune](https://docs.microsoft.com/intune/security-baselines).
+>Säkerhetsbaslinjer för Intune är ett bekvämt sätt att skydda dina enheter på ett fullständigt säkert sätt. [Läs mer om säkerhetsbaslinjer i Intune](/intune/security-baselines).
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 

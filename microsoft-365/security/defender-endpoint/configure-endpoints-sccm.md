@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: e919f697048840b0eb7bffd34914328fe233f823
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d827fb89a082286b1b7b77ea0a14e588ce171161
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935167"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842200"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Registrera Windows 10-enheter med konfigurationshanteraren
 
@@ -33,7 +33,7 @@ ms.locfileid: "51935167"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager current branch
-- Konfigurationshanteraren för System Center 2012 R2
+- System Center 2012 R2 Configuration Manager
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
@@ -43,7 +43,7 @@ Beroende på vilken version av Konfigurationshanteraren du kör kan följande kl
 
 #### <a name="configuration-manager-version-1910-and-prior"></a>Konfigurationshanteraren version 1910 och tidigare
 
-- Klientdatorer med Windows 10 
+- Klienter som kör Windows 10 
 
 #### <a name="configuration-manager-version-2002-and-later"></a>Konfigurationshanteraren version 2002 och senare
 
@@ -61,34 +61,34 @@ Från och med Konfigurationshanteraren version 2002 kan du registrera följande 
 
 
 
-### <a name="onboard-devices-using-system-center-configuration-manager"></a>Onboard-enheter med System Center Configuration Manager
+### <a name="onboard-devices-using-system-center-configuration-manager"></a>Onboard-enheter som använder System Center Configuration Manager
 
 
 [![Bild av PDF-filen som visar de olika distributionssökvägarna](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
 
-Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [Visio-filen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) för att se de olika sökvägarna i distributionen av Microsoft Defender för Endpoint. 
+Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) om du vill se de olika sökvägarna i distributionen av Microsoft Defender för Slutpunkt. 
 
 
 
-1. Öppna ZIP-filen (Configuration Manager configuration package)*(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för service onboarding. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1. Öppna konfigurationspaketet för Konfigurationshanteraren .zip *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för service onboarding. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
 
-    1. Välj Inställningar Onboarding **i**  >  **navigeringsfönstret.**
+    1. I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**.
     
     1. Välj Windows 10 som operativsystem.
 
     1. I fältet **Distributionsmetod** väljer du **System Center Configuration Manager 2012/2012 R2/1511/1602.**
     
-    1. Välj **Ladda ned paket** och spara ZIP-filen.
+    1. Välj **Ladda ned** paket och spara .zip filen.
 
-2. Extrahera innehållet i ZIP-filen till en delad, skrivskyddad plats som kan nås av nätverksadministratörerna som ska distribuera paketet. Du bör ha en fil med namnet *WindowsDefenderATPOnboardingScript.cmd*.
+2. Extrahera innehållet i filen .zip till en delad, skrivskyddad plats som kan nås av nätverksadministratörerna som ska distribuera paketet. Du bör ha en fil med namnet *WindowsDefenderATPOnboardingScript.cmd*.
 
-3. Distribuera paketet genom att följa stegen i artikeln [Paket och program i System Center 2012 R2 Configuration Manager.](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
+3. Distribuera paketet genom att följa stegen i artikeln Paket och program [i System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
 
     a. Välj en fördefinierad enhetssamling att distribuera paketet till.
 
 > [!NOTE]
-> Defender för Endpoint har inte stöd för onboarding under fas [OOBE (Out-Box Experience).](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Se till att användarna slutför OOBE när de har kört Windows-installationen eller uppgraderat.
+> Defender för Endpoint har inte stöd för onboarding under fas [OOBE (Out-Box Experience).](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Se till att användarna slutför OOBE när de har Windows installationen eller uppgraderingen.
 
 >[!TIP]
 > När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att en enhet är korrekt onboarded till tjänsten. Mer information finns i Köra [ett identifieringstest på en nyligen onboarded Defender för Slutpunkt-enhet](run-detection-test.md).
@@ -98,11 +98,11 @@ Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public
 > 
 > Du kan åstadkomma detta genom att skapa en kontroll för identifieringsregel om registervärdet "OnboardingState" (av typen REG_DWORD) = 1.
 > Registervärdet finns under "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
-Mer information finns i [Konfigurera identifieringsmetoder i System Center 2012 R2 Configuration Manager.](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
+Mer information finns i Konfigurera [identifieringsmetoder i System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
 
 ### <a name="configure-sample-collection-settings"></a>Konfigurera exempelsamlingsinställningar
 
-För varje enhet kan du ange ett konfigurationsvärde för att ange om exempel kan samlas in från enheten när en begäran görs via Microsoft Defender Säkerhetscenter för att skicka en fil för djupanalys.
+För varje enhet kan du ange ett konfigurationsvärde för att ange om exempel kan samlas in från enheten när en förfrågan görs via Microsoft Defender Säkerhetscenter att skicka en fil för djupanalys.
 
 >[!NOTE]
 >De här konfigurationsinställningarna görs vanligtvis via Konfigurationshanteraren. 
@@ -127,7 +127,7 @@ Möjliga värden är:
 
 Standardvärdet är 1 om registernyckeln inte finns.
 
-Mer information om efterlevnad för System Center Configuration Manager finns i Introduktion till [efterlevnadsinställningar i System Center 2012 R2 Configuration Manager.](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))
+Mer information om hur System Center Configuration Manager efterlevnad finns i Introduktion till efterlevnadsinställningar [i System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))
 
 
 ## <a name="other-recommended-configuration-settings"></a>Andra rekommenderade konfigurationsinställningar
@@ -173,25 +173,25 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
 > [!NOTE]
 > Principer för onboarding och offboarding får inte distribueras på samma enhet samtidigt, annars kan det orsaka oförutsägbara tavlor.
 
-### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Offboard-enheter med Aktuell gren i Microsoft Endpoint Manager
+### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Offboard-enheter som Microsoft Endpoint Manager current branch
 
-Om du använder Microsoft Endpoint Manager current branch, se [Skapa en konfigurationsfil för offboarding.](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
+Om du använder Microsoft Endpoint Manager current branch, se [Skapa en konfigurationsfil för offboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Offboard-enheter med System Center 2012 R2 Configuration Manager
 
 1. Hämta offboarding-paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
 
-    1. I navigeringsfönstret väljer du **Inställningar**  >   **offboarding**.
+    1. I navigeringsfönstret väljer du **Inställningar**  >   **Offboarding**.
 
     1. Välj Windows 10 som operativsystem.
 
     1. I fältet **Distributionsmetod** väljer du **System Center Configuration Manager 2012/2012 R2/1511/1602.**
     
-    1. Välj **Ladda ned paket** och spara ZIP-filen.
+    1. Välj **Ladda ned** paket och spara .zip filen.
 
-2. Extrahera innehållet i ZIP-filen till en delad, skrivskyddad plats som kan nås av nätverksadministratörerna som ska distribuera paketet. Du bör ha en fil med *namnet WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extrahera innehållet i filen .zip till en delad, skrivskyddad plats som kan nås av nätverksadministratörerna som ska distribuera paketet. Du bör ha en fil med *namnet WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Distribuera paketet genom att följa stegen i artikeln [Paket och program i System Center 2012 R2 Configuration Manager.](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
+3. Distribuera paketet genom att följa stegen i artikeln Paket och program [i System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))
 
     a. Välj en fördefinierad enhetssamling att distribuera paketet till.
 
@@ -201,9 +201,9 @@ Om du använder Microsoft Endpoint Manager current branch, se [Skapa en konfigur
 
 ## <a name="monitor-device-configuration"></a>Övervaka enhetskonfiguration
 
-Om du använder Aktuell gren i Microsoft Endpoint Manager använder du den inbyggda Defender för Slutpunkt-instrumentpanelen i konfigurationshanterarens konsol. Mer information finns i [Defender för slutpunkt – bildskärm.](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
+Om du använder en Microsoft Endpoint Manager gren använder du den inbyggda Defender för slutpunkt-instrumentpanelen i konfigurationshanterarens konsol. Mer information finns i [Defender för slutpunkt – bildskärm.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
 
-Om du använder System Center 2012 R2 Configuration Manager består övervakning av två delar:
+Om du använder konfigurationshanteraren System Center 2012 R2 består övervakning av två delar:
 
 1. Bekräfta att konfigurationspaketet har distribuerats korrekt och körs (eller har körts) på enheterna i nätverket.
 
@@ -237,10 +237,10 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-Mer information finns i Introduktion [till efterlevnadsinställningar i System Center 2012 R2 Configuration Manager.](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))
+Mer information finns i Introduktion [till inställningar för efterlevnad i System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Introducera Windows 10-enheter med grupprincip](configure-endpoints-gp.md)
+- [Introducera Windows 10 enheter med grupprincip](configure-endpoints-gp.md)
 - [Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter](configure-endpoints-mdm.md)
 - [Registrera Windows 10-enheter med ett lokalt skript](configure-endpoints-script.md)
 - [Registrera enheter för icke beständiga VDI-enheter (Virtual Desktop Infrastructure)](configure-endpoints-vdi.md)

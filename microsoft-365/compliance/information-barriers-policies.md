@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b245a0f7ca0845024fec0c498aca4c7d447f14ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ce387799a2f9e6d6cdffe063d3adf7310d7e7757
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162324"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842728"
 ---
 # <a name="define-information-barrier-policies"></a>Definiera informationsbarriärsprinciper
 
@@ -42,7 +42,7 @@ När du definierar principer för informationsbarriärer arbetar du med använda
     - Med "Tillåt" principer kan ett segment bara kommunicera med vissa andra segment.
 - Policyprogrammet utförs när alla principer för informationsbarriärer har definierats och du är redo att tillämpa dem i din organisation.
 
-## <a name="the-work-flow-at-a-glance"></a>Arbetsflödet i korthet
+## <a name="the-work-flow-at-a-glance"></a>Överblick över arbetsflödet
 
 | Fas | Vad som är inblandat |
 |:--------|:------------------|
@@ -71,12 +71,12 @@ Kontrollera att följande [krav uppfylls,](information-barriers.md#required-lice
 - Inga adressboksprinciper – Innan du definierar och tillämpar principer för informationsbarriärer kontrollerar du att Exchange principer för adressboken finns. Informationsbarriärer baseras på adressboksprinciper, men de två typerna av principer är inte kompatibla. Om du har sådana principer ska du se till att [ta bort dina adressboksprinciper](/exchange/address-books/address-book-policies/remove-an-address-book-policy) först. När principer för informationsbarriärer har aktiverats och du  har aktiverat hierarkisk adressbok kan [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) alla användare som inte ingår i informationsbarriärsegmenten se den hierarkiska adressboken i Exchange online.
 
 - PowerShell – För närvarande definieras och hanteras informationsbarriärprinciper i Office 365 Säkerhets- & Säkerhetscenter med PowerShell-cmdlets. Även om flera exempel finns i den här artikeln måste du vara bekant med PowerShell-cmdlets och parametrar. Du behöver också Azure PowerShell modulen.
-    - [Anslut säkerhets- & Säkerhets- och efterlevnadscenter PowerShell](/powershell/exchange/connect-to-scc-powershell)
+    - [Anslut till Säkerhets- och efterlevnadscenter i PowerShell](/powershell/exchange/connect-to-scc-powershell).
     - [Installera Azure PowerShell modulen](/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Administratörsmedgivande om informationsbarriärer i Microsoft Teams – När dina IB-principer finns kan de ta bort användare som inte är IB-efterlevnad från grupper (dvs. Teams-kanaler, som baseras på grupper). Den här konfigurationen ser till att organisationen fortfarande följer principer och bestämmelser. Använd följande procedur för att göra det möjligt för informationsbarriärprinciper att fungera som förväntat i Microsoft Teams.
 
-   1. Förutsättningar: Installationen Azure PowerShell från [installationen Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps).
+   1. Förutsättningar: Installationen Azure PowerShell från [installationen Azure PowerShell](/powershell/azure/install-az-ps).
 
    1. Kör följande PowerShell-cmdlets:
 

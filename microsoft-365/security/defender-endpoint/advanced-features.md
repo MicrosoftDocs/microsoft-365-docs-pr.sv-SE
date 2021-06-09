@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 87305f28975b8997afce211ffa4de3711d26be6b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246374"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845480"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -167,7 +167,7 @@ När du aktiverar den här funktionen kan du införliva data från Microsoft Def
 > [!NOTE]
 > Du måste ha rätt licens för att aktivera den här funktionen.
 
-Om du vill få sammanhangsbaserad enhetsintegration i Office 365 Threat Intelligence måste du aktivera Defender för Slutpunktsinställningar i instrumentpanelen för & säkerhet och efterlevnad. Mer information finns i Undersökning [av hot och svar.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)
+Om du vill få sammanhangsbaserad enhetsintegration i Office 365 Threat Intelligence måste du aktivera Defender för Slutpunktsinställningar i instrumentpanelen för & säkerhet och efterlevnad. Mer information finns i Undersökning [av hot och svar.](/microsoft-365/security/office-365-security/office-365-ti)
 
 ## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft Hotexperter – riktade attackmeddelanden
 
@@ -212,7 +212,7 @@ När du har [konfigurerat indikatorerna för brott](/microsoft-365/compliance/in
 
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune anslutning
 
-Defender för Endpoint kan integreras med Microsoft Intune för [att](https://docs.microsoft.com/intune/what-is-intune) [aktivera enhetsriskbaserad villkorlig åtkomst.](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) När du [aktiverar den här funktionen](configure-conditional-access.md)kan du dela Information om Endpoint-enheter med Intune och förbättra tvingande policy.
+Defender för Endpoint kan integreras med Microsoft Intune för [att](/intune/what-is-intune) [aktivera enhetsriskbaserad villkorlig åtkomst.](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) När du [aktiverar den här funktionen](configure-conditional-access.md)kan du dela Information om Endpoint-enheter med Intune och förbättra tvingande policy.
 
 > [!IMPORTANT]
 > Du måste aktivera integreringen på både Intune och Defender för Endpoint om du vill använda den här funktionen. Mer information om specifika steg finns i Konfigurera [villkorsstyrd åtkomst i Defender för slutpunkt.](configure-conditional-access.md)
@@ -220,7 +220,7 @@ Defender för Endpoint kan integreras med Microsoft Intune för [att](https://do
 Den här funktionen är endast tillgänglig om du har följande:
 
 - En licensierad klientorganisation för Enterprise Mobility + Security E3 och Windows E5 (eller Microsoft 365 Enterprise E5)
-- En aktiv Microsoft Intune med Intune-hanterade enheter Windows 10 [Azure AD-anslutna](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/).
+- En aktiv Microsoft Intune med Intune-hanterade enheter Windows 10 [Azure AD-anslutna](/azure/active-directory/devices/concept-azure-ad-join/).
 
 
 ### <a name="conditional-access-policy"></a>Princip för villkorsstyrd åtkomst
@@ -228,7 +228,7 @@ Den här funktionen är endast tillgänglig om du har följande:
 När du aktiverar Intune-integrering skapar Intune automatiskt en klassisk CA-princip (Conditional Access). Den här klassiska CA-principen är en förutsättning för att kunna konfigurera statusrapporter till Intune. Den ska inte tas bort.
 
 > [!NOTE]
-> Den klassiska CA-principen som skapas av Intune skiljer sig från moderna [villkorsstyrda](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)åtkomstprinciper, som används för att konfigurera slutpunkter.
+> Den klassiska CA-principen som skapas av Intune skiljer sig från moderna [villkorsstyrda](/azure/active-directory/conditional-access/overview/)åtkomstprinciper, som används för att konfigurera slutpunkter.
 
 
 ## <a name="device-discovery"></a>Enhetsidentifiering

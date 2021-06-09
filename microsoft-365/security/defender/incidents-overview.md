@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cc2fcd7410c2f3122fb3ce49a40e93bfa0767331
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9970bb6d410f39ff5d796dec678a750342f0f599
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539029"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842032"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidenter i Microsoft 365 Defender
 
@@ -185,5 +185,5 @@ Dagliga, månatliga, kvartals- och årliga uppgifter kan användas för att uppd
 
   - Utföra [undersökningar](investigate-incidents.md) av incidenter.
 
-- I de här [spelböckerna för incidenter](https://docs.microsoft.com/security/compass/incident-response-playbooks) finns detaljerad vägledning för attacker för nätfiske, lösenordsförsök och att bevilja åtkomst till appar.
+- I de här [spelböckerna för incidenter](/security/compass/incident-response-playbooks) finns detaljerad vägledning för attacker för nätfiske, lösenordsförsök och att bevilja åtkomst till appar.
 

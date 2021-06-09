@@ -21,12 +21,12 @@ description: I Microsoft 365 – läs mer om de funktioner som har lagts till de
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: d4bd7d02b8c14f8b57b6f2e3eef99c2233d820fe
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 5bb8377dd45714dcdf25533055159f8964acc558
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779897"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841972"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Vad är nytt i Microsoft 365 administrationscenter
 
@@ -291,7 +291,7 @@ Många administratörer har hört att de behöver dela information om grupper oc
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365-center för lösningar och arkitektur
 
-Den här månaden släppte vi en ny webbplats som kallas Microsoft 365-lösningen och arkitekturcentret, som sammanför den tekniska vägledning du behöver för att förstå, planera och implementera integrerade Microsoft 365-lösningar för säkert och [https://docs.microsoft.com]() kompatibelt samarbete. [](../solutions/index.yml) I det här mitten hittar du:
+Den här månaden släppte vi en ny webbplats [](../solutions/index.yml)i docs.microsoft.com som kallas Microsoft 365-lösnings- och arkitekturcentret, som sammanför de tekniska råd du behöver för att förstå, planera och implementera integrerade Microsoft 365-lösningar för säkert och kompatibelt samarbete. I det här mitten hittar du:
 
 - Vägledning för grundlösning
 - Arbetsbelastningslösningar och scenariovägledning

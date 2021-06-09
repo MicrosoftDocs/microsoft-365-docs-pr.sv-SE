@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4612fbb2005145feae7bbcf9309c1ec9559a5a0d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 6c77762de4dbd70922eb5623f801837bf6454ec7
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636076"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842369"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Förhandsversionsfunktioner i Microsoft Defender för slutpunkt
 
@@ -44,7 +44,7 @@ Defender för Endpoint-tjänsten uppdateras hela tiden med nya funktionsförbät
 Lär dig mer om nya funktioner i förhandsversionen av Defender för slutpunkt och bli bland de första som kan prova kommande funktioner genom att aktivera förhandsversionen.
 
 >[!TIP]
->Få ett meddelande när sidan uppdateras genom att kopiera och klistra in följande URL i din feedläsare: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
+>Få ett meddelande när sidan uppdateras genom att kopiera och klistra in följande URL i din feedläsare: `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 Mer information om nya funktioner som är allmänt tillgängliga finns i [Vad är nytt i Defender för slutpunkt.](whats-new-in-microsoft-defender-atp.md)
 

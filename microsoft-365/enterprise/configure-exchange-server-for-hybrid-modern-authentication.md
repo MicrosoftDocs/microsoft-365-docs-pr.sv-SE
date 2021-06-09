@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur du konfigurerar Exchange Server en lokal konfiguration för att använda modern hybridautentisering (HMA), som ger dig säkrare användarautentisering och auktorisering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f52b7c011b717c5dcb91270ab0a7dd2015131c0e
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694455"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841636"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Så här konfigurerar Exchange Server lokal användning av modern hybridautentisering
 
@@ -183,12 +183,12 @@ Du bör också hålla ned CTRL-tangenten samtidigt som du högerklickar på ikon
 
 Om du är en lokal kund som använder Exchange på TCP 443 kringgår du trafikbearbetning för följande IP-adressintervall:
 
-```
+```text
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-Appen Outlook för iOS och Android är utformad som det bästa sättet att uppleva Microsoft 365 eller Office 365 på din mobila enhet med hjälp av Microsoft-tjänster för att hitta, planera och prioritera ditt dagliga liv och arbete. Mer information finns i Använda [modern hybridautentisering med Outlook för iOS och Android.](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)
+Appen Outlook för iOS och Android är utformad som det bästa sättet att uppleva Microsoft 365 eller Office 365 på din mobila enhet med hjälp av Microsoft-tjänster för att hitta, planera och prioritera ditt dagliga liv och arbete. Mer information finns i Använda [modern hybridautentisering med Outlook för iOS och Android.](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

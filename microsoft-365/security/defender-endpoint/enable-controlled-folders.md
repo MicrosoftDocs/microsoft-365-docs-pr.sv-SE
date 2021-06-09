@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 1d09eaf04999478a0cd0b4907667a522a23fb39f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571014"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841984"
 ---
 # <a name="enable-controlled-folder-access"></a>Aktivera kontrollerad mappåtkomst
 
@@ -35,7 +35,7 @@ ms.locfileid: "51571014"
 
 Du kan aktivera reglerad mappåtkomst på något av följande sätt:
 
-* [Appen Windows-säkerhet](#windows-security-app)
+* [Windows-säkerhet appen](#windows-security-app)
 * [Microsoft Intune](#intune)
 * [Hantering av mobila enheter (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
@@ -46,23 +46,23 @@ Du kan aktivera reglerad mappåtkomst på något av följande sätt:
 
 Grupprincipinställningar som inaktiverar sammanslagning av lokala administratörslistor åsidosätter styrda inställningar för mappåtkomst. De åsidosätter även skyddade mappar och tillåtna appar som angetts av den lokala administratören via kontrollerad mappåtkomst. Dessa principer omfattar:
 
-* Microsoft Defender Antivirus **Konfigurera sammanslagning av lokala administratörer för listor**
-* System Center Endpoint Protection **Tillåt användare att lägga till undantag och åsidosättningar**
+* Microsoft Defender Antivirus Konfigurera **lokala administratörskopplingsbeteenden för listor**
+* System Center Endpoint Protection tillåt **användare att lägga till undantag och åsidosättningar**
 
-Mer information om hur du inaktiverar lokal list sammanslagning finns i Förhindra eller tillåta användare att lokalt ändra inställningarna för [Microsoft Defender AV-principen.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)
+Mer information om hur du inaktiverar lokal list sammanslagning finns i Förhindra eller tillåta användare att lokalt ändra inställningarna för [Microsoft Defender AV-principen.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)
 
-## <a name="windows-security-app"></a>Appen Windows-säkerhet
+## <a name="windows-security-app"></a>Windows-säkerhet appen
 
-1. Öppna appen Windows-säkerhet genom att välja sköldikonen i aktivitetsfältet. Du kan också söka efter Defender på **startmenyn.**
+1. Öppna Windows-säkerhet genom att välja sköldikonen i aktivitetsfältet. Du kan också söka efter Defender på **startmenyn.**
 
 2. Välj panelen **& skydd mot** hot (eller sköldikonen på den vänstra menyraden) och välj sedan **Utpressningstrojanskydd**.
 
 3. Ställ in växlingsknappen **för kontrollerad mappåtkomst** på **På**.
 
 > [!NOTE]
-> Om reglerad mappåtkomst är konfigurerad med grupprincip-, PowerShell- eller MDM-CSP:er ändras statusen i Windows-säkerhetsappen efter en omstart av enheten.
-> Om funktionen är inställd på **granskningsläge för** något av dessa verktyg visas statusen som Av i Windows-säkerhetsappen. 
-> Om du skyddar användarprofildata rekommenderar vi att användarprofilen finns på Standardinstallationsenhet i Windows.
+> Om reglerad mappåtkomst är konfigurerad med grupprincip-, PowerShell- eller MDM-CSP:er ändras statusen i Windows-säkerhet-appen efter en omstart av enheten.
+> Om funktionen är inställd på **granskningsläge** med något av dessa verktyg Windows-säkerhet appen statusen **Av.**
+> Om du skyddar användarprofildata rekommenderar vi att användarprofilen ska finnas på standardplatsen Windows installationsenhet.
 
 ## <a name="intune"></a>Intune
 
@@ -70,9 +70,9 @@ Mer information om hur du inaktiverar lokal list sammanslagning finns i Förhind
 
 2. Gå till **Profiler för**  >  **enhetskonfiguration Skapa**  >  **profil**.
 
-3. Namnge profilen, välj **Windows 10 och senare och** **Slutpunktsskydd**. <br/> ![Skapa profil för slutpunktsskydd](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. Namnge profilen, välj Windows 10 **senare och Slutpunktsskydd** .  <br/> ![Skapa profil för slutpunktsskydd](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
 
-4. Gå till **Konfigurera**  >  **mappåtkomst via Windows Defender Exploit Guard** med  >  **kontrollerad**  >  **mappåtkomst**.
+4. Gå till **Konfigurera Windows Defender**  >  **för kontrollerad Exploit**  >  **Guard-mappåtkomst**  >  **Enable**.
 
 5. Skriv sökvägen till varje program som har åtkomst till skyddade mappar och sökvägen till ytterligare mappar som behöver skyddas. Välj **Lägg till**.<br/> ![Aktivera kontrollerad mappåtkomst i Intune](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
 
@@ -85,11 +85,11 @@ Mer information om hur du inaktiverar lokal list sammanslagning finns i Förhind
 
 ## <a name="mobile-device-management-mdm"></a>Hantering av mobila enheter (MDM)
 
-Använd [konfigurationstjänsten ./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) (CSP) för att tillåta appar att göra ändringar i skyddade mappar.
+Använd [konfigurationstjänsten ./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) (CSP) för att tillåta appar att göra ändringar i skyddade mappar.
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. I Microsoft Endpoint Configuration Manager går du till **Tillgångar och Slutpunktsskydd för**  >  **efterlevnad** Windows Defender  >  **Exploit Guard**.
+1. I Microsoft Endpoint Configuration Manager går du till **Tillgångar och Endpoint Protection** Windows Defender Exploit  >    >  **Guard.**
 
 2. Välj **Home**  >  **Create Exploit Guard-policy**.
 
@@ -107,16 +107,16 @@ Använd [konfigurationstjänsten ./Vendor/MSFT/Policy/Config/ControlledFolderAcc
 
 1. Öppna grupprinciphanteringskonsolen på [](https://technet.microsoft.com/library/cc731212.aspx)din enhet för grupprinciphantering, högerklicka på det grupprincipobjekt du vill konfigurera och välj **Redigera.**
 
-2. I **redigeraren för grupprinciphantering** går du till **Datorkonfiguration** och väljer **Administrativa mallar**.
+2. I **Redigeraren för grupprinciphantering** går du till **Datorkonfiguration** och väljer **Administrativa mallar**.
 
-3. Expandera trädet till **Windows-komponenter > Microsoft Defender Antivirus > Windows Defender Exploit Guard > kontrollerad mappåtkomst**.
+3. Expandera trädet för att **Windows komponenter > Microsoft Defender Antivirus > Windows Defender Exploit Guard > kontrollerad mappåtkomst.**
 
 4. Dubbelklicka på inställningen Konfigurera **reglerad mappåtkomst** och ställ in alternativet **Aktiverad**. I avsnittet alternativ måste du ange något av följande alternativ:
-    * **Aktivera** – Skadliga och misstänkta appar tillåts inte att göra ändringar i filer i skyddade mappar. Ett meddelande visas i Windows händelselogg.
+    * **Aktivera** – Skadliga och misstänkta appar tillåts inte att göra ändringar i filer i skyddade mappar. Ett meddelande visas i Windows händelseloggen.
     * **Inaktivera (standard)** – Funktionen kontrollerad mappåtkomst fungerar inte. Alla appar kan göra ändringar i filer i skyddade mappar.
-    * **Granskningsläge** – Ändringar tillåts om en skadlig eller misstänkt app försöker göra en ändring i en fil i en skyddad mapp. Det registreras dock i Windows händelselogg där du kan bedöma påverkan på organisationen.
-    * **Blockera endast diskändring** – Försök av icke-betrodda appar att skriva till diskhändelsen loggas i Windows-händelseloggen. De här loggarna finns i **Program-** och tjänstloggar > Microsoft > Windows > Windows Defender > Operational > ID 1123.
-    * **Granska endast diskändring** – Endast försök att skriva till skyddade diskdeklareringsförsök registreras i Windows-händelseloggen **(under** Program- och  >  **tjänstloggar Microsoft**  >    >  **Windows Defender**  >    >  **Drift-ID 1124).** Försök att ändra eller ta bort filer i skyddade mappar registreras inte.
+    * **Granskningsläge** – Ändringar tillåts om en skadlig eller misstänkt app försöker göra en ändring i en fil i en skyddad mapp. Den registreras dock i den nya Windows där du kan bedöma hur det påverkar organisationen.
+    * **Blockera endast diskändring** – Försök av icke betrodda appar att skriva till diskrekvent kommer att loggas Windows händelseloggen. De här loggarna finns i **Program- och tjänstloggar** > Microsoft > Windows > Windows Defender > Operational > ID 1123.
+    * **Granska endast diskändring** – Endast försök att skriva till skyddade diskförsök registreras i händelseloggen för Windows **(under** Program- och tjänstloggar  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >    >  **Drift-ID 1124**). Försök att ändra eller ta bort filer i skyddade mappar registreras inte.
 
       ![Skärmbild av grupprincipalternativet Aktiverad och Granskningsläge markerat i listrutan](/microsoft-365/security/defender-endpoint/images/cfa-gp-enable)
 
@@ -125,7 +125,7 @@ Använd [konfigurationstjänsten ./Vendor/MSFT/Policy/Config/ControlledFolderAcc
 
 ## <a name="powershell"></a>PowerShell
 
-1. Skriv **powershell** på Start-menyn, högerklicka på **Windows PowerShell och** välj Kör som **administratör.**
+1. Skriv **powershell** på Start-menyn, högerklicka på **Windows PowerShell** välj Kör **som administratör**.
 
 2. Ange följande cmdlet:
 

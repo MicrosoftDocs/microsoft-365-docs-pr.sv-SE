@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place eDiscovery och In-Place Hold (och motsvarande PowerShell-cmdlets) i Exchange Online kommer att dras tillbaka under de första halvan av 2020. Både Search-Mailbox och Advanced eDiscovery v1.0 dras tillbaka inom samma tidsperiod.
-ms.openlocfilehash: 48a20b9e73c5379325afb715a86c4945385fd0b9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c5f1ddb4c817ebc316c2e2efdba9a4bc605eb5a2
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52161851"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842668"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Utfasning av äldre eDiscovery-verktyg
 
@@ -146,7 +146,7 @@ I följande tabell beskrivs andra verktyg som du kan använda för att ersätta 
   </tr>
 <tr class="odd">
 <td>Återställa objekt från mappen återställningsbara objekt</td>
-  <td><a href="https://docs.microsoft.com/powershell/module/exchange/Restore-RecoverableItems">Restore-RecoverableItems</td>
+  <td><a href="/powershell/module/exchange/Restore-RecoverableItems">Restore-RecoverableItems</td>
   <td>Du kan återställa permanent borttagna objekt <i></i> (kallas även mjuka borttagna objekt) i postlådor, så länge bevarandeperioden för borttagna objekt för ett objekt inte har gått ut. Mer information finns i <a href="/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">mappen Återställningsbara objekt i Exchange Online</a>.</td>
 </tr>
 </tbody>
@@ -203,9 +203,9 @@ I följande tabell beskrivs andra verktyg som du kan använda för att ersätta 
 <tbody>
 <tr class="odd">
 <td>Sök och exportera</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
+<td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
 <td><p>Cmdlet:arna ComplianceSearch och ComplianceSearchAction samarbetar för att hjälpa dig att söka efter och exportera innehåll. Du kan skapa en ny sökning och visa sökberäkningen med hjälp av cmdletarna <strong>New-</strong>, <strong>Get-</strong>och <strong>Start-ComplianceSearch.</strong> Sedan kan du exportera <strong>sökresultatet med New-ComplianceSearchAction-cmdleten.</strong> Du måste fortfarande använda huvudverktyget för eDiscovery i kompatibilitetscentret för Microsoft 365 för att ladda ned sökresultatet till din lokala dator.</p>
 <p>
@@ -213,16 +213,16 @@ I följande tabell beskrivs andra verktyg som du kan använda för att ersätta 
 </tr>
 <tr class="even">
 <td>Håll innehåll i en postlåda</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule"><span class="underline">*-CaseHoldrule</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
+<td><p><a href="/powershell/module/exchange/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
+<p><a href="/powershell/module/exchange/get-caseholdrule"><span class="underline">*-CaseHoldrule</span></a></p>
+<p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
 <td><p>Kvarhåller i Microsoft 365 måste associeras med ett efterlevnadsfall. Skapa först ett efterlevnadsfall och skapa sedan ett CaseHoldPolicy och ett CaseHoldRule.</p>
 <p><strong>Obs!</strong> Om du skapar ett CaseHoldPolicy utan att skapa CaseHoldRule kommer det inte att fungera tills CaseHoldRule har skapats och kopplats till CaseHoldPolicy. Mer information finns i dokumentationen till cmdleten.</p></td>
 </tr>
 <tr class="odd">
 <td>Kopiera sökresultat till en identifieringspostlåda</td>
-<td>Ingen</td>
+<td>Inga</td>
 <td>Den här funktionen ersätts inte direkt eftersom den inte ger tillgång till alla Microsoft 365 tjänster. Se vanliga frågor och svar nedan för alternativa lösningar.</td>
 </tr>
   <tr class=even>
@@ -282,15 +282,15 @@ I följande tabell beskrivs andra verktyg som du kan använda för att ersätta 
 <tbody>
 <tr class="odd">
 <td>Söka i en postlåda</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
 <td><p>Cmdlet:arna ComplianceSearch och ComplianceSearchAction samarbetar för att hjälpa dig att söka efter och exportera innehåll. Du kan skapa en ny sökning och visa sökberäkningen med hjälp av cmdletarna <strong>New-</strong>, <strong>Get-</strong>och <strong>Start-ComplianceSearch.</strong> Du kan sedan exportera <strong>sökresultatet med kommandot New-ComplianceSearchAction -Export.</strong> Du måste fortfarande använda huvudverktyget för eDiscovery i kompatibilitetscentret för Microsoft 365 för att ladda ned sökresultatet till din lokala dator.</p></p>
 </td>
 </tr>
 <tr class="even">
 <td>Ta bort massutskick från en postlåda</td>
-<td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Konfigurera en princip för arkivering och borttagning för postlådor</span></a></p>
+<td><p><a href="/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Konfigurera en princip för arkivering och borttagning för postlådor</span></a></p>
 <p></p></td>
 <td><p>Administratörer kan skapa en princip för arkivering och borttagning som automatiskt flyttar objekt till en användares arkivpostlåda och automatiskt tar bort objekt från postlådan.</p>
 </td>
@@ -307,10 +307,10 @@ I följande tabell beskrivs andra verktyg som du kan använda för att ersätta 
 </tr>
 <tr class=even>
   <td>Ta bort meddelanden från en postlåda</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
-<td><p>Cmdlet:arna ComplianceSearch och ComplianceSearchAction samarbetar för att hjälpa dig att söka efter och rensa innehåll. Du kan skapa och köra en sökning med cmdletarna <strong>New-ComplianceSearch</strong> och <strong>New-ComplianceSearch,</strong> och sedan kan du rensa innehållet med kommandot <strong>New-ComplianceSearchAction -Purge -PurgeType.</strong> Mer information finns i Söka <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">efter och ta bort meddelanden.</span></a></p>
+<td><p>Cmdlet:arna ComplianceSearch och ComplianceSearchAction samarbetar för att hjälpa dig att söka efter och rensa innehåll. Du kan skapa och köra en sökning med cmdletarna <strong>New-ComplianceSearch</strong> och <strong>New-ComplianceSearch,</strong> och sedan kan du rensa innehållet med kommandot <strong>New-ComplianceSearchAction -Purge -PurgeType.</strong> Mer information finns i Söka <a href="/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">efter och ta bort meddelanden.</span></a></p>
 </td>
 </tr>
 <tr class="odd"> 

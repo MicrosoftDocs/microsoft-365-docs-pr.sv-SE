@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 9ff00c706b0fb336c178e227b1cb33eff9e9ebbc
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c5c76553ff3f0b32def5fbafbf2c8f010e49eeb2
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935227"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845429"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>Felsöka minskningsregler för attackytor
 
@@ -56,11 +56,11 @@ Det finns fyra steg för att felsöka dessa problem:
 
 Minskning av attackytan fungerar bara på enheter med följande villkor:
 
-- Slutpunkter kör Windows 10 Enterprise, version 1709 (kallas även Fall Creators Update).
+- Slutpunkter körs från Windows 10 Enterprise, version 1709 (kallas även Fall Creators Update).
 
-- Slutpunkter använder Microsoft Defender Antivirus som den enda antivirusskyddsappen. [Om du använder någon annan antivirusapp inaktiveras microsoft Defender AV.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+- Slutpunkter använder Microsoft Defender Antivirus som den enda antivirusskyddsappen. [Om du använder någon annan antivirusapp inaktiveras microsoft Defender AV.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
-- [Realtidsskydd är](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) aktiverat.
+- [Realtidsskydd är](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) aktiverat.
 
 - Granskningsläget är inte aktiverat. Använd grupprincip för att ställa in regeln på **Inaktiverad** (värde: **0**) enligt beskrivningen i [Aktivera minskningsregler för attackytor.](enable-attack-surface-reduction.md)
 
@@ -68,7 +68,7 @@ Om samtliga krav har uppfyllts går du vidare till nästa steg och testar regeln
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>Använda granskningsläge för att testa regeln
 
-Du kan besöka webbplatsen med Windows Defender Test på [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) för att bekräfta att minskningsregler för attackytor vanligtvis fungerar för förkonfigurerade scenarier och processer på en enhet, eller så kan du använda granskningsläge, vilket endast tillåter rapporteringsregler.
+Du kan besöka webbplatsen för Windows Defender Test på [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) för att bekräfta att minskningsregler för attackytor normalt fungerar för förkonfigurerade scenarier och processer på en enhet, eller så kan du använda granskningsläge, vilket endast tillåter rapporteringsregler.
 
 Följ de här [anvisningarna i Använd demoverktyget](evaluate-attack-surface-reduction.md) för att se hur minskningsregler för attackytor fungerar för att testa den specifika regel som du stöter på problem med.
 
@@ -100,13 +100,13 @@ Mer information om hur du lägger till ett undantag finns [i Anpassa minskning a
 
 ## <a name="report-a-false-positive-or-false-negative"></a>Rapportera ett falskt positivt eller falskt negativt värde
 
-Använd det [webbaserade insändningsformuläret](https://www.microsoft.com/wdsi/filesubmission) i Windows Defender Security Intelligence om du vill rapportera ett falskt negativt eller falskt värde för nätverksskydd. Med en Windows E5-prenumeration kan du också [skicka en länk till eventuell associerad avisering](alerts-queue.md).
+Använd det [webbaserade Windows Defender-baserade](https://www.microsoft.com/wdsi/filesubmission) säkerhetsinsändningsformuläret för att rapportera ett falskt negativt eller falskt positivt resultat för nätverksskydd. Med en Windows E5-prenumeration kan du också [skicka en länk till alla associerade aviseringar.](alerts-queue.md)
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Samla in diagnostikdata för inskickade filer
 
 När du rapporterar ett problem med minskningsregler för attackytan uppmanas du att samla in och skicka in diagnostikdata som kan användas av Microsofts support- och teknikteam för att felsöka problem.
 
-1. Öppna en upphöjd kommandotolk och ändra till Windows Defender-katalogen:
+1. Öppna en upphöjd kommandotolk och ändra i Windows Defender katalog:
 
    ```console
    cd "c:\program files\windows defender"

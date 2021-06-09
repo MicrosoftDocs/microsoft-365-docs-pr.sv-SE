@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter
-description: Läs om ändringar från Säkerhets- och efterlevnadscenter för Office 365 till Microsoft 365 Säkerhetscenter.
-keywords: 'Microsoft 365 säkerhet: Komma igång med säkerhetscentret i Microsoft 365, Microsoft Defender för Office 365, Microsoft Defender för slutpunkt, MDO, MDE, en fönsterruta av glas, ny säkerhetsportal, den nya säkerhetsportalen för Defender'
+title: Microsoft Defender för Office 365 i Microsoft 365 Defender
+description: Läs mer om ändringar från säkerhets Office 365 och efterlevnadscentret för att Microsoft 365 Defender.
+keywords: 'Microsoft 365 säkerhet: Komma igång med Microsoft 365 Defender, Microsoft Defender för Office 365, Microsoft Defender för slutpunkt, MDO, MDE, enda fönsterruta med fönster, ny säkerhetsportal, nya defender-säkerhetsportalen'
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,14 +17,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: ec5d22caa52ffaa061637cb8c510a0efaf566b6a
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 95471f444117e1a44abe8de76c95cda52d5f7930
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782903"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842609"
 ---
-# <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter
+# <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender för Office 365 i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "52782903"
 
 ## <a name="quick-reference"></a>Snabbreferens
 
-I bilden och i tabellen nedan visas ändringar i navigeringen mellan Office 365 säkerhets- & och säkerhetscentret för Microsoft 365 säkerhetscenter.
+Bilden och tabellen nedan innehåller ändringar i navigeringen mellan säkerhets- Office 365 säkerhets- & och Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Bild av vad som flyttades dit](../../media/mdo-m3d-security-center.png)
@@ -44,7 +44,7 @@ I bilden och i tabellen nedan visas ändringar i navigeringen mellan Office 365 
 
 ****
 
-|Office 365 Säkerhets- & efterlevnad|Microsoft 365 Säkerhetscenter|Microsoft 365 Efterlevnadscenter|Administrationscentret för Exchange|
+|Office 365 Säkerhets- & efterlevnad|Microsoft 365 Defender|Microsoft 365 Efterlevnadscenter|Administrationscentret för Exchange|
 |---|---|---|---|
 |Varningar|E-post och samarbete|||
 |Klassificering||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage)||
@@ -59,11 +59,11 @@ I bilden och i tabellen nedan visas ändringar i navigeringen mellan Office 365 
 |Tjänstgranskning|Inställningar|||
 |
 
-Det förbättrade [Microsoft 365 Säkerhetscenter](./overview-security-center.md) i <https://security.microsoft.com> kombinerar säkerhetsfunktioner från befintliga säkerhetsportaler i Microsoft, bland annat Microsoft Defender Säkerhetscenter och Säkerhets- och efterlevnadscenter för Office 365. Det här förbättrade centret hjälper säkerhetsteam att skydda organisationen från hot mer produktivt och effektivt.
+[Microsoft 365 Defender på](./overview-security-center.md) kombinerar säkerhetsfunktioner från befintliga Microsoft-säkerhetsportaler, bland annat Microsoft Defender Säkerhetscenter och Office 365 Säkerhets- & Säkerhets- & <https://security.microsoft.com> Säkerhetscenter. Det här förbättrade centret hjälper säkerhetsteam att skydda organisationen från hot mer produktivt och effektivt.
 
-Om du är bekant med Office 365 Säkerhets- och efterlevnadsportal (protection.office.com) beskriver den här artikeln några av ändringarna och förbättringarna i Microsoft 365 Säkerhetscenter.
+Om du är bekant med Office 365 säkerhets- och efterlevnadsportalen (protection.office.com) beskriver den här artikeln några av de ändringar och förbättringar som Microsoft 365 Defender.
 
-Läs mer om fördelarna: [Översikt för Microsoft 365 Säkerhetscenter](overview-security-center.md)
+Läs mer om fördelarna: [Översikt över Microsoft 365 Defender](overview-security-center.md)
 
 Om du letar efter efterlevnadsrelaterade objekt kan du gå till [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/homepage).
 
@@ -79,7 +79,7 @@ Den här tabellen är en snabbreferens för områdena e-post och samarbete där 
 |---|---|
 |[Sidan E-postenhet](../office-365-security/mdo-email-entity-page.md)|Den här sidan **förenar** information om e-postmeddelanden som varit utspridda över olika sidor eller vyer tidigare. Undersökning av e-post efter hot och trender är *centraliserat*. Rubrikinformation och förhandsgranskning av e-post kan nås via samma e-postsida och annan användbar e-postrelaterad information. På samma sätt kan detonationsstatus för skadliga bifogade filer eller URL-adresser finnas på en flik på samma sida. Sidan E-postenhet ger administratörer och säkerhetsteam möjlighet att förstå ett hot via e-postmeddelande och dess status, snabbt, och sedan agera för att snabbt avgöra hur hanteringen ska hanteras.|
 |[Undersökning](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center)|Samlar AIR-funktioner i [Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) och [Defender för Endpoint](../defender-endpoint/automated-investigations.md). Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.|
-|[Varningsvyn](../../compliance/alert-policies.md)|Fönstret **Visa varningar** visas i Office Säkerhets- och efterlevnadscenter innehåller nu länkar till Microsoft 365 Säkerhetscenter. Klicka på länken **Öppna aviseringssida** så öppnas Microsoft 365 Säkerhetscenter. Du kan öppna sidan **Visa varningar** genom att klicka på en Office 365-avisering i kön Aviseringar.|
+|[Varningsvyn](../../compliance/alert-policies.md)|Den **utfällfönster** fönsterrutan Visa aviseringar i Office säkerhets- och efterlevnadscenter innehåller nu länkar till Microsoft 365 Defender. Klicka på länken **Öppna aviseringssida** så öppnas Microsoft 365 Defender. Du kan öppna sidan **Visa varningar** genom att klicka på en Office 365-avisering i kön Aviseringar.|
 |[Attacksimulering-utbildning](../office-365-security/attack-simulation-training-insights.md)|Använd Attacksimulering-utbildning för att köra realistiska attackscenarier i din organisation. De här simulerade attackerna kan utbilda din personal innan ett riktigt angrepp påverkar din organisation. Attacksimulering-utbildning innehåller fler alternativ, förbättrade rapporter och förbättrade utbildningsflöden som gör det enklare att leverera och hantera dina attacker samt utbildningsscenarier.|
 |
 
@@ -98,9 +98,9 @@ Titta också i avsnittet **Relaterad information** längst ned i den här artike
 > Säkerhetsportalen Microsoft 365 <https://security.microsoft.com> () kombinerar säkerhetsfunktioner i <https://securitycenter.windows.com> och <https://protection.office.com> . Vad som visas beror dock på din prenumeration. Om du bara har Microsoft Defender för Office 365 Abonnemang 1 eller 2, som fristående prenumerationer, visas inte funktioner för säkerhet för slutpunkter och Defender för Office Abonnemang 1-kunder, ser inte objekt som hotanalys.
 
 > [!TIP]
-> Alla Exchange Online Protection (EOP) ingår i säkerhetscentret i Microsoft 365, eftersom EOP är en av grundelementen i Defender för Office 365.
+> Alla Exchange Online Protection (EOP) ingår i Microsoft 365 Defender, eftersom EOP är huvudelementet i Defender för Office 365.
 
-## <a name="microsoft-365-security-center-home-page"></a>Startsida för Microsoft 365 Säkerhetscenter
+## <a name="microsoft-365-defender-home-page"></a>Microsoft 365 Startsida för Defender
 
 Startsidan på portalen visar:
 
@@ -148,7 +148,7 @@ Få information om hot från Microsofts säkerhetsexpert. Hotanalys hjälper sä
 - E-postrelaterade identifieringar och metoder från Microsoft Defender för Office 365. Det här är ett tillägg till de slutpunktsdata som redan är tillgängliga från Microsoft Defender för Endpoint.
 - Incidenter visas relaterat till hoten.
 - Förbättrad upplevelse för att snabbt identifiera och använda hanterbar information i rapporterna.
-Du kan komma Hotanalys antingen från det övre vänstra navigeringsfältet i Microsoft 365 Säkerhetscenter eller från ett dedikerat instrumentpanelskort som visar de viktigaste hoten för din organisation.
+Du kan komma åt hotanalyser antingen från det övre vänstra navigeringsfältet i Microsoft 365 Defender eller från ett dedikerat instrumentpanelskort som visar de viktigaste hoten för organisationen.
 
 Läs mer om hur du [spåra och svara på nya hot med hjälp av hotanalys](./threat-analytics.md)
 
@@ -156,16 +156,16 @@ Läs mer om hur du [spåra och svara på nya hot med hjälp av hotanalys](./thre
 
 Spåra och undersöka hot mot användarnas e-post, spåra kampanjer med mera. Om du har använt Säkerhets- och efterlevnadscenter för Office 365 känner du igen det här.
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="Snabbstartmenyn för E-post och samarbete (eller MSDO) till vänster i Microsoft 365 Säkerhetscenter.":::
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="Snabbstartsmenyn för E-& Collab (eller MSDO) till vänster i Microsoft 365 Defender.":::
 
 ### <a name="access-and-reports"></a>Åtkomst och rapporter
 
 Visa rapporter, ändra dina inställningar och ändra användarroller.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Snabbstartmenyn för behörigheter och rapporter i Microsoft 365 Säkerhetscenter, till vänster i säkerhetscentret.":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Snabbstartsmenyn för Microsoft 365 av Defender-behörigheter och -rapportering, till vänster i säkerhetscentret.":::
 
 > [!NOTE]
-> För Defender för Office 365-användare kan  du nu hantera och rotera DKIM-tangenter (DomainKeys Identified Mail) via säkerhetscentret i Microsoft 365: eller gå till <https://security.microsoft.com/threatpolicy> Policy & **rules** \> **Threat policies** DKIM (principregler för \> **DKIM).**
+> För Defender för Office 365-användare kan  du nu hantera och rotera DKIM-tangenter (DomainKeys Identified Mail) via Microsoft 365 Defender: eller gå till <https://security.microsoft.com/threatpolicy> Policy & **rules** \> **Threat policies** \> **DKIM (DKIM).**
 
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Exempel på Avancerad sökning för Microsoft Defender för Office 365
 
@@ -213,7 +213,7 @@ Data från den här frågan visas i resultatpanelen under själva frågan. Resul
 
 ## <a name="related-information"></a>Relaterad information
 
-- [Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter](microsoft-365-security-center-mdo.md)
+- [Microsoft Defender för Office 365 i Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
 - [Åtgärdscentret](./m365d-action-center.md)
 - [E-post- och samarbetsaviseringar](../../compliance/alert-policies.md#default-alert-policies)
 - [Jaga efter hot på olika enheter, e-postmeddelanden, appar och identiteter](./advanced-hunting-query-emails-devices.md)

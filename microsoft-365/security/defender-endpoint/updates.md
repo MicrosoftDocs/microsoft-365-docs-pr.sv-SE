@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f5db08e4eb98dd3fe6f7e8a84fb0c49e889fb73f
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 435a77432caa9d7335a22993f85cae69eff6cd38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809341"
+ms.locfileid: "52841768"
 ---
 #  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Hantera den gradvisa införandeprocessen för Microsoft Defender-uppdateringar
 
@@ -56,7 +56,7 @@ Följande gradvisa utrullningsmodell följs:
 
 1. Första utgåvan går ut till betakanalprenumeranter.
 2. Efter validering, feedback och korrigeringar, inleder vi den gradvisa utrullningsprocessen på ett begränsat sätt och till Förhandsgranska kanal prenumeranter först.
-3. Vi fortsätter sedan att släppa uppdateringen till resten av den globala populationen, skalningen från 10–100 %.
+3. Sedan fortsätter vi att släppa uppdateringen till resten av den globala populationen, och skalningen från 10–100 %.
 
 Våra tekniker övervakar och eskalerar kontinuerligt eventuella problem och skapar en korrigering efter behov.
 

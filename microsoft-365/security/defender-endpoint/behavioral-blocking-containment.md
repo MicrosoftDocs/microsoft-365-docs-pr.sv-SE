@@ -1,7 +1,7 @@
 ---
 title: Beteendeblockering och inneslutning
 description: Läs mer om funktioner för beteendeblockering och inneslutning i Microsoft Defender för Endpoint
-keywords: Microsoft Defender för Slutpunkt, EDR i blockeringsläge, blockering av passivt läge
+keywords: Microsoft Defender för Slutpunkt, Identifiering och åtgärd på slutpunkt i blockeringsläge, blockering av passivt läge
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: fdaa4d7cbc24ae2ebe28d0856b413f4982fe6b01
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 00ed505b153e5af4d89038bdc53e988ee763827b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929055"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845648"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Beteendeblockering och inneslutning
 
@@ -38,19 +38,19 @@ ms.locfileid: "51929055"
 
 ## <a name="overview"></a>Översikt
 
-Dagens hot landskap är över [](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) av fillös skadlig programvara och som lever utanför landet, mycket polymorfiska hot som muterar snabbare än traditionella lösningar kan hålla dig till och mänskliga drivna attacker som anpassar sig till vad adversaries hittar på komprometterade enheter. Traditionella säkerhetslösningar är inte tillräckliga för att stoppa sådana attacker. du behöver artificiell intelligens (AI) och stödfunktioner för enhetsinlärning (ML), till exempel beteendeblockering och inneslutning, i [Defender för Slutpunkt](https://docs.microsoft.com/windows/security). 
+Dagens hot landskap är över [](/windows/security/threat-protection/intelligence/fileless-threats) av fillös skadlig programvara och som lever utanför landet, mycket polymorfiska hot som muterar snabbare än traditionella lösningar kan hålla dig till och mänskliga drivna attacker som anpassar sig till vad adversaries hittar på komprometterade enheter. Traditionella säkerhetslösningar är inte tillräckliga för att stoppa sådana attacker. du behöver artificiell intelligens (AI) och enheter för utbildning (ML) säkerhetskopierade funktioner, till exempel beteendeblockering och inneslutning, som finns i [Defender för slutpunkt.](/windows/security) 
 
-Funktioner för blockering och inneslutning kan hjälpa till att identifiera och stoppa hot baserat på deras beteende och processträd även när hoten har börjat användas. Nästa generations skydd, EDR och Defender för Endpoint-komponenter och -funktioner fungerar tillsammans för funktioner för beteendeblockering och inneslutning. 
+Funktioner för blockering och inneslutning kan hjälpa till att identifiera och stoppa hot baserat på deras beteende och processträd även när hoten har börjat användas. Nästa generations skydd, Identifiering och åtgärd på slutpunkt Defender för Slutpunktskomponenter och funktioner fungerar tillsammans för funktioner för beteendeblockering och inneslutning. 
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Beteendeblockering och inneslutning":::
 
 Funktioner för blockering och inneslutning fungerar med flera komponenter och funktioner i Defender för Slutpunkt för att stoppa attacker omedelbart och förhindra att attacker fort görs.
 
-- [Nästa generations skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (som inkluderar Microsoft Defender Antivirus) kan identifiera hot genom att analysera beteenden och stoppa hot som har börjat köras.
+- [Nästa generations skydd](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (som inkluderar Microsoft Defender Antivirus) kan identifiera hot genom att analysera beteenden och stoppa hot som har börjat köras.
 
-- [Identifiering och svar av slutpunkter](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) tar emot säkerhetssignaler i nätverket, enheterna och kernel-beteendet. När hot upptäcks skapas aviseringar. Flera aviseringar av samma typ sammanställs till incidenter, vilket gör det enklare för teamet med säkerhetsåtgärder att undersöka och svara.
+- [Identifiering och svar av slutpunkter](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (Identifiering och åtgärd på slutpunkt) får säkerhetssignaler i nätverket, enheterna och kernel-beteendet. När hot upptäcks skapas aviseringar. Flera aviseringar av samma typ sammanställs till incidenter, vilket gör det enklare för teamet med säkerhetsåtgärder att undersöka och svara.
 
-- [Defender för Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) har ett brett utbud av fiberoptisk över identiteter, e-post, data och appar, utöver de nätverks-, slutpunkts- och kernel-funktionssignaler som tas emot via EDR. En komponent i [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection), Defender för Slutpunkt bearbetar och korrelerar dessa signaler, upphöjer identifieringsaviseringar och kopplar samman relaterade aviseringar i incidenter.
+- [Defender för Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) har ett brett utbud avropsoptisk över identiteter, e-post, data och appar, utöver de nätverks-, slutpunkts- och kernel-funktionssignaler som tas emot via Identifiering och åtgärd på slutpunkt. En komponent i [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection), Defender för slutpunkt bearbetar och korrelerar dessa signaler, upphöjer identifieringsaviseringar och kopplar relaterade aviseringar i incidenter.
 
 Med dessa funktioner kan fler hot förhindras eller blockeras, även om de börjar köras. När misstänkt beteende upptäcks finns risken kvar, aviseringar skapas och hot stoppas i deras spår. 
 
@@ -60,15 +60,15 @@ Följande bild visar ett exempel på en varning som utlöstes genom funktionella
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Komponenter i beteendeblockering och inneslutning
 
-- **Regler för att minska attackytan på [klientsidan](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)** Fördefinierade vanliga attackbeteenden förhindras från att köras, enligt reglerna för minskning av attackytan. När sådana beteenden försöker köras visas de i Microsoft Defender Säkerhetscenter som [https://securitycenter.windows.com](https://securitycenter.windows.com) informationsaviseringar. (Regler för att minska attackytan är inte aktiverade som standard. Du konfigurerar principerna i Microsoft Defender Säkerhetscenter.)
+- **Regler för att minska attackytan på [klientsidan](/microsoft-365/security/defender-endpoint/attack-surface-reduction)** Fördefinierade vanliga attackbeteenden förhindras från att köras, enligt reglerna för minskning av attackytan. När sådana beteenden försöker köras kan de ses i Microsoft Defender Säkerhetscenter [https://securitycenter.windows.com](https://securitycenter.windows.com) som informationsaviseringar. (Regler för att minska attackytan är inte aktiverade som standard, du konfigurerar principerna i Microsoft Defender Säkerhetscenter.)
 
 - **[Klientbeteendeblockering](client-behavioral-blocking.md)** Hot på slutpunkter upptäcks genom maskininlärning och blockeras och åtgärdas automatiskt. (Klientbeteendeblockering är aktiverat som standard.) 
 
 - **[Blockering av feedbackslingor](feedback-loop-blocking.md)** (kallas även snabbt skydd) Hotidentifiering observeras via beteendeinformation. Hot stoppas och förhindras från att köras på andra slutpunkter. (Blockering av feedbackslingar är aktiverat som standard.) 
 
-- **[Identifiering av slutpunkt och svar (EDR) i blockeringsläge](edr-in-block-mode.md)** Skadliga artefakter eller beteenden som observerats genom skydd efter intrång blockeras och finns. EDR i blockläge fungerar även om Microsoft Defender Antivirus inte är den primära antiviruslösningen. (EDR i blockeringsläge är inte aktiverat som standard, du aktiverar det i Microsoft Defender Säkerhetscenter.) 
+- **[Identifiering och svar av slutpunkt (Identifiering och åtgärd på slutpunkt) i blockeringsläge](edr-in-block-mode.md)** Skadliga artefakter eller beteenden som observerats genom skydd efter intrång blockeras och finns. Identifiering och åtgärd på slutpunkt i blockeringsläge fungerar även om Microsoft Defender Antivirus inte är den primära antiviruslösningen. (Identifiering och åtgärd på slutpunkt i blockläge är inte aktiverat som standard, du aktiverar det i Microsoft Defender Säkerhetscenter.) 
 
-Räkna med att fler kommer in när det gäller beteendeblockering och inneslutning, eftersom Microsoft fortsätter att förbättra funktionerna för skydd mot hot. Om du vill se vad som är planerat och lanserat nu kan du besöka [Översikt över Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap)
+Räkna med att fler kommer in när det gäller beteendeblockering och inneslutning, eftersom Microsoft fortsätter att förbättra funktionerna för skydd mot hot. Om du vill se vad som är planerat och lanserat nu kan du besöka [Microsoft 365 översikt.](https://www.microsoft.com/microsoft-365/roadmap)
 
 ## <a name="examples-of-behavioral-blocking-and-containment-in-action"></a>Exempel på beteendeblockering och inneslutning i praktiken
 
@@ -98,7 +98,7 @@ Behavior-based device learning models in Defender for Endpoint caught and stoppe
 
 När attacken upptäcktes och stoppades utlöstes varningar, till exempel en "initial åtkomstvarning" och visades i Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ):
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Första åtkomstavisering i Microsoft Defender Säkerhetscenter":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Avisering om inledande åtkomst i Microsoft Defender Säkerhetscenter":::
 
 Det här exemplet visar hur funktionsbaserade enhetsinlärningsmodeller i molnet lägger till nya skyddslager mot attacker, även efter att de har börjat köra.
 
@@ -120,12 +120,12 @@ Det här exemplet visar att hot identifieras, finns och blockeras automatiskt me
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Läs mer om Defender för Slutpunkt](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+- [Läs mer om Defender för Slutpunkt](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 
 - [Konfigurera minskningsregler för attackytan](attack-surface-reduction.md)
 
-- [Aktivera EDR i blockläge](edr-in-block-mode.md)
+- [Aktivera Identifiering och åtgärd på slutpunkt i blockeringsläge](edr-in-block-mode.md)
 
 - [Se den senaste globala hotaktiviteten](https://www.microsoft.com/wdsi/threats)
 
-- [Få en översikt över Microsoft 365 Defender ](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- [Få en översikt över Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)

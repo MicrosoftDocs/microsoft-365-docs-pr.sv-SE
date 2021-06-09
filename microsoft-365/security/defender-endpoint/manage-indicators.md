@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: fb87f36c5289d622df2615046c5bb2fd8fad9543
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470899"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842248"
 ---
 # <a name="create-indicators"></a>Skapa indikatorer
 
@@ -68,7 +68,7 @@ Du kan skapa en indikator för:
 
 
 > [!NOTE]
-> Det finns en gräns på 15 000 indikatorer per klientorganisation. Fil- och certifikatindikatorer blockerar inte [undantag som definierats för Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) Indikatorer stöds inte i Microsoft Defender Antivirus när det är i passivt läge. 
+> Det finns en gräns på 15 000 indikatorer per klientorganisation. Arkiv- och certifikatindikatorer blockerar inte [undantag som definierats för Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Indikatorer stöds inte i Microsoft Defender Antivirus när det är i passivt läge. 
 
 
 ## <a name="related-topics"></a>Relaterade ämnen

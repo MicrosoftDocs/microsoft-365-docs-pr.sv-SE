@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 906ae4bdebcc46e210fa9c5dcb5387c880fdbb38
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 9f1934de8f710a21bc362e735bb6f1eab7a2d287
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939666"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845444"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Proaktiv sökning efter hot med avancerad sökning
 
@@ -43,8 +43,8 @@ I den här videon får du en snabb överblick över avancerad sökning och en ko
 Du kan använda samma hotsökningsfrågor för att skapa anpassade identifieringsregler. Dessa regler körs automatiskt för att kontrollera och sedan svara på misstänkt intrång, felkonfigurerade datorer och andra resultat.
 
 >[!TIP]
->Använd [avancerad sökning i Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) för att leta efter hot med hjälp av data från Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet. [Aktivera Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
-Läs mer om hur du flyttar dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
+>Använd [avancerad sökning i Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) för att leta efter hot med hjälp av data från Defender för Slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet. [Aktivera Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
+Läs mer om hur du flyttar dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender i Migrera avancerade sökfrågor från [Microsoft Defender för slutpunkt.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="get-started-with-advanced-hunting"></a>Komma igång med avancerad sökning
 
@@ -54,7 +54,7 @@ Vi rekommenderar att du går igenom flera olika steg för att snabbt komma igån
 
 | Utbildningsmål | Beskrivning | Resurs |
 |--|--|--|
-| **Lär dig språket** | Avancerad sökning baseras på [Kusto-frågespråk som](https://docs.microsoft.com/azure/kusto/query/)har stöd för samma syntax och operatorer. Börja lära dig frågespråket genom att köra den första frågan. | [Översikt över frågespråk](advanced-hunting-query-language.md) |
+| **Lär dig språket** | Avancerad sökning baseras på [Kusto-frågespråk som](/azure/kusto/query/)har stöd för samma syntax och operatorer. Börja lära dig frågespråket genom att köra den första frågan. | [Översikt över frågespråk](advanced-hunting-query-language.md) |
 | **Lär dig hur du använder frågeresultatet** | Läs mer om diagram och olika sätt att visa eller exportera resultaten. Se hur du snabbt kan justera frågorna och öka detaljinformationen. | [Arbeta med frågeresultat](advanced-hunting-query-results.md) |
 | **Förstå schemat** | Få en bra förståelse på hög nivå för tabellerna i schemat och deras kolumner. Lär dig var du letar efter data när du skapar dina frågor. | [Schemareferens](advanced-hunting-schema-reference.md) |
 | **Använda fördefinierade frågor** | Utforska samlingar av fördefinierade frågor som täcker olika scenarier för hot efter hot. | [Delade frågor](advanced-hunting-shared-queries.md) |

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 68bc53f2ae0b44567530cc1dd733c9dd37d380ca
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 9227987544e1cee1eeb4b65b5ae6bbf719558dd4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769599"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845216"
 ---
 # <a name="get-recommendation-by-software"></a>Hämta rekommendationen efter programvara
 
@@ -96,5 +96,5 @@ Här är ett exempel på svaret.
 ```
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Riskbaserade hot & sårbarhetshantering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Rekommendation & säkerhetsrisk för hot](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Riskbaserade hot & sårbarhetshantering](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Rekommendation & säkerhetsrisk för hot](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

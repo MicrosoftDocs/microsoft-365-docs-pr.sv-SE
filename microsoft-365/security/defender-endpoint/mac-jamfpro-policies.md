@@ -1,5 +1,5 @@
 ---
-title: Konfigurera microsoft Defender för slutpunkt på macOS-principer i Jamf Pro
+title: Konfigurera principer för Microsoft Defender för slutpunkt på macOS i Jamf Pro
 description: Lär dig konfigurera Microsoft Defender för slutpunkt på macOS-principer i Jamf Pro
 keywords: principer, microsoft, defender, Microsoft Defender för slutpunkt, mac, installation, distribuera, avinstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84d0b37632dc23615a37bbbd73c17fe509dedae5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e26bb85fc74b6be49a9f8116792a7f28e8fa7e05
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934687"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842272"
 ---
-# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Konfigurera microsoft Defender för slutpunkt på macOS-principer i Jamf Pro
+# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Konfigurera principer för Microsoft Defender för slutpunkt på macOS i Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ Du måste göra följande:
 
 1. [Skaffa Microsoft Defender för slutpunktens onboarding-paket](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 
-2. [Skapa en konfigurationsprofil i Jamf Pro med onboarding-paketet](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
+2. [Skapa en konfigurationsprofil i Jamf Pro använda onboarding-paketet](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 
 3. [Konfigurera Microsoft Defender för slutpunktsinställningar](#step-3-configure-microsoft-defender-for-endpoint-settings)
 
@@ -56,18 +56,18 @@ Du måste göra följande:
 
 9. [Konfigurera nätverkstillägg](#step-9-configure-network-extension)
 
-10. [Schemasökningar med Microsoft Defender för Slutpunkt i macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [Schemasökningar med Microsoft Defender för Slutpunkt i macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
 11. [Distribuera Microsoft Defender för slutpunkt i macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>Steg 1: Skaffa Microsoft Defender för slutpunktens introduktionspaket
 
-1. I [Microsoft Defender Säkerhetscenter](https://securitycenter.microsoft.com )går du till **Inställningar > Onboarding**. 
+1. I [Microsoft Defender Säkerhetscenter](https://securitycenter.microsoft.com )navigerar du **till Inställningar > Onboarding**. 
 
-2. Välj macOS som operativsystem och Hantering av mobila enheter/Microsoft Intune som distributionsmetod.
+2. Välj macOS som operativsystem och Hantering av mobila enheter /Microsoft Intune som distributionsmetod.
 
-    ![Bild på Microsoft Defender Säkerhetscenter](images/onboarding-macos.png)
+    ![Bild av Microsoft Defender Säkerhetscenter](images/onboarding-macos.png)
 
 3. Välj **Hämta introduktionspaket** (WindowsDefenderATPOnboardingPackage.zip).
 
@@ -76,31 +76,31 @@ Du måste göra följande:
 5. Kopiera filen till önskad plats. Till exempel  `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist` .
 
 
-## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>Steg 2: Skapa en konfigurationsprofil i Jamf Pro med onboarding-paketet
+## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a>Steg 2: Skapa en konfigurationsprofil i Jamf Pro använda onboarding-paketet
 
 1. Leta reda på `WindowsDefenderATPOnboarding.plist` filen från föregående avsnitt.
 
    ![Bild på filen WindowsDefenderATPOnboarding](images/plist-onboarding-file.png)
 
  
-2. På instrumentpanelen Jamf Pro väljer du **Ny**.
+2. I instrumentpanelen i Jamf Pro väljer du **Ny**.
 
-    ![Bild av hur du skapar en ny Jamf Pro-instrumentpanel](images/jamf-pro-configure-profile.png)
+    ![Bild på hur du skapar en ny Jamf Pro instrumentpanel](images/jamf-pro-configure-profile.png)
 
 3. Ange följande information:
 
    **Allmänt**
-   - Namn: MDATP-registrering för macOS
-   - Beskrivning: MDATP EDR-registrering för macOS
+   - Namn: MDATP onboarding för macOS
+   - Beskrivning: MDATP Identifiering och åtgärd på slutpunkt onboarding för macOS
    - Kategori: Ingen
    - Distributionsmetod: Installera automatiskt
    - Nivå: Datornivå
 
-4. I **Program & Anpassade inställningar väljer** du **Konfigurera**.
+4. I **Program & Egen Inställningar** du **Konfigurera**.
 
     ![Bild av konfigurera app och anpassade inställningar](images/jamfpro-mac-profile.png)
 
-5. Välj **Ladda upp fil (PLIST-fil)** och ange **sedan:** i Preference Domain anger du: `com.microsoft.wdav.atp` . 
+5. Välj **Upload (PLIST-fil)** och ange sedan: i **Preference Domain** anger du: `com.microsoft.wdav.atp` . 
 
     ![Bild på en fil som gör det enkelt att ladda upp en fil](images/jamfpro-plist-upload.png)
 
@@ -110,7 +110,7 @@ Du måste göra följande:
 
     ![Bild på onboarding-fil](images/jamfpro-plist-file-onboard.png)
 
-8. Välj **Ladda upp**. 
+8. Välj **Upload**. 
 
     ![Bild på uppladdning av plist-fil](images/jamfpro-upload-plist.png)
 
@@ -271,31 +271,31 @@ Du måste göra följande:
 2. Spara filen som `MDATP_MDAV_configuration_settings.plist` .
 
 
-3.  Välj **Allmänt** på instrumentpanelen Jamf Pro.
+3.  I instrumentpanelen i Jamf Pro väljer du **Allmänt**.
 
-    ![Bild av den nya instrumentpanelen Jamf Pro](images/644e0f3af40c29e80ca1443535b2fe32.png)
+    ![Bild på den nya Dashboard-Pro Jamf](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
 4. Ange följande information:
 
     **Allmänt**
     
-    - Namn: Konfigurationsinställningar för MDATP MDAV
+    - Namn: MDATP MDAV-konfigurationsinställningar
     - Beskrivning:\<blank\>
     - Kategori: Ingen (standard)
     - Distributionsmetod: Installera automatiskt(standard)
     - Nivå: Datornivå(standard)
 
-    ![Bild av konfigurationsinställningar för MDATP MDAV](images/3160906404bc5a2edf84d1d015894e3b.png)
+    ![Bild av MDATP för MDAV-konfiguration](images/3160906404bc5a2edf84d1d015894e3b.png)
 
-5. I **Program & Anpassade inställningar väljer** du **Konfigurera**.
+5. I **Program & Egen Inställningar** du **Konfigurera**.
 
     ![Bild av app och anpassade inställningar](images/e1cc1e48ec9d5d688087b4d771e668d2.png)
 
-6. Välj **Ladda upp fil (PLIST-fil).**
+6. Välj **Upload (PLIST-fil)**.
 
     ![Bild av plist-fil med konfigurationsinställningar](images/6f85269276b2278eca4bce84f935f87b.png)
 
-7. I **Preferences Domain** anger du och väljer sedan Upload `com.microsoft.wdav`  **PLIST File**.
+7. I **Preferences Domain** anger du och väljer Upload `com.microsoft.wdav` **PLIST-fil**.
 
     ![Bild av domän med konfigurationsinställningar](images/db15f147dd959e872a044184711d7d46.png)
 
@@ -307,7 +307,7 @@ Du måste göra följande:
 
     ![Bild av konfigurationsinställningar för mdatpmdav](images/98acea3750113b8dbab334296e833003.png)
 
-10. Välj **Ladda upp**.
+10. Välj **Upload**.
 
     ![Bild på konfigurationsinställning för uppladdning](images/0adb21c13206861ba9b30a879ade93d3.png)
 
@@ -349,12 +349,12 @@ Du måste göra följande:
 
 De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
-1. På instrumentpanelen Jamf Pro väljer du **Datorer** och sedan **Konfigurationsprofiler.**
+1. I instrumentpanelen För Pro det här **instrumentpanelen väljer du Datorer** och sedan **Konfigurationsprofiler**.
 
 2. Klicka **på** Nytt och ange följande information för **Alternativ:**
     
     - Tabb **Allmänt:** 
-        - **Namn**: Meddelandeinställningar för MDATP MDAV
+        - **Namn**: MDATP för MDAV-aviseringar
         - **Beskrivning**: macOS 10.15 (Catalina) eller nyare
         - **Kategori:** Ingen *(standard)*
         - **Distributionsmetod:** Installera automatiskt *(standard)*
@@ -373,7 +373,7 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
         ![Bild på konfigurationsinställningar mdatpmdav-meddelandefältet](images/7f9138053dbcbf928e5182ee7b295ebe.png)
 
-    - Flikmeddelanden , klicka **på Lägg** till en gång till, rulla ned till **Inställningar för nya meddelanden** 
+    - Flikmeddelanden , klicka **på Lägg** till en gång till, bläddra ned till **Nya Inställningar** 
         - **Paket-ID:**`com.microsoft.autoupdate2`
         - Konfigurera resten av inställningarna till samma värden som ovan
 
@@ -421,7 +421,7 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
 2. Spara den som `MDATP_MDAV_MAU_settings.plist` .
 
-3. Välj **Allmänt** på instrumentpanelen Jamf Pro. 
+3. I instrumentpanelen i Jamf Pro väljer du **Allmänt**. 
 
     ![Bild av konfigurationsinställning för allmän bild](images/eaba2a23dd34f73bf59e826217ba6f15.png)
 
@@ -435,15 +435,15 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
     - Distributionsmetod: Installera automatiskt(standard)
     - Nivå: Datornivå(standard)
 
-5. I **Program & Anpassade inställningar väljer** du **Konfigurera**.
+5. I **Program & Egen Inställningar** du **Konfigurera**.
 
     ![Bild av konfigurationsinställningsapp och anpassade inställningar](images/1f72e9c15eaafcabf1504397e99be311.png)
 
-6. Välj **Ladda upp fil (PLIST-fil).**
+6. Välj **Upload (PLIST-fil)**.
 
     ![Bild på konfigurationsinställning för plist](images/1213872db5833aa8be535da57653219f.png)  
 
-7. I **Preference Domain** anger du: och väljer sedan Upload `com.microsoft.autoupdate2` **PLIST File**.
+7. I **Preference Domain** anger du: och väljer Upload `com.microsoft.autoupdate2` **PLIST-fil**.
 
     ![Bild av konfigurationsinställning före domän](images/1213872db5833aa8be535da57653219f.png)
 
@@ -455,7 +455,7 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
     ![Bild på konfigurationsinställning mdatpmdavmau-inställningar](images/a26bd4967cd54bb113a2c8d32894c3de.png)
 
-10. Välj **Ladda upp**.
+10. Välj **Upload**.
     ![Bild på konfigurationskonfigurationskonfiguration](images/4239ca0528efb0734e4ca0b490bfb22d.png)
 
     ![Bild på konfigurationskonfigurationsinställningar](images/4ec20e72c8aed9a4c16912e01692436a.png)
@@ -482,7 +482,7 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
 ## <a name="step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint"></a>Steg 6: Ge fullständig diskåtkomst till Microsoft Defender för Slutpunkt
 
-1. Välj Konfigurationsprofiler på instrumentpanelen Jamf **Pro.**
+1. Välj Konfigurationsprofiler Pro i **Det här instrumentpanelen .**
 
     ![Bild på konfigurationsinställningskonfigurationsprofil](images/264493cd01e62c7085659d6fdc26dc91.png)
 
@@ -491,7 +491,7 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 3. Ange följande information:
 
     **Allmänt** 
-    - Namn: MDATP MDAV – tilldela fullständig diskåtkomst till EDR och AV
+    - Namn: MDATP MDAV – tilldela fullständig diskåtkomst till Identifiering och åtgärd på slutpunkt och AV
     - Beskrivning: På macOS Catalina eller nyare, den nya kontrollen för sekretesspolicy
     - Kategori: Ingen
     - Distributionsmetod: Installera automatiskt
@@ -569,7 +569,7 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
     
     ![Bild på konfigurationsinställning donimg2](images/6c8b406ee224335a8c65d06953dc756e.png)
 
-Du kan också ladda ned [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) och ladda upp den till JAMF-konfigurationsprofiler enligt beskrivningen i Distribuera anpassade konfigurationsprofiler med [Jamf Pro| Metod 2: Ladda upp en konfigurationsprofil till Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
+Du kan också ladda ned [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) och ladda upp den till JAMF-konfigurationsprofiler enligt beskrivningen i Distribuera anpassade konfigurationsprofiler med [Jamf Pro| Metod 2: Upload en konfigurationsprofil till Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a>Steg 7: Godkänna Kernel-tillägg för Microsoft Defender för Slutpunkt
 
@@ -585,7 +585,7 @@ Du kan också ladda ned [fulldisk.mobileconfig](https://github.com/microsoft/mda
     **Allmänt** 
     
     - Namn: MDATP MDAV Kernel-tillägg
-    - Beskrivning: MDATP-kerneltillägg (kext)
+    - Beskrivning: MDATP (kext)
     - Kategori: Ingen
     - Distributionsmetod: Installera automatiskt
     - Nivå: Datornivå
@@ -624,7 +624,7 @@ Du kan också ladda ned [fulldisk.mobileconfig](https://github.com/microsoft/mda
 
     ![Bild på konfigurationsinställningar klarbild](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
-Du kan också ladda ned [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) och ladda upp den till JAMF-konfigurationsprofiler enligt beskrivningen i Distribuera anpassade konfigurationsprofiler med [Jamf Pro| Metod 2: Ladda upp en konfigurationsprofil till Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
+Du kan också ladda ned [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) och ladda upp den till JAMF-konfigurationsprofiler enligt beskrivningen i Distribuera anpassade konfigurationsprofiler med [Jamf Pro| Metod 2: Upload en konfigurationsprofil till Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ## <a name="step-8-approve-system-extensions-for-microsoft-defender-for-endpoint"></a>Steg 8: Godkänna systemtillägg för Microsoft Defender för Slutpunkt
 
@@ -637,7 +637,7 @@ Du kan också ladda ned [kext.mobileconfig](https://github.com/microsoft/mdatp-x
     **Allmänt**
     
     - Namn: MDATP MDAV-systemtillägg
-    - Beskrivning: MDATP-systemtillägg
+    - Beskrivning: MDATP för systemtillägg
     - Kategori: Ingen
     - Distributionsmetod: Installera automatiskt
     - Nivå: Datornivå
@@ -681,23 +681,23 @@ Du kan också ladda ned [kext.mobileconfig](https://github.com/microsoft/mdatp-x
 
 ## <a name="step-9-configure-network-extension"></a>Steg 9: Konfigurera nätverkstillägg
 
-Som en del av funktionerna Identifiering och svar av slutpunkt inspekterar Microsoft Defender för slutpunkt på macOS sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
+Som en del av funktionerna Slutpunktsidentifiering och svar inspekterar Microsoft Defender för slutpunkt på macOS sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
 
 De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
-1. På instrumentpanelen Jamf Pro väljer du **Datorer** och sedan **Konfigurationsprofiler.**
+1. I instrumentpanelen För Pro det här **instrumentpanelen väljer du Datorer** och sedan **Konfigurationsprofiler**.
 
 2. Klicka **på** Nytt och ange följande information för **Alternativ:**
 
     - Tabb **Allmänt:** 
-        - **Namn:** Microsoft Defender ATP-nätverkstillägg
+        - **Namn**: Microsoft Defender ATP nätverkstillägg
         - **Beskrivning**: macOS 10.15 (Catalina) eller nyare
         - **Kategori:** Ingen *(standard)*
         - **Distributionsmetod:** Installera automatiskt *(standard)*
         - **Nivå:** Datornivå *(standard)*
 
     - **Flikinnehållsfilter:**
-        - **Filternamn:** Microsoft Defender ATP-innehållsfilter
+        - **Filternamn:** Microsoft Defender ATP innehållsfilter
         - **Identifierare:**`com.microsoft.wdav`
         - Lämna **Tjänstadress,** **Organisation,** **Användarnamn,** **Lösenord,** **Certifikat** tomt **(Inkludera** *är inte* markerat)
         - **Filterordning**: Kontroll
@@ -729,11 +729,11 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 
     ![Bild av konfigurationsinställningar netextfinal](images/netext-final.png)
 
-Du kan också ladda ned [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) och ladda upp den till JAMF-konfigurationsprofiler enligt beskrivningen i Distribuera anpassade konfigurationsprofiler med [Jamf Pro| Metod 2: Ladda upp en konfigurationsprofil till Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
+Du kan också ladda ned [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) och ladda upp den till JAMF-konfigurationsprofiler enligt beskrivningen i Distribuera anpassade konfigurationsprofiler med [Jamf Pro| Metod 2: Upload en konfigurationsprofil till Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Steg 10: Schemalägga genomsökningar med Microsoft Defender för Slutpunkt i macOS
-Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för slutpunkt på macOS.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för slutpunkt på macOS.](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>Steg 11: Distribuera Microsoft Defender för slutpunkt i macOS
@@ -746,7 +746,7 @@ Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för 
 
     ![Bild på utforskaren1 wdavmdmpkg](images/fb2220fed3a530f4b3ef36f600da0c27.png)
 
-3. Öppna instrumentpanelen Jamf Pro.
+3. Öppna instrumentpanelen för jamf Pro.
 
     ![Bild på konfigurationsinställningar som gör attpro kan göra det](images/990742cd9a15ca9fdd37c9f695d1b9f4.png)
 
@@ -770,7 +770,7 @@ Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för 
     
     ![En skärmbild av en datorskärmsbeskrivning som genereras automatiskt](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
-7. Välj **Öppna**. Ställ in **visningsnamnet** på **Microsoft Defender Advanced Threat Protection och Microsoft Defender Antivirus.**
+7. Välj **Öppna**. Ställ in **visningsnamnet** till **Microsoft Defender Avancerat skydd och Microsoft Defender Antivirus**.
 
     **Manifestfil** krävs inte. Microsoft Defender för slutpunkt fungerar utan manifestfil.
     
@@ -814,9 +814,9 @@ Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för 
  
     ![Bild på konfigurationsinställningar för konfigurering](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
-15. Välj Lägg **till-knappen** bredvid **Microsoft Defender Advanced Threat Protection och Microsoft Defender Antivirus**.
+15. Välj Lägg **till** bredvid Microsoft Defender Avancerat skydd **och Microsoft Defender Antivirus**.
 
-    ![Bild av konfigurationsinställningar MDATP och MDA add](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
+    ![Bild av konfigurationsinställningar som MDATP och MDA lägger till](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
 16. Välj **Spara**.
 

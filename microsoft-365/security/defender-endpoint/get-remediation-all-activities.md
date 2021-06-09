@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b95fa2da177a3ecb93bcf3e2085be6111c2c641e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 60f80e78a5f5c7da44a218c30f4b0173d4ecc829
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770523"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845144"
 ---
 # <a name="list-all-remediation-activities"></a>Lista alla åtgärdsaktiviteter
 
@@ -55,7 +55,7 @@ En av följande behörigheter krävs för att anropa detta API. Mer information,
 Behörighetstyp | Behörighet | Visningsnamn för behörighet
 :---|:---|:---
 Program | RemediationTask.Read.All | \'Läsa sårbarhetsinformation om hot och sårbarhetshantering\'
-Delegerat (arbets- eller skolkonto) | RemediationTask.Read.Read | \'Läsa sårbarhetsinformation om hot och sårbarhetshantering\'
+Delegerat (arbets- eller skolkonto) | RemediationTask.Read | \'Läsa sårbarhetsinformation om hot och sårbarhetshantering\'
 
 ## <a name="properties"></a>Egenskaper
 
@@ -71,7 +71,7 @@ dueOn | DateTime | Förfallodatum som skapare uppsättningen för den här åtg�
 fixedDevices | . | Antalet enheter som har åtgärdats | 2
 id | Sträng | ID för den här åtgärdsaktiviteten | 097d9735-5479-4899-b1b7-77398899df92
 nameId | Sträng | Relaterade produktnamn | Microsoft Silverlight
-prioritet | Sträng | Prioritet för skaparuppsättningen för den här åtgärdsaktiviteten (Hög\Medel\Låg) | Hög
+prioritet | Sträng | Prioritet för skaparuppsättningen för den här åtgärdsaktiviteten (Hög\Medel\Låg) | Högsta
 productId | Sträng | Relaterade produkt-ID | microsoft-_-silverlight
 productivityImpactRemediationType | Sträng | Några konfigurationsändringar kunde endast begäras för enheter utan påverkan från användare. Det här värdet anger valet mellan "alla exponerade enheter" eller "endast enheter utan påverkan från användare". | AllExposedAssets
 rbacGroupNames | Sträng | Gruppnamn för relaterade enheter | [ "Windows Servers", "Windows 10" ]

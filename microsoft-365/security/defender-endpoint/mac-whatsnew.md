@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 6348d688103c51176fbed36c923a660c77a2258d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651278"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842788"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Vad är nytt i Microsoft Defender för slutpunkt på Mac
 
@@ -163,7 +163,7 @@ ms.locfileid: "52651278"
 
 ## <a name="1010031"></a>101.00.31
 
-- Förbättrad [produktinitiering för Intune-användare](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
+- Förbättrad [produktinitiering för Intune-användare](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - Undantag [från antivirus har nu stöd för jokertecken](mac-exclusions.md#supported-exclusion-types)
 - Lade till möjligheten att utlösa antivirusskanningar från macOS-snabbmenyn. Nu kan du högerklicka på en fil eller en mapp i Finder och välja **Sök med Microsoft Defender för slutpunkt**
 - Nedgradering av produkter på plats kommer nu uttryckligen inte att tillåtas av installationsprogrammet. Om du behöver nedgradera måste du först avinstallera den befintliga versionen och konfigurera om enheten

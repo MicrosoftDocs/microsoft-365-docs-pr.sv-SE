@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: b937dd41f0296f2cf4102f41f8ab10bd55e1c35d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200287"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845576"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Skydda viktiga mappar med kontrollerad mappåtkomst
 
@@ -36,10 +36,10 @@ ms.locfileid: "51200287"
 
 ## <a name="what-is-controlled-folder-access"></a>Vad är reglerad mappåtkomst?
 
-Kontrollerad mappåtkomst skyddar dina värdefulla data från skadliga appar och hot, till exempel utpressningstrojaner. Kontrollerad mappåtkomst skyddar dina data genom att kontrollera appar mot en lista med kända, betrodda appar. Stöd för Windows Server 2019- och Windows 10-klienter, kontrollerad mappåtkomst kan aktiveras med hjälp av Windows-säkerhetsappen, Microsoft Endpoint Configuration Manager eller Intune (för hanterade enheter). 
+Kontrollerad mappåtkomst skyddar dina värdefulla data från skadliga appar och hot, till exempel utpressningstrojaner. Kontrollerad mappåtkomst skyddar dina data genom att kontrollera appar mot en lista med kända, betrodda appar. Stöds i Windows Server 2019 och Windows 10-klienter. Reglerad mappåtkomst kan aktiveras med Windows-säkerhet-appen, Microsoft Endpoint Configuration Manager- eller Intune-appen (för hanterade enheter). 
 
 > [!NOTE]
-> Skriptmotorer är inte betrodda och du kan inte ge dem åtkomst till skyddade skyddade mappar.  Till exempel är PowerShell inte betrott genom reglerad mappåtkomst, även om du tillåter det med [certifikat- och filindikatorer.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates) 
+> Skriptmotorer är inte betrodda och du kan inte ge dem åtkomst till skyddade skyddade mappar.  Till exempel är PowerShell inte betrott genom reglerad mappåtkomst, även om du tillåter det med [certifikat- och filindikatorer.](/microsoft-365/security/defender-endpoint/indicator-certificates) 
 
 Reglerad mappåtkomst fungerar bäst med [Microsoft Defender](microsoft-defender-endpoint.md)för Endpoint , som ger dig detaljerad rapportering om kontrollerad mappåtkomsthändelser och -block som en del av de vanliga scenarierna för [aviseringsundersökning.](investigate-alerts.md)
 
@@ -62,13 +62,13 @@ Kontrollerad mappåtkomst är särskilt användbart när du vill skydda dina dok
 
 De [skyddade mapparna](#review-controlled-folder-access-events-in-windows-event-viewer) omfattar vanliga systemmappar (inklusive startsekvenser) och du kan [lägga till fler mappar.](customize-controlled-folders.md#protect-additional-folders) Du kan också [tillåta att appar](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) får åtkomst till de skyddade mapparna.
 
-Du kan använda [granskningsläge för](audit-windows-defender.md) att utvärdera hur kontrollerad mappåtkomst skulle påverka organisationen om det var aktiverat. Du kan också gå till den webbplats som är grunden för Windows Defender [Test på demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) för att bekräfta att funktionen fungerar och se hur den fungerar.
+Du kan använda [granskningsläge för](audit-windows-defender.md) att utvärdera hur kontrollerad mappåtkomst skulle påverka organisationen om det var aktiverat. Du kan också gå till webbplatsen Windows Defender Test på [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) för att bekräfta att funktionen fungerar och se hur den fungerar.
 
 Kontrollerad mappåtkomst stöds i följande versioner av Windows:
-- [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) och senare
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) och senare
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-## <a name="windows-system-folders-are-protected-by-default"></a>Windows-systemmappar är skyddade som standard
+## <a name="windows-system-folders-are-protected-by-default"></a>Windows skydda systemmappar som standard
 
 Windows-systemmappar skyddas som standard tillsammans med flera andra mappar: 
 
@@ -83,17 +83,17 @@ Windows-systemmappar skyddas som standard tillsammans med flera andra mappar:
 - `c:\Users\<username>\Favorites`
 
 > [!NOTE]
-> Du kan konfigurera ytterligare mappar som skyddade, men du kan inte ta bort systemmapparna i Windows som är skyddade som standard.
+> Du kan konfigurera ytterligare mappar som skyddade, men du kan inte Windows bort systemmappar som är skyddade som standard.
 
 ## <a name="requirements-for-controlled-folder-access"></a>Krav för kontrollerad mappåtkomst
 
-Kontrollerad mappåtkomst kräver att [realtidsskyddet för Microsoft Defender Antivirus är inaktiverat.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+Reglerad mappåtkomst kräver [Microsoft Defender Antivirus skydd i realtid.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>Granska händelser för kontrollerad mappåtkomst i Microsoft Defender Säkerhetscenter
+## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>Granska händelser i kontrollerad mappåtkomst i Microsoft Defender Säkerhetscenter
 
 Defender för Endpoint tillhandahåller detaljerad rapportering om händelser och block som en del av dess scenarier [för aviseringsundersökning.](investigate-alerts.md)
 
-Du kan fråga Microsoft Defender efter Slutpunktsdata med hjälp av [Avancerad sökning](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection). Om du använder granskningsläge kan [](advanced-hunting-overview.md) [du](audit-windows-defender.md)använda avancerad sökning för att se hur styrda inställningar för mappåtkomst skulle påverka din miljö om de var aktiverade.
+Du kan fråga Microsoft Defender efter Slutpunktsdata med hjälp av [Avancerad sökning](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection). Om du använder granskningsläge kan [](advanced-hunting-overview.md) [du](audit-windows-defender.md)använda avancerad sökning för att se hur styrda inställningar för mappåtkomst skulle påverka din miljö om de var aktiverade.
 
 Exempelfråga:
 
@@ -104,10 +104,10 @@ DeviceEvents
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Granska styrda mappåtkomsthändelser i Windows Loggboken
 
-Du kan granska Windows-händelseloggen om du vill se händelser som skapas när styrda mappåtkomstblock (eller granskningar) i en app:
+Du kan granska Windows händelseloggen för att se händelser som skapas när reglerad mappåtkomstblock (eller granskningar) i en app:
 
 1. Ladda ned [utvärderingspaketet](https://aka.ms/mp7z2w) och extrahera filen *cfa-events.xml* till en lättillgänglig plats på enheten.
-2. Skriv **Loggboken** på Start-menyn för att öppna Windows loggboken.
+2. Skriv **Loggboken** på Start-menyn för att öppna Windows Loggboken.
 3. I den vänstra panelen under **Åtgärder väljer** du Importera **anpassad vy...**.
 4. Navigera till den plats där *du* cfa-events.xmloch markera den. Du kan också [kopiera XML direkt.](event-views.md)
 5. Välj **OK**.
@@ -122,10 +122,10 @@ I följande tabell visas händelser som är relaterade till kontrollerad mappåt
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>Visa eller ändra listan med skyddade mappar
 
-Du kan använda Windows-säkerhetsappen för att visa listan med mappar som skyddas av reglerad mappåtkomst. 
+Du kan använda Windows-säkerhet för att visa listan med mappar som skyddas av reglerad mappåtkomst. 
 
-1. Öppna windows-säkerhetsappen på din Windows 10-enhet.
-2. Välj **Skydd mot & och hot**.
+1. Öppna Windows 10-appen på Windows-säkerhet enhet.
+2. Välj **Skydd mot virus och hot**.
 3. Under **Utpressningstrojanskydd** väljer du **Hantera utpressningstrojanskydd**.
 4. Om reglerad mappåtkomst är inaktiverad måste du aktivera den. Välj **skyddade mappar**.
 5. Gör något av följande:
@@ -138,5 +138,5 @@ Du kan använda Windows-säkerhetsappen för att visa listan med mappar som skyd
 ## <a name="see-also"></a>Se även
 
 - [Utvärdera kontrollerad mappåtkomst](evaluate-controlled-folder-access.md)
-- [Anpassa reglerad mappåtkomst](customize-controlled-folders.md)
+- [Anpassa kontrollerad mappåtkomst](customize-controlled-folders.md)
 - [Skydda fler mappar](customize-controlled-folders.md#protect-additional-folders)

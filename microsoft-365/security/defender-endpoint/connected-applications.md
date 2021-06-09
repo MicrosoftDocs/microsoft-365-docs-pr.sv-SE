@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26c531c0544f92d664bfa0f1a21e4f33a0765d24
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 06ef716e9deee7b20e8615bd22c93130ee18b77f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893503"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845588"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Anslutna program i Microsoft Defender för Slutpunkt
 
@@ -37,9 +37,9 @@ ms.locfileid: "51893503"
 
 Anslutna program integreras med Defender för slutpunktsplattformen med API:er. 
 
-Program använder standard-OAuth 2.0-protokollet för att autentisera och tillhandahålla token för användning med Microsoft Defender för slutpunkts-API:er.  Dessutom tillåter Azure Active Directory-program (Azure AD) att innehavaradministratörer kan ställa in explicit kontroll över vilka API:er som kan nås med motsvarande app.
+Program använder standard-OAuth 2.0-protokollet för att autentisera och tillhandahålla token för användning med Microsoft Defender för slutpunkts-API:er.  Dessutom tillåter Azure Active Directory (Azure AD) att innehavaradministratörer kan ställa in explicit kontroll över vilka API:er som kan nås med hjälp av motsvarande app.
  
-Du måste följa de här [anvisningarna för att](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) använda API:erna med det anslutna programmet.
+Du måste följa de här [anvisningarna för att](/microsoft-365/security/defender-endpoint/apis-intro) använda API:erna med det anslutna programmet.
  
 ## <a name="access-the-connected-application-page"></a>Öppna sidan för det anslutna programmet
 I den vänstra navigeringsmenyn väljer du **Partners & API:er**  >  **anslutna AAD-program.**

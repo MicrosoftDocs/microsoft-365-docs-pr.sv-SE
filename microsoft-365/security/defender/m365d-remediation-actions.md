@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f025f23242c28f698e6f67755cc59d21c4463914
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: c8d3838194c25ba49b2611dc355b21e228291b01
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782951"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842536"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Åtgärdsåtgärder i Microsoft 365 Defender
 
@@ -74,7 +74,7 @@ Förutom åtgärder som följer på automatiska undersökningar kan säkerhetsop
 - Manuell e-poståtgärd, till exempel mjuk borttagning av e-postmeddelanden 
 - [Avancerad sökåtgärd](../defender-endpoint/advanced-hunting-overview.md) på enheter eller e-post
 - [Åtgärden](../office-365-security/threat-explorer.md) i Utforskaren för e-postinnehåll, t.ex. flytta e-post till skräppost, mjuk borttagning av e-post eller borttagning av e-post
-- Manuell [svarsåtgärd,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) till exempel ta bort en fil, stoppa en process och ta bort en schemalagd aktivitet
+- Manuell [svarsåtgärd,](/windows/security/threat-protection/microsoft-defender-atp/live-response) till exempel ta bort en fil, stoppa en process och ta bort en schemalagd aktivitet
 - Åtgärd för livesvar med Microsoft Defender för [slutpunkts-API:er,](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)t.ex. isolera en enhet, köra en antivirussökning och hämta information om en fil
 
 ## <a name="next-steps"></a>Nästa steg

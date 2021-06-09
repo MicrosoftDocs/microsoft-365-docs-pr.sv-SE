@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: fa5d5b4470644e1ff50af46a8dd3f035cd9b3184
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346396"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842872"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Resurser för Microsoft Defender för slutpunkt i macOS
 
@@ -119,7 +119,7 @@ Viktiga uppgifter, som att kontrollera produktinställningar och utlösa skannin
 |Skydd   |Gör en fullständig genomsökning                             |`mdatp scan full`                                                                 |
 |Skydd   |Avbryta en pågående sökning på begäran           |`mdatp scan cancel`                                                               |
 |Skydd   |Begära en säkerhetsintelligensuppdatering     |`mdatp definitions update`                                                        |
-|Identifiering och åtgärd på slutpunkt          |Lägg till grupptagg till enhet. Identifiering och åtgärd på slutpunkt-taggar används för att hantera enhetsgrupper. Mer information finns på https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|Identifiering och åtgärd på slutpunkt          |Lägg till grupptagg till enhet. Identifiering och åtgärd på slutpunkt-taggar används för att hantera enhetsgrupper. Mer information finns på /microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |Identifiering och åtgärd på slutpunkt          |Ta bort grupptagg från enhet               |`mdatp edr tag remove --tag-name [name]`                                          |
 |Identifiering och åtgärd på slutpunkt          |Lägg till grupp-ID                               |`mdatp edr group-ids --group-id [group]`                                          |
 

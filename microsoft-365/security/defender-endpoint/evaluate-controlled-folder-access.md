@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 15ea4696052a6c987314e3c7b0dd282a49ed4df8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569911"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842920"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Utvärdera kontrollerad mappåtkomst
 
@@ -31,7 +31,7 @@ ms.locfileid: "51569911"
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[Kontrollerad mappåtkomst](controlled-folders.md) är en funktion som skyddar dokument och filer från att ändras av misstänkta eller skadliga program. Reglerad mappåtkomst stöds i Windows Server 2019- och Windows 10-klienter.
+[Kontrollerad mappåtkomst](controlled-folders.md) är en funktion som skyddar dokument och filer från att ändras av misstänkta eller skadliga program. Reglerad mappåtkomst stöds i Windows Server 2019 och Windows 10 klienter.
 
 Det är särskilt användbart för att skydda mot [utpressningstrojaner](https://www.microsoft.com/wdsi/threats/ransomware) som försöker kryptera dina filer och hålla kvar dem.
 
@@ -52,11 +52,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > Om du vill granska hur kontrollerad mappåtkomst fungerar i organisationen måste du använda ett hanteringsverktyg för att distribuera den här inställningen till enheter i dina nätverk.
-Du kan också använda Grupprincip, Intune, MDM (Mobile Device Management) eller Microsoft Endpoint Manager för att konfigurera och distribuera inställningen enligt beskrivningen i avsnittet huvudkontrollerad [mappåtkomst.](controlled-folders.md)
+Du kan också använda grupprinciper, Intune, MDM (Mobile Device Management) eller Microsoft Endpoint Manager för att konfigurera och distribuera inställningen enligt beskrivningen i avsnittet huvudkontrollerad [mappåtkomst.](controlled-folders.md)
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Granska styrda mappåtkomsthändelser i Windows Loggboken
 
-Följande mappåtkomsthändelser som kontrolleras visas i Windows Loggboken under mappen Microsoft/Windows/Windows Defender/Drift.
+Följande mappåtkomsthändelser som kontrolleras visas i Windows Loggboken under Mappen Microsoft/Windows/Windows Defender/Operational.
 
 Händelse-ID | Beskrivning
 -|-
@@ -65,7 +65,7 @@ Händelse-ID | Beskrivning
  1123 | Blockerad reglerad mappåtkomsthändelse
 
 > [!TIP]
-> Du kan konfigurera en prenumeration [på vidarebefordran av händelser så](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) att loggarna samlas in centralt. 
+> Du kan konfigurera en [Windows prenumeration på vidarebefordran av händelser](/windows/win32/wec/setting-up-a-source-initiated-subscription) så att loggarna samlas in centralt. 
 
 ## <a name="customize-protected-folders-and-apps"></a>Anpassa skyddade mappar och appar
 

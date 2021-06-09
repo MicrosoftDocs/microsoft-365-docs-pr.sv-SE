@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6f2b9a1365a27bb7397aea51dcd5bc9e2631afe2
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 371208433cbb0f65ab5a2808318c03dae6bb6d8b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624711"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842307"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Distribuera Microsoft Defender för Slutpunkt i iOS
 
@@ -44,7 +44,7 @@ I det här avsnittet beskrivs hur du distribuerar Defender för Slutpunkt på iO
 - Se till att iOS-registreringen utförs för dina användare. Användarna måste ha en Defender för slutpunktslicens tilldelad för att kunna använda Defender för slutpunkt i iOS. Anvisningar om [hur du tilldelar licenser](/azure/active-directory/users-groups-roles/licensing-groups-assign) finns i Tilldela licenser till användare.
 
 > [!NOTE]
-> Microsoft Defender för slutpunkt på iOS är nu tillgängligt i [Apple App Store.](https://aka.ms/mdatpiosappstore)
+> Microsoft Defender för slutpunkt på iOS är tillgängligt i [Apple App Store.](https://aka.ms/mdatpiosappstore)
 
 ## <a name="deployment-steps"></a>Distributionssteg
 
@@ -78,9 +78,6 @@ Distribuera Defender för Slutpunkt på iOS via Intune-företagsportal.
 
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>Automatisk registrering av VPN-profil (förenklad registrering)
 
-> [!NOTE]
-> Automatisk onboarding av VPN-profilen är för närvarande i en förhandsversion och stegen som nämns i det här avsnittet kan komma att ändras väsentligt innan det släpps till kommersiellt bruk.
-
 Administratörer kan konfigurera automatisk konfiguration av VPN-profilen. Det här ställer automatiskt in Defender för Endpoint VPN-profilen utan att användaren behöver göra det under registrering. Observera att VPN används för att tillhandahålla webskyddsfunktionen. Det här är inte en vanlig VPN och är en lokal/självslingande VPN som inte tar trafik utanför enheten.
 
 1. I [administrationscentret för Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)går du till   ->  **Konfigurationsprofiler för enheter** Skapa  ->  **profil**.
@@ -107,7 +104,7 @@ Administratörer kan konfigurera automatisk konfiguration av VPN-profilen. Det h
 
     ![En skärmbild av en beskrivning av en smartphone som genererats automatiskt](images/41627a709700c324849bf7e13510c516.png)
 
-2. Tryck på appikonen Defender för slutpunkt och följ instruktionerna på skärmen för att slutföra introduktionsstegen. Informationen innefattar godkännande av iOS-behörigheter som krävs av Defender för Endpoint på iOS.
+2. Tryck på appikonen Defender för slutpunkt (MSDefender) och följ anvisningarna på skärmen för att slutföra introduktionsstegen. Informationen innefattar godkännande av iOS-behörigheter som krävs av Defender för Endpoint på iOS.
 
 3. Vid lyckad registrering börjar enheten visas i listan Enheter i Microsoft Defender Säkerhetscenter.
 
@@ -133,7 +130,7 @@ Med Intune kan du konfigurera appen Defender för iOS via en princip för appkon
 1. Ange *följande* information på sidan Skapa appkonfigurationsprincip:
     - Principnamn
     - Plattform: Välj iOS/iPadOS
-    - Riktad app: **Microsoft Defender ATP** program i listan
+    - Riktad app: Välj **Microsoft Defender Endpoint** i listan
 
     > [!div class="mx-imgBorder"]
     > ![Bild av Microsoft Endpoint Manager Admin Center5](images/ios-deploy-5.png)

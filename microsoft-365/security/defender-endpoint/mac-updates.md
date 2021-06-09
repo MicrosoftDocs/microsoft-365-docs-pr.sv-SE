@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e08781455888595d57bd8a9e6f792796ea1853cd
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 6447aa4182846020312e9be870c5548d9415ac71
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684213"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842836"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuera uppdateringar för Microsoft Defender för slutpunkt i macOS
 
@@ -48,7 +48,7 @@ Om du bestämmer dig för att distribuera uppdateringar med dina verktyg för pr
 
 ## <a name="use-msupdate"></a>Använda msupdate
 
-MAU innehåller ett kommandoradsverktyg, *msupdate,* som är utformat för IT-administratörer så att de får mer exakt kontroll över när uppdateringar tillämpas. Instruktioner för hur du använder verktyget finns i Uppdaterings- och [Office för Mac med hjälp av msupdate.](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
+MAU innehåller ett kommandoradsverktyg, *msupdate,* som är utformat för IT-administratörer så att de får mer exakt kontroll över när uppdateringar tillämpas. Instruktioner för hur du använder verktyget finns i Uppdaterings- och [Office för Mac med hjälp av msupdate.](/deployoffice/mac/update-office-for-mac-using-msupdate)
 
 I MAU är programidentifieraren för Microsoft Defender för Slutpunkt i macOS *WDAV00.* Ladda ned och installera de senaste uppdateringarna för Microsoft Defender för Slutpunkt i macOS genom att köra följande kommando från ett terminalfönster:
 
@@ -256,4 +256,4 @@ Om du vill konfigurera MAU kan du distribuera den här konfigurationsprofilen fr
 
 ## <a name="resources"></a>Resurser
 
-- [referens för msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
+- [referens för msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate)

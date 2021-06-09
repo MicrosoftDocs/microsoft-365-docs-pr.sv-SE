@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6182b4cb0d1f648f33c3a7fc4da4c648d8996bcd
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5546b69fa924025491e1762d199678fa549a9c7c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770619"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842152"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Partneråtkomst via Microsoft Defender för slutpunkts-API:er
 
@@ -40,7 +40,7 @@ ms.locfileid: "52770619"
 På den här sidan beskrivs hur du skapar ett Azure Active Directory -program (Azure AD) för att få programmässiga åtkomst till Microsoft Defender för Endpoint åt dina kunder.
 
 
-Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De HÄR API:erna hjälper dig att automatisera arbetsflöden och nya funktioner baserat på Microsoft Defender för Slutpunkt-funktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 auktoriseringskod för Flow.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De HÄR API:erna hjälper dig att automatisera arbetsflöden och nya funktioner baserat på Microsoft Defender för Slutpunkt-funktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 auktoriseringskod för Flow.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 I allmänhet måste du vidta följande steg för att använda API:er:
 - Skapa ett **Azure AD-program med** flera innehavare.
@@ -139,7 +139,7 @@ Följande steg vägleder dig hur du skapar ett Azure AD-program, hämtar en åtk
 
 **Obs!** Om du vill få åtkomsttoken åt kunden använder du kundens klientorganisations-ID vid följande tokeninköp.
 
-<br>Mer information om AAD token finns i [AAD-självstudiekursen](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+<br>Mer information om AAD token finns i [AAD-självstudiekursen](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-powershell"></a>Använda PowerShell
 

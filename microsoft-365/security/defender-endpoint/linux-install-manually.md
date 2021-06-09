@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c50efb11ee7f884be6788b90c14e7fc639d9b8ca
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 3ed033f137d3329dc208183fe8fad1f300ffd4c9
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281011"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841802"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuera Microsoft Defender för Slutpunkt i Linux manuellt
 
@@ -328,7 +328,7 @@ Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Observera att du kan också behöva konfigurera en proxy när du har slutfört den första installationen. Se [Konfigurera Defender för slutpunkt på Linux för statisk proxyidentifiering: Konfiguration efter installation.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
+    > Observera att du kan också behöva konfigurera en proxy när du har slutfört den första installationen. Se [Konfigurera Defender för slutpunkt på Linux för statisk proxyidentifiering: Konfiguration efter installation.](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
 
 5. Kör ett identifieringstest för att verifiera att enheten är korrekt onboarded och rapporterar till tjänsten. Utför följande steg på den nyligen inbyggda enheten:
 
@@ -409,4 +409,4 @@ När du uppgraderar ditt operativsystem till en ny huvudversion måste du först
 Se [Avinstallera](linux-resources.md#uninstall) för mer information om hur du tar bort Defender för Slutpunkt på Linux från klientenheter.
 
 ## <a name="see-also"></a>Se även
-- [Undersöka problem med agenthälsa](health-status.md)
+- [Undersöka hälsoproblem i agenten](health-status.md)

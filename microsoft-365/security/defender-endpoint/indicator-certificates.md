@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8cf611e38bc781c2302f70f6491bb827410235b0
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164687"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845460"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Skapa indikatorer baserade på certifikat
 
@@ -39,16 +39,16 @@ ms.locfileid: "51164687"
 Du kan skapa indikatorer för certifikat. Några vanliga användningsfall är:
 
 - Scenarier när du behöver distribuera blockeringstekniker, till [](controlled-folders.md) exempel minskningsregler för [attackytan](attack-surface-reduction.md) och kontrollerad mappåtkomst, men behöver tillåta beteenden från signerade program genom att lägga till certifikatet i listan över tillåtna mappar.
-- Blockera användningen av ett visst signerat program i hela organisationen. Genom att skapa en indikator för att blockera certifikatet för programmet förhindrar Windows Defender AV filkörningar (blockering och åtgärd) och automatisk undersökning och åtgärd fungerar på samma sätt.
+- Blockera användningen av ett visst signerat program i hela organisationen. Genom att skapa en indikator för att blockera certifikatet för programmet Windows Defender AV filkörningar (blockering och åtgärd) och automatisk undersökning och åtgärd fungerar på samma sätt.
 
 
 ### <a name="before-you-begin"></a>Innan du börjar
 
 Det är viktigt att förstå följande krav innan du skapar indikatorer för certifikat:
 
-- Den här funktionen är tillgänglig om din organisation använder Windows Defender Antivirus och Molnbaserat skydd är aktiverat. Mer information finns i [Hantera molnbaserat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Den här funktionen är tillgänglig om din organisation Windows Defender Antivirus skydd och Molnbaserat skydd är aktiverat. Mer information finns i [Hantera molnbaserat skydd](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - Klientversionen av Antimalware måste vara 4.18.1901.x eller senare.
-- Stöds på datorer med Windows 10, version 1703 eller senare, Windows Server 2016 och 2019.
+- Stöds på datorer Windows 10, version 1703 eller senare, Windows server 2016 och 2019.
 - Definitionerna för skydd mot virus och hot måste vara uppdaterade.
 - Den här funktionen har för närvarande stöd för att ange . CER eller . PEM-filnamnstillägg.
 
@@ -62,7 +62,7 @@ Det är viktigt att förstå följande krav innan du skapar indikatorer för cer
 >[!IMPORTANT]
 > Det kan ta upp till 3 timmar att skapa och ta bort ett certifikat-IoC.
 
-1. Välj Inställningar Indikatorer i  >  **navigeringsfönstret.**  
+1. Välj Ta fram Inställningar  >  **i navigeringsfönstret.**  
 
 2. Välj **fliken** Certifikat.
 
@@ -78,5 +78,5 @@ Det är viktigt att förstå följande krav innan du skapar indikatorer för cer
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Skapa indikatorer](manage-indicators.md)
 - [Skapa indikatorer för filer](indicator-file.md)
-- [Skapa indikatorer för IP-adresser och URL:er/domäner](indicator-ip-domain.md)
+- [Skapa indikatorer för IP:er och URL:er/domäner](indicator-ip-domain.md)
 - [Hantera indikatorer](indicator-manage.md)

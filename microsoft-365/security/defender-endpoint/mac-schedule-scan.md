@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2c1dc16dc3fbb61a77e1d7348d47fdfd778c56e2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a93ea3427c72eb5529715b92cb18d01462493cc6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934519"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842860"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Schemasökningar med Microsoft Defender för Slutpunkt i macOS
 
@@ -102,6 +102,6 @@ Du kan skapa ett skanningsschema med det *startad* daemon på en macOS-enhet.
 
 ## <a name="schedule-a-scan-with-intune"></a>Schemalägga en genomsökning med Intune
 
-Du kan också schemalägga genomsökningar med Microsoft Intune. Den [runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) skript som finns i Skript för [Microsoft Defender](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) för Slutpunkt finns kvar när enheten återgår från viloläge. 
+Du kan också schemalägga skanningar med Microsoft Intune. Den [runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) skript som finns i Skript för [Microsoft Defender](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) för Slutpunkt finns kvar när enheten återgår från viloläge. 
 
-Mer detaljerade anvisningar om hur du använder det här skriptet i ditt företag finns i Använda skript på macOS-enheter i [Intune.](https://docs.microsoft.com/mem/intune/apps/macos-shell-scripts)
+Mer detaljerade anvisningar om hur du använder det här skriptet i ditt företag finns i Använda skript på macOS-enheter i [Intune.](/mem/intune/apps/macos-shell-scripts)

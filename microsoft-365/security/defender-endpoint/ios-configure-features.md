@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dab72da02927c3fff6025eb2d0fa9ed0fdf1d0d7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245282"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842260"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurera Microsoft Defender för slutpunkt för iOS-funktioner
 
@@ -40,10 +40,10 @@ ms.locfileid: "52245282"
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>Villkorsstyrd åtkomst med Defender för slutpunkt i iOS  
 Microsoft Defender för slutpunkt på iOS tillsammans med Microsoft Intune och Azure Active Directory aktiverar tvingande enhetsefterlevnad och villkorsstyrd åtkomstprincip baserat på enhetens riskresultat. Defender för Endpoint är en MTD-lösning (Mobile Threat Defense) som du kan distribuera för att utnyttja den här funktionen via Intune.
 
-Mer information om hur du konfigurera villkorsstyrd åtkomst med Defender för slutpunkt i iOS finns [i Defender för Endpoint och Intune.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)
+Mer information om hur du konfigurera villkorsstyrd åtkomst med Defender för slutpunkt i iOS finns [i Defender för Endpoint och Intune.](/mem/intune/protect/advanced-threat-protection)
 
-> [!NOTE]
-> **Identifiering av identifiering av Microsoft Defender för slutpunkt i iOS är för närvarande i förhandsversion.** Om en enhet identifieras som jailbroken av Microsoft Defender för Endpoint rapporteras en avisering med hög risk till Säkerhetscenter, och om villkorlig åtkomst konfigureras baserat på enhetsriskresultat blockeras enheten från att komma åt företagets data.
+### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>Identifiering av identifiering av Microsoft Defender för Endpoint
+I Microsoft Defender för Endpoint går det att identifiera ohanterade och hanterade enheter som är jailbroken. Om en enhet identifieras som jailbroken kommer en varning med hög risk att rapporteras till Säkerhetscenter, och om villkorsstyrd åtkomst konfigureras baserat på enhetsriskresultat blockeras enheten från att komma åt företagsdata.
 
 ## <a name="web-protection-and-vpn"></a>Web Protection och VPN
 
@@ -71,7 +71,7 @@ Apple iOS stöder inte flera vpn som gäller hela enheten för att vara aktiva s
 För att skydda företagsdata från att kommas åt på jailbroken iOS-enheter rekommenderar vi att du konfigurerar följande efterlevnadsprincip på Intune.
 
 > [!NOTE]
-> Nu finns det en förhandsversion för identifiering av Microsoft Defender för Slutpunkt i iOS. Vi rekommenderar att du inställningar den här principen som ett ytterligare skyddslager mot scenarier.
+> Identifiering av identifiering av objekt är en funktion som tillhandahålls av Microsoft Defender för Endpoint i iOS. Vi rekommenderar dock att du inställningar den här principen som ytterligare skydd mot scenarier.
 
 Följ stegen nedan för att skapa en efterlevnadsprincip mot jailbroken enheter.
 
@@ -96,7 +96,7 @@ Följ stegen nedan för att skapa en efterlevnadsprincip mot jailbroken enheter.
 
 ## <a name="configure-custom-indicators"></a>Konfigurera anpassade indikatorer
 
-Med Defender för Slutpunkt i iOS kan administratörer även konfigurera anpassade indikatorer på iOS-enheter. Mer information om hur du konfigurerar anpassade indikatorer finns [i Hantera indikatorer.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators)
+Med Defender för Slutpunkt i iOS kan administratörer även konfigurera anpassade indikatorer på iOS-enheter. Mer information om hur du konfigurerar anpassade indikatorer finns [i Hantera indikatorer.](/microsoft-365/security/defender-endpoint/manage-indicators)
 
 > [!NOTE]
 > Defender för Slutpunkt i iOS har stöd för att endast skapa anpassade indikatorer för IP-adresser och URL:er/domäner.
@@ -105,8 +105,3 @@ Med Defender för Slutpunkt i iOS kan administratörer även konfigurera anpassa
 
 Nätfiskewebbplatser utger sig för att vara betrodda webbplatser i syfte att skaffa personlig eller ekonomisk information. Gå till [sidan Ge feedback om nätverksskydd](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) om du vill rapportera en webbplats som kan vara en nätfiskewebbplats.
 
-## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>Problem med batterianvändning i iOS när Microsoft Defender för Slutpunkt är installerat
-
-Batterianvändningen från en app beräknas av Apple baserat på en mängd faktorer, bland annat PROCESSOR- och nätverksanvändning. Microsoft Defender för Endpoint använder en lokal/loop-back VPN i bakgrunden för att kontrollera webbtrafiken efter skadliga webbplatser eller anslutningar. Nätverkspaket från alla appar går igenom den här kontrollen och det gör att batterianvändningen av Microsoft Defender för Endpoint beräknas felaktigt. Det ger användaren ett falskt intryck. Den faktiska batteriförbrukningen i Microsoft Defender för Endpoint är mindre än vad som visas på Inställningar batteri på enheten. Det här baseras på utförda tester som utförts i appen Microsoft Defender för Slutpunkt för att förstå batterianvändningen.
-
-Dessutom är VPN som används en lokal VPN och till skillnad från traditionella VPN så skickas inte nätverkstrafik utanför enheten.

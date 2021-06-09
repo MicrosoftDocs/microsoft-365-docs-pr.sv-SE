@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eaf26c566b54b21e63af5ecbfe3603f2b1389208
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 2231a4fc1f8bb58a83c639c8e60ad790af0df236
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892847"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845636"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Kontakta support för Microsoft Defender för Endpoint
 
@@ -46,9 +46,9 @@ Det är viktigt att känna till de specifika roller som har behörighet att öpp
 Du måste minst ha rollen Tjänstsupportadministratör **ELLER** Supportadministratör.
 
 
-Mer information om vilka roller som har behörighet finns i Behörigheter [för säkerhetsadministratör.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Roller som innehåller åtgärden kan `microsoft.office365.supportTickets/allEntities/allTasks` skicka ett ärende.
+Mer information om vilka roller som har behörighet finns i Behörigheter [för säkerhetsadministratör.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Roller som innehåller åtgärden kan `microsoft.office365.supportTickets/allEntities/allTasks` skicka ett ärende.
 
-Allmän information om administratörsroller finns i [Om administratörsroller.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
+Allmän information om administratörsroller finns i [Om administratörsroller.](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
 
 
 ## <a name="access-the-widget"></a>Komma åt widgeten

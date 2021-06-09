@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f3442528f6d9239219f0b4638f75758a055717de
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935263"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842644"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Introduktion med Microsoft Endpoint Manager
 
@@ -46,7 +46,7 @@ I ämnet [Planering](deployment-strategy.md) finns det flera metoder för att in
 Defender för Endpoint har stöd för registrering av olika slutpunkter och verktyg, men den här artikeln täcker inte in dem. Mer information om allmän onboarding med andra distributionsverktyg och metoder som stöds finns i [Översikt över onboarding.](onboarding.md)
 
 
-[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) är en lösningsplattform som ger en enhetlig plattform för flera tjänster. Den innehåller [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) för molnbaserad enhetshantering.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) är en lösningsplattform som ger en enhetlig plattform för flera tjänster. Den innehåller [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) för molnbaserad enhetshantering.
 
 
 Det här avsnittet leder användarna i:
@@ -57,7 +57,7 @@ Den här introduktionsvägledningen går igenom följande grundläggande steg so
 
 -   [Identifiera målenheter eller -användare](#identify-target-devices-or-users)
 
-    -   Skapa en Azure Active Directory-grupp (användare eller enhet)
+    -   Skapa en Azure Active Directory (användare eller enhet)
 
 -   [Skapa en konfigurationsprofil](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
 
@@ -76,10 +76,10 @@ Här är de länkar du behöver för resten av processen:
 
 -   [Säkerhetscenter](https://securitycenter.windows.com/)
 
--   [Intune-säkerhetsbaslinjer](https://docs.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
+-   [Intune-säkerhetsbaslinjer](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 Mer information om Microsoft Endpoint Manager finns i följande resurser:
-- [Microsoft Endpoint Manager-sida](https://docs.microsoft.com/mem/)
+- [Microsoft Endpoint Manager sidan](/mem/)
 - [Blogginlägg om intune och ConfigMgr](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/)
 - [Introduktionsvideo om MEM](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace)
 
@@ -88,8 +88,8 @@ Mer information om Microsoft Endpoint Manager finns i följande resurser:
 I det här avsnittet skapar vi en testgrupp där du kan tilldela dina konfigurationer.
 
 >[!NOTE]
->Intune använder Azure Active Directory-grupper (Azure AD) för att hantera enheter och användare. Som Intune-administratör kan du konfigurera grupper så att de passar organisationens behov.<br>
-Mer information finns i Lägga [till grupper för att ordna användare och enheter.](https://docs.microsoft.com/mem/intune/fundamentals/groups-add)
+>Intune använder Azure Active Directory (Azure AD) grupper för att hantera enheter och användare. Som Intune-administratör kan du konfigurera grupper så att de passar organisationens behov.<br>
+Mer information finns i Lägga [till grupper för att ordna användare och enheter.](/mem/intune/fundamentals/groups-add)
 
 ### <a name="create-a-group"></a>Skapa en grupp
 
@@ -98,12 +98,12 @@ Mer information finns i Lägga [till grupper för att ordna användare och enhet
 2.  Öppna **Grupper > Ny grupp.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal1](images/66f724598d9c3319cba27f79dd4617a4.png)
+    > ![Bild på Microsoft Endpoint Manager portal1](images/66f724598d9c3319cba27f79dd4617a4.png)
 
 3.  Ange information och skapa en ny grupp.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal2](images/b1e0206d675ad07db218b63cd9b9abc3.png)
+    > ![Bild på Microsoft Endpoint Manager portal2](images/b1e0206d675ad07db218b63cd9b9abc3.png)
 
 4.  Lägg till testanvändaren eller testenheten.
 
@@ -114,7 +114,7 @@ Mer information finns i Lägga [till grupper för att ordna användare och enhet
 7.  Leta reda på testanvändaren eller enheten och markera den.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal3](images/149cbfdf221cdbde8159d0ab72644cd0.png)
+    > ![Bild på Microsoft Endpoint Manager portal3](images/149cbfdf221cdbde8159d0ab72644cd0.png)
 
 8.  Testgruppen har nu en medlem att testa.
 
@@ -137,9 +137,9 @@ Sedan fortsätter du genom att skapa flera olika typer av slutpunktssäkerhetspr
 2.  Gå till **Slutpunktssäkerhet > identifiering och svar av slutpunkt.** Klicka på **Skapa profil.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild på Microsoft Endpoint Manager-portalen4](images/58dcd48811147feb4ddc17212b7fe840.png)
+    > ![Bild på Microsoft Endpoint Manager portal4](images/58dcd48811147feb4ddc17212b7fe840.png)
 
-3.  Under **Plattform väljer du Windows 10 och senare, Profil – Identifiering av slutpunkt och svar > Skapa**.
+3.  Under **Plattform väljer du Windows 10 senare, Profil – Identifiering av slutpunkt och svar > Skapa**.
 
 4.  Ange ett namn och en beskrivning och välj sedan **Nästa.**
 
@@ -149,29 +149,29 @@ Sedan fortsätter du genom att skapa flera olika typer av slutpunktssäkerhetspr
 5.  Välj inställningar efter behov och välj sedan  **Nästa**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal6](images/cea7e288b5d42a9baf1aef0754ade910.png)
+    > ![Bild på Microsoft Endpoint Manager portal6](images/cea7e288b5d42a9baf1aef0754ade910.png)
 
     > [!NOTE]
-    > I den här instansen har det här fyllts i automatiskt eftersom Defender för Slutpunkt redan har integrerats med Intune. Mer information om integrering finns i Aktivera [Microsoft Defender för slutpunkt i Intune.](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
+    > I den här instansen har det här fyllts i automatiskt eftersom Defender för Slutpunkt redan har integrerats med Intune. Mer information om integrering finns i Aktivera [Microsoft Defender för slutpunkt i Intune.](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
     > 
     > Följande bild visar ett exempel på vad som visas när Microsoft Defender för Slutpunkt inte är integrerat med Intune:
     >
-    > ![Bild på Microsoft Endpoint Manager-portalen7](images/2466460812371ffae2d19a10c347d6f4.png)
+    > ![Bild på Microsoft Endpoint Manager portal7](images/2466460812371ffae2d19a10c347d6f4.png)
 
 6.  Lägg till omfattningstaggar om det behövs och välj **sedan Nästa.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal8](images/ef844f52ec2c0d737ce793f68b5e8408.png)
+    > ![Bild på Microsoft Endpoint Manager portal8](images/ef844f52ec2c0d737ce793f68b5e8408.png)
 
 7.  Lägg till testgrupp genom att **klicka på Välj grupper som ska ingå** och välj sedan **Nästa.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager-portalen9](images/fc3525e20752da026ec9f46ab4fec64f.png)
+    > ![Bild på Microsoft Endpoint Manager portal9](images/fc3525e20752da026ec9f46ab4fec64f.png)
 
 8.  Granska och acceptera och välj sedan  **Skapa**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal10](images/289172dbd7bd34d55d24810d9d4d8158.png)
+    > ![Bild på Microsoft Endpoint Manager portal10](images/289172dbd7bd34d55d24810d9d4d8158.png)
 
 9.  Du kan visa din slutförda princip.
 
@@ -185,39 +185,39 @@ Sedan fortsätter du genom att skapa flera olika typer av slutpunktssäkerhetspr
 2.  Gå till **Slutpunktssäkerhet > Antivirus > Skapa princip**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal12](images/6b728d6e0d71108d768e368b416ff8ba.png)
+    > ![Bild på Microsoft Endpoint Manager portal12](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3.  Välj **Plattform – Windows 10 och senare – Windows och Profil – Microsoft Defender Antivirus > Skapa**.
+3.  Välj **plattform – Windows 10 och senare – Windows profil och - Microsoft Defender Antivirus > Skapa**.
 
 4.  Ange namn och beskrivning och välj sedan  **Nästa**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal13](images/a7d738dd4509d65407b7d12beaa3e917.png)
+    > ![Bild på Microsoft Endpoint Manager portal13](images/a7d738dd4509d65407b7d12beaa3e917.png)
 
-5.  På sidan **Konfigurationsinställningar:** Ange de konfigurationer du behöver för Microsoft Defender Antivirus (molnskydd, undantag, Real-Time skydd och åtgärd).
+5.  På sidan **Konfigurationsinställningar:** Ange de konfigurationer du behöver för Microsoft Defender Antivirus (Molnskydd, Undantag, Real-Time skydd och åtgärd).
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal14](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
+    > ![Bild på Microsoft Endpoint Manager portal14](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
 
 6.  Lägg till omfattningstaggar om det behövs och välj **sedan Nästa.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal15](images/2055e4f9b9141525c0eb681e7ba19381.png)
+    > ![Bild på Microsoft Endpoint Manager portal15](images/2055e4f9b9141525c0eb681e7ba19381.png)
 
 7.  Välj de grupper du vill inkludera, tilldela till testgruppen och välj sedan **Nästa.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal16](images/48318a51adee06bff3908e8ad4944dc9.png)
+    > ![Bild på Microsoft Endpoint Manager portal16](images/48318a51adee06bff3908e8ad4944dc9.png)
 
 8.  Granska och skapa och välj sedan  **Skapa**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal17](images/dfdadab79112d61bd3693d957084b0ec.png)
+    > ![Bild på Microsoft Endpoint Manager portal17](images/dfdadab79112d61bd3693d957084b0ec.png)
 
 9.  Konfigurationsprincipen som du har skapat visas.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal18](images/38180219e632d6e4ec7bd25a46398da8.png)
+    > ![Bild på Microsoft Endpoint Manager portal18](images/38180219e632d6e4ec7bd25a46398da8.png)
 
 ### <a name="attack-surface-reduction--attack-surface-reduction-rules"></a>Minskning av attackytan – regler för att minska attackytan
 
@@ -227,7 +227,7 @@ Sedan fortsätter du genom att skapa flera olika typer av slutpunktssäkerhetspr
 
 3.  Välj  **Skapa princip**.
 
-4.  Välj **plattform – Windows 10 och senare – Profil – minskningsregler för attackytor > Skapa**.
+4.  Välj **plattform – Windows 10 och senare – Profil – Regler för minskning av attackytor > Skapa**.
 
     > [!div class="mx-imgBorder"]
     > ![Bild av Microsoft Endpoint Manager portal19](images/522d9bb4288dc9c1a957392b51384fdd.png)
@@ -235,7 +235,7 @@ Sedan fortsätter du genom att skapa flera olika typer av slutpunktssäkerhetspr
 5.  Ange ett namn och en beskrivning och välj sedan **Nästa.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal20](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
+    > ![Bild på Microsoft Endpoint Manager portal20](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
 
 6.  På sidan **Konfigurationsinställningar:** Ange de konfigurationer du behöver för att minska attackytan och välj sedan **Nästa.**
 
@@ -245,27 +245,27 @@ Sedan fortsätter du genom att skapa flera olika typer av slutpunktssäkerhetspr
     > Mer information finns i Regler [för att minska attackytan](attack-surface-reduction.md).
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal21](images/dd0c00efe615a64a4a368f54257777d0.png)
+    > ![Bild på Microsoft Endpoint Manager portal21](images/dd0c00efe615a64a4a368f54257777d0.png)
 
 7.  Lägg till omfattningstaggar efter behov och välj **sedan Nästa.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal22](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
+    > ![Bild på Microsoft Endpoint Manager portal22](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
 
 8.  Välj de grupper du vill inkludera och tilldela till testgruppen och välj sedan **Nästa.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal23](images/45cefc8e4e474321b4d47b4626346597.png)
+    > ![Bild på Microsoft Endpoint Manager portal23](images/45cefc8e4e474321b4d47b4626346597.png)
 
 9. Granska informationen och välj sedan  **Skapa**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal24](images/2c2e87c5fedc87eba17be0cdeffdb17f.png)
+    > ![Bild på Microsoft Endpoint Manager portal24](images/2c2e87c5fedc87eba17be0cdeffdb17f.png)
 
 10. Visa principen.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal25](images/7a631d17cc42500dacad4e995823ffef.png)
+    > ![Bild på Microsoft Endpoint Manager portal25](images/7a631d17cc42500dacad4e995823ffef.png)
 
 ### <a name="attack-surface-reduction--web-protection"></a>Minskning av attackytan – webbskydd
 
@@ -275,15 +275,15 @@ Sedan fortsätter du genom att skapa flera olika typer av slutpunktssäkerhetspr
 
 3.  Välj  **Skapa princip**.
 
-4.  Välj **Windows 10 och senare – Webbskydd > Skapa**.
+4.  Välj **Windows 10 och Senare – Webbskydd > Skapa**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal26](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
+    > ![Bild på Microsoft Endpoint Manager portal26](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
 
 5.  Ange ett namn och en beskrivning och välj sedan **Nästa.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal27](images/5be573a60cd4fa56a86a6668b62dd808.png)
+    > ![Bild på Microsoft Endpoint Manager portal27](images/5be573a60cd4fa56a86a6668b62dd808.png)
 
 6.  På sidan **Konfigurationsinställningar:** Ange de konfigurationer som krävs för webbskydd och välj sedan **Nästa.**
 
@@ -293,27 +293,27 @@ Sedan fortsätter du genom att skapa flera olika typer av slutpunktssäkerhetspr
     > Mer information finns i [Webbskydd](web-protection-overview.md).
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal28](images/6104aa33a56fab750cf30ecabef9f5b6.png)
+    > ![Bild på Microsoft Endpoint Manager portal28](images/6104aa33a56fab750cf30ecabef9f5b6.png)
 
 7.  Lägg **till omfattningstaggar efter behov > Nästa.**
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal29](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
+    > ![Bild på Microsoft Endpoint Manager portal29](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
 
 8.  Välj **Tilldela för att testa > Nästa**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal30](images/45cefc8e4e474321b4d47b4626346597.png)
+    > ![Bild på Microsoft Endpoint Manager portal30](images/45cefc8e4e474321b4d47b4626346597.png)
 
 9.  Välj **Granska och skapa > skapa**.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal31](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
+    > ![Bild på Microsoft Endpoint Manager portal31](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
 
 10. Visa principen.
 
     > [!div class="mx-imgBorder"]
-    > ![Bild av Microsoft Endpoint Manager portal32](images/e74f6f6c150d017a286e6ed3dffb7757.png)
+    > ![Bild på Microsoft Endpoint Manager portal32](images/e74f6f6c150d017a286e6ed3dffb7757.png)
 
 ## <a name="validate-configuration-settings"></a>Verifiera konfigurationsinställningar
 
@@ -323,29 +323,29 @@ Sedan fortsätter du genom att skapa flera olika typer av slutpunktssäkerhetspr
 
 När konfigurationsprincipen har tilldelats tar det lite tid att tillämpa den.
 
-Mer information om tidsinställningar finns [i Intune-konfigurationsinformation.](https://docs.microsoft.com/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
+Mer information om tidsinställningar finns [i Intune-konfigurationsinformation.](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
 
 Bekräfta att konfigurationsprincipen har använts på testenheten genom att följa följande process för varje konfigurationsprincip.
 
 1.  Öppna MEM-portalen och navigera till relevant princip som visas i stegen ovan. I följande exempel visas nästa generations skyddsinställningar.
 
     > [!div class="mx-imgBorder"]
-    > [![Bild av Microsoft Endpoint Manager portal33 ](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![Bild på Microsoft Endpoint Manager portal33 ](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
 
 2.  Välj **Konfigurationsprincip för** att visa principstatusen.
 
     > [!div class="mx-imgBorder"]
-    > [![Bild av Microsoft Endpoint Manager portal34 ](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
+    > [![Bild på Microsoft Endpoint Manager portal34 ](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
 
 3.  Välj  **Enhetsstatus** om du vill se statusen.
 
     > [!div class="mx-imgBorder"]
-    > [![Bild av Microsoft Endpoint Manager portal35 ](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
+    > [![Bild på Microsoft Endpoint Manager portal35 ](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
 
 4.  Välj  **Användarstatus** om du vill se statusen.
 
     > [!div class="mx-imgBorder"]
-    > [![Bild av Microsoft Endpoint Manager portal36 ](images/4e965749ff71178af8873bc91f9fe525.png)](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
+    > [![Bild på Microsoft Endpoint Manager portal36 ](images/4e965749ff71178af8873bc91f9fe525.png)](images/4e965749ff71178af8873bc91f9fe525.png#lightbox)
 
 5.  Välj  **Status per inställning för** att visa statusen.
 
@@ -353,12 +353,12 @@ Bekräfta att konfigurationsprincipen har använts på testenheten genom att fö
     >Den här vyn är mycket användbar om du vill identifiera inställningar som står i konflikt med en annan princip.
 
     > [!div class="mx-imgBorder"]
-    > [![Bild av Microsoft Endpoint Manager portal37 ](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
+    > [![Bild på Microsoft Endpoint Manager portal37 ](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
 ### <a name="endpoint-detection-and-response"></a>Identifiering och svar av slutpunkt
 
 
-1.  Innan du använder konfigurationen bör inte tjänsten Defender för Endpoint Protection startas.
+1.  Innan konfigurationen tillämpas bör tjänsten Defender för Endpoint Protection inte startas.
 
     > [!div class="mx-imgBorder"]
     > [![Bild på panelen Tjänster1 ](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
@@ -371,7 +371,7 @@ Bekräfta att konfigurationsprincipen har använts på testenheten genom att fö
 3.  När tjänsterna körs på enheten visas den i Microsoft Defender Säkerhetscenter.
 
     > [!div class="mx-imgBorder"]
-    > [![Bild på Microsoft Defender Säkerhetscenter ](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Bild av Microsoft Defender Säkerhetscenter ](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### <a name="next-generation-protection"></a>Nästa generations skydd
 
@@ -403,7 +403,7 @@ Bekräfta att konfigurationsprincipen har använts på testenheten genom att fö
 
     ![Bild på kommandorad1](images/cb0260d4b2636814e37eee427211fe71.png)
 
-3.  När du har tillämpat principen på en testenhet öppnar du en PowerShell-windows och skriver `Get-MpPreference` .
+3.  När du har tillämpat principen på en testenhet öppnar du ett PowerShell-Windows och skriver `Get-MpPreference` .
 
 4.  Det bör svara med följande rader med innehåll enligt nedan:
 
@@ -411,13 +411,13 @@ Bekräfta att konfigurationsprincipen har använts på testenheten genom att fö
 
 ### <a name="attack-surface-reduction--web-protection"></a>Minskning av attackytan – webbskydd
 
-1.  Öppna ett PowerShell-fönster på testenheten och skriv `(Get-MpPreference).EnableNetworkProtection` .
+1.  Öppna ett PowerShell-fönster på testenheten Windows och skriv `(Get-MpPreference).EnableNetworkProtection` .
 
 2.  Det bör svara med en nolla enligt nedan.
 
     ![Bild på kommandorad3](images/196a8e194ac99d84221f405d0f684f8c.png)
 
-3.  När du har tillämpat principen öppnar du en PowerShell-windows och skriver `(Get-MpPreference).EnableNetworkProtection` .
+3.  När du har tillämpat principen öppnar du en PowerShell-Windows och skriver `(Get-MpPreference).EnableNetworkProtection` .
 
 4.  Detta bör svara med en 1:a (1) som visas nedan.
 

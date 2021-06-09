@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2279045093ebfac4a7eb4544a3e0c137c08c9c0c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0258b2cdbff4a8b20be42e508863985c7402f609
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935395"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845516"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Datalagring och sekretess i Microsoft Defender för Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "51935395"
 
 Det här avsnittet tar upp några av de vanligaste frågorna om sekretess och datahantering för Defender för Slutpunkt.
 > [!NOTE]
-> I det här dokumentet förklaras datalagrings- och sekretessinformationen för Defender för Endpoint. Mer information om Defender för Endpoint och andra produkter och tjänster som Microsoft Defender Antivirus och Windows 10 finns i [Microsofts sekretesspolicy.](https://go.microsoft.com/fwlink/?linkid=827576) Mer information finns även i Vanliga frågor och svar om sekretess i [Windows 10.](https://go.microsoft.com/fwlink/?linkid=827577)
+> I det här dokumentet förklaras datalagrings- och sekretessinformationen för Defender för Endpoint. Mer information om Defender för Endpoint och andra produkter och tjänster som Microsoft Defender Antivirus och Windows 10 finns i [Microsofts sekretesspolicy.](https://go.microsoft.com/fwlink/?linkid=827576) Mer information [Windows 10 sekretess](https://go.microsoft.com/fwlink/?linkid=827577) finns också i Vanliga frågor och svar om sekretess.
 
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Vilka data samlas in av Microsoft Defender för Endpoint?
@@ -54,16 +54,16 @@ Med hjälp av dessa data kan Defender för Endpoint:
 Microsoft använder inte dina data för reklam.
 
 ## <a name="data-protection-and-encryption"></a>Dataskydd och kryptering
-Defender för Endpoint-tjänsten utnyttjar de senaste teknikerna för dataskydd som är baserade på Microsoft Azure-infrastrukturen. 
+Tjänsten Defender för slutpunkt utnyttjar de senaste teknikerna för dataskydd som är baserade på Microsoft Azure infrastruktur. 
 
-Det finns olika aspekter av relevant informationsskydd som tjänsten tar hand om. Kryptering är en av de viktigaste och den innehåller datakryptering i vila, kryptering under flygning och nyckelhantering med nyckelvalv. Mer information om andra tekniker som används av Defender för slutpunktstjänsten finns i Översikt över [Azure-kryptering.](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) 
+Det finns olika aspekter av relevant informationsskydd som tjänsten tar hand om. Kryptering är en av de viktigaste och den innehåller datakryptering i vila, kryptering under flygning och nyckelhantering med nyckelvalv. Mer information om andra tekniker som används av Defender för slutpunktstjänsten finns i Översikt över [Azure-kryptering.](/azure/security/security-azure-encryption-overview) 
 
 I alla scenarier krypteras data med minst 256-bitars [AES-kryptering.](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 
 
 ## <a name="data-storage-location"></a>Datalagringsplats
 
-Defender för Endpoint fungerar i Microsoft Azure-datacenter i EU, Storbritannien eller USA. Kunddata som samlas in av tjänsten kan lagras i: (a) klientorganisationens geoplats som identifieras under etableringen eller(b) om Defender för Endpoint använder en annan Microsoft-onlinetjänst för att bearbeta sådana data, den geolokalisering som definieras av datalagringsreglerna för den andra onlinetjänsten.
+Defender för Endpoint fungerar Microsoft Azure datacenter i EU, Storbritannien eller USA. Kunddata som samlas in av tjänsten kan lagras i: (a) klientorganisationens geoplats som identifieras under etableringen eller(b) om Defender för Endpoint använder en annan Microsoft-onlinetjänst för att bearbeta sådana data, den geolokalisering som definieras av datalagringsreglerna för den andra onlinetjänsten.
 
 Kunddata i anonymiserad form kan också lagras i de centrala lagrings- och bearbetningssystemen i USA.
 
