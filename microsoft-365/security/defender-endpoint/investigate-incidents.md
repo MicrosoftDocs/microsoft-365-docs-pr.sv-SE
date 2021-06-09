@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1d8f4452273047684a30db3b18d1281f40f46378
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0b52b6f9b457dbe1a5984c3d68c7077f7037d498
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903304"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845084"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Undersöka incidenter i Microsoft Defender för Slutpunkt
 
@@ -83,7 +83,7 @@ Alla analyserade enheter markeras som smittade, åtgärdade eller misstänkta.
 Microsoft Defender för Endpoint sammanställer hotinformationen till en incident så att du kan se de mönster och korrelationer som kommer in från olika datapunkter. Du kan visa en sådan korrelation via incidentdiagrammet.
 
 ### <a name="incident-graph"></a>Incidentdiagram
-Graph **berättar** om cybersäkerhetsattacken. Den visar till exempel vad som var startpunkten, vilken indikator på kompromettering eller aktivitet som observerats på vilken enhet. o.s.v.
+The **Graph** berättar om cybersäkerhetsattacken. Den visar till exempel vad som var startpunkten, vilken indikator på kompromettering eller aktivitet som observerats på vilken enhet. o.s.v.
 
 ![Bild av incidentdiagrammet](images/atp-incident-graph-tab.png)
 
@@ -92,6 +92,6 @@ Du kan klicka på cirklarna i incidentdiagrammet för att visa information om sk
 ![Bild på incidentinformation](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Incidentkö](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [Undersöka incidenter i Microsoft Defender för Slutpunkt](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-incidents)
-- [Hantera Microsoft Defender för slutpunktsincidenter](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-incidents)
+- [Incidentkö](/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Undersöka incidenter i Microsoft Defender för Slutpunkt](/microsoft-365/security/defender-endpoint/investigate-incidents)
+- [Hantera Microsoft Defender för slutpunktsincidenter](/microsoft-365/security/defender-endpoint/manage-incidents)

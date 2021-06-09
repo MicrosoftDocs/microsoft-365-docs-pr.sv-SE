@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47211e187d1f9f883745f008c6d94d04ee762e98
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302070"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822328"
 ---
 # <a name="web-content-filtering"></a>Filtrering av webbinnehåll
 
@@ -57,15 +57,15 @@ Blockeringen för webbläsare som stöds av tredje part tillhandahålls av Netwo
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Innan du provar den här funktionen bör du kontrollera att du har följande krav:
+Innan du provar den här funktionen bör du kontrollera att du uppfyller följande krav:
 
 - Windows 10 Enterprise E5 Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security eller Microsoft Defender för slutpunkten som är fristående licens. 
 - Åtkomst till Microsoft Defender Säkerhetscenter portal ( https://securitycenter.windows.com) .
-- Enheter som kör Windows 10 Anniversary Update (version 1607) eller senare med den senaste Mo FUNKTIONEN-uppdateringen.
+- Enheter som Windows 10 Anniversary Update (version 1607) eller senare med den senaste uppdateringen av Microsoft Defender-program mot skadlig programvara.
 
 ## <a name="data-handling"></a>Datahantering
 
-Vi följer den region som du har valt att använda som en del av dina [Microsoft Defender för slutpunktsdatahanteringsinställningar.](data-storage-privacy.md) Dina data lämnar inte datacentret i den regionen. Dessutom kommer dina data inte att delas med någon tredje part, inklusive våra dataleverantörer.
+Data lagras i den region som valdes som en del av dina inställningar för [Microsoft Defender för Slutpunktsdatahantering.](data-storage-privacy.md) Dina data lämnar inte datacentret i den regionen. Dessutom kommer dina data inte att delas med någon tredje part, inklusive våra dataleverantörer.
 
 ## <a name="turn-on-web-content-filtering"></a>Aktivera webbinnehållsfiltrering
 
@@ -91,14 +91,10 @@ Så här lägger du till en ny princip:
 
 5. Granska sammanfattningen och spara principen. Det kan ta upp till 2 timmar innan principuppdateringen tillämpas på dina valda enheter.
 
-> [!TIP]
-> Du kan distribuera en princip utan att välja en kategori i en enhetsgrupp. Den här åtgärden skapar en princip för granskning bara för att hjälpa dig att förstå användarbeteendet innan du skapar en blockeringsprincip.
-
->[!NOTE]
->Om du tar bort en princip eller ändrar enhetsgrupper samtidigt kan det orsaka en fördröjning i principdistributionen.
-
->[!IMPORTANT]
->Att blockera kategorin "Okategoriserad" kan leda till oväntade och oönskade resultat.  
+> [!NOTE]
+> - Du kan distribuera en princip utan att välja en kategori i en enhetsgrupp. Den här åtgärden skapar en princip för granskning bara för att hjälpa dig att förstå användarbeteendet innan du skapar en blockeringsprincip.
+> - Om du tar bort en princip eller ändrar enhetsgrupper samtidigt kan det orsaka en fördröjning i principdistributionen.
+> - Att blockera kategorin "Okategoriserad" kan leda till oväntade och oönskade resultat.  
 
 ### <a name="allow-specific-websites"></a>Tillåt specifika webbplatser
 
@@ -120,7 +116,7 @@ En panel öppnas där du kan välja prioritet och lägga till ytterligare inform
 
 ## <a name="web-content-filtering-cards-and-details"></a>Filtreringskort och information för webbinnehåll
 
-Välj **Rapporter > för webbskydd om** du vill visa kort med information om filtrering av webbinnehåll och skydd mot webbhot. På följande kort får du sammanfattningsinformation om filtrering av webbinnehåll.
+Välj **Rapporter**  >  **Webbskydd om** du vill visa kort med information om webbinnehållsfiltrering och skydd mot webbhot. På följande kort får du sammanfattningsinformation om filtrering av webbinnehåll.
 
 ### <a name="web-activity-by-category"></a>Webbaktivitet efter kategori
 
@@ -166,9 +162,4 @@ Använd tidsintervallsfiltret längst upp till vänster på sidan för att välj
 
 - Rapporterna för webbinnehållsfiltrering är för närvarande begränsade till att visa de 5 000 högsta posterna. Till exempel visar rapporten Domäner endast det högsta antalet 5 000 domäner för en viss filterfråga, om tillämpligt. 
 
-## <a name="related-topics"></a>Relaterade ämnen
 
-- [Översikt över webbskydd](web-protection-overview.md)
-- [Skydd mot webbhot](web-threat-protection.md)
-- [Övervaka webbsäkerhet](web-protection-monitoring.md)
-- [Svara på webbhot](web-protection-response.md)

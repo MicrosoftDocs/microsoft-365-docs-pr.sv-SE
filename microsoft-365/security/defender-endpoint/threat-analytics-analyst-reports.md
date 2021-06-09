@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6529f0badd94d6ca4d95dfbb562a9d352fedb76a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2a442a642a71bd6bf3a52dbf3901c4367c2c10d8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935899"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845000"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>Förstå analytikerrapporten i hotanalyser
 
@@ -67,18 +67,18 @@ Förutom de här spårade minskningarna tar analysrapporten även upp åtgärder
 Även om du kan använda **fliken** Minskningar för att bedöma din säkerhetsbegränsning mot ett hot, kan du med hjälp av de här rekommendationerna vidta ytterligare åtgärder för att förbättra säkerheten. Läs noggrant alla minskningsvägledning i analytikerrapporten och använd dem när det är möjligt.
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Förstå hur varje hot kan identifieras
-Analysrapporten innehåller även funktioner för identifieringar från Microsoft Defender för endpoint antivirus och _slutpunktsidentifiering_ och svar (EDR).
+Analysrapporten innehåller även funktioner för identifieringar från Microsoft Defender för Endpoint antivirus _identifiering och åtgärd på slutpunkt_ (Identifiering och åtgärd på slutpunkt).
 
 ### <a name="antivirus-detections"></a>Antivirusidentifiering
-De här identifieringarna är tillgängliga på enheter [med Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) aktiverat. När de här identifieringarna inträffar på enheter som har introducerats till Microsoft Defender för Endpoint utlöser de även aviseringar som tar upp diagrammen i rapporten.
+Dessa identifieringar är tillgängliga på enheter [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) är påslagna. När de här identifieringarna inträffar på enheter som har introducerats till Microsoft Defender för Endpoint utlöser de även aviseringar som tar upp diagrammen i rapporten.
 
 >[!NOTE]
 >Analytikerrapporten visar även **allmänna** identifieringar som kan identifiera en mängd olika hot, utöver komponenter eller beteenden som är specifika för de spårade hoten. Dessa allmänna identifieringar återspeglas inte i diagrammen.
 
-### <a name="endpoint-detection-and-response-edr-alerts"></a>Slutpunktsidentifiering och svarsaviseringar (EDR)
-EDR-aviseringar upphöjs [för enheter som är onboarded till Microsoft Defender för Endpoint](onboard-configure.md). Dessa varningar förlitar sig vanligtvis på säkerhetssignaler som samlas in av Microsoft Defender för Endpoint-sensoren och andra slutpunktsfunktioner – till exempel antivirus, nätverksskydd, manipuleringsskydd – som fungerar som kraftfulla signalkällor.
+### <a name="endpoint-detection-and-response-edr-alerts"></a>Aviseringar om identifiering av slutpunkt och svar (Identifiering och åtgärd på slutpunkt)
+Identifiering och åtgärd på slutpunkt upphöjs för [enheter som är onboarded till Microsoft Defender för Endpoint](onboard-configure.md). Dessa varningar förlitar sig vanligtvis på säkerhetssignaler som samlas in av Microsoft Defender för Endpoint-sensoren och andra slutpunktsfunktioner – till exempel antivirus, nätverksskydd, manipuleringsskydd – som fungerar som kraftfulla signalkällor.
 
-Liksom listan med antivirusidentifieringar är vissa EDR-aviseringar utformade för att generellt flagga misstänkt beteende som kanske inte är kopplat till det spårade hotet. I sådana fall identifierar rapporten tydligt varningen som "allmän" och att den inte påverkar något av diagrammen i rapporten.
+Precis som listan med antivirusidentifieringar är vissa Identifiering och åtgärd på slutpunkt är utformade för att generellt flagga misstänkt beteende som kanske inte är kopplat till det spårade hotet. I sådana fall identifierar rapporten tydligt varningen som "allmän" och att den inte påverkar något av diagrammen i rapporten.
 
 ## <a name="find-subtle-threat-artifacts-using-advanced-hunting"></a>Hitta diskreta hotartefakter med avancerad sökning
 Vid identifieringar kan du identifiera och stoppa de spårade hoten automatiskt, men många attackaktiviteter lämnar diskreta spårningar som kräver ytterligare kontroll. Vissa attackaktiviteter har beteenden som också kan vara normala, så att de dynamiskt kan leda till driftstörningar eller till och med falska positiva identifieringar.

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8f23a0b269986f4caa199ad3744c563fcc6ff6b2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 876dddf7a68b9844dea6a30ff4ebbbe3c2b75b69
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769107"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844556"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Använda Microsoft Defender för slutpunkts-API:er
 
@@ -44,7 +44,7 @@ Om du behöver programmeringsåtkomst till Microsoft Defender för Slutpunkt uta
 
 Om du inte är säker på vilken åtkomst du behöver kan du läsa [introduktionssidan.](apis-intro.md)
 
-Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De här API:erna gör det möjligt att automatisera arbetsflöden och nya funktioner baserat på Microsoft Defender för Slutpunkt-funktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 auktoriseringskod för Flow.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De här API:erna gör det möjligt att automatisera arbetsflöden och nya funktioner baserat på Microsoft Defender för Slutpunkt-funktioner. API-åtkomst kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 auktoriseringskod för Flow.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 I allmänhet måste du vidta följande steg för att använda API:er:
 - Skapa ett AAD-program
@@ -122,7 +122,7 @@ På den här sidan förklaras hur du skapar ett AAD-program, hämtar en åtkomst
 
 ## <a name="get-an-access-token"></a>Hämta en åtkomsttoken
 
-Mer information om AAD-tokens finns i [Självstudiekurs för Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Mer information om AAD-tokens finns i [Självstudiekurs för Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-c"></a>Använda C #
 

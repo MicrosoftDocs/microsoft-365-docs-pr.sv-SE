@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 93aa685f12e0241758bf86d3aa956717db052e5f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 56fd5aa10cf30e7bdcad213a68430b460e65647c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499940"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844232"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Visa och ordna kön Microsoft Defender för slutpunktsincidenter
 
@@ -60,7 +60,7 @@ Incidentens allvarlighetsgrad | Beskrivning
 Högsta </br>(Röd) | Hot som ofta associeras med avancerade fortlöpande hot (APT). De här incidenterna anger en hög risk på grund av hur allvarlig skada de kan orsaka på enheter.
 Medel </br>(Orange) | Hot som sällan observeras i organisationen, till exempel avvikande registerändring, körning av misstänkta filer och observerade beteenden som är typiska för attackfaser.
 Låg </br>(Gul) | Hot som är associerade med vanlig skadlig programvara och hack-verktyg som inte nödvändigtvis indikerar ett avancerat hot som riktar sig till organisationen.
-Information </br>(Grå) | Informationstillbud anses kanske inte vara skadliga för nätverket men de kan vara bra att hålla reda på.
+Informativ </br>(Grå) | Informationstillbud anses kanske inte vara skadliga för nätverket men de kan vara bra att hålla reda på.
 
 ## <a name="assigned-to"></a>Tilldelad till
 Du kan välja att filtrera listan genom att välja tilldelade till alla eller sådana som har tilldelats till dig.
@@ -85,7 +85,7 @@ Till exempel: *Incident i flera steg på flera slutpunkter som rapporterats av f
 
 
 ## <a name="see-also"></a>Se även
-- [Incidentkö](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Incidentkö](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Hantera incidenter](manage-incidents.md)
 - [Undersöka incidenter](investigate-incidents.md)
 

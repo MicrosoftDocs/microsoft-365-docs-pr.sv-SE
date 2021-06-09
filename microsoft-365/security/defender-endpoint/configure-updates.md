@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d8f589da32ae72383bbe2da7624c9bb846265679
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 26695df0e34c0e06adc4f58acf3fea83122c1982
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809338"
+ms.locfileid: "52844484"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Skapa en anpassad stegvis införandeprocess för Microsoft Defender-uppdateringar
 
@@ -54,7 +54,7 @@ I följande tabell finns tillgängliga grupprincipinställningar för konfigurer
 > [!NOTE]
 > En uppdaterad Defender ADMX-mall publiceras tillsammans med 21H2-versionen av Windows 10.
 
-Du kan använda [grupprinciper](https://docs.microsoft.com/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)   för att konfigurera Microsoft Defender Antivirus och hantera e-Microsoft Defender Antivirus slutpunkter.
+Du kan använda [grupprinciper](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)   för att konfigurera Microsoft Defender Antivirus och hantera e-Microsoft Defender Antivirus slutpunkter.
 
 I allmänhet kan du använda följande procedur för att konfigurera eller ändra Microsoft Defender Antivirus grupprincipinställningar:
 
@@ -74,7 +74,7 @@ I allmänhet kan du använda följande procedur för att konfigurera eller ändr
 
 Följ länken nedan för att skapa en anpassad princip i Intune:
 
-[Lägga till anpassade inställningar Windows 10 enheter i Microsoft Intune – Azure \| Microsoft Docs](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)
+[Lägga till anpassade inställningar Windows 10 enheter i Microsoft Intune – Azure \| Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
 
 ## <a name="powershell"></a>PowerShell
 
@@ -94,4 +94,4 @@ Exempel:
 
 Används `Set-MpPreference -PlatformUpdatesChannel Beta` för att konfigurera plattformsuppdateringar så att de kommer från Beta-kanalen.
 
-Mer information om parametrar och hur du konfigurerar dem finns i [Set-MpPreference (Defender) | Microsoft Docs.](https://docs.microsoft.com/powershell/module/defender/set-mppreference?view=windowsserver2019-ps)
+Mer information om parametrar och hur du konfigurerar dem finns i [Set-MpPreference (Defender) | Microsoft Docs.](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps)

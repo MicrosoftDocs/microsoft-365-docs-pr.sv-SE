@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e653ff84602a5e5546ef9a4c0aca2559b77e43c1
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 7c1f768e69fa65c76529e641f095e13fc7ad67c8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683517"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841346"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Teknologier i Microsoft Hanterat skrivbord
 
@@ -52,8 +52,8 @@ Funktioner som ingår och hanteras som en del av Microsoft Hanterat skrivbord:
  |
  --- | ---
 BitLocker Diskkryptering | BitLocker Enhetskryptering används för att kryptera alla systemenheter. Mer information finns i BitLocker [kryptering av hårddisk.](/windows/security/information-protection/bitlocker/bitlocker-overview)
-Windows Defender System Guard | Skyddar systemintegriteten vid start och verifierar att systemintegriteten verkligen har bibehållas. Mer information finns i [Windows Defender System Guard.]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
-Windows Defender Credential Guard | Windows Defender Credential Guard utnyttjar virtualiseringsbaserad säkerhet för att isolera hemligheter så att endast privilegierad systemprogramvara kan komma åt dem. Mer information finns i [Windows Defender System Guard.]( https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
+Windows Defender System Guard | Skyddar systemintegriteten vid start och verifierar att systemintegriteten verkligen har bibehållas. Mer information finns i [Windows Defender System Guard.](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
+Windows Defender Credential Guard | Windows Defender Credential Guard utnyttjar virtualiseringsbaserad säkerhet för att isolera hemligheter så att endast privilegierad systemprogramvara kan komma åt dem. Mer information finns i [Windows Defender System Guard.](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
 Microsoft Defender för slutpunkt – identifiering och svar av slutpunkt | Microsoft Hanterat skrivbord Säkerhetsåtgärder svarar på varningar och åtgärdar hot genom att åtgärda hot med hjälp av slutpunktsidentifiering och svar. Mer information finns i [Microsoft Defender för slutpunkt – identifiering av slutpunkt och svar.](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)
 Microsoft Defender för Endpoint – hotexperter | Microsoft Hanterat skrivbord kan integreras med insikter och data från hotexperter via riktade attackmeddelanden. Du måste ge ytterligare tillstånd innan den här tjänsten aktiveras. Mer information finns i [Microsoft Defender för Endpoint – Hotexperter](/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
 Microsoft Defender för slutpunkt – hantering av hot och sårbarhet | Krävs för framtida användning i Microsoft Hanterat skrivbord-tjänstabonnemanget. Mer information finns i [Microsoft Defender för Slutpunkt – Hot och sårbarhetshantering.](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
@@ -61,7 +61,7 @@ Microsoft Defender för slutpunkt – Minska attackytan | Minskning av attackyta
 Microsoft Defender för slutpunkt – sårbarhetsskydd | Skyddar mot skadlig programvara som använder sårbarheter för att smitta enheter och sprida genom att automatiskt utnyttja minskningsteknik på både operativsystemprocesser och appar. Mer information finns i [Microsoft Defender för Slutpunkt – sårbarhetsskydd.](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)
 Microsoft Defender för slutpunkt – nätverksskydd | Nätverksskydd utökar omfattningen av Microsoft Defender SmartScreen att blockera all utgående HTTP- och HTTPS-trafik som försöker ansluta till berykelsekällor. Mer information finns i [Microsoft Defender för Slutpunkt – Nätverksskydd.](/windows/security/threat-protection/microsoft-defender-atp/network-protection)
 Skydd mot manipulering i Microsoft Defender | Windows Skydd mot manipulering används för att förhindra att säkerhetsinställningar som antivirusskydd ändras. Mer information finns i [Microsoft Defender Manipuleringsskydd](/windows/security/threat-protection/microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection).
-Microsoft Defender Antivirus Funktionsbaserat, heuristiskt och realtidsskydd för antivirus | Söker alltid efter fil- och processhot som kanske inte identifieras som skadlig programvara. Mer information finns i [Microsoft Defender Antivirus ett antivirusprogram med funktionsbaserad, heuristisk och realtidsskyddet.]( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+Microsoft Defender Antivirus Funktionsbaserat, heuristiskt och realtidsskydd för antivirus | Söker alltid efter fil- och processhot som kanske inte identifieras som skadlig programvara. Mer information finns i [Microsoft Defender Antivirus ett antivirusprogram med funktionsbaserad, heuristisk och realtidsskyddet.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 Microsoft Defender Antivirus Moln levererat skydd | Ger dynamiskt, automatiserat skydd mot nya och nya hot. Mer information finns i [Microsoft Defender Antivirus Cloud-delivered Protection.](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
 Microsoft Defender "Blockera vid första synen" | Tillhandahåller identifiering och blockering av ny skadlig programvara Windows upptäcker en misstänkt eller okänd fil. Mer information finns i [Microsoft Defender Block vid första anblicken.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 Microsoft Defender AV potentiellt oönskade program | Potentiellt oönskade program används för att blockera appar som kan få datorn att köras långsamt, visa oväntade annonser eller i värsta fall installera annan programvara som kan vara oväntade eller oönskade. Mer information finns i [Microsoft Defender AV Potentiellt oönskade program.](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)

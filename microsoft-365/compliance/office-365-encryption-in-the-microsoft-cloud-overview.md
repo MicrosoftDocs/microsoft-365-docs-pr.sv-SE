@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: I den här artikeln kan du läsa en översikt över de olika krypteringsformulären som används för att skydda kunddata i Microsoft-molnet.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a351215b7773574d5932b936e30c5d5ca7aa116
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0d05c904fc70d02d8694b8f2d3b451fd1d51dc91
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "52162468"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841300"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Kryptering i Microsoft-molnet
 
@@ -57,7 +57,7 @@ För kunddata som överförs förhandlar Office 365 servrar om säkra sessioner 
 - [Kryptering i Azure](office-365-azure-encryption.md)
 - [BitLocker och DKM (Distributed Key Manager) för kryptering](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 - [Office 365 Tjänstkryptering](office-365-service-encryption.md)
-- [Office 365 Kryptering för Skype för företag, OneDrive för företag, SharePoint Online och Exchange Online](https://docs.microsoft.com/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
+- [Office 365 Kryptering för Skype för företag, OneDrive för företag, SharePoint Online och Exchange Online](/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
 - [Kryptering för data som överförs](/compliance/assurance/assurance-encryption-in-transit)
 - [Funktioner för kund hanterad kryptering](office-365-customer-managed-encryption-features.md)
 - [Krypteringsrisker och -skydd](office-365-encryption-risks-and-protections.md)

@@ -12,34 +12,34 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Lär dig hur du Microsoft Teams skapa din kanal för kontraktshantering med hjälp av en Microsoft 365 lösning.
-ms.openlocfilehash: 81d5fe34383453b187363b13c21ef47844948193
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 073ef1651ea5470594bfce0ffce65e849f9e063a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636188"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841180"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Steg 2. Använd Microsoft Teams för att skapa din kanal för kontraktshantering
 
-När din organisation skapar en lösning för kontraktshantering behöver du en central plats där intressenter kan granska och hantera kontrakt. För detta ändamål kan du använda [Microsoft Teams](https://docs.microsoft.com/microsoftteams/) konfigurera en kanal Teams och använda funktionerna i Teams för att:
+När din organisation skapar en lösning för kontraktshantering behöver du en central plats där intressenter kan granska och hantera kontrakt. För detta ändamål kan du använda [Microsoft Teams](/microsoftteams/) konfigurera en kanal Teams och använda funktionerna i Teams för att:
 
 - **Skapa en plats för intressenter för att enkelt kunna se alla kontrakt som kräver åtgärder.** I Teams kan du till exempel  skapa fliken Kontrakt i kanalen Kontraktshantering där medlemmarna kan se en användbar panelvy över alla kontrakt som kräver godkännande. Du kan också konfigurera vyn så att varje "kort" visar viktig information som är viktig för dig (t.ex. *klient,* leverantörer och *avgiftsbelopp).*
 
      ![Fliken Kontrakt.](../media/content-understanding/tile-view.png)
 
-- **Ha en plats där medlemmarna kan interagera med varandra och se viktiga händelser.** I Teams till exempel kan  fliken Inlägg användas för att ha konversationer, få uppdateringar och visa åtgärder (till exempel en medlem som avvisar ett kontrakt). När något har hänt (till exempel om  ett nytt avtal har skickats in för godkännande) kan fliken Inlägg inte bara användas för att meddela den, utan också för att spara den. Och om medlemmarna prenumererar på aviseringar får de ett meddelande när det finns en uppdatering. 
+- **Ha en plats där medlemmarna kan interagera med varandra och se viktiga händelser.** I Teams till exempel kan  fliken Inlägg användas för att ha konversationer, få uppdateringar och visa åtgärder (till exempel en medlem som avvisar ett kontrakt). När något har hänt (till exempel om  ett nytt avtal har skickats in för godkännande) kan fliken Inlägg inte bara användas för att meddela den, utan också för att spara den. Och om medlemmarna prenumererar på aviseringar får de ett meddelande när det finns en uppdatering.
 
-     ![Fliken Inlägg.](../media/content-understanding/posts.png)</br> 
+     ![Fliken Inlägg.](../media/content-understanding/posts.png)
 
-- **Ha en plats där medlemmarna kan se godkända kontrakt för att veta när de kan skickas in för betalning.** I Teams kan du skapa en <b>för</b> betalningskanal som visar alla kontrakt som ska skickas till betalningen. Du kan enkelt utöka den här lösningen så att den istället skriver den här informationen direkt till en ekonomisk app från tredje part (till exempel Dynamics CRM).
+- **Ha en plats där medlemmarna kan se godkända kontrakt för att veta när de kan skickas in för betalning.** I Teams kan du skapa en **för** betalningskanal som visar alla kontrakt som ska skickas till betalningen. Du kan enkelt utöka den här lösningen så att den istället skriver den här informationen direkt till en ekonomisk app från tredje part (till exempel Dynamics CRM).
 
-## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Bifoga ditt SharePoint dokumentbibliotek på fliken Kontrakt 
+## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Bifoga ditt SharePoint dokumentbibliotek på fliken Kontrakt
 
 När du har skapat **fliken** Kontrakt i kanalen Kontraktshantering måste du bifoga ditt SharePoint [till det](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). Den SharePoint dokumentbibliotek som du vill bifoga är den där du SharePoint med förstå-modellen för Syntex-dokument i föregående avsnitt.
 
 När du bifogat SharePoint-dokumentbiblioteket kan du visa alla klassificerade kontrakt i en standardlistvy.
 
-   ![Listvy.](../media/content-understanding/list-view.png) 
+   ![Listvy.](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Anpassa panelvyn på fliken Kontrakt
 
@@ -54,7 +54,7 @@ Den anpassade panelvyn du använder kräver att du gör ändringar i JSON-filen 
 
 Om du vill se eller göra ändringar i JSON-koden för vyn i din Teams-kanal går du till Teams-kanalen, väljer listrutan Vy och väljer sedan **Formatera aktuell vy.**
 
-   ![json-format.](../media/content-understanding/jason-format.png) 
+   ![json-format.](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>Kortstorlek och -form
 
@@ -81,7 +81,6 @@ I [ContractTileFormatting.jsfilen](https://github.com/pnp/syntex-samples/blob/ma
                       }
 ```
 
-
 ## <a name="contract-status"></a>Kontraktsstatus
 
 Med följande kod kan du ange status för varje titelkort. Observera att varje statusvärde *(Ny,* *I* *granskning,* Godkänd och *Avvisad)* visar olika färgkoder för varje statusvärde. I [ContractTileFormatting.jsfilen](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) tittar du på avsnittet som definierar statusen.
@@ -104,10 +103,9 @@ Med följande kod kan du ange status för varje titelkort. Observera att varje s
               }
 ```
 
-
 ## <a name="extracted-fields"></a>Extraherade fält
 
-Varje kontraktskort visar tre fält som har extraherats för varje kontrakt *(klient,* *leverantörer* och *avgiftsbelopp).* Dessutom vill du visa det tid/datum då filen klassificerades av den SharePoint Syntex-modellen som använts för att identifiera den. 
+Varje kontraktskort visar tre fält som har extraherats för varje kontrakt *(klient,* *leverantörer* och *avgiftsbelopp).* Dessutom vill du visa det tid/datum då filen klassificerades av den SharePoint Syntex-modellen som använts för att identifiera den.
 
 I [ContractTileFormatting.jsfilen](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) definierar följande avsnitt var och en av dessa.
 
@@ -159,7 +157,6 @@ Det här avsnittet definierar hur "Entreprenör" visas på kortet och använder 
 },
 ```
 
-
 ### <a name="fee-amount"></a>Avgiftsbelopp
 
 Det här avsnittet definierar hur "Avgiftsbelopp" visas på kortet och använder värdet för det specifika avtalet.
@@ -183,8 +180,6 @@ Det här avsnittet definierar hur "Avgiftsbelopp" visas på kortet och använder
                         "txtContent": "[$FeeAmount]"
                       },
 ```
-
-
 
 ### <a name="classification-date"></a>Klassificeringsdatum
 

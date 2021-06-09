@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 23d6c8c87a6cbcc7b8060440ba2c0cae6182767d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bd86458749db4019bb247a3664748b9891965754
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274550"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841355"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Konfigurera funktioner för automatisk undersökning och åtgärder i Microsoft Defender för Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "52274550"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Om din organisation använder [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/) för Slutpunkt (Defender för [Slutpunkt)](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) kan automatiska undersöknings- och åtgärdsfunktioner spara din tid och ditt arbete med säkerhetsåtgärder. Som beskrivs i [det här blogginlägget](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)efterliknar de här funktionerna de idealiska steg som en säkerhetsanalytiker tar för att undersöka och åtgärda hot. [Läs mer om automatiserad undersökning och åtgärd.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) 
+Om din organisation använder [Microsoft Defender](/windows/security/threat-protection/) för Slutpunkt (Defender för [Slutpunkt)](/microsoft-365/security/defender-endpoint/automated-investigations) kan automatiska undersöknings- och åtgärdsfunktioner spara din tid och ditt arbete med säkerhetsåtgärder. Som beskrivs i [det här blogginlägget](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/enhance-your-soc-with-microsoft-defender-atp-automatic/ba-p/848946)efterliknar de här funktionerna de idealiska steg som en säkerhetsanalytiker tar för att undersöka och åtgärda hot. [Läs mer om automatiserad undersökning och åtgärd.](/microsoft-365/security/defender-endpoint/automated-investigations) 
 
 Om du vill konfigurera automatisk undersökning och åtgärd
 1. [Aktivera funktionerna](#turn-on-automated-investigation-and-remediation). och 
@@ -43,8 +43,8 @@ Om du vill konfigurera automatisk undersökning och åtgärd
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>Aktivera automatisk undersökning och åtgärd
 
-1. Som global administratör eller säkerhetsadministratör går du till Microsoft Defender Säkerhetscenter [https://securitycenter.windows.com](https://securitycenter.windows.com) () och loggar in.
-2. Välj Inställningar i **navigeringsfönstret.**
+1. Som global administratör eller säkerhetsadministratör går du till Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) och loggar in.
+2. I navigeringsfönstret väljer du **Inställningar**.
 3. I avsnittet **Allmänt** väljer du **Avancerade funktioner.**
 4. Aktivera både automatisk **undersökning och** matcha **aviseringar automatiskt.**
 
@@ -56,13 +56,13 @@ Om du vill konfigurera automatisk undersökning och åtgärd
    - Ange ett namn och en beskrivning för enhetsgruppen.
    - I listan **Automationsnivå** väljer du en nivå, till exempel Fullständigt – åtgärda **hot automatiskt.** Automationsnivån avgör om åtgärder vidtas automatiskt eller bara efter godkännande. Mer information finns i [Automatiseringsnivåer i automatiserad undersökning och åtgärd.](automation-levels.md)
    - I avsnittet **Medlemmar** använder du ett eller flera villkor för att identifiera och inkludera enheter.
-   - På fliken **Användaråtkomst** väljer du de [Azure Active Directory-grupper](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) som ska ha åtkomst till enhetsgruppen som du skapar.
+   - På fliken **Användaråtkomst** väljer du de [Azure Active Directory som](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) ska ha åtkomst till enhetsgruppen som du skapar.
 4. Välj **Klar** när du är klar med att konfigurera enhetsgruppen.
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Gå till Åtgärdscenter om du vill visa väntande och slutförda åtgärdsåtgärder](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
-- [Granska och godkänna väntande åtgärder](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)
+- [Gå till Åtgärdscenter om du vill visa väntande och slutförda åtgärdsåtgärder](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
+- [Granska och godkänna väntande åtgärder](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
 ## <a name="see-also"></a>Se även
 

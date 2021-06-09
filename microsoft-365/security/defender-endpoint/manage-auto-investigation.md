@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 410972bd823c3a3c4fda53cacc225014d83f3457
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274934"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844016"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Granska åtgärdsåtgärder efter en automatiserad undersökning
 
@@ -39,7 +39,7 @@ Beroende på
 
 - typen av hot, 
 - den resulterande bedömningen och 
-- hur din organisations [enhetsgrupper](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) konfigureras 
+- hur din organisations [enhetsgrupper](/microsoft-365/security/defender-endpoint/machine-groups) konfigureras 
 
 Åtgärdsåtgärder kan ske automatiskt eller bara om godkännande har godkänts av organisationens team för säkerhetsåtgärder. 
 
@@ -49,7 +49,7 @@ Här är några exempel:
 
 - **Exempel 2:** Contosos enheter ingår i en enhetsgrupp som är inställd på Semi – kräver **godkännande för alla åtgärder.** I det här fallet måste Contosos säkerhetsoperationsteam granska och godkänna alla åtgärder efter en automatiserad undersökning (se [Granska väntande åtgärder](#review-pending-actions)).
 
-- **Exempel 3:** Tailspin Toys har sina enhetsgrupper inställda på **Inget automatiskt svar** (rekommenderas inte). I det här fallet förekommer inte automatiska undersökningar. Inga åtgärder vidtas eller väntar och inga åtgärder loggas [](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) i Åtgärdscenter för sina enheter (se [Hantera enhetsgrupper](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)).
+- **Exempel 3:** Tailspin Toys har sina enhetsgrupper inställda på **Inget automatiskt svar** (rekommenderas inte). I det här fallet förekommer inte automatiska undersökningar. Inga åtgärder vidtas eller väntar och inga åtgärder loggas [](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) i Åtgärdscenter för sina enheter (se [Hantera enhetsgrupper](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)).
 
 Oavsett om en automatisk undersökning vidtas automatiskt eller efter godkännande kan en automatiserad undersökning resultera i en eller flera av åtgärderna:
 - Sätt en fil i karantän
@@ -102,7 +102,7 @@ Om du har fastställt att en enhet eller en fil inte är ett hot kan du ångra �
 
 Automatiseringsnivåer påverkar om vissa åtgärder vidtas automatiskt eller bara vid godkännande. Ibland har säkerhetsoperationsteamet fler åtgärder att vidta, beroende på resultatet av en automatiserad undersökning. I följande tabell sammanfattas automationsnivåer, resultaten från automatiserade undersökningar och vad du ska göra i varje fall. 
 
-|Enhetsgruppinställning | Resultat från automatiserad undersökning | Vad kan jag göra? |
+|Enhetsgruppinställning | Resultat från automatiserad undersökning | Lämplig åtgärd |
 |:---|:---|:---|
 |**Full – åtgärda hot automatiskt** (den rekommenderade inställningen) |En bedömning av *skadlig* är uppnådd för ett bevis. <br/><br/>Lämpliga åtgärder vidtas automatiskt. |[Granska slutförda åtgärder](#review-completed-actions) |
 |**Full – åtgärda hot automatiskt** |En bedömning av *misstänkt* resultat har uppnåtts om det finns bevis för det. <br/><br/>Åtgärdsåtgärder väntar på godkännande för att fortsätta. | [Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions) |
@@ -111,8 +111,8 @@ Automatiseringsnivåer påverkar om vissa åtgärder vidtas automatiskt eller ba
 |**Semi – kräver godkännande för åtgärd av basmappar** |En bedömning av *misstänkt* resultat har uppnåtts om det finns bevis för det. <br/><br/>Åtgärdsåtgärder väntar på godkännande.  |[Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions).|
 |**Semi – kräver godkännande för åtgärder som inte är tillfälliga mappar** |En bedömning av *skadlig* är uppnådd för ett bevis. <br/><br/>Om artefakten är en fil eller körbar som inte finns i en tillfällig mapp, till exempel användarens mapp för nedladdningar eller tillfällig mapp, väntar åtgärder på att godkännas. <br/><br/>Om artefakten är en fil eller körbar *som* finns i en tillfällig mapp vidtas åtgärder automatiskt.  |1. [Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions)<br/><br/>2. [Granska slutförda åtgärder](#review-completed-actions)  |
 |**Semi – kräver godkännande för åtgärder som inte är tillfälliga mappar** |En bedömning av *misstänkt* resultat har uppnåtts om det finns bevis för det. <br/><br/>Åtgärdsåtgärder väntar på godkännande. |[Godkänna (eller avvisa) väntande åtgärder](#review-pending-actions)  | 
-|Alla automationsnivåer **med helt** **eller semi** |En bedömning av *Inga hot hittades* som bevis. <br/><br/>Inga åtgärdsåtgärder vidtas och inga åtgärder väntar på att godkännas. |[Visa detaljer och resultat av automatiserade undersökningar](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
-|**Inget automatiskt svar** (rekommenderas inte)|Ingen automatiserad undersökning körs, så inga bedömningar har uppnåtts och inga åtgärder vidtas eller väntar på godkännande. |[Överväg att konfigurera eller ändra enhetsgrupper så att fullständig **eller** **semi-automation** används](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) |
+|Alla automationsnivåer **med helt** **eller semi** |En bedömning av *Inga hot hittades* som bevis. <br/><br/>Inga åtgärdsåtgärder vidtas och inga åtgärder väntar på att godkännas. |[Visa detaljer och resultat av automatiserade undersökningar](/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
+|**Inget automatiskt svar** (rekommenderas inte)|Ingen automatiserad undersökning körs, så inga bedömningar har uppnåtts och inga åtgärder vidtas eller väntar på godkännande. |[Överväg att konfigurera eller ändra enhetsgrupper så att fullständig **eller** **semi-automation** används](/microsoft-365/security/defender-endpoint/machine-groups) |
 
 I Microsoft Defender för Endpoint spåras alla beslut i [Åtgärdscenter](auto-investigation-action-center.md#new-a-unified-action-center).
 

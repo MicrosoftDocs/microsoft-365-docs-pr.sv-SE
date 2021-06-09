@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3f8a8c04f608096e5c226d6899fbbd983bd8d8c1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 499ac9a6ee81bacb79cd83993d510f87e11c62c6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246434"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844724"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender för Endpoint för Android
 
@@ -48,13 +48,13 @@ I det här avsnittet beskrivs hur du installerar, konfigurerar, uppdaterar och a
 
 -   **För slutanvändare**
 
-    -   Microsoft Defender för slutpunktslicens tilldelad till slutanvändare av programmet. Se [Licenskrav för Microsoft Defender för Slutpunkt](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+    -   Microsoft Defender för slutpunktslicens tilldelad till slutanvändare av programmet. Se [Licenskrav för Microsoft Defender för Slutpunkt](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
 
     -   Intune-företagsportal-appen kan laddas ned från [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) och finns på Android-enheten.
 
-        -   Dessutom kan enheter registreras via appen [Intune-företagsportal](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal) för att tillämpa Intune-enhetsefterlevnadsprinciper. Det kräver att användaren tilldelas en Microsoft Intune licens.
+        -   Dessutom kan enheter registreras via appen [Intune-företagsportal](/mem/intune/user-help/enroll-device-android-company-portal) för att tillämpa Intune-enhetsefterlevnadsprinciper. Det kräver att användaren tilldelas en Microsoft Intune licens.
 
-    -   Mer information om hur du tilldelar licenser finns i [Tilldela användare licenser.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
+    -   Mer information om hur du tilldelar licenser finns i [Tilldela användare licenser.](/azure/active-directory/users-groups-roles/licensing-groups-assign)
         
 
 -   **För administratörer**

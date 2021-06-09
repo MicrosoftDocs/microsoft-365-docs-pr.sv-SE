@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: b791f2b62cb4a3f8062c80ceeb04ccfa72f704bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b17af7931b181a5fa30271a3eee07c7abf10a010
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070170"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844028"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Granska aviseringar i Microsoft Defender för Slutpunkt
 
@@ -46,7 +46,7 @@ Om du väljer namnet på en avisering i Defender för Endpoint hamnar du på avi
 
 1. **Aviseringsrubriken** visar aviseringens namn och finns där för att påminna dig om vilken avisering som startade den aktuella undersökningen oavsett vad du valde på sidan.
 2. [**Berörda tillgångar**](#review-affected-assets) visar korten för enheter och användare som påverkas av den här aviseringen som kan klickas för ytterligare information och åtgärder.
-3. I **aviseringsartikeln** visas alla enheter som är relaterade till aviseringen, sammankopplade med en trädvy. Aviseringen i rubriken kommer att vara den som är i fokus när du först kommer till den valda aviseringens sida. Enheter i aviseringsinformationen är expanderbara och klickbara, för att ge ytterligare information och underlätta svar genom att göra det möjligt att vidta åtgärder direkt i kontexten för aviseringssidan. Använd aviseringsartikeln för att starta din undersökning. Läs mer i [Undersöka aviseringar i Microsoft Defender för Slutpunkt.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-alerts)
+3. I **aviseringsartikeln** visas alla enheter som är relaterade till aviseringen, sammankopplade med en trädvy. Aviseringen i rubriken kommer att vara den som är i fokus när du först kommer till den valda aviseringens sida. Enheter i aviseringsinformationen är expanderbara och klickbara, för att ge ytterligare information och underlätta svar genom att göra det möjligt att vidta åtgärder direkt i kontexten för aviseringssidan. Använd aviseringsartikeln för att starta din undersökning. Läs mer i [Undersöka aviseringar i Microsoft Defender för Slutpunkt.](/microsoft-365/security/defender-endpoint/investigate-alerts)
 4. I **informationsfönstret** visas först information om den valda aviseringen med information och åtgärder relaterade till den här aviseringen. Om du väljer någon av de berörda tillgångarna eller enheterna i aviseringsinformationen ändras informationsfönstret för att ge sammanhangsberoende information och åtgärder för det valda objektet.
 
 Observera identifieringsstatus för din avisering. 

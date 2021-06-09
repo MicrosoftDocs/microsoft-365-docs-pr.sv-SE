@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan lära sig att visa, skapa, ändra och ta bort principer för utgående skräppost i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c2f68cac05f296771fc56d400e95d014811fe03a
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 9ebff0a93acd505532773fbf5d714268df220c9a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793010"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822015"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera utgående skräppostfiltrering i EOP
 
@@ -68,7 +68,7 @@ För att göra utgående skräppostfiltrering mer effektiv kan du skapa anpassad
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Microsoft 365 Säkerhetscenter på <https://security.microsoft.com/>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://security.microsoft.com/antispam>.
+- Öppna Microsoft 365 Säkerhetscenter på <https://security.microsoft.com>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://security.microsoft.com/antispam>.
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -169,7 +169,7 @@ När du skapar en anpassad utgående skräppostprincip i säkerhetscentret skapa
 
    Klicka på **Nästa** när du är klar.
 
-6. Granska inställningarna på sidan **Granska** som visas. Du kan välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet. Du kan också klicka **på** Bakåt eller välja en specifik sida i guiden.
+6. Granska inställningarna på sidan **Granska** som visas. Du kan välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet. Eller så kan du klicka på **Föregående** eller välj den specifika sidan i guiden.
 
    Klicka på **Skapa** när du är klar.
 

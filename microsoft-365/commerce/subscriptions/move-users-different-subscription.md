@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Lär dig hur du flyttar användare mellan prenumerationer.
 ms.date: 07/01/2020
-ms.openlocfilehash: 0261ee15d16e895cb2552320097d8e6b396d5220
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333212"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822087"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Flytta användare till en annan prenumeration
 
@@ -73,4 +73,4 @@ Om du inte tänker [](../../managed-desktop/get-started/assign-licenses.md)omtil
 [Ta bort licenser från din prenumeration](../licenses/buy-licenses.md) (artikel)\
 [Ändra abonnemang manuellt](change-plans-manually.md) (artikel)\
 [Förstå prenumerationer och licenser i Microsoft 365 för företag](../licenses/subscriptions-and-licenses.md) (artikel)\
-[Köpa en annan Microsoft 365 för företag-prenumeration](../try-or-buy-microsoft-365.md) (artikel)
+[Köpa en Microsoft 365 för företag-prenumeration](../try-or-buy-microsoft-365.md) (artikel)

@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: f77ce94fda63a9e7e8a9484a67a22eeec136d619
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 481a8f15d6a41bda8dc866ce40d98c4f3717223d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935887"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844064"
 ---
 # <a name="troubleshoot-network-protection"></a>Felsöka nätverksskydd
 
@@ -51,10 +51,10 @@ Det finns fyra steg för att felsöka dessa problem:
 Nätverksskydd fungerar bara på enheter med följande villkor:
 
 >[!div class="checklist"]
-> - Slutpunkter kör Windows 10 Pro eller Enterprise, version 1709 eller senare.
-> - Slutpunkter använder Microsoft Defender Antivirus som den enda antivirusskyddsappen. [Se vad som händer när du använder en antiviruslösning som inte är en Microsoft-lösning.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
-> - [Realtidsskydd är](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) aktiverat.
-> - [Moln levererat skydd är](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) aktiverat.
+> - Slutpunkter körs med Windows 10 Pro Enterprise- eller Enterprise-version, version 1709 eller senare.
+> - Slutpunkter använder Microsoft Defender Antivirus som den enda antivirusskyddsappen. [Se vad som händer när du använder en antiviruslösning som inte är en Microsoft-lösning.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+> - [Realtidsskydd är](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) aktiverat.
+> - [Moln levererat skydd är](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) aktiverat.
 > - Granskningsläge är inte aktiverat. Använd [grupprincip för](enable-network-protection.md#group-policy) att ange att regeln ska **inaktiveras** (värde: **0**).
 
 ## <a name="use-audit-mode"></a>Använda granskningsläge
@@ -79,7 +79,7 @@ Du kan aktivera nätverksskydd i granskningsläge och sedan besöka en webbplats
 
 ## <a name="report-a-false-positive-or-false-negative"></a>Rapportera ett falskt positivt eller falskt negativt värde
 
-Om du har testat funktionen med demowebbplatsen och med granskningsläge och nätverksskydd arbetar med förkonfigurerade scenarier, men inte fungerar som förväntat för en viss anslutning, kan du använda det webbaserade insändningsformuläret i [Windows Defender Säkerhetsinformation](https://www.microsoft.com/wdsi/filesubmission) för att rapportera ett falskt negativt eller falskt positivt resultat för nätverksskydd. Med en E5-prenumeration kan du också [skicka en länk till eventuell associerad avisering](alerts-queue.md).
+Om du har testat funktionen med demowebbplatsen och med granskningsläge och nätverksskydd arbetar med förkonfigurerade scenarier, men inte fungerar som förväntat för en viss anslutning, kan du använda det webbaserade insändningsformuläret för [Windows Defender Security Intelligence](https://www.microsoft.com/wdsi/filesubmission) om du vill rapportera ett falskt negativt eller falskt positivt resultat för nätverksskydd. Med en E5-prenumeration kan du också [skicka en länk till eventuell associerad avisering](alerts-queue.md).
 
 Se [Adress: falska positiva/negativa i Microsoft Defender för Slutpunkt](defender-endpoint-false-positives-negatives.md).
 
@@ -91,7 +91,7 @@ Om du vill tillåta att webbplatsen blockeras (falsk positiv inställning) lägg
 
 När du rapporterar ett problem med nätverksskydd uppmanas du att samla in och skicka diagnostikdata som kan användas av Microsofts support- och teknikteam för att felsöka problem.
 
-1. Öppna en upphöjd kommandotolk och ändra till Windows Defender-katalogen:
+1. Öppna en upphöjd kommandotolk och ändra i Windows Defender katalog:
 
    ```console
    cd c:\program files\windows defender
@@ -120,7 +120,7 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
-Du kan konfigurera registernyckeln med hjälp av PowerShell, Microsoft Endpoint Manager eller Grupprincip. Här är några resurser som kan vara till hjälp:
+Du kan konfigurera registernyckeln med hjälp av PowerShell, Microsoft Endpoint Manager eller grupprincip. Här är några resurser som kan vara till hjälp:
 - [Arbeta med registernycklar](/powershell/scripting/samples/working-with-registry-keys)
 - [Konfigurera anpassade klientinställningar för Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [Använda grupprincipinställningar för att hantera Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)

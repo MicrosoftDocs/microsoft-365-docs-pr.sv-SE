@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Lär dig hur du ändrar standardtemat för navigeringsfältet högst upp i Microsoft 365 och anpassa det så att det matchar ditt företags logotyp eller färg.
-ms.openlocfilehash: e609cbbc116f932d9c41f7ec797bf04a2a9c8ef8
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809053"
+ms.locfileid: "52841312"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassa Microsoft 365 för din organisation
 
@@ -82,20 +82,13 @@ Du kan skapa upp till fyra ytterligare gruppteman.
 
 På sidan **Logotyper kan** du lägga till dina logotyper och ange URL-adressen dit användarna ska navigera när de markerar logotypen.
 
-- **Standardlogotyp:** Lägg till en URL-plats som pekar på din logotyp. Kontrollera att URL:en använder HTTPS och att bilden är minst 200 x 30 bildpunkter. Standardlogotypen kan vara i JPG-, PNG-, GIF- eller SVG-format.
+- **Standardlogotyp:** Lägg till en URL-plats som pekar på din logotyp. Kontrollera att URL:en använder HTTPS. Om du laddar upp en logotyp bör du kontrollera att den är mindre än 10 kb. Standardlogotypen kan vara i JPG-, PNG-, GIF- eller SVG-format. För SVG-bilder ändras storleken så att den passar 24 bildpunkter lodrätt. JPG-, PNG- och GIF-bilder skalas så att de passar 200 x 48 bildpunkter.
 - **Alternativ logotyp:** Lägg till en URL-plats som pekar på din logotyp. Din alternativa logotyp bör vara optimerad för användning i Office mörka teman. Samma krav som för standardlogotypen.
-- **Liten standardlogotyp:** Lägg till en URL-plats som pekar på logotypen. Bilden måste vara minst 48 x 48 bildpunkter. Du kan skala den här bilden så att den får plats på mindre eller mobila enheter.
-- **Liten alternativ logotyp:** Lägg till en URL-plats som pekar på din logotyp. Den här bilden har samma krav som den lilla standardlogotypen.
 - **Vid klickning länk:** Lägg till en URL-plats som pekar på din logotyp. Du kan använda din logotyp som en länk till valfri företagsresurs, till exempel företagets webbplats.
 
 Välj **Spara** för att spara ändringarna.
 
 Du kan ta bort dina logotyper när som helst. Gå bara tillbaka till **sidan Logotyper och** välj Ta **bort**.
-
-:::image type="content" source="../../media/default-theme-logos.png" alt-text="Skärmbild: Fliken Logotyper som visar organisationens standardlogotyp för teman":::
-
-> [!NOTE]
-> Som standard visar vi först de logotypval som de flesta organisationer använder. Om du vill se alla val av logotyper går du längst ned i listan och väljer **Visa avancerade alternativ.**
   
 ## <a name="colors-choose-theme-colors"></a>Färger: Välj temafärger
 

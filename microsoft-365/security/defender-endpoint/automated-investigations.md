@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: d4b0751938b66cc22dd59e2e7035077c5ef59ff9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: e52471e1b3e9ee3a410de493b536f9d360d60624
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274826"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844448"
 ---
 # <a name="overview-of-automated-investigations"></a>Översikt över automatiserade undersökningar
 
@@ -72,9 +72,9 @@ När aviseringar utlöses och en automatiserad undersökning körs genereras en 
 
 Eftersom bedömningarna nås kan automatiska undersökningar resultera i en eller flera åtgärder. Exempel på åtgärder är att skicka en fil till karantän, stoppa en tjänst, ta bort en schemalagd aktivitet och mycket mer. Mer information finns [i Åtgärder .](manage-auto-investigation.md#remediation-actions)  
 
-Beroende på [hur automatiseringsnivån](automation-levels.md) är inställd för organisationen, samt andra säkerhetsinställningar, kan åtgärder vidtas automatiskt eller bara vid godkännande från säkerhetsteamet. Ytterligare säkerhetsinställningar som kan påverka automatisk åtgärd är bland [annat skydd mot potentiellt oönskade program](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA). 
+Beroende på [hur automatiseringsnivån](automation-levels.md) är inställd för organisationen, samt andra säkerhetsinställningar, kan åtgärder vidtas automatiskt eller bara vid godkännande från säkerhetsteamet. Ytterligare säkerhetsinställningar som kan påverka automatisk åtgärd är bland [annat skydd mot potentiellt oönskade program](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) (PUA). 
 
-Alla åtgärdsåtgärder, oavsett om de är väntande eller slutförda, spåras i [Åtgärdscenter.](auto-investigation-action-center.md) Om det behövs kan säkerhetsåtgärdsteamet ångra en åtgärd. Mer information finns i [Granska och godkänna åtgärdsåtgärder efter en automatiserad undersökning.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)
+Alla åtgärdsåtgärder, oavsett om de är väntande eller slutförda, spåras i [Åtgärdscenter.](auto-investigation-action-center.md) Om det behövs kan säkerhetsåtgärdsteamet ångra en åtgärd. Mer information finns i [Granska och godkänna åtgärdsåtgärder efter en automatiserad undersökning.](/microsoft-365/security/defender-endpoint/manage-auto-investigation)
 
 > [!TIP]
 > Titta på den nya sidan för enhetlig undersökning i Microsoft 365 säkerhetscenter. Mer information finns i [(NYTT!) Sida för enhetlig undersökning](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
@@ -88,7 +88,7 @@ För närvarande stöder AIR endast följande OS-versioner:
 - Windows Server 2019
 - Windows 10, version 1709 (OS Build 16299.1085 med [KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)eller senare
 - Windows 10, version 1803 (OS-version 17134.704 med [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)eller senare
-- Windows 10, version [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) eller senare
+- Windows 10, version [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) eller senare
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -98,6 +98,6 @@ För närvarande stöder AIR endast följande OS-versioner:
 
 ## <a name="see-also"></a>Se även
 
-- [PUA-skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Automatisk undersökning och svar i Microsoft Defender för Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Automatiserad undersökning och svar i Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [PUA-skydd](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [Automatisk undersökning och svar i Microsoft Defender för Office 365](/microsoft-365/security/office-365-security/office-365-air)
+- [Automatiserad undersökning och svar i Microsoft 365 Defender](/microsoft-365/security/defender/mtp-autoir)

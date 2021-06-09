@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du importerar data från tredje part från plattformar för sociala medier, snabbmeddelandeplattformar och dokumentsamarbete till Microsoft 365 postlådor.
-ms.openlocfilehash: 22a2e6dbadc3c259896348fc89754882db85cfb4
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "52162662"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822159"
 ---
 # <a name="archive-third-party-data"></a>Arkivera data från tredje part
 
@@ -86,7 +86,7 @@ I följande tabell visas de datakopplingar från tredje part som är tillgängli
 ||||||||
 
 > [!NOTE]
-> <sup>1</sup> Data connector provided by TeleMessage. Innan du kan arkivera data i Microsoft 365 måste du arbeta med TeleMessage för att konfigurera deras arkiveringstjänst för din organisation. Mer information finns i avsnittet som krävs i de stegvisa instruktionerna för den här datatypen.<br/><br/><sup>2</sup> Datakoppling tillhandahålls av Veritas. Innan du kan arkivera data i Microsoft 365 måste du arbeta med Veritas för att konfigurera deras arkiveringstjänst för organisationen. Mer information finns i avsnittet som krävs i de stegvisa instruktionerna för den här datatypen.
+> <sup>1</sup> Data connector provided by TeleMessage. Innan du kan arkivera data i Microsoft 365 måste du arbeta med TeleMessage för att konfigurera deras arkiveringstjänst för din organisation. Mer information finns i avsnittet som krävs i de stegvisa instruktionerna för den här datatypen. TeleMessage-dataanslutningar är också tillgängliga GCC miljöer i Microsoft 365 för myndigheter i USA. Mer information finns i avsnittet [Dataanslutningar i molnet för myndigheter i USA i](#data-connectors-in-the-us-government-cloud) den här artikeln. <br/><br/><sup>2</sup> Datakoppling tillhandahålls av Veritas. Innan du kan arkivera data i Microsoft 365 måste du arbeta med Veritas för att konfigurera deras arkiveringstjänst för organisationen. Mer information finns i avsnittet som krävs i de stegvisa instruktionerna för den här datatypen.
 
 Data från tredje part som listas i föregående tabell (utom hr-data och fysiska badgingdata) importeras till användarpostlådor. Motsvarande efterlevnadslösningar som stöder data från tredje part tillämpas på den användarpostlåda där data lagras.
 
@@ -118,13 +118,29 @@ Du kan tillämpa en [bevarandeprincip på](retention.md) användarnas postlådor
 
 Med [funktionen för](records-management.md) hantering av arkivhandlingar Microsoft 365 du deklarera data från tredje part som arkivhandlingar. Det kan göras manuellt av användare som använder en bevarandeetikett som markerar data från tredje part i postlådan som arkivering. Du kan även använda bevarandeetiketter automatiskt genom att identifiera känslig information, nyckelord eller innehållstyper i data från tredje part.
 
-### <a name="communication-compliance"></a>Efterlevnad av kommunikation
+### <a name="communication-compliance"></a>Kommunikationsefterlevnad
 
 Du kan använda [kommunikationsefterlevnad](communication-compliance.md) för att undersöka data från tredje part och kontrollera att de är kompatibla med organisationens datastandarder. Det kan du göra genom att identifiera, samla in och vidta åtgärdsåtgärder för olämpliga meddelanden i organisationen. Du kan till exempel övervaka data från tredje part som du importerar för anstötligt språk, känslig information och regelefterlevnad.
 
 ### <a name="insider-risk-management"></a>Hantering av insiderrisk
 
 Signaler från data från tredje part, t.ex. [](insider-risk-management.md) selektiva HR-data, kan användas av Insider-riskhanteringslösningen för att minimera interna risker genom att låta dig identifiera, undersöka och agera på riskfyllda aktiviteter i organisationen. Till exempel används data som importerats av HR-datakopplingen som riskindikatorer för att identifiera avgående datastöld av anställda.
+
+## <a name="data-connectors-in-the-us-government-cloud"></a>Datakopplingar i molnet för myndigheter i USA
+
+Som tidigare nämnts är dataanslutningar från TeleMessage tillgängliga i molnet för myndigheter i USA. I följande tabell visas de specifika myndighetsmiljöer som stöder varje TeleMessage-datakoppling. Mer information om amerikanska myndigheters moln finns i [Microsoft 365 för myndigheter i USA.](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)
+
+|Datakoppling för TeleMessage  |GCC  |GCC Hög  |DoD  |
+|:---------|:---------|:---------|:---------|
+|Android-arkivering | Ja | Nej | Nej |
+|AT&T SMS/MMS Network Archiver | Ja | Nej | Nej |
+|Bell SMS/MMS Network Archiver | Ja | Nej | Nej |
+|Enterprise Number Archiver | Ja | Nej | Nej |
+|O2 SMS och Voice Network Archiver | Ja         | Nej | Nej |
+|TELUS SMS Network Archiver | Ja | Nej | Nej |
+|Verizon SMS/MMS Network Archiver | Ja | Nej | Nej |
+|WhatsApp Archiver | Ja | Nej | Nej |
+|||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Arbeta med en Microsoft-partner för att arkivera data från tredje part
 

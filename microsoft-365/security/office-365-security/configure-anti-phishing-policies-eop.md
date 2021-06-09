@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan lära sig att skapa, ändra och ta bort de principer mot nätfiske som är tillgängliga i Exchange Online Protection-organisationer (EOP) med eller utan Exchange Online postlådor.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c329edc517476cfb184bfa4b70c2f2c9542b6e33
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ee227fe622f21d5b0f520507e1d88e2bbd0f3b31
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789069"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822316"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurera principer för skydd mot nätfiske i EOP
 
@@ -60,7 +60,7 @@ För att öka effektiviteten i skydd mot nätfiske kan du skapa anpassade princi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Microsoft 365 Säkerhetscenter på <https://security.microsoft.com/>. Om du vill gå direkt **till sidan Mot nätfiske** använder du <https://security.microsoft.com/antiphishing> .
+- Öppna Microsoft 365 Säkerhetscenter på <https://security.microsoft.com>. Om du vill gå direkt **till sidan Mot nätfiske** använder du <https://security.microsoft.com/antiphishing> .
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -77,7 +77,7 @@ För att öka effektiviteten i skydd mot nätfiske kan du skapa anpassade princi
   - Genom att lägga till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna den nödvändiga behörigheten _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   - Rollgruppen **Organisationshantering,** skrivskyddade [i Exchange Online,](/Exchange/permissions-exo/permissions-exo#role-groups) ger även skrivskyddsåtkomst till <sup>\*</sup> funktionen.
 
-- Vi rekommenderar inställningar för principer mot nätfiske i standardinställningarna för nätfiskeprincip i [EOP.](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings)
+- Vi rekommenderar inställningar för principer för skydd mot nätfiske i [inställningarna för EOP-principer för skydd mot nätfiske.](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)
 
 - Det kan ta upp till 30 minuter för den uppdaterade principen att tillämpas.
 
@@ -137,7 +137,7 @@ Om du skapar en anpassad policy för nätfiske i säkerhetscentret skapas samtid
 
    Klicka på **Nästa** när du är klar.
 
-7. Granska inställningarna på sidan **Granska** som visas. Du kan välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet.
+7. Granska inställningarna på sidan **Granska** som visas. Du kan välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet. Eller så kan du klicka på **Föregående** eller välj den specifika sidan i guiden.
 
    När du är klar klickar du på **Skicka.**
 

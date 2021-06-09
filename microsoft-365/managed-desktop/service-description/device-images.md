@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 00943eb85abbfd2d237ae5544eb69d3ec4d9f875
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245510"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841288"
 ---
 # <a name="device-images"></a>Enhetsbilder
 
@@ -79,13 +79,13 @@ Hps kommersiella datorer som levereras med HP Corporate Ready Image innehåller 
 
 Dessa steg tar bort alla data på enheten, så innan du startar bör du backa upp data som du vill behålla.
 
-1. [Skapa en startbar USB-enhet](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) med WinPE.
+1. [Skapa en startbar USB-enhet](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) med WinPE.
 2. Kopiera de här filerna från C: \\ SOURCES till USB-enheten:
     - WiM-filen för fabriksåterställning (till exempel HP \_ EliteBook \_ 840 \_ G7 \_ Notebook PC CR \_ \_ \_ 2004.wim)
     - DISTRIBUERA. CMD
     - ReCreatePartitions.txt
 3. [Starta enheten på WinPE](https://store.hp.com/us/en/tech-takes/how-to-boot-from-usb-drive-on-windows-10-pcs) USB-enhet.
-4. I en kommandotolk kör [ duDiskpart.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/diskpart#additional-references).
+4. I en kommandotolk kör [ duDiskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references).
 5. I Diskpart kör du `list disk` och noterar sedan numret till den primära lagringsdisken (vanligtvis disk 0).
 6. Avsluta Diskpart genom att skriva `exit` .
 7. I kommandotolken kör du , där sys_disk är disknumret för den primära lagringsskivan du just fastställa `deploy.cmd <sys_disk> <recovery_wim>` *recovery_wim* är filnamnet på .  WIM-fil som du kopierade tidigare.

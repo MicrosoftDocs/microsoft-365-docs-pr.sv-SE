@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: ba206002415fcd4ae968cc88563136399b78f435
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6d453a8b6e5c4947c0fb03131c539b083227c28a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274781"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844652"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>Automatiseringsnivåer i automatiserad undersökning och åtgärdsfunktioner
 
@@ -52,7 +52,7 @@ I följande tabell beskrivs varje nivå av automatisering och hur det fungerar.
 |**Semi – kräv godkännande för åtgärd** <br/>(kallas även *semi-automation)*| Med den här nivån av semi-automation krävs godkännande *för* alla åtgärder. Sådana väntande åtgärder kan visas och godkännas [i Åtgärdscenter](auto-investigation-action-center.md)på **fliken Väntande.**<br/><br/>*Den här nivån av semi-automation är markerad som standard för klientorganisationer som skapades före 16 augusti 2020 med Microsoft Defender för Slutpunkt, utan att enhetsgrupper har definierats.*|
 |**Semi – kräver godkännande för åtgärd av basmappar** <br/>(också en typ av *semi-automation*)  | Med den här nivån av semi-automation krävs godkännande för åtgärder som krävs för filer eller körbara filer i huvudmappar. Basmappar innehåller operativsystemskataloger, till exempel **Windows** ( `\windows\*` ).<br/><br/>Åtgärder kan vidtas automatiskt på filer eller körbara filer som finns i andra mappar (icke-kärnmappar). <br/><br/>Väntande åtgärder för filer eller körbara filer i huvudmappar kan visas och godkännas i [Åtgärdscenter](auto-investigation-action-center.md)på **fliken Väntande.** <br/><br/>Åtgärder som har utförts på filer eller körbara filer i andra mappar kan visas i [Åtgärdscenter](auto-investigation-action-center.md)på **fliken Historik.** |
 |**Semi – kräver godkännande för åtgärder som inte är tillfälliga mappar** <br/>(också en typ av *semi-automation*)| Med den här nivån av semi-automation krävs godkännande för åtgärder som krävs för filer eller körbara filer som inte *finns* i tillfälliga mappar. <br/><br/>Tillfälliga mappar kan innehålla följande exempel: <br/>- `\users\*\appdata\local\temp\*`<br/>- `\documents and settings\*\local settings\temp\*` <br/>- `\documents and settings\*\local settings\temporary\*`<br/>- `\windows\temp\*`<br/>- `\users\*\downloads\*`<br/>- `\program files\` <br/>- `\program files (x86)\*`<br/>- `\documents and settings\*\users\*`<br/><br/>Åtgärder kan vidtas automatiskt på filer eller körbara filer som finns i tillfälliga mappar. <br/><br/>Väntande åtgärder för filer eller körbara filer som inte finns i tillfälliga mappar kan visas och godkännas i [Åtgärdscenter](auto-investigation-action-center.md)på **fliken Väntande.**<br/><br/>Åtgärder som har utförts på filer eller körbara filer i tillfälliga mappar kan visas och godkännas i [Åtgärdscenter](auto-investigation-action-center.md)på **fliken Historik.**   |
-|**Inget automatiserat svar** <br/>(kallas även *ingen automation)* | Ingen automatisering innebär att automatisk undersökning körs på organisationens enheter. Därför vidtas inga åtgärder eller väntande åtgärder på grund av automatiserad undersökning. Men andra skyddsfunktioner som [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)skydd mot potentiellt oönskade program kan påverkas, beroende på hur antivirus- och nästa generations skyddsfunktioner är konfigurerade.<br/><br/>***Vi rekommenderar *inte* att du använder någon** automation, eftersom det minskar säkerheten för din organisations enheter. [Överväg att ställa in din automatiseringsnivå till fullständig automation (eller åtminstone semi-automation)](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups)*. |
+|**Inget automatiserat svar** <br/>(kallas även *ingen automation)* | Ingen automatisering innebär att automatisk undersökning körs på organisationens enheter. Därför vidtas inga åtgärder eller väntande åtgärder på grund av automatiserad undersökning. Men andra skyddsfunktioner som [](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)skydd mot potentiellt oönskade program kan påverkas, beroende på hur antivirus- och nästa generations skyddsfunktioner är konfigurerade.<br/><br/>***Vi rekommenderar *inte* att du använder någon** automation, eftersom det minskar säkerheten för din organisations enheter. [Överväg att ställa in din automatiseringsnivå till fullständig automation (eller åtminstone semi-automation)](/microsoft-365/security/defender-endpoint/machine-groups)*. |
 
 ## <a name="important-points-about-automation-levels"></a>Viktiga punkter om automatiseringsnivåer
 
@@ -62,10 +62,10 @@ I följande tabell beskrivs varje nivå av automatisering och hur det fungerar.
 
 - Om ditt säkerhetsteam har definierat enhetsgrupper med en automatiseringsnivå ändras inte de inställningarna i de nya standardinställningarna som lanseras. 
 
-- Du kan behålla standardinställningarna för automatisering eller ändra dem efter organisationens behov. Om du vill ändra dina [inställningar anger du automatiseringsnivån.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups)
+- Du kan behålla standardinställningarna för automatisering eller ändra dem efter organisationens behov. Om du vill ändra dina [inställningar anger du automatiseringsnivån.](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups)
 
 ## <a name="next-steps"></a>Nästa steg
 
 - [Konfigurera funktioner för automatisk undersökning och åtgärder i Microsoft Defender för Endpoint](configure-automated-investigations-remediation.md)
 
-- [Besök Åtgärdscenter](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)
+- [Besök Åtgärdscenter](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center)

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b6b664d471e238e2feb1e1aedd100c1299fc5bbe
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861161"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844268"
 ---
 # <a name="protect-your-network"></a>Skydda ditt nätverk
 
@@ -33,9 +33,9 @@ ms.locfileid: "51861161"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Nätverksskydd hjälper till att minska enheternas attackytor från Internetbaserade händelser. Det förhindrar anställda att använda något program för att komma åt skadliga domäner som kan vara värdar för nätfiske, sårbarheter och annat skadligt innehåll på Internet. Nätverksskyddet utökar Omfattningen av [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) för att blockera all utgående HTTP-trafik som försöker ansluta till ryktes beryka källor (baserat på domän eller värdnamn).
+Nätverksskydd hjälper till att minska enheternas attackytor från Internetbaserade händelser. Det förhindrar anställda att använda något program för att komma åt skadliga domäner som kan vara värdar för nätfiske, sårbarheter och annat skadligt innehåll på Internet. Nätverksskydd utökar omfattningen av [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) för att blockera all utgående HTTP-trafik som försöker ansluta till berykande källor med låg rykte (baserat på domän eller värdnamn).
 
-Nätverksskydd stöds i Windows från och med Windows 10, version 1709. Nätverksskydd stöds ännu inte på andra operativsystem, men webbskydd stöds med den nya Microsoft Edge baserat på Chromium. Mer information finns i [Webbskydd](web-protection-overview.md).
+Nätverksskydd stöds i alla Windows, med början från Windows 10 version 1709. Nätverksskydd stöds ännu inte på andra operativsystem, men webbskydd stöds med den nya Microsoft Edge baserat på Chromium. Mer information finns i [Webbskydd](web-protection-overview.md).
 
 Nätverksskydd utökar skyddet i [webbskyddet](web-protection-overview.md) till operativsystemets nivå. Det ger webbskyddsfunktioner i Microsoft Edge till andra webbläsare som stöds och program som inte är webbläsarbaserade. Dessutom tillhandahåller nätverksskydd synlighet och blockering av indikatorer på intrång (IOCs) när de används med identifiering och [svar av slutpunkter.](overview-endpoint-detection-response.md) Till exempel fungerar nätverksskydd med dina [anpassade indikatorer](manage-indicators.md).
 
@@ -52,11 +52,11 @@ Du kan också använda [granskningsläge](audit-windows-defender.md) för att ut
 
 ## <a name="requirements"></a>Krav
 
-Nätverksskydd kräver Windows 10 Pro eller Enterprise och realtidsskydd i Microsoft Defender Antivirus.
+Nätverksskydd kräver Windows 10 Pro företag och Microsoft Defender Antivirus i realtidsskydd.
 
-| Windows-version | Microsoft Defender Antivirus |
+| Windows version | Microsoft Defender Antivirus |
 |:---|:---|
-| Windows 10 version 1709 eller senare <p>Windows Server 1803 eller senare | [Realtidsskydd och moln levererat skydd](configure-real-time-protection-microsoft-defender-antivirus.md) [i](enable-cloud-protection-microsoft-defender-antivirus.md) Microsoft Defender Antivirus måste vara aktiverat |
+| Windows 10 version 1709 eller senare <p>Windows Server 1803 eller senare | [Microsoft Defender Antivirus realtidsskydd och](configure-real-time-protection-microsoft-defender-antivirus.md) moln [levererat skydd måste](enable-cloud-protection-microsoft-defender-antivirus.md) vara aktiverat |
 
 När du har aktiverat tjänsterna kan du behöva konfigurera nätverket eller brandväggen så att anslutningarna mellan tjänsterna och dina enheter tillåts (kallas även slutpunkter).  
 
@@ -78,7 +78,7 @@ DeviceEvents
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Granska nätverksskyddshändelser i Windows Loggboken
 
-Du kan granska Windows händelselogg för att se händelser som skapas när nätverksskydd blockerar (eller granskar) åtkomst till en skadlig IP eller domän:
+Du kan granska Windows om du vill se händelser som skapas när nätverksskydd blockerar (eller granskar) åtkomst till en skadlig IP eller domän:
 
 1. [Kopiera XML-filen direkt.](event-views.md)
 
@@ -92,15 +92,15 @@ Den här proceduren skapar en anpassad vy som filtrerar för att bara visa följ
 | 1125 | Händelse när nätverksskydd aktiveras i granskningsläge |
 | 1126 | Händelse när nätverksskyddet utbrandar i blockläge |
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Att tänka på för virtuellt Windows-skrivbord med Windows 10 Enterprise Multi-Session
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Att tänka på Windows virtuella skrivbordet som Windows 10 Enterprise flersession
 
-Tänk på följande eftersom Windows 10 Enterprise har flera användare:
+Tänk på Windows 10 Enterprise funktioner för flera användare:
 
 1. Nätverksskydd är en funktion för hela enheten och kan inte riktas till specifika användarsessioner.
 
 2. Principer för filtrering av webbinnehåll är också enhetsomfattande.
 
-3. Om du behöver skilja mellan användargrupper kan du skapa separata pooler och tilldelningar av Windows Virtual Desktop.
+3. Om du behöver skilja mellan användargrupper kan du skapa separata Windows för virtuella skrivbord som värd för pooler och tilldelningar.
 
 4. Testa nätverksskydd i granskningsläge för att bedöma dess beteende innan det lanseras. 
 
@@ -108,7 +108,7 @@ Tänk på följande eftersom Windows 10 Enterprise har flera användare:
 
 ### <a name="alternative-option-for-network-protection"></a>Alternativt alternativ för nätverksskydd
 
-För Windows 10 Enterprise Multi-Session 1909 och uppåt, som används i Windows Virtual Desktop i Azure, kan nätverksskydd för Microsoft Edge aktiveras på följande sätt:
+För Windows 10 Enterprise flersession 1909 och uppåt, och används i Windows Virtual Desktop i Azure, kan nätverksskydd för Microsoft Edge aktiveras med följande metod:
 
 1. Använd [Aktivera nätverksskydd och](enable-network-protection.md) följ instruktionerna för att tillämpa principen.
 

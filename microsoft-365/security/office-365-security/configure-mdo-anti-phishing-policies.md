@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan lära sig att skapa, ändra och ta bort avancerade principer mot nätfiske som är tillgängliga i organisationer med Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9af3824b245cd976d1e859d6ebc4efcda47325e0
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: bc7575b87b8c5e512116f60ae98b700071e2bbd0
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793094"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822388"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer mot nätfiske i Microsoft Defender för Office 365
 
@@ -61,7 +61,7 @@ Om du vill öka effektiviteten i skydd mot nätfiske i Defender för Office 365 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Microsoft 365 Säkerhetscenter på <https://security.microsoft.com/>. Om du vill gå direkt **till sidan Mot nätfiske** använder du <https://security.microsoft.com/antiphishing> .
+- Öppna Microsoft 365 Säkerhetscenter på <https://security.microsoft.com>. Om du vill gå direkt **till sidan Mot nätfiske** använder du <https://security.microsoft.com/antiphishing> .
 
 - Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -243,7 +243,7 @@ Om du skapar en anpassad policy för nätfiske i säkerhetscentret skapas samtid
 
    Klicka på **Nästa** när du är klar.
 
-7. Granska inställningarna på sidan **Granska** som visas. Du kan välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet. Du kan också klicka **på** Bakåt eller välja en specifik sida i guiden.
+7. Granska inställningarna på sidan **Granska** som visas. Du kan välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet. Eller så kan du klicka på **Föregående** eller välj den specifika sidan i guiden.
 
    När du är klar klickar du på **Skicka.**
 

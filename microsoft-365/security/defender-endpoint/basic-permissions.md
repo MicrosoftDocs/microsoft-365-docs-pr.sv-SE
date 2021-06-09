@@ -1,5 +1,5 @@
 ---
-title: Använda grundläggande behörigheter för att komma åt Microsoft Defender Säkerhetscenter
+title: Använda grundläggande behörigheter för att komma Microsoft Defender Säkerhetscenter
 description: Lär dig hur du använder grundläggande behörigheter för att komma åt Microsoft Defender för Endpoint-portalen.
 keywords: tilldela användarroller, tilldela läs- och skrivåtkomst, tilldela skrivskyddsåtkomst, användare, användarroller, roller
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb5762d2a9e4b62432aba6dacd1033ddc3c7daf2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163677"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844664"
 ---
-# <a name="use-basic-permissions-to-access-the-portal"></a>Använda grundläggande behörigheter för åtkomst till portalen
+# <a name="use-basic-permissions-to-access-the-portal"></a>Använda grundläggande behörigheter för att komma åt portalen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,19 +42,19 @@ Du kan använda någon av följande lösningar:
 
 Om du vill ha detaljerad kontroll över behörigheter [växlar du till rollbaserad åtkomstkontroll.](rbac.md)
 
-## <a name="assign-user-access-using-azure-powershell"></a>Tilldela användaråtkomst med hjälp av Azure PowerShell
+## <a name="assign-user-access-using-azure-powershell"></a>Tilldela användaråtkomst via Azure PowerShell
 Du kan tilldela användare med någon av följande behörighetsnivåer:
 - Fullständig åtkomst (läsa och skriva)
 - Skrivskyddade åtkomst
 
 ### <a name="before-you-begin"></a>Innan du börjar
 
-- Installera Azure PowerShell. Mer information finns i Installera [och konfigurera Azure PowerShell.](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)<br>
+- Installera Azure PowerShell. Mer information finns i Installera [och konfigurera Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
 
     > [!NOTE]
     > Du måste köra PowerShell-cmdletarna i en upphöjd kommandorad.
 
-- Anslut till Azure Active Directory. Mer information finns i [Connect-MsolService.](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)
+- Anslut på Azure Active Directory. Mer information finns i [Anslut-MsolService.](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)
 
 **Fullständig åtkomst** <br>
 Användare med fullständig åtkomst kan logga in, visa all systeminformation och lösa aviseringar, skicka filer för djupanalys och ladda ned onboarding-paketet.
@@ -79,12 +79,12 @@ Använd följande steg för att tilldela säkerhetsroller:
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-Mer information finns i Lägga [till eller ta bort gruppmedlemmar med Hjälp av Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
+Mer information finns i Lägga [till eller ta bort gruppmedlemmar med hjälp av Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>Tilldela användaråtkomst via Azure Portal
 
-Mer information finns i Tilldela [användare med Azure Active Directory administratörsroller och icke-administratörsroller.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)
+Mer information finns i Tilldela [administratörs- och icke-administratörsroller till användare med Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
-## <a name="related-topic"></a>Relaterade ämnen
+## <a name="related-topic"></a>Relaterat ämne
 
 - [Hantera portalåtkomst med RBAC](rbac.md)

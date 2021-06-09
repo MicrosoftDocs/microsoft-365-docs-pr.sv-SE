@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 2601001687fc22da98ca3cd81010237d12705ea4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 99a52188dd5f6eca2f8368aa3c114d0bfb950b10
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687417"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844160"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Felsöka problem med livesvar i Microsoft Defender för Endpoint
 
@@ -67,7 +67,7 @@ Live Response utnyttjar Defender för slutpunkts sensorregistrering med WNS-tjä
 2. WpnService (Windows Push Notifications System Service) inaktiveras inte.
 
 Läs artiklarna nedan för fullständig förståelse av WpnService-tjänstens beteende och krav:
-- [Översikt över Windows Push Notification Services (WNS)](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Företagsbrandväggs- och proxykonfigurationer för stöd för WNS-trafik](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windows Översikt över Push Notification Services (WNS)](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Företagsbrandväggs- och proxykonfigurationer för stöd för WNS-trafik](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Offentliga IP-intervall för Microsoft Push Notifications Service (MPNS)](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

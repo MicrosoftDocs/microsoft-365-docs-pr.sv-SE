@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan lära sig hur de använder utbildning av attack simulering för att köra simulerad nätfiske- och lösenordsattacker i sina Microsoft 365 E5 eller Microsoft Defender för Office 365 abonnemang 2 organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a5986bbeebd49223ebfd74773346f27fc5297243
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: c5d4b77204f207c31f2014df797f6209b92c9ccb
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730924"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822340"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Kom igång med Attack simuleringsträning
 
@@ -38,7 +38,7 @@ Om din organisation har Microsoft 365 E5 eller Microsoft Defender för Office 36
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Microsoft Säkerhetscenter genom att gå till <https://security.microsoft.com/> . Utbildning av attack simulering är tillgänglig på **E-post och** \> **samarbete Attack simulering utbildning**. Om du vill gå direkt till simuleringsutbildningen för attack öppnar du <https://security.microsoft.com/attacksimulator> .
+- Öppna Microsoft Säkerhetscenter genom att gå till <https://security.microsoft.com> . Utbildning av attack simulering är tillgänglig på **E-post och** \> **samarbete Attack simulering utbildning**. Om du vill gå direkt till simuleringsutbildningen för attack öppnar du <https://security.microsoft.com/attacksimulator> .
 
 - Mer information om tillgängligheten för simulering av attack i olika abonnemang Microsoft 365 finns i [Microsoft Defender Office 365 beskrivning av tjänsten](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7ac7fdf4c38846e2e8be614567ddb87a98e3a96c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7d0e38789cfc576c0c3f1a8be352796e674ac13a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772131"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845036"
 ---
 # <a name="list-software-version-distribution"></a>Lista distribution av programvaruversion 
 
@@ -100,5 +100,5 @@ Här är ett exempel på svaret.
 ```
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Riskbaserade hot & sårbarhetshantering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Hot & inventering av sårbarhetsprogramvara](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Riskbaserade hot & sårbarhetshantering](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Hot & inventering av sårbarhetsprogramvara](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Läs mer om grundläggande felsökningssteg du kan vidta för att lösa vanliga problem Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809125"
+ms.locfileid: "52822244"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Undersöka, felsöka och lösa vanliga eDiscovery-problem
 
@@ -226,7 +226,7 @@ Det här är ett klientproblem och försök med följande steg för att åtgärd
 
 1. Prova att använda en annan klient/dator för att ladda ned.
 
-2. Ta bort gamla sökningar som inte längre behövs med hjälp av cmdleten [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch].
+2. Ta bort gamla sökningar som inte längre behövs med [cmdleten Remove-ComplianceSearch.](/powershell/module/exchange/remove-compliancesearch)
 
 3. Se till att ladda ned till en lokal enhet.
 

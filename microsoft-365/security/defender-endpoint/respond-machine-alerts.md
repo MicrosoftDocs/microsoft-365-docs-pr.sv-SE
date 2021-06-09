@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ae8b08ce3d5bcc34e91f031223108fca053348ce
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: aab9c191e590b0717a0f1be62ed88a699d3b5b57
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572399"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844058"
 ---
 # <a name="take-response-actions-on-a-device"></a>Vidta svarsåtgärder på en enhet
 
@@ -124,7 +124,7 @@ Som en del av undersökningen eller svarsprocessen kan du via fjärren starta en
 
 >[!IMPORTANT]
 >- Den här åtgärden är tillgänglig för enheter Windows 10, version 1709 eller senare.
->- En Microsoft Defender Antivirus (Microsoft Defender AV) kan köras tillsammans med andra antivirusprogram, oavsett om Microsoft Defender AV är den aktiva antiviruslösningen eller inte. Microsoft Defender AV kan vara i passivt läge. Mer information finns i [Microsoft Defender Antivirus kompatibilitet](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+>- En Microsoft Defender Antivirus (Microsoft Defender AV) kan köras tillsammans med andra antivirusprogram, oavsett om Microsoft Defender AV är den aktiva antiviruslösningen eller inte. Microsoft Defender AV kan vara i passivt läge. Mer information finns i [Microsoft Defender Antivirus kompatibilitet](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 En av dem du har valt Kör **antivirussökning**, välj den genomsökningstyp som du vill köra (snabb eller fullständig) och lägg till en kommentar innan du bekräftar skanningen.
 
@@ -134,7 +134,7 @@ En av dem du har valt Kör **antivirussökning**, välj den genomsökningstyp so
 
 >[!NOTE]
 >När en genomsökning utlöses med Defender för slutpunktssvarsåtgärd gäller fortfarande värdet ScanAvgCPULoadFactor för Microsoft Defender antivirus (GenomsökningAvgCPULoadFactor) och begränsar genomsökningens CPU-påverkan.<br> Om ScanAvgCPULoadFactor inte har konfigurerats är standardvärdet en gräns på 50 % maximal CPU-belastning vid en genomsökning.<br>
->Mer information finns i [configure-advanced-scan-types-microsoft-defender-antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
+>Mer information finns i [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
 ## <a name="restrict-app-execution"></a>Begränsa körning av program
 
@@ -143,7 +143,7 @@ Förutom att stoppa skadliga processer som innehåller en attack kan du låsa en
 >[!IMPORTANT]
 > - Den här åtgärden är tillgänglig för enheter Windows 10, version 1709 eller senare.
 > - Den här funktionen är tillgänglig om din organisation använder Microsoft Defender Antivirus.
-> - Den här åtgärden måste uppfylla Windows Defender programkontrollens policyformat för kodintegritet och signeringskrav. Mer information finns i Format [och signering av kodintegritetsprincip.](https://docs.microsoft.com/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)
+> - Den här åtgärden måste uppfylla Windows Defender programkontrollens policyformat för kodintegritet och signeringskrav. Mer information finns i Format [och signering av kodintegritetsprincip.](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)
 
 För att hindra ett program från att köras tillämpas en kodintegritetsprincip som bara tillåter att filer körs om de är signerade av ett certifikat utfärdat av Microsoft. Den här begränsningsmetoden kan förhindra att en attack kontrollerar komprometterade enheter och utför ytterligare skadliga aktiviteter.
 
@@ -191,7 +191,7 @@ När en enhet isoleras visas följande meddelande för att informera användaren
 
 Du kan kontakta en Microsoft-expert för att få mer information om en potentiellt komprometterad enhet eller redan komprometterade enheter. Microsoft Hotexperter kan vara direkt engagerade i mötet via Microsoft Defender Säkerhetscenter för att få korrekta och korrekta svar. Experter ger insikter inte bara om en potentiellt komprometterad enhet, utan även för att bättre förstå komplexa hot, riktade attackmeddelanden som du får eller om du behöver mer information om aviseringar eller ett informationssammanhang för hot som visas på din portalinstrumentpanel.
 
-Mer [information finns i Kontakta en Microsoft Threat Expert.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization)
+Mer [information finns i Kontakta en Microsoft Threat Expert.](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization)
 
 
 ## <a name="check-activity-details-in-action-center"></a>Kontrollera aktivitetsinformation i Åtgärdscenter
@@ -209,4 +209,4 @@ All annan relaterad information visas också, till exempel datum/tid för inskic
 
 ## <a name="related-topic"></a>Relaterat ämne
 - [Vidta svarsåtgärder för en fil](respond-file-alerts.md)
-- [Rapportera felaktigheter](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
+- [Rapportera felaktigheter](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

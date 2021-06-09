@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259673"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841372"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Hanterat skrivbord?
 
@@ -61,7 +61,7 @@ Microsoft Hanterat skrivbord tar på sig bördan att hantera registrerade enhete
 
 - **Uppdateringar:** Microsoft Hanterat skrivbord konfigurerar och hanterar alla aspekter av [distributionsgrupper](../service-description/updates.md) för kvalitets- och funktionsuppdateringar för Windows 10, drivrutiner, inbyggd programvara, antivirusdefinitioner och uppdateringar för Microsoft 365-applikationer för företag. Detta inkluderar omfattande tester och verifiering av alla uppdateringar för att säkerställa att registrerade enheter alltid är uppdaterade och för att minimera störningar, vilket frigör din IT-avdelning från den pågående uppgiften.
 
-- **Appar:** Som en del av Microsoft 365 Enterprise tillhandahåller (och hanterar) flera viktiga Microsoft-appar för dig. Men det finns förmodligen andra appar du behöver för ditt företag också. I stället för att din IT-avdelning måste testa, paketera och distribuera dem apparna, hjälper Microsoft dig att distribuera dem via [FastTrack](https://www.microsoft.com/FastTrack) programmet. Dessutom kan Microsofts [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) program hjälpa till att åtgärda eventuella kompatibilitetsproblem med appen som kan uppstå när du migrerar till de senaste versionerna av våra produkter. Läs mer i [appar på Microsoft Hanterat skrivbord](../get-ready/apps.md).
+- **Appar:** Som en del av Microsoft 365 Enterprise tillhandahåller (och hanterar) flera viktiga Microsoft-appar för dig. Men det finns förmodligen andra appar du behöver för ditt företag också. I stället för att din IT-avdelning måste testa, paketera och distribuera dem apparna, hjälper Microsoft dig att distribuera dem via [FastTrack](https://www.microsoft.com/FastTrack) programmet. Dessutom kan Microsofts [App Assure](/fasttrack/products-and-capabilities#app-assuree) program hjälpa till att åtgärda eventuella kompatibilitetsproblem med appen som kan uppstå när du migrerar till de senaste versionerna av våra produkter. Läs mer i [appar på Microsoft Hanterat skrivbord](../get-ready/apps.md).
 
 
 ## <a name="device-monitoring"></a>Enhets övervakning

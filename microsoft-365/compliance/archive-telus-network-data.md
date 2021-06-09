@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratörer kan konfigurera en TeleMessage-koppling för att importera och arkivera SMS data från TELUS-nätverket i Microsoft 365. På så sätt kan du arkivera data från datakällor från tredje part i Microsoft 365 så att du kan använda efterlevnadsfunktioner som bevarande av juridiska principer, innehållssökning och bevarandeprinciper för att hantera data från tredje part i organisationen.
-ms.openlocfilehash: 13ac3306d2541f5bc7393152abb6cefb5a11123e
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: d5a0875b34c8dca06ac2a81dc33ce1ba44a62671
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52162843"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822183"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>Konfigurera en koppling för att arkivera data i TELUS-nätverket
 
@@ -41,7 +41,7 @@ Följande översikt förklarar processen med att använda en koppling för att a
 
    Förutom automatisk användarmappning med värdet  för användarens e-postadressegenskap kan du även implementera anpassad mappning genom att ladda upp en CSV-mappningsfil. Den här mappningsfilen innehåller mobiltelefonnumret och den Microsoft 365 e-postadressen för användare i organisationen. Om du aktiverar både automatisk användarmappning och anpassad mappning tittar kopplingen först på anpassad mappningsfil för varje TELUS-objekt. Om kontakten inte hittar en giltig Microsoft 365-användare som motsvarar en användares mobiltelefonnummer används värdena i e-postadressegenskapen för objektet som ska importeras. Om kopplingen inte hittar en giltig Microsoft 365 användare i antingen den anpassade mappningsfilen eller i e-postadressegenskapen för TELUS-objektet, importeras inte objektet.
 
-## <a name="before-you-begin"></a>Innan du börjar
+## <a name="before-you-set-up-a-connector"></a>Innan du skapa en koppling
 
 Några av de implementeringssteg som krävs för att arkivera data i TELUS-nätverket är externa för Microsoft 365 och måste slutföras innan du kan skapa en anslutning i efterlevnadscentret.
 
@@ -54,6 +54,8 @@ Några av de implementeringssteg som krävs för att arkivera data i TELUS-nätv
 - De anställda måste ha mobiltelefoner som ägs av företaget och som ansvarar för företaget på mobila nätverk avTELUS. Arkivering av meddelanden i Microsoft 365 är inte tillgängligt för enheter som ägs av anställda eller ta med egna enheter (BYOD).
 
 - Den användare som skapar en TELUS-nätverkskoppling måste tilldelas rollen Importera och exportera postlåda i Exchange Online. Detta krävs för att lägga till kopplingar på **sidan Datakopplingar** i Microsoft 365 kompatibilitetscenter. Som standard är den här rollen inte tilldelad någon rollgrupp i Exchange Online. Du kan lägga till rollen Importera och exportera postlåda i rollgruppen Organisationshantering i Exchange Online. Du kan också skapa en rollgrupp, tilldela rollen Importera och exportera postlåda och sedan lägga till lämpliga användare som medlemmar. Mer information finns i avsnitten [Skapa rollgrupper](/Exchange/permissions-exo/role-groups#create-role-groups) och [Ändra rollgrupper](/Exchange/permissions-exo/role-groups#modify-role-groups) i artikeln "Hantera rollgrupper i Exchange Online".
+
+- Den här datakopplingen är tillgänglig GCC miljöer i Microsoft 365 för myndigheter i USA. Program och tjänster från tredje part kan innebära att lagra, överföra och bearbeta din organisations kunddata i tredje parts system som ligger utanför Microsoft 365-infrastrukturen och därför inte omfattas av Microsoft 365-åtaganden gällande efterlevnad och dataskydd. Microsoft anger inte att användningen av den här produkten för att ansluta till program från tredje part innebär att sådana program från tredje part är FEDRAMP-kompatibla.
 
 ## <a name="create-a-telus-network-connector"></a>Skapa en TELUS-nätverkskoppling
 

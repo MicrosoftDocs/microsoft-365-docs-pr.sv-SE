@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 6465be53de38872e3eb1d7b70dc3efbb9154aace
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934207"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844880"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender
 
@@ -52,13 +52,13 @@ Om du har slutfört onboarding-processen och inte [](investigate-machines.md) se
 
 Om skriptet slutförs korrekt går du [till Felsöka onboarding-problem på enheterna](#troubleshoot-onboarding-issues-on-the-device) för ytterligare fel som kan uppstå.
 
-### <a name="troubleshoot-onboarding-issues-when-deploying-with-microsoft-endpoint-configuration-manager"></a>Felsöka onboarding-problem vid distribution med Konfigurationshanteraren för Microsoft Endpoint
+### <a name="troubleshoot-onboarding-issues-when-deploying-with-microsoft-endpoint-configuration-manager"></a>Felsöka onboarding-problem vid distribution med Microsoft Endpoint Configuration Manager
 
 När du onboarding-enheter med hjälp av följande versioner av Konfigurationshanteraren:
 
 - Microsoft Endpoint Configuration Manager
 - System Center 2012 Configuration Manager
-- Konfigurationshanteraren för System Center 2012 R2
+- System Center 2012 R2 Configuration Manager
 
 Distribution med de ovan nämnda versionerna av Konfigurationshanteraren utförs genom att köra onboarding-skriptet på enheterna. Du kan spåra distributionen i Konfigurationshanterarens konsol.
 
@@ -72,7 +72,7 @@ Om onboarding avslutades men enheterna inte visas  i listan Enheter efter en tim
 
 1. Klicka **på Start**, skriv **Loggboken** och tryck på **Retur.**
 
-2. Gå till **programmet Windows-loggar.**  >  
+2. Gå till **Windows loggar**  >  **program**.
 
 3. Leta efter en händelse från **WDATPOnboarding-händelsekällan.**
 
@@ -85,8 +85,8 @@ Händelse-ID | Feltyp | Lösningssteg
 :---:|:---|:---
  `5` | Offboarding-data hittades men kunde inte tas bort | Kontrollera behörigheterna i registret, särskilt<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 `10` | Registreringsdata kunde inte skrivas till registret |  Kontrollera behörigheterna i registret, särskilt<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.<br>Kontrollera att skriptet har körts som administratör.
-`15` |  Det gick inte att starta SENSE-tjänsten |Kontrollera tjänstens hälsa `sc query sense` (kommando). Kontrollera att den inte är i ett mellanliggande tillstånd (*"Pending_Stopped",* *"Pending_Running"*) och försök att köra skriptet igen (med administratörsrättigheter). <br> <br> Om enheten kör Windows 10, version 1607 och kommandot körs, startar `sc query sense` `START_PENDING` du om enheten. Om problemet inte åtgärdas när du startar om enheten måste du uppgradera till KB4015217 och prova att komma igång igen.
-`15` | Det gick inte att starta SENSE-tjänsten | Om felmeddelandet är: Systemfel 577 eller felet 1058 har uppstått måste du aktivera Microsoft Defender Antivirus ELAM-drivrutinen. Anvisningar finns i Se till att Microsoft Defender Antivirus inte är inaktiverat av en [princip.](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+`15` |  Det gick inte att starta SENSE-tjänsten |Kontrollera tjänstens hälsa `sc query sense` (kommando). Kontrollera att den inte är i ett mellanliggande tillstånd (*"Pending_Stopped",* *"Pending_Running"*) och försök att köra skriptet igen (med administratörsrättigheter). <br> <br> Om enheten körs med Windows 10, version 1607 och kommandot körs, startar `sc query sense` `START_PENDING` du om enheten. Om problemet inte åtgärdas när du startar om enheten måste du uppgradera till KB4015217 och prova att komma igång igen.
+`15` | Det gick inte att starta SENSE-tjänsten | Om felmeddelandet visas: Systemfel 577 eller fel 1058 har uppstått måste du aktivera ELAM-drivrutinen för Microsoft Defender Antivirus. Anvisningar finns i Kontrollera att Microsoft Defender Antivirus inte är inaktiverat av en [princip.](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 `30` |  Skriptet kunde inte vänta på att tjänsten ska börja köras | Det kan ta längre tid att starta tjänsten eller så har det uppstått fel när den försöker starta. Mer information om händelser och fel relaterade till SENSE finns i [Granska händelser och fel med hjälp av Loggboken.](event-error-codes.md)
 `35` |  Skriptet kunde inte hitta registerstatusvärdet för onboarding-status | När SENSE-tjänsten startas för första gången skriver den onboarding-status till registerplatsen<br>`HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`.<br> Skriptet kunde inte hitta det efter flera sekunder. Du kan manuellt testa den och kontrollera om den finns där. Mer information om händelser och fel relaterade till SENSE finns i [Granska händelser och fel med hjälp av Loggboken.](event-error-codes.md)
 `40` | SENSE-status för tjänst onboarding är inte inställd på **1** | SENSE-tjänsten har inte kunnat introduceras korrekt. Mer information om händelser och fel relaterade till SENSE finns i [Granska händelser och fel med hjälp av Loggboken.](event-error-codes.md)
@@ -94,25 +94,25 @@ Händelse-ID | Feltyp | Lösningssteg
 
 ### <a name="troubleshoot-onboarding-issues-using-microsoft-intune"></a>Felsöka onboarding-problem med Microsoft Intune
 
-Du kan använda Microsoft Intune för att kontrollera felkoder och försöka felsöka orsaken till problemet.
+Du kan Microsoft Intune att kontrollera felkoder och försöka felsöka orsaken till problemet.
 
 Om du har konfigurerat principer i Intune och de inte sprids på enheter kan du behöva konfigurera automatisk MDM-registrering.
 
 Använd följande tabeller för att förstå möjliga orsaker till problem vid registrering:
 
-- Microsoft Intune-felkoder och OMA-URIs tabell
+- Microsoft Intune felkoder och OMA-URIs tabell
 - Kända problem med icke-efterlevnadstabell
 - Tabellen Händelseloggar för mobil enhetshantering (MDM)
 
 Om ingen av händelseloggarna och felsökningsstegen  fungerar laddar du ned det lokala skriptet från avsnittet Enhetshantering i portalen och kör det i en upphöjd kommandotolk.
 
-#### <a name="microsoft-intune-error-codes-and-oma-uris"></a>Microsoft Intune-felkoder och -OMA-URIs
+#### <a name="microsoft-intune-error-codes-and-oma-uris"></a>Microsoft Intune felkoder och OMA-URIs
 
 Felkod Hex | Felkod dec | Felbeskrivning | OMA-URI | Möjliga orsaker och felsökningssteg
 :---:|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | Åtgärd misslyckades | Introduktioner <br> Offboarding | **Möjlig orsak:** Onboarding eller offboarding misslyckades i fel blob: fel signatur eller saknar PreviousOrgIds-fält. <br><br> **Felsökningssteg:** <br> Kontrollera händelse-IDt i avsnittet Visa registrering av agent [i händelseloggen för](#view-agent-onboarding-errors-in-the-device-event-log) enheten. <br><br> Kontrollera MDM-händelseloggarna i följande tabell eller följ instruktionerna i [Diagnostisera MDM-fel i Windows 10.](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
+0x87D1FDE8 | -2016281112 | Åtgärd misslyckades | Introduktioner <br> Offboarding | **Möjlig orsak:** Onboarding eller offboarding misslyckades i fel blob: fel signatur eller saknar PreviousOrgIds-fält. <br><br> **Felsökningssteg:** <br> Kontrollera händelse-IDt i avsnittet Visa registrering av agent [i händelseloggen för](#view-agent-onboarding-errors-in-the-device-event-log) enheten. <br><br> Kontrollera MDM-händelseloggarna i följande tabell eller följ instruktionerna i [Diagnostisera MDM-fel i Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
  | | | | Introduktioner <br> Offboarding <br> Exempelformning | **Möjlig orsak:** Registernyckeln Microsoft Defender för slutpunktsprincipen finns inte eller så har OMA DM-klienten inte behörighet att skriva till den. <br><br> **Felsökningssteg:** Kontrollera att följande registernyckel finns: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> Om det inte finns öppnar du ett upphöjd kommando och lägger till nyckeln.
- | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Möjlig orsak:** Ett försök att åtgärda med egenskapen skrivskydd. Onboarding har misslyckats. <br><br> **Felsökningssteg:** Kontrollera felsökningsstegen [i Felsöka onboarding-problem på enheten.](#troubleshoot-onboarding-issues-on-the-device) <br><br> Kontrollera MDM-händelseloggarna i följande tabell eller följ instruktionerna i [Diagnostisera MDM-fel i Windows 10.](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
+ | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Möjlig orsak:** Ett försök att åtgärda med egenskapen skrivskydd. Onboarding har misslyckats. <br><br> **Felsökningssteg:** Kontrollera felsökningsstegen [i Felsöka onboarding-problem på enheten.](#troubleshoot-onboarding-issues-on-the-device) <br><br> Kontrollera MDM-händelseloggarna i följande tabell eller följ instruktionerna i [Diagnostisera MDM-fel i Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
  | | | | Alla | **Möjlig orsak:** Försök att distribuera Microsoft Defender för Endpoint på SKU/Platform som inte stöds, särskilt Holographic SKU. <br><br> Plattformar som stöds för närvarande:<br> Företag, utbildning och professional.<br> Servern stöds inte.
  0x87D101A9 | -2016345687 |SynkroniseraML(425): Det begärda kommandot misslyckades eftersom avsändaren inte har tillräcklig åtkomstkontrollbehörighet (ACL) för mottagaren. | Alla |  **Möjlig orsak:** Försök att distribuera Microsoft Defender för Endpoint på SKU/Platform som inte stöds, särskilt Holographic SKU.<br><br> Plattformar som stöds för närvarande:<br>  Företag, utbildning och professional.
 
@@ -122,8 +122,8 @@ Följande tabell innehåller information om problem med icke-efterlevnad och hur
 
 Ärende | Symptom | Möjliga orsaker och felsökningssteg
 :---:|:---|:---
- `1` | Enheten följer SenseIsRunning OMA-URI. Men är inte kompatibelt av OrgId, Onboarding och OnboardingState OMA-URI:er. | **Möjlig orsak:** Kontrollera att användaren har passerat OOBE efter Windows-installationen eller uppgraderingen. Under OOBE-onboarding kunde inte slutföras men SENSE körs redan.<br><br> **Felsökningssteg:** Vänta tills OOBE har slutförts.
- `2` |  Enheten följer OrgId, Onboarding och OnboardingState OMA-URI:er, men följer inte av SenseIsRunning OMA-URI. |  **Möjlig orsak:** Sense-tjänstens starttyp anges som "Fördröjd start". Ibland gör det här så att Microsoft Intune-servern rapporterar enheten som icke-kompatibel av SenseIsRunning när DM-sessionen startar på systemstarten. <br><br> **Felsökningssteg:** Problemet bör åtgärdas automatiskt inom 24 timmar.
+ `1` | Enheten följer SenseIsRunning OMA-URI. Men är inte kompatibelt av OrgId, Onboarding och OnboardingState OMA-URI:er. | **Möjlig orsak:** Kontrollera att användaren har passerat OOBE efter Windows installationen eller uppgraderingen. Under OOBE-onboarding kunde inte slutföras men SENSE körs redan.<br><br> **Felsökningssteg:** Vänta tills OOBE har slutförts.
+ `2` |  Enheten följer OrgId, Onboarding och OnboardingState OMA-URI:er, men följer inte av SenseIsRunning OMA-URI. |  **Möjlig orsak:** Sense-tjänstens starttyp anges som "Fördröjd start". Ibland gör det här Microsoft Intune server att rapportera enheten som icke-kompatibel av SenseIsRunning när DM-sessionen startar på systemstarten. <br><br> **Felsökningssteg:** Problemet bör åtgärdas automatiskt inom 24 timmar.
  `3` | Enheten följer inte | **Felsökningssteg:** Se till att principer för onboarding och offboarding inte är distribuerade på samma enhet samtidigt.
 
 #### <a name="mobile-device-management-mdm-event-logs"></a>Händelseloggar för hantering av mobil enhet (MDM)
@@ -146,7 +146,7 @@ Om de distributionsverktyg som används inte anger ett fel i onboarding-processe
 - [Kontrollera att diagnostikdatatjänsten är aktiverad](#ensure-the-diagnostics-service-is-enabled)
 - [Kontrollera att tjänsten är inställd på att starta](#ensure-the-service-is-set-to-start)
 - [Kontrollera att enheten har en Internetanslutning](#ensure-the-device-has-an-internet-connection)
-- [Se till att Microsoft Defender Antivirus inte är inaktiverat av en princip](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+- [Kontrollera att Microsoft Defender Antivirus inaktiveras av en princip](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 ### <a name="view-agent-onboarding-errors-in-the-device-event-log"></a>Visa onboarding-fel för agent i händelseloggen för enheten
 
@@ -195,19 +195,19 @@ Det finns ytterligare komponenter på enheten som Microsoft Defender för slutpu
 
 ### <a name="ensure-the-diagnostic-data-service-is-enabled"></a>Kontrollera att diagnostikdatatjänsten är aktiverad
 
-Om enheterna inte rapporterar korrekt kan du behöva kontrollera att Windows 10-diagnostikdatatjänsten är inställd på att startas automatiskt och körs på enheten. Tjänsten kan ha inaktiverats av andra program eller ändringar av användarkonfigurationen.
+Om enheterna inte rapporterar korrekt kan du behöva kontrollera att Windows 10 för diagnostikdata är inställd på att startas automatiskt och körs på enheten. Tjänsten kan ha inaktiverats av andra program eller ändringar av användarkonfigurationen.
 
-Kontrollera först att tjänsten är inställd på att starta automatiskt när Windows startar, därefter bör du kontrollera att tjänsten körs (och starta den om den inte är det).
+Kontrollera först att tjänsten är inställd på att starta automatiskt när Windows startar. Kontrollera sedan att tjänsten körs (och starta den om den inte är det).
 
 ### <a name="ensure-the-service-is-set-to-start"></a>Kontrollera att tjänsten är inställd på att starta
 
-**Använd kommandoraden för att kontrollera starttypen för Windows 10-diagnostikdatatjänsten:**
+**Använd kommandoraden för att kontrollera Windows 10 av tjänstens starttyp för diagnostikdata:**
 
 1. Öppna en upphöjd kommandoradsfråga på enheten:
 
    a. Klicka **på Start**, skriv **cmd** och tryck på **Retur.**
 
-   b. Högerklicka på **Kommandotolk** och välj **Kör som administratör.**
+   b. Högerklicka på **Kommandotolken** och välj **Kör som administratör**.
 
 2. Ange följande kommando och tryck på **Retur:**
 
@@ -221,13 +221,13 @@ Kontrollera först att tjänsten är inställd på att starta automatiskt när W
 
    Om `START_TYPE` den inte är `AUTO_START` inställd på måste du ange att tjänsten ska startas automatiskt.
 
-**Använd kommandoraden för att ställa in Windows 10-diagnostikdatatjänsten så att den startas automatiskt:**
+**Använd kommandoraden för att ställa in Windows 10 för diagnostikdata att starta automatiskt:**
 
 1. Öppna en upphöjd kommandoradsfråga på enheten:
 
    a. Klicka **på Start**, skriv **cmd** och tryck på **Retur.**
 
-   b. Högerklicka på **Kommandotolk** och välj **Kör som administratör.**
+   b. Högerklicka på **Kommandotolken** och välj **Kör som administratör**.
 
 2. Ange följande kommando och tryck på **Retur:**
 
@@ -259,12 +259,12 @@ Om du vill säkerställa att sensorn har tjänstanslutning följer du stegen som
 
 Om verifieringen misslyckas och miljön använder en proxyserver för att ansluta till Internet följer du stegen som beskrivs i Konfigurera proxy- och [Internetanslutningsinställningar.](configure-proxy-internet.md)
 
-### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>Se till att Microsoft Defender Antivirus inte är inaktiverat av en princip
+### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>Kontrollera att Microsoft Defender Antivirus inaktiveras av en princip
 
 > [!IMPORTANT]
 > Följande gäller endast enheter  som ännu inte har fått uppdateringen augusti 2020 (version 4.18.2007.8) till Microsoft Defender Antivirus.
 >
-> Uppdateringen säkerställer att Microsoft Defender Antivirus inte kan stängas av på klientenheter via systemprincipen.
+> Uppdateringen säkerställer att Microsoft Defender Antivirus kan inaktiveras på klientenheter via systemprincipen.
 
 **Problem:** Microsoft Defender för slutpunktstjänsten startar inte efter introduktionen.
 
@@ -272,7 +272,7 @@ Om verifieringen misslyckas och miljön använder en proxyserver för att anslut
 
 **Lösning:** Om dina enheter kör en tredjepartsklient för program mot skadlig programvara måste drivrutinen Early Launch Antimalware (ELAM) aktiveras av Microsoft Defender för slutpunktsagenten. Du måste se till att det inte är inaktiverat av en systemprincip.
 
-- Beroende på vilket verktyg du använder för att implementera principer måste du kontrollera att följande Windows Defender-principer är avmarkerade:
+- Beroende på vilket verktyg du använder för att implementera principer måste du kontrollera att följande Windows Defender principer är avmarkerade:
 
   - DisableAntiSpyware
   - DisableAntiVirus
@@ -283,16 +283,16 @@ Om verifieringen misslyckas och miljön använder en proxyserver för att anslut
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> Inställningen har utgått och ignoreras på alla klientenheter från och med augusti `disableAntiSpyware` 2020 (version 4.18.2007.8) av Microsoft Defender Antivirus.
+> Inställningen har utgått och ignoreras på alla klientenheter från och med augusti `disableAntiSpyware` 2020 (version 4.18.2007.8) till Microsoft Defender Antivirus.
 
 - När du har rensat principen kör du introduktionsstegen igen.
 
 - Du kan också kontrollera tidigare registernyckelvärden för att verifiera att principen är inaktiverad genom att öppna registernyckeln `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender` .
 
-    ![Bild på registernyckeln för Microsoft Defender Antivirus](images/atp-disableantispyware-regkey.png)
+    ![Bild av registernyckel för Microsoft Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
-   > Alla Windows Defender-tjänster (wdboot, wdfilter, wdnisdrv, wdnissvc och windefend) ska vara i standardläge. Det går inte att ändra starten av dessa tjänster och kan tvinga dig att animera systemet.
+   > Alla Windows Defender-tjänster (wdboot, wdfilter, wdnisdrv, wdnissvc och windefend) ska vara i standardtillståndet. Det går inte att ändra starten av dessa tjänster och kan tvinga dig att animera systemet.
    >
    > Exempel på standardkonfigurationer för WdBoot och WdFilter:
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
@@ -335,123 +335,123 @@ Anvisningarna nedan ger vägledning för följande scenario:
 - I det här scenariot startar INTE SENSE-tjänsten automatiskt även om onboarding-paketet har distribuerats
 
 > [!NOTE]
-> Följande steg är bara relevanta när du använder Konfigurationshanteraren för Microsoft Endpoint. Mer information om onboarding med Hjälp av Microsoft Endpoint Configuration Manager finns i [Microsoft Defender för Slutpunkt](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
+> Följande steg är bara relevanta när du använder Microsoft Endpoint Configuration Manager. Mer information om onboarding med hjälp Microsoft Endpoint Configuration Manager finns i [Microsoft Defender för Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
-1. Skapa ett program i Konfigurationshanteraren för Microsoft Endpoint.
+1. Skapa ett program i Microsoft Endpoint Configuration Manager.
 
-    ![Bild av Konfigurationshanteraren för Microsoft Endpoint 1](images/mecm-1.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration1](images/mecm-1.png)
 
 2. Välj **Ange programinformationen manuellt.**
 
-    ![Bild av Konfigurationshanteraren för Microsoft Endpoint 2](images/mecm-2.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration2](images/mecm-2.png)
 
 3. Ange information om programmet och välj sedan **Nästa**.
 
-    ![Bild av Konfigurationshanteraren för Microsoft Endpoint 3](images/mecm-3.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konfiguration3](images/mecm-3.png)
 
 4. Ange information om programvarucentret och välj **nästa**.
 
-    ![Bild av Konfigurationshanteraren för Microsoft Endpoint4](images/mecm-4.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration4](images/mecm-4.png)
 
 5. Välj **Lägg till i** **Distributionstyper.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint5](images/mecm-5.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konfiguration5](images/mecm-5.png)
 
 6. Välj **Ange information om distributionstyp manuellt** och välj sedan **Nästa.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint](images/mecm-6.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration6](images/mecm-6.png)
 
 7. Ange information om distributionstyp och välj sedan **Nästa.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint7](images/mecm-7.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konfiguration7](images/mecm-7.png)
 
 8. I **programmet**  >  **för innehållsinstallation** anger du kommandot: `net start sense` .
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint](images/mecm-8.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration8](images/mecm-8.png)
 
 9. I **Identifieringsmetod** väljer du **Konfigurera regler för att identifiera närvaro av den här distributionstypen** och väljer sedan Lägg **till sats.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint9](images/mecm-9.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration9](images/mecm-9.png)
 
 10. Ange följande information om identifieringsregeln och välj sedan **OK:**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint10](images/mecm-10.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konfiguration10](images/mecm-10.png)
 
 11. Välj Nästa i **Identifieringsmetod.** 
 
-    ![Bild av Konfigurationshanteraren för Microsoft Endpoint 11](images/mecm-11.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration11](images/mecm-11.png)
 
 12. I **Användarupplevelse** anger du följande information och väljer sedan **Nästa:**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint12](images/mecm-12.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration12](images/mecm-12.png)
 
 13. Välj **Nästa** i **Krav.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint13](images/mecm-13.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration13](images/mecm-13.png)
 
 14. I **Beroenden väljer** du **Nästa.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint14](images/mecm-14.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration14](images/mecm-14.png)
 
 15. Välj **Nästa** i **Sammanfattning.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint15](images/mecm-15.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration15](images/mecm-15.png)
 
 16. I **komplettering** väljer du **Stäng**.
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint16](images/mecm-16.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration16](images/mecm-16.png)
 
 17. I **Distributionstyper** väljer du **Nästa.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint17](images/mecm-17.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration17](images/mecm-17.png)
 
 18. Välj **Nästa** i **Sammanfattning.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint18](images/mecm-18.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration18](images/mecm-18.png)
 
-    Status visas sedan: Bild på ![ konfigurationshanteraren för Microsoft Endpoint 19](images/mecm-19.png)
+    Status visas sedan: Bild ![ på Microsoft Endpoint Configuration Manager konfiguration19](images/mecm-19.png)
 
 19. I **komplettering** väljer du **Stäng**.
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint 20](images/mecm-20.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration20](images/mecm-20.png)
 
 20. Nu kan du distribuera programmet genom att högerklicka på programmet och välja **Distribuera.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint Configuration Manager21](images/mecm-21.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration21](images/mecm-21.png)
 
 21. I **Allmänt** väljer **du Distribuera innehåll automatiskt för beroenden** och **Bläddra**.
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint22](images/mecm-22.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration22](images/mecm-22.png)
 
 22. Välj **Nästa** i **Innehåll.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint23](images/mecm-23.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konfiguration23](images/mecm-23.png)
 
 23. Välj **Nästa i** **Distributionsinställningar.**
 
-    ![Bild av Konfigurationshanteraren för Microsoft Endpoint24](images/mecm-24.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration24](images/mecm-24.png)
 
 24. Välj **Så** **snart som möjligt efter den tillgängliga tiden i Schemaläggning** och välj sedan **Nästa.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint25](images/mecm-25.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konfiguration25](images/mecm-25.png)
 
 25. I **Användarupplevelse väljer** du **Spara ändringar vid tidsgräns eller under ett underhållsfönster (kräver omstarter)** och väljer sedan **Nästa.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint26](images/mecm-26.png)
+    ![Bild av Microsoft Endpoint Configuration Manager konfiguration26](images/mecm-26.png)
 
 26. Välj **Nästa i** **Aviseringar.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint27](images/mecm-27.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konfiguration27](images/mecm-27.png)
 
 27. Välj **Nästa** i **Sammanfattning.**
 
-    ![Bild av konfigurationshanteraren för Microsoft Endpoint28](images/mecm-28.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konfiguration28](images/mecm-28.png)
 
-    Statusen visas sedan Bild ![ på konfiguration av Konfigurationshanteraren för Microsoft Endpoint29](images/mecm-29.png)
+    Statusen visas sedan ![ Bild på Microsoft Endpoint Configuration Manager konfiguration29](images/mecm-29.png)
 
 28. I **komplettering** väljer du **Stäng**.
 
-    ![Bild av Konfigurationshanteraren för Microsoft Endpoint30](images/mecm-30.png)
+    ![Bild på Microsoft Endpoint Configuration Manager konfiguration30](images/mecm-30.png)
 
 
 ## <a name="related-topics"></a>Relaterade ämnen

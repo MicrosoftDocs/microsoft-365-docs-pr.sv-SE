@@ -1,7 +1,7 @@
 ---
 title: Använda Microsoft Search för att hitta ämnen i Microsoft Viva-ämnen
-ms.author: efrene
-author: efrene
+ms.author: chuckedmonson
+author: chucked
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Lär dig hur du kan söka efter ämnen i Microsoft Viva.
-ms.openlocfilehash: 36901cf32a0633aaa5fc08e45021d13c7b06dd0b
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796000"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844738"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Använda Microsoft Search för att hitta ämnen i Microsoft Viva-ämnen
 
@@ -23,7 +23,7 @@ Viva Topics-användare kan hitta ämnen genom viktiga ämnen på sina SharePoint
 
 ## <a name="topic-answer"></a>Ämnessvar
 
-När du söker efter ett visst ämne i Microsoft Search (till exempel "Saturnus"), visas resultatet i förslagsformatet Svar om ett ämne finns och hittas.
+När du söker efter ett visst ämne i Microsoft Search (till exempel "Saturnus"), om ett ämne finns och hittas, visas resultatet i ämnets svarsförslagsformat.
 
 Ämnessvaret visas:
 - Ämnesnamn
@@ -56,4 +56,4 @@ För användare som söker information om att boka en resa för arbete:
  
 ### <a name="search-results-priority"></a>Prioritet för sökresultat 
 
-När en användare söker efter en term som "resa" visas ett bokmärke före ett ämne i användarens sökupplevelse, om ett bokmärke är tillgängligt.
+När en användare söker efter en term som "resa" i användarens sökupplevelse visas ett bokmärke i stället för ett ämne, om ett bokmärke är tillgängligt.

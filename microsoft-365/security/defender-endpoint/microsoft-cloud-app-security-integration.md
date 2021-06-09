@@ -1,5 +1,5 @@
 ---
-title: Översikt över integrering av Microsoft Cloud App-säkerhet
+title: Översikt över integrering med Microsoft Cloud App Security
 ms.reviewer: ''
 description: Microsoft Defender för Endpoint integreras med Cloud App Security genom att vidarebefordra alla nätverksaktiviteter i molnet.
 keywords: moln, app, nätverk, synlighet, användning
@@ -18,14 +18,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: d756c738f9f61638a9e7424aa3fdf639f8f02f2a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5a5a81bde283a9eba4d5db77ed7e4c0b7567abc9
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185605"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844748"
 ---
-# <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Översikt över Microsoft Cloud App Security i Defender för Slutpunkt
+# <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Microsoft Cloud App Security i Översikt över Defender för slutpunkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,28 +38,28 @@ ms.locfileid: "51185605"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Cloud App Security (Cloud App Security) är en omfattande lösning som ger insyn i molnappar och -tjänster genom att kontrollera och begränsa åtkomsten till molnappar, samtidigt som efterlevnadskraven för data som lagras i molnet upprätthålls. Mer information finns i [Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
+Microsoft Cloud App Security (Cloud App Security) är en omfattande lösning som ger insyn i molnappar och -tjänster genom att du kan kontrollera och begränsa åtkomsten till molnappar, samtidigt som du tvingar efterlevnadskrav för data som lagras i molnet. Mer information finns i [Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
 >[!NOTE]
->Den här funktionen är tillgänglig med en E5-licens för [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) på enheter med Windows 10 version 1809 eller senare.
+>Den här funktionen är tillgänglig [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) med en E5-Enterprise Mobility + Security på enheter med Windows 10 version 1809 eller senare.
 
-## <a name="microsoft-defender-for-endpoint-and-cloud-app-security-integration"></a>Microsoft Defender för slutpunkts- och molnappens säkerhetsintegrering 
+## <a name="microsoft-defender-for-endpoint-and-cloud-app-security-integration"></a>Microsoft Defender för slutpunkts- och Cloud App Security integrering 
 
-Identifiering av Molnappsäkerhet förlitar sig på att molntrafikloggar vidarebefordras till den från företagets brandvägg och proxyservrar. Microsoft Defender för Endpoint integreras med Cloud App Security genom att samla in och vidarebefordra alla nätverksaktiviteter i molnet, vilket ger enastående synlighet till användning av molnappen. Övervakningsfunktionerna är inbyggda i enheten, vilket ger fullständig täckning av nätverksaktivitet.
+Cloud App Security identifieringen förlitar sig på att molntrafikloggar vidarebefordras till den från företagets brandvägg och proxyservrar. Microsoft Defender för Endpoint integreras med Cloud App Security genom att samla in och vidarebefordra alla nätverksaktiviteter i molnappen, vilket ger enastående synlighet för användning av molnappen. Övervakningsfunktionerna är inbyggda i enheten, vilket ger fullständig täckning av nätverksaktivitet.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yQ]
 
 
-Integreringen innehåller följande större förbättringar av den befintliga Cloud App Security-identifieringen: 
+Integreringen innehåller följande stora förbättringar av den befintliga Cloud App Security identifieringen: 
 
 - Tillgängligt överallt – Eftersom nätverksaktiviteten samlas in direkt från slutpunkten är den tillgänglig oavsett var enheten finns, på eller utanför företagsnätverket, eftersom den inte längre är beroende av trafik som dirigeras genom företagsbrandväggen eller proxyservrarna. 
 
-- Fungerar utan att konfiguration krävs – Vidarebefordra molntrafikloggar till Cloud App Security kräver brandväggs- och proxyserverkonfiguration. Det krävs ingen konfiguration med Defender för slutpunkts- och molnappens säkerhetsintegrering. Det är bara att slå på den i inställningarna för Microsoft Defender Säkerhetscenter så är du redo. 
+- Fungerar utan konfiguration krävs – vidarebefordra molntrafikloggar för att Cloud App Security brandväggs- och proxyserverkonfiguration. Det krävs ingen konfiguration Cloud App Security Defender för Slutpunkt och Cloud App Security. Det är bara att slå Microsoft Defender Säkerhetscenter i inställningarna så är du redo. 
 
 - Enhetskontext – Molntrafikloggar saknar enhetskontext. Defender för slutpunktsnätverksaktivitet rapporteras med enhetskontexten (vilken enhet som kom åt molnappen) så att du kan förstå exakt var (enhet) nätverksaktiviteten utfördes, utöver vem (användaren) som utförde den. 
 
-Mer information om molnidentifiering finns i [Arbeta med identifierade appar.](https://docs.microsoft.com/cloud-app-security/discovered-apps)
+Mer information om molnidentifiering finns i [Arbeta med identifierade appar.](/cloud-app-security/discovered-apps)
 
 ## <a name="related-topic"></a>Relaterat ämne
 
-- [Konfigurera Microsoft Cloud App-säkerhetsintegrering](microsoft-cloud-app-security-config.md)
+- [Konfigurera integration av Microsoft Cloud App Security](microsoft-cloud-app-security-config.md)

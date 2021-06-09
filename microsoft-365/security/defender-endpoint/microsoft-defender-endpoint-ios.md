@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a051742775c3d4e8b36bf0ba7a4fd2502763014
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: b4c2d586cd23a346db1bcebf891689ff648b639b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694467"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844712"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender för Endpoint för iOS
 
@@ -45,20 +45,20 @@ ms.locfileid: "52694467"
 
 **För slutanvändare**
 
-- Microsoft Defender för slutpunktslicens tilldelad till slutanvändare av programmet. Se [Microsoft Defender för Slutpunktslicensieringskrav](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
+- Microsoft Defender för slutpunktslicens tilldelad till slutanvändare av programmet. Se [Microsoft Defender för Slutpunktslicensieringskrav](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
 
-- Enheter registreras via appen [Intune-företagsportal](https://docs.microsoft.com/mem/intune/user-help/enroll-your-device-in-intune-ios) för att tillämpa efterlevnadsprinciper för Intune-enheter. Det kräver att användaren tilldelas en Microsoft Intune licens.
+- Enheter registreras via appen [Intune-företagsportal](/mem/intune/user-help/enroll-your-device-in-intune-ios) för att tillämpa efterlevnadsprinciper för Intune-enheter. Det kräver att användaren tilldelas en Microsoft Intune licens.
     - Intune-företagsportal-appen kan laddas ned från [Apple App Store.](https://apps.apple.com/us/app/intune-company-portal/id719171358)
     - Observera att Apple inte tillåter omdirigering av användare att ladda ned andra appar från app store, och därför måste detta steg utföras av användaren innan användaren börjar använda Microsoft Defender för slutpunktsappen.
 
-- Mer information om hur du tilldelar licenser finns i [Tilldela användare licenser.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
+- Mer information om hur du tilldelar licenser finns i [Tilldela användare licenser.](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 
 **För administratörer**
 
 - Åtkomst till Microsoft Defender Säkerhetscenter portalen.
 
     > [!NOTE]
-    > Microsoft Intune är den enda MDM-lösning (Mobile Device Management) som stöds för distribution av Microsoft Defender för slutpunkt i iOS. För närvarande stöds endast registrerade enheter för tvingande Defender för Slutpunkt på iOS-relaterade efterlevnadsprinciper för enheter i Intune.
+    > Microsoft Intune är den enda UEM-lösning (Unified Endpoint Management) som stöds för att distribuera Microsoft Defender för Endpoint och tillämpa Defender för Slutpunktsrelaterade efterlevnadsprinciper för enheter i Intune.
 
 - Åtkomst till [Microsoft Endpoint Manager ,](https://go.microsoft.com/fwlink/?linkid=2109431)för att distribuera programmet till registrerade användargrupper i organisationen.
 
@@ -68,12 +68,9 @@ ms.locfileid: "52694467"
 
 - Enheten är registrerad med Intune-företagsportal [appen](https://apps.apple.com/us/app/intune-company-portal/id719171358).
 
-> [!NOTE]
-> **Microsoft Defender för slutpunkt i iOS är tillgängligt på [Apple App Store.](https://aka.ms/mdatpiosappstore)**
-
 ## <a name="installation-instructions"></a>Installationsanvisningar
 
-Distribution av Microsoft Defender för Endpoint på iOS sker via Microsoft Intune (MDM) och både övervakade och ej övervakade enheter stöds.
+Distribution av Microsoft Defender för Endpoint på iOS sker via Microsoft Intune (MDM) och både övervakade och ej övervakade enheter stöds. Slutanvändare kan också installera appen direkt från [Apple App Store.](https://aka.ms/mdatpiosappstore)
 Mer information finns i Distribuera [Microsoft Defender för slutpunkt i iOS.](ios-install.md)
 
 ## <a name="resources"></a>Resurser

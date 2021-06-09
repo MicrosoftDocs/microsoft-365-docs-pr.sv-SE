@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: a232bd8d600df37d5b9b01921859556476ced345
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694479"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822376"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Information om sekretess – Microsoft Defender för Slutpunkt i iOS
 
@@ -51,7 +51,7 @@ Här är en lista över de typer av data som samlas in:
 
 ### <a name="web-page-or-network-information"></a>Webbsida eller nätverksinformation 
 
-- Domännamnet på webbplatsen endast när en skadlig anslutning eller webbsida identifieras. 
+- Domännamn och IP-adress för webbplatsen endast när en skadlig anslutning eller webbsida identifieras. 
 
 ### <a name="device-and-account-information"></a>Enhet och kontoinformation 
 

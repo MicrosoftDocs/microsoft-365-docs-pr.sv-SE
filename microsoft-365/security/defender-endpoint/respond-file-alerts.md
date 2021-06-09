@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ba48adcf93c5b768b2280729b33a1a7d361919cb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074233"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844088"
 ---
-# <a name="take-response-actions-on-a-file"></a>Utföra svarsåtgärder för en fil
+# <a name="take-response-actions-on-a-file"></a>Vidta svarsåtgärder för en fil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,7 +44,7 @@ Svarsåtgärder går högst upp på filsidan och omfattar:
 - Stoppa och sätt i karantän
 - Lägg till indikator
 - Ladda ned fil
-- Kontakta en hotexpert
+- Konsultera en hotexpert
 - Åtgärdscenter
 
 Du kan också skicka filer för djupanalys för att köra filen i en säker sandbox-miljö i molnet. När analysen är klar får du en detaljerad rapport som innehåller information om filens beteende. Du kan skicka filer för djupanalys och läsa tidigare rapporter genom att välja **fliken Djupanalys.** Den finns under filinformationskorten.
@@ -60,16 +60,16 @@ Vissa åtgärder kräver vissa behörigheter. I följande tabell beskrivs vilka 
 
 Mer information om roller finns i Skapa [och hantera roller för rollbaserad åtkomstkontroll.](user-roles.md)
 
-## <a name="stop-and-quarantine-files-in-your-network"></a>Stoppa och sätt filer i nätverket i karantän
+## <a name="stop-and-quarantine-files-in-your-network"></a>Stoppa och sätta filer i karantän i nätverket
 
 Du kan innehålla en attack i organisationen genom att stoppa den skadliga processen och kvartilen av filen där den observerades.
 
 > [!IMPORTANT]
 > Du kan bara vidta den här åtgärden om:
 >
-> - Den enhet som du vidtar åtgärden på kör Windows 10, version 1703 eller senare
+> - Den enhet som du vidtar åtgärden på körs i Windows 10, version 1703 eller senare
 > - Filen tillhör inte betrodda tredjepartsutgivare eller är inte signerad av Microsoft
-> - Microsoft Defender Antivirus måste åtminstone köras på passivt läge. Mer information finns i Kompatibilitet [för Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+> - Microsoft Defender Antivirus måste åtminstone köras på passivt läge. Mer information finns i [Microsoft Defender Antivirus kompatibilitet](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 Åtgärden **Stoppa och sätt i karantän** innehåller att stoppa processer, kvartiler av filerna och ta bort beständiga data, till exempel registernycklar.
 
@@ -116,7 +116,7 @@ På enhetens tidslinje läggs en ny händelse till för varje enhet där en fil 
 
 En varning visas innan åtgärden implementeras för filer som används ofta i hela organisationen. Det är för att verifiera att åtgärden är avsedd.
 
-## <a name="restore-file-from-quarantine"></a>Återställa en fil från karantän
+## <a name="restore-file-from-quarantine"></a>Återställa fil från karantän
 
 Du kan återställa och ta bort en fil från karantän om du har fastställt att den är ren efter en undersökning. Kör följande kommando på varje enhet där filen satts i karantän.
 
@@ -140,9 +140,9 @@ Du kan återställa och ta bort en fil från karantän om du har fastställt att
 > [!IMPORTANT]
 > En fil som har satts i karantän som ett potentiellt nätverkshot kanske inte kan återställas. Om en användare försöker återställa filen efter karantänen är filen kanske inte tillgänglig. Det kan bero på att systemet inte längre har nätverksautentiseringsuppgifter för att få åtkomst till filen. Vanligtvis beror det på en tillfällig inloggning till ett system eller en delad mapp och åtkomsttoken har upphört att gälla.
 
-## <a name="download-or-collect-file"></a>Ladda ned eller samla in fil
+## <a name="download-or-collect-file"></a>Ladda ned eller samla in filer
 
-Om **du väljer Ladda** ned fil från svarsåtgärderna kan du ladda ned ett lokalt, lösenordsskyddat ZIP-arkiv som innehåller filen. En utfällningsfil visas där du kan ange en orsak till att filen laddas ned och ange ett lösenord.
+Om **du väljer Ladda** ned fil från svarsåtgärderna kan du ladda ned ett lokalt, lösenordsskyddat .zip som innehåller filen. En utfällningsfil visas där du kan ange en orsak till att filen laddas ned och ange ett lösenord.
 
 Som standard kan du inte ladda ned filer som ligger i karantän.
 
@@ -160,11 +160,11 @@ Förhindra ytterligare spridning av en attack i organisationen genom att förbju
 
 > [!IMPORTANT]
 >
-> - Den här funktionen är tillgänglig om din organisation använder Microsoft Defender Antivirus och Moln levererat skydd är aktiverat. Mer information finns i [Hantera moln-leveransskydd.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
+> - Den här funktionen är tillgänglig om din organisation använder Microsoft Defender Antivirus skydd mot moln leverans är aktiverat. Mer information finns i [Hantera moln-leveransskydd.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 >
 > - Klientversionen av Antimalware måste vara 4.18.1901.x eller senare.
-> - Den här funktionen är utformad för att förhindra att misstänkt skadlig programvara (eller potentiellt skadliga filer) laddas ned från webben. Den har för närvarande stöd för bärbara körbara (PE) filer, inklusive _.exe-_ _och .dll-filer._ Täckningen utökas med tiden.
-> - Den här svarsåtgärden är tillgänglig för enheter i Windows 10, version 1703 eller senare.
+> - Den här funktionen är utformad för att förhindra att misstänkt skadlig programvara (eller potentiellt skadliga filer) laddas ned från webben. Det har för närvarande stöd för bärbara körbara (PE) filer, _.exe_ och _.dll_ filer. Täckningen utökas med tiden.
+> - Den här svarsåtgärden är tillgänglig för enheter Windows 10, version 1703 eller senare.
 > - Funktionen tillåt eller blockera kan inte utföras för filer om filens klassificering finns på enhetens cache innan åtgärden för att tillåta eller blockera.
 
 > [!NOTE]
@@ -174,7 +174,7 @@ Förhindra ytterligare spridning av en attack i organisationen genom att förbju
 
 ### <a name="enable-the-block-file-feature"></a>Aktivera blockeringsfilsfunktionen
 
-För att börja blockera filer måste du först [aktivera funktionen Spärra eller **tillåt**](advanced-features.md) i Inställningar.
+För att börja blockera filer måste du först [aktivera funktionen Spärra eller **tillåt** i](advanced-features.md) Inställningar.
 ### <a name="allow-or-block-file"></a>Tillåta eller blockera fil
 
 När du lägger till en indikatorhash för en fil kan du välja att avisering ska visas och blockera filen när en enhet i organisationen försöker köra den.
@@ -185,13 +185,13 @@ Mer [information om att](manage-indicators.md) blockera och höja aviseringar om
 
 Ta bort indikatorn för att sluta blockera en fil. Det kan du göra via **åtgärden Redigera** indikator på filens profilsida. Den här åtgärden visas i samma position som lägg till **indikator,** innan du lagt till indikatorn.
 
-Du kan också redigera indikatorer från **sidan Inställningar,** under   >  **Regelindikatorer.** Indikatorer visas i det här området efter filens hash-kod.
+Du kan också redigera indikatorer från **Inställningar** under **Regelindikatorer.**  >   Indikatorer visas i det här området efter filens hash-kod.
 
-## <a name="consult-a-threat-expert"></a>Kontakta en hotexpert
+## <a name="consult-a-threat-expert"></a>Konsultera en hotexpert
 
-Kontakta en Microsoft-expert för att få mer information om en potentiellt komprometterad enhet eller redan komprometterade enheter. Microsoft Threat Experts är direkt engagerade i Säkerhetscenter i Microsoft Defender för att få snabba och korrekta svar. Experter ger insikter på en potentiellt komprometterad enhet och hjälper dig att förstå komplexa hot och riktade attackmeddelanden. De kan också tillhandahålla information om aviseringar eller ett informationssammanhang för hot som visas på din portalinstrumentpanel.
+Kontakta en Microsoft-expert för att få mer information om en potentiellt komprometterad enhet eller redan komprometterade enheter. Microsoft Hotexperter direkt från mötet för att få korrekta och korrekta svar Microsoft Defender Säkerhetscenter direkt från mötet. Experter ger insikter på en potentiellt komprometterad enhet och hjälper dig att förstå komplexa hot och riktade attackmeddelanden. De kan också tillhandahålla information om aviseringar eller ett informationssammanhang för hot som visas på din portalinstrumentpanel.
 
-Mer [information finns i Kontakta en Microsoft Threat Expert.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization)
+Mer [information finns i Kontakta en Microsoft Threat Expert.](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization)
 
 ## <a name="check-activity-details-in-action-center"></a>Kontrollera aktivitetsinformation i Åtgärdscenter
 
@@ -211,7 +211,7 @@ All annan relaterad information visas också, till exempel datum/tid för inskic
 Cybersäkerhetsundersökningar utlöses vanligtvis av en varning. Aviseringar är relaterade till en eller flera observerade filer som ofta är nya eller okända. När du markerar en fil kommer du till filvyn där du kan se filens metadata. Om du vill utöka data som är relaterade till filen kan du skicka filen för djupanalys.
 
 Djupanalysfunktionen kör en fil i en säker, fullständigt instrumenterad molnmiljö. Djupanalysresultat visar filens aktiviteter, observerade beteenden och tillhörande artefakter, till exempel neds ignorerade filer, registerändringar och kommunikation med IP-adresser.
-Djupanalys stöder för närvarande omfattande analys av PE-filer (Portable Executable) (inklusive _.exe-_ och _.dll-filer)._
+Djupanalys har för närvarande stöd för omfattande analys av PE-filer (portable executable) (inklusive _.exe_ _och.dll_ filer).
 
 Djupanalys av en fil tar flera minuter. När filanalysen är klar uppdateras fliken Djupanalys för att visa en sammanfattning och datum och tid för de senaste tillgängliga resultaten.
 
@@ -224,12 +224,12 @@ Använd funktionen djupanalys för att undersöka information om en fil, vanligt
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
 
-**Skicka för djupanalys** är aktiverat när filen är tillgänglig i Defender för slutpunktsbackend-exempelsamling, eller om den observerades på en Windows 10-enhet som har stöd för att skicka till djupanalys.
+**Skicka för djupanalys** är aktiverat när filen är tillgänglig i Defender för slutpunktens samling av backend-exempel, eller om den observerades på en Windows 10 enhet som har stöd för att skicka till djupanalys.
 
 > [!NOTE]
-> Endast filer från Windows 10 kan samlas in automatiskt.
+> Endast filer från Windows 10 samlas in automatiskt.
 
-Du kan också skicka ett exempel via [Microsoft Säkerhetscenter-portalen](https://www.microsoft.com/security/portal/submission/submit.aspx) om filen inte observerades på en Windows 10-enhet och vänta på att Skicka för **djupanalysknappen** blir tillgänglig.
+Du kan också skicka ett exempel via [Microsoft Security Center-portalen](https://www.microsoft.com/security/portal/submission/submit.aspx) om filen inte observerades  på en Windows 10-enhet och vänta på att Knappen Skicka för djupanalys blir tillgänglig.
 
 > [!NOTE]
 > På grund av flöden för backend-bearbetning i Microsoft Security Center-portalen kan det finnas upp till 10 minuters fördröjning mellan filinskick och tillgängligheten för den djupanalysfunktion som finns i Defender för Slutpunkt.
@@ -249,12 +249,12 @@ När exemplet samlas in kör Defender för Slutpunkt filen i en säker miljö. S
    ![Du kan bara skicka PE-filer i avsnittet filinformation](images/submit-file.png)
 
    > [!NOTE]
-   > Endast PE-filer stöds, inklusive _.exe-_ och _.dll-filer._
+   > Endast PE-filer stöds, inklusive _.exe_ och _.dll_ filer.
 
 En förloppsfält visas med information om de olika stegen i analysen. Du kan sedan visa rapporten när analysen är klar.
 
 > [!NOTE]
-> Exempel på samlingstid kan variera beroende på enhetens tillgänglighet. Det finns en tidsgräns på 3 timmar för exempelsamling. Samlingen misslyckas och åtgärden avbryts om det inte finns någon Windows 10-enhetsrapportering online vid den tidpunkten. Du kan skicka filer igen för djupanalys för att hämta nya data i filen.
+> Exempel på samlingstid kan variera beroende på enhetens tillgänglighet. Det finns en tidsgräns på 3 timmar för exempelsamling. Samlingen misslyckas och åtgärden avbryts om det inte finns någon online-Windows 10 för enheten vid den tidpunkten. Du kan skicka filer igen för djupanalys för att hämta nya data i filen.
 
 ### <a name="view-deep-analysis-reports"></a>Visa djupanalysrapporter
 
@@ -276,7 +276,7 @@ Informationen som ges kan hjälpa dig att undersöka om det finns uppgifter om e
 
 Om du får problem när du försöker skicka en fil kan du prova följande felsökningssteg.
 
-1. Kontrollera att filen i fråga är en PE-fil. PE-filer har vanligtvis _filnamnstilläggen .exe_ eller _.dll_ (körbara program eller program).
+1. Kontrollera att filen i fråga är en PE-fil. PE-filer har _.exe_ eller _.dll_ tillägg (körbara program eller program).
 2. Kontrollera att tjänsten har åtkomst till filen, att den fortfarande finns och inte har skadats eller ändrats.
 3. Vänta en stund och försök sedan skicka filen igen. Kön kan vara full eller det har uppstått ett tillfälligt anslutnings- eller kommunikationsfel.
 4. Om exempelsamlingsprincipen inte är konfigurerad är standardbeteendet att tillåta exempelsamling. Om den är konfigurerad bör du kontrollera att principinställningen tillåter exempelinsamling innan du skickar filen igen. När exempelsamlingen är konfigurerad kontrollerar du följande registervärde:

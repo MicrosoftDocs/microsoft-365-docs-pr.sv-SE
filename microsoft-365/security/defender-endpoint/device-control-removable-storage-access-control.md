@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 018bc3549cd7a25df5bdd86d98d351e19027c31f
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796036"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841192"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender för endpoint-enhetskontroll, flyttbar Storage access-kontroll
 
@@ -196,7 +196,7 @@ Med funktionen Storage och Access Control kan du tillämpa en princip via gruppr
 
 ### <a name="licensing"></a>Licensiering
 
-Innan du kommer igång med Flyttbara Storage Access Control måste du bekräfta din [Microsoft 365-prenumeration.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) För att komma åt och använda Storage Access Control måste du ha Microsoft 365 E3.
+Innan du kommer igång med Flyttbara Storage Access Control måste du bekräfta din [Microsoft 365-prenumeration.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) För att komma åt och använda Storage Access Control måste du ha Microsoft 365 E3 eller Microsoft 365 E5.
 
 ### <a name="deploying-policy-via-group-policy"></a>Distribuera princip via grupprincip
 
@@ -226,7 +226,7 @@ Med funktionen flyttbara Storage Access Control kan du tillämpa principen via O
 
 ### <a name="licensing"></a>Licensiering
 
-Innan du kommer igång med Flyttbara Storage Access Control måste du bekräfta din [Microsoft 365-prenumeration.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) För att komma åt och använda Storage Access Control måste du ha Microsoft 365 E3.
+Innan du kommer igång med Flyttbara Storage Access Control måste du bekräfta din [Microsoft 365-prenumeration.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) För att komma åt och använda Storage Access Control måste du ha Microsoft 365 E3 eller Microsoft 365 E5.
 
 ### <a name="permission"></a>Behörighet
 
@@ -265,11 +265,11 @@ För principdistribution i Intune måste kontot ha behörighet att skapa, redige
 
     - Datatyp: Sträng (XML-fil)
 
-      :::image type="content" source="images/xml-data-type-string-2.png" alt-text="Visning av XML-fil för datatypen STRING":::
+      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="Visning av XML-fil för datatypen STRING":::
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Distribuera och hantera princip med hjälp av användargränssnittet i Intune
 
-Den här funktionen är ännu inte tillgänglig. 
+Den här funktionen (i Microsoft Endpoint Manager admincenter (>-enheter > konfigurationsprofiler > Skapa profil >-plattform: Windows 10 och senare & Profil: Enhetskontroll) är ännu inte https://endpoint.microsoft.com/) tillgänglig. 
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Visa flyttbara enheter med enhetskontroll Storage Access Control-data i Microsoft Defender för Slutpunkt
 
@@ -277,7 +277,7 @@ I Microsoft 365 säkerhetsportalen visas flyttbart lagringsutrymme som blockeras
 
 - Microsoft 365 för E5-rapportering
 
-```
+```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
 | where ActionType == &quot;RemovableStoragePolicyTriggered&quot; 

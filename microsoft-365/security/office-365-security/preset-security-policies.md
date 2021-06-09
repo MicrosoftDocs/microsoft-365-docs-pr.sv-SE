@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan läsa om hur standard- och strikt-principinställningarna används i alla skyddsfunktioner i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771231"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822292"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förinställda säkerhetsprinciper i EOP och Microsoft Defender för Office 365
 
@@ -105,7 +105,7 @@ Inställningarna i principen för  strikt skydd åsidosätter med andra ord inst
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar säkerhetscentret Microsoft 365 på <https://security.microsoft.com/> . Använd för att gå direkt **till sidan Förinställda** <https://security.microsoft.com/presetSecurityPolicies> säkerhetsprinciper.
+- Du öppnar säkerhetscentret Microsoft 365 på <https://security.microsoft.com> . Använd för att gå direkt **till sidan Förinställda** <https://security.microsoft.com/presetSecurityPolicies> säkerhetsprinciper.
 
 - Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -119,7 +119,7 @@ Inställningarna i principen för  strikt skydd åsidosätter med andra ord inst
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Använda säkerhetscentret för att tilldela förinställda säkerhetsprinciper till användare
 
-1. I säkerhetscentret går du till Principer för **&-&** \> **e-post** och samarbete & \>  \> **förinställda säkerhetsprinciper.**
+1. I säkerhetscentret går du till Avsnittet Förinställda **&** principer för & för e-postsamarbete i \>  \>  \>  \> **Säkerhetscenter.**
 
 2. Under **Standardskydd eller** **Strikt skydd klickar** du på **Redigera**.
 

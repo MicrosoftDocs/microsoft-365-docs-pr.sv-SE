@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: da88bc2aa0e001d714d4317948e28cdca633d17d
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: 5a9f5a6b218ec7a0e1fe9b05524ea1898b03e370
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736366"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822135"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referens för funktioner för kommunikationsefterlevnad
 
@@ -130,7 +130,7 @@ Med principer för kommunikationsefterlevnad kan du välja att söka igenom medd
 
     - **För Teams chattkommunikation:** Tilldela enskilda användare eller tilldela en [distributionsgrupp](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) till principen för kommunikationsefterlevnad. Den här inställningen är för 1:1- eller en-till-många-användare/chattrelationer.
     - **För Teams kanalkommunikation:** Tilldela varje Microsoft Teams kanal eller Microsoft 365 grupp som du vill söka igenom som innehåller en viss användare till principen för kommunikationsefterlevnad. Om du lägger till samma användare i andra Microsoft Teams kanaler eller Microsoft 365-grupper måste du lägga till dessa nya kanaler och grupper i principen för kommunikationsefterlevnad. Om en medlem i kanalen är en övervakad användare inom en princip och *inkommande* riktning konfigureras i en princip, granskas alla meddelanden som skickas i kanalen och potentiella principmatchor (även för användare i kanalen som inte uttryckligen övervakas). Till exempel är Användare A ägaren eller medlem i en kanal. Användare B och användare C är medlemmar i samma kanal och använder språk som matchas med den anstötliga språkprincip som endast övervakas av användare A. Användare B och användare C skapar principmatchningar för konversationer i kanalen även om de inte direkt övervakas i den anstötliga språkprincipen. Teams konversationer mellan användare B och användare C som finns utanför kanalen där användare A ingår omfattas inte av den stötande språkprincip som inkluderar användare A. Om du vill utesluta kanalmedlemmar från överlevnad när andra medlemmar i kanalen uttryckligen övervakas inaktiverar du *inställningen* för inkommande kommunikation i tillämplig policy för kommunikation.
-    - **För Teams med chattkommunikation** med hybrid-e-postmiljöer : Kommunikationsefterlevnad kan övervaka chattmeddelanden för användare i organisationer med en lokal distribution av Exchange eller en extern e-postleverantör som har aktiverat Microsoft Teams. Du måste skapa en distributionsgrupp som ska övervakas av användare med lokala eller externa postlådor. När du skapar en princip för kommunikationsefterlevnad tilldelar du distributionsgruppen som ett val **för övervakade** användare och grupper i principguiden.
+    - **För Teams med chattkommunikation** med hybrid-e-postmiljöer : Kommunikationsefterlevnad kan övervaka chattmeddelanden för användare i organisationer med en lokal distribution av Exchange eller en extern e-postleverantör som har aktiverat Microsoft Teams. Du måste skapa en distributionsgrupp som ska övervakas av användare med lokala eller externa postlådor. När du skapar en princip för kommunikationsefterlevnad tilldelar du distributionsgruppen som ett val **för övervakade** användare och grupper i principguiden. Mer information om krav och begränsningar för att aktivera molnbaserad lagring och stöd för Teams för lokala användare finns i Söka efter Teams och chattdata för [lokala användare.](search-cloud-based-mailboxes-for-on-premises-users.md)
 
 - **Exchange postmeddelande:** Postlådor som ligger på Exchange Online som en del av din Microsoft 365- Office 365-prenumeration är alla berättigade till meddelandesökning. Exchange e-postmeddelanden och bifogade filer som matchar villkoren för kommunikationsefterlevnad kan ta upp till 24 timmar att bearbeta. Typer av bifogade filer som stöds för kommunikationsefterlevnad är samma som de filtyper som stöds Exchange av regel för [e-postflödesregel](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)för innehåll.
 
@@ -410,35 +410,35 @@ Gör följande för att dela ett Power Automate flöde:
 
 1. Gå till Microsoft 365 Policyer för kommunikation och välj principen med den avisering du vill granska i säkerhets- och  >   efterlevnadscentret.
 2. I principen väljer du fliken **Väntande** och väljer en väntande avisering.
-3. Välj **Power Automate** på aviseringsåtgärdsmenyn.
-4. På sidan **Power Automate-flöden** väljer du fliken **Mina flöden** **eller Teamflöden.**
+3. Välj **Power Automate** i åtgärdsmenyn för aviseringar.
+4. På sidan **Power Automate flöden** väljer du **fliken Mina flöden** **eller Teamflöden.**
 5. Välj flödet du vill dela och välj sedan **Dela** på menyn flödesalternativ.
 6. På sidan flödesdelning anger du namnet på den användare eller grupp du vill lägga till som ägare av flödet.
 7. I dialogrutan **Anslutning som används** väljer du OK **för** att bekräfta att den tillagda användaren eller gruppen har fullständig åtkomst till flödet.
 
-### <a name="edit-a-power-automate-flow"></a>Redigera ett Power Automate-flöde
+### <a name="edit-a-power-automate-flow"></a>Redigera Power Automate flöde
 
-Om du behöver redigera ett flöde använder du **Power Automate-kontrollen** när du arbetar direkt i en avisering. Om du vill redigera ett Power Automate-flöde måste du vara medlem i minst en rollgrupp för kommunikationsefterlevnad.
+Om du behöver redigera ett flöde använder du Power Automate **när** du arbetar direkt i en avisering. Om du vill Power Automate ett arbetsflöde måste du vara medlem i minst en rollgrupp för kommunikationsefterlevnad.
 
-Så här redigerar du ett Power Automate-flöde:
+Gör följande för att redigera ett Power Automate flöde:
 
-1. I Efterlevnadscenter för Microsoft 365 går du till **Principer** för kommunikationsefterlevnad och väljer  >   principen med den avisering du vill granska.
+1. Gå till Microsoft 365 Policyer för kommunikation och välj principen med den avisering du vill granska i säkerhets- och  >   efterlevnadscentret.
 2. I principen väljer du fliken **Väntande** och väljer en väntande avisering.
-3. Välj **Power Automate** på aviseringsåtgärdsmenyn.
-4. På sidan **Power Automate-flöden** väljer du flöde för att redigera. Välj **Redigera** på flödeskontrollmenyn.
-5. Välj **ellipsinställningarna**  >  **för att** ändra en flödeskomponentinställning eller **ellips Ta bort om**  >  **du** vill ta bort en flödeskomponent.
+3. Välj **Power Automate** i åtgärdsmenyn för aviseringar.
+4. På sidan **Power Automate flöde väljer** du flöde för att redigera. Välj **Redigera** på flödeskontrollmenyn.
+5. Markera **ellipsen för**  >  **Inställningar** ändra en flödeskomponentinställning eller **ellips Ta** bort för att ta bort en  >   flödeskomponent.
 6. Välj **Spara** och sedan **Stäng för** att slutföra redigeringen av flödet.
 
-### <a name="delete-a-power-automate-flow"></a>Ta bort ett Power Automate-flöde
+### <a name="delete-a-power-automate-flow"></a>Ta bort ett Power Automate flöde
 
-Om du behöver ta bort ett flöde använder du **Power Automate-kontrollen** när du arbetar direkt i en avisering. Om du vill ta bort ett Power Automate-flöde måste du vara medlem i minst en rollgrupp för kommunikationsefterlevnad.
+Om du behöver ta bort ett flöde använder du Power Automate **när** du arbetar direkt i en avisering. Om du vill Power Automate ett dataflöde måste du vara medlem i minst en rollgrupp för kommunikationsefterlevnad.
 
-Så här tar du bort ett Power Automate-flöde:
+Gör följande för att ta bort ett Power Automate flöde:
 
-1. I Efterlevnadscenter för Microsoft 365 går du till **Principer** för kommunikationsefterlevnad och väljer  >   principen med den avisering du vill granska.
+1. Gå till Microsoft 365 Policyer för kommunikation och välj principen med den avisering du vill granska i säkerhets- och  >   efterlevnadscentret.
 2. I principen väljer du fliken **Väntande** och väljer en väntande avisering.
-3. Välj **Power Automate** på aviseringsåtgärdsmenyn.
-4. På sidan **Power Automate-flöden** väljer du flöde för att ta bort. Välj **Ta** bort på flödeskontrollmenyn.
+3. Välj **Power Automate** i åtgärdsmenyn för aviseringar.
+4. På sidan **Power Automate väljer** du flöde för att ta bort. Välj **Ta** bort på flödeskontrollmenyn.
 5. I bekräftelsedialogrutan för borttagning väljer du **Ta bort för** att ta bort flödet eller så väljer du **Avbryt** för att avsluta borttagningsåtgärden.
 
 ## <a name="reports"></a>Rapporter
@@ -468,7 +468,7 @@ Instrumentpanelen **Rapporter** innehåller följande rapportwidgetar och detalj
     - Skapat ärende
     
     Använd alternativet *Exportera* om du vill skapa .csv fil som innehåller rapportinformationen.
-- **Objekt och åtgärder per plats,** detaljerad rapport: Granska och exportera matchande objekt och åtgärdsåtgärder per Microsoft 365-plats. Innehåller information om hur plattformar för arbetsbelastning är kopplade till:
+- **Objekt och åtgärder per plats,** detaljerad rapport: Granska och exportera matchande objekt och åtgärdsåtgärder per Microsoft 365 plats. Innehåller information om hur plattformar för arbetsbelastning är kopplade till:
 
     - Objekt matchade
     - Eskalerade objekt
@@ -497,10 +497,10 @@ Instrumentpanelen **Rapporter** innehåller följande rapportwidgetar och detalj
 
 - **Typ av känslig information per plats** detaljerad rapport (förhandsgranskning): Granska och exportera information om identifiering av typer av känslig information och associerade källor i principer för kommunikationsefterlevnad. Innehåller den totala summan och den specifika uppdelningen av förekomster av känslig information i de källor som konfigurerats i organisationen. Några exempel är:
 
-    - **E-post:** Typer av känslig information som upptäckts i e-postmeddelanden i Exchange.
-    - **Team:** Typer av känslig information som upptäckts i Microsoft Teams kanaler och chattmeddelanden.
-    - **Skype för företag:** Typer av känslig information som upptäckts i Skype för företag-kommunikationer.
-    - **Yammer:** Typer av känslig information som upptäckts i Yammer-inkorgar, inlägg, chattar och svar.
+    - **E-post:** Typer av känslig information som upptäckts Exchange e-postmeddelanden.
+    - **Teams**: Typer av känslig information som upptäckts i Microsoft Teams kanaler och chattmeddelanden.
+    - **Skype för företag**: Typer av känslig information som upptäckts Skype affärskommunikation.
+    - **Yammer**: Typer av känslig information som upptäckts Yammer inkorgar, inlägg, chattar och svar.
     - **Tredjepartskällor: Känslig** informationstyper som upptäckts för aktiviteter som är associerade med kopplingar från tredje part som konfigurerats i organisationen. Om du vill visa detaljerad information om källor från tredje part för en viss typ av känslig information i rapporten håller du muspekaren över värdet för typen av känslig information i kolumnen för tredjepartskälla.
     - **Övriga**: Typer av känslig information som används för intern systembearbetning. Om du markerar eller avmarkerar den här källan för rapporten påverkas inte några värden.
 
@@ -511,7 +511,7 @@ Instrumentpanelen **Rapporter** innehåller följande rapportwidgetar och detalj
 I vissa fall måste du informera regel- eller efterlevnadsgranskningar för att bevisa att du är över över användaraktiviteter och kommunikation. Den här informationen kan vara en sammanfattning av alla aktiviteter som är associerade med en definierad organisationspolicy eller när en princip för kommunikationsefterlevnad ändras. Principer för kommunikationsefterlevnad har inbyggda granskningshistorik för fullständig beredskap för interna eller externa granskningar. Detaljerade granskningshistoriker för varje åtgärd för att skapa, redigera och ta bort fångas upp av dina kommunikationsprinciper för att tillhandahålla bevis på övervakande procedurer.
 
 >[!Important]
->Granskning måste vara aktiverad för organisationen innan händelser för kommunikationsefterlevnad registreras. Information om hur du aktiverar granskning [finns i Aktivera granskningsloggen](communication-compliance-configure.md#step-2-required-enable-the-audit-log). När aktiviteter utlöser händelser som fångas i Microsoft 365 granskningsloggen kan det ta upp till 48 timmar innan dessa händelser kan visas i principer för kommunikationsefterlevnad.
+>Granskning måste vara aktiverad för organisationen innan händelser för kommunikationsefterlevnad registreras. Information om hur du aktiverar granskning [finns i Aktivera granskningsloggen](communication-compliance-configure.md#step-2-required-enable-the-audit-log). När aktiviteter utlöser händelser som fångas i Microsoft 365-granskningsloggen kan det ta upp till 48 timmar innan dessa händelser kan visas i principer för kommunikationsefterlevnad.
 
 Om du vill visa uppdateringsaktiviteter för kommunikationsefterlevnadsprincipen väljer du kontrollen Exportera principuppdateringar på huvudsidan för en princip.  Du måste vara global administratör *eller administratör för* *kommunikationsefterlevnad för att* kunna exportera uppdateringsaktiviteter. Den här åtgärden genererar en granskningsfil i .csv format som innehåller följande information:
 

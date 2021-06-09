@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratörer kan konfigurera en koppling för att importera och arkivera data SMS MMS-data från TeleMessage Enterprise Number Archiver. På så sätt kan du arkivera data från datakällor från tredje part i Microsoft 365 så att du kan använda efterlevnadsfunktioner som bevarande av juridiska principer, innehållssökning och bevarandeprinciper för att hantera data från tredje part i organisationen.
-ms.openlocfilehash: 1322cafad94c8b2163c38e3c988feefc4ff1221a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1615aaed21eca6d0c8c22343e19c1ea93b693aaa
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162131"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822208"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>Konfigurera en koppling för att arkivera data för företagsnummer
 
@@ -37,7 +37,7 @@ I följande översikt beskrivs hur du använder en koppling för att arkivera da
 
 3. Kopplingen importerar mobila kommunikationsobjekt till en viss användares postlåda. En ny mapp med namnet Enterprise Number Archiver skapas i den specifika användarens postlåda och objekten importeras till den. Kopplingen mappar med hjälp av värdet för *användarens e-postadressegenskap.* Alla e-postmeddelanden innehåller den här egenskapen, som fylls i med e-postadresserna för alla deltagare i e-postmeddelandet. Förutom automatisk användarmappning med värdet  för användarens e-postadressegenskap kan du också definiera en anpassad mappning genom att ladda upp en CSV-mappningsfil. Den här mappningsfilen ska innehålla användarens mobilnummer och motsvarande e Microsoft 365 postlådeadress för varje användare. Om du aktiverar automatisk användarmappning och tillhandahåller en anpassad mappning kommer kopplingen först att titta på anpassad mappningsfil för varje e-postobjekt. Om anslutaren inte hittar en giltig Microsoft 365-användare som motsvarar en användares mobilnummer använder kopplingen användarens e-postadressegenskap för e-postobjektet. Om kopplingen inte hittar en giltig Microsoft 365-användare i antingen  den anpassade mappningsfilen eller användarens e-postadressegenskap för e-postobjektet, importeras inte objektet.
 
-## <a name="before-you-begin"></a>Innan du börjar
+## <a name="before-you-set-up-a-connector"></a>Innan du skapa en koppling
 
 Några av de implementeringssteg som krävs för att arkivera data i enterprisenummerarkivering är externa till Microsoft 365 och måste slutföras innan du kan skapa anslutningen i efterlevnadscentret.
 
@@ -48,6 +48,8 @@ Några av de implementeringssteg som krävs för att arkivera data i enterprisen
 - Installera och aktivera appen TeleMessage Enterprise Number Archiver på dina anställdas mobiltelefoner.
 
 - Den användare som skapar en Enterprise Number Archiver-koppling måste tilldelas rollen Importera och exportera postlåda i Exchange Online. Detta krävs för att lägga till kopplingar på **sidan Datakopplingar** i Microsoft 365 kompatibilitetscenter. Som standard är den här rollen inte tilldelad någon rollgrupp i Exchange Online. Du kan lägga till rollen Importera och exportera postlåda i rollgruppen Organisationshantering i Exchange Online. Du kan också skapa en rollgrupp, tilldela rollen Importera och exportera postlåda och sedan lägga till lämpliga användare som medlemmar. Mer information finns i avsnitten [Skapa rollgrupper](/Exchange/permissions-exo/role-groups#create-role-groups) och [Ändra rollgrupper](/Exchange/permissions-exo/role-groups#modify-role-groups) i artikeln "Hantera rollgrupper i Exchange Online".
+
+- Den här datakopplingen är tillgänglig GCC miljöer i Microsoft 365 för myndigheter i USA. Program och tjänster från tredje part kan innebära att lagra, överföra och bearbeta din organisations kunddata i tredje parts system som ligger utanför Microsoft 365-infrastrukturen och därför inte omfattas av Microsoft 365-åtaganden gällande efterlevnad och dataskydd. Microsoft anger inte att användningen av den här produkten för att ansluta till program från tredje part innebär att sådana program från tredje part är FEDRAMP-kompatibla.
 
 ## <a name="create-an-enterprise-number-archiver-connector"></a>Skapa en Enterprise Number Archiver-koppling
 
