@@ -1,5 +1,5 @@
 ---
-title: Användar upplevelse i en multi-geo-miljö
+title: Användarupplevelse i en miljö med flera geografiska miljöer
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,7 +14,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: Läs mer om användar upplevelsen för SharePoint, OneDrive och Exchange i en multi-geo-miljö för Microsoft 365.
+description: Läs mer SharePoint, OneDrive och Exchange i en miljö med flera geografiska Microsoft 365.
 ms.openlocfilehash: 558e5a1f7ff2f6f5485a9f32d6e2b43b552b7f17
 ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
@@ -22,88 +22,88 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 01/04/2021
 ms.locfileid: "49749581"
 ---
-# <a name="user-experience-in-a-multi-geo-environment"></a>Användar upplevelse i en multi-geo-miljö
+# <a name="user-experience-in-a-multi-geo-environment"></a>Användarupplevelse i en miljö med flera geografiska miljöer
 
-Så här ser användarna i en konfiguration med OneDrive multi-geo:
+Det här ser dina användare i en OneDrive Multi-Geo konfiguration:
 
-## <a name="exchange-mailbox"></a>Exchange-postlåda
+## <a name="exchange-mailbox"></a>Exchange postlåda
 
-En användares Exchange-postlåda etableras till deras önskade data plats och flyttas automatiskt om den ändras. Användare kan använda Outlook och Outlook på webben normalt utan någon ändring i användar miljön i en multi-geo-miljö.
+En användares e Exchange postlåda etableras till den önskade dataplatsen och flyttas automatiskt om deras PDL ändras. Användare kan använda Outlook och Outlook på webben normalt utan att ändra användarupplevelsen i en geomiljö med flera webbplatser.
 
-## <a name="hub-sites"></a>NAV webbplatser
+## <a name="hub-sites"></a>Navplatser
 
-SharePoint Hub-webbplatser förbättrar identifieringen och åtagandet med innehållet för de anställda, samtidigt som du skapar en komplett och konsekvent presentation av projekt, avdelningar eller regioner. I en multi-geo-miljö kan webbplatser från satellit platser enkelt kopplas till en nav webbplats oavsett dess geo-plats. Användare kan söka efter och få resultat över navet genom en enda Sök funktion, oavsett webbplatsernas Geo-plats.
+SharePoint Navplatser förbättrar identifieringen och engagemanget med innehåll för anställda, samtidigt som en komplett och enhetlig representation av projekt, avdelningar eller regioner skapas. I flera geomiljöer kan webbplatser från satellitplatser enkelt kopplas till en navplats oavsett navplatsens geoplats. Användare kan söka och få resultat i hela navet genom en enda sökupplevelse, oavsett platsens geoplats.
 
-## <a name="microsoft-365-app-launcher"></a>Start ikon för Microsoft 365
+## <a name="microsoft-365-app-launcher"></a>Microsoft 365 för appar
 
-Start programmet är multi-geo-känsligt och dirigerar varje bricka till en lämplig Geo-plats för arbets belastningen. SharePoint-och OneDrive-paneler kommer att peka användaren på platsen som motsvarar användarens provisioed Geo-plats. Det innebär att användaren har en OneDrive i den centrala platsen, att deras SharePoint-panel pekar på SP Home på Central platsen, men deras grupp webbplats etableras på den plats som motsvarar deras PDL. 
+Startprogrammet är multi-geomedvetet och dirigerar varje panel till rätt geografisk plats för arbetsbelastningen. Med SharePoint och OneDrive-paneler pekar användaren på den plats som motsvarar användarens etablerade geoplats. Det innebär att användaren har ett OneDrive på den centrala platsen. Deras SharePoint-panel pekar dem på SP Home på den centrala platsen men gruppwebbplatsen etableras på den plats som motsvarar deras PDL. 
 
 ## <a name="office-applications"></a>Office-program
 
-Office-program som Word, Excel och PowerPoint identifierar automatiskt den korrekta OneDrive för företag-geo-platsen för varje användare när de loggar in. Användare behöver inte ange den geo-specifika URL-adressen för sina OneDrive-eller SharePoint-webbplatser.
+Office program som Word, Excel och PowerPoint identifierar automatiskt rätt OneDrive för företag geoplats för varje användare när de loggar in. Användarna behöver inte ange den geospecifika URL-adressen för sina OneDrive eller SharePoint webbplatser.
 
-## <a name="onedrive-for-business-sync-client"></a>Synkroniseringsklient för OneDrive för företag
+## <a name="onedrive-for-business-sync-client"></a>OneDrive för företag Synkroniseringsklient
 
-Synkroniseringsklienten för OneDrive för företag (version 17.3.6943.0625 och senare) identifierar automatiskt rätt OneDrive för företag Geo-plats för användaren. Stöd för synkroniseringsklient inkluderar möjligheten att synkronisera grupperade webbplatser oavsett deras Geo-plats. Observera att synkroniseringsklienten för Groove inte stöds för multi-geo. 
+Synkroniseringsklienten OneDrive för företag (version 17.3.6943.0625 och senare) identifierar automatiskt rätt OneDrive för företag geoplats för användaren. Stöd för synkroniseringsklienten omfattar möjligheten att synkronisera gruppbaserade webbplatser oavsett deras geografiska position. Observera att Groove synkroniseringsklienten inte stöds för multi-geo. 
 
-## <a name="onedrive-for-business-location"></a>OneDrive för företag-plats
+## <a name="onedrive-for-business-location"></a>OneDrive för företag plats
 
-Användare kommer att få sin OneDrive för företag-etablerad på sin data plats. Om en användare navigerar till en OneDrive-URL som innehåller en felaktig Geo-plats (till exempel ett bok märke från en tidigare Geo-plats) omdirigeras de automatiskt till OneDrive på lämplig Geo-plats.
+Användarna får sina OneDrive för företag tillhandahållas på den dataplats de föredrar. Om en användare navigerar till en URL-adress för OneDrive som innehåller en felaktig geoplats (till exempel ett bokmärke från en tidigare geoplats) omdirigeras de automatiskt till OneDrive på lämplig geoplats.
 
 ## <a name="onedrive-ios-and-android"></a>OneDrive iOS och Android 
 
-I OneDrive iOS-och Android-mobilappar visas dina OneDrive-filer och filer som delas med dig oavsett var de befinner sig. Sökning i OneDrive-mobilappen visar relevanta resultat från alla geo-platser. Ladda ner den senaste versionen av dessa program.
+I OneDrive iOS- och Android-mobilapparna visas dina OneDrive filer och filer som delas med dig oavsett var de befinner sig. Sök från OneDrive mobilappar visar relevanta resultat från alla geoplatser. Ladda ned den senaste versionen av dessa appar.
 
-Mer information finns i använda [OneDrive för iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) och [använda OneDrive för Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) .
+Mer information OneDrive Använda OneDrive [iOS och Använda OneDrive för Android.](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) [](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247)
 
-## <a name="onedrive-mobile-client"></a>OneDrive-mobilapp 
+## <a name="onedrive-mobile-client"></a>OneDrive Mobilklient 
 
-OneDrive-mobilappen är en geo medveten och visar relevant innehåll och resultat från alla geo platser.
+The OneDrive Mobile Client is multi-geo aware and will display relevant content and results from all geo locations.
 
-## <a name="search"></a>Sökmotor
+## <a name="search"></a>Söka
 
-Varje Geo-plats har ett eget Sök index och Sök Center. När en användare söker skickas frågan till alla geo-platser, och de returnerade resultaten kopplas och rangordnas sedan så att användaren får enhetliga resultat. Användare får resultat från alla geo platser oavsett deras egna Geo-plats. Se [Konfigurera sökning i OneDrive för företag multi-geo](configure-search-for-multi-geo.md) för specifika nyheter.
+Varje geoplats har ett eget sökindex och sökcenter. När en användare söker skickas frågan till alla geografiska platser och de returnerade resultaten sammanfogas och rangordnas så att användaren får enhetliga resultat. Användare får resultat från alla geoplatser oavsett var de befinner sig. Mer [information finns i OneDrive för företag för](configure-search-for-multi-geo.md) sökning med multi-geo.
 
-Följande Sök klienter stöds:
+Följande sökklienter stöds:
 
 -   OneDrive för företag
 
 -   Delve
 
--   Start sidan för SharePoint
+-   SharePoint Home
 
--   Sök Center
+-   Sökcenter
 
--   Anpassade Sök program som använder SharePoint Search API
+-   Anpassade sökprogram som använder SharePoint Search API
 
-## <a name="sharepoint-home"></a>Start sidan för SharePoint 
+## <a name="sharepoint-home"></a>SharePoint Home 
 
-I SharePoint multi-geo är SharePoint-hem platsen placerad på den plats där användaren finns som den definieras av OneDrive för företag-platsen. Till exempel: om användaren har OneDrive-värd på en europeisk satellit plats kommer deras SharePoint-hem att renderas från Europa. SharePoint Home inkluderar allt innehåll som är relevant för användaren oavsett dess geo-plats. 
+I SharePoint Multi-Geo ditt SharePoint ligger hemma på den plats där användaren finns enligt användarens OneDrive för företag. Exempel: Om användaren har en OneDrive på en europeisk satellitplats återges deras SharePoint från Europa. SharePoint innehåller allt innehåll som är relevant för användaren, oavsett dess geografiska position. 
 
-**Följda webbplatser, nyheter från webbplatser, senaste webbplatser, vanliga webbplatser och föreslagna webbplatser**
+**Webbplatser du följer, nyheter från webbplatser, senaste webbplatser, vanliga webbplatser och föreslagna webbplatser**
 
-Alla de här komponenterna visas för användaren oavsett vilken Geo-plats som innehållet hanteras på, så länge användaren har behörighet till innehåll. 
+Alla dessa komponenter visas för användaren oavsett den geoplats där innehållet finns, så länge användaren har behörighet till innehållet. 
 
-**Funktions länkar**
+**Länkar till funktioner**
 
-Administratörer kan konfigurera aktuella länkar i SharePoint Home efter behov till varje Geo-plats. På så sätt kan administratören i SP hem för varje region de länkar som är lämpliga för användarna i regionen. 
+Administratörer kan konfigurera aktuella länkar i SharePoint efter behov för varje geoplats. Det gör att administratören kan använda länkarna som är lämpliga för användare i regionen i SP Home för varje region. 
 
-## <a name="sharepoint-mobile-client"></a>SharePoint Mobile-klient 
+## <a name="sharepoint-mobile-client"></a>SharePoint Mobilklient 
 
-SharePoint Mobile-klienten är en geo medveten och visar relevant innehåll och resultat från alla geo-platser.
+The SharePoint Mobile Client is multi-geo aware and will display relevant content and results from all geo locations.
 
 ## <a name="sharing"></a>Delning
 
-Person väljaren visar alla användare oavsett deras Geo-plats. Det gör det möjligt för en användare att dela med sig av sina geo-eller andra användares geo-platser. Innehåll från olika geo-platser visas i vyn **delas med mig** i användarens OneDrive för företag och kan nås med en enda Sign-On-upplevelse oavsett vilken Geo-plats den är värd för.
+I väljaren för personer visas alla användare oavsett var de befinner sig. Det gör att en användare kan dela med en annan användare i samma geo eller på någon annan av klientorganisationens geoplatser. Innehåll från olika geografiska platser visas  i vyn Delas med mig i användarens OneDrive för företag och kan nås med single Sign-On-upplevelse oavsett vilken geoplats den finns på.
 
-## <a name="teams-experience"></a>Teams Experience
+## <a name="teams-experience"></a>Teams Upplevelse
 
-Teams är multi-geo-känsligt. OneDrive-filer och nyligen visade filer visas oavsett användarens Geo-plats. @ omnämnanden fungerar tillsammans med användare från alla geo-platser.
+Teams är multi-geomedveten. OneDrive filer och senast visade filer visas oavsett användarens geografiska position. @ omnämnanden fungerar med användare från alla geografiska platser.
 
-## <a name="user-profiles"></a>Användar profiler
+## <a name="user-profiles"></a>Användarprofiler
 
-Användar profil informationen hanteras i användarens Geo-plats. När du väljer en användare omdirigeras du till en lämplig Geo-plats för användaren, där du kan se deras fullständiga profil uppgifter.
+Användarprofilinformation kan lagras på användarens geoplats. När du väljer en användare dirigeras du till lämplig geoplats för användaren, där du ser den fullständiga profilinformationen.
 
-Om Delve är inaktiverat visas den klassiska profil upplevelsen i SharePoint, som inte är särskilt kompatibel.
+Om Delve är inaktiverat visas det klassiska profilupplevelsen i SharePoint, som inte är multigeografiska.
 
 

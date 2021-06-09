@@ -1,5 +1,5 @@
 ---
-title: Konfigurera ditt nätverk för Microsoft 365
+title: Konfigurera nätverket för Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: Hitta länkar till artiklar med information som hjälper dig att konfigurera ditt nätverk för Microsoft 365, inklusive en översikt över nätverks anslutningen och en lista med slut punkter.
+description: Hitta länkar till artiklar med information som hjälper dig att konfigurera nätverket för Microsoft 365, inklusive en översikt över nätverksanslutningen och en lista över slutpunkter.
 ms.openlocfilehash: f0e0499c70745d31399240372c190758285408aa
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -27,68 +27,68 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46694376"
 ---
-# <a name="set-up-your-network-for-microsoft-365"></a>Konfigurera ditt nätverk för Microsoft 365
+# <a name="set-up-your-network-for-microsoft-365"></a>Konfigurera nätverket för Microsoft 365
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-En viktig del av din Microsoft 365-registrering är att kontrol lera att nätverks-och Internet anslutningarna är konfigurerade för optimerad åtkomst. Att konfigurera det lokala nätverket för att få åtkomst till ett globalt distribuerat program som-som-as-service-moln är inte samma som ett traditionellt nätverk som är optimerat för trafik till lokala data Center och en central Internet anslutning. 
+En viktig del av Microsoft 365 är att se till att nätverks- och Internetanslutningar är konfigurerade för optimerad åtkomst. Att konfigurera ditt lokala nätverk för att få tillgång till ett globalt distribuerat SaaS-moln (programvara som en tjänst) skiljer sig från ett traditionellt nätverk som är optimerat för trafik till lokala datacenter och en central Internetanslutning. 
 
-Använd dessa artiklar för att förstå de viktigaste skillnaderna och för att ändra dina gräns enheter, klient datorer och lokala nätverk för att få bästa möjliga prestanda för dina lokala användare.
+Använd de här artiklarna för att förstå de viktigaste skillnaderna och för att ändra dina edge-enheter, klientdatorer och lokala nätverk för att få den bästa prestandan för dina lokala användare.
 
-## <a name="how-microsoft-365-networking-works"></a>Så fungerar Microsoft 365-nätverk
+## <a name="how-microsoft-365-networking-works"></a>Så här Microsoft 365 nätverk fungerar
 
-De här artiklarna visar en översikt över anslutnings barhet för Microsoft 365:
+I de här artiklarna finns en översikt över anslutning för Microsoft 365:
 
-- [Översikt över Microsoft 365-nätverk](microsoft-365-networking-overview.md)
-- [Principer för nätverks åtkomst för Microsoft 365](microsoft-365-network-connectivity-principles.md)
-- [Utvärderar Microsoft 365-nätverksanslutningar](assessing-network-connectivity.md)
+- [Översikt för Microsoft 365 nätverksanslutning](microsoft-365-networking-overview.md)
+- [Microsoft 365 principer för nätverksanslutningar](microsoft-365-network-connectivity-principles.md)
+- [Utvärdera Microsoft 365 nätverksanslutningar](assessing-network-connectivity.md)
 
-Råd om hur du förbättrar prestanda finns i [nätverks planering och prestanda justering för Microsoft 365](network-planning-and-performance.md).
+Råd om förbättring av prestanda finns i [Nätverksplanering och prestandajustering för Microsoft 365.](network-planning-and-performance.md)
 
-## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Hantera Microsoft 365-nätverk som nätverks utrustnings leverantör
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Stöd Microsoft 365 nätverk som leverantör av nätverksutrustning
 
-Om du är nätverks utrustning kan du gå med i [Office 365 Network partner-programmet](microsoft-365-networking-partner-program.md). Registrera programmet för att skapa principer för Office 365-nätverks anslutningar till dina produkter och lösningar. 
+Om du är leverantör av nätverksutrustning ansluter du till [Office 365 Nätverkspartnerprogram](microsoft-365-networking-partner-program.md). Registrera dig för programmet för att bygga Office 365 principer för nätverksanslutning i dina produkter och lösningar. 
 
-## <a name="office-365-endpoints"></a>Slut punkter för Office 365
+## <a name="office-365-endpoints"></a>Office 365-slutpunkter
 
-Slut punkter är den uppsättning mål-IP-adresser, DNS-domännamn och URL: er för Office 365-trafik på Internet. 
+Slutpunkter är en uppsättning IP-måladresser, DNS-domännamn och URL:er för Office 365 trafik på Internet. 
 
-För att optimera prestanda i Office 365-molnbaserade tjänster behöver vissa slut punkter särskild hantering av dina klient webbläsare och enheter i ditt nätverk. Dessa enheter inkluderar brand väggar, SSL-avbrotts-och inspektions enheter samt system för skydd mot data förlust.
+För att optimera prestanda Office 365 av molnbaserade tjänster behöver vissa slutpunkter särskild hantering av dina klientwebbläsare och enheter i ditt gränsnätverk. Dessa enheter omfattar brandväggar, SSL-avbrott, inspektera och paketinspektionsenheter samt system för skydd mot dataförlust.
 
-Mer information finns i [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md) .
+Mer [information Office 365 hantera slutpunkter.](managing-office-365-endpoints.md)
 
-Det finns fem olika Office 365-moln. I den här tabellen går du till listan med slut punkter för var och en av dem.
+Det finns för närvarande fem Office 365 moln. Den här tabellen tar dig till listan med slutpunkter för var och en.
 
-| Slut punkter | Beskrivning |
+| Slutpunkter | Beskrivning |
 |:-------|:-----|
-| [Slut punkter för hela världen](urls-and-ip-address-ranges.md) | Slut punkter för Office 365-prenumerationer, som omfattar Förenta staternas regerings community-moln (GCC). |
-| [Amerikanska myndigheters DoD slut punkter](microsoft-365-u-s-government-dod-endpoints.md) | Slut punkter för abonnemang med DoD för Förenta staternas försvar (departementet). |
-| [Amerikanska myndigheters GCC höga slut punkter](microsoft-365-u-s-government-gcc-high-endpoints.md) | Slut punkterna för de samhälls omfattande community-molnen (GCC hög). |
-| [Office 365 som drivs av 21Vianet-slutpunkter](urls-and-ip-address-ranges-21vianet.md) | Slut punkter för Office 365 som drivs av 21Vianet, som är avsedda att möta behoven hos Office 365 i Kina. |
-| [Office 365 Germany-slut punkter](microsoft-365-germany-endpoints.md) | Slut punkterna för ett separat moln i Europa för de mest reglerade kunderna i Tyskland, Europeiska unionen (EU) och Europeiska fri handels associationen (EFTA). |
+| [Globala slutpunkter](urls-and-ip-address-ranges.md) | Slutpunkterna för globala Office 365 prenumerationer, som omfattar USA och Government Community Cloud (GCC). |
+| [Slutpunkter för Myndighetsskydd i USA](microsoft-365-u-s-government-dod-endpoints.md) | Slutpunkterna för United States Department of Defense-prenumerationer (DoD). |
+| [Slutpunkter för Myndighetsskydd i USA (GCC High)](microsoft-365-u-s-government-gcc-high-endpoints.md) | Slutpunkterna för prenumerationer med Government Community Cloud Hög (GCC Hög). |
+| [Office 365 som drivs av 21Vianet – Slutpunkter](urls-and-ip-address-ranges-21vianet.md) | Slutpunkterna för Office 365 som drivs av 21Vianet, som är utformade för att tillgodose behoven Office 365 i Kina. |
+| [Slutpunkter för Office 365 Germany](microsoft-365-germany-endpoints.md) | Slutpunkterna för ett separat moln i Europa för de kunder i Tyskland, Europeiska unionen (EU) och EES (European Free Trade Association) som regleras mest. |
 |||
 
-Information om hur du hämtar den senaste listan över slut punkter för Office 365-molnet finns i [office 365 IP Address and URL Web Service](microsoft-365-ip-web-service.md).
+Information om hur du automatiserar hur du hämtar den senaste listan med slutpunkter för Office 365-molnet finns [i Office 365 IP-adress och URL-webbtjänst.](microsoft-365-ip-web-service.md)
 
-Ytterligare slut punkter finns i följande artiklar:
+Fler slutpunkter finns i följande artiklar:
 
-- [Ytterligare slut punkter som inte ingår i webb tjänsten](additional-office365-ip-addresses-and-urls.md)
-- [Nätverks begär anden i Office 2016 för Mac](network-requests-in-office-2016-for-mac.md)
+- [Ytterligare slutpunkter som inte ingår i webbtjänsten](additional-office365-ip-addresses-and-urls.md)
+- [Nätverksbegäranden i Office 2016 för Mac](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-microsoft-365-networking"></a>Ytterligare avsnitt för Microsoft 365-nätverk
+## <a name="additional-topics-for-microsoft-365-networking"></a>Ytterligare ämnen för Microsoft 365 nätverk
 
-De här artiklarna innehåller specialiserade ämnen i Microsoft 365-nätverk:
+Läs följande artiklar för specialiserade ämnen Microsoft 365 nätverk:
 
-- [Nätverk för innehålls leverans](content-delivery-networks.md)
+- [Nätverk för innehållsleverans](content-delivery-networks.md)
 - [IPv6-stöd i Office 365-tjänster](ipv6-support.md)
 - [Stöd för NAT med Office 365](nat-support-with-microsoft-365.md)
 
 ## <a name="expressroute-for-microsoft-365"></a>ExpressRoute för Microsoft 365
 
-Se de här artiklarna för att få information om hur du använder ExpressRoute för Office 365-trafik:
+Läs följande artiklar för information om hur du använder ExpressRoute för Office 365 trafik:
 
 - [Azure ExpressRoute för Office 365](azure-expressroute.md)
 - [Implementera ExpressRoute för Office 365](implementing-expressroute.md)
-- [Nätverks planering med ExpressRoute för Office 365](network-planning-with-expressroute.md)
-- [Routning med ExpressRoute för Office 365](routing-with-expressroute.md)
+- [Nätverksplanering med ExpressRoute för Office 365](network-planning-with-expressroute.md)
+- [Dirigering med ExpressRoute för Office 365](routing-with-expressroute.md)

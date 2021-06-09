@@ -1,6 +1,6 @@
 ---
-title: Rikt principer för Microsoft 365 Enterprise-arkitektur
-description: Lär dig mer om Microsofts företags arkitektur från experter i identitet, Cybersecurity och nätverk.
+title: Microsoft 365 Enterprise principer för arkitekturdesign
+description: Läs mer om Microsoft Enterprise-arkitekturen från experter inom identitet, cybersäkerhet och nätverk.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -20,13 +20,13 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 11/04/2020
 ms.locfileid: "48906959"
 ---
-# <a name="microsoft-365-enterprise-architecture-design-principles"></a>Rikt principer för Microsoft 365 Enterprise-arkitektur
+# <a name="microsoft-365-enterprise-architecture-design-principles"></a>Microsoft 365 Enterprise principer för arkitekturdesign
 
 Förstå de viktigaste principer som du behöver för att förstå nätverks-, identitets-, säkerhets- och internationella arkitekturer.
 
-| Man | Ämne | Om experten |
+| Expert | Ämne | Om experten |
 |---------|---------|---------|
-|![Alex Shteynberg i företags identitets arkitektur](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)   |    [Identitet](identity-design-principles.md)     | Alex Shteynberg, huvudsaklig tekniska arkitekt hos Microsoft New York Microsoft Technology Center, tar steget tillbaka till att beskriva rikt linjer och bas linje ämnen som innehåller identitet för företags organisationer som använder Microsoft 365 och Azure in [för identitet och](identity-design-principles.md)annat. |
-| ![Kozetta Garrett på principer för säkerhets design](../media/solutions-architecture-center/kozeta-garrett-security.jpg)   |     [Säkerhet](security-design-principles.md)    |  Kozeta Garrett, Cybersecurity Architect på Microsoft, beskriver de viktigaste säkerhets utmaningarna i företags organisationer och rekommenderar de metoder som du kan vidta i [säkerhets avresedagen](security-design-principles.md).  |
-| ![Eriks principer för utformning av nätverk](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [Nätverk](networking-design-principles.md)  |   Erik Fisher, Security & Compliance Architect på Microsoft, beskriver hur du optimerar nätverket för moln anslutningar genom att undvika de vanligaste fall GRO par i [nätverksfunktioner (till molnet)](networking-design-principles.md).       |
+|![Alex Shteynberg i företagsidentitetsarkitektur](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)   |    [Identitet](identity-design-principles.md)     | Alex Shteynberg, Principal Technical Architect på Microsofts Microsoft Technology Center för New York, tar ett steg tillbaka för att beskriva vägledande principer och baslinjer kring identitet för företag som inför Microsoft 365 och Azure i To identity och [beyond](identity-design-principles.md). |
+| ![Kozetta Garrett om principer för säkerhetsdesign](../media/solutions-architecture-center/kozeta-garrett-security.jpg)   |     [Säkerhet](security-design-principles.md)    |  Kozeta Garrett, Cybersecurity Architect på Microsoft, beskriver de största säkerhetsutmaningarna hon stöter på i företagsorganisationer och rekommenderar metoder du kan använda dig av säkerhets hur du kan segla [över](security-design-principles.md).  |
+| ![Ed Fisher om principer för nätverksdesign](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [Nätverk](networking-design-principles.md)  |   Ed Fisher, Security & Compliance Architect på Microsoft, beskriver hur du optimerar nätverket för molnanslutning genom att undvika de vanligaste fallgropar i [Nätverk upp (till molnet).](networking-design-principles.md)       |
 |    |         |         |

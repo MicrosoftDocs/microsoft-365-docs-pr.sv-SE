@@ -44,13 +44,13 @@ Du kan anpassa listan med enheter som används för standardidentifiering. Du ka
 
 
 > [!IMPORTANT]
-> För förhandsgranskning måste du först aktivera förhandsversionsfunktionerna i Microsoft Defender Säkerhetscenter.
-> Du kan sedan komma åt konfigurationen av enhetsidentifiering i Säkerhetscenter för Microsoft 365. Listan över ohanterade enheter och säkerhetsrekommendationer blir tillgänglig i både Microsoft Defender Säkerhetscenter och Microsoft 365 Säkerhetscenter, medan panelerna på instrumentpanelen bara är tillgängliga i Microsoft 365 säkerhetscenter.
+> För förhandsgranskning måste du först aktivera förhandsgranskningsfunktionerna i Microsoft Defender Säkerhetscenter.
+> Du kan sedan komma åt konfigurationen för enhetsidentifiering Microsoft 365 säkerhetscenter. Listan över ohanterade enheter och säkerhetsrekommendationer blir tillgänglig i både säkerhetscentret i Microsoft Defender Säkerhetscenter och Microsoft 365, medan panelerna på instrumentpanelen bara är tillgängliga i Microsoft 365 säkerhetscenter.
 
 
-Gör följande konfigurationssteg i Säkerhetscenter för Microsoft 365:
+Gör följande i Microsoft 365 säkerhetscenter:
 
-1.  Gå till **Inställningar > Enhetsidentifiering**.
+1.  Gå till Inställningar > **enhetsidentifiering**.
 2.  Välj det identifieringsläge du vill använda på dina onboarded-enheter. 
 3.  Om du har valt att använda standardidentifiering väljer du vilka enheter som ska användas för aktiv sannolikhet: alla enheter eller en delmängd genom att ange deras enhetstaggar.
 4. Klicka på **Spara**.

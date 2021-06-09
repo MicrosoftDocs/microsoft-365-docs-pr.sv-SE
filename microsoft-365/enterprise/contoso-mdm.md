@@ -13,7 +13,7 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Förstå hur Contoso använder Microsoft Intune i Microsoft 365 för företag för att hantera dess enheter och programmen som körs på dem.
+description: Förstå hur Contoso använder Microsoft Intune i Microsoft 365 för företag för att hantera dess enheter och program som körs på dem.
 ms.openlocfilehash: 6d7783e8c2d9b78b63bf9eefe761fbc52d0b280f
 ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
@@ -23,58 +23,58 @@ ms.locfileid: "48754003"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Hantering av mobila enheter på Contoso
 
-Microsoft 365 för Enterprise inkluderar Intune och en uppsättning Azure-tjänster som stöder mobila enheter och program hantering och-säkerhet.
+Microsoft 365 för företag inkluderar Intune och en uppsättning Azure-tjänster som stöder hantering och säkerhet för mobila enheter och program.
 
-Contoso har många mobila anställda. Vissa har kontor på Contoso-platser och vissa har inga kontor. Contoso ville ge medarbetarna möjlighet att arbeta effektivt och samtidigt skydda enheterna, företagsdata som lagras på dessa enheter och programmens funktionalitet.
+Contoso har många anställda med mobilaktiverad personal. Vissa har kontor i Contoso-platser och vissa har inga kontor. Contoso ville ge medarbetarna möjlighet att arbeta effektivt och samtidigt skydda enheterna, företagsdata som lagras på dessa enheter och programmens funktionalitet.
 
 ## <a name="plan"></a>Planera
 
-Contoso identifierade följande Intune användnings fall i hantering av mobila enheter för Microsoft 365 för företag:
+Contoso har identifierat följande Intune-användningsfall för hantering av mobila enheter Microsoft 365 för företag:
 
-- Skydda Exchange Online-e-post och data så att de kan nås av mobila enheter på ett säkert sätt.
-- Implementera ett BYOD-program för Contoso-anställda.
-- Ge organisationens ägda telefoner och begränsa-Använd delade surfplattor till contoso-anställda.
+- Skydda Exchange Online e-post och data så att de kan nås säkert av mobila enheter.
+- Implementera ett BYOD-program (bring-your-own-device) för Contoso-anställda.
+- Utfärda telefoner som ägs av organisationen och delade surfplattor med begränsad användning till Contoso-anställda.
 
 Contoso använder inte Intune för att:
 
-- Gör det möjligt för anställda att säkert komma åt Microsoft 365 från en ohanterad offentlig kiosk.
-- Skydda det lokala e-postmeddelandet och data så att det kan nås på ett säkert sätt via mobila enheter eftersom det inte finns några lokala Microsoft Exchange-servrar.
+- Tillåt anställda att på ett säkert sätt Microsoft 365 från en ohanterad offentlig kiosk.
+- Skydda lokal e-post och data så att de kan nås säkert av mobila enheter, eftersom det inte finns några Microsoft Exchange lokala servrar.
 
 ## <a name="deploy"></a>Distribuera
 
 Så här konfigurerar Contoso infrastrukturen för hantering av mobila enheter:
 
-- Ange Intune som hanterings myndigheten för mobila enheter (MDM) och Använd Intune på Azure för att administrera innehåll och hantera enheterna
-- Skapade Azure Active Directory-grupper (Azure AD) för enheter för registrerings-och Intune-inställningar och enhetbaserade principer för villkorsstyrd åtkomst
+- Ange Intune som MDM-myndighet (Mobile Device Management) och använd Intune i Azure för att administrera innehåll och hantera enheter
+- Skapat Azure Active Directory (Azure AD) för enheter för registrering och Intune-inställningar och enhetsbaserade villkorsstyrda åtkomstprinciper
 
-  Mer information finns i [principer för villkorsstyrd åtkomst via contoso](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
+  Mer information finns i [Contosos villkorsstyrda åtkomstpolicyer.](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)
 
-- Aktiverat Apple-enheten för att stödja anställda med iPad, iMacs och iPhone och företagsägda iPhone
+- Apple-enhetsplattformen aktiverades för att ge stöd för anställda med iPad, iMacs och iPhone samt företagsägda iPhone
 - Contoso-specifika principer för villkor har skapats. Dessa visas under installationen av företagsportalen för Contoso på mobila enheter
-- För enheter som inte är registrerade, implementerade en uppsättning principer för MAM (Mobile Application Management) för att kräva åtkomst till Microsoft 365-tjänster
+- För enheter som inte är registrerade har implementerat en uppsättning principer för hantering av mobilprogram (MAM) för att kräva autentisering för åtkomst till Microsoft 365-tjänster
 - Intune-principer har skapats för att tillämpa:
   - Tillåtna appar.
-  - Enhets kryptering för att förhindra obehörig åtkomst.
-  - En sex eller ett fyrsiffrigt lösen ord.
-  - En inaktivitet – tids gräns.
-  - Skydd mot virus och skadlig program vara med Windows Defender på Windows 10-enheter.
-  - Automatiska uppdateringar på Windows 10-enheter som innehåller de senaste säkerhets uppdateringarna.
-  - Skicka certifikat till hanterade enheter.
+  - Enhetskryptering för att förhindra obehörig åtkomst.
+  - En sexsiffrig PIN-kod eller ett lösenord.
+  - En tidsgräns för inaktivitet.
+  - Skydd mot antivirusprogram och skadlig programvara samt signaturuppdateringar med Windows Defender på Windows 10 enheter.
+  - Automatiska uppdateringar på Windows 10 enheter som innehåller de senaste säkerhetsuppdateringarna.
+  - Trycker på certifikat till hanterade enheter.
   - En tydlig åtskillnad mellan företagsdata och personliga data. Användare och administratörer kan selektivt rensa företagsdata från enheten medan personliga data, till exempel bilder, personliga e-postkonton och personliga filer, bevaras.
 
-Contoso-registrerade distribuerade och ägda datorer och surfplattor genom att lägga till dem till rätt Intune-gruppgrupper. De uppvisade också ett BYOD-program som de anställda kan registrera sina personliga enheter på. Registrerade enheter tar emot Intune-principer, som leder till hanterade och skyddade enheter och deras program. Enheter som inte har registrerats har MAM-principer (Mobile Application Management) som anger tillåtna program.
+Contoso registrerade distribuerade datorer och företagsägda smartphones och handdatorer genom att lägga till dem i lämpliga Intune-enhetsgrupper. De upprättade även ett BYOD-program för anställda för att registrera sina personliga enheter. Registrerade enheter får Intune-principer, vilket resulterar i hanterade och skyddade enheter och deras program. Enheter som inte är registrerade har principer för hantering av mobilprogram (MAM) som anger tillåtna program.
 
-Här är distributions arkitekturen contoso Mobile Device Management.
+Här är distributionsarkitekturen för hantering av mobila enheter i Contoso.
 
-![Distributions infrastruktur för Contoso Mobile Device Management](../media/contoso-mdm/contoso-mdm-fig1.png)
+![Distributionsinfrastrukturen för hantering av mobila enheter i Contoso](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>Nästa steg
 
-Lär dig hur Contoso använder [informations skydds funktionerna](contoso-info-protect.md) i Microsoft 365 för företag för att klassificera, identifiera och skydda viktiga digitala till gångar i sin organisation.
+Lär dig hur Contoso använder funktionerna för [informationsskydd](contoso-info-protect.md) i Microsoft 365 för företag för att klassificera, identifiera och skydda viktiga digitala tillgångar i organisationen.
 
 ## <a name="see-also"></a>Se även
 
-[Enhets hantering för Microsoft 365](device-management-roadmap-microsoft-365.md)
+[Enhetshantering för Microsoft 365](device-management-roadmap-microsoft-365.md)
 
 [Översikt över Microsoft 365 för företag](microsoft-365-overview.md)
 

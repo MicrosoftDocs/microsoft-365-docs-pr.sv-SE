@@ -33,16 +33,16 @@ ms.locfileid: "51765305"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Du kan använda PowerShell till att utföra olika funktioner i Windows Defender. PowerShell liknar kommandotolken eller kommandoraden och är ett aktivitetsbaserat kommandoradsgränssnitt och skriptspråk som utformats särskilt för systemadministration. Du kan läsa mer på [PowerShell-hubben på MSDN.](/previous-versions/msdn10/mt173057(v=msdn.10))
+Du kan använda PowerShell för att utföra olika funktioner i Windows Defender. PowerShell liknar kommandotolken eller kommandoraden och är ett aktivitetsbaserat kommandoradsgränssnitt och skriptspråk som utformats särskilt för systemadministration. Du kan läsa mer på [PowerShell-hubben på MSDN.](/previous-versions/msdn10/mt173057(v=msdn.10))
 
 En lista med cmdlet:ar och deras funktioner och tillgängliga parametrar finns i [avsnittet Om Defender-cmdlets.](/powershell/module/defender)
 
-PowerShell-cmdlets är mest användbara i Windows Server-miljöer som inte förlitar sig på ett grafiskt användargränssnitt (GUI) för att konfigurera programvara.
+PowerShell-cmdlets är mest Windows i Server-miljöer som inte förlitar sig på ett grafiskt användargränssnitt (GUI) för att konfigurera programvara.
 
 > [!NOTE]
-> PowerShell-cmdlets bör inte användas som en ersättning för en fullständig infrastruktur för hantering av nätverksprinciper, till exempel ADMX-mallarna [Microsoft Endpoint Configuration Manager,](/configmgr) [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))eller Microsoft Defender Antivirus Group [Policy ADMX.](https://www.microsoft.com/download/101445)
+> PowerShell-cmdlets bör inte användas som en ersättning för en fullständig infrastruktur för hantering av nätverksprinciper, till exempel [Microsoft Endpoint Configuration Manager,](/configmgr) [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))Microsoft Defender Antivirus [ADMX-mallar för grupprinciper.](https://www.microsoft.com/download/101445)
 
-Ändringar som görs med PowerShell påverkar lokala inställningar på slutpunkten där ändringarna distribueras eller görs. Det innebär att distributioner av principen med Grupprincip, Microsoft Endpoint Configuration Manager eller Microsoft Intune kan skriva över ändringar som gjorts med PowerShell.
+Ändringar som görs med PowerShell påverkar lokala inställningar på slutpunkten där ändringarna distribueras eller görs. Det innebär att distributioner av principen med grupprinciper, Microsoft Endpoint Configuration Manager och Microsoft Intune kan skriva över ändringar som gjorts med PowerShell.
 
 Du kan [konfigurera vilka inställningar som kan åsidosättas lokalt med åsidosättningar av lokala policyer.](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
@@ -50,7 +50,7 @@ PowerShell installeras vanligtvis under mappen `%SystemRoot%\system32\WindowsPow
 
 ## <a name="use-microsoft-defender-antivirus-powershell-cmdlets"></a>Använda Microsoft Defender Antivirus PowerShell-cmdlets
 
-1. Skriv powershell i **Windows-sökfältet.**
+1. Skriv powershell Windows sökfältet **i sökfältet.**
 2. Välj **Windows PowerShell** i resultatet för att öppna gränssnittet.
 3. Ange PowerShell-kommandot och eventuella parametrar.
 
@@ -69,4 +69,4 @@ Utelämna parametern `-online` för att få lokalt cachelagrad hjälp.
 
 - [Referensavsnitt om hanterings- och konfigurationsverktyg](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender Antivirus-cmdlets](/powershell/module/defender)
+- [Microsoft Defender Antivirus Cmdlets](/powershell/module/defender)

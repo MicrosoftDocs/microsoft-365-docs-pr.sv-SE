@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Lär dig hur du ändrar namnet på ämnescentret i Microsoft Viva Topics.
+description: Lär dig hur du ändrar namnet på ämnescentret i Microsoft Viva Ämnen.
 ms.openlocfilehash: 91f0693ba24e412812e1b8db19cfcf0febd2ec66
 ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
@@ -19,28 +19,28 @@ ms.locfileid: "50107735"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Ändra namnet på ämnescentret i Microsoft Viva-ämnen
 
-Du kan ändra namnet på ämnescentret i administrationscentret för [Microsoft 365.](https://admin.microsoft.com) Du måste vara global administratör eller SharePoint-administratör för att kunna utföra de här uppgifterna.
+Du kan ändra namnet på ämnescentret i Microsoft 365 [administrationscentret](https://admin.microsoft.com). Du måste vara global administratör SharePoint administratör för att utföra de här uppgifterna.
 
 ## <a name="to-access-topics-management-settings"></a>Så här kommer du åt inställningar för hantering av ämnen:
 
-1. Klicka på Inställningar och sedan Organisationsinställningar i **administrationscentret** **för** Microsoft 365.
+1. I Microsoft 365 klickar du på **Inställningar** och sedan **på Organisationsinställningar.**
 2. Klicka på **Ämnesupplevelser** på **fliken Tjänster.**
 
-    ![Koppla samman personer med kunskap](../media/admin-org-knowledge-options-completed.png) 
+    ![Anslut att få kunskap](../media/admin-org-knowledge-options-completed.png) 
 
 3. Välj fliken **Ämnescenter.** I följande avsnitt finns information om de olika inställningarna.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
-##  <a name="update-your-topic-center-name"></a>Uppdatera ämnescenternamnet
+##  <a name="update-your-topic-center-name"></a>Uppdatera namnet på ämnescentret
 
-Så här byter du namn på ämnescentret
+Så här ändrar du namnet på ämnescentret
 
-1. Välj Redigera **under Ämnescenter** **på fliken Ämnescenter.** 
-2. På **namnsidan för Redigera ämnescenter** skriver **du** det nya namnet på ämnescentret i namnrutan Ämnescenter.
+1. På fliken **Ämnescenter** under **Namn på ämnescenter** väljer du **Redigera**.
+2. Skriv det **nya namnet på ämnescentret** i **rutan Ämnescenternamn** på sidan Redigera ämnescenternamn.
 3. Välj **Spara**
 
-    ![Namn på redigera ämnescenter](../media/manage-topic-center-name.png)  
+    ![Redigera namn på ämnescenter](../media/manage-topic-center-name.png)  
 
 ## <a name="see-also"></a>Se även
 

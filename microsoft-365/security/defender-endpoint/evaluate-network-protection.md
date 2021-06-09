@@ -39,7 +39,7 @@ Den här artikeln hjälper dig att utvärdera nätverksskydd genom att aktivera 
 
 Aktivera nätverksskydd i granskningsläge för att se vilka IP-adresser och domäner som skulle ha blockerats. Du kan kontrollera att det inte påverkar verksamhetsbaserade appar eller få en uppfattning om hur ofta block uppstår.
 
-1. Skriv **powershell** på Start-menyn, högerklicka på **Windows PowerShell och** välj Kör som **administratör**
+1. Skriv **powershell** på Start-menyn, högerklicka på **Windows PowerShell** välj Kör **som administratör**
 2. Ange följande cmdlet:
 
     ```PowerShell
@@ -54,11 +54,11 @@ Aktivera nätverksskydd i granskningsläge för att se vilka IP-adresser och dom
 
 Nätverksanslutningen tillåts och ett testmeddelande visas.
 
-![Exempelmeddelande om att anslutningen är blockerad: IT-administratören orsakade att Windows-säkerhet blockerade den här nätverksanslutningen. Kontakta din IT-support.](/microsoft-365/security/defender-endpoint/images/np-notif)
+![Exempelmeddelande om att anslutningen är blockerad: IT-administratören orsakade Windows-säkerhet blockera den här nätverksanslutningen. Kontakta din IT-support.](/microsoft-365/security/defender-endpoint/images/np-notif)
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Granska nätverksskyddshändelser i Windows Loggboken
 
-Om du vill granska appar som skulle ha blockerats öppnar du Loggboken och filtrerar efter Händelse-ID 1125 i Microsoft-Windows-Windows-Defender/Drift-loggen. I följande tabell visas alla nätverksskyddshändelser.
+Om du vill granska appar som skulle ha blockerats öppnar du Loggboken och filtrerar för Händelse-ID 1125 i Microsoft-Windows-Windows-Defender/Operational log. I följande tabell visas alla nätverksskyddshändelser.
 
 | Händelse-ID | Ange/källa | Beskrivning |
 |-|-|-|

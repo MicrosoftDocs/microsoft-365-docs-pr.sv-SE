@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - Ent_Architecture
-description: Använd testlabbguider för att bygga ut Microsoft 365-lösningar och -scenarier i en utvecklings-/testmiljö.
+description: Använd testlabbguider för att Microsoft 365 ut lösningar och scenarier i en utvecklings-/testmiljö.
 ms.openlocfilehash: 10ddfc9cb9f9135b352be50c555811342ae0bd2b
 ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
@@ -34,6 +34,6 @@ Du kan också skapa representativa miljöer för utveckling och testning av prog
   
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Prova [den här testlabbguiden](team-security-isolation-dev-test.md) om du vill skapa ett team med säkerhetsisolering.
+Prova [den här testlabbguiden](team-security-isolation-dev-test.md) om du vill konfigurera ett team med säkerhetsisolering.
 
-Fler guider för Microsoft 365-funktioner och konfiguration finns i testlabbguiderna för [Microsoft 365 för företag.](../enterprise/m365-enterprise-test-lab-guides.md)
+Fler guider för Microsoft 365 funktioner och konfiguration finns i [Microsoft 365 testlabbguider för företag.](../enterprise/m365-enterprise-test-lab-guides.md)

@@ -1,5 +1,5 @@
 ---
-title: Hantera Microsoft 365-klient organisationer med Windows PowerShell för DAP partners
+title: Hantera Microsoft 365 med Windows PowerShell dap-partner
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: I den här artikeln lär du dig hur du använder PowerShell för Microsoft 365 för att hantera kund innehav.
+description: I den här artikeln lär du dig att använda PowerShell för Microsoft 365 att hantera dina kundantag.
 ms.openlocfilehash: 14290f04159e3ba0ce46971d204b71d3bb1600d9
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -24,67 +24,67 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46694447"
 ---
-# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Hantera Microsoft 365-klient organisationer med Windows PowerShell för DAP-partners (delegerade åtkomst behörigheter)
+# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Hantera Microsoft 365-klientorganisationen med Windows PowerShell för DAP-partner (Delegerade åtkomstbehörigheter)
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Med Windows PowerShell kan syndikerings-och moln lösnings partners (CSP) enkelt administrera och rapportera kund innehavs inställningar som inte är tillgängliga i administrations centret för Microsoft 365. Observera att för partner administratörs kontot för att administrera AOBO behörigheter måste du ha åtkomst till dess kund innehavare.
+Windows PowerShell tillåter att Syndication- och Molnlösningsleverantör-partner (CSP) enkelt kan administrera och rapportera inställningar för kundföretag som inte är tillgängliga Microsoft 365 administrationscentret. Observera att Behörigheten Administrera för AOBO krävs för att partneradministratörens konto ska kunna ansluta till sina kundantag.
   
-DAP-partners (delegerade åtkomst behörigheter) för syndikering och moln lösnings leverantörer. De är ofta nätverks-eller Telekom-leverantörer i andra företag. De fördelar Microsoft 365-abonnemang till sina kunder. När de säljer en Microsoft 365-prenumeration beviljas de automatiskt administration på uppdrag av (AOBO) behörigheter till kundens innehav så att de kan administrera och rapportera om kundens innehavare.
+DAP-partner (Delegerad åtkomstbehörighet) är syndicerings- och molnlösningsleverantörer (CSP). De är ofta nätverks- eller telekommunikationsleverantörer till andra företag. De paketar Microsoft 365 prenumerationer till sina tjänsteerbjudanden till sina kunder. När de säljer en Microsoft 365-prenumeration tilldelas de automatiskt behörigheten Administrera för (AOBO) för kundens företag så att de kan administrera och rapportera om kundrelationerna.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-Procedurerna i det här avsnittet kräver att du ansluter till [Microsoft 365 med PowerShell](connect-to-microsoft-365-powershell.md).
+Procedurerna i det här avsnittet kräver att du ansluter [till Anslut och Microsoft 365 med PowerShell.](connect-to-microsoft-365-powershell.md)
   
-Du behöver också dina autentiseringsuppgifter för partner klient organisation.
+Du behöver också autentiseringsuppgifterna för partnerklientorganisationen.
   
 ## <a name="what-do-you-want-to-do"></a>Vad vill du göra?
 
-### <a name="list-all-tenant-ids"></a>Lista alla klient-ID
+### <a name="list-all-tenant-ids"></a>Visa alla klientorganisations-ID
 
 > [!NOTE]
-> Om du har fler än 500 klient organisationer kan du använda cmdlet-syntaxen med antingen  _-all_ eller _-MaxResultsParameter_. Detta gäller för andra cmdlets som kan ge en stor utmatning, till exempel **Get-MsolUser**.
+> Om du har fler än 500 innehavare kan du begränsa cmdlet-syntaxen med _antingen -All_ eller _-MaxResultsParameter._ Det här gäller andra cmdlets som kan ge stora utdata, till exempel **Get-MsolUser.**
   
-Om du vill visa alla klient organisations-ID: n som du har åtkomst till kör du det här kommandot.
+Om du vill visa alla klientorganisations-ID:n som du har tillgång till kör du det här kommandot.
   
 ```
 Get-MsolPartnerContract -All | Select-Object TenantId
 ```
 
-Då visas en lista över alla dina kund innehavare av **TenantId**.
+Då visas en lista över alla dina kundklienter efter **TenantId.**
 
 >[!Note]
->PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med **MSOL** . För att kunna fortsätta använda dessa cmdletar måste du köra dem från Windows PowerShell.
+>PowerShell Core stöder inte Microsoft Azure Active Directory-modul för Windows PowerShell-modulen och-cmdlets med **MSOL** i namnet. Om du vill fortsätta använda dessa cmdlets måste du köra dem från Windows PowerShell.
 >
   
-### <a name="get-a-tenant-id-by-using-the-domain-name"></a>Skaffa ett klient-ID genom att använda domän namnet
+### <a name="get-a-tenant-id-by-using-the-domain-name"></a>Hämta ett klientorganisations-ID genom att använda domännamnet
 
-Kör det här kommandot för att hämta **TenantId** för en viss kund klient organisation via domän namn. Ersätt _<domainname.onmicrosoft.com>_ med det faktiska domän namnet för den klient organisation som du vill använda.
+Kör det här **kommandot för att** få klientorganisationens ID för en viss kundklient genom att köra det här kommandot. Ersätt _<domainname.onmicrosoft.com>_ domännamnet för den kundklientorganisation som du vill använda.
   
 ```
 Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object TenantId
 ```
 
-### <a name="list-all-domains-for-a-tenant"></a>Visa en lista över alla domäner för en innehavare
+### <a name="list-all-domains-for-a-tenant"></a>Lista alla domäner för en klientorganisation
 
-Kör det här kommandot för att få alla domäner för en klient organisation. Ersätt  _<customer TenantId value>_ med det faktiska värdet.
+Om du vill skaffa alla domäner för en kundklientorganisation kör du det här kommandot. Ersätt  _<customer TenantId value>_ med det faktiska värdet.
   
 ```
 Get-MsolDomain -TenantId <customer TenantId value>
 ```
 
-Om du har registrerat fler domäner kommer detta att returnera alla domäner som är kopplade till kunden **TenantId**.
+Om du har registrerat ytterligare domäner returneras alla domäner som är kopplade till kundens **Klientorganisations-ID.**
   
-### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>Få en mappning av alla innehavare och registrerade domäner
+### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>Få en mappning av alla klienter och registrerade domäner
 
-De föregående PowerShell för Microsoft 365-kommandon visar hur du hämtar antingen klient-ID: n eller domäner, men inte båda samtidigt, och utan en tydlig mappning mellan dem. Det här kommandot skapar en lista över alla klient organisations-ID: n och deras domäner.
+I de tidigare kommandona för PowerShell för Microsoft 365 visades hur du hämtar antingen klientorganisations-ID:er eller domäner, men inte båda samtidigt, och utan en tydlig mappning mellan dem alla. Det här kommandot genererar en lista över alla dina klientorganisations-ID och deras domäner.
   
 ```
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
 ```
 
-### <a name="get-all-users-for-a-tenant"></a>Skaffa alla användare för en klient organisation
+### <a name="get-all-users-for-a-tenant"></a>Skaffa alla användare för en klientorganisation
 
-Då visas **userPrincipalName**, **DisplayName**och **ärlicensierad** status för alla användare för en viss klient organisation. Ersätt _<customer TenantId value>_ med det faktiska värdet.
+Då visas **UserPrincipalName,** **DisplayName** och **statusen ärLicensed för** alla användare för en viss klientorganisation. Ersätt _<customer TenantId value>_ med det faktiska värdet.
   
 ```
 Get-MsolUser -TenantID <customer TenantId value>
@@ -92,7 +92,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### <a name="get-all-details-about-a-user"></a>Få all information om en användare
 
-Om du vill se alla egenskaper för en viss användare kör du det här kommandot. Ersätt  _<customer TenantId value>_ och _<user principal name value>_ med faktiska värden.
+Om du vill se alla egenskaper för en viss användare kör du det här kommandot. Ersätt  _<customer TenantId value>_ och med de faktiska _<user principal name value>_ värdena.
   
 ```
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>
@@ -100,23 +100,23 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 ### <a name="add-users-set-options-and-assign-licenses"></a>Lägga till användare, ange alternativ och tilldela licenser
 
-Det är särskilt effektivt att skapa, konfigurera och licensiera för Microsoft 365-användare genom att använda PowerShell för Microsoft 365. I den här processen skapar du först poster för alla användare som du vill lägga till i en CSV-fil och sedan importerar filen genom att använda PowerShell för Microsoft 365. 
+Att massskapa, konfigurera och licensiera Microsoft 365 är särskilt effektivt med PowerShell för Microsoft 365. I den här tvåstegsprocessen skapar du först poster för alla användare som du vill lägga till i en fil med kommaavgränsade värden (CSV) och sedan importerar du filen med PowerShell för Microsoft 365. 
   
 #### <a name="create-a-csv-file"></a>Skapa en CSV-fil
 
-Skapa en CSV-fil i det här formatet:
+Skapa en CSV-fil med det här formatet:
   
 -  `UserPrincipalName,FirstName,LastName,DisplayName,Password,TenantId,UsageLocation,LicenseAssignment`
     
 där:
   
-- **UsageLocation**: värdet för det här är ISO-lands-/regionkoden för användaren. Lands-/regionkoder kan hittas på[ISO online-webbplattformen](https://go.microsoft.com/fwlink/p/?LinkId=532703). Koden för USA är till exempel amerikansk och koden för Brasilien är BR. 
+- **Användninglokalisering:** Värdet för det här är användarens ISO-lands-/regionskod på två bokstäver. Landskoderna/regionskoderna kan du hitta på[ISO-webbplattformen online.](https://go.microsoft.com/fwlink/p/?LinkId=532703) Koden för USA är till exempel USA och koden för Brasilien är BR. 
     
-- **LicenseAssignment**: värdet för detta format: `syndication-account:<PROVISIONING_ID>` . Om du till exempel tilldelar kund klient organisationer O365_Business_Premium-licenser, ser det **LicenseAssignment** värdet ut så här: **syndikering-konto: O365_Business_Premium**. Du hittar PROVISIONING_IDs i syndikerings partner portalen som du har åtkomst till som syndikering eller CSP-partner.
+- **LicenseAssignment:** Värdet för det här använder följande format: `syndication-account:<PROVISIONING_ID>` . Om du till exempel tilldelar kunder klientorganisationsanvändare O365_Business_Premium licenser ser värdet **Licenstilldelning** ut så här: **syndication-account:O365_Business_Premium**. Du hittar de PROVISIONING_IDs i Syndication-partnerportalen som du har åtkomst till som Syndication- eller CSP-partner.
     
-#### <a name="import-the-csv-file-and-create-the-users"></a>Importera CSV-filen och skapa användare
+#### <a name="import-the-csv-file-and-create-the-users"></a>Importera CSV-filen och skapa användarna
 
-När du har skapat CSV-filen kör du det här kommandot för att skapa användar konton med lösen ord som inte upphör att gälla när du loggar in för första gången och att den licens du anger tilldelas. Glöm inte att ersätta rätt CSV-fil.
+När du har skapat CSV-filen kör du det här kommandot för att skapa användarkonton med lösenord som inte upphör att gälla och som användaren måste ändra vid första inloggningen och som tilldelar licensen du anger. Se till att ersätta rätt CSV-filnamn.
   
 ```
 Import-Csv .\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}

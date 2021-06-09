@@ -29,47 +29,47 @@ ms.locfileid: "46694533"
 ---
 # <a name="dns-records-for-office-365-dod"></a>DNS-poster för Office 365 DoD
 
-*Den här artikeln gäller Office 365 DoD och Microsoft 365 DoD*
+*Den här artikeln gäller för Office 365 dod och Microsoft 365 dod*
 
-När du hanterar Office 365-DoD måste du lägga till dina SMTP-och SIP-domäner i din Online Services-klient organisation.  Du ska göra detta med den nya-MsolDomain cmdlet i Azure AD PowerShell eller använda [Azure stats Portal](https://portal.azure.us) för att börja lägga till domänen och bevisa ägarskap.
+Som en del av onboarding till Office 365 DoD måste du lägga till dina SMTP- och SIP-domäner till Online Services-klientorganisationen.  Du gör detta med hjälp av New-MsolDomain-cmdleten i Azure AD PowerShell eller använda [Azure Government-portalen](https://portal.azure.us) för att starta processen med att lägga till domänen och bevisa ägarskap.
 
-När du har lagt till dina domäner till klient organisationen och validerat kan du använda följande vägledning för att lägga till lämpliga DNS-poster för tjänsterna nedan.  Du kan behöva ändra tabellen nedan för att passa organisationens behov med avseende på den inkommande MX-posten (erna) och eventuella befintliga Exchange Autodiscover-poster.  Vi rekommenderar starkt att koordinera dessa DNS-poster med din meddelande grupp för att undvika avbrott eller problem med att skicka e-post.
+När du har lagt till domänerna i klientorganisationen och validerat dem kan du använda följande anvisningar för att lägga till lämpliga DNS-poster för tjänsterna nedan.  Du kan behöva ändra tabellen nedan för att passa organisationens behov med avseende på den inkommande MX-posten eller -posterna och eventuella Exchange Autodiscover-poster du har.  Vi rekommenderar att du koordinerar de här DNS-posterna med meddelandeteamet för att undvika avbrott eller felaktig e-postleverans.
 
 ## <a name="exchange-online"></a>Exchange Online
 
-| Type (Typ) | Ordningen | Värdnamn | Pekar på adress eller värde | TTL |
+| Typ | Prioritet | Värdnamn | Pekar på adress eller värde | TTL |
 | --- | --- | --- | --- | --- |
-| MX | siffrorna | @ | *klient organisation*. mail.Protection.Office365.us (se nedan för mer information) | 1 timme |
-| TXT | - | @ | v = spf1 inkluderar include SPF. Protection. Office365. USA-alla | 1 timme |
+| MX | 0 | @ | *klientorganisations*-mail.protection.office365.us (se nedan för ytterligare information) | 1 timme |
+| TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | 1 timme |
 | CNAME | - | autodiscover | autodiscover-dod.office365.us | 1 timme |
 
-### <a name="exchange-autodiscover-record"></a>Autodiscover-post för Exchange
+### <a name="exchange-autodiscover-record"></a>Exchange Post för automatisk upptäckt
 
-Om du har en lokal Exchange-Server rekommenderar vi att du lämnar din befintliga post på plats medan du migrerar till Exchange Online och uppdaterar den posten när du har slutfört migreringen.
+Om du har Exchange Server lokalt rekommenderar vi att du lämnar den befintliga posten på plats medan du migrerar till Exchange Online och uppdaterar posten när du har slutfört migreringen.
 
-### <a name="exchange-online-mx-record"></a>Exchange Online MX-post
+### <a name="exchange-online-mx-record"></a>Exchange Online MX Record
 
-MX-postens värde för godkända domäner följer ett standardformat enligt ovan: *klient organisation*. mail.Protection.Office365.us, vilket ersätter *klient organisationen* med den första delen av ditt standard klient namn.
+MX-postvärdet för dina godkända domäner följer ett standardformat som anges *ovan:* klientorganisationens .mail.protection.office365.us, och ersätter klientorganisationen med den första delen av standardklientnamnet. 
 
-Om klient namnet till exempel är contoso.onmicrosoft.us använder du **contoso.mail.Protection.Office365.us** som värde för MX-posten.
+Om ditt klientnamn till exempel är contoso.onmicrosoft.us, använder du **contoso.mail.protection.office365.us** som värde för MX-posten.
 
 ## <a name="skype-for-business-online"></a>Skype för företag – Online
 
 ### <a name="cname-records"></a>CNAME-poster
 
-| Type (Typ) | Värdnamn | Pekar på adress eller värde | TTL |
+| Typ | Värdnamn | Pekar på adress eller värde | TTL |
 | --- | --- | --- | --- |
 | CNAME | sip | sipdir.online.dod.skypeforbusiness.us | 1 timme |
 | CNAME | lyncdiscover | webdir.online.dod.skypeforbusiness.us | 1 timme | 
 
 ### <a name="srv-records"></a>SRV-poster
 
-| Type (Typ) | Tjänst | Protokoll | Port | Väga | Ordningen | Namn | Mål | TTL |
+| Typ | Tjänst | Protokoll | Port | Vikt | Prioritet | Namn | Mål | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SRV | \_sip | \_Transmission | 443 | 9.1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | 1 timme |
-| SRV | \_sipfederationtls | \_TCP | 5061 | 9.1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | 1 timme |
+| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | 1 timme |
+| SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | 1 timme |
 
 ## <a name="additional-dns-records"></a>Ytterligare DNS-poster
 
 > [!IMPORTANT]
-> Om du har en befintlig *msoid* CNAME-post i DNS-zonen måste du **ta bort** posten från DNS för närvarande.  Msoid-posten är inkompatibel med Microsoft 365 Enterprise *-appar (tidigare Office 365 ProPlus)* och hindrar aktiveringen från att lyckas.
+> Om du har en befintlig *msoid* CNAME-post i din DNS-zon måste **du ta** bort posten från DNS för stunden.  Msoid-posten är inte kompatibel med Microsoft 365 Enterprise *(tidigare Office 365 ProPlus)* och kommer att förhindra att aktiveringen lyckas.

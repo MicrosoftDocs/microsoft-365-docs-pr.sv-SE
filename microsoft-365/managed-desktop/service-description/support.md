@@ -1,5 +1,5 @@
 ---
-title: Stöd för Microsoft Managed Desktop
+title: Support för Microsoft Hanterat skrivbord
 description: ''
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
@@ -14,36 +14,36 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 11/03/2020
 ms.locfileid: "48846198"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a>Stöd för Microsoft Managed Desktop
+# <a name="support-for-microsoft-managed-desktop"></a>Support för Microsoft Hanterat skrivbord
 
-Microsoft ger support för proaktiv och återaktivitet. Microsoft spårar incidenter på Microsoft Managed Desktop admin-portalen. De klassificeras enligt [definitioner av allvarlighets grad](../working-with-managed-desktop/admin-support.md#sev).
+Microsoft tillhandahåller proaktiv och reaktiv hantering av incidenter. Microsoft håller information om incidenter Microsoft Hanterat skrivbord administrationsportalen. De klassificeras enligt [allvarlighetsdefinitioner.](../working-with-managed-desktop/admin-support.md#sev)
 
-Kunder kan kontakta Microsoft Managed Station ära datorer för:
-- Informations förfrågningar på Microsofts hanterade klient organisation eller konfiguration
-- Ändra förfrågningar till konfigurationen av Microsoft Managed Station ära enheter
-- Rapportera en olycka eller ett avbrott
+Kunderna kan kontakta Microsoft Hanterat skrivbord åtgärder för:
+- Informationsförfrågningar om Microsoft Hanterat skrivbord klientorganisation eller konfiguration
+- Ändra förfrågningar om konfiguration av Microsoft Hanterat skrivbord enheter
+- Rapportera ett tillbud eller avbrott
 
-## <a name="whats-included"></a>Vad är inkluderat?
+## <a name="whats-included"></a>Vad ingår?
 
-Microsoft Managed Desktop support inkluderar:
+Microsoft Hanterat skrivbord support omfattar:
 
-- Ett team med tekniker avsedda för Microsoft hanterade Station ära enheter
-- Support alternativ för användare med Microsoft Managed Station ära enheter
-- Ger begränsad administrativ åtkomst till Microsoft Managed Desktop-enheter för ingenjörer som hanterar Microsoft Managed Station ära enheter 
+- Ett team med tekniker som är dedikerade Microsoft Hanterat skrivbord enheter
+- Supportalternativ för användare med Microsoft Hanterat skrivbord enheter
+- Beviljar begränsad administrativ åtkomst till Microsoft Hanterat skrivbord enheter för tekniker som hanterar Microsoft Hanterat skrivbord enheter 
 
 Produkter som stöds:
 
-- Windows 10 med Microsoft Defender för slut punkt
-- Dessa Microsoft 365-appar för företags program: Outlook, Word, PowerPoint, Excel, Skype för företag-klient, Microsoft Teams 
+- Windows 10 med Microsoft Defender för Slutpunkt
+- Följande Microsoft 365-appar för företag appar: Outlook, Word, PowerPoint, Excel, Skype för företag-klient, Microsoft Teams 
 - Microsoft Store för företag 
-- OneDrive för företag-klient 
+- OneDrive för företag klient 
 
 Supportinformation:
 
-- Nuvarande: USA, Kanada (exklusive Quebec), Storbritannien, Belgien, Luxemburg, Nederländerna, Australien och nya Zeeland (24x7x365) 
-- Engelska är det enda språk som stöds för samtal och chatt med kunder 
-- Vi samarbetar med, får inte ersätta, företagets helpdesk; Branschspecifika program (LOB), nätverks resurser etc. hanteras fortfarande av supportavdelningen 
-- Microsoft Managed Station ära enheter i test gruppen och enheter som inte ingår i Microsoft Managed Desktop är utanför räckvidden 
+- Aktuell: USA, Kanada (undantaget Quebec), Storbritannien, Belgien, Luxemburg, Nederländerna, Australien och Nya Zeeland (24x7x365) 
+- Engelska är det enda språket som stöds för telefoner och chattkonversationer med kunder 
+- Vi samarbetar med, inte ersätta, ditt företags support; verksamhetsbaserade appar, nätverksresurser osv. hanteras fortfarande av din support 
+- Microsoft Hanterat skrivbord enheter i gruppen "Test" och enheter som inte är Microsoft Hanterat skrivbord inte omfattas 
 
 
 ## <a name="related-topics"></a>Relaterade ämnen

@@ -1,5 +1,5 @@
 ---
-title: Isolering och åtkomst kontroll i Microsoft 365
+title: Isolerings- och åtkomstkontroll i Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,7 +15,7 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: 'Sammanfattning: en förklaring om isolering och åtkomst kontroll i de olika programmen i Microsoft 365.'
+description: 'Sammanfattning: En förklaring av avgränsning och åtkomstkontroll i de olika programmen i Microsoft 365.'
 ms.openlocfilehash: 53f60c09b94bdcc2515bcc5ff70dfbcd47f42bb4
 ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
@@ -23,80 +23,80 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 09/02/2020
 ms.locfileid: "47332334"
 ---
-# <a name="isolation-and-access-control-in-microsoft-365"></a>Isolering och åtkomst kontroll i Microsoft 365
+# <a name="isolation-and-access-control-in-microsoft-365"></a>Isolerings- och åtkomstkontroll i Microsoft 365
 
-Azure Active Directory (Azure AD) och Microsoft 365 använder en mycket komplicerad data modell som innehåller många olika tjänster, hundratals enheter, tusentals relationer och många tusen attribut. På en hög nivå, Azure AD och tjänste katalogerna är behållarna för klient organisationer och mottagare synkroniserade med tillståndbaserade replikeringspartners. Utöver katalog informationen som lagras i Azure AD har alla tjänste arbets belastningarna sin egen infrastruktur för katalog tjänster.
+Azure Active Directory (Azure AD) och Microsoft 365 använder en mycket komplex datamodell som innehåller tiotals tjänster, hundratals enheter, tusentals relationer och tusentals attribut. På en hög nivå är Azure AD och tjänstekatalogerna behållare för klientorganisationen och mottagare som hålls synkroniserade med hjälp av tillståndsbaserade replikeringsprotokoll. Utöver kataloginformationen i Azure AD har var och en av tjänstearbetsbelastningarna en egen infrastruktur för katalogtjänster.
  
-![Microsoft 365 klient organisations data](../media/office-365-isolation-tenant-data-sync.png)
+![Microsoft 365 datasynkronisering för klientorganisation](../media/office-365-isolation-tenant-data-sync.png)
 
-I den här modellen finns det ingen källa med katalog data. Särskilda system äger enskilda data, men inget enskilt system innehåller alla data. Microsoft 365 Services samarbetar med Azure AD i den här data modellen. Azure AD är "system för faktum" för delade data, som vanligt vis är små och statiska data som används av varje tjänst. Den federerade modellen som används i Microsoft 365 och Azure AD tillhandahåller den delade vyn av data.
+Det finns ingen enda katalogdatakälla i den här modellen. Vissa system har egna data, men inget enskilt system innehåller alla data. Microsoft 365 samarbetar med Azure AD i den här datamodellen. Azure AD är "informationssystemet" för delade data, som vanligtvis är små och statiska data som används av varje tjänst. Den externa modellen som används i Microsoft 365 och Azure AD ger den delade datavyn.
 
-Microsoft 365 använder både fysisk lagring och Azure Cloud Storage. Exchange Online (inklusive Exchange Online Protection) och Skype för företag använder sin egen lagring för kunddata. I SharePoint Online används både SQL Server Storage och Azure Storage, och därför behövs det ytterligare isolering av kunddata på lagrings nivån.
+Microsoft 365 använder både fysisk lagring och Azure-molnlagring. Exchange Online (inklusive Exchange Online Protection) och Skype för företag använder eget lagringsutrymme för kunddata. SharePoint Online använder både SQL Server och Azure Storage, vilket därmed behöver ytterligare avgränsning av kunddata på lagringsnivån.
 
 ## <a name="exchange-online"></a>Exchange Online
 
-I Exchange Online sparas kund data i post lådor. Post lådor finns i ESE-databaser (Extensible Storage Engine) som kallas post lådor. Detta inkluderar användar post lådor, länkade post lådor, delade post lådor och post lådor i offentliga mappar. Användar post lådor inkluderar sparat Skype för företag-innehåll, till exempel konversations historik.
+Exchange Online lagrar kunddata i postlådor. Postlådor finns i Extensible Storage Engine -databaser (ESE) som kallas postlådedatabaser. Det omfattar användarpostlådor, länkade postlådor, delade postlådor och postlådor för gemensamma mappar. Användarpostlådor innehåller sparat Skype för företag innehåll, till exempel konversationshistorik.
 
-Innehållet i användar post lådan inkluderar:
+Postlådeinnehållet omfattar:
 
-- E-postmeddelanden och bifogade filer
-- Kalender-och ledig/upptagen-information
+- E-postmeddelanden och e-postbilagor
+- Kalenderinformation och ledig/upptagen-information
 - Kontakter
 - Uppgifter
-- Kommentarer
+- Kommentar
 - Grupper
-- Data för härledning
+- Slutledningsdata
 
-Varje Mailbox-databas i Exchange Online innehåller post lådor från flera klient organisationer. En auktoriseringskod säkrar varje post låda, inklusive ett innehav. Som standard har bara den tilldelade användaren åtkomst till en post låda. Åtkomst kontrol listan (ACL) som skyddar en post låda innehåller en identitet som autentiserats av Azure AD på klient organisations nivå. Post lådorna för varje klient organisation begränsas till identiteter som autentiseras mot klient organisationens autentiseringsprovider, vilket endast inkluderar användare från denna klient organisation. Innehåll i klient organisationen A kan inte på något sätt erhållas av användare i klient organisationen B, såvida inte uttryckligen godkänd av klient organisationen A.
+Varje postlådedatabas i Exchange Online innehåller postlådor från flera klientorganisationar. En auktoriseringskod säkrar varje postlåda, inklusive inom ett innehavare. Som standard har endast den tilldelade användaren åtkomst till en postlåda. Åtkomstkontrollista (ACL) som skyddar en postlåda innehåller en identitet som autentiseras av Azure AD på innehavarnivå. Postlådorna för varje klientorganisation är begränsade till identiteter som autentiseras mot klientorganisationens autentiseringsleverantör, som endast omfattar användare från den klientorganisationen. Innehållet i klientorganisation A kan inte på något sätt erhållas av användare i klientorganisation B, såvida det inte uttryckligen godkänts av klientorganisation A.
 
 ## <a name="skype-for-business"></a>Skype för företag
 
 Skype för företag lagrar data på olika platser:
 
-- Användar-och konto information, som inkluderar anslutnings slut punkter, klient-ID, uppringnings inställningar, närvaro status, kontakt listor, etc., lagras i Skype för företag Active Directory-servrar och i olika Skype för företag-databas servrar. Kontakt listor lagras i användarens Exchange Online-postlåda om användaren är aktive rad för både produkter eller Skype för företag-servrar om användaren inte gör det. Servrar för Skype för företag-databaser är inte partitionerade per klient organisation, men flera organisationers isolerade data upprätthålls via en rollbaserad åtkomst kontroll (RBAC).
-- Mötes innehåll och uppladdade data lagras i DFS-resurser (Distributed File System). Det här innehållet kan även arkiveras i Exchange Online om det är aktiverat. DFS-resurserna är inte partitionerade per klient organisation. Innehållet skyddas med ACL: er och flera organisationer är tvingande via RBAC.
-- Samtals detalj poster, som är aktivitets historik, till exempel samtals historik, IM-session, program delning, snabb meddelande historik, etc., kan även lagras i Exchange Online, men de flesta samtals detalj posterna lagras tillfälligt på post (CDR)-servrar. Innehållet har inte partitionerats per klient organisation, men flera organisationer används via RBAC.
+- Användar- och kontoinformation, som omfattar anslutningsslutpunkter, klient-IDn, uppringningsplaner, inställningar för roaming, närvarotillstånd, kontaktlistor osv. lagras i Skype för företag Active Directory-servrar och i olika Skype för företag-databasservrar. Kontaktlistor lagras i användarens e Exchange Online postlåda om användaren är aktiverad för båda produkterna eller på Skype för företag-servrar om användaren inte är det. Skype för företag av databasservrar partitioneras inte per klientorganisation, men data i flera innehavare isoleras genom rollbaserad åtkomstkontroll (RBAC).
+- Mötesinnehåll och uppladdade data lagras i resurser för Distributed File System (SÅS). Det här innehållet kan också arkiveras i Exchange Online om det är aktiverat. PARTITION-delningarna partitioneras inte per klientorganisation. Innehållet skyddas med ACL och flera innehavare tillämpas via RBAC.
+- Samtalsdetaljposter, som är aktivitetshistoriken, till exempel samtalshistorik, snabbmeddelandesessioner, programdelning, snabbmeddelandehistorik osv., kan också lagras i Exchange Online, men de flesta samtalsposter lagras tillfälligt på samtalsdetaljposter (CDR-servrar). Innehållet partitioneras inte per innehavare, men flera innehavare tillämpas via RBAC.
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-SharePoint Online innehåller flera oberoende mekanismer som ger data isolering. Den lagrar objekt som en uppen uppkopplings kod i program databaser. När en användare till exempel laddar upp en fil till SharePoint Online assembleras den, översätts till program kod och lagras i flera tabeller i flera databaser.
+SharePoint Online har flera oberoende mekanismer som ger dataisolering. Det lagrar objekt som abstrakt kod i programdatabaser. När en användare till exempel laddar upp en fil till SharePoint Online delas filen upp automatiskt, översätts till programkod och lagras i flera tabeller över flera databaser.
 
-Om en användare kan få direkt åtkomst till lagrings utrymmet som innehåller data går det inte att tolka innehållet till en person eller något annat system än SharePoint Online. Dessa mekanismer inkluderar säkerhets åtkomst kontroll och egenskaper. Alla SharePoint online-resurser skyddas av auktoriseringsprincipen och RBAC-policy, inklusive inom ett innehav. Åtkomst kontrol listan (ACL) som säkrar en resurs innehåller en identitet som autentiseras på klient organisations nivå. SharePoint Online-data för en klient organisation är begränsade till identiteter som autentiseras av autentiseringsprovidern för innehavaren.
+Om en användare kan få direkt åtkomst till det lagringsutrymme som innehåller data kan innehållet inte tolkas av en person eller något annat system än SharePoint Online. Dessa mekanismer inkluderar säkerhetsåtkomstkontroll och egenskaper. Alla SharePoint Online-resurser skyddas med auktoriseringskoden och RBAC-principen, även under ett innehavare. Åtkomstkontrollista (ACL) som skyddar en resurs innehåller en identitet som autentiseras på innehavarnivå. SharePoint Onlinedata för en klient är begränsade till identiteter som autentiseras av klientorganisationens autentiseringsleverantör.
 
-Utöver ACL-listor är en egenskap för innehavaradministration som anger autentiseringsprovidern (som är den klient organisationens specifika Azure AD) skriven en gång och kan inte ändras när den väl har angetts. När klient organisations egenskapen för autentiseringsprovider har angetts för en klient organisation kan den inte ändras via API: er som exponeras för en klient organisation.
+Förutom ACL:er skrivs en egenskap på klientorganisationsnivå som anger autentiseringsleverantören (som är den klientspecifika Azure AD) en gång och kan inte ändras när den har angetts. När egenskapen för autentiseringsleverantörens klientorganisation har angetts för en klientorganisation kan den inte ändras med hjälp av API:er som exponeras för en klientorganisation.
 
-Ett unikt *SubscriptionId* används för varje klient organisation. Alla kund webbplatser ägs av en klient organisation och tilldelas ett *SubscriptionId* som är unikt för innehavaren. Egenskapen *SubscriptionId* på en webbplats är skriven en gång och är permanent. När en webbplats har tilldelats till en klient organisation kan den inte flyttas till en annan klient organisation. *SubscriptionId* är den som används för att skapa säkerhets omfattningen för autentiseringsprovidern och är knuten till innehavaren.
+Ett unikt *SubscriptionId* används för varje klientorganisation. Alla kundwebbplatser ägs av en klientorganisation och tilldelas *ett SubscriptionId* som är unikt för innehavaren. Egenskapen *SubscriptionId* på en webbplats skrivs en gång och är permanent. När en klientorganisation har tilldelats kan en webbplats inte flyttas till en annan klientorganisation. *SubscriptionId är* nyckeln som används för att skapa säkerhetsomfånget för autentiseringsleverantören och är knuten till klientorganisationen.
 
-SharePoint Online använder SQL Server och Azure Storage för lagring av innehåll. Partitionsnyckel för innehålls *arkivet är plats* för SQL. När du kör en SQL-fråga använder SharePoint Online ett under- *ID* som verifierats som en del av ett *SubscriptionId* -kontroll på klient nivå.
+SharePoint Online använder SQL Server och Azure Storage för lagring av innehållsmetadata. Partitionsnyckeln för innehållsarkivet är *SiteId* i SQL. När du kör en SQL fråga använder SharePoint Online ett *SiteId* som verifierats som en del av en *prenumerations-ID-kontroll på innehavarnivå.*
 
-I SharePoint Online lagras krypterade fil innehåll i Microsoft Azure-blobs. Varje SharePoint Online-servergrupp har sitt eget Microsoft Azure-konto och alla BLOB-objekt som sparas i Azure är krypterade individuellt med en nycklar som lagras i SQL-innehållet. Krypterings nycklar som skyddas i kod av auktoriseringsarkivet och inte exponeras direkt för slutanvändaren. SharePoint Online har övervakning i real tid för att upptäcka när en HTTP-begäran läser eller skriver data för fler än en innehavare. Identitets-ID: *till subscriptionId* spåras mot *SubscriptionId* för den resurs som används. Begäran om åtkomst till resurser för fler än en klient organisation får aldrig hända av slutanvändare. Tjänst förfrågningar i en miljö med flera innehavare är det enda undantaget. Till exempel hämtar Sök roboten innehålls ändringar för en hel databas samtidigt. Det innebär vanligt vis att få en fråga till fler än en klient organisations webbplatser i en enda tjänst förfrågan som görs av effektivitets skäl.
+SharePoint Online lagrar krypterat filinnehåll i Microsoft Azure blobbar. Varje SharePoint Online-servergrupp har ett eget Microsoft Azure-konto och alla blobbar som sparas i Azure krypteras individuellt med en nyckel som lagras i SQL-innehållslagringsbutiken. Krypteringsnyckeln som skyddas i koden av auktoriseringslagret och visas inte direkt för slutanvändaren. SharePoint Online har övervakning i realtid för att identifiera när en HTTP-begäran läser eller skriver data för mer än en klientorganisation. Prenumerationsidentitet *för begäran* spåras mot *prenumerations-ID för* den använda resursen. Förfrågningar om åtkomst till resurser i fler än en klientorganisation ska aldrig göras av slutanvändare. Tjänstförfrågningar i en miljö med flera klientorganisationen är det enda undantaget. Sök crawlern hämtar till exempel innehållsändringar för en hel databas på en gång. Det omfattar vanligtvis fråga webbplatser för fler än en klientorganisation i en enda tjänstbegäran, vilket görs av effektivitetsskäl.
 
 ## <a name="teams"></a>Teams
 
-Dina team data lagras på olika sätt beroende på innehålls typen. 
+Data Teams lagras på olika sätt beroende på innehållstyp. 
 
-Ta en titt på [översikten-sessionen i Microsoft Teams-arkitekturen](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) för att få en ingående diskussion.
+Ta en titt [på pausen av Ignite Microsoft Teams lite arkitektur](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) för en ingående diskussion.
 
-### <a name="core-teams-customer-data"></a>Grundläggande kund data för team
+### <a name="core-teams-customer-data"></a>Basdata Teams kunddata
 
-Om din klient organisation har etablerats i Australien, Kanada, Europeiska unionen, Frankrike, Tyskland, Indien, Japan, Sydafrika, Sydkorea, Schweiz (som innehåller Liechtenstein), Förenade Arabemiraten, Storbritannien eller Sverige, lagrar Microsoft endast följande kunddata på den platsen:
+Om klientorganisationen finns i Australien, Kanada, EUROPEISKA UNIONEN, Frankrike, Tyskland, Indien, Japan, Sydafrika, Sydkorea, Schweiz (som omfattar Liechtenstein), Förenade Arabemiraten, Storbritannien eller USA, lagrar Microsoft följande kunddata endast på den platsen:
 
-- Teams-och grupp-och kanal samtal, bilder, röst meddelanden och kontakter.
-- SharePoint Online-webbinnehåll och filer som lagras på webbplatsen.
-- Filer som laddats upp till OneDrive för arbete eller skola.
+- Teams chattar, team- och kanalkonversationer, bilder, röstmeddelanden och kontakter.
+- SharePoint Onlinewebbplatsinnehåll och filer som lagrats på webbplatsen.
+- Filer som laddats upp OneDrive för arbete eller skola.
 
-#### <a name="chat-channel-messages-team-structure"></a>Chatta, kanal meddelanden, team struktur
+#### <a name="chat-channel-messages-team-structure"></a>Chatt, kanalmeddelanden, teamstruktur
 
-Alla team i Teams hanteras av en Microsoft 365-grupp och dess SharePoint-webbplats och Exchange-postlåda. Privata chattar (inklusive gruppchattar), meddelanden som skickas som en del av en konversation i en kanal och strukturen på team och kanaler lagras i en chatt-tjänst som körs i Azure. Data lagras också i en dold mapp i användarens och gruppens post lådor för att aktivera informations skydds funktioner.
+Alla team i Teams backas upp av en Microsoft 365 grupp och dess SharePoint webbplats och Exchange postlåda. Privata chattar (inklusive gruppchattar), meddelanden som skickas som en del av en konversation i en kanal och strukturen för team och kanaler lagras i en chatttjänst som körs i Azure. Data lagras också i en dold mapp i postlådorna för användare och grupper för att aktivera informationsskyddsfunktioner.
 
-#### <a name="voicemail-and-contacts"></a>Röst brev låda och kontakter
+#### <a name="voicemail-and-contacts"></a>Röstbrevlåda och kontakter
 
-Röst meddelanden lagras i Exchange. Kontakter lagras i Exchange-baserad moln data lagring. Exchange och det Exchange-baserade moln arkivet tillhandahåller redan data de i alla geos i hela världen. För alla team sparas röst brev låda och kontakter i land för Australien, Kanada, Frankrike, Tyskland, Indien, Japan, Förenade Arabemiraten, Storbritannien, Sydafrika, Sydkorea, Schweiz (inklusive Liechtenstein) och USA. För alla andra länder lagras filer på platsen för USA, Europa och Asien, baserat på klient tillhörighet.
+Röstmeddelanden lagras i Exchange. Kontakter lagras i Exchange molnbaserad datalagring. Exchange och Exchange-baserade molnlagringscentret tillhandahåller redan data som lagras i vart och ett av de globala datacenter geosna. För alla team lagras röstmeddelanden och kontakter i landet för Australien, Kanada, Frankrike, Tyskland, Indien, Japan, Förenade Arabemiraten, Storbritannien, Sydafrika, Sydkorea, Schweiz (som inkluderar Liechtenstein) och USA. För alla andra länder lagras filer i USA, Europa eller en Asia-Pacific baserat på tillhörighet till en klientorganisation.
 
 #### <a name="images-and-media"></a>Bilder och media
 
-Media som används i chatt (med undantag för GIPHY GIF-filer som inte lagras men som är en referens länk till den ursprungliga GIPHY-tjänst-URL: en, GIPHY är inte Microsoft-tjänst) lagras i en Azure-baserad medie tjänst som distribueras till samma platser som chatt tjänsten.
+Media som används i chattar (utom GIPHY GIF-filer som inte lagras men är en referenslänk till den ursprungliga GIPHY-tjänst-URL:en, Giphy är en icke-Microsoft-tjänst) lagras i en Azure-baserad medietjänst som är distribuerad till samma platser som chatttjänsten.
 
-#### <a name="files"></a>Hjälpfiler
+#### <a name="files"></a>Filer
 
-Filer (inklusive OneNote och wiki) som någon delar av en kanal lagras på teamets SharePoint-webbplats. Filer som delas i en privat chatt eller en chatt under ett möte eller ett samtal laddas upp och lagras i OneDrive för arbets-eller skol kontot för den användare som delar filen. Exchange, SharePoint och OneDrive tillhandahåller redan data de i alla världen geos. För befintliga kunder är alla filer, OneNote-anteckningsböcker, teams-wiki-innehåll och post lådor som är en del av Teams erfarenheten lagrat på den plats som är baserad på klient tillhörigheten. Filer lagras i land för Australien, Kanada, Frankrike, Tyskland, Indien, Japan, Förenade Arabemiraten, Storbritannien, Sydafrika, Sydkorea och Schweiz (som innehåller Liechtenstein). För alla andra länder lagras filer på Stilla havet för USA, Europa och Asien baserat på klient tillhörighet.
+Filer (inklusive OneNote och Wiki) som någon delar i en kanal lagras på teamets SharePoint webbplats. Filer som delas i en privat chatt eller en chatt under ett möte eller samtal laddas upp och lagras i OneDrive för arbets- eller skolkontot för den användare som delar filen. Exchange, SharePoint och OneDrive tillhandahåller redan data som lagras i varje globalt datacenter geos. Så för befintliga kunder är alla filer, OneNote-anteckningsböcker, Teams wiki-innehåll och postlådor som ingår i Teams-upplevelsen redan lagrade på platsen baserat på tillhörighet till en klientorganisation. Filer lagras i landet för Australien, Kanada, Frankrike, Tyskland, Indien, Japan, Förenade Arabemiraten, Storbritannien, Sydafrika, Sydkorea och Schweiz (som inkluderar Liechtenstein). För alla andra länder lagras filer i USA, Europa eller Asien, baserat på tillhörighet till en klientorganisation.

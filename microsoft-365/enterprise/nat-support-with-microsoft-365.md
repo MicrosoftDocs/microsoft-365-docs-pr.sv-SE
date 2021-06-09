@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
-description: I den här artikeln finns information om hur man uppskattar antalet klienter som du kan använda per IP-adress i din organisation via NAT.
+description: I den här artikeln finns information om hur du kan ange ungefärligt antal klienter som du kan använda per IP-adress i organisationen med NAT.
 ms.openlocfilehash: f48874853c3acb80927933761862b14379b6d4bd
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -28,58 +28,58 @@ ms.locfileid: "46694314"
 ---
 # <a name="nat-support-with-office-365"></a>Stöd för NAT med Office 365
 
-*Den här artikeln gäller både Microsoft 365 Enterprise och Office 365 Enterprise.*
+*Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Tidigare föreslog vägledning att det högsta antalet Exchange-klienter du bör använda per IP-adress för att ansluta till Office 365 skulle ha 2 000-klienter per nätverks port.
+Tidigare rekommenderades att det maximala antalet Exchange-klienter per IP-adress vid anslutning till Office 365 var cirka 2 000 klienter per nätverksport.
   
 ## <a name="why-use-nat"></a>Varför ska jag använda NAT?
 
-Genom att använda NAT kan tusentals personer i ett företags nätverk "dela" några få offentligt routade IP-adresser.
+Med hjälp av NAT kan tusentals personer i ett företagsnätverk "dela" några få offentligt dirigerbara IP-adresser.
   
-I de flesta företags nätverk används privata IP-adressutrymmet (RFC1918). Det privata adress utrymmet tilldelas av Internet Assigned Numbers Authority (IANA) och är endast avsett för nätverk som inte dirigerar direkt till och från det globala Internet.
+De flesta företagsnätverk använder privata IP-adressutrymmen (RFC1918). Det privata adressutrymmet tilldelas av IANA (Internet Assigned Numbers Authority) och det är endast avsett för nätverk som inte dirigeras direkt till och från det globala Internet.
   
-För att ge Internet åtkomst till enheter i ett privat IP-adressutrymme använder organisationer Gateway-teknologin, till exempel brand väggar och proxyservrar som tillhandahåller NAT-eller port Address Translation-tjänster (PAT). Dessa gateways gör att trafik från interna enheter till Internet (inklusive Office 365) kommer från en eller flera offentligt routade IP-adresser. Varje utgående anslutning från en intern enhet översätts till en annan TCP-port på den offentliga IP-adressen. 
+Organisationer tillhandahåller åtkomst för enheter i ett privat IP-adressutrymme med hjälp av gatewaytekniker som brandväggar och proxyenheter som tillhandahåller NAT- (Network Address Translation) eller PAT-tjänster (Port Address Translation). Dessa gateways gör att trafik från interna enheter till Internet (inklusive Office 365) ser ut att komma från en eller flera offentligt dirigerbara IP-adresser. Varje utgående anslutning från en intern enhet omvandlas till en annan TCP-port på den offentliga IP-adressen. 
   
-## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Varför måste du ha så många anslutningar att de är öppna för Office 365 samtidigt?
+## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Varför måste så många anslutningar vara öppna för Office 365 samtidigt?
 
-Outlook kan öppna åtta eller fler anslutningar (när det finns tillägg, delade kalendrar, post lådor och andra funktioner). Eftersom det finns högst 64 000 portar tillgängliga på en Windows-baserad NAT-enhet kan det högsta antalet 8 000-användare bakom en IP-adress innan portarna uttömts. Observera att om kunder använder datorer som inte är Windows OS-baserade kan de totala tillgängliga portarna vara beroende av vilken NAT-enhet eller program vara som används. I det här scenariot kan det högsta antalet portar vara mindre än 64 000. Tillgängligheten för portar påverkas också av andra faktorer som Windows begränsar 4 000-portar för eget bruk, vilket minskar det totala antalet tillgängliga portar för 60 000. Det kan finnas andra program, till exempel Internet Explorer, som kan ansluta samtidigt och kräva ytterligare portar.
+Outlook kan öppna åtta eller fler anslutningar (i situationer där det finns tillägg, delade kalendrar, postlådor osv.). Eftersom det finns maximalt 64 000 portar tillgängliga på en Windows-baserad NAT-enhet kan det finnas högst 8 000 användare bakom en IP-adress innan portarna tar slut. Observera att om kunder använder icke-Windows os-baserade enheter för NAT är det totala antalet tillgängliga portar beroende av vilken NAT-enhet eller -programvara som används. I det här scenariot kan det maximala antalet portar vara mindre än 64 000. Portars tillgänglighet påverkas också av andra faktorer, till exempel Windows som begränsar 4 000 portar för eget bruk, vilket minskar det totala antalet tillgängliga portar till 60 000. Det kan finnas andra program, till exempel Internet Explorer, som kan ansluta samtidigt och kräva ytterligare portar.
   
-## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Beräkna högsta enheter som stöds bakom en enda offentlig IP-adress med Office 365
+## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Beräkna det maximala antalet enheter som stöds bakom en offentlig IP-adress med Office 365
 
-För att fastställa det högsta antalet enheter bakom en enda offentlig IP-adress bör du övervaka nätverks trafik för att fastställa högsta port förbrukning per klient. Dessutom bör en topp faktor användas för port användning (minst 4). 
+Om du vill beräkna det maximala antalet enheter som kan finnas bakom en offentlig IP-adress bör du övervaka nätverkstrafiken och fastställa den högsta portanvändningen per klient. En högtrafikfaktor bör även användas för portanvändningen (lägst 4). 
   
  **Använd följande formel för att beräkna antalet enheter som stöds per IP-adress:**
   
-Högsta enheter som stöds bakom en enda offentlig IP-adress = (64 000-begränsade portar)/(högsta port förbrukning + högsta faktor)
+Det högsta antalet enheter bakom en offentlig IP-adress = (64 000 - begränsade portar)/(Högsta portanvändning + högtrafikfaktor)
   
- **Om till exempel följande var sant:**
+ **Om följande till exempel är sant:**
   
-- **Begränsade portar:** 4 000 för operativ systemet
+- **Begränsade portar:** 4 000 för operativsystemet
 
-- **Högsta port förbrukning:** 6 per enhet
+- **Högsta portanvändning:** 6 per enhet
 
-- **Högsta faktor:** 4
+- **Toppfaktor:** 4
 
-Sedan kan de högsta enheter som stöds bakom en enda offentlig IP-adress = (64 000-4000)/(6 + 4) = 6 000
+Det maximala antalet enheter som stöds bakom en offentlig IP-adress är då = (64 000 - 4 000)/(6 + 4) = 6 000
   
-Med utgivningen av Office 365-värd paketet, som ingår i uppdateringarna från september 2011 för Microsoft Office Outlook 2007 eller november 2011 för Microsoft Outlook 2010 eller senare uppdatering, kan antalet anslutningar från Outlook (både Office Outlook 2007 med Service Pack 2 och Outlook 2010) till Exchange vara så lite som 2. Du måste vara en faktor i de olika operativ systemen, användar funktioner och så vidare för att fastställa det lägsta och högsta antal portar som nätverket kräver vid hög belastning.
+I och med lanseringen av Office 365-värdpaketet, som ingår i uppdateringarna från september 2011 för Microsoft Office Outlook 2007 eller november 2011 för Microsoft Outlook 2010, eller en senare uppdatering, kan antalet anslutningar från Outlook (både Office Outlook 2007 med Service Pack 2 och Outlook 2010) till Exchange vara så få som 2. Du måste faktor för olika operativsystem, användarbeteenden och så vidare för att fastställa det lägsta och högsta antalet portar som ditt nätverk kräver högst.
   
-Om du vill ha stöd för fler enheter bakom en enda offentlig IP-adress följer du stegen som beskrivs för att utvärdera det maximala antalet enheter som stöds:
+Om du vill stödja fler enheter bakom en offentlig IP-adress följer du stegen som beskrivs för att bedöma det maximala antal enheter som stöds:
   
-Övervaka nätverks trafik för att fastställa högsta port förbrukning per klient. Du bör samla in dessa data:
+Övervaka nätverkstrafiken och fastställ den högsta portanvändningen per klient. Samla in dessa data:
   
 - Från flera platser
     
 - Från flera enheter
     
-- Flera gånger
+- Vid flera tidpunkter
     
-Använd den föregående formeln för att beräkna maximalt antal användare per IP-adress som kan användas i miljön.
+Använd formeln ovan för att beräkna det maximala antalet användare per IP-adress som stöds i miljön.
   
-Det finns olika metoder för att distribuera klient belastning mellan ytterligare offentliga IP-adresser. Vilka strategier som är tillgängliga beror på funktionerna i Corporate Gateway-lösningen. Den enklaste lösningen är att segmentera ditt användar adress utrymme och statiskt "tilldela" ett antal IP-adresser till varje gateway. Ett annat alternativ till att många gateway-enheter kan använda en adresspool för IP-adresser. Fördelen med adresspoolen är att det är mycket mer dynamiskt och mindre troligt att det krävs justering när användar basen växer.
+Det finns olika metoder för att distribuera klientbelastningen på ytterligare offentliga IP-adresser. Vilka strategier som är tillgängliga beror på funktionerna i företagets gatewaylösning. Den enklaste lösningen är att segmentera användaradressutrymmet och statiskt "tilldela" varje gateway ett antal IP-adresser. Ett annat alternativ som många gatewayenheter erbjuder är möjligheten att använda en IP-adresspool. Fördelen med adresspoolen är att den är mycket mer dynamisk och med mindre sannolikhet kommer det att krävas justeringar när användarbasen växer.
   
 ## <a name="see-also"></a>Se även
 
-[Hantera slut punkter för Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
+[Hantera Office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Vanliga frågor om Office 365-slut punkter](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Office 365-slutpunkter – vanliga frågor och svar](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

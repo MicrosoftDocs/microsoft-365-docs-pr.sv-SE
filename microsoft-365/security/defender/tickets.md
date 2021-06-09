@@ -1,6 +1,6 @@
 ---
-title: Integrera ServiceNow-biljetter i Säkerhetscenter och efterlevnadscenter för Microsoft 365
-description: Lär dig hur du skapar och spårar biljetter i ServiceNow från Säkerhets- och efterlevnadscenter för Microsoft 365.
+title: Integrate ServiceNow-biljetter till Microsoft 365 säkerhetscenter och efterlevnadscenter
+description: Lär dig hur du skapar och spårar biljetter i ServiceNow Microsoft 365 säkerhets- och efterlevnadscenter.
 keywords: security, Microsoft 365, M365, compliance, compliance center, security center, ServiceNow, tickets, tasks, SNOW, connection
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51569877"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrera ServiceNow-biljetter i Säkerhetscenter och efterlevnadscenter för Microsoft 365
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrate ServiceNow-biljetter till Microsoft 365 säkerhetscenter och efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

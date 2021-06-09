@@ -1,5 +1,5 @@
 ---
-title: Alternativ för att komma åt e-post från din mobila enhet
+title: Alternativ för att komma åt e-post från en mobil enhet
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -24,22 +24,22 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49760072"
 ---
-# <a name="options-for-accessing-email-from-your-mobile-device"></a>Alternativ för att komma åt e-post från din mobila enhet
+# <a name="options-for-accessing-email-from-your-mobile-device"></a>Alternativ för att komma åt e-post från en mobil enhet
 
-Organisationen konfigurerar inställningar som styr vilka mobila appar du kan använda för att komma åt ditt arbets konto för e-post, kalender och kontakter.
+Din organisation konfigurerar inställningar som styr vilka mobilappar du kan använda för att komma åt ditt arbetskonto för e-post, kalender och kontakter.
 
-Outlook för Android-och Outlook för iOS-mobilappar är avsedda för ditt arbets-eller skol konto. Dessa appar tillhandahåller funktioner som [Prioriterad inkorg](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978), som har viktiga e-postmeddelanden fram-och Center-och [schemaläggnings assistenten](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470), som hjälper dig att hitta Mötes tider som fungerar tillsammans med kollegor och bara hittar tillgängliga konferens rum.
+Mobilapparna Outlook Android och Outlook för iOS-mobilappar är utformade för din arbets- eller skol-e-post. De här programmen [](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)har funktioner som Prioriterad inkorg, som håller viktiga e-postmeddelanden främst och centrerade, [och schemaläggningsassistenten](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470)som hjälper dig att hitta mötestider som fungerar med kollegor och bara hittar tillgängliga konferensrum.
   
-## <a name="end-user-experience"></a>Slut användar upplevelse
+## <a name="end-user-experience"></a>Slutanvändarupplevelse
 
-### <a name="outlook-only"></a>Endast Outlook
+### <a name="outlook-only"></a>Outlook Endast
 
-Din organisation kräver att du använder Outlook för Android eller Outlook för iOS-mobilappar för att få åtkomst till företagets e-post, kalender och kontakter. Dina data kommer att synkroniseras när du laddar ned och installerar Outlook för Android eller Outlook för iOS.
+Din organisation kräver att du använder appen Outlook för Android eller Outlook för iOS-mobilappar för att få åtkomst till företagets e-post, kalender och kontakter. Dina data börjar synkroniseras när du laddar ned och installerar Outlook för Android eller Outlook för iOS.
 
-![Exempel på e-post för att synkronisera e-post med Outlook](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
+![Exempel på e-post för att Outlook för att synkronisera e-post](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
 
-Kolla [in optimera Outlook Mobile-appen för din iOS-eller Android-telefon](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) för fler Outlook-funktioner. Och gå till [Hjälp Center för Outlook för iOS och Android](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) om du stöter på problem.
+Mer information [om Outlook iOS- och Android-telefoner](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) finns i Optimera Outlook mobilappen för din iOS- Outlook Android-telefon. Gå sedan till [Outlook för iOS och Hjälpcenter](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) för Android om du får problem.
 
-### <a name="any-email-app"></a>Alla e-postappar
+### <a name="any-email-app"></a>Valfri e-postapp
 
-Din organisation rekommenderar att du använder Outlook för Android-eller iOS-mobilappen för att komma åt ditt arbets-eller skol konto för e-post, kalender och kontakter. Om du inte vidtar någon åtgärd inom några timmar kommer din e-post automatiskt att börja synkronisera. Om du väljer att använda Outlook för Android-eller iOS-mobilappen synkroniseras dina data bara med Outlook för Android eller Outlook för iOS-mobilapp. Om du väljer att fortsätta använda programmet från tredje part kommer dina data att synkroniseras direkt.
+Din organisation rekommenderar att du använder mobilappen Outlook Android eller iOS för att komma åt ditt arbets- eller skolkonto för e-post, kalender och kontakter. Om du inte har vidta någon åtgärd inom de närmaste timmarna börjar din e-post automatiskt synkroniseras. Om du väljer att använda mobilappen Outlook för Android eller iOS synkroniseras dina data bara med mobilappen Outlook för Android eller Outlook för iOS. Om du väljer att fortsätta använda programmet från tredje part synkroniseras dina data direkt.

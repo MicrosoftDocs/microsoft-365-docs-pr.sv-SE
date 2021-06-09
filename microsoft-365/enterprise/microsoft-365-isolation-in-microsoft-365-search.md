@@ -1,5 +1,5 @@
 ---
-title: Klient isolering i Microsoft 365 search
+title: Innehavarisolering i Microsoft 365 sökning
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: I den här artikeln finns en förklaring av hur klient isolering fungerar för separata innehavaradministration i Microsoft 365 search.
+description: Den här artikeln innehåller en förklaring av hur innehavarisolering fungerar för att separera data i Microsoft 365 Sökning.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 3416afdeceaa7000b516ec89b4a2a1e59d8708d0
 ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
@@ -23,42 +23,42 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 09/02/2020
 ms.locfileid: "47332406"
 ---
-# <a name="tenant-isolation-in-microsoft-365-search"></a>Klient isolering i Microsoft 365 search
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Innehavarisolering i Microsoft 365 sökning
 
-I SharePoint Online search används en modell för företags skiljare som balanserar effektiviteten hos delade data strukturer med skydd mot uppgifter som läcker mellan klient organisationer. Med den här modellen kan vi förhindra Sök funktionerna från:
+SharePoint Onlinesökning använder en modell för klientindelning som balanserar effektiviteten i delade datastrukturer med skydd mot information som läcker mellan klientorganisationen. Med den här modellen hindrar vi sökfunktionerna från att:
 
-- Returnera frågeresultat som innehåller dokument från andra klient organisationer
-- Visar tillräckligt med information i frågeresultatet att en kunnig användare kan härleda information om andra klient organisationer
-- Visar schema eller inställningar från en annan klient organisation
-- Mixa analys bearbetnings information mellan innehavare eller lagra resultat i fel klient organisation
-- Använda ord listor från en annan klient organisation
+- Returnera frågeresultat som innehåller dokument från andra klientorganisationen
+- Genom att lägga till tillräcklig information i frågeresultat som en erfaren användare kan utge information om andra klientorganisationar
+- Visar schema eller inställningar från en annan klientorganisation
+- Blanda analysbearbetningsinformation mellan klientorganisationen eller lagra resultat i fel klientorganisation
+- Använda ordlisteposter från en annan klientorganisation
 
-För varje typ av klient organisations data använder vi en eller flera skydds nivåer i koden för att förhindra oavsiktlig läckage av information. Den viktigaste informationen har de flesta skydds nivåerna för att se till att ett enskilt fel inte leder till att det finns ett faktiskt eller uppskattat informations läckage.
+För varje typ av klientorganisationsdata använder vi ett eller flera lager av skydd i koden för att förhindra att information oavsiktligt läcker ut. De mest kritiska data har de flesta lager av skydd för att säkerställa att en enskild defekt inte leder till det faktiska eller uppfattas informationsläckor.
 
-## <a name="tenant-separation-for-the-search-index"></a>Innehavarens separation för Sök indexet
+## <a name="tenant-separation-for-the-search-index"></a>Klientorganisationsavskiljning för sökindexet
 
-Sök indexet lagras på hård disken i de servrar där index komponenterna finns och klient organisationerna delar indexfiler. En klient organisations indexerade dokument visas bara för frågor för den innehavaren. Tre oberoende mekanismer förhindrar att information läcker:
+Sökindexet lagras på disken i servrarna som är värd för indexkomponenterna och klientorganisationen delar indexfilerna. En klientorganisations indexerade dokument visas endast för frågor för den klientorganisationen. Tre oberoende mekanismer förhindrar det informationsläckor:
 
-- Filter för klient organisations-ID
-- Villkor för klient organisations-ID
+- Filtrering av klientorganisations-ID
+- Termprefix för klientorganisations-ID
 - ACL-kontroller
 
-Alla tre mekanismerna skulle inte fungera för sökning för att returnera dokument till fel klient organisation.
+Alla tre mekanismerna måste misslyckas för att Sökningen ska returnera dokument till fel klientorganisation.
 
-## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>Villkor för klient organisations-ID och term för klient-ID
+## <a name="tenant-id-filtering-and-tenant-id-term-prefixing"></a>Filtrering av klientorganisations-ID och termprefix för klientorganisations-ID
 
-Sökprefix varje term som är indexerad i full text index med klient-ID. När termen "*foo*" indexeras för en innehavare med ID "*123*", är posten i full text indexet "*123foo".*
+Sökprefix för varje term som indexeras i fulltextindexet med klientorganisations-ID: t. Om termen "*foo*" till exempel indexeras för en klientorganisation med ID:t "*123*" är posten i fulltextindex "*123foo.*"
 
-Alla frågor konverteras till att omfatta klient-ID med en process som heter klient-ID-filtrering. Frågan "*foo*" konverteras till exempel till "<*GUID*>. *foo* OCH *tenantID*: <*GUID*> ", där <*GUID*> representerar klient organisationens utförande av frågan. Den här frågans konvertering sker inom respektive indexattribut och varken frågor eller innehålls bearbetning kan påverka den. Eftersom klient-ID läggs till i alla frågor kan inte frekvensen i andra klient organisationer uppskjutas genom att du har en lämplig matchnings rangordning i en klient organisation.
+Alla frågor konverteras till att inkludera klientorganisations-ID genom att använda en process som kallas filtrering av klientorganisations-ID. Frågan " foo "*konverteras* till exempel till "<*guid*>. *foo* AND *tenantID*:<*guid*>", där <*guid*> representerar den klientorganisation som utför frågan. Den här frågekonverteringen sker inom varje indexnod och varken frågan eller innehållsbearbetningen kan påverka den. Eftersom klientorganisations-ID läggs till i varje fråga kan frekvensen för en term i andra klientorganisationen inte härledas genom att titta på bästa rangordning i en klientorganisation.
 
-Villkor för innehavaradministration endast i full text indexet. Fältade sökningar, till exempel "*title: foo*", går till ett syntetiskt Sök-index där villkoren inte är fasta efter klient-ID. I stället används fält namnet som prefix. Frågan "*title: foo*" konverteras till exempel till "*fält. title: foo och Fields. tenantID*: <*GUID*>." Eftersom frekvensen för en term inte påverkar rangordningen för träffar i det syntetiska Sök indexet behöver du inte använda funktionen för att skilja på innehavare. För en fälts ökning som "*title: foo*", beror på klientens innehålls skillnad av FRÅGANS ID-filtrering.
+Termprefix för klientorganisations-ID förekommer endast i hela textindexet. Infältade sökningar, till exempel "*titel:foo*", går till ett sökindex för klientorganisation där termer inte föregås av klientorganisations-ID. I stället föregås de infältade sökningarna av fältnamnet. Frågan "*title:foo*" konverteras till exempel till "*fields.title:foo AND fields.tenantID*:<*guid*>". Eftersom frekvensen för en term inte påverkar rangordningen av träffar i det funktionella sökindexet, behöver du inte separera klientorganisationen genom att använda prefix. För en fältad sökning som "*titel:foo*"beror en innehållsavskiljning på klientorganisations-ID:ns filtrering genom frågekonvertering.
 
-## <a name="document-access-control-list-checks"></a>Kontroller av dokument åtkomst kontroll listor
+## <a name="document-access-control-list-checks"></a>Kontrolllistor för dokumentåtkomst
 
-Sök kontrollerar åtkomsten till dokument via ACL-listor som sparas i Sök indexet. Varje objekt indexeras med en uppsättning villkor i ett speciellt ACL-fält. Fältet ACL innehåller en term per grupp eller användare som kan visa dokumentet. Alla frågor utökas med en lista över tilläggs villkor för åtkomst kontroll (ACE), en för varje grupp som den autentiserade användaren tillhör.
+Sökningen styr åtkomsten till dokument via åtkomstkontrollistor som sparas i sökindexet. Varje objekt indexeras med en uppsättning termer i ett särskilt ACL-fält. ACL-fältet innehåller en term per grupp eller användare som kan visa dokumentet. Varje fråga utökas med en lista över termer för åtkomstkontroll (ACE), en för varje grupp som den autentiserade användaren tillhör.
 
-En fråga som "<*guid*>. *Foo och tenantID*: <*GUID*> "blir:" <*GUID*>. *Foo och tenantID*: <*GUID* >  *och* (*docACL:* < *ace1* >  *eller docACL*: <*ace2* >  *eller docACL*: <*ace3* >  *...*) "
+Till exempel en fråga som "<*guid*>. *foo AND tenantID*:<*guid*>" blir: "<*guid*>. *foo AND tenantID*:<*guid* >  *AND* (*docACL:* < *ace1* >  *OR docACL*:<*ace2* >  *OR docACL*:<*ace3* >  *...*)"
 
-Eftersom användar-och grupp-ID: n är unika är detta en extra säkerhets nivå mellan innehavare för dokument som bara är synliga för vissa användare. Samma sak gäller för de särskilda "alla utom externa användare" som ger till gång till vanliga användare i klient organisationen. Men eftersom åtkomst till "alla" är samma för alla klient organisationer, beror det på klientens separation för de offentliga dokumenten. Neka åtkomst till ess stöds också. Frågan utökas till en sats som tar bort ett dokument från resultatet när det finns en träff med en nekande ACE.
+Eftersom identifierare för användare och grupper är unika, ger detta en extra säkerhetsnivå mellan klientorganisationen för dokument som bara är synliga för vissa användare. Samma sak gäller för det särskilda ACE-kortet "Alla utom externa användare" som ger åtkomst till vanliga användare i klientorganisationen. Men eftersom klientorganisationsavskiljning för "Alla" är samma för alla innehavare beror avgränsningen av klientorganisation för offentliga dokument på filtrering av klientorganisations-ID. Deny ACEs stöds också. Vid utrop av fråga läggs en sats till som tar bort ett dokument från resultatet när det finns en matchning med ett nekat ACE.
 
-I Exchange Online search partitioneras indexet på post lådans ID för enskilda användares post lådor i stället för klient organisations-ID: t som i SharePoint Online. Partitionerings funktionen är samma som SharePoint Online, men ingen ACL-filtrering.
+I Exchange Online är indexet partitionerat för postlåde-ID för enskilda användares postlådor i stället för klientorganisations-ID (prenumerations-ID) som i SharePoint Online. Partitioneringsmekanismen är densamma som för SharePoint Online, men det finns ingen ACL-filtrering.
