@@ -48,7 +48,7 @@
           href: admin-overview/learn-about-office-365-germany.md
         - name: Åtkomst till lokala användare och resurser
           items:
-            - name: "Synkronisera domänanvändare med Microsoft\_365"
+            - name: Synkronisera domänanvändare med Microsoft 365
               href: ../business/manage-domain-users.md
             - name: Aktivera domänanslutna Windows 10-enheter för hantering
               href: ../business/manage-windows-devices.md
@@ -326,7 +326,7 @@
             - name: Konfigurera funktioner för efterlevnad
               href: ../business/set-up-compliance.md
         - name: Säkerhetspoäng
-          href: 'https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score'
+          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: En guide till GDPR-efterlevnad
           href: security-and-compliance/gdpr-compliance.md
     - name: Hantera enheter och programdata
@@ -348,7 +348,7 @@
               href: ../business/map-protection-features-to-intune-settings.md
             - name: Statusvärden för enheter
               href: ../business/device-states.md
-            - name: "Programskyddsinställningar för Windows\_10-enheter"
+            - name: Programskyddsinställningar för Windows 10-enheter
               href: ../business/protection-settings-for-windows-10-devices.md
             - name: Inställningar för appskydd för Android och iOS
               href: ../business/app-protection-settings-for-android-and-ios.md

@@ -17,61 +17,61 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47be07759a72a080a3687ed3bb50cef9d0a959b7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 55c001781ff016d7a23dc5db286d454b39fac5de
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904052"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841060"
 ---
-# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a><span data-ttu-id="945ce-104">Undersöka anslutningshändelser som inträffar bakom vidarebefordrade proxy</span><span class="sxs-lookup"><span data-stu-id="945ce-104">Investigate connection events that occur behind forward proxies</span></span>
+# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a><span data-ttu-id="dfa62-104">Undersöka anslutningshändelser som inträffar bakom vidarebefordrade proxy</span><span class="sxs-lookup"><span data-stu-id="dfa62-104">Investigate connection events that occur behind forward proxies</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="945ce-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="945ce-105">**Applies to:**</span></span>
-- [<span data-ttu-id="945ce-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="945ce-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="945ce-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="945ce-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="dfa62-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="dfa62-105">**Applies to:**</span></span>
+- [<span data-ttu-id="dfa62-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="dfa62-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="dfa62-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="dfa62-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="945ce-108">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="945ce-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="945ce-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="945ce-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+> <span data-ttu-id="dfa62-108">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="dfa62-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="dfa62-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="dfa62-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
-<span data-ttu-id="945ce-110">Defender för Endpoint har stöd för övervakning av nätverksanslutningen från olika nivåer av nätverksstacken.</span><span class="sxs-lookup"><span data-stu-id="945ce-110">Defender for Endpoint supports network connection monitoring from different levels of the network stack.</span></span> <span data-ttu-id="945ce-111">Ett svårt fall är när nätverket använder en framåtproxy som en gateway till Internet.</span><span class="sxs-lookup"><span data-stu-id="945ce-111">A challenging case is when the network uses a forward proxy as a gateway to the Internet.</span></span>
+<span data-ttu-id="dfa62-110">Defender för Endpoint har stöd för övervakning av nätverksanslutningen från olika nivåer av nätverksstacken.</span><span class="sxs-lookup"><span data-stu-id="dfa62-110">Defender for Endpoint supports network connection monitoring from different levels of the network stack.</span></span> <span data-ttu-id="dfa62-111">Ett svårt fall är när nätverket använder en framåtproxy som en gateway till Internet.</span><span class="sxs-lookup"><span data-stu-id="dfa62-111">A challenging case is when the network uses a forward proxy as a gateway to the Internet.</span></span>
 
-<span data-ttu-id="945ce-112">Proxyn fungerar som om den var målslutpunkten.</span><span class="sxs-lookup"><span data-stu-id="945ce-112">The proxy acts as if it was the target endpoint.</span></span>  <span data-ttu-id="945ce-113">I sådana fall granskar enkla nätverksanslutningsskärmar anslutningarna med proxyn, vilket är korrekt men har ett lägre undersökningsvärde.</span><span class="sxs-lookup"><span data-stu-id="945ce-113">In these cases, simple network connection monitors will audit the connections with the proxy which is correct but has lower investigation value.</span></span> 
+<span data-ttu-id="dfa62-112">Proxyn fungerar som om den var målslutpunkten.</span><span class="sxs-lookup"><span data-stu-id="dfa62-112">The proxy acts as if it was the target endpoint.</span></span>  <span data-ttu-id="dfa62-113">I sådana fall granskar enkla nätverksanslutningsskärmar anslutningarna med proxyn, vilket är korrekt men har ett lägre undersökningsvärde.</span><span class="sxs-lookup"><span data-stu-id="dfa62-113">In these cases, simple network connection monitors will audit the connections with the proxy which is correct but has lower investigation value.</span></span> 
 
-<span data-ttu-id="945ce-114">Defender för Endpoint har stöd för avancerad HTTP-nivåövervakning via nätverksskydd.</span><span class="sxs-lookup"><span data-stu-id="945ce-114">Defender for Endpoint supports advanced HTTP level monitoring through network protection.</span></span> <span data-ttu-id="945ce-115">När den är aktiverad visas en ny typ av händelse där de verkliga domännamnen visas.</span><span class="sxs-lookup"><span data-stu-id="945ce-115">When turned on, a new type of event is surfaced which exposes the real target domain names.</span></span>
+<span data-ttu-id="dfa62-114">Defender för Endpoint har stöd för avancerad HTTP-nivåövervakning via nätverksskydd.</span><span class="sxs-lookup"><span data-stu-id="dfa62-114">Defender for Endpoint supports advanced HTTP level monitoring through network protection.</span></span> <span data-ttu-id="dfa62-115">När den är aktiverad visas en ny typ av händelse där de verkliga domännamnen visas.</span><span class="sxs-lookup"><span data-stu-id="dfa62-115">When turned on, a new type of event is surfaced which exposes the real target domain names.</span></span>
 
-## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a><span data-ttu-id="945ce-116">Använda nätverksskydd för att övervaka nätverksanslutningen bakom en brandvägg</span><span class="sxs-lookup"><span data-stu-id="945ce-116">Use network protection to monitor network connection behind a firewall</span></span>
-<span data-ttu-id="945ce-117">Det är möjligt att övervaka nätverksanslutningen bakom en vidarebefordrad proxyserver på grund av ytterligare nätverkshändelser som kommer från nätverksskyddet.</span><span class="sxs-lookup"><span data-stu-id="945ce-117">Monitoring network connection behind a forward proxy is possible due to additional network events that originate from network protection.</span></span> <span data-ttu-id="945ce-118">Om du vill visa dem på en tidslinje på en enhet aktiverar du nätverksskyddet (minst i granskningsläge).</span><span class="sxs-lookup"><span data-stu-id="945ce-118">To see them on a device timeline, turn network protection on (at the minimum in audit mode).</span></span> 
+## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a><span data-ttu-id="dfa62-116">Använda nätverksskydd för att övervaka nätverksanslutningen bakom en brandvägg</span><span class="sxs-lookup"><span data-stu-id="dfa62-116">Use network protection to monitor network connection behind a firewall</span></span>
+<span data-ttu-id="dfa62-117">Det är möjligt att övervaka nätverksanslutningen bakom en vidarebefordrad proxyserver på grund av ytterligare nätverkshändelser som kommer från nätverksskyddet.</span><span class="sxs-lookup"><span data-stu-id="dfa62-117">Monitoring network connection behind a forward proxy is possible due to additional network events that originate from network protection.</span></span> <span data-ttu-id="dfa62-118">Om du vill visa dem på en tidslinje på en enhet aktiverar du nätverksskyddet (minst i granskningsläge).</span><span class="sxs-lookup"><span data-stu-id="dfa62-118">To see them on a device timeline, turn network protection on (at the minimum in audit mode).</span></span> 
 
-<span data-ttu-id="945ce-119">Nätverksskyddet kan styras med hjälp av följande lägen:</span><span class="sxs-lookup"><span data-stu-id="945ce-119">Network protection can be controlled using the following modes:</span></span>
+<span data-ttu-id="dfa62-119">Nätverksskyddet kan styras med hjälp av följande lägen:</span><span class="sxs-lookup"><span data-stu-id="dfa62-119">Network protection can be controlled using the following modes:</span></span>
 
-- <span data-ttu-id="945ce-120">**Blockera**</span><span class="sxs-lookup"><span data-stu-id="945ce-120">**Block**</span></span> <br> <span data-ttu-id="945ce-121">Användare eller appar kommer att blockeras från att ansluta till skadliga domäner.</span><span class="sxs-lookup"><span data-stu-id="945ce-121">Users or apps will be blocked from connecting to dangerous domains.</span></span> <span data-ttu-id="945ce-122">Du kan se aktiviteten i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="945ce-122">You will be able to see this activity in Microsoft Defender Security Center.</span></span>
-- <span data-ttu-id="945ce-123">**Granskning**</span><span class="sxs-lookup"><span data-stu-id="945ce-123">**Audit**</span></span> <br> <span data-ttu-id="945ce-124">Användare eller appar kommer inte att blockeras från att ansluta till skadliga domäner.</span><span class="sxs-lookup"><span data-stu-id="945ce-124">Users or apps will not be blocked from connecting to dangerous domains.</span></span> <span data-ttu-id="945ce-125">Men den här aktiviteten visas fortfarande i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="945ce-125">However, you will still see this activity in Microsoft Defender Security Center.</span></span>
+- <span data-ttu-id="dfa62-120">**Blockera**</span><span class="sxs-lookup"><span data-stu-id="dfa62-120">**Block**</span></span> <br> <span data-ttu-id="dfa62-121">Användare eller appar kommer att blockeras från att ansluta till skadliga domäner.</span><span class="sxs-lookup"><span data-stu-id="dfa62-121">Users or apps will be blocked from connecting to dangerous domains.</span></span> <span data-ttu-id="dfa62-122">Du kan se den här aktiviteten i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="dfa62-122">You will be able to see this activity in Microsoft Defender Security Center.</span></span>
+- <span data-ttu-id="dfa62-123">**Granskning**</span><span class="sxs-lookup"><span data-stu-id="dfa62-123">**Audit**</span></span> <br> <span data-ttu-id="dfa62-124">Användare eller appar kommer inte att blockeras från att ansluta till skadliga domäner.</span><span class="sxs-lookup"><span data-stu-id="dfa62-124">Users or apps will not be blocked from connecting to dangerous domains.</span></span> <span data-ttu-id="dfa62-125">Du ser dock fortfarande den här aktiviteten i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="dfa62-125">However, you will still see this activity in Microsoft Defender Security Center.</span></span>
 
 
-<span data-ttu-id="945ce-126">Om du inaktiverar nätverksskydd blockeras inte användare eller appar från att ansluta till skadliga domäner.</span><span class="sxs-lookup"><span data-stu-id="945ce-126">If you turn network protection off, users or apps will not be blocked from connecting to dangerous domains.</span></span> <span data-ttu-id="945ce-127">Du ser ingen nätverksaktivitet i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="945ce-127">You will not see any network activity in Microsoft Defender Security Center.</span></span>
+<span data-ttu-id="dfa62-126">Om du inaktiverar nätverksskydd blockeras inte användare eller appar från att ansluta till skadliga domäner.</span><span class="sxs-lookup"><span data-stu-id="dfa62-126">If you turn network protection off, users or apps will not be blocked from connecting to dangerous domains.</span></span> <span data-ttu-id="dfa62-127">Du ser ingen nätverksaktivitet i Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="dfa62-127">You will not see any network activity in Microsoft Defender Security Center.</span></span>
 
-<span data-ttu-id="945ce-128">Om du inte konfigurerar den inaktiveras nätverksblockering som standard.</span><span class="sxs-lookup"><span data-stu-id="945ce-128">If you do not configure it, network blocking will be turned off by default.</span></span>
+<span data-ttu-id="dfa62-128">Om du inte konfigurerar den inaktiveras nätverksblockering som standard.</span><span class="sxs-lookup"><span data-stu-id="dfa62-128">If you do not configure it, network blocking will be turned off by default.</span></span>
 
-<span data-ttu-id="945ce-129">Mer information finns i [Aktivera nätverksskydd](enable-network-protection.md).</span><span class="sxs-lookup"><span data-stu-id="945ce-129">For more information, see [Enable network protection](enable-network-protection.md).</span></span>
+<span data-ttu-id="dfa62-129">Mer information finns i [Aktivera nätverksskydd](enable-network-protection.md).</span><span class="sxs-lookup"><span data-stu-id="dfa62-129">For more information, see [Enable network protection](enable-network-protection.md).</span></span>
 
-## <a name="investigation-impact"></a><span data-ttu-id="945ce-130">Undersöknings påverkan</span><span class="sxs-lookup"><span data-stu-id="945ce-130">Investigation impact</span></span>
-<span data-ttu-id="945ce-131">När nätverksskyddet är aktiverat ser du att IP-adressen fortsätter representera proxyn på en enhets tidslinje, medan den verkliga måladressen visas.</span><span class="sxs-lookup"><span data-stu-id="945ce-131">When network protection is turned on, you'll see that on a device's timeline the IP address will keep representing the proxy, while the real target address shows up.</span></span>
+## <a name="investigation-impact"></a><span data-ttu-id="dfa62-130">Undersöknings påverkan</span><span class="sxs-lookup"><span data-stu-id="dfa62-130">Investigation impact</span></span>
+<span data-ttu-id="dfa62-131">När nätverksskyddet är aktiverat ser du att IP-adressen fortsätter representera proxyn på en enhets tidslinje, medan den verkliga måladressen visas.</span><span class="sxs-lookup"><span data-stu-id="dfa62-131">When network protection is turned on, you'll see that on a device's timeline the IP address will keep representing the proxy, while the real target address shows up.</span></span>
 
 ![Bild av nätverkshändelser på enhetens tidslinje](images/atp-proxy-investigation.png)
 
-<span data-ttu-id="945ce-133">Ytterligare händelser som utlöses av nätverkets skyddslager är nu tillgängliga för att ta fram de verkliga domännamnen även bakom en proxy.</span><span class="sxs-lookup"><span data-stu-id="945ce-133">Additional events triggered by the network protection layer are now available to surface the real domain names even behind a proxy.</span></span>
+<span data-ttu-id="dfa62-133">Ytterligare händelser som utlöses av nätverkets skyddslager är nu tillgängliga för att ta fram de verkliga domännamnen även bakom en proxy.</span><span class="sxs-lookup"><span data-stu-id="dfa62-133">Additional events triggered by the network protection layer are now available to surface the real domain names even behind a proxy.</span></span>
 
-<span data-ttu-id="945ce-134">Händelsens information:</span><span class="sxs-lookup"><span data-stu-id="945ce-134">Event's information:</span></span>
+<span data-ttu-id="dfa62-134">Händelsens information:</span><span class="sxs-lookup"><span data-stu-id="dfa62-134">Event's information:</span></span>
 
 ![Bild av en enskild nätverkshändelse](images/atp-proxy-investigation-event.png)
 
 
 
-## <a name="hunt-for-connection-events-using-advanced-hunting"></a><span data-ttu-id="945ce-136">Sök efter anslutningshändelser med avancerad sökning</span><span class="sxs-lookup"><span data-stu-id="945ce-136">Hunt for connection events using advanced hunting</span></span> 
-<span data-ttu-id="945ce-137">Alla nya anslutningshändelser är också tillgängliga så att du kan leta efter avancerad sökning.</span><span class="sxs-lookup"><span data-stu-id="945ce-137">All new connection events are available for you to hunt on through advanced hunting as well.</span></span> <span data-ttu-id="945ce-138">Eftersom dessa händelser är anslutningshändelser kan du hitta dem under tabellen DeviceNetworkEvents under `ConnecionSuccess` åtgärdstyp.</span><span class="sxs-lookup"><span data-stu-id="945ce-138">Since these events are connection events, you can find them under the DeviceNetworkEvents table under the `ConnecionSuccess` action type.</span></span>
+## <a name="hunt-for-connection-events-using-advanced-hunting"></a><span data-ttu-id="dfa62-136">Sök efter anslutningshändelser med avancerad sökning</span><span class="sxs-lookup"><span data-stu-id="dfa62-136">Hunt for connection events using advanced hunting</span></span> 
+<span data-ttu-id="dfa62-137">Alla nya anslutningshändelser är också tillgängliga så att du kan leta efter avancerad sökning.</span><span class="sxs-lookup"><span data-stu-id="dfa62-137">All new connection events are available for you to hunt on through advanced hunting as well.</span></span> <span data-ttu-id="dfa62-138">Eftersom dessa händelser är anslutningshändelser kan du hitta dem under tabellen DeviceNetworkEvents under `ConnecionSuccess` åtgärdstyp.</span><span class="sxs-lookup"><span data-stu-id="dfa62-138">Since these events are connection events, you can find them under the DeviceNetworkEvents table under the `ConnecionSuccess` action type.</span></span>
 
-<span data-ttu-id="945ce-139">Med den här enkla frågan visas alla relevanta händelser:</span><span class="sxs-lookup"><span data-stu-id="945ce-139">Using this simple query will show you all the relevant events:</span></span>
+<span data-ttu-id="dfa62-139">Med den här enkla frågan visas alla relevanta händelser:</span><span class="sxs-lookup"><span data-stu-id="dfa62-139">Using this simple query will show you all the relevant events:</span></span>
 
 ```
 DeviceNetworkEvents
@@ -81,9 +81,9 @@ DeviceNetworkEvents
 
 ![Bild av avancerad fråga för sökning](images/atp-proxy-investigation-ah.png)
 
-<span data-ttu-id="945ce-141">Du kan också filtrera bort händelser som är relaterade till anslutningen till själva proxyn.</span><span class="sxs-lookup"><span data-stu-id="945ce-141">You can also filter out  events that are related to connection to the proxy itself.</span></span> 
+<span data-ttu-id="dfa62-141">Du kan också filtrera bort händelser som är relaterade till anslutningen till själva proxyn.</span><span class="sxs-lookup"><span data-stu-id="dfa62-141">You can also filter out  events that are related to connection to the proxy itself.</span></span> 
 
-<span data-ttu-id="945ce-142">Använd följande fråga för att filtrera ut anslutningarna till proxyn:</span><span class="sxs-lookup"><span data-stu-id="945ce-142">Use the following query to filter out the connections to the proxy:</span></span>
+<span data-ttu-id="dfa62-142">Använd följande fråga för att filtrera ut anslutningarna till proxyn:</span><span class="sxs-lookup"><span data-stu-id="dfa62-142">Use the following query to filter out the connections to the proxy:</span></span>
 
 ```
 DeviceNetworkEvents
@@ -93,5 +93,5 @@ DeviceNetworkEvents
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="945ce-143">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="945ce-143">Related topics</span></span>
-- [<span data-ttu-id="945ce-144">Tillämpa nätverksskydd med GP – princip-CSP</span><span class="sxs-lookup"><span data-stu-id="945ce-144">Applying network protection with GP - policy CSP</span></span>](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+## <a name="related-topics"></a><span data-ttu-id="dfa62-143">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="dfa62-143">Related topics</span></span>
+- [<span data-ttu-id="dfa62-144">Tillämpa nätverksskydd med GP – princip-CSP</span><span class="sxs-lookup"><span data-stu-id="dfa62-144">Applying network protection with GP - policy CSP</span></span>](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
