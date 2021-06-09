@@ -19,24 +19,24 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52623639"
 ---
-# <a name="contact-support-for-kenya"></a><span data-ttu-id="f20cf-103">Kontakta supporten för Kenya</span><span class="sxs-lookup"><span data-stu-id="f20cf-103">Contact support for Kenya</span></span>
+# <a name="contact-support-for-kenya"></a><span data-ttu-id="7cf62-103">Kontakta supporten för Kenya</span><span class="sxs-lookup"><span data-stu-id="7cf62-103">Contact support for Kenya</span></span>
 
-<span data-ttu-id="f20cf-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="f20cf-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="7cf62-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="7cf62-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f20cf-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f20cf-105">Phone number</span></span>
-<span data-ttu-id="f20cf-106">020 286 8800</span><span class="sxs-lookup"><span data-stu-id="f20cf-106">020 286 8800</span></span>
+## <a name="phone-number"></a><span data-ttu-id="7cf62-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="7cf62-105">Phone number</span></span>
+<span data-ttu-id="7cf62-106">020 286 8800</span><span class="sxs-lookup"><span data-stu-id="7cf62-106">020 286 8800</span></span>
 
-<span data-ttu-id="f20cf-107">Tryck 2 för företag</span><span class="sxs-lookup"><span data-stu-id="f20cf-107">Press 2 for business</span></span>
+<span data-ttu-id="7cf62-107">Tryck 2 för företag</span><span class="sxs-lookup"><span data-stu-id="7cf62-107">Press 2 for business</span></span>
 
-<span data-ttu-id="f20cf-108">Tryck 1 för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="f20cf-108">Press 1 for Microsoft 365</span></span>
+<span data-ttu-id="7cf62-108">Tryck 1 för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="7cf62-108">Press 1 for Microsoft 365</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f20cf-109">Tider</span><span class="sxs-lookup"><span data-stu-id="f20cf-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f20cf-110">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="f20cf-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="7cf62-109">Tider</span><span class="sxs-lookup"><span data-stu-id="7cf62-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="7cf62-110">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="7cf62-110">Billing Support:</span></span>
 
-<span data-ttu-id="f20cf-111">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="f20cf-111">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="7cf62-111">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="7cf62-111">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f20cf-112">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="f20cf-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="7cf62-112">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="7cf62-112">Technical Support:</span></span>
 
-<span data-ttu-id="f20cf-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="f20cf-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="7cf62-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="7cf62-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="f20cf-114">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="f20cf-114">Local call charges apply</span></span>
+<span data-ttu-id="7cf62-114">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="7cf62-114">Local call charges apply</span></span>

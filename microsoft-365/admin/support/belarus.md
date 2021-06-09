@@ -19,26 +19,26 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52623583"
 ---
-# <a name="contact-support-for-belarus"></a><span data-ttu-id="8c965-103">Kontakta supporten för Vitryssland</span><span class="sxs-lookup"><span data-stu-id="8c965-103">Contact support for Belarus</span></span>
+# <a name="contact-support-for-belarus"></a><span data-ttu-id="d6a68-103">Kontakta supporten för Vitryssland</span><span class="sxs-lookup"><span data-stu-id="d6a68-103">Contact support for Belarus</span></span>
 
-<span data-ttu-id="8c965-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="8c965-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="d6a68-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="d6a68-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="8c965-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="8c965-105">Phone number</span></span>
-<span data-ttu-id="8c965-106">8 820 0071 0003</span><span class="sxs-lookup"><span data-stu-id="8c965-106">8 820 0071 0003</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d6a68-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="d6a68-105">Phone number</span></span>
+<span data-ttu-id="d6a68-106">8 820 0071 0003</span><span class="sxs-lookup"><span data-stu-id="d6a68-106">8 820 0071 0003</span></span>
 
-<span data-ttu-id="8c965-107">Tryck 2 för företag</span><span class="sxs-lookup"><span data-stu-id="8c965-107">Press 2 for business</span></span>
+<span data-ttu-id="d6a68-107">Tryck 2 för företag</span><span class="sxs-lookup"><span data-stu-id="d6a68-107">Press 2 for business</span></span>
 
-<span data-ttu-id="8c965-108">Tryck 1 för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="8c965-108">Press 1 for Microsoft 365</span></span>
+<span data-ttu-id="d6a68-108">Tryck 1 för Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="d6a68-108">Press 1 for Microsoft 365</span></span>
 
-## <a name="hours"></a><span data-ttu-id="8c965-109">Tider</span><span class="sxs-lookup"><span data-stu-id="8c965-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="8c965-110">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="8c965-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d6a68-109">Tider</span><span class="sxs-lookup"><span data-stu-id="d6a68-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d6a68-110">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="d6a68-110">Billing Support:</span></span>
 
-<span data-ttu-id="8c965-111">Ryska: Mon-Fri 10:00–17:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="8c965-111">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
+<span data-ttu-id="d6a68-111">Ryska: Mon-Fri 10:00–17:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="d6a68-111">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
 
-<span data-ttu-id="8c965-112">Engelska: Mon-Fri 9:00–17:00 London</span><span class="sxs-lookup"><span data-stu-id="8c965-112">English: Mon-Fri 9 AM-5 PM London</span></span>
+<span data-ttu-id="d6a68-112">Engelska: Mon-Fri 9:00–17:00 London</span><span class="sxs-lookup"><span data-stu-id="d6a68-112">English: Mon-Fri 9 AM-5 PM London</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="8c965-113">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="8c965-113">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d6a68-113">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="d6a68-113">Technical Support:</span></span>
 
-<span data-ttu-id="8c965-114">Ryska: Mon-Fri 07:00–18:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="8c965-114">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
+<span data-ttu-id="d6a68-114">Ryska: Mon-Fri 07:00–18:00 Moskva</span><span class="sxs-lookup"><span data-stu-id="d6a68-114">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
 
-<span data-ttu-id="8c965-115">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="8c965-115">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d6a68-115">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="d6a68-115">English: 24 hours a day, 7 days a week</span></span>
