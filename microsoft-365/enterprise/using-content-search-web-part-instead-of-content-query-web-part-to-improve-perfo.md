@@ -1,5 +1,5 @@
 ---
-title: Använda webb delen för innehålls sökning i stället för webb delen innehålls fråga för att förbättra prestanda i SharePoint Online
+title: Använda webbdel för innehållssökning i stället för webbdel för innehållsfråga för att förbättra prestanda SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
-description: Lär dig att öka prestandan genom att ersätta webb delen innehålls fråga med webb delen innehålls sökning i SharePoint Server 2013 och SharePoint Online.
+description: Lär dig hur du kan öka prestanda genom att ersätta webbdelen för innehållsfråga med webbdelen för innehållssökning i SharePoint Server 2013 och SharePoint Online.
 ms.openlocfilehash: e5f57e59a421d79302f447e229091fdfc96f1237
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -28,50 +28,50 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46694919"
 ---
-# <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Använda webb delen för innehålls sökning i stället för webb delen innehålls fråga för att förbättra prestanda i SharePoint Online
+# <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Använda webbdel för innehållssökning i stället för webbdel för innehållsfråga för att förbättra prestanda SharePoint Online
 
-I den här artikeln beskrivs hur du ökar prestandan genom att ersätta webb delen innehålls fråga med webb delen innehålls sökning i SharePoint Server 2013 och SharePoint Online.
+I den här artikeln beskrivs hur du kan öka prestanda genom att ersätta webbdelen för innehållsfråga med webbdelen för innehållssökning i SharePoint Server 2013 och SharePoint Online.
   
-En av de mest kraftfulla funktionerna i SharePoint Server 2013 och SharePoint Online är webb delen innehålls sökning (INNEHÅLLS sökning). Den här webb delen använder Sök indexet för att snabbt hämta resultat som visas för användaren. Använd webb delen innehålls sökning i stället för webb delen innehålls fråga (INNEHÅLLS fråga) på dina sidor för att förbättra datorns prestanda.
+En av de mest kraftfulla nya funktionerna i SharePoint Server 2013 och SharePoint Online är webbdel för innehållssökning (CSWP). Den här webbdelen använder sökindexet för att snabbt hämta resultat som visas för användaren. Använd webbdelen Innehållssökning i stället för webbdel för innehållsfråga (CQWP) på dina sidor för att förbättra prestanda för användarna.
   
-Om du använder en webbdel för innehålls sökning via en webbdel för innehålls fråga kommer nästan alltid att få betydligt bättre prestanda i sid belastning på SharePoint Online. Det finns lite extra konfiguration för att få rätt fråga, men fördelarna är bättre prestanda och presenten glädjer användare.
+Genom att använda webbdel för innehållssökning i över en webbdel för innehållsfråga får du nästan alltid avsevärt bättre prestanda vid sidinläsning SharePoint Online. Det krävs lite ytterligare konfiguration för att få fram rätt fråga, men vinsterna är högre prestanda och nöjdare användare.
   
-## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>Jämför prestanda ökningen du får genom att använda webb delen för innehålls sökning i stället för webb delen innehålls fråga
+## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>Jämförelse av de prestanda som ger dig när du använder webbdel för innehållssökning i stället för webbdel för innehållsfråga
 
-I följande exempel visas de relativa prestanda vinster du kan få när du använder en webbdel för innehålls sökning i stället för en webbdel för innehålls fråga. Effekterna är mer uppenbara med en komplex webbplats struktur och mycket breda innehålls frågor.
+Följande exempel visar de relativa prestandaförbättringar som du kan få när du använder en webbdel för innehållssökning i stället för en webbdel för innehållsfråga. Effekterna blir mer uppenbara med en komplex webbplatsstruktur och mycket breda innehållsfrågor.
   
-Den här exempel webbplatsen har följande egenskaper:
+Den här exempelwebbplatsen har följande egenskaper:
   
-- 8 nivåer av under webbplatser.
+- Åtta nivåer med underwebbplatser.
     
-- Listor med den anpassade innehålls typen "frukt".
+- Listor med den anpassade innehållstypen "frukt".
     
-- I webb delen är innehålls frågan brett och returnerar alla objekt med innehålls typen "frukt".
+- I webbdelen är innehållsfrågan bred, vilket returnerar alla objekt med innehållstypen "frukt".
     
-- I exemplet används endast 50-objekt på åtta webbplatser. Effekterna blir ännu mer uttalade för webbplatser med mer innehåll.
+- I exemplet används bara 50 objekt på de 8 webbplatserna. Effekterna blir ännu mer markanta för webbplatser med mer innehåll.
     
-Här visas en skärm bild av resultatet av webb delen för innehålls fråga.
+Här visas en skärmbild av resultaten från webbdelen för innehållsfråga.
   
-![Bild som visar innehålls fråga för webbdel](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
+![Bild som visar webbdelens innehållsfråga](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
   
-I Internet Explorer går du till fliken **nätverk** i F12-utvecklingsverktygen för att se informationen för svars huvudet. I följande skärmdump är värdet för **SPRequestDuration** för den här sidans laddning 924 millisekunder. 
+I Internet Explorer använder du fliken **Nätverk** för F12-utvecklingsverktygen för att titta på informationen för svarshuvudet. På följande skärmbild är värdet för **SPRequestDuration** för den här sidinläsningen 924 millisekunder. 
   
-![Skärm bild som visar begärande-varaktighet för 924](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
+![Skärmbild som visar begärans varaktighet på 924](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
- **SPRequestDuration** anger hur mycket arbete som utförs på servern för att förbereda sidan. Om du byter innehåll efter webb delar från en fråga med innehåll efter Sök webb delar drastiskt minskar den tid det tar att rendera sidan. En sida med en motsvarande webb delen för innehålls sökning, som returnerar samma antal resultat, har ett **SPRequestDuration** -värde på 106 millisekunder som visas i den här skärm bilden: 
+ **SPRequestDuration** anger mängden arbete som utförs på servern för att förbereda sidan. Genom att byta webbdelar fråga mot innehåll genom sökning webbdelar avsevärt minskar tiden det tar att återge sidan. Som jämförelse har en sida med en motsvarande webbdel för innehållssökning, som returnerar samma antal resultat, ett **SPRequestDuration-värde** på 106 millisekunder, som visas på skärmbilden: 
   
-![Skärm bild som visar varaktigheten för en aktivitet med 106](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
+![Skärmbild som visar Begärans varaktighet på 106](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
-## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Lägga till en webbdel för innehålls sökning i SharePoint Online
+## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Lägga till en webbdel för innehållssökning i SharePoint Online
 
-Att lägga till en webbdel för innehålls sökning liknar en vanlig innehålls fråga. Se avsnittet  *"lägga till en webbdel för innehålls sökning"*  i [Konfigurera en webbdel för innehålls sökning i SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+Att lägga till en webbdel för innehållssökning liknar en vanlig webbdel för innehållsfråga. Se avsnittet *"Lägga till en webbdel för innehållssökning"* i [Konfigurera en webbdel för innehållssökning i SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
-## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Skapa rätt Sök fråga för webb delen innehålls sökning
+## <a name="creating-the-right-search-query-for-your-content-search-web-part"></a>Skapa rätt sökfråga för webbdelen Innehållssökning
 
-När du har lagt till en webbdel för innehålls sökning kan du förfina sökningen och returnera de objekt du vill. Detaljerade anvisningar om hur du gör detta finns i avsnittet  *"Visa innehåll genom att konfigurera en avancerad fråga i en webbdel för innehålls sökning"*  i [Konfigurera en webbdel för innehålls sökning i SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
+När du har lagt till en webbdel för innehållssökning kan du förfina sökningen och returnera de objekt du vill ha. Detaljerade anvisningar om hur du gör detta finns i avsnittet *"Visa* innehåll genom att konfigurera en avancerad fråga i en webbdel för innehållssökning" i Konfigurera en webbdel för innehållssökning [i SharePoint.](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a)
   
-## <a name="query-building-and-testing-tool"></a>Verktyg för att skapa frågor
+## <a name="query-building-and-testing-tool"></a>Verktyg för att skapa och testa frågor
 
-Ett verktyg för att skapa och testa komplexa frågor finns i [verktyget för Sök frågor](https://sp2013searchtool.codeplex.com/) på Codeplex. 
+Ett verktyg för att skapa och testa komplexa frågor finns i [Sökfrågeverktyget på](https://sp2013searchtool.codeplex.com/) Codeplex. 
   
 

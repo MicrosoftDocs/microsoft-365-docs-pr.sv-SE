@@ -1,6 +1,6 @@
 ---
 title: Rapport om enhetshälsa och efterlevnad i Microsoft Defender för Endpoint
-description: Spåra identifieringar av enhetens hälsa, antivirusstatus, OS-plattform och Windows 10-versioner med hjälp av hälso- och efterlevnadsrapporten för enheter
+description: Spåra identifiering av enhetens hälsostatus, antivirusstatus, OS-plattform Windows 10 versioner med hjälp av hälso- och efterlevnadsrapporten för enheten
 keywords: hälsotillstånd, antivirus, os-plattform, windows 10-version, version, hälsa, efterlevnad, status
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51860297"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Statusrapporten för enheter innehåller detaljerad information om enheterna i organisationen. Rapporten innehåller trendinformation som visar sensorns status, antivirusstatus, OS-plattformar och Windows 10-versioner.
+Statusrapporten för enheter innehåller detaljerad information om enheterna i organisationen. Rapporten innehåller trendinformation som visar sensorns status, antivirusstatus, OS-plattformar och Windows 10 versioner.
 
 Instrumentpanelen är strukturerad i två avsnitt: ![ Bild på enhetsrapporten](images/device-reports.png)
  
@@ -72,11 +72,11 @@ Rapporten består av kort som visar följande enhetsattribut:
  
 - **Hälsotillstånd**: visar information om sensortillståndet på enheter, som ger en samlad vy av enheter som är aktiva, har nedsatt kommunikation, inaktiv eller där inga sensordata visas.
   
-- **Antivirusstatus för aktiva Windows 10-enheter**: visar antalet enheter och status för Microsoft Defender Antivirus.
+- **Antivirusstatus för Windows 10 enheter**: visar antalet enheter och status för Microsoft Defender Antivirus.
     
 - **OS-plattformar**: visar den distribution av OS-plattformar som finns i din organisation. 
  
-- **Windows 10-versioner**: visar distributionen av Windows 10-enheter och deras versioner i din organisation.
+- **Windows 10 versioner**: visar distributionen av Windows 10-enheter och deras versioner i organisationen.
  
  
  
@@ -89,10 +89,10 @@ Du kan välja flera filter som ska användas från enhetsattributen.
 >[!NOTE]
 >De här filtren **gäller** för alla korten i rapporten.
  
-Om du till exempel vill visa data om Windows 10-enheter med statusen Aktiv sensor:
+Om du till exempel vill visa data Windows 10 enheter med status statusen Aktiv sensor:
  
 1. Under **Filter > sensorns hälsotillstånd > Aktiv**.
-2. Välj sedan **OS-> Windows 10.**
+2. Välj sedan **OS-> Windows 10**.
 3. Välj **Använd**.
 
 

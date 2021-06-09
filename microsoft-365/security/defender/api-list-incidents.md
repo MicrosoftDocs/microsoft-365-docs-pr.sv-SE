@@ -151,7 +151,7 @@ osBuild | Versionsversionen för operativsystemet som enheten kör. | 14393
 rbacGroupName | Den [rollbaserade åtkomstkontrollgruppen](/azure/role-based-access-control/overview) (RBAC) som är kopplad till enheten. | WDATP-Ring0
 firstSeen | Tid när enheten sågs första gången. | 2020-02-06T14:16:01.9330135Z
 healthStatus | Status för enheten. | Aktiv
-riskScore | Riskresultatet för enheten. | Hög
+riskScore | Riskresultatet för enheten. | Högsta
 enheter | Alla enheter som har identifierats vara en del av eller relaterade till en viss avisering. | \[\] (mer information om entitetsfälten finns nedan)
 
 ### <a name="entity-format"></a>Enhetsformat

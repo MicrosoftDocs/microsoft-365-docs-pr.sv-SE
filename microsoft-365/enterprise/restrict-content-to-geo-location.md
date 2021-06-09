@@ -1,5 +1,5 @@
 ---
-title: Begränsa SharePoint-webbplatsinnehåll till en geoplats
+title: Begränsa SharePoint webbplatsinnehåll till en geoplats
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,7 +12,7 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: I den här artikeln lär du dig hur du begränsar SharePoint-webbplatser till en viss geoplats i en geomiljö med flera platser.
+description: I den här artikeln lär du dig hur du SharePoint webbplatser till en viss geoplats i en geomiljö med flera platser.
 ms.openlocfilehash: 74255db19b2ecf9b333d33208c63da260b2bd747
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -20,7 +20,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927270"
 ---
-# <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Begränsa SharePoint-webbplatsinnehåll till en geoplats
+# <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Begränsa SharePoint webbplatsinnehåll till en geoplats
 
 I vissa fall kan du välja att tillämpa en webbplats och dess filinnehåll på den geoplats där webbplatsen skapades, antingen genom att förhindra att webbplatsen flyttas eller genom att förhindra cachelagring av webbplatsens filinnehåll på en annan geoplats.
 

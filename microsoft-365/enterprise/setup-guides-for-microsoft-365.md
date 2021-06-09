@@ -1,5 +1,5 @@
 ---
-title: Installationsguider för Microsoft 365- och Office 365-tjänster
+title: Installationsguider för Microsoft 365 och Office 365 tjänster
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
-description: Snabbare planering och konfiguration av Microsoft 365 eller Office 365 med installationsguider.
+description: Öka din planering och konfiguration av Microsoft 365 eller Office 365 med hjälp av installationsguider.
 ms.openlocfilehash: 6ad00819b172d7cb0cfb5b63a93c0910df5517e6
 ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
@@ -28,97 +28,97 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50454153"
 ---
-# <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Installationsguider för Microsoft 365- och Office 365-tjänster
+# <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Installationsguider för Microsoft 365 och Office 365 tjänster
 
-Installationsguiderna för Microsoft 365 och Office 365 innehåller skräddarsydd vägledning och resurser för planering och distribution av klientorganisationen, appar och tjänster. De här guiderna skapas på samma sätt som [Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) FastTrack-introduktionsspecialister delar i enskilda interaktioner, och de är tillgängliga för alla administratörer i administrationscentret för Microsoft 365. De ger information om produktkonfiguration, aktivering av säkerhetsfunktioner, distribution av samarbetsverktyg och skript för att snabba på avancerade distributioner.
+Microsoft 365 och Office 365 konfigurationsguider ger dig skräddarsydd vägledning och resurser för planering och distribution av klientorganisationen, appar och tjänster. De här guiderna skapas med samma metodtips som [Microsoft 365 FastTrack-specialister](https://www.microsoft.com/fasttrack/microsoft-365) delar på enskilda interaktioner, och de är tillgängliga för alla administratörer i Microsoft 365 administrationscenter. De ger information om produktkonfiguration, säkerhetsfunktioner, distribution av samarbetsverktyg och skript för att snabba upp avancerade distributioner.
 
-## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Så här kommer du åt installationsguiderna i administrationscentret för Microsoft 365
+## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Så här kommer du åt konfigurationsguider Microsoft 365 administrationscentret
 
-Konfigurationsguiderna är åtkomliga [från sidan](https://aka.ms/setupguidance) Konfigurationsvägledning i administrationscentret för Microsoft 365. Du kan när som helst hålla reda på statusen för dina framsteg och du kan när som helst gå tillbaka för att slutföra en guide. Så här kommer du **till konfigurationsvägledningssidan:**
+Installationsguiderna är tillgängliga från sidan [Konfigurationsvägledning](https://aka.ms/setupguidance) i Microsoft 365 administrationscenter. Du kan hålla reda på statusen för din status och du kan när som helst gå tillbaka för att slutföra en guide. Så här kommer du **till sidan Konfigurationsvägledning:**
 
-1. Gå till [startsidan i administrationscentret för Microsoft 365.](https://admin.microsoft.com/) 
+1. Gå [Microsoft 365 startsida](https://admin.microsoft.com/)i **administrationscentret.**
 
-2. Hitta kort **för &-guider.** 
+2. Gå till **kortet & utbildningsguider.** 
 
-   ![Kortet &-guider i administrationscentret för Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   ![Kortet &-guider i Microsoft 365 administrationscentret](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. Välj **Anpassad konfigurationsvägledning.**
+3. Välj **Anpassad konfigurationsvägledning**.
 
-   ![Skärmbild av konfigurationsvägledningssidan i administrationscentret för Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ![Skärmbild av sidan Konfigurationsvägledning i Microsoft 365 administrationscenter](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 >[!NOTE]
->Behörigheter som innehavaradministratör krävs för att få åtkomst till administrationscentret för Microsoft 365.
+>Behörigheter som innehavaradministratör krävs för att få åtkomst Microsoft 365 administrationscentret.
 
-## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Hur fungerar installationsguiderna i administrationscentret för Microsoft 365?
+## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Hur fungerar installationsguiderna i Microsoft 365 administrationscenter?
 
-Varje guide ger dig stegvisa instruktioner, resurser, artiklar och vid behov skript som du kan använda för att göra konfigurationsändringar. Med hjälp av de här guiderna får du alternativ som avspeglar små och stora organisationers specifika behov. Dessutom innehåller vägledningen hjälp för både nya och mer erfarna administratörer.
+I varje guide får du stegvisa instruktioner, resurser, artiklar och vid behov skript som du kan använda för att göra konfigurationsändringar. I de här guiderna får du val som avspeglar små och stora organisationers specifika behov. Dessutom innehåller vägledningen hjälp för både nya och mer erfarna administratörer.
 
 ![Exempel på en installationsguide](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
-Du kan använda guiderna för att lära dig mer om specifika Microsoft 365- och Office 365-funktioner under planeringsfasen, under distribution och distribution, eller för att gå tillbaka till dem när du har slutfört en distribution för att ändra en inställning.
+Du kan använda guiderna om du vill lära dig mer om specifika funktioner i Microsoft 365 och Office 365 under planeringsfasen, under distribution och distribution, eller för att gå tillbaka till dem när du har slutfört en distribution för att ändra en inställning.
 
-## <a name="guides-for-initial-setup"></a>Guider för inledande konfiguration
+## <a name="guides-for-initial-setup"></a>Guider för första installationen
 
-### <a name="prepare-your-environment"></a>Förbereda miljön
+### <a name="prepare-your-environment"></a>Förbereda din miljö
 
-Med [hjälp av Förbered](https://aka.ms/prepareyourenvironment) din miljöguide kan du förbereda organisationens miljö för Microsoft 365- och Office 365-tjänster. Oavsett vad du har för mål finns det uppgifter som du måste slutföra för att distributionen ska bli lyckad. Om du vill undvika fel när du förbereder miljön får du stegvisa instruktioner för att ansluta din domän, lägga till användare, tilldela licenser, konfigurera e-post med Exchange Online och installera eller distribuera Office-program. 
+Med [hjälp av förbereda](https://aka.ms/prepareyourenvironment) din miljöguide kan du förbereda organisationens miljö för Microsoft 365 och Office 365 tjänster. Oavsett dina mål finns det uppgifter som du måste slutföra för att säkerställa en lyckad distribution. För att undvika fel när du förbereder miljön får du stegvisa instruktioner för att ansluta din domän, lägga till användare, tilldela licenser, konfigurera e-post med Exchange Online och installera eller distribuera Office-program. 
 
 ### <a name="email-setup-advisor"></a>E-postkonfigurationsrådgivare
 
-Rådgivaren [för e-postkonfiguration](https://aka.ms/office365setup) ger dig de stegvisa instruktioner som behövs för att konfigurera Exchange Online för din organisation. Det omfattar att konfigurera nya e-postkonton, migrera e-post och konfigurera e-postskydd. Om du vill ha en lyckad e-postorganisation använder du den här rådgivaren. Du får den rekommenderade migreringsmetoden baserat på organisationens aktuella e-postsystem, antalet postlådor som migreras och hur du vill hantera användare och deras åtkomst.
+Rådgivaren [för e-postkonfiguration](https://aka.ms/office365setup) ger dig de stegvisa instruktioner som behövs för att konfigurera Exchange Online för din organisation. Det omfattar att konfigurera nya e-postkonton, migrera e-post och konfigurera e-postskydd. Använd den här rådgivaren för att få en lyckad e-postuppsättning. Du får den rekommenderade migreringsmetoden baserat på organisationens aktuella e-postsystem, antalet postlådor som migreras och hur du vill hantera användare och deras åtkomst.
 
-### <a name="migrate-gmail-contacts-and-calendar-items"></a>Migrera Gmail-kontakter och -kalenderobjekt
+### <a name="migrate-gmail-contacts-and-calendar-items"></a>Migrera Gmail-kontakter och kalenderobjekt
 
-När du migrerar en Gmail-användares postlåda till Microsoft 365 migreras e-postmeddelanden, men inte kontakter och kalenderobjekt. Rådgivaren [för Gmail-kontakter](https://aka.ms/gmailcontactscalendar) och -kalendrar tillhandahåller steg för import av Google-kontakter och Google-kalenderobjekt till Microsoft 365 med import- och exportmetoder med Outlook.com, Outlook-klienten eller PowerShell.
+När du migrerar en Gmail-användares postlåda till Microsoft 365 migreras e-postmeddelanden, men inte kontakter och kalenderobjekt. Kontakt- [och kalenderrådgivaren](https://aka.ms/gmailcontactscalendar) för Gmail tillhandahåller anvisningar för hur du importerar Google-kontakter och Google-kalenderobjekt till Microsoft 365 med import- och exportmetoder med Outlook.com, Outlook-klienten eller PowerShell.
 
-### <a name="microsoft-365-deployment-advisor"></a>Distributionsrådgivaren för Microsoft 365
+### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365 distributionsrådgivare
 
-[Distributionsrådgivaren för Microsoft 365](https://aka.ms/microsoft365setupguide) ger dig vägledning vid installation av produktivitetsverktyg, säkerhetsprinciper och funktioner för enhetshantering. Med en Microsoft 365 Business Premium- eller Microsoft 365 för företag-prenumeration kan du använda den här rådgivaren för att konfigurera och konfigurera organisationens enheter. 
+The [Microsoft 365 deployment advisor provides](https://aka.ms/microsoft365setupguide) you with guidance when setting up productivity tools, security policies, and device management capabilities. Med ett Microsoft 365 Business Premium eller Microsoft 365 för en företagsprenumeration kan du använda den här rådgivaren för att konfigurera din organisations enheter. 
 
-Du får vägledning och åtkomst till resurser för att aktivera dina molntjänster, uppdatera enheter till den senaste versionen av Windows 10 som stöds och ansluta enheter till Azure Active Directory (Azure AD), allt på en enda central plats.
+Du får vägledning och åtkomst till resurser för att aktivera dina molntjänster, uppdatera enheter till den senaste versionen av Windows 10 som stöds och ansluta enheter till Azure Active Directory (Azure AD), allt på en central plats.
 
 
 ### <a name="remote-work-setup-guide"></a>Guide för fjärrinstallation av arbete
 
-Guiden [för fjärrinstallation av arbete](https://aka.ms/remoteworksetup) ger organisationer de tips och resurser som behövs för att säkerställa att användarna kan arbeta på distans, att dina data är säkra och att användarnas autentiseringsuppgifter skyddas. 
+Guiden [för fjärrinstallation ger](https://aka.ms/remoteworksetup) organisationer de tips och resurser som behövs för att säkerställa att användarna kan arbeta på distans, att dina data är säkra och att användarnas autentiseringsuppgifter är skyddade. 
 
 Du får vägledning för att optimera distansarbetares enhetstrafik till både Microsoft 365-resurser i molnet och organisationens nätverk, vilket minskar belastningen på VPN-infrastrukturen för fjärråtkomst. 
 
-### <a name="windows-virtual-desktop-setup-guide"></a>Installationsguide för Virtuellt skrivbord för Windows
+### <a name="windows-virtual-desktop-setup-guide"></a>Windows Installationsguide för virtuellt skrivbord
 
-Windows Virtual Desktop är en omfattande tjänst för skrivbord och app virtualisering som körs i molnet. Det är den enda virtuella skrivbordsinfrastrukturen (VDI) som levererar förenklad hantering, Windows 10-flersessioner, optimeringar för Microsoft 365-appar och stöd för fjärrskrivbordstjänster (RDS). Distribuera och skala dina Windows-skrivbord och -appar till Azure på några minuter och få inbyggda säkerhets- och efterlevnadsfunktioner. 
+Windows Virtuellt skrivbord är en omfattande tjänst för skrivbords- och app virtualisering som körs i molnet. Det är den enda virtuella skrivbordsinfrastrukturen (VDI) som tillhandahåller förenklad hantering, flersessions-Windows 10, optimeringar för Microsoft 365-appar och stöd för RDS-miljöer (Remote Desktop Services). Distribuera och skala Windows datorer och appar till Azure på några minuter och få inbyggda säkerhets- och efterlevnadsfunktioner. 
 
-[Konfigurationsguiden för virtuellt skrivbord](https://aka.ms/wvdsetupguide) för Windows förser administratörerna med planeringsresurser och förutsättningar för distribution, installationsvägledning och ytterligare resurser. 
+I [Windows för virtuella skrivbord](https://aka.ms/wvdsetupguide) har administratörer tillgång till planeringsresurser och förutsättningar för distribution, konfigurationsvägledning och ytterligare resurser. 
 
-### <a name="microsoft-edge-setup-guide"></a>Installationsguide för Microsoft Edge
+### <a name="microsoft-edge-setup-guide"></a>Microsoft Edge konfigurationsguiden
 
-Microsoft Edge har återskapats från grunden för att ge dig förstklassig kompatibilitet och prestanda, den säkerhet och sekretess du behöver samt nya funktioner som utformats för att du ska få ut så mycket som helst av webben.
+Microsoft Edge har återskapats från grunden för att du ska få en förstklassig kompatibilitet och prestanda, den säkerhet och sekretess du behöver samt nya funktioner som är utformade för att du ska få det bästa från webben.
 
-Konfigurationsguiden [för Microsoft Edge](https://aka.ms/edgeadvisor) hjälper dig att konfigurera webbplatsidentifiering för företag för att se vilka webbplatser som har åtkomst i din organisation kan behöva använda IE-läge, granska och konfigurera viktiga säkerhetsfunktioner, konfigurera sekretessprinciper och ytterligare principer för att uppfylla organisationens krav och hantera webbåtkomst på dina enheter. Du kan ladda ned Microsoft Edge till enskilda enheter, eller så visar vi dig hur du distribuerar till flera användare i din organisation med Konfigurationshanteraren eller Microsoft Intune. 
+I [konfigurationsguiden](https://aka.ms/edgeadvisor) för Microsoft Edge får du hjälp att konfigurera identifiering av företagswebbplatser för att se vilka webbplatser som har åtkomst i din organisation som kan behöva använda IE-läge, granska och konfigurera viktiga säkerhetsfunktioner, konfigurera sekretesspolicyer och ytterligare principer för att uppfylla organisationens krav samt hantera webbåtkomst på dina enheter. Du kan Microsoft Edge till enskilda enheter, eller så visar vi dig hur du distribuerar till flera användare i din organisation med Configuration Manager eller Microsoft Intune. 
 
 ### <a name="microsoft-search-setup-guide"></a>Installationsguide för Microsoft Search
 
-Microsoft Search hjälper din organisation att hitta det de behöver för att slutföra det de arbetar med. Oavsett om det handlar om att söka efter personer, filer, organisationsscheman, webbplatser eller svar på vanliga frågor kan organisationen använda Microsoft Search under hela arbetsdagen för att få svar.
+Microsoft Search hjälper din organisation att hitta vad de behöver för att slutföra vad de arbetar med. Oavsett om det handlar om att söka efter personer, filer, organisationsscheman, webbplatser eller svar på vanliga frågor kan organisationen använda Microsoft Search under arbetsdagen för att få svar.
 
-Installationsguiden [för Microsoft Search](https://aka.ms/MicrosoftSearchSetup) hjälper dig att konfigurera Microsoft Search oavsett om du vill pilottesta den till en grupp användare eller distribuera den till alla i organisationen. Du tilldelar sökadministratörer och sökredigerare och anpassar sedan sökupplevelsen för dina användare med svar och ytterligare alternativ, som att lägga till Bing-tillägget till Chrome eller ange Bing som standardsökmotor.
+Installationsguiden [för Microsoft Search](https://aka.ms/MicrosoftSearchSetup) hjälper dig att konfigurera Microsoft Search oavsett om du vill pilottesta den till en grupp användare eller distribuera den till alla i organisationen. Du tilldelar sökadministratörer och sökredigerare och anpassar sedan sökupplevelsen för dina användare med svar och ytterligare alternativ, som att lägga till Bing-tillägget till Chrome eller att ange Bing som standardsökmotor.
 
-### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Konfigurationshanteraren konfigurationsguide för samtidig hantering
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>Konfigurationsguide för Intune Configuration Manager för samtidig hantering
 
-Använd [Intune Konfigurationshanteraren](https://aka.ms/comanagementsetup) för konfiguration av samtidig hantering för befintliga Konfigurationshanteraren-klientenheter och nya Internetbaserade enheter som din organisation vill hantera tillsammans med både Microsoft Intune och Konfigurationshanteraren. Med den här distributionsguiden för samtidig hantering kan du hantera Windows 10-enheter och lägga till nya funktioner på din organisations enheter, samtidigt som du får fördelarna med båda lösningarna.
+Använd konfigurationsguiden för konfigurationshanteraren för [Intune](https://aka.ms/comanagementsetup) Configuration Manager för befintliga Configuration Manager-klientenheter och nya Internetbaserade enheter som din organisation vill hantera tillsammans med både Microsoft Intune och Configuration Manager. Med den här distributionsguiden för samtidig hantering kan du hantera Windows 10-enheter och lägga till nya funktioner på din organisations enheter, samtidigt som du får fördelarna med båda lösningarna.
 
 ## <a name="guides-for-authentication-and-access"></a>Guider för autentisering och åtkomst
 
 ### <a name="azure-ad-setup-guide"></a>Konfigurationsguide för Azure AD
 
-[Konfigurationsguiden för Azure AD](https://aka.ms/aadpguidance) ger information för att säkerställa att organisationen har en stark säkerhetsgrund. I den här guiden kan du konfigurera initiala funktioner, som Azure rollbaserad åtkomstkontroll (Azure RBAC) för administratörer, Azure AD Connect för din lokala katalog och Azure AD Connect Health, så att du kan övervaka hybrididentitetens hälsa under automatiska synkroniseringar. 
+[Konfigurationsguiden för Azure AD](https://aka.ms/aadpguidance) innehåller information för att säkerställa att din organisation har en stark säkerhetsgrund. I den här guiden kan du konfigurera initiala funktioner som Azure rollbaserad åtkomstkontroll (Azure RBAC) för administratörer, Azure AD Anslut för din lokala katalog och Azure AD Anslut Health, så att du kan övervaka hybrididentitetens hälsa vid automatiserade synkroniseringar. 
 
 Den innehåller även viktig information om hur du aktiverar självbetjäning för återställning av lösenord, villkorsstyrd åtkomst och integrerad inloggning från tredje part, inklusive valfritt avancerat identitetsskydd och automatisering av användaretablering.
 
 ### <a name="sync-users-from-your-orgs-directory"></a>Synkronisera användare från organisationens katalog
 
-Du [får hjälp med att aktivera katalogsynkronisering med](https://aka.ms/directorysyncsetup) hjälp av guiden Synkronisera användare från organisationens katalog. Detta sammanför dina lokala och molnbaserade identiteter för enklare åtkomst och förenklad hantering. Lås upp nya funktioner som enkel inloggning, självbetjäningsalternativ, automatisk kontoetablering, villkorsstyrda åtkomstkontroller och efterlevnadsprinciper. Det säkerställer att användarna har tillgång till de resurser de behöver var de än är.
+Du [får hjälp med att aktivera katalogsynkronisering](https://aka.ms/directorysyncsetup) med hjälp av guiden Synkronisera användare från organisationens katalog. Detta sammanför dina lokala och molnbaserade identiteter för enklare åtkomst och förenklad hantering. Lås upp nya funktioner som enkel inloggning, självbetjäningsalternativ, automatisk kontoetablering, kontroller för villkorsstyrd åtkomst och efterlevnadsprinciper. Det säkerställer att användarna har åtkomst till de resurser de behöver var de än är.
 
-### <a name="plan-your-passwordless-deployment"></a>Planera din lösenordslösa distribution
+### <a name="plan-your-passwordless-deployment"></a>Planera lösenordslös distribution
 
 Uppgradera till en alternativ inloggningsmetod som gör att användarna kan komma åt sina enheter på ett säkert sätt med någon av följande lösenordslösa autentiseringsmetoder: 
 
@@ -126,99 +126,99 @@ Uppgradera till en alternativ inloggningsmetod som gör att användarna kan komm
 - Microsoft Authenticator-appen
 - Säkerhetsnycklar 
 
-Använd guiden [Planera din lösenordslösa distribution för](https://aka.ms/passwordlesssetup) att hitta de bästa lösenordslösa autentiseringsmetoderna att använda och få vägledning om hur du distribuerar dem. 
+Använd [distributionsguiden Planera din lösenordslösa distribution](https://aka.ms/passwordlesssetup) för att hitta de bästa lösenordslösa autentiseringsmetoderna att använda och få vägledning om hur du distribuerar dem. 
 
 ### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>Planera självbetjäning för återställning av lösenord (SSPR)
 
-Ge användarna möjlighet att ändra eller återställa sitt lösenord oberoende av varandra, om deras konto är låst eller så glömmer de sitt lösenord utan att behöva kontakta en supporttekniker. 
+Ge användare möjlighet att ändra eller återställa sitt lösenord oberoende av varandra, om deras konto är låst eller så glömmer de sitt lösenord utan att behöva kontakta en supporttekniker. 
 
-Använd guiden [Planera distribution av lösenordsåterställning](https://aka.ms/SSPRSetupGuide) med självbetjäning för att få relevanta artiklar och instruktioner för hur du konfigurerar lämpliga Azure Portal-alternativ som hjälper dig att distribuera SSPR i din miljö.
+Använd guiden [Planera självbetjäning](https://aka.ms/SSPRSetupGuide) för återställning av lösenord för att få relevanta artiklar och instruktioner för hur du konfigurerar lämpliga Azure Portal-alternativ för att distribuera SSPR i din miljö.
 
-### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Distributionsrådgivaren för Ad FS (Active Directory Federation Services)
+### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Distributionsrådgivaren för AD FS (Active Directory Federation Services)
 
-Distributionsrådgivaren för [AD FS](https://aka.ms/adfsguidance) ger dig stegvisa instruktioner om hur du distribuerar en lokal AD FS-infrastruktur som autentiserar användare för Microsoft 365- och Office 365-tjänster. Med den här guiden kan organisationen granska AD FS-komponenter och krav, skaffa och installera SSL-certifikat som behövs för distributionen och installera en proxyserver för webbprogram som krävs. 
+Distributionsrådgivaren för [AD FS](https://aka.ms/adfsguidance) ger dig stegvisa instruktioner om hur du distribuerar en lokal AD FS-infrastruktur som autentiserar användare för Microsoft 365 och Office 365 tjänster. Med den här guiden kan organisationen granska AD FS-komponenter och krav, skaffa och installera SSL-certifikat som behövs för distributionen och installera en webbprogramproxyserver som krävs. 
 
-## <a name="guides-for-security-and-compliance"></a>Guider för säkerhet och efterlevnad
+## <a name="guides-for-security-and-compliance"></a>Riktlinjer för säkerhet och efterlevnad
 
-### <a name="microsoft-intune-setup-guide"></a>Installationsguide för Microsoft Intune 
+### <a name="microsoft-intune-setup-guide"></a>Microsoft Intune konfigurationsguiden 
 
-Konfigurera Microsoft Intune för att hantera enheter i din organisation. Om du vill ha fullständig kontroll över företagets enheter använder du Intunes funktioner för hantering av mobila enheter (MDM). Om du vill hantera organisationens data på delade och personliga enheter kan du använda Intune-funktionerna för hantering av mobilprogram (MAM). 
+Konfigurera Microsoft Intune att hantera enheter i organisationen. Om du vill ha fullständig kontroll över företagets enheter använder du Intune-funktionerna för hantering av mobila enheter (MDM). Om du vill hantera organisationens data på delade och personliga enheter kan du använda Intune-funktionerna för hantering av mobilprogram (MAM). 
 
-Med [installationsguiden för Microsoft Intune](https://aka.ms/intunesetupguide)kan du konfigurera enhets- och appefterlevnadsprinciper, tilldela principer för appskydd och övervaka enhetens och appens skyddsstatus. 
+Med [konfigurationsguiden Microsoft Intune](https://aka.ms/intunesetupguide)du konfigurera principer för enhets- och appefterlevnad, tilldela principer för appskydd och övervaka status för enhet och programskydd. 
 
 ### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender för slutpunktsrådgivare
 
-Rådgivaren [för Microsoft Defender för slutpunkt](https://aka.ms/mdatpsetup) tillhandahåller instruktioner som hjälper företagsnätverket att förhindra, identifiera, undersöka och hantera avancerade hot. Gör en välinformerad bedömning av organisationens sårbarhet och bestäm vilka distributionspaket och konfigurationsmetoder som är bäst. 
+Rådgivaren [för Microsoft Defender för slutpunkt](https://aka.ms/mdatpsetup) tillhandahåller instruktioner som hjälper företagsnätverket att förhindra, upptäcka, undersöka och hantera avancerade hot. Gör en välinformerad bedömning av organisationens sårbarhet och bestäm vilka distributionspaket och konfigurationsmetoder som passar bäst. 
 
 >[!NOTE]
 >En Microsoft-volymlicens krävs för Microsoft Defender för Endpoint.
 
-### <a name="exchange-online-protection-setup-guide"></a>Konfigurationsguide för Exchange Online Protection
+### <a name="exchange-online-protection-setup-guide"></a>Exchange Online Protection konfigurationsguiden
 
-Microsoft Exchange Online Protection (EOP) är en molnbaserad tjänst för e-postfiltrering för skydd mot skräppost och skadlig programvara, med funktioner som skyddar organisationen från att bryter mot meddelandeprinciper. 
+Microsoft Exchange Online Skydd (EOP) är en molnbaserad tjänst för e-postfiltrering för skydd mot skräppost och skadlig programvara, med funktioner som skyddar organisationen från att bryter mot meddelandeprinciper. 
 
-Använd [konfigurationsguiden](https://aka.ms/EOPguidance) för Exchange Online Protection för att konfigurera EOP genom att välja vilka av de tre distributionsscenarierna för lokala postlådor, hybridpostlådor (blandning av lokala och molnbaserade) postlådor eller alla molnbaserade postlådor passar för din &mdash; &mdash; organisation. Guiden innehåller information och resurser för att konfigurera och granska användarnas licensiering, tilldela behörigheter i administrationscentret för Microsoft 365 och konfigurera organisationens principer för skydd mot skadlig programvara och skräppost i Säkerhets- och &-efterlevnadscentret. 
+Använd [konfigurationsguiden för Exchange Online Protection](https://aka.ms/EOPguidance) för att konfigurera EOP genom att välja vilka av de tre distributionsscenarierna som lokala postlådor, hybridpostlådor (blandning av lokala postlådor och molnpostlådor) eller alla molnbaserade postlådor passar din &mdash; &mdash; organisation. Guiden innehåller information och resurser för att konfigurera och granska användarnas licensiering, tilldela behörigheter i administrationscentret för Microsoft 365 och konfigurera organisationens principer för skydd mot skadlig programvara och skräppost i Säkerhets- och & Efterlevnadscenter. 
 
-### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender för Office 365-rådgivare
+### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender för Office 365 rådgivare
 
-Rådgivaren [microsoft Defender för Office 365](https://aka.ms/oatpsetup) skyddar organisationen mot skadliga hot som kan uppstå i din miljö via e-postmeddelanden, länkar och samarbetsverktyg från tredje part. Den här guiden innehåller resurser och information som hjälper dig att förbereda och identifiera Defender för Office 365-abonnemanget efter organisationens behov. 
+[Microsoft Defender för Office 365-rådgivare](https://aka.ms/oatpsetup) skyddar organisationen mot skadliga hot som kan uppstå i din miljö via e-postmeddelanden, länkar och samarbetsverktyg från tredje part. Den här guiden innehåller resurser och information som hjälper dig att förbereda och identifiera Defender för Office 365-planen så att den passar organisationens behov. 
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Konfigurationsguide för Microsoft informationsskydd
 
-Få en översikt över de funktioner du kan använda i din strategi för informationsskydd så att du kan vara säker på att känslig information är skyddad. Använd en livscykelsmetod i fyra steg där du identifierar, klassificerar, skyddar och övervakar känslig information. [Konfigurationsguiden för Microsoft informationsskydd](https://aka.ms/mipsetupguide) innehåller vägledning för hur du slutför vart och ett av dessa steg.
+Få en översikt över de funktioner som du kan använda för din strategi för informationsskydd så att du kan vara säker på att känslig information skyddas. Använd en livscykel i fyra steg där du identifierar, klassificerar, skyddar och övervakar känslig information. Installationsguiden för [Microsofts informationsskydd](https://aka.ms/mipsetupguide) ger anvisningar för hur du slutför vart och ett av dessa steg.
 
-### <a name="microsoft-information-governance-setup-guide"></a>Konfigurationsguide för microsoft informationsstyrning
+### <a name="microsoft-information-governance-setup-guide"></a>Konfigurationsguide för informationsstyrning från Microsoft
 
-Konfigurationsguiden för [Microsoft Information governance](https://aka.ms/migsetupguide) ger dig den information du behöver för att konfigurera och hantera organisationens hanteringsstrategi för att säkerställa att dina data klassificeras och hanteras i enlighet med de specifika riktlinjer för livscykeln som du anger. I den här guiden får du lära dig hur du skapar, tillämpar automatiskt eller publicerar etiketter, etikettprinciper och bevarandeprinciper som tillämpas på organisationens återanvändningsbara innehåll och efterlevnadsposter. Du får också information om hur du importerar CSV-filer med en filplan för massscenarier eller för att använda dem manuellt i enskilda dokument. 
+I konfigurationsguiden för microsoft [informationsstyrning](https://aka.ms/migsetupguide) får du den information du behöver för att konfigurera och hantera organisationens hanteringsstrategi för att se till att dina data klassificeras och hanteras i enlighet med de specifika livscykelriktlinjer som du anger. Med den här guiden får du lära dig hur du skapar, tillämpar automatiskt eller publicerar etiketter, etikettprinciper och bevarandeprinciper som används i organisationens återanvändningsbara innehåll och efterlevnadsposter. Du får också information om hur du importerar CSV-filer med en filplan för massscenarier eller för att använda dem manuellt på enskilda dokument. 
 
 ## <a name="guides-for-collaboration"></a>Guider för samarbete
 
-### <a name="microsoft-365-apps-deployment-advisor"></a>Distributionsrådgivaren för Microsoft 365-appar
+### <a name="microsoft-365-apps-deployment-advisor"></a>Microsoft 365 Distributionsrådgivaren för appar
 
-[Distributionsrådgivaren för Microsoft 365 Apps](https://aka.ms/OPPquickstartguide) hjälper dig att få användarnas enheter att köra den senaste versionen av Office-produkter som Word, Excel, PowerPoint och OneNote. Du får vägledning om de olika distributionsmetoderna som innehåller enkla alternativ för självinstallation av företagsdistributioner med hanteringsverktyg. Instruktionerna hjälper dig att bedöma miljön, ta reda på dina specifika distributionskrav och implementera de supportverktyg som behövs för att säkerställa en lyckad installation. 
+[Distributionsrådgivaren för Microsoft 365-appar](https://aka.ms/OPPquickstartguide) hjälper dig att få användarnas enheter att köra den senaste versionen av Office-produkter som Word, Excel, PowerPoint och OneNote. Du får vägledning om de olika distributionsmetoderna som innehåller enkla självinstallationsalternativ för företagsdistributioner med hanteringsverktyg. Instruktionerna hjälper dig att bedöma miljön, ta reda på dina specifika distributionskrav och implementera nödvändiga supportverktyg för att säkerställa en lyckad installation. 
 
 ### <a name="mobile-apps-setup-guide"></a>Installationsguide för mobilappar
 
-Installationsguiden [för mobilappar](https://aka.ms/officeappguidance) innehåller instruktioner för nedladdning och installation av Office-appar på dina Windows-, iOS- och Android-mobila enheter. I den här guiden får du steg-för-steg-information för att ladda ned och installera Microsoft 365- och Office 365-program på din telefon och pekplatta.
+Installationsguiden [för mobilappar](https://aka.ms/officeappguidance) innehåller instruktioner för nedladdning och installation av Office-appar på dina Windows-, iOS- och Android-mobila enheter. Den här guiden innehåller stegvis information om hur du laddar ned och installerar Microsoft 365 och Office 365 appar på din telefon och surfplatta.
 
-### <a name="microsoft-teams-setup-guide"></a>Installationsguide för Microsoft Teams
+### <a name="microsoft-teams-setup-guide"></a>Microsoft Teams konfigurationsguiden
 
-[Konfigurationsguiden för Microsoft Teams](https://aka.ms/teamsguidance) förser din organisation med vägledning för att konfigurera teamarbetsytor som är värd för konversationer i realtid via meddelanden, samtal och ljud- eller videomöten för både teamkommunikation och privat kommunikation. Du får instruktioner för att fastställa organisationens nätverkskrav med hjälp av verktyget Nätverksplanering och Teams-rådgivaren i administrationscentret för Teams. När distributionen är klar innehåller guiden användbara resurser för att komma igång med Teams.
+I [Microsoft Teams-installationsguiden](https://aka.ms/teamsguidance) får din organisation vägledning för att konfigurera teamarbetsytor som kan hantera konversationer i realtid via meddelanden, samtal och ljud- eller videomöten för både team och privat kommunikation. Du får instruktioner om hur du fastställer organisationens nätverkskrav med hjälp av verktyget Network Planner och Teams-rådgivaren Teams administrationscentret. När distributionen är klar innehåller guiden användbara resurser för att komma igång med användningen av Teams.
 
-### <a name="sharepoint-setup-guide"></a>Installationsguide för SharePoint
+### <a name="sharepoint-setup-guide"></a>SharePoint konfigurationsguiden
 
-I [konfigurationsguiden](https://aka.ms/spoguidance) för SharePoint kan du konfigurera lagring och innehållshantering för SharePoint-dokument, skapa webbplatser, konfigurera extern delning, migrera data och konfigurera avancerade inställningar och få användarnas engagemang och kommunikation inom organisationen att engagera sig. Du följer de steg som krävs för att konfigurera principer för innehållsdelningsbehörighet, välja verktyg för migreringssynkronisering och aktivera säkerhetsinställningarna för SharePoint-miljön. 
+I [SharePoint-installationsguiden](https://aka.ms/spoguidance) får du hjälp att konfigurera din SharePoint-dokumentlagring och innehållshantering, skapa webbplatser, konfigurera extern delning, migrera data och konfigurera avancerade inställningar och skapa användarengagemang och kommunikation inom organisationen. Du följer anvisningarna för att konfigurera behörighetsprinciper för innehållsdelning, välja synkroniseringsverktyg för migrering och aktivera säkerhetsinställningarna för din SharePoint miljö. 
 
-### <a name="onedrive-setup-guide"></a>Installationsguide för OneDrive
+### <a name="onedrive-setup-guide"></a>OneDrive konfigurationsguiden
 
-Använd [OneDrive-installationsguiden](https://aka.ms/ODfBquickstartguide) för att komma igång med fillagring, delning, samarbete och synkroniseringsfunktioner i OneDrive. OneDrive tillhandahåller en central plats där användare kan synkronisera sina Microsoft 365-programfiler, konfigurera extern delning, migrera användardata och konfigurera avancerade inställningar för säkerhet och enhetsåtkomst. Installationsguiden för OneDrive kan distribueras med en OneDrive-prenumeration eller ett fristående OneDrive-abonnemang. 
+Använd OneDrive [för att](https://aka.ms/ODfBquickstartguide) komma igång med OneDrive, delning, samarbete och synkronisering. OneDrive en central plats där användarna kan synkronisera sina Microsoft 365-programfiler, konfigurera extern delning, migrera användardata och konfigurera avancerade inställningar för säkerhet och enhetsåtkomst. Installationsguiden OneDrive distribueras med en OneDrive-prenumeration eller ett fristående OneDrive abonnemang. 
 
 ### <a name="yammer-deployment-advisor"></a>Yammer distributionsrådgivare
 
-Ta kontakt och engagera andra i hela organisationen med Yammer. [Distributionsrådgivaren Yammer](https://aka.ms/yammerdeploymentguide) förbereder ditt Yammer genom att lägga till domäner, definiera administratörer och kombinera flera Yammer nätverk. Du får vägledning för att distribuera Yammer anpassa utseendet, konfigurera säkerhet och efterlevnad samt förfina inställningarna.
+Anslut och engagera andra i hela organisationen med Yammer. [Distributionsrådgivaren Yammer](https://aka.ms/yammerdeploymentguide) förbereder ditt Yammer genom att lägga till domäner, definiera administratörer och kombinera Yammer nätverk. Du får vägledning för att distribuera Yammer anpassa utseendet, konfigurera säkerhet och efterlevnad samt förfina inställningarna.
 
 ## <a name="advanced-wizards"></a>Avancerade guider
 
 ### <a name="in-place-upgrade-with-configuration-manager"></a>Uppgradering på plats med Konfigurationshanteraren
 
-Använd på [plats-uppgraderingen](https://aka.ms/win10upgradedemo) med Konfigurationshanteraren guide när du uppgraderar Windows 7- och Windows 8.1-enheter till den senaste versionen av Windows 10. Du använder skriptet som tillhandahålls för att kontrollera förutsättningarna och automatiskt konfigurera en på plats-uppgradering.
+Använd på [plats-uppgraderingen](https://aka.ms/win10upgradedemo) med konfigurationshanterarens guide när du Windows 7 och Windows 8.1-enheter till den senaste versionen Windows 10. Du använder skriptet som tillhandahålls för att kontrollera förutsättningarna och automatiskt konfigurera en på plats-uppgradering.
 
 ### <a name="deploy-office-to-your-users"></a>Distribuera Office till användarna
 
-Distribuera Office-program från molnet med möjligheten att anpassa installationen med distributionsverktyget för Office. Guiden [Distribuera Office till användarna hjälper ](https://aka.ms/proplusodt) dig att skapa en anpassad Office-konfiguration med avancerade inställningar, eller så kan du använda en inbyggd rekommenderad konfiguration. I den här avancerade guiden får du stegvisa instruktioner för att ge användarna en Office-installation som är skräddarsydd för din organisation, oavsett om användarna utför en självinstallation eller om du distribuerar till användarna enskilt eller i grupp.
+Distribuera Office-program från molnet med möjlighet att anpassa installationen med hjälp av Office Deployment Tool. Guiden [Distribuera Office](https://aka.ms/proplusodt) användarna hjälper dig att skapa en anpassad Office konfiguration med avancerade inställningar, eller så kan du använda en inbyggd rekommenderad konfiguration. Oavsett om användarna utför en självinstallation eller om du distribuerar till användarna enskilt eller i grupp får du i den här avancerade guiden stegvisa instruktioner för att ge användarna en Office-installation anpassad efter din organisation.
 
 ### <a name="deploy-office-to-remote-users"></a>Distribuera Office till fjärranvändare
 
-Nu när du arbetar på distans är normen, måste användarna få organisationens Office-inställningar när de inte är anslutna till ditt interna nätverk eller när de använder sina egna enheter. 
+Nu när det fjärransluter är normen måste användarna få organisationens Office-inställningar när de inte är anslutna till det interna nätverket eller när de använder sina egna enheter. 
 
-Använd guiden [Distribuera Office till fjärranvändare](https://aka.ms/officeremoteinstall) om du vill skapa en anpassad Office-installation och sedan skicka ett genererat PowerShell-skript som smidigt installerar Office med konfigurationen.
+Använd guiden [Distribuera Office](https://aka.ms/officeremoteinstall) till fjärranvändare om du vill skapa en anpassad Office-installation och sedan skicka ett genererat PowerShell-skript som enkelt installerar Office med konfigurationen.
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Distribuera och uppdatera Microsoft 365-program med Konfigurationshanteraren
 
-För organisationer som använder Konfigurationshanteraren kan du använda distribuera och uppdatera [Microsoft 365-program](https://aka.ms/oppinstall) med Konfigurationshanteraren-rådgivaren för att generera ett skript som automatiskt konfigurerar distributionen av Microsoft 365-appar med de bästa metoderna som rekommenderas av FastTrack-tekniker. Använd den här guiden för att skapa distributionsgrupper, anpassa Office-program och -funktioner, konfigurera dynamiska eller magera installationer och kör sedan skriptet för att skapa de program, regler för automatisk distribution och enhetssamlingar som du behöver för att rikta distributionen. 
+Organisationer som använder Konfigurationshanteraren kan använda rådgivaren Distribuera och uppdatera [Microsoft 365-program](https://aka.ms/oppinstall) med Konfigurationshanteraren för att generera ett skript som automatiskt konfigurerar distributionen av Microsoft 365-program med de metodtips som rekommenderas av FastTrack-tekniker. Använd den här guiden till att skapa distributionsgrupper, anpassa dina Office-appar och -funktioner, konfigurera dynamiska eller magera installationer och kör sedan skriptet för att skapa de program, automatiska distributionsregler och enhetssamlingar som du behöver för att anpassa distributionen. 
 
 ### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>Integrera en molnbaserad app från tredje part med Azure AD
 
-Improve the user experience and provide an additional layer of security by integrating your third-party app with ‎Azure Active Directory (Azure AD). I den här end-to-end-upplevelsen kan du göra det mesta av konfigurationen direkt från den här guiden. Om det är lämpligt omdirigerar vi dig till motsvarande konfigurationssida.
+Förbättra användarupplevelsen och ge ytterligare en säkerhetsnivå genom att integrera tredjepartsappen med Azure Active Directory (Azure AD). Med den här end-to-end-upplevelsen kan du göra det mesta av konfigurationen direkt från den här guiden. Om det är lämpligt omdirigerar vi dig till motsvarande konfigurationssida.
 
-Använd guiden [Integrera tredjepartsmolnapp om](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) du vill integrera en molnbaserad app från tredje part med Azure AD.
+Använd [tredjepartsguiden för molnappen Integrate](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) för att integrera en molnbaserad app från tredje part med Azure AD.

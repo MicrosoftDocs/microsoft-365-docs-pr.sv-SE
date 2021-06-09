@@ -1,5 +1,5 @@
 ---
-title: Om utvärderingsversionen av Microsoft Defender för Office 365
+title: Om utvärderingsversionen av Microsoft Defender Office 365
 f1.keywords: ''
 ms.author: chrisda
 author: chrisda
@@ -25,27 +25,27 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/15/2021
 ms.locfileid: "51768752"
 ---
-# <a name="about-the-microsoft-defender-for-office-365-trial"></a>Om utvärderingsversionen av Microsoft Defender för Office 365
+# <a name="about-the-microsoft-defender-for-office-365-trial"></a>Om utvärderingsversionen av Microsoft Defender Office 365
 
 Microsoft Defender för Office 365 skyddar organisationen mot skadliga hot som kan orsakas av e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. Defender för Office 365 innehåller:
 
 - **Principer för hotskydd**: Definiera skyddsprinciper för hot för att ange rätt skyddsnivå för din organisation.
-- **Rapporter**: Visa rapporter i realtid för att övervaka prestandan för Defender för Office 365 i organisationen.
+- **Rapporter**: Visa rapporter i realtid och övervaka Defender för Office 365 prestanda i organisationen.
 - **Funktioner för undersökning av hot och svar**: Använd verktygen för nya funktioner för att undersöka, förstå, simulera och förhindra hot.
 - **Automatiserade funktioner för undersökning och svar**: Spara tid och ansträngning för att undersöka och mildra hot.
 
-En utvärderingsversion av Microsoft Defender för Office 365 är det enklaste sättet att prova funktionerna i Defender för Office 365, och det krävs bara några få klick för att konfigurera den. När utvärderingsversionen är klar är alla Defender för Office 365 abonnemang 1 och Abonnemang 2 tillgängliga i organisationen i upp till 90 dagar.
+En utvärderingsversion av Microsoft Defender för Office 365 är det enklaste sättet att prova funktionerna i Defender för Office 365, och det tar bara några få klick att konfigurera den. När utvärderingsversionen är klar är alla Defender för Office 365 abonnemang 1 och abonnemang 2 tillgängliga i organisationen i upp till 90 dagar.
 
 > [!NOTE]
 > Den automatiska konfiguration som beskrivs i den här artikeln finns för närvarande i offentlig förhandsversion och kanske inte är tillgänglig på din plats.
 
 ## <a name="terms-and-conditions"></a>Villkor
 
-Utvärderingsversionen av Defender för Office 365 är tillgänglig i 90 dagar och kan initieras för alla användare. Mer information finns i [Utvärderingsvillkor för Microsoft Defender för Office 365 & .](defender-for-office-365-trial-terms-and-conditions.md)
+Utvärderingsversionen av Defender Office 365 är tillgänglig i 90 dagar och kan initieras för alla dina användare. Mer information finns i [Microsoft Defender för Office 365 villkor för utvärderingsversion &](defender-for-office-365-trial-terms-and-conditions.md).
 
-## <a name="set-up-a-defender-for-office-365-trial"></a>Konfigurera en utvärderingsversion av Defender för Office 365
+## <a name="set-up-a-defender-for-office-365-trial"></a>Konfigurera en Defender för Office 365 utvärderingsversion
 
-Med en utvärderingsversion kan organisationer enkelt konfigurera och konfigurera funktionerna i Defender för Office 365. Under installationen tillämpas principer som är exklusiva för Defender för Office [](safe-links.md)365 (specifikt säkra bifogade [filer,](safe-attachments.md)säkra länkar och personifieringsskydd i principer för [skräppostskydd)](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)med standardmallen för förinställda [säkerhetsprinciper.](preset-security-policies.md)
+Med en utvärderingsversion kan organisationer enkelt konfigurera och konfigurera Defender Office 365 funktioner. Under installationen används principer som är exklusiva för Defender för Office 365 (särskilt [Valv-bilagor,](safe-attachments.md) [Valv-länkar och personifieringsskydd](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)i principer för skräppostskydd) med standardmallen för förinställda [säkerhetsprinciper.](preset-security-policies.md) [](safe-links.md)
 
 Som standard är de här principerna begränsade till alla användare i organisationen, men administratörer kan anpassa principerna under eller efter installationen så att de endast gäller för specifika användare.
 
@@ -53,11 +53,11 @@ Under installationen konfigureras även MDO-svarsfunktioner (finns i MDO P2 elle
 
 ## <a name="licensing"></a>Licensiering
 
-Som en del av utvärderingsversionen tillämpas licenserna för Defender för Office 365 automatiskt på organisationen. Licenserna är kostnadsfria under de första 90 dagarna.
+Som en del av utvärderingsversionen används licenserna Office 365 Defender för företag automatiskt för organisationen. Licenserna är kostnadsfria under de första 90 dagarna.
 
 ## <a name="permissions"></a>Behörigheter
 
-För att starta eller avsluta utvärderingsversionen måste du vara medlem i rollerna **global administratör** eller **säkerhetsadministratör** i Azure Active Directory. Mer information finns i [Om administratörsroller.](../../admin/add-users/about-admin-roles.md)
+För att starta eller avsluta utvärderingsversionen måste du vara medlem i rollerna **Global administratör** eller **Säkerhetsadministratör** i Azure Active Directory. Mer information finns i [Om administratörsroller.](../../admin/add-users/about-admin-roles.md)
 
 ## <a name="additional-information"></a>Ytterligare information
 
@@ -67,7 +67,7 @@ Administratörer kan inaktivera utvärderingsversionen när som helst genom att 
 
 ## <a name="availability"></a>Tillgänglighet
 
-Utvärderingsversionen av Defender för Office 365 lanseras gradvis till befintliga kunder som uppfyller specifika villkor (inklusive geografi) och som inte har befintliga licenser för Defender för Office 365 abonnemang 1 eller abonnemang 2 (ingår i deras prenumeration eller som ett tillägg).
+Utvärderingsversionen av Defender för Office 365 lanseras gradvis till befintliga kunder som uppfyller vissa villkor (inklusive geografi) och som inte har befintliga licenser för Defender för Office 365 abonnemang 1 eller abonnemang 2 (ingår i deras prenumeration eller som ett tillägg).
 
 ## <a name="learn-more-about-defender-for-office-365"></a>Läs mer om Defender för Office 365
 
@@ -75,13 +75,13 @@ Defender för Office 365 hjälper organisationer att skydda sitt företag genom 
 
 Du kan också läsa mer om Defender för Office 365 i den här [interaktiva guiden.](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)
 
-![Konceptuellt diagram för Microsoft Defender för Office 365](../../media/microsoft-defender-for-office-365.png)
+![Konceptuellt diagram Office 365 Microsoft Defender](../../media/microsoft-defender-for-office-365.png)
 
 ### <a name="prevention"></a>Skydd
 
 En robust filtreringsstack förhindrar ett brett utbud av volymbaserade och riktade angrepp, inklusive affärs-e-postkompromettering, autentiseringsuppgifter för nätfiske, utpressningstrojaner och avancerad skadlig programvara.
 
-- [Principer för skydd mot nätfiske: Exklusiva inställningar i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+- [Principer för skydd mot nätfiske: exklusiva inställningar i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 - [Säkra bifogade filer](safe-attachments.md)
 - [Säkra länkar](safe-links.md)
 

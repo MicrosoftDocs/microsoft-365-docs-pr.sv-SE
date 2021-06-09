@@ -1,5 +1,5 @@
 ---
-title: Integritet och säkerhet i grundläggande mobilitet och säkerhet
+title: Sekretess och säkerhet i Basic Mobility and Security
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: När du har aktiverat grundläggande mobilitet och säkerhet kan du skapa principer för hantering av mobila enheter.
+description: När du aktiverar Basic Mobility and Security kan du skapa principer för hantering av mobila enheter.
 ms.openlocfilehash: a5e813219407b105f9196a4532914326a94f429a
 ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
@@ -21,8 +21,8 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 01/15/2021
 ms.locfileid: "49876918"
 ---
-# <a name="privacy-and-security-in-basic-mobility-and-security"></a>Integritet och säkerhet i grundläggande mobilitet och säkerhet
+# <a name="privacy-and-security-in-basic-mobility-and-security"></a>Sekretess och säkerhet i Basic Mobility and Security
 
-Grundläggande mobilitet och säkerhet är en molnbaserad tjänst som drivs av Microsoft Intune och som hjälper dig att hantera och skydda mobila enheter i din organisation. När du har aktiverat grundläggande mobilitet och säkerhet kan du skapa principer för hantering av mobila enheter. Dessa principer kan distribueras till mobila enheter som har registrerats av licensierade Microsoft 365-användare i din organisation.
+Basic Mobility and Security är en molnbaserad tjänst som drivs av Microsoft Intune som hjälper dig att hantera och skydda mobila enheter i organisationen. När du aktiverar Basic Mobility and Security kan du skapa principer för hantering av mobila enheter. De här principerna kan sedan distribueras till mobila enheter som har registrerats av licensierade Microsoft 365 i organisationen.
 
-Microsoft Intune skickar information till Microsoft 365 om kompatibilitetsstatus för varje hanterad enhet och sedan kan du skapa rapporter som visar om hanterade enheter i organisationen är kompatibla baserat på de principer som var inställda. Om du vill veta mer om Microsofts engagemang för sekretess och säkerhet kan du läsa [Microsoft säkerhets Center](https://www.microsoft.com/trust-center).
+Microsoft Intune skickar information till Microsoft 365 om efterlevnadsstatus för varje hanterad enhet, och sedan kan du generera rapporter som visar om hanterade enheter i organisationen är kompatibla baserat på de principer som har angetts. Mer information om Microsofts arbete med sekretess och säkerhet finns i [Microsoft Säkerhetscenter.](https://www.microsoft.com/trust-center)

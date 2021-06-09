@@ -1,5 +1,5 @@
 ---
-title: Adress utrymmes kalkylator för Azure Gateway-undernät
+title: Adressutrymmeskalkylator för Azure Gateway-undernät
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - seo-marvel-apr2020
-description: 'Sammanfattning: beräkna adress utrymmet för ett Azure Gateway-undernät med C3, python eller PowerShell.'
+description: Sammanfattning Beräkna adressutrymmet för ett Azure Gateway-undernät med C3, Python eller PowerShell.
 ms.openlocfilehash: d92bea5c36fde6277154d19365ed0bdaa5df4254
 ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
@@ -23,20 +23,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "49780574"
 ---
-# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Adress utrymmes kalkylator för Azure Gateway-undernät
+# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Adressutrymmeskalkylator för Azure Gateway-undernät
 
-Ett virtuellt nätverk (VNet) i Azure Infrastructure Services som är anslutet till andra nätverk måste ha ett Gateway-undernät. Metod tips för att definiera Gateway-under nätet är:
+Ett virtuellt nätverk (VNet) i Azure-infrastrukturtjänster som är anslutna till andra nätverk måste ha ett gatewayundernät. Metodtipsen för att definiera gatewayundernätet är:
 
-- Prefixlängden för gateway-undernätet kan ha en maximal prefixlängd på 29 (till exempel 10.119.255.248/29), men den aktuella rekommendationen är att du använder en prefixlängd på 27 (till exempel 10.119.255.224/27).
-- Använd den sista delen av VNet-adressutrymmet när du definierar adress utrymmet för gateway-undernätet.
+- Prefixlängden för gatewayundernätet kan ha en maxlängd på 29 prefix (till exempel 10.119.255.248/29), men den aktuella rekommendationen är att du använder prefixlängden 27 (till exempel 10.119.255.224/27).
+- När du definierar adressutrymmet för gatewayundernätet använder du den sista delen av VNet-adressutrymmet.
 
-För den andra rekommendationen kan du bestämma adress utrymmet för gateway-undernätet genom att ange de bitar som används för gateway-undernätet till 0 och återstående bitar i VNet-adress utrymmet till 1. Om du snabbt vill beräkna gatewayens undernät för adress utrymme utan att behöva konvertera till binärt och tillbaka till decimalt, kan du använda ett konsol program skrivet i C# eller python eller med ett PowerShell-kommando.
+Enligt den andra rekommendationen kan du bestämma adressutrymmet för gatewayundernätet genom att ange 0 för gatewayundernätets bitar och de återstående bitarna i VNet-adressutrymmet till 1. Om du snabbt vill beräkna gatewayundernätets adressutrymme utan att behöva konvertera till binär och tillbaka till ett decimaltal kan du använda ett konsolprogram som skrivs i C# eller Python eller med ett PowerShell-kommandoblock.
 
-Den här artikeln innehåller kod blocken C#, python och PowerShell som beräknar gatewayens delnäts adress utrymme baserat på värdena för w. x. y. z/n för VNet-adressprefixet och Undernätsprefixets längd för gateway Subnet.
+Den här artikeln innehåller C#, Python- och PowerShell-kodblock som beräknar gatewayundernätets adressutrymme baserat på värdena för w.x.y.z/n för VNet-adressprefixet och gatewayundernätets prefixlängd.
 
 ## <a name="c-code-block"></a>C#-kodblock
 
-Använd det här kodblock för att skapa ett konsol program i C#.
+Använd det här kodblocket för att skapa en konsolapp i C#.
 
 ```c#
 using System; 
@@ -110,7 +110,7 @@ namespace ConsoleApplication1
 
 ## <a name="python-code-block"></a>Python-kodblock
 
-Använd det här kodblock för att skapa ett konsol program i python.
+Använd det här kodblocket för att skapa en konsolapp i Python.
 
 ```python
 import math 
@@ -147,9 +147,9 @@ print(gwAddrPref)
 ```
 
 
-## <a name="powershell-command-block"></a>PowerShell-Kommandotolken
+## <a name="powershell-command-block"></a>PowerShell-kommandoblock
 
-Fyll i värdena och kör det resulterande kommando blocket i ett PowerShell-fönster eller i PowerShell-integreringen (Integrated script Environment) för ISDN.
+Fyll i värdena och kör det resulterande kommandoblocket i ett PowerShell-fönster eller i PowerShell Integrated Script Environment (ISE).
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 

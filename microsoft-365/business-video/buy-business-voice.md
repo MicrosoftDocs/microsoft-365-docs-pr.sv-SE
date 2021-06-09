@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs om hur du köper tillägget Microsoft 365 Business Voice.
+description: Läs om hur du köper Microsoft 365 Business Voice-tillägget.
 ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
 ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
@@ -32,16 +32,16 @@ ms.locfileid: "50422993"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Gryk?autoplay=false]
 
-Med Microsoft 365 Business Voice kan du ringa och ta emot samtal, använda ljudkonferenser och konfigurera ett samtalsmenysystem för att dirigera kunderna till rätt avdelning. För att komma igång måste du köpa Business Voice-tillägget.
+Med Microsoft 365 Business Voice kan du ringa och ta emot samtal, använda ljudkonferens och konfigurera ett samtalsmenysystem för att dirigera kunder till rätt avdelning. För att komma igång måste du köpa Business Voice-tillägget.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. Gå till Fakturering i administrationscentret för Microsoft 365 **och** välj **Köptjänster.**
+1. I administrationscentret Microsoft 365 du Fakturering **och** väljer **Köp tjänster.**
 1. Rulla nedåt och **välj Tillägg.** 
-1. Välj **Microsoft 365 Business Voice.**
+1. Välj **Microsoft 365 Business Voice**.
 
     Om du inte ser den måste du först köpa en företagsprenumeration som innehåller Microsoft Teams.
-1. Ange antalet användare som du vill ha licenser för och **välj Gå till Checka ut nu.**
+1. Ange antalet användare du vill ha licenser för och välj **Gå till checka ut nu.**
 1. Välj **Automatisk omdening** om du vill köpa kommunikationskrediter om det behövs och undvika avbrott i tjänsten.
 
     Samtalskrediter används för internationella samtal, avgiftsfria nummer och ytterligare samtalsminuter.
@@ -49,4 +49,4 @@ Med Microsoft 365 Business Voice kan du ringa och ta emot samtal, använda ljudk
 1. Verifiera din betalningsmetod.
 1. Välj **Lägg order** och **Fortsätt.**
 
-Nu har du lagt till Business Voice-tillägget.
+Du har lagt till Business Voice-tillägget.

@@ -43,7 +43,7 @@ För att hantera det här behovet erbjuder hanterade säkerhetstjänstleverantö
 
 Defender för Endpoint lägger till möjligheter till samarbete för det här scenariot och gör att MSSP:er kan vidta följande åtgärder:
 
-- Få åtkomst till MSSP-kundens Microsoft Defender Säkerhetscenter-portal
+- Få åtkomst till MSSP-kundens Microsoft Defender Säkerhetscenter portal
 - Få e-postaviseringar och 
 - Hämta aviseringar via säkerhetsinformation och händelsehanteringsverktyg (SIEM)
 

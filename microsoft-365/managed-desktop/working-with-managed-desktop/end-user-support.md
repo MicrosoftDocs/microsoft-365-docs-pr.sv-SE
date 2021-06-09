@@ -1,6 +1,6 @@
 ---
-title: Få användar support för Microsoft Managed Desktop
-description: Så här får användare hjälp med tjänsten och enheter
+title: Få användarsupport för Microsoft Hanterat skrivbord
+description: Hur användare kan få hjälp med tjänsten och enheter
 keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -18,60 +18,60 @@ ms.locfileid: "49841369"
 ---
 # <a name="getting-help-for-users"></a>Få hjälp för användare
 
-Det finns två sätt som användare i organisationen kan få hjälp med på sina Microsoft-hanterade Skriv bords enheter: **få hjälp** program eller telefon support. Båda de här support alternativen är tillgängliga för användare dygnet runt, alla dagar.
+Det finns två sätt som användare i organisationen kan få hjälp med sina Microsoft Hanterat skrivbord-enheter: **Få hjälp-appen** eller telefonsupport. Båda dessa supportalternativ är tillgängliga för användare 24 timmar om dygnet, 7 dagar i veckan.
  
 >[!NOTE]
->De här support alternativen är inte tillgängliga för enheter i test gruppen.
+>De här supportalternativen är inte tillgängliga för enheter i testgruppen.
 
-## <a name="get-help-app"></a>Skaffa hjälp programmet
+## <a name="get-help-app"></a>Få hjälp appen
 
-Den bästa metoden för att tillhandahålla stöd för dina användare är **att få hjälp**, ett lättanvänt gränssnitt inbyggt i användarnas enheter.  
+Den rekommenderade metoden för att ge support till **användarna är Få hjälp**, ett lätt användargränssnitt inbyggt i användarens enhet.  
 
-![Ikonen skaffa hjälp program](../../media/get-help.png)
+![Få hjälp appikon](../../media/get-help.png)
 
-Få hjälp är ett program som är installerat på alla Microsoft Managed Station ära enheter och är fästa i aktivitets fältet. 
+Få hjälp är ett program som är installerat på Microsoft Hanterat skrivbord enheter och är fäst i Aktivitetsfältet. 
 
-- Användare kan begära ett motanrop till ett angivet telefonnummer eller chatta online med en service representant.
-- Förfrågningar som faller utanför Microsoft Managed Desktop support scope dirigeras om till den lokala IT-supportavdelningen via telefonsamtal.
+- Användare kan begära en uppringning till ett visst telefonnummer eller chatta online med en tjänstrepresentant.
+- Förfrågningar som faller utanför Microsoft Hanterat skrivbord supportomfattning omdirigeras till den lokala IT-supporten via telefonsamtal.
 
 > [!NOTE]
-> Visnings språket för Get Help app är endast på engelska, även om en användare har valt ett annat språk när de ställer in sin enhet eller i enhets inställningar. 
+> Visningsspråket för appen Få hjälp endast på engelska, även om en användare har valt ett annat språk vid inställning av enheten eller i enhetsinställningarna. 
 
 ### <a name="prerequisites"></a>Förutsättningar
-För att användarna ska kunna få hjälp via programmet kontrollerar du att följande förutsättningar uppfylls:
+Se till att följande krav uppfylls för att användarna ska kunna få hjälp via appen:
 
-- Enheten måste vara registrerad med Microsoft Managed Desktop med någon av metoderna i [Konfigurera Microsoft Managed Station ära enheter](../get-started/set-up-devices.md), till exempel [registrera nya enheter själv](../get-started/register-devices-self.md).
-- Visnings språket för enheten måste vara inställt på något av dessa engelska språk: en-US, en-GB, en-au, en-NZ eller en-ca.
-- Appen skaffa hjälp ska vara uppdaterad. Kontrol lera program uppdateringar i Microsoft Store för att bekräfta dess status.
-- Vissa [slut punkter](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) måste vara tillgängliga från enheten.
+- Enheten måste vara registrerad med Microsoft Hanterat skrivbord någon av metoderna i [Konfigurera Microsoft Hanterat skrivbord,](../get-started/set-up-devices.md)till exempel [Registrera nya enheter själv.](../get-started/register-devices-self.md)
+- Visningsspråket för enheten måste vara inställt på något av följande engelska språk: en-us, en-gb, en-au, en-nz eller en-ca.
+- Appen Få hjälp ska vara uppdaterad. Om du vill bekräfta dess status söker du efter programuppdateringar i Microsoft Store.
+- Vissa [slutpunkter](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) måste vara tillgängliga från enheten.
 
 > [!NOTE]
-> Appen skaffa hjälp kan ta upp till en timme efter att en enhet har distribuerats till helt.
+> Det Få hjälp upp till en timme efter att en enhet distribuerats till att fungera fullt ut.
 
-Om du har kontrollerat de här kraven och det inte fungerar att få hjälp appen är det lämpligt att en IT-administratör ska spara ett [support ärende](admin-support.md).
+Om du har kontrollerat dessa krav och Få hjälp appen fortfarande inte fungerar bör du som IT-administratör lämna in en [supportbegäran.](admin-support.md)
 
 ## <a name="phone-support"></a>Telefonsupport
 
-Användare med Microsoft hanterade Station ära Skriv bords enheter har också till gång till avgiftsfria telefonnummer de kan ringa. Siffrorna är avsedda att användas när det inte finns något hjälp avsnitt. Till exempel, om de inte kan logga in på enheten eller om enheten har brutits. Här är telefonnummer för telefon support:
+Användare med Microsoft Hanterat skrivbord enheter har också tillgång till avgiftsfria telefonnummer som de kan ringa. Siffrorna är avsedda att användas när Få hjälp är inte tillgängligt. Till exempel om de inte kan logga in på enheten eller om enheten är sönder. Här är telefonnumren för telefonsupport:
 
-- USA: + 1 855 425 0216
-- Kanada (exklusive Quebec): + 1 855 425 0216
-- Storbritannien: + 44 800 026 0698
-- Belgien: + 32 800 58533
-- Luxemburg: + 352 800 40119
-- Australien: + 61 180 037 0619
-- Nya Zeeland: + 64 988 44380
-- Sverige: + 46 20 120 3554
-- Norge: + 47 800 62584
-- Island: + 354 800 9006
-- Irland: + 353 1 800 832272
-- Danmark: + 45 80 40 04 01
-- Finland: + 358 800 525088
+- USA: +1 855 425 0216
+- Kanada (undantaget Quebec): +1 855 425 0216
+- Storbritannien: +44 800 026 0698
+- Belgien: +32 800 58533
+- Luxemburg: +352 800 40119
+- Australien: +61 180 037 0619
+- Nya Zeeland: +64 988 44380
+- Sverige: +46 20 120 3554
+- Norge: +47 800 62584
+- Island: +354 800 9006
+- Irland: +353 1 800 832272
+- Danmark: +45 80 40 04 01
+- Finland: +358 800 525088
 
 >[!NOTE]
->Du måste ha din organisations e-postadress klar när du ringer för att bekräfta din identitet. 
+>Du måste ha din organisations e-postadress redo när du ringer för att verifiera din identitet. 
 
 ## <a name="more-resources"></a>Fler resurser
-- [Administratörs support för Microsoft Managed Desktop](admin-support.md). 
-- [Stöd för Microsoft Managed Desktop](../service-description/support.md).
-- Om du redan prenumererar på Microsoft Managed Desktop kan du hitta detaljerade procedurer, process flöden, arbets instruktioner och vanliga frågor och svar i administratörs guiden för Microsoft-  hanterad Skriv bords **Administration** i Microsoft [Endpoint Manager](https://endpoint.microsoft.com/).
+- [Administratörssupport för Microsoft Hanterat skrivbord](admin-support.md). 
+- [Support för Microsoft Hanterat skrivbord](../service-description/support.md).
+- Om du redan prenumererar på Microsoft Hanterat skrivbord hittar du detaljerade procedurer, processflöden, arbetsanvisningar och vanliga frågor och svar i administratörsguiden  för Microsoft Hanterat skrivbord i **Onlineresurser** under avsnittet Microsoft Hanterat skrivbord på menyn Klientadministration [i Microsoft Endpoint Manager.](https://endpoint.microsoft.com/)
