@@ -40,7 +40,7 @@ Det kan finnas scenarier där du behöver dölja aviseringar från att visas i p
 Du kan visa en lista över alla regler och hantera dem på ett och samma ställe. Du kan också aktivera eller inaktivera en aviseringsregel.
 
 
-1. I navigeringsfönstret väljer du Inställningar  >  **Avisering – sekretess.** Listan över regelregler som användare i organisationen har skapat visas.
+1. I navigeringsfönstret väljer du **Inställningar**  >  **aviseringsvarning**. Listan över regelregler som användare i organisationen har skapat visas.
 
 2. Välj en regel genom att klicka på kryssrutan bredvid regelnamnet.
 
@@ -49,7 +49,7 @@ Du kan visa en lista över alla regler och hantera dem på ett och samma ställe
 
 ## <a name="view-details-of-a-suppression-rule"></a>Visa information om en regel för en regel
 
-1. I navigeringsfönstret väljer du Inställningar  >  **Avisering – sekretess.** Listan över regelregler som användare i organisationen har skapat visas.
+1. I navigeringsfönstret väljer du **Inställningar**  >  **aviseringsvarning**. Listan över regelregler som användare i organisationen har skapat visas.
 
 2. Klicka på ett regelnamn. Information om regeln visas. Du ser regeldetaljer som status, omfattning, åtgärd, antal matchande aviseringar, skapat av och datum då regeln skapades. Du kan också visa associerade aviseringar och regelvillkor.
 

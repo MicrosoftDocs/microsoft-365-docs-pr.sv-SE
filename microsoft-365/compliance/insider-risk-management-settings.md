@@ -1,7 +1,7 @@
 ---
 title: Inställningar för Insider-riskhantering
 description: Läs mer om inställningar för Insider-riskhantering i Microsoft 365
-keywords: Microsoft 365, insider-riskhantering, riskhantering, efterlevnad
+keywords: Microsoft 365, hantering av insiderrisk, riskhantering, efterlevnad
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -71,7 +71,7 @@ I vissa fall kanske du vill begränsa indikatorerna för Insider-risker som till
 Om du vill definiera indikatorer för Insider-risker som är aktiverade i alla Insider-riskprinciper går du till Indikatorer för **Insider-risker** och väljer en eller flera  >   principindikatorer. De indikatorer som valts på sidan Indikatorinställningar kan inte konfigureras individuellt när du skapar eller redigerar en Insider-riskprincip i principguiden.
 
 >[!NOTE]
->Det kan ta flera timmar innan nya manuellt tillagda användare visas i **instrumentpanelen Användare.** Det kan ta upp till 24 timmar innan aktiviteterna för de föregående 90 dagarna för dessa användare visas. Om du vill visa aktiviteter för manuellt  tillagda användare väljer du användaren på instrumentpanelen Användare och öppnar **fliken Användaraktivitet** i informationsfönstret.
+>Det kan ta flera timmar innan nya manuellt tillagda användare visas i **instrumentpanelen Användare.** Det kan ta upp till 24 timmar att visa aktiviteter för de senaste 90 dagarna för dessa användare. Om du vill visa aktiviteter för manuellt  tillagda användare väljer du användaren på instrumentpanelen Användare och öppnar **fliken Användaraktivitet** i informationsfönstret.
 
 ### <a name="enable-device-indicators-and-onboard-devices"></a>Aktivera enhetsindikatorer och onboard-enheter
 <a name="OnboardDevices"> </a>
@@ -200,7 +200,7 @@ Aviseringar från Defender för Slutpunkt importeras dagligen. Beroende på vilk
 Om du till exempel väljer *Ny*  *,* Pågår och Matchad för den här inställningen, importeras en första aviseringsaktivitet för användaren i insider-risk när en Microsoft Defender för slutpunkt-avisering skapas och statusen är Ny. När Defender för slutpunkt-status ändras till *Pågående* importeras en andra aktivitet för den här aviseringen för användaren i Insider-risken. När den slutliga Defender för slutpunktstremning för *Matchad* har ställts in importeras en tredje aktivitet för den här aviseringen för användaren i Insider-risken. Med den här funktionen kan användaren följa förloppet för Defender för slutpunktsaviseringar och välja vilken synlighetsnivå som krävs för undersökningen.
 
 >[!IMPORTANT]
->Du måste ha Microsoft Defender för Slutpunkt konfigurerat i din organisation och aktivera Defender för Slutpunkt för insider-riskhanteringsintegrering i Defender Säkerhetscenter för att importera aviseringar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Slutpunkt för insider-riskhanteringsintegrering finns i [Konfigurera avancerade funktioner i Defender för slutpunkt.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)
+>Du måste ha Microsoft Defender för Endpoint konfigurerad i din organisation och aktivera Defender för Endpoint för integrering av hantering av insiderrisk i Defender Security Center för att importera varningar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Endpoint för integrering av hantering av insiderrisk finns i [Konfigurera avancerade funktioner i Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### <a name="domains-preview"></a>Domäner (förhandsversion)
 
@@ -282,9 +282,9 @@ Skapa en prioritetsgrupp genom att följa anvisningarna nedan:
 4. Fyll **i följande fält** på sidan Definiera grupp:
     - **Namn (obligatoriskt)**: Ange ett eget namn för den prioriterade användargruppen. Du kan inte ändra namnet på prioritetsgruppen när du har slutfört guiden.
     - **Beskrivning (valfritt)**: Ange en beskrivning för prioritetsgruppen för användargruppen.
-5. Välj **Nästa för** att fortsätta.
+5. Gå vidare genom att klicka på **Nästa.**
 6. På sidan **Välj** medlemmar  väljer du Välj medlemmar för att söka och välja vilka  e-postaktiverade användarkonton som ska ingå i gruppen, eller markera kryssrutan Markera alla om du vill lägga till alla användare i organisationen i gruppen. Välj **Lägg till** för att fortsätta eller **Avbryt** om du vill stänga utan att lägga till några användare i gruppen.
-7. Välj **Nästa för** att fortsätta.
+7. Gå vidare genom att klicka på **Nästa.**
 8. På sidan **Granska** granskar du de inställningar som du har valt för prioritetsgruppen. Välj **Redigera** om du vill ändra något av gruppvärdena eller **välj Skicka** för att skapa och aktivera prioritetsanvändargruppen.
 9. På bekräftelsesidan väljer du **Klar för** att avsluta guiden.
 
@@ -297,8 +297,8 @@ Så här redigerar du en prioritetsgrupp:
 1. Gå [till Microsoft 365 Insider-riskhantering](https://compliance.microsoft.com) **i kompatibilitetscentret** och välj **Inställningar för Insider-risker.**
 2. Välj fliken **Prioritet för användargrupper**
 3. Markera den prioritetsgrupp du vill redigera och välj **Redigera grupp.**
-4. Uppdatera fältet **Beskrivning på** sidan Definiera grupp om det behövs. Du kan inte uppdatera namnet på prioritetsgruppen. Välj **Nästa för** att fortsätta.
-5. På sidan **Välj medlemmar** lägger du till nya medlemmar i gruppen med hjälp av **kontrollen Välj** medlemmar. Om du vill ta bort en användare från gruppen väljer du X bredvid den användare du vill ta bort. Välj **Nästa för** att fortsätta.
+4. Uppdatera fältet **Beskrivning på** sidan Definiera grupp om det behövs. Du kan inte uppdatera namnet på prioritetsgruppen. Gå vidare genom att klicka på **Nästa.**
+5. På sidan **Välj medlemmar** lägger du till nya medlemmar i gruppen med hjälp av **kontrollen Välj** medlemmar. Om du vill ta bort en användare från gruppen väljer du X bredvid den användare du vill ta bort. Gå vidare genom att klicka på **Nästa.**
 6. Granska de **uppdateringsinställningar** du har valt för prioritetsgruppen på sidan Granska. Välj **Redigera** om du vill ändra något av gruppvärdena eller välj **Skicka** för att uppdatera prioritetsgruppen för användare.
 7. På bekräftelsesidan väljer du **Klar för** att avsluta guiden.
 
@@ -494,7 +494,7 @@ Beroende på antalet användare som tilldelats rollgrupperna för Insider-riskha
 
 ## <a name="analytics-preview"></a>Analys (förhandsversion)
 
-Med Insider-riskanalyser kan du göra en utvärdering av potentiella Insider-risker i organisationen utan att konfigurera insiderriskprinciper. Den här utvärderingen kan hjälpa din organisation att identifiera potentiella områden med högre användarrisker och hjälpa till att fastställa typ och omfattning för principer för Insider-riskhantering som du kan överväga att konfigurera. Analyser ger följande fördelar för din organisation:
+Insiderriskanalys gör att du kan göra en utvärdering av potentiella insiderrisker i din organisation utan att konfigurera några principer för insiderrisk. Denna utvärdering kan hjälpa din organisation att identifiera potentiella områden med högre användarrisk och hjälpa till att bestämma typen och omfattningen av principer för hantering av insiderrisk som du kan överväga att konfigurera. Analyser ger följande fördelar för din organisation:
 
 - Enkel att konfigurera: Om du vill komma igång med analyser kan du välja Kör genomsökning när du uppmanas att göra det enligt rekommendationen för analys eller gå till Insider-riskinställningar > på fliken Analys och aktivera analyser.
 - Minimala sekretesskrav: Genomsökningsresultat och insikter returneras som anonymiserad användaraktivitet. Enskilda användarnamn kan inte identifieras av granskarna.

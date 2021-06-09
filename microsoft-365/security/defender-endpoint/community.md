@@ -43,7 +43,7 @@ Det finns flera platser där du kan utforska och lära dig mer om specifik infor
 
 
 Du kan komma åt Community Center på flera olika sätt:
-- Välj Community Center i navigeringsfönstret i Microsoft Defender **Säkerhetscenter.**  En ny webbläsarflik öppnas och tar dig till sidan Defender för Endpoint Tech Community. 
+- I Microsoft Defender Säkerhetscenter väljer du **Community Center**.  En ny webbläsarflik öppnas och tar dig till sidan Defender för Endpoint Tech Community. 
 - Få åtkomst till communityn via [sidan Microsoft Defender för Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)
 
 

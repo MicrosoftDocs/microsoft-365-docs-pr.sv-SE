@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Befintliga Office 365-kunder måste skicka en begäran innan tidsgränsen för sitt land för att deras Microsoft 365-tjänstdata ska flyttas till den nya geoinformationen.
+description: Existing Office 365 customers must submit a request before the deadline for their country to have their Microsoft 365 services data moved to their new geo.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: e68feeca842061c43c7be70d9b8b930f068d8e4e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -25,9 +25,9 @@ ms.locfileid: "50927318"
 # <a name="how-to-request-your-data-move"></a>Hur du begär din dataflytt
 
 > [!NOTE]
-> Informationen på den här sidan gäller endast kunder som hade befintliga Microsoft 365-klientorganisationar innan de nya datacenter i deras datacenter geo öppnats. Berättigande till migrering beror också på det specifika etableringsdatumet för tjänsten.  Datumet då klienten skapades kanske inte alltid är det datum som är viktigt.
+> Informationen på den här sidan gäller endast kunder som hade befintliga Microsoft 365 innan de nya datacenter i deras datacenter geo öppnades. Berättigande till migrering beror också på det specifika etableringsdatumet för tjänsten.  Datumet då klienten skapades kanske inte alltid är det datum som är viktigt.
   
-Kvalificerade Microsoft 365-kunder kan begära migrering för hela organisationens grundläggande kunddata i vila.  Programmet stödjer begäranden för varje land i den tidsperiod som beskrivs i tabellen och från kunder med ett berättigat registreringland som är associerat med deras Microsoft 365-klientorganisation.
+Kvalificerade Microsoft 365 kan begära migrering för hela organisationens centrala kunddata i vila.  Programmet stödjer begäranden för varje land i den tidsperiod som beskrivs i tabellen och från kunder med ett berättigat registreringland som är kopplat till deras Microsoft 365 klientorganisation.
   
 ## <a name="when-can-i-request-a-move"></a>När kan jag begära en flytt?
 
@@ -49,9 +49,9 @@ Kvalificerade Microsoft 365-kunder kan begära migrering för hela organisatione
 
 ## <a name="how-to-request-a-move"></a>Så här begär du en flytt
 
-Berättigade kunder ser en sida i administrationscentret för Microsoft 365, där de kan begära att få sina basdata flyttade till det nya datacentret.  
+Berättigade kunder ser en sida i administrationscentret i Microsoft 365 där de kan begära att få sina basdata flyttade till det nya datacentret.  
   
-För att komma åt sidan i administrationscentret för Microsoft 365 går du till navigeringsfönstret till vänster, **expanderar Inställningar** och klickar sedan **på Organisationsinställningar.**
+För att komma åt sidan Microsoft 365 administrationscenter expanderar du gruppen Inställningar i navigeringsfönstret till vänster och klickar **sedan på Inställningar**.
 Välj fliken **Organisationsprofil** och välj sedan alternativet **Datahemhem .**
   
 Det här avsnittet visas inte om din klientorganisation inte är berättigad till Microsoft 365 Move Program.  Om din organisation har krav för att lagra data och du behöver begära migrering markerar du kryssrutan och sedan **Spara.**
@@ -68,14 +68,14 @@ Flytten kan ta upp till 24 månader från tidsgränsen för begäran för ditt l
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Från och med januari 2020 kan kunder i berättigade Office 365-länder registrera sig för migrering av chatttjänstdata för Microsoft Teams.  Kunder som tidigare registrerade sig för en datahemflyttning kommer också att få Teams flytta till sitt lokala datacenter geo.  Dessa kunder behöver inte vidta några ytterligare åtgärder.
+Från och med januari 2020 kan kunder i kvalificerade Office 365 registrera sig för migrering av Microsoft Teams och chatttjänstdata.  Kunder som tidigare har anmält sig för en Data Residency-flytt kommer också att Teams till sitt lokala datacenter geo.  Dessa kunder behöver inte vidta några ytterligare åtgärder.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Flytta basdata till nya geodata i Office 365-datacenter](moving-data-to-new-datacenter-geos.md)
+[Flytta basdata till nya Office 365 geodatadata](moving-data-to-new-datacenter-geos.md)
 
 [Vanliga frågor och svar om dataflytt](data-move-faq.md)
 
-[Nya datacenter geos för Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
+[Nya geodatadatadata för Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure-tjänster efter region](https://azure.microsoft.com/regions/)

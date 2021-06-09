@@ -54,11 +54,11 @@ Administratörer kan använda Exchange Online PowerShell för att inaktivera, ak
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du kan bara använda Exchange Online PowerShell för att göra procedurerna i den här artikeln. Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Du kan bara använda Exchange Online PowerShell för att göra procedurerna i den här artikeln. Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Du måste ha tilldelats behörigheter i Exchange Online innan du kan utföra procedurerna i den här artikeln. Specifikt behöver du  rollen E-postmottagare (som är tilldelad  rollgrupperna Organisationshantering, Mottagarhantering  och Anpassade e-postmottagare  som standard) eller rollen Användaralternativ (som är tilldelad rollgrupperna Organisationshantering och Supportavdelning som standard).   Information om hur du lägger till användare i rollgrupper Exchange Online finns [i Ändra rollgrupper i Exchange Online.](/Exchange/permissions-exo/role-groups#modify-role-groups) Observera att användare med standardbehörigheter kan göra samma procedurer för sin egen postlåda, så länge de har åtkomst [till Exchange Online PowerShell.](/powershell/exchange/disable-access-to-exchange-online-powershell)
 
-- I hybridmiljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även transportregler) i lokala Exchange för att omvandla skräppostfiltreringen av EOP så att skräppostregeln kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer.](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)
+- I hybridmiljöer där EOP skyddar lokala Exchange-postlådor måste du konfigurera e-postflödesregler (kallas även för transportregler) i lokalt Exchange för att översätta utfallet av skräppostfiltreringen i EOP så att regeln för skräppost kan flytta meddelandet till mappen Skräppost. Mer information finns i [Konfigurera EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 - Valv Avsändare för delade postlådor synkroniseras inte till Azure AD och EOP som design.
 

@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Lär dig hur du skickar krypterade e-postmeddelanden med Outlook.
+description: Lär dig hur du skickar krypterade e-postmeddelanden Outlook.
 ms.openlocfilehash: 209734bd52d1d97278d5632f035723758fe2e016
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -47,21 +47,21 @@ Innan du skickar e-post med konfidentiell eller känslig information bör du öv
 
 ## <a name="set-it-up"></a>Konfigurera
 
-Om du vill kryptera ett meddelande som inte uppfyller en fördefinierad regel eller om administratören inte har angett några regler kan du använda en mängd olika krypteringsregler innan du skickar meddelandet. Om du vill skicka ett krypterat meddelande från Outlook 2013 eller 2016 eller Outlook 2016 för Mac väljer du **Alternativ > Behörigheter** och sedan det skyddsalternativ du behöver. Du kan också skicka ett krypterat meddelande genom att **välja knappen** Skydda i Outlook på webben. Mer information finns i [Skicka, visa och svara på krypterade meddelanden i Outlook för PC.](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+Om du vill kryptera ett meddelande som inte uppfyller en fördefinierad regel eller om administratören inte har angett några regler kan du använda en mängd olika krypteringsregler innan du skickar meddelandet. Om du vill skicka ett krypterat meddelande från Outlook 2013 eller 2016 eller Outlook 2016 för Mac väljer du **Alternativ > Behörigheter** och sedan det skyddsalternativ du behöver. Du kan också skicka ett krypterat meddelande genom att välja **knappen** Skydda Outlook på webben. Mer information finns i [Skicka, visa och svara på krypterade meddelanden i Outlook för PC.](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
 
 ## <a name="admin-settings"></a>Administratörsinställningar
 
-Du kan lära dig allt om att konfigurera e-postkryptering [i E-postkryptering i Microsoft 365.](../compliance/email-encryption.md)
+Du kan lära dig allt om att konfigurera e-postkryptering [i E-postkryptering i Microsoft 365](../compliance/email-encryption.md).
 
 ### <a name="automatically-encrypt-email-messages"></a>Kryptera e-postmeddelanden automatiskt
 
 Administratörer kan skapa e-postflödesregler för att automatiskt skydda e-postmeddelanden som skickas och tas emot från kampanjen. Konfigurera regler för att kryptera alla utgående e-postmeddelanden och ta bort kryptering från krypterade meddelanden från organisationen eller från svar på krypterade meddelanden som skickas från organisationen.
 
-Du skapar e-postflödesregler för att kryptera e-postmeddelanden med de nya funktionerna i Meddelandekryptering i Office 365 (OME). Definiera e-postflödesregler för att utlösa meddelandekryptering med de nya OME-funktionerna med hjälp av administrationscentret för Exchange (EAC). 
+Du skapar e-postflödesregler för att kryptera e-postmeddelanden med de Meddelandekryptering i Office 365 funktionerna (OME). Definiera e-postflödesregler för att utlösa meddelandekryptering med de nya OME-funktionerna med hjälp Exchange Admin Center (EAC). 
 
 1. Använd ett arbets- eller skolkonto som har beviljats global administratörsbehörighet i en webbläsare och logga in.
 2. Välj panelen Admin.
-3. I administrationscentret väljer du **Administrationscenter > Exchange.**
+3. I administrationscentret väljer du **Administrationscenter > Exchange**.
 
 Mer information finns i Definiera [e-postflödesregler för att kryptera e-postmeddelanden.](../compliance/define-mail-flow-rules-to-encrypt-email.md)
 

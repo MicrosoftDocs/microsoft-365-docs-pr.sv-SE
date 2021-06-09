@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > I hybriddistributioner där EOP skyddar lokala Exchange-postlådor måste du konfigurera två e-postflödesregler för Exchange (kallas även transportregler) i den lokala Exchange-organisationen för att identifiera rubrikerna för EOP-skräppostfiltrering som läggs till i meddelanden. Mer information finns i [Konfigurera EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer.](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)
+      > I hybriddistributioner där EOP skyddar lokala Exchange-postlådor måste du konfigurera två e-postflödesregler för Exchange (kallas även transportregler) i den lokala Exchange-organisationen för att identifiera rubrikerna för EOP-skräppostfiltrering som läggs till i meddelanden. Mer information finns i [Konfigurera EOP för att leverera skräppost till mappen Skräppost i hybridmiljöer](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
        **För utgående meddelanden:** Meddelandet dirigeras antingen [](high-risk-delivery-pool-for-outbound-messages.md) via högriskleveranspoolen eller returneras till avsändaren i en rapport om utebliven leverans (kallas även NDR eller icke-leveranskavvisningsmeddelande). Mer information om skydd mot utgående skräppost finns i [Kontrollerna för utgående skräppost.](outbound-spam-controls.md)
   - question: >

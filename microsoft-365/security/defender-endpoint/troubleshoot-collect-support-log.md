@@ -45,7 +45,7 @@ I det här avsnittet finns instruktioner om hur du kör verktyget via Live Respo
  
 2.  Starta en [Live Response-session](live-response.md#initiate-a-live-response-session-on-a-device) på den dator du behöver undersöka.
 
-3.  Välj **Ladda upp fil till bibliotek**.
+3.  Välj **Upload till biblioteket**.
 
     ![Bild på uppladdningsfil](images/upload-file.png)
 

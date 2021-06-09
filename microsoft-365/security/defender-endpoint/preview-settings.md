@@ -36,7 +36,7 @@ ms.locfileid: "51861089"
 
 Aktivera inställningen för förhandsversionen och var bland de första att prova kommande funktioner.
 
-1. I navigeringsfönstret väljer du **Inställningar**  >  **Avancerade funktioner**.
+1. Välj Avancerade funktioner **Inställningar**  >  **navigeringsfönstret.**
 
     ![Bild av inställningar och förhandsgranskning](images/atp-preview-features.png)
 

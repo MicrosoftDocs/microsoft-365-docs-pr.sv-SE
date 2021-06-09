@@ -133,7 +133,7 @@ Om du kommer att använda någon av de inbyggda mallarna eller skapa e-postmedde
 
    - **Ämne:** Fältet **Ämne** i e-postmeddelandet.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 6. I steget **Skriv e-postmeddelande** skapar du meddelandetexten i e-postmeddelandet. Du kan använda fliken **E-post** (en RTF-redigerare) eller **fliken Källa** (raw HTML-kod).
 
@@ -143,7 +143,7 @@ Om du kommer att använda någon av de inbyggda mallarna eller skapa e-postmedde
 
    - `${loginserverurl}` infogar **url-värdet för nätfiskeinloggningsservern** från föregående steg.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 7. Klicka på **Slutför** i steget **Bekräfta.**
 
@@ -166,7 +166,7 @@ Om du kommer att använda någon av de inbyggda mallarna eller skapa e-postmedde
    > [!div class="mx-imgBorder"]
    > ![Nätfiskestartsida](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 4. Gör **något av följande** i steget Målmottagare:
 
@@ -174,7 +174,7 @@ Om du kommer att använda någon av de inbyggda mallarna eller skapa e-postmedde
 
    - Klicka **på Importera** och sedan på **Filimport** för att importera en fil med kommaavgränsade värden (CSV) eller en radavgränsad fil med e-postadresser. Varje rad måste innehålla mottagarens e-postadress.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 5. I steget **Konfigurera e-postinformation** konfigurerar du följande inställningar:
 
@@ -215,7 +215,7 @@ Om du kommer att använda någon av de inbyggda mallarna eller skapa e-postmedde
 
    - **Ämne:** Fältet **Ämne** i e-postmeddelandet.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 6. I steget **Skriv e-postmeddelande** skapar du meddelandetexten i e-postmeddelandet. Om du valde en mall i **steget Start** är meddelandetexten redan konfigurerad, men du kan anpassa den. Du kan använda fliken **E-post** (en RTF-redigerare) eller **fliken Källa** (raw HTML-kod).
 
@@ -230,7 +230,7 @@ Om du kommer att använda någon av de inbyggda mallarna eller skapa e-postmedde
    > [!div class="mx-imgBorder"]
    > ![Skriv brödtext för e-post](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 7. I steget **Bekräfta** klickar du på **Slutför för** att starta kampanjen. Nätfiskemeddelandet levereras till de mottagare som är mottagare.
 
@@ -269,7 +269,7 @@ I Attack Attack Attack finns det två olika typer av lösenordsattackkampanjer s
 
    - Klicka **på Importera** och sedan på **Filimport** för att importera en fil med kommaavgränsade värden (CSV) eller en radavgränsad fil med e-postadresser. Varje rad måste innehålla mottagarens e-postadress.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 5. I steget **Välj attackinställningar** väljer du vad du vill göra baserat på kampanjtypen:
 
@@ -281,7 +281,7 @@ I Attack Attack Attack finns det två olika typer av lösenordsattackkampanjer s
 
    - **Lösenordsattack:** **Skriv ett lösenord** i lösenordsrutan som ska användas i attackrutan.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 6. I steget **Bekräfta** klickar du på **Slutför för** att starta kampanjen. De angivna lösenorden provas för användare som du angett.
 

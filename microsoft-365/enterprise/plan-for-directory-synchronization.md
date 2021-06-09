@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
-description: Här beskrivs katalogsynkronisering med Microsoft 365, Active Directory Domain Services-rensning och Azure Active Directory Connect-verktyget.
+description: Här beskrivs katalogsynkronisering Microsoft 365, Rensning av Active Directory Domain Services och Azure Active Directory Anslut katalogverktyget.
 ms.openlocfilehash: 7b717f65bb434918a5eb0ab2bf4a5acab2d08eea
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,10 +30,10 @@ ms.locfileid: "50927550"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Beroende på dina affärsbehov och tekniska krav är hybrididentitetsmodellen och katalogsynkroniseringen det vanligaste valet för företagskunder som inför Microsoft 365. Med katalogsynkronisering kan du hantera identiteter i Active Directory Domain Services (AD DS) och alla uppdateringar av användarkonton, grupper och kontakter synkroniseras till Azure Active Directory-klientorganisationen (Azure AD) för Microsoft 365-prenumerationen.
+Beroende på dina affärsbehov och tekniska krav är hybrididentitetsmodellen och katalogsynkroniseringen det vanligaste valet för företagskunder som inför Microsoft 365. Med katalogsynkronisering kan du hantera identiteter i AD DS (Active Directory Domain Services) och alla uppdateringar av användarkonton, grupper och kontakter synkroniseras till Azure Active Directory-klientorganisationen (Azure AD) för Microsoft 365-prenumerationen.
 
 >[!Note]
->När AD DS-användarkonton synkroniseras för första gången tilldelas de inte automatiskt en Microsoft 365-licens och kan inte komma åt Microsoft 365-tjänster, till exempel e-post. Du måste först tilldela dem en användningsplats. Tilldela sedan en licens till dessa användarkonton, antingen individuellt eller dynamiskt genom gruppmedlemskap.
+>När AD DS-användarkonton synkroniseras för första gången tilldelas de inte automatiskt en Microsoft 365-licens och kan inte komma åt Microsoft 365 tjänster, till exempel e-post. Du måste först tilldela dem en användningsplats. Tilldela sedan en licens till dessa användarkonton, antingen individuellt eller dynamiskt genom gruppmedlemskap.
 >
 
 ## <a name="authentication-for-hybrid-identity"></a>Autentisering för hybrididentitet
@@ -63,7 +63,7 @@ Det finns två typer av hanterad autentisering:
 
 #### <a name="password-hash-synchronization-phs"></a>Synkronisering av lösenordshashar (PHS)
 
-Med PHS synkroniserar du dina AD DS-användarkonton med Microsoft 365 och hanterar dina användare lokalt. Hash-koderna för användarlösenord synkroniseras från din AD DS till Azure AD så att användarna har samma lösenord lokalt och i molnet. Det här är det enklaste sättet att aktivera autentisering för AD DS-identiteter i Azure AD. 
+Med PHS synkroniserar du dina AD DS-användarkonton med Microsoft 365 och hanterar användarna lokalt. Hash-koderna för användarlösenord synkroniseras från din AD DS till Azure AD så att användarna har samma lösenord lokalt och i molnet. Det här är det enklaste sättet att aktivera autentisering för AD DS-identiteter i Azure AD. 
 
 ![Synkronisering av lösenordshashar (PHS)](../media/plan-for-directory-synchronization/phs-authentication.png)
 
@@ -77,7 +77,7 @@ PTA tillhandahåller en enkel lösenordsverifiering för Azure AD-autentiserings
 
 ![Direktautentisering (PTA)](../media/plan-for-directory-synchronization/pta-authentication.png)
 
-Med PTA kan användarna logga in både lokalt och i Microsoft 365-resurser och -program med sina lokala konton och lösenord. Den här konfigurationen validerar användarnas lösenord direkt mot din lokala AD DS utan att lagra lösenordshashar i Azure AD. 
+Med PTA kan användarna logga in både lokalt och via Microsoft 365 och program med sina lokala konton och lösenord. Den här konfigurationen validerar användarnas lösenord direkt mot din lokala AD DS utan att lagra lösenordshashar i Azure AD. 
 
 PTA är även för organisationer med säkerhetskrav att omedelbart framtvinga lokala användarkonton, lösenordsprinciper och inloggningstimmar. 
   
@@ -85,7 +85,7 @@ Mer [information finns i Välja rätt autentiseringsmetod.](/azure/active-direct
   
 ### <a name="federated-authentication"></a>Federerad autentisering
 
-Federerad autentisering är främst för stora företag med mer komplexa autentiseringskrav. AD DS-identiteter synkroniseras med Microsoft 365 och användarkonton hanteras lokalt. Med federerad autentisering har användarna samma lösenord lokalt och i molnet och de behöver inte logga in igen för att kunna använda Microsoft 365. 
+Federerad autentisering är främst för stora företag med mer komplexa autentiseringskrav. AD DS-identiteter synkroniseras Microsoft 365 användarnas konton hanteras lokalt. Med federerad autentisering har användarna samma lösenord lokalt och i molnet och de behöver inte logga in igen för att använda Microsoft 365. 
 
 Federerad autentisering kan ha stöd för ytterligare autentiseringskrav, till exempel smartkortsbaserad autentisering eller multifaktorautentisering från tredje part, och krävs vanligtvis om organisationer har ett autentiseringskrav som inte stöds inbyggt av Azure AD.
  
@@ -93,50 +93,50 @@ Mer [information finns i Välja rätt autentiseringsmetod.](/azure/active-direct
   
 #### <a name="third-party-authentication-and-identity-providers"></a>Autentisering och identitetsproviders från tredje part
 
-Lokala katalogobjekt kan synkroniseras med Microsoft 365 och tillgång till molnresurser hanteras främst av en tredjepartsidentitetsleverantör (IdP). Om din organisation använder en federeringslösning från tredje part kan du konfigurera inloggningen med lösningen för Microsoft 365, förutsatt att federeringslösningen från tredje part är kompatibel med Azure AD.
+Lokala katalogobjekt kan synkroniseras med hjälp Microsoft 365 och tillgång till molnresurser hanteras främst av en tredjepartsidentitetsleverantör (IdP). Om organisationen använder en federeringslösning från tredje part kan du konfigurera inloggningen med lösningen för Microsoft 365 förutsatt att federeringslösningen från tredje part är kompatibel med Azure AD.
   
 Se Azure [AD federation compatibility list](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) to learn more.
   
 ## <a name="ad-ds-preparation"></a>Förberedelse av AD DS
 
-För att säkerställa en smidig övergång till Microsoft 365 med hjälp av synkronisering måste du förbereda AD DS-skogen innan du påbörjar distributionen av Microsoft 365-katalogsynkronisering.
+För att säkerställa en smidig övergång till Microsoft 365 med hjälp av synkronisering måste du förbereda AD DS-skogen innan du påbörjar distributionen Microsoft 365 katalogsynkronisering.
   
 Katalogförberedelser bör fokusera på följande uppgifter:
 
 - Ta bort **dubbletter av proxyAddress-** **och userPrincipalName-attribut.**
 - Uppdatera tomma och **ogiltiga userPrincipalName-attribut** med giltiga **userPrincipalName-attribut.**
-- Ta bort ogiltiga och tveksamma tecken i attributen **givenName**, efternamn ( **sn** ), **sAMAccountName**, **displayName,** **mail,** **proxyAddresses,** **mailNickname** och **userPrincipalName.** Mer information om hur du förbereder attribut [finns i Listan över attribut som synkroniseras med synkroniseringsverktyget för Azure Active Directory.](https://go.microsoft.com/fwlink/p/?LinkId=396719)
+- Ta bort ogiltiga och tveksamma tecken i attributen **givenName**, efternamn ( **sn** ), **sAMAccountName**, **displayName,** **mail,** **proxyAddresses,** **mailNickname** och **userPrincipalName.** Mer information om hur du förbereder attribut finns i listan över attribut som [synkroniseras av Azure Active Directory synkroniseringsverktyget.](https://go.microsoft.com/fwlink/p/?LinkId=396719)
 
     > [!NOTE]
-    > Det här är samma attribut som Azure AD Connect synkroniserar. 
+    > Det här är samma attribut som Azure AD Anslut synkroniserar. 
   
 ## <a name="multi-forest-deployment-considerations"></a>Distributionsöverväganden för flera skogar
 
-För flera skogar och SSO-alternativ använder du [en anpassad installation av Azure AD Connect.](/azure/active-directory/hybrid/how-to-connect-install-custom)
+För flera skogar och SSO-alternativ använder du [en anpassad installation av Azure AD Anslut.](/azure/active-directory/hybrid/how-to-connect-install-custom)
   
 Om din organisation har flera skogar för autentisering (skogar för inloggning) rekommenderar vi följande:
   
 - **Överväg att konsolidera dina skogar.** I allmänhet går det att underhålla flera skogar omkostnader. Om organisationen inte har säkerhetsbegränsningar som kräver separata skogar kan du överväga att förenkla din lokala miljö.
-- **Använd endast i din primära skog för inloggning.** Överväg att bara distribuera Microsoft 365 i din primära skog för inloggning för din första distribution av Microsoft 365. 
+- **Använd endast i din primära skog för inloggning.** Överväg att Microsoft 365 endast i din primära skog för inloggning för din inledande distribution av Microsoft 365. 
 
 Om du inte kan konsolidera din AD DS-distribution med flera skogar eller använder andra katalogtjänster för att hantera identiteter kan du eventuellt synkronisera dessa med hjälp av Microsoft eller en partner.
   
-Mer information [finns i Topologier](/azure/active-directory/hybrid/plan-connect-topologies) för Azure AD Connect.
+Mer information [finns i Topologier för Azure AD Anslut](/azure/active-directory/hybrid/plan-connect-topologies) mer information.
   
 ## <a name="features-that-are-dependent-on-directory-synchronization"></a>Funktioner som är beroende av katalogsynkronisering
   
 Katalogsynkronisering krävs för följande funktioner och funktioner:
   
 - Smidig och enkel Sign-On i Azure AD (SSO)
-- Skype-samexistens
-- Exchange-hybriddistribution, inklusive:
-  - Fullständigt delad global adresslista (GAL) mellan din lokala Exchange-miljö och Microsoft 365.
+- Skype samexistens
+- Exchange till hybriddistribution, inklusive:
+  - Fullständigt delad global adresslista (GAL) mellan din lokala Exchange och Microsoft 365.
   - Synkronisera GAL-information från olika e-postsystem.
-  - Möjligheten att lägga till och ta bort användare från Microsoft 365-tjänsteerbjudanden. Det kräver följande:
-  - Tvåvägssynkronisering måste konfigureras under katalogsynkroniseringskonfigurationen. Som standard skriver katalogsynkroniseringsverktyg bara kataloginformation till molnet. När du konfigurerar tvåvägssynkronisering kan du aktivera återskrivningsfunktioner så att ett begränsat antal objektattribut kopieras från molnet och sedan skrivs tillbaka till din lokala AD DS. Återskrivning kallas även Exchange-hybridläge. 
-  - En lokal Exchange-hybriddistribution
-  - Möjligheten att flytta vissa användarpostlådor till Microsoft 365 och samtidigt behålla andra användarpostlådor lokalt.
-  - Lokala betrodda avsändare och spärrade avsändare replikeras till Microsoft 365.
+  - Möjligheten att lägga till och ta bort användare Microsoft 365 tjänsterbjudanden. Det kräver följande:
+  - Tvåvägssynkronisering måste konfigureras under katalogsynkroniseringskonfigurationen. Som standard skriver katalogsynkroniseringsverktyg bara kataloginformation till molnet. När du konfigurerar tvåvägssynkronisering kan du aktivera återskrivningsfunktioner så att ett begränsat antal objektattribut kopieras från molnet och sedan skrivs tillbaka till din lokala AD DS. Återskrivning kallas även för Exchange-hybridläge. 
+  - En lokal Exchange hybriddistribution
+  - Möjligheten att flytta vissa användarpostlådor till Microsoft 365 samtidigt som andra användarpostlådor finns kvar lokalt.
+  - Valv lokala avsändare och spärrade avsändare replikeras till Microsoft 365.
   - Grundläggande delegering och e-postfunktioner för att skicka för.
   - Du har ett integrerat lokalt smartkort eller en multifaktorautentiseringslösning.
 - Synkronisering av foton, miniatyrer, konferensrum och säkerhetsgrupper

@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Client App-support: Certifikatbaserad autentisering'
+title: 'Microsoft 365 Stöd för klientprogram: Certifikatbaserad autentisering'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: I den här artikeln hittar du information om stöd för Microsoft 365 Client App för certifikatbaserad autentisering.
+description: I den här artikeln hittar du Microsoft 365 om stöd för klientappen för certifikatbaserad autentisering.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d5ebef7c10aa61ba28c8fb841468be244f6e8542
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50904997"
 ---
-# <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 Client App-support: Certifikatbaserad autentisering
+# <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 Stöd för klientprogram: Certifikatbaserad autentisering
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
@@ -32,15 +32,15 @@ Modern autentisering är en övergripande term för en kombination av autentiser
 - **Autentiseringsmetoder:** Flerfaktorautentisering Certifikatbaserad autentisering för klient.
 - **Auktoriseringsmetoder:** Microsofts implementering av Open Authorization (OAuth).
 
-Modern autentisering aktiveras med hjälp av ett autentiseringsbibliotek som Active Directory Authentication Library (ADAL) eller Microsoft Authentication Library (MSAL). Modern autentisering är det som klienter använder för att autentisera och auktorisera åtkomst till Microsoft 365-resurser. Modern autentisering använder OAuth och ger en säker mekanism för klienter för åtkomst till Microsoft 365-tjänster, utan åtkomst till användarautentiseringsuppgifter. Vid inloggning autentiserar användaren direkt med Azure Active Directory och får ett tokenpar för åtkomst/uppdatering vid returnering. Åtkomsttoken beviljar klientåtkomst till lämpliga resurser i Microsoft 365-klientorganisationen. En uppdateringstoken används för att erhålla ett nytt åtkomst- eller uppdateringstokenpar när den aktuella åtkomsttoken upphör att gälla.
+Modern autentisering aktiveras med hjälp av ett autentiseringsbibliotek som Active Directory Authentication Library (ADAL) eller Microsoft Authentication Library (MSAL). Modern autentisering är det som klienter använder för att autentisera och auktorisera åtkomst Microsoft 365 resurser. Modern autentisering använder OAuth och ger en säker mekanism för klienter för åtkomst Microsoft 365 tjänster, utan åtkomst till användarautentiseringsuppgifter. Vid inloggning autentiserar användaren direkt med sitt Azure Active Directory får ett tokenpar för åtkomst/uppdatering i retur. Åtkomsttoken beviljar klientåtkomst till lämpliga resurser i den Microsoft 365 klientorganisationen. En uppdateringstoken används för att erhålla ett nytt åtkomst- eller uppdateringstokenpar när den aktuella åtkomsttoken upphör att gälla.
 
-Modern autentisering har stöd för olika autentiseringsmetoder, till exempel certifikatbaserad autentisering. Klienter på Windows-, Android- eller iOS-enheter kan använda certifikatbaserad autentisering (CBA) för att autentisera till Azure Active Directory med hjälp av ett klientcertifikat på enheten. I stället för ett vanligt användarnamn/lösenord används certifikatet för att hämta ett åtkomst-/uppdatera tokenpar från Azure Active Directory.
+Modern autentisering har stöd för olika autentiseringsmetoder, till exempel certifikatbaserad autentisering. Klienter på Windows, Android eller iOS-enheter kan använda certifikatbaserad autentisering (CBA) för att autentisera Azure Active Directory med hjälp av ett klientcertifikat på enheten. I stället för ett vanligt användarnamn/lösenord används certifikatet för att hämta ett åtkomst-/uppdatera tokenpar från Azure Active Directory.
 
 Läs mer om [certifikatbaserad autentisering.](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)
 
 ## <a name="supported-clients--platforms"></a>Klienter som stöds & plattformar
 
-De senaste versionerna av följande klienter och plattformar har stöd för certifikatbaserad autentisering när du loggar in på Azure Active Directory-konton inom klienten (till exempel när du lägger till ett konto i appen). Mer information om plattformsstöd i Microsoft 365 finns i [Systemkrav för Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
+De senaste versionerna av följande klienter och plattformar har stöd för certifikatbaserad autentisering när du loggar Azure Active Directory-konton inom klienten (till exempel när du lägger till ett konto i appen). Mer information om plattformsstöd i Microsoft 365 finns i [Systemkrav för Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
 <br>
 <br>
 

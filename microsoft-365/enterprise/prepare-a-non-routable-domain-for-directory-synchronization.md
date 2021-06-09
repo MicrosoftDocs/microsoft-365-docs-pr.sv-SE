@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: Ta reda på vad du kan göra om du har en icke-dirigerbar domän kopplad till dina lokala användarkonton innan du synkroniserar dem med din Microsoft 365-klientorganisation.
+description: Ta reda på vad du kan göra om du har en icke-dirigerbar domän kopplad till dina lokala användarkonton innan du synkroniserar dem med Microsoft 365 klientorganisation.
 ms.openlocfilehash: e4d0e020c5792c610d501c33e8f3d5131b7a1ff0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,21 +33,21 @@ ms.locfileid: "50927402"
 
 När du synkroniserar din lokala katalog med Microsoft 365 måste du ha en verifierad domän i Azure Active Directory (Azure AD). Endast de upn-namn (User Principal Names) som är kopplade till den lokala Active Directory Domain Services-domänen (AD DS) synkroniseras. Men ALLA UPN som innehåller en icke-dirigerbar domän, till exempel ".local" (exempel: billa@contoso.local), synkroniseras med en .onmicrosoft.com domän (exempel: billa@contoso.onmicrosoft.com). 
 
-Om du använder en .local-domän för dina användarkonton i AD DS rekommenderar vi att du ändrar dem till att använda en verifierad domän, till exempel billa@contoso.com, för att synkronisera dem med din Microsoft 365-domän.
+Om du använder en .local-domän för dina användarkonton i AD DS rekommenderar vi att du ändrar dem till att använda en verifierad domän, till exempel billa@contoso.com, för att synkroniseras korrekt med Microsoft 365-domänen.
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Vad händer om jag bara har en lokal ".local"-domän?
 
-Du använder Azure AD Connect för att synkronisera din AD DS till Azure AD-klientorganisationen i din Microsoft 365-klientorganisation. Mer information finns i [Integrera lokala identiteter med Azure AD.](/azure/architecture/reference-architectures/identity/azure-ad)
+Du använder Azure AD Anslut för att synkronisera din AD DS till Azure AD-klientorganisationen i din Microsoft 365 klientorganisation. Mer information finns i [Integrera lokala identiteter med Azure AD.](/azure/architecture/reference-architectures/identity/azure-ad)
   
-Azure AD Connect synkroniserar användarnas UPN och lösenord så att användarna kan logga in med samma inloggningsuppgifter som de använder lokalt. Men Azure AD Connect synkroniserar bara användare med domäner som verifieras av Microsoft 365. Det innebär att domänen också verifieras av Azure AD eftersom Microsoft 365-identiteter hanteras av Azure AD. Med andra ord måste domänen vara en giltig Internetdomän (till exempel .com, .org, .net, .us). Om din interna AD DS endast använder en icke-dirigerbar domän (till exempel ".local") kan den inte matcha den verifierade domänen du har för Microsoft 365-klienten. Du kan åtgärda problemet genom att antingen ändra din primära domän i din lokala AD DS eller genom att lägga till ett eller flera UPN-suffix.
+Azure AD Anslut synkroniserar användarnas UPN och lösenord så att användarna kan logga in med samma inloggningsuppgifter som de använder lokalt. Men Azure AD Anslut bara synkroniserar användare till domäner som verifieras av Microsoft 365. Det innebär att domänen också verifieras av Azure AD eftersom Microsoft 365 hanteras av Azure AD. Med andra ord måste domänen vara en giltig Internetdomän (till exempel .com, .org, .net, .us). Om din interna AD DS endast använder en icke-dirigerbar domän (till exempel ".local") kan den inte matcha den verifierade domänen du har för Microsoft 365 klientorganisationen. Du kan åtgärda problemet genom att antingen ändra din primära domän i din lokala AD DS eller genom att lägga till ett eller flera UPN-suffix.
   
 ### <a name="change-your-primary-domain"></a>Ändra din primära domän
 
-Ändra din primära domän till en domän som du har verifierat i Microsoft 365, till exempel contoso.com. Alla användare som har domänen contoso.local uppdateras sedan till contoso.com. Det här är en process som är mycket involverad och en enklare lösning beskrivs i följande avsnitt.
+Ändra din primära domän till en domän som du har verifierat Microsoft 365 till exempel contoso.com. Alla användare som har domänen contoso.local uppdateras sedan till contoso.com. Det här är en process som är mycket involverad och en enklare lösning beskrivs i följande avsnitt.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>Lägga till UPN-suffix och uppdatera användarna till dem
 
-Du kan lösa problemet med ".local" genom att registrera nya UPN-suffix eller -suffix i AD DS så att de matchar den eller de domäner du verifierade i Microsoft 365. När du har registrerat det nya suffixet uppdaterar du användarnas UPN så att de ersätter ".local" med det nya domännamnet, så att ett användarkonto ser ut som billa@contoso.com.
+Du kan lösa problemet med ".local" genom att registrera nya UPN-suffix eller -suffix i AD DS så att de matchar den eller de domäner som du Microsoft 365. När du har registrerat det nya suffixet uppdaterar du användarnas UPN så att de ersätter ".local" med det nya domännamnet, så att ett användarkonto ser ut som billa@contoso.com.
   
 När du har uppdaterat UPN-namn för att använda den verifierade domänen är du redo att synkronisera din lokala AD DS med Microsoft 365.
   
@@ -57,7 +57,7 @@ När du har uppdaterat UPN-namn för att använda den verifierade domänen är d
     
     **Eller om du inte har Windows Server 2012**
     
-    Tryck **på Windows-tangenten + R** för **att** öppna dialogrutan Kör, skriv Domain.msc och välj sedan **OK.**
+    Tryck **Windows på + R** för  att öppna dialogrutan Kör, skriv Domain.msc och välj sedan **OK.**
     
     ![Välj Active Directory - domäner och förtroenden.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
@@ -77,7 +77,7 @@ När du har uppdaterat UPN-namn för att använda den verifierade domänen är d
     
     **Eller om du inte har Windows Server 2012**
     
-    Tryck **på Windows-tangenten + R** för att öppna dialogrutan Kör, skriv Dsa.msc och klicka sedan på **OK** 
+    Tryck **Windows på + R** för  att öppna dialogrutan Kör, skriv Dsa.msc och klicka sedan på **OK.**
     
 2. Välj en användare, högerklicka och välj sedan **Egenskaper**.
     
@@ -99,4 +99,4 @@ Du kan till exempel köra följande PowerShell-kommandon för att uppdatera alla
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("@contoso.local","@contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
 
-Mer information om hur du använder Windows PowerShell i AD DS finns i Modulen [Active Directory Windows PowerShell.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10))
+Se [Modulen Active Directory Windows PowerShell för](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10)) mer information om hur du använder Windows PowerShell i AD DS.

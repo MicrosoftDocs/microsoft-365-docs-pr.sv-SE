@@ -98,7 +98,7 @@ Om du skapar Valv egen princip för &-länkar i Säkerhets- och efterlevnadscent
 
    - **Beskrivning**: Ange en valfri beskrivning av principen.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 4. På **Inställningar** som visas konfigurerar du följande inställningar:
 
@@ -128,7 +128,7 @@ Om du skapar Valv egen princip för &-länkar i Säkerhets- och efterlevnadscent
 
    Fler rekommenderade värden för principinställningarna Standard och Strikt finns i Valv [principinställningar för Länkar.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 5. På sidan **Används på** som visas identifierar du de interna mottagare som principen gäller för.
 
@@ -152,7 +152,7 @@ Om du skapar Valv egen princip för &-länkar i Säkerhets- och efterlevnadscent
 
    Om du vill lägga till undantag klickar **du på Lägg till ett** villkor och väljer ett undantag under Utom **om**. Inställningarna och beteendet är likadana som villkoren.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 6. Granska **inställningarna på sidan** Granska dina inställningar som visas. Du kan klicka **på Redigera** för varje inställning för att ändra den.
 

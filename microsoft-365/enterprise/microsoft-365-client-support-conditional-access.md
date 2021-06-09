@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Client App-support: Villkorsstyrd åtkomst'
+title: 'Microsoft 365 Stöd för klientprogram: Villkorsstyrd åtkomst'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: I den här artikeln lär du dig vilka plattformar, klienter och PowerShell-moduler som stöder villkorsstyrd åtkomst för Microsoft 365.
+description: I den här artikeln lär du dig vilka plattformar, klienter och PowerShell-moduler som stöder villkorsstyrda Access för Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: c7b0b65ea25091aad01fd8741f9925f2b545e9c4
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -23,13 +23,13 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50904972"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 Client App-support: Villkorsstyrd åtkomst
+# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 Stöd för klientprogram: Villkorsstyrd åtkomst
 
 På den moderna arbetsplatsen har användarna åtkomst till organisationens resurser från olika enheter och appar, var de än befinner sig. Därför räcker det inte längre att fokusera på vem som kan komma åt en resurs. Organisationen måste också stödja hur och var en resurs nås i din infrastruktur för åtkomstkontroll.
 
-Med Azure Active Directory-enhet, -plats och flerfaktorautentiseringsbaserad villkorlig åtkomst kan du uppfylla det här nya kravet. Villkorsstyrd åtkomst är en funktion i Azure Active Directory som gör att du kan tillämpa kontroller för åtkomst till appar i din miljö, allt baserat på specifika villkor och hanteras från en central plats.
+Med Azure Active Directory enhet, plats och multifaktorautentiseringsbaserad villkorsstyrd åtkomst kan du uppfylla det här nya kravet. Villkorsstyrd åtkomst är en funktion i Azure Active Directory som gör att du kan tillämpa kontroller för åtkomst till appar i din miljö, allt baserat på specifika villkor och hanteras från en central plats.
 
-Läs mer om [villkorsstyrd åtkomst i Azure Active Directory.](/azure/active-directory/conditional-access/)
+Läs mer om [Azure Active Directory villkorsstyrd åtkomst.](/azure/active-directory/conditional-access/)
 
 ## <a name="supported-clients--platforms"></a>Klienter som stöds & plattformar
 

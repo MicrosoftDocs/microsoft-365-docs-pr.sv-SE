@@ -39,7 +39,7 @@ Om du vill bli defender för slutpunktslösningspartner måste du följa och slu
 Prenumerera på [Microsoft Defender för slutpunktsutvecklarelicensen](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9). När du prenumererar kan du använda en Microsoft Defender för slutpunktsklientorganisation med upp till 10 enheter för att utveckla lösningar som kan integreras med Microsoft Defender för Slutpunkt. 
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>Steg 2: Uppfylla kraven för lösningsverifiering och certifiering
-Det bästa sättet för teknikpartner att intyga att deras integration fungerar är att få en gemensam kund att godkänna den föreslagna integrationsdesignen (kunden kan använda alternativet Rekommendera en **partner** på sidan [Partnerprogram](https://securitycenter.microsoft.com/interoperability/partners) i Microsoft Defender Säkerhetscenter) och få den testad och nedgraderad till Microsoft Defender för Slutpunkt-teamet.
+Det bästa sättet för teknikpartner att intyga att deras integration fungerar är att få en gemensam kund att godkänna den föreslagna integrationsdesignen (kunden kan använda alternativet Rekommendera **en partner** på sidan [Partnerprogram](https://securitycenter.microsoft.com/interoperability/partners) i Microsoft Defender Säkerhetscenter) och få den testad och nedgraderad till Microsoft Defender för Slutpunkt-teamet.
 
 När Microsoft Defender för Endpoint-teamet har granskat och godkänt integreringen dirigerar vi dig till att tas med som partner på Microsoft Intelligent Security Association.
 
@@ -56,7 +56,7 @@ För att ditt företag ska visas som partner på sidan för produktpartner måst
 3. Ange en produktbeskrivning på 15 ord.
 4. Länka till startsidan för kunden för att slutföra integreringen eller blogginlägget med tillräcklig information för kunderna. Alla pressmeddelanden, inklusive Microsoft Defender för Endpoint-produktens namn, bör granskas av marknadsförings- och teknikteamen. Vänta i minst 10 dagar på att granskningsprocessen ska vara klar.
 5.  Om du använder Azure AD-metoden med flera innehavare behöver vi Azure AD-programmets namn för att kunna spåra användningen av programmet.
-6. Ta med User-Agent i varje API-anrop till Microsoft Defender för offentlig uppsättning av API:er eller Graph-säkerhets-API:er. Det används i statistiska syften, felsökning och partnerigenkänning. Det här steget är dessutom ett krav för medlemskap i Microsoft Intelligent Security Association (MISA).
+6. Ta med User-Agent i varje API-anrop som görs i Microsoft Defender för offentlig uppsättning slutpunkts-API:er eller Graph-säkerhets-API:er. Det används i statistiska syften, felsökning och partnerigenkänning. Det här steget är dessutom ett krav för medlemskap i Microsoft Intelligent Security Association (MISA).
 
     Gör så här:
     

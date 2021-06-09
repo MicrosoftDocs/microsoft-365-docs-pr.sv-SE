@@ -45,8 +45,8 @@ Den här händelsen genereras varje gång ett dokument utan etikett sätts i eti
 |Enhetlig klient och enhetlig AIP-skanner i Azure Information Protection (AIP) |ja |Åtgärden för ny *etikett i* AIP mappas till etiketten som *används i* aktivitetsutforskaren   |
 |Microsoft information protection (MIP) SDK         |ja|Åtgärden för ny *etikett i* AIP mappas till etiketten som *används i* aktivitetsutforskaren|
 |RMS (Rights Management Service)         |ej tillämpligt         | |
-|Power BI dator och webb        | Nej| tillgängliga i Microsoft 365 granskningsloggar         |
-|Microsoft Cloud App Security (MCAS)         |Nej|         |
+|Power BI dator och webb        | nej| tillgängliga i Microsoft 365 granskningsloggar         |
+|Microsoft Cloud App Security (MCAS)         |nej|         |
 
 ## <a name="sensitivity-label-changed"></a>Känslighetsetikett har ändrats
 
@@ -70,8 +70,8 @@ Den här händelsen genereras varje gång en känslighetsetikett uppdateras i do
 |AIP unified scanner         |ja         |
 |MIP SDK         |ja         |
 |RMS-tjänst         |ej tillämpligt         |
-|Power BI dator och webb         |Nej         |tillgängliga i Microsoft 365 granskningsloggar |
-|MCAS     |Nej         |         |
+|Power BI dator och webb         |nej         |tillgängliga i Microsoft 365 granskningsloggar |
+|MCAS     |nej         |         |
 
 ## <a name="sensitivity-label-removed"></a>Känslighetsetikett borttagen
 
@@ -91,8 +91,8 @@ Den här händelsen genereras varje gång en känslighetsetikett tas bort från 
 |AIP unified scanner         |ja         |Åtgärden Ta bort *etikett i* AIP är mappad till åtgärden ta *bort etikett* i aktivitetsutforskaren |
 |MIP SDK         |ja         |Åtgärden Ta bort *etikett i* AIP är mappad till åtgärden ta *bort etikett* i aktivitetsutforskaren |
 |RMS-tjänst         |ej tillämpligt         |
-|Power BI dator och webb         |Nej         |tillgängliga i Microsoft 365 granskningsloggar |
-|MCAS     |Nej         |         |
+|Power BI dator och webb         |nej         |tillgängliga i Microsoft 365 granskningsloggar |
+|MCAS     |nej         |         |
  
 
 ## <a name="sensitivity-label-file-read"></a>Känslighetsetikettsfil läst
@@ -102,15 +102,15 @@ Den här händelsen genereras varje gång ett känslighetsetiketterat eller skyd
 |Source  |Rapporterad i Aktivitetsutforskaren | Obs!  |
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |ja         |
-|Outlook         |Nej         |
-|SharePoint Online, OneDrive         |Nej         |
-|Exchange         |Nej         |
+|Outlook         |nej         |
+|SharePoint Online, OneDrive         |nej         |
+|Exchange         |nej         |
 |Enhetlig AIP-klient         |ja         |*AIP-åtkomståtgärden* mappas till *läsåtgärden för* filen i aktivitetsutforskaren|
 |AIP unified scanner         |ja         |*AIP-åtkomståtgärden* mappas till *läsåtgärden för* filen i aktivitetsutforskaren|
 |MIP SDK         |ja         |*AIP-åtkomståtgärden* mappas till *läsåtgärden för* filen i aktivitetsutforskaren|
 |RMS-tjänst         |ja         |*Åtkomståtgärden* är mappad till *filläsningsåtgärden* i aktivitetsutforskaren |
-|Power BI dator och webb         |Nej         |tillgängliga i Microsoft 365 granskningsloggar |
-|MCAS     |Nej         |         |
+|Power BI dator och webb         |nej         |tillgängliga i Microsoft 365 granskningsloggar |
+|MCAS     |nej         |         |
 
 
 ## <a name="files-discovered"></a>Upptäckta filer
@@ -139,14 +139,14 @@ Den här händelsen genereras varje gång ett dokument med en känslighetsetiket
 |---------|---------|---------| 
 |Word, Excel, PowerPoint         |ja         |
 |Outlook         |ej tillämpligt         |
-|SharePoint Online, OneDrive         |Nej        |
+|SharePoint Online, OneDrive         |nej        |
 |Exchange         |ej tillämpligt         |
-|Enhetlig AIP-klient         |Nej         |
-|AIP unified scanner         |Nej         |
-|MIP SDK         |Nej         |
-|RMS-tjänst         |Nej      |
-|Power BI dator och webb         |Nej         |
-|MCAS     |Nej         |         |
+|Enhetlig AIP-klient         |nej         |
+|AIP unified scanner         |nej         |
+|MIP SDK         |nej         |
+|RMS-tjänst         |nej      |
+|Power BI dator och webb         |nej         |
+|MCAS     |nej         |         |
 
 
 ## <a name="file-removed"></a>Filen har tagits bort
@@ -172,10 +172,10 @@ Den här händelsen genereras första gången skydd läggs till manuellt för et
 
 |Source  |Rapporterad i Aktivitetsutforskaren | Obs!  |
 |---------|---------|---------| 
-|Word, Excel, PowerPoint         |Nej         |
-|Outlook         |Nej         |
+|Word, Excel, PowerPoint         |nej         |
+|Outlook         |nej         |
 |SharePoint Online, OneDrive         |ej tillämpligt           |
-|Exchange         |Nej       |
+|Exchange         |nej       |
 |Enhetlig AIP-klient         |ja            |
 |AIP unified scanner         |ej tillämpligt         |
 |MIP SDK         |ja            |
@@ -189,10 +189,10 @@ Den här händelsen genereras varje gång skyddet för ett dokument utan etikett
 
 |Source  |Rapporterad i Aktivitetsutforskaren |
 |---------|---------| 
-|Word, Excel, PowerPoint         |Nej         |
-|Outlook         |Nej         |
+|Word, Excel, PowerPoint         |nej         |
+|Outlook         |nej         |
 |SharePoint Online, OneDrive         |ej tillämpligt           |
-|Exchange         |Nej       |
+|Exchange         |nej       |
 |Enhetlig AIP-klient         |ja            |
 |AIP unified scanner         |ej tillämpligt         |
 |MIP SDK         |ja            |
@@ -206,10 +206,10 @@ Den här händelsen genereras varje gång skyddet för ett dokument utan etikett
 
 |Source  |Rapporterad i Aktivitetsutforskaren |
 |---------|---------| 
-|Word, Excel, PowerPoint         |Nej         |
-|Outlook         |Nej         |
+|Word, Excel, PowerPoint         |nej         |
+|Outlook         |nej         |
 |SharePoint Online, OneDrive         |ej tillämpligt           |
-|Exchange         |Nej       |
+|Exchange         |nej       |
 |Enhetlig AIP-klient         |ja            |
 |AIP unified scanner         |ej tillämpligt         |
 |MIP SDK         |ja            |
@@ -228,9 +228,9 @@ Den här händelsen genereras varje gång en DLP-princip matchas i ett dokument 
 |OneDrive |ja|
 |Teams |ja   |
 |Windows 10-enheter         |ja |
-|MAC         |Nej     |
-|lokalt         |Nej|
-|MCAS     |Nej        | 
+|MAC         |nej     |
+|lokalt         |nej|
+|MCAS     |nej        | 
 
 Händelserna för Windows 10 enheter (Endpoint DLP) är:
 
@@ -253,7 +253,7 @@ Den här händelsen genereras varje gång ett dokument utan etiketter etikettera
 
 |Source  |Rapporterad i Aktivitetsutforskaren |
 |---------|---------| 
-|Exchange         |Nej       |
+|Exchange         |nej       |
 |SharePoint Online|ja          |
 |OneDrive |ja|
 
@@ -265,7 +265,7 @@ Händelsen genereras varje gång en etikett uppdateras i ett dokument eller e-po
 
 |Source  |Rapporterad i Aktivitetsutforskaren |
 |---------|---------| 
-|Exchange         |Nej       |
+|Exchange         |nej       |
 |SharePoint Online|ja          |
 |OneDrive |ja|
  
@@ -277,7 +277,7 @@ Händelsen genereras varje gång en etikett tas bort från en fil eller ett doku
 
 |Source  |Rapporterad i Aktivitetsutforskaren |
 |---------|---------| 
-|Exchange         |Nej       |
+|Exchange         |nej       |
 |SharePoint Online|ja          |
 |OneDrive |ja|
 

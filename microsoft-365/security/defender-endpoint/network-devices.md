@@ -1,5 +1,5 @@
 ---
-title: Identifiering och sårbarhetshantering för nätverksenhet
+title: Identifiering och hantering av säkerhetsrisker
 description: Rekommendationer och identifiering av säkerhetsbrister är nu tillgängliga för operativsystem för switchar, routrar, WLAN-handkontroller och brandväggar.
 keywords: nätverksenheter, nätverksenheter för sårbarhetsidentifiering, operativsystem för switchar, routrar, WLAN-styrenheter och brandväggar
 search.product: eADQiWindows 10XVcnh
@@ -25,14 +25,14 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/16/2021
 ms.locfileid: "51862073"
 ---
-# <a name="network-device-discovery-and-vulnerability-management"></a>Identifiering och sårbarhetshantering för nätverksenhet
+# <a name="network-device-discovery-and-vulnerability-management"></a>Identifiering och hantering av säkerhetsrisker
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Hantering av hot och sårbarhet](next-gen-threat-and-vuln-mgt.md)
+- [Hot och hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
@@ -45,9 +45,9 @@ ms.locfileid: "51862073"
 > [!NOTE]  
 > Blogg [som](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) publicerats \( 2021-04-13-2021 med insikter om de nya funktionerna för identifiering av nätverksenhet i \) Defender för Slutpunkt.  Den här artikeln innehåller en översikt över utmaningen **som** upptäckten av nätverksenhet är utformad för att hantera och detaljerad information om hur du kommer igång med de här nya funktionerna.
 
-Funktioner för nätverksidentifiering  är tillgängliga i avsnittet Enhetsinventering i Säkerhetscenter för Microsoft 365 och Microsoft Defender Säkerhetscenter-konsoler.  
+Funktioner för nätverksidentifiering är tillgängliga i **avsnittet** Enhetsinventering Microsoft 365 säkerhetscenter och Microsoft Defender Säkerhetscenter konsoler.  
 
-En Microsoft Defender för Slutpunkt-enhet används på varje nätverkssegment för att utföra periodiska autentiserade genomsökningar av förkonfigurerade nätverksenheter. När Defender har identifierats tillhandahåller Defender för Endpoints hanteringsfunktioner för hot och sårbarhet integrerade arbetsflöden för att säkra identifierade switchar, routrar, WLAN-styrenheter, brandväggar och VPN-gatewayer.  
+En Microsoft Defender för Slutpunkt-enhet används på varje nätverkssegment för att utföra periodiska autentiserade genomsökningar av förkonfigurerade nätverksenheter. När Den har identifierats tillhandahåller Defender för Endpoints Hantering av hot och säkerhetsrisker-funktioner integrerade arbetsflöden för att säkra identifierade switchar, routrar, WLAN-styrenheter, brandväggar och VPN-gatewayer.  
 
 När nätverksenheterna upptäcks och klassificeras kommer säkerhetsadministratörerna att kunna ta emot de senaste säkerhetsrekommendationerna och granska nyligen identifierade svagheter på nätverksenheter som distribuerats i deras organisationer.
 
@@ -109,8 +109,8 @@ För att konfigurera utvärderingsjobb krävs följande användarbehörighetsalt
 
 ## <a name="install-the-network-scanner"></a>Installera nätverksskannern
 
-1. Gå till **Slutpunkter för säkerhetsinställningar för Microsoft 365**  >    >    >  **Utvärderingsjobb** (under **Nätverksutvärderingar**).
-    1. I Microsoft Defender Säkerhetscenter går du till sidan Inställningar > Utvärderingsjobb.
+1. Gå till **Microsoft 365 säkerhetsjobb**  >  **Inställningar**  >  **Endpoints**  >  **Assessment jobs** (under **Nätverksutvärderingar).**
+    1. I Microsoft Defender Säkerhetscenter du till sidan Inställningar > Utvärderingsjobb.
 
 2. Ladda ned nätverksskannern och installera den på den angivna Defender för Endpoint-utvärderingsenheten.
 
@@ -134,7 +134,7 @@ Så här slutför du registreringen av nätverksskannern:
 
 ## <a name="configure-a-new-assessment-job"></a>Konfigurera ett nytt bedömningsjobb  
 
-På sidan Utvärderingsjobb i Inställningar **väljer** du **Lägg till nätverksutvärderingsjobb.** Följ uppprocessen för att välja nätverksenheter som ska genomsökas regelbundet och läggas till i enhetsinventeringen.
+På sidan Utvärderingsjobb i **Inställningar** väljer du Lägg **till nätverksutvärderingsjobb**. Följ uppprocessen för att välja nätverksenheter som ska genomsökas regelbundet och läggas till i enhetsinventeringen.
 
 För att förhindra duplicering av enheter i nätverkets enhetslager ska du se till att varje IP-adress bara är konfigurerad en gång på flera utvärderingsenheter.
 
@@ -193,7 +193,7 @@ Om du fortfarande inte får några resultat efter fem minuter startar du om tjä
 
 Kontrollera att skannern körs korrekt. Gå sedan till genomsökningsdefinitionen och välj "Kör test". Kontrollera vilka felmeddelanden som skickas tillbaka från relevanta IP-adresser.
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>Obligatorisk användarbehörighet för hot och sårbarhetshantering
+### <a name="required-threat-and-vulnerability-management-user-permission"></a>Obligatorisk Hantering av hot och säkerhetsrisker användarbehörighet
 
 Registreringen har slutförts med ett fel: "Det verkar som att du inte har tillräcklig behörighet för att lägga till en ny agent. Den behörighet som krävs är "Hantera säkerhetsinställningar i Säkerhetscenter".
 

@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Client App-support: Multifaktorautentisering'
+title: 'Microsoft 365 Stöd för klientprogram: Multifaktorautentisering'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927573"
 ---
-# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 Client App-support: Multifaktorautentisering
+# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 Stöd för klientprogram: Multifaktorautentisering
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 

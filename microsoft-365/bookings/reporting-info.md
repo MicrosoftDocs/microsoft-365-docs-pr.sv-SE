@@ -28,7 +28,7 @@ Den här informationen på avtalad tidsnivå kan användas för att visualisera 
 
 :::image type="content" source="../media/bookings-activities.png" alt-text="Skärmbild: 4 månader med Bookings-aktivitet":::
 
-1. Spara filen med ett nytt namn och ange formatet .xls eller xlsx.
+1. Spara filen med ett nytt namn och ange ett .xls xlsx-format.
 
 1. Öppna filen för att visa den fyra månadsvy i kalendern i Bookings.
 
@@ -43,7 +43,7 @@ Rapporten innehåller följande fält.
  - **Datum & tid**
 - **Kundnamn**
 - **Kund-e-post**
-- **Kundtelefon**
+- **Kund Telefon**
 - **Kundadress**
 - **Personal**
 - **Tjänst**
@@ -56,8 +56,8 @@ Den förbättrade rapporten innehåller nu följande fält.
 - **Pristyp**   Standardpristyp som angetts för en tjänst när tjänsten skapas.
 - **Pris**   Pris som motsvarar den valda pristypen.
 - **Valuta**   Valutatyp inställd för ett företag.
-- **Cc-deltagare**   De mottagare som kommer att få e-postaviseringar för en bokning. Detta kan anges från Teams-appen när du skapar en bokning.
+- **Cc-deltagare**   De mottagare som kommer att få e-postaviseringar för en bokning. Du anger detta i Teams när du gör en bokning.
 - **Registrerade deltagare Count**   Hur många kunder har bokat en gruppbokningstjänst.
-- **Sms-aviseringar aktiverat**   Om kunder kan ta emot SMS-sms-relaterade aviseringar.
+- **Sms-aviseringar aktiverat**   Om kunder kan SMS sms-relaterade meddelanden.
 - **Anpassade fält**   Alla frågor och svar som rör en enskild bokning kombineras i det här fältet.
 - **Boknings-ID**   Det här är användbart för att identifiera samma bokningar för en grupptjänst.

@@ -13,7 +13,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: Hur en fiktiv men representativ global organisation övertaget har infört Microsoft 365 för företag.
+description: Hur en fiktiv men representativ global organisation över Microsoft 365 för företag.
 ms.openlocfilehash: e14c2747837ed91a63e7609ce46307b0f38aa758
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,11 +23,11 @@ ms.locfileid: "50927586"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 för företag för Contoso Corporation
 
-Microsoft 365 för företag är Microsofts Premier-molntjänst som kombinerar lokala och molnbaserade produktivitetsappar och -tjänster med Windows 10 Enterprise och avancerade säkerhetsfunktioner. Det är en komplett och smart lösning som gör att alla kan samarbeta kreativt och säkert.
+Microsoft 365 för företag är Microsoft Premier Cloud-erbjudandet som kombinerar lokala och molnbaserade produktivitetsappar och -tjänster med Windows 10 Enterprise och avancerade säkerhetsfunktioner. Det är en komplett och smart lösning som gör att alla kan samarbeta kreativt och säkert.
 
 Contoso Corporation är ett fiktivt, men representativt globalt tillverkningsföretag med huvudkontor i Paris. Företaget distribuerade Microsoft 365 för företag och hanterade stora designbeslut och implementeringsinformation för nätverk, identitet, Windows 10 Enterprise, Microsoft 365-appar för företag, hantering av mobila enheter, informationsskydd och säkerhet.
 
-Företagets övergripande mål för Microsoft 365 för företag är att påskynda sin digitala omvandling genom att använda molntjänster för att sammanföra anställda, partner, data och processer för att skapa kundvärde och bibehålla sin konkurrensfördel i en digital första värld.
+Företagets övergripande mål för Microsoft 365 för företag är att öka företagets digitala omvandling genom att använda molntjänster för att sammanföra anställda, partner, data och processer för att skapa kundvärde och bibehålla sin konkurrensfördel i en digital första värld.
 
 Mer information finns i följande artiklar:
 
@@ -49,11 +49,11 @@ Mer information finns i följande artiklar:
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  Contoso-infrastrukturen för Windows 10 Enterprise distribuerar och installerar automatiskt uppdateringar för enheter som kör företagets primära operativsystem för datorer och enheter.
+  Contoso-infrastrukturen för Windows 10 Enterprise distribuerar och installerar automatiskt uppdateringar för enheter som kör företagets operativsystem för primär dator och enhet.
 
 - [Microsoft 365 Apps för företag](contoso-o365pp.md)
 
-  Contoso-infrastrukturen för Microsoft 365-appar för företag distribuerar och installerar automatiskt uppdateringar för Microsoft Office-paketet med produktivitetsprogramvaror.
+  Contoso-infrastrukturen för Microsoft 365-appar för företag distribuerar och installerar automatiskt uppdateringar för Microsoft Office programsviten.
 
 - [Hantering av mobila enheter](contoso-mdm.md)
 
@@ -65,7 +65,7 @@ Mer information finns i följande artiklar:
 
 - [Sammanfattning av Microsoft 365 för företagssäkerhet](contoso-security-summary.md)
 
-  Contoso använder hela skalan i Microsoft 365 för företagssäkerhetsfunktioner för identitets- och åtkomsthantering, skydd mot hot, informationsskydd och säkerhetshantering.
+  Contoso använder det fullständiga Microsoft 365 för företagssäkerhetsfunktioner för identitets- och åtkomsthantering, skydd mot hot, informationsskydd och säkerhetshantering.
 
 Se följande ytterligare IT-scenarier och konfigurationer:
 
@@ -79,15 +79,15 @@ Se följande ytterligare IT-scenarier och konfigurationer:
 
 - [Röstmigrering för Teams](/MicrosoftTeams/voice-case-study-overview)
 
-  Lär dig hur Contoso migrerade sina lokala användare till Microsoft Teams för enhetlig kommunikation, samarbete och röst.
+  Lär dig hur Contoso migrerat sina lokala användare till Microsoft Teams för enhetlig kommunikation, samarbete och röst.
 
 - [Anstötlig språkprincip för kommunikationsefterlevnad](../compliance/communication-compliance-case-study.md)
 
-  Lär dig hur Contoso snabbt konfigurerade en anstötlig språkprincip för kommunikation i Microsoft Teams, Exchange och Yammer.
+  Lär dig hur Contoso snabbt konfigurerade en anstötlig språkprincip för Microsoft Teams, Exchange och Yammer kommunikationer.
 
 ## <a name="next-step"></a>Nästa steg
 
-Läs [mer om Contoso Corporation och](contoso-overview.md) designöverväganden som togs upp när de distribuerade Microsoft 365 för företag.
+Läs [mer om Contoso Corporation](contoso-overview.md) och designöverväganden som togs upp när de Microsoft 365 för företag.
 
 
 ## <a name="see-also"></a>Se även

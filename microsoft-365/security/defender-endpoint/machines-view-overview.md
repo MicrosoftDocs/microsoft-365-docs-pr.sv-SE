@@ -89,7 +89,7 @@ Filtrera efter följande tillstånd för enhetshälsa:
 
 ### <a name="antivirus-status"></a>Antivirusstatus
 
-Filtrera enheter efter antivirusstatus. Gäller endast aktiva Windows 10-enheter.
+Filtrera enheter efter antivirusstatus. Gäller endast Windows 10 aktiva enheter.
 
 - **Inaktiverad** – & skydd mot virus är inaktiverat.
 - **Rapportering inte** – & skydd mot virushot rapporterar inte.
@@ -103,9 +103,9 @@ Om du vill visa enheter som kan påverkas av ett visst hot väljer du hot i list
 
 Mer information om vissa hot finns i [Hotanalyser.](threat-analytics.md) Information om åtgärder finns i [& sårbarhetshantering.](next-gen-threat-and-vuln-mgt.md)
 
-### <a name="windows-10-version"></a>Windows 10-version
+### <a name="windows-10-version"></a>Windows 10 version
 
-Välj bara de Versioner av Windows 10 som du vill undersöka.
+Markera bara de Windows 10 versioner du vill undersöka.
 
 ### <a name="tags--groups"></a>Taggar & grupper
 

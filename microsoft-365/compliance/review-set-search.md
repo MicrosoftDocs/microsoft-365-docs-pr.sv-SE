@@ -24,7 +24,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 06/03/2021
 ms.locfileid: "52736457"
 ---
-# <a name="query-and-filter-content-in-a-review-set"></a>Fråga och filtrera innehåll i en granskningsuppsättning
+# <a name="query-and-filter-content-in-a-review-set"></a>Skapa frågor och filtrera innehåll i en granskningsuppsättning
 
 I de flesta fall kan det vara bra att gå djupare in på innehållet i en granskningsuppsättning och ordna den för att underlätta en effektivare granskning. Om du använder filter och frågor i en granskningsuppsättning kan du fokusera på en delmängd dokument som uppfyller villkoren för din granskning.
 

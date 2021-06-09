@@ -1,6 +1,6 @@
 ---
 title: Registrera befintliga enheter själv
-description: Registrera återanvändda enheter du kanske redan har själv så att de kan hanteras av Microsoft Managed Desktop
+description: Registrera återanvändda enheter du kanske redan har själv så att de kan hanteras Microsoft Hanterat skrivbord
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -21,11 +21,11 @@ ms.locfileid: "51893281"
 # <a name="register-existing-devices-yourself"></a>Registrera befintliga enheter själv
 
 >[!NOTE]
->I det här avsnittet beskrivs hur du återanvänder enheter du redan har och registrerar dem i Microsoft Managed Desktop. Om du arbetar med helt nya enheter följer du instruktionerna i Registrera [nya enheter i Microsoft Managed Desktop själv i](register-devices-self.md) stället.
+>I det här avsnittet beskrivs hur du kan återanvända enheter du redan har och registrera dem i Microsoft Hanterat skrivbord. Om du arbetar med helt nya enheter följer du anvisningarna i Registrera [nya enheter i](register-devices-self.md) Microsoft Hanterat skrivbord dig själv.
 
 Processen för partner beskrivs i Steg [för partner för att registrera enheter.](register-devices-partner.md)
 
-Microsoft Managed Desktop kan arbeta med helt nya enheter eller återanvända enheter som du kanske redan har (vilket innebär att du måste animera dem igen). Du kan registrera enheter med Microsoft Managed Desktop i Microsoft Endpoint Manager-portalen.
+Microsoft Hanterat skrivbord kan arbeta med helt nya enheter eller så kan du återanvända enheter som du kanske redan har (vilket innebär att du måste animera dem igen). Du kan registrera enheter med Microsoft Hanterat skrivbord i Microsoft Endpoint Manager portalen.
 
 ## <a name="prepare-to-register-existing-devices"></a>Förbered dig för att registrera befintliga enheter
 
@@ -34,33 +34,33 @@ Så här registrerar du befintliga enheter:
 
 1. [Hämta maskinvaruhash för varje enhet.](#obtain-the-hardware-hash)
 2. [Slå samman hash-data](#merge-hash-data)
-3. [Registrera enheterna i Microsoft Managed Desktop](#register-devices-by-using-the-admin-portal).
+3. [Registrera enheterna i Microsoft Hanterat skrivbord](#register-devices-by-using-the-admin-portal).
 4. [Kontrollera att bilden är korrekt.](#check-the-image)
 5. [Leverera enheten](#deliver-the-device)
 
 ### <a name="obtain-the-hardware-hash"></a>Hämta maskinvaruhash
 
-Microsoft Managed Desktop identifierar varje enhet unikt genom att referera till dess maskinvaru-hash. Du har fyra alternativ för att hämta den här informationen från enheter som du redan använder:
+Microsoft Hanterat skrivbord identifierar varje enhet unikt genom att referera till dess maskinvaruhash. Du har fyra alternativ för att hämta den här informationen från enheter som du redan använder:
 
 - Be din OEM-leverantör om AutoPilot-registreringsfilen, som innehåller maskinvaru-hashfilerna.
-- Samla in information i [Konfigurationshanteraren för Microsoft Endpoint](#microsoft-endpoint-configuration-manager).
-- Kör ett Windows PowerShell-skript – antingen med hjälp av [Active Directory](#active-directory-powershell-script-method) eller manuellt på varje enhet – och samla in resultaten i en fil. [](#manual-powershell-script-method)
-- Starta varje enhet– men slutför inte Windows-installationen – och samla in hashtaggarna på ett [flyttbart flash-minne.](#flash-drive-method)
+- Samla in information [i Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager).
+- Kör ett Windows PowerShell skript – antingen med [](#manual-powershell-script-method) hjälp av [Active Directory](#active-directory-powershell-script-method) eller manuellt på varje enhet – och samla in resultaten i en fil.
+- Starta varje enhet – men slutför inte konfigurationen Windows – och samla in hashtaggarna på [ett flyttbart flash-minne.](#flash-drive-method)
 
 #### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-Du kan använda Microsoft Endpoint Configuration Manager för att samla in maskinvarushashar från befintliga enheter som du vill registrera i Microsoft Managed Desktop.
+Du kan använda Microsoft Endpoint Configuration Manager samla in maskinvaru-hash-kod från befintliga enheter som du vill registrera Microsoft Hanterat skrivbord.
 
 > [!IMPORTANT]
-> Alla enheter som du vill få den här informationen till måste köra Windows 10, version 1703 eller senare. 
+> Alla enheter som du vill få den här informationen till måste vara Windows 10, version 1703 eller senare. 
 
 Om du har uppfyllt alla krav är du redo att samla in informationen genom att göra följande:
 
 1. Välj Övervakning i konfigurationshanterarens **konsol.** 
 2. På arbetsytan Övervakning expanderar du **noden Rapportering,** **expanderar Rapporter** och väljer **noden Maskinvara –** Allmänt. 
-3. Kör rapporten Windows **Autopilot-enhetsinformation** och visa resultatet.
+3. Kör rapporten och **Windows Autopilot-enhetsinformation** och visa resultaten.
 4. I rapportvisaren väljer du **ikonen Exportera** och sedan **CSV-alternativet (kommaavgränsad).**
-5. När du har sparat filen måste du filtrera resultaten till bara de enheter som du planerar att registrera dig på Microsoft Managed Desktop och ladda upp data till Microsoft Managed Desktop. Öppna Microsoft Endpoint Manager och gå till menyn **Enheter,** leta sedan efter avsnittet Microsoft Managed Desktop och välj **Enheter**. Välj **+ Registrera enheter** så öppnas en flygblads för att registrera nya enheter.
+5. När du har sparat filen måste du filtrera resultaten till bara de enheter som du planerar att registrera dig på Microsoft Hanterat skrivbord och ladda upp data till Microsoft Hanterat skrivbord. Öppna Microsoft Endpoint Manager gå till menyn **Enheter,** leta sedan efter den Microsoft Hanterat skrivbord avsnittet och välj **Enheter**. Välj **+ Registrera enheter** så öppnas en flygblads för att registrera nya enheter.
 
 
 Mer information [finns i Registrera enheter med hjälp av](#register-devices-by-using-the-admin-portal) administrationsportalen.
@@ -73,11 +73,11 @@ I en Active Directory-miljö kan du använda PowerShell-cmdleten för att fjärr
 - WinRM är aktiverat.
 - De enheter du vill registrera är aktiva i nätverket (det vill säga att de inte är frånkopplade eller inaktiverade).
 - Kontrollera att du har en parameter för domänbehörigheter för autentiseringsuppgifter som kan köras via fjärrstyrning på enheterna.
-- Kontrollera att Windows-brandväggen tillåter åtkomst till WMI. Det gör du genom att följa de här stegen:
+- Kontrollera att Windows tillåter åtkomst till WMI. Det gör du genom att följa de här stegen:
 
-    1. Öppna Kontrollpanelen **för Windows Defender-brandväggen** och välj **Tillåt en app eller funktion i Windows Defender-brandväggen.**
+    1. Öppna **Windows Defender-brandväggen** och välj Tillåt **en app eller funktion via Windows Defender-brandväggen**.
     
-    2. Leta **reda på Windows Management Instrumentation (WMI)** i listan, aktivera både privat och **offentlig** och välj sedan **OK.**
+    2. Leta **Windows (Management Instrumentation) (WMI)** i listan, aktivera både privat och **offentligt** och välj sedan **OK.**
 
 1.  Öppna en PowerShell-fråga med administrativa rättigheter.
 
@@ -96,7 +96,7 @@ I en Active Directory-miljö kan du använda PowerShell-cmdleten för att fjärr
 
 3. Öppna alla kataloger där det kan finnas poster för enheterna. Ta bort poster för varje enhet från *alla* kataloger, inklusive Windows Server Active Directory Domain Services och Azure Active Directory. Observera att borttagningen kan ta några timmar att bearbeta helt.
 
-4. Åtkomsthanteringstjänster där det kan finnas poster för enheterna. Ta bort poster för varje enhet från *alla* hanteringstjänster, inklusive Konfigurationshanteraren för Microsoft Slutpunkt, Microsoft Intune och Windows Autopilot. Observera att borttagningen kan ta några timmar att bearbeta helt.
+4. Åtkomsthanteringstjänster där det kan finnas poster för enheterna. Ta bort poster för varje enhet från *alla* hanteringstjänster, inklusive Microsoft Endpoint Configuration Manager, Microsoft Intune och Windows Autopilot. Observera att borttagningen kan ta några timmar att bearbeta helt.
 
 Nu kan du fortsätta att [registrera enheter](#register-devices-by-using-the-admin-portal).
 
@@ -138,7 +138,7 @@ Med hash-data kopplade till en CSV-fil kan du nu fortsätta att [registrera enhe
 
 ## <a name="register-devices-by-using-the-admin-portal"></a>Registrera enheter med hjälp av administrationsportalen
 
-I [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)väljer du **Enheter** i det vänstra navigeringsfönstret. Titta efter avsnittet Microsoft Managed Desktop på menyn och välj **Enheter**. På arbetsytan Microsoft Hanterade skrivbordsenheter väljer du **+ Registrera-enheter,** som gör att du kan registrera nya enheter.
+I [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)väljer du **Enheter** i det vänstra navigeringsfönstret. Titta efter Microsoft Hanterat skrivbord i menyn och välj **Enheter**. I arbetsytan Microsoft Hanterat skrivbord Enheter väljer du **+ Registrera enheter,** som gör att du kan registrera nya enheter.
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -153,15 +153,15 @@ Gör så här:
 3. Välj **Registrera enheter**. Systemet lägger till enheterna i din lista med enheter i bladet **Enheter**, markerade som **Väntar på registrering.** Registrering tar vanligtvis mindre än 10 minuter och  när enheten lyckas visas den som Redo för användare. Det innebär att den är redo att börja använda och väntar på att användaren ska börja använda den.
 
 > [!NOTE]
-> Om du manuellt ändrar azure Active Directory-gruppmedlemskap för en enhet omtilldekas den automatiskt till gruppen för dess enhetsprofil och tas bort från grupper med konflikter.
+> Om du manuellt ändrar Azure Active Directory-gruppmedlemskap (AAD) på en enhet omtilldekas den automatiskt till gruppen för dess enhetsprofil och tas bort från grupper med konflikter.
 
 Du kan övervaka förloppet för enhetsregistreringen på huvudsidan. Möjliga delstater som rapporterats där är:
 
-| Delstat | Beskrivning |
+| Region | Beskrivning |
 |---------------|-------------|
 | Registrering väntar | Registreringen är inte klar än. Kom tillbaka senare. |
 | Registreringen misslyckades | Registreringen kunde inte slutföras. Mer information [finns i Felsökning av](#troubleshooting-device-registration) enhetsregistrering. |
-| Redo för användare | Registreringen har lyckats och enheten är nu redo att levereras till användaren. Microsoft Managed Desktop vägleder dem genom första gången, så du behöver inte göra ytterligare förberedelser. |
+| Redo för användare | Registreringen har lyckats och enheten är nu redo att levereras till användaren. Microsoft Hanterat skrivbord som vägleder dem genom den första uppsättningen, så du behöver inte göra ytterligare förberedelser. |
 | Aktiv | Enheten har levererats till användaren och de har registrerats i din klientorganisation. Det här betyder också att de regelbundet använder enheten. |
 | Inaktiv | Enheten har levererats till användaren och de har registrerats i din klientorganisation. Men de har inte använt enheten nyligen (under de senaste 7 dagarna).  | 
 
@@ -177,7 +177,7 @@ Du kan övervaka förloppet för enhetsregistreringen på huvudsidan. Möjliga d
 
 ## <a name="check-the-image"></a>Kontrollera bilden
 
-Om enheten kommer från en Microsoft Managed Desktop-partnerleverantör ska bilden vara korrekt.
+Om enheten kommer från en Microsoft Hanterat skrivbord partnerleverantör ska bilden vara korrekt.
 
 Du får också gärna använda bilden på egen hand om du föredrar det. Kontakta microsofts representant som du arbetar med för att komma igång och informera dig om var och hur du använder bilden.
 
@@ -186,7 +186,7 @@ Du får också gärna använda bilden på egen hand om du föredrar det. Kontakt
 > [!IMPORTANT]
 > Innan du lämnar över enheten till användaren kontrollerar du att du har skaffat och [tillämpat lämpliga licenser](../get-ready/prerequisites.md) för den användaren.
 
-Om alla licenser används kan [](get-started-devices.md)du förbereda användarna för att använda enheter och sedan starta enheten och gå vidare via Windows-konfigurationen.
+Om alla licenser används kan [](get-started-devices.md)du förbereda användarna för att använda enheter och sedan starta enheten och gå Windows konfiguration.
 
 
 

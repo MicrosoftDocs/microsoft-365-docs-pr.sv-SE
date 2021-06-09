@@ -62,9 +62,9 @@ Logotyp |Partnernamn   | Beskrivning
 ![Bild på säkerhetslogotypen för elasticitet](images/elastic-security-logo.png) | [Elasticitetsäkerhet](https://go.microsoft.com/fwlink/?linkid=2139303) | Elasticitetsäkerhet är en kostnadsfri och öppen lösning som förhindrar, identifierar och svarar på hot
 ![Bild på IBM QRadar-logotyp](images/ibm-qradar-logo.png) | [IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903) | Konfigurera IBM QRadar för att samla in identifieringar från Defender för Slutpunkt 
 ![Bild på logotypen Micro Focus ArcSight](images/arcsight-logo.png) | [Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548) | Använda Micro Focus ArcSight för att hämta Defender för slutpunktsidentifiering
-![Bild på RSA NetWitness-logotyp](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Stream Defender för slutpunktsaviseringar till RSA NetWitness med Microsoft Graph-säkerhets-API
+![Bild på RSA NetWitness-logotyp](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Stream Defender för slutpunktsaviseringar till RSA NetWitness med Microsoft Graph Säkerhets-API
 ![Bild på SafeBreach-logotyp](images/safebreach-logo.png) | [SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)| Få insyn i Defender för slutpunktssäkerhetshändelser som automatiskt korreleras med SafeBreach-simuleringar
-![Bild på logotyp för Skybox Vulnerability Control](images/skybox-logo.png) | [Skybox Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox Vulnerability Control klipper ut sig genom bruset av sårbarhetshantering, korrelerar affärs-, nätverks- och hotkontext för att upptäcka dina mest riskfyllda säkerhetsproblem
+![Bild på logotyp för Skybox Vulnerability Control](images/skybox-logo.png) | [Skybox Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox Vulnerability Control klipper ut sig genom bruset från hantering av säkerhetsrisker, korrelerar verksamhet, nätverk och hotkontext för att upptäcka dina riskfyllda svagheter
 ![Bild på Splunk-logotyp](images/splunk-logo.png) | [Splunk](https://go.microsoft.com/fwlink/?linkid=2129805) | Med tillägget Defender för slutpunkt kan Splunk-användare mata in alla aviseringar och stödinformation till sin Splunk
 ![Bild på XM Cyber-logotyp](images/xmcyber-logo.png) | [XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700) | Prioritera ditt svar på en avisering baserat på riskfaktorer och tillgångar med höga värden
 
@@ -76,9 +76,9 @@ Logotyp |Partnernamn   | Beskrivning
 ![Bild på CyberSponse CyOps-logotyp](images/cybersponse-logo.png) | [CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943) | CyOps integreras med Defender för Endpoint för att automatisera kundernas spelböcker för incidentsvar i hög hastighet
 ![Bild på Delta Risk ActiveEye-logotyp](images/delta-risk-activeeye-logo.png) | [Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468) | Delta Risk, en ledande leverantör av SOC-as-a-Service och säkerhetstjänster, integrerar Defender för Endpoint med dess molnbaserade soAR-plattform ActiveEye.
 ![Bild på Dem dei, logotyp för Palo Networks Networks Company](images/demisto-logo.png) | [Dem denis, en Palo Networks Company](https://go.microsoft.com/fwlink/?linkid=2108414) | Inaktivera integrerar med Defender för Slutpunkt för att göra det möjligt för säkerhetsteam att använda och automatisera säkerhetsövervakning,berikande och svar för slutpunkter
-![Bild av logotypen för Microsoft Flow & Azure Functions](images/ms-flow-logo.png) | [Microsoft Flow & Azure-funktioner](https://go.microsoft.com/fwlink/?linkid=2114300) | Använda Defender för slutpunktskopplingar för Azure Logic-& Microsoft Flow för att automatisera säkerhetsprocedurer
+![Bild på Microsoft Flow & för Azure Functions](images/ms-flow-logo.png) | [Microsoft Flow & Azure-funktioner](https://go.microsoft.com/fwlink/?linkid=2114300) | Använd Defender för slutpunktskopplingar för Azure Logic Apps & Microsoft Flow för att automatisera säkerhetsprocedurer
 ![Bild på logotypen Rapid7 InsightConnect](images/rapid7-logo.png) | [Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040) | InsightConnect integrerar med Defender för Endpoint för att accelerera, effektivisera och integrera dina tidsintensiva säkerhetsprocesser
-![Bild på ServiceNow-logotyp](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | Mata in aviseringar i Lösningen ServiceNow Security Operations baserat på Microsoft Graph API-integrering
+![Bild på ServiceNow-logotyp](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | Mata in aviseringar i ServiceNow Security Operations-lösning baserat på Microsoft Graph API-integrering
 ![Bild av sim simans logotyp](images/swimlane-logo.png) | [Sim simtur](https://go.microsoft.com/fwlink/?linkid=2113902) | Maximera incidentsvarsfunktioner som använder simlan och Defender för Slutpunkt tillsammans
 
 
@@ -110,7 +110,7 @@ Logotyp |Partnernamn   | Beskrivning
 ![Bild på Corrata-logotypen](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | Mobil lösning – Skydda mobila enheter med detaljerad synlighet och kontroll från Corrata 
 ![Bild på Lookout-logotyp](images/lookout-logo.png)| [Lookout](https://go.microsoft.com/fwlink/?linkid=866935)| Get Lookout Mobile Threat Protection-telemetri för Android- och iOS-mobila enheter
 ![Bild på Symantec Endpoint Protection Mobile-logotyp](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP Mobile hjälper företag att förutse, upptäcka och förhindra säkerhetshot och säkerhetsproblem på mobila enheter 
-![Bild på Loggningslogotyp](images/zimperium-logo.png)| [Irperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Utöka din Defender för slutpunkt till iOS och Android med Maskininlärning baserat mobilt skydd
+![Bild på Loggningslogotyp](images/zimperium-logo.png)| [Irperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Utöka din Defender för slutpunkt till iOS och Android Machine Learning ditt mobilhot
 
 
 
@@ -152,5 +152,5 @@ Med Defender för Endpoint kan du integrera med dessa lösningar och agera på I
 
 Defender för Endpoint har för närvarande stöd för IOC-matchning och -åtgärd för fil- och nätverksindikatorer. Blockering stöds för filindikatorer.  
 
-## <a name="support-for-non-windows-platforms"></a>Stöd för icke-Windows-plattformar
-Defender för Endpoint tillhandahåller en centraliserad säkerhetsoperationer för Windows- och icke-Windows-plattformar, inklusive mobila enheter. Du kan se aviseringar från olika operativsystem som stöds (OS) i portalen och bättre skydda organisationens nätverk. 
+## <a name="support-for-non-windows-platforms"></a>Stöd för icke-Windows plattformar
+Defender för Endpoint tillhandahåller en centraliserad säkerhetsoperationer för Windows och icke-Windows, inklusive mobila enheter. Du kan se aviseringar från olika operativsystem som stöds (OS) i portalen och bättre skydda organisationens nätverk. 
