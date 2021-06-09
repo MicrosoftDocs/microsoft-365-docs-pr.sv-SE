@@ -1,5 +1,5 @@
 ---
-title: Tilldela principer för Skype för företag – Online per användare med PowerShell för Microsoft 365
+title: Tilldela principer per användare Skype för företag Online-principer med PowerShell för Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: Sammanfattning Använd PowerShell för Microsoft 365 för att tilldela kommunikationsinställningar per användare med principer för Skype för företag – Online.
+description: Sammanfattning Använd PowerShell för att Microsoft 365 tilldela kommunikationsinställningar per användare med hjälp Skype för företag onlineprinciper.
 ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905410"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Tilldela principer för Skype för företag – Online per användare med PowerShell för Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Tilldela principer per användare Skype för företag Online-principer med PowerShell för Microsoft 365
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Att använda PowerShell för Microsoft 365 är ett effektivt sätt att tilldela kommunikationsinställningar per användare med principer för Skype för företag – Online.
+Att använda PowerShell för Microsoft 365 är ett effektivt sätt att tilldela kommunikationsinställningar per användare med Skype för företag Online-principer.
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>Förbereda för att köra PowerShell-kommandon
 
@@ -43,7 +43,7 @@ Använd de här anvisningarna för att konfigurera om du vill köra kommandona (
    Connect-MicrosoftTeams
    ```
 
-   När du uppmanas till det anger du ditt administratörskonto och lösenord för Skype för företag – Online.
+   När du uppmanas till det anger Skype för företag onlineadministratörens kontonamn och lösenord.
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>Uppdatera inställningar för extern kommunikation för ett användarkonto
 

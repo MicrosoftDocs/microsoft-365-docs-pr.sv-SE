@@ -23,9 +23,9 @@ ms.locfileid: "51649968"
 
 Håll dig uppdaterad med vad som händer i din bransch. Varje morgon får du en uppdatering av nyheter, intressanta trender och berättelser relaterade till ditt företag, ditt arbete eller din bransch – helt ny i inkorgen. [Prenumerera nu.](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form)
 
-## <a name="what-is-it"></a>Vad är det?
+## <a name="what-is-it"></a>Vad handlar det här om?
 
-Branschuppdateringar kan utnyttja kraften hos Microsofts Bing-sökmotor, Branschuppdateringar är en samling av de viktigaste arbetsnyheterna från hela webben som valts ut bara för dig.
+Branschuppdateringar kan utnyttja kraften hos Microsofts Bing och branschuppdateringar är en samling av de viktigaste arbetsnyheterna från hela webben, som valts ut just för dig.
 
 ## <a name="how-does-it-work"></a>Hur fungerar det?
 
@@ -33,7 +33,7 @@ Anpassa din upplevelse genom att följa ämnen och intressen. Få nyheter om dit
 
 ## <a name="how-do-i-customize-my-industry-updates-email"></a>Hur anpassar jag min e-post för branschuppdateringar?
 
-Om du vill anpassa din upplevelse går du till inställningssidan och följer de ämnen och intressen som är viktiga för dig. Gå till sidan personliga inställningar genom att bokmärka Anpassa innehåll i [nyhetsbrevet Bing, Edge](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) och Branschuppdateringar eller genom att klicka på knappen Inställningar i e-postmeddelandet för Branschuppdateringar.
+Om du vill anpassa din upplevelse går du till inställningssidan och följer de ämnen och intressen som är viktiga för dig. Gå till sidan för personliga inställningar genom att bokmärka Anpassa innehåll i Bing, nyhetsbrev om Edge och [Branschuppdateringar](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) eller genom att klicka på knappen inställningar i e-postmeddelandet för branschuppdateringar.
 
 [Prenumerera](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form=BAWLOG&frb=1) och få e-post för branschuppdateringar levererad till din inkorg i dag!
 

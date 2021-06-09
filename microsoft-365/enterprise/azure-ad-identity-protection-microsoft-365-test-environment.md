@@ -1,5 +1,5 @@
 ---
-title: Azure AD-identitetsskydd för din testmiljö för Microsoft 365 för företag
+title: Azure AD-identitetsskydd för din Microsoft 365 för företagstestmiljö
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Konfigurera Azure AD Identity Protection och analysera de aktuella kontona i testmiljön Microsoft 365 för företag.
+description: Konfigurera Azure AD Identity Protection och analysera de aktuella kontona i din Microsoft 365 för företagstestmiljö.
 ms.openlocfilehash: 0cb0acf3faee13676573b04178bd6b4d3d36da4d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,23 +22,23 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905350"
 ---
-# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>Azure AD-identitetsskydd för din testmiljö för Microsoft 365 för företag
+# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>Azure AD-identitetsskydd för din Microsoft 365 för företagstestmiljö
 
-*Den här testlabbguiden kan endast användas för Microsoft 365 för företagstestmiljöer.*
+*Den här testlabbguiden kan endast användas Microsoft 365 för företagstestmiljöer.*
 
-Du kan använda Azure Active Directory-identitetsskydd (Azure AD) för att upptäcka potentiella säkerhetsproblem som påverkar organisationens identiteter, konfigurera automatiska svar och undersöka incidenter. I den här artikeln beskrivs hur du använder Azure AD Identity Protection för att visa analysen av testmiljökontona.
+Du kan använda Azure Active Directory (Azure AD) Identity Protection för att upptäcka potentiella säkerhetsproblem som påverkar organisationens identiteter, konfigurera automatiska svar och undersöka incidenter. I den här artikeln beskrivs hur du använder Azure AD Identity Protection för att visa analysen av testmiljökontona.
 
-Att konfigurera Azure AD-identitetsskydd i testmiljön Microsoft 365 för företag omfattar två faser:
+Att konfigurera Azure AD-identitetsskydd i din Microsoft 365 för företagstestmiljö omfattar två faser:
 
-- [Fas 1: Bygg ut microsoft 365 för företagstestmiljö](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fas 1: Bygg ut din Microsoft 365 för företagstestmiljö](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fas 2: Använda Azure AD Identity Protection](#phase-2-use-azure-ad-identity-protection)
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> En visuell karta till alla artiklar i Microsoft 365 testlabbguide-stacken för företag finns i Testlabbguide för [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)för företag.
+> En visuell karta till alla artiklar i Microsoft 365 för företags testlabbguide stack finns i [Microsoft 365 för företags testlabbguide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: Bygg ut microsoft 365 för företagstestmiljö
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: Bygg ut din Microsoft 365 för företagstestmiljö
 
 Om du bara vill testa Azure AD Identity Protection på ett lätt sätt med minimikraven följer du anvisningarna i [Lightweight Base-konfiguration.](lightweight-base-configuration-microsoft-365-enterprise.md)
   
@@ -49,7 +49,7 @@ Om du vill testa Azure AD Identity Protection i ett simulerat företag följer d
   
 ## <a name="phase-2-use-azure-ad-identity-protection"></a>Fas 2: Använda Azure AD Identity Protection
 
-1. Öppna en privat instans av webbläsaren och logga in på Azure-portalen med det globala administratörskontot för [https://portal.azure.com](https://portal.azure.com) testmiljön Microsoft 365 för företag.
+1. Öppna en privat instans av webbläsaren och logga in på Azure-portalen med det globala administratörskontot för [https://portal.azure.com](https://portal.azure.com) din Microsoft 365 för företagstestmiljö.
 2. I Azure-portalen skriver du **identitetsskydd** i sökrutan och väljer sedan **Azure AD Identity Protection.**
 3. I **bladet Identitetsskydd –** Översikt markerar du varje rapport för att se vad det är för rapportering.
 4. Under **Meddela** väljer du **Användare med risk upptäckte aviseringar.**

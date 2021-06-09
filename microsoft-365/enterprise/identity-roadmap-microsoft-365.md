@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 ms.custom: ''
-description: Översikt över identitet för Microsoft 365.
+description: Översikten över identitet för Microsoft 365.
 ms.openlocfilehash: 456841bfc15d143409535140f2b5a63ee72e99d2
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -25,19 +25,19 @@ ms.locfileid: "51051312"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Identitets översikt för Microsoft 365
 
-I Microsoft 365 för företag är en välplanerad och körd identitetsinfrastruktur vägen för bättre säkerhet, inklusive att begränsa åtkomsten till dina produktivitetsbelastningar och deras data till endast autentiserade användare och enheter.
+I Microsoft 365 för företag gör en välplanerad och körd identitetsinfrastruktur vägen för starkare säkerhet, inklusive att begränsa åtkomsten till dina produktivitetsbelastningar och deras data till endast autentiserade användare och enheter.
 
-I den här videon får du en översikt över identitetsmodeller och autentisering för Microsoft 365 för företag.
+I den här videon får du en översikt över identitetsmodeller och autentisering Microsoft 365 för företag.
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-Mer information om identitetsfunktionerna i varje Microsoft 365 för företag-abonnemang, Azure Active Directory-rollen, både lokala och molnbaserade [](../downloads/m365e-identity-infra.pdf)komponenter och de vanligaste autentiseringskonfigurationerna finns på affischen Identitetsinfrastruktur.
+Mer information om identitetsfunktionerna för varje Microsoft 365 för företagsplan, rollen för Azure Active Directory, både lokala och molnbaserade komponenter och de [](../downloads/m365e-identity-infra.pdf)vanligaste autentiseringskonfigurationerna finns på affischen Identitetsinfrastruktur.
 
 [![Identitetsinfrastruktur (affisch)](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-Läs den här affischen på två sidor för att snabbt hålla dig på med identitetsbegrepp och konfigurationer för Microsoft 365 för företag.
+Läs den här affischen på två sidor för att snabbt hålla dig på med identitetskoncept och konfigurationer för Microsoft 365 för företag.
 
 Du kan också [ladda ned den här affischen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) och skriva ut den i letter-, legal- eller tabloidformat (11 x 17).
 
@@ -67,7 +67,7 @@ Microsoft tillhandahåller en uppsättning rekommendationer för identiteter och
 
 ## <a name="manage"></a>Hantera
 
-Information om hur du hanterar identitetsdistribution av Microsoft 365 finns i:
+Information om hur du Microsoft 365 identitetsdistribution finns i:
 
 - [Användarkonton](manage-microsoft-365-accounts.md)
 - [Licenser](assign-licenses-to-user-accounts.md)

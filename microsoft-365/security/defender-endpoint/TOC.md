@@ -242,6 +242,8 @@
 
 ### [Nätverksenheter](network-devices.md)
 
+### [Värd för brandväggsrapportering i Microsoft Defender för Endpoint](host-firewall-reporting.md)
+
 ### [Minskning av attackytan]()
 #### [Översikt för minskning av attackytan](overview-attack-surface-reduction.md)
 #### [Konfigurera funktioner för minskning av attackytan](configure-attack-surface-reduction.md)
@@ -278,6 +280,8 @@
 #### [Hämta uppdateringar för antivirusprogram och program mot skadlig programvara](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Hantera källor för skyddsuppdateringar av Microsoft Defender Antivirus](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Hantera schemat för när skyddsuppdateringar ska laddas ned och tillämpas](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+#####  [Hantera gradvis distributionsprocess för Microsoft Defender-uppdateringar](updates.md)
+#####  [Konfigurera gradvis distributionsprocess för Microsoft Defender-uppdateringar](configure-updates.md)
 ##### [Hantera uppdateringar och genomsökningar för slutpunkter som utgått för Microsoft Defender Antivirus](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Hantera uppdateringar för mobila enheter och virtuella datorer(VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -351,6 +355,7 @@
 ##### [Styra USB-enheter](control-usb-devices-using-intune.md)
 ##### [Flyttbart lagringsskydd](device-control-removable-storage-protection.md)
 ##### [Flyttbar åtkomstkontroll för lagring](device-control-removable-storage-access-control.md)
+##### [Enhetskontroll för skrivarskydd](printer-protection.md)
 
 #### [Beteendeblockering och inneslutning]()
 ##### [Beteendeblockering och inneslutning](behavioral-blocking-containment.md)

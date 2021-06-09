@@ -1,5 +1,5 @@
 ---
-title: Tilldela roller till Microsoft 365-användarkonton med PowerShell
+title: Tilldela roller till Microsoft 365 användarkonton med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: I den här artikeln lär du dig hur snabbt och enkelt du använder PowerShell för Microsoft 365 för att tilldela administratörsroller till användarkonton.
+description: I den här artikeln lär du dig hur snabbt och enkelt du använder PowerShell Microsoft 365 att tilldela administratörsroller till användarkonton.
 ms.openlocfilehash: 84e785052c970ca15487540c3904eacdd0e9ca28
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,28 +27,28 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905386"
 ---
-# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Tilldela administratörsroller till Microsoft 365-användarkonton med PowerShell
+# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>Tilldela administratörsroller Microsoft 365 användarkonton med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
 Du kan enkelt tilldela roller till användarkonton med hjälp av PowerShell för Microsoft 365.
 
 >[!Note]
->Läs om hur  [du tilldelar](../admin/add-users/assign-admin-roles.md) administratörsroller till användarkonton i administrationscentret för Microsoft 365.
+>Lär dig hur [du tilldelar](../admin/add-users/assign-admin-roles.md) administratörsroller till användarkonton Microsoft 365 administrationscentret.
 >
 >En lista över ytterligare resurser finns i [Hantera användare och grupper.](../admin/add-users/index.yml)
 >
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph-modulen
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph modul
 
-Använd först ett globalt administratörskonto för att [ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Börja med att använda ett globalt administratörskonto [för att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 Identifiera sedan inloggningsnamnet för det användarkonto som du vill lägga till i en roll (exempel: \@ contoso.com). Detta kallas även användarens huvudnamn (UPN).
 
-Bestäm sedan namnet på rollen. Visa [behörigheter för administratörsroller i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+Bestäm sedan namnet på rollen. Visa [behörigheter för administratörsroll i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 >[!Note]
->Var uppmärksam på anteckningarna i den här artikeln. Vissa rollnamn är olika för Azure Active Directory (Azure AD) PowerShell. *SharePoint-administratörsrollen* i administrationscentret för Microsoft 365 är till exempel *SharePoint-tjänstadministratör* i Azure AD PowerShell.
+>Var uppmärksam på anteckningarna i den här artikeln. Vissa rollnamn är olika för PowerShell Azure Active Directory (Azure AD). Till exempel är *SharePoint administratörsrollen* i administrationscentret Microsoft 365 tjänst *SharePoint administratör i* Azure AD PowerShell.
 >
 
 Sedan fyller du i inloggnings- och rollnamnen och kör följande kommandon:
@@ -65,7 +65,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Här är ett exempel på en slutförd kommandouppsättning som tilldelar rollen SharePoint-tjänstadministratör till *\@ belindan-contoso.com konto:*
+Här är ett exempel på en slutförd kommandouppsättning som tilldelar SharePoint tjänstadministratörsroll *till belindan \@ contoso.com konto:*
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -86,9 +86,9 @@ $roleName="<role name>"
 Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory för Windows PowerShell
 
-Använd först ett globalt administratörskonto för att [ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Börja med att använda ett globalt administratörskonto [för att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
   
 ### <a name="for-a-single-role-change"></a>För en enda rolländring
 
@@ -134,7 +134,7 @@ $roleName="<The admin role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Klistra in kommandona i Anteckningar. Ersätt *$dispName $roleName* *beskrivningstexten* med deras värden för variablerna. Ta bort \< and > tecknen men behåll citattecknen. Klistra in de ändrade raderna i Microsoft Azure Active Directory-modulen för Windows PowerShell-fönstret för att köra dem. Alternativt kan du använda Windows PowerShell Integrated Script Environment (ISE).
+Klistra in kommandona i Anteckningar. Ersätt *$dispName $roleName* *beskrivningstexten* med deras värden för variablerna. Ta bort \< and > tecknen men behåll citattecknen. Klistra in de ändrade raderna i Microsoft Azure Active Directory för att Windows PowerShell att köra dem. Alternativt kan du använda Windows PowerShell Integrated Script Environment (ISE).
   
 Här är ett exempel på en slutförd kommandouppsättning:
   
@@ -180,7 +180,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-Kopiera kommandona och klistra in dem i Anteckningar. För **$upnName** och **$roleName** variabler. Ersätt beskrivningstexten med deras värden. Ta bort \< and > tecknen men behåll citattecknen. Klistra in de ändrade raderna i fönstret Microsoft Azure Active Directory-modulen för Windows PowerShell för att köra dem. Alternativt kan du använda Windows PowerShell ISE.
+Kopiera kommandona och klistra in dem i Anteckningar. För **$upnName** och **$roleName** variabler. Ersätt beskrivningstexten med deras värden. Ta bort \< and > tecknen men behåll citattecknen. Klistra in de ändrade raderna i Microsoft Azure Active Directory för att Windows PowerShell att köra dem. Alternativt kan du använda Windows PowerShell ISE.
   
 Här är ett exempel på en slutförd kommandouppsättning:
   

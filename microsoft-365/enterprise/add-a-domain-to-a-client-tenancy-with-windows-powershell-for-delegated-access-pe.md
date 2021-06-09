@@ -1,5 +1,5 @@
 ---
-title: Lägga till en domän i ett klientföretag med Windows PowerShell för DAP-partner
+title: Lägga till en domän i en klientens innehavare med Windows PowerShell för DAP-partner
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: Sammanfattning Använd PowerShell för Microsoft 365 för att lägga till ett alternativt domännamn i en befintlig kundklientorganisation.
+description: Sammanfattning Använd PowerShell för Microsoft 365 lägga till ett alternativt domännamn i en befintlig kundklientorganisation.
 ms.openlocfilehash: b6a40f387f9fc7e513137cda4253a62be2455aad
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,12 +28,12 @@ ms.locfileid: "50905578"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan skapa och koppla nya domäner till kundens innehavare med PowerShell för Microsoft 365 snabbare än med hjälp av administrationscentret för Microsoft 365.
+Du kan skapa och koppla nya domäner till kundens innehavare med PowerShell för Microsoft 365 snabbare än med Microsoft 365 administrationscentret.
   
-DAP-partner (Delegerad åtkomstbehörighet) är syndicerings- och molnlösningsleverantörer (CSP). De är ofta nätverks- eller telekommunikationsleverantörer till andra företag. De buntar ihop Microsoft 365-prenumerationer till sina tjänsteerbjudanden till sina kunder. När de säljer en Microsoft 365-prenumeration tilldelas de automatiskt behörigheten Administrera för (AOBO) för kundens företag så att de kan administrera och rapportera om kundrelationerna.
+DAP-partner (Delegerad åtkomstbehörighet) är syndicerings- och molnlösningsleverantörer (CSP). De är ofta nätverks- eller telekommunikationsleverantörer till andra företag. De paketar Microsoft 365 prenumerationer till sina tjänsteerbjudanden till sina kunder. När de säljer en Microsoft 365-prenumeration tilldelas de automatiskt behörigheten Administrera för (AOBO) för kundens företag så att de kan administrera och rapportera om kundrelationerna.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-I procedurerna i det här avsnittet måste du ansluta [till Microsoft 365 med PowerShell.](connect-to-microsoft-365-powershell.md)
+Procedurerna i det här avsnittet kräver att du ansluter [till Anslut och Microsoft 365 med PowerShell.](connect-to-microsoft-365-powershell.md)
   
 Du behöver också autentiseringsuppgifterna för partnerklientorganisationen.
   
@@ -52,11 +52,11 @@ Du behöver också följande information:
  Kunderna kommer antagligen att be dig skapa fler domäner att associera med deras innehavare eftersom de inte vill att standarddomänen .onmicrosoft.com ska vara den primära som representerar deras företagsidentiteter i <domain> världen. I den här proceduren får du hjälp med att skapa en ny domän som är kopplad till kundens innehavare.
   
 > [!NOTE]
-> För att några av de här åtgärderna ska kunna utföras måste partneradministratörskontot som du loggar in med vara inställt på Fullständig **administration** för inställningen Tilldela administrativ åtkomst till företag som du stöder i informationen för administratörskontot i administrationscentret för Microsoft 365.  Mer information om hur du hanterar partneradministratörsroller finns i [Partner: Erbjuda delegerad administration](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
+> För att några av de här åtgärderna ska kunna utföras måste partneradministratörskontot som du loggar in med vara inställt på Fullständig **administration** för inställningen Tilldela administrativ åtkomst till företag som du stöder i informationen för administratörskontot i Microsoft 365-administrationscentret.  Mer information om hur du hanterar partneradministratörsroller finns i [Partner: Erbjuda delegerad administration](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Skapa domänen i Azure Active Directory
 
-Med det här kommandot skapas domänen i Azure Active Directory, men den associeras inte med den offentligt registrerade domänen. När du bevisar att du äger den offentligt registrerade domänen för Microsoft Microsoft 365 för företag.
+Det här kommandot skapar domänen i Azure Active Directory men associerar den inte med den offentligt registrerade domänen. När du bevisar att du äger den offentligt registrerade domänen för Microsoft Microsoft 365 för företag.
   
 ```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
@@ -105,7 +105,7 @@ Det ger dig följande utdata:
   
 ### <a name="validate-domain-ownership-in-microsoft-365"></a>Verifiera domänägarskap i Microsoft 365
 
-I det sista steget verifierar du för Microsoft 365 att du äger den offentligt registrerade domänen. Efter det här steget börjar Microsoft 365 att acceptera trafik som dirigeras till det nya domännamnet. Kör det här kommandot för att slutföra processen för att skapa och registrera en domän. 
+I det sista steget verifierar du Microsoft 365 att du äger den offentligt registrerade domänen. Efter det här steget Microsoft 365 trafik till det nya domännamnet. Kör det här kommandot för att slutföra processen för att skapa och registrera en domän. 
   
 ```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>

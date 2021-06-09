@@ -82,7 +82,7 @@ En aviseringsprincip består av följande inställningar och villkor.
 
 - **Aviseringskategori** – Om du vill ha hjälp med att spåra och hantera aviseringar som skapas av en princip kan du tilldela en av följande kategorier till en princip.
 
-  - Skydd mot dataförlust
+  - Dataförlustskydd
 
   - Informationsstyrning
 
@@ -223,7 +223,7 @@ I följande tabell visas de roller som krävs för att visa aviseringar från de
 
 Du kan se vilken kategori en standardaviseringsprincip har tilldelats i tabellen i [Standardaviseringsprinciper.](#default-alert-policies)
 
-|Roll|Informationsstyrning|Skydd mot dataförlust|E-postflöde|Behörigheter|Hothantering|Andra|
+|Roll|Informationsstyrning|Dataförlustskydd|E-postflöde|Behörigheter|Hothantering|Andra|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Granskningsloggar|||||||
 |Ärendehantering|||||||

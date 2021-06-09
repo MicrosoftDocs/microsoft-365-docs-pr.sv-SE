@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Administratörer kan läsa mer om hur de administrerar SharePoint- och OneDrive-tjänster i en geomiljö med flera platser.
+description: Administratörer kan läsa mer om hur man SharePoint och OneDrive tjänster i en miljö med flera platser.
 ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,27 +24,27 @@ ms.locfileid: "50905606"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administrera en Multi-Geo-Miljö
 
-Här är en titt på hur Microsoft 365-tjänster fungerar i en miljö med flera geografiska miljöer.
+Här är en titt på hur Microsoft 365 fungerar i en geomiljö med flera tjänster.
 
 ## <a name="audit-log-search"></a>Granskningsloggsökning
 
-En enhetlig [granskningslogg](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) för alla dina satellitplatser är tillgänglig från Microsoft 365 granskningsloggsökningssidan. Du kan se alla granskningsloggposter från geoplatser, till exempel NAM & EUR-användares aktiviteter visas i en organisationsvy och sedan kan du använda befintliga filter för att se särskilda användares aktiviteter.
+En enhetlig [granskningslogg](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) för alla dina satellitplatser är tillgänglig från Microsoft 365 för granskningsloggsökning. Du kan se alla granskningsloggposter från geoplatser, till exempel NAM & EUR-användares aktiviteter visas i en organisationsvy och sedan kan du använda befintliga filter för att se särskilda användares aktiviteter.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, säker lagring, appar
 
-BCS, Secure Store och Apps har alla separata instanser på varje satellitplats, och Därför bör SharePoint Online-administratören hantera och konfigurera de här tjänsterna separat från varje satellitplats.
+BCS, Secure Store och Apps har alla separata instanser på varje satellitplats, och därför bör SharePoint Online-administratören hantera och konfigurera de här tjänsterna separat från varje satellitplats.
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-Som standard kan en eDiscovery-hanterare eller administratör för en geoklient för flera platser endast utföra eDiscovery på den klientorganisationens centrala plats. Den globala Administratören för Office 365 måste tilldela eDiscovery Manager-behörigheter så att andra kan utföra eDiscovery och tilldela en "Region"-parameter i sitt tillämpliga säkerhetsfilter för efterlevnad för att ange området för eDiscovery som satellitplats, annars utförs ingen eDiscovery för satellitplatsen. Information om hur du konfigurerar säkerhetsfiltret för efterlevnad för en region [finns i Konfigurera Office 365 Multi-Geo eDiscovery.](multi-geo-ediscovery-configuration.md)
+Som standard kan en eDiscovery-hanterare eller administratör för en geoklient för flera platser endast utföra eDiscovery på den klientorganisationens centrala plats. Den globala Office 365-administratören måste tilldela eDiscovery Manager-behörigheter så att andra kan utföra eDiscovery och tilldela en "Region"-parameter i sitt tillämpliga säkerhetsfilter för efterlevnad för att ange området för eDiscovery som satellitplats, annars utförs ingen eDiscovery för satellitplatsen. Information om hur du konfigurerar efterlevnadssäkerhetsfiltret för en region [finns i Office 365 för multi-geo eDiscovery.](multi-geo-ediscovery-configuration.md)
 
-## <a name="exchange-mailboxes"></a>Exchange-postlådor
+## <a name="exchange-mailboxes"></a>Exchange postlådor
 
-Användarnas Exchange-postlådor flyttas automatiskt om deras PDL ändras. När en ny postlåda skapas etableras den till användarens PDL eller till den centrala platsen om inget värde har angetts för användarens PDL.
+Användarnas Exchange postlådor flyttas automatiskt om deras PDL ändras. När en ny postlåda skapas etableras den till användarens PDL eller till den centrala platsen om inget värde har angetts för användarens PDL.
 
 ## <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>DLP-princip (Information Protection – IP) – dataförlustskydd
 
-Du kan ange dina IP DLP-principer för OneDrive för företag, SharePoint och Exchange i Säkerhets- och efterlevnadscenter, där principer för hela klientorganisationen eller tillämpliga användare behövs. Till exempel: Om du vill välja en princip för en användare på en satellitplats väljer du för att tillämpa principen på en specifik OneDrive och anger användarens OneDrive-URL. Allmän [vägledning för hur du skapar DLP-principer](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) finns i Översikt över principer för dataförlustskydd.
+Du kan ange dina IP DLP-principer för OneDrive för företag, SharePoint och Exchange i säkerhets- och efterlevnadscentret, och fastställa principer efter behov för hela klientorganisationen eller för tillämpliga användare. Till exempel: Om du vill välja en princip för en användare på en satellitplats väljer du att tillämpa principen på ett specifikt OneDrive och anger användarens webbadress OneDrive. Allmän [vägledning för hur du skapar DLP-principer](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) finns i Översikt över principer för dataförlustskydd.
 
 DLP-principerna synkroniseras automatiskt utifrån deras tillämplighet på varje geoplats.
 
@@ -58,21 +58,21 @@ Flöden som skapas för satellitplatsen använder ändpunkten på klientorganisa
 
 PowerApps som skapats för satellitplatsen använder ändpunkten på den centrala platsen för klientorganisationen. Microsoft PowerApps är inte en Multi-Geo-tjänst. 
 
-## <a name="onedrive-administrator-experience"></a>OneDrive-administratörsupplevelse
+## <a name="onedrive-administrator-experience"></a>OneDrive Administratörsupplevelse
 
-I [administrationscentret för OneDrive](https://admin.onedrive.com) finns fliken **Geoplatser** i det vänstra navigeringsfältet. I det finns en geoplatskarta där du kan visa och hantera dina geografiska platser. På den här sidan kan du lägga till eller ta bort geoplatser för klientorganisationen.
+I [OneDrive finns](https://admin.onedrive.com) fliken Geoplatser i det vänstra **navigeringsfältet.** I administrationscentret finns en geoplatskarta där du kan visa och hantera dina geografiska platser. På den här sidan kan du lägga till eller ta bort geoplatser för klientorganisationen.
 
 ## <a name="security-and-compliance-admin-center"></a>Administrationscenter för säkerhet och efterlevnad
 
-Det finns ett centralt efterlevnadscenter för flera geoklienter: [Microsoft 365 Säkerhets- & efterlevnadscenter.](https://protection.office.com/?rfr=AdminCenter\#/homepage)
+Det finns ett centralt efterlevnadscenter för en multigeoklient: Microsoft 365 [säkerhets- & efterlevnadscenter.](https://protection.office.com/?rfr=AdminCenter\#/homepage)
 
-## <a name="sharepoint-storage-quota"></a>SharePoint-lagringskvot
+## <a name="sharepoint-storage-quota"></a>SharePoint lagringskvot
 
-Som standard delar alla geoplatser i en multigeomiljö den tillgängliga lagringskvoten för klientorganisationen.  Du kan också hantera lagringskvoten genom att tilldela en viss kvot för en viss geoplats. Mer information finns i [SharePoint-lagringskvoter i geomiljöer.](sharepoint-multi-geo-storage-quota.md)
+Som standard delar alla geoplatser i en multigeomiljö den tillgängliga lagringskvoten för klientorganisationen.  Du kan också hantera lagringskvoten genom att tilldela en viss kvot för en viss geoplats. Mer information finns i [SharePoint för flera geografiska miljöer.](sharepoint-multi-geo-storage-quota.md)
 
 ## <a name="sharing"></a>Delning
 
-Administratörer kan ange och hantera delningsprinciper för var och en av sina platser. OneDrive- och SharePoint-webbplatserna på varje geoplats används bara för motsvarande geospecifika delningsinställningar. (Du kan till exempel tillåta [extern delning](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) för den centrala platsen, men inte för din satellitplats eller vice versa.) Observera att delningsinställningarna inte tillåter konfigurering av delningsbegränsningar mellan geografiska platser.
+Administratörer kan ange och hantera delningsprinciper för var och en av sina platser. I OneDrive och SharePoint-webbplatserna på varje geoplats används bara motsvarande geospecifika delningsinställningar. (Du kan till exempel tillåta [extern delning](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) för den centrala platsen, men inte för din satellitplats eller vice versa.) Observera att delningsinställningarna inte tillåter konfigurering av delningsbegränsningar mellan geografiska platser.
 
 ## <a name="taxonomy"></a>Taxonomi
 
@@ -96,9 +96,9 @@ Stream är för närvarande tillgängligt i följande regioner:
 
 - Nordamerika, med USA som värd 
 - Europa
-- Asien och Stilla havet
+- Asien/Stillahavsområdet
 
-Stream är dock ännu inte tillgängligt i följande regioner som stöds för Microsoft 365 Video, och därför använder vi den RMS som är i den region som ligger närmast stödd för dessa lokala instanser.
+Stream är dock ännu inte tillgängligt i följande regioner som stöds för närvarande för Microsoft 365 Video, och därför kommer vi att använda den RMS som ligger närmast det område som stöds för dessa lokala instanser.
 
 - Australien
 - Kanada
@@ -107,4 +107,4 @@ Stream är dock ännu inte tillgängligt i följande regioner som stöds för Mi
 
 ## <a name="yammer"></a>Yammer
 
-Yammer är inte en geonivåarbetsbelastning. De Yammer-trådar som lagras i Yammer placeras på klientorganisationens centrala plats. Yammer rullnings en ändring för fillagring som kommer att lagra Yammer-filer i SharePoint. Yammer-filer som lagras i SharePoint placeras på SharePoint-webbplatsen som är kopplad till Yammer-gruppen. SharePoint-gruppwebbplatser baseras på PDL-logik enligt Beskrivning i [SharePoint-webbplatser och -grupper.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)
+Yammer är inte en Multi-Geo-arbetsbörda. Yammer tråd som lagras Yammer på klientorganisationens centrala plats. Yammer distribuerar en ändring av fillagring som lagrar filer Yammer i SharePoint. Yammer filer som lagras SharePoint i gruppen placeras SharePoint webbplats som är kopplad Yammer gruppen. SharePoint gruppwebbplatser baseras på PDL-logik enligt beskrivningen SharePoint [Webbplatser och grupper](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).

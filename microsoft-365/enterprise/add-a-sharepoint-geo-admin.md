@@ -20,19 +20,19 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905614"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Lägga till eller ta bort en geoadministratör i Microsoft 365 Multi-Geo
+# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Lägga till eller ta bort en geoadministratör Microsoft 365 i Multi-Geo
 
-Du kan konfigurera separata administratörer för varje geoplats som du har i klientorganisationen. De här administratörerna har åtkomst till SharePoint Online- och OneDrive-inställningar som är specifika för deras geoplats.
+Du kan konfigurera separata administratörer för varje geoplats som du har i klientorganisationen. De här administratörerna har tillgång till de SharePoint Online OneDrive de inställningar som är specifika för deras geografiska position.
 
 Vissa tjänster, till exempel termlager, administreras från den centrala platsen och replikeras till satellitplatser. Geoadministratören för den centrala platsen har åtkomst till dessa, men geoadministratörer för satellitplatser har det inte.
 
-Globala administratörer och SharePoint Online-administratörer har fortsatt åtkomst till inställningar på den centrala platsen och alla satellitplatser.
+Globala administratörer och SharePoint Online-administratörer fortsätter att ha åtkomst till inställningar på den centrala platsen och alla satellitplatser.
 
 ## <a name="configuring-geo-administrators"></a>Konfigurera geoadministratörer
 
-För att du ska kunna konfigurera geoadministratörer måste du ha SharePoint Online PowerShell-modulen.
+Om du vill konfigurera geoadministratörer SharePoint PowerShell-modulen Online.
 
-Använd [Connect-SPOService](/powershell/module/sharepoint-online/Connect-SPOService) för att ansluta till administrationscentret på den geoplats där du vill lägga till geoadministratören. (Till exempel Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
+Använd [Anslut-SPOService för](/powershell/module/sharepoint-online/Connect-SPOService) att ansluta till administrationscentret för den geoplats där du vill lägga till geoadministratören. (Till exempel Connect-SPOServicehttps://ContosoEUR-admin.sharepoint.com.)
 
 Om du vill visa befintliga geoadministratörer för en plats kör du `Get-SPOGeoAdministrator`
 

@@ -42,7 +42,7 @@ I den här tabellen visas skillnaderna mellan Microsoft 365 Business Premium och
 | Funktion    | Support i Microsoft 365 Business Premium    | Support i Office 365 E3 |
 |:-------|:-----|:-----|
 | **Lokalt**        | | |
-| Office appar<sup>1</sup>    | Microsoft 365-applikationer för affärsverksamhet    | Microsoft 365-applikationer för företag |
+| Office appar<sup>1</sup>    | Microsoft 365-applikationer för affärsverksamhet    |  Microsoft 365 Apps för företag |
 | **Produktivitetsprogram för molnet**        | | |
 | Exchange Online och Outlook    | 50 GB lagringsutrymme per postlåda och obegränsat antal Exchange Online - arkivering    | 100 GB lagringsutrymme per postlåda och obegränsat antal Exchange Online - arkivering |
 | Teams    | ![Ingår i Microsoft 365 Business Premium](../media/check-mark.png)    | ![Ingår i Office 365 E3](../media/check-mark.png) | 

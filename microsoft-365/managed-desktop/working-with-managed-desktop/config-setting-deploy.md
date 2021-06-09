@@ -1,7 +1,7 @@
 ---
-title: Distribuera konfigurerbara inställningar på Microsoft Managed Desktop
-description: Distribuera och spåra ändringar som kan konfigureras i Microsoft hanterat skriv bord.
-keywords: Microsoft Managed Desktop, Microsoft 365, service, dokumentation, distribution, stegvis distribution, konfigurerbara inställningar
+title: Distribuera konfigurerbara inställningar i Microsoft Hanterat skrivbord
+description: Distribuera och spåra konfigurerbara inställningsändringar i Microsoft Hanterat skrivbord.
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation, distribuera, fasad distribution, konfigurerbara inställningar
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -16,58 +16,58 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 09/18/2020
 ms.locfileid: "48104540"
 ---
-# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Distribuera och spåra konfigurerbara inställningar – Microsoft Managed Desktop
+# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Distribuera och spåra konfigurerbara inställningar – Microsoft Hanterat skrivbord
 
-När du har gjort ändringar i inställnings kategorierna och scen en distribution kan du använda sidan för distributions status för att börja distribuera dina inställningar till grupper. På den här sidan visas en sammanfattning av varje konfigurerbar inställning. Genom att öppna en inställnings kategori kan du distribuera inställningar till grupper och spåra förloppet för dessa distributioner.
+När du har gjort ändringar i inställningskategorierna och fasa in en distribution kan du på sidan Distributionsstatus börja distribuera inställningarna till grupper. På den här sidan visas en sammanfattning av varje konfigurerbar inställning. Genom att öppna en inställningskategori kan du distribuera inställningar till grupper och spåra förloppet för distributionerna.
 
-## <a name="deployment-statuses"></a>Distributions status 
+## <a name="deployment-statuses"></a>Distributionsstatus 
 
-Dessa status värden visas för varje distribution.
+Det här är de statusar som visas för varje distribution.
 
 Status  | Förklaring 
 --- | --- 
-Distribuera | Din ändring väntar på att distribueras till den här gruppen.
-Pågår | Ändringen tillämpas på aktiva enheter i den här gruppen. 
-Kunna | Ändringen slutförd på alla aktiva enheter i den här gruppen. 
-Misslyckades | Ändringen misslyckades på 10 procent av aktiva enheter i gruppen, så distributionen stoppades.<br><br> En supportbegäran öppnas automatiskt med Microsoft hanterade Skriv bords åtgärder för att felsöka distributionen. 
-Återställt | Ändringen återfördes till den senaste ändringen som lyckades distribueras till alla distributions grupper.
+Distribuera | Ändringen väntar på att distribueras till den här gruppen.
+Pågående | Ändringen tillämpas på aktiva enheter i den här gruppen. 
+Slutfört | Ändringen slutfördes på alla aktiva enheter i den här gruppen. 
+Misslyckades | Ändringen misslyckades på 10 procent av alla aktiva enheter i gruppen, så distributionen stoppades.<br><br> En supportbegäran öppnas automatiskt med Microsoft Hanterat skrivbord för att felsöka distributionen. 
+Återställd | Ändringen återställdes till den senaste ändringen som distribuerades till alla distributionsgrupper.
 
 ## <a name="deploy-changes"></a>Distribuera ändringar
 
-Vi kommer att Visa Skriv bords bakgrund i dessa instruktioner. När du har mellanlagrat en distribution distribueras ändringarna från sidan distributions status. 
+Vi kommer att visa bakgrundsbilden för skrivbordet i de här instruktionerna. När du har gjort en distribution distribuerar du ändringar från sidan Distributionsstatus. 
 
 **Distribuera ändringar**
 
-1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och gå till menyn **enheter**
-2. Leta efter avsnittet Microsoft Managed Desktop och välj **Inställningar**.
-3. I arbets ytan **distributions status** väljer du den inställning du vill distribuera och väljer sedan den stegvisa distribution som ska distribueras.
-4. Välj **distribuera** för att distribuera ändringen till en av distributions grupperna.
+1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och gå till **menyn** Enheter
+2. Titta efter avsnittet Microsoft Hanterat skrivbord, välj **Inställningar**.
+3. Välj **den inställning** du vill distribuera i arbetsytan Distributionsstatus och välj sedan den distribution som ska distribueras.
+4. Välj **Distribuera** för att distribuera ändringen till någon av distributionsgrupperna.
 
 > [!NOTE] 
-> Varnings ikonen för Orange visar att en tidigare grupp är tillgänglig för distribution eftersom den är rekommenderad för att bli uppkopplad. 
+> Den orange varningsikonen visar att det finns en tidigare grupp tillgänglig för distribution eftersom vi rekommenderar att distribuera den i ordning. 
 
 <!-- Needs picture updated to show MEM ![Deployment status workspace. Trusted sites pane on the right. In the Deployment groups section are three columns: deployment groups, devices, and status. In the status column, "deploy" is highlighted.](../../media/1deployedit.png) -->
 
-Vi rekommenderar att du distribuerar till distributions grupper i den här ordningen: testa, första, snabba och sedan breda. 
+Vi rekommenderar att du distribuerar till distributionsgrupper i följande ordning: Testa först, snabbt och sedan bred. 
 
-När ändringar är slutförda i varje grupp ändras statusen till **slutförd**.
+När ändringarna är slutförda i varje grupp ändras statusen till **Slutförd.**
 
 <!-- Needs picture updated to show MEM ![Deployment status workspace with columns for date updated, version, test, first, fast, and broad. The Proxy row is expanded, showing a dated setting flagged as "complete" in each of the four deployment groups.](../../media/2completeedit.png) -->
 
 ## <a name="revert-deployment"></a>Återställ distribution
 
-När du har distribuerat en ändring kan du återgå från **distributions status**. När du återställer en ändring som **pågår** eller **slutförs**stoppar den aktuella distributionen. Inställningen återställs till den senaste versionen som distribueras till alla grupper. 
+När du har distribuerat en ändring kan du återgå till **Distributionsstatus.** När du återställer en ändring som **pågår eller** **Slutförd upphör** den aktuella distributionen. Inställningen återgår till den senaste versionen som distribuerades till alla grupper. 
 
-Vi visar stegen för att återställa en ändring med hjälp av Skriv bords bakgrunds bilden som ett exempel. 
+Vi kommer att visa stegen för att återställa en ändring med hjälp av skrivbordsbakgrundsbilden som exempel. 
 
-**Så här återställer du en ändring**
-1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och gå till menyn **enheter**
-2. Leta efter avsnittet Microsoft Managed Desktop och välj **Inställningar**.
-3. I arbets ytan **distributions status** väljer du den inställning som du vill återställa och väljer sedan den stegvisa distribution som du vill återställa.
-4. Under **behöver du återställa den här ändringen?** väljer du **Återställ distribution**.
+**Om du vill återställa en ändring**
+1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och gå till **menyn** Enheter
+2. Titta efter avsnittet Microsoft Hanterat skrivbord, välj **Inställningar**.
+3. Välj **den inställning** du vill återställa i arbetsytan Distributionsstatus och välj sedan den stegade distributionen för att återställa.
+4. Under **Behöver du återställa den här ändringen?** väljer du Återställ **distribution.**
 
 <!-- Needs picture updated to show MEM ![Deployment status workspace. Browser start pages is selected, opening a pane on the right side with data about the submitted change and its status. At the bottom is the "need to revert this change" area where you can select "Revert deployment."](../../media/3revert.png) -->
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-- [Inställningar för konfigurerings bara översikt](config-setting-overview.md)
+- [Översikt över konfigurerbara inställningar](config-setting-overview.md)
 - [Referens för inställningar som kan konfigureras](config-setting-ref.md) 

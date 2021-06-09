@@ -31,7 +31,7 @@ ms.locfileid: "51650076"
 Feedback från användare är en viktig signal för Microsoft att förstå användarupplevelsen med Microsoft-produkter. Microsoft värdesätter våra användares åsikter. Användarfeedbacken går direkt till våra tekniker och hjälper oss att forma framtiden för Microsofts produkter och tjänster för alla användare.  
 I det här avsnittet hittar du information om vilka typer av feedback som finns, hur vi samlar in den, vad vi samlar in och hur vi hanterar data.
 
-Som administratör kan du hantera feedbacksignalen för din organisation. Vi introducerar en ny uppsättning principinställningar som hjälper dig att hantera insamling av användarfeedback i Microsoft 365-programmen för din organisation. De här principinställningarna hjälper dig att rikta Azure Active Directory-grupper och konfigurera feedbackinsamling för din organisation. Användarfeedbacken går direkt till våra tekniker och hjälper oss att forma framtiden för Microsofts produkter och tjänster för alla användare. Du kan läsa mer om de här principinställningarna, vilka program de gäller för och metodtips i Hantera [Microsoft-feedback för din organisation.](../manage/manage-feedback-ms-org.md)
+Som administratör kan du hantera feedbacksignalen för din organisation. Vi introducerar en ny uppsättning principinställningar som hjälper dig att hantera insamling av användarfeedback i Microsoft 365 för din organisation. De här principinställningarna hjälper dig att rikta Azure Active Directory grupper och konfigurera feedbackinsamling för din organisation. Användarfeedbacken går direkt till våra tekniker och hjälper oss att forma framtiden för Microsofts produkter och tjänster för alla användare. Du kan läsa mer om de här principinställningarna, vilka program de gäller för och metodtips i Hantera [Microsoft-feedback för din organisation.](../manage/manage-feedback-ms-org.md)
 
 ## <a name="feedback-types"></a>Feedbacktyper
 
@@ -42,12 +42,12 @@ Om användarna använder någon av Microsofts appar och vill ge feedback kan de 
 #### <a name="in-product-feedback-examples"></a>Exempel på feedback i produkten
 
 :::image type="content" source="../../media/In-appfeedbackbackstage.png" alt-text="Skärmbild: Exempel på feedback i produkten":::
-:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="Skärmbild: Feedbackexempel för Windows i produkten ":::
-:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="Skärmbild: Exempel på feedback i Teams i produkten":::
+:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="Skärmbild: Windows exempel på feedback i produkten":::
+:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="Skärmbild: Teams exempel på feedback i produkten":::
 
 ### <a name="in-product-surveys"></a>Undersökningar i produkten
 
-Användarna kan även betygsätta sin upplevelse och ge ytterligare information om upplevelsen via systeminitierade undersökningsuppnstruktionerna. Dessa uppmaningar visas då och då i Microsoft 365-produkterna. När användarna uppmanas att göra det kan de välja om de vill ge feedback. Undersökningsanvisningarna visas vanligtvis längst ned till höger i programmet. Om användaren bestämmer sig för att ge feedback, avvisa frågan eller låta frågan försvinna på egen hand, kommer användaren inte att se undersökningen igen på ett tag. Microsoft använder även en styrningsprocess för att begränsa antalet systeminitierade undersökningar.  Syftet med styrning är att säkerställa att användarna inte överväldigas av antalet undersökningsuppmaningar.
+Användarna kan även betygsätta sin upplevelse och ge ytterligare information om upplevelsen via systeminitierade undersökningsuppnstruktionerna. De här instruktionerna Microsoft 365 produkter då och då. När användarna uppmanas att göra det kan de välja om de vill ge feedback. Undersökningsanvisningarna visas vanligtvis längst ned till höger i programmet. Om användaren bestämmer sig för att ge feedback, avvisa frågan eller låta frågan försvinna på egen hand, kommer användaren inte att se undersökningen igen på ett tag. Microsoft använder även en styrningsprocess för att begränsa antalet systeminitierade undersökningar.  Syftet med styrning är att säkerställa att användarna inte överväldigas av antalet undersökningsuppmaningar.
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="Skärmbild: Exempel på feedbackbegäran i produkten":::
 
@@ -57,7 +57,7 @@ Användarna kan även betygsätta sin upplevelse och ge ytterligare information 
 
 Detaljerad och användbar feedback är viktigt för att göra ändringar och förbättringar i Microsoft-produkter. Om dina användare har problem eller förslag på hur vi kan förbättra dem vill vi gärna höra det. Nedan följer några tips och exempel på användbar feedback som skickas till Microsoft.
 
-- **Kort och beskrivande rubrik**   Beskrivande och specifika rubriker hjälper oss att förstå problemet som rapporteras. Exempel: Excels **lista över senaste filer** innehåller inte nyligen tillagda OneDrive-filer.
+- **Kort och beskrivande rubrik**   Beskrivande och specifika rubriker hjälper oss att förstå problemet som rapporteras. Exempel: Excel **Senaste-filer innehåller** inte nyligen tillagda filer OneDrive filer.
 - **Fokusera på ett problem i taget**   Ge feedback om ett problem eller rekommendation för ett objekt i taget. Detta säkerställer att rätt loggar och data tas emot vid varje inskickade data och kan tilldelas för uppföljning. Om du har fler än ett ärende kan du skicka en ny feedbackbegäran för varje ärende. Det hjälper oss att identifiera mängden feedback vi får om ett visst problem.
 - **Skriv information i rutan Beskrivning**   Information om din enhet, operativsystem och appar tas automatiskt med i varje rapporterad feedback. Lägg till ytterligare information om ett problem som du tycker är viktigt. Ta till exempel med detaljerade steg för att återskapa problemet.
 
@@ -82,7 +82,7 @@ När en användare skickar feedback samlas appinformationen vanligtvis in tillsa
 - **App build**   Versionsnummer för Microsoft-produkt som togs med vid inskicking.
 - **Appspråk**   Språk för Microsoft-produkt som fördes in vid sändningen.
 - **Bifogade filer**   Hade några bifogade filer (dvs. skärmbilder, filer) samlas in som en del av feedbacken? (Ja/Nej).
-- **TenantId**   Om feedback skickas från ett Azure Active Directory-konto, som TenantId har kopplats till.
+- **TenantId**   Om feedback skickas från ett Azure Active Directory konto, som TenantId har kopplats till.
 
 ## <a name="data-handling-and-privacy"></a>Datahantering och sekretess
 
@@ -93,4 +93,4 @@ Vi ger dig kontroll över din integritet med lättanvända verktyg och tydliga a
 
 ## <a name="how-can-i-see-my-users-feedback"></a>Hur kan jag se min användares feedback?
 
-Snart kommer vi att dela de feedbackdata vi samlar in för Microsoft-produkter till dig. Vi arbetar på en ny upplevelse i administrationscentret för Microsoft 365 så att vi kan visa, ta bort och exportera feedbackdata för din organisation. Det ger dig direkt transparens och användbar information om användarnas upplevelse av Microsoft 365-produkter.
+Snart kommer vi att dela de feedbackdata vi samlar in för Microsoft-produkter till dig. Vi arbetar på en ny upplevelse i Microsoft 365 administrationscenter så att vi kan visa, ta bort och exportera feedbackdata för organisationen. På så sätt får du direkt transparens och användbar insyn i användarnas upplevelse av Microsoft 365 produkter.

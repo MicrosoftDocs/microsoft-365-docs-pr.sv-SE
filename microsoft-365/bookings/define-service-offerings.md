@@ -1,5 +1,5 @@
 ---
-title: Definiera dina tjänst möjligheter i bokningar
+title: Definiera dina serviceerbjudanden i Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
-description: Anvisningar för att ange information om tjänst erbjudanden, inklusive tjänstens namn, beskrivning, plats, längd och prissättning. Du kan också tagga de anställda som är kvalificerade för att tillhandahålla tjänsten.
+description: Instruktioner för hur du anger tjänsterbjudanden, inklusive tjänstnamn, beskrivning, plats, varaktighet och priser. Du kan även tagga de medarbetare som är kvalificerade för att tillhandahålla tjänsten.
 ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
 ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
@@ -16,120 +16,120 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 09/18/2020
 ms.locfileid: "47962543"
 ---
-# <a name="define-your-service-offerings-in-bookings"></a>Definiera dina tjänst möjligheter i bokningar
+# <a name="define-your-service-offerings-in-bookings"></a>Definiera dina serviceerbjudanden i Bookings
 
-När du definierar dina tjänst erbjudanden i Microsoft-bokningar kan du ange ett tjänst namn, en beskrivning, en plats (Välj om du vill träffas personligen eller ha ett onlinemöte), varaktighet, standard påminnelser till kunder och personal, interna anteckningar om tjänsten och priser. Du kan också tagga de anställda som är kvalificerade för att tillhandahålla tjänsten. När kunder sedan kommer till företagets webbplats för att boka en avtalad tid kan de se exakt vilka typer av avtalade tider som är tillgängliga, välja den person som ska tillhandahålla tjänsten och hur mycket deras tjänst kommer att kosta.
+När du definierar dina tjänsteerbjudanden i Microsoft Bookings anger du ett tjänstnamn, en beskrivning, plats (välj om du vill träffas personligen eller ha ett onlinemöte), varaktighet, standardpåminnelser till kunder och personal, interna anteckningar om tjänsten och priser. Du kan även tagga de medarbetare som är kvalificerade för att tillhandahålla tjänsten. När kunder kommer till företagets webbplats för att boka en avtalad tid kan de se exakt vilka typer av avtalade tider som är tillgängliga, välja vilken person som ska tillhandahålla tjänsten och hur mycket deras tjänst kommer att kosta.
 
-Du kan också lägga till anpassad information och URL-adresser i e-postbekräftelsen och påminnelser som du skickar när någon bokar en pärm till en tjänst via din boknings sida.
+Du kan också lägga till anpassad information och WEBBADRESSer i e-postbekräftelsen och påminnelser som du skickar när någon bokar en tjänst via din bokningssida.
 
-## <a name="create-the-service-details"></a>Skapa tjänst informationen
+## <a name="create-the-service-details"></a>Skapa tjänstinformationen
 
-1. Gå till [sidan Hantera tjänster](https://outlook.office.com/bookings/services) och välj **Lägg till en tjänst**.
+1. Gå till sidan [Hantera tjänster och](https://outlook.office.com/bookings/services) välj Lägg till en **tjänst.**
 
-2. **Tjänstens namn**: Ange namnet på tjänsten. Det här är det namn som visas i den nedrullningsbara menyn på sidan kalender. Det här namnet visas också när någon manuellt lägger till en avtalad tid på sidan kalender och visas som en panel på sidan själv service.
+2. **Tjänstnamn**: ange namnet på tjänsten. Det här är det namn som visas i listrutan på sidan Kalender. Det här namnet visas också när någon lägger till en avtalad tid manuellt på sidan Kalender, och det visas som en panel på självbetjäningssidan.
 
-3. **Beskrivning**: det här är den beskrivning som visas när en användare klickar på informations ikonen på självbetjänings sidan.
+3. **Beskrivning**: Den beskrivning du anger är vad som visas när en användare klickar på informationsikonen på självbetjäningssidan.
 
-4. **Standard plats**: den här platsen är vad som visas i bekräftelse-och e-postmeddelanden för både personal och kunder, och den visas i den kalender händelse som har skapats för bokningen.
+4. **Standardplats:** Den här platsen visas vid bekräftelse- och påminnelsemeddelanden till både personal och kunder, och den visas i kalenderhändelsen som skapats för bokning.
 
-5. **Lägga till onlinemöte**: med den här inställningen kan du aktivera eller inaktivera onlinemöten för varje avtalad tid, antingen via Teams eller Skype, beroende på vilken du konfigurerar som standard klient för personal medlemmen.
+5. **Lägg till onlinemöte:** Med den här inställningen aktiveras eller inaktiveras onlinemöten för varje avtalad tid, antingen via Teams eller Skype, beroende på vilken du konfigurerar som standardklient för den anställde.
 
-    - Aktiverat
+    - Aktiverad:
 
-        - En länk till ett team eller ett Skype-möte, unikt för bokningen, läggs till i kalender händelsen både i personalen och i kundernas kalendrar tillsammans med information om uppringning.
-        - Länken till mötet läggs till i alla bekräftelse-och e-postmeddelanden, som visas i följande exempel:
+        - En länk till ett Teams- eller Skype-möte, som är unikt för bokningsmötet, läggs till i kalenderhändelsen i både personalens och kundens kalendrar, tillsammans med uppringningsinformation.
+        - Länken för att ansluta till mötet läggs till i alla bekräftelse- och påminnelsemeddelanden som visas i följande exempel:
 
-        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Exempel på länk till Teams-möte i bokningar":::
+        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Exempel på länk för att ansluta Teams mötet i Bookings":::
 
         > [!NOTE]
-        > Team-möten kan kopplas via Teams-mobilappen, teams-programmet, i en webbläsare eller via telefon uppringningen. Vi rekommenderar starkt att du aktiverar team som standard tjänst för onlinemötet för din klient organisation för att få bästa möjliga bokning av virtuella avtalade tider.
+        > Teams möten kan du delta via Teams-mobilappen, Teams-skrivbordsappen, i en webbläsare eller via telefonens uppringning. Vi rekommenderar att du Teams att använda som standardtjänst för onlinemöte för din klientorganisation, för bästa upplevelse av virtuella bokningsbokningar.
 
-    - Aktiv
-        - Avtalade tider kommer inte att innehålla ett mötes alternativ och alla mötesrelaterade fält som visas när **Lägg till onlinemöte** är aktiverat visas inte.
+    - Inaktiverad:
+        - Avtalade tider innehåller inte något mötesalternativ och alla mötesrelaterade fält som visas när Lägg till **onlinemöte** har aktiverats visas inte.
 
-6. **Standard längd**: det här är hur länge alla möten kommer att bokas. Tiden är blockerad från start tiden, som väljs under bokning. Hela den avtalade tiden kommer att blockeras i personalens kalendrar.
+6. **Standardvaraktighet:** Det här är hur länge alla möten bokas för. Tiden blockeras från början av starttiden, som väljs vid bokning. Den fullständiga tiden blockeras i personalens kalendrar.
 
-7. **Buffertlängd din kund inte kan göra**följande: om du aktiverar den här inställningen kan du lägga till extra tid för personalens kalender varje gång en avtalad tid bokas.
+7. **Tidsbuffert** som kunden inte kan boka : Om du aktiverar den här inställningen kan du lägga till extra tid i personalens kalender varje gång en avtalad tid bokas.
 
-    Tiden blockeras i personalens kalender och påverkar ledig/upptagen-information. Det innebär att om en avtalad tid slutar på 3:00 PM och 10 minuters buffertstorlek har lagts till i slutet av mötet visas personalens kalender som upptagen och icke-bookable förrän 3:10pm. Det kan vara användbart om personalen behöver tid innan ett möte kan förberedas, till exempel en läkare som granskar ett patient diagram eller en finansiell rådgivare som förbereder relevant konto information. Det kan också vara användbart efter ett möte, till exempel när någon behöver tid att resa till en annan plats.
+    Tiden blockeras i personalens kalender och påverkar ledig/upptagen-information. Det innebär att om en avtalad tid slutar kl. 15:00 och 10 minuters tidsbuffert har lagts till i slutet av mötet visas personalens kalender som upptagen och icke-bokbar fram till 15:10. Det kan vara användbart om din personal behöver tid innan ett möte för att förbereda sig, till exempel en läkarjournal eller en ekonomisk rådgivare som förbereder relevant kontoinformation. Det kan också vara praktiskt efter ett möte, till exempel när någon behöver tid för att resa till en annan plats.
 
-8. **Låt kunden hantera sin bokning**: den här inställningen avgör om eller notthe kunden kan ändra eller annullera sin bokning, förutsatt att den har bokats via fliken Kalender i webb programmet.
+8. **Låt kunden hantera sin bokning**: Den här inställningen anger om kunden kan ändra eller avbryta sin bokning, förutsatt att den har bokats via fliken Kalender i webbappen Bookings.
 
-    - Aktiverat
+    - Aktiverad:
 
-        Knappen **Hantera bokning** visas i e-postmeddelandet med bekräftelse på kund. När den här knappen är vald av kunden visas tre alternativ:
-        - **Schemalägg om** Om du väljer det här alternativet lägger användaren till en särskild tjänst sida där han eller hon kan välja en ny tid och/eller datum för samma tjänst och personal från den ursprungliga bokningen. Observera att även om den ursprungliga personal medlemmen är kopplad till den ombokade bokningen som standard kan användaren även byta personal medlemmen.
-        - **Annullera bokning** Detta annullerar bokningen och tar bort den från personalens kalender.
-        - **Ny bokning** Med det här alternativet får användaren till självbetjänings sidan med alla tjänster och personal som visas för att schemalägga en ny bokning.
+        Knappen **Hantera bokning** visas i e-postmeddelandet med kundbekräftelsen. När kunden väljer den här knappen visas tre alternativ:
+        - **Schemata om** Om du väljer det här alternativet kommer användaren till en tjänstspecifik Self-Service-sida, där han eller hon kan välja en ny tid och/eller ett nytt datum för samma tjänst och samma anställd från den ursprungliga bokningen. Observera att även om den ursprungliga anställde är kopplad till den omplanerade bokningen som standard har användaren möjlighet att ändra den anställde också.
+        - **Avbryt bokning** Då ställs bokningsbokningen in och den tas bort från personalens kalender.
+        - **Ny bokning** Med det här alternativet kommer användaren Self-Service sidan med alla tjänster och personal som visas för att schemalägga en ny bokning.
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Knappen hantera bokningar i en bokning":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Knappen Hantera bokningar i Bookings":::
 
-        Vi rekommenderar bara att du lämnar den här inställningen aktive rad om du är van vid att komma åt sidan för Self-service.
+        Vi rekommenderar att du lämnar den här inställningen aktiverad om du är bekväm med att kunder har åtkomst Self-Service sidan.
 
-    - Aktiv
+    - Inaktiverad:
 
-        Användaren kommer inte att kunna omboka eller annullera deras bokning när de går igenom fliken Kalender i webb programmet. När du bokar via självbetjänings sidan kommer kunder fortfarande att ha knappen **Hantera bokning** och alla dess alternativ även om den här inställningen är inaktive rad.
+        Användaren kan inte omboka eller avbryta sin bokning när de bokar via fliken Kalender i webbappen Bookings. När du gör en bokning Self-Service sidan har kunderna  dock fortfarande knappen Hantera bokning och alla alternativ, även om den här inställningen är inaktiverad.
 
-        Vi rekommenderar att du inaktiverar den här inställningen om du vill begränsa åtkomsten till självbetjänings sidan. Dessutom föreslår vi att lägga till text i dina bekräftelse-och e-postmeddelanden så att dina kunder kan göra ändringar i sin bokning på annat sätt, till exempel genom att ringa kontoret eller skicka e-post till supportavdelningen.
+        Vi rekommenderar att du inaktiverar den här inställningen om du vill begränsa åtkomsten till Self-Service sidan. Vi föreslår dessutom att du lägger till text i din bekräftelse och påminnelse via e-post som talar om för dina kunder hur de gör ändringar i bokning på andra sätt, till exempel genom att ringa till kontoret eller skicka e-post till supporten.
 
-9. **Maximalt antal deltagare per händelse** Med den här inställningen kan du skapa tjänster som kräver att flera personer kan boka samma avtalade tider och samma personal (till exempel en tränings klass). Tids platsen för den avtalade tiden för den valda tjänsten, personalen och tiden kommer att vara tillgänglig för bok ända tills det maximala antalet deltagare som anges av dig har uppnåtts. Nuvarande kapacitet och deltagare för avtalad tid kan visas på fliken Kalender i webb programmet bokningar.
+9. **Maximalt antal deltagare per händelse** Med den här inställningen kan du skapa tjänster som kräver att flera personer kan boka samma avtalade tid och samma personal (till exempel en träningsklass). Tidsluckan för den valda tjänsten, personalen och tiden är tillgänglig för bok tills det maximala antalet deltagare, som anges av dig, har nåtts. Aktuell möteskapacitet och -deltagare kan visas på fliken Kalender i webbappen Bookings.
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Exempel på hur du ställer in maximalt antal deltagare i en bokning":::
+    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Exempel på hur du anger maximalt antal deltagare i Bookings":::
 
-10. **Standard pris**  Det är det pris som visas på sidan Self-service. Om **pris inte har ställts in** väljs inga priser eller referenser till kostnad eller prissättning.
+10. **Standardpris**  Det här är det pris som visas på Self-Service sidan. Om **Pris inte angetts** visas inget pris eller någon referens till kostnad eller priser.
 
-11. **Anteckningar** Det här fältet visas i boknings evenemang för boka personal och på den händelse som visas på fliken Kalender i webb programmet.
+11. **Anteckningar** Det här fältet visas i bokningshändelsen för bokad personal samt i händelsen som visas på fliken Kalender i webbappen Bookings.
 
-12. **Anpassade fält** I det här avsnittet kan du lägga till och ta bort frågor om kunden behöver besvara sin order för att kunna boka det.
+12. **Anpassade fält** Det här avsnittet tillåter att frågor läggs till eller tas bort om kunden behöver svara på frågor för att kunna boka.
 
-    - E-post, telefonnummer, adress och anteckningar är inte flyttbara, men du kan göra dem valfria genom **att avmarkera varje** fält.
+    - Kundens e-postadress, telefonnummer, adress och anteckningar är icke-flyttbara fält, men du kan göra dem valfria genom att avmarkera **Krävs** bredvid varje fält.
 
-    - Du kan lägga till flera alternativ eller textsvars frågor genom att välja **Lägg till en fråga**.
+    - Du kan lägga till flervals- eller textsvarsfråga genom att välja **Lägg till en fråga**.
 
-        Anpassade fält kan vara användbara när du samlar in information som krävs varje gång den avtalade tiden tas med. Exemplen inkluderar försäkrings leverantör innan ett klinik-besök, låne typ för låne konsultation, huvud analys för utbildning eller sökande-ID för kandidat intervjuer.
+        Anpassade fält kan vara användbara när du samlar in information som behövs varje gång den avtalade tiden bokas. Exempel är försäkringsbolag innan ett besök, lånetyp för lånssamråd, större studieråd för akademisk rådgivning eller sökande-ID för kandidatintervjuer.
 
-13. **Påminnelser och bekräftelser** Båda typerna av e-postmeddelanden skickas ut till kunder, anställda eller båda, under en viss tids period innan den avtalade tiden. Du kan skapa flera meddelanden för varje avtalad tid enligt dina önskemål.
+13. **Påminnelser och bekräftelser** Båda e-postmeddelandena skickas till kunder, anställda eller både och, vid en angiven tidsperiod före den avtalade tiden. Du kan skapa flera meddelanden för varje avtalad tid, enligt vad du föredrar.
 
-    - Standard-e-postbekräftelsen och påminnelser innehåller grundläggande information om den avtalade tiden, till exempel kund/klient namn, personalens namn, tjänsten eller avtalade tiden, samt tiden för den avtalade tiden. För onlinemöten visas även länken till gå till. Möjligheten att hantera bokningen kan också inkluderas, om den här inställningen är aktive rad (enligt beskrivningen ovan i steg 8).
+    - Standardbekräftelsen och påminnelsen innehåller grundläggande information om den avtalade tiden, till exempel kund-/klientnamn, anställds namn, tjänsten eller den avtalade tiden bokad och tiden för den avtalade tiden. För onlinemöten inkluderas även en länk att ansluta till. Du kan också hantera bokningsinställningen om den här inställningen är aktiverad (enligt beskrivningen ovan i steg 8).
 
-        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="En bekräftelse via e-post från bokningar":::
+        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="Ett bekräftelsemeddelande från Bookings":::
 
-    - Du kan också lägga till ytterligare text som du vill ha med, till exempel information om hur du schemalägger om eller hur kunderna ska skaffa den avtalade tiden. Här följer ett exempel på anpassad text som lagts till i det ursprungliga bekräftelse meddelandet, som visas i fältet **Ytterligare information för bekräftelse av e-post** :
+    - Alternativt kan du ta med eventuell ytterligare text som du vill ha här, till exempel information om ny nyplanering eller vad kunder ska ta med för den avtalade tiden. Följande är ett exempel på anpassad text som lagts till i det ursprungliga bekräftelsemeddelandet, som visas i **fältet Ytterligare information för e-postbekräftelse:**
 
-        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Ytterligare information i en boknings-e-post":::
+        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Ytterligare information i ett bookings-e-postmeddelande":::
 
-14. **Aktivera SMS-aviseringar för din kund** Om du väljer det här alternativet skickas SMS-meddelanden till kunden, men bara om de väljer.
+14. **Aktivera SMS-aviseringar för kunden** Om du väljer SMS meddelanden skickas till kunden, men endast om denna anmäler sig.
 
-    - Rutan för att välja på sidan manuell bokning och self-service:
+    - Rutan för avanmälning på manuell bokning Self-Service sidan:
 
-        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Rutan för att välja i en bokning":::
+        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Rutan för avanmälning i Bookings":::
 
-    - SMS-meddelanden ser ut som nedan (Obs! det finns för närvarande inga meddelanden i Nord Amerika):
+    - Sms-aviseringar ser ut som följande (observera att SMS är för närvarande endast tillgängliga i Nordamerika):
 
-        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Ett SMS från bokningar":::
+        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Ett sms från Bookings":::
 
-15. **Publicerings alternativ** Välj om du vill att den här tjänsten ska visas som bookable på självbetjänings sidan, eller om du bara vill göra tjänsten bookable på fliken Kalender i webb programmet.
+15. **Publiceringsalternativ** Välj om du vill att den här tjänsten ska visas som bokbar på Self-Service-sidan eller om du vill att tjänsten endast ska kunna bokas på fliken Kalender i webbappen Bookings.
 
-16. **Schemaläggnings policy** Den här inställningen bestämmer hur tiden för avtalade tider visas och hur lång tid som kan göras eller annulleras.
+16. **Schemaläggningsprincip** Den här inställningen bestämmer hur tider för avtalade tider visas och tidsperiod då bokningar kan göras eller avbrytas.
 
-17. **E-postmeddelanden** Anger när e-postmeddelanden skickas till organisationens personal och till kunder eller klienter.
+17. **E-postaviseringar** Anger när e-postmeddelanden skickas till organisationens personal och till kunder eller klienter.
 
-18. **Personal** Om du markerar den här kryss rutan kan kunder eller klienter välja en specifik anställd för den avtalade tiden.
+18. **Personal** Om du markerar den här kryssrutan kan kunder eller klienter välja en viss anställd för sin avtalade tid.
 
-    - Aktiverat
+    - Aktiverad:
 
-        Kunderna kan välja bland alla anställda som tilldelats den avtalade tiden när de bokar på självbetjänings sidan. Om du väljer alternativet för **någon** kan du välja en tillgänglig personal medlem med slumpmässig till den avtalade tiden.
+        Kunder kan välja från all personal som tilldelats den avtalade tiden vid bokning Self-Service sidan. Om du väljer alternativet Alla **så** väljs en tillgänglig anställd slumpmässigt för att tilldela till den avtalade tiden.
 
-    - Aktiv
+    - Inaktiverad:
 
-        Kunder som bokning via Self-Service-sidan kan välja en tjänst och tid och datum. De tillgängliga personalen kommer att bokas slumpmässigt. Observera att specifika personer kan fortfarande väljas när de är på fliken Kalender i webb programmet.
+        Kunder som bokar via Self-Service kan välja en tjänst och en tid och ett datum. Den tillgängliga personalen bokas slumpmässigt. Observera att viss personal fortfarande kan väljas vid bokning via fliken Kalender i webbappen Bookings.
 
-19. **Tillgänglighet** Följande alternativ avgör när servicen kan bokas:
+19. **Tillgänglighet** Följande alternativ avgör när tjänsten kan bokas:
 
-    - **Bookable när personalen är gratis** Tjänsten behåller tillgänglighet baserat på när personalen är gratis inom kontors tid, utan extra tids begränsningar.
+    - **Kan bokas när personalen är gratis** Tjänsten behåller tillgängligheten baserat på när personalen är ledig inom arbetstid, utan extra tidsbegränsningar.
 
-    - **Anpassade timmar (återkommande vecka)** Tjänsten har ett extra lager med tillgänglighet som kan begränsas ytterligare (utöver begränsning i arbets tid eller med personal timmar). Använd det här alternativet om din tjänst endast kan tillhandahållas eller genomföras vid en viss tidpunkt.
+    - **Anpassade timmar (återkommande varje vecka)** Tjänsten har ett lager med tillgänglighet som kan begränsas ytterligare (förutom att begränsa efter arbetstid eller med personaltimmar). Använd det här alternativet när tjänsten endast kan tillhandahållas eller utföras vid en viss tidpunkt.
 
-    - **Ange en annan tillgänglighet för ett datum intervall** Den här inställningen påverkar tillgänglighet vid en viss tidpunkt i stället för återkommande. Detta kan till exempel användas när en dator som behövs för tjänsten tillfälligt betjänas och inte är tillgänglig, eller när en organisation stängs för en semester.
+    - **Ange annan tillgänglighet för ett datumintervall** Den här inställningen påverkar tillgänglighet vid en viss tidpunkt i stället för en återkommande bas. Den kan till exempel användas när en dator som behövs för tjänsten tillfälligt blir servicen och otillgänglig, eller när en organisation är stängd för en helgdag.
 
-20. **Tilldela personal** Välj personal (förutsatt att du har lagt till personal medlemmar på fliken personal) som kommer att vara bookable för den specifika tjänsten. Om ingen enskild anställd väljs kommer alla anställda som är tilldelade till tjänsten.
+20. **Tilldela personal** Välj den personal (förutsatt att du har lagt till anställda på fliken Personal) som kan bokas för den specifika tjänsten. Om du väljer ingen enskild personal tilldelas all personal till tjänsten.

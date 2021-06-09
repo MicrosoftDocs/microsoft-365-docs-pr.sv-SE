@@ -1,5 +1,5 @@
 ---
-title: Ange språk-och tids zoner i Microsoft-bokningar
+title: Ange språk och tidszoner i Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
-description: Ändra språk-och tids zons inställningar i Microsoft-bokningar. Om bokningarna skapas på fel tid kan det bero på att den inte är aktive rad.
+description: Ändra språk och tidszon i Microsoft Bookings. Om bookings skapas vid fel tidpunkt kan Bookings anges för fel tidszon.
 ms.openlocfilehash: 3e7709666d6426b11c275e46a18d43e7b7ab3526
 ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
@@ -16,36 +16,36 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 09/18/2020
 ms.locfileid: "47962437"
 ---
-# <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Ange språk-och tids zoner i Microsoft-bokningar
+# <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Ange språk och tidszoner i Microsoft Bookings
 
-Om du använder Microsoft-bokningar och bokningar skapas på fel gång kan det hända att dina tids zons inställningar måste ändras. Om vissa bokningar är på fel språk kan du behöva ändra dina språk inställningar.
+Om du använder Microsoft Bookings och bokningar skapas vid fel tidpunkt kan tidszonsinställningarna behöva ändras. På samma sätt kan du behöva ändra dina språkinställningar om vissa bokningar har fel språk.
 
-Det finns två separata inställningar för språk och tidszon för bokningar. Den första inställningen styr tids zonen för boknings kalender och anges med hjälp av Outlook på webben inställningar för den personliga kalendern för den inloggade användaren. Den andra inställningen påverkar den boknings sida för självbetjäning som kunderna använder och är inställd på en "nationella inställningar"-sida som styr språk-och tidszon för den aktuella sidan.
+Det finns två separata språk- och tidszonsinställningar för Bookings. Den första inställningen styr språk och tidszon för bokningskalendern och ställs in med hjälp av inställningarna för Outlook på webben för den inloggade användarens personliga kalender. Den andra inställningen påverkar bokningssidan med självbetjäning som dina kunder använder och ställer in en sida med "nationella inställningar" som styr endast språk och tidszon för den sidan.
 
-## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>Ange språk och tidszon för en boknings kalender
+## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>Ange språk och tidszon för en bokningskalender
 
-Boknings kalendern använder den inloggade användarens språk-och tids zons inställningar. Exempel: om den inloggade användarens tidszon är inställd på Eastern Standard Time (EST) visar boknings kalender befintliga start-och slut tider för avtalad tid i EST. Den här tids zonen angavs ursprungligen när användarens Microsoft 365 och Outlook på webb kontona skapades.
+Bokningskalendern använder den inloggade användarens språk- och tidszonsinställningar. Om den inloggade användarens tidszon till exempel är Eastern Standard Time (EST) visas befintliga start- och sluttider för avtalade tider i EST i bokningskalendern. Den här tidszonen angavs ursprungligen när användarens Microsoft 365 och Outlook på webben-konton skapades.
 
-Så här anger du språk och tidszon för en boknings kalender:
+Så här anger du språk och tidszon för bokningskalendern:
 
-1. Logga in på Microsoft 365 och välj Outlook-panelen på Start sidan (som visas i skärm bilden nedan) eller i Microsoft 365-startprogrammet.
+1. Logga in Microsoft 365 och välj panelen Outlook på startsidan (som i skärmbilden nedan) eller i Microsoft 365 Startprogrammet.
 
-   ![Bild av Outlook-panelen på Microsoft 365-Sidan](../media/bookings-outlook-tile.png)
+   ![Bild av Outlook på Microsoft 365 på startsidan](../media/bookings-outlook-tile.png)
 
-1. När Outlook öppnas väljer du **kugg hjuls ikonen** i det övre högra hörnet av skärmen för att öppna dina inställningar för privat dator och konto och söker efter "tidszon" i sökrutan i **inställnings** panelen. Panelen uppdateras och visar dina nuvarande personliga språk-och tids zons inställningar för det här kontot. Som vi nämnt ovan styr den här inställningen också språk-och tids zonen i boknings kalendern.
+1. När Outlook öppnas väljer du  kugghjulsikonen i det övre högra hörnet på skärmen för att öppna dina personliga inställningar och kontoinställningar. Sök sedan efter "tidszon" **i Inställningar-panelens** sökruta. Panelen uppdateras och visar dina aktuella inställningar för personligt språk och tidszon för det här kontot. Som nämnts ovan styr den här inställningen även bokningskalenderens språk och tidszon.
 
-1. Ändra språk eller tidszon genom att välja den nedrullningsbara List rutan i **området språk eller aktuell** tidszon och välja önskad inställning.
+1. Ändra språk eller tidszon genom att välja pilen i listrutan **Språk** eller Aktuell tidszon och sedan välja önskad inställning.
 
-1. Klicka på **Spara**. Inställnings panelen stängs, Outlook på webben startas om och nya inställningar för språk och tidszon tillämpas.
+1. Klicka på **Spara**. Panelen Inställningar stängs, Outlook startar om på webben och de nya språk- och tidszonsinställningarna tillämpas.
 
-## <a name="setting-the-language-and-time-zone-for-the-booking-page"></a>Ange språk och tidszon för boknings sidan
+## <a name="setting-the-language-and-time-zone-for-the-booking-page"></a>Ange språk och tidszon för bokningssidan
 
-1. I Microsoft 365 väljer du Start programmet och väljer sedan **bokningar**.
+1. I Microsoft 365 väljer du startprogrammet och sedan **Bookings**.
 
-1. I navigerings fönstret väljer du **boka sida** och väljer **ändra inställningar för språk och tidszon**.
+1. I navigeringsfönstret väljer du **Bokningssida** och sedan **Ändra språk och tidszonsinställningar**.
 
-   ![Skärm bild: länken Ändra språk-och tids zons inställningar](../media/bookings-region-language-timezone-settings.png)
+   ![Skärmbild: Länken Ändra språk och tidszon](../media/bookings-region-language-timezone-settings.png)
 
 1. Välj språk och aktuell tidszon och välj OK.
 
-   ![Skärm bild: språk-och tids zons inställningar](../media/bookings-region-timezone-settings.png)
+   ![Skärmbild: Språk- och tidszonsinställningar](../media/bookings-region-timezone-settings.png)

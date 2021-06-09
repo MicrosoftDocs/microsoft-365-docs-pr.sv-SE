@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Läs mer om säkra dokument i Microsoft 365 E5 eller Microsoft 365 E5 Säkerhet.
+description: Läs mer Valv dokument i Microsoft 365 E5 eller Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 1186c7856d0b979c483cf6dd1c0a010ab582e2ce
@@ -30,21 +30,21 @@ ms.locfileid: "51644758"
 **Gäller för**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Säkra dokument är en funktion i Microsoft 365 E5 eller Microsoft 365 E5-säkerhet som använder [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för Endpoint för att söka igenom dokument och filer som öppnas i [Skyddad](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) vy eller Application Guard [för Office.](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)
+Valv Dokument är en funktion i Microsoft 365 E5 eller Microsoft 365 E5 Security som använder [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för Slutpunkt för att söka igenom dokument och filer som öppnas i [Skyddad](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) vy eller Application Guard [för Office.](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Säkra dokument är endast tillgängligt för användare med *Säkerhetslicenser för Microsoft 365 E5* eller *Microsoft 365 E5.* Dessa licenser ingår inte i Microsoft Defender för Office 365-abonnemang.
+- Valv Dokument är endast tillgängligt för användare med *Microsoft 365 E5* eller *Microsoft 365 E5 Security* licenser. Dessa licenser ingår inte i Microsoft Defender för Office 365 abonnemang.
 
-- Säkra dokument stöds i Microsoft 365-appar för företag (kallades tidigare Office 365 ProPlus) version 2004 eller senare.
+- Valv Dokument stöds i Microsoft 365-appar för företag (tidigare kallad Office 365 ProPlus) version 2004 eller senare.
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com>. Gå direkt till sidan **ATP – säkra bifogade** filer genom att öppna <https://protection.office.com/safeattachmentv2> .
+- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com>. Gå direkt till **ATP-sidan Valv bifogade filer** genom att öppna <https://protection.office.com/safeattachmentv2> .
 
 - Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Du måste ha tilldelats behörigheter i **Exchange Online** innan du kan genomföra procedurerna i den här artikeln:
-  - För att konfigurera inställningarna för säkra dokument måste du vara medlem i rollgrupperna **Organisationshantering** **eller Säkerhetsadministratör.**
-  - För skrivskyddade åtkomst till inställningarna för säkra dokument måste du vara medlem i rollgrupperna **Global Reader** eller **Säkerhetsläsare.**
+  - Om du Valv för dokumentinställningar måste du vara medlem i **rollgrupperna Organisationshantering** **eller Säkerhetsadministratör.**
+  - För skrivskyddade åtkomst Valv i dokumentinställningarna måste du vara medlem i rollgrupperna **Global Reader** **eller Säkerhetsläsare.**
 
   Mer information finns under [Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -56,25 +56,25 @@ Säkra dokument är en funktion i Microsoft 365 E5 eller Microsoft 365 E5-säker
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Hur hanterar Microsoft dina data?
 
-För att skydda dig skickar Säkra dokument filer till [Microsoft Defender för Endpoint-molnet](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för analys. Information om hur Microsoft Defender för Endpoint hanterar dina data finns här: Microsoft Defender för [endpoint-datalagring och sekretess](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
+Om du vill skydda dig Valv Dokument filer till [Microsoft Defender för Endpoint-molnet](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för analys. Information om hur Microsoft Defender för Endpoint hanterar dina data finns här: Microsoft Defender för [endpoint-datalagring och sekretess](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
-Filer som skickas av säkra dokument sparas inte i Defender utöver den tid som krävs för analys (normalt mindre än 24 timmar).
+Filer som Valv sparas inte i Defender utöver den tid som krävs för analys (normalt mindre än 24 timmar).
 
-## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Använd Säkerhets- och & för att konfigurera säkra dokument
+## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Använd Säkerhets- och & för att konfigurera Valv dokument
 
-1. I Säkerhets- & säkerhets- och efterlevnadscenter går **du** till ATP för hothanteringspolicy för säkra \>  \> **bifogade** filer och klickar sedan **på Globala inställningar.**
+1. I Säkerhets- & säkerhets- och  efterlevnadscenter går du till ATP för hothanteringspolicy Valv bifogade filer \>  \> och klickar sedan **på Globala inställningar.**
 
 2. I den **globala inställningsfällan** som visas konfigurerar du följande inställningar:
 
-   - **Aktivera Säkra dokument för Office-klienter**: Flytta växlingsknappen åt höger för att aktivera funktionen: ![ Aktivera ](../../media/scc-toggle-on.png) .
+   - **Aktivera Valv dokument för Office**: Flytta reglaget åt höger för att aktivera funktionen: Aktivera ![ ](../../media/scc-toggle-on.png) .
 
-   - Tillåt att andra klickar i Skyddad vy även om säkra dokument identifierar filen som skadlig: Vi rekommenderar att du låter det här alternativet vara inaktiverat (låt **växlingsknappen** vara till vänster: ![ ](../../media/scc-toggle-off.png) inaktivera).
+   - Tillåt att andra klickar i Skyddad vy även om Valv-dokument identifierar filen som skadlig: Vi rekommenderar att du låter det här alternativet vara inaktiverat (låt **växlingsknappen** vara till vänster: inaktivera ![ ](../../media/scc-toggle-off.png) ).
 
    Klicka på **Spara** när du är klar.
 
-   ![Inställningarna för Säkra dokument när du har valt Globala inställningar på sidan Säkra bifogade filer.](../../media/safe-docs.png)
+   ![Valv Dokumentinställningarna när du har valt Globala inställningar Valv bifogade filer.](../../media/safe-docs.png)
 
-### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Använda Exchange Online PowerShell för att konfigurera säkra dokument
+### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Använda Exchange Online PowerShell för att konfigurera Valv-dokument
 
 Använd följande syntax:
 
@@ -82,10 +82,10 @@ Använd följande syntax:
 Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
-- Parametern _EnableSafeDocs_ aktiverar eller inaktiverar Säkra dokument för hela organisationen.
+- Parametern _EnableSafeDocs_ aktiverar eller inaktiverar Valv Dokument för hela organisationen.
 - Parametern _AllowSafeDocsOpen_ tillåter eller hindrar användare från att lämna Skyddad vy (dvs. öppna dokumentet) om dokumentet har identifierats som skadligt.
 
-Det här exemplet aktiverar Säkra dokument för hela organisationen och hindrar användare från att öppna dokument som har identifierats som skadliga från Skyddad vy.
+Det här exemplet Valv dokument för hela organisationen och hindrar användare från att öppna dokument som har identifierats som skadliga från Skyddad vy.
 
 ```powershell
 Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
@@ -101,9 +101,9 @@ Mer information finns i [Onboard to the Microsoft Defender for Endpoint service]
 
 ### <a name="how-do-i-know-this-worked"></a>Hur vet jag att det fungerade?
 
-Verifiera att du har aktiverat och konfigurerat säkra dokument genom att göra något av följande:
+Verifiera att du har aktiverat och konfigurerat Valv genom att göra något av följande:
 
-- I Säkerhets- & och  \>  \> **efterlevnadscenter** går du till **ATP** för hothanteringspolicyn ATP – säkra bifogade filer , klickar på Globala inställningar och verifierar Aktivera säkra dokument för **Office-klienter** och Tillåt användare att klicka igenom Skyddad vy även om säkra dokument identifierar filen som skadlig.
+- I Säkerhets- &  och efterlevnadscenter går du till ATP för hothanteringspolicy Valv Bifogade filer , klickar på Globala inställningar och verifierar Aktivera Valv-dokument för Office-klienter och Tillåt användare att klicka igenom Skyddad vy även om filen identifieras som skadlig i \>  \>    **Valv-dokument.**
 
 - Kör följande kommando i Exchange Online PowerShell och verifiera egenskapsvärdena:
 
@@ -111,7 +111,7 @@ Verifiera att du har aktiverat och konfigurerat säkra dokument genom att göra 
   Get-AtpPolicyForO365 | Format-List *SafeDocs*
   ```
 
-- Följande filer är tillgängliga för att testa skydd mot säkra dokument. Dessa dokument liknar den EICAR.TXT filen för att testa skadlig programvara och antivirusprogram. Filerna är inte skadliga, men de utlöser skydd för säkra dokument.
+- Följande filer är tillgängliga för att testa Valv Dokumentskydd. Dessa dokument liknar den EICAR.TXT filen för att testa skadlig programvara och antivirusprogram. Filerna är inte skadliga, men de utlöser Valv dokumentskydd.
 
   - [SafeDocsDemo.docx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.docx)
   - [SafeDocsDemo.pptx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.pptx)
