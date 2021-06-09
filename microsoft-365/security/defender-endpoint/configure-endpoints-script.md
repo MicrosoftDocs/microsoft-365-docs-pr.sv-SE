@@ -16,140 +16,140 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 056268ed093d371d39a6136dd0b272c12ab6f9d7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2510fb1a187bbe136669e11bc73103438b51d811
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933919"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842176"
 ---
-# <a name="onboard-windows-10-devices-using-a-local-script"></a><span data-ttu-id="c1745-104">Registrera Windows 10-enheter med ett lokalt skript</span><span class="sxs-lookup"><span data-stu-id="c1745-104">Onboard Windows 10 devices using a local script</span></span>
+# <a name="onboard-windows-10-devices-using-a-local-script"></a><span data-ttu-id="6f458-104">Registrera Windows 10-enheter med ett lokalt skript</span><span class="sxs-lookup"><span data-stu-id="6f458-104">Onboard Windows 10 devices using a local script</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-- [<span data-ttu-id="c1745-105">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c1745-105">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="6f458-105">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6f458-105">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-><span data-ttu-id="c1745-106">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="c1745-106">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="c1745-107">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="c1745-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+><span data-ttu-id="6f458-106">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="6f458-106">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="6f458-107">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="6f458-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-<span data-ttu-id="c1745-108">Du kan även manuellt registrera enskilda enheter i Defender för Endpoint.</span><span class="sxs-lookup"><span data-stu-id="c1745-108">You can also manually onboard individual devices to Defender for Endpoint.</span></span> <span data-ttu-id="c1745-109">Du kanske vill göra det här först när du testar tjänsten innan du åtar dig att registrera alla enheter i nätverket.</span><span class="sxs-lookup"><span data-stu-id="c1745-109">You might want to do this first when testing the service before you commit to onboarding all devices in your network.</span></span>
+<span data-ttu-id="6f458-108">Du kan även manuellt registrera enskilda enheter i Defender för Endpoint.</span><span class="sxs-lookup"><span data-stu-id="6f458-108">You can also manually onboard individual devices to Defender for Endpoint.</span></span> <span data-ttu-id="6f458-109">Du kanske vill göra det här först när du testar tjänsten innan du åtar dig att registrera alla enheter i nätverket.</span><span class="sxs-lookup"><span data-stu-id="6f458-109">You might want to do this first when testing the service before you commit to onboarding all devices in your network.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="c1745-110">Det här skriptet har optimerats för användning på upp till 10 enheter.</span><span class="sxs-lookup"><span data-stu-id="c1745-110">This script has been optimized for use on up to 10 devices.</span></span>
+> <span data-ttu-id="6f458-110">Det här skriptet har optimerats för användning på upp till 10 enheter.</span><span class="sxs-lookup"><span data-stu-id="6f458-110">This script has been optimized for use on up to 10 devices.</span></span>
 >
-> <span data-ttu-id="c1745-111">Använd andra distributionsalternativ om du [vill distribuera i skala.](configure-endpoints.md)</span><span class="sxs-lookup"><span data-stu-id="c1745-111">To deploy at scale, use [other deployment options](configure-endpoints.md).</span></span> <span data-ttu-id="c1745-112">Du kan till exempel distribuera ett onboarding-skript till fler än 10 enheter i produktionen med skriptet som är tillgängligt i [Hantera Windows 10-enheter med grupprincip.](configure-endpoints-gp.md)</span><span class="sxs-lookup"><span data-stu-id="c1745-112">For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md).</span></span>
+> <span data-ttu-id="6f458-111">Använd andra distributionsalternativ om du [vill distribuera i skala.](configure-endpoints.md)</span><span class="sxs-lookup"><span data-stu-id="6f458-111">To deploy at scale, use [other deployment options](configure-endpoints.md).</span></span> <span data-ttu-id="6f458-112">Du kan till exempel distribuera ett onboarding-skript till fler än 10 enheter i produktionen med skriptet som är tillgängligt i [Onboard Windows 10-enheter med grupprincip.](configure-endpoints-gp.md)</span><span class="sxs-lookup"><span data-stu-id="6f458-112">For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md).</span></span>
 
-## <a name="onboard-devices"></a><span data-ttu-id="c1745-113">Onboard-enheter</span><span class="sxs-lookup"><span data-stu-id="c1745-113">Onboard devices</span></span> 
+## <a name="onboard-devices"></a><span data-ttu-id="6f458-113">Onboard-enheter</span><span class="sxs-lookup"><span data-stu-id="6f458-113">Onboard devices</span></span> 
 
-<span data-ttu-id="c1745-114">[![Bild av PDF-filen som visar de olika distributionssökvägarna](images/onboard-script.png)](images/onboard-script.png#lightbox)</span><span class="sxs-lookup"><span data-stu-id="c1745-114">[![Image of the PDF showing the various deployment paths](images/onboard-script.png)](images/onboard-script.png#lightbox)</span></span>
-
-
-<span data-ttu-id="c1745-115">Ta en titta på [PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [eller Visio-filen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) för att se de olika sökvägarna i distribuera Defender för Endpoint.</span><span class="sxs-lookup"><span data-stu-id="c1745-115">Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.</span></span> 
+<span data-ttu-id="6f458-114">[![Bild av PDF-filen som visar de olika distributionssökvägarna](images/onboard-script.png)](images/onboard-script.png#lightbox)</span><span class="sxs-lookup"><span data-stu-id="6f458-114">[![Image of the PDF showing the various deployment paths](images/onboard-script.png)](images/onboard-script.png#lightbox)</span></span>
 
 
-1.  <span data-ttu-id="c1745-116">Öppna ZIP-filen för GP-konfigurationspaket *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för service onboarding.</span><span class="sxs-lookup"><span data-stu-id="c1745-116">Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard.</span></span> <span data-ttu-id="c1745-117">Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)</span><span class="sxs-lookup"><span data-stu-id="c1745-117">You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):</span></span>
+<span data-ttu-id="6f458-115">Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) se de olika sökvägarna i distribuera Defender för Endpoint.</span><span class="sxs-lookup"><span data-stu-id="6f458-115">Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.</span></span> 
 
-    1. <span data-ttu-id="c1745-118">Välj Inställningar Onboarding **i**  >  **navigeringsfönstret.**</span><span class="sxs-lookup"><span data-stu-id="c1745-118">In the navigation pane, select **Settings** > **Onboarding**.</span></span>
 
-    1. <span data-ttu-id="c1745-119">Välj Windows 10 som operativsystem.</span><span class="sxs-lookup"><span data-stu-id="c1745-119">Select Windows 10 as the operating system.</span></span>
+1.  <span data-ttu-id="6f458-116">Öppna filen för GP.zip konfigurationspaket *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för registrering av tjänster.</span><span class="sxs-lookup"><span data-stu-id="6f458-116">Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard.</span></span> <span data-ttu-id="6f458-117">Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)</span><span class="sxs-lookup"><span data-stu-id="6f458-117">You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):</span></span>
 
-    1. <span data-ttu-id="c1745-120">Välj **Lokalt skript** i fältet **Distributionsmetod.**</span><span class="sxs-lookup"><span data-stu-id="c1745-120">In the **Deployment method** field, select **Local Script**.</span></span>
+    1. <span data-ttu-id="6f458-118">I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**.</span><span class="sxs-lookup"><span data-stu-id="6f458-118">In the navigation pane, select **Settings** > **Onboarding**.</span></span>
 
-    1. <span data-ttu-id="c1745-121">Klicka **på Ladda ned** paket och spara ZIP-filen.</span><span class="sxs-lookup"><span data-stu-id="c1745-121">Click **Download package** and save the .zip file.</span></span>
+    1. <span data-ttu-id="6f458-119">Välj Windows 10 som operativsystem.</span><span class="sxs-lookup"><span data-stu-id="6f458-119">Select Windows 10 as the operating system.</span></span>
+
+    1. <span data-ttu-id="6f458-120">Välj **Lokalt skript** i fältet **Distributionsmetod.**</span><span class="sxs-lookup"><span data-stu-id="6f458-120">In the **Deployment method** field, select **Local Script**.</span></span>
+
+    1. <span data-ttu-id="6f458-121">Klicka **på Ladda ned** paket och spara .zip filen.</span><span class="sxs-lookup"><span data-stu-id="6f458-121">Click **Download package** and save the .zip file.</span></span>
 
   
-2.  <span data-ttu-id="c1745-122">Extrahera innehållet i konfigurationspaketet till en plats på den enhet som du vill registrera (till exempel skrivbordet).</span><span class="sxs-lookup"><span data-stu-id="c1745-122">Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop).</span></span> <span data-ttu-id="c1745-123">Du bör ha en fil med namnet *WindowsDefenderATPOnboardingScript.cmd*.</span><span class="sxs-lookup"><span data-stu-id="c1745-123">You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.</span></span>
+2.  <span data-ttu-id="6f458-122">Extrahera innehållet i konfigurationspaketet till en plats på den enhet som du vill registrera (till exempel skrivbordet).</span><span class="sxs-lookup"><span data-stu-id="6f458-122">Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop).</span></span> <span data-ttu-id="6f458-123">Du bör ha en fil med namnet *WindowsDefenderATPLocalOnboardingScript.cmd*.</span><span class="sxs-lookup"><span data-stu-id="6f458-123">You should have a file named *WindowsDefenderATPLocalOnboardingScript.cmd*.</span></span>
 
-3.  <span data-ttu-id="c1745-124">Öppna en upphöjd kommandoradsfråga på enheten och kör skriptet:</span><span class="sxs-lookup"><span data-stu-id="c1745-124">Open an elevated command-line prompt on the device and run the script:</span></span>
+3.  <span data-ttu-id="6f458-124">Öppna en upphöjd kommandoradsfråga på enheten och kör skriptet:</span><span class="sxs-lookup"><span data-stu-id="6f458-124">Open an elevated command-line prompt on the device and run the script:</span></span>
 
-    1.  <span data-ttu-id="c1745-125">Gå till **Start** och skriv **cmd**.</span><span class="sxs-lookup"><span data-stu-id="c1745-125">Go to **Start** and type **cmd**.</span></span>
+    1.  <span data-ttu-id="6f458-125">Gå till **Start** och skriv **cmd**.</span><span class="sxs-lookup"><span data-stu-id="6f458-125">Go to **Start** and type **cmd**.</span></span>
 
-    1.  <span data-ttu-id="c1745-126">Högerklicka på **Kommandotolk** och välj **Kör som administratör.**</span><span class="sxs-lookup"><span data-stu-id="c1745-126">Right-click **Command prompt** and select **Run as administrator**.</span></span>
+    1.  <span data-ttu-id="6f458-126">Högerklicka på **Kommandotolken** och välj **Kör som administratör**.</span><span class="sxs-lookup"><span data-stu-id="6f458-126">Right-click **Command prompt** and select **Run as administrator**.</span></span>
 
         ![Start-menyn i ett fönster som pekar på Kör som administratör](images/run-as-admin.png)
 
-4.  <span data-ttu-id="c1745-128">Skriv skriptfilens plats.</span><span class="sxs-lookup"><span data-stu-id="c1745-128">Type the location of the script file.</span></span> <span data-ttu-id="c1745-129">Om du kopierade filen till skrivbordet skriver du: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*</span><span class="sxs-lookup"><span data-stu-id="c1745-129">If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*</span></span>
+4.  <span data-ttu-id="6f458-128">Skriv skriptfilens plats.</span><span class="sxs-lookup"><span data-stu-id="6f458-128">Type the location of the script file.</span></span> <span data-ttu-id="6f458-129">Om du kopierade filen till skrivbordet skriver du: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*</span><span class="sxs-lookup"><span data-stu-id="6f458-129">If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*</span></span>
 
-5.  <span data-ttu-id="c1745-130">Tryck på **Retur** eller klicka på **OK.**</span><span class="sxs-lookup"><span data-stu-id="c1745-130">Press the **Enter** key or click **OK**.</span></span>
+5.  <span data-ttu-id="6f458-130">Tryck på **Retur** eller klicka på **OK.**</span><span class="sxs-lookup"><span data-stu-id="6f458-130">Press the **Enter** key or click **OK**.</span></span>
 
-<span data-ttu-id="c1745-131">Mer information om hur du manuellt kan verifiera att enheten är kompatibel och korrekt rapporterar sensordata finns i Felsöka problem med Microsoft Defender för [slutpunkts onboarding.](troubleshoot-onboarding.md)</span><span class="sxs-lookup"><span data-stu-id="c1745-131">For information on how you can manually validate that the device is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).</span></span>
+<span data-ttu-id="6f458-131">Mer information om hur du manuellt kan verifiera att enheten är kompatibel och korrekt rapporterar sensordata finns i Felsöka problem med Microsoft Defender för [slutpunkts onboarding.](troubleshoot-onboarding.md)</span><span class="sxs-lookup"><span data-stu-id="6f458-131">For information on how you can manually validate that the device is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).</span></span>
 
 
 >[!TIP]
-> <span data-ttu-id="c1745-132">När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att en enhet är korrekt onboarded till tjänsten.</span><span class="sxs-lookup"><span data-stu-id="c1745-132">After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service.</span></span> <span data-ttu-id="c1745-133">Mer information finns i Köra [ett identifieringstest på en nyligen introducerad Microsoft Defender för slutpunktsslutpunkt.](run-detection-test.md)</span><span class="sxs-lookup"><span data-stu-id="c1745-133">For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint endpoint](run-detection-test.md).</span></span>
+> <span data-ttu-id="6f458-132">När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att en enhet är korrekt onboarded till tjänsten.</span><span class="sxs-lookup"><span data-stu-id="6f458-132">After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service.</span></span> <span data-ttu-id="6f458-133">Mer information finns i Köra [ett identifieringstest på en nyligen introducerad Microsoft Defender för slutpunktsslutpunkt.](run-detection-test.md)</span><span class="sxs-lookup"><span data-stu-id="6f458-133">For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint endpoint](run-detection-test.md).</span></span>
 
-## <a name="configure-sample-collection-settings"></a><span data-ttu-id="c1745-134">Konfigurera exempelsamlingsinställningar</span><span class="sxs-lookup"><span data-stu-id="c1745-134">Configure sample collection settings</span></span>
-<span data-ttu-id="c1745-135">För varje enhet kan du ange ett konfigurationsvärde för att ange om exempel kan samlas in från enheten när en begäran görs via Microsoft Defender Säkerhetscenter för att skicka en fil för djupanalys.</span><span class="sxs-lookup"><span data-stu-id="c1745-135">For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.</span></span>
+## <a name="configure-sample-collection-settings"></a><span data-ttu-id="6f458-134">Konfigurera exempelsamlingsinställningar</span><span class="sxs-lookup"><span data-stu-id="6f458-134">Configure sample collection settings</span></span>
+<span data-ttu-id="6f458-135">För varje enhet kan du ange ett konfigurationsvärde för att ange om exempel kan samlas in från enheten när en förfrågan görs via Microsoft Defender Säkerhetscenter att skicka en fil för djupanalys.</span><span class="sxs-lookup"><span data-stu-id="6f458-135">For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.</span></span>
 
-<span data-ttu-id="c1745-136">Du kan manuellt konfigurera exempeldelningsinställningen på enheten genom att använda *regedit* eller skapa och köra en *REG-fil.*</span><span class="sxs-lookup"><span data-stu-id="c1745-136">You can manually configure the sample sharing setting on the device by using *regedit* or creating and running a *.reg* file.</span></span>  
+<span data-ttu-id="6f458-136">Du kan manuellt konfigurera exempeldelningsinställningen på enheten genom att använda *regedit* eller skapa och köra en *REG-fil.*</span><span class="sxs-lookup"><span data-stu-id="6f458-136">You can manually configure the sample sharing setting on the device by using *regedit* or creating and running a *.reg* file.</span></span>  
 
-<span data-ttu-id="c1745-137">Konfigurationen anges via följande registernyckelpost:</span><span class="sxs-lookup"><span data-stu-id="c1745-137">The configuration is set through the following registry key entry:</span></span>
+<span data-ttu-id="6f458-137">Konfigurationen anges via följande registernyckelpost:</span><span class="sxs-lookup"><span data-stu-id="6f458-137">The configuration is set through the following registry key entry:</span></span>
 
 ```console
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
 Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
-<span data-ttu-id="c1745-138">Var:</span><span class="sxs-lookup"><span data-stu-id="c1745-138">Where:</span></span><br>
-<span data-ttu-id="c1745-139">Namntypen är en D-WORD.</span><span class="sxs-lookup"><span data-stu-id="c1745-139">Name type is a D-WORD.</span></span> <br>
-<span data-ttu-id="c1745-140">Möjliga värden är:</span><span class="sxs-lookup"><span data-stu-id="c1745-140">Possible values are:</span></span>
-- <span data-ttu-id="c1745-141">0 – tillåter inte exempeldelning från den här enheten</span><span class="sxs-lookup"><span data-stu-id="c1745-141">0 - doesn't allow sample sharing  from this device</span></span>
-- <span data-ttu-id="c1745-142">1 – tillåter delning av alla filtyper från den här enheten</span><span class="sxs-lookup"><span data-stu-id="c1745-142">1 - allows sharing of all file types from this device</span></span>
+<span data-ttu-id="6f458-138">Var:</span><span class="sxs-lookup"><span data-stu-id="6f458-138">Where:</span></span><br>
+<span data-ttu-id="6f458-139">Namntypen är en D-WORD.</span><span class="sxs-lookup"><span data-stu-id="6f458-139">Name type is a D-WORD.</span></span> <br>
+<span data-ttu-id="6f458-140">Möjliga värden är:</span><span class="sxs-lookup"><span data-stu-id="6f458-140">Possible values are:</span></span>
+- <span data-ttu-id="6f458-141">0 – tillåter inte exempeldelning från den här enheten</span><span class="sxs-lookup"><span data-stu-id="6f458-141">0 - doesn't allow sample sharing  from this device</span></span>
+- <span data-ttu-id="6f458-142">1 – tillåter delning av alla filtyper från den här enheten</span><span class="sxs-lookup"><span data-stu-id="6f458-142">1 - allows sharing of all file types from this device</span></span>
 
-<span data-ttu-id="c1745-143">Standardvärdet är 1 om registernyckeln inte finns.</span><span class="sxs-lookup"><span data-stu-id="c1745-143">The default value in case the registry key doesn’t exist is 1.</span></span>
+<span data-ttu-id="6f458-143">Standardvärdet är 1 om registernyckeln inte finns.</span><span class="sxs-lookup"><span data-stu-id="6f458-143">The default value in case the registry key doesn’t exist is 1.</span></span>
 
 
-## <a name="offboard-devices-using-a-local-script"></a><span data-ttu-id="c1745-144">Offboard-enheter med ett lokalt skript</span><span class="sxs-lookup"><span data-stu-id="c1745-144">Offboard devices using a local script</span></span>
-<span data-ttu-id="c1745-145">Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar efter det datum då det laddades ned.</span><span class="sxs-lookup"><span data-stu-id="c1745-145">For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded.</span></span> <span data-ttu-id="c1745-146">Utgångna offboarding-paket som skickats till en enhet kommer att avvisas.</span><span class="sxs-lookup"><span data-stu-id="c1745-146">Expired offboarding packages sent to an device will be rejected.</span></span> <span data-ttu-id="c1745-147">När du laddar ned ett offboarding-paket meddelas du om paketens utgångsdatum och det inkluderas också i paketnamnet.</span><span class="sxs-lookup"><span data-stu-id="c1745-147">When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.</span></span>
+## <a name="offboard-devices-using-a-local-script"></a><span data-ttu-id="6f458-144">Offboard-enheter med ett lokalt skript</span><span class="sxs-lookup"><span data-stu-id="6f458-144">Offboard devices using a local script</span></span>
+<span data-ttu-id="6f458-145">Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar efter det datum då det laddades ned.</span><span class="sxs-lookup"><span data-stu-id="6f458-145">For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded.</span></span> <span data-ttu-id="6f458-146">Utgångna offboarding-paket som skickats till en enhet kommer att avvisas.</span><span class="sxs-lookup"><span data-stu-id="6f458-146">Expired offboarding packages sent to an device will be rejected.</span></span> <span data-ttu-id="6f458-147">När du laddar ned ett offboarding-paket meddelas du om paketens utgångsdatum och det inkluderas också i paketnamnet.</span><span class="sxs-lookup"><span data-stu-id="6f458-147">When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c1745-148">Principer för onboarding och offboarding får inte distribueras på samma enhet samtidigt, annars kan det orsaka oförutsägbara tavlor.</span><span class="sxs-lookup"><span data-stu-id="c1745-148">Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.</span></span>
+> <span data-ttu-id="6f458-148">Principer för onboarding och offboarding får inte distribueras på samma enhet samtidigt, annars kan det orsaka oförutsägbara tavlor.</span><span class="sxs-lookup"><span data-stu-id="6f458-148">Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.</span></span>
 
-1. <span data-ttu-id="c1745-149">Hämta offboarding-paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)</span><span class="sxs-lookup"><span data-stu-id="c1745-149">Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):</span></span>
+1. <span data-ttu-id="6f458-149">Hämta offboarding-paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)</span><span class="sxs-lookup"><span data-stu-id="6f458-149">Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):</span></span>
 
-    1. <span data-ttu-id="c1745-150">I navigeringsfönstret väljer du **Inställningar**  >  **offboarding**.</span><span class="sxs-lookup"><span data-stu-id="c1745-150">In the navigation pane, select **Settings** > **Offboarding**.</span></span>
+    1. <span data-ttu-id="6f458-150">I navigeringsfönstret väljer du **Inställningar**  >  **Offboarding**.</span><span class="sxs-lookup"><span data-stu-id="6f458-150">In the navigation pane, select **Settings** > **Offboarding**.</span></span>
 
-    1. <span data-ttu-id="c1745-151">Välj Windows 10 som operativsystem.</span><span class="sxs-lookup"><span data-stu-id="c1745-151">Select Windows 10 as the operating system.</span></span>
+    1. <span data-ttu-id="6f458-151">Välj Windows 10 som operativsystem.</span><span class="sxs-lookup"><span data-stu-id="6f458-151">Select Windows 10 as the operating system.</span></span>
 
-    1. <span data-ttu-id="c1745-152">Välj **Lokalt skript** i fältet **Distributionsmetod.**</span><span class="sxs-lookup"><span data-stu-id="c1745-152">In the **Deployment method** field, select **Local Script**.</span></span>
+    1. <span data-ttu-id="6f458-152">Välj **Lokalt skript** i fältet **Distributionsmetod.**</span><span class="sxs-lookup"><span data-stu-id="6f458-152">In the **Deployment method** field, select **Local Script**.</span></span>
 
-    1. <span data-ttu-id="c1745-153">Klicka **på Ladda ned** paket och spara ZIP-filen.</span><span class="sxs-lookup"><span data-stu-id="c1745-153">Click **Download package** and save the .zip file.</span></span>
+    1. <span data-ttu-id="6f458-153">Klicka **på Ladda ned** paket och spara .zip filen.</span><span class="sxs-lookup"><span data-stu-id="6f458-153">Click **Download package** and save the .zip file.</span></span>
 
-2. <span data-ttu-id="c1745-154">Extrahera innehållet i ZIP-filen till en delad, skrivskyddad plats som kan nås av enheterna.</span><span class="sxs-lookup"><span data-stu-id="c1745-154">Extract the contents of the .zip file to a shared, read-only location that can be accessed by the devices.</span></span> <span data-ttu-id="c1745-155">Du bör ha en fil med *namnet WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.</span><span class="sxs-lookup"><span data-stu-id="c1745-155">You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.</span></span>
+2. <span data-ttu-id="6f458-154">Extrahera innehållet i filen .zip till en delad, skrivskyddad plats som kan nås av enheterna.</span><span class="sxs-lookup"><span data-stu-id="6f458-154">Extract the contents of the .zip file to a shared, read-only location that can be accessed by the devices.</span></span> <span data-ttu-id="6f458-155">Du bör ha en fil med *namnet WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.</span><span class="sxs-lookup"><span data-stu-id="6f458-155">You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.</span></span>
 
-3.  <span data-ttu-id="c1745-156">Öppna en upphöjd kommandoradsfråga på enheten och kör skriptet:</span><span class="sxs-lookup"><span data-stu-id="c1745-156">Open an elevated command-line prompt on the device and run the script:</span></span>
+3.  <span data-ttu-id="6f458-156">Öppna en upphöjd kommandoradsfråga på enheten och kör skriptet:</span><span class="sxs-lookup"><span data-stu-id="6f458-156">Open an elevated command-line prompt on the device and run the script:</span></span>
 
-    1.  <span data-ttu-id="c1745-157">Gå till **Start** och skriv **cmd**.</span><span class="sxs-lookup"><span data-stu-id="c1745-157">Go to **Start** and type **cmd**.</span></span>
+    1.  <span data-ttu-id="6f458-157">Gå till **Start** och skriv **cmd**.</span><span class="sxs-lookup"><span data-stu-id="6f458-157">Go to **Start** and type **cmd**.</span></span>
 
-    1.  <span data-ttu-id="c1745-158">Högerklicka på **Kommandotolk** och välj **Kör som administratör.**</span><span class="sxs-lookup"><span data-stu-id="c1745-158">Right-click **Command prompt** and select **Run as administrator**.</span></span>
+    1.  <span data-ttu-id="6f458-158">Högerklicka på **Kommandotolken** och välj **Kör som administratör**.</span><span class="sxs-lookup"><span data-stu-id="6f458-158">Right-click **Command prompt** and select **Run as administrator**.</span></span>
 
         ![Start-menyn i ett fönster som pekar på Kör som administratör](images/run-as-admin.png)
 
-4.  <span data-ttu-id="c1745-160">Skriv skriptfilens plats.</span><span class="sxs-lookup"><span data-stu-id="c1745-160">Type the location of the script file.</span></span> <span data-ttu-id="c1745-161">Om du kopierade filen till skrivbordet skriver du: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*</span><span class="sxs-lookup"><span data-stu-id="c1745-161">If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*</span></span>
+4.  <span data-ttu-id="6f458-160">Skriv skriptfilens plats.</span><span class="sxs-lookup"><span data-stu-id="6f458-160">Type the location of the script file.</span></span> <span data-ttu-id="6f458-161">Om du kopierade filen till skrivbordet skriver du: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*</span><span class="sxs-lookup"><span data-stu-id="6f458-161">If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*</span></span>
 
-5.  <span data-ttu-id="c1745-162">Tryck på **Retur** eller klicka på **OK.**</span><span class="sxs-lookup"><span data-stu-id="c1745-162">Press the **Enter** key or click **OK**.</span></span>
+5.  <span data-ttu-id="6f458-162">Tryck på **Retur** eller klicka på **OK.**</span><span class="sxs-lookup"><span data-stu-id="6f458-162">Press the **Enter** key or click **OK**.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="c1745-163">Offboarding gör att enheten slutar skicka sensordata till portalen men data från enheten, inklusive referens till aviseringar som den haft kommer att behållas i upp till 6 månader.</span><span class="sxs-lookup"><span data-stu-id="c1745-163">Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.</span></span>
+> <span data-ttu-id="6f458-163">Offboarding gör att enheten slutar skicka sensordata till portalen men data från enheten, inklusive referens till aviseringar som den haft kommer att behållas i upp till 6 månader.</span><span class="sxs-lookup"><span data-stu-id="6f458-163">Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.</span></span>
 
 
-## <a name="monitor-device-configuration"></a><span data-ttu-id="c1745-164">Övervaka enhetskonfiguration</span><span class="sxs-lookup"><span data-stu-id="c1745-164">Monitor device configuration</span></span>
-<span data-ttu-id="c1745-165">Du kan följa de olika verifieringsstegen i [Felsöka onboarding-problem](troubleshoot-onboarding.md) för att verifiera att skriptet har slutförts och att agenten körs.</span><span class="sxs-lookup"><span data-stu-id="c1745-165">You can follow the different verification steps in the [Troubleshoot onboarding issues](troubleshoot-onboarding.md) to verify that the script completed successfully and the agent is running.</span></span>
+## <a name="monitor-device-configuration"></a><span data-ttu-id="6f458-164">Övervaka enhetskonfiguration</span><span class="sxs-lookup"><span data-stu-id="6f458-164">Monitor device configuration</span></span>
+<span data-ttu-id="6f458-165">Du kan följa de olika verifieringsstegen i [Felsöka onboarding-problem](troubleshoot-onboarding.md) för att verifiera att skriptet har slutförts och att agenten körs.</span><span class="sxs-lookup"><span data-stu-id="6f458-165">You can follow the different verification steps in the [Troubleshoot onboarding issues](troubleshoot-onboarding.md) to verify that the script completed successfully and the agent is running.</span></span>
 
-<span data-ttu-id="c1745-166">Övervakning kan också utföras direkt i portalen eller med hjälp av de olika distributionsverktygen.</span><span class="sxs-lookup"><span data-stu-id="c1745-166">Monitoring can also be done directly on the portal, or by using the different deployment tools.</span></span>
+<span data-ttu-id="6f458-166">Övervakning kan också utföras direkt i portalen eller med hjälp av de olika distributionsverktygen.</span><span class="sxs-lookup"><span data-stu-id="6f458-166">Monitoring can also be done directly on the portal, or by using the different deployment tools.</span></span>
 
-### <a name="monitor-devices-using-the-portal"></a><span data-ttu-id="c1745-167">Övervaka enheter med hjälp av portalen</span><span class="sxs-lookup"><span data-stu-id="c1745-167">Monitor devices using the portal</span></span>
-1. <span data-ttu-id="c1745-168">Gå till Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="c1745-168">Go to Microsoft Defender Security Center.</span></span>
+### <a name="monitor-devices-using-the-portal"></a><span data-ttu-id="6f458-167">Övervaka enheter med hjälp av portalen</span><span class="sxs-lookup"><span data-stu-id="6f458-167">Monitor devices using the portal</span></span>
+1. <span data-ttu-id="6f458-168">Gå till Microsoft Defender Säkerhetscenter.</span><span class="sxs-lookup"><span data-stu-id="6f458-168">Go to Microsoft Defender Security Center.</span></span>
 
-2. <span data-ttu-id="c1745-169">Klicka **på listan Enheter.**</span><span class="sxs-lookup"><span data-stu-id="c1745-169">Click **Devices list**.</span></span>
+2. <span data-ttu-id="6f458-169">Klicka **på listan Enheter.**</span><span class="sxs-lookup"><span data-stu-id="6f458-169">Click **Devices list**.</span></span>
 
-3. <span data-ttu-id="c1745-170">Kontrollera att enheter visas.</span><span class="sxs-lookup"><span data-stu-id="c1745-170">Verify that devices are appearing.</span></span>
+3. <span data-ttu-id="6f458-170">Kontrollera att enheter visas.</span><span class="sxs-lookup"><span data-stu-id="6f458-170">Verify that devices are appearing.</span></span>
 
 
-## <a name="related-topics"></a><span data-ttu-id="c1745-171">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="c1745-171">Related topics</span></span>
-- [<span data-ttu-id="c1745-172">Introducera Windows 10-enheter med grupprincip</span><span class="sxs-lookup"><span data-stu-id="c1745-172">Onboard Windows 10 devices using Group Policy</span></span>](configure-endpoints-gp.md)
-- [<span data-ttu-id="c1745-173">Introducera Windows 10-enheter med Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="c1745-173">Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager</span></span>](configure-endpoints-sccm.md)
-- [<span data-ttu-id="c1745-174">Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter</span><span class="sxs-lookup"><span data-stu-id="c1745-174">Onboard Windows 10 devices using Mobile Device Management tools</span></span>](configure-endpoints-mdm.md)
-- [<span data-ttu-id="c1745-175">Registrera enheter för icke beständiga VDI-enheter (Virtual Desktop Infrastructure)</span><span class="sxs-lookup"><span data-stu-id="c1745-175">Onboard non-persistent virtual desktop infrastructure (VDI) devices</span></span>](configure-endpoints-vdi.md)
-- [<span data-ttu-id="c1745-176">Köra ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet</span><span class="sxs-lookup"><span data-stu-id="c1745-176">Run a detection test on a newly onboarded Microsoft Defender for Endpoint device</span></span>](run-detection-test.md)
-- [<span data-ttu-id="c1745-177">Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="c1745-177">Troubleshoot Microsoft Defender for Endpoint onboarding issues</span></span>](troubleshoot-onboarding.md)
+## <a name="related-topics"></a><span data-ttu-id="6f458-171">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="6f458-171">Related topics</span></span>
+- [<span data-ttu-id="6f458-172">Introducera Windows 10 enheter med grupprincip</span><span class="sxs-lookup"><span data-stu-id="6f458-172">Onboard Windows 10 devices using Group Policy</span></span>](configure-endpoints-gp.md)
+- [<span data-ttu-id="6f458-173">Introducera Windows 10 enheter med Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="6f458-173">Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager</span></span>](configure-endpoints-sccm.md)
+- [<span data-ttu-id="6f458-174">Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter</span><span class="sxs-lookup"><span data-stu-id="6f458-174">Onboard Windows 10 devices using Mobile Device Management tools</span></span>](configure-endpoints-mdm.md)
+- [<span data-ttu-id="6f458-175">Registrera enheter för icke beständiga VDI-enheter (Virtual Desktop Infrastructure)</span><span class="sxs-lookup"><span data-stu-id="6f458-175">Onboard non-persistent virtual desktop infrastructure (VDI) devices</span></span>](configure-endpoints-vdi.md)
+- [<span data-ttu-id="6f458-176">Köra ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet</span><span class="sxs-lookup"><span data-stu-id="6f458-176">Run a detection test on a newly onboarded Microsoft Defender for Endpoint device</span></span>](run-detection-test.md)
+- [<span data-ttu-id="6f458-177">Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="6f458-177">Troubleshoot Microsoft Defender for Endpoint onboarding issues</span></span>](troubleshoot-onboarding.md)

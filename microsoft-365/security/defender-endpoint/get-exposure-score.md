@@ -16,22 +16,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9da87dcb64f8c62966382e3a2888f03c49149a09
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 071b0e7597d334fe06d5045e06a5c4d82dd65609
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770441"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845396"
 ---
-# <a name="get-exposure-score"></a><span data-ttu-id="d67f8-104">Hämta exponeringsvärde</span><span class="sxs-lookup"><span data-stu-id="d67f8-104">Get exposure score</span></span>
+# <a name="get-exposure-score"></a><span data-ttu-id="d04f4-104">Hämta exponeringsvärde</span><span class="sxs-lookup"><span data-stu-id="d04f4-104">Get exposure score</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="d67f8-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="d67f8-105">**Applies to:**</span></span>
-- [<span data-ttu-id="d67f8-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="d67f8-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="d67f8-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d67f8-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="d04f4-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="d04f4-105">**Applies to:**</span></span>
+- [<span data-ttu-id="d04f4-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="d04f4-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="d04f4-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d04f4-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="d67f8-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="d67f8-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="d67f8-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="d67f8-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="d04f4-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="d04f4-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="d04f4-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="d04f4-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,53 +40,53 @@ ms.locfileid: "52770441"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-<span data-ttu-id="d67f8-110">Hämtar exponeringsresultatet för organisationen.</span><span class="sxs-lookup"><span data-stu-id="d67f8-110">Retrieves the organizational exposure score.</span></span>
+<span data-ttu-id="d04f4-110">Hämtar exponeringsresultatet för organisationen.</span><span class="sxs-lookup"><span data-stu-id="d04f4-110">Retrieves the organizational exposure score.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d67f8-111">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="d67f8-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d04f4-111">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="d04f4-111">Permissions</span></span>
 
-<span data-ttu-id="d67f8-112">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="d67f8-112">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="d67f8-113">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="d67f8-113">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+<span data-ttu-id="d04f4-112">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="d04f4-112">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="d04f4-113">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="d04f4-113">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="d67f8-114">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="d67f8-114">Permission type</span></span> | <span data-ttu-id="d67f8-115">Behörighet</span><span class="sxs-lookup"><span data-stu-id="d67f8-115">Permission</span></span> | <span data-ttu-id="d67f8-116">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="d67f8-116">Permission display name</span></span>
+<span data-ttu-id="d04f4-114">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="d04f4-114">Permission type</span></span> | <span data-ttu-id="d04f4-115">Behörighet</span><span class="sxs-lookup"><span data-stu-id="d04f4-115">Permission</span></span> | <span data-ttu-id="d04f4-116">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="d04f4-116">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="d67f8-117">Program</span><span class="sxs-lookup"><span data-stu-id="d67f8-117">Application</span></span> | <span data-ttu-id="d67f8-118">Score.Read.All</span><span class="sxs-lookup"><span data-stu-id="d67f8-118">Score.Read.All</span></span> | <span data-ttu-id="d67f8-119">"Read Threat and Vulnerability Management Score"</span><span class="sxs-lookup"><span data-stu-id="d67f8-119">'Read Threat and Vulnerability Management score'</span></span>
-<span data-ttu-id="d67f8-120">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="d67f8-120">Delegated (work or school account)</span></span> | <span data-ttu-id="d67f8-121">Score.Read</span><span class="sxs-lookup"><span data-stu-id="d67f8-121">Score.Read</span></span> | <span data-ttu-id="d67f8-122">"Read Threat and Vulnerability Management Score"</span><span class="sxs-lookup"><span data-stu-id="d67f8-122">'Read Threat and Vulnerability Management score'</span></span>
+<span data-ttu-id="d04f4-117">Program</span><span class="sxs-lookup"><span data-stu-id="d04f4-117">Application</span></span> | <span data-ttu-id="d04f4-118">Score.Read.All</span><span class="sxs-lookup"><span data-stu-id="d04f4-118">Score.Read.All</span></span> | <span data-ttu-id="d04f4-119">"Read Threat and Vulnerability Management Score"</span><span class="sxs-lookup"><span data-stu-id="d04f4-119">'Read Threat and Vulnerability Management score'</span></span>
+<span data-ttu-id="d04f4-120">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="d04f4-120">Delegated (work or school account)</span></span> | <span data-ttu-id="d04f4-121">Score.Read</span><span class="sxs-lookup"><span data-stu-id="d04f4-121">Score.Read</span></span> | <span data-ttu-id="d04f4-122">"Read Threat and Vulnerability Management Score"</span><span class="sxs-lookup"><span data-stu-id="d04f4-122">'Read Threat and Vulnerability Management score'</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d67f8-123">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="d67f8-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d04f4-123">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="d04f4-123">HTTP request</span></span>
 
 ```
 GET /api/exposureScore
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d67f8-124">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="d67f8-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d04f4-124">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="d04f4-124">Request headers</span></span>
 
-<span data-ttu-id="d67f8-125">Namn</span><span class="sxs-lookup"><span data-stu-id="d67f8-125">Name</span></span> | <span data-ttu-id="d67f8-126">Typ</span><span class="sxs-lookup"><span data-stu-id="d67f8-126">Type</span></span> | <span data-ttu-id="d67f8-127">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="d67f8-127">Description</span></span>
+<span data-ttu-id="d04f4-125">Namn</span><span class="sxs-lookup"><span data-stu-id="d04f4-125">Name</span></span> | <span data-ttu-id="d04f4-126">Typ</span><span class="sxs-lookup"><span data-stu-id="d04f4-126">Type</span></span> | <span data-ttu-id="d04f4-127">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="d04f4-127">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="d67f8-128">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="d67f8-128">Authorization</span></span> | <span data-ttu-id="d67f8-129">Sträng</span><span class="sxs-lookup"><span data-stu-id="d67f8-129">String</span></span> | <span data-ttu-id="d67f8-130">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="d67f8-130">Bearer {token}.</span></span> <span data-ttu-id="d67f8-131">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="d67f8-131">**Required**.</span></span>
+<span data-ttu-id="d04f4-128">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="d04f4-128">Authorization</span></span> | <span data-ttu-id="d04f4-129">Sträng</span><span class="sxs-lookup"><span data-stu-id="d04f4-129">String</span></span> | <span data-ttu-id="d04f4-130">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="d04f4-130">Bearer {token}.</span></span> <span data-ttu-id="d04f4-131">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="d04f4-131">**Required**.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="d67f8-132">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="d67f8-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d04f4-132">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="d04f4-132">Request body</span></span>
 
-<span data-ttu-id="d67f8-133">Tom</span><span class="sxs-lookup"><span data-stu-id="d67f8-133">Empty</span></span>
+<span data-ttu-id="d04f4-133">Tom</span><span class="sxs-lookup"><span data-stu-id="d04f4-133">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="d67f8-134">Svar</span><span class="sxs-lookup"><span data-stu-id="d67f8-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d04f4-134">Svar</span><span class="sxs-lookup"><span data-stu-id="d04f4-134">Response</span></span>
 
-<span data-ttu-id="d67f8-135">Om det lyckas returnerar den här metoden 200 OK, med exponeringsdata i svarets brödtext.</span><span class="sxs-lookup"><span data-stu-id="d67f8-135">If successful, this method returns 200 OK, with the exposure data in the response body.</span></span>
+<span data-ttu-id="d04f4-135">Om det lyckas returnerar den här metoden 200 OK, med exponeringsdata i svarets brödtext.</span><span class="sxs-lookup"><span data-stu-id="d04f4-135">If successful, this method returns 200 OK, with the exposure data in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d67f8-136">Exempel</span><span class="sxs-lookup"><span data-stu-id="d67f8-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d04f4-136">Exempel</span><span class="sxs-lookup"><span data-stu-id="d04f4-136">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d67f8-137">Begäran</span><span class="sxs-lookup"><span data-stu-id="d67f8-137">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d04f4-137">Begäran</span><span class="sxs-lookup"><span data-stu-id="d04f4-137">Request</span></span>
 
-<span data-ttu-id="d67f8-138">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="d67f8-138">Here is an example of the request.</span></span>
+<span data-ttu-id="d04f4-138">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="d04f4-138">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/exposureScore
 ```
 
-### <a name="response"></a><span data-ttu-id="d67f8-139">Svar</span><span class="sxs-lookup"><span data-stu-id="d67f8-139">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d04f4-139">Svar</span><span class="sxs-lookup"><span data-stu-id="d04f4-139">Response</span></span>
 
-<span data-ttu-id="d67f8-140">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="d67f8-140">Here is an example of the response.</span></span>
+<span data-ttu-id="d04f4-140">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="d04f4-140">Here is an example of the response.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="d67f8-141">Svarslistan som visas här kan trunkeras för att vara kort.</span><span class="sxs-lookup"><span data-stu-id="d67f8-141">The response list shown here may be truncated for brevity.</span></span> 
+><span data-ttu-id="d04f4-141">Svarslistan som visas här kan trunkeras för att vara kort.</span><span class="sxs-lookup"><span data-stu-id="d04f4-141">The response list shown here may be truncated for brevity.</span></span> 
 
 ```json
 {
@@ -97,7 +97,7 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d67f8-142">Se även</span><span class="sxs-lookup"><span data-stu-id="d67f8-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d04f4-142">Se även</span><span class="sxs-lookup"><span data-stu-id="d04f4-142">See also</span></span>
 
-- [<span data-ttu-id="d67f8-143">Riskbaserade hot & sårbarhetshantering</span><span class="sxs-lookup"><span data-stu-id="d67f8-143">Risk-based Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [<span data-ttu-id="d67f8-144">Exponeringsresultat & för hot</span><span class="sxs-lookup"><span data-stu-id="d67f8-144">Threat & Vulnerability exposure score</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [<span data-ttu-id="d04f4-143">Riskbaserade hot & sårbarhetshantering</span><span class="sxs-lookup"><span data-stu-id="d04f4-143">Risk-based Threat & Vulnerability Management</span></span>](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="d04f4-144">Exponeringsresultat & för hot</span><span class="sxs-lookup"><span data-stu-id="d04f4-144">Threat & Vulnerability exposure score</span></span>](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
