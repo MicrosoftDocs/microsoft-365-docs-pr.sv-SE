@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft-bokningar
-summary: Schemalägga och hantera avtalade tider med Microsoft-bokningar. Inkluderar integrering med Outlook och automatiska aviseringar.
+title: Microsoft Bookings
+summary: Schemalägga och hantera avtalade tider med Microsoft Bookings. Omfattar integrering med Outlook och automatiska meddelanden.
 metadata:
-  title: Microsoft-bokningar
-  description: Schemalägga och hantera avtalade tider med Microsoft-bokningar. Inkluderar integrering med Outlook och automatiska aviseringar.
+  title: Microsoft Bookings
+  description: Schemalägga och hantera avtalade tider med Microsoft Bookings. Omfattar integrering med Outlook och automatiska meddelanden.
   ms.service: bookings
   ms.topic: landing-page
   author: dmaguire
@@ -18,35 +18,35 @@ metadata:
   ms.lasthandoff: 09/09/2020
   ms.locfileid: "47420262"
 landingContent:
-- title: Om Microsoft-bokningar
+- title: Om Microsoft Bookings
   linkLists:
   - linkListType: overview
     links:
-    - text: Vad är Microsoft-bokningar?
+    - text: Vad är Microsoft Bookings?
       url: bookings-overview.md
   - linkListType: download
     links:
-    - text: Hämta programmet bokningar
+    - text: Hämta Bookings-appen
       url: get-bookings-app.md
-- title: Konfigurera Microsoft-bokningar
+- title: Konfigurera Microsoft Bookings
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Ange din företags information
+    - text: Ange din företagsinformation
       url: enter-business-information.md
-    - text: Ange schemaläggnings principer
+    - text: Ange dina principer för schemaläggning
       url: set-scheduling-policies.md
-    - text: Definiera dina tjänst möjligheter
+    - text: Beskriv tjänsterna du erbjuder
       url: define-service-offerings.md
-    - text: Ange anställdas arbets tid
+    - text: Ange arbetstider för anställda
       url: employee-hours.md
-    - text: Anpassa och publicera boknings sidan
+    - text: Anpassa och publicera din bokningssida
       url: customize-booking-page.md
     - text: Skapa och bemanna dina bokningar
       url: create-a-manual-booking.md
-- title: Bjuda in personer till boka möten
+- title: Bjuda in personer att boka tider
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Anpassa din boknings sida
+    - text: Anpassa din bokningssida
       url: customize-booking-page.md
