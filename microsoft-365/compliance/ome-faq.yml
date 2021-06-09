@@ -28,67 +28,67 @@ summary: >
 sections:
 - name: Ignoreras
   questions:
-  - question: Vad är meddelandekryptering i Office 365 (OME)?
+  - question: Vad är Meddelandekryptering i Office 365 (OME)?
     answer: OME kombinerar e-postkryptering och behörighetshanteringsfunktioner. Rättighetshanteringsfunktionerna drivs av Azure Information Protection.
   - question: >
-      Vem kan använda OME?
-    answer: "Du kan använda de nya funktionerna för OME i följande villkor:\n  \n- Om du aldrig har konfigurerat OME eller IRM för Exchange Online i Office 365.\n\n- Om du har konfigurerat OME och IRM kan du följa de här stegen om du använder tjänsten Azure Rights Management från Azure Information Protection.\n\n- Om du använder Exchange Online med AD RMS (Active Directory Rights Management service) kan du inte aktivera de här nya funktionerna direkt. I stället måste du först [migrera AD RMS till Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) När du är klar med migreringen kan du konfigurera OME.\n\n  Om du väljer att fortsätta använda lokal AD RMS med Exchange Online i stället för att migrera till Azure Information Protection kommer du inte att kunna använda de nya funktionerna.\n"
+      Vem använda OME?
+    answer: "Du kan använda de nya funktionerna för OME i följande villkor:\n  \n- Om du aldrig har konfigurerat OME eller IRM för Exchange Online i Office 365.\n\n- Om du har konfigurerat OME och IRM kan du följa de här stegen om du använder tjänsten Azure Rights Management från Azure Information Protection.\n\n- Om du använder Exchange Online Active Directory Rights Management service (AD RMS) kan du inte aktivera de här nya funktionerna direkt. I stället måste du först [migrera AD RMS till Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) När du är klar med migreringen kan du konfigurera OME.\n\n  Om du väljer att fortsätta använda lokal AD RMS med Exchange Online i stället för att migrera till Azure Information Protection kommer du inte att kunna använda de här nya funktionerna.\n"
   - question: >
       Vilka prenumerationer behöver jag för att använda de nya OME-funktionerna?
-    answer: "För att kunna använda de nya OME-funktionerna behöver du något av följande abonnemang:\n  \n- Meddelandekryptering i Office 365 erbjuds som en del av Office 365 Enterprise E3 och E5, Microsoft Enterprise E3 och E5, Microsoft 365 Business Premium, Office 365 A1, A3, A5 och Office 365 Government G3 och G5. Kunderna behöver inga ytterligare licenser för att få de nya skyddsfunktioner som drivs av Azure Information Protection.\n\n- Du kan också lägga till Azure Information Protection Plan 1 i följande abonnemang för att få de nya funktionerna för meddelandekryptering i Office 365: Exchange Online abonnemang 1, Exchange Online abonnemang 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard eller Office 365 Enterprise E1.\n\n- Alla användare som drar nytta av meddelandekryptering i Office 365 måste licensieras för att omfattas av funktionen.\n\n- Hela listan finns i [Tjänstbeskrivningar för Exchange Online för](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) Meddelandekryptering i Office 365.\n"
+    answer: "För att kunna använda de nya OME-funktionerna behöver du något av följande abonnemang:\n  \n- Meddelandekryptering i Office 365 erbjuds som en del av Office 365 Enterprise E3 och E5, Microsoft Enterprise E3 och E5, Microsoft 365 Business Premium, Office 365 A1, A3, A5 och Office 365 Government G3 och G5. Kunderna behöver inga ytterligare licenser för att få de nya skyddsfunktioner som drivs av Azure Information Protection.\n\n- Du kan också lägga till Azure Information Protection Plan 1 i följande abonnemang för att få de nya Meddelandekryptering i Office 365-funktionerna: Exchange Online abonnemang 1, Exchange Online abonnemang 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard eller Office 365 Enterprise E1.\n\n- Varje användare som drar Meddelandekryptering i Office 365 behöver licens för att omfattas av funktionen.\n\n- Den fullständiga listan innehåller Exchange Online [tjänstbeskrivningar](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) för Meddelandekryptering i Office 365.\n"
   - question: >
-      Kan jag använda Exchange Online med en egen nyckel (BYOK) i Azure Information Protection?
+      Kan jag använda Exchange Online med bring your own key (BYOK) in Azure Information Protection?
     answer: "Ja! Microsoft rekommenderar att du slutför stegen för att konfigurera BYOK innan du konfigurerar OME.\n  \nMer information om BYOK finns i Planera [och implementera din Azure Information Protection-klientnyckel.](/information-protection/plan-design/plan-implement-tenant-key)\n  \n"
   - question: >
       Ändrar OME och BYOK med Azure Information Protection Microsofts metod för dataförfrågningar från tredje part, till exempel underförfrågningar?
     answer: "Nej. OME och alternativet att tillhandahålla och kontrollera egna krypteringsnycklar, som kallas BYOK, från Azure Information Protection har inte utformats för att svara på stämningstilleriering. OME, med BYOK för Azure Information Protection, utformades för kunder med efterlevnadsfokus. Microsoft ser allvarligt på förfrågningar från tredje part om kunddata. Som molntjänstleverantör kan vi alltid vara nöjda med kundens datasekretess. Om vi får en undergrupp försöker vi alltid dirigera om tredje part till kunden för att få informationen. (Läs Brad Smiths blogg: [Skydda kunddata från myndigheters snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Vi publicerar regelbundet detaljerad information om begäran vi tar emot. Mer information om dataförfrågningar från tredje part finns i Svara på förfrågningar från myndigheter och lagar om att få åtkomst till [kunddata](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) på Microsoft Säkerhetscenter. Se även \"Avslöjande av kunddata\" i [villkoren för onlinetjänster (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)\n  \n"
   - question: >
-      Hur är den här funktionen relaterad till äldre funktioner i Office 365 Meddelandekryptering (OME) och IRM (Information Rights Management).
-    answer: "De nya funktionerna för meddelandekryptering i Office 365 är en utveckling av befintliga IRM- och äldre OME-lösningar. Följande tabell innehåller mer information.\n  \n**Jämförelse av äldre OME-, IRM- och nya OME-funktioner**\n\n| Funktion | Tidigare versioner av OME | IRM | Nya OME-funktioner |\n|:-----|:-----|:-----|:-----|\n|**Skicka krypterade e-postmeddelanden**|Bara genom e-postflödesregler i Exchange|Slutanvändare som är initierade från Outlook för Windows, Outlook för Mac eller Outlook på webben. eller via e-postflödesregler i Exchange|Slutanvändare som är initierade från Outlook för Windows, Outlook för Mac eller Outlook på webben. eller via e-postflödesregler|\n|**Rättighetshantering**|-|Alternativet Vidarebefordra inte och anpassade mallar|Alternativet Vidarebefordra inte, endast krypterat alternativ, standardmallar och anpassade mallar|\n|**Mottagartyp som stöds**|Endast externa mottagare|Endast interna mottagare|Interna och externa mottagare|\n|**Upplevelse för mottagaren**|Externa mottagare har fått ett HTML-meddelande som de har laddat ned och öppnat i en webbläsare eller i en hämtad mobilapp.|Interna mottagare har endast fått krypterad e-post i Outlook för Windows, Outlook för Mac och Outlook på webben.|Interna och externa mottagare får e-post i Outlook för Windows, Outlook för Mac, Outlook på webben, Outlook för Android och Outlook för iOS eller via en webbportal, oavsett om de finns i samma organisation eller i en organisation. OME-portalen kräver ingen separat nedladdning.|\n|**Ta med support för din egen nyckel**|Kan inte användas|Kan inte användas| BYOK stöds|\n"
+      Hur är den här funktionen relaterad till äldre funktioner Meddelandekryptering i Office 365 (OME) och IRM-funktioner (Information Rights Management) ?
+    answer: "De nya funktionerna för Meddelandekryptering i Office 365 en vidareutveckling av befintliga IRM- och äldre OME-lösningar. Följande tabell innehåller mer information.\n  \n**Jämförelse av äldre OME-, IRM- och nya OME-funktioner**\n\n| Funktion | Tidigare versioner av OME | IRM | Nya OME-funktioner |\n|:-----|:-----|:-----|:-----|\n|**Skicka krypterade e-postmeddelanden**|Bara genom Exchange för e-postflöde|Slutanvändare som initierats Outlook för Windows, Outlook för Mac eller Outlook på webben eller Exchange för e-postflöde|Slutanvändare som initierats Outlook för Windows, Outlook för Mac eller Outlook på webben eller via e-postflödesregler|\n|**Rättighetshantering**|-|Alternativet Vidarebefordra inte och anpassade mallar|Alternativet Vidarebefordra inte, endast krypterat alternativ, standardmallar och anpassade mallar|\n|**Mottagartyp som stöds**|Endast externa mottagare|Endast interna mottagare|Interna och externa mottagare|\n|**Upplevelse för mottagaren**|Externa mottagare har fått ett HTML-meddelande som de har laddat ned och öppnat i en webbläsare eller i en hämtad mobilapp.|Interna mottagare har bara fått krypterad e-Outlook för Windows, Outlook för Mac och Outlook på webben.|Interna och externa mottagare får e-post i Outlook för Windows, Outlook för Mac, Outlook på webben, Outlook för Android och Outlook för iOS eller via en webbportal, oavsett om de finns i samma organisation eller i en organisation. OME-portalen kräver ingen separat nedladdning.|\n|**Ta med support för din egen nyckel**|Kan inte användas|Kan inte användas| BYOK stöds|\n"
   - question: >
       Hur aktiverar jag de nya OME-funktionerna för min organisation?
-    answer: "Se [Konfigurera nya funktioner för meddelandekryptering i Office 365.](set-up-new-message-encryption-capabilities.md)\n  \n"
+    answer: "Se [Konfigurera nya Meddelandekryptering i Office 365 funktioner](set-up-new-message-encryption-capabilities.md).\n  \n"
   - question: >
       Kommer den tidigare versionen av OME att tas bort?
     answer: >
       Du kan fortfarande använda den tidigare versionen av OME, men den är för nuvarande inte inaktuell. Vi uppmuntrar dock starkt organisationer att använda den nya och förbättrade OME-lösningen. Kunder som inte redan har distribuerat OME kan inte konfigurera en ny distribution av den tidigare versionen av OME.
   - question: >
       Min organisation använder Active Directory Rights Management – kan jag använda den här funktionen?
-    answer: "Nej. Om du använder Exchange Online med AD RMS (Active Directory Rights Management service) kan du inte aktivera de här nya funktionerna direkt. I stället måste du först [migrera AD RMS till Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)\n  \n"
+    answer: "Nej. Om du använder Exchange Online Active Directory Rights Management service (AD RMS) kan du inte aktivera de här nya funktionerna direkt. I stället måste du först [migrera AD RMS till Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)\n  \n"
   - question: >
-      Min organisation har en Exchange-hybriddistribution. Kan jag använda den här funktionen?
-    answer: "Lokala användare kan skicka krypterad e-post med hjälp av e-postflödesregler i Exchange Online. För att kunna göra det måste du dirigera e-post via Exchange Online. Mer information finns i Del [2: Konfigurera e-post så att den flödar från din e-postserver till Microsoft 365.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)\n  \n"
+      Min organisation har en Exchange hybriddistribution. Kan jag använda den här funktionen?
+    answer: "Lokala användare kan skicka krypterad e-post Exchange Online e-postflödesregler. För att kunna göra det måste du dirigera e-post via Exchange Online. Mer information finns i Del [2: Konfigurera e-post så att den flödar från din e-postserver till Microsoft 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).\n  \n"
   - question: >
       Vilken e-postklient behöver jag använda för att skapa ett OME-krypterat meddelande? Vilka program stöds för att skicka skyddade meddelanden?
-    answer: "Du kan skapa skyddade meddelanden från Outlook 2016, Outlook 2013 för Windows och Mac och från Outlook på webben. Mer information om hur du skickar krypterade meddelanden finns [i Skicka, visa och svara på krypterade meddelanden i Outlook för PC.](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)\n  \n"
+    answer: "Du kan skapa skyddade meddelanden Outlook 2016, Outlook 2013 för Windows Mac och Outlook på webben. Mer information om hur du skickar krypterade meddelanden finns i Skicka, visa och svara på krypterade [meddelanden i Outlook för PC.](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)\n  \n"
   - question: >
       Vilka e-postklienter kan läsa och svara på skyddade e-postmeddelanden?
     answer: >
-      Microsoft 365-användare kan läsa och svara från Outlook för Windows och Mac (2013 och 2016), Outlook på webben och Outlook Mobile (Android och iOS). Du kan också använda den inbyggda e-postklienten i iOS om din organisation tillåter det. Om du inte är En Microsoft 365-användare kan du läsa och svara på krypterade meddelanden på webben via webbläsaren.
+      Microsoft 365 användare kan läsa och svara från Outlook för Windows och Mac (2013 och 2016), Outlook på webben och Outlook mobile (Android och iOS). Du kan också använda den inbyggda e-postklienten i iOS om din organisation tillåter det. Om du inte är Microsoft 365 kan du läsa och svara på krypterade meddelanden på webben via webbläsaren.
   - question: >
       Vilka e-postklienter stöder krypterade skyddade e-postmeddelanden?
     answer: >
-      Microsoft 365-användare kan använda Outlook för PC-versionerna 2019 och Microsoft 365 för att skapa e-postskyddade med den krypterade principen.  Det innebär att meddelanden där den nya krypterade principen tillämpas kan läsas direkt i Outlook på webben, i Outlook för iOS och Android, och nu i Outlook för PC-versionerna 2019 och Microsoft 365.
+      Microsoft 365 kan använda Outlook för PC-versionerna 2019 och Microsoft 365 att skapa e-postskyddad med den krypterade principen.  Det innebär att meddelanden där den nya krypterade principen tillämpas kan läsas direkt i Outlook på webben, i Outlook för iOS och Android och nu Outlook för PC-versioner 2019 och Microsoft 365.
   - question: >
       Finns det någon storleksgräns för meddelanden som du kan skicka med OME?
     answer: >
       Ja. Den största tillåtna meddelandestorleken som du kan skicka med OME, inklusive bifogade filer, är 25 MB. Mer information finns i [Meddelandebegränsningar](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
   - question: >
       Vilka filtyper stöds som bifogade filer i skyddade e-postmeddelanden? Ärver bifogade filer skyddsprinciperna som är kopplade till skyddade e-postmeddelanden?
-    answer: "Du kan bifoga valfri filtyp i ett skyddat e-postmeddelande. Med ett undantag tillämpas skyddsprinciper endast på de filformat som nämns i [Filtyper som stöds av Azure Information Protection-klienten.](/information-protection/rms-client/client-admin-guide-file-types) OME stöder inte 97-2003-versionerna av följande Office-program: Word (.doc), Excel (.xls) och PowerPoint (.ppt).\n\nOm ett filformat stöds, till exempel en Word-, Excel- eller PowerPoint-fil, är filen alltid skyddad, även efter att den bifogade filen har laddats ned av mottagaren. Säg till exempel att en bifogad fil är skyddad av Vidarebefordra inte. Den ursprungliga mottagaren laddar ned filen, skapar ett meddelande till en ny mottagare och bifogar filen. När den nya mottagaren får filen kan inte mottagaren öppna den skyddade filen.\n  \n"
+    answer: "Du kan bifoga valfri filtyp i ett skyddat e-postmeddelande. Med ett undantag tillämpas skyddsprinciper endast på de filformat som nämns i [Filtyper som stöds av Azure Information Protection-klienten.](/information-protection/rms-client/client-admin-guide-file-types) OME stöder inte 97–2003-versionerna av följande Office-program: Word (.doc), Excel (.xls) och PowerPoint (.ppt).\n\nOm ett filformat stöds, till exempel en Word-, Excel- eller PowerPoint-fil, är filen alltid skyddad, även efter att den bifogade filen har laddats ned av mottagaren. Säg till exempel att en bifogad fil är skyddad av Vidarebefordra inte. Den ursprungliga mottagaren laddar ned filen, skapar ett meddelande till en ny mottagare och bifogar filen. När den nya mottagaren får filen kan inte mottagaren öppna den skyddade filen.\n  \n"
   - question: >
       Stöds bifogade PDF-filer?
     answer: >
-      Det korta svaret är Ja! Om PDF-kryptering är aktiverad kan du skydda känsliga PDF-dokument genom säker kommunikation eller säkert samarbete. När du skickar ett e-postmeddelande krypterar Office 365-tjänsten bifogade PDF-filer. Outlook-klienten krypterar inte bifogade PDF-filer.
+      Det korta svaret är Ja! Om PDF-kryptering är aktiverad kan du skydda känsliga PDF-dokument genom säker kommunikation eller säkert samarbete. När du skickar ett e-postmeddelande krypterar Office 365 bifogade PDF-filer. Med Outlook krypteras inte bifogade PDF-filer.
 
 
       För Outlook på webben, Outlook för iOS och Outlook för Android kan du kryptera PDF-filer som du skickar utan fler steg. De här klienterna stöder PDF-kryptering.
 
 
-      Outlook-skrivbordet stöder inte kryptering av bifogade PDF-filer. I stället måste du först konfigurera e-postflödesregler i Exchange eller DLP för att tillämpa kryptering på bifogade PDF-filer. När du skickar e-post från Outlook för skrivbordet med en PDF-bilaga skickar klienten först meddelandet med den bifogade filen till tjänsten. När tjänsten tar emot filen tillämpar tjänsten OME-skyddet för DLP-principen (Data Loss Prevention) eller e-postflödesregeln i Exchange Online. Därefter skickar Exchange Online meddelandet med den skyddade PDF-filen.
+      Outlook inte inbyggt kryptering av bifogade PDF-filer. I stället måste du först konfigurera e-Exchange eller DLP för att tillämpa kryptering på bifogade PDF-filer. När du skickar e-post Outlook skrivbordsversionen med en PDF-bilaga skickar klienten först meddelandet med den bifogade filen till tjänsten. När tjänsten tar emot filen tillämpar tjänsten OME-skyddet för DLP-principen (Data Loss Prevention) eller e-postflödesregeln i Exchange Online. Därefter skickas Exchange Online meddelandet med den skyddade bifogade PDF-filen.
 
 
-      Om du vill aktivera kryptering av bifogade PDF-filer kör du följande kommando i [Exchange Online PowerShell:](/powershell/exchange/connect-to-exchange-online-powershell)
+      Om du vill aktivera kryptering av bifogade PDF-filer kör du följande [kommando Exchange Online PowerShell:](/powershell/exchange/connect-to-exchange-online-powershell)
 
 
       ```powershell
@@ -98,26 +98,26 @@ sections:
       ```
 
 
-      Med PDF-kryptering kan du skydda känsliga PDF-dokument genom säker kommunikation eller säkert samarbete. För alla Outlook-klienter, meddelanden och oskyddade PDF-bifogade filer ärver ome-skyddet från DLP-principen (Data Loss Prevention) eller e-postflödesregeln i Exchange Online. Om en Outlook på webben-användare bifogar ett oskyddat PDF-dokument och skyddar meddelandet ärver meddelandet skyddet för meddelandet. Användare kan bara öppna krypterade bifogade filer i program som stöder skyddade PDF-filer (till exempel OME-portalen och Azure Information Protection Viewer).
+      Med PDF-kryptering kan du skydda känsliga PDF-dokument genom säker kommunikation eller säkert samarbete. För alla Outlook-klienter, meddelanden och oskyddade PDF-bifogade filer ärver ome-skyddet från DLP-principen (Data Loss Prevention) eller e-postflödesregeln i Exchange Online. Om en användare på Outlook bifogar ett oskyddat PDF-dokument och tillämpar skydd på meddelandet ärver meddelandet också skyddet för meddelandet. Användare kan bara öppna krypterade bifogade filer i program som stöder skyddade PDF-filer (till exempel OME-portalen och Azure Information Protection Viewer).
 
 
       > [!IMPORTANT]
 
-      > Outlook-skrivbordsklienten stöder inte PDF-kryptering.
+      > Outlook-klienten på datorn stöder inte PDF-kryptering.
   - question: >
-      Stöds bifogade filer i OneDrive för företag?
+      Stöds OneDrive för företag bifogade filer?
     answer: >
-      Inte ännu. Bifogade filer i OneDrive för företag stöds inte och slutanvändarna kan inte kryptera e-postmeddelanden som innehåller en oneDrive för företag-molnbilaga.
+      Inte ännu. OneDrive för företag och slutanvändarna kan inte kryptera ett e-postmeddelande som innehåller en molnbaserad OneDrive för företag bifogad fil.
   - question: >
       Vilka e-postklienter har stöd för förhandsgranskning av krypterade bifogade filer i skyddade e-postmeddelanden?
-    answer: "När bifogade filer skyddas med ett skyddat e-postmeddelande ger Outlook-klienter möjlighet att förhandsgranska dokumentet direkt. Outlook har stöd för förhandsgranskning av Office-dokument (docx, xlsx, pptx, doc, xls, ppt). I Outlook på webben kan du förhandsgranska Office-dokument (docx, xlsx, pptx) och PDF.  \n"
+    answer: "När bifogade filer skyddas med ett skyddat e-Outlook-klienter möjlighet att förhandsgranska dokumentet direkt. Outlook stöd för förhandsgranskning av Office-dokument (docx, xlsx, pptx, doc, xls, ppt). Outlook på webben har stöd för förhandsgranskning Office dokument (docx, xlsx, pptx) och PDF.  \n"
   - question: >
       Vilka e-postklienter har stöd för återkallelse av skyddade e-postmeddelanden?
     answer: >
-      Outlook på webben har stöd för en återkallelse av skyddad e-post.  Mer [information finns i Återkalla ett krypterat meddelande som du](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) har skickat.
+      Outlook på webben stöder återkallelse av skyddad e-post.  Mer [information finns i Återkalla ett krypterat meddelande som du](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) har skickat.
   - question: >
       Kan jag automatiskt kryptera meddelanden genom att konfigurera principer?
-    answer: "Ja. Använd e-postflödesregler i Exchange Online för att automatiskt kryptera ett meddelande baserat på vissa villkor. Du kan till exempel skapa principer som baseras på mottagar-ID, mottagardomän eller innehållet i meddelandets brödtext eller ämne. Läs [Definiera e-postflödesregler för att kryptera e-postmeddelanden i Office 365.](define-mail-flow-rules-to-encrypt-email.md)\n  \n"
+    answer: "Ja. Använd e-postflödesregler i Exchange Online för att automatiskt kryptera ett meddelande baserat på vissa villkor. Du kan till exempel skapa principer som baseras på mottagar-ID, mottagardomän eller innehållet i meddelandets brödtext eller ämne. Se [Definiera e-postflödesregler för att kryptera e-postmeddelanden i Office 365](define-mail-flow-rules-to-encrypt-email.md).\n  \n"
   - question: >
       Kan jag automatiskt ta bort kryptering för inkommande och utgående e-post?
     answer: >
@@ -125,7 +125,7 @@ sections:
   - question: >
       Kan jag automatiskt kryptera meddelanden genom att konfigurera principer i Skydd mot dataförlust (DLP) via &amp; Säkerhetsefterlevnadscenter?
     answer: >
-      Ja! Du kan konfigurera e-postflödesregler i Exchange Online eller med DLP i &amp; Säkerhetsefterlevnadscenter.
+      Ja! Du kan konfigurera e-postflödesregler i Exchange Online eller med hjälp av DLP i &amp; Säkerhetsefterlevnadscenter.
   - question: >
       Kan jag anpassa krypterade meddelanden med företagets varumärke?
     answer: "Ja! Information om hur du anpassar e-postmeddelanden och OME-portalen finns i Lägga till företagets varumärke i krypterade meddelanden. Se [Lägga till företagets varumärke i krypterade meddelanden.](add-your-organization-brand-to-encrypted-messages.md)\n  \n"
@@ -135,7 +135,7 @@ sections:
   - question: >
       Kan jag använda meddelandekryptering med efterlevnadsfunktioner, till exempel eDiscovery?
     answer: >
-      Ja. Alla krypterade e-postmeddelanden kan upptäckas av efterlevnadsfunktioner i Microsoft 365.
+      Ja. Alla krypterade e-postmeddelanden kan upptäckas Microsoft 365 funktioner för efterlevnad.
   - question: >
       Kan jag ta bort kryptering från e-post?
     answer: >
@@ -183,7 +183,7 @@ sections:
       Det finns för närvarande två kända begränsningar:
 
 
-      - Du kan inte öppna bifogade filer i e-postmeddelanden som du får på mobila enheter med Outlook Mobile.
+      - Du kan inte öppna bifogade filer i e-postmeddelanden som du får på mobila enheter med hjälp Outlook mobil.
 
 
       - Vi stöder inte tilldelning via e-postaktiverad säkerhetsgrupp. Vi stöder endast åtkomst som tillhandahålls genom direkt tilldelning av användare till den delade postlådan och att automatisk mappning är aktiverat för Exchange Online. Automatisk mappning är aktiverat som standard för Exchange Online.
@@ -192,7 +192,7 @@ sections:
       **Så här tilldelar du en användare till den delade postlådan**
 
 
-      1. [Anslut till Exchange Online med fjärr-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150).aspx).
+      1. [Anslut att Exchange Online med Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150).aspx).
 
 
       2. Kör Add-MailboxPermission-cmdleten med parametern Automapping. Det här exemplet ger Ayla fullständig åtkomstbehörighet till en supportpostlåda.
