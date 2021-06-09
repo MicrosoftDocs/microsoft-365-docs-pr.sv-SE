@@ -1,5 +1,5 @@
 ---
-title: Ange schemaläggnings principer
+title: Ange dina principer för schemaläggning
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
-description: Lär dig hur du konfigurerar principer för ditt företag. Schemaläggnings principer inkluderar avtalade tiders längd samt acceptabla lead-och Annulleringsdatum.
+description: Lär dig ställa in schemaläggningsprinciper för ditt företag. Schemaläggningsprinciper omfattar längden på avtalade tider samt godtagbara led- och uppsägningstider.
 ms.openlocfilehash: 82cc9a66e82665040a1f0d08635cae10cd413d4b
 ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
 ms.translationtype: MT
@@ -16,33 +16,33 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "47420202"
 ---
-# <a name="set-your-scheduling-policies"></a>Ange schemaläggnings principer
+# <a name="set-your-scheduling-policies"></a>Ange dina principer för schemaläggning
 
-Alla avtalade tider är inte samma sak. Det tar bara några minuter, medan andra kan ta flera timmar. I Microsoft-bokningar är det här du anger schemaläggnings principer för ditt företag. Schemaläggnings principer innehåller längd för avtalade tider, acceptabla start-och annullerings tider samt automatiska meddelanden om boknings ändringar. Ytterligare anpassning kan läggas till för varje tjänst på sidan tjänster, med ytterligare inställningar för varaktighet och principer som bara gäller för den tjänsten.
+Alla avtalade tider är inte likadana. Vissa tar bara några minuter, medan andra kan ta flera timmar. I Microsoft Bookings anger du schemaläggningsprinciper för ditt företag på bokningssidan. Schemaläggningsprinciper omfattar längden på avtalade tider, godtagbara led- och avbokningstider och automatiska meddelanden om bokningsändringar. Ytterligare anpassning kan läggas till för varje tjänst på sidan Tjänster, med ytterligare inställningar och principer för varaktighet som endast gäller för den tjänsten.
 
-De principer du anger här är principer på den högsta nivån. De tillämpas automatiskt på alla tjänster du erbjuds såvida du inte väljer att ändra dem per tjänst. Låt oss säga att för de flesta tjänster, till exempel första samrådet, en dag-varsel för annulleringar accepteras. Men för de tjänster som kräver lokal reservation eller avgifter, till exempel Golf lektioner, kan du behöva tre dagar. Du kan ställa in denna princip på tjänst nivå på sidan tjänster. Se [definiera dina tjänste möjligheter](define-service-offerings.md) för instruktioner.
+Principerna som du anger här är principer på den högsta nivån. De tillämpas automatiskt på alla tjänster du erbjuder såvida du inte väljer att ändra dem per tjänst. Anta till exempel att för de flesta tjänster, t.ex. inledande samråd, går det bra med en dagars förvarning om avbokningar. Men för de tjänster som kräver bokning av funktioner eller avgifter, t.ex. golflektioner, kan du kräva tre dagars förvarning. Du kan ange den här tjänstenivåprincipen på sidan Tjänster. Anvisningar [finns i Definiera tjänsterbjudanden.](define-service-offerings.md)
 
-## <a name="types-of-scheduling-policies"></a>Typer av schemaläggnings principer
+## <a name="types-of-scheduling-policies"></a>Typer av schemaprinciper
 
-I den här tabellen förklaras de olika schemaläggnings principer som är tillgängliga på sidan bokning.
+I den här tabellen beskrivs de olika principer för schemaläggning som finns på bokningssidan.
 
-| Autentiseringsprincip | Förklaring |
+| Princip | Förklaring |
 |---|---|
-| Tids ökningar | Avgör tidsintervall mellan avtalade tider. Du kan ställa in tids ökningen mellan 5 och 4 timmar. Du kan också ange egna anpassade tidsintervall. Ett intervall om 15 minuter innebär till exempel att en kund kan schemalägga en avtalad tid i 60 minuter på 8:00, 8:15, 8:30 och så vidare. Det betyder att ett 60-minuters intervall är bara tillgängligt i timmen. (Om du vill ange tjänste längder läser du [definiera dina tjänst tjänster](define-service-offerings.md).) |
-| Ledtid i timmar | Du kan skapa en bemannings plan baserat på de avtalade tider som är schemalagda så det är viktigt att veta hur många kunder som kommer att vara med på en viss dag. Med policyn för ledtid kan du ange hur många timmar i förväg som kunderna måste boka eller annullera en avtalad tid. |
-| Maximalt antal dagar i förväg | Om du vill begränsa hur långt kunderna i förväg kan boka avtalade tider är det här inställningen för dig! Du kan ange högst 365 dagar eller mer. |
-| Meddela när en bokning skapas eller ändras | Välj det här alternativet om du vill få ett e-postmeddelande när en kund anordnar en avtalad tid eller ändrar ett befintligt. E-postmeddelandet skickas till post lådan på sidan med företags information. Mer information finns i [Ange din företags information](enter-business-information.md) . |
+| Tidssteg | Bestämmer intervallen mellan avtalade tider. Du kan ange tidssteg från 5 minuter till 4 timmar. Du kan också ange egna anpassade tidssteg. Ett intervall på 15 minuter innebär till exempel att en kund kan schemalägga ett möte om 60 minuter kl. 08:00, 8:15, 08:30 och så vidare. Omvänt innebär ett 60-minutersintervall att avtalade tider bara är tillgängliga den timmen. (Information om hur du anger tjänstlängder [finns i Definiera dina tjänsterbjudanden](define-service-offerings.md).) |
+| Ledtid i timmar | Du skapar en personalplan baserat på avtalade tider som schemaläggs så det är viktigt att veta i förväg hur många kunder som kommer in för service en viss dag. Med hjälp av principen för ledtid kan du ange antalet timmar i förväg som kunder måste boka eller avbryta en avtalad tid. |
+| Maximalt antal dagar i förväg | Om du vill begränsa hur långt i förväg kunder kan boka tider är det här inställningen för dig! Du kan ange maxvärdet i 365 dagar eller mer. |
+| Meddela när en bokning skapas eller ändras | Välj det här alternativet när du vill få ett e-postmeddelande när en kund bokar en avtalad tid eller ändrar en befintlig avtalad tid. E-postmeddelandet skickas till postlådan som angetts på sidan Företagsinformation. Mer [information finns i Ange](enter-business-information.md) din företagsinformation. |
 
-## <a name="set-your-policies"></a>Ställ in dina principer
+## <a name="set-your-policies"></a>Ange principer
 
-1. I Microsoft 365 väljer du Start programmet och väljer sedan bokningar.
+1. I Microsoft 365 väljer du startprogrammet och sedan Bookings.
 
-1. Välj **boknings sida**i navigerings fönstret.
+1. Välj Bokningssida i **navigeringsfönstret.**
 
-1. Välj principer under avsnittet **schemaläggnings policy** .
+1. Välj principer under **avsnittet Schemaläggningsprincip.**
 
 1. Välj **Spara och publicera**.
 
-## <a name="publish-the-booking-page"></a>Publicera boknings sidan
+## <a name="publish-the-booking-page"></a>Publicera bokningssidan
 
-När du är redo att publicera boknings sidan väljer du **Spara och publicera**. Mer information finns i [Anpassa och publicera din boknings sida](customize-booking-page.md) .
+När du är redo att publicera din bokningssida väljer du **Spara och publicera**. Mer information [finns i Anpassa och publicera din](customize-booking-page.md) bokningssida.

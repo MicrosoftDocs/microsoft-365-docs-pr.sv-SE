@@ -1,5 +1,5 @@
 ---
-title: Skydda din kampanj eller ditt företag på ett bättre sätt
+title: Ge ett bättre säkerhetsskydd för kampanjen eller verksamheten
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du skyddar din kampanj eller ditt företag genom att öka säkerheten med Microsoft 365.
+description: Lär dig att skydda din kampanj eller ditt företag genom att öka säkerheten med Microsoft 365.
 ms.openlocfilehash: d2486f7160bef57a91d76fba756ff75ba319b8fa
 ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
@@ -31,11 +31,11 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 01/29/2021
 ms.locfileid: "50044378"
 ---
-# <a name="bump-up-security-protection-for-your-campaign-or-business"></a>Skydda din kampanj eller ditt företag på ett bättre sätt
+# <a name="bump-up-security-protection-for-your-campaign-or-business"></a>Ge ett bättre säkerhetsskydd för kampanjen eller verksamheten
 
 
 ## <a name="overview"></a>Översikt 
-Titta på den här videon och se hur du kan skydda din kampanj eller ditt företag:
+I den här videon ser du hur du kan skydda kampanjen eller verksamheten:
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
@@ -44,7 +44,7 @@ Titta på den här videon och se hur du kan skydda din kampanj eller ditt föret
 Följ sedan anvisningarna för att:
 
 - [Skydd mot skadlig kod och andra hot](m365-campaigns-increase-protection.md)
-- [Skydda åtkomsten till kampanjdata genom](m365-campaigns-conditional-access.md) att skydda dina konton och appar
+- [Skydda åtkomsten till kampanjdata](m365-campaigns-conditional-access.md) genom att skydda dina konton och appar
 - [Skydda administratörskonton](m365-campaigns-protect-admin-accounts.md)
 - [Konfigurera mobila enheter](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
 - [Utbilda dina användare](m365-campaigns-users.md)

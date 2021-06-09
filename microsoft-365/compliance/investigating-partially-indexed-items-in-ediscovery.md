@@ -164,7 +164,7 @@ Följande steg visar hur du kör ett PowerShell-skript som söker efter alla obj
      }
    ```
 
-2. [Anslut till Säkerhets- och efterlevnadscenter PowerShell](/powershell/exchange/exchange-online-powershell).
+2. [Ansluta till Säkerhets- och efterlevnadscenter i PowerShell](/powershell/exchange/exchange-online-powershell).
 
 3. Gå till & i Security & Compliance Center, gå till mappen där du sparade skriptet i steg 1 och kör sedan skriptet. till exempel:
 

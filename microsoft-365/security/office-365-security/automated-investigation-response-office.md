@@ -45,7 +45,7 @@ I den här artikeln beskrivs hur AIR fungerar genom flera exempel. När du är r
 
 - [Exempel 1: Ett användarrapporterat phish-meddelande startar en undersöknings spelbok](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
 - [Exempel 2: En säkerhetsadministratör utlöser en undersökning från Threat Explorer](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
-- [Exempel 3: Ett säkerhetsoperationsteam integrerar AIR med sin SIEM med API:t för hanteringsaktivitet i Office 365](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
+- [Exempel 3: Ett säkerhetsoperationsteam integrerar AIR med sin SIEM Office 365 Api för hanteringsaktivitet](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Exempel: Ett användarrapporterat phish-meddelande startar en undersökningsspelbok
 
@@ -68,8 +68,8 @@ Sedan utförs flera undersökningssteg för hot och omsening:
 - Liknande e-postmeddelanden identifieras med hjälp av sökningar i e-postkluster.
 - Signalen delas med andra plattformar, till exempel [Microsoft Defender för Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - En fast bedömning görs om några användare har klickat genom skadliga länkar i misstänkta e-postmeddelanden.
-- En kontroll utförs i alla Exchange Online Protection[(EOP)](exchange-online-protection-overview.md)och ( Microsoft Defender för[Office 365](defender-for-office-365.md)) för att se om det finns andra liknande meddelanden som rapporterats av användare.
-- En kontroll utförs för att se om en användare har komprometterats. Den här kontrollen utnyttjar signaler i Office 365, [Microsoft Cloud App Security](/cloud-app-security)och Azure Active [Directory,](/azure/active-directory)vilket korrelerar alla relaterade användaraktivitetsaktiviteter.
+- En kontroll utförs i alla Exchange Online Protection ([EOP)](exchange-online-protection-overview.md)och ([Microsoft Defender](defender-for-office-365.md)för Office 365 ) för att se om det finns andra liknande meddelanden som rapporterats av användare.
+- En kontroll utförs för att se om en användare har komprometterats. Den här kontrollen utnyttjar signaler Office 365, [Microsoft Cloud App Security](/cloud-app-security)och [Azure Active Directory](/azure/active-directory), vilket korrelerar relaterade användaraktivitetsaktiviteter.
 
 Under licensfasen tilldelas olika risker och hot till olika stegen i det här steget.
 
@@ -89,11 +89,11 @@ Med hjälp **av menyn** Åtgärder kan du välja **Utlösarundersökning**.
 
 I likhet med spelböcker som utlöses av en varning inkluderar automatiska undersökningar som utlösts från en vy i Utforskaren en rotundersökning, åtgärder för att identifiera och korrelera hot och rekommenderade åtgärder för att minimera dessa hot.
 
-## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Exempel: Ett team för säkerhetsåtgärder integrerar AIR med sin SIEM med API:t för hanteringsaktivitet för Office 365
+## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Exempel: Ett team för säkerhetsåtgärder integrerar AIR med sin SIEM Office 365 Api för hanteringsaktivitet
 
-AIR-funktionerna i Microsoft Defender för Office 365 innehåller rapporter & [information](air-view-investigation-results.md) som säkerhetsåtgärder grupper kan använda för att övervaka och hantera hot. Men du kan också integrera AIR-funktioner med andra lösningar. Några exempel är ett säkerhetsinformations- och händelsehanteringssystem (SIEM), ett ärendehanteringssystem eller en anpassad rapporteringslösning. Den här typen av integrationer kan göras med API:t för hanteringsaktivitet i [Office 365.](/office/office-365-management-api/office-365-management-activity-api-reference)
+AIR-funktionerna i Microsoft Defender för Office 365 innehåller rapporter [& information](air-view-investigation-results.md) som säkerhetsgrupper kan använda för att övervaka och hantera hot. Men du kan också integrera AIR-funktioner med andra lösningar. Några exempel är ett säkerhetsinformations- och händelsehanteringssystem (SIEM), ett ärendehanteringssystem eller en anpassad rapporteringslösning. Den här typen av integrationer kan göras med hjälp Office 365 API för [hanteringsaktivitet.](/office/office-365-management-api/office-365-management-activity-api-reference)
 
-Exempelvis har en organisation nyligen ställt in ett sätt för sitt säkerhetsteam att visa användarrapporterade phish-aviseringar som redan bearbetats av AIR. Lösningen integrerar relevanta varningar med organisationens SIEM-server och deras case-management system. Lösningen minskar kraftigt antalet falska positiva försök, så att deras säkerhetsoperationer kan fokusera på deras tid och arbete på verkliga hot. Mer information om den här anpassade lösningen finns i Tech Community-bloggen: Öka effektiviteten i ditt SOC med Microsoft Defender för [Office 365 och O365 Management API.](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)
+Exempelvis har en organisation nyligen ställt in ett sätt för sitt säkerhetsteam att visa användarrapporterade phish-aviseringar som redan bearbetats av AIR. Lösningen integrerar relevanta varningar med organisationens SIEM-server och deras case-management system. Lösningen minskar kraftigt antalet falska positiva försök, så att deras säkerhetsoperationer kan fokusera på deras tid och arbete på verkliga hot. Mer information om den här anpassade lösningen finns i Tech Community-bloggen: Öka effektiviteten i ditt SOC med Microsoft Defender för Office 365 och [O365 Management API.](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)
 
 ## <a name="next-steps"></a>Nästa steg
 

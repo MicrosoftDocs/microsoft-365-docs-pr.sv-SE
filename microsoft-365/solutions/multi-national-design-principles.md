@@ -1,5 +1,5 @@
 ---
-title: Multinationell designprinciper för Microsoft 365
+title: Nationella designprinciper för Microsoft 365
 description: Beskrivning.
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 07/29/2020
 ms.locfileid: "46521105"
 ---
-# <a name="multi-national-design-principles-for-microsoft-365"></a>Multinationell designprinciper för Microsoft 365
+# <a name="multi-national-design-principles-for-microsoft-365"></a>Nationella designprinciper för Microsoft 365
 
 Text

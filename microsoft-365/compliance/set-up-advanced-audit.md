@@ -30,7 +30,7 @@ ms.locfileid: "52314415"
 
 Om organisationen har en prenumeration och licensiering för slutanvändare som stöder avancerad granskning utför du följande steg för att konfigurera och använda de ytterligare funktionerna i Avancerad granskning.
 
-![Arbetsflöde för att konfigurera avancerad granskning](../media/AdvancedAuditWorkflow.png)
+![Arbetsflöde för att konfigurera Avancerad granskning för användare](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step1-set-up-advanced-audit-for-users"></a>Steg1: Konfigurera avancerad granskning för användare
 
@@ -70,7 +70,7 @@ Om kommandot för att aktivera granskning av sökfrågor tidigare kördes i en a
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>Steg 3: Konfigurera bevarandeprinciper för granskning
 
-Utöver standardprincipen som behåller Exchange-, SharePoint- och Azure AD-granskningsposter under ett år kan du skapa ytterligare kvarhållningsprinciper för granskningsloggar för att uppfylla kraven för organisationens säkerhets-, IT- och efterlevnadsgrupper. Mer information finns i [Hantera kvarhållningsprinciper för granskningsloggar](audit-log-retention-policies.md).
+Utöver standardprincipen som behåller granskningsposter för Exchange, SharePoint och Azure AD i ett år kan du skapa ytterligare kvarhållningsprinciper för granskningsloggar så att de uppfyller kraven för organisationens säkerhetsåtgärder, IT- och efterlevnadsgrupper. Mer information finns i [Hantera kvarhållningsprinciper för granskningsloggar](audit-log-retention-policies.md).
 
 ## <a name="step-4-search-for-crucial-events"></a>Steg 4: Sök efter viktiga händelser
 

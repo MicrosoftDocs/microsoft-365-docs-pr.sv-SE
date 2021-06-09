@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Lär dig hur du administrerar synlighet för ämnen i Microsoft Viva-ämnen.
+description: Lär dig hur du administrerar synligheten för ämnen i Microsoft Viva-ämnen.
 ms.openlocfilehash: cd6a712687a63c3d131ee678c6c408f516c7b529
 ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
@@ -19,16 +19,16 @@ ms.locfileid: "50107679"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Hantera synlighet för ämnen i Microsoft Viva-ämnen
 
-Du kan hantera vilka användare som kan se viktiga ämnen, ämneskort och ämnescentret i administrationscentret för [Microsoft 365.](https://admin.microsoft.com) Du måste vara global administratör eller SharePoint-administratör för att kunna utföra de här uppgifterna.
+Du kan hantera den uppsättning användare som kan se viktiga ämnen, ämneskort och ämnescentret i [Microsoft 365 administrationscentret.](https://admin.microsoft.com) Du måste vara global administratör SharePoint administratör för att utföra de här uppgifterna.
 
 ## <a name="to-access-topics-management-settings"></a>Så här kommer du åt inställningar för hantering av ämnen:
 
-1. Klicka på Inställningar och sedan Organisationsinställningar i **administrationscentret** **för** Microsoft 365.
+1. I Microsoft 365 klickar du på **Inställningar** och sedan **på Organisationsinställningar.**
 2. Klicka på **Ämnesupplevelser** på **fliken Tjänster.**
 
-    ![Koppla samman personer med kunskap](../media/admin-org-knowledge-options-completed.png) 
+    ![Anslut att få kunskap](../media/admin-org-knowledge-options-completed.png) 
 
-3. Välj **synlighetsfliken** Ämne. I följande avsnitt finns information om de olika inställningarna.
+3. Välj fliken **Ämnessynlighet.** I följande avsnitt finns information om de olika inställningarna.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-visibility.png) 
 
@@ -36,18 +36,18 @@ Du kan hantera vilka användare som kan se viktiga ämnen, ämneskort och ämnes
 
 Du kan ändra vilka användare som kan se ämnen i organisationen.
 
-1. Välj Redigera **under Vilka** kan se ämnen på **fliken Ämnessynlighet.** 
-2. På sidan **Vilka som kan se** ämnen väljer du vilka som ska ha åtkomst till ämnesinformation, till exempel markerade ämnen, ämneskort, ämnessvar i sökningar och ämnessidor. Du kan välja:
+1. På fliken **Ämnessynlighet** går du **till fliken Vem kan se avsnitt** och väljer **Redigera**.
+2. På sidan **Vem kan** se ämnen väljer du vilka som ska ha åtkomst till ämnesinformation, till exempel markerade ämnen, ämneskort, ämnessvar i sökningar och ämnessidor. Du kan välja:
     - **Alla i organisationen**
     - **Endast valda personer eller säkerhetsgrupper**
     - **Ingen**
 
-    ![Vilka kan se ämnen](../media/k-manage-who-can-see-topics.png) 
+    ![Vem kan se avsnitt](../media/k-manage-who-can-see-topics.png) 
 
 3. Välj **Spara**.  
  
 > [!Note] 
-> Med den här inställningen kan du välja vilken användare som helst i organisationen, men endast användare som har tilldelats ämneslicenser kan visa ämnen.
+> Med den här inställningen kan du välja vilken användare som helst i organisationen, men endast användare som har tilldelats ämneserfarenhetslicenser kan visa ämnen.
 
 ## <a name="see-also"></a>Se även
 

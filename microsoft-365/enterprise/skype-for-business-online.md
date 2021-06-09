@@ -21,7 +21,7 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: Som administratör kan du hitta hjälp för att konfigurera delar av Skype för företag – Online, inklusive nätverk, möten och snabb meddelanden samt extern åtkomst för användare.
+description: Som administratör kan du hitta hjälp med att konfigurera delar av Skype för företag Online, till exempel nätverk, möten, snabbmeddelanden och extern åtkomst för användare.
 ms.openlocfilehash: 1e3807199fc83d642399b29870f2cac477d2ec75
 ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "47415712"
 
 ## <a name="were-here-to-help"></a>Vi hjälper gärna till!
 
-Som administratör för Office 365 för företag får du kostnadsfri åtkomst till vår kunniga supportpersonal. Om du inte hittar den information du behöver på den här webbplatsen ** [kontaktar du support för affärs produkter – hjälp för administratörer](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+Som administratör för Office 365 för företag får du kostnadsfri åtkomst till vår kunniga supportpersonal. Om du inte hittar den information du behöver på webbplatsen kontaktar du **[supporten för företagsprodukter – hjälp för administratörer](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>Låt dina användare kontakta externa Skype- eller Skype för företag-användare
 
@@ -41,7 +41,7 @@ Du kan låta personer som använder Skype för företag kontakta användare som 
   
 - [Låt användare kontakta externa Skype för företag-användare](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94)
     
-- [Låt Skype för företag-användare lägga till Skype-kontakter](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
+- [Låt Skype för företag lägga till Skype kontakter](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460)
     
 ## <a name="improve-call-and-video-quality"></a>Förbättra kvaliteten för samtal och video
 
@@ -67,11 +67,11 @@ Se även:
 
 - [Ange personliga alternativ i Skype för företag](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
     
-- [Behöver du hjälp med att logga in i Skype för företag?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
+- [Behöver du hjälp med att logga in Skype för företag?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [Video: Logga in i och ut ur Skype för företag](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [Video: Logga in och ut Skype för företag](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
-- [Ställ in alternativ för ljud enheter i Skype för företag](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
+- [Ange alternativ för ljudenhet i Skype för företag](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
 - [Ansluta till ett Skype för företag-möte](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     
@@ -89,6 +89,6 @@ Se även:
     
 - [Starta ett Skype för företag-konferenssamtal](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **Fler artiklar om användare finns i [Hjälp om Skype för företag](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
+ **Fler artiklar för användare finns i [Skype för företag hjälp.](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)**
   
 

@@ -19,19 +19,19 @@ ms.locfileid: "50107414"
 ---
 # <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Hantera ämnesbehörigheter i Microsoft Viva-ämnen
 
-Du kan hantera inställningar för ämnesbehörigheter [i administrationscentret för Microsoft 365.](https://admin.microsoft.com) Du måste vara global administratör eller SharePoint-administratör för att kunna utföra de här uppgifterna.
+Du kan hantera inställningar för ämnesbehörigheter [Microsoft 365 administrationscentret](https://admin.microsoft.com). Du måste vara global administratör SharePoint administratör för att utföra de här uppgifterna.
 
-Med inställningar för ämnesbehörigheter kan du välja:
+Med inställningar för ämnesbehörighet kan du välja:
 
-- Vilka användare kan skapa och redigera ämnen: Skapa nya avsnitt som inte hittades under upptäckten eller redigera befintlig ämnesinformation.
+- Vilka användare kan skapa och redigera ämnen: Skapa nya ämnen som inte hittades vid identifieringen eller redigera befintlig ämnesinformation.
 - Vilka användare kan hantera ämnen: Komma åt ämneshanteringscentret och visa feedback om ämnen samt flytta ämnen genom livscykeln.
 
 ## <a name="to-access-topics-management-settings"></a>Så här kommer du åt inställningar för hantering av ämnen:
 
-1. Klicka på Inställningar och sedan Organisationsinställningar i **administrationscentret** **för** Microsoft 365.
+1. I Microsoft 365 klickar du på **Inställningar** och sedan **på Organisationsinställningar.**
 2. Klicka på **Ämnesupplevelser** på **fliken Tjänster.**
 
-    ![Koppla samman personer med kunskap](../media/admin-org-knowledge-options-completed.png) 
+    ![Anslut att få kunskap](../media/admin-org-knowledge-options-completed.png) 
 
 3. Välj fliken **Ämnesbehörigheter.** I följande avsnitt finns information om de olika inställningarna.
 
@@ -41,8 +41,8 @@ Med inställningar för ämnesbehörigheter kan du välja:
 
 Så här uppdaterar du vem som har behörighet att skapa och redigera ämnen:
 
-1. På fliken **Ämnesbehörigheter,** under **Vem kan skapa och redigera ämnen,** väljer du **Redigera.**
-2. På sidan **Vem kan skapa och redigera ämnen** väljer du:
+1. Välj **Redigera på fliken** **Ämnesbehörigheter under Vem kan skapa och redigera** **ämnen.**
+2. På sidan **Vem skapa och redigera ämnen** kan du välja:
     - **Alla i organisationen**
     - **Endast valda personer eller säkerhetsgrupper**
     - **Ingen**
@@ -53,7 +53,7 @@ Så här uppdaterar du vem som har behörighet att skapa och redigera ämnen:
 
 Så här uppdaterar du vem som har behörighet att hantera ämnen:
 
-1. På fliken **Ämnesbehörigheter** under **Vem kan hantera ämnen** väljer du **Redigera.**
+1. Välj **Redigera på fliken** Ämnesbehörigheter under Vem **kan hantera** **ämnen**.
 2. På sidan **Vem kan hantera ämnen** kan du välja:
     - **Alla i organisationen**
     - **Valda personer eller säkerhetsgrupper**

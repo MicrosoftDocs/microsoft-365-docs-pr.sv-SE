@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft-bokningar
-summary: Lär dig hur du konfigurerar Microsoft-bokningar för att erbjuda kunder service till en avtalad tid.
+title: Microsoft Bookings
+summary: Lär dig konfigurera Microsoft Bookings för att tillhandahålla tjänster för kunder med avtalade tider.
 brand: m365
 metadata:
-  title: Microsoft-bokningar
-  description: Lär dig hur du konfigurerar Microsoft-bokningar för att erbjuda kunder service till en avtalad tid.
+  title: Microsoft Bookings
+  description: Lär dig konfigurera Microsoft Bookings för att tillhandahålla tjänster för kunder med avtalade tider.
   ms.service: bookings
   ms.topic: hub-page
   author: dmaguire
@@ -12,30 +12,24 @@ metadata:
   manager: serdars
   audience: Admin
   ms.date: 09/04/2020
-  ms.openlocfilehash: 8c7158c72700a7db866051a4de10bbc890ad4478
-  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
-  ms.translationtype: MT
-  ms.contentlocale: sv-SE
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "47420221"
 additionalContent:
   sections:
-  - items:
-    - title: Vad är Microsoft-bokningar?
-      summary: Schemalägga och hantera avtalade tider med en webbaserad boknings kalender och-app, inklusive Outlook-integrering för personal och automatiska e-postmeddelanden.
-      url: bookings-overview.md
-    - title: Ange din företags information
-      summary: Skriv in sidan för att skapa din om oss, inklusive företags namn, adress, telefonnummer, webb adress, logo typ och kontors tid i Microsoft-bokningar.
-      url: enter-business-information.md
-    - title: Hämta programmet bokningar
-      summary: Ändra färgtemat och Ställ in hur sidan för den externa kund som motstående bokning ser ut.
-      url: customize-booking-page.md
-    - title: Lägga till personal i bokningar
-      summary: Skapa din personal lista och hantera information om personal medlemmar, till exempel namn, telefonnummer och e-postadress.
-      url: add-staff.md
-    - title: Schemalägga företagets öppet tider, ledig tid och semester tid
-      summary: Schemalägga kontors avslut och ledighet från kalender kalendern så att de anställda är markerade som ej tillgängliga för bokningar under de angivna tiderna.
-      url: schedule-closures-time-off-vacation.md
-    - title: Anställdas arbets tid i Microsoft-bokningar
-      summary: Ange arbets tid och tillgänglighet för anställda i Microsoft-bokningar.
-      url: employee-hours.md
+    - items:
+        - title: Vad är Microsoft Bookings?
+          summary: 'Schemalägg och hantera avtalade tider med en webbaserad bokningskalender och -app, Outlook integrering av personal och automatiska aviseringsmeddelanden.'
+          url: bookings-overview.md
+        - title: Ange din företagsinformation
+          summary: 'Ange sidan Om oss, inklusive företagets namn, adress, telefonnummer, webbplats-URL, logotyp och öppettider i Microsoft Bookings.'
+          url: enter-business-information.md
+        - title: Hämta Bookings-appen
+          summary: Ändra färgtema och konfigurera hur din externa kundbokningssida ska se ut.
+          url: customize-booking-page.md
+        - title: Lägg till personal i Bookings
+          summary: 'Skapa en personallista och hantera personalinformation som namn, telefonnummer och e-postadress.'
+          url: add-staff.md
+        - title: 'Schemalägga verksamhetsslut, ledighet och semesterdagar'
+          summary: Schemalägg öppettider och dagar för anställda i kalendern i Bookings så att anställda markeras som ej tillgängliga för bokningar under de angivna tiderna.
+          url: schedule-closures-time-off-vacation.md
+        - title: Arbetstid för anställda i Microsoft Bookings
+          summary: Ange arbetstider och tillgänglighet för anställda i Microsoft Bookings.
+          url: employee-hours.md

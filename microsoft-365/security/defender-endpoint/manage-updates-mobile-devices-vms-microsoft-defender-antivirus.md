@@ -1,6 +1,6 @@
 ---
-title: Definiera hur mobila enheter uppdateras av Microsoft Defender Antivirus
-description: Hantera hur mobila enheter, till exempel bärbara datorer, ska uppdateras med uppdateringar för Microsoft Defender Antivirus Protection.
+title: Definiera hur mobila enheter uppdateras genom att Microsoft Defender Antivirus
+description: Hantera hur mobila enheter, till exempel bärbara datorer, ska uppdateras med Microsoft Defender Antivirus säkerhetsuppdateringar.
 keywords: uppdateringar, skydd, schemalägg uppdateringar, batteri, mobil enhet, bärbar dator, anteckningsbok, välja till, microsoft update, wsus, åsidosätt
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -45,7 +45,7 @@ Följande artiklar kan också vara användbara i dessa situationer:
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Registrera dig för Microsoft Update på mobila datorer utan WSUS-anslutning
 
-Du kan använda Microsoft Update för att hålla Säkerhetsinformation på mobila enheter som kör Microsoft Defender Antivirus uppdaterat när de inte är anslutna till företagsnätverket eller annars inte har en WSUS-anslutning. 
+Du kan använda Microsoft Update för att hålla Säkerhetsinformation på mobila enheter som kör Microsoft Defender Antivirus uppdaterade när de inte är anslutna till företagsnätverket eller annars inte har en WSUS-anslutning. 
 
 Det innebär att skyddsuppdateringar kan levereras till enheter (via Microsoft Update) även om du har angett att WSUS ska åsidosätta Microsoft Update.
 
@@ -53,7 +53,7 @@ Du kan registrera dig för Microsoft Update på den mobila enheten på något av
 
 - Ändra inställningen med Grupprincip.
 - Använd VBScript för att skapa ett skript och kör det sedan på varje dator i nätverket.
-- Registrera dig manuellt på alla datorer i nätverket via **menyn** Inställningar.
+- Registrera dig manuellt på alla datorer i nätverket via **Inställningar** dator.
 
 ### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>Använd grupprincip för att registrera dig för Microsoft Update
 
@@ -63,7 +63,7 @@ Du kan registrera dig för Microsoft Update på den mobila enheten på något av
 
 3. Välj **Principer** och **sedan Administrativa mallar.**
 
-4. Expandera trädet till **Windows-komponenterna**  >  **Microsoft Defender Antivirus** Signature  >  **Updates**.
+4. Expandera trädet så att **det Windows komponenter**  >  **Microsoft Defender Antivirus**  >  **Signaturuppdateringar**.
 
 5. Ange **Tillåt säkerhetsintelligensuppdateringar från Microsoft Update** **till** Aktiverat och välj sedan **OK.**
 
@@ -76,15 +76,15 @@ Du kan registrera dig för Microsoft Update på den mobila enheten på något av
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>Registrera dig för Microsoft Update manuellt
 
-1. Öppna **Windows Update** i & **säkerhetsinställningarna** på den dator som du vill registrera dig för.
+1. Öppna **Windows i** **Uppdatera & säkerhetsinställningarna** på den dator som du vill registrera dig för.
 
 2. Välj **Avancerade** alternativ.
 
-3. Markera kryssrutan för Ge mig **uppdateringar för andra Microsoft-produkter när jag uppdaterar Windows.**
+3. Markera kryssrutan för Ge **mig uppdateringar för andra Microsoft-produkter när jag uppdaterar Windows**.
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Förhindra säkerhetsintelligensuppdateringar när de körs på batteri
 
-Du kan konfigurera Microsoft Defender Antivirus för att bara ladda ned uppdateringar om datorn är ansluten till en kabelansluten strömkälla. 
+Du kan Microsoft Defender Antivirus att endast ladda ned skyddsuppdateringar när datorn är ansluten till en kabelansluten strömkälla. 
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>Använda grupprinciper för att förhindra säkerhetsintelligensuppdateringar på batterikraft
 
@@ -94,11 +94,11 @@ Du kan konfigurera Microsoft Defender Antivirus för att bara ladda ned uppdater
 
 3.  Välj **Principer** och **sedan Administrativa mallar.**
 
-4.  Expandera trädet till **Windows-komponenter** Microsoft Defender Antivirus Signature Updates och ange sedan Tillåt säkerhetsintelligensuppdateringar när  >    >   **batterikraften körs** till **Inaktiverad.** Välj sedan **OK**. 
+4.  Expandera trädet så att **Windows-komponenter** Microsoft Defender Antivirus signaturuppdateringar och ange sedan Tillåt säkerhetsintelligensuppdateringar när batteriet  >    >   **körs** till **Inaktiverat.** Välj sedan **OK**. 
 
 Den här åtgärden förhindrar att uppdateringar laddas ned när datorn är på batterinivå.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Hantera uppdateringar för Microsoft Defender Antivirus och tillämpa baslinjer](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Uppdatera och hantera Microsoft Defender Antivirus i Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)

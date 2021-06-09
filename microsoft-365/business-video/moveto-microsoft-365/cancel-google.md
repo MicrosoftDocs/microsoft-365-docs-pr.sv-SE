@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs om hur du avbryter prenumerationen på Google Workspace men behåller din domän.
+description: Läs om hur du avbryter prenumerationen på Google Workspace men behåller domänen.
 ms.openlocfilehash: 1ad7e4ae3583063281ac5b5e9510be539b1378dd
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
@@ -32,11 +32,11 @@ ms.locfileid: "49928264"
 # <a name="cancel-google-workspace-subscription"></a>Avbryt prenumeration på Google Workspace
 
 1. Logga in på [Google Admin](https://admin.google.com/) och gå till **Fakturering.**
-1. Välj **ditt** G Suite-abonnemang, avbryt prenumerationen **och** välj sedan Fortsätt i listan **Prenumerationer.**
+1. Välj **din** G Suite-prenumeration i listan Prenumerationer, **avbryt prenumerationen** och välj sedan **Fortsätt.**
 
     > [!IMPORTANT]
-    > prenumerationen avbryts omedelbart och du kan inte ångra den här åtgärden.
+    > prenumerationen avbryts direkt och du kan inte ångra den här åtgärden.
 
-    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Skärmbild av faktureringssidan för Google-administratörer.":::
+    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Skärmbild av Googles faktureringssida för administratörer.":::
 
-Observera att du kanske inte ser Domänregistrering i din prenumerationslista om din DNS-värd inte är Google-domäner.
+Observera att du kanske inte ser Domänregistrering i listan Prenumerationer om din DNS-värd inte är Google Domains.

@@ -123,7 +123,7 @@ Här är en kort länk som du kan använda för att komma tillbaka: [https://aka
 
 [Plan för prestandafelsökning för Office 365](performance-troubleshooting-plan.md).
 
-[URL-adresser och IP-adressintervall för Office 365](urls-and-ip-address-ranges.md)
+[Office 365-webbadresser och IP-adressintervall.](urls-and-ip-address-ranges.md)
 
 [Office 365 nätverks- och prestandajustering](network-planning-and-performance.md)
 

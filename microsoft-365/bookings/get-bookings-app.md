@@ -1,5 +1,5 @@
 ---
-title: Hämta Microsoft-programmet för iOS och Android
+title: Skaffa appen Microsoft Bookings för iOS och Android
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
-description: De mobila apparna i bokningar är ännu inte tillgängliga i hela världen. I den här artikeln finns en lista med de nationella inställningarna där programmen är tillgängliga nu.
+description: Bookings-mobilapparna är ännu inte tillgängliga i hela världen. I den här artikeln finns en lista över de platser där apparna är tillgängliga nu.
 ms.openlocfilehash: 910b80b372d0ef2e27d38dd4f01bd7b639d8c3aa
 ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
 ms.translationtype: MT
@@ -16,24 +16,24 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 09/09/2020
 ms.locfileid: "47420223"
 ---
-# <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>Hämta Microsoft-programmet för iOS och Android
+# <a name="get-the-microsoft-bookings-app-for-ios-and-android"></a>Skaffa appen Microsoft Bookings för iOS och Android
 
-Tack för att du laddar ner program varan Microsoft Books! Microsoft-bokningar är tillgängligt som en mobilapp för iOS och Android. Programmet bokningar för iOS är tillgängligt i alla regioner och länder som Apple stöder. Du kan ladda ned appen från [iTunes App Store](https://apps.apple.com/app/microsoft-bookings/id1065657468). Programmet bokningar för Android kan laddas ned från [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) i USA och Kanada.
+Tack för att du laddar ned appen Microsoft Bookings! Microsoft Bookings finns som mobilapp för iOS och Android. Bookings-appen för iOS finns i alla regioner och länder som Apple stöder. Du kan ladda ned appen från [iTunes App Store.](https://apps.apple.com/app/microsoft-bookings/id1065657468) Bookings-appen för Android kan laddas ned från [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) i USA och Kanada.
 
-Innan du börjar måste du konfigurera dem på webben.
+Innan du kan komma igång måste du konfigurera Bookings på webben.
 
-1. Hittar du inte appen du söker? Från Start programmet väljer du alla appar för att se en alfabetisk lista över de Microsoft 365-appar som är tillgängliga för dig. Därifrån kan du söka efter ett visst program
+1. Hittar du inte appen du söker? Från appstartaren väljer du Alla appar för att se en alfabetisk lista över de Microsoft 365 tillgängliga apparna. Därifrån kan du söka efter en särskild app
 
-   ![Bild av Start programmet](../media/bookings-all-apps-launcher.png)
+   ![Bild på startprogrammet](../media/bookings-all-apps-launcher.png)
 
-2. Till [Start sidan för Office](https://office.com) och välj **bokningar**från Start programmet.
+2. Gå till [Office startsida](https://office.com) och välj Bookings i **startprogrammet.**
 
-3. Välj **Skaffa det nu**.
+3. Välj **Skaffa nu.**
 
-4. Ange namn och typ av företag du kör, till exempel hår Salon eller tandvårds praxis, och välj **till bokningar**.
+4. Ange namn och typ av företag som du kör, till exempel hårfrisyr eller tandläkarundersökning, och välj **Till Bookings**.
 
-5. Nu är du redo att konfigurera pärmar för din organisation. Följ stegen [i det här avsnittet för att slutföra](bookings-overview.md) konfigureringen. Gå tillbaka till din mobila enhet och logga ut från mobilappen. Logga in igen för att gå till den nya boknings kalendern.
+5. Nu kan du konfigurera Bookings för din organisation. Följ stegen i [Microsoft Bookings för](bookings-overview.md) att slutföra din inställning av Bookings. Gå tillbaka till din mobila enhet och logga ut från mobilappen. Logga in igen för att gå till den nya bokningskalendern.
 
-## <a name="view-only-mode"></a>Skrivskyddat läge
+## <a name="view-only-mode"></a>Visningsläge
 
-Alla användare som inte har Läs-och skriv åtkomst i bokningar kan fortfarande använda mobilappen i skrivskyddat läge. Alla som har en licens som läggs till i en boknings kalender kan se sina egna och deras kollegors scheman, avtalade tider och företags information. En användare med skrivskyddad åtkomst kan inte göra ändringar eller redigera och kan inte komma åt kund listan.
+Alla användare som inte beviljas skrivskydd i Bookings kan fortfarande använda mobilappen i skrivskyddsläge. Alla som har en Bookings-licens som läggs till i en bokningskalender kan se sina egna och kollegors scheman, information om avtalade tider och företagsinformation. Användare med endast visningsbehörighet kan inte göra ändringar eller redigera och kan inte komma åt kundlistan.

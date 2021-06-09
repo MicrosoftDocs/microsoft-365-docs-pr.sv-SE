@@ -1,7 +1,7 @@
 ---
 title: Registreringsverktyg och -metoder för Windows 10-enheter
-description: Introducera Windows 10-enheter så att de kan skicka sensordata till Microsoft Defender för slutpunkts sensor
-keywords: Hantera Windows 10-enheter, grupprincip, slutpunktskonfigurationshanteraren, hantering av mobila enheter, lokalt skript, gp, sccm, mdm, intune
+description: Introducera Windows 10 enheter så att de kan skicka sensordata till Microsoft Defender för slutpunkts sensor
+keywords: Hantera Windows 10 enheter, grupprincip, slutpunktskonfigurationshanteraren, hantering av mobila enheter, lokalt skript, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -30,7 +30,7 @@ ms.locfileid: "51892835"
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft 365 Endpoint – dataförlustskydd (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 Dataförlustskydd i slutpunkt (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [Microsoft 365 Insider-riskhantering](/microsoft-365/compliance/insider-risk-management)
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -47,9 +47,9 @@ Följande distributionsverktyg och -metoder stöds:
 ## <a name="in-this-section"></a>I det här avsnittet
 Ämne | Beskrivning
 :---|:---
-[Introducera Windows 10-enheter med grupprincip](configure-endpoints-gp.md) | Använd Grupprincip för att distribuera konfigurationspaketet på enheter.
-[Introducera Windows-enheter med Hjälp av Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) | Du kan använda antingen Microsoft Endpoint Manager (current branch) version 1606 eller Microsoft Endpoint Manager (current branch) version 1602 eller tidigare för att distribuera konfigurationspaket på enheter.
-[Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter](configure-endpoints-mdm.md) | Använd Verktyg för hantering av mobila enheter eller Microsoft Intune för att distribuera konfigurationspaketet på enheten.
+[Introducera Windows 10 enheter med grupprincip](configure-endpoints-gp.md) | Använd Grupprincip för att distribuera konfigurationspaketet på enheter.
+[Introducera Windows enheter med hjälp av Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) | Du kan använda antingen Microsoft Endpoint Manager (current branch) version 1606 eller Microsoft Endpoint Manager (current branch) version 1602 eller tidigare för att distribuera konfigurationspaket på enheter.
+[Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter](configure-endpoints-mdm.md) | Använd verktyg för hantering av mobila enheter eller Microsoft Intune till att distribuera konfigurationspaketet på enheten.
 [Registrera Windows 10-enheter med ett lokalt skript](configure-endpoints-script.md) | Lär dig hur du använder det lokala skriptet för att distribuera konfigurationspaketet på slutpunkter.
 [Registrera enheter för icke beständiga VDI-enheter (Virtual Desktop Infrastructure)](configure-endpoints-vdi.md) | Lär dig hur du använder konfigurationspaketet för att konfigurera VDI-enheter.
 

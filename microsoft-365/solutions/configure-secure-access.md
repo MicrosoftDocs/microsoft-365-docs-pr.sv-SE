@@ -1,5 +1,5 @@
 ---
-title: Konfigurera säker åtkomst till Microsoft 365-tjänster
+title: Konfigurera säker åtkomst till Microsoft 365 tjänster
 description: Hitta anvisningar för hur du implementerar MFA, villkorsstyrd åtkomst och relaterade principer för tre nivåer av skydd – baslinje, känslig och mycket känslig.
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050892"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a>Konfigurera säker åtkomst till Microsoft 365-tjänster
+# <a name="configure-secure-access-to-microsoft-365-services"></a>Konfigurera säker åtkomst till Microsoft 365 tjänster
 
 Den här lösningen är baserad på "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" – anvisningar för implementering av MFA, villkorsstyrd åtkomst och relaterade principer för tre skyddsnivåer: baslinje, känslig och mycket känslig.

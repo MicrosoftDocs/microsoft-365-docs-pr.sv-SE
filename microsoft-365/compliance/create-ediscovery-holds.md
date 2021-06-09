@@ -54,13 +54,13 @@ Så här skapar du ett eDiscovery-värde som är kopplat till ett Core eDiscover
 
 7. På **sidan Välj platser** i guiden Välj platser väljer du de innehållsplatser som du vill skapa en plats för. Du kan placera postlådor, webbplatser och gemensamma mappar i arkivet.
 
-    ![Välj platser för innehåll som ska vara på plats](../media/eDiscoveryHoldLocations.png)
+    ![Välj vilka innehållsplatser som ska vara undantagna](../media/eDiscoveryHoldLocations.png)
   
-   1. **Exchange postlådor**: Ställ in växlingsknappen på På och klicka sedan på Välj  **användare,** grupper eller team för att ange vilka postlådor som ska vara i paus. Använd sökrutan för att hitta användarnas postlådor och distributionsgrupper (för att skapa ett väntande på postlådorna för gruppmedlemmar). Du kan också placera ett is i den associerade postlådan för ett Microsoft-team, en Office 365 grupp och en Yammer grupp. Mer information om programdata som bevaras när en postlåda ställs i förvaring finns i Innehåll som lagrats i postlådor [för eDiscovery.](what-is-stored-in-exo-mailbox.md)
+   1. **Exchange-postlådor**: Ställ in växlingsknappen på **På** och klicka sedan på **Välj användare, grupper eller teams** för att ange vilka postlådor som inte ska ingå. Använd sökrutan för att hitta användarpostlådor och distributionsgrupper (för att undanta gruppmedlemmars postlådor) som ska uteslutas. Du kan också placera ett is i den associerade postlådan för ett Microsoft-team, en Office 365 grupp och en Yammer grupp. Mer information om programdata som bevaras när en postlåda ställs i förvaring finns i Innehåll som lagrats i postlådor [för eDiscovery.](what-is-stored-in-exo-mailbox.md)
 
-   1. **SharePoint webbplatser**: Ställ in växlingsknappen på  På och klicka sedan på Välj webbplatser för att SharePoint ange vilka OneDrive-konton som ska vara i paus.  Skriv URL-adressen för varje webbplats som du vill skapa en plats för. Du kan också lägga till URL-adressen för SharePoint för ett Microsoft-team, en Office 365 grupp eller en Yammer grupp.
+   1. **SharePoint-webbplatser**: Ställ in växlingsknappen på **På** och klicka sedan på **Välj webbplatser** för att ange SharePoint-webbplatser och OneDrive-konton som ska uteslutas. Skriv in URL-adressen för varje webbplats som du vill utesluta. Du kan också lägga till URL-adressen för SharePoint för ett Microsoft-team, en Office 365 grupp eller en Yammer grupp.
   
-   1. **Exchange mappar :** Ställ in växlingsknappen på **På** om du vill att alla gemensamma mappar Exchange Online organisationen ska vara i holden. Du kan inte välja att vissa gemensamma mappar ska vara på plats. Låt växlingsknappen vara inaktiverad om du inte vill använda gemensamma mappar.
+   1. **Gemensamma Exchange-mappar**: Ställ in växlingsknappen på **På** för att utesluta alla gemensamma mappar i Exchange Online-organisationen. Du kan inte välja specifika gemensamma mappar att utesluta. Låt växlingsknappen stå på Av om du inte vill utesluta gemensamma mappar.
 
    > [!NOTE]
    > Du måste lägga till minst en innehållsplats i rymmert. Annars visar statistiken för eDiscovery-information om att inga objekt är på plats.
@@ -221,9 +221,9 @@ I följande tabell finns begränsningar för eDiscovery-ärenden och e-dataident
   |:-----|:-----|
   |Maximalt antal ärenden för en organisation.  <br/> |Ingen gräns  <br/> |
   |Maximalt antal eDiscovery-rymmer för en organisation.  <br/> |10 000  <br/> |
-  |Maximalt antal postlådor i ett enstaka eDiscovery-hold. Den här gränsen omfattar totalt antal användarpostlådor och postlådorna som är kopplade Microsoft 365 grupper, Microsoft Teams och Yammer grupper.  <br/> |1 000  <br/> |
+  |Maximalt antal postlådor i ett enstaka eDiscovery-hold. Den här gränsen omfattar totalt antal användarpostlådor och postlådorna som är kopplade Microsoft 365 grupper, Microsoft Teams och Yammer grupper.  <br/> |1 000  <br/> |
   |Maximalt antal webbplatser i ett enstaka eDiscovery-hold. Den här gränsen omfattar det totala antalet OneDrive för företag, SharePoint webbplatser och webbplatser som är kopplade till grupper Microsoft 365, Microsoft Teams och Yammer grupper.  <br/> |100  <br/> |
-  |Maximalt antal ärenden som visas på eDiscovery-startsidan och det maximala antalet objekt som visas på flikarna Spärrar, Sökningar och Exportera i ett ärende. <sup>1</sup> |1 000|
+  |Maximalt antal ärenden som visas på eDiscovery-startsidan och det maximala antalet objekt som visas på flikarna Spärrar, Sökningar och Exportera i ett ärende. <sup>1</sup> |1 000|
   |||
 
    > [!NOTE]
