@@ -19,39 +19,39 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52636260"
 ---
-# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a><span data-ttu-id="de08a-104">Steg 3.</span><span class="sxs-lookup"><span data-stu-id="de08a-104">Step 3.</span></span> <span data-ttu-id="de08a-105">Använd Power Automate för att skapa ett flöde för att bearbeta dina kontrakt</span><span class="sxs-lookup"><span data-stu-id="de08a-105">Use Power Automate to create your flow to process your contracts</span></span>
+# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a><span data-ttu-id="c5a53-104">Steg 3.</span><span class="sxs-lookup"><span data-stu-id="c5a53-104">Step 3.</span></span> <span data-ttu-id="c5a53-105">Använd Power Automate för att skapa ett flöde för att bearbeta dina kontrakt</span><span class="sxs-lookup"><span data-stu-id="c5a53-105">Use Power Automate to create your flow to process your contracts</span></span>
 
-<span data-ttu-id="de08a-106">Du har skapat din kanal för kontraktshantering och bifogat ditt SharePoint dokumentbibliotek.</span><span class="sxs-lookup"><span data-stu-id="de08a-106">You've created your Contract Management channel and have attached your SharePoint document library.</span></span> <span data-ttu-id="de08a-107">Nästa steg är att skapa ett Power Automate flöde för att bearbeta de kontrakt som din SharePoint Syntex-modell identifierar och klassificerar.</span><span class="sxs-lookup"><span data-stu-id="de08a-107">The next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies.</span></span> <span data-ttu-id="de08a-108">Du kan göra det här steget genom [att skapa Power Automate ett flöde i SharePoint-dokumentbiblioteket](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).</span><span class="sxs-lookup"><span data-stu-id="de08a-108">You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).</span></span>
+<span data-ttu-id="c5a53-106">Du har skapat din kanal för kontraktshantering och bifogat ditt SharePoint dokumentbibliotek.</span><span class="sxs-lookup"><span data-stu-id="c5a53-106">You've created your Contract Management channel and have attached your SharePoint document library.</span></span> <span data-ttu-id="c5a53-107">Nästa steg är att skapa ett Power Automate flöde för att bearbeta de kontrakt som din SharePoint Syntex-modell identifierar och klassificerar.</span><span class="sxs-lookup"><span data-stu-id="c5a53-107">The next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies.</span></span> <span data-ttu-id="c5a53-108">Du kan göra det här steget genom [att skapa Power Automate ett flöde i SharePoint-dokumentbiblioteket](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).</span><span class="sxs-lookup"><span data-stu-id="c5a53-108">You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).</span></span>
 
-<span data-ttu-id="de08a-109">För din lösning för kontraktshantering vill du skapa ett Power Automate för att göra följande åtgärder:</span><span class="sxs-lookup"><span data-stu-id="de08a-109">For your contracts management solution, you want to create a Power Automate flow to do the following actions:</span></span>
+<span data-ttu-id="c5a53-109">För din lösning för kontraktshantering vill du skapa ett Power Automate för att göra följande åtgärder:</span><span class="sxs-lookup"><span data-stu-id="c5a53-109">For your contracts management solution, you want to create a Power Automate flow to do the following actions:</span></span>
 
--  <span data-ttu-id="de08a-110">När ett kontrakt har klassificerats av din SharePoint Syntex-modell ändrar du kontraktsstatusen till **Vid granskning.**</span><span class="sxs-lookup"><span data-stu-id="de08a-110">After a contract has been classified by your SharePoint Syntex model, change the contract status to **In review**.</span></span>
-- <span data-ttu-id="de08a-111">Avtalet granskas sedan och godkänns eller avvisas.</span><span class="sxs-lookup"><span data-stu-id="de08a-111">The contract is then reviewed and is either approved or rejected.</span></span>
-- <span data-ttu-id="de08a-112">För godkända kontrakt publiceras kontraktsinformationen på en flik för betalningsbearbetning.</span><span class="sxs-lookup"><span data-stu-id="de08a-112">For approved contracts, the contract information is posted to a tab for payment processing.</span></span>
-- <span data-ttu-id="de08a-113">För avvisade kontrakt meddelas teamet för vidare analys.</span><span class="sxs-lookup"><span data-stu-id="de08a-113">For rejected contracts, the team is notified for further analysis.</span></span> 
+-  <span data-ttu-id="c5a53-110">När ett kontrakt har klassificerats av din SharePoint Syntex-modell ändrar du kontraktsstatusen till **Vid granskning.**</span><span class="sxs-lookup"><span data-stu-id="c5a53-110">After a contract has been classified by your SharePoint Syntex model, change the contract status to **In review**.</span></span>
+- <span data-ttu-id="c5a53-111">Avtalet granskas sedan och godkänns eller avvisas.</span><span class="sxs-lookup"><span data-stu-id="c5a53-111">The contract is then reviewed and is either approved or rejected.</span></span>
+- <span data-ttu-id="c5a53-112">För godkända kontrakt publiceras kontraktsinformationen på en flik för betalningsbearbetning.</span><span class="sxs-lookup"><span data-stu-id="c5a53-112">For approved contracts, the contract information is posted to a tab for payment processing.</span></span>
+- <span data-ttu-id="c5a53-113">För avvisade kontrakt meddelas teamet för vidare analys.</span><span class="sxs-lookup"><span data-stu-id="c5a53-113">For rejected contracts, the team is notified for further analysis.</span></span> 
 
-<span data-ttu-id="de08a-114">Följande diagram visar Power Automate för kontraktshanteringslösningen.</span><span class="sxs-lookup"><span data-stu-id="de08a-114">The following diagram shows the Power Automate flow for the contract management solution.</span></span>
+<span data-ttu-id="c5a53-114">Följande diagram visar Power Automate för kontraktshanteringslösningen.</span><span class="sxs-lookup"><span data-stu-id="c5a53-114">The following diagram shows the Power Automate flow for the contract management solution.</span></span>
 
 ![Flow som visar hela lösningen.](../media/content-understanding/flow-entire-process.png)
 
-## <a name="prepare-your-contract-for-review"></a><span data-ttu-id="de08a-116">Förbered ditt kontrakt för granskning</span><span class="sxs-lookup"><span data-stu-id="de08a-116">Prepare your contract for review</span></span>
+## <a name="prepare-your-contract-for-review"></a><span data-ttu-id="c5a53-116">Förbered ditt kontrakt för granskning</span><span class="sxs-lookup"><span data-stu-id="c5a53-116">Prepare your contract for review</span></span>
 
-<span data-ttu-id="de08a-117">När ett kontrakt identifieras och klassificeras av din förstå-modell för SharePoint Syntex-dokument ändrar Power Automate-flödet först statusen till **I granskning.**</span><span class="sxs-lookup"><span data-stu-id="de08a-117">When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to **In review**.</span></span>
+<span data-ttu-id="c5a53-117">När ett kontrakt identifieras och klassificeras av din förstå-modell för SharePoint Syntex-dokument ändrar Power Automate-flödet först statusen till **I granskning.**</span><span class="sxs-lookup"><span data-stu-id="c5a53-117">When a contract is identified and classified by your SharePoint Syntex document understanding model, the Power Automate flow will first change the status to **In review**.</span></span>
 
 ![Uppdateringsstatus.](../media/content-understanding/flow-overview.png)
 
-<span data-ttu-id="de08a-119">När du checkat ut filen ändrar du statusvärdet till **Vid granskning**.</span><span class="sxs-lookup"><span data-stu-id="de08a-119">After checking out the file, change the status value to **In review**.</span></span>
+<span data-ttu-id="c5a53-119">När du checkat ut filen ändrar du statusvärdet till **Vid granskning**.</span><span class="sxs-lookup"><span data-stu-id="c5a53-119">After checking out the file, change the status value to **In review**.</span></span>
 
 ![I granskningsstatus.](../media/content-understanding/in-review.png)
 
-<span data-ttu-id="de08a-121">Nästa steg är att skapa ett adaptivt kort som anger att avtalet väntar på granskning och publicerar det i kanalen Kontraktshantering.</span><span class="sxs-lookup"><span data-stu-id="de08a-121">The next step is to create an adaptive card stating that the contract is waiting for review and posting it to the Contract Management channel.</span></span>
+<span data-ttu-id="c5a53-121">Nästa steg är att skapa ett adaptivt kort som anger att avtalet väntar på granskning och publicerar det i kanalen Kontraktshantering.</span><span class="sxs-lookup"><span data-stu-id="c5a53-121">The next step is to create an adaptive card stating that the contract is waiting for review and posting it to the Contract Management channel.</span></span>
 
 ![Granskning av avtal.](../media/content-understanding/contract-approval-post.png)
 
 
 ![Skapa adaptiva kort för granskning.](../media/content-understanding/adaptive-card.png)
 
-<span data-ttu-id="de08a-124">Följande kod är det JSON som används för det här steget i Power Automate flöde.</span><span class="sxs-lookup"><span data-stu-id="de08a-124">The following code is the JSON used for this step in the Power Automate flow.</span></span>
+<span data-ttu-id="c5a53-124">Följande kod är det JSON som används för det här steget i Power Automate flöde.</span><span class="sxs-lookup"><span data-stu-id="c5a53-124">The following code is the JSON used for this step in the Power Automate flow.</span></span>
 
 ```JSON
 {
@@ -127,40 +127,40 @@ ms.locfileid: "52636260"
 ```
 
 
-## <a name="conditional"></a><span data-ttu-id="de08a-125">Villkorsstyrd</span><span class="sxs-lookup"><span data-stu-id="de08a-125">Conditional</span></span>
+## <a name="conditional"></a><span data-ttu-id="c5a53-125">Villkorsstyrd</span><span class="sxs-lookup"><span data-stu-id="c5a53-125">Conditional</span></span>
 
-<span data-ttu-id="de08a-126">I flödet måste du sedan skapa ett villkor där avtalet antingen godkänns eller avvisas.</span><span class="sxs-lookup"><span data-stu-id="de08a-126">In your flow, next you need to create a condition in which your contract will be either  approved or rejected.</span></span>
+<span data-ttu-id="c5a53-126">I flödet måste du sedan skapa ett villkor där avtalet antingen godkänns eller avvisas.</span><span class="sxs-lookup"><span data-stu-id="c5a53-126">In your flow, next you need to create a condition in which your contract will be either  approved or rejected.</span></span>
 
 ![Villkorsstyrd.](../media/content-understanding/condition.png)
 
-## <a name="if-the-contract-is-approved"></a><span data-ttu-id="de08a-128">Om avtalet godkänns</span><span class="sxs-lookup"><span data-stu-id="de08a-128">If the contract is approved</span></span>
+## <a name="if-the-contract-is-approved"></a><span data-ttu-id="c5a53-128">Om avtalet godkänns</span><span class="sxs-lookup"><span data-stu-id="c5a53-128">If the contract is approved</span></span>
 
-<span data-ttu-id="de08a-129">När ett kontrakt har godkänts inträffar följande:</span><span class="sxs-lookup"><span data-stu-id="de08a-129">When a contract has been approved, the following things occur:</span></span>
+<span data-ttu-id="c5a53-129">När ett kontrakt har godkänts inträffar följande:</span><span class="sxs-lookup"><span data-stu-id="c5a53-129">When a contract has been approved, the following things occur:</span></span>
 
-- <span data-ttu-id="de08a-130">På **fliken** Kontrakt ändras statusen i kontraktskortet till **Godkänd.**</span><span class="sxs-lookup"><span data-stu-id="de08a-130">On the **Contracts** tab, the status in the contract card will change to **Approved**.</span></span>
+- <span data-ttu-id="c5a53-130">På **fliken** Kontrakt ändras statusen i kontraktskortet till **Godkänd.**</span><span class="sxs-lookup"><span data-stu-id="c5a53-130">On the **Contracts** tab, the status in the contract card will change to **Approved**.</span></span>
 
    ![Kortstatus godkänd.](../media/content-understanding/approved-contracts-tab.png)
 
-- <span data-ttu-id="de08a-132">I flödet ändras statusen till **Godkänd.**</span><span class="sxs-lookup"><span data-stu-id="de08a-132">In your flow, the status is changed to **Approved**.</span></span>
+- <span data-ttu-id="c5a53-132">I flödet ändras statusen till **Godkänd.**</span><span class="sxs-lookup"><span data-stu-id="c5a53-132">In your flow, the status is changed to **Approved**.</span></span>
 
    ![Flow status godkänd.](../media/content-understanding/status-approved.png)
 
-- <span data-ttu-id="de08a-134">I den här lösningen läggs kontraktsdata till på **fliken För** utbetalning så att utbetalningarna kan hanteras.</span><span class="sxs-lookup"><span data-stu-id="de08a-134">In this solution, the contract data will be added to the **For Payout** tab so that the payouts can be managed.</span></span> <span data-ttu-id="de08a-135">Den här processen kan utökas så att flödet kan skicka in avtal om betalning med en ekonomisk tredje part-app (till exempel Dynamics CRM).</span><span class="sxs-lookup"><span data-stu-id="de08a-135">This process can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).</span></span>
+- <span data-ttu-id="c5a53-134">I den här lösningen läggs kontraktsdata till på **fliken För** utbetalning så att utbetalningarna kan hanteras.</span><span class="sxs-lookup"><span data-stu-id="c5a53-134">In this solution, the contract data will be added to the **For Payout** tab so that the payouts can be managed.</span></span> <span data-ttu-id="c5a53-135">Den här processen kan utökas så att flödet kan skicka in avtal om betalning med en ekonomisk tredje part-app (till exempel Dynamics CRM).</span><span class="sxs-lookup"><span data-stu-id="c5a53-135">This process can be extended to allow the flow to submit the contracts for payment by a third-party financial application (for example, Dynamics CRM).</span></span>
 
    ![Avtalet flyttas till Betala ut.](../media/content-understanding/for-payout.png)
 
-- <span data-ttu-id="de08a-137">I flödet skapar du följande objekt för att flytta godkända kontrakt till **fliken För utbetalning.**</span><span class="sxs-lookup"><span data-stu-id="de08a-137">In the flow, you create the following item to move approved contracts to the **For Payout** tab.</span></span>
+- <span data-ttu-id="c5a53-137">I flödet skapar du följande objekt för att flytta godkända kontrakt till **fliken För utbetalning.**</span><span class="sxs-lookup"><span data-stu-id="c5a53-137">In the flow, you create the following item to move approved contracts to the **For Payout** tab.</span></span>
 
    ![Flow att flytta till Betala ut.](../media/content-understanding/ready-for-payout.png)
 
-- <span data-ttu-id="de08a-139">Ett adaptivt kort som anger att avtalet har godkänts skapas och publiceras i kanalen Kontraktshantering.</span><span class="sxs-lookup"><span data-stu-id="de08a-139">An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.</span></span>
+- <span data-ttu-id="c5a53-139">Ett adaptivt kort som anger att avtalet har godkänts skapas och publiceras i kanalen Kontraktshantering.</span><span class="sxs-lookup"><span data-stu-id="c5a53-139">An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.</span></span>
 
    ![Godkännande av avtal publicerat.](../media/content-understanding/adaptive-card-approval.png)
 
    ![Adaptivt kortgodkännande.](../media/content-understanding/adaptive-card.png)
 
 
-   <span data-ttu-id="de08a-142">Följande kod är det JSON som används för det här steget i Power Automate flöde.</span><span class="sxs-lookup"><span data-stu-id="de08a-142">The following code is the JSON used for this step in the Power Automate flow.</span></span>
+   <span data-ttu-id="c5a53-142">Följande kod är det JSON som används för det här steget i Power Automate flöde.</span><span class="sxs-lookup"><span data-stu-id="c5a53-142">The following code is the JSON used for this step in the Power Automate flow.</span></span>
 
 ```JSON
 { 
@@ -240,23 +240,23 @@ ms.locfileid: "52636260"
 }
 ```
 
-## <a name="if-the-contract-is-rejected"></a><span data-ttu-id="de08a-143">Om avtalet avvisas</span><span class="sxs-lookup"><span data-stu-id="de08a-143">If the contract is rejected</span></span>
+## <a name="if-the-contract-is-rejected"></a><span data-ttu-id="c5a53-143">Om avtalet avvisas</span><span class="sxs-lookup"><span data-stu-id="c5a53-143">If the contract is rejected</span></span>
 
-<span data-ttu-id="de08a-144">När ett kontrakt har avvisats inträffar följande:</span><span class="sxs-lookup"><span data-stu-id="de08a-144">When a contract has been rejected, the following things occur:</span></span>
+<span data-ttu-id="c5a53-144">När ett kontrakt har avvisats inträffar följande:</span><span class="sxs-lookup"><span data-stu-id="c5a53-144">When a contract has been rejected, the following things occur:</span></span>
 
-- <span data-ttu-id="de08a-145">På **fliken** Kontrakt ändras statusen i kontraktskortet till **Avvisad**.</span><span class="sxs-lookup"><span data-stu-id="de08a-145">On the **Contracts** tab, the status in the contract card will change to **Rejected**.</span></span>
+- <span data-ttu-id="c5a53-145">På **fliken** Kontrakt ändras statusen i kontraktskortet till **Avvisad**.</span><span class="sxs-lookup"><span data-stu-id="c5a53-145">On the **Contracts** tab, the status in the contract card will change to **Rejected**.</span></span>
 
    ![Kortstatus avvisades.](../media/content-understanding/rejected-contracts-tab.png)
 
-- <span data-ttu-id="de08a-147">I flödet checkar du ut kontraktsfilen, ändrar status till **Avvisat** och checkar sedan in filen igen.</span><span class="sxs-lookup"><span data-stu-id="de08a-147">In your flow, you check out the contract file, change the status to **Rejected**, and then check the file back in.</span></span>
+- <span data-ttu-id="c5a53-147">I flödet checkar du ut kontraktsfilen, ändrar status till **Avvisat** och checkar sedan in filen igen.</span><span class="sxs-lookup"><span data-stu-id="c5a53-147">In your flow, you check out the contract file, change the status to **Rejected**, and then check the file back in.</span></span>
 
    ![Flow status avvisades.](../media/content-understanding/reject-flow.png)
 
-- <span data-ttu-id="de08a-149">I flödet skapar du ett adaptivt kort som säger att avtalet har avvisats.</span><span class="sxs-lookup"><span data-stu-id="de08a-149">In your flow, you create an adaptive card stating that the contract has been rejected.</span></span>
+- <span data-ttu-id="c5a53-149">I flödet skapar du ett adaptivt kort som säger att avtalet har avvisats.</span><span class="sxs-lookup"><span data-stu-id="c5a53-149">In your flow, you create an adaptive card stating that the contract has been rejected.</span></span>
 
    ![Flow status avvisades.](../media/content-understanding/reject-flow-item.png)
 
-<span data-ttu-id="de08a-151">Följande kod är det JSON som används för det här steget i Power Automate flöde.</span><span class="sxs-lookup"><span data-stu-id="de08a-151">The following code is the JSON used for this step in the Power Automate flow.</span></span>
+<span data-ttu-id="c5a53-151">Följande kod är det JSON som används för det här steget i Power Automate flöde.</span><span class="sxs-lookup"><span data-stu-id="c5a53-151">The following code is the JSON used for this step in the Power Automate flow.</span></span>
 
 ```JSON
 { 
@@ -336,6 +336,6 @@ ms.locfileid: "52636260"
 }
 ```
 
-- <span data-ttu-id="de08a-152">Kortet publiceras i kanalen Kontraktshantering.</span><span class="sxs-lookup"><span data-stu-id="de08a-152">The card is posted in the Contract Management channel.</span></span>
+- <span data-ttu-id="c5a53-152">Kortet publiceras i kanalen Kontraktshantering.</span><span class="sxs-lookup"><span data-stu-id="c5a53-152">The card is posted in the Contract Management channel.</span></span>
 
    ![Flow adaptivt kort att avvisa.](../media/content-understanding/rejected.png)

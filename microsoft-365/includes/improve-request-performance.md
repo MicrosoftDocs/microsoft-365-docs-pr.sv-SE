@@ -22,7 +22,7 @@ ms.lasthandoff: 03/23/2021
 ms.locfileid: "51166754"
 ---
 >[!TIP]
-><span data-ttu-id="4cd18-104">För bättre prestanda kan du använda servern närmare din geografiska plats:</span><span class="sxs-lookup"><span data-stu-id="4cd18-104">For better performance, you can use server closer to your geo location:</span></span>
-> - <span data-ttu-id="4cd18-105">api-us.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="4cd18-105">api-us.securitycenter.microsoft.com</span></span>
-> - <span data-ttu-id="4cd18-106">api-eu.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="4cd18-106">api-eu.securitycenter.microsoft.com</span></span>
-> - <span data-ttu-id="4cd18-107">api-uk.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="4cd18-107">api-uk.securitycenter.microsoft.com</span></span>
+><span data-ttu-id="bd8a8-104">För bättre prestanda kan du använda servern närmare din geografiska plats:</span><span class="sxs-lookup"><span data-stu-id="bd8a8-104">For better performance, you can use server closer to your geo location:</span></span>
+> - <span data-ttu-id="bd8a8-105">api-us.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="bd8a8-105">api-us.securitycenter.microsoft.com</span></span>
+> - <span data-ttu-id="bd8a8-106">api-eu.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="bd8a8-106">api-eu.securitycenter.microsoft.com</span></span>
+> - <span data-ttu-id="bd8a8-107">api-uk.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="bd8a8-107">api-uk.securitycenter.microsoft.com</span></span>

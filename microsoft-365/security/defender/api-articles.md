@@ -27,19 +27,19 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935755"
 ---
-# <a name="other-security-and-threat-protection-apis"></a><span data-ttu-id="a60f0-104">Andra API:er för skydd mot säkerhet och hot</span><span class="sxs-lookup"><span data-stu-id="a60f0-104">Other security and threat protection APIs</span></span>
+# <a name="other-security-and-threat-protection-apis"></a><span data-ttu-id="dd97c-104">Andra API:er för skydd mot säkerhet och hot</span><span class="sxs-lookup"><span data-stu-id="dd97c-104">Other security and threat protection APIs</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="a60f0-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="a60f0-105">**Applies to:**</span></span>
+<span data-ttu-id="dd97c-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="dd97c-105">**Applies to:**</span></span>
 
-- <span data-ttu-id="a60f0-106">Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="a60f0-106">Microsoft 365 Defender API</span></span>
+- <span data-ttu-id="dd97c-106">Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="dd97c-106">Microsoft 365 Defender API</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="a60f0-107">En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt.</span><span class="sxs-lookup"><span data-stu-id="a60f0-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="a60f0-108">Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.</span><span class="sxs-lookup"><span data-stu-id="a60f0-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> <span data-ttu-id="dd97c-107">En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt.</span><span class="sxs-lookup"><span data-stu-id="dd97c-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="dd97c-108">Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.</span><span class="sxs-lookup"><span data-stu-id="dd97c-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
-<span data-ttu-id="a60f0-109">Följande resurser ger mer information om API:er som är tillgängliga för andra microsoft-säkerhetslösningar utöver Microsoft 365 Defender API.</span><span class="sxs-lookup"><span data-stu-id="a60f0-109">The following resources provide more information about APIs available for other Microsoft security solutions, beyond the Microsoft 365 Defender API.</span></span>
+<span data-ttu-id="dd97c-109">Följande resurser ger mer information om API:er som är tillgängliga för andra microsoft-säkerhetslösningar utöver det Microsoft 365 Defender API.</span><span class="sxs-lookup"><span data-stu-id="dd97c-109">The following resources provide more information about APIs available for other Microsoft security solutions, beyond the Microsoft 365 Defender API.</span></span>
 
-- [<span data-ttu-id="a60f0-110">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="a60f0-110">Microsoft Defender for Endpoint</span></span>](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
-- [<span data-ttu-id="a60f0-111">Microsoft Defender för Office 365</span><span class="sxs-lookup"><span data-stu-id="a60f0-111">Microsoft Defender for Office 365</span></span>](/office/office-365-management-api/)
-- [<span data-ttu-id="a60f0-112">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="a60f0-112">Microsoft Cloud App Security</span></span>](/cloud-app-security/api-introduction)
+- [<span data-ttu-id="dd97c-110">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="dd97c-110">Microsoft Defender for Endpoint</span></span>](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
+- [<span data-ttu-id="dd97c-111">Microsoft Defender för Office 365</span><span class="sxs-lookup"><span data-stu-id="dd97c-111">Microsoft Defender for Office 365</span></span>](/office/office-365-management-api/)
+- [<span data-ttu-id="dd97c-112">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="dd97c-112">Microsoft Cloud App Security</span></span>](/cloud-app-security/api-introduction)
