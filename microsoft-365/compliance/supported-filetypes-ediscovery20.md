@@ -61,7 +61,7 @@ Advanced eDiscovery har stöd för många filtyper på många olika nivåer. Sup
 |Mime-typ |Filidentifiering |Metadata-extrahering |Texttextrahering |Inbyggt visningsprogram |Kommentera visningsprogram | Möjliga tillägg |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/vnd.ms-outlook | Ja | Ja | Ja | Ja | Ja | MSG |
-|meddelande/rfc822 | Ja | Ja | Ja | Ja | Ja | EML |
+|meddelande/rfc822 | Ja | Ja | Ja | Ja | Ja | .eml |
 |text/visitkort-kontakt | Ja | Ja | Ja | Ja | Ja | VCF |
 ||||||||
 

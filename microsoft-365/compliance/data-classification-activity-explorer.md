@@ -46,14 +46,14 @@ Det finns över 30 olika filter att använda och några är:
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-Varje konto som har åtkomst till och använder dataklassificering måste ha en tilldelad licens från någon av dessa prenumerationer:
+Varje konto som har åtkomst till och använder dataklassificering, måste ha en tilldelad licens från någon av dessa prenumerationer:
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - Tillägget Advanced Compliance (E5)
 - Tillägget Advanced Threat Intelligence (E5)
-- Microsoft 365 E5/A5 informationsskydd & styrning
-- Microsoft 365 E5/A5 efterlevnad
+- Microsoft 365 E5/A5 – Informationsskydd och styrning
+- Microsoft 365 E5/A5 – Efterlevnad
 
 ### <a name="permissions"></a>Behörigheter
 
@@ -63,7 +63,7 @@ Varje konto som har åtkomst till och använder dataklassificering måste ha en 
 > [!IMPORTANT]
 > Access to Activity explorer via the Security reader or Device Management role groups or other has been removed-->
 
-**Microsoft 365 rollgrupper**
+**Microsoft 365-rollgrupper**
 
 - Global administratör
 - Efterlevnadsadministratör
@@ -112,7 +112,7 @@ Värdet av att förstå vilka åtgärder som vidtas med känsligt etikettinnehå
 
 ## <a name="see-also"></a>Se även
 
-- [Lär dig mer om känslighetsetiketter](sensitivity-labels.md)
-- [Läs mer om bevarandeprinciper och bevarandeetiketter](retention.md)
-- [Läs mer om typer av känslig information](sensitive-information-type-learn-about.md)
-- [Läs mer om dataklassificering](data-classification-overview.md)
+- [Mer information om känslighetsetiketter](sensitivity-labels.md)
+- [Mer information om kvarhållningsprinciper och kvarhållningsetiketter](retention.md)
+- [Mer information om typer av känslig information](sensitive-information-type-learn-about.md)
+- [Mer information om dataklassificering](data-classification-overview.md)

@@ -142,7 +142,7 @@ Om du vill identifiera innehåll med den egenskapen överallt kanske du manuellt
 > [!CAUTION]
 > När du indexerar om en webbplats kan det bli en enorm belastning på söksystemet. Indexera inte om webbplatsen om det inte är absolut nödvändigt i ditt scenario.
 
-Mer information finns i [Manuellt begära crawlning och omindexering av en webbplats, ett bibliotek eller en lista.](/sharepoint/crawl-site-content)
+Mer information finns i [Manuellt begära crawlning och omindexering av en webbplats, ett bibliotek eller en lista](/sharepoint/crawl-site-content).
 
 ### <a name="reindex-a-site-optional"></a>Indexera om en webbplats (valfritt)
 

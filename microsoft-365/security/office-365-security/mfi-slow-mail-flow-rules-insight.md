@@ -47,7 +47,7 @@ Du kan använda det här meddelandet för att identifiera och finjustera e-postf
 
 När du klickar **på Visa information** om widgeten visas en utfäll tillgänglig meny med mer information:
 
-- **Regel:** Du kan hovra över sammanfattningen för att se alla villkor, undantag och åtgärder för regeln. Du kan klicka på sammanfattningen för att redigera regeln i Administrationscenter för Exchange (EAC).
+- **Regel:** Du kan hovra över sammanfattningen för att se alla villkor, undantag och åtgärder för regeln. Du kan klicka på sammanfattningen för att redigera regeln i Exchange (EAC).
 - **Antal meddelanden som utvärderats**  : Du kan [](message-trace-scc.md) klicka på Visa exempelmeddelanden för att visa meddelandespårningsresultaten för ett exempel på meddelanden som påverkades av regeln.
 - **Genomsnittlig tid för varje meddelande**
 - **Mediantid i ett meddelande**: Det mittersta värdet som separerar den övre halvan från den nedre halvan av tidsdata.

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Läs mer om att använda Exact Data Match-schemat och guiden för typ av känslig information.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9d6f870239b963ee7483b9f08e93e40b10f4f0b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5fdf289c403d8c09342a1eac1434c4219bb7b13c
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878010"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861665"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Använd Exact Data Match-schemat och guiden för typ av känslig information
 
@@ -42,7 +42,7 @@ steg i [del 1: Konfigurera EDM-baserad klassificering](create-custom-sensitive-i
 
 1. Bekanta dig med stegen för att skapa en anpassad typ av känslig information med EDM:s [arbetsflöde i korthet](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).
 
-2. Utför stegen i Spara [känsliga data i .csv- eller .tsv-format.](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)
+2. Utför stegen i avsnittet [Spara känsliga data i .csv-format](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format).
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Använda Exact Data Match-schemat och mönsterguiden för typ av känslig information
 

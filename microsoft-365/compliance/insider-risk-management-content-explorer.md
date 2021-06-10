@@ -1,7 +1,7 @@
 ---
 title: Insider-riskhantering – Innehållsutforskaren
 description: Läs mer om Insider-riskhantering Innehållsutforskaren i Microsoft 365
-keywords: Microsoft 365, insider-riskhantering, riskhantering, efterlevnad
+keywords: Microsoft 365, hantering av insiderrisk, riskhantering, efterlevnad
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article

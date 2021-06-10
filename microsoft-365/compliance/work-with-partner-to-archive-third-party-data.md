@@ -202,7 +202,7 @@ Följande avsnitt innehåller de Microsoft-partner (och datakällor från tredje
     
 - Salesforce Chatter
 
-- Skype för företag online
+- Skype för företag – Online
     
 - Skype för företag, versionerna 2007 R2–2016 (lokalt)
     
@@ -502,7 +502,7 @@ Här är stegen för att skapa och konfigurera en datapostlåda från tredje par
     
       - [Placera en postlåda i Bevarande av juridiska skäl](./create-a-litigation-hold.md)
     
-      - [Läs mer om bevarandeprinciper och bevarandeetiketter](retention.md)
+      - [Mer information om kvarhållningsprinciper och kvarhållningsetiketter](retention.md)
     
     - Aktivera granskningsloggning för postlådor för ägare, ombud och administratörsåtkomst till tredjepartsdatapostlådan. se [Aktivera granskning av postlåda.](enable-mailbox-auditing.md) Det här gör att du kan granska all aktivitet som utförts av en användare som har åtkomst till tredje parts datapostlåda.
 
@@ -516,7 +516,7 @@ Nästa steg är att konfigurera användarnas postlådor så att data från tredj
     
     - [Placera en postlåda i Bevarande av juridiska skäl](./create-a-litigation-hold.md)
     
-    - [Läs mer om bevarandeprinciper och bevarandeetiketter](retention.md)
+    - [Mer information om kvarhållningsprinciper och kvarhållningsetiketter](retention.md)
     
     Som tidigare nämnts kan du ange en varaktighet för hur länge objekt från den tredje partens datakälla ska behållas när du placerar postlådor på en plats, eller så kan du välja att behålla objekt på obestämd tid.
 

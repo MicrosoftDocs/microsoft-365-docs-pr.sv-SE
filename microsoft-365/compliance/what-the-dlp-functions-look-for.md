@@ -36,178 +36,178 @@ I den här artikeln förklaras vad de här funktionerna söker efter, för att h
 
 |funktionsnamn  |funktionsåtgärd  |är en validerare|
 |---------|---------|---------|
-|Func_Argentina_Unique_Tax_Key|identifierar och verifierar Argentinas unika skattenyckel|Nej|
-|Func_aba_routing|identifierar ABA-routningsnummer| Ja|
-|Func_alabama_drivers_license_number|identifierar Alabama-drivrutinens licensnummer|Nej|
-|Func_alaska_delaware_oregon_drivers_license_number|identifierar Alaska, Delaware, Oregon-drivrutinens registreringsnummer|Nej|
-|Func_alaska_drivers_license_number|identifierar Alaska-drivrutinens licensnummer|Nej|
-|Func_alberta_drivers_license_number|identifierar Alberta driver's license number|Nej|
-|Func_Argentina_Unique_Tax_Key|identifierar Argentinas unika skattenyckel|Nej|
-|Func_arizona_drivers_license_number|identifierar Arizona-drivrutinens licensnummer|Nej|
-|Func_arkansas_drivers_license_number|identifierar Arkansas-drivrutinens licensnummer|Nej|
-|Func_australian_business_number|identifierar Australiens företagsnummer|Nej|
-|Func_Australian_Company_Number|identifierar Australiens företagsnummer|Nej|
-|Func_australian_medical_account_number|identifierar Australiens medicinska kontonummer|Nej|
-|Func_australian_tax_file_number|identifierar Australiens skattefilnummer|Ja|
-|Func_austria_eu_ssn_or_equivalent|identifierar socialförsäkringsnumret för Österrike|Nej|
-|Func_austria_eu_tax_file_number|identifierar Österrikes skattefilnummer|Nej|
-|Func_Austria_Value_Added_Tax|identifierar Österrikes moms|Nej|
-|Func_belgium_national_number|identifierar belgiens nationella nummer|Nej|
-|Func_belgium_value_added_tax_number|identifierar Belgiens momsnummer|Nej|
-|Func_brazil_cnpj|identifierar brasiliens juridiska personnummer (CNPJ)|Ja|
-|Func_brazil_cpf|identifierar Brasiliens CPF|Ja|
-|Func_brazil_rg|identifierar Brasiliens RG|Nej|
-|Func_british_columbia_drivers_license_number|identifierar British Columbia driver's license number|Nej|
-|Func_bulgaria_eu_national_id_card|identifierar Bulgariens enhetliga civilnummer|Nej|
-|Func_california_drivers_license_number|identifierar Kaliforniens drivrutinsnummer|Nej|
-|Func_canadian_sin|identifierar Kanada sin|Ja|
-|Func_chile_id_card|identifierar Chile ID-kort|Nej|
-|Func_china_resident_id|identifierar boende ID i Kina|Nej|
-|Func_colorado_drivers_license_number|identifierar Colorado driver's license number|Nej|
-|Func_connecticut_drivers_license_number|identifierar Connecticut-drivrutinens licensnummer|Nej|
-|Func_credit_card|identifierar kreditkort|Ja|Nej|
-|Func_croatia_id_card|identifierar Kroatiens ID-kort|Nej|
-|Func_croatia_oib_number|identifierar Kroatiens OIB-nummer|Nej|
-|Func_cyprus_eu_tax_file_number|identifierar cyperns skattefilnummer|Nej|
-|Func_czech_id_card|identifierar tjeckiska ID-kort|Nej|
-|Func_czech_id_card_new_format|identifierar tjeckiska ID-kort i nytt format|Nej|
-|Func_dea_number|identifierar DEA-nummer|Ja|
-|Func_denmark_eu_tax_file_number|detects Danmark personal identification number|Nej|
-|Func_district_of_columbia_drivers_license_number|identifierar District of Columbia driver's license number|Nej|
-|Func_estonia_eu_national_id_card|identifierar Estland Personal Identification Code|Nej|
-|Func_eu_debit_card|identifierar EU-betalkort|Nej|
-|Func_finnish_national_id|identifierar finska nationella ID|Nej|
-|Func_florida_drivers_license_number|identifierar Florida-drivrutinens licensnummer|Nej|
-|Func_florida_maryland_michigan_minnesota_drivers_license_number|identifierar Florida, Maryland, Michigan, Minnesota driver's license number|Nej|
-|Func_formatted_itin|identifierar formaterad US ITIN|Ja|
-|Func_fr_insee|identifierar Frankrike INSEE|Nej|
-|Func_fr_passport|identifierar Frankrike-pass|Nej|
-|Func_france_eu_tax_file_number|identifierar Frankrikes skattenummer|Nej|
-|Func_france_value_added_tax_number|detects France value added tax number|Nej|
-|Func_french_drivers_license|identifierar franska körkort|Nej|
-|Func_french_insee|identifierar franska INSEE|Nej|
-|Func_georgia_drivers_license_number|identifierar Georgias körkortsnummer|Nej|
-|Func_german_drivers_license|identifierar Tysklands körkort|Nej|
-|Func_german_passport|identifierar Tyskland-passet|Nej|
-|Func_german_passport_data|identifierar Tyskland-passet|Nej|
-|Func_germany_eu_tax_file_number|identifierar skattefilnumret för Tyskland|Nej|
-|Func_germany_value_added_tax_number|identifierar momsnumret för Tyskland|Nej|
-|Func_greece_eu_ssn|identifierar Grekland sin (AMKA)|Nej|
-|Func_hawaii_drivers_license_number|identifierar Hawaii-drivrutinens licensnummer|Nej|
-|Func_hong_kong_id_card |identifierar Hongkong-ID-kort|Nej|
-|Func_hungarian_value_added_tax_number|identifierar Ungerns momsnummer|Nej|
-|Func_hungary_eu_national_id_card|identifierar Ungerns personliga ID-nummer|Nej|
-|Func_hungary_eu_ssn_or_equivalent|identifierar Ungerns personnummer|Nej|
-|Func_hungary_eu_tax_file_number|identifierar Ungerns skattefilnummer|Nej|
-|Func_iban|identifierar IBAN|Ja|
-|Func_idaho_drivers_license_number|identifierar Idaho-drivrutinens licensnummer|Nej|
-|Func_illinois_drivers_license_number|identifierar Illinois driver's license number|Nej|
-|Func_india_aadhaar|identifierar Indien aadhaar|Ja|
-|Func_indiana_drivers_license_number|identifierar Indiana-drivrutinens licensnummer|Nej|
-|Func_iowa_drivers_license_number|identifierar Iowa-drivrutinens licensnummer|Nej|
-|Func_ireland_pps|identifierar Irland PPS|Nej|
-|Func_israeli_national_id_number|identifierar Israels nationella ID-nummer|Nej|
-|Func_italy_eu_national_id_card |identifierar italiens räkenskapskod|Nej|
-|Func_italy_value_added_tax_number|identifierar italiens momsnummer|Nej|
-|Func_japanese_my_number_corporate|identifierar Japan my number corporate|Ja|
-|Func_japanese_my_number_personal|identifierar min personliga japanska siffra|Ja|
-|Func_jp_bank_account|identifierar det japanska bankkontot|Nej|
-|Func_jp_bank_account_branch_code|identifierar banköverföringskod för japanska bankkontor|Nej|
-|Func_jp_drivers_license_number|identifierar Japans körkortsnummer|Nej|
-|Func_jp_passport|identifierar Japan-pass|Nej|
-|Func_jp_resident_registration_number|identifierar registreringsnumret för japaninvånare|Nej|
-|Func_jp_sin|identifierar Japan SIN|Nej|
-|Func_jp_sin_pre_1997|identifierar Japan sin före 1997|Nej|
-|Func_kansas_drivers_license_number|identifierar Kansas driver's license number|Nej|
-|Func_kentucky_drivers_license_number|identifierar Kentucky-drivrutinens licensnummer|Nej|
-|Func_kentucky_massachusetts_virginia_drivers_license_number|detects Kentucky, Massachusetts, Virginia driver's license number|Nej|
-|Func_latvia_eu_national_id_card|identifierar personlig kod för Lettland|Nej|
-|Func_lithuania_eu_tax_file_number|identifierar den personliga Litauen-koden|Nej|
-|Func_louisiana_drivers_license_number|identifierar Louisiana driver's license number|Nej|
-|Func_luxemburg_eu_tax_file_number|identifierar Luxemburgs nationella identifikationsnummer (naturliga personer)|Nej|
-|Func_luxemburg_eu_tax_file_number_non_natural|identifierar Luxemburgs nationella identifikationsnummer (icke-naturliga personer)|Nej|
-|Func_maine_drivers_license_number|identifierar Maine-drivrutinens licensnummer|Nej|
-|Func_manitoba_drivers_license_number|identifierar drivrutinsnumret för Manitoba|Nej|
-|Func_maryland_drivers_license_number|identifierar Maryland-drivrutinens licensnummer|Nej|
-|Func_massachusetts_drivers_license_number|identifierar Massachusetts driver's license number|Nej|
-|Func_mexico_population_registry_code|identifierar den mexikoa registerkoden för population|Nej|
-|Func_michigan_minnesota_drivers_license_number|detects Michigan, Minnesota driver's license number|Nej|
-|Func_minnesota_drivers_license_number|identifierar Minnesota-drivrutinens licensnummer|Nej|
-|Func_mississippi_oklahoma_drivers_license_number|identifierar Mississippi, Oklahoma-drivrutinens licensnummer|Nej|
-|Func_missouri_drivers_license_number|identifierar Missouri-drivrutinens licensnummer|Nej|
-|Func_montana_drivers_license_number|identifierar Montana-drivrutinens licensnummer|Nej|
-|Func_nebraska_drivers_license_number|identifierar Nebraska-drivrutinens licensnummer|Nej|
-|Func_netherlands_bsn|identifierar nederländska BSN|Nej|
-|Func_netherlands_eu_tax_file_number|identifierar det nederländska skattefilnumret|Nej|
-|Func_netherlands_value_added_tax_number|identifierar nederländska momsnummer|Nej|
-|Func_nevada_drivers_license_number|identifierar Nevada-drivrutinens licensnummer|Nej|
-|Func_new_brunswick_drivers_license_number|identifierar New Brunswick-drivrutinens licensnummer|Nej|
-|Func_new_hampshire_drivers_license_number|identifierar New Hampshire-drivrutinens licensnummer|Nej|
-|Func_new_jersey_drivers_license_number |identifierar drivrutinens licensnummer i New Jersey|Nej|
-|Func_new_mexico_drivers_license_number |identifierar New Mexico driver's license number|Nej|
-|Func_new_york_drivers_license_number   |identifierar drivrutinsnumret för New York|Nej|
-|Func_new_zealand_bank_account_number   |identifierar Nya Zeelands bankkontonummer|Nej|
-|Func_new_zealand_inland_revenue_number |identifierar Nya Zeelands inåtelsnummer|Nej|
-|Func_new_zealand_ministry_of_health_number|identifierar Nya Zeeland på hälsonummer|Nej|
-|Func_newfoundland_labrador_drivers_license_number|identifierar Newfoundland Labrador-drivrutinens licensnummer|Nej|
-|Func_newzealand_driver_license_number  |identifierar Nya Zeeland-drivrutinslicensnummer|Nej|
-|Func_newzealand_social_welfare_number  |identifierar Nya Zeelands sociala nätverk-nummer|Nej|
-|Func_north_carolina_drivers_license_number|identifierar North Carolina-drivrutinens licensnummer|Nej|
-|Func_north_dakota_drivers_license_number|identifierar North Dakota-drivrutinens licensnummer|Nej|
-|Func_norway_id_number  |identifierar Norges ID-nummer|Nej|
-|Func_nova_scotia_drivers_license_number|identifierar Nova Scotia-drivrutinens licensnummer|Nej|
-|Func_ohio_drivers_license_number   |identifierar Ohio-drivrutinens licensnummer|Nej|
-|Func_ontario_drivers_license_number    |identifierar Ontario körkortsnummer|Nej|
-|Func_pennsylvania_drivers_license_number|identifierar Pennsylvania-drivrutinens licensnummer|Nej|
-|Func_pesel_identification_number   |identifierar Polens National ID (PESEL)|Nej|
-|Func_poland_eu_tax_file_number |identifierar Polens skattefilnummer|Nej|
-|Func_polish_national_id    |identifierar Polens identitetskort|Nej|
-|Func_polish_passport_number    |upptäcker polska passnummer|Nej|
-|Func_polish_regon_number   |identifierar polska REGON-nummer|Nej|
-|Func_portugal_eu_tax_file_number|identifierar Portugals skatteidentifieringsnummer|Nej|
-|Func_prince_edward_island_drivers_license_number|identifierar Prince Edward Island driver's license number|Nej|
-|Func_quebec_drivers_license_number |identifierar Quebecs körkortsnummer|Nej|
-|Func_randomized_formatted_ssn  |identifierar slumpmässigt formaterade US SSN|Ja|
-|Func_randomized_unformatted_ssn|identifierar slumpmässigt oformaterade US SSN|Ja|
-|Func_rhode_island_drivers_license_number|identifierar Rhode Island driver's license number|Nej|
-|Func_romania_eu_national_id_card   |identifierar Rumäniens personliga numeriska kod (CNP)|Nej|
-|Func_saskatchewan_drivers_license_number|identifierar Saskatchewan-drivrutinens licensnummer|Nej|
-|Func_slovakia_eu_national_id_card  |identifierar personligt nummer för Slovakien|Nej|
-|Func_slovenia_eu_national_id_card  |identifierar Sloveniens unika huvudpersonnummer|Nej|
-|Func_slovenia_eu_tax_file_number   |identifierar Sloveniens skattenummer|Nej|
-|Func_south_africa_identification_number|identifierar Sydafrikas ID-nummer|Ja|
-|Func_south_carolina_drivers_license_number|identifierar South Carolina-drivrutinens licensnummer|Nej|
-|Func_south_dakota_drivers_license_number|identifierar South Dakota-drivrutinens licensnummer|Nej|
-|Func_south_korea_resident_number   |identifierar sydkoreanska boendenummer|Nej|
-|Func_spain_eu_DL_and_NI_number_citizen |identifierar Spaniens DL- och NI-nummer för medborgare|Nej|
-|Func_spain_eu_DL_and_NI_number_foreigner|identifierar Spaniens DL- och NI-nummer foreigner|Nej|
-|Func_spain_eu_driver är s_license_number  |identifierar Spaniens körkortsnummer|Nej|
-|Func_spain_eu_tax_file_number  |identifierar spaniens skattefilnummer|Nej|
-|Func_spanish_social_security_number|identifierar det spanska personnumret|Nej|
-|Func_ssn   |Funktion för att identifiera icke-slumpvis formaterade US SSN|Ja|
-|Func_sweden_eu_tax_file_number|identifierar skattefilnummer för Sverige|Nej|
-|Func_swedish_national_identifier|identifierar svenska nationella identifierare|Ja|
-|Func_swiss_social_security_number_ahv|identifierar det schweiziska personnumret AHV|Nej|
-|Func_taiwanese_national_id |identifierar taiwanesiska nationella ID|Nej|
-|Func_tennessee_drivers_license_number|identifierar Tennessee-drivrutinens licensnummer|Nej|
-|Func_texas_drivers_license_number  |identifierar driver's license number i Texas|Nej|
-|Func_Thai_Citizen_Id   |identifierar thailändska,id för medborgare|Nej|
-|Func_Turkish_National_Id|identifierar turkiska national-ID|Ja|
-|Func_uk_drivers_license|identifierar uk driver's license|Nej|
-|Func_uk_eu_tax_file_number|identifierar ett unikt taxpayer-nummer i Storbritannien|Nej|
-|Func_uk_nhs_number |identifierar UK NHS-nummer|Ja|
-|Func_uk_nino   |identifierar brittisk NINO|Nej|
-|Func_unformatted_canadian_sin|identifierar oformaterad kanadensisk SIN|Nej|
-|Func_unformatted_itin  |identifierar oformaterade amerikanska ITIN|Ja|
-|Func_unformatted_ssn   |identifierar icke-slumpmässigt oformaterade US SSN|Ja|
-|Func_usa_uk_passport   |identifierar USA- och Storbritannien-pass|Ja|
-|Func_utah_drivers_license_number|identifierar Utah-drivrutinens licensnummer|Nej|
-|Func_vermont_drivers_license_number|identifierar Vermont-drivrutinens licensnummer|Nej|
-|Func_virginia_drivers_license_number|identifierar Virginia driver's license number|Nej|
-|Func_washington_drivers_license_number|identifierar Washington Driver's license number|Nej|
-|Func_west_virginia_drivers_license_number|identifierar West Virginia-drivrutinens licensnummer|Nej|
-|Func_wisconsin_drivers_license_number  |identifierar Wisconsin-drivrutinens licensnummer|Nej|
-|Func_wyoming_drivers_license_number    |identifierar Wyoming-drivrutinens licensnummer|Nej|
+|Func_Argentina_Unique_Tax_Key|identifierar och verifierar Argentinas unika skattenyckel|nej|
+|Func_aba_routing|identifierar ABA-routningsnummer| ja|
+|Func_alabama_drivers_license_number|identifierar Alabama-drivrutinens licensnummer|nej|
+|Func_alaska_delaware_oregon_drivers_license_number|identifierar Alaska, Delaware, Oregon-drivrutinens registreringsnummer|nej|
+|Func_alaska_drivers_license_number|identifierar Alaska-drivrutinens licensnummer|nej|
+|Func_alberta_drivers_license_number|identifierar Alberta driver's license number|nej|
+|Func_Argentina_Unique_Tax_Key|identifierar Argentinas unika skattenyckel|nej|
+|Func_arizona_drivers_license_number|identifierar Arizona-drivrutinens licensnummer|nej|
+|Func_arkansas_drivers_license_number|identifierar Arkansas-drivrutinens licensnummer|nej|
+|Func_australian_business_number|identifierar Australiens företagsnummer|nej|
+|Func_Australian_Company_Number|identifierar Australiens företagsnummer|nej|
+|Func_australian_medical_account_number|identifierar Australiens medicinska kontonummer|nej|
+|Func_australian_tax_file_number|identifierar Australiens skattefilnummer|ja|
+|Func_austria_eu_ssn_or_equivalent|identifierar socialförsäkringsnumret för Österrike|nej|
+|Func_austria_eu_tax_file_number|identifierar Österrikes skattefilnummer|nej|
+|Func_Austria_Value_Added_Tax|identifierar Österrikes moms|nej|
+|Func_belgium_national_number|identifierar belgiens nationella nummer|nej|
+|Func_belgium_value_added_tax_number|identifierar Belgiens momsnummer|nej|
+|Func_brazil_cnpj|identifierar brasiliens juridiska personnummer (CNPJ)|ja|
+|Func_brazil_cpf|identifierar Brasiliens CPF|ja|
+|Func_brazil_rg|identifierar Brasiliens RG|nej|
+|Func_british_columbia_drivers_license_number|identifierar British Columbia driver's license number|nej|
+|Func_bulgaria_eu_national_id_card|identifierar Bulgariens enhetliga civilnummer|nej|
+|Func_california_drivers_license_number|identifierar Kaliforniens drivrutinsnummer|nej|
+|Func_canadian_sin|identifierar Kanada sin|ja|
+|Func_chile_id_card|identifierar Chile ID-kort|nej|
+|Func_china_resident_id|identifierar boende ID i Kina|nej|
+|Func_colorado_drivers_license_number|identifierar Colorado driver's license number|nej|
+|Func_connecticut_drivers_license_number|identifierar Connecticut-drivrutinens licensnummer|nej|
+|Func_credit_card|identifierar kreditkort|ja|nej|
+|Func_croatia_id_card|identifierar Kroatiens ID-kort|nej|
+|Func_croatia_oib_number|identifierar Kroatiens OIB-nummer|nej|
+|Func_cyprus_eu_tax_file_number|identifierar cyperns skattefilnummer|nej|
+|Func_czech_id_card|identifierar tjeckiska ID-kort|nej|
+|Func_czech_id_card_new_format|identifierar tjeckiska ID-kort i nytt format|nej|
+|Func_dea_number|identifierar DEA-nummer|ja|
+|Func_denmark_eu_tax_file_number|detects Danmark personal identification number|nej|
+|Func_district_of_columbia_drivers_license_number|identifierar District of Columbia driver's license number|nej|
+|Func_estonia_eu_national_id_card|identifierar Estland Personal Identification Code|nej|
+|Func_eu_debit_card|identifierar EU-betalkort|nej|
+|Func_finnish_national_id|identifierar finska nationella ID|nej|
+|Func_florida_drivers_license_number|identifierar Florida-drivrutinens licensnummer|nej|
+|Func_florida_maryland_michigan_minnesota_drivers_license_number|identifierar Florida, Maryland, Michigan, Minnesota driver's license number|nej|
+|Func_formatted_itin|identifierar formaterad US ITIN|ja|
+|Func_fr_insee|identifierar Frankrike INSEE|nej|
+|Func_fr_passport|identifierar Frankrike-pass|nej|
+|Func_france_eu_tax_file_number|identifierar Frankrikes skattenummer|nej|
+|Func_france_value_added_tax_number|detects France value added tax number|nej|
+|Func_french_drivers_license|identifierar franska körkort|nej|
+|Func_french_insee|identifierar franska INSEE|nej|
+|Func_georgia_drivers_license_number|identifierar Georgias körkortsnummer|nej|
+|Func_german_drivers_license|identifierar Tysklands körkort|nej|
+|Func_german_passport|identifierar Tyskland-passet|nej|
+|Func_german_passport_data|identifierar Tyskland-passet|nej|
+|Func_germany_eu_tax_file_number|identifierar skattefilnumret för Tyskland|nej|
+|Func_germany_value_added_tax_number|identifierar momsnumret för Tyskland|nej|
+|Func_greece_eu_ssn|identifierar Grekland sin (AMKA)|nej|
+|Func_hawaii_drivers_license_number|identifierar Hawaii-drivrutinens licensnummer|nej|
+|Func_hong_kong_id_card |identifierar Hongkong-ID-kort|nej|
+|Func_hungarian_value_added_tax_number|identifierar Ungerns momsnummer|nej|
+|Func_hungary_eu_national_id_card|identifierar Ungerns personliga ID-nummer|nej|
+|Func_hungary_eu_ssn_or_equivalent|identifierar Ungerns personnummer|nej|
+|Func_hungary_eu_tax_file_number|identifierar Ungerns skattefilnummer|nej|
+|Func_iban|identifierar IBAN|ja|
+|Func_idaho_drivers_license_number|identifierar Idaho-drivrutinens licensnummer|nej|
+|Func_illinois_drivers_license_number|identifierar Illinois driver's license number|nej|
+|Func_india_aadhaar|identifierar Indien aadhaar|ja|
+|Func_indiana_drivers_license_number|identifierar Indiana-drivrutinens licensnummer|nej|
+|Func_iowa_drivers_license_number|identifierar Iowa-drivrutinens licensnummer|nej|
+|Func_ireland_pps|identifierar Irland PPS|nej|
+|Func_israeli_national_id_number|identifierar Israels nationella ID-nummer|nej|
+|Func_italy_eu_national_id_card |identifierar italiens räkenskapskod|nej|
+|Func_italy_value_added_tax_number|identifierar italiens momsnummer|nej|
+|Func_japanese_my_number_corporate|identifierar Japan my number corporate|ja|
+|Func_japanese_my_number_personal|identifierar min personliga japanska siffra|ja|
+|Func_jp_bank_account|identifierar det japanska bankkontot|nej|
+|Func_jp_bank_account_branch_code|identifierar banköverföringskod för japanska bankkontor|nej|
+|Func_jp_drivers_license_number|identifierar Japans körkortsnummer|nej|
+|Func_jp_passport|identifierar Japan-pass|nej|
+|Func_jp_resident_registration_number|identifierar registreringsnumret för japaninvånare|nej|
+|Func_jp_sin|identifierar Japan SIN|nej|
+|Func_jp_sin_pre_1997|identifierar Japan sin före 1997|nej|
+|Func_kansas_drivers_license_number|identifierar Kansas driver's license number|nej|
+|Func_kentucky_drivers_license_number|identifierar Kentucky-drivrutinens licensnummer|nej|
+|Func_kentucky_massachusetts_virginia_drivers_license_number|detects Kentucky, Massachusetts, Virginia driver's license number|nej|
+|Func_latvia_eu_national_id_card|identifierar personlig kod för Lettland|nej|
+|Func_lithuania_eu_tax_file_number|identifierar den personliga Litauen-koden|nej|
+|Func_louisiana_drivers_license_number|identifierar Louisiana driver's license number|nej|
+|Func_luxemburg_eu_tax_file_number|identifierar Luxemburgs nationella identifikationsnummer (naturliga personer)|nej|
+|Func_luxemburg_eu_tax_file_number_non_natural|identifierar Luxemburgs nationella identifikationsnummer (icke-naturliga personer)|nej|
+|Func_maine_drivers_license_number|identifierar Maine-drivrutinens licensnummer|nej|
+|Func_manitoba_drivers_license_number|identifierar drivrutinsnumret för Manitoba|nej|
+|Func_maryland_drivers_license_number|identifierar Maryland-drivrutinens licensnummer|nej|
+|Func_massachusetts_drivers_license_number|identifierar Massachusetts driver's license number|nej|
+|Func_mexico_population_registry_code|identifierar den mexikoa registerkoden för population|nej|
+|Func_michigan_minnesota_drivers_license_number|detects Michigan, Minnesota driver's license number|nej|
+|Func_minnesota_drivers_license_number|identifierar Minnesota-drivrutinens licensnummer|nej|
+|Func_mississippi_oklahoma_drivers_license_number|identifierar Mississippi, Oklahoma-drivrutinens licensnummer|nej|
+|Func_missouri_drivers_license_number|identifierar Missouri-drivrutinens licensnummer|nej|
+|Func_montana_drivers_license_number|identifierar Montana-drivrutinens licensnummer|nej|
+|Func_nebraska_drivers_license_number|identifierar Nebraska-drivrutinens licensnummer|nej|
+|Func_netherlands_bsn|identifierar nederländska BSN|nej|
+|Func_netherlands_eu_tax_file_number|identifierar det nederländska skattefilnumret|nej|
+|Func_netherlands_value_added_tax_number|identifierar nederländska momsnummer|nej|
+|Func_nevada_drivers_license_number|identifierar Nevada-drivrutinens licensnummer|nej|
+|Func_new_brunswick_drivers_license_number|identifierar New Brunswick-drivrutinens licensnummer|nej|
+|Func_new_hampshire_drivers_license_number|identifierar New Hampshire-drivrutinens licensnummer|nej|
+|Func_new_jersey_drivers_license_number |identifierar drivrutinens licensnummer i New Jersey|nej|
+|Func_new_mexico_drivers_license_number |identifierar New Mexico driver's license number|nej|
+|Func_new_york_drivers_license_number   |identifierar drivrutinsnumret för New York|nej|
+|Func_new_zealand_bank_account_number   |identifierar Nya Zeelands bankkontonummer|nej|
+|Func_new_zealand_inland_revenue_number |identifierar Nya Zeelands inåtelsnummer|nej|
+|Func_new_zealand_ministry_of_health_number|identifierar Nya Zeeland på hälsonummer|nej|
+|Func_newfoundland_labrador_drivers_license_number|identifierar Newfoundland Labrador-drivrutinens licensnummer|nej|
+|Func_newzealand_driver_license_number  |identifierar Nya Zeeland-drivrutinslicensnummer|nej|
+|Func_newzealand_social_welfare_number  |identifierar Nya Zeelands sociala nätverk-nummer|nej|
+|Func_north_carolina_drivers_license_number|identifierar North Carolina-drivrutinens licensnummer|nej|
+|Func_north_dakota_drivers_license_number|identifierar North Dakota-drivrutinens licensnummer|nej|
+|Func_norway_id_number  |identifierar Norges ID-nummer|nej|
+|Func_nova_scotia_drivers_license_number|identifierar Nova Scotia-drivrutinens licensnummer|nej|
+|Func_ohio_drivers_license_number   |identifierar Ohio-drivrutinens licensnummer|nej|
+|Func_ontario_drivers_license_number    |identifierar Ontario körkortsnummer|nej|
+|Func_pennsylvania_drivers_license_number|identifierar Pennsylvania-drivrutinens licensnummer|nej|
+|Func_pesel_identification_number   |identifierar Polens National ID (PESEL)|nej|
+|Func_poland_eu_tax_file_number |identifierar Polens skattefilnummer|nej|
+|Func_polish_national_id    |identifierar Polens identitetskort|nej|
+|Func_polish_passport_number    |upptäcker polska passnummer|nej|
+|Func_polish_regon_number   |identifierar polska REGON-nummer|nej|
+|Func_portugal_eu_tax_file_number|identifierar Portugals skatteidentifieringsnummer|nej|
+|Func_prince_edward_island_drivers_license_number|identifierar Prince Edward Island driver's license number|nej|
+|Func_quebec_drivers_license_number |identifierar Quebecs körkortsnummer|nej|
+|Func_randomized_formatted_ssn  |identifierar slumpmässigt formaterade US SSN|ja|
+|Func_randomized_unformatted_ssn|identifierar slumpmässigt oformaterade US SSN|ja|
+|Func_rhode_island_drivers_license_number|identifierar Rhode Island driver's license number|nej|
+|Func_romania_eu_national_id_card   |identifierar Rumäniens personliga numeriska kod (CNP)|nej|
+|Func_saskatchewan_drivers_license_number|identifierar Saskatchewan-drivrutinens licensnummer|nej|
+|Func_slovakia_eu_national_id_card  |identifierar personligt nummer för Slovakien|nej|
+|Func_slovenia_eu_national_id_card  |identifierar Sloveniens unika huvudpersonnummer|nej|
+|Func_slovenia_eu_tax_file_number   |identifierar Sloveniens skattenummer|nej|
+|Func_south_africa_identification_number|identifierar Sydafrikas ID-nummer|ja|
+|Func_south_carolina_drivers_license_number|identifierar South Carolina-drivrutinens licensnummer|nej|
+|Func_south_dakota_drivers_license_number|identifierar South Dakota-drivrutinens licensnummer|nej|
+|Func_south_korea_resident_number   |identifierar sydkoreanska boendenummer|nej|
+|Func_spain_eu_DL_and_NI_number_citizen |identifierar Spaniens DL- och NI-nummer för medborgare|nej|
+|Func_spain_eu_DL_and_NI_number_foreigner|identifierar Spaniens DL- och NI-nummer foreigner|nej|
+|Func_spain_eu_driver är s_license_number  |identifierar Spaniens körkortsnummer|nej|
+|Func_spain_eu_tax_file_number  |identifierar spaniens skattefilnummer|nej|
+|Func_spanish_social_security_number|identifierar det spanska personnumret|nej|
+|Func_ssn   |Funktion för att identifiera icke-slumpvis formaterade US SSN|ja|
+|Func_sweden_eu_tax_file_number|identifierar skattefilnummer för Sverige|nej|
+|Func_swedish_national_identifier|identifierar svenska nationella identifierare|ja|
+|Func_swiss_social_security_number_ahv|identifierar det schweiziska personnumret AHV|nej|
+|Func_taiwanese_national_id |identifierar taiwanesiska nationella ID|nej|
+|Func_tennessee_drivers_license_number|identifierar Tennessee-drivrutinens licensnummer|nej|
+|Func_texas_drivers_license_number  |identifierar driver's license number i Texas|nej|
+|Func_Thai_Citizen_Id   |identifierar thailändska,id för medborgare|nej|
+|Func_Turkish_National_Id|identifierar turkiska national-ID|ja|
+|Func_uk_drivers_license|identifierar uk driver's license|nej|
+|Func_uk_eu_tax_file_number|identifierar ett unikt taxpayer-nummer i Storbritannien|nej|
+|Func_uk_nhs_number |identifierar UK NHS-nummer|ja|
+|Func_uk_nino   |identifierar brittisk NINO|nej|
+|Func_unformatted_canadian_sin|identifierar oformaterad kanadensisk SIN|nej|
+|Func_unformatted_itin  |identifierar oformaterade amerikanska ITIN|ja|
+|Func_unformatted_ssn   |identifierar icke-slumpmässigt oformaterade US SSN|ja|
+|Func_usa_uk_passport   |identifierar USA- och Storbritannien-pass|ja|
+|Func_utah_drivers_license_number|identifierar Utah-drivrutinens licensnummer|nej|
+|Func_vermont_drivers_license_number|identifierar Vermont-drivrutinens licensnummer|nej|
+|Func_virginia_drivers_license_number|identifierar Virginia driver's license number|nej|
+|Func_washington_drivers_license_number|identifierar Washington Driver's license number|nej|
+|Func_west_virginia_drivers_license_number|identifierar West Virginia-drivrutinens licensnummer|nej|
+|Func_wisconsin_drivers_license_number  |identifierar Wisconsin-drivrutinens licensnummer|nej|
+|Func_wyoming_drivers_license_number    |identifierar Wyoming-drivrutinens licensnummer|nej|
 
 
 ## <a name="func_us_date"></a>Func_us_date

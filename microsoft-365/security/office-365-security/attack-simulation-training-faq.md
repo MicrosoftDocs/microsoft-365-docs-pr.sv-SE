@@ -29,7 +29,7 @@ ms.locfileid: "51207054"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Distributionsöverväganden och vanliga frågor och svar för attacksimulatorträning
 
-Utbildning av attack simulering är nu [allmänt tillgänglig.](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291) Utbildning av attackbedrägerier innebär att Microsoft 365 E5 eller Microsoft Defender för Office 365-organisationer (Office 365 abonnemang 2) kan mäta och hantera social engineering-risker genom att tillåta skapande och hantering av nätfiskebedrägerier som drivs av verkliga, avkodade payloads för nätfiske. Hyper riktad utbildning, levererad i samarbete medNova-säkerhet, hjälper till att förbättra kunskaper och ändra beteende för anställda.
+Utbildning av attack simulering är nu [allmänt tillgänglig.](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291) Utbildning av attackbedrägerier innebär att Microsoft 365 E5 eller Microsoft Defender för Office 365 plan 2-organisationer kan mäta och hantera social engineering-risker genom att tillåta skapande och hantering av nätfiskebedrägerier som drivs av verkliga, avkodade nätfiske payloads. Hyper riktad utbildning, levererad i samarbete medNova-säkerhet, hjälper till att förbättra kunskaper och ändra beteende för anställda.
 
 Mer information om hur du kommer igång med simulering av attack finns i [Komma igång med att använda simulering av attack](attack-simulation-training-get-started.md).
 
@@ -37,15 +37,15 @@ Hela simuleringen har utformats för att vara fri flöden och friktioner, men de
 
 ## <a name="issues-with-end-user-experiences"></a>Problem med slutanvändarupplevelser
 
-### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Url-adresser för nätfiskebedrägerier som blockerats av Google Safe Browsing
+### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Url-adresser för nätfiskebedrägerier som blockerats av Google Valv Surfning
 
-Ett rykte för URL-adresser kan identifiera en eller flera URL:er som används av utbildning av attack simulering som osäker. Googles säkra surfning i Google Chrome blockerar några av de simulerade nätfiske-URL:erna med ett **Deceptive-meddelande i** förväg. Medan vi arbetar med många URL-ryktesleverantörer för att alltid tillåta vår simulerings URL:er, har vi inte alltid fullständig täckning.
+Ett rykte för URL-adresser kan identifiera en eller flera URL:er som används av utbildning av attack simulering som osäker. Med Google Valv i Google Chrome blockeras några av de simulerade nätfiske-URL:erna med ett **Deceptive-meddelande i** förväg. Medan vi arbetar med många URL-ryktesleverantörer för att alltid tillåta vår simulerings URL:er, har vi inte alltid fullständig täckning.
 
 ![Varning om missfallande webbplats i förväg i Google Chrome](../../media/attack-sim-chrome-deceptive-site-message.png)
 
-Observera att detta problem inte påverkar Microsoft Edge.
+Observera att det här problemet inte påverkar Microsoft Edge.
 
-Som en del av planeringsfasen kontrollerar du om URL:en är tillgänglig i de webbläsare som stöds innan du använder URL:en i en nätfiskekampanj. Om URL:erna blockeras av Google Säker surfning följer du [dessa anvisningar](https://support.google.com/chrome/a/answer/7532419) från Google för att tillåta åtkomst till URL:er.
+Som en del av planeringsfasen kontrollerar du om URL:en är tillgänglig i de webbläsare som stöds innan du använder URL:en i en nätfiskekampanj. Om URL:erna blockeras av Google [](https://support.google.com/chrome/a/answer/7532419) Valv surfning följer du dessa anvisningar från Google för att tillåta åtkomst till URL:er.
 
 Se Komma [igång med att använda simulering av](attack-simulation-training-get-started.md) attack för listan över URL:er som för närvarande används av simulering av attack.
 
@@ -72,7 +72,7 @@ Det är möjligt att antalet användare som faktiskt tar emot simuleringsmeddela
 - Gästanvändare.
 - Användare som inte längre är aktiva i Azure Active Directory (Azure AD).
 
-Endast giltiga användare som inte är gästanvändare med en giltig postlåda inkluderas i simuleringar. Om du använder distributionsgrupper eller e-postaktiverade säkerhetsgrupper för att rikta användare kan du använda cmdlet:en [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) i [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) för att visa och verifiera medlemmar i distributionsgrupper.
+Endast giltiga användare som inte är gästanvändare med en giltig postlåda inkluderas i simuleringar. Om du använder distributionsgrupper eller e-postaktiverade säkerhetsgrupper för att rikta användare kan du använda cmdlet:en [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) [i Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) för att visa och validera medlemmar i distributionsgrupper.
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>Problem med utbildningsrapportering om attackspel
 
@@ -124,7 +124,7 @@ Simuleringsrapporter i attackutbildning ger information om användaraktivitet. T
 - Användare som har gett upp sina autentiseringsuppgifter.
 - Användare som har rapporterat meddelandet som nätfiske.
 
-Om meddelanden som användare rapporterat som nätfiske inte har fångats in i simuleringsrapporter om attack simulering kan det finnas en Exchange-e-postflödesregel (kallas även transportregel) som blockerar leveransen av de rapporterade meddelandena till Microsoft. Kontrollera att e-postflödesregler inte blockerar leverans till följande e-postadresser:
+Om meddelanden som användare rapporterat som nätfiske inte har fångats i simuleringsrapporter om attackattacker kan det finnas en Exchange-e-postflödesregel (kallas även transportregel) som blockerar leveransen av de rapporterade meddelandena till Microsoft. Kontrollera att e-postflödesregler inte blockerar leverans till följande e-postadresser:
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
@@ -160,7 +160,7 @@ Med det sagt kan du skapa en egen nyttolast på det språk du väljer med den an
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>F: Hur byter jag till andra språk för administrationsportalen och utbildningsupplevelsen?
 
-S: I Microsoft 365 eller Office 365 är språkkonfigurationen specifik och centraliserad för varje användarkonto. Anvisningar om hur du ändrar språkinställningen finns i Ändra visningsspråk och [tidszon i Microsoft 365 för företag.](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)
+S: Microsoft 365 eller Office 365 är språkkonfigurationen specifik och centraliserad för varje användarkonto. Anvisningar om hur du ändrar språkinställningen finns i [Ändra visningsspråk och tidszon i Microsoft 365 för företag.](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)
 
 Observera att konfigurationsändringen kan ta upp till 30 minuter att synkronisera i alla tjänster.
 

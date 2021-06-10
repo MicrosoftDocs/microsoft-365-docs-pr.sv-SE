@@ -70,7 +70,7 @@ Stegvisa instruktioner för hur du skapar anpassade aviseringsprinciper finns [i
 
 ## <a name="task-5-classify-and-protect-sensitive-data"></a>Uppgift 5: Klassificera och skydda känsliga data
 
-För att få jobbet gjort samarbetar personer i organisationen med andra både inom och utanför organisationen. Det innebär att innehållet inte längre stannar bakom en brandvägg – det kan röra sig överallt, på olika enheter, appar och tjänster. Och när det brusar vill du att det ska göra det på ett säkert och skyddat sätt som uppfyller organisationens affärs- och efterlevnadsprinciper.
+För att få jobbet gjort samarbetar personer i organisationen med andra personer både inom och utanför organisationen. Det här leder till att innehållet inte längre ligger bakom en brandvägg – det kan överföras överallt, på olika enheter och i olika appar och tjänster. När det överförs på det här sättet behöver du se till att det gör det på ett säkert och skyddat sätt som följer organisationens affärs- och efterlevnadsprinciper.
 
 [Med känslighetsetiketter](sensitivity-labels.md) kan du klassificera och skydda organisationens data, samtidigt som du ser till att användarproduktiviteten och möjligheten att samarbeta inte hindras. Använd känslighetsetiketter för att tillämpa kryptering och användningsbegränsningar tillämpa visuella markeringar och skydda information på plattformar och enheter, lokalt och i molnet.
 
@@ -84,7 +84,7 @@ När innehållet omfattas av en bevarandeprincip kan användare fortsätta att r
 
 Du kan snabbt skapa en bevarandeprincip för flera platser i Microsoft 365-miljön, till exempel Exchange-e-post, SharePoint-webbplatser, OneDrive-konton och Microsoft 365 grupper. Det finns inga begränsningar för antalet postlådor eller webbplatser som principen kan inkludera automatiskt. Men om du behöver få fler selektiva kan du göra det genom att konfigurera en bevarandeprincip för specifika platser och inkludera eller exkludera webbplatser eller användare.
 
-Stegvisa instruktioner för hur du konfigurerar en bevarandeprincip finns i [Skapa och konfigurera bevarandeprinciper.](create-retention-policies.md) Om du inte har konfigurerar bevarande i Microsoft 365 finns mer information i [Komma igång med bevarandeprinciper och bevarandeetiketter.](get-started-with-retention.md)
+Stegvisa instruktioner för hur du konfigurerar en bevarandeprincip finns i [Skapa och konfigurera bevarandeprinciper.](create-retention-policies.md) Om du inte är bekant med att konfigurera kvarhållning i Microsoft 365 kan du läsa mer i [Komma igång med kvarhållningsprinciper och kvarhållningsetiketter](get-started-with-retention.md).
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Uppgift 7: Konfigurera principer för känslig information och stötande språk
 
@@ -105,7 +105,7 @@ Känslighetsetiketter, typer av känslig information, kvarhållningsetiketter oc
 
 Stegvisa instruktioner för hur du använder Innehållsutforskaren finns i Avsnittet Känner till dina [data – översikt](data-classification-overview.md)över dataklassificering och [Komma igång med Innehållsutforskaren.](data-classification-content-explorer.md)
 
-### <a name="activity-explorer"></a>Aktivitetsutforskaren
+### <a name="activity-explorer"></a>Aktivitetsutforskare
 Med Aktivitetsutforskaren kan du övervaka vad som görs med dina klassificerade och etiketterade känsliga objekt:
 - SharePoint
 - Exchange

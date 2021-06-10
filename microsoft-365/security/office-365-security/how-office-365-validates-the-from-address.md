@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan läsa mer om vilka typer av e-postadresser som godkänns eller avvisas av Exchange Online Protection (EOP) och Outlook.com för att förhindra nätfiske.
+description: Administratörer kan läsa om vilka typer av e-postadresser som godkänns eller avvisas av Exchange Online Protection (EOP) och Outlook.com för att förhindra nätfiske.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51207087"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nätfiskeattacker är ett konstant hot mot e-postorganisation. Förutom att använda [förfalskade (förfalskade)](anti-spoofing-protection.md)avsändares e-postadresser använder attacker ofta värden i från-adressen som bryter mot Internetstandarder. För att förhindra den här typen av nätfiske kräver nu Exchange Online Protection (EOP) och Outlook.com inkommande meddelanden en RFC-kompatibel från-adress enligt beskrivningen i den här artikeln. Tillämpning av den här funktionen aktiverades i november 2017.
+Nätfiskeattacker är ett konstant hot mot e-postorganisation. Förutom att använda [förfalskade (förfalskade)](anti-spoofing-protection.md)avsändares e-postadresser använder attacker ofta värden i från-adressen som bryter mot Internetstandarder. För att förhindra den här typen av nätfiske kräver nu Exchange Online Protection (EOP) och Outlook.com inkommande meddelanden att inkludera en RFC-kompatibel från-adress enligt beskrivningen i den här artikeln. Tillämpning av den här funktionen aktiverades i november 2017.
 
 **Anmärkningar**:
 
@@ -90,7 +90,7 @@ Följande Från e-postadresser är giltiga:
 
 Följande Från e-postadresser är ogiltiga:
 
-- **Ingen av från-adress:** Vissa automatiska meddelanden innehåller inte en Från-adress. Tidigare när Microsoft 365 eller Outlook.com fick ett meddelande utan en Från-adress lade tjänsten till följande standardadress från: så att meddelandet kan levereras:
+- **Ingen av från-adress:** Vissa automatiska meddelanden innehåller inte en Från-adress. Tidigare när en Microsoft 365 eller Outlook.com fick ett meddelande utan en Från-adress lade tjänsten till följande standardadress för Från: så att meddelandet kan levereras:
 
   `From: <>`
 
@@ -130,9 +130,9 @@ Mer information om hur du publicerar en null MX finns [i RFC 7505.](https://tool
 
 ## <a name="override-from-address-enforcement"></a>Åsidosätt från tillämpning av adress
 
-Om du vill åsidosätta kraven för från-adress för inkommande e-post kan du använda listan över tillåtna IP-adresser (anslutningsfiltrering) eller e-postflödesregler (kallas även transportregler) enligt beskrivningen i Skapa listor över betrodda avsändare i [Microsoft 365.](create-safe-sender-lists-in-office-365.md)
+Om du vill åsidosätta kraven för från-adress för inkommande e-post kan du använda listan över tillåtna IP-adresser (anslutningsfiltrering) eller e-postflödesregler (kallas även transportregler) enligt beskrivningen i Skapa listor över betrodda avsändare [i Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-Du kan inte åsidosätta kraven för Från-adress för utgående e-post som du skickar från Microsoft 365. Dessutom kan Outlook.com åsidosättningar av något slag, även via support.
+Du kan inte åsidosätta kraven för Från-adress för utgående e-post som du skickar Microsoft 365. Dessutom tillåter Outlook.com inte åsidosättningar av något slag, även via support.
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Andra sätt att förhindra och skydda mot cyberbrott i Microsoft 365
 

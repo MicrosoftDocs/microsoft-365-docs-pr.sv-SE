@@ -103,7 +103,7 @@ Kontrollera om du kan återkalla ett meddelande genom att kontrollera om fältet
 
 Utför de här stegen för att verifiera om du kan återkalla ett visst e Windows PowerShell postmeddelande.
 
-1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Kör Get-OMEMessageStatus cmdleten så här:
 

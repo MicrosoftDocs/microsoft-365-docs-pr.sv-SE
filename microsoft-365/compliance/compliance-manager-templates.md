@@ -87,7 +87,7 @@ Följ stegen nedan om du vill skapa en egen ny mall (används för att skapa anp
 2. Välj **Skapa ny mall**. En guide för att skapa mallar öppnas.
 3. Välj den typ av mall du vill skapa. I det här fallet väljer **du Skapa en anpassad mall** och sedan **Nästa.**
 4. På skärmen **Upload väljer** du  Bläddra för att hitta och ladda upp den formaterade Excel-filen med alla obligatoriska malldata (se anvisningar för korrekt formatering [av filen](#formatting-your-template-data-with-excel)).
-5. Om det inte är problem med filen visas namnet på den fil som har laddats upp. Välj **Nästa för** att fortsätta. (Om du behöver ändra filen väljer du Upload **annan fil**).
+5. Om det inte är problem med filen visas namnet på den fil som har laddats upp. Gå vidare genom att klicka på **Nästa.** (Om du behöver ändra filen väljer du Upload **annan fil**).
     - Om det finns ett fel med filen förklarar ett felmeddelande högst upp vad som är fel. Du måste åtgärda filen och ladda upp den igen. Fel uppstår om kalkylbladet är felaktigt formaterat eller om det finns ogiltig information i vissa fält (läs mer om [formateringsanvisningarna](#formatting-your-template-data-with-excel)).  
     
 6. På **skärmen Granska och** slutför visas antalet förbättringsåtgärder och -kontroller och mallens högsta poäng. När du är redo att godkänna väljer **du Skapa mall.** (Om du behöver göra ändringar väljer du **Tillbaka**.)

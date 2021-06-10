@@ -1,7 +1,7 @@
 ---
 title: Kom igång med hantering av insiderrisker
 description: Konfigurera Insider-riskhantering i din organisation.
-keywords: Microsoft 365, insider-riskhantering, riskhantering, efterlevnad
+keywords: Microsoft 365, hantering av insiderrisk, riskhantering, efterlevnad
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -96,7 +96,7 @@ Stegvisa instruktioner för hur du aktiverar granskning finns i [Aktivera eller 
 
 ## <a name="step-3-enable-and-view-insider-risk-analytics-insights-optional"></a>Steg 3: Aktivera och visa insikter om Insider-riskanalyser (valfritt)
 
-Med Insider-riskhanteringsanalyser kan du göra en utvärdering av potentiella Insider-risker i organisationen utan att konfigurera insiderriskprinciper. Den här utvärderingen kan hjälpa din organisation att identifiera potentiella områden med högre användarrisker och hjälpa till att fastställa typ och omfattning för principer för Insider-riskhantering som du kan överväga att konfigurera. Den här utvärderingen kan också hjälpa dig att fastställa behov av ytterligare licensiering eller framtida optimering av befintliga principer. Analyssökningsresultaten kan ta upp till 48 timmar innan insikterna är tillgängliga som rapporter för granskning. Mer information om analysinsikter finns i Inställningar för [Insider-riskhantering: Analys (förhandsversion)](insider-risk-management-settings.md#analytics-preview) och titta på videon om Insider Risk Management Analytics för att bättre förstå hur analyser kan hjälpa dig att identifiera potentiella [Insider-risker](https://www.youtube.com/watch?v=5c0P5MCXNXk) och hjälpa dig att snabbt vidta åtgärder.
+Med Insider-riskhanteringsanalyser kan du göra en utvärdering av potentiella Insider-risker i organisationen utan att konfigurera insiderriskprinciper. Denna utvärdering kan hjälpa din organisation att identifiera potentiella områden med högre användarrisk och hjälpa till att bestämma typen och omfattningen av principer för hantering av insiderrisk som du kan överväga att konfigurera. Den här utvärderingen kan också hjälpa dig att fastställa behov av ytterligare licensiering eller framtida optimering av befintliga principer. Analyssökningsresultaten kan ta upp till 48 timmar innan insikterna är tillgängliga som rapporter för granskning. Mer information om analysinsikter finns i Inställningar för [Insider-riskhantering: Analys (förhandsversion)](insider-risk-management-settings.md#analytics-preview) och titta på videon om Insider Risk Management Analytics för att bättre förstå hur analyser kan hjälpa dig att identifiera potentiella [Insider-risker](https://www.youtube.com/watch?v=5c0P5MCXNXk) och hjälpa dig att snabbt vidta åtgärder.
 
 För att aktivera Insider risk Analytics måste du vara medlem i rollgruppen för *Insider-riskhantering,* *Insider-riskhanteringsadministratör* eller Microsoft 365 *global* administratör.
 
@@ -119,9 +119,9 @@ Insider-riskhantering har stöd för import av användar- och loggdata som impor
 Den Microsoft 365 HR-koppling krävs när du använder följande principmallar:
 
 - Avgående användardatastöld
-- Brott mot säkerhetsprinciper av avgående användare
-- Brott mot säkerhetsprinciper av misslygda användare
-- Dataläckor av missnöjda användare
+- Överträdelser av säkerhetsprincip av användare som slutar
+- Överträdelse av säkerhetsprincip av en missnöjd användare
+- Dataläckage av missnöjda användare
 
 Stegvisa [anvisningar för hur du](import-hr-data.md) konfigurerar en hr-koppling för din organisation finns i artikeln Konfigurera en Microsoft 365 koppling för hr-data. När du har konfigurerat HR-kopplingen återgår du till de här konfigurationsstegen.
 
@@ -140,7 +140,7 @@ DLP-principer hjälper till att identifiera användare för att aktivera riskbed
 En DLP-princip krävs när du använder följande principmallar:
 
 - Allmänna dataläckor
-- Dataläckor efter prioriterade användare
+- Dataläckor av prioritetsanvändare
 
 Stegvisa anvisningar för hur du konfigurerar DLP-principer för organisationen finns i artikeln [Skapa,](create-test-tune-dlp-policy.md) testa och finjustera en DLP-princip. När du har konfigurerat en DLP-princip återgår du till de här konfigurationsstegen.
 
@@ -150,8 +150,8 @@ Insider-riskhantering innehåller stöd för att tilldela prioriterade användar
 
 En prioritetsgrupp krävs när följande principmallar används:
 
-- Brott mot säkerhetsprinciper efter prioritetsanvändare
-- Dataläckor efter prioriterade användare
+- Överträdelser av säkerhetsprincip av prioritetsanvändare
+- Dataläckor av prioritetsanvändare
 
 I artikeln [Komma igång med inställningar för insider-riskhantering](insider-risk-management-settings.md#priority-user-groups-preview) finns stegvisa instruktioner om hur du skapar en prioriterad användargrupp. När du har konfigurerat en prioritetsgrupp går du tillbaka till konfigurationsstegen.
 
@@ -203,49 +203,49 @@ Innan du konfigurerar en princip definierar du följande inställningar för Ins
 
 Insider-riskhanteringsprinciper omfattar tilldelade användare och definierar vilka typer av riskindikatorer som ska konfigureras för varningar. Innan aktiviteter kan utlösa aviseringar måste en princip konfigureras. Använd principguiden för att skapa nya principer för insider-riskhantering.
 
-1. I Microsoft 365 [säkerhets- och efterlevnadscenter](https://compliance.microsoft.com)går **du till Insider-riskhantering** och väljer **fliken** Principer.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) går du till **Hantering av insiderrisk** och väljer fliken **Princip**.
 2. Välj **Skapa princip** för att öppna principguiden.
-3. Välj en **principkategori** på sidan Principmall och välj sedan mallen för den nya principen. Mallarna består av villkor och indikatorer som definierar de riskaktiviteter du vill identifiera och undersöka. Granska mallförutsättningarna, utlösa händelser och identifierade aktiviteter för att bekräfta att den här principmallen passar dina behov.
+3. På sidan **Principmall** väljer du en principkategori och väljer sedan mallen för den nya principen. De här mallarna består av villkor och indikatorer som definierar den riskaktivitet du vill identifiera och undersöka. Granska förutsättningarna, utlösande händelser och upptäckta aktiviteter flr mallen för att bekräfta att denna principmall passar dina behov.
 
     >[!IMPORTANT]
-    >Vissa principmallar har krav som måste konfigureras för att principen ska kunna generera relevanta aviseringar. Om du inte har konfigurerat tillämpliga principkrav, se **steg 4** ovan.
+    >Vissa principmallar har förutsättningar som måste konfigureras för att principen ska generera relevanta varningar. Om du inte har konfigurerat tillämpliga principförutsättningar, se **Steg 4** ovan.
 
-4. Välj **Nästa för** att fortsätta.
-5. Fyll **i följande fält** på sidan Namn och beskrivning:
-    - **Namn (obligatoriskt)**: Ange ett eget namn för principen. Det här namnet kan inte ändras efter att principen har skapats.
-    - **Beskrivning (valfritt)**: Ange en beskrivning för principen.
+4. Gå vidare genom att klicka på **Nästa.**
+5. På sidan **Namn och beskrivning** färdigställer du följande fält:
+    - **Namn (obligatoriskt)**: Ange ett eget namn på principen. Namnet kan inte ändras när principen har skapats.
+    - **Beskrivning (valfritt)**: Ange en valfri beskrivning av principen.
 
-6. Välj **Nästa för** att fortsätta.
-7. På sidan **Användare** och  grupper väljer du  Inkludera alla användare och grupper eller Inkludera specifika användare och grupper för att definiera vilka användare eller grupper som ska ingå i principen, eller om du har valt en användarbaserad mall för prioritet. välj **Lägg till eller redigera användargrupper med prioritet.** Om **du markerar Inkludera alla användare och** grupper söker du efter utlösande händelser för alla användare och grupper i organisationen för att börja tilldela riskpoäng för principen. Om **du markerar Inkludera specifika användare och** grupper kan du definiera vilka användare och grupper som ska tilldelas till principen.
-8. Välj **Nästa för** att fortsätta.
-9. På sidan **Innehåll som ska prioriteras** kan du tilldela (om det behövs) de källor som ska prioriteras, vilket ökar risken för att generera en hög allvarlighetsvarning för dessa källor. Välj något av följande alternativ:
+6. Gå vidare genom att klicka på **Nästa.**
+7. På sidan **Användare och grupper** väljer du **Inkludera alla användare och grupper** eller **Inkludera specifika användare och grupper** för att definiera vilka användare eller grupper som är inkluderade i principen, eller välj **Lägg till eller redigera prioriterade användargrupper** om du har valt en mall som är baserad på prioriterade användare. Genom att välja **Inkludera alla användare och grupper** kommer den att leta efter utlösande händelser för alla användare och grupper i din organisation för att börja tilldela riskpoäng för principen. Genom att välja **Inkludera specifika användare och grupper** kan du definiera vilka användare och grupper som ska tilldelas till principen.
+8. Gå vidare genom att klicka på **Nästa.**
+9. På sidan **Innehåll som ska prioriteras** kan du tilldela (vid behov) källorna som ska prioriteras, vilket ökar möjligheten till att generera en varning om hög allvarlighet för dessa källor. Välj ett av följande alternativ:
 
-    - **Jag vill ange SharePoint webbplatser, känslighetsetiketter och/eller typer av känslig information som prioritetsinnehåll.** Om du väljer det här alternativet kan informationssidor i guiden konfigurera dessa kanaler.
-    - **Jag vill inte ange prioritetsinnehåll just nu (du kan göra** detta när principen har skapats). Om du väljer det här alternativet hoppar du över kanalinformationssidorna i guiden.
+    - **Jag vill ange SharePoint-webbplatser, känslighetsetiketter och/eller känslig information som prioriterade innehåll**. Om du väljer det här alternativet aktiveras informationssidor i guiden för att konfigurera dessa kanaler.
+    - **Jag vill inte ange prioriterat innehåll just nu (du kan göra det när principen har skapats)**. Om du väljer detta alternativ hoppar du över sidorna med kanalinformation i guiden.
 
-10. Välj **Nästa för** att fortsätta.
+10. Gå vidare genom att klicka på **Nästa.**
 
-11. Om du valde Jag vill ange **SharePoint-webbplatser,** känslighetsetiketter och/eller typer av känslig information som prioritetsinnehåll i föregående steg visas informationssidorna för *SharePoint-webbplatser,* typer av känslig information och känslighetsetiketter.  Använd dessa informationssidor för att SharePoint, typer av känslig information och känslighetsetiketter att prioritera i principen.
+11. Om du i föregående steg valde **Jag vill ange SharePoint-webbplatser, känslighetsetiketter och/eller typer av känslig information som prioriterat innehåll**, kommer du att se informationssidorna för *SharePoint-webbplatser*, *Typer av känslig information* och *Känslighetsetiketter*. Använd dessa informationssidor för att definiera SharePoint, typer av känslig information och känslighetsetiketter som ska prioriteras i principen.
 
-    - **SharePoint webbplatser:** Välj **Lägg SharePoint webbplats** och välj de SharePoint som du har tillgång till och vill prioritera. Till exempel *"group1@contoso.sharepoint.com/sites/group1".*
-    - **Typ av känslig** information: **Välj Lägg till typ av känslig** information och välj de känslighetstyper du vill prioritera. Till exempel *"U.S. Bank Account Number"* *och "Credit Card Number"*.
-    - **Känslighetsetiketter:** **Välj Lägg till känslighetsetikett** och välj de etiketter du vill prioritera. Till exempel *"Konfidentiellt"* och *"Hemligt"*.
+    - **SharePoint-webbplatser**: Välj **Lägg till SharePoint-webbplats** och välj SharePoint-webbplatserna som du har tillgång till och som du vill prioritera. Till exempel *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Typ av känslig information**: Välj **Lägg till typ av känslig information** och välj känslighetstyperna som du vill prioritera. Till exempel *“Amerikanskt bankkontonummer”* och *“Kreditkortsnummer”*
+    - **Känslighetsetiketter**: Välj **Lägg till känslighetsetikett** och välj etiketterna som du vill prioritera. Till exempel *“Konfidentiell”* och *“Hemlighet”*.
 
-12. Välj **Nästa för** att fortsätta.
-13. På sidan **Indikatorer och utlösa händelser** visas [](insider-risk-management-settings.md#indicators) de indikatorer som du har definierat som tillgängliga på sidan Indikatorer för   >  **Insider-risker.** Om du valde en *mall* för Dataläckor i början av guiden måste du välja en DLP-princip i listrutan **för DLP-principen** för att aktivera utlösande indikatorer för principen eller välja den inbyggda utlösande händelsen.
+12. Gå vidare genom att klicka på **Nästa.**
+13. På sidan **Indikatorer och utlösande händelser** kommer du att se [indikatorerna](insider-risk-management-settings.md#indicators) som du har definierat som tillgängliga på sidan **Inställningar för insiderrisk** > **Indikatorer**. Om du valde en mall för *Dataläckor* i början av guiden måste du välja en DLP-princip i **DLP-principens** nedrullningsbara lista för att aktivera utlösande indikatorer för principen eller välja den inbyggda utlösande händelsen.
 
     >[!IMPORTANT]
-    >Om indikatorerna på den här sidan inte kan markeras måste du markera de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer i** guiden eller välja indikatorer på sidan För **Insider-Inställningar**  >    >  **policyindikatorer.**
+    >Om indikatorer på den här sidan inte kan väljas måste du välja de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer** i guiden eller välja indikatorerna på sidan **Hantering av insiderrisk** > **Inställningar** > **Principindikatorer**.
 
-    Markera de indikatorer som du vill tillämpa på principen. Om du inte vill använda standardinställningarna för tröskelvärde för principen för dessa indikatorer inaktiverar du de standardtröskelvärden som rekommenderas av **Microsoft** och anger tröskelvärdena för varje vald indikator.
+    Välj de indikatorer som du vill tillämpa på principen. Om du föredrar att inte använda principens standardtrösklar för dessa indikatorer, inaktivera **Använd standardtrösklar som rekommenderas av Microsoft** och ange tröskelvärdena för varje vald indikator.
 
-    - Om du har valt minst en *Office* *enhetsindikator* väljer du **Risk score-poäng efter** behov. Riskpoäng gäller endast för valda indikatorer.
-    - Om du har valt en principmall *för Datastöld* eller *Dataläckor* väljer du en eller flera sekvensidentifieringsmetoder och en metod för kumulativ  **exfiltrationsidentifiering** som ska tillämpas på principen.
+    - Om du har valt minst en *Office-* eller *Enhetsindikator*, väljer du **Förstärkare av riskpoäng** efter behov. Förstärkare av riskpoäng kan endast användas på valda indikatorer.
+    - Om du har valt en av principmallarna *Datastöld* eller *Dataläckor*, väljer du en eller flera metoder för **Sekvensidentifiering** och en metod för **Identifiering av kumulativ dataexfiltrering** för principen.
 
-14. Välj **Nästa för** att fortsätta.
-15. På sidan **Indikatortröskelvärden** väljer du alternativet om du vill använda standardindikeringströskeln eller ange anpassade tröskelvärden för enskilda indikatorer. För varje indikator väljer du lämplig nivå för att generera önskad nivå av aktivitetsaviseringar.
-16. Välj **Nästa för** att fortsätta.
-17. På sidan **Granska** granskar du de inställningar som du har valt för principen och eventuella förslag eller varningar för dina val. Välj **Redigera** om du vill ändra något av principvärdena eller **välj Skicka** för att skapa och aktivera principen.
+14. Gå vidare genom att klicka på **Nästa.**
+15. På sidan **Tröskelvärden för indikatorn** väljer du alternativet att använda standardindikatortrösklar eller att specificera anpassade trösklar för enskilda indikatorer. Välj lämplig nivå för varje indikator för att generera önskad nivå av aktivitetsvarningar.
+16. Gå vidare genom att klicka på **Nästa.**
+17. På sidan **Granskning** granskar du inställningarna du har valt för principen och eventuella förslag eller varningar för dina val. Välj **Redigera** för att ändra något av principvärdena eller välj **Skicka** för att skapa och aktivera policyn.
 
 ## <a name="next-steps"></a>Nästa steg
 

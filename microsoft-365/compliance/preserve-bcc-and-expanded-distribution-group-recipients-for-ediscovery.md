@@ -21,7 +21,7 @@ ms.locfileid: "52162254"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Bevara mottagare av hemlig kopia och utökad distributionsgrupp för eDiscovery
   
-In-Place bevarande, bevarande av juridiska [](./retention.md) skäl och Microsoft 365-bevarandeprinciper (skapas i Säkerhets- och efterlevnadscenter för &) kan du bevara postlådeinnehållet så att det uppfyller efterlevnadskrav och eDiscovery-krav. Information om mottagare som är direkt adresserade i fälten Till och Kopia i ett meddelande tas med i alla meddelanden som standard. Men det kan hända att din organisation måste kunna söka efter och återskapa information om alla mottagare av ett meddelande. Det omfattar:
+In-Place bevarande, bevarande av juridiska [](./retention.md) skäl och Microsoft 365-bevarandeprinciper (skapas i Säkerhets- och efterlevnadscenter för &) kan du bevara postlådeinnehållet så att det uppfyller efterlevnadskrav och eDiscovery-krav. Information om mottagare som är direkt adresserade i fälten Till och Kopia i ett meddelande tas med i alla meddelanden som standard. Men det kan hända att din organisation måste kunna söka efter och återskapa information om alla mottagare av ett meddelande. Detta omfattar följande:
   
 - **Mottagare som hanteras med hjälp av fältet Hemlig kopia i ett meddelande:** Mottagare av hemlig kopia lagras i meddelandet i avsändarens postlåda, men inkluderas inte i meddelanderubrikerna som levereras till mottagarna. 
     
@@ -58,7 +58,7 @@ Scenario 1: John är medlem i US-Sales distributionsgrupp. I den här tabellen v
    
 Scenario 2: Bob skickar ett e-postmeddelande till John (To/Cc) och Jack (Bcc direkt eller indirekt via en distributionsgrupp). I tabellen nedan visas eDiscovery-sökresultat.
   
-| När du söker ... | För meddelanden som skickats... | Innehåller resultatet meddelande? | Kommentarer |
+| När du söker ... | För meddelanden som skickats... | Innehåller resultatet meddelande? | Kommentar |
 |:-----|:-----|:-----|:-----|
 |Bobs postlåda  <br/> |Till/Kopia:John  <br/> |Ja  <br/> |Visar en indikation på att Jack var Hemlig kopia.  <br/> |
 |Bobs postlåda  <br/> |Hemlig kopia:Jack  <br/> |Ja  <br/> |Visar en indikation på att Jack var Hemlig kopia.  <br/> |

@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/08/2021
-ms.openlocfilehash: ccbb57d781196e352e0fed456a1f7cb43eb17300
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.date: 06/09/2021
+ms.openlocfilehash: 05b2b2af87e423058d18651571d52a97ac387506
+ms.sourcegitcommit: 3584c1fe59d12512d67faf3efc955e1d67e2baa0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822280"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52862153"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer
 
@@ -86,7 +86,7 @@ Alla våra uppdateringar innehåller
 <summary> Maj-2021 (plattform: 4.18.2105.4 | Motor: 1.1.18200.4)</summary>
 
 &ensp;Uppdateringsversion av säkerhetsinformation: **1.341.8.0**  
-&ensp;**Utgiven: 4 juni 2021**  
+&ensp;**Utgiven: 3 juni 2021**  
 &ensp;Plattform: **4.18.2105.4**  
 &ensp;Motor: **1.1.18200.4**  
 &ensp;Supportfas: **Säkerhets- och kritiska uppdateringar**
@@ -102,15 +102,13 @@ Inga kända problem
 <summary> April 2021 (plattform: 4.18.2104.14 | Motor: 1.1.18100.5)</summary>
 
 &ensp;Uppdateringsversion av säkerhetsinformation: **1.337.2.0**  
-&ensp;Utgiven: **1 april 2021**  
-&ensp;Plattform: **4.18.2104.14**  
+&ensp;Utgiven: **26 april 2021**  (Motor: 1.1.18100.6 utgiven 5 maj 2021) &ensp; Plattform: **4.18.2104.14**  
 &ensp;Motor: **1.1.18100.5**  
 &ensp;Supportfas: **Säkerhets- och kritiska uppdateringar**
     
 ### <a name="whats-new"></a>Nyheter
 - Ytterligare logik för funktionsövervakning
 - Förbättrad identifiering av kernelläge
-- Nya kontroller för hantering av den gradvisa utrullningsprocessen för [Microsoft Defender-uppdateringar har lagts till](updates.md)
 
 ### <a name="known-issues"></a>Kända problem
 Inga kända problem  
@@ -119,7 +117,7 @@ Inga kända problem
 <summary> Mars–2021 (plattform: 4.18.2103.7 | Motor: 1.1.18000.5)</summary>
 
 &ensp;Uppdateringsversion av säkerhetsinformation: **1.335.36.0**  
-&ensp;Utgiven: **1 april 2021**  
+&ensp;**Utgiven: 2 april 2021**  
 &ensp;Plattform: **4.18.2103.7**  
 &ensp;Motor: **1.1.18000.5**  
 &ensp;Supportfas: **Säkerhets- och kritiska uppdateringar**

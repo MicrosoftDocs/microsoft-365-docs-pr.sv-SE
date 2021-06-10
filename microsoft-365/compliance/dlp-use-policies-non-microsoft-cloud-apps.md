@@ -35,7 +35,7 @@ Du kan använda DLP-principer till andra molnappar än Microsoft för att överv
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-### <a name="skusubscriptions-licensing"></a>SKU/prenumerationslicensiering
+### <a name="skusubscriptions-licensing"></a>Licensiering av SKU/prenumerationer
 
 Innan du börjar använda DLP-principer för andra program än Microsoft-molnappar måste [Microsoft 365 din](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) prenumeration och eventuella tillägg. För att komma åt och använda den här funktionen måste du ha någon av dessa prenumerationer eller tillägg:
 

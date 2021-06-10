@@ -132,7 +132,7 @@ Innan du kan använda granskningsloggen för att spåra förfrågningar om Custo
 
     1. **Fil, mapp eller webbplats –** Lämna fältet tomt.
 
-5. Klicka **på Sök** för att köra sökningen med dina sökvillkor.
+5. Klicka på **Sök** för att köra sökningen med dina sökvillkor.
 
     Sökresultaten läses in och efter en liten stund visas de under **Resultat på** sidan **Granskningsloggsökning.**
 

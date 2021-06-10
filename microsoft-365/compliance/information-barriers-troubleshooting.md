@@ -37,7 +37,7 @@ I det här fallet rapporterar personer oväntade problem när de kommunicerar me
 - En användare kan hitta, men inte välja, en annan användare i Microsoft Teams.
 - En användare kan se en annan användare, men kan inte skicka meddelanden till den andra användaren Microsoft Teams.
 
-### <a name="what-to-do"></a>Vad kan jag göra?
+### <a name="what-to-do"></a>Lämplig åtgärd
 
 Bestäm om användarna påverkas av en informationsbarriärpolicy. Beroende på hur principer konfigureras kanske informationsbarriärer fungerar som förväntat. Eller så kanske du måste förfina organisationens principer.
 
@@ -83,7 +83,7 @@ Bestäm om användarna påverkas av en informationsbarriärpolicy. Beroende på 
 
 I det här fallet även om informationsbarriärer definieras, är aktiva och tillämpas kan personer som borde hindras från att kommunicera med varandra i från att chatta med varandra och ringa varandra i Microsoft Teams.
 
-### <a name="what-to-do"></a>Vad kan jag göra?
+### <a name="what-to-do"></a>Lämplig åtgärd
 
 Kontrollera att användarna i fråga finns med i informationsbarriärpolicyn. 
 
@@ -110,7 +110,7 @@ Kontrollera att användarna i fråga finns med i informationsbarriärpolicyn.
 
 I det här fallet finns det principer för informationsbarriärer och en eller flera användare blockeras oväntat från att kommunicera med andra i Microsoft Teams. I stället för att ta bort principer för informationsbarriärer helt och hållet kan du ta bort en eller flera enskilda användare från informationsbarriärprinciper.
 
-### <a name="what-to-do"></a>Vad kan jag göra?
+### <a name="what-to-do"></a>Lämplig åtgärd
 
 Informationsbarriärprinciper kopplas till segment av användare. Segment definieras med hjälp av [vissa attribut i användarprofilen.](information-barriers-attributes.md) Om du måste ta bort en princip från en enskild användare kan du redigera den användarens profil i Azure Active Directory så att den inte längre ingår i ett segment som påverkas av informationsbarriärer.
 
@@ -131,7 +131,7 @@ Informationsbarriärprinciper kopplas till segment av användare. Segment defini
 
 När du **har kört cmdleten Start-InformationBarrierPoliciesApplication** tar det mycket lång tid att slutföra processen.
 
-### <a name="what-to-do"></a>Vad kan jag göra?
+### <a name="what-to-do"></a>Lämplig åtgärd
 
 Kom ihåg att när du kör cmdleten för policyprogrammet tillämpas (eller tas bort) informationsbarriärprinciper per användare för alla konton i organisationen. Om du har många användare tar det en stund att bearbeta. (Som allmän riktlinje tar det ungefär en timme att bearbeta 5 000 användarkonton.)
 
@@ -155,7 +155,7 @@ Kom ihåg att när du kör cmdleten för policyprogrammet tillämpas (eller tas 
 
 I det här fallet har du definierat segment, definierat principer för informationsbarriärer och har försökt tillämpa dessa principer. Men när du kör `Get-InformationBarrierPoliciesApplicationStatus` cmdleten kan du se att principprogrammet har misslyckats.
 
-### <a name="what-to-do"></a>Vad kan jag göra?
+### <a name="what-to-do"></a>Lämplig åtgärd
 
 Kontrollera att organisationen inte har några [Exchange finns adressboksprinciper.](/exchange/address-books/address-book-policies/address-book-policies) Sådana principer förhindrar att informationsbarriärer tillämpas.
 
@@ -185,7 +185,7 @@ När du kör `Get-InformationBarrierPoliciesApplicationStatus` cmdleten söker d
 >
 > Status: Slutförd
 
-### <a name="what-to-do"></a>Vad kan jag göra?
+### <a name="what-to-do"></a>Lämplig åtgärd
 
 1. Sök i granskningsloggen efter `<application guid>` . Du kan kopiera den här PowerShell-koden och ändra för dina variabler.
 

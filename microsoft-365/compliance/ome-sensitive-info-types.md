@@ -35,7 +35,7 @@ Logga in på Exchange (EAC) och gå till **E-postflödesregler.**  >   På sidan
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>Skapa principen med hjälp av e-postflödesregler i PowerShell
 
-Använd ett arbets- eller skolkonto med global administratörsbehörighet i din organisation, starta Windows PowerShell en session och anslut till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell) Använd Set-IRMConfiguration och New-TransportRule för att skapa principen.
+Använd ett arbets- eller skolkonto med global administratörsbehörighet i din organisation, starta Windows PowerShell en session och anslut till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Använd Set-IRMConfiguration och New-TransportRule för att skapa principen.
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>Exempel på e-postflödesregel som skapats med PowerShell
 

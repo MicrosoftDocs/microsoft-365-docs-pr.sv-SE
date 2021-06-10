@@ -79,7 +79,7 @@ När du skapar en DLP-princip kan du aktivera **användarmeddelanden.** När anv
     
 7. Välj **Använd avancerade inställningar** \> **Nästa.**
     
-8. Välj **+ Ny regel.**
+8. Välj **+ Ny regel**.
     
 9. I regelredigeraren, under **Användarmeddelanden,** slår du på statusen.
     

@@ -41,7 +41,7 @@ Du kan använda CJK-tecken [för](building-search-queries.md#keyword-searches) [
 
 Vi har stöd för CJK [för](keyword-queries-and-search-conditions.md#search-operators) alla sökoperatorer och sökvillkor, [](keyword-queries-and-search-conditions.md#search-conditions)inklusive booleska operatorer **OCH,** **ELLER,** **NOT** och **NEAR.**
 
-Om du är säker på att innehållsplatser eller objekt innehåller CJK-tecken men sökningar inte returnerar några resultat klickar du på ikonen för frågans språk/land/region ![Ikonen för språk/region för fråga i innehållssökning](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) och välj motsvarande språk-land-kulturkodvärde för sökningen. Standardspråket/regionen är neutral.
+Om du är säker på att innehållsplatser eller objekt innehåller CJK-tecken men sökningar inte returnerar några resultat klickar du på ikonen för frågans språk/land/region ![Ikonen för språk/region för fråga i innehållssökning](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) och välj motsvarande språk-land-kulturkodvärde för sökningen. Standardalternativet för språk/region är neutralt.
 
 **Kan jag söka efter flera språk samtidigt?**
 

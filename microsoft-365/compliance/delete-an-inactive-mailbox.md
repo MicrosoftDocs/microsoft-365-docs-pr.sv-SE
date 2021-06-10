@@ -36,7 +36,7 @@ I avsnittet [Mer information finns](#more-information) en beskrivning av vad som
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>Innan du tar bort en inaktiv postlåda
 
-- Du måste använda PowerShell Exchange Online ta bort ett bevarande av juridiska skäl från en inaktiv postlåda. Du kan inte använda Exchange (EAC). Stegvisa instruktioner finns i Skapa [Anslut-Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+- Du måste använda PowerShell Exchange Online ta bort ett bevarande av juridiska skäl från en inaktiv postlåda. Du kan inte använda Exchange (EAC). Stegvisa anvisningar finns i [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Du kan kopiera innehållet i en inaktiv postlåda till en annan postlåda innan du tar bort den inaktiva postlådan och tar bort den. Mer information finns i [Återställa en inaktiv postlåda i Office 365](restore-an-inactive-mailbox.md).
 

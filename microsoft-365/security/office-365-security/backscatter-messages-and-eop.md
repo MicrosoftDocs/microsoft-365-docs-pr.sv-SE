@@ -37,9 +37,9 @@ ms.locfileid: "51207034"
 
 *Bakåtcatter är rapporter* om utebliven leverans (kallas även NDR-rapporter eller icke-leveranskända meddelanden) som du får för meddelanden som du inte har skickat. Skräppostavs spammare förfalskar meddelandens adress från: och de använder ofta riktiga e-postadresser för att låna ut trovärdigheten för sina meddelanden. Så om skräppostavsändare oundvikligen skickar meddelanden till mottagare som inte finns (skräppost är en stor volym) förs nämligen mål-e-postservern i princip att returnera det olevererbara meddelandet i en NDR-meddelande till den förfalskade avsändaren i från:-adressen.
 
-I Microsoft 365-organisationer som har postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor gör EOP allt för att identifiera och tyst släppa meddelanden från olämpliga källor utan att generera en NDR-meddelande. Men utifrån den större volym-e-post som flödar genom tjänsten finns det alltid en möjlighet att EOP oavsiktligt skickar bakåtcatter.
+I Microsoft 365 organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor gör EOP alla försök att identifiera och tyst släppa meddelanden från tveksamma källor utan att generera en NDR-meddelande. Men utifrån den större volym-e-post som flödar genom tjänsten finns det alltid en möjlighet att EOP oavsiktligt skickar bakåtcatter.
 
 Backscatterer.org har en blockeringslista (kallas även DNS-blockeringslista eller DNSBL) över e-postservrar som var ansvariga för att skicka bakåtcatter, och EOP-servrar kan visas i den här listan. Men vi försöker inte ta bort skräpposten från Backscatterer.org-blockeringslistan eftersom det inte är en lista över skräppostavseningar (via eget medgivande).
 
 > [!TIP]
-> Webbplatsen Backscatter.org () rekommenderar att man använder tjänsten för att kontrollera inkommande e-post i felsäkert läge i stället för i avvisande läge (stora e-posttjänster skickar nästan alltid en del <http://www.backscatterer.org/?target=usage> bakåtcatter).
+> Webbplatsen Backscatter.org () rekommenderar att tjänsten används för att kontrollera inkommande e-Valv i Valv-läge i stället för i läget Avvisa (stora e-posttjänster skickar nästan alltid en del <http://www.backscatterer.org/?target=usage> bakåtcatter).

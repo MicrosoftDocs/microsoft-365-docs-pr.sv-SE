@@ -89,9 +89,9 @@ I tabellen nedan visas de funktioner som tillåts av varje roll i Efterlevnadsha
 
 | Användaren kan: | Efterlevnadshanteraren-roll | Azure AD-roll | 
 | :------------- | :-------------: | :------------: |
-| **Läsa men inte redigera data**| Efterlevnadshanteraren Läsare  | Global läsare i Azure AD, säkerhetsläsare | 
+| **Läsa men inte redigera data**| Läsare i Efterlevnadshanteraren  | Global läsare i Azure AD, säkerhetsläsare | 
 | **Redigera data**| Bidrag till Efterlevnadshanteraren | Efterlevnadsadministratör | 
-| **Redigera testresultat**| Utvärderare för efterlevnadshanteraren | Efterlevnadsadministratör | 
+| **Redigera testresultat**| Bedömare i Efterlevnadshanteraren | Efterlevnadsadministratör | 
 | **Hantera utvärderingar samt mall- och klientdata**| Efterlevnadshanteraren – administration | Efterlevnadsadministratör, dataadministratör för efterlevnad, säkerhetsadministratör  | 
 | **Tilldela användare**| Global administratör | Global administratör | 
 

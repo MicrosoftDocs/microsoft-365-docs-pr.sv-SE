@@ -114,16 +114,16 @@ Om du vill aktivera en aktivitetsavisering igen  upprepar du dessa steg och klic
     |:-----|:-----|:-----|
     |Visar ett dokument på en webbplats.  <br/> |Öppnad fil  <br/> |Fil- och mappaktiviteter  <br/> |
     |Redigerar eller ändrar ett dokument.  <br/> |Ändrad fil  <br/> |Fil- och mappaktiviteter  <br/> |
-    |Delar ett dokument med en användare utanför organisationen.  <br/> |Dela fil, mapp eller webbplats  <br/> Och  <br/> Delningsinbjudan skapad  <br/> Mer information finns i Använda [delningsgranskning i granskningsloggen](use-sharing-auditing.md).  <br/> |Aktiviteter för delning och åtkomstbegäran  <br/> |
-    |Laddar upp eller laddar ned ett dokument.  <br/> |Uppladdad fil  <br/> Och/eller  <br/> Nedladdad fil  <br/> |Fil- och mappaktiviteter  <br/> |
-    |Ändrar åtkomstbehörigheter till en webbplats.  <br/> |Webbplatsbehörigheter ändrade  <br/> |Aktiviteter för webbplatsadministration  <br/> |
+    |Delar ett dokument med en användare utanför organisationen.  <br/> |Dela fil, mapp eller webbplats  <br/> Och  <br/> Delningsinbjudan skapad  <br/> Mer information finns i [Använda delningsgranskning i granskningsloggen](use-sharing-auditing.md).  <br/> |Aktiviteter för delning och åtkomstbegäran  <br/> |
+    |Laddar upp eller laddar ned ett dokument.  <br/> |Uppladdad fil  <br/> Och/eller  <br/> Hämtad fil  <br/> |Fil- och mappaktiviteter  <br/> |
+    |Ändrar åtkomstbehörigheter till en webbplats.  <br/> |Webbplatsbehörigheter ändrades  <br/> |Aktiviteter för webbplatsadministration  <br/> |
 
     I följande tabell visas några vanliga e-postrelaterade aktiviteter i Exchange Online.
 
     |**När en användare gör det här ...**|**Skapa en avisering för den här aktiviteten**|**Aktivitetsgrupp**|
     |:-----|:-----|:-----|
-    |Tar bort (rensar) ett e-postmeddelande permanent från postlådan.  <br/> |Meddelanden rensades från postlådan  <br/> | Exchange postlådeaktiviteter  <br/> |
-    |Skickar ett e-postmeddelande från en delad postlåda.  <br/> |Meddelande skickades med behörigheten Skicka som  <br/> Och  <br/> Meddelande skickades med behörigheten Skicka för  <br/> | Exchange postlådeaktiviteter  <br/> |
+    |Tar bort (rensar) ett e-postmeddelande permanent från postlådan.  <br/> |Meddelanden rensades från postlådan  <br/> | Aktiviteter i Exchange-postlåda  <br/> |
+    |Skickar ett e-postmeddelande från en delad postlåda.  <br/> |Meddelande skickades med behörigheten Skicka som  <br/> Och  <br/> Meddelande skickades med behörigheten Skicka för  <br/> | Aktiviteter i Exchange-postlåda  <br/> |
    
 - Du kan också använda cmdletarna **New-ActivityAlert** och **Set-ActivityAlert** i Security & Compliance Center PowerShell för att skapa och redigera aktivitetsaviseringar. Tänk på följande om du använder dessa cmdlets för att skapa eller redigera aktivitetsaviseringar: 
     

@@ -43,7 +43,7 @@ När du har skapat en DLP-princip i Säkerhets- & säkerhets- och efterlevnadsce
   
 Om du har skapat DLP-principer i administrationscentret för Exchange kommer de principerna att fortsätta att fungera sida vid sida med eventuella principer för e-post som du skapar i Säkerhets- och & efterlevnadscenter. Observera dock att regler som skapats Exchange administratörscenter har företräde. Alla Exchange e-postflödesregler bearbetas först, och sedan bearbetas DLP-& säkerhets- och efterlevnadscentret.
   
-Det innebär att:
+Det innebär följande:
   
 - Meddelanden som blockeras av Exchange genomsöks inte av DLP-regler som skapats i Säkerhets- och & säkerhets- och efterlevnadscenter.
     

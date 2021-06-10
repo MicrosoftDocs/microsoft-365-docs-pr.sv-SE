@@ -80,6 +80,6 @@ Konfigurera inställningar för säkerhet och efterlevnad i dessa administration
   
 |**Prenumeration**|**URL för hantering**|**Instrumentpaneler och administrationscenter**|
 |:-----|:-----|:-----|
-|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Administrationscenter för Microsoft 365  <br/>  Center &amp; för säkerhetsefterlevnad  <br/>  Exchange administrationscenter  <br/>  SharePoint administrationscenter OneDrive för företag administrationscenter  <br/> |
+|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Administrationscentret för Microsoft 365  <br/>  Center &amp; för säkerhetsefterlevnad  <br/>  Administrationscentret för Exchange  <br/>  SharePoint administrationscenter OneDrive för företag administrationscenter  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft Mobile Application Management  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |

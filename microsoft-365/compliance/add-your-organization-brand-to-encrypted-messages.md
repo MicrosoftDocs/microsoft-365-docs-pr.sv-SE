@@ -72,7 +72,7 @@ Du kan ändra flera funktioner i en varumärkesmall. Du kan ändra, men inte ta 
 
 Använd Windows PowerShell att ändra en varumärkesmall i taget. Om du har Avancerad meddelandekryptering kan du också skapa, ändra och ta bort anpassade mallar.
 
-1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Använd Set-OMEConfiguration cmdlet enligt beskrivningen i [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) eller använd följande grafik och tabell för vägledning.
 
@@ -97,7 +97,7 @@ Om du har Office 365 Advanced Message Encryption kan du skapa anpassade varumär
 
 Så här skapar du en ny anpassad varumärkesmall:
 
-1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Använd [cmdleten New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) för att skapa en ny mall.
 
@@ -115,7 +115,7 @@ Så här skapar du en ny anpassad varumärkesmall:
 
 Om du vill ta bort alla ändringar från standardmallen, inklusive varumärkesanpassningar och så vidare, slutför du de här stegen:
   
-1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Använd **cmdleten Set-OMEConfiguration** enligt beskrivningen i [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration). Om du vill ta bort organisationens anpassningar av ansvarsfriskrivningstext, e-posttext och portaltext anger du värdet som en tom `""` sträng. För alla bildvärden, till exempel Logotyp, ställer du in värdet på  `"$null"` .
 
@@ -135,7 +135,7 @@ Du kan bara ta bort anpassade mallar som du har skapat. Du kan inte ta bort stan
 
 Så här tar du bort en anpassad varumärkesmall:
   
-1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. Instruktioner finns i [Anslut för Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Om du använder ett arbets- eller skolkonto med global administratörsbehörighet i din organisation startar du Windows PowerShell en session och ansluter till Exchange Online. För instruktioner se: [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Använd **cmdleten Remove-OMEConfiguration** enligt följande:
 

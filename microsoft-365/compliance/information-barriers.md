@@ -78,7 +78,7 @@ I SharePoint online OneDrive företag avgör och förhindrar informationsbarriä
 
 Mer information om användarupplevelsen med informationsbarriärer finns i [informationsbarriärer i SharePoint Online](/sharepoint/information-barriers)
 
-## <a name="required-licenses-and-permissions"></a>Licenser och behörigheter som krävs
+## <a name="required-licenses-and-permissions"></a>Obligatoriska licenser och behörigheter
 
 Informationsbarriärer lanseras nu och ingår i prenumerationer som:
 

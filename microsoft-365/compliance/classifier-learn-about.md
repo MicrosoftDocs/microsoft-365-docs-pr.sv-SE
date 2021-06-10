@@ -136,7 +136,7 @@ Du kan förbättra noggrannheten för alla anpassade klassificerare och vissa i 
 ## <a name="see-also"></a>Se även
 
 - [Kvarhållningsetiketter](retention.md)
-- [Mer information om skydd mot dataförlust](dlp-learn-about-dlp.md)
+- [Mer information om dataförlustskydd](dlp-learn-about-dlp.md)
 - [Känslighetsetiketter](sensitivity-labels.md)
 - [Entitetsdefinitioner för typer av känslig information](sensitive-information-type-entity-definitions.md)
 - [Dokumentutskrift med finger](document-fingerprinting.md)

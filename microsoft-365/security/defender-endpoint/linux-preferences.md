@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346384"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861557"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Ange inställningar för Microsoft Defender för Slutpunkt i Linux
 
@@ -139,7 +139,7 @@ Används för att utesluta innehåll från genomsökningen genom den fullständi
 
 **Sökvägstyp (fil/katalog)**
 
-Anger om *sökvägsegenskapen* refererar till en fil eller katalog. 
+Anger om *sökvägsegenskapen* refererar till en fil eller katalog.
 
 |||
 |:---|:---|
@@ -397,7 +397,7 @@ Följande konfigurationsprofil innehåller poster för alla inställningar som b
          },
          {
             "$type":"excludedFileExtension",
-            "extension":"pdf"
+            "extension":".pdf"
          },
          {
             "$type":"excludedFileName",
@@ -444,7 +444,7 @@ python -m json.tool mdatp_managed.json
 Om JSON-koden är rätt utformad matar kommandot ovan ut den tillbaka till terminalen och returnerar en utgångskod för `0` . Annars visas ett fel som beskriver problemet och kommandot returnerar en utgångskod för `1` .
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Verifiera att filen mdatp_managed.jsfungerar som förväntat
-Kontrollera att din /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfungerar korrekt genom att se "[managed]" bredvid de här inställningarna:  
+Kontrollera att din /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfungerar korrekt genom att se "[managed]" bredvid de här inställningarna:
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
 - passice_mode_enabled

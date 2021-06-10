@@ -21,7 +21,7 @@ ms.locfileid: "51207050"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Skapa en anpassad nyttolast för att träna på attacksimulering
 
-Microsoft erbjuder en robust katalog över nyttolaster för olika tekniker för social teknik som kan paras ihop med din attack simuleringsutbildning. Men det kan vara bra att skapa anpassade nyttolaster som fungerar bättre för din organisation. I den här artikeln beskrivs hur du skapar en nyttolast i utbildning om attack simulering i Microsoft Defender för Office 365.
+Microsoft erbjuder en robust katalog över nyttolaster för olika tekniker för social teknik som kan paras ihop med din attack simuleringsutbildning. Men det kan vara bra att skapa anpassade nyttolaster som fungerar bättre för din organisation. I den här artikeln beskrivs hur du skapar en nyttolast i utbildningen Attack simulering i Microsoft Defender för Office 365.
 
 Du kan skapa en nyttolast genom att klicka på Skapa en nyttolast på antingen den dedikerade fliken Nyttolaster eller i [guiden för att skapa simulering.](attack-simulation-training.md#selecting-a-payload) [  ](https://security.microsoft.com/attacksimulator?viewid=payload) 
 
@@ -40,7 +40,7 @@ Nu är det dags att skapa din nyttolast. Ange avsändarens namn, e-postadress oc
 
 Det finns en RTF-redigerare som kan skapa din nyttolast. Du kan också importera ett e-postmeddelande som du har skapat i förväg. När du skapar brödtexten i e-postmeddelandet kan du använda de dynamiska **taggarna för** att anpassa e-postmeddelandet efter dina mål. Klicka **på Nätfiskelänk** för att lägga till den tidigare markerade nätfiske-URL:en i meddelandets brödtext.
 
-![Nätfiskelänk och dynamiska taggar markerade i skapa nyttolast för Microsoft Defender för Office 365](../../media/attack-sim-preview-payload-email-body.png)
+![Nätfiskelänk och dynamiska taggar markerade när nyttolast skapas för Microsoft Defender för Office 365](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > Spara tid genom att aktivera alternativet att ersätta **alla länkar i e-postmeddelandet med nätfiskelänken**.

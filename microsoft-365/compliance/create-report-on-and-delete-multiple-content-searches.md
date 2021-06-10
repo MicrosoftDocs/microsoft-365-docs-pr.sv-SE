@@ -40,7 +40,7 @@ ms.locfileid: "52162821"
 
 - Skripten innehåller minimal felhantering. Syftet med dem är att snabbt skapa, rapportera om och ta bort flera innehållssökningar.
 
-- Exempelskripten som tillhandahålls i det här avsnittet stöds inte under något standardsupportprogram eller någon standardsupporttjänst från Microsoft. Exempelskripten tillhandahålls i SIN FORM UTAN några som helst garantier. Vidare frånsäger sig Microsoft alla underförstådda garantier, inklusive, utan begränsning, alla underförstådda garantier om säljbarhet eller lämplighet för ett visst ändamål. Hela risken i samband med användningen av eller prestandan hos exempelskripten och dokumentationen ligger kvar hos dig. Under inga omständigheter ska Microsoft, dess upphovspersoner eller någon annan som är involverad i skapandet, produktionen eller leveransen av skripten hållas ansvariga för någon som helst skada (inklusive, men inte begränsat till, skador för vinstförlust, driftavbrott, förlust av affärsinformation eller annan ekonomisk skada) som uppstår till följd av användning eller oförmåga att använda exempelskripten eller dokumentationen, även om Microsoft har fått information om att sådana skador kan uppstå.
+- Exempelskripten som tillhandahålls i det här avsnittet stöds inte under något standardsupportprogram eller någon standardsupporttjänst från Microsoft. Exempelskripten ges i befintligt skick utan garantier av något slag. Vidare frånsäger sig Microsoft alla underförstådda garantier, inklusive, utan begränsning, underförstådda garantier om säljbarhet eller lämplighet för ett visst ändamål. Hela risken i samband med användningen av eller prestandan hos exempelskripten och dokumentationen vilar på dig. Under inga omständigheter ska Microsoft, dess upphovspersoner eller någon annan som är involverad i skapandet, produktionen eller leveransen av skripten hållas ansvariga för någon som helst skada (inklusive, men inte begränsat till, skador avseende utebliven vinst, driftavbrott, förlust av affärsinformation eller annan ekonomisk skada) som uppstår till följd av användning eller svårighet eller omöjlighet att använda exempelskripten eller dokumentationen, även om Microsoft har fått information om att sådana skador kan uppstå.
 
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Steg 1: Skapa en CSV-fil som innehåller information om de sökningar du vill köra
 
@@ -58,7 +58,7 @@ Filen med kommaavgränsade värden (CSV) som du skapar i det här steget innehå
    ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
    ```
 
-   Filens första rad, eller rubrikraden, innehåller de parametrar som kommer att användas av **New-ComplianceSearch-cmdleten** (i skriptet i steg 3) för att skapa en ny innehållssökning. Varje parameternamn avgränsas av ett kommatecken. Kontrollera att det inte finns några blanksteg i rubrikraden. Varje rad under rubrikraden representerar parametervärdena för varje sökning. Se till att ersätta platshållardata i CSV-filen med faktiska data.
+   Filens första rad, eller rubrikraden, innehåller de parametrar som kommer att användas av **New-ComplianceSearch-cmdleten** (i skriptet i steg 3) för att skapa en ny innehållssökning. Varje parameternamn avgränsas med ett kommatecken. Kontrollera att det inte finns några blanksteg i rubrikraden. Varje rad under rubrikraden representerar parametervärdena för varje sökning. Se till att ersätta platshållardata i CSV-filen med faktiska data.
 
 2. Öppna .txt filen i Excel och använd sedan informationen i följande tabell för att redigera filen med information för varje sökning.
 
@@ -75,9 +75,9 @@ Filen med kommaavgränsade värden (CSV) som du skapar i det här steget innehå
 
 3. Spara filen Excel CSV-fil i en mapp på den lokala datorn. Skriptet som du skapar i steg 3 använder informationen i CSV-filen för att skapa sökningarna.
 
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Steg 2: Anslut säkerhets- & Säkerhets- och efterlevnadscenter PowerShell
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Steg 2: Anslut till Säkerhets- och efterlevnadscenter i PowerShell
 
-Nästa steg är att ansluta till Security & Compliance Center, PowerShell för din organisation. Stegvisa instruktioner finns i Skapa säkerhets- [Anslut Säkerhets- & Compliance Center PowerShell.](/powershell/exchange/connect-to-scc-powershell)
+Nästa steg är att ansluta till PowerShell för Säkerhets- och efterlevnadscenter för din organisation. Stegvisa anvisningar finns i [Ansluta till PowerShell för Säkerhets- och efterlevnadscenter](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>Steg 3: Kör skriptet för att skapa och starta sökningarna
 

@@ -44,7 +44,7 @@ När du klickar på widgeten visas en utfällningsruta där du kan hitta mer inf
 
 Du kan också gå till den här informationssidan  när du väljer insikten när du har klickat på Visa alla i området **& rekommendationer** på (**Instrumentpanelen** \> **Rapporter** eller <https://protection.office.com/insightdashboard> ).
 
-Om du vill förhindra automatisk vidarebefordran av meddelanden till externa domäner konfigurerar du en fjärrdomän för vissa eller alla externa domäner. Mer information finns i [Hantera fjärrdomäner i Exchange Online.](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)
+Om du vill förhindra automatisk vidarebefordran av meddelanden till externa domäner konfigurerar du en fjärrdomän för vissa eller alla externa domäner. Mer information finns i [Hantera fjärrdomäner i Exchange Online](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains).
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

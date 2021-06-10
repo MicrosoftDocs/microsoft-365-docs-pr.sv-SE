@@ -38,7 +38,7 @@ Widgeten visar den TLS-kryptering som används för anslutningen när meddelande
 Informationen i widgeten är relaterad till kopplingar och TLS-meddelandeskydd i Microsoft 365. Mer information finns i följande avsnitt:
 
 - [Konfigurera e-postflöde med kopplingar](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
-- [Så här använder Exchange Online TLS för att skydda e-postanslutningar](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
+- [Hur Exchange Online TLS för att skydda e-postanslutningar](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
 - [Teknisk referensinformation om kryptering i Microsoft 365](../../compliance/technical-reference-details-about-encryption.md)
 
 ## <a name="message-protected-in-transit-by-tls"></a>Meddelande som skyddas under överföring (av TLS)
@@ -49,16 +49,16 @@ När du klickar **på Visa** information på widgeten visas TLS-skyddet för med
 
 För närvarande är TLS 1.2 den säkraste versionen av TLS som erbjuds av Microsoft 365. Ofta måste du känna till den TLS-kryptering som används för granskningar av efterlevnad. Du har förmodligen inte en direkt relation till de flesta käll- och mål-e-postservrarna (du äger dem inte och inte Microsoft), så du har inte många alternativ för att förbättra TLS-krypteringen som används av de servrarna.
 
-Men du kan använda kopplingar [för](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) att få bästa tillgängliga TLS-skydd för meddelanden som skickas mellan dina e-postservrar och Microsoft 365. E-postflödet mellan Microsoft 365 och dina egna e-postservrar eller servrar som tillhör dina partners är ofta viktigare och känsligare än vanliga meddelanden, så du bör tillämpa extra säkerhet och uppmärksamhet på dessa meddelanden.
+Men du kan använda kopplingar [för att](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) säkerställa bästa tillgängliga TLS-skydd för meddelanden som skickas mellan dina e-postservrar och Microsoft 365. E-postflödet mellan Microsoft 365 och dina egna e-postservrar eller servrar som tillhör dina partners är ofta viktigare och känsligare än vanliga meddelanden, så du bör tillämpa extra säkerhet och uppmärksamhet på dessa meddelanden.
 
-Du kan uppgradera eller åtgärda dina egna e-postservrar för att förbättra den TLS-kryptering som används, eller kontakta dina partners för att göra samma sak. I **kopplingsrapporten visas** både volymen för e-postflödet och TLS-krypteringen för meddelanden som använder dina Microsoft 365-kopplingar.
+Du kan uppgradera eller åtgärda dina egna e-postservrar för att förbättra den TLS-kryptering som används, eller kontakta dina partners för att göra samma sak. I **kopplingsrapporten visas** både volymen för e-postflödet och TLS-krypteringen för meddelanden som Microsoft 365-kopplingarna.
 
 Du kan klicka på **kopplingsrapportlänken** om du vill gå till [kopplingsrapporten.](view-mail-flow-reports.md#connector-report) Följande information kan vara tillgänglig på sidan **för kopplingsrapport** om det associerade villkoret har upptäckts:
 
 - **Inkommande partneranslutning ser betydande TLS1.0-e-postflöde**
 - **Inkommande onpremises-anslutning ser betydande TLS1.0-e-postflöde**
 
-För TLS 1.0-anslutningar måste du få din e-postserver eller din partners server uppgraderad eller åtgärdad för att undvika problem när TLS 1.0-supporten förr eller senare kommer att vara inaktuell i Microsoft 365.
+För TLS 1.0-anslutningar måste du få din e-postserver eller din partners server uppgraderad eller åtgärdad för att undvika problem när TLS 1.0-supporten så småningom är inaktuell i Microsoft 365.
 
 ## <a name="see-also"></a>Se även
 

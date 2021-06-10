@@ -280,8 +280,6 @@
 #### [Hämta uppdateringar för antivirusprogram och program mot skadlig programvara](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Hantera källor för skyddsuppdateringar av Microsoft Defender Antivirus](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Hantera schemat för när skyddsuppdateringar ska laddas ned och tillämpas](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-#####  [Hantera gradvis distributionsprocess för Microsoft Defender-uppdateringar](updates.md)
-#####  [Konfigurera gradvis distributionsprocess för Microsoft Defender-uppdateringar](configure-updates.md)
 ##### [Hantera uppdateringar och genomsökningar för slutpunkter som utgått för Microsoft Defender Antivirus](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Hantera uppdateringar för mobila enheter och virtuella datorer(VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -513,8 +511,9 @@
 
 ###### [Indikatorer]()
 ####### [Indikatormetoder och -egenskaper](ti-indicator.md)
-####### [Skicka indikator](post-ti-indicator.md)
 ####### [Lista indikatorer](get-ti-indicators-collection.md)
+####### [Skicka indikator](post-ti-indicator.md)
+####### [Importera indikator](import-ti-indicators.md)
 ####### [Ta bort indikator](delete-ti-indicator-by-id.md)
 
 ###### [IP]()

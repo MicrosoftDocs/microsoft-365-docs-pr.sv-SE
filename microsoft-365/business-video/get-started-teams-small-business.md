@@ -1,5 +1,5 @@
 ---
-title: Komma igång med Teams
+title: Kom i gång med Teams
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -27,7 +27,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52537373"
 ---
-# <a name="get-started-with-teams"></a>Komma igång med Teams
+# <a name="get-started-with-teams"></a>Kom i gång med Teams
 
 Om du bara har börjat ändra ditt företag för att kunna arbeta på distans har du kommit till rätt ställe. Med Microsoft 365 kan du hantera ett företag virtuellt och hålla kontakten med dina anställda, partner och kunder via [onlinemöten,](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)chattar, fildelning och samtal Microsoft Teams. 
 

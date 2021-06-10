@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c7b39b600af2fed130a0b78a590740a8bc063f50
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822328"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861701"
 ---
 # <a name="web-content-filtering"></a>Filtrering av webbinnehåll
 
@@ -61,7 +61,9 @@ Innan du provar den här funktionen bör du kontrollera att du uppfyller följan
 
 - Windows 10 Enterprise E5 Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security eller Microsoft Defender för slutpunkten som är fristående licens. 
 - Åtkomst till Microsoft Defender Säkerhetscenter portal ( https://securitycenter.windows.com) .
-- Enheter som Windows 10 Anniversary Update (version 1607) eller senare med den senaste uppdateringen av Microsoft Defender-program mot skadlig programvara.
+- Enheter som kör Windows 10 Anniversary Update (version 1607) eller senare med den senaste Mo FUNKTIONEN-uppdateringen.
+- Windows Defender SmartScreen och nätverksskydd aktiverade.
+
 
 ## <a name="data-handling"></a>Datahantering
 
@@ -162,4 +164,11 @@ Använd tidsintervallsfiltret längst upp till vänster på sidan för att välj
 
 - Rapporterna för webbinnehållsfiltrering är för närvarande begränsade till att visa de 5 000 högsta posterna. Till exempel visar rapporten Domäner endast det högsta antalet 5 000 domäner för en viss filterfråga, om tillämpligt. 
 
+
+
+- [Översikt över webbskydd](web-protection-overview.md)
+- [Skydd mot webbhot](web-threat-protection.md)
+- [Övervaka webbsäkerhet](web-protection-monitoring.md)
+- [Svara på webbhot](web-protection-response.md)
+- [Krav för nätverksskydd](web-content-filtering.md)
 

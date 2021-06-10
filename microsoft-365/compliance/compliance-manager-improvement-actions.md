@@ -46,7 +46,7 @@ Du kan enkelt visa nästa eller föregående förbättringsåtgärd i listan gen
 
 Om du vill börja använda implementering av en förbättringsåtgärd kan du göra arbetet själv eller tilldela det till en annan användare. Den tilldelade personen kan vara:
 
-- En företagspolicyägare
+- En ägare till en affärspolicy
 - En IT-implementerare
 - En annan anställd med ansvar för att utföra uppgiften
 

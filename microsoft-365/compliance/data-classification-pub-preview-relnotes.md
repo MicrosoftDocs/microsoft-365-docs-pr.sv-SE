@@ -48,6 +48,6 @@ Tack för din värdefulla feedback om OneDrive integration under vårt förhands
 - [Komma igång med dataklassificering (förhandsversion)](data-classification-overview.md)
 - [Visa aktivitet med etiketter (förhandsvisning)](data-classification-activity-explorer.md)
 - [Visa märkt innehåll (förhandsvisning)](data-classification-content-explorer.md)
-- [Lär dig mer om känslighetsetiketter](sensitivity-labels.md)
-- [Läs mer om bevarandeprinciper och bevarandeetiketter](retention.md)
+- [Mer information om känslighetsetiketter](sensitivity-labels.md)
+- [Mer information om kvarhållningsprinciper och kvarhållningsetiketter](retention.md)
 - [Entitetsdefinitioner för typer av känslig information](sensitive-information-type-entity-definitions.md)

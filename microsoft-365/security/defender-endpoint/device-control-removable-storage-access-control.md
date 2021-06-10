@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cf8e74a6886d7086da062d6258e3e1e1a1cbd730
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841192"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861725"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender för endpoint-enhetskontroll, flyttbar Storage access-kontroll
 
@@ -42,13 +42,17 @@ Med Microsoft Defender för Endpoint Device Control Storage och Access Control k
 ## <a name="prepare-your-endpoints"></a>Förbered dina slutpunkter
 
 Distribuera Flyttbart Storage Access Control på Windows 10-enheter med klientversionen mot skadlig programvara **version 4.18.2103.3 eller senare.**
-1. **4.18.2104** eller senare: Add SerialNumberId, VID_PID, filepath-baserat GPO-stöd
+1. **4.18.2104** eller senare: Add SerialNumberId, VID_PID, filepath-baserat GPO-stöd, ComputerSid
 
 2. **4.18.2105** eller senare: Lägg till stöd för jokertecken för HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, kombinationen av en specifik användare på en specifik dator, removeable SSD (en SanDisk Extreme SSD)/USB Attached MORD (UAS) stöd
 
 :::image type="content" source="images/powershell.png" alt-text="PowerShell-gränssnittet":::
 
+   > [!NOTE]
+   > Ingen av Windows-säkerhet komponenter måste vara aktiva, du kan köra Flyttbara Storage Access Control oberoende av Windows-säkerhet status.
+
 ## <a name="policy-properties"></a>Principegenskaper
+
 
 Du kan använda följande egenskaper till att skapa en flyttbar lagringsgrupp:
 
@@ -87,6 +91,8 @@ Mer information om varje **enhetsegenskap finns** i avsnittet Enhetsegenskaper o
 
     - MatchAny: Attributen under DescriptorIdList blir **Eller relationen;** Om administratören till exempel placerar DeviceID och InstancePathID, för varje anslutet USB-minne, kommer systemet att upprätthålla tillämpning så länge USB-minnet har antingen ett identiskt **DeviceID-** eller **InstanceID-värde.**
 
+
+
 Här är egenskaperna för principegenskaper för åtkomstkontroll:
 
 **Egenskapsnamn: PolicyRuleId**
@@ -124,6 +130,14 @@ I följande exempel visas användningen av GroupID:
     - AuditDenied: Definierar meddelande och händelse när åtkomst nekas. måste arbeta tillsammans med **den nekade** posten.
 
 När det finns konflikttyper för samma media används den första i principen i systemet. Ett exempel på en konflikt är **Tillåt** **och Neka.**
+
+**Egenskapsnamn: Sid**
+
+1. Beskrivning: Definierar om den här principen ska användas i en viss användare eller användargrupp. en post kan ha maximalt en Sid och en post utan sid innebär att principen tillämpas på datorn.
+
+**Egenskapsnamn: DatorSid**
+
+1. Beskrivning: Definierar om den här principen ska användas i en viss dator eller datorgrupp. En post kan ha maximalt en ComputerSid och en post utan ComputerSid innebär att principen tillämpas på datorn. Om du vill använda en Post för en viss användare och en viss dator lägger du till både Sid och DatorSid i samma Post.
 
 **Egenskapsnamn: Alternativ**
 

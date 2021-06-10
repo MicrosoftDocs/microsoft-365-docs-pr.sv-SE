@@ -58,7 +58,7 @@ Stegvisa instruktioner för hur du placerar en postlåda i bevarande av juridisk
   
 - [Placera en postlåda i Bevarande av juridiska skäl](create-a-litigation-hold.md)
 
-- [Läs mer om bevarandeprinciper och bevarandeetiketter](retention.md)
+- [Mer information om kvarhållningsprinciper och kvarhållningsetiketter](retention.md)
 
 > [!NOTE]
 > För principer för kvarhållning av juridiska skäl kan du skapa ett obegränsat bevarande eller ett tidsbaserat bevarande. När ett obegränsat antal sparas innehållet i den inaktiva postlådan i all evighet, eller tills du tar bort det eller tills varaktigheten för varaktigheten ändras. När bevarande- eller bevarandeprincipen har tagits bort (förutsatt att postlådan togs bort för mer än 183 dagar sedan) markeras den inaktiva postlådan för permanent borttagning och innehållet i postlådan kommer inte längre att behållas eller upptäckas. I en tidsbaserad bevarandeprincip eller bevarandeprincip anger du varaktigheten för bevarandet. Varaktigheten beräknas per objekt och beräknas från det datum då ett postlådeobjekt togs emot eller skapades. När undantaget för ett postlådeobjekt upphör att gälla och objektet flyttas till eller finns i mappen Återställningsbara objekt i den inaktiva postlådan tas objektet bort permanent (rensas) från den inaktiva postlådan när bevarandeperioden för borttagna objekt löper ut. 
@@ -74,7 +74,7 @@ När postlådan är satt på bevarande eller en bevarandeprincip tillämpas på 
 
 Så här visar du en lista över inaktiva postlådor i organisationen:
 
-1. Gå till <https://compliance.microsoft.com> och logga in med autentiseringsuppgifterna för ett administratörskonto i din organisation.
+1. Gå till <https://compliance.microsoft.com> och logga in med autentiseringsuppgifterna för ett administratörskonto i organisationen.
 
 2. I det vänstra navigeringsfönstret i Microsoft 365 kompatibilitetscenter klickar du på Visa **alla** och sedan på **Informationsstyrning > Bevarande.**
 
@@ -109,9 +109,9 @@ Du kan komma åt innehållet i den inaktiva postlådan med hjälp av verktyget I
   
 - [Innehållssökning](content-search.md)
 
-- [Exportera sökresultat](export-search-results.md)
+- [Exportera sökresultaten](export-search-results.md)
 
-Här är några saker att tänka på när du söker i inaktiva postlådor.
+Här är några saker att tänka på vid sökning i inaktiva postlådor.
   
 - Om en innehållssökning inkluderar en användarpostlåda och postlådan görs inaktiv fortsätter innehållssökningen att söka i den inaktiva postlådan när du kör sökningen igen efter att den blivit inaktiv.
 
