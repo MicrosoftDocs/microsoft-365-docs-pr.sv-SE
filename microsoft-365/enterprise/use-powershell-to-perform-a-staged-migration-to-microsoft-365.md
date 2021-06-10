@@ -27,12 +27,12 @@ ms.locfileid: "50924798"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan migrera innehållet i användarpostlådor från ett källsystem för e-post till Microsoft 365 med tiden med hjälp av en sådan migrering.
+Du kan migrera innehållet i användarpostlådor från ett källsystem för e-Microsoft 365 över tid med hjälp av en sådan migrering.
   
-I den här artikeln får du hjälp med uppgifterna som ingår i en sådan e-postmigrering med Exchange Online PowerShell. I avsnittet Vad [du behöver veta om en sådan e-postmigrering](/Exchange/mailbox-migration/what-to-know-about-a-staged-migration)får du en översikt över migreringsprocessen. När du har bekantat dig med innehållet i den artikeln kan du använda den här för att börja migrera postlådor från ett e-postsystem till ett annat.
+I den här artikeln får du hjälp med de olika uppgifterna som ingår i en sådan e-postmigrering Exchange Online PowerShell. I avsnittet Vad [du behöver veta om en sådan e-postmigrering](/Exchange/mailbox-migration/what-to-know-about-a-staged-migration)får du en översikt över migreringsprocessen. När du har bekantat dig med innehållet i den artikeln kan du använda den här för att börja migrera postlådor från ett e-postsystem till ett annat.
   
 > [!NOTE]
-> Du kan också använda administrationscentret för Exchange för att utföra en stegad migrering. Mer [information finns i Utföra en stegad migrering av e-post till Microsoft 365.](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration) 
+> Du kan också använda Exchange för att utföra en stegad migrering. Mer [information finns i Utföra en stegad migrering av e-post till Microsoft 365](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration). 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -40,7 +40,7 @@ Beräknad tid för att slutföra den här uppgiften: 2–5 minuter för att skap
   
 Du måste ha tilldelats behörigheter för att kunna utföra den här proceduren eller procedurerna. Du kan se vilka behörigheter du behöver i migreringsposten i [avsnittet Behörigheter för](/exchange/recipients-permissions-exchange-2013-help) mottagare.
   
-Om du vill använda Exchange Online PowerShell-cmdlets måste du logga in och importera cmdletarna till din lokala Windows PowerShell-session. Instruktioner [finns i Ansluta till Exchange Online med fjärr-PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+Om du vill Exchange Online för PowerShell-cmdlets måste du logga in och importera cmdletarna i dina lokala Windows PowerShell session. Instruktioner [Anslut finns Exchange Online använda fjärr-PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
   
 En fullständig lista över migreringskommandon finns i [Flytta och migrera cmdlets.](/powershell/exchange/)
   
@@ -48,9 +48,9 @@ En fullständig lista över migreringskommandon finns i [Flytta och migrera cmdl
 
 ### <a name="step-1-prepare-for-a-staged-migration"></a>Steg 1: Förbereda en stegvis migrering
 
-Innan du migrerar postlådor till Microsoft 365 med hjälp av en stegmigrering finns det några ändringar du måste göra i Exchange-miljön.
+Innan du migrerar postlådor Microsoft 365 migrering genom en stegad migrering finns det några ändringar du måste göra i Exchange miljö.
   
- **Konfigurera Outlook överallt på din lokala Exchange Server** E-postmigreringstjänsten använder Outlook överallt (som även kallas RPC över HTTP) för att ansluta till din lokala Exchange Server. Mer information om hur du ställer in Outlook överallt för Exchange Server 2007 och Exchange 2003 finns i följande avsnitt:
+ **Konfigurera Outlook överallt på din lokala Exchange Server** E-postmigreringstjänsten använder Outlook överallt (som även kallas RPC över HTTP) för att ansluta till din lokala Exchange Server. Mer information om hur du 2007 Outlook finns i Exchange Server 2007 och Exchange 2003 finns i:
   
 - [Exchange 2007: Aktivera Outlook överallt](/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
     
@@ -75,7 +75,7 @@ Innan du migrerar postlådor till Microsoft 365 med hjälp av en stegmigrering f
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **Ange behörigheter** Det lokala användarkonto som du använder för att ansluta till den lokala Exchange-organisationen (kallas även migreringsadministratör) måste ha nödvändiga behörigheter för att få åtkomst till de lokala postlådor som du vill migrera till Microsoft 365. Det här användarkontot används när du ansluter till ditt e-postsystem genom att skapa en migreringsslutpunkt senare i den här proceduren ( Steg[3: Skapa en migreringsslutpunkt](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Endpoint) ).
+ **Ange behörigheter** Det lokala användarkonto som du använder för att ansluta till din lokala Exchange-organisation (kallas även migreringsadministratör) måste ha nödvändiga behörigheter för att få åtkomst till de lokala postlådor som du vill migrera till Microsoft 365. Det här användarkontot används när du ansluter till ditt e-postsystem genom att skapa en migreringsslutpunkt senare i den här proceduren ( Steg[3: Skapa en migreringsslutpunkt](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Endpoint) ).
   
 För att kunna migrera postlådor måste administratören ha någon av följande behörigheter:
   
@@ -93,18 +93,18 @@ Anvisningar om hur du anger behörigheterna finns i Tilldela [behörigheter för
   
  **Inaktivera Unified Messaging (UM)** Om UM är aktiverat för de lokala postlådorna som du migrerar, stänger du av UM före migreringen. Aktivera UM för postlådorna när migreringen är klar. Instruktioner finns i Inaktivera[Unified Messaging.](/previous-versions/office/exchange-server-2007/bb124691(v=exchg.80))
   
- **Använd katalogsynkronisering för att skapa nya användare i Microsoft 365.** Du använder katalogsynkronisering för att skapa alla lokala användare i din Microsoft 365-organisation.
+ **Använd katalogsynkronisering för att skapa nya användare i Microsoft 365.** Du använder katalogsynkronisering för att skapa alla lokala användare i Microsoft 365 organisation.
   
 Du måste licensiera användarna när de har skapats. Du har 30 dagar på dig att lägga till licenser efter att användarna skapats. Information om hur du lägger till licenser finns [i Steg 8: Slutför uppgifter efter migreringen.](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Postmigration)
   
- Du kan antingen använda synkroniseringsverktyget för Microsoft Azure Active Directory (Azure AD) eller Microsoft Azure AD-synkroniseringstjänster för att synkronisera och skapa lokala användare i Microsoft 365. När postlådorna har migrerats till Microsoft 365 hanterar du användarkonton i den lokala organisationen och de synkroniseras med Microsoft 365-organisationen. Mer information finns i[Katalogintegrering](/previous-versions/azure/azure-services/jj573653(v=azure.100)) .
+ Du kan använda synkroniseringsverktyget för Microsoft Azure Active Directory (Azure AD) eller Microsoft Azure AD-synkroniseringstjänster för att synkronisera och skapa dina lokala användare i Microsoft 365. När postlådor migreras till Microsoft 365 hanterar du användarkonton i den lokala organisationen och de synkroniseras med din Microsoft 365 organisation. Mer information finns i[Katalogintegrering](/previous-versions/azure/azure-services/jj573653(v=azure.100)) .
   
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>Steg 2: Skapa en CSV-fil för en stegvis migreringsbatch
 
-När du har identifierat de användare vars lokala postlådor du vill migrera till Microsoft 365 använder du en CSV-fil (kommaavgränsade värden) för att skapa en migreringsbatch. Varje rad i CSV-filen – som används av Microsoft 365 för att köra migreringen – innehåller information om en lokal postlåda. 
+När du har identifierat de användare vars lokala postlådor du vill migrera till Microsoft 365, använder du en CSV-fil (kommaavgränsade värden) för att skapa en migreringsbatch. Varje rad i CSV-filen – som används Microsoft 365 för att köra migreringen – innehåller information om en lokal postlåda. 
   
 > [!NOTE]
-> Det finns ingen gräns för antalet postlådor som du kan migrera till Microsoft 365 med en sådan migrering. CSV-filen för en migreringsbatch rymmer högst 2 000 rader. Om du vill migrera fler än 2 000 postlådor måste du skapa ytterligare CSV-filer och använda varje fil för att skapa en ny batch. 
+> Det finns ingen gräns för antalet postlådor som du kan migrera till Microsoft 365 med en stegmigrering. CSV-filen för en migreringsbatch rymmer högst 2 000 rader. Om du vill migrera fler än 2 000 postlådor måste du skapa ytterligare CSV-filer och använda varje fil för att skapa en ny batch. 
   
  **Attribut som stöds**
   
@@ -112,9 +112,9 @@ CSV-filen för en stegvis migrering har stöd för följande tre attribut. Varje
   
 |**Attribut**|**Beskrivning**|**Obligatorisk**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |Anger den primära SMTP-e-postadressen, till exempel pilarp@contoso.com, för lokala postlådor.  <br/> Använd den primära SMTP-adressen för lokala postlådor och inte användar-ID från Microsoft 365. Om den lokala domänen heter contoso.com men Microsoft 365-e-postdomänen heter service.contoso.com använder du då contoso.com-domännamnet för e-postadresser i CSV-filen.  <br/> |Obligatoriskt  <br/> |
-|Lösenord  <br/> |Det lösenord som anges för den nya Microsoft 365-postlådan. Alla lösenordsbegränsningar som tillämpas på din Microsoft 365-organisation gäller även lösenorden som ingår i CSV-filen.  <br/> |Valfri  <br/> |
-|ForceChangePassword  <br/> |Anger om användaren måste ändra lösenord första gången han eller hon loggar in till sin nya Microsoft 365-postlåda. Använd **True** eller **False** för den här parameterns värde. <br/> > [!NOTE]> Om du har implementerat en lösning för enkel inloggning (SSO) genom att distribuera AD FS (Active Directory Federation Services) eller större i den lokala organisationen måste du använda **False** för värdet på **ForceChangePassword-attributet.**          |Valfri  <br/> |
+|EmailAddress  <br/> |Anger den primära SMTP-e-postadressen, till exempel pilarp@contoso.com, för lokala postlådor.  <br/> Använd den primära SMTP-adressen för lokala postlådor och inte användar-IDt från Microsoft 365. Om den lokala domänen heter contoso.com men Microsoft 365-e-postdomänen heter service.contoso.com använder du contoso.com-domännamnet för e-postadresser i CSV-filen.  <br/> |Obligatoriskt  <br/> |
+|Lösenord  <br/> |Det lösenord som anges för den nya e Microsoft 365 postlådan. Alla lösenordsbegränsningar som tillämpas på Microsoft 365 organisationen gäller även lösenorden som ingår i CSV-filen.  <br/> |Valfri  <br/> |
+|ForceChangePassword  <br/> |Anger om användaren måste ändra lösenord första gången han eller hon loggar in till sin nya e Microsoft 365 postlåda. Använd **True** eller **False** för den här parameterns värde. <br/> > [!NOTE]> Om du har implementerat en lösning för enkel inloggning (SSO) genom att distribuera AD FS (Active Directory Federation Services) eller större i den lokala organisationen måste du använda **False** för värdet på **ForceChangePassword-attributet.**          |Valfri  <br/> |
    
  **CSV-filformat**
   
@@ -131,7 +131,7 @@ briant@contoso.com,Pa$$w0rd,False
 
 Varje rad under rubrikraden representerar en användare och ger den information som ska användas för att migrera användarens postlåda. Attributvärdena på varje rad måste vara placerade i samma ordning som attributnamnen på rubrikraden. 
   
-Skapa CSV-filen med valfri textredigerare eller ett program som Excel. Spara filen som CSV eller TXT.
+Använd en textredigerare eller ett program som Excel för att skapa CSV-filen. Spara filen som CSV eller TXT.
   
 > [!NOTE]
 > Om CSV-filen innehåller specialtecken eller andra tecken än ASCII-tecken sparar du CSV-filen med UTF-8-kodning eller annan Unicode-kodning. Beroende på vilket program du använder kan det vara enklare att spara CSV-filen med UTF-8-kodning eller annan Unicode-kodning när systemspråket på datorn matchar språket som används i CSV-filen. 
@@ -139,11 +139,11 @@ Skapa CSV-filen med valfri textredigerare eller ett program som Excel. Spara fil
 ### <a name="step-3-create-a-migration-endpoint"></a>Steg 3: Skapa en migreringsslutpunkt
 <a name="BK_Endpoint"> </a>
 
-För att e-post ska migreras måste Microsoft 365 ansluta till och kommunicera med käll-e-postsystemet. För att göra det använder Microsoft 365 en migreringsslutpunkt. Om du vill skapa en migreringsslutpunkt för Outlook överallt med hjälp av PowerShell ska du, för en sådan migrering, [först ansluta till Exchange Online.](/powershell/exchange/connect-to-exchange-online-powershell) 
+För att e-post ska Microsoft 365 kunna ansluta till och kommunicera med käll-e-postsystemet. För att göra det Microsoft 365 en migreringsslutpunkt. Om du vill skapa Outlook migreringsslutpunkt för var som helst med hjälp av PowerShell för steg-migrering [ska du först ansluta till Exchange Online.](/powershell/exchange/connect-to-exchange-online-powershell) 
   
 En fullständig lista över migreringskommandon finns i [Flytta och migrera cmdlets.](/powershell/exchange/)
   
-Om du vill skapa en migreringsslutpunkt för Outlook överallt som kallas "StagedEndpoint" i Exchange Online PowerShell kör du följande kommandon:
+Om du vill Outlook en migreringsslutpunkt för överallt som kallas "StagedEndpoint" i Exchange Online PowerShell kör du följande kommandon:
   
 ```powershell
 $Credentials = Get-Credential
@@ -160,7 +160,7 @@ Mer information om **cmdleten New-MigrationEndpoint** finns i [New-MigrationEndp
   
 #### <a name="verify-it-worked"></a>Kontrollera att det fungerade
 
-Kör följande kommando i Exchange Online PowerShell för att visa information om migreringsslutpunkten "StagedEndpoint":
+I Exchange Online PowerShell kör du följande kommando för att visa information om migreringsslutpunkten "StagedEndpoint":
   
 ```powershell
 Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,UseAutoDiscover,Max*
@@ -169,7 +169,7 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 ### <a name="step-4-create-and-start-a-stage-migration-batch"></a>Steg 4: Skapa och starta en batch för stegvis migrering
 <a name="BK_Endpoint"> </a>
 
-Du kan använda cmdleten **New-MigrationBatch** i Exchange Online PowerShell för att skapa en migreringsbatch för en migreringsbatch. Du kan skapa en migreringsbatch och starta den automatiskt genom att ta med _parametern AutoStart._ Alternativt kan du skapa migreringsbatchen och sedan starta den manuellt efteråt med hjälp av cmdleten **Start-MigrationBatch.** Det här exemplet skapar en migreringsbatch med namnet "StagedBatch1" och använder migreringsslutpunkten som skapades i föregående steg.
+Du kan använda **cmdleten New-MigrationBatch** i Exchange Online PowerShell för att skapa en migreringsbatch för en cutover-migrering. Du kan skapa en migreringsbatch och starta den automatiskt genom att ta med _parametern AutoStart._ Alternativt kan du skapa migreringsbatchen och sedan starta den manuellt efteråt med hjälp av cmdleten **Start-MigrationBatch.** Det här exemplet skapar en migreringsbatch med namnet "StagedBatch1" och använder migreringsslutpunkten som skapades i föregående steg.
   
 ```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart
@@ -200,16 +200,16 @@ Mer information om cmdleten **Get-MigrationBatch** finns i [Get-MigrationBatch.]
 ### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>Steg 5: Konvertera lokala postlådor till e-postanvändare
 <a name="BK_Endpoint"> </a>
 
-När du har migrerat en grupp postlådor måste användarna kunna komma åt sin e-post. En användare vars postlåda har migrerats har nu både en postlåda lokalt och en i Microsoft 365. Användare som har en postlåda i Microsoft 365 får inte fler e-postmeddelanden till sina lokala postlådor. 
+När du har migrerat en grupp postlådor måste användarna kunna komma åt sin e-post. En användare vars postlåda har migrerats har nu både en postlåda lokalt och en i Microsoft 365. Användare som har en postlåda Microsoft 365 får inte nya e-postmeddelanden till sina lokala postlådor. 
   
-Eftersom du inte är klar med dina migreringar än kan du inte hänvisa alla användare till Microsoft 365 för deras e-post. Vad gör man då med de personer som har båda postlådorna? En sak som du kan göra är att ändra de lokala postlådorna som du redan har migrerat till e-postanvändare. När du ändrar från postlåda till e-postanvändare kan du hänvisa användaren till Microsoft 365 i stället för att gå till användarens lokala postlåda. 
+Eftersom du inte är klar med dina migreringar än, kan du inte hänvisa alla användare till de Microsoft 365 för sin e-post. Vad gör man då med de personer som har båda postlådorna? En sak som du kan göra är att ändra de lokala postlådorna som du redan har migrerat till e-postanvändare. När du ändrar från postlåda till e-postanvändare kan du dirigera användaren till Microsoft 365 för sin e-post i stället för att gå till den lokala postlådan. 
   
-En annan viktig anledning till att konvertera lokala postlådor till e-postanvändare är att man kan behålla proxyadresser från Microsoft 365-postlådorna genom att kopiera proxyadresser till e-postaktiverade användare. Med den här funktionen kan du hantera molnbaserade användare från din lokala organisation genom att använda Active Directory. Om du bestämmer dig för att inaktivera den lokala Exchange Server-organisationen när alla postlådor har migrerats till Microsoft 365 finns proxyadresserna som du har kopierat till de e-postaktiverade användarna även kvar i din lokala Active Directory.
+En annan viktig anledning till att konvertera lokala postlådor till e-postanvändare är att man kan behålla proxyadresser från Microsoft 365-postlådorna genom att kopiera proxyadresser till e-postaktiverade användare. Med den här funktionen kan du hantera molnbaserade användare från din lokala organisation genom att använda Active Directory. Om du bestämmer dig för att inaktivera din lokala Exchange Server-organisation när alla postlådor har migrerats till Microsoft 365, finns proxyadresserna som du har kopierat till de e-postaktiverade användarna även kvar i din lokala Active Directory.
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>Steg 6: Ta bort en stegvis migreringsbatch
 <a name="BK_Endpoint"> </a>
 
- När alla postlådor i en migreringsbatch har migrerats korrekt, och du har konverterat de lokala postlådorna i batchen till e-postaktiverade användare, är du redo att ta bort en stegad migreringsbatch. Kontrollera att e-post vidarebefordras till Microsoft 365-postlådorna i migreringsbatchen. När du tar bort en stegad migreringsbatch rensar migreringstjänsten bort alla poster som är relaterade till migreringsbatchen och tar bort migreringsbatchen.
+ När alla postlådor i en migreringsbatch har migrerats korrekt, och du har konverterat de lokala postlådorna i batchen till e-postaktiverade användare, är du redo att ta bort en stegad migreringsbatch. Kontrollera att e-post vidarebefordras till postlådorna Microsoft 365 postlådorna i migreringsbatchen. När du tar bort en stegad migreringsbatch rensar migreringstjänsten bort alla poster som är relaterade till migreringsbatchen och tar bort migreringsbatchen.
   
 Om du vill ta bort migreringsbatchen "StagedBatch1" i Exchange Online PowerShell kör du följande kommando.
   
@@ -231,15 +231,15 @@ Kommandot returnerar antingen migreringsbatchen med statusen Ta **bort,** eller 
   
 Mer information om cmdleten **Get-MigrationBatch** finns i [Get-MigrationBatch.](/powershell/module/exchange/get-migrationbatch)
   
-### <a name="step7-assign-licenses-to-microsoft-365-users"></a>Steg7: Tilldela licenser till Microsoft 365-användare
+### <a name="step7-assign-licenses-to-microsoft-365-users"></a>Steg7: Tilldela licenser till Microsoft 365 användare
 <a name="BK_Endpoint"> </a>
 
-Aktivera Microsoft 365-användarkonton för de migrerade kontona genom att tilldela licenser. Om du inte tilldelar en licens inaktiveras postlådan när tidsfristen löper ut (30 dagar). Information om hur du tilldelar en licens i administrationscentret för Microsoft 365 finns i [Tilldela eller ta bort licenser.](../admin/manage/assign-licenses-to-users.md)
+Aktivera Microsoft 365-postkonton för de migrerade kontona genom att tilldela licenser. Om du inte tilldelar en licens inaktiveras postlådan när tidsfristen löper ut (30 dagar). Information om hur du tilldelar en licens Microsoft 365 administrationscentret finns i [Tilldela eller ta bort licenser.](../admin/manage/assign-licenses-to-users.md)
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Steg 8: Slutför uppgifter efter migreringen
 <a name="BK_Postmigration"> </a>
 
-- **Skapa en DNS-post för automatisk upptäckt så att användarna enkelt kan komma till sina postlådor.** När alla lokala postlådor har migrerats till Microsoft 365 kan du konfigurera en DNS-post för automatisk upptäckt för Microsoft 365-organisationen så att användare enkelt kan ansluta till sina nya Microsoft 365-postlådor med Outlook och mobila klienter. Den nya DNS-posten för automatisk upptäckt måste använda samma namnområde som du använder för Microsoft 365-organisationen. Om ditt molnbaserade namnområde till exempel är cloud.contoso.com, behöver du skapa DNS-posten autodiscover.cloud.contoso.com.
+- **Skapa en DNS-post för automatisk upptäckt så att användarna enkelt kan komma till sina postlådor.** När alla lokala postlådor har migrerats till Microsoft 365 kan du konfigurera en DNS-post för automatisk upptäckt för Microsoft 365-organisationen så att användarna enkelt kan ansluta till sina nya Microsoft 365-postlådor med Outlook och mobila klienter. Den nya DNS-posten för automatisk upptäckt måste använda samma namnområde som du använder för din Microsoft 365 organisation. Om ditt molnbaserade namnområde till exempel är cloud.contoso.com, behöver du skapa DNS-posten autodiscover.cloud.contoso.com.
     
     Microsoft 365 använder en CNAME-post för att implementera tjänsten för automatisk upptäckt för Outlook och mobila klienter. CNAME-posten för automatisk upptäckt måste innehålla följande information:
     
@@ -249,7 +249,7 @@ Aktivera Microsoft 365-användarkonton för de migrerade kontona genom att tilld
     
     Mer information finns i Lägga [till DNS-poster för att ansluta din domän.](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
-- **Inaktivera lokala Exchange-servrar.** När du har kontrollerat att all e-post dirigeras direkt till Microsoft 365-postlådorna och du inte längre behöver underhålla din lokala e-postorganisation eller inte planerar att implementera en SSO-lösning, kan du avinstallera Exchange från dina servrar och ta bort din lokala Exchange-organisation.
+- **Inaktivera lokala Exchange-servrar.** När du har verifierat att all e-post dirigeras direkt till Microsoft 365-postlådorna och du inte längre behöver underhålla din lokala e-postorganisation eller inte planerar att implementera en SSO-lösning, kan du avinstallera Exchange från servrarna och ta bort din lokala Exchange organisation.
     
     Mer information finns i följande avsnitt:
     

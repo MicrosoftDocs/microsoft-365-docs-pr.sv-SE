@@ -96,7 +96,7 @@ Om du bara vill visa händelser eller tekniker väljer **du Filter** på enheten
 
 
 ## <a name="see-also"></a>Se även
-- [Visa och ordna listan Enheter](machines-view-overview.md)
+- [Visa och ordna Enhetslista](machines-view-overview.md)
 - [Händelseflaggor i Microsoft Defender för slutpunktsenhetstid](device-timeline-event-flag.md) 
 
 

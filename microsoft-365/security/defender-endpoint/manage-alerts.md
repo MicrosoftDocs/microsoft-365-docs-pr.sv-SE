@@ -50,7 +50,7 @@ Om en avisering ännu inte har tilldelats kan du välja **Tilldela till mig och*
 
 
 ## <a name="suppress-alerts"></a>Utelämna aviseringar
-Det kan finnas scenarier där du behöver dölja aviseringar från att visas i Microsoft Defender Säkerhetscenter. Med Defender för slutpunkt kan du skapa regler för särskilda varningar som är kända för att vara obesvarade, till exempel kända verktyg och processer i organisationen.
+Det kan finnas scenarier där du behöver hindra aviseringar från att visas i Microsoft Defender Säkerhetscenter. Med Defender för slutpunkt kan du skapa regler för särskilda varningar som är kända för att vara obesvarade, till exempel kända verktyg och processer i organisationen.
 
 Regler som måste skapas utifrån en befintlig avisering. De kan inaktiveras och återaktiveras om det behövs.
 
@@ -98,7 +98,7 @@ Skapa anpassade regler för att styra när aviseringar utelämnas eller matchas.
 
 #### <a name="view-the-list-of-suppression-rules"></a>Visa listan över regler för regler
 
-1. I navigeringsfönstret väljer du Inställningar  >  **Avisering – sekretess.**
+1. I navigeringsfönstret väljer du **Inställningar**  >  **aviseringsvarning**.
 
 2. Listan med regelregler visar alla regler som användare i organisationen har skapat.
 
@@ -126,7 +126,7 @@ Tillagda kommentarer visas direkt i fönstret.
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Hantera regelhanter](manage-suppression-rules.md)
+- [Hantera undertryckande regler](manage-suppression-rules.md)
 - [Visa och ordna kön Microsoft Defender för slutpunktsaviseringar](alerts-queue.md)
 - [Undersöka Microsoft Defender för slutpunktsaviseringar](investigate-alerts.md)
 - [Undersöka en fil som är kopplad till en Microsoft Defender för slutpunktsavisering](investigate-files.md)

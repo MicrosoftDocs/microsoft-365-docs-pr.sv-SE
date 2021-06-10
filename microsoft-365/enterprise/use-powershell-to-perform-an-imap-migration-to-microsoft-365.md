@@ -27,10 +27,10 @@ ms.locfileid: "50924774"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Som en del av distributionen av Microsoft 365 kan du välja att migrera innehållet i användarpostlådor från en E-posttjänst med IMAP (Internet Mail Access Protocol) till Microsoft 365. I den här artikeln får du hjälp med uppgifterna för en IMAP-migrering av e-post med Exchange Online PowerShell. 
+Som en del av distributionen av Microsoft 365 kan du välja att migrera innehållet i användarpostlådor från en E-posttjänst med IMAP (Internet Mail Access Protocol) till Microsoft 365. I den här artikeln får du hjälp med uppgifterna för en IMAP-migrering av e-post med hjälp Exchange Online PowerShell. 
   
 > [!NOTE]
-> Du kan också använda administrationscentret för Exchange för att utföra en IMAP-migrering. Se [Migrera dina IMAP-postlådor.](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes) 
+> Du kan också använda Exchange för att utföra en IMAP-migrering. Se [Migrera dina IMAP-postlådor.](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes) 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -38,7 +38,7 @@ Beräknad tid för att slutföra den här uppgiften: 2–5 minuter för att skap
   
 Du måste ha tilldelats behörigheter för att kunna utföra den här proceduren eller procedurerna. Du kan se vilka behörigheter du behöver i migreringsposten i en tabell i [avsnittet Behörigheter för](/exchange/recipients-permissions-exchange-2013-help) mottagare.
   
-Om du vill använda Exchange Online PowerShell-cmdlets måste du logga in och importera cmdletarna till din lokala Windows PowerShell-session. Instruktioner [finns i Ansluta till Exchange Online med fjärr-PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+Om du vill Exchange Online för PowerShell-cmdlets måste du logga in och importera cmdletarna i dina lokala Windows PowerShell session. Instruktioner [Anslut finns Exchange Online använda fjärr-PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
   
 En fullständig lista över migreringskommandon finns i [Flytta och migrera cmdlets.](/powershell/exchange/)
   
@@ -55,17 +55,17 @@ Följande begränsningar gäller för IMAP-migreringar:
 ### <a name="step-1-prepare-for-an-imap-migration"></a>Steg 1: Förbereda en IMAP-migrering
 <a name="BK_Step1"> </a>
 
-- **Om du har en domän för din IMAP-organisation lägger du till den som en godkänd domän i din Microsoft 365-organisation.** Om du vill använda samma domän som du redan äger för dina Microsoft 365-postlådor måste du först lägga till den som en godkänd domän i Microsoft 365. När du har lagt till det kan du skapa dina användare i Microsoft 365. Mer information finns i[Verifiera din domän.](../admin/setup/add-domain.md)
+- **Om du har en domän för din IMAP-organisation lägger du till den som en godkänd domän i Microsoft 365 organisation.** Om du vill använda samma domän som du redan äger för dina Microsoft 365-postlådor måste du först lägga till den som en godkänd domän för att Microsoft 365. När du har lagt till den kan du skapa dina användare i Microsoft 365. Mer information finns i[Verifiera din domän.](../admin/setup/add-domain.md)
     
-- **Lägg till alla användare i Microsoft 365 så att de har en postlåda.** Anvisningar finns i Lägga[till användare i Microsoft 365 för företag.](../admin/add-users/add-users.md)
+- **Lägg till alla användare Microsoft 365 så att de har en postlåda.** Anvisningar finns i Lägga[till användare i Microsoft 365 för företag.](../admin/add-users/add-users.md)
     
 - **Hämta FQDN för IMAP-servern**. Du måste ange det fullständiga kvalificerade domännamnet (FQDN) (det fullständiga datornamnet) för IMAP-servern som du ska migrera e-postdata från när du skapar en IMAP-migreringsslutpunkt. Använd en IMAP-klient eller kommandot PING och kontrollera att du kan använda det fullständiga domännamnet för att kommunicera med IMAP-servern över Internet.
     
-- **Konfigurera brandväggen så att IMAP-anslutningar tillåts.** Du kanske måste öppna portar i brandväggen för den organisation som är värd för IMAP-servern så att nätverkstrafik som kommer från Microsoft-datacentret under migreringen tillåts att ange organisationen som är värd för IMAP-servern. En lista över IP-adresser som används av Microsofts datacenter finns i [URL-adresser och IP-adressintervall för Exchange Online.](./urls-and-ip-address-ranges.md)
+- **Konfigurera brandväggen så att IMAP-anslutningar tillåts.** Du kanske måste öppna portar i brandväggen för den organisation som är värd för IMAP-servern så att nätverkstrafik som kommer från Microsoft-datacentret under migreringen tillåts att ange organisationen som är värd för IMAP-servern. En lista över IP-adresser som används av Microsofts datacenter finns i Exchange Online [URL:er och IP-adressintervall.](./urls-and-ip-address-ranges.md)
     
 - **Tilldela administratörskontobehörigheter för åtkomst till postlådor i din IMAP-organisation.** Om du använder administratörsautentiseringsuppgifter i CSV-filen måste det konto som du använder ha nödvändig åtkomstbehörighet till de lokala postlådorna. Vilka behörigheter som krävs för att få åtkomst till användarnas postlådor bestäms av den specifika IMAP-servern. 
     
-- **Om du vill använda Exchange Online PowerShell-cmdlets** måste du logga in och importera cmdletarna till din lokala Windows PowerShell-session. Instruktioner [finns i Ansluta till Exchange Online med fjärr-PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+- **Om du vill använda Exchange Online PowerShell-cmdlets** måste du logga in och importera cmdletarna till den lokala Windows PowerShell-sessionen. Instruktioner [Anslut finns Exchange Online använda fjärr-PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
     
     En fullständig lista över migreringskommandon finns i [Flytta och migrera cmdlets.](/powershell/exchange/)
     
@@ -84,7 +84,7 @@ Identifiera den grupp användare vars postlådor du vill migrera i en IMAP-migre
   
 Här är de obligatoriska attributen för varje användare: 
   
-- **EmailAddress** anger användar-ID:t för användarens Microsoft 365-postlåda.
+- **EmailAddress** anger användar-ID:t för användarens e Microsoft 365 postlåda.
     
 - **UserName** anger inloggningsnamnet för kontot som ska användas för att få åtkomst till postlådan på IMAP-servern.
     
@@ -152,18 +152,18 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ### <a name="step-3-create-an-imap-migration-endpoint"></a>Steg 3: Skapa en IMAP-migreringsslutpunkt
 <a name="BK_Step3"> </a>
 
-För att e-post ska migreras måste Microsoft 365 ansluta till och kommunicera med käll-e-postsystemet. För att göra det använder Microsoft 365 en migreringsslutpunkt. Migreringsslutpunkten definierar också antalet postlådor som ska migreras samtidigt och antalet postlådor som ska synkroniseras samtidigt under stegvis synkronisering, som sker en gång per dygn. Om du vill skapa en migreringsslutpunkt för IMAP-migrering [måste du först ansluta till Exchange Online.](/powershell/exchange/connect-to-exchange-online-powershell) 
+Om du vill migrera e-Microsoft 365 måste du ansluta till och kommunicera med käll-e-postsystemet. För att göra det Microsoft 365 en migreringsslutpunkt. Migreringsslutpunkten definierar också antalet postlådor som ska migreras samtidigt och antalet postlådor som ska synkroniseras samtidigt under stegvis synkronisering, som sker en gång per dygn. Om du vill skapa en migreringsslutpunkt för IMAP-migrering [måste du först ansluta till Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). 
   
 En fullständig lista över migreringskommandon finns i [Flytta och migrera cmdlets.](/powershell/exchange/)
   
-Om du vill skapa slutpunkten för IMAP-migrering som kallas "IMAPEndpoint" i Exchange Online PowerShell kör du följande kommando:
+Om du vill skapa slutpunkten för IMAP-migrering med namnet "IMAPEndpoint" i Exchange Online PowerShell kör du följande kommando:
   
 ```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 993 -Security Ssl
 
 ```
 
-Du kan också lägga till parametrar för att ange samtidig migrering, samtidig stegvis migrering och den port som ska användas. Följande Exchange Online PowerShell-kommando skapar en IMAP-migreringsslutpunkt som kallas "IMAPEndpoint" som stöder 50 samtidiga migreringar och upp till 25 samtidiga stegvisa synkroniseringar. Slutpunkten konfigureras också att använda port 143 för TLS-kryptering.
+Du kan också lägga till parametrar för att ange samtidig migrering, samtidig stegvis migrering och den port som ska användas. Följande PowerShell Exchange Online kommando skapar en IMAP-migreringsslutpunkt som kallas "IMAPEndpoint" som stöder 50 samtidiga migreringar och upp till 25 samtidiga stegvisa synkroniseringar. Slutpunkten konfigureras också att använda port 143 för TLS-kryptering.
   
 ```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 143 -Security Tls -MaxConcurrentMigrations
@@ -185,7 +185,7 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
 
 Du kan använda cmdleten [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) för att skapa en migreringsbatch för en IMAP-migrering. Du kan skapa en migreringsbatch och starta den automatiskt genom att ta med _parametern AutoStart._ Alternativt kan du skapa migreringsbatchen och sedan starta den efteråt med hjälp av cmdleten[Start-MigrationBatch.](/powershell/module/exchange/start-migrationbatch)
   
-Följande Exchange Online PowerShell-kommando startar automatiskt migreringsbatchen med namnet "IMAPBatch1" med hjälp av IMAP-slutpunkten som kallas "IMAPEndpoint":
+Följande Exchange Online PowerShell-kommando startar automatiskt migreringsbatchen "IMAPBatch1" med hjälp av IMAP-slutpunkten som kallas "IMAPEndpoint":
   
 ```powershell
 New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\IMAPmigration_1.csv")) -AutoStart
@@ -208,7 +208,7 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>Steg 5: Dirigera din e-post till Microsoft 365
 <a name="BK_Step5"> </a>
 
-Email systems use a DNS record called an MX record to figure out where to deliver emails. Under e-postmigreringsprocessen pekade MX-posten på ditt käll-e-postsystem. Nu när e-postmigrering till Microsoft 365 är klar är det dags att peka MX-posten på Microsoft 365. Då ser du till att e-posten levereras till dina Microsoft 365-postlådor. Genom att flytta MX-posten kan du också stänga av ditt gamla e-postsystem när du är redo. 
+Email systems use a DNS record called an MX record to figure out where to deliver emails. Under e-postmigreringsprocessen pekade MX-posten på ditt käll-e-postsystem. Nu när e-postmigrering till Microsoft 365 är slutförd är det dags att peka MX-posten på Microsoft 365. Då ser du till att e-posten levereras till Microsoft 365 postlådor. Genom att flytta MX-posten kan du också stänga av ditt gamla e-postsystem när du är redo. 
   
 För många DNS-leverantörer finns det särskilda anvisningar för hur du ändrar MX-posten. Om din DNS-leverantör inte finns med, eller om du bara [](https://go.microsoft.com/fwlink/?LinkId=397449) allmänt vill se hur anvisningarna ser ut, finns det även allmänna anvisningar för MX-posten.
   
@@ -217,11 +217,11 @@ Det kan ta upp till 72 timmar innan dina kunder och partners e-postsystem känne
 ### <a name="step-6-delete-imap-migration-batch"></a>Steg 6: Ta bort IMAP-migreringsbatchen
 <a name="BK_Step6"> </a>
 
-När du har ändrat MX-posten och verifierat att all e-post dirigeras till postlådor i Microsoft 365 informerar du användarna om att deras e-post kommer till Microsoft 365. Därefter kan du ta bort IMAP-migreringsbatchen. Kontrollera följande innan du tar bort migreringsbatchen.
+När du har ändrat MX-posten och verifierat att all e-post dirigeras till Microsoft 365 postlådorna meddelar du användarna att deras e-post kommer att Microsoft 365. Därefter kan du ta bort IMAP-migreringsbatchen. Kontrollera följande innan du tar bort migreringsbatchen.
   
-- Alla användare använder Microsoft 365-postlådor. När batchen har tagits bort kopieras inte e-post som skickas till postlådorna på den lokala Exchange Server till motsvarande Microsoft 365-postlådor.
+- Alla användare använder en Microsoft 365 postlådor. När batchen tagits bort kopieras inte e-post som skickas till postlådorna Exchange Server lokala postlådorna till motsvarande Microsoft 365 postlådor.
     
-- Microsoft 365-postlådor synkroniserades minst en gång efter att e-posten började skickas direkt till dem. Det gör du genom att kontrollera att värdet i rutan Senaste synkronisering är senare än när e-posten började dirigeras direkt till Microsoft 365-postlådorna.
+- Microsoft 365 postlådorna synkroniserades minst en gång efter att e-posten började skickas direkt till dem. Det gör du genom att kontrollera att värdet i rutan Senast synkroniserad tid för migreringsbatchen är senare än när e-posten började dirigeras direkt till Microsoft 365 postlådor.
     
 Om du vill ta bort migreringsbatchen "IMAPBatch1" från Exchange Online PowerShell kör du följande kommando:
   

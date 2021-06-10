@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Oavsett om det handlar om att lägga till nya lösningar till efterlevnadscentret, uppdatera befintliga funktioner baserat på din feedback eller distribuera ny och uppdaterad dokumentation hjälper Microsoft 365 dig att hålla dig uppdaterad om den föränderliga miljön för efterlevnad. Ta reda på vad vi har gjort den här månaden.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: d312b3ac3c2cb43e05a09936f1e5c07b32c22ef1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706624"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843252"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nyheter i Microsoft 365 Efterlevnad
 
@@ -75,7 +75,7 @@ Här är några av de ändringar Microsoft 365 av efterlevnadslösningar och inn
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- **Advanced eDiscovery nu** med stöd för verktyget [och arbetsflödet för nya samlingar.](/microsoft-365/compliance/collections-overview) Andra nya ämnen är [att skapa ett utkast ,](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)spara ett utkast [till](/microsoft-365/compliance/commit-draft-collection)en granskningsuppsättning och samla in statistik [och rapporter.](/microsoft-365/compliance/collection-statistics-reports)
+- **Advanced eDiscovery nu** med stöd för verktyget [och arbetsflödet för nya samlingar.](/microsoft-365/compliance/collections-overview) Andra nya ämnen är [att skapa ett utkast ,](/microsoft-365/compliance/create-draft-collection)spara ett utkast [till](/microsoft-365/compliance/commit-draft-collection)en granskningsuppsättning och samla in statistik [och rapporter.](/microsoft-365/compliance/collection-statistics-reports)
 - **Exportera dokument** i en granskning som är inställd på [Azure Storage](/microsoft-365/compliance/download-export-jobs) konto.
 - **Prediktiv kodningsmodul för Advanced eDiscovery**. Titta först på de nya [funktionerna för förutsägelsekodning](/microsoft-365/compliance/predictive-coding-overview) som ersätter den indragna relevansmodulen.
 
@@ -169,22 +169,22 @@ Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
 Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
-- [Läs mer om Slutpunkt DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Skicka e-postaviseringar och visa principtips för DLP-principer](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [Lär dig mer Microsoft 365 skanner för dataförlustskydd på en lokal skanner](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [Komma igång med dataförlustskydd i lokal skanner](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
-- [Skapa en DLP-princip för att skydda dokument med FCI eller andra egenskaper](https://docs.microsoft.com/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [Använda dataförlustskydd för slutpunkter](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-using)
-- [Komma igång med dataförlustskydd för slutpunkt](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started)
+- [Läs mer om Slutpunkt DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Skicka e-postaviseringar och visa principtips för DLP-principer](/microsoft-365/compliance/use-notifications-and-policy-tips)
+- [Lär dig mer Microsoft 365 skanner för dataförlustskydd på en lokal skanner](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [Komma igång med dataförlustskydd i lokal skanner](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
+- [Skapa en DLP-princip för att skydda dokument med FCI eller andra egenskaper](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
+- [Använda dataförlustskydd för slutpunkter](/microsoft-365/compliance/endpoint-dlp-using)
+- [Komma igång med dataförlustskydd för slutpunkter](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>eDiscovery
 
 Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
-- [Dekryptering i Microsoft 365 eDiscovery-verktyg](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-decryption)
-- [Nyckelordsfrågor och sökvillkor](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [Relevansmodulen i Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/relevance-module-retirement)
-- [Använda ett skript för att lägga till användare i ett ärende för bas-eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
+- [Dekryptering i Microsoft 365 eDiscovery-verktyg](/microsoft-365/compliance/ediscovery-decryption)
+- [Nyckelordsfrågor och sökvillkor](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
+- [Relevansmodulen i Advanced eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
+- [Använda ett skript för att lägga till användare i ett ärende för bas-eDiscovery](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
 
 ### <a name="encryption"></a>Kryptering
 
@@ -192,30 +192,30 @@ Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
 #### <a name="azure-rights-management-service-rms"></a>Azure Rights Management Service (RMS)
 
-- [Kundhanterade krypterings funktioner](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [Exchange Online e-postkryptering med AD RMS](https://docs.microsoft.com/microsoft-365/compliance/information-rights-management-in-exchange-online). Supporten för den här tjänsten har tagits bort. Du kan inte längre använda AD RMS i en Exchange-hybridmiljö. Migrera i stället till Azure RMS.
+- [Kundhanterade krypterings funktioner](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
+- [Exchange Online e-postkryptering med AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). Supporten för den här tjänsten har tagits bort. Du kan inte längre använda AD RMS i en Exchange-hybridmiljö. Migrera i stället till Azure RMS.
 
 #### <a name="customer-key"></a>Customer Key
 
-- [Kundnyckel för Microsoft 365 på innehavarnivå](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level)
-- [Översikt över säkerhet och efterlevnad](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+- [Kundnyckel för Microsoft 365 på innehavarnivå](/microsoft-365/compliance/customer-key-tenant-level)
+- [Översikt över säkerhet och efterlevnad](/microsoftteams/security-compliance-overview)
 
 #### <a name="information-rights-management-irm"></a>IRM (Information Rights Management)
 
-- [Tillämpa IRM (Information Rights Management) på en lista eller ett bibliotek.](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) De här nationella molnen stöder inte den här inställningen:
+- [Tillämpa IRM (Information Rights Management) på en lista eller ett bibliotek.](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) De här nationella molnen stöder inte den här inställningen:
     - Microsoft Cloud for US Government
     - Microsoft Cloud Germany
     - Azure och Microsoft 365 som drivs av 21Vianet i Kina)
-- [Konfigurera IRM för användning av en lokal AD RMS-server](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Stöd för den här tjänsten Exchange en e-posthybridmiljö har tagits bort.
+- [Konfigurera IRM för användning av en lokal AD RMS-server](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Stöd för den här tjänsten Exchange en e-posthybridmiljö har tagits bort.
 
 ### <a name="sensitive-information-types"></a>Typer av känslig information
 
 Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
-- [Mer information om typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [Skapa en anpassad typ av känslig information med PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Skapa en anpassad typ av känslig information med exakt datamatchning baserad klassificering](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Entitetsdefinitioner för typer av känslig information](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [Mer information om typer av känslig information](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [Skapa en anpassad typ av känslig information med PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [Skapa en anpassad typ av känslig information med exakt datamatchning baserad klassificering](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [Entitetsdefinitioner för typer av känslig information](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 
 ### <a name="sensitivity-labels"></a>Känslighetsetiketter

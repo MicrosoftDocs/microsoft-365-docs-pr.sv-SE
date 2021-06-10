@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ca429ca1fea125450fdbb8d1f3a0e3a745513d8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 56d4ac95ab49310cc5fc74168158672e7a0d65d1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245702"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843228"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Vanliga frågor och svar om att minska attackytan
 
@@ -127,7 +127,7 @@ Behåll regeln i granskningsläge i ca 30 dagar för att få en bra baslinje fö
 
 ## <a name="im-making-the-switch-from-a-third-party-security-solution-to-defender-for-endpoint-is-there-an-easy-way-to-export-rules-from-another-security-solution-to-asr"></a>Jag byter från en säkerhetslösning från tredje part till Defender för Endpoint. Finns det ett "enkelt" sätt att exportera regler från en annan säkerhetslösning till ASR?
 
-I de flesta fall är det enklare och bättre att börja med de baslinjerekommendationer som [föreslås](https://docs.microsoft.com/windows/security/threat-protection) av Defender för slutpunkt än att försöka importera regler från en annan säkerhetslösning. Använd sedan verktyg som granskningsläge, övervakning och analys för att konfigurera den nya lösningen så att den passar dina unika behov. 
+I de flesta fall är det enklare och bättre att börja med de baslinjerekommendationer som [föreslås](/windows/security/threat-protection) av Defender för slutpunkt än att försöka importera regler från en annan säkerhetslösning. Använd sedan verktyg som granskningsläge, övervakning och analys för att konfigurera den nya lösningen så att den passar dina unika behov. 
 
 Standardkonfigurationen för de flesta ASR-regler, i kombination med Defender för Endpoints realtidsskydd, kommer att skydda mot ett stort antal sårbarheter och svagheter.
 
@@ -135,7 +135,7 @@ I Defender för slutpunkten kan du uppdatera ditt skydd med anpassade indikatore
 
 ## <a name="does-asr-support-file-or-folder-exclusions-that-include-system-variables-and-wildcards-in-the-path"></a>Stöder ASR undantag för filer eller mappar som inkluderar systemvariabler och jokertecken i sökvägen?
 
-Ja. Mer information om hur du använder systemvariabler och jokertecken i uteslutna filsökvägar finns i Exkludera filer och mappar från [ASR-regler](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) och Konfigurera och validera undantag baserade på filnamnstillägg och mappsökväg. [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
+Ja. Mer information om hur du använder systemvariabler och jokertecken i uteslutna filsökvägar finns i Exkludera filer och mappar från [ASR-regler](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) och Konfigurera och validera undantag baserade på filnamnstillägg och mappsökväg. [](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
 
 ## <a name="do-asr-rules-cover-all-applications-by-default"></a>Täcker ASR-reglerna alla program som standard?
 
@@ -175,7 +175,7 @@ Eftersom många legitima processer under en vanlig dag kommer att anropa samtal 
 
 ## <a name="is-it-a-good-idea-to-enable-the-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-alongside-lsa-protection"></a>Är det en bra idé att aktivera regeln Blockera autentiseringsuppgifter som stjäls från *Windows lokala säkerhetsutfärdares undersystem (lsass.exe)*, tillsammans med LSA-skydd?
 
-Att aktivera den här regeln ger inte ytterligare skydd om du har [aktiverat LSA-skydd.](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Både regeln och LSA-skyddet fungerar på ungefär samma sätt, så att båda körs samtidigt är redundanta. Men ibland kanske du inte kan aktivera LSA-skydd. I sådana fall kan du aktivera den här regeln för att ge motsvarande skydd mot skadlig programvara som är lsass.exe.
+Att aktivera den här regeln ger inte ytterligare skydd om du har [aktiverat LSA-skydd.](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Både regeln och LSA-skyddet fungerar på ungefär samma sätt, så att båda körs samtidigt är redundanta. Men ibland kanske du inte kan aktivera LSA-skydd. I sådana fall kan du aktivera den här regeln för att ge motsvarande skydd mot skadlig programvara som är lsass.exe.
 
 ## <a name="see-also"></a>Se även
 
@@ -183,6 +183,6 @@ Att aktivera den här regeln ger inte ytterligare skydd om du har [aktiverat LSA
 * [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)
 * [Anpassa regler för minskning av attackytan](customize-attack-surface-reduction.md)
 * [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
-* [Kompatibilitet med Microsoft Defender med annat antivirusprogram/program mot skadlig programvara](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+* [Kompatibilitet med Microsoft Defender med annat antivirusprogram/program mot skadlig programvara](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 

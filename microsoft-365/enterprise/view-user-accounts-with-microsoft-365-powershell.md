@@ -19,7 +19,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: Lär dig hur du visar, visar eller visar dina Microsoft 365-användarkonton på olika sätt med PowerShell.
+description: Lär dig hur du visar, listar eller visar Microsoft 365-användarkonton på olika sätt med PowerShell.
 ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -31,11 +31,11 @@ ms.locfileid: "50924654"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan använda administrationscentret för Microsoft 365 för att visa kontona för Microsoft 365-klienten. PowerShell för Microsoft 365 aktiverar detta men ger även ytterligare funktioner.
+Du kan använda Microsoft 365 administrationscenter för att visa kontona för Microsoft 365 klientorganisationen. PowerShell för Microsoft 365 detta men ger även ytterligare funktioner.
   
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph-modulen
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph modul
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 ### <a name="view-all-accounts"></a>Visa alla konton
 
@@ -76,7 +76,7 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 Som standard visar **cmdlet:en Get-AzureADUser** endast egenskaperna *ObjectID,* *DisplayName* *och UserPrincipalName* för konton.
 
-Om du vill vara mer selektiv när det gäller egenskaper som ska visas använder du cmdleten **Select** i kombination med cmdleten **Get-AzureADUser.** Om du vill kombinera de två cmdletarna använder du "pipe"-tecknet ("|"), som talar om för Azure Active Directory PowerShell för Graph att ta resultatet från ett kommando och skicka det till nästa kommando. Här är ett exempelkommando som visar *DisplayName,* *Department* och *UsageLocation* för varje användarkonto:
+Om du vill vara mer selektiv när det gäller egenskaper som ska visas använder du cmdleten **Select** i kombination med cmdleten **Get-AzureADUser.** Om du vill kombinera de två cmdletarna använder du "pipe"-tecknet ("|"), som talar om för Azure Active Directory PowerShell för Graph att ta resultaten från ett kommando och skicka det till nästa kommando. Här är ett exempelkommando som visar *DisplayName,* *Department* och *UsageLocation* för varje användarkonto:
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
@@ -104,9 +104,9 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 
 Användarkonton har två källor: 
 
-- Windows Server Active Directory (AD), är konton som synkroniseras från lokal AD till molnet.
+- Windows Server Active Directory (AD), som är konton som synkroniseras från lokal AD till molnet.
 
-- Azure Active Directory-konton (Azure AD) AD-konton, som skapas direkt i molnet.
+- Azure Active Directory (Azure AD) AD-konton, som skapas direkt i molnet.
 
 
 Följande kommando instruerar PowerShell att få alla användare som har *attributet DirSyncEnabled* inställt på *Sant.* Du kan använda den för att hitta konton som synkroniseras från den lokala AD.
@@ -123,7 +123,7 @@ Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
 
 ### <a name="view-accounts-based-on-a-common-property"></a>Visa konton baserat på en gemensam egenskap
 
-Om du vill vara mer selektiv när det gäller listan med konton som ska visas kan du använda cmdleten **Where** i kombination med **cmdleten Get-AzureADUser.** Om du vill kombinera de två cmdletarna använder du "pipe"-tecknet ("|"), som talar om för Azure Active Directory PowerShell för Graph att ta resultatet från ett kommando och skicka det till nästa kommando. Här är ett exempelkommando som endast visar de användarkonton som har en ospecificerad användningsplats:
+Om du vill vara mer selektiv när det gäller listan med konton som ska visas kan du använda cmdleten **Where** i kombination med **cmdleten Get-AzureADUser.** Om du vill kombinera de två cmdletarna använder du "pipe"-tecknet ("|"), som talar om för Azure Active Directory PowerShell för Graph att ta resultaten från ett kommando och skicka det till nästa kommando. Här är ett exempelkommando som endast visar de användarkonton som har en ospecificerad användningsplats:
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
@@ -151,9 +151,9 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 >  Syntaxen för  cmdleten Where i de här exemplen **är Where {$ \_ .** [användarnamn för användarkontoegenskap] [jämförelseoperator] [värde] **}**.> [jämförelseoperator] är **-eq** för lika med, **-ne** för inte lika med, **-lt** för mindre än, **-gt** för större än och andra.  [värde] är vanligtvis en sträng (en sekvens med bokstäver, siffror och andra tecken), ett numeriskt värde eller **$Null** ospecificerat värde. Mer information finns i [Var](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
   
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory för Windows PowerShell
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="view-all-accounts"></a>Visa alla konton
 
@@ -315,7 +315,7 @@ Scott Wallace            Operations
 
 Om du använder katalogsynkronisering för att skapa och hantera dina Microsoft 365-användare kan du visa det lokala konto som en Microsoft 365-användare har projicerats från. I följande exempel antas att:
 
-- Azure AD Connect är konfigurerat att använda standardkällans fästpunkt för ObjectGUID. (Mer information om hur du konfigurerar en fästpunkt för källor finns [i Azure AD Connect: Designkoncept](/azure/active-directory/hybrid/plan-connect-design-concepts)).
+- Azure AD Anslut är konfigurerat att använda standardkällans fästpunkt för ObjectGUID. (Mer information om hur du konfigurerar en fästpunkt för källor finns [i Azure AD Anslut: Designkoncept](/azure/active-directory/hybrid/plan-connect-design-concepts)).
 - Modulen Active Directory Domain Services för PowerShell har installerats (se [RSAT-verktyg](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)).
 
 ```powershell

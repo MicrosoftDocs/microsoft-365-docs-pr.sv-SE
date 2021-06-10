@@ -37,7 +37,7 @@ ms.locfileid: "51185951"
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
-1. Välj Inställningar Indikatorer i  >  **navigeringsfönstret.**
+1. Välj Ta fram Inställningar  >  **i navigeringsfönstret.**
 
 2. Välj fliken för den entitetstyp som du vill hantera.  
 
@@ -49,7 +49,7 @@ Du kan också välja att ladda upp en CSV-fil som definierar attribut för indik
 
 Ladda ned CSV-exemplet för att ta fram de kolumnattribut som stöds.
 
-1. Välj Inställningar Indikatorer i  >  **navigeringsfönstret.**
+1. Välj Ta fram Inställningar  >  **i navigeringsfönstret.**
 
 2. Välj fliken för den enhetstyp som du vill importera indikatorer för.
 
@@ -61,7 +61,7 @@ Ladda ned CSV-exemplet för att ta fram de kolumnattribut som stöds.
 
 I följande tabell visas de parametrar som stöds.
 
-Parameter | Skriv    |   Beskrivning
+Parameter | Typ    |   Beskrivning
 :---|:---|:---
 indicatorType | Uppräkning | Typ av indikator. Möjliga värden är: "FileSha1", "FileSha256", "IpAddress", "DomainName" och "Url". **Obligatoriskt**
 indicatorValue | Sträng | Identiteten för [indikatorenheten.](ti-indicator.md) **Obligatoriskt**
@@ -81,5 +81,5 @@ Mer information finns i [Microsoft Defender för slutpunktsvarningskategorier](h
 ## <a name="see-also"></a>Se även
 - [Skapa indikatorer](manage-indicators.md)
 - [Skapa indikatorer för filer](indicator-file.md)
-- [Skapa indikatorer för IP-adresser och URL:er/domäner](indicator-ip-domain.md)
+- [Skapa indikatorer för IP:er och URL:er/domäner](indicator-ip-domain.md)
 - [Skapa indikatorer baserade på certifikat](indicator-certificates.md)

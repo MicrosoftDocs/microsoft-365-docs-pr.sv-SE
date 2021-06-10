@@ -48,11 +48,11 @@ ms.locfileid: "50924874"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Supporten för Microsoft Office SharePoint Server **2007** tog slut den 10 oktober 2017. Om du inte har migrerat från SharePoint Server 2007 till Microsoft 365 eller en nyare version av SharePoint Server lokalt, är det dags att börja planera nu. Den här artikeln innehåller resurser som hjälper dig att migrera data till SharePoint Online eller uppgradera SharePoint Server lokalt.
+Supporten **för den 10 oktober 2017** Microsoft Office SharePoint server 2007. Om du inte har migrerat från SharePoint Server 2007 till Microsoft 365 eller en nyare version av SharePoint Server lokalt, är det dags att börja planera nu. Den här artikeln innehåller resurser som hjälper dig att migrera data SharePoint Online eller uppgradera SharePoint server lokalt.
   
 ## <a name="what-does-end-of-support-mean"></a>Vad innebär *slutet av supporten?*
 
-SharePoint Server har, som de flesta Microsoft-produkter, en supportlivscykel under vilken Microsoft tillhandahåller nya funktioner, programkorrigeringar, säkerhetskorrigeringar med mer. En livscykel varar vanligtvis i tio år från produktens första version. Slutet av perioden kallas för slutet av supporten för produkten. Efter supportens slut tillhandahåller Microsoft inte längre:
+SharePoint Servern har, som de flesta Microsoft-produkter, en supportlivscykel under vilken Microsoft tillhandahåller nya funktioner, programkorrigeringar, säkerhetskorrigeringar med mer. En livscykel varar vanligtvis i tio år från produktens första version. Slutet av perioden kallas för slutet av supporten för produkten. Efter supportens slut tillhandahåller Microsoft inte längre:
   
 - Teknisk support för problem som kan uppstå.
     
@@ -62,12 +62,12 @@ SharePoint Server har, som de flesta Microsoft-produkter, en supportlivscykel un
     
 - Tidszonsuppdateringar.
     
-SharePoint Server 2007-servergruppen kommer fortfarande att fungera efter 10 oktober 2017, men inga ytterligare uppdateringar, korrigeringar eller korrigeringar kommer att släppas för produkten, inklusive säkerhetskorrigeringar/korrigeringar. Microsoft Support har helt gått över till att stödja nyare versioner av produkten. Eftersom installationen inte längre stöds eller korrigeras bör du uppgradera produkten eller migrera viktiga data.
+Din SharePoint Server 2007-servergrupp kommer fortfarande att fungera efter 10 oktober 2017, men inga ytterligare uppdateringar, korrigeringar eller korrigeringar släpps för produkten, inklusive säkerhetskorrigeringar/korrigeringar. Microsoft Support har helt gått över till att stödja nyare versioner av produkten. Eftersom installationen inte längre stöds eller korrigeras bör du uppgradera produkten eller migrera viktiga data.
   
 > [!TIP]
-> Om du inte redan har planerat för uppgradering eller migrering kan du gå till: [SharePoint 2007](sharepoint-2007-migration-options.md) – Migreringsalternativ för att ta hänsyn till några exempel på var du kan börja. Du kan också söka efter [Microsoft-partner som](https://go.microsoft.com/fwlink/?linkid=841249) kan hjälpa dig med uppgraderingen eller Migrering till Microsoft 365 (eller båda).
+> Om du inte redan har planerat för uppgradering eller migrering kan du gå till: [SharePoint 2007– Migreringsalternativ](sharepoint-2007-migration-options.md) för att ta hänsyn till några exempel på var du kan börja. Du kan också söka efter [Microsoft-partner](https://go.microsoft.com/fwlink/?linkid=841249) som kan hjälpa dig med uppgraderingen Microsoft 365 migreringen (eller båda).
   
-Mer information om Office 2007-servrar och slutet på supporten finns i Resurser som hjälper dig att uppgradera från [Office 2007-servrar och -klienter.](upgrade-from-office-2007-servers-and-products.md)
+Mer information om Office 2007-servrar och slutet på supporten finns i Resurser som hjälper dig att uppgradera [från Office 2007-servrar och -klienter.](upgrade-from-office-2007-servers-and-products.md)
   
 ## <a name="what-are-my-options"></a>Vilka alternativ har jag?
 
@@ -86,20 +86,20 @@ Om du väljer ett alternativ som "tillräckligt bra" kommer du snart att behöva
   
 ## <a name="where-can-i-go-next"></a>Var hittar jag nästa steg?
 
-SharePoint Server kan installeras lokalt på dina egna servrar. Du kan också använda SharePoint Online, som är en onlinetjänst som ingår i Microsoft 365. Alternativen är:
+SharePoint Servern kan installeras lokalt på dina egna servrar. Du kan även använda SharePoint Online, som är en onlinetjänst som är en del av Microsoft 365. Alternativen är:
   
 - Migrera till SharePoint Online.
     
-- Uppgradera SharePoint Server lokalt.
+- Uppgradera SharePoint server lokalt.
     
 - Gör båda ovanstående.
     
-- Implementera en [SharePoint-hybridlösning.](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
+- Implementera en [SharePoint en hybridlösning.](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
     
-Tänk på dolda kostnader som gäller underhåll av en servergrupp, underhåll eller migrering av anpassningar och uppgradering av maskinvara som krävs för SharePoint Server. Att ha en lokal SharePoint-servergrupp är bra om det behövs. Men om du kör servergruppen på äldre SharePoint-servrar utan tung anpassning kan du dra nytta av migreringen till SharePoint Online.
+Tänk på dolda kostnader som gäller underhåll av en servergrupp, underhåll eller migrering av anpassningar och uppgradering av maskinvara som krävs SharePoint Server. Att ha en lokal SharePoint servergrupp är bra om det behövs. Men om du kör servergruppen på äldre SharePoint-servrar utan tung anpassning, kan du dra nytta av migreringen till SharePoint Online.
   
 > [!IMPORTANT]
-> Det finns ett annat alternativ om innehållet i SharePoint 2007 används sällan. Vissa SharePoint-administratörer väljer att skapa en Microsoft 365-prenumeration, konfigurera en ny SharePoint Online-webbplats och sedan rensa SharePoint 2007 och ta endast viktiga dokument till de nya SharePoint Online-webbplatserna. Data kan sedan tömmas från SharePoint 2007-webbplatsen till arkiven. Fundera över hur användarna arbetar med data från din SharePoint 2007-installation. Det kan finnas kreativa sätt att hantera dina behov.
+> Det finns ett annat alternativ om innehållet i SharePoint 2007 används sällan. Vissa SharePoint-administratörer väljer att skapa en Microsoft 365-prenumeration, skapar en ny SharePoint Online-webbplats och rensar sedan bort SharePoint 2007, vilket tar endast viktiga dokument till de nya SharePoint Online-webbplatserna. Data kan sedan tömmas från webbplatsen SharePoint 2007 till arkiven. Tänk på hur användarna arbetar med data från din SharePoint 2007-installation. Det kan finnas kreativa sätt att hantera dina behov.
   
 |**SharePoint Online (SPO)**|**SharePoint Server lokalt**|
 |:-----|:-----|
@@ -112,27 +112,27 @@ När du migrerar till Microsoft 365 får du en högre kostnad vid flytten, medan
   
 ### <a name="migrate-to-sharepoint-online"></a>Migrera till SharePoint Online
 
-Kontrollera att SharePoint Online har alla de funktioner du behöver. Se [Tjänstbeskrivningar för Microsoft 365 och Office 365.](/office365/servicedescriptions/office-365-service-descriptions-technet-library)
+Kontrollera att SharePoint Online har alla funktioner du behöver. Se [Microsoft 365 och Office 365 tjänstbeskrivningar](/office365/servicedescriptions/office-365-service-descriptions-technet-library).
   
-Du kan inte migrera direkt från SharePoint 2007 till SharePoint Online. Flytten till SharePoint Online gjordes manuellt. Om du uppgraderar till SharePoint Server 2013 eller SharePoint Server 2016 kan du använda migrerings-API:t för SharePoint (till exempel för att migrera information till OneDrive för företag).
+Du kan inte migrera direkt från SharePoint 2007 till SharePoint Online. Flytten till SharePoint online gjordes manuellt. Om du uppgraderar till SharePoint Server 2013 eller SharePoint Server 2016 kan du använda migrerings-API:t för SharePoint (till exempel för att migrera information till OneDrive för företag).
   
 |**Online-proffs**|**Online-con**|
 |:-----|:-----|
-|Microsoft tillhandahåller SPO-maskinvara och all maskinvaruadministration.  <br/> |Tillgängliga funktioner kan skilja sig mellan SharePoint Server lokalt och SPO.  <br/> |
-|Du är global administratör för prenumerationen och kan tilldela administratörer till SPO-webbplatser.  <br/> |Vissa åtgärder som är tillgängliga för en servergruppsadministratör i SharePoint Server lokalt finns inte eller ingår inte nödvändigtvis i administratörsrollen för SharePoint i Microsoft 365.  <br/> |
+|Microsoft tillhandahåller SPO-maskinvara och all maskinvaruadministration.  <br/> |Tillgängliga funktioner kan skilja sig SharePoint mellan Server lokalt och SPO.  <br/> |
+|Du är global administratör för prenumerationen och kan tilldela administratörer till SPO-webbplatser.  <br/> |Vissa åtgärder som är tillgängliga för en servergruppsadministratör i SharePoint Lokalt finns inte eller ingår inte nödvändigtvis i rollen SharePoint administratör i Microsoft 365.  <br/> |
 |Microsoft tillämpar korrigeringar, korrigeringar och uppdateringar för underliggande maskinvara och programvara. <br/> |Eftersom det inte finns åtkomst till det underliggande filsystemet i tjänsten är anpassningen begränsad.  <br/> |
 |Microsoft publicerar [serviceavtal och flyttar](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) snabbt för att lösa problem på tjänstnivå. <br/> |Säkerhetskopiering och återställning och andra återställningsalternativ automatiseras av tjänsten i SharePoint Online. Säkerhetskopior skrivs över om de inte används. <br/> |
-|Säkerhetstestning och serverprestandajustering utförs kontinuerligt i tjänsten av Microsoft. <br/> |Ändringar av användargränssnittet och andra SharePoint-funktioner installeras av tjänsten och kan behöva vara på eller av. <br/> |
-|Microsoft 365 uppfyller många branschstandarder: [Microsofts efterlevnadserbjudanden](/compliance/regulatory/offering-home).  <br/> |[FastTrack-hjälp](https://www.microsoft.com/fasttrack/microsoft-365) för migrering är begränsad.  <br/> Mycket av uppgraderingen sker manuellt eller via SPO-migrerings-API:t som beskrivs i översikten över innehållsmigrering i [SharePoint Online och OneDrive.](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)  <br/> |
-|Microsofts supporttekniker och anställda på datacenter har inte obegränsad administratörsåtkomst till prenumerationen. <br/> |Det kan till exempel bli ytterligare kostnader om maskinvaran behöver uppgraderas för att stödja den nyare versionen av SharePoint, eller om en sekundär servergrupp krävs för uppgraderingen.  <br/> |
-|Partner kan hjälpa till med det lediga jobbet att migrera dina data till SharePoint Online.  <br/> ||
+|Säkerhetstestning och serverprestandajustering utförs kontinuerligt i tjänsten av Microsoft. <br/> |Ändringar av användargränssnittet och SharePoint funktioner installeras av tjänsten och kan behöva vara på eller av. <br/> |
+|Microsoft 365 uppfyller många branschstandarder: [Microsofts efterlevnadserbjudanden](/compliance/regulatory/offering-home).  <br/> |[FastTrack-hjälp](https://www.microsoft.com/fasttrack/microsoft-365) för migrering är begränsad.  <br/> Mycket av uppgraderingen sker manuellt eller via SPO-migrerings-API:t som beskrivs i SharePoint Online OneDrive Översikt över [migreringsinnehåll.](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)  <br/> |
+|Microsofts supporttekniker och anställda på datacenter har inte obegränsad administratörsåtkomst till prenumerationen. <br/> |Det kan till exempel bli ytterligare kostnader om maskinvaran behöver uppgraderas för att stödja den nyare versionen av SharePoint eller om en sekundär servergrupp krävs för uppgraderingen.  <br/> |
+|Partners kan hjälpa till med det lediga jobbet att migrera dina data till SharePoint Online.  <br/> ||
 |Onlineprodukter uppdateras automatiskt. Även om funktionerna kanske förfasas finns det inget verkligt stöd. <br/> ||
    
-Om du har bestämt dig för att skapa en ny Microsoft 365-webbplats och manuellt migrerar data till den efter behov, kontrollerar du dina [Microsoft 365-alternativ.](https://www.microsoft.com/microsoft-365/)
+Om du har bestämt dig för att skapa en ny Microsoft 365-webbplats och manuellt migrerar data till den vid behov, kontrollera dina [Microsoft 365 .](https://www.microsoft.com/microsoft-365/)
   
-### <a name="upgrade-sharepoint-server-on-premises"></a>Uppgradera SharePoint Server lokalt
+### <a name="upgrade-sharepoint-server-on-premises"></a>Uppgradera SharePoint server lokalt
 
-Det går inte att hoppa över versioner i SharePoint-uppgraderingar. Uppgraderingarna går serien igenom:
+Det går inte att hoppa över versioner i SharePoint Uppgraderingar. Uppgraderingarna går serien igenom:
   
 - SharePoint 2007 \> SharePoint Server 2010 \> SharePoint Server 2013 \> SharePoint Server 2016
    
@@ -161,12 +161,12 @@ Om du har anpassningar är det viktigt att ha en plan för varje steg i migrerin
     
 |**Lokalt proffs**|**Lokal con**|
 |:-----|:-----|
-|Fullständig kontroll över alla aspekter av SharePoint-servergruppen, allt från servermaskinvara och uppåt.  <br/> |Alla avbrott och korrigeringar ansvarar ditt företag för (du kan kontakta betald Microsoft-support om din produkt inte har gått ut).  <br/> |
-|Fullständig funktionsuppsättning i SharePoint Server lokalt med alternativet att ansluta den lokala servergruppen till en SharePoint Online-prenumeration via hybrid.  <br/> |Uppgraderingar, korrigeringar, säkerhetskorrigeringar och allt underhåll av SharePoint Server hanteras lokalt.  <br/> |
+|Fullständig kontroll över alla aspekter av SharePoint servergrupp, allt från servermaskinvara och uppåt.  <br/> |Alla avbrott och korrigeringar ansvarar ditt företag för (du kan kontakta betald Microsoft-support om din produkt inte har gått ut).  <br/> |
+|Fullständig funktionsuppsättning i SharePoint server lokalt med alternativet att ansluta den lokala servergruppen till en SharePoint Online-prenumeration via hybrid.  <br/> |Uppgraderingar, korrigeringar, säkerhetskorrigeringar och allt underhåll SharePoint server hanteras lokalt.  <br/> |
 |Fullständig åtkomst för större anpassning.  <br/> |[Microsofts efterlevnadserbjudanden](/compliance/regulatory/offering-home) måste konfigureras manuellt lokalt.  <br/> |
-|Säkerhetstestning och serverprestandajustering utförs lokalt (under din kontroll).  <br/> |Microsoft 365 kan göra funktioner tillgängliga för SharePoint Online som inte fungerar tillsammans med SharePoint Server lokalt.  <br/> |
-|Partner kan hjälpa till med migreringen av data till nästa version av SharePoint Server (och vidare till nästa).  <br/> |Dina SharePoint Server-webbplatser använder inte automatiskt [SSL-/TLS-certifikat](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) som visas i SharePoint Online.  <br/> |
-|Fullständig kontroll över namnkonventioner, återställning och andra återställningsalternativ i SharePoint Server lokalt.  <br/> |SharePoint Server lokalt är känsligt för produkternas livscykler.  <br/> |
+|Säkerhetstestning och serverprestandajustering utförs lokalt (under din kontroll).  <br/> |Microsoft 365 kan göra funktioner tillgängliga för SharePoint Online som inte fungerar tillsammans SharePoint server lokalt.  <br/> |
+|Partner kan hjälpa till med migreringen av data till nästa version av SharePoint Server (och därefter).  <br/> |Dina SharePoint Server-webbplatser använder inte [automatiskt SSL-/TLS-certifikat](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) som visas i SharePoint Online.  <br/> |
+|Fullständig kontroll över namnkonventioner, återställning och andra återställningsalternativ SharePoint server lokalt.  <br/> |SharePoint Server lokalt är känslig för produktens livscykler.  <br/> |
    
 ### <a name="upgrade-resources"></a>Uppgradera resurser
 
@@ -184,24 +184,24 @@ Kontrollera att din miljö uppfyller maskinvaru- och programvarukrav och följ s
     
     [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc303420(v=office.12))  |  [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc303420(v=office.14))  |  [SharePoint Server 2013](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)  |  [SharePoint Server 2016](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)
     
-### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>Skapa en SharePoint-hybridlösning mellan SharePoint Online och en lokal miljö
+### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>Skapa SharePoint en hybridlösning mellan SharePoint online och lokalt
 
-Om svaret på dina behov för migrering ligger någonstans mitt emellan den lokala datorns självkontroll och den lägre ägandekostnaden som erbjuds med SharePoint Online, kan du ansluta SharePoint Server 2013- eller 2016-servergrupper till SharePoint Online via hybrider. [Läs mer om SharePoint-hybridlösningar.](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
+Om svaret på dina behov för migrering ligger någonstans mitt emellan den lokala datorns självkontroll och den lägre ägandekostnaden som erbjuds av SharePoint Online, kan du ansluta SharePoint Server 2013- eller 2016-servergrupper till SharePoint Online via hybrider. [Läs mer SharePoint om hybridlösningar.](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
   
-Om du anser att en SharePoint Server-hybridservergrupp kan dra nytta av ditt företag bör du läsa mer om de befintliga hybridtyperna och hur du konfigurerar anslutningen mellan den lokala SharePoint-servergruppen och Microsoft 365-prenumerationen.
+Om du beslutar dig för att en SharePoint-hybridservergrupp är bra för ditt företag bör du läsa mer om de befintliga hybridtyperna och hur du konfigurerar anslutningen mellan din lokala SharePoint-servergrupp och Microsoft 365-prenumerationen.
   
 | Alternativ | Beskrivning |
 |:-----|:-----|
-[Efterlevnadserbjudanden från Microsoft](/compliance/regulatory/offering-home)  <br/> |[FastTrack-hjälp](https://www.microsoft.com/fasttrack/microsoft-365) för migrering är begränsad.  <br/> Mycket av uppgraderingen sker manuellt eller via SPO-migrerings-API:t som beskrivs i översikten över innehållsmigrering i [SharePoint Online och OneDrive.](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)  <br/> |
+[Efterlevnadserbjudanden från Microsoft](/compliance/regulatory/offering-home)  <br/> |[FastTrack-hjälp](https://www.microsoft.com/fasttrack/microsoft-365) för migrering är begränsad.  <br/> Mycket av uppgraderingen sker manuellt eller via SPO-migrerings-API:t som beskrivs i SharePoint Online OneDrive Översikt över [migreringsinnehåll.](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)  <br/> |
 |Microsofts supporttekniker och anställda på datacentret har inte obegränsad administratörsåtkomst till din prenumeration.<br/> |Det kan till exempel bli ytterligare kostnader om maskinvaruinfrastrukturen måste uppgraderas för att stödja den nyare versionen av SharePoint, eller om en sekundär servergrupp krävs för uppgraderingen.  <br/> |
-|Partner kan hjälpa till med det lediga jobbet att migrera dina data till SharePoint Online.  <br/> ||
+|Partners kan hjälpa till med det lediga jobbet att migrera dina data till SharePoint Online.  <br/> ||
 |Onlineprodukter uppdateras automatiskt i tjänsten. Funktionerna kanske förfasas, men det finns inget verkligt stöd.<br/> ||
    
-Om du har bestämt dig för att skapa en ny Microsoft 365-webbplats och manuellt migrerar data till den efter behov, kontrollerar du dina [Microsoft 365-alternativ.](https://www.microsoft.com/microsoft-365/)
+Om du har bestämt dig för att skapa en ny Microsoft 365-webbplats och manuellt migrerar data till den vid behov, kontrollera dina [Microsoft 365 .](https://www.microsoft.com/microsoft-365/)
   
-### <a name="upgrade-sharepoint-server-on-premises"></a>Uppgradera SharePoint Server lokalt
+### <a name="upgrade-sharepoint-server-on-premises"></a>Uppgradera SharePoint server lokalt
 
-Det går inte att hoppa över versioner i SharePoint-uppgraderingar. Uppgraderingarna går serien igenom:
+Det går inte att hoppa över versioner i SharePoint Uppgraderingar. Uppgraderingarna går serien igenom:
   
 - SharePoint 2007 \> SharePoint Server 2010 \> SharePoint Server 2013 \> SharePoint Server 2016
    
@@ -228,14 +228,14 @@ Om du *har anpassningar är* det viktigt att du har en plan för uppgraderingen 
     
 - [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
     
-|**Lokalt pro**|**Lokal con**|
+|**Lokala Pro**|**Lokal con**|
 |:-----|:-----|
-|Fullständig kontroll över alla aspekter av SharePoint-servergruppen, allt från servermaskinvara och uppåt.  <br/> |Alla avbrott och korrigeringar ansvarar ditt företag för. (Du kan delta i betald Microsoft Support om din produkt inte har supporten gått ut.)  <br/> |
-|Fullständig funktionsuppsättning i SharePoint Server lokalt med alternativet att ansluta den lokala servergruppen till en SharePoint Online-prenumeration via hybrid.  <br/> |Uppgraderingar, korrigeringar, säkerhetskorrigeringar och allt underhåll av SharePoint Server hanteras lokalt.  <br/> |
+|Fullständig kontroll över alla aspekter av SharePoint servergrupp, allt från servermaskinvara och uppåt.  <br/> |Alla avbrott och korrigeringar ansvarar ditt företag för. (Du kan delta i betald Microsoft Support om din produkt inte har supporten gått ut.)  <br/> |
+|Fullständig funktionsuppsättning i SharePoint server lokalt med alternativet att ansluta den lokala servergruppen till en SharePoint Online-prenumeration via hybrid.  <br/> |Uppgraderingar, korrigeringar, säkerhetskorrigeringar och allt underhåll SharePoint server hanteras lokalt.  <br/> |
 |Fullständig åtkomst för större anpassning.  <br/> |[Microsofts efterlevnadserbjudanden](/compliance/regulatory/offering-home) måste konfigureras manuellt lokalt.  <br/> |
-|Säkerhetstestning och serverprestandajustering utförs lokalt under din kontroll.  <br/> |Microsoft 365 kan göra funktioner tillgängliga för SharePoint Online som inte fungerar tillsammans med SharePoint Server lokalt  <br/> |
+|Säkerhetstestning och serverprestandajustering utförs lokalt under din kontroll.  <br/> |Microsoft 365 kan göra funktioner tillgängliga för SharePoint Online som inte fungerar tillsammans SharePoint server lokalt  <br/> |
 |Partner kan hjälpa till att migrera data till nästa version av SharePoint Server (och därefter).  <br/> |Dina SharePoint Server-webbplatser använder inte [automatiskt SSL-/TLS-certifikat](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) som visas i SharePoint Online.  <br/> |
-|Fullständig kontroll över namnkonventioner, återställning och andra återställningsalternativ i SharePoint Server lokalt.  <br/> |SharePoint Server lokalt är känsligt för produkternas livscykler.  <br/> |
+|Fullständig kontroll över namnkonventioner, återställning och andra återställningsalternativ SharePoint server lokalt.  <br/> |SharePoint Server lokalt är känslig för produktens livscykler.  <br/> |
    
 ### <a name="upgrade-resources"></a>Uppgradera resurser
 
@@ -253,20 +253,20 @@ Kontrollera att miljön uppfyller maskinvaru- och programvarukraven. Följ sedan
     
     [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc303420(v=office.12))  |  [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc303420(v=office.14))  |  [SharePoint Server 2013](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)  |  [SharePoint Server 2016](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)
     
-### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>Skapa en SharePoint-hybridlösning mellan SharePoint Online och en lokal miljö
+### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>Skapa SharePoint en hybridlösning mellan SharePoint online och lokalt
 
-Om svaret på dina behov för migrering ligger någonstans mitt emellan den lokala datorns självkontroll och den lägre ägandekostnaden som erbjuds med SharePoint Online, kan du ansluta SharePoint Server 2013- eller 2016-servergrupper till SharePoint Online via hybrider. [Läs mer om SharePoint-hybridlösningar](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
+Om svaret på dina behov för migrering ligger någonstans mitt emellan den lokala datorns självkontroll och den lägre ägandekostnaden som erbjuds av SharePoint Online, kan du ansluta SharePoint Server 2013- eller 2016-servergrupper till SharePoint Online via hybrider. [Läs mer SharePoint hybridlösningar](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
   
-Om du anser att en SharePoint Server-hybridservergrupp kan dra nytta av ditt företag bör du läsa mer om de befintliga hybridtyperna och hur du konfigurerar anslutningen mellan den lokala SharePoint-servergruppen och Microsoft 365-prenumerationen.
+Om du beslutar dig för att en SharePoint-hybridservergrupp är bra för ditt företag bör du läsa mer om de befintliga hybridtyperna och hur du konfigurerar anslutningen mellan din lokala SharePoint-servergrupp och Microsoft 365-prenumerationen.
   
-Ett bra sätt att se hur det fungerar är att skapa en utvecklings-/testmiljö för Microsoft 365 som du kan konfigurera med [testlabbguider.](m365-enterprise-test-lab-guides.md) När du har fått en utvärderingsversion eller har köpt en Microsoft 365-prenumeration kan du skapa webbplatssamlingar, webbplatser och dokumentbibliotek i SharePoint Online som du kan migrera data till. Du kan migrera manuellt med hjälp av migrerings-API:t eller, om du vill migrera Innehållet på Min webbplats till OneDrive för företag, via hybridguiden.
+Ett bra sätt att se hur det fungerar är att skapa en Microsoft 365 utvecklings-/testmiljö, som du kan konfigurera med [testlabbguider.](m365-enterprise-test-lab-guides.md) När du har fått en utvärderingsversion eller köpt Microsoft 365-prenumeration kan du skapa webbplatssamlingar, webbplatser och dokumentbibliotek i SharePoint Online som du kan migrera data till. Du kan migrera manuellt med hjälp av migrerings-API:t eller, om du vill migrera Innehållet på Min webbplats till OneDrive för företag, via hybridguiden.
   
 > [!NOTE]
-> Kom ihåg att om du vill använda hybridalternativet måste SharePoint 2007-servergruppen uppgraderas, lokalt, till antingen SharePoint Server 2013 eller SharePoint Server 2016.
+> Kom ihåg att om du vill använda hybridalternativet måste SharePoint 2007-servergruppen uppgraderas lokalt till antingen SharePoint Server 2013 eller SharePoint Server 2016.
   
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Felsöka och återuppta uppgradering (Office SharePoint Server 2007)](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262967(v=office.12))
+[Felsöka och återuppta uppgraderingen (Office SharePoint Server 2007)](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262967(v=office.12))
   
 [Felsöka uppgraderingsproblem (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/cc262967(v=office.14))
   

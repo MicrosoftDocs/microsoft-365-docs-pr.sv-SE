@@ -1,5 +1,5 @@
 ---
-title: Hantera uppladdningar av automatiseringsfiler
+title: Hantera uppladdningar av automationsfil
 description: Aktivera innehållsanalys och konfigurera filnamnstillägg och e-posttillägg för bifogade filer som ska skickas för analys
 keywords: automation, fil, uppladdningar, innehåll, analys, fil, anknytning, e-post, bifogad fil
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185855"
 ---
-# <a name="manage-automation-file-uploads"></a>Hantera uppladdningar av automatiseringsfiler
+# <a name="manage-automation-file-uploads"></a>Hantera uppladdningar av automationsfil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Om du till exempel lägger till *exe* och *bat* som filnamnstillägg för filer 
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>Lägg till filnamnstillägg och filnamn för bifogade filer.
 
-1. Välj Inställningar Automation **filuppladdningar**  >  **i navigeringsfönstret.** 
+1. I navigeringsfönstret väljer du **Inställningar**  >  **automationsfiluppladdningar**. 
 
 2. Ändra inställningen för innehållsanalys mellan **På** och **Av.**
 
@@ -50,4 +50,4 @@ Om du till exempel lägger till *exe* och *bat* som filnamnstillägg för filer 
   
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Hantera undantag för automatiseringsmappar](manage-automation-folder-exclusions.md)
+- [Hantera undantag från automationsmappar](manage-automation-folder-exclusions.md)

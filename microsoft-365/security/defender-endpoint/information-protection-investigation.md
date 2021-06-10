@@ -43,7 +43,7 @@ Lär dig hur du använder datakänslighetsetiketter för att prioritera undersö
 >[!NOTE]
 >Etiketter identifieras för Windows 10, version 1809 eller senare.
 
-1. Välj Incidenter i Microsoft Defender **Säkerhetscenter.** 
+1. I Microsoft Defender Säkerhetscenter du **Incidenter**. 
 
 2. Rulla till höger för att se **kolumnen Datakänslighet.** I den här kolumnen visas känslighetsetiketter som har observerats på enheter som är relaterade till incidenterna och som anger om känsliga filer kan påverkas av händelsen.
 

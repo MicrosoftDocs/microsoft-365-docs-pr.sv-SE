@@ -361,7 +361,7 @@ Mer information finns i följande avsnitt:
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -433,7 +433,7 @@ Microsoft Defender Antivirus har vidtagit åtgärder för att skydda datorn mot 
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -485,7 +485,7 @@ Microsoft Defender Antivirus har stött på ett fel när du vidtar åtgärder mo
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -539,7 +539,7 @@ Microsoft Defender Antivirus har återställt ett objekt från karantän. Mer in
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -581,7 +581,7 @@ Microsoft Defender Antivirus har stött på ett fel när du försöker återstä
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -625,7 +625,7 @@ Microsoft Defender Antivirus har tagit bort ett objekt från karantän.<br/>Mer 
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -668,7 +668,7 @@ Mer information finns i följande avsnitt:
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -774,7 +774,7 @@ Microsoft Defender Antivirus har upptäckt ett misstänkt beteende.<br/>Mer info
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -849,7 +849,7 @@ Microsoft Defender Antivirus har upptäckt skadlig programvara eller annan poten
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -928,7 +928,7 @@ Microsoft Defender Antivirus har vidtagit åtgärder för att skydda datorn mot 
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -1050,7 +1050,7 @@ Microsoft Defender Antivirus på ett icke-kritiskt fel när du vidtar åtgärder
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -1142,7 +1142,7 @@ Microsoft Defender Antivirus har stött på ett kritiskt fel när du vidtar åtg
 <dt> &lt; &gt; Allvarlighetsgrad , till exempel:<ul>
 <li>Låg</li>
 <li>Måttlig</li>
-<li>Hög</li>
+<li>Högsta</li>
 <li>Allvarligt</li>
 </ul>
 </dt>
@@ -1352,21 +1352,21 @@ Beskrivning:
 <td >
 Hälsorapport för antivirusprogram.
 <dl>
-<dt>Plattformsversion: &lt; &gt;</dt>Aktuell plattform version
-<dt>Engine Version: &lt; skyddsmotor mot skadlig kod version &gt; </dt>Network
-<dt>Realtime Inspection engine version: &lt; Network Realtime Inspection &gt; </dt>engine version Antivirus signature
-<dt>version: Antivirus signature &lt; &gt; version</dt>
+<dt>Plattformsversion: &lt; Current platform &gt; version</dt>
+<dt>Engine Version: skyddsmotor mot skadlig kod &lt; &gt; version</dt>
+<dt>Network Realtime Inspection engine version: &lt; Network Realtime &gt; Inspection</dt>engine version Antivirus signature
+<dt>version: Antivirus signature &lt; version &gt; </dt>
 <dt>Antispyware signature version: &lt; Antispyware signature version &gt; </dt>Network
-<dt>Realtime Inspection signature version: Network &lt; Realtime Inspection version &gt; </dt>
-<dt>RTP state: &lt; Realtime protection state &gt; (Enabled or Disabled)</dt>
-<dt>OA state: On Access state &lt; &gt; (Enabled or Disabled)</dt>
-<dt>IOAV state: I Tid för att ladda ned nedladdningar och Outlook Express-bifogade filer (aktiverad eller inaktiverad) BM-läge: Funktionskontroll (aktiverad eller inaktiverad) Ålder för antivirussignatur: Ålder på antivirussignaturen &lt; &gt; </dt>
-<dt> &lt; &gt; (i dagar)</dt>Antispionware-signatur
-<dt>ålder: &lt; &gt; Antispionprogramssignatur,</dt>ålder för senaste snabbsökning: Senaste snabbsökningsåldern
-<dt> &lt; &gt; (i dagar)</dt>Senaste fullständiga genomsökningsåldern: Senaste fullständiga genomsökningsåldern
-<dt> &lt; &gt; (i dagar)</dt>Tid då en antivirussignatur
-<dt> &lt; &gt; </dt>
-<dt>skapades: ? &lt; Tid för &gt; att skapa antivirussignaturer</dt>
+<dt>Realtime Inspection signature version: Network &lt; Realtime Inspection signature version &gt; </dt>
+<dt>RTP state: Skyddtillstånd i realtid (aktiverad eller inaktiverad) &lt; &gt; </dt>OA-läge: IOAV-läge vid åtkomst
+<dt> &lt; &gt; (aktiverad</dt>eller inaktiverad): IE-nedladdningar och
+<dt>Outlook &lt; Express-bilagor &gt; (aktiverad</dt>eller inaktiverad)
+<dt>BM-läge: &lt; Funktionsövervakningstillstånd &gt; (aktiverad</dt>eller inaktiverad) antivirussignatur
+<dt>ålder: &lt; Antivirussignatur ålder &gt; (i dagar)</dt>
+<dt>Antispyware signature age: &lt; Antispyware signature age &gt; (in days)</dt>Last quick scan age: Last quick scan
+<dt>age &lt; &gt; (in days)</dt>Last full scan
+<dt>age: Last full scan age &lt; &gt; (in days)</dt>
+<dt>Antivirus signature creation time: ? &lt; Tid för &gt; att skapa antivirussignaturer</dt>
 <dt>Tid då man skapade antispionwaresignaturer: ? &lt; Tid för att skapa &gt; antispionprogramssignaturer</dt>
 <dt>Senaste snabbstarttiden: ? &lt; Sista snabba skanningens &gt; starttid</dt>Sista snabba
 <dt>genomsökning sluttid: ? &lt; &gt;</dt>Sista snabba skanningens sluttid Senaste snabbsökningskälla: Senaste snabbsökningskälla (0 = genomsökning&#39;inte
@@ -1466,7 +1466,7 @@ Microsoft Defender Antivirus har stött på ett fel vid försök att uppdatera s
 </dt>
 <dt>Uppdateringsfas: &lt; &gt; Uppdateringsfas, till exempel:
 <ul>
-<li>Sök</li>
+<li>Söka</li>
 <li>Ladda ned</li>
 <li>Installera</li>
 </ul>
@@ -2417,7 +2417,7 @@ Så här felsöker du händelsen:<ol>
 Användaråtgärd:
 </td>
 <td >
-Microsoft Defender Antivirus-klientmotorn slutade fungera på grund av ett oväntat fel.
+Klientmotorn Microsoft Defender Antivirus på grund av ett oväntat fel.
 Så här felsöker du händelsen:
 <ol>
 <li>Kör skanningen igen.</li>
@@ -2450,7 +2450,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Sökning efter skadlig programvara och andra potentiellt oönskade program har aktiverats i Microsoft Defender Antivirus.
+Microsoft Defender Antivirus för skadlig programvara och annan potentiellt oönskad programvara har aktiverats.
 </td>
 </tr>
 <tr>
@@ -2476,7 +2476,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Genomsökning av skadlig programvara och andra potentiellt oönskade program inaktiveras i Microsoft Defender Antivirus.
+Microsoft Defender Antivirus för skadlig programvara och annan potentiellt oönskad programvara inaktiveras.
 </td>
 </tr>
 <tr>
@@ -2502,7 +2502,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus-genomsökning efter virus har aktiverats. 
+Microsoft Defender Antivirus har aktiverats för att söka efter virus. 
 </td>
 </tr>
 <tr>
@@ -2528,7 +2528,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus-genomsökning efter virus inaktiveras. 
+Microsoft Defender Antivirus för virus inaktiveras. 
 </td>
 </tr>
 <tr>
@@ -2554,10 +2554,10 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Microsoft Defender Antivirus har angett en respitperiod och upphör snart att gälla. Efter att programmet har gått ut inaktiveras skyddet mot virus, spionprogram och annan potentiellt oönskad programvara.
+Microsoft Defender Antivirus har angett en respitperiod och förfaller snart. Efter att programmet har gått ut inaktiveras skyddet mot virus, spionprogram och annan potentiellt oönskad programvara.
 <dl>
-<dt>Orsak till förfallodatum: Orsaken till att Microsoft Defender Antivirus upphör att gälla.</dt> 
-<dt>Förfallodatum: Datumet då Microsoft Defender Antivirus upphör att gälla.</dt>
+<dt>Orsak till förfallodatum: Orsaken till att Microsoft Defender Antivirus går ut.</dt> 
+<dt>Utgångsdatum: Datumet Microsoft Defender Antivirus förfaller.</dt>
 </dl>
 </td>
 </tr>
@@ -2584,7 +2584,7 @@ Meddelande:
 Beskrivning:
 </td>
 <td >
-Respitperioden för Microsoft Defender Antivirus har upphört att gälla. Skydd mot virus, spionprogram och annan potentiellt oönskad programvara inaktiveras.
+Microsoft Defender Antivirus respitperioden har gått ut. Skydd mot virus, spionprogram och annan potentiellt oönskad programvara inaktiveras.
 <dl>
 <dt>Förfallodatum: Förfallodatum:</dt>
 <dt>Felkod: </dt> 
@@ -2596,11 +2596,11 @@ Respitperioden för Microsoft Defender Antivirus har upphört att gälla. Skydd 
 </table>
 
 <a id="error-codes"></a>
-## Felkoder för Microsoft Defender Antivirus-klienten Om microsoft Defender Antivirus upplever problem får du vanligtvis en felkod som hjälper dig att felsöka problemet. Oftast innebär ett fel att det gick att installera en uppdatering.
-Det här avsnittet innehåller följande information om Microsoft Defender Antivirus-klientfel.
+##Microsoft Defender Antivirus felkoder på klienten Microsoft Defender Antivirus du upplever problem får du vanligtvis en felkod som hjälper dig att felsöka problemet. Oftast innebär ett fel att det gick att installera en uppdatering.
+Det här avsnittet innehåller följande information Microsoft Defender Antivirus om klientfel.
 -   Felkoden -   Den möjliga orsaken till felet Råd -   om vad du ska göra nu
 
-Använd informationen i de här tabellerna för felsökning av felkoder för Microsoft Defender Antivirus.
+Använd informationen i de här tabellerna för felsökning Microsoft Defender Antivirus felkoder.
 
 
 <table> 
@@ -2645,7 +2645,7 @@ Det här felet anger att det kan vara problem med din säkerhetsprodukt.
 <li>Uppdatera definitionerna. Antingen:<ol>
 <li>Klicka på <b>knappen Uppdatera</b> definitioner på <b>fliken Uppdatera</b> i Microsoft Defender Antivirus. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Eller:
 </li>
-<li>Hämta de senaste definitionerna från <a href="https://aka.ms/wdsi">Microsoft Security Intelligence-webbplatsen</a>.
+<li>Hämta de senaste definitionerna från <a href="https://aka.ms/wdsi">Microsoft Säkerhetsinsikter webbplatsen</a>.
 Obs! Storleken på definitionsfilen som laddas ned från webbplatsen kan överskrida 60 MB och bör inte användas som en långsiktig lösning för att uppdatera definitioner.
 </li>
 </ol>
@@ -2672,7 +2672,7 @@ Det här felet anger att det kan finnas ett motorkonfigurationsfel. vanligtvis �
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>Möjlig orsak</td>
 <td>
-Det här felet anger att Microsoft Defender Antivirus inte kunde sätta ett hot i karantän. 
+Det här felet anger Microsoft Defender Antivirus har misslyckats med att sätta ett hot i karantän. 
 </td>
 </tr>
 <tr>

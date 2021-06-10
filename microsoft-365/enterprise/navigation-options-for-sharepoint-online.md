@@ -20,7 +20,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: I den här artikeln beskrivs webbplatser med navigeringsalternativ där SharePoint-publicering är aktiverat i SharePoint Online.
+description: I den här artikeln beskrivs webbplatser med navigeringsalternativ SharePoint publicering är aktiverat SharePoint Online.
 ms.openlocfilehash: b5989bf26ebf7bb1452f983af89a6e6739821d53
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,14 +30,14 @@ ms.locfileid: "50923630"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Navigeringsalternativ för SharePoint Online
 
-I den här artikeln beskrivs webbplatser med navigeringsalternativ där SharePoint-publicering är aktiverat i SharePoint Online. Valet och konfigurationen av navigeringen påverkar avsevärt prestanda och skalbarheten för webbplatser i SharePoint Online. SharePoint-publiceringswebbplatsmallen bör endast användas om det behövs för en centraliserad portal, och publiceringsfunktionen ska endast aktiveras på vissa webbplatser och endast om det är absolut nödvändigt eftersom den kan påverka prestandan när den används felaktigt.
+I den här artikeln beskrivs webbplatser med navigeringsalternativ SharePoint publicering är aktiverat SharePoint Online. Valet och konfigurationen av navigeringen påverkar avsevärt prestanda och skalbarheten för webbplatser i SharePoint Online. Mallen SharePoint-publiceringswebbplats bör endast användas om det behövs för en centraliserad portal, och publiceringsfunktionen ska endast aktiveras på specifika webbplatser och endast om det är absolut nödvändigt eftersom det kan påverka prestandan när den används felaktigt.
 
 >[!NOTE]
->Om du använder moderna SharePoint-navigeringsalternativ som mega-meny, kaskadnavigering eller navnavigering gäller den här artikeln inte för din webbplats. Moderna SharePoint-webbplatsarkitekturer utnyttjar en mer platt webbplatshierarki och en hub-and-ekmodell. Detta möjliggör många scenarier som inte kräver användning av SharePoint-publiceringsfunktionen.
+>Om du använder moderna navigeringsalternativ SharePoint mega-meny, överlappande navigering eller navnavigering gäller den här artikeln inte för din webbplats. Moderna SharePoint webbplatsarkitekturer utnyttjar en mer platt webbplatshierarki och en hub-and-ekmodell. På så sätt kan du åstadkomma många scenarier som INTE kräver att funktionen SharePoint används.
 
 ## <a name="overview-of-navigation-options"></a>Översikt över navigeringsalternativ
 
-Konfiguration av navigeringsleverantör kan avsevärt påverka prestandan för hela webbplatsen, och noggrant måste beaktas för att välja en navigeringsleverantör och konfiguration som skalar effektivt för kraven på en SharePoint-webbplats. Det finns två in-of-box navigeringsleverantörer, samt anpassade implementeringar av navigering.
+Konfiguration av navigeringsleverantör kan avsevärt påverka prestandan för hela webbplatsen, och noggrant måste beaktas för att välja en navigeringsleverantör och konfiguration som effektivt skalar för kraven på en SharePoint webbplats. Det finns två in-of-box navigeringsleverantörer, samt anpassade implementeringar av navigering.
 
 Det första alternativet, [**Strukturell navigering,**](#using-structural-navigation-in-sharepoint-online)är det rekommenderade navigeringsalternativet i SharePoint Online för klassiska Sharepoint-webbplatser, om du aktiverar cachelagring av strukturell navigering **för din webbplats.** Den här navigeringsleverantören visar navigeringsobjekten nedanför den aktuella webbplatsen och, om du vill, den aktuella webbplatsen och dess objekt på samma plats. Den innehåller ytterligare funktioner, till exempel säkerhets trimning och uppräkning av webbplatsstrukturen. Om cachelagring är inaktiverat påverkar det här prestanda och skalbarhet negativt och kan påverkas av begränsning.
 
@@ -45,7 +45,7 @@ Det andra alternativet, [**Hanterad (metadata)-navigering**](#using-managed-navi
 
 Många kunder har implementerat alternativa anpassade navigeringsimplementeringar utöver de in alltid använda navigeringsleverantörerna. Läs [Sökdrivna skript på klientsidan i](#using-search-driven-client-side-scripting) den här artikeln.
   
-## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Fördelar och nackdelar med navigeringsalternativ i SharePoint Online
+## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Fördelar och nackdelar med SharePoint navigeringsalternativ online
 
 I följande tabell sammanfattas fördelar och nackdelar med varje alternativ.
 
@@ -57,15 +57,15 @@ I följande tabell sammanfattas fördelar och nackdelar med varje alternativ.
 Vilket alternativ som passar bäst för din webbplats beror på dina webbplatskrav och din tekniska kapacitet. Om du vill ha en lättkonfigurerad navigeringsleverantör som uppdateras [](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) automatiskt när innehåll ändras är strukturell navigering med cachelagring aktiverad ett bra alternativ.
 
 >[!NOTE]
->Genom att tillämpa samma princip som moderna SharePoint-webbplatser genom att förenkla den övergripande webbplatsstrukturen till en snackande, icke-hierarkisk struktur förbättras prestanda och det blir enklare att flytta till moderna SharePoint-webbplatser. Det innebär att i stället för att ha en enda webbplatssamling med hundratals webbplatser (underwebbplatser) är det bättre att ha många webbplatssamlingar med väldigt få underwebbplatser (underwebbplatser).
+>Genom att tillämpa samma princip som moderna SharePoint-webbplatser genom att förenkla den övergripande webbplatsstrukturen till en snökfull, icke-hierarkisk struktur förbättras prestanda och det blir enklare att flytta till moderna SharePoint webbplatser. Det innebär att i stället för att ha en enda webbplatssamling med hundratals webbplatser (underwebbplatser) är det bättre att ha många webbplatssamlingar med väldigt få underwebbplatser (underwebbplatser).
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>Analysera navigeringsprestanda i SharePoint Online
 
-Verktyget [Siddiagnostik för SharePoint är](./page-diagnostics-for-spo.md) ett webbläsartillägg för webbläsarna Microsoft Edge och Chrome som analyserar både moderna portaler och klassiska publiceringswebbplatssidor i SharePoint Online. Det här verktyget fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
+[Siddiagnostik för SharePoint är](./page-diagnostics-for-spo.md) ett webbläsartillägg för webbläsare Microsoft Edge och Chrome-webbläsare som analyserar både moderna SharePoint Online-portalen och klassiska publiceringswebbplatssidor. Det här verktyget fungerar bara SharePoint Online och kan inte användas på SharePoint systemsida.
 
-Verktyget genererar en rapport för varje analyserad sida som visar hur sidan fungerar mot en fördefinierad uppsättning regler och visar detaljerad information när resultaten för ett test faller utanför baslinjevärdet. SharePoint Online-administratörer och -designers kan använda verktyget för att felsöka prestandaproblem och se till att nya sidor är optimerade innan du publicerar.
+Verktyget genererar en rapport för varje analyserad sida som visar hur sidan fungerar mot en fördefinierad uppsättning regler och visar detaljerad information när resultaten för ett test faller utanför baslinjevärdet. SharePoint Onlineadministratörer och designers kan använda verktyget för att felsöka prestandaproblem och se till att nya sidor optimeras innan de publiceras.
 
-**SPRequestDuration** är i synnerhet den tid det tar för SharePoint att bearbeta sidan. Tung navigering (t.ex. sidor i navigering), komplexa webbplatshierarkier och andra konfigurations- och topologialternativ kan avsevärt bidra till längre varaktighet.
+**SPRequestDuration** är särskilt den tid det tar SharePoint att bearbeta sidan. Tung navigering (t.ex. sidor i navigering), komplexa webbplatshierarkier och andra konfigurations- och topologialternativ kan avsevärt bidra till längre varaktighet.
 
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>Använda strukturell navigering i SharePoint Online
 
@@ -73,15 +73,15 @@ Det här är den inklarade navigeringen som används som standard och är den en
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>Implementera cachelagring av strukturell navigering
 
-Under **Utseende och känsla** för  >  **webbplatsinställningar**  >  **kan** du verifiera om strukturell navigering har markerats för antingen global navigering eller aktuell navigering. Om **du väljer Visa** sidor påverkas prestandan negativt.
+Under **Webbplats Inställningar** utseendenavigering kan du verifiera om strukturell navigering är markerad för  >    >  antingen global navigering eller aktuell navigering. Om **du väljer Visa** sidor påverkas prestandan negativt.
 
 ![Strukturell navigering med Visa underwebbplatser markerat](../media/SPONavOptionsStructuredShowSubsites.png)
 
-Cachelagring kan aktiveras eller inaktiveras på webbplatssamlingsnivå och på webbplatsnivå, och är aktiverat för båda som standard. Aktivera på webbplatssamlingsnivå genom att **markera** kryssrutan Aktivera cachelagring under Webbplatsinställningar för webbplatssamlingens administration av  >    >   **webbplatssamlingsnavigering.**
+Cachelagring kan aktiveras eller inaktiveras på webbplatssamlingsnivå och på webbplatsnivå, och är aktiverat för båda som standard. Om du vill aktivera på webbplatssamlingsnivå går du **till Webbplatssamlingens webbplatssamling** Inställningar Administration av webbplatssamling och markerar kryssrutan  >    >  för **Aktivera cachelagring.**
 
 ![Aktivera cachelagring på webbplatsnivå](../media/structural-nav/structural-nav-caching-site-coll.png)
 
-Om du vill aktivera på webbplatsnivå går **du till Navigering**  >  **i** Webbplatsinställningar och markerar kryssrutan **Aktivera cachelagring.**
+Aktivera på webbplatsnivå genom att markera **Inställningar**  >  **under** Webbplatsnavigering för **Aktivera cachelagring.**
 
 ![Aktivera cachelagring på webbplatsnivå](../media/structural-nav/structural-nav-caching-site.png)
 
@@ -101,9 +101,9 @@ Många webbplatser kräver inte säkerhets trimning eftersom navigeringsstruktur
 
 Det finns flera artiklar docs.microsoft.com information om hanterad navigering. Se till exempel Översikt [över hanterad navigering i SharePoint Server.](/sharepoint/administration/overview-of-managed-navigation)
 
-Om du vill implementera hanterad navigering kan du konfigurera termer med URL:er som motsvarar webbplatsens navigeringsstruktur. Hanterad navigering kan även väljas manuellt för att ersätta strukturell navigering i många fall. Ett exempel:
+Om du vill implementera hanterad navigering kan du konfigurera termer med URL:er som motsvarar webbplatsens navigeringsstruktur. Hanterad navigering kan även väljas manuellt för att ersätta strukturell navigering i många fall. Till exempel:
 
-![SharePoint Online-webbplatsstruktur](../media/SPONavOptionsListOfSites.png))
+![SharePoint Struktur för onlinewebbplats](../media/SPONavOptionsListOfSites.png))
 
 ## <a name="using-search-driven-client-side-scripting"></a>Använda sökdrivna skript på klientsidan
 
@@ -117,7 +117,7 @@ De här navigeringsleverantörerna har några viktiga fördelar:
 
 Ett exempel på en dataleverantör är att använda en sökdriven **navigering**, som gör det möjligt att räkna upp navigeringsnoder och hantera säkerhetsoptimering effektivt.
 
-Det finns andra populära alternativ för att skapa **anpassade navigeringsleverantörer.** Mer information [om hur du skapar en anpassad navigeringsleverantör finns](/sharepoint/dev/solution-guidance/portal-navigation) i Navigeringslösningar för SharePoint Online-portaler.
+Det finns andra populära alternativ för att skapa **anpassade navigeringsleverantörer.** Mer information [om hur du skapar en anpassad navigeringsleverantör finns i Navigeringslösningar](/sharepoint/dev/solution-guidance/portal-navigation) för SharePoint Online-portaler.
 
 Med sökning kan du utnyttja de index som byggs upp i bakgrunden med kontinuerlig crawlning. Sökresultaten hämtas från sökindexet och resultaten är säkerhets trimade. Det här är oftast snabbare än de inringade navigeringsleverantörerna när du behöver säkerhets trimning. Genom att använda sökning för strukturell navigering går det avsevärt snabbare att läsa in sidor, särskilt om du har en komplex webbplatsstruktur. Den största fördelen med det här framför hanterad navigering är att du kan använda säkerhets trimning.
 
@@ -125,7 +125,7 @@ Den här metoden innebär att skapa en anpassad huvudsida och ersätta den inrin
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Exempel: Ersätt den intr. navigeringskoden på en huvudsida
 
-1. Gå till sidan Webbplatsinställningar.
+1. Gå till sidan Inställningar webbplats.
 2. Öppna galleriet för huvudsidor genom att klicka **på Huvudsidor.**
 3. Härifrån kan du navigera i biblioteket och ladda ned filen `seattle.master` .
 4. Redigera koden med en textredigerare och ta bort kodblocket i följande skärmbild.<br/>![Ta bort kodblocket som visas](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
@@ -221,7 +221,7 @@ I exemplet med komplex navigering visar en ny inläsning av sidor utan lokal cac
 ### <a name="about-the-javascript-file"></a>Om JavaScript-filen...
 
 >[!NOTE]
->Om du använder anpassat JavaScript ser du till att public CDN är aktiverat och att filen finns på en CDN-plats.
+>Om du använder anpassat JavaScript ser du till att CDN är aktiverat och att filen ligger på en CDN plats.
 
 Hela JavaScript-filen ser ut så här:
 

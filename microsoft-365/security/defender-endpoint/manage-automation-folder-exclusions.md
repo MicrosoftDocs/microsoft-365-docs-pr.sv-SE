@@ -1,5 +1,5 @@
 ---
-title: Hantera undantag för automatiseringsmappar
+title: Hantera undantag från automationsmappar
 description: Lägg till undantag för automatiseringsmappar för att styra filer som är undantagna från en automatiserad undersökning.
 keywords: hantera, automatisering, undantag, blockera, rensa, skadlig
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185843"
 ---
-# <a name="manage-automation-folder-exclusions"></a>Hantera undantag för automatiseringsmappar 
+# <a name="manage-automation-folder-exclusions"></a>Hantera undantag från automationsmappar 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -59,7 +59,7 @@ Du kan ange vilka filnamn som ska undantas i en viss katalog. Namnen är ett sä
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>Lägga till ett undantag för automatiseringsmappar
-1. I navigeringsfönstret väljer du Undantag **för mappar** i  >  **Inställningar automation.**  
+1. Välj Undantaget för **automatiseringsmappen Inställningar**  >  **navigeringsfönstret.**  
 
 2. Klicka **på Undantag för ny mapp.**  
 
@@ -77,17 +77,17 @@ Du kan ange vilka filnamn som ska undantas i en viss katalog. Namnen är ett sä
 > Kommandon i Live Response för att samla in eller undersöka uteslutna filer misslyckas och felmeddelandet: "Filen är undantagen". Dessutom ignorerar automatiska undersökningar uteslutna objekt.
 
 ## <a name="edit-an-automation-folder-exclusion"></a>Redigera ett undantag för automatiseringsmappar 
-1. I navigeringsfönstret väljer du Undantag **för mappar** i  >  **Inställningar automation.** 
+1. Välj Undantaget för **automatiseringsmappen Inställningar**  >  **navigeringsfönstret.** 
 
 2. Klicka **på** Redigera för undantag för mappen.  
 
 3. Uppdatera informationen om regeln och klicka på **Spara.**
 
 ## <a name="remove-an-automation-folder-exclusion"></a>Ta bort ett undantag för automatiseringsmappar 
-1. I navigeringsfönstret väljer du Undantag **för mappar** i  >  **Inställningar automation.**  
+1. Välj Undantaget för **automatiseringsmappen Inställningar**  >  **navigeringsfönstret.**  
 2. Klicka på **Ta bort undantag.** 
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Hantera automatisering av tillåtna/blockerade listor](manage-indicators.md)
-- [Hantera uppladdningar av automatiseringsfiler](manage-automation-file-uploads.md)
+- [Hantera uppladdningar av automationsfil](manage-automation-file-uploads.md)

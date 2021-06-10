@@ -1,5 +1,5 @@
 ---
-title: Lär dig språket för avancerad fråga om sökning i Microsoft 365 Defender
+title: Lär dig det avancerade frågespråket för sökfrågor i Microsoft 365 Defender
 description: Skapa din första fråga om hot och lär dig mer om vanliga operatorer och andra aspekter av det avancerade frågespråket för sökfrågor
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types, powershell download, query example
 search.product: eADQiWindows 10XVcnh
@@ -40,7 +40,7 @@ Avancerad sökning är baserad på [språket i Kusto-frågan.](/azure/kusto/quer
 
 ## <a name="try-your-first-query"></a>Prova den första frågan
 
-I Microsoft 365 säkerhetscenter går du till **Söka för** att köra den första frågan. Använd följande exempel:
+I Microsoft 365 säkerhetscenter går du till **Sök för** att köra den första frågan. Använd följande exempel:
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -157,7 +157,7 @@ Mer information om dessa datatyper finns [i Kusto skalära datatyper.](/azure/da
 
 ## <a name="get-help-as-you-write-queries"></a>Få hjälp medan du skriver frågor
 Dra nytta av följande funktioner för att skriva frågor snabbare:
-- **Automatiska förslag – när** du skriver frågor får du förslag från IntelliSense med avancerad sökning. 
+- **Automatiska förslag – medan** du skriver frågor ger avancerad sökning förslag IntelliSense. 
 - **Schematräd**– en schemarepresentation som innehåller listan med tabeller och deras kolumner visas bredvid ditt arbetsområde. Hovra över ett objekt om du vill ha mer information. Dubbelklicka på ett objekt för att infoga det i frågeredigeraren.
 - **[Schemareferens](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**– referens i portalen med tabell- och kolumnbeskrivningar samt händelsetyper (värden) och exempelfrågor som `ActionType` stöds
 
@@ -176,7 +176,7 @@ I **avsnittet Komma** igång finns några enkla frågor som används med vanliga
 ![Bild av fönstret för avancerad sökning](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->Förutom de grundläggande frågeexempelen kan du också komma åt [delade frågor för](advanced-hunting-shared-queries.md) specifika fall av hot efter hot. Utforska de delade frågorna till vänster på sidan eller lagringsplatsen för [GitHub-frågan.](https://aka.ms/hunting-queries)
+>Förutom de grundläggande frågeexempelen kan du också komma åt [delade frågor för](advanced-hunting-shared-queries.md) specifika fall av hot efter hot. Utforska de delade frågorna till vänster på sidan eller lagringsplatsen GitHub [frågan.](https://aka.ms/hunting-queries)
 
 ## <a name="access-query-language-documentation"></a>Dokumentation om frågespråk i Access
 

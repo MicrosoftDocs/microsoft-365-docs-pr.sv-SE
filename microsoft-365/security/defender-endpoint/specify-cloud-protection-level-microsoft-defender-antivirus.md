@@ -1,5 +1,5 @@
 ---
-title: Ange en moln levererat skyddsnivå för Microsoft Defender Antivirus
+title: Ange den moln levererat skyddsnivå för Microsoft Defender Antivirus
 description: Ange din nivå av moln levererat skydd för Microsoft Defender Antivirus.
 keywords: Microsoft Defender Antivirus, program mot skadlig programvara, säkerhet, defender, moln, aggressivhet, skyddsnivå
 search.product: eADQiWindows 10XVcnh
@@ -32,19 +32,19 @@ ms.locfileid: "52274910"
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Du kan ange din nivå av moln levererat skydd som erbjuds av Microsoft Defender Antivirus med hjälp av Microsoft Endpoint Manager (rekommenderas) eller grupprincip.
+Du kan ange vilken nivå av moln levererat skydd som erbjuds av Microsoft Defender Antivirus med hjälp Microsoft Endpoint Manager (rekommenderas) eller grupprincip.
 
 > [!TIP]
-> Molnskydd är inte bara skydd för filer som lagras i molnet. Microsoft Defender Antivirus-molntjänsten är en mekanism för att tillhandahålla uppdaterat skydd till ditt nätverk och dina enheter (kallas även slutpunkter). Molnskydd med Microsoft Defender Antivirus använder distribuerade resurser och maskininlärning för att ge skydd till dina slutpunkter i en hastighet som är mycket snabbare än traditionella säkerhetsintelligensuppdateringar. Microsoft Intune och Microsoft Endpoint Manager är nu en del av [Microsoft Endpoint Manager.](/mem/endpoint-manager-overview) 
+> Molnskydd är inte bara skydd för filer som lagras i molnet. Den Microsoft Defender Antivirus molntjänsten är en mekanism för att leverera uppdaterat skydd till ditt nätverk och dina enheter (kallas även slutpunkter). Molnskydd med Microsoft Defender Antivirus använder distribuerade resurser och maskininlärning för att ge skydd till dina slutpunkter i en hastighet som är mycket snabbare än traditionella säkerhetsintelligensuppdateringar. Microsoft Intune och Microsoft Endpoint Manager är nu en del av [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). 
 
 
 ## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-delivered-protection"></a>Använd Microsoft Endpoint Manager för att ange nivån för moln levererat skydd
 
-1. Gå till administrationscentret för Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) och logga in.
+1. Gå till Microsoft Endpoint Manager ( ) [https://endpoint.microsoft.com](https://endpoint.microsoft.com) och logga in.
 
 2. Välj **Endpoint Security**  >  **Antivirus**.
 
-3. Välj en antivirusprofil. (Om du inte redan har en, eller om du vill skapa en ny profil, se Konfigurera inställningar för [enhetsbegränsning i Microsoft Intune.](/intune/device-restrictions-configure)
+3. Välj en antivirusprofil. (Om du inte redan har en, eller om du vill skapa en ny profil, se Konfigurera inställningar för enhetsbegränsning [i Microsoft Intune](/intune/device-restrictions-configure).
 
 4. Välj **Egenskaper**. Välj sedan Redigera bredvid **Konfigurationsinställningar.** 
 
@@ -58,7 +58,7 @@ Du kan ange din nivå av moln levererat skydd som erbjuds av Microsoft Defender 
 
 > [!TIP]
 > Behöver du hjälp? Se följande resurser:
-> - [Konfigurera slutpunktsskydd](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+> - [Konfigurera Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [Lägga till inställningar för slutpunktsskydd i Intune](/mem/intune/protect/endpoint-protection-configure)
   
 
@@ -70,7 +70,7 @@ Du kan ange din nivå av moln levererat skydd som erbjuds av Microsoft Defender 
 
 3.  I **redigeraren för hantering av grupprinciper** går du **till Administrativa mallar för**  >  **datorkonfiguration.**
 
-4.  Expandera trädet till **Windows-komponenter**  >  **Microsoft Defender Antivirus**  >  **MpEngine.**
+4.  Expandera trädet för att **Windows eller**  >    >  **mpEngine** Microsoft Defender Antivirus .
 
 5.  Dubbelklicka på inställningen Välj **molnskyddsnivå** och ställ in den på **Aktiverad**. Välj skyddsnivå:
     - **Standardblockeringsnivån** ger stark identifiering utan att öka risken för att legitima filer identifieras.
@@ -87,10 +87,10 @@ Du kan ange din nivå av moln levererat skydd som erbjuds av Microsoft Defender 
 7. Distribuera det uppdaterade grupprincipobjektet. Se [Konsolen för grupprinciphantering](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> Använder du grupprincipobjekt lokalt? Se hur de översätter i molnet. [Analysera lokala grupprincipobjekt med grupprincipanalyser i Microsoft Endpoint Manager – förhandsversion.](/mem/intune/configuration/group-policy-analytics) 
+> Använder du grupprincipobjekt lokalt? Se hur de översätter i molnet. [Analysera lokala grupprincipobjekt med grupprincipanalyser i olika Microsoft Endpoint Manager – förhandsversion.](/mem/intune/configuration/group-policy-analytics) 
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
 - [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Aktivera moln levererat skydd](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [Aktivera molnbaserat skydd](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Så här skapar och distribuerar du skydd mot skadlig programvara: Molnskyddstjänst](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

@@ -22,22 +22,22 @@ ms.locfileid: "50923726"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 Multi-Geo eDiscovery-konfiguration
 
-[Med avancerade eDiscovery-funktioner](../compliance/overview-ediscovery-20.md) kan en eDiscovery-administratör med flera funktioner söka i alla geos utan att behöva använda ett "Region"-säkerhetsfilter. Data exporteras till Azure-instansen av den centrala platsen för den geoa klientorganisationen. 
+[Advanced eDiscovery här](../compliance/overview-ediscovery-20.md) funktionerna kan en eDiscovery-administratör med flera funktioner söka i alla geos utan att behöva använda ett säkerhetsfilter för "Region". Data exporteras till Azure-instansen av den centrala platsen för den geoa klientorganisationen. 
 
-Utan avancerade eDiscovery-funktioner kan en eDiscovery-hanterare eller administratör för en geoklient för flera geoklienter utföra eDiscovery endast på den centrala platsen för innehavaren. För att stödja möjligheten att utföra eDiscovery för satellitplatser är en ny säkerhetsfilterparameter för efterlevnad med namnet Region tillgänglig via PowerShell. Den här parametern kan användas av klientorganisationen vars centrala plats är i Nordamerika, Europa eller Asien och Stilla havet. Advanced eDiscovery rekommenderas för klientorganisationen vars centrala plats inte finns i Nordamerika, Europa eller Asien och Stilla havet och som behöver utföra eDiscovery över satellitgeoplatser. 
+Utan avancerade eDiscovery-funktioner kan en eDiscovery-hanterare eller administratör för en geoklient för flera geoklienter utföra eDiscovery endast på den centrala platsen för innehavaren. För att stödja möjligheten att utföra eDiscovery för satellitplatser är en ny säkerhetsfilterparameter för efterlevnad med namnet Region tillgänglig via PowerShell. Den här parametern kan användas av klientorganisationen vars centrala plats är i Nordamerika, Europa eller Asien och Stilla havet. Advanced eDiscovery för klientorganisation vars centrala plats inte finns i Nordamerika, Europa eller Asien och Stilla havet och som behöver utföra eDiscovery över satellitgeoplatser. 
 
 Den globala Microsoft 365-administratören måste tilldela eDiscovery Manager-behörigheter så att andra kan utföra eDiscovery och tilldela en "Region"-parameter i sitt tillämpliga säkerhetsfilter för efterlevnad för att ange området för eDiscovery som satellitplats, annars utförs ingen eDiscovery för satellitplatsen.
 
-När rollen eDiscovery-hanterare eller administratör har angetts för en viss satellitplats kan eDiscovery-hanteraren eller administratören bara utföra eDiscovery-sökåtgärder mot SharePoint-webbplatserna och OneDrive-webbplatserna på den satellitplatsen. Om en eDiscovery-hanterare eller administratör försöker söka efter SharePoint- eller OneDrive-webbplatser utanför den angivna satellitplatsen returneras inga resultat. Och när eDiscovery-hanteraren eller administratören för en satellitplats utlöser en export exporteras data till Azure-instansen av den regionen. På så sätt ser du till att organisationer följer reglerna genom att inte tillåta att innehåll exporteras över styrda kantlinjer.
+När rollen eDiscovery-hanterare eller administratör har angetts för en viss satellitplats kan eDiscovery-hanteraren eller administratören bara utföra eDiscovery-sökåtgärder mot SharePoint-webbplatserna och OneDrive-webbplatserna på satellitplatsen. Om en eDiscovery-hanterare eller administratör försöker söka efter SharePoint eller OneDrive platser utanför den angivna satellitplatsen returneras inga resultat. Och när eDiscovery-hanteraren eller administratören för en satellitplats utlöser en export exporteras data till Azure-instansen av den regionen. På så sätt ser du till att organisationer följer reglerna genom att inte tillåta att innehåll exporteras över styrda kantlinjer.
 
 > [!NOTE]
-> Om det är nödvändigt för en eDiscovery-hanterare att söka i flera SharePoint-satellitplatser måste ett annat användarkonto skapas för eDiscovery-hanteraren, som anger den alternativa satellitplats där OneDrive- eller SharePoint-webbplatserna finns.
+> Om det är nödvändigt för en eDiscovery-hanterare att söka på flera SharePoint-satellitplatser måste ett annat användarkonto skapas för eDiscovery-hanteraren som anger den alternativa satellitplats där OneDrive- eller SharePoint-webbplatserna finns.
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
 Så här ställer du in säkerhetsfiltret för efterlevnad för en region:
 
-1. [Ansluta till Microsoft 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [Anslut att Microsoft 365 Säkerhets- & Efterlevnadscenter PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Använd följande syntax:
 
@@ -45,7 +45,7 @@ Så här ställer du in säkerhetsfiltret för efterlevnad för en region:
    New-ComplianceSecurityFilter -Action All -FilterName <TheNameYouWantToAssign> -Region <RegionValue> -Users <UserPrincipalName>
    ```
 
-   Ett exempel:
+   Till exempel:
 
    ```powershell
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com

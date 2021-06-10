@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 1b8f2e7c7435f2161f7261722795b35ca848ec2f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15902e02156c59ec4edaed94f4ba321094bd42ac
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934243"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843028"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Hantera Microsoft Defender för slutpunkt med grupprincipobjekt
 
@@ -39,9 +39,9 @@ ms.locfileid: "51934243"
 
 
 > [!NOTE]
-> Vi rekommenderar att [du använder Microsoft Endpoint Manager](https://docs.microsoft.com/mem) för att hantera din organisations skyddsfunktioner för hot för enheter (kallas även slutpunkter). Endpoint Manager innehåller [Microsoft Intune och](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) [Konfigurationshanteraren för Microsoft Endpoint.](https://docs.microsoft.com/mem/configmgr/core/understand/introduction) **[Läs mer om Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview)**. 
+> Vi rekommenderar att [Microsoft Endpoint Manager](/mem) du använder för att hantera din organisations skyddsfunktioner för hot för enheter (kallas även slutpunkter). Endpoint Manager omfattar [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) och [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction). **[Läs mer om Endpoint Manager](/mem/endpoint-manager-overview)**. 
 
-Du kan använda grupprincipobjekt i Azure Active Directory Domain Services för att hantera vissa inställningar i Microsoft Defender för slutpunkt.
+Du kan använda grupprincipobjekt i Azure Active Directory Domain Services för att hantera vissa inställningar i Microsoft Defender för Slutpunkt.
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Konfigurera Microsoft Defender för slutpunkt med grupprincipobjekt
 
@@ -49,30 +49,30 @@ I följande tabell finns olika uppgifter som du kan utföra för att konfigurera
 
 |Uppgift  |Resurser för att få mer information  |
 |---------|---------|
-|**Hantera inställningar för användar- och datorobjekt** <br/><br/>*Anpassa inbyggda grupprincipobjekt eller skapa anpassade grupprincipobjekt och organisationsenheter så att de passar organisationens behov.*     |[Administrera grupprinciper i en hanterad azure Active Directory Domain Services-domän](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy)   |
-|**Konfigurera Microsoft Defender Antivirus** <br/><br/>*Konfigurera antivirusfunktioner & funktioner, inklusive principinställningar, undantag, åtgärder och schemalagda genomsökningar på organisationens enheter (kallas även slutpunkter).*   |[Använda grupprincipinställningar för att konfigurera och hantera Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/>[Använda grupprinciper för att aktivera moln levererat skydd](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)      |
-|**Hantera organisationens minskningsregler för attackytor** <br/><br/>*Anpassa dina minskningsregler för attackytan genom att utesluta filer & mappar eller genom att lägga till anpassad text i aviseringar som visas på användarnas enheter.* |[Anpassa minskningsregler för attackytor med grupprincipobjekt](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders) |
-|**Hantera inställningar för sårbarhetsskydd**<br/><br/>*Du kan anpassa inställningarna för sårbarhetsskydd, importera en konfigurationsfil och sedan använda grupprincipen för att distribuera konfigurationsfilen.*  |[Anpassa inställningarna för sårbarhetsskydd](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/>[Konfigurationer för att import, export och distribuering av exploateringsskydd](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml)<br/><br/>[Distribuera konfigurationen med grupprinciper](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)  |
-|**Aktivera nätverksskydd för** att förhindra att anställda använder program som skadligt innehåll på Internet <br/><br/>*Vi rekommenderar att [du först](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-network-protection) använder granskningsläge för nätverksskydd i en testmiljö för att se vilka appar som ska blockeras innan de lanseras.* |[Aktivera nätverksskydd med grupprincip](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)  |
-|**Konfigurera kontrollerad mappåtkomst för** att skydda mot utpressningstrojaner <br/><br/>*[Kontrollerad mappåtkomst](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) kallas även skydd mot skadlig programvara.*  |[Aktivera reglerad mappåtkomst med grupprincip](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy) |
-|**Konfigurera Microsoft Defender SmartScreen** för att skydda mot skadliga webbplatser och filer på Internet.  |[Konfigurera Microsoft Defender SmartScreen-grupprinciper och MDM-inställningar (Mobile Device Management) med grupprinciper](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)  |
-|**Konfigurera kryptering och BitLocker** för att skydda information på din organisations enheter med Windows |[Grupprincipinställningar i BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings) |
-|**Konfigurera Microsoft Defender Credential Guard för** att skydda mot autentiseringsstöldattacker |[Aktivera Windows Defender Credential Guard med hjälp av grupprincip](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy) |
+|**Hantera inställningar för användar- och datorobjekt** <br/><br/>*Anpassa inbyggda grupprincipobjekt eller skapa anpassade grupprincipobjekt och organisationsenheter så att de passar organisationens behov.*     |[Administrera grupprinciper i en domän som hanteras Azure Active Directory Domain Services](/azure/active-directory-domain-services/manage-group-policy)   |
+|**Konfigurera Microsoft Defender Antivirus** <br/><br/>*Konfigurera antivirusfunktioner & funktioner, inklusive principinställningar, undantag, åtgärder och schemalagda genomsökningar på organisationens enheter (kallas även slutpunkter).*   |[Använda grupprincipinställningar för att konfigurera och hantera Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/>[Använda grupprinciper för att aktivera moln levererat skydd](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)      |
+|**Hantera organisationens minskningsregler för attackytor** <br/><br/>*Anpassa dina minskningsregler för attackytan genom att utesluta filer & mappar eller genom att lägga till anpassad text i aviseringar som visas på användarnas enheter.* |[Anpassa minskningsregler för attackytor med grupprincipobjekt](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders) |
+|**Hantera inställningar för sårbarhetsskydd**<br/><br/>*Du kan anpassa inställningarna för sårbarhetsskydd, importera en konfigurationsfil och sedan använda grupprincipen för att distribuera konfigurationsfilen.*  |[Anpassa inställningarna för sårbarhetsskydd](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/>[Konfigurationer för att import, export och distribuering av exploateringsskydd](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml)<br/><br/>[Distribuera konfigurationen med grupprinciper](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)  |
+|**Aktivera nätverksskydd för** att förhindra att anställda använder program som skadligt innehåll på Internet <br/><br/>*Vi rekommenderar att [du först](/microsoft-365/security/defender-endpoint/evaluate-network-protection) använder granskningsläge för nätverksskydd i en testmiljö för att se vilka appar som ska blockeras innan de lanseras.* |[Aktivera nätverksskydd med grupprincip](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)  |
+|**Konfigurera kontrollerad mappåtkomst för** att skydda mot utpressningstrojaner <br/><br/>*[Kontrollerad mappåtkomst](/microsoft-365/security/defender-endpoint/controlled-folders) kallas även skydd mot skadlig programvara.*  |[Aktivera reglerad mappåtkomst med grupprincip](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy) |
+|**Konfigurera Microsoft Defender SmartScreen** för att skydda mot skadliga webbplatser och filer på Internet.  |[Konfigurera Microsoft Defender SmartScreen grupprincip och MDM-inställningar (Mobile Device Management) med grupprincip](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)  |
+|**Konfigurera kryptering BitLocker** skydda information på organisationens enheter som kör Windows |[BitLocker Grupprincipinställningar](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings) |
+|**Konfigurera Microsoft Defender Credential Guard för** att skydda mot autentiseringsstöldattacker |[Aktivera Windows Defender Credential Guard med grupprincip](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy) |
 
 ## <a name="configure-your-microsoft-defender-security-center"></a>Konfigurera Microsoft Defender Säkerhetscenter
 
-Om du inte redan har gjort det konfigurerar du **Microsoft Defender Säkerhetscenter** () för att visa aviseringar, konfigurera skyddsfunktioner för hot och visa detaljerad information om organisationens övergripande [https://securitycenter.windows.com](https://securitycenter.windows.com) säkerhetsvarning. 
+Om du inte redan har gjort det konfigurerar du din **Microsoft Defender Säkerhetscenter** () för att visa aviseringar, konfigurera skyddsfunktioner för hot och visa detaljerad information om organisationens övergripande [https://securitycenter.windows.com](https://securitycenter.windows.com) säkerhetsvarning. 
 
 Du kan också konfigurera om och vilka funktioner slutanvändare kan se i Microsoft Defender Säkerhetscenter.
 
-- [Översikt över Microsoft Defender Säkerhetscenter](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)
+- [Översikt över Microsoft Defender Säkerhetscenter](/microsoft-365/security/defender-endpoint/use)
 
-- [Slutpunktsskydd: Microsoft Defender Säkerhetscenter](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+- [Slutpunktsskydd: Microsoft Defender Säkerhetscenter](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Få en översikt över hot och sårbarhetshantering](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Få en översikt över Hantering av hot och säkerhetsrisker](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
-- [Besök instrumentpanelen för säkerhetsåtgärder i Microsoft Defender Säkerhetscenter](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+- [Besök instrumentpanelen Microsoft Defender Säkerhetscenter säkerhetsåtgärder](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 
 - [Hantera Microsoft Defender för slutpunkt med Intune](manage-atp-post-migration-intune.md)

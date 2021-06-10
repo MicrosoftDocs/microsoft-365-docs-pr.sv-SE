@@ -150,4 +150,4 @@ Följande steg kan användas för att felsöka och minimera dessa problem:
     Mer information finns i [Konfigurera och validera undantag för Microsoft Defender för Endpoint på Linux.](linux-exclusions.md)
 
 ## <a name="see-also"></a>Se även
-- [Undersöka problem med agenthälsa](health-status.md)
+- [Undersöka hälsoproblem i agenten](health-status.md)

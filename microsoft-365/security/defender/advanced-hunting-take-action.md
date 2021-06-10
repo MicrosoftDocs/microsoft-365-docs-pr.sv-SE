@@ -46,7 +46,7 @@ Du kan snabbt innehålla hot eller adresser komprometterade tillgångar som du h
 ## <a name="required-permissions"></a>Behörighet som krävs
 För att kunna vidta åtgärder via avancerad sökning behöver du en roll i Microsoft Defender för Endpoint med behörighet att skicka [åtgärder på enheter.](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options) Om du inte kan vidta någon åtgärd kontaktar du en global administratör för att få följande behörighet:
 
-*Aktiva åtgärdsåtgärder > hantering av hot och sårbarhet – åtgärdshantering*
+*Aktiva åtgärdsåtgärder > hot och hantering av säkerhetsrisker – åtgärdshantering*
 
 ## <a name="take-various-actions-on-devices"></a>Vidta olika åtgärder på enheter
 Du kan vidta följande åtgärder på enheter som identifieras av `DeviceId` kolumnen i frågeresultatet:

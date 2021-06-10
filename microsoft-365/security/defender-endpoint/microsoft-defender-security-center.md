@@ -42,12 +42,12 @@ Microsoft Defender Säkerhetscenter är portalen där du kan komma åt Microsoft
 Ämne | Beskrivning
 :---|:---
 Komma igång  |  Läs mer om minimikraven, validera licensiering och fullständig konfiguration, få information om förhandsgranskningsfunktioner, förstå datalagring och sekretess och hur du tilldelar användaråtkomst till portalen.
-[Onboard-enheter](onboard-configure.md) | Läs mer om onboarding-klient-, server- och icke-Windows-enheter. Lär dig hur du kör ett identifieringstest, konfigurerar proxy och Internetanslutningsinställningar och hur du felsöker möjliga onboarding-problem.
+[Onboard-enheter](onboard-configure.md) | Läs mer om onboarding klient, server och icke-Windows enheter. Lär dig hur du kör ett identifieringstest, konfigurerar proxy och Internetanslutningsinställningar och hur du felsöker möjliga onboarding-problem.
 [Förstå portalen](use.md) | Förstå säkerhetsåtgärder, Secure Score- och instrumentpaneler för hotanalys samt hur du navigerar i portalen.
 Undersöka och åtgärda hot | Undersök aviseringar, enheter och vidta åtgärder för att åtgärda hot.
-Stöd för API och SIEM | Använd API:er som stöds för att hämta och skapa anpassade aviseringar eller automatisera arbetsflöden. Använd de SIEM-verktyg som stöds för att hämta aviseringar från Microsoft Defender Säkerhetscenter.
-Rapportering | Skapa och skapa Power BI-rapporter med Microsoft Defender för Endpoint-data.
+Stöd för API och SIEM | Använd API:er som stöds för att hämta och skapa anpassade aviseringar eller automatisera arbetsflöden. Använd de nödvändiga SIEM-verktygen för att hämta aviseringar Microsoft Defender Säkerhetscenter.
+Rapportering | Skapa och skapa Power BI-rapporter med hjälp av Microsoft Defender för Endpoint-data.
 Kontrollera tjänstens hälsa och sensortillståndet | Kontrollera att tjänsten körs och kontrollera sensortillståndet på enheter.
-[Konfigurera inställningar för Microsoft Defender Säkerhetscenter](preferences-setup.md) | Konfigurera allmänna inställningar, aktivera förhandsgranskning, meddelanden och aktivera andra funktioner.
+[Konfigurera Microsoft Defender Säkerhetscenter inställningar](preferences-setup.md) | Konfigurera allmänna inställningar, aktivera förhandsgranskning, meddelanden och aktivera andra funktioner.
 [Få åtkomst till Microsoft Defender för Endpoint Community Center](community.md) | Få åtkomst till Microsoft Defender för Endpoint Community Center om du vill lära dig, samarbeta och dela upplevelser om produkten.
 [Felsöka tjänstproblem](troubleshoot-mdatp.md) | I det här avsnittet behandlas problem som kan uppstå när du använder Tjänsten Microsoft Defender för slutpunkt.

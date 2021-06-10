@@ -61,7 +61,7 @@ Ovanför filinformationskorten längst upp på profilsidan. Åtgärder som du ka
 - Stoppa och sätta i karantän
 - Indikator för att lägga till/redigera
 - Ladda ned fil
-- Kontakta en hotexpert
+- Konsultera en hotexpert
 - Åtgärdscenter
 
 Mer information om de här åtgärderna finns i [Vidta svarsåtgärder för en fil.](respond-file-alerts.md)
@@ -117,4 +117,4 @@ På **fliken Filnamn** visas alla namn som filen har observerats att använda i 
 - [Undersöka en IP-adress som är kopplad till en Microsoft Defender för Slutpunktsavisering](investigate-ip.md)
 - [Undersöka en domän som är kopplad till en Microsoft Defender för slutpunktsavisering](investigate-domain.md)
 - [Undersöka ett användarkonto i Microsoft Defender för Endpoint](investigate-user.md)
-- [Utföra svarsåtgärder för en fil](respond-file-alerts.md)
+- [Vidta svarsåtgärder för en fil](respond-file-alerts.md)

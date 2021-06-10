@@ -1,7 +1,7 @@
 ---
 title: Användbara Microsoft Defender för Slutpunkt-resurser
 description: Komma åt användbara resurser, till exempel länkar till bloggar och andra resurser relaterade till Microsoft Defender för Slutpunkt
-keywords: Microsoft Defender Säkerhetscenter, produktinformation, sammanfattning, funktioner, licensiering
+keywords: Microsoft Defender Säkerhetscenter, produktinformation, korta, funktioner, licensiering
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 727576ab75d77d12be0595c081586f411887da49
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5ecee4a71ef0b6f607a284766163a90f16bc27dc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165447"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843076"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>Användbara Microsoft Defender för Slutpunkt-resurser
 
@@ -37,7 +37,7 @@ ms.locfileid: "51165447"
 Få tillgång till användbara resurser, till exempel länkar till bloggar och andra resurser relaterade till Microsoft Defender för Slutpunkt.
 
 ## <a name="endpoint-protection-platform"></a>Plattform för slutpunktsskydd
-- [Bästa poäng i branschtester](https://docs.microsoft.com/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
+- [Bästa poäng i branschtester](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
 
 - [Inifrån och ut: Lär känna den avancerade tekniken som ligger i defender för nästa generations skydd](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 
@@ -61,4 +61,4 @@ Få tillgång till användbara resurser, till exempel länkar till bloggar och a
 
 - [Hur automatisering tillför värde till dina säkerhetsteam](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 
-- [Adressera falska positiva/negativa tal i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint](defender-endpoint-false-positives-negatives.md)

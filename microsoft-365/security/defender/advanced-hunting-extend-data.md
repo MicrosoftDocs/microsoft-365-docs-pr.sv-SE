@@ -1,6 +1,6 @@
 ---
 title: Utöka den avancerade söktäckningen med rätt inställningar
-description: Kontrollera granskningsinställningarna på Windows-enheter och andra inställningar för att se till att du får den mest omfattande informationen under avancerad sökning
+description: Kontrollera granskningsinställningarna på Windows enheter och andra inställningar för att se till att du får den mest omfattande informationen inom avancerad sökning
 keywords: avancerad sökning, incident, pivot, entitet, granskningsinställningar, användarkontohantering, hantering av säkerhetsgrupper, hot efter hot, sökning, sökning, fråga, telemetri, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -36,9 +36,9 @@ ms.locfileid: "51952674"
 - Microsoft 365 Defender
 - Microsoft Defender för Endpoint
 
-[Avancerad sökning](advanced-hunting-overview.md) använder data från olika källor, till exempel dina enheter, Office 365-arbetsytor, Azure AD och Microsoft Defender för identitet. För att få så omfattande data som möjligt bör du kontrollera att du har rätt inställningar i motsvarande datakällor.
+[Avancerad sökning](advanced-hunting-overview.md) baseras på data från olika källor, till exempel dina enheter, Office 365 arbetsytor, Azure AD och Microsoft Defender för identitet. För att få så omfattande data som möjligt bör du kontrollera att du har rätt inställningar i motsvarande datakällor.
 
-## <a name="advanced-security-auditing-on-windows-devices"></a>Avancerad säkerhetsgranskning på Windows-enheter
+## <a name="advanced-security-auditing-on-windows-devices"></a>Avancerad säkerhetsgranskning på Windows enheter
 Aktivera de här avancerade granskningsinställningarna för att säkerställa att du får data om aktiviteter på dina enheter, inklusive lokal kontohantering, hantering av lokala säkerhetsgrupper och skapande av tjänster.
 
 | Data | Beskrivning | Schematabell | Så här konfigurerar du |
@@ -52,7 +52,7 @@ Om du kör Active Directory lokalt måste du installera Microsoft Defender för 
 
 | Data | Beskrivning | Schematabell | Så här konfigurerar du |
 | --- | --- | --- | --- |
-| Domänkontrollant | Data från lokalt Active Directory som skickas till Microsoft Defender för identitet, och identifiering av identitetsrelaterad information, till exempel kontoinformation, inloggningsaktivitet och Active Directory-frågor | Flera tabeller, inklusive [IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)och [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installera Microsoft Defender för identitets sensor](/azure-advanced-threat-protection/install-atp-step4)<br>- [Aktivera relevanta Windows-händelser](/azure-advanced-threat-protection/configure-event-collection) |
+| Domänkontrollant | Data från lokalt Active Directory som skickas till Microsoft Defender för identitet, och identifiering av identitetsrelaterad information, till exempel kontoinformation, inloggningsaktivitet och Active Directory-frågor | Flera tabeller, inklusive [IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)och [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installera Microsoft Defender för identitets sensor](/azure-advanced-threat-protection/install-atp-step4)<br>- [Aktivera relevanta Windows händelser](/azure-advanced-threat-protection/configure-event-collection) |
 
 >[!NOTE]
 >Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)

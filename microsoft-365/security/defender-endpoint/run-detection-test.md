@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2bb1fde1bfd8ddfa358d1141c3821843e532a8bf
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 10090fdd1dff6b020d06c82afa8456d7a157ff91
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52312006"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843312"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Köra ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet 
 
@@ -63,4 +63,4 @@ Fönstret Kommandotolken stängs automatiskt. Om det lyckas markeras det som slu
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Registrera Windows 10-enheter](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
-- [Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
+- [Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

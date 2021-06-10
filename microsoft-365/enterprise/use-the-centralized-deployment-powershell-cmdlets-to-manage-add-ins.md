@@ -19,7 +19,7 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Använd PowerShell-cmdlets för centraliserad distribution för att distribuera och hantera Office-tillägg för Microsoft 365-organisationen.
+description: Använd PowerShell-cmdlets för centraliserad distribution för att distribuera och Office tillägg för din Microsoft 365 organisation.
 ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.locfileid: "50924678"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Use the Centralized Deployment PowerShell cmdlets to manage add-ins
 
-Som global Microsoft 365-administratör kan du distribuera Office-tillägg till användare via funktionen för centraliserad distribution (se Distribuera [Office-tillägg i administrationscentret).](../admin/manage/manage-deployment-of-add-ins.md) Förutom att distribuera Office-tillägg via administrationscentret för Microsoft 365 kan du också använda Microsoft PowerShell. Installera [O365 Centralized Add-In Deployment Module för Windows PowerShell.](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
+Som Microsoft 365 global administratör kan du distribuera Office-tillägg till användare via funktionen för centraliserad distribution (se Distribuera [Office-tillägg](../admin/manage/manage-deployment-of-add-ins.md)i administrationscentret ). Förutom att distribuera Office tillägg via administrationscentret för Microsoft 365 kan du också använda Microsoft PowerShell. Installera [O365 Centralized Add-In Deployment Module för Windows PowerShell.](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
 
-När du har laddat ned modulen öppnar du ett vanligt Windows PowerShell-fönster och kör följande cmdlet:
+När du har laddat ned modulen öppnar du ett Windows PowerShell fönster och kör följande cmdlet:
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a>Ansluta med dina autentiseringsuppgifter som administratör
+## <a name="connect-using-your-admin-credentials"></a>Anslut dina administratörsuppgifter
 
 Innan du kan använda cmdlets för centraliserad distribution måste du logga in.
   
@@ -49,7 +49,7 @@ Innan du kan använda cmdlets för centraliserad distribution måste du logga in
   Connect-OrganizationAddInService
   ```
 
-3. På sidan **Ange autentiseringsuppgifter** anger du dina autentiseringsuppgifter som global Microsoft 365-administratör. Alternativt kan du ange dina autentiseringsuppgifter direkt i cmdleten. 
+3. På sidan **Ange autentiseringsuppgifter** anger du dina Microsoft 365 som global administratör. Alternativt kan du ange dina autentiseringsuppgifter direkt i cmdleten. 
     
     Kör följande cmdlet med dina autentiseringsuppgifter som företagsadministratör som ett PSCredential-objekt.
     
@@ -60,9 +60,9 @@ Innan du kan använda cmdlets för centraliserad distribution måste du logga in
   ```
 
 > [!NOTE]
-> Mer information om hur du använder PowerShell finns i [Ansluta till Microsoft 365 med PowerShell.](./connect-to-microsoft-365-powershell.md) 
+> Mer information om hur du använder PowerShell finns i [Anslut att Microsoft 365 med PowerShell.](./connect-to-microsoft-365-powershell.md) 
   
-## <a name="upload-an-add-in-manifest"></a>Ladda upp ett tilläggsmanifest
+## <a name="upload-an-add-in-manifest"></a>Upload ett tilläggsmanifest
 
 Kör **cmdleten New-OrganizationAdd-In** för att ladda upp ett tilläggsmanifest från en sökväg, som antingen kan vara en filsökväg eller en URL. I följande exempel visas en filplats för parametervärdet för _ManifestPath._ 
   
@@ -76,7 +76,7 @@ Du kan också köra cmdleten **New-OrganizationAdd-In** för att ladda upp ett t
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>Ladda upp ett tillägg från Office Store
+## <a name="upload-an-add-in-from-the-office-store"></a>Upload ett tillägg från Office Store
 
 Kör **cmdleten New-OrganizationAddIn** för att ladda upp ett manifest från Office Store.
   
@@ -86,12 +86,12 @@ I följande exempel anger **cmdleten New-OrganizationAddIn** TillgångsID för e
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Om du vill ta reda på värdet för parametern  _AssetId_ kan du kopiera det från URL:en för Office Store-webbsidan för tillägget. Tillgångsid:er börjar alltid med "WA" följt av ett tal. I föregående exempel är källan för Tillgångsid-värdet WA104099688 Office Store-webbsides-URL:en för tillägget: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
+Om du vill avgöra värdet för parametern _AssetId_ kan du kopiera det från URL:en för Office Store-webbsidan för tillägget. Tillgångsid:er börjar alltid med "WA" följt av ett tal. I föregående exempel är källan för AssetId-värdet WA104099688 webbside-URL för Office Store för tillägget: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
   
 Värdena för parametern  _Locale_ och  _parametern ContentMarket_ är identiska och anger landet/regionen som du försöker installera tillägget från. Formatet är en-US, fr-FR. och så vidare. 
   
 > [!NOTE]
-> Tillägg som laddats upp från Office Store uppdateras automatiskt inom några dagar efter det att den senaste uppdateringen blir tillgänglig i Office Store. 
+> Tillägg som laddats upp från Office Store uppdateras automatiskt inom några dagar efter det att den senaste uppdateringen är tillgänglig på Office Store. 
   
 ## <a name="get-details-of-an-add-in"></a>Få information om ett tillägg
 
@@ -162,7 +162,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 ```
 
 > [!NOTE]
-> Tillägg som laddats upp från Office Store uppdateras automatiskt inom några dagar efter det att den senaste uppdateringen blir tillgänglig i Office Store. 
+> Tillägg som laddats upp från Office Store uppdateras automatiskt inom några dagar efter det att den senaste uppdateringen är tillgänglig på Office Store. 
   
 ## <a name="delete-an-add-in"></a>Ta bort ett tillägg
 

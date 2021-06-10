@@ -34,25 +34,25 @@ Om du har integrerat din lokala Active Directory Domain Services (AD DS) med Azu
   
 ## <a name="view-directory-synchronization-status"></a>Visa katalogsynkroniseringsstatus
 
-- Logga in på [administrationscentret för Microsoft 365](https://admin.microsoft.com) och välj **DirSync-status** på startsidan.
+- Logga in Microsoft 365 [administrationscentret](https://admin.microsoft.com) och välj **DirSync-status** på startsidan.
 - Alternativt kan du gå till Användare **aktiva användare** och på \> sidan Aktiva **användare** väljer du Mer **katalogsynkronisering.** \>  I fönstret **Katalogsynkronisering** väljer du **Gå till DirSync-hantering**.
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Information på sidan Hantera katalogsynkronisering
 
 I följande tabell visas de funktioner du kan få information om på sidan.
   
-Om det är problem med katalogsynkroniseringen visas även felen på den här sidan. Mer information om olika fel som kan uppstå finns i [Identifiera katalogsynkroniseringsfel i Microsoft 365.](identify-directory-synchronization-errors.md)
+Om det är problem med katalogsynkroniseringen visas även felen på den här sidan. Mer information om olika fel som kan uppstå finns i [Identifiera katalogsynkroniseringsfel i Microsoft 365](identify-directory-synchronization-errors.md).
   
 |Objekt|Vad det används till|
 |:-----|:-----|
-|**Verifierade domäner** | Antal domäner i din Microsoft 365-klientorganisation som du har verifierat att du äger. |
+|**Verifierade domäner** | Antalet domäner i klientorganisationen Microsoft 365 som du har verifierat att du äger. |
 |**Domäner som inte har verifierats** | Domäner som du har lagt till, men inte verifierat. |
 |**Katalogsynkronisering aktiverad** |Sant eller falskt. Anger om du har aktiverat katalogsynkronisering. |
 |**Senaste katalogsynkronisering** | Senaste gången katalogsynkronisering kördes. Visar en varning och en länk till ett felsökningsverktyg, om den senaste synkroniseringen gjordes för mer än tre dagar sedan. |
-|**Lösenordssynkronisering aktiverad** | Sant eller falskt. Anger om du har synkronisering av lösenordshashar mellan vår lokala och din Microsoft 365-klientorganisation. |
+|**Lösenordssynkronisering aktiverad** | Sant eller falskt. Anger om du har hash-synkronisering av lösenord mellan vår lokala och din Microsoft 365 klientorganisation. |
 |**Senaste lösenordssynkronisering** | Senaste gången hash-synkronisering av lösenord kördes. Visar en varning och en länk till ett felsökningsverktyg, om den senaste synkroniseringen gjordes för mer än tre dagar sedan. |
-|**Version av katalogsynkroniseringsklient** | Innehåller en nedladdningslänk om en ny version av Azure AD Connect har släppts. |
-|**Katalogsynkroniseringstjänstkonto** | Visar namnet på ditt Microsoft 365-katalogsynkroniseringstjänstkonto. |
+|**Version av katalogsynkroniseringsklient** | Innehåller en nedladdningslänk om en ny version av Azure AD Anslut har släppts. |
+|**Katalogsynkroniseringstjänstkonto** | Visar namnet på ditt Microsoft 365 katalogsynkroniseringstjänstkonto. |
 |||
 
 ## <a name="monitor-synchronization-health"></a>Övervaka synkroniseringshälsa

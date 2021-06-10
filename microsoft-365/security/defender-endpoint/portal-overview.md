@@ -1,6 +1,6 @@
 ---
 title: Översikt över Microsoft Defender för slutpunktsportalen
-description: Microsoft Defender Säkerhetscenter kan övervaka företagsnätverket och hjälpa dig att svara på potentiella avancerade fortlöpande hot (APT) eller databrott.
+description: Microsoft Defender Säkerhetscenter kan övervaka företagsnätverket och hjälpa dig att svara på potentiella avancerade hot (APT) eller databrott.
 keywords: Microsoft Defender Säkerhetscenter, portal, hotinformation för cybersäkerhet, instrumentpanel, aviseringar i kön, enhetslista, inställningar, enhetshantering, avancerade attacker
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,9 +35,9 @@ ms.locfileid: "51186227"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
-Enterprise security teams can use Microsoft Defender Security Center to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches.
+Företagssäkerhetsteam kan använda Microsoft Defender Säkerhetscenter övervaka och hjälpa till att svara på varningar om potentiella avancerade fortlöpande hotaktiviteter eller databrott.
 
-Du kan använda [Microsoft Defender Säkerhetscenter för](https://securitycenter.windows.com/) att:
+Du kan använda [Microsoft Defender Säkerhetscenter](https://securitycenter.windows.com/) för att:
 
 - Visa, sortera och sortera aviseringar från slutpunkterna
 - Söka efter mer information om observerade indikatorer, till exempel filer och IP-adresser
@@ -53,21 +53,21 @@ När du öppnar portalen visas:
  ![Microsoft Defender för Slutpunktsportalen](images/mdatp-portal-overview.png)
 
 > [!NOTE]
-> Identifieringar av skadlig programvara visas bara om dina enheter använder Microsoft Defender Antivirus som standard för skydd mot skadlig kod i realtid.
+> Identifieringar av skadlig programvara visas bara om dina enheter använder Microsoft Defender Antivirus som skyddsprogram för realtidsskydd i realtid.
 
 Du kan navigera i portalen med menyalternativen som är tillgängliga i alla avsnitt. I följande tabell finns en beskrivning av varje avsnitt.
 
 Område | Beskrivning
 :---|:---
-**(1) Navigeringsfönstret** | Använd navigeringsfönstret för att flytta mellan Instrumentpaneler **,** Incidenter **,** Lista över enheter **,** Aviseringar kö **,** Automatiserade undersökningar **,** Avancerad sökning **,** Rapporter , Partners **& API:er**, **Hot & Sårbarhetshantering,** Utvärdering och **självstudiekurser**, **Tjänstens** hälsa, **Konfigurationshantering** och **Inställningar**.  Markera de vågräta linjerna högst upp i navigeringsfönstret för att visa eller dölja dem.
+**(1) Navigeringsfönstret** | Använd navigeringsfönstret för att växla mellan Instrumentpaneler **,** Incidenter **,** Lista över enheter **,** Aviseringar kö **,** Automatiska undersökningar , Avancerad sökning **,** Rapporter **,** **Partners & API:er**, **hot & sårbarhetshantering,** utvärdering och **självstudiekurser**, **tjänstens** hälsa, konfigurationshantering och **Inställningar.**   Markera de vågräta linjerna högst upp i navigeringsfönstret för att visa eller dölja dem.
 **Instrumentpaneler** | Få åtkomst till de aktiva automatiserade undersökningarna, aktiva registreringar, automatiserad undersökningar, enheter som är i riskzonen, enheter med sensorproblem, tjänstens hälsa, identifieringskällor och rapporter instrumentpaneler för dagliga enheter.
 **Incidenter** | Visa aviseringar som har aggregerats som incidenter.
-**Listan Enheter** | Visar listan över enheter som är onboarded to Defender för Endpoint, en del information om dem och deras exponerings- och risknivåer.
-**Kön Aviseringar** | Visa aviseringar som genereras från enheter i din organisation.
+**Enhetslista** | Visar listan över enheter som är onboarded to Defender för Endpoint, en del information om dem och deras exponerings- och risknivåer.
+**Varningskö** | Visa aviseringar som genereras från enheter i din organisation.
 **Automatiserade undersökningar** | Visar automatiska undersökningar som har utförts i nätverket, utlösande avisering, status för varje undersökning och annan information, till exempel när undersökningen startades och undersökningens varaktighet.
 **Avancerad jakt** | Med avancerad sökning kan du proaktivt jaga och undersöka information i hela organisationen med hjälp av ett kraftfullt sök- och frågeverktyg.
 **Rapporter** | Visa diagram med information om skydd mot hot, enhetshälsa och efterlevnad, webbskydd och sårbarhet.
-**Partners & API:er** | Visa partneranslutningar som stöds, som förbättrar plattformens funktioner för identifiering, undersökning och hotinformation. Du kan också visa anslutna program, API-utforskaren, API-användningsöversikt och inställningar för dataexport.
+**Partners och API:er** | Visa partneranslutningar som stöds, som förbättrar plattformens funktioner för identifiering, undersökning och hotinformation. Du kan också visa anslutna program, API-utforskaren, API-användningsöversikt och inställningar för dataexport.
 **Hot & sårbarhetshantering** | Visa Microsoft Secure Score för enheter, exponeringsresultat, exponerade enheter, sårbar programvara och vidta åtgärder för de viktigaste säkerhetsrekommendationerna.
 **Utvärdering och självstudiekurser** | Hantera testenheter, attack simuleringar och rapporter. Lär dig mer om och upplev Defender för Slutpunkt-funktionerna genom en guidad genomgång i en utvärderingsmiljö.
 **Tjänstens hälsa** | Innehåller information om aktuell status för Defender för slutpunkt-tjänsten. Du kan kontrollera att tjänstens hälsa är felfri eller om det finns aktuella problem.
@@ -76,7 +76,7 @@ Område | Beskrivning
 **(2) Sökning, communitycenter, lokalisering, hjälp och support, feedback** | **Sök** – sök efter enhet, fil, användare, URL, IP, sårbarhet, programvara och rekommendation. </br></br> **Community Center** – Få tillgång till Community Center för att lära dig, samarbeta och dela upplevelser om produkten. </br></br>  **Lokalisering –** ange tidszoner. </br></br>  **Hjälp och support** – Få tillgång till Defender för slutpunktsguiden, Support för Microsoft och Microsoft Premier, licensinformation, simuleringar & självstudiekurser, Defender för endpoint-utvärderingslabb och kontakta en expert på hot.</br></br> **Feedback** – Ge kommentarer om vad du gillar och vad vi kan göra bättre.
 
 > [!NOTE]
-> För enheter med DPI-skalningsproblem med hög upplösning kan du hitta möjliga lösningar i [Windows-skalningsproblem för hög-DPI-enheter.](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices)
+> För enheter med DPI-skalning med hög upplösning kan du Windows problem med skalning för [hög-DPI-enheter](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) för möjliga lösningar.
 
 ## <a name="microsoft-defender-for-endpoint-icons"></a>Microsoft Defender för slutpunktsikoner
 
@@ -92,12 +92,12 @@ Ikon | Beskrivning
 ![Ikonen Inte åtgärdad](images/not-remediated-icon.png)| Inte åtgärdat – Hot har inte tagits bort från enheten.
 ![Ikon för Ikon](images/atp-thunderbolt-icon.png)| Anger händelser som utlöste en avisering i **processträdet för Avisering.**
 ![Enhetsikon](images/atp-machine-icon.png)| Enhetsikon
-![Microsoft Defender AV-händelseikon](images/atp-windows-defender-av-events-icon.png)| Microsoft Defender Antivirus-händelser
-![Application Guard-händelseikon](images/atp-Application-Guard-events-icon.png)| Windows Defender Application Guard-händelser
-![Ikon för Device Guard-händelser](images/atp-Device-Guard-events-icon.png)| Händelser i Windows Defender Device Guard
-![Sårbarhetsskydd-händelseikon](images/atp-Exploit-Guard-events-icon.png)| Händelser för Sårbarhetsskydd i Windows Defender
+![Microsoft Defender AV-händelseikon](images/atp-windows-defender-av-events-icon.png)| Microsoft Defender Antivirus händelser
+![Application Guard-händelseikon](images/atp-Application-Guard-events-icon.png)| Windows Defender Application Guard händelser
+![Ikon för Device Guard-händelser](images/atp-Device-Guard-events-icon.png)| Windows Defender Device Guard händelser
+![Sårbarhetsskydd-händelseikon](images/atp-Exploit-Guard-events-icon.png)| Windows Defender Sårbarhetsskydd-händelser
 ![SmartScreen-händelseikon](images/atp-Smart-Screen-events-icon.png)| Windows Defender SmartScreen-händelser
-![Ikon för brandväggshändelser](images/atp-Firewall-events-icon.png)| Händelser för Windows-brandväggen
+![Ikon för brandväggshändelser](images/atp-Firewall-events-icon.png)| Windows Brandväggshändelser
 ![Ikonen Svarsåtgärd](images/atp-respond-action-icon.png)| Svarsåtgärd
 ![Ikon för processhändelser](images/atp-process-event-icon.png)| Processhändelser
 ![Ikon för nätverkskommunikationshändelser](images/atp-network-communications-icon.png)| Nätverkshändelser

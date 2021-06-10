@@ -37,7 +37,7 @@ När en automatiserad undersökning [](automated-investigations.md) körs med Mi
 
 ## <a name="new-unified-investigation-page"></a>(NY!) Sida för enhetlig undersökning
 
-Undersökningssidan har nyligen uppdaterats för att inkludera information på dina enheter, e-post och samarbetsinnehåll. Den nya, enhetliga undersökningssidan definierar ett gemensamt språk och ger en enhetlig upplevelse för automatiska undersökningar i [Microsoft Defender](microsoft-defender-endpoint.md) för Endpoint och Microsoft Defender för [Office 365.](/microsoft-365/security/office-365-security/office-365-atp) 
+Undersökningssidan har nyligen uppdaterats för att inkludera information på dina enheter, e-post och samarbetsinnehåll. Den nya, enhetliga undersökningssidan definierar ett gemensamt språk och ger en enhetlig upplevelse för automatiska undersökningar i [Microsoft Defender](microsoft-defender-endpoint.md) för Endpoint och Microsoft Defender [för Office 365.](/microsoft-365/security/office-365-security/office-365-atp) 
 
 > [!TIP]
 > Mer information om vad som ändras finns i [(NYTT!) Sida för enhetlig undersökning](/microsoft-365/security/mtp/mtp-autoir-results).
@@ -78,12 +78,12 @@ Använd vyn med undersökningsinformation för att se tidigare, aktuella och vä
 I vyn Undersökningsinformation kan du se information om flikarna **Undersökningsdiagram**, Varningar, Enheter, Identiteter, Nyckelresultat, Enheter, Logg och Väntande åtgärder, som beskrivs i följande tabell.       
 
 > [!NOTE]
-> Vilka flikar som visas på sidan med undersökningsinformation beror på vad prenumerationen innehåller. Om din prenumeration till exempel inte omfattar Microsoft Defender för Office 365 abonnemang 2 visas inte fliken **Postlådor.**
+> Vilka flikar som visas på sidan med undersökningsinformation beror på vad prenumerationen innehåller. Om din prenumeration till exempel inte innehåller Microsoft Defender för Office 365 abonnemang 2 visas inte fliken **Postlådor.**
 
 | Tabb | Beskrivning |
 |:--------|:--------|
 | **Undersökningsdiagram**   | Ger en visuell representation av undersökningen. Visar enheter och visar hot som hittas, tillsammans med aviseringar och om några åtgärder väntar på godkännande.<br/>Du kan markera ett objekt i diagrammet om du vill visa mer information. Om du till exempel **väljer ikonen Bevis** kommer du till fliken **Bevis** där du kan se identifierade enheter och deras bedömningar. |
-| **Varningar**    | Listar aviseringar kopplade till undersökningen. Varningar kan komma från skyddsfunktioner för hot på en användares enhet, i Office-appar, Cloud App Security och andra Microsoft 365 Defender-funktioner.|
+| **Varningar**    | Listar aviseringar kopplade till undersökningen. Aviseringar kan komma från skyddsfunktioner för hot på en användares enhet, i Office-appar, Cloud App Security och andra Microsoft 365 Defender-funktioner.|
 | **Enheter** | Visar enheter som ingår i undersökningen tillsammans med deras åtgärdsnivå. (Åtgärdsnivåer motsvarar [automationsnivån för enhetsgrupper](automation-levels.md).) |
 | **Postlådor** |Listar postlådor som påverkas av identifierade hot.  |
 | **Användare**  | Här listas användarkonton som påverkas av identifierade hot. |

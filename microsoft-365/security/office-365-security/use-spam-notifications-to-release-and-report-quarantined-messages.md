@@ -56,7 +56,7 @@ En skräppost-avisering för slutanvändaren innehåller följande information f
 
 - **Datum:** Datum och tid (i UTC) då meddelandet satt i karantän.
 
-- **Spärra avsändare:** Klicka på den här länken om du vill lägga till avsändaren i listan Spärrade avsändare i din postlåda. Mer information finns i Spärra [en e-postavsändare.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+- **Spärra avsändare:** Klicka på den här länken om du vill lägga till avsändaren i listan Spärrade avsändare i din postlåda. Mer information finns i [Spärra e-postavsändare](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Version:** För skräppost (inte nätfiske) kan du släppa meddelandet här utan att gå till karantänen för & säkerhets- och efterlevnadscenter.
 

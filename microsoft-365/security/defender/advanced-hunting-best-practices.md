@@ -61,7 +61,7 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
 - **Tolka, extrahera inte**– När det är möjligt använder du [parsoperatorn](/azure/data-explorer/kusto/query/parseoperator) eller en tolkningsfunktion som [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). Undvik `matches regex` strängoperatorn eller [extrahera()-funktionen,](/azure/data-explorer/kusto/query/extractfunction)som båda använder reguljära uttryck. Reservera användningen av reguljära uttryck för mer komplexa scenarier. [Läs mer om tolkningsfunktioner](#parse-strings)
 - **Filtrera tabeller och inte** uttryck – Filtrera inte efter en beräknad kolumn om du kan filtrera på en tabellkolumn.
 - **Inga termer med tre tecken**– Undvik att jämföra eller filtrera med hjälp av termer med tre tecken eller färre. Termerna indexeras inte och för att de ska matchas krävs fler resurser.
-- **Projicera** selektivt – Gör resultatet enklare att förstå genom att projicera endast de kolumner du behöver. Att projicera specifika kolumner innan [du kör koppling](/azure/data-explorer/kusto/query/joinoperator) eller liknande åtgärder ger också bättre prestanda.
+- **Project selektivt**– Gör resultatet enklare att förstå genom att projicera endast de kolumner du behöver. Att projicera specifika kolumner innan [du kör koppling](/azure/data-explorer/kusto/query/joinoperator) eller liknande åtgärder ger också bättre prestanda.
 
 ## <a name="optimize-the-join-operator"></a>Optimera `join` operatorn
 [Kopplingsoperatorn](/azure/data-explorer/kusto/query/joinoperator) slår samman rader från två tabeller genom att matcha värden i angivna kolumner. Använd de här tipsen om du vill optimera frågor som använder den här operatorn.
@@ -187,7 +187,7 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
 ## <a name="query-scenarios"></a>Frågescenarier
 
 ### <a name="identify-unique-processes-with-process-ids"></a>Identifiera unika processer med process-ID
-Process-ID:n (PID) återanvänds i Windows och återanvänds för nya processer. De kan på egen hand inte fungera som unika identifierare för specifika processer.
+Process-ID:n (PID) återanvänds i Windows återanvänds för nya processer. De kan på egen hand inte fungera som unika identifierare för specifika processer.
 
 Om du vill få en unik identifierare för en process på en viss dator kan du använda process-ID:t tillsammans med den tid då processen skapades. När du sammanfogar eller sammanfattar data runt processer tar du med kolumner för maskinidentifieraren (antingen eller `DeviceId` `DeviceName` ), process-ID ( eller ) och tiden då processen skapades `ProcessId` ( eller `InitiatingProcessId` `ProcessCreationTime` `InitiatingProcessCreationTime` )
 

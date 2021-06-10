@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 311903cdd1409f4ab997641cc842ff199ce2500d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932757"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843112"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Bevilja åtkomst för hanterad säkerhetstjänstleverantör (MSSP) (förhandsversion)
 
@@ -41,9 +41,9 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
 
 1. Aktivera [rollbaserad åtkomstkontroll i](rbac.md) Defender för Endpoint och ansluta med Active Directory-grupper (AD).
 
-2. Konfigurera [styrningsåtkomstpaket](https://docs.microsoft.com/azure/active-directory/governance/identity-governance-overview) för åtkomstbegäran och etablering.
+2. Konfigurera [styrningsåtkomstpaket](/azure/active-directory/governance/identity-governance-overview) för åtkomstbegäran och etablering.
 
-3. Hantera åtkomstförfrågningar och granskningar i [Microsoft Myaccess.](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-request-approve)
+3. Hantera åtkomstförfrågningar och granskningar i [Microsoft Myaccess.](/azure/active-directory/governance/entitlement-management-request-approve)
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint"></a>Aktivera rollbaserade åtkomstkontroller i Microsoft Defender för Endpoint
 
@@ -58,7 +58,7 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
 
 2. Skapa Defender för slutpunktsroller för lämpliga åtkomstnivåer i Customer Defender för Endpoint.
 
-    Om du vill aktivera RBAC i kundens Microsoft Defender Säkerhetscenter öppnar du Inställningar > Behörigheter **>** Roller och "Aktivera roller" från ett användarkonto med rättigheter som global administratör eller säkerhetsadministratör.
+    Om du vill aktivera åtkomstinformation för rollskydd i kundorganisationen Microsoft Defender Säkerhetscenter du Inställningar > Behörigheter **>** Roller och Aktivera roller från ett användarkonto med behörigheten Global administratör eller Säkerhetsadministratör.
 
     ![Bild av MSSP-åtkomst](images/mssp-access.png)
 
@@ -92,7 +92,7 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
 
     ![Bild av ny katalog](images/goverance-catalog.png)
 
-    Mer information finns i [Skapa en resurskatalog.](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-catalog-create)
+    Mer information finns i [Skapa en resurskatalog.](/azure/active-directory/governance/entitlement-management-catalog-create)
 
 
 3. **Skapa åtkomstpaket för MSSP-resurser Kund AAD: Identitetsstyrning**
@@ -109,7 +109,7 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
     > [!div class="mx-imgBorder"]
     > ![Bild på nytt åtkomstpaket](images/new-access-package.png)
 
-    Mer information finns i [Skapa ett nytt åtkomstpaket.](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-access-package-create)
+    Mer information finns i [Skapa ett nytt åtkomstpaket.](/azure/active-directory/governance/entitlement-management-access-package-create)
 
 
 4. **Länk för åtkomstbegäran till MSSP-resurser från kund AAD: identitetsstyrning**
@@ -132,7 +132,7 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
     Exempel:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Godkänn eller neka förfrågningar i **avsnittet Godkännanden** i användargränssnittet.
 
-    I det här läget har analytikernas åtkomst etablerats och varje analytiker ska kunna komma åt kundens Microsoft Defender Säkerhetscenter: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    I det här läget har analytiker åtkomst till företaget etablerats och varje analytiker ska kunna komma åt kundens Microsoft Defender Säkerhetscenter:`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Få åtkomst till MSSP-kundportalen](access-mssp-portal.md)

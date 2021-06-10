@@ -48,7 +48,7 @@ Appen Windows-säkerhet ett klientgränssnitt i Windows 10, version 1703 och sen
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Granska inställningarna för skydd mot virus och hot i Windows-säkerhet appen
 
-![Skärmbild av etiketten för & för skydd mot virus i Windows-säkerhet datorprogrammet](images/defender/wdav-protection-settings-wdsc.png)
+![Skärmbild på inställningsetiketten för Skydd mot virus och hot i Windows-säkerhetsappen](images/defender/wdav-protection-settings-wdsc.png)
 
 1. Öppna Windows-säkerhet genom att klicka på sköldikonen i aktivitetsfältet eller söka efter Defender på **startmenyn.**
 
@@ -57,7 +57,7 @@ Appen Windows-säkerhet ett klientgränssnitt i Windows 10, version 1703 och sen
 I följande avsnitt beskrivs hur du utför några av de vanligaste uppgifterna när du granskar eller interagerar med hotskyddet som tillhandahålls av Microsoft Defender Antivirus i Windows-säkerhet-appen.
 
 > [!NOTE]
-> Om de här inställningarna konfigureras och distribueras med grupprincip kommer inställningarna som beskrivs i det här avsnittet att vara nedtonade och inte tillgängliga för användning i enskilda slutpunkter. Ändringar som görs via ett grupprincipobjekt måste först distribueras till enskilda slutpunkter innan inställningen uppdateras i Windows Inställningar. I [avsnittet Konfigurera användarinteraktion med Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) beskrivs hur du kan konfigurera inställningar för åsidosättning av lokala policyer.
+> Om de här inställningarna konfigureras och distribueras med grupprincip kommer inställningarna som beskrivs i det här avsnittet att vara nedtonade och inte tillgängliga för användning i enskilda slutpunkter. Ändringar som görs via ett grupprincipobjekt måste först distribueras till enskilda slutpunkter innan inställningen uppdateras i Windows-inställningarna. I [avsnittet Konfigurera användarinteraktion med Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) beskrivs hur du kan konfigurera inställningar för åsidosättning av lokala policyer.
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>Köra en genomsökning med Windows-säkerhet appen
 

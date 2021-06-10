@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 3872be343e51c4e28f946192256932b048a23791
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933907"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843216"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Registrera icke beständiga enheter för virtual desktop infrastructure (VDI)
 
@@ -32,7 +32,7 @@ ms.locfileid: "51933907"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - VDI-enheter (Virtual Desktop Infrastructure)
-- Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
+- Windows 10, Windows Server 2019 Windows Server 2008R2/2012R2/2016
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
@@ -63,17 +63,17 @@ Följande steg vägleder dig genom introduktionen av VDI-enheter och visar steg 
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>För Windows 10 eller Windows Server 2019
 
-1.  Öppna ZIP-filen för VDI-konfigurationspaket *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för service onboarding. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1.  Öppna filen för VDI-.zip *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för service onboarding. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
 
-    1.  Välj Inställningar Onboarding **i**  >  **navigeringsfönstret.**
+    1.  I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**.
 
     1. Välj Windows 10 som operativsystem.
 
     1.  Välj  **VDI-onboardingskript för icke-beständiga slutpunkter i fältet Distributionsmetod.**
 
-    1. Klicka **på Ladda ned** paket och spara ZIP-filen.
+    1. Klicka **på Ladda ned** paket och spara .zip filen.
 
-2. Kopiera filerna från mappen WindowsDefenderATPOnboardingPackage som extraherats från ZIP-filen `golden/master` till bilden under sökvägen `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
+2. Kopiera filerna från mappen WindowsDefenderATPOnboardingPackage som extraherats från .zip-filen `golden/master` till bilden under sökvägen `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
 
     1. Om du inte implementerar en enda post för varje enhet kopierar du WindowsDefenderATPOnboardingScript.cmd.
 
@@ -82,7 +82,7 @@ Följande steg vägleder dig genom introduktionen av VDI-enheter och visar steg 
     > [!NOTE]
     > Om du inte ser mappen `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` kan den vara dold. Du måste välja alternativet Visa **dolda filer och mappar i** Utforskaren.
 
-3. Öppna ett fönster för redigeraren för lokala grupprinciper och gå till **Datorkonfiguration**  >  **Windows-inställningar**  >  **Skriptstart.**  >  
+3. Öppna ett fönster för redigeraren för lokala grupprinciper och gå **till**  >  **Datorkonfiguration Windows Inställningar** vid start  >  **av**  >  **skript.**
 
    > [!NOTE]
    > Domain Group Policy kan också användas för registrering av icke-beständiga VDI-enheter.
@@ -91,11 +91,11 @@ Följande steg vägleder dig genom introduktionen av VDI-enheter och visar steg 
 
    - För enskild inmatning för varje enhet:
    
-     Välj fliken **PowerShell-skript och** klicka sedan på Lägg till **(Utforskaren** öppnas direkt i sökvägen där du kopierade onboarding-skriptet tidigare). Navigera till onboarding PowerShell-skript `Onboard-NonPersistentMachine.ps1` . Du behöver inte ange den andra filen eftersom den utlöses automatiskt.
+     Välj fliken **PowerShell-skript** och klicka sedan på Lägg till **(Windows** Utforskaren öppnas direkt i sökvägen där du kopierade onboarding-skriptet tidigare). Navigera till onboarding PowerShell-skript `Onboard-NonPersistentMachine.ps1` . Du behöver inte ange den andra filen eftersom den utlöses automatiskt.
    
    - För flera poster för varje enhet:
    
-     Välj fliken **Skript och** klicka sedan på **Lägg till** (Utforskaren öppnas direkt i sökvägen där du kopierade onboarding-skriptet tidigare). Navigera till bash-skriptet `WindowsDefenderATPOnboardingScript.cmd` onboarding.
+     Välj fliken **Skript och** klicka sedan **på** Lägg till (Windows Utforskaren öppnas direkt i sökvägen där du kopierade onboarding-skriptet tidigare). Navigera till bash-skriptet `WindowsDefenderATPOnboardingScript.cmd` onboarding.
 
 5. Testa lösningen:
 
@@ -111,7 +111,7 @@ Följande steg vägleder dig genom introduktionen av VDI-enheter och visar steg 
    
       - För enskild inmatning för varje enhet: 
     
-        Kontrollera bara en post i Microsoft Defender Säkerhetscenter.
+        Markera bara en post i Microsoft Defender Säkerhetscenter.
 
       - För flera poster för varje enhet: 
        
@@ -155,9 +155,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 Mer information om DISM-kommandon och offlineunderhåll finns i artiklarna nedan:
-- [Ändra en Windows-bild med DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [DISM Image Management Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Minska storleken på komponentlagret i en offline-Windows-bild](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [Ändra en Windows bild med DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [DISM Image Management Command-Line Options](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [Minska storleken på komponentarkivet i en offline-Windows bild](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 Om offlineunderhåll inte är ett möjligt alternativ för din icke-beständiga VDI-miljö bör du vidta följande steg för att säkerställa konsekvens och sensorhälsa:
 
@@ -184,8 +184,8 @@ Om offlineunderhåll inte är ett möjligt alternativ för din icke-beständiga 
 5. Omsälsa den gyllene bilden/originalbilden som vanligt.
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Introducera Windows 10-enheter med grupprincip](configure-endpoints-gp.md)
-- [Introducera Windows 10-enheter med Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Introducera Windows 10 enheter med grupprincip](configure-endpoints-gp.md)
+- [Introducera Windows 10 enheter med Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter](configure-endpoints-mdm.md)
 - [Registrera Windows 10-enheter med ett lokalt skript](configure-endpoints-script.md)
 - [Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender](troubleshoot-onboarding.md)

@@ -1,5 +1,5 @@
 ---
-title: Undersöka problem med agenthälsa
+title: Undersöka hälsoproblem i agenten
 description: Lär dig mer om de värden som returneras när du kör hälsokommandot mdatp
 keywords: mdatp-status, kommando, hälsa, status, kommando, onboarding-status
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52281306"
 ---
-# <a name="investigate-agent-health-issues"></a>Undersöka problem med agenthälsa
+# <a name="investigate-agent-health-issues"></a>Undersöka hälsoproblem i agenten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
