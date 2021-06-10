@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du installerar Microsoft 365 Admin-mobilappen på din telefon.
+description: Läs om hur du Microsoft 365 administratörsmobilappen på din telefon.
 ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580708"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installera mobilappen Microsoft 365 Admin på din telefon
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installera Microsoft 365 Admin-mobilappen på din telefon
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-Du kan använda microsoft 365 Admin-mobilappen för att hantera användare, övervaka tjänstehälsa och utföra andra administrationsuppgifter från telefonen.
+Du kan använda Microsoft 365 Admin-mobilappen för att hantera användare, övervaka tjänstehälsa och utföra andra administrativa uppgifter från telefonen.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. Om du vill skaffa Microsoft 365 Admin-mobilappen söker du efter  **Microsoft 365 Admin**  i appbutiken för din enhet och installerar den.
+1. Om du vill Microsoft 365 Admin-mobilappen söker du **efter Microsoft 365 Administratör** i appbutiken för din enhet och installerar den.
 2. Logga in med din globala administratörs e-postadress och visa instrumentpanelen för att se tjänstens status, övervaka användarlicenser och se meddelanden och tjänstförfrågningar.
 3. Här är några vanliga uppgifter som du kan utföra med appen:
 
@@ -56,6 +56,6 @@ Du kan använda microsoft 365 Admin-mobilappen för att hantera användare, öve
 
 ### <a name="turn-on-notifications"></a>Aktivera aviseringar
 
-1. I huvudmenyn väljer du  **Inställningar**.
+1. I huvudmenyn väljer du **Inställningar**.
 2. Välj **Aviseringar under** **Appinställningar.**
 3. Markera kryssrutorna bredvid **Tjänstens hälsa** och **Meddelandecenter.**

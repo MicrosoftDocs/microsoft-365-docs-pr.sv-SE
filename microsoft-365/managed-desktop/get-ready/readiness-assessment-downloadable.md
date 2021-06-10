@@ -19,7 +19,7 @@ ms.locfileid: "51581040"
 ---
 # <a name="downloadable-readiness-assessment-checker"></a>Nedladdningsbar kontroll för beredskapsbedömning
 
-För att fungera bra med Microsoft Managed Desktop måste enheter uppfylla vissa krav för maskinvara och inställningar. Varje enhet måste också kunna nå viktiga slutpunkter. Ladda ned och kör det här verktyget för att hämta en HTML-rapport, visa resultat och sedan vidta åtgärder. Du måste ladda ned verktyget och stödfilerna och sedan köra det manuellt på varje enhet som du vill registrera i Microsoft Managed Desktop.
+För att fungera bra Microsoft Hanterat skrivbord måste enheter uppfylla vissa krav på maskinvara och inställningar. Varje enhet måste också kunna nå viktiga slutpunkter. Ladda ned och kör det här verktyget för att hämta en HTML-rapport, visa resultat och sedan vidta åtgärder. Du måste ladda ned verktyget och stödfilerna och sedan köra det manuellt på varje enhet som du vill registrera i Microsoft Hanterat skrivbord.
 
 För varje kontroll rapporterar verktyget ett av tre möjliga resultat:
 
@@ -32,19 +32,19 @@ För varje kontroll rapporterar verktyget ett av tre möjliga resultat:
 
 ## <a name="obtain-the-checker"></a>Skaffa kontrollen
 
-Ladda ned ZIP-filen från https://aka.ms/mmddratoolv0 .
+Ladda ned .zip filen från https://aka.ms/mmddratoolv0 .
 
 > [!NOTE]
 > Den användare som kör verktyget måste ha lokal administratörsbehörighet på den enhet där den körs.
 
  Kör sedan verktyget så här:
 
-1. Kopiera den nedladdade ZIP-filen till varje enhet som du vill kontrollera.
+1. Kopiera den nedladdade .zip filen till varje enhet som du vill kontrollera.
 2. Extrahera alla filer i den komprimerade nedladdningen.
 3. Kör **Microsoft.MMD.DeviceReadinessAssessmentTool.exe**.
 4. När uppmaningen Om användaråtkomstkontroll visas väljer du **Ja.** Verktyget körs och en rapport öppnas i standardwebbläsaren.
 
-Du kan också ladda ned och extrahera ZIP-arkivet till en delad plats, **kommaMicrosoft.MMD.DeviceReadinessAssessmentTool.exe** från varje enhet och sedan köra det lokalt.
+Du kan också ladda ned och .zip arkivet till en delad plats, **kommaMicrosoft.MMD.DeviceReadinessAssessmentTool.exe** från varje enhet och sedan köra det lokalt.
 
 
 ## <a name="checks"></a>Kontroller
@@ -53,9 +53,9 @@ Det nedladdningsbara verktyget kontrollerar dessa enhets- och nätverksrelaterad
 
 ### <a name="hardware"></a>Maskinvara
 
-Enheter måste uppfylla vissa maskinvarukrav för att fungera med Microsoft Managed Desktop. För närvarande [tillåts endast vissa](../service-description/device-list.md) godkända enheter att registrera. 
+Enheter måste uppfylla vissa maskinvarukrav för att fungera med Microsoft Hanterat skrivbord. För närvarande [tillåts endast vissa](../service-description/device-list.md) godkända enheter att registrera. 
 
-Om någon av kontrollerna misslyckas på enheten är den inte kompatibel med Microsoft Managed Desktop.
+Om någon av kontrollerna misslyckas på enheten är den inte kompatibel med Microsoft Hanterat skrivbord.
 
 ### <a name="network-endpoints"></a>Nätverksslutpunkter
 
@@ -71,21 +71,21 @@ Ett **rådgivningsresultat** innebär att du använder vissa wi-fi-profiler som 
 
 #### <a name="lan-profiles"></a>LAN-profiler
 
-Ett **rådgivningsresultat** innebär att du har certifikat och profiler för att fungera korrekt. Mer information finns i Förbereda [certifikat och nätverksprofiler för Microsoft Managed Desktop.](certs-wifi-lan.md)
+Ett **rådgivningsresultat** innebär att du har certifikat och profiler för att fungera korrekt. Mer information finns i Förbereda [certifikat och nätverksprofiler för Microsoft Hanterat skrivbord](certs-wifi-lan.md).
 
 #### <a name="vpn-profiles"></a>VPN-profiler
 
-Ett **rådgivningsresultat** innebär att du använder ett virtuellt privat nätverk (VPN). Skapa en VPN-profil som distribuerar certifikat integrerade med Microsoft Intune. Mer information finns i Förbereda [certifikat och nätverksprofiler för Microsoft Managed Desktop.](certs-wifi-lan.md)
+Ett **rådgivningsresultat** innebär att du använder ett virtuellt privat nätverk (VPN). Skapa en VPN-profil som distribuerar certifikat integrerat med Microsoft Intune. Mer information finns i Förbereda [certifikat och nätverksprofiler för Microsoft Hanterat skrivbord](certs-wifi-lan.md).
 
 #### <a name="mapped-drives"></a>Mappade enheter
 
-Ett **Rådgivning-resultat** innebär att du har vissa mappade enheter, och det rekommenderas inte. Mer information finns i Förbereda [mappade enheter för Microsoft Managed Desktop.](mapped-drives.md)
+Ett **Rådgivning-resultat** innebär att du har vissa mappade enheter, och det rekommenderas inte. Mer information finns i Förbereda [mappade enheter för Microsoft Hanterat skrivbord](mapped-drives.md).
 
 #### <a name="print-queues"></a>Utskriftsköer
 
-Ett **Rådgivningsresultat** innebär att du har några utestående utskriftsköer, vilket inte rekommenderas. En lösning är att använda molnbaserad utskrift. Mer information finns i Förbereda [utskriftsresurser för Microsoft Managed Desktop.](printing.md)
+Ett **Rådgivningsresultat** innebär att du har några utestående utskriftsköer, vilket inte rekommenderas. En lösning är att använda molnbaserad utskrift. Mer information finns i Förbereda [utskrift av resurser för Microsoft Hanterat skrivbord](printing.md).
 
 #### <a name="proxies"></a>Proxy
 
-Ett **rådgivningsresultat** innebär att du har en proxyserver som används. Mer information finns i [Nätverkskonfiguration för Microsoft Managed Desktop.](network.md)
+Ett **rådgivningsresultat** innebär att du har en proxyserver som används. Mer information finns i [Nätverkskonfiguration för Microsoft Hanterat skrivbord](network.md).
 

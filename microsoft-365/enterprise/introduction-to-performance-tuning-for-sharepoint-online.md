@@ -16,7 +16,7 @@ f1.keywords:
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
-description: I den här artikeln förklaras vilka specifika aspekter du måste tänka på när du skapar sidor för bästa möjliga prestanda i SharePoint Online.
+description: I den här artikeln förklaras vilka specifika aspekter du måste tänka på när du skapar sidor för bästa prestanda i SharePoint Online.
 ms.openlocfilehash: 6f40243c9d6a1657b6716a071288f5b4fb018164
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,9 +26,9 @@ ms.locfileid: "50909744"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Introduktion till prestandajustering för SharePoint Online
 
-I den här artikeln förklaras vilka specifika aspekter du måste tänka på när du skapar sidor för bästa möjliga prestanda i SharePoint Online.
+I den här artikeln förklaras vilka specifika aspekter du måste tänka på när du skapar sidor för bästa prestanda i SharePoint Online.
      
-## <a name="sharepoint-online-metrics"></a>Mått i SharePoint Online
+## <a name="sharepoint-online-metrics"></a>SharePoint Onlinemått
 
 Följande breda mått för SharePoint Online ger verkliga data om prestanda:
   
@@ -44,27 +44,27 @@ Följande breda mått för SharePoint Online ger verkliga data om prestanda:
 
 Data talar om för oss:
   
-- De flesta sidor fungerar bra i SharePoint Online.
+- De flesta sidor fungerar bra på SharePoint Online.
     
 - Det går mycket snabbt att läsa in sidor som inte är anpassade.
     
 - OneDrive för företag, gruppwebbplatser och systemsidor, till exempel _layouts och så vidare, är snabba att läsa in.
     
-- Den långsammaste procenten SharePoint Online-sidor tar mer än 5 000 millisekunder att läsa in.
+- Den långsammaste procenten av alla SharePoint tar mer än 5 000 millisekunder att läsa in.
     
-Ett enkelt prestandatest du kan använda är att mäta prestandan genom att jämföra inläsningstiden för din egen portal med inläsningstiden för startsidan för OneDrive för företag, eftersom den inte har så många anpassade funktioner. Supporten ber dig gärna att göra det första steget när du felsöker prestandaproblem i nätverket.
+Ett enkelt prestandatest du kan använda är att mäta prestandan genom att jämföra inläsningstiden för din egen portal med inläsningstiden för startsidan OneDrive för företag eftersom den inte har så många anpassade funktioner. Supporten ber dig gärna att göra det första steget när du felsöker prestandaproblem i nätverket.
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>Använda ett vanligt användarkonto när du kontrollerar prestanda
 
-En administratör för webbplatssamlingen, webbplatsägare, redaktör eller deltagare tillhör ytterligare säkerhetsgrupper, har ytterligare behörigheter och har därför ytterligare element som läses in på en sida av SharePoint.
+En administratör för webbplatssamlingen, webbplatsägare, redaktör eller deltagare tillhör ytterligare säkerhetsgrupper, har ytterligare behörigheter och har därför ytterligare element som läses SharePoint in på en sida.
   
-Det här gäller för lokal SharePoint och SharePoint Online, men i ett lokalt scenario kommer skillnaderna inte att vara lika lätta att se som i SharePoint Online.
+Det här gäller SharePoint lokalt och i SharePoint Online, men i ett lokalt scenario kommer skillnaderna inte att vara lika lätta att se som i SharePoint Online.
   
 Om du vill utvärdera hur en sida kommer att se ut för användare bör du använda ett standardanvändarkonto för att undvika inläsning av redigeringskontroller och extra trafik relaterad till säkerhetsgrupper.
   
 ## <a name="connection-categories-for-performance-tuning"></a>Anslutningskategorier för prestandajustering
 
-Du kan kategorisera anslutningarna mellan servern och användaren i tre huvudkomponenter. Tänk på de här när du skapar SharePoint Online-sidor och vill ha insyn i inläsningstider.
+Du kan kategorisera anslutningarna mellan servern och användaren i tre huvudkomponenter. Tänk på dessa när du SharePoint onlinesidor och vill ha insyn i inläsningstider.
   
 - **Server** Servrarna som Microsoft är värd för i datacenter.
     
@@ -86,9 +86,9 @@ I de här tre anslutningarna finns vanligtvis fem orsaker till 95 % av alla lån
     
 ### <a name="server-connection"></a>Serveranslutning
 
-Många av de problem som påverkar prestandan för SharePoint lokalt gäller även för SharePoint Online.
+Många av de problem som påverkar prestandan SharePoint lokalt gäller även för SharePoint Online.
   
-Som förväntat har du mycket större kontroll över hur servrar fungerar lokalt med SharePoint. Med SharePoint Online är saker lite annorlunda. Ju mer arbete du får en server att göra, desto längre tid tar det att återge en sida. Med SharePoint är den största boven i det här avseendet komplexa sidor med flera webbdelar.
+Som förväntat har du mycket större kontroll över hur servrar fungerar lokalt med SharePoint. Med SharePoint online är saker lite annorlunda. Ju mer arbete du får en server att göra, desto längre tid tar det att återge en sida. Med SharePoint är den största boven i det här avseendet komplexa sidor med flera webbdelar.
   
 SharePoint Server lokalt
   
@@ -98,19 +98,19 @@ SharePoint Online
   
 ![Skärmbild av server online](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
-Med SharePoint Online kan vissa förfrågningar faktiskt anropa flera servrar. Du kan få en matris med förfrågningar mellan servrar för en enskild begäran. Dessa interaktioner kostar mycket ur ett inläsningsperspektiv och gör att sidor läses in långsamt.
+Med SharePoint Online kan vissa sidförfrågningar faktiskt anropa flera servrar. Du kan få en matris med förfrågningar mellan servrar för en enskild begäran. Dessa interaktioner kostar mycket ur ett inläsningsperspektiv och gör att sidor läses in långsamt.
   
 Här är några exempel på sådana interaktioner mellan servrar:
   
-- Webb till SQL-servrar
+- Webb till SQL servrar
     
 - Webb till programservrar
     
-En annan sak som kan göra att serverinteraktioner tar lång tid är cachemissar. Till skillnad från ett lokalt SharePoint finns det en liten möjlighet att du träffar samma server för en sida du besökt tidigare. Det här gör cachelagringen av objekt inaktuell.
+En annan sak som kan göra att serverinteraktioner tar lång tid är cachemissar. Till skillnad från lokala SharePoint finns det en liten möjlighet att du träffar samma server för en sida du besökt tidigare. Det här gör cachelagringen av objekt inaktuell.
   
 ### <a name="network-connection"></a>Nätverksanslutning
 
-Med ett lokalt SharePoint som inte använder ett WAN kan du använda en snabb anslutning mellan datacentret och slutanvändarna. I allmänhet är det enkelt att hantera saker ur ett nätverksperspektiv.
+Med en lokal SharePoint som inte använder ett WAN kan du använda en snabb anslutning mellan datacentret och slutanvändarna. I allmänhet är det enkelt att hantera saker ur ett nätverksperspektiv.
   
 Med SharePoint Online finns det några fler faktorer att tänka på: till exempel:
   
@@ -120,7 +120,7 @@ Med SharePoint Online finns det några fler faktorer att tänka på: till exempe
     
 - Internetleverantören
     
-Oavsett vilken version av SharePoint (och vilket nätverk) du använder kan följande göra att nätverket är upptaget:
+Oavsett vilken version av SharePoint (och vilket nätverk) du använder är saker som vanligtvis gör att nätverket är upptaget:
   
 - Stora nyttolaster
     
@@ -128,7 +128,7 @@ Oavsett vilken version av SharePoint (och vilket nätverk) du använder kan föl
     
 - Stora fysiska avstånd till servern
     
-En funktion som du kan dra nytta av i SharePoint Online är Microsoft CDN (Content Delivery Network). Ett CDN är i princip en samling servrar som distribuerats över flera datacenter. Med ett CDN kan innehåll på sidor lagras på en server nära klienten även om klienten är långt från den ursprungliga SharePoint Server. Microsoft kommer att använda detta mer i framtiden till att lagra lokala instanser av sidor som inte kan anpassas, till exempel startsidan för SharePoint Online-administratörer. Mer information om CDN finns i [Nätverk för innehållsleverans.](content-delivery-networks.md)
+En funktion som du kan dra nytta av SharePoint Online är Microsoft-CDN (Content Delivery Network). En CDN är i princip en samling servrar som distribuerats över flera datacenter. Med en CDN kan innehållet på sidor lagras på en server nära klienten även om klienten är långt från den ursprungliga SharePoint servern. Microsoft kommer att använda detta mer i framtiden för att lagra lokala instanser av sidor som inte kan anpassas, till exempel startsidan för SharePoint Online-administratör. Mer information om CDN finns i [Nätverk för innehållsleverans.](content-delivery-networks.md)
   
 En sak som du måste vara medveten om men kanske inte kan göra så mycket åt är Internetleverantörens anslutningshastighet. Ett enkelt testverktyg för hastighet kan ge information om anslutningshastigheten.
   
@@ -138,9 +138,9 @@ Det finns några faktorer att tänka på när det gäller webbläsare ur ett pre
   
 Att besöka komplexa sidor kommer att påverka prestandan. De flesta webbläsare bara har en liten cache (cirka 90 MB), medan en genomsnittlig webbsida normalt är cirka 1,6 MB. Det tar inte lång tid att använda upp den.
   
-Bandbredd kan också vara ett problem. Om en användare till exempel visar videoklipp i en annan session kommer detta att påverka prestandan för SharePoint-sidan. Du kan inte hindra användare från att direktuppspela media, men du kan styra hur en sida läses in för användarna.
+Bandbredd kan också vara ett problem. Om en användare till exempel visar videoklipp i en annan session kommer detta att påverka prestandan för SharePoint sidan. Du kan inte hindra användare från att direktuppspela media, men du kan styra hur en sida läses in för användarna.
   
-Läs följande artiklar för olika anpassningstekniker för SharePoint Online-sidor och andra metodtips för att uppnå optimala prestanda.
+Läs följande artiklar för olika anpassningsmetoder SharePoint onlinesidor och andra metodtips som hjälper dig att uppnå optimala prestanda.
   
 - [Navigeringsalternativ för SharePoint Online](navigation-options-for-sharepoint-online.md)
     
@@ -154,12 +154,12 @@ Läs följande artiklar för olika anpassningstekniker för SharePoint Online-si
     
 - [Använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
     
-- [Använda webbdel för innehållssökning i stället för webbdel för innehållsfråga för att förbättra prestanda i SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [Använda webbdel för innehållssökning i stället för webbdel för innehållsfråga för att förbättra prestanda SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
 - [Kapacitetsplanering och belastningstestning av SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
     
-- [Diagnostisering av prestandaproblem i SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
+- [Diagnostisering av prestandaproblem med SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
     
 - [Använda objektcachen med SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [Så här gör du för att: Undvika begränsningar och blockeringar i SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
+- [Så här gör du för att: Undvika begränsningar och blockeringar SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)

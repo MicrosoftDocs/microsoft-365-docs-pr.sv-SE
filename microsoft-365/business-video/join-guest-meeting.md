@@ -1,5 +1,5 @@
 ---
-title: Ansluta till ett möte i Microsoft Teams med gäster
+title: Ansluta till Microsoft Teams möte med gäster
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Lär dig hur du ansluter till ett Teams-möte med gäster.
+description: Lär dig hur du ansluter till Teams möte med gäster.
 ms.openlocfilehash: 781e1aa242270588ba50a025ca0dd71c06354ad0
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,13 +33,13 @@ ms.locfileid: "51580552"
 
 Med Microsoft Teams kan du enkelt ansluta till och delta i möten med både interna och externa användare.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. I Microsoft Teams väljer du **Kalender** och hittar mötet.
+1. I Microsoft Teams väljer **du Kalender** och sedan till mötet.
 1. Välj **Anslut** och bestäm om kameran och mikrofonen ska vara på eller av och välj Anslut **nu.**
-1. Om du är en extern gäst öppnar du e-postmeddelandet du fick om mötet och väljer Anslut **till Microsoft Teams-möte.**
+1. Om du är en extern gäst öppnar du det e-postmeddelande du fått om mötet och väljer **Anslut Microsoft Teams möte.**
 
     Om du inte vill ladda ned appen väljer du **Anslut på webben i** stället.
 1. Ange ditt namn och välj **Anslut nu.**
-1. När alla har kommit kan du starta mötet genom att dela skrivbordet, en bildskärm eller en app som PowerPoint.
+1. När alla har anlänt kan du starta mötet genom att dela skrivbordet, en bildskärm eller en app som PowerPoint.
 1. När mötet är slut väljer du **Lägg på**.

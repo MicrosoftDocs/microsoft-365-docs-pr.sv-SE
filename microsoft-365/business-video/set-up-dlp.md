@@ -34,12 +34,12 @@ ms.locfileid: "51580444"
 
 Principer för dataförlustskydd hjälper till att identifiera och skydda känslig information inom företaget, t.ex. personnummer eller journaler. 
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 1. Kom igång genom att gå till [administrationscentret](https://admin.microsoft.com)och välja **Inställningar.**
 1. Rulla ned till **Konfigurera skydd mot dataförlust** och välj sedan **Visa** och **hantera**.
 1. Om du vill redigera en princip markerar du den, **väljer Redigera princip** och väljer sedan vad du vill ändra. Välj till exempel **Platser om du vill** ändra vad som genomsöks.
-1. Om du vill aktivera genomsökning av innehåll i Microsoft Teams ändrar du växlingsknappen **till** läget På och väljer sedan **Spara**.
+1. Om du vill aktivera genomsökning av Microsoft Teams för innehållet i Microsoft Teams ändrar du växlingsknappen till **läget** På och väljer sedan **Spara**.
 1. Om du vill redigera principinställningarna väljer du **Redigera**.
 1. Du måste ange separata regler som gäller för små och stora mängder känsligt innehåll som upptäckts. Utöka regeln för låg volym. Välj **Redigera regel.**
 1. Granska inställningarna och justera dem efter behov. Du kan till exempel välja att Anpassa **e-posttexten** **och Anpassa texten med principtips.** Välj **Spara**.

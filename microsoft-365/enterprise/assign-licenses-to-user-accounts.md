@@ -1,5 +1,5 @@
 ---
-title: Tilldela Microsoft 365-licenser till användarkonton
+title: Tilldela Microsoft 365 licenser till användarkonton
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,7 +25,7 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Här beskrivs hur du tilldelar Microsoft 365-licenser till användarkonton, antingen individuellt eller baserat på gruppmedlemskap.
+description: Här beskrivs hur du tilldelar Microsoft 365 licenser till användarkonton, antingen individuellt eller baserat på gruppmedlemskap.
 ms.openlocfilehash: 2fe1e2f959fae8b0bc82a7dcd4f65f33b21c368a
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -33,19 +33,19 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51051538"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Tilldela Microsoft 365-licenser till användarkonton
+# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Tilldela Microsoft 365 licenser till användarkonton
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-För den molnbaserade identitetsmodellen kan du tilldela Microsoft 365-licenser till användarkonton när de skapas, beroende på hur du skapar dem.
+För den molnbaserade identitetsmodellen kan du tilldela licenser Microsoft 365 till användarkonton när de skapas, beroende på hur du skapar dem.
 
-När AD DS-användarkonton (Active Directory Domain Services) synkroniseras för första gången för hybrididentitetsmodellen tilldelas de inte automatiskt en plats eller en Microsoft 365-licens. **Du måste konfigurera varje användarkonto med en användarplats innan eller tillsammans med en licens.**
+När AD DS-användarkonton (Active Directory Domain Services) synkroniseras för första gången för hybrididentitetsmodellen tilldelas de inte automatiskt en plats eller en Microsoft 365 licens. **Du måste konfigurera varje användarkonto med en användarplats innan eller tillsammans med en licens.**
 
-I båda fallen måste du tilldela en licens till användarkonton så att dina användare kan komma åt Microsoft 365-tjänster, till exempel e-post och Microsoft Teams.
+I båda fallen måste du tilldela en licens till användarkonton så att användarna kan komma åt Microsoft 365 tjänster, till exempel e-post och Microsoft Teams.
 
 Du kan tilldela licenser till användarkonton antingen individuellt eller automatiskt genom gruppmedlemskap.
 
-Om du vill tilldela Microsoft 365-licenser till enskilda användarkonton kan du använda:
+Om du Microsoft 365 licenser till enskilda användarkonton kan du använda:
 
 - [Administrationscentret för Microsoft 365](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
@@ -68,6 +68,6 @@ Mer information finns i [gruppbaserad licensiering i Azure AD.](/azure/active-di
 Med rätt uppsättning användarkonton som har tilldelats licenser är du nu redo att:
 
 - [Implementera säkerhet](../security/defender-365-security/security-roadmap.md)
-- [Distribuera klientprogramvara, till exempel Microsoft 365-program](/DeployOffice/deployment-guide-microsoft-365-apps)
+- [Distribuera klientprogramvara, till exempel Microsoft 365 program](/DeployOffice/deployment-guide-microsoft-365-apps)
 - [Konfigurera enhetshantering](device-management-roadmap-microsoft-365.md)
 - [Konfigurera tjänster och program](configure-services-and-applications.md)

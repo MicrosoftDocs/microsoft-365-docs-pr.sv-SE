@@ -31,13 +31,13 @@ ms.locfileid: "51580648"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb?autoplay=false]
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-Microsoft 365 inkluderar inte en offentlig webbplats för ditt företag. Om du vill konfigurera en kan du överväga att använda ett webbhotellföretag som GoDaddy, Wix eller WordPress.
+Microsoft 365 inte innehåller en offentlig webbplats för ditt företag. Om du vill konfigurera en kan du överväga att använda ett webbhotellföretag som GoDaddy, Wix eller WordPress.
 
 1. Sök efter en leverantör av webbhotell där du kan skapa din webbplats.
 
      Det kan vara enklast att välja webbplatsverktyget i samma företag där domännamnet är registrerat.
 1. Utforma din företagswebbplats och se till att ta med din företagslogotyp, affärsändamål, text, bilder och länkar.
-1. Om du vill integrera webbplatsen med Microsoft 365 kan du lägga till företagets e-postadress på webbplatsen och en länk till Microsoft Teams, SharePoint eller andra samarbetsverktyg.
-1. Se till att du ansluter din webbplats till domännamnet, som du&#39;använder för e-post på Microsoft 365.
+1. Om du vill integrera webbplatsen med Microsoft 365 kan du lägga till företagets e-postadress på webbplatsen och en länk till ett Microsoft Teams, SharePoint eller annat samarbetsverktyg.
+1. Se till att du ansluter webbplatsen till domännamnet, som du&#39;till för e-post på Microsoft 365.

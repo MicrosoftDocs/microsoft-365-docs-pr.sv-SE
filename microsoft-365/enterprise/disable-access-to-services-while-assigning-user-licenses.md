@@ -1,5 +1,5 @@
 ---
-title: Inaktivera åtkomst till Microsoft 365-tjänster medan du tilldelar användarlicenser
+title: Inaktivera åtkomst till Microsoft 365 när du tilldelar användarlicenser
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,15 +25,15 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50929438"
 ---
-# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Inaktivera åtkomst till Microsoft 365-tjänster medan du tilldelar användarlicenser
+# <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Inaktivera åtkomst till Microsoft 365 när du tilldelar användarlicenser
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Microsoft 365-prenumerationer följer med tjänstplaner för enskilda tjänster. Microsoft 365-administratörer behöver ofta inaktivera vissa abonnemang när de tilldelar licenser till användare. Med hjälp av instruktionerna i den här artikeln kan du tilldela en Microsoft 365-licens när du inaktiverar specifika tjänstplaner med PowerShell för ett enskilt användarkonto eller flera användarkonton.
+Microsoft 365-prenumerationer följer med tjänstplaner för enskilda tjänster. Microsoft 365 administratörer måste ofta inaktivera vissa abonnemang när de tilldelar licenser till användare. Med hjälp av anvisningarna i den här artikeln kan du tilldela en Microsoft 365 licens samtidigt som du inaktiverar specifika tjänstplaner med hjälp av PowerShell för ett enskilt användarkonto eller flera användarkonton.
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph-modulen
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph modul
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 
 Lista sedan licensplaner för din klientorganisation med det här kommandot.
@@ -65,9 +65,9 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAssign
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory för Windows PowerShell
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 Kör sedan det här kommandot för att se dina aktuella prenumerationer:
   
@@ -81,7 +81,7 @@ Get-MsolAccountSku
 
 I visningen av  `Get-MsolAccountSku` kommandot:
   
-- **AccountSkuId** är en prenumeration för din organisation i \<OrganizationName> : \<Subscription> format. Det \<OrganizationName> är det värde som du angav när du registrerade dig i Microsoft 365 och är unikt för din organisation. Värdet \<Subscription> är för en viss prenumeration. För litwareinc:ENTERPRISEPACK är till exempel organisationsnamnet litwareinc och prenumerationsnamnet ENTERPRISEPACK (Office 365 Enterprise E3).
+- **AccountSkuId** är en prenumeration för din organisation i \<OrganizationName> : \<Subscription> format. Det \<OrganizationName> är det värde som du angav när du registrerade dig i Microsoft 365, och är unikt för din organisation. Värdet \<Subscription> är för en viss prenumeration. För litwareinc:ENTERPRISEPACK är till exempel organisationsnamnet litwareinc och prenumerationsnamnet ENTERPRISEPACK (Office 365 Enterprise E3).
     
 - **ActiveUnits** är antalet licenser som du har köpt för prenumerationen.
     
@@ -89,9 +89,9 @@ I visningen av  `Get-MsolAccountSku` kommandot:
     
 - **ConsumedUnits** är antalet licenser som du har tilldelat användare för prenumerationen.
     
-Observera AccountSkuId för Microsoft 365-prenumerationen som innehåller de användare som du vill licensiera. Se också till att det finns tillräckligt med licenser att tilldela (subtrahera **ConsumedUnits** från **ActiveUnits).**
+Observera AccountSkuId för din Microsoft 365-prenumeration som innehåller de användare du vill licensiera. Se också till att det finns tillräckligt med licenser att tilldela (subtrahera **ConsumedUnits** från **ActiveUnits).**
   
-Kör sedan det här kommandot för att se information om de Microsoft 365-tjänstplaner som är tillgängliga i alla dina prenumerationer:
+Kör sedan det här kommandot för att visa information om Microsoft 365 tjänstplaner som är tillgängliga i alla dina prenumerationer:
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
@@ -99,9 +99,9 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 På skärmen för det här kommandot kan du bestämma vilka tjänstplaner du vill inaktivera när du tilldelar licenser till användare.
   
-Här är en delvis lista över tjänstplaner och deras motsvarande Microsoft 365-tjänster.
+Här är en delvis lista över tjänstplaner och deras motsvarande Microsoft 365 tjänster.
 
-I följande tabell visas Microsoft 365-tjänstplaner och deras eget namn för de vanligaste tjänsterna. Listan med tjänstplaner kan se annorlunda ut. 
+I följande tabell visas Microsoft 365 tjänstplaner och deras eget namn för de vanligaste tjänsterna. Listan med tjänstplaner kan se annorlunda ut. 
   
 |**Serviceplan**|**Beskrivning**|
 |:-----|:-----|
@@ -110,7 +110,7 @@ I följande tabell visas Microsoft 365-tjänstplaner och deras eget namn för de
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Microsoft 365-appar för företag *(kallades tidigare Office 365 ProPlus)*  <br/> |
-| `MCOSTANDARD` <br/> |Skype för företag online  <br/> |
+| `MCOSTANDARD` <br/> |Skype för företag – Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online-abonnemang 2  <br/> |

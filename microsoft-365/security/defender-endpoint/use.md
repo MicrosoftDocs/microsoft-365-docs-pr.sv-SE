@@ -1,6 +1,6 @@
 ---
 title: Översikt över Microsoft Defender Säkerhetscenter
-description: Läs mer om funktionerna i Microsoft Defender Säkerhetscenter, bland annat hur aviseringar fungerar, och förslag på hur du undersöker möjliga överträdelser och attacker.
+description: Läs mer om funktionerna på Microsoft Defender Säkerhetscenter, bland annat hur aviseringar fungerar och förslag på hur du undersöker möjliga överträdelser och attacker.
 keywords: instrumentpanel, aviseringar, kö, hantera aviseringar, undersökning, undersöka aviseringar, undersöka enheter, skicka filer, djupanalys, hög, medium, låg, allvarlighetsgrad, ioc, ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -46,7 +46,7 @@ Använd **instrumentpanelen för hotanalys** för att kontinuerligt bedöma och 
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Interaktiv guide för Microsoft Defender för Slutpunkt
 I den här interaktiva guiden får du lära dig att undersöka hot mot din organisation med Microsoft Defender för Slutpunkt. Du ser hur Microsoft Defender för Endpoint kan hjälpa dig att identifiera misstänkta aktiviteter, undersöka risker för din organisation och åtgärda hot.
 
-[Ta en titta på den interaktiva guiden](https://aka.ms/MSDE-IG)
+[Ta del av den interaktiva guiden](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>I det här avsnittet
 

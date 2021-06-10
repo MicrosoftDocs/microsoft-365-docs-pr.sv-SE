@@ -21,7 +21,7 @@ ms.locfileid: "50939629"
 ---
 # <a name="microsoft-viva-topics-security-trimming"></a>Säkerhets trimning för Microsoft Viva Topics 
 
-Viva Topics-användare kan inte visa information i ämnen som deras befintliga Office 365-behörigheter hindrar dem från att se. Allt som en användare ser på en ämnessida (till exempel SharePoint-webbplatser, dokument och filer) är information som de redan har tillåtelse att se. Viva Topics ändrar inga befintliga behörigheter.
+Viva Topics-användare kan inte visa information i ämnen som deras befintliga Office 365 hindrar dem från att se. Allt som en användare ser på en ämnessida (till exempel SharePoint, dokument, filer) är information som de redan har tillåtelse att se. Viva Topics ändrar inga befintliga behörigheter.
 
 ## <a name="why-two-users-may-have-different-views-of-the-same-topic"></a>Varför två användare kan ha olika vyer av samma ämne
 
@@ -35,7 +35,7 @@ Men när Användare 2 tittar på samma Neptune-ämnessida skiljer sig deras vy f
 
 ![Neptune-ämne för användare 2](../media/knowledge-management/user1-topic-view.png) </br> 
 
-Skillnaden i vad användarna kan se med samma ämne är att användarna kanske inte har Behörighet för Office 365 för att visa en relaterad webbplats eller fil.  Viva Topics respekterar behörigheterna som anges för objekt i ett ämne och kan inte ändra åtkomsten till dem. I vårt exempel kan användare 1 inte visa filen *DG-2000 Produktöversikt* på ämnessidan för Neptune eftersom Användare 1 inte har Office 365-behörigheter för att visa filen.
+Skillnaden i vad användarna kan se med samma ämne är att användarna kanske inte har den Office 365 kunna visa en relaterad webbplats eller fil.  Viva Topics respekterar behörigheterna som anges för objekt i ett ämne och kan inte ändra åtkomsten till dem. I vårt exempel kan användare 1 inte visa filen *DG-2000 produktöversikt* på ämnessidan för Neptune eftersom användare 1 inte har Office 365 behörighet att visa filen.
 
 Om en användare inte kan se tillräckligt med information i ett ämne för att det ska vara användbart, kommer ämnet inte att vara tillgängligt för användaren. När detta händer kan användaren inte se det markerade avsnittet. En annan användare som har behörighet till mer information i avsnittet för att vara användbar kommer att kunna se avsnittet.
 

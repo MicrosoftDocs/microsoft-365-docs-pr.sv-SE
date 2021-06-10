@@ -28,7 +28,7 @@ ms.locfileid: "50909508"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan använda PowerShell för Microsoft 365 som ett alternativ till administrationscentret för Microsoft 365 för att hantera säkerhetsgrupper. 
+Du kan använda PowerShell för Microsoft 365 som ett alternativ till administrationscentret Microsoft 365 att hantera säkerhetsgrupper. 
 
 I den här artikeln beskrivs listning, skapande, ändring av inställningar och borttagning av säkerhetsgrupper. 
 
@@ -40,9 +40,9 @@ Använd de här stegen när ett kommandoblock i den här artikeln kräver att du
 
 Se [Bevara medlemskap i säkerhetsgrupper om](maintain-group-membership-with-microsoft-365-powershell.md) du vill hantera gruppmedlemskap med PowerShell.
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph-modulen
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph modul
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 ### <a name="list-your-groups"></a>Lista dina grupper
 
@@ -124,9 +124,9 @@ $groupName="<display name of the group>"
 Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -OwnerId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectId
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory för Windows PowerShell
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="list-your-groups"></a>Lista dina grupper
 

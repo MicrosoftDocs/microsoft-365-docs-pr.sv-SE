@@ -34,9 +34,9 @@ ms.locfileid: "51580504"
 
 Microsoft 365 hjälper till att skydda företaget mot utpressningstrojaner genom att förhindra att filer som potentiellt är skadliga, som JavaScript, batchfiler och körbara filer, öppnas i Outlook. Följ de här anvisningarna om du vill öka den här skyddsnivån genom att lägga till regler som blockerar eller varnar för ytterligare typer av filer.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. Från administrationscentret i [https://admin.microsoft.com](https://admin.microsoft.com) väljer du **Exchange** under **Administrationscenter**.
+1. I administrationscentret i [https://admin.microsoft.com](https://admin.microsoft.com) väljer du Exchange under **Administrationscenter**  .
 1. I menyn till vänster väljer du **E-postflöde**.
 1. På fliken Regler väljer du pilen bredvid plustecknet (+) och väljer sedan **Skapa en ny regel.**
 1. På sidan **ny regel** anger du ett namn för regeln, bläddrar till slutet och väljer sedan **Fler alternativ**.

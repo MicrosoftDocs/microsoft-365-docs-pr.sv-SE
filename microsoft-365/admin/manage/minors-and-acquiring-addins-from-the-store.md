@@ -33,11 +33,11 @@ Allmänna Dataskyddsförordningen (GDPR) är en EU-bestämmelse som blir gällan
   
 Regioner som har lagstadgade föreskrifter om målsmans medgivande är bland annat USA, Sydkorea, Storbritannien och EU. En minderårig i sådana regioner kommer att blockeras (via Azure Active Directory) från att få nya Office-tillägg från Store och att köra tillägg som har förvärvats tidigare. För länder utan lagstadgade föreskrifter kommer det inte att finnas några begränsningar för nedladdning.
   
-En användare har fastställt att han eller hon är minderårig baserat på data som angetts i Azure Active Directory. Organisationens administratör är ansvarig för att deklarera åldersgruppen och målsmans medgivande för användaren.
+En användare avgörs som minderårig baserat på data som anges i Azure Active Directory. Organisationens administratör är ansvarig för att deklarera åldersgruppen och målsmans medgivande för användaren.
   
 Om föräldern/målsman samtycker till att en minderårig använder ett specifikt tillägg kan organisationsadministratören använda centraliserad distribution för att distribuera tillägget till alla minderåriga som har medgivande.
   
-För att vara GDPR-kompatibel för minderåriga måste du se till att en av följande versioner av Office har distribuerats i skolan/organisationen.
+För att uppfylla GDPR för minderåriga måste du se till att en av följande Office distribueras i skolan/organisationen.
  
  **För Word, Excel, PowerPoint och Project:** 
 
@@ -57,21 +57,21 @@ För att vara GDPR-kompatibel för minderåriga måste du se till att en av föl
 |Outlook 2016 för Windows (MSI)  <br/> |Version nr TBD  <br/> |
 |Outlook 2016 för Windows (C2R)  <br/> |16.0.9323.1000  <br/> |
 |Office 2016 för Mac  <br/> |16.0.9318.1000  <br/> |
-|Outlook Mobile för iOS  <br/> |2.75.0  <br/> |
-|Outlook Mobile för Android  <br/> |2.2.145  <br/> |
+|Outlook för iOS  <br/> |2.75.0  <br/> |
+|Outlook mobil för Android  <br/> |2.2.145  <br/> |
 |Outlook.com  <br/> |Uppgift saknas  <br/> |
 
- **Krav för Office 2013**
+ **Office för 2013**
   
 Word, Excel och PowerPoint 2013 för Windows stöder samma minderåriga kontroller om Active Directory Authentication Library (ADAL) är aktiverat. Det finns två alternativ för efterlevnad, som beskrivs härnäst.
   
-- **Aktivera ADAL.** I den här artikeln förklaras hur du aktiverar ADAL för Office 2013: Använda modern autentisering [i Microsoft 365 med Office-klienter.](../../enterprise/modern-auth-for-office-2013-and-2016.md)<br/>Du måste också ange registernycklarna för att aktivera ADAL enligt förklaras i Aktivera modern autentisering för [Office 2013 på Windows-enheter.](../security-and-compliance/enable-modern-authentication.md)<br/>Dessutom måste du installera följande uppdateringar för april för Office 2013:
+- **Aktivera ADAL.** Den här artikeln förklarar hur du aktiverar ADAL för Office 2013: Använda [Microsoft 365 modern autentisering med Office klienter.](../../enterprise/modern-auth-for-office-2013-and-2016.md)<br/>Du måste också ange registernycklarna för att aktivera ADAL enligt förklaras i Aktivera modern autentisering för [Office 2013 på Windows enheter.](../security-and-compliance/enable-modern-authentication.md)<br/>Dessutom måste du installera följande uppdateringar för april för Office 2013:
     
   - [Beskrivning av säkerhetsuppdateringen för Office 2013: 10 april 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
-  - [Uppdatering för Office 2013 (KB4018333) den 3 april 2018](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
+  - [Uppdatering för den 3 april 2018 Office 2013 (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
     
-- **ADAL kan inte aktiveras.** Om du inte kan aktivera ADAL i Office 2013 rekommenderas du att använda Grupprincip för att stänga av Office Store för Office-klienter. Information om hur du inaktiverar appen för Office-inställningar finns [här.](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15))
+- **ADAL kan inte aktiveras.** Om du inte kan aktivera ADAL i Office 2013 rekommenderas du att använda Grupprincip för att stänga av Store för Office-klienter. Information om hur du inaktiverar appen för Office finns [här](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15)).
 
 ## <a name="related-articles"></a>Relaterade artiklar
 

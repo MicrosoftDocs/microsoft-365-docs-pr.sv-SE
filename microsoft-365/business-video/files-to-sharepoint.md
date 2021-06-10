@@ -31,18 +31,18 @@ ms.locfileid: "51580612"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/65ec460e-296c-458f-b004-906756dfb3d0?autoplay=false]
 
-När du har registrerar dig för Microsoft 365 Business Premium kan&#39;kopiera företagets arbetsfiler till SharePoint. SharePoint är en bra plats att lagra delade företagsfiler som alla behöver åtkomst till. Det ersätter vanligtvis användningen av en filresurs eller nätverksenhet.
+Efter att du har Microsoft 365 Business Premium behöver&#39;kopiera företagets arbetsfiler till SharePoint. SharePoint är en bra plats att lagra delade företagsfiler som alla behöver åtkomst till. Det ersätter vanligtvis användningen av en filresurs eller nätverksenhet.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 1. Öppna Microsoft Teams och öppna sedan ett team som alla i företaget har tillgång till.
-2. Välj **Filer** och välj sedan **Öppna i SharePoint.**
+2. Välj **Filer** och välj sedan **Öppna i SharePoint**.
 3. Välj  **Dokument** om du vill gå till den plats där allt är lagrat på webbplatsen.
-4. Välj **Synkronisera** och välj sedan **Ja.** Då synkroniseras SharePoint-webbplatsens filer till din dator.
-5. I Utforskaren ser&#39;nu den synkroniserade dokumentmappen från företaget på&#39;SharePoint-webbplats. Om du synkroniserar ytterligare SharePoint-webbplatser visas de ovanför eller nedanför den här. Högerklicka på mappen synkroniserade dokument och öppna den i ett nytt fönster så att den visas sida vid sida med de företagsfiler du vill flytta.
-6. Markera alla filer som du vill flytta och dra dem sedan till den synkroniserade SharePoint-mappen. Blå cirkelpilar bredvid filerna innebär att de&#39;synkroniseras till SharePoint-webbplatsen. När&#39;är klar med synkroniseringen visas gröna bkryssmarkeringar.
-7. Gå tillbaka till din SharePoint-webbplats för att se vilka filer som har synkroniserats till molnet.
+4. Välj **Synkronisera** och välj sedan **Ja.** Då synkroniseras filerna på SharePoint till din dator.
+5. I Utforskaren ser&#39;nu den synkroniserade dokumentmappen från företagets&#39;SharePoint webbplats. Om du synkroniserar SharePoint webbplatser visas de ovanför eller nedanför den här. Högerklicka på mappen synkroniserade dokument och öppna den i ett nytt fönster så att den visas sida vid sida med de företagsfiler du vill flytta.
+6. Markera alla filer du vill flytta och dra dem sedan till den synkroniserade SharePoint mappen. Blå cirkelpilar bredvid filerna betyder att de&#39;synkroniseras på SharePoint webbplatsen. När&#39;är klar med synkroniseringen visas gröna bkryssmarkeringar.
+7. Gå tillbaka till SharePoint för att se filer som har synkroniserats till molnet.
 
 Förutom att arbeta med dina filer direkt från datorn kan du komma åt dem i en webbläsare på valfri dator.
 
-Nu kan du komma åt dina filer från din SharePoint-webbplats eller Teams.
+Nu kan du komma åt dina filer SharePoint webbplatsen eller Teams.

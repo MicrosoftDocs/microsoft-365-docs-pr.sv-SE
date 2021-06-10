@@ -37,7 +37,7 @@ Du kan också använda TGG för att skapa representativa miljöer för att utvec
   
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Om du vill se en visuell karta till alla artiklar i microsoft 365 för företag – testlabbguide-stacken expanderar du följande bild eller går till [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)för företag Testlabbguide stack .
+Om du vill visa en visuell karta till alla artiklar i Microsoft 365 för företags testlabbguide, expanderar du följande bild eller går till Microsoft 365 för testlabbguidesstack för [företag.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 [![Samlingen med testlabbguider för Microsoft 365 för företag](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
@@ -45,9 +45,9 @@ Om du vill se en visuell karta till alla artiklar i microsoft 365 för företag 
 
 Skapa först en testmiljö för [Microsoft 365 för företag.](/microsoft-365-enterprise/) Du kan skapa två olika typer av grundläggande konfigurationer:
 
-- [Enkel grundkonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md) – Använd det här om du vill konfigurera och visa funktioner för Microsoft 365 för företag i en miljö som bara är molnbaserad, som inte innehåller några lokala komponenter.
+- [Enkel grundkonfiguration](lightweight-base-configuration-microsoft-365-enterprise.md) – Använd den här om du vill konfigurera och demonstrera Microsoft 365 för företagsfunktioner och -funktioner i en miljö som bara är molnbaserad, som inte innehåller några lokala komponenter.
 
-- [Simulerad företagsbaskonfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md) – Använd det här alternativet om du vill konfigurera och demonstrera Microsoft 365 för företagsfunktioner och -funktioner i en hybridmolnmiljö som använder lokala komponenter som AD DS-domäner (Active Directory Domain Services).
+- [Simulerad företagsbaskonfiguration](simulated-ent-base-configuration-microsoft-365-enterprise.md) – Använd det här alternativet när du vill konfigurera och visa Microsoft 365 för företagsfunktioner i en hybridmolnmiljö som använder lokala komponenter som ad ds-domäner (Active Directory Domain Services).
 
 Du kan också skapa testmiljöer för Office 365 E5 genom att inte lägga till Microsoft 365 E5-licensen i utvärderings- eller produktionstestmiljön.
     

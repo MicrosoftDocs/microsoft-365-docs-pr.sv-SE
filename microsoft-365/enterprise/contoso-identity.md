@@ -23,7 +23,7 @@ ms.locfileid: "51051526"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>ID för Contoso Corporation
 
-Microsoft tillhandahåller identitet som en tjänst (IDaaS) i sina molntjänster via Azure Active Directory (Azure AD). För att använda Microsoft 365 för företag var Contoso IDaaS-lösningen tvungen att använda deras lokala identitetsprovider och inkludera federerad autentisering med sina befintliga betrodda tredjepartsidentitetsproviders.
+Microsoft tillhandahåller identitet som en tjänst (IDaaS) i sina molntjänster via Azure Active Directory (Azure AD). För att Microsoft 365 för företag var Contoso IDaaS-lösningen tvungen att använda deras lokala identitetsprovider och inkludera federerad autentisering med sina befintliga betrodda tredjepartsidentitetsproviders.
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Contoso Active Directory Domain Services-skogen
 
@@ -33,7 +33,7 @@ Här är Contoso-skogen med regionala domäner för olika delar av världen som 
 
 ![Contosos skogar och domäner över hela världen](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso beslutade att använda konton och grupper i Contoso com-skogen för autentisering och auktorisering för sina \. Microsoft 365-arbetsbelastningar och -tjänster.
+Contoso beslutade att använda konton och grupper i Contoso com-skogen för autentisering och auktorisering \. för Microsoft 365 arbetsbelastningar och tjänster.
 
 ## <a name="the-contoso-federated-authentication-infrastructure"></a>Infrastrukturen för contoso-federerad autentisering
 
@@ -52,13 +52,13 @@ Contoso beslutade att behålla den här infrastrukturen och avsätta den till au
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>Hybrididentitet med synkronisering av lösenordshash för molnbaserad autentisering
 
-Contoso ville använda sin lokala AD DS-skog för autentisering på Microsoft 365-molnresurser. Den valde att använda synkronisering av lösenordshashar (PHS).
+Contoso ville använda den lokala AD DS-skogen för autentisering Microsoft 365 molnresurser. Den valde att använda synkronisering av lösenordshashar (PHS).
 
-PHS synkroniserar den lokala AD DS-skogen med Azure AD-klientorganisationen för deras Microsoft 365 för företag-prenumeration, kopiering av användar- och gruppkonton och en hash-version av lösenord för användarkonton.
+PHS synkroniserar den lokala AD DS-skogen med Azure AD-klientorganisationen för sin Microsoft 365 för enterprise-prenumeration, kopierar användar- och gruppkonton och en hash-version av lösenord för användarkonton.
 
-För att göra katalogsynkronisering distribuerade Contoso Azure AD Connect-verktyget på en server i sitt Paris-datacenter.
+För att göra katalogsynkronisering distribuerade Contoso Azure AD Anslut-verktyget på en server i sitt Paris-datacenter.
 
-Här är servern som kör Azure AD Connect och avsöker Contoso AD DS-skogen efter ändringar och synkroniserar sedan dessa ändringar med Azure AD-klientorganisationen.
+Här är den server som kör Azure AD Anslut genomsöker Contoso AD DS-skogen efter ändringar och synkroniserar sedan dessa ändringar med Azure AD-klientorganisationen.
 
 ![Infrastrukturen för Contoso PHS-katalogsynkronisering](../media/contoso-identity/contoso-identity-fig4.png)
  
@@ -76,7 +76,7 @@ Här är den resulterande uppsättningen principer för Contoso-identitet och vi
  
 ## <a name="next-step"></a>Nästa steg
 
-Lär dig hur Contoso använder sin infrastruktur för Microsoft Endpoint Configuration Manager för att distribuera [och behålla aktuella Windows 10 Enterprise](contoso-win10.md) i organisationen.
+Lär dig hur Contoso använder sin Microsoft Endpoint Configuration Manager för [att distribuera och hålla den aktuella Windows 10 Enterprise](contoso-win10.md) i organisationen.
 
 ## <a name="see-also"></a>Se även
 

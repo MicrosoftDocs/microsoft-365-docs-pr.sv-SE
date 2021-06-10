@@ -29,7 +29,7 @@ ms.locfileid: "51580780"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Anpassa rapporter i Microsoft 365 användningsanalyser
 
-Microsoft 365 användningsanalyser tillhandahåller en instrumentpanel i Power BI som ger insyn i hur användarna inför och använder Microsoft 365. Instrumentpanelen är bara en utgångspunkt för att interagera med användningsdata. Rapporterna kan anpassas för att ge en mer specialiserad insyn.
+Microsoft 365 användningsanalyser tillhandahåller en instrumentpanel i Power BI som ger insikter om hur användarna inför och använder Microsoft 365. Instrumentpanelen är bara en utgångspunkt för att interagera med användningsdata. Rapporterna kan anpassas för att ge en mer specialiserad insyn.
   
 Du kan också använda Power BI Desktop för att anpassa rapporterna ytterligare genom att koppla dem till andra datakällor i syfte att få bättre insyn i verksamheten.
   
@@ -43,7 +43,7 @@ Det här exemplet visar hur du ändrar **fliken** Aktivering i **rapporten om ak
   
 1. I rapporten **om aktivering/licensiering** väljer du **fliken** Aktivering.
     
-2. Öppna redigeringsläget genom att välja **knappen** Redigera längst upp på ![ knappen Mer sida i Power ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) BI. 
+2. Öppna redigeringsläget genom att välja **knappen** Redigera högst upp på knappen ![ Mer sida i Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) redigeringsknappen. 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -61,7 +61,7 @@ Det här exemplet visar hur du ändrar **fliken** Aktivering i **rapporten om ak
 
 Följande exempel visar hur du skapar en ny visualisering för att spåra nya Yammer-användare på månadsbasis.
   
-1. Gå till rapporten **Produktanvändning** i det vänstra navigeringsfältet och välj **fliken Yammer.**
+1. Gå till rapporten **Produktanvändning** i det vänstra navigeringsfältet och välj **Yammer** produktanvändning.
     
 2. Växla till redigeringsläge genom att ![ välja knappen Mer sida i Power BI och ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) **Redigera**. 
     
@@ -87,9 +87,9 @@ Följande exempel visar hur du skapar en ny visualisering för att spåra nya Ya
 
 11. I området **Filtertyp** som visas markerar du kryssrutan **Yammer**.
 
-    ![Markera kryssrutan Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Markera Yammer kryssruta](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. Precis under listan med visualiseringar väljer du **ikonen Format** ikon för Format ![ i Visualiseringar i Power ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) BI.
+12. Precis under listan med visualiseringar väljer du **ikonen Format** ikon för Format ![ Power BI Visualizaions ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) .
 
 13. Expandera rubriken och ändra värdet för **Rubriktext** till **First-Time Yammer Users by Month** (Förstagångsanvändare av Yammer per månad).
     
@@ -115,15 +115,15 @@ Du kan börja genom att ansluta direkt till ODATA-rapport-API:erna från Microso
   
     ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
-3. Ange dina autentiseringsuppgifter som administratör för Microsoft 365 (organisation eller skola) för att autentisera dig för Microsoft 365 när du uppmanas att göra det.
+3. Ange dina Microsoft 365 (organisationen eller skolan) som administratörsautentiseringsuppgifter för att autentisera Microsoft 365 när du uppmanas att göra det.
     
-    Mer information [om vem](usage-analytics.md#faq) som har behörighet att komma åt apprapporterna för införande av Microsoft 365 finns i Vanliga frågor och svar. 
+    Mer information [om vem](usage-analytics.md#faq) som har behörighet att komma åt apprapporterna för införande Microsoft 365 vanliga frågor och svar. 
     
 4. När anslutningen har autentiserats visas navigatörsfönstret med de datauppsättningar som är tillgängliga för anslutning.
     
     Markera alla och välj **Läs in**.
     
-    Då laddas data ned till din Power BI Desktop. Spara den här filen och börja sedan skapa de rapporter du behöver.
+    Då hämtas data till din Power BI Desktop. Spara filen. Sedan kan du börja skapa rapporterna som du behöver.
     
     ![ODATA-värden som är tillgängliga i rapport-API:t](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
@@ -131,7 +131,7 @@ Du kan börja genom att ansluta direkt till ODATA-rapport-API:erna från Microso
 
 Du kan även använda mallfilen för Power BI som motsvarar Microsoft 365 användningsanalysrapporter som utgångspunkt när du ansluter till dessa data. Fördelen med att använda pbit-filen är att den redan har anslutningssträngen. Du kan också dra nytta av alla de anpassade åtgärder som skapas, utöver de data som det grundläggande schemat returnerar och bygga på dem ytterligare.
   
-Du kan ladda ned Power BI-mallfilen från [Microsoft Download Center.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) När du har laddat ned Power BI-mallfilen följer du de här anvisningarna för att komma igång:
+Du kan ladda Power BI från Microsoft [Download Center.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) När du har laddat Power BI en mallfil följer du de här stegen för att komma igång:
   
 1. Öppna pbit-filen.
     
@@ -139,9 +139,9 @@ Du kan ladda ned Power BI-mallfilen från [Microsoft Download Center.](https://d
     
     ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
-3. Ange dina autentiseringsuppgifter som administratör för att autentisera dig för Microsoft 365 när du uppmanas att göra det.
+3. Ange dina autentiseringsuppgifter som administratör för att autentisera Microsoft 365 när du uppmanas att göra det.
     
-     om du vill ha mer information om vem som har åtkomst till användningsanalysrapporterna för Microsoft 365. 
+     för mer information om vem som har behörighet att komma Microsoft 365 användningsanalysrapporter. 
     
     Så snart auktoriseringen är klar uppdateras alla data i Power BI-filen.
     

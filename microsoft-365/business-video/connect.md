@@ -27,31 +27,31 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580660"
 ---
-# <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Anslut din dator till Microsoft 365 Business Premium
+# <a name="connect-your-pc-to-microsoft-365-business-premium"></a>Anslut datorn till Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3?autoplay=false]
 
-## <a name="try-it"></a>Prova!
-När du har ställt in Microsoft 365 Business Premium (tidigare kallat Microsoft 365 Business) behöver du och dina anställda utföra några få steg för att kunna dra full nytta av säkerhets- och hanteringsfunktionerna. Gör&#39;här.
+## <a name="try-it"></a>Prova själv!
+När du har Microsoft 365 Business Premium (tidigare kallat Microsoft 365 Business) behöver du och dina anställda utföra några åtgärder för att kunna dra full nytta av säkerhets- och hanteringsfunktionerna. Gör&#39;här.
 
 Kontrollera först att du har Windows 10 Pro installerat:
 
 1. Välj  **Start** , sök  **efter Kontrollpanelen** och välj det.
-2. Välj **System och**   >   **säkerhetssystem** och bekräfta din Windows-version.
+2. Välj **System och**   >   **säkerhetssystem** och bekräfta din Windows version.
 
 Anslut sedan till Microsoft 365 Business:
 
-1. Välj  **Start** och välj sedan  **ikonen** Inställningar.
-2. Välj **Konton Åtkomst** till arbete eller  >   **skola**   >   **Connect**.
-3. Välj **Anslut den här enheten till Azure Active Directory.**
-4. Ange e-postadressen för ditt Microsoft 365-konto och välj  **Nästa**.
+1. Välj **Start** och välj sedan ikonen **Inställningar** startikonen.
+2. Välj **Konton Åtkomst** till arbete eller  >      >   **Anslut**.
+3. Välj **Anslut till den här enheten för att Azure Active Directory**.
+4. Ange e-postadressen för ditt Microsoft 365 och välj **Nästa**.
 5. Ange ditt lösenord,  **välj Logga in** och kontrollera sedan att du ansluter till rätt organisation.
 6. Välj  **Anslut** och välj sedan  **Klar**.
 
-Beroende på hur ditt företag har installerat Microsoft 365 Business kan du eventuellt se ett meddelande för att kryptera datorn. Så här krypterar du datorn:
+Beroende på hur företaget har Microsoft 365 Business kan ett meddelande visas om att kryptera datorn. Så här krypterar du datorn:
 
 1. Välj meddelandet **Kryptering krävs.**
-2. Välj  **Jag&#39;inte har något annat diskkrypteringsprogram installerat, kryptera** alla mina diskar och välj sedan  **Ja**. Fönstret Starting  **BitLocker visas**  med en förloppslist.
+2. Välj  **Jag&#39;inte har något annat diskkrypteringsprogram installerat, kryptera** alla mina diskar och välj sedan  **Ja**. Fönstret Startar **från BitLocker** en förloppslist.
 3. I fönstret **Välj hur du låser upp enheten vid start väljer** du Ange en **PIN-kod (rekommenderas).**
 4. Ange PIN-koden och ange den sedan igen för att verifiera den. Välj **Ange PIN-kod.**
 5. Välj en metod för att spara en återställningsnyckel för kryptering och välj sedan  **Nästa**.

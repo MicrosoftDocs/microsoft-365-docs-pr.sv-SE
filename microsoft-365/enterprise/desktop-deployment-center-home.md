@@ -26,7 +26,7 @@ Innehållet i distributionscentret för skrivbordsversionen är inaktuellt.
 
 Använd de här resurserna för att distribuera moderna skrivbord:
 
-- [Distribution av Windows 10](/windows/deployment/)
+- [Windows 10 distribution](/windows/deployment/)
 - [Distribuera Microsoft 365-applikationer](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [Principer för identitets- och enhetsåtkomst](../security/defender-365-security/microsoft-365-policies-configurations.md)
@@ -37,6 +37,6 @@ Du kan också hitta hjälp för skrivbordsdistribution från Microsoft-partner o
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit för Windows och Office
 
-Detta paket hjälper dig att planera, testa och validera distribution och hantering av skrivbord som kör Windows 10 Enterprise och Microsoft 365-appar för företag. Labben täcker med Microsoft Endpoint Configuration Manager, Skrivbordsanalys, verktyget Office-anpassning, OneDrive, Windows Autopilot med mera.
+Detta paket hjälper dig att planera, testa och validera distribution och hantering av skrivbord som kör Windows 10 Enterprise och Microsoft 365-appar för företag. Labben täcker med Microsoft Endpoint Configuration Manager, Skrivbordsanalys, Office Anpassningsverktyg, OneDrive, Windows Autopilot och mycket mer.
 
-Mer [information finns i Windows och Office Deployment Lab Kit.](modern-desktop-deployment-and-management-lab.md)
+Mer [Windows finns Office distributionslabbpaketet.](modern-desktop-deployment-and-management-lab.md)

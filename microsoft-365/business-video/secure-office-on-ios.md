@@ -34,18 +34,18 @@ ms.locfileid: "51580468"
 
 Du kan konfigurera en princip för användaråtkomst som kräver att mobila användare anger en PIN-kod eller ett fingeravtryck när de loggar in. Dessutom krypteras arbetsfiler som lagras på deras enheter.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 1. Logga in på administrationscentret för Microsoft 365.
 1. Välj **Lägg** till princip **under Principer.**
 1. I fönstret **Lägg till** princip anger du ett namn under **Principnamn** och väljer den principtyp du vill använda under **Principtyp.**
-1. Aktivera Hantera **hur användare kommer åt Office-filer på mobila** enheter och kontrollera sedan att följande tre inställningar är aktiverat:
+1. Aktivera Hantera **hur användare kommer Office filer på mobila** enheter och kontrollera sedan att följande tre inställningar är aktiverat:
     - **Kräv PIN-kod eller fingeravtryck för åtkomst till Office-program**
     - **Skydda filer om enheter försvinner eller blir stulna**
     - **Kryptera arbetsfiler**
 
-1. Under **Filer i de här apparna skyddas** väljer du de Office-program som du vill skydda på mobila enheter.
-1. Under **Vem får de här inställningarna?** är alla användare  markerade som standard, men du kan välja Ändra och välja de säkerhetsgrupper som du har skapat.
+1. Under **Filer i de här apparna skyddas** väljer du det Office ska skydda på mobila enheter.
+1. Under **Vem de här inställningarna?** är alla användare markerade som  standard, men du kan välja Ändra och välja de säkerhetsgrupper som du har skapat.
 1. Välj Lägg till för att slutföra **principen.**
 1. På sidan **Lägg till princip** väljer du **Stäng.**
 1. På startsidan för administrationscentret bekräftar du att den nya principen har lagts till genom att välja **Principer** och granska principen på **sidan** Principer.

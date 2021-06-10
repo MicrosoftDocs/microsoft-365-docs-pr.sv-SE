@@ -27,7 +27,7 @@ ms.locfileid: "51581124"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Administratörer migrerar ofta e-post från befintliga system första gången de konfigurerade Microsoft 365. I följande artiklar beskrivs hur du migrerar e-post med Windows PowerShell:
+Administratörer migrerar ofta e-post från befintliga system när de först Microsoft 365. I följande artiklar beskrivs hur du migrerar e-post med hjälp av Windows PowerShell:
   
 - [Använda PowerShell för att utföra en snabb migrering till Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md)
     

@@ -33,12 +33,12 @@ ms.locfileid: "51580588"
 
 När du skapar en grupp skapar du en central e-postadress och en plats för samarbete. Du kan använda den för att ange en e-postadress som försäljning eller information som alla kan se och ta emot e-postmeddelanden från.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. Gå till fliken Start **i** Outlook och välj **Ny grupp.**
+1. I Outlook väljer du **Ny** grupp på **fliken Start.**
 2. I rutan  **Skapa grupp**  anger du ett gruppnamn, en kortare e-postadress som information och en beskrivning.
 3. Öppna listrutan för sekretess och välj  **Privat**.
 4. Markera kryssrutan  **Skicka all grupp-e-post och händelser till medlemmarnas**  inkorgar.
 5. Under **Lägg till medlemmar** väljer du de anställda som du vill ska få e-postmeddelandena och väljer sedan Lägg till **medlemmar.**
-6. På fliken **Start** i Outlook väljer du **Gruppinställningar och** sedan **Redigera grupp.**
+6. På fliken **Start** i Outlook väljer du **Gruppera Inställningar** och sedan **Redigera grupp.**
 7. I rutan **Redigera grupp** markerar du kryssrutan **Skicka e-post** till personer utanför organisationen och väljer sedan **OK.**

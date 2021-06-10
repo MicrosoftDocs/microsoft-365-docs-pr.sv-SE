@@ -1,5 +1,5 @@
 ---
-title: Internetwebbplatser i Microsoft Azure med SharePoint Server 2013
+title: Webbplatser i Microsoft Azure med SharePoint Server 2013
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -23,13 +23,13 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50909768"
 ---
-# <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Internetwebbplatser i Microsoft Azure med SharePoint Server 2013
+# <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Webbplatser i Microsoft Azure med SharePoint Server 2013
 
- Webbplatser som använder SharePoint Server 2013 dra nytta av azure-infrastrukturtjänster. Den här artikeln innehåller resurser för att utforma och implementera den här lösningen.
+ Webbplatser som använder SharePoint Server 2013-förmån genom att de finns i Azures infrastrukturtjänster. Den här artikeln innehåller resurser för att utforma och implementera den här lösningen.
 
 ## <a name="using-azure-infrastructure-services-for-internet-sites"></a>Använda Azure-infrastrukturtjänster för webbplatser
 
-Microsoft Azure är ett tilltalande alternativ för värdwebbplatser i SharePoint Server 2013. Fördelarna är bland annat följande:
+Microsoft Azure är ett tilltalande alternativ för värdtjänster av Internetwebbplatser SharePoint Server 2013. Fördelarna är bland annat följande:
 
 - Fokusera på att utveckla en bra webbplats i stället för att skapa infrastruktur.
 
@@ -39,17 +39,17 @@ Microsoft Azure är ett tilltalande alternativ för värdwebbplatser i SharePoin
 
 - Dra nytta av Azure Active Directory för kundkonton.
 
-- Lägg till funktioner som inte är tillgängliga i Microsoft 365 för närvarande, till exempel djupgående rapportering och analys.
+- Lägg till funktioner som inte är tillgängliga i Microsoft 365, till exempel djupgående rapportering och analys.
 
 ## <a name="resources"></a>Resurser
 
-Följande tekniska illustrationer och artiklar innehåller information om hur du utformar och implementerar internetwebbplatser i Azure med hjälp av SharePoint Server 2013.
+Följande tekniska illustrationer och artiklar innehåller information om hur du utformar och implementerar internetwebbplatser i Azure med hjälp SharePoint Server 2013.
 
 |Resurs|Mer information|
 |---|---|
-|**SharePoint Server 2013-webbplatser i Azure** <br/> [![Bild av webbplatser i Azure med SharePoint](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|Den här arkitekturmodellen beskriver viktiga designaktiviteter och rekommenderade arkitekturalternativ för Internetwebbplatser i Azure.|
+|**SharePoint Server 2013-webbplatser i Azure** <br/> [![Bild av webbplatser i Azure med hjälp av SharePoint](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|Den här arkitekturmodellen beskriver viktiga designaktiviteter och rekommenderade arkitekturalternativ för Internetwebbplatser i Azure.|
 |**Designexempel: Internetwebbplatser i Azure för SharePoint Server 2013** <br/> [ ![ Bild av designexempel: Webbplatser i Microsoft Azure för SharePoint 2013 ](../media/MS-AZ-InternetSitesDesignSample.jpg) ] <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|Använd det här designexempel som utgångspunkt för din egen arkitektur.|
-|**[Microsoft Azure-arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |I den här artikeln beskrivs hur du utformar Azure-arkitekturer för SharePoint-lösningar.|
+|**[Microsoft Azure Arkitekturer för SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |I den här artikeln beskrivs hur du utformar Azure-arkitekturer för att SharePoint lösningar.|
 |
 
 ## <a name="see-also"></a>Se även

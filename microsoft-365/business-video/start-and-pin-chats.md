@@ -33,7 +33,7 @@ ms.locfileid: "51580384"
 
 Du kan chatta internt med dina kollegor eller chatta med en gästanvändare, till exempel en kund eller partner. Om [gäståtkomst är aktiverat för ditt](/microsoftteams/set-up-guests) företag kan du bara skriva en e-postadress för att lägga till en gäst i en chatt.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 Starta enskilda chattar eller gruppchattar för att samarbeta med en mindre grupp eller prata privat, och fäst chattar för snabb åtkomst.
 

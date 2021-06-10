@@ -34,10 +34,10 @@ ms.locfileid: "51580492"
 
 I Microsoft 365 för företag kan du återställa lösenord för användare. Du kan också låta användare återställa sina egna lösenord. Mer information [finns i Konfigurera självbetjäning](set-up-self-serve-password-reset.md) för återställning av lösenord.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 1. När en användare begär ett nytt lösenord får du en begäran om återställning av lösenord i en e-post. Om du vill återställa lösenordet öppnar du appstartaren och väljer **Admin**.
-1. I administrationscentret för Microsoft 365 väljer du Användare **,** Aktiva användare och sedan nyckelikonen bredvid den användare som begärde återställningen.
+1. I Microsoft 365 väljer du **Användare**, **Aktiva** användare och sedan nyckelikonen bredvid den användare som begärde återställningen.
 1. Välj **Skapa lösenord automatiskt om** du vill att ett slumpmässigt lösenord ska skapas automatiskt.
 1. Välj **Återställ**.
 1. Markera kryssrutan **Skicka lösenord med e-post.**

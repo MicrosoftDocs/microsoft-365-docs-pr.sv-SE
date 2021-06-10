@@ -32,9 +32,9 @@ ms.locfileid: "51580420"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
-Nätfiske är en skadlig attack där ett e-postmeddelande ser ut som det skickats från en välbekant källa, men som försöker samla in din personliga information. Som standard innehåller Microsoft 365 ett visst skydd mot nätfiske, men du kan öka det skyddet genom att förfina inställningarna. Vi tar en titt.
+Nätfiske är en skadlig attack där ett e-postmeddelande ser ut som det skickats från en välbekant källa, men som försöker samla in din personliga information. Som standard innehåller Microsoft 365 visst skydd mot nätfiske, men du kan öka det skyddet genom att förfina inställningarna. Vi tar en titt.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 1. I administrationscentret för [https://admin.microsoft.com](https://admin.microsoft.com) väljer du **Säkerhet**, **Hothantering**, **Policy** och sedan **ATP - nätfiskeskydd.**
 1. Välj **Standardprincip för** att förfina den.
