@@ -18,7 +18,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
-description: I den här artikeln förklaras skillnaden mellan att använda objektcachen i SharePoint Server 2013 lokalt och SharePoint Online.
+description: I den här artikeln förklaras skillnaden mellan att använda objektcachen i SharePoint server 2013 lokalt och i SharePoint Online.
 ms.openlocfilehash: 279d156a941aad6fbe7adbcf052c57f5b58c652f
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -28,38 +28,38 @@ ms.locfileid: "46696727"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Använda objektcachen med SharePoint Online
 
-I den här artikeln förklaras skillnaden mellan att använda objektcachen i SharePoint Server 2013 lokalt och SharePoint Online.
+I den här artikeln förklaras skillnaden mellan att använda objektcachen i SharePoint server 2013 lokalt och i SharePoint Online.
   
-Det finns betydande negativa konsekvenser för objekt-cachen i distributionen av SharePoint Online. Alla beroenden för objekt-cachen i SharePoint Online minskar tillförlitligheten hos din sida. 
+Det finns betydande negativ inverkan med att lita på objektcachen i SharePoint Online-distribution. Beroende av objektcachen i SharePoint Online minskar tillförlitligheten på sidan. 
   
-## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>Så fungerar SharePoint Online-och SharePoint Server 2013-objektcache
+## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>Hur objektcachen SharePoint Online SharePoint Server 2013 fungerar
 
-När SharePoint Server 2013 hanteras lokalt har kunden privata front webb servrar som är värdar för objektcachen. Det innebär att cacheminnet bevaras till en kund och begränsas bara av hur mycket minne som är tillgängligt och tilldelat objektcachen. Eftersom endast en kund betjänas i det lokala scenariot har front webb servrarna vanligt vis användare som skapar förfrågningar till samma webbplatser. Det innebär att cacheminnet blir snabbt och återstår att använda i listan med frågeresultaten och SharePoint-objekt som användarna begär med jämna mellanrum.
+När SharePoint server 2013 ligger lokalt har kunden privata frontend-webbservrar som fungerar som värd för objektcachen. Det innebär att cachen är dedikerad till en kund och begränsas bara av hur mycket minne som är tillgängligt och tilldelas till objektcachen. Eftersom endast en kund bearbetas i det lokala scenariot har frontend-webbservrarna vanligtvis användare som gör begäranden till samma webbplatser om och om igen. Det innebär att cachen snabbt blir full och förblir full av listfrågeresultat och SharePoint objekt som användarna begär regelbundet.
   
-![Visar trafik och läser in till lokala front webb servrar](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
+![Visar trafik och inläsning till lokala frontend-webbservrar](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   
-Därför förbättras den andra gången en användare besöker en sida. Efter minst fyra belastningar på samma sida lagras sidan på alla front webb servrar.
+Därför kan inläsningstiden för sidan bli bättre andra gången en användare besöker en sida. När samma sida har läses in minst fyra gånger cachelagras sidan på alla frontend-webbservrar.
   
-I SharePoint Online finns det däremot många fler servrar men också många fler webbplatser. Varje användare kan ansluta till en annan front webb server utan cacheminnet. Eller så fyller cacheminnet för en server, men nästa användare till front webb servern begär en sida från en annan webbplats. Eller även om nästa användare begär samma sida som på ett tidigare besök är de belastningsutjämnade till en annan front webb server som inte har den sidan i cacheminnet. I det här fallet hjälper cachelagring inte till användarna alls.
+I SharePoint online finns det många fler servrar men också många fler webbplatser. Varje användare kan ansluta till en annan frontend-webbserver som inte har cachen ifylld. Eller så kanske cachen fylls i för en server, men nästa användare på den frontend-webbservern begär en sida från en annan webbplats. Eller, även om nästa användare begär samma sida som vid föregående besök, kan de belastningsutjämnas till en annan frontend-webbserver som inte har den sidan i cachen. I det sista fallet hjälper cachelagring inte användarna alls.
   
-I bilden nedan representerar varje prick en sida som en användare begär och var den cachelagrade. Olika färger är olika kunder som gör gemensam användning av SaaS infrastruktur.
+I följande bild representerar varje punkt en sida som en användare begär och där den cachelagras. Olika färger representerar olika kunder som delar på användningen av SaaS-infrastrukturen.
   
-![Visar resultaten av cachelagring av objekt i SharePoint Online](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
+![Visar resultat för cachelagrade objekt i SharePoint Online](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
   
-Som du ser i diagrammet är sannolikheten för att en viss användare ska kunna trycka på en server med den cachelagrade versionen av sidan slank. På grund av det stora genomflödet och det faktum att servrarna delas mellan många platser är cacheminnet inte senaste länge eftersom det bara finns så mycket utrymme för cachelagring.
+Som du ser i diagrammet är chansen att en viss användare ska komma till en server med den cachelagrade versionen av sidan liten. På grund av det stora dataflödet och det faktum att servrarna delas mellan många webbplatser, varar cachen dessutom inte länge eftersom det bara finns så mycket utrymme för cachelagring.
   
-Av alla de här anledningarna är det inte ett effektivt sätt att förlita dig på användare att få cachelagrade objekt i SharePoint Online.
+Att förlita sig på att användarna får cachelagrade objekt är därför inte ett effektivt sätt att säkerställa kvaliteten på användarupplevelsen och sidinläsningstiderna i SharePoint Online.
   
-## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>Vad kan jag göra om det inte går att använda objektcachen för att förbättra prestanda i SharePoint Online?
+## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>Om vi inte kan lita på objektcachen för att förbättra prestanda i SharePoint Online, vad ska vi använda i stället?
 
-Eftersom du inte kan använda cachelagring i SharePoint Online bör du utvärdera alternativa design metoder för SharePoint-anpassningar som använder objektcachen. Detta innebär att du använder olika metoder för prestanda problem som inte förlitar sig på objektcache för att få bra resultat för användarna. Detta beskrivs i några av de andra artiklarna i denna serie och inkluderar:
+Eftersom du inte bör förlita dig på cachelagring i SharePoint Online, bör du utvärdera alternativa design metoder för SharePoint anpassningar som använder objektcachen. Det här innebär att använda metoder för prestandaproblem som inte förlitar sig på cachelagrade objekt för att kunna ge bra resultat för användare. Det här beskrivs i några av de andra artiklarna i den här serien och omfattar:
   
-- [Navigerings alternativ för SharePoint Online](navigation-options-for-sharepoint-online.md)
+- [Navigeringsalternativ för SharePoint Online](navigation-options-for-sharepoint-online.md)
     
-- [För minskning och buntar i SharePoint Online](minification-and-bundling-in-sharepoint-online.md)
+- [Förgrening och sammanslagning i SharePoint Online](minification-and-bundling-in-sharepoint-online.md)
     
-- [Använda Office 365-innehålls leverans nätverk (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+- [Använda Office 365 Content Delivery Network (CDN) med SharePoint Online](use-microsoft-365-cdn-with-spo.md)
     
-- [Fördröj inläsning av bilder och Java Script i SharePoint Online](delay-loading-images-and-javascript-in-sharepoint-online.md)
+- [Fördröja inläsning av bilder och JavaScript i SharePoint Online](delay-loading-images-and-javascript-in-sharepoint-online.md)
     
 

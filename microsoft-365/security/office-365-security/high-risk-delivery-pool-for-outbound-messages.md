@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur leveranspoolerna används för att skydda ryktet för e-postservrar i Microsoft 365-datacenter.
+description: Lär dig hur leveranspoolerna används för att skydda ryktet för e-postservrar i Microsoft 365 datacenter.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
@@ -33,12 +33,12 @@ ms.locfileid: "51599917"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-E-postservrar i Microsoft 365-datacenter kan tillfälligt bli av med att skicka skräppost. Till exempel skadlig programvara eller skadlig skräppost-attack i en lokal e-postorganisation som skickar utgående e-post via Microsoft 365 eller som har komprometterat Microsoft 365-konton. Attacker försöker också undvika identifiering genom att vidarebefordra meddelanden via Microsoft 365-vidarebefordran.
+E-postservrar i Microsoft 365 datacenter kan tillfälligt bli av med att skicka skräppost. Till exempel en skadlig programvara eller skadlig skräppost-attack i en lokal e-postorganisation som skickar utgående e-post via Microsoft 365 eller komprometterat Microsoft 365 konton. Attacker försöker också undvika identifiering genom att vidarebefordra meddelanden via Microsoft 365 vidarebefordran.
 
-De här scenarierna kan resultera i IP-adressen för de påverkade Microsoft 365-datacenterservrarna som visas på blockeringslistor från tredje part. Mål-e-postorganisationer som använder dessa blockeringslistor avvisar e-post från dessa meddelandekällor.
+De här scenarierna kan resultera i IP-adressen för Microsoft 365 datacenterservrar som visas på blockeringslistor från tredje part. Mål-e-postorganisationer som använder dessa blockeringslistor avvisar e-post från dessa meddelandekällor.
 
 ## <a name="high-risk-delivery-pool"></a>Högriskleveranspool
-För att förhindra detta skickas alla utgående meddelanden från Microsoft 365-datacenterservrar som har [](configure-the-outbound-spam-policy.md) fastställt vara skräppost eller som överskrider begränsningsgränserna för sändning av tjänsten eller utgående skräppost via högriskleveranspoolen. [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
+För att förhindra detta skickas alla utgående meddelanden från Microsoft 365 datacenterservrar som fastställt vara [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) skräppost [](configure-the-outbound-spam-policy.md) eller som överskrider gränserna för att skicka ut tjänster eller utgående skräppost via _högriskleveranspoolen._
 
 Högriskleveranspoolen är en separat IP-adresspool för utgående e-post som bara används för att skicka meddelanden av "låg kvalitet" (till exempel skräppost [och bakåtcatter).](backscatter-messages-and-eop.md) Användning av högriskleveranspoolen förhindrar att den vanliga IP-adresspoolen för utgående e-post skickas som skräppost. Den normala IP-adresspoolen för utgående e-post behåller det rykte som skickar meddelanden av "hög kvalitet", vilket minskar sannolikheten att denna IP-adress visas på IP-blockeringslistor.
 

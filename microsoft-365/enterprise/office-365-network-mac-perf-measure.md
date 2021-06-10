@@ -1,5 +1,5 @@
 ---
-title: Office 365-mått för rekommendationer för nätverks prestanda
+title: Office 365 för rekommendationer om nätverksprestanda
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365-mått för rekommendationer för nätverks prestanda
+description: Office 365 för rekommendationer om nätverksprestanda
 ms.openlocfilehash: 4fbd845688e2c09117b600ef8ae6c1473887499f
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -21,4 +21,4 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46696664"
 ---
-# <a name="office-365-measurements-for-network-performance-recommendations"></a>Office 365-mått för rekommendationer för nätverks prestanda
+# <a name="office-365-measurements-for-network-performance-recommendations"></a>Office 365 för rekommendationer om nätverksprestanda

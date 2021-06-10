@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Lär dig hur du konfigurerar principer för dataförlustskydd (DLP) så att platser för Dataförlustskydd för slutpunkt i Microsoft 365 används.
-ms.openlocfilehash: cbd95ed3ee70b69b395f73c83852a9f37a269f0b
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 1a0297271c3e0e8fb94a476982f146aa8c221e7a
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259493"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809137"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Använda Dataförlustskydd för slutpunkt
 
@@ -70,6 +70,9 @@ När en princips inställning för **åtkomst via appar och webbläsare som inte
 > [!IMPORTANT]
 > Ta inte med sökvägen för den körbara filen utan bara den körbara filens namn (till exempel browser.exe).
 
+### <a name="unallowed-bluetooth-apps"></a>Bluetooth-appar som inte tillåts
+
+Hindra andra från att överföra filer som skyddas av dina principer via specifika Bluetooth-appar.
 
 ### <a name="browser-and-domain-restrictions"></a>Begränsningar för webbläsare och domäner
 Begränsa känsliga filer som matchar dina principer från att delas med obegränsade molntjänstdomäner.
@@ -97,6 +100,11 @@ Du kan styra hur användare interagerar med alternativet för affärsmotivering 
 - Användare kan bara välja en inbyggd motivering.
 - Användare kan bara ange en egen motivering.
 
+### <a name="always-audit-file-activity-for-devices"></a>Granska alltid filaktivitet för enheter
+
+När enheter är integrerade granskas som standard aktivitet för Office-, PDF- och CSV-filer automatiskt och blir tillgängliga för granskning i Aktivitetsutforskaren. Inaktivera den här funktionen om du vill att aktiviteten bara ska granskas när integrerade enheter ingår i en aktiv princip.
+
+Filaktivitet granskas alltid för integrerade enheter, oavsett om de ingår i en aktiv princip eller inte.
 
 ## <a name="tying-dlp-settings-together"></a>Binda samman DLP-inställningar
 
@@ -154,7 +162,7 @@ De här scenarierna kräver att du redan har enheter som har registrerats och ra
 
 11. Sök efter data från de övervakade slutpunkterna i aktivitetsutforskaren. Ange platsfiltret för enheter och lägg till principen. Filtrera sedan efter principnamn om du vill se den här principens påverkan. Du kan läsa mer i [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md) om det behövs.
 
-12. Försök dela ett test som innehåller innehåll som utlöser villkoret för amerikanska PII-data (personligt identifierbar information) med någon utanför organisationen. Det här borde utlösa principen.
+12. Försök dela ett test som innehåller innehåll som utlöser villkoret för amerikanska PII-data (personligt identifierbar information) med någon utanför organisationen. Det bör utlösa principen.
 
 13. Sök efter händelsen i aktivitetsutforskaren.
 
@@ -179,7 +187,7 @@ De här scenarierna kräver att du redan har enheter som har registrerats och ra
 
 8. Behåll alla tidigare inställningar genom att välja **Nästa** och **Skicka** sedan principändringarna.
 
-9. Försök dela ett test som innehåller innehåll som utlöser villkoret för amerikanska PII-data (personligt identifierbar information) med någon utanför organisationen. Det här borde utlösa principen.
+9. Försök dela ett test som innehåller innehåll som utlöser villkoret för amerikanska PII-data (personligt identifierbar information) med någon utanför organisationen. Det bör utlösa principen.
 
 10. Sök efter händelsen i aktivitetsutforskaren.
 
@@ -204,7 +212,7 @@ De här scenarierna kräver att du redan har enheter som har registrerats och ra
 
 8. Behåll alla tidigare inställningar genom att välja **Nästa** och **Skicka** sedan principändringarna.
 
-9. Försök dela ett test som innehåller innehåll som utlöser villkoret för amerikanska PII-data (personligt identifierbar information) med någon utanför organisationen. Det här borde utlösa principen.
+9. Försök dela ett test som innehåller innehåll som utlöser villkoret för amerikanska PII-data (personligt identifierbar information) med någon utanför organisationen. Det bör utlösa principen.
 
    Ett popup-fönster som det här visas på klientenheten:
 
@@ -219,7 +227,7 @@ De här scenarierna kräver att du redan har enheter som har registrerats och ra
 - [Komma igång med dataförlustskydd för slutpunkt](endpoint-dlp-getting-started.md)
 - [Mer information om dataförlustskydd](dlp-learn-about-dlp.md)
 - [Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)
-- [Kom igång med Aktivitetsutforskaren](data-classification-activity-explorer.md)
+- [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md)
 - [Microsoft Defender för Endpoint](/windows/security/threat-protection/)
 - [Registreringsverktyg och metoder för Windows 10-enheter](/microsoft-365/compliance/dlp-configure-endpoints)
 - [Microsoft 365-prenumeration](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

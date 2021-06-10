@@ -1,5 +1,5 @@
 ---
-title: Konfigurera inställningar för Microsoft Defender Säkerhetscenter
+title: Konfigurera Microsoft Defender Säkerhetscenter inställningar
 description: På inställningssidan kan du konfigurera allmänna inställningar, behörigheter, API:er och regler.
 keywords: inställningar, allmänna inställningar, behörigheter, api,regler
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "51604351"
 ---
-# <a name="configure-microsoft-defender-security-center-settings"></a>Konfigurera inställningar för Microsoft Defender Säkerhetscenter
+# <a name="configure-microsoft-defender-security-center-settings"></a>Konfigurera Microsoft Defender Säkerhetscenter inställningar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51604351"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
-Använd menyn **Inställningar** för att ändra allmänna inställningar, avancerade funktioner, aktivera förhandsgranskning, e-postaviseringar och den anpassade funktionen för hotinformation.
+Använd **Inställningar** för att ändra allmänna inställningar, avancerade funktioner, aktivera förhandsgranskning, e-postaviseringar och den anpassade funktionen för hotinformation.
 
 ## <a name="in-this-section"></a>I det här avsnittet
 

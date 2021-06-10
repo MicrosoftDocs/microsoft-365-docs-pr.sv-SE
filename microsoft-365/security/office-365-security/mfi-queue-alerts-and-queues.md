@@ -28,12 +28,12 @@ ms.locfileid: "51599989"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-När meddelanden inte kan skickas från din organisation till dina lokala eller partner-e-postservrar med kopplingar, är meddelandena i kö i Microsoft 365. Vanliga exempel som kan orsaka detta villkor är:
+När meddelanden inte kan skickas från organisationen till dina lokala eller partner-e-postservrar med kopplingar, är meddelandena i kö i Microsoft 365. Vanliga exempel som kan orsaka detta villkor är:
 
 - Kopplingen är felaktigt konfigurerad.
 - Det har skett nätverks- eller brandväggsändringar i din lokala miljö.
 
-Microsoft 365 fortsätter att försöka leverera igen i 24 timmar. Efter 24 timmar förfaller meddelandena och returneras till avsändarna i rapporter om utebliven leverans (kallas även NDR-rapporter eller icke-leveranskavsändare).
+Microsoft 365 fortsätter att försöka leverera i 24 timmar. Efter 24 timmar förfaller meddelandena och returneras till avsändarna i rapporter om utebliven leverans (kallas även NDR-rapporter eller icke-leveranskavsändare).
 
 Om den fördefinierade e-postvolymen överskrider det fördefinierade tröskelvärdet (standardvärdet är 200 meddelanden) finns informationen tillgänglig på följande platser:
 
@@ -81,7 +81,7 @@ Om den fördefinierade e-postvolymen överskrider det fördefinierade tröskelv�
 Om du klickar på antalet meddelanden på widgeten visas en **utfällbara** meny för Meddelanden i kö med följande information:
 
 - **Antal meddelanden i kö**
-- **Kopplingsnamn**: Klicka på kopplingsnamnet för att hantera kopplingen i Exchange admin center (EAC).
+- **Kopplingsnamn**: Klicka på kopplingsnamnet för att hantera kopplingen Exchange administrationscentret (EAC).
 - **Startad kötid**
 - **Äldsta meddelandena har förfallit**
 - **Målserver**

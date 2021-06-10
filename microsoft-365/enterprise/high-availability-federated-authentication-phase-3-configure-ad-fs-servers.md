@@ -25,9 +25,9 @@ ms.locfileid: "50909804"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Fas 3 med hög tillgänglighet för federerad autentisering: Konfigurera AD FS-servrar
 
-I den här fasen av distributionen av hög tillgänglighet för Microsoft 365-federerad autentisering i Azure-infrastrukturtjänster skapar du en intern belastningsutjämnare och två AD FS-servrar.
+I den här fasen av distributionen av hög tillgänglighet för Microsoft 365 federerad autentisering i Azure-infrastrukturtjänster skapar du en intern belastningsutjämnare och två AD FS-servrar.
   
-Du måste slutföra den här fasen innan du går vidare [till Fas 4: Konfigurera proxyprogram .](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) Se [Distribuera hög tillgänglighet federerad autentisering för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) för alla faser.
+Du måste slutföra den här fasen innan du går vidare [till Fas 4: Konfigurera proxyprogram .](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) Se [Distribuera federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) för alla faser.
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Skapa AD FS-serverns virtuella datorer i Azure
 
@@ -48,12 +48,12 @@ Använd följande block med PowerShell-kommandon för att skapa virtuella datore
 Kom ihåg att du definierade Tabell M i fas [2:](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Konfigurera domänkontrollanter och tabell R, V, S, I och A i [fas 1: Konfigurera Azure.](high-availability-federated-authentication-phase-1-configure-azure.md)
   
 > [!NOTE]
-> Följande kommandouppsättningar använder den senaste versionen av Azure PowerShell. Se [Komma igång med Azure PowerShell.](/powershell/azure/get-started-azureps) 
+> Följande kommandouppsättningar använder den senaste versionen av Azure PowerShell. Se [Komma igång med Azure PowerShell](/powershell/azure/get-started-azureps). 
   
-Först skapar du en intern belastningsutjämning för Azure för de två AD FS-servrarna. Ange värden för variablerna och ta bort \< and > tecken. När du har angett alla värden kör du det resulterande blocket i Azure PowerShell-kommandotolken eller i PowerShell ISE.
+Först skapar du en intern belastningsutjämning för Azure för de två AD FS-servrarna. Ange värden för variablerna och ta bort \< and > tecken. När du har angett alla korrekta värden kör du det resulterande blocket Azure PowerShell kommandotolken eller i PowerShell ISE.
   
 > [!TIP]
-> Använd den här arbetsboken för Microsoft Excel-konfiguration om du vill skapa PowerShell-kommandoblock som är färdiga att köra baserat på [dina egna inställningar.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
+> Om du vill skapa PowerShell-kommandoblock som är färdiga att köra baserat på dina anpassade inställningar använder du den [här Microsoft Excel konfigurationsarbetsboken](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 ```powershell
 # Set up key variables
@@ -76,7 +76,7 @@ New-AzLoadBalancer -ResourceGroupName $rgName -Name "ADFSServers" -Location $loc
 
 Skapa sedan virtuella AD FS-serverdatorer.
   
-När du har angett alla värden kör du det resulterande blocket i Azure PowerShell-kommandotolken eller i PowerShell ISE.
+När du har angett alla korrekta värden kör du det resulterande blocket Azure PowerShell kommandotolken eller i PowerShell ISE.
   
 ```powershell
 # Set up variables common to both virtual machines
@@ -131,11 +131,11 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Eftersom dessa virtuella datorer är för ett intranätprogram, tilldelas de inte en offentlig IP-adress eller en DNS-domännamnsetikett och exponeras för Internet. Det innebär dock också att du inte kan ansluta till dem från Azure Portal. Alternativet **Anslut** är inte tillgängligt när du visar egenskaperna för den virtuella datorn. Använd fjärrskrivbordsanslutningstillbehöret eller ett annat Fjärrskrivbord-verktyg för att ansluta till den virtuella datorn med dess privata IP-adress eller DNS-namn på intranätet.
+> Eftersom dessa virtuella datorer är för ett intranätprogram, tilldelas de inte en offentlig IP-adress eller en DNS-domännamnsetikett och exponeras för Internet. Det innebär dock också att du inte kan ansluta till dem från Azure Portal. Alternativet **Anslut** inte tillgängligt när du visar egenskaperna för den virtuella datorn. Använd fjärrskrivbordsanslutningstillbehöret eller ett annat Fjärrskrivbord-verktyg för att ansluta till den virtuella datorn med dess privata IP-adress eller DNS-namn på intranätet.
   
 Använd valfri fjärrskrivbordsklient för varje virtuell dator och skapa en anslutning för fjärrskrivbord. Använd DNS-namnet på intranätet och inloggningsuppgifterna för det lokala administratörskontot.
   
-För varje virtuell dator ansluter du dem till rätt AD DS-domän (Active Directory Domain Services) med dessa kommandon i Windows PowerShell-kommandotolken.
+För varje virtuell dator ansluter du dem till rätt AD DS-domän (Active Directory Domain Services) med dessa kommandon Windows PowerShell meddelande.
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -148,7 +148,7 @@ Här är konfigurationen som är ett resultat av att den här fasen slutförts, 
   
 **Fas 3: AD FS-servrarna och den interna belastningsutjämnaren för er infrastruktur för federerad autentisering med hög tillgänglighet i Azure**
 
-![Fas 3 av Hög tillgänglighet : Microsoft 365-infrastruktur för federerad autentisering i Azure med AD FS-servrarna](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Fas 3 av hög tillgänglighet Microsoft 365 infrastruktur för federerad autentisering i Azure med AD FS-servrarna](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Nästa steg
 
@@ -158,4 +158,4 @@ Använd [fas 4: Konfigurera proxyprogram för webbprogram för att fortsätta](h
 
 [Distribuera federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Federerad identitet för din Utvecklings-/testmiljö för Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Federerad identitet för din Microsoft 365 utvecklings-/testmiljö](federated-identity-for-your-microsoft-365-dev-test-environment.md)

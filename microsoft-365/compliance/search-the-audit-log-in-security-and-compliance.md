@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Du kan använda Microsoft 365 Efterlevnadscenter för att söka i den enhetliga granskningsloggen för att visa användar- och administratörsaktivitet i organisationen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfda69e5695d2097de5bfae48b580e23799edf87
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536052"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809149"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Söka i granskningsloggen i Efterlevnadscenter
 
@@ -761,7 +761,7 @@ I följande tabell visas aktiviteter för rolladministration i Azure AD som logg
 |:-----|:-----|:-----|
 |Medlem tillagd i roll|Lägg till medlem i roll.|Lade till en användare till en administratörsroll i Microsoft 365.|
 |Användare borttagen från en katalogroll|Ta bort medlem från roll.|Tog bort en användare från en administratörsroll i Microsoft 365.|
-|Kontaktinformation för företag angiven|Ange kontaktinformation för företag.|Uppdaterade kontaktinställningar på företagsnivå för organisationen. Det omfattar e-postadresser för prenumerationsrelaterad e-post som skickas via Microsoft 365 och tekniska aviseringar om tjänster.|
+|Kontaktinformation för företag angiven|Ange kontaktinformation för företag.|Uppdaterade kontaktinställningar på företagsnivå för organisationen. Det omfattar e-postadresser för prenumerationsrelaterad e-post som skickas av Microsoft 365 och tekniska aviseringar om tjänster.|
 ||||
 
 ### <a name="directory-administration-activities"></a>Aktiviteter för katalogadministration

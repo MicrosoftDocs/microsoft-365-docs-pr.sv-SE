@@ -28,7 +28,7 @@ ms.locfileid: "51615501"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Principer för att tillåta gäståtkomst och åtkomst för externa B2B-användare
 
-I den här artikeln beskrivs hur du justerar de rekommenderade principerna för enhets- och identitetsåtkomst för att ge åtkomst till gäster och externa användare som har ett Azure Active Directory-konto (Azure AD) Business-to-Business (B2B). Den här vägledningen bygger på de [gemensamma principerna för identitet och enhetsåtkomst.](identity-access-policies.md)
+I den här artikeln beskrivs hur du justerar de rekommenderade principerna för enhets- och identitetsåtkomst för att ge åtkomst till gäster och externa användare som har ett Azure Active Directory-konto (Azure AD) business-to-business-konto (B2B). Den här vägledningen bygger på de [gemensamma principerna för identitet och enhetsåtkomst.](identity-access-policies.md)
 
 Dessa rekommendationer är utformade för att gälla **baslinjenivån** för skydd. Men du kan också justera rekommendationerna utifrån dina specifika behov för **känsligt och** **starkt reglerat** skydd.
 
@@ -54,7 +54,7 @@ Om du vill inkludera eller exkludera gäster och externa användare i **villkors
 
 ## <a name="more-information"></a>Mer information
 
-### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Åtkomst för gäster och externa användare med Microsoft Teams
+### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Gäster och åtkomst till externa användare med Microsoft Teams
 
 Microsoft Teams definierar följande användare:
 
@@ -64,7 +64,7 @@ Microsoft Teams definierar följande användare:
 
 Mer information finns i [jämförelsen mellan gäster och extern användaråtkomst för team.](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)
 
-Mer information om hur du skyddar identitets- och enhetsåtkomstprinciper för Teams finns i Principrekommendationer för att skydda [Teams chattar, grupper och filer.](teams-access-policies.md)
+Mer information om hur du skyddar identitets- och enhetsåtkomstprinciper för Teams finns i Principrekommendationer för [att skydda Teams, chattar,](teams-access-policies.md)grupper och filer.
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Kräv MFA alltid för gäst och externa användare
 
@@ -82,7 +82,7 @@ Det är bara en organisation som kan hantera en enhet. Om du inte exkluderar gä
 
 ## <a name="next-step"></a>Nästa steg
 
-![Steg 4: Principer för Microsoft 365-molnappar och Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Steg 4: Principer Microsoft 365 molnappar och Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Konfigurera principer för villkorsstyrd åtkomst för:
 

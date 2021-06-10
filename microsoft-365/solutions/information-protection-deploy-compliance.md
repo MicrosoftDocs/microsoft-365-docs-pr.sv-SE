@@ -31,14 +31,14 @@ Microsoft Compliance Manager kan hjälpa dig att hantera förbättringar relater
 Den här artikeln innehåller vägledning om hur du använder verktyget i datasekretesssyfte.
 
 >[!Note]
->Rekommendationer från Compliance Manager ska inte tolkas som en garanti för överensstämmelse. Det är upp till dig att utvärdera och verifiera hur effektiv kundkontrollerna är i olika regelverk. Dessa tjänster omfattas av de allmänna villkoren i [villkoren för onlinetjänster.](https://go.microsoft.com/fwlink/?linkid=2108910) Se även [Licensvägledning för Microsoft 365 för säkerhet och efterlevnad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>Rekommendationer från Compliance Manager ska inte tolkas som en garanti för överensstämmelse. Det är upp till dig att utvärdera och verifiera hur effektiv kundkontrollerna är i olika regelverk. Dessa tjänster omfattas av de allmänna villkoren i [villkoren för onlinetjänster.](https://go.microsoft.com/fwlink/?linkid=2108910) Se även [vägledning Microsoft 365 om licensiering för säkerhet och efterlevnad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
 ## <a name="getting-started-with-compliance-manager"></a>Komma igång med Efterlevnadshanteraren
 
 #### <a name="what-is-compliance-manager"></a>Vad är Efterlevnadshanteraren
 
-[Efterlevnadshanteraren](../compliance/compliance-manager.md) är ett arbetsflödesbaserat riskutvärderingsverktyg i Efterlevnadscenter för Microsoft 365 för hantering av aktiviteter för regelefterlevnad som är relaterade till Microsofts molntjänster. Som en del av prenumerationen på Microsoft 365 eller Azure Active Directory (Azure AD) hjälper Efterlevnadshanteraren dig att hantera regelefterlevnad i den delade ansvarsfördelningsmodellen för Microsoft-molntjänster.
+[Efterlevnadshanteraren](../compliance/compliance-manager.md) är ett arbetsflödesbaserat riskutvärderingsverktyg i kompatibilitetscentret för Microsoft 365 att hantera efterlevnadsaktiviteter för föreskrifter och föreskrifter som är relaterade till Microsofts molntjänster. Som en del av Microsoft 365- eller Azure Active Directory-prenumerationen (Azure AD) hjälper Efterlevnadshanteraren dig att hantera regelefterlevnad i den delade ansvarsfördelningsmodellen för Microsoft-molntjänster.
 
 **Redo att använda utvärderingar**
 
@@ -66,7 +66,7 @@ Efterlevnadshanteraren ger dig även ett efterlevnadsresultat som mäter hur lå
     - Utföra implementerings- och testarbete på förbättringsåtgärder för att slutföra kontroller i dina utvärderingar
     - Förstå hur olika åtgärder påverkar ditt efterlevnadsresultat
 - [Skalning: använd avancerade funktioner för att uppfylla dina behov](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Skapa anpassade utvärderingar för att spåra icke-Microsoft 365-produkter
+    - Skapa anpassade utvärderingar för att spåra icke-Microsoft 365 produkter
     - Ändra befintliga mallar för att lägga till eller ta bort kontroller
     - Konfigurera automatisk testning av förbättringsåtgärder
 

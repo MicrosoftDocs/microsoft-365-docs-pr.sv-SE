@@ -1,5 +1,5 @@
 ---
-title: Hantera identitetsstyrning för Microsoft 365
+title: Hantera Microsoft 365 identitetsstyrning
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Lär dig hur du använder identitetsstyrningsfunktioner i Microsoft 365.
+description: Läs mer om hur du Microsoft 365 funktioner för identitetsstyrning.
 ms.openlocfilehash: 6a97ca24c609724a2cab93feec9e90f25d3361e3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50910960"
 ---
-# <a name="manage-microsoft-365-identity-governance"></a>Hantera identitetsstyrning för Microsoft 365
+# <a name="manage-microsoft-365-identity-governance"></a>Hantera Microsoft 365 identitetsstyrning
 
 Identitetsstyrning handlar om att skydda, övervaka och granska åtkomst till kritiska tillgångar och samtidigt säkerställa den anställdas produktivitet. Med identitetsstyrning kan du till exempel se till att rätt användare har rätt åtkomst till rätt resurser och fastställa om åtkomsten förändras med tiden.
 
@@ -59,6 +59,6 @@ Hantering av åtkomst via Azure AD kan du hantera livscykeln för identitet och 
 
 De anställda behöver åtkomst till olika grupper, program och webbplatser för att kunna utföra sitt jobb. Det kan vara svårt att hantera åtkomsten eftersom kraven ändras, nya program läggs till eller användare behöver ytterligare åtkomsträttigheter. När du samarbetar med andra organisationer kanske du inte vet vem i den andra organisationen som behöver åtkomst till organisationens resurser, och användare utanför organisationen vet inte vilka program, grupper eller webbplatser organisationen använder.
 
-Hantering av Azure AD-berättiganden kan hjälpa dig att hantera åtkomsten till grupper, program och SharePoint-webbplatser mer effektivt för interna och externa användare.
+Hantering av Azure AD-berättigande kan hjälpa dig att hantera åtkomsten till grupper, program och SharePoint för interna och externa användare på ett effektivare sätt.
  
 Mer information finns i översikten över [hantering av Azure AD-berättiganden.](/azure/active-directory/governance/entitlement-management-overview)

@@ -1,7 +1,7 @@
 ---
 title: Efterlevnad
-description: I den här artikeln finns en lista över de efterlevnadsstandarder som är relevanta för Microsoft Managed Desktop.
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+description: Den här artikeln innehåller de efterlevnadsstandarder som är relevanta för Microsoft Hanterat skrivbord.
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -18,11 +18,11 @@ ms.locfileid: "50918436"
 ---
 # <a name="compliance"></a>Efterlevnad
 
-När du använder Microsoft Managed Desktop tillhandahåller Microsoft en omfattande uppsättning efterlevnadserbjudanden. Det hjälper din organisation att uppfylla olika efterlevnadskrav.
+När du använder Microsoft Hanterat skrivbord tillhandahåller Microsoft en omfattande uppsättning efterlevnadserbjudanden. Det hjälper din organisation att uppfylla olika efterlevnadskrav.
 
 ## <a name="compliance-coverage"></a>Efterlevnadstäckning
 
-Microsoft Managed Desktop har följande certifieringar:
+Microsoft Hanterat skrivbord följande certifieringar:
 
 - [ISO 27001 ISMS (Information Security Management Standards)](/compliance/regulatory/offering-ISO-27001)
 - [ISO 27701 PIMS (Privacy Information Management System)](/compliance/regulatory/offering-iso-27701)
@@ -45,7 +45,7 @@ Microsoft Managed Desktop har följande certifieringar:
 Du hittar relevant information, inklusive kontroll- och tekniska krav, i [Service Trust Portal (STP),](https://servicetrust.microsoft.com/)den centrala lagringsplatsen för sådan information om Microsoft Cloud Service-erbjudanden. Du kan ladda ned granskare, efterlevnadscertifikat och mycket mer [från avsnittet Granskningsrapporter](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) i STP.
 
 > [!NOTE]
-> Eftersom Microsoft Managed Desktop körs på Azure har relevanta dokument vanligtvis filnamn som "Microsoft Azure, Dynamics 365 och andra onlinetjänster". I de dokumenten hittar du vanligtvis Microsoft Managed Desktop under kategorin "Microsoft Online Services" eller "Monitoring + Management".
+> Eftersom Microsoft Hanterat skrivbord körs på Azure har relevanta dokument vanligtvis filnamn som "Microsoft Azure, Dynamics 365 och andra onlinetjänster". I de dokumenten hittar du vanligtvis Microsoft Hanterat skrivbord under kategorin "Microsoft Online Services" eller "Övervakning + Hantering".
 
 ## <a name="shared-responsibility"></a>Delat ansvar
 

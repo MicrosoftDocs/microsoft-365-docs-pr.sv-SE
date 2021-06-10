@@ -27,7 +27,7 @@ ms.locfileid: "52841000"
 > [!TIP]
 > Gör det enkelt för användarna att få tillgång till molntjänster och lokala program och möjliggöra moderna hanteringsfunktioner för alla enheter. Mer information finns i Skydda [din fjärranslutna arbetsstyrka.](/enterprise-mobility-security/remote-work/) 
 
-<center><h2>Microsoft Defender för Slutpunkt</center></h2>
+<center><h2>Microsoft Defender för Endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Hot & hantering av säkerhetsrisker</b></center></a></td>

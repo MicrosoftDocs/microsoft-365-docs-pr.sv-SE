@@ -23,7 +23,7 @@ ms.locfileid: "51600013"
 
 I simuleringen av attacker ger Microsoft dig insikter baserade på resultat av simuleringar och utbildningar som anställda gick igenom. De här insikterna hjälper dig att hålla dig informerad om dina anställdas beredskapsstatus och rekommenderar nästa steg för att bättre förbereda de anställda och din miljö för attacker.
 
-Vi arbetar kontinuerligt med att expandera de insikter som är tillgängliga för dig. Funktionens påverkan och rekommenderade åtgärder är tillgängliga för närvarande. Börja med att gå till [simuleringsutbildning för attacker i Microsoft 365 säkerhetscenter](https://security.microsoft.com/attacksimulator?viewid=overview).
+Vi arbetar kontinuerligt med att expandera de insikter som är tillgängliga för dig. Funktionens påverkan och rekommenderade åtgärder är tillgängliga för närvarande. Börja med att gå till [simuleringsutbildning för attack i Microsoft 365 säkerhetscenter](https://security.microsoft.com/attacksimulator?viewid=overview).
 
 ## <a name="behavior-impact-on-compromise-rate"></a>Påverkan på kompromettränta
 
@@ -31,7 +31,7 @@ På fliken **Översikt** över attack simuleringsutbildning ser du hur beteendet
 
 I diagrammet kan du se:
 
-- **Förutsagd** komprometteringshastighet som återspeglar den genomsnittliga komprometteringen för simuleringar som använder samma typ av nyttolast i andra Microsoft 365-klientorganisationar som använder utbildning av attack simulering.
+- **Förutsagd komprometteringshastighet** som återspeglar den genomsnittliga komprometteringen för simuleringar som använder samma typ av nyttolast i andra Microsoft 365-klientorganisationen som använder utbildning av attack simulering.
 - **Den faktiska komprometteringen** återspeglar procentandelen anställda som avar sig för simuleringen.
 
 Återspeglar dessutom `<number> less susceptible to phishing` skillnaden mellan det faktiska antalet anställda som komprometterats av attacken och den förutsagda komprometterats. Antalet anställda är mindre sannolikt att bli komprometterade av liknande attacker i framtiden, samtidigt som det visar hur anställda gjorde generellt i motsats till `<percent%> better than predicted rate` den förutsagda komprometterat lönen.

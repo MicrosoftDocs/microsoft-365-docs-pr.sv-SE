@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Läs mer om hur du hanterar Microsoft 365-grupper.
+description: Läs mer om hur du hanterar Microsoft 365 grupper.
 ms.openlocfilehash: 529bdb874661329497b103a1207b90625ad33a4b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,11 +33,11 @@ ms.locfileid: "50911013"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan hantera Microsoft 365-grupper på flera olika sätt, beroende på din konfiguration. Du kan hantera användarkonton i administrationscentret för [Microsoft 365](../admin/add-users/index.yml), PowerShell, Active Directory Domain Services (AD DS) eller i administrationscentret för [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
+Du kan hantera Microsoft 365 grupper på flera olika sätt, beroende på din konfiguration. Du kan hantera användarkonton i [administrationscentret för Microsoft 365](../admin/add-users/index.yml), PowerShell, i AD DS (Active Directory Domain Services) eller i [administrationscentret för Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planera för var och hur du ska hantera grupperna
 
-Var och hur du kan hantera användarkonton beror på vilken identitetsmodell du vill använda för Microsoft 365. De två övergripande modellerna är enbart moln- och hybridmodeller.
+Var och hur du kan hantera användarkonton beror på vilken identitetsmodell du vill använda för ditt Microsoft 365. De två övergripande modellerna är enbart moln- och hybridmodeller.
   
 ### <a name="cloud-only"></a>Endast molnet
 
@@ -49,7 +49,7 @@ Du skapar och hanterar grupper med:
     
 ### <a name="hybrid"></a>Hybrid
 
-AD DS-grupper synkroniseras med Microsoft 365 från AD DS, så du måste använda lokala AD DS-verktyg för att hantera grupperna.
+AD DS-grupper synkroniseras med Microsoft 365 från AD DS, så du måste använda lokala AD DS-verktyg för att hantera de här grupperna.
 
 Du kan också skapa och hantera Azure AD-grupper som är separata från AD DS-grupper men som kan innehålla användare och grupper från AD DS. I det här fallet kan du använda:
 

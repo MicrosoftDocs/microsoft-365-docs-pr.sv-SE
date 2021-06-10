@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
-description: Ett jämförelsediagram som visar skillnaderna i funktioner mellan bookings-webbappen och Bookings Teams-appen.
+description: Ett jämförelsediagram som visar skillnaderna i funktioner mellan bookings-webbappen och Bookings Teams appen.
 ms.openlocfilehash: de207f2f194fff07fcc07f2f278d4a2135d4585b
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "52332240"
 ---
 # <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Jämförelsediagram: Bookings-webbapp jämfört med Bookings Teams-app
 
-Med bookings-appen i Teams kan schemaläggare hantera sina huvuduppgifter och ändra vissa inställningar. Men på bookings-webben finns avancerade funktioner och inställningar som ännu inte är tillgängliga i Teams-appen.
+Med appen Bookings i Teams kan schemaläggare hantera sina huvuduppgifter och ändra vissa inställningar. Men på bookings-webben finns avancerade funktioner och inställningar som ännu inte är tillgängliga Teams appen.
 
-Teams-appfunktionerna läggs till hela tiden och vi fortsätter att uppdatera den här listan. Mer information finns i avsnittet Finns alla funktioner i den ursprungliga Bookings-webbappen i **Microsoft Teams?** i [Vanliga](bookings-faq.yml) frågor och svar.
+Teams appfunktioner läggs till hela tiden och vi fortsätter att uppdatera den här listan. Mer information finns i avsnittet Finns alla funktioner i den ursprungliga **Bookings-webbappen Microsoft Teams?** i [Vanliga](bookings-faq.yml) frågor och svar.
 
-| Funktion | Bookings-webbapp | Bookings Teams-app |
+| Funktion | Bookings-webbapp | Bookings Teams app |
 |:---|:---|:---|
 | Skapa nya bokningskalendrar | Ja | Ja |
 | Lägga till och ta bort personal från en bokningskalender | Ja | Ja |

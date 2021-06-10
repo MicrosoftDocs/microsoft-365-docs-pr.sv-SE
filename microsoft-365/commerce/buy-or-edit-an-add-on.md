@@ -44,7 +44,7 @@ Du måste vara global administratör eller faktureringsadministratörer för att
 
 Använd följande steg för att hitta och köpa tillägg. Listan innehåller bara tillägg som är tillgängliga för dig. Den här listan baseras på dina aktiva prenumerationer och andra befintliga tillägg som du redan har. Om ett tillägg inte finns med i listan kan du inte köpa det.
 
-Mer information om Skype för företag-tillägg finns i Licensiering för [Skype för företag- och Microsoft Teams-tillägg.](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)
+Mer information Skype för företag tillägg finns i Skype för företag [och Microsoft Teams tilläggslicensiering.](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)
 
 1. I administrationscentret går du  till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster.</a>
 2. Längst ned på **sidan Köp** tjänster, i avsnittet Tillägg, hittar du tillägget som du vill köpa och väljer **Information.** 

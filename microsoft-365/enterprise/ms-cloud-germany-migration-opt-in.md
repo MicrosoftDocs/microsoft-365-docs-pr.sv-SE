@@ -1,5 +1,5 @@
 ---
-title: Så här anmäler du dig för migrering från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska datacenterområdena
+title: Så här anmäler du dig för migrering från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i de nya tyska datacenterområdena
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -26,7 +26,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51592078"
 ---
-# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Så här anmäler du dig för ny migrering från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska datacenterområdena
+# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Så här anmäler du dig för ny migrering från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i de nya tyska datacenterområdena
 
 > [!NOTE]
 > Den här artikeln gäller endast Microsoft Cloud Germany-kunder (Microsoft Cloud Deutschland).
@@ -36,11 +36,11 @@ ms.locfileid: "51592078"
 
 Om du är en berättigad kund med din tjänst i Microsoft Cloud Germany (Microsoft Cloud Deutschland) och du har loggat in som innehavaradministratör (global) kan du använda en sida i administrationscentret för Microsoft 365 för att registrera dig för migrering.
 
-För att komma åt sidan **expanderar** du Inställningar i navigeringsfönstret till vänster och klickar sedan på **Organisationsprofil.**
+För att komma åt sidan **expanderar Inställningar** i navigeringsfönstret till vänster och klickar sedan på **Organisationsprofil**.
 
-På sidan **Organisationsprofil** bläddrar du ned till avsnittet Migrera från **Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster** i det nya tyska datacenteravsnittet.
+På sidan **Organisationsprofil** bläddrar du ned till **avsnittet Migrate from Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i** det nya tyska datacenteravsnittet.
 
-Om du vill migrera din tjänst från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänster i de nya tyska datacenterområdena klickar du **på Registrera.**
+Om du vill migrera din tjänst från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i de nya tyska datacenterområdena klickar du på Registrera **dig.**
  
 ![Introduktion till avanmälning](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
@@ -48,7 +48,7 @@ Ett nytt avsnitt visas till höger på skärmen för att acceptera din bekräfte
  
 ![Accepterande av avanmälning](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-När du har gått med på din klientorganisations räkning ser alla administratörer bekräftelsen i Migrera från **Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365-tjänsterna** i det nya området för tyska datacenter, inklusive datum för avanmälning. Administratörer får också en bekräftelse i meddelandecentret i administrationscentret för Microsoft 365. 
+När du har gått med för din klientorganisation ser alla administratörer bekräftelsen i Migrera från **Microsoft Cloud Germany (Microsoft Cloud Deutschland)** till Office 365-tjänsterna i det nya tyska datacenteravsnittet, inklusive datum för avanmälning. Administratörerna får också en bekräftelse i meddelandecentret i Microsoft 365 administrationscentret. 
  
 ![Bekräftelse på att du har valt att delta](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
@@ -58,7 +58,7 @@ Migreringar påbörjas i början av 2021 för organisationer som väljer att del
 
 ## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>Vad händer om du inte anmäler dig till migreringen i Admin Center?
 
-Villkoren för onlinetjänster har ändrats så att de omfattar termer som gör det möjligt för Microsoft att migrera dina microsoft 365-, Dynamics 365- och Power BI-data och -prenumerationer från Microsoft Cloud Deutschland till ett nytt datacenter. Dessa villkor gäller för alla prenumerationer på Microsoft Cloud Germany (Microsoft Cloud Deutschland) som förnyats sedan den 1 maj 2020. 
+Villkoren för onlinetjänster har ändrats så att de omfattar termer som gör att Microsoft kan migrera dina data och prenumerationer från Microsoft Microsoft 365, Dynamics 365 och Power BI från Microsoft Cloud Deutschland till ett nytt datacenter. Dessa villkor gäller för alla prenumerationer på Microsoft Cloud Germany (Microsoft Cloud Deutschland) som förnyats sedan den 1 maj 2020. 
 
 Administratören för kundens klientorganisation får ett meddelande i ett e-postmeddelande och meddelandecentret som anger att avanmälning till migrering sker automatiskt för en Microsoft-assisterad migrering. Det här meddelandet skickas minst 30 dagar före den automatiska avanmälan. Efter migreringen skickas all kommunikation och alla statusuppdateringar till kundens innehavaradministratörer i Meddelandecenter.
 
@@ -72,7 +72,7 @@ Customer and partner tenant administrators are encouraged to opt-in for migratio
 
 Komma igång:
 
-- [Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i nya tyska datacenterområden](ms-cloud-germany-transition.md)
+- [Migrering från Microsoft Cloud Deutschland till Office 365 i de nya tyska datacenterområdena](ms-cloud-germany-transition.md)
 - [Migreringshjälp för Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
 - [Kundupplevelse under migreringen](ms-cloud-germany-transition-experience.md)
 
@@ -85,5 +85,5 @@ Flytta genom övergången:
 Molnappar:
 
 - [Information om Dynamics 365-migreringsprogram](/dynamics365/get-started/migrate-data-german-region)
-- [Information om Migreringsprogram för Power BI](/power-bi/admin/service-admin-migrate-data-germany)
-- [Komma igång med uppgraderingen till Microsoft Teams](/microsoftteams/upgrade-start-here)
+- [Power BI i migreringsprogrammet](/power-bi/admin/service-admin-migrate-data-germany)
+- [Komma igång med din Microsoft Teams uppgradering](/microsoftteams/upgrade-start-here)

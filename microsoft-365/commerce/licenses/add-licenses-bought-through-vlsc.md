@@ -18,7 +18,7 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: Lär dig hur du lägger till licenser i din Microsoft 365-prenumeration som köpts via tredjepartspartner, som kan identifieras av Microsoft.
+description: Lär dig hur du lägger till licenser i Microsoft 365-prenumerationen som köpts via tredjepartspartnern, som identifieras av Microsoft.
 ms.date: 04/07/2021
 ms.openlocfilehash: 0e2a3779ae7d93eaaea660209bbc86a6843b553c
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
@@ -29,7 +29,7 @@ ms.locfileid: "52331760"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Lägga till licenser i en prenumeration som köpts via Volume Licensing Service Center
 
-Om du har köpt Microsoft 365 för företag- eller Office 365 Enterprise-abonnemanget via en tredjepartspartner måste du köpa ytterligare licenser via den partnern. Om den partner som du köpte prenumerationen av ingår i Microsofts kontaktnät kan du följa nedanstående anvisningar och ta reda på hur du kontaktar partnern ifråga.
+Om du har köpt Microsoft 365 för företag eller Office 365 Enterprise-abonnemang genom en tredjepartspartner måste du köpa ytterligare licenser via den partnern. Om den partner som du köpte prenumerationen av ingår i Microsofts kontaktnät kan du följa nedanstående anvisningar och ta reda på hur du kontaktar partnern ifråga.
   
 ::: moniker range="o365-worldwide"
 

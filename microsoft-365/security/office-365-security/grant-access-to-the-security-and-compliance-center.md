@@ -1,5 +1,5 @@
 ---
-title: Ge användare tillgång till Säkerhets- & Säkerhets- och efterlevnadscenter
+title: Ge användarna åtkomst till Säkerhets- och efterlevnadscenter
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Användare måste ha tilldelats behörigheter i Säkerhets- och efterlevnadscenter för Microsoft 365 & innan de kan hantera någon av dess säkerhets- eller efterlevnadsfunktioner.
+description: Användare måste ha tilldelats behörigheter i säkerhets- Microsoft 365 säkerhets- & innan de kan hantera dess säkerhets- eller efterlevnadsfunktioner.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51599929"
 ---
-# <a name="give-users-access-to-the-security--compliance-center"></a>Ge användare tillgång till Säkerhets- & Säkerhets- och efterlevnadscenter
+# <a name="give-users-access-to-the-security--compliance-center"></a>Ge användarna åtkomst till Säkerhets- och efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -44,9 +44,9 @@ Mer information om de olika behörigheter som du kan ge användare i Säkerhets-
 
 - Du måste vara global administratör eller medlem i rollgruppen Organisationsadministration i säkerhets- och efterlevnadscentret för & för att slutföra stegen i den här artikeln.
 
-- Rollgrupper för säkerhets- & efterlevnadscenter kan ha liknande namn som rollgrupperna i Exchange Online, men de är inte desamma.
+- Rollgrupper för säkerhets- & efterlevnadscenter kan ha liknande namn som rollgrupperna i Exchange Online, men de är inte likadana.
 
-- Medlemskap i rollgrupper delas inte mellan Exchange Online och Säkerhets- och & Efterlevnadscenter.
+- Medlemskap i rollgrupper delas inte mellan ett Exchange Online och Säkerhets- & Säkerhets- och efterlevnadscenter.
 
 - DAP-partner (Delegerad åtkomstbehörighet) med AOBO-behörighet (Administer On Behalf Of) har inte åtkomst & Säkerhets- och efterlevnadscenter.
 
@@ -64,7 +64,7 @@ Mer information om de olika behörigheter som du kan ge användare i Säkerhets-
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Använd Säkerhets- & Compliance Center PowerShell för att ge en annan användare tillgång till Säkerhets- & efterlevnadscenter
 
-1. [Anslut till Säkerhets- & Compliance Center PowerShell.](/powershell/exchange/connect-to-scc-powershell)
+1. [Ansluta till Säkerhets- och efterlevnadscenter i PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Använd följande syntax:
 

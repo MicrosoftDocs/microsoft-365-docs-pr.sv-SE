@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: Få regelbundna rapporter om hur personer i organisationen använder Microsoft 365-tjänster och utforska varje diagram för mer information.
-ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530976"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809005"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-rapporter i administrationscentret
 
@@ -33,7 +33,7 @@ Du ser enkelt hur personer i företaget använder Microsoft 365-tjänster. Du ka
   
 Rapporter är tillgängliga för de senaste 7 dagarna, 30 dagarna, 90 dagarna och 180 dagarna. Det finns inte direktdata för alla rapporteringsperioder. Rapporterna blir tillgängliga inom 48 timmar.
   
-I den här videon finns information om hur du kan använda rapporterna:
+## <a name="watch-act-on-a-usage-report-in-office-365"></a>Titta på: Agera efter en användningsrapport i Office 365
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
@@ -88,52 +88,30 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 - [Användning av Microsofts webbläsare](browser-usage-report.md) 
   
 - [E-postaktivitet](email-activity-ww.md)
-
-- [E-postaktivitet för US. Government](email-activity.md)
     
 - [Postlådeanvändning](mailbox-usage.md)
     
 - [Office-aktiveringar](microsoft-office-activations-ww.md)
 
-- [Office-aktiveringar för US Government](microsoft-office-activations.md)
-
 - [Aktiva användare](active-users-ww.md)
-
-- [Aktiva användare för US Government](active-users.md)
   
 - [Användning av e-postprogram](email-apps-usage-ww.md)
 
-- [Användning av e-postprogram för US Government](email-apps-usage.md)
-
 - [Formuläraktivitet](forms-activity-ww.md)
 
-- [Formuläraktivitet för US Government](forms-activity.md)
-
-- [Dynamics 365 Customer Voice-aktivitet](forms-pro-activity-ww.md)
-  
-- [Dynamics 365 Customer Voice-aktivitet för US Government](forms-pro-activity.md)
+- [Kundröstaktivitet i Dynamics 365](forms-pro-activity-ww.md)
 
 - [Microsoft 365-grupper](office-365-groups-ww.md)
-
-- [Microsoft 365-grupper för US Government](office-365-groups.md)
   
 - [Användaraktivitet i OneDrive för företag](onedrive-for-business-activity-ww.md)
 
-- [Användaraktivitet i OneDrive för företag för US Government](onedrive-for-business-activity.md)
-
 - [OneDrive för företag-användning](onedrive-for-business-usage-ww.md)
-
-- [OneDrive för företag-användning för US Government](onedrive-for-business-usage.md)
 
 - [Användning av Microsoft 365-appar](microsoft365-apps-usage-ww.md)
   
 - [SharePoint-webbplatsanvändning](sharepoint-site-usage-ww.md)
-
-- [SharePoint-webbplatsanvändning för US Government](sharepoint-site-usage.md)
   
 - [SharePoint-aktivitet](sharepoint-activity-ww.md)
-
-- [SharePoint-aktivitet för US Government](sharepoint-activity.md)
   
 - [Aktivitet i Skype för företag – Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -145,23 +123,13 @@ De här rapporterna är tillgängliga, beroende på din prenumeration.
 
 - [Yammer-aktivitet](yammer-activity-report-ww.md)
 
-- [Yammer-aktivitet för US Government](yammer-activity-report.md)
-
 - [Användning av Yammer-enheter](yammer-device-usage-report-ww.md)
-
-- [Yammer enhetsanvändning för USA: s regering](yammer-device-usage-report.md)
 
 - [Rapporten Aktivitet i Yammer-grupper](yammer-groups-activity-report-ww.md)
 
-- [Rapporten Aktivitet i Yammer-grupper för USA: s regering](yammer-groups-activity-report.md)
-
 - [Användaraktivitet för Microsoft Teams](microsoft-teams-user-activity-preview.md)
 
-- [Microsoft Teams användaraktivitet för USA: s regering](microsoft-teams-user-activity.md)
-
 - [Enhetsanvändning för Microsoft Teams](microsoft-teams-device-usage-preview.md)
-
-- [Microsoft Teams enhetsanvändning för USA: s regering](microsoft-teams-device-usage.md)
 
 ## <a name="how-to-view-licensing-information"></a>Så här visar du licensinformation
 
@@ -201,8 +169,6 @@ När du däremot markerar en viss dag (se nummer 3), upp till 28 dagar från dag
   
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Rapporter i Säkerhets- &amp; och efterlevnadscenter](../../compliance/reports-in-security-and-compliance.md) (artikel)
-
-[Användningsanalyser för Microsoft 365](../usage-analytics/usage-analytics.md) (artikel)
-
+[Rapporter i Säkerhets- &amp; och efterlevnadscenter](../../compliance/reports-in-security-and-compliance.md) (artikel)\
+[Användningsanalyser för Microsoft 365](../usage-analytics/usage-analytics.md) (artikel)\
 [Anpassa rapporterna i användningsanalysen för Microsoft 365](../usage-analytics/customize-reports.md) (artikel)
