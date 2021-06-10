@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs om hur du installerar Office-appar på iOS-enheter.
+description: Lär dig hur du installerar Office appar på iOS-enheter.
 ms.openlocfilehash: 0cb7cae3a4569d83a1b2e6b27ca42de2142f30e5
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,27 +27,27 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580564"
 ---
-# <a name="install-outlook-and-office-apps-on-ios-devices"></a><span data-ttu-id="90530-103">Installera Outlook och Office-appar på iOS-enheter</span><span class="sxs-lookup"><span data-stu-id="90530-103">Install Outlook and Office apps on iOS devices</span></span>
+# <a name="install-outlook-and-office-apps-on-ios-devices"></a><span data-ttu-id="88a24-103">Installera Outlook och Office appar på iOS-enheter</span><span class="sxs-lookup"><span data-stu-id="88a24-103">Install Outlook and Office apps on iOS devices</span></span>
 
-<span data-ttu-id="90530-104">När du&#39;konfigurerat Microsoft 365 Business Premium kan du installera Office-appar på din iPhone.</span><span class="sxs-lookup"><span data-stu-id="90530-104">Once you&#39;ve set up Microsoft 365 Business Premium, you can install Office apps on your iPhone.</span></span> <span data-ttu-id="90530-105">När du har installerat programmen uppmanas&#39;att skapa en PIN-kod för att skydda dina Office-data.</span><span class="sxs-lookup"><span data-stu-id="90530-105">After installing the apps, you&#39;ll be prompted to create a PIN to help secure your Office data.</span></span>
+<span data-ttu-id="88a24-104">När du&#39;konfigurerat Microsoft 365 Business Premium kan du installera Office på din iPhone.</span><span class="sxs-lookup"><span data-stu-id="88a24-104">Once you&#39;ve set up Microsoft 365 Business Premium, you can install Office apps on your iPhone.</span></span> <span data-ttu-id="88a24-105">När du har installerat apparna uppmanas&#39;att skapa en PIN-kod för att skydda dina Office data.</span><span class="sxs-lookup"><span data-stu-id="88a24-105">After installing the apps, you&#39;ll be prompted to create a PIN to help secure your Office data.</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n?autoplay=false]
 
-## <a name="try-it"></a><span data-ttu-id="90530-106">Prova!</span><span class="sxs-lookup"><span data-stu-id="90530-106">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="88a24-106">Prova själv!</span><span class="sxs-lookup"><span data-stu-id="88a24-106">Try it!</span></span>
 
-1. <span data-ttu-id="90530-107">Öppna App Store på din iPhone.</span><span class="sxs-lookup"><span data-stu-id="90530-107">On your iPhone, open the App Store.</span></span>
-2. <span data-ttu-id="90530-108">Välj  **Sök** , skriv  **Outlook** i sökfältet och välj det.</span><span class="sxs-lookup"><span data-stu-id="90530-108">Select  **Search** , type  **Outlook** in the search bar, and then choose it.</span></span>
-3. <span data-ttu-id="90530-109">Välj **Hämta**   >   **installation**.</span><span class="sxs-lookup"><span data-stu-id="90530-109">Choose  **Get**  >  **Install**.</span></span>
-4. <span data-ttu-id="90530-110">Ange ditt Apple ID-lösenord och välj **Logga in**  >   **Öppna.**</span><span class="sxs-lookup"><span data-stu-id="90530-110">Enter your Apple ID password, select **Sign in** >  **Open**.</span></span>
-5. <span data-ttu-id="90530-111">Ange din e-postadress till arbetet.</span><span class="sxs-lookup"><span data-stu-id="90530-111">Enter your work email address.</span></span>
-6. <span data-ttu-id="90530-112">Välj **Lägg till** konto , ange ditt lösenord och välj sedan Logga **in.**</span><span class="sxs-lookup"><span data-stu-id="90530-112">Select  **Add Account** , enter your password, and then choose  **Sign in**.</span></span>
-7. <span data-ttu-id="90530-113">(Valfritt), välj \*\*Låt oss göra det \*\* för att lägga till fler konton eller välj  **Kanske senare för**  att hoppa över det här steget.</span><span class="sxs-lookup"><span data-stu-id="90530-113">(Optional), Select  \*\*Let's Do It \*\* to add more accounts, or select  **Maybe Later**  to skip this step.</span></span>
-8. <span data-ttu-id="90530-114">Välj  **OK** för att starta om programmet så att Microsoft 365 Business kan skydda dina Outlook-data.</span><span class="sxs-lookup"><span data-stu-id="90530-114">Select  **OK** to restart the app so that Microsoft 365 Business  can protect your Outlook data.</span></span>
-9. <span data-ttu-id="90530-115">Öppna Outlook igen så visas ett bekräftelsemeddelande.</span><span class="sxs-lookup"><span data-stu-id="90530-115">Open Outlook again, and a confirmation message appears.</span></span> <span data-ttu-id="90530-116">Välj **OK.**</span><span class="sxs-lookup"><span data-stu-id="90530-116">Select  **OK**.</span></span>
-10. <span data-ttu-id="90530-117">Skapa en PIN-kod för Outlook och andra Office-program och bekräfta den.</span><span class="sxs-lookup"><span data-stu-id="90530-117">Create a PIN for Outlook and other Office apps, and confirm it.</span></span> <span data-ttu-id="90530-118">Från och med nu används den här PIN-koden för att skydda alla data i Office-appen.</span><span class="sxs-lookup"><span data-stu-id="90530-118">From now on, this PIN will be used to secure all Office app data.</span></span>
-11. <span data-ttu-id="90530-119">Välj  **Aktivera för att aktivera**  e-postaviseringar.</span><span class="sxs-lookup"><span data-stu-id="90530-119">Select  **Turn On**  to enable email notifications.</span></span>
-12. <span data-ttu-id="90530-120">Välj  **Tillåt för** att aktivera push-meddelanden.</span><span class="sxs-lookup"><span data-stu-id="90530-120">Select  **Allow** to enable push notifications.</span></span>
+1. <span data-ttu-id="88a24-107">Öppna App Store iPhone på din dator.</span><span class="sxs-lookup"><span data-stu-id="88a24-107">On your iPhone, open the App Store.</span></span>
+2. <span data-ttu-id="88a24-108">Välj **Sök** , **skriv Outlook** sökfältet och välj det.</span><span class="sxs-lookup"><span data-stu-id="88a24-108">Select  **Search** , type  **Outlook** in the search bar, and then choose it.</span></span>
+3. <span data-ttu-id="88a24-109">Välj **Hämta**   >   **installation**.</span><span class="sxs-lookup"><span data-stu-id="88a24-109">Choose  **Get**  >  **Install**.</span></span>
+4. <span data-ttu-id="88a24-110">Ange ditt Apple ID-lösenord och välj **Logga in**  >   **Öppna.**</span><span class="sxs-lookup"><span data-stu-id="88a24-110">Enter your Apple ID password, select **Sign in** >  **Open**.</span></span>
+5. <span data-ttu-id="88a24-111">Ange din e-postadress till arbetet.</span><span class="sxs-lookup"><span data-stu-id="88a24-111">Enter your work email address.</span></span>
+6. <span data-ttu-id="88a24-112">Välj **Lägg till** konto , ange ditt lösenord och välj sedan Logga **in.**</span><span class="sxs-lookup"><span data-stu-id="88a24-112">Select  **Add Account** , enter your password, and then choose  **Sign in**.</span></span>
+7. <span data-ttu-id="88a24-113">(Valfritt), välj \*\*Låt oss göra det \*\* för att lägga till fler konton eller välj  **Kanske senare för**  att hoppa över det här steget.</span><span class="sxs-lookup"><span data-stu-id="88a24-113">(Optional), Select  \*\*Let's Do It \*\* to add more accounts, or select  **Maybe Later**  to skip this step.</span></span>
+8. <span data-ttu-id="88a24-114">Välj **OK** för att starta om programmet så Microsoft 365 Business skydda dina Outlook data.</span><span class="sxs-lookup"><span data-stu-id="88a24-114">Select  **OK** to restart the app so that Microsoft 365 Business  can protect your Outlook data.</span></span>
+9. <span data-ttu-id="88a24-115">Öppna Outlook igen så visas ett bekräftelsemeddelande.</span><span class="sxs-lookup"><span data-stu-id="88a24-115">Open Outlook again, and a confirmation message appears.</span></span> <span data-ttu-id="88a24-116">Välj **OK.**</span><span class="sxs-lookup"><span data-stu-id="88a24-116">Select  **OK**.</span></span>
+10. <span data-ttu-id="88a24-117">Skapa en PIN-Outlook och Office pin-kod och bekräfta den.</span><span class="sxs-lookup"><span data-stu-id="88a24-117">Create a PIN for Outlook and other Office apps, and confirm it.</span></span> <span data-ttu-id="88a24-118">Från och med nu kommer den här PIN-koden att användas för att skydda Office-appen data.</span><span class="sxs-lookup"><span data-stu-id="88a24-118">From now on, this PIN will be used to secure all Office app data.</span></span>
+11. <span data-ttu-id="88a24-119">Välj  **Aktivera för att aktivera**  e-postaviseringar.</span><span class="sxs-lookup"><span data-stu-id="88a24-119">Select  **Turn On**  to enable email notifications.</span></span>
+12. <span data-ttu-id="88a24-120">Välj  **Tillåt för** att aktivera push-meddelanden.</span><span class="sxs-lookup"><span data-stu-id="88a24-120">Select  **Allow** to enable push notifications.</span></span>
 
-<span data-ttu-id="90530-121">Nu kan du använda Outlook på din iPhone för att kontrollera din e-post, kalender och kontakter.</span><span class="sxs-lookup"><span data-stu-id="90530-121">You can now use Outlook on your iPhone to check your email, calendar, and contacts.</span></span>
+<span data-ttu-id="88a24-121">Nu kan du använda Outlook på din iPhone för att kontrollera din e-post, kalender och kontakter.</span><span class="sxs-lookup"><span data-stu-id="88a24-121">You can now use Outlook on your iPhone to check your email, calendar, and contacts.</span></span>
 
-<span data-ttu-id="90530-122">Du kan installera resten av Office-apparna på samma sätt och data i apparna skyddas av Microsoft 365 Business Premium.</span><span class="sxs-lookup"><span data-stu-id="90530-122">You can install the rest of the Office apps in the same way and the data in those apps will be protected by Microsoft 365 Business Premium.</span></span>
+<span data-ttu-id="88a24-122">Du kan installera resten av Office på samma sätt och data i apparna skyddas av Microsoft 365 Business Premium.</span><span class="sxs-lookup"><span data-stu-id="88a24-122">You can install the rest of the Office apps in the same way and the data in those apps will be protected by Microsoft 365 Business Premium.</span></span>
