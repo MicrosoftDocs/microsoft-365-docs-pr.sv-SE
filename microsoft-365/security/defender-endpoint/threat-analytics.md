@@ -99,13 +99,13 @@ Gå till avsnittet **analysrapport för** att läsa igenom den detaljerade exper
 Granska listan **över specifika åtgärdsbara** rekommendationer i avsnittet Minskningar som kan hjälpa dig att öka organisationens motståndskraft mot risken. Listan över spårade åtgärder omfattar:
 
 - **Säkerhetsuppdateringar**– distribution av säkerhetsuppdateringar eller korrigeringar för säkerhetsproblem
-- **Inställningar för Microsoft Defender Antivirus**
+- **Microsoft Defender Antivirus inställningar**
   - Säkerhetsintelligensversion
-  - Moln levererat skydd  
+  - Molnbaserat skydd  
   - Potentiellt oönskat programskydd (PUA)
   - Realtidsskydd
  
-I information om åtgärder i det här avsnittet ingår data från hantering av hot och [risker,](next-gen-threat-and-vuln-mgt.md)som också innehåller detaljerad information om åtgärder från olika länkar i rapporten.
+I den här informationen ingår data från [Hantering av hot och säkerhetsrisker](next-gen-threat-and-vuln-mgt.md), som också innehåller detaljerad information om åtgärder från olika länkar i rapporten.
 
 ![Bild av avsnittet om åtgärder i en rapport om hotanalys ](images/ta-mitigations.png)
  _i avsnittet Åtgärder i en rapport om hotanalys_
@@ -117,7 +117,7 @@ När du använder rapporterna ska du tänka på följande:
 - Diagram återspeglar endast minskningar som spåras. Kontrollera rapportens översikt för ytterligare åtgärder som inte visas i diagrammen.
 - Minskningar garanterar inte fullständig motståndskraft. Tillhandahållna minskningar återspeglar bästa möjliga åtgärder som krävs för att förbättra motståndskraften.
 - Enheter räknas som "inte tillgängliga" om de inte har överfört data till tjänsten.
-- Antivirusrelaterad statistik baseras på inställningarna för Microsoft Defender Antivirus. Enheter med antiviruslösningar från tredje part kan visas som "exponerade".
+- Antivirusrelaterad statistik baseras på de Microsoft Defender Antivirus inställningarna. Enheter med antiviruslösningar från tredje part kan visas som "exponerade".
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Hitta hot proaktivt med avancerad sökning](advanced-hunting-overview.md) 

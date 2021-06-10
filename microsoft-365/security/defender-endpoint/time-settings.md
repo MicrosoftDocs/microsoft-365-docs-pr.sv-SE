@@ -1,6 +1,6 @@
 ---
-title: Tidszonsinställningar i Microsoft Defender Säkerhetscenter
-description: Använd informationen här om du vill konfigurera tidszonsinställningarna för säkerhetscentret i Microsoft Defender och visa licensinformation.
+title: Microsoft Defender Säkerhetscenter tidszonsinställningar
+description: Använd informationen här för att konfigurera Microsoft Defender Säkerhetscenter inställningar för tidszon och visa licensinformation.
 keywords: inställningar, Microsoft Defender, hotinformation för cybersäkerhet, Microsoft Defender för slutpunkt, tidszon, utc, lokal tid, licens
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932637"
 ---
-# <a name="microsoft-defender-security-center-time-zone-settings"></a>Tidszonsinställningar i Microsoft Defender Säkerhetscenter
+# <a name="microsoft-defender-security-center-time-zone-settings"></a>Microsoft Defender Säkerhetscenter tidszonsinställningar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -73,7 +73,7 @@ Om du vill använda olika datumformat för Microsoft Defender för Endpoint anv�
 
 **Internet Explorer (IE) och Microsoft Edge**
 
-IE och Microsoft Edge använder **inställningarna för Region** som konfigurerats med alternativen **Klocka, språk** och region på Kontrollpanelen. 
+IE Microsoft Edge du använda **inställningarna** för Region som konfigurerats med alternativen **Klocka,** språk och region på Kontrollpanelen. 
 
 
 #### <a name="known-issues-with-regional-formats"></a>Kända problem med nationella format

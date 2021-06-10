@@ -1,6 +1,6 @@
 ---
 title: Vanliga Microsoft 365 Defender REST API-felkoder
-description: Läs mer om de vanliga Microsoft 365 Defender REST API-felkoderna
+description: Läs mer om de vanliga Microsoft 365 Defender REST API-felkoder
 keywords: api, fel, koder, vanliga fel, Microsoft 365 Defender, api-felkoder
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -38,7 +38,7 @@ ms.locfileid: "51932887"
 > [!IMPORTANT]
 > En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
-Felkoder kan returneras av en åtgärd på någon av Microsoft 365 Defender-API:erna. Alla felsvar kommer att innehålla ett felmeddelande, som kan hjälpa dig att lösa problemet. Kolumnen med felmeddelanden i tabellavsnittet innehåller några exempelmeddelanden. Innehållet i faktiska meddelanden varierar beroende på de faktorer som utlöste svaret. Variabelt innehåll anges i tabellen med vinkelparenteser.
+Felkoder kan returneras av en åtgärd på någon av de Microsoft 365 Defender-API:er. Alla felsvar kommer att innehålla ett felmeddelande, som kan hjälpa dig att lösa problemet. Kolumnen med felmeddelanden i tabellavsnittet innehåller några exempelmeddelanden. Innehållet i faktiska meddelanden varierar beroende på de faktorer som utlöste svaret. Variabelt innehåll anges i tabellen med vinkelparenteser.
 
 ## <a name="error-codes"></a>Felkoder
 
@@ -99,7 +99,7 @@ Varje felsvar innehåller en unik ID-parameter för spårning. Egenskapsnamnet f
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Översikt över Microsoft 365 Defender-API:er](api-overview.md)
+- [Microsoft 365 Översikt över Defender-API:er](api-overview.md)
 - [Microsoft 365 Defender API: er som stöds](api-supported.md)
-- [Åtkomst till Microsoft 365 Defender-API:er](api-access.md)
+- [Komma åt Microsoft 365 Defender-API:er](api-access.md)
 - [Läs mer om API-begränsningar och licensiering](api-terms.md)

@@ -1,5 +1,5 @@
 ---
-title: Så här konfigurerar du lokal Skype för företag för användning av modern hybridautentisering
+title: Konfigurera en Skype för företag lokalt för att använda modern hybridautentisering
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -15,7 +15,7 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Läs om hur du konfigurerar Skype för företag lokalt för att använda modern hybridautentisering (HMA), som ger dig säkrare användarautentisering och auktorisering.
+description: Lär dig hur du Skype för företag en lokal konfiguration för att använda HMA (Hybrid Modern Authentication), som ger dig säkrare användarautentisering och auktorisering.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: f3177bafb6eff27053dca61ec576666cae4a97bb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -24,13 +24,13 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50911156"
 ---
-# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Så här konfigurerar du lokal Skype för företag för användning av modern hybridautentisering
+# <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Konfigurera en Skype för företag lokalt för att använda modern hybridautentisering
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Modern autentisering är en metod för identitetshantering som ger säkrare användarautentisering och auktorisering. Den är tillgänglig för Skype för företag – server lokalt och Lokal Exchange-server samt Skype för företag-hybrider med delad domän.
+Modern autentisering är en metod för identitetshantering som ger säkrare användarautentisering och auktorisering, som är tillgänglig för Skype för företag-server lokalt och Exchange-server lokalt samt för Skype för företag-hybrider med delad domän.
   
- **Viktigt** Vill du veta mer om modern autentisering (MA) och varför du kanske vill använda den i ditt företag eller din organisation? Titta [i det här dokumentet](hybrid-modern-auth-overview.md) för en översikt. Om du behöver veta vilka Topologier i Skype för företag som stöds med ma finns det information här!
+ **Viktigt** Vill du veta mer om modern autentisering (MA) och varför du kanske vill använda den i ditt företag eller din organisation? Titta [i det här dokumentet](hybrid-modern-auth-overview.md) för en översikt. Om du behöver veta vilka Skype för företag stöds med MA, finns det information här!
   
  **Innan vi börjar** använder jag följande termer:
   
@@ -38,13 +38,13 @@ Modern autentisering är en metod för identitetshantering som ger säkrare anv�
 
 - Modern hybridautentisering (HMA)
 
-- Lokal Exchange (EXCH)
+- Exchange lokalt (EXCH)
 
 - Exchange Online (EXO)
 
 - Skype för företag lokalt (SFB)
 
-- Skype för företag – Online (SFBO)
+- Skype för företag Online (SFBO)
 
 Om en bild i den här artikeln har ett objekt som är nedtonat  eller nedtonat, vilket innebär att det element som visas med grått inte ingår i MA-specifik konfiguration.
   
@@ -54,7 +54,7 @@ Den här sammanfattningen bryter ned processen i steg som annars skulle kunna g�
   
 1. Kontrollera först att du uppfyller alla krav.
 
-1. Eftersom det finns många krav som är gemensamma för både Skype för företag och Exchange kan du läsa **översiktsartikeln** för [din checklista för tidigare frågor.](hybrid-modern-auth-overview.md) Gör detta  *innan*  du påbörjar något av stegen i den här artikeln.
+1. Eftersom det finns många förutsättningar för både Skype för företag och Exchange finns mer information i **översiktsartikeln** [för den förincheckade checklistan.](hybrid-modern-auth-overview.md) Gör detta  *innan*  du påbörjar något av stegen i den här artikeln.
 
 1. Samla in HMA-specifik information som du behöver i en fil eller OneNote.
 
@@ -62,17 +62,17 @@ Den här sammanfattningen bryter ned processen i steg som annars skulle kunna g�
 
 1. Aktivera modern autentisering för SFBO (om det inte redan är aktiverat).
 
-1. Aktivera modern hybridautentisering för Exchange lokalt.
+1. Aktivera modern hybridautentisering för Exchange autentisering lokalt.
 
-1. Aktivera modern hybridautentisering för skype för företag lokalt.
+1. Aktivera modern hybridautentisering för Skype för företag-autentisering lokalt.
 
 Dessa steg aktiverar MA för SFB, SFBO, EXCH och EXO – det vill säga alla produkter som kan ingå i HMA-konfigurationen av SFB och SFBO (inklusive beroenden på EXCH/EXO). Med andra ord, om användarna finns i/har postlådor skapade i någon del av Hybrid (EXO + SFBO, EXO + SFB, EXCH + SFBO eller EXCH + SFB), kommer din färdiga produkt att se ut så här:
   
-![En mixed 6 Skype för företag HMA-topologi har MA på i alla fyra möjliga platser.](../media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
+![HMA-topologin Skype mixed 6-Skype har MA på på alla fyra möjliga platser.](../media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
 Som du ser finns det fyra olika platser att aktivera MA! För bästa användarupplevelse rekommenderar vi att du aktiverar MA på alla fyra av dessa platser. Om du inte kan aktivera MA på alla de här platserna justerar du stegen så att du aktiverar MA endast på de platser som krävs för din miljö.
   
-Se avsnittet [Support för Skype för företag med MA för](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported) topologier som stöds.
+Se avsnittet [Support för mer Skype för företag med MA för](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported) topologier som stöds.
   
  **Viktigt** Kontrollera att du har uppfyllt alla krav innan du börjar. Du hittar den informationen i Översikt över [och förutsättningar för modern hybridautentisering.](hybrid-modern-auth-overview.md)
   
@@ -82,15 +82,15 @@ När du har dubbelkollat att [](hybrid-modern-auth-overview.md) du uppfyller kra
   
 - **SIP-/SMTP-domän**
 
-  - Exempel. contoso.com (är extern från Office 365)
+  - Exempel. contoso.com (är extern Office 365)
 
 - **Klientorganisations-ID**
 
-  - DET GUID som representerar din Office 365-klientorganisation (vid inloggningen contoso.onmicrosoft.com).
+  - Det GUID som representerar Office 365 klientorganisation (vid inloggningen contoso.onmicrosoft.com).
 
 - **SFB 2015 CU5 WEBBTJÄNST-URL:er**
 
-Du behöver interna och externa webbtjänst-URL:er för alla SfB 2015-pooler distribuerade. Hämta dessa genom att köra följande från Skype för företag Management Shell:
+Du behöver interna och externa webbtjänst-URL:er för alla SfB 2015-pooler distribuerade. Om du vill hämta dessa kör du följande Skype för företag Management Shell:
   
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -100,21 +100,21 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
 
 - Exempel. Externt: https://lyncwebext01.contoso.com
 
-Om du använder en Standard Edition-server är den interna URL:en tom. I det här fallet ska du använda poolens fqdn för den interna URL:en.
+Om du använder en e Standard Edition server är den interna URL:en tom. I det här fallet ska du använda poolens fqdn för den interna URL:en.
   
 ## <a name="turn-on-modern-authentication-for-exo"></a>Aktivera modern autentisering för EXO
 
-Följ anvisningarna här: [Exchange Online: Så här aktiverar du klientorganisationen för modern autentisering.](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)
+Följ anvisningarna här: [Exchange Online: Aktivera klientorganisationen för modern autentisering.](https://social.technet.microsoft.com/wiki/contents/articles/32711.exchange-online-how-to-enable-your-tenant-for-modern-authentication.aspx)
   
 ## <a name="turn-on-modern-authentication-for-sfbo"></a>Aktivera modern autentisering för SFBO
 
-Följ anvisningarna här: [Skype för företag – Online: Aktivera modern autentisering för klientorganisationen.](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)
+Följ anvisningarna här: [Skype för företag Online: Aktivera klientorganisationen för modern autentisering](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
   
-## <a name="turn-on-hybrid-modern-authentication-for-exchange-on-premises"></a>Aktivera modern hybridautentisering för Exchange lokalt
+## <a name="turn-on-hybrid-modern-authentication-for-exchange-on-premises"></a>Aktivera modern hybridautentisering för Exchange på en lokal miljö
 
-Följ anvisningarna här: [Konfigurera lokal Exchange Server för användning av modern hybridautentisering.](configure-exchange-server-for-hybrid-modern-authentication.md)
+Följ anvisningarna här: [Konfigurera Exchange Server att använda modern hybridautentisering](configure-exchange-server-for-hybrid-modern-authentication.md).
   
-## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>Aktivera modern hybridautentisering för Skype för företag lokalt
+## <a name="turn-on-hybrid-modern-authentication-for-skype-for-business-on-premises"></a>Aktivera modern hybridautentisering för Skype för företag på en lokal miljö
 
 ### <a name="add-on-premises-web-service-urls-as-spns-in-azure-active-directory"></a>Lägga till lokala webbtjänst-URL:er som SPN i Azure Active Directory
 
@@ -122,11 +122,11 @@ Nu måste du köra kommandon för att lägga till URL-adresser (som samlats in t
   
  **Obs!** Service principal names (SPNs) identifierar webbtjänster och associerar dem med ett säkerhetshuvudnamn (t.ex. ett kontonamn eller en grupp) så att tjänsten kan agera för en behörig användares räkning. Klienter som autentiserar på en server använder information som finns i SPNs.
   
-1. Börja med att ansluta till Azure Active Directory (Azure AD) med [de här instruktionerna.](/powershell/azure/active-directory/overview?view=azureadps-1.0)
+1. Börja med att ansluta Azure Active Directory (Azure AD) med [de här instruktionerna.](/powershell/azure/active-directory/overview?view=azureadps-1.0)
 
 2. Kör det här kommandot lokalt för att få en lista över SFB-webbtjänstwebbwebbadresser.
 
-   Observera att AppPrincipalId börjar med `00000004` . Detta motsvarar Skype för företag – Online.
+   Observera att AppPrincipalId börjar med `00000004` . Det här motsvarar Skype för företag Online.
 
    Notera (och skärmbilder för senare jämförelser) utdata för det här kommandot, som innehåller en SE- och WS-URL, men oftast består av SPN som börjar med `00000004-0000-0ff1-ce00-000000000000/` .
 
@@ -157,7 +157,7 @@ New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common
 
 ### <a name="enable-hybrid-modern-authentication"></a>Aktivera modern hybridautentisering
 
-Det här är det steg som faktiskt aktiverar ma. Alla tidigare steg kan köras i förväg utan att ändra klientautentiseringsflödet. När du är redo att ändra autentiseringsflödet kör du det här kommandot i Skype för företag Management Shell.
+Det här är det steg som faktiskt aktiverar ma. Alla tidigare steg kan köras i förväg utan att ändra klientautentiseringsflödet. När du är redo att ändra autentiseringsflödet kör du det här kommandot Skype för företag Management Shell.
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
@@ -167,16 +167,16 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 När du har aktiverat HMA används det nya autentiseringsflödet för klientens nästa inloggning. Observera att endast aktivera HMA utlöser inte en nyauthentication för någon klient. Klienterna återauthenticate baserat på livslängden för autentiseringstoken och/eller certifikat de har.
   
-Om du vill testa att HMA fungerar efter att du har aktiverat det loggar du ut från en TEST SFB Windows-klient och klickar på "ta bort mina autentiseringsuppgifter". Logga in igen. Klienten ska nu använda flödet modern a auth och din inloggning kommer nu att innehålla en **Office 365-uppmaning** om ett arbets- eller skolkonto, som visas direkt innan klienten kontaktar servern och loggar in dig.
+Om du vill testa att HMA fungerar efter att du har aktiverat det loggar du ut från en test-SFB Windows-klient och klickar på "ta bort mina autentiseringsuppgifter". Logga in igen. Klienten ska nu använda Flödet för modern autentisering. Din inloggning innehåller nu en **Office 365-uppmaning** om ett arbets- eller skolkonto, som visas direkt innan klienten kontaktar servern och loggar in dig.
   
-Du bör också kontrollera "Konfigurationsinformation" för Skype för företag-klienter för en OAuth-myndighet. Om du vill göra detta på din klientdator håller du ned CTRL-tangenten samtidigt som du högerklickar på Skype för företag-ikonen i meddelandefältet i Windows. Klicka **på Konfigurationsinformation** i menyn som visas. I fönstret Konfigurationsinformation för Skype för företag som visas på skrivbordet letar du efter följande:
+Du bör också kontrollera "Configuration Information" (konfigurationsinformation) Skype för företag klienter efter en OAuth-behörighet (OAuth Authority). Det gör du på klientdatorn genom att hålla ned CTRL-tangenten samtidigt som du högerklickar på Skype för företag-ikonen i Windows meddelandefältet. Klicka **på Konfigurationsinformation** i menyn som visas. I fönstret Skype för företag Konfigurationsinformation som visas på skrivbordet letar du efter följande:
   
-![Konfigurationsinformationen för en Skype för företag-klient med modern autentisering visar en URL till Lync och EWS OAUTH Authority för https://login.windows.net/common/oauth2/authorize .](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+![Konfigurationsinformationen för en klient Skype för företag modern autentisering visar URL-adressen till Lync och EWS OAUTH Authority för https://login.windows.net/common/oauth2/authorize .](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-Du bör också hålla ned CTRL-tangenten samtidigt som du högerklickar på ikonen för Outlook-klienten (även i systemfältet Windows-meddelanden) och klickar på "Anslutningsstatus". Leta efter klientens SMTP-adress mot autentiseringstypen "Bearer", som representerar den bearer-token som används \* i OAuth.
+Du bör också hålla ned CTRL-tangenten samtidigt som du högerklickar på ikonen för Outlook-klienten (även i meddelandefältet i Windows) och klickar på "Anslutningsstatus". Leta efter klientens SMTP-adress mot autentiseringstypen "Bearer", som representerar den bearer-token som används \* i OAuth.
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
 [Länka tillbaka till översikten över Modern autentisering.](hybrid-modern-auth-overview.md)
   
-Behöver du veta hur du använder modern autentisering (ADAL) för dina Skype för företag-klienter? Vi har steg [här](./hybrid-modern-auth-overview.md).
+Behöver du veta hur du använder modern autentisering (ADAL) för dina Skype för företag klienter? Vi har steg [här](./hybrid-modern-auth-overview.md).

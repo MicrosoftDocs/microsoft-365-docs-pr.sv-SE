@@ -123,7 +123,7 @@ Läs mer i den här artikeln: [Jag har glömt användarnamnet eller lösenordet 
 ## <a name="related-content"></a>Relaterat innehåll
   
 [Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)\
-[Återställ lösenord](../add-users/reset-passwords.md) (artikel)\
-[Ange att en enskild användares lösenord aldrig ska upphöra](set-password-to-never-expire.md) (artikel)\
+[Återställa lösenord](../add-users/reset-passwords.md) (artikel)\
+[Ställa in en enskild användares lösenord för att aldrig ska förfalla](set-password-to-never-expire.md)(artikel)\
 [Ange förfalloprincip för lösenord för din organisation](../manage/set-password-expiration-policy.md) (artikel)\
 [Microsoft 365 om utbildningsvideor för företag](../../business-video/index.yml) (länksida)

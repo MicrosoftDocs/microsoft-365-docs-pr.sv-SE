@@ -28,7 +28,7 @@ Du kan ändra [enhetsprofiler som tilldelats](../service-description/profiles.md
 
 Den enhetsprofil du väljer används för alla enheter du väljer i det första steget. Om du vill flytta olika enheter till olika profiler måste du upprepa proceduren för varje enhetsprofil. 
 
-1. I Microsoft Endpoint Manager väljer du **Enheter**   i det vänstra fönstret. I avsnittet **Microsoft Managed Desktop** på menyn väljer du  **Enheter**.  
+1. I Microsoft Endpoint Manager väljer du **Enheter**   i det vänstra fönstret. I **Microsoft Hanterat skrivbord** delen av menyn väljer du  **Enheter**.  
 2. Markera kryssrutorna för de enheter som du vill ändra. 
 3. Välj **Ändra enhetsprofil**. ett flyg in öppnas.
 4. Använd den nedrullningsmenyn för att välja den nya enhetsprofilen.

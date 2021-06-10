@@ -1,5 +1,5 @@
 ---
-title: Får du ett felmeddelande om att ett konto är inaktiverat i Outlook på webben?
+title: Får du ett felmeddelande om att ett konto är inaktiverat Outlook på webben?
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,8 +24,8 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914948"
 ---
-# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Felmeddelande om att ett konto är inaktiverat i Outlook på webben
+# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Felmeddelande om att ett konto är inaktiverat Outlook på webben
 
 Om du får  felmeddelandet Ditt konto har inaktiverats med när du försöker öppna Outlook på webben (tidigare kallat Outlook Web App) kan administratören ha inaktiverat din åtkomst till `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` Outlook på webben.
 
-Administratören kan åtgärda felet genom att följa stegen i Aktivera [eller inaktivera Outlook Web App för en postlåda.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
+Administratören kan åtgärda det här felet genom att följa stegen i avsnittet Aktivera [eller inaktivera Outlook Web App för en postlåda.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)

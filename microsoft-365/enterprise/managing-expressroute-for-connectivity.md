@@ -1,5 +1,5 @@
 ---
-title: Hantera ExpressRoute för Office 365-anslutningar
+title: Hantera ExpressRoute för Office 365 anslutning
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -26,12 +26,12 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50916674"
 ---
-# <a name="managing-expressroute-for-office-365-connectivity"></a>Hantera ExpressRoute för Office 365-anslutningar
+# <a name="managing-expressroute-for-office-365-connectivity"></a>Hantera ExpressRoute för Office 365 anslutning
 
-ExpressRoute för Office 365 erbjuder en alternativ routningssökväg för att nå många Office 365-tjänster utan att all trafik måste gå till Internet. Även om Internetanslutningen till Office 365 fortfarande behövs gör de specifika vägar som Microsoft annonserar via BGP till ditt nätverk att den direkta ExpressRoute-kretsen prioriteras såvida det inte finns andra konfigurationer i nätverket. De tre vanligaste områdena du kanske vill konfigurera för att hantera den här dirigeringen inkluderar prefixfiltrering, säkerhet och efterlevnad.
+ExpressRoute för Office 365 erbjuder en alternativ routningssökväg för att nå många Office 365-tjänster utan att all trafik måste gå ut till Internet. Även om Internetanslutningen till Office 365 fortfarande behövs gör de specifika vägar som Microsoft annonserar via BGP till ditt nätverk att den direkta ExpressRoute-kretsen prioriteras såvida det inte finns andra konfigurationer i nätverket. De tre vanligaste områdena du kanske vill konfigurera för att hantera den här dirigeringen inkluderar prefixfiltrering, säkerhet och efterlevnad.
   
 > [!NOTE]
-> Microsoft har ändrat hur routningsdomänen för Microsoft-peering granskas för Azure ExpressRoute. Från och med den 31 juli 2017 kan alla Azure ExpressRoute-kunder aktivera Microsoft-peering direkt via Azure-administratörskonsolen eller via PowerShell. När microsoft-peering har installerats kan alla kunder skapa routefilter för att ta emot BGP-routeannonsering för Dynamics 365 Customer Engagement-appar (tidigare kallat CRM Online). Kunder som behöver Azure ExpressRoute för Office 365 måste granskas av Microsoft innan de kan skapa routefilter för Office 365. Kontakta ditt Microsoft-kontoteam om du vill veta mer om hur du begär en granskning för att aktivera Office 365 ExpressRoute. Obehöriga prenumerationer som försöker skapa routefilter för Office 365 får [ett felmeddelande](https://support.microsoft.com/kb/3181709)
+> Microsoft har ändrat hur routningsdomänen för Microsoft-peering granskas för Azure ExpressRoute. Från och med den 31 juli 2017 kan alla Azure ExpressRoute-kunder aktivera Microsoft-peering direkt via Azure-administratörskonsolen eller via PowerShell. När microsoft-peering har installerats kan alla kunder skapa routefilter för att ta emot BGP-routeannonsering för Dynamics 365 Customer Engagement-appar (tidigare kallat CRM Online). Kunder som behöver Azure ExpressRoute för Office 365 måste granskas av Microsoft innan de kan skapa routefilter för Office 365. Kontakta ditt Microsoft-kontoteam om du vill veta mer om hur du begär en granskning för att Office 365 ExpressRoute. Obehöriga prenumerationer som försöker skapa routefilter för Office 365 får [ett felmeddelande](https://support.microsoft.com/kb/3181709)
   
 ## <a name="prefix-filtering"></a>Prefixfiltrering
 
@@ -39,36 +39,36 @@ Microsoft rekommenderar att kunderna accepterar alla BGP-vägar som de annonsera
   
 Om du kräver ytterligare validering av vägägarskapet i ExpressRoutes offentliga peering kan du kontrollera de annonserade rutter mot listan över alla IPv4- och IPv6-IP-prefix som representerar Microsofts offentliga [IP-intervall.](https://www.microsoft.com/download/details.aspx?id=53602) Intervallen omfattar hela Microsofts adressutrymme och ändras så sällan som möjligt, vilket ger en tillförlitlig uppsättning intervaller att filtrera mot som även ger ytterligare skydd till kunder som är oroliga att vägar som inte tillhör Microsoft ska läcka in i deras miljö. Om det sker en ändring görs den den 1:a i månaden och  versionsnumret i informationsavsnittet på sidan ändras varje gång filen uppdateras.
   
-Det finns ett antal olika skäl till att undvika att använda URL:er och IP-adressintervall för [Office 365 för](./urls-and-ip-address-ranges.md) att generera prefixfilterlistor. Till exempel:
+Det finns ett antal olika skäl till att undvika att använda [URL Office 365 och IP-adressintervall](./urls-and-ip-address-ranges.md) för att generera prefixfilterlistor. Till exempel:
   
-- IP-prefixen i Office 365 genomgår regelbundet många ändringar.
+- Ip Office 365 genomgår regelbundet många ändringar.
 
-- URL:er och IP-adressintervall för Office 365 är utformade för att hantera listor över tillåtna brandväggar och proxyinfrastruktur, inte routning.
+- Url Office 365-adresser och IP-adressintervall är utformade för att hantera listor över tillåtna brandväggar och Proxyinfrastruktur, inte routning.
 
-- URL:er och IP-adressintervall för Office 365 omfattar inte andra Microsoft-tjänster som kanske omfattas av dina ExpressRoute-anslutningar.
+- I Office 365 URL:er och IP-adressintervall omfattar inte andra Microsoft-tjänster som kan finnas i omfattningen för dina ExpressRoute-anslutningar.
 
 |**Alternativ**|**Komplexitet**|**Ändra kontroll**|
 |:-----|:-----|:-----|
 |Acceptera alla Microsoft-vägar  <br/> |**Låg:** Kunden använder sig av Microsoft-kontroller för att säkerställa att alla vägar har rätt ägare.  <br/> |Inga  <br/> |
 |Filtrera supernät som ägs av Microsoft  <br/> |**Medel:** Kunden implementerar sammanfattningar av prefixfilterlistor så att endast vägar som ägs av Microsoft tillåts.  <br/> |Kunderna måste säkerställa att de oregelade uppdateringarna återspeglas i filtren.  <br/> |
-|Filtrera IP-intervall för Office 365  <br/> [!CAUTION] Not-Recommended |**Hög:** Kunden filtrerar vägar baserat på definierade IP-prefix för Office 365.  <br/> |Kunderna måste implementera en robust ändringshanteringsprocess för månadsuppdateringarna.  <br/> [!CAUTION] Den här lösningen kräver betydande gång på gång-ändringar. Ändringar som inte implementeras i tid kommer troligtvis att resultera i driftavbrott för tjänsten.   |
+|Filtrera Office 365 IP-intervall  <br/> [!CAUTION] Not-Recommended |**Hög:** Kunden filtrerar vägar baserat på definierade Office 365 IP-prefix.  <br/> |Kunderna måste implementera en robust ändringshanteringsprocess för månadsuppdateringarna.  <br/> [!CAUTION] Den här lösningen kräver betydande gång på gång-ändringar. Ändringar som inte implementeras i tid kommer troligtvis att resultera i driftavbrott för tjänsten.   |
 
-Anslutning till Office 365 med hjälp av Azure ExpressRoute baseras på BGP-annonsering av specifika IP-undernät som representerar nätverk där Office 365-slutpunkter distribueras. På grund av den globala naturen hos Office 365 och antalet tjänster som utgör Office 365 behöver kunder ofta hantera de annonseringar som de accepterar på sitt nätverk. Om du bekymrar dig över antalet prefix som annonseras i miljön kan du med [BGP-communityfunktionen](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) filtrera annonserna till en viss uppsättning Office 365-tjänster. Den här funktionen är nu i förhandsgranskningsläge.
+Anslutning till Office 365 med hjälp av Azure ExpressRoute baseras på BGP-annonsering av specifika IP-undernät som representerar nätverk där Office 365-slutpunkter distribueras. På grund av den globala Office 365 och antalet tjänster som utgör Office 365 behöver kunder ofta hantera de annonseringar som de accepterar på sina nätverk. Om du bekymrar dig över antalet prefix som annonseras i miljön kan du med [BGP-communityfunktionen](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) filtrera annonserna till en viss uppsättning Office 365 tjänster. Den här funktionen är nu i förhandsgranskningsläge.
   
 Oavsett hur du hanterar BGP-routeannonseringarna från Microsoft får du inte någon särskild exponering för Office 365-tjänster jämfört med vid anslutning till Office 365 över enbart en internetkrets. Microsoft håller samma säkerhets-, efterlevnads- och prestandanivåer oavsett vilken typ av krets en kund använder sig av för att ansluta till Office 365.
   
 ### <a name="security"></a>Säkerhet
 
-Microsoft rekommenderar att du har egna nätverks- och säkerhets perimeterkontroller för anslutningar till och från ExpressRoute offentligt och Microsoft-peering, vilket omfattar anslutningar till och från Office 365-tjänster. Säkerhetskontroller bör finnas för nätverksbegäranden som färdas ut från ditt nätverk till Microsofts nätverk samt inkommande från Microsofts nätverk till ditt nätverk.
+Microsoft rekommenderar att du har egna nätverks- och säkerhets perimeterkontroller för anslutningar till och från ExpressRoute offentligt och Microsoft-peering, vilket omfattar anslutningar till och från Office 365 tjänster. Säkerhetskontroller bör finnas för nätverksbegäranden som färdas ut från ditt nätverk till Microsofts nätverk samt inkommande från Microsofts nätverk till ditt nätverk.
   
 #### <a name="outbound-from-customer-to-microsoft"></a>Utgående från kund till Microsoft
   
-När datorer ansluter till Office 365 ansluter de till samma uppsättning slutpunkter oavsett om anslutningen görs via en Internetkrets eller en ExpressRoute-krets. Oavsett vilken krets som används rekommenderar Microsoft att du behandlar Office 365-tjänster som mer tillförlitliga än allmänna Internetdestinationer. Dina säkerhetskontroller för utgående trafik bör fokusera på portar och protokoll för att minska exponering och minimera det fortlöpande underhållet. Den portinformation som krävs finns i [referensartikeln om Office 365-slutpunkter.](./urls-and-ip-address-ranges.md)
+När datorer ansluter Office 365 till samma uppsättning slutpunkter oavsett om anslutningen görs via en Internetkrets eller en ExpressRoute-krets. Oavsett vilken krets som används rekommenderar Microsoft att du behandlar tjänster Office 365 mer tillförlitliga än allmänna Internetdestinationer. Dina säkerhetskontroller för utgående trafik bör fokusera på portar och protokoll för att minska exponering och minimera det fortlöpande underhållet. Den portinformation som krävs finns i den Office 365 [referensartikeln om](./urls-and-ip-address-ranges.md) slutpunkter.
   
-För ytterligare kontroller kan du använda filtrering på FQDN-nivån i proxyinfrastrukturen för att begränsa eller kontrollera vissa eller alla nätverksbegäranden till Internet eller Office 365. Underhållet av listan över FQDN allt eftersom funktioner släpps och Office 365-erbjudandena utvecklas kräver stabilare ändringshantering och spårning av ändringar i de publicerade [Office 365-slutpunkterna.](./urls-and-ip-address-ranges.md)
+För ytterligare kontroller kan du använda filtrering på FQDN-nivån i proxyinfrastrukturen för att begränsa eller kontrollera vissa eller alla nätverksbegäranden till Internet eller Office 365. Underhållet av listan över FQDN allt eftersom funktioner släpps och Office 365-erbjudandena utvecklas kräver stabilare ändringshantering och spårning av ändringar i de [Office 365 slutpunkterna.](./urls-and-ip-address-ranges.md)
   
 > [!CAUTION]
-> Microsoft rekommenderar att du inte enbart använder IP-prefix för att hantera säkerhet för utgående trafik i Office 365.
+> Microsoft rekommenderar att du inte enbart använder IP-prefix för att hantera säkerhet för utgående Office 365.
 
 |**Alternativ**|**Komplexitet**|**Ändra kontroll**|
 |:-----|:-----|:-----|
@@ -82,25 +82,25 @@ Det finns flera valfria scenarier som kräver att Microsoft initierar anslutning
   
 - ADFS under verifiering av lösenord för inloggning.
 
-- [Exchange Server-hybriddistributioner.](/exchange/exchange-hybrid)
+- [Exchange Server för hybriddistributioner](/exchange/exchange-hybrid).
 
-- E-post från en Exchange Online-klientorganisation till en lokal värd.
+- E-post Exchange Online klientorganisation till en lokal värd.
 
-- E-post som skickas från SharePoint Online till en lokal värd.
+- SharePoint E-post som skickas SharePoint online till en lokal värd.
 
-- [Federerad SharePoint-hybridsökning](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
+- [SharePoint federerad hybridsökning](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 
-- [SharePoint hybrid BCS](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
+- [SharePoint BCS-hybrid](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
-- [Skype för företag-hybrid](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) och/eller [Skype för företag-federation.](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features)
+- [Skype för företag hybrid](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) och/eller [Skype för företag federation](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
 
 - [Skype för företag Cloud Connector](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 
-Microsoft rekommenderar att du godkänner dessa anslutningar via din internetkrets i stället för din ExpressRoute-krets för att minska komplexiteten. Om dina efterlevnads- eller prestandabehov dikterar dessa inkommande anslutningar måste accepteras via en ExpressRoute-krets rekommenderas användning av en brandvägg eller omvänd proxyserver för att begränsa de godkända anslutningarna. Du kan använda [Office 365-slutpunkterna för](./urls-and-ip-address-ranges.md) att ta reda på rätt FQDN och IP-prefix.
+Microsoft rekommenderar att du godkänner dessa anslutningar via din internetkrets i stället för din ExpressRoute-krets för att minska komplexiteten. Om dina efterlevnads- eller prestandabehov dikterar dessa inkommande anslutningar måste accepteras via en ExpressRoute-krets rekommenderas användning av en brandvägg eller omvänd proxyserver för att begränsa de godkända anslutningarna. Du kan använda Office 365 [ta reda](./urls-and-ip-address-ranges.md) på rätt FQDN och IP-prefix.
   
 ### <a name="compliance"></a>Efterlevnad
 
-Vi förlitar oss inte på den routningssökväg du använder för våra efterlevnadskontroller. Oavsett om du ansluter till Office 365-tjänster via en ExpressRoute- eller internetkrets ändras inte våra efterlevnadskontroller. Du bör granska de olika efterlevnads- och säkerhetscertifieringsnivåerna för Office 365 för att ta reda på det bästa valet för att uppfylla organisationens behov.
+Vi förlitar oss inte på den routningssökväg du använder för våra efterlevnadskontroller. Oavsett om du ansluter till Office 365 via en ExpressRoute- eller internetkrets ändras inte våra efterlevnadskontroller. Du bör granska de olika efterlevnads- och säkerhetscertifieringsnivåerna för Office 365 ta reda på det bästa valet för att uppfylla organisationens behov.
   
 Här är en kort länk som du kan använda för att komma tillbaka: [https://aka.ms/manageexpressroute365]()
   
@@ -112,4 +112,4 @@ Här är en kort länk som du kan använda för att komma tillbaka: [https://aka
   
 [Hantera Office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Utbildning för Azure ExpressRoute för Office 365](https://channel9.msdn.com/series/aer)
+[Azure ExpressRoute för Office 365 utbildning](https://channel9.msdn.com/series/aer)

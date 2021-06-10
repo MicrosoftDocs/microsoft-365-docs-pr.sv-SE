@@ -1,7 +1,7 @@
 ---
 title: Sök efter hot på enheter, e-postmeddelanden, appar och identiteter med avancerad sökning
 description: Studera vanliga scenarier för sökningar och exempelfrågor som täcker enheter, e-postmeddelanden, appar och identiteter.
-keywords: avancerad sökning, Office365-data, Windows-enheter, Office365-e-postmeddelanden normalisera, e-postmeddelanden, appar, identiteter, sökning efter hot, cyberhot, sökning, fråga, telemetri, Microsoft 365, Microsoft 365 Defender
+keywords: avancerad sökning, Office365-data, Windows-enheter, Office365-e-postmeddelanden normalisera, e-postmeddelanden, appar, identiteter, sökning efter hot, sökning efter cyberhot, frågor, telemetri, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -37,8 +37,8 @@ ms.locfileid: "51932971"
 
 [Med avancerad](advanced-hunting-overview.md) sökning i Microsoft 365 Defender kan du proaktivt leta efter hot i:
 - Enheter som hanteras av Microsoft Defender för Endpoint
-- E-postmeddelanden bearbetas av Microsoft 365
-- Aktiviteter i molnappen, autentiseringshändelser och domänkontrollantaktiviteter spårade av Microsoft Cloud App Security och Microsoft Defender för identitet
+- E-postmeddelanden behandlas av Microsoft 365
+- Aktiviteter i molnappen, autentiseringshändelser och domänkontrollanter spåras av Microsoft Cloud App Security och Microsoft Defender för identitet
 
 Med den här synlighetsnivån kan du snabbt jaga efter hot som passerar delar av nätverket, inklusive avancerade intrång som anländer i e-post eller på webben, förhöjda lokala behörigheter, skaffa behörighet till domänautentiseringsuppgifter och flytta dem till alla enheter. 
 

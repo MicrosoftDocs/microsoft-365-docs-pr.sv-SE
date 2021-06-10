@@ -33,20 +33,20 @@ ms.locfileid: "51688951"
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Skydd mot webbhot är en del [av webbskyddet](web-protection-overview.md) i Defender för Endpoint. Den använder [nätverksskydd](network-protection.md) för att skydda dina enheter mot webbhot. Genom att integrera med Microsoft Edge och populära webbläsare från tredje part, som Chrome och Firefox, stoppar webbhotskydd webbhot utan webbproxy och kan skydda enheter när de är borta eller lokalt. Skydd mot webbhot hindrar åtkomst till nätfiskewebbplatser, skadlig programvara, sårbarhetswebbplatser, icke betrodda eller ryktesbaserade webbplatser samt webbplatser som du har blockerat i din anpassade [indikatorlista.](manage-indicators.md)
+Skydd mot webbhot är en del [av webbskyddet](web-protection-overview.md) i Defender för Endpoint. Den använder [nätverksskydd](network-protection.md) för att skydda dina enheter mot webbhot. Genom att integrera med Microsoft Edge och populära webbläsare från tredje part, som Chrome och Firefox, stoppar skydd mot webbhot webbhot utan webbproxy och kan skydda enheter när de är borta eller lokalt. Skydd mot webbhot hindrar åtkomst till nätfiskewebbplatser, skadlig programvara, sårbarhetswebbplatser, icke betrodda eller ryktesbaserade webbplatser samt webbplatser som du har blockerat i din anpassade [indikatorlista.](manage-indicators.md)
 
 >[!Note]
 >Det kan ta upp till en timme innan enheter får nya anpassade indikatorer.
 
 ## <a name="prerequisites"></a>Förutsättningar
-Webbskydd använder nätverksskydd för att tillhandahålla surfsäkerhet i Microsoft Edge och webbläsare från tredje part.
+Webbskydd använder nätverksskydd för att skydda webbsurfning i Microsoft Edge och webbläsare från tredje part.
 
 Så här aktiverar du nätverksskydd på dina enheter:
 - Redigera säkerhetsbaslinjen för Defender för slutpunkt under **Web & Network Protection** för att aktivera nätverksskydd innan du distribuerar eller distribuerar om det. [Läs mer om att granska och tilldela Säkerhetsbaslinje för Defender för slutpunkt](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)
 - Aktivera nätverksskyddet med hjälp av Intune-enhetskonfiguration, SCCM, Grupprincip eller DIN MDM-lösning. [Läs mer om hur du aktiverar nätverksskydd](enable-network-protection.md)  
 
 >[!Note]
->Om du anger endast nätverksskydd **som Granskning är** blockeringen otillgänglig. Du kan också identifiera och logga försök att komma åt skadliga och oönskade webbplatser endast på Microsoft Edge.
+>Om du anger endast nätverksskydd **som Granskning är** blockeringen otillgänglig. Du kan också identifiera och logga försök att komma åt skadliga och oönskade webbplatser endast Microsoft Edge webbplats.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

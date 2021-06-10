@@ -1,5 +1,5 @@
 ---
-title: Konfigurera användarkontoegenskaper för Microsoft 365 med PowerShell
+title: Konfigurera Microsoft 365 användarkontoegenskaper med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: Använd PowerShell för Microsoft 365 för att konfigurera egenskaper för enskilda eller flera användarkonton i Microsoft 365-klienten.
+description: Använd PowerShell för Microsoft 365 att konfigurera egenskaper för enskilda eller flera användarkonton i Microsoft 365 klientorganisationen.
 ms.openlocfilehash: 6b674641842f89fd8c8e22dc26350cdd53734b9e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,17 +25,17 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50911090"
 ---
-# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Konfigurera användarkontoegenskaper för Microsoft 365 med PowerShell
+# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Konfigurera Microsoft 365 användarkontoegenskaper med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan använda administrationscentret för Microsoft 365 för att konfigurera egenskaper för användarkontona i Microsoft 365-klienten. I PowerShell kan du göra detta, plus en del andra saker du inte kan göra i administrationscentret.
+Du kan använda Microsoft 365 för att konfigurera egenskaper för användarkontona i klientorganisationen Microsoft 365 klientorganisationen. I PowerShell kan du göra detta, plus en del andra saker du inte kan göra i administrationscentret.
   
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph-modulen
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph modul
 
-Om du vill konfigurera egenskaper för användarkonton i Azure Active Directory PowerShell för Graph-modulen använder du [**set-AzureADUser-cmdleten**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) och anger egenskaper att ange eller ändra.
+Om du vill konfigurera egenskaper för användarkonton i Azure Active Directory PowerShell för Graph-modulen använder du cmdleten [**Set-AzureADUser**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) och anger vilka egenskaper du vill ange eller ändra.
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
    
 ### <a name="change-properties-for-a-specific-user-account"></a>Ändra egenskaper för ett visst användarkonto
 
@@ -147,11 +147,11 @@ Det här kommandot instruerar PowerShell att:
     
 1. Ställ in användarens plats på Frankrike **(Set-AzureADUser -UsageLocation "FR"**).
     
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory för Windows PowerShell
 
-Om du vill konfigurera egenskaper för användarkonton med Microsoft Azure Active Directory-modulen för Windows PowerShell använder du cmdleten **Set-MsolUser** och anger egenskaper att ange eller ändra.
+Om du vill konfigurera egenskaper för användarkonton med Microsoft Azure Active Directory-modulen för Windows PowerShell, använder du cmdleten **Set-MsolUser** och anger egenskaper som du vill ange eller ändra.
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
   
 >[!Note]
 >PowerShell Core stöder inte Microsoft Azure Active Directory-modulen för Windows PowerShell-modulen och cmdlets med *Msol* i namnet. Kör dessa cmdlets från Windows PowerShell.
@@ -179,7 +179,7 @@ Du identifierar kontot med *parametern -UserPrincipalName och* anger eller ändr
     
 - -MobilePhone " \<mobile phone number> "
     
-- -Office \<office location> " "
+- -Office " \<office location> "
     
 - -PhoneNumber \<office phone number> " "
     

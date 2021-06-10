@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: Sammanfattning Använd PowerShell för att hantera användarkontoegenskaper för Skype för företag – Online med principer.
+description: Sammanfattning Använd PowerShell för att hantera egenskaperna Skype för företag Online-användarkonton med principer.
 ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "50916708"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Om du vill hantera många egenskaper för användarkonton för Skype för företag – Online måste du ange dem som egenskaper för principer med PowerShell för Microsoft 365.
+Om du vill hantera många egenskaper för användarkonton för Skype för företag Online måste du ange dem som egenskaper för principer med PowerShell för Microsoft 365.
   
 ## <a name="before-you-begin"></a>Innan du börjar
 
@@ -44,11 +44,11 @@ Använd de här anvisningarna för att konfigurera om du vill köra kommandona (
    Connect-MicrosoftTeams -Credential $userCredential
    ```
 
-   När du uppmanas till det anger du ditt administratörskonto och lösenord för Skype för företag – Online.
+   När du uppmanas till det anger Skype för företag onlineadministratörens kontonamn och lösenord.
     
 ## <a name="manage-user-account-policies"></a>Hantera principer för användarkonton
 
-Många av användarkontoegenskaperna i Skype för företag – Online konfigureras med hjälp av principer. Principer är helt enkelt samlingar av inställningar som kan tillämpas på en eller flera användare. Om du vill ta en titt på hur en princip har konfigurerats kan du köra det här exempelkommandot för principen FederationAndPICDefault:
+Många Skype för företag Online-användarkontoegenskaper konfigureras med hjälp av principer. Principer är helt enkelt samlingar av inställningar som kan tillämpas på en eller flera användare. Om du vill ta en titt på hur en princip har konfigurerats kan du köra det här exempelkommandot för principen FederationAndPICDefault:
   
 ```powershell
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
@@ -66,7 +66,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-I det här exemplet avgör värdena i den här principen vad en användning kan eller inte kan göra när det gäller kommunikation med externa användare. Egenskapen EnableOutsideAccess måste till exempel vara inställd på Sant för att en användare ska kunna kommunicera med personer utanför organisationen. Observera att den här egenskapen inte visas i administrationscentret för Microsoft 365. I stället sätts egenskapen automatiskt till Sant eller Falskt baserat på andra val som du gör. De andra två intressanta egenskaperna är:
+I det här exemplet avgör värdena i den här principen vad en användning kan eller inte kan göra när det gäller kommunikation med externa användare. Egenskapen EnableOutsideAccess måste till exempel vara inställd på Sant för att en användare ska kunna kommunicera med personer utanför organisationen. Observera att den här egenskapen inte visas Microsoft 365 administrationscentret. I stället sätts egenskapen automatiskt till Sant eller Falskt baserat på andra val som du gör. De andra två intressanta egenskaperna är:
   
 - **EnableFederationAccess** anger om användaren kan kommunicera med personer från federerade domäner.
     
@@ -88,7 +88,7 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 Det här kommandot hittar den princip som tilldelats användaren och söker sedan efter aktiverade eller inaktiverade funktioner i principen.
   
-Information om hur du hanterar principer för Skype för företag – Online med PowerShell finns i cmdlets för:
+Information om Skype för företag onlineprinciper med PowerShell finns i cmdlets för:
 
 - [Klientprincip](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
 - [Konferensprincip](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
@@ -98,7 +98,7 @@ Information om hur du hanterar principer för Skype för företag – Online med
 
 
 > [!NOTE]
-> En uppringningsplan för Skype för företag – Online är en princip i alla sammanhang utom namnet. Namnet "uppringningsplan" har valts i stället för säg "uppringningsprincip" för att ge bakåtkompatibilitet med Office Communications Server och Exchange. 
+> En Skype för företag Online-uppringningsplan är en princip i alla sammanhang utom namnet. Namnet "uppringningsplan" valdes i stället för t.ex. "uppringningsprincip" för att ge bakåtkompatibilitet med Office Communications Server och med Exchange. 
   
 Om du till exempel vill titta på alla röstprinciper som är tillgängliga för din användning, kör du det här kommandot:
   
@@ -116,9 +116,9 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 Parametern ApplicableTo begränsar returnerade data till principer som kan tilldelas till den angivna användaren (till exempel Alex Darrow). Beroende på begränsningar för licensiering och användningsplats kan det representera en delmängd av alla tillgängliga principer. 
   
-I vissa fall används inte principers egenskaper tillsammans med Microsoft 365, medan andra bara kan hanteras av Microsofts supportpersonal. 
+I vissa fall används inte principers egenskaper tillsammans med Microsoft 365, medan andra endast kan hanteras av Microsofts supportpersonal. 
   
-Med Skype för företag – Online måste användarna hanteras genom någon sorts policy. Om en giltig principrelaterad egenskap är tom innebär det att användaren hanteras av en global princip, vilket är en princip som automatiskt används för en användare såvida han eller hon inte specifikt tilldelas en princip per användare. Eftersom det inte visas någon klientprincip för ett användarkonto hanteras den av den globala principen. Du kan fastställa den globala klientprincipen med det här kommandot:
+Med Skype för företag Online måste användarna hanteras av någon typ av princip. Om en giltig principrelaterad egenskap är tom innebär det att användaren hanteras av en global princip, vilket är en princip som automatiskt används för en användare såvida han eller hon inte specifikt tilldelas en princip per användare. Eftersom det inte visas någon klientprincip för ett användarkonto hanteras den av den globala principen. Du kan fastställa den globala klientprincipen med det här kommandot:
   
 ```powershell
 Get-CsClientPolicy -Identity "Global"

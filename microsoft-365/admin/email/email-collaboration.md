@@ -35,7 +35,7 @@ ms.locfileid: "50915740"
 ---
 # <a name="email-collaboration"></a>E-postsamarbete
 
-Microsoft 365 uppmuntrar samarbete genom grupper i Outlook, distributionslistor (kallas även distributionsgrupper), delade postlådor och gemensamma mappar. Alla dessa alternativ har ett unikt syfte, en unik användarupplevelse och unika funktioner. Vilka alternativ du bör använda beror på vad användarna behöver kunna göra och vilka verktyg din organisation tillhandahåller.
+Microsoft 365 samarbete genom grupper i Outlook, distributionslistor (kallas även distributionsgrupper), delade postlådor och gemensamma mappar. Alla dessa alternativ har ett unikt syfte, en unik användarupplevelse och unika funktioner. Vilka alternativ du bör använda beror på vad användarna behöver kunna göra och vilka verktyg din organisation tillhandahåller.
   
 ## <a name="summary-of-collaboration-options"></a>Sammanfattning av samarbetsalternativen
 <a name="BKMK_SUMMARYOFCOLLABORATIONOPTIONS"> </a>
@@ -46,10 +46,10 @@ I den här tabellen beskrivs de olika samarbetsalternativ som finns tillgänglig
 
 |**Samarbetsverktyg**|**Beskrivning**|
 |:-----|:-----|
-|Grupper i Outlook  <br/> |En delad arbetsyta som fungerar i alla program i Microsoft 365. Innehåller en delad inkorg, kalender och OneDrive för företag-webbplats för att lagra filer. Användare kan skapa, hitta och gå med i grupper i Outlook direkt från sin e-post eller kalender. Nya och befintliga användare med en Exchange Online- eller Microsoft 365-prenumeration kan använda grupper i Outlook.  <br/> |
+|Grupper i Outlook  <br/> |En delad arbetsyta som fungerar i alla program i Microsoft 365. Innehåller en delad inkorg, kalender och OneDrive för företag-webbplats för att lagra filer. Användare kan skapa, hitta och gå med i grupper i Outlook direkt från sin e-post eller kalender. Nya och befintliga användare med en Exchange Online eller en Microsoft 365-prenumeration kan använda grupper i Outlook.  <br/> |
 |Delad postlåda  <br/> |En postlåda där vissa användare kan läsa och skicka e-postmeddelanden samt dela en gemensam kalender. Delade postlådor kan även fungera som en allmän e-postadress (till exempel info@contoso.com eller sales@contoso.com) som kan användas för att ställa frågor om ditt företag. När behörigheten Skicka som är aktiverad skickas alla e-postmeddelanden från den delade postlådan med den allmänna adressen (t.ex. sales@contoso.com).  <br/> |
-|Distributionslista (kallas även distributionsgrupp)  <br/> |Används för att distribuera e-postmeddelanden till två eller flera personer samtidigt. Distributionsgrupper kallas också e-postaktiverade distributionsgrupper. En distributionsgruppsvariant, en så kallad dynamisk distributionsgrupp, är ett e-postaktiverat Active Directory-gruppobjekt som används för att skicka e-post till en stor och föränderlig grupp mottagare. Exakt vem som får meddelandet bestäms av filter och villkor som du anger, till exempel alla medlemmar med ett visst språk eller alla heltidsanställda.<br/><br/> Microsoft 365-grupper i Outlook erbjuder en bättre samarbetslösning än distributionsgrupper. Mer information finns i Varför du bör uppgradera dina [distributionslistor](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) till grupper i Outlook och [Migrera distributionslistor till Microsoft 365 Groups.](../manage/upgrade-distribution-lists.md)  <br/> |
-|offentlig mapp  <br/> |Gemensamma mappar är utformade för delad åtkomst och är ett enkelt och effektivt sätt att samla in, organisera och dela information med andra personer i organisationen. I gemensamma mappar ordnas innehåll i en djup hierarki som är lätt att bläddra i och alltid visas i Outlook-mappvyn. En offentlig mapp kan vara e-postaktiverad och läggas till som medlem i distributionsgruppen. E-post som skickas till distributionsgruppen läggs automatiskt till i den gemensamma mappen för arkivering eller senare referens. Gemensamma mappar ger också enkel dokumentdelning när du inte har en SharePoint Online-prenumeration.  <br/> |
+|Distributionslista (kallas även distributionsgrupp)  <br/> |Används för att distribuera e-postmeddelanden till två eller flera personer samtidigt. Distributionsgrupper kallas också e-postaktiverade distributionsgrupper. En distributionsgruppsvariant, en så kallad dynamisk distributionsgrupp, är ett e-postaktiverat Active Directory-gruppobjekt som används för att skicka e-post till en stor och föränderlig grupp mottagare. Exakt vem som får meddelandet bestäms av filter och villkor som du anger, till exempel alla medlemmar med ett visst språk eller alla heltidsanställda.<br/><br/> Microsoft 365 Grupper i Outlook är en bättre lösning för samarbete än distributionsgrupper. Mer information finns i Varför du bör uppgradera dina [distributionslistor](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) till grupper i Outlook [och Migrera distributionslistor till Microsoft 365 Groups.](../manage/upgrade-distribution-lists.md)  <br/> |
+|offentlig mapp  <br/> |Gemensamma mappar är utformade för delad åtkomst och är ett enkelt och effektivt sätt att samla in, organisera och dela information med andra personer i organisationen. I gemensamma mappar ordnas innehållet i en djup hierarki som är lätt att bläddra bland och alltid visas Outlook i mappvyn. En offentlig mapp kan vara e-postaktiverad och läggas till som medlem i distributionsgruppen. E-post som skickas till distributionsgruppen läggs automatiskt till i den gemensamma mappen för arkivering eller senare referens. Gemensamma mappar ger också enkel dokumentdelning när du inte har en SharePoint Online-prenumeration.  <br/> |
    
 ## <a name="which-collaboration-tool-to-use"></a>Vilket samarbetsverktyg bör du använda?
 <a name="BKMK_SUMMARYOFCOLLABORATIONOPTIONS"> </a>
@@ -71,7 +71,7 @@ I följande tabell får du en snabb överblick över de olika typerna av grupper
 
 [Hantera distributionsgrupper](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
     
-[Använda Microsoft 365-grupper i stället för webbplatspostlådor](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b)
+[Använda Microsoft 365 grupper i stället för webbplatspostlådor](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b)
     
 [Skapa delade postlådor i Microsoft 365](create-a-shared-mailbox.md)
     

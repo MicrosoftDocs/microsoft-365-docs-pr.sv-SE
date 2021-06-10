@@ -136,7 +136,7 @@ Om du har en webbplats som du använder med ditt företag kommer den att fortsä
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Vanliga frågor och svar](domains-faq.yml) om domäner (artikel)\
+[Vanliga frågor och svar om domäner](domains-faq.yml) (artikel)\
 [Vad är en domän?](../get-help-with-domains/what-is-a-domain.md) (artikel)\
 [Köp ett domännamn i Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artikel)\
 [Konfigurera din domän](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (artikel)

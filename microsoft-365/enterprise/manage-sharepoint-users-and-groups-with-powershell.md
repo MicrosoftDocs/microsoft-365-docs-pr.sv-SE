@@ -1,5 +1,5 @@
 ---
-title: Hantera SharePoint Online-användare och grupper med PowerShell
+title: Hantera SharePoint onlineanvändare och grupper med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: I den här artikeln får du lära dig hur du använder PowerShell för Microsoft 365 för att hantera användare, grupper och webbplatser i SharePoint Online.
+description: I den här artikeln lär du dig hur du använder PowerShell för Microsoft 365 att hantera SharePoint onlineanvändare, grupper och webbplatser.
 ms.openlocfilehash: cc977355f1182b18d2f2e90b573683ed69299c1c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,13 +27,13 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50916732"
 ---
-# <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Hantera SharePoint Online-användare och grupper med PowerShell
+# <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Hantera SharePoint onlineanvändare och grupper med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Om du är SharePoint Online-administratör och arbetar med stora listor med användarkonton eller grupper och vill ha ett enklare sätt att hantera dem kan du använda PowerShell för Microsoft 365. 
+Om du är SharePoint Online-administratör som arbetar med stora listor med användarkonton eller grupper och vill ha ett enklare sätt att hantera dem, kan du använda PowerShell för Microsoft 365. 
 
-Innan du börjar måste du ansluta till SharePoint Online för procedurerna i det här avsnittet. Anvisningar finns i [Ansluta till SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Innan du börjar måste du ansluta till ett e-SharePoint Online för procedurerna i det här avsnittet. Instruktioner finns i [Anslut för SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>Få en lista över webbplatser, grupper och användare
 
@@ -79,11 +79,11 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
-Du kan kopiera och klistra in kommandona i Anteckningar, ändra variabelvärdena för $tenant, $site och $user till faktiska värden från din miljö och sedan klistra in dem i fönstret SharePoint Online Management Shell för att köra dem.
+Du kan kopiera och klistra in kommandona i Anteckningar, ändra variabla värden för $tenant, $site och $user till faktiska värden från din miljö och sedan klistra in dessa i SharePoint Online Management Shell-fönstret för att köra dem.
 
 ## <a name="add-a-user-to-other-site-collection-groups"></a>Lägga till en användare i andra webbplatssamlingsgrupper
 
-I den här uppgiften använder vi `Add-SPOUser` cmdleten för att lägga till en användare i en SharePoint-grupp i en webbplatssamling.
+I den här uppgiften använder vi cmdleten för att lägga till en användare i `Add-SPOUser` SharePoint grupp i en webbplatssamling.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -106,7 +106,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ## <a name="create-a-site-collection-group"></a>Skapa en webbplatssamlingsgrupp
 
-Du använder `New-SPOSiteGroup` cmdleten för att skapa en ny SharePoint-grupp och lägga till den i en webbplatssamling.
+Du använder `New-SPOSiteGroup` cmdleten för att skapa en ny SharePoint och lägga till den i en webbplatssamling.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -131,9 +131,9 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 Ibland behöver du ta bort en användare från en webbplats eller till och med alla webbplatser. Den anställda kanske flyttar från en avdelning till en annan eller lämnar företaget. Det kan du göra enkelt för en anställd i användargränssnittet, men detta görs inte enkelt när du behöver flytta en fullständig avdelning från en webbplats till en annan.
 
-Men med hjälp av SharePoint Online Management Shell och CSV-filer går det snabbt och enkelt. I den här uppgiften använder du Windows PowerShell för att ta bort en användare från en säkerhetsgrupp för en webbplatssamling. Sedan använder du en CSV-fil och tar bort många användare från olika webbplatser. 
+Men med hjälp av SharePoint Online Management Shell och CSV-filer går det snabbt och enkelt. I den här uppgiften ska du använda Windows PowerShell ta bort en användare från en säkerhetsgrupp för webbplatssamlingen. Sedan använder du en CSV-fil och tar bort många användare från olika webbplatser. 
 
-Vi använder cmdleten Remove-SPOUser för att ta bort en enskild Microsoft 365-användare från en webbplatssamlingsgrupp så att vi kan se kommandosyntaxen. Så här ser syntaxen ut:
+Vi använder cmdleten Remove-SPOUser för att ta bort en enskild Microsoft 365-användare från en webbplatssamlingsgrupp, så att vi kan se kommandosyntaxen. Så här ser syntaxen ut:
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -165,11 +165,11 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>Automatisera hanteringen av stora listor med användare och grupper
 
-Om du vill lägga till ett stort antal konton till SharePoint-webbplatser och ge dem behörigheter kan du använda administrationscentret för Microsoft 365, enskilda PowerShell-kommandon eller PowerShell en CSV-fil. Av de här alternativen är CSV-filen det snabbaste sättet att automatisera den här uppgiften.
+Om du vill lägga till ett stort antal konton på SharePoint-webbplatser och ge dem behörigheter kan du använda administrationscentret för Microsoft 365, enskilda PowerShell-kommandon eller PowerShell för en CSV-fil. Av de här alternativen är CSV-filen det snabbaste sättet att automatisera den här uppgiften.
 
-Den grundläggande processen är att skapa en CSV-fil med rubriker (kolumner) som motsvarar de parametrar som Windows PowerShell-skriptet behöver. Du kan enkelt skapa en sådan lista i Excel och sedan exportera den som en CSV-fil. Sedan använder du ett Windows PowerShell-skript för att iterera genom poster (rader) i CSV-filen och lägga till användare i grupper och grupper på webbplatserna. 
+Den grundläggande processen är att skapa en CSV-fil med rubriker (kolumner) som motsvarar de parametrar som krävs Windows PowerShell skript. Du kan enkelt skapa en sådan lista i Excel sedan exportera den som en CSV-fil. Sedan använder du ett Windows PowerShell för att iterera genom poster (rader) i CSV-filen och lägga till användare i grupper och grupper på webbplatserna. 
 
-Låt oss till exempel skapa en CSV-fil för att definiera en grupp med webbplatssamlingar, grupper och behörigheter. Sedan skapar vi en CSV-fil för att fylla grupperna med användare. Slutligen skapar och kör vi ett enkelt Windows PowerShell-skript som skapar och fyller i grupperna.
+Låt oss till exempel skapa en CSV-fil för att definiera en grupp med webbplatssamlingar, grupper och behörigheter. Sedan skapar vi en CSV-fil för att fylla grupperna med användare. Slutligen skapar och kör vi ett enkelt Windows PowerShell som skapar och fyller i grupperna.
 
 Den första CSV-filen lägger till en eller flera grupper i en eller flera webbplatssamlingar och har följande struktur:
 
@@ -274,11 +274,11 @@ Men hur gör du om du vill göra det här för varje webbplats? Du kan göra det
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Den här rapporten är ganska enkel och du kan lägga till mer kod för att skapa mer specifika rapporter eller rapporter som innehåller mer detaljerad information. Men det bör ge dig en uppfattning om hur Du använder SharePoint Online Management Shell för att hantera användare i SharePoint Online-miljön.
+Den här rapporten är ganska enkel och du kan lägga till mer kod för att skapa mer specifika rapporter eller rapporter som innehåller mer detaljerad information. Men det bör ge dig en uppfattning om hur du använder SharePoint Online Management Shell för att hantera användare i SharePoint Online-miljön.
    
 ## <a name="see-also"></a>Se även
 
-[Ansluta till SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Anslut till SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [Hantera SharePoint Online med PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 

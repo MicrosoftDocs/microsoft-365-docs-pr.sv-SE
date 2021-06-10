@@ -61,7 +61,7 @@ Som standard visar aviseringstrenderna aviseringsinformation från 30-dagarsperi
 ## <a name="alert-summary"></a>Sammanfattning av aviseringar
 Även om aviseringstrender visar trendande aviseringsinformation, visar sammanfattningen av aviseringsinformation begränsad till den aktuella dagen.
 
- I sammanfattningen av aviseringar kan du granska nedåt till en viss aviseringskö med motsvarande filter tillämpat på den. Om du till exempel klickar på EDR-fältet i kortet Identifieringskällor kommer du till aviseringskön med resultat som bara visar aviseringar som genererats från EDR-identifieringar. 
+ I sammanfattningen av aviseringar kan du granska nedåt till en viss aviseringskö med motsvarande filter tillämpat på den. Om du till exempel klickar på Identifiering och åtgärd på slutpunkt fältet i kortet Identifieringskällor kommer du till aviseringskön med resultat som bara visar aviseringar som Identifiering och åtgärd på slutpunkt identifieringar. 
 
 >[!NOTE]
 >Data som återspeglas i sammanfattningsavsnittet är begränsade till 180 dagar före dagens datum. Om dagens datum till exempel är 5 november 2019 visar informationen i sammanfattningsavsnittet tal från den 5 maj 2019 till den 5 november 2019.<br>

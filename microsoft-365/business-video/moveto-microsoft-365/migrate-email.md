@@ -32,11 +32,11 @@ ms.locfileid: "50913628"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
-Du kan använda en migrering som kördes av administratören till Exchange Online från Google Workspace. Du kan migrera e-posten antingen samtidigt eller stegvis. Följande steg visar hur du migrerar e-postdata på en gång. Mer information finns i Utföra [en G Suite-migrering.](/exchange/mailbox-migration/perform-g-suite-migration)
+Du kan använda en migrering som kördes av administratören för Exchange Online från Google Workspace. Du kan migrera e-posten antingen samtidigt eller stegvis. Följande steg visar hur du migrerar e-postdata på en gång. Mer information finns i Utföra [en G Suite-migrering.](/exchange/mailbox-migration/perform-g-suite-migration)
 
 Migreringsprocessen tar flera steg och kan ta från flera timmar till ett par dagar beroende på mängden data du migrerar.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 ### <a name="create-a-google-service-account"></a>Skapa ett Google Service-konto
 
@@ -77,7 +77,7 @@ Migreringsprocessen tar flera steg och kan ta från flera timmar till ett par da
  
 1. Välj **Godkänn.** 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Skapa en underdomän för e-post som går till Microsoft 365
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Skapa en underdomän för e-post som ska Microsoft 365
 
 1. Gå tillbaka till **administratörskonsolen för Google Workspace.**
 1. Välj **Domäner**, **Hantera domäner** och sedan Lägg till ett **domänalias**. 
@@ -86,8 +86,8 @@ Migreringsprocessen tar flera steg och kan ta från flera timmar till ett par da
 
     Domänverifieringen tar vanligtvis bara några minuter, men det kan ta upp till 48 timmar.
 
-1. Gå till [administrationscentret för Microsoft 365.](https://admin.microsoft.com)
-1. I det vänstra navigeringsfältet i administrationscentret för **Microsoft 365** väljer du Visa **alla**, **Inställningar,** Domäner och sedan **Lägg till domän**.  
+1. Gå till [Microsoft 365 administrationscentret.](https://admin.microsoft.com)
+1. I **det Microsoft 365 vänstra** navigeringsfältet i administrationscentret väljer du Visa **alla**, **Inställningar**, **Domäner** och sedan Lägg **till domän.** 
 1. Ange den underdomän som du skapade tidigare och välj sedan **Använd den här domänen.** 
 1. Om du vill ansluta domänen väljer du **Fortsätt**. 
 1. Bläddra nedåt och notera MX-poster, CNAME-poster och TXT-poster. 
@@ -99,7 +99,7 @@ Migreringsprocessen tar flera steg och kan ta från flera timmar till ett par da
 
     Det kan ta lite tid innan ändringarna verkställs.  
 
-1. Gå tillbaka till där du slutade i **administrationscentret för Microsoft 365** och välj **Fortsätt**. 
+1. Återgå till där du slutade i **Microsoft 365 och** välj **Fortsätt**. 
 
 Domänen är nu konfigurerad.  
 
@@ -107,7 +107,7 @@ Domänen är nu konfigurerad.
 
 Innan migreringen kan påbörjas måste du skapa e-postalias för användarna med den nya underdomänen. 
 
-1. Om du vill börja med nästa steg går du till guiden **Lägg** till domäner i administrationscentret för Microsoft 365 och **väljer Gå till Aktiva användare.** 
+1. Om du vill börja med nästa steg går **du till** guiden Lägg till domäner Microsoft 365 administrationscentret och väljer Gå till **Aktiva användare.** 
 1. Välj en användare och sedan Hantera **användarnamn och e-post.** 
 1. Välj **underdomänen** du skapade tidigare i listrutan Domains. 
 1. Ange ett användarnamn, **välj Lägg** till **,** Spara ändringar och stäng fönstret. 
@@ -118,8 +118,8 @@ Innan migreringen kan påbörjas måste du skapa e-postalias för användarna me
 
 När du är klar är du redo att migrera. 
 
-1. I det vänstra navigeringsfältet **i administrationscentret för Microsoft 365** bläddrar du ned till **Administrationscenter** och väljer **Exchange**. 
-1. Välj **Migrering** under Mottagare **,** välj **Ny**, Migrera till **Exchange Online,** välj **G Suite-migrering** och sedan **Nästa.** 
+1. I det vänstra navigeringsfältet **i Microsoft 365 administrationscenter** bläddrar du ned till **Administrationscenter** och väljer **Exchange**. 
+1. Välj **Migrering** under Mottagare **,** välj **Ny**, Migrera **till Exchange Online**, välj G **Suite-migrering** och sedan **Nästa.** 
 1. Skapa en CSV-fil med en lista över postlådorna som du vill migrera. Se till att filen följer det här formatet: 
 
     ```CSV

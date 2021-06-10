@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Skapa en samarbetsyta för ditt team med Microsoft Teams.
+description: Skapa en samarbetsyta för gruppen med Microsoft Teams.
 ms.openlocfilehash: ddce111b758fcbd4840ca3493601779690684eeb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "50912228"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Skapa team för samarbete i Microsoft Teams
 
-Microsoft Teams är en samarbetsapp som hjälper din personal att organisera sig och samtala, från valfri enhet. Du kan använda Microsoft Teams för att ha snabbkonversationer med medlemmar i din personal eller gäster utanför organisationen. Du kan också ringa telefonsamtal, hålla möten och dela filer.
+Microsoft Teams är en samarbetsapp som hjälper din personal att organisera sig och samtala, från valfri enhet. Du kan använda Microsoft Teams att ha snabbkonversationer med medlemmar i din personal eller gäster utanför organisationen. Du kan också ringa telefonsamtal, hålla möten och dela filer.
 
 ## <a name="best-practices"></a>Metodtips
 
@@ -47,7 +47,7 @@ En företags-, juristbyrå eller sjukvårdsbyrå kan till exempel skapa följand
 1. **Enskilda team:** Konfigurera grupper för mindre grupper för att samarbeta kring deras dagliga arbete.
 1. **Ett externt informationsteam eller grupper:** Samordna med dina leverantörer, partners eller kunder utan att tillåta dem till något känsligt. Konfigurera olika kanaler för specifika grupper.
 
-![Diagram över ett Microsoft Teams-fönster med tre separata team för säker kommunikation och samarbete inom ett företag](../media/m365-democracy-teams-business-collab.png)
+![Diagram över ett Microsoft Teams med tre separata team för säker kommunikation och samarbete inom ett företag](../media/m365-democracy-teams-business-collab.png)
 
 Och kampanjer kan skapa följande team för att kommunicera och samarbeta säkert:
 
@@ -55,21 +55,21 @@ Och kampanjer kan skapa följande team för att kommunicera och samarbeta säker
 2. **Ett allmänt kampanjteam:** Den är till för att alla ska kunna använda den dagliga kommunikationen och arbetet. Personer, grupper eller kommittéer kan konfigurera kanaler i teamet för att göra sitt arbete. Till exempel kan personer som planerar evenemanget konfigurera en kanal för att chatta och koordinera logistik för kampanjhändelser.
 3. **Ett partnerteam:** Samordna med dina leverantörer, partner eller frivilliga utan att tillåta dem till något känsligt.
 
-![Diagram över ett Microsoft Teams-fönster med tre separata team för säker kommunikation och samarbete inom en kampanj](../media/m365-democracy-teams-collab.png)
+![Diagram över ett Microsoft Teams fönster med tre separata team för säker kommunikation och samarbete inom en kampanj](../media/m365-democracy-teams-collab.png)
 
 När du skapar ett team skapas följande:
 
-- En ny [Microsoft 365-grupp](/MicrosoftTeams/office-365-groups)
-- En [SharePoint Online-webbplats](/MicrosoftTeams/sharepoint-onedrive-interact) och ett dokumentbibliotek där gruppfiler kan lagras
-- En [delad postlåda och](/MicrosoftTeams/exchange-teams-interact) kalender i Exchange Online
-- En OneNote-anteckningsbok
-- Även i andra Office 365-appar som Planner och Power BI
+- En ny [Microsoft 365 grupp](/MicrosoftTeams/office-365-groups)
+- En [SharePoint onlinewebbplats](/MicrosoftTeams/sharepoint-onedrive-interact) och dokumentbibliotek för att lagra gruppfiler
+- En [Exchange Online](/MicrosoftTeams/exchange-teams-interact) delad postlåda och kalender
+- En OneNote anteckningsbok
+- Även till andra Office 365 som Planner och Power BI
 
-I Microsoft Teams hittar du:
+I Microsoft Teams kan du hitta:
 
 1. **Teams:** Hitta kanaler att gå med i eller skapa dina egna. I kanalerna kan du hålla direktmöten, samtala och dela filer.
-2. **Möten:** Se allt du har ordnat för dagen eller veckan. Eller schemalägg ett möte. Den här kalendern synkroniseras med din Outlook-kalender.
-3. **Samtal:** I vissa fall, om din organisation har den konfigurerad, kan du ringa vem som helst från Microsoft Teams, även om de inte använder Microsoft Teams.
+2. **Möten:** Se allt du har ordnat för dagen eller veckan. Eller schemalägg ett möte. Den här kalendern synkroniseras med din Outlook kalender.
+3. **Samtal:** Om organisationen har den konfigurerad kan du i vissa fall ringa vem som helst Microsoft Teams, även om organisationen inte använder Microsoft Teams.
 4. **Aktivitet:** Kom ikapp med alla dina olästa meddelanden, @mentions, svar och mycket mer.
 
 Använd kommandorutan högst upp för att söka efter specifika objekt eller personer, vidta snabbåtgärder och starta appar.
@@ -88,7 +88,7 @@ Skapa ett team som du delar med gäster utanför organisationen, till exempel f�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Läs mer om Microsoft Teams i den tekniska [dokumentationen för Microsoft Teams](/microsoftteams/microsoft-teams)
+Mer information om Microsoft Teams finns [Microsoft Teams tekniska dokumentationen](/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>Administratörsinställningar
 

@@ -1,5 +1,5 @@
 ---
-title: Licens och användningsvillkor för Microsoft 365 Defender-API:er
+title: Microsoft 365 Defender API:s licens och användningsvillkor
 description: Beskrivning av licensen och användningsvillkoren för API:er i Microsoft 365 Defender
 keywords: api, apis, licens, villkor, apis, juridiska meddelanden, meddelanden, uppförandekod
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51070073"
 ---
-# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Licens och användningsvillkor för Microsoft 365 Defender-API:er
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender API:s licens och användningsvillkor
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "51070073"
 
 ## <a name="official-terms"></a>Officiella villkor
 
-Microsoft 365 Defender-API:er regleras av [MicrosoftS API:er licens och användningsvillkor.](/legal/microsoft-apis/terms-of-use)
+Microsoft 365 Defender-API:er styrs av [Microsofts API:er licens och användningsvillkor.](/legal/microsoft-apis/terms-of-use)
 
 ## <a name="legal-notices"></a>Juridiska meddelanden
 
@@ -63,7 +63,7 @@ Api:t för avancerad sökning [har](/windows/security/threat-protection/microsof
 
 ### <a name="quotas-and-resource-allocation"></a>Kvoter och resurstilldelning
 
-Microsoft 365 Defender-API:er har tröskelvärden för begränsning.
+Så Microsoft 365 Defender-API:er har tröskelvärden för begränsning.
 
 - **API för** incidenter: Upp till 50 samtal per minut eller 1 500 samtal per timme.
 - **Avancerat API** för sökning: Upp till 15 samtal per minut, 10 minuters körning per timme och 4 timmars körningstid per dag.
@@ -74,6 +74,6 @@ Om din begäran har begränsats anger svarstexten tiden då du kan börja begär
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Översikt över Microsoft 365 Defender-API:er](api-overview.md)
+- [Microsoft 365 Översikt över Defender-API:er](api-overview.md)
 - [Microsoft 365 Defender API: er som stöds](api-supported.md)
-- [Åtkomst till Microsoft 365 Defender-API:er](api-access.md)
+- [Komma åt Microsoft 365 Defender-API:er](api-access.md)

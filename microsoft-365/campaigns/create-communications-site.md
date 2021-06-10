@@ -44,7 +44,7 @@ Ta med följande element på din kommunikationswebbplats:
 4. Lägg till händelser i **en webbdel för** händelser så att alla kan se vad som är på gång.
 5. Lägga till foton som andra kan använda eller dela i en **webbdel av bildgalleriet**.
 
-![Diagram över en sida för SharePoint-kommunikation med utrymme för gemensamma element som en kampanj skulle behöva](../media/m365-democracy-comms-site.png)
+![Diagram över en SharePoint kommunikationssidan med utrymme för gemensamma element som en kampanj skulle behöva](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>Infografik: Skapa en infografik för en kommunikationswebbplats
 
@@ -57,11 +57,11 @@ Följande länkar för PowerPoint och PDF kan laddas ned och skrivas ut i tabloi
 ## <a name="set-it-up"></a>Konfigurera
 
 1. Logga in på https://Office.com.
-2. Välj ikonen för startprogrammet i sidans övre vänstra hörn och välj sedan panelen **SharePoint.** Om du inte ser panelen **SharePoint** klickar du på panelen **Webbplatser** **eller** Alla om SharePoint inte visas.
-3. Högst upp på startsidan för SharePoint klickar du **på + Skapa webbplats** och väljer alternativet **Kommunikationswebbplats.**
+2. Välj ikonen för startprogrammet i sidans övre **vänstra** hörn och välj sedan ikonen SharePoint panelen. Om du inte ser panelen **SharePoint** klickar du på **panelen Webbplatser** eller **Alla** om SharePoint inte visas.
+3. Högst upp på SharePoint klickar du på **+ Skapa webbplats** och väljer alternativet **Kommunikationswebbplats.**
 
-Lär dig [allt om webbplatser för](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) kommunikation och hur du skapar en [kommunikationswebbplats i SharePoint Online.](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)
+Läs mer [om webbplatser för kommunikation](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) och hur du skapar en [kommunikationswebbplats i SharePoint Online.](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)
 
 ## <a name="admin-settings"></a>Administratörsinställningar
 
-Om du inte ser länken **+ Skapa** webbplats kanske du inte kan skapa webbplatser med självbetjäning i Microsoft 365. Om du vill skapa en gruppwebbplats kontaktar du personen som administrerar Microsoft 365 i din organisation. Om du är Microsoft 365-administratör kan du gå till Hantera webbplatsskapande i [SharePoint Online](/sharepoint/manage-site-creation) för att aktivera att webbplatser skapas med självbetjäning för organisationen eller Hantera webbplatser i det nya administrationscentret för [SharePoint](/sharepoint/manage-sites-in-new-admin-center) för att skapa en webbplats från administrationscentret för SharePoint Online.
+Om du inte ser länken **+ Skapa** webbplats kanske du inte kan skapa webbplatser med självbetjäning i Microsoft 365. Om du vill skapa en gruppwebbplats kontaktar du den som administrerar Microsoft 365 i din organisation. Om du är Microsoft 365-administratör kan du gå till Hantera webbplatsskapande i [SharePoint Online](/sharepoint/manage-site-creation) för att aktivera att webbplatser skapas med självbetjäning för organisationen eller Hantera webbplatser i det nya administrationscentret för [SharePoint](/sharepoint/manage-sites-in-new-admin-center) för att skapa en webbplats från administrationscentret för SharePoint Online.

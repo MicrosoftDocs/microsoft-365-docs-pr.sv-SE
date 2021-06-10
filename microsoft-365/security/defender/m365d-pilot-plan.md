@@ -1,7 +1,7 @@
 ---
-title: Planera ditt Microsoft 365 Defender-pilotprojekt
-description: Planera ditt Microsoft 365 Defender-pilotprojekt med intressenter för att hantera förväntningar och säkerställa ett lyckat resultat.
-keywords: Microsoft 365 Defender-pilot, planera pilottestning av Microsoft 365 Defender-projekt, utvärdera Microsoft 365 Defender i produktion, Microsoft 365 Defender-pilotprojekt, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
+title: Planera ditt pilotprojekt Microsoft 365 Defender-projekt
+description: Planera din pilotplan Microsoft 365 Defender-projektet med intressenter för att hantera förväntningar och säkerställa ett lyckat resultat.
+keywords: Microsoft 365 Defender pilottest, planera pilottest Microsoft 365 Defender-projekt, utvärdera Microsoft 365 Defender i produktion, Microsoft 365 Defender-pilotprojekt, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932553"
 ---
-# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planera ditt Microsoft 365 Defender-pilotprojekt 
+# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planera ditt pilotprojekt Microsoft 365 Defender-projekt 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -59,7 +59,7 @@ Pilotens omfattning avgör hur omfattande testet ska vara, baserat på din milj�
 >[!NOTE]
 >Om du inte har fullständiga licenser ännu kan du få utvärderingslicenser för att utvärdera [Microsoft 365 Defender](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) – planera, förbereda, konfigurera, konfigurera och köra ditt pilotprojekt. Intressenterna kommer att ha en stor roll för att underlätta processen från början till slut.
 
-Vilka typer av operativsystem som ska utvärderas bör också definieras utifrån organisationsstruktur. Detta kan inkludera följande: [Mac-slutpunkter,](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements) [Linux-servrar,](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements) [Windows 10-slutpunkter](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
+Vilka typer av operativsystem som ska utvärderas bör också definieras utifrån organisationsstruktur. Detta kan inkludera följande: [Mac-slutpunkter](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements), [Linux-servrar](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements), [Windows 10 slutpunkter](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions), [Windows Server 2016](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions).
 
 ## <a name="use-cases"></a>Användningsfall
 
@@ -68,7 +68,7 @@ Användningsfall representerar instruktioner om hur verktyget som testas är avs
 - Som SOC-analytiker måste jag ha verktyget och processen för att automatiskt undersöka och svara på skadliga händelser i nätverket. [Automatisk IR]
 - Som SOC-analytiker måste jag söka efter data från min miljö för att hitta kända och potentiella hot och misstänkta aktiviteter. [Advanced Hunting]
 
-Kom ihåg att dessa användningsfall bör skapas inom parametrarna för den definierade omfattningen. Om till exempel omfattningen av testningen inte omfattar en utvärdering av verktyg som Microsoft Cloud App Security ska du inte skapa ärenden som förlitar sig på detta som datakälla.
+Kom ihåg att dessa användningsfall bör skapas inom parametrarna för den definierade omfattningen. Om omfattningen av testningen till exempel inte omfattar en utvärdering av verktyg som Microsoft Cloud App Security, bör du inte skapa fall som förlitar sig på den som datakälla.
 
 ## <a name="requirements"></a>Krav
 
@@ -76,7 +76,7 @@ Från listan över användningsfall kan du börja skapa krav. Kraven omfattar fu
 
 ## <a name="test-plan"></a>Testplan
 
-Olika testmetoder kan vara lämpliga beroende på kraven. Om kravet till exempel är att utvärdera hur effektiv Automatiserad åtgärd är, måste testplanen innehålla steg för att generera beteendet som utlöser en automatiserad åtgärd inom Microsoft 365 Defender. Om kravet är att identifiera ett visst beteende eller en viss attack kan testet innebära fler steg. Poängen är att ha en plan för att testa mot dina krav korrekt.
+Olika testmetoder kan vara lämpliga beroende på kraven. Om kravet till exempel är att utvärdera hur effektiv automatiserad åtgärd är, måste testplanen innehålla steg för att generera beteendet som utlöser en automatiserad åtgärd inom Microsoft 365 Defender. Om kravet är att identifiera ett visst beteende eller en viss attack kan testet innebära fler steg. Poängen är att ha en plan för att testa mot dina krav korrekt.
 
 ## <a name="success-criteria"></a>Kriterier för framgång
 
@@ -86,7 +86,7 @@ Framgångskriterierna är i slutänden den stapel som mäter mot det du testar. 
 
 Ett sätt att samla alla delar av planen kan vara att skapa ett styrkort. Se ett exempel på styrkort nedan:
 
-| Användningsfall | Krav | Konfigurationskrav | Testplan | Förväntat resultat | Teststatus | Poäng | Kommentarer |
+| Användningsfall | Krav | Konfigurationskrav | Testplan | Förväntat resultat | Teststatus | Poäng | Kommentar |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Incidenthantering|- Microsoft 365 Defender  </br></br>- Microsoft Defender för identitet </br></br>- Microsoft Defender för Slutpunkt </br></br>- Microsoft Cloud App Security (valfritt)|Mer information [finns i](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) förutsättningarna för att förbereda, konfigurera och konfigurera |[Simulera attack](m365d-pilot-simulate.md) <br></br>[Undersök incidenten](./m365d-pilot-simulate.md#investigate-an-incident) |En verksamhet kan förstå händelsens omfattning och påverkan och hur den hanteras||||
 |AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender för identitet </br></br>- Microsoft Defender för Slutpunkt |Mer information [finns i](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) förutsättningarna för att förbereda, konfigurera och konfigurera <br>Aktivera AutoIR  |[Simulera attack](m365d-pilot-simulate.md) <br></br>[Automatiserad undersökning](m365d-pilot-simulate.md#automated-investigation-and-remediation) |Aviseringar och incidenter åtgärdas automatiskt av Microsoft 365 Defender||||
@@ -95,5 +95,5 @@ Ett sätt att samla alla delar av planen kan vara att skapa ett styrkort. Se ett
 
 
 ## <a name="next-step"></a>Nästa steg
-|![Förberedelsefas](../../media/mtp/prep.png) <br>[Förberedelsefas](prepare-m365d-eval.md) | Förbereda pilotmiljön i Microsoft 365 Defender
+|![Förberedelsefas](../../media/mtp/prep.png) <br>[Förberedelsefas](prepare-m365d-eval.md) | Förbereda din Microsoft 365 Defender-pilotmiljö
 |:-------|:-----|

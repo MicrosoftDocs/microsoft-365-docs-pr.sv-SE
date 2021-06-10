@@ -33,7 +33,7 @@ I Viva-ämnen kan du skapa ett nytt ämne om ett ämne inte upptäcks genom inde
 
 Om du vill skapa ett nytt ämne måste du:
 - Ha en Viva Topics-licens.
-- Har behörighet till [**Vem kan skapa eller redigera ämnen**](./topic-experiences-user-permissions.md). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Har behörighet att [**Vem kan skapa eller redigera ämnen**](./topic-experiences-user-permissions.md). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
 > Användare som har behörighet att hantera ämnen i ämnescentret (knowledge managers) har redan behörighet att skapa och redigera ämnen.
@@ -42,11 +42,11 @@ Om du vill skapa ett nytt ämne måste du:
 
 Du kan skapa ett nytt ämne från två platser:
 
-- Startsidan för Ämnescenter: Alla  licensierade användare med behörigheten Vem kan skapa eller redigera ämnen (deltagare) kan skapa ett nytt ämne från ämnescentret genom att välja menyn Nytt och välja **Ämnessida.**  
+- Startsidan för Topic Center: Alla licensierade användare med **Vem** kan skapa eller redigera ämnesbehörigheter (deltagare)  kan skapa ett nytt ämne från ämnescentret genom att välja Nytt-menyn och välja **Ämnessida.** 
 
     ![Nytt ämne från ämnescenter](../media/knowledge-management/new-topic.png)  
 
-- Sidan Hantera ämnen: Alla licensierade användare med behörigheten Vem kan hantera ämnen (kunskapschefer) kan skapa ett nytt ämne från sidan Hantera ämnen i Ämnescenter genom att välja **Ny ämnessida.**  
+- Sidan Hantera ämnen: Alla licensierade användare som har **Vem** kan hantera behörighet för ämnen (kunskapshanterare) kan skapa ett nytt ämne från sidan Hantera ämnen i Ämnescenter genom att välja **Ny ämnessida.** 
 
     ![Nytt ämne från hantera ämnen](../media/knowledge-management/new-topic-topic-center.png)  
 
@@ -70,16 +70,16 @@ Du kan skapa ett nytt ämne från två platser:
  
     ![Fästa personer](../media/knowledge-management/pinned-people.png)
 
-5. I avsnittet **Fästa filer och sidor kan** du lägga till eller "fästa" en fil eller SharePoint-webbplatssida som är kopplad till avsnittet.
+5. I avsnittet **Fästa filer och sidor kan** du lägga till eller "fästa" en fil SharePoint en webbplatssida som är kopplad till avsnittet.
 
    ![Fästa filer och sidor](../media/knowledge-management/pinned-files-and-pages.png)
  
-    Om du vill lägga till en ny fil väljer du Lägg till **,** väljer SharePoint-webbplatsen från ofta besökta eller följda webbplatser och väljer sedan filen från webbplatsens dokumentbibliotek.
+    Om du vill lägga till en ny fil väljer du Lägg till **,** SharePoint webbplats från ofta besökta eller följda webbplatser och väljer sedan filen från webbplatsens dokumentbibliotek.
 
     Du kan också använda alternativet **Från en länk för** att lägga till en fil eller sida genom att ange URL-adressen. 
 
     > [!Note] 
-    > Filer och sidor som du lägger till måste finnas inom samma Microsoft 365-klientorganisation. Om du vill lägga till en länk till en extern resurs i ämnet kan du lägga till den via ikonen för arbetsytan i steg 8.
+    > Filer och sidor som du lägger till måste finnas inom samma Microsoft 365 klientorganisation. Om du vill lägga till en länk till en extern resurs i ämnet kan du lägga till den via ikonen för arbetsytan i steg 8.
 
 
 6.  I **avsnittet Relaterade** webbplatser visas webbplatser som har information om ämnet. 
@@ -90,7 +90,7 @@ Du kan skapa ett nytt ämne från två platser:
     
     ![Välj webbplats](../media/knowledge-management/sites.png)
 
-7. I **avsnittet Relaterade** ämnen visas anslutningar som finns mellan olika ämnen. Du kan lägga till en anslutning  till ett annat ämne genom att välja knappen Anslut till ett relaterat ämne, skriva namnet på det relaterade ämnet och välja det i sökresultatet. 
+7. I **avsnittet Relaterade** ämnen visas anslutningar som finns mellan olika ämnen. Du kan lägga till en anslutning till ett annat ämne genom att välja **knappen Anslut** för ett relaterat ämne, skriva namnet på det relaterade ämnet och välja det i sökresultatet. 
 
    ![Relaterade ämnen](../media/knowledge-management/related-topic.png)  
 
@@ -110,13 +110,13 @@ Du kan skapa ett nytt ämne från två platser:
 
    ![Bekräfta borttagning](../media/knowledge-management/remove-related-confirm.png) 
 
-8. Du kan också lägga till statiska objekt på sidan (t.ex. text, bilder eller länkar) genom att välja ikonen för arbetsytan, som du hittar under den korta beskrivningen. När du markerar den öppnas SharePoint-verktygslådan där du kan välja objektet du vill lägga till på sidan.
+8. Du kan också lägga till statiska objekt på sidan (t.ex. text, bilder eller länkar) genom att välja ikonen för arbetsytan, som du hittar under den korta beskrivningen. Om du markerar den SharePoint verktygslådan där du kan välja objektet du vill lägga till på sidan.
 
    ![Canvas-ikon](../media/knowledge-management/webpart-library.png) 
 
 9. Spara **ändringarna** genom att välja Publicera. 
 
-När du har publicerat sidan visas ämnesnamnet, alternativt namn, beskrivning och fästa personer för alla licensierade användare som visar ämnet. Specifika filer, sidor och webbplatser visas bara på ämnessidan om visningsprogrammet har Office 365-behörigheter till objektet. 
+När du har publicerat sidan visas ämnesnamnet, alternativt namn, beskrivning och fästa personer för alla licensierade användare som visar ämnet. Specifika filer, sidor och webbplatser visas bara på ämnessidan om användaren Office 365 behörighet till objektet. 
 
 
 

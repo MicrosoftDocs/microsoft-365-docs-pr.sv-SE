@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: Följ den här checklistan när du tar bort en användares Microsoft 365-konto.
+description: Följ den här checklistan när du tar bort en användares Microsoft 365 konto.
 ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "50914768"
 
 Du har alltså bestämt dig för att ta bort en användare från organisationen. Du kan till exempel ta bort en användare när personen lämnar organisationen. Det finns några saker du bör göra innan du tar bort och efter att du tagit bort användaren. Den här checklistan hjälper dig med det.
   
-## <a name="remove-the-microsoft-365-license-from-the-user"></a>Ta bort Microsoft 365-licensen från användaren
+## <a name="remove-the-microsoft-365-license-from-the-user"></a>Ta bort Microsoft 365 licens från användaren
 
 Du kan ta bort en licens från en användare genom att  söka efter användaren på startsidan, eller från sidan Aktiva användare, och sedan välja dem. Avmarkera **kryssrutan för den** licens du vill ta bort från användaren på fliken Licenser och appar. [Läs hela artikeln](../manage/remove-licenses-from-users.md).
   
@@ -50,7 +50,7 @@ Du kan ta bort användaren genom att söka efter användaren på startsidan, ell
   
 ## <a name="what-to-do-with-the-unassigned-license"></a>Vad gör jag med den borttagna licensen
 
-Om du har en ny anställd eller en person som ska ansluta till organisationen kan du tilldela licensen till dem så att de kan använda Microsoft 365. Du kan söka efter användare på startsidan, eller från sidan **Aktiva användare**, och sedan välja dem. På fliken **Licenser och** appar markerar du kryssrutan för den licens du vill lägga till för den nya användaren. [Läs hela artikeln](../manage/assign-licenses-to-users.md).
+Om du har en ny anställd eller person som ska ansluta till organisationen kan du tilldela licensen till dem så att de kan använda Microsoft 365. Du kan söka efter användare på startsidan, eller från sidan **Aktiva användare**, och sedan välja dem. På fliken **Licenser och** appar markerar du kryssrutan för den licens du vill lägga till för den nya användaren. [Läs hela artikeln](../manage/assign-licenses-to-users.md).
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>Ta bort en licens så att du slipper betala för den
 

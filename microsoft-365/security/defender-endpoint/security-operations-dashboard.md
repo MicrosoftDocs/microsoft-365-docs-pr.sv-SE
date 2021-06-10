@@ -1,5 +1,5 @@
 ---
-title: Instrumentpanel för Säkerhetscenter-åtgärder i Microsoft Defender Säkerhetscenter
+title: Microsoft Defender Säkerhetscenter Instrumentpanel för säkerhetsåtgärder
 description: Använd instrumentpanelen för att identifiera enheter som är riskerade, håll reda på status för tjänsten och se statistik och information om enheter och aviseringar.
 keywords: instrumentpanel, aviseringar, ny, pågående, löst, risk, enheter för risk, rapportering, statistik, diagram, diagram, hälsa, active malware detections, hotkategori, kategorier, lösenords stjäla, utpressningstrojaner, sårbarhet, hot, låg allvarlighetsgrad, aktiv skadlig kod
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51072953"
 ---
-# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Instrumentpanel för Säkerhetscenter-åtgärder i Microsoft Defender Säkerhetscenter
+# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender Säkerhetscenter Instrumentpanel för säkerhetsåtgärder
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51072953"
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
-Instrumentpanelen **för säkerhetsåtgärder** är den plats där funktionerna för identifiering av slutpunkter och svar visas. Den ger en översikt över var identifieringar har setts och markerar var svarsåtgärder krävs. 
+Instrumentpanelen **för säkerhetsåtgärder** är den identifiering och åtgärd på slutpunkt funktionerna visas. Den ger en översikt över var identifieringar har setts och markerar var svarsåtgärder krävs. 
 
 Instrumentpanelen visar en ögonblicksbild av:
 

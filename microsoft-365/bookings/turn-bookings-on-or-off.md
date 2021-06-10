@@ -21,13 +21,13 @@ ms.locfileid: "50913772"
 Bookings kan aktiveras eller inaktiveras för hela organisationen eller för specifika användare. När du aktiverar Bookings för användare kan de skapa en bookings-sida, skapa en kalender och ge andra möjlighet att boka tid med dem.
 
 > [!NOTE]
-> Administratörskontrollerna som beskrivs i de här avsnitten är inte tillgängliga för kunder av Office 365 som drivs av 21Vianet (Kina).
+> Administratörskontrollerna som beskrivs i dessa avsnitt är inte tillgängliga för kunder Office 365 21Vianet (Kina).
 
-## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Aktivera eller inaktivera Bookings för din organisation med hjälp av administrationscentret för Microsoft 365
+## <a name="turn-bookings-on-or-off-for-your-organization-using-the-microsoft-365-admin-center"></a>Aktivera eller inaktivera Bookings för organisationen via Microsoft 365 administrationscenter
 
-1. Logga in i administrationscentret för Microsoft 365 som global administratör.
+1. Logga in på Microsoft 365 administrationscenter som global administratör.
 
-2. Gå till Inställningar Organisationsinställningar i  ****   \> **administrationscentret och** välj **Bookings.**
+2. I administrationscentret går du till fliken  **Inställningar**   \> **organisation Inställningar** och väljer **Bookings**.
 
 3. Markera kryssrutan för Tillåt **din organisation att använda Bookings för** att aktivera eller inaktivera Bookings för din organisation.
 
@@ -38,7 +38,7 @@ Bookings kan aktiveras eller inaktiveras för hela organisationen eller för spe
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>Aktivera eller inaktivera Bookings för din organisation med PowerShell
 
-Så här aktiverar eller inaktiverar du Bookings för organisationen med PowerShell-cmdleten [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) och kör följande kommando:
+Så här aktiverar eller inaktiverar du Bookings för organisationen med [PowerShell-cmdleten Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) och kör följande kommando:
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
@@ -48,7 +48,7 @@ Så här aktiverar eller inaktiverar du Bookings för organisationen med PowerSh
 
 Du kan inaktivera Bookings för enskilda användare.
 
-1. Gå till administrationscentret för Microsoft 365 och välj sedan **Användare** \> **aktiva användare.**
+1. Gå till Microsoft 365 och välj sedan **Användare aktiva** \> **användare.**
 
 1. Välj önskad användare och välj sedan **Licenser och appar.**
 
@@ -56,17 +56,17 @@ Du kan inaktivera Bookings för enskilda användare.
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>Kräva godkännande av personal innan du delar ledig/upptagen-information
 
-Administratörer kan kräva att anställda i organisationen anmäler sig innan deras tillgänglighetsinformation delas via Bookings och innan de kan bokas via en bokningssida. Den här inställningen är tillgänglig i administrationscentret för Microsoft 365 under **Inställningar** \> **Inställningar** \> **Bookings.**
+Administratörer kan kräva att anställda i organisationen anmäler sig innan deras tillgänglighetsinformation delas via Bookings och innan de kan bokas via en bokningssida. Den här inställningen är tillgänglig i Microsoft 365 administrationscenter under **Inställningar** \> **Inställningar** \> **Bookings.**
 
 När den här inställningen är aktiverad hittar anställda som lagts till som personal i bokningskalendrar länken Godkänn/Avvisa i e-postmeddelandet som de får.
 
-Den här funktionen lanseras gradvis över hela världen till Microsoft 365-kunder. Om du inte ser det här alternativet i administrationscentret för Microsoft 365 kommer du snart tillbaka.
+Den här funktionen lanseras gradvis över hela världen till Microsoft 365 kunder. Om du inte ser det här alternativet i Microsoft 365 administrationscenter kan du komma tillbaka snart.
 
 ## <a name="block-social-sharing-options"></a>Blockera alternativ för social delning
 
-Administratörer kan styra hur bokningssidor delas i sociala nätverk. Den här inställningen är tillgänglig i administrationscentret för Microsoft 365 under **Inställningar** \> **Inställningar** \> **Bookings.**
+Administratörer kan styra hur bokningssidor delas i sociala nätverk. Den här inställningen är tillgänglig i Microsoft 365 administrationscenter under **Inställningar** \> **Inställningar** \> **Bookings.**
 
-Den här funktionen lanseras gradvis över hela världen till Microsoft 365-kunder. Om du inte ser det här alternativet i administrationscentret för Microsoft 365 kommer du snart tillbaka.
+Den här funktionen lanseras gradvis över hela världen till Microsoft 365 kunder. Om du inte ser det här alternativet i Microsoft 365 administrationscenter kan du komma tillbaka snart.
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>Tillåt endast vissa användare att skapa bookings-kalendrar
 
@@ -74,10 +74,10 @@ Genom att använda principbegränsningar kan du begränsa licensierade användar
 
 Användare som omfattas av den här principen kan skapa nya Bookings-kalendrar och kan läggas till som personal med alla funktioner (inklusive administratörsrollen) i befintliga Bookings-kalendrar. Användare som inte omfattas av den här principen kan inte skapa nya Bookings-kalendrar och får ett felmeddelande om de försöker göra det.
 
-Du måste köra följande kommandon med Exchange Online PowerShell. Mer information om hur du kör Exchange Online-cmdlets finns [i Ansluta till Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+Du måste köra följande kommandon med hjälp av Exchange Online PowerShell. Mer information om hur du kör Exchange Online-cmdlets finns i [Anslut till Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 > [!IMPORTANT]
-> I stegen nedan förutsätts att inga andra Outlook Web App-postlådeprinciper (OWA) har skapats i organisationen.
+> I stegen nedan förutsätts att inga andra Outlook Web App postlådeprinciper (OWA) har skapats i organisationen.
 
 1. Skapa en ny postlådeprincip för användare som ska kunna skapa Bookings-kalendrar. (Som standard tillåts kalenderskapande i Bookings av nya postlådeprinciper.)
 
@@ -105,6 +105,6 @@ Du måste köra följande kommandon med Exchange Online PowerShell. Mer informat
 
 Mer information om OWA-postlådeprinciper finns i följande avsnitt:
 
-- [Skapa en outlook på webben-postlådeprincip i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Skapa en Outlook webbpostlådeprincip i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
 
-- [Använda eller ta bort en outlook på webben-postlådeprincip för en postlåda i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+- [Använda eller ta bort Outlook webbpostlådeprincip för en postlåda i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)

@@ -129,5 +129,5 @@ Kör något av följande kommandon:
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)\
-[Återställ lösenord](../add-users/reset-passwords.md) (artikel)\
+[Återställa lösenord](../add-users/reset-passwords.md) (artikel)\
 [Ange förfalloprincip för lösenord för din organisation](../manage/set-password-expiration-policy.md) (artikel)

@@ -1,5 +1,5 @@
 ---
-title: Hantera funktioner för identifiering av slutpunkt och svar
+title: Hantera identifiering och åtgärd på slutpunkt funktioner
 ms.reviewer: ''
 description: ''
 keywords: ''
@@ -25,7 +25,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51073010"
 ---
-# <a name="manage-endpoint-detection-and-response-capabilities"></a>Hantera funktioner för identifiering av slutpunkt och svar
+# <a name="manage-endpoint-detection-and-response-capabilities"></a>Hantera identifiering och åtgärd på slutpunkt funktioner
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ Hantera aviseringskön, undersök enheter i listan över enheter, vidta svarsåt
 ## <a name="in-this-section"></a>I det här avsnittet
 Ämne | Beskrivning 
 :---|:---
-[Kön Aviseringar](alerts-queue-endpoint-detection-response.md)| Visa aviseringarna i Microsoft Defender Säkerhetscenter.
-[Listan Enheter](machines-view-overview.md) | Lär dig hur du kan visa och hantera enhetslistan, hantera enhetsgrupper och undersöka enhetsrelaterade aviseringar. 
+[Varningskö](alerts-queue-endpoint-detection-response.md)| Visa aviseringarna i Microsoft Defender Säkerhetscenter.
+[Enhetslista](machines-view-overview.md) | Lär dig hur du kan visa och hantera enhetslistan, hantera enhetsgrupper och undersöka enhetsrelaterade aviseringar. 
 [Vidta svarsåtgärder](respond-machine-alerts.md)| Vidta svarsåtgärder på enheter och filer för att snabbt svara på identifierade attacker och innehålla hot.
 [Frågedata med avancerad sökning](advanced-hunting-query-language.md)| Proaktivt söka efter möjliga hot i hela organisationen med hjälp av ett kraftfullt sök- och frågeverktyg.

@@ -1,5 +1,5 @@
 ---
-title: Konfigurera sökning för Microsoft 365 Multi-Geo
+title: Konfigurera sökning efter Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: tlarsen
 author: tklarsen
@@ -12,7 +12,7 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Lär dig hur du konfigurerar sökning i en miljö med flera geoer. Bara vissa klienter, till exempel OneDrive för företag, kan returnera resultat i en geomiljö med flera funktioner.
+description: Lär dig hur du konfigurerar sökning i en miljö med flera geoer. Endast vissa klienter, till exempel OneDrive för företag,kan returnera resultat i en geomiljö med flera funktioner.
 ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -20,11 +20,11 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50911168"
 ---
-# <a name="configure-search-for-microsoft-365-multi-geo"></a>Konfigurera sökning för Microsoft 365 Multi-Geo
+# <a name="configure-search-for-microsoft-365-multi-geo"></a>Konfigurera sökning efter Microsoft 365 multi-geo
 
 I en geomiljö med flera platser har varje geoplats ett eget sökindex och ett sökcenter. När en användare söker visas frågan i alla index och de returnerade resultaten sammanfogas.
 
-En användare på en geoplats kan till exempel söka efter innehåll som lagrats på en annan geoplats eller efter innehåll på en SharePoint-webbplats som är begränsat till en annan geoplats. Om användaren har åtkomst till innehållet visas resultatet i sökningen.
+En användare på en geoplats kan till exempel söka efter innehåll som lagrats på en annan geoplats eller efter innehåll på en SharePoint-webbplats som är begränsad till en annan geoplats. Om användaren har åtkomst till innehållet visas resultatet i sökningen.
 
 ## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>Vilka sökklienter fungerar i en geomiljö med flera sökklienter?
 
@@ -32,23 +32,23 @@ Dessa klienter kan returnera resultat från alla geoplatser:
 
 - OneDrive för företag
 - Delve
-- Startsidan för SharePoint
+- Sidan SharePoint startsida
 - Sökcenter
 - Anpassade sökprogram som använder SharePoint Search API
 
 ### <a name="onedrive-for-business"></a>OneDrive för företag
 
-Så snart multi geomiljön har konfigurerats får användare som söker i OneDrive resultat från alla geoplatser.
+Så snart multigeomiljön har ställts in kan användare som söker i OneDrive få resultat från alla geografiska platser.
 
 ### <a name="delve"></a>Delve
 
-Så snart multigeomiljön har ställts in får användare som söker i Delve resultat från alla geoplatser.
+Så snart multigeomiljön har ställts in kan användare som söker i Delve få resultat från alla geografiska platser.
 
-Delve-feeden och profilkortet visar endast förhandsgranskningar av filer som lagras på den centrala platsen. För filer som lagras på satellitplatser visas ikonen för filtypen i stället.
+I Delve och profilkortet visas bara förhandsgranskningar av filer som lagras på den centrala platsen. För filer som lagras på satellitplatser visas ikonen för filtypen i stället.
 
-### <a name="the-sharepoint-home-page"></a>Startsidan för SharePoint
+### <a name="the-sharepoint-home-page"></a>Sidan SharePoint startsida
 
-Så snart multigeomiljön har ställts in kan användarna se nyheter, senaste och följda webbplatser från flera geografiska platser på startsidan för SharePoint. Om de använder sökrutan på startsidan för SharePoint får de kopplade resultat från flera geoplatser.
+Så snart multi geomiljön har SharePoint kan användarna se nyheter, senaste och följda webbplatser från flera geografiska platser på SharePoint startsida. Om de använder sökrutan på SharePoint startsida får de kopplade resultat från flera geografiska platser.
 
 ### <a name="the-search-center"></a>Sökcenter
 
@@ -56,7 +56,7 @@ Efter att multigeomiljön har ställts in fortsätter varje sökcenter bara att 
 
 ### <a name="custom-search-applications"></a>Anpassade sökprogram
 
-Som vanligt interagerar anpassade sökprogram med sökindex genom att använda befintliga REST-API:er för SharePoint-sökning. Om du vill få resultat från alla, eller vissa geoplatser, måste programmet anropa API:t och inkludera de nya parametrarna för [multi-geofråga](#_Get_custom_search) i begäran. Det här utlöser en fan av frågan på alla geoplatser.
+Som vanligt interagerar anpassade sökprogram med sökindex genom att använda de befintliga SharePoint REST-API:er. Om du vill få resultat från alla, eller vissa geoplatser, måste programmet anropa API:t och inkludera de nya parametrarna för [multi-geofråga](#_Get_custom_search) i begäran. Det här utlöser en fan av frågan på alla geoplatser.
 
 ## <a name="whats-different-about-search-in-a-multi-geo-environment"></a>Vad är så annorlunda med sökning i en geomiljö med flera platser?
 
@@ -99,7 +99,7 @@ Vissa sökfunktioner som du kanske är van vid fungerar annorlunda i en geomilj�
 </tr>
 <tr class="even">
 <td align="left">Hybridsökning</td>
-<td align="left">I en SharePoint-hybridmiljö med molnhybridsökning läggs lokalt innehåll till i Microsoft 365-indexet för den centrala platsen. <a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint"></a></td>
+<td align="left">I en SharePoint miljö med <a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint"></a>molnhybridsökning läggs lokalt innehåll till i Microsoft 365 för den centrala platsen.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -119,7 +119,7 @@ Vissa av de sökfunktioner du kanske är van vid stöds inte i en miljö med fle
 <tbody>
 <tr class="odd">
 <td align="left">Endast appautentisering</td>
-<td align="left">Endast programautentisering (privilegierad åtkomst från tjänster) stöds inte vid geosökning med flera program.</td>
+<td align="left">Endast programautentisering (behörighet från tjänster) stöds inte i Multi-Geo-sökning.</td>
 </tr>
 <tr class="even">
 <td align="left">Gästanvändare</td>
@@ -130,9 +130,9 @@ Vissa av de sökfunktioner du kanske är van vid stöds inte i en miljö med fle
 
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Hur fungerar sökning i en geomiljö med flera sökverktyg?
 
-Alla sökklienter använder befintliga REST API:er för SharePoint-sökning för att interagera med sökindexen.
+Alla sökklienter använder befintliga REST-API:SharePoint för sökning för att interagera med sökindexen.
 
-![Diagram som visar hur REST-API:er för SharePoint-sökning interagerar med sökindex](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagram som visar SharePoint REST-API:er för sökning interagerar med sökindexen](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. En sökklient anropar SÖK REST-slutpunkten med frågeegenskapen EnableMultiGeoSearch= true.
 2. Frågan skickas till alla geoplatser i klientorganisationen.
@@ -150,15 +150,15 @@ Varje sökcenter har flera lodräta och du måste konfigurera varje lodrätt ind
 
 2. Gå till sidan med sökresultat (se [listan över](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213) sökresultatsidor)
 
-3. Välj den lodräta för att konfigurera, klicka på kugghjulsikonen för inställningar i det övre högra hörnet och klicka sedan **på Redigera sida.**  Sidan med sökresultat öppnas i redigeringsläge.
+3. Markera den lodräta för att konfigurera, **Inställningar** kugghjulsikonen i det övre högra hörnet och klicka sedan på **Redigera sida.** Sidan med sökresultat öppnas i redigeringsläge.
 
-   ![Redigera sidval i Inställningar](../media/configure-search-for-multi-geo-image2.png)
+   ![Redigera sidmarkering i Inställningar](../media/configure-search-for-multi-geo-image2.png)
 
 4. I webbdelen Sökresultat flyttar du pekaren till det övre högra hörnet av webbdelen, klickar på pilen och klickar sedan på Redigera **webbdel** på menyn. Verktygsfönstret för webbdelen Sökresultat öppnas under menyfliksområdet längst upp till höger på sidan.
 
    ![Redigera webbdelsval](../media/configure-search-for-multi-geo-image3.png)
 
-5. I webbdelsverktygsfönstret, i  avsnittet **Inställningar,** under Inställningar för resultatkontroll väljer du Visa **multi-georesultat** för att få webbdelen Sökresultat för att visa resultat från alla geografiska platser.
+5. I verktygsfönstret Webbdel, i **avsnittet Inställningar,** **under** Inställningar för resultatkontroll väljer du Visa **multi georesultat** för att få webbdelen Sökresultat för att visa resultat från alla geoplatser.
 
 6. Klicka **på OK** för att spara ändringen och stänga verktygsfönstret Webbdel.
 
@@ -169,7 +169,7 @@ Varje sökcenter har flera lodräta och du måste konfigurera varje lodrätt ind
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Hämta anpassade sökprogram för att visa resultat från alla eller vissa geografiska platser
 
-Anpassade sökprogram får resultat från alla, eller vissa, geoplatser genom att ange frågeparametrar med begäran till REST API för SharePoint-sökning. Beroende på frågeparametrarna är frågan borta från alla geoplatser eller till vissa geografiska platser. Om du till exempel bara behöver söka efter relevant information på en delmängd av geoplatserna kan du hålla koll på endast dessa. Om begäran lyckas returnerar SharePoint Search REST API svarsdata.
+Anpassade sökprogram får resultat från alla, eller vissa, geoplatser genom att ange frågeparametrar med begäran till SharePoint REST API. Beroende på frågeparametrarna är frågan borta från alla geoplatser eller till vissa geografiska platser. Om du till exempel bara behöver söka efter relevant information på en delmängd av geoplatserna kan du hålla koll på endast dessa. Om begäran lyckas returnerar SharePoint REST API svarsdata.
 
 ### <a name="requirement"></a>Krav
 
@@ -206,16 +206,16 @@ MultiGeoSearchConfiguration – Det här är en valfri lista över vilka geoplat
 </tbody>
 </table>
 
-Om du utelämnar DataLocation eller EndPoint, eller om en DataLocation dupliceras, misslyckas begäran. [Du kan få information om slutpunkten för en klientorganisations geografiska platser med hjälp av Microsoft Graph.](/sharepoint/dev/solution-guidance/multigeo-discovery)
+Om du utelämnar DataLocation eller EndPoint, eller om en DataLocation dupliceras, misslyckas begäran. [Du kan få information om slutpunkten för en klientorganisations geografiska platser med hjälp av Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Svarsdata
 
-MultiGeoSearchStatus – Det här är en egenskap som SharePoint Search API returnerar som svar på en begäran. Värdet för egenskapen är en sträng och ger följande information om de resultat som Sök-API:t för SharePoint returnerar:
+MultiGeoSearchStatus – Det här är en egenskap som SharePoint sök-API returnerar som svar på en begäran. Värdet för egenskapen är en sträng och ger följande information om de resultat som sök-API:t SharePoint returnerar:
 
 <table>
 <thead>
 <tr class="header">
-<th align="left">Value</th>
+<th align="left">Värde</th>
 <th align="left">Beskrivning</th>
 </tr>
 </thead>

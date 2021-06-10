@@ -1,5 +1,5 @@
 ---
-title: Använd rollbaserad åtkomstkontroll för att bevilja enkel åtkomst till Microsoft Defender Säkerhetscenter
+title: Använd rollbaserad åtkomstkontroll för att bevilja finkornig åtkomst till Microsoft Defender Säkerhetscenter
 description: Skapa roller och grupper i dina säkerhetsåtgärder för att bevilja åtkomst till portalen.
 keywords: rbac, roll, baserad, åtkomst, kontroll, grupper, kontroll, nivå, aad
 search.product: eADQiWindows 10XVcnh
@@ -51,7 +51,7 @@ Defender för Endpoint RBAC har utformats för att stödja din nivå- eller roll
   - Skapa anpassade roller och kontrollera vad Defender för Slutpunkt-funktioner de kan komma åt med detaljerad information.
  
 - **Styra vilka som kan se information i viss enhetsgrupp eller -grupp**
-  - [Skapa enhetsgrupper](machine-groups.md) med specifika villkor, till exempel namn, taggar, domäner och andra, och tilldela rollåtkomst till dem med hjälp av en viss Azure Active Directory-användargrupp (Azure ACTIVE Directory).
+  - [Skapa enhetsgrupper](machine-groups.md) med specifika villkor, till exempel namn, taggar, domäner och andra, och tilldela sedan rollåtkomst till dem med hjälp av en viss användargrupp i Azure Active Directory (Azure AD).
 
 Om du vill implementera rollbaserad åtkomst måste du definiera administratörsroller, tilldela motsvarande behörigheter och tilldela Azure AD-användargrupper tilldelade till rollerna.
 
@@ -63,12 +63,12 @@ Innan du använder RBAC är det viktigt att du förstår de roller som kan bevil
 > [!WARNING]
 > Innan du aktiverar funktionen är det viktigt att du har en global administratörsroll eller säkerhetsadministratörsroll i Azure AD och att du har dina Azure AD-grupper redo att minska risken med att bli utelåst från portalen. 
 
-När du först loggar in på Microsoft Defender Säkerhetscenter får du antingen fullständig åtkomst eller skrivskyddad åtkomst. Fullständig åtkomst ges till användare med roller som säkerhetsadministratör eller global administratör i Azure AD. Skrivskyddad åtkomst ges till användare med rollen Säkerhetsläsare i Azure AD. 
+När du loggar in på Microsoft Defender Säkerhetscenter får du antingen fullständig åtkomst eller skrivskydd. Fullständig åtkomst ges till användare med roller som säkerhetsadministratör eller global administratör i Azure AD. Skrivskyddad åtkomst ges till användare med rollen Säkerhetsläsare i Azure AD. 
 
 Någon med rollen Defender för global administratör för Slutpunkt har obegränsad åtkomst till alla enheter, oavsett vilken enhetsgruppsassociatorganisation och tilldelningar av Azure AD-användargrupper som ingår i dem.
 
 > [!WARNING]
-> Till en början kan endast användare med global administratör eller säkerhetsadministratör för Azure AD skapa och tilldela roller i Microsoft Defender Säkerhetscenter och därför är det viktigt att ha rätt grupper i Azure AD.
+> Till en början kan endast användare med global administratör eller säkerhetsadministratör för Azure AD skapa och tilldela roller i Microsoft Defender Säkerhetscenter och därför är det viktigt att ha rätt grupper redo i Azure AD.
 >
 > **Om du slår på rollbaserad åtkomstkontroll förlorar användare med skrivskyddad behörighet (till exempel användare som tilldelats rollen Azure AD-säkerhetsläsare) åtkomsten tills de tilldelas till en roll.** 
 >
@@ -78,5 +78,5 @@ Någon med rollen Defender för global administratör för Slutpunkt har obegrä
 
 
 
-## <a name="related-topic"></a>Relaterade ämnen
+## <a name="related-topic"></a>Relaterat ämne
 - [Skapa och hantera enhetsgrupper i Microsoft Defender för Slutpunkt](machine-groups.md)

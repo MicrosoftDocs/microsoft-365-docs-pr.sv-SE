@@ -1,6 +1,6 @@
 ---
 title: Steg för partner för att registrera enheter
-description: Hur partners kan registrera enheter så att de kan hanteras av Microsoft Managed Desktop
+description: Hur partner kan registrera enheter så att de kan hanteras av Microsoft Hanterat skrivbord
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -21,7 +21,7 @@ ms.locfileid: "51689239"
 # <a name="steps-for-partners-to-register-devices"></a>Steg för partner för att registrera enheter
 
 
-I den här artikeln beskrivs stegen som partner kan följa för att registrera enheter. Hur du registrerar enheter själv finns i Registrera [enheter i Microsoft Managed Desktop själv.](register-devices-self.md)
+I den här artikeln beskrivs stegen som partner kan följa för att registrera enheter. Hur du registrerar enheter själv finns i Registrera [enheter i Microsoft Hanterat skrivbord själv.](register-devices-self.md)
 
 
 
@@ -30,7 +30,7 @@ Innan du kan slutföra registreringen för en kund måste du först upprätta en
 
 
 > [!NOTE]
-> Den här dokumentationen gäller endast partner och OEM-maskiner. Processen för självregistrering har dokumenterats i Registrera [enheter i Microsoft Managed Desktop själv.](register-devices-self.md)
+> Den här dokumentationen gäller endast partner och OEM-maskiner. Processen för självregistrering finns dokumenterad i [Registrera enheter i Microsoft Hanterat skrivbord dig](register-devices-self.md).
 
 
 ## <a name="register-devices-by-using-partner-center"></a>Registrera enheter med hjälp av Partnercenter
@@ -41,7 +41,7 @@ När du har upprättat relationen med dina kunder kan du använda Partnercenter 
 2. Välj **Kunder** på Menyn Partnercenter och välj sedan den kund vars enheter du vill hantera.
 3. Välj Enheter på kundens **informationssida.**
 4. Under **Använd profiler på** enheter väljer du Lägg till **enheter**.
-5. Ange rätt grupptagg för den enhetsprofil du har valt (enligt följande  tabell) och välj sedan Bläddra för att ladda upp kundens lista (i CSV-filformat) till Partner Center.
+5. Ange lämplig grupptagg för den enhetsprofil du har valt (enligt följande  tabell) och välj sedan Bläddra för att ladda upp kundens lista (i .csv-filformat) till Partnercenter.
 
 |[Enhetsprofil](../service-description/profiles.md)  |Grupptagg  |
 |---------|---------|
@@ -50,12 +50,12 @@ När du har upprättat relationen med dina kunder kan du använda Partnercenter 
 |Standard     | **Microsoft365Managed \_ Standard**        |
 
 > [!IMPORTANT]
-> Gruppnamnet måste matcha de som anges i tabellen exakt, inklusive versaler och specialtecken. Då kan de nyligen registrerade enheterna tilldelas med Microsoft Managed Desktop Autopilot-profilen.
+> Gruppnamnet måste matcha de som anges i tabellen exakt, inklusive versaler och specialtecken. Då kan de nyligen registrerade enheterna tilldelas med Microsoft Hanterat skrivbord Autopilot-profilen.
 
 >[!NOTE]
-> Du borde ha fått den här CSV-filen med ditt enhetsköp. Om du inte har fått någon CSV-fil kan du skapa en själv genom att följa stegen i Lägga till [enheter i Windows Autopilot.](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell) Windows PowerShell-skriptet är inte samma som det som används för [Microsoft Managed Desktop Admin-portalen.](./register-devices-self.md#obtain-the-hardware-hash) Partners bör använda [Get-WindowsAutoPilotInfo för](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) att registrera enheter för Microsoft Managed Desktop-enheter i Partner Center.
+> Du bör ha fått den .csv filen med ditt enhetsköp. Om du inte har fått någon .csv kan du skapa en själv genom att följa stegen i Lägga till enheter [på Windows Autopilot.](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell) Skriptet Windows PowerShell inte samma som det som används för Microsoft Hanterat skrivbord [Admin-portalen.](./register-devices-self.md#obtain-the-hardware-hash) Partners bör använda [Get-WindowsAutoPilotInfo för](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) att registrera enheter Microsoft Hanterat skrivbord enheter i Partner Center.
 
-Om du får ett felmeddelande när du försöker ladda upp CSV-filen kontrollerar du formatet på filen. Se till att kolumnordningen stämmer överens med vad som beskrivs i Använda [Windows Autopilot-profiler](/partner-center/autopilot#add-devices-to-a-customers-account)på nya enheter för att anpassa en kunds användning. Du kan också använda csv-exempelfilen från länken bredvid Lägg **till enheter för** att skapa en enhetslista. 
+Om du får ett felmeddelande medan du försöker ladda .csv filen kan du kontrollera formatet på filen. Se till att kolumnordningen stämmer överens med vad som beskrivs i [Använd Windows Autopilot-profiler](/partner-center/autopilot#add-devices-to-a-customers-account)på nya enheter för att anpassa en kunds användning. Du kan också använda exempelfilen .csv från länken bredvid Lägg till enheter **för** att skapa en enhetslista. 
 
 Mer information om Autopilot i partnerscenarier finns i [Lägga till enheter till en kunds konto.](/partner-center/autopilot#add-devices-to-a-customers-account)
 
@@ -74,4 +74,4 @@ När du har upprättat relationen kan du börja registrera enheter för kunder m
 |Standard     | **Microsoft365Managed \_ Standard**      |
 
 > [!IMPORTANT]
-> Grupptaggarna måste matcha de som anges i tabellen exakt, inklusive versaler och specialtecken. Då kan de nyligen registrerade enheterna tilldelas med Microsoft Managed Desktop Autopilot-profilen.
+> Grupptaggarna måste matcha de som anges i tabellen exakt, inklusive versaler och specialtecken. Då kan de nyligen registrerade enheterna tilldelas med Microsoft Hanterat skrivbord Autopilot-profilen.

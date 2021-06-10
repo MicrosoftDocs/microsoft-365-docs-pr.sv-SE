@@ -1,7 +1,7 @@
 ---
-title: Sammanfattning av dina microsoft 365 Defender-pilotprojektresultat
-description: Avsluta microsoft 365 Defender-pilotprojektet genom att slutföra ditt styrkort, analysera resultaten i rapporten och bestämma hur du ska gå framåt.
-keywords: Microsoft 365 Defender Pilot, bestäm vad du ska göra härnäst efter pilottestet av Microsoft 365 Defender-projektet, vad du ska göra efter utvärdering av Microsoft 365 Defender i produktionen, övergång från Microsoft 365 Defender pilottest till distribution, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatiserad undersökning och åtgärd, avancerad sökning
+title: Sammanfattning av dina pilotresultat Microsoft 365 Defender-projektresultat
+description: Avsluta piloten med Microsoft 365 Defender-projektet genom att slutföra ett styrkort, analysera resultaten i rapporten och bestämma hur du ska gå framåt.
+keywords: Microsoft 365 Defender pilot, bestäm vad du ska göra härnäst efter pilottestningen av Microsoft 365 Defender-projektet, vad du ska göra efter att ha utvärderat Microsoft 365 Defender i produktionen, övergång från Microsoft 365 Defender pilottesta till distribution, cybersäkerhet, avancerade hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -60,7 +60,7 @@ Presentera rapporter från dina slutliga utdata till interna intressenter (som d
 Vi hoppas att du gillade den här simuleringen. Börja implementera det du har lärt dig i större skala i din organisation för att få ut mesta mesta av den integrerade säkerhetslösningen.
 
 ## <a name="next-step"></a>Nästa steg
-Läs mer om Microsoft 365 Defender-pelarna genom följande interaktiva guider:
+Läs mer om hur Microsoft 365 Defender-pelarna genom följande interaktiva guider:
 - [Skydda din organisation med Microsoft Defender för Office 365](https://aka.ms/O365ATP-Interactive-Guide)
 - [Identifiera misstänkta aktiviteter och potentiella attacker med Microsoft Defender för identitet](https://aka.ms/AATP-Interactive-Guide)
 - [Upptäcka hot och hantera aviseringar med Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)

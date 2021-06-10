@@ -34,7 +34,7 @@ ms.locfileid: "51072633"
 
 Om du har fler licenser än du behöver för prenumerationen kan du minska antalet licenser och dina månatliga kostnader. 
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
  
 1. I [administrationscentret väljer](https://admin.microsoft.com)du **Fakturering**  >  **Dina produkter** och sedan din prenumeration.
 1. Välj **Ta bort licenser.**

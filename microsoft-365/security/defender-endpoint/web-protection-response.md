@@ -1,6 +1,6 @@
 ---
 title: Svara på webbhot i Microsoft Defender för Endpoint
-description: Svara på aviseringar som rör skadliga och oönskade webbplatser. Förstå hur skydd mot webbhot informerar slutanvändarna via deras webbläsare och Windows-meddelanden
+description: Svara på aviseringar som rör skadliga och oönskade webbplatser. Förstå hur skydd mot webbhot informerar slutanvändarna via deras webbläsare och deras Windows meddelanden
 keywords: webbskydd, skydd mot webbhot, surfning, varningar, svar, säkerhet, nätfiske, skadlig kod, sårbarhet, webbplatser, nätverksskydd, Edge, Internet Explorer, Chrome, Firefox, webbläsare, meddelanden, slutanvändare, Windows-meddelanden, blockeringssida,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -66,15 +66,15 @@ Du kan också kontrollera vilken enhet som försökte komma åt en blockerad URL
 
 [Läs mer om enhetsentitetssidor](investigate-machines.md)
 
-## <a name="web-browser-and-windows-notifications-for-end-users"></a>Webbläsare och Windows-meddelanden för slutanvändare
+## <a name="web-browser-and-windows-notifications-for-end-users"></a>Webbläsare och Windows för slutanvändare
 
 Med webbskydd i Microsoft Defender för Endpoint hindras slutanvändarna från att besöka skadliga eller oönskade webbplatser med hjälp av Microsoft Edge eller andra webbläsare. Eftersom blockering utförs av [nätverksskydd](network-protection.md)ser de ett allmänt fel från webbläsaren. De ser också ett meddelande från Windows.
 
-![Bild på Microsoft Edge som visar ett 403-fel och Windows-meddelandet ](images/wtp-browser-blocking-page.png)
- *Webbhot blockeras i Microsoft Edge*
+![Bild av Microsoft Edge som visar ett 403-fel och Windows som webbhot ](images/wtp-browser-blocking-page.png)
+ *blockeras på Microsoft Edge*
 
-![Bild på Chrome-webbläsare som visar en varning om säker anslutning och Webbhotet i Windows ](images/wtp-chrome-browser-blocking-page.png)
- *blockeras i Chrome*
+![Bild på Chrome-webbläsare som visar en varning om säker anslutning och Windows som ](images/wtp-chrome-browser-blocking-page.png)
+ *webbhot blockeras i Chrome*
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över webbskydd](web-protection-overview.md)

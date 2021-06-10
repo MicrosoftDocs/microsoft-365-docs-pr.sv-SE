@@ -32,16 +32,16 @@ ms.locfileid: "50913580"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-När du flyttar över till Microsoft 365 för företag ska du migrera dina filer från Google Drive. Du kan använda appen Mover för att flytta filer från personliga och delade enheter. Mer information finns i [Mover Cloud Migration.](/sharepointmigration/mover-plan-migration)
+När du flyttar Microsoft 365 för företag ska du migrera dina filer från Google Drive. Du kan använda appen Mover för att flytta filer från personliga och delade enheter. Mer information finns i [Mover Cloud Migration.](/sharepointmigration/mover-plan-migration)
 
 > [!NOTE]
 > Mover gör en kopia av filerna och flyttar kopiorna till Microsoft 365 för företag. De ursprungliga filerna finns även kvar i Google Drives.
 
 ## <a name="before-you-start"></a>Innan du börjar
 
-Alla användare bör ha loggat in på Microsoft 365 för företag och konfigurera onedrive för företag. Det gör du genom att [gå office.com](https://office.com), logga in med dina autentiseringsuppgifter för Microsoft 365 för företag och sedan välja OneDrive.
+Alla användare bör ha loggat in på Microsoft 365 för företag och ställt in OneDrive för företag. Det gör du genom att [gå office.com](https://office.com), logga in med dina inloggningsuppgifter Microsoft 365 för företag och sedan välja OneDrive.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 ### <a name="install-mover"></a>Installera Mover
 
@@ -66,21 +66,21 @@ Alla användare bör ha loggat in på Microsoft 365 för företag och konfigurer
 
     Mover visar antalet teamenheter och användare kör den upptäckt. 
 
-1. Välj **Auktorisera** ny **koppling under Välj** destination , leta reda på Office **365** och välj **Auktorisera**.
-1. Om du vill ge behörigheter till mover-appen i Azure Active Directory går du till [aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth).
-1. Välj **Office 365 Mover**, **Behörigheter**, **Bevilja administratörsmedgivande för ditt företag**.
+1. Under **Välj destination** väljer du Authorize New **Connector**, **Office 365** och väljer **Authorize**.
+1. Om du vill ge behörigheter till appen Mover i Azure Active Directory navigerar du till [aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth).
+1. Välj **Office 365 – Mover**, **Behörigheter**, **Bevilja administratörsmedgivande för ditt företag**.
 1. Välj ditt konto, granska behörigheterna och välj **Acceptera**.
 1. Välj **Egenskaper** och kontrollera att **Användartilldelning krävs?** är aktiverat.
 1. Gå tillbaka till appen Mover, ändra **visningsnamnet**, om du vill, välj **Auktorisera** och välj sedan ett Microsoft-administratörskonto.
 
-    Mover informerar dig om antalet SharePoint Online-webbplatser (eller SPO-webbplatser) och användare som upptäckts.
+    Mover informerar dig om antalet SharePoint (eller SPO) webbplatser och användare som upptäckts.
 1. Välj **Fortsätt migreringskonfiguration**, välj **Lägg till användare** och sedan Upptäck och lägg till användare **automatiskt.**
 
     Appen Mover försöker mappa enheter från källsökvägen i Google till målsökvägen i Microsoft 365. 
 
     Om en enhet inte mappas automatiskt lägger du till dess målsökväg i en CSV-fil, som vi använder senare för att migrera den delade enheten till ett SharePoint-dokumentbibliotek. 
 
-1. I det här fallet har vi lagt till en SharePoint-webbplats som kallas Migrerade filer och antecknat URL-adressen för dokumentsidan. 
+1. I det här fallet har vi lagt SharePoint webbplats med namnet Migrerade filer och antecknat WEBBADRESSen för dokumentsidan. 
 1. Sedan skapade vi en CSV-fil med formatet Källsökväg, Målsökväg och Taggar. 
 
     Mer information finns [i aka.ms/movercsv](/sharepointmigration/mover-create-migration-csv).

@@ -1,6 +1,6 @@
 ---
-title: Vad är nytt i Microsoft 365-säkerhet
-description: Läs mer om nya funktioner i Microsoft 365-säkerhet
+title: Vad är nytt inom Microsoft 365 säkerhet
+description: Läs mer om de nya funktionerna Microsoft 365 säkerhet
 keywords: nya, m365 säkerhet, säkerhet, 365, funktioner
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51072738"
 ---
-# <a name="whats-new-in-microsoft-365-security"></a>Vad är nytt i Microsoft 365 Security
+# <a name="whats-new-in-microsoft-365-security"></a>Vad är nytt i Microsoft 365 Säkerhet
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "51072738"
 
 
 
-I det här avsnittet tar vi upp funktioner som är allmänt tillgängliga (GA) i den senaste versionen av Microsoft 365 Security. 
+I det här avsnittet tar vi upp funktioner som är allmänt tillgängliga (GA) i den senaste Microsoft 365 Säkerhet. 
 
 Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsfunktioner](preview.md)
 

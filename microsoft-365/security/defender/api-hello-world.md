@@ -1,6 +1,6 @@
 ---
 title: Hello World för Microsoft 365 Defender REST API
-description: Lär dig hur du skapar en app och använder en token för att få åtkomst till Microsoft 365 Defender-API:er
+description: Lär dig hur du skapar en app och använder en token för att komma åt Microsoft 365 Defender-API:er
 keywords: app, token, access, aad, app, programregistrering, powershell, skript, global administratör, behörighet, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -46,16 +46,16 @@ Det bör ta 5 till 10 minuter att slutföra projektet. Den här tidsberäkningen
 
 1. Logga in i [Azure](https://portal.azure.com) som en användare med **rollen Global** administratör.
 
-2. Gå till **Azure Active Directory-appregistreringar**  >    >  **Ny registrering.**
+2. Gå till **Azure Active Directory**  >  **Appregistreringar**  >  **Ny registrering.**
 
-   ![Bild av Microsoft Azure och navigering till programregistrering](../../media/atp-azure-new-app2.png)
+   ![Bild av Microsoft Azure navigering till registrering av program](../../media/atp-azure-new-app2.png)
 
 3. Välj ett namn på din ansökan i registreringsformuläret och välj sedan **Registrera**. Det är valfritt att välja en omdirigerings-URI. Du behöver ingen för att slutföra det här exemplet.
 
-4. På programsidan väljer du **API-behörigheter** Lägg till  >    >  **behörighetS-API:er** som min organisation använder >, skriver Microsoft Threat Protection och väljer **Microsoft Threat Protection**. Appen kan nu komma åt Microsoft 365 Defender.
+4. På programsidan väljer du **API-behörigheter** Lägg till  >    >  **behörighets-API:er** som min organisation använder >, skriver **Microsoft Threat Protection** och väljer Microsoft Threat Protection . Appen kan nu komma åt Microsoft 365 Defender.
 
    > [!TIP]
-   > *Microsoft Threat Protection* är ett tidigare namn för Microsoft 365 Defender och visas inte i den ursprungliga listan. Du måste börja skriva namnet i textrutan för att det ska visas.
+   > *Microsoft Threat Protection* är ett tidigare namn Microsoft 365 Defender och visas inte i den ursprungliga listan. Du måste börja skriva namnet i textrutan för att det ska visas.
    ![Bild av val av API-behörighet](../../media/apis-in-my-org-tab.PNG)
 
    - Välj **Programbehörigheter**  >  **Incident.Read.All och** välj Lägg till **behörigheter.**
@@ -79,7 +79,7 @@ Det bör ta 5 till 10 minuter att slutföra projektet. Den här tidsberäkningen
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Hämta en token med appen och använd token för att få åtkomst till API:t
 
-Mer information om Azure Active Directory-token finns i [självstudiekursen för Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Mer information om hur Azure Active Directory tokens finns i självstudiekursen [för Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 > [!IMPORTANT]
 > Även om exemplet i den här demoappen uppmuntrar dig att  klistra in i ditt hemliga värde för teständamål ska du aldrig hårdkoda hemligheter i ett program som körs i produktion. En tredje part kan använda din hemligt för att komma åt resurser. Du kan skydda dina apphemligheter med hjälp av [Azure Key Vault.](/azure/key-vault/general/about-keys-secrets-certificates) Ett praktiskt exempel på hur du kan skydda din app finns i Hantera hemligheter i [dina serverappar med Azure Key Vault.](/learn/modules/manage-secrets-with-azure-key-vault/)
@@ -172,10 +172,10 @@ Nu är allt klart! Du har lyckats:
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Översikt över Microsoft 365 Defender-API:er](api-overview.md)
-- [Åtkomst till Microsoft 365 Defender-API:er](api-access.md)
-- [Skapa en app för att komma åt Microsoft 365 Defender utan en användare](api-create-app-web.md)
-- [Skapa en app för åtkomst till Microsoft 365 Defender-API:er för en användares räkning](api-create-app-user-context.md)
-- [Skapa en app med partner med flera klientorganisationens åtkomst till Microsoft 365 Defender-API:er](api-partner-access.md)
+- [Microsoft 365 Översikt över Defender-API:er](api-overview.md)
+- [Komma åt Microsoft 365 Defender-API:er](api-access.md)
+- [Skapa en app för åtkomst Microsoft 365 Defender utan användare](api-create-app-web.md)
+- [Skapa en app för att Microsoft 365 Defender-API:er för en användares räkning](api-create-app-user-context.md)
+- [Skapa en app med partner med flera klientorganisationens åtkomst Microsoft 365 Defender-API:er](api-partner-access.md)
 - [Hantera hemligheter i dina serverappar med Azure-tangentvalvet](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0-auktorisering för användar inloggning och API-åtkomst](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

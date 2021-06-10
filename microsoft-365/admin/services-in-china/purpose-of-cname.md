@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX
-description: Läs mer om CNAME-posten "MSOID" i Office 365 som leder dig till den bästa servern för autentiseringsprocesser, så att du får ett snabbare svar.
+description: Läs mer om CNAME-posten "MSOID" i Office 365 som dirigerar dig till den bästa servern för autentiseringsprocesser, så att du får ett snabbare svar.
 monikerRange: o365-21vianet
 ms.openlocfilehash: a1d587abc9db03c9a1f7c5f66711fde3648a0e96
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -39,8 +39,8 @@ Teknisk information: När du kör ett klientprogram som fungerar med Office 365,
   
 Om CNAME-posten saknas för din domän använder dessa program en standardslutpunkt för autentisering i USA, vilket innebär att autentiseringen kan saktas ned. Om CNAME-posten inte har konfigurerats korrekt - till exempel om det finns ett stavfel i **Pekar på-adress** - kan programmen inte autentisera uppgifterna.
   
- **Om Office 365 hanterar domänens DNS-poster** Office 365 uppsättningar den här CNAME-posten åt dig. 
+ **Om Office 365 hanterar domänens DNS-poster,** Office 365 den här CNAME-posten åt dig. 
   
  **Om du hanterar DNS-poster för domänen** hos din DNS-värd skapar du den här posten själv genom att följa instruktionerna [för din DNS-värd.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
   
-Om du planerar en Office 365-distribution och vill veta mer om alla de DNS-poster som du kan behöva lägga till eller uppdatera kan du läsa mer i Referens: Externa DNS-poster för [Office 365.](../../enterprise/external-domain-name-system-records.md)
+Om du planerar en Office 365-distribution och vill veta mer om alla DE DNS-poster som du kan behöva lägga till eller uppdatera kan du läsa mer i [Referens: Externa DNS-poster](../../enterprise/external-domain-name-system-records.md)för Office 365.

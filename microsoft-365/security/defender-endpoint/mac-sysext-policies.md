@@ -69,7 +69,7 @@ Lägg till följande JAMF-nyttolast för att bevilja fullständig diskåtkomst t
 
 ### <a name="network-extension-policy"></a>Princip för nätverkstillägg
 
-Som en del av funktionerna Identifiering och svar av slutpunkt inspekterar Microsoft Defender för slutpunkt på macOS sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
+Som en del av funktionerna Slutpunktsidentifiering och svar inspekterar Microsoft Defender för slutpunkt på macOS sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
 
 >[!NOTE]
 >JAMF har inte inbyggt stöd för principer för innehållsfiltrering, vilket är en förutsättning för att aktivera nätverkstillägg som Microsoft Defender för Slutpunkt på macOS installerar på enheten. DESSUTOM ändrar JAMF ibland innehållet i de principer som distribueras.
@@ -170,7 +170,7 @@ Som en del av funktionerna Identifiering och svar av slutpunkt inspekterar Micro
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
     
-5. Från JAMF-portalen går du till **Konfigurationsprofiler** och klickar på **knappen Ladda** upp. Välj `com.microsoft.network-extension.signed.mobileconfig` när du uppmanas att ange filen.
+5. Från JAMF-portalen går du till **Konfigurationsprofiler** och klickar **Upload** profil. Välj `com.microsoft.network-extension.signed.mobileconfig` när du uppmanas att ange filen.
 
 ## <a name="intune"></a>Intune
 
