@@ -19,7 +19,7 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Använd PowerShell-cmdlets för centraliserad distribution för att distribuera och hantera Office-tillägg för Microsoft 365-organisationen.
+description: Använd PowerShell-cmdlets för centraliserad distribution för att distribuera och Office tillägg för din Microsoft 365 organisation.
 ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,31 +27,31 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924678"
 ---
-# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a><span data-ttu-id="38924-103">Use the Centralized Deployment PowerShell cmdlets to manage add-ins</span><span class="sxs-lookup"><span data-stu-id="38924-103">Use the Centralized Deployment PowerShell cmdlets to manage add-ins</span></span>
+# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a><span data-ttu-id="56847-103">Use the Centralized Deployment PowerShell cmdlets to manage add-ins</span><span class="sxs-lookup"><span data-stu-id="56847-103">Use the Centralized Deployment PowerShell cmdlets to manage add-ins</span></span>
 
-<span data-ttu-id="38924-104">Som global Microsoft 365-administratör kan du distribuera Office-tillägg till användare via funktionen för centraliserad distribution (se Distribuera [Office-tillägg i administrationscentret).](../admin/manage/manage-deployment-of-add-ins.md)</span><span class="sxs-lookup"><span data-stu-id="38924-104">As a Microsoft 365 global admin, you can deploy Office add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md)).</span></span> <span data-ttu-id="38924-105">Förutom att distribuera Office-tillägg via administrationscentret för Microsoft 365 kan du också använda Microsoft PowerShell.</span><span class="sxs-lookup"><span data-stu-id="38924-105">In addition to deploying Office add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell.</span></span> <span data-ttu-id="38924-106">Installera [O365 Centralized Add-In Deployment Module för Windows PowerShell.](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)</span><span class="sxs-lookup"><span data-stu-id="38924-106">Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).</span></span> 
+<span data-ttu-id="56847-104">Som Microsoft 365 global administratör kan du distribuera Office-tillägg till användare via funktionen för centraliserad distribution (se Distribuera [Office-tillägg](../admin/manage/manage-deployment-of-add-ins.md)i administrationscentret ).</span><span class="sxs-lookup"><span data-stu-id="56847-104">As a Microsoft 365 global admin, you can deploy Office add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md)).</span></span> <span data-ttu-id="56847-105">Förutom att distribuera Office tillägg via administrationscentret för Microsoft 365 kan du också använda Microsoft PowerShell.</span><span class="sxs-lookup"><span data-stu-id="56847-105">In addition to deploying Office add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell.</span></span> <span data-ttu-id="56847-106">Installera [O365 Centralized Add-In Deployment Module för Windows PowerShell.](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)</span><span class="sxs-lookup"><span data-stu-id="56847-106">Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).</span></span> 
 
-<span data-ttu-id="38924-107">När du har laddat ned modulen öppnar du ett vanligt Windows PowerShell-fönster och kör följande cmdlet:</span><span class="sxs-lookup"><span data-stu-id="38924-107">After you download the module, open a regular Windows PowerShell window and run the following cmdlet:</span></span>
+<span data-ttu-id="56847-107">När du har laddat ned modulen öppnar du ett Windows PowerShell fönster och kör följande cmdlet:</span><span class="sxs-lookup"><span data-stu-id="56847-107">After you download the module, open a regular Windows PowerShell window and run the following cmdlet:</span></span>
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a><span data-ttu-id="38924-108">Ansluta med dina autentiseringsuppgifter som administratör</span><span class="sxs-lookup"><span data-stu-id="38924-108">Connect using your admin credentials</span></span>
+## <a name="connect-using-your-admin-credentials"></a><span data-ttu-id="56847-108">Anslut dina administratörsuppgifter</span><span class="sxs-lookup"><span data-stu-id="56847-108">Connect using your admin credentials</span></span>
 
-<span data-ttu-id="38924-109">Innan du kan använda cmdlets för centraliserad distribution måste du logga in.</span><span class="sxs-lookup"><span data-stu-id="38924-109">Before you can use the Centralized Deployment cmdlets, you need to sign in.</span></span>
+<span data-ttu-id="56847-109">Innan du kan använda cmdlets för centraliserad distribution måste du logga in.</span><span class="sxs-lookup"><span data-stu-id="56847-109">Before you can use the Centralized Deployment cmdlets, you need to sign in.</span></span>
   
-1. <span data-ttu-id="38924-110">Starta PowerShell.</span><span class="sxs-lookup"><span data-stu-id="38924-110">Start PowerShell.</span></span>
+1. <span data-ttu-id="56847-110">Starta PowerShell.</span><span class="sxs-lookup"><span data-stu-id="56847-110">Start PowerShell.</span></span>
     
-2. <span data-ttu-id="38924-111">Anslut till PowerShell med dina autentiseringsuppgifter som företagsadministratör.</span><span class="sxs-lookup"><span data-stu-id="38924-111">Connect to PowerShell by using your company admin credentials.</span></span> <span data-ttu-id="38924-112">Kör följande cmdlet.</span><span class="sxs-lookup"><span data-stu-id="38924-112">Run the following cmdlet.</span></span>
+2. <span data-ttu-id="56847-111">Anslut till PowerShell med dina autentiseringsuppgifter som företagsadministratör.</span><span class="sxs-lookup"><span data-stu-id="56847-111">Connect to PowerShell by using your company admin credentials.</span></span> <span data-ttu-id="56847-112">Kör följande cmdlet.</span><span class="sxs-lookup"><span data-stu-id="56847-112">Run the following cmdlet.</span></span>
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. <span data-ttu-id="38924-113">På sidan **Ange autentiseringsuppgifter** anger du dina autentiseringsuppgifter som global Microsoft 365-administratör.</span><span class="sxs-lookup"><span data-stu-id="38924-113">In the **Enter Credentials** page, enter your Microsoft 365 global admin credentials.</span></span> <span data-ttu-id="38924-114">Alternativt kan du ange dina autentiseringsuppgifter direkt i cmdleten.</span><span class="sxs-lookup"><span data-stu-id="38924-114">Alternately, you can enter your credentials directly into the cmdlet.</span></span> 
+3. <span data-ttu-id="56847-113">På sidan **Ange autentiseringsuppgifter** anger du dina Microsoft 365 som global administratör.</span><span class="sxs-lookup"><span data-stu-id="56847-113">In the **Enter Credentials** page, enter your Microsoft 365 global admin credentials.</span></span> <span data-ttu-id="56847-114">Alternativt kan du ange dina autentiseringsuppgifter direkt i cmdleten.</span><span class="sxs-lookup"><span data-stu-id="56847-114">Alternately, you can enter your credentials directly into the cmdlet.</span></span> 
     
-    <span data-ttu-id="38924-115">Kör följande cmdlet med dina autentiseringsuppgifter som företagsadministratör som ett PSCredential-objekt.</span><span class="sxs-lookup"><span data-stu-id="38924-115">Run the following cmdlet specifying your company admin credentials as a PSCredential object.</span></span>
+    <span data-ttu-id="56847-115">Kör följande cmdlet med dina autentiseringsuppgifter som företagsadministratör som ett PSCredential-objekt.</span><span class="sxs-lookup"><span data-stu-id="56847-115">Run the following cmdlet specifying your company admin credentials as a PSCredential object.</span></span>
     
   ```powershell
   $secpasswd = ConvertTo-SecureString "MyPassword" -AsPlainText -Force
@@ -60,113 +60,113 @@ ms.locfileid: "50924678"
   ```
 
 > [!NOTE]
-> <span data-ttu-id="38924-116">Mer information om hur du använder PowerShell finns i [Ansluta till Microsoft 365 med PowerShell.](./connect-to-microsoft-365-powershell.md)</span><span class="sxs-lookup"><span data-stu-id="38924-116">For more information about using PowerShell, see [Connect to Microsoft 365 with PowerShell](./connect-to-microsoft-365-powershell.md).</span></span> 
+> <span data-ttu-id="56847-116">Mer information om hur du använder PowerShell finns i [Anslut att Microsoft 365 med PowerShell.](./connect-to-microsoft-365-powershell.md)</span><span class="sxs-lookup"><span data-stu-id="56847-116">For more information about using PowerShell, see [Connect to Microsoft 365 with PowerShell](./connect-to-microsoft-365-powershell.md).</span></span> 
   
-## <a name="upload-an-add-in-manifest"></a><span data-ttu-id="38924-117">Ladda upp ett tilläggsmanifest</span><span class="sxs-lookup"><span data-stu-id="38924-117">Upload an add-in manifest</span></span>
+## <a name="upload-an-add-in-manifest"></a><span data-ttu-id="56847-117">Upload ett tilläggsmanifest</span><span class="sxs-lookup"><span data-stu-id="56847-117">Upload an add-in manifest</span></span>
 
-<span data-ttu-id="38924-118">Kör **cmdleten New-OrganizationAdd-In** för att ladda upp ett tilläggsmanifest från en sökväg, som antingen kan vara en filsökväg eller en URL.</span><span class="sxs-lookup"><span data-stu-id="38924-118">Run the **New-OrganizationAdd-In** cmdlet to upload an add-in manifest from a path, which can be either a file location or URL.</span></span> <span data-ttu-id="38924-119">I följande exempel visas en filplats för parametervärdet för _ManifestPath._</span><span class="sxs-lookup"><span data-stu-id="38924-119">The following example shows a file location for the value of the  _ManifestPath_ parameter.</span></span> 
+<span data-ttu-id="56847-118">Kör **cmdleten New-OrganizationAdd-In** för att ladda upp ett tilläggsmanifest från en sökväg, som antingen kan vara en filsökväg eller en URL.</span><span class="sxs-lookup"><span data-stu-id="56847-118">Run the **New-OrganizationAdd-In** cmdlet to upload an add-in manifest from a path, which can be either a file location or URL.</span></span> <span data-ttu-id="56847-119">I följande exempel visas en filplats för parametervärdet för _ManifestPath._</span><span class="sxs-lookup"><span data-stu-id="56847-119">The following example shows a file location for the value of the  _ManifestPath_ parameter.</span></span> 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-<span data-ttu-id="38924-120">Du kan också köra cmdleten **New-OrganizationAdd-In** för att ladda upp ett tillägg och tilldela det till användare eller grupper direkt med hjälp av parametern  _Members,_ enligt exemplet nedan.</span><span class="sxs-lookup"><span data-stu-id="38924-120">You can also run the **New-OrganizationAdd-In** cmdlet to upload an add-in and assign it to users or groups directly by using the  _Members_ parameter, as shown in the following example.</span></span> <span data-ttu-id="38924-121">Avgränsa e-postadresserna till medlemmarna med kommatecken.</span><span class="sxs-lookup"><span data-stu-id="38924-121">Separate the email addresses of members with a comma.</span></span> 
+<span data-ttu-id="56847-120">Du kan också köra cmdleten **New-OrganizationAdd-In** för att ladda upp ett tillägg och tilldela det till användare eller grupper direkt med hjälp av parametern  _Members,_ enligt exemplet nedan.</span><span class="sxs-lookup"><span data-stu-id="56847-120">You can also run the **New-OrganizationAdd-In** cmdlet to upload an add-in and assign it to users or groups directly by using the  _Members_ parameter, as shown in the following example.</span></span> <span data-ttu-id="56847-121">Avgränsa e-postadresserna till medlemmarna med kommatecken.</span><span class="sxs-lookup"><span data-stu-id="56847-121">Separate the email addresses of members with a comma.</span></span> 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a><span data-ttu-id="38924-122">Ladda upp ett tillägg från Office Store</span><span class="sxs-lookup"><span data-stu-id="38924-122">Upload an add-in from the Office Store</span></span>
+## <a name="upload-an-add-in-from-the-office-store"></a><span data-ttu-id="56847-122">Upload ett tillägg från Office Store</span><span class="sxs-lookup"><span data-stu-id="56847-122">Upload an add-in from the Office Store</span></span>
 
-<span data-ttu-id="38924-123">Kör **cmdleten New-OrganizationAddIn** för att ladda upp ett manifest från Office Store.</span><span class="sxs-lookup"><span data-stu-id="38924-123">Run the **New-OrganizationAddIn** cmdlet to upload a manifest from the Office Store.</span></span>
+<span data-ttu-id="56847-123">Kör **cmdleten New-OrganizationAddIn** för att ladda upp ett manifest från Office Store.</span><span class="sxs-lookup"><span data-stu-id="56847-123">Run the **New-OrganizationAddIn** cmdlet to upload a manifest from the Office Store.</span></span>
   
-<span data-ttu-id="38924-124">I följande exempel anger **cmdleten New-OrganizationAddIn** TillgångsID för ett tillägg för en plats och en innehållsmarknad i USA.</span><span class="sxs-lookup"><span data-stu-id="38924-124">In the following example, the **New-OrganizationAddIn** cmdlet specifies the AssetId for an add-in for a United States location and content market.</span></span>
+<span data-ttu-id="56847-124">I följande exempel anger **cmdleten New-OrganizationAddIn** TillgångsID för ett tillägg för en plats och en innehållsmarknad i USA.</span><span class="sxs-lookup"><span data-stu-id="56847-124">In the following example, the **New-OrganizationAddIn** cmdlet specifies the AssetId for an add-in for a United States location and content market.</span></span>
   
 ```powershell
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-<span data-ttu-id="38924-125">Om du vill ta reda på värdet för parametern  _AssetId_ kan du kopiera det från URL:en för Office Store-webbsidan för tillägget.</span><span class="sxs-lookup"><span data-stu-id="38924-125">To determine the value for the  _AssetId_ parameter, you can copy it from the URL of the Office Store webpage for the add-in.</span></span> <span data-ttu-id="38924-126">Tillgångsid:er börjar alltid med "WA" följt av ett tal.</span><span class="sxs-lookup"><span data-stu-id="38924-126">AssetIds always begin with "WA" followed by a number.</span></span> <span data-ttu-id="38924-127">I föregående exempel är källan för Tillgångsid-värdet WA104099688 Office Store-webbsides-URL:en för tillägget: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .</span><span class="sxs-lookup"><span data-stu-id="38924-127">For example, in the previous example, the source for the AssetId value of WA104099688 is the Office Store webpage URL for the add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span></span>
+<span data-ttu-id="56847-125">Om du vill avgöra värdet för parametern _AssetId_ kan du kopiera det från URL:en för Office Store-webbsidan för tillägget.</span><span class="sxs-lookup"><span data-stu-id="56847-125">To determine the value for the  _AssetId_ parameter, you can copy it from the URL of the Office Store webpage for the add-in.</span></span> <span data-ttu-id="56847-126">Tillgångsid:er börjar alltid med "WA" följt av ett tal.</span><span class="sxs-lookup"><span data-stu-id="56847-126">AssetIds always begin with "WA" followed by a number.</span></span> <span data-ttu-id="56847-127">I föregående exempel är källan för AssetId-värdet WA104099688 webbside-URL för Office Store för tillägget: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .</span><span class="sxs-lookup"><span data-stu-id="56847-127">For example, in the previous example, the source for the AssetId value of WA104099688 is the Office Store webpage URL for the add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span></span>
   
-<span data-ttu-id="38924-128">Värdena för parametern  _Locale_ och  _parametern ContentMarket_ är identiska och anger landet/regionen som du försöker installera tillägget från.</span><span class="sxs-lookup"><span data-stu-id="38924-128">The values for the  _Locale_ parameter and the  _ContentMarket_ parameter are identical and indicate the country/region you're trying to install the add-in from.</span></span> <span data-ttu-id="38924-129">Formatet är en-US, fr-FR.</span><span class="sxs-lookup"><span data-stu-id="38924-129">The format is en-US, fr-FR.</span></span> <span data-ttu-id="38924-130">och så vidare.</span><span class="sxs-lookup"><span data-stu-id="38924-130">and so forth.</span></span> 
+<span data-ttu-id="56847-128">Värdena för parametern  _Locale_ och  _parametern ContentMarket_ är identiska och anger landet/regionen som du försöker installera tillägget från.</span><span class="sxs-lookup"><span data-stu-id="56847-128">The values for the  _Locale_ parameter and the  _ContentMarket_ parameter are identical and indicate the country/region you're trying to install the add-in from.</span></span> <span data-ttu-id="56847-129">Formatet är en-US, fr-FR.</span><span class="sxs-lookup"><span data-stu-id="56847-129">The format is en-US, fr-FR.</span></span> <span data-ttu-id="56847-130">och så vidare.</span><span class="sxs-lookup"><span data-stu-id="56847-130">and so forth.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="38924-131">Tillägg som laddats upp från Office Store uppdateras automatiskt inom några dagar efter det att den senaste uppdateringen blir tillgänglig i Office Store.</span><span class="sxs-lookup"><span data-stu-id="38924-131">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
+> <span data-ttu-id="56847-131">Tillägg som laddats upp från Office Store uppdateras automatiskt inom några dagar efter det att den senaste uppdateringen är tillgänglig på Office Store.</span><span class="sxs-lookup"><span data-stu-id="56847-131">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
   
-## <a name="get-details-of-an-add-in"></a><span data-ttu-id="38924-132">Få information om ett tillägg</span><span class="sxs-lookup"><span data-stu-id="38924-132">Get details of an add-in</span></span>
+## <a name="get-details-of-an-add-in"></a><span data-ttu-id="56847-132">Få information om ett tillägg</span><span class="sxs-lookup"><span data-stu-id="56847-132">Get details of an add-in</span></span>
 
-<span data-ttu-id="38924-133">Kör cmdleten **Get-OrganizationAddIn** enligt nedan för att få information om alla tillägg som laddats upp till klientorganisationen, inklusive tilläggets produkt-ID.</span><span class="sxs-lookup"><span data-stu-id="38924-133">Run the **Get-OrganizationAddIn** cmdlet as shown below to get details of all add-ins uploaded to the tenant, included an add-in's product ID.</span></span>
+<span data-ttu-id="56847-133">Kör cmdleten **Get-OrganizationAddIn** enligt nedan för att få information om alla tillägg som laddats upp till klientorganisationen, inklusive tilläggets produkt-ID.</span><span class="sxs-lookup"><span data-stu-id="56847-133">Run the **Get-OrganizationAddIn** cmdlet as shown below to get details of all add-ins uploaded to the tenant, included an add-in's product ID.</span></span>
   
 ```powershell
 Get-OrganizationAddIn
 ```
 
-<span data-ttu-id="38924-134">Kör **cmdleten Get-OrganizationAddIn** med ett värde för parametern  _ProductId_ för att ange vilket tillägg du vill hämta information för.</span><span class="sxs-lookup"><span data-stu-id="38924-134">Run the **Get-OrganizationAddIn** cmdlet with a value for the  _ProductId_ parameter to specify which add-in you want to retrieve details for.</span></span> 
+<span data-ttu-id="56847-134">Kör **cmdleten Get-OrganizationAddIn** med ett värde för parametern  _ProductId_ för att ange vilket tillägg du vill hämta information för.</span><span class="sxs-lookup"><span data-stu-id="56847-134">Run the **Get-OrganizationAddIn** cmdlet with a value for the  _ProductId_ parameter to specify which add-in you want to retrieve details for.</span></span> 
   
 ```powershell
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-<span data-ttu-id="38924-135">För att få fullständig information om alla tillägg plus tilldelade användare och grupper ska du pipa utdata från cmdlet:en **Get-OrganizationAddIn** till cmdleten Format-List, som du ser i följande exempel.</span><span class="sxs-lookup"><span data-stu-id="38924-135">To get full details of all the add-ins plus the assigned users and groups, pipe the output of the **Get-OrganizationAddIn** cmdlet to the Format-List cmdlet, as shown in the following example.</span></span>
+<span data-ttu-id="56847-135">För att få fullständig information om alla tillägg plus tilldelade användare och grupper ska du pipa utdata från cmdlet:en **Get-OrganizationAddIn** till cmdleten Format-List, som du ser i följande exempel.</span><span class="sxs-lookup"><span data-stu-id="56847-135">To get full details of all the add-ins plus the assigned users and groups, pipe the output of the **Get-OrganizationAddIn** cmdlet to the Format-List cmdlet, as shown in the following example.</span></span>
   
 ```powershell
 foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
-## <a name="turn-on-or-turn-off-an-add-in"></a><span data-ttu-id="38924-136">Aktivera eller inaktivera ett tillägg</span><span class="sxs-lookup"><span data-stu-id="38924-136">Turn on or turn off an add-in</span></span>
+## <a name="turn-on-or-turn-off-an-add-in"></a><span data-ttu-id="56847-136">Aktivera eller inaktivera ett tillägg</span><span class="sxs-lookup"><span data-stu-id="56847-136">Turn on or turn off an add-in</span></span>
 
-<span data-ttu-id="38924-137">Om du vill inaktivera ett tillägg så att användare och grupper som har tilldelats det inte längre har åtkomst kör du cmdleten **Set-OrganizationAddIn** med parametern  _ProductId_ och parametern  _Enabled_ inställda på , som i följande  `$false` exempel.</span><span class="sxs-lookup"><span data-stu-id="38924-137">To turn off an add-in so users and groups that are assigned to it will no longer have access, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_ parameter and the  _Enabled_ parameter set to  `$false`, as shown in the following example.</span></span>
+<span data-ttu-id="56847-137">Om du vill inaktivera ett tillägg så att användare och grupper som har tilldelats det inte längre har åtkomst kör du cmdleten **Set-OrganizationAddIn** med parametern  _ProductId_ och parametern  _Enabled_ inställda på , som i följande  `$false` exempel.</span><span class="sxs-lookup"><span data-stu-id="56847-137">To turn off an add-in so users and groups that are assigned to it will no longer have access, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_ parameter and the  _Enabled_ parameter set to  `$false`, as shown in the following example.</span></span>
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
 ```
 
-<span data-ttu-id="38924-138">Om du vill aktivera tillägget igen kör du samma cmdlet med  _parametern Enabled_ inställd på  `$true` .</span><span class="sxs-lookup"><span data-stu-id="38924-138">To turn an add-in back on, run the same cmdlet with the  _Enabled_ parameter set to  `$true`.</span></span>
+<span data-ttu-id="56847-138">Om du vill aktivera tillägget igen kör du samma cmdlet med  _parametern Enabled_ inställd på  `$true` .</span><span class="sxs-lookup"><span data-stu-id="56847-138">To turn an add-in back on, run the same cmdlet with the  _Enabled_ parameter set to  `$true`.</span></span>
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $true
 ```
 
-## <a name="add-or-remove-users-from-an-add-in"></a><span data-ttu-id="38924-139">Lägga till eller ta bort användare från ett tillägg</span><span class="sxs-lookup"><span data-stu-id="38924-139">Add or remove users from an add-in</span></span>
+## <a name="add-or-remove-users-from-an-add-in"></a><span data-ttu-id="56847-139">Lägga till eller ta bort användare från ett tillägg</span><span class="sxs-lookup"><span data-stu-id="56847-139">Add or remove users from an add-in</span></span>
 
-<span data-ttu-id="38924-140">Om du vill lägga till användare och grupper i ett specifikt tillägg kör du cmdleten **Set-OrganizationAddInAssignments** med parametrarna _ProductId,_ _Add_ _och Members._</span><span class="sxs-lookup"><span data-stu-id="38924-140">To add users and groups to a specific add-in, run the **Set-OrganizationAddInAssignments** cmdlet with the  _ProductId_,  _Add_, and  _Members_ parameters.</span></span> <span data-ttu-id="38924-141">Avgränsa e-postadresserna till medlemmarna med kommatecken.</span><span class="sxs-lookup"><span data-stu-id="38924-141">Separate the email addresses of members with a comma.</span></span> 
+<span data-ttu-id="56847-140">Om du vill lägga till användare och grupper i ett specifikt tillägg kör du cmdleten **Set-OrganizationAddInAssignments** med parametrarna _ProductId,_ _Add_ _och Members._</span><span class="sxs-lookup"><span data-stu-id="56847-140">To add users and groups to a specific add-in, run the **Set-OrganizationAddInAssignments** cmdlet with the  _ProductId_,  _Add_, and  _Members_ parameters.</span></span> <span data-ttu-id="56847-141">Avgränsa e-postadresserna till medlemmarna med kommatecken.</span><span class="sxs-lookup"><span data-stu-id="56847-141">Separate the email addresses of members with a comma.</span></span> 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-<span data-ttu-id="38924-142">Om du vill ta bort användare och grupper kör du samma cmdlet med _parametern Remove._</span><span class="sxs-lookup"><span data-stu-id="38924-142">To remove users and groups, run the same cmdlet using the  _Remove_ parameter.</span></span> 
+<span data-ttu-id="56847-142">Om du vill ta bort användare och grupper kör du samma cmdlet med _parametern Remove._</span><span class="sxs-lookup"><span data-stu-id="56847-142">To remove users and groups, run the same cmdlet using the  _Remove_ parameter.</span></span> 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-<span data-ttu-id="38924-143">Om du vill tilldela ett tillägg till alla användare i klientorganisationen kör du samma cmdlet med parametern  _AssignToEveryone_ med värdet inställt på  `$true` .</span><span class="sxs-lookup"><span data-stu-id="38924-143">To assign an add-in to all users on the tenant, run the same cmdlet using the  _AssignToEveryone_ parameter with the value set to  `$true`.</span></span>
+<span data-ttu-id="56847-143">Om du vill tilldela ett tillägg till alla användare i klientorganisationen kör du samma cmdlet med parametern  _AssignToEveryone_ med värdet inställt på  `$true` .</span><span class="sxs-lookup"><span data-stu-id="56847-143">To assign an add-in to all users on the tenant, run the same cmdlet using the  _AssignToEveryone_ parameter with the value set to  `$true`.</span></span>
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-<span data-ttu-id="38924-144">Om du inte vill tilldela ett tillägg till alla och återgå till de tidigare tilldelade användarna och grupperna, kan du köra samma cmdlet och inaktivera parametern  _AssignToEveryone_ genom att ange dess värde till  `$false` .</span><span class="sxs-lookup"><span data-stu-id="38924-144">To not assign an add-in to everyone and revert to the previously assigned users and groups, you can run the same cmdlet and turn off the  _AssignToEveryone_ parameter by setting its value to  `$false`.</span></span>
+<span data-ttu-id="56847-144">Om du inte vill tilldela ett tillägg till alla och återgå till de tidigare tilldelade användarna och grupperna, kan du köra samma cmdlet och inaktivera parametern  _AssignToEveryone_ genom att ange dess värde till  `$false` .</span><span class="sxs-lookup"><span data-stu-id="56847-144">To not assign an add-in to everyone and revert to the previously assigned users and groups, you can run the same cmdlet and turn off the  _AssignToEveryone_ parameter by setting its value to  `$false`.</span></span>
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
 ```
 
-## <a name="update-an-add-in"></a><span data-ttu-id="38924-145">Uppdatera ett tillägg</span><span class="sxs-lookup"><span data-stu-id="38924-145">Update an add-in</span></span>
+## <a name="update-an-add-in"></a><span data-ttu-id="56847-145">Uppdatera ett tillägg</span><span class="sxs-lookup"><span data-stu-id="56847-145">Update an add-in</span></span>
 
-<span data-ttu-id="38924-146">Om du vill uppdatera ett tillägg från ett manifest kör du **cmdleten Set-OrganizationAddIn** med parametrarna  _ProductId,_  _ManifestPath_ och  _Locale,_ enligt följande exempel.</span><span class="sxs-lookup"><span data-stu-id="38924-146">To update an add-in from a manifest, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_,  _ManifestPath_, and  _Locale_ parameters, as shown in the following example.</span></span> 
+<span data-ttu-id="56847-146">Om du vill uppdatera ett tillägg från ett manifest kör du **cmdleten Set-OrganizationAddIn** med parametrarna  _ProductId,_  _ManifestPath_ och  _Locale,_ enligt följande exempel.</span><span class="sxs-lookup"><span data-stu-id="56847-146">To update an add-in from a manifest, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_,  _ManifestPath_, and  _Locale_ parameters, as shown in the following example.</span></span> 
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
 > [!NOTE]
-> <span data-ttu-id="38924-147">Tillägg som laddats upp från Office Store uppdateras automatiskt inom några dagar efter det att den senaste uppdateringen blir tillgänglig i Office Store.</span><span class="sxs-lookup"><span data-stu-id="38924-147">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
+> <span data-ttu-id="56847-147">Tillägg som laddats upp från Office Store uppdateras automatiskt inom några dagar efter det att den senaste uppdateringen är tillgänglig på Office Store.</span><span class="sxs-lookup"><span data-stu-id="56847-147">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
   
-## <a name="delete-an-add-in"></a><span data-ttu-id="38924-148">Ta bort ett tillägg</span><span class="sxs-lookup"><span data-stu-id="38924-148">Delete an add-in</span></span>
+## <a name="delete-an-add-in"></a><span data-ttu-id="56847-148">Ta bort ett tillägg</span><span class="sxs-lookup"><span data-stu-id="56847-148">Delete an add-in</span></span>
 
-<span data-ttu-id="38924-149">Om du vill ta bort ett tillägg kör du **cmdleten Remove-OrganizationAddIn** med  _parametern ProductId,_ enligt följande exempel.</span><span class="sxs-lookup"><span data-stu-id="38924-149">To delete an add-in, run the **Remove-OrganizationAddIn** cmdlet with the  _ProductId_ parameter, as shown in the following example.</span></span> 
+<span data-ttu-id="56847-149">Om du vill ta bort ett tillägg kör du **cmdleten Remove-OrganizationAddIn** med  _parametern ProductId,_ enligt följande exempel.</span><span class="sxs-lookup"><span data-stu-id="56847-149">To delete an add-in, run the **Remove-OrganizationAddIn** cmdlet with the  _ProductId_ parameter, as shown in the following example.</span></span> 
   
 ```powershell
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
@@ -270,9 +270,9 @@ If an add-in has been deployed, it has to be removed from the cache in each comp
 
 -->
 
-## <a name="get-detailed-help-for-each-cmdlet"></a><span data-ttu-id="38924-150">Få detaljerad hjälp för varje cmdlet</span><span class="sxs-lookup"><span data-stu-id="38924-150">Get detailed help for each cmdlet</span></span>
+## <a name="get-detailed-help-for-each-cmdlet"></a><span data-ttu-id="56847-150">Få detaljerad hjälp för varje cmdlet</span><span class="sxs-lookup"><span data-stu-id="56847-150">Get detailed help for each cmdlet</span></span>
 
-<span data-ttu-id="38924-151">Du kan se detaljerad hjälp för varje cmdlet med hjälp av cmdleten Get-help.</span><span class="sxs-lookup"><span data-stu-id="38924-151">You can look at detailed help for each cmdlet by using the Get-help cmdlet.</span></span> <span data-ttu-id="38924-152">Följande cmdlet ger till exempel detaljerad information om Remove-OrganizationAddIn cmdlet.</span><span class="sxs-lookup"><span data-stu-id="38924-152">For example, the following cmdlet provides detailed information about the Remove-OrganizationAddIn cmdlet.</span></span>
+<span data-ttu-id="56847-151">Du kan se detaljerad hjälp för varje cmdlet med hjälp av cmdleten Get-help.</span><span class="sxs-lookup"><span data-stu-id="56847-151">You can look at detailed help for each cmdlet by using the Get-help cmdlet.</span></span> <span data-ttu-id="56847-152">Följande cmdlet ger till exempel detaljerad information om Remove-OrganizationAddIn cmdlet.</span><span class="sxs-lookup"><span data-stu-id="56847-152">For example, the following cmdlet provides detailed information about the Remove-OrganizationAddIn cmdlet.</span></span>
   
 ```powershell
 Get-help Remove-OrganizationAddIn -Full
