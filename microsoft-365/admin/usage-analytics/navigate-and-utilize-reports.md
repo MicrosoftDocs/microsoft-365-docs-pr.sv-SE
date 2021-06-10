@@ -69,9 +69,9 @@ Mer information om hur du kan anpassa rapporterna finns i [Anpassa rapporterna i
 
 Du kan hitta massor av ytterligare information i Power BI hjälpdokumentationen:
 
-- [Grundläggande begrepp i Power BI](/power-bi/service-basic-concepts)
+- [Power BI grundläggande begrepp](/power-bi/service-basic-concepts)
 
-    Läs mer om instrumentpanel, datauppsättningar, rapporter och andra Power BI-begrepp.
+    Läs mer om instrumentpanel, datauppsättningar, rapporter och andra Power BI begrepp.
 
 - [Kom igång med Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 

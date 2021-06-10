@@ -32,9 +32,9 @@ ms.locfileid: "51579224"
 ---
 # <a name="device-list-csv-file"></a>CSV-fil med enhetslista
 
-## <a name="device-list-csv-file-format"></a>Csv-filformat för enhetslistan
+## <a name="device-list-csv-file-format"></a>Enhetslista .csv filformat
 
-Om du vill hantera och distribuera enheter via Windows Autopilot behöver du en CSV-fil som innehåller specifik information om enheterna.
+För att hantera och distribuera enheter via Windows Autopilot behöver du en .csv som innehåller specifik information om enheterna.
   
 Kolumnerna i enhetslistfilen måste ha följande rubriker i angiven ordning:
   
@@ -50,7 +50,7 @@ När du lägger till enheter måste du också lägga till dem i en profil. En pr
   
 ## <a name="related-articles"></a>Relaterade artiklar
 
-[Dokumentation och resurser för Microsoft 365 för företag](../../business/index.yml)
+[Microsoft 365 dokumentation och resurser för företag](../../business/index.yml)
   
 [Komma igång med Microsoft 365 för företag](../../business/microsoft-365-business-overview.md)
   

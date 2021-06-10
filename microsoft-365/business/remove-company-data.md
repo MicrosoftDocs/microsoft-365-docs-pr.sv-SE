@@ -33,11 +33,11 @@ ms.locfileid: "51580003"
 ---
 # <a name="remove-company-data-from-devices"></a>Ta bort företagsdata från enheter
 
-Den här artikeln gäller Microsoft 365 Business Premium.
+Den här artikeln gäller för Microsoft 365 Business Premium.
 
 ## <a name="remove-company-data"></a>Ta bort företagsdata
 
-Du kan använda Microsoft 365 för företag för att [](app-protection-settings-for-android-and-ios.md) ta bort företagsdata som användarna har på sina enheter eller [Windows-datorer](protection-settings-for-windows-10-devices.md) som skyddas av Microsoft 365. **Företagsdata som tas bort från en enhet kan inte återställas**. 
+Du kan använda Microsoft 365 för företag för att ta bort [](app-protection-settings-for-android-and-ios.md) företagsdata som användarna har på sina enheter eller [Windows-datorer](protection-settings-for-windows-10-devices.md) som skyddas av Microsoft 365. **Företagsdata som tas bort från en enhet kan inte återställas**. 
   
 1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     

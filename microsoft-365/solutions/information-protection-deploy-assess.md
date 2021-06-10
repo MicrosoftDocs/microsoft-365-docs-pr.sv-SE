@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Bestäm vilka sekretessregler som gäller för data, relevanta scenarier, beredskap och vilka typer av känslig information som finns i din Microsoft 365-miljö.
+description: Fastställ sekretessregler för data, relevanta scenarier, beredskap och typer av känslig information som finns i din Microsoft 365 miljö.
 ms.openlocfilehash: 6801f0af70e08d2b4efdc9e27f1cb1f1d636b821
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "50929174"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Utvärdera datasekretessrisker och identifiera känsliga objekt med Microsoft 365
 
-Att utvärdera bestämmelser och risker för datasekretess som gäller för organisationen är ett viktigt första steg innan relaterade förbättringsåtgärder implementeras, inklusive sådana som kan uppnås med Microsoft 365-funktioner och -tjänster. 
+Att utvärdera de bestämmelser och risker för datasekretess som gäller för organisationen är ett viktigt första steg innan relaterade förbättringsåtgärder implementeras, inklusive sådana som kan uppnås Microsoft 365 funktioner och tjänster. 
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>Potentiellt tillämpliga sekretessregler för data
 
@@ -52,7 +52,7 @@ I USA omfattar dessa California Consumer Protection Act[(CCPA),](/compliance/reg
 
 Runt om i världen kan ytterligare exempel vara Tysklands National GDPR Implementation Act (BDSG), Brazil Data Protection Act (LGPD) och många fler.
 
-## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Mappning av regler till kategorier för teknisk kontroll i Microsoft 365
+## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Regelmappning till Microsoft 365 kategorier för teknisk kontroll
 
 Många av de datasekretessrelaterade bestämmelser har överlappande krav, så du bör förstå vilka bestämmelser de omfattas av innan du utvecklar ett tekniskt kontrollschema. 
 
@@ -63,7 +63,7 @@ Den här tabellen innehåller utdrag från ett urval av sekretessregler för dat
 | GDPR | Artikel 5(1)(f) | Personuppgifter ska bearbetas på ett sätt som säkerställer tillräcklig säkerhet för personuppgifter, inklusive skydd mot obehörig eller olaglig bearbetning och mot oavsiktlig förlust, intrång eller skada, genom att använda lämpliga tekniska åtgärder eller organisationsåtgärder ('integritet och konfidentialitet'.  |  (Alla) <br> Identitet <br> Enhet <br> Skydd mot hot <br> Skydda information <br> Reglera information <br> Upptäcka och agera |
 |  | Artikel (32)(1)(a) | Med hänsyn till grafikens status, kostnader för implementering och typ, omfattning, sammanhang och syftet med bearbetningen samt risken för olika sannolikheter och allvarlighetsgrad för rättigheter och funktionshinder för naturliga personer, ska kontrollanten och processorn implementera lämpliga tekniska och organisatoriska åtgärder för att säkerställa en säkerhetsnivå som är lämplig för risken , inklusive hur mycket som är lämpligt: (a) anonymisering och kryptering av personuppgifter. | Skydda information |
 |  | Artikel (13)(2)(a) | "... den registeransvarige ska, vid den tidpunkt då personuppgifter inhämtas, ge registrerade uppgifter med följande ytterligare information som behövs för att säkerställa en rättvis och transparent bearbetning: (a) den period då personuppgifterna ska lagras, eller, om det inte är möjligt, de villkor som används för att fastställa den perioden. | Reglera information |
-|  | Artikel (15)(1)(e) | Den registrerade har rätt att från kontrollanten bekräfta huruvida personuppgifter om honom eller henne bearbetas och, i sådana fall, åtkomst till personuppgifter och följande information: (e) det finns rätt att begära från kontrollanten för att radera eller radera personliga data eller begränsning av bearbetningen av personuppgifter om de data som är aktuella eller objekt för sådan bearbetning | Upptäcka och agera |
+|  | Artikel (15)(1)(e) | Den registrerade har rätt att från kontrollanten bekräfta huruvida personuppgifter om honom eller henne bearbetas och, i sådana fall, åtkomst till personuppgifter och följande information: (e) det finns rätt att begära från kontrollanten för att radera eller radera personliga data eller begränsning av bearbetningen av personuppgifter om de data som är aktuella eller objekt för sådana data bearbetar | Upptäcka och agera |
 | LGPD | Artikel 46 | Bearbetande ombud ska vidta säkerhets-, tekniska och administrativa åtgärder som kan skydda personuppgifter mot obehörig åtkomst och oavsiktliga eller olagliga situationer av intrång, förlust, ändring, kommunikation eller någon typ av obehörig behandling. | Skydda information <br> Reglera information <br> Upptäcka och agera|
 |  | Artikel 48 | Kontrollanten måste informera den nationella behörigheten och till den registrerade om ett säkerhetstillbud som kan skapa risk eller relevant skada för datapersonerna. | Upptäcka och agera |
 | HIPPA-HITECH | 45 CFR 164.312(e)(1) | Implementera tekniska säkerhetsåtgärder för att skydda mot obehörig åtkomst till elektronisk skyddad hälsoinformation som skickas via ett elektroniskt kommunikationsnätverk. | Skydda information |
@@ -110,7 +110,7 @@ Använd följande 3-stegsram för att komma igång om du inte redan har gjort en
 
 Du behöver mäta exponering av datasekretessrisker baserat på vilken typ av personuppgifter den hanterar för närvarande, var den lagras, vilka skyddskontroller som sätts på den, hur livscykeln hanteras och vem som har åtkomst till den. 
 
-Som en utgångspunkt är det viktigt att inventera vilka typer av personliga data som finns i din Microsoft 365-miljö. Använd följande kategorier:
+Som en utgångspunkt är det viktigt att inventera vilka typer av personlig information som finns i din Microsoft 365 miljö. Använd följande kategorier:
 
 - Data om anställda som krävs för att utföra dagliga affärsfunktioner
 - Data som organisationen har om sina företagskunder, partner och andra relationer i scenariot B2B (företag till företag)
@@ -120,7 +120,7 @@ Här är ett exempel på de olika typerna av data för typiska avdelningar i en 
 
 ![Typer av personliga data](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-Mycket av de personuppgifter som omfattas av sekretessförordningen samlas vanligtvis in och lagras utanför Microsoft 365. Personliga data från webbprogram eller mobila program som tillhör konsumenter måste ha exporterats från sådana program till Microsoft 365 för att datasekretessen ska granskas i Microsoft 365. 
+En stor del av den personliga information som omfattas av sekretesskydd för data samlas vanligtvis in och lagras utanför Microsoft 365. All personlig information från webbprogram som tillhör konsumenter eller mobila program måste ha exporterats från sådana program till Microsoft 365 för att kunna bli granskad av datasekretess inom Microsoft 365. 
 
 Exponering av datasekretess i Microsoft 365 kan vara mer begränsad i förhållande till dina webbprogram och CRM-system, vilket inte åtgärdas av den här lösningen.
 
@@ -143,7 +143,7 @@ Om en person lämnar ett företag har organisationer vanligtvis processer, proce
 För att tillgodose sådana behov bör organisationer ha processer och procedurer som tillgodoser preventativa, administrativa och korrigerande behov för att underlätta sådana förfrågningar, och se till att viss information om en anställd rimligen kan anses vara viktig för affärskontinuering. Till exempel information som en enskild person har redigerat en fil eller utfört en funktion. 
 
 >[!Note]
->Vi rekommenderar att du tar del av teknik för att övervaka och åtgärda personliga data i Microsoft 365 [i artikeln övervaka och svara.](information-protection-deploy-monitor-respond.md) Du kanske även vill använda automatiska klassificerings- och skyddsscheman för att kontrollera att personuppgifter kontrolleras medan de finns i organisationen, samt förhindra att de lämnar organisationen i skadliga aktörssituationer. Mer information [finns i artikeln om](information-protection-deploy-protect-information.md) att skydda information.
+>Information om tekniker för att åtgärda personliga data i Microsoft 365 finns i [artikeln om att övervaka och åtgärda.](information-protection-deploy-monitor-respond.md) Du kanske även vill använda automatiska klassificerings- och skyddsscheman för att kontrollera att personuppgifter kontrolleras medan de finns i organisationen, samt förhindra att de lämnar organisationen i skadliga aktörssituationer. Mer information [finns i artikeln om](information-protection-deploy-protect-information.md) att skydda information.
 >
  
 ### <a name="data-the-organization-has-about-its-business-customers-in-the-b2b-scenario"></a>Data som organisationen har om sina företagskunder i B2B-scenariot
@@ -167,9 +167,9 @@ Om organisationen inte använder så mycket insamling direkt från konsumentdata
 
 Att förstå exponeringen mot risk- och datasekretess är ett viktigt första steg, baserat på en grundläggande förståelse av organisationens personliga datascenarier.
 
-Om du inte har personuppgifter från konsumenter i din Microsoft 365-miljö eller om den begränsas till vissa delar av miljön och det finns en teknisk kontroll där det står att det finns exponering av data av konsumenttyp, kanske den tekniska kontrollen bara behöver vara anställd i delar av miljön med hög risk, inte överallt.
+Om du inte har personuppgifter från konsumenter i din Microsoft 365-miljö eller den begränsas till vissa delar av miljön och det finns en teknisk kontroll som visar att det finns exponering av data av konsumenttyp, kanske den tekniska kontrollen bara behöver användas i delar av miljön med hög risk, inte överallt.
 
-Även om en rekommendation för en extern organisation eller standardkontrolluppsättning, till exempel från Efterlevnadshanteraren i Microsoft 365, kan hjälpa till med att informera om din kontrollstrategi, bör ditt val av implementering drivs av information om datainventeringen för att mäta den verkliga risken.
+Även om en rekommendation för en extern organisation eller standardkontrolluppsättning, till exempel från Efterlevnadshanteraren i Microsoft 365, kan hjälpa dig att informera om din kontrollstrategi, bör ditt val av implementering drivs av information om datainventeringen för att mäta den verkliga risken.
 
 De flesta organisationer kommer att ha en viss exponering för någon av ovanstående scenarier. Det är viktigt att ta en metod där det är viktigt att ha en metod att bedöma.
 
@@ -189,11 +189,11 @@ GDPR-utvärdering består av följande avsnitt:
 | Principhantering | <ol><li>Hur hanterar du dina bindningsregler (BCR-regler)? </li><li>Spårar du medgivande för data? </li><li> Omfattar kontrakten dataklassificering och hanteringskrav från 1 till 5 och 5 är helt övertäckta? </li><li>Har du och regelbundet testar en svarsplan för incidenter? </li><li>Vilken princip använder du för att hantera åtkomst? </li></ol>|
 |||
  
-## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Steg 3: Identifiera typer av känslig information som förekommer i din Microsoft 365-miljö. 
+## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Steg 3: Identifiera typer av känslig information som förekommer i Microsoft 365 miljö. 
 
-I det här steget måste du identifiera vissa typer av känslig information som är föremål för särskilda regler och förekomster av dem i din Microsoft 365-miljö. 
+Det här steget omfattar identifiering av särskilda typer av känslig information som är föremål för särskilda regler och förekomst av dem i din Microsoft 365 miljö. 
 
-Att hitta innehåll i din miljö som innehåller personligt kan vara en överväldigande uppgift, tidigare med en kombination av att använda efterlevnadssökning, eDiscovery, Advanced eDiscovery, DLP och granskning. 
+Att hitta innehåll i din miljö som innehåller personligt kan vara en överväldigande uppgift, tidigare tillsammans med att använda efterlevnadssökning, eDiscovery, Advanced eDiscovery, DLP och granskning. 
 
 Med den nya lösningen för **dataklassificering** i administrationscentret för [](../compliance/data-classification-content-explorer.md) Microsoft-efterlevnad har det blivit mycket enklare med funktionen Innehållsutforskaren, som fungerar med inbyggda eller anpassade typer av känslig information, inklusive sådana som rör personuppgifter.
  
@@ -212,18 +212,18 @@ Du kan också anpassa en befintlig, inbyggd typ av känslig information.
 Mer information finns i följande artiklar:
 
 - [Anpassa en inbyggd typ av känslig information](../compliance/customize-a-built-in-sensitive-information-type.md)
-- [Läs mer om typer av känslig information](../compliance/sensitive-information-type-learn-about.md)
+- [Mer information om typer av känslig information](../compliance/sensitive-information-type-learn-about.md)
 - [Skapa en anpassad typ av känslig information i Säkerhets- & Säkerhets- och efterlevnadscenter](../compliance/create-a-custom-sensitive-information-type.md)
-- [Skapa en anpassad typ av känslig information i Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Skapa anpassade typer av känslig information med exakt datamatchning baserad klassificering](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Skapa en anpassad typ av känslig information i Säkerhets- och efterlevnadscenter PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Skapa anpassade typer av känslig information med Exact Data Match-baserad klassificering](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>Innehållsutforskaren
 
-Det nya verktyget Innehållsutforskaren i administrationscentret för [](../compliance/data-classification-content-explorer.md) Efterlevnad för Microsoft 365 är ett viktigt verktyg för att fastställa förekomsten av känsliga objekt i miljön. Det är ett automatiskt verktyg för första och pågående genomsökning av hela Microsoft 365-prenumerationen för förekomst av typer av känslig information och visning av resultaten.
+Ett viktigt verktyg för att fastställa förekomsten av känsliga [](../compliance/data-classification-content-explorer.md) objekt i din miljö är den nya Innehållsutforskaren i administrationscentret för Microsoft 365 efterlevnad. Det är ett automatiskt verktyg för första och pågående genomsökning av hela Microsoft 365-prenumerationen för förekomst av typer av känslig information och visning av resultaten.
  
 Med det nya verktyget Innehållsutforskaren kan du snabbt identifiera platser för känsliga objekt i din miljö med hjälp av inbyggda typer av känslig information eller anpassade. Det kan innebära att upprätta en process och tilldelad ansvar att regelbundet undersöka närvaro och plats för känsliga objekt.
 
-Tillsammans med de andra stegen som beskrivs i den här artikeln utgör detta en utgångspunkt för att identifiera den totala exponeringen, beredskapen och platsen för känsliga objekt som ska skyddas genom planerad konfiguration och övervakning av Microsoft 365. 
+Tillsammans med de andra stegen som beskrivs i den här artikeln utgör detta en utgångspunkt för att identifiera den totala exponeringen, beredskapen och placeringen av känsliga objekt som ska skyddas genom planerad Microsoft 365 konfiguration och övervakning. 
 
 ### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>Andra metoder för att identifiera personuppgifter i din miljö
 
@@ -231,7 +231,7 @@ Förutom Innehållsutforskaren har organisationer tillgång till funktionen Inne
 
 Detaljerade instruktioner om hur du använder innehållssökning för identifiering av personuppgifter finns i den [här artikeln.](/compliance/regulatory/gdpr) Innehållssökning och andra identifieringstekniker utforskas också i [DSR för GDPR och CCPA.](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs)
 
-Ytterligare insikter om and reparationsteknik för personuppgifter i Microsoft 365 finns i artikeln om övervakning [och svar.](information-protection-deploy-monitor-respond.md)
+Ytterligare insikter om lösningar och tekniker för personliga data i Microsoft 365 finns i artikeln om övervakning [och svar.](information-protection-deploy-monitor-respond.md)
 
 > [!NOTE]
 > Information om hur du hittar känslig information i filer som lagras lokalt finns i [Azure Information Protection.](/azure/information-protection/quickstart-findsensitiveinfo)

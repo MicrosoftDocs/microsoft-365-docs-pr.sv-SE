@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: Sammanfattning Konfigurera Microsoft Azure-infrastrukturen för federerad autentisering med hög tillgänglighet för Microsoft 365.
+description: 'Sammanfattning: Konfigurera Microsoft Azure-infrastrukturen för federerad autentisering med hög tillgänglighet för Microsoft 365.'
 ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "50929114"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fas 1 med hög tillgänglighet för federerad autentisering: Konfigurera Azure
 
-I den här fasen skapar du resursgrupper, virtuellt nätverk (VNet) och tillgänglighetsuppsättningar i Azure som ska vara värd för virtuella datorer i fas 2, 3 och 4. Du måste slutföra den här fasen innan du går vidare [till fas 2: Konfigurera domänkontrollanter](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Se [Distribuera hög tillgänglighet federerad autentisering för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) för alla faser.
+I den här fasen skapar du resursgrupper, virtuellt nätverk (VNet) och tillgänglighetsuppsättningar i Azure som ska vara värd för virtuella datorer i fas 2, 3 och 4. Du måste slutföra den här fasen innan du går vidare [till fas 2: Konfigurera domänkontrollanter](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Se [Distribuera federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) för alla faser.
   
 Azure måste tillhandahållas med följande grundläggande komponenter:
   
@@ -106,19 +106,19 @@ För de lokala nätverksadressutrymmena fyller du i Tabell L. Observera att tre 
    
  **Tabell L: Adressprefix för det lokala nätverket**
   
-Nu börjar vi bygga Azure-infrastrukturen för din externa autentisering för Microsoft 365.
+Nu börjar vi bygga Azure-infrastrukturen för din externa autentisering för att Microsoft 365.
   
 > [!NOTE]
-> Följande kommandouppsättningar använder den senaste versionen av Azure PowerShell. Se [Komma igång med Azure PowerShell.](/powershell/azure/get-started-azureps) 
+> Följande kommandouppsättningar använder den senaste versionen av Azure PowerShell. Se [Komma igång med Azure PowerShell](/powershell/azure/get-started-azureps). 
   
-Börja med att starta en uppmaning om Azure PowerShell och logga in på ditt konto.
+Börja med att Azure PowerShell och logga in på ditt konto.
   
 ```powershell
 Connect-AzAccount
 ```
 
 > [!TIP]
-> Använd den här arbetsboken för Microsoft Excel-konfiguration om du vill skapa PowerShell-kommandoblock som är färdiga att köra baserat på [dina egna inställningar.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
+> Om du vill skapa PowerShell-kommandoblock som är färdiga att köra baserat på dina anpassade inställningar använder du den [här Microsoft Excel konfigurationsarbetsboken](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 Hämta ditt prenumerationsnamn med följande kommando.
   
@@ -126,7 +126,7 @@ Hämta ditt prenumerationsnamn med följande kommando.
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-För äldre versioner av Azure PowerShell använder du det här kommandot i stället.
+För äldre versioner av Azure PowerShell ska du använda det här kommandot i stället.
   
 ```powershell
 Get-AzSubscription | Sort Name | Select SubscriptionName
@@ -159,25 +159,25 @@ Fyll i följande tabell för uppsättningen unika resursgruppnamn.
 Skapa de nya resursgrupperna med dessa kommandon.
   
 ```powershell
-$locName="<an Azure location, such as West US>"
-$rgName="<Table R - Item 1 - Name column>"
+$locName="<an Azure location, such as West US>&quot;
+$rgName=&quot;<Table R - Item 1 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 2 - Name column>"
+$rgName=&quot;<Table R - Item 2 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 3 - Name column>"
+$rgName=&quot;<Table R - Item 3 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 4 - Name column>"
+$rgName=&quot;<Table R - Item 4 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
 Därefter skapar du det virtuella Azure-nätverket och dess undernät.
   
 ```powershell
-$rgName="<Table R - Item 4 - Resource group name column>"
-$locName="<your Azure location>"
-$vnetName="<Table V - Item 1 - Value column>"
-$vnetAddrPrefix="<Table V - Item 4 - Value column>"
-$dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
+$rgName=&quot;<Table R - Item 4 - Resource group name column>&quot;
+$locName=&quot;<your Azure location>&quot;
+$vnetName=&quot;<Table V - Item 1 - Value column>&quot;
+$vnetAddrPrefix=&quot;<Table V - Item 4 - Value column>&quot;
+$dnsServers=@( &quot;<Table D - Item 1 - DNS server IP address column>&quot;, &quot;<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
 $locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
@@ -283,7 +283,7 @@ Definiera sedan namnen på tre tillgänglighetsuppsättningar. Fyll i Tabell A.
   
 Du behöver dessa namn när du skapar de virtuella maskinerna i faserna 2, 3 och 4.
   
-Skapa de nya tillgänglighetsuppsättningarna med dessa Azure PowerShell-kommandon.
+Skapa de nya tillgänglighetsuppsättningarna med dessa Azure PowerShell kommandon.
   
 ```powershell
 $locName="<the Azure location for your new resource group>"
@@ -302,7 +302,7 @@ Det här är konfigurationen som är ett resultat av att den här fasen har slut
   
 **Fas 1: Azure-infrastrukturen för federerad autentisering med hög tillgänglighet för Microsoft 365**
 
-![Fas 1 av hög tillgänglighet Microsoft 365-federerad autentisering i Azure med Azure-infrastrukturen](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Fas 1 av hög tillgänglighet Microsoft 365 federerad autentisering i Azure med Azure-infrastrukturen](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Nästa steg
 
@@ -312,8 +312,8 @@ Använd [fas 2: Konfigurera domänkontrollanter så](high-availability-federated
 
 [Distribuera federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Federerad identitet för din Utvecklings-/testmiljö för Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Federerad identitet för din Microsoft 365 utvecklings-/testmiljö](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365-lösning och arkitekturcenter](../solutions/index.yml)
 
-[Förstå Microsoft 365-identitet och Azure Active Directory](about-microsoft-365-identity.md)
+[Förstå Microsoft 365 identitet och Azure Active Directory](about-microsoft-365-identity.md)

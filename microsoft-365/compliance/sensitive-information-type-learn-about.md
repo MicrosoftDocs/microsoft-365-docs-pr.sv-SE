@@ -38,8 +38,8 @@ Känsliga informationstyper är mönsterbaserade klassificerare. De kan identifi
 - [Principer för dataförlustskydd](dlp-learn-about-dlp.md) 
 - [Känslighetsetiketter](sensitivity-labels.md)
 - [Kvarhållningsetiketter](retention.md)
-- [Insider-riskhantering](insider-risk-management.md)
-- [Efterlevnad av kommunikation](communication-compliance.md)
+- [Hantering av insiderrisk](insider-risk-management.md)
+- [Kommunikationsefterlevnad](communication-compliance.md)
 - [Principer för automatiska policyer](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>Grundläggande delar av en typ av känslig information
@@ -54,7 +54,7 @@ Alla typer av känslig information definieras av följande fält:
     - Konfidensnivå – Konfidensnivåer (hög, medium, låg) återspeglar hur mycket stöd bevis upptäcktes tillsammans med det primära elementet. Ju mer understödjande bevis ett objekt innehåller, desto högre förtroende för att ett matchat objekt innehåller den känsliga information du letar efter.
     - Närhet – antal tecken mellan primärt element och stödelement
 
-![Diagram över bekräftande bevis och närhetsfönster](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagram över samarbetsbevis och närhetsfönster](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 Lär dig mer om konfidensnivåer i den här videon
 
@@ -149,14 +149,14 @@ Om du vill skapa anpassade typer av känslig information & Säkerhets- och efter
 > Microsoft 365 Informationsskydd har nu stöd för teckenuppsättningsspråk för förhandsgranskning med dubbla byte för:
 > - Kinesiska (förenklad)
 > - Kinesiska (traditionell)
-> - Korean
-> - Japanese
+> - Koreanska
+> - Japanska
 
->Det här stödet är tillgängligt för typer av känslig information. Mer information finns i Stöd för [informationsskydd](mip-dbcs-relnotes.md) för viktig information om teckenuppsättningar med dubbla byte (förhandsgranskning).
+>Stödet är tillgängligt för typer av känslig information. Se [Viktig information gällande stöd i Information Protection för teckenuppsättningar med dubbla byte (förhandsversion)](mip-dbcs-relnotes.md) för mer information.
 
 ## <a name="for-further-information"></a>Om du vill ha mer information
 - [Entitetsdefinitioner för typer av känslig information](sensitive-information-type-entity-definitions.md)
-- [Skapa en anpassad typ av känslig information](create-a-custom-sensitive-information-type.md)
+- [Skapa en anpassad känslig informationstyp](create-a-custom-sensitive-information-type.md)
 - [Skapa en anpassad typ av känslig information i PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
 Mer information om hur du använder känsliga informationstyper för att följa sekretessregler för data finns i Distribuera [informationsskydd](../solutions/information-protection-deploy.md) för bestämmelser om datasekretess med Microsoft 365 (aka.ms/m365dataprivacy).

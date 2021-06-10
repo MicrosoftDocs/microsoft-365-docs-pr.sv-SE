@@ -100,7 +100,7 @@ Gör så här:
 
 Du kan övervaka förloppet för enhetsregistreringen på huvudsidan. Möjliga delstater som rapporterats där är:
 
-| Delstat | Beskrivning |
+| Region | Beskrivning |
 |---------------|-------------|
 | Registrering väntar | Registreringen är inte klar än. Kom tillbaka senare. |
 | Registreringen misslyckades | Registreringen kunde inte slutföras. Mer information [finns i Felsökning av](#troubleshooting-device-registration) enhetsregistrering. |

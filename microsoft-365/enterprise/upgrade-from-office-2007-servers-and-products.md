@@ -22,7 +22,7 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Den här artikeln innehåller resurser som hjälper dig att uppgradera från Office 2007-servrar och -klienter allt eftersom supporten för Office 2007 har upphört.
+description: Den här artikeln innehåller resurser som hjälper dig att uppgradera från Office 2007-servrar och -klienter, eftersom supporten för Office 2007 har avslutats.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 36ae7ab70b8a95a7762f426f5a0d463083e7bc71
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -35,15 +35,15 @@ ms.locfileid: "50909292"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Om du använder Office 2007-produkter och -tjänster är det viktigt att stödet för dessa program har upphört. Överväg att flytta till Microsoft-molnet, med början från Microsoft 365. Använd den här artikeln som utgångspunkt för att granska dina alternativ och planera uppgraderingen.
+Om du använder produkter Office 2007 bör du vara medveten om att stödet för dessa program har upphört. Överväg att flytta till Microsoft-molnet, från och med Microsoft 365. Använd den här artikeln som utgångspunkt för att granska dina alternativ och planera uppgraderingen.
       
-## <a name="office-2007-planning-roadmaps"></a>Planeringsöversikter för Office 2007
+## <a name="office-2007-planning-roadmaps"></a>Office för 2007
   
 Supporten för Office 2007-produkter och -tjänster har upphört. Följande översikter hjälper dig att planera uppgraderingen nu.
 
 |**Planera innehåll**|**Datum då supporten upphörde**|
 |:-----|:-----|
-|[Översikt över slutet på supporten för Office 2007](/DeployOffice/office-2007-end-support-roadmap) <br/> |10 oktober 2017  <br/> |
+|[Office 2007 – Översikt för slutet av supporten](/DeployOffice/office-2007-end-support-roadmap) <br/> |10 oktober 2017  <br/> |
 |[Översikt över supporten som upphör för Exchange 2007](exchange-2007-end-of-support.md) <br/> |11 april 2017  <br/> |
 |[Översikt över supporten som upphör för SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 oktober 2017  <br/> |
 |[Översikt över supporten som upphör för Project Server 2007](project-server-2007-end-of-support.md) <br/> |10 oktober 2017  <br/> |
@@ -68,4 +68,4 @@ Om du använder Office 2007-produkter och -program hemma kan du gå till den [h�
   
 [Microsoft Lifecycle-policy](/lifecycle/)
 
-[Planera uppgraderingen från Office 2007- eller Office 2010-servrar och -klienter](plan-upgrade-previous-versions-office.md)
+[Planera uppgraderingen från Office 2007 eller Office 2010-servrar och -klienter](plan-upgrade-previous-versions-office.md)

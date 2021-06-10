@@ -19,17 +19,17 @@ ms.locfileid: "51930227"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Konfigurera Microsoft Viva-ämnen
 
-Du kan använda administrationscentret för Microsoft 365 för att konfigurera [ämnen.](topic-experiences-overview.md) 
+Du kan använda Microsoft 365 för att konfigurera och konfigurera [ämnen.](topic-experiences-overview.md) 
 
 Det är viktigt att planera det bästa sättet att konfigurera ämnen i din miljö. Läs Planera för [Microsoft Viva Topics innan du](plan-topic-experiences.md) börjar med procedurerna i den här artikeln.
 
-Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör eller SharePoint-administratör för att få åtkomst till administrationscentret för Microsoft 365 och konfigurera Ämnen.
+Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör eller SharePoint administratör för att få åtkomst Microsoft 365 administrationscenter och konfigurera Ämnen.
 
-Om du har konfigurerat SharePoint så att [hanterade enheter](/sharepoint/control-access-from-unmanaged-devices)krävs måste du konfigurera Ämnen från en hanterad enhet.
+Om du har konfigurerat SharePoint kräver [hanterade enheter](/sharepoint/control-access-from-unmanaged-devices)måste du konfigurera Ämnen från en hanterad enhet.
 
 ## <a name="video-demonstration"></a>Videodemonstration
 
-Den här videon visar processen för att konfigurera ämnen i Microsoft 365.
+I den här videon visas processen för att konfigurera ämnen i Microsoft 365.
 
 <br>
 
@@ -49,10 +49,10 @@ För att tilldela licenser:
 
 3. Under **Licenser** väljer du **Viva Ämnen.**
 
-4. Kontrollera **att** sökningen med **Index (Viva Topics)** och **Viva** Topics är markerad under Appar.
+4. Kontrollera **att** Graph **Med Index (Viva Ämnen)** och **Viva** Ämnen under Appar är markerade.
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva Topics-licenser i administrationscentret för Microsoft 365](../media/topic-experiences-licenses.png)
+   > ![Microsoft Viva Topics-licenser i Microsoft 365 administrationscenter](../media/topic-experiences-licenses.png)
 
 5. Klicka på **Spara ändringar**.
 
@@ -62,20 +62,20 @@ Det kan ta upp till en timme för användarna att få åtkomst till Ämnen när 
 
 Så här ställer du in ämnen
 
-1. I [administrationscentret för Microsoft 365](https://admin.microsoft.com)väljer **du Konfigurera** och visar sedan **avsnittet Filer och** innehåll.
-2. I avsnittet **Filer och innehåll** klickar du på Anslut personer till **kunskap.**
+1. I Microsoft 365 [väljer du](https://admin.microsoft.com) **Konfigurera** och visar sedan **avsnittet Filer och** innehåll.
+2. I avsnittet **Filer och innehåll** klickar du på Dela Anslut att få kunskap **om**.
 
-    ![Koppla personer till kunskap](../media/admin-org-knowledge-options.png) 
+    ![Anslut att få kunskap](../media/admin-org-knowledge-options.png) 
 
-3. På sidan **Anslut personer till kunskap** klickar du på Kom **igång** så får du de steg för steg som gäller installationen.
+3. På sidan **Anslut att få information** klickar du på **Kom** igång för att gå igenom installationsprocessen.
 
     ![Komma igång](../media/k-get-started.png) 
 
-4. På sidan **Välj hur Viva Ämnen kan hitta ämnen** konfigurerar du identifiering av ämnen. I avsnittet **Välj SharePoint-ämneskällor** väljer du vilka SharePoint-webbplatser som crawlas som källor för ämnen under identifieringen. Välj mellan:
-    - **Alla webbplatser:** Alla SharePoint-webbplatser i organisationen. Det omfattar nuvarande och framtida webbplatser.
+4. På sidan **Välj hur Viva Ämnen kan hitta ämnen** konfigurerar du identifiering av ämnen. I avsnittet **Välj SharePoint ämneskällor** väljer du vilka SharePoint ska crawlas som källor för ämnen under identifieringen. Välj mellan:
+    - **Alla webbplatser:** alla SharePoint webbplatser i organisationen. Det omfattar nuvarande och framtida webbplatser.
     - **Alla, förutom valda webbplatser:** Skriv namnen på de webbplatser som du vill utesluta.  Du kan också ladda upp en lista över webbplatser som du vill avanmäla från identifiering. Webbplatser som skapas i framtiden kommer att ingå som källor för upptäckt av ämnen. 
     - **Endast valda webbplatser**: Skriv namnen på de webbplatser som du vill ska ingå. Du kan också ladda upp en lista med webbplatser. Webbplatser som skapas i framtiden inkluderas inte som källor för ämnesidentifiering.
-    - **Inga webbplatser**: Inkludera inte några SharePoint-webbplatser.
+    - **Inga webbplatser**: Inkludera inte några SharePoint webbplatser.
 
     ![Välj hur du hittar ämnen](../media/ksetup1.png) 
    
@@ -89,7 +89,7 @@ Så här ställer du in ämnen
 
     #### <a name="how-to-exclude-topics-by-name"></a>Så här utesluter du ämnen efter namn    
 
-    Om du behöver utesluta ämnen efter att ha valt Exkludera ämnen efter namn laddar du ned CSV-mallen och uppdaterar den med listan över ämnen som du vill utesluta från dina identifieringsresultat.
+    Om du behöver utesluta ämnen efter att ha valt Exkludera ämnen efter namn **laddar** du ned .csv-mallen och uppdaterar den med listan med ämnen som du vill utesluta från dina identifieringsresultat.
 
     ![Utesluta ämnen i CSV-mallen](../media/exclude-topics-csv.png) 
 
@@ -101,21 +101,21 @@ Så här ställer du in ämnen
     - **Står för (valfritt)**: Om du vill utesluta en förkortning skriver du orden förkortningen står för.
     - **MatchType-Exact/Partial**: Ange om namnet du angav var en *exakt eller* *delvis* matchningstyp.
 
-    När du har slutfört och sparat CSV-filen väljer du Bläddra **för att** leta reda på och välja den.
+    När du har slutfört och sparat filen .csv väljer du Bläddra **för att** leta reda på och markera den.
     
     Välj **Nästa**.
 
-6. På sidan **Vilka som kan se ämnen och var de kan se dem** konfigurerar du avsnittets synlighet. I inställningen **Vilka kan se ämnen** väljer du vilka som ska ha åtkomst till ämnesinformation, till exempel markerade ämnen, ämneskort, ämnessvar i sökningar och ämnessidor. Du kan välja:
+6. På sidan **Vem kan se ämnen och var de kan se dem** konfigurerar du synligheten för avsnittet. I avsnittet **Vem se** inställningen för ämnen väljer du vilka som ska ha åtkomst till ämnesinformation, till exempel markerade ämnen, ämneskort, ämnessvar i sökningar och ämnessidor. Du kan välja:
     - **Alla i min organisation**
     - **Endast valda personer eller säkerhetsgrupper**
     - **Ingen**
 
-    ![Vilka kan se ämnen](../media/ksetup2.png)  
+    ![Vem kan se avsnitt](../media/ksetup2.png)  
 
     > [!Note] 
     > Med den här inställningen kan du välja vilken användare som helst i organisationen, men endast användare som har tilldelats ämneserfarenhetslicenser kan visa ämnen.
 
-7. På sidan **Behörigheter för ämneshantering** väljer du vilka som ska kunna skapa, redigera eller hantera ämnen. I avsnittet **Vem kan skapa och redigera ämnen** kan du välja:
+7. På sidan **Behörigheter för ämneshantering** väljer du vilka som ska kunna skapa, redigera eller hantera ämnen. I avsnittet **Vem skapa och redigera ämnen** kan du välja:
     - **Alla i min organisation**
     - **Endast valda personer eller säkerhetsgrupper**
     - **Ingen**
@@ -140,15 +140,15 @@ Så här ställer du in ämnen
 
 11. Sidan **Viva Ämnen som** har aktiverats visas och bekräftar att systemet nu börjar analysera valda webbplatser för ämnen och skapa webbplatsen för ämnescenter. Välj **Klar**.
 
-12. Du kommer nu tillbaka till **kunskapssidan för Anslut personer till** kunskap. På den här sidan kan du välja **Hantera** om du vill göra ändringar i dina konfigurationsinställningar. 
+12. Du kommer nu tillbaka till sidan Anslut **personer på kunskapssidan.** På den här sidan kan du välja **Hantera** om du vill göra ändringar i dina konfigurationsinställningar. 
 
-    ![Inställningar som används](../media/ksetup7.png)    
+    ![Inställningar tillämpas](../media/ksetup7.png)    
 
 Observera att första gången ämnesidentifiering är aktiverat kan det ta upp till två veckor för alla föreslagna ämnen att visas i vyn Hantera ämnen. Ämnesidentifiering fortsätter allt eftersom nytt innehåll eller uppdateringar av innehåll görs. Det är normalt att ha fluktuationer i antalet föreslagna ämnen i organisationen eftersom Viva Topics utvärderar ny information.
 
 ## <a name="manage-topic-experiences"></a>Hantera ämnesupplevelser
 
-När du har ställt in Ämnen kan du ändra inställningarna som du valde vid installationen i administrationscentret för [Microsoft 365.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Se följande exempel:
+När du har ställt in Ämnen kan du ändra de inställningar som du valde under installationen Microsoft 365 [administrationscentret.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Se följande exempel:
 
 - [Hantera identifiering av ämnen i Microsoft Viva-ämnen](topic-experiences-discovery.md)
 - [Hantera synlighet för ämnen i Microsoft Viva-ämnen](topic-experiences-knowledge-rules.md)

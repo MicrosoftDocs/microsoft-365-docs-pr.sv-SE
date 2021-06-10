@@ -26,7 +26,7 @@ ms.locfileid: "50928430"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Övervaka och svara på sekretessincidenter för data i din organisation
 
-Microsoft 365-funktioner är tillgängliga så att du kan övervaka, undersöka och svara på datasekretessincidenter i din organisation när du driftiserar relaterade funktioner. Att ha processer, procedurer och annan dokumentation för var och en av dessa kan också vara viktigt för att visa efterlevnad för reglerande myndigheter.
+Microsoft 365 funktioner finns tillgängliga så att du kan övervaka, undersöka och svara på datasekretessincidenter i din organisation när du driftiserar relaterade funktioner. Att ha processer, procedurer och annan dokumentation för var och en av dessa kan också vara viktigt för att visa efterlevnad för reglerande myndigheter.
 
 De omfattar: 
 
@@ -56,7 +56,7 @@ Datasekretessbestämmelser uppmanar vanligtvis till följande för övervakning 
 
 Din organisation kan också vilja utföra övervaknings- och svarsaktiviteter för andra ändamål, till exempel för andra efterlevnadsbehov eller av företagsskäl. Att upprätta ett system för övervakning och svar för datasekretess bör göras som en del av den övergripande uppföljnings- och svarsplaneringen, -implementeringen och -hanteringen.
 
-I den här artikeln finns användbara funktioner i Microsoft 365 för att få hjälp med att komma igång med övervakning och svarsschema i Microsoft 365 för att få svar på frågor som: 
+Den här artikeln innehåller användbara funktioner i Microsoft 365 för att hjälpa dig att komma igång med ett övervakning- och svarsschema i Microsoft 365 för bestämmelser om datasekretess: 
 
 - Vilken typ av teknik för övervakning, undersökning och rapportering finns tillgänglig för olika datatyper och källor?
 - Vilka mekanismer kommer att behövas för att hantera DSR-begäranden (Data Subject Requests) och alla åtgärder, till exempel anonymisering, redaion och borttagning.
@@ -72,12 +72,12 @@ Läs följande artiklar för att konfigurera granskning, avancerad granskning oc
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Data subject requests for the GDPR and CCPA
 
-Se [Data Subject Requests för GDPR och CCPA](/compliance/regulatory/gdpr-dsr-Office365) för information om hur du svarar på en DSR i Microsoft 365.
+Se [Data Subject Requests för GDPR och CCPA för](/compliance/regulatory/gdpr-dsr-Office365) information om hur du svarar på en DSR i Microsoft 365.
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Hantera borttagna användare i Microsoft Stream
 
-När en användare för Microsoft Stream tas bort från Azure Active Directory (Azure AD), och om användarens namn var kopplat till en publicerad Stream-video innan den tidpunkten, förblir deras e-postadress kopplad till videon. Se [Hantera borttagna användare från Microsoft Stream om du vill](/stream/managing-deleted-users) ta bort dem.
+När en användare för Microsoft Stream tas bort från Azure Active Directory (Azure AD), och användarens namn var kopplat till en publicerad Stream-video innan den tidpunkten, förblir deras e-postadress kopplad till videon. Se [Hantera borttagna användare från Microsoft Stream om du vill](/stream/managing-deleted-users) ta bort dem.
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Insider-riskhantering som ett effektivt verktyg
 
-[Insider-riskhantering i Microsoft 365](../compliance/insider-risk-management.md) är en funktion i administrationscentret för Microsofts efterlevnad som hjälper dig minimera den interna risken genom att du kan upptäcka, undersöka och vidta åtgärder för riskaktiviteter i organisationen.
+[Insider-riskhantering i Microsoft 365](../compliance/insider-risk-management.md) är en funktion i administrationscentret för Microsofts efterlevnad som hjälper dig att minimera den interna risken genom att du kan upptäcka, undersöka och vidta åtgärder för riskaktiviteter i organisationen.

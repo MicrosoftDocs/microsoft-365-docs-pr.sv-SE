@@ -33,7 +33,7 @@ ms.locfileid: "51579812"
 
 Ditt företag eller din kampanj kan göra det enklare för rättstvingande myndigheter att arkivera juridiska avgifter mot onlinebrottsligheter genom att lägga till en sekretess- och medgivandemeddelande på din inloggningssida.
 
-Du kan anpassa din inloggningssida med ditt varumärke. Du kan också lägga till text som hjälper användarna att logga in eller peka på juridiska krav eller begränsningar för att få åtkomst till Microsoft 365-resurser.
+Du kan anpassa din inloggningssida med ditt varumärke. Du kan också lägga till text som hjälper användarna att logga in eller peka på juridiska krav eller begränsningar för att få åtkomst Microsoft 365 resurser.
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>Anpassa texten på din inloggningssida
 

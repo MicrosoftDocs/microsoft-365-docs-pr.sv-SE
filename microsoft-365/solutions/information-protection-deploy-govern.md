@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Använd Microsoft 365-bevarandeetiketter och -principer för att hantera personliga data i Microsoft 365-miljön.
+description: Använd Microsoft 365 och bevarandeprinciper för att hantera personliga data i din Microsoft 365 miljö.
 ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -54,7 +54,7 @@ För informationsstyrning anropar datasekretessföreskrifter vanligtvis följand
 - Personuppgifter bör skyddas mot oavsiktlig bearbetning, förlust eller ändring med hjälp av verifierbara metoder.
 - Alla åtgärder som utförs mot personuppgifter ska dokumenteras och att dokumentationen ska behållas under en viss tidsperiod.
 
-Eftersom bestämmelser om datasekretess inte är särskilt specifika när det gäller lagring och borttagning av data måste andra faktorer beaktas som kan diktera riktlinjer för informationsstyrning för personlig information som lagras i din Microsoft 365-prenumeration. Här är några exempel:
+Eftersom bestämmelser om datasekretess inte är särskilt specifika när det gäller lagring och borttagning av data måste andra faktorer beaktas som kan diktera riktlinjer för informationsstyrning för personlig information som lagras i Microsoft 365-prenumerationen. Här är några exempel:
 
 - Föråldring av konsumentkonton efter 5 års inaktivitet och kräver borttagning eller anonymisering av kontodata efter den tidpunkten, vilket kräver att data och arbetsflöden som är relaterade till meddelanden och annan automation behöver fördelas mellan systemet.
 - Konfigurera regler för att behålla principer och procedurer relaterade till GDPR i tre år efter att de har ersatts, vilket överensstämmer med organisationens kvarhållningsschema för principer och procedurer.
@@ -84,7 +84,7 @@ Tänk på följande:
 
 ### <a name="retention-policies-and-retention-labels"></a>Kvarhållningsprinciper och -etiketter
 
-Använd [bevarandeprinciper och bevarandeetiketter](../compliance/retention.md) för att behålla eller ta bort innehåll i Microsoft 365 som innehåller eller förväntas innehålla personuppgifter.
+Använd [bevarandeprinciper och bevarandeetiketter](../compliance/retention.md) för att behålla eller ta bort Microsoft 365 innehåll som innehåller eller förväntas innehålla personuppgifter.
 
 ### <a name="records-management"></a>Hantering av arkivhandlingar
 

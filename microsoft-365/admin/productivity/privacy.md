@@ -28,11 +28,11 @@ ms.locfileid: "51579176"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Sekretesskontroller för Produktivitetsresultat
 
-Produktivitetsresultatet ger insikter om organisationens digitala omvandlingsresa genom användningen av Microsoft 365 och de teknikupplevelser som stöder det.  Organisationens resultat återspeglar mätvärden för personer och teknikupplevelse och kan jämföras med riktmärken från organisationer som påminner om din. Mer information finns i [översikten över Produktivitetsresultat.](productivity-score.md)
+Produktivitetsresultatet ger insikter om organisationens digitala omvandlingsresa genom dess användning av Microsoft 365 och de teknikupplevelser som stöder den.  Organisationens resultat återspeglar mätvärden för personer och teknikupplevelse och kan jämföras med riktmärken från organisationer som påminner om din. Mer information finns i [översikten över Produktivitetsresultat.](productivity-score.md)
 
 Din sekretess är viktig för Microsoft. Mer information om hur vi skyddar din integritet [finns i Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement) Produktivitetsresultatet ger dig som din organisations IT-administratör tillgång till sekretessinställningar så att du kan se till att den Produktivitetsresultatinformation du visar kan användas, samtidigt som du inte komprometterar betrodda platser i din organisation med Microsoft.
 
-Inom området för personers upplevelser finns mätvärden endast tillgängliga på organisationsnivå. I det här området visas hur microsoft 365 används genom att titta på kategorier av innehållssamarbete, rörlighet, möten, samarbete och kommunikation. Vi ger dig flera nivåer av kontroller som hjälper dig att uppfylla dina interna sekretesspolicybehov.
+Inom området för personers upplevelser finns mätvärden endast tillgängliga på organisationsnivå. I det här området tittar vi på hur Microsoft 365 användare använder genom att titta på kategorierna för innehållssamarbete, rörlighet, möten, samarbete och kommunikation. Vi ger dig flera nivåer av kontroller som hjälper dig att uppfylla dina interna sekretesspolicybehov.
 Kontrollerna ger dig:
 
 - Flexibla administratörsroller för att styra vem som kan se informationen i Produktivitetsresultatet.
@@ -51,9 +51,9 @@ För att kunna se hela Produktivitetsresultatet behöver du vara en av följande
 - Rapportläsare
 - Sammanfattningsrapporter för användning
 
-Tilldela rollen Rapportläsare eller Sammanfattningsrapporter för användning till alla som ansvarar för ändringshantering och införande, men inte nödvändigtvis en IT-administratör. Den här rollen ger dem tillgång till hela Produktivitetsresultatet i administrationscentret för Microsoft 365.
+Tilldela rollen Rapportläsare eller Sammanfattningsrapporter för användning till alla som ansvarar för ändringshantering och införande, men inte nödvändigtvis en IT-administratör. Den här rollen ger dem tillgång till hela produktivitetsresultatet i Microsoft 365 administrationscenter.
 
-Rollen Läsare för sammanfattningsrapporter för användning måste tilldelas via PowerShell-cmdlets tills den blir tilldelningsbar från administrationscentret för Microsoft 365 senare under 2020.
+Rollen Läsare för sammanfattningsrapporter för användning måste tilldelas via PowerShell-cmdlets tills den tilldelas från Microsoft 365 senare under 2020.
 
 Så här tilldelar du rollen Sammanfattningsrapporter för användning med PowerShell:
 
@@ -77,8 +77,8 @@ Du kan också välja att inte delta i området Produktivitetsresultat. Om du vä
 
 Så här gör du för att avanmäla:
 
-1. I administrationscentret går du till **Inställningar Org**   >   **Settings Productivity**  >  **Score**.
-2. Avmarkera kryssrutan tillåt att **Microsoft 365-användningsdata används för personer med insikter om användningen.** Om du vill veta hur du ändrar inställningarna för datadelning för Slutpunktsanalys i Intune-konfigurationshanteraren väljer **du Läs mer.**
+1. I administrationscentret går du till sidan **för Inställningar**   >   **organisation Inställningar** Productivity  >  **Score.**
+2. Avmarkera kryssrutan där det står **Tillåt Microsoft 365 använda användningsdata för personer med insikter om upplevelsen.** Om du vill veta hur du ändrar inställningarna för datadelning för Slutpunktsanalys i Intune-konfigurationshanteraren väljer **du Läs mer.**
 3. Välj  **Spara**.
 
 :::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Sidan Organisationsinställningar där du kan avanmäla dig från personliga upplevelser.":::

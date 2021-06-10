@@ -1,5 +1,5 @@
 ---
-title: Validera nya enheter
+title: Verifiera nya enheter
 description: Innan du beställer enheter skaffar du en av varje modell och testar den
 ms.service: m365-md
 author: jaimeo
@@ -18,7 +18,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52246292"
 ---
-# <a name="validate-new-devices"></a>Validera nya enheter
+# <a name="validate-new-devices"></a>Verifiera nya enheter
 
 Oavsett om du är nybörjare på Microsoft Hanterat skrivbord eller har prenumererat länge är det bäst att testa ett exempel på vilken enhetsmodell som helst som du registrerar för tjänsten för första gången. Detta gäller oavsett om du beställer helt nya enheter eller återanvänder befintliga enheter, inklusive enheter som rekommenderas för Microsoft Hanterat skrivbord på [webbplatsen För Windows 10 Pro-produkter.](https://www.microsoft.com/windowsforbusiness/view-all-devices) På webbplatsen kan du visa de enheter som  rekommenderas för användningen med tjänsten genom att expandera Funktioner i området **Filtrera** efter och sedan välja **Microsoft Hanterat skrivbord**. Valideringsenheter säkerställer att de ger den användarupplevelse du förväntar dig.
 

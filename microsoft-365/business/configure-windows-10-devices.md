@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: Läs om hur du konfigurerar enhetsprinciper för Windows 10 som gäller för alla användare i organisationen, så att de ansluts på ett säkert sätt.
+description: Läs mer om att konfigurera enhetsprinciper för Windows 10 som gäller för alla användare i organisationen, och se till att de ansluter på ett säkert sätt.
 ms.openlocfilehash: c7d27b903734f9348471bb7765b88650caeed9d5
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,7 +37,7 @@ ms.locfileid: "51580283"
 ---
 # <a name="configure-windows-10-devices"></a>Konfigurera Windows 10-enheter
 
-Under installationen skapar du en enhetsprincip för Windows 10 som gäller för alla användare i organisationen. När en användare loggar in på ett Office-program på sin Windows 10-enhet med sitt arbets- eller skolkonto, används de inställningar du konfigurerar automatiskt för att säkerställa att användaren ansluter på ett säkert sätt.
+Under installationen skapar du en enhetsprincip för Windows 10 som gäller för alla användare i organisationen. När en användare loggar in på en Office-appen på sin Windows 10-enhet med sitt arbets- eller skolkonto, används de inställningar du konfigurerar automatiskt för att säkerställa att användaren ansluter på ett säkert sätt.
   
 Vi rekommenderar att du vid installationen godkänner standardkonfigurationen. Efter installationen kan du skapa fler principer och rikta dem mot specifika användargrupper.
   

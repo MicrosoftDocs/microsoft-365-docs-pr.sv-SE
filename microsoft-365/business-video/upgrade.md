@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs om hur du uppgraderar Windows 10 Home till Windows 10 Pro.
+description: Lär dig hur du Windows 10 Home till Windows 10 Pro.
 ms.openlocfilehash: 319152f8a587c123b25907db060b0572ec3a7cf3
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -31,14 +31,14 @@ ms.locfileid: "51578573"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j?autoplay=false]
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-Microsoft 365 Business kräver Windows 10 Pro för att skydda dina data. Om du har en dator med Windows 10 Home följer du dessa steg för att uppgradera till Windows 10 Pro.
+Microsoft 365 företag kräver Windows 10 Pro för att skydda dina data. Om du har en dator med Windows 10 Home följer du dessa steg för att uppgradera till Windows 10 Pro.
 
-1. På skrivbordet väljer du  **Start-menyn,**  söker efter  **Microsoft Store** och väljer det.
-2. I Microsoft Store klickar du i sökfältet, skriver **Windows 10 Pro** och väljer **sedan Uppgradera till Windows 10 Pro.**
-3. Under  **Uppgradera till Windows 10 Pro** väljer du Läs  **mer** och sedan  **Köp**.
-4. I rutan  **Windows-säkerhet**  anger du din PIN-kod för att verifiera din identitet.
+1. På skrivbordet väljer du **Start-menyn,** söker efter **Microsoft Store** och väljer det.
+2. I Microsoft Store klickar du i sökfältet, skriver **Windows 10 Pro** och väljer sedan **Uppgradera till Windows 10 Pro**.
+3. Under **Uppgradera till Windows 10 Pro** väljer du Läs **mer** och sedan **Köp**.
+4. I rutan **Windows-säkerhet** anger du DIN PIN-kod för att verifiera din identitet.
 5. Granska betalningssidan, läs köpvillkoren, ändra betalningsmetod om du vill och välj sedan  **Köp**.
-6. Under  **Uppgradera till Windows 10 Pro** väljer du  **Installera**.
-7. Spara alla filer om det behövs och välj  **sedan Ja,&#39;sätt**  igång med att installera Windows.
+6. Under **Uppgradera till Windows 10 Pro** väljer du **Installera**.
+7. Spara alla filer om det behövs och välj **sedan Ja,&#39;sätt** igång och installera Windows.

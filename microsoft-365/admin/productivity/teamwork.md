@@ -28,9 +28,9 @@ ms.locfileid: "51579164"
 ---
 # <a name="teamwork--people-experiences"></a>Teamwork – upplevelser för människor
 
-Produktivitetsresultatet ger insikter om organisationens digitala omvandlingsresa genom användningen av Microsoft 365 och de teknikupplevelser som stöder det. Organisationens resultat återspeglar mätvärden för personer och teknikupplevelse och kan jämföras med riktmärken från organisationer som påminner om din. Kategorin lagarbete är en del av måtten som faller under upplevelserna hos människor. Mer information finns i översikten [över Productivity Score](productivity-score.md) och [Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement)
+Produktivitetsresultatet ger insikter om organisationens digitala omvandlingsresa genom dess användning av Microsoft 365 och de teknikupplevelser som stöder den. Organisationens resultat återspeglar mätvärden för personer och teknikupplevelse och kan jämföras med riktmärken från organisationer som påminner om din. Kategorin lagarbete är en del av måtten som faller under upplevelserna hos människor. Mer information finns i översikten [över Productivity Score](productivity-score.md) och [Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement)
 
-## <a name="prerequisites"></a>Krav
+## <a name="prerequisites"></a>Förutsättningar
 
 För att komma igång med grupparbete måste personer i organisationen ha licens för:
 
@@ -52,28 +52,28 @@ Vi ger en primär insyn i upplevelsen som innehåller nyckeltal för den här ka
 
 ### <a name="primary-insight"></a>Primär insyn
 
-Den primära insikten tittar på alla personer som kommunicerar med e-post och meddelanden i Microsoft Teams och interagerar med innehåll i molnet i delade arbetsytor. I Microsoft 365 utgör Microsoft 365-grupper grunden för att människor ska kunna samlas i en delad arbetsyta med möjlighet att skicka e-postmeddelanden till grupppostlådan, dela filer på SharePoint-gruppwebbplatsen och skicka kanalmeddelanden via Microsoft Teams.
+Den primära insikten tittar på alla personer som kommunicerar med e-post och meddelanden på Microsoft Teams, och interagera med innehåll i molnet i delade arbetsytor. I Microsoft 365 är Microsoft 365-grupper grunden för att människor ska kunna samlas på en delad arbetsyta med möjlighet att skicka e-postmeddelanden till grupppostlådan, dela filer på SharePoint-gruppwebbplatsen och skicka kanalmeddelanden via Microsoft Teams.
 
 :::image type="content" source="../../media/teamwork-score.png" alt-text="Diagram som visar primära insikter i teamets arbete.":::
 
 1. **Sidhuvud:** Anger det viktigaste måttet för personer i din organisation som utför någon av följande aktiviteter:
       - Skicka e-post till en grupppostlåda via Exchange.
-      - Skicka kanalmeddelanden genom Teams
-      - Läsa och skapa innehåll (vad vi gemensamt refererar till som innehållsinteraktion) på SharePoint-gruppwebbplatser.
+      - Skicka kanalmeddelanden via Teams
+      - Läsa och skapa innehåll (vad vi gemensamt refererar till som innehållsinteraktion) SharePoint gruppwebbplatser.
 
         Som en procentandel av alla personer i din organisation som utför någon av följande aktiviteter (inom eller utanför delade arbetsytor):
-        - Skicka e-post via Exchange.
-        - Skicka meddelanden (chatt- eller kanalmeddelanden) i Microsoft Teams.
+        - Skickar e-post Exchange.
+        - Skicka meddelanden (chatt- eller kanalmeddelanden) på Microsoft Teams.
         - Läsa och skapa innehåll på OneDrive eller SharePoint.
 
-            Och har tillgång till minst en av följande tjänster: Exchange, Microsoft Teams eller SharePoint
+            Och har åtkomst till minst en av följande tjänster: Exchange, Microsoft Teams eller SharePoint
 
 1. **Brödtext:** Ger mer information om hur kommunikation och interaktion med innehåll, när du är klar i en delad arbetsyta, kan ha positiva resultat för produktiviteten i organisationen.
 2. **Visualisering (aktuell status):**
       - Vågrät stapel där den blå delen representerar procentandelen uttryckt i sidhuvudet
-      - Markerar det bråktal (täljare/nämnare) som används för att beräkna procentandelen som visas i rubriken
-        - Täljare: Antalet personer i organisationen som skickar e-post till en grupppostlåda via Exchange, ELLER som skickar kanalmeddelanden genom Teams, ELLER läser och skapar innehåll på SharePoint-gruppwebbplatser.
-        - Nämnare: Antalet personer i din organisation som skickar e-postmeddelanden via Exchange, ELLER skickar meddelanden (chatt- eller kanalmeddelanden) på Microsoft Teams ELLER läser och skapar innehåll på OneDrive eller SharePoint, OCH har åtkomst till minst en av följande tjänster: Exchange, Microsoft Teams eller SharePoint.
+      - Höjdpunkter den bråktal (täljare/nämnare) som används för att beräkna procentandelen som visas i rubriken
+        - Täljare: Antalet personer i organisationen som skickar e-post till en grupppostlåda via Exchange ELLER som skickar kanalmeddelanden via Teams, ELLER läser och skapar innehåll på SharePoint-gruppwebbplatser.
+        - Nämnare: Antalet personer i organisationen som skickar e-postmeddelanden via Exchange ELLER skickar meddelanden (chatt- eller kanalmeddelanden) på Microsoft Teams ELLER läser och skapar innehåll på OneDrive eller SharePoint, OCH har åtkomst till minst en av följande tjänster: Exchange, Microsoft Teams eller SharePoint.
    - Peer-prestandavärdet för det viktiga mätvärdet visas också som procent.
 3. **Visa resurser för samarbete:** Välj den här länken om du vill visa hjälpinnehåll.
 
@@ -105,10 +105,10 @@ Vi tillhandahåller även ytterligare information om hur personer i organisation
         - Nämnare: Personer som skickat e-postmeddelanden de senaste 28 dagarna. Det här är samma grupp personer som är markerade som att skicka e-post med den viktigaste insikten i produktivitetsresultatet för kommunikation.
       - **Skicka meddelanden:** Den färgade delen och bråktalet representerar procentandelen personer som skickar meddelanden i kanaler i Microsoft Teams. Bråket består av:
         - Täljare: Personer som skickar kanalmeddelanden de senaste 28 dagarna.
-        - Nämnare: Personer som skickar chatt- eller kanalmeddelanden de senaste 28 dagarna. Det här är samma grupp personer som har markerats som att skicka meddelanden i Microsoft Teams för den primära insikten i kommunikationskategorin i Produktivitetsresultatet.
-    - **Skapa innehåll:** Den färgade delen och bråktalet representerar procentandelen personer som läser eller skapar innehåll på Microsoft 365 SharePoint-gruppwebbplatser.
-        - Täljare: Antalet personer som läser eller skapar innehåll på gruppanslutna gruppwebbplatser i Microsoft 365.
-        - Nämnare: Antalet personer med åtkomst till SharePoint, som läst eller skapat något slags innehåll på OneDrive- eller SharePoint-webbplatser de senaste 28 dagarna.
+        - Nämnare: Personer som skickar chatt- eller kanalmeddelanden de senaste 28 dagarna. Det här är samma grupp personer som har markerats som att skicka meddelanden i Microsoft Teams i den primära insikten i kommunikationskategorin i Produktivitetsresultatet.
+    - **Skapa innehåll:** Den färgade delen och bråktalet representerar procentandelen personer som läser eller skapar innehåll Microsoft 365 SharePoint gruppwebbplatser.
+        - Täljare: Antalet personer som läser eller skapar innehåll på Microsoft 365 gruppanslutna gruppwebbplatser.
+        - Nämnare: Antalet personer med åtkomst till SharePoint, som läst eller skapat något slags innehåll på OneDrive eller SharePoint webbplatser under de senaste 28 dagarna.
 4. **Visa relaterat innehåll:** Välj den här länken om du vill visa hjälpinnehåll.
 
 ### <a name="breakdown-of-workspace-engagement-by-size-and-age"></a>Detaljerad information om arbetsytors engagemang efter storlek och ålder
@@ -145,19 +145,19 @@ Vi tillhandahåller även ytterligare information om hur personer i organisation
 
 :::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Diagram som visar hur många delade arbetsytor som används av Microsoft Teams.":::
 
-1. **Sidhuvud:** Visar antalet delade arbetsytor som har ett Microsoft Teams-team som är kopplat till dem.
-2. **Brödtext:** Innehåller information om värdet av att ha ett Microsoft Teams-team kopplat till de delade arbetsytorna, för att göra personer kopplade till dem mer effektiva på samarbete.
-3. **Visualisering:** Den färgade delen av ringdiagrammet visar procentandelen arbetsytor som har ett Microsoft Teams-team kopplat till sig. Procentsatsen beräknas så här:
+1. **Sidhuvud:** Visar antalet delade arbetsytor som ett Microsoft Teams är kopplat till.
+2. **Brödtext:** Innehåller information om värdet av att ha en Microsoft Teams grupp kopplad till de delade arbetsytorna, för att göra personer kopplade till dem mer effektiva på samarbete.
+3. **Visualisering:** Den färgade delen av ringdiagrammet motsvarar procentandelen arbetsytor som har ett kopplat Microsoft Teams grupp. Procentsatsen beräknas så här:
 
-      - Täljare: Antalet delade arbetsytor i organisationen som har ett Microsoft Teams-team kopplat till dem under de senaste 28 dagarna
+      - Täljare: Antalet delade arbetsytor i organisationen som hade ett Microsoft Teams kopplat till dem under de senaste 28 dagarna
       - Nämnare: Antalet delade arbetsytor i organisationen de senaste 28 dagarna
 
-        Talet i mitten av ringdiagrammet representerar det totala antalet delade arbetsytor som har ett Microsoft Teams-team kopplat till sig.
+        Talet i mitten av ringdiagrammet representerar det totala antalet delade arbetsytor som har ett Microsoft Teams är kopplat till dem.
 4. **Visa relaterat innehåll:** Välj den här länken om du vill visa hjälpinnehåll.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Hälsa för Microsoft 365-appar – Teknikupplevelser](apps-health.md) (artikel)\
+[Microsoft 365 appens hälsa – teknikupplevelser](apps-health.md) (artikel)\
 [Kommunikation – Personers upplevelser](communication.md) (artikel)\
 [Innehållssamarbete – personers upplevelser](content-collaboration.md) (artikel)\
 [Möten – Upplevelser för personer](meetings.md) (artikel)\

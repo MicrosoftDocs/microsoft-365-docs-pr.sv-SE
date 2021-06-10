@@ -29,36 +29,36 @@ ms.locfileid: "51579116"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>Skillnaden mellan installationsguiden och sidan Inställningar
 
-Microsoft 365 innehåller två konfigurationsupplevelser: 
+Microsoft 365 två konfigurationsupplevelser: 
 
 - Första installationen med installationsguiden
 - Pågående och avancerade inställningar med **hjälp av sidan** Inställningar
 
-Installationsguiden ger en guidad genomgång för att konfigurera den grundläggande Microsoft 365-konfigurationen. När du har slutfört den första  konfigurationen kan du gå till sidan Inställningar och slutföra konfigurationen av de tjänster som följer med dina prenumerationer.
+Installationsguiden innehåller en guidad genomgång för att konfigurera den grundläggande Microsoft 365 konfigurationen. När du har slutfört den första  konfigurationen kan du gå till sidan Inställningar och slutföra konfigurationen av de tjänster som följer med dina prenumerationer.
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Använda installationsguiden för att slutföra de första installationsuppgifterna
 
 Om du vill konfigurera ditt konto går  du till [administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339), väljer Inställningar i det vänstra navigeringsfönstret och väljer sedan **Guidad konfiguration** på **sidan Inställningar.**
 
-![Starta installationsguiden för Microsoft 365-appar för företag](../../media/o365b-guided-setup.png)
+![Starta Microsoft 365-applikationer för affärsverksamhet installationsguiden](../../media/o365b-guided-setup.png)
 
 Installationsguiden vägleder dig genom följande steg:
 
-1. Installera Microsoft 365-programmen på datorn.
+1. Installera Microsoft 365 på datorn.
 
 2. Välj och verifiera din domän, till exempel contoso.com.
 
-3. Lägg till nya användare och tilldela licenser till dem så att de kan ladda ned och installera Microsoft 365-appar.
+3. Lägg till nya användare och tilldela licenser till dem så att de kan ladda ned och Microsoft 365 program.
 
 4. Anslut din domän.
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Använda konfigurationssidan för att slutföra och hantera konfigurationen
 
-För att komma **åt** sidan Inställningar [i administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)väljer **du Konfigurera** i navigeringsfönstret. Här visas funktioner som du har skapat utifrån produkter du har köpt, och din administratörsroll, uppgifter och relaterad information från hela Microsoft 365 visas här.
+För att komma **åt** sidan Inställningar [i administrationscentret](https://go.microsoft.com/fwlink/p/?linkid=2024339)väljer **du Konfigurera** i navigeringsfönstret. Här visas funktioner som du har skapat utifrån produkter som du har köpt, och din administratörsroll, uppgifter och relaterad information från Microsoft 365 visas här.
 
 En fullständig lista över konfigurationsaktiviteter visas i logiska kategorier, inklusive uppgifter som du har slutfört i installationsguiden.
 
-![Konfigurationssidan för Microsoft 365 för företag](../../media/o365b-setup-page.png)
+![Microsoft 365 för företag, konfigurationssidan](../../media/o365b-setup-page.png)
 
 Välj  Visa för valfri uppgift om du vill få en snabb överblick över information, till exempel uppgiftsbeskrivning, användarkonsekvens, förutsättningar, arbete för att implementera samt säkerhets- och införandestatistik som hjälper dig att förstå konsekvenser och påverkan innan du fortsätter.
 

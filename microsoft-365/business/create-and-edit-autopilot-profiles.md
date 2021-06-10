@@ -40,7 +40,7 @@ ms.locfileid: "51580263"
 
 En profil gäller för en enhet eller en grupp enheter.
   
-1. I administrationscentret för Microsoft 365 väljer du **Devices** \> **AutoPilot.**
+1. I Microsoft 365 väljer du Devices  \> **AutoPilot.**
   
 2. På sidan **AutoPilot** väljer du **fliken Profiler** \> **Skapa profil.**
     

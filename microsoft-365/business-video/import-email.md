@@ -31,15 +31,15 @@ ms.locfileid: "51578897"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 
-När du har registrerat dig för Microsoft 365 kan du fortfarande ha e-post till ett gammalt konto. till exempel om du använde ett Gmail- eller Outlook-konto för arbetet. Du kan fortsätta att använda både det nya och det gamla kontot eller importera data från det gamla kontot till det nya.
+När du har registrerade dig för Microsoft 365 kan du fortfarande ha e-post till ett gammalt konto. om du till exempel använt ett Gmail- eller Outlook konto för arbetet. Du kan fortsätta att använda både det nya och det gamla kontot eller importera data från det gamla kontot till det nya.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 ### <a name="step-1-export-your-old-email"></a>Steg 1: Exportera din gamla e-post.
 
-1. I Outlook väljer **du Arkiv,** **Öppna och exportera** och sedan **Importera/Exportera.**
+1. I Outlook väljer **du Arkiv,** **Öppna och exportera** och klickar sedan **Import/Export**.
 2. Välj **Exportera till en fil** och välj sedan **Nästa.**
-3. Välj **Outlook-datafil** och välj sedan **Nästa**.
+3. Välj **Outlook datafil** och välj sedan **Nästa**.
 4. Välj ditt gamla e-postkonto.
 5. Kontrollera att du tar med undermappar. Välj sedan **Nästa**.
 6. Välj **Bläddra** och gå till en plats som är lätt att komma ihåg, till exempel skrivbordet. Välj **OK** och sedan **Slutför.**
@@ -49,8 +49,8 @@ När du har registrerat dig för Microsoft 365 kan du fortfarande ha e-post till
 
 ### <a name="step-2-import-your-old-email-into-your-new-email-account"></a>Steg 2: Importera din gamla e-post till det nya e-postkontot
 
-1. Välj Arkiv, **Öppna,** **Exportera och sedan**  **Importera/exportera i Outlook.**
+1. I Outlook väljer **du Arkiv**, **Öppna,** **Exportera** och sedan **Import/Export**.
 2. Välj **Importera från ett annat program eller en** fil och välj sedan **Nästa.**
-3. Välj **Outlook-datafil** och välj sedan **Nästa**.
+3. Välj **Outlook datafil** och välj sedan **Nästa**.
 4. Välj **Bläddra** och gå till filen du exporterade. Markera det och välj **sedan Öppna** och sedan **Nästa.**
 5. Kontrollera att du tar med undermappar och att du importerar objekt till samma mapp i det nya e-postkontot. Välj **Slutför**.

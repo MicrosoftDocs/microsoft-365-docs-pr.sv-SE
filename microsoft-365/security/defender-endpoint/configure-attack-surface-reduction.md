@@ -1,5 +1,5 @@
 ---
-title: Konfigurera funktioner för att minska attackytan
+title: Konfigurera funktioner för minskning av attackytan
 description: Använd Microsoft Intune, Microsoft Endpoint Configuration Manager, PowerShell-cmdlets och grupprincip för att konfigurera minskning av attackytan.
 keywords: asr, attack surface reduction, windows defender, microsoft defender, antivirus, av
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52770967"
 ---
-# <a name="configure-attack-surface-reduction-capabilities"></a>Konfigurera funktioner för att minska attackytan
+# <a name="configure-attack-surface-reduction-capabilities"></a>Konfigurera funktioner för minskning av attackytan
 
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

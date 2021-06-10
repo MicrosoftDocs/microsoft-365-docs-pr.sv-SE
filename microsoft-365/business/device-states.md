@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Läs mer om olika enhets tillstånd i listan Enhetsåtgärder i administrationscentret i Microsoft 365 för företag.
+description: Läs mer om de olika enhets tillstånden i listan Enhetsåtgärder i startsidan för Microsoft 365 för företag.
 ms.openlocfilehash: e6f1b428413d094e0a1ce3afb026528074038736
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "51578476"
 ---
 # <a name="device-states"></a>Statusvärden för enheter
 
-Den här artikeln gäller Microsoft 365 Business Premium.
+Den här artikeln gäller för Microsoft 365 Business Premium.
 
 Enheter i listan **Enhetsåtgärder** (Administratörshemsida \> **Enhetsåtgärder**) kan ha följande statusar.
   
@@ -44,7 +44,7 @@ Enheter i listan **Enhetsåtgärder** (Administratörshemsida \> **Enhetsåtgär
 |**Status**|**Beskrivning**|
 |:-----|:-----|
 |Managed by Intune (Hanteras av Intune)  <br/> |Hanteras av Microsoft 365 Business Premium.  <br/> |
-|Retire pending (Väntar på att tas ur bruk)  <br/> |Microsoft 365 Business Premium för förbereda för att ta bort företagsdata från enheten.  <br/> |
+|Retire pending (Väntar på att tas ur bruk)  <br/> |Microsoft 365 Business Premium klar att ta bort företagsdata från enheten.  <br/> |
 |Retire in progress (Tas nu ur bruk)  <br/> |Microsoft 365 Business Premium tar för närvarande bort företagsdata från enheten.  <br/> |
 |Retire failed (Det gick inte att ta ur bruk)  <br/> | Åtgärden att ta bort företagsdata misslyckades.  <br/> |
 |Retire canceled (Dra tillbaka) har avbrutits  <br/> |Åtgärden för att ta ur verksamhet har avbrutits.  <br/> |

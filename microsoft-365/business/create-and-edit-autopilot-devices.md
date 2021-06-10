@@ -43,9 +43,9 @@ Enheter måste uppfylla följande krav:
   
 - Windows 10, version 1703 eller senare
     
-- Nya enheter som inte redan är via Windows
+- Nya enheter som inte har Windows utan att ha erfarenhet
 
-1. I administrationscentret för Microsoft 365 väljer du **Devices** \> **AutoPilot.**
+1. I Microsoft 365 väljer du Devices  \> **AutoPilot.**
   
 2. På sidan **AutoPilot** väljer du fliken **Enheter** Lägg \> **till enheter.**
     
@@ -57,7 +57,7 @@ Enheter måste uppfylla följande krav:
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>Tilldela en profil till en enhet eller en grupp enheter
 
-1. På sidan **Förbereder Windows** väljer **du fliken** Enheter och markerar kryssrutan bredvid en eller flera enheter. 
+1. På **sidan Windows** väljer du **fliken** Enheter och markerar kryssrutan bredvid en eller flera enheter. 
     
 2. På panelen **Enhet**, väljer du en profil från listrutan **Tilldelad profil**. 
     

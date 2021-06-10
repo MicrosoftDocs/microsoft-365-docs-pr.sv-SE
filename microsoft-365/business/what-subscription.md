@@ -18,7 +18,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Avgöra om Office 365 E3, Microsoft 365 Business Standard eller Microsoft 365 Business Premium är rätt för ditt företag.
+description: Avgör om Office 365 E3, Microsoft 365 Business Standard eller Microsoft 365 Business Premium är rätt för ditt företag.
 ms.openlocfilehash: 2f8c59e0af619730060862fc8ee24a702ca00343
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT

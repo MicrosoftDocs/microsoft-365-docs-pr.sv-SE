@@ -31,13 +31,13 @@ ms.locfileid: "51579891"
 ---
 # <a name="difference-between-mdm-and-mam"></a>Skillnaden mellan MDM och MAM
 
-Microsoft 365 Business Premium erbjuder ett antal olika sätt att skydda dina affärsdata. Se [Översikt över Microsoft 365 Business Premium](../microsoft-365-business-overview.md) för mer information om de olika skydd som konfigureras automatiskt och vad du kan konfigurera för att ytterligare skydda ditt företag. Du kan också konfigurera principer som skyddar dina Windows 10-enheter och data på mobila enheter.
-[Ange programskyddsinställningar för Windows 10-enheter.](../protection-settings-for-windows-10-devices.md)
+Microsoft 365 Business Premium erbjuder ett antal olika sätt att skydda dina affärsdata. I [Översikt över Microsoft 365 Business Premium](../microsoft-365-business-overview.md) finns mer information om de olika skydd som konfigureras automatiskt, och vad du kan ställa in dig själv för att ytterligare skydda ditt företag. Du kan också konfigurera principer som skyddar dina Windows 10 och data på mobila enheter.
+[Ange programskyddsinställningar för Windows 10 enheter](../protection-settings-for-windows-10-devices.md).
 
 ## <a name="mobile-device-management-or-mdm"></a>Hantering av mobila enheter eller MDM
 
-Med Microsoft 365 Business Premium kan du konfigurera principer som skyddar data på dina Windows 10-enheter. När hanteringen av mobila enheter gäller för en enhet kan du styra hela enheten och rensa data från den samt återställa den till fabriksinställningarna. Mer information finns i Ange [inställningar för enhetsskydd för Windows 10-datorer.](../protection-settings-for-windows-10-pcs.md)
+Microsoft 365 Business Premium konfigurera principer som skyddar data på dina Windows 10 enheter. När hanteringen av mobila enheter gäller för en enhet kan du styra hela enheten och rensa data från den samt återställa den till fabriksinställningarna. Mer information finns i [Ange inställningar för enhetsskydd Windows 10 PC.](../protection-settings-for-windows-10-pcs.md)
 
 ## <a name="mobile-application-management-or-mam"></a>Hantering av mobilprogram eller MAM
 
-Med hantering av mobilprogram kan du styra affärsdata på användarnas personliga enheter, till exempel iPhone och Android, och deras privata Win 10-datorer. Du kan använda principer för programhantering för att hindra användarna från att kopiera affärsdata från Office-program till sina personliga program. Du kan också ta bort alla data från Office-apparna på deras personliga enheter. Mer information finns i Ange [programskyddsinställningar för Android-](../app-protection-settings-for-android-and-ios.md) eller iOS-enheter och [Ange programskyddsinställningar för Windows 10-enheter.](../protection-settings-for-windows-10-devices.md)
+Med hantering av mobilprogram kan du styra affärsdata på användarnas personliga enheter, till exempel iPhone och Android, och deras privata Win 10-datorer. Du kan använda principer för programhantering för att hindra användarna från att kopiera affärsdata från Office-appar till sina personliga program. Du kan också ta bort alla data från Office appar på deras personliga enheter. Mer information finns i Ange [inställningar för programskydd för Android-](../app-protection-settings-for-android-and-ios.md) eller iOS-enheter och Ange [programskyddsinställningar för Windows 10 enheter.](../protection-settings-for-windows-10-devices.md)

@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: Sammanfattning Konfigurera Azure AD Connect för hög tillgänglighet federerad autentisering för Microsoft 365 i Microsoft Azure.
+description: Sammanfattning Konfigurera Azure AD-Anslut för hög tillgänglighet federerad autentisering för Microsoft 365 i Microsoft Azure.
 ms.openlocfilehash: 2bca2b758486b85d185870e2e14b495b8f084cb7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.locfileid: "50929414"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Fas 5 med hög tillgänglighet för federerad autentisering: Konfigurera federerad autentisering för Microsoft 365
 
-I den här sista fasen av distributionen av federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure-infrastrukturtjänster får du och installerar ett certifikat som utfärdats av en offentlig certifikatutfärdare, verifierar din konfiguration och installerar och kör sedan Azure AD Connect på katalogsynkroniseringsservern. Azure AD Connect konfigurerar Microsoft 365-prenumerationen och AD FS-servrar (Active Directory Federation Services) och webbprogramproxyservrar för federerad autentisering.
+I den här sista fasen av distributionen av federerad autentisering med hög tillgänglighet för Microsoft 365 i Tjänster i Azure-infrastrukturen får du och installerar ett certifikat som utfärdats av en offentlig certifikatutfärdare, verifierar din konfiguration och installerar och kör sedan Azure AD Anslut på katalogsynkroniseringsservern. Azure AD Anslut konfigurerar Microsoft 365-prenumerationen och AD FS-servrar (Active Directory Federation Services) och webbprogramproxyservrar för federerad autentisering.
   
-Se [Distribuera hög tillgänglighet federerad autentisering för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) för alla faser.
+Se [Distribuera federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) för alla faser.
   
 ## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Skaffa ett offentligt certifikat och kopiera det till katalogsynkroniseringsservern
 
@@ -37,7 +37,7 @@ Få ett digitalt certifikat från en offentlig certifikatutfärdare med följand
     
 - Certifikatet måste ha den privata nyckeln och lagras i PFX-format.
     
-Dessutom måste datorerna och enheterna i organisationen lita på den offentliga certifikatutfärdare som utfärdar det digitala certifikatet. Det här förtroende upprättas genom att ha ett rotcertifikat från den offentliga certifikatutfärdaren som är installerat i arkivet med betrodda rotcertifikatutfärdare på dina datorer och enheter. Datorer med Microsoft Windows har vanligtvis en uppsättning av dessa typer av certifikat installerade från vanliga certifikatutfärdare. Om rotcertifikatet från din offentliga certifikatutfärdare inte redan är installerat måste du distribuera det till datorerna och enheterna i organisationen.
+Dessutom måste datorerna och enheterna i organisationen lita på den offentliga certifikatutfärdare som utfärdar det digitala certifikatet. Det här förtroende upprättas genom att ha ett rotcertifikat från den offentliga certifikatutfärdaren som är installerat i arkivet med betrodda rotcertifikatutfärdare på dina datorer och enheter. Datorer som kör Microsoft Windows har vanligtvis en uppsättning av dessa typer av certifikat installerade från vanliga certifikatutfärdare. Om rotcertifikatet från din offentliga certifikatutfärdare inte redan är installerat måste du distribuera det till datorerna och enheterna i organisationen.
   
 Mer information om certifikatkrav för federerad autentisering finns i Förutsättningar för installation och [konfiguration av federerad autentisering.](/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration)
   
@@ -45,11 +45,11 @@ När du får certifikatet kopierar du det till en mapp på C:-enheten på katalo
   
 ## <a name="verify-your-configuration"></a>Verifiera konfigurationen
 
-Nu bör du vara redo att konfigurera Azure AD Connect och federerad autentisering för Microsoft 365. För att säkerställa att du är det finns här en checklista:
+Nu bör du vara redo att konfigurera Azure AD Anslut och federerad autentisering för Microsoft 365. För att säkerställa att du är det finns här en checklista:
   
-- Organisationens offentliga domän läggs till i Microsoft 365-prenumerationen.
+- Organisationens offentliga domän läggs till i Microsoft 365 prenumeration.
     
-- Din organisations Microsoft 365-användarkonton är konfigurerade för organisationens offentliga domännamn och kan logga in.
+- Din organisations konto Microsoft 365 konfigureras till organisationens offentliga domännamn och kan logga in.
     
 - Du har fastställt en FQDN för en federationstjänst baserat på ditt offentliga domännamn.
     
@@ -65,29 +65,29 @@ Här är ett exempel för Contoso-organisationen:
   
 **En exempelkonfiguration för en infrastruktur för federerad autentisering med hög tillgänglighet i Azure**
 
-![Ett exempel på en konfiguration av microsoft 365-infrastrukturen för federerad autentisering med hög tillgänglighet i Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Ett exempel på en konfiguration av hög tillgänglighet Microsoft 365 infrastruktur för federerad autentisering i Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
-## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Kör Azure AD Connect för att konfigurera federerad autentisering
+## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Kör Azure AD-Anslut för att konfigurera federerad autentisering
 
-Verktyget Azure AD Connect konfigurerar AD FS-servrarna, webbprogramproxyservrarna och Microsoft 365 för federerad autentisering med följande steg:
+Med hjälp av Anslut Azure AD för federerad autentisering konfigurerar du AD FS-servrar, webbprogramproxyservrar och Microsoft 365 för federerad autentisering:
   
 1. Skapa en anslutning till fjärrskrivbord till katalogsynkroniseringsservern med ett domänkonto som har lokal administratörsbehörighet.
     
 2. Öppna Internet Explorer på skrivbordet på katalogsynkroniseringsservern och gå till [https://aka.ms/aadconnect](https://aka.ms/aadconnect) .
     
-3. På sidan **Microsoft Azure Active Directory Connect** klickar du på **Ladda** ned och sedan på **Kör**.
+3. På sidan **Microsoft Azure Active Directory Anslut** du på **Ladda ned** och sedan på **Kör**.
     
-4. På sidan **Välkommen till Azure AD Connect** klickar du på Jag **godkänner** och klickar sedan på **Fortsätt.**
+4. På sidan **Välkommen till Azure AD Anslut** klickar du på Jag **godkänner** och sedan på **Fortsätt.**
     
-5. På sidan **Expressinställningar klickar** du på **Anpassa**.
+5. På sidan **Express Inställningar** klickar du på **Anpassa**.
     
 6. Klicka på **Installera på sidan** Installera nödvändiga **komponenter.**
     
 7. På sidan **Användarinloggning** klickar du på **Federation med AD FS** och sedan på **Nästa**.
     
-8. På sidan **Anslut till Azure AD** anger du namn och lösenord för ett globalt administratörskonto för Microsoft 365-prenumerationen och klickar sedan på **Nästa.**
+8. På sidan **Anslut till Azure AD** anger du namn och lösenord för ett globalt administratörskonto för din Microsoft 365 prenumeration och klickar sedan på **Nästa.**
     
-9. På  sidan Anslut dina kataloger ser du till att din lokala AD DS-skog (Active Directory Domain Services) är vald i **Skog,** skriver namn och lösenord för ett domänadministratörskonto, klickar på Lägg till katalog och klickar sedan på **Nästa.**
+9. På **sidan Anslut** dina kataloger ser du till att din lokala AD DS-skog (Active Directory Domain Services) är vald i  **Skogen**. Skriv namn och lösenord för ett domänadministratörskonto, klicka på Lägg till katalog och klicka sedan på **Nästa.**
     
 10. På sidan **Konfiguration av Azure AD-inloggning** klickar du på **Nästa.**
     
@@ -135,15 +135,15 @@ Här är den slutliga konfigurationen, med platshållarnamn för servrarna.
   
 **Fas 5: Den slutliga konfigurationen av en infrastruktur för federerad autentisering med hög tillgänglighet i Azure**
 
-![Den slutliga konfigurationen av microsoft 365-infrastrukturen för federerad autentisering med hög tillgänglighet i Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Den slutliga konfigurationen av infrastrukturen för Microsoft 365 för federerad autentisering i Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-Din hög tillgänglighetsinfrastruktur för federerad autentisering för Microsoft 365 i Azure är klar.
+Din infrastruktur för federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure är klar.
   
 ## <a name="see-also"></a>Se även
 
 [Distribuera federerad autentisering med hög tillgänglighet för Microsoft 365 i Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Federerad identitet för din Utvecklings-/testmiljö för Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Federerad identitet för din Microsoft 365 utvecklings-/testmiljö](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365-lösning och arkitekturcenter](../solutions/index.yml)
 

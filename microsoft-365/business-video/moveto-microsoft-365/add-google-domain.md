@@ -28,25 +28,25 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578777"
 ---
-# <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Lägga till Google Workspace-domänen i Microsoft 365
+# <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Lägg till Google Workspace-domänen i Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LWKT?autoplay=false]
 
 Lägg till Google Workspace-domänen i Microsoft 365 för företag så att du kan fortsätta använda din e-postadress för företaget.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-1. Gå till [administrationscentret för Microsoft 365.](https://admin.microsoft.com)
-1. I det vänstra navigeringsfältet i administrationscentret för Microsoft 365 väljer du **Visa alla**, **Inställningar** och sedan **Domäner.**
+1. Gå till [Microsoft 365 administrationscentret.](https://admin.microsoft.com)
+1. I det Microsoft 365 navigeringscentret i vänstra navigeringsfältet väljer du Visa alla **,** **Inställningar** och sedan **Domäner.**
 1. Välj **Add domain**, enter your domain name och select Use this **domain**. 
 1. Välj Add **a TXT record to the domains DNS records**, select **Continue** och copy the TXT value. 
 1. Gå tillbaka till administratörskonsolen för [Google](https://admin.google.com), välj **Domäner** **,** Hantera domäner **,** Visa information , Hantera **domän,** **DNS** och rulla ned till **Anpassade resursposter**. 
 1. Öppna listrutan record type, välj **TXT**, klistra in TXT-värdet du kopierade och välj sedan **Add**. 
 
     Uppdateringen tar normalt ett faktum inom några minuter men kan ta upp till 48 timmar. 
-1. Gå tillbaka till administrationscentret för Microsoft 365, **välj** Verifiera och sedan **Stäng.** 
+1. Återgå till Microsoft 365, välj **Verifiera** och sedan **Stäng.** 
 1. Om du vill ange din domän som primär e-postadress för användarna väljer du Användare aktiva användare i **det**  >  **vänstra navigeringsfältet.** 
 1. Välj en användare, välj **Hantera användarnamn och e-post** **,** Redigera , välj din domän i listrutan och välj sedan **Klar** och **Spara ändringar.** 
 1. Upprepa proceduren för varje användare. 
 
-    När du är klar är du redo att installera Office-program och migrera dina e-post- och kalenderobjekt till Microsoft 365. 
+    När du är klar är du redo att installera Office och migrera dina e-post- och kalenderobjekt till Microsoft 365. 

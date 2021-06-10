@@ -1,5 +1,5 @@
 ---
-title: Hämta Microsoft 365 Business Premium från partnercenter
+title: Hämta Microsoft 365 Business Premium partnercenter
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Upptäck dina alternativ för att köpa Microsoft 365 Business Premium och stegvisa instruktioner för att köpa från Microsoft Partner Center.
+description: Upptäck dina alternativ för att köpa Microsoft 365 Business Premium och stegvisa instruktioner för att köpa det från Microsoft Partner Center.
 ms.openlocfilehash: 9e88229f22bdfbfc0b363b5bf56ed2def4db9b8c
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -34,23 +34,23 @@ ms.locfileid: "51580243"
 ---
 # <a name="get-microsoft-365-business-premium"></a>Hämta Microsoft 365 Business Premium
 
-## <a name="get-microsoft-365-business-premium-from-microsoft"></a>Skaffa Microsoft 365 Business Premium från Microsoft
+## <a name="get-microsoft-365-business-premium-from-microsoft"></a>Hämta Microsoft 365 Business Premium från Microsoft
 
-Om du inte har en partner och vill skaffa Microsoft 365 Business Premium kan du [köpa det här.](https://www.microsoft.com/en-US/microsoft-365/business)
+Om du inte har en partner och vill skaffa en Microsoft 365 Business Premium kan du [köpa den här](https://www.microsoft.com/en-US/microsoft-365/business).
 
-Detaljerade [anvisningar finns i Registrera dig för Microsoft 365 Business Premium.](sign-up.md)
+Se [Registrera dig för Microsoft 365 Business Premium](sign-up.md) detaljerade anvisningar.
 
-Du kan också gå till en [Microsoft Store-butik och](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) köpa Microsoft 365 Business Premium och få hjälp med konfigurationen.
+Du kan också gå till en [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) för att köpa Microsoft 365 Business Premium och få hjälp med konfigurationen.
   
-## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>Skaffa Microsoft 365 Business Premium från Microsoft Partner Center
+## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>Hämta Microsoft 365 Business Premium microsoft-partnercenter
 
 1. Logga in på [Microsoft-partnercenter](https://go.microsoft.com/fwlink/p/?linkid=849910) med hjälp av autentiseringsuppgifter som du skapade när du registrerar sig för tjänsten Leverantör av Microsoft-molnlösningar (CSP). 
     
-2. På Partner-instrumentpanelen väljer **du Kunder** och sedan kunden eller lägger till en ny kund innan du får Microsoft 365 Business Premium.
+2. Välj Kunder på **Partner-instrumentpanelen** och välj sedan din kund eller lägg till en ny kund innan du får Microsoft 365 Business Premium.
     
     ![Lägg till en kund i Microsoft Partner Center.](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. På sidan Prenumeration för **kunden** väljer du Lägg till **prenumeration**, väljer alternativet Småföretag under Katalog och väljer sedan **Microsoft 365 Business Premium.**
+3. På sidan Prenumeration för **kunden** väljer du Lägg **till prenumeration**, väljer alternativet Småföretag under Katalog och väljer sedan **Microsoft 365 Business Premium**.
     
     Välj antalet licenser du behöver (upp till 300). Om du har fler än 300 användare går du till [Microsoft 365 Enterprise](../enterprise/index.yml) i stället. 
     

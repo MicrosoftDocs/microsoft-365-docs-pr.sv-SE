@@ -34,7 +34,7 @@ ms.locfileid: "51578933"
 
 När en anställd lämnar företaget måste du ta bort dem från Microsoft 365 för företag. Innan du gör det bör du blockera dem från att komma åt företagsfiler, bevara de dokument de skapade och utföra flera andra administrativa uppgifter som är kopplade till att ta bort en användare.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 1. I administrationscentret väljer du **Användare** och sedan **Aktiva användare.**
 1. Markera den användare du vill ta bort och välj sedan Ta **bort användare.**

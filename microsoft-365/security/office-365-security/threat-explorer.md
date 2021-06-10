@@ -532,7 +532,7 @@ Utöver scenarierna som beskrivs i den här artikeln finns det många fler rappo
 - [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
 - [Automatiserad undersökning och svar i Microsoft 365 Defender](../defender/m365d-autoir.md)
 
-## <a name="required-licenses-and-permissions"></a>Licenser och behörigheter som krävs
+## <a name="required-licenses-and-permissions"></a>Obligatoriska licenser och behörigheter
 
 Du måste ha [Microsoft Defender Office 365](defender-for-office-365.md) kunna använda Utforskaren eller identifiering i realtid.
 

@@ -44,7 +44,7 @@ När du skapar en mall efter att ha lagt till en användare sparas de värden du
 - Licensalternativ
 - Programalternativ
 - Roll
-- Profilinformation på de flesta sätt, **t.ex.** **jobbprofil,** **avdelning,** **office, telefon** och **gatuadress** 
+- De flesta profiluppgifter, till **exempel jobbprofil,** **avdelning,** **Office,** **Office telefon** och **gatuadress** 
 
 Följande information är användarspecifik och sparas inte i mallen:
 

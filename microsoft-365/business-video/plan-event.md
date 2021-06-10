@@ -31,7 +31,7 @@ ms.locfileid: "51578729"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c8a41e1a-c30d-4adb-ab32-6eac922d0ec0?autoplay=false]
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 Använd Microsoft Planner till att planera ett evenemang, till exempel en produktlansering.
 

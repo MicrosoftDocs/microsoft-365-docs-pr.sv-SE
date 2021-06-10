@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: Med Microsoft 365 Business Premium kan du automatiskt se till att användarna har den senaste versionen av Office på alla sina Windows 10-enheter.
+description: Med hjälp av Microsoft 365 Business Premium kan du automatiskt se till att användarna har den senaste versionen av Office alla sina Windows 10 enheter.
 ms.openlocfilehash: d3c62eb42ea73c7af6df6012dbc9488828cd1ba8
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,6 +37,6 @@ ms.locfileid: "51580183"
 
 ![Banderoll som pekar på https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
-Den här inställningen är inaktiverad som standard. Du kan aktivera den så att användarna har den senaste versionen av Office på alla sina Windows 10-enheter, men kontrollera först att alla krav uppfylls. Användarna måste ha licens för Microsoft 365 Business Premium för att den här inställningen ska kunna skicka programvaran till enheten, utöver andra krav som beskrivs i Förbereda Office-klientdistribution av [Microsoft 365 Business Premium.](prepare-for-office-client-deployment.md)
+Den här inställningen är inaktiverad som standard. Du kan aktivera den så att användarna har den senaste versionen av Office på alla sina Windows 10-enheter, men kontrollera först att alla krav uppfylls. Användarna måste ha licens för Microsoft 365 Business Premium för att den här inställningen ska skicka programvaran till enheten, utöver andra krav som beskrivs i Förbereda [Office-klientdistribution genom Microsoft 365 Business Premium.](prepare-for-office-client-deployment.md)
   
 Vi rekommenderar att du vid installationen godkänner standardinställningen.

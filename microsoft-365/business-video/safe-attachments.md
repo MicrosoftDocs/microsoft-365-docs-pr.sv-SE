@@ -32,9 +32,9 @@ ms.locfileid: "51578717"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
-Microsoft Defender för Office 365 , kallades tidigare Microsoft 365 ATP eller Advanced Threat Protection, för att skydda ditt företag mot filer som innehåller skadligt innehåll i Outlook, OneDrive, SharePoint och Teams.
+Microsoft Defender för Office 365 , tidigare kallat Microsoft 365 ATP eller Advanced Threat Protection, hjälper till att skydda ditt företag mot filer som innehåller skadligt innehåll i Outlook, OneDrive, SharePoint och Teams.
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
 1. Gå till [administrationscentret](https://admin.microsoft.com)och välj **Konfigurera**.
 1. Rulla nedåt till **Öka skyddet mot avancerade hot**. Välj **Visa,** **Hantera och** sedan **ATP – säkra bifogade filer.**

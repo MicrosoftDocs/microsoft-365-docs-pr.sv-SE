@@ -37,7 +37,7 @@ ms.locfileid: "51580043"
 ---
 # <a name="protect-work-files-on-devices"></a>Skydda arbetsfiler på enheter
 
-Den här artikeln gäller Microsoft 365 Business Premium.
+Den här artikeln gäller för Microsoft 365 Business Premium.
 
 I dagens värld är användare kopplade till sina enheter och i kollidering mellan det privata och arbetet kan företagsdata hamna på en anställds personliga enhet. De inställningar som du konfigurerar här kan hjälpa dig ta tillbaka kontrollen och skydda arbetsfiler, utan att användarens personliga inställningar eller data påverkas.
   

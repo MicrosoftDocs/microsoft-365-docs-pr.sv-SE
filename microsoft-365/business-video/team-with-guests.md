@@ -31,17 +31,17 @@ ms.locfileid: "51578597"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp?autoplay=false]
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
 
-Du kan använda Microsoft Teams för att arbeta tillsammans på ett projekt med dina anställda och personer utanför företaget, t.ex. dina klienter.
+Du kan använda Microsoft Teams att arbeta i ett projekt tillsammans med anställda och personer utanför företaget, t.ex. dina klienter.
 
-1. I Teams väljer du  **Teams**  i det vänstra navigeringsfältet och sedan  **Skapa team**.
+1. I Teams väljer **Teams** i det vänstra navigeringsfältet och väljer sedan **Skapa team.**
 2. I rutan **Skapa ditt team** anger du ett teamnamn, ger en kort beskrivning, väljer en sekretessinställning och väljer sedan **Nästa.**
 3. Ange  **namnen på**  andra medarbetare i organisationen i rutan Lägg till medlemmar. För gäster anger du deras e-postadress.
 
-    Om du får ett meddelande om att du inte kan lägga till en gäst går du till administrationscentret för Teams och Skype och aktiverar gäståtkomst.
+    Om du får ett meddelande om att du inte kan lägga till en gäst går du Teams och Skype för att aktivera gäståtkomst.
 
 1. Välj **Lägg** till och välj sedan **Stäng.**
 2. Längst ned på sidan anger du ett kort välkomstmeddelande till det nya teamet och väljer sedan **Skicka** :::image type="icon" source="../media/teams-send-icon.png" border="false"::: .   
 
-Din klient kommer att få en e-postinbjudan från Teams med information om att det krävs ett kostnadsfritt Microsoft-konto för att ansluta till teamet. De kan skapa ett konto med sin befintliga e-postadress genom att följa anvisningarna som tillhandahålls. Sedan kan de använda Teams på webben eller installera Teams-appen på datorn.
+Din klient kommer att få en e-postinbjudan från Teams med information om att det krävs ett kostnadsfritt Microsoft-konto för att ansluta till teamet. De kan skapa ett konto med sin befintliga e-postadress genom att följa anvisningarna som tillhandahålls. De kan sedan använda Teams på webben eller installera Teams-appen på sin dator.

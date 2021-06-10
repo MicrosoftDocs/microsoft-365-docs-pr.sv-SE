@@ -25,7 +25,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Läs om hur du kontrollerar att programskyddsinställningarna för Microsoft 365 för företag verkställde på användarnas Windows 10-enheter.
+description: Lär dig att kontrollera att Microsoft 365 för företag-programskyddsinställningarna verkställde på dina användares Windows 10 enheter.
 ms.openlocfilehash: fcb463fd98f692f7d4802689e0c03fe4e3e648a1
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -39,13 +39,13 @@ ms.locfileid: "51579851"
 
 När du [konfigurerat principer för enheter](protection-settings-for-windows-10-pcs.md) kan det ta några timmar innan principen börjar gälla på användarnas enheter. Du kan bekräfta att principerna har verkställts genom att titta på olika skärmar för Windows-inställningar på användarnas enheter. Eftersom användarna inte kan ändra inställningarna för Windows Update och Windows Defender Antivirus på sina Windows 10-enheter är många alternativ nedtonade.
   
-1. Gå till **Inställningar Uppdatera** \> **säkerhet &amp; vid** \> **omstart** av Windows Update \>  och kontrollera att alla inställningar är nedtonade. 
+1. Gå till **Inställningar** \> **&amp; säkerhetsalternativ Windows** omstart av uppdatering och kontrollera att alla inställningar är \>  \>  nedtonade. 
     
     ![Alla alternativ för omstart är nedtonade.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Gå till **Inställningar** \> **Uppdatera &amp; säkerhetsinställningar** \> **i Windows Update** \> **–** avancerade alternativ och kontrollera att alla inställningar är nedtonade. 
+2. Gå till **Inställningar** \> **i &amp; Windows** \> **uppdatera** \> **avancerade alternativ** och kontrollera att alla inställningar är nedtonade. 
     
-    ![Alternativen för Avancerade uppdateringar i Windows är nedtonade.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Windows Alternativen för avancerade uppdateringar är nedtonade.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
@@ -61,7 +61,7 @@ När du [konfigurerat principer för enheter](protection-settings-for-windows-10
   
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Dokumentation och resurser för Microsoft 365 för företag](./index.yml)
+[Microsoft 365 dokumentation och resurser för företag](./index.yml)
   
 [Komma igång med Microsoft 365 för företag](microsoft-365-business-overview.md)
   

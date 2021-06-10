@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: Läs mer om hur du konfigurerar inställningarna för standardprincipen för enheter som en Windows 10-enhet får när du loggar in på deras arbets- eller skolkonto.
+description: Läs mer om hur du konfigurerar inställningarna för standardprincipen för enheter som Windows 10 enhet får när de loggar in på sitt arbets- eller skolkonto.
 ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -36,9 +36,9 @@ ms.locfileid: "51579983"
 ---
 # <a name="secure-windows-10-devices"></a>Skydda Windows 10-enheter
 
-Den här artikeln gäller Microsoft 365 Business Premium.
+Den här artikeln gäller för Microsoft 365 Business Premium.
 
-De inställningar som du konfigurerar här är en del av standardprincipen för Windows 10-enheter. Alla användare som ansluter en Windows 10-enhet, inklusive mobila enheter och datorer, genom att logga in med sitt arbetskonto får automatiskt de här inställningarna. Vi rekommenderar att du godkänner standardprincipen under installationen och senare lägger till principer som är riktad mot särskilda grupper av användare.
+De inställningar som du konfigurerar här är en del av standardprincipen för Windows 10-enheter. Alla användare som ansluter en Windows 10 enhet, inklusive mobila enheter och datorer, genom att logga in med sitt arbetskonto får automatiskt de här inställningarna. Vi rekommenderar att du godkänner standardprincipen under installationen och senare lägger till principer som är riktad mot särskilda grupper av användare.
   
 ## <a name="settings-to-secure-windows-10-devices"></a>Inställningar som skyddar Windows 10-enheter
 

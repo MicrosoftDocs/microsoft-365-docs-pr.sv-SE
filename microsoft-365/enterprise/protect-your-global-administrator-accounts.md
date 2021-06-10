@@ -1,5 +1,5 @@
 ---
-title: Skydda dina globala Microsoft 365-administratörskonton
+title: Skydda dina Microsoft 365 globala administratörskonton
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -29,11 +29,11 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50929054"
 ---
-# <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Skydda dina globala Microsoft 365-administratörskonton
+# <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Skydda dina Microsoft 365 globala administratörskonton
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Säkerhetsöverträdelser i Microsoft 365-abonnemang, som informationsattacker och nätfiskeattacker, utförs vanligtvis genom att autentiseringsuppgifter för ett globalt Microsoft 365-administratörskonto kompromettering kompromettering. Säkerheten i molnet är ett samarbete mellan dig och Microsoft:
+Säkerhetsöverträdelser i Microsoft 365-abonnemang, som informationsattacker och nätfiskeattacker, utförs vanligtvis genom att autentiseringsuppgifter för ett Microsoft 365 globalt administratörskonto kompromettens. Säkerheten i molnet är ett samarbete mellan dig och Microsoft:
   
 - Microsofts molntjänster bygger på en grund av förtroende och säkerhet. Microsoft tillhandahåller säkerhetskontroller och funktioner som hjälper dig att skydda dina data och program.
     
@@ -41,24 +41,24 @@ Säkerhetsöverträdelser i Microsoft 365-abonnemang, som informationsattacker o
     
 Microsoft tillhandahåller funktioner som hjälper dig att skydda din organisation, men de är bara effektiva om du använder dem. Om du inte använder dem kan du vara sårbar för angrepp. För att skydda dina globala administratörskonton finns Microsoft här för att hjälpa dig med detaljerade anvisningar för att:
   
-1. Skapa dedikerade globala Microsoft 365-administratörskonton och använd dem bara när det behövs.
+1. Skapa dedikerade Microsoft 365 globala administratörskonton och använd dem bara när det behövs.
     
-2. Konfigurera multifaktorautentisering för dina dedikerade globala Microsoft 365-administratörskonton och använd den starkaste formen av sekundär autentisering.
+2. Konfigurera multifaktorautentisering för dina dedikerade Microsoft 365 globala administratörskonton och använd den starkaste formen av sekundär autentisering.
     
 > [!Note]
 > Även om den här artikeln fokuserar på globala administratörskonton bör du överväga om ytterligare konton med omfattande behörigheter för att få åtkomst till data i din prenumeration, till exempel eDiscovery-administratör eller konton för säkerhets- och efterlevnadsadministratörer, ska skyddas på samma sätt. <br > Ett globalt administratörskonto kan skapas utan att några licenser läggs till.
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Steg 1. Skapa dedikerade globala Microsoft 365-administratörskonton och använd dem bara när det behövs
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Steg 1. Skapa dedikerade Microsoft 365 globala administratörskonton och bara använda dem när det behövs
 
 Det är ganska få administrativa uppgifter, till exempel tilldelning av roller till användarkonton, som kräver global administratörsbehörighet. I stället för att använda vanliga användarkonton som har tilldelats rollen global administratör gör du följande:
   
-1. Fastställ vilka användarkonton som har tilldelats rollen som global administratör. Du kan göra detta i administrationscentret för Microsoft 365 eller med följande Azure Active-katalog (Azure AD) PowerShell för Graph-kommando:
+1. Fastställ vilka användarkonton som har tilldelats rollen som global administratör. Du kan göra det Microsoft 365 administrationscentret eller med följande Azure Active-katalogkommando (Azure AD) PowerShell för Graph-
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
-2. Logga in på Microsoft 365-prenumerationen med ett användarkonto som har tilldelats rollen som global administratör.
+2. Logga in på Microsoft 365-prenumerationen med ett användarkonto som har tilldelats den globala administratörsrollen.
     
 3. Skapa upp till fyra dedikerade globala administratörsanvändarkonton. **Använd starka lösenord, minst 12 tecken långa.** Mer information [finns i Skapa ett](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) starkt lösenord. Lagra lösenorden för de nya kontona på en säker plats. 
     
@@ -72,7 +72,7 @@ Det är ganska få administrativa uppgifter, till exempel tilldelning av roller 
     
   - Ta bort den globala administratörsrollen.
     
-  - Tilldela administratörsroller till det konto som är lämpligt för den användarens arbetsuppgifter och ansvar. Mer information om olika administratörsroller i Microsoft 365 finns i [Om administratörsroller.](/office365/admin/add-users/about-admin-roles)
+  - Tilldela administratörsroller till det konto som är lämpligt för den användarens arbetsuppgifter och ansvar. Mer information om olika administratörsroller i Microsoft 365 finns i [Om administratörsroller](/office365/admin/add-users/about-admin-roles).
     
 8. Logga ut från Microsoft 365.
     
@@ -86,14 +86,14 @@ Resultatet ska vara:
 
 - Alla andra vanliga användarkonton som hanterar din prenumeration har administratörsroller som är kopplade till deras arbetsuppgifter.
     
-Från och med nu loggar du bara in med de dedikerade globala administratörskontona för de uppgifter som kräver global administratörsbehörighet. All annan Microsoft 365-administration måste göras genom att andra administratörsroller tilldelas användarkonton.
+Från och med nu loggar du bara in med de dedikerade globala administratörskontona för de uppgifter som kräver global administratörsbehörighet. Alla andra Microsoft 365 administration måste göras genom att tilldela andra administratörsroller till användarkonton.
   
 > [!NOTE]
-> Det här kräver ytterligare steg för att logga ut som ditt vanliga användarkonto och logga in med ett dedikerat globalt administratörskonto. Men det behöver bara göras då och då för globala administratörsåtgärder. Tänk på att det krävs många fler steg för att återställa din Microsoft 365-prenumeration efter att ett globalt administratörskonto har brytningar.
+> Det här kräver ytterligare steg för att logga ut som ditt vanliga användarkonto och logga in med ett dedikerat globalt administratörskonto. Men det behöver bara göras då och då för globala administratörsåtgärder. Tänk på att det krävs många fler Microsoft 365 för att återställa din prenumeration Microsoft 365 globala administratörskontot.
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>Steg 2. Konfigurera multifaktorautentisering för dina dedikerade globala Microsoft 365-administratörskonton
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>Steg 2. Konfigurera multifaktorautentisering för dina dedikerade Microsoft 365 globala administratörskonton
 
-Multifaktorautentisering (MFA) kräver ytterligare information utöver kontonamn och lösenord. Microsoft 365 har stöd för följande verifieringsmetoder:
+Multifaktorautentisering (MFA) kräver ytterligare information utöver kontonamn och lösenord. Microsoft 365 här ytterligare verifieringsmetoder:
   
 - Microsoft Authenticator-appen
 
@@ -111,13 +111,13 @@ Multifaktorautentisering (MFA) kräver ytterligare information utöver kontonamn
 
 Om du har ett litet företag som använder användarkonton som endast lagras i molnet (den molnbaserade identitetsmodellen) konfigurerar du MFA för att konfigurera [MFA](/office365/admin/security-and-compliance/set-up-multi-factor-authentication) med ett telefonsamtal eller med en verifieringskod i ett SMS som skickas till en smartphone för varje dedikerat globalt administratörskonto.
     
-Om du är en större organisation som använder en Microsoft 365-hybrididentitetsmodell har du fler verifieringsalternativ. Om du redan har säkerhetsinfrastrukturen på plats för en starkare sekundär autentiseringsmetod konfigurerar du [MFA](../admin/security-and-compliance/set-up-multi-factor-authentication.md) och konfigurerar varje dedikerat globalt administratörskonto för lämplig verifieringsmetod.
+Om du är en större organisation som använder en Microsoft 365 en hybrididentitetsmodell har du fler verifieringsalternativ. Om du redan har säkerhetsinfrastrukturen på plats för en starkare sekundär autentiseringsmetod konfigurerar du [MFA](../admin/security-and-compliance/set-up-multi-factor-authentication.md) och konfigurerar varje dedikerat globalt administratörskonto för lämplig verifieringsmetod.
   
-Om säkerhetsinfrastrukturen för den önskade, starkare verifieringsmetoden inte finns på plats och är fungerande för Microsoft 365 MFA rekommenderar vi starkt att du konfigurerar dedikerade globala administratörskonton med MFA med hjälp av Microsoft Authenticator-appen, ett telefonsamtal eller en verifieringskod i ett SMS som skickas till en smartphone för dina globala administratörskonton som en tillfällig säkerhetsåtgärd. Lämna inte dina dedikerade globala administratörskonton utan det extra skydd som MFA ger.
+Om säkerhetsinfrastrukturen för den önskade, starkare verifieringsmetoden inte finns på plats och är fungerande för Microsoft 365 MFA rekommenderar vi starkt att du konfigurerar dedikerade globala administratörskonton med MFA med Microsoft Authenticator-appen, ett telefonsamtal eller en verifieringskod i ett SMS som skickas till en smartphone för dina globala administratörskonton som en tillfällig säkerhetsåtgärd. Lämna inte dina dedikerade globala administratörskonton utan det extra skydd som MFA ger.
   
-Mer information finns i [MFA för Microsoft 365.](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
+Mer information finns i [MFA för Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
-Information om hur du ansluter till Microsoft 365-tjänster med MFA och PowerShell finns i följande artiklar:
+Information om hur du Microsoft 365 tjänster med MFA och PowerShell finns i följande artiklar:
 
 - [PowerShell för Microsoft 365 för användarkonton, grupper och licenser](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](/microsoftteams/teams-powershell-install)
@@ -131,7 +131,7 @@ Använd de här metoderna för att säkerställa att ditt globala administratör
   
 ### <a name="privileged-access-workstation"></a>Arbetsstation med privilegierad åtkomst
 
-Använd en arbetsstation med behörighet (SÅ SNART SOM MÖJLIGT) för att säkerställa att körningen av aktiviteter med hög behörighet är så säker som möjligt. EN ÄR EN dedikerad dator som endast används för känsliga konfigurationsuppgifter, till exempel Microsoft 365-konfiguration som kräver ett globalt administratörskonto. Eftersom den här datorn inte används dagligen för surfning på Internet eller e-post är den bättre skyddad mot Internetattacker och -hot.
+Använd en arbetsstation med behörighet (SÅ SNART SOM MÖJLIGT) för att säkerställa att körningen av aktiviteter med hög behörighet är så säker som möjligt. EN ÄR EN dedikerad dator som endast används för känsliga konfigurationsuppgifter, t.ex. Microsoft 365 konfiguration som kräver ett globalt administratörskonto. Eftersom den här datorn inte används dagligen för surfning på Internet eller e-post är den bättre skyddad mot Internetattacker och -hot.
   
 Anvisningar om hur du ställer in en TIDE finns i [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices) .
 
@@ -141,7 +141,7 @@ Mer information om hur du skapar en omfattande översikt för att skydda skyddad
 
 ### <a name="azure-ad-privileged-identity-management"></a>Azure Active Directory Privileged Identity Management
 
-I stället för att ha globala administratörskonton permanent tilldelade den globala administratörsrollen kan du använda PIM (Azure AD Privileged Identity Management) för att aktivera tilldelning på begäran och i tid av den globala administratörsrollen när det behövs.
+I stället för att dina globala administratörskonton permanent tilldelas rollen som global administratör kan du använda Azure AD Privileged Identity Management (PIM) för att aktivera tilldelning på begäran och i tid av den globala administratörsrollen när det behövs.
   
 Dina globala administratörskonton går från att vara permanenta administratörer till behöriga administratörer. Rollen som global administratör är inaktiv tills någon behöver den. Sedan slutför du aktiveringen och lägger till den globala administratörsrollen i det globala administratörskontot under en förutbestämd tidsperiod. När tiden går ut tar PIM bort rollen som global administratör från det globala administratörskontot.
   
@@ -149,7 +149,7 @@ Genom att använda PIM och den här processen minskar avsevärt tiden som dina g
 
 PIM finns i Azure Active Directory Premium P2, som ingår i Microsoft 365 E5. Alternativt kan du köpa enskilda Azure Active Directory Premium P2-licenser för dina administratörskonton.
   
-Mer information finns i Azure [AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
+Mer information finns i [Azure AD-Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
   
 
 ### <a name="privileged-access-management"></a>Privileged Access Management
@@ -168,13 +168,13 @@ Information om hur du aktiverar hantering av privilegierad åtkomst finns [i Kon
 
 Mer information finns i Hantera [privilegierad åtkomst.](/office365/securitycompliance/privileged-access-management-overview)
 
-### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Säkerhetsinformation och händelsehanteringsprogram (SIEM) för Microsoft 365-loggning
+### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Säkerhetsinformation och händelsehanteringsprogram (SIEM) för Microsoft 365 loggning
 
-SIEM-programvara som körs på en server utför analyser i realtid av säkerhetsvarningar och händelser som skapats av program och nätverksmaskinvara. För att tillåta att din SIEM-server inkluderar Microsoft 365 säkerhetsvarningar och händelser i sina analys- och rapporteringsfunktioner integrerar du Azure AD i SEIM. Se [Introduktion till Azure-loggintegrering.](/azure/security/security-azure-log-integration-overview)
+SIEM-programvara som körs på en server utför analyser i realtid av säkerhetsvarningar och händelser som skapats av program och nätverksmaskinvara. För att se till att din SIEM-server inkluderar Microsoft 365 säkerhetsvarningar och händelser i sina analys- och rapporteringsfunktioner integrerar du Azure AD i seIM. Se [Introduktion till Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Nästa steg
 
-Om du vill konfigurera identitet för Microsoft 365-prenumerationen kan du läsa:
+Om du anger identitet för din prenumeration Microsoft 365 du:
 
 - [Molnidentiteter](cloud-only-identities.md) om du använder molnidentitet
 - [Förbereda för katalogsynkronisering](prepare-for-directory-synchronization.md) om du använder hybrididentitet
