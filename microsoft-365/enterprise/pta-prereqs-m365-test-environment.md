@@ -23,9 +23,9 @@ ms.locfileid: "51199855"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Krav för identitets- och enhetsåtkomst för direktautentisering i din Microsoft 365-testmiljö
 
-*Den här testlabbguiden kan endast användas för Microsoft 365 för företagstestmiljöer.*
+*Den här testlabbguiden kan endast användas Microsoft 365 för företagstestmiljöer.*
 
-[Identitets- och](../security/office-365-security/microsoft-365-policies-configurations.md) enhetsåtkomstkonfigurationer är en uppsättning konfigurationer och villkorsstyrda åtkomstprinciper för att skydda åtkomsten till alla tjänster i Microsoft 365 för företag som är integrerade med Azure Active Directory (Azure AD).
+[Identitets- och enhetsåtkomstkonfigurationer](../security/office-365-security/microsoft-365-policies-configurations.md) är en uppsättning konfigurationer och villkorsstyrda åtkomstprinciper för att skydda åtkomsten till alla tjänster i Microsoft 365 för företag som är integrerade med Azure Active Directory (Azure AD).
 
 I den här artikeln beskrivs hur du kan konfigurera en Microsoft 365-testmiljö som uppfyller kraven för [konfiguration av direktautentisering](../security/office-365-security/identity-access-prerequisites.md#prerequisites) för identitets- och enhetsåtkomst.
 
@@ -37,7 +37,7 @@ Det finns tio faser för att konfigurera testmiljön:
 4. Konfigurera tillbakaskrivning av lösenord
 5. Konfigurera lösenordsåterställning via självbetjäning
 6. Konfigurera multifaktorautentisering
-7. Aktivera automatisk enhetsregistrering för domänbaserade Windows-datorer
+7. Aktivera automatisk enhetsregistrering för domän-Windows datorer
 8. Konfigurera lösenordsskydd i Azure AD 
 9. Aktivera Azure AD Identity Protection
 10. Aktivera modern autentisering för Exchange Online och Skype för företag – Online
@@ -88,9 +88,9 @@ Följ anvisningarna i [fas 2 i testlabbguiden för multifaktorautentisering](mul
 
 Testa endast multifaktorautentisering för kontot Användare 2.
 
-## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Steg 7: Aktivera automatisk enhetsregistrering för domänbaserade Windows-datorer 
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Steg 7: Aktivera automatisk enhetsregistrering för domänbaserade Windows datorer 
 
-Följ [de här anvisningarna](/azure/active-directory/devices/hybrid-azuread-join-plan) för att aktivera automatisk enhetsregistrering på domänbaserade Windows-datorer.
+Följ [de här anvisningarna](/azure/active-directory/devices/hybrid-azuread-join-plan) för att aktivera automatisk enhetsregistrering för domän-Windows datorer.
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>Steg 8: Konfigurera lösenordsskydd i Azure AD 
 
@@ -100,7 +100,7 @@ Följ [dessa anvisningar](/azure/active-directory/authentication/concept-passwor
 
 Följ anvisningarna i [fas 2 i testlabbguiden för Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
-## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Steg 10: Aktivera modern autentisering för Exchange Online och Skype för företag – Online
+## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Fas 10: Aktivera modern autentisering för Exchange Online och Skype för företag Online
 
 Följ [dessa anvisningar](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later) för Exchange Online. 
 

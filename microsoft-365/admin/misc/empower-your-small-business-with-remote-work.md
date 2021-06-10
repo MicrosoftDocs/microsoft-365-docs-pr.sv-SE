@@ -27,7 +27,7 @@ ms.locfileid: "52023743"
 När företag anpassar sig till det ökade behovet av att få människor att arbeta på distans och ansluta till sina kunder virtuellt, är den här webbplatsen uppdaterad med den senaste informationen, tips, resurser och vägledning för distansarbete för företag som använder Microsoft 365.
 
 >[!TIP]
->Har du inte Microsoft_Teams? Få Microsoft Teams i Office i 6 månader utan kostnad (när du registrerar dig för 1 år). Hämta teknikerna som beskrivs i den här artikeln som en del av erbjudandet. Mer information finns i [Prova kostnadsfritt 1 månad.](https://aka.ms/SMBTeamsOffer)
+>Har du inte Microsoft_Teams? Få 6 månader Microsoft Teams i Office gratis (när du registrerar dig för 1 år). Hämta teknikerna som beskrivs i den här artikeln som en del av erbjudandet. Mer information finns i [Prova kostnadsfritt 1 månad.](https://aka.ms/SMBTeamsOffer)
 
 ## <a name="remote-work-for-your-small-business-video"></a>Distansarbete för småföretag (video)
 
@@ -37,17 +37,17 @@ När företag anpassar sig till det ökade behovet av att få människor att arb
 
 Mot bakgrund av utbrottet av COVID-19 (coronavirus), står många företagsägare med en helt fjärransluten arbetspersonal. Det här kan du göra för att göra en övergång till distansarbete säkert, säkert och produktivt.
 
-Mer information finns i [Komma igång med Microsoft Teams i småföretag.](../../business-video/get-started-teams-small-business.md)
+Mer information finns i [Komma igång med Microsoft Teams i ditt småföretag.](../../business-video/get-started-teams-small-business.md)
 
-Har du redan en prenumeration men behöver konfigurera den? Se [utbildning för Microsoft 365 Small Business.](../../business-video/index.yml)
+Har du redan en prenumeration men behöver konfigurera den? Se [Microsoft 365 utbildning för småföretag.](../../business-video/index.yml)
 
-## <a name="connect-with-employees-and-customers"></a>Få kontakt med anställda och kunder
+## <a name="connect-with-employees-and-customers"></a>Anslut med anställda och kunder
 
-Du kan fortfarande ansluta till anställda, kunder, klienter och partner, även om ni inte kan träffas. Använd Microsoft Teams om du vill fortsätta att göra affärer och ansluta till dina kunder. 
+Du kan fortfarande ansluta till anställda, kunder, klienter och partner, även om ni inte kan träffas. Använd Microsoft Teams för att fortsätta att göra affärer och ansluta till dina kunder. 
 
-### <a name="meet-up-in-teams"></a>Träffas i Teams
+### <a name="meet-up-in-teams"></a>Möts i Teams
 
-Hålla ljud-, video- och webbmöten med anställda, kunder och partner i Microsoft Teams.
+Hålla ljud-, video- och webbmöten med anställda, kunder och partner via Microsoft Teams.
 
 Mer information finns i Vara [värd för onlinemöten](../../business-video/start-and-pin-chats.md) [och Chatta med anställda och kunder.](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)
 
@@ -55,7 +55,7 @@ Mer information finns i Vara [värd för onlinemöten](../../business-video/star
 
 Placera affärsdokumenten i molnet och dela dem på ett säkert sätt, både internt och externt.
 
-Mer information finns i översikten [över delning av affärsfiler och](../../business-video/overview-file-sharing.md) Ladda upp och dela [filer.](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)
+Mer information finns i översikten [över delning av företagsfiler och Upload](../../business-video/overview-file-sharing.md) och dela [filer.](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)
 
 ### <a name="collaborate-with-customers"></a>Samarbeta med kunder
 
@@ -81,13 +81,13 @@ Mer information finns i [Hantera enheter](../../business-video/secure-win-10-pro
 
 ### <a name="more-for-admins-and-partners"></a>Mer för administratörer och partner
 
-Navet för teknisk dokumentation för Microsoft 365 Business uppdateras med ny säker fjärrvägledning.
+Navet för teknisk Microsoft 365 Business uppdateras med ny säker fjärrvägledning.
 
-Mer information finns i [Microsoft 365 Business-resurser.](https://docs.microsoft.com/microsoft-365/business)
+Mer information finns i [Microsoft 365 Business resurser](https://docs.microsoft.com/microsoft-365/business).
 
 ## <a name="need-to-ask-a-question"></a>Behöver du ställa en fråga? 
 
-Fråga i [Teams-forumet](https://answers.microsoft.com/msteams/forum) eller [Office-administratörsforumet](https://answers.microsoft.com).
+Fråga i [Teams eller](https://answers.microsoft.com/msteams/forum) i [administratörsforumet Office](https://answers.microsoft.com).
 
 > [!NOTE]
 > De flesta av uppgifterna i den här artikeln och videon kan utföras med en prenumeration på Microsoft 365 Business Basic (tidigare Office 365 Business Essentials), men vissa kräver en premium-prenumeration. 

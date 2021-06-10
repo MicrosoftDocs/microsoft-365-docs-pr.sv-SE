@@ -44,21 +44,21 @@ ms.locfileid: "51187391"
 |:------------------------------------------------------------------|:-----------------------------------|:------------------------------------------------------------|
 | [List MachineActions](get-machineactions-collection.md)           | [Maskinåtgärd](machineaction.md) | Enheter [inom List Machine Action.](machineaction.md)           |
 | [Get MachineAction](get-machineaction-object.md)                  | [Maskinåtgärd](machineaction.md) | Skaffa en enda [enhet med datoråtgärder.](machineaction.md)     |
-| [Paket för insamling av undersökning](collect-investigation-package.md) | [Maskinåtgärd](machineaction.md) | Samla in undersökningspaket från en [dator.](machine.md) |
-| [Get investigation package SAS URI](get-package-sas-uri.md)       | [Maskinåtgärd](machineaction.md) | Hämta URI för att hämta undersökningspaketet.          |
-| [Isolera datorn](isolate-machine.md)                             | [Maskinåtgärd](machineaction.md) | Isolera [datorn](machine.md) från nätverket.                 |
-| [Släpp datorn från isolation](unisolate-machine.md)            | [Maskinåtgärd](machineaction.md) | Släpp [datorn](machine.md) från isolationet.               |
-| [Begränsa appkörning](restrict-code-execution.md)              | [Maskinåtgärd](machineaction.md) | Begränsa programkörning.                             |
-| [Ta bort appbegränsning](unrestrict-code-execution.md)            | [Maskinåtgärd](machineaction.md) | Ta bort begränsning för programkörning.                   |
-| [Kör antivirussökning](run-av-scan.md)                              | [Maskinåtgärd](machineaction.md) | Kör en AV-sökning med Windows Defender (om tillämpligt).    |
-| [Offboard-dator](offboard-machine-api.md)                       | [Maskinåtgärd](machineaction.md) | [Offboard-dator](machine.md) från Microsoft Defender för Endpoint. |
-| [Stoppa och sätt filen i karantän](stop-and-quarantine-file.md)           | [Maskinåtgärd](machineaction.md) | Stoppa körningen av en fil på en dator och ta bort den.        |
+| [Samla in undersökningspaket](collect-investigation-package.md) | [Maskinåtgärd](machineaction.md) | Samla in undersökningspaket från en [dator.](machine.md) |
+| [Hämta undersökningspaket för SAS URI](get-package-sas-uri.md)       | [Maskinåtgärd](machineaction.md) | Hämta URI för att hämta undersökningspaketet.          |
+| [Isolera maskin](isolate-machine.md)                             | [Maskinåtgärd](machineaction.md) | Isolera [datorn](machine.md) från nätverket.                 |
+| [Släppa maskin för isolering](unisolate-machine.md)            | [Maskinåtgärd](machineaction.md) | Släpp [datorn](machine.md) från isolationet.               |
+| [Begränsa körning av program](restrict-code-execution.md)              | [Maskinåtgärd](machineaction.md) | Begränsa programkörning.                             |
+| [Ta bort programbegränsning](unrestrict-code-execution.md)            | [Maskinåtgärd](machineaction.md) | Ta bort begränsning för programkörning.                   |
+| [Kör antivirusgenomsökning](run-av-scan.md)                              | [Maskinåtgärd](machineaction.md) | Kör en AV-sökning med Windows Defender (om tillämpligt).    |
+| [Avregistrera maskin](offboard-machine-api.md)                       | [Maskinåtgärd](machineaction.md) | [Offboard-dator](machine.md) från Microsoft Defender för Endpoint. |
+| [Stoppa och placera filen i karantän](stop-and-quarantine-file.md)           | [Maskinåtgärd](machineaction.md) | Stoppa körningen av en fil på en dator och ta bort den.        |
 
 <br>
 
 ## <a name="properties"></a>Egenskaper
 
-| Egenskap            | Skriv           | Beskrivning                                                                                                                                                                                                    |
+| Egenskap            | Typ           | Beskrivning                                                                                                                                                                                                    |
 |:--------------------|:---------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ID                  | Guid           | Identiteten för [datoråtgärden.](machineaction.md)                                                                                                                                                     |
 | skriv                | Uppräkning           | Typ av åtgärd. Möjliga värden är: "RunAntiVirusTour", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" och "UnrestrictCodeExecution" |

@@ -1,5 +1,5 @@
 ---
-title: Skapa en aviseringsregel för onboarding eller offboarding
+title: Skapa en regel för registrering eller avregistrering
 description: Få ett meddelande när ett lokalt onboarding- eller offboarding-skript används.
 keywords: onboarding, offboarding, lokal, skript, meddelande, regel
 search.product: eADQiWindows 10XVcnh
@@ -44,8 +44,8 @@ Skapa en meddelanderegel så att du får ett meddelande när du använder ett lo
 
 ## <a name="before-you-begin"></a>Innan du börjar
 Du måste ha åtkomst till:
- - Microsoft Flow (som minst 1 flödesplan). Mer information finns på sidan [Priser för flöde.](https://flow.microsoft.com/pricing/)
- - Azure-tabell eller SharePoint-lista eller -bibliotek/SQL DB
+ - Microsoft Flow (Flow minst 1 abonnemang 1). Mer information finns på sidan [Flow priser.](https://flow.microsoft.com/pricing/)
+ - Azure Table eller SharePoint Lista eller Bibliotek / SQL DB
 
 ## <a name="create-the-notification-flow"></a>Skapa meddelandeflödet
 
@@ -63,7 +63,7 @@ Du måste ha åtkomst till:
 
     ![Bild av meddelandeflödet](images/build-flow.png)
 
-4. Välj knappen + för att lägga till en ny åtgärd. Den nya åtgärden kommer att vara en HTTP-begäran till Defender för slutpunktens säkerhetscenter-enheters API. Du kan också ersätta den med den inmatade "WDATP Connector" (åtgärd: "Datorer - hämta lista över datorer"). 
+4. Välj knappen + för att lägga till en ny åtgärd. Den nya åtgärden kommer att vara en HTTP-begäran till Defender för slutpunktens säkerhetscenter-enheters API. Du kan också ersätta den med den inmatade "WDATP Connector&quot; (åtgärd: &quot;Datorer - hämta lista över datorer"). 
 
     ![Bild av återkommande och lägg till åtgärd](images/recurrence-add.png)
 
@@ -73,11 +73,11 @@ Du måste ha åtkomst till:
    - Metod: "GET" som ett värde för att få listan över enheter.
    - URI: Ange `https://api.securitycenter.microsoft.com/api/machines` .
    - Autentisering: Välj "Active Directory OAuth".
-   - Klientorganisation: Logga in på https://portal.azure.com och navigera till Azure Active Directory > för appregistreringar och få värdet klientorganisations-ID. 
+   - Klientorganisation: Logga in på https://portal.azure.com och navigera till Azure Active Directory > appregistreringar och få värdet för klientorganisations-ID. 
    - Målgrupp: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - Klient-ID: Logga in på https://portal.azure.com och navigera till Azure Active Directory > **och** få värdet klient-ID.
+   - Klient-ID: Logga in på https://portal.azure.com och navigera till Azure Active Directory > **appregistreringar** och få klient-ID-värdet.
    - Typ av autentiseringsuppgifter: Välj "Hemligt".
-   - Hemligt: Logga in på och https://portal.azure.com navigera till Azure Active Directory > för appregistreringar och få värdet klientorganisations-ID. 
+   - Hemligt: Logga in på https://portal.azure.com och navigera till Azure Active Directory > appregistreringar och få värdet klientorganisations-ID. 
 
     ![Bild av HTTP-villkor](images/http-conditions.png)
 
@@ -176,9 +176,9 @@ Du måste ha åtkomst till:
 
     ```
 
-10.  Extrahera värdena från JSON-samtalet och kontrollera om den registrerade enheten/-enheten redan är registrerad på SharePoint-listan som exempel:
+10.  Extrahera värdena från JSON-samtalet och kontrollera om den registrerade enheten/-enheten redan är registrerad på SharePoint som exempel:
 - Om ja utlöses inget meddelande
-- Om nej registrerar du de nya onboarded-enheten i SharePoint-listan och ett meddelande skickas till Defender för Slutpunktsadministratören
+- Om nej registreras de nya onboarded-enheter i SharePoint och ett meddelande skickas till Defender för Slutpunktsadministratören
 
     ![Bild av varje ansökt](images/flow-apply.png)
 

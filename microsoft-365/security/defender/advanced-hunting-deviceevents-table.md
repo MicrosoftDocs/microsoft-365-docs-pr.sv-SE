@@ -1,7 +1,7 @@
 ---
 title: Tabellen DeviceEvents i det avancerade sökschemat
 description: Läs mer om antivirus, brandväggen och andra händelsetyper i tabellen för diverse enhetshändelser (DeviceEvents) i det avancerade sökschemat
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, DeviceEvents
+keywords: avancerad sökning, hotsökning, sökning efter cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, säkerhetshändelser, antivirus, brandvägg, sårbarhetsskydd, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "52023207"
 - Microsoft 365 Defender
 - Microsoft Defender för Endpoint
 
-Diverse enhetshändelser eller -tabeller i det avancerade sökschemat innehåller information om olika händelsetyper, inklusive händelser som utlöses av säkerhetskontroller, till exempel Windows Defender Antivirus och `DeviceEvents` sårbarhetsskydd. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Diverse enhetshändelser eller -tabeller i det avancerade sökschemat innehåller information om olika händelsetyper, inklusive händelser som utlöses av säkerhetskontroller, till exempel `DeviceEvents` Windows Defender Antivirus och [](advanced-hunting-overview.md) sårbarhetsskydd. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
 > Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.

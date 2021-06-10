@@ -25,22 +25,22 @@ ms.locfileid: "52029022"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Isolerat team för ett hemligt projekt av Contoso Corporation
 
-Efter en chef på plats beställde Contosos VD utvecklingen av en ny uppsättning produkter och tjänster som skulle kunna dubbla Contosos resultat under de kommande fem åren. Det topphemliga projektet att utveckla affärs-, teknik- och marknadsplanen hette **Project 2X** och nyckelpersonal i hela företaget har rekryterings. 
+Efter en chef på plats beställde Contosos VD utvecklingen av en ny uppsättning produkter och tjänster som skulle kunna dubbla Contosos resultat under de kommande fem åren. Det topphemliga projektet att utveckla företagets, teknik- och marknadsplan kallades **Project 2X** och viktig personal i hela företaget har rekryteringts. 
 
 Tidslinjerna för forskning och utveckling var knappa, vilket gjorde att samarbetet kunde vara effektivt och ge säkra möten, pågående konversationer och fillagring.
 
-De resulterande slutprodukterna för Project 2X var affärsplaner, produkt- och tekniska specifikationer samt marknadsföringsmaterial och scheman i form av Word-, Excel- och PowerPoint-filer. 
+De resulterande slutprodukterna för Project 2X var affärsplaner, produkt- och tekniska specifikationer samt marknadsföringsmaterial och scheman i form av Word, Excel och PowerPoint filer. 
 
 På grund av sin känsliga natur var åtkomsten till dessa filer:
 
-- Begränsad till Project 2X-gruppmedlemmar och ledningsgruppen.
-- Krypterat och skyddat med behörigheter att endast ge åtkomst till Project 2X-gruppmedlemmar och ledningsgruppen, även om filerna distribuerades utanför sina skyddade mappar.
+- Begränsas till Project 2X-teammedlemmar och ledningsgruppen.
+- Krypterad och skyddad med behörigheter att bara ge åtkomst till Project 2X-teammedlemmar och ledningsgruppen, även om filerna distribuerades utanför sina skyddade mappar.
 
-Contosos IT-personal använde en [grupp med säkerhetsisolering](secure-teams-security-isolation.md) för Project 2X och de här stegen.
+Contosos IT-personal använde [ett team med säkerhetsisolering](secure-teams-security-isolation.md) för att Project 2X och de här stegen.
 
 ## <a name="step-1-created-a-private-team"></a>Steg 1: Skapat ett privat team
 
-För att skydda åtkomsten till den underliggande SharePoint-webbplatsen för gruppen konfigurerade Contoso IT-administratörer den [rekommenderade SharePoint-åtkomstprincipen.](../security/office-365-security/sharepoint-file-access-policies.md)
+För att skydda åtkomsten till teamets underliggande SharePoint-webbplats konfigurerade Contoso IT-administratörer den [rekommenderade SharePoint för åtkomstprinciper.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 En Contoso IT-administratör skapade sedan ett nytt privat team med namnet Project 2X och lade till användarkontona för Project 2X-personal som medlemmar. De har även konfigurerat teamet så att endast Project 2X-teamägare kan skapa privata kanaler.
 
@@ -48,57 +48,57 @@ Konfigurationsinformationen finns i Skapa [ett privat team](secure-teams-securit
 
 ## <a name="step-2-created-a-sensitivity-label-for-the-project-2x-team"></a>Steg 2: Skapat en känslighetsetikett för Project 2X-teamet
 
-Contoso-administratörer har skapat en ny känslighetsetikett med **namnet Project 2X som:**
+Contoso-administratörer har skapat en ny känslighetsetikett **med namnet Project 2X som:**
 
 - Aktiverad kryptering.
-- Tillåten Co-Author för Microsoft 265-gruppen Project 2X.
+- Tillåten Co-Author behörigheter för gruppen Project 2X Microsoft 365 användare.
 - Tillåtna visningsbehörigheter för ledningsgruppsgruppen.
 - Blockerad åtkomst till ohanterade enheter.
 
-Filer i avsnittet **Dokument** på den underliggande SharePoint-webbplatsen för Project 2X skyddades av:
+Filer i avsnittet **Dokument** på den underliggande webbplatsen Project 2X SharePoint skyddade av:
 
-- Webbplatsbehörigheter, som endast tillåter fullständiga behörigheter för medlemmar i Microsoft 2X Microsoft 365-gruppen och läsbehörigheter för ledningsgruppsgruppen.
-- Känslighetsetiketten för Project 2X med kryptering och behörigheter som förs med filen om den flyttas eller kopieras från webbplatsen.
+- Webbplatsbehörigheter, som endast tillåter fullständiga behörigheter för medlemmar i gruppen Project 2X Microsoft 365, och läsa behörigheter till ledningsgruppsgruppen.
+- Den Project känslighetsetikett för 2X, med kryptering och behörigheter som tillsammans med filen flyttas eller kopieras från webbplatsen.
 
 Mer information om konfiguration finns i [Skapa en känslighetsetikett](secure-teams-security-isolation.md#create-a-sensitivity-label).
 
-## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Steg 3: Konfigurerade den underliggande SharePoint-webbplatsen
+## <a name="step-3-configured-the-underlying-sharepoint-site"></a>Steg 3: Konfigurerade den underliggande SharePoint webbplatsen
 
-För att skydda åtkomsten till den underliggande SharePoint-webbplatsen för gruppen konfigurerade Contoso IT-administratörer den [rekommenderade SharePoint-åtkomstprincipen.](../security/office-365-security/sharepoint-file-access-policies.md)
+För att skydda åtkomsten till teamets underliggande SharePoint-webbplats konfigurerade Contoso IT-administratörer den [rekommenderade SharePoint för åtkomstprinciper.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 Därefter har de konfigurerat ytterligare behörighetsinställningar för webbplatsen:
 
-- Förhindra att medlemmar i Project 2X-grupper delar åtkomst till webbplatsen. Mer information om konfiguration finns i [SharePoint-inställningar för ett team med säkerhetsisolering](secure-teams-security-isolation.md#sharepoint-settings).
+- För att Project 2X-gruppmedlemmar från att dela åtkomst till webbplatsen. Information om konfiguration finns i SharePoint [för ett team med säkerhetsisolering](secure-teams-security-isolation.md#sharepoint-settings).
 - För läsbehörigheter för ledningsgruppsgruppen.
 
-Därefter har de konfigurerat ytterligare behörighetsinställningar för webbplatsen för att förhindra att Project 2X-gruppmedlemmar delar åtkomst till webbplatsen. 
+Därefter har de konfigurerat ytterligare behörighetsinställningar för webbplatsen för att förhindra Project 2X-gruppmedlemmar från att dela åtkomst till webbplatsen. 
 
-När privata kanaler för Project 2X skapades inaktiverade gruppägaren gästdelningen och ställer in standardlänken för delning till **värdet Specifika** personer.
+När privata kanaler för Project 2X har skapats inaktiverade gruppägaren gästdelningen och ställer in standardlänken för delning till värdet **Specifika** personer.
 
-Här är den resulterande konfigurationen av Project 2X-teamet med säkerhetsisolering.
+Här är den resulterande konfigurationen av en Project 2X-grupp med säkerhetsisolering.
 
-![Den resulterande konfigurationen av Project 2X-gruppen](../media/contoso-team-for-top-secret-project.png)
+![Den resulterande konfigurationen av 2X-Project 2X-gruppen](../media/contoso-team-for-top-secret-project.png)
 
- ## <a name="step-4-trained-project-2x-team-members"></a>Steg 4: Utbildning i Project 2X-gruppmedlemmar
+ ## <a name="step-4-trained-project-2x-team-members"></a>Steg 4: Utbildat Project 2X-teammedlemmar
 
-Contoso-säkerhetspersonalen fick utbildning i Project 2X-gruppmedlemmarna i en obligatorisk kurs som tog dem genom:
+Contoso-säkerhetspersonalen har utbildat Project 2X-teammedlemmar i en obligatorisk kurs som gått igenom dem:
 
-- Hur du får tillgång till det nya Project 2X-teamet, använder möten och chattar och hur du samarbetar i gruppfiler.
+- Hur du får tillgång till det Project 2X-teamet, använder möten och chattar och hur du samarbetar i teamfiler.
 - Så här skapar du nya filer i teamet och laddar upp nya filer som skapats lokalt.
-- Så här etiketterar du filer med känslighetsetiketten för Project 2X.
-- En demonstration av hur project 2X-etiketten skyddar en fil även när den lämnar gruppen.
+- Så här etiketterar du filer Project med en känslighetsetikett som är 2X.
+- En demonstration av hur en Project med 2X-etikett skyddar en fil även när den lämnar teamet.
 
-Resultatet var en säker miljö där Project 2X-gruppmedlemmar samarbetade i en säker miljö för chattar, möten och filer.
+Resultatet var en säker miljö där 2X-Project samarbetade i en säker miljö för chattar, möten och filer.
 
-Här är ett exempel på en fil som lagrats på den underliggande Project 2X-webbplatsen med känslighetsetiketten för Project 2X tilldelad.
+Här är ett exempel på en fil som lagras på den underliggande 2X Project-webbplatsen med känslighetsetiketten Project 2X tilldelat.
 
-![Ett exempel på en fil som lagrats på den underliggande Project 2X-webbplatsen](../media/contoso-team-for-top-secret-project-example.png)
+![Ett exempel på en fil som lagras på den underliggande Project 2X-webbplatsen](../media/contoso-team-for-top-secret-project-example.png)
 
-I några fall laddade Project 2X-gruppmedlemmar ned filer som skyddas av Project 2X-etiketten till en lokal enhet för offlinearbete. 
+I några fall laddade Project 2X-gruppmedlemmar ned filer skyddade av Project 2X-etiketten till en lokal enhet för offlinearbete. 
 
 När de efter en uppmaning om att ange autentiseringsuppgifter när de öppnade dem insåg de sitt misstag och raderade dem.
 
-På grund av samarbetsmiljön i Teams och säkerhetsfunktionerna i Microsoft 365 var informationen i Project 2X hemlig under hela projektet. Contoso meddelade sina planer och är i processen med att lansera nya produkter och tjänster till glädjen från sina kunder och investerare och chagrin av sina konkurrenter.
+På grund av samarbetsmiljön i Teams och säkerhetsfunktionerna i Microsoft 365 har informationen i Project 2X varit hemlig under hela projektet. Contoso meddelade sina planer och är i processen med att lansera nya produkter och tjänster till glädjen från sina kunder och investerare och chagrin av sina konkurrenter.
 
 ## <a name="next-step"></a>Nästa steg
 

@@ -26,7 +26,7 @@ ms.locfileid: "51199471"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Använda identitets-, enhets- och hotskydd för dataskyddsförordningen
 
-Microsoft 365 tillhandahåller ett antal funktioner för identitet, enheter och hotskydd som organisationer kan använda för att hjälpa till att uppfylla sekretessrelaterade bestämmelser om datasekretess. I den här artikeln beskrivs vad datasekretessbestämmelser kräver på dessa områden och en lista med relaterade Microsoft 365-funktioner och -tjänster med länkar till mer information som hjälper dig att uppfylla implementeringskraven.
+Microsoft 365 finns ett antal funktioner för identitet, enheter och hotskydd som organisationer kan använda för att hjälpa till att uppfylla sekretessrelaterade bestämmelser om datasekretess. I den här artikeln beskrivs vad datasekretessbestämmelser kräver på dessa områden och en lista med relaterade Microsoft 365-funktioner och -tjänster med länkar till mer information som hjälper dig att uppfylla implementeringskraven.
 
 ## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>Hur identitets-, enhets- och hotskydd relaterar till dataskyddsförordningen
 
@@ -34,7 +34,7 @@ Microsoft 365 tillhandahåller ett antal funktioner för identitet, enheter och 
 
 - Personuppgifter ska bearbetas på ett sätt som säkerställer tillräcklig säkerhet för personuppgifter, inklusive skydd mot obehörig eller olaglig bearbetning och mot oavsiktlig förlust, intrång eller skada genom att använda lämpliga tekniska åtgärder eller organisationsåtgärder (integritet och konfidentialitet).
 
-Eftersom personliga databrott ofta orsakas av administrativa intrång eller slutanvändarkontointrång och skadlig systemåtkomst. Till exempel kan en hack för ett administratörskonto resultera i att kundkortsnummer eller annan personlig information förs över. Alla vi rekommenderar att du använder identitets-, enhets- och hotskydd tillsammans med Microsoft 365 bör potentiellt implementeras, vilket återspeglas i efterlevnadsresultatet i Efterlevnadshanteraren.
+Eftersom personliga databrott ofta orsakas av administrativa intrång eller slutanvändarkontointrång och skadlig systemåtkomst. Till exempel kan en hack för ett administratörskonto resultera i att kundkortsnummer eller annan personlig information förs över. Alla vi rekommenderar att du använder skydd mot identitet, enheter och hot med Microsoft 365 bör potentiellt implementeras, vilket återspeglas i efterlevnadsresultatet i Efterlevnadshanteraren.
 
 ## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>Använda resultaten från ditt utvärderingsarbete och Efterlevnadshanteraren
 
@@ -53,29 +53,29 @@ Använd [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services
 - Konfigurera principer för användarrisk och användar inloggningsrisk.
 - Aktivera villkorlig åtkomst och multifaktorautentisering (MFA) för administratörer och icke-administratörer.
 - Konfigurera och tillämpa lösenordsprinciper.
-- Begränsa åtkomst till konton med behörighet med identitetshantering med Azure AD-behörighet.
+- Begränsa åtkomst till behöriga konton med Azure AD Privileged Identity Management.
 - Inaktivera åtkomst vid uppsägning.
 - Granska användarkonton och statusändringar.
 - Granska rollgrupper och administrativa ändringar.
 
-Använd [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) för enheter och kategorin **Hantera** enheter med vilka du kan:
+Använd [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) för enheter och **kategorin Hantera** enheter med vilka du kan:
 
 - Blockera jail broken and rooted mobile devices.
 - Konfigurera Intune för hantering av mobila enheter.
-- Skapa efterlevnadsprinciper för Android-, iOS-, macOS- och Windows-enheter.
-- Skapa en profil för enhetskonfiguration för Android-, iOS-, macOS- och Windows-enheter.
+- Skapa efterlevnadsprinciper för Android, iOS, macOS och Windows enheter.
+- Skapa en profil för enhetskonfiguration för Android, iOS, macOS och Windows enheter.
 - Skapa principer för appskydd för iOS och Windows.
 - Dölj information med låsskärmen.
 - Implementera lösenordsprinciper för mobila enheter.
 - Kräv att mobila enheter låser sig vid inaktivitet.
 - Kräva att mobila enheter rensar vid flera inloggningsfel.
 
-Använd [Exchange Online Protection och Microsoft Defender för Office 365](../security/office-365-security/defender-for-office-365.md) **för** kategorin Skydda mot hot med vilka du kan:
+Använd [Exchange Online Protection och Microsoft Defender för Office 365](../security/office-365-security/defender-for-office-365.md) **för kategorin** Skydda mot hot, som du kan med:
 
 - Aktivera avsändarautentisering (SPF, DMARC och DKIM).
 - Konfigurera Microsoft Defender för Office 365 mot nätfiske.
-- Implementera säkra bifogade filer.
-- Implementera säkra länkar.
+- Implementera Valv bifogade filer.
+- Implementera Valv länkar.
 - Implementera principer för identifiering av skadlig programvara och svar.
 - Implementera principer för utgående och inkommande skräppost.
 

@@ -55,4 +55,4 @@ Med de här alternativen tas tillämpning av Basic Mobility och Security bort f�
 3.  Välj Ja i dialogrutan **Varning.**
 
 >[!NOTE]
->Mer information om hur du tar bort blockering av enheter om organisationens enheter fortfarande är blockerade finns i blogginlägget Ta bort åtkomstkontroll från Hantering av mobila enheter för [Office 365.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)
+>Mer information om hur du tar bort blockering av enheter om organisationens enheter fortfarande är blockerade finns i blogginlägget Ta bort åtkomstkontroll [från Mobile Device Management för Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).

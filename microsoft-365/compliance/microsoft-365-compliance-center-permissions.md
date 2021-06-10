@@ -1,5 +1,5 @@
 ---
-title: Behörigheter i Microsoft 365 efterlevnadscenter
+title: Behörigheter i Microsoft 365 Efterlevnadscentret
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,7 +18,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 06/05/2021
 ms.locfileid: "52782855"
 ---
-# <a name="permissions-in-the-microsoft-365-compliance-center"></a>Behörigheter i Microsoft 365 efterlevnadscenter
+# <a name="permissions-in-the-microsoft-365-compliance-center"></a>Behörigheter i Microsoft 365 Efterlevnadscentret
 
 Kom Microsoft 365 kompatibilitetscenter har nyligen uppdaterats och har nu stöd för direkt hantering av behörigheter för användare som utför efterlevnadsuppgifter i Microsoft 365. Den här uppdateringen innebär att du inte längre behöver använda Säkerhets- Office 365 säkerhets- & för att hantera behörigheter för efterlevnadslösningar. Med den **nya** sidan Behörigheter i efterlevnadscentret för Microsoft 365 kan du hantera behörigheter för användare för efterlevnadsuppgifter i funktioner som enhetshantering, skydd mot dataförlust, eDiscovery, insider-riskhantering, kvarhållning och många fler. Användare kan bara utföra de efterlevnadsuppgifter som du uttryckligen beviljar dem åtkomst till.
 
@@ -28,13 +28,13 @@ För att  visa fliken Behörigheter i Microsoft 365 efterlevnadscenter måste an
 
 Behörigheter i Microsoft 365 är baserade på den rollbaserade behörighetsmodellen (RBAC). RBAC är samma behörighetsmodell som används av de flesta Microsoft 365-tjänster, så om du är bekant med behörighetsstrukturen i de här tjänsterna känner du till att bevilja behörigheter i Microsoft 365 efterlevnadscenter. Det är viktigt att komma ihåg att de behörigheter som hanteras i Microsoft 365 efterlevnadscenter inte omfattar hanteringen av alla behörigheter som krävs för varje enskild tjänst. Du måste fortfarande hantera vissa tjänstspecifika behörigheter i administrationscentret för den specifika tjänsten. Om du till exempel behöver tilldela behörigheter för arkivering, granskning och MRM-kvarhållningsprinciper måste du hantera de här behörigheterna i Exchange administrationscenter.
 
-## <a name="relationship-of-members-roles-and-role-groups"></a>Relation mellan medlemmar, roller och rollgrupper
+## <a name="relationship-of-members-roles-and-role-groups"></a>Relationen mellan medlemmar, roller och rollgrupper
 
 En roll ger behörighet att utföra en uppsättning aktiviteter. Med rollen Ärendehantering kan användarna till exempel arbeta med eDiscovery-ärenden.
 
 En rollgrupp är en uppsättning roller som gör att användare kan göra sitt jobb med efterlevnadslösningar Microsoft 365 efterlevnadscenter. Genom att lägga till användare i rollgruppen *Insider-riskhantering* konfigureras till exempel administratörer, analytiker, ekonomier och granskare för de nödvändiga behörigheterna för Insider-riskhantering i en enda grupp. I Microsoft 365 kompatibilitetscenter finns standardrollgrupper för uppgifter och funktioner för varje efterlevnadslösning som du måste tilldela personer till. I allmänhet rekommenderar vi att du bara lägger till enskilda användare som medlemmar i rollgrupperna för standardefterlevnad efter behov.
 
-![Diagram som visar relationen mellan rollgrupper och roller och medlemmar](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagram som visar förhållandet mellan rollgrupper och roller och medlemmar](../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## <a name="permissions-needed-to-use-features-in-the-microsoft-365-compliance-center"></a>Behörigheter som krävs för att använda funktioner Microsoft 365 efterlevnadscenter
 
@@ -55,8 +55,8 @@ De roller som visas i avsnittet **Azure**  >  **AD-roller** på sidan Behörighe
 |**Säkerhetsläsare**|Användare som har den här rollen kan visa och undersöka aktiva hot mot dina Microsoft 365-användare, enheter och innehåll, men (i motsats till säkerhetsoperatören) har de inte behörighet att svara genom att vidta åtgärder. Mer information finns i [Säkerhetsläsare](/azure/active-directory/roles/permissions-reference#security-reader).|
 |**Säkerhetsadministratör**|Användare som har den här rollen kan styra organisationens allmänna säkerhet genom att hantera säkerhetsprinciper, granska säkerhetsanalyser och -rapporter i Microsoft 365-produkter och hålla sig uppdaterade om hotet. Mer information finns i [Säkerhetsadministratör](/azure/active-directory/roles/permissions-reference#security-administrator).|
 |**Global läsare**|Den skrivskyddade versionen av rollen **Global administratör**. Visa alla inställningar och administrativ information i Microsoft 365. Mer information finns i[ Global läsare](/azure/active-directory/roles/permissions-reference#global-reader).|
-|**Simuleringsadministratör för attack**|Skapa och hantera alla aspekter av att skapa attackspel, starta/schemalägga en simulering och granska simuleringsresultat. Mer information finns i Attack [simuleringsadministratör](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
-|**Författare av attack av nyttolast**|Skapa attack payloads men inte starta eller schemalägga dem. Mer information finns i Attack [Payload Author](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
+|**Administratör för angreppssimulering**|Skapa och hantera alla aspekter av angreppssimulering. Skapande, start/schemaläggning av en simulering och granskning av resultat. Mer information finns i [Administratör för angreppssimulering](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
+|**Författare av angreppets nyttolast**|Skapa angreppsnyttolaster, men faktiskt inte starta eller schemalägg dem. Mer information finns i [Författare av angreppets nyttolast](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 
 ## <a name="add-users-to-a-compliance-role-group"></a>Lägga till användare i en rollgrupp för efterlevnad

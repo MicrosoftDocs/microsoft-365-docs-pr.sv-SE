@@ -61,7 +61,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Skriv | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 Innehållstyp | sträng | application/json. **Obligatoriskt.**
@@ -69,7 +69,7 @@ Innehållstyp | sträng | application/json. **Obligatoriskt.**
 ## <a name="request-body"></a>Begärans brödtext
 Ange följande parametrar för ett JSON-objekt i begärans brödtext:
 
-Parameter | Skriv    | Beskrivning
+Parameter | Typ    | Beskrivning
 :---|:---|:---
 Indikatorer | Indikator<[lista](ti-indicator.md)> | Lista över [indikatorer](ti-indicator.md). **Obligatoriskt**
 

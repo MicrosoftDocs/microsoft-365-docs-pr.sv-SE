@@ -105,7 +105,7 @@ Microsoft har stöd för flera olika alternativ när du påbörjar övergången 
 |[![Poster för Microsoft-telefonilösningar](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>Uppdaterades mars 2021 | Mer information finns i Planera [Teams röstlösning.](/microsoftteams/cloud-voice-landing-page)|
 
 
-## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Konfigurera infrastrukturen för hybridarbete
+## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Konfigurera din infrastruktur för hybridarbete
 
 Med Microsoft 365 och andra Microsoft-molntekniker kan du ge dina medarbetare säker åtkomst till organisationens lokala och molnbaserade information, verktyg och resurser från deras hem. 
 

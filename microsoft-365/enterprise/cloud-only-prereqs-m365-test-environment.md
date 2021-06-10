@@ -23,7 +23,7 @@ ms.locfileid: "51199555"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Krav för identitets- och enhetsåtkomst för moln i din Microsoft 365-testmiljö
 
-*Den här testlabbguiden kan endast användas för Microsoft 365 för företagstestmiljöer.*
+*Den här testlabbguiden kan endast användas Microsoft 365 för företagstestmiljöer.*
 
 [Identitets- och enhetsåtkomstkonfigurationer](../security/office-365-security/microsoft-365-policies-configurations.md) är en uppsättning rekommenderade konfigurationer och villkorsstyrda åtkomstprinciper för att skydda åtkomsten till alla tjänster som är integrerade med Azure Active Directory (Azure AD).
 
@@ -35,7 +35,7 @@ Konfigurationen av testmiljön består av åtta faser. Du behöver:
 2. Konfigurera namngivna platser
 3. Konfigurera lösenordsåterställning via självbetjäning
 4. Konfigurera multifaktorautentisering
-5. Aktivera automatisk enhetsregistrering för domänbaserade Windows-datorer
+5. Aktivera automatisk enhetsregistrering för domän-Windows datorer
 6. Konfigurera lösenordsskydd i Azure AD 
 7. Aktivera Azure AD Identity Protection
 8. Aktivera modern autentisering för Exchange Online och Skype för företag – Online
@@ -77,9 +77,9 @@ Följ anvisningarna i [fas 2 i testlabbguiden för multifaktorautentisering](mul
 
 Testa endast multifaktorautentisering för kontot Användare 2.
 
-## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Steg 5: Aktivera automatisk enhetsregistrering på domänbaserade Windows-datorer 
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Steg 5: Aktivera automatisk enhetsregistrering för domän-Windows datorer 
 
-Följ [de här anvisningarna](/azure/active-directory/devices/hybrid-azuread-join-plan) för att aktivera automatisk enhetsregistrering på domänbaserade Windows-datorer.
+Följ [de här anvisningarna](/azure/active-directory/devices/hybrid-azuread-join-plan) för att aktivera automatisk enhetsregistrering för domän-Windows datorer.
 
 ## <a name="phase-6-configure-azure-ad-password-protection"></a>Steg 6: Konfigurera lösenordsskydd i Azure AD 
 

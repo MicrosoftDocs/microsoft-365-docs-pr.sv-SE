@@ -65,7 +65,7 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `ProcessVersionInfoFileDescription` | sträng | Beskrivning av versionsinformationen för den nya processen |
 | `ProcessId` | int | Process-ID (PID) för den nya processen |
 | `ProcessCommandLine` | sträng | Kommandorad som används för att skapa den nya processen |
-| `ProcessIntegrityLevel` | sträng | Integritetsnivån för den nyligen skapade processen. I Windows tilldelas processer integritetsnivåer baserat på vissa egenskaper, till exempel om de startades från ett nedladdat Internet. De här integritetsnivåerna påverkar behörigheter till resurser |
+| `ProcessIntegrityLevel` | sträng | Integritetsnivån för den nyligen skapade processen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de startas från ett nedladdat Internet. De här integritetsnivåerna påverkar behörigheter till resurser |
 | `ProcessTokenElevation` | sträng | Anger vilken typ av tokenhöjd som används för den nya processen. Möjliga värden: TokenElevationTypeLimited (begränsad), TokenElevationTypeDefault (standard) och TokenElevationTypeFull (förhöjd) |
 | `ProcessCreationTime` | datetime | Datum och tid då processen skapades |
 | `AccountDomain` | sträng | Domän för kontot |
@@ -80,7 +80,7 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `InitiatingProcessAccountUpn` | sträng | Användarkontons huvudnamn (UPN) för det konto som körde processen som ansvarar för händelsen |
 | `InitiatingProcessAccountObjectId` | sträng | Azure AD-objekt-ID för användarkontot som körde processen som ansvarar för händelsen |
 | `InitiatingProcessLogonId` | sträng | Identifierare för en inloggningssession i processen som initierade händelsen. Den här identifieraren är unik på samma dator bara mellan omstarter. |
-| `InitiatingProcessIntegrityLevel` | sträng | Integritetsnivån för processen som initierade händelsen. I Windows tilldelar Windows integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de startades från en Internetnedladdning. De här integritetsnivåerna påverkar behörigheter till resurser |
+| `InitiatingProcessIntegrityLevel` | sträng | Integritetsnivån för processen som initierade händelsen. Windows tilldelar integritetsnivåer till processer baserat på vissa egenskaper, till exempel om de startades från en Internetnedladdning. De här integritetsnivåerna påverkar behörigheter till resurser |
 | `InitiatingProcessTokenElevation` | sträng | Tokentyp som anger närvaro eller frånvaro av UAC-behörighets ökning (User Access Control) som används för processen som initierade händelsen |
 | `InitiatingProcessSHA1` | sträng | SHA-1 för processen (bildfil) som initierade händelsen |
 | `InitiatingProcessSHA256` | sträng | SHA-256 för processen (bildfil) som initierade händelsen. Det här fältet fylls vanligtvis inte i – använd SHA1-kolumnen när den är tillgänglig. |
