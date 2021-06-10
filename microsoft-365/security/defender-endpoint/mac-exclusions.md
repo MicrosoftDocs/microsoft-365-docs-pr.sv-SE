@@ -39,7 +39,7 @@ ms.locfileid: "51935035"
 Den här artikeln innehåller information om hur du definierar undantag som gäller för sökning på begäran, skydd och övervakning i realtid.
 
 >[!IMPORTANT]
->Undantag som beskrivs i den här artikeln gäller inte för andra Defender för slutpunkt på Mac-funktioner, inklusive identifiering av slutpunkt och svar (EDR). Filer som du undantar med hjälp av metoderna som beskrivs i den här artikeln kan fortfarande utlösa EDR-aviseringar och andra identifieringar.
+>Undantag som beskrivs i den här artikeln gäller inte för andra Defender för slutpunkt på Mac-funktioner, inklusive identifiering och åtgärd på slutpunkt (Identifiering och åtgärd på slutpunkt). Filer som du undantar med de metoder som beskrivs i den här artikeln kan fortfarande utlösa Identifiering och åtgärd på slutpunkt aviseringar och andra identifieringar.
 
 Du kan utesluta vissa filer, mappar, processer och process öppna filer från Defender för Slutpunkt på Mac-genomsökningar.
 

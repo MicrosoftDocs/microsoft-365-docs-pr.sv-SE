@@ -1,7 +1,7 @@
 ---
-title: Skapa och visa undantag för säkerhetsrekommendationer – hantering av hot och sårbarhet
-description: Skapa och övervaka undantag för säkerhetsrekommendationer i hantering av hot och sårbarhet.
-keywords: Microsoft Defender för Endpoint-tvm-åtgärd, Microsoft Defender för Slutpunkt-tvm, hantering av hot och sårbarhet, & sårbarhetshantering, & sårbarhetshantering, åtgärd för tvm-åtgärd intune, tvm remediation sccm
+title: Skapa och visa undantag för säkerhetsrekommendationer – Hantering av hot och säkerhetsrisker
+description: Skapa och övervaka undantag för säkerhetsrekommendationer i Hantering av hot och säkerhetsrisker.
+keywords: Microsoft Defender för Endpoint tvm-åtgärd, Microsoft Defender för Endpoint tvm, Hantering av hot och säkerhetsrisker, threat & hantering av säkerhetsrisker, threat & hantering av säkerhetsrisker remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,14 +25,14 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933751"
 ---
-# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Skapa och visa undantag för säkerhetsrekommendationer – hantering av hot och sårbarhet
+# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Skapa och visa undantag för säkerhetsrekommendationer – Hantering av hot och säkerhetsrisker
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Hantering av hot och sårbarhet](next-gen-threat-and-vuln-mgt.md)
+- [Hot och hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -62,9 +62,9 @@ Använd undantaget för alla aktuella enhetsgrupper eller välj specifika enhets
 
 #### <a name="filtered-views"></a>Filtrerade vyer
 
-Om du har filtrerat efter enhetsgrupp på någon av sidorna för hot och sårbarhetshantering visas bara de filtrerade enhetsgrupper som alternativ.
+Om du har filtrerat efter enhetsgrupp på någon av Hantering av hot och säkerhetsrisker sidor visas bara de filtrerade enhetsgrupper som alternativ.
 
-Det här är knappen för att filtrera efter enhetsgrupp på någon av sidorna för hot och sårbarhetshantering: 
+Det här är knappen för att filtrera efter enhetsgrupp på någon av Hantering av hot och säkerhetsrisker sidor: 
 
 ![Visar filter för valda enhetsgrupper.](images/tvm-selected-device-groups.png)
 
@@ -128,7 +128,7 @@ Markera den specifika enhetsgruppen om du vill avbryta undantaget för den. En u
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>Visa påverkan efter att undantag har tillämpats
 
-På sidan Säkerhetsrekommendationer väljer du **Anpassa kolumner** och markerar kryssrutorna för exponerade enheter **(efter undantag)** **och Påverkan (efter undantag).**
+På sidan Säkerhet Rekommendationer väljer du **Anpassa** kolumner och markerar kryssrutorna för Exponerade enheter **(efter undantag)** och **Påverkan (efter undantag)**.
 
 ![Visar alternativ för anpassa kolumner.](images/tvm-after-exceptions.png)
 
@@ -140,7 +140,7 @@ Effekterna (efter undantag) visar återstående påverkan på exponeringsresulta
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över hantering av säkerhetsrisker hot och hot](next-gen-threat-and-vuln-mgt.md)
 - [Åtgärda säkerhetsproblem](tvm-remediation.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)
 - [Exponeringsvärde](tvm-exposure-score.md)

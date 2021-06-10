@@ -1,7 +1,7 @@
 ---
-title: Kör dina Microsoft 365 Defender-attackspel
+title: Köra din Microsoft 365 Defender-attack simuleringar
 description: Kör attack simuleringar för ditt Microsoft 365 Defender-pilotprojekt för att se hur det utvecklas och snabbt åtgärdas.
-keywords: Microsoft 365 Defender pilotattack simulering, kör Microsoft 365 Defender pilotattack simulering, simulera attack i Microsoft 365 Defender, Microsoft 365 Defender pilotprojekt, cybersäkerhet, avancerade fortlöpande hot, företagssäkerhet, enheter, enhet, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
+keywords: Microsoft 365 Defender pilotattack simulering, kör Microsoft 365 Defender pilotattack simulering, simulera attack i Microsoft 365 Defender, Microsoft 365 Defender pilotprojekt, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enhet, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934483"
 ---
-# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Kör dina Microsoft 365 Defender-attackspel
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Köra din Microsoft 365 Defender-attack simuleringar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934483"
 
 Du befinner dig för närvarande i simuleringsfasen av attacken.
 
-När du har förberett pilotmiljön är det dags att testa incidenthanteringen i Microsoft 365 Defender och automatiska undersöknings- och åtgärdsfunktioner. Vi hjälper dig att simulera en avancerad attack som använder avancerade tekniker för att dölja det. Attacken räknar upp öppna SMB-sessioner (Server Message Block) på domänkontrollanter och hämtar de senaste IP-adresserna för användarnas enheter. Den här kategorin av attacker inkluderar vanligtvis inte filer som släppts på offerts enhet – de förekommer endast i minnet. De "boar av landet" genom att använda befintliga system- och administrationsverktyg och mata in kod i systemprocesser för att dölja körningen, ett sådant beteende gör att de kan avkoda identifieringen och finnas kvar på enheten.
+När du har förberett pilotmiljön är det dags att testa Microsoft 365 Defender-incidenthantering och automatiska undersöknings- och åtgärdsfunktioner. Vi hjälper dig att simulera en avancerad attack som använder avancerade tekniker för att dölja det. Attacken räknar upp öppna SMB-sessioner (Server Message Block) på domänkontrollanter och hämtar de senaste IP-adresserna för användarnas enheter. Den här kategorin av attacker inkluderar vanligtvis inte filer som släppts på offerts enhet – de förekommer endast i minnet. De "boar av landet" genom att använda befintliga system- och administrationsverktyg och mata in kod i systemprocesser för att dölja körningen, ett sådant beteende gör att de kan avkoda identifieringen och finnas kvar på enheten.
 
 I den här simuleringen börjar vårt exempelscenario med ett PowerShell-skript. En användare kan bli lurad att köra ett skript. Eller så kan skriptet köras från en fjärranslutning till en annan dator från en tidigare smittad enhet – då försöker attackeraren flytta sig fritt i nätverket. Det kan vara svårt att identifiera de här skripten eftersom administratörer också ofta kör skript på distans för att utföra olika administrativa aktiviteter.
 
@@ -60,16 +60,16 @@ Eftersom du redan har konfigurerat pilotmiljön under förberedelsefasen bör du
 
    - Enheten körs med Windows Server 2008 R2 eller en senare version.
    - Testdomänkontrollanten till [Microsoft Defender för identitet och](/azure/security-center/security-center-wdatp) aktivera [fjärrhantering](/windows-server/administration/server-manager/configure-remote-management-in-server-manager).
-   - Kontrollera att [Microsoft Defender för identitets- och Microsoft Cloud App-säkerhetsintegrering](/cloud-app-security/mdi-integration) har aktiverats.
+   - Kontrollera att [microsoft Defender för identitet och Microsoft Cloud App Security har](/cloud-app-security/mdi-integration) aktiverats.
    - En testanvändare skapas på din domän – ingen administratörsbehörighet krävs.
 
 3. Verifiera testenhetskonfigurationen:
 
-   1. Enheten körs med Windows 10 version 1903 eller en senare version.
+   1. Enheten körs med Windows 10 version 1903 eller senare.
 
    1. Testenheten är ansluten till testdomänen.
 
-   1. [Aktivera Windows Defender Antivirus.](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) Om du har problem med att aktivera Windows Defender Antivirus kan du gå till den här [felsökningsavsnittet.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
+   1. [Aktivera Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Om du har problem med att aktivera Windows Defender Antivirus kan du gå till den här [felsökningsavsnittet](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
    1. Kontrollera att testenheten är [onboarded till Microsoft Defender för Endpoint).](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 
@@ -81,7 +81,7 @@ Så här kör du simuleringen av attackscenariot:
 
 1. Logga in på testenheten med testanvändarkontot.
 
-2. Öppna ett Windows PowerShell-fönster på testenheten.
+2. Öppna Windows PowerShell testenhet.
 
 3. Kopiera följande simuleringsskript:
 
@@ -99,9 +99,9 @@ Så här kör du simuleringen av attackscenariot:
 4. När du uppmanas till det klistrar du in och kör det kopierade skriptet.
 
 > [!NOTE]
-> Om du kör PowerShell med fjärrskrivbordsprotokoll (RDP) använder du kommandot Skriv urklippstext i RDP-klienten eftersom **metoden CTRL-V** för snabbtangent eller högerklicks-inklistring kanske inte fungerar. Senaste versioner av PowerShell accepterar ibland inte heller den metoden, du kanske först måste kopiera till Anteckningar i minnet, kopiera den i den virtuella datorn och sedan klistra in den i PowerShell.
+> Om du kör PowerShell med fjärrskrivbordsprotokoll (RDP) använder du kommandot Skriv urklippstext i RDP-klienten eftersom **metoden CTRL-V** för snabbtangent eller högerklicks-inklistring kanske inte fungerar. Senaste versioner av PowerShell accepterar inte heller den metoden ibland. Du kan behöva kopiera till Anteckningar i minnet först, kopiera den i den virtuella datorn och sedan klistra in den i PowerShell.
 
-Några sekunder senare <i>notepad.exe</i> den. En simulerad attackkod matas in i notepad.exe. Låt den automatiskt skapade anteckningsblocksinstansen vara öppen och se hela scenariot.
+Några sekunder senare <i>notepad.exe</i> den. En simulerad attackkod matas in i notepad.exe. Låt den automatiskt genererade Anteckningar instansen vara öppen för hela scenariot.
 
 Den simulerade attackkoden försöker kommunicera till en extern IP-adress (som återspelar C2-servern) och försöker sedan förena domänkontrollanten via SMB.
 
@@ -111,7 +111,7 @@ När skriptet har slutförts visas ett meddelande på PowerShell-konsolen.
 ran NetSessionEnum against [DC Name] with return code result 0
 ```
 
-Om du vill se hur funktionen Automatiserat incidenter och svar fungerar i praktiken behåller du notepad.exe processen öppen. Automatiserad incident och svar stoppar Anteckningar-processen.
+Om du vill se hur funktionen Automatiserat incidenter och svar fungerar i praktiken behåller du notepad.exe processen öppen. Automatiserad incident och svar stoppar processen Anteckningar svar.
 
 ## <a name="investigate-an-incident"></a>Undersöka en händelse
 
@@ -120,13 +120,13 @@ Om du vill se hur funktionen Automatiserat incidenter och svar fungerar i prakti
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Om du går över till SOC-analytiker kan du nu börja undersöka attacken i Microsoft 365 Säkerhetscenter-portalen.
+När du växlar till SOC-analytiker kan du börja undersöka attacken i Microsoft 365 Säkerhetscenter-portalen.
 
-1. Öppna Microsoft [365 Säkerhetscenter-portalens incidentkö](https://security.microsoft.com/incidents) från valfri enhet.
+1. Öppna [incidentkön Microsoft 365 Säkerhetscenter-portalen](https://security.microsoft.com/incidents) från valfri enhet.
 
 2. Gå till **Incidenter** på menyn.
 
-    ![Skärmbild av incidenter som visas på vänster sida i Säkerhetscenter för Microsoft 365](../../media/mtp/fig1.png)
+    ![Skärmbild av incidenter som visas Microsoft 365 säkerhetscentrets vänstra meny](../../media/mtp/fig1.png)
 
 3. Den nya incidenten för den simulerade attacken visas i incidentkön.
 
@@ -134,7 +134,7 @@ Om du går över till SOC-analytiker kan du nu börja undersöka attacken i Micr
 
 ### <a name="investigate-the-attack-as-a-single-incident"></a>Undersök attacken som en enda incident
 
-Microsoft 365 Defender korrelerar analyser och aggregerar alla relaterade aviseringar och undersökningar från olika produkter till en incidentenhet. På så sätt visar Microsoft 365 Defender en bredare attackhistoria, så att SOC-analytiker kan förstå och reagera på komplexa hot.
+Microsoft 365 Defender korrelerar analyser och sammanställer alla relaterade aviseringar och undersökningar från olika produkter till en enda incidentenhet. På så sätt Microsoft 365 Defender en bredare attackhistoria, så att SOC-analytiker kan förstå och reagera på komplexa hot.
 
 Aviseringarna som genererades under den här simuleringen är associerade med samma hot och därför aggregeras automatiskt som en enda incident.
 
@@ -152,7 +152,7 @@ Så här visar du händelsen:
 
 3. Välj **Öppna incidentsida** om du vill ha mer information om incidenten.
 
-   På sidan **Incident** ser du alla aviseringar och information om händelsen. Informationen omfattar de enheter och tillgångar som ingår i aviseringen, varningens identifieringskälla (Microsoft Defender för identitet, EDR) och orsaken till att de länkades ihop. När du granskar incidentvarningslistan visas attackens förlopp. Från den här vyn kan du se och undersöka enskilda aviseringar.
+   På sidan **Incident** ser du alla aviseringar och information om händelsen. Informationen omfattar de enheter och tillgångar som ingår i aviseringen, varningens identifieringskälla (Microsoft Defender för identitet, Identifiering och åtgärd på slutpunkt) och orsaken till att de länkades ihop. När du granskar incidentvarningslistan visas attackens förlopp. Från den här vyn kan du se och undersöka enskilda aviseringar.
 
    Du kan också klicka **på Hantera** incident i den högra menyn för att tagga händelsen, tilldela den till dig själv och lägga till kommentarer.
 
@@ -169,7 +169,7 @@ Vi tittar på några av de aviseringar som genererades vid en simulerad attack.
 
 ![Skärmbild av genererade aviseringar](../../media/mtp/fig6.png)
 
-#### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>Avisering: Observerad processinjicering av misstänkt process (källa: Microsoft Defender för slutpunkt EDR)
+#### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>Avisering: Observerad processinjicering av misstänkt process (källa: Microsoft Defender för Identifiering och åtgärd på slutpunkt)
 
 Avancerade attacker använder avancerade och avancerade metoder för att finnas kvar i minnet och dölja för identifieringsverktyg. En vanlig teknik är att arbeta från en betrodd systemprocess i stället för en skadlig körbar fil, vilket gör det svårt att identifiera verktyg och säkerhetsåtgärder för att upptäcka den skadliga koden.
 
@@ -177,7 +177,7 @@ För att SOC-analytiker ska kunna fånga de här avancerade attackerna tillhanda
 
 ![Skärmbild av aviseringen för signal om potentiellt skadlig kod](../../media/mtp/fig7.png)
 
-#### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>Varning: Oväntat beteende som observerats av en process som körs utan kommandoradsargument (Källa: Microsoft Defender för Slutpunkt EDR)
+#### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>Varning: Oväntat beteende som observerats av en process som körs utan kommandoradsargument (Källa: Microsoft Defender för slutpunkt Identifiering och åtgärd på slutpunkt)
 
 Microsoft Defender för slutpunktsidentifiering riktar ofta in sig på det vanligaste attributet för en attackteknik. Den här metoden säkerställer att varaktigheten ökar för att attacker ska kunna växla till nyare taktiker.
 
@@ -227,7 +227,7 @@ På incidentsidan väljer du fliken **Användare för** att visa listan över an
 
 Välj användarnamnet för att öppna användarens profilsida där vidare undersökning kan genomföras. [Läs mer om att undersöka riskfyllda användare.](/cloud-app-security/tutorial-ueba#identify)
 
-![Skärmbild av användarsidan för molnappsäkerhet](../../media/mtp/fig13.png)
+![Skärmbild av Cloud App Security användarsida](../../media/mtp/fig13.png)
 
 ## <a name="automated-investigation-and-remediation"></a>Automatiserad undersökning och åtgärder
 
@@ -262,7 +262,7 @@ Stäng händelsen när undersökningen har slutförts och bekräftat att du vill
 
 Välj **Hantera incident**. Ange statusen Lös **incidenten** och välj relevant klassificering.
 
-När problemet har lösts stängs alla associerade aviseringar i Microsoft 365 Säkerhetscenter och i relaterade portaler.
+När problemet har lösts stängs alla associerade aviseringar i Microsoft 365 säkerhetscenter och i relaterade portaler.
 
 ![Skärmbild av sidan incidenter med öppna panelen Hantera incident där du kan klicka på omkopplaren för att lösa problemet](../../media/mtp/fig16.png)
 
@@ -279,17 +279,17 @@ Då avslutas attackberäkningen för incidenthantering och automatiserad unders�
 
 Det krävs en enda intern postlåda och enhet för det här scenariot. Du måste också ha ett externt e-postkonto för att skicka testmeddelandet.
 
-1. Kontrollera att klientorganisationen har [aktiverat Microsoft 365 Defender.](m365d-enable.md#confirm-that-the-service-is-on)
+1. Kontrollera att klientorganisationen har [aktiverat Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 2. Identifiera en målpostlåda som ska användas för att ta emot e-post.
     a. Den här postlådan måste övervakas av Microsoft Defender för Office 365 b. Enheten från krav 3 måste få åtkomst till den här postlådan
 3. Konfigurera en testenhet: a. Kontrollera att du använder Windows 10 version 1903 eller senare.
     b. Anslut testenheten till testdomänen.
-    c. [Aktivera Windows Defender Antivirus.](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) Om du har problem med att aktivera Windows Defender Antivirus kan du gå till den [här felsökningsavsnittet.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
+    c. [Aktivera Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Om du har problem med att aktivera Windows Defender Antivirus kan du gå till det [här avsnittet om felsökning.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)
     d. [Gå till Microsoft Defender för Slutpunkt](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### <a name="run-the-simulation"></a>Kör simuleringen
 
-1. Från ett externt e-postkonto skickar du ett e-postmeddelande till postlådan som identifierats i steg 2 i avsnittet för testmiljökrav. Inkludera en bifogad fil som tillåts genom befintliga principer för e-postfilter. Filen behöver inte vara skadlig eller körbar. De föreslagna filtyperna är <i>.pdf,</i> <i>.exe</i> (om det tillåts) eller Office-dokument som en Word-fil.
+1. Från ett externt e-postkonto skickar du ett e-postmeddelande till postlådan som identifierats i steg 2 i avsnittet för testmiljökrav. Inkludera en bifogad fil som tillåts genom befintliga principer för e-postfilter. Filen behöver inte vara skadlig eller körbar. Föreslagna filtyper är <i>.pdf, </i> <i>.exe</i> (om det är tillåtet) Office dokument, till exempel en Word-fil.
 2. Öppna det skickade e-postmeddelandet från enheten som konfigurerats enligt definitionen i steg 3 i avsnittet för testmiljökrav. Öppna den bifogade filen eller spara den på enheten.
 
 #### <a name="go-hunting"></a>Jaga
@@ -432,10 +432,10 @@ Anpassade identifieringar kör frågan enligt den frekvens du har angett, och re
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Mer avancerad genomgångs övningar för sökning
 
-Om du vill veta mer om avancerad sökning går följande webbsändningar igenom funktionerna för avancerad sökning i Microsoft 365 Defender, där du kan skapa korsfrågor, pivotera till enheter och skapa anpassade identifieringar och åtgärder.
+Om du vill veta mer om avancerad sökning går följande webbsändningar igenom funktionerna för avancerad sökning i Microsoft 365 Defender för att skapa korsreparationsfrågor, pivotera till enheter och skapa anpassade identifieringar och åtgärder.
 
 > [!NOTE]
-> Förbered dig med ditt eget GitHub-konto för att köra sökfrågor i testlabbmiljön.
+> Förbered dig med ditt GitHub konto för att köra frågor om testlabb.
 
 |Title|Beskrivning|Ladda ned MP4|Titta på YouTube|CSL-fil att använda|
 |---|---|---|---|---|
@@ -447,5 +447,5 @@ Om du vill veta mer om avancerad sökning går följande webbsändningar igenom 
 
 ## <a name="next-step"></a>Nästa steg
 
-|![Slutfas och sammanfattningsfas](../../media/mtp/close.png) <br>[Slutfas och sammanfattningsfas](m365d-pilot-close.md)|Analysera dina pilotresultat i Microsoft 365 Defender, presentera dem för dina intressenter och ta nästa steg.
+|![Slutfas och sammanfattningsfas](../../media/mtp/close.png) <br>[Slutfas och sammanfattningsfas](m365d-pilot-close.md)|Analysera ditt Microsoft 365 Defender-pilotresultat, presentera dem för dina intressenter och ta nästa steg.
 |:-----|:-----|

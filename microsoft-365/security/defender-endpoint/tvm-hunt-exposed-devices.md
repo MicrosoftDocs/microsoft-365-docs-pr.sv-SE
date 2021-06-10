@@ -1,6 +1,6 @@
 ---
 title: Jaga efter exponerade enheter
-description: Lär dig hur hantering av hot och hot kan användas för att hjälpa säkerhetsadministratörer, IT-administratörer och SecOps att samarbeta.
+description: Lär dig Hantering av hot och säkerhetsrisker kan användas för att hjälpa säkerhetsadministratörer, IT-administratörer och SecOps att samarbeta.
 keywords: Microsoft Defender för Endpoint-tvm-scenarier, Microsoft Defender för slutpunkt, tvm, tvm-scenarier, minska exponering av hot & sårbarhet, minska hot och sårbarhet, förbättra säkerhetskonfiguration, öka Microsoft Secure Score för enheter, öka hot & sårbarhet Microsoft Secure Score för enheter, Microsoft Secure Score för enheter, exponeringsresultat, säkerhetskontroller
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,14 +25,14 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934099"
 ---
-# <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Leta efter exponerade enheter – hantering av hot och sårbarhet
+# <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Leta efter exponerade enheter – Hantering av hot och säkerhetsrisker
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Hantering av hot och sårbarhet](next-gen-threat-and-vuln-mgt.md)
+- [Hot och hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -49,13 +49,13 @@ Avancerad sökning är ett frågebaserat verktyg för hothot där du kan utforsk
 
 - [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) – Kunskapsbas för offentligt säkerhetsproblem, inklusive huruvida sårbarhetskod är offentligt tillgänglig.
 
-- [DeviceTvmSecureConfigurationAssessment – utvärderingshändelser](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) för hot och sårbarhetshantering, som anger status för olika säkerhetskonfigurationer på enheter.
+- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) – hot och hantering av säkerhetsrisker utvärderingshändelser, som anger status för olika säkerhetskonfigurationer på enheter.
 
 - [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) – Kunskapsbas av olika säkerhetskonfigurationer som används av Threat & Vulnerability Management för att utvärdera enheter. inkluderar mappningar till olika standarder och riktvärde
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>Kontrollera vilka enheter som ingår i varningar med hög allvarlighetsgrad
 
-1. Gå till **Avancerad sökning** från det vänstra navigeringsfönstret i Microsoft Defender Säkerhetscenter.
+1. Gå till **Avancerad sökning** från vänster navigeringsfönster i Microsoft Defender Säkerhetscenter.
 
 2. Rulla ned till TVM:s avancerade sökscheman och bekanta dig med kolumnnamnen.
 
@@ -77,9 +77,9 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över hantering av säkerhetsrisker hot och hot](next-gen-threat-and-vuln-mgt.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)
 - [API:er](next-gen-threat-and-vuln-mgt.md#apis)
-- [Konfigurera dataåtkomst för roller för hantering av hot och problem](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Konfigurera dataåtkomst för Hantering av hot och säkerhetsrisker roller](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [Översikt över avancerad jakt](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [Alla avancerade tabeller för sökning](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)

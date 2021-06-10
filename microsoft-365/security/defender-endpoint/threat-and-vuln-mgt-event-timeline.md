@@ -1,7 +1,7 @@
 ---
-title: Händelsetidslinje med hantering av hot och hot
+title: Händelsetidslinje i Hantering av hot och säkerhetsrisker
 description: Händelsetidslinje är en nyhetsfeed för risker som hjälper dig att tolka hur risker introduceras i organisationen och vilka åtgärder som har åtgärdats för att minska den.
-keywords: händelsetidslinje, Microsoft Defender för slutpunktshändelsetidslinje, Microsoft Defender för slutpunkt-tvm-händelsetidslinje, hantering av hot och sårbarhet, Microsoft Defender för Slutpunkt
+keywords: händelsetidslinje, Microsoft Defender för slutpunktshändelsetidslinje, Microsoft Defender för Slutpunkt-tvm-händelsetid, Hantering av hot och säkerhetsrisker, Microsoft Defender för Slutpunkt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933487"
 ---
-# <a name="event-timeline---threat-and-vulnerability-management"></a>Händelsetidslinje – hantering av hot och hot
+# <a name="event-timeline---threat-and-vulnerability-management"></a>Händelsetidslinje – Hantering av hot och säkerhetsrisker
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,7 +45,7 @@ Händelsetidslinje berättar även om [exponeringsresultatet](tvm-exposure-score
 
 ## <a name="navigate-to-the-event-timeline-page"></a>Gå till sidan Händelsetidslinje
 
-Det finns också tre inledningen till instrumentpanelen för hot [och sårbarhetshantering:](tvm-dashboard-insights.md)
+Det finns också tre instegspunkter från [Hantering av hot och säkerhetsrisker instrumentpanel:](tvm-dashboard-insights.md)
 
 - **Styrkort för exponering för** organisation: Hovra över händelseträffarna i diagrammet "Exponeringsresultat över tid" och välj "Visa alla händelser från den här dagen". Händelserna motsvarar säkerhetsproblem med programvara.
 - **Microsoft Secure Score för enheter:** Hovra över händelseträffarna i diagrammet "Poäng för enheter över tid" och välj "Visa alla händelser från den här dagen". Händelserna representerar nya konfigurationsutvärderingar.
@@ -53,7 +53,7 @@ Det finns också tre inledningen till instrumentpanelen för hot [och sårbarhet
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>Exponeringsresultat och Microsoft Secure Score för enheter
 
-I instrumentpanelen för hantering av hot och risker hovrar du över diagrammet med exponeringsresultat för att visa de viktigaste säkerhetshändelserna för programvara från den dagen som påverkade dina enheter. Hovra över diagrammet Microsoft Secure Score för enheter för att visa nya säkerhetskonfigurationsutvärderingar som påverkar resultatet.
+På Hantering av hot och säkerhetsrisker hovra över exponeringsresultatet för att visa de viktigaste sårbarhetshändelserna för programvara från den dagen som påverkade dina enheter. Hovra över diagrammet Microsoft Secure Score för enheter för att visa nya säkerhetskonfigurationsutvärderingar som påverkar resultatet.
 
 Om det inte finns några händelser som påverkar dina enheter eller ditt poängresultat för enheter visas ingen.
 
@@ -120,7 +120,7 @@ Därifrån väljer du Gå **till relaterad säkerhetsrekommendationer,** se reko
 
 ## <a name="view-event-timelines-in-software-pages"></a>Visa tidslinjer för händelser på programvarusidor
 
-Om du vill öppna en programvarusida väljer du en händelse > väljer det hyperlänkade programvarunamnet (till exempel Visual Studio 2017) i avsnittet "Related component" i den utfällbar menyn. [Läs mer om programvarusidor](tvm-software-inventory.md#software-pages)
+Om du vill öppna en programvarusida väljer du en händelse > väljer namnet på den hyperlänkade programvaran (till exempel Visual Studio 2017) i avsnittet "Relaterad komponent" i den utfällbar menyn. [Läs mer om programvarusidor](tvm-software-inventory.md#software-pages)
 
 En hel sida med all information om en viss programvara visas. Håll muspekaren över diagrammet för att se tidslinjen för händelser för den specifika programvaran.
 
@@ -132,7 +132,7 @@ Gå till fliken händelsetidslinje för att visa alla händelser som hör till d
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över hantering av säkerhetsrisker hot och hot](next-gen-threat-and-vuln-mgt.md)
 - [Instrumentpanelen](tvm-dashboard-insights.md)
 - [Exponeringsvärde](tvm-exposure-score.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)

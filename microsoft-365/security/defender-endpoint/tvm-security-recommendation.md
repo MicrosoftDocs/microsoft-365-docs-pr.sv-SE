@@ -1,7 +1,7 @@
 ---
-title: Säkerhetsrekommendationer med hjälp av hantering av hot och hot
-description: Få handlingsbara säkerhetsrekommendationer prioriterade efter hot, risk för intrång och värde, i hot och sårbarhetshantering.
-keywords: Hantering av hot och sårbarhet, Microsoft Defender för Endpoint tvm-säkerhetsrekommendationer, rekommendation om cybersäkerhet, rekommendation om säkerhet på åtgärd
+title: Säkerhetsrekommendationer från Hantering av hot och säkerhetsrisker
+description: Få åtgärdsbara säkerhetsrekommendationer prioriterade efter hot, risk för intrång och värde i Hantering av hot och säkerhetsrisker.
+keywords: Hantering av hot och säkerhetsrisker, Microsoft Defender för Endpoint tvm-säkerhetsrekommendationer, rekommendation om cybersäkerhet och rekommendation om säkerhet på åtgärd
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,21 +25,21 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933739"
 ---
-# <a name="security-recommendations---threat-and-vulnerability-management"></a>Säkerhetsrekommendationer – hantering av hot och hot
+# <a name="security-recommendations---threat-and-vulnerability-management"></a>Rekommendationer om säkerhet – Hantering av hot och säkerhetsrisker
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Hantering av hot och sårbarhet](next-gen-threat-and-vuln-mgt.md)
+- [Hot och hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Cybersäkerhet som identifieras i organisationen mappas till rekommendationer om säkerhet som kan åtgärdas och prioriteras efter hur de påverkas. Prioriterade rekommendationer hjälper till att förkorta tiden för att minimera eller åtgärda säkerhetsproblem och enhetsefterlevnad.
 
-Varje säkerhetsrekommendationer innehåller åtgärdsåtgärdssteg. För att hjälpa till med uppgiftshantering kan rekommendationen också skickas med Hjälp av Microsoft Intune och Konfigurationshanteraren för Microsoft Endpoint. När hoten liggande ändras ändras även rekommendationen när den kontinuerligt samlar in information från din miljö.
+Varje säkerhetsrekommendationer innehåller åtgärdsåtgärdssteg. Som hjälp med uppgiftshantering kan rekommendationen också skickas med hjälp av Microsoft Intune och Microsoft Endpoint Configuration Manager. När hoten liggande ändras ändras även rekommendationen när den kontinuerligt samlar in information från din miljö.
 
 >[!TIP]
 >E-postmeddelanden om nya sårbarhetshändelser finns i [Konfigurera e-postaviseringar om säkerhetsrisk i Microsoft Defender för slutpunkt](configure-vulnerability-email-notifications.md)
@@ -58,8 +58,8 @@ Varje enhet i organisationen har tre viktiga faktorer som hjälper kunderna att 
 
 Få åtkomst till sidan Rekommendationer om säkerhet på ett par olika sätt:
 
-- Navigeringsmenyn för hantering av hot och sårbarhet i [Säkerhetscenter för Microsoft Defender](portal-overview.md)
-- De viktigaste säkerhetsrekommendationerna på [instrumentpanelen för hot och sårbarhetshantering](tvm-dashboard-insights.md)
+- Hot och hantering av säkerhetsrisker navigeringsmenyn i [Microsoft Defender Säkerhetscenter](portal-overview.md)
+- De viktigaste säkerhetsrekommendationerna på [Hantering av hot och säkerhetsrisker instrumentpanel](tvm-dashboard-insights.md)
 
 Visa relaterade säkerhetsrekommendationer på följande platser:
 
@@ -68,11 +68,11 @@ Visa relaterade säkerhetsrekommendationer på följande platser:
 
 ### <a name="navigation-menu"></a>Navigeringsmeny
 
-Gå till navigeringsmenyn för hot och sårbarhetshantering och välj **Säkerhetsrekommendationer**. Sidan innehåller en lista över säkerhetsrekommendationer för de hot och svagheter som finns i organisationen.
+Gå till Hantering av hot och säkerhetsrisker och välj **Säkerhetsrekommendationer**. Sidan innehåller en lista över säkerhetsrekommendationer för de hot och svagheter som finns i organisationen.
 
-### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>De viktigaste säkerhetsrekommendationerna på instrumentpanelen för hot och sårbarhetshantering
+### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>De viktigaste säkerhetsrekommendationerna på Hantering av hot och säkerhetsrisker instrumentpanel
 
-Under en viss dag som säkerhetsadministratör kan du [](tvm-dashboard-insights.md) titta på instrumentpanelen [](tvm-exposure-score.md) för hantering av hot och risker för att se din exponeringsresultat sida vid sida med Microsoft [Secure Score för enheter.](tvm-microsoft-secure-score-devices.md) Målet är att **minska organisationens** exponering mot  sårbarheter och att öka organisationens enhetssäkerhet för att bli mer flexibel mot attacker mot cybersäkerhetshot. Den översta listan med säkerhetsrekommendationer hjälper dig att uppnå detta mål.
+Under en viss dag som säkerhetsadministratör kan du titta på [instrumentpanelen](tvm-dashboard-insights.md) [](tvm-exposure-score.md) i Hantering av hot och säkerhetsrisker för att se din exponeringsresultat sida vid sida med Microsoft [Secure Score för enheter.](tvm-microsoft-secure-score-devices.md) Målet är att **minska organisationens** exponering mot  sårbarheter och att öka organisationens enhetssäkerhet för att bli mer flexibel mot attacker mot cybersäkerhetshot. Den översta listan med säkerhetsrekommendationer hjälper dig att uppnå detta mål.
 
 ![Exempel på kortet med de viktigaste säkerhetsrekommendationerna, med fyra säkerhetsrekommendationer.](images/top-security-recommendations350.png)
 
@@ -85,7 +85,7 @@ Visa rekommendationer, antalet svagheter, relaterade komponenter, hotinsikter, a
 Färgen på diagrammet **Exponerade enheter** ändras när trenden ändras. Om antalet exponerade enheter är på uppgång ändras färgen till röd. Om antalet exponerade enheter minskar kommer färgen på diagrammet att ändras till grön.
 
 >[!NOTE]
->Hantering av hot och sårbarhet visar enheter som används i upp till **30 dagar** sedan. Detta skiljer sig från resten av Microsoft Defender för Endpoint, där en enhet inte har använts på mer än 7 dagar och har statusen Inaktiv.
+>Hot och hantering av säkerhetsrisker visar enheter som används i upp till **30 dagar** sedan. Detta skiljer sig från resten av Microsoft Defender för Endpoint, där en enhet inte har använts på mer än 7 dagar och har statusen Inaktiv.
 
 ![Exempel på startsidan för säkerhetsrekommendationer.](images/tvmsecrec-updated.png)
 
@@ -106,7 +106,7 @@ Du kan välja något av följande alternativ i den utfällade den:
 
 - **Öppna programvarusidan** – Öppna programvarusidan för att få mer kontext över programvaran och hur den distribueras. Informationen kan omfatta hotsammanhang, associerade rekommendationer, identifierade svagheter, antal exponerade enheter, identifierade säkerhetsproblem, namn och detaljerad information om enheter med programvaran installerad samt versionsdistribution.
 
-- [**Åtgärdsalternativ –**](tvm-remediation.md) Skicka en begäran om åtgärd för att öppna ett ärende i Microsoft Intune, så att IT-administratören kan svara och ange adress. Spåra åtgärdsaktiviteten på sidan Åtgärd.
+- [**Åtgärdsalternativ –**](tvm-remediation.md) Skicka en begäran om åtgärd för att öppna ett ärende i Microsoft Intune för att IT-administratören ska svara och ange adress. Spåra åtgärdsaktiviteten på sidan Åtgärd.
 
 - [**Undantagsalternativ**](tvm-exception.md) – Skicka ett undantag, ange justering och ange varaktighet för undantag om du inte kan åtgärda problemet ännu.
 
@@ -123,7 +123,7 @@ Om antalet exponerade enheter ökar stort, eller om det är en stark ökning av 
 
 ## <a name="request-remediation"></a>Begära åtgärd
 
-Funktionen för åtgärder för hantering av hot och sårbarhet överbrygger mellanrummet mellan säkerhet och IT-administratörer genom arbetsflödet för åtgärdsförfrågningar. Som säkerhetsadministratörer kan du begära att IT-administratören åtgärdar ett problem från rekommendationssidan **för** säkerhet till Intune. [Läs mer om alternativ för åtgärder](tvm-remediation.md)
+Med Hantering av hot och säkerhetsrisker korrigeringsfunktioner överbryggas avståndet mellan säkerhet och IT-administratörer genom arbetsflödet för åtgärdsförfrågningar. Som säkerhetsadministratörer kan du begära att IT-administratören åtgärdar ett problem från rekommendationssidan **för** säkerhet till Intune. [Läs mer om alternativ för åtgärder](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>Så här begär du åtgärd
 
@@ -157,11 +157,11 @@ Du kan rapportera en falsk positivhet när du ser någon vag, felaktig, ofullst�
 
 3. I den utfällliga fönsterrutan väljer du kategorin felaktigheter i den nedrullningsmenyn, fyller i din e-postadress och information om felaktigheter.
 
-4. Välj **Skicka**. Din feedback skickas omedelbart till experter på hot och sårbarhetshantering.
+4. Välj **Skicka**. Din feedback skickas omedelbart till Hantering av hot och säkerhetsrisker experter.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över hantering av säkerhetsrisker hot och hot](next-gen-threat-and-vuln-mgt.md)
 - [Instrumentpanelen](tvm-dashboard-insights.md)
 - [Exponeringsvärde](tvm-exposure-score.md)
 - [Microsoft Secure Score för enheter](tvm-microsoft-secure-score-devices.md)

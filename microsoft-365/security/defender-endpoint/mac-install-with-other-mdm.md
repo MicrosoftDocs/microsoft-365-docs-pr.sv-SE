@@ -68,7 +68,7 @@ De flesta MDM-lösningar använder samma modell för hantering av macOS-enheter 
 
 ### <a name="package"></a>Paket
 
-Konfigurera distributionen av [ett programpaket som](mac-install-with-jamf.md)krävs med installationspaketet (wdav.pkg) som hämtats [från Microsoft Defender Säkerhetscenter.](mac-install-with-jamf.md)
+Konfigurera distribution av ett [programpaket som krävs](mac-install-with-jamf.md)med installationspaketet (wdav.pkg) som hämtats [från Microsoft Defender Säkerhetscenter](mac-install-with-jamf.md).
 
 Följ instruktionerna som är kopplade till din MDM-lösning för att distribuera paketet till ditt företag.
 
@@ -76,9 +76,9 @@ Följ instruktionerna som är kopplade till din MDM-lösning för att distribuer
 
 Konfigurera en [systemkonfigurationsprofil](mac-install-with-jamf.md). 
 
-Din MDM-lösning kan kalla den något liknande "Profil för anpassade inställningar", eftersom Microsoft Defender för Slutpunkt på macOS inte är en del av macOS.
+Din MDM-lösning kanske kallar den för "Anpassad Inställningar profil", eftersom Microsoft Defender för Slutpunkt på macOS inte är en del av macOS.
 
-Använd egenskapslistan, jamf/WindowsDefenderATPOnboarding.plist, som kan extraheras från ett onboarding-paket som laddas ned från [Microsoft Defender Säkerhetscenter.](mac-install-with-jamf.md)
+Använd egenskapslistan, jamf/WindowsDefenderATPOnboarding.plist, som kan extraheras från ett onboarding-paket som hämtats [från Microsoft Defender Säkerhetscenter](mac-install-with-jamf.md).
 Systemet kan ha stöd för en lista med godtyckliga egenskaper i XML-format. Du kan ladda upp filen jamf/WindowsDefenderATPOnboarding.plist som den är i så fall.
 Du kan också kräva att du konverterar egenskapslistan till ett annat format först.
 
@@ -116,7 +116,7 @@ Bevilja fullständig diskåtkomst till följande komponenter:
 
 ### <a name="network-extension-policy"></a>Princip för nätverkstillägg
 
-Som en del av funktionerna Identifiering och svar av slutpunkt inspekterar Microsoft Defender för slutpunkt på macOS sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
+Som en del av funktionerna Slutpunktsidentifiering och svar inspekterar Microsoft Defender för slutpunkt på macOS sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter portalen. Med följande princip kan nätverkstillägget utföra de här funktionerna.
 
 - Filtertyp: Plugin-program
 - Identifierare för plugin-paket: `com.microsoft.wdav`

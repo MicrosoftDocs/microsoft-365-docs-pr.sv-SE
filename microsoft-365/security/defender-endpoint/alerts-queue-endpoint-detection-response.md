@@ -1,7 +1,7 @@
 ---
 title: Kön Aviseringar i Microsoft Defender Säkerhetscenter
 ms.reviewer: ''
-description: Visa och hantera aviseringarna i Microsoft Defender Säkerhetscenter
+description: Visa och hantera aviseringarna som visas i Microsoft Defender Säkerhetscenter
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -39,9 +39,9 @@ Lär dig hur du kan visa och hantera kön så att du effektivt kan undersöka ho
 ## <a name="in-this-section"></a>I det här avsnittet
 Ämne | Beskrivning 
 :---|:---
-[Visa och ordna kön Aviseringar](alerts-queue.md) | Visar en lista med aviseringar som har flaggats i nätverket.
-[Hantera aviseringar](manage-alerts.md) | Lär dig mer om hur du kan hantera aviseringar, till exempel ändra status, tilldela den till en medlem i säkerhetsåtgärder och se historiken för en avisering.
-[Undersöka aviseringar](investigate-alerts.md)| Undersök aviseringar som påverkar nätverket, förstå vad de betyder och hur du löser dem.
+[Visa och ordna varningskö](alerts-queue.md) | Visar en lista med aviseringar som har flaggats i nätverket.
+[Hantera varningar](manage-alerts.md) | Lär dig mer om hur du kan hantera aviseringar, till exempel ändra status, tilldela den till en medlem i säkerhetsåtgärder och se historiken för en avisering.
+[Undersöka varningar](investigate-alerts.md)| Undersök aviseringar som påverkar nätverket, förstå vad de betyder och hur du löser dem.
 [Undersöka filer](investigate-files.md)| Undersöka information om en fil som är kopplad till en viss avisering, ett visst beteende eller en viss händelse. 
 [Undersöka enheter](investigate-machines.md)| Undersök informationen om en enhet som är kopplad till en viss avisering, ett visst beteende eller en viss händelse. 
 [Undersöka en IP-adress](investigate-ip.md) | Undersök möjlig kommunikation mellan enheter i nätverket och IP-adresser (External Internet Protocol).

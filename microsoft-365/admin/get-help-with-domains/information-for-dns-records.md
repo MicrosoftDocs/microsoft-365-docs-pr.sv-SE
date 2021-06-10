@@ -100,6 +100,6 @@ ms.locfileid: "52635732"
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Vanliga frågor och svar](../setup/domains-faq.yml) om domäner (artikel)\
-[Hitta och åtgärda problem när du har lagt till din domän eller DNS-poster](find-and-fix-issues.md) (artikel)\
+[Vanliga frågor och svar om domäner](../setup/domains-faq.yml) (artikel)\
+[Hitta och åtgärda problem när du har lagt till din domän eller DNS-register](find-and-fix-issues.md) (artikel)\
 [Hantera domäner](index.yml) (länksida)

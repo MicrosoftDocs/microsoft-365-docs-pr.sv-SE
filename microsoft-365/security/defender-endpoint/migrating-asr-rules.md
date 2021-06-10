@@ -60,34 +60,34 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Processer**– mshta.exe
 - **Operation**– Processkörning
 - **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - powershell.exe, cmd.exe, regsvr32.exe
-- **Regler för att minska attackytan**– ASR-regler innehåller inga specifika regler för att förhindra att underordnade processer "mshta.exe". Den här kontrollen ligger inom ramen för Sårbarhetsskydd eller Windows Defender-programkontroll.
-- **Andra rekommenderade funktioner**– Aktivera Windows Defender-programkontrollen för att mshta.exe att köras helt och hållet. Om din organisation kräver "mshta.exe" för verksamhetsspecifika appar konfigurerar du en specifik regel för Sårbarhetsskydd i Windows Defender för att förhindra att mshta.exe startar underordnade processer.
+- **Regler för att minska attackytan**– ASR-regler innehåller inga specifika regler för att förhindra att underordnade processer "mshta.exe". Den här kontrollen ligger inom ramen för Sårbarhetsskydd eller Windows Defender Programkontroll.
+- **Andra rekommenderade funktioner**– aktivera Windows Defender för att förhindra att mshta.exe körs helt och hållet. Om din organisation kräver "mshta.exe" för verksamhetsspecifika appar konfigurerar du en specifik Windows Defender sårbarhetsskyddsregel för att förhindra mshta.exe från att starta underordnade processer.
 
 ### <a name="block-outlook-from-launching-child-processes"></a>Blockera Outlook från att starta underordnade processer
 
-- **Gäller för**– Outlook
+- **Gäller för**- Outlook
 - **Processer**– outlook.exe
 - **Operation**– Processkörning
 - **Exempel på filer/mappar, registernycklar/värden, processer, tjänster**- powershell.exe
-- Regler för att minska attackytan **–** ASR-regler har en inbyggd regel för att förhindra att Office-kommunikationsappar (Outlook, Skype och Teams) startar underordnade processer: "Blockera Office-kommunikationsprogram från att skapa underordnade processer", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
+- Regler för att minska attackytan – ASR-regler har en inbyggd regel för att förhindra att Office-kommunikationsappar (Outlook, Skype och Teams) startar underordnade processer: "Blockera Office-kommunikationsprogram från att skapa underordnade processer", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
 - **Andra rekommenderade funktioner**– Vi rekommenderar att du aktiverar PowerShell begränsat språkläge för att minimera attackytan från PowerShell.
 
 
-### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Blockera Office-appar från att starta underordnade processer och från att skapa körbart innehåll
+### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Blockera Office appar från att starta underordnade processer och från att skapa körbart innehåll
 
-- **Gäller för**– Office  
+- **Gäller för**- Office  
 - **Processer**– winword.exe, powerpnt.exe, excel.exe
 - **Operation**– Processkörning
 - **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
-- Regler **för** att minska attackytan – ASR-regler har en inbyggd regel som hindrar Office-appar från att starta underordnade processer: "Blockera alla Office-program från att skapa underordnade processer", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".
+- Regler för att minska attackytan – ASR-regler har en inbyggd regel som hindrar Office-appar från att starta underordnade processer: "Blockera alla Office-program från att skapa underordnade processer", GUID "D4F940AB-401B-4EFC-AADC-AD5F3C50688A".
 - **Andra rekommenderade funktioner**– ej tillgängliga
     
-### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Blockera Office-appar från att starta underordnade processer och från att skapa körbart innehåll
+### <a name="block-office-apps-from-launching-child-processes-and-from-creating-executable-content"></a>Blockera Office appar från att starta underordnade processer och från att skapa körbart innehåll
 
-- **Gäller för**– Office
+- **Gäller för**- Office
 - **Processer**– winword.exe, powerpnt.exe, excel.exe
 - **Åtgärd –** skapa filer
-- Exempel på **filer/mappar, registernycklar/värden, processer,** tjänster - C:\Användare *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop***.exe
+- **Exempel på filer/mappar, Registernycklar/värden, processer,** tjänster - C:\Användare *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop***.exe
 - **Regler för att minska attackytan**– EJ!.
 
 ### <a name="block-wscript-from-reading-certain-types-of-files"></a>Förhindra att Wscript läser vissa typer av filer
@@ -115,7 +115,7 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Processer**– certutil.exe
 - **Åtgärd –** skapa filer
 - **Exempel på filer/mappar, registernycklar/värden, processer, tjänster**- *.exe
-- **Regler för att minska attackytan**– ASR-reglerna stöder inte dessa scenarier eftersom de är en del av Microsoft Defender Antivirus protection.
+- **Regler för att minska attackytan**– ASR-reglerna stöder inte dessa scenarier eftersom de är en del Microsoft Defender Antivirus skydd.
 - **Andra rekommenderade funktioner**– Microsoft Defender AV förhindrar CertUtil från att skapa eller ladda ned körbart innehåll.
 
 
@@ -125,7 +125,7 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Processer**– *
 - **Operation**– Processavslutning
 - **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster – MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe med mera.
-- **Regler för att minska attackytan**– ASR-reglerna stöder inte dessa scenarier eftersom de är skyddade med inbyggda säkerhetsskydd i Windows 10.
+- **Regler för att minska** attackytan – ASR-regler stöder inte dessa scenarier eftersom de är Windows 10 inbyggda säkerhetsskydd.
 - **Andra rekommenderade funktioner**– ELAM (Early Launch AntiMalware), PPL (Protection Process Light), PPL AntiMalware Light och System Guard.
 
 ### <a name="block-specific-launch-process-attempt"></a>Blockera specifikt startprocessförsök
@@ -135,9 +135,9 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 - **Operation**– Processkörning
 - **Exempel på filer/mappar, registernycklar/värden, processer,** tjänster - tor.exe, bittorrent.exe, cmd.exe, powershell.exe med mera
 - **Regler för att minska attackytan**– ASR-regler är inte utformade för att fungera som programhanterare.
-- **Andra rekommenderade funktioner**– Om du vill förhindra att användare startar specifika processer eller program bör du använda Windows Defender-programkontrollen. Microsoft Defender för slutpunktsfiler och certifikatindikatorer kan användas i ett scenario med incidentsvar (ska inte ses som en mekanism för programkontroll).
+- **Andra rekommenderade funktioner**– Om du vill förhindra att användare startar specifika processer eller program bör du Windows Defender programkontrollen. Microsoft Defender för slutpunktsfiler och certifikatindikatorer kan användas i ett scenario med incidentsvar (ska inte ses som en mekanism för programkontroll).
     
-### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Blockera obehöriga ändringar i Microsoft Defender Antivirus-konfigurationer
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Blockera obehöriga ändringar Microsoft Defender Antivirus konfigurationer
 
 - **Gäller för**– alla processer
 - **Processer**– *

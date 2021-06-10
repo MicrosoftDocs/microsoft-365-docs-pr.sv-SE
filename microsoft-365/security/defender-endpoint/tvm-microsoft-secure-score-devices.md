@@ -1,7 +1,7 @@
 ---
 title: Microsoft Secure Score för enheter
 description: Poängen för enheter visar den samlade säkerhetskonfigurationstillståndet för dina enheter i olika program, operativsystem, nätverk, konton och säkerhetskontroller.
-keywords: Microsoft Secure Score för enheter, Microsoft Defender för Slutpunkt Microsoft Secure Score för enheter, säker poäng, konfigurationsresultat, hantering av hot och sårbarhet, säkerhetskontroller, förbättringsmöjligheter, poäng för säkerhetskonfiguration över tid, säkerhetskonfigurationsresultat, baslinje
+keywords: Microsoft Secure Score för enheter, Microsoft Defender för Slutpunkt Microsoft Secure Score för enheter, secure score, configuration score, Hantering av hot och säkerhetsrisker, säkerhetskontroller, förbättringsmöjligheter, poäng för säkerhetskonfiguration över tid, säkerhetskonfigurationsresultat, baslinje
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -32,16 +32,16 @@ ms.locfileid: "51934087"
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Hantering av hot och sårbarhet](next-gen-threat-and-vuln-mgt.md)
+- [Hot och hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 >[!NOTE]
-> Konfigurationsresultat är nu en del av hantering av hot och problem som Microsoft Secure Score för enheter.
+> Konfigurationspoäng är nu en del Hantering av hot och säkerhetsrisker som Microsoft Secure Score för enheter.
 
-Din poäng för enheter är synlig i instrumentpanelen [för hantering av hot och sårbarhet](tvm-dashboard-insights.md) i Microsoft Defender Säkerhetscenter. Ett högre Microsoft Secure Score för enheter innebär att dina slutpunkter är mer flexibel mot attacker mot hot om cyberhot. Den återspeglar den kollektiva säkerhetskonfigurationstillståndet för dina enheter i följande kategorier:
+Poängen för enheter visas på Hantering av hot och säkerhetsrisker [i](tvm-dashboard-insights.md) Microsoft Defender Säkerhetscenter. Ett högre Microsoft Secure Score för enheter innebär att dina slutpunkter är mer flexibel mot attacker mot hot om cyberhot. Den återspeglar den kollektiva säkerhetskonfigurationstillståndet för dina enheter i följande kategorier:
 
 - Program
 - Operativsystem
@@ -57,7 +57,7 @@ Vidarebefordra Microsoft Defender för Endpoint-signaler och ge Microsoft Secure
 
 Det kan ta några timmar innan ändringarna har återspeglas i instrumentpanelen.
 
-1. I navigeringsfönstret går du till **Avancerade**  >  **inställningar** 
+1. I navigeringsfönstret går du till **fliken Inställningar**  >  **Avancerade funktioner** 
 
 2. Rulla ned till **Microsoft Secure Score** och ändra inställningen till **På**.
 
@@ -79,7 +79,7 @@ Data i kortet Microsoft Secure Score för enheter är produkten av noggrann och 
 
 Förbättra säkerhetskonfigurationen genom att åtgärda problem från listan med säkerhetsrekommendationer. Samtidigt som du gör det förbättras ditt Microsoft Secure Score för enheter och din organisation blir mer flexibel mot hot och säkerhetsproblem mot cybersäkerhet.
 
-1. Från kortet Microsoft Secure Score för enheter med instrumentpanelen för hot och sårbarhetshantering väljer du en av kategorierna. Du ser en lista med rekommendationer för den kategorin. Du kommer då till sidan [**Säkerhetsrekommendationer.**](tvm-security-recommendation.md) Om du vill se alla säkerhetsrekommendationer rensar du sökfältet när du kommer till sidan Säkerhetsrekommendationer.
+1. På kortet Microsoft Secure Score för enheter på Hantering av hot och säkerhetsrisker väljer du en av kategorierna. Du ser en lista med rekommendationer för den kategorin. Du kommer då till sidan [**Säkerhetsrekommendationer.**](tvm-security-recommendation.md) Om du vill se alla säkerhetsrekommendationer rensar du sökfältet när du kommer till sidan Säkerhetsrekommendationer.
 
 2. Markera ett objekt i listan. Den utfällna panelen öppnas med information om rekommendationen. Välj **Alternativ för åtgärder.**
 
@@ -110,7 +110,7 @@ Förbättra säkerhetskonfigurationen genom att åtgärda problem från listan m
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över hantering av säkerhetsrisker hot och hot](next-gen-threat-and-vuln-mgt.md)
 - [Instrumentpanelen](tvm-dashboard-insights.md)
 - [Exponeringsvärde](tvm-exposure-score.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)

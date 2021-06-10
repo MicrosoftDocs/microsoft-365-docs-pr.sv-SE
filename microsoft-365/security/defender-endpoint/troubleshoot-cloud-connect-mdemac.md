@@ -73,7 +73,7 @@ Om en proxy eller brandvägg blockerar anonym trafik kontrollerar du att anonym 
 
 > [!WARNING]
 > Autentiserad proxy. Se till att endast PAC, WPAD eller en statisk proxy används. SSL-proxy proxy och skärningspunkt stöds inte heller av säkerhetsskäl. Konfigurera ett undantag för SSL-kontroll och proxyservern för att direkt överföra data från Microsoft Defender för Slutpunkt i macOS till relevanta URL:er utan avlyssning. Om du lägger till ditt certifikat för avlyssning i det globala lagret tillåts inte avlyssning.
-Så här testar du att en anslutning inte är blockerad: Öppna en webbläsare som Microsoft Edge för Mac eller Safari och https://x.cp.wd.microsoft.com/api/report https://cdn.x.cp.wd.microsoft.com/ping .
+Så här testar du att en anslutning inte är blockerad: i en webbläsare som Microsoft Edge för Mac eller Safari öppnas https://x.cp.wd.microsoft.com/api/report och https://cdn.x.cp.wd.microsoft.com/ping .
 
 Du kan också köra följande kommando i Terminal:
 

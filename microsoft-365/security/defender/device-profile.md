@@ -1,5 +1,5 @@
 ---
-title: Enhetsprofil i Microsoft 365-säkerhetsportalen
+title: Enhetsprofil i Microsoft 365 säkerhetsportal
 description: Visa risk- och exponeringsnivåer för en enhet i organisationen. Analysera tidigare och aktuella hot och skydda enheten med de senaste uppdateringarna.
 keywords: säkerhet, skadlig programvara, Microsoft 365, M365, Microsoft 365 Defender, säkerhetscenter, Microsoft Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Defender för identitet, enhetssida, enhetsprofil, datorsida, datorprofil
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.locfileid: "51935671"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-På Microsoft 365-säkerhetsportalen finns profilsidor för enheter, så att du snabbt kan bedöma status och status för enheter i nätverket.
+På Microsoft 365 säkerhetsportalen hittar du profilsidor för enheter, så att du snabbt kan bedöma status och status för enheter i nätverket.
 
 > [!IMPORTANT]
 > Sidan med enhetsprofilen kan se något annorlunda ut beroende på om enheten är registrerad i Microsoft Defender för Slutpunkt, Microsoft Defender för identitet eller båda.
@@ -75,10 +75,10 @@ Svarsåtgärder är ett snabbt sätt att försvara sig mot och analysera hot.
 Åtgärder som är tillgängliga på sidan med enhetsprofilen är:
 
 * **Hantera taggar** – Uppdaterar anpassade taggar som du har tillämpat på den här enheten.
-* **Identifiera enhet** – Isolerar enheten från organisationens nätverk samtidigt som den håller den ansluten till Microsoft Defender för Slutpunkt. Du kan välja att tillåta att Outlook, Teams och Skype för företag körs medan enheten isoleras, i kommunikationssyfte.
+* **Identifiera enhet** – Isolerar enheten från organisationens nätverk samtidigt som den håller den ansluten till Microsoft Defender för Slutpunkt. Du kan välja att Outlook, Teams och Skype för företag körs medan enheten är isolerad i kommunikationssyfte.
 * **Åtgärdscenter** – visa status för skickade åtgärder. Endast tillgängligt om en annan åtgärd redan har markerats.
 * **Begränsa programkörning** – Förhindrar att program som inte är signerade av Microsoft körs.
-* **Kör antivirussökning** – Uppdaterar definitioner för Windows Defender Antivirus och kör omedelbart en antivirussökning. Välj mellan Snabbsökning eller Fullständig sökning.
+* **Kör antivirussökning** – uppdateringar Windows Defender Antivirus definitioner och kör genast en antivirussökning. Välj mellan Snabbsökning eller Fullständig sökning.
 * **Paket för insamling** av undersökning – samlar in information om enheten. När undersökningen är klar kan du ladda ned den.
 * **Initiera Live Response-session** – Läser in ett fjärrgränssnitt på enheten [för ingående säkerhetsundersökning.](/microsoft-365/security/defender-endpoint/live-response)
 * **Initiera automatisk undersökning** – [undersöker och åtgärdar automatiskt hot.](../office-365-security/office-365-air.md) Även om du manuellt kan utlösta automatiska undersökningar från den här sidan [utlöser](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) vissa aviseringsprinciper automatiska undersökningar på egen hand.
@@ -180,7 +180,7 @@ Om du markerar ett objekt öppnas en utfällblad som länkar till uppdateringen.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-* [Översikt över Microsoft 365 Defender](microsoft-365-defender.md)
+* [Microsoft 365 Defender-översikt](microsoft-365-defender.md)
 * [Aktivera Microsoft 365 Defender](m365d-enable.md)
 * [Undersök enheter på enheter med hjälp av live-svar](../defender-endpoint/live-response.md)
-* [Automatiserad undersökning och svar (AIR) i Office 365](../office-365-security/office-365-air.md)
+* [Automatisk undersökning och svar (AIR) i Office 365](../office-365-security/office-365-air.md)

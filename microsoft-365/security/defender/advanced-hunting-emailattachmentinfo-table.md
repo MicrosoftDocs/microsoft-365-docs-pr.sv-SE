@@ -1,7 +1,7 @@
 ---
 title: Tabellen EmailAttachmentInfo i det avancerade sökschemat
 description: Mer information om e-postbilagan i tabellen EmailAttachmentInfo i det avancerade sökschemat
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailAttachmentInfo, network message id, sender, recipient, attachment id, attachment id, malware
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailAttachmentInfo, network message id, sender, recipient, attachment id, attachment name, malware
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

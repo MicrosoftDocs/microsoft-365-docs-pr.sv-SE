@@ -18,41 +18,41 @@ ms.locfileid: "52272901"
 ---
 # <a name="diagnostic-logs"></a>Diagnostikloggar
 
-När vi felsöker ett problem på en enhet som hanteras av Microsoft Managed Desktop, oavsett om du har rapporterat eller en som identifieras av vår tjänst, kan vi behöva samla in vissa diagnostikloggar från enheten utan åtgärder från användaren. Vi samlar inte in något användargenererat innehåll eller information från användarkataloger. Vi samlar endast in diagnostik- och loggdata som rör enhetens hälsa och status.
+När vi felsöker ett problem på en enhet som hanteras av Microsoft Hanterat skrivbord, oavsett om du har rapporterat ett problem eller en som identifieras av vår tjänst, kan vi behöva samla in vissa diagnostikloggar från enheten utan åtgärder från användaren. Vi samlar inte in något användargenererat innehåll eller information från användarkataloger. Vi samlar endast in diagnostik- och loggdata som rör enhetens hälsa och status.
 
 Vi lagrar alla insamlade loggar i 28 dagar och tar sedan bort dem. Vi bearbetar alla loggar som samlas in från en enhet enligt våra [datahanteringsstandarder.](privacy-personal-data.md)
 
 ## <a name="data-collected"></a>Data som samlas in
 
-Listan innehåller alla mappar, händelseloggar, körbara filer och registerplatser som Microsoft Managed Desktop kan samla in diagnostikloggar från. De faktiska data som samlas in är en delmängd av den här listan och beror på det identifierade problemet.
+Den här listan innehåller alla mappar, händelseloggar, körbara filer och registerplatser som du Microsoft Hanterat skrivbord samla in diagnostikloggar från. De faktiska data som samlas in är en delmängd av den här listan och beror på det identifierade problemet.
 
 ### <a name="registry-keys"></a>Registernycklar
 
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Services
 - HKLM \\ SOFTWARE \\ Microsoft \\ Surface
-- HKLM \\ SOFTWARE \\ Policies \\ Microsoft \\ Windows \\ WindowsUpdate
+- HKLM \\ SOFTWARE Policies Microsoft Windows \\ \\ \\ \\ WindowsUpdate
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ MUI \\ UILanguages
 - HKLM \\ Software \\ Policies \\ Microsoft \\ WindowsStore
-- HKLM \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ WindowsStore \\ WindowsUpdate
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows NT \\ CurrentVersion
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows NT \\ CurrentVersion
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows \\ CurrentVersion \\ AppModel
+- HKLM \\ Software Microsoft Windows \\ \\ \\ CurrentVersion \\ WindowsStore \\ WindowsUpdate
+- HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion
+- HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion
+- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion \\ AppModel
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ FirmwareResources
 - HKLM \\ SOFTWARE \\ Microsoft \\ WindowsSelfhost
 - HKLM \\ SOFTWARE \\ Microsoft \\ WindowsUpdate
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows \\ CurrentVersion \\ Appx
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows NT \\ CurrentVersion \\ Superfetch
+- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion \\ Appx
+- HKLM \\ SOFTWARE Microsoft Windows NT \\ \\ \\ CurrentVersion \\ Superfetch
 - HKLM \\ SYSTEM \\ Setup
 - HKLM \\ Software \\ Microsoft \\ IntuneManagementExtension
 - HKLM \\ SOFTWARE \\ Microsoft \\ SystemCertificates \\ AuthRoot
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows Advanced Threat Protection
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows \\ CurrentVersion \\ Authentication \\ LogonUI
-- HKLM \\ SOFTWARE \\ Microsoft \\ Windows \\ CurrentVersion \\ Internet Settings
-- HKLM \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ Uninstall
+- HKLM \\ SOFTWARE Microsoft Windows Advanced Threat \\ \\ Protection
+- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion Authentication \\ \\ LogonUI
+- HKLM \\ SOFTWARE Microsoft Windows \\ \\ \\ CurrentVersion Internet \\ Inställningar
+- HKLM \\ Software Microsoft Windows \\ \\ \\ CurrentVersion \\ Uninstall
 - \\ \\ HKLM-programvaruprinciper
 - HKLM \\ SOFTWARE \\ Policies \\ Microsoft \\ Cryptography \\ Configuration \\ SSL
-- HKLM \\ SOFTWARE \\ Policies \\ Microsoft \\ Windows Advanced Threat Protection
-- HKLM \\ SOFTWARE \\ WOW6432Node \\ Microsoft \\ Windows \\ CurrentVersion \\ Uninstall
+- HKLM \\ SOFTWARE Policies Microsoft Windows Advanced Threat \\ \\ \\ Protection
+- HKLM \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion \\ Uninstall
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ SecurityProviders \\ SCHANNEL
 
 ### <a name="commands"></a>Kommandon
@@ -78,7 +78,7 @@ Listan innehåller alla mappar, händelseloggar, körbara filer och registerplat
 - fltMC.exe
 - bcdedit /enum all /v
 - manage-bde -mens -get
-- Windows PowerShell-kommandon:
+- Windows PowerShell kommandon:
     - Get-appxpackage -allusers
     - Get-appxpackage -packagetype bundle
     - Get-Service wuauserv
@@ -99,7 +99,7 @@ Listan innehåller alla mappar, händelseloggar, körbara filer och registerplat
 - Microsoft-Windows-Bitlocker/Bitlocker Management
 - Microsoft-Windows-SENSE/Operational
 - Microsoft-Windows-SenseIR/Operational
-- Installation
+- Konfiguration
 - System
 
 ### <a name="files"></a>Filer

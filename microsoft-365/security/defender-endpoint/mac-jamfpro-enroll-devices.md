@@ -50,7 +50,7 @@ En fullständig lista finns i [Om datorregistrering.](https://docs.jamf.com/9.9/
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>Registreringsmetod 1: Registreringsinbjudningar
 
-1. Gå till Registreringsinbjudningar på **instrumentpanelen** Jamf Pro.
+1. Gå till registreringsinbjudningar i instrumentpanelen i Jamf Pro **.**
 
     ![Bild av konfigurationsinställningar1](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
@@ -80,7 +80,7 @@ En fullständig lista finns i [Om datorregistrering.](https://docs.jamf.com/9.9/
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>Registreringsmetod 2: Prestage-registrering
 
-1. Gå till **Prestage-registrering** i instrumentpanelen Jamf Pro.
+1. Gå till **Prestage-Pro** i instrumentpanelen i Jamf.
 
     ![Bild på konfigurationsinställningar9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
@@ -90,24 +90,24 @@ En fullständig lista finns i [Om datorregistrering.](https://docs.jamf.com/9.9/
 
 1. Välj **Fortsätt** och installera certifikatutfärdaren i fönstret **Systeminställningar.**
 
-    ![Bild på Jamf Pro-registrering1](images/jamfpro-ca-certificate.png)
+    ![Bild på Jamf Pro enrollment1](images/jamfpro-ca-certificate.png)
 
 2. När CA-certifikat har installerats går du tillbaka till webbläsarfönstret **och väljer Fortsätt** och installera MDM-profilen. 
 
-    ![Bild på Jamf Pro-registrering2](images/jamfpro-install-mdm-profile.png)
+    ![Bild på Jamf Pro registrering2](images/jamfpro-install-mdm-profile.png)
 
 3. Välj **Tillåt** för hämtningar från JAMF.
 
-    ![Bild på Jamf Pro-registrering3](images/jamfpro-download.png)
+    ![Bild på Jamf Pro enrollment3](images/jamfpro-download.png)
 
 4. Välj **Fortsätt för** att fortsätta med installationen av MDM-profilen. 
 
-    ![Bild på Jamf Pro-registrering4](images/jamfpro-install-mdm.png)
+    ![Bild på Jamf Pro enrollment4](images/jamfpro-install-mdm.png)
 
 5. Välj **Fortsätt** för att installera MDM-profilen.
 
-    ![Bild på Jamf Pro-registrering5](images/jamfpro-mdm-unverified.png)
+    ![Bild på Jamf Pro enrollment5](images/jamfpro-mdm-unverified.png)
 
 6. Välj **Fortsätt**  för att slutföra konfigurationen. 
 
-    ![Bild på Jamf Pro-registrering6](images/jamfpro-mdm-profile.png)
+    ![Bild på Jamf Pro enrollment6](images/jamfpro-mdm-profile.png)

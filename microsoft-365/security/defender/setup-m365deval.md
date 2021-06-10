@@ -1,7 +1,7 @@
 ---
-title: Konfigurera utvärderingslabb eller pilotmiljö med Microsoft 365 Defender
-description: Gå till Microsoft 365 Säkerhetscenter och konfigurera sedan testlabbmiljön i Microsoft 365 Defender
-keywords: Utvärderingsversionskonfiguration för Microsoft 365 Defender, pilotinstallation av Microsoft 365 Defender, Microsoft 365 Defender utvärderingslabbkonfiguration
+title: Konfigurera din testlabb eller pilotmiljö i Microsoft 365 Defender
+description: Access Microsoft 365 Säkerhetscenter och konfigurera sedan testlabbmiljön Microsoft 365 Defender
+keywords: Microsoft 365 Utvärderingsversion av Defender, Microsoft 365 av pilotinstallationen av Defender, Microsoft 365 Defender, Microsoft 365 installera utvärderingslabb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -26,7 +26,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935431"
 ---
-# <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Konfigurera utvärderingslabbmiljön i Microsoft 365 Defender 
+# <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Konfigurera utvärderingslabbmiljön Microsoft 365 Defender 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,30 +35,30 @@ ms.locfileid: "51935431"
 - Microsoft 365 Defender 
 
 
-Det är en process i tre steg att skapa en provlabb eller pilotmiljö med Microsoft 365 Defender:
+Att skapa Microsoft 365 Defender-testlabb eller testmiljö och distribuera den är en process i tre steg:
 
 |[![Fas 1: Förbereda](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Fas 1: Förbereda](prepare-m365d-eval.md) |![Fas 2: Konfigurera](../../media/phase-diagrams/setup.png)<br/>Fas 2: Konfigurera |[![Fas 3: Introduktion](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Fas 3: Introduktion](config-m365d-eval.md) | [![Tillbaka till pilottestning](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Tillbaka till pilotspelboken](m365d-pilot.md) |
 |--|--|--|--|
 ||*Du är här!*  | | |
 
 
-Du befinner dig för närvarande i ställ in fas. Gör de första stegen för att komma åt Microsoft 365 Säkerhetscenter och konfigurera sedan testlabb eller pilotmiljö.
+Du befinner dig för närvarande i ställ in fas. Ta de första stegen för att Microsoft 365 säkerhetscentret och konfigurera sedan testlabb eller pilotmiljö.
 
-Registrera dig för en Office 365- eller Azure Active Directory-prenumeration om du vill generera en *.onmicrosoft.com-klientorganisation* som du kan använda för att registrera dig för din Microsoft 365 E5-licens. 
+Registrera dig för en Office 365 eller Azure Active Directory-prenumeration för att generera en *.onmicrosoft.com-klientorganisation* som du kan använda för att registrera dig för din Microsoft 365 E5 licens. 
 
 >[!NOTE]
->Om du redan har en befintlig Office 365- eller Azure Active Directory-prenumeration kan du hoppa över stegen för att skapa klientorganisation eller utvärderingsversionen av Office 365 E5.
+>Om du redan har en befintlig Office 365- eller Azure Active Directory-prenumeration kan du hoppa över stegen för att skapa Office 365 E5-utvärderingsversion eller pilotversion av klientorganisationen.
 
 I den här fasen får du vägledning genom att:
-- Skapa en utvärderingsversion av Office 365 E5
-- Aktivera utvärderingsprenumeration på Microsoft 365
+- Skapa en klientorganisation Office 365 E5-utvärderingsversion
+- Aktivera Microsoft 365 provprenumeration
 
 
-## <a name="create-an-office-365-e5-trial-tenant"></a>Skapa en utvärderingsversion av Office 365 E5
+## <a name="create-an-office-365-e5-trial-tenant"></a>Skapa en klientorganisation Office 365 E5-utvärderingsversion
 >[!NOTE]
->Om du redan har en befintlig Office 365- eller Azure Active Directory-prenumeration kan du hoppa över stegen för att skapa klientorganisationens klientorganisation i Office 365 E5.
+>Om du redan har en befintlig Office 365- eller Azure Active Directory-prenumeration kan du hoppa över stegen för att Office 365 E5-utvärderingsversionen av klientorganisationen.
 
-1. Gå till Office [365 E5-produktportalen och](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) välj **Kostnadsfri utvärderingsversion**.
+1. Gå till Office 365 [E5-produktportalen](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) och välj **Kostnadsfri utvärderingsversion**.
 
    ![Bild of_Office utvärderingsversion av 365 E5 kostnadsfritt](../../media/mtp-eval-9.png)
   
@@ -71,7 +71,7 @@ I den här fasen får du vägledning genom att:
    ![Bild of_Office 365 E5 sida för registrering av utvärderingsversion där du uppmanas att ange namn, telefonnummer och företagsinformation](../../media/mtp-eval-11.png)
    
    > [!NOTE]
-   > Landet eller regionen du anger här bestämmer vilken datacenterregion som Office 365 kommer att vara värd för.
+   > Landet eller regionen som du anger här bestämmer vilken datacenterregion som Office 365 kommer att vara värd för.
   
 4. Välj verifieringsinställning: via ett sms eller samtal. Klicka **på Skicka verifieringskod**. 
 
@@ -85,11 +85,11 @@ I den här fasen får du vägledning genom att:
 
    ![Bild of_Office 365 E5 utvärderingsversionsinstallationssida där du kan ange din företagsidentitet](../../media/mtp-eval-14.png)
 
-7. Klicka **på Gå till installationsprogrammet** för att slutföra klientorganisationsetablering för Office 365 E5.
+7. Klicka **på Gå till installationsprogrammet** för att slutföra Office 365 E5-utvärderingsversionen av klientorganisationen.
 
-   ![Bild av registreringsinstallationssidan för Office 365 E5 med uppmaning om att klicka på knappen Gå till installation](../../media/mtp-eval-15.png)
+   ![Bild av sidan Office 365 för registrering av utvärderingsversionen av E5 som uppmanar dig att klicka på knappen Gå till installation](../../media/mtp-eval-15.png)
 
-8. Anslut företagsdomänen till Office 365-klientorganisationen. [Valfritt] Välj **Anslut en domän som du redan äger** och skriv in domännamnet. Klicka på **Nästa**.
+8. Anslut företagets domän till Office 365 klientorganisation. [Valfritt] Välj **Anslut domän som du redan äger** och skriv in domännamnet. Klicka på **Nästa**.
 
    ![Bild of_Office konfigurationssidan i 365 E5 där du bör anpassa din inloggning och e-post](../../media/mtp-eval-16.png)
  
@@ -101,9 +101,9 @@ I den här fasen får du vägledning genom att:
 
     ![Bild of_Office 365 E5-konfigurationssidan där du kan lägga till fler användare](../../media/mtp-eval-18.png)
  
-11. [Valfritt] Ladda ned Office-appar. Hoppa **över det här** steget genom att klicka på Nästa. 
+11. [Valfritt] Ladda Office appar. Hoppa **över det här** steget genom att klicka på Nästa. 
 
-    ![Bild of_Office 365 E5 där du kan installera Office-programmen](../../media/mtp-eval-19.png)
+    ![Bild of_Office 365 E5-sida där du kan installera Office program](../../media/mtp-eval-19.png)
 
 12. [Valfritt] Migrera e-postmeddelanden. Du kan hoppa över det här steget.
 
@@ -117,18 +117,18 @@ I den här fasen får du vägledning genom att:
 
     ![Bild of_Office 365 E5 här kan du lägga till dina DNS-poster](../../media/mtp-eval-22.png)
  
-15. Grattis! Du har slutfört etableringen av din Office 365-klientorganisation.
+15. Grattis! Du har slutfört etableringen av din Office 365 klientorganisation.
 
     ![Bild of_Office konfigurationsbekräftelse för E5 i 365](../../media/mtp-eval-23.png)
 
-## <a name="enable-microsoft-365-trial-subscription"></a>Aktivera utvärderingsprenumeration på Microsoft 365
+## <a name="enable-microsoft-365-trial-subscription"></a>Aktivera Microsoft 365 provprenumeration
 
 >[!NOTE]
 >När du registrerar dig för en utvärderingsversion får du 25 användarlicenser att använda under en månad. Mer [information finns i Prova eller köpa en M365-prenumeration.](../../commerce/try-or-buy-microsoft-365.md)
 
-1. I [administrationscentret för Microsoft 365 klickar](https://admin.microsoft.com/)du **på Fakturering** och går sedan till **Köp tjänster.**
+1. Från [Microsoft 365 Administrationscenter](https://admin.microsoft.com/)klickar du på **Fakturering** och går sedan till **Köp tjänster.**
 
-2. Välj **Microsoft 365 E5 och** klicka på Starta kostnadsfri **utvärderingsversion**. 
+2. Välj **Microsoft 365 E5** och klicka på **Starta kostnadsfri utvärderingsversion**. 
 
    ![Bild of_Microsoft 365 E5 Starta kostnadsfri utvärderingsversion](../../media/mtp-eval-24.png)
 
@@ -140,13 +140,13 @@ I den här fasen får du vägledning genom att:
 
    ![Bild of_Microsoft 365 E5 Starta kostnadsfri utvärderingsversion där du kan fylla i verifieringskoden som systemet har skickat för att bevisa att du inte är en robot](../../media/mtp-eval-26.png)
 
-5. Klicka **på Prova nu** för att bekräfta utvärderingsversionen av Microsoft 365 E5.
+5. Klicka **på Prova nu** för att bekräfta Microsoft 365 E5 utvärderingsversionen.
 
    ![Bild of_Microsoft 365 E5 Starta kostnadsfri utvärderingsversion där du ska klocka knappen Prova nu för att starta](../../media/mtp-eval-27.png)
  
-6. Gå till Microsoft **365 Admin Center Användare**  >    >  **aktiva användare.** Välj ditt användarkonto, välj **Hantera produktlicenser och** byt sedan licensen från Office 365 E5 till **Microsoft 365 E5.** Klicka på **Spara**.
+6. Gå till **Microsoft 365 Administrationscenter**  >  **Användare**  >  **aktiva användare.** Välj ditt användarkonto, välj **Hantera produktlicenser och** byt sedan licensen från Office 365 E5 till **Microsoft 365 E5**. Klicka på **Spara**.
 
-   ![Bild of_Microsoft 365 Admin Center-sida där du kan välja Microsoft 365 E5-licens](../../media/mtp-eval-28.png)
+   ![Bild of_Microsoft 365 Admin Center-sida där du kan välja Microsoft 365 E5 licens](../../media/mtp-eval-28.png)
  
 7. Välj det globala administratörskontot igen och klicka sedan **på Hantera användarnamn**.
 
@@ -159,5 +159,5 @@ I den här fasen får du vägledning genom att:
 
 
 ## <a name="next-step"></a>Nästa steg
-|[Fas 3: Konfigurera & onboard](config-m365d-eval.md) | Konfigurera varje Microsoft 365 Defender-pilotversion för provlabb eller pilotmiljö med Microsoft 365 Defender och registrera slutpunkterna.
+|[Fas 3: Konfigurera & onboard](config-m365d-eval.md) | Konfigurera varje Microsoft 365 Defender-klient för din Microsoft 365 Defender-testlabb eller pilotmiljö och registrera slutpunkterna.
 |:-------|:-----|

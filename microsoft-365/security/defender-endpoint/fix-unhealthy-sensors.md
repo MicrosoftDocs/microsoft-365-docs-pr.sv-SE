@@ -45,7 +45,7 @@ En inaktiv enhet är inte nödvändigtvis flaggad på grund av ett problem. Föl
 Om enheten av någon anledning inte används under mer än sju dagar förblir den statusen Inaktiv i portalen.
 
 ### <a name="device-was-reinstalled-or-renamed"></a>Enheten har installerats om eller bytt namn
-En enhet som har installerats om eller bytt namn genererar en ny enhet i Microsoft Defender Säkerhetscenter. Den föregående enhetens entitet förblir med statusen Inaktiv i portalen. Om du har installerat om en enhet och distribuerat Defender för slutpunkt-paketet söker du efter namnet på den nya enheten för att kontrollera att enheten rapporterar normalt.
+En ominstallerad eller omdöpt enhet genererar en ny enhet i Microsoft Defender Säkerhetscenter. Den föregående enhetens entitet förblir med statusen Inaktiv i portalen. Om du har installerat om en enhet och distribuerat Defender för slutpunkt-paketet söker du efter namnet på den nya enheten för att kontrollera att enheten rapporterar normalt.
 
 ### <a name="device-was-offboarded"></a>Enheten var offboarded
 Om enheten var offboarded visas den fortfarande i listan över enheter. Efter sju dagar bör enhetens hälsotillstånd ändras till inaktivt.
@@ -86,8 +86,8 @@ Följ dessa åtgärder för att korrigera kända problem relaterade till en felk
 - [Kontrollera att diagnostikdatatjänsten är aktiverad](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
 Om enheterna inte rapporterar korrekt kan du behöva kontrollera att Windows 10-diagnostikdatatjänsten är inställd på att startas automatiskt och körs på slutpunkten.
 
-- [Se till att Microsoft Defender Antivirus inte är inaktiverat enligt policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-Om dina enheter kör en tredjepartsklient för program mot skadlig programvara måste drivrutinen för Microsoft Defender Antivirus Early Launch Antimalware (ELAM) aktiveras.
+- [Kontrollera att Microsoft Defender Antivirus inaktiveras av principen](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
+Om dina enheter kör en tredjepartsklient för program mot skadlig programvara måste drivrutinen Microsoft Defender Antivirus Early Launch Antimalware (ELAM) för att aktiveras.
 
 Om du har vidta korrigerande åtgärder och enhetens status fortfarande är felaktigt konfigurerad, öppna [ett support ärende](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 

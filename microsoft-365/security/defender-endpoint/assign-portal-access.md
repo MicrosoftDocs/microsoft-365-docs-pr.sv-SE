@@ -52,5 +52,5 @@ Defender för Endpoint har stöd för två sätt att hantera behörigheter:
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Använda grundläggande behörigheter för åtkomst till portalen](basic-permissions.md)
+- [Använda grundläggande behörigheter för att komma åt portalen](basic-permissions.md)
 - [Hantera portalåtkomst med RBAC](rbac.md)

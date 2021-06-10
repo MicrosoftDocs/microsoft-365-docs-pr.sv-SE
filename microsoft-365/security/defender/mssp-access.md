@@ -1,7 +1,7 @@
 ---
 title: Tillhandahålla åtkomst för hanterad säkerhetstjänstleverantör (MSSP)
-description: Läs mer om ändringar från Microsoft Defender Säkerhetscenter till Säkerhetscenter för Microsoft 365
-keywords: Komma igång med Microsoft 365 Säkerhetscenter, Microsoft Defender för Office 365, Microsoft Defender för Slutpunkt, MDO, MDE, enda fönsterruta av glas, konvergerad portal, säkerhetsportal, defender-säkerhetsportalen
+description: Läs mer om ändringar från Microsoft Defender Säkerhetscenter till Microsoft 365 säkerhetscenter
+keywords: Komma igång med Microsoft 365 säkerhetscenter, Microsoft Defender för Office 365, Microsoft Defender för slutpunkt, MDO, MDE, enda fönsterruta av glas, konvergerad portal, säkerhetsportal, defender-säkerhetsportalen
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -38,26 +38,26 @@ ms.locfileid: "51935359"
 
 Om du vill implementera en lösning med flera klientorganisationens delegerade åtkomst gör du följande:
 
-1. Aktivera [rollbaserad åtkomstkontroll i](/windows/security/threat-protection/microsoft-defender-atp/rbac) Defender för slutpunkt i Microsoft 365 säkerhetscenter och anslut med Azure Active Directory-grupper (Azure AD).
+1. Aktivera [rollbaserad åtkomstkontroll i](/windows/security/threat-protection/microsoft-defender-atp/rbac) Defender för slutpunkt i Microsoft 365 och ansluta med Azure AD-grupper (Azure Active Directory).
 
 2. Konfigurera [styrningsåtkomstpaket](/azure/active-directory/governance/identity-governance-overview) för åtkomstbegäran och etablering.
 
 3. Hantera åtkomstförfrågningar och granskningar i [Microsoft Myaccess.](/azure/active-directory/governance/entitlement-management-request-approve)
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>Aktivera rollbaserade åtkomstkontroller i Microsoft Defender för Slutpunkt i Microsoft 365 Säkerhetscenter
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>Aktivera rollbaserade åtkomstkontroller i Microsoft Defender för slutpunkt i Microsoft 365 säkerhetscenter
 
 1. **Skapa åtkomstgrupper för MSSP-resurser i Kund-AAD: Grupper**
 
-    De här grupperna länkas till de roller som du skapar i Defender för Slutpunkt i Microsoft 365 säkerhetscenter. Det gör du genom att skapa tre grupper i kundens AD-klientorganisation. Med den här metoden skapar vi följande grupper:
+    De här grupperna länkas till de roller som du skapar i Defender för slutpunkt i Microsoft 365 säkerhetscenter. Det gör du genom att skapa tre grupper i kundens AD-klientorganisation. Med den här metoden skapar vi följande grupper:
 
     - Analytiker på nivå 1 
     - Analytiker på nivå 2 
     - Mssp-analytikers godkännare  
 
 
-2. Skapa Defender för slutpunktsroller för lämpliga åtkomstnivåer i Customer Defender för Endpoint i Roller och grupper i Säkerhetscenter i Microsoft 365.
+2. Skapa Defender för slutpunktsroller för lämpliga åtkomstnivåer i Customer Defender för Slutpunkt Microsoft 365 roller och grupper i säkerhetscentret.
 
-    Åtkomstbehörigheter **> Slutpunktsroller &** grupper > Roller med ett användarkonto med behörigheten Global administratör eller Säkerhetsadministratör för att aktivera RBAC i Kundens Microsoft 365-säkerhetscenter.
+    Om du vill aktivera RBAC i kundcentret för Microsoft 365 öppnar du behörigheter **> Slutpunkter-roller & grupper > Roller** med ett användarkonto med rättigheter som global administratör eller säkerhetsadministratör.
 
     ![Bild av MSSP-åtkomst](../../media/mssp-access.png)
 
@@ -130,9 +130,9 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
     Exempel:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Godkänn eller neka förfrågningar i **avsnittet Godkännanden** i användargränssnittet.
 
-     I det här läget har analytiker åtkomst till företaget etablerats och varje analytiker ska kunna komma åt kundens Microsoft 365 Säkerhetscenter: 
+     Analytikernas åtkomst har etablerats och varje analytiker ska kunna komma åt kundens Microsoft 365 Säkerhetscenter: 
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` med de behörigheter och roller som de har tilldelats.
 
 > [!IMPORTANT]
-> Delegerad åtkomst till Microsoft Defender för Slutpunkt i Säkerhetscenter för Microsoft 365 ger för närvarande tillgång till en enda innehavare per webbläsarfönster.
+> Delegerad åtkomst till Microsoft Defender för Slutpunkt i Microsoft 365 säkerhetscenter ger för närvarande tillgång till en enda klientorganisation per webbläsarfönster.

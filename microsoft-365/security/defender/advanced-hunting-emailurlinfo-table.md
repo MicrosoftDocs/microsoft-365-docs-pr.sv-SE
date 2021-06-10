@@ -35,7 +35,7 @@ ms.locfileid: "51935467"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Tabellen i det avancerade sökschemat innehåller information om e-postmeddelanden och bifogade filer som `EmailUrlInfo` bearbetats av Microsoft Defender för Office [](advanced-hunting-overview.md) 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen. 
+Tabellen `EmailUrlInfo` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om e-postmeddelanden och bifogade filer som bearbetats av Microsoft Defender för Office 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen. 
 
 Information om andra tabeller i det avancerade sökschemat finns [i den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 

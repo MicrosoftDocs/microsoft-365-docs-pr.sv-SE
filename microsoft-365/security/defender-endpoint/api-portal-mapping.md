@@ -1,6 +1,6 @@
 ---
 title: API-fält för identifiering av slutpunkter i Microsoft Defender
-description: Förstå hur API-fält för identifiering mappning till värdena i Microsoft Defender Säkerhetscenter
+description: Förstå hur API-fält för identifiering mappning till värden i Microsoft Defender Säkerhetscenter
 keywords: identifieringar, identifieringsfält, fält, api, fält, dra identifieringar, rest api, begäran, svar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -33,11 +33,11 @@ ms.locfileid: "51933643"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-Förstå vilka datafält som visas som en del av identifierings-API:t och hur de mappas till Microsoft Defender Säkerhetscenter.
+Förstå vilka datafält som visas som en del av api:t för identifiering och hur de mappas till Microsoft Defender Säkerhetscenter.
 
 >[!Note]
 >- [Defender för Slutpunktsavisering](alerts.md) består av en eller flera identifieringar.
->- **Microsoft Defender ATP Detection** består av den misstänkta händelsen som inträffade på enheten och tillhörande **aviseringsinformation.**
+>- **Microsoft Defender ATP identifieringen** består av den misstänkta händelsen inträffade på enheten och tillhörande **aviseringsinformation.**
 >- Microsoft Defender för slutpunktsaviserings-API är det senaste API:t för aviseringsanvändning och innehåller en detaljerad lista med relaterade bevis för varje avisering. Mer information finns i [Aviseringsmetoder och egenskaper](alerts.md) och [Listaviseringar.](get-alerts.md)
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>Identifiering av API-fält och portalmappning
@@ -52,7 +52,7 @@ Fältnummer motsvarar talen i bilderna nedan.
 > | Portaletikett   | SIEM-fältnamn           | Fältet ArcSight      | Exempelvärde                                                                      | Beskrivning                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | Namn                | Microsoft Defender AV upptäckte "Mikatz" skadlig programvara med hög allvarlighetsgrad | Tillgängligt värde för varje identifiering.                                                                                                                                               |
-> | 2                | Allvarlighetsgrad                  | deviceSeverity      | Hög                                                                             | Tillgängligt värde för varje identifiering.                                                                                                                                               |
+> | 2                | Allvarlighetsgrad                  | deviceSeverity      | Högsta                                                                             | Tillgängligt värde för varje identifiering.                                                                                                                                               |
 > | 3                | Kategori                  | deviceEventCategory | Skadlig programvara                                                               | Tillgängligt värde för varje identifiering.                                                                                                                                               |
 > | 4                | Identifieringskälla                    | sourceServiceName   | Antivirus                                                                 | Microsoft Defender Antivirus eller Defender för Slutpunkt. Tillgängligt värde för varje identifiering.                                                                                         |
 > | 5                | Maskinnamn               | sourceHostName      | desktop-4a5ngd6                                                                           | Tillgängligt värde för varje identifiering.                                                                                                                                               |
@@ -74,7 +74,7 @@ Fältnummer motsvarar talen i bilderna nedan.
 > | 21               | MachineDomain             | sourceDnsDomain     | contoso.com                                                                        | Domännamnet är inte relevant för AAD-anslutna enheter. Tillgängligt värde för varje identifiering.                                                                                           |
 > | 22               | Aktör                     | deviceCustomString4 | BORON                                                                                   | Tillgängligt för aviseringar relaterade till en känd aktörsgrupp.                                                                                                                         |
 > | 21+5             | ComputerDnsName           | Ingen mappning          | liz-bean.contoso.com                                                               | Det fullständigt kvalificerade domännamnet för enheten. Tillgängligt värde för varje identifiering.                                                                                                    |
-> |                  | LogOnUsers                | sourceUserId        | contoso\smtp-bean;   contoso\smtp-hardee                                             | Domän och användare av de interaktiva inloggningsanvändarna vid tidpunkten för händelsen. Obs! För enheter med Windows 10 version 1607 är domäninformationen inte tillgänglig. |
+> |                  | LogOnUsers                | sourceUserId        | contoso\smtp-bean;   contoso\smtp-hardee                                             | Domän och användare av de interaktiva inloggningsanvändarna vid tidpunkten för händelsen. Obs! För enheter Windows 10 version 1607 är domäninformationen inte tillgänglig. |
 > |                  | InternalIPv4List          | Ingen mappning          | 192.168.1.7, 10.1.14.1                                                             | Lista över interna IPV4-IP:er för aktiva nätverksgränssnitt.                                                                                                                                                                               |
 > |                  | InternalIPv6List          | Ingen mappning          | fd30:0000:0000:0001:ff4e:003e:0009:000e, FE80:CD00:0000:0CDE:1257:0000:211E:729C | Lista över interna IPV6-IP:er för aktiva nätverksgränssnitt.                                                                                                                                                                               |
 | | LinkToMTP | Ingen mappning | `https://security.microsoft.com/alert/da637370718981685665_16349121` | Tillgängligt värde för varje identifiering.

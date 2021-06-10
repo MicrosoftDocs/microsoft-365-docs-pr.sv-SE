@@ -152,7 +152,7 @@ I den här tabellen visas resultatet av att aktivera MFA med standardinställnin
 
 ||Aktiverat|Inaktiverad|Metod för sekundär autentisering|
 |---|---|---|---|
-|**Standardinställningar för säkerhet**|Det går inte att använda villkorsstyrda åtkomstprinciper|Det går att använda principer för villkorsstyrd åtkomst|Microsoft Authenticator-appen|
+|**Standardinställningar för säkerhet**|Det går inte att använda villkorsstyrda åtkomstprinciper|Det går att använda principer för villkorsstyrd åtkomst|Microsoft Authenticator-appen|
 |**Principer för villkorsstyrd åtkomst**|Om några är aktiverade kan du inte aktivera säkerhetsstandardvärden|Om alla är inaktiverade kan du aktivera standardinställningar för säkerhet|Användardefinierad under MFA-registrering|
 |**Äldre MFA per användare (rekommenderas inte)**|Åsidosätter säkerhetsstandarder och villkorsstyrda åtkomstprinciper som kräver MFA vid varje inloggning|Åsidosätts av säkerhetsstandarder och villkorsstyrda åtkomstprinciper|Användardefinierad under MFA-registrering|
 ||||

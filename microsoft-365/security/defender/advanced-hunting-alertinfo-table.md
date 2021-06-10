@@ -1,7 +1,7 @@
 ---
 title: AlertInfo-tabell i det avancerade sökschemat
 description: Läs mer om händelser för aviseringsgenerering i tabellen AlertInfo i det avancerade sökschemat
-keywords: avancerad sökning, hotsökning, sökning efter cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, AlertInfo, varning, allvarlighetsgrad, kategori, MITRE, ATT&CK, Microsoft Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security, MCAS och Microsoft Defender för identitet
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, alert, severity, category, MITRE, ATT&CK, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, MCAS och Microsoft Defender för identity
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -37,7 +37,7 @@ ms.locfileid: "51933703"
 
 
 
-Tabellen i det avancerade sökschemat innehåller information om aviseringar från Microsoft Defender för Slutpunkt, Microsoft Defender för `AlertInfo` Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade schemat för sökning innehåller information om aviseringar från Microsoft Defender för Slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och `AlertInfo` Microsoft Defender för identitet. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 Information om andra tabeller i det avancerade sökschemat finns [i den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
 

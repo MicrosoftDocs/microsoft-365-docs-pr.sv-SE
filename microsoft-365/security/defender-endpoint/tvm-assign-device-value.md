@@ -1,7 +1,7 @@
 ---
-title: Tilldela enhetsvärde – hantering av hot och sårbarhet
+title: Tilldela enhetsvärde – Hantering av hot och säkerhetsrisker
 description: Lär dig hur du tilldelar ett lågt, normalt eller högt värde till en enhet så att du kan skilja mellan resursprioriteringar.
-keywords: Microsoft Defender för Endpoint-enhetsvärdet, enhetsvärdet för hot och sårbarhetshanteringsenheter, enheter med höga värden, exponeringsresultat för enhetsvärden
+keywords: Microsoft Defender för Endpoint-enhetsvärdet, Hantering av hot och säkerhetsrisker enhetvärde, enheter med hög värde, exponeringsresultat för enhetsvärde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,21 +25,21 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935203"
 ---
-# <a name="assign-device-value---threat-and-vulnerability-management"></a>Tilldela enhetsvärde – hantering av hot och sårbarhet
+# <a name="assign-device-value---threat-and-vulnerability-management"></a>Tilldela enhetsvärde – Hantering av hot och säkerhetsrisker
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Hantering av hot och sårbarhet](next-gen-threat-and-vuln-mgt.md)
+- [Hot och hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Genom att definiera en enhets värde kan du skilja på resursprioriteringar. Enhetsvärdet används för att införliva en enskild tillgångs riskdekans i beräkningen av exponeringsresultatet för hot och sårbarhetshantering. Enheter som tilldelas som "höga värden" får större vikt.
+Genom att definiera en enhets värde kan du skilja på resursprioriteringar. Enhetsvärdet används för att införliva risk nyare för en enskild tillgång i beräkningen Hantering av hot och säkerhetsrisker av exponeringsresultatet. Enheter som tilldelas som "höga värden" får större vikt.
 
 Du kan också använda [API:t för enhetsvärde.](set-device-value.md)
 
@@ -47,7 +47,7 @@ Alternativ för enhetsvärde:
 
 - Låg
 - Normal (standard)
-- Hög
+- Högsta
 
 Exempel på enheter som bör tilldelas ett högt värde:
 
@@ -78,6 +78,6 @@ Exponeringsresultatet är ett viktat medelvärde för alla enheter. Om du har en
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över hantering av säkerhetsrisker hot och hot](next-gen-threat-and-vuln-mgt.md)
 - [Exponeringsresultat](tvm-exposure-score.md)
 - [API:er](next-gen-threat-and-vuln-mgt.md#apis)

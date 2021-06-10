@@ -1,7 +1,7 @@
 ---
 title: Tabellen EmailEvents i det avancerade sökschemat
-description: Läs mer om händelser som är associerade med e-postmeddelanden från Microsoft 365 i tabellen EmailEvents i den avancerade tabellen för sökning
-keywords: avancerad sökning, hotsökning, sökning i cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, EmailEvents, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil-ID, namn på bifogad fil, skadlig kod, nätfiske, antal bifogade filer, antal länkar, antal url
+description: Läs mer om händelser som är Microsoft 365 dina e-postmeddelanden i tabellen EmailEvents i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, sökning efter cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, EmailEvents, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil-ID, namn på bifogad fil, skadlig kod, nätfiskeutskick, antal bifogade filer, antal länkar, antal webbadresser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51935491"
 
 - Microsoft 365 Defender
 
-Tabellen i det avancerade schemat för sökning innehåller information om händelser som innefattar bearbetning `EmailEvents` av e-postmeddelanden på Microsoft Defender för Office 365. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade schemat för sökning innehåller information om händelser som innefattar bearbetning av `EmailEvents` e-postmeddelanden [](advanced-hunting-overview.md) på Microsoft Defender för Office 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
 > Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.
@@ -67,7 +67,7 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `DetectionMethods` | sträng | Metoder som används för att identifiera skadlig kod, nätfiske eller andra hot som påträffas i e-postmeddelandet |
 | `ConfidenceLevel` | sträng | Lista över konfidensnivåer för skräppost- och nätfiskeförsök. För skräppost visar den här kolumnen konfidensnivån för skräppost (SCL), som anger om e-postmeddelandet hoppades över (-1), som hittades inte vara skräppost (0,1), som hittades som skräppost med måttligt förtroende (5,6) eller som hittades vara skräppost med hög konfidens (9). Vid nätfiske visas i den här kolumnen om konfidensnivån är "Hög" eller "Låg". |
 | `EmailAction` | sträng | Slutåtgärd för e-postmeddelandet baserat på filterbekräftelse, principer och användaråtgärder: Flytta meddelandet till skräppostmappen, Lägg till X-sidhuvud, Ändra ämne, Omdirigera meddelande, Ta bort meddelande, skicka till karantän, Ingen åtgärd vidtas, Hemlig kopia |
-| `EmailActionPolicy` | sträng | Åtgärdspolicy som verkställde: Skräppostskydd med hög säkerhet, skräppostskydd, skräppostskydd, nätfiskeskydd, personifiering mot nätfiske, personifiering mot nätfiske, personifiering av användare mot nätfiske, förfalskning mot nätfiske, personifiering mot nätfiske, Program mot skadlig programvara, Säkra bifogade filer, ETR-regler (Enterprise Transport Rules) |
+| `EmailActionPolicy` | sträng | Åtgärdspolicy som verkställde: Skydd mot skräppost med hög säkerhet, skräppostskydd, skräppostskydd, nätfiskeskydd, nätfiskeskydd, domänpersonifiering mot nätfiske, personifiering mot nätfiske, förfalskning av nätfiske, personifiering mot nätfiske, program mot skadlig programvara, Valv-bilagor, ETR-regler (Enterprise Transport Rules) |
 | `EmailActionPolicyGuid` | sträng | Unikt ID för principen som avgör den slutliga e-poståtgärden |
 | `AttachmentCount` | int | Antal bifogade filer i e-postmeddelandet |
 | `UrlCount` | int | Antal inbäddade URL:er i e-postmeddelandet |

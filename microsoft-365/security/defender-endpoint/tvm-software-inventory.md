@@ -1,7 +1,7 @@
 ---
-title: Programvaruinventering med hot och sårbarhetshantering
-description: Sidan för programvaruinventering för Microsoft Defender för Endpoints hot och sårbarhetshantering visar hur många svagheter och svagheter som har upptäckts i programvaran.
-keywords: Hantering av hot och sårbarhet, Microsoft Defender för Slutpunkt, Microsoft Defender för programvaruinventering av slutpunkter, Microsoft Defender för slutpunktshot & sårbarhetshantering, Microsoft Defender för slutpunktshot & inventering av sårbarhetshanteringsprogram, Microsoft Defender för Endpoint tvm-programinventering, inventering av TVM-programvara
+title: Inventering av programvara i Hantering av hot och säkerhetsrisker
+description: Sidan för programvaruinventering för Microsoft Defender för Endpoints Hantering av hot och säkerhetsrisker visar hur många svagheter som har upptäckts i programvaran.
+keywords: Hantering av hot och säkerhetsrisker, Microsoft Defender för slutpunkt, Microsoft Defender för programvaruinventering av slutpunkt, Microsoft Defender för slutpunktshot & hantering av säkerhetsrisker, Microsoft Defender för slutpunktshot & hantering av säkerhetsrisker programvarulager, Microsoft Defender för endpoint tvm-programinventering, tvm-programinventering
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,18 +25,18 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933727"
 ---
-# <a name="software-inventory---threat-and-vulnerability-management"></a>Programvaruinventering – hantering av hot och sårbarhet
+# <a name="software-inventory---threat-and-vulnerability-management"></a>Inventering av programvara – Hantering av hot och säkerhetsrisker
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Hantering av hot och sårbarhet](next-gen-threat-and-vuln-mgt.md)
+- [Hot och hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Software Inventory in in threat and vulnerability management is a list of known software in your organization with [official Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). Eventuella svagheter publiceras inte för programvaruprodukter utan ett officiellt CPE. Den innehåller även information som namn på leverantören, antal svagheter, hot och antal exponerade enheter.
+Software inventory in Hantering av hot och säkerhetsrisker is a list of known software in your organization with [official Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). Eventuella svagheter publiceras inte för programvaruprodukter utan ett officiellt CPE. Den innehåller även information som namn på leverantören, antal svagheter, hot och antal exponerade enheter.
 
 ## <a name="how-it-works"></a>Så här fungerar det
 
@@ -46,12 +46,12 @@ Eftersom det är i realtid kommer du att se sårbarhetsinformation när de uppt�
 
 ## <a name="navigate-to-the-software-inventory-page"></a>Gå till sidan för programvaruinventering
 
-Öppna sidan Software Inventory genom att välja **Software inventory** från navigeringsmenyn för hot och sårbarhetshantering i Microsoft [Defender Säkerhetscenter.](portal-overview.md)
+Öppna sidan Software inventory genom att välja **Software inventory** Hantering av hot och säkerhetsrisker navigationsmenyn i [Microsoft Defender Säkerhetscenter](portal-overview.md).
 
 Visa programvara på specifika enheter på sidorna för enskilda enheter i [listan över enheter](machines-view-overview.md).
 
 >[!NOTE]
->Om du söker efter programvara med hjälp av den globala sökningen i Microsoft Defender för Endpoint ska du se till att lägga till ett understreck i stället för ett blanksteg. Om du till exempel vill ha bästa sökresultatet skriver du "windows_10" i stället för "Windows 10".
+>Om du söker efter programvara med hjälp av den globala sökningen i Microsoft Defender för Endpoint ska du se till att lägga till ett understreck i stället för ett blanksteg. För bästa sökresultat skriver du exempelvis "windows_10" i stället för "Windows 10".
 
 ## <a name="software-inventory-overview"></a>Översikt över programvaruinventering
 
@@ -65,7 +65,7 @@ Välj den programvara du vill undersöka. En utfällningspanel öppnas med en me
 
 ### <a name="software-that-isnt-supported"></a>Programvara som inte stöds
 
-Programvara som för närvarande inte stöds av hot & sårbarhetshantering kan finnas på sidan för programvaruinventering. Eftersom det inte stöds är endast begränsade data tillgängliga. Filtrera efter programvara som inte stöds med alternativet "Inte tillgängligt" i avsnittet "Bra att"
+Programvara som för närvarande inte stöds av hot & hantering av säkerhetsrisker finns på sidan för programvaruinventering. Eftersom det inte stöds är endast begränsade data tillgängliga. Filtrera efter programvara som inte stöds med alternativet "Inte tillgängligt" i avsnittet "Bra att"
 
 ![Programvarufilter som inte stöds.](images/tvm-unsupported-software-filter.png)
 
@@ -80,9 +80,9 @@ För närvarande visas inte produkter utan CPE på sidan för programvaruinvente
 
 ## <a name="software-inventory-on-devices"></a>Inventering av programvara på enheter
 
-Från navigeringspanelen i Microsoft Defender Säkerhetscenter går du till **[listan Enheter](machines-view-overview.md)**. Välj namnet på en enhet för att öppna enhetssidan  (t.ex. Dator1). Välj sedan fliken Programvaruinventering för att se en lista över alla kända program som finns på enheten. Välj en specifik programvarupost för att öppna den utfällade listan med mer information.
+Från Microsoft Defender Säkerhetscenter navigeringspanelen går du till **[listan Enheter](machines-view-overview.md)**. Välj namnet på en enhet för att öppna enhetssidan  (t.ex. Dator1). Välj sedan fliken Programvaruinventering för att se en lista över alla kända program som finns på enheten. Välj en specifik programvarupost för att öppna den utfällade listan med mer information.
 
-Programvaran kan vara synlig på enhetsnivå även om den för närvarande inte stöds av hantering av hot och sårbarhet. Men endast begränsade data kommer att vara tillgängliga. Du vet om programvaran inte stöds eftersom det står "Inte tillgänglig" i kolumnen "Det här är en bra dag".
+Programvaran kan visas på enhetsnivå även om den för närvarande inte stöds av Hantering av hot och säkerhetsrisker. Men endast begränsade data kommer att vara tillgängliga. Du vet om programvaran inte stöds eftersom det står "Inte tillgänglig" i kolumnen "Det här är en bra dag".
 
 Programvara utan CPE kan också visas under denna enhetsspecifika inventering av programvara.
 
@@ -92,7 +92,7 @@ Se bevis för var vi upptäckte en specifik programvara på en enhet från regis
 
 Välj ett programvarunamn för att öppna den utfällna sidan och leta efter avsnittet "Programvarubevis".
 
-![Exempel på programvaru bevis för Windows 10 från listan över enheter, med registersökväg för programvaru bevis.](images/tvm-software-evidence.png)
+![Exempel på programvaru bevis Windows 10 i listan över enheter, med registersökväg för programvaru bevis.](images/tvm-software-evidence.png)
 
 ## <a name="software-pages"></a>Programvarusidor
 
@@ -100,7 +100,7 @@ Du kan visa programvarusidor på några olika sätt:
 
 - Sidan För programvaruinventering > Välj ett programvarunamn > **Välj Sidan Öppna programvara i** den utfäll plats
 - [Sidan Rekommendationer](tvm-security-recommendation.md) för > Välj en rekommendation > Välj **sidan Öppna programvara i** den utfällda sidan
-- [](threat-and-vuln-mgt-event-timeline.md) Sidan Händelsetidslinje > Välj en händelse > Välj namnet på den hyperlänkade programvaran (t.ex. Visual Studio 2017) i avsnittet "Related component" i den utfällbar menyn
+- [](threat-and-vuln-mgt-event-timeline.md) Sidan Händelsetidslinje > Välj en händelse > Välj namnet på den hyperlänkade programvaran (till exempel Visual Studio 2017) i avsnittet "Relaterad komponent" i den utfällbar menyn
 
  En hel sida visas med all information om en viss programvara och följande information:
 
@@ -112,7 +112,7 @@ Du kan visa programvarusidor på några olika sätt:
     - Enheter som har programvaran installerad (tillsammans med enhetsnamn, domän, operativsystem med mera).
     - Lista över programvaruversion (inklusive antalet enheter som versionen är installerad på, antalet identifierade säkerhetsproblem och namnen på de installerade enheterna).
 
-    ![Exempelsida för programvara för Visual Studio 2017 med programvaruinformation, svagheter, exponerade enheter med mera.](images/tvm-software-page-example.png)
+    ![Exempelsida för programvara Visual Studio 2017 med information om programvaran, svagheter, exponerade enheter med mera.](images/tvm-software-page-example.png)
 
 ## <a name="report-inaccuracy"></a>Rapportera felaktigheter
 
@@ -121,11 +121,11 @@ Rapportera en falsk positiv när du ser någon vag, felaktig eller ofullständig
 1. Öppna programvarans utfällutrymme på sidan För programvaruinventering.
 2. Välj **Rapportens felaktigheter.**
 3. I den utfällliga fönsterrutan väljer du kategorin felaktigheter i den nedrullningsmenyn, fyller i din e-postadress och information om felaktigheter.
-4. Välj **Skicka**. Din feedback skickas omedelbart till experter på hot och sårbarhetshantering.
+4. Välj **Skicka**. Din feedback skickas omedelbart till Hantering av hot och säkerhetsrisker experter.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över hantering av säkerhetsrisker hot och hot](next-gen-threat-and-vuln-mgt.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)
 - [Tidlinje för händelse](threat-and-vuln-mgt-event-timeline.md)
 - [Visa och ordna listan Microsoft Defender för slutpunktsenheter](machines-view-overview.md)

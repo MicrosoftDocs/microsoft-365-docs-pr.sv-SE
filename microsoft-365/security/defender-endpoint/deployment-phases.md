@@ -50,7 +50,7 @@ Varje avsnitt motsvarar en separat artikel i den här lösningen.
 |Fas | Beskrivning | 
 |:-------|:-----|
 | [Fas 1: Förbereda](prepare-deployment.md)| Läs mer om vad du behöver tänka på när du distribuerar Defender för Endpoint, till exempel godkännanden från intressenter, miljööverväganden, åtkomstbehörigheter och införandeordningen för funktioner. 
-| [Fas 2: Konfigurera](production-deployment.md)|  Få vägledning om de inledande åtgärder du behöver vidta så att du kan komma åt portalen, till exempel validera licensiering, slutföra installationsguiden och nätverkskonfiguration. 
+| [Fas 2: Installation](production-deployment.md)|  Få vägledning om de inledande åtgärder du behöver vidta så att du kan komma åt portalen, till exempel validera licensiering, slutföra installationsguiden och nätverkskonfiguration. 
 | [Fas 3: Introduktion](onboarding.md) | Lär dig hur du använder distributionsringar, onboarding-verktyg som stöds baserat på typen av slutpunkt och hur du konfigurerar tillgängliga funktioner. 
 
 
@@ -75,9 +75,9 @@ Oavsett vilken miljöarkitektur och distributionsmetod du väljer i distribution
 
 Funktion | Beskrivning 
 :---|:---
-Identifiering och svar av slutpunkter | Funktioner för identifiering och svar av slutpunkter används för att identifiera, undersöka och svara på intrångsförsök och aktiva intrång.
+Identifiering och svar av slutpunkt | Funktioner för identifiering och svar av slutpunkter används för att identifiera, undersöka och svara på intrångsförsök och aktiva intrång.
 Nästa generations skydd | För att ytterligare förstärka nätverkets säkerhets perimeter använder Microsoft Defender för Endpoint nästa generations skydd som är utformat för att fånga upp alla typer av nya hot.
-Minskning av attackytan |  Tillhandahåll den första försvarslinjen i högen. Genom att säkerställa att konfigurationsinställningarna är korrekt inställda och utnyttja tekniker för minskningar tillämpas, kommer dessa uppsättning funktioner att motarbeta attacker och användning.
+Minska attackytan |  Tillhandahåll den första försvarslinjen i högen. Genom att säkerställa att konfigurationsinställningarna är korrekt inställda och utnyttja tekniker för minskningar tillämpas, kommer dessa uppsättning funktioner att motarbeta attacker och användning.
 
 Alla dessa funktioner är tillgängliga för Microsoft Defender för Endpoint-licensinnehavare. Mer information finns i [Licenskrav](minimum-requirements.md#licensing-requirements).
 
@@ -87,13 +87,13 @@ Alla dessa funktioner är tillgängliga för Microsoft Defender för Endpoint-li
 
 -   Användning av Microsoft Endpoint Manager och Microsoft Endpoint Manager för att introducera slutpunkter i tjänsten och konfigurera funktioner
 
--   Aktivera Defender för funktioner för identifiering av slutpunkt och svar (EDR)
+-   Aktivera Defender för identifiering och åtgärd på slutpunkt (Identifiering och åtgärd på slutpunkt)
 
 -   Aktivera Defender för funktioner för Slutpunktsskyddsplattform (DEFENDER)
 
     -   Nästa generations skydd
 
-    -   Minskning av attackytan
+    -   Minska attackytan
 
 
 ### <a name="out-of-scope"></a>Inte begränsad

@@ -1,7 +1,7 @@
 ---
-title: Exponeringsresultat för hantering av hot och sårbarhet
-description: Exponeringsresultatet för hantering av hot och risker återspeglar hur sårbar organisationen är för hot om cybersäkerhet.
-keywords: exponeringspoäng, Microsoft Defender för exponeringsresultat för slutpunkt, Microsoft Defender för exponeringspoäng för endpoint tvm, exponeringspoäng för organisation, exponeringsresultat för tvmorganisation, hantering av hot och sårbarhet, Microsoft Defender för Slutpunkt
+title: Exponeringsresultat i Hantering av hot och säkerhetsrisker
+description: Exponeringsresultatet Hantering av hot och säkerhetsrisker hur sårbar organisationen är för hot om cybersäkerhet.
+keywords: exponeringspoäng, Microsoft Defender för exponeringsresultat för slutpunkt, Microsoft Defender för exponeringspoäng för slutpunkt tvm, exponeringspoäng för organisation, exponeringsresultat för tvm-organisation, Hantering av hot och säkerhetsrisker, Microsoft Defender för Slutpunkt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,19 +25,19 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934111"
 ---
-# <a name="exposure-score---threat-and-vulnerability-management"></a>Exponeringsresultat – hantering av hot och risker
+# <a name="exposure-score---threat-and-vulnerability-management"></a>Exponeringsresultat – Hantering av hot och säkerhetsrisker
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Hantering av hot och sårbarhet](next-gen-threat-and-vuln-mgt.md)
+- [Hot och hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Din exponeringspoäng visas i instrumentpanelen [för hantering av hot och risker](tvm-dashboard-insights.md) i Microsoft Defender Säkerhetscenter. Den visar hur sårbar organisationen är för hot om cybersäkerhet. Låg exponeringspoäng innebär att enheterna är mindre sårbara för användning.
+Din exponeringsresultat visas i hantering av säkerhetsrisker [i](tvm-dashboard-insights.md) Microsoft Defender Säkerhetscenter. Den visar hur sårbar organisationen är för hot om cybersäkerhet. Låg exponeringspoäng innebär att enheterna är mindre sårbara för användning.
 
 - Förstå och identifiera takeaways på hög nivå om säkerhetstillstånden i din organisation.
 - Identifiera och svara på områden som kräver undersökning eller åtgärd för att förbättra den aktuella statusen.
@@ -59,11 +59,11 @@ Du kan åtgärda problemen baserat på prioriterade säkerhetsrekommendationer [
 
 ## <a name="reduce-your-threat-and-vulnerability-exposure"></a>Minska risken för exponering av sårbarheter
 
-Minska exponeringen av hot och risker genom att åtgärda [säkerhetsrekommendationer](tvm-security-recommendation.md). Gör störst inverkan på exponeringsresultatet genom att åtgärda de viktigaste säkerhetsrekommendationerna, som kan visas på instrumentpanelen för hantering av hot [och risker.](tvm-dashboard-insights.md)
+Minska exponeringen av hot och risker genom att åtgärda [säkerhetsrekommendationer](tvm-security-recommendation.md). Gör störst inverkan på exponeringsresultatet genom att åtgärda de viktigaste säkerhetsrekommendationerna, som kan visas i Hantering av hot och säkerhetsrisker [.](tvm-dashboard-insights.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Översikt över hot- och sårbarhetshantering](next-gen-threat-and-vuln-mgt.md)
+- [Översikt över hantering av säkerhetsrisker hot och hot](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft Secure Score för enheter](tvm-microsoft-secure-score-devices.md)
 - [Säkerhetsrekommendationer](tvm-security-recommendation.md)
 - [Tidlinje för händelse](threat-and-vuln-mgt-event-timeline.md)

@@ -58,14 +58,14 @@ Du kan använda följande filter för att begränsa listan med aviseringar och f
 
 Aviserings allvarlighetsgrad | Beskrivning
 :---|:---
-Hög </br>(Röd) | Varningar som ofta ses associerade med avancerade beständiga hot (APT). Dessa varningar indikerar en hög risk på grund av hur allvarlig skada de kan orsaka på enheter. Några exempel är: aktiviteter för autentiseringsstöld, aktiviteter för utpressningstrojaner som inte associeras med någon grupp, ändring av säkerhetssensorer eller skadliga aktiviteter som utser människor.
-Medel </br>(Orange) | Varningar från identifiering av slutpunkt och svar efter intrång som kan vara en del av ett avancerat beständigt hot (APT). Detta omfattar observerade beteenden som är typiska för attackfaser, avvikande registerändring, körning av misstänkta filer och så vidare. Även om vissa kan vara en del av intern säkerhetstestning kräver det undersökning eftersom det också kan vara en del av en avancerad attack.
+Högsta </br>(Röd) | Varningar som ofta ses associerade med avancerade beständiga hot (APT). Dessa varningar indikerar en hög risk på grund av hur allvarlig skada de kan orsaka på enheter. Några exempel är: aktiviteter för autentiseringsstöld, aktiviteter för utpressningstrojaner som inte associeras med någon grupp, ändring av säkerhetssensorer eller skadliga aktiviteter som utser människor.
+Medel </br>(Orange) | Varningar från identifiering och åtgärd på slutpunkt efter intrång som kan vara en del av ett avancerat beständigt hot (APT). Detta omfattar observerade beteenden som är typiska för attackfaser, avvikande registerändring, körning av misstänkta filer och så vidare. Även om vissa kan vara en del av intern säkerhetstestning kräver det undersökning eftersom det också kan vara en del av en avancerad attack.
 Låg </br>(Gul) | Varningar om hot som är associerade med vanligt skadlig programvara. Till exempel hacka-verktyg, icke-skadlig hacka verktyg, som att köra utforskningskommandon, rensa loggar, som ofta inte anger ett avancerat hot som riktar sig till organisationen. Det kan också komma från en isolerad säkerhetsverktygstestning av en användare i organisationen.
 Informativ </br>(Grå) | Varningar som inte kan anses vara skadliga för nätverket, men som kan öka organisationens säkerhetskännedom om potentiella säkerhetsproblem.
 
 #### <a name="understanding-alert-severity"></a>Förstå allvarlighetsgrad för aviseringar
 
-Microsoft Defender Antivirus (Microsoft Defender AV) och Defender för slutpunktsvarningar är olika eftersom de representerar olika omfattningar.
+Microsoft Defender Antivirus (Microsoft Defender AV) och Defender för slutpunktsvarningens allvarlighetsgrad är olika eftersom de representerar olika omfattningar.
 
 Allvarlighetsgraden för AV-hot i Microsoft Defender motsvarar den absoluta allvarlighetsgraden för det identifierade hotet (skadlig kod), och tilldelas utifrån den potentiella risken för den enskilda enheten, om smittad.
 
@@ -121,10 +121,10 @@ Du kan välja mellan att visa aviseringar som tilldelats dig eller automatiserin
 
 ### <a name="detection-source"></a>Identifieringskälla
 
-Välj den källa som utlöste aviseringen. Deltagare i förhandsversionen av Microsoft Threat Experts kan nu filtrera och se identifieringar från den nya expert hanterade säkerhetstjänsten för hot.
+Välj den källa som utlöste aviseringen. Microsoft Hotexperter deltagare i förhandsversionen kan nu filtrera och se identifieringar från den nya expert hanterade säkerhetstjänsten för hot.
 
 >[!NOTE]
->Antivirusfiltret visas bara om enheterna använder Microsoft Defender Antivirus som standard för skydd mot skadlig programvara i realtid.
+>Antivirusfiltret visas bara om enheterna använder Microsoft Defender Antivirus som skydd mot skadlig programvara i realtid.
 
 | Identifieringskälla                  | API-värde                  |
 |-----------------------------------|----------------------------|
@@ -133,7 +133,7 @@ Välj den källa som utlöste aviseringen. Deltagare i förhandsversionen av Mic
 | Automatiserad undersökning           | AutomatedInvestigation     |
 | Anpassad identifiering                  | AnpassadDetection            |
 | Anpassat TI                         | CustomerTI                 |
-| EDR                               | WindowsDefenderAtp         |
+| Identifiering och åtgärd på slutpunkt                               | WindowsDefenderAtp         |
 | Microsoft 365 Defender            | MTP                        |
 | Microsoft Defender för Office 365 | OfficeATP                  |
 | Microsoft Hotexperter          | ThreatExperts              |

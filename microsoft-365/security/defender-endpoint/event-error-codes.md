@@ -42,11 +42,11 @@ Om enheter inte visas i listan Enheter kan du till exempel behöva leta efter h�
 
 **Öppna Loggboken och hitta Microsoft Defender för slutpunktens händelselogg för tjänsten:**
 
-1. Klicka **på Start** på Windows-menyn, skriv **Loggboken** och tryck på **Retur.**
+1. Klicka **på Start** Windows menyn, skriv **Loggboken** och tryck på **Retur.**
 
 2. Bläddra i logglistan under **Loggsammanfattning** tills du ser **Microsoft-Windows-SENSE/Operational**. Dubbelklicka på objektet för att öppna loggen.
 
-   a.  Du kan också öppna loggen genom att expandera **Program och tjänstloggar**  >  **Microsoft**  >  **Windows**  >  **SENSE och** klicka på **Drift.**
+   a.  Du kan också öppna loggen genom att expandera **Program- och tjänstloggar**  >  **Microsoft**  >  **Windows**  >  **SENSE** och klicka på **Drift.**
 
    > [!NOTE]
    > SENSE är det interna namn som används för att referera till den beteende sensor som driver Microsoft Defender för Endpoint.
@@ -99,14 +99,14 @@ Det gick inte att kontakta den externa bearbetningsservrarna på den URL:en.</td
 <td>Enheten fungerade inte korrekt och rapporterar inte till portalen.</td>
 <td>Onboarding måste köras innan tjänsten startas.<br>
 Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.</td>
 </tr>
 <tr>
 <td>7</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte läsa onboarding-parametrarna. Fel: <code>variable</code> .</td>
 <td>Variabel = detaljerad felbeskrivning. Enheten fungerade inte korrekt och rapporterar inte till portalen.</td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.</td>
 </tr>
 <tr>
 <td>8</td>
@@ -114,21 +114,21 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 <td><b>Under introduktionen:</b> Det gick inte att rensa konfigurationen av tjänsten under onboarding. Onboarding-processen fortsätter. <br><br> <b>Under offboarding:</b> Tjänsten kunde inte rensa konfigurationen under offboarding. Offboarding-processen har slutförts men tjänsten fortsätter att köras.
  </td>
 <td><b>Introduktion:</b> Ingen åtgärd krävs. <br><br> <b>Offboarding:</b> Starta om systemet.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte ändra starttypen. Felkod: <code>variable</code> .</td>
 <td><b>Under introduktionen:</b> Enheten fungerade inte korrekt och rapporterar inte till portalen. <br><br><b>Under offboarding:</b> Det gick inte att ändra tjänstens starttyp. Offboarding-processen fortsätter. </td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.</td>
 </tr>
 <tr>
 <td>10</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte spara informationen om introduktionen. Felkod: <code>variable</code> .</td>
 <td>Enheten fungerade inte korrekt och rapporterar inte till portalen.</td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.</td>
 </tr>
 <tr>
 <td>11</td>
@@ -159,29 +159,29 @@ Det gick inte att kontakta den externa bearbetningsservrarna på den URL:en.</td
 <tr>
 <td>17</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte ändra plats för anslutna användarupplevelser och telemetritjänster. Felkod: <code>variable</code> .</td>
-<td>Ett fel uppstod med Windows-telemetritjänsten.</td>
+<td>Ett fel uppstod med Windows telemetritjänsten.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Kontrollera att diagnostikdatatjänsten är aktiverad.</a><br>
 Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.</td>
 </tr>
 <tr>
 <td>18</td>
-<td>OOBE (Välkommen i Windows) har slutförts.</td>
-<td>Tjänsten startar först när Windows-uppdateringarna har installerats.</td>
+<td>OOBE (Windows Välkomst) har slutförts.</td>
+<td>Tjänsten startar bara när Windows är klara.</td>
 <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
 </tr>
 <tr>
 <td>19</td>
-<td>OOBE (Välkommen i Windows) har ännu inte slutförts.</td>
-<td>Tjänsten startar först när Windows-uppdateringarna har installerats.</td>
+<td>OOBE (Windows Välkommen) har ännu inte slutförts.</td>
+<td>Tjänsten startar bara när Windows är klara.</td>
 <td>Meddelande om normal användning. ingen åtgärd krävs.<br>
-Om det här felet kvarstår efter en omstart av systemet bör du kontrollera att alla Windows-uppdateringar har installerats.</td>
+Om det här felet kvarstår efter en omstart av systemet bör du kontrollera att Windows uppdateringar har installerats.</td>
 </tr>
 <tr>
 <td>20</td>
-<td>Det går inte att vänta på att OOBE (Välkommen i Windows) ska slutföras. Felkod: <code>variable</code> .</td>
+<td>Det går inte att vänta på att OOBE (Windows Välkommen) slutförs. Felkod: <code>variable</code> .</td>
 <td>Internt fel.</td>
-<td>Om det här felet kvarstår efter en omstart av systemet bör du kontrollera att alla Windows-uppdateringar har installerats.</td>
+<td>Om det här felet kvarstår efter en omstart av systemet bör du kontrollera att Windows uppdateringar har installerats.</td>
 </tr>
 <tr>
 <td>25</td>
@@ -189,7 +189,7 @@ Om det här felet kvarstår efter en omstart av systemet bör du kontrollera att
 <td>Enheten fungerade inte korrekt.
 Den rapporterar till portalen, men tjänsten kanske inte visas som registrerad i SCCM eller registret.</td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.</td>
 </tr>
 <tr>
 <td>26</td>
@@ -197,23 +197,23 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 <td>Enheten fungerade inte korrekt.<br>
 Den rapporterar till portalen, men tjänsten kanske inte visas som registrerad i SCCM eller registret.</td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.</td>
 </tr>
 <tr>
 <td>27</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte aktivera SENSE-läge i Microsoft Defender Antivirus. Onboarding-processen misslyckades. Felkod: <code>variable</code> .</td>
-<td>Normalt inger Microsoft Defender Antivirus ett särskilt passivt läge om en annan antimalwareprodukt i realtid körs korrekt på enheten och enheten rapporterar till Defender för Endpoint.</td>
+<td>Normalt sett Microsoft Defender Antivirus en särskild passiv form om en annan program mot skadlig programvara i realtid körs korrekt på enheten och enheten rapporterar till Defender för Endpoint.</td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a><br>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.<br>
 Se till att skydd mot skadlig programvara i realtid fungerar som det ska.</td>
 </tr>
 <tr>
 <td>28</td>
 <td>Microsoft Defender för slutpunktsanslutna användarupplevelser och registrering av telemetritjänster misslyckades. Felkod: <code>variable</code> .</td>
-<td>Ett fel uppstod med Windows-telemetritjänsten.</td>
+<td>Ett fel uppstod med Windows telemetritjänsten.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Kontrollera att diagnostikdatatjänsten är aktiverad.</a><br>
 Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.</td>
 </tr>
 <tr>
 <td>29</td>
@@ -224,16 +224,16 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 <tr>
 <td>30</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte inaktivera SENSE-läge i Microsoft Defender Antivirus. Felkod: <code>variable</code> .</td>
-<td>Normalt inger Microsoft Defender Antivirus ett särskilt passivt läge om en annan antimalwareprodukt i realtid körs korrekt på enheten och enheten rapporterar till Defender för Endpoint.</td>
+<td>Normalt sett Microsoft Defender Antivirus en särskild passiv form om en annan program mot skadlig programvara i realtid körs korrekt på enheten och enheten rapporterar till Defender för Endpoint.</td>
 <td>Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter</a><br>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a><br>
 Se till att skydd mot skadlig programvara i realtid fungerar som det ska.</td>
 </tr>
 <tr>
 <td>31</td>
 <td>Microsoft Defender för slutpunktsanslutna användarupplevelser och avregistrering av telemetritjänsten misslyckades. Felkod: <code>variable</code> .</td>
-<td>Ett fel uppstod med Windows-telemetritjänsten under onboarding. Offboarding-processen fortsätter.</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Sök efter fel med Windows-telemetritjänsten</a>.</td>
+<td>Ett fel uppstod med Windows telemetritjänsten under onboarding. Offboarding-processen fortsätter.</td>
+<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Sök efter fel med Windows telemetritjänsten</a>.</td>
 </tr>
 <tr>
 <td>32</td>
@@ -251,17 +251,17 @@ Om identifieraren inte finns kvar kan samma enhet visas två gånger i portalen.
 <tr>
 <td>34</td>
 <td>Microsoft Defender för Slutpunkt-tjänsten kunde inte lägga till sig själv som ett beroende av den anslutna användarupplevelsen och telemetritjänsten, vilket ledde till att onboarding-processen misslyckades. Felkod: <code>variable</code> .</td>
-<td>Ett fel uppstod med Windows-telemetritjänsten.</td>
+<td>Ett fel uppstod med Windows telemetritjänsten.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Kontrollera att diagnostikdatatjänsten är aktiverad.</a><br>
 Kontrollera att onboarding-inställningarna och skripten har distribuerats korrekt. Försök distribuera konfigurationspaketen igen.<br>
-Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Introduktion till Windows 10-enheter.</a></td>
+Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboard Windows 10 enheter</a>.</td>
 </tr>
 <tr>
 <td>35</td>
 <td>Microsoft Defender för slutpunktstjänsten kunde inte ta bort sig själv som ett beroende av den anslutna användarupplevelsen och telemetritjänsten. Felkod: <code>variable</code> .</td>
-<td>Ett fel uppstod med Windows-telemetritjänsten under offboarding. Offboarding-processen fortsätter.
+<td>Ett fel uppstod med den Windows telemetritjänsten under offboarding. Offboarding-processen fortsätter.
 </td>
-<td>Sök efter fel med Windows-diagnostikdatatjänsten.</td>
+<td>Sök efter fel med Windows för diagnostikdata.</td>
 </tr>
 <tr>
 <td>36</td>
@@ -494,7 +494,7 @@ Se <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices
 </tr>
 <tr>
    <td>84</td>
-   <td>Ange att Windows Defender Antivirus körs. Tvinga passivt läge: %1, resultatkod: %2.</td>
+   <td>Ställa Windows Defender Antivirus i körningsläget. Tvinga passivt läge: %1, resultatkod: %2.</td>
    <td>Ställa in defender running mode (aktivt eller passivt).</td>
    <td>Meddelande om normal användning. ingen åtgärd krävs.</td>
 </tr>

@@ -1,7 +1,7 @@
 ---
 title: Tabellen EmailPostDeliveryEvents i det avancerade sökschemat
-description: Läs mer om åtgärder efter leverans som har vidtagits för Microsoft 365-e-postmeddelanden i tabellen EmailPostDeliveryEvents i det avancerade sökschemat
-keywords: avancerad sökning, hotsökning, sökning efter cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, EmailPostDeliveryEvents, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil, bifogade filer, namn på bifogad fil, skadlig kod, nätfiskeutdrag, antal bifogade filer, antal bifogade filer, antal url-adresser
+description: Läs mer om åtgärder efter leverans som har Microsoft 365 i tabellen EmailPostDeliveryEvents i det avancerade sökschemat
+keywords: avancerad sökning, hotsökning, sökning efter cyberhot, Microsoft 365 Defender, microsoft 365, m365, sökning, fråga, telemetri, schemareferens, kusto, tabell, kolumn, datatyp, beskrivning, E-postPostDeliveryEvents, nätverksmeddelande-ID, avsändare, mottagare, bifogad fil, bifogad fil, namn på bifogad fil, skadlig kod, nätfiske, antal bifogade filer, antal url
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51935479"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Tabellen i det avancerade schemat för sökning innehåller information om åtgärder efter leverans som har vidtagits `EmailPostDeliveryEvents` för e-postmeddelanden som bearbetats av Microsoft 365. [](advanced-hunting-overview.md) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen i det avancerade schemat för sökning innehåller information om åtgärder efter leverans som har vidtagits `EmailPostDeliveryEvents` för e-postmeddelanden [](advanced-hunting-overview.md) som Microsoft 365. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!TIP]
 > Om du vill ha detaljerad information om de händelsetyper (värden) som stöds av en tabell kan du använda den `ActionType` inbyggda schemareferensen som finns i säkerhetscentret.

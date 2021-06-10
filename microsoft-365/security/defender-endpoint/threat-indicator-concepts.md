@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51074121"
 ---
-# <a name="understand-threat-intelligence-concepts"></a>Förstå begrepp inom hotinformation
+# <a name="understand-threat-intelligence-concepts"></a>Förstå olika threat Intelligence-koncept
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -64,7 +64,7 @@ IOS har en många-till-ett-relation med aviseringsdefinitioner så att en aviser
 Ämne | Beskrivning
 :---|:---
 [Dra identifieringar till dina SIEM-verktyg](configure-siem.md)| Läs mer om olika sätt att dra identifieringar.
-[Aktivera SIEM-integrering i Microsoft Defender för Slutpunkt](enable-siem-integration.md)| Läs mer om hur du aktiverar  funktionen SIEM-integrering på sidan Inställningar i portalen så att du kan använda och generera den information som krävs för att konfigurera de SIEM-verktyg som stöds.
+[Aktivera SIEM-integrering i Microsoft Defender för Slutpunkt](enable-siem-integration.md)| Läs mer om hur du aktiverar SIEM-integrationsfunktionen på **sidan Inställningar** i portalen så att du kan använda och generera den information som krävs för att konfigurera de SIEM-verktyg som stöds.
 [Konfigurera Splunk för att hämta Microsoft Defender för identifiering av slutpunkter](configure-siem.md)| Läs mer om att installera REST API Modular Input App och andra konfigurationsinställningar för att aktivera Splunk för att hämta Microsoft Defender för identifiering av slutpunkter.
 [Konfigurera HP ArcSight att hämta Microsoft Defender för identifiering av slutpunkter](configure-arcsight.md)| Läs mer om hur du installerar HP ArcSight REST FlexConnector-paketet och de filer du behöver för att konfigurera ArcSight för att hämta Microsoft Defender för slutpunktsidentifiering.
 [Fälten Microsoft Defender för identifiering av slutpunkt](api-portal-mapping.md) | Förstå vilka datafält som visas som en del av API:t för varningar och hur de mappas till Microsoft Defender Säkerhetscenter.

@@ -51,7 +51,7 @@ E-postmeddelandet innehåller grundläggande information om aviseringen och en l
 Du kan skapa regler som bestämmer enheter och allvarlighetsgrad för aviseringar för att skicka e-postaviseringar till och aviseringsmottagarna.
 
 
-1. I navigeringsfönstret väljer du Inställningar  >  **E-postaviseringar**.
+1. Välj E-postaviseringar **Inställningar**  >  **navigeringsfönstret.**
 
 2. Klicka **på Lägg till objekt.**
 

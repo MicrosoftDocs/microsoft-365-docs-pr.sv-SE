@@ -1,7 +1,7 @@
 ---
-title: Referens för konfigurerbara inställningar för Microsoft Managed Desktop
-description: Ange kategorier för konfigurerbara inställningar i Microsoft Managed Desktop
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+title: Konfigurerbara inställningsreferenser för Microsoft Hanterat skrivbord
+description: Ange kategorier för konfigurerbara inställningar i Microsoft Hanterat skrivbord
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -16,12 +16,12 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50917710"
 ---
-# <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referens för konfigurerbara inställningar – Microsoft Managed Desktop
+# <a name="configurable-settings-reference---microsoft-managed-desktop"></a>Referens för konfigurerbara inställningar – Microsoft Hanterat skrivbord
 
-Det här avsnittet innehåller de inställningskategorier som kunder kan konfigurera med Microsoft Hanterat skrivbord. Varje inställningskategori innehåller information om krav, metodtips och hur du anpassar inställningskategorin. 
+Det här avsnittet innehåller de inställningskategorier som kunderna kan konfigurera med Microsoft Hanterat skrivbord. Varje inställningskategori innehåller information om krav, metodtips och hur du anpassar inställningskategorin. 
 
 ## <a name="desktop-background-picture"></a>Bild av skrivbordsbakgrund
-Du kan anpassa skrivbordsbakgrunden för Microsoft Managed Desktop-enheter i din organisation. Du kan använda detta för att tillämpa ett företags varumärke eller marknadsföringsmaterial. 
+Du kan anpassa skrivbordsbakgrunden för Microsoft Hanterat skrivbord enheter i organisationen. Du kan använda detta för att tillämpa ett företags varumärke eller marknadsföringsmaterial. 
 
 ### <a name="requirements"></a>Krav
 
@@ -34,13 +34,13 @@ Dessa krav måste vara uppfyllda för en bakgrundsbild på skrivbordet:
 
 **Så här lägger du till en egen bakgrundsbild på skrivbordet**
 1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och gå till **menyn** Enheter
-2. Titta efter avsnittet Microsoft Managed Desktop och välj **Inställningar**.
-3. Välj  Skrivbordsbakgrundsbild **i arbetsytan Inställningar.** 
+2. Titta efter avsnittet Microsoft Hanterat skrivbord, välj **Inställningar**.
+3. I **Inställningar** väljer du **Skrivbordsbakgrundsbild**. 
 4. Ange platsen för den bild du vill använda. 
 5. Välj **Fasdistribution** för att spara ändringarna och distribuera dem till testgruppen. 
 
 ## <a name="browser-start-pages"></a>Startsidor för webbläsare
-Webbläsaren startar sidor öppna på enskilda flikar när användarna startar Microsoft Edge. Om du vill göra det enkelt för användarna att öppna en uppsättning webbplatser som de använder ofta kan du lägga till en startsida för webbläsaren för varje webbplats. 
+Webbläsaren startar sidor öppna på enskilda flikar när användarna börjar Microsoft Edge. Om du vill göra det enkelt för användarna att öppna en uppsättning webbplatser som de använder ofta kan du lägga till en startsida för webbläsaren för varje webbplats. 
 
 ### <a name="requirements"></a>Krav
 
@@ -50,8 +50,8 @@ Du måste ange det fullständigt kvalificerade domännamnet (FQDN) för intranä
 
 **Så här lägger du till en startsida för en webbläsare**
 1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och gå till **menyn** Enheter
-2. Titta efter avsnittet Microsoft Managed Desktop och välj **Inställningar**.
-3. Välj **Webbläsarens** startsidor **i arbetsytan Inställningar.** 
+2. Titta efter avsnittet Microsoft Hanterat skrivbord, välj **Inställningar**.
+3. I **Inställningar** väljer du **Webbläsarens startsidor**. 
 4. Välj **Lägg till startsida.**
 5. På **startsidan för Lägg till webbläsare** anger du URL-adressen för den webbplats du vill använda och väljer sedan Lägg till **startsida.** 
 6. Upprepa steg 1–5 för ytterligare startsidor i webbläsaren. 
@@ -59,7 +59,7 @@ Du måste ange det fullständigt kvalificerade domännamnet (FQDN) för intranä
 
 ## <a name="enterprise-mode-site-list-location"></a>Plats för webbplatslista i företagsläge
 
-Om du har specifika webbplatser och program som du vet har kompatibilitetsproblem med Microsoft Edge kan du använda webbplatslistan i Företagsläge så att webbplatserna öppnas automatiskt med hjälp av Internet Explorer 11. Om du vet att dina intranätplatser inte fungerar som de ska med Microsoft Edge kan du ställa in så att alla intranätwebbplatser öppnas med hjälp av Internet Explorer 11 automatiskt. Om du använder företagsläget kan du fortsätta att använda Microsoft Edge som standardwebbläsare, samtidigt som du ser till att dina program fortsätter att arbeta med Internet Explorer 11. Mer information om webbplatslistor för företagsläge finns i [Webbplatslistor för företagsläge och Företagsläge.](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode) 
+Om du har specifika webbplatser och program som du vet har kompatibilitetsproblem med Microsoft Edge kan du använda webbplatslistan i Företagsläge så att webbplatserna öppnas automatiskt med hjälp av Internet Explorer 11. Om du vet att intranätwebbplatserna inte fungerar korrekt med Microsoft Edge kan du ange att alla intranätwebbplatser ska öppnas med hjälp av Internet Explorer 11 automatiskt. Om du använder Företagsläge kan du fortsätta att använda Microsoft Edge som standardwebbläsare, samtidigt som du ser till att dina program fortsätter att arbeta med Internet Explorer 11. Mer information om webbplatslistor för företagsläge finns i [Webbplatslistor för företagsläge och Företagsläge.](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode) 
 
 Du kan ange https:// plats eller plats för en intern delning där du har lagrat webbplatslistan i företagsläget. 
 
@@ -73,7 +73,7 @@ De här kraven måste uppfyllas för listfilen för företagswebbplatser:
 ### <a name="best-practices"></a>Metodtips
 
 Dessa metodtips erbjuds för att hjälpa kunder fatta beslut om att modernisera IT-infrastrukturen:
-- **Välj ett begränsat antal webbplatser** – Microsoft Managed Desktop använder Microsoft Edge som standardwebbläsare för att förbättra organisationens säkerhet och användbarhet för användarna. De flesta webbplatser i den här listan gäller äldre webbappar som behöver en äldre version av en webbläsare som inte innehåller lika många säkerhetsfunktioner. 
+- **Välj ett begränsat antal webbplatser** – Microsoft Hanterat skrivbord använder Microsoft Edge som standardwebbläsare för att förbättra organisationens säkerhet och användbarhet för användarna. De flesta webbplatser i den här listan gäller äldre webbappar som behöver en äldre version av en webbläsare som inte innehåller lika många säkerhetsfunktioner. 
 - **Det kan vara** en alternativ metod – du kan överväga en annan webbplats eller ett annat webbapp som inte kräver en äldre webbläsare. Du kan även uppdatera webbplatsen så att den kan använda nyare webbläsare. Nyare webbläsare använder den senaste tekniken och förbättrar säkerheten.
 
 ### <a name="customize-and-deploy-enterprise-site-mode-list-location"></a>Anpassa och distribuera listplats för webbplatsläge för företag
@@ -81,8 +81,8 @@ Dessa metodtips erbjuds för att hjälpa kunder fatta beslut om att modernisera 
 **Så här lägger du till en plats för en företagswebbplatslista**
 
 1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och gå till **menyn** Enheter
-2. Titta efter avsnittet Microsoft Managed Desktop och välj **Inställningar**.
-3. I **arbetsytan Inställningar** väljer du Plats för **webbplatslista i företagsläge.** 
+2. Titta efter avsnittet Microsoft Hanterat skrivbord, välj **Inställningar**.
+3. I **Inställningar** väljer du Plats **för webbplatslista i företagsläge.** 
 4. Ange webbplatslistans https-plats. 
 5. Välj **Fasdistribution** för att spara ändringarna och distribuera dem till testgruppen.
 
@@ -103,8 +103,8 @@ Ange det fullständigt kvalificerade domännamnet (FQDN) för intranätwebbplats
 **Lägga till en betrodd webbplats**
 
 1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och gå till **menyn** Enheter
-2. Titta efter avsnittet Microsoft Managed Desktop och välj **Inställningar**.
-3. I **arbetsytan** Inställningar väljer du **Betrodda platser** och sedan Lägg till betrodd **webbplats**. 
+2. Titta efter avsnittet Microsoft Hanterat skrivbord, välj **Inställningar**.
+3. I **Inställningar** väljer du **Betrodda platser** och sedan Lägg till **betrodd webbplats**. 
 4. På **Lägg till betrodd** webbplats anger du URL-adressen, väljer en säkerhetszon och väljer sedan Lägg till betrodd **webbplats.** 
 5. Upprepa steg 1–4 för varje betrodd webbplats som du vill lägga till. 
 6. Välj **Fasdistribution** för att spara ändringarna och distribuera dem till testgruppen.
@@ -112,16 +112,16 @@ Ange det fullständigt kvalificerade domännamnet (FQDN) för intranätwebbplats
 **Ta bort en betrodd webbplats**
 
 1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och gå till **menyn** Enheter
-2. Titta efter avsnittet Microsoft Managed Desktop och välj **Inställningar**.
-3. Välj **Betrodda** platser **i arbetsytan Inställningar.** 
+2. Titta efter avsnittet Microsoft Hanterat skrivbord, välj **Inställningar**.
+3. I **Inställningar** väljer du **Betrodda platser**. 
 4. Markera den webbplats du vill ta bort och välj sedan Ta **bort**. 
 5. Upprepa steg 1–4 för varje betrodd webbplats som du vill ta bort. 
 6. Välj **Fasdistribution** för att spara ändringarna och distribuera dem till testgruppen.
 
 ## <a name="proxy"></a>Proxy
-Du kan hantera nätverkets proxyinställningar för din organisation. Lägg till din proxyserver och portnummer och lägg sedan till undantag för din proxywebbplats. Microsoft Managed Desktop innehåller en uppsättning standardundantag för proxy som krävs för att tjänsten ska fungera. Standard undantagslistan kan bara ändras av Microsofts tjänst för hanterad dator.  Mer information finns i [Nätverkskonfiguration för Microsoft Managed Desktop.](../get-ready/network.md) 
+Du kan hantera nätverkets proxyinställningar för din organisation. Lägg till din proxyserver och portnummer och lägg sedan till undantag för din proxywebbplats. Microsoft Hanterat skrivbord innehåller en uppsättning standardproxyundantag som krävs för att tjänsten ska fungera. Standard undantagslistan kan bara ändras av den Microsoft Hanterat skrivbord tjänsten.  Mer information finns i [Nätverkskonfiguration för Microsoft Hanterat skrivbord](../get-ready/network.md). 
 
-Undantagen för proxywebbplatser som du lägger till i Microsoft Managed Desktop-portalen läggs till i standardproxyundantagen som ingår i Microsoft Managed Desktop-tjänsten. 
+Proxywebbplatsundantag som du lägger till Microsoft Hanterat skrivbord-portalen läggs till i standardproxyundantagen som ingår i Microsoft Hanterat skrivbord tjänsten. 
 
 > [!NOTE]
 > Uppdatering av standardlistan över proxyservrar prioriteras alltid före kunddistributioner. Det innebär att den fasade distributionen pausas om det finns en distribution för standardlistan med proxy-undantag.  
@@ -137,8 +137,8 @@ De här kraven måste vara uppfyllda för proxyserver- och proxywebbplatsundanta
 **Lägga till ett enskilt proxywebbplatsantag**
 
 1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) och gå till **menyn** Enheter
-2. Titta efter avsnittet Microsoft Managed Desktop och välj **Inställningar**.
-3. Välj **Proxy** i arbetsytan **Inställningar.** 
+2. Titta efter avsnittet Microsoft Hanterat skrivbord, välj **Inställningar**.
+3. Välj **Inställningar** i **arbetsytan.** 
 4. Ange **adress-** och **portnumret för** proxyservern och välj sedan Lägg **till proxy-undantag**. 
 5. Ange URL-adressen till en giltig http-webbplats och välj sedan **Lägg till proxy-undantag**. 
 6. Upprepa steg 1–5 för varje betrodd webbplats som du vill lägga till. 

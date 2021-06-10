@@ -105,7 +105,7 @@ för den här appen, såvida inte andra termer medföljer de objekten. I så fal
 
     2.  Respektive app store-leverantör och dess dotterbolag är mottagare av dessa villkor som mottagare av dessa villkor, och när du godkänner dessa villkor, har leverantören/appbutiken rätt att direkt tillämpa och förlita sig på alla bestämmelser i dessa villkor som ger dem en förmån eller rättigheter.
 
-9.  **MEDDELANDEN OM VARUMÄRKEN.** Microsoft, Microsoft Defender för Endpoint och Microsoft 365 är registrerade eller varumärken som ägs av andra länder än Microsoft Corporation i USA och/eller andra länder.
+9.  **MEDDELANDEN OM VARUMÄRKEN.** Microsoft, Microsoft Defender för Endpoint och Microsoft 365 är registrerade eller varumärken som tillhör allmän lagstiftning som tillhör Microsoft Corporation i USA och/eller andra länder.
 
 10. **ENTIRE AGREEMENT.** Det här avtalet och villkoren för tillägg, uppdateringar, Internetbaserade tjänster och supporttjänster som du använder är det avtalet som gäller hela avtalet för program- och supporttjänsterna.
 

@@ -45,7 +45,7 @@ Dessa program kan öka risken för att nätverket smittas med skadlig programvar
 
 Defender för Endpoint i Linux kan identifiera och rapportera PUA-filer. När PUA-filer konfigureras i blockeringsläge flyttas de till karantän.
 
-När en PUA upptäcks på en slutpunkt behåller Defender för Endpoint på Linux ett register över smittan i hothistoriken. Historiken kan visualiseras från Microsoft Defender Säkerhetscenter-portalen eller `mdatp` kommandoradsverktyget. Hotnamnet innehåller ordet "Program".
+När en PUA upptäcks på en slutpunkt behåller Defender för Endpoint på Linux ett register över smittan i hothistoriken. Historiken kan visualiseras från Microsoft Defender Säkerhetscenter- eller `mdatp` kommandoradsverktyget. Hotnamnet innehåller ordet "Program".
 
 ## <a name="configure-pua-protection"></a>Konfigurera PUA-skydd
 
@@ -53,7 +53,7 @@ PUA-skydd i Defender för Slutpunkt i Linux kan konfigureras på något av följ
 
 - **Av**: PUA-skydd är inaktiverat.
 - **Granskning:** PUA-filer rapporteras i produktloggarna, men inte i Microsoft Defender Säkerhetscenter. Ingen information om smittan lagras i hothistoriken och ingen åtgärd vidtas av produkten.
-- **Blockering:** PUA-filer rapporteras i produktloggarna och i Microsoft Defender Säkerhetscenter. En inspelning av smittan lagras i produktens hothistorik och åtgärder vidtas.
+- **Block:** PUA-filer rapporteras i produktloggarna och i Microsoft Defender Säkerhetscenter. En inspelning av smittan lagras i produktens hothistorik och åtgärder vidtas.
 
 >[!WARNING]
 >Som standard konfigureras PUA-skydd i **granskningsläge.**

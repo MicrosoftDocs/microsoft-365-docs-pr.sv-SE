@@ -41,7 +41,7 @@ I slutpunktsskyddslösningar är en falsk positivhet en enhet, till exempel en f
 
 ![Definition av falska positiva och negativa tal i Defender för Slutpunkt](images/false-positives-overview.png)
 
-Som tur är går det att vidta åtgärder för att åtgärda och minska den här typen av problem. Om du ser falska positiva/negativa resultat i Microsoft [Defender](../defender/microsoft-365-security-center-mde.md)Säkerhetscenter kan dina säkerhetsåtgärder vidta åtgärder för att åtgärda dem på följande sätt:
+Som tur är går det att vidta åtgärder för att åtgärda och minska den här typen av problem. Om du ser falska positiva/negativa tal i [Microsoft Defender Säkerhetscenter](../defender/microsoft-365-security-center-mde.md)kan dina säkerhetsåtgärder vidta åtgärder för att åtgärda dem på följande sätt:
 
 1.  [Granska och klassificera aviseringar](#part-1-review-and-classify-alerts) 
 2.  [Granska åtgärder som har vidtagits](#part-2-review-remediation-actions)
@@ -74,7 +74,7 @@ Innan du klassificerar eller ignorerar en avisering måste du avgöra om aviseri
 
 4. Beroende på aviseringsstatusen följer du stegen som beskrivs i följande tabell: 
 
-| Aviseringsstatus | Vad kan jag göra? |
+| Aviseringsstatus | Lämplig åtgärd |
 |:---|:---|
 | Aviseringen är korrekt | Tilldela aviseringen och undersök [den](investigate-alerts.md) sedan ytterligare. |
 | Aviseringen är en falsk positiv | 1. [Klassificera aviseringen](#classify-an-alert) som en falsk positivhet. <br/>2. [Ignorera aviseringen](#suppress-an-alert). <br/> 3. [Skapa en indikator för](#indicators-for-microsoft-defender-for-endpoint) Microsoft Defender för Endpoint. <br/> 4. [Skicka en fil till Microsoft för analys](#part-4-submit-a-file-for-analysis). |
@@ -114,7 +114,7 @@ Om du har aviseringar som antingen är falska positiva eller som är sanna posit
 
 ## <a name="part-2-review-remediation-actions"></a>Del 2: Granska åtgärder
 
-[Åtgärdsåtgärder, som](manage-auto-investigation.md#remediation-actions)att skicka en fil till karantän eller stoppa en process, vidtas på enheter (till exempel filer) som identifieras som hot. Flera typer av åtgärder sker automatiskt genom automatiserad undersökning och Microsoft Defender Antivirus:   
+[Åtgärdsåtgärder, som](manage-auto-investigation.md#remediation-actions)att skicka en fil till karantän eller stoppa en process, vidtas på enheter (till exempel filer) som identifieras som hot. Flera typer av åtgärdsåtgärder sker automatiskt genom automatiserad undersökning och Microsoft Defender Antivirus:   
 - Sätt en fil i karantän
 - Ta bort en registernyckel
 - "Kill a process"
@@ -203,38 +203,38 @@ Så här definierar du undantag i Microsoft Defender för Slutpunkt:
 - [Skapa "tillåt"-indikatorer för Microsoft Defender för Endpoint](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> Undantag från Microsoft Defender Antivirus gäller endast för antivirusskydd, inte för andra Microsoft Defender-funktioner för slutpunkter. Om du vill utesluta filer allmänt använder du undantag för Microsoft Defender Antivirus och [anpassade indikatorer](/microsoft-365/security/defender-endpoint/manage-indicators) för Microsoft Defender för Slutpunkt.
+> Microsoft Defender Antivirus gäller endast för antivirusskydd, inte för andra Microsoft Defender-funktioner för slutpunkt. Om du vill utesluta filer allmänt använder du undantag för Microsoft Defender Antivirus och [anpassade indikatorer](/microsoft-365/security/defender-endpoint/manage-indicators) för Microsoft Defender för slutpunkt.
 
 Procedurerna i det här avsnittet beskriver hur du definierar undantag och indikatorer.
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>Undantag för Microsoft Defender Antivirus
 
-I allmänhet behöver du inte definiera undantag för Microsoft Defender Antivirus. Se till att du definierar undantag sparsamt och att du endast tar med filer, mappar, processer och process öppna filer som resulterar i falska positiva resultat. Kontrollera även regelbundet att du har definierat undantag. Vi rekommenderar att du [använder Microsoft Endpoint Manager](/mem/endpoint-manager-overview) för att definiera eller redigera dina undantag för antivirus. Du kan emellertid använda andra metoder, till exempel [Grupprincip](/azure/active-directory-domain-services/manage-group-policy) (se [Hantera Microsoft Defender för slutpunkt).](manage-atp-post-migration.md)
+I allmänhet behöver du inte definiera undantag för Microsoft Defender Antivirus. Se till att du definierar undantag sparsamt och att du endast tar med filer, mappar, processer och process öppna filer som resulterar i falska positiva resultat. Kontrollera även regelbundet att du har definierat undantag. Vi rekommenderar att [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) du använder för att definiera eller redigera dina undantag för antivirus. Du kan emellertid använda andra metoder, till exempel [Grupprincip](/azure/active-directory-domain-services/manage-group-policy) (se [Hantera Microsoft Defender för slutpunkt).](manage-atp-post-migration.md)
 
 > [!TIP]
-> Behöver du hjälp med undantag för antivirusprogram? Se [Konfigurera och validera undantag för Microsoft Defender Antivirus-genomsökningar.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)
+> Behöver du hjälp med undantag för antivirusprogram? Se [Konfigurera och validera undantag för Microsoft Defender Antivirus genomsökningar](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
 
 #### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>Använda Microsoft Endpoint Manager för att hantera undantag för antivirus (för befintliga principer)
 
-1. Gå till administrationscentret för Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) och logga in.
+1. Gå till Microsoft Endpoint Manager ( ) [https://endpoint.microsoft.com](https://endpoint.microsoft.com) och logga in.
 
 2. Välj **Endpoint Security**  >  **Antivirus** och välj sedan en befintlig princip. (Om du inte har en befintlig princip, eller om du vill skapa en ny princip, kan du gå vidare [till nästa procedur](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
 
 3. Välj **Egenskaper** och bredvid **Konfigurationsinställningar** väljer du **Redigera**.
 
-4. Visa **undantag för Microsoft Defender Antivirus** och ange sedan dina undantag.
+4. Expandera **Microsoft Defender Antivirus undantag och** ange sedan dina undantag.
 
 5. Välj **Granska + spara** och välj sedan **Spara.**
 
 #### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>Använda Microsoft Endpoint Manager för att skapa en ny antivirusprincip med undantag
 
-1. Gå till administrationscentret för Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) och logga in.
+1. Gå till Microsoft Endpoint Manager ( ) [https://endpoint.microsoft.com](https://endpoint.microsoft.com) och logga in.
 
 2. Välj **Endpoint Security**  >  **Antivirus**+ Create  >  **Policy**. 
 
-3. Välj en plattform (till exempel **Windows 10 och senare**, **macOS** eller **Windows 10 och Windows Server).**
+3. Välj en plattform (till **exempel Windows 10 eller senare**, **macOS** eller **Windows 10 och Windows Server**).
 
-4. Under **Profil** väljer du **Microsoft Defender Antivirus-undantag** och sedan **Skapa**.
+4. Under **Profil** väljer **du Microsoft Defender Antivirus undantag** och väljer sedan **Skapa**.
 
 5. Ange ett namn och en beskrivning för profilen och välj sedan **Nästa**.
 
@@ -242,7 +242,7 @@ I allmänhet behöver du inte definiera undantag för Microsoft Defender Antivir
 
 7. Om du **använder omfattningstaggar** i organisationen på fliken Omfattningstaggar anger du omfattningstaggar för principen du skapar. (Se [Omfattningstaggar](/mem/intune/fundamentals/scope-tags).)
 
-8. På **fliken Tilldelningar** anger du de användare och grupper som principen ska tillämpas på och väljer sedan **Nästa.** (Om du behöver hjälp med tilldelningar kan du gå [till Tilldela användar- och enhetsprofiler i Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+8. På **fliken Tilldelningar** anger du de användare och grupper som principen ska tillämpas på och väljer sedan **Nästa.** (Om du behöver hjälp med uppgifter kan du gå [till Tilldela användar- och enhetsprofiler i Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
 9. Granska **inställningarna på fliken** Granska + skapa och välj sedan **Skapa**.
 
@@ -250,7 +250,7 @@ I allmänhet behöver du inte definiera undantag för Microsoft Defender Antivir
 
 [Indikatorer](/microsoft-365/security/defender-endpoint/manage-indicators) (särskilt indikatorer för kompromettering och IOC) gör det möjligt för teamet med säkerhetsåtgärder att definiera identifiering, skydd och undantag från enheter. Du kan till exempel ange att vissa filer ska utelämnas från genomsökningar och åtgärdsåtgärder i Microsoft Defender för Slutpunkt. Indikatorer kan också användas för att generera aviseringar för vissa filer, IP-adresser eller URL-adresser.
 
-Om du vill ange enheter som undantag för Microsoft Defender för Endpoint skapar du "tillåt"-indikatorer för de enheterna. Sådana "tillåt"-indikatorer i Microsoft [](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)Defender för Slutpunkt gäller för nästa generations [skydd,](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)identifiering och svar av slutpunkter och automatiserad undersökning [& åtgärd](/microsoft-365/security/defender-endpoint/automated-investigations).
+Om du vill ange enheter som undantag för Microsoft Defender för Endpoint skapar du "tillåt"-indikatorer för de enheterna. Sådana ["tillåt"-indikatorer](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)i Microsoft Defender för Endpoint gäller för nästa generations skydd , [identifiering och åtgärd på slutpunkt](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)och [automatiserad undersökning & åtgärd](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 "Tillåt"-indikatorer kan skapas för:
 
@@ -277,7 +277,7 @@ Om du skapar en "tillåt"-indikator för en [IP-adress, URL-adress](/microsoft-3
 Innan du skapar indikatorer för IP-adresser, URL:er eller domäner bör du kontrollera att följande krav uppfylls:
 - Nätverksskydd i Defender för Slutpunkt är aktiverat i blockläge (se [Aktivera nätverksskydd](/microsoft-365/security/defender-endpoint/enable-network-protection))
 - Antimalware client version is 4.18.1906.x or later 
-- Enheter kör Windows 10, version 1709 eller senare 
+- Enheter med Windows 10, version 1709 eller senare 
 
 Anpassade nätverksindikatorer är aktiverat i Microsoft Defender Säkerhetscenter (se [Avancerade funktioner)](/microsoft-365/security/defender-endpoint/advanced-features)   
 
@@ -304,20 +304,20 @@ Om du har en fil som antingen identifierats felaktigt som skadlig eller har miss
 
 1. Läs riktlinjerna här: [Skicka filer för analys](/windows/security/threat-protection/intelligence/submission-guide).
 
-2. Besök webbplatsen för inskicking av Microsoft Security Intelligence ( [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) ) och skicka in dina filer.
+2. Besök webbplatsen Microsoft Säkerhetsinsikter över [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) inskickade filer ( ) och skicka in dina filer.
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>Skicka en fillös identifiering för analys
 
-Om något identifierades som skadlig programvara baserat på beteende och du inte har en fil, kan du skicka filen `Mpsupport.cab` för analys. Du kan hämta *.cab-filen* med hjälp av verktyget Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) i Windows 10.
+Om något identifierades som skadlig programvara baserat på beteende och du inte har en fil, kan du skicka filen `Mpsupport.cab` för analys. Du kan hämta *.cab* filen med hjälp av verktyget Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) på Windows 10.
 
 1.  Gå till ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` och kör sedan som `MpCmdRun.exe` administratör.
 
 2.  Skriv `mpcmdrun.exe -GetFiles` och tryck sedan på **Retur.**
-   En .cab-fil skapas som innehåller olika diagnostikloggar. Platsen för filen anges i utdata från kommandotolken. Platsen är som standard `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
+   En .cab skapas som innehåller olika diagnostikloggar. Platsen för filen anges i utdata från kommandotolken. Platsen är som standard `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
 3.  Läs riktlinjerna här: [Skicka filer för analys](/windows/security/threat-protection/intelligence/submission-guide).
 
-4.  Gå till webbplatsen för inskickade Microsoft Security Intelligence [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) () och skicka in .cab-filer.
+4.  Gå till Microsoft Säkerhetsinsikter webbplats för inskickning ( [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) ) och skicka dina .cab filer.
 
 ### <a name="what-happens-after-a-file-is-submitted"></a>Vad händer när en fil har skickats?
 
@@ -329,7 +329,7 @@ För inlämningar som inte redan har bearbetats prioriteras de för analys enlig
 - Autentiserade kunder, särskilt företagskunder med giltiga [SAID (Software Assurance-ID)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx)får högre prioritet.
 - Inskickade som har hög prioritet av SAID-innehavare ges omedelbar uppmärksamhet.
 
-Du kan söka efter uppdateringar om din inskickning genom att logga in på webbplatsen [för inskickade Microsoft Security Intelligence.](https://www.microsoft.com/wdsi/filesubmission) 
+Om du vill söka efter uppdateringar om din inskickning loggar du in Microsoft Säkerhetsinsikter [webbplatsen för inskicking.](https://www.microsoft.com/wdsi/filesubmission) 
 
 > [!TIP]
 > Mer information finns i [Skicka filer för analys.](/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions)
@@ -338,22 +338,22 @@ Du kan söka efter uppdateringar om din inskickning genom att logga in på webbp
 
 Microsoft Defender för Slutpunkt har ett brett utbud av alternativ, bland annat möjligheten att finjustera inställningar för olika funktioner. Om du får flera falska positiva resultat bör du granska organisationens inställningar för skydd mot hot. Du kan behöva göra några justeringar för att:
 
-- [Molnbaserat skydd](#cloud-delivered-protection)
+- [Moln levererat skydd](#cloud-delivered-protection)
 - [Åtgärd för potentiellt oönskade program](#remediation-for-potentially-unwanted-applications)
 - [Automatiserad undersökning och åtgärder](#automated-investigation-and-remediation)
 
 ### <a name="cloud-delivered-protection"></a>Molnbaserat skydd
 
-Kontrollera din moln levererat skyddsnivå för Microsoft Defender Antivirus. Som standard har moln levererat skydd inställningen **Ej konfigurerad,** vilket motsvarar en normal skyddsnivå för de flesta organisationer. Om ditt moln levererat skydd är inställt på **Hög,** Hög **+** eller Nolldögont kan du uppleva ett högre antal falska positiva resultat. 
+Kontrollera att din moln levererat skyddsnivå för Microsoft Defender Antivirus. Som standard har moln levererat skydd inställningen **Ej konfigurerad,** vilket motsvarar en normal skyddsnivå för de flesta organisationer. Om ditt moln levererat skydd är inställt på **Hög,** Hög **+** eller Nolldögont kan du uppleva ett högre antal falska positiva resultat. 
 
 > [!TIP]
 > Mer information om hur du konfigurerar ditt moln levererat skydd finns [i Ange skyddsnivån för moln levererat.](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
 
-Vi rekommenderar att du [använder Microsoft Endpoint Manager](/mem/endpoint-manager-overview) för att redigera eller ange skyddsinställningar som levereras i molnet. Du kan emellertid använda andra metoder, till exempel [Grupprincip](/azure/active-directory-domain-services/manage-group-policy) (se [Hantera Microsoft Defender för slutpunkt).](manage-atp-post-migration.md)
+Vi rekommenderar att [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) du använder för att redigera eller ange skyddsinställningar som levereras i molnet. Du kan emellertid använda andra metoder, till exempel [Grupprincip](/azure/active-directory-domain-services/manage-group-policy) (se [Hantera Microsoft Defender för slutpunkt).](manage-atp-post-migration.md)
 
-#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Använd Microsoft Endpoint Manager för att granska och redigera skyddsinställningar som levereras till molnet (för befintliga principer)
+#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Använda Microsoft Endpoint Manager att granska och redigera skyddsinställningar som levereras till molnet (för befintliga principer)
 
-1. Gå till administrationscentret för Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) och logga in.
+1. Gå till Microsoft Endpoint Manager ( ) [https://endpoint.microsoft.com](https://endpoint.microsoft.com) och logga in.
 
 2. Välj **Endpoint Security**  >  **Antivirus** och välj sedan en befintlig princip. (Om du inte har en befintlig princip, eller om du vill skapa en ny princip, kan du gå vidare [till nästa procedur](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 
@@ -363,23 +363,23 @@ Vi rekommenderar att du [använder Microsoft Endpoint Manager](/mem/endpoint-man
 
 5. Välj **Granska + spara** och sedan **Spara.**
 
-#### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>Använd Microsoft Endpoint Manager för att ange skyddsinställningar som levereras i molnet (för en ny princip)
+#### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>Använd Microsoft Endpoint Manager för att ange inställningar för moln levererat skydd (för en ny princip)
 
-1. Gå till administrationscentret för Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) och logga in.
+1. Gå till Microsoft Endpoint Manager ( ) [https://endpoint.microsoft.com](https://endpoint.microsoft.com) och logga in.
 
 2. Välj **Endpoint Security**  >  **Antivirus**+ Create  >  **policy**.
 
-3. För **Plattform** väljer du ett alternativ och sedan För **Profile** väljer du **Antivirus** eller Microsoft Defender Antivirus (det **specifika** alternativet beror på vad du valde för **plattform**.) Välj sedan **Skapa**.
+3. För **Plattform** väljer du ett alternativ och sedan För **Profil** väljer du **Antivirus** **eller Microsoft Defender Antivirus** (det specifika alternativet beror på vad du valde för **plattform**.) Välj sedan **Skapa**.
 
 4. På **fliken Grunder** anger du ett namn och en beskrivning för principen. Välj sedan **Nästa**.
 
 5. På fliken **Konfigurationsinställningar** **expanderar du Molnskydd** och anger följande inställningar:
    - Ställ **in Aktivera moln levererat skydd till** **Ja.**
-   - Ställ **in skyddsnivån Moln levererat till** Ej **konfigurerad**. (Den här nivån ger en stark skyddsnivå som standard, samtidigt som du minskar risken för falska positiva resultat.)
+   - Ställ in **Skyddsnivå som levereras i molnet** på **Inte konfigurerat**. (Den här nivån ger en stark skyddsnivå som standard, samtidigt som du minskar risken för falska positiva resultat.)
 
 6. Om du **använder omfattningstaggar** i organisationen på fliken Omfattningstaggar anger du omfattningstaggar för principen. (Se [Omfattningstaggar](/mem/intune/fundamentals/scope-tags).)
 
-7. På **fliken Tilldelningar** anger du de användare och grupper som principen ska tillämpas på och väljer sedan **Nästa.** (Om du behöver hjälp med tilldelningar kan du gå [till Tilldela användar- och enhetsprofiler i Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+7. På **fliken Tilldelningar** anger du de användare och grupper som principen ska tillämpas på och väljer sedan **Nästa.** (Om du behöver hjälp med uppgifter kan du gå [till Tilldela användar- och enhetsprofiler i Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
 8. Granska **inställningarna på fliken** Granska + skapa och välj sedan **Skapa**.  
 
@@ -390,41 +390,41 @@ Potentiellt oönskade program (PUA) är en kategori med programvara som kan gör
 > [!TIP]
 > Mer information om PUA finns i Identifiera [och blockera potentiellt oönskade program.](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
  
-Beroende på vilka appar din organisation använder kan det hända att du får falska positiva resultat som ett resultat av inställningarna för PUA-skydd. Om det behövs kan du köra PUA-skydd i granskningsläge ett tag eller använda PUA-skydd på en delmängd enheter i organisationen. PUA-skydd kan konfigureras för webbläsaren Microsoft Edge och för Microsoft Defender Antivirus.
+Beroende på vilka appar din organisation använder kan det hända att du får falska positiva resultat som ett resultat av inställningarna för PUA-skydd. Om det behövs kan du köra PUA-skydd i granskningsläge ett tag eller använda PUA-skydd på en delmängd enheter i organisationen. PUA-skydd kan konfigureras för Microsoft Edge och för Microsoft Defender Antivirus.
 
-Vi rekommenderar att du [använder Microsoft Endpoint Manager för](/mem/endpoint-manager-overview) att redigera eller ange PUA-skyddsinställningar. Du kan emellertid använda andra metoder, till exempel [Grupprincip](/azure/active-directory-domain-services/manage-group-policy) (se [Hantera Microsoft Defender för slutpunkt).](manage-atp-post-migration.md)
+Vi rekommenderar att [Microsoft Endpoint Manager kan](/mem/endpoint-manager-overview) redigera eller ange PUA-skyddsinställningar. Du kan emellertid använda andra metoder, till exempel [Grupprincip](/azure/active-directory-domain-services/manage-group-policy) (se [Hantera Microsoft Defender för slutpunkt).](manage-atp-post-migration.md)
 
-#### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Använda Microsoft Endpoint Manager för att redigera PUA-skydd (för befintliga konfigurationsprofiler)
+#### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Använda Microsoft Endpoint Manager redigera PUA-skydd (för befintliga konfigurationsprofiler)
 
-1. Gå till administrationscentret för Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) och logga in.
+1. Gå till Microsoft Endpoint Manager ( ) [https://endpoint.microsoft.com](https://endpoint.microsoft.com) och logga in.
 
 2. Välj   >  **Konfigurationsprofiler för** enheter och välj sedan en befintlig princip. (Om du inte har en befintlig princip, eller om du vill skapa en ny princip, kan du gå [vidare till nästa procedur](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
 
 3. Under **Hantera** väljer du **Egenskaper** och bredvid Konfigurationsinställningar **väljer** du sedan **Redigera**.
 
-4. På fliken **Konfigurationsinställningar** rullar du ned och expanderar **Microsoft Defender Antivirus.**
+4. På fliken **Konfigurationsinställningar** rullar du nedåt och expanderar **Microsoft Defender Antivirus**.
 
 5. Ange **Granska för Identifiera potentiellt oönskade** **program.** (Du kan inaktivera det, men med granskningsläget kan du se identifieringar.)
 
 6. Välj **Granska + spara** och välj sedan **Spara.**
 
-#### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>Använd Microsoft Endpoint Manager för att ange PUA-skydd (för en ny konfigurationsprofil)
+#### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>Använd Microsoft Endpoint Manager att ange PUA-skydd (för en ny konfigurationsprofil)
 
-1. Gå till administrationscentret för Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) och logga in.
+1. Gå till Microsoft Endpoint Manager ( ) [https://endpoint.microsoft.com](https://endpoint.microsoft.com) och logga in.
 
 2. Välj   >  **Konfigurationsprofiler för enheter**+ Skapa  >  **profil**.
 
-3. För plattformen **väljer** du **Windows 10 och senare** och för Profil **väljer** du **Enhetsbegränsningar**.
+3. För plattformen **väljer** du **Windows 10 senare och** i Profil **väljer** du **Enhetsbegränsningar**.
 
 4. På fliken **Grunder anger** du ett namn och en beskrivning för principen. Välj sedan **Nästa**.
 
-5. På fliken **Konfigurationsinställningar** rullar du ned och expanderar **Microsoft Defender Antivirus.**
+5. På fliken **Konfigurationsinställningar** rullar du nedåt och expanderar **Microsoft Defender Antivirus**.
 
 6. Ange **Granska för Identifiera potentiellt oönskade** program och välj sedan **Nästa.**  (Du kan inaktivera PUA-skydd, men med granskningsläget kan du se identifieringar.)
 
-7. På **fliken Tilldelningar** anger du de användare och grupper som principen ska tillämpas på och väljer sedan **Nästa.** (Om du behöver hjälp med tilldelningar kan du gå [till Tilldela användar- och enhetsprofiler i Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+7. På **fliken Tilldelningar** anger du de användare och grupper som principen ska tillämpas på och väljer sedan **Nästa.** (Om du behöver hjälp med uppgifter kan du gå [till Tilldela användar- och enhetsprofiler i Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
-8. På fliken **Tillämplighetsregler** anger du de OS-utgåvor eller versioner som ska ingå eller exkluderas från principen. Du kan till exempel ange att principen ska tillämpas på alla enheter vissa versioner av Windows 10. Välj sedan **Nästa**.
+8. På fliken **Tillämplighetsregler** anger du de OS-utgåvor eller versioner som ska ingå eller exkluderas från principen. Du kan till exempel ange att principen ska tillämpas på alla enheter vissa utgåvor av Windows 10. Välj sedan **Nästa**.
 
 9. Granska **inställningarna på fliken** Granska + skapa och välj sedan **Skapa**.
 

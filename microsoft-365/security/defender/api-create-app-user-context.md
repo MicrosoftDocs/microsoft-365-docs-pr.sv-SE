@@ -1,6 +1,6 @@
 ---
-title: Skapa en app för åtkomst till Microsoft 365 Defender-API:er för en användares räkning
-description: Lär dig hur du får tillgång till Microsoft 365 Defender-API:er för en användares räkning.
+title: Skapa en app för att Microsoft 365 Defender-API:er för en användares räkning
+description: Lär dig hur du Microsoft 365 Defender-API:er åt en användare.
 keywords: åtkomst, på uppdrag av användare, api, program, användare, åtkomsttoken, token,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51076705"
 ---
-# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Skapa en app för åtkomst till Microsoft 365 Defender-API:er för en användares räkning
+# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Skapa en app för att Microsoft 365 Defender-API:er för en användares räkning
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,24 +40,24 @@ ms.locfileid: "51076705"
 
 På den här sidan beskrivs hur du skapar ett program för att få programbehörighet till Microsoft 365 Defender för en enskild användare.
 
-Om du behöver programåtkomst till Microsoft 365 Defender utan en definierad användare (om du till exempel skriver en bakgrundsapp eller bakgrund), se Skapa en app för att komma åt [Microsoft 365 Defender](api-create-app-web.md)utan en användare. Om du behöver ge åtkomst för flera klientorganisationar – till exempel om du arbetar i en stor organisation eller en grupp kunder – kan du gå till Skapa ett program med partneråtkomst till [Microsoft 365 Defender-API:er.](api-partner-access.md) Om du är osäker på vilken typ av åtkomst du behöver kan du gå till [Komma igång.](api-access.md)
+Om du behöver programåtkomst till Microsoft 365 Defender utan en definierad användare (om du till exempel skriver en bakgrundsapp eller ett bakgrundsprogram) kan du gå till Skapa en app för att komma åt Microsoft 365 Defender utan en [användare.](api-create-app-web.md) Om du behöver ge åtkomst för flera klientorganisationar – till exempel om du arbetar i en stor organisation eller en grupp kunder – kan du gå till Skapa en app med partneråtkomst till [Microsoft 365 Defender-API:er.](api-partner-access.md) Om du är osäker på vilken typ av åtkomst du behöver kan du gå till [Komma igång.](api-access.md)
 
-Microsoft 365 Defender visar mycket av sina data och åtgärder via en uppsättning programmässiga API:er. De här API:erna hjälper dig att automatisera arbetsflöden och utnyttja funktionerna i Microsoft 365 Defender. Den här API-åtkomsten kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 Auktoriseringskodflöde](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. De här API:erna hjälper dig att automatisera arbetsflöden och Microsoft 365 av Defenders funktioner. Den här API-åtkomsten kräver OAuth2.0-autentisering. Mer information finns i [OAuth 2.0 auktoriseringskod för Flow.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 I allmänhet måste du vidta följande steg för att använda följande API:er:
 
-- Skapa ett Azure Active Directory-program (Azure AD).
+- Skapa ett Azure Active Directory (Azure AD).
 - Hämta en åtkomsttoken med det här programmet.
-- Använd tokenet för att få åtkomst till Microsoft 365 Defender API.
+- Använd tokenet för att komma Microsoft 365 Defender API.
 
 I den här artikeln förklaras hur du:
 
 - Skapa ett Azure AD-program
-- Hämta en åtkomsttoken till Microsoft 365 Defender
+- Hämta en åtkomsttoken för Microsoft 365 Defender
 - Verifiera token
 
 > [!NOTE]
-> När du använder Microsoft 365 Defender API åt en användare behöver du rätt programbehörigheter och användarbehörigheter.
+> När du öppnar Microsoft 365 Defender API åt en användare behöver du rätt programbehörigheter och användarbehörigheter.
 
 > [!TIP]
 > Om du har behörighet att utföra en åtgärd i portalen har du behörighet att utföra åtgärden i API:t.
@@ -66,9 +66,9 @@ I den här artikeln förklaras hur du:
 
 1. Logga in i [Azure](https://portal.azure.com) som en användare med **rollen Global** administratör.
 
-2. Gå till **Azure Active Directory-appregistreringar**  >    >  **Ny registrering.**
+2. Gå till **Azure Active Directory**  >  **Appregistreringar**  >  **Ny registrering.**
 
-   ![Bild av Microsoft Azure och navigering till programregistrering](../../media/atp-azure-new-app2.png)
+   ![Bild av Microsoft Azure navigering till registrering av program](../../media/atp-azure-new-app2.png)
 
 3. Välj ett namn för programmet i formuläret och ange följande information för omdirigerings-URI:en och välj sedan **Registrera**.
 
@@ -77,10 +77,10 @@ I den här artikeln förklaras hur du:
    - **Programtyp:** Offentlig klient
    - **Omdirigera URI:**https://portal.azure.com
 
-4. På programsidan väljer du **API-behörigheter** Lägg till  >    >  **behörighetS-API:er** som min organisation använder >, skriver Microsoft Threat Protection och väljer **Microsoft Threat Protection**. Appen kan nu komma åt Microsoft 365 Defender.
+4. På programsidan väljer du **API-behörigheter** Lägg till  >    >  **behörighets-API:er** som min organisation använder >, skriver **Microsoft Threat Protection** och väljer Microsoft Threat Protection . Appen kan nu komma åt Microsoft 365 Defender.
 
    > [!TIP]
-   > *Microsoft Threat Protection* är ett tidigare namn för Microsoft 365 Defender och visas inte i den ursprungliga listan. Du måste börja skriva namnet i textrutan för att det ska visas.
+   > *Microsoft Threat Protection* är ett tidigare namn Microsoft 365 Defender och visas inte i den ursprungliga listan. Du måste börja skriva namnet i textrutan för att det ska visas.
 
    ![Bild av val av API-behörighet](../../media/apis-in-my-org-tab.PNG)
 
@@ -103,7 +103,7 @@ I den här artikeln förklaras hur du:
 
 ## <a name="get-an-access-token"></a>Hämta en åtkomsttoken
 
-Mer information om Azure Active Directory-token finns i [självstudiekursen för Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Mer information om hur Azure Active Directory tokens finns i självstudiekursen [för Azure AD.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="get-an-access-token-using-powershell"></a>Hämta en åtkomsttoken med Hjälp av PowerShell
 
@@ -132,9 +132,9 @@ På följande bild kan du se en avkodad token som köpts från en app, med ```In
 
 ![Bild på tokenverifiering](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Använda token för att få åtkomst till Microsoft 365 Defender API
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>Använda tokenet för att komma åt Microsoft 365 Defender API
 
-1. Välj det API du vill använda (ärenden eller avancerad sökning). Mer information finns i Microsoft [365 Defender-API:er som stöds.](api-supported.md)
+1. Välj det API du vill använda (ärenden eller avancerad sökning). Mer information finns i [Defender-API:Microsoft 365 som stöds.](api-supported.md)
 2. I http-begäran som du ska skicka anger du i autentiseringsrubriken till , Bearer som auktoriseringsschema och token som din `"Bearer" <token>` verifierade token.  
 3. Tokenet förfaller inom en timme. Du kan skicka mer än en begäran under denna tid med samma token.
 
@@ -151,11 +151,11 @@ I följande exempel visas hur du skickar en begäran om att få en lista över i
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Översikt över Microsoft 365 Defender-API:er](api-overview.md)
-- [Åtkomst till Microsoft 365 Defender-API:er](api-access.md)
+- [Microsoft 365 Översikt över Defender-API:er](api-overview.md)
+- [Komma åt Microsoft 365 Defender-API:er](api-access.md)
 - [Skapa en Hello world-app](api-hello-world.md)
-- [Skapa en app för att komma åt Microsoft 365 Defender utan en användare](api-create-app-web.md)
-- [Skapa en app med partner med flera klientorganisationens åtkomst till Microsoft 365 Defender-API:er](api-partner-access.md)
+- [Skapa en app för åtkomst Microsoft 365 Defender utan användare](api-create-app-web.md)
+- [Skapa en app med partner med flera klientorganisationens åtkomst Microsoft 365 Defender-API:er](api-partner-access.md)
 - [Läs mer om API-begränsningar och licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)
 - [OAuth 2.0-auktorisering för användar logga in och API-åtkomst](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

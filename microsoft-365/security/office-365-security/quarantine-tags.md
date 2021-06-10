@@ -75,7 +75,7 @@ Du skapar och tilldelar karantäntaggar i Säkerhets- och efterlevnadscenter ell
 
 2. På sidan **Karantän-taggar** väljer du Lägg **till anpassad tagg**.
 
-3. Guiden **Ny tagg** öppnas. På sidan **Taggnamn** anger du ett kort men unikt namn i **fältet Taggnamn.** Du måste identifiera och välja taggen efter namn i kommande steg. Klicka på Nästa när du är **klar.**
+3. Guiden **Ny tagg** öppnas. På sidan **Taggnamn** anger du ett kort men unikt namn i **fältet Taggnamn.** Du måste identifiera och välja taggen efter namn i kommande steg. Klicka på **Nästa** när du är klar.
 
 4. Välj **något av följande** värden på sidan Åtkomst till mottagarmeddelande:
    - **Ingen åtkomst**
@@ -99,7 +99,7 @@ Du skapar och tilldelar karantäntaggar i Säkerhets- och efterlevnadscenter ell
 
    De här behörigheterna och deras påverkan på meddelanden i karantän och i skräppost-aviseringar för slutanvändare beskrivs i avsnittet Om karantäntaggar [längre](#quarantine-tag-permission-details) fram i den här artikeln.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 5. Granska **inställningarna** på sidan Sammanfattning som visas. Du kan klicka **på Redigera** för varje inställning för att ändra den.
 
@@ -245,7 +245,7 @@ I _skyddsfunktioner_ som stöds och som sätt meddelanden eller filer i karantä
 |[E-postflödesregler](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transportregler) med åtgärden: Leverera meddelandet till **den värdinde karantänen** _(karantän)._|Nej|Ej a|
 |
 
-<sup>\*</sup> Inställningarna för personifieringsskydd är endast tillgängliga i principer mot nätfiske i Microsoft Defender för Office 365.
+<sup>\*</sup>Inställningarna för personifieringsskydd är endast tillgängliga i principer mot nätfiske i Microsoft Defender för Office 365.
 
 Om du är nöjd med slutanvändarbehörigheterna som tillhandahålls av standardtaggarna för karantän behöver du inte göra något. Om du vill anpassa slutanvändarfunktionerna (tillgängliga knappar) i skräppost-aviseringar för slutanvändare eller i meddelandeinformation i karantän kan du tilldela en anpassad karantäntagg.
 
@@ -320,7 +320,7 @@ Med de globala inställningarna för karantäntaggar kan du anpassa skräppost-a
 
 3. I den **utfällfältet** för meddelandeinställningar för karantän som öppnas konfigurerar du några eller alla av följande inställningar:
 
-   - **Använd min företagslogotyp:** Välj det här alternativet om du vill ersätta standardlogotypen som visas längst upp bland skräppost-aviseringarna för slutanvändaren. Innan du gör det måste du följa instruktionerna i [Anpassa Microsoft 365-temat](../../admin/setup/customize-your-organization-theme.md) för din organisation för att ladda upp din anpassade logotyp.
+   - **Använd min företagslogotyp:** Välj det här alternativet om du vill ersätta standardlogotypen som visas längst upp bland skräppost-aviseringarna för slutanvändaren. Innan du gör det måste du följa anvisningarna i Anpassa företagets [Microsoft 365 för att](../../admin/setup/customize-your-organization-theme.md) ladda upp din anpassade logotyp.
 
      Följande skärmbild visar en anpassad logotyp i en skräppost-avisering för slutanvändare:
 
@@ -477,7 +477,7 @@ Om karantäntaggen tilldelar **fullständig åtkomst** (alla tillgängliga behö
 
 #### <a name="allow-sender-permission"></a>Tillåt avsändarbehörighet
 
-Tillåt **avsändarbehörighet** _(PermissionToAllowSender)_ styr åtkomsten till knappen som gör att användare enkelt kan lägga till avsändaren i karantän i sin lista med betrodda avsändare.
+Med **tillåt avsändarbehörighet** _(PermissionToAllowSender)_ styr du åtkomsten till knappen som gör att användare enkelt kan lägga till avsändaren i karantän Valv sina avsändare i Valv avsändare.
 
 - **Information om meddelanden i karantän:**
   - **Tillåt avsändarbehörighet** aktiverad: **Knappen Tillåt avsändare** är tillgänglig.
@@ -485,7 +485,7 @@ Tillåt **avsändarbehörighet** _(PermissionToAllowSender)_ styr åtkomsten til
 
 - **Skräppost-aviseringar för slutanvändare**: Ingen effekt.
 
-Mer information om listan Betrodda avsändare finns i Förhindra att betrodda avsändare [blockeras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) och Använda Exchange Online PowerShell för att konfigurera samlingen [safelist i en postlåda.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
+Mer information om listan Valv-avsändare finns i Förhindra att betrodda avsändare [blockeras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) och Använda Exchange Online PowerShell för att konfigurera samlingen [safelist för en postlåda.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
 
 #### <a name="block-sender-permission"></a>Blockera avsändarbehörighet
 
@@ -499,7 +499,7 @@ Behörigheten **Blockera avsändare** _(PermissionToBlockSender)_ styr åtkomste
   - **Spärra avsändarbehörighet** inaktiverad: **Knappen Spärra** avsändare är inte tillgänglig.
   - **Behörigheten Blockera** avsändare aktiverad: **Knappen Spärra** avsändare är tillgänglig.
 
-Mer information om listan Spärrade avsändare [](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) finns i Spärra meddelanden från någon och Använda Exchange Online PowerShell för att konfigurera samlingen lista över betrodda avsändare [i en postlåda.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
+Mer information om listan Spärrade avsändare [](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) finns i Spärra meddelanden från någon och Använda Exchange Online PowerShell för att konfigurera samlingslistan över betrodda avsändare [i en postlåda.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
 
 #### <a name="delete-permission"></a>Ta bort behörighet
 

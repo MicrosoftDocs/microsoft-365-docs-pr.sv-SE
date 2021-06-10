@@ -1,5 +1,5 @@
 ---
-title: Undersöka skadlig e-post som levererats i Office 365, hitta och undersöka skadlig e-post
+title: Undersöka skadlig e-post som levererats i Office 365, Hitta och undersöka skadlig e-post
 keywords: TIMailData-Inline, Säkerhetshändelse, incident, Microsoft Defender för Endpoint PowerShell, skadlig e-post, komprometterade användare, e-post phish, skadlig programvara för e-post, läsa e-postrubriker, öppna e-posthuvuden, specialåtgärder
 f1.keywords:
 - NOCSH
@@ -27,7 +27,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933379"
 ---
-# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersöka skadlig e-post som levererats i Office 365
+# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersök skadlig e-post som levererats i Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51933379"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Med Microsoft Defender för Office 365](defender-for-office-365.md) kan du undersöka aktiviteter som ut riskerar för personer i organisationen och vidta åtgärder för att skydda organisationen. Om du till exempel ingår i organisationens säkerhetsteam kan du hitta och undersöka misstänkta e-postmeddelanden som levererades. Det kan du göra med [hjälp av Threat Explorer (eller identifiering i realtid).](threat-explorer.md)
+[Med Microsoft Defender Office 365](defender-for-office-365.md) företag kan du undersöka aktiviteter som riskerar att riskera personer i organisationen och vidta åtgärder för att skydda organisationen. Om du till exempel ingår i organisationens säkerhetsteam kan du hitta och undersöka misstänkta e-postmeddelanden som levererades. Det kan du göra med [hjälp av Threat Explorer (eller identifiering i realtid).](threat-explorer.md)
 
 > [!NOTE]
 > Gå till åtgärdsartikeln [här](remediate-malicious-email-delivered-office-365.md).
@@ -49,7 +49,7 @@ Kontrollera att följande krav uppfylls:
 
 - [Granskningsloggning](../../compliance/turn-audit-log-search-on-or-off.md) är aktiverad för organisationen.
 
-- Organisationen har definierat principer för skydd mot skräppost, skadlig programvara, nätfiske och så vidare. Se [Skydda mot hot i Office 365.](protect-against-threats.md)
+- Organisationen har definierat principer för skydd mot skräppost, skadlig programvara, nätfiske och så vidare. Se [Skydda mot hot i Office 365](protect-against-threats.md).
 
 - Du är global administratör eller har antingen säkerhetsadministratören eller rollen Sök och rensning tilldelad i Säkerhets- & Efterlevnadscenter. Se [Behörigheter i Säkerhets- & Säkerhets- och efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md) För vissa åtgärder måste du också ha en ny förhandsgranskningsroll tilldelad.
 
@@ -68,9 +68,9 @@ För att utföra vissa åtgärder, till exempel visa meddelanderubriker eller la
 
 > [!NOTE]
 > *Förhandsversion* är en roll och inte en rollgrupp. Förhandsversionsrollen måste läggas till i en befintlig rollgrupp för Office 365 (vid <https://protection.office.com> ). Gå till **Behörigheter** och redigera sedan en befintlig rollgrupp eller lägg till en ny rollgrupp med rollen **Förhandsgranskning** tilldelad.
-> Rollen Global administratör tilldelas Microsoft 365 admin center ( ) och roller som säkerhetsadministratör och säkerhetsläsare tilldelas i Säkerhets- och & <https://admin.microsoft.com> Efterlevnadscenter ( <https://protection.office.com> ). Mer information om roller och behörigheter finns i [Behörigheter i Säkerhets- och & Efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md)
+> Rollen Global administratör tilldelas rollen Microsoft 365 admin center ( ) och roller som säkerhetsadministratör och säkerhetsläsare tilldelas i Säkerhets- och & <https://admin.microsoft.com> Efterlevnadscenter ( <https://protection.office.com> ). Mer information om roller och behörigheter finns i [Behörigheter i Säkerhets- och & Efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md)
 
-Vi förstår att förhandsgranskning och nedladdning av e-postmeddelanden är känsliga aktiviteter och därför är granskning aktiverad för dessa. När en administratör utför de här aktiviteterna i e-postmeddelanden genereras granskningsloggar för samma sak och kan ses i Efterlevnadscenter för Office 365 & ( <https://protection.office.com> ). Gå till **Sök**  >  **i granskningsloggsökning** och filtrera på administratörsnamnet i avsnittet Sök. De filtrerade resultaten visar aktivitet **AdminMailAccess.** Markera en rad för att visa information i avsnittet **Mer information om** förhandsgranskad eller nedladdad e-post.
+Vi förstår att förhandsgranskning och nedladdning av e-postmeddelanden är känsliga aktiviteter och därför är granskning aktiverad för dessa. När en administratör utför de här aktiviteterna i e-postmeddelanden genereras granskningsloggar för samma och visas i Office 365 Security & Compliance Center ( <https://protection.office.com> ). Gå till **Sök**  >  **i granskningsloggsökning** och filtrera på administratörsnamnet i avsnittet Sök. De filtrerade resultaten visar aktivitet **AdminMailAccess.** Markera en rad för att visa information i avsnittet **Mer information om** förhandsgranskad eller nedladdad e-post.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Hitta misstänkt e-postmeddelande som har levererats
 
@@ -93,7 +93,7 @@ Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel at
 
     Vyn *skadlig* programvara är för närvarande standard och fångar e-postmeddelanden där ett hot mot skadlig programvara identifieras. *Phish-vyn* fungerar på samma sätt för Phish.
 
-    Vyn All *e-post* visar dock alla e-postmeddelanden som tas emot av organisationen, oavsett om hot har upptäckts eller inte. Som du kan föreställa dig är det mycket data, och därför visas en platshållare som frågar om ett filter ska användas i den här vyn. (Den här vyn är bara tillgänglig för Defender för Office 365 P2-kunder.)
+    Vyn All *e-post* visar dock alla e-postmeddelanden som tas emot av organisationen, oavsett om hot har upptäckts eller inte. Som du kan föreställa dig är det mycket data, och därför visas en platshållare som frågar om ett filter ska användas i den här vyn. (Den här vyn är bara tillgänglig för Defender Office 365 P2-kunder.)
 
     *Vyn Inlämnade* uppgifter visar alla e-postmeddelanden som skickats in av administratören eller användaren och som har rapporterats till Microsoft.
 
@@ -122,7 +122,7 @@ Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel at
     - **Levererad** – e-post levererades till en användares inkorg eller mapp och användaren kan komma åt den direkt.
     - **Skräppost** (Levererad till skräppost)– e-postmeddelande skickades till antingen användarens skräppostmapp eller en borttaget borttaget-mapp, och användaren har åtkomst till e-postmeddelanden i mappen Skräppost eller Borttaget.
     - **Blockerad** – alla e-postmeddelanden som har satts i karantän, som misslyckades eller släppts. (Detta är helt otillgängligt för användaren.)
-    - **Ersatt** – alla e-postmeddelanden där skadliga bifogade filer ersätts med TXT-filer som visar att den bifogade filen var skadlig
+    - **Ersatt** – alla e-postmeddelanden där skadliga bifogade filer ersätts .txt filer som uppger att den bifogade filen var skadlig
 
     **Leveransplats:** Filtret Leveransplats är tillgängligt för att hjälpa administratörer att förstå var misstänkt skadlig e-post avslutades och vilka åtgärder som har vidtagits för den. Resulterande data kan exporteras till kalkylblad. Möjliga leveransplatser är:
 
@@ -179,7 +179,7 @@ Leveransåtgärd är den åtgärd som vidtas på ett e-postmeddelande på grund 
 
 - **Blockerad** – alla e-postmeddelanden som har satts i karantän, som misslyckades eller släppts. (Detta är helt otillgängligt för användaren.)
 
-- **Ersatt** – alla e-postmeddelanden där skadliga bifogade filer ersätts med TXT-filer som uppger att den bifogade filen var skadlig.
+- **Ersatt** – alla e-postmeddelanden där skadliga bifogade filer ersätts med .txt filer som uppger att den bifogade filen var skadlig.
 
 Leveransplats visar resultatet av principer och identifieringar som körs efter leveransen. Det är länkat till en leveransåtgärd. Det här fältet har lagts till för att ge insyn i åtgärder som vidtas när ett problem har hittats. Här är de möjliga värdena för leveransplatsen:
 

@@ -54,7 +54,7 @@ PUA-skydd i Microsoft Defender för slutpunkt i macOS kan konfigureras på någo
 
 - **Av**: PUA-skydd är inaktiverat.
 - **Granskning:** PUA-filer rapporteras i produktloggarna, men inte i Microsoft Defender Säkerhetscenter. Inget meddelande visas för användaren och ingen åtgärd vidtas av produkten.
-- **Blockering:** PUA-filer rapporteras i produktloggarna och i Microsoft Defender Säkerhetscenter. Användaren får ett meddelande och en åtgärd vidtas av produkten.
+- **Block:** PUA-filer rapporteras i produktloggarna och i Microsoft Defender Säkerhetscenter. Användaren får ett meddelande och en åtgärd vidtas av produkten.
 
 >[!WARNING]
 >Som standard konfigureras PUA-skydd i **granskningsläge.**

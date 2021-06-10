@@ -52,7 +52,7 @@ Om du kan återskapa ett problem ökar du först loggningsnivån, kör systemet 
 
 2. Återskapa problemet.
 
-3. Kör följande kommando för att backa upp Defender för Endpoints loggar. Filerna lagras i ett ZIP-arkiv.
+3. Kör följande kommando för att backa upp Defender för Endpoints loggar. Filerna lagras i ett nytt .zip arkiv.
 
    ```bash
    sudo mdatp diagnostic create
@@ -163,8 +163,8 @@ I Defender för slutpunktsportalen visas två kategorier med information:
 
 ### <a name="known-issues"></a>Kända problem
 
-- "Inga sensordata, nedsatt kommunikation" visas på sidan med maskininformation på Microsoft Defender Säkerhetscenter-portalen, trots att produkten fungerar som förväntat. Vi arbetar med att lösa det här problemet.
-- Inloggade användare visas inte i Microsoft Defender Säkerhetscenter-portalen.
+- "Inga sensordata, nedsatt kommunikation" visas på sidan med maskininformation på Microsoft Defender Säkerhetscenter portalen, trots att produkten fungerar som förväntat. Vi arbetar med att lösa det här problemet.
+- Inloggade användare visas inte i Microsoft Defender Säkerhetscenter portal.
 - Om installationen av *libmic1* misslyckas i SUSE-distributionsfördelningar bör du kontrollera att operativsystemet är registrerat:
 
    ```bash

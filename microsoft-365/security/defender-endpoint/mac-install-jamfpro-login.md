@@ -37,15 +37,15 @@ ms.locfileid: "51935587"
 
 1. Ange dina autentiseringsuppgifter.
 
-    ![Bild på dashboardn Jamf Pro1](images/jamf-pro-portal1.png)
+    ![Bild på Jamf Pro dashboard1](images/jamf-pro-portal1.png)
 
 2. Välj **Datorer.**
 
-    ![Bild på en Jamf Pro-instrumentpanel2](images/jamf-pro-dashboard.png)
+    ![Bild på Jamf Pro dashboard2](images/jamf-pro-dashboard.png)
 
 3. De tillgängliga inställningarna visas.
 
-     ![Bild på Jamf Pro instrumentpanel3](images/jamfpro-settings.png)
+     ![Bild på Jamf Pro dashboard3](images/jamfpro-settings.png)
 
 
 ## <a name="next-step"></a>Nästa steg

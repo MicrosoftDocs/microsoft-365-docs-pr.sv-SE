@@ -37,9 +37,9 @@ ms.locfileid: "51934423"
 
 
 
-Microsoft 365 Defender kan visa datum- och tidsinformation med hjälp av antingen din lokala tidszon eller UTC. Den valda tidszonen gäller för all datum- och tidsinformation som visas i följande funktioner i säkerhetscentret i Microsoft 365:
+Microsoft 365 Defender kan visa datum- och tidsinformation med hjälp av antingen din lokala tidszon eller UTC. Den valda tidszonen gäller för all datum- och tidsinformation som visas i följande funktioner Microsoft 365 säkerhetscenter:
 - Incidenter
 - Automatiserad undersökning och åtgärd, inklusive åtgärdscenter
 - Avancerad jakt
 
-Om du vill ange tidszonen för dessa funktioner går du **till Inställningar**  >  **Microsoft 365 Defender**  >  **Tidszon**.
+Om du vill ange tidszonen för de här funktionerna går du **Inställningar**  >  **Microsoft 365**  >  **Defender-tidszonen.**

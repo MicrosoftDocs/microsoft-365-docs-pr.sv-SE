@@ -1,8 +1,8 @@
 ---
-title: Översikt över funktioner för identifiering av slutpunkt och svar
+title: Översikt över identifiering och åtgärd på slutpunkt funktioner
 ms.reviewer: ''
-description: Läs mer om funktionerna för identifiering och svar av slutpunkter i Microsoft Defender för Endpoint
-keywords: Microsoft Defender för slutpunkt, identifiering och svar av slutpunkter, svar, identifiering, cybersäkerhet, skydd
+description: Läs mer identifiering och åtgärd på slutpunkt Microsoft Defender för Endpoint
+keywords: Microsoft Defender för Endpoint, identifiering och åtgärd på slutpunkt, svar, identifiering, cybersäkerhet, skydd
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -24,7 +24,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933523"
 ---
-# <a name="overview-of-endpoint-detection-and-response"></a>Översikt över identifiering och svar av slutpunkter
+# <a name="overview-of-endpoint-detection-and-response"></a>Översikt över identifiering och åtgärd på slutpunkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51933523"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Defender för slutpunktsidentifierings- och svarsfunktioner tillhandahåller avancerade attackidentifieringar som är nära i realtid och kan användas. Säkerhetsanalytiker kan effektivt prioritera varningar, få synlighet över helheten av ett intrång och vidta åtgärder för att åtgärda hot.
+Defender för identifiering och åtgärd på slutpunkt tillhandahåller avancerade attackidentifieringar som är nästan i realtid och kan vidtas. Säkerhetsanalytiker kan effektivt prioritera varningar, få synlighet över helheten av ett intrång och vidta åtgärder för att åtgärda hot.
 
 När ett hot identifieras skapas aviseringar i systemet för att en analytiker ska undersöka det. Varningar med samma attacktekniker eller förser samma attack med samma attacker aggregeras i en enhet som kallas för _en incident_. Att samla aviseringar på det här sättet gör det enkelt för analytiker att gemensamt undersöka och reagera på hot.
 

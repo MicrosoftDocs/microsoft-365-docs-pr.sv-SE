@@ -53,11 +53,11 @@ För distributionen av distributionsen så måste du dessutom vara bekant med pr
 
 Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
 
-1. I Microsoft Defender Säkerhetscenter går du till **Inställningar > Enhetshantering > Onboarding**.
+1. I Microsoft Defender Säkerhetscenter går du till Inställningar > **på Enhetshantering > Onboarding.**
 2. I den första listrutan väljer du **Linux Server** som operativsystem. I den andra nedrullningsmenyn väljer du **Det konfigurationshanteringsverktyg du** föredrar i Linux som distributionsmetod.
 3. Välj **Hämta introduktionspaket**. Spara filen som WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Skärmbild av Microsoft Defender Säkerhetscenter](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft Defender Säkerhetscenter skärmbild](images/atp-portal-onboarding-linux-2.png)
 
 4. Kontrollera att filen finns i kommandotolken. 
 

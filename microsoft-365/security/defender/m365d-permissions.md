@@ -1,5 +1,5 @@
 ---
-title: Hantera åtkomst till Microsoft 365 Defender-data i Säkerhetscenter för Microsoft 365
+title: Hantera åtkomst till Microsoft 365 Defender-data i Microsoft 365 säkerhetscenter
 description: Lär dig hur du hanterar behörigheter till data i Microsoft 365 Defender
 keywords: åtkomst, behörigheter, Microsoft 365 Defender, M365, säkerhet, MCAS, Cloud App Security, Microsoft Defender för slutpunkt, omfattning, omfattning, RBAC
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935635"
 ---
-# <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Hantera åtkomst till Microsoft 365 Defender med globala roller i Azure Active Directory
+# <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>Hantera åtkomst till Microsoft 365 Defender med Azure Active Directory globala roller
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,22 +35,22 @@ ms.locfileid: "51935635"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Det finns två sätt att hantera åtkomst till Microsoft 365 Defender
-- **Globala Azure Active Directory-roller (AD)**
+Det finns två sätt att hantera åtkomsten till Microsoft 365 Defender
+- **Ad-Azure Active Directory (Global Azure Active Directory)**
 - **Anpassad rollåtkomst**
 
-Konton som tilldelats följande **globala Azure Active Directory-roller (AD)** har åtkomst till funktioner och data i Microsoft 365 Defender:
+Konton som tilldelats **följande AD Azure Active Directory roller (Global Azure Active Directory)** kan komma åt Microsoft 365 Defender-funktioner och data:
 - Global administratör
 - Säkerhetsadministratör
 - Säkerhetsoperatör
 - Global läsare
 - Säkerhetsläsare
 
-Om du vill granska konton med de här [rollerna visar du Behörigheter i Säkerhetscenter för Microsoft 365.](https://security.microsoft.com/permissions)
+Om du vill granska konton med de [här rollerna visar du Behörigheter Microsoft 365 Säkerhetscenter](https://security.microsoft.com/permissions).
 
 **Anpassad rollåtkomst** är en ny funktion i Microsoft 365 Defender och gör att du kan hantera åtkomst till specifika data, uppgifter och funktioner i Microsoft Defender 365. Anpassade roller ger mer kontroll än globala Azure AD-roller, vilket ger användarna bara den åtkomst de behöver med de minst tillåtande rollerna som krävs.  Anpassade roller kan skapas utöver globala Azure AD-roller. [Läs mer om anpassade roller.](custom-roles.md)
 
-> ! [OBS] Den här artikeln gäller endast för hantering av globala Azure Active Directory-roller. Mer information om hur du använder en anpassad rollbaserad åtkomstkontroll finns i [Anpassade roller för rollbaserad åtkomstkontroll](custom-roles.md)
+> ! [OBS] Den här artikeln gäller endast för hantering av Azure Active Directory rollroller. Mer information om hur du använder en anpassad rollbaserad åtkomstkontroll finns i [Anpassade roller för rollbaserad åtkomstkontroll](custom-roles.md)
 
 ## <a name="access-to-functionality"></a>Åtkomst till funktioner
 Åtkomst till specifika funktioner bestäms av din [Azure AD-roll.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Kontakta en global administratör om du behöver åtkomst till specifika funktioner som kräver att du eller din användargrupp tilldelas en ny roll.
@@ -63,11 +63,11 @@ Om du vill granska konton med de här [rollerna visar du Behörigheter i Säkerh
 
 Om du till exempel bara tillhör en användargrupp med rollen Microsoft Defender för slutpunkt och den användargruppen endast har åtkomst till säljenheter, visas endast data om säljenheter i Microsoft 365 Defender. [Läs mer om RBAC-inställningar i Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
-### <a name="microsoft-cloud-app-security-access-controls"></a>Säkerhetsåtkomstkontroller för Microsoft Cloud App
-Under förhandsversionen tillämpar Microsoft 365 Defender inte åtkomstkontroller baserat på säkerhetsinställningar för molnappen. Åtkomst till data i Microsoft 365 Defender påverkas inte av de här inställningarna.
+### <a name="microsoft-cloud-app-security-access-controls"></a>Microsoft Cloud App Security för åtkomst
+Under förhandsgranskningen Microsoft 365 Defender inte åtkomstkontroller baserat på Cloud App Security inställningar. Åtkomst till Microsoft 365 Defender-data påverkas inte av de här inställningarna.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Anpassade roller i rollbaserad åtkomstkontroll för Microsoft 365 Defender](custom-roles.md)
 - [Azure AD-roller](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 - [Microsoft Defender för slutpunkt RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
-- [Säkerhetsroller i molnappen](/cloud-app-security/manage-admins)
+- [Cloud App Security roller](/cloud-app-security/manage-admins)

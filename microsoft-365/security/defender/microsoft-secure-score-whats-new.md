@@ -1,6 +1,6 @@
 ---
 title: Vad är nytt i Microsoft Secure Score
-description: Här beskrivs vilka nya ändringar som har hänt med Microsoft Secure Score i Säkerhetscenter för Microsoft 365.
+description: Här beskrivs vilka nya ändringar som har hänt med Microsoft Secure Score Microsoft 365 säkerhetscenter.
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -34,19 +34,19 @@ ms.locfileid: "51933871"
 
 Vi har gjort några ändringar för att Microsoft Secure Score ska bli en bättre representant för din säkerhetsrepresentant. Mer information om planerade ändringar finns [i Vad kommer i Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-Microsoft Secure Score finns på https://security.microsoft.com/securescore Säkerhetscenter för [Microsoft 365.](overview-security-center.md)
+Microsoft Secure Score hittar du på https://security.microsoft.com/securescore Microsoft 365 [Säkerhetscenter.](overview-security-center.md)
     
 ## <a name="february-2021"></a>Februari 2021
 
 ### <a name="compatibility-with-graph-api"></a>Kompatibilitet med Graph API
 
-Microsoft Secure Score-rekommendationer som levereras via Graph API ser ut och viktas på samma sätt som de rekommendationer som du ser för närvarande i Säkerhetscenter för Microsoft 365.
+Microsoft Secure Score-rekommendationer som levereras via Graph API ser ut och viktas på samma sätt som de rekommendationer du för närvarande ser Microsoft 365 säkerhetscenter.
 
 ## <a name="january-2021"></a>Januari 2021
 
 ### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Lade till vår första säkerhetsrekommendationer för Microsoft Teams
 
-Microsoft Teams-kunder ser "Begränsa anonyma användare från att ansluta till möten" som en ny förbättringsåtgärd i Secure Score.
+Microsoft Teams ser "Begränsa anonyma användare från att ansluta till möten" som en ny förbättringsåtgärd i Secure Score.
 
 ## <a name="december-2020"></a>December 2020
 
@@ -67,7 +67,7 @@ Möjligheten att skapa ServiceNow-biljetter via Secure Score genom att gå till 
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Tre tjänstrelaterade förbättringsåtgärder för Microsoft Defender för Slutpunkt har lagts till:
 
-- Åtgärda okvotad tjänstsökväg för Windows-tjänster
+- Åtgärda okvotad tjänstesökväg för Windows tjänster
 - Ändra den körbara sökvägen för tjänsten till en gemensam skyddad plats
 - Ändra tjänstkonto för att undvika cachelagrat lösenord i Windows-registret
 
@@ -75,7 +75,7 @@ Möjligheten att skapa ServiceNow-biljetter via Secure Score genom att gå till 
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Ta bort förbättringsåtgärd relaterad till Microsoft Defender för Slutpunkt
 
-- Ställ in webbinnehållskontroll för Microsoft Defender SmartScreen-appen i Windows Store för att varna
+- Ställ in Microsoft Defender SmartScreen Windows Store-appens webbinnehållskontroll för att varna
 
 ## <a name="august-2020"></a>Augusti 2020
 
@@ -91,7 +91,7 @@ Med tiden kommer Identity Secure Score att använda den nya poängmodellen. Till
 
 ## <a name="updated-improvement-actions"></a>Uppdaterade förbättringsåtgärder
 
-- Åtgärder för att förbättra Azure Active Directory har lagts till
+- Tillagda Azure Active Directory förbättringsåtgärder
 - Microsoft Defender har lagts till för åtgärder för identitetsförbättring
 - Stöd för Microsoft Defender för slutpunktshot & [säkerhetsrekommendationer för sårbarhetshantering](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
     - Alla släppta säkerhetsrekommendationer som tillhandahålls av TVM är nu tillgängliga

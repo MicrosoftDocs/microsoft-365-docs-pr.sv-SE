@@ -30,15 +30,15 @@ ms.locfileid: "52274478"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Meddelandespårning i säkerhets- & efterlevnadscenter följer e-postmeddelanden när de färdas genom din Exchange Online-organisation. Du kan avgöra om ett meddelande har tagits emot, avvisats, skjutits upp eller levererats av tjänsten. Det visar också vilka åtgärder som har vidtagits för meddelandet innan det nått sin slutgiltiga status.
+Meddelandespårning i säkerhets- och & efter e-postmeddelanden när de färdas genom din Exchange Online organisation. Du kan avgöra om ett meddelande har tagits emot, avvisats, skjutits upp eller levererats av tjänsten. Det visar också vilka åtgärder som har vidtagits för meddelandet innan det nått sin slutgiltiga status.
 
 Du kan använda informationen från meddelandespårning för att effektivt svara på användarfrågor om vad som har hänt med meddelanden, felsöka problem i e-postflödet och verifiera principändringar.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du måste vara medlem i rollgrupperna **Organisationshantering,** **Efterlevnadshantering** eller **Supportavdelning** i **Exchange Online** för att kunna använda meddelandespårning. Mer information finns under [Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo).
+- Du måste vara medlem i rollgrupperna **Organisationshantering,** Efterlevnadshantering eller Supportavdelning i Exchange Online **använda** meddelandespårning.   Mer information finns under [Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Kommentarer:** Medlemskap i motsvarande Azure Active Directory-roll i administrationscentret för  Microsoft 365 ger användarna nödvändiga behörigheter och behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  **Kommentarer:** Medlemskap i motsvarande Azure Active Directory roll i administrationscentret Microsoft 365 ger användarna  de behörigheter och den behörighet som krävs för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
 - Det maximala antalet meddelanden som visas i resultatet av en meddelandespårning beror på vilken rapporttyp du valde (mer information finns i avsnittet [Välj](#choose-report-type) rapporttyp). [Cmdlet:en Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) i Exchange Online PowerShell eller fristående EOP PowerShell returnerar alla meddelanden i resultatet.
 
@@ -52,7 +52,7 @@ Gå direkt till sidan **Meddelandespårning** genom att öppna <https://protecti
 
 Härifrån kan du starta en ny standardspårning genom att klicka på **knappen Starta en** spårning. Då söker du efter alla meddelanden för alla avsändare och mottagare under de senaste två dagarna. Du kan också använda en av de lagrade frågorna från tillgängliga frågekategorier och antingen köra dem som de är eller använda dem som utgångspunkt för dina egna frågor:
 
-- **Standardfrågor:** Inbyggda frågor från Microsoft 365.
+- **Standardfrågor:** Inbyggda frågor som tillhandahålls av Microsoft 365.
 - **Anpassade frågor:** Frågor som sparas av administratörer i organisationen för framtida bruk.
 - **Automatisktsparade frågor**: De senaste tio senaste körningsfrågorna. I den här listan är det enkelt att fortsätta där du slutade.
 
@@ -140,7 +140,7 @@ De tillgängliga rapporttyperna är:
 >
 > - Förbättrad sammanfattning och utökade rapporter förbereds med arkiverade meddelandespårningsdata och det kan ta flera timmar innan rapporten kan laddas ned. Beroende på hur många andra administratörer som också har skickat rapportförfrågningar samtidigt kan du också märka en fördröjning innan den i köde begäran börjar bearbetas.
 > - Du kan välja en Utökad sammanfattning eller Utökad rapport för ett datum-/tidsintervall, men vanligtvis är de sista fyra timmarna med arkiverade data ännu inte tillgängliga för dessa två typer av rapporter.
-> - Den maximala storleken för en nedladdningsbar rapport är 500 MB. Om en nedladdningsbar rapport överskrider 500 MB kan du inte öppna rapporten i Excel eller Anteckningar.
+> - Den maximala storleken för en nedladdningsbar rapport är 500 MB. Om en hämtningsbar rapport överskrider 500 MB kan du inte öppna rapporten i Excel eller Anteckningar.
 
 När du klickar på Nästa visas en sammanfattningssida med de filtreringsalternativ som du har valt, en unik (redigerbar) rubrik för rapporten och den e-postadress som får meddelandet när meddelandespårningen har slutförts (också redigerbara och måste finnas i någon av organisationens godkända domäner). Klicka **på Förbered rapport** för att skicka meddelandespårningen. På **huvudsidan Meddelandespårning** kan du se status för rapporten i avsnittet **Nedladdningsbara** rapporter.
 
@@ -204,13 +204,13 @@ Informationen om meddelandespårningen innehåller ytterligare information som i
   > [!NOTE]
   >
   > - Ett ojämnt meddelande som har levererats genererar flera **händelseposter** i meddelandespårningen.
-  > - Listan är inte uttömmande. Beskrivningar av fler händelser finns i [Händelsetyper i meddelandespårningsloggen](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Observera att den här länken är ett ämne för Exchange Server (lokal Exchange).
+  > - Listan är inte uttömmande. Beskrivningar av fler händelser finns i [Händelsetyper i meddelandespårningsloggen](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Observera att den här länken är Exchange Server ämne (Exchange lokal miljö).
 
 - **Mer information:** Det här avsnittet innehåller följande information:
   - **Meddelande-ID:** Det här värdet beskrivs i [avsnittet Meddelande-ID](#message-id) tidigare i den här artikeln. Till exempel `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
   - **Meddelandestorlek**
-  - **Från IP:** IP-adressen för den dator som skickade meddelandet. För utgående meddelanden som skickas från Exchange Online är det här värdet tomt.
-  - **Till IP:** IP-adressen eller adresserna där tjänsten försökte leverera meddelandet. Om meddelandet har flera mottagare visas de. För inkommande meddelanden som skickas till Exchange Online är det här värdet tomt.
+  - **Från IP:** IP-adressen för den dator som skickade meddelandet. För utgående meddelanden som skickas Exchange Online är det här värdet tomt.
+  - **Till IP:** IP-adressen eller adresserna där tjänsten försökte leverera meddelandet. Om meddelandet har flera mottagare visas de. För inkommande meddelanden som skickas Exchange Online är det här värdet tomt.
 
 ### <a name="enhanced-summary-reports"></a>Förbättrade sammanfattningsrapporter
 
@@ -228,7 +228,7 @@ Tillgängliga (slutförda) utökade sammanfattningsrapporter är tillgängliga *
 - **network_message_id:** Ett unikt värde för meddelande-ID som finns kvar i alla kopior av meddelandet som kan skapas på grund av expandering eller distributionsgruppsexpansion. Ett exempelvärde är `1341ac7b13fb42ab4d4408cf7f55890f` .
 - **original_client_ip:** IP-adressen för avsändarens klient.
 - **riktning :** Anger om meddelandet skickades inkommande (1) till din organisation eller om det skickades utgående (2) från din organisation.
-- **connector_id**: Namnet på källan eller målkopplingen. Mer information om kopplingar i Exchange Online finns i Konfigurera [e-postflöde med kopplingar i Office 365.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- **connector_id**: Namnet på källan eller målkopplingen. Mer information om kopplingar i Exchange Online finns i [Konfigurera e-postflöde med kopplingar i Office 365](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 - **delivery_priority** <sup>*</sup> : Om meddelandet skickades med **hög,** **låg** eller **normal** prioritet.
 
 <sup>*</sup> De här egenskaperna är endast tillgängliga i rapporter med utökade sammanfattningar.
@@ -244,12 +244,12 @@ Tillgängliga (slutförda) utökade rapporter är tillgängliga **i avsnittet Ne
 - **source_context**: Extra information associerad med **källfältet.** Till exempel:
   - `Protocol Filter Agent`
   - `3489061114359050000`
-- **källa:** Exchange Online-komponenten som ansvarar för händelsen. Till exempel:
+- **källa**: Exchange Online komponenten som ansvarar för händelsen. Till exempel:
   - `AGENT`
   - `MAILBOXRULE`
   - `SMTP`
 - **event_id:** De motsvarar de **händelsevärden för meddelanden** som förklaras i avsnittet Hitta relaterade poster för det [här](#find-related-records-for-this-message) meddelandet.
-- **internal_message_id**: En meddelandeidentifierare som har tilldelats av Exchange Online-servern som för närvarande bearbetar meddelandet.
+- **internal_message_id**: En meddelandeidentifierare som har tilldelats av Exchange Online server som för närvarande bearbetar meddelandet.
 - **recipient_address:** E-postadresserna till meddelandets mottagare. Flera e-postadresser avgränsas med semikolontecken (;).
 - **recipient_count**: Det totala antalet mottagare i meddelandet.
 - **related_recipient_address:** Används med `EXPAND` `REDIRECT` , och händelser för att visa `RESOLVE` andra mottagares e-postadresser som är kopplade till meddelandet.
@@ -262,15 +262,15 @@ Tillgängliga (slutförda) utökade rapporter är tillgängliga **i avsnittet Ne
   - **MAILBOXRULE:** Innehåller **det internal_message_id** värdet för det inkommande meddelandet som orsakade att inkorgsregeln skulle generera det utgående meddelandet. För andra typer av händelser är det här fältet vanligtvis tomt.
 - **return_path:** Den avsändar-e-postadress som anges av **kommandot MAIL FROM** som skickade meddelandet. Även om fältet aldrig är tomt kan värdet för null-avsändaradressen representeras som `<>` .
 - **message_info:** Ytterligare information om meddelandet. Till exempel:
-  - Datum-tid för meddelande originering i UTC för `DELIVER` och `SEND` händelser. Datum-tid för ursprung är tidpunkten när meddelandet först angav Exchange Online-organisationen. DATUM-tid i UTC representeras i ISO 8601-datum/tid-format: , där = år, = månad, = dag, anger början av `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` `hh` tidskomponenten, = timme, `mm` = minut, = sekund, `ss` `fff` = `Z` `Zulu` bråktal för en sekund och betecknar , vilket är ett annat sätt att ange UTC.
+  - Datum-tid för meddelande originering i UTC för `DELIVER` och `SEND` händelser. Datum-tid för ursprung är tidpunkten när meddelandet först angavs i Exchange Online organisation. DATUM-tid i UTC representeras i ISO 8601-datum/tid-format: , där = år, = månad, = dag, anger början av `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` `hh` tidskomponenten, = timme, `mm` = minut, = sekund, `ss` `fff` = `Z` `Zulu` bråktal för en sekund och betecknar , vilket är ett annat sätt att ange UTC.
   - Autentiseringsfel. Du kan till exempel se värdet och `11a` typen av autentisering som användes när autentiseringsfelet inträffade.
-- **tenant_id**: Ett GUID-värde som representerar Exchange Online-organisationen (t.ex. `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
+- **tenant_id**: Ett GUID-värde som representerar Exchange Online organisation (t.ex. `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
 - **original_server_ip:** IP-adressen till den ursprungliga servern.
 - **custom_data**: Innehåller data som är relaterade till specifika händelsetyper. Mer information finns i följande avsnitt.
 
 #### <a name="custom_data-values"></a>custom_data värden
 
-Fältet **custom_data** för en `AGENTINFO` händelse används av olika Exchange Online-agenter för att logga information om meddelandebearbetningen. Några av de mer intressanta representanterna beskrivs i följande avsnitt.
+Fältet **custom_data** för en händelse används av en rad olika ombud `AGENTINFO` Exchange Online logga information om meddelandebearbetningen. Några av de mer intressanta representanterna beskrivs i följande avsnitt.
 
 #### <a name="spam-filter-agent"></a>Filteragent för skräppost
 
@@ -344,8 +344,8 @@ Ett **custom_data** som börjar med `S:TRA` kommer från transportregelagenten f
 |---|---|
 |`ETR|ruleId=<guid>`|Detta är det regel-ID som matchades.|
 |`St=<datetime>`|Datum och tid i UTC när regelmatchning inträffade.|
-|`Action=<ActionDefinition>`|Den åtgärd som tillämpats. En lista över tillgängliga åtgärder finns i Åtgärder [för e-postflödesregel i Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
-|`Mode=<Mode>`|Läget för regeln. Giltiga värden är:<ul><li>Framtvinga: Alla åtgärder för regeln tillämpas.</li><li>**Test med policytips: Alla** policytipsåtgärder skickas, men inga åtgärder vidtas.</li><li>**Testa utan principtips:** Åtgärder visas i en loggfil, men avsändarna meddelas inte på något sätt och inga åtgärder vidtas.</li></ul>|
+|`Action=<ActionDefinition>`|Den åtgärd som tillämpats. En lista över tillgängliga åtgärder finns i Åtgärder [för e-postflödesregel i Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
+|`Mode=<Mode>`|Läget för regeln. Giltiga värden är:<ul><li>Framtvinga: Alla åtgärder för regeln tillämpas.</li><li>**Testa med Tips: :** Alla åtgärder i principtips skickas, men inga åtgärder vidtas.</li><li>**Testa utan Tips**: Åtgärder visas i en loggfil, men avsändarna meddelas inte på något sätt och inga åtgärder vidtas.</li></ul>|
 |
 
 Ett exempel **custom_data** för ett meddelande som matchar villkoren i en e-postflödesregel ser ut så här:

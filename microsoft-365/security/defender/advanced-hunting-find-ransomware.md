@@ -1,7 +1,7 @@
 ---
 title: Hitta utpressningstrojaner med avancerad sökning
 description: Använd avancerad sökning för att hitta enheter som kan påverkas av utpressningstrojaner.
-keywords: advanced hunting, ransomware, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
+keywords: avancerad sökning, utpressningstrojaner, hotsökning, sökning efter cyberhot, frågor, telemetri, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -34,7 +34,7 @@ ms.locfileid: "51934819"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Utpressningstrojaner har snabbt utvecklats från att vara enkla varor som skadlig programvara påverkar enskilda datoranvändare till ett företagshot som allvarligt påverkar branscher och myndigheter. [Microsoft 365 Defender](microsoft-365-defender.md) har många funktioner för att identifiera och blockera utpressningstrojaner och associerade intrångsaktiviteter, men om du utför förebyggande kontroller för tecken på intrång kan detta skydda nätverket.
+Utpressningstrojaner har snabbt utvecklats från att vara enkla varor som skadlig programvara påverkar enskilda datoranvändare till ett företagshot som allvarligt påverkar branscher och myndigheter. I [Microsoft 365 Defender](microsoft-365-defender.md) finns många funktioner för att identifiera och blockera utpressningstrojaner och associerade intrångsaktiviteter, men om du utför proaktiva kontroller för intrång kan det skydda nätverket.
 
 > [Läs mer om utpressningstrojaner som drivs av människor](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 

@@ -1,6 +1,6 @@
 ---
-title: Konfigurera enhetsgrupper i Jamf Pro
-description: Lär dig konfigurera enhetsgrupper i Jamf Pro för Microsoft Defender för Slutpunkt på macOS
+title: Konfigurera enhetsgrupper i Jamf-Pro
+description: Lär dig konfigurera enhetsgrupper i Jamf Pro för Microsoft Defender för Endpoint på macOS
 keywords: enhet, grupp, microsoft, defender, Microsoft Defender för slutpunkt, mac, installation, distribuera, avinstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933811"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Konfigurera Microsoft Defender för Slutpunkt på macOS-enhetsgrupper i Jamf Pro
+# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Konfigurera Microsoft Defender för slutpunkt på macOS-enhetsgrupper i Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51933811"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Konfigurera enhetsgrupper som liknar organisationsgrupper för grupprinciper, Enhetssamling för Microsoft Endpoint Configuration Manager och Intune-enhetsgrupperna i Intune.
+Konfigurera enhetsgrupper ungefär som organisationsgrupper för grupprinciper, Microsoft Endpoint Configuration Manager enhetens samling och Intune-enhetsgrupperna.
 
 1. Gå till **statiska datorgrupper.**
 
@@ -52,4 +52,4 @@ Konfigurera enhetsgrupper som liknar organisationsgrupper för grupprinciper, En
     ![Bild på Jamf Pro3](images/contoso-machine-group.png)
 
 ## <a name="next-step"></a>Nästa steg
-- [Konfigurera Microsoft Defender för Slutpunkt på macOS-principer i Jamf Pro](mac-jamfpro-policies.md)
+- [Konfigurera Microsoft Defender för Endpoint på macOS-principer i Jamf Pro](mac-jamfpro-policies.md)

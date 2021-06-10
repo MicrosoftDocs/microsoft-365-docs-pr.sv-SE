@@ -47,14 +47,14 @@ Innan du börjar kan du gå [till huvudsidan för Microsoft Defender](microsoft-
 
 ## <a name="download-installation-and-onboarding-packages"></a>Ladda ned installation- och onboarding-paket
 
-Ladda ned installation- och onboarding-paketen från Microsoft Defender Säkerhetscenter:
+Ladda ned installations- och onboarding-paketen från Microsoft Defender Säkerhetscenter:
 
-1. I Microsoft Defender Säkerhetscenter går du till **Inställningar > Enhetshantering > Onboarding**.
+1. I Microsoft Defender Säkerhetscenter går du till Inställningar > **på Enhetshantering > Onboarding.**
 2. I avsnitt 1 på sidan anger du operativsystem till **macOS** och distributionsmetod till **Lokalt skript.**
 3. I avsnitt 2 på sidan väljer du Ladda **ned installationspaketet**. Spara den som wdav.pkg i en lokal katalog.
 4. Välj Hämta introduktionspaket i avsnitt 2 **på sidan.** Spara den WindowsDefenderATPOnboardingPackage.zip filen i samma katalog.
 
-    ![Skärmbild av Microsoft Defender Säkerhetscenter](images/atp-portal-onboarding-page.png)
+    ![Microsoft Defender Säkerhetscenter skärmbild](images/atp-portal-onboarding-page.png)
 
 5. Kontrollera att du har de två filerna i kommandotolken.
     
@@ -107,11 +107,11 @@ Du måste ha administratörsbehörighet på enheten för att slutföra den här 
 
 5. Upprepa steg 3 & 4 för alla systemtillägg som distribueras med Microsoft Defender för slutpunkt på Mac.
 
-6. Som en del av funktionerna Identifiering av slutpunkt och svar inspekterar Microsoft Defender för slutpunkt på Mac sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter-portalen. När du uppmanas att ge Microsoft Defender behörighet att filtrera nätverkstrafik väljer du **Tillåt**.
+6. Som en del av funktionerna Identifiering av slutpunkt och svar inspekterar Microsoft Defender för slutpunkt på Mac sockettrafik och rapporterar den här informationen till Microsoft Defender Säkerhetscenter portalen. När du uppmanas att ge Microsoft Defender behörighet att filtrera nätverkstrafik väljer du **Tillåt**.
 
     ![Säkerhetsinställningar för systemtillägg2](images/big-sur-install-4.png)
 
-7. Öppna **Systeminställningar för**& sekretess och gå till fliken Sekretess. Ge fullständig diskåtkomstbehörighet till Microsoft Defender ATP och  >   Microsoft Defender  **ATP Endpoint Security Extension.**  
+7. Öppna **Systeminställningar** för & sekretess och gå till fliken Sekretess. Ge fullständig diskåtkomstbehörighet till Microsoft Defender ATP och  >   Microsoft Defender ATP Endpoint Security **Extension**.   
 
     ![Fullständig diskåtkomst](images/big-sur-install-5.png)
 
@@ -170,11 +170,11 @@ Du måste ha administratörsbehörighet på enheten för att slutföra den här 
         mdatp threat list
         ```
 
-3. Kör ett EDR-identifieringstest för att verifiera att enheten är korrekt onboarded och rapporterar till tjänsten. Utför följande steg på den nyligen inbyggda enheten:
+3. Kör ett Identifiering och åtgärd på slutpunkt för att verifiera att enheten är korrekt onboarded och rapporterar till tjänsten. Utför följande steg på den nyligen inbyggda enheten:
 
    1. I webbläsaren, till exempel Microsoft Edge för Mac eller Safari.
 
-   1. Ladda ned MDATP MacOS DIY.zip och https://aka.ms/mdatpmacosdiy extrahera.
+   1. Ladda MDATP macOS-DIY.zip och https://aka.ms/mdatpmacosdiy extrahera.
 
       Du kan uppmanas att göra följande:
 
@@ -185,40 +185,40 @@ Du måste ha administratörsbehörighet på enheten för att slutföra den här 
 
 5. Öppna **Nedladdningar**.
 
-6. Du bör se **MDATP MacOS GÖR-DET-SJÄLV.**
+6. Du bör se **MDATP MACOS GÖR-DET-SJÄLV.**
 
    > [!TIP]
    > Om du dubbelklickar visas följande meddelande:
    > 
-   > > **"MDATP MacOS GÖR-SJÄLV" kan inte öppnas eftersom utvecklaren inte kan verifieras.**<br/>
+   > > **"MDATP MacOS GÖR-själv" kan inte öppnas eftersom utvecklaren inte kan verifieras.**<br/>
    > > macOS kan inte verifiera att den här appen är gratis från skadlig programvara.<br/>
    > > **\[ Flytta till \] Papperskorgen** **\[ \]** 
   
 7. Klicka på **Avbryt**.
 
-8. Högerklicka på **MDATP MacOS GÖR-SJÄLV** och klicka sedan på **Öppna.** 
+8. Högerklicka på den **MDATP MacOS GÖR SJÄLV** och klicka sedan på **Öppna.** 
 
     Följande meddelande ska visas i systemet:
 
-    > **macOS kan inte verifiera utvecklaren **av MDATP MacOS DIY.** Vill du öppna den?**<br/>
+    > **macOS kan inte verifiera utvecklaren **av MDATP MacOS GÖR SJÄLV.** Vill du öppna den?**<br/>
     > Genom att öppna det här programmet åsidosätter du systemsäkerhet som kan exponera din dator och personliga information för skadlig programvara som kan skada din Mac eller försämra din integritet.
 
 10. Klicka **på Öppna**.
 
     Följande meddelande ska visas i systemet:
 
-    > Microsoft Defender för slutpunkt – testfil för macOS EDR-GÖR-det-själv-testfil<br/>
-    > Motsvarande avisering är tillgänglig i MDATP-portalen.
+    > Microsoft Defender för slutpunkt – macOS Identifiering och åtgärd på slutpunkt GÖR-testfil<br/>
+    > Motsvarande avisering är tillgänglig i MDATP portalen.
 
 11. Klicka **på Öppna**.
 
-    Om några minuter ska en avisering med namnet "macOS EDR-testvarning" höjas.
+    Om några minuter ska en avisering med namnet "macOS Identifiering och åtgärd på slutpunkt Test Alert" höjas.
 
 12. Gå till Microsoft Defender Säkerhetscenter ( https://SecurityCenter.microsoft.com) .
 
 13. Gå till aviseringskön.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Exempel på en macOS EDR-testvarning som visar allvarlighetsgrad, kategori, identifieringskälla och en komprimerad meny med åtgärder.":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Exempel på en macOS Identifiering och åtgärd på slutpunkt testvarning som visar allvarlighetsgrad, kategori, identifieringskälla och en komprimerad meny med åtgärder.":::
     
     Titta på aviseringsinformationen och enhetens tidslinje och utför de vanliga undersökningsstegen.
 

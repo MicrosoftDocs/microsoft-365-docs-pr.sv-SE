@@ -72,14 +72,14 @@ I följande tabell visas de tillgängliga verktygen baserat på slutpunkten som 
 | Slutpunkt     | Verktygsalternativ                       |
 |--------------|------------------------------------------|
 | **Windows**  |  [Lokalt skript (upp till 10 enheter)](configure-endpoints-script.md) <br>  [Grupprincip](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Device Manager](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI-skript](configure-endpoints-vdi.md) <br> [Integrering med Azure Defender](configure-server-endpoints.md#integration-with-azure-defender) |
-| **macOS**    | [Lokala skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
+| **macOS**    | [Lokala skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF-Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Lokalt skript](linux-install-manually.md) <br> [En- och en-](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Appbaserade](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
 
 ## <a name="step-2-configure-capabilities"></a>Steg 2: Konfigurera funktioner
-Efter att slutpunkterna introduceras konfigurerar du de olika funktionerna, till exempel identifiering och svar av slutpunkter, nästa generations skydd och minskning av attackytan. 
+Efter att slutpunkterna introduceras konfigurerar du de olika funktionerna, till exempel identifiering och åtgärd på slutpunkt, nästa generations skydd och minskning av attackytan. 
 
 
 ## <a name="example-deployments"></a>Exempeldistributioner

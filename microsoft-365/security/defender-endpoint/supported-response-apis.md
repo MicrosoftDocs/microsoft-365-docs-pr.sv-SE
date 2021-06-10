@@ -47,7 +47,7 @@ Kör antivirusgenomsökning | Starta en antivirussökning på distans för att i
 Stoppa och placera filen i karantän |  Kör det här anropet för att sluta köra processer, sätta filer i karantän och ta bort beständiga funktioner, till exempel registernycklar.
 Exempel på förfrågan | Kör det här anropet för att begära ett exempel på en fil från en viss enhet. Filen samlas in från enheten och laddas upp till ett säkert lagringsutrymme.
 Blockera fil | Kör det här API:t för att förhindra ytterligare spridning av en attack i organisationen genom att förbjuda potentiellt skadliga filer eller misstänkt skadlig programvara. 
-Ta bort blockering av fil | Tillåt att en fil körs i organisationen med Microsoft Defender Antivirus.
+Ta bort blockering av fil | Tillåt att en fil körs i organisationen med hjälp av Microsoft Defender Antivirus.
 Hämta SAS URI för paket | Kör detta API för att få en URI som gör att du kan ladda ned ett undersökningspaket.
 Skaffa MachineAction-objekt | Kör detta API för att få MachineAction-objekt.
 Skaffa MachineActions-samlingen | Kör detta för att få MachineAction-samlingen.

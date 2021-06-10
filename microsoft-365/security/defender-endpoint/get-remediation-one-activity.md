@@ -73,7 +73,7 @@ dueOn | DateTime | Förfallodatum som skapare uppsättningen för den här åtg�
 fixedDevices |  | Antalet enheter som har åtgärdats | 2
 id | Sträng | ID för den här åtgärdsaktiviteten | 097d9735-5479-4899-b1b7-77398899df92
 nameId | Sträng | Relaterade produktnamn | Microsoft Silverlight
-prioritet | Sträng | Prioritet för skaparuppsättningen för den här åtgärdsaktiviteten (Hög\Medel\Låg) | Hög
+prioritet | Sträng | Prioritet för skaparuppsättningen för den här åtgärdsaktiviteten (Hög\Medel\Låg) | Högsta
 productId | Sträng | Relaterade produkt-ID | microsoft-_-silverlight
 productivityImpactRemediationType | Sträng | Några konfigurationsändringar kunde endast begäras för enheter utan påverkan från användare. Det här värdet anger valet mellan "alla exponerade enheter" eller "endast enheter utan påverkan från användare". | AllExposedAssets
 rbacGroupNames | Sträng | Gruppnamn för relaterade enheter | [ "Windows Servers", "Windows 10" ]

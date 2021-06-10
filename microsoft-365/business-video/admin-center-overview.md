@@ -171,7 +171,7 @@ Administrationscentret Microsoft 365 är helt lokaliserat på 40 språk.
 |Lithuanian | lt |
 |Latvian | lv |
 |Dutch | nl |
-|Norska | Nej |
+|Norska | nej |
 |Polish | pl |
 |Portugisiska ( Brasilien) | pt |
 |Portugisiska (Portugal) | pt-pt |

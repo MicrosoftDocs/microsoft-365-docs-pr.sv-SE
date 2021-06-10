@@ -1,6 +1,6 @@
 ---
 title: Introducera enheter till Microsoft Defender för slutpunktstjänsten
-description: Introducera Windows 10-enheter, servrar, icke-Windows-enheter och lär dig hur du kör ett identifieringstest.
+description: Få Windows 10 enheter, servrar, icke-Windows enheter och lär dig hur du kör ett identifieringstest.
 keywords: onboarding, Microsoft Defender för slutpunkts onboarding, sccm, grupprincip, mdm, lokalt skript, identifieringstest
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -52,7 +52,7 @@ I följande tabell visas de tillgängliga verktygen baserat på slutpunkten som 
 | Slutpunkt     | Verktygsalternativ                       |
 |--------------|------------------------------------------|
 | **Windows**  |  [Lokalt skript (upp till 10 enheter)](configure-endpoints-script.md) <br>  [Grupprincip](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI-skript](configure-endpoints-vdi.md)   |
-| **macOS**    | [Lokala skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
+| **macOS**    | [Lokala skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF-Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Lokalt skript](linux-install-manually.md) <br> [En- och en-](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Appbaserade](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
@@ -63,10 +63,10 @@ I följande tabell visas de tillgängliga verktygen baserat på slutpunkten som 
 ## <a name="in-this-section"></a>I det här avsnittet
 Ämne | Beskrivning
 :---|:---
-[Registrera tidigare versioner av Windows](onboard-downlevel.md)| Introducera Windows 7- och Windows 8.1-enheter i Defender för Slutpunkt. 
+[Registrera tidigare versioner av Windows](onboard-downlevel.md)| Få Windows 7- och Windows 8.1-enheter i Defender för Endpoint. 
 [Registrera Windows 10-enheter](configure-endpoints.md) | Du måste registrera enheter för att rapporten ska kunna rapportera till Defender för slutpunktstjänsten. Läs mer om verktyg och metoder som du kan använda för att konfigurera enheter i företaget.
-[Onboard servers](configure-server-endpoints.md) |  Onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SACK) version 1803 and later, Windows Server 2019 and later, and Windows Server 2019 core edition to Defender for Endpoint.
-[Registrera icke-Windows-enheter](configure-endpoints-non-windows.md) | Defender för Endpoint ger en centraliserad säkerhetsoperationer för Windows och för icke-Windows-plattformar. Du kan se aviseringar från olika operativsystem som stöds (OS) i Microsoft Defender Säkerhetscenter och bättre skydda organisationens nätverk. Den här upplevelsen utnyttjar sensordata från tredje part. 
+[Onboard servers](configure-server-endpoints.md) |  Onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SACK) version 1803 och senare, Windows Server 2019 och senare, samt Windows Server 2019-kärnversionen till Defender för Slutpunkt.
+[Introducera icke-Windows-enheter](configure-endpoints-non-windows.md) | Defender för Endpoint tillhandahåller en centraliserad säkerhetsoperationer för både Windows och icke-Windows plattformar. Du kan se aviseringar från olika operativsystem som stöds (OS) i Microsoft Defender Säkerhetscenter och bättre skydda organisationens nätverk. Den här upplevelsen utnyttjar sensordata från tredje part. 
 [Kör ett identifieringstest på en nyligen registrerad enhet](run-detection-test.md) | Kör ett skript på en nyligen onboarded-enhet för att verifiera att den rapporterar korrekt till Defender för slutpunkt-tjänsten.
 [Konfigurera proxy- och Internetinställningar](configure-proxy-internet.md)| Aktivera kommunikation med Defender för slutpunktsmolntjänsten genom att konfigurera proxy- och Internetanslutningsinställningarna.
 [Felsöka registreringsproblem](troubleshoot-onboarding.md) | Läs mer om hur du löser problem som kan uppstå under registrering.

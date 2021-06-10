@@ -32,7 +32,7 @@ ms.locfileid: "51934699"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[Microsoft Defender för Office 365 abonnemang 2 innehåller](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) kraftfulla [funktioner för automatisk undersökning och](office-365-air.md) svar (AIR). Med sådana funktioner kan ditt säkerhetsteam spara mycket tid och arbete på att hantera hot. Microsoft fortsätter att förbättra säkerhetsfunktionerna. Nyligen har AIR-funktionerna förbättrats med en säkerhetsspelbok för användare som komprometterats (för närvarande i förhandsversionen). Läs den här artikeln om du vill veta mer om den komprometterade säkerhetsspelboken för användare. Mer information finns i blogginlägget Snabba på tiden för att upptäcka och svara på användarnas intrång och begränsa intrångsomfånget med Microsoft Defender för [Office 365.](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)
+[Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) innehåller kraftfulla [funktioner för automatisk undersökning och](office-365-air.md) svar (AIR). Med sådana funktioner kan ditt säkerhetsteam spara mycket tid och arbete på att hantera hot. Microsoft fortsätter att förbättra säkerhetsfunktionerna. Nyligen har AIR-funktionerna förbättrats med en säkerhetsspelbok för användare som komprometterats (för närvarande i förhandsversionen). Läs den här artikeln om du vill veta mer om den komprometterade säkerhetsspelboken för användare. Mer information finns i blogginlägget Snabba upp tid för att upptäcka och svara på användarnas intrång och begränsa intrångsomfånget med [Microsoft Defender Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) mer information.
 
 ![Automatisk undersökning för en komprometterad användare](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -46,7 +46,7 @@ Den komprometterade säkerhetsspelboken för användare gör det möjligt för o
 
 ## <a name="compromised-user-alerts"></a>Komprometterade användaraviseringar
 
-När ett användarkonto har komprometterats uppstår ett fel som är atypiskt eller onormalt. Till exempel kan nätfiske och skräppost skickas internt från ett betrott användarkonto. Defender för Office 365 kan upptäcka sådana problem i e-postmönster och samarbetsaktivitet i Office 365. I så fall inträffar aviseringar och åtgärder som innebär hot börjar.
+När ett användarkonto har komprometterats uppstår ett fel som är atypiskt eller onormalt. Till exempel kan nätfiske och skräppost skickas internt från ett betrott användarkonto. Defender för Office 365 kan upptäcka sådana problem i e-postmönster och samarbetsaktivitet inom Office 365. I så fall inträffar aviseringar och åtgärder som innebär hot börjar.
 
 Här är till exempel ett meddelande som utlöstes på grund av misstänkt e-postmeddelande:
 
@@ -107,4 +107,4 @@ Mer information finns i [Visa information om en undersökning](air-view-investig
 
 - [Läs mer om AIR i Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Besök Microsoft 365-översikt och se vad som kommer snart och lanseras](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Besök Microsoft 365 Översikt och se vad som kommer snart och lanseras](https://www.microsoft.com/microsoft-365/roadmap?filters=)
