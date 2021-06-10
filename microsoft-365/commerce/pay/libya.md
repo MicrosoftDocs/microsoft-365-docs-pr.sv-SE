@@ -20,16 +20,16 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536460"
 ---
-# <a name="payment-information-for-libya"></a><span data-ttu-id="7ca55-103">Betalningsinformation för Libyen</span><span class="sxs-lookup"><span data-stu-id="7ca55-103">Payment information for Libya</span></span>
+# <a name="payment-information-for-libya"></a><span data-ttu-id="007dc-103">Betalningsinformation för Libyen</span><span class="sxs-lookup"><span data-stu-id="007dc-103">Payment information for Libya</span></span>
 
-<span data-ttu-id="7ca55-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="7ca55-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="007dc-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="007dc-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="7ca55-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="7ca55-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="007dc-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="007dc-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="7ca55-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="7ca55-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="007dc-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="007dc-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="7ca55-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="7ca55-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="7ca55-108">**SWIFT-kod:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="7ca55-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="7ca55-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="7ca55-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="7ca55-110">**Kontonummer:** 12510049</span><span class="sxs-lookup"><span data-stu-id="7ca55-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="7ca55-111">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="7ca55-111">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="007dc-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="007dc-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="007dc-108">**SWIFT-kod:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="007dc-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="007dc-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="007dc-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="007dc-110">**Kontonummer:** 12510049</span><span class="sxs-lookup"><span data-stu-id="007dc-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="007dc-111">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="007dc-111">**Account Name:** MICROSOFT</span></span>

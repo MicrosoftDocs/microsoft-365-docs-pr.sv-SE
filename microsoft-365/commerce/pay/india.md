@@ -20,8 +20,8 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536652"
 ---
-# <a name="payment-information-for-india"></a><span data-ttu-id="13250-103">Betalningsinformation för Indien</span><span class="sxs-lookup"><span data-stu-id="13250-103">Payment information for India</span></span>
+# <a name="payment-information-for-india"></a><span data-ttu-id="e42fe-103">Betalningsinformation för Indien</span><span class="sxs-lookup"><span data-stu-id="e42fe-103">Payment information for India</span></span>
 
-<span data-ttu-id="13250-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="13250-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="e42fe-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="e42fe-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="13250-105">Följ betalningsanvisningarna på fakturan och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="13250-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="e42fe-105">Följ betalningsanvisningarna på fakturan och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="e42fe-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>

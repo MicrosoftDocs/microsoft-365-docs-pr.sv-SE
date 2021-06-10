@@ -24,6 +24,6 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "52161615"
 ---
-# <a name="review-case-data-in-advanced-ediscovery"></a><span data-ttu-id="28e14-103">Granska ärendedata i Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="28e14-103">Review case data in Advanced eDiscovery</span></span>
+# <a name="review-case-data-in-advanced-ediscovery"></a><span data-ttu-id="ae1d6-103">Granska ärendedata i Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="ae1d6-103">Review case data in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="28e14-104">Kommer snart.</span><span class="sxs-lookup"><span data-stu-id="28e14-104">Coming soon.</span></span>
+<span data-ttu-id="ae1d6-104">Kommer snart.</span><span class="sxs-lookup"><span data-stu-id="ae1d6-104">Coming soon.</span></span>

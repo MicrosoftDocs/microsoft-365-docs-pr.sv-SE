@@ -20,16 +20,16 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536508"
 ---
-# <a name="payment-information-for-kuwait"></a><span data-ttu-id="8e027-103">Betalningsinformation för Kuwait</span><span class="sxs-lookup"><span data-stu-id="8e027-103">Payment information for Kuwait</span></span>
+# <a name="payment-information-for-kuwait"></a><span data-ttu-id="cb8cb-103">Betalningsinformation för Kuwait</span><span class="sxs-lookup"><span data-stu-id="cb8cb-103">Payment information for Kuwait</span></span>
 
-<span data-ttu-id="8e027-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="8e027-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="cb8cb-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="cb8cb-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="8e027-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="8e027-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="cb8cb-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="cb8cb-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="8e027-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="8e027-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="cb8cb-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="cb8cb-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="8e027-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="8e027-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="8e027-108">**SWIFT-kod:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="8e027-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="8e027-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="8e027-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="8e027-110">**Kontonummer:** 12510049</span><span class="sxs-lookup"><span data-stu-id="8e027-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="8e027-111">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="8e027-111">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="cb8cb-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="cb8cb-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="cb8cb-108">**SWIFT-kod:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="cb8cb-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="cb8cb-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="cb8cb-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="cb8cb-110">**Kontonummer:** 12510049</span><span class="sxs-lookup"><span data-stu-id="cb8cb-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="cb8cb-111">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="cb8cb-111">**Account Name:** MICROSOFT</span></span>

@@ -23,6 +23,6 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "52161620"
 ---
-# <a name="manage-load-sets-in-advanced-ediscovery"></a><span data-ttu-id="045f9-103">Hantera inläsningsuppsättningar i Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="045f9-103">Manage load sets in Advanced eDiscovery</span></span>
+# <a name="manage-load-sets-in-advanced-ediscovery"></a><span data-ttu-id="55211-103">Hantera inläsningsuppsättningar i Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="55211-103">Manage load sets in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="045f9-104">Innehåll kommer snart.</span><span class="sxs-lookup"><span data-stu-id="045f9-104">Content coming soon.</span></span>
+<span data-ttu-id="55211-104">Innehåll kommer snart.</span><span class="sxs-lookup"><span data-stu-id="55211-104">Content coming soon.</span></span>

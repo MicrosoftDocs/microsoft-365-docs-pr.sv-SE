@@ -24,13 +24,13 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/17/2020
 ms.locfileid: "52161508"
 ---
-# <a name="manage-cases-in-core-ediscovery"></a><span data-ttu-id="f656f-103">Hantera ärenden i grundläggande e-dataidentifiering</span><span class="sxs-lookup"><span data-stu-id="f656f-103">Manage cases in core eDiscovery</span></span>
+# <a name="manage-cases-in-core-ediscovery"></a><span data-ttu-id="15c50-103">Hantera ärenden i grundläggande e-dataidentifiering</span><span class="sxs-lookup"><span data-stu-id="15c50-103">Manage cases in core eDiscovery</span></span>
 
-## <a name="create-a-case"></a><span data-ttu-id="f656f-104">Skapa ett ärende</span><span class="sxs-lookup"><span data-stu-id="f656f-104">Create a case</span></span>
+## <a name="create-a-case"></a><span data-ttu-id="15c50-104">Skapa ett ärende</span><span class="sxs-lookup"><span data-stu-id="15c50-104">Create a case</span></span>
 
-## <a name="close-a-case"></a><span data-ttu-id="f656f-105">Stänga ett ärende</span><span class="sxs-lookup"><span data-stu-id="f656f-105">Close a case</span></span>
+## <a name="close-a-case"></a><span data-ttu-id="15c50-105">Stänga ett ärende</span><span class="sxs-lookup"><span data-stu-id="15c50-105">Close a case</span></span>
 
-## <a name="reopen-a-case"></a><span data-ttu-id="f656f-106">Öppna ett ärende igen</span><span class="sxs-lookup"><span data-stu-id="f656f-106">Reopen a case</span></span>
+## <a name="reopen-a-case"></a><span data-ttu-id="15c50-106">Öppna ett ärende igen</span><span class="sxs-lookup"><span data-stu-id="15c50-106">Reopen a case</span></span>
 
-## <a name="delete-a-case"></a><span data-ttu-id="f656f-107">Ta bort ett ärende</span><span class="sxs-lookup"><span data-stu-id="f656f-107">Delete a case</span></span>
+## <a name="delete-a-case"></a><span data-ttu-id="15c50-107">Ta bort ett ärende</span><span class="sxs-lookup"><span data-stu-id="15c50-107">Delete a case</span></span>
 

@@ -25,6 +25,6 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "52161618"
 ---
-# <a name="annotate-and-redact-documents-in-a-review-set-in-advanced-ediscovery"></a><span data-ttu-id="6bee5-103">Kommentera och göra om dokument i en granskningsuppsättning i Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="6bee5-103">Annotate and redact documents in a review set in Advanced eDiscovery</span></span>
+# <a name="annotate-and-redact-documents-in-a-review-set-in-advanced-ediscovery"></a><span data-ttu-id="05aad-103">Kommentera och göra om dokument i en granskningsuppsättning i Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="05aad-103">Annotate and redact documents in a review set in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="6bee5-104">Innehåll kommer snart.</span><span class="sxs-lookup"><span data-stu-id="6bee5-104">Content coming soon.</span></span>
+<span data-ttu-id="05aad-104">Innehåll kommer snart.</span><span class="sxs-lookup"><span data-stu-id="05aad-104">Content coming soon.</span></span>
