@@ -20,16 +20,16 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536364"
 ---
-# <a name="payment-information-for-peru"></a><span data-ttu-id="4d21f-103">Betalningsinformation för Peru</span><span class="sxs-lookup"><span data-stu-id="4d21f-103">Payment information for Peru</span></span>
+# <a name="payment-information-for-peru"></a><span data-ttu-id="19469-103">Betalningsinformation för Peru</span><span class="sxs-lookup"><span data-stu-id="19469-103">Payment information for Peru</span></span>
 
-<span data-ttu-id="4d21f-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="4d21f-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="19469-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="19469-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="4d21f-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="4d21f-105">Please pay in USD only and reference invoice number(s) on the payment remittance.</span></span>
+<span data-ttu-id="19469-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="19469-105">Please pay in USD only and reference invoice number(s) on the payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="4d21f-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="4d21f-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="19469-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="19469-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="4d21f-107">**Bank:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="4d21f-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="4d21f-108">**Branch:** Dallas</span><span class="sxs-lookup"><span data-stu-id="4d21f-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="4d21f-109">**SWIFT-kod:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="4d21f-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="4d21f-110">**Kontonummer:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="4d21f-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="4d21f-111">**Kontonamn:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="4d21f-111">**Account Name:** Microsoft</span></span>
+<span data-ttu-id="19469-107">**Bank:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="19469-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="19469-108">**Branch:** Dallas</span><span class="sxs-lookup"><span data-stu-id="19469-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="19469-109">**SWIFT-kod:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="19469-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="19469-110">**Kontonummer:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="19469-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="19469-111">**Kontonamn:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="19469-111">**Account Name:** Microsoft</span></span>
