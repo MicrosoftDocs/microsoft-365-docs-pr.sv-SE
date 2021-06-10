@@ -19,18 +19,18 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296786"
 ---
-# <a name="contact-support-for-colombia"></a><span data-ttu-id="5c00b-103">Kontakta support för Colombia</span><span class="sxs-lookup"><span data-stu-id="5c00b-103">Contact support for Colombia</span></span>
+# <a name="contact-support-for-colombia"></a><span data-ttu-id="f982b-103">Kontakta support för Colombia</span><span class="sxs-lookup"><span data-stu-id="f982b-103">Contact support for Colombia</span></span>
 
-<span data-ttu-id="5c00b-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="5c00b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="f982b-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="f982b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="5c00b-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="5c00b-105">Phone number</span></span>
-<span data-ttu-id="5c00b-106">01 800 518 1781</span><span class="sxs-lookup"><span data-stu-id="5c00b-106">01 800 518 1781</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f982b-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f982b-105">Phone number</span></span>
+<span data-ttu-id="f982b-106">01 800 518 1781</span><span class="sxs-lookup"><span data-stu-id="f982b-106">01 800 518 1781</span></span>
 
-## <a name="hours"></a><span data-ttu-id="5c00b-107">Tider</span><span class="sxs-lookup"><span data-stu-id="5c00b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="5c00b-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="5c00b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f982b-107">Tider</span><span class="sxs-lookup"><span data-stu-id="f982b-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f982b-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="f982b-108">Billing Support:</span></span>
 
-<span data-ttu-id="5c00b-109">Spanska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="5c00b-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="f982b-109">Spanska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="f982b-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="5c00b-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="5c00b-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f982b-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="f982b-110">Technical Support:</span></span>
 
-<span data-ttu-id="5c00b-111">Spanska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="5c00b-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f982b-111">Spanska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="f982b-111">Spanish: 24 hours a day, 7 days a week</span></span>

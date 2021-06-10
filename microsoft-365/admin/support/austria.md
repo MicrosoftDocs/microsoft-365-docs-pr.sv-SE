@@ -19,26 +19,26 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296605"
 ---
-# <a name="contact-support-for-austria"></a><span data-ttu-id="c33cf-103">Kontakta supporten för Österrike</span><span class="sxs-lookup"><span data-stu-id="c33cf-103">Contact support for Austria</span></span>
+# <a name="contact-support-for-austria"></a><span data-ttu-id="326f6-103">Kontakta supporten för Österrike</span><span class="sxs-lookup"><span data-stu-id="326f6-103">Contact support for Austria</span></span>
 
-<span data-ttu-id="c33cf-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c33cf-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="326f6-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="326f6-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c33cf-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c33cf-105">Phone number</span></span>
-<span data-ttu-id="c33cf-106">0800 080 650</span><span class="sxs-lookup"><span data-stu-id="c33cf-106">0800 080 650</span></span>
+## <a name="phone-number"></a><span data-ttu-id="326f6-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="326f6-105">Phone number</span></span>
+<span data-ttu-id="326f6-106">0800 080 650</span><span class="sxs-lookup"><span data-stu-id="326f6-106">0800 080 650</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c33cf-107">Tider</span><span class="sxs-lookup"><span data-stu-id="c33cf-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c33cf-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="c33cf-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="326f6-107">Tider</span><span class="sxs-lookup"><span data-stu-id="326f6-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="326f6-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="326f6-108">Billing Support:</span></span>
 
-<span data-ttu-id="c33cf-109">Tyska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="c33cf-109">German: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="326f6-109">Tyska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="326f6-109">German: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="c33cf-110">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="c33cf-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="326f6-110">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="326f6-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c33cf-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="c33cf-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="326f6-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="326f6-111">Technical Support:</span></span>
 
-<span data-ttu-id="c33cf-112">Tyska: Mon-Fri 08:00–19:00</span><span class="sxs-lookup"><span data-stu-id="c33cf-112">German: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="326f6-112">Tyska: Mon-Fri 08:00–19:00</span><span class="sxs-lookup"><span data-stu-id="326f6-112">German: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="c33cf-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="c33cf-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="326f6-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="326f6-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="c33cf-114">Alternativ Telefon tal: 01 206 09 15 78</span><span class="sxs-lookup"><span data-stu-id="c33cf-114">Alternative Phone Number: 01 206 09 15 78</span></span>
+<span data-ttu-id="326f6-114">Alternativ Telefon tal: 01 206 09 15 78</span><span class="sxs-lookup"><span data-stu-id="326f6-114">Alternative Phone Number: 01 206 09 15 78</span></span>
 
-<span data-ttu-id="c33cf-115">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="c33cf-115">Local call charges apply</span></span>
+<span data-ttu-id="326f6-115">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="326f6-115">Local call charges apply</span></span>

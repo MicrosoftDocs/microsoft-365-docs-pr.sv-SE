@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297002"
 ---
-# <a name="contact-support-for-american-samoa"></a><span data-ttu-id="f61be-103">Kontakta supporten för amerikanska Samoa</span><span class="sxs-lookup"><span data-stu-id="f61be-103">Contact support for American Samoa</span></span>
+# <a name="contact-support-for-american-samoa"></a><span data-ttu-id="02d31-103">Kontakta supporten för amerikanska Samoa</span><span class="sxs-lookup"><span data-stu-id="02d31-103">Contact support for American Samoa</span></span>
 
-<span data-ttu-id="f61be-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="f61be-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="02d31-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="02d31-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f61be-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f61be-105">Phone number</span></span>
-<span data-ttu-id="f61be-106">800-865-9408</span><span class="sxs-lookup"><span data-stu-id="f61be-106">800-865-9408</span></span>
+## <a name="phone-number"></a><span data-ttu-id="02d31-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="02d31-105">Phone number</span></span>
+<span data-ttu-id="02d31-106">800-865-9408</span><span class="sxs-lookup"><span data-stu-id="02d31-106">800-865-9408</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f61be-107">Tider</span><span class="sxs-lookup"><span data-stu-id="f61be-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f61be-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="f61be-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="02d31-107">Tider</span><span class="sxs-lookup"><span data-stu-id="02d31-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="02d31-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="02d31-108">Billing Support:</span></span>
 
-<span data-ttu-id="f61be-109">Engelska: Mon-Fri 06:00–17:00</span><span class="sxs-lookup"><span data-stu-id="f61be-109">English: Mon-Fri 6 AM-2 PM</span></span>
+<span data-ttu-id="02d31-109">Engelska: Mon-Fri 06:00–17:00</span><span class="sxs-lookup"><span data-stu-id="02d31-109">English: Mon-Fri 6 AM-2 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f61be-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="f61be-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="02d31-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="02d31-110">Technical Support:</span></span>
 
-<span data-ttu-id="f61be-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="f61be-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="02d31-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="02d31-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="f61be-112">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="f61be-112">Local call charges apply</span></span>
+<span data-ttu-id="02d31-112">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="02d31-112">Local call charges apply</span></span>

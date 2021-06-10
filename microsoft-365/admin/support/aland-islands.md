@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296689"
 ---
-# <a name="contact-support-for-aland-islands"></a><span data-ttu-id="a1027-103">Kontakta supporten för Ön</span><span class="sxs-lookup"><span data-stu-id="a1027-103">Contact support for Aland Islands</span></span>
+# <a name="contact-support-for-aland-islands"></a><span data-ttu-id="1d1f8-103">Kontakta supporten för Ön</span><span class="sxs-lookup"><span data-stu-id="1d1f8-103">Contact support for Aland Islands</span></span>
 
-<span data-ttu-id="a1027-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="a1027-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="1d1f8-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="1d1f8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="a1027-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="a1027-105">Phone number</span></span>
-<span data-ttu-id="a1027-106">08009 8462</span><span class="sxs-lookup"><span data-stu-id="a1027-106">08009 8462</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1d1f8-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="1d1f8-105">Phone number</span></span>
+<span data-ttu-id="1d1f8-106">08009 8462</span><span class="sxs-lookup"><span data-stu-id="1d1f8-106">08009 8462</span></span>
 
-## <a name="hours"></a><span data-ttu-id="a1027-107">Tider</span><span class="sxs-lookup"><span data-stu-id="a1027-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="a1027-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="a1027-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1d1f8-107">Tider</span><span class="sxs-lookup"><span data-stu-id="1d1f8-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1d1f8-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="1d1f8-108">Billing Support:</span></span>
 
-<span data-ttu-id="a1027-109">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="a1027-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="1d1f8-109">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="1d1f8-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="a1027-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="a1027-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1d1f8-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="1d1f8-110">Technical Support:</span></span>
 
-<span data-ttu-id="a1027-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="a1027-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1d1f8-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="1d1f8-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="a1027-112">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="a1027-112">Local call charges apply</span></span>
+<span data-ttu-id="1d1f8-112">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="1d1f8-112">Local call charges apply</span></span>

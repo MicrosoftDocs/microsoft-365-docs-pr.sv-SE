@@ -19,22 +19,22 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296822"
 ---
-# <a name="contact-support-for-canada"></a><span data-ttu-id="8379c-103">Kontakta support för Kanada</span><span class="sxs-lookup"><span data-stu-id="8379c-103">Contact support for Canada</span></span>
+# <a name="contact-support-for-canada"></a><span data-ttu-id="68877-103">Kontakta support för Kanada</span><span class="sxs-lookup"><span data-stu-id="68877-103">Contact support for Canada</span></span>
 
-<span data-ttu-id="8379c-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="8379c-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="68877-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="68877-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="8379c-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="8379c-105">Phone number</span></span>
-<span data-ttu-id="8379c-106">1 800 865 9408</span><span class="sxs-lookup"><span data-stu-id="8379c-106">1 800 865 9408</span></span>
+## <a name="phone-number"></a><span data-ttu-id="68877-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="68877-105">Phone number</span></span>
+<span data-ttu-id="68877-106">1 800 865 9408</span><span class="sxs-lookup"><span data-stu-id="68877-106">1 800 865 9408</span></span>
 
-## <a name="hours"></a><span data-ttu-id="8379c-107">Tider</span><span class="sxs-lookup"><span data-stu-id="8379c-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="8379c-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="8379c-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="68877-107">Tider</span><span class="sxs-lookup"><span data-stu-id="68877-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="68877-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="68877-108">Billing Support:</span></span>
 
-<span data-ttu-id="8379c-109">Engelska: Mon-Fri 9:00–17 Lokal</span><span class="sxs-lookup"><span data-stu-id="8379c-109">English: Mon-Fri 9 AM-5 PM Local</span></span>
+<span data-ttu-id="68877-109">Engelska: Mon-Fri 9:00–17 Lokal</span><span class="sxs-lookup"><span data-stu-id="68877-109">English: Mon-Fri 9 AM-5 PM Local</span></span>
 
-<span data-ttu-id="8379c-110">Franska: Mon-Fri 9:00–17:00 ET</span><span class="sxs-lookup"><span data-stu-id="8379c-110">French: Mon-Fri 9 AM-5 PM ET</span></span>
+<span data-ttu-id="68877-110">Franska: Mon-Fri 9:00–17:00 ET</span><span class="sxs-lookup"><span data-stu-id="68877-110">French: Mon-Fri 9 AM-5 PM ET</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="8379c-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="8379c-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="68877-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="68877-111">Technical Support:</span></span>
 
-<span data-ttu-id="8379c-112">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="8379c-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="68877-112">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="68877-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="8379c-113">Franska: Mon-Fri 9:00–17:00 ET</span><span class="sxs-lookup"><span data-stu-id="8379c-113">French: Mon-Fri 9 AM-5 PM ET</span></span>
+<span data-ttu-id="68877-113">Franska: Mon-Fri 9:00–17:00 ET</span><span class="sxs-lookup"><span data-stu-id="68877-113">French: Mon-Fri 9 AM-5 PM ET</span></span>

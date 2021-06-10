@@ -19,22 +19,22 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296894"
 ---
-# <a name="contact-support-for-bonaire"></a><span data-ttu-id="ee92a-103">Kontakta supporten för Bonaire</span><span class="sxs-lookup"><span data-stu-id="ee92a-103">Contact support for Bonaire</span></span>
+# <a name="contact-support-for-bonaire"></a><span data-ttu-id="62832-103">Kontakta supporten för Bonaire</span><span class="sxs-lookup"><span data-stu-id="62832-103">Contact support for Bonaire</span></span>
 
-<span data-ttu-id="ee92a-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="ee92a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="62832-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="62832-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="ee92a-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="ee92a-105">Phone number</span></span>
-<span data-ttu-id="ee92a-106">+1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="ee92a-106">+1 312 843 5146</span></span>
+## <a name="phone-number"></a><span data-ttu-id="62832-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="62832-105">Phone number</span></span>
+<span data-ttu-id="62832-106">+1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="62832-106">+1 312 843 5146</span></span>
 
-## <a name="hours"></a><span data-ttu-id="ee92a-107">Tider</span><span class="sxs-lookup"><span data-stu-id="ee92a-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="ee92a-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="ee92a-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="62832-107">Tider</span><span class="sxs-lookup"><span data-stu-id="62832-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="62832-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="62832-108">Billing Support:</span></span>
 
-<span data-ttu-id="ee92a-109">Nederländska: Mon-Fri 4 am-på dagen</span><span class="sxs-lookup"><span data-stu-id="ee92a-109">Dutch: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="62832-109">Nederländska: Mon-Fri 4 am-på dagen</span><span class="sxs-lookup"><span data-stu-id="62832-109">Dutch: Mon-Fri 4 AM-noon</span></span>
 
-<span data-ttu-id="ee92a-110">Engelska: Mon-Fri 16:00 på dagen</span><span class="sxs-lookup"><span data-stu-id="ee92a-110">English: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="62832-110">Engelska: Mon-Fri 16:00 på dagen</span><span class="sxs-lookup"><span data-stu-id="62832-110">English: Mon-Fri 4 AM-noon</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="ee92a-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="ee92a-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="62832-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="62832-111">Technical Support:</span></span>
 
-<span data-ttu-id="ee92a-112">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="ee92a-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="62832-112">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="62832-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="ee92a-113">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="ee92a-113">International call charges apply</span></span>
+<span data-ttu-id="62832-113">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="62832-113">International call charges apply</span></span>
