@@ -27,19 +27,19 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/29/2021
 ms.locfileid: "52706504"
 ---
-# <a name="easily-share-files-externally"></a><span data-ttu-id="5d494-103">Dela filer externt på ett enkelt sätt</span><span class="sxs-lookup"><span data-stu-id="5d494-103">Easily share files externally</span></span>
+# <a name="easily-share-files-externally"></a><span data-ttu-id="b2285-103">Dela filer externt på ett enkelt sätt</span><span class="sxs-lookup"><span data-stu-id="b2285-103">Easily share files externally</span></span>
 
-## <a name="watch-share-files-with-an-anyone-link"></a><span data-ttu-id="5d494-104">Titta: Dela filer med en länk för alla</span><span class="sxs-lookup"><span data-stu-id="5d494-104">Watch: Share files with an Anyone link</span></span>
+## <a name="watch-share-files-with-an-anyone-link"></a><span data-ttu-id="b2285-104">Titta: Dela filer med en länk för alla</span><span class="sxs-lookup"><span data-stu-id="b2285-104">Watch: Share files with an Anyone link</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 
-<span data-ttu-id="5d494-105">Om du vill dela filer med kunder och arbeta på dokument tillsammans använder du länken Alla i Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="5d494-105">To share files with your customers and work on documents together, use an Anyone link in Microsoft 365.</span></span>
+<span data-ttu-id="b2285-105">Om du vill dela filer med kunder och arbeta på dokument tillsammans använder du länken Alla i Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="b2285-105">To share files with your customers and work on documents together, use an Anyone link in Microsoft 365.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="5d494-106">Prova själv!</span><span class="sxs-lookup"><span data-stu-id="5d494-106">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="b2285-106">Prova själv!</span><span class="sxs-lookup"><span data-stu-id="b2285-106">Try it!</span></span>
 
-1. <span data-ttu-id="5d494-107">På din SharePoint väljer du den mapp som du vill dela, **väljer Dela** och klickar sedan på knappen länkinställningar.</span><span class="sxs-lookup"><span data-stu-id="5d494-107">From your SharePoint site, select the folder you want to share, choose **Share**, and then click the link settings button.</span></span>
-1. <span data-ttu-id="5d494-108">I fönstret **Inställningar** kontrollerar du att **Alla** är markerat.</span><span class="sxs-lookup"><span data-stu-id="5d494-108">In the **Link Settings** window, make sure **Anyone** is selected.</span></span> <span data-ttu-id="5d494-109">Om det här alternativet är nedtonat måste det aktiveras i SharePoint administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="5d494-109">If this option is grayed out, it needs to be turned on in the SharePoint admin center.</span></span>
-1. <span data-ttu-id="5d494-110">Du kan också markera **kryssrutan Tillåt** redigering och ange ett utgångsdatum för länken.</span><span class="sxs-lookup"><span data-stu-id="5d494-110">Optionally, select the **Allow editing** check box and enter an expiration date for the link.</span></span>
-1. <span data-ttu-id="5d494-111">Välj **Använd**.</span><span class="sxs-lookup"><span data-stu-id="5d494-111">Choose **Apply**.</span></span>
-1. <span data-ttu-id="5d494-112">I fönstret **Skicka länk** anger du kundens e-postadress, skriver ett meddelande och väljer **Skicka**.</span><span class="sxs-lookup"><span data-stu-id="5d494-112">In the **Send Link** window, enter your customer's email address, type a message, and choose **Send**.</span></span>
-1. <span data-ttu-id="5d494-113">Kunden får ett e-postmeddelande med ditt meddelande och en länk till filerna.</span><span class="sxs-lookup"><span data-stu-id="5d494-113">Your customer will receive an email with your message and a link to your files.</span></span>
+1. <span data-ttu-id="b2285-107">På din SharePoint väljer du den mapp som du vill dela, **väljer Dela** och klickar sedan på knappen länkinställningar.</span><span class="sxs-lookup"><span data-stu-id="b2285-107">From your SharePoint site, select the folder you want to share, choose **Share**, and then click the link settings button.</span></span>
+1. <span data-ttu-id="b2285-108">I fönstret **Inställningar** kontrollerar du att **Alla** är markerat.</span><span class="sxs-lookup"><span data-stu-id="b2285-108">In the **Link Settings** window, make sure **Anyone** is selected.</span></span> <span data-ttu-id="b2285-109">Om det här alternativet är nedtonat måste det aktiveras i SharePoint administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="b2285-109">If this option is grayed out, it needs to be turned on in the SharePoint admin center.</span></span>
+1. <span data-ttu-id="b2285-110">Du kan också markera **kryssrutan Tillåt** redigering och ange ett utgångsdatum för länken.</span><span class="sxs-lookup"><span data-stu-id="b2285-110">Optionally, select the **Allow editing** check box and enter an expiration date for the link.</span></span>
+1. <span data-ttu-id="b2285-111">Välj **Använd**.</span><span class="sxs-lookup"><span data-stu-id="b2285-111">Choose **Apply**.</span></span>
+1. <span data-ttu-id="b2285-112">I fönstret **Skicka länk** anger du kundens e-postadress, skriver ett meddelande och väljer **Skicka**.</span><span class="sxs-lookup"><span data-stu-id="b2285-112">In the **Send Link** window, enter your customer's email address, type a message, and choose **Send**.</span></span>
+1. <span data-ttu-id="b2285-113">Kunden får ett e-postmeddelande med ditt meddelande och en länk till filerna.</span><span class="sxs-lookup"><span data-stu-id="b2285-113">Your customer will receive an email with your message and a link to your files.</span></span>

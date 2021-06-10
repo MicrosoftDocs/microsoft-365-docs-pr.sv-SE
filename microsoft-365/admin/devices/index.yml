@@ -32,7 +32,7 @@ landingContent:
       url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
-    - text: Konfigurera automatisk registrering för Windows 10-enheter
+    - text: Konfigurera automatisk registrering för Windows 10 enheter
       url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: Konfigurera Android-registrering
       url: /mem/intune/enrollment/android-enroll

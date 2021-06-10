@@ -23,64 +23,64 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52771027"
 ---
-# <a name="delete-indicator-api"></a><span data-ttu-id="a162b-104">Ta bort indikator-API</span><span class="sxs-lookup"><span data-stu-id="a162b-104">Delete Indicator API</span></span>
+# <a name="delete-indicator-api"></a><span data-ttu-id="f5c72-104">Ta bort indikator-API</span><span class="sxs-lookup"><span data-stu-id="f5c72-104">Delete Indicator API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="a162b-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="a162b-105">**Applies to:**</span></span>
-- [<span data-ttu-id="a162b-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="a162b-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="a162b-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a162b-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="f5c72-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="f5c72-105">**Applies to:**</span></span>
+- [<span data-ttu-id="f5c72-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="f5c72-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="f5c72-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f5c72-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="a162b-108">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="a162b-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="a162b-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="a162b-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)  
+> <span data-ttu-id="f5c72-108">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="f5c72-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="f5c72-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="f5c72-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)  
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="a162b-110">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="a162b-110">API description</span></span>
-<span data-ttu-id="a162b-111">Tar bort en [indikatortitet](ti-indicator.md) med hjälp av ID.</span><span class="sxs-lookup"><span data-stu-id="a162b-111">Deletes an [Indicator](ti-indicator.md) entity by ID.</span></span>
+## <a name="api-description"></a><span data-ttu-id="f5c72-110">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="f5c72-110">API description</span></span>
+<span data-ttu-id="f5c72-111">Tar bort en [indikatortitet](ti-indicator.md) med hjälp av ID.</span><span class="sxs-lookup"><span data-stu-id="f5c72-111">Deletes an [Indicator](ti-indicator.md) entity by ID.</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="a162b-112">Begränsningar</span><span class="sxs-lookup"><span data-stu-id="a162b-112">Limitations</span></span>
-1. <span data-ttu-id="a162b-113">Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.</span><span class="sxs-lookup"><span data-stu-id="a162b-113">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="f5c72-112">Begränsningar</span><span class="sxs-lookup"><span data-stu-id="f5c72-112">Limitations</span></span>
+1. <span data-ttu-id="f5c72-113">Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.</span><span class="sxs-lookup"><span data-stu-id="f5c72-113">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="a162b-114">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="a162b-114">Permissions</span></span>
-<span data-ttu-id="a162b-115">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="a162b-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="a162b-116">Mer information, inklusive hur du väljer behörigheter, finns i [Komma igång](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="a162b-116">To learn more, including how to choose permissions, see [Get started](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="f5c72-114">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="f5c72-114">Permissions</span></span>
+<span data-ttu-id="f5c72-115">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="f5c72-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="f5c72-116">Mer information, inklusive hur du väljer behörigheter, finns i [Komma igång](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="f5c72-116">To learn more, including how to choose permissions, see [Get started](apis-intro.md)</span></span>
 
-<span data-ttu-id="a162b-117">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="a162b-117">Permission type</span></span> |   <span data-ttu-id="a162b-118">Behörighet</span><span class="sxs-lookup"><span data-stu-id="a162b-118">Permission</span></span>  |   <span data-ttu-id="a162b-119">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="a162b-119">Permission display name</span></span>
+<span data-ttu-id="f5c72-117">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="f5c72-117">Permission type</span></span> |   <span data-ttu-id="f5c72-118">Behörighet</span><span class="sxs-lookup"><span data-stu-id="f5c72-118">Permission</span></span>  |   <span data-ttu-id="f5c72-119">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="f5c72-119">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="a162b-120">Program</span><span class="sxs-lookup"><span data-stu-id="a162b-120">Application</span></span> |   <span data-ttu-id="a162b-121">Ti.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a162b-121">Ti.ReadWrite</span></span> |  <span data-ttu-id="a162b-122">"Läs och skriv TI-indikatorer"</span><span class="sxs-lookup"><span data-stu-id="a162b-122">'Read and write TI Indicators'</span></span>
-<span data-ttu-id="a162b-123">Program</span><span class="sxs-lookup"><span data-stu-id="a162b-123">Application</span></span> |   <span data-ttu-id="a162b-124">Ti.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a162b-124">Ti.ReadWrite.All</span></span> |  <span data-ttu-id="a162b-125">Indikatorer för läsning och skrivning</span><span class="sxs-lookup"><span data-stu-id="a162b-125">'Read and write Indicators'</span></span>
+<span data-ttu-id="f5c72-120">Program</span><span class="sxs-lookup"><span data-stu-id="f5c72-120">Application</span></span> |   <span data-ttu-id="f5c72-121">Ti.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f5c72-121">Ti.ReadWrite</span></span> |  <span data-ttu-id="f5c72-122">"Läs och skriv TI-indikatorer"</span><span class="sxs-lookup"><span data-stu-id="f5c72-122">'Read and write TI Indicators'</span></span>
+<span data-ttu-id="f5c72-123">Program</span><span class="sxs-lookup"><span data-stu-id="f5c72-123">Application</span></span> |   <span data-ttu-id="f5c72-124">Ti.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f5c72-124">Ti.ReadWrite.All</span></span> |  <span data-ttu-id="f5c72-125">Indikatorer för läsning och skrivning</span><span class="sxs-lookup"><span data-stu-id="f5c72-125">'Read and write Indicators'</span></span>
 
 
-## <a name="http-request"></a><span data-ttu-id="a162b-126">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="a162b-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f5c72-126">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="f5c72-126">HTTP request</span></span>
 ```
 Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 ```
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="request-headers"></a><span data-ttu-id="a162b-127">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="a162b-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f5c72-127">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="f5c72-127">Request headers</span></span>
 
-<span data-ttu-id="a162b-128">Namn</span><span class="sxs-lookup"><span data-stu-id="a162b-128">Name</span></span> | <span data-ttu-id="a162b-129">Typ</span><span class="sxs-lookup"><span data-stu-id="a162b-129">Type</span></span> | <span data-ttu-id="a162b-130">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="a162b-130">Description</span></span>
+<span data-ttu-id="f5c72-128">Namn</span><span class="sxs-lookup"><span data-stu-id="f5c72-128">Name</span></span> | <span data-ttu-id="f5c72-129">Typ</span><span class="sxs-lookup"><span data-stu-id="f5c72-129">Type</span></span> | <span data-ttu-id="f5c72-130">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="f5c72-130">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="a162b-131">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="a162b-131">Authorization</span></span> | <span data-ttu-id="a162b-132">Sträng</span><span class="sxs-lookup"><span data-stu-id="a162b-132">String</span></span> | <span data-ttu-id="a162b-133">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="a162b-133">Bearer {token}.</span></span> <span data-ttu-id="a162b-134">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="a162b-134">**Required**.</span></span>
+<span data-ttu-id="f5c72-131">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="f5c72-131">Authorization</span></span> | <span data-ttu-id="f5c72-132">Sträng</span><span class="sxs-lookup"><span data-stu-id="f5c72-132">String</span></span> | <span data-ttu-id="f5c72-133">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="f5c72-133">Bearer {token}.</span></span> <span data-ttu-id="f5c72-134">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="f5c72-134">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="a162b-135">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="a162b-135">Request body</span></span>
-<span data-ttu-id="a162b-136">Tom</span><span class="sxs-lookup"><span data-stu-id="a162b-136">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="f5c72-135">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="f5c72-135">Request body</span></span>
+<span data-ttu-id="f5c72-136">Tom</span><span class="sxs-lookup"><span data-stu-id="f5c72-136">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="a162b-137">Svar</span><span class="sxs-lookup"><span data-stu-id="a162b-137">Response</span></span>
-<span data-ttu-id="a162b-138">Om indikator finns och tagits bort korrekt – 204 OK utan innehåll.</span><span class="sxs-lookup"><span data-stu-id="a162b-138">If Indicator exist and deleted successfully - 204 OK without content.</span></span>
-<span data-ttu-id="a162b-139">Om indikator med det angivna ID:t hittades inte – 404 Hittades inte.</span><span class="sxs-lookup"><span data-stu-id="a162b-139">If Indicator with the specified id was not found - 404 Not Found.</span></span>
+## <a name="response"></a><span data-ttu-id="f5c72-137">Svar</span><span class="sxs-lookup"><span data-stu-id="f5c72-137">Response</span></span>
+<span data-ttu-id="f5c72-138">Om indikator finns och tagits bort korrekt – 204 OK utan innehåll.</span><span class="sxs-lookup"><span data-stu-id="f5c72-138">If Indicator exist and deleted successfully - 204 OK without content.</span></span>
+<span data-ttu-id="f5c72-139">Om indikator med det angivna ID:t hittades inte – 404 Hittades inte.</span><span class="sxs-lookup"><span data-stu-id="f5c72-139">If Indicator with the specified id was not found - 404 Not Found.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a162b-140">Exempel</span><span class="sxs-lookup"><span data-stu-id="a162b-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f5c72-140">Exempel</span><span class="sxs-lookup"><span data-stu-id="f5c72-140">Example</span></span>
 
-<span data-ttu-id="a162b-141">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="a162b-141">**Request**</span></span>
+<span data-ttu-id="f5c72-141">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="f5c72-141">**Request**</span></span>
 
-<span data-ttu-id="a162b-142">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="a162b-142">Here is an example of the request.</span></span>
+<span data-ttu-id="f5c72-142">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="f5c72-142">Here is an example of the request.</span></span>
 
 ```http
 DELETE https://api.securitycenter.microsoft.com/api/indicators/995

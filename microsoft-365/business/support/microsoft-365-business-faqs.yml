@@ -51,7 +51,7 @@ sections:
 
       - Programskydd för Office och andra mobilappar med Intune App Protection.
 
-      - Enhetshantering för Windows 10-datorer, macOS och mobila enheter med Intune-enhetshantering.
+      - Enhetshantering för Windows 10 pc, macOS och mobila enheter med Intune-enhetshantering.
 
       - Identitetsskydd med multi-faktor autentisering, självbetjäning för återställning av lösenord och villkorsstyrd åtkomst.
 
@@ -73,7 +73,7 @@ sections:
       **Andra berättiganden:**
 
 
-      - Microsoft 365 Business Premium-kunder har även tillgång till funktioner för Windows Virtual Desktop och aktivering av delade datorer för Office. Läs [Microsoft 365 Business Premium-bloggen](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) för att få mer information. Se även [Tjänstbeskrivning för Microsoft 365 för företag.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
+      - Microsoft 365 Business Premium-kunder har även tillgång till funktioner för Windows Virtual Desktop och aktivering av delade datorer för Office. Läs [Microsoft 365 Business Premium-bloggen](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) för att få mer information. Se även [beskrivningen Microsoft 365 för företag.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
   - question: Vem ska överväga att anta Microsoft 365 Business Premium?
     answer: >
       Microsoft 365 Business Premium är en omfattande, molnbaserad säkerhetslösning som gör att du kan:
@@ -117,7 +117,7 @@ sections:
       Windows 10 Business är en uppsättning molntjänster och funktioner för enhetshantering som kompletterar Windows 10 Pro och ger tillgång till centraliserad hantering och säkerhetskontroller i Microsoft 365 Business Premium.
 
 
-      Windows 10 Business levereras också med vissa premiumfunktioner i Microsoft Defender, som kontrollerad mappåtkomst och nätverksskydd för webbaserade hot. Den innehåller även Windows autopilot, en tjänst som underlättar distribution av nya Windows 10-datorer.
+      Windows 10 Business även vissa premiumfunktioner i Microsoft Defender, som kontrollerad mappåtkomst och nätverksskydd för webbaserade hot. Den innehåller även Windows autopilot, en tjänst som underlättar distribution av nya Windows 10-datorer.
 
 
       Om du har enheter som är licensierade för Windows 7, 8 och 8.1 Professional ger Microsoft 365 Business Premium en uppgradering till Windows 10 Pro, som är kraven för att distribuera Windows 10 Business.
@@ -136,13 +136,13 @@ sections:
       - **Programskyddet för mobila appar för Office** hjälper till att skydda Office-data, till exempel e-post, kalender, kontakter och dokument på mobila iOS- och Android-enheter, genom att aktivera principer som att automatiskt ta bort företagsdata efter att inte har anslutit till tjänsten inom en före skriven tidsperiod som kräver att denna information lagras endast i OneDrive för företag, kräver en PIN-kod för att få åtkomst till Office-program och förhindra att företagsdata kopieras från ett Office-program till personliga appar. Hantering av mobilprogram för andra mobilappar via Intune finns också för Microsoft 365 Business Premium-prenumeranter.
 
 
-      - **Med enhetshantering för Windows 10-datorer** kan företag välja att ange och tillämpa funktioner som Microsoft Defender Antivirus protection för skadlig programvara, automatiska uppdateringar och stänga av skärmar efter en viss tid. Dessutom kan förlorade eller stulna Windows 10-enheter rensa bort affärsprogram och data helt och hållet med hjälp av administrationscentret.
+      - **Med enhetshantering** för Windows 10-datorer kan företag välja att ange och tillämpa funktioner som Microsoft Defender Antivirus-skydd för skadlig programvara, automatiska uppdateringar och stänga av skärmar efter en viss tid. Dessutom kan förlorade eller stulna Windows 10-enheter rensa bort affärsprogram och data helt och hållet med hjälp av administrationscentret.
 
 
-      - **Enhetshantering för iOS, Android & och macOS** hjälper företag att på ett säkert sätt hantera ett diverse enhets-ekosystem som inkluderar iOS-, Android-, Windows- och macOS-enheter.
+      - **Enhetshantering för iOS- och Android & macOS-funktioner** hjälper företag att hantera ett säkert och diverse enhets-ekosystem som inkluderar iOS-, Android-, Windows- och macOS-enheter.
   - question: Hur kan Microsoft 365 Business Premium skydda datorer i min organisation mot skadliga attacker?
     answer: >
-      Datorer som hanteras med Microsoft 365 Business Premium skyddas med Microsoft Defender Antivirus, som är No. antivirusfunktion nr. 1 i Windows 10, skyddar fler datorer mot virus, skadlig programvara, spionprogram och andra hot jämfört med andra lösningar. Med Microsoft 365 Business Premium kan organisationer se till att Microsoft Defender Antivirus Protection körs och alltid är uppdaterat på alla sina Windows 10-enheter.
+      Datorer som hanteras Microsoft 365 Business Premium skyddas med Microsoft Defender Antivirus, som är Nej. antivirusfunktion nr. 1 i Windows 10, skyddar fler datorer mot virus, skadlig programvara, spionprogram och andra hot jämfört med andra lösningar. Med Microsoft 365 Business Premium kan organisationer se till Microsoft Defender Antivirus skydd är igång och alltid är uppdaterat på alla Windows 10 enheter.
 
 
       Windows 10 Business innehåller även Microsoft Defender Exploit Guard, en ny uppsättning funktioner för skydd mot intrång. En av dess funktioner, kontrollerad mappåtkomst, stoppar utpressningstrojaner genom att låsa mappar och hindra obehöriga appar från att komma åt en användares viktiga filer.
@@ -167,31 +167,31 @@ sections:
     answer: En utvärderingsversion av Microsoft 365 Business Premium är tillgänglig för tjänsteleverantörer av kryptografi (CSP). En utvärderingsversion för direktkunder kommer att bli tillgänglig senare.
   - question: Vad ska kunder och partner ha innan veta innan jag kör Microsoft 365 Business Premium inom deras organisation?
     answer: >
-      Kunder som vill uppleva de fullständiga funktionerna i Microsoft 365 Business Premium måste använda Windows 7, 8.1 eller 10 Pro<sup>2</sup> på sina befintliga skrivbord. Befintliga Windows 10 Pro-datorer bör köra Creators Update om de inte redan har gjort det.
+      Kunder som vill uppleva de fullständiga funktionerna i Microsoft 365 Business Premium måste köra Windows 7, 8.1 eller 10 Pro<sup>2</sup> på sina befintliga skrivbord. Befintliga Windows 10 Pro-datorer bör köra Creators Update om de inte redan har gjort det.
 - name: Distribution
   questions:
   - question: Vad ska kunderna tänka på när de planerar en Microsoft 365 Business Premium-distribution?
     answer: >
       Den mest direkta vägen till en framgångsrik Microsoft 365 Business Premium-distribution är att kommunicera med en Microsoft-partner. De har omfattande utbildning och erfarenhet av en mängd olika kundscenarier och är bäst lämpad för att förstå din miljö och dina behov. Kunder som har erfaren IT-personal kan använda [Komma i gång med Microsoft 365 Business Premium](../microsoft-365-business-overview.md) för att hjälpa dem med Microsoft 365 Business Premium-distribution.
   - question: Innehåller Microsoft 365 Business Premium fullständiga funktioner i Microsoft Intune?
-    answer: Ja, microsoft 365 Business Premium-prenumeranter har licens för att använda fullständiga Intune-funktioner för iOS, Android, macOS och annan enhetshantering på flera plattformar. Funktioner som inte är tillgängliga i den förenklade hanteringskonsolen i Microsoft 365 Business Premium, t.ex. programhantering från tredje part, konfiguration av Wi-Fi-profiler och VPN-certifikat, kan hanteras i den fullständiga Intune-konsolen.
+    answer: Ja, Microsoft 365 Business Premium prenumeranter har licens för att använda fullständiga Intune-funktioner för iOS, Android, macOS och annan enhetshantering på flera plattformar. Funktioner som inte är tillgängliga i den förenklade hanteringskonsolen i Microsoft 365 Business Premium, t.ex. apphantering från tredje part, konfiguration av Wi-Fi-profiler och VPN-certifikat, kan hanteras i den fullständiga Intune-konsolen.
   - question: Följer Azure Active Directory (Azure AD) Premium P1 med Microsoft 365 Business Premium?
     answer: Ja, Azure AD Premium P1 ingår i Microsoft Business Premium.
   - question: Tillåter Microsoft 365 Business Premium att kunderna hanterar Mac:ar?
     answer: Med Intune kan du hantera iOS-, Android-, Windows- och macOS-enheter på ett säkert sätt.
   - question: Vad är Windows Autopilot?
     answer: >
-      Windows Autopilot är en tjänst som underlättar distribution av nya Windows 10-datorer. Du kan utföra den här processen när användaren loggar in på Microsoft 365 Business Premium för första gången&mdash;utan att IT-avdelningen behöver röra enheten&mdash;genom att använda de centraliserade hanteringskontrollerna i Microsoft 365 Business Premium. Du kan också använda Windows Autopilot för befintliga datorer med Windows 10 Professional Creators Update (eller senare) och har återställts till fabriksinställning. Information om Windows AutoPilot finns i blogginlägget [juni 2017.](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/)
+      Windows Autopilot är en tjänst som underlättar distribution av nya Windows 10-datorer. Du kan utföra den här processen när användaren loggar in på Microsoft 365 Business Premium för första gången&mdash;utan att IT-avdelningen behöver röra enheten&mdash;genom att använda de centraliserade hanteringskontrollerna i Microsoft 365 Business Premium. Du kan också använda Windows Autopilot för befintliga datorer med Windows 10 Professional Creators Update (eller senare) och har återställts till fabriksinställning. Information om Windows finns i blogginlägget [juni 2017.](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/)
 - name: Kompatibilitet
   questions:
   - question: Kan jag lägga till Office 365-tilläggsprogram i Microsoft 365 Business Premium?
-    answer: Alla tilläggsprogram som kan läggas till i Microsoft 365 Business Standard kan läggas till i Microsoft 365 Business Premium. Det innebär att du kan köpa Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, MyAnalytics, Power BI Pro och Ljudkonferens.
+    answer: Alla tilläggsprogram som kan läggas till i Microsoft 365 Business Standard kan läggas till i Microsoft 365 Business Premium. Det innebär att du kan köpa Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, MyAnalytics, Power BI Pro och ljudkonferens.
   - question: Kan jag lägga till telefonsystem och samtalsabonnemang i Microsoft 365 Business Premium?
     answer: >
-      Ja, du kan köpa en Business Voice-prenumeration. [Business Voice](/microsoftteams/business-voice/whats-business-voice) är en telefonilösning som är utformad för små och medelstora företag med upp till 300 användare som paketerar telefonsystem, ljudkonferenser, ett nationellt samtalsabonnemang med mera. Funktioner för telefonsystem som du får inkluderar röstbrevlåda, nummerpresentation, parkera samtal, vidareringning, automatisk dirigering och samtalsköer. <br> Om du vill ta reda på om Business Voice är tillgängligt i ditt land eller din region går du till Tillgänglighet [på land och region för Business Voice.](/microsoftteams/business-voice/country-region-availability) Prisinformation finns i Priser [för Business Voice.](https://go.microsoft.com/fwlink/?linkid=2127221)
-  - question: Kan Microsoft 365 Business Premium-kunder använda Microsoft Defender för Endpoint?
+      Ja, du kan köpa en Business Voice-prenumeration. [Business Voice](/microsoftteams/business-voice/whats-business-voice) är en telefonilösning som är utformad för små och medelstora företag med upp till 300 användare som paketerar Telefonsystem, ljudkonferenser, ett nationellt samtalsabonnemang med mera. Telefonsystem funktioner som inkluderar röstbrevlåda, uppringnings-ID, parkera samtal, vidareringning, automatisk dirigering och samtalsköer. <br> Om du vill ta reda på om Business Voice är tillgängligt i ditt land eller din region går du till Tillgänglighet [på land och region för Business Voice.](/microsoftteams/business-voice/country-region-availability) Prisinformation finns i Priser [för Business Voice.](https://go.microsoft.com/fwlink/?linkid=2127221)
+  - question: Kan Microsoft 365 Business Premium använda Microsoft Defender för Endpoint?
     answer: >
-      Ja, Microsoft Defender för Slutpunkt är tillgängligt som ett tillägg till Microsoft 365 Business Premium när de köps från en [Microsoft-molnlösningsleverantör.](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)
+      Ja, Microsoft Defender för Slutpunkt är tillgängligt som ett tillägg till ett Microsoft 365 Business Premium när det köps från en [Leverantör av Microsoft-molnlösningar](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
 - name: Partner-möjligheter
   questions:
   - question: Var kan jag få mer information om möjligheter och fördelar med att bli Microsoft-partner?
@@ -232,6 +232,6 @@ sections:
 additionalContent: >-
   ## <a name="footnotes"></a>Fotnoter
 
-  **1** tillgänglig i USA, Storbritannien och Kanada.
+  **1** Finns i USA, Storbritannien och Kanada.
 
-  **2** enheter med Windows 7 eller 8.1 Pro är kvalificerade för uppgradering till Windows 10 Pro i Microsoft 365 Business Premium förhandsversion.
+  **2** Enheter med Windows 7 eller 8.1 Pro är berättigade till en uppgradering till Windows 10 Pro i Microsoft 365 Business Premium förhandsversionen.
