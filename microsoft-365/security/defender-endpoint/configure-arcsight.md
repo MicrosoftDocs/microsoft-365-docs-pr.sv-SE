@@ -1,6 +1,6 @@
 ---
 title: Konfigurera Micro Focus ArcSight för att hämta Microsoft Defender för identifiering av slutpunkter
-description: Konfigurera Micro Focus ArcSight för att ta emot och dra identifieringar från Microsoft Defender Säkerhetscenter
+description: Konfigurera Micro Focus ArcSight så att den tar emot och hämtar identifieringar Microsoft Defender Säkerhetscenter
 keywords: konfigurera Micro Focus ArcSight, säkerhetsinformation och händelsehanteringsverktyg, arcsight
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -42,11 +42,11 @@ Du måste installera och konfigurera vissa filer och verktyg för att använda M
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Konfigurering av verktyget Micro Focus ArcSight Connector kräver flera konfigurationsfiler för att hämta och tolka identifieringar från Azure Active Directory-programmet (AAD).
+Konfigurering av verktyget Micro Focus ArcSight Connector kräver flera konfigurationsfiler för att dra och tolka identifieringar från programmet Azure Active Directory (AAD).
 
 I det här avsnittet får du hjälp med att ställa in och använda de konfigurationsfiler som krävs.
 
-- Kontrollera att du har aktiverat funktionen SIEM-integrering på **menyn** Inställningar. Mer information finns i Aktivera [SIEM-integrering i Defender för slutpunkt.](enable-siem-integration.md)
+- Kontrollera att du har aktiverat SIEM-integreringsfunktionen på **Inställningar menyn.** Mer information finns i Aktivera [SIEM-integrering i Defender för slutpunkt.](enable-siem-integration.md)
 
 - Se till att filen du sparade från att aktivera SIEM-integreringsfunktionen är klar. Du måste få följande värden:
   - OAuth 2.0 Token refresh URL
@@ -57,7 +57,7 @@ I det här avsnittet får du hjälp med att ställa in och använda de konfigura
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
-    Du skulle ha sparat en ZIP-fil som innehåller de här två filerna när du valde Micro Focus ArcSight som den SIEM-typ du använder i organisationen.
+    Du skulle ha sparat en .zip som innehåller de här två filerna när du valde Micro Focus ArcSight som den SIEM-typ du använder i organisationen.
 
 - Se till att du genererar följande token och har dem redo:
   - Åtkomsttoken
@@ -69,7 +69,7 @@ I det här avsnittet får du hjälp med att ställa in och använda de konfigura
 
 I följande anvisningar förutsätts att du har slutfört alla steg som krävs [i Innan du börjar](#before-you-begin).
 
-1. Installera det senaste 32-bitars Windows FlexConnector-installationsprogrammet. Du hittar detta i HPE Software Center. Verktyget installeras vanligtvis på följande standardplats: `C:\Program Files\ArcSightFlexConnectors\current\bin` .</br></br>Du kan välja var verktyget ska sparas, till exempel C: \\ *folder_location*\current\bin där *folder_location* representerar installationsplats.
+1. Installera det senaste 32-bitarsinstallationsprogrammet Windows FlexConnector. Du hittar detta i HPE Software Center. Verktyget installeras vanligtvis på följande standardplats: `C:\Program Files\ArcSightFlexConnectors\current\bin` .</br></br>Du kan välja var verktyget ska sparas, till exempel C: \\ *folder_location*\current\bin där *folder_location* representerar installationsplats.
 
 2. Följ installationsguiden genom följande uppgifter:
    - Introduktion
@@ -101,11 +101,11 @@ I följande anvisningar förutsätts att du har slutfört alla steg som krävs [
     <tbody style="vertical-align:top;">
     <tr>
     <th>Fält</th>
-    <th>Value</th>
+    <th>Värde</th>
     </tr>
     <tr>
     <td>Konfigurationsfil</td>
-    <td>Skriv namnet på egenskapsfilen för klienten. Namnet måste matcha filen som angavs i ZIP-filen som du hämtade.
+    <td>Skriv namnet på egenskapsfilen för klienten. Namnet måste matcha filen som angavs i .zip du hämtade.
 Om konfigurationsfilen i flexagent-katalogen till exempel heter &quot; &quot;WDATP-Connector.js&quot; onparser.properties måste du skriva &quot; &quot; WDATP-Connector &quot; som namn på egenskapsfilen för klienten.</td>
     </tr>
     <td>URL för händelser</td>
@@ -116,7 +116,7 @@ Om konfigurationsfilen i flexagent-katalogen till exempel heter &quot; &quot;WDA
     <td>OAuth 2</td>
     </tr>
     <td>OAuth 2 Client Properties-fil</td>
-    <td>Bläddra till platsen för <em>wdatp-connector.properties-filen.</em> Namnet måste matcha filen som angavs i ZIP-filen som du hämtade.</td>
+    <td>Bläddra till platsen för <em>wdatp-connector.properties-filen.</em> Namnet måste matcha filen som angavs i .zip du hämtade.</td>
     <tr>
     <td>Uppdatera token</td>
     <td>Du kan hämta en uppdateringstoken på två sätt: genom att generera en uppdateringstoken från sidan <b>SIEM-inställningar</b> eller använda restutil-verktyget. <br><br> Mer information om att generera en uppdateringstoken från <b>inställningarna</b> finns i <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">Aktivera SIEM-integrering i Defender för slutpunkt.</a> </br> </br><b>Hämta uppdateringstoken med verktyget restutil:</b> </br> a. Öppna en kommandotolk. Gå till C:\<em>folder_location</em>\current\bin <em>där folder_location</em> representerar den plats där du installerade verktyget. </br></br> b. Skriv: <code>arcsight restutil token -config</code> från fackkatalogen. Till exempel: <b>arcsight restutil boxtoken -proxy.location.hp.com:8080</b> ett webbläsarfönster öppnas. </br> </br>c. Skriv in dina autentiseringsuppgifter och klicka sedan på lösenordsfältet för att låta sidan omdirigera. I inloggningsupp frågan anger du dina autentiseringsuppgifter. </br> </br>d. En uppdateringstoken visas i kommandotolken. </br></br> e. Kopiera och klistra in den i <b>fältet Uppdatera</b> token.
@@ -177,11 +177,11 @@ Om konfigurationsfilen i flexagent-katalogen till exempel heter &quot; &quot;WDA
 
 9. Gå till **Aktiv kanal ange Ny** villkor  >    >    >  **enhetens enhet produkt**.
 
-10. Ange **enhetsprodukt = Microsoft Defender ATP**. När du har kontrollerat att händelser flödar till verktyget stoppar du processen igen och går till Windows Services och startar ArcSight FlexConnector REST.
+10. Ange **enhet produkt = Microsoft Defender ATP**. När du har kontrollerat att händelser flödar till verktyget stoppar du processen igen och går till Windows Services och startar ArcSight FlexConnector REST.
 
 Nu kan du köra frågor i konsolen Micro Focus ArcSight.
 
-Defender för slutpunktsidentifiering visas som fristående händelser, med "Microsoft" som leverantör och "Windows Defender ATP" som enhetsnamn.
+Defender för slutpunktsidentifiering visas som fristående händelser, med "Microsoft" som leverantör och "atp Windows Defender" som enhetsnamn.
 
 
 ## <a name="troubleshooting-micro-focus-arcsight-connection"></a>Felsöka anslutning för Micro Focus ArcSight

@@ -49,6 +49,6 @@ Dessa kryssrutor måste vara markerade:
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Bevilja MSSP-åtkomst till portalen](grant-mssp-access.md)
-- [Få åtkomst till kundportalen för MSSP](access-mssp-portal.md)
-- [Hämta aviseringar från kundklientorganisationen](fetch-alerts-mssp.md)
+- [Bevilja MSSP åtkomst till portalen](grant-mssp-access.md)
+- [Få åtkomst till MSSP-kundportalen](access-mssp-portal.md)
+- [Hämta varningar från kundens klientorganisation](fetch-alerts-mssp.md)

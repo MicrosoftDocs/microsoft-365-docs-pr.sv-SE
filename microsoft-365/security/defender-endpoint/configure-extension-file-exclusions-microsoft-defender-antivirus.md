@@ -1,6 +1,6 @@
 ---
 title: Konfigurera och validera undantag baserat på tillägg, namn eller plats
-description: Undanta filer från genomsökningar från Microsoft Defender Antivirus baserat på deras filnamnstillägg, filnamn eller plats.
+description: Undanta filer Microsoft Defender Antivirus genomsökningar baserat på deras filnamnstillägg, filnamn eller plats.
 keywords: undantag, filer, tillägg, filtyp, mappnamn, filnamn, genomsökningar
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -31,19 +31,19 @@ ms.locfileid: "52274538"
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Undantag från Microsoft Defender Antivirus gäller inte för andra Microsoft Defender-funktioner för slutpunktsfunktioner, inklusive slutpunktsidentifiering och svar [(EDR), ASR-regler (attack](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)surface [reduction)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)och kontrollerad [mappåtkomst.](/microsoft-365/security/defender-endpoint/controlled-folders) Filer som du undantar med hjälp av metoderna som beskrivs i den här artikeln kan fortfarande utlösa EDR-aviseringar och andra identifieringar. Om du vill utesluta filer allmänt lägger du till dem i anpassade indikatorer i Microsoft Defender [för Slutpunkt.](/microsoft-365/security/defender-endpoint/manage-indicators)
+> Microsoft Defender Antivirus undantag gäller inte för andra Microsoft Defender-funktioner för Slutpunktsfunktioner, till exempel [identifiering och åtgärd på slutpunkt (Identifiering och åtgärd på slutpunkt),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) [ASR-regler (attack surface reduction)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)och [reglerad mappåtkomst.](/microsoft-365/security/defender-endpoint/controlled-folders) Filer som du undantar med de metoder som beskrivs i den här artikeln kan fortfarande utlösa Identifiering och åtgärd på slutpunkt aviseringar och andra identifieringar. Om du vill utesluta filer allmänt lägger du till dem i anpassade indikatorer i Microsoft Defender [för Slutpunkt.](/microsoft-365/security/defender-endpoint/manage-indicators)
 
 ## <a name="exclusion-lists"></a>Undantagslistor
 
-Du kan utesluta vissa filer från genomsökningar för Microsoft Defender Antivirus genom att ändra undantagslistor. **I allmänhet ska du inte behöva tillämpa undantag.** Microsoft Defender Antivirus innehåller många automatiska undantag baserade på kända operativsystemsbeteenden och vanliga hanteringsfiler, till exempel de som används i företagshantering, databashantering och andra företagsscenarier och situationer.
+Du kan utesluta vissa filer från Microsoft Defender Antivirus genomsökningar genom att ändra undantagslistor. **I allmänhet ska du inte behöva tillämpa undantag.** Microsoft Defender Antivirus omfattar många automatiska undantag baserade på kända operativsystemsbeteenden och vanliga hanteringsfiler, till exempel de som används i företagshantering, databashantering och andra företagsscenarier och situationer.
 
 > [!NOTE]
 > Undantag gäller även pua-identifieringar som kan vara oönskade.
 
 > [!NOTE]
-> Automatiska undantag gäller endast för Windows Server 2016 och högre. De här undantagen visas inte i Windows-säkerhetsappen och i PowerShell.
+> Automatiska undantag gäller endast för Windows Server 2016 och högre. Undantagen visas inte i Windows-säkerhet och i PowerShell.
 
-I den här artikeln beskrivs hur du konfigurerar undantagslistor för filer och mappar. Se [Rekommendationer för att definiera undantag](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) innan du definierar dina undantagslistor.
+I den här artikeln beskrivs hur du konfigurerar undantagslistor för filer och mappar. Läs Rekommendationer för att definiera undantag innan du definierar dina [undantagslistor.](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
 
 | Exkludering | Exempel | Undantagslista |
 |:---|:---|:---|
@@ -60,15 +60,15 @@ Undantagslistor har följande egenskaper:
 > [!IMPORTANT]
 > - Om du använder jokertecken som asterisk ( \* ) ändras hur undantagsreglerna tolkas. Viktig information om hur jokertecken fungerar finns i avsnittet Använda jokertecken i filnamn och mappsökväg eller [undantagslistor](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) för tillägg.
 > - Du kan inte utesluta mappade nätverksenheter. Du måste ange den faktiska nätverkssökvägen.
-> - Mappar som ärparspunkter som skapas när Microsoft Defender Antivirus-tjänsten startas och som har lagts till i undantagslistan inkluderas inte. Du måste starta om tjänsten (genom att starta om Windows) för att nya poäng ska tolkas som ett giltigt undantagsmål.
+> - Mappar som är upp till två punkter som skapas när Microsoft Defender Antivirus-tjänsten startas och som har lagts till i undantagslistan inkluderas inte. Du måste starta om tjänsten (genom att starta om Windows) för att nyaparspunkter ska identifieras som ett giltigt undantagsmål.
 
 Information om hur du utesluter filer som öppnas i en viss process finns i Konfigurera och validera [undantag för filer som öppnas med processer.](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 Undantagen gäller för [schemalagda genomsökningar,](scheduled-catch-up-scans-microsoft-defender-antivirus.md) [skanningar på](run-scan-microsoft-defender-antivirus.md)begäran och [realtidsskydd.](configure-real-time-protection-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Ändringar av undantagslistor som görs **med Grupprincip visas** i listorna i [Windows-säkerhetsappen.](microsoft-defender-security-center-antivirus.md)
-> Ändringar som görs i **Windows-säkerhetsappen visas inte** i listorna grupprinciper.
+> Ändringar av undantagslistor som görs **med Grupprincip visas** i listorna i Windows-säkerhet [program.](microsoft-defender-security-center-antivirus.md)
+> Ändringar som Windows-säkerhet visas **inte** i grupprinciplistorna.
 
 Som standard kommer lokala ändringar som görs i listorna (av användare med administratörsbehörighet, inklusive ändringar som görs med PowerShell och WMI) att slås ihop med listorna som definierats (och distribuerats) av Grupprincip, Konfigurationshanteraren eller Intune. Grupprinciplistorna har företräde när det uppstår konflikter.
 
@@ -80,11 +80,11 @@ Du kan [konfigurera hur lokalt och globalt definierade undantagslistor slås sam
 
 Se följande artiklar:
 - [Konfigurera inställningar för enhetsbegränsning i Microsoft Intune](/intune/device-restrictions-configure)
-- [Inställningar för att begränsa antivirusenheten för Windows 10 i Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+- [Microsoft Defender Antivirus för enhetsbegränsningar för Windows 10 i Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Använda Konfigurationshanteraren för att konfigurera undantag för filnamn, mapp eller filnamnstillägg
 
-Se [Hur du skapar och distribuerar principer för program mot skadlig programvara: Undantagsinställningar](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) för information om hur du konfigurerar Microsoft Endpoint Manager (current branch).
+Se [Skapa och distribuera principer för program mot skadlig programvara: Undantagsinställningar](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) för information om konfigurering av Microsoft Endpoint Manager (current branch).
 
 ### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Använda grupprinciper för att konfigurera undantag för mappar eller filnamnstillägg
 
@@ -95,7 +95,7 @@ Se [Hur du skapar och distribuerar principer för program mot skadlig programvar
 
 2. I **redigeraren för hantering av grupprinciper** går **du till Datorkonfiguration** och **väljer Administrativa mallar**.
 
-3. Expandera trädet till **Windows-komponenter**  >  **Microsoft Defender Antivirus**  >  **Exclusions**.
+3. Expandera trädet och visa **Windows komponenter**  >  **Microsoft Defender Antivirus**  >  **Undantag**.
 
 4. Öppna inställningen **för undantag av** sökvägar för redigering och lägg till undantagen.
 
@@ -144,15 +144,15 @@ Följande tillåts `<exclusion list>` som:
 > [!IMPORTANT]
 > Om du har skapat en lista med eller skriver du över den befintliga listan med hjälp av `Set-MpPreference` `Add-MpPreference` `Set-MpPreference` cmdleten igen.
 
-Följande kodavsnitt skulle till exempel göra att microsoft Defender Antivirus-genomsökningar utesluter alla filer med `.test` filnamnstillägget:
+Följande kodavsnitt skulle till exempel orsaka att Microsoft Defender Antivirus för att utesluta alla filer med `.test` filtillägget:
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
 ```
 
-Mer information finns i Använda [PowerShell-cmdlets för att konfigurera och köra cmdlets för Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender.](/powershell/module/defender/)
+Mer information finns i [Hur du använder PowerShell-cmdlets för att konfigurera och köra Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender-cmdlets](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Använda Instruktionerna för Windows Management (WMI) för att konfigurera undantag för filnamn, mapp eller filnamnstillägg
+### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Använd Windows för hanteringsinstruktioner (WMI) för att konfigurera undantag för filnamn, mapp eller filnamnstillägg
 
 Använd metoderna [ **Ange,** **Lägg** till **och Ta** bort **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) klassen för följande egenskaper:
 
@@ -163,13 +163,13 @@ ExclusionPath
 
 Användandet av **Set**, **Add** och **Remove kan** jämföras med deras motsvarigheter i PowerShell: , `Set-MpPreference` och `Add-MpPreference` `Remove-MpPreference` .
 
-Mer information finns i [Windows Defender WMIv2 API:er.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Mer information finns i Windows Defender [WMIv2-API:er.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 <a id="man-tools"></a>
 
-### <a name="use-the-windows-security-app-to-configure-file-name-folder-or-file-extension-exclusions"></a>Använda appen Windows-säkerhet för att konfigurera undantag för filnamn, mapp eller filnamnstillägg
+### <a name="use-the-windows-security-app-to-configure-file-name-folder-or-file-extension-exclusions"></a>Använda Windows-säkerhet-appen för att konfigurera undantag för filnamn, mapp eller filnamnstillägg
 
-Anvisningar [finns i Lägga till undantag i Windows-säkerhetsappen.](microsoft-defender-security-center-antivirus.md)
+Anvisningar [finns i Lägga till undantag Windows-säkerhet appen.](microsoft-defender-security-center-antivirus.md)
 
 <a id="wildcards"></a>
 
@@ -275,16 +275,16 @@ Du kan hämta objekten i undantagslistan på något av följande sätt:
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - MpCmdRun
 - PowerShell
-- [Appen Windows-säkerhet](microsoft-defender-security-center-antivirus.md)
+- [Windows-säkerhet appen](microsoft-defender-security-center-antivirus.md)
 
 >[!IMPORTANT]
->Ändringar av undantagslistor som görs **med Grupprincip visas** i listorna i [Windows-säkerhetsappen.](microsoft-defender-security-center-antivirus.md)
+>Ändringar av undantagslistor som görs **med Grupprincip visas** i listorna i Windows-säkerhet [program.](microsoft-defender-security-center-antivirus.md)
 >
->Ändringar som görs i **Windows-säkerhetsappen visas inte** i listorna grupprinciper.
+>Ändringar som Windows-säkerhet visas **inte** i grupprinciplistorna.
 
 Om du använder PowerShell kan du hämta listan på två sätt:
 
-- Hämta status för alla inställningar för Microsoft Defender Antivirus. Varje lista visas på separata rader, men objekten i varje lista kombineras på samma rad.
+- Hämta status för alla Microsoft Defender Antivirus inställningar. Varje lista visas på separata rader, men objekten i varje lista kombineras på samma rad.
 - Skriv statusen för alla inställningar till en variabel och använd den variabeln för att bara anropa den specifika listan som du är intresserad av. Varje användning av `Add-MpPreference` skrivs till en ny rad.
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Validera undantagslistan med hjälp av MpCmdRun
@@ -299,9 +299,9 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 >[!NOTE]
->Om du vill kontrollera undantag med MpCmdRun krävs Microsoft Defender Antivirus ANTIVIRUS version 4.18.1812.3 (utgiven i december 2018) eller senare.
+>Kontroll av undantag med MpCmdRun kräver Microsoft Defender Antivirus CAMP version 4.18.1812.3 (utgiven i december 2018) eller senare.
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Granska listan över undantag bredvid alla andra inställningar för Microsoft Defender Antivirus med hjälp av PowerShell
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Granska listan över undantag tillsammans med alla andra alternativ Microsoft Defender Antivirus med hjälp av PowerShell
 
 Använd följande cmdlet:
 
@@ -313,7 +313,7 @@ I följande exempel är de poster som finns `ExclusionExtension` i listan marker
 
 ![PowerShell-utdata för Get-MpPreference med undantagslistan tillsammans med andra inställningar](images/defender/wdav-powershell-get-exclusions-all.png)
 
-Mer information finns i Använda [PowerShell-cmdlets för att konfigurera och köra cmdlets för Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender.](/powershell/module/defender/)
+Mer information finns i [Hur du använder PowerShell-cmdlets för att konfigurera och köra Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender-cmdlets](/powershell/module/defender/).
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Hämta en specifik undantagslista med hjälp av PowerShell
 
@@ -329,7 +329,7 @@ I följande exempel är listan uppdelad i nya rader för varje användning av `A
 
 ![PowerShell-utdata som bara visar posterna i undantagslistan](images/defender/wdav-powershell-get-exclusions-variable.png)
 
-Mer information finns i Använda [PowerShell-cmdlets för att konfigurera och köra cmdlets för Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender.](/powershell/module/defender/)
+Mer information finns i [Hur du använder PowerShell-cmdlets för att konfigurera och köra Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender-cmdlets](/powershell/module/defender/).
 
 <a id="validate"></a>
 
@@ -362,7 +362,7 @@ Du kan också kopiera strängen till en tom textfil och försöka spara den med 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-- [Konfigurera och validera undantag i genomsökningar för Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- [Konfigurera och validera undantag i Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurera och validera undantag för filer som öppnas i processer](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurera undantag för Microsoft Defender Antivirus på Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Konfigurera Microsoft Defender Antivirus undantag på Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Vanliga misstag att undvika när man definierar undantag](common-exclusion-mistakes-microsoft-defender-antivirus.md)

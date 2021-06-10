@@ -1,5 +1,5 @@
 ---
-title: Flytta basdata till nya Microsoft 365-datacenter geodata
+title: Flytta basdata till nya Microsoft 365 geodatadata
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: Lär dig mer om nya geodatadata i Office 365-datacentret och hur du använder alternativet som data ska lagras för att begära att dina kärndata flyttas till ett nytt geodatasystem.
+description: Läs mer om Office 365 datacenter geos och hur du använder alternativet data som lagras för att begära att dina kärndata flyttas till en ny geo.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: f752956506df98ea71d0d02886d14dc719ed9413
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -22,15 +22,15 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50921612"
 ---
-# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Flytta basdata till nya Microsoft 365-datacenter geodata
+# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Flytta basdata till nya Microsoft 365 geodatadata
 
-Vi fortsätter att öppna nya datacenter geos för Microsoft 365-tjänster. Dessa nya datacenter geos lägger till kapacitet och beräknar resurser för att stödja vår pågående kundbehov och användningstillväxt. Det nya datacentret geos erbjuder dessutom geodata som används för basdata. 
+Vi fortsätter att öppna nya datacenter geos för Microsoft 365 tjänster. Dessa nya datacenter geos lägger till kapacitet och beräknar resurser för att stödja vår pågående kundbehov och användningstillväxt. Det nya datacentret geos erbjuder dessutom geodata som används för basdata. 
 
 Baskunddata är en term som refererar till en delmängd kunddata, inklusive: 
-- Postlådeinnehåll i Exchange Online (brödtext, kalenderposter och innehållet i e-postbilagor)
-- SharePoint Online-webbplatsinnehåll och filer som lagrats på webbplatsen
+- Exchange Online innehållet i postlådan (brödtext, kalenderposter och innehållet i e-postbilagor)
+- SharePoint Onlinewebbplatsinnehåll och filer som lagrats på webbplatsen
 - Filer som laddats upp till OneDrive för företag
-- Chattmeddelanden i Teams, inklusive privata meddelanden, kanalmeddelanden och bilder som används i chattar
+- Teams chattmeddelanden, inklusive privata meddelanden, kanalmeddelanden och bilder som används i chattar
   
 Befintliga kunder som har sina grundläggande kunddata lagrade i ett befintligt datacenter geo påverkas inte av lanseringen av ett nytt datacenter geo. Vi introducerar inga unika funktioner, funktioner eller efterlevnadscertifieringar med det nya datacentret geo. Som kund i någon av dessa två geos får du samma tjänstekvalitet, prestanda- och säkerhetskontroller som du gjorde tidigare. Vi erbjuder befintliga kunder som visas i tabellen under ett alternativ för att begära tidig migrering av organisationens kärndata i vila till det nya datacentret.
   
@@ -56,7 +56,7 @@ En fullständig lista över alla datacenter geos, datacenter och platsen för ku
   
 ## <a name="data-residency-option"></a>Alternativet Datahem
 
-Vi tillhandahåller ett alternativ för datalagring för berättigade Microsoft 365-kunder som omfattas av de datacenter geos som anges i tabellen ovan. Med det här alternativet kan berättigade kunder med datalagringskrav begära migrering av organisationens grundläggande kunddata i vila till det nya datacentret.  Microsoft kommer att erbjuda en tidsgräns för alla berättigade kunder som begär migrering under registreringsfönstret.  Gå till [sidan Begära dataflyttning](request-your-data-move.md) för mer information om fönstret för öppen registrering för geodatadatacentret och stegen för att registrera dig i programmet.  Dataflyttningar kan ta upp till 24 månader efter att begäran har avslutats.
+Vi tillhandahåller ett alternativ för datalagring för berättigade Microsoft 365 som täcks av de datacenter geos som anges i tabellen ovan. Med det här alternativet kan berättigade kunder med datalagringskrav begära migrering av organisationens grundläggande kunddata i vila till det nya datacentret.  Microsoft kommer att erbjuda en tidsgräns för alla berättigade kunder som begär migrering under registreringsfönstret.  Gå till [sidan Begära dataflyttning](request-your-data-move.md) för mer information om fönstret för öppen registrering för geodatadatacentret och stegen för att registrera dig i programmet.  Dataflyttningar kan ta upp till 24 månader efter att begäran har avslutats.
 
 Vi introducerar inga unika funktioner, funktioner eller efterlevnadscertifieringar med det nya datacentret geo.
     
@@ -72,6 +72,6 @@ Dataflyttningar till det nya datacentrets geo slutförs utan extra kostnad för 
     
 [Vanliga frågor och svar om dataflytt](data-move-faq.md)
   
-[Nya datacenter geos för Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
+[Nya geodatadatadata för Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure-tjänster efter region](https://azure.microsoft.com/regions/)

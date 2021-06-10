@@ -62,7 +62,7 @@ Du kan [konfigurera hur lokalt och globalt definierade undantagslistor slås sam
 
 ### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använda Microsoft Intune för att utesluta filer som har öppnats av angivna processer från genomsökningar
 
-Mer [information finns i Konfigurera inställningar Microsoft Intune](/intune/device-restrictions-configure) enhet Microsoft Defender Antivirus enhetbegränsningar för Windows 10 i [Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+För mer information läs [Konfigurera inställningar för enhetsbegränsning i Microsoft Intune](/intune/device-restrictions-configure) och [Inställningar för enhetsbegränsning för Microsoft Defender i Windows 10 i Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Använda Microsoft Endpoint Manager för att utesluta filer som har öppnats av angivna processer från genomsökningar
 

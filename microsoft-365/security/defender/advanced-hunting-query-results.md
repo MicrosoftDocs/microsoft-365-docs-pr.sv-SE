@@ -1,6 +1,6 @@
 ---
 title: Arbeta med avancerade frågeresultat för sökning i Microsoft 365 Defender
-description: Få ut mesta resultatet av frågeresultatet som returneras av avancerad sökning i Microsoft 365 Defender
+description: Få ut mesta resultatet av de frågeresultat som returneras av avancerad sökning i Microsoft 365 Defender
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -122,7 +122,7 @@ I linjediagrammet nedan markeras tidsperioder tydligt med mer aktivitet som `inv
 ## <a name="export-tables-and-charts"></a>Exportera tabeller och diagram
 När du har kört en fråga väljer **du Exportera** för att spara resultaten i en lokal fil. Den valda vyn avgör hur resultatet exporteras:
 
-- **Tabellvy** – frågeresultatet exporteras i tabellform som en Microsoft Excel-arbetsbok
+- **Tabellvy** – frågeresultatet exporteras i tabellform som en Microsoft Excel arbetsbok
 - **Alla diagram** – frågeresultatet exporteras som en JPEG-bild av det återgivna diagrammet
 
 ## <a name="drill-down-from-query-results"></a>Öka detalj detalj detalj för frågeresultat

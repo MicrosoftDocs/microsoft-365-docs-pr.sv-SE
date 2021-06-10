@@ -1,5 +1,5 @@
 ---
-title: Optimera sidsamtal i moderna och klassiska publiceringswebbplatssidor i SharePoint Online
+title: Optimera sidsamtal i SharePoint moderna och klassiska publiceringswebbplatssidor
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom: Adm_O365
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Lär dig hur du optimerar moderna och klassiska publiceringswebbplatssidor i SharePoint Online genom att begränsa antalet samtal till SharePoint Online-tjänstslutpunkter.
+description: Lär dig hur du optimerar moderna och klassiska publiceringswebbplatssidor i SharePoint Online genom att begränsa antalet samtal SharePoint slutpunkter för onlinetjänsten.
 ms.openlocfilehash: cab0f6a020bd1148a0e852b5a393a6ad907f9771
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,23 +26,23 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50921624"
 ---
-# <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimera sidsamtal i moderna och klassiska publiceringswebbplatssidor i SharePoint Online
+# <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimera sidsamtal i SharePoint moderna och klassiska publiceringswebbplatssidor
 
-Både moderna och klassiska publiceringswebbplatser i SharePoint Online innehåller länkar som laddar in data från (eller ringer samtal till) SharePoint-funktioner och CDN. Ju fler samtal en sida ringer, desto längre tid tar det att läsa in sidan. Detta kallas för att **slutanvändaren uppfattas som fördröjning** eller **EUPL.**
+Både SharePoint moderna och klassiska publiceringswebbplatser innehåller länkar som läser in data från (eller ringer till) SharePoint och CDN. Ju fler samtal en sida ringer, desto längre tid tar det att läsa in sidan. Detta kallas för att **slutanvändaren uppfattas som fördröjning** eller **EUPL.**
 
 Den här artikeln hjälper dig att förstå hur du fastställer antal och påverkan på samtal till externa slutpunkter från dina moderna och klassiska publiceringswebbplatssidor och hur du kan begränsa effekten på slutanvändarens uppfattas svarstid.
 
 >[!NOTE]
->Mer information om prestanda i moderna Portaler i SharePoint Online finns i [Prestanda i det moderna SharePoint-programmet.](/sharepoint/modern-experience-performance)
+>Mer information om prestanda i SharePoint moderna portaler finns i [Prestanda i det moderna SharePoint upplevelse.](/sharepoint/modern-experience-performance)
 
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-calls"></a>Använda siddiagnostik för SharePoint-verktyget för att analysera sidsamtal
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-calls"></a>Använda siddiagnostik för SharePoint för att analysera sidsamtal
 
-Verktyget Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna portaler för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer om verktyget Siddiagnostik för SharePoint går du [till Använda verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
+Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna SharePoint Online-portalen och klassiska https://www.microsoft.com/edge) publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer SharePoint siddiagnostikverktyget går du till Använda [verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
 
 >[!NOTE]
->Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
+>Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint systemsida.
 
-När du analyserar en SharePoint-webbplatssida med verktyget Siddiagnostik för SharePoint kan du se information om externa samtal i begäran om **SharePoint-resultat** i _fönstret Diagnostiktest._ Linjen visas i grönt om webbplatssidan innehåller färre än baslinjenumret och röd om sidan överskrider baslinjenumret. Baslinjenumret skiljer sig för moderna och klassiska sidor eftersom klassiska webbplatssidor använder HTTP1.1 och moderna sidor använder HTTP2.0:
+När du analyserar en SharePoint-webbplatssida med verktyget Siddiagnostik för SharePoint kan du se information om externa samtal i resultatet för Förfrågningar om **SharePoint** i fönstret _Diagnostiktest._ Linjen visas i grönt om webbplatssidan innehåller färre än baslinjenumret och röd om sidan överskrider baslinjenumret. Baslinjenumret skiljer sig för moderna och klassiska sidor eftersom klassiska webbplatssidor använder HTTP1.1 och moderna sidor använder HTTP2.0:
 
 - Moderna webbplatssidor får inte innehålla fler än **25** samtal
 - Klassiska publiceringssidor får innehålla högst **6** samtal
@@ -52,9 +52,9 @@ Möjliga resultat är:
 - **Obs!** Obligatoriskt (rött): Sidan överskrider baslinjenumret för samtal
 - **Ingen åtgärd krävs** (grön): Sidan innehåller färre än originalantalet samtal
 
-Om resultatet **Begäranden till SharePoint** visas i avsnittet Åtgärder som krävs kan du klicka på resultatet för mer information, inklusive det totala antalet samtal på sidan och en lista med URL-adresser. 
+Om resultatet **Requests to SharePoint** visas i avsnittet Attention **required** (åtgärder krävs) kan du klicka på resultatet för mer information, inklusive det totala antalet samtal på sidan och en lista över URL:er.
 
-![Förfrågningar om SharePoint-resultat](../media/modern-portal-optimization/pagediag-requests.png)
+![Förfrågningar om SharePoint resultat](../media/modern-portal-optimization/pagediag-requests.png)
 
 ## <a name="remediate-performance-issues-related-to-too-many-calls-on-a-page"></a>Åtgärda prestandaproblem som är relaterade till för många samtal på en sida
 
@@ -73,11 +73,11 @@ Innan du gör sidändringar för att åtgärda prestandaproblem bör du anteckna
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Justera SharePoint Online-prestanda](tune-sharepoint-online-performance.md)
+[Justera SharePoint onlineprestanda](tune-sharepoint-online-performance.md)
 
-[Justera Office 365-prestanda](tune-microsoft-365-performance.md)
+[Justera Office 365 prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i det moderna SharePoint-programmet](/sharepoint/modern-experience-performance)
+[Prestanda i den moderna SharePoint upplevelsen](/sharepoint/modern-experience-performance)
 
 [Nätverk för innehållsleverans](content-delivery-networks.md)
 

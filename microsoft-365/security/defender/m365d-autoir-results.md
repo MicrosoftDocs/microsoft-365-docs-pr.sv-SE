@@ -35,17 +35,17 @@ ms.locfileid: "52274682"
 **Gäller för:**
 - Microsoft 365 Defender
 
-När en automatiserad undersökning körs [](m365d-autoir.md) är information om undersökningen tillgänglig både under och efter den automatiska undersökningsprocessen med Microsoft 365 Defender. Om du har nödvändiga [behörigheter kan](m365d-action-center.md#required-permissions-for-action-center-tasks)du visa de uppgifterna i en vy med undersökningsinformation. Den här vyn ger dig uppdaterad status och möjlighet att godkänna eventuella väntande åtgärder. 
+När Microsoft 365 en automatiserad [](m365d-autoir.md) undersökning körs med Defender är information om undersökningen tillgänglig både under och efter den automatiska undersökningen. Om du har nödvändiga [behörigheter kan](m365d-action-center.md#required-permissions-for-action-center-tasks)du visa de uppgifterna i en vy med undersökningsinformation. Den här vyn ger dig uppdaterad status och möjlighet att godkänna eventuella väntande åtgärder. 
 
 ![Undersökningsinformation](../../media/mtp-air-investdetails.png)
 
 ## <a name="new-unified-investigation-page"></a>(NY!) Sida för enhetlig undersökning
 
-Undersökningssidan har nyligen uppdaterats för att inkludera information på dina enheter, e-post och samarbetsinnehåll. Den nya, enhetliga undersökningssidan definierar ett gemensamt språk och ger en enhetlig upplevelse för automatiska undersökningar i [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för Endpoint och Microsoft Defender för [Office 365.](../office-365-security/defender-for-office-365.md) Välj länken i den gula banderollen som visas på sidan för enhetlig undersökning:
+Undersökningssidan har nyligen uppdaterats för att inkludera information på dina enheter, e-post och samarbetsinnehåll. Den nya, enhetliga undersökningssidan definierar ett gemensamt språk och ger en enhetlig upplevelse för automatiska undersökningar i [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) för Endpoint och Microsoft Defender [för Office 365.](../office-365-security/defender-for-office-365.md) Välj länken i den gula banderollen som visas på sidan för enhetlig undersökning:
 
-- Alla undersökningssidor i Säkerhets- och & Office 365 ( [https://protection.office.com](https://protection.office.com) )
+- Sidan Undersökning i säkerhets- Office 365 säkerhets- & ( [https://protection.office.com](https://protection.office.com) )
 - Undersökningssida i Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Alla incident- eller åtgärdscenterupplevelser i Säkerhetscenter i Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Alla incident- eller åtgärdscenterupplevelser i Microsoft 365 säkerhetscenter ( [https://security.microsoft.com](https://security.microsoft.com) )
 
 ## <a name="open-the-investigation-details-view"></a>Öppna detaljvyn för undersökningen
 
@@ -100,12 +100,12 @@ Använd vyn med undersökningsinformation för att se tidigare, aktuella och vä
 I vyn Undersökningsinformation kan du se information om flikarna **Undersökningsdiagram**, Varningar, Enheter, Identiteter, Nyckelresultat, Enheter, Logg och Väntande åtgärder, som beskrivs i följande tabell.       
 
 > [!NOTE]
-> Vilka flikar som visas på sidan med undersökningsinformation beror på vad prenumerationen innehåller. Om din prenumeration till exempel inte omfattar Microsoft Defender för Office 365 abonnemang 2 visas inte fliken **Postlådor.**
+> Vilka flikar som visas på sidan med undersökningsinformation beror på vad prenumerationen innehåller. Om din prenumeration till exempel inte innehåller Microsoft Defender för Office 365 abonnemang 2 visas inte fliken **Postlådor.**
 
 | Tabb | Beskrivning |
 |:--------|:--------|
 | **Undersökningsdiagram**   | Ger en visuell representation av undersökningen. Visar enheter och visar hot som hittas, tillsammans med aviseringar och om några åtgärder väntar på godkännande.<br/>Du kan markera ett objekt i diagrammet om du vill visa mer information. Om du till exempel **väljer ikonen Bevis** kommer du till fliken **Bevis** där du kan se identifierade enheter och deras bedömningar. |
-| **Varningar**    | Listar aviseringar kopplade till undersökningen. Aviseringar kan komma från skyddsfunktioner för hot på en användares enhet, i Office-appar, Microsoft Cloud App Security och andra Microsoft 365 Defender-funktioner.|
+| **Varningar**    | Listar aviseringar kopplade till undersökningen. Varningar kan komma från skyddsfunktioner för hot på en användares enhet, i Office appar, Microsoft Cloud App Security och andra Microsoft 365 Defender-funktioner.|
 | **Enheter** | Visar enheter som ingår i undersökningen tillsammans med deras åtgärdsnivå. (Åtgärdsnivåer motsvarar [automationsnivån för enhetsgrupper](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **Postlådor** |Listar postlådor som påverkas av identifierade hot.  |
 | **Användare**  | Här listas användarkonton som påverkas av identifierade hot. |

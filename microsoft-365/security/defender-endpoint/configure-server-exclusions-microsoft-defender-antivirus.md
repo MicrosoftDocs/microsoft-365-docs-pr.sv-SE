@@ -62,7 +62,7 @@ Du kan inaktivera automatiska undantagslistor med Grupprincip, PowerShell-cmdlet
 
 ### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Använd grupprinciper för att inaktivera listan med automatiska undantag i Windows Server 2016 och Windows Server 2019
 
-1. Öppna konsolen Grupprinciphantering på datorn [för grupprinciphantering.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)) Högerklicka på det grupprincipobjekt du vill konfigurera och klicka sedan på **Redigera.**
+1. Öppna [Konsolen för grupprinciphantering](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)) på datorn för grupprinciphantering. Högerklicka på det grupprincipobjekt du vill konfigurera och klicka sedan på **Redigera.**
 2. I **redigeraren för grupprinciphantering** går du **till Datorkonfiguration** och klickar sedan på **Administrativa mallar**.
 3. Expandera trädet och visa **Windows komponenter**  >  **Microsoft Defender Antivirus**  >  **Undantag**.
 4. Dubbelklicka på **Inaktivera automatiska undantag och** ställ in alternativet på **Aktiverad.** Klicka sedan på **OK**. 

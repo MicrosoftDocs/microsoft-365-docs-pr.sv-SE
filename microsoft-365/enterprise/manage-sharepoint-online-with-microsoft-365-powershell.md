@@ -31,15 +31,15 @@ ms.locfileid: "50923273"
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-SharePoint-administratörer måste hantera webbplatser, webbplatsgrupper och användare. Du kan utföra vissa av de här uppgifterna i administrationscentret för Microsoft 365, men andra är enklare i PowerShell. Mer information finns i följande artiklar:
+SharePoint administratörer måste hantera webbplatser, webbplatsgrupper och användare. Även om du kan utföra vissa av dessa uppgifter Microsoft 365 administrationscentret är andra enklare i PowerShell. Mer information finns i följande artiklar:
 
 - [Komma igång med SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
-- [Skapa SharePoint Online-webbplatser och lägga till användare med PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+- [Skapa SharePoint onlinewebbplatser och lägga till användare med PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
     
-- [Hantera SharePoint Online-användare och grupper med PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
+- [Hantera SharePoint och grupper online med PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
     
-- [Hantera SharePoint Online-webbplatsgrupper med PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+- [Hantera SharePoint onlinewebbplatsgrupper med PowerShell](manage-sharepoint-site-groups-with-powershell.md)
     
 ## <a name="see-also"></a>Se även
 

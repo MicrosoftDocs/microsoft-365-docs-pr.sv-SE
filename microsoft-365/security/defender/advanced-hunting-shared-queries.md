@@ -69,11 +69,11 @@ Du kan spara en ny eller befintlig fråga så att den bara är tillgänglig för
 ## <a name="create-a-direct-link-to-a-query"></a>Skapa en direktlänk till en fråga
 Om du vill skapa en länk som öppnar frågan direkt i den avancerade frågeredigeraren för sökning slutför du frågan och väljer **Dela länk**.
 
-## <a name="access-queries-in-the-github-repository"></a>Åtkomstfrågor på GitHub-lagringsplatsen  
-Microsoft-säkerhetsvakterna delar regelbundet avancerade sökfrågor på en [angiven offentlig lagringsplats på GitHub.](https://aka.ms/hunting-queries) Lagringsplatsen är öppen för bidrag. Delta genom [att kostnadsfritt ansluta till GitHub.](https://github.com/)
+## <a name="access-queries-in-the-github-repository"></a>Åtkomstfrågor på den GitHub lagringsplatsen  
+Microsoft-säkerhetsvakterna delar regelbundet avancerade sökfrågor på en [angiven offentlig lagringsplats i GitHub](https://aka.ms/hunting-queries). Lagringsplatsen är öppen för bidrag. Delta utan kostnad [GitHub delta.](https://github.com/)
 
 >[!tip]
->Microsoft-säkerhetsvakter erbjuder också avancerade sökfrågor som du kan använda för att hitta aktiviteter och indikatorer som är associerade med nya hot. Dessa frågor tillhandahålls som en del av rapporterna [över hotanalyser](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) i Microsoft Defender Säkerhetscenter.
+>Microsoft-säkerhetsvakter erbjuder också avancerade sökfrågor som du kan använda för att hitta aktiviteter och indikatorer som är associerade med nya hot. Dessa frågor tillhandahålls som en del av rapporterna [för hotanalys](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) i Microsoft Defender Säkerhetscenter.
 
 >[!NOTE]
 >Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)

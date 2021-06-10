@@ -42,14 +42,14 @@ Anpassade identifieringsregler är regler som du kan utforma och modifiera [med 
 
 För att kunna hantera anpassade identifieringar måste du tilldelas en av följande roller:
 
-- **Säkerhetsadministratör**– Användare med denna [Azure Active Directory-roll](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) kan hantera säkerhetsinställningar i Microsoft 365 säkerhetscenter och andra portaler och tjänster.
+- **Säkerhetsadministratör**– Användare med den [Azure Active Directory rollen](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) kan hantera säkerhetsinställningar i Microsoft 365 säkerhetscenter och andra portaler och tjänster.
 
-- **Säkerhetsoperator**– Användare med denna [Azure Active Directory-roll](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) kan hantera aviseringar och ha global skrivskyddsåtkomst till säkerhetsrelaterade funktioner, inklusive all information i Säkerhetscenter för Microsoft 365. Den här rollen är tillräcklig för att hantera anpassade identifieringar endast om rollbaserad åtkomstkontroll (RBAC) är inaktiverad i Microsoft Defender för Slutpunkt. Om RBAC har konfigurerats behöver du också behörigheten hantera **säkerhetsinställningar** för Defender för Endpoint.
+- **Säkerhetsoperator**– Användare med den [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) rollen kan hantera aviseringar och ha global skrivskyddsåtkomst till säkerhetsrelaterade funktioner, inklusive all information Microsoft 365 säkerhetscenter. Den här rollen är tillräcklig för att hantera anpassade identifieringar endast om rollbaserad åtkomstkontroll (RBAC) är inaktiverad i Microsoft Defender för Slutpunkt. Om RBAC har konfigurerats behöver du också behörigheten hantera **säkerhetsinställningar** för Defender för Endpoint.
 
 En global administratör kan hantera nödvändiga **behörigheter genom att:**
 
-- Tilldela rollen **som säkerhetsadministratör** **eller säkerhetsoperator** i administrationscentret för [Microsoft 365](https://admin.microsoft.com/) under **Roller –**  >  **säkerhetsadministratör.**
-- Kontrollera RBAC-inställningarna för Microsoft Defender för Slutpunkt i [Microsoft Defender Säkerhetscenter](https://securitycenter.windows.com/) under **Roller för**  >  **inställningar.**  >   Välj motsvarande roll för att tilldela **behörigheten hantera säkerhetsinställningar.**
+- Tilldela rollen **som säkerhetsadministratör** **eller säkerhetsoperator** [i Microsoft 365 under](https://admin.microsoft.com/) **Rollsäkerhetsadministratör.**  >  
+- Kontrollera RBAC-inställningarna för Microsoft Defender för slutpunkt i [Microsoft Defender Säkerhetscenter](https://securitycenter.windows.com/) under **Inställningar**  >  **Behörighetsroller**  >  . Välj motsvarande roll för att tilldela **behörigheten hantera säkerhetsinställningar.**
 
 > [!NOTE]
 > Om du vill hantera anpassade identifieringar **behöver** säkerhetsoperatorerna behörigheten hantera säkerhetsinställningar i Microsoft Defender för Endpoint om RBAC är aktiverat. 
@@ -57,7 +57,7 @@ En global administratör kan hantera nödvändiga **behörigheter genom att:**
 ## <a name="create-a-custom-detection-rule"></a>Skapa en anpassad identifieringsregel
 ### <a name="1-prepare-the-query"></a>1. Förbereda frågan.
 
-I Microsoft 365 säkerhetscenter går du till **Avancerad sökning** och väljer en befintlig fråga eller skapar en ny fråga. När du använder en ny fråga kör du frågan för att identifiera fel och förstå möjliga resultat.
+I Microsoft 365 på Avancerad sökning **och** väljer en befintlig fråga eller skapar en ny fråga. När du använder en ny fråga kör du frågan för att identifiera fel och förstå möjliga resultat.
 
 >[!IMPORTANT]
 >För att förhindra att tjänsten returnerar för många aviseringar är varje regel begränsad till att generera endast 100 aviseringar när den körs. Innan du skapar en regel bör du justera frågan för att undvika aviseringar om normal aktivitet.
@@ -145,7 +145,7 @@ Den anpassade identifieringsregeln kan automatiskt vidta åtgärder på enheter,
 Dessa åtgärder tillämpas på enheter i `DeviceId` kolumnen med frågeresultat:
 - **Isolera enhet**– använder Microsoft Defender för Endpoint för att tillämpa fullständig nätverksisolering, vilket hindrar enheten från att ansluta till något program eller en tjänst. [Läs mer om Microsoft Defender för Endpoint-datorisolering](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - Samla in **undersökningspaket**– samlar in enhetsinformation i en ZIP-fil. [Läs mer om Microsoft Defender för undersökningspaketet för slutpunkt](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Kör antivirussökning**– utför en fullständig Windows Defender Antivirus-sökning på enheten
+- **Kör antivirussökning**– utför en fullständig Windows Defender Antivirus sökning på enheten
 - **Initiera undersökning**– initierar en [automatiserad undersökning](m365d-autoir.md) på enheten
 - **Begränsa programkörning**– anger begränsningar på enheten så att endast filer som har signerats med ett Certifikat utfärdat av Microsoft kan köras. [Läs mer om appbegränsningar med Microsoft Defender för Slutpunkt](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
@@ -153,10 +153,10 @@ Dessa åtgärder tillämpas på enheter i `DeviceId` kolumnen med frågeresultat
 Med det här alternativet kan du välja att **tillämpa filåtgärden** Karantän för filer i `SHA1` , , eller kolumnen i `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` frågeresultatet. Den här åtgärden tar bort filen från dess aktuella plats och placerar en kopia i karantän.
 
 #### <a name="actions-on-users"></a>Åtgärder för användare
-Med det här alternativet **vidtas åtgärden Markera** användare som komprometterad på användare i , eller i kolumnen för `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` frågeresultatet. Med den här åtgärden ställs användarnas risknivå in på "hög" i Azure Active Directory, vilket utlöser motsvarande [identitetsskyddsprinciper.](/azure/active-directory/identity-protection/overview-identity-protection)
+Med det här alternativet **vidtas åtgärden Markera** användare som komprometterad på användare i , eller i kolumnen för `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` frågeresultatet. Med den här åtgärden anges användarrisknivån till "hög" i Azure Active Directory vilket utlöser motsvarande [identitetsskyddsprinciper.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 > [!NOTE]
-> Åtgärden tillåt eller blockera för anpassade identifieringsregler stöds för närvarande inte i Microsoft 365 Defender.
+> Åtgärden tillåt eller blockera för anpassade identifieringsregler stöds för närvarande inte på Microsoft 365 Defender.
 
 ### <a name="5-set-the-rule-scope"></a>5. Ange regelns omfattning.
 Ange omfattningen för att ange vilka enheter som omfattas av regeln. Omfattningen påverkar regler som kontrollerar enheter och påverkar inte regler som bara kontrollerar postlådor och användarkonton eller identiteter.
@@ -181,7 +181,7 @@ Du behåller kontrollen över hur omfattande eller specifika dina anpassade iden
 Du kan visa listan över befintliga anpassade identifieringsregler, kontrollera deras tidigare körningar och granska de aviseringar som de har utlöst. Du kan även köra en regel på begäran och ändra den.
 
 >[!TIP]
-> Aviseringar som upphöjs med anpassade identifieringar är tillgängliga via API:er för aviseringar och incidenter. Mer information finns i Microsoft [365 Defender-API:er som stöds.](api-supported.md)
+> Aviseringar som upphöjs med anpassade identifieringar är tillgängliga via API:er för aviseringar och incidenter. Mer information finns i [Defender-API:Microsoft 365 som stöds.](api-supported.md)
 
 ### <a name="view-existing-rules"></a>Visa befintliga regler
 

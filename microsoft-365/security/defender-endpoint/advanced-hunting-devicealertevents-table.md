@@ -35,7 +35,7 @@ ms.locfileid: "51939657"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-Tabellen `DeviceAlertEvents` i det avancerade schemat för [sökning](advanced-hunting-overview.md) innehåller information om aviseringar i Microsoft Defender Säkerhetscenter. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
+Tabellen `DeviceAlertEvents` i det avancerade schemat [för](advanced-hunting-overview.md) sökning innehåller information om aviseringar i Microsoft Defender Säkerhetscenter. Använd den här referensen för att skapa frågor som returnerar information från tabellen.
 
 Information om andra tabeller i det avancerade sökschemat finns i [den avancerade referensen för sökningsschema.](advanced-hunting-schema-reference.md)
 

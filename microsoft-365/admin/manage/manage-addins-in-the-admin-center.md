@@ -39,7 +39,7 @@ Mer information om hur du installerar tillägg från administrationscentret finn
 
 Ett tillägg kan vara antingen i läget **På** **eller Av.**
   
-| Delstat | Hur tillståndet uppstår | Påverkan |
+| Region | Hur tillståndet uppstår | Påverkan |
 |:-----|:-----|:-----|
 |**Aktiv**  <br/> |Administratören har laddat upp tillägget och tilldelat det till användare eller grupper.  <br/> |Användare och grupper som tilldelats tillägget kan se det i relevanta klienter.  <br/> |
 |**Inaktiverad**  <br/> |Administratören har inaktiverat tillägget.  <br/> |Användare och grupper som tilldelats tillägget har inte längre åtkomst till det.  <br/> Om tilläggstillståndet ändras till Aktivt får användare och grupper åtkomst till det igen.  <br/> |

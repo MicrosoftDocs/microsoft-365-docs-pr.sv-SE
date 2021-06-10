@@ -1,7 +1,7 @@
 ---
 title: Funktionen FileProfile() i avancerad sökning för Microsoft 365 Defender
 description: Lär dig använda FileProfile() för att utöka information om filer i avancerade sökresultat för sökfrågor
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function,richment
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -74,7 +74,7 @@ invoke FileProfile(x,y)
 
 ## <a name="examples"></a>Exempel
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>Projicera endast KOLUMNEN SHA1 och utöka den
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>Project bara SHA1-kolumnen och utöka den
 
 ```kusto
 DeviceFileEvents

@@ -50,7 +50,7 @@ GET /testwdatppreview/kbinfo
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Sidhuvud | Value 
+Sidhuvud | Värde 
 :---|:---
 Auktorisering | Bearer {token}. **Obligatoriskt.**
 Innehållstyp | application/json

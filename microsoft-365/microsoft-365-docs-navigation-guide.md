@@ -1,6 +1,6 @@
 ---
-title: Navigeringstips för Microsoft 365-dokument
-description: Tips och trick för att navigera i den tekniska dokumentationen för Microsoft 365 – förklarar sådant som navsidan, innehållsförteckningen, rubriken, samt hur du använder de dynamiska sökvägarna och hur du använder versionsfiltret.
+title: Microsoft 365 för dokumentnavigering
+description: Tips du vill navigera i den tekniska dokumentationen för Microsoft 365 – förklarar sådant som navsidan, innehållsförteckningen, rubriken samt hur du använder de dynamiska sökvägarna och hur du använder versionsfiltret.
 ms.date: 08/12/2020
 ms.prod: sql
 ms.technology: release-landing
@@ -16,21 +16,21 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50922430"
 ---
-# <a name="microsoft-365-docs-navigation-guide"></a>Navigeringsguide för Microsoft 365-dokument
+# <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 för dokumentnavigering
 
-Det här avsnittet innehåller några tips för hur du navigerar i den tekniska dokumentationen för Microsoft 365.  
+Det här avsnittet innehåller några tips för hur du navigerar Microsoft 365 i den tekniska dokumentationen.  
 
 ## <a name="hub-page"></a>Hubb-sida
 
-Microsoft 365 hubb-sidan finns på och är den första sidan för [https://aka.ms/microsoft365docs](./index.yml) att hitta relevant Microsoft 365-innehåll.
+Den Microsoft 365 navsidan finns på och är startpunkten för [https://aka.ms/microsoft365docs](./index.yml) att hitta relevant Microsoft 365 innehåll.
 
-Du kan alltid gå tillbaka till den här sidan genom att välja **Microsoft 365** i sidhuvudet högst upp på varje sida i den tekniska dokumentationen för Microsoft 365:
+Du kan alltid gå tillbaka till den här sidan genom **Microsoft 365** i sidhuvudet högst upp på varje sida i Microsoft 365 tekniska dokumentationsuppsättningen:
 
-![Microsoft 365 i sidhuvud](media/m365-header-cursor.png)
+![Microsoft 365 i sidhuvudet](media/m365-header-cursor.png)
 
 ## <a name="offline-documentation"></a>Offlinedokumentation
 
-Om du vill visa Microsoft 365-dokumentationen i ett offlinesystem kan du skapa en PDF-fil var du än befinner dig i den tekniska Microsoft 365-dokumentationen.
+Om du vill visa Microsoft 365-dokumentationen i ett offlinesystem kan du skapa en PDF-fil var du än befinner dig i den Microsoft 365 tekniska dokumentationen.
 
 Om du vill skapa en PDF-fil väljer du länken **Ladda ned PDF** längst ned i varje innehållsförteckning.
 
@@ -42,11 +42,11 @@ På docs.microsoft.com kan du söka i innehållet i innehållsförteckningen gen
 ![Rutan Använd filter](media/m365-filter-by-title.png)
 
 ## <a name="version-filter"></a>Versionsfilter
-Den tekniska dokumentationen för Microsoft 365 innehåller innehåll för ytterligare produkter, bland annat Office 365 Germany och Office 365 som drivs av 21 Vianet (Kina). Funktionerna kan variera mellan dessa versioner och därför kan själva innehållet ibland variera.
+Den Microsoft 365 tekniska dokumentationen innehåller innehåll för ytterligare produkter, bland annat Office 365 Germany och Office 365 som drivs av 21 Vianet (Kina). Funktionerna kan variera mellan dessa versioner och därför kan själva innehållet ibland variera.
 
 Du kan använda versionsfiltret för att säkerställa att du ser innehåll för rätt version av Microsoft 365:
 
-![Versionsfilter för Microsoft 365](media/m365-version-filter.png)
+![Microsoft 365 versionsfilter](media/m365-version-filter.png)
 
 ## <a name="breadcrumbs"></a>Dynamiska länkar
 
@@ -66,7 +66,7 @@ Om du hittar något fel i en artikel kan du skicka feedback till SQL Content tea
 
 ![Feedback om innehåll som git-problem](media/m365-article-feedback.png)
 
-## <a name="contribute-to-microsoft-365-documentation"></a>Delta i Microsoft 365-dokumentationen
+## <a name="contribute-to-microsoft-365-documentation"></a>Delta i Microsoft 365 dokumentation
 
 Visste du att du kunde redigera innehållet på docs.microsoft.com själv? Om du gör det kommer vår dokumentation att förbättras, men du blir också krediterad som deltagare på sidan. Information om hur du kommer igång finns i:
 
@@ -74,4 +74,4 @@ Visste du att du kunde redigera innehållet på docs.microsoft.com själv? Om du
 
 ## <a name="next-steps"></a>Nästa steg
 
-- Kom igång med den [tekniska dokumentationen för Microsoft 365.](index.yml)
+- Kom igång med den [Microsoft 365 tekniska dokumentationen](index.yml).

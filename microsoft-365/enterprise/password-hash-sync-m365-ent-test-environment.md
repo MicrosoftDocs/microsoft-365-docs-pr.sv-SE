@@ -28,11 +28,11 @@ ms.locfileid: "50921510"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Synkronisering av lösenordshash för Microsoft 365-testmiljön
 
-*Den här testlabbguiden kan användas för både Microsoft 365 för företag- och Office 365 Enterprise-testmiljöer.*
+*Den här testlabbguiden kan användas för både Microsoft 365 för företag Office 365 Enterprise för testmiljöer.*
 
 Många organisationer använder synkronisering av lösenordshash med Azure AD Connect för att synkronisera konton i den lokala AD DS-skogen (Active Directory Domain Services) med konton i Azure AD-klientorganisationen för Microsoft 365-prenumerationen. 
 
-I den här artikeln beskrivs hur du lägger till synkronisering av lösenordshashar i din Microsoft 365-testmiljö, som resulterar i den här konfigurationen:
+I den här artikeln beskrivs hur du lägger till synkronisering av lösenordshashar i Microsoft 365 testmiljö, vilket resulterar i den här konfigurationen:
   
 ![Det simulerade företaget med testmiljö för synkronisering av lösenordshash](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -42,7 +42,7 @@ För inställning av den här testmiljön ingår tre faser:
 - [Fas 3: Installera Azure AD Connect på APP1](#phase-3-install-azure-ad-connect-on-app1)
     
 > [!TIP]
-> En visuell karta till alla artiklar i Microsoft 365 testlabbguide-stacken för företag finns i Testlabbguide för [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)för företag.
+> En visuell karta till alla artiklar i Microsoft 365 för företags testlabbguide stack finns i [Microsoft 365 för företags testlabbguide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>Fas 1: Skapa Microsoft 365-testmiljön för det simulerade företaget.
 
@@ -61,7 +61,7 @@ I den här fasen lägger du till en offentlig DNS-domän och lägger sedan till 
 
 Börja med din offentliga DNS-registreringsleverantör och skapa ett nytt offentligt DNS-domännamn som baseras på ditt nuvarande domännamn, och lägg sedan till det i prenumerationen. Vi rekommenderar att du använder **namnet testlab.<*den offentliga domänen.* >** Om ditt offentliga domännamn till exempel är **<span>contoso</span>.com** lägger du till det offentliga domännamnet: **<span>testlab</span>.contoso.com**.
   
-Lägg sedan till **testlab.< >** din offentliga domän i din utvärderingsversion av Microsoft 365 eller betalprenumeration genom att gå igenom domänregistreringsprocessen. Det består av att lägga till ytterligare DNS-poster **till testlab.<*den offentliga domänen.* >** Mer information finns i Lägga [till en domän i Microsoft 365.](../admin/setup/add-domain.md)
+Lägg sedan till **testlab.< >** din offentliga domän i Microsoft 365-utvärderingsversionen eller betalprenumerationen genom att gå igenom domänregistreringsprocessen. Det består av att lägga till ytterligare DNS-poster **till testlab.<*den offentliga domänen.* >** Mer information finns i Lägga [till en domän i Microsoft 365](../admin/setup/add-domain.md).
 
 Den resulterande konfigurationen ser ut så här:
   
@@ -69,7 +69,7 @@ Den resulterande konfigurationen ser ut så här:
   
 Konfigurationen består av:
 
-- En utvärderingsversion av Microsoft 365 E5 eller betald prenumeration med DNS-domänen testlab.<ditt offentliga *>* registrerat.
+- En Microsoft 365 E5 eller betald prenumeration med DNS-domänen testlab.<*ditt* offentliga domännamn> registrerat.
 - Ett förenklat organisationsintranät som är anslutet till internet och består av virtuella DC1-, APP1- och CLIENT1-datorer på ett undernät i ett virtuellt Azure-nätverk.
 
 Lägg märke till hur testlab.<ditt offentliga *domännamn*> är nu:
@@ -80,9 +80,9 @@ Lägg märke till hur testlab.<ditt offentliga *domännamn*> är nu:
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>Fas 3: Installera Azure AD Connect på APP1
 
-I den här fasen installerar och konfigurerar du Azure AD Connect-verktyget i APP1 och kontrollerar sedan att det fungerar.
+I den här fasen installerar och konfigurerar du Azure AD Anslut app1 och kontrollerar sedan att det fungerar.
   
-Först installerar och konfigurerar du Azure AD Connect i APP1.
+Först installerar och konfigurerar du Azure AD Anslut i APP1.
 
 1. Logga in på [Azure-portalen](https://portal.azure.com) med ditt globala administratörskonto och anslut sedan till APP1 med kontot TESTLAB\\Användare1.
     
@@ -96,15 +96,15 @@ Först installerar och konfigurerar du Azure AD Connect i APP1.
 
 3. Välj Internet Explorer i **Aktivitetsfältet och** gå till [https://aka.ms/aadconnect](https://aka.ms/aadconnect) .
     
-4. På sidan Microsoft Azure Active Directory Connect väljer du **Ladda** ned och sedan **Kör**.
+4. På Microsoft Azure Active Directory Anslut väljer du **Ladda ned** och sedan **Kör**.
     
-5. På sidan **Välkommen till Azure AD Connect** väljer du Jag **godkänner** och väljer sedan **Fortsätt.**
+5. På sidan **Välkommen till Azure AD Anslut** väljer du Jag **godkänner** och väljer sedan **Fortsätt.**
     
-6. På sidan **Expressinställningar** väljer du **Använd standardinställningar**.
+6. På **express-Inställningar** väljer du **Använd standardinställningar**.
     
-7. På sidan **Anslut till Azure AD** anger du namnet på ditt globala administratörskonto i **Användarnamn,** anger lösenordet i **Lösenord** och väljer sedan **Nästa.**
+7. På sidan **Anslut till Azure AD** anger du namnet på ditt globala administratörskonto i **Användarnamn,** anger lösenordet i **Lösenord** och väljer **sedan Nästa.**
     
-8. På sidan **Anslut till AD DS** anger du **TESTLAB \\ User1** i **Användarnamn,** anger lösenordet i **Lösenord** och väljer sedan **Nästa.**
+8. På sidan **Anslut AD DS** anger du **TESTLAB \\ User1** i **Användarnamn,** anger lösenordet i **Lösenord** och väljer sedan **Nästa.**
     
 9. På sidan **Är redo att konfigurera** väljer du **Installera**.
     
@@ -118,7 +118,7 @@ Först installerar och konfigurerar du Azure AD Connect i APP1.
     
 13. Välj **Användarkonto och** sedan Licenser **och appar.**
     
-14. I **Produktlicenser** väljer du plats (om det behövs), **inaktiverar Office 365 E5-licensen** och aktiverar **sedan Microsoft 365 E5-licensen.** 
+14. I **Produktlicenser** väljer du plats (om det behövs), **inaktiverar Office 365 E5-licensen** och aktiverar **sedan den Microsoft 365 E5** licensen. 
 
 15. Välj **Spara** längst ned på sidan och välj sedan **Stäng**.
     
@@ -136,8 +136,8 @@ Den resulterande konfigurationen ser ut så här:
 
 Konfigurationen består av: 
   
-- Utvärderingsversionen av Microsoft 365 E5 eller Office 365 E5 eller betalda prenumerationer med DNS-domänen TESTLAB.<*domännamnet*> registrerat.
-- Ett förenklat organisationsintranät som är anslutet till internet och består av virtuella DC1-, APP1- och CLIENT1-datorer på ett undernät i ett virtuellt Azure-nätverk. Azure AD Connect körs på APP1 för att regelbundet synkronisera TESTLAB AD DS-domänen till Azure AD-klientorganisationen för Microsoft 365-prenumerationen.
+- Microsoft 365 E5 eller Office 365 utvärderingsversionen av E5 eller betalda prenumerationer med DNS-domänen TESTLAB.<*domännamnet*> registrerat.
+- Ett förenklat organisationsintranät som är anslutet till internet och består av virtuella DC1-, APP1- och CLIENT1-datorer på ett undernät i ett virtuellt Azure-nätverk. Azure AD Anslut körs på APP1 för att regelbundet synkronisera TESTLAB AD DS-domänen till Azure AD-klientorganisationen för din Microsoft 365-prenumeration.
 - Användare1-kontot i TESTLAB  AD DS-domänen har synkroniserats med Azure AD-klientorganisationen.
 
 ## <a name="next-step"></a>Nästa steg

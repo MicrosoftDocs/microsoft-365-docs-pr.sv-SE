@@ -1,5 +1,5 @@
 ---
-title: Klientisolering i Microsoft 365
+title: Tenant Isolation i Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923082"
 ---
-# <a name="tenant-isolation-in-microsoft-365"></a>Klientisolering i Microsoft 365
+# <a name="tenant-isolation-in-microsoft-365"></a>Tenant Isolation i Microsoft 365
 
 En av de främsta fördelarna med molnbaserad databehandling är konceptet med en delad, gemensam infrastruktur över flera kunder samtidigt, vilket leder till att många kunder blir större. Det här begreppet kallas *för flera innehavare.* Microsoft arbetar kontinuerligt för att säkerställa att arkitekturer för flera innehavare i våra molntjänster har stöd för säkerhet på företagsnivå, konfidentialitet, sekretess, integritet och tillgänglighetsstandarder.
 
@@ -34,12 +34,12 @@ De två primära målen med att behålla innehavarisolering i en miljö med fler
 1.    Förhindra läckage av, eller obehörig åtkomst till, kundinnehåll i flera klientorganisationen. och
 2.    Förhindra att en klientorganisations åtgärder påverkar tjänsten för en annan klientorganisation negativt
 
-Flera olika former av skydd har implementerats i Microsoft 365 för att förhindra att kunder komprometterade Microsoft 365-tjänster eller -program eller få obehörig åtkomst till informationen från andra klientprogram eller själva Microsoft 365-systemet, inklusive:
+Flera olika former av skydd har implementerats i hela Microsoft 365 för att förhindra att kunder komprometteras Microsoft 365-tjänster eller -program eller få obehörig åtkomst till informationen från andra klientprogram eller till Microsoft 365-systemet, inklusive:
 
-- Logisk avgränsning av kundinnehållet i varje klientorganisation för Microsoft 365-tjänster kan åstadkommas genom Azure Active Directory-auktorisering och rollbaserad åtkomstkontroll.
+- Logisk avgränsning av kundinnehållet i varje klientorganisation för Microsoft 365 tjänster kan åstadkommas Azure Active Directory auktorisering och rollbaserad åtkomstkontroll.
 - SharePoint Online tillhandahåller mekanismer för dataisolering på lagringsnivån.
-- Microsoft använder fysisk säkerhet, bakgrundskontroller och en flerlagerskrypteringsstrategi för att skydda kundinnehållets konfidentialitet och integritet. Alla Microsoft 365-datacenter har biometriska åtkomstkontroller, med de flesta krav på palmutskrifter för att få fysisk åtkomst. Dessutom krävs alla USA-baserade Microsoft-anställda för att genomföra en standardbakgrundskontroll som en del av anställningsprocessen. Mer information om de kontroller som används för administrativ åtkomst i Microsoft 365 finns i [Administrativa åtkomstkontroller i Microsoft 365.](/compliance/assurance/assurance-administrative-access-controls-overview)
-- Microsoft 365 använder tjänstebaserade tekniker som krypterar kundinnehåll vid vila och överföring, inklusive BitLocker, kryptering per fil, TLS (Transport Layer Security) och IPsec (Internet Protocol Security). Specifik information om kryptering i Microsoft 365 finns i [Datakrypteringsteknik i Microsoft 365.](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)
+- Microsoft använder fysisk säkerhet, bakgrundskontroller och en flerlagerskrypteringsstrategi för att skydda kundinnehållets konfidentialitet och integritet. Alla Microsoft 365 har biometriska åtkomstkontroller, med mest krav på palmutskrifter för att få fysisk åtkomst. Dessutom krävs alla USA-baserade Microsoft-anställda för att genomföra en standardbakgrundskontroll som en del av anställningsprocessen. Mer information om de kontroller som används för administrativ åtkomst i Microsoft 365 finns i [Microsoft 365 Administrationsåtkomstkontroller.](/compliance/assurance/assurance-administrative-access-controls-overview)
+- Microsoft 365 använder tjänstebaserade tekniker som krypterar kundinnehåll i vila och överföring, inklusive BitLocker, kryptering per fil, TLS (Transport Layer Security) och IPsec (Internet Protocol Security). Specifik information om kryptering i Microsoft 365 finns i [Datakrypteringsteknik i Microsoft 365.](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)
 
 Tillsammans tillhandahåller de ovan listade skydden robusta logiska avgränsningskontroller som tillhandahåller skydd mot hot och åtgärder som motsvarar det som tillhandahålls av fysisk avgränsning.
 
@@ -47,8 +47,8 @@ Tillsammans tillhandahåller de ovan listade skydden robusta logiska avgränsnin
 
 - [Isolering och åtkomstkontroll i Azure Active Directory](microsoft-365-isolation-in-azure-active-directory.md)
 - [Klientisolering i Office Graph och Delve](microsoft-365-isolation-in-graph-and-delve.md)
-- [Klientisolering i Microsoft 365-sökning](microsoft-365-isolation-in-microsoft-365-search.md)
-- [Innehavarisolering i Office 365 Video](microsoft-365-isolation-in-microsoft-365-video.md)
+- [Innehavarisolering i Microsoft 365 sökning](microsoft-365-isolation-in-microsoft-365-search.md)
+- [Tenant Isolation i Office 365 Video](microsoft-365-isolation-in-microsoft-365-video.md)
 - [Resursgränser](/compliance/assurance/assurance-resource-limits)
 - [Övervaka och testa klientorganisations begränsningar](/compliance/assurance/assurance-monitoring-and-testing)
-- [Isolering och åtkomstkontroll i Microsoft 365](microsoft-365-isolation-in-microsoft-365.md)
+- [Isolerings- och åtkomstkontroll i Microsoft 365](microsoft-365-isolation-in-microsoft-365.md)

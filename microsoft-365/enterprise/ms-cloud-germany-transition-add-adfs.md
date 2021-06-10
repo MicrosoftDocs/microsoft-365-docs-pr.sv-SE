@@ -28,7 +28,7 @@ ms.locfileid: "51165663"
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>AD FS-migreringssteg för migreringen från Microsoft Cloud Deutschland
 
 Den här konfigurationsändringen måste tillämpas när som helst innan fas 2 startar.
-När fas 2 är slutförd kommer konfigurationsändringen att fungera och du kan logga in via globala slutpunkter för Office 365, till exempel `https://portal.office.com` . Om du implementerar konfigurationsändringen före fas 2 fungerar ännu  inte de globala Office 365-slutpunkterna, men det nya förtroende som förlitar sig på parten fortfarande är en del av AD FS-konfigurationen (Active Directory Federation Services).
+När fas 2 är slutförd kommer konfigurationsändringen att fungera och du kan logga in via Office 365 globala slutpunkter som `https://portal.office.com` . Om du implementerar konfigurationsändringen före fas 2 fungerar  inte de globala Office 365-slutpunkterna ännu men det nya förtroende för den beroende parten är fortfarande en del av AD FS-konfigurationen (Active Directory Federation Services).
 
 Kunder som använder federerad autentisering med AD FS (Active Directory Federation Services) bör inte göra ändringar i utfärdare AV URI:er som används för alla autentiseringar med AD DS (Lokal Active Directory Domain Services) under migreringen. Att ändra utfärdare-URI:er leder till autentiseringsfel för användare i domänen. Uri:er för utfärdare kan ändras direkt i  AD FS eller när en domän konverteras från hanterad _till federerad_ och tvärtom. Vi rekommenderar att du inte lägger till, tar bort eller konverterar en federerad domän i Azure AD-klientorganisationen som har migrerats. Uri:er för utfärdare kan ändras när migreringen är fullständig.
 
@@ -53,9 +53,9 @@ När du har slutfört och testat AD FS-säkerhetskopieringen utför du följande
 
 5. Välj Importera **data om den** beroende part som är publicerad online eller i ett lokalt nätverk på sidan Välj **datakälla.** Värdet **för federationsmetadataadress (värdnamn** eller URL) måste anges till `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` . Klicka på **Nästa**.
 
-6. På sidan **Ange visningsnamn** skriver du visningsnamnet, till exempel **Microsoft Office 365 Identity Platform WorldWide.** Klicka på **Nästa**.
+6. På sidan **Ange visningsnamn** skriver du visningsnamnet, t.ex. **identitetsplattformen Microsoft Office 365 Hela världen.** Klicka på **Nästa**.
 
-7. Om du använder ADFS i Windows Server 2012 går du till guidesidan Konfigurera multifaktorautentisering **nu?** och väljer rätt val enligt dina autentiseringskrav. Om du väljer Jag vill inte konfigurera flerfaktorautentisering för detta förtroende för förlitar sig på part för **stunden.** Du kan ändra den här inställningen senare om du vill.
+7. Om du använder ADFS i Windows Server 2012 väljer du på sidan Konfigurera multifaktorautentisering **nu?** på rätt val enligt dina autentiseringskrav. Om du väljer Jag vill inte konfigurera flerfaktorautentisering för detta förtroende för förlitar sig på part för **stunden.** Du kan ändra den här inställningen senare om du vill.
 
 8. För AD FS 2012: Behåll Tillåt  alla användare att använda den här beroende parten markerad under Välj auktoriseringsregler i välj utfärdningsauktoriseringsregler och klicka på **Nästa.** 
 
@@ -65,12 +65,12 @@ När du har slutfört och testat AD FS-säkerhetskopieringen utför du följande
 
 11. Klicka **på** Stäng på **sidan** Slutför.
 
-Genom att stänga guiden upprättas lita på den beroende parten med den globala Office 365-tjänsten. Det finns dock ännu inga regler för utfärdningstransformning.
+Genom att stänga guiden upprättas lita på parten som förlitar sig Office 365 med den globala tjänsten. Det finns dock ännu inga regler för utfärdningstransformning.
 
 Du kan använda [AD FS-hjälpen för](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) att generera rätt regler för utfärdningstransformning. De anspråksregler som skapats med AD FS-hjälpen kan antingen läggas till manuellt via AD FS-hanteringskonsolen eller med PowerShell. AD FS-hjälpen genererar de PowerShell-skript som krävs.  
 
 > [!NOTE]
-> [AD FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) genererar standardutformningsregler som levereras med produkten. Men om anpassade regler för utfärdningstransformering finns i Microsoft Cloud Deutschland Relying Party Trust (till exempel anpassade utfärdare av URI:er, oföränderliga ICKE-standard-ID eller andra anpassningar), måste reglerna som genereras av AD FS-hjälpen ändras på ett sätt som passar den anpassade logik som för närvarande gäller för Microsoft Cloud Deutschland som förlitar sig på part. Om de här anpassningarna inte är integrerade i reglerna som genereras via [AD FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)  fungerar troligtvis inte autentisering för **Microsoft Office 365 Identity Platform WorldWide** för dina federerade identiteter.
+> [AD FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) genererar standardutformningsregler som levereras med produkten. Men om anpassade regler för utfärdningstransformering finns i Microsoft Cloud Deutschland Relying Party Trust (till exempel anpassade utfärdare av URI:er, oföränderliga ICKE-standard-ID eller andra anpassningar), måste reglerna som genereras av AD FS-hjälpen ändras på ett sätt som passar den anpassade logik som för närvarande gäller för Microsoft Cloud Deutschland som förlitar sig på part. Om de här anpassningarna inte är integrerade i reglerna som genereras via [AD FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)fungerar troligtvis inte autentisering för **Microsoft Office 365 Identity Platform WorldWide** för dina federerade identiteter. 
 
 1. Kör **Generera anspråk i** AD [FS-hjälpen](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) och  kopiera PowerShell-skriptet med alternativet Kopiera i det övre högra hörnet i skriptet.
 
@@ -88,7 +88,7 @@ Du kan använda [AD FS-hjälpen för](https://adfshelp.microsoft.com/AadTrustCla
    Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
    ```
 
-3. Kontrollera att två Relying PartyTtrusts finns. en för Microsoft Cloud Deutschland och en för den globala Office 365-tjänsten. Följande kommando kan användas för kontrollen. Den bör returnera två rader och respektive namn och identifierare.
+3. Kontrollera att två Relying PartyTtrusts finns. en för Microsoft Cloud Deutschland och en för Office 365 globala tjänsten. Följande kommando kan användas för kontrollen. Den bör returnera två rader och respektive namn och identifierare.
 
    ```powershell
    Get-AdfsRelyingPartyTrust | Where-Object {$_.Identifier -like 'urn:federation:MicrosoftOnline*'} | Select-Object Name, Identifier
@@ -140,7 +140,7 @@ Om servergruppen misslyckades helt och det inte går att återgå till den gamla
 
 Komma igång:
 
-- [Migrering från Microsoft Cloud Deutschland till Office 365-tjänster i nya tyska datacenterområden](ms-cloud-germany-transition.md)
+- [Migrering från Microsoft Cloud Deutschland till Office 365 i de nya tyska datacenterområdena](ms-cloud-germany-transition.md)
 - [Migreringshjälp för Microsoft Cloud Deutschland](https://aka.ms/germanymigrateassist)
 - [Så här väljer du in för migrering](ms-cloud-germany-migration-opt-in.md)
 - [Kundupplevelse under migreringen](ms-cloud-germany-transition-experience.md)
@@ -154,5 +154,5 @@ Flytta genom övergången:
 Molnappar:
 
 - [Information om Dynamics 365-migreringsprogram](/dynamics365/get-started/migrate-data-german-region)
-- [Information om Migreringsprogram för Power BI](/power-bi/admin/service-admin-migrate-data-germany)
-- [Komma igång med uppgraderingen till Microsoft Teams](/microsoftteams/upgrade-start-here)
+- [Power BI i migreringsprogrammet](/power-bi/admin/service-admin-migrate-data-germany)
+- [Komma igång med din Microsoft Teams uppgradering](/microsoftteams/upgrade-start-here)

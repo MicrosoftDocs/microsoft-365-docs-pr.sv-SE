@@ -20,7 +20,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: Lär dig hur du kan minska inläsningstiden för SharePoint Online-sidor genom att använda JavaScript för att fördröja inläsningen av bilder och JavaScript som inte behövs.
+description: Lär dig hur du kan minska inläsningstiden för SharePoint onlinesidor genom att använda JavaScript för att fördröja inläsningen av bilder och javascript som inte behövs.
 ms.openlocfilehash: 86b93c4e1e102132bb0c1bfb9a413233529adecb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,13 +30,13 @@ ms.locfileid: "50919170"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Fördröja inläsning av bilder och JavaScript i SharePoint Online
 
-I den här artikeln beskrivs hur du kan minska inläsningstiden för SharePoint Online-sidor genom att använda JavaScript för att fördröja inläsningen av bilder och även genom att vänta med att läsa in icke-viktiga JavaScript tills sidan har lästs in.
+I den här artikeln beskrivs hur du kan minska inläsningstiden för SharePoint Online-sidor genom att använda JavaScript för att fördröja inläsningen av bilder och även genom att vänta med att läsa in Icke-viktiga JavaScript tills sidan har lästs in.
   
-Bilder kan påverka inläsningshastigheten för sidor i SharePoint Online negativt. Som standard hämtar de flesta moderna webbläsare bilder i förväg när de läser in en HTML-sida. Det kan leda till att sidan tar onödigt lång tid att läsa in om bilderna inte visas på skärmen förrän användaren rullar nedåt. Bilderna kan blockera webbläsaren från att läsa in den synliga delen av sidan. Du kan komma runt det här problemet genom att använda JavaScript för att hoppa över inläsningen av bilder först. Inläsning av JavaScript som inte är viktigt kan också leda till långsamma nedladdningstider på SharePoint-sidor. I det här avsnittet beskrivs några metoder du kan använda för att förbättra sidinläsningstiderna med JavaScript i SharePoint Online.
+Bilder kan påverka inläsningshastigheten för sidor i SharePoint Online. Som standard hämtar de flesta moderna webbläsare bilder i förväg när de läser in en HTML-sida. Det kan leda till att sidan tar onödigt lång tid att läsa in om bilderna inte visas på skärmen förrän användaren rullar nedåt. Bilderna kan blockera webbläsaren från att läsa in den synliga delen av sidan. Du kan komma runt det här problemet genom att använda JavaScript för att hoppa över inläsningen av bilder först. Inläsning av JavaScript som inte behövs kan också leda till långsamma nedladdningstider på SharePoint sidor. I det här avsnittet beskrivs några metoder du kan använda för att förbättra sidinläsningstiderna med JavaScript SharePoint Online.
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Förbättra sidinläsningstiderna genom att fördröja inläsningen av bilder på SharePoint Online-sidor med JavaScript
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Förbättra sidladdningstiderna genom att fördröja inläsningen av bilder SharePoint onlinesidor med JavaScript
 
-Du kan använda JavaScript för att förhindra att en webbläsare hämtar bilder i förväg. Det gör att den övergripande dokumentåtergivningen går snabbare. Om du vill göra det här tar du bort värdet för src-attributet från taggen och ersätter det med sökvägen till en fil i ett \<img\> dataattribut, till exempel: data-src. Ett exempel:
+Du kan använda JavaScript för att förhindra att en webbläsare hämtar bilder i förväg. Det gör att den övergripande dokumentåtergivningen går snabbare. Om du vill göra det här tar du bort värdet för src-attributet från taggen och ersätter det med sökvägen till en fil i ett \<img\> dataattribut, till exempel: data-src. Till exempel:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -97,13 +97,13 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-Spara textfilen som en JavaScript-fil med filnamnstillägget .js, till exempel delayLoadImages.js.
+Spara textfilen som en JavaScript-fil med filnamnstillägget .js till exempel delayLoadImages.js.
   
-När du är klar med delayLoadImages.js kan du lägga till innehållet i filen på en huvudsida i SharePoint Online. Det gör du genom att lägga till en skriptlänk i sidhuvudet på huvudsidan. När JavaScript-text finns på en huvudsida används det på alla sidor på SharePoint Online-webbplatsen som använder den huvudsideslayouten. Om du bara tänker använda det på en sida på webbplatsen kan du använda skriptredigeringswebbdelen till att bädda in JavaScript-skriptet på sidan. Mer information finns i följande avsnitt:
+När du är klar med delayLoadImages.js kan du lägga till innehållet i filen på en huvudsida i SharePoint Online. Det gör du genom att lägga till en skriptlänk i sidhuvudet på huvudsidan. När JavaScript-koderna finns på en huvudsida används de på alla sidor i SharePoint Online-webbplatsen där huvuds sidlayouten används. Om du bara tänker använda det på en sida på webbplatsen kan du använda skriptredigeringswebbdelen till att bädda in JavaScript-skriptet på sidan. Mer information finns i följande avsnitt:
   
-- [Så här gör du för att: Använda en huvudsida för en webbplats i SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
+- [Så här gör du för att: Använda en huvudsida för en webbplats SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
-- [Så här gör du för att: Skapa en sidlayout i SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)
+- [Så här gör du för att: Skapa en sidlayout SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)
 
 ### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Exempel: Referera till JavaScript-delayLoadImages.js från en huvudsida i SharePoint Online
   
@@ -117,14 +117,14 @@ På följande skärmbild visas resten av bilderna som laddas ned när de rullas 
   
 Att fördröja bildläsningen med hjälp av JavaScript kan vara en effektiv teknik för att öka prestandan. Men om tekniken används på en offentlig webbplats kan sökmotorer inte crawla bilder på samma sätt som de skulle crawla bilder som skapats regelbundet. Det kan påverka rangordningen på sökmotorer eftersom metadata på själva bilden inte verkligen finns där förrän sidan läses in. Sökmotor crawlare läser bara HTML-koden och ser därför inte bilderna som innehåll på sidan. Bilder är en av de faktorer som används för att rangordna sidor i sökresultat. Ett sätt att komma runt det här problemet är att använda introduktionstext för bilder.
   
-## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>Exempel på GitHub-kod: Mata in JavaScript för att förbättra prestanda
+## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub kodexempel: Mata in JavaScript för att förbättra prestanda
 
-Missa inte artikeln och kodexeskriptet på [JavaScript-rutorna](https://go.microsoft.com/fwlink/p/?LinkId=524759) som visas på GitHub.
+Missa inte artikeln och kodexeskriptet på [JavaScript-rutor](https://go.microsoft.com/fwlink/p/?LinkId=524759) som visas på GitHub.
   
 ## <a name="see-also"></a>Se även
 
-[Webbläsare som stöds i Office 2013 och Microsoft 365-program för företag](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Webbläsare som stöds i Office 2013 och Microsoft 365-appar för företag](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[Så här gör du för att: Använda en huvudsida för en webbplats i SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
+[Så här gör du för att: Använda en huvudsida för en webbplats SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
   
-[Så här gör du för att: Skapa en sidlayout i SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)
+[Så här gör du för att: Skapa en sidlayout SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)

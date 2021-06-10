@@ -27,11 +27,11 @@ ms.locfileid: "50921486"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Tillbakaskrivning av lösenord i testmiljön för Microsoft 365
 
-*Den här testlabbguiden kan endast användas för Microsoft 365 för företagstestmiljöer.*
+*Den här testlabbguiden kan endast användas Microsoft 365 för företagstestmiljöer.*
 
 Användare kan använda tillbakaskrivning av lösenord för att uppdatera sina lösenord via Azure Active Directory (Azure AD), som sedan replikeras till AD DS (Local Active Directory Domain Services). Med tillbakaskrivning av lösenord behöver användarna inte uppdatera sina lösenord via den lokala AD DS där deras ursprungliga användarkonton lagras. Detta hjälper roaming- eller fjärranvändare som inte har en fjärranslutning till sina lokala nätverk.
 
-I den här artikeln beskrivs hur du konfigurerar Microsoft 365-testmiljön för återskrivning av lösenord.
+I den här artikeln beskrivs hur du konfigurerar Microsoft 365 testmiljö för tillbakaskrivning av lösenord.
 
 Konfigurering av testmiljön för återställning av lösenord omfattar två faser:
 - [Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -40,7 +40,7 @@ Konfigurering av testmiljön för återställning av lösenord omfattar två fas
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> En visuell karta till alla artiklar i Microsoft 365 testlabbguide-stacken för företag finns i Testlabbguide för [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)för företag.
+> En visuell karta till alla artiklar i Microsoft 365 för företags testlabbguide stack finns i [Microsoft 365 för företags testlabbguide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön
 
@@ -111,7 +111,7 @@ Konfigurera därefter Azure AD Connect på APP1 för tillbakaskrivning av lösen
 
 5. På sidan **Anslut till Azure AD** anger du autentiseringsuppgifterna för ditt globala administratörskonto och väljer sedan **Nästa.**
 
-6. På sidorna **för anslutningskataloger** och **filtrering av domän/OU** väljer du **Nästa.**
+6. På Anslut **kataloger och filtreringssidor** **för Domän/OU** väljer du **Nästa.**
 
 7. På sidan **Valfria** funktioner väljer du **Tillbakaskrivning av lösenord** och väljer sedan **Nästa**.
 
@@ -127,7 +127,7 @@ Den resulterande konfigurationen ser ut så här:
 
 Konfigurationen består av:
 
-- En utvärderingsversion av Microsoft 365 E5 eller betalda prenumerationer med DNS-domänen TESTLAB.\<*your domain name*> registrerat.
+- En Microsoft 365 E5 utvärderingsversion eller betalda prenumerationer med DNS-domänen TESTLAB.\<*your domain name*> registrerat.
 - Ett förenklat organisationsintranät som är anslutet till internet och består av virtuella DC1-, APP1- och CLIENT1-datorer på ett undernät i ett virtuellt Azure-nätverk.
 - Azure AD Connect körs på APP1 för att synkronisera listan med konton och grupper från Azure AD-klientorganisationen för din Microsoft 365-prenumeration till TESTLAB AD DS-domänen.
 - Tillbakaskrivning av lösenord är aktiverat så att användare kan ändra sina lösenord i Azure AD utan att behöva ansluta till det förenklade intranätet.

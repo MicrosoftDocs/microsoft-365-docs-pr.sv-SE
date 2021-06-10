@@ -1,5 +1,5 @@
 ---
-title: Dataklassificering för testmiljön Microsoft 365 för företag
+title: Dataklassificering för din Microsoft 365 för företagstestmiljö
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Använd den här testlabbguiden för att skapa och använda bevarandeetiketter på dokument i din Microsoft 365 för företagstestmiljö.
+description: Använd den här testlabbguiden för att skapa och använda bevarandeetiketter på dokument i Microsoft 365 för företagstestmiljö.
 ms.openlocfilehash: 613aa3713b4d72eed1bc0b2d88f70a817d0e7cff
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,23 +21,23 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919194"
 ---
-# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Dataklassificering för testmiljön Microsoft 365 för företag
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Dataklassificering för din Microsoft 365 för företagstestmiljö
 
-*Den här testlabbguiden kan användas för både Microsoft 365 för företag- och Office 365 Enterprise-testmiljöer.*
+*Den här testlabbguiden kan användas för både Microsoft 365 för företag Office 365 Enterprise för testmiljöer.*
 
-I den här artikeln beskrivs hur du konfigurerar dataklassificering med hjälp av bevarandeetiketter i testmiljön Microsoft 365 för företag.
+I den här artikeln beskrivs hur du konfigurerar dataklassificering med hjälp av bevarandeetiketter i Microsoft 365 för företagstestmiljö.
 
 Klassificering av data i testmiljön omfattar tre faser:
-- [Fas 1: Bygg ut microsoft 365 för företagstestmiljö](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Fas 1: Bygg ut din Microsoft 365 för företagstestmiljö](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Fas 2: Skapa bevarandeetiketter](#phase-2-create-retention-labels)
 - [Fas 3: Använda bevarandeetiketter i dokument](#phase-3-apply-retention-labels-to-documents)
 
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> En visuell karta till alla artiklar i Microsoft 365 testlabbguide-stacken för företag finns i Testlabbguide för [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)för företag.
+> En visuell karta till alla artiklar i Microsoft 365 för företags testlabbguide stack finns i [Microsoft 365 för företags testlabbguide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: Bygg ut microsoft 365 för företagstestmiljö
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Fas 1: Bygg ut din Microsoft 365 för företagstestmiljö
 
 Om du bara vill konfigurera bevarandeetiketter på ett lätt sätt med minimikraven följer du anvisningarna i Enkel [baskonfiguration.](lightweight-base-configuration-microsoft-365-enterprise.md)
   
@@ -48,10 +48,10 @@ Om du vill konfigurera bevarandeetiketter i ett simulerat företag följer du an
 
 ## <a name="phase-2-create-retention-labels"></a>Fas 2: Skapa bevarandeetiketter
 
-I den här fasen skapar du bevarandeetiketter för de olika bevarandenivåerna för SharePoint Online-dokumentmappar:
+I den här fasen skapar du bevarandeetiketter för de olika bevarandenivåerna för de SharePoint mapparna i Online-dokument:
 
-1. Logga in på [Microsoft 365 Säkerhetscenter med](https://security.microsoft.com/homepage) ditt globala administratörskonto.
-1. Välj **Klassificeringslagringsetiketter** på fliken Start – Microsoft 365-säkerhet   >  **i webbläsaren.**
+1. Logga in på [säkerhetscentret Microsoft 365 ditt](https://security.microsoft.com/homepage) globala administratörskonto.
+1. På fliken **Start – Microsoft 365 i** webbläsaren väljer du Klassificeringslagringsetiketter.   >  
 1. Välj **Skapa en etikett**.
 1. I fönstret **Namnge din etikett** anger du Intern **offentlig** i Namnge **din etikett** och väljer sedan **Nästa.**
 1. I fönstret **Filplansbeskrivningar** väljer du **Nästa.**
@@ -76,23 +76,23 @@ Det kan ta några minuter innan de bevarandeetiketter som publiceras publiceras.
 
 I den här fasen upptäcker du standardbeteendet för bevarandeetiketter för filer i mappen Dokument på en SharePoint Online-webbplats och ändrar manuellt bevarandeetiketten för ett dokument.
 
-Skapa först en SharePoint Online-gruppwebbplats med känslig nivå:
+Skapa först en gruppwebbplats med känslig SharePoint nivå:
   
-1. Använd en privat instans av webbläsaren och logga in på [administrationscentret för Microsoft 365 med ditt](https://admin.microsoft.com) globala administratörskonto.
-1. Välj SharePoint i listan med **paneler.**
-1. På den nya **SharePoint-fliken** i webbläsaren väljer du **Skapa webbplats.**
+1. Med en privat instans av webbläsaren loggar du in på Microsoft 365 [administrationscenter med](https://admin.microsoft.com) ditt globala administratörskonto.
+1. I listan med paneler väljer du **SharePoint**.
+1. På den **nya SharePoint** i webbläsaren väljer du Skapa **webbplats**.
 1. På sidan **Skapa en webbplats** väljer du **Gruppwebbplats**.
 1. I rutan **Gruppwebbplatsens** namn anger du **SensitiveFiles**.
-1. Ange **SharePoint-webbplats för** känsliga filer i **rutan Beskrivning av gruppwebbplats.**
+1. I rutan **Beskrivning av gruppwebbplats** anger du **SharePoint webbplats för känsliga filer**.
 1. I **Sekretessinställningar** väljer du **Privat – endast medlemmar kan komma åt den här** webbplatsen och väljer sedan **Nästa**.
-1. I fönstret **Vem vill du lägga till?** väljer du **Slutför**.
+1. I Vem **vill du lägga till? väljer** du **Slutför**.
     
 Konfigurera sedan mappen Dokument på gruppwebbplatsen SensitiveFiles för bevarandeetiketten Känslig.
   
 1. På **fliken KänsligaFiler** i webbläsaren väljer du **Dokument**.
-1. Välj ikonen **Inställningar** och välj sedan **Biblioteksinställningar**.
+1. Välj **Inställningar** och välj sedan **Biblioteksinställningar**.
 1. Under **Behörigheter och hantering** väljer du Använd etikett för objekt i listan eller **biblioteket**. Om det här alternativet inte visas har dina kvarhållningsetiketter ännu inte publicerats. Prova det här steget senare.
-1. I **Inställningar-Använd etikett** väljer **du** Känslig i listrutan och sedan **Spara**.
+1. I **Inställningar-Använd etikett** väljer **du** Känslig i listrutan och väljer sedan **Spara**.
 
 Skapa sedan ett nytt dokument på webbplatsen SensitiveFiles och ändra dess bevarandeetikett.
     

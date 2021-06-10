@@ -1,5 +1,5 @@
 ---
-title: Optimera bilder i moderna webbplatssidor i SharePoint Online
+title: Optimera bilder i SharePoint sidor för moderna webbplatser online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Lär dig hur du använder verktygen i SharePoint Online för att optimera bilder på sidor på moderna SharePoint Online-webbplatser.
+description: Lär dig hur du använder verktygen i SharePoint Online för att optimera bilder på SharePoint moderna webbsidor online.
 ms.openlocfilehash: a4f2def86e1378a9fb76ae9ecbe6a55da75ecffc
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,23 +28,23 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923022"
 ---
-# <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Optimera bilder i moderna webbplatssidor i SharePoint Online
+# <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Optimera bilder i SharePoint sidor för moderna webbplatser online
 
-Den här artikeln hjälper dig att förstå hur du optimerar bilder på sidor med moderna webbplatser i SharePoint Online.
+Den här artikeln hjälper dig att förstå hur du optimerar bilder i SharePoint sidor med modern webbplats online.
 
-Information om hur du optimerar bilder på klassiska publiceringswebbplatser finns [i Bildoptimering för SharePoint Online.](image-optimization-for-sharepoint-online.md)
-
->[!NOTE]
->Mer information om prestanda i moderna Portaler i SharePoint Online finns i [Prestanda i det moderna SharePoint-programmet.](/sharepoint/modern-experience-performance)
-
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>Använd siddiagnostik för SharePoint-verktyget för att analysera bildoptimering
-
-Verktyget Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna portaler för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer om verktyget Siddiagnostik för SharePoint går du [till Använda verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
+Information om hur du optimerar bilder i klassiska publiceringswebbplatser finns [i SharePoint Online.](image-optimization-for-sharepoint-online.md)
 
 >[!NOTE]
->Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
+>Mer information om prestanda i SharePoint moderna portaler finns i [Prestanda i det moderna SharePoint upplevelse.](/sharepoint/modern-experience-performance)
 
-När du analyserar en modern SharePoint-webbplats med verktyget Siddiagnostik för SharePoint kan du se information om stora bilder i _fönstret Diagnostiktest._
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>Använda siddiagnostik för det SharePoint verktyget för att analysera bildoptimering
+
+Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna SharePoint Online-portalen och klassiska https://www.microsoft.com/edge) publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer SharePoint siddiagnostikverktyget går du till Använda [verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
+
+>[!NOTE]
+>Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint systemsida.
+
+När du analyserar SharePoint webbplats med siddiagnostik för SharePoint kan du se information om stora bilder i _fönstret Diagnostiktest._
 
 Möjliga resultat är:
 
@@ -57,7 +57,7 @@ Om det **upptäckta resultatet för stora** bilder visas **i** avsnittet Kräver
 
 ## <a name="remediate-large-image-issues"></a>Åtgärda stora bildproblem
 
-Om en sida innehåller bilder större än 300 kB väljer du resultatet För stora bilder som upptäckts kan du se vilka bilder som är för stora.  På moderna SharePoint Online-sidor tillhandahålls återgivningar av bilder automatiskt och i storlek beroende på storleken på webbläsarfönstret och klientskärmens upplösning. Du bör alltid optimera bilder för webbanvändning innan du laddar upp till SharePoint Online. Mycket stora bilder minskar automatiskt i storlek och upplösning, vilket kan resultera i oväntade renderingsegenskaper.
+Om en sida innehåller bilder större än 300 kB väljer du resultatet För stora bilder som upptäckts kan du se vilka bilder som är för stora.  På moderna SharePoint onlinesidor tillhandahålls återgivningar av bilder automatiskt och deras storlek beroende på storleken på webbläsarfönstret och klientskärmens upplösning. Du bör alltid optimera bilder för webbanvändning innan du laddar upp till SharePoint Online. Mycket stora bilder minskar automatiskt i storlek och upplösning, vilket kan resultera i oväntade renderingsegenskaper.
 
 Innan du gör sidändringar för att åtgärda prestandaproblem bör du anteckna inläsningstiden för sidan i analysresultatet. Kör verktyget igen efter ändringen för att se om det nya resultatet ligger inom baslinjestandarden och kontrollera inläsningstiden för den nya sidan för att se om det finns en förbättring.
 
@@ -68,11 +68,11 @@ Innan du gör sidändringar för att åtgärda prestandaproblem bör du anteckna
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Justera SharePoint Online-prestanda](tune-sharepoint-online-performance.md)
+[Justera SharePoint onlineprestanda](tune-sharepoint-online-performance.md)
 
-[Justera Office 365-prestanda](tune-microsoft-365-performance.md)
+[Justera Office 365 prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i det moderna SharePoint-programmet](/sharepoint/modern-experience-performance)
+[Prestanda i den moderna SharePoint upplevelsen](/sharepoint/modern-experience-performance)
 
 [Nätverk för innehållsleverans](content-delivery-networks.md)
 

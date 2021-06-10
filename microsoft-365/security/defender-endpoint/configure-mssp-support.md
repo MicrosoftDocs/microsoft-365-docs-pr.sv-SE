@@ -23,7 +23,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51165255"
 ---
-# <a name="configure-managed-security-service-provider-integration"></a>Konfigurera integrering av tjänstleverantör för hanterad säkerhet
+# <a name="configure-managed-security-service-provider-integration"></a>Konfigurera integrering med hanterad säkerhetstjänstleverantör
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,20 +44,20 @@ Du måste vidta följande konfigurationssteg för att aktivera mssp-integrering 
 
 Integreringen gör att MSSP kan utföra följande åtgärder:
 
-- Få åtkomst till MSSP-kundens Microsoft Defender Säkerhetscenter-portal
+- Få åtkomst till MSSP-kundens Microsoft Defender Säkerhetscenter portal
 - Få e-postaviseringar och 
 - Hämta aviseringar via säkerhetsinformation och händelsehanteringsverktyg (SIEM)
 
 Innan MSSP:er kan utföra de här åtgärderna måste MSSP-kunden bevilja åtkomst till sin Defender för Slutpunktsklientorganisation så att MSSP kan komma åt portalen. 
  
 
-Normalt sett tar MSSP-kunder de inledande konfigurationsstegen för att ge MSSP-åtkomst till sin Windows Defender Security Central-klientorganisation. När åtkomst har beviljats kan andra konfigurationssteg utföras av antingen kunden för MSSP eller mssp.
+Normalt sett använder MSSP-kunder de inledande konfigurationsstegen för att bevilja MSSP-åtkomst Windows Defender central klientorganisation för säkerhet. När åtkomst har beviljats kan andra konfigurationssteg utföras av antingen kunden för MSSP eller mssp.
 
 
 I allmänhet måste du vidta följande konfigurationssteg:
 
 
-- **Bevilja MSSP-åtkomst till Microsoft Defender Säkerhetscenter** <br>
+- **Ge MSSP åtkomst till Microsoft Defender Säkerhetscenter** <br>
 Den här åtgärden måste utföras av MSSP-kunden. Det ger MSSP-åtkomst till MSSP-kundens Defender för slutpunktsklientorganisationen.
  
 
@@ -75,8 +75,8 @@ Information om hur du implementerar en delegerad åtkomst med flera innehavare f
 
 
 ## <a name="related-topics"></a>Relaterade ämnen
-- [Bevilja MSSP-åtkomst till portalen](grant-mssp-access.md)
-- [Få åtkomst till kundportalen för MSSP](access-mssp-portal.md)
-- [Konfigurera aviseringsmeddelanden](configure-mssp-notifications.md)
-- [Hämta aviseringar från kundklientorganisationen](fetch-alerts-mssp.md)
+- [Bevilja MSSP åtkomst till portalen](grant-mssp-access.md)
+- [Få åtkomst till MSSP-kundportalen](access-mssp-portal.md)
+- [Konfigurera varningsaviseringar](configure-mssp-notifications.md)
+- [Hämta varningar från kundens klientorganisation](fetch-alerts-mssp.md)
 

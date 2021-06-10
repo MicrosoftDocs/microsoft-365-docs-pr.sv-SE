@@ -70,7 +70,7 @@ Använd följande cmdlets:
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-Mer information finns i Använda [PowerShell-cmdlets för att konfigurera och köra Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender-cmdlets.](/powershell/module/defender/index)
+Mer information finns i [Hur du använder PowerShell-cmdlets för att konfigurera och köra Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) och [Defender-cmdlets](/powershell/module/defender/index).
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>Använd Windows för hanteringsinstruktioner (WMI) för att söka efter skyddsuppdateringar innan du kör en genomsökning
 

@@ -38,7 +38,7 @@ ms.locfileid: "51935755"
 > [!IMPORTANT]
 > En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
-Följande resurser ger mer information om API:er som är tillgängliga för andra microsoft-säkerhetslösningar utöver Microsoft 365 Defender API.
+Följande resurser ger mer information om API:er som är tillgängliga för andra microsoft-säkerhetslösningar utöver det Microsoft 365 Defender API.
 
 - [Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
 - [Microsoft Defender för Office 365](/office/office-365-management-api/)

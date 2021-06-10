@@ -35,7 +35,7 @@ ms.locfileid: "51935827"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Tabellen `IdentityInfo` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om användarkonton från olika tjänster, bland annat Azure Active Directory. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
+Tabellen `IdentityInfo` i det avancerade schemat för [sökning](advanced-hunting-overview.md) innehåller information om användarkonton från olika tjänster, bland annat Azure Active Directory. Använd den här referensen för att skapa frågor som returnerar information från den här tabellen.
 
 >[!NOTE]
 >Den här tabellen har bytt namn från `AccountInfo` . Vid namnbyte uppdateras automatiskt alla frågor som sparas i portalen. Kontrollera frågor som du har sparat någon annanstans.

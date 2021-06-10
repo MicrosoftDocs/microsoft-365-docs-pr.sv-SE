@@ -1,5 +1,5 @@
 ---
-title: Optimera anpassade tillägg i moderna webbplatssidor i SharePoint Online
+title: Optimera anpassade tillägg i SharePoint moderna webbplatssidor online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom: Adm_O365
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Lär dig hur du optimerar prestanda för anpassade tillägg på moderna SharePoint Online-webbplatssidor.
+description: Lär dig att optimera prestandan för anpassade tillägg i SharePoint moderna webbplatssidor online.
 ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,18 +26,18 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923069"
 ---
-# <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimera anpassade tillägg i moderna webbplatssidor i SharePoint Online
+# <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimera anpassade tilläggsprestanda i SharePoint moderna webbplatssidor online
 
 Den här artikeln hjälper dig att förstå hur anpassade tillägg påverkar användarfördröjning och hur du åtgärdar vanliga problem.
 
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-custom-extensions"></a>Använda siddiagnostik för SharePoint-verktyget för att analysera anpassade tillägg
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-custom-extensions"></a>Använd siddiagnostikverktyget för SharePoint för att analysera anpassade tillägg
 
-Verktyget Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna portaler för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer om verktyget Siddiagnostik för SharePoint går du [till Använda verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
+Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna SharePoint Online-portalen och klassiska https://www.microsoft.com/edge) publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer SharePoint siddiagnostikverktyget går du till Använda [verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
 
 >[!NOTE]
->Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
+>Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint systemsida.
 
-När du analyserar en sida i en SharePoint-webbplats med verktyget Siddiagnostik för SharePoint kan du se information om  anpassade tillägg som  överskrider baslinjemåttet i tilläggen påverkar inläsningstiden och/eller resultatet för för många tillägg som används i fönstret Diagnostiktest  
+När du analyserar en sida på en SharePoint-webbplats med verktyget Siddiagnostik för SharePoint kan du  se information om anpassade tillägg  som överskrider baslinjemåttet i tilläggen påverkar inläsningstiden och/eller resultatet för för många tillägg som används i fönstret Diagnostiktest  
 
 Möjliga resultat är:
 
@@ -45,7 +45,7 @@ Möjliga resultat är:
 - **Förbättrings** möjligheter (gult) Om fem eller fler tillägg används markeras de i det här avsnittet som en varning tills sju eller fler används som sedan markeras som Uppmärksamhet krävs. 
 - **Ingen åtgärd krävs** (grön): Inget tillägg tar längre tid än en sekund att läsa in.
 
-Om ett tillägg påverkar inläsningstiden eller om det finns för många  tillägg på sidan visas resultatet i avsnittet Åtgärder krävs i resultatet. Klicka på resultatet för att se information om vilket tillägg som läses in långsamt eller för många tillägg har markerats. Framtida uppdateringar av verktyget Siddiagnostik för SharePoint kan innehålla uppdateringar av analysregler, så se till att du alltid har den senaste versionen av verktyget.
+Om ett tillägg påverkar inläsningstiden eller om det finns för många  tillägg på sidan visas resultatet i avsnittet Åtgärder krävs i resultatet. Klicka på resultatet för att se information om vilket tillägg som läses in långsamt eller för många tillägg har markerats. Framtida uppdateringar av siddiagnostik för SharePoint kan innehålla uppdateringar av analysregler, så se till att du alltid har den senaste versionen av verktyget.
 
 ![Inläsningstid för sida](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
@@ -61,15 +61,15 @@ Den här informationen finns med för att hjälpa designers och utvecklare att f
 
 ## <a name="overview-of-extensions"></a>Översikt över tillägg
 
-SharePoint Framework-tillägg (SPFx) kan användas för att utöka användarupplevelsen för SharePoint. Med SharePoint Framework-tillägg kan du anpassa fler aspekter av SharePoint-upplevelsen, inklusive meddelandeområden, verktygsfält och listdatavyer.
+SharePoint Framework (SPFx) Tillägg kan användas för att utöka SharePoint användarupplevelsen. Med SharePoint Framework Tillägg kan du anpassa fler aspekter av SharePoint, till exempel meddelandeområden, verktygsfält och listdatavyer.
 
-Tillägg kan påverka prestandan för en SharePoint-sida eftersom det också kräver PROCESSOR- och nätverksresurser för att göra det arbete som krävs.
+Tillägg kan påverka prestandan för en sida i SharePoint eftersom det också kräver processor- och nätverksresurser för att göra det arbete som krävs.
 
 Det finns fyra typer av tillägg:
 
 - **Application Customizers** lägger till skript på sidan och öppnar välkända platshållare för HTML-element och utökar dem med anpassade återgivningar.
 - **Med Fältanpassare** får du ändrade vyer för data för fält i en lista.
-- **Kommandouppsättningar** utökar SharePoint-kommandoytorna för att lägga till nya åtgärder och ger tillgång till klientkod som du kan använda för att implementera beteenden.
+- **Kommandouppsättningar** utökar SharePoint kommandoytor för att lägga till nya åtgärder och ger klientkod som du kan använda för att implementera beteenden.
 - **Sökfrågemoderare (endast förhandsgranskning)** anropas precis innan sökfrågan körs.
 
 ## <a name="remediate-extension-performance-issues"></a>Åtgärda prestandaproblem med tillägg
@@ -87,8 +87,8 @@ Granskningsresultatet i Siddiagnostikverktyget visar två steg av kör ett till�
 Sidförfattare kan också använda granskningsresultatet för att se om en sida har för många tillägg eftersom för många tillägg påverkar en sidas prestanda negativt.
 
 - **Förlängningsstorlek och beroenden**
-  - Användning av Office 365 CDN krävs för optimal nedladdning av statiska resurser. Offentliga CDN-ursprung är bättre för _js/css-filer._ Mer information om hur du använder Office 365 CDN finns i Använda [Office 365 Content Delivery Network (CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
-  - Återanvänd ramverk som _React och_ _Fabric-importer_ som ingår i SharePoint Framework (SPFx). Mer information finns i [Översikt över SharePoint Framework.](/sharepoint/dev/spfx/sharepoint-framework-overview)
+  - Användning av Office 365 CDN krävs för optimal nedladdning av statiska resurser. Offentliga CDN ursprung är bättre för _js/css-filer._ Mer information om hur du använder Office 365 CDN finns i [Använda Office 365 Content Delivery Network (CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
+  - Återanvänd ramverk som _React och_ _fabric-import_ som ingår i SharePoint Framework (SPFx). Mer information finns i [Översikt över SharePoint Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Kontrollera att du använder den senaste versionen av SharePoint Framework och uppgradera till nya versioner när de blir tillgängliga.
 - **Hämta/cachelagra data**
   - Om tillägget förlitar sig på extra serveranrop för att hämta data för visning ska du se till att de server-API:erna är snabba och/eller implementera cachelagring på klientsidan (till exempel att använda _lokalLagring_ eller _IndexDB_ för större uppsättningar).
@@ -96,7 +96,7 @@ Sidförfattare kan också använda granskningsresultatet för att se om en sida 
   - Om vissa dataelement kräver ett långsammare API, men inte är kritiska för den första renderingen, kan du avkoda dessa till ett separat anrop som körs när viktiga data har återgets.
   - Om flera delar använder samma data använder du ett vanligt datalager för att undvika dubbletter.
 - **Renderingstid**
-  - Alla mediekällor, till exempel bilder och videoklipp, bör ha en storlek som är lika stor som behållaren, enheten och/eller nätverket för att undvika nedladdning av onödiga stora tillgångar. Mer information om innehållsberoenden finns i [Använda Office 365 Content Delivery Network (CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
+  - Alla mediekällor, till exempel bilder och videoklipp, bör ha en storlek som är lika stor som behållaren, enheten och/eller nätverket för att undvika nedladdning av onödiga stora tillgångar. Mer information om innehållsberoenden finns i Använda Office 365 Content Delivery Network [(CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)
   - Undvik API-anrop som leder till flödesfördrång, komplexa CSS-regler eller komplicerade animeringar. Mer information finns i [Minimera webbläsarens flödesomformning.](https://developers.google.com/speed/docs/insights/browser-reflow)
   - Undvik att använda kedjeaktiviteter som körs länge. I stället kan du dela upp långvariga uppgifter i separata köer. Mer information finns i Optimera [körning av JavaScript.](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution)
   - Reservera motsvarande utrymme för asynkron rendering av media eller visuella element för att undvika överhoppade ramar och hackar (kallas även _jank_).
@@ -111,11 +111,11 @@ Innan du gör sidändringar för att åtgärda prestandaproblem bör du anteckna
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Justera SharePoint Online-prestanda](tune-sharepoint-online-performance.md)
+[Justera SharePoint onlineprestanda](tune-sharepoint-online-performance.md)
 
-[Justera Office 365-prestanda](tune-microsoft-365-performance.md)
+[Justera Office 365 prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i det moderna SharePoint-programmet](/sharepoint/modern-experience-performance)
+[Prestanda i den moderna SharePoint upplevelsen](/sharepoint/modern-experience-performance)
 
 [Nätverk för innehållsleverans](content-delivery-networks.md)
 

@@ -27,7 +27,7 @@ ms.locfileid: "50921534"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Direktautentisering för Microsoft 365-testmiljön
 
-*Den här testlabbguiden kan användas för både Microsoft 365 för företag- och Office 365 Enterprise-testmiljöer.*
+*Den här testlabbguiden kan användas för både Microsoft 365 för företag Office 365 Enterprise för testmiljöer.*
 
 Organisationer som direkt vill använda sin lokala Active Directory Domain Services-infrastruktur vid autentisering till Microsofts molnbaserade tjänster och program, kan använda direktautentisering. I den här artikeln beskrivs hur du konfigurerar Microsoft 365-testmiljön för direktautentisering, vilket ger följande konfiguration:
   
@@ -51,7 +51,7 @@ Följ anvisningarna i [synkronisering av lösenordshash för Microsoft 365](pass
   
 Konfigurationen består av: 
   
-- Utvärderingsversion eller betald prenumeration på Microsoft 365 E5.
+- Microsoft 365 E5 utvärderingsversion eller betald prenumeration.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. Azure AD Connect körs på APP1 för att synkronisera TESTLAB AD DS-domänen med Azure AD-klientorganisationen för din Microsoft 365-prenumeration regelbundet.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Fas 2: Konfigurera Azure AD Connect på APP1 för direktautentisering
@@ -94,7 +94,7 @@ Här är konfigurationsresultatet:
  
 Konfigurationen består av:
 
-- En utvärderingsversion av Microsoft 365 E5 eller betalda prenumerationer med DNS-domänens testlab.\<your domain name> registrerat.
+- En Microsoft 365 E5 utvärderingsversion eller betalda prenumerationer med DNS-domäntestlab.\<your domain name> registrerat.
 - Ett förenklat företagsintranät anslutet till Internet som består av de virtuella datorerna DC1, APP1 och CLIENT1 i ett undernät i ett virtuellt Azure-nätverk. En autentiseringsagent körs i APP1 och hanterar direktautentiseringsförfrågningar från Azure AD-klienten för din Microsoft 365-prenumeration.
 
 ## <a name="next-step"></a>Nästa steg

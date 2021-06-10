@@ -1,5 +1,5 @@
 ---
-title: Optimera iFrames i SharePoint Online för moderna och klassiska publiceringswebbplatssidor
+title: Optimera iFrames i SharePoint moderna och klassiska publiceringswebbplatssidor
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom: Adm_O365
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Lär dig hur du optimerar prestanda för iFrames på moderna och klassiska publiceringswebbplatssidor i SharePoint Online.
+description: Lär dig hur du optimerar prestanda för iFrames i SharePoint moderna och klassiska publiceringswebbplatssidor.
 ms.openlocfilehash: d6e9aefa23972589c752540959b17f5d20ed0889
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,21 +26,21 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923070"
 ---
-# <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimera iFrames i SharePoint Online för moderna och klassiska publiceringswebbplatssidor
+# <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Optimera iFrames i SharePoint moderna och klassiska publiceringswebbplatssidor
 
-iFrames kan vara användbart för att förhandsgranska innehållsrika innehåll som videor eller andra media. Men eftersom iFrames läser in en separat sida i SharePoint-webbplatssidan kan innehåll som läses in i iFrame innehålla stora bilder, videor eller andra element som kan bidra till inläsningstider för sidan och som du inte kan styra över på sidan. Den här artikeln hjälper dig att förstå hur iFrames på sidorna påverkar användarens uppfattas fördröjning och hur du åtgärdar vanliga problem.
-
->[!NOTE]
->Mer information om prestanda i moderna SharePoint Online-webbplatser finns i [Prestanda i det moderna SharePoint-programmet.](/sharepoint/modern-experience-performance)
-
-## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>Använda siddiagnostik för SharePoint-verktyget för att analysera webbdelar med iFrames
-
-Verktyget Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna portaler för SharePoint Online och https://www.microsoft.com/edge) klassiska publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer om verktyget Siddiagnostik för SharePoint går du [till Använda verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
+iFrames kan vara användbart för att förhandsgranska innehållsrika innehåll som videor eller andra media. Men eftersom iFrames läser in en separat sida inom sidan SharePoint-webbplatsen kan innehåll som läses in i iFrame innehålla stora bilder, videor eller andra element som kan bidra till inläsningstider för sidan och som du inte kan styra över på sidan. Den här artikeln hjälper dig att förstå hur iFrames på sidorna påverkar användarens uppfattas fördröjning och hur du åtgärdar vanliga problem.
 
 >[!NOTE]
->Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint-systemsida.
+>Mer information om prestanda i SharePoint moderna webbplatser online finns i [Prestanda i det moderna SharePoint upplevelsen.](/sharepoint/modern-experience-performance)
 
-När du analyserar en SharePoint-webbplatssida med verktyget Siddiagnostik för SharePoint kan du se information om webbdelar som innehåller iFrames i _fönstret Diagnostiktest._ Baslinjemåttet är detsamma för moderna och klassiska sidor.
+## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>Använd Siddiagnostik för SharePoint för att analysera webbdelar med iFrames
+
+Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna SharePoint Online-portalen och klassiska https://www.microsoft.com/edge) publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer SharePoint siddiagnostikverktyget går du till Använda [verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
+
+>[!NOTE]
+>Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint systemsida.
+
+När du analyserar SharePoint webbplatssida med verktyget Siddiagnostik för SharePoint kan du se information om webbdelar som innehåller iFrames i _fönstret Diagnostiktest._ Baslinjemåttet är detsamma för moderna och klassiska sidor.
 
 Möjliga resultat är:
 
@@ -62,7 +62,7 @@ Följ vägledning nedan för optimal användning av iFrames.
 
 - Använd bilder i stället för iFrames om förhandsgranskningen är liten att börja med eller icke-interaktiva.
 - Om iFrames måste användas minimerar du numret och/eller flyttar dem från visningsområdet.
-- Inbäddade Office-filer som Word, Excel och PowerPoint är interaktiva, men tar lång tid att läsa in. Miniatyrbilder med en länk till det fullständiga dokumentet fungerar ofta bättre.
+- Inbäddade Office filer som Word, Excel och PowerPoint är interaktiva, men tar lång tid att läsa in. Miniatyrbilder med en länk till det fullständiga dokumentet fungerar ofta bättre.
 - Inbäddade YouTube-videor och Twitter-feeds presterar ofta bättre i iFrames, men använder dessa typer av inbäddningar på ett bra sätt.
 - Isolerade webbdelar är ett rimligt undantag, men minimera deras nummer och placering i visningsområdet.
 - Om en iFrame är placerad utanför visningsområdet kan du använda en _IntersectionObserver_ för att fördröja rendering av iFrame tills den visas.
@@ -76,8 +76,8 @@ Innan du gör sidändringar för att åtgärda prestandaproblem bör du anteckna
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
-[Justera SharePoint Online-prestanda](tune-sharepoint-online-performance.md)
+[Justera SharePoint onlineprestanda](tune-sharepoint-online-performance.md)
 
-[Justera Office 365-prestanda](tune-microsoft-365-performance.md)
+[Justera Office 365 prestanda](tune-microsoft-365-performance.md)
 
-[Prestanda i det moderna SharePoint-programmet](/sharepoint/modern-experience-performance)
+[Prestanda i den moderna SharePoint upplevelsen](/sharepoint/modern-experience-performance)

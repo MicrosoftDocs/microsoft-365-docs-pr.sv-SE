@@ -37,10 +37,10 @@ ms.locfileid: "51935875"
 
 
 
-Tabellen `CloudAppEvents` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om aktiviteter i olika molnappar och tjänster som omfattas av Microsoft Cloud App Security. Gå till Appar och tjänster som omfattas för [en fullständig lista.](#apps-and-services-covered) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen. 
+Tabellen `CloudAppEvents` i det avancerade [sökschemat](advanced-hunting-overview.md) innehåller information om aktiviteter i olika molnappar och tjänster som täcks av Microsoft Cloud App Security. Gå till Appar och tjänster som omfattas för [en fullständig lista.](#apps-and-services-covered) Använd den här referensen för att skapa frågor som returnerar information från den här tabellen. 
 
 >[!IMPORTANT]
->Den här tabellen innehåller information som brukade vara tillgänglig i `AppFileEvents` tabellen. Från och med den 7 mars 2021 bör användare som vill gå igenom filrelaterade aktiviteter i molntjänster på och efter detta datum använda `CloudAppEvents` tabellen i stället. <br><br>Se till att söka efter frågor och anpassade identifieringsregler som fortfarande använder `AppFileEvents` tabellen och redigera dem för att använda `CloudAppEvents` tabellen. Mer information om hur du konverterar påverkade frågor finns i Sök efter [molnappaktiviteter med avancerad sökning i Microsoft 365 Defender.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
+>Den här tabellen innehåller information som brukade vara tillgänglig i `AppFileEvents` tabellen. Från och med den 7 mars 2021 bör användare som vill gå igenom filrelaterade aktiviteter i molntjänster på och efter detta datum använda `CloudAppEvents` tabellen i stället. <br><br>Se till att söka efter frågor och anpassade identifieringsregler som fortfarande använder `AppFileEvents` tabellen och redigera dem för att använda `CloudAppEvents` tabellen. Mer information om hur du konverterar påverkade frågor finns i [Sök efter molnappaktiviteter med Microsoft 365 Defender avancerad sökning.](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)
 
 
 Information om andra tabeller i det avancerade sökschemat finns [i den avancerade referensen för sökning.](advanced-hunting-schema-tables.md)
@@ -55,7 +55,7 @@ Information om andra tabeller i det avancerade sökschemat finns [i den avancera
 | `AccountDisplayName` | sträng | Namnet på kontoanvändaren som visas i adressboken. Detta är en kombination av ett visst namn eller förnamn, en mellaninititiering och efternamn eller efternamn. |
 | `IsAdminOperation` | sträng | Anger om aktiviteten utfördes av en administratör |
 | `DeviceType` | sträng | Typ av enhet baserat på syfte och funktionalitet, till exempel "Nätverksenhet", "Arbetsstation", "Server", "Mobil", "Spelkonsol" eller "Skrivare" | 
-| `OSPlatform` | sträng | Operativsystemets plattform som körs på enheten. Den här kolumnen visar specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
+| `OSPlatform` | sträng | Operativsystemets plattform som körs på enheten. Den här kolumnen anger specifika operativsystem, inklusive variationer inom samma familj, till exempel Windows 10 och Windows 7. |
 | `IPAddress` | sträng | IP-adress tilldelad till slutpunkten och används under relaterad nätverkskommunikation |
 | `IsAnonymousProxy` | sträng | Anger om IP-adressen tillhör en känd anonym proxy |
 | `CountryCode` | sträng | Kod med två bokstäver som anger landet där klientens IP-adress är geolocerad |

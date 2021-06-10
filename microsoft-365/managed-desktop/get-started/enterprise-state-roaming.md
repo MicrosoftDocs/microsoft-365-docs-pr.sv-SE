@@ -1,7 +1,7 @@
 ---
 title: Aktivera Enterprise State Roaming
 description: ''
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -18,13 +18,13 @@ ms.locfileid: "50921960"
 ---
 # <a name="enable-enterprise-state-roaming"></a>Aktivera Enterprise State Roaming
 
-För att få den bästa upplevelsen med Microsoft Managed Desktop kan du aktivera [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview), som gör att användarna säkert kan synkronisera användar- och programinställningar till molnet. Det innebär att de har samma upplevelse oavsett vilken Windows-enhet de loggar in på. Om du till exempel ersätter en av deras Microsoft Managed Desktop-enheter med en ny kommer den att se ut och fungera på exakt samma sätt som den sista.
+För bästa upplevelse med Microsoft Hanterat skrivbord företagsroaming [kan](/azure/active-directory/devices/enterprise-state-roaming-overview)användarna på ett säkert sätt synkronisera användar- och programinställningar till molnet. Det innebär att de har samma upplevelse oavsett vilken enhet Windows loggar in på. Om du till exempel ersätter en av deras Microsoft Hanterat skrivbord enheter med en ny kommer den att se ut och fungera på exakt samma sätt som den sista.
 
-Om du vill aktivera State Roaming för företag följer du stegen i Aktivera state Roaming för företag [i Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable)och återgår sedan till den här dokumentationen.
+Om du vill aktivera State Roaming för företag följer du stegen i Aktivera [företagsroaming i Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable)och återgår sedan till den här dokumentationen.
 
 Om du har problem med Roaming i Enterprise State Roaming kontaktar du [administratörssupport.](../working-with-managed-desktop/admin-support.md)
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Hanterat skrivbord
 
 1. [Lägga till och verifiera administratörskontakter i administratörsportalen](add-admin-contacts.md)
 2. [Justera villkorsstyrd åtkomst](conditional-access.md)

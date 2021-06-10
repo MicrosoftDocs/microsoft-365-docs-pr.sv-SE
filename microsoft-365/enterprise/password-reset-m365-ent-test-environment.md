@@ -27,11 +27,11 @@ ms.locfileid: "50921498"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Återställning av lösenord i testmiljön för Microsoft 365
 
-*Den här testlabbguiden kan endast användas för Microsoft 365 för företagstestmiljöer.*
+*Den här testlabbguiden kan endast användas Microsoft 365 för företagstestmiljöer.*
 
 Med självbetjäningen för återställning av lösenord (SSPR) i Azure Active Directory (Azure AD) kan användarna återställa eller låsa upp sina lösenord eller konton.
 
-I den här artikeln beskrivs hur du konfigurerar och testar återställning av lösenord i Microsoft 365-testmiljön.
+I den här artikeln beskrivs hur du konfigurerar och testar återställning av lösenord Microsoft 365 i testmiljön.
 
 Att konfigurera SSPR innebär tre faser:
 - [Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -41,7 +41,7 @@ Att konfigurera SSPR innebär tre faser:
 ![Testlabbguider för Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> En visuell karta till alla artiklar i Microsoft 365 testlabbguide-stacken för företag finns i Testlabbguide för [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)för företag.
+> En visuell karta till alla artiklar i Microsoft 365 för företags testlabbguide stack finns i [Microsoft 365 för företags testlabbguide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fas 1: Konfigurera synkronisering av lösenordshash för Microsoft 365-testmiljön
 
@@ -70,11 +70,11 @@ I den här fasen konfigurerar du återställning av lösenord i Azure AD-kliento
 Börja med att aktivera återställning av lösenord för kontona i en specifik Azure AD-grupp.
 
 1. Öppna [https://portal.azure.com](https://portal.azure.com) i en privat instans av webbläsaren och logga sedan in med inloggningsuppgifterna för ditt globala administratörskonto.
-2. Välj Ny grupp i **Azure Active Directory-grupper** i  >    >  **Azure-portalen.**
+2. I Azure-portalen väljer du **Azure Active Directory**  >  **Grupper**  >  **Ny grupp.**
 3. Ange **Grupptyp** som **Säkerhet**, **Gruppnamn** som **PWReset** och **Typ av medlemskap** som **Tilldelad**.
 4. Välj **Medlemmar**, sök efter och **välj Användare 3**, **välj Välj** och välj sedan **Skapa**.
 5. Stäng fönstret **Grupper**.
-6. I fönstret Azure Active Directory väljer du Återställning **av lösenord i** det vänstra navigeringsfältet.
+6. I Azure Active Directory väljer du Återställning **av lösenord i** det vänstra navigeringsfältet.
 7. I fönstret **Egenskaper för återställning av lösenord**, under alternativet **Återställning av lösenord via självbetjäning har aktiverats**, väljer du **Vald**.
 8. Välj **Välj grupp**, välj gruppen **PWReset** och välj sedan **Välj**  >  **Spara**.
 9. Stäng den privata webbläsarinstansen.

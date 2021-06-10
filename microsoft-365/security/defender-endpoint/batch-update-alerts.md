@@ -67,7 +67,7 @@ POST /api/alerts/batchUpdate
 
 ## <a name="request-headers"></a>Begäran om rubriker
 
-Namn | Type (Typ) | Beskrivning
+Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 Innehållstyp | Sträng | application/json. **Obligatoriskt.**
@@ -78,7 +78,7 @@ Ange i meddelandetexten för begäran de aviseringar som ska uppdateras och vär
 <br>Befintliga egenskaper som inte ingår i begärans brödtext behåller sina tidigare värden eller beräknas om baserat på ändringar av andra egenskapsvärden. 
 <br>För bästa prestanda bör du inte inkludera befintliga värden som inte har ändrats.
 
-Egenskap | Type (Typ) | Beskrivning
+Egenskap | Typ | Beskrivning
 :---|:---|:---
 alertids | &lt;Liststräng&gt;| En lista med DE IDENTIFIERINGS-identifieringar av aviseringar som ska uppdateras. **Obligatoriskt**
 status | Sträng | Anger uppdaterad status för angivna aviseringar. Egenskapsvärdena är: "Ny", "InProgress" och "Löst".

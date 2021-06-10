@@ -41,7 +41,7 @@ Med villkorsstyrd åtkomst kan du styra åtkomsten till företagsinformation uti
 
 Du kan definiera säkerhetsvillkor för vilka enheter och program som kan köra och komma åt information från nätverket genom att tillämpa principer för att stoppa program från att köras tills en enhet återgår till ett kompatibelt tillstånd. 
 
-Implementeringen av villkorsstyrd åtkomst i Defender för Endpoint baseras på enhetsefterlevnadsprinciper för Microsoft Intune (Intune) och villkorsstyrda åtkomstprinciper för Azure Active Directory (Azure AD). 
+Implementeringen av villkorsstyrd åtkomst i Defender för Endpoint baseras på efterlevnadsprinciper för enheter Microsoft Intune (Intune) och villkorsstyrda åtkomstprinciper för Azure Active Directory (Azure AD). 
 
 Efterlevnadsprincipen används med villkorsstyrd åtkomst för att endast enheter som uppfyller en eller flera policyregler för enhetsefterlevnad ska kunna komma åt program. 
 
@@ -78,5 +78,5 @@ I följande exempelsekvens av händelser förklaras villkorsstyrd åtkomst i pra
 5. Användare kan nu komma åt program.
 
  
-## <a name="related-topic"></a>Relaterade ämnen
+## <a name="related-topic"></a>Relaterat ämne
 - [Konfigurera villkorsstyrd åtkomst i Microsoft Defender för Slutpunkt](configure-conditional-access.md)

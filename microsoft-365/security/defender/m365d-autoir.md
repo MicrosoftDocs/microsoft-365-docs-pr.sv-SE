@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fcb7283faed6fe8c5af59cedeeb90577b557ab34
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 976a79be98efcbb5d7fd3749ddb0cdb282b1e3e3
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259541"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274574"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatiserad undersökning och svar i Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "52259541"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Om din organisation använder [Microsoft 365 Defender](microsoft-365-defender.md)får ditt säkerhetsteam en avisering i Microsoft 365 säkerhetscenter när skadlig eller misstänkt aktivitet eller artefakt upptäcks. Med den till synes oändliga flödet av hot som kan komma in står säkerhetsteam ofta inför utmaningen att hantera den stora mängden aviseringar. Som tur är Microsoft 365 Defender även funktioner för automatisk undersökning och åtgärder (AIR) som kan hjälpa din säkerhetsgrupp att hantera hot mer effektivt och effektivare.
+Om din organisation använder [Microsoft 365 Defender](microsoft-365-defender.md)får ditt säkerhetsteam en avisering i Microsoft 365 säkerhetscenter när skadlig eller misstänkt aktivitet eller artefakt upptäcks. Med den till synes oändliga flödet av hot som kan komma in står säkerhetsteam ofta inför utmaningen att hantera den stora mängden aviseringar. Som tur är Microsoft 365 Defender även funktioner för automatisk undersökning och svar (AIR) som kan hjälpa din säkerhetsgrupp att hantera hot mer effektivt och effektivare.
 
 Den här artikeln innehåller en översikt över AIR med länkar till nästa steg och ytterligare resurser.
 
@@ -59,7 +59,7 @@ I Microsoft 365 Defender fungerar automatisk undersökning och svar med självut
 
 Imagine har en virtuell analytiker i ditt team för säkerhetsåtgärder på nivå 1 eller nivå 2. Den virtuella analytikern efterliknar de bästa stegen som säkerhetsåtgärder kan vidta för att undersöka och åtgärda hot. Den virtuella analytikern kan arbeta dygnet runt, med obegränsad kapacitet, och ta på sig en stor belastning av undersökningar och hotreparation. En sådan virtuell analytiker kan avsevärt minska tiden för att svara, vilket frigör din säkerhetsgrupp för andra viktiga hot eller strategiska projekt. Om det här scenariot låter som science fiction är det inte det! En sådan virtuell analytiker är en del av din Microsoft 365 Defender-programsvit, och namnet är *en automatiserad undersökning och svar.*
 
-Med funktionerna för automatiserad undersökning och svar kan ditt säkerhetsteam avsevärt öka organisationens kapacitet för att hantera säkerhetsvarningar och incidenter. Med automatiserad undersökning och svar kan du minska kostnaderna för hantering av undersökning och åtgärder och få ut mesta mesta av din säkerhetssvit för hot. Automatiska undersöknings- och svarsfunktioner hjälper teamet med säkerhetsåtgärder genom att:
+Med funktionerna för automatiserad undersökning och svar kan ditt säkerhetsteam avsevärt öka organisationens kapacitet för att hantera säkerhetsvarningar och incidenter. Med automatiserad undersökning och svar kan du minska kostnaderna för hantering av undersökning och svar och få ut mesta mesta av din säkerhetssvit för hot. Automatiska undersöknings- och svarsfunktioner hjälper teamet med säkerhetsåtgärder genom att:
 
 1. Avgöra om ett hot kräver åtgärder.
 2. Vidta (eller rekommendera) alla nödvändiga åtgärder.

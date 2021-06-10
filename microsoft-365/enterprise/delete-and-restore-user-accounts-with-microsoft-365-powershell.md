@@ -1,5 +1,5 @@
 ---
-title: Ta bort Microsoft 365-användarkonton med PowerShell
+title: Ta Microsoft 365 bort användarkonton med PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: Lär dig hur du använder olika moduler i PowerShell för att ta bort Microsoft 365-användarkonton.
+description: Lär dig hur du använder olika moduler i PowerShell för att Microsoft 365 användarkonton.
 ms.openlocfilehash: 32081d1ce0cbc7aac89b337cf8b5d08bc8e43dfa
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,19 +27,19 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919146"
 ---
-# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Ta bort Microsoft 365-användarkonton med PowerShell
+# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Ta Microsoft 365 bort användarkonton med PowerShell
 
-Du kan använda PowerShell för Microsoft 365 för att ta bort och återställa användarkonton.
+Du kan använda PowerShell för Microsoft 365 att ta bort och återställa användarkonton.
 
 >[!Note]
->Lär dig hur [du återställer ett användarkonto](../admin/add-users/restore-user.md) med hjälp av administrationscentret för Microsoft 365.
+>Lär dig hur [du återställer ett användarkonto](../admin/add-users/restore-user.md) med hjälp Microsoft 365 administrationscenter.
 >
 >En lista över ytterligare resurser finns i [Hantera användare och grupper.](../admin/add-users/index.yml)
 >   
    
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph-modulen
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph modul
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 När du har anslutt använder du följande syntax för att ta bort ett enskilt användarkonto:
   
@@ -77,11 +77,11 @@ $userName="<display name>"
 Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory-modulen för Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory för Windows PowerShell
 
-När du tar bort ett användarkonto via Microsoft Azure Active Directory-modulen för Windows PowerShell tas kontot inte bort permanent. Du kan återställa det borttagna användarkontot inom 30 dagar.
+När du tar bort ett användarkonto via Microsoft Azure Active Directory för Windows PowerShell tas kontot inte bort permanent. Du kan återställa det borttagna användarkontot inom 30 dagar.
 
-Börja med [att ansluta till din Microsoft 365-klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Börja med [att ansluta till Microsoft 365 klientorganisation.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 Använd följande syntax för att ta bort ett användarkonto:
   

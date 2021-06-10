@@ -58,7 +58,7 @@ I följande tabell anges vad som sker automatiskt när du tilldelar en licens ti
 |Exchange Online  <br/> |En postlåda skapas för den personen. <br/> Mer information om SLA för att den här uppgiften ska slutföras finns [i "Konfigurera..." meddelanden i Microsoft 365 administrationscenter.](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
 |SharePoint Online  <br/> |Personen tilldelas redigeringsbehörigheter på SharePoint Online-standardgruppwebbplatsen.  <br/> |
 |Skype för företag - Online  <br/> |Personen har åtkomst till de funktioner som är kopplade till licensen.  <br/> |
-|Microsoft 365-applikationer för företag  <br/> |Personen kan ladda ned Office appar på upp till fem Mac- eller PC-datorer, fem surfplattor och fem smartphones.  <br/> |
+| Microsoft 365 Apps för företag  <br/> |Personen kan ladda ned Office appar på upp till fem Mac- eller PC-datorer, fem surfplattor och fem smartphones.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Allmänt om licenser för postlådor som inte är kopplade till någon användare
 

@@ -58,7 +58,7 @@ Så här konfigurerar du de här inställningarna:
 
 Plats | Inställning | Artikel
 ---|---|---|---
-KARTOR | Konfigurera åsidosättning av lokal inställning för rapportering till Microsoft MAPS | [Aktivera moln levererat skydd](enable-cloud-protection-microsoft-defender-antivirus.md)
+KARTOR | Konfigurera åsidosättning av lokal inställning för rapportering till Microsoft MAPS | [Aktivera molnbaserat skydd](enable-cloud-protection-microsoft-defender-antivirus.md)
 Karantän | Konfigurera åsidosättning av lokal inställning för borttagning av objekt från mappen Karantän | [Konfigurera åtgärd för genomsökningar](configure-remediation-microsoft-defender-antivirus.md)
 Realtidsskydd | Konfigurera en lokal åsidosättning för övervakning av fil- och programaktivitet på datorn | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md)
 Realtidsskydd | Konfigurera åsidosättning av lokal inställning för övervakning av inkommande och utgående filaktivitet | [Aktivera och Microsoft Defender Antivirus av skydd och övervakning alltid](configure-real-time-protection-microsoft-defender-antivirus.md)

@@ -1,7 +1,7 @@
 ---
 title: Distribuera appar till enheter
-description: Information om hur du lägger till och distribuerar appar till Microsoft Managed Desktop-enheter.
-keywords: Microsoft Managed Desktop, Microsoft 365, tjänst, dokumentation, appar, verksamhetsbaserade appar, verksamhetsbaserade appar
+description: Information om hur du lägger till och distribuerar appar Microsoft Hanterat skrivbord enheter.
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation, appar, verksamhetsbaserade appar, verksamhetsbaserade appar
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -17,56 +17,56 @@ ms.lasthandoff: 03/19/2021
 ms.locfileid: "50922032"
 ---
 # <a name="deploy-apps-to-devices"></a>Distribuera appar till enheter
-I onboarding till Microsoft Managed Desktop ingår att lägga till och distribuera appar till användarens enheter. När du använder Microsoft Managed Desktop-portalen kan du lägga till och distribuera dina program. 
+I introduktionen till Microsoft Hanterat skrivbord ingår att lägga till och distribuera program på användarnas enheter. När du har använt Microsoft Hanterat skrivbord kan du lägga till och distribuera dina program. 
 
 Den övergripande processen ser ut så här:
-1. [Lägga till](#1) appar i Microsoft Managed Desktop-portalen – Det kan vara befintliga verksamhetsbaserade appar (LOB) eller appar från Microsoft Store för företag som du synkroniserat med Intune. 
-2. [Skapa Azure Active Directory-grupper (AD) för apptilldelning](#2) – Du använder grupperna för att hantera apptilldelning.
+1. [Lägga till appar Microsoft Hanterat skrivbord](#1) -portalen – Det kan vara befintliga verksamhetsbaserade appar (LOB) eller appar från Microsoft Store för företag som du synkroniserat med Intune. 
+2. [Skapa Azure Active Directory (AD) för apptilldelning](#2) – Du använder grupperna för att hantera apptilldelning.
 3. [Tilldela dina användare appar](#3)
 
 <span id="1" />
 
-## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>Steg 1: Lägga till appar i Microsoft Managed Desktop-portalen
-Du kan lägga [till Win32- eller Windows MSI-baserade](#lob-apps)appar eller [Microsoft Store](#msfb-apps) för företag-appar till Microsoft Managed Desktop och sedan distribuera dem till Microsoft Managed Desktop-enheter.
+## <a name="step-1-add-apps-to-microsoft-managed-desktop-portal"></a>Steg 1: Lägga till appar Microsoft Hanterat skrivbord portalen
+Du kan lägga [till Win32- Windows MSI-baserade](#lob-apps)appar eller [Microsoft Store för företag-appar](#msfb-apps) i Microsoft Hanterat skrivbord och sedan distribuera dem till Microsoft Hanterat skrivbord enheter.
 
 <span id="lob-apps">
 
-###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Win32- eller Windows MSI-baserade appar för Microsoft Hanterat skrivbord
+###  <a name="win32-or-windows-msi-based-apps-to-microsoft-managed-desktop"></a>Win32 eller Windows MSI-baserade appar att Microsoft Hanterat skrivbord
 
-Du kan lägga till dina verksamhetsbaserade appar (LOB) i Microsoft Managed Desktop-portalen. Information om krav för appar som installeras på Microsoft Managed Desktop-enheter finns i [Krav för Microsoft Managed Desktop-appar.](../service-description/mmd-app-requirements.md)
+Du kan lägga till verksamhetsbaserade appar (LOB) i Microsoft Hanterat skrivbord portal. Mer information om krav för appar som är installerade Microsoft Hanterat skrivbord enheter finns i [Microsoft Hanterat skrivbord för appar.](../service-description/mmd-app-requirements.md)
 
 I den här proceduren väljer du vilken typ av program du vill lägga till och konfigurerar och laddar sedan upp programkällan. 
 
-**Så här lägger du till din LOB-app eller Windows-app i Microsoft Managed Desktop-portalen**
+**Så här lägger du till en LOB-app Windows appen på Microsoft Hanterat skrivbord portalen**
 
-Du kan logga in på Microsoft Managed Desktop-portalen eller logga in på Intune och sedan söka efter Microsoft Managed Desktop. Vi visar inloggning på Microsoft Managed Desktop-portalen. 
+Du kan logga in Microsoft Hanterat skrivbord-portalen eller logga in på Intune och sedan söka efter Microsoft Hanterat skrivbord. Vi visar hur du loggar in Microsoft Hanterat skrivbord portalen. 
 
-1.    Logga in på [Microsoft Managed Desktop Admin-portalen](https://aka.ms/mmdportal). 
+1.    Logga in på [Microsoft Hanterat skrivbord administrationsportalen](https://aka.ms/mmdportal). 
 2.    Under **Lager** väljer du **Appar**.
 3.    I apparbetsbelastningen väljer du Lägg **till**.
-4.    Välj **Verksamhetslinje** **för företagsapp eller Windows-app** **(Win32) i** Lägg till app.
-    - Om du valde Verksamhetsbaserade **appar**, se Lägga till en Windows-företagsapp i [Microsoft Intune](/intune/lob-apps-windows) för instruktioner om att lägga till och konfigurera verksamhetsbaserade appar.
-    - Om du valde **Windows-app (Win32) finns** instruktioner om hur du lägger till och konfigurerar Windows-appar i [Win32-apphantering.](/intune/apps-win32-app-management)
+4.    I **Lägg till app** väljer du **Verksamhets- eller** Windows **(Win32)**.
+    - Om du valde verksamhetsbaserade **appar**, se [Lägga till en Windows-app](/intune/lob-apps-windows) för företag i Microsoft Intune för instruktioner om att lägga till och konfigurera verksamhetsbaserade appar.
+    - Om du valde **Windows (Win32)** finns instruktioner om hur du lägger till och konfigurerar Windows appar i [Win32-apphantering.](/intune/apps-win32-app-management)
 
 <span id="msfb-apps">
 
-### <a name="microsoft-store-for-business-apps"></a>Microsoft Store för företag-appar
-Om du inte har registrerat dig för Microsoft Store för företag kan du registrera dig när du handlar för appar. När du har dina appar kan du synkronisera dem med Microsoft Hanterat skrivbord. 
+### <a name="microsoft-store-for-business-apps"></a>Microsoft Store för företag appar
+Om du inte har registrerat dig hos Microsoft Store för företag kan du registrera dig när du handlar för appar. När du har dina appar kan du synkronisera dem med Microsoft Hanterat skrivbord. 
 
 **Köpa appar från Microsoft Store för företag**
 
-1. Logga in på [Microsoft Store för företag med](https://businessstore.microsoft.com) ditt administratörskonto för Microsoft Store för företag.
+1. Logga in på [Microsoft Store för företag](https://businessstore.microsoft.com) med Microsoft Store för företag administratörskonto.
 2. Välj **Köp för min grupp**.
 3. Använd Sök för att hitta den app du vill använda och välj sedan appen.
-4. Välj Skaffa appen på **produktinformationen.** Microsoft Store lägger till appen i **Dina produkter** för din organisation.
+4. Välj Skaffa appen på **produktinformationen.** Microsoft Store lägger till appen **i Dina produkter** för din organisation.
 
 **Tvinga fram synkronisering mellan Intune och Microsoft Store för företag**
-1. Logga in på [administrationscentret för Microsoft Endpoint Manager.](https://go.microsoft.com/fwlink/?linkid=2109431)
-2. Välj **Kopplingar för**  >  **klientorganisationsadministration och token** Microsoft Store för  >  **företag.**
+1. Logga in Microsoft Endpoint Manager [administrationscentret](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Välj **Kopplingar och** token för  >  **klientorganisationsadministration**  >  **Microsoft Store för företag**.
 3. Välj **Synkronisera** för att hämta de appar som du har köpt från Microsoft Store till Intune.
 
-**Så här verifierar du att en synkronisering mellan Intune och Microsoft Store för företag är aktiv**
-1. Logga in på [Microsoft Store för företag med](https://businessstore.microsoft.com) ditt administratörskonto för Microsoft Store för företag.
+**Verifiera att en synkronisering mellan Intune och Microsoft Store för företag är aktiv**
+1. Logga in på [Microsoft Store för företag](https://businessstore.microsoft.com) med Microsoft Store för företag administratörskonto.
 2. Välj **Hantera**.
 3. Välj **Inställningar** och sedan **Distribuera**.
 4. Under **Hanteringsverktyg** kontrollerar du att Intune visas och att statusen är **Aktiv**.  
@@ -79,11 +79,11 @@ Skapa tre Azure AD-grupper för varje app. I den här tabellen visas de grupper 
 
 Apptilldelningstyp |    Gruppanvändning    | Exempel på Azure AD-namn
 --- | --- | ---
-Kan användas |  Appen kommer att vara tillgänglig från företagsportalappen eller -webbplatsen. | MMD – *appnamn* – tillgänglig
+Kan användas |  Appen är tillgänglig från Företagsportal app eller webbplats. | MMD – *appnamn* – tillgänglig
 Obligatoriskt |  Appen installeras på enheter i de valda grupperna. | MMD – *appnamn* – obligatoriskt
 Avinstallera |  Appen avinstalleras från enheter i de valda grupperna. | MMD – *appnamn* – Avinstallera
 
-Lägg till användarna i de här grupperna för att antingen göra programmet tillgängligt, installera appen eller ta bort appen från sin Microsoft Managed Desktop-enhet. 
+Lägg till användarna i de här grupperna för att antingen göra programmet tillgängligt, installera appen eller ta bort programmet från Microsoft Hanterat skrivbord enhet. 
 
 <span id="3" />
 
@@ -91,14 +91,14 @@ Lägg till användarna i de här grupperna för att antingen göra programmet ti
 
 **Så här tilldelar du appen till användarna**
 
-1. Logga in på [Microsoft Managed Desktop Admin-portalen](https://aka.ms/mmdportal).
+1. Logga in på [Microsoft Hanterat skrivbord administrationsportalen](https://aka.ms/mmdportal).
 2. Välj Appar i fönstret **Hanterat skrivbord.**
 3. I apparbetsbelastningen väljer du det program du vill tilldela användare till och väljer **Tilldela användare grupper.**
 4. För den specifika appen väljer du en uppgiftstyp (Tillgänglig, Obligatoriskt, Avinstallera) och tilldelar lämplig grupp.
 5. I fönstret Tilldela appar väljer du **OK.**
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Hanterat skrivbord
 
 1. [Lägga till och verifiera administratörskontakter i administratörsportalen](add-admin-contacts.md)
 2. [Justera villkorsstyrd åtkomst](conditional-access.md)

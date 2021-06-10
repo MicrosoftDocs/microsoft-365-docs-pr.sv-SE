@@ -38,14 +38,14 @@ Du kan redigera ett befintligt ämne i Viva-ämnen. Du kan behöva göra det hä
 
 Om du vill redigera ett befintligt ämne måste du:
 - Ha en Viva Topics-licens.
-- Har behörighet till [**Vem kan skapa eller redigera ämnen**](./topic-experiences-user-permissions.md). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Har behörighet att [**Vem kan skapa eller redigera ämnen**](./topic-experiences-user-permissions.md). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
 > Användare som har behörighet att hantera ämnen i Ämnescenter (knowledge managers) har redan behörighet att skapa och redigera ämnen.
 
 ## <a name="how-to-edit-a-topic-page"></a>Redigera en ämnessida
 
-Användare som har **behörigheten** Vem kan skapa eller redigera ämnen kan redigera ett ämne <b></b> genom att öppna ämnessidan från en ämnesbrytning och sedan välja knappen Redigera längst upp till höger på ämnessidan. Ämnessidan kan också öppnas från startsidan för ämnescentret där du hittar alla ämnen som du har en anslutning till.
+Användare som har **Vem** kan skapa eller redigera ämnesbehörighet kan redigera ett ämne genom att <b></b> öppna ämnessidan från en ämnesstrykning och sedan välja knappen Redigera längst upp till höger på ämnessidan. Ämnessidan kan också öppnas från startsidan för ämnescentret där du hittar alla ämnen som du har en anslutning till.
 
    ![Knappen Redigera](../media/knowledge-management/edit-button.png) </br> 
 
@@ -75,16 +75,16 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
 
    ![Fästa föreslagna personer](../media/knowledge-management/suggested-people.png)</br>
 
-5. I avsnittet <b>Fästa filer och sidor kan</b> du lägga till eller "fästa" en fil eller SharePoint-webbplatssida som är kopplad till avsnittet.
+5. I avsnittet <b>Fästa filer och sidor kan</b> du lägga till eller "fästa" en fil SharePoint en webbplatssida som är kopplad till avsnittet.
 
    ![Avsnittet Fästa filer och sidor](../media/knowledge-management/pinned-files-and-pages.png)</br>
  
-    Om du vill lägga till en ny fil väljer du Lägg till <b>,</b>väljer SharePoint-webbplatsen från ofta besökta eller följda webbplatser och väljer sedan filen från webbplatsens dokumentbibliotek.
+    Om du vill lägga till en ny fil väljer du Lägg till <b>,</b>SharePoint webbplats från ofta besökta eller följda webbplatser och väljer sedan filen från webbplatsens dokumentbibliotek.
 
     Du kan också använda alternativet <b>Från en länk för</b> att lägga till en fil eller sida genom att ange URL-adressen. 
 
    > [!Note] 
-   > Filer och sidor som du lägger till måste finnas inom samma Microsoft 365-klientorganisation. Om du vill lägga till en länk till en extern resurs i ämnet kan du lägga till den via ikonen för arbetsytan i steg 9.
+   > Filer och sidor som du lägger till måste finnas inom samma Microsoft 365 klientorganisation. Om du vill lägga till en länk till en extern resurs i ämnet kan du lägga till den via ikonen för arbetsytan i steg 9.
 
 6. I <b>avsnittet Föreslagna filer och sidor</b> visas filer och sidor som AI föreslår för att associeras till ämnet.
 
@@ -100,7 +100,7 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
     
     ![Välj en webbplats](../media/knowledge-management/sites.png)</br>
 
-8. I <b>avsnittet Närliggande</b> information visas kopplingar mellan olika ämnen. Du kan lägga till en anslutning <b></b> till ett annat ämne genom att välja knappen Anslut till ett relaterat ämne, skriva namnet på det relaterade ämnet och välja det i sökresultatet. 
+8. I <b>avsnittet Närliggande</b> information visas kopplingar mellan olika ämnen. Du kan lägga till en anslutning till ett annat ämne genom att välja <b>knappen Anslut</b> för ett relaterat ämne, skriva namnet på det relaterade ämnet och välja det i sökresultatet. 
 
    ![Avsnittet Närliggande ämnen](../media/knowledge-management/related-topic.png)</br>  
 
@@ -121,7 +121,7 @@ Knowledge managers can also edit topics directly from the Manage Topics page by 
    ![Bekräfta borttagning](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
-9. Du kan också lägga till statiska objekt på sidan, t.ex. text, bilder eller länkar, genom att välja ikonen för arbetsytan, som du hittar under den korta beskrivningen. När du markerar den öppnas SharePoint-verktygslådan där du kan välja objektet du vill lägga till på sidan.
+9. Du kan också lägga till statiska objekt på sidan, t.ex. text, bilder eller länkar, genom att välja ikonen för arbetsytan, som du hittar under den korta beskrivningen. Om du markerar den SharePoint verktygslådan där du kan välja objektet du vill lägga till på sidan.
 
    ![Canvas-ikon](../media/knowledge-management/webpart-library.png)</br> 
 

@@ -1,6 +1,6 @@
 ---
-title: Infografik för Microsoft 365 för användare
-description: Den här Microsoft 365-infografiken kan hjälpa användarna i organisationen att förstå de bästa metoderna för att arbeta i Microsoft 365.
+title: Microsoft 365 infografik för användare
+description: Den Microsoft 365 informationen kan hjälpa användarna i organisationen att förstå metodtips för att arbeta med Microsoft 365.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -19,11 +19,11 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/22/2021
 ms.locfileid: "51939835"
 ---
-# <a name="microsoft-365-infographics-for-your-users"></a>Infografik för Microsoft 365 för dina användare
+# <a name="microsoft-365-infographics-for-your-users"></a>Microsoft 365 infografik för användarna
 
-Infografiken representerar rekommendationer för arbete och samarbete i Microsoft 365. Dela dem med dina användare för att se till att de utnyttjar säker lagring och delning av filer, håller samarbetsmöten och mycket mer.
+Infografiken representerar rekommendationer för att arbeta och samarbeta i Microsoft 365. Dela dem med dina användare för att se till att de utnyttjar säker lagring och delning av filer, håller samarbetsmöten och mycket mer.
 
-Mer nedladdningsbar [Office-infografik finns](https://support.microsoft.com/office/great-ways-to-work-with-office-6fe70269-b9a4-4ef0-a96e-7a5858b3bd5a) på [Microsoft 365-utbildningswebbplatsen.](https://support.microsoft.com/training)
+Mer nedladdningsbar [Office infografik](https://support.microsoft.com/office/great-ways-to-work-with-office-6fe70269-b9a4-4ef0-a96e-7a5858b3bd5a) finns på [Microsoft 365 utbildningswebbplatsen.](https://support.microsoft.com/training)
 
 <a name="securitytips"></a>
 ## <a name="security-tips"></a>Säkerhetstips

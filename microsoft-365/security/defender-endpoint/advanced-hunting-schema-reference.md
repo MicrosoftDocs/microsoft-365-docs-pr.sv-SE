@@ -58,7 +58,7 @@ Tabell- och kolumnnamn visas också i Microsoft Defender Säkerhetscenter, i sch
 
 | Tabellnamn | Beskrivning |
 |------------|-------------|
-| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Varningar i Microsoft Defender Säkerhetscenter |
+| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Aviseringar på Microsoft Defender Säkerhetscenter |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Enhetsinformation, inklusive OS-information |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Nätverksegenskaper för enheter, inklusive adaptrar, IP- och MAC-adresser, samt anslutna nätverk och domäner |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Skapa processer och relaterade händelser |
@@ -76,8 +76,8 @@ Tabell- och kolumnnamn visas också i Microsoft Defender Säkerhetscenter, i sch
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Kunskapsbas av olika säkerhetskonfigurationer som används av Threat & Vulnerability Management för att utvärdera enheter; inkluderar mappningar till olika standarder och riktvärde |
 
 >[!TIP]
->Använd [avancerad sökning i Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) för att leta efter hot med hjälp av data från Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet. [Aktivera Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)<br><br>
-Läs mer om hur du flyttar dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
+>Använd [avancerad sökning i Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) för att leta efter hot med hjälp av data från Defender för Slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet. [Aktivera Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)<br><br>
+Läs mer om hur du flyttar dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender i Migrera avancerade sökfrågor från [Microsoft Defender för slutpunkt.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)
