@@ -20,12 +20,12 @@ ms.custom:
 description: Användare kan läsa mer om hur de visar och hanterar meddelanden i karantän i Exchange Online Protection (EOP) som borde ha levererats till dem.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68656d21b8c10157ebae5d030e56293ba1ce07f7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4913d0c6fc34d912474bcceac8b1785c4a7e07b3
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539125"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821301"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Hitta och släppa meddelanden i karantän som användare i EOP
 
@@ -38,13 +38,26 @@ ms.locfileid: "52539125"
 
 I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor lagrar karantänen potentiellt farliga eller oönskade meddelanden. Mer information finns i [Karantän i EOP](quarantine-email-messages.md).
 
-Som användare kan du visa, släppa och ta bort meddelanden i karantän där du är mottagare och där meddelandet har satts i karantän som skräppost eller massutskick. Från och med april 2020 kan du visa eller ta bort phishing-meddelanden i karantän (ej nätfiske med hög konfidens) där du är mottagare. Du visar och hanterar dina meddelanden i karantän i Säkerhets- och efterlevnadscenter eller (om en administratör har konfigurerat detta) i [slutanvändarens skräppostmeddelanden](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+Som mottagare av ett meddelande i kvarantän, vad kan du göra med meddelandet som vanlig användare beskrivs i följande tabell:
+
+<br>
+
+****
+
+|Orsak till karantän|Visa|Version|Radera|
+|---|:---:|:---:|:---:|
+|Massutskick|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|Skräppost|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|Nätfiske (inte nätfiske med högt förtroende)|![Bockmarkering](../../media/checkmark.png)||![Bockmarkering](../../media/checkmark.png)|
+|
+
+Du visar och hanterar dina meddelanden i karantän i Microsoft 365 Säkerhetscenter eller (om en administratör har konfigurerat detta) i [slutanvändarens skräppostmeddelanden](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Gå till <https://protection.office.com> för att öppna Säkerhets- och efterlevnadscenter. Om du vill öppna karantänsidan direkt går du till <https://protection.office.com/quarantine>.
+- För att öppna säkerhetscenter, gå till <https://security.microsoft.com>. Om du vill öppna karantänsidan direkt går du till <https://security.microsoft.com/quarantine>.
 
-- Administratörer kan konfigurera hur länge meddelanden behålls i karantän innan de tas bort permanent (principer för skräppostskydd). Meddelanden som har upphört att gälla och tas bort från karantänen går inte att återställa. Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
+- Administratörer kan konfigurera hur länge meddelanden behålls i karantän innan de tas bort permanent principer för skräppostskydd. Meddelanden som har upphört att gälla och tas bort från karantänen går inte att återställa. Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 
 - Administratörer kan även [aktivera skräppostaviseringar för slutanvändare](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) i principer för skräppostskydd. Användare kan släppa skräppost i karantän direkt från dessa aviseringar. Användare kan granska phishing-meddelanden i karantän (inte phishing-meddelanden med hög förtroende) direkt från dessa meddelanden. Mer information finns i [Skräppostaviseringar för slutanvändare i EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
@@ -54,7 +67,7 @@ Som användare kan du visa, släppa och ta bort meddelanden i karantän där du 
 
 ## <a name="view-your-quarantined-messages"></a>Visa meddelanden i karantän
 
-1. I Säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Granska** \> **Karantän**.
+1. I säkerhetscentret går du till **E-post och samarbete** \> **Granska** \> **Karantänen**.
 
 2. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standardvärdena är markerade med en asterisk (<sup>\*</sup>):
 
@@ -89,21 +102,22 @@ Som användare kan du visa, släppa och ta bort meddelanden i karantän där du 
      - **Nätfiske**
 
    - **Principtyp**: filtrera meddelanden efter principtyp:
+     - **Princip för skydd mot skadlig programvara**
+     - **Principer för säkra bifogade filer** (Defender for Office 365)
      - **Princip för skydd mot nätfiske**
      - **Filterprincip för värdbaserat innehåll** (Skräppostprincip)
+     - **Transportregel**
+
+     <sup>\*</sup>
 
    Tryck på **Rensa** om du vill ta bort filtret. Klicka på **Filter** igen om du vill dölja den utfällbara filterrutan.
 
 4. Använd **Sortera resultat efter** (knappen **Meddelande-ID** som standard) och ett motsvarande värde för att hitta specifika meddelanden. Jokertecken stöds inte. Du kan söka efter följande värden:
 
    - **Meddelande-ID**: Meddelandets globalt unika identifierare. Om du väljer ett meddelande i listan visas värdet för **Meddelande-ID** i den utfällbara rutan **Information** som visas. Administratörer kan använda [meddelandespårning](message-trace-scc.md) för att söka efter meddelanden med motsvarande värden för meddelande-ID.
-
    - **Avsändarens e-postadress**: En enskild avsändarens e-postadress.
-
    - **Principnamn**: använd meddelandets hela principnamn. Sökningen är inte skiftlägeskänslig.
-
    - **Mottagarens e-postadress**: En enskild mottagares e-postadress.
-
    - **Ämne**: Använd meddelandets hela ämne. Sökningen är inte skiftlägeskänslig.
 
    När du har angett sökvillkor klickar du på ![knappen Uppdatera](../../media/scc-quarantine-refresh.png) **Uppdatera**, så filtreras resultatet.
@@ -123,21 +137,13 @@ När du har hittat ett specifikt meddelande i karantän väljer du meddelandet f
 När du väljer ett e-postmeddelande i listan visas följande meddelandeinformation i den utfällbara rutan **Information**:
 
 - **Meddelande-ID**: Meddelandets globalt unika identifierare.
-
 - **Avsändarens adress**
-
 - **Mottaget**: Datumet/tiden då meddelandet togs emot.
-
 - **Ämne**
-
 - **Orsak till karantän**: Visar om ett meddelande har identifierats som **Skräppost**, **Bulk** (massutskick) eller **Nätfiske**.
-
 - **Mottagare**: Om meddelandet innehåller flera mottagare måste du klicka på **Förhandsgranska meddelandet** eller **Visa meddelandehuvud** för att se den fullständiga listan över mottagare.
-
 - **Upphör**: Datumet/tiden då meddelandet tas bort automatiskt och permanent från karantänen.
-
 - **Släppt till**: Alla e-postadresser som meddelandet har släppts till.
-
 - **Släppt till**: Alla e-postadresser som meddelandet har släppts till.
 
 ### <a name="take-action-on-quarantined-email"></a>Vidta åtgärder för e-post i karantän
@@ -169,7 +175,6 @@ Om du inte släpper eller tar bort meddelandet tas det bort när standardtiden f
 När du markerar flera meddelanden i karantän i listan (upp till 100) visas den utfällbara rutan **Massåtgärder** där du kan vidta följande åtgärder:
 
 - **Släpp meddelanden**: Du har samma alternativ som när du släpper ett enstaka meddelande, förutom att du inte kan välja **Släpp meddelanden till vissa mottagare**. Du kan endast välja **Släpp meddelanden till alla mottagare** eller **Släpp meddelanden till andra personer**.
-
 - **Ta bort meddelanden**: När du har klickat på **Ja** i varningen som visas tas meddelandet genast bort utan att skickas till de ursprungliga mottagarna.
 
 Klicka på **Stäng** när du är klar.

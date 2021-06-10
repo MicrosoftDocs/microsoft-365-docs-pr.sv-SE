@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Kvarhållningsprinciper för granskningsloggar är en del av de nya funktionerna för avancerad granskning i Microsoft 365. Med en kvarhållningsprincip för granskningsloggar kan du ange hur lång tid granskningsloggar ska behållas i organisationen.
-ms.openlocfilehash: 2ac95d9bb9c13b6bf0c0e31d17b4fb46c30c492a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b3534f5d0572b2656711850b483651270b9e3315
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "52162647"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822147"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Hantera kvarhållningsprinciper för granskningsloggar
 
@@ -77,7 +77,7 @@ Avancerad granskning i Microsoft 365 tillhandahåller en standardkvarhållningsp
 
    5. **Varaktighet:** Hur lång tid granskningsloggar som uppfyller principens villkor ska behållas.
 
-   6. **Prioritet:** Det här värdet bestämmer i vilken ordning kvarhållningsprinciper för granskningsloggar i organisationen bearbetas. Ett högre värde anger en högre prioritet. En princip som har ett prioritetsvärde på **5** har företräde framför en princip med prioritetsvärdet **0**. Som tidigare beskrivits har alla anpassade kvarhållningsprinciper för granskningsloggar företräde framför organisationens standardprincip.
+   6. **Prioritet:** Det här värdet bestämmer i vilken ordning kvarhållningsprinciper för granskningsloggar i organisationen bearbetas. Ett lägre värde anger en högre prioritet. Giltiga prioriteter är numeriska värden mellan **1** och **10000**. Värdet **1** har högsta prioritet, och det lägsta värdet **1 0000** har den lägsta prioriteten. En princip som har ett värde på **5** har företräde framför en princip med värdet **10**. Som tidigare beskrivits har alla anpassade kvarhållningsprinciper för granskningsloggar företräde framför organisationens standardprincip.
 
 5. Klicka på **Spara** för att skapa den nya kvarhållningsprincipen för granskningsloggar.
 

@@ -72,7 +72,7 @@ Obs! Administratörer för webbplatssamlingar kan styra vilka principer som anv�
   
 ![Länk till informationshanteringsprinciper på inställningssidan för dokumentbibliotek](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
-Kommentarer 
+Kommentar 
   
 Du kan skapa en informationshanteringsprincip för en lista eller ett bibliotek endast om listan eller biblioteket inte stöder flera innehållstyper. Om en lista eller ett bibliotek har stöd för flera innehållstyper, måste du definiera en informationshanteringsprincip för varje enskild listinnehållstyp som associeras med listan eller biblioteket. (Instanser av en webbplatsinnehållstyp som associeras med en viss lista eller ett särskilt bibliotek kallas listinnehållstyper.)
   

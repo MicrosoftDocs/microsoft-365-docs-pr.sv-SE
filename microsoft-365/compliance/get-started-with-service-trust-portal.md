@@ -111,17 +111,17 @@ Gå till **Mer > administratör för** att få åtkomst till administrativa funk
 
 - **Användarsekretess Inställningar:** På den här sidan kan du exportera en rapport som innehåller uppgifter om åtgärdsobjekt i Efterlevnadshanteraren (klassisk) för en viss användare. Du kan också omtilldela alla uppgifter till en annan användare och ta bort tilldelade åtgärdsobjekt från den angivna användaren.
 
-### <a name="search"></a>Sök
+### <a name="search"></a>Söka
 
 Klicka på förstoringsglaset i det övre högra hörnet på sidan Service Trust Portal för att expandera rutan, ange sökord och tryck på **Retur.** **Söksidan** visas med sökordet i sökrutan och sökresultaten nedan.
 
-![Service Trust Portal – Söka i dokument med filter](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal – Söka efter dokument med filter tillämpat](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-Som standard returnerar sökningen dokumentresultat. Du kan filtrera resultaten med listrutan för att förfina listan med dokument som visas. Du kan använda flera filter för att begränsa listan med dokument. Filter omfattar specifika molntjänster, kategorier av efterlevnads- eller säkerhetsrutiner, regioner och branscher. Klicka på länken med dokumentnamnet för att ladda ned dokumentet.
+Som standard returnerar sökningen dokumentresultat. Du kan filtrera resultaten med listrutan för att förfina listan med dokument som visas. Du kan använda flera filter för att begränsa listan med dokument. Filter omfattar specifika molntjänster, kategorier av efterlevnads- eller säkerhetsrutiner, regioner och branscher. Klicka på länken med dokumentnamnet om du vill ladda ned dokumentet.
 
 Om du vill lista kontroller från utvärderingar i Efterlevnadshanteraren (klassisk) som relaterar till dina söktermer klickar du **på Efterlevnadshanteraren.** Sökresultatet visar datumet då utvärderingen skapades, namnet på utvärderingsgruppen, aktuell Microsoft Cloud-tjänst och om kontrollen är Microsoft eller Kund hanterad. Klicka på namnet på kontrollen för att visa kontrollen i Utvärdering i efterlevnadshanteraren (klassisk).
 
-![Service Trust Portal – Sökning i efterlevnadshanterarens kontroller](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal – Söka på kontroller för efterlevnadshantering](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > Rapporter och dokument från Service Trust Portal finns att hämta i minst 12 månader efter publiceringen eller tills en ny version av dokumentet blir tillgänglig.
@@ -148,9 +148,9 @@ Om du vill komma åt de här startpaketen går du till **Service Trust Portal > 
 
 ## <a name="localization-support"></a>Stöd för lokalisering
 
-Med Service Trust Portal kan du visa sidinnehållet på olika språk. Om du vill ändra sidans språk klickar du på jordglobsikonen i det nedre vänstra hörnet av sidan och väljer det språk du vill använda.
+Med Service Trust Portal kan du visa sidinnehållet på olika språk. Om du vill ändra språk för sidan klickar du på globikonen i det nedre vänstra hörnet på sidan och väljer önskat språk.
 
-![Service Trust Portal – lokaliserat innehållsalternativ](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal – Alternativ för lokaliserat innehåll](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="give-feedback"></a>Ge feedback
 

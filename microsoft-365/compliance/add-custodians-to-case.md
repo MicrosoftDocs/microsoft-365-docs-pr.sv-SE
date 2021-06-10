@@ -42,7 +42,7 @@ Du kan lägga till och hantera projektionerna i Advanced eDiscovery fall i fyra 
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>Kontrollera att du har de behörigheter som krävs
 
-Du måste vara medlem i rollgruppen för eDiscovery Manager för att kunna lägga till biblioteksansvariga i ett ärende. Då har du rätt behörighet att lägga till läsare i ett ärende och skapa plats för de aktuella datakällorna. Mer information finns i Tilldela [eDiscovery-behörigheter.](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
+Du måste vara medlem i rollgruppen för eDiscovery Manager för att kunna lägga till biblioteksansvariga i ett ärende. Då har du rätt behörighet att lägga till läsare i ett ärende och skapa plats för de aktuella datakällorna. Mer information finns i [Tilldela eDiscovery-behörigheter](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions).
 
 ## <a name="step-1-identify-custodians"></a>Steg 1: Identifiera identifierare
 

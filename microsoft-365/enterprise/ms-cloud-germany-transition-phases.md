@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i den nya tyska datacenterregion.
-ms.openlocfilehash: 28d5eebbe63db13edfb1bfc297bdd6ad0c13536c
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 3a5b95bac74ae405f4e1d6fa91ba4ab51e4a9d05
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861253"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796048"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
@@ -315,11 +315,6 @@ Microsoft Azure måste dina kunder övergå till sina Azure-arbetsbelastningar e
 | Uppdatera Slutpunkter för Azure AD-program | Du måste uppdatera slutpunkter för autentisering, Azure Active Directory (Azure AD) Graph och MS Graph för dina program till slutpunkterna för Microsoft Worldwide-tjänsten. | Efter migreringen 30 dagar slutar Microsoft Cloud Deutschland-slutpunkterna att respektera förfrågningar. klient- eller programtrafiken misslyckas. |
 | Migrera Azure-arbetsbelastningar | Azure-tjänstkunder måste tillhandahålla nya globala prenumerationer för Azure-tjänster och utföra migrering enligt [Azure-migreringsspelboken.](/azure/germany/germany-migration-main) | Vid fullständig övergång till den globala tjänsten (fas 10) kommer kunderna inte längre att kunna komma åt Azure-arbetsbelastningar via Microsoft Cloud Deutschland Azure-portalen. |
 ||||
-
-**Gäller för:** Kunder med Azure AD registrerade eller anslutna enheter
-
-När fas 9 har slutförts måste Azure AD-registrerade och kopplade enheter vara anslutna till den överkopplade Azure AD-instansen i den nya tyska datacenterområdet.
-Enheter som inte åter är anslutna till Azure AD kanske inte längre fungerar i slutet av fas 10. Detaljerade anvisningar och mer information finns i den [ytterligare informationen om enheter.](ms-cloud-germany-transition-add-devices.md)
 
 ### <a name="azure-ad-connect"></a>Azure AD-Anslut
 **Gäller för:** Alla kunder synkroniserar identiteter med Azure AD Connect

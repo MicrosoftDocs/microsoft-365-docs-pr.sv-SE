@@ -28,10 +28,10 @@ Den allmänna dataskyddsförordningen (GDPR) som tillämpas av EU kan påverka d
 
 ## <a name="user-privacy-settings"></a>Inställningar för användarsekretess
 
-Vissa bestämmelser kräver att en organisation måste kunna ta bort användarhistorikdata. Efterlevnadshanteraren **ger funktioner för Inställningar** sekretess som administratörer kan:
+Vissa regler kräver att en organisation måste kunna ta bort användarhistorikdata. Efterlevnadshanteraren **ger funktioner för Inställningar** sekretess som administratörer kan:
   
 - [Söka efter en användare](#search-for-a-user)
-- [Exportera en rapport över kontodatahistorik](#export-a-report-of-account-data-history)
+- [Exportera en rapport om kontodatahistorik](#export-a-report-of-account-data-history)
 - [Ta bort användardatahistorik](#delete-user-data-history)
   
 ## <a name="search-for-a-user"></a>Söka efter en användare
@@ -48,7 +48,7 @@ Så här söker du efter ett användarkonto:
 
 5. Om du vill rensa sökresultat och söka efter en annan användare väljer du **Rensa**.
 
-## <a name="export-a-report-of-account-data-history"></a>Exportera en rapport över kontodatahistorik
+## <a name="export-a-report-of-account-data-history"></a>Exportera en rapport om kontodatahistorik
 
 För varje användarkonto som identifieras kan du generera en rapport över beroenden som är kopplade till kontot. Med den här informationen kan du omtilldela öppna uppgifter eller säkerställa åtkomst till tidigare uppladdade bevis.
   

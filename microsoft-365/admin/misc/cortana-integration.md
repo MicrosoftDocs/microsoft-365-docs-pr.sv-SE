@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Användare med giltiga arbets- eller skolkonton kan få Cortana i Microsoft 365 funktioner som uppfyller Office 365 säkerhet på företagsnivå.
-ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e4b934a8991837637869074d43df89e70b09924d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635804"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866625"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
@@ -89,19 +89,17 @@ Cortanas rösthjälp i Teams-mobilappen och på Microsoft Teams-visningsenheter 
 
 **Administratörskontroll**
 
-Cortana-rösthjälp aktiveras som standard för klientorganisationen. Administratörer kan styra vem i klientorganisationen som kan använda Cortanas rösthjälp i Teams via en policy (TeamsCortanaPolicy). Den här principen kan ställas in på antingen användarkontonivå eller klientnivå. Administratörer kan också använda fältet CortanaVoiceInvocationMode i den här principkontrollen för att avgöra om Cortana är inaktiverad, aktiverad med endast push-knappanrop eller aktiverat med aktivera ordanrop (gäller även enheter som stöder det, till exempel Microsoft Teams-skärmen). Observera att när den första versionen för Microsoft 365 Enterprise-användare i USA släpps på engelska kommer Teams-mobilappen inte att ha stöd för aktivering av Word, men kommer att stödjas i framtiden.
+Cortana-rösthjälp aktiveras som standard för klientorganisationen. Administratörer kan styra vem i klientorganisationen som kan använda Cortanas rösthjälp i Teams via en policy (TeamsCortanaPolicy). Den här principen kan ställas in på antingen användarkontonivå eller klientnivå. Administratörer kan också använda fältet CortanaVoiceInvocationMode i den här principkontrollen för att avgöra om Cortana är inaktiverad, aktiverad med endast push-knappanrop eller aktiverat med aktivera ordanrop (gäller även enheter som stöder det, till exempel Microsoft Teams-skärmen). 
 
 **Användarkontroll**
 
-Enskilda användare kan prova Cortanas rösthjälp i mobilappen Teams genom att klicka på mikrofonknappen. De kan prova Cortanas rösthjälp på Microsoft Teams-visningsenheter genom att säga &#8220;Cortana.&#8221; De kan också styra om Cortana i Teams är aktiverad för sin enhet via en inställning i Teams-mobilappen eller på Microsoft Teams-skärmen: 
+Enskilda användare kan prova Cortanas rösthjälp i mobilappen Teams genom att klicka på mikrofonknappen. De kan prova Cortanas rösthjälp på Microsoft Teams-enheter genom att säga &#8220;Cortana.&#8221; De kan också styra om Cortana svarar på aktivering av ordanrop. 
 
-1. Öppna Teams mobilappen eller gå till den omgivande (hem)skärmen på Microsoft Teams skärmen.
+1.  Öppna Teams mobil
+2.  Gå till Inställningar
+3.  Välj Cortana
+4.  Ändra växlingsknappen för röstaktivering
 
-2. I Teams-mobilappen går du till **Inställningar**. På Microsoft Teams väljer du användarens avatar och väljer sedan Inställningar. Om Cortana till exempel är &#8220;Cortana går du till Inställningar.&#8221;
-
-3. Välj **Cortana.**
-
-4. Flytta reglaget till **På** **eller Av** beroende på om du vill ha Cortana rösthjälp på enheten.
 
 [Läs mer om Cortana rösthjälp i Teams](/microsoftteams/cortana-in-teams)
 

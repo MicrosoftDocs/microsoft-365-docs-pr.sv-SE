@@ -26,14 +26,14 @@ ms.locfileid: "52161587"
 ---
 # <a name="view-custodian-audit-activity"></a>Visa visningsaktiviteter för granskare
 
-Behöver du ta reda på om en användare har visat ett visst dokument eller rensat ett objekt från postlådan? Advanced eDiscovery nu integrerats med det befintliga sökverktyget i granskningsloggen i Säkerhets- & Säkerhets- och efterlevnadscenter. Med hjälp av den här inbäddade upplevelsen kan du använda verktyget Advanced eDiscovery Uppsåtande hantering för att underlätta din undersökning genom att enkelt komma åt och söka i aktiviteten för biblioteks uppringare i ditt ärende.
+Behöver du ta reda på om en användare har visat ett visst dokument eller tagit bort ett objekt från postlådan? Advanced eDiscovery nu integrerats med det befintliga sökverktyget i granskningsloggen i Säkerhets- & Säkerhets- och efterlevnadscenter. Med hjälp av den här inbäddade upplevelsen kan du använda verktyget Advanced eDiscovery Uppsåtande hantering för att underlätta din undersökning genom att enkelt komma åt och söka i aktiviteten för biblioteks uppringare i ditt ärende.
 
 ## <a name="get-permissions"></a>Få behörigheter
 
-Du måste vara tilldelad rollen View-Only granskningsloggar eller granskningsloggar i Exchange Online att söka i granskningsloggen. Som standard tilldelas de här rollerna till rollgrupperna Efterlevnadshantering och Organisationshantering på sidan Behörigheter Exchange administrationscentret. Om du vill ge en användare möjlighet att söka i Advanced eDiscovery-granskningsloggen med den lägsta behörighetsnivån kan du skapa en anpassad rollgrupp i Exchange Online, lägga till rollen View-Only-granskningsloggar eller granskningsloggar och sedan lägga till användaren som medlem i den nya rollgruppen. Mer information finns i Hantera rollgrupper i Exchange Online.
+Du måste ha tilldelats rollen Skrivskyddade granskningsloggar eller Granskningsloggar i Exchange Online för att söka i granskningsloggen. Som standard tilldelas de här rollerna till rollgrupperna Efterlevnadshantering och Organisationshantering på sidan Behörigheter i administrationscentret för Exchange. Om du vill ge en användare möjlighet att söka i Advanced eDiscovery-granskningsloggen med den lägsta behörighetsnivån kan du skapa en anpassad rollgrupp i Exchange Online, lägga till rollen View-Only-granskningsloggar eller granskningsloggar och sedan lägga till användaren som medlem i den nya rollgruppen. Mer information finns i Hantera rollgrupper i Exchange Online.
 
 > [!IMPORTANT]
-> Om du tilldelar en användare rollen View-Only granskningsloggar eller granskningsloggar på sidan Behörigheter i säkerhets- och efterlevnadscentret för & kan de inte söka i granskningsloggen. Du måste tilldela behörigheterna i Exchange Online. Det beror på att den underliggande cmdleten som används för att söka i granskningsloggen är Exchange Online cmdlet.
+> Om du tilldelar en användare rollen View-Only granskningsloggar eller granskningsloggar på sidan Behörigheter i säkerhets- och efterlevnadscentret för & kan de inte söka i granskningsloggen. Du måste tilldela behörigheterna i Exchange Online. Det beror på att den underliggande cmdleten som används för att söka i granskningsloggen är en Exchange Online-cmdlet.
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Steg 1: Sök i granskningsloggen efter aktiviteter som utförts av en vårdnadshavare
 
@@ -66,13 +66,13 @@ Resultatet av en granskningslogg visas under Resultat på sidan Kontroll av gran
 Resultatet innehåller följande information om varje händelse som returneras av sökningen.
 - **Datum:** Datum och tid (i UTC-format) när händelsen inträffade.
 
-- **IP-adress:** IP-adressen för enheten som användes när aktiviteten loggades. IP-adressen visas i IPv4- eller IPv6-adressformat.
+- **IP-adress**: IP-adressen för den enhet som användes när aktiviteten loggades. IP-adressen visas i IPv4- eller IPv6-adressformat.
 
 - **Användare**: Användaren (eller tjänstkontot) som utförde åtgärden som utlöste händelsen.
 
-- **Aktivitet**: Den aktivitet som användaren utförde. Det här värdet motsvarar de aktiviteter som du valde i listrutan Aktiviteter. För en händelse från Exchange administratörsgranskningslogg är värdet i den här kolumnen Exchange cmdlet.
+- **Aktivitet**: Den aktivitet som användaren utförde. Det här värdet motsvarar de aktiviteter som du valde i listrutan Aktiviteter. För en händelse från granskningsloggen för Exchange-administratören är värdet i den här kolumnen en Exchange-cmdlet.
 
-- **Objekt:** Det objekt som skapades eller ändrades som ett resultat av motsvarande aktivitet. Exempelvis den fil som visades eller ändrades eller användarkontot som uppdaterades. Alla aktiviteter har inte ett värde i den här kolumnen.
+- **Objekt**: Objektet som skapades eller ändrades som ett resultat av motsvarande aktivitet. Exempelvis den fil som visades eller ändrades eller det användarkonto som uppdaterades. Alla aktiviteter har inte ett värde i den här kolumnen.
 
 - **Information:** Ytterligare information om en aktivitet. Inte heller här har alla aktiviteter ett värde.
 
@@ -80,15 +80,15 @@ Resultatet innehåller följande information om varje händelse som returneras a
 
 Förutom att sortera kan du också filtrera resultatet av en granskningsloggsökning. Det kan hjälpa dig att snabbt filtrera resultatet för en viss användare eller aktivitet. 
 
-Så här filtrerar du resultaten:
+Så här filtrerar du resultatet:
 
  1. Skapa och kör en granskningsloggsökning.
   
-2. När resultatet visas klickar du på **Filtrera resultat.**
+2. När resultatet visas klickar du på **Filtrera resultat**.
  
 3. Nyckelordsrutor visas under varje kolumnrubrik.
   
-4. Klicka på en av rutorna under en kolumnrubrik och skriv ett ord eller en fras, beroende på vilken kolumn du filtrerar på. Resultatet justeras dynamiskt och visar händelser som matchar filtret.
+4. Klicka på någon av rutorna under en kolumnrubrik och skriv ett ord eller en fras, beroende på vilken kolumn du filtrerar på. Resultatet justeras dynamiskt och visar händelser som matchar filtret.
   
 5. Om du vill ta bort ett filter klickar **du på X** i filterrutan eller så klickar du bara på Dölj **filtrering**.
 
@@ -96,16 +96,16 @@ Så här filtrerar du resultaten:
 
 Du kan exportera resultatet av en granskningsloggsökning till en fil med kommaavgränsade värden (CSV) på den lokala datorn. Du kan öppna den här filen i Microsoft Excel och använda funktioner som att söka, sortera, filtrera och dela en enstaka kolumn (som innehåller celler med flera värden) i flera kolumner.
 
-1. Kör en granskningsloggsökning och ändra sedan sökvillkoren tills du får önskat resultat.
+1. Kör en granskningsloggsökning och ändra sedan sökvillkoren tills du fått önskat resultat.
   
 2. Klicka på Exportera resultat och välj något av följande alternativ:
 
-    - **Spara inlästa resultat:** Välj det här alternativet om du bara vill exportera de poster som visas under **Resultat** på sidan **Datagranskningsloggsökning.** CSV-filen som laddas ned innehåller samma kolumner (och data) som visas på sidan (Datum, Användare, Aktivitet, Objekt och Information). En extra kolumn (mer **som heter**) ingår i CSV-filen som innehåller mer information från granskningsloggposten. Eftersom du exporterar samma resultat som är inlästa (och går att visa) på sidan Granskningsloggsökning exporteras högst 5 000 poster.
+    - **Spara inlästa resultat:** Välj det här alternativet om du bara vill exportera de poster som visas under **Resultat** på sidan **Datagranskningsloggsökning.** CSV-filen som laddas ned innehåller samma kolumner (och data) som visas på sidan (Datum, Användare, Aktivitet, Objekt och Information). En extra kolumn (mer **som heter**) ingår i CSV-filen som innehåller mer information från granskningsloggposten. Eftersom du exporterar samma resultat som är inlästa (och går att visa) på sidan Sökning i granskningslogg exporteras högst 5 000 poster.
         
     - **Ladda ned alla resultat:** Välj det här alternativet om du vill exportera alla poster från granskningsloggen som uppfyller sökvillkoren. Om du har en stor uppsättning sökresultat väljer du det här alternativet om du vill ladda ned alla poster  från granskningsloggen utöver de 5 000 resultat som kan visas på sidan Kontrollboksloggsökning. Det här alternativet laddar ned rådata från granskningsloggen till en CSV-fil och innehåller ytterligare information från granskningsloggposten i en kolumn med namnet Information. Det kan ta längre tid att ladda ned filen om du väljer det här exportalternativet eftersom filen kan vara mycket större än den som laddas ned om du väljer det andra alternativet.
     
       > [!IMPORTANT]
-      > Du kan ladda ned högst 50 000 poster till en CSV-fil från en enskild granskningsloggsökning. Om 50 000 poster laddas ned till CSV-filen kan du antagligen förutsätta att det finns fler än 50 000 händelser som uppfyller sökvillkoren. Om du vill exportera fler poster kan du prova att använda ett datumintervall för att minska antalet granskningsloggposter. Du kan behöva köra flera sökningar med mindre datumintervall för att exportera fler än 50 000 poster.
+      > Du kan ladda ned högst 50 000 poster till en CSV-fil från en enstaka granskningsloggsökning. Om 50 000 poster laddas ned till CSV-filen kan du antagligen förutsätta att det finns fler än 50 000 händelser som uppfyller sökkriterierna. Om du vill exportera fler poster än så kan du prova att använda ett datumintervall för att minska antalet granskningsloggposter. Du kan behöva köra flera sökningar med mindre datumintervall för att exportera mer än 50 000 poster.
         
 
 3. När du har valt exportalternativ visas ett meddelande längst ned i fönstret som uppmanar dig att öppna CSV-filen, spara den i mappen Hämtade filer eller spara den i en särskild mapp

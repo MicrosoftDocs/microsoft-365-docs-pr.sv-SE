@@ -67,7 +67,7 @@ För att hjälpa dig att komma igång med ett informationsskyddsschema i Microso
 
 Microsofts [informationsskyddslösningar](../compliance/information-protection.md) omfattar ett antal integrerade funktioner i Microsoft 365, Microsoft Azure och Microsoft Windows. I Microsoft 365 omfattar informationsskyddslösningar:
 
-- [Tjänstkryptering med kundnyckel](../compliance/customer-key-overview.md)
+- [Tjänst kryptering med kundnyckel](../compliance/customer-key-overview.md)
 - [Typer av känslig information](../compliance/sensitive-information-type-entity-definitions.md) (beskrivs i utvärdera [datasekretessrisker och identifiera känsliga objekt)](information-protection-deploy-assess.md)
 - [Känslighetsetiketter](../compliance/sensitivity-labels.md) 
   - Service/container-nivå
@@ -156,9 +156,9 @@ Med känslighetsetiketter för filer kan du kryptera innehåll, vattenstämpla i
 
 När du är redo att börja skydda organisationens data med känslighetsetiketter:
 
-1. **Skapa etiketterna.** Skapa och namnge känslighetsetiketter enligt din organisations klassificerings taxonomi för olika känslighetsnivåer för innehåll. Mer information om hur du utvecklar en klassificerings taxonomi finns i informationsbladet [Taxonomi för dataklassificering och känslighetsetikett](https://aka.ms/dataclassificationwhitepaper).
-2. **Definiera vad varje etikett kan göra.** Konfigurera de skyddsinställningar som du vill använda för varje etikett. Du kanske till exempel vill att innehåll med lägre känslighet (t.ex. en Allmänt-etikett) bara ska ha ett sidhuvud eller en sidfot, medan innehåll med högre känslighet (t.ex. en "Konfidentiellt"-etikett) ska ha en vattenstämpel och ha kryptering aktiverad.
-3. **Publicera etiketterna.** När dina känslighetsetiketter har konfigurerats publicerar du dem med hjälp av en etikettprincip. Bestäm vilka användare och grupper som ska ha etiketterna och vilka principinställningar som ska användas. En enstaka etikett kan återanvändas. Du definierar det en gång och sedan kan du inkludera det i flera etikettprinciper som tilldelats olika användare.
+1. **Skapa etiketterna.** Skapa och namnge känslighetsetiketterna enligt organisationens klassificeringstaxonomi för olika känslighetsnivåer i innehållet. Mer information om hur du utvecklar en klassificerings taxonomi finns i informationsbladet [Taxonomi för dataklassificering och känslighetsetikett](https://aka.ms/dataclassificationwhitepaper).
+2. **Definiera vad varje etikett kan göra.** Konfigurera de skyddsinställningar du vill koppla till varje etikett. Du kanske till exempel vill att innehåll med lägre känslighet (t.ex. en Allmänt-etikett) bara ska ha ett sidhuvud eller en sidfot, medan innehåll med högre känslighet (t.ex. en "Konfidentiellt"-etikett) ska ha en vattenstämpel och ha kryptering aktiverad.
+3. **Publicera etiketterna.** När du har konfigurerat känsliga etiketter kan du publicera dem med hjälp av en etikett policy. Bestäm vilka användare och grupper som ska ha etiketterna och vilka principinställningar som ska användas. En enstaka etikett kan återanvändas. Du definierar det en gång och sedan kan du inkludera det i flera etikettprinciper som tilldelats olika användare.
 
 När du publicerar känslighetsetiketter från kompatibilitetscentret för Microsoft 365 börjar de visas i [Office-appar](../compliance/sensitivity-labels-office-apps.md) så att användare kan klassificera och skydda innehåll när det skapas eller redigeras.
 
@@ -175,13 +175,13 @@ När du skapar en känslighetsetikett kan du [automatiskt](../compliance/apply-s
 
 Det är viktigt att kunna använda känslighetsetiketter på innehåll automatiskt eftersom:
 
-- Du behöver inte utbilda användarna när de ska använda var och en av dina klassificeringar.
-- Du behöver inte förlita dig på att användare klassificera allt innehåll på rätt sätt.
-- Användarna behöver inte längre känna till dina principer – de kan i stället fokusera på sitt arbete.
+- Du behöver inte träna dina användare när de använder var och en av dina klassificeringar.
+- Du behöver inte förlita dig på att användare ska klassificera allt innehåll på rätt sätt.
+- Användarna behöver inte längre veta om dina principer – de kan istället fokusera på sitt arbete.
 
-Automatisk märkning stöder rekommendation av en etikett för användarna samt att automatiskt använda en etikett. Men i båda fallen bestämmer användaren om han eller hon vill godkänna eller avvisa etiketten för att säkerställa rätt innehållsetikett.
+Automatisk märkning stöder rekommendation av en etikett för användarna samt att automatiskt använda en etikett. I båda fallen bestämmer användaren om du vill acceptera eller avvisa etiketten för att säkerställa rätt etikettering av innehållet.
 
-Den här klientetiketten har minimal fördröjning för dokument eftersom etiketten kan användas även innan dokumentet sparas. Men alla klientappar har inte stöd för automatisk märkning. Den här funktionen stöds av den enhetliga azure Information Protection-märkningsklienten och vissa [versioner av Office program.](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
+På den här sidan i klienten finns det minimalt med dokument. det innebär att du inte kan använda etiketter. Det är dock inga klient program som har stöd för automatisk etikettering. Den här funktionen stöds av den enhetliga azure Information Protection-märkningsklienten och vissa [versioner av Office program.](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
 
 Konfigurationsinstruktioner finns [i Konfigurera automatisk märkning för Office appar](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
@@ -191,13 +191,13 @@ För datasekretess tillämpar du automatiskt känslighetsetiketter för innehål
 
 Den här metoden kallas för automatisk klassificering med känslighetsetiketter. Du kan även höra det som kallas automatisk märkning för data i vila (för dokument i SharePoint och OneDrive) och data som överförs (för e-post som skickas eller tas emot av Exchange). Till Exchange inkluderas inte e-postmeddelanden i postlådor i vila.
  
-Eftersom den här etiketten används av själva tjänsten i stället för av användarprogram behöver du inte oroa dig för vilka appar användarna har och vilken version. Den här funktionen är därför omedelbart tillgänglig i hela organisationen och passar därför för att märka med skalan. Principer för automatisk märkning stöder inte rekommenderade etiketter eftersom användaren inte interagerar med märkningsprocessen. I stället kör administratören principerna i simuleringsläge för att säkerställa korrekt märkning av innehåll innan etiketten faktiskt används.
+Eftersom den här etiketten används av själva tjänsten i stället för av användarprogram behöver du inte oroa dig för vilka appar användarna har och vilken version. Därför är den här funktionen omedelbart tillgänglig i hela organisationen och lämpar sig för etikettering vid skalan. Automatiskt märkta principer har inte stöd för Rekommenderad etikett eftersom användaren inte interagerar med namngivnings processen. I stället körs principerna i simuleringsläge för att säkerställa rätt etikettering av innehållet innan etiketten tillämpas.
 
 Konfigurationsinstruktioner finns i Konfigurera principer för automatisk märkning [för SharePoint, OneDrive och Exchange.](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 
 För datasekretess på webbplatser som är av intresse kan du trycka på känslighetsetiketter för automatisk kryptering av innehåll som innehåller känslig personlig information.
 
-## <a name="data-loss-prevention"></a>Skydd mot dataförlust 
+## <a name="data-loss-prevention"></a>Dataförlustskydd 
 
 Du kan använda skydd mot [dataförlust i Microsoft 365](../compliance/dlp-learn-about-dlp.md) för att upptäcka, varna och blockera riskabel, oavsiktlig eller olämplig delning, t.ex. delning av data som innehåller personlig information, både internt och externt.
 

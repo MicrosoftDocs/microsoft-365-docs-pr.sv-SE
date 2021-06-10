@@ -38,7 +38,7 @@ Identifiera rätt intressenter i organisationen för att samarbeta för att vidt
 - Sekretess
 - Säkerhet
 - Personalavdelningen
-- Juridiskt
+- Villkor
 
 ## <a name="plan-for-the-investigation-and-remediation-workflow"></a>Planera för undersöknings- och åtgärdsarbetsflödet
 

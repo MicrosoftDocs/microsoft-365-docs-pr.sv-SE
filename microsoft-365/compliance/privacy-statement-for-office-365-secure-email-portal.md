@@ -37,7 +37,7 @@ Dina autentiseringsuppgifter till Microsoft-kontot, arbets- eller skolkontot, el
   
 Under dekrypteringsprocessen lagras inte krypterad e-post som du får av den nya OME-funktionsportalen. Den överförs inte vid något tillfälle utanför den nya OME-kapacitetsportalen.
   
-Den nya OME-funktionen Portal kan i vissa fall samla in datapunkter om användning och prestanda för de nya OME-funktionerna (till exempel hur ofta krypterade meddelanden visas, vilken webbläsare eller app som används och eventuella fel som uppstår), som kan analyseras i mängd för att förbättra kvaliteten, säkerheten och integriteten för den här och andra Microsoft-appar, produkter eller tjänster. Informationen används inte för att identifiera, kontakta eller rikta annonsering till dig.
+Den nya OME-funktionen Portal kan i vissa fall samla in datapunkter om användning och prestanda för de nya OME-funktionerna (till exempel hur ofta krypterade meddelanden visas, vilken webbläsare eller app som används och eventuella fel som uppstår), som kan analyseras i mängd för att förbättra kvaliteten, säkerheten och integriteten för den här och andra Microsoft-appar , produkter eller tjänster. Informationen används inte för att identifiera, kontakta eller rikta annonsering till dig.
   
 ## <a name="for-more-information"></a>Mer information
 

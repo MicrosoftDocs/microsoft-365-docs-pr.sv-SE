@@ -102,7 +102,7 @@ Det första steget är att söka i granskningsloggen efter delningshändelser. M
     
 3. I den vänstra rutan i säkerhets- & säkerhets- och efterlevnadscenter klickar du **på Sök i**   >  **granskningsloggsökning**.
     
-    Sidan **Granskningsloggsökning** visas. 
+    Sidan **Sökning i granskningslogg** visas. 
     
 4. Under **Aktiviteter** klickar du på **Aktiviteter för delning och åtkomstbegäran** för att söka efter delningsrelaterade händelser. 
     
@@ -122,7 +122,7 @@ Det första steget är att söka i granskningsloggen efter delningshändelser. M
 
 Nästa steg är att använda transformeringsfunktionen JSON i Power Query-redigeraren i Excel för att dela upp varje egenskap i kolumnen **Information** (som består av ett JSON-objekt med flera egendom) i en egen kolumn. Då kan du filtrera kolumner för att visa poster som är relaterade till delning
 
-Stegvisa instruktioner finns i "Steg 2: Formatera den exporterade granskningsloggen med Power Query-redigeraren" i Exportera, konfigurera och visa [granskningsloggposter.](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor)
+Stegvisa instruktioner finns i ”Steg 2: Formatera den exporterade granskningsloggen med Power Query-redigeraren” i [Exportera, konfigurera och visa granskningsloggposter](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
 
 ### <a name="step-3-filter-the-csv-file-for-resources-shared-with-external-users"></a>Steg 3: Filtrera CSV-filen efter resurser som delas med externa användare
 
