@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298022"
 ---
-# <a name="contact-support-for-montserrat"></a><span data-ttu-id="4be3b-103">Kontakta supporten för Montserrat</span><span class="sxs-lookup"><span data-stu-id="4be3b-103">Contact support for Montserrat</span></span>
+# <a name="contact-support-for-montserrat"></a><span data-ttu-id="8c033-103">Kontakta supporten för Montserrat</span><span class="sxs-lookup"><span data-stu-id="8c033-103">Contact support for Montserrat</span></span>
 
-<span data-ttu-id="4be3b-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="4be3b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="8c033-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="8c033-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="4be3b-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="4be3b-105">Phone number</span></span>
-<span data-ttu-id="4be3b-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="4be3b-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="8c033-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="8c033-105">Phone number</span></span>
+<span data-ttu-id="8c033-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="8c033-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="4be3b-107">Tider</span><span class="sxs-lookup"><span data-stu-id="4be3b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="4be3b-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="4be3b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="8c033-107">Tider</span><span class="sxs-lookup"><span data-stu-id="8c033-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="8c033-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="8c033-108">Billing Support:</span></span>
 
-<span data-ttu-id="4be3b-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="4be3b-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="8c033-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="8c033-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="4be3b-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="4be3b-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="8c033-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="8c033-110">Technical Support:</span></span>
 
-<span data-ttu-id="4be3b-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="4be3b-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="8c033-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="8c033-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="4be3b-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="4be3b-112">International call charges apply</span></span>
+<span data-ttu-id="8c033-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="8c033-112">International call charges apply</span></span>

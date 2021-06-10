@@ -19,30 +19,30 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297902"
 ---
-# <a name="contact-support-for-palestinian-authority"></a><span data-ttu-id="f0f50-103">Kontakta support för den lokala myndighet</span><span class="sxs-lookup"><span data-stu-id="f0f50-103">Contact support for Palestinian Authority</span></span>
+# <a name="contact-support-for-palestinian-authority"></a><span data-ttu-id="f38f1-103">Kontakta support för den lokala myndighet</span><span class="sxs-lookup"><span data-stu-id="f38f1-103">Contact support for Palestinian Authority</span></span>
 
-<span data-ttu-id="f0f50-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="f0f50-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="f38f1-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="f38f1-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f0f50-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f0f50-105">Phone number</span></span>
-<span data-ttu-id="f0f50-106">+962 6 5503451</span><span class="sxs-lookup"><span data-stu-id="f0f50-106">+962 6 5503451</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f38f1-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f38f1-105">Phone number</span></span>
+<span data-ttu-id="f38f1-106">+962 6 5503451</span><span class="sxs-lookup"><span data-stu-id="f38f1-106">+962 6 5503451</span></span>
 
-<span data-ttu-id="f0f50-107">Välj alternativ 1</span><span class="sxs-lookup"><span data-stu-id="f0f50-107">Select option 1</span></span>
+<span data-ttu-id="f38f1-107">Välj alternativ 1</span><span class="sxs-lookup"><span data-stu-id="f38f1-107">Select option 1</span></span>
 
-<span data-ttu-id="f0f50-108">Välj alternativ 9</span><span class="sxs-lookup"><span data-stu-id="f0f50-108">Select option 9</span></span>
+<span data-ttu-id="f38f1-108">Välj alternativ 9</span><span class="sxs-lookup"><span data-stu-id="f38f1-108">Select option 9</span></span>
 
-<span data-ttu-id="f0f50-109">Ange kod 7702</span><span class="sxs-lookup"><span data-stu-id="f0f50-109">Enter code 7702</span></span>
+<span data-ttu-id="f38f1-109">Ange kod 7702</span><span class="sxs-lookup"><span data-stu-id="f38f1-109">Enter code 7702</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f0f50-110">Tider</span><span class="sxs-lookup"><span data-stu-id="f0f50-110">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f0f50-111">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="f0f50-111">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f38f1-110">Tider</span><span class="sxs-lookup"><span data-stu-id="f38f1-110">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f38f1-111">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="f38f1-111">Billing Support:</span></span>
 
-<span data-ttu-id="f0f50-112">Arabiska: Sun-Thu 10–18</span><span class="sxs-lookup"><span data-stu-id="f0f50-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="f38f1-112">Arabiska: Sun-Thu 10–18</span><span class="sxs-lookup"><span data-stu-id="f38f1-112">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="f0f50-113">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="f0f50-113">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="f38f1-113">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="f38f1-113">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f0f50-114">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="f0f50-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f38f1-114">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="f38f1-114">Technical Support:</span></span>
 
-<span data-ttu-id="f0f50-115">Arabiska: Sun-Thu 10–18</span><span class="sxs-lookup"><span data-stu-id="f0f50-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="f38f1-115">Arabiska: Sun-Thu 10–18</span><span class="sxs-lookup"><span data-stu-id="f38f1-115">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="f0f50-116">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="f0f50-116">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f38f1-116">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="f38f1-116">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="f0f50-117">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="f0f50-117">International call charges apply</span></span>
+<span data-ttu-id="f38f1-117">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="f38f1-117">International call charges apply</span></span>

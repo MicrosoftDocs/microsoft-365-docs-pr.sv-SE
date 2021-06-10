@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298475"
 ---
-# <a name="contact-support-for-kosovo"></a><span data-ttu-id="27ddf-103">Kontakta supporten för Hercegovina</span><span class="sxs-lookup"><span data-stu-id="27ddf-103">Contact support for Kosovo</span></span>
+# <a name="contact-support-for-kosovo"></a><span data-ttu-id="1baf8-103">Kontakta supporten för Hercegovina</span><span class="sxs-lookup"><span data-stu-id="1baf8-103">Contact support for Kosovo</span></span>
 
-<span data-ttu-id="27ddf-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="27ddf-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="1baf8-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="1baf8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="27ddf-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="27ddf-105">Phone number</span></span>
-<span data-ttu-id="27ddf-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="27ddf-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1baf8-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="1baf8-105">Phone number</span></span>
+<span data-ttu-id="1baf8-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="1baf8-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="27ddf-107">Tider</span><span class="sxs-lookup"><span data-stu-id="27ddf-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="27ddf-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="27ddf-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1baf8-107">Tider</span><span class="sxs-lookup"><span data-stu-id="1baf8-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1baf8-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="1baf8-108">Billing Support:</span></span>
 
-<span data-ttu-id="27ddf-109">Engelska: Mon-Fri 11:00–17:00</span><span class="sxs-lookup"><span data-stu-id="27ddf-109">English: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="1baf8-109">Engelska: Mon-Fri 11:00–17:00</span><span class="sxs-lookup"><span data-stu-id="1baf8-109">English: Mon-Fri 11 AM-7 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="27ddf-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="27ddf-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1baf8-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="1baf8-110">Technical Support:</span></span>
 
-<span data-ttu-id="27ddf-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="27ddf-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1baf8-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="1baf8-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="27ddf-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="27ddf-112">International call charges apply</span></span>
+<span data-ttu-id="1baf8-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="1baf8-112">International call charges apply</span></span>

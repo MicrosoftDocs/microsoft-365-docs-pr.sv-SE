@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297722"
 ---
-# <a name="contact-support-for-sint-eustatius"></a><span data-ttu-id="64798-103">Kontakta supporten för Sint Eustatius</span><span class="sxs-lookup"><span data-stu-id="64798-103">Contact support for Sint Eustatius</span></span>
+# <a name="contact-support-for-sint-eustatius"></a><span data-ttu-id="b8da9-103">Kontakta supporten för Sint Eustatius</span><span class="sxs-lookup"><span data-stu-id="b8da9-103">Contact support for Sint Eustatius</span></span>
 
-<span data-ttu-id="64798-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="64798-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="b8da9-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="b8da9-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="64798-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="64798-105">Phone number</span></span>
-<span data-ttu-id="64798-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="64798-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b8da9-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="b8da9-105">Phone number</span></span>
+<span data-ttu-id="b8da9-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="b8da9-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="64798-107">Tider</span><span class="sxs-lookup"><span data-stu-id="64798-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="64798-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="64798-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b8da9-107">Tider</span><span class="sxs-lookup"><span data-stu-id="b8da9-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b8da9-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="b8da9-108">Billing Support:</span></span>
 
-<span data-ttu-id="64798-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="64798-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="b8da9-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="b8da9-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="64798-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="64798-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b8da9-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="b8da9-110">Technical Support:</span></span>
 
-<span data-ttu-id="64798-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="64798-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b8da9-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="b8da9-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="64798-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="64798-112">International call charges apply</span></span>
+<span data-ttu-id="b8da9-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="b8da9-112">International call charges apply</span></span>

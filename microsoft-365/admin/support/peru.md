@@ -19,18 +19,18 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297878"
 ---
-# <a name="contact-support-for-peru"></a><span data-ttu-id="a9b31-103">Kontakta supporten för Peru</span><span class="sxs-lookup"><span data-stu-id="a9b31-103">Contact support for Peru</span></span>
+# <a name="contact-support-for-peru"></a><span data-ttu-id="95646-103">Kontakta supporten för Peru</span><span class="sxs-lookup"><span data-stu-id="95646-103">Contact support for Peru</span></span>
 
-<span data-ttu-id="a9b31-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="a9b31-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="95646-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="95646-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="a9b31-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="a9b31-105">Phone number</span></span>
-<span data-ttu-id="a9b31-106">0800 77 464</span><span class="sxs-lookup"><span data-stu-id="a9b31-106">0800 77 464</span></span>
+## <a name="phone-number"></a><span data-ttu-id="95646-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="95646-105">Phone number</span></span>
+<span data-ttu-id="95646-106">0800 77 464</span><span class="sxs-lookup"><span data-stu-id="95646-106">0800 77 464</span></span>
 
-## <a name="hours"></a><span data-ttu-id="a9b31-107">Tider</span><span class="sxs-lookup"><span data-stu-id="a9b31-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="a9b31-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="a9b31-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="95646-107">Tider</span><span class="sxs-lookup"><span data-stu-id="95646-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="95646-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="95646-108">Billing Support:</span></span>
 
-<span data-ttu-id="a9b31-109">Spanska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="a9b31-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="95646-109">Spanska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="95646-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="a9b31-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="a9b31-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="95646-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="95646-110">Technical Support:</span></span>
 
-<span data-ttu-id="a9b31-111">Spanska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="a9b31-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="95646-111">Spanska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="95646-111">Spanish: 24 hours a day, 7 days a week</span></span>

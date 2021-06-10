@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298593"
 ---
-# <a name="contact-support-for-jan-mayen"></a><span data-ttu-id="48c4c-103">Kontakta support för Jan Mayen</span><span class="sxs-lookup"><span data-stu-id="48c4c-103">Contact support for Jan Mayen</span></span>
+# <a name="contact-support-for-jan-mayen"></a><span data-ttu-id="5da32-103">Kontakta support för Jan Mayen</span><span class="sxs-lookup"><span data-stu-id="5da32-103">Contact support for Jan Mayen</span></span>
 
-<span data-ttu-id="48c4c-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="48c4c-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="5da32-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="5da32-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="48c4c-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="48c4c-105">Phone number</span></span>
-<span data-ttu-id="48c4c-106">+1 312 843 5149</span><span class="sxs-lookup"><span data-stu-id="48c4c-106">+1 312 843 5149</span></span>
+## <a name="phone-number"></a><span data-ttu-id="5da32-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="5da32-105">Phone number</span></span>
+<span data-ttu-id="5da32-106">+1 312 843 5149</span><span class="sxs-lookup"><span data-stu-id="5da32-106">+1 312 843 5149</span></span>
 
-## <a name="hours"></a><span data-ttu-id="48c4c-107">Tider</span><span class="sxs-lookup"><span data-stu-id="48c4c-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="48c4c-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="48c4c-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="5da32-107">Tider</span><span class="sxs-lookup"><span data-stu-id="5da32-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="5da32-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="5da32-108">Billing Support:</span></span>
 
-<span data-ttu-id="48c4c-109">Engelska: Mon-Fri 9.00–18.00</span><span class="sxs-lookup"><span data-stu-id="48c4c-109">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="5da32-109">Engelska: Mon-Fri 9.00–18.00</span><span class="sxs-lookup"><span data-stu-id="5da32-109">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="48c4c-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="48c4c-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="5da32-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="5da32-110">Technical Support:</span></span>
 
-<span data-ttu-id="48c4c-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="48c4c-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5da32-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="5da32-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="48c4c-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="48c4c-112">International call charges apply</span></span>
+<span data-ttu-id="5da32-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="5da32-112">International call charges apply</span></span>

@@ -19,24 +19,24 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297794"
 ---
-# <a name="contact-support-for-saint-martin"></a><span data-ttu-id="b1dcb-103">Kontakta supporten för Saint Martin</span><span class="sxs-lookup"><span data-stu-id="b1dcb-103">Contact support for Saint Martin</span></span>
+# <a name="contact-support-for-saint-martin"></a><span data-ttu-id="5ffbe-103">Kontakta supporten för Saint Martin</span><span class="sxs-lookup"><span data-stu-id="5ffbe-103">Contact support for Saint Martin</span></span>
 
-<span data-ttu-id="b1dcb-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="b1dcb-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="5ffbe-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="5ffbe-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b1dcb-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="b1dcb-105">Phone number</span></span>
-<span data-ttu-id="b1dcb-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="b1dcb-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="5ffbe-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="5ffbe-105">Phone number</span></span>
+<span data-ttu-id="5ffbe-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="5ffbe-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b1dcb-107">Tider</span><span class="sxs-lookup"><span data-stu-id="b1dcb-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b1dcb-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="b1dcb-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="5ffbe-107">Tider</span><span class="sxs-lookup"><span data-stu-id="5ffbe-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="5ffbe-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="5ffbe-108">Billing Support:</span></span>
 
-<span data-ttu-id="b1dcb-109">Franska: Mon-Fri 4 am-på dagen</span><span class="sxs-lookup"><span data-stu-id="b1dcb-109">French: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="5ffbe-109">Franska: Mon-Fri 4 am-på dagen</span><span class="sxs-lookup"><span data-stu-id="5ffbe-109">French: Mon-Fri 4 AM-noon</span></span>
 
-<span data-ttu-id="b1dcb-110">Engelska: Mon-Fri 16:00 på dagen</span><span class="sxs-lookup"><span data-stu-id="b1dcb-110">English: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="5ffbe-110">Engelska: Mon-Fri 16:00 på dagen</span><span class="sxs-lookup"><span data-stu-id="5ffbe-110">English: Mon-Fri 4 AM-noon</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b1dcb-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="b1dcb-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="5ffbe-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="5ffbe-111">Technical Support:</span></span>
 
-<span data-ttu-id="b1dcb-112">Franska: Mon-Fri 03:00–16:00</span><span class="sxs-lookup"><span data-stu-id="b1dcb-112">French: Mon-Fri 3 AM-4 PM</span></span>
+<span data-ttu-id="5ffbe-112">Franska: Mon-Fri 03:00–16:00</span><span class="sxs-lookup"><span data-stu-id="5ffbe-112">French: Mon-Fri 3 AM-4 PM</span></span>
 
-<span data-ttu-id="b1dcb-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="b1dcb-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5ffbe-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="5ffbe-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b1dcb-114">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="b1dcb-114">International call charges apply</span></span>
+<span data-ttu-id="5ffbe-114">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="5ffbe-114">International call charges apply</span></span>

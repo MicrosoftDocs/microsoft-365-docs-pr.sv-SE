@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298439"
 ---
-# <a name="contact-support-for-lesotho"></a><span data-ttu-id="48260-103">Kontakta supporten för Lesotho</span><span class="sxs-lookup"><span data-stu-id="48260-103">Contact support for Lesotho</span></span>
+# <a name="contact-support-for-lesotho"></a><span data-ttu-id="6ae6a-103">Kontakta supporten för Lesotho</span><span class="sxs-lookup"><span data-stu-id="6ae6a-103">Contact support for Lesotho</span></span>
 
-<span data-ttu-id="48260-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="48260-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="6ae6a-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="6ae6a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="48260-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="48260-105">Phone number</span></span>
-<span data-ttu-id="48260-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="48260-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="6ae6a-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="6ae6a-105">Phone number</span></span>
+<span data-ttu-id="6ae6a-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="6ae6a-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="48260-107">Tider</span><span class="sxs-lookup"><span data-stu-id="48260-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="48260-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="48260-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="6ae6a-107">Tider</span><span class="sxs-lookup"><span data-stu-id="6ae6a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="6ae6a-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="6ae6a-108">Billing Support:</span></span>
 
-<span data-ttu-id="48260-109">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="48260-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="6ae6a-109">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="6ae6a-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="48260-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="48260-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="6ae6a-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="6ae6a-110">Technical Support:</span></span>
 
-<span data-ttu-id="48260-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="48260-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="6ae6a-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="6ae6a-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="48260-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="48260-112">International call charges apply</span></span>
+<span data-ttu-id="6ae6a-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="6ae6a-112">International call charges apply</span></span>

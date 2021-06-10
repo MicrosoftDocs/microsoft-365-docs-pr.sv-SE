@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297961"
 ---
-# <a name="contact-support-for-norfolk-island"></a><span data-ttu-id="c45cc-103">Kontakta supporten för Norfolk Island</span><span class="sxs-lookup"><span data-stu-id="c45cc-103">Contact support for Norfolk Island</span></span>
+# <a name="contact-support-for-norfolk-island"></a><span data-ttu-id="25b7c-103">Kontakta supporten för Norfolk Island</span><span class="sxs-lookup"><span data-stu-id="25b7c-103">Contact support for Norfolk Island</span></span>
 
-<span data-ttu-id="c45cc-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c45cc-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="25b7c-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="25b7c-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c45cc-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c45cc-105">Phone number</span></span>
-<span data-ttu-id="c45cc-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="c45cc-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="25b7c-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="25b7c-105">Phone number</span></span>
+<span data-ttu-id="25b7c-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="25b7c-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c45cc-107">Tider</span><span class="sxs-lookup"><span data-stu-id="c45cc-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c45cc-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="c45cc-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="25b7c-107">Tider</span><span class="sxs-lookup"><span data-stu-id="25b7c-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="25b7c-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="25b7c-108">Billing Support:</span></span>
 
-<span data-ttu-id="c45cc-109">Engelska: Mon-Fri 22:00–18:00</span><span class="sxs-lookup"><span data-stu-id="c45cc-109">English: Mon-Fri 12 PM-8 PM</span></span>
+<span data-ttu-id="25b7c-109">Engelska: Mon-Fri 22:00–18:00</span><span class="sxs-lookup"><span data-stu-id="25b7c-109">English: Mon-Fri 12 PM-8 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c45cc-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="c45cc-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="25b7c-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="25b7c-110">Technical Support:</span></span>
 
-<span data-ttu-id="c45cc-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="c45cc-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="25b7c-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="25b7c-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="c45cc-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="c45cc-112">International call charges apply</span></span>
+<span data-ttu-id="25b7c-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="25b7c-112">International call charges apply</span></span>

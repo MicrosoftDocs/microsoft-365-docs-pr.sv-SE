@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298617"
 ---
-# <a name="contact-support-for-isle-of-man"></a><span data-ttu-id="ffffe-103">Kontakta supporten för Isle of Man</span><span class="sxs-lookup"><span data-stu-id="ffffe-103">Contact support for Isle of Man</span></span>
+# <a name="contact-support-for-isle-of-man"></a><span data-ttu-id="d80de-103">Kontakta supporten för Isle of Man</span><span class="sxs-lookup"><span data-stu-id="d80de-103">Contact support for Isle of Man</span></span>
 
-<span data-ttu-id="ffffe-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="ffffe-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="d80de-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="d80de-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="ffffe-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="ffffe-105">Phone number</span></span>
-<span data-ttu-id="ffffe-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="ffffe-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d80de-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="d80de-105">Phone number</span></span>
+<span data-ttu-id="d80de-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="d80de-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="ffffe-107">Tider</span><span class="sxs-lookup"><span data-stu-id="ffffe-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="ffffe-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="ffffe-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d80de-107">Tider</span><span class="sxs-lookup"><span data-stu-id="d80de-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d80de-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="d80de-108">Billing Support:</span></span>
 
-<span data-ttu-id="ffffe-109">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="ffffe-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="d80de-109">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="d80de-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="ffffe-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="ffffe-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d80de-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="d80de-110">Technical Support:</span></span>
 
-<span data-ttu-id="ffffe-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="ffffe-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d80de-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="d80de-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="ffffe-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="ffffe-112">International call charges apply</span></span>
+<span data-ttu-id="d80de-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="d80de-112">International call charges apply</span></span>

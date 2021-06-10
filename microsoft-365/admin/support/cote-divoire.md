@@ -19,28 +19,28 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52299898"
 ---
-# <a name="contact-support-for-cte-divoire"></a><span data-ttu-id="689f9-103">Kontakta supporten för Côte d'Ivoire</span><span class="sxs-lookup"><span data-stu-id="689f9-103">Contact support for Côte d'Ivoire</span></span>
+# <a name="contact-support-for-cte-divoire"></a><span data-ttu-id="515a8-103">Kontakta supporten för Côte d'Ivoire</span><span class="sxs-lookup"><span data-stu-id="515a8-103">Contact support for Côte d'Ivoire</span></span>
 
-<span data-ttu-id="689f9-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="689f9-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="515a8-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="515a8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="689f9-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="689f9-105">Phone number</span></span>
-<span data-ttu-id="689f9-106">020 24 24 90</span><span class="sxs-lookup"><span data-stu-id="689f9-106">020 24 24 90</span></span>
+## <a name="phone-number"></a><span data-ttu-id="515a8-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="515a8-105">Phone number</span></span>
+<span data-ttu-id="515a8-106">020 24 24 90</span><span class="sxs-lookup"><span data-stu-id="515a8-106">020 24 24 90</span></span>
 
-<span data-ttu-id="689f9-107">Välj alternativ 9</span><span class="sxs-lookup"><span data-stu-id="689f9-107">Select option 9</span></span>
+<span data-ttu-id="515a8-107">Välj alternativ 9</span><span class="sxs-lookup"><span data-stu-id="515a8-107">Select option 9</span></span>
 
-<span data-ttu-id="689f9-108">Ange kod 7703</span><span class="sxs-lookup"><span data-stu-id="689f9-108">Enter code 7703</span></span>
+<span data-ttu-id="515a8-108">Ange kod 7703</span><span class="sxs-lookup"><span data-stu-id="515a8-108">Enter code 7703</span></span>
 
-## <a name="hours"></a><span data-ttu-id="689f9-109">Tider</span><span class="sxs-lookup"><span data-stu-id="689f9-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="689f9-110">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="689f9-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="515a8-109">Tider</span><span class="sxs-lookup"><span data-stu-id="515a8-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="515a8-110">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="515a8-110">Billing Support:</span></span>
 
-<span data-ttu-id="689f9-111">Franska: Mon-Fri 08:00–16:00</span><span class="sxs-lookup"><span data-stu-id="689f9-111">French: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="515a8-111">Franska: Mon-Fri 08:00–16:00</span><span class="sxs-lookup"><span data-stu-id="515a8-111">French: Mon-Fri 8 AM-4 PM</span></span>
 
-<span data-ttu-id="689f9-112">Engelska: Mon-Fri 08:00–16:00</span><span class="sxs-lookup"><span data-stu-id="689f9-112">English: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="515a8-112">Engelska: Mon-Fri 08:00–16:00</span><span class="sxs-lookup"><span data-stu-id="515a8-112">English: Mon-Fri 8 AM-4 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="689f9-113">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="689f9-113">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="515a8-113">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="515a8-113">Technical Support:</span></span>
 
-<span data-ttu-id="689f9-114">Franska: Mon-Fri 07:00–18:00</span><span class="sxs-lookup"><span data-stu-id="689f9-114">French: Mon-Fri 7 AM-8 PM</span></span>
+<span data-ttu-id="515a8-114">Franska: Mon-Fri 07:00–18:00</span><span class="sxs-lookup"><span data-stu-id="515a8-114">French: Mon-Fri 7 AM-8 PM</span></span>
 
-<span data-ttu-id="689f9-115">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="689f9-115">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="515a8-115">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="515a8-115">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="689f9-116">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="689f9-116">Local call charges apply</span></span>
+<span data-ttu-id="515a8-116">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="515a8-116">Local call charges apply</span></span>
