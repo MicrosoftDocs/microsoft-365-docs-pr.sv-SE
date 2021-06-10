@@ -1,0 +1,32 @@
+### YamlMime:Hub
+title: Schemaläggare för Microsoft 365
+summary: Lär dig hur du ställer in Schemaläggaren för Microsoft 365 att schemalägga möten med Cortana.
+brand: m365
+metadata:
+  title: Schemaläggare för Microsoft 365
+  description: Lär dig hur du ställer in Schemaläggaren för Microsoft 365 att schemalägga möten med Cortana.
+  ms.service: exchange-online
+  ms.topic: hub-page
+  author: AshaIyengar21
+  ms.author: v-aiyengar
+  manager: serdars
+  audience: Admin
+  ms.date: 04/23/2021
+additionalContent:
+  sections:
+    - items:
+        - title: Vad är Scheduler för Microsoft 365?
+          summary: 'Läs mer om Schemaläggaren för Microsoft 365 funktioner, vem och hur det kan dra nytta av det.'
+          url: scheduler-overview.md
+        - title: Förtroende och sekretess
+          summary: Läs mer om hur Scheduler för Microsoft 365 ser till att din förtroende och sekretess är skyddad.
+          url: scheduler-trust-privacy.md
+        - title: Konfigurera Scheduler för Microsoft 365
+          summary: Ta reda på vad som krävs för att konfigurera Schemaläggaren för Microsoft 365.
+          url: scheduler-setup.md
+        - title: Använda Schemaläggaren för Microsoft 365
+          summary: Lär dig hur du använder Scheduler för Microsoft 365.
+          url: scheduler-using.md
+        - title: Vanliga frågor och svar för Schemaläggare
+          summary: Läs mer om de vanligaste frågorna och svaren i Schemaläggaren Microsoft 365 besvara dem.
+          url: scheduler-faqs.md

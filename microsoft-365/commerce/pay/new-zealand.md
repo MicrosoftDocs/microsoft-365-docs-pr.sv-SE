@@ -20,29 +20,29 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52535344"
 ---
-# <a name="payment-information-for-new-zealand"></a><span data-ttu-id="4f679-103">Betalningsinformation för Nya Zeeland</span><span class="sxs-lookup"><span data-stu-id="4f679-103">Payment information for New Zealand</span></span>
+# <a name="payment-information-for-new-zealand"></a><span data-ttu-id="376e2-103">Betalningsinformation för Nya Zeeland</span><span class="sxs-lookup"><span data-stu-id="376e2-103">Payment information for New Zealand</span></span>
 
-<span data-ttu-id="4f679-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="4f679-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="376e2-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="376e2-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="4f679-105">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="4f679-105">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="376e2-105">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="376e2-105">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="4f679-106">**Betala i NZD och ange fakturanumret som referens vid betalning.**</span><span class="sxs-lookup"><span data-stu-id="4f679-106">**Please pay in NZD and reference invoice number(s) on your payment remittance.**</span></span>
+<span data-ttu-id="376e2-106">**Betala i NZD och ange fakturanumret som referens vid betalning.**</span><span class="sxs-lookup"><span data-stu-id="376e2-106">**Please pay in NZD and reference invoice number(s) on your payment remittance.**</span></span>
 
-<span data-ttu-id="4f679-107">Om du har en faktura som faktureras av **MICROSOFT REGIONAL SALES PTE LTD** använder du den här bankinformationen:</span><span class="sxs-lookup"><span data-stu-id="4f679-107">If you have an invoice billed by **MICROSOFT REGIONAL SALES PTE LTD**, use this bank information:</span></span>
+<span data-ttu-id="376e2-107">Om du har en faktura som faktureras av **MICROSOFT REGIONAL SALES PTE LTD** använder du den här bankinformationen:</span><span class="sxs-lookup"><span data-stu-id="376e2-107">If you have an invoice billed by **MICROSOFT REGIONAL SALES PTE LTD**, use this bank information:</span></span>
 
-<span data-ttu-id="4f679-108">**Bank:** Citibank</span><span class="sxs-lookup"><span data-stu-id="4f679-108">**Bank:** Citibank</span></span>  
-<span data-ttu-id="4f679-109">**Bankkod:** 31</span><span class="sxs-lookup"><span data-stu-id="4f679-109">**Bank Code:** 31</span></span>  
-<span data-ttu-id="4f679-110">**Branch-kod:** 2840</span><span class="sxs-lookup"><span data-stu-id="4f679-110">**Branch Code:** 2840</span></span>  
-<span data-ttu-id="4f679-111">**SWIFT-kod:** CITINZ2X</span><span class="sxs-lookup"><span data-stu-id="4f679-111">**SWIFT Code:** CITINZ2X</span></span>  
-<span data-ttu-id="4f679-112">**Suffix (3 siffror):** 004</span><span class="sxs-lookup"><span data-stu-id="4f679-112">**Suffix (3-digit):** 004</span></span>  
-<span data-ttu-id="4f679-113">**Suffix (2 siffror):** 04</span><span class="sxs-lookup"><span data-stu-id="4f679-113">**Suffix (2-digit):** 04</span></span>  
-<span data-ttu-id="4f679-114">**Kontonummer:** 0026181</span><span class="sxs-lookup"><span data-stu-id="4f679-114">**Account Number:** 0026181</span></span>  
-<span data-ttu-id="4f679-115">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="4f679-115">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="376e2-108">**Bank:** Citibank</span><span class="sxs-lookup"><span data-stu-id="376e2-108">**Bank:** Citibank</span></span>  
+<span data-ttu-id="376e2-109">**Bankkod:** 31</span><span class="sxs-lookup"><span data-stu-id="376e2-109">**Bank Code:** 31</span></span>  
+<span data-ttu-id="376e2-110">**Branch-kod:** 2840</span><span class="sxs-lookup"><span data-stu-id="376e2-110">**Branch Code:** 2840</span></span>  
+<span data-ttu-id="376e2-111">**SWIFT-kod:** CITINZ2X</span><span class="sxs-lookup"><span data-stu-id="376e2-111">**SWIFT Code:** CITINZ2X</span></span>  
+<span data-ttu-id="376e2-112">**Suffix (3 siffror):** 004</span><span class="sxs-lookup"><span data-stu-id="376e2-112">**Suffix (3-digit):** 004</span></span>  
+<span data-ttu-id="376e2-113">**Suffix (2 siffror):** 04</span><span class="sxs-lookup"><span data-stu-id="376e2-113">**Suffix (2-digit):** 04</span></span>  
+<span data-ttu-id="376e2-114">**Kontonummer:** 0026181</span><span class="sxs-lookup"><span data-stu-id="376e2-114">**Account Number:** 0026181</span></span>  
+<span data-ttu-id="376e2-115">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="376e2-115">**Account Name:** MICROSOFT</span></span>
 
-<span data-ttu-id="4f679-116">Använd denna bankinformation om du har en faktura som debiterats av **Microsoft New Zealand Limited** för order och förbrukning från och med den 1 mars 2021:</span><span class="sxs-lookup"><span data-stu-id="4f679-116">If you have an invoice billed by **Microsoft New Zealand Limited** for orders and consumption starting March 1, 2021, use this bank information:</span></span>
+<span data-ttu-id="376e2-116">Använd denna bankinformation om du har en faktura som debiterats av **Microsoft New Zealand Limited** för order och förbrukning från och med den 1 mars 2021:</span><span class="sxs-lookup"><span data-stu-id="376e2-116">If you have an invoice billed by **Microsoft New Zealand Limited** for orders and consumption starting March 1, 2021, use this bank information:</span></span>
 
-<span data-ttu-id="4f679-117">**Bank:** Citibank, N.A.</span><span class="sxs-lookup"><span data-stu-id="4f679-117">**Bank:** Citibank, N.A.</span></span> <span data-ttu-id="4f679-118">New Zealand Branch</span><span class="sxs-lookup"><span data-stu-id="4f679-118">New Zealand Branch</span></span>  
-<span data-ttu-id="4f679-119">**SWIFT-kod:** CTINZ2X</span><span class="sxs-lookup"><span data-stu-id="4f679-119">**SWIFT Code:** CTINZ2X</span></span>  
-<span data-ttu-id="4f679-120">**BSB:** 312825</span><span class="sxs-lookup"><span data-stu-id="4f679-120">**BSB:** 312825</span></span>  
-<span data-ttu-id="4f679-121">**Kontonummer:** 0008655083</span><span class="sxs-lookup"><span data-stu-id="4f679-121">**Account Number:** 0008655083</span></span>  
-<span data-ttu-id="4f679-122">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="4f679-122">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="376e2-117">**Bank:** Citibank, N.A.</span><span class="sxs-lookup"><span data-stu-id="376e2-117">**Bank:** Citibank, N.A.</span></span> <span data-ttu-id="376e2-118">New Zealand Branch</span><span class="sxs-lookup"><span data-stu-id="376e2-118">New Zealand Branch</span></span>  
+<span data-ttu-id="376e2-119">**SWIFT-kod:** CTINZ2X</span><span class="sxs-lookup"><span data-stu-id="376e2-119">**SWIFT Code:** CTINZ2X</span></span>  
+<span data-ttu-id="376e2-120">**BSB:** 312825</span><span class="sxs-lookup"><span data-stu-id="376e2-120">**BSB:** 312825</span></span>  
+<span data-ttu-id="376e2-121">**Kontonummer:** 0008655083</span><span class="sxs-lookup"><span data-stu-id="376e2-121">**Account Number:** 0008655083</span></span>  
+<span data-ttu-id="376e2-122">**Kontonamn:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="376e2-122">**Account Name:** MICROSOFT</span></span>

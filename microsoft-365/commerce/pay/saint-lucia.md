@@ -20,16 +20,16 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52535224"
 ---
-# <a name="payment-information-for-saint-lucia"></a><span data-ttu-id="907ed-103">Betalningsinformation för Saint Saint</span><span class="sxs-lookup"><span data-stu-id="907ed-103">Payment information for Saint Lucia</span></span>
+# <a name="payment-information-for-saint-lucia"></a><span data-ttu-id="984a1-103">Betalningsinformation för Saint Saint</span><span class="sxs-lookup"><span data-stu-id="984a1-103">Payment information for Saint Lucia</span></span>
 
-<span data-ttu-id="907ed-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="907ed-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="984a1-104">[Hitta ett annat land eller en annan region](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="984a1-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="907ed-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="907ed-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="984a1-105">Betala endast i USD och ange fakturanumret som referens vid betalning.</span><span class="sxs-lookup"><span data-stu-id="984a1-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="907ed-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="907ed-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="984a1-106">Elektronisk betalningsöverföring</span><span class="sxs-lookup"><span data-stu-id="984a1-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="907ed-107">**Bank:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="907ed-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="907ed-108">**Branch** Dallas</span><span class="sxs-lookup"><span data-stu-id="907ed-108">**Branch** Dallas</span></span>  
-<span data-ttu-id="907ed-109">**SWIFT-kod:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="907ed-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="907ed-110">**Kontonummer:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="907ed-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="907ed-111">**Kontonamn:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="907ed-111">**Account Name:** Microsoft</span></span>
+<span data-ttu-id="984a1-107">**Bank:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="984a1-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="984a1-108">**Branch** Dallas</span><span class="sxs-lookup"><span data-stu-id="984a1-108">**Branch** Dallas</span></span>  
+<span data-ttu-id="984a1-109">**SWIFT-kod:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="984a1-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="984a1-110">**Kontonummer:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="984a1-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="984a1-111">**Kontonamn:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="984a1-111">**Account Name:** Microsoft</span></span>
