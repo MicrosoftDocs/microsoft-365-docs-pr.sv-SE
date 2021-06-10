@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb4d50c06c123d3d380604ef64b887f4f00f751d
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866674"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844196"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Senaste nytt i Microsoft Defender för Endpoint
 
@@ -45,9 +45,6 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 > ```https
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
-
-## <a name="june-2021"></a>Juni 2021
-- [Enhetsgruppsdefinitioner](/microsoft-365/security/defender-endpoint/machine-groups) kan nu innehålla flera värden för varje villkor. Du kan ange definitionen för en enda enhetsgrupp för flera taggar, enhetsnamn och domäner.
 
 ## <a name="march-2021"></a>Mars 2021
 - [Hantera skydd mot manipulering med hjälp av Microsoft Defender Säkerhetscenter](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Du kan hantera inställningar för manipuleringsskydd i Windows 10, Windows Server 2016 och Windows Server 2019 med hjälp av en metod som kallas *klient bifoga.* 

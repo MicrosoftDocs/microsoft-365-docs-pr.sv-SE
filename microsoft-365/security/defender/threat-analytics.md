@@ -2,7 +2,7 @@
 title: Spåra och svara på nya hot med hotanalyser
 ms.reviewer: ''
 description: Lär dig mer om nya hot och attacktekniker och hur du stoppar dem. Utvärdera hur de påverkar organisationen och utvärdera organisationens motståndskraft.
-keywords: hotanalyser, riskutvärdering, Microsoft 365 Defender, M365D, minskningsstatus, säker konfiguration, Microsoft Defender för Office 365, Microsoft Defender för Office 365 hotanalyser, MDO-hotanalyser, integrerade MDE- och MDO-hotanalysdata, data för hotanalyser, integrerad Microsoft 365 Defender-hotanalys
+keywords: hotanalyser, riskutvärdering, Microsoft 365 Defender, M365D, minskningsstatus, säker konfiguration, Microsoft Defender för Office 365, Microsoft Defender för Office 365 hotanalyser, MDO-hotanalyser, integrerade MDE- och MDO-hotanalysdata, integrering av data om hotanalyser, integrerad Microsoft 365 Defender-hotanalyser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -53,7 +53,7 @@ Titta på den här korta videon om du vill lära dig mer om hur hotanalyser kan 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-Du kan komma åt hotanalyser antingen från den övre vänstra sidan i Microsoft 365-säkerhetsportalens navigeringsfält eller från ett dedikerat instrumentpanelskort som visar de viktigaste hoten i din organisation. Att få insyn i aktiva eller pågående kampanjer och veta vad du kan göra med hjälp av hotanalyser kan hjälpa din säkerhetsgrupp att hantera välgrundade beslut. 
+Du kan komma åt hotanalyser antingen från den övre vänstra sidan av Microsoft 365-säkerhetsportalens navigeringsfält eller från ett dedikerat instrumentpanelskort som visar de viktigaste hoten i din organisation. Att få insyn i aktiva eller pågående kampanjer och veta vad du kan göra med hjälp av hotanalyser kan hjälpa din säkerhetsgrupp att hantera välgrundade beslut. 
 
 ![Bild på instrumentpanelen för hotanalyser](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
@@ -131,7 +131,7 @@ _Avsnittet relaterade incidenter i en rapport om hotanalys_
 ### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>Påverkade tillgångar: Hämta en lista över påverkade enheter och postlådor
 En tillgång anses påverkas om den påverkas av en aktiv, omatchad avisering. På **fliken Påverkade tillgångar** visas följande typer av påverkade tillgångar:
 - **Påverkade enheter –** slutpunkter som har omatchade Microsoft Defender för slutpunktsaviseringar. Dessa varningar kan i regel uppmärksamma syn på kända hotindikatorer och -aktiviteter.
-- **Påverkade postlådor – postlådor** som har tagit emot e-postmeddelanden som har utlöst Microsoft Defender för Office 365-aviseringar. Även om de flesta meddelanden som utlöser aviseringar vanligtvis blockeras, kan principer på användar- eller organisationsnivå åsidosätta filter.
+- **Påverkade postlådor –** postlådor som har tagit emot e-postmeddelanden som har utlöst Microsoft Defender för Office 365 postmeddelanden. Även om de flesta meddelanden som utlöser aviseringar vanligtvis blockeras, kan principer på användar- eller organisationsnivå åsidosätta filter.
 
 ![Bild av avsnittet om påverkade tillgångar i en rapport om hotanalys](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
@@ -151,11 +151,11 @@ Granska listan **över specifika åtgärdsbara** rekommendationer i avsnittet Mi
 
 - **Säkerhetsuppdateringar**– distribution av säkerhetsuppdateringar av programvara som stöds för säkerhetsproblem som påträffas på enheter som är ombord
 - **Säkerhetskonfigurationer som stöds**
-  - Moln levererat skydd  
+  - Molnbaserat skydd  
   - Potentiellt oönskat programskydd (PUA)
   - Realtidsskydd
  
-I information om åtgärder i det här avsnittet ingår data från hantering av hot och [risker,](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)som också innehåller detaljerad information om åtgärder från olika länkar i rapporten.
+I den här informationen ingår data från [Hantering av hot och säkerhetsrisker](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), som också innehåller detaljerad information om åtgärder från olika länkar i rapporten.
 
 ![Bild av avsnittet åtgärder i en rapport om hotanalys som visar säker konfigurationsinformation Bild av avsnittet om åtgärder i en rapport om hotanalys som visar information om ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ problemet](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -165,18 +165,18 @@ _Avsnittet Åtgärder i en rapport om hotanalys_
 ## <a name="additional-report-details-and-limitations"></a>Ytterligare rapportinformation och begränsningar
 >[!NOTE]
 >Som en del av den enhetliga säkerhetsupplevelsen är hotanalyser nu inte bara tillgängliga för Microsoft Defender för Endpoint, utan även för Microsoft Defender för Office E5-licensinnehavare.
->Om du inte använder Microsoft 365-säkerhetsportalen (Microsoft 365 Defender) kan du även se rapportinformationen (utan Microsoft Defender för Office-data) i Microsoft Defender Säkerhetscenter-portalen (Microsoft Defender för slutpunkt). 
+>Om du inte använder säkerhetsportalen för Microsoft 365 (Microsoft 365 Defender) kan du även se rapportinformationen (utan Microsoft Defender för Office-data) i Microsoft Defender Säkerhetscenter-portalen (Microsoft Defender för slutpunkt). 
 
-För att komma åt rapporten över hotanalyser behöver du vissa roller och behörigheter. Mer [information finns i Anpassade roller i rollbaserad åtkomstkontroll för Microsoft 365 Defender.](custom-roles.md)
-  - Om du vill visa aviseringar, incidenter eller data om påverkade tillgångar måste du ha behörighet till Microsoft Defender för Office eller Microsoft Defender för data om slutpunktsaviseringar eller båda.
-  - Om du vill visa förhindrade e-postförsök måste du ha behörighet till Microsoft Defender för Office för att kunna söka efter data. 
-  - Om du vill visa minskningar måste du ha behörighet till data om hot och sårbarhetshantering i Microsoft Defender för Slutpunkt.
+För att komma åt rapporten över hotanalyser behöver du vissa roller och behörigheter. Mer [information finns i Anpassade roller i rollbaserad åtkomstkontroll Microsoft 365 Defender.](custom-roles.md)
+  - Om du vill visa aviseringar, incidenter eller data om påverkade tillgångar måste du ha behörighet till Microsoft Defender för Office eller Microsoft Defender för data om slutpunktsaviseringar, eller både och.
+  - Om du vill visa förhindrade e-postförsök måste du ha behörighet till Microsoft Defender för Office med data om du vill söka. 
+  - Om du vill visa minskningar måste du ha behörighet att Hantering av hot och säkerhetsrisker data i Microsoft Defender för Slutpunkt.
 
 När du tittar på data från hotanalyser ska du tänka på följande faktorer:
 - Diagram återspeglar endast minskningar som spåras. Kontrollera rapportens översikt för ytterligare åtgärder som inte visas i diagrammen.
 - Minskningar garanterar inte fullständig motståndskraft. Tillhandahållna minskningar återspeglar bästa möjliga åtgärder som krävs för att förbättra motståndskraften.
 - Enheter räknas som "inte tillgängliga" om de inte har överfört data till tjänsten.
-- Antivirusrelaterad statistik baseras på inställningarna för Microsoft Defender Antivirus. Enheter med antiviruslösningar från tredje part kan visas som "exponerade".
+- Antivirusrelaterad statistik baseras på de Microsoft Defender Antivirus inställningarna. Enheter med antiviruslösningar från tredje part kan visas som "exponerade".
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Hitta hot proaktivt med avancerad sökning](advanced-hunting-overview.md) 

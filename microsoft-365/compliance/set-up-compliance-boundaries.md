@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Lär dig hur du använder efterlevnadsgränser för att skapa logiska gränser som styr användarinnehållsplatser som en eDiscovery-hanterare kan söka i Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 1a84bc77cb78a9da3cfe873849a4148e55501137
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706612"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878034"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Konfigurera efterlevnadsgränser för eDiscovery-undersökningar
 
@@ -92,6 +92,9 @@ Här är en lista över Azure AD-användarattribut som du kan använda för efte
 Även om fler användarattribut är tillgängliga, särskilt Exchange postlådor, är attributen som anges ovan de enda som för närvarande stöds av OneDrive.
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Steg 2: Arkivera en begäran med Microsoft Support om att synkronisera användarattributet till OneDrive konton
+
+> [!IMPORTANT]
+> Det här steget är inte längre obligatoriskt. Från och med juni 2021 används postlådefilter för OneDrive för företag. Supportbegäranden för att synkronisera attributet till OneDrive kommer att nekas eftersom den inte längre behövs. Den här artikeln kommer att uppdateras inom kort.
 
 Nästa steg är att arkivera en begäran med Microsoft Support för att synkronisera Azure AD-attributet som du valde i steg 1 till alla OneDrive-konton i organisationen. När synkroniseringen sker mappas attributet (och dess värde) som du valde i steg 1 till en dold hanterad egenskap med namnet `ComplianceAttribute` . Du använder det här attributet för att skapa filtret för sökbehörigheter OneDrive i steg 4.
   

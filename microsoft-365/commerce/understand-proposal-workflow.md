@@ -81,7 +81,7 @@ Det övergripande arbetsflödet för förslag ser ut så här:
 
 Följande tabell innehåller termer och definitioner som visas i ditt förslag och på förslagswebbplatsen.
 
-| **Term** | **Definition** |
+| **Villkor** | **Definition** |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Faktureringskonto | Ett konto som används för att hantera dina kontoinställningar, fakturor, betalningsmetoder och produkter. |
 | Faktureringsprofil | Information om din organisation som låter dig anpassa vilka artiklar som ingår på fakturan och hur du betalar för fakturor. Faktureringsprofilen innehåller namnet på faktureringskontot, betalningsmetoderna som används för den specifika faktureringsprofilen, kontaktinformation, fakturainställningar och behörigheter som gör att du kan ändra faktureringsprofilen, betala räkningar samt köpa produkter och tjänster. |

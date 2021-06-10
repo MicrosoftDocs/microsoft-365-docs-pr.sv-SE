@@ -1,6 +1,6 @@
 ---
 title: Ordning och prioritet för e-postskydd
-keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, Microsoft Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Defender för identitet
+keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, Microsoft 365 Defender-portalen, Microsoft Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Defender för identitet
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om programordningen för skydd i Exchange Online Protection (EOP), och hur prioritetsvärdet i skyddsprinciperna avgör vilken princip som används.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7243fd79287e19528e999774dbd0dd018fa86759
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539017"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877854"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordning och prioritet för e-postskydd
 
@@ -45,7 +45,7 @@ Det finns två viktiga faktorer som avgör vilken princip som ska tillämpas på
 
   ****
 
-  |Priority|E-postskydd|Kategori|Här kan du hantera|
+  |Prioritet|E-postskydd|Kategori|Här kan du hantera|
   |---|---|---|---|
   |1|Skadlig programvara|CAT:MALW|[Konfigurera principer för skydd mot skadlig programvara i EOP](configure-anti-malware-policies.md)|
   |2|Fiske|CAT:PHSH|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
@@ -69,7 +69,7 @@ Tänk på följande principer mot nätfiske i Microsoft Defender för Office 365
 
 ****
 
-|Principnamn|Priority|Personifiering av användare|Förfalskningsskydd|
+|Principnamn|Prioritet|Personifiering av användare|Förfalskningsskydd|
 |---|---|---|---|
 |Princip A|1|På|Av|
 |Policy B|2|Av|På|

@@ -42,7 +42,7 @@ En inaktiv postlåda används för att behålla en tidigare anställds e-post n�
     
   - [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
-  - [Anslut säkerhets- & Säkerhets- och efterlevnadscenter PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [Anslut till Säkerhets- och efterlevnadscenter i PowerShell](/powershell/exchange/connect-to-scc-powershell).
     
 - Håll som är kopplade till eDiscovery-ärenden är oändligt antal kvar, vilket innebär att ingen varaktighet kan ändras. Objekten hålls kvar för alltid eller tills du tar bort det inaktiva postlådan.
     

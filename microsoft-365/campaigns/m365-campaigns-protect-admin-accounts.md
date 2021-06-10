@@ -40,7 +40,7 @@ När du registrerar dig för Microsoft 365 och anger din information blir du aut
 
 ## <a name="create-additional-admin-accounts"></a>Skapa ytterligare administratörskonton
 
-Använd endast administratörskonton för administration. Administratörer bör ha ett separat användarkonto för normal användning av Office-program och bara använda sitt administratörskonto när det behövs för att hantera konton och enheter och medan de arbetar med andra administratörsfunktioner. Det är också en bra idé att ta bort Microsoft 365-licensen från administratörskontona så att du inte behöver betala för dem.
+Använd endast administratörskonton för administration. Administratörer bör ha ett separat användarkonto för normal användning av Office-appar och bara använda sitt administratörskonto när det behövs för att hantera konton och enheter och medan de arbetar med andra administratörsfunktioner. Det är också en bra idé att ta Microsoft 365 licens från administratörskontona så att du inte behöver betala för dem.
 
 Du bör konfigurera minst ett globalt administratörskonto för att ge administratörsåtkomst till en annan betrodd anställd. Du kan också skapa separata administratörskonton för användarhantering (den här rollen kallas **användarhanteringsadministratör).** Mer information finns i om [administratörsroller](/office365/admin/add-users/about-admin-roles).
 
@@ -57,7 +57,7 @@ Så här skapar du ytterligare administratörskonton:
 
     ![Välj administratörsroll](../media/adminroles.png)
 
- 4. I avsnittet **Produktlicenser** flyttar du väljaren för **Microsoft 365 Business** till **Av** och Skapa användare **utan produktlicens** till **På.**
+ 4. I avsnittet **Produktlicenser** flyttar du väljaren för **att Microsoft 365 Business** **till Av** och Skapa användare utan **produktlicens** till **På.**
 
     ![Välj produktlicensen](../media/productlicense.png)
 
@@ -74,7 +74,7 @@ Så här skapar du ett nytt användarkonto:
 1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">administrationscentret och</a> välj sedan **Användare aktiva** användare \> **i** det vänstra navigeringsfältet.
 2. På sidan **Aktiva** användare väljer du **Lägg** till en användare  längst upp på sidan. På panelen Ny användare anger du namn och annan information.
 3. Expandera avsnittet **Roller** och välj **Användare (ingen administrativ åtkomst).**
-4. I avsnittet **Produktlicenser** flyttar du väljaren för **Microsoft 365 Business** till **På.**
+4. I avsnittet **Produktlicenser** flyttar du väljaren för att **Microsoft 365 Business** till **På**.
 
 ## <a name="turn-on-security-defaults"></a>Aktivera säkerhetsstandarder
 

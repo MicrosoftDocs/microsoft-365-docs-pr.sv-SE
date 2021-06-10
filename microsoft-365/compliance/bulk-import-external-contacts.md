@@ -71,7 +71,7 @@ Det första steget är att skapa en CSV-fil som innehåller information om varje
 
 Nästa steg är att använda CSV-filen som du skapade i Steg 1 och PowerShell för att massimporter av externa kontakter som visas i CSV-filen Exchange Online. 
   
-1.  Anslut PowerShell till din Exchange Online organisation. Stegvisa instruktioner finns i Skapa [Anslut-Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell) Se till att använda användarnamnet och lösenordet för ditt globala administratörskonto när du ansluter till Exchange Online PowerShell. 
+1.  Anslut PowerShell till din Exchange Online organisation. Stegvisa anvisningar finns i [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Se till att använda användarnamnet och lösenordet för ditt globala administratörskonto när du ansluter till Exchange Online PowerShell. 
     
 2. När du har anslutt PowerShell Exchange Online går du till skrivbordsmappen där du sparade CSV-filen i steg 1. till exempel `C:\Users\Administrator\desktop` .
     
@@ -99,7 +99,7 @@ Nästa steg är att använda CSV-filen som du skapade i Steg 1 och PowerShell f�
 
 När du har kört kommandot i steg 2 skapas de externa kontakterna, men de innehåller ingen kontakt- eller organisationsinformation, det vill säga informationen från de flesta celler i CSV-filen. Det beror på att när du skapar nya externa kontakter fylls bara de obligatoriska egenskaperna i. Oroa dig inte om du inte har all information ifylld i CSV-filen. Om den inte finns där läggs den inte till.
   
-1.  Anslut PowerShell till din Exchange Online organisation. Stegvisa instruktioner finns i Skapa [Anslut-Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1.  Anslut PowerShell till din Exchange Online organisation. Stegvisa anvisningar finns i [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Gå till skrivbordsmappen där du sparade CSV-filen i steg 1. till exempel `C:\Users\Administrator\desktop` .
     
@@ -138,7 +138,7 @@ Du kan upprepa steg 1 till steg 3 för att lägga till nya externa kontakter i E
 
 Vissa företag kanske bara använder externa kontakter så att de kan läggas till som medlemmar i distributionsgrupper. I det här scenariot vill de kanske dölja externa kontakter i den delade adressboken. Så här gör du:
   
-1.  Anslut PowerShell till din Exchange Online organisation. Stegvisa instruktioner finns i Skapa [Anslut-Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1.  Anslut PowerShell till din Exchange Online organisation. Stegvisa anvisningar finns i [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Om du vill dölja en enskild extern kontakt kör du följande kommando.
     

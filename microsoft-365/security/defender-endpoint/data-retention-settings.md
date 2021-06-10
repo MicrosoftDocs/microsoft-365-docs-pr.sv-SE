@@ -42,13 +42,13 @@ När du har slutfört introduktionen kan du verifiera ditt val på sidan instäl
 ## <a name="verify-data-storage-location"></a>Verifiera datalagringsplatsen
 Under fasen [Konfigurera skulle](production-deployment.md)du ha valt plats för att lagra data. 
 
-Du kan kontrollera dataplatsen genom att gå till **Inställningar**  >  **Datalagring**.
+Du kan verifiera dataplatsen genom att gå till **Inställningar**  >  **Datalagring**.
 
 ## <a name="update-data-retention-settings"></a>Uppdatera inställningar för datalagring
 
 Du kan uppdatera inställningarna för datalagring. Bevarandetiden är som standard 180 dagar. 
 
-1. Välj Inställningar Datalagring **i**  >  **navigeringsfönstret.**
+1. Välj Datalagring Inställningar   >  **i navigeringsfönstret.**
 
 2. Välj varaktigheten för datalagringen i listrutan.
 

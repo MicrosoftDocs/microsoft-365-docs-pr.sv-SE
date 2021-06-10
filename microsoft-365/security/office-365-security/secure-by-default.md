@@ -17,12 +17,12 @@ ms.collection:
 description: Läs mer om inställningen säker som standard i Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624055"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861533"
 ---
 # <a name="secure-by-default-in-office-365"></a>Säker som standard i Office 365
 
@@ -58,7 +58,7 @@ Eftersom Microsoft vill att våra kunder ska vara säkra som standard används i
 Mer information om dessa åsidosättningar finns i Skapa [listor över betrodda avsändare.](create-safe-sender-lists-in-office-365.md)
 
 > [!NOTE]
-> Vi håller på att ta bort  åtgärden Flytta meddelandet till skräppostmappen för nätfiskeuttryck i EOP:s principer för skräppost.  Principer för skydd mot skräppost som använder den här åtgärden för nätfiskemeddelanden med hög säkerhet konverteras till **karantänmeddelanden.** Åtgärden **Omdirigera meddelandet till e-postadress** för nätfiskemeddelanden med hög säkerhet påverkas inte.
+> Vi har tagit bort  åtgärden Flytta meddelandet till  mappen Skräppost för nätfiskeuttryck i EOP:s policy för skräppost. Principer för skydd mot skräppost som använder den här åtgärden för nätfiskemeddelanden med hög säkerhet konverteras till **karantänmeddelanden.** Åtgärden **Omdirigera meddelandet till e-postadress** för nätfiskemeddelanden med hög säkerhet påverkas inte.
 
 Säker som standard är inte en inställning som kan aktiveras eller inaktiveras, men är det sätt som vår filtrering fungerar för att hålla potentiellt skadliga eller oönskade meddelanden från dina postlådor. Skadlig programvara och nätfiskemeddelanden med hög konfidens bör ha satts i karantän. Endast administratörer kan hantera meddelanden som har satts i karantän som skadlig kod eller nätfiske med hög konfidens, och de kan också rapportera falska positiva meddelanden till Microsoft därifrån. Mer information finns i [Hantera meddelanden i karantän och filer som administratör i EOP](manage-quarantined-messages-and-files.md)
 

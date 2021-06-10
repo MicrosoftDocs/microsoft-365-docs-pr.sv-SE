@@ -1,5 +1,5 @@
 ---
-title: Spara ett utkast till en granskningsuppsättning
+title: 'Spara en utkastsamling till en granskningsuppsättning '
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -27,7 +27,7 @@ ms.locfileid: "52161824"
 
 När du är nöjd med de objekt du har samlat in i en utkastsamling och är redo att analysera, tagga och granska dem kan du lägga till en samling i en granskningsuppsättning i ärendet. När du åtar dig att skapa ett utkast i en granskningsuppsättning kopieras insamlade objekt från den ursprungliga innehållsplatsen i Microsoft 365 till en granskningsuppsättning. En granskningsuppsättning är en säker, Microsoft-Azure Storage plats i Microsoft-molnet.
 
-## <a name="commit-a-draft-collection-to-a-review-set"></a>Spara ett utkast till en granskningsuppsättning
+## <a name="commit-a-draft-collection-to-a-review-set"></a>Spara en utkastsamling till en granskningsuppsättning 
 
 1. I Microsoft 365 kompatibilitetscenter öppnar du Advanced eDiscovery och väljer sedan fliken  Samlingar för att visa en lista med de aktuella samlingarna.
 

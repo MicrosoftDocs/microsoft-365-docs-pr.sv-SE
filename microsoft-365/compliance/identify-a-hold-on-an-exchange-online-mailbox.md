@@ -1,5 +1,5 @@
 ---
-title: Så här identifierar du typen av väntande objekt som en Exchange Online postlådan
+title: Identifiera typen av undantag som tillämpas på en Exchange Online-postlåda
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -24,7 +24,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "52162001"
 ---
-# <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Så här identifierar du typen av väntande objekt som en Exchange Online postlådan
+# <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Identifiera typen av undantag som tillämpas på en Exchange Online-postlåda
 
 I den här artikeln förklarar vi hur du identifierar spärrade Exchange Online postlådor i Microsoft 365.
 
@@ -125,7 +125,7 @@ Mer information om bevarandeåtgärder finns i [avsnittet Behålla innehåll und
 
 När du har fått GUID för ett väntande tillstånd som tillämpas på en postlåda är nästa steg att använda det GUID för att identifiera väntande identifiering. I följande avsnitt visas hur du identifierar namnet på kvarstående information (och annan information) med hjälp av guiD för håll.
 
-### <a name="ediscovery-holds"></a>eDiscovery-kvarhåller
+### <a name="ediscovery-holds"></a>eDiscovery-undantag
 
 Kör följande kommandon i Säkerhets- & Efterlevnadscenter PowerShell för att identifiera ett eDiscovery-skal som tillämpas på postlådan. Använd GUID (inte inklusive UniH-prefixet) för det eDiscovery-värde du identifierade i steg 1. 
 

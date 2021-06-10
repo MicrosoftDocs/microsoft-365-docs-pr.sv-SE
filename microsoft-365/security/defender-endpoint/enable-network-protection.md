@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6afdcc16493839e83771ac831831fdbb121663a1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: b62659360e990467524ec632968dfea313d0b164
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841780"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861677"
 ---
 # <a name="turn-on-network-protection"></a>Aktivera nätverksskydd
 
@@ -43,7 +43,7 @@ Kontrollera om nätverksskyddet har aktiverats på en lokal enhet med registered
 
 2. Välj **HKEY_LOCAL_MACHINE** i sidomenyn
 
-3. Navigera genom de kapslade menyerna **till**  >  **PROGRAMVARUprinciper**  >  **i Microsoft**  >  **Windows Defender**  >  **Policy Manager** 
+3. Navigera genom de kapslade menyerna **till**  >  **PROGRAMVARA Microsoft**  >  **Windows Defender** Windows Defender  >  **Exploit Guard** Network  >  **Protection**
 
 4. Välj **EnableNetworkProtection** för att se aktuell status för nätverksskydd på enheten
 
@@ -120,7 +120,7 @@ Kontrollera att nätverksskyddet är aktiverat på en lokal dator med hjälp av 
 
 1. Välj **Start** och skriv **regedit för** att öppna **Registereditorn.**
 
-2. Gå till **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
+2. Gå till **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
 
 3. Välj **EnableNetworkProtection** och bekräfta värdet:
    * 0=Av

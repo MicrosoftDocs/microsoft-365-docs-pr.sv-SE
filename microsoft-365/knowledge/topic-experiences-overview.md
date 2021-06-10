@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Översikt över Viva Topics.
-ms.openlocfilehash: c7a5af9d2a038c2b9cc5f26d851eb3776a00c71f
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866697"
+ms.locfileid: "52877818"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Översikt över Microsoft Viva-ämnen 
 
@@ -70,7 +70,7 @@ När ett ämne identifieras och AI bestämmer att det innehåller tillräckligt 
 
 Dina kunskapsadministratörer kan välja att crawla alla SharePoint-webbplatser i klientorganisationen för ämnen eller att bara välja vissa.
 
-Se [Ämnesidentifiering och curation](./topic-experiences-discovery-curation.md).
+Mer information finns i avsnittet [Ämnesidentifiering och läroplan.](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Roller
 
@@ -80,7 +80,7 @@ När du använder Viva Topics i Microsoft 365-miljön har användarna följande 
 
 - Deltagare: Användare som har behörighet att redigera befintliga ämnen eller skapa nya. Kunskapsadministratörer tilldelar behörighet som deltagare till användare via inställningarna för Viva Topics i Administrationscenter för Microsoft 365. Observera att du även kan välja att ge alla som tittar på ämnet behörighet att redigera och skapa ämnen så att alla kan bidra till ämnen som de ser.
 
-- Kunskapshanterare: Användare som vägleder ämnen genom ämnets livscykel. Knowledge managers use the Manage topics page in the Topic center to confirm AI-suggested topics, remove topics that are no longer relevant, as as **edit existing** topics or create new ones, and are the only users who have access to it. Kunskapsadministratörer tilldelar behörighet som kunskapshanterare till användare via inställningarna för Viva Topics i Administrationscenter för Microsoft 365. 
+- Kunskapshanterare: Användare som vägleder ämnen genom ämnets livscykel. Knowledge managers use the Manage topics page in the topic center to confirm AI-suggested topics, remove topics that are no longer relevant, as edit **existing topics** or create new ones, and are the only users who have access to it. Kunskapsadministratörer tilldelar behörighet som kunskapshanterare till användare via inställningarna för Viva Topics i Administrationscenter för Microsoft 365. 
 
 - Kunskapsadministratörer: Administratörer konfigurera Viva-ämnen och hantera det via administratörskontrollerna i Microsoft 365 administrationscenter. En global Microsoft 365- eller SharePoint-administratör kan för närvarande fungera som kunskapsadministratör.
 
@@ -90,15 +90,15 @@ Mer information finns i [Viva Topics-roller.](topic-experiences-roles.md)
 
 Ämneshanteringen utförs **på sidan** Hantera ämnen i organisationens *ämnescenter.* Ämnescentret skapas under installationen och fungerar som ditt kunskapscenter för din organisation. 
 
-Alla licensierade användare kan se ämnen som de är anslutna  till i Ämnescenter, men endast användare med behörigheten Hantera ämnen (knowledge managers) kan visa och använda **sidan Hantera** ämnen.
+Alla licensierade användare kan se ämnen som de är anslutna  till i ämnescentret, men endast användare med behörigheten Hantera ämnen (knowledge managers) kan visa och använda **sidan Hantera** ämnen.
 
 Kunskapshanterare kan:
 
 - Bekräfta eller ta bort ämnen som har upptäckts i klientorganisationen.
 - Skapa nya ämnen manuellt efter behov (om till exempel inte tillräckligt med information tillhandahölls för att den ska upptäckas via AI).
-- Redigera befintliga ämnessidor.<br/>
+- Redigera befintliga ämnessidor.
 
-Mer information finns i [Hantera ämnen i Ämnescenter.](manage-topics.md)  
+Mer information finns i [Hantera ämnen i ämnescentret.](manage-topics.md)  
 
 ## <a name="admin-controls"></a>Administratörskontroller
 

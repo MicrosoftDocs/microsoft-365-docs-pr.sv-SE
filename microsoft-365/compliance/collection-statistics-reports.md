@@ -1,5 +1,5 @@
 ---
-title: Insamling av statistik och rapporter
+title: Samlingsstatistik och rapporter
 f1.keywords:
 - NOCSH
 ms.author: markjjo

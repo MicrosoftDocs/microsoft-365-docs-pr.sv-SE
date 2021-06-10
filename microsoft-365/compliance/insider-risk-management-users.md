@@ -1,7 +1,7 @@
 ---
 title: Insider-riskhantering – instrumentpanel för användare
 description: Läs mer om insider-riskhantering Användares instrumentpanel i Microsoft 365
-keywords: Microsoft 365, insider-riskhantering, riskhantering, efterlevnad
+keywords: Microsoft 365, hantering av insiderrisk, riskhantering, efterlevnad
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -46,7 +46,7 @@ Instrumentpanelen **Användare** innehåller användare som lagts till i princip
 När en användare läggs till manuellt i en princip poängas användaraktiviteterna för de föregående 90 dagarna och läggs till på tidslinjen **för användaraktivitet.** Till exempel har du en användare som för närvarande inte tilldelats riskresultat för en Insider-riskpolicy och användaren har rapporterat dataläckor till den juridiska avdelningen i organisationen. Den juridiska avdelningen rekommenderar att du konfigurerar nya uppföljningskrav för användaren. Du kan tillfälligt tilldela användaren till principen för *Dataläckor* under en angiven tid (aktiveringsfönstret). Alla användare som lagts till tillfälligt visas i **instrumentpanelen Användare eftersom** händelsekrav avsäger sig.
 
 >[!NOTE]
->Det kan ta flera timmar innan nya manuellt tillagda användare visas i **instrumentpanelen Användare.** Det kan ta upp till 24 timmar innan aktiviteterna för de föregående 90 dagarna för dessa användare visas. Om du vill visa aktiviteter för manuellt  tillagda användare väljer du användaren på instrumentpanelen Användare och öppnar **fliken Användaraktivitet** i informationsfönstret.
+>Det kan ta flera timmar innan nya manuellt tillagda användare visas i **instrumentpanelen Användare.** Det kan ta upp till 24 timmar att visa aktiviteter för de senaste 90 dagarna för dessa användare. Om du vill visa aktiviteter för manuellt  tillagda användare väljer du användaren på instrumentpanelen Användare och öppnar **fliken Användaraktivitet** i informationsfönstret.
 
 Användaren tas automatiskt bort från instrumentpanelen **användare och** poäng poäng upphör när den tid som definierats i **aktiveringsfönstret går** ut om:
 

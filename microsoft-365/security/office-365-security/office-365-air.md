@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c761b4896ea5b616aed80ed2c54ef91fc465b201
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793166"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877890"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisk undersökning och svar (AIR) i Microsoft Defender för Office 365
 
@@ -46,7 +46,7 @@ I den här artikeln beskrivs:
 - Det [övergripande flödet av AIR](#the-overall-flow-of-air);
 - [Skaffa AIR](#how-to-get-air); och
 - Behörighet [som krävs för](#required-permissions-to-use-air-capabilities) att konfigurera eller använda AIR-funktioner.
-- Ändringar som kommer snart till ditt säkerhetscenter
+- Ändringar som kommer snart i din Microsoft 365 Defender-portalen
 
 Den här artikeln innehåller [även nästa steg](#next-steps), och resurser för mer information.
 
@@ -89,7 +89,11 @@ Dessutom bör du granska [organisationens aviseringsprinciper,](../../compliance
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Vilka aviseringsprinciper utlöser automatiska undersökningar?
 
-Microsoft 365 innehåller många inbyggda aviseringsprinciper som hjälper till att identifiera missbruk av Exchange administratörsbehörighet, skadlig programvara, potentiella externa och interna hot samt informationsstyrningsrisker. Flera av [standardaviseringsprinciperna](../../compliance/alert-policies.md#default-alert-policies) kan utlösa automatiska undersökningar. I följande tabell beskrivs aviseringarna som utlöser automatiska undersökningar, deras allvarlighetsgrad i Microsoft 365 säkerhetscenter och hur de genereras:
+Microsoft 365 innehåller många inbyggda aviseringsprinciper som hjälper till att identifiera missbruk av Exchange administratörsbehörighet, skadlig programvara, potentiella externa och interna hot samt informationsstyrningsrisker. Flera av [standardaviseringsprinciperna](../../compliance/alert-policies.md#default-alert-policies) kan utlösa automatiska undersökningar. I följande tabell beskrivs aviseringarna som utlöser automatiska undersökningar, deras allvarlighetsgrad i Microsoft 365 Defender-portalen och hur de genereras:
+
+<br>
+
+****
 
 |Varning|Allvarlighetsgrad|Så här genereras aviseringen|
 |---|---|---|
@@ -108,10 +112,15 @@ Microsoft 365 innehåller många inbyggda aviseringsprinciper som hjälper till 
 
 Behörigheter beviljas genom vissa roller, till exempel de som beskrivs i följande tabell:
 
+<br>
+
+****
+
 |Uppgift|Roll(er) krävs|
 |---|---|
 |Konfigurera AIR-funktioner|En av följande roller: <ul><li>Global administratör</li><li>Säkerhetsadministratör</li></ul> <p> De här rollerna kan [tilldelas i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [Säkerhets- & Efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md)|
 |Starta en automatiserad undersökning <p> --- eller --- <p> Godkänna eller avvisa rekommenderade åtgärder|En av följande roller, tilldelad i [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) eller i [Säkerhets- & Efterlevnadscenter:](permissions-in-the-security-and-compliance-center.md) <ul><li>Global administratör</li><li>Säkerhetsadministratör</li><li>Säkerhetsoperatör</li><li>Säkerhetsläsare <br> --- och --- </li><li>Sökning och rensning (den här rollen tilldelas endast i [säkerhets- och & Säkerhets- och efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md) Du kanske måste skapa en ny rollgrupp där och lägga till rollen Sök och rensa i den nya rollgruppen.</li></ul>|
+|
 
 ## <a name="required-licenses"></a>Licenser som krävs
 
@@ -121,16 +130,16 @@ Behörigheter beviljas genom vissa roller, till exempel de som beskrivs i följa
 - Organisationens team för säkerhetsåtgärder (inklusive säkerhetsläsare och de med rollen **Sök och Rensning)**
 - Slutanvändare:
 
-## <a name="changes-are-coming-soon-in-your-security-center"></a>Ändringar kommer snart i ditt säkerhetscenter
+## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Ändringar kommer snart i Microsoft 365 Defender-portalen
 
-Om du redan använder AIR-funktionerna i Microsoft Defender för Office 365 kommer du att se några ändringar i det [Microsoft 365 säkerhetscentret.](../defender/overview-security-center.md)
+Om du redan använder AIR-funktionerna i Microsoft Defender för Office 365 kommer du att se några ändringar i den förbättrade [Microsoft 365 Defender-portalen.](../defender/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Enhetligt åtgärdscenter":::
 
-Det nya och förbättrade säkerhetscentret sammanför AIR-funktionerna i [Microsoft Defender för Office 365](defender-for-office-365.md) och i Microsoft Defender för [slutpunkt.](../defender-endpoint/automated-investigations.md) Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.
+Den nya och förbättrade Microsoft 365 Defender-portalen sammanför AIR-funktioner i [Microsoft Defender för Office 365](defender-for-office-365.md) och i Microsoft Defender för [slutpunkt.](../defender-endpoint/automated-investigations.md) Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.
 
 > [!TIP]
-> Det nya Microsoft 365 säkerhetscentret <https://security.microsoft.com> () ersätter följande center:
+> Den nya Microsoft 365 Microsoft 365 <https://security.microsoft.com> Defender-portalen () ersätter följande center:
 >
 > - Office 365 Säkerhets- & Efterlevnadscenter <https://protection.office.com> ()
 > - Microsoft Defender Säkerhetscenter ( <https://securitycenter.windows.com> )
@@ -140,6 +149,10 @@ Det nya och förbättrade säkerhetscentret sammanför AIR-funktionerna i [Micro
 ### <a name="what-to-expect"></a>Vad du kan förvänta dig
 
 Följande tabell innehåller ändringar och förbättringar som kommer till AIR i Microsoft Defender för Office 365.
+
+<br>
+
+****
 
 |Objekt|Vad är det som förändras?|
 |---|---|

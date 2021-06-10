@@ -1,5 +1,5 @@
 ---
-title: Set up Information Rights Management (IRM) in SharePoint admin center
+title: Konfigurera IRM (Information Rights Management) i SharePoint Online Administrationscenter
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -25,7 +25,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "52162039"
 ---
-# <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
+# <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Konfigurera IRM (Information Rights Management) i SharePoint Online Administrationscenter
 
 I SharePoint Online tillämpas IRM-skyddet på filer på list- och biblioteksnivå. Innan din organisation kan använda IRM-skydd måste du först konfigurera Rättighetshantering. IRM använder sig av tjänsten Azure Rights Management från Azure Information Protection för att kryptera och tilldela användningsbegränsningar. Vissa Microsoft 365 omfattar Azure Rights Management, men inte alla. Mer information finns i Hur [Office program och tjänster har stöd för Azure Rights Management.](/azure/information-protection/understand-explore/office-apps-services-support)
   

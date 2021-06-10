@@ -173,7 +173,7 @@ De måste skapa en ny grupp för att ta med alla Contoso-användare, så de gör
 
 3. När den nya gruppen har skapats måste de lägga till alla Contoso-användare i den nya gruppen. De öppnar Exchange **(och** [navigerar https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) till mottagarna i **Exchange**  >    >  **administrationscentret.** Contoso-IT-administratörerna väljer området  Medlemskap och den nya  gruppen Alla anställda som de har skapat. Välj sedan redigeringskontrollen för att lägga till alla Contoso-användare i den nya gruppen i guiden.
 
-    ![Exchange administrationscenter](../media/communication-compliance-case-eac.png)
+    ![Administrationscentret för Exchange](../media/communication-compliance-case-eac.png)
 
 ### <a name="creating-the-policy-to-monitor-for-offensive-language"></a>Skapa principen för att övervaka anstötligt språk
 

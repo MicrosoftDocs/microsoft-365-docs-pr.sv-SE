@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3f1a251d98be5b3a9fefa5c1f6d5d5562516d5d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908180"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861689"
 ---
 # <a name="privacy-and-personal-data"></a>Sekretess och personlig information
 
@@ -109,10 +109,8 @@ Mer information om insamling av diagnostikdata för Windows 10 i avsnittet "Var 
 På flera sätt Microsoft Hanterat skrivbord direkt åtkomst till de interna datakällorna:
 
 - Det kräver godkännande från teknisk lednivå.
-- Det är både granskat och tidsbegränsat.
-- Användning av en arbetsstation med hög säkerhet och begränsad användning krävs.
+- Den är tidsbunden och granskad.
 - Alla data krypteras medan de lagras.
-- Det finns ingen stående åtkomst.
 - Åtkomst till Microsoft Hanterat skrivbord interna hanteringsportal kräver en starkt skyddad och begränsad arbetsstation.
 
 ## <a name="processing-personal-data-in-a-compliant-manner"></a>Bearbeta personuppgifter på ett kompatibelt sätt

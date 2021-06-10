@@ -41,15 +41,15 @@ Om prenumerationen skapades den 22 oktober 2019 eller efter den 22 oktober 2019 
 
 Så här aktiverar du säkerhetsstandardvärden i Azure Active Directory (Azure AD) eller kontrollerar om de redan är aktiverade:
 
-1. Logga in på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">administrationscentret för Microsoft 365 med autentiseringsuppgifter</a> som global administratör.
+1. Logga in på Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">med autentiseringsuppgifterna</a> för global administratör.
 
-2. I den vänstra rutan väljer **du Visa alla.** Under **Administratörscentra** väljer du **sedan Azure Active Directory.**
+2. I den vänstra rutan väljer **du Visa alla och** under **Administrationscenter** väljer du **sedan Azure Active Directory**.
 
-3. I den vänstra rutan i **administrationscentret för Azure Active Directory väljer** du Azure Active **Directory.**
+3. I det vänstra fönstret i **Azure Active Directory väljer du** **Azure Active Directory**.
 
 4. I den vänstra menyn på Instrumentpanelen går du till **avsnittet Hantera** och väljer **Egenskaper**.
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Skärmbild av administrationscentret för Azure Active Directory som visar platsen för menyobjektet Egenskaper.":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Skärmbild av Azure Active Directory administrationscenter som visar platsen för menyobjektet Egenskaper.":::
 
 5. Längst ned på sidan **Egenskaper** väljer du **Hantera säkerhetsstandarder.**
 

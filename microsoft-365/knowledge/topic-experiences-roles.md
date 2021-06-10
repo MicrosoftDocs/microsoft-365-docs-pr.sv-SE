@@ -23,7 +23,7 @@ ms.locfileid: "51222773"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Roller i Microsoft Viva-ämnen 
 
-När du använder Viva Topics i din Microsoft 365-miljö kan användarna ha följande roller:
+När du använder Viva Topics Microsoft 365-miljön kan användarna ha följande roller:
 -   Visare för ämne
 -   Ämnesdeltagare
 -   Knowledge Manager
@@ -31,11 +31,11 @@ När du använder Viva Topics i din Microsoft 365-miljö kan användarna ha föl
 
 ## <a name="topic-viewer"></a>Visare för ämne
 
-Ämnesvyer är användare i organisationen som kan visa ämnen som markerats på sin moderna SharePoint-webbplats, Microsoft Search via SharePoint och Office.com och ämnescentret. De kan visa mer information om ett ämne på ämnessidan. 
+Ämnesvyer är användare i organisationen som kan visa ämnen som markerats på deras SharePoint moderna webbplats, Microsoft Search via SharePoint och Office.com och ämnescentret. De kan visa mer information om ett ämne på ämnessidan. 
 
 För att ämnespunkter och deras ämnessidor ska vara synliga för ett ämnesvisningsprogram måste användaren:
--   [Tilldelas en Viva Topics-licens](./set-up-topic-experiences.md#assign-licenses) av microsoft 365-administratören.
--   Tillåt att du har tillgång till ämnen. Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva Ämnen i administrationscentret för Microsoft 365.
+-   [Tilldelas en Viva Topics-licens](./set-up-topic-experiences.md#assign-licenses) av Microsoft 365 administratör.
+-   Tillåt att du har tillgång till ämnen. Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva-ämnen Microsoft 365 administrationscentret.
 
 
 ## <a name="topic-contributors"></a>Ämnesdeltagare
@@ -48,8 +48,8 @@ En ämnesdeltagare kan också skapa och publicera ett nytt ämne via sitt ämnes
 
 För att skapa och redigera ett ämne måste användaren:
 
--   [Tilldelas en Viva Topics-licens](./set-up-topic-experiences.md#assign-licenses) av microsoft 365-administratören.
--   [Tilldelas behörighet att skapa och redigera ämnen](./topic-experiences-user-permissions.md). Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva Ämnen i administrationscentret för Microsoft 365.
+-   [Tilldelas en Viva Topics-licens](./set-up-topic-experiences.md#assign-licenses) av Microsoft 365 administratör.
+-   [Tilldelas behörighet att skapa och redigera ämnen](./topic-experiences-user-permissions.md). Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva-ämnen Microsoft 365 administrationscentret.
 
 ## <a name="knowledge-managers"></a>Kunskapsansvariga
 
@@ -63,18 +63,18 @@ På sidan Hantera ämnen kan kunskapshanterare göra följande:
 En kunskapshanterare kan dessutom redigera befintliga ämnen eller skapa nya.
 
 För att hantera ämnen måste användaren:
--   [Tilldelas en Viva Topics-licens](./set-up-topic-experiences.md#assign-licenses) av microsoft 365-administratören.
--   [Tilldelas behörigheter för att hantera ämnen](./topic-experiences-user-permissions.md)). Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva Ämnen i administrationscentret för Microsoft 365.
+-   [Tilldelas en Viva Topics-licens](./set-up-topic-experiences.md#assign-licenses) av Microsoft 365 administratör.
+-   [Tilldelas behörigheter för att hantera ämnen](./topic-experiences-user-permissions.md)). Den här uppgiften utförs av kunskapsadministratören på inställningssidan för Viva-ämnen Microsoft 365 administrationscentret.
 
 Användare som har en bra övergripande kunskap om ditt företag kan vara bra på att ta rollen som knowledge manager. Sådana personer kanske inte bara har kunskap om ämnen som är giltiga eller inte, utan kanske också känner till personer inom företaget som är relaterade till dessa ämnen.
 
 
 ## <a name="knowledge-admins"></a>Kunskapsadministratörer
 
-Kunskapsadministratörer är administratörer som konfigurerar Viva Topics i din Microsoft 365-miljö. De hanterar även Inställningarna för Viva Ämnen när inställningarna har slutförts. Rollen som kunskapsadministratör kräver att du är global Microsoft 365- eller SharePoint-administratör eftersom konfiguration och hantering utförs i administrationscentret för Microsoft 365.
+Kunskapsadministratörer är administratörer som konfigurerar viva-ämnen i din Microsoft 365 miljö. De hanterar även Inställningarna för Viva Ämnen när inställningarna har slutförts. Rollen som kunskapsadministratör kräver att du är global Microsoft 365 administratör SharePoint administratör eftersom konfiguration och hantering utförs Microsoft 365 administrationscentret.
 Under installationen kan knowledge admins ställa in Viva Topics till:
 
--   Välj vilka SharePoint-webbplatser som ska crawlas för ämnen.
+-   Välj vilka SharePoint ska crawlas för ämnen.
 -   Välj vilka licensierade användare som kan visa ämnen (ämnesvisningsprogram).
 -   Välj vilka ämnen som ska undantas från att identifieras.
 -   Välj vilka licensierade användare som kan skapa och redigera ämnen (ämnesdeltagare).

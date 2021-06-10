@@ -34,10 +34,10 @@ ms.locfileid: "51398180"
 
 ## <a name="for-business-or-campaign-admins"></a>För företags- eller kampanjadministratörer
 
-Om du har registrerat dig för Microsoft 365 är du Microsoft 365-administratör. Så här loggar du in:
+Om du registrerade dig för Microsoft 365 är du administratör Microsoft 365 administratör. Så här loggar du in:
 
 1. Hitta användarnamnet och lösenordet som vi skickade till den e-postadress som du gav oss i steg 2 [i Steg för att registrera dig](m365-campaigns-sign-up.md#steps-to-sign-up).
-2. I webbläsaren går du till administrationscentret för Microsoft 365 på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
+2. I webbläsaren går du till Microsoft 365 administrationscenter på <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .
 3. Ange ditt användarnamn och lösenord. Välj **Logga in**.
 4. Längst upp till höger på sidan hittar du **förhandsgranskningen på** kontrollen. Välj **Förhandsgranskning så** att du kan använda alla kontroller som beskrivs i [Skydd av ojämnt skydd för kampanjen.](m365-campaigns-security-overview.md)
 

@@ -40,7 +40,7 @@ ms.locfileid: "51222341"
 >- [Microsoft Defender för identifiering av slutpunkt](api-portal-mapping.md) består av den misstänkta händelsen som inträffade på enheten och tillhörande aviseringsinformation.
 >-Microsoft Defender för slutpunktsaviserings-API är det senaste API:t för aviseringsanvändning och innehåller en detaljerad lista med relaterade bevis för varje avisering. Mer information finns i [Aviseringsmetoder och egenskaper](alerts.md) och [Listaviseringar.](get-alerts.md)
 
-Defender för Endpoint har stöd för säkerhetsinformation och händelsehanteringsverktyg (SIEM) för att hämta identifieringar. Defender för Endpoint visar aviseringar via en HTTPS-slutpunkt som finns i Azure. Slutpunkten kan konfigureras för att hämta identifieringar från företagsklientorganisationen i Azure Active Directory (AAD) med OAuth 2.0-autentiseringsprotokoll för ett AAD-program som representerar den specifika SIEM-anslutaren som är installerad i miljön.
+Defender för Endpoint har stöd för säkerhetsinformation och händelsehanteringsverktyg (SIEM) för att hämta identifieringar. Defender för Endpoint visar aviseringar via en HTTPS-slutpunkt som finns i Azure. Slutpunkten kan konfigureras för att hämta identifieringar från företagsklientorganisationen i Azure Active Directory (AAD) med hjälp av OAuth 2.0-autentiseringsprotokoll för ett AAD-program som representerar den specifika SIEM-koppling som är installerad i miljön.
 
 Defender för Endpoint stöder för närvarande följande specifika SIEM-lösningsverktyg via en dedikerad SIEM-integrationsmodell:
 

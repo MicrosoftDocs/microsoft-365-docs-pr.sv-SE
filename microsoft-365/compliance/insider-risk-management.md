@@ -55,7 +55,7 @@ Insider-riskhantering är centrerat kring följande principer:
 
 ## <a name="identifying-potential-risks-with-analytics-preview"></a>Identifiera potentiella risker med analyser (förhandsversion)
 
-Med Insider-riskanalyser kan du göra en utvärdering av potentiella Insider-risker i organisationen utan att konfigurera insiderriskprinciper. Den här utvärderingen kan hjälpa din organisation att identifiera potentiella områden med högre användarrisker och hjälpa till att fastställa typ och omfattning för principer för Insider-riskhantering som du kan överväga att konfigurera. Den här utvärderingen kan också hjälpa dig att fastställa behov för ytterligare licensiering eller framtida optimering av befintliga Insider Risk-principer.
+Insiderriskanalys gör att du kan göra en utvärdering av potentiella insiderrisker i din organisation utan att konfigurera några principer för insiderrisk. Denna utvärdering kan hjälpa din organisation att identifiera potentiella områden med högre användarrisk och hjälpa till att bestämma typen och omfattningen av principer för hantering av insiderrisk som du kan överväga att konfigurera. Den här utvärderingen kan också hjälpa dig att fastställa behov för ytterligare licensiering eller framtida optimering av befintliga Insider Risk-principer.
 
 Mer information om Insider-riskanalyser finns i [Insider-inställningar för riskhantering: Analyser](insider-risk-management-settings.md#analytics-preview).
 
@@ -73,16 +73,16 @@ Följande arbetsflöde används för att identifiera och lösa interna riskaktiv
 
 Du kan välja bland följande principmallar för att snabbt komma igång med Insider-riskhantering:
 
-- [Datastöld genom avgående användare](insider-risk-management-policies.md#data-theft-by-departing-users)
+- [Datastöld från slutande användare](insider-risk-management-policies.md#data-theft-by-departing-users)
 - [Allmänna dataläckor](insider-risk-management-policies.md#general-data-leaks)
-- [Dataläsar efter prioriterade användare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [Dataläckor av missnöjda användare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-- [Allmänna brott mot säkerhetsprinciper (förhandsversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [Brott mot säkerhetsprinciper genom avgående användare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
-- [Brott mot säkerhetsprinciper för användare med prioritet (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Brott mot säkerhetsprinciper för användare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Dataläckor av prioritetsanvändare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [Dataläckor av missnöjd användare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [Överträdelse av allmän säkerhetsprincip (förhandsversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [Överträdelser av säkerhetsprinciper av användare som slutar (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
+- [Överträdelser av säkerhetsprincip efter prioritetsanvändare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
+- [Överträdelse av säkerhetsprincip av en missnöjd användare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
-![Instrumentpanel för Insider-riskhantering](../media/insider-risk-policy-dashboard.png)
+![Instrumentpanel för principer för hantering av insiderrisk](../media/insider-risk-policy-dashboard.png)
 
 ### <a name="alerts"></a>Varningar
 
@@ -134,7 +134,7 @@ I mer allvarliga situationer kan du behöva dela information om insider-riskhant
 
 Insider-riskhantering kan hjälpa dig att upptäcka, undersöka och vidta åtgärder för att minska interna risker i organisationen i flera vanliga scenarier:
 
-### <a name="data-theft-by-departing-users"></a>Datastöld genom avgående användare
+### <a name="data-theft-by-departing-users"></a>Datastöld från slutande användare
 
 När användare lämnar en organisation, antingen avsiktligt eller som ett resultat av uppsägning, finns det ofta legitima problem som företaget, kunden och användarinformationen är i riskabelt. Användarna kan vara se fram mot att projektdata inte är företagsdata, eller att de frestas att ta företagsdata för personlig vinst och i brott mot företagets policy och juridiska standarder. Principer för Insider-riskhantering som använder [Datastöld genom avgående](insider-risk-management-policies.md#policy-templates) användarprincipmall identifierar automatiskt aktiviteter som vanligtvis associeras med den här typen av stöld. Med den här principen får du automatiskt aviseringar om misstänkta aktiviteter som är associerade med datastöld av avgående användare så att du kan vidta lämpliga åtgärder. Du måste [konfigurera Microsoft 365 HR-koppling](import-hr-data.md) för organisationen för den här principmallen.
 
@@ -143,31 +143,31 @@ När användare lämnar en organisation, antingen avsiktligt eller som ett resul
 I de flesta fall försöker användarna att hantera känslig eller konfidentiell information på bästa sätt. Men ibland kan användare göra misstag och information delas av misstag utanför organisationen eller i brott mot dina informationsskyddsprinciper. I andra fall kan användare avsiktligt läcka eller dela känslig och konfidentiell information med skadliga avsikter och för potentiell personlig vinst. Principer för Insider-riskhantering som skapats med hjälp av följande principmallar för Dataläckor identifierar automatiskt aktiviteter som vanligtvis associeras med delning av känslig eller konfidentiell information:
 
 - [Allmänna dataläckor](insider-risk-management-policies.md#general-data-leaks)
-- [Dataläsar efter prioriterade användare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
-- [Dataläckor av missnöjda användare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [Dataläckor av prioritetsanvändare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [Dataläckor av missnöjd användare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>Avsiktliga eller oavsiktliga brott mot säkerhetsprinciper (förhandsversion)
 
 Användare har vanligtvis stor kontroll när de hanterar sina enheter på den moderna arbetsplatsen. Den här kontrollen kan innehålla behörigheter för att installera eller avinstallera program som behövs i prestandan av deras uppgifter eller möjlighet att tillfälligt inaktivera säkerhetsfunktioner för enheter. Om den här aktiviteten är oavsiktlig, oavsiktlig eller skadlig kan det här uppförandet utgöra en risk för organisationen och det är viktigt att identifiera och agera för att minimera. För att identiteten ska kunna identiteten för dessa riskfyllda säkerhetsaktiviteter betygsöker följande mallar för säkerhetspolicyn för Insider-riskhantering säkerhetsindikatorer och använder Microsoft Defender för slutpunktsaviseringar för att ge insikter om säkerhetsrelaterade aktiviteter:
 
-- [Allmänna brott mot säkerhetsprinciper (förhandsversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [Brott mot säkerhetsprinciper genom avgående användare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
-- [Brott mot säkerhetsprinciper för användare med prioritet (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Brott mot säkerhetsprinciper för användare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Överträdelse av allmän säkerhetsprincip (förhandsversion)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [Överträdelser av säkerhetsprinciper av användare som slutar (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
+- [Överträdelser av säkerhetsprincip efter prioritetsanvändare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
+- [Överträdelse av säkerhetsprincip av en missnöjd användare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
 ## <a name="policies-for-users-based-on-position-access-level-or-risk-history-preview"></a>Principer för användare baserat på position, åtkomstnivå eller riskhistorik (förhandsversion)
 
 Användare i organisationen kan ha olika nivåer av risker beroende på deras position, åtkomstnivå till känslig information eller riskhistorik. Strukturen kan omfatta medlemmar i organisationens ledningsteam, IT-administratörer som har omfattande data- och nätverksåtkomstbehörigheter eller användare med en tidigare historik över riskfyllda aktiviteter. Under dessa omständigheter är det viktigt med närmare kontroll och mer aggressiva riskbedömningar för att underlätta surface-varningar för undersökning och snabb åtgärd. För att identifiera riskfyllda aktiviteter för dessa typer av användare kan du skapa prioriterade användargrupper och skapa principer från följande principmallar:
 
-- [Brott mot säkerhetsprinciper för användare med prioritet (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
-- [Dataläsar efter prioriterade användare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
+- [Överträdelser av säkerhetsprincip efter prioritetsanvändare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
+- [Dataläckor av prioritetsanvändare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
 ## <a name="actions-and-behaviors-by-disgruntled-users-preview"></a>Åtgärder och beteenden av missnöjda användare (förhandsversion)
 
 Anställningshändelser kan påverka användarbeteendet på flera olika sätt som är relaterade till Insider-risker. Sådana stressfaktorer kan vara en dålig prestandagranskning, en position nedgradering eller användaren som placerar sig på en plan för prestandagranskning. Även om de flesta användare inte svarar på skadliga händelser kan stressen hos dessa åtgärder resultera i att vissa användare inte tänker på åtgärder som de normalt sett inte överväger under normala omständigheter. För att hjälpa till att identiteten av dessa typer av riskfyllda aktiviteter använder följande mallar för insider-riskhanteringspolicyn Microsoft 365 HR-kopplingen och börjar poänga riskindikatorer som relaterar till beteenden som kan uppstå nära stress eller händelser för anställningsstress:
 
-- [Dataläckor av missnöjda användare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-- [Brott mot säkerhetsprinciper för användare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
+- [Dataläckor av missnöjd användare (förhandsversion)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
+- [Överträdelse av säkerhetsprincip av en missnöjd användare (förhandsversion)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
 
 ## <a name="ready-to-get-started"></a>Är du redo att börja?
 

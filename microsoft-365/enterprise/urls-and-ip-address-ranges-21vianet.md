@@ -19,7 +19,7 @@ ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 ms.custom: seo-marvel-apr2020
 f1.keywords:
 - NOCSH
-description: Den här artikeln innehåller URL:er och IP-adressintervall för Office 365 när det drivs av 21Vianet i Kina.
+description: Den här artikeln innehåller URL:er och IP-adressintervall för Office 365 som drivs av 21Vianet i Kina.
 hideEdit: true
 ms.openlocfilehash: ed9b6fdbef1ca121ccf53b635768ebdaab89763a
 ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
@@ -34,7 +34,7 @@ ms.locfileid: "51418055"
 
 **Sammanfattning:** Följande slutpunkter (FQDN, portar, URL-adresser, IPv4- och IPv6-prefix) gäller för Office 365 som drivs av 21 Vianet och är utformade för att tillhandahålla produktivitetstjänster till organisationer som bara använder de här abonnemangen.
   
- **Office 365-slutpunkter:** Globalt [(inklusive GCC)](urls-and-ip-address-ranges.md)Office 365 som drivs av   |  *21 Vianet*  |  [Office 365 Germany](microsoft-365-germany-endpoints.md)Office  |  [365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md)Office  |  [365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
+ **Office 365 slutpunkter:** Globalt [(inklusive GCC)](urls-and-ip-address-ranges.md)Office 365 som drivs av   |  *21 Vianet*  |  [Office 365 Germany](microsoft-365-germany-endpoints.md)Office 365  |  [U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md)Office 365  |  [U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|

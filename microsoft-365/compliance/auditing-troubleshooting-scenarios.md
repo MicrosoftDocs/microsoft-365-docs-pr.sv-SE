@@ -43,7 +43,7 @@ Alla felsökningsscenarier som beskrivs i den här artikeln baseras på användn
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Behörigheter som krävs för att använda verktyget för granskningsloggsökning
 
-Du måste ha tilldelats rollen View-Only granskningsloggar eller granskningsloggar i Exchange Online kunna söka i granskningsloggen. Som standard tilldelas de här rollerna till rollgrupperna  Efterlevnadshantering och Organisationshantering på sidan Behörigheter Exchange administrationscentret. Globala administratörer i Office 365 och Microsoft 365 läggs automatiskt till som medlemmar i rollgruppen Organisationshantering i Exchange Online. Mer information finns i [Hantera rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
+Du måste ha tilldelats rollen View-Only granskningsloggar eller granskningsloggar i Exchange Online kunna söka i granskningsloggen. Som standard tilldelas de här rollerna till rollgrupperna Efterlevnadshantering och Organisationshantering på sidan **Behörigheter** i administrationscentret för Exchange. Globala administratörer i Office 365 och Microsoft 365 läggs automatiskt till som medlemmar i rollgruppen Organisationshantering i Exchange Online. Mer information finns i [Hantera rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 
 ### <a name="running-audit-log-searches"></a>Köra granskningsloggsökningar
 
@@ -51,7 +51,7 @@ I det här avsnittet beskrivs grunderna för att skapa och köra granskningslogg
 
 1. Gå till [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) och logga in med ditt arbets- eller skolkonto.
     
-    Sidan **Granskningsloggsökning** visas. 
+    Sidan **Sökning i granskningslogg** visas. 
     
     ![Konfigurera villkor och välj sedan Sök för att köra sökningen](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
   
@@ -59,11 +59,11 @@ I det här avsnittet beskrivs grunderna för att skapa och köra granskningslogg
     
     a. **Aktiviteter:** Välj listrutan för att visa de aktiviteter som du kan söka efter. När du har kört sökningen visas bara granskningsposterna för de markerade aktiviteterna. Om **du markerar Visa resultat för alla** aktiviteter visas resultat för alla aktiviteter som uppfyller de andra sökvillkoren. Du måste också lämna fältet tomt i vissa felsökningsscenarier.
     
-    b. **Startdatum och** **Slutdatum: Välj ett** datum- och tidsintervall för att visa händelser som inträffat inom den perioden. De senaste sju dagarna är valda som standard. Datum och tid presenteras i UTC-format (Coordinated Universal Time). Det maximala datumintervall du kan ange är 90 dagar.
+    b. **Startdatum och** **Slutdatum: Välj ett** datum- och tidsintervall för att visa händelser som inträffat inom den perioden. De senaste sju dagarna är valda som standard. Datum och tid presenteras i UTC-format (Coordinated Universal Time). Det maximala datumintervall som du kan ange är 90 dagar.
 
     c. **Användare:** Klicka i den här rutan och välj sedan en eller flera användare som du vill visa sökresultat för. Granskningsposter för den valda aktiviteten som utförts av de användare du väljer i den här rutan visas i resultatlistan. Lämna rutan tom för att returnera poster för alla användare (och tjänstkonton) i organisationen.
     
-    d. **Fil, mapp eller webbplats:** Skriv en del av eller hela fil- eller mappnamnet för att söka efter aktivitet relaterad till filen i mappen som innehåller det angivna nyckelordet. Du kan också ange URL-adressen till en fil eller mapp. Om du använder en URL-adress måste du se till att skriva den fullständiga URL-sökvägen eller, om du bara skriver en del av URL-adressen, inte innehåller några specialtecken eller blanksteg. Lämna rutan tom för att returnera poster för alla filer och mappar i organisationen. Det här fältet är tomt i alla felsökningsscenarier i den här artikeln.
+    d. **Fil, mapp eller webbplats:** Skriv en del av eller hela fil- eller mappnamnet för att söka efter aktivitet relaterad till filen i mappen som innehåller det angivna nyckelordet. Du kan också ange en URL-adress till en fil eller mapp. Om du använder en URL-adress måste du se till att skriva den fullständiga URL-sökvägen eller, om du bara skriver en del av URL-adressen, inte innehåller några specialtecken eller blanksteg. Lämna rutan tom för att returnera poster för alla filer eller mappar i organisationen. Det här fältet är tomt i alla felsökningsscenarier i den här artikeln.
     
 5. Välj **Sök** för att köra sökningen med dina sökvillkor. 
     
@@ -73,7 +73,7 @@ I det här avsnittet beskrivs grunderna för att skapa och köra granskningslogg
 
     - [Visa sökresultat](search-the-audit-log-in-security-and-compliance.md#step-2-view-the-search-results)
     - [Filtrera sökresultat](search-the-audit-log-in-security-and-compliance.md#step-3-filter-the-search-results)
-    - [Exportera sökresultat](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)
+    - [Exportera sökresultaten](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)
 
 ## <a name="find-the-ip-address-of-the-computer-used-to-access-a-compromised-account"></a>Hitta IP-adressen för datorn som används för att komma åt ett komprometterat konto
 
@@ -239,7 +239,7 @@ Här är två exempelscenarier som skulle resultera i en framgångsrik användar
 
     Utöver de  användarloggade aktiviteterna kan andra granskningsposter returneras, sådana som anger att en användare i organisationen delade resurser med den externa användaren och om den externa användaren kom åt, ändrade eller hämtade ett dokument som delades med dem.
 
-- Sök efter SharePoint delade aktiviteter som anger att en fil delades med den externa användare som identifieras av en användare **som loggade in i** granskningsposten. Mer information finns i Använda [delningsgranskning i granskningsloggen](use-sharing-auditing.md).
+- Sök efter SharePoint delade aktiviteter som anger att en fil delades med den externa användare som identifieras av en användare **som loggade in i** granskningsposten. Mer information finns i [Använda delningsgranskning i granskningsloggen](use-sharing-auditing.md).
 
 - Exportera granskningsloggens sökresultat som innehåller poster som är relevanta för din undersökning så att du kan Excel söka efter andra aktiviteter som är relaterade till den externa användaren. Mer information finns i [Exportera, konfigurera och visa granskningsloggposter.](export-view-audit-log-records.md)
 

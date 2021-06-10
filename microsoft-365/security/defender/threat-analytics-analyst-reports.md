@@ -73,21 +73,21 @@ Förutom de här spårade minskningarna tar analysrapporten även upp åtgärder
 Även om du kan använda **fliken** Minskningar för att bedöma din säkerhetsbegränsning mot ett hot, kan du med hjälp av de här rekommendationerna vidta ytterligare åtgärder för att förbättra säkerheten. Läs noggrant alla minskningsvägledning i analytikerrapporten och använd dem när det är möjligt.
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Förstå hur varje hot kan identifieras
-Analysrapporten innehåller även funktioner för identifieringar från Microsoft Defender för endpoint antivirus och _slutpunktsidentifiering_ och svar (EDR).
+Analysrapporten innehåller även funktioner för identifieringar från Microsoft Defender för Endpoint antivirus _identifiering och åtgärd på slutpunkt_ (Identifiering och åtgärd på slutpunkt).
 
 ### <a name="antivirus-detections"></a>Antivirusidentifiering
-De här identifieringarna är tillgängliga på enheter [med Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) aktiverat. När de här identifieringarna inträffar på enheter som har introducerats till Microsoft Defender för Endpoint utlöser de även aviseringar som tar upp diagrammen i rapporten.
+Dessa identifieringar är tillgängliga på enheter [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) är påslagna. När de här identifieringarna inträffar på enheter som har introducerats till Microsoft Defender för Endpoint utlöser de även aviseringar som tar upp diagrammen i rapporten.
 
 >[!NOTE]
 >Analytikerrapporten visar även **allmänna** identifieringar som kan identifiera en mängd olika hot, utöver komponenter eller beteenden som är specifika för de spårade hoten. Dessa allmänna identifieringar återspeglas inte i diagrammen.
 
-### <a name="endpoint-detection-and-response-edr-alerts"></a>Slutpunktsidentifiering och svarsaviseringar (EDR)
-EDR-aviseringar upphöjs [för enheter som är onboarded till Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). Dessa varningar förlitar sig vanligtvis på säkerhetssignaler som samlas in av Microsoft Defender för Endpoint-sensoren och andra slutpunktsfunktioner – till exempel antivirus, nätverksskydd, manipuleringsskydd – som fungerar som kraftfulla signalkällor.
+### <a name="endpoint-detection-and-response-edr-alerts"></a>Aviseringar om identifiering av slutpunkt och svar (Identifiering och åtgärd på slutpunkt)
+Identifiering och åtgärd på slutpunkt upphöjs för [enheter som är onboarded till Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). Dessa varningar förlitar sig vanligtvis på säkerhetssignaler som samlas in av Microsoft Defender för Endpoint-sensoren och andra slutpunktsfunktioner – till exempel antivirus, nätverksskydd, manipuleringsskydd – som fungerar som kraftfulla signalkällor.
 
-Liksom listan med antivirusidentifieringar är vissa EDR-aviseringar utformade för att generellt flagga misstänkt beteende som kanske inte är kopplat till det spårade hotet. I sådana fall identifierar rapporten tydligt varningen som "allmän" och att den inte påverkar något av diagrammen i rapporten.
+Precis som listan med antivirusidentifieringar är vissa Identifiering och åtgärd på slutpunkt är utformade för att generellt flagga misstänkt beteende som kanske inte är kopplat till det spårade hotet. I sådana fall identifierar rapporten tydligt varningen som "allmän" och att den inte påverkar något av diagrammen i rapporten.
 
 ### <a name="email-related-detections-and-mitigations"></a>E-postrelaterade identifieringar och åtgärder
-E-postrelaterade identifieringar och åtgärder från Microsoft Defender för Office 365 ingår i analytiker utöver de slutpunktsdata som redan är tillgängliga från Microsoft Defender för Slutpunkt. 
+E-postrelaterade identifieringar och åtgärder från Microsoft Defender för Office 365 ingår i analytiker utöver de slutpunktsdata som redan är tillgängliga från Microsoft Defender för Endpoint. 
 
 Information om förhindrade e-postförsök ger dig insikter om huruvida din organisation var ett mål för de hot som har hanterats i analytikerrapporten även om attacken har blockerats effektivt innan den levereras eller levereras till skräppostmappen.
 
@@ -100,7 +100,7 @@ Avancerade sökfrågor i analytikernas rapporter har kontrollerats av Microsoft-
 
 
 >[!NOTE]
-> Hotanalyser finns också tillgängliga i [Microsoft Defender för Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Men det har inte dataintegreringen mellan Microsoft Defender för Office och Microsoft Defender för Slutpunkt som Microsoft 365 Defender hotanalyser har.
+> Hotanalyser finns också tillgängliga i [Microsoft Defender för Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Men dataintegreringen mellan Microsoft Defender för Office och Microsoft Defender för slutpunkten som Microsoft 365 Defender-hotanalyser har.
 
 
 ## <a name="related-topics"></a>Relaterade ämnen

@@ -50,7 +50,7 @@ Microsoft 365 funktioner för riskskydd är utformade och inbyggda i våra Insid
 
 Använd dessa Microsoft 365 funktioner för att skydda din organisation mot insiderrisker.
 
-### <a name="communication-compliance"></a>Efterlevnad av kommunikation
+### <a name="communication-compliance"></a>Kommunikationsefterlevnad
 
 Kommunikationsefterlevnad bidrar till att minimera kommunikationsriskerna genom att hjälpa dig att upptäcka, fånga och agera på olämpliga meddelanden i organisationen. Kommunikationsefterlevnad är tillgängligt i följande prenumerationer:
 
@@ -65,7 +65,7 @@ Kommunikationsefterlevnad bidrar till att minimera kommunikationsriskerna genom 
 - Microsoft 365 G5-prenumeration + Microsoft 365 G5 Insider Risk Management-tillägget
 - Office 365 Enterprise E5-prenumeration (betald eller utvärderingsversion)
 - Office 365 A5 prenumeration (betald version eller utvärderingsversion)
-- Office 365 Enterprise E3-prenumeration + Office 365 Advanced Compliance-tillägget (inte längre tillgängligt för nya prenumerationer)
+- Office 365 Enterprise, E3-abonnemang + Office 365 Advanced Compliance-tillägg (inte längre tillgängligt för nya abonnemang)
 
 ### <a name="insider-risk-management"></a>Hantering av insiderrisk
 
@@ -100,7 +100,7 @@ Informationsbarriärer är tillgängliga i följande prenumerationer:
 - Microsoft 365 A3-prenumeration + Microsoft 365 A5-tillägget efterlevnad
 - Microsoft 365 En 3-prenumeration + Microsoft 365 A5 Insider Risk Management-tillägget
 
-### <a name="privileged-access-management"></a>Privilegierad åtkomsthantering
+### <a name="privileged-access-management"></a>Privileged Access Management
 
 Med hantering av behörighetsbehörigheter får du detaljerad åtkomstkontroll över Exchange Online och administratörsuppgifter i Office 365. Det kan skydda organisationen från överträdelser som använder befintliga administratörskonton för privilegierad behörighet med stående åtkomst till känsliga data eller åtkomst till viktiga konfigurationsinställningar.
 
@@ -132,7 +132,7 @@ Som hjälp när du planerar en integrerad strategi för att implementera Microso
 
 | Objekt | Beskrivning |
 |:-----|:------------|
-|[![Modellaffisch: Microsoft 365 illustrationer för informationsskydd och efterlevnadsfunktioner](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Ladda ned som PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| [Ladda ned som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Uppdaterades oktober 2020|Innehåller: <ul><li>  Microsoft Informationsskydd och dataförlustskydd </li><li>Kvarhållningsprinciper och -etiketter </li><li>Informationsbarriärer</li><li>Kommunikationsefterlevnad</li><li>Hantering av insiderrisk</li><li>Datainmatning för tredje part</li>|
+|[![Modellaffisch: Microsoft 365 illustrationer för informationsskydd och efterlevnadsfunktioner](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Ladda ned som PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [Hämta som Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Uppdaterades: Oktober 2020|Innehåller: <ul><li>  Microsoft Informationsskydd och dataförlustskydd </li><li>Kvarhållningsprinciper och -etiketter </li><li>Informationsbarriärer</li><li>Kommunikationsefterlevnad</li><li>Hantering av insiderrisk</li><li>Datainmatning för tredje part</li>|
 
 ## <a name="training"></a>Utbildning
 
@@ -143,7 +143,7 @@ Microsoft 365 följande resurser för att hjälpa till att informera och utbilda
 | Lösning/område | Resurser |
 |:------------------|:--------------|
 | Hantera insiderrisker i Microsoft 365 |[Fullständig utbildningsväg](/learn/paths/m365-compliance-insider) <br> Den här utbildningsvägen innehåller alla enskilda lösningsmoduler för kommunikationsefterlevnad, insider-riskhantering, informationsbarriärer och hantering av privilegierad åtkomst. Välj den här utbildningsvägen för att slutföra alla moduler. |
-| Efterlevnad av kommunikation | [Utbildningsmodul: Förbereda kommunikationsefterlevnad i Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> I den här modulen får du lära dig grunderna om hur du identifierar och åtgärdar regelbrott mot kommunikationsefterlevnad, täcker de krav som krävs innan principer för kommunikationsefterlevnad skapas och lär dig mer om typerna av inbyggda, fördefinierade principmallar i kommunikationsefterlevnad. |
+| Kommunikationsefterlevnad | [Utbildningsmodul: Förbereda kommunikationsefterlevnad i Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> I den här modulen får du lära dig grunderna om hur du identifierar och åtgärdar regelbrott mot kommunikationsefterlevnad, täcker de krav som krävs innan principer för kommunikationsefterlevnad skapas och lär dig mer om typerna av inbyggda, fördefinierade principmallar i kommunikationsefterlevnad. |
 | Hantering av insiderrisk | [Utbildningsmodul: Insider-riskhantering i Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Den här modulen hjälper dig att lära dig hur insider-riskhantering i Microsoft 365 kan förhindra, upptäcka och begränsa interna risker i en organisation, lära dig mer om olika typer av inbyggda, fördefinierade principmallar, förstå de grundläggande förutsättningar som krävs innan du skapar principer för Insider-risker och förklarar vilka typer av åtgärder du kan vidta för insider-riskhanteringsärenden. |
 | Informationsbarriärer | [Utbildningsmodul: Planera för informationsbarriärer](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Den här modulen hjälper dig att lära dig hur informationsbarriärprinciper kan hjälpa din organisation att följa relevanta branschstandarder och bestämmelser, lista olika typer av situationer när informationsbarriärer kan vara tillämpliga, hjälpa till att förklara processen att skapa en princip för informationsbarriärer och förklarar hur du felsöker oväntade problem när informationsbarriärer finns. |
-| Privilegierad åtkomsthantering | [Utbildningsmodul: Implementera hantering av privilegierad åtkomst](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Den här modulen hjälper dig att förstå skillnaden mellan hantering av privilegierad åtkomst och hantering av privilegierad identitet, förstå processflödet för behörighetshantering och förstå grunderna i hur du konfigurerar och aktiverar hantering av privilegierad åtkomst. |
+| Privileged Access Management | [Utbildningsmodul: Implementera hantering av privilegierad åtkomst](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Den här modulen hjälper dig att förstå skillnaden mellan hantering av privilegierad åtkomst och hantering av privilegierad identitet, förstå processflödet för behörighetshantering och förstå grunderna i hur du konfigurerar och aktiverar hantering av privilegierad åtkomst. |

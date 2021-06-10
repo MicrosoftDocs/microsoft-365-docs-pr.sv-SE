@@ -33,12 +33,12 @@ ms.locfileid: "51398211"
 ---
 # <a name="set-up-multifactor-authentication"></a>Konfigurera multifaktorautentisering
 
-Multifaktorautentisering ger större säkerhet för ditt företag. När administratören har kräver att du använder MFA kan du konfigurera appen Microsoft Authenticator så att du kan logga in på viktiga appar säkert med telefonen. 
+Multifaktorautentisering ger större säkerhet för ditt företag. När din administratör har kräver att du använder MFA kan du konfigurera Microsoft Authenticator-appen så att du kan logga in på viktiga appar på ett säkert sätt med telefonen. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
 Mer information finns [i Konfigurera multifaktorautentisering i Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
-## <a name="use-the-outlook-app-in-your-devices"></a>Använda Outlook-appen på dina enheter
+## <a name="use-the-outlook-app-in-your-devices"></a>Använda Outlook på dina enheter
 
-När administratören har kräver att du använder MFA och du har skapat en autentiseringsapp som en andra form av autentisering rekommenderar vi att du installerar och bara använder Outlook-appen för att få åtkomst till din e-post från Microsoft 365. Se [Konfigurera mobila enheter för](../business/set-up-mobile-devices.md) att installera Office-appar, till exempel Outlook, på din telefon.
+När administratören har kräver att du använder MFA och du har skapat en autentiseringsapp som en andra form av autentisering rekommenderar vi att du installerar och bara använder Outlook-appen för att komma åt din e-Microsoft 365 post. Se [Konfigurera mobila enheter för](../business/set-up-mobile-devices.md) installation av Office, till exempel Outlook, på din telefon.

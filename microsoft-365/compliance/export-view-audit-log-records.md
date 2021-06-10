@@ -48,7 +48,7 @@ Det första steget är att söka i granskningsloggen och sedan exportera resulta
    ![Meddelande som visas när CSV-filen har laddats ned](../media/ExportAuditSearchResultsFinish.png)
 
 > [!NOTE]
-  > Du kan ladda ned högst 50 000 poster till en CSV-fil från en enskild granskningsloggsökning. Om 50 000 poster laddas ned till CSV-filen kan du antagligen förutsätta att det finns fler än 50 000 händelser som uppfyller sökvillkoren. Om du vill exportera fler poster än så kan du prova att använda ett datumintervall för att minska antalet granskningsloggposter. Du kan behöva köra flera sökningar med mindre datumintervall för att exportera fler än 50 000 poster.
+  > Du kan ladda ned högst 50 000 poster till en CSV-fil från en enstaka granskningsloggsökning. Om 50 000 poster laddas ned till CSV-filen kan du antagligen förutsätta att det finns fler än 50 000 händelser som uppfyller sökkriterierna. Om du vill exportera fler poster än så kan du prova att använda ett datumintervall för att minska antalet granskningsloggposter. Du kan behöva köra flera sökningar med mindre datumintervall för att exportera mer än 50 000 poster.
 
 ## <a name="step-2-format-the-exported-audit-log-using-the-power-query-editor"></a>Steg 2: Formatera den exporterade granskningsloggen med Power Query-redigeraren
 

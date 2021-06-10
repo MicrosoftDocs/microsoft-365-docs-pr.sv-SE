@@ -42,7 +42,7 @@ Titta på den här videon för en snabb sammanfattning av hur du skapar en utbil
 
 ## <a name="prerequisites"></a>Förutsättningar
 
-### <a name="licensing-requirements"></a>Licenskrav
+### <a name="licensing-requirements"></a>Licensieringskrav
 
 Klassificerare är en funktion Microsoft 365 E5 regelefterlevnad eller E5-efterlevnad. Du måste ha en av dessa prenumerationer för att kunna använda dem.
 

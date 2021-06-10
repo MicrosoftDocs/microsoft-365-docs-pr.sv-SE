@@ -1,5 +1,5 @@
 ---
-title: Konfigurera en princip för arkivering och borttagning för postlådor i organisationen
+title: Konfigurera en princip för arkivering och borttagning för postlådor i din organisation
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -28,7 +28,7 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "52162047"
 ---
-# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Konfigurera en princip för arkivering och borttagning för postlådor i organisationen
+# <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Konfigurera en princip för arkivering och borttagning för postlådor i din organisation
 
 I Microsoft 365 kan administratörer skapa en princip för arkivering och borttagning som automatiskt flyttar objekt till en användares arkivpostlåda och automatiskt tar bort objekt från postlådan. Administratören gör detta genom att skapa en bevarandeprincip som tilldelas till postlådor och flytta objekt till en användares arkivpostlåda efter en viss tidsperiod och som även tar bort objekt från postlådan när de har nått en viss åldersgräns. De faktiska reglerna som avgör vilka objekt som flyttas eller tas bort och när det händer kallas bevarandetaggar. Bevarandetaggar är kopplade till en bevarandeprincip som i sin tur tilldelas till en användares postlåda. En bevarandetagg tillämpar bevarandeinställningar på enskilda meddelanden och mappar i en användares postlåda. Den definierar hur länge ett meddelande finns kvar i postlådan och vilken åtgärd som vidtas när meddelandet uppnår angiven bevarandetid. När ett meddelande uppnår sin bevarandetid flyttas det antingen till användarens arkivpostlåda eller så tas det bort.
   
@@ -282,7 +282,7 @@ I steg 4 måste du tilldela den nya bevarandeprincipen till befintliga postlådo
 
 - Följande tabell innehåller mer information om varje bevarandetagg som läggs till i den anpassade bevarandeprincip som skapades genom att följa stegen i det här avsnittet.
 
-    | Bevarandetagg | Vad taggen gör | Inbyggd eller anpassad? | Skriv |
+    | Bevarandetagg | Vad taggen gör | Inbyggd eller anpassad? | Typ |
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 år Flytta till Arkiv  <br/> |Flyttar objekt som är 1 095 dagar (3 år) gamla till arkivpostlådan.  <br/> |Anpassad (se [Steg 2: Skapa nya bevarandetaggar för principer för arkivering och borttagning](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardprinciptagg (arkivering). Den här taggen tillämpas automatiskt på hela postlådan.  <br/> |
     |Alpine House 7 år Ta bort permanent  <br/> |Tar bort objekt permanent från den primära postlådan eller arkivpostlådan när de är 7 år gamla.  <br/> |Anpassad (se [Steg 2: Skapa nya bevarandetaggar för principer för arkivering och borttagning](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies))  <br/> |Standardprinciptagg (borttagning). Den här taggen tillämpas automatiskt på hela postlådan.  <br/> |

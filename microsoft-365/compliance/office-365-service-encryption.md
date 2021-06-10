@@ -47,7 +47,7 @@ En annan fördel med kundnyckel är den kontroll du har över möjligheten för 
 
 Mer information om hur du ställr in kundnyckel för Microsoft 365 för Exchange Online, Microsoft Teams, SharePoint Online, inklusive gruppwebbplatser och OneDrive för företag, finns i följande artiklar:
 
-- [Tjänstkryptering med kundnyckel](customer-key-overview.md)
+- [Tjänst kryptering med kundnyckel](customer-key-overview.md)
 
 - [Konfigurera kundnyckel](customer-key-set-up.md)
 

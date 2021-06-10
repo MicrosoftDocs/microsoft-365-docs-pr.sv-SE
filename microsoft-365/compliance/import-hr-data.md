@@ -35,7 +35,7 @@ Konfigurera en koppling för HR-data som insiders riskhanteringsprinciper kan an
 
 - Den användare som skapar HR-kopplingen i steg 3 måste tilldelas rollen Importera och exportera postlåda i Exchange Online. Som standard är den här rollen inte tilldelad någon rollgrupp i Exchange Online. Du kan lägga till rollen Importera och exportera postlåda i rollgruppen Organisationshantering i Exchange Online. Du kan också skapa en ny rollgrupp, tilldela rollen Importera och exportera postlåda och sedan lägga till lämpliga användare som medlemmar. Mer information finns i avsnitten [Skapa rollgrupper](/Exchange/permissions-exo/role-groups#create-role-groups) och [Ändra rollgrupper](/Exchange/permissions-exo/role-groups#modify-role-groups) i artikeln "Hantera rollgrupper i Exchange Online".
 
-- Exempelskriptet som du kör i steg 4 laddar upp dina HR-data till Microsoft-molnet så att de kan användas av Insider-riskhanteringslösningen. Det här exempelskriptet stöds inte under något standardsupportprogram eller någon standardsupporttjänst från Microsoft. Exempelskriptet tillhandahålls i SIN FORM utan några som helst garantier. Vidare frånsäger sig Microsoft alla underförstådda garantier, inklusive, utan begränsning, alla underförstådda garantier om säljbarhet eller lämplighet för ett visst ändamål. Hela risken i samband med användningen av eller prestandan hos exempelskriptet och dokumentationen ligger kvar hos dig. Under inga omständigheter ska Microsoft, dess upphovspersoner eller någon annan som är involverad i skapandet, produktionen eller leveransen av skripten hållas ansvariga för någon som helst skada (inklusive, men inte begränsat till, skador för vinstförlust, driftavbrott, förlust av affärsinformation eller annan ekonomisk skada) som uppstår till följd av användning eller oförmåga att använda exempelskripten eller dokumentationen, även om Microsoft har fått information om att sådana skador kan uppstå.
+- Exempelskriptet som du kör i steg 4 laddar upp dina HR-data till Microsoft-molnet så att de kan användas av Insider-riskhanteringslösningen. Det här exempelskriptet stöds inte under något standardsupportprogram eller någon standardsupporttjänst från Microsoft. Exempelskriptet ges i befintligt skick utan garantier av något slag. Vidare frånsäger sig Microsoft alla underförstådda garantier, inklusive, men inte begränsat till, underförstådda garantier om säljbarhet eller lämplighet för ett visst ändamål. Hela risken i samband med användningen av eller prestandan hos exempelskriptet och dokumentationen vilar på dig. Under inga omständigheter ska Microsoft, dess upphovspersoner eller någon annan som är involverad i skapandet, produktionen eller leveransen av skripten hållas ansvariga för någon som helst skada (inklusive, men inte begränsat till, skador avseende utebliven vinst, driftavbrott, förlust av affärsinformation eller annan ekonomisk skada) som uppstår till följd av användning eller svårighet eller omöjlighet att använda exempelskripten eller dokumentationen, även om Microsoft har fått information om att sådana skador kan uppstå.
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Steg 1: Förbereda en CSV-fil med dina HR-data
 
@@ -53,14 +53,14 @@ Vilken typ av HR-data som ska importeras beror på Insider-riskhanteringspolicyn
 
 |  Principmall |  HR-datatyp |
 |:-----------------------------------------------|:---------------------------------------------------------------------|
-| Datastöld genom avgående användare                   | Medarbetares medarbetare                                                 |
+| Datastöld från slutande användare                   | Medarbetares medarbetare                                                 |
 | Allmänna dataläckor                              | Ej tillämpligt                                                        |
-| Dataläckor efter prioriterade användare                    | Ej tillämpligt                                                        |
-| Dataläckor av missnöjda användare                 | Ändringar på jobbnivå, resultatgranskningar, planer för prestandaförbättringar |
-| Allmänna brott mot säkerhetsprinciper              | Ej tillämpligt                                                        |
-| Brott mot säkerhetsprinciper av avgående användare   | Medarbetares medarbetare                                                 |
-| Brott mot säkerhetsprinciper efter prioritetsanvändare    | Ej tillämpligt                                                        |
-| Brott mot säkerhetsprinciper av misslygda användare | Ändringar på jobbnivå, resultatgranskningar, planer för prestandaförbättringar |
+| Dataläckor av prioritetsanvändare                    | Ej tillämpligt                                                        |
+| Dataläckage av missnöjda användare                 | Ändringar på jobbnivå, resultatgranskningar, planer för prestandaförbättringar |
+| Överträdelser av allmän säkerhetsprincip              | Ej tillämpligt                                                        |
+| Överträdelser av säkerhetsprincip av användare som slutar   | Medarbetares medarbetare                                                 |
+| Överträdelser av säkerhetsprincip av prioritetsanvändare    | Ej tillämpligt                                                        |
+| Överträdelse av säkerhetsprincip av en missnöjd användare | Ändringar på jobbnivå, resultatgranskningar, planer för prestandaförbättringar |
 | Anstötligt språk i e-post                     | Ej tillämpligt                                                        |
 
 Mer information om policymallar för Insider-riskhantering finns i [Insider-riskhanteringsprinciper.](insider-risk-management-policies.md#policy-templates)

@@ -42,7 +42,7 @@ Mer information [finns i](#more-information) avsnittet Mer information i den hä
 
 ## <a name="requirements-to-restore-an-inactive-mailbox"></a>Krav för att återställa en inaktiv postlåda
 
-- Du måste använda Exchange Online PowerShell för att återställa en inaktiv postlåda. Du kan inte använda Exchange (EAC). Stegvisa instruktioner finns i Skapa [Anslut-Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+- Du måste använda Exchange Online PowerShell för att återställa en inaktiv postlåda. Du kan inte använda Exchange (EAC). Stegvisa anvisningar finns i [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Kör följande kommando i Exchange Online PowerShell för att få identitetsinformation för inaktiva postlådor i organisationen.
 

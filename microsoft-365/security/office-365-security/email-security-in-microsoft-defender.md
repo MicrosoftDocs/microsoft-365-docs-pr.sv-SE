@@ -16,12 +16,12 @@ description: Visa och undersöka försök till nätfiske efter skadlig kod.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2a6d3d10cfa21c0ad2da948bff130cb9336ebd8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f0326a51f14b402b9a579e8668ef2c026f9de789
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297633"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877902"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>E-postsäkerhet med Threat Explorer i Microsoft Defender för Office 365
 
@@ -45,7 +45,9 @@ I den här artikeln förklarar vi hur du visar och undersöker skadlig kod och n
 
 Om du vill se skadlig programvara som upptäckts [](threat-explorer-views.md#email--malware) i e-Microsoft 365 efter teknik använder du vyn E> program för skadlig programvara i Utforskaren (eller identifieringar i realtid). Skadlig programvara är standardvyn, så den kan väljas så fort du öppnar Utforskaren.
 
-1. I Säkerhets- & (), <https://protection.office.com> väljer du **Utforskaren för hantering** av hot \>  **(eller identifieringar i realtid).** (I det här exemplet används Utforskaren.) Om du är i det konvergerade säkerhetscentret Microsoft 365 (bläddra https://security.microsoft.com/) till Skicka e-& **för samarbete i**  >  **Utforskaren.**
+1. I Säkerhets- & (), <https://protection.office.com> väljer du **Utforskaren för hantering** av hot \>  **(eller identifieringar i realtid).** (I det här exemplet används Utforskaren.)
+
+   Om du är i den konvergerade Microsoft 365 Defender-portalen <https://security.microsoft.com> () bläddrar du till **E-& för samarbete**  >  **i Utforskaren.**
 
    Härifrån börjar du med visa, väljer en viss tidsperiod att undersöka (om det behövs) och fokuserar dina filter, enligt [Utforskarens genomgång.](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)
 
