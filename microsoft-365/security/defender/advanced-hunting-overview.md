@@ -46,7 +46,7 @@ Avancerad sökning är ett frågebaserat verktyg för hothot där du kan utforsk
 
 Du kan använda samma hotsökningsfrågor för att skapa anpassade identifieringsregler. Dessa regler körs automatiskt för att kontrollera och sedan svara på misstänkt intrång, felkonfigurerade datorer och andra resultat.
 
-Den här funktionen liknar avancerad sökning [i Microsoft Defender för Slutpunkt.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) Den här funktionen finns tillgänglig i Microsoft 365 Säkerhetscenter och stöder frågor som kontrollerar en bredare datauppsättning från:
+Den här funktionen liknar avancerad sökning [i Microsoft Defender för Slutpunkt.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) Den här funktionen Microsoft 365 tillgänglig i säkerhetscentret och stöder frågor som kontrollerar en bredare datauppsättning från:
 
 - Microsoft Defender för Endpoint
 - Microsoft Defender för Office 365
@@ -69,9 +69,9 @@ Vi rekommenderar att du går igenom flera steg för att snabbt komma igång med 
 | **Skapa anpassade identifieringsregler** | Förstå hur du kan använda avancerade sökfrågor för att utlösa aviseringar och vidta svarsåtgärder automatiskt. | - [Översikt över anpassade identifieringar](custom-detections-overview.md) <br />- [Anpassade identifieringsregler](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Få åtkomst
-Om du vill använda avancerad sökning [eller andra Microsoft 365 Defender-funktioner](microsoft-365-defender.md) måste du ha rätt roll i Azure Active Directory. [Här kan du läsa om de roller och behörigheter som krävs för avancerad sökning.](custom-roles.md)
+Om du vill använda avancerad [Microsoft 365 eller andra sökfunktioner](microsoft-365-defender.md) för Defender måste du ha rätt roll i Azure Active Directory. [Här kan du läsa om de roller och behörigheter som krävs för avancerad sökning.](custom-roles.md)
 
-Åtkomsten till slutpunktsdata avgörs också av rollbaserad åtkomstkontroll (RBAC) i Microsoft Defender för Slutpunkt. [Läs om hur du hanterar åtkomst till Microsoft 365 Defender.](m365d-permissions.md)
+Åtkomsten till slutpunktsdata avgörs också av rollbaserad åtkomstkontroll (RBAC) i Microsoft Defender för Slutpunkt. [Läs mer om hur du hanterar åtkomst Microsoft 365 Defender.](m365d-permissions.md)
 
 
 ## <a name="data-freshness-and-update-frequency"></a>Datauppdatering och uppdateringsfrekvens

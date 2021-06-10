@@ -49,7 +49,7 @@ Defender för Endpoint använder följande kombination av teknik som är inbyggd
 
 -   **Hotinformation:** Genereras av Microsoft-säkerhetsteam, säkerhetsteam och utökas av hotinformation som tillhandahålls av partner, och med hjälp av hotinformation kan Defender för Endpoint identifiera attackersverktyg, tekniker och procedurer, och generera aviseringar när de observeras i insamlade sensordata.
 
-<center><h2>Microsoft Defender för Slutpunkt</center></h2>
+<center><h2>Microsoft Defender för Endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Hot & sårbarhetshantering</b></center></a></td>

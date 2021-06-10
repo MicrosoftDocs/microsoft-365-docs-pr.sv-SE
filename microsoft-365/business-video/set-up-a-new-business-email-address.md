@@ -1,5 +1,5 @@
 ---
-title: Konfigurera en ny e-postadress för företag
+title: Konfigurera en ny e-postadress för företaget
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -28,13 +28,13 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/28/2021
 ms.locfileid: "52065189"
 ---
-# <a name="set-up-a-new-business-email-address"></a>Konfigurera en ny e-postadress för företag
+# <a name="set-up-a-new-business-email-address"></a>Konfigurera en ny e-postadress för företaget
 
 - [Konfigurera företags-e-post med en ny domän](#set-up-business-email-with-a-new-domain)
 
 - [Konfigurera företags-e-post med en befintlig domän](#set-up-business-email-with-an-existing-domain)
 
-När du anger Microsoft 365 för ditt företag kan du skapa en egen e-postadress som innehåller namnet på företaget. Det gör adressen lättare att komma ihåg, ger dig och dina anställda samma företags varumärke och ger större säkerhet i Microsoft Cloud. 
+När du konfigurera Microsoft 365 för företaget kan du skapa en egen e-postadress som innehåller namnet på företaget. Det gör adressen lättare att komma ihåg, ger dig och dina anställda samma företags varumärke och ger större säkerhet i Microsoft Cloud. 
 
 ## <a name="set-up-business-email-with-a-new-domain"></a>Konfigurera företags-e-post med en ny domän
 
@@ -42,7 +42,7 @@ När du anger Microsoft 365 för ditt företag kan du skapa en egen e-postadress
 
 Köp ett nytt domännamn för din e-postadress och konfigurera e-postadresserna med Microsoft 365. 
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
  
 1. Köp ett nytt domännamn för din e-postadress genom att ange kontaktinformation för det nya domännamnet, välja betalningsmetod och sedan lägga din order.
 1. Ändra den första delen av adressen (före @-tecknet) eller lämna den som den är. 
@@ -55,10 +55,10 @@ Köp ett nytt domännamn för din e-postadress och konfigurera e-postadresserna 
 
 Använd ett domännamn du redan äger, oavsett om du använder den för en webbadress eller en e-postadress hos en annan leverantör. 
 
-## <a name="try-it"></a>Prova!
+## <a name="try-it"></a>Prova själv!
  
 1. Logga in på webbplatsen som är värd för din domän. Klicka på en knapp för att verifiera automatiskt eller uppdatera domänen manuellt. 
 1. Anpassa e-postadressen eller lämna den som den är. 
 1. Logga ut från Microsoft 365 och logga sedan in igen med din nya e-postadress. De anställdas e-postadresser uppdateras med den nya domänen. 
 1. Dela de nya e-postadresserna med de anställda genom att exportera listan.
-1. Anslut din domän till Microsoft 365 genom att upprepa steg 1 ovan. 
+1. Anslut vill att domänen Microsoft 365 genom att upprepa steg 1 ovan. 

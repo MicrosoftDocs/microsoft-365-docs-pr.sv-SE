@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du importerar data från tredje part från plattformar för sociala medier, snabbmeddelandeplattformar och dokumentsamarbete till Microsoft 365 postlådor.
-ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: a51b298b934431a1be8a416dac1f831ddaca5ffe
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822159"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861209"
 ---
 # <a name="archive-third-party-data"></a>Arkivera data från tredje part
 
@@ -77,6 +77,7 @@ I följande tabell visas de datakopplingar från tredje part som är tillgängli
 |[Verizon Network <sup>1</sup>](archive-verizon-network-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Webbsidor <sup>2</sup>](archive-webpagecapture-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
+|[WeChat <sup>1</sup>](archive-wechat-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Arbetsplats från Facebook <sup>2</sup>](archive-workplacefromfacebook-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[XIP <sup>2</sup>](archive-xip-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
@@ -139,6 +140,7 @@ Som tidigare nämnts är dataanslutningar från TeleMessage tillgängliga i moln
 |O2 SMS och Voice Network Archiver | Ja         | Nej | Nej |
 |TELUS SMS Network Archiver | Ja | Nej | Nej |
 |Verizon SMS/MMS Network Archiver | Ja | Nej | Nej |
+|WeChat Archiver | Ja | Nej | Nej |
 |WhatsApp Archiver | Ja | Nej | Nej |
 |||||
 

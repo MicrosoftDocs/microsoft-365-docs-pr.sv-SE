@@ -4,6 +4,7 @@ keywords: Reglerad mappåtkomst, windows 10, windows defender, utpressningstroja
 description: Lär dig hur du skyddar viktiga filer genom att aktivera reglerad mappåtkomst
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1d09eaf04999478a0cd0b4907667a522a23fb39f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5a90a12457597fa38c648fd44bf194d2322a26af
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841984"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861231"
 ---
 # <a name="enable-controlled-folder-access"></a>Aktivera kontrollerad mappåtkomst
 
@@ -36,7 +37,7 @@ ms.locfileid: "52841984"
 Du kan aktivera reglerad mappåtkomst på något av följande sätt:
 
 * [Windows-säkerhet appen](#windows-security-app)
-* [Microsoft Intune](#intune)
+* [Microsoft Endpoint Manager](#endpoint-manager)
 * [Hantering av mobila enheter (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Grupprincip](#group-policy)
@@ -64,24 +65,30 @@ Mer information om hur du inaktiverar lokal list sammanslagning finns i Förhind
 > Om funktionen är inställd på **granskningsläge** med något av dessa verktyg Windows-säkerhet appen statusen **Av.**
 > Om du skyddar användarprofildata rekommenderar vi att användarprofilen ska finnas på standardplatsen Windows installationsenhet.
 
-## <a name="intune"></a>Intune
+## <a name="endpoint-manager"></a>Endpoint Manager
 
-1. Logga in på [Azure Portal och](https://portal.azure.com) öppna Intune.
+1. Logga in på [Endpoint Manager](https://endpoint.microsoft.com) öppna **Endpoint Security.**
 
-2. Gå till **Profiler för**  >  **enhetskonfiguration Skapa**  >  **profil**.
+2. Gå till **Attack Surface Reduction**  >  **Policy**.
 
-3. Namnge profilen, välj Windows 10 **senare och Slutpunktsskydd** .  <br/> ![Skapa profil för slutpunktsskydd](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. Välj **Plattform**, välj **Windows 10 senare och** sedan profilen Attack Surface Reduction **rules**  >  **Create**.
 
-4. Gå till **Konfigurera Windows Defender**  >  **för kontrollerad Exploit**  >  **Guard-mappåtkomst**  >  **Enable**.
+4.  Namnge principen och lägg till en beskrivning. Välj **Nästa**.
 
-5. Skriv sökvägen till varje program som har åtkomst till skyddade mappar och sökvägen till ytterligare mappar som behöver skyddas. Välj **Lägg till**.<br/> ![Aktivera kontrollerad mappåtkomst i Intune](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
+5.  Rulla ned till slutet, välj **listrutan Aktivera** mappskydd och välj **Aktivera**.
+
+6.  Välj **Lista över ytterligare mappar som måste skyddas och** lägg till de mappar som ska skyddas.
+
+7.  Välj **Lista över program som har åtkomst till skyddade mappar och** lägg till program som har åtkomst till skyddade mappar.
+
+8.  Välj **Exkludera filer och sökvägar från minskningsregler för attackytan** och lägg till de filer och sökvägar som ska undantas från reglerna för att minska attackytan.
+
+9.  Välj profile **Assignments**, assign to **All Users & Devices** och välj **Save**.
+
+10.  Välj **Nästa för** att spara alla öppna blad och sedan **Skapa**.
 
    > [!NOTE]
-   > Wilcard stöds för program, men inte för mappar. Undermappar är inte skyddade. Tillåtna appar fortsätter att utlösa händelser tills de startas om.
-
-6. Välj **OK för** att spara alla öppna blad och **Skapa**.
-
-7. Välj profilen Uppgifter **,** tilldela alla **användare till & enheter** och **Spara**.
+   > Jokertecken stöds för program, men inte för mappar. Undermappar är inte skyddade. Tillåtna appar fortsätter att utlösa händelser tills de startas om.
 
 ## <a name="mobile-device-management-mdm"></a>Hantering av mobila enheter (MDM)
 

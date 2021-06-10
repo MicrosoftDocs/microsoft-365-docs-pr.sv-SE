@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 7ade1ae1e045cb52f48d231acbc1712e753b6bc3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841852"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861185"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Registrera Windows 10-multisessionsenheter i det Windows Virtual Desktop 
 6 minuter att läsa 
@@ -148,3 +148,7 @@ Om du använder FSlogix-användarprofiler rekommenderar vi att du undantar följ
 
 Anmärkning om licensiering: När du använder Windows 10 Enterprise flera sessioner, beroende på dina krav, kan du välja att antingen ha alla användare licensierade via Microsoft Defender för slutpunkt (per användare), Windows Enterprise E5, Microsoft 365 Security eller Microsoft 365 E5, eller ha VM-licensen licensierad via Azure Defender.
 Licenskrav för Microsoft Defender för slutpunkt finns i: [Licenskrav](minimum-requirements.md#licensing-requirements).
+
+#### <a name="related-links"></a>Relaterade länkar
+
+[Lägga till undantag för Microsoft Defender med hjälp av PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)

@@ -91,7 +91,7 @@ MacOS-enheter med M1-processorer stöds inte.
 
 När du har aktiverat tjänsten kan du behöva konfigurera nätverket eller brandväggen för att tillåta utgående anslutningar mellan den och dina slutpunkter.
 
-### <a name="licensing-requirements"></a>Licenskrav
+### <a name="licensing-requirements"></a>Licensieringskrav
 
 Microsoft Defender för Slutpunkt på Mac kräver något av följande Microsoft volymlicensieringserbjudanden:
 

@@ -23,12 +23,12 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52300221"
 ---
-# <a name="threat-explorer-and-real-time-detections-basics"></a>Grundläggande om identifiering av hot i Utforskaren och i realtid
+# <a name="threat-explorer-and-real-time-detections-basics"></a>Grundläggande information för Hotutforskaren och Realtidsidentifieringar
 
 I den här artikeln:
 
 - [Skillnader mellan identifiering av hotutforskaren och realtidsidentifiering](#differences-between-threat-explorer-and-real-time-detections)<br/>
-- [Licenser och behörigheter som krävs](#required-licenses-and-permissions)
+- [Obligatoriska licenser och behörigheter](#required-licenses-and-permissions)
 
 > [!NOTE]
 > Det här är en del av en **3-artikelserie** om grunderna för identifiering av  **hotutforskaren (Explorer),** e-postsäkerhet och Utforskaren och **realtidsidentifiering** (till exempel skillnader mellan verktygen och behörigheter som krävs för att hantera dem). De andra två artiklarna i den här serien är [hot efter hotutforskaren](threat-hunting-in-threat-explorer.md) och [e-postsäkerhet med Threat Explorer.](email-security-in-microsoft-defender.md)
@@ -68,7 +68,7 @@ Mer information finns i [E-postsäkerhet med Hotutforskaren.](email-security-in-
 - Vyn *All e-post* är tillgänglig i Utforskaren med hot, men ingår inte i rapporten om identifieringar i realtid.
 - Filtreringsfunktioner och åtgärder för filtrering ingår i Utforskaren för hot. Mer information finns i [Microsoft Defender för Office 365 Beskrivning: Funktionstillgänglighet i Defender för Office 365 abonnemang.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
 
-## <a name="required-licenses-and-permissions"></a>Licenser och behörigheter som krävs
+## <a name="required-licenses-and-permissions"></a>Obligatoriska licenser och behörigheter
 
 Du måste ha [Microsoft Defender Office 365](defender-for-office-365.md) kunna använda Utforskaren eller identifieringar i realtid:
 
