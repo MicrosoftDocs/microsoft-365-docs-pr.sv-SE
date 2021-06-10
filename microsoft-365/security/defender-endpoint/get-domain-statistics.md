@@ -23,78 +23,78 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52772191"
 ---
-# <a name="get-domain-statistics-api"></a><span data-ttu-id="75727-104">Hämta API för domänstatistik</span><span class="sxs-lookup"><span data-stu-id="75727-104">Get domain statistics API</span></span>
+# <a name="get-domain-statistics-api"></a><span data-ttu-id="f8c23-104">Hämta API för domänstatistik</span><span class="sxs-lookup"><span data-stu-id="f8c23-104">Get domain statistics API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="75727-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="75727-105">**Applies to:**</span></span>
-- [<span data-ttu-id="75727-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="75727-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="75727-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="75727-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="f8c23-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="f8c23-105">**Applies to:**</span></span>
+- [<span data-ttu-id="f8c23-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="f8c23-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="f8c23-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f8c23-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="75727-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="75727-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="75727-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="75727-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="f8c23-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="f8c23-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f8c23-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="f8c23-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="75727-110">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="75727-110">API description</span></span>
-<span data-ttu-id="75727-111">Hämtar statistiken för den givna domänen.</span><span class="sxs-lookup"><span data-stu-id="75727-111">Retrieves the statistics on the given domain.</span></span>
+## <a name="api-description"></a><span data-ttu-id="f8c23-110">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="f8c23-110">API description</span></span>
+<span data-ttu-id="f8c23-111">Hämtar statistiken för den givna domänen.</span><span class="sxs-lookup"><span data-stu-id="f8c23-111">Retrieves the statistics on the given domain.</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="75727-112">Begränsningar</span><span class="sxs-lookup"><span data-stu-id="75727-112">Limitations</span></span>
-1. <span data-ttu-id="75727-113">Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.</span><span class="sxs-lookup"><span data-stu-id="75727-113">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="f8c23-112">Begränsningar</span><span class="sxs-lookup"><span data-stu-id="f8c23-112">Limitations</span></span>
+1. <span data-ttu-id="f8c23-113">Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.</span><span class="sxs-lookup"><span data-stu-id="f8c23-113">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="75727-114">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="75727-114">Permissions</span></span>
-<span data-ttu-id="75727-115">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="75727-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="75727-116">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="75727-116">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="f8c23-114">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="f8c23-114">Permissions</span></span>
+<span data-ttu-id="f8c23-115">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="f8c23-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="f8c23-116">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="f8c23-116">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="75727-117">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="75727-117">Permission type</span></span> |   <span data-ttu-id="75727-118">Behörighet</span><span class="sxs-lookup"><span data-stu-id="75727-118">Permission</span></span>  |   <span data-ttu-id="75727-119">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="75727-119">Permission display name</span></span>
+<span data-ttu-id="f8c23-117">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="f8c23-117">Permission type</span></span> |   <span data-ttu-id="f8c23-118">Behörighet</span><span class="sxs-lookup"><span data-stu-id="f8c23-118">Permission</span></span>  |   <span data-ttu-id="f8c23-119">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="f8c23-119">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="75727-120">Program</span><span class="sxs-lookup"><span data-stu-id="75727-120">Application</span></span> |   <span data-ttu-id="75727-121">URL. Read.All</span><span class="sxs-lookup"><span data-stu-id="75727-121">URL.Read.All</span></span> |  <span data-ttu-id="75727-122">"Läs URL:er"</span><span class="sxs-lookup"><span data-stu-id="75727-122">'Read URLs'</span></span>
-<span data-ttu-id="75727-123">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="75727-123">Delegated (work or school account)</span></span> | <span data-ttu-id="75727-124">URL. Read.All</span><span class="sxs-lookup"><span data-stu-id="75727-124">URL.Read.All</span></span> | <span data-ttu-id="75727-125">"Läs URL:er"</span><span class="sxs-lookup"><span data-stu-id="75727-125">'Read URLs'</span></span>
+<span data-ttu-id="f8c23-120">Program</span><span class="sxs-lookup"><span data-stu-id="f8c23-120">Application</span></span> |   <span data-ttu-id="f8c23-121">URL. Read.All</span><span class="sxs-lookup"><span data-stu-id="f8c23-121">URL.Read.All</span></span> |  <span data-ttu-id="f8c23-122">"Läs URL:er"</span><span class="sxs-lookup"><span data-stu-id="f8c23-122">'Read URLs'</span></span>
+<span data-ttu-id="f8c23-123">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="f8c23-123">Delegated (work or school account)</span></span> | <span data-ttu-id="f8c23-124">URL. Read.All</span><span class="sxs-lookup"><span data-stu-id="f8c23-124">URL.Read.All</span></span> | <span data-ttu-id="f8c23-125">"Läs URL:er"</span><span class="sxs-lookup"><span data-stu-id="f8c23-125">'Read URLs'</span></span>
 
 >[!Note]
-> <span data-ttu-id="75727-126">När du skaffar en token med hjälp av användarautentiseringsuppgifter:</span><span class="sxs-lookup"><span data-stu-id="75727-126">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="75727-127">Användaren måste ha minst följande rollbehörighet: 'Visa data' (mer information finns i [Skapa och](user-roles.md) hantera roller)</span><span class="sxs-lookup"><span data-stu-id="75727-127">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+> <span data-ttu-id="f8c23-126">När du skaffar en token med hjälp av användarautentiseringsuppgifter:</span><span class="sxs-lookup"><span data-stu-id="f8c23-126">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="f8c23-127">Användaren måste ha minst följande rollbehörighet: 'Visa data' (mer information finns i [Skapa och](user-roles.md) hantera roller)</span><span class="sxs-lookup"><span data-stu-id="f8c23-127">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="75727-128">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="75727-128">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f8c23-128">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="f8c23-128">HTTP request</span></span>
 ```
 GET /api/domains/{domain}/stats
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="75727-129">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="75727-129">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f8c23-129">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="f8c23-129">Request headers</span></span>
 
-<span data-ttu-id="75727-130">Sidhuvud</span><span class="sxs-lookup"><span data-stu-id="75727-130">Header</span></span> | <span data-ttu-id="75727-131">Värde</span><span class="sxs-lookup"><span data-stu-id="75727-131">Value</span></span> 
+<span data-ttu-id="f8c23-130">Sidhuvud</span><span class="sxs-lookup"><span data-stu-id="f8c23-130">Header</span></span> | <span data-ttu-id="f8c23-131">Värde</span><span class="sxs-lookup"><span data-stu-id="f8c23-131">Value</span></span> 
 :---|:---
-<span data-ttu-id="75727-132">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="75727-132">Authorization</span></span> | <span data-ttu-id="75727-133">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="75727-133">Bearer {token}.</span></span> <span data-ttu-id="75727-134">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="75727-134">**Required**.</span></span>
+<span data-ttu-id="f8c23-132">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="f8c23-132">Authorization</span></span> | <span data-ttu-id="f8c23-133">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="f8c23-133">Bearer {token}.</span></span> <span data-ttu-id="f8c23-134">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="f8c23-134">**Required**.</span></span>
 
-## <a name="request-uri-parameters"></a><span data-ttu-id="75727-135">Begär URI-parametrar</span><span class="sxs-lookup"><span data-stu-id="75727-135">Request URI parameters</span></span>
+## <a name="request-uri-parameters"></a><span data-ttu-id="f8c23-135">Begär URI-parametrar</span><span class="sxs-lookup"><span data-stu-id="f8c23-135">Request URI parameters</span></span>
 
-<span data-ttu-id="75727-136">Namn</span><span class="sxs-lookup"><span data-stu-id="75727-136">Name</span></span> | <span data-ttu-id="75727-137">Typ</span><span class="sxs-lookup"><span data-stu-id="75727-137">Type</span></span> | <span data-ttu-id="75727-138">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="75727-138">Description</span></span>
+<span data-ttu-id="f8c23-136">Namn</span><span class="sxs-lookup"><span data-stu-id="f8c23-136">Name</span></span> | <span data-ttu-id="f8c23-137">Typ</span><span class="sxs-lookup"><span data-stu-id="f8c23-137">Type</span></span> | <span data-ttu-id="f8c23-138">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="f8c23-138">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="75727-139">lookBackHours</span><span class="sxs-lookup"><span data-stu-id="75727-139">lookBackHours</span></span> | <span data-ttu-id="75727-140">Int32</span><span class="sxs-lookup"><span data-stu-id="75727-140">Int32</span></span> | <span data-ttu-id="75727-141">Definierar hur många timmar vi söker tillbaka för att få fram statistiken.</span><span class="sxs-lookup"><span data-stu-id="75727-141">Defines the hours we search back to get the statistics.</span></span> <span data-ttu-id="75727-142">Standard är 30 dagar.</span><span class="sxs-lookup"><span data-stu-id="75727-142">Defaults to 30 days.</span></span> <span data-ttu-id="75727-143">**Valfritt.**</span><span class="sxs-lookup"><span data-stu-id="75727-143">**Optional**.</span></span>
+<span data-ttu-id="f8c23-139">lookBackHours</span><span class="sxs-lookup"><span data-stu-id="f8c23-139">lookBackHours</span></span> | <span data-ttu-id="f8c23-140">Int32</span><span class="sxs-lookup"><span data-stu-id="f8c23-140">Int32</span></span> | <span data-ttu-id="f8c23-141">Definierar hur många timmar vi söker tillbaka för att få fram statistiken.</span><span class="sxs-lookup"><span data-stu-id="f8c23-141">Defines the hours we search back to get the statistics.</span></span> <span data-ttu-id="f8c23-142">Standard är 30 dagar.</span><span class="sxs-lookup"><span data-stu-id="f8c23-142">Defaults to 30 days.</span></span> <span data-ttu-id="f8c23-143">**Valfritt.**</span><span class="sxs-lookup"><span data-stu-id="f8c23-143">**Optional**.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="75727-144">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="75727-144">Request body</span></span>
-<span data-ttu-id="75727-145">Tom</span><span class="sxs-lookup"><span data-stu-id="75727-145">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="f8c23-144">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="f8c23-144">Request body</span></span>
+<span data-ttu-id="f8c23-145">Tom</span><span class="sxs-lookup"><span data-stu-id="f8c23-145">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="75727-146">Svar</span><span class="sxs-lookup"><span data-stu-id="75727-146">Response</span></span>
-<span data-ttu-id="75727-147">Om det lyckas och domän finns - 200 OK, med statistikobjekt i svarstexten.</span><span class="sxs-lookup"><span data-stu-id="75727-147">If successful and domain exists - 200 OK, with statistics object in the response body.</span></span> <span data-ttu-id="75727-148">Om domänen inte finns – 404 Hittades inte.</span><span class="sxs-lookup"><span data-stu-id="75727-148">If domain does not exist - 404 Not Found.</span></span>
+## <a name="response"></a><span data-ttu-id="f8c23-146">Svar</span><span class="sxs-lookup"><span data-stu-id="f8c23-146">Response</span></span>
+<span data-ttu-id="f8c23-147">Om det lyckas och domän finns - 200 OK, med statistikobjekt i svarstexten.</span><span class="sxs-lookup"><span data-stu-id="f8c23-147">If successful and domain exists - 200 OK, with statistics object in the response body.</span></span> <span data-ttu-id="f8c23-148">Om domänen inte finns – 404 Hittades inte.</span><span class="sxs-lookup"><span data-stu-id="f8c23-148">If domain does not exist - 404 Not Found.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="75727-149">Exempel</span><span class="sxs-lookup"><span data-stu-id="75727-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f8c23-149">Exempel</span><span class="sxs-lookup"><span data-stu-id="f8c23-149">Example</span></span>
 
-<span data-ttu-id="75727-150">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="75727-150">**Request**</span></span>
+<span data-ttu-id="f8c23-150">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="f8c23-150">**Request**</span></span>
 
-<span data-ttu-id="75727-151">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="75727-151">Here is an example of the request.</span></span>
+<span data-ttu-id="f8c23-151">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="f8c23-151">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookBackHours=48
 ```
 
-<span data-ttu-id="75727-152">**Svar**</span><span class="sxs-lookup"><span data-stu-id="75727-152">**Response**</span></span>
+<span data-ttu-id="f8c23-152">**Svar**</span><span class="sxs-lookup"><span data-stu-id="f8c23-152">**Response**</span></span>
 
-<span data-ttu-id="75727-153">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="75727-153">Here is an example of the response.</span></span>
+<span data-ttu-id="f8c23-153">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="f8c23-153">Here is an example of the response.</span></span>
 
 
 ```json

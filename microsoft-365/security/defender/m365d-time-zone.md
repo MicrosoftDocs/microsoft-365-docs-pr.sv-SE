@@ -27,19 +27,19 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934423"
 ---
-# <a name="set-the-time-zone-for-microsoft-365-defender"></a><span data-ttu-id="afc8a-104">Ange tidszonen för Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="afc8a-104">Set the time zone for Microsoft 365 Defender</span></span>
+# <a name="set-the-time-zone-for-microsoft-365-defender"></a><span data-ttu-id="10bd7-104">Ange tidszonen för Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="10bd7-104">Set the time zone for Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="afc8a-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="afc8a-105">**Applies to:**</span></span>
-- <span data-ttu-id="afc8a-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="afc8a-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="10bd7-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="10bd7-105">**Applies to:**</span></span>
+- <span data-ttu-id="10bd7-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="10bd7-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="afc8a-107">Microsoft 365 Defender kan visa datum- och tidsinformation med hjälp av antingen din lokala tidszon eller UTC.</span><span class="sxs-lookup"><span data-stu-id="afc8a-107">Microsoft 365 Defender can display date and time information using either your local time zone or UTC.</span></span> <span data-ttu-id="afc8a-108">Den valda tidszonen gäller för all datum- och tidsinformation som visas i följande funktioner i säkerhetscentret i Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="afc8a-108">The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:</span></span>
-- <span data-ttu-id="afc8a-109">Incidenter</span><span class="sxs-lookup"><span data-stu-id="afc8a-109">Incidents</span></span>
-- <span data-ttu-id="afc8a-110">Automatiserad undersökning och åtgärd, inklusive åtgärdscenter</span><span class="sxs-lookup"><span data-stu-id="afc8a-110">Automated investigation and remediation, including the action center</span></span>
-- <span data-ttu-id="afc8a-111">Avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="afc8a-111">Advanced hunting</span></span>
+<span data-ttu-id="10bd7-107">Microsoft 365 Defender kan visa datum- och tidsinformation med hjälp av antingen din lokala tidszon eller UTC.</span><span class="sxs-lookup"><span data-stu-id="10bd7-107">Microsoft 365 Defender can display date and time information using either your local time zone or UTC.</span></span> <span data-ttu-id="10bd7-108">Den valda tidszonen gäller för all datum- och tidsinformation som visas i följande funktioner Microsoft 365 säkerhetscenter:</span><span class="sxs-lookup"><span data-stu-id="10bd7-108">The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:</span></span>
+- <span data-ttu-id="10bd7-109">Incidenter</span><span class="sxs-lookup"><span data-stu-id="10bd7-109">Incidents</span></span>
+- <span data-ttu-id="10bd7-110">Automatiserad undersökning och åtgärd, inklusive åtgärdscenter</span><span class="sxs-lookup"><span data-stu-id="10bd7-110">Automated investigation and remediation, including the action center</span></span>
+- <span data-ttu-id="10bd7-111">Avancerad jakt</span><span class="sxs-lookup"><span data-stu-id="10bd7-111">Advanced hunting</span></span>
 
-<span data-ttu-id="afc8a-112">Om du vill ange tidszonen för dessa funktioner går du **till Inställningar**  >  **Microsoft 365 Defender**  >  **Tidszon**.</span><span class="sxs-lookup"><span data-stu-id="afc8a-112">To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.</span></span>
+<span data-ttu-id="10bd7-112">Om du vill ange tidszonen för de här funktionerna går du **Inställningar**  >  **Microsoft 365**  >  **Defender-tidszonen.**</span><span class="sxs-lookup"><span data-stu-id="10bd7-112">To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.</span></span>
