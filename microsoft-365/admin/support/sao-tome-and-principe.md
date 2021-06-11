@@ -19,22 +19,22 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295457"
 ---
-# <a name="contact-support-for-sao-tome-and-principe"></a><span data-ttu-id="c0cbf-103">Kontakta supporten för Sao Tome och Principe</span><span class="sxs-lookup"><span data-stu-id="c0cbf-103">Contact support for Sao Tome and Principe</span></span>
+# <a name="contact-support-for-sao-tome-and-principe"></a><span data-ttu-id="688f3-103">Kontakta supporten för Sao Tome och Principe</span><span class="sxs-lookup"><span data-stu-id="688f3-103">Contact support for Sao Tome and Principe</span></span>
 
-<span data-ttu-id="c0cbf-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c0cbf-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="688f3-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="688f3-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c0cbf-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c0cbf-105">Phone number</span></span>
-<span data-ttu-id="c0cbf-106">+1 312 843 5153</span><span class="sxs-lookup"><span data-stu-id="c0cbf-106">+1 312 843 5153</span></span>
+## <a name="phone-number"></a><span data-ttu-id="688f3-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="688f3-105">Phone number</span></span>
+<span data-ttu-id="688f3-106">+1 312 843 5153</span><span class="sxs-lookup"><span data-stu-id="688f3-106">+1 312 843 5153</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c0cbf-107">Tider</span><span class="sxs-lookup"><span data-stu-id="c0cbf-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c0cbf-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="c0cbf-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="688f3-107">Tider</span><span class="sxs-lookup"><span data-stu-id="688f3-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="688f3-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="688f3-108">Billing Support:</span></span>
 
-<span data-ttu-id="c0cbf-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="c0cbf-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="688f3-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="688f3-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c0cbf-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="c0cbf-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="688f3-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="688f3-110">Technical Support:</span></span>
 
-<span data-ttu-id="c0cbf-111">Portugisiska: Mon-Fri 08:00–21:00</span><span class="sxs-lookup"><span data-stu-id="c0cbf-111">Portuguese: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="688f3-111">Portugisiska: Mon-Fri 08:00–21:00</span><span class="sxs-lookup"><span data-stu-id="688f3-111">Portuguese: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="c0cbf-112">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="c0cbf-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="688f3-112">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="688f3-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="c0cbf-113">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="c0cbf-113">International call charges apply</span></span>
+<span data-ttu-id="688f3-113">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="688f3-113">International call charges apply</span></span>

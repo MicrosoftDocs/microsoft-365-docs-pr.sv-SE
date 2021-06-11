@@ -19,34 +19,34 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295133"
 ---
-# <a name="contact-support-for-switzerland"></a><span data-ttu-id="b4dae-103">Kontakta supporten för Schweiz</span><span class="sxs-lookup"><span data-stu-id="b4dae-103">Contact support for Switzerland</span></span>
+# <a name="contact-support-for-switzerland"></a><span data-ttu-id="3ba07-103">Kontakta supporten för Schweiz</span><span class="sxs-lookup"><span data-stu-id="3ba07-103">Contact support for Switzerland</span></span>
 
-<span data-ttu-id="b4dae-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="b4dae-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="3ba07-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="3ba07-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b4dae-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="b4dae-105">Phone number</span></span>
-<span data-ttu-id="b4dae-106">0800 000 300</span><span class="sxs-lookup"><span data-stu-id="b4dae-106">0800 000 300</span></span>
+## <a name="phone-number"></a><span data-ttu-id="3ba07-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="3ba07-105">Phone number</span></span>
+<span data-ttu-id="3ba07-106">0800 000 300</span><span class="sxs-lookup"><span data-stu-id="3ba07-106">0800 000 300</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b4dae-107">Tider</span><span class="sxs-lookup"><span data-stu-id="b4dae-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b4dae-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="b4dae-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="3ba07-107">Tider</span><span class="sxs-lookup"><span data-stu-id="3ba07-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="3ba07-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="3ba07-108">Billing Support:</span></span>
 
-<span data-ttu-id="b4dae-109">Franska: Mon-Fri 9:00–17:00</span><span class="sxs-lookup"><span data-stu-id="b4dae-109">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="3ba07-109">Franska: Mon-Fri 9:00–17:00</span><span class="sxs-lookup"><span data-stu-id="3ba07-109">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="b4dae-110">Tyska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="b4dae-110">German: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="3ba07-110">Tyska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="3ba07-110">German: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="b4dae-111">Italienska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="b4dae-111">Italian: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="3ba07-111">Italienska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="3ba07-111">Italian: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="b4dae-112">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="b4dae-112">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="3ba07-112">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="3ba07-112">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b4dae-113">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="b4dae-113">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="3ba07-113">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="3ba07-113">Technical Support:</span></span>
 
-<span data-ttu-id="b4dae-114">Franska: Mon-Fri 08:00–19:00</span><span class="sxs-lookup"><span data-stu-id="b4dae-114">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="3ba07-114">Franska: Mon-Fri 08:00–19:00</span><span class="sxs-lookup"><span data-stu-id="3ba07-114">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="b4dae-115">Tyska: Mon-Fri 08:00–19:00</span><span class="sxs-lookup"><span data-stu-id="b4dae-115">German: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="3ba07-115">Tyska: Mon-Fri 08:00–19:00</span><span class="sxs-lookup"><span data-stu-id="3ba07-115">German: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="b4dae-116">Italienska: Mon-Fri 08:00 till 19:00</span><span class="sxs-lookup"><span data-stu-id="b4dae-116">Italian: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="3ba07-116">Italienska: Mon-Fri 08:00 till 19:00</span><span class="sxs-lookup"><span data-stu-id="3ba07-116">Italian: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="b4dae-117">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="b4dae-117">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="3ba07-117">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="3ba07-117">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b4dae-118">Alternativ Telefon tal: 022 76 141 14</span><span class="sxs-lookup"><span data-stu-id="b4dae-118">Alternative Phone Number: 022 76 141 14</span></span>
+<span data-ttu-id="3ba07-118">Alternativ Telefon tal: 022 76 141 14</span><span class="sxs-lookup"><span data-stu-id="3ba07-118">Alternative Phone Number: 022 76 141 14</span></span>
 
-<span data-ttu-id="b4dae-119">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="b4dae-119">Local call charges apply</span></span>
+<span data-ttu-id="3ba07-119">Lokal samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="3ba07-119">Local call charges apply</span></span>

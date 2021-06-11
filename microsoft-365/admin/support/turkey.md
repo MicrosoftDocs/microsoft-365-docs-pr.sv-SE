@@ -19,22 +19,22 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295061"
 ---
-# <a name="contact-support-for-turkey"></a><span data-ttu-id="ce552-103">Kontakta supporten för Turkiet</span><span class="sxs-lookup"><span data-stu-id="ce552-103">Contact support for Turkey</span></span>
+# <a name="contact-support-for-turkey"></a><span data-ttu-id="a92d8-103">Kontakta supporten för Turkiet</span><span class="sxs-lookup"><span data-stu-id="a92d8-103">Contact support for Turkey</span></span>
 
-<span data-ttu-id="ce552-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="ce552-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="a92d8-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="a92d8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="ce552-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="ce552-105">Phone number</span></span>
-<span data-ttu-id="ce552-106">0 850 3902777</span><span class="sxs-lookup"><span data-stu-id="ce552-106">0 850 3902777</span></span>
+## <a name="phone-number"></a><span data-ttu-id="a92d8-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="a92d8-105">Phone number</span></span>
+<span data-ttu-id="a92d8-106">0 850 3902777</span><span class="sxs-lookup"><span data-stu-id="a92d8-106">0 850 3902777</span></span>
 
-## <a name="hours"></a><span data-ttu-id="ce552-107">Tider</span><span class="sxs-lookup"><span data-stu-id="ce552-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="ce552-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="ce552-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="a92d8-107">Tider</span><span class="sxs-lookup"><span data-stu-id="a92d8-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="a92d8-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="a92d8-108">Billing Support:</span></span>
 
-<span data-ttu-id="ce552-109">Turkiska: Mon-Fri 9–18</span><span class="sxs-lookup"><span data-stu-id="ce552-109">Turkish: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="a92d8-109">Turkiska: Mon-Fri 9–18</span><span class="sxs-lookup"><span data-stu-id="a92d8-109">Turkish: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="ce552-110">Engelska: Mon-Fri 9.00–18.00</span><span class="sxs-lookup"><span data-stu-id="ce552-110">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="a92d8-110">Engelska: Mon-Fri 9.00–18.00</span><span class="sxs-lookup"><span data-stu-id="a92d8-110">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="ce552-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="ce552-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="a92d8-111">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="a92d8-111">Technical Support:</span></span>
 
-<span data-ttu-id="ce552-112">Turkiska: Mon-Fri 08:00–18:00</span><span class="sxs-lookup"><span data-stu-id="ce552-112">Turkish: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="a92d8-112">Turkiska: Mon-Fri 08:00–18:00</span><span class="sxs-lookup"><span data-stu-id="a92d8-112">Turkish: Mon-Fri 8 AM-6 PM</span></span>
 
-<span data-ttu-id="ce552-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="ce552-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="a92d8-113">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="a92d8-113">English: 24 hours a day, 7 days a week</span></span>

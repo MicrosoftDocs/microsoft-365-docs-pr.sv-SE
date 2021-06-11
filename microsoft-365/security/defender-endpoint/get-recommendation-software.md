@@ -23,13 +23,13 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52845216"
 ---
-# <a name="get-recommendation-by-software"></a><span data-ttu-id="0fe70-104">Hämta rekommendationen efter programvara</span><span class="sxs-lookup"><span data-stu-id="0fe70-104">Get recommendation by software</span></span>
+# <a name="get-recommendation-by-software"></a><span data-ttu-id="88f62-104">Hämta rekommendationen efter programvara</span><span class="sxs-lookup"><span data-stu-id="88f62-104">Get recommendation by software</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="0fe70-105">**Gäller för:** [Microsoft Defender för slutpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="0fe70-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="88f62-105">**Gäller för:** [Microsoft Defender för slutpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="88f62-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-> <span data-ttu-id="0fe70-106">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="0fe70-106">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="0fe70-107">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="0fe70-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="88f62-106">Vill du använda Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="88f62-106">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="88f62-107">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="88f62-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,48 +38,48 @@ ms.locfileid: "52845216"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-<span data-ttu-id="0fe70-108">Hämtar en säkerhetsrekommendationer för en viss programvara.</span><span class="sxs-lookup"><span data-stu-id="0fe70-108">Retrieves a security recommendation related to a specific software.</span></span>
+<span data-ttu-id="88f62-108">Hämtar en säkerhetsrekommendationer för en viss programvara.</span><span class="sxs-lookup"><span data-stu-id="88f62-108">Retrieves a security recommendation related to a specific software.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0fe70-109">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="0fe70-109">Permissions</span></span>
-<span data-ttu-id="0fe70-110">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="0fe70-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="0fe70-111">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md) för mer information.</span><span class="sxs-lookup"><span data-stu-id="0fe70-111">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.</span></span>
+## <a name="permissions"></a><span data-ttu-id="88f62-109">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="88f62-109">Permissions</span></span>
+<span data-ttu-id="88f62-110">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="88f62-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="88f62-111">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md) för mer information.</span><span class="sxs-lookup"><span data-stu-id="88f62-111">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.</span></span>
 
-<span data-ttu-id="0fe70-112">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="0fe70-112">Permission type</span></span> |   <span data-ttu-id="0fe70-113">Behörighet</span><span class="sxs-lookup"><span data-stu-id="0fe70-113">Permission</span></span>  |   <span data-ttu-id="0fe70-114">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="0fe70-114">Permission display name</span></span>
+<span data-ttu-id="88f62-112">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="88f62-112">Permission type</span></span> |   <span data-ttu-id="88f62-113">Behörighet</span><span class="sxs-lookup"><span data-stu-id="88f62-113">Permission</span></span>  |   <span data-ttu-id="88f62-114">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="88f62-114">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="0fe70-115">Program</span><span class="sxs-lookup"><span data-stu-id="0fe70-115">Application</span></span> |   <span data-ttu-id="0fe70-116">SecurityRecommendation.Read.All</span><span class="sxs-lookup"><span data-stu-id="0fe70-116">SecurityRecommendation.Read.All</span></span> |   <span data-ttu-id="0fe70-117">"Läs rekommendationer om hot och sårbarhetshantering säkerhet"</span><span class="sxs-lookup"><span data-stu-id="0fe70-117">'Read Threat and Vulnerability Management security recommendation information'</span></span>
-<span data-ttu-id="0fe70-118">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="0fe70-118">Delegated (work or school account)</span></span> | <span data-ttu-id="0fe70-119">SecurityRecommendation.Read</span><span class="sxs-lookup"><span data-stu-id="0fe70-119">SecurityRecommendation.Read</span></span> |  <span data-ttu-id="0fe70-120">"Läs rekommendationer om hot och sårbarhetshantering säkerhet"</span><span class="sxs-lookup"><span data-stu-id="0fe70-120">'Read Threat and Vulnerability Management security recommendation information'</span></span>
+<span data-ttu-id="88f62-115">Program</span><span class="sxs-lookup"><span data-stu-id="88f62-115">Application</span></span> |   <span data-ttu-id="88f62-116">SecurityRecommendation.Read.All</span><span class="sxs-lookup"><span data-stu-id="88f62-116">SecurityRecommendation.Read.All</span></span> |   <span data-ttu-id="88f62-117">"Läs rekommendationer om hot och sårbarhetshantering säkerhet"</span><span class="sxs-lookup"><span data-stu-id="88f62-117">'Read Threat and Vulnerability Management security recommendation information'</span></span>
+<span data-ttu-id="88f62-118">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="88f62-118">Delegated (work or school account)</span></span> | <span data-ttu-id="88f62-119">SecurityRecommendation.Read</span><span class="sxs-lookup"><span data-stu-id="88f62-119">SecurityRecommendation.Read</span></span> |  <span data-ttu-id="88f62-120">"Läs rekommendationer om hot och sårbarhetshantering säkerhet"</span><span class="sxs-lookup"><span data-stu-id="88f62-120">'Read Threat and Vulnerability Management security recommendation information'</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="0fe70-121">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="0fe70-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="88f62-121">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="88f62-121">HTTP request</span></span>
 ```
 GET /api/recommendations/{id}/software
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0fe70-122">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="0fe70-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="88f62-122">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="88f62-122">Request headers</span></span>
 
-<span data-ttu-id="0fe70-123">Namn</span><span class="sxs-lookup"><span data-stu-id="0fe70-123">Name</span></span> | <span data-ttu-id="0fe70-124">Typ</span><span class="sxs-lookup"><span data-stu-id="0fe70-124">Type</span></span> | <span data-ttu-id="0fe70-125">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="0fe70-125">Description</span></span>
+<span data-ttu-id="88f62-123">Namn</span><span class="sxs-lookup"><span data-stu-id="88f62-123">Name</span></span> | <span data-ttu-id="88f62-124">Typ</span><span class="sxs-lookup"><span data-stu-id="88f62-124">Type</span></span> | <span data-ttu-id="88f62-125">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="88f62-125">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="0fe70-126">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="0fe70-126">Authorization</span></span> | <span data-ttu-id="0fe70-127">Sträng</span><span class="sxs-lookup"><span data-stu-id="0fe70-127">String</span></span> | <span data-ttu-id="0fe70-128">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="0fe70-128">Bearer {token}.</span></span> <span data-ttu-id="0fe70-129">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="0fe70-129">**Required**.</span></span>
+<span data-ttu-id="88f62-126">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="88f62-126">Authorization</span></span> | <span data-ttu-id="88f62-127">Sträng</span><span class="sxs-lookup"><span data-stu-id="88f62-127">String</span></span> | <span data-ttu-id="88f62-128">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="88f62-128">Bearer {token}.</span></span> <span data-ttu-id="88f62-129">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="88f62-129">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="0fe70-130">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="0fe70-130">Request body</span></span>
-<span data-ttu-id="0fe70-131">Tom</span><span class="sxs-lookup"><span data-stu-id="0fe70-131">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="88f62-130">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="88f62-130">Request body</span></span>
+<span data-ttu-id="88f62-131">Tom</span><span class="sxs-lookup"><span data-stu-id="88f62-131">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="0fe70-132">Svar</span><span class="sxs-lookup"><span data-stu-id="0fe70-132">Response</span></span>
-<span data-ttu-id="0fe70-133">Om det lyckas returnerar den här metoden 200 OK med programvaran som är kopplad till säkerhetsrekommendationerna i brödtexten.</span><span class="sxs-lookup"><span data-stu-id="0fe70-133">If successful, this method returns 200 OK with the software associated with the security recommendations in the body.</span></span>
+## <a name="response"></a><span data-ttu-id="88f62-132">Svar</span><span class="sxs-lookup"><span data-stu-id="88f62-132">Response</span></span>
+<span data-ttu-id="88f62-133">Om det lyckas returnerar den här metoden 200 OK med programvaran som är kopplad till säkerhetsrekommendationerna i brödtexten.</span><span class="sxs-lookup"><span data-stu-id="88f62-133">If successful, this method returns 200 OK with the software associated with the security recommendations in the body.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="0fe70-134">Exempel</span><span class="sxs-lookup"><span data-stu-id="0fe70-134">Example</span></span>
+## <a name="example"></a><span data-ttu-id="88f62-134">Exempel</span><span class="sxs-lookup"><span data-stu-id="88f62-134">Example</span></span>
 
-<span data-ttu-id="0fe70-135">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="0fe70-135">**Request**</span></span>
+<span data-ttu-id="88f62-135">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="88f62-135">**Request**</span></span>
 
-<span data-ttu-id="0fe70-136">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="0fe70-136">Here is an example of the request.</span></span>
+<span data-ttu-id="88f62-136">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="88f62-136">Here is an example of the request.</span></span>
 
 ```
 GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-chrome/software 
 ```
 
-<span data-ttu-id="0fe70-137">**Svar**</span><span class="sxs-lookup"><span data-stu-id="0fe70-137">**Response**</span></span>
+<span data-ttu-id="88f62-137">**Svar**</span><span class="sxs-lookup"><span data-stu-id="88f62-137">**Response**</span></span>
 
-<span data-ttu-id="0fe70-138">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="0fe70-138">Here is an example of the response.</span></span>
+<span data-ttu-id="88f62-138">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="88f62-138">Here is an example of the response.</span></span>
 
 ```json
 {
@@ -95,6 +95,6 @@ GET https://api.securitycenter.microsoft.com/api/recommendations/va-_-google-_-c
 }
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="0fe70-139">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="0fe70-139">Related topics</span></span>
-- [<span data-ttu-id="0fe70-140">Riskbaserade hot & sårbarhetshantering</span><span class="sxs-lookup"><span data-stu-id="0fe70-140">Risk-based Threat & Vulnerability Management</span></span>](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [<span data-ttu-id="0fe70-141">Rekommendation & säkerhetsrisk för hot</span><span class="sxs-lookup"><span data-stu-id="0fe70-141">Threat & Vulnerability security recommendation</span></span>](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+## <a name="related-topics"></a><span data-ttu-id="88f62-139">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="88f62-139">Related topics</span></span>
+- [<span data-ttu-id="88f62-140">Riskbaserade hot & sårbarhetshantering</span><span class="sxs-lookup"><span data-stu-id="88f62-140">Risk-based Threat & Vulnerability Management</span></span>](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="88f62-141">Rekommendation & säkerhetsrisk för hot</span><span class="sxs-lookup"><span data-stu-id="88f62-141">Threat & Vulnerability security recommendation</span></span>](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

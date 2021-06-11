@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295633"
 ---
-# <a name="contact-support-for-northern-mariana-islands"></a><span data-ttu-id="caa82-103">Kontakta supporten för Nordmarianerna</span><span class="sxs-lookup"><span data-stu-id="caa82-103">Contact support for Northern Mariana Islands</span></span>
+# <a name="contact-support-for-northern-mariana-islands"></a><span data-ttu-id="b316b-103">Kontakta supporten för Nordmarianerna</span><span class="sxs-lookup"><span data-stu-id="b316b-103">Contact support for Northern Mariana Islands</span></span>
 
-<span data-ttu-id="caa82-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="caa82-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="b316b-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="b316b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="caa82-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="caa82-105">Phone number</span></span>
-<span data-ttu-id="caa82-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="caa82-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b316b-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="b316b-105">Phone number</span></span>
+<span data-ttu-id="b316b-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="b316b-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="caa82-107">Tider</span><span class="sxs-lookup"><span data-stu-id="caa82-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="caa82-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="caa82-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b316b-107">Tider</span><span class="sxs-lookup"><span data-stu-id="b316b-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b316b-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="b316b-108">Billing Support:</span></span>
 
-<span data-ttu-id="caa82-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="caa82-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="b316b-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="b316b-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="caa82-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="caa82-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b316b-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="b316b-110">Technical Support:</span></span>
 
-<span data-ttu-id="caa82-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="caa82-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b316b-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="b316b-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="caa82-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="caa82-112">International call charges apply</span></span>
+<span data-ttu-id="b316b-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="b316b-112">International call charges apply</span></span>
