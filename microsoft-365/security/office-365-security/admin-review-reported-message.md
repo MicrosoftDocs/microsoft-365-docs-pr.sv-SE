@@ -13,12 +13,12 @@ ms.collection:
 description: Lär dig hur du granskar meddelanden som rapporteras och ger feedback till användarna.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 217f5ebb1692d68b5dc70988888bf78d4bd36a0c
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 9e6969b6dee38135ee2d1d41bbcdb2561943d1fe
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893734"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878718"
 ---
 # <a name="admin-review-for-reported-messages"></a>Administratörsgranskning för rapporterade meddelanden
 
@@ -39,13 +39,15 @@ Du kan bara markera och meddela användarna om [granskningsresultat](report-fals
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com/> . Använd för att gå **direkt till sidan** Inskickade <https://security.microsoft.com/reportsubmission> material.
+
+- Du öppnar säkerhetscentret Microsoft 365 på <https://security.microsoft.com/> . Använd för att gå **direkt till sidan** Inskickade <https://security.microsoft.com/reportsubmission> material.
 
 - Du måste vara medlem i någon av följande rollgrupper för att kunna ändra konfigurationen för användarinskick:
-  - Organisationshantering eller säkerhetsadministratör i [Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md).
+  - Organisationshantering eller säkerhetsadministratör i [Microsoft 365 säkerhetscenter](permissions-microsoft-365-security-center.md).
   - Organisationshantering i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Du behöver också åtkomst till Exchange Online PowerShell. Om kontot som du försöker använda inte har åtkomst till Exchange Online PowerShell visas felmeddelandet Ange en e-postadress i *din domän.* Mer information om hur du aktiverar eller inaktiverar åtkomst till Exchange Online PowerShell finns i följande avsnitt:
+
+- Du behöver också åtkomst till programmet Exchange Online PowerShell. Om kontot som du försöker använda inte har åtkomst till Exchange Online PowerShell visas felmeddelandet Ange en e-postadress i *din domän.* Mer information om hur du aktiverar eller inaktiverar åtkomst till Exchange Online PowerShell finns i följande avsnitt:
   - [Aktivera eller inaktivera åtkomst till Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Klientåtkomstregler i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 

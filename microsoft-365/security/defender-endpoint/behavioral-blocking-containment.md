@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: a6271c1bd3714cfdffc606b7ada9b027e394216d
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 00ed505b153e5af4d89038bdc53e988ee763827b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866733"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845648"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Beteendeblockering och inneslutning
 
@@ -46,11 +46,11 @@ Funktioner för blockering och inneslutning kan hjälpa till att identifiera och
 
 Funktioner för blockering och inneslutning fungerar med flera komponenter och funktioner i Defender för Slutpunkt för att stoppa attacker omedelbart och förhindra att attacker fort görs.
 
-- [Nästa generations skydd](microsoft-defender-antivirus-in-windows-10.md) (som inkluderar Microsoft Defender Antivirus) kan identifiera hot genom att analysera beteenden och stoppa hot som har börjat köras.
+- [Nästa generations skydd](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (som inkluderar Microsoft Defender Antivirus) kan identifiera hot genom att analysera beteenden och stoppa hot som har börjat köras.
 
-- [Identifiering och svar av slutpunkter](overview-endpoint-detection-response.md) (Identifiering och åtgärd på slutpunkt) får säkerhetssignaler i nätverket, enheterna och kernel-beteendet. När hot upptäcks skapas aviseringar. Flera aviseringar av samma typ sammanställs till incidenter, vilket gör det enklare för teamet med säkerhetsåtgärder att undersöka och svara.
+- [Identifiering och svar av slutpunkter](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (Identifiering och åtgärd på slutpunkt) får säkerhetssignaler i nätverket, enheterna och kernel-beteendet. När hot upptäcks skapas aviseringar. Flera aviseringar av samma typ sammanställs till incidenter, vilket gör det enklare för teamet med säkerhetsåtgärder att undersöka och svara.
 
-- [Defender för Endpoint](overview-endpoint-detection-response.md) har ett brett utbud avropsoptisk över identiteter, e-post, data och appar, utöver de nätverks-, slutpunkts- och kernel-funktionssignaler som tas emot via Identifiering och åtgärd på slutpunkt. En komponent i [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender för slutpunkt bearbetar och korrelerar dessa signaler, upphöjer identifieringsaviseringar och kopplar relaterade aviseringar i incidenter.
+- [Defender för Endpoint](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) har ett brett utbud avropsoptisk över identiteter, e-post, data och appar, utöver de nätverks-, slutpunkts- och kernel-funktionssignaler som tas emot via Identifiering och åtgärd på slutpunkt. En komponent i [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection), Defender för slutpunkt bearbetar och korrelerar dessa signaler, upphöjer identifieringsaviseringar och kopplar relaterade aviseringar i incidenter.
 
 Med dessa funktioner kan fler hot förhindras eller blockeras, även om de börjar köras. När misstänkt beteende upptäcks finns risken kvar, aviseringar skapas och hot stoppas i deras spår. 
 
@@ -60,7 +60,7 @@ Följande bild visar ett exempel på en varning som utlöstes genom funktionella
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Komponenter i beteendeblockering och inneslutning
 
-- **Regler för att minska attackytan på [klientsidan](attack-surface-reduction.md)** Fördefinierade vanliga attackbeteenden förhindras från att köras, enligt reglerna för minskning av attackytan. När sådana beteenden försöker köras kan de ses i Microsoft Defender Säkerhetscenter [https://securitycenter.windows.com](https://securitycenter.windows.com) som informationsaviseringar. (Regler för att minska attackytan är inte aktiverade som standard, du konfigurerar principerna i Microsoft Defender Säkerhetscenter.)
+- **Regler för att minska attackytan på [klientsidan](/microsoft-365/security/defender-endpoint/attack-surface-reduction)** Fördefinierade vanliga attackbeteenden förhindras från att köras, enligt reglerna för minskning av attackytan. När sådana beteenden försöker köras kan de ses i Microsoft Defender Säkerhetscenter [https://securitycenter.windows.com](https://securitycenter.windows.com) som informationsaviseringar. (Regler för att minska attackytan är inte aktiverade som standard, du konfigurerar principerna i Microsoft Defender Säkerhetscenter.)
 
 - **[Klientbeteendeblockering](client-behavioral-blocking.md)** Hot på slutpunkter upptäcks genom maskininlärning och blockeras och åtgärdas automatiskt. (Klientbeteendeblockering är aktiverat som standard.) 
 
@@ -93,7 +93,6 @@ Nedan finns två verkliga exempel på beteendeblockering och inneslutning i prak
 Så som beskrivs i Hot hot mot [elusiva hot: AI-drivna](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)beteendebaserade blockering stoppar attacker i sina spår , en autentiseringsstöldattack mot 100 organisationer runt om i världen har stoppats av funktionsblockering och inneslutningsfunktioner. E-postmeddelanden om försök till nätfiske som innehöll ett lure-dokument har skickats till de riktade organisationerna. Om en mottagare öppnade den bifogade filen kunde ett relaterat fjärrdokument köra kod på användarens enhet och läsa in malware från Malware för Malware, som har stulit autentiseringsuppgifter, lagrat stulna data och väntat på ytterligare instruktioner från en kommando- och kontrollserver. 
 
 Behavior-based device learning models in Defender for Endpoint caught and stopped the attacker's techniques at two points in the attack chain:
-
 - Det första skyddslagret upptäckte sårbarhetsbeteendet. Enhet med utbildning i molnet har identifierat hoten korrekt och omedelbart fått instruktioner om att klientenheten ska blockera attacken.
 - Det andra skyddlagret, som hjälpte dig att stoppa fall där attacken kom förbi det första lagret, upptäckte process ihålig process, stoppade processen och tog bort motsvarande filer (till exempelLagraibot). 
 
@@ -121,7 +120,7 @@ Det här exemplet visar att hot identifieras, finns och blockeras automatiskt me
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Läs mer om Defender för Slutpunkt](overview-endpoint-detection-response.md)
+- [Läs mer om Defender för Slutpunkt](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 
 - [Konfigurera minskningsregler för attackytan](attack-surface-reduction.md)
 
@@ -129,4 +128,4 @@ Det här exemplet visar att hot identifieras, finns och blockeras automatiskt me
 
 - [Se den senaste globala hotaktiviteten](https://www.microsoft.com/wdsi/threats)
 
-- [Få en översikt över Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Få en översikt över Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)

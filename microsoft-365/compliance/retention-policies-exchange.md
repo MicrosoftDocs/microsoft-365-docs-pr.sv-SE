@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mer information om hur kvarhållning för Exchange fungerar.
-ms.openlocfilehash: 0763b8bdab75ac76197b8c89f187bb573a3e4bb1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efb95b22355bff292ef63c77fb77fb5a15d66722
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162143"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861137"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Mer information om kvarhållning för Exchange
 
@@ -40,7 +40,7 @@ Kalenderobjekt som har ett slutdatum stöds för kvarhållningsprinciper, men st
 
 Kontakter och alla uppgifter och kalenderobjekt som inte har ett slutdatum stöds inte.
 
-Andra objekt som lagras i en postlåda, till exempel Skype- och Teams-meddelanden, ingår inte i kvarhållningsprinciper eller -etiketter för Exchange. De här objekten har sina egna kvarhållningsprinciper.
+Andra objekt som lagras i en postlåda, till exempel Skype- och Teams-meddelanden, ingår inte i kvarhållningsprinciper eller -etiketter för Exchange. Dessa objekt har sina egna kvarhållningsprinciper.
 
 ## <a name="how-retention-works-for-exchange"></a>Så fungerar kvarhållning för Exchange
 
@@ -48,7 +48,10 @@ Både en postlåda och en offentlig mapp använder [mappen Återställningsbara 
   
 När en person tar bort ett meddelande i en annan mapp än mappen Borttaget flyttas meddelandet som standard till mappen Borttaget. När en person tar bort ett objekt i mappen Borttaget flyttas meddelandet till mappen Återställningsbara objekt. En användare kan dock ta bort ett objekt temporärt (Skift+Delete) i en mapp, vilket kringgår mappen Borttaget och flyttar objektet direkt till mappen Återställningsbara objekt.
   
-När du tillämpar inställningarna för kvarhållning på Exchange-data utvärderar ett tidsinställt jobb regelbundet objekt i mappen Återställningsbara objekt. Om ett objekt inte stämmer överens med reglerna för minst en kvarhållningsprincip eller kvarhållningsetikett tas objektet bort permanent från mappen Återställningsbara objekt.
+När du tillämpar inställningarna för kvarhållning på Exchange-data utvärderar ett tidsinställt jobb regelbundet objekt i mappen Återställningsbara objekt. Om ett objekt inte stämmer överens med reglerna för minst en kvarhållningsprincip eller kvarhållningsetikett för att kvarhålla objektet, tas objektet bort permanent från mappen Återställningsbara objekt.
+
+> [!NOTE]
+> På grund av [första principen om kvarhållning](retention.md#the-principles-of-retention-or-what-takes-precedence)inaktiveras permanent borttagning alltid om samma objekt måste behållas på grund av en annan kvarhållningsprincip eller kvarhållningstagg, eller om det finns eDiscovery som gäller för juridiska skäl eller av juridiska skäl.
 
 Det kan ta upp till sju dagar att köra det tidsinställda jobbet och Exchange-platsen måste innehålla minst 10 MB.
   
@@ -84,7 +87,7 @@ Om en användare lämnar organisationen och användarens postlåda ingår i en k
 
 ## <a name="configuration-guidance"></a>Konfigurationsvägledning
 
-Om du är nybörjare på att konfigurera kvarhållning i Microsoft 365 läs mer på [Komma igång med kvarhållningsprinciper och kvarhållningsetiketter](get-started-with-retention.md).
+Om du inte är bekant med att konfigurera kvarhållning i Microsoft 365 kan du läsa mer i [Komma igång med kvarhållningsprinciper och kvarhållningsetiketter](get-started-with-retention.md).
 
 Om du är redo att konfigurera en kvarhållningsprincip eller kvarhållningsetikett för Exchange följer du anvisningarna nedan:
 - [Skapa och konfigurera kvarhållningsprinciper](create-retention-policies.md)

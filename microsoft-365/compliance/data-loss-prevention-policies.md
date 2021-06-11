@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: referensmaterial för dataförlustskydd
-ms.openlocfilehash: 7e8494c0199d62951e7b5f01bb1b65e90e8584f2
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878166"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572567"
 ---
 # <a name="data-loss-prevention-reference"></a>Referens för dataförlustskydd
  
@@ -112,7 +112,7 @@ Om du väljer att inkludera eller exkludera specifika SharePoint webbplatser kan
 Om du väljer att inkludera eller exkludera specifika OneDrive-konton eller grupper kan en DLP-princip innehålla högst 100 användarkonton eller 50 grupper som inkludering eller undantag.
 
 > [!NOTE]
-> OneDrive för företag-principens användning av användarkonton eller grupper är en offentlig förhandsversion. 
+> OneDrive för företag-principens användning av konton eller grupper är en offentlig förhandsversion. Under den här fasen kan du antingen inkludera eller exkludera användarkonton och grupper som en del av en DLP-princip. Både inkludering och undantag som en del av samma princip stöds inte.
   
 ### <a name="rules"></a>Regler
 
@@ -544,7 +544,7 @@ När du skapar en DLP-princip som innehåller Microsoft Teams som en plats synkr
  
 ## <a name="permissions"></a>Behörigheter
 
-Som standard får globala administratörer, säkerhetsadministratörer och efterlevnadsadministratörer åtkomst till att skapa och tillämpa en DLP-princip. Andra medlemmar i efterlevnadsteamet som skapar DLP-principer behöver behörighet till &amp; Säkerhetsefterlevnadscenter. Som standard har din innehavaradministratör åtkomst till den här platsen och kan ge efterlevnadsansvariga och andra personer tillgång till Säkerhetsefterlevnadscenter, utan att ge dem alla behörigheter som en administratör &amp; för klientorganisationen har. För att göra det rekommenderar vi att du:
+Medlemmar i efterlevnadsteamet som ska skapa DLP-principer behöver behörighet till &amp; Säkerhetsefterlevnadscenter. Som standard har din innehavaradministratör åtkomst till den här platsen och kan ge efterlevnadsansvariga och andra personer tillgång till Säkerhetsefterlevnadscenter, utan att ge dem alla behörigheter som en administratör för &amp; klientorganisationen har. För att göra det rekommenderar vi att du:
   
 1. Skapa en grupp i Microsoft 365 och lägg till efterlevnadsansvariga i den.
     

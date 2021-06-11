@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs om hur kvarhållning fungerar för SharePoint och OneDrive.
-ms.openlocfilehash: 90e94f4ff94b65860890ab65b451107d1d02963f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 14b3bebab8b73b7b45c79a34903fed5d0f6ec9ca
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625251"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861593"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Lär dig mer om kvarhållning för SharePoint och OneDrive
 
@@ -91,6 +91,9 @@ När kvarhållningsinställningarna ska behålla och ta bort:
     > För att förhindra oavsiktlig dataförlust tar vi inte längre bort innehåll permanent från biblioteket för bevarande av dokument. Istället tar vi bara bort innehåll permanent från papperskorgen, så nu går allt innehåll från biblioteket för bevarande av dokument genom papperskorgen på andra nivån.
     
 2. **Om innehållet inte ändras eller tas bort** under kvarhållningsperioden flyttar det tidsinställda jobbet detta innehåll till papperskorgen på första nivån i slutet av kvarhållningsperioden. Om en användare tar bort innehållet därifrån eller tömmer den här papperskorgen (kallas även att rensa) flyttas dokumentet till papperskorgen på andra nivån. En 93 dagar lång kvarhållningsperiod sträcker sig över papperskorgen på både första och andra nivån. Efter 93 dagar tas dokumentet bort permanent från den plats där det finns, antingen i papperskorgen på första eller andra nivån. Papperskorgen indexeras inte och går därför inte att söka i. Därför kan en eDiscovery-sökning inte hitta något innehåll i papperskorgen för att placera ett bevarande.
+
+> [!NOTE]
+> På grund av [första principen om kvarhållning](retention.md#the-principles-of-retention-or-what-takes-precedence)inaktiveras permanent borttagning alltid om samma objekt måste behållas på grund av en annan kvarhållningsprincip eller kvarhållningstagg, eller om det finns eDiscovery som gäller för juridiska skäl eller av juridiska skäl.
 
 När inställningarna för kvarhållning endast ska behålla eller endast ta bort, är innehållssökvägarna varianter av behålla eller ta bort:
 

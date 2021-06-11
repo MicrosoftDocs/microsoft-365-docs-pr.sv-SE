@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mer information om de kvarhållningsprinciper som gäller för Yammer.
-ms.openlocfilehash: 1b99d0915cfb159f821818fb1425d7191a011351
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: a8d047845b986029d393816982e6bede3db71485
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710712"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861569"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Mer information om kvarhållning för Yammer
 
@@ -55,6 +55,9 @@ Yammer-meddelanden påverkas inte av kvarhållningsprinciper som har konfigurera
 > Om en användare ingår i en aktiv kvarhållningsprincip som behåller Yammer-data och du tar bort postlådan för en användare som ingår i den principen, konverteras postlådan till en [inaktiv postlåda](inactive-mailboxes-in-office-365.md) för att Yammer-datan ska behållas. Om du inte behöver behålla Yammer-datan för användaren exkluderar du användarkontot från kvarhållningsprincipen innan du tar bort postlådan.
 
 När en kvarhållningsprincip har konfigurerats för Yammer-meddelanden, utvärderar ett tidsinställt jobb från Exchange-tjänsten regelbundet objekt i den dolda mappen där dessa Yammer-meddelanden lagras. Det tidsinställda jobbet tar upp till sju dagar att köra. När kvarhållningsperioden för objekten har upphört flyttas de till mappen SubstrateHolds. Det är en dold mapp som finns i varje användar- eller gruppostlåda där ej permanent borttagna objekt lagras innan de tas bort permanent.
+
+> [!NOTE]
+> På grund av [första principen om kvarhållning](retention.md#the-principles-of-retention-or-what-takes-precedence)inaktiveras permanent borttagning alltid om samma objekt måste behållas på grund av en annan kvarhållningsprincip, eller om det finns eDiscovery som gäller för juridiska skäl eller av juridiska skäl.
 
 När en kvarhållningsprincip har konfigurerats för Yammer-meddelanden beror sökvägarna till innehållet på om kvarhållningsprincipen ska behålla och sedan ta bort, endast behålla eller endast ta bort.
 

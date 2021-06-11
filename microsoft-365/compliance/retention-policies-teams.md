@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om de kvarhållningsprinciper som gäller för Microsoft Teams.
-ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 607fbdd02cfaccfee79df67c4946c178ff3eb383
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280805"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861581"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Mer information om kvarhållning för Microsoft Teams
 
@@ -38,7 +38,7 @@ Den här artikeln kompletterar avsnittet [Mer information om kvarhållning](rete
 För övriga arbetsbelastningar finns information i:
 
 - [Mer information om kvarhållning för SharePoint och OneDrive](retention-policies-sharepoint.md)
-- [Lär dig mer om kvarhållning för Yammer](retention-policies-yammer.md)
+- [Mer information om kvarhållning för Yammer](retention-policies-yammer.md)
 - [Lär dig mer om kvarhållning för Exchange](retention-policies-exchange.md)
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Vad omfattas för kvarhållning och borttagning
@@ -48,9 +48,9 @@ Teams-chattmeddelanden och Teams-kanalmeddelanden kan tas bort med hjälp av kva
 > [!NOTE]
 > Möjligheten att ta med kortinnehåll i en kvarhållningsprincip för Teams lades till ganska nyligen. Mer information finns i [Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Kvarhållningsprinciper kan för närvarande inte användas för Teams-meddelanden i privata kanaler. Kodfragment, inspelade röstmeddelanden från Teams-mobilklienten, miniatyrer, meddelandebilder och reaktioner från andra i form av uttryckssymboler bevaras inte när du använder kvarhållningsprinciper för Teams.
+Teams-meddelanden i privata kanaler stöds för närvarande inte för kvarhållningsprinciper. Kodfragment, inspelade röstmeddelanden från Teams-mobilklienten, miniatyrer, meddelandebilder och reaktioner från andra i form av uttryckssymboler bevaras inte när du använder kvarhållningsprinciper för Teams.
 
-E-postmeddelanden och filer som du använder med Teams omfattas inte av kvarhållningsprinciper för Teams. Dessa objekt har egna kvarhållningsprinciper.
+E-postmeddelanden och filer som du använder med Teams omfattas inte av kvarhållningsprinciper för Teams. De här föremålen har sina egna kvarhållningsprinciper.
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Så fungerar kvarhållning för Microsoft Teams
 
@@ -76,6 +76,9 @@ Trots att data från Teams-chattar och Teams-kanalmeddelanden lagras i postlådo
 När en kvarhållningsprincip har konfigurerats för chatt- och kanalmeddelanden utvärderar ett tidsinställt jobb från Exchange-tjänsten regelbundet objekt i den dolda mappen där dessa Teams-meddelanden lagras. Det tidsinställda jobbet tar normalt en till sju dagar att köra. När objekten har upphört att gälla flyttas de till mappen Program, en annan dold mapp i varje användar- eller gruppostlåda där "mjukt borttagna" objekt lagras innan de tas bort permanent. 
 
 Meddelanden finns kvar i mappen SubstrateHolds i minst en dag, och om de sedan är kvalificerade för borttagning tas de bort permanent nästa gång det tidsinställda jobbet körs.
+
+> [!NOTE]
+> På grund av [första principen om kvarhållning](retention.md#the-principles-of-retention-or-what-takes-precedence)inaktiveras permanent borttagning alltid om samma objekt måste behållas på grund av en annan kvarhållningsprincip, eller om det finns eDiscovery som gäller för juridiska skäl eller av juridiska skäl.
 
 När en kvarhållningsprincip har konfigurerats för chatt- och kanalmeddelanden beror sökvägarna till innehållet på om kvarhållningsprincipen är inställd på att bevara och sedan ta bort, endast bevara eller endast ta bort meddelanden.
 
@@ -175,7 +178,7 @@ Som detta exempel visar, även om du kan konfigurera en kvarhållningsprincip f�
 
 När en Skype för företag-chatt kommer till Teams blir den ett meddelande i en Teams-chattråd och matas in i rätt postlåda. Kvarhållningsprinciperna för Teams gäller för dessa meddelanden från Teams-tråden. 
 
-Men om konversationshistorik har aktiverats för Skype för företag och den historiken sparas i en postlåda från Skype för företag-klientsidan, hanteras dessa chattdata inte av kvarhållningsprincipen för Teams. För det innehållet använder du en kvarhållningsprincip som är konfigurerad för Skype för företag.
+Men om konversationshistorik har aktiverats för Skype för företag och den historiken sparas i en postlåda från Skype för företag-klientsidan, hanteras dessa chattdata inte av kvarhållningsprincipen för Teams. För sådant innehåll använd en kvarhållningsprincip som har konfigurerats för Skype för företag.
 
 ## <a name="meetings-and-external-users"></a>Möten och externa användare
 
@@ -187,7 +190,7 @@ När externa användare ingår i ett möte som organisationen är värd för:
 
 - Om en extern användare ansluter med hjälp av ett gästkonto i din klientorganisation har användaren en skuggpostlåda som kan omfattas av organisationens kvarhållningsprincip för Teams. Alla meddelanden från mötet lagras både i användarnas postlåda och i skuggpostlådan. 
 
-- Om en extern användare ansluter med ett annat konto från en annan Microsoft 365-organisation kan dina kvarhållningsprinciper inte ta bort meddelandena för den här användaren eftersom de lagras i användarens postlåda i en annan klientorganisation. Däremot kan kvarhållningsprinciperna ta bort meddelanden för dina användare.
+- Om en extern användare ansluter med ett annat konto från en annan Microsoft 365-organisation kan dina kvarhållningsprinciper inte ta bort meddelandena för den här användaren eftersom de lagras i användarens postlåda i en annan klientorganisation. För samma möte kan dock dina kvarhållningsprinciper radera meddelanden för dina användare.
 
 ## <a name="when-a-user-leaves-the-organization"></a>När en användare lämnar organisationen 
 
@@ -197,7 +200,7 @@ Om användaren har lagrat några filer i Teams kan du se [motsvarande avsnitt](r
 
 ## <a name="limitations"></a>Begränsningar
 
-Vi arbetar kontinuerligt med att optimera kvarhållningsfunktionen i Teams. Under tiden bör du vara medveten om följande begränsning när du använder kvarhållningsprinciper för Teams-kanalmeddelanden och Teams-chattar:
+Vi jobbar ständigt med att optimera kvarhållningsfunktionen i Teams. Under tiden bör du vara medveten om följande begränsning när du använder kvarhållningsprinciper för Teams-kanalmeddelanden och Teams-chattar:
 
 - **Problem med felaktig visning i Outlook**. Om du skapar kvarhållningsprinciper för Skype- eller Teams-platser visas en av dessa principer som standardmapprincip när en användare visar egenskaperna för en postlådemapp i skrivbordsversionen av Outlook. Det här är en felaktig visning i Outlook och [ett känt problem](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). I stället bör du titta på kvarhållningsprincipen för postlådan som tillämpas på mappen. Kvarhållningsprincipen för Skype eller Teams tillämpas inte på användarens postlåda.
 

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig hur du ställer in Microsoft Viva-ämnen
-ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930227"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893770"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Konfigurera Microsoft Viva-ämnen
 
@@ -60,8 +60,10 @@ Det kan ta upp till en timme för användarna att få åtkomst till Ämnen när 
 
 ## <a name="set-up-topics"></a>Konfigurera ämnen
 
-Så här ställer du in ämnen
+> [!Note]
+> Första gången identifieringen av ämnen är aktiverad kan det ta upp till två veckor för alla föreslagna ämnen att visas i vyn Hantera ämnen. Ämnesidentifiering fortsätter allt eftersom nytt innehåll eller uppdateringar av innehåll görs. Det är normalt att ha fluktuationer i antalet föreslagna ämnen i organisationen eftersom Viva Topics utvärderar ny information.
 
+Så här ställer du in ämnen
 1. I Microsoft 365 [väljer du](https://admin.microsoft.com) **Konfigurera** och visar sedan **avsnittet Filer och** innehåll.
 2. I avsnittet **Filer och innehåll** klickar du på Dela Anslut att få kunskap **om**.
 
@@ -143,8 +145,6 @@ Så här ställer du in ämnen
 12. Du kommer nu tillbaka till sidan Anslut **personer på kunskapssidan.** På den här sidan kan du välja **Hantera** om du vill göra ändringar i dina konfigurationsinställningar. 
 
     ![Inställningar tillämpas](../media/ksetup7.png)    
-
-Observera att första gången ämnesidentifiering är aktiverat kan det ta upp till två veckor för alla föreslagna ämnen att visas i vyn Hantera ämnen. Ämnesidentifiering fortsätter allt eftersom nytt innehåll eller uppdateringar av innehåll görs. Det är normalt att ha fluktuationer i antalet föreslagna ämnen i organisationen eftersom Viva Topics utvärderar ny information.
 
 ## <a name="manage-topic-experiences"></a>Hantera ämnesupplevelser
 
