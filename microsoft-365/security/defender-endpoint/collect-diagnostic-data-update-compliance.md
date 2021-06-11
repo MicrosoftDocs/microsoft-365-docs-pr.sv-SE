@@ -16,49 +16,47 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 2aaf3d1c650713a7f6cfb7b9abb9f2232013d6db
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9fbe2b624bec6bbe17bcf6bc8d3f842ba1e43ad7
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274802"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903738"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a><span data-ttu-id="91456-104">Samla in diagnostikdata för uppdateringsefterlevnad för Microsoft Defender AV Assessment</span><span class="sxs-lookup"><span data-stu-id="91456-104">Collect Update Compliance diagnostic data for Microsoft Defender AV Assessment</span></span>
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a><span data-ttu-id="44cec-104">Samla in diagnostikdata för uppdateringsefterlevnad för Microsoft Defender Antivirus bedömning</span><span class="sxs-lookup"><span data-stu-id="44cec-104">Collect update compliance diagnostic data for Microsoft Defender Antivirus assessment</span></span>
 
 
-<span data-ttu-id="91456-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="91456-105">**Applies to:**</span></span>
+<span data-ttu-id="44cec-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="44cec-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="91456-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="91456-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="44cec-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="44cec-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="91456-107">I den här artikeln beskrivs hur du samlar in diagnostikdata som kan användas av Microsofts support- och teknikteam för att felsöka problem som kan uppstå när du använder avsnittet Microsoft Defender AV Assessment i tillägget Uppdateringsefterlevnad.</span><span class="sxs-lookup"><span data-stu-id="91456-107">This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV Assessment section in the Update Compliance add-in.</span></span>
+<span data-ttu-id="44cec-107">I den här artikeln beskrivs hur du samlar in diagnostikdata som kan användas av Microsofts support- och teknikteam för att felsöka problem som kan uppstå när du använder Microsoft Defender Antivirus Assessment-avsnittet i tillägget Uppdateringsefterlevnad.</span><span class="sxs-lookup"><span data-stu-id="44cec-107">This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender Antivirus Assessment section in the Update Compliance add-in.</span></span>
 
-<span data-ttu-id="91456-108">Innan du försöker med den här processen bör du läsa [Felsöka Microsoft Defender Antivirus,](troubleshoot-reporting.md)uppfylla alla krav och vidta andra föreslagna felsökningssteg.</span><span class="sxs-lookup"><span data-stu-id="91456-108">Before attempting this process, ensure you have read [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.</span></span>
+<span data-ttu-id="44cec-108">Innan du försöker med den här processen bör du läsa [Felsöka Microsoft Defender Antivirus,](troubleshoot-reporting.md)uppfylla alla krav och vidta andra föreslagna felsökningssteg.</span><span class="sxs-lookup"><span data-stu-id="44cec-108">Before attempting this process, ensure you have read [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.</span></span>
 
-<span data-ttu-id="91456-109">På minst två enheter som inte rapporterar eller visas i Uppdateringsefterlevnad hämtar du .cab-diagnostikfilen genom att göra följande:</span><span class="sxs-lookup"><span data-stu-id="91456-109">On at least two devices that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by taking the following steps:</span></span>
+<span data-ttu-id="44cec-109">På minst två enheter som inte rapporterar eller visas i Uppdateringsefterlevnad hämtar du .cab-diagnostikfilen genom att göra följande:</span><span class="sxs-lookup"><span data-stu-id="44cec-109">On at least two devices that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by taking the following steps:</span></span>
 
-1. <span data-ttu-id="91456-110">Öppna en version på administratörsnivå av kommandotolken på följande sätt:</span><span class="sxs-lookup"><span data-stu-id="91456-110">Open an administrator-level version of the command prompt as follows:</span></span>
+1. <span data-ttu-id="44cec-110">Öppna en version på administratörsnivå av kommandotolken på följande sätt:</span><span class="sxs-lookup"><span data-stu-id="44cec-110">Open an administrator-level version of the command prompt as follows:</span></span>
         
-    <span data-ttu-id="91456-111">a.</span><span class="sxs-lookup"><span data-stu-id="91456-111">a.</span></span> <span data-ttu-id="91456-112">Öppna **Start-menyn.**</span><span class="sxs-lookup"><span data-stu-id="91456-112">Open the **Start** menu.</span></span>
+    <span data-ttu-id="44cec-111">a.</span><span class="sxs-lookup"><span data-stu-id="44cec-111">a.</span></span> <span data-ttu-id="44cec-112">Öppna **Start-menyn.**</span><span class="sxs-lookup"><span data-stu-id="44cec-112">Open the **Start** menu.</span></span>
 
-    <span data-ttu-id="91456-113">b.</span><span class="sxs-lookup"><span data-stu-id="91456-113">b.</span></span> <span data-ttu-id="91456-114">Skriv **cmd**.</span><span class="sxs-lookup"><span data-stu-id="91456-114">Type **cmd**.</span></span> <span data-ttu-id="91456-115">Högerklicka på **Kommandotolken och** klicka på **Kör som administratör.**</span><span class="sxs-lookup"><span data-stu-id="91456-115">Right-click on **Command Prompt** and click **Run as administrator**.</span></span>
+    <span data-ttu-id="44cec-113">b.</span><span class="sxs-lookup"><span data-stu-id="44cec-113">b.</span></span> <span data-ttu-id="44cec-114">Skriv **cmd**.</span><span class="sxs-lookup"><span data-stu-id="44cec-114">Type **cmd**.</span></span> <span data-ttu-id="44cec-115">Högerklicka på **Kommandotolken och** välj sedan **Kör som administratör.**</span><span class="sxs-lookup"><span data-stu-id="44cec-115">Right-click on **Command Prompt** and then select **Run as administrator**.</span></span>
 
-    <span data-ttu-id="91456-116">c.</span><span class="sxs-lookup"><span data-stu-id="91456-116">c.</span></span> <span data-ttu-id="91456-117">Ange administratörsautentiseringsuppgifter eller godkänn uppmaningen.</span><span class="sxs-lookup"><span data-stu-id="91456-117">Enter administrator credentials or approve the prompt.</span></span>
+    <span data-ttu-id="44cec-116">c.</span><span class="sxs-lookup"><span data-stu-id="44cec-116">c.</span></span> <span data-ttu-id="44cec-117">Ange administratörsautentiseringsuppgifter eller godkänn uppmaningen.</span><span class="sxs-lookup"><span data-stu-id="44cec-117">Specify administrator credentials or approve the prompt.</span></span>
         
-2. <span data-ttu-id="91456-118">Navigera till Windows Defender katalogen.</span><span class="sxs-lookup"><span data-stu-id="91456-118">Navigate to the Windows Defender directory.</span></span> <span data-ttu-id="91456-119">Som standard är det här `C:\Program Files\Windows Defender` .</span><span class="sxs-lookup"><span data-stu-id="91456-119">By default, this is `C:\Program Files\Windows Defender`.</span></span>
+2. <span data-ttu-id="44cec-118">Navigera till Windows Defender katalogen.</span><span class="sxs-lookup"><span data-stu-id="44cec-118">Navigate to the Windows Defender directory.</span></span> <span data-ttu-id="44cec-119">Som standard är det här `C:\Program Files\Windows Defender` .</span><span class="sxs-lookup"><span data-stu-id="44cec-119">By default, this is `C:\Program Files\Windows Defender`.</span></span>
 
-3. <span data-ttu-id="91456-120">Skriv in följande kommando och tryck sedan på **Retur**</span><span class="sxs-lookup"><span data-stu-id="91456-120">Type the following command, and then press **Enter**</span></span>
+3. <span data-ttu-id="44cec-120">Skriv in följande kommando och tryck sedan på **Retur**</span><span class="sxs-lookup"><span data-stu-id="44cec-120">Type the following command, and then press **Enter**</span></span>
         
     ```Dos
     mpcmdrun -getfiles
     ```
     
-4. <span data-ttu-id="91456-121">En .cab genereras som innehåller olika diagnostikloggar.</span><span class="sxs-lookup"><span data-stu-id="91456-121">A .cab file will be generated that contains various diagnostic logs.</span></span> <span data-ttu-id="91456-122">Platsen för filen anges i utdata i kommandotolken.</span><span class="sxs-lookup"><span data-stu-id="91456-122">The location of the file will be specified in the output in the command prompt.</span></span> <span data-ttu-id="91456-123">Platsen är som standard `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .</span><span class="sxs-lookup"><span data-stu-id="91456-123">By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.</span></span>
+4. <span data-ttu-id="44cec-121">En .cab genereras som innehåller olika diagnostikloggar.</span><span class="sxs-lookup"><span data-stu-id="44cec-121">A .cab file will be generated that contains various diagnostic logs.</span></span> <span data-ttu-id="44cec-122">Platsen för filen anges i utdata i kommandotolken.</span><span class="sxs-lookup"><span data-stu-id="44cec-122">The location of the file will be specified in the output in the command prompt.</span></span> <span data-ttu-id="44cec-123">Platsen är som standard `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .</span><span class="sxs-lookup"><span data-stu-id="44cec-123">By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.</span></span>
 
-5. <span data-ttu-id="91456-124">Kopiera dessa .cab till en plats som Kan nås av Microsoft Support.</span><span class="sxs-lookup"><span data-stu-id="91456-124">Copy these .cab files to a location that can be accessed by Microsoft support.</span></span> <span data-ttu-id="91456-125">Ett exempel kan vara en lösenordsskyddad OneDrive som du kan dela med oss.</span><span class="sxs-lookup"><span data-stu-id="91456-125">An example could be a password-protected OneDrive folder that you can share with us.</span></span>
+5. <span data-ttu-id="44cec-124">Kopiera dessa .cab till en plats som Kan nås av Microsoft Support.</span><span class="sxs-lookup"><span data-stu-id="44cec-124">Copy these .cab files to a location that can be accessed by Microsoft support.</span></span> <span data-ttu-id="44cec-125">Ett exempel kan vara en lösenordsskyddad OneDrive som du kan dela med oss.</span><span class="sxs-lookup"><span data-stu-id="44cec-125">An example could be a password-protected OneDrive folder that you can share with us.</span></span>
 
-6. <span data-ttu-id="91456-126">Skicka ett e-postmeddelande <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">med hjälp av e-postmallen</a>för uppdateringsefterlevnad och fyll i mallen med följande information:</span><span class="sxs-lookup"><span data-stu-id="91456-126">Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Update Compliance support email template</a>, and fill out the template with the following information:</span></span>
+6. <span data-ttu-id="44cec-126">Skicka ett e-postmeddelande <a href="mailto:ucsupport@microsoft.com?subject=MDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">med hjälp av e-postmallen</a>för uppdateringsefterlevnad och fyll i mallen med följande information:</span><span class="sxs-lookup"><span data-stu-id="44cec-126">Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=MDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">update compliance support email template</a>, and fill out the template with the following information:</span></span>
   
     ```
     I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:
@@ -70,6 +68,6 @@ ms.locfileid: "52274802"
     Please contact me at:
     ```
 
-## <a name="see-also"></a><span data-ttu-id="91456-127">Se även</span><span class="sxs-lookup"><span data-stu-id="91456-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="44cec-127">Se även</span><span class="sxs-lookup"><span data-stu-id="44cec-127">See also</span></span>
 
-- [<span data-ttu-id="91456-128">Felsöka Windows Defender Microsoft Defender Antivirus rapportering</span><span class="sxs-lookup"><span data-stu-id="91456-128">Troubleshoot Windows Defender Microsoft Defender Antivirus reporting</span></span>](troubleshoot-reporting.md)
+- [<span data-ttu-id="44cec-128">Felsöka Windows Defender Microsoft Defender Antivirus rapportering</span><span class="sxs-lookup"><span data-stu-id="44cec-128">Troubleshoot Windows Defender Microsoft Defender Antivirus reporting</span></span>](troubleshoot-reporting.md)
