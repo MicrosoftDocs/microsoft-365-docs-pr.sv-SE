@@ -431,6 +431,8 @@
               href: archive-webexteams-data.md
             - name: Webbsidor
               href: archive-webpagecapture-data.md
+            - name: Webbsidor
+              href: archive-webpagecapture-data.md
             - name: Arbetsplats från Facebook
               href: archive-workplacefromfacebook-data.md
             - name: XIP
@@ -457,6 +459,8 @@
               href: archive-telus-network-data.md
             - name: Verizon-nätverk
               href: archive-verizon-network-data.md
+            - name: WeChat (förhandsversion)
+              href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
         - name: Arbeta med en partner för att arkivera data från tredje part
