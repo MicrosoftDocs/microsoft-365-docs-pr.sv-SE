@@ -23,12 +23,12 @@ ms.custom:
 - commerce_billing
 description: Hitta din faktura eller ditt faktureringsutdrag i administrationscentret för Microsoft 365. Du kan också spara och skriva ut en kopia av fakturan.
 ms.date: 07/31/2020
-ms.openlocfilehash: 3c41e52803c78cc687134c6c68899466236ceca3
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7e37e296f37583e1fc0b2fc3474609e11c5a5e1f
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331916"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888355"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visa din faktura
 
@@ -105,4 +105,5 @@ Om du har ett saldo och vill betala det kan du göra det online. Se [Betala för
 
 [Betala med faktura, kreditkort eller bankkonto](pay-for-your-subscription.md) (artikel) \
 [Hantera betalningsmetoder](manage-payment-methods.md) (artikel) \
+[Faktureringsinformation för Microsoft 365 för företag i Mexiko](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (artikel) \
 [Betalningsalternativ för Minecraft: Education Edition](/education/windows/school-get-minecraft) (artikel)
