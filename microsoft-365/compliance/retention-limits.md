@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Förstå det högsta antalet principer och objekt per princip när det gäller principer för kvarhållning och kvarhållningsetiketter
-ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698970"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878058"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Begränsningar när det gäller principer för kvarhållning och kvarhållningsetiketter
 
@@ -82,3 +82,13 @@ Exempel från SharePoint:
 - **Lösning**: Skapa 20 kvarhållningsprinciper för SharePoint med en kvarhållningsperiod på 10 år som omfattar 100 specifika webbplatser och skapa 80 kvarhållningsprinciper för SharePoint med en kvarhållningsperiod på 4 år som omfattar 100 specifika webbplatser.
     
     Eftersom du inte behöver kvarhålla alla SharePoint-webbplatser måste du skapa kvarhållningsprinciper som specificerar de specifika webbplatserna. Eftersom en kvarhållningsprincip inte stöder fler än 100 angivna webbplatser måste du skapa flera principer för de två kvarhållningsperioderna. De här kvarhållningsprinciperna har ett maxantal webbplatser som ingår. Nästa nya webbplats som måste kvarhållas kräver en ny kvarhållningsprincip, oavsett hur lång kvarhållningsperioden är.
+
+## <a name="maximum-number-of-items-for-disposition"></a>Högsta antal objekt för disposition
+
+När det [dispositionen av innehåll](disposition.md) finns det några begränsningar du bör känna till:
+
+- 1 000 000 objekt som väntar på disposition per steg för varje bevarandeetikett
+
+- Dispositionsbevis i upp till sju år efter att objektet kasserades med en begränsning på 1 000 000 objekt per bevarandeetikett under perioden. 
+    
+    Om du behöver ett bevis på disposition som är högre än den här gränsen på 1 000 000 för objekt som markeras som arkivhandlingar kontaktar du [Microsoft Support](../business-video/get-help-support.md).

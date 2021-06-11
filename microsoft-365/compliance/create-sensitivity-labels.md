@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Ett krav för alla Microsoft Information Protection-lösningar: skapa, konfigurera och publicera känslighetsetiketter för att klassificera och skydda organisationens data.'
-ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244630"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878190"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Skapa och konfigurera känslighetsetiketter och deras principer
 
@@ -181,6 +181,9 @@ Om du vill redigera en befintlig etikettprincip markerar du den och väljer seda
 Med den här knappen startar du guiden **Skapa princip**, där du kan redigera vilka etiketter som ingår och etikettinställningarna. När du slutför guiden replikeras alla ändringar automatiskt till de valda användarna och tjänsterna.
 
 När du använder inbyggd etikettering för Office-appar i Windows, macOS, iOS och Android ser användarna nya etiketter inom fyra timmar, och inom en timme för Word, Excel och PowerPoint på webben när du uppdaterar webbläsaren. Det tar dock upp till 24 timmar innan ändringarna kopieras till alla appar och tjänster.
+
+> [!NOTE]
+> Andra program och tjänster som stöder känslighetsetiketter kan uppdateras oftare än ett dygn med sina egna uppdateringsscheman och utlösare för principuppdateringar. Mer information finns i dokumentationen. För Azure Information Protection-klient för enhetlig etikettmärkning, se raden **Principuppdatering** i tabellen [Detaljerade jämförelser för Azure Information Protection-klienter](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients) tabell.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Ytterligare inställningar för etikettprinciper med Säkerhets- och efterlevnadscenter via PowerShell
 
