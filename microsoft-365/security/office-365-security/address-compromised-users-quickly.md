@@ -11,20 +11,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-ms.date: 02/25/2020
+ms.date: 06/10/2021
 description: Lär dig hur du kan snabba upp processen med att identifiera och åtgärda komprometterade användarkonton med funktioner för automatisk undersökning och svar i Microsoft Defender för Office 365 abonnemang 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: cd84617230e774b92902ef3d11a365c1965ac814
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934699"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904146"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adress komprometterade användarkonton med automatiserad undersökning och svar
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gäller för**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -71,7 +69,7 @@ När ett användarkonto har komprometterats utlöses aviseringar. Och i vissa fa
 
 Du har några alternativ för att navigera till en lista med begränsade användare. I säkerhets- och efterlevnadscentret för & kan du till exempel gå till **Granska** begränsade användare \> **för** \> **hothantering.** I följande procedur beskrivs  navigering med instrumentpanelen Aviseringar, som är ett bra sätt att se olika typer av aviseringar som kan ha utlösts.
 
-1. Gå till <https://protection.office.com> och logga in.
+1. Gå till [https://protection.office.com](https://protection.office.com) och logga in.
 
 2. Välj Instrumentpanelen aviseringar  i \> **navigeringsfönstret.**
 

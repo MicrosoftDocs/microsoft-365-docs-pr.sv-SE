@@ -18,13 +18,13 @@ ms.collection:
 description: Läs mer om åtgärder i funktioner för automatisk undersökning och svar i Microsoft Defender för Office 365 abonnemang 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.date: 01/29/2021
-ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.date: 06/10/2021
+ms.openlocfilehash: 7894a9aa38239bf661c809cce96ea2a2a96c3725
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878778"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904134"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Granska och hantera åtgärdsåtgärder i Office 365
 
@@ -52,16 +52,16 @@ Dessa åtgärder vidtas inte om inte och tills ditt säkerhetsoperationsteam god
    - Välj **Godkänn** för att påbörja en väntande åtgärd.
    - Välj **Avvisa** för att förhindra att en väntande åtgärd vidtas.
 
-## <a name="undo-one-remediation-action"></a>Ångra en åtgärd
+## <a name="change-or-undo-one-remediation-action"></a>Ändra eller ångra en åtgärd
 
 1. Gå till Åtgärdscenter ( <https://security.microsoft.com/action-center> ) och logga in.
-2. Välj **en åtgärd** som du vill ångra på fliken Historik.
+2. På fliken **Historik** väljer du en åtgärd som du vill ändra eller ångra.
 3. I fönstret till höger på skärmen väljer du **Ångra**.
 
-## <a name="undo-multiple-remediation-actions"></a>Ångra flera åtgärder
+## <a name="change-or-undo-multiple-remediation-actions"></a>Ändra eller ångra flera åtgärder
 
 1. Gå till Åtgärdscenter ( <https://security.microsoft.com/action-center> ) och logga in.
-2. Markera **de åtgärder** du vill ångra på fliken Historik. Se till att markera objekt som har samma åtgärdstyp. Ett utfällt fönster öppnas.
+2. Markera de **åtgärder** du vill ändra eller ångra på fliken Historik. Se till att markera objekt som har samma åtgärdstyp. Ett utfällt fönster öppnas.
 3. Välj Ångra i det utfällade fönstret.
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Ta bort en fil från karantän på flera enheter

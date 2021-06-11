@@ -11,18 +11,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 02/03/2021
+ms.date: 06/10/2021
 ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c60620d2a589c8473764b810d1fcb0e24f674451
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845576"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904062"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Skydda viktiga mappar med kontrollerad mappåtkomst
 
@@ -89,9 +89,9 @@ Windows-systemmappar skyddas som standard tillsammans med flera andra mappar:
 
 Reglerad mappåtkomst kräver [Microsoft Defender Antivirus skydd i realtid.](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>Granska händelser i kontrollerad mappåtkomst i Microsoft Defender Säkerhetscenter
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Granska händelser i kontrollerad mappåtkomst i Microsoft 365 Defender-portalen
 
-Defender för Endpoint tillhandahåller detaljerad rapportering om händelser och block som en del av dess scenarier [för aviseringsundersökning.](investigate-alerts.md)
+Defender för Endpoint tillhandahåller detaljerad rapportering om händelser och block som en del av dess scenarier [för aviseringsundersökning](investigate-alerts.md) i Microsoft 365 Defender-portalen. (Se [Microsoft Defender för slutpunkt i Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).)
 
 Du kan fråga Microsoft Defender efter Slutpunktsdata med hjälp av [Avancerad sökning](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection). Om du använder granskningsläge kan [](advanced-hunting-overview.md) [du](audit-windows-defender.md)använda avancerad sökning för att se hur styrda inställningar för mappåtkomst skulle påverka din miljö om de var aktiverade.
 
@@ -135,8 +135,4 @@ Du kan använda Windows-säkerhet för att visa listan med mappar som skyddas av
 > [!NOTE]
 > [Windows-systemmappar](#windows-system-folders-are-protected-by-default) är skyddade som standard och du kan inte ta bort dem från listan.
 
-## <a name="see-also"></a>Se även
 
-- [Utvärdera kontrollerad mappåtkomst](evaluate-controlled-folder-access.md)
-- [Anpassa kontrollerad mappåtkomst](customize-controlled-folders.md)
-- [Skydda fler mappar](customize-controlled-folders.md#protect-additional-folders)

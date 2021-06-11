@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7686f28646135986a78b4c269e41e2fc3a70dff9
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274790"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904050"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Samla in Microsoft Defender AV-diagnostikdata
 
@@ -43,7 +43,7 @@ På minst två enheter med samma problem hämtar du .cab-diagnostikfilen genom a
 
     a. Öppna **Start-menyn.**
 
-    b. Skriv **cmd**. Högerklicka på **Kommandotolken och** klicka på **Kör som administratör.**
+    b. Skriv **cmd**. Högerklicka på **Kommandotolken och** välj sedan **Kör som administratör.**
 
     c. Ange administratörsautentiseringsuppgifter eller godkänn uppmaningen.
 

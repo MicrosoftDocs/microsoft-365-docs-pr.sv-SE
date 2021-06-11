@@ -6,7 +6,7 @@ keywords: integrera, Microsoft Defender, Microsoft Defender för Slutpunkt
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 01/21/2021
+ms.date: 06/10/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -19,12 +19,12 @@ description: Använd Microsoft Defender för Office 365 microsoft Defender för 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f1d92d2433267b89398c7f7f582a8d1ee8cdba5
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 63ae9f8c1136a973e4fccb63ecfbaee2639c3f6f
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878610"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904086"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Använda Microsoft Defender för Office 365 tillsammans med Microsoft Defender för Endpoint
 
@@ -39,24 +39,24 @@ I följande bild visas hur fliken **Enheter ser** ut när du har aktiverat Micro
 
 ![När Microsoft Defender för slutpunkt är aktiverat visas en lista över enheter med aviseringar.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-I det här exemplet kan du se att mottagarna av det identifierade e-postmeddelandet har fyra enheter och en har en avisering. Om du klickar på länken för en enhet öppnas sidan i Microsoft Defender Säkerhetscenter ( <https://securitycenter.windows.com> ).
+I det här exemplet kan du se att mottagarna av det identifierade e-postmeddelandet har fyra enheter och en har en avisering. Om du klickar på länken för en enhet öppnas sidan [Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md) (tidigare Microsoft Defender Säkerhetscenter).
 
 > [!TIP]
-> **[Läs mer om Microsoft Defender Säkerhetscenter](/windows/security/threat-protection/microsoft-defender-atp/use)** (kallas även Microsoft Defender för Endpoint-portalen).)
+> Defender Microsoft 365 portalen ersätter den Microsoft Defender Säkerhetscenter. Se [Microsoft Defender för slutpunkt i Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
 ## <a name="requirements"></a>Krav
 
 - Din organisation måste ha Microsoft Defender för Office 365 (eller Office 365 E5) och Microsoft Defender för Slutpunkt.
 
-- Du måste vara global administratör eller ha en säkerhetsadministratörsroll (till exempel säkerhetsadministratör) som har [tilldelats i & Säkerhets- och efterlevnadscenter.](https://protection.office.com) (Se [Behörigheter i säkerhets- & Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md))
+- Du måste vara global administratör eller ha en säkerhetsadministratörsroll (till exempel säkerhetsadministratör) som tilldelats Microsoft 365. (Se [Behörigheter i säkerhets- & Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md))
 
-- Du måste ha tillgång till både [Utforskaren (eller](threat-explorer.md) identifieringar i realtid) i säkerhets- & och i Microsoft Defender Säkerhetscenter.
+- Du måste ha tillgång [till Utforskaren (eller identifieringar i realtid).](threat-explorer.md)
 
 ## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>Integrera Microsoft Defender för Office 365 med Microsoft Defender för Slutpunkt
 
-Integrering av Microsoft Defender för Office 365 med Microsoft Defender för slutpunkt konfigureras med hjälp av både Säkerhets- och &-efterlevnadscentret OCH Microsoft Defender Säkerhetscenter.
+Integrering av Microsoft Defender för Office 365 med Microsoft Defender för slutpunkt konfigureras i både Defender för Slutpunkt och Defender för Office 365.
 
-1. Som global administratör eller säkerhetsadministratör går du till <https://protection.office.com> och loggar in. (Då kommer du till Office 365 Säkerhets- & Efterlevnadscenter.)
+1. Som global administratör eller säkerhetsadministratör går du till [https://protection.office.com](https://protection.office.com) och loggar in. (Då kommer du till Office 365 Säkerhets- & Efterlevnadscenter.)
 
 2. Välj Hothanteringsutforskaren **i** \> **navigeringsfönstret.**
 
@@ -68,7 +68,7 @@ Integrering av Microsoft Defender för Office 365 med Microsoft Defender för sl
 
    ![Microsoft Defender för Slutpunktsanslutning](../../media/Explorer-WDATPConnection-dialog.png)
 
-5. Gå till Microsoft Defender Säkerhetscenter ( <https://securitycenter.windows.com> ).
+5. Gå till Microsoft 365 Defender-portalen ( [https://security.microsoft.com](https://security.microsoft.com) .
 
 6. I navigeringsfältet väljer **du Inställningar**. Välj sedan **Avancerade funktioner** under **Allmänt.**
 

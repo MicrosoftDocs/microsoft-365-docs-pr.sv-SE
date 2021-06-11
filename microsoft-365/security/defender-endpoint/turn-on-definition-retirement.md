@@ -10,18 +10,18 @@ ms.sitesec: library
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/07/2021
+ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 66b2e882a0f6de21e27dabb3a4bfe2fe113bcb32
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 505270d319a78de20bf6fed01b7ca79c9fc2b400
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296496"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903810"
 ---
 # <a name="turn-on-definition-retirement"></a>Aktivera att definitionen inaktiveras
 
@@ -50,10 +50,3 @@ Du kan konfigurera att en definition ska sluta användas med grupprinciper. Defi
 > [!TIP]
 > Använder du grupprincipobjekt lokalt? Se hur de översätter i molnet. [Analysera lokala grupprincipobjekt med grupprincipanalyser i olika Microsoft Endpoint Manager – förhandsversion.](/mem/intune/configuration/group-policy-analytics) 
   
-## <a name="related-articles"></a>Relaterade artiklar
-
-- [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)
- 
-- [Aktivera molnbaserat skydd](enable-cloud-protection-microsoft-defender-antivirus.md)
-
-- [Så här skapar och distribuerar du skydd mot skadlig programvara: Molnskyddstjänst](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

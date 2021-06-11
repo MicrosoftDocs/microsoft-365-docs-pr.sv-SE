@@ -16,12 +16,12 @@ ms.collection:
 description: Administratörer kan lära sig att identifiera särskilda grupper av användare med användartaggar i Microsoft Defender för Office 365 abonnemang 2. Taggfiltrering är tillgängligt i aviseringar, rapporter och undersökningar i Microsoft Defender för Office 365 för att snabbt identifiera de taggade användarna.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fb948d63f7bc42839d6fae8a2138d4ad48d81f6
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 105e927e50f7b1d1217587587b8d7ee3b7d6bd4c
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879174"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904110"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Användartaggar i Microsoft Defender för Office 365
 
@@ -41,7 +41,9 @@ Om din organisation har Defender för Office 365 abonnemang 2 (ingår i din pren
 När du har tillämpat systemtaggar eller anpassade taggar för användare kan du använda de taggarna som filter i aviseringar, rapporter och undersökningar:
 
 - [Varningar](alerts.md)
+- [Anpassade aviseringsprinciper](../../compliance/alert-policies.md#viewing-alerts)
 - [Hotutforskaren och identifiering i realtid](threat-explorer.md)
+- [Sidan E-postenhet](mdo-email-entity-page.md#other-innovations)
 - [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
 - [Kampanjvyer](campaigns.md)
 - För prioritetskonton kan du använda rapporten [E-postproblem](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) för prioritetskonton Exchange administrationscenter (EAC).

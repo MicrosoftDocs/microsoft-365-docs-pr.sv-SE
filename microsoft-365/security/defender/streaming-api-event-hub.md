@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c62f175fc8227f64b9f18de78a2a793b2201691c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6f5d04d35c8c4fec18e1a689c51ecbc32d416adf
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782375"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903822"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Konfigurera Microsoft 365 Defender för att strömma Advanced Hunting-händelser till Azure Event Hub
 
@@ -42,9 +42,12 @@ ms.locfileid: "52782375"
 3. Skapa ett namnområde för händelsehubben, gå till Händelsehubben **>** Lägg till och välj prissättningsnivå, dataflödesenheter och Automatisk härdning som är lämpligt för förväntad belastning. Mer information finns i Priser [– | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
 ### <a name="add-contributor-permissions"></a>Lägga till deltagarbehörigheter 
-När namnområdet för händelsehubben har skapats måste du lägga till programmets huvudnamn för registreringstjänsten som läsare, Azure Event Hub-datamottagare och användaren som ska logga in på Microsoft 365 Defender som deltagare (detta kan också göras på resursgrupp- eller prenumerationsnivå). 
+När namnområdet i Händelsehubben har skapats måste du:
+1. Definiera den användare som ska loggas in på Microsoft 365 Defender som deltagare.
 
-Gå till **namnområdet i händelsehubben > i Access-kontroll (IAM) > Lägg** till och verifiera under **Rolltilldelningar.**
+2. Om du ansluter till ett program lägger du till Tjänsten för registrering av appar som läsare, Azure Event Hub Data Receiver (detta kan också göras på resursgrupp- eller prenumerationsnivå). 
+
+    Gå till **namnområdet i händelsehubben > i Access-kontroll (IAM) > Lägg** till och verifiera under **Rolltilldelningar.**
 
 ## <a name="enable-raw-data-streaming"></a>Aktivera direktuppspelning av rådata
 
@@ -70,7 +73,7 @@ Gå till **namnområdet i händelsehubben > i Access-kontroll (IAM) > Lägg** ti
 
 ## <a name="the-schema-of-the-events-in-azure-event-hub"></a>Schemat för händelserna i Azure Event Hub
 
-```
+```JSON
 {
     "records": [
                     {
@@ -103,7 +106,7 @@ Så här hämtar du datatyperna för händelseegenskaper:
 
 2. Kör följande fråga för att hämta mappningen av datatyper för varje händelse:
  
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 

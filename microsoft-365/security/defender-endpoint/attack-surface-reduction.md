@@ -16,16 +16,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 55b06ca25047fe615bd0011528fbdbe5112a4533
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 58c2230d3a2e3323f7b9a315ca5d2a049f5f44fb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844988"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903858"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Använd minskningsregler för attackytan för att förhindra skadlig smitta
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 
@@ -97,7 +95,7 @@ När en minskningsregel för attackytan utlöses visas ett meddelande på enhete
 
 När vissa minskningsregler för attackytan utlöses genereras dessutom varningar.
 
-Meddelanden och alla aviseringar som genereras kan visas i Microsoft Defender Säkerhetscenter ( ) och i [https://securitycenter.windows.com](https://securitycenter.windows.com) säkerhetscentret Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ).
+Meddelanden och alla aviseringar som genereras kan visas i Microsoft 365 Defender-portalen [https://security.microsoft.com](https://security.microsoft.com) () (kallades [tidigare för Microsoft Defender Säkerhetscenter).](microsoft-defender-security-center.md)
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Avancerad sökning och minskning av attackytor
 
@@ -116,13 +114,13 @@ Du kan ange minskningsregler för attackytan för enheter som kör någon av fö
 - Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Även om minskningsregler för attackytan inte kräver en [E5 Windows-licens,](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. De här funktionerna är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](microsoft-defender-endpoint.md)samt rapporterings- och konfigurationsfunktioner [i Microsoft 365 säkerhetscenter.](/microsoft-365/security/defender/overview-security-center) Dessa avancerade funktioner är inte tillgängliga med en licens från Windows Professional eller Windows E3. Men om du har dessa licenser kan du använda Loggboken och Microsoft Defender Antivirus för att granska dina attack surface-minskningsregelhändelser.
+Även om minskningsregler för attackytan inte kräver en [E5 Windows-licens,](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. De här funktionerna är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](microsoft-defender-endpoint.md)samt rapporterings- och konfigurationsfunktioner [i Microsoft 365 Defender.](/microsoft-365/security/defender/overview-security-center) Dessa avancerade funktioner är inte tillgängliga med en licens från Windows Professional eller Windows E3. Men om du har dessa licenser kan du använda Loggboken och Microsoft Defender Antivirus för att granska dina attack surface-minskningsregelhändelser.
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Granska minskningar av attackytor i Microsoft Defender Säkerhetscenter
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Granska händelser för att minska attackytan i Microsoft 365 Defender-portalen
 
 Defender för Endpoint tillhandahåller detaljerad rapportering för händelser och block som en del av scenarier för aviseringsundersökning.
 
-Du kan fråga Defender om slutpunktsdata genom att använda [avancerad sökning](advanced-hunting-query-language.md). Om du kör granskningsläge [kan du](audit-windows-defender.md)använda avancerad sökning för att förstå hur minskningar av attackytor kan påverka din miljö.
+Du kan köra frågor mot Defender för slutpunktsdata [i Microsoft 365 Defender](microsoft-defender-security-center.md) genom att använda avancerad [sökning](advanced-hunting-query-language.md). Om du kör granskningsläge [kan du](audit-windows-defender.md)använda avancerad sökning för att förstå hur minskningar av attackytor kan påverka din miljö.
 
 Här är en exempelfråga:
 
@@ -136,9 +134,13 @@ DeviceEvents
 Du kan granska Windows för att visa händelser som genereras av minskningsregler för attackytan:
 
 1. Ladda ned [utvärderingspaketet](https://aka.ms/mp7z2w) och extrahera filen *cfa-events.xml* till en lättillgänglig plats på enheten.
+
 2. Ange orden, *Loggboken*, på Start-menyn för att öppna Windows Loggboken.
+
 3. Under **Åtgärder** väljer du **Importera anpassad vy...**.
+
 4. Välj filen *cfa-events.xml* där den extraherades. Du kan också [kopiera XML direkt.](event-views.md)
+
 5. Välj **OK**.
 
 Du kan skapa en anpassad vy som filtrerar händelser för att endast visa följande händelser, som alla är relaterade till kontrollerad mappåtkomst:
@@ -503,7 +505,7 @@ Den här regeln ger ett extra skydd mot utpressningstrojaner. Den använder båd
 Regeln tar brukar vara försiktig för att förhindra utpressningstrojaner.
 
 > [!NOTE]
-> Du måste [aktivera moln levererat skydd om du](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) vill använda den här regeln.
+> Du måste [aktivera moln levererat skydd om du](enable-cloud-protection-microsoft-defender-antivirus.md) vill använda den här regeln.
 
 Den här regeln infördes i:
 
@@ -518,9 +520,4 @@ Konfigurationshanterarens namn: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>Se även
 
-- [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction-faq.md)
-- [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
-- [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)
-- [Kompatibilitet med Microsoft Defender Antivirus antivirus- och antimalwarelösningar](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

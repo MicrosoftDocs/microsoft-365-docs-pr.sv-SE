@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1cd29c3a631334ee3a2791cca3c7ac1c83a1692f
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933595"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903834"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint
 
@@ -41,7 +41,7 @@ I slutpunktsskyddslösningar är en falsk positivhet en enhet, till exempel en f
 
 ![Definition av falska positiva och negativa tal i Defender för Slutpunkt](images/false-positives-overview.png)
 
-Som tur är går det att vidta åtgärder för att åtgärda och minska den här typen av problem. Om du ser falska positiva/negativa tal i [Microsoft Defender Säkerhetscenter](../defender/microsoft-365-security-center-mde.md)kan dina säkerhetsåtgärder vidta åtgärder för att åtgärda dem på följande sätt:
+Som tur är går det att vidta åtgärder för att åtgärda och minska den här typen av problem. Om du ser falska positiva/negativa resultat i [Microsoft 365 Defender](microsoft-defender-security-center.md) (tidigare Microsoft Defender Säkerhetscenter) kan dina säkerhetsåtgärder vidta åtgärder för att åtgärda dem på följande sätt:
 
 1.  [Granska och klassificera aviseringar](#part-1-review-and-classify-alerts) 
 2.  [Granska åtgärder som har vidtagits](#part-2-review-remediation-actions)
@@ -66,7 +66,7 @@ Att hantera dina varningar och klassificera sant/falskt-positiva hjälper till a
 
 Innan du klassificerar eller ignorerar en avisering måste du avgöra om aviseringen är korrekt, en falsk positiv eller en varning.
 
-1. Gå till Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) och logga in.
+1. Gå till Microsoft 365 Defender-portalen [https://security.microsoft.com](https://security.microsoft.com) () och logga in.
 
 2. Välj Aviseringskö **i navigeringsfönstret.**
 
@@ -82,9 +82,9 @@ Innan du klassificerar eller ignorerar en avisering måste du avgöra om aviseri
 
 ### <a name="classify-an-alert"></a>Klassificera en avisering
 
-Aviseringar kan klassificeras som falska positiva resultat eller sant positiva resultat i Microsoft Defender Säkerhetscenter. Genom att klassificera aviseringar kan du träna Microsoft Defender för Endpoint så att du med tiden ser fler sanna aviseringar och färre falska aviseringar.
+Aviseringar kan klassificeras som falska positiva resultat eller sant positiva resultat i Microsoft 365 Defender. Genom att klassificera aviseringar kan du träna Microsoft Defender för Endpoint så att du med tiden ser fler sanna aviseringar och färre falska aviseringar.
 
-1. Gå till Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) och logga in.
+1. Gå till Microsoft 365 Defender-portalen [https://security.microsoft.com](https://security.microsoft.com) () och logga in.
 
 2. Välj **Aviseringskö** och välj sedan en avisering.
 
@@ -97,9 +97,9 @@ Aviseringar kan klassificeras som falska positiva resultat eller sant positiva r
 
 ### <a name="suppress-an-alert"></a>Ignorera en avisering
 
-Om du har aviseringar som antingen är falska positiva eller som är sanna positiva, men för oimporterande händelser, kan du dölja dessa aviseringar i Microsoft Defender Säkerhetscenter. Att dölja aviseringar hjälper till att minska bruset i instrumentpanelen för säkerhetsåtgärder. 
+Om du har aviseringar som antingen är falska positiva eller som är sanna positiva, men för oimporterande händelser, kan du dölja dessa aviseringar i Microsoft 365 Defender. Att dölja aviseringar hjälper till att minska bruset i instrumentpanelen för säkerhetsåtgärder. 
 
-1. Gå till Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) och logga in.
+1. Gå till Microsoft 365 Defender-portalen [https://security.microsoft.com](https://security.microsoft.com) () och logga in.
 
 2. I navigeringsfönstret väljer du **Aviseringskö**.
 
@@ -135,7 +135,7 @@ När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or
 
 ### <a name="review-completed-actions"></a>Granska slutförda åtgärder
 
-1. Gå till Åtgärdscenter ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) och logga in. 
+1. Gå till Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) och logga in. 
 
 2. Välj fliken **Historik** för att visa en lista över åtgärder som har vidtagits.  
 
@@ -143,7 +143,7 @@ När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>Återställa en fil i karantän från Åtgärdscenter
 
-1. Gå till Åtgärdscenter ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) och logga in.
+1. Gå till Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) och logga in. 
 
 2. Välj **en åtgärd** som du vill ångra på fliken Historik.
 
@@ -151,7 +151,7 @@ När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or
 
 ### <a name="undo-multiple-actions-at-one-time"></a>Ångra flera åtgärder samtidigt
 
-1. Gå till Åtgärdscenter ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) och logga in.
+1. Gå till Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) och logga in. 
 
 2. Markera **de åtgärder** du vill ångra på fliken Historik.
 
@@ -162,7 +162,7 @@ När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or
 > [!div class="mx-imgBorder"]
 > ![Karantänfil](images/autoir-quarantine-file-1.png)
 
-1. Gå till Åtgärdscenter ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) och logga in.
+1. Gå till Åtgärdscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) och logga in. 
 
 2. På fliken **Historik** väljer du en fil som har karantänfilen **Åtgärdstyp.**
 
@@ -184,15 +184,12 @@ Du kan återställa och ta bort en fil från karantän om du har fastställt att
     "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
     ```
 
-    > [!NOTE]
-    > I vissa fall kan **ThreatName visas** som: `EUS:Win32/
-CustomEnterpriseBlock!cl` . Defender för Endpoint återställer alla egna blockerade filer som har satts i karantän på den här enheten under de senaste 30 dagarna.
-
     > [!IMPORTANT]
+    > I vissa fall kan **ThreatName visas** som `EUS:Win32/
+      CustomEnterpriseBlock!cl` . Defender för Endpoint återställer alla egna blockerade filer som har satts i karantän på den här enheten under de senaste 30 dagarna.
     > En fil som har satts i karantän som ett potentiellt nätverkshot kanske inte kan återställas. Om en användare försöker återställa filen efter karantänen är filen kanske inte tillgänglig. Det kan bero på att systemet inte längre har nätverksautentiseringsuppgifter för att få åtkomst till filen. Vanligtvis beror det på en tillfällig inloggning till ett system eller en delad mapp och åtkomsttoken har upphört att gälla.
 
 3. I fönstret till höger på skärmen väljer du Använd för **fler X-instanser** av den här filen och sedan **Ångra**. 
-
 
 ## <a name="part-3-review-or-define-exclusions"></a>Del 3: Granska eller definiera undantag
 
@@ -212,7 +209,7 @@ Procedurerna i det här avsnittet beskriver hur du definierar undantag och indik
 I allmänhet behöver du inte definiera undantag för Microsoft Defender Antivirus. Se till att du definierar undantag sparsamt och att du endast tar med filer, mappar, processer och process öppna filer som resulterar i falska positiva resultat. Kontrollera även regelbundet att du har definierat undantag. Vi rekommenderar att [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) du använder för att definiera eller redigera dina undantag för antivirus. Du kan emellertid använda andra metoder, till exempel [Grupprincip](/azure/active-directory-domain-services/manage-group-policy) (se [Hantera Microsoft Defender för slutpunkt).](manage-atp-post-migration.md)
 
 > [!TIP]
-> Behöver du hjälp med undantag för antivirusprogram? Se [Konfigurera och validera undantag för Microsoft Defender Antivirus genomsökningar](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
+> Behöver du hjälp med undantag för antivirusprogram? Se [Konfigurera och validera undantag för Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md).
 
 #### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>Använda Microsoft Endpoint Manager för att hantera undantag för antivirus (för befintliga principer)
 
@@ -250,7 +247,7 @@ I allmänhet behöver du inte definiera undantag för Microsoft Defender Antivir
 
 [Indikatorer](/microsoft-365/security/defender-endpoint/manage-indicators) (särskilt indikatorer för kompromettering och IOC) gör det möjligt för teamet med säkerhetsåtgärder att definiera identifiering, skydd och undantag från enheter. Du kan till exempel ange att vissa filer ska utelämnas från genomsökningar och åtgärdsåtgärder i Microsoft Defender för Slutpunkt. Indikatorer kan också användas för att generera aviseringar för vissa filer, IP-adresser eller URL-adresser.
 
-Om du vill ange enheter som undantag för Microsoft Defender för Endpoint skapar du "tillåt"-indikatorer för de enheterna. Sådana ["tillåt"-indikatorer](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)i Microsoft Defender för Endpoint gäller för nästa generations skydd , [identifiering och åtgärd på slutpunkt](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)och [automatiserad undersökning & åtgärd](/microsoft-365/security/defender-endpoint/automated-investigations).
+Om du vill ange enheter som undantag för Microsoft Defender för Endpoint skapar du "tillåt"-indikatorer för de enheterna. Sådana ["tillåt"-indikatorer](microsoft-defender-antivirus-in-windows-10.md)i Microsoft Defender för Endpoint gäller för nästa generations skydd , [identifiering och åtgärd på slutpunkt](overview-endpoint-detection-response.md)och [automatiserad undersökning & åtgärd](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 "Tillåt"-indikatorer kan skapas för:
 
@@ -279,14 +276,15 @@ Innan du skapar indikatorer för IP-adresser, URL:er eller domäner bör du kont
 - Antimalware client version is 4.18.1906.x or later 
 - Enheter med Windows 10, version 1709 eller senare 
 
-Anpassade nätverksindikatorer är aktiverat i Microsoft Defender Säkerhetscenter (se [Avancerade funktioner)](/microsoft-365/security/defender-endpoint/advanced-features)   
+Anpassade nätverksindikatorer är aktiverat i Microsoft 365 [Defender.](microsoft-defender-security-center.md) Mer information finns i [Avancerade funktioner.](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-application-certificates"></a>Indikatorer för programcertifikat 
 
 När du [skapar en "tillåt"-indikator](/microsoft-365/security/defender-endpoint/indicator-certificates)för ett programcertifikat förhindrar det att program, till exempel internt utvecklade program, som din organisation använder blockeras. `.CER` eller `.PEM` så stöds filnamnstillägg.   
 
 Innan du skapar indikatorer för programcertifikat ska du kontrollera att följande krav uppfylls:
-- Microsoft Defender Antivirus är konfigurerat med molnbaserat skydd aktiverat (se [Hantera molnbaserat skydd)](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
+
+- Microsoft Defender Antivirus är konfigurerat med molnbaserat skydd aktiverat (se [Hantera molnbaserat skydd)](deploy-manage-report-microsoft-defender-antivirus.md)
 - Antimalware client version is 4.18.1901.x or later 
 - Enheter kör Windows 10, version 1703 eller senare. Windows Server 2016; eller Windows Server 2019 
 - Definitioner av skydd mot virus och hot är uppdaterade  
@@ -444,7 +442,7 @@ Vi rekommenderar att [Microsoft Endpoint Manager kan](/mem/endpoint-manager-over
 
 Kontakta teknisk support om du har gått igenom alla steg i den här artikeln och fortfarande behöver hjälp.
 
-1. Gå till Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) och logga in.
+1. Gå till Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) och logga in.
 
 2. Välj frågetecken (**?**) i det övre högra hörnet och välj sedan **Microsoft support.**
 
@@ -454,4 +452,4 @@ Kontakta teknisk support om du har gått igenom alla steg i den här artikeln oc
 
 [Hantera Microsoft Defender för Slutpunkt](manage-atp-post-migration.md)
 
-[Översikt över Microsoft Defender Säkerhetscenter](/microsoft-365/security/defender-endpoint/use) 
+[Översikt över Microsoft 365 Defender-portalen](/microsoft-365/security/defender-endpoint/use) 
