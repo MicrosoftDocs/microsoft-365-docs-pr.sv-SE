@@ -19,24 +19,24 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296005"
 ---
-# <a name="contact-support-for-jordan"></a><span data-ttu-id="b9b77-103">Kontakta supporten för Jordan</span><span class="sxs-lookup"><span data-stu-id="b9b77-103">Contact support for Jordan</span></span>
+# <a name="contact-support-for-jordan"></a><span data-ttu-id="12c50-103">Kontakta supporten för Jordan</span><span class="sxs-lookup"><span data-stu-id="12c50-103">Contact support for Jordan</span></span>
 
-<span data-ttu-id="b9b77-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="b9b77-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="12c50-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="12c50-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b9b77-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="b9b77-105">Phone number</span></span>
-<span data-ttu-id="b9b77-106">18 800 000</span><span class="sxs-lookup"><span data-stu-id="b9b77-106">18 800 000</span></span>
+## <a name="phone-number"></a><span data-ttu-id="12c50-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="12c50-105">Phone number</span></span>
+<span data-ttu-id="12c50-106">18 800 000</span><span class="sxs-lookup"><span data-stu-id="12c50-106">18 800 000</span></span>
 
-<span data-ttu-id="b9b77-107">När du har ringt anger du 877 663 5075</span><span class="sxs-lookup"><span data-stu-id="b9b77-107">After dialing, enter 877 663 5075</span></span>
+<span data-ttu-id="12c50-107">När du har ringt anger du 877 663 5075</span><span class="sxs-lookup"><span data-stu-id="12c50-107">After dialing, enter 877 663 5075</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b9b77-108">Tider</span><span class="sxs-lookup"><span data-stu-id="b9b77-108">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b9b77-109">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="b9b77-109">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="12c50-108">Tider</span><span class="sxs-lookup"><span data-stu-id="12c50-108">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="12c50-109">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="12c50-109">Billing Support:</span></span>
 
-<span data-ttu-id="b9b77-110">Arabiska: Sun-Thu 10–18</span><span class="sxs-lookup"><span data-stu-id="b9b77-110">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="12c50-110">Arabiska: Sun-Thu 10–18</span><span class="sxs-lookup"><span data-stu-id="12c50-110">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="b9b77-111">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="b9b77-111">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="12c50-111">Engelska: Mon-Fri 10:00–18:00</span><span class="sxs-lookup"><span data-stu-id="12c50-111">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b9b77-112">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="b9b77-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="12c50-112">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="12c50-112">Technical Support:</span></span>
 
-<span data-ttu-id="b9b77-113">Arabiska: Sun-Thu 10–18</span><span class="sxs-lookup"><span data-stu-id="b9b77-113">Arabic: Sun-Thu 10 AM-6 PM</span></span>
+<span data-ttu-id="12c50-113">Arabiska: Sun-Thu 10–18</span><span class="sxs-lookup"><span data-stu-id="12c50-113">Arabic: Sun-Thu 10 AM-6 PM</span></span>
 
-<span data-ttu-id="b9b77-114">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="b9b77-114">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="12c50-114">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="12c50-114">English: 24 hours a day, 7 days a week</span></span>

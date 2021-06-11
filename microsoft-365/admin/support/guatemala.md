@@ -19,22 +19,22 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296137"
 ---
-# <a name="contact-support-for-guatemala"></a><span data-ttu-id="bb4a1-103">Kontakta supporten för Så här ser det ut</span><span class="sxs-lookup"><span data-stu-id="bb4a1-103">Contact support for Guatemala</span></span>
+# <a name="contact-support-for-guatemala"></a><span data-ttu-id="4676f-103">Kontakta supporten för Så här ser det ut</span><span class="sxs-lookup"><span data-stu-id="4676f-103">Contact support for Guatemala</span></span>
 
-<span data-ttu-id="bb4a1-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="bb4a1-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="4676f-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="4676f-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="bb4a1-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="bb4a1-105">Phone number</span></span>
-<span data-ttu-id="bb4a1-106">1 800 300 0069</span><span class="sxs-lookup"><span data-stu-id="bb4a1-106">1 800 300 0069</span></span>
+## <a name="phone-number"></a><span data-ttu-id="4676f-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="4676f-105">Phone number</span></span>
+<span data-ttu-id="4676f-106">1 800 300 0069</span><span class="sxs-lookup"><span data-stu-id="4676f-106">1 800 300 0069</span></span>
 
-<span data-ttu-id="bb4a1-107">Välj alternativ 4</span><span class="sxs-lookup"><span data-stu-id="bb4a1-107">Select option 4</span></span>
+<span data-ttu-id="4676f-107">Välj alternativ 4</span><span class="sxs-lookup"><span data-stu-id="4676f-107">Select option 4</span></span>
 
-<span data-ttu-id="bb4a1-108">Ange kod 5002</span><span class="sxs-lookup"><span data-stu-id="bb4a1-108">Enter code 5002</span></span>
+<span data-ttu-id="4676f-108">Ange kod 5002</span><span class="sxs-lookup"><span data-stu-id="4676f-108">Enter code 5002</span></span>
 
-## <a name="hours"></a><span data-ttu-id="bb4a1-109">Tider</span><span class="sxs-lookup"><span data-stu-id="bb4a1-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="bb4a1-110">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="bb4a1-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="4676f-109">Tider</span><span class="sxs-lookup"><span data-stu-id="4676f-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="4676f-110">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="4676f-110">Billing Support:</span></span>
 
-<span data-ttu-id="bb4a1-111">Spanska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="bb4a1-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="4676f-111">Spanska: Mon-Fri 9–17</span><span class="sxs-lookup"><span data-stu-id="4676f-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="bb4a1-112">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="bb4a1-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="4676f-112">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="4676f-112">Technical Support:</span></span>
 
-<span data-ttu-id="bb4a1-113">Spanska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="bb4a1-113">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="4676f-113">Spanska: 24 timmar om dygnet, 7 dagar i veckan</span><span class="sxs-lookup"><span data-stu-id="4676f-113">Spanish: 24 hours a day, 7 days a week</span></span>

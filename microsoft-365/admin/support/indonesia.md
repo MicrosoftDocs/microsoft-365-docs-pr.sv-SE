@@ -19,24 +19,24 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296065"
 ---
-# <a name="contact-support-for-indonesia"></a><span data-ttu-id="7d048-103">Kontakta supporten för Indonesien</span><span class="sxs-lookup"><span data-stu-id="7d048-103">Contact support for Indonesia</span></span>
+# <a name="contact-support-for-indonesia"></a><span data-ttu-id="135af-103">Kontakta supporten för Indonesien</span><span class="sxs-lookup"><span data-stu-id="135af-103">Contact support for Indonesia</span></span>
 
-<span data-ttu-id="7d048-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="7d048-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="135af-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="135af-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="7d048-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="7d048-105">Phone number</span></span>
-<span data-ttu-id="7d048-106">007 803 011 0882 (Telkom)</span><span class="sxs-lookup"><span data-stu-id="7d048-106">007 803 011 0882 (Telkom)</span></span>
+## <a name="phone-number"></a><span data-ttu-id="135af-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="135af-105">Phone number</span></span>
+<span data-ttu-id="135af-106">007 803 011 0882 (Telkom)</span><span class="sxs-lookup"><span data-stu-id="135af-106">007 803 011 0882 (Telkom)</span></span>
 
-<span data-ttu-id="7d048-107">001 803 442 304 (Indosat)</span><span class="sxs-lookup"><span data-stu-id="7d048-107">001 803 442 304 (Indosat)</span></span>
+<span data-ttu-id="135af-107">001 803 442 304 (Indosat)</span><span class="sxs-lookup"><span data-stu-id="135af-107">001 803 442 304 (Indosat)</span></span>
 
-## <a name="hours"></a><span data-ttu-id="7d048-108">Tider</span><span class="sxs-lookup"><span data-stu-id="7d048-108">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="7d048-109">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="7d048-109">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="135af-108">Tider</span><span class="sxs-lookup"><span data-stu-id="135af-108">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="135af-109">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="135af-109">Billing Support:</span></span>
 
-<span data-ttu-id="7d048-110">Bahasa Indonesia: Mon-Fri 08:00 till 17:00</span><span class="sxs-lookup"><span data-stu-id="7d048-110">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
+<span data-ttu-id="135af-110">Bahasa Indonesia: Mon-Fri 08:00 till 17:00</span><span class="sxs-lookup"><span data-stu-id="135af-110">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
 
-<span data-ttu-id="7d048-111">Engelska: Mon-Fri 9.00–18.00</span><span class="sxs-lookup"><span data-stu-id="7d048-111">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="135af-111">Engelska: Mon-Fri 9.00–18.00</span><span class="sxs-lookup"><span data-stu-id="135af-111">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="7d048-112">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="7d048-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="135af-112">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="135af-112">Technical Support:</span></span>
 
-<span data-ttu-id="7d048-113">Bahasa Indonesia: Mon-Fri 08:00 till 17:00</span><span class="sxs-lookup"><span data-stu-id="7d048-113">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
+<span data-ttu-id="135af-113">Bahasa Indonesia: Mon-Fri 08:00 till 17:00</span><span class="sxs-lookup"><span data-stu-id="135af-113">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
 
-<span data-ttu-id="7d048-114">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="7d048-114">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="135af-114">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="135af-114">English: 24 hours a day, 7 days a week</span></span>

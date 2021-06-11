@@ -19,20 +19,20 @@ ms.contentlocale: sv-SE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297506"
 ---
-# <a name="contact-support-for-tuvalu"></a><span data-ttu-id="15338-103">Kontakta supporten för Tuvalu</span><span class="sxs-lookup"><span data-stu-id="15338-103">Contact support for Tuvalu</span></span>
+# <a name="contact-support-for-tuvalu"></a><span data-ttu-id="85a14-103">Kontakta supporten för Tuvalu</span><span class="sxs-lookup"><span data-stu-id="85a14-103">Contact support for Tuvalu</span></span>
 
-<span data-ttu-id="15338-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="15338-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="85a14-104">[Hitta ett annat land eller en annan region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="85a14-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="15338-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="15338-105">Phone number</span></span>
-<span data-ttu-id="15338-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="15338-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="85a14-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="85a14-105">Phone number</span></span>
+<span data-ttu-id="85a14-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="85a14-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="15338-107">Tider</span><span class="sxs-lookup"><span data-stu-id="15338-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="15338-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="15338-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="85a14-107">Tider</span><span class="sxs-lookup"><span data-stu-id="85a14-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="85a14-108">Faktureringssupport:</span><span class="sxs-lookup"><span data-stu-id="85a14-108">Billing Support:</span></span>
 
-<span data-ttu-id="15338-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="15338-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="85a14-109">Engelska: Mon-Fri 9.00–17.00</span><span class="sxs-lookup"><span data-stu-id="85a14-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="15338-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="15338-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="85a14-110">Teknisk support:</span><span class="sxs-lookup"><span data-stu-id="85a14-110">Technical Support:</span></span>
 
-<span data-ttu-id="15338-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="15338-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="85a14-111">Engelska: mån–sön, dygnet runt</span><span class="sxs-lookup"><span data-stu-id="85a14-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="15338-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="15338-112">International call charges apply</span></span>
+<span data-ttu-id="85a14-112">Internationell samtalsavgift</span><span class="sxs-lookup"><span data-stu-id="85a14-112">International call charges apply</span></span>
