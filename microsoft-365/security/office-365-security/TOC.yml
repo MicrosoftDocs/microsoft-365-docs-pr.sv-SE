@@ -14,7 +14,7 @@
           href: office-365-evaluation.md
         - name: Nyheter i Defender för Office 365
           href: whats-new-in-defender-for-office-365.md
-        - name: Defender för Office 365 i Microsoft 365 Säkerhetscenter
+        - name: Defender för Office 365 på Microsoft 365 Defender-portalen
           href: ../defender/microsoft-365-security-center-mdo.md
         - name: Exchange Online Protection
           items:
@@ -26,7 +26,7 @@
               href: quarantine-email-messages.md
         - name: 'Säkra bilagor för SharePoint, OneDrive och Microsoft Teams'
           href: turn-on-mdo-for-spo-odb-and-teams.md
-        - name: Microsoft 365 Säkerhetscenter översikt
+        - name: Översikt av Microsoft 365 Defender-portalen
           href: ../defender/overview-security-center.md
         - name: Sidan E-postenhet
           href: mdo-email-entity-page.md
@@ -66,7 +66,7 @@
           href: protect-against-threats.md
         - name: Integrera Defender för Office 365 med Defender för Endpoint
           href: integrate-office-365-ti-with-mde.md
-        - name: Behörigheter i Microsoft 365 Säkerhetscenter
+        - name: Behörigheter på Microsoft 365 Defender-portalen
           href: permissions-microsoft-365-security-center.md
         - name: Behörigheter i Säkerhets- och efterlevnadscentret
           href: permissions-in-the-security-and-compliance-center.md
