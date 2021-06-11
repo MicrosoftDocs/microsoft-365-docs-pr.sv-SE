@@ -39,7 +39,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  Den här artikeln innehåller vanliga frågor och svar om skydd mot förfalskning för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor.
+  Den här artikeln innehåller vanliga frågor och svar om skydd mot förfalskning för Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan postlådor Exchange Online postlådor.
 
 
   Frågor och svar om skydd mot skräppost finns i Vanliga frågor och [svar om skydd mot skräppost.](anti-spam-protection-faq.yml)
@@ -61,9 +61,9 @@ sections:
 
       Microsoft använder sig först av de nya autentiseringskraven för e-post flera veckor innan de distribuerar dem till kunder. I början förekom störningar men de minskade gradvis.
   - question: >
-      Är förfalskningsinformation tillgänglig för Microsoft 365-kunder utan Defender för Office 365?
+      Är förfalskningsinformation tillgänglig för Microsoft 365 utan Defender för Office 365?
     answer: >
-      Ja. Från och med oktober 2018 är förfalskningsinformation tillgänglig för alla organisationer med postlådor i Exchange Online och fristående EOP-organisationer utan Exchange Online-postlådor.
+      Ja. Från och med oktober 2018 är förfalskningsinformation tillgänglig för alla organisationer med postlådor i Exchange Online och fristående EOP-organisationer utan Exchange Online postlådor.
   - question: >
       Hur kan jag rapportera spam eller inte spam-meddelanden tillbaka till Microsoft?
     answer: >
