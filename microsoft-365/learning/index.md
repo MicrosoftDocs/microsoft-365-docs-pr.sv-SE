@@ -26,7 +26,7 @@ ms.locfileid: "52333512"
 > [!NOTE]
 > Informationen i den här artikeln gäller en förhandsversion av en produkt som kan komma att ändras väsentligt innan den släpps till kommersiellt bruk. 
 
-Microsoft Viva Learning (förhandsversion) ger grupper och personer i organisationen möjlighet att göra inlärningen till en naturlig del av dagen. Appen skapar ett centralt nav i Microsoft Teams där anställda kan dela, tilldela och lära sig av innehållsbibliotek i organisationen.
+Microsoft Viva Learning (förhandsversion) ger grupper och personer i organisationen möjlighet att göra inlärningen till en naturlig del av dagen. Appen skapar ett centralt nav i Microsoft Teams där anställda kan dela, tilldela och lära sig från innehållsbibliotek i organisationen.
 
 Resurserna på den här sidan är utformade för att du ska komma igång med att lära dig om och använda Viva Learning (förhandsversion) i organisationen.
 
@@ -42,7 +42,7 @@ Resurserna i det här avsnittet hjälper dig att lära dig mer om vad Viva Learn
 
 ## <a name="set-up-and-administration"></a>Konfiguration och administration
 
-Resurserna i det här avsnittet hjälper administratören i organisationen att konfigurera Viva Learning (förhandsversion) i Microsoft 365-miljön.
+Resurserna i det här avsnittet hjälper administratören i organisationen att konfigurera Viva Learning (förhandsversion) i din Microsoft 365 miljö.
 
 | Om du letar efter den här informationen: | Gå till den här resursen: |
 |:-----|:-----|

@@ -242,7 +242,7 @@ Sökningen efter kopplingar är en CONTAINS-fråga, vilket innebär att partiell
 > [!div class="mx-imgBorder"]
 > ![Kopplingsinformation](../../media/Connector_Details.png)
 
-## <a name="required-licenses-and-permissions"></a>Licenser och behörigheter som krävs
+## <a name="required-licenses-and-permissions"></a>Obligatoriska licenser och behörigheter
 
 Du måste ha [Microsoft Defender Office 365](defender-for-office-365.md) kunna använda Utforskaren eller identifiering i realtid.
 

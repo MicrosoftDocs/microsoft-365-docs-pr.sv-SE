@@ -39,13 +39,13 @@ Du måste uppfylla licenskraven för [gruppbaserad licensiering.](/azure/active-
 
 Du kan använda tilldelningar med valfri produkt som är tillgänglig för användare:
 
-- Office-paket och fristående produkter
+- Office paket och fristående produkter
 - Enterprise- och Mobility-produkter
 - Dynamics 365-produkter
 
 Följande produkter kan inte användas med alternativ:
 
-- Microsoft Store-appar
+- Microsoft Store appar
 - Evig programvara eller programvara som tilldelas direkt till en användare om ingen licens ingår.
 - Azure-resurser
 

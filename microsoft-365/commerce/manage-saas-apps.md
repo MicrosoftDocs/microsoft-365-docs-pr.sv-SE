@@ -19,16 +19,18 @@ ms.custom:
 search.appverid: MET150
 description: Läs om hur du aktiverar och hanterar appar från tredje Microsoft 365 administrationscenter.
 ms.date: 04/15/2021
-ms.openlocfilehash: f061137270416d13db1f1cd32aa17f50f2f8c5d2
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 5a486dba03fbd34fe2e409bba8ba41c1f9873141
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866613"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331628"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Hantera appprenumerationer från tredje part för din organisation
 
 Du kan hantera licenser och fakturering för appar från tredje part i det nya Microsoft 365 administrationscentret. De uppdaterade funktionerna omfattar förbättrad hantering av prenumerationer, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera fakturor. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Det här gäller programvaror som en tjänst som kunder köper direkt eller från en tredjepartsleverantör.
+
+Du kan hantera licenser och fakturering för appar från tredje Microsoft 365 administrationscentret med förhandsgranskningsläget aktiverat. De uppdaterade funktionerna omfattar förbättrad hantering av prenumerationer, förbättrad åtkomst till faktureringsinformation och förbättrad flexibilitet för att hantera fakturor. Prenumerationshanteringen baseras på Microsofts uppdaterade handelsplattform. Det här gäller programvaror som en tjänst som kunder köper direkt eller från tredje part.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Så här hämtar du program för programvara som en tjänst
 

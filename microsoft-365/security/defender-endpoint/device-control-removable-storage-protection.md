@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 55171429d3ea447de32eb7e2ec12b8b2c3542e95
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: c9b97c2157ba8090628af23b2ab54cf38f04d8c6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861713"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538393"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Flyttbara enheter i Microsoft Defender för Endpoint Device Control Storage Protection
 
@@ -35,7 +35,7 @@ Microsoft Defender för Endpoint Device Control flyttbart Storage skydd förhind
 
 **Funktioner –** Förhindra installation med eller utan undantag baserat på olika enhetsegenskaper.
 
-**Windows 10 supportinformation**
+**Beskrivning**
 - Används på maskinnivå: samma princip gäller för alla inloggade användare.
 - Stöd för MEM och GPO.
 - ' Device[Properties '](#device-properties)as listed.
@@ -43,7 +43,7 @@ Microsoft Defender för Endpoint Device Control flyttbart Storage skydd förhind
 
 **Plattform som stöds** – Windows 10
 
-**supportinformation för macOS**
+**Beskrivning**
 - Används på maskinnivå: samma princip gäller för alla inloggade användare
 - Specifik information för macOS finns i [Enhetskontroll för macOS.](mac-device-control-overview.md)
  
@@ -55,7 +55,7 @@ Microsoft Defender för Endpoint Device Control flyttbart Storage skydd förhind
 - *Granskning* Läsa eller skriva eller köra åtkomst till flyttbart lagringsutrymme baserat på olika enhetsegenskaper, med eller utan undantag.
 - *Förhindra* Läsa eller skriva eller köra åtkomst med eller utan undantag – Tillåt specifik enhet baserat på olika enhetsegenskaper.
 
-**Windows 10 supportinformation**
+**Beskrivning**
 - Används på antingen datorn eller användaren eller både och – tillåt endast vissa personer som utför läs-/skriv-/kör åtkomst till specifik flyttbar lagring på en viss dator.
 - Stöd för MEM OMA-URI och GPO.
 - ' Device[Properties '](#device-properties)as listed.
@@ -63,7 +63,7 @@ Microsoft Defender för Endpoint Device Control flyttbart Storage skydd förhind
 
 **Plattform som stöds** – Windows 10
 
-**supportinformation för macOS**
+**Beskrivning**
 - Används på maskinnivå: samma princip gäller för alla inloggade användare.
 - Specifik information för macOS finns i [Enhetskontroll för macOS.](mac-device-control-overview.md)
  

@@ -245,7 +245,7 @@
               href: dlp-teams-default-policy.md
             - name: Mer information om Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)
               href: dlp-on-premises-scanner-learn.md
-            - name: Läs mer om Microsofts Efterlevnadstillägg (förhandsversion)
+            - name: Läs mer om Microsofts Efterlevnadstillägg
               href: dlp-chrome-learn-about.md
             - name: Lär dig om instrumentpanelen för dataförlustskyddsvarningar
               href: dlp-alerts-dashboard-learn.md
@@ -267,7 +267,7 @@
               href: endpoint-dlp-getting-started.md
             - name: Konfigurera enhetsproxy- och Internetanslutningsinställningar för Slutpunkt DLP
               href: endpoint-dlp-configure-proxy.md
-            - name: Kom igång med Microsofts Efterlevnadstillägg (förhandsversion)
+            - name: Kom igång med Microsofts efterlevnadstillägg
               href: dlp-chrome-get-started.md
             - name: Komma igång med instrumentpanelen för dataförlustskyddsvarningar
               href: dlp-alerts-dashboard-get-started.md
@@ -694,14 +694,14 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: Granska ärendeinnehåll
           items:
-            - name: Använda instrumentpanelen för granskningsuppsättningar
-              href: advanced-ediscovery-dashboard.md
-            - name: Visa dokument i en granskningsuppsättning
-              href: view-documents-in-review-set.md
             - name: Skapa frågor och filtrera innehåll i en granskningsuppsättning
               href: review-set-search.md
             - name: Tagga dokument i en granskningsuppsättning
               href: tagging-documents.md
+            - name: Visa dokument i en granskningsuppsättning
+              href: view-documents-in-review-set.md
+            - name: Använda instrumentpanelen för granskningsuppsättningar
+              href: advanced-ediscovery-dashboard.md
         - name: Analysera ärendeinnehåll
           href: analyzing-data-in-review-set.md
           items:
@@ -711,12 +711,20 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Teman
               href: themes-in-advanced-ediscovery.md
-            - name: Förutsägande kodningsmodul (förhandsversion)
+        - name: Använda förutsägande kodning (förhandsversion)
+          items:
+            - name: Snabbstart - förutsägande kodning
+              href: predictive-coding-quick-start.md
+            - name: Läs mer om förutsägande kodning
               href: predictive-coding-overview.md
-            - name: Analysera innehåll med hjälp av relevansmodulen
-              href: using-relevance.md
-            - name: Utfasning av relevansmodulen
-              href: relevance-module-retirement.md
+            - name: Skapa en förutsägande kodningsmodell
+              href: predictive-coding-create-model.md
+            - name: Träna en förutsägande kodningsmodell
+              href: predictive-coding-train-model.md
+            - name: Använda resultatfilter för förutsägelse
+              href: predictive-coding-apply-prediction-filter.md
+            - name: Referens för förutsägande kodning
+              href: predictive-coding-reference.md
         - name: Exportera ärendeinnehåll
           href: exporting-data-ediscover20.md
           items:

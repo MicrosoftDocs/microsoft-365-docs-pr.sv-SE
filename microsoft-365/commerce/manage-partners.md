@@ -32,7 +32,7 @@ Du kan samarbeta med Microsoft-certifierade lösningsleverantörer (partners) f�
 
 1. Administratörer hittar och kontaktar en partner med hjälp av formuläret på <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> .
 2. Partner skickar en e-postförfrågan till kunder för att upprätta en partnerrelation.
-3. Kunder accepterar inbjudan i administrationscentret för Microsoft 365 och börjar arbeta med partnern.
+3. Kunderna accepterar inbjudan i Microsoft 365 administrationscenter och börjar arbeta med partnern.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
@@ -65,7 +65,7 @@ Partnerkontakterna du och ger dig möjlighet att få mer information om dem. Om 
 
 När du har hittat en partner och bestämmer dig för att arbeta med partnern skickar de en e-postinbjudan till dig.
 
-1. I e-postmeddelandet väljer du länken för att gå till administrationscentret för Microsoft 365.
+1. I e-postmeddelandet väljer du länken för att gå till Microsoft 365 administrationscenter.
 2. På sidan **Acceptera avtal & partner,** väljer du länken till **Microsofts kundavtal** och läser dokumentet.
 3. Markera rutan för att bekräfta att du läst avtalet.
 4. Välj **Godkänn & Godkänn**.
@@ -75,7 +75,7 @@ När du har hittat en partner och bestämmer dig för att arbeta med partnern sk
 
 Om du redan har en partner, men ännu inte har signerat ett Microsoft-kundavtal, måste du acceptera avtalet innan de kan köpa eller hantera dina prenumerationer för din räkning.
 
-1. Om du får ett e-postmeddelande från din partner väljer du länken för att gå till administrationscentret för Microsoft 365 eller gå till <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">sidan Acceptera</a> avtal.
+1. Om du får ett e-postmeddelande från din partner väljer du länken för att gå Microsoft 365 administrationscentret eller gå till <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">sidan Acceptera</a> avtal.
 2. Välj länken för **Microsofts kundavtal** och läs dokumentet.
 3. Markera rutan för att bekräfta att du läst avtalet.
 4. Välj **Acceptera**.
@@ -89,7 +89,7 @@ Om du inte vill ge partnern administratörsroller avbryter du inbjudan i ställe
 
 Du kan när som helst ta bort administratörsroller från en partner. Partnerrelationen tas inte bort om du tar bort administratörsrollerna. De kan fortfarande arbeta med dig i en annan kapacitet, till exempel som återförsäljare. Om du bestämmer dig för att du inte längre vill arbeta med en partner kontaktar du din partner för att avsluta relationen.
 
-1. Gå till sidan Inställningar **Partnerrelationer**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">i administrationscentret.</a>
+1. I administrationscentret går du till sidan **Inställningar**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partnerrelationer.</a>
 2. På sidan **Partnerrelationer** markerar du den rad som innehåller namnet på den partner som du vill ta bort.
 3. Markera raden som innehåller namnet på partnern.
 4. Välj Ta bort roller på **partnersidan.**

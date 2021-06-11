@@ -40,7 +40,7 @@ När du har skapat en princip för automatiskt anspråk kan du utföra följande
 - [Visa en principrapport](#view-an-auto-claim-policy-report)
 
 > [!IMPORTANT]
-> Policyer för automatiskt anspråk är för närvarande endast tillgängliga för Microsoft Teams. Fler produkter kommer att finnas tillgängliga att använda i framtiden.
+> Principer för automatiskt anspråk är för närvarande endast tillgängliga för Microsoft Teams. Fler produkter kommer att finnas tillgängliga att använda i framtiden.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
@@ -59,7 +59,7 @@ Principen för automatiskt anspråk är inaktiverad som standard. Innan du kan a
 
 Det är bara en global administratör som kan inaktivera inställningen för automatiskt anspråk.
 
-1. I administrationscentret går du till sidan **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">för organisationen.</a>
+1. I administrationscentret går du till sidan **Inställningar** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Inställningar för</a> organisation.
 2. Längst ned i tabellen väljer du **Användarägda appar och tjänster.**
 3. I det högra fönstret avmarkerar du rutan för **Låt användare göra automatiskt anspråk på licenser första gången de loggar in.**
 

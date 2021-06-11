@@ -14,7 +14,7 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-learning
 localization_priority: None
-description: Lär dig mer om Microsoft Viva Learning (förhandsversion) i Din Microsoft 365-miljö.
+description: Läs mer om Microsoft Viva Learning (förhandsversion) i din Microsoft 365 miljö.
 ms.openlocfilehash: 9b0045cd769d76541b7dfb1e86b50caa2728b54c
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
@@ -37,13 +37,13 @@ Det är troligare att anställda rapporterar att de är nöjda och blir kvar i e
 
 ### <a name="everyone"></a>Alla
 
-Viva Learning (förhandsversion) gör det enkelt att införliva lärandet i din dag. När du öppnar Viva Learning (förhandsversion) i Microsoft Teams visas en anpassad vy av utbildningsinnehåll från både din organisation och partner, till exempel LinkedIn Learning. När du fortsätter att söka efter och slutföra mer utbildning uppdateras det rekommenderade innehållet så att det speglar dina intressen.
+Viva Learning (förhandsversion) gör det enkelt att införliva lärandet i din dag. När du öppnar Viva Learning (förhandsversion) i Microsoft Teams ser du en anpassad vy av utbildningsinnehåll från både din organisation och partner, till exempel LinkedIn Learning. När du fortsätter att söka efter och slutföra mer utbildning uppdateras det rekommenderade innehållet så att det speglar dina intressen.
 
 - Hitta enkelt utbildningsmöjligheter som tillhandahålls av din organisation.
 - Bläddra bland kurser från LinkedIn Learning, Microsoft Learn, Microsoft 365-utbildning, Skillsoft, Coursera, edX, Pluralsight och andra utbildningspartner från tredje part.
 - Sök efter specifikt utbildningsinnehåll som du kan ta del av eller stöd för dina karriärmål.
-- Dela relevant, intressant och viktigt utbildningsinnehåll med dina teammedlemmar eller grupper i en chatt eller kanal i Microsoft Teams.
-- Ordna dina anpassade val av utbildningsinnehåll i Microsoft Teams kanaler och flikar.
+- Dela relevant, intressant och viktigt utbildningsinnehåll med dina teammedlemmar eller grupper i en Microsoft Teams chatt eller kanal.
+- Ordna dina anpassade val av utbildningsinnehåll i Microsoft Teams och flikar.
 - Gilla och spara kurser som du är intresserad av.
 - Spela upp LinkedIn Learning-kurser i den inbäddade spelaren utan att lämna Microsoft Teams.
 
@@ -55,23 +55,23 @@ Håll din grupp engagerad och uppdaterad med nödvändiga kunskaper utan att beh
 
 Administratörer anger behörigheter och tillåter källor för utbildningsinnehåll för Viva Learning (förhandsversion). För att konfigurera Viva Learning (förhandsversion) behöver du behörighet som:
 
-- Microsoft Teams-administratör
-- Global Microsoft 365-administratör eller SharePoint-administratör
+- Microsoft Teams administratör
+- Microsoft 365 global administratör eller SharePoint administratör
 - Kunskapsadministratör
 
 ### <a name="knowledge-admin"></a>Kunskapsadministratör
 
-Kunskapsadministratören är en ny Azure Active Directory-roll (Azure AD) i administrationscentret för Microsoft 365 som kan tilldelas till alla i organisationen. Den här rollen hanterar organisationens källor för utbildningsinnehåll via administrationscentret för Microsoft 365. Mer information finns i [Inbyggda roller i Azure AD.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
+Kunskapsadministratören är en ny Azure Active Directory (Azure AD) i administrationscentret Microsoft 365 som kan tilldelas till alla i organisationen. Den här rollen hanterar organisationens källor för utbildningsinnehåll via Microsoft 365 administrationscentret. Mer information finns i [Inbyggda roller i Azure AD.](/azure/active-directory/roles/permissions-reference#knowledge-administrator)
 
-Kunskapsadministratören bör ha måttlig teknisk behörighet och ha befintliga autentiseringsuppgifter som SharePoint-administratör. Kunskapsadministratören bör ha god kännedom om organisationens utbildning, utbildning, utbildning eller personalupplevelse.
+Kunskapsadministratören bör ha måttlig teknisk behörighet och SharePoint administratörsbehörighet. Kunskapsadministratören bör ha god kännedom om organisationens utbildning, utbildning, utbildning eller personalupplevelse.
 
 ## <a name="get-started"></a>Komma igång
 
-När du är redo att konfigurera och konfigurera Viva Learning (förhandsversion) i din Microsoft 365-miljö:
+När du är redo att konfigurera och konfigurera Viva Learning (förhandsversion) i din Microsoft 365 miljö:
 
-- Använd administrationscentret för Microsoft Teams för [att hantera Viva Learning (förhandsversion) i organisationen.](set-up-teams-admin-center.md)
-- Använd administrationscentret för Microsoft 365 för att [konfigurera utbildningskällor som är tillgängliga för specifika grupper.](content-sources-365-admin-center.md)
-- Använd administrationscentret för SharePoint för [att hantera och lagra ditt eget utbildningsinnehåll.](configure-sharepoint-content-source.md)
+- Använd administrationscentret Microsoft Teams hantera [Viva Learning (förhandsversion) i organisationen.](set-up-teams-admin-center.md)
+- Använd administrationscentret Microsoft 365 konfigurera [utbildningskällor som är tillgängliga för specifika grupper.](content-sources-365-admin-center.md)
+- Använd administrationscentret SharePoint hantera [och lagra ditt eget utbildningsinnehåll](configure-sharepoint-content-source.md).
 
 
 

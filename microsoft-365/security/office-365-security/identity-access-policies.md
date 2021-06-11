@@ -190,7 +190,7 @@ I **avsnittet** Uppgifter:
 |Typ|Egenskaper|Värden|Åtgärd|
 |---|---|---|---|
 |Användare|Inkludera|**Alla användare**|Välj|
-|Användarrisk|**Hög**||Välj|
+|Användarrisk|**Högsta**||Välj|
 |
 
 I det andra **avsnittet uppgifter:**
