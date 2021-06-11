@@ -161,7 +161,7 @@ Olika grupper i organisationen kan ha olika vyer på vad som är acceptabel niv�
 Innan du kan övervaka vissa DLP-platser finns det krav som måste uppfyllas. Mer information **finns i avsnitten Innan** du börjar av:
 
 - [Kom igång med lokal skanner för dataförlustskydd (förhandsversion)](dlp-on-premises-scanner-get-started.md#before-you-begin)
-- [Komma igång med dataförlustskydd för slutpunkt](endpoint-dlp-getting-started.md#before-you-begin)
+- [Komma igång med dataförlustskydd för slutpunkter](endpoint-dlp-getting-started.md#before-you-begin)
 - [Komma igång med Microsofts efterlevnadstillägg (förhandsversion)](dlp-chrome-get-started.md#before-you-begin)
 - [Använda principer för skydd mot dataförlust för molnappar som inte kommer från Microsoft (förhandsversion)](dlp-use-policies-non-microsoft-cloud-apps.md#before-you-begin)
 

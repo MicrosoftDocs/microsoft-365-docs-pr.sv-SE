@@ -35,7 +35,7 @@ ms.locfileid: "51207553"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor frågar kunderna ibland: "Vad är skillnaden mellan skräppost och massutskick?" I det här avsnittet beskrivs skillnaden och de kontroller som är tillgängliga i EOP.
+I Microsoft 365 organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor kan kunderna ibland fråga: "Vad är skillnaden mellan skräppost och massutskick?" I det här avsnittet beskrivs skillnaden och de kontroller som är tillgängliga i EOP.
 
 - **Skräppost är** skräppost, som är oönskade och oönskade oönskade meddelanden (när de identifieras korrekt). Som standard avvisar EOP skräppost baserat på ryktet hos käll-e-postservern. Om ett meddelande klarar käll-IP-kontrollen skickas det till skräppostfiltrering. Om meddelandet klassificeras som skräppost av skräppostfiltrering levereras meddelandet (som standard) till de avsedda mottagarna och flyttas till mappen Skräppost.
 

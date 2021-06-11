@@ -106,7 +106,7 @@ Om du väljer en rad  i tabellen visas den utfällade informationen Information 
 - **Information**
 - **Antal**
 - **Startdatum**
-- **Rekommendation:** Härifrån kan du klicka på länken för att hantera användaren i administrationscentret för Microsoft 365.
+- **Rekommendation:** Härifrån kan du klicka på länken för att hantera användaren Microsoft 365 administrationscentret.
 
 ![Den utfällande informationen från detaljtabellen i vyn Nya användare för vidarebefordran i rapporten Om vidarebefordran](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 

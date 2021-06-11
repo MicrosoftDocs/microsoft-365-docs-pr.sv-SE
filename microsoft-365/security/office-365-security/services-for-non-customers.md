@@ -29,7 +29,7 @@ ms.locfileid: "51207369"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Missbruk av e-post, skräppost och bedrägliga e-postmeddelanden (nätfiske) fortsätter att belasta hela e-poste-ekosystemet. För att upprätthålla användarnas förtroende för användningen av e-post har Microsoft lagt till olika principer och tekniker för att skydda våra användare. Microsoft förstår dock att legitima e-postmeddelanden inte ska påverkas negativt. Därför har vi upprättat en uppsättning tjänster för att hjälpa avsändare att förbättra sin förmåga att leverera e-post till Microsoft 365-användare genom att proaktivt hantera sitt sändande rykte.
+Missbruk av e-post, skräppost och bedrägliga e-postmeddelanden (nätfiske) fortsätter att belasta hela e-poste-ekosystemet. För att upprätthålla användarnas förtroende för användningen av e-post har Microsoft lagt till olika principer och tekniker för att skydda våra användare. Microsoft förstår dock att legitima e-postmeddelanden inte ska påverkas negativt. Därför har vi upprättat en uppsättning tjänster för att hjälpa avsändare att förbättra sin förmåga att leverera e-Microsoft 365 till användare genom att proaktivt hantera sitt sändande rykte.
 
 Den här översikten ger information om fördelar som vi ger din organisation även om du inte är kund.
 
@@ -47,24 +47,24 @@ Den här översikten ger information om fördelar som vi ger din organisation ä
 
 ## <a name="microsoft-support"></a>Microsoft Support
 
-Microsoft erbjuder flera supportalternativ för användare som har problem med att skicka e-post till Mottagare av Microsoft 365. Vi rekommenderar att du:
+Microsoft erbjuder flera supportalternativ för personer som har problem med att skicka e-post Microsoft 365 mottagare. Vi rekommenderar att du:
 
 - Följ instruktionerna i alla rapporter om utebliven leverans som du får.
 
-- Kolla in de vanligaste problemen som icke-kunder stöter på i Felsökning av [e-post som skickas till Office 365.](troubleshooting-mail-sent-to-office-365.md)
+- Kolla in de vanligaste problemen som icke-kunder stöter på i Felsökning av [e-post som skickas Office 365](troubleshooting-mail-sent-to-office-365.md).
 
-- Använd [Microsoft 365-portalen för att](https://sender.office.com) skicka en begäran om att få din IP borttagen från listan över spärrade avsändare.
+- Använd Microsoft 365 [för att skicka](https://sender.office.com) en begäran om att få din IP borttagen från listan över spärrade avsändare.
 
 - Läs [Microsoft community-forumen](https://community.office365.com/f/).
 
 - Kontakta kunden som du försöker e-posta med en annan metod och be honom eller henne att kontakta Microsoft Support och öppna ett support ärende åt dig. I vissa fall måste Microsoft Support, av juridiska skäl, kommunicera direkt med avsändaren som äger det IP-utrymme som blockeras. Men icke-kunder kan vanligtvis inte öppna supportärenden.
 
-  Mer information om Microsofts tekniska support för Office 365 finns i [Support](/office365/servicedescriptions/office-365-platform-service-description/support).
+  Mer information om Microsofts tekniska support för Office 365 finns i [Support.](/office365/servicedescriptions/office-365-platform-service-description/support)
 
 ## <a name="anti-spam-ip-delist-portal"></a>AVLIST-portalen för skydd mot skräppost
 
-Det här är en självbetjäningsportal som du kan använda för att ta bort dig själv från listan med spärrade avsändare i Microsoft 365. Använd den här portalen om du får ett felmeddelande när du försöker skicka ett e-postmeddelande till en mottagare vars e-postadress ligger i Microsoft 365 och du inte tror att det ska vara det. Mer information finns i Använda [delist-portalen för att ta bort dig själv från listan med spärrade avsändare.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
+Det här är en självbetjäningsportal som du kan använda för Microsoft 365 bort dig själv från listan med spärrade avsändare. Använd den här portalen om du får ett felmeddelande när du försöker skicka ett e-postmeddelande till en mottagare vars e-postadress ligger i Microsoft 365 och du inte tror att du bör vara det. Mer information finns i Använda [delist-portalen för att ta bort dig själv från listan med spärrade avsändare.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Rapportering av missbruk och skräppost för skräppost som kommer från Exchange Online
 
-Ibland används Microsoft365 av tredje part för att skicka skräppost, i brott mot våra användningsvillkor och vår policy. Om du får skräppost från Office 365 kan du rapportera dessa meddelanden till Microsoft. Anvisningar finns i [Artikeln om att rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md)
+Ibland används Microsoft365 av tredje part för att skicka skräppost, i brott mot våra användningsvillkor och vår policy. Om du får något skräppostmeddelande från Office 365 kan du rapportera dessa meddelanden till Microsoft. Anvisningar finns i [Artikeln om att rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md)

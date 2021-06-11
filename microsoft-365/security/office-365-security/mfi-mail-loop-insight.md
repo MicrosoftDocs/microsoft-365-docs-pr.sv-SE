@@ -44,7 +44,7 @@ Den här insikten visas bara när villkoret har upptäckts (om du inte har någr
 
 När du klickar **på Visa information** om widgeten visas en utfäll tillgänglig meny med mer information:
 
-- **Domain**
+- **Domän**
 - **Antal meddelanden:** Du kan klicka på Visa **exempelmeddelanden** för att se resultatet [av meddelandespårningen](message-trace-scc.md) för ett exempel på meddelanden som har påverkats av loopen.
 - **Domäntyp**" Till exempel Auktoritativ eller Icke-auktoritativ.
 - **MX-post:** Värden **(e-postserver)** **och prioritetsvärden** för MX-posten för domänen.

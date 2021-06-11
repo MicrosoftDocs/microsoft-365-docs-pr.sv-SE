@@ -32,9 +32,9 @@ ms.locfileid: "51207348"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Både Exchange Online Protection (EOP) och Exchange Online har stöd för inkommande validering av[DKIM-meddelanden](https://www.rfc-editor.org/rfc/rfc6376.txt)(Domain Keys Identified Mail).
+Exchange Online Protection (EOP) Exchange Online båda har stöd för inkommande validering av[DKIM-meddelanden](https://www.rfc-editor.org/rfc/rfc6376.txt)(Domain Keys Identified Mail).
 
-DKIM verifierar att ett e-postmeddelande inte *kapats* av någon annan och skickades från den domän som det står *att* det kommer från. Det binder ett e-postmeddelande till organisationen som har skickat det. DKIM-verifiering används automatiskt för alla meddelanden som skickas med IPv6. Microsoft 365 stöder även DKIM när e-post skickas över IPv4. (Mer information om stöd för IPv6 finns i [Stöd för anonyma inkommande e-postmeddelanden över IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md).)
+DKIM verifierar att ett e-postmeddelande inte *kapats* av någon annan och skickades från den domän som det står *att* det kommer från. Det binder ett e-postmeddelande till organisationen som har skickat det. DKIM-verifiering används automatiskt för alla meddelanden som skickas med IPv6. Microsoft 365 stöd för DKIM när e-post skickas över IPv4. (Mer information om stöd för IPv6 finns i [Stöd för anonyma inkommande e-postmeddelanden över IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md).)
 
 DKIM verifierar ett digitalt signerat meddelande som visas DKIM-Signature i meddelanderubriken. Resultatet av en DKIM-Signature stämplas i Authentication-Results rubrik. Texten i meddelanderubriken liknar följande (contoso.com är avsändaren):
 
@@ -43,4 +43,4 @@ DKIM verifierar ett digitalt signerat meddelande som visas DKIM-Signature i medd
 > [!NOTE]
 > Mer information om rubriken Authentication-Results i RFC 7001 (fältet Meddelanderubrik för[att visa autentiseringsstatus för meddelande.](https://www.rfc-editor.org/rfc/rfc7001.txt) Microsofts DKIM-implementering överensstämmer med denna RFC.
 
-Administratörer kan skapa [e-postflödesregler i](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) Exchange (kallas även transportregler) på resultatet av DKIM-verifiering. Med de här e-postflödesreglerna kan administratörer filtrera eller dirigera meddelanden efter behov.
+Administratörer kan skapa Exchange [e-postflödesregler](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (kallas även transportregler) på resultatet av DKIM-validering. Med de här e-postflödesreglerna kan administratörer filtrera eller dirigera meddelanden efter behov.

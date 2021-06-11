@@ -38,7 +38,7 @@ Med den här insikten kan du identifiera och felsöka domäner som har problem *
 
 När du klickar **på Visa** information i widgeten visas den utfällsymbolen Domänstatus med mer information om varje domäns status: 
 
-- **Domain**
+- **Domän**
 - **Föregående MX-post**
 - **Aktuell MX-post**
 - **Status för e-post som tas emot**

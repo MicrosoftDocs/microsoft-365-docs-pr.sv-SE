@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratörer kan lära sig hur de kan simulera nätfiskeattacker och träna sina användare mot nätfiskeskydd med hjälp av utbildning om attackbedrägerier i Microsoft Defender för Office 365.
+description: Administratörer kan lära sig hur de kan simulera nätfiskeattacker och träna sina användare på nätfiskeskydd med hjälp av utbildning om attackbedrägerier i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.openlocfilehash: 27279f927a15ea94ae84112ffdc23d88ea42d2ff
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
@@ -21,11 +21,11 @@ ms.locfileid: "51207253"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulera en nätfiskeattack
 
-Med simuleringsutbildning för attacker i Microsoft Defender för Office 365 kan du köra simuleringar av cyberattacker på din organisation för att testa dina säkerhetsprinciper och metoder, samt utbilda dina anställda att öka deras medvetenhet och minska deras känslighet för attacker. Den här artikeln beskriver hur du skapar en simulerad nätfiskeattack med hjälp av utbildning om attackbedrägerier.
+Med utbildning av attack simulering i Microsoft Defender för Office 365 kan du köra simuleringar av cyberattacker på din organisation för att testa säkerhetsprinciper och metoder, samt utbilda dina anställda att öka deras medvetenhet och minska deras känslighet för attacker. Den här artikeln beskriver hur du skapar en simulerad nätfiskeattack med hjälp av utbildning om attackbedrägerier.
 
 Information om attack simuleringsutbildning för att komma igång finns i [Komma igång med simulering av attack .](attack-simulation-training-get-started.md)
 
-Om du vill starta en simulerad nätfiskeattack öppnar du [Microsoft 365](https://security.microsoft.com/)säkerhetscenter , går till **E-&-utbildning** för samarbete attackattack och växlar till \>  [**fliken Simuleringar.**](https://security.microsoft.com/attacksimulator?viewid=simulations)
+Om du vill starta en simulerad nätfiskeattack öppnar du [säkerhetscentret](https://security.microsoft.com/)i Microsoft 365 , går till **E-&-utbildning** för samarbete attackattack och växlar till \>  [**fliken Simuleringar.**](https://security.microsoft.com/attacksimulator?viewid=simulations)
 
 Under **Simuleringar** väljer du **+ Starta en simulering**.
 
@@ -47,7 +47,7 @@ Välj bland fyra olika tekniker som används i [MITRE ATT&CK® framework.](https
 > [!TIP]
 > Om du **klickar på** Visa information i beskrivningen av varje teknik visas ytterligare information och simuleringsstegen för tekniken.
 >
-> ![Simuleringssteg för credential-skörd i attack simuleringsutbildning i Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-sim-steps.png)
+> ![Simuleringssteg för credential-skörd i attack simuleringsutbildning Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-sim-steps.png)
 
 När du har valt tekniken och klickat på Nästa **ger** du simuleringen ett namn och en beskrivning om du vill.
 
@@ -58,12 +58,12 @@ Därefter måste du antingen välja en nyttolast från den befintliga nyttokatal
 Nyttolaster har ett antal datapunkter som du kan använda för att välja:
 
 - **Click rate counts** how many people clicked this payload.
-- **Förutsagd** komprometterad ränta förutsäger den procentandel av personer som kommer att bli komprometterad av den här nyttolasten baserat på historiska data för nyttolasten i Microsoft Defender för Office 365-kunder.
+- **Förutsagd komprometterad** ränta förutsäger den procentandel av personer som kommer att bli komprometterad av den här nyttolasten baserat på historiska data för nyttolasten i Microsoft Defender för Office 365 kunder.
 - **Simuleringar som startas** räknar antalet gånger den här nyttolasten användes i andra simuleringar.
 - **Komplexitet ,** som är tillgänglig **via** filter, beräknas baserat på antalet indikatorer i den nyttolast som ledtråden pekar på är en attack. Fler indikatorer ger lägre komplexitet.
 - **Källa,** som **är** tillgänglig via filter, anger om nyttolasten skapades i klientorganisationen eller är en del av Microsofts befintliga nyttolastkatalog (global).
 
-![Vald nyttolast inom attack simuleringsutbildning i Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-select-payload.png)
+![Vald nyttolast inom attack simuleringsutbildning Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-select-payload.png)
 
 Välj en nyttolast i listan om du vill se en förhandsgranskning av nyttolasten med ytterligare information om den.
 
@@ -76,7 +76,7 @@ Nu är det dags att välja den här simuleringspubliken. Du kan välja att **ink
 När du väljer att **endast inkludera vissa användare och grupper kan** du antingen:
 
 - **Lägg till** användare , så att du kan utnyttja sökning för din klientorganisation, samt avancerade sök- och filtreringsfunktioner, till exempel rikta användare som inte har riktats av en simulering under de senaste 3 månaderna.
-  ![Användarfiltrering i utbildning av attack simulering på Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-user-targeting.png)
+  ![Användarfiltrering i utbildning av attackspel på Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-user-targeting.png)
 - **Med Import från CSV** kan du importera en fördefinierad uppsättning användare för den här simuleringen.
 
 ## <a name="assigning-training"></a>Tilldela utbildning
@@ -90,7 +90,7 @@ Välj förfallodatum **för utbildning för** att se till att anställda slutfö
 > [!NOTE]
 > Om du väljer att själv välja kurser och moduler kan du fortfarande se det rekommenderade innehållet samt alla tillgängliga kurser och moduler.
 >
-> ![Lägga till rekommenderad utbildning inom attack simuleringsutbildning i Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-add-training.png)
+> ![Lägga till rekommenderad utbildning i simulering av attack i Microsoft 365 säkerhetscenter](../../media/attack-sim-preview-add-training.png)
 
 I nästa steg måste du  Lägga till utbildningar om du valt att välja det själv och anpassa startsidan för utbildningen. Du kommer att kunna förhandsgranska startsidan för utbildningen samt ändra sidhuvud och brödtext i den.
 

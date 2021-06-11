@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730936"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888439"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender-incident-API:t och resurstypen för incidenter
 
@@ -56,6 +56,7 @@ Metod | Returtyp | Beskrivning
 -|-|-
 [Lista incidenter](api-list-incidents.md) | [Incidentlista](api-incident.md) | Få en lista över alla incidenter.
 [Uppdatera incident](api-update-incidents.md) | [Incident](api-incident.md) | Uppdatera en specifik händelse.
+[Hämta incident](api-get-incident.md) | [Incident](api-incident.md) | Få en enda incident.
 
 ## <a name="request-body-response-and-examples"></a>Begärans brödtext, svar och exempel
 

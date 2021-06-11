@@ -16,12 +16,12 @@ ms.collection:
 description: Säkerhet i Office 365, från EOP till Defender för Office 365 abonnemang 1 och 2, Standard jämfört med strikt säkerhetskonfigurationer med mera. Förstå vad du har och hur du skyddar dina egenskaper.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 29602d5fe62c84b9293522a94b71c550d360b3e3
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: db37718ce2feae9c79ff6b323eb22e30f24e72b2
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877806"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51207167"
 ---
 # <a name="office-365-security-overview"></a>Översikt för Office 365 säkerhet
 
@@ -117,7 +117,7 @@ Fördelar med **Defender för Office 365 Abonnemang 2** (hittills):
 
 Därför utökar Microsoft Defender för Office 365 P2 ***undersökning och svar*** sidan av hemmet, och lägger till en ny jaktstyrka. Automatisering.
 
-I Microsoft Defender för Office 365 P2 kallas det primära sökverktyget **Hotutforskaren** i stället för Realtidsidentifiering. Om du ser Hotutforskaren när du navigerar till Microsoft 365 Defender-portalen är du i Microsoft Defender för Office 365 P2.
+I Microsoft Defender för Office 365 P2 kallas det primära sökverktyget **Hotutforskaren** i stället för Realtidsidentifiering. Om du ser Hotutforskaren när du går till Säkerhetscenter är du i Microsoft Defender för Office 365 P2.
 
 Om du vill gå in på information om Microsoft Defender för Office 365 P1 och P2 kan du **[hoppa till den här artikeln](defender-for-office-365.md)**.
 

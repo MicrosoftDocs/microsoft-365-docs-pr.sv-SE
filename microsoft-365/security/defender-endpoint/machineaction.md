@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da3722294957593fc9cb89abfaec13e45106eefc
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a3b017a9a05964c15411668787b035f1052c68cf
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187391"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878286"
 ---
 # <a name="machineaction-resource-type"></a>Resurstypen MachineAction
 
@@ -53,6 +53,9 @@ ms.locfileid: "51187391"
 | [Kör antivirusgenomsökning](run-av-scan.md)                              | [Maskinåtgärd](machineaction.md) | Kör en AV-sökning med Windows Defender (om tillämpligt).    |
 | [Avregistrera maskin](offboard-machine-api.md)                       | [Maskinåtgärd](machineaction.md) | [Offboard-dator](machine.md) från Microsoft Defender för Endpoint. |
 | [Stoppa och placera filen i karantän](stop-and-quarantine-file.md)           | [Maskinåtgärd](machineaction.md) | Stoppa körningen av en fil på en dator och ta bort den.        |
+| [Kör livesvar](run-live-response.md)                     | [Maskinåtgärd](machineaction.md)  | Kör en sekvens av kommandon för livesvar på en enhet                       |
+| [Få livesvarsresultat](get-live-response-result.md) | URL-entitet      | Hämtar nedladdningslänk för specifika livesvarskommandon med hjälp av indexet. |
+|[Åtgärden Avbryt dator](cancel-machine-action.md)                                | [Maskinåtgärd](machineaction.md)  | Avbryta en åtgärd på den aktiva datorn.                                            |
 
 <br>
 
@@ -71,6 +74,7 @@ ms.locfileid: "51187391"
 | creationDateTimeUtc | DateTimeOffset | Datum och tid då åtgärden skapades.                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | Datum och tid då åtgärdsstatus uppdaterades senast.                                                                                                                                                     |
 | relatedFileInfo     | Klass          | Innehåller två egenskaper. sträng ```fileIdentifier``` , Uppräkning ```fileIdentifierType``` med möjliga värden: "Sha1", "Sha256" och "Md5".                                                                         |
+
 
 
 ## <a name="json-representation"></a>Json-representation

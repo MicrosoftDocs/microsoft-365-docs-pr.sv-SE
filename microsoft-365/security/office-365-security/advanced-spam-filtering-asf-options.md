@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan läsa mer om de avancerade ASF-inställningarna (Spam Filter) som är tillgängliga i principer för skydd mot skräppost i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12f193ef61205e8568341c774b957ce4a9dd7988
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 77676277678bd6f8dcfade2b6929a9e1e113bf4b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779428"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878238"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Avancerade inställningar för skräppostfilter (ASF) i EOP
 
@@ -47,7 +47,7 @@ I alla Microsoft 365 organisationer tillåter ASF-inställningarna (Advanced Spa
 > - Förekomsten av filtrerade meddelanden i karantän.
 > - De specifika `X-CustomSpam:` X-sidhuvudfälten som läggs till i meddelanden enligt beskrivningen i den här artikeln.
 
-I följande avsnitt beskrivs ASF-inställningarna och -alternativen som är tillgängliga i principer mot skräppost i säkerhetscentret i Microsoft 365 och i Exchange Online PowerShell eller fristående EOP PowerShell[(New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) och [Set-HostedContentFilterPolicy).](/powershell/module/exchange/set-hostedcontentfilterpolicy) Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
+I följande avsnitt beskrivs ASF-inställningarna och -alternativen som är tillgängliga i principer mot skräppost i Microsoft 365 Defender-portalen och i Exchange Online PowerShell eller fristående EOP PowerShell[(New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) och [Set-HostedContentFilterPolicy).](/powershell/module/exchange/set-hostedcontentfilterpolicy) Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Aktivera, inaktivera eller testa ASF-inställningar
 
@@ -58,7 +58,7 @@ För varje ASF-inställning finns följande alternativ i principer mot skräppos
 - **Test:** ASF lägger till motsvarande X-sidhuvudfält i meddelandet. Vad som händer med meddelandet bestäms av värdet **testläge** *(TestModeAction):*
   - **Ingen**: Leverans av meddelanden påverkas inte av ASF-identifieringen. Meddelandet omfattas fortfarande av andra typer av filtrering och regler i EOP.
   - **Lägga till X-sidhuvudtext *(AddXHeader)***: X-sidhuvudvärdet `X-CustomSpam: This message was filtered by the custom spam filter option` läggs till i meddelandet. Du kan använda det här värdet i Inkorgsregler eller e-postflödesregler (kallas även transportregler) för att påverka leveransen av meddelandet.
-  - **Send Bcc message (*BccMessage*)**: The specified email addresses (the *TestModeBccToRecipients* parameter value in PowerShell) are added to the Bcc field of the message, and the message is delivered to the additional Bcc recipients. I säkerhetscentret avgränsar du flera e-postadresser med semikolon (;). I PowerShell avgränsar du flera e-postadresser med kommatecken.
+  - **Send Bcc message (*BccMessage*)**: The specified email addresses (the *TestModeBccToRecipients* parameter value in PowerShell) are added to the Bcc field of the message, and the message is delivered to the additional Bcc recipients. I Microsoft 365 Defender-portalen avgränsar du flera e-postadresser med semikolon (;). I PowerShell avgränsar du flera e-postadresser med kommatecken.
 
   **Anmärkningar**:
 

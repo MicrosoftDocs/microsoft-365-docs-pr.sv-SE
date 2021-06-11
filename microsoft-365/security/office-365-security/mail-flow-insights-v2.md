@@ -69,12 +69,12 @@ Instrumentpanelen för e-postflöde är tillgänglig för medlemmar i följande 
 
 - **Organisationshantering** i Säkerhets- & Efterlevnadscenter (globala administratörer).
 
-- **[Exchange-administratör](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** i Azure Active Directory.
+- **[Exchange administratör](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** i Azure Active Directory.
 
-- **MailFlow-administratör** i Säkerhets- & Säkerhets- och efterlevnadscenter. Om kontot inte också är medlem i rollgrupperna Organisationshantering eller Exchange-administratör bör du tänka på följande:
+- **MailFlow-administratör** i Säkerhets- & Säkerhets- och efterlevnadscenter. Om kontot inte också är medlem i rollgrupperna Organisationshantering Exchange Administratör bör du tänka på följande:
   - Användaren måste logga in på säkerhets- & säkerhets- och efterlevnadscentret direkt på <https://protection.office.com> .
   - Användaren har bara skrivskyddsbehörighet till instrumentpanelen för e-postflöde.
-  - Användaren har inte åtkomst till administrationscentret för Microsoft 365.
+  - Användaren har inte åtkomst till administrationscentret Microsoft 365.
 
 Mer information om behörigheter finns i Behörigheter i Säkerhets- och [& säkerhets- och](permissions-in-the-security-and-compliance-center.md) efterlevnadscenter och Ge användare åtkomst till Säkerhets- [& efterlevnadscenter.](grant-access-to-the-security-and-compliance-center.md)
 

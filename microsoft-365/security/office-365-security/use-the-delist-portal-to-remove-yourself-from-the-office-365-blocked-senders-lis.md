@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: I den här artikeln får du lära dig hur du använder delist-portalen för att ta bort dig själv från listan med spärrade avsändare i Microsoft 365.
+description: I den här artikeln får du lära dig hur du använder delist-portalen för att ta bort dig själv från listan Microsoft 365 med spärrade avsändare.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c4488f5e5607d71da35b2921e863fb02195467e2
@@ -36,15 +36,15 @@ ms.locfileid: "51207207"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Får du ett felmeddelande när du försöker skicka ett e-postmeddelande till en mottagare vars e-postadress finns i Microsoft 365? Om du anser att du inte borde få felmeddelandet kan du använda delist-portalen för att ta bort dig själv från listan med spärrade avsändare.
+Får du ett felmeddelande när du försöker skicka ett e-postmeddelande till en mottagare vars e-postadress ligger Microsoft 365? Om du anser att du inte borde få felmeddelandet kan du använda delist-portalen för att ta bort dig själv från listan med spärrade avsändare.
 
 ## <a name="what-is-the-blocked-senders-list"></a>Vad är listan med spärrade avsändare?
 
-Microsoft använder listan med spärrade avsändare för att skydda sina kunder mot skräppost, förfalskning och nätfiske. E-postserverns IP-adress, det vill säga den adress som din e-postserver använder för att identifiera sig på Internet, har märkts som ett potentiellt hot mot Microsoft 365 av en av en mängd olika orsaker. När Microsoft 365 lägger till IP-adressen i listan förhindrar det all vidare kommunikation mellan IP-adressen och någon av våra kunder via våra datacenter.
+Microsoft använder listan med spärrade avsändare för att skydda sina kunder mot skräppost, förfalskning och nätfiske. E-postserverns IP-adress, det vill säga den adress som din e-postserver använder för att identifiera sig på Internet, har märkts som ett potentiellt hot mot Microsoft 365 av en av flera olika orsaker. När Microsoft 365 lägger till IP-adressen i listan förhindrar det all vidare kommunikation mellan IP-adressen och någon av våra kunder via våra datacenter.
 
 Du vet att du har lagts till i listan när du får ett svar på ett e-postmeddelande som innehåller ett fel som ser ut ungefär så här:
 
-> 550 5.7.606-649 Access denied, banned sending IP [_IP address_]; Om du vill begära borttagning från listan besöker <https://sender.office.com/> du den och följer anvisningarna. Mer information finns i Rapporter [om utebliven leverans av e-post i Exchange Online.](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
+> 550 5.7.606-649 Access denied, banned sending IP [_IP address_]; Om du vill begära borttagning från listan besöker <https://sender.office.com/> du den och följer anvisningarna. Mer information finns i [E-postrapporter om utebliven leverans i Exchange Online.](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
 där  _IP-adress_ är IP-adressen för den dator där e-postservern körs.
 

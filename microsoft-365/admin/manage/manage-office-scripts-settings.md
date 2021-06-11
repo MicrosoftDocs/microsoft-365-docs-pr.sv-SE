@@ -35,7 +35,7 @@ ms.locfileid: "52572315"
 
     - Microsoft 365 Business Standard
     - Microsoft 365-applikationer för affärsverksamhet
-    - Microsoft 365-applikationer för företag
+    -  Microsoft 365 Apps för företag
     - Office 365 E3
     - Office 365 E5
     - Office 365 A3

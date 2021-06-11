@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig hur de använder rapporten Ej godkänd domän i instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & för att övervaka meddelanden från den lokala organisationen där avsändarens domän inte har konfigurerats i Microsoft 365.
+description: Administratörer kan lära sig att använda rapporten Icke-godkänd domän i instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & för att övervaka meddelanden från den lokala organisationen där avsändarens domän inte har konfigurerats i Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: fb33feb56bf2b52731c03273ce0c6444c333f348
@@ -30,7 +30,7 @@ ms.locfileid: "51207297"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I rapporten Ej godkänd [](mail-flow-insights-v2.md) domän i instrumentpanelen för e-postflöde i Säkerhets- och efterlevnadscenter för [&](https://protection.office.com) visas information om meddelanden från din lokala e-postorganisation där avsändarens domän inte är konfigurerad som en godkänd domän i din Microsoft 365-organisation. 
+Rapporten Ej godkänd **domän** [](mail-flow-insights-v2.md) på instrumentpanelen För e-postflöde i Säkerhets- [& och](https://protection.office.com) efterlevnadscenter visar information om meddelanden från din lokala e-postorganisation där avsändarens domän inte är konfigurerad som en godkänd domän i Microsoft 365 organisationen.
 
 Microsoft 365 kan begränsa dessa meddelanden om vi har data som bevisar att avsikten med dessa meddelanden är skadliga. Därför är det viktigt att du förstår vad som händer och kan åtgärda problemet.
 

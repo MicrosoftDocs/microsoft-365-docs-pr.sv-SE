@@ -33,10 +33,10 @@ ms.locfileid: "51207229"
 - [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Med funktionerna undersökning av hot och svar i [Office 365](office-365-ti.md) kan organisationens säkerhetsteam upptäcka och vidta åtgärder mot cybersäkerhetshot. Office 365 Threat Investigation and Response features include Threat Tracker features, including Noteworthy trackers. Läs den här artikeln för att få en översikt över de nya funktionerna och nästa steg.
+[Office 365 säkerhets- och svarsfunktioner](office-365-ti.md) gör det möjligt för organisationens säkerhetsteam att upptäcka och vidta åtgärder mot cybersäkerhetshot. Office 365 Funktionerna För undersökning av hot och svar inkluderar funktioner för hotspårning, bland annat Värt att spåra. Läs den här artikeln för att få en översikt över de nya funktionerna och nästa steg.
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence är nu Microsoft Defender för Office 365 abonnemang 2, tillsammans med ytterligare skyddsfunktioner för hot. Mer information finns i [Microsoft Defender för Office 365-abonnemang](https://products.office.com/exchange/advance-threat-protection) och -priser och Tjänstbeskrivning för Microsoft Defender för Office [365.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+> Office 365 Threat Intelligence är nu Microsoft Defender för Office 365 abonnemang 2, tillsammans med ytterligare skyddsfunktioner för hot. Mer information finns i [Microsoft Defender för Office 365 abonnemang och](https://products.office.com/exchange/advance-threat-protection) priser och Microsoft Defender för Office 365 [Tjänstbeskrivning](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 ## <a name="what-are-threat-trackers"></a>Vad är Hotspårare?
 
@@ -48,7 +48,7 @@ De flesta översiktssidor innehåller trendtal som uppdateras regelbundet, widge
 
 ![Exempel på kampanjinformation i Utforskaren](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
 
-Spårare är bara några av de många bra funktioner du får med [Microsoft Defender för Office 365 abonnemang 2.](office-365-ti.md) Threat Trackers inkluderar [Noteworth trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries)och [Saved queries](#saved-queries).
+Spårare är bara några av de många fantastiska funktioner du får med [Microsoft Defender för Office 365 abonnemang 2.](office-365-ti.md) Threat Trackers inkluderar [Noteworth trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries)och [Saved queries](#saved-queries).
 
 Om du vill visa och använda dina hotspårningar för organisationen går du till Säkerhets- & Compliance Center () och väljer Threat <https://protection.office.com> **Management** \> **Threat tracker**.
 
@@ -71,7 +71,7 @@ Trendande spårare ger dig en uppfattning om nya hot som du bör granska för at
 
 ### <a name="tracked-queries"></a>Spårade frågor
 
-Spårade frågor utnyttjar dina sparade frågor för att regelbundet bedöma Microsoft 365-aktivitet i din organisation. Det gör att du händelsetrender, med fler framöver under de kommande månaderna. Spårade frågor körs automatiskt, vilket ger dig uppdaterad information utan att behöva komma ihåg att köra dina frågor igen.
+Spårade frågor utnyttjar dina sparade frågor för att regelbundet bedöma Microsoft 365 aktivitet i organisationen. Det gör att du händelsetrender, med fler framöver under de kommande månaderna. Spårade frågor körs automatiskt, vilket ger dig uppdaterad information utan att behöva komma ihåg att köra dina frågor igen.
 
 ![Exempel på spårade frågor med en vald](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
 
@@ -85,28 +85,28 @@ Du kan alltid spara en Värt att spåra fråga eller  någon av dina egna Frågo
 
 ## <a name="trackers-and-explorer"></a>Spårare och Utforskaren
 
-Oavsett om du granskar e-post, innehåll eller Office-aktiviteter (kommer snart) samarbetar Utforskaren och spårarna för att hjälpa dig att undersöka och spåra säkerhetsrisker och hot. Alla tillsammans ger spårare dig information för att skydda dina användare genom att markera nya, märkbara och vanliga problem – se till att ditt företag skyddas när det flyttar till molnet.
+Oavsett om du granskar e-post, innehåll eller Office-aktiviteter (kommer snart), samarbetar Utforskaren och spårare för att hjälpa dig att undersöka och spåra säkerhetsrisker och hot. Alla tillsammans ger spårare dig information för att skydda dina användare genom att markera nya, märkbara och vanliga problem – se till att ditt företag skyddas när det flyttar till molnet.
 
-Kom ihåg att du alltid kan ge oss feedback om den här eller andra säkerhetsfunktioner för Microsoft 365 genom att klicka på **Feedback-knappen** i det nedre högra hörnet i Översikt över säkerhets- och [& efterlevnadscenter.](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)
+Kom ihåg att du alltid kan ge oss feedback om den här eller andra säkerhetsfunktioner i Microsoft 365 genom att klicka på **Feedback** i det nedre högra hörnet i Översikt över säkerhets- och [& efterlevnadscenter.](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)
 
 ![Säkerhets- och efterlevnadscenter](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
 
-## <a name="trackers-and-microsoft-defender-for-office-365"></a>Spårare och Microsoft Defender för Office 365
+## <a name="trackers-and-microsoft-defender-for-office-365"></a>Trackers och Microsoft Defender för Office 365
 
-Med vårt inugurala värt hot markerar vi avancerade hot mot skadlig programvara som identifieras av [säkra bifogade filer.](safe-attachments.md) Om du är Office 365 Enterprise, E5-kund och inte använder Microsoft Defender för [Office 365](defender-for-office-365.md)bör du vara det – det ingår i prenumerationen. Defender för Office 365 ger värde även om du har andra säkerhetsverktyg för att filtrera e-postflödet med dina Office 365-tjänster. Funktionerna skydd mot skräppost och Säkra [länkar fungerar dock](safe-links.md) bäst när den viktigaste e-postsäkerhetslösningen är genom Office 365.
+Med vårt inugurala värt hot markerar vi avancerade hot mot skadlig programvara som upptäckts av [Valv bifogade filer.](safe-attachments.md) Om du är E5 Office 365 Enterprise kund och inte använder [Microsoft Defender](defender-for-office-365.md)för Office 365 bör du vara det: det ingår i din prenumeration. Defender för Office 365 värde även om du har andra säkerhetsverktyg för att filtrera e-postflödet med dina Office 365 tjänster. Funktionerna skydd mot skräppost och [Valv fungerar bäst](safe-links.md) när den viktigaste e-postsäkerhetslösningen är via Office 365.
 
 ![Microsoft Defender för Office 365 i Säkerhets- & Säkerhets- och efterlevnadscenter](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
 
-I dagens hotbaserade värld där du endast kör traditionella genomsökningar mot skadlig programvara är du inte tillräckligt skyddad mot attacker. Dagens mer avancerade attacker använder vanliga verktyg för att skapa nya, underförstådda eller fördröjda attacker som inte kan identifieras av traditionella signaturbaserade motorer mot skadlig programvara. Funktionen Säkra bifogade filer tar e-postbilagor och detonerar dem i en virtuell miljö för att avgöra om de är säkra eller skadliga. Den här aviseringsprocessen öppnar varje fil i en virtuell datormiljö och tittar sedan på vad som händer när filen öppnas. Oavsett om det är en PDF-fil, en komprimerad fil eller ett Office-dokument, kan skadlig kod döljas i en fil och bara aktiveras när den som faller offer öppnar den på sin dator. Genom att detonera och analysera filen i e-postflödet hittar Defender för Office 365-funktioner dessa hot baserat på beteenden, rykte och ett antal heuristiska regler.
+I dagens hotbaserade värld där du endast kör traditionella genomsökningar mot skadlig programvara är du inte tillräckligt skyddad mot attacker. Dagens mer avancerade attacker använder vanliga verktyg för att skapa nya, underförstådda eller fördröjda attacker som inte kan identifieras av traditionella signaturbaserade motorer mot skadlig programvara. Funktionen Valv bifogade filer tar e-postbilagor och detonerar dem i en virtuell miljö för att avgöra om de är säkra eller skadliga. Den här aviseringsprocessen öppnar varje fil i en virtuell datormiljö och tittar sedan på vad som händer när filen öppnas. Oavsett om det är en PDF-fil, en komprimerad fil eller ett Office-dokument kan skadlig kod döljas i en fil och bara aktiveras när offeret öppnar det på sin dator. Genom att detonera och analysera filen i e-postflödet hittar Defender för Office 365-funktioner dessa hot baserat på beteenden, rykte och ett antal heuristiska regler.
 
-Det nya värt att uppmärksamma hotfiltret markerar objekt som nyligen identifierats via säkra bifogade filer. Dessa identifieringar representerar objekt som är nya skadliga filer, som inte tidigare hittades av Microsoft 365, antingen i ditt e-postflöde eller i andra kunders e-post. Var uppmärksam på objekten i Noteworthy Threat Tracker, se vem som var riktad av dem och granska informationen om detonation som visas på fliken Avancerad analys (hittades genom att klicka på ämnet för e-postmeddelandet i Utforskaren). Observera att du bara hittar den här fliken i e-postmeddelanden som identifieras av funktionen Säkra bifogade filer – den här värt att ta med i filtret, men du kan också använda filtret för andra sökningar i Utforskaren.
+Det nya värt att uppmärksamma hotfiltret markerar objekt som nyligen identifierats via e Valv bilagor. Dessa identifieringar representerar objekt som är nya skadliga filer, som inte tidigare Microsoft 365 i antingen ditt e-postflöde eller andra kunders e-post. Var uppmärksam på objekten i Noteworthy Threat Tracker, se vem som var riktad av dem och granska informationen om detonation som visas på fliken Avancerad analys (hittades genom att klicka på ämnet för e-postmeddelandet i Utforskaren). Observera att du bara hittar den här fliken i e-postmeddelanden som upptäckts av funktionen Valv Bifogade filer – den här Värt att ta med i filtret, men du kan också använda filtret för andra sökningar i Utforskaren.
 
 ## <a name="next-steps"></a>Nästa steg
 
-- Om din organisation inte redan har dessa funktioner för undersökning av hot och svar i Office 365, se Hur får vi funktioner för undersökning av hot och svar i [Office 365?](office-365-ti.md)
+- Om din organisation inte redan har dessa Office 365 funktioner för hotundersökning och hot, se Hur får vi Office 365 funktioner för [hotundersökning och svar?](office-365-ti.md).
 
 - Kontrollera att din säkerhetsgrupp har rätt roller och tilldelade behörigheter. Du måste vara global administratör eller ha rollen Säkerhetsadministratör eller Sök och rensning tilldelad i säkerhets- & Säkerhets- och efterlevnadscenter. Se [Behörigheter i Säkerhets- & Säkerhets- och efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md)
 
-- Titta efter de nya spårarna som visas i Din Microsoft 365-miljö. När de är tillgängliga hittar du dina [spårare här](https://protection.office.com/). Gå till **hothanteringsspårningar** \> .
+- Titta efter de nya spårarna som visas i din Microsoft 365 miljö. När de är tillgängliga hittar du dina [spårare här](https://protection.office.com/). Gå till **hothanteringsspårningar** \> .
 
-- Om du inte redan har gjort det kan du läsa mer om och konfigurera Microsoft Defender för [Office 365](defender-for-office-365.md) för din organisation, inklusive [säkra](safe-links.md) länkar och [säkra bifogade filer.](safe-attachments.md)
+- Om du inte redan har gjort det kan du läsa mer om och konfigurera [Microsoft Defender](defender-for-office-365.md) för Office 365 för din organisation, inklusive länkar [Valv och](safe-links.md) bifogade filer [Valv .](safe-attachments.md)

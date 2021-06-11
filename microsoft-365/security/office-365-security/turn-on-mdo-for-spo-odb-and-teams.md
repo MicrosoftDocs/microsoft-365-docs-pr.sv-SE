@@ -47,7 +47,7 @@ Den här artikeln innehåller anvisningar för hur du aktiverar och konfigurerar
 
 - Om du vill använda SharePoint Online PowerShell för att förhindra att personer laddar ned skadliga filer måste du vara medlem i rollerna [Global administratör](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) eller [SharePoint-administratör](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) i Azure AD.
 
-- Kontrollera att granskningsloggning är aktiverat för organisationen. Mer information finns i Aktivera [eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Kontrollera att granskningsloggning är aktiverat för organisationen. Du kan läsa mer i [Aktivera och inaktivera granskningsloggsökning](../../compliance/turn-audit-log-search-on-or-off.md).
 
 - Det kan ta upp till 30 minuter innan inställningarna verkställs.
 
@@ -101,21 +101,21 @@ Du kan skapa en aviseringsprincip som meddelar dig och andra administratörer n�
    - **Allvarlighetsgrad**: Lämna standardvärdet **Låg markerat** eller välj **Medel** eller **Hög.**
    - **Välj en kategori:** Välj **Hothantering**.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 4. Konfigurera **följande inställningar på** sidan Skapa aviseringsinställningar:
 
    - **Vad vill du avisering om?: Aktivitet är:** Välj **Upptäckte skadlig programvara i filen**.
    - **Hur vill du att aviseringen ska utlösas?**: Lämna standardvärdet **Varje gång en aktivitet matchar regeln markerad.**
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 5. På sidan **Ange mottagare** konfigurerar du följande inställningar:
 
    - **Skicka e-postaviseringar:** Kontrollera att den här inställningen är markerad. I rutan **E-postmottagare** markerar du en eller flera globala administratörer, säkerhetsadministratörer eller säkerhetsläsare som ska få ett meddelande när en skadlig fil identifieras.
    - **Daglig meddelandegräns:** Lämna standardvärdet **Ingen gräns** markerat.
 
-   Klicka på Nästa när du är **klar.**
+   Klicka på **Nästa** när du är klar.
 
 6. Granska **inställningarna på sidan Granska** dina inställningar och klicka på **Redigera i** något av avsnitten för att göra ändringar.
 

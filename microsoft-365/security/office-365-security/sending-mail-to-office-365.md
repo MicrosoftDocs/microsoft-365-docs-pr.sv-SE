@@ -31,16 +31,16 @@ ms.locfileid: "51207133"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-De här artiklarna hjälper externa avsändare att förbättra sitt rykte och utökar möjligheten att leverera e-post till användare i Microsoft 365. De innehåller även viss information om hur du kan rapportera skräppost- och nätfiskeförsök även om du inte är Microsoft 365-användare själv.
+De här artiklarna hjälper externa avsändare att förbättra sitt rykte och ökar deras möjligheter att leverera e-post till användare i Microsoft 365. De innehåller även viss information om hur du kan rapportera skräppost- och nätfiskeförsök även om du inte är en Microsoft 365 själv.
 
-Om du inte är kund, men försöker skicka e-post till någon i vem som är, har du rätt plats. Om du är administratör och behöver hjälp med att bekämpa skräppost är det här inte rätt avsnitt för dig. Gå i stället till [Skydd mot skräppost och skydd mot skadlig programvara i Microsoft 365.](anti-spam-and-anti-malware-protection.md)
+Om du inte är kund, men försöker skicka e-post till någon i vem som är, har du rätt plats. Om du är administratör och behöver hjälp med att bekämpa skräppost är det här inte rätt avsnitt för dig. Gå i stället till [Skydd mot skräppost och skydd mot skadlig programvara i Microsoft 365](anti-spam-and-anti-malware-protection.md).
 
 ****
 
 |För information om...|Se...|
 |---|---|
 |Tjänster vi tillhandahåller till administratörer av e-postsystem som skickar enskild e-post och massutskick till kunder.|[Tjänster för icke-kunder som skickar e-post till Office 365](services-for-non-customers.md)|
-|Åtgärda problem med att nå kunder i Microsoft 365 via e-post. Metodtips för att skicka massutskick till Microsoft 365-mottagare.|[Felsöka e-post som skickas till Office 365](troubleshooting-mail-sent-to-office-365.md)|
-|Hur Microsoft 365 förhindrar att skräppost, till exempel nätfiske och förfalskning, skickas till våra kunder.|[Skydd mot skräppost i Microsoft 365](anti-spam-protection.md)|
-|Hur du som administratör skickar e-post till Microsoft 365-kunder kan undvika att få e-post blockerad genom att följa våra principer för skydd mot skräppost. Det här är den juridiska information du behöver känna till.|[Referens: principer, övningar och riktlinjer](reference-policies-practices-and-guidelines.md)|
+|Åtgärda problem med att nå kunder i Microsoft 365 via e-post. Metodtips för att skicka massutskick Microsoft 365 mottagare.|[Felsöka e-post som skickas till Office 365](troubleshooting-mail-sent-to-office-365.md)|
+|Hur Microsoft 365 förhindrar att skräppost, t.ex. nätfiske och förfalskning, skickas till våra kunder.|[Skydd mot skräppost i Microsoft 365](anti-spam-protection.md)|
+|Hur du som administratör skickar e-post Microsoft 365 till kunder kan undvika att e-post blockeras genom att följa våra principer för skydd mot skräppost. Det här är den juridiska information du behöver känna till.|[Referens: principer, övningar och riktlinjer](reference-policies-practices-and-guidelines.md)|
 |

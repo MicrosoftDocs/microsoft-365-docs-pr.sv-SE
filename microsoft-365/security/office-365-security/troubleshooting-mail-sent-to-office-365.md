@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Den här artikeln innehåller felsökningsinformation för problem med att skicka e-post till inkorgar i Microsoft 365 & metodtips för massutskick till Microsoft 365-kunder.
+description: Den här artikeln innehåller felsökningsinformation för problem med att skicka e-post till inkorgar i Microsoft 365 & metodtips för massutskick till Microsoft 365 kunder.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
@@ -34,11 +34,11 @@ ms.locfileid: "51207225"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 
-Den här artikeln innehåller felsökningsinformation för avsändare som har problem med att skicka e-post till inkorgar i Microsoft 365 och rekommendationer för massutskick till kunder.
+Den här artikeln innehåller felsökningsinformation för avsändare som har problem med att skicka e-post till inkorgar i Microsoft 365 samt rekommendationer för massutskick till kunder.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Hanterar du ditt IP-namn och din domäns rykte?
 
-EOP-filtreringstekniken är utformad för att ge skydd mot skräppost för Microsoft 365 samt andra Microsoft-produkter som Exchange Server. Vi använder också SPF, DKIM och DMARC; E-postautentiseringsteknik som hjälper dig att lösa problemet med förfalskning och nätfiske genom att verifiera att den domän som skickar e-postmeddelandet har behörighet att göra det. EOP-filtrering påverkas av ett antal faktorer relaterade till avsändande IP, domän, autentisering, korrekt lista, klagomålshastigheter, innehåll och mycket mer. Av dessa är en av de viktigaste faktorerna för att skada avsändarens rykte och deras förmåga att leverera e-post deras klagomålsfrekvens för skräppost.
+EOP-filtreringstekniken är utformad för att ge skydd mot Microsoft 365 skräppost samt andra Microsoft-produkter som Exchange Server. Vi använder också SPF, DKIM och DMARC; E-postautentiseringsteknik som hjälper dig att lösa problemet med förfalskning och nätfiske genom att verifiera att den domän som skickar e-postmeddelandet har behörighet att göra det. EOP-filtrering påverkas av ett antal faktorer relaterade till avsändande IP, domän, autentisering, korrekt lista, klagomålshastigheter, innehåll och mycket mer. Av dessa är en av de viktigaste faktorerna för att skada avsändarens rykte och deras förmåga att leverera e-post deras klagomålsfrekvens för skräppost.
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>Skickar du e-post från nya IP-adresser?
 
@@ -58,7 +58,7 @@ Vi kanske inte accepterar e-postmeddelanden från avsändare som misslyckas med 
 - 10.0.0.0/8 (eller 10.0.0.0 - 10.255.255.255)
 - 172.16.0.0/11 (eller 172.16.0.0 - 172.31.255.255)
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Du har fått en rapport om utebliven leverans (NDR) när du skickar e-post till en användare i Office 365
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Du har fått en rapport om utebliven leverans (NDR) när du skickar e-post till en användare Office 365
 
 Vissa leveransproblem beror på att avsändarens IP-adress blockeras av Microsoft eller att användarkontot identifieras som spärrad avsändare på grund av tidigare skräppostaktivitet. Om du anser att du fått NDR-meddelandet av misstag ska du först följa instruktionerna i NDR-meddelandet för att lösa problemet.
 
@@ -84,11 +84,11 @@ Du har fått NDR eftersom misstänkt aktivitet har upptäckts från IP-adressen 
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Jag kan inte ta emot e-post från avsändare i Microsoft 365
 
- Se till att nätverket tillåter anslutningar från DE IP-adresser som EOP använder i våra datacenter för att kunna ta emot meddelanden från våra användare. Mer information finns i [IP-adresser för Exchange Online Protection.](../../enterprise/urls-and-ip-address-ranges.md)
+ Se till att nätverket tillåter anslutningar från DE IP-adresser som EOP använder i våra datacenter för att kunna ta emot meddelanden från våra användare. Mer information finns i Exchange Online Protection [IP-adresser.](../../enterprise/urls-and-ip-address-ranges.md)
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Metodtips för massutskick till Microsoft 365-användare
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Metodtips för massutskick till Microsoft 365 användare
 
-Om du ofta genomför massutskick av e-postkampanjer till Microsoft 365-användare och vill se till att dina e-postmeddelanden kommer fram på ett säkert sätt i rätt tid följer du tipsen i det här avsnittet.
+Om du ofta genomför massutskick av e-postkampanjer för att Microsoft 365 användare och vill se till att dina e-postmeddelanden kommer fram på ett säkert sätt i rätt tid följer du tipsen i det här avsnittet.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Kontrollera att Från-namnet visar vem som skickar meddelandet
 

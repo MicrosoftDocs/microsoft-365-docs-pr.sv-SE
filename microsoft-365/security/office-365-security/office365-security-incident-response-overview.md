@@ -14,7 +14,7 @@ ms.collection:
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Den här lösningen talar om hur de vanligaste cybersäkerhetsattackerna kan se ut i Microsoft 365 och hur du svarar på dem
+description: Den här lösningen talar om hur de vanligaste cybersäkerhetsattackerna kan se ut i Microsoft 365 och hur du kan svara på dem
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
@@ -67,7 +67,7 @@ Kom tillbaka hit varje månad allt eftersom fler artiklar kommer att läggas til
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Skydda Microsoft 365 som en expert på cybersäkerhet
 
-Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare.  Använd Microsoft 365-säkerhetsöversikten – Främsta prioriteringar för de [första 30 dagarna, 90](security-roadmap.md) dagarna och därefter för att implementera Microsofts rekommenderade metodtips för att skydda din Microsoft 365-organisation.
+Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare.  Använd säkerhetsöversikten Microsoft 365 – Prioriteringar för de [första 30, 90](security-roadmap.md) dagarna och senare för att implementera Microsofts rekommenderade metodtips för att skydda din Microsoft 365 organisation.
 
 - Uppgifter som ska utföras under de första 30 dagarna.  De har omedelbar effekt och påverkar inte användarna i någon större utsträckning.
 

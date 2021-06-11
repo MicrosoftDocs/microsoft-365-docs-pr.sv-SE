@@ -35,21 +35,21 @@ ms.locfileid: "51207332"
 
 ![Hotutforskaren](../../media/ThreatExplorerFirstOpened.png)
 
-[Threat Explorer](threat-explorer.md) (och rapporten om identifieringar i realtid) är ett kraftfullt, när realtidsverktyg som hjälper grupper i säkerhetsåtgärder att undersöka och reagera på hot i Säkerhets- & Efterlevnadscenter. Utforskaren (och rapporten om identifieringar i realtid) visar information om misstänkt skadlig kod och nätsnut i e-post och filer i Office 365, samt andra säkerhetshot och risker för organisationen.
+[Threat Explorer](threat-explorer.md) (och rapporten om identifieringar i realtid) är ett kraftfullt, när realtidsverktyg som hjälper grupper i säkerhetsåtgärder att undersöka och reagera på hot i Säkerhets- & Efterlevnadscenter. Utforskaren (och rapporten om identifieringar i realtid) visar information om misstänkt skadlig kod och nätsegeni i e-post och filer i Office 365, liksom andra säkerhetshot och risker för organisationen.
 
-- Om du har [Microsoft Defender för Office 365](defender-for-office-365.md) abonnemang 2 har du Utforskaren.
-- Om du har Microsoft Defender för Office 365 abonnemang 1 kan du göra identifieringar i realtid.
+- Om du har [Microsoft Defender Office 365](defender-for-office-365.md) abonnemang 2 har du Utforskaren.
+- Om du har Microsoft Defender Office 365 abonnemang 1 kan du göra identifieringar i realtid.
 
-När du först öppnar Utforskaren (eller rapporten över identifieringar i realtid) visar standardvyn identifieringar av skadlig kod för e-post under de senaste 7 dagarna. Den här rapporten kan också visa Microsoft Defender för Office 365-identifieringar, till exempel skadliga URL-adresser som identifieras av säkra länkar och skadliga filer som identifieras av [säkra bifogade filer.](safe-attachments.md) [](safe-links.md) Den här rapporten kan ändras så att den visar data för de senaste 30 dagarna (med en Microsoft Defender för Office 365 P2-betald prenumeration). Utvärderingsprenumerationer kommer endast att innehålla data för de senaste sju dagarna.
+När du först öppnar Utforskaren (eller rapporten över identifieringar i realtid) visar standardvyn identifieringar av skadlig kod för e-post under de senaste 7 dagarna. Den här rapporten kan också visa Microsoft Defender för Office 365 identifieringar, till exempel skadliga URL-adresser som identifieras av [Valv-länkar](safe-links.md)och skadliga filer som identifieras [av Valv bifogade filer.](safe-attachments.md) Den här rapporten kan ändras så att den visar data för de senaste 30 dagarna (med en Microsoft Defender för Office 365 P2-betald prenumeration). Utvärderingsprenumerationer kommer endast att innehålla data för de senaste sju dagarna.
 
 ****
 
 |Prenumeration|Utility|Datadagar|
 |---|---|---|
-|Utvärderingsversion av Microsoft Defender för Office 365 P1|Identifiering i realtid|7|
+|Utvärderingsversion av Microsoft Defender Office 365 P1|Identifiering i realtid|7|
 |Microsoft Defender för Office 365 P1 betalad|Identifiering i realtid|30|
-|Microsoft Defender för Office 365 P1 betalda tester Defender för utvärderingsversion av Office 365 P2|Hotutforskaren|7|
-|Utvärderingsversion av Microsoft Defender för Office 365 P2|Hotutforskaren|7|
+|Betalda tester av Defender Office 365 P1 för utvärderingsversion av Microsoft Defender Office 365 P2|Hotutforskaren|7|
+|Utvärderingsversion av Microsoft Defender Office 365 P2|Hotutforskaren|7|
 |Microsoft Defender för Office 365 P2 betalad|Hotutforskaren|30|
 |
 
@@ -131,9 +131,9 @@ Under diagrammet kan du visa mer information om specifika e-postmeddelanden, til
 
 ## <a name="content--malware"></a>Innehålls > skadlig programvara
 
-Om du vill visa den här rapporten i Utforskaren (eller identifiering i realtid) väljer du **Visa skadlig** \> **programvara för** \> **innehåll.** I den här vyn visas filer som identifierats som skadliga av Microsoft Defender för [Office 365 i SharePoint Online, OneDrive för företag och Microsoft Teams.](mdo-for-spo-odb-and-teams.md)
+Om du vill visa den här rapporten i Utforskaren (eller identifiering i realtid) väljer du **Visa skadlig** \> **programvara för** \> **innehåll.** I den här vyn visas filer som identifierats som skadliga av Microsoft Defender för Office 365 i [SharePoint Online, OneDrive för företag och Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
-Visa information efter programfamilj, identifieringsteknik (hur skadlig programvara upptäcktes) och arbetsbelastning (OneDrive, SharePoint eller Teams).
+Visa information efter programfamilj, identifieringsteknik (hur den skadlig programvara upptäcktes) och arbetsbelastningen (OneDrive, SharePoint eller Teams).
 
 ![Visa data om upptäckt skadlig programvara](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
 
@@ -147,9 +147,9 @@ Med Utforskaren (och identifieringar i realtid) kan du använda ett filter med e
 
 Om **du klickar på ATP-detonation** i det här diagrammet visas en vy som ser ut så här:
 
-![Utforskaren filtrerad för att endast visa Defender för Office 365 Detonation-resultat](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Utforskaren filtrerad för att endast visa Defender för Office 365 detonationsresultat](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-I den här vyn tittar vi nu på data för filer som har detonerats av [Säkra bifogade filer.](safe-attachments.md) Under diagrammet kan du se information om specifika e-postmeddelanden som hade bifogade filer som identifierats av säkra bifogade filer.
+I den här vyn tittar vi nu på data för filer som detonerades av Valv [Bifogade filer](safe-attachments.md). Under diagrammet kan du se information om specifika e-postmeddelanden som har bifogade filer som upptäckts av Valv bifogade filer.
 
 ![Specifik information om e-postmeddelanden med identifierade bifogade filer](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

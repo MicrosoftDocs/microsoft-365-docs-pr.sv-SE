@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 description: Läs om hur du skapar anpassade typer av känslig information med Exact Data Match-baserad klassificering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff190fa85e631562a07dcecc1f75713ecacdf07e
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 6839401bc1dd00acc45992f902a6360eb7f20120
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822123"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878202"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Skapa anpassade typer av känslig information med Exact Data Match-baserad klassificering
 
 
 
-[Anpassade typer av känslig information](sensitive-information-type-learn-about.md) används för att identifiera känsliga objekt och förhindra att du delar dem oavsiktligt eller på ett olämpligt sätt. Du definierar en anpassad känslig informationstyp utifrån:
+[Anpassade typer av känslig information](sensitive-information-type-learn-about.md) används för att identifiera känsliga objekt och förhindra att du delar dem oavsiktligt eller på ett olämpligt sätt. Du definierar en anpassad typ av känslig information (SIT) baserat på:
 
 - mönster
 - nyckelordsbevis som *anställd*, *märke* eller *ID*
@@ -93,21 +93,22 @@ EDM-baserad klassificering ingår i dessa prenumerationer
 
 I konfigurationen av EDM-baserad klassificering ingår att:
 
-1. [Spara känsliga data i CSV-format](#save-sensitive-data-in-csv-format)
+1. [Spara känsliga data i .csv eller .tsv-format](#save-sensitive-data-in-csv-or-tsv-format)
 2. [Definiera ett databasschema för känslig information](#define-the-schema-for-your-database-of-sensitive-information)
 3. [Skapa ett regelpaket](#set-up-a-rule-package)
 
 
-#### <a name="save-sensitive-data-in-csv-format"></a>Spara känsliga data i CSV-format
+#### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>Spara känsliga data i .csv eller .tsv-format
 
-1. Identifiera den känsliga information du vill använda. Exportera data till ett program, till exempel Microsoft Excel, och spara filen i CSV-format. Datafilen kan innehålla högst:
+1. Identifiera den känsliga information du vill använda. Exportera data till ett program, till exempel Microsoft Excel, och spara filen i en textfil. Filen kan sparas i .csv (kommaavgränsade värden), .tsv (tabbavgränsade värden) eller pipe-avgränsade (|) format. TSV-formatet rekommenderas i fall där datavärdena kan innehålla kommatecken, till exempel gatuadresser.
+Datafilen kan innehålla högst:
       - 100 miljoner rader med känsliga data
       - 32 kolumner (fält) per datakälla
       - 5 kolumner (fält) markerade som sökbara
 
-2. Strukturera känsliga data i CSV-filen så att den första raden innehåller namnen på de fält som används för EDM-baserad klassificering. I CSV-filen kan du ha fältnamn, till exempel ”personnummer”, ”födelsedatum”, ”förnamn”, ”efternamn”. Kolumnrubriknamn får inte innehålla blanksteg eller understreck. Exempelfilen i CSV-format som vi använder i den här artikeln heter till exempel *PatientRecords.csv*, och innehåller kolumnerna *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN* med flera.
+2. Strukturera känsliga data i .csv- eller .tsv-filen så att den första raden innehåller namnen på de fält som används för EDM-baserad klassificering. I filen kan du ha fältnamn som "ssn", "födelsedatum", "förnamn", "efternamn". Kolumnrubriknamn får inte innehålla blanksteg eller understreck. Exempelfilen i CSV-format som vi använder i den här artikeln heter till exempel *PatientRecords.csv*, och innehåller kolumnerna *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN* med flera.
 
-3. Var uppmärksam på formatet för fälten med känsliga data. Det gäller i synnerhet fält med kommatecken i innehållet (t.ex. en gatuadress som innehåller värdet ”Seattle,WA”) eftersom de skulle tolkas som två separata fält av EDM-verktyget. För att undvika detta måste du se till att sådana fält omges av ett eller två citattecken i tabellen med känsliga data. Om fält med kommatecken även innehåller blanksteg måste du skapa en anpassad typ av känslig information som matchar motsvarande format (till exempel en stäng med flera ord som innehåller kommatecken och blanksteg) för att säkerställa att strängen matchas korrekt när dokumentet genomsöks.
+3. Var uppmärksam på formatet för fälten med känsliga data. I synnerhet fält som kan innehålla kommatecken i innehållet, t.ex. en gatuadress som innehåller värdet "Seattle,WA" kommer att tolkas som två separata fält om det .csv format väljs. Du kan undvika detta genom att använda .tsv-formatet eller omgivet av kommatecken som innehåller värden med dubbla citattecken i tabellen över känsliga data. Om kommatecken som innehåller värden också innehåller blanksteg, måste du skapa en anpassad SIT som matchar motsvarande format. Till exempel en SIT som identifierar flera ordsträngar med kommatecken och blanksteg.
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Definiera schemat för databasen med känslig information
 
@@ -205,7 +206,7 @@ I det här exempel använder vi både `caseInsensitive` och `ignoredDelimiters` 
 
 1. Skapa ett regelpaket i XML-format (med Unicode-kodning), ungefär som i följande exempel. (Du kan kopiera, ändra och använda vårt exempel.)
 
-      När du har skapat ditt regelpaket måste du referera till CSV-filen och filen **edm.xml** på korrekt sätt. Du kan kopiera, ändra och använda vårt exempel. I det här XML-exemplet måste följande fält anpassas för att skapa en EDM-känslig typ:
+      När du konfigurera ditt regelpaket ska du se till att referera till din .csv- eller .tsv-fil **ochedm.xml** filen. Du kan kopiera, ändra och använda vårt exempel. I det här XML-exemplet måste följande fält anpassas för att skapa en EDM-känslig typ:
 
       - **RulePack id och ExactMatch id**: Använd [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) för att generera ett GUID.
 
@@ -385,7 +386,7 @@ Om du inte vill exponera en fil med känsliga data kan du hasha den på en dator
 - en dator med Windows 10 eller Windows Server 2016 med .NET version 4.6.2 för att köra EDMUploadAgent
 - en katalog på uppladdningsdatorn för:
     -  EDMUploadAgent
-    - filen med känsliga objekt i CSV-format, **PatientRecords.csv** i vårt exempel
+    - Din fil med känsligt objekt .csv .tsv-format, **PatientRecords.csv** i våra exempel
     -  och hash- och saltutdatafilerna
     - namnet för datalagret från filen **edm.xml**, `PatientRecords` i vårt exempel
 - Om du använder [guiden för Exact Data Match-schema och typ av känslig information](sit-edm-wizard.md) ***måste*** du ladda ned den
@@ -404,7 +405,7 @@ Den här datorn måste ha direkt åtkomst till din Microsoft 365-klientorganisat
 > Innan du börjar försäkrar du dig om att du är medlem i säkerhetsgruppen **EDM\_DataUploaders**.
 
 > [!TIP]
-> Du kan även köra en validering av CSV-filen innan du laddar upp den genom att köra:
+> Om du vill kan du köra en verifiering mot .csv- eller .tsv-filen innan du laddar upp den genom att köra:
 >
 >`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -443,11 +444,12 @@ Den här datorn måste ha direkt åtkomst till din Microsoft 365-klientorganisat
 
 4. Om du vill hasha och ladda upp känsliga data kör du följande kommando i kommandotolksfönstret:
 
-   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]`
 
    Exempel: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   Detta gör att ett slumpmässigt genererat saltvärde automatiskt läggs till i hashen för att öka säkerheten. Om du vill använda ett eget saltvärde lägger du till **/Salt <saltvalue>** i kommandot. Det här värdet måste vara 64 tecken långt och får endast innehåll tecknen a–z och 0–9.
+   Standardformatet för den känsliga datafilen är kommaavgränsade värden. Du kan ange en tabbavgränsad fil genom att ange alternativet "{Tab}" med parametern /ColumnSeparator, eller så kan du ange en röravgränsad fil genom att ange alternativet "|".  
+   Det här kommandot lägger automatiskt till ett slumpmässigt genererat saltvärde i hashtaggen för bättre säkerhet. Om du vill använda ett eget saltvärde lägger du till **/Salt <saltvalue>** i kommandot. Det här värdet måste vara 64 tecken långt och får endast innehåll tecknen a–z och 0–9.
 
 5. Kontrollera uppladdningsstatus genom att köra det här kommandot:
 
@@ -477,7 +479,7 @@ VALFRITT: Om du skapade schemat och mönsterfilerna med guiden för Exact Data M
    - .EdmHash
    - .EdmSalt
 
-2. Kopiera dessa filer på ett säkert sätt till den dator som du ska använda för att ladda upp CSV-filen med känsliga objekt (PatientRecords) till klientorganisationen.
+2. Kopiera dessa filer på ett säkert sätt till den dator som du använder för att ladda upp dina känsliga objekt .csv- eller .tsv-fil (PatientRecords) till klientorganisationen.
 
    Om du vill ladda upp hashade data kör du följande kommando i kommandotolken i Windows:
 
@@ -508,10 +510,10 @@ Du kan uppdatera databasen för känslig information dagligen och EDM-uppladdnin
 
 1. Bestäm processen och frekvensen (varje dag eller vecka) för uppdatering av databasen med känslig information.
 
-2. Exportera om känsliga data till ett program, till exempel Microsoft Excel, och spara filen i CSV-format. Behåll samma filnamn och plats som du använde när du följde stegen i [Hasha och ladda upp känsliga data](#part-2-hash-and-upload-the-sensitive-data).
+2. Exportera känsliga data till en app igen, till exempel Microsoft Excel, och spara filen i .csv- eller .tsv-format. Behåll samma filnamn och plats som du använde när du följde stegen i [Hasha och ladda upp känsliga data](#part-2-hash-and-upload-the-sensitive-data).
 
       > [!NOTE]
-      > Om det inte finns några ändringar i strukturen (fältnamn) för CSV-filen behöver du inte göra några ändringar i databasschemafilen när du uppdaterar data. Men om du måste göra ändringar måste du redigera databasschemat och regelpaketet enligt detta.
+      > Om det inte finns några ändringar i strukturen (fältnamnen) för .csv- eller .tsv-filen behöver du inte göra några ändringar i databasschemafilen när du uppdaterar data. Men om du måste göra ändringar måste du redigera databasschemat och regelpaketet enligt detta.
 
 3. Använd [Schemaläggaren](/windows/desktop/TaskSchd/task-scheduler-start-page) för att automatisera steg 2 och 3 i [Hasha och ladda upp känsliga data](#part-2-hash-and-upload-the-sensitive-data). Du kan schemalägga aktiviteter på flera sätt:
 
@@ -535,7 +537,7 @@ $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $schemaext = '.xml'
-\# Assuming CSV file name is same as data store name
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
@@ -571,7 +573,7 @@ $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $edmext = '.EdmHash'
 $schemaext = '.xml'
-\# Assuming CSV file name is same as data store name
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 $hashFile = "$fileLocation\\$dataStoreName$edmext"
 \# Assuming Schema file name is same as data store name

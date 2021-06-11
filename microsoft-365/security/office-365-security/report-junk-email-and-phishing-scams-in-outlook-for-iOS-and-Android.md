@@ -33,17 +33,17 @@ ms.locfileid: "51207408"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I Microsoft 365-organisationer med postlådor i Exchange Online eller lokala postlådor med [modern hybridautentisering](../../enterprise/hybrid-modern-auth-overview.md)kan du skicka falska positiva identifieringar (bra e-post som markerats som skräppost), falska negativa identifieringar (felaktig e-post tillåts) och nätfiskemeddelanden till Exchange Online Protection (EOP).
+I Microsoft 365 organisationer med postlådor i Exchange Online eller lokala postlådor med [modern hybridautentisering](../../enterprise/hybrid-modern-auth-overview.md)kan du skicka falska positiva identifieringar (bra e-post som har markerats som skräppost), falska negativa identifieringar (felaktig e-post tillåts) och nätfiskemeddelanden till Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver du veta innan du börjar
 
 - För att du ska kunna skicka in rapporten på bästa sätt rekommenderar vi att du använder tilläggen Rapportmeddelande och Rapport vid nätfiske. Mer information [finns i Aktivera tillägget Rapportmeddelande](./enable-the-report-message-add-in.md) och Aktivera tillägget [Rapportfiske.](./enable-the-report-phish-add-in.md)
 
-- Om du är administratör i en organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen för sändning i Säkerhets- och & Efterlevnadscenter. Mer information finns i Använda [administratörsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft.](admin-submission.md)
+- Om du är administratör i en organisation med Exchange Online postlådor rekommenderar vi att du använder portalen för sändning i Säkerhets- & efterlevnadscenter. Mer information finns i Använda [administratörsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft.](admin-submission.md)
 
 - Du kan konfigurera rapporterade meddelanden så att de kopieras eller omdirigeras till en postlåda som du anger. Mer information finns i Principer [för användarinskick.](user-submission.md)
 
 - Mer information om hur du rapporterar meddelanden till Microsoft finns [i Rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md)
 
   > [!NOTE]
-  > Om skräppostrapportering är inaktiverat för Outlook i principen för användarinskicking flyttas skräppost- eller nätfiskemeddelanden till mappen Skräppost och rapporteras inte till din administratör eller Microsoft.
+  > Om rapportering av skräppost är inaktiverat för Outlook i principen för användarinskicking flyttas skräppost- eller nätfiskemeddelanden till mappen Skräppost och rapporteras inte till din administratör eller Microsoft.

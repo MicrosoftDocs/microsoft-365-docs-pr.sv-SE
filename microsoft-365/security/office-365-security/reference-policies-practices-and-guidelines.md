@@ -39,7 +39,7 @@ Om du inte följer dessa policyer och riktlinjer, kan det hända att vårt suppo
 
 ## <a name="general-microsoft-policies"></a>Allmänna Microsoft-policyer
 
-E-post som skickas till Microsoft 365-användare måste följa alla Microsoft-policyer som gäller för e-postöverföring och användning av Microsoft 365.
+E-post som Microsoft 365 till användare måste följa Microsofts policyer som reglerar e-postöverföring och användning av Microsoft 365.
 
 - Villkor för tjänster som gäller Microsoft 365; i synnerhet att förbjuda användning av tjänsten för skräppost eller distribuera skadlig programvara.
 
@@ -47,7 +47,7 @@ E-post som skickas till Microsoft 365-användare måste följa alla Microsoft-po
 
 ## <a name="governmental-regulations"></a>Statliga bestämmelser
 
-E-post som skickas till Microsoft 365-användare måste följa alla tillämpliga lagar och bestämmelser som gäller för e-postkommunikation i tillämplig jurisdiktion.
+E-post som Microsoft 365 till användare måste följa alla tillämpliga lagar och bestämmelser som gäller för e-postkommunikation i tillämplig jurisdiktion.
 
 - [CAN-SPAM Act: En regelefterlevnadsguide för företag](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,13 +55,13 @@ E-post som skickas till Microsoft 365-användare måste följa alla tillämpliga
 
 ## <a name="technical-guidelines"></a>Tekniska riktlinjer
 
-E-post som skickas till Microsoft 365 ska följa tillämpliga rekommendationer som listas i dokumenten nedan (vissa länkar är endast tillgängliga på engelska).
+E-post som Microsoft 365-post bör följa de tillämpliga rekommendationer som anges i dokumenten nedan (vissa länkar är endast tillgängliga på engelska).
 
-- [RFC 2505: Rekommendationer om skydd mot skräppost för SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
+- [RFC 2505: skydd mot Rekommendationer för SMTP-MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: SMTP-tjänsttillägg för kommandoledning](https://www.ietf.org/rfc/rfc2920.txt)
 
-Dessutom måste e-postservrar som ansluter till Microsoft 365 följa följande krav:
+Dessutom måste e-postservrar som ansluter Microsoft 365 måste följa följande krav:
 
 - Sender is expected to comply with all technical standards for the transmission of Internet email, as published by The InternetLock's Internet Engineering Task Force (IETF), including RFC 5321, RFC 5322, and others.
 
@@ -81,9 +81,9 @@ Dessutom måste e-postservrar som ansluter till Microsoft 365 följa följande k
 
 Avsändare, Internetleverantör och andra tjänsteleverantörer bör aktivt hantera ryktet för dina utgående IP-adresser.
 
-## <a name="microsoft-365-limits"></a>Begränsningar för Microsoft 365
+## <a name="microsoft-365-limits"></a>Microsoft 365 begränsningar
 
-Avsändare måste följa Microsoft 365-begränsningar som anges i Begränsningar för [Exchange Online Protection.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
+Avsändarna måste följa de Microsoft 365 som anges i [Exchange Online Protection Begränsningar](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
 
 ## <a name="email-delivery-resources-and-organizations"></a>Resurser för e-postleverans och organisationer
 
@@ -101,4 +101,4 @@ Om du vill rapportera olagliga, olämpliga, oönskade eller skadliga e-postmedde
 
 ## <a name="law-enforcement"></a>Upprätthållande av rättslagstiftning
 
-Om du är medlem i rätts verkställande och vill tjäna Microsoft Corporation med juridisk dokumentation om Office 365, eller om du har frågor om juridisk dokumentation du har skickat till Microsoft, kan du ringa (1) (425) 722-1299.
+Om du är medlem i juridiken och vill tjäna Microsoft Corporation med juridisk dokumentation om Office 365, eller om du har frågor om juridisk dokumentation som du har skickat till Microsoft, kan du ringa (1) (425) 722-1299.
