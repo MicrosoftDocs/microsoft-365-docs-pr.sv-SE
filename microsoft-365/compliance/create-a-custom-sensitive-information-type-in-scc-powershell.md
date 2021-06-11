@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lär dig hur du skapar och importerar en anpassad typ av känslig information för principer i efterlevnadscentret.
-ms.openlocfilehash: deb29b768c136c9c952d2abe791b310f2fd1dbdd
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 75e767b0ea5ebe4940af5ee0fbfa85f858f65e9c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878250"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538712"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Skapa en anpassad typ av känslig information med PowerShell
 
@@ -38,9 +38,6 @@ På grund av skillnaderna mellan olika kundmiljöer och innehållsmatchningskrav
 Se [Möjliga verifieringsproblem som du bör känna till ](#potential-validation-issues-to-be-aware-of) i det här avsnittet.
 
 Mer information om Boost.RegEx-motorn (tidigare kallad RegEx++) som används för att bearbeta texten finns i [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
-
-> [!NOTE]
-> Om du använder ett et-tecken (&) som en del av ett nyckelord i din anpassade typ av känslig information, observera att det finns ett känt problem. Du bör lägga till ytterligare en term med blanksteg runt tecknet för att se till att tecknet identifieras korrekt, till exempel L & P _inte_ L&P.
 
 ## <a name="sample-xml-of-a-rule-package"></a>XML-exempel för regelpaket
 

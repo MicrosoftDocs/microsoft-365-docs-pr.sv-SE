@@ -19,12 +19,12 @@ description: Under och efter en automatiserad undersökning i Microsoft 365 kan 
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2923a6375d54c663f20c440b1fa395bd529429d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fc7c61fae83f2d10f8b66cbfce86bcee6e3a5bd6
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275054"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878430"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Information och resultat från en automatiserad undersökning i Microsoft 365
 
@@ -32,17 +32,21 @@ ms.locfileid: "52275054"
 - [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-När en [automatiserad undersökning](office-365-air.md) sker i [Microsoft Defender](defender-for-office-365.md)för Office 365 , finns det information om undersökningen tillgänglig under och efter den automatiska undersökningen. Om du har den behörighet som krävs kan du visa den informationen i Microsoft 365 säkerhetscenter. Undersökningsinformation ger dig aktuell status och möjlighet att godkänna eventuella väntande åtgärder.
+När en [automatiserad undersökning](office-365-air.md) sker i [Microsoft Defender](defender-for-office-365.md)för Office 365 , finns det information om undersökningen tillgänglig under och efter den automatiska undersökningen. Om du har den behörighet som krävs kan du visa den informationen i Microsoft 365 Defender-portalen. Undersökningsinformation ger dig aktuell status och möjlighet att godkänna eventuella väntande åtgärder.
 
 > [!TIP]
-> Titta på den nya sidan för enhetlig undersökning i Microsoft 365 säkerhetscenter. Mer information finns i [(NYTT!) Sida för enhetlig undersökning](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Titta på den nya sidan för enhetlig undersökning i Microsoft 365 Defender-portalen. Mer information finns i [(NYTT!) Sida för enhetlig undersökning](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## <a name="investigation-status"></a>Undersökningsstatus
 
 Undersökningsstatusen anger förloppet för analysen och åtgärderna. När undersökningen körs ändras statusen för att ange om hot hittades och om åtgärder har godkänts.
 
+<br>
+
+****
+
 |Status|Beskrivning|
-|:---|:---|
+|---|---|
 |**Startar**|Undersökningen har utlösts och väntar på att starta.|
 |**Körs**|Undersökningsprocessen har startat och pågår. Det här tillståndet inträffar även [när väntande åtgärder](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) har godkänts.|
 |**Inga hot hittades**|Undersökningen har slutförts och inga hot (användarkonto, e-postmeddelande, URL eller fil) har identifierats. <p> **TIPS:** Om du misstänker att något har missats (t.ex. falskt negativa) kan du vidta åtgärder med hjälp av [Hotutforskaren.](threat-explorer.md)|
@@ -58,7 +62,7 @@ Undersökningsstatusen anger förloppet för analysen och åtgärderna. När und
 
 ## <a name="view-details-of-an-investigation"></a>Visa information om en undersökning
 
-1. Gå till Microsoft 365 ( ) <https://security.microsoft.com> och logga in.
+1. Gå till Microsoft 365 Defender-portalen <https://security.microsoft.com> () och logga in.
 2. Välj Åtgärdscenter i **navigeringsfönstret.**
 3. Välj en **åtgärd på flikarna** **Väntande** eller Historik. Den utfällna rutan öppnas.
 4. Välj Öppna undersökningssida i den **utfällfällade fönsterrutan**. 
@@ -68,10 +72,10 @@ Undersökningsstatusen anger förloppet för analysen och åtgärderna. När und
 
 Vissa typer av aviseringar utlöser automatisk undersökning i Microsoft 365. Mer information finns i [aviseringsprinciper som utlöser automatiska undersökningar.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
 
-1. Gå till Microsoft 365 ( ) <https://security.microsoft.com> och logga in.
+1. Gå till Microsoft 365 Defender-portalen <https://security.microsoft.com> () och logga in.
 2. Välj Åtgärdscenter i **navigeringsfönstret.**
 3. Välj en **åtgärd på flikarna** **Väntande** eller Historik. Den utfällna rutan öppnas.
-4. Välj Öppna undersökningssida i den **utfällfällade fönsterrutan**. 
+4. Välj Öppna undersökningssida i den **utfällfällade fönsterrutan**.
 5. Välj fliken **Aviseringar** om du vill visa en lista över alla aviseringar som är associerade med undersökningen.
 6. Markera ett objekt i listan för att öppna det utfällade fönstret. Där kan du visa mer information om aviseringen.
 

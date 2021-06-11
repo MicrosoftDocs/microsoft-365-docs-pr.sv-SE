@@ -23,15 +23,15 @@ sections:
   - question: >
       Vad är Microsoft Bookings?
     answer: >
-      Microsoft Bookings är en Microsoft 365-app som gör det enkelt att schemalägga och hantera möten. Bookings innehåller en webbaserad bokningskalender och integreras med Outlook för att optimera personalens kalender, så att dina kunder kan boka en tid som passar dem bäst. Automatiska e-postmeddelanden minskar antalet program inte visas, och organisationer sparar tid med en minskning av återkommande schemaläggningsuppgifter. Med Bookings kan du enkelt genomföra virtuella möten via Skype eller Microsoft Teams och hjälper dig att hantera den dagliga schemaläggningen via bookings-appen i Teams. Med inbyggd anpassningsförmåga har Bookings utformats för att tillgodose behoven hos flera delar av organisationen.
+      Microsoft Bookings är en Microsoft 365-app som gör det enkelt att schemalägga och hantera avtalade tider. Bookings innehåller en webbaserad bokningskalender och integrerar med Outlook för att optimera personalens kalender, så att dina kunder kan boka en tid som passar dem bäst. Automatiska e-postmeddelanden minskar antalet program inte visas, och organisationer sparar tid med en minskning av återkommande schemaläggningsuppgifter. Med Bookings kan du enkelt genomföra virtuella avtalade tider via Skype eller Microsoft Teams, och hjälper dig att hantera den dagliga schemaläggningen via bookings-appen i Teams. Med inbyggd anpassningsförmåga har Bookings utformats för att tillgodose behoven hos flera delar av organisationen.
   - question: >
       Hur använder jag Microsoft Bookings?
     answer: >
-      Bookings är en onlinetjänst så du behöver inte ladda ned något. Gå bara till app-väljaren i Microsoft 365 på webben. Administratörer kan också använda Bookings-kompletterande app för att hålla sig informerad om den senaste informationen om kunder och deras avtalade tider.
+      Bookings är en onlinetjänst så du behöver inte ladda ned något. Gå bara till app-väljaren i Microsoft 365 webbgränssnittet. Administratörer kan också använda Bookings-kompletterande app för att hålla sig informerad om den senaste informationen om kunder och deras avtalade tider.
   - question: >
-      Vem har tillgång till Microsoft Bookings?
+      Vem har du tillgång till Microsoft Bookings?
     answer: >
-      Bookings är tillgängligt och aktivt som standard för kunder i Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3 och E5 över hela världen. Bookings finns även i Office 365 som drivs av 21Vianet.
+      Bookings är tillgängligt och aktivt som standard för kunder Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3 och E5 över hela världen. Bookings finns även i Office 365 som drivs av 21Vianet.
   - question: >
       Kommer mina kunder att se min personliga kalender eller företagskalender?
     answer: >
@@ -43,7 +43,7 @@ sections:
   - question: >
       Hur får slutanvändarna åtkomst till bookings-appen?
     answer: >
-      Alla som har licens för Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5 eller läggs till som anställd i administratörs- eller visningsrollerna kan komma åt Bookings i app-väljaren i Microsoft 365-webbupplevelsen. Det finns även en medföljande app för iOS och Android.
+      Alla som är licensierade för Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5 eller läggs till som anställd i antingen administratörs- eller visningsrollerna kan komma åt Bookings i app-väljaren i Microsoft 365-webbupplevelsen. Det finns även en medföljande app för iOS och Android.
   - question: >
       Kan jag använda Bookings på min egen webbplats?
     answer: >
@@ -55,7 +55,7 @@ sections:
   - question: >
       Kan IT-avdelningen styra om slutanvändare kan komma åt Bookings?
     answer: >
-      Bookings finns för klientorganisationen Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 och E3/E5 som standard, men administratörer kan inaktivera det i administrationscentret för Microsoft 365 om de vill. Följ de här [anvisningarna om du vill göra det.](turn-bookings-on-or-off.md)
+      Bookings finns som standard i Microsoft 365 Business Premium-, Microsoft 365 Business Standard-, M365 A3-/A5- och E3/E5-klienter, men administratörer kan inaktivera det i administrationscentret för Microsoft 365 om de vill. Följ de här [anvisningarna om du vill göra det.](turn-bookings-on-or-off.md)
 
 
       Om en kund vill inaktivera åtkomsten till Bookings för vissa kvalificerade licenser i klientorganisationen kan de antingen använda en grupprincip för att begränsa licenser eller implementera en OWA-postlådeprincip som begränsar vem som kan skapa nya Bookings-kalendrar.
@@ -67,9 +67,9 @@ sections:
     answer: >
       Ja, Bookings är anpassningsbart och kan användas för olika scenarier. När du ska konfigurera en kalender i Bookings kan många aspekter av den webbaserade schemaläggningssidan, din företagsinformation, personalinformation, tjänsttyper och schemaläggningsprinciper anpassas.
   - question: >
-      Finns alla funktioner i den ursprungliga Bookings-webbappen tillgänglig i Microsoft Teams?
+      Finns alla funktioner i den ursprungliga Bookings-webbappen i Microsoft Teams?
     answer: >
-      En lätt version av Bookings finns nu som en app i Teams. Det första meddelandet är [här](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). Det finns djupa länkfunktioner för att komma ut i webbappen, och efter installationen kan den dagliga användningen av Bookings göras utan att lämna Teams. Information flödar över plattformar.
+      En enkel version av Bookings finns nu som en app i Teams. Det första meddelandet är [här](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). Det finns djupa länkfunktioner för att komma ut i webbappen, och efter installationen kan den dagliga användningen av Bookings göras utan att ens lämna Teams. Information flödar över plattformar.
   - question: >
       Är Bookings ett litet företagserbjudande eller ett Enterprise-erbjudande eller både och?
     answer: >
@@ -123,26 +123,26 @@ sections:
   - question: >
       Hur får jag Microsoft Bookings?
     answer: >
-      Bookings är tillgänglig för kunder med Office 365 A3, A5, E3 och E5, samt Microsoft 365 Business Standard, Microsoft 365 Business Premium, A3, A5, E3 och E5. Du kan använda Bookings med en iOS- och Android-kompletterande app. Bookings är inte tillgängligt som en fristående app. Outlook Web App eller Outlook på webben måste vara aktiverade för att du ska kunna använda Bookings, eftersom det lagrar data i Outlook.
+      Bookings är tillgänglig för kunder med Office 365 A3, A5, E3 och E5, samt Microsoft 365 Business Standard, Microsoft 365 Business Premium, A3, A5, E3 och E5. Du kan använda Bookings med en iOS- och Android-kompletterande app. Bookings är inte tillgängligt som en fristående app. Outlook Web App eller Outlook på webben måste vara aktiverat för att använda Bookings, eftersom data lagras inom Outlook.
 
 
       En Bookings-licens ger tillgång till alla funktioner i produkten, inklusive att skapa och hantera kalendrar. Det gör det också möjligt för användare att visa och redigera befintliga kalendrar när dessa användare läggs till som personal med en administratörs- eller visningsroll.
   - question: >
       Måste jag migrera mitt e-postkonto från min nuvarande leverantör till Microsoft 365?
     answer: >
-      Du kan behålla din nuvarande leverantör, men Bookings skickar alla aviseringar till e-postadressen som används i ditt Microsoft 365-konto.
+      Du kan behålla din nuvarande leverantör, men Bookings skickar alla aviseringar till e-postadressen som används i Microsoft 365 postkontot.
   - question: >
-      Kan mina anställda använda Bookings utan ett Microsoft 365-konto?
+      Kan mina anställda använda Bookings utan ett Microsoft 365 konto?
     answer: >
       Ja. Du kan lägga till din personal med valfri e-postadress så att de fortfarande får e-postbekräftelsen och kalenderbjudningar när någon bokar en tid med dem.
   - question: >
-      Kan jag skapa mer än en Bookings-kalender under samma Microsoft 365-konto och växla mellan dem?
+      Kan jag skapa mer än en Bookings-kalender under samma Microsoft 365 och växla mellan dem?
     answer: >
       Ja. Du kan skapa och hantera mer än en Bookings-kalender med ett konto. Du kan växla mellan dem med hjälp av caret bredvid namnet på företaget i bookings-webbappen.
   - question: >
       Vad händer om min organisation har blandade licenser med F1/F3, E1 och E3/E5?
     answer: >
-      Vi känner igen att många organisationer har en blandning av Microsoft 365-licensiering. En kund kan till exempel ha M365 E3-licenser för anställda på huvudkontoret, men M365 E1-licenser (eller F1- eller F3-licenser) för de anställda i butiken.
+      Vi känner igen att många organisationer har en blandning av Microsoft 365 licensiering. En kund kan till exempel ha M365 E3-licenser för anställda på huvudkontoret, men M365 E1-licenser (eller F1- eller F3-licenser) för de anställda i butiken.
 
 
       I det här exemplet har huvudkontorsanställda med en M365 E3-licens fullständig åtkomst till Bookings, vilket innebär att de kan skapa nya kalendrar, redigera inställningar, lägga till personal, publicera en bokningssida, skapa och hantera avtalade tider i kalendern och hämta rapporter.
@@ -164,21 +164,21 @@ sections:
 - name: Produktfunktioner
   questions:
   - question: >
-      Var visas Bookings-kalendrar i min Microsoft 365-klientorganisation?
+      Var visas Bookings-kalendrarna i min Microsoft 365 klient?
     answer: >
-      Varje ny Bookings-kalender skapar en motsvarande postlåda i Exchange, samt en relaterad post i Azure Active Directory (AAD), där posten visas som en olicensierad användare.
+      Varje ny Bookings-kalender skapar en motsvarande postlåda i Exchange samt en relaterad post i Azure Active Directory (AAD), där posten visas som en olicensierad användare.
   - question: >
       Kan jag ta bort en tidigare skapad Bookings-kalender?
     answer: >
-      Om du vill ta bort en Bookings-kalender måste du ta bort den associerade postlådan i Exchange.
+      Om du vill ta bort en Bookings-kalender måste du ta bort den associerade postlådan Exchange.
   - question: >
       Om jag skapar en kalender och någon annan har tillgång till Bookings, skulle de då kunna se min kalender?
     answer: >
-      De enda personer som har åtkomst till Bookings-kalendrar som du skapar (via webbappen) är alla som har lagts till som personal, antingen som administratör eller som tittarroll. Administratörer för klientorganisationen kommer att kunna se en lista över alla Bookings-postlådor i Exchange och AAD.
+      De enda personer som har åtkomst till Bookings-kalendrar som du skapar (via webbappen) är alla som har lagts till som personal, antingen som administratör eller som tittarroll. Innehavaradministratörer kommer att kunna se en lista över alla Bookings-postlådor i Exchange och AAD.
   - question: >
       Är videokonferensmöten integrerade i bookings-appen?
     answer: >
-      Onlinemöten är tillgängliga i Bookings när Skype- eller Microsoft Teams-klienter används. Onlinemöten kan aktiveras på servicenivå och den mötesklient du väljer (Skype eller Teams) är den som standardinställning för en bokad anställd. För att ansluta till onlinemötena kommer varje ny avtalad tid att ha en unik möteslänk kopplad till den avtalade tiden och dessutom finns enkla anslutningsalternativ i händelsen och i bekräftelsemeddelanden.
+      Onlinemöten är tillgängliga i Bookings när du använder Skype eller Microsoft Teams klienter. Onlinemöten kan aktiveras på servicenivå och den mötesklient du väljer (Skype eller Teams) anges som standard för en bokad personal. För att ansluta till onlinemötena kommer varje ny avtalad tid att ha en unik möteslänk kopplad till den avtalade tiden och dessutom finns enkla anslutningsalternativ i händelsen och i bekräftelsemeddelanden.
   - question: >
       Hur fungerar schemaläggningsprincipen?
     answer: >
@@ -199,11 +199,11 @@ sections:
   - question: >
       Kan e-postaviseringar skickas som klientdomännamn?
     answer: >
-      E-postadresserna kontrolleras och hanteras på inställningsnivå i Microsoft 365 och är beroende av domänkonfigurationsinställningarna där. Mer information finns [här](/powershell/module/exchange/get-accepteddomain).
+      E-postadresserna kontrolleras och hanteras på Microsoft 365 inställningsnivå och är beroende av domänkonfigurationsinställningarna där. Mer information finns [här](/powershell/module/exchange/get-accepteddomain).
   - question: >
-      Är möjligheten att skicka SMS-meddelanden beroende på en annan tjänst eller specifik konfiguration?
+      Är möjligheten att skicka e SMS meddelanden beroende på en annan tjänst eller specifik konfiguration?
     answer: >
-      SMS-meddelanden är för närvarande tillgängliga i Nordamerika och ett Skype- eller Twilio-konto används för SMS-leverans.
+      SMS är för närvarande tillgänglig i Nordamerika, och ett Skype- eller Twilio-konto används för SMS leverans.
   - question: >
       Hur kan Bookings avtalade tider visas i en persons kalender?
     answer: >
@@ -219,7 +219,7 @@ sections:
   - question: >
       Kan kalendrar vara opublicerade (inte offentliga) men fortfarande tillgängliga för angivna användare?
     answer: >
-      Ja. Det finns en kryssruta på fliken Bokningssida i webbappen: Kräv ett **Microsoft 365- eller Office 365-konto** från min organisation för att boka . Om du markerar den här kryssrutan begränsas självbetjäningssidans åtkomst till bara de som finns i klientorganisationen. Bookings-kalendern som finns i webbappen för att skapa och hantera kan bara nås av de personer som har lagts till som personal på sidan med administratörs- eller visningsroller.
+      Ja. Det finns en kryssruta på fliken Bokningssida i webbappen: Kräv ett Microsoft 365 eller Office 365 konto från min organisation **för att boka**. Om du markerar den här kryssrutan begränsas självbetjäningssidans åtkomst till bara de som finns i klientorganisationen. Bookings-kalendern som finns i webbappen för att skapa och hantera kan bara nås av de personer som har lagts till som personal på sidan med administratörs- eller visningsroller.
 
 
       :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Åtkomstkontroll för bokningssida i Bookings":::
@@ -234,7 +234,7 @@ sections:
   - question: >
       Kan bookings-kalendrar klonas eller kopieras, och kan de läggas till för enkel skalning?
     answer: >
-      Processen skulle vara att använda Graph API för att få information om postlådan och sedan använda informationen för att skapa en ny postlåda. API-dokumentationen [finns här.](/graph/api/resources/booking-api-overview?view=graph-rest-beta)
+      Processen skulle vara att använda API:t för Graph för att få information om postlådan och sedan använda den informationen till att skapa en ny postlåda. API-dokumentationen [finns här.](/graph/api/resources/booking-api-overview?view=graph-rest-beta)
   - question: >
       Vilken rapportering finns tillgänglig i Bookings?
     answer: >
@@ -260,7 +260,7 @@ sections:
   - question: >
       Var lagras bookings-data?
     answer: >
-      Bookings är en Microsoft 365-app, vilket innebär att alla data lagras i Microsoft 365-plattformen och i Exchange. Bookings följer alla principer för datalagring som anges av Microsoft, vilket är samma policy som alla Office-appar följer. Bookings använder delade postlådor i Exchange för att lagra kund-, personal-, service- och avtalad tidsinformation. Efterlevnadsprinciper för delade postlådor i Exchange gäller även för Bookings-postlådor. Alla kunddata (inklusive information från kunder vid bokning) lagras i Bookings och lagras i appen, vilket innebär att den lagras i Exchange. Microsoft Bookings använder samma policyer som används av Microsoft 365, som du hittar [här.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+      Bookings är en Microsoft 365 app, vilket innebär att alla data lagras i Microsoft 365 och i Exchange. Bookings följer alla principer för datalagring som anges av Microsoft, vilket är samma policy som alla Office följer. Bookings använder delade postlådor i Exchange för att lagra kund-, personal-, service- och avtalad tidsinformation. Efterlevnadsprinciper för delade postlådor i Exchange även för Bookings-postlådor. Alla kunddata (inklusive information från kunder vid bokning) fångas i Bookings och lagras i appen, och lagras därför i Exchange. Microsoft Bookings använder samma policyer som Microsoft 365, som du hittar [här.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
   - question: >
       Finns det något sätt att hantera bookings-kalendrar centralt för alla användare?
     answer: >
@@ -268,18 +268,18 @@ sections:
   - question: >
       Hur autentiseras användare?
     answer: >
-      Åtkomst till Bookings-webbappen innebär autentisering genom den vanliga Azure Active Directory-autentiseringen (AAD). Bokningssidan med självbetjäning kan göras tillgänglig för alla med länken webbsida. Men när inställningen Kräv **ett Microsoft 365- eller Office 365-konto** från min organisation till bok är markerad är sidan begränsad för användning endast inom Microsoft 365-klientorganisationen (med AAD-autentisering).
+      Åtkomst till Bookings-webbappen innebär autentisering via den vanliga Azure Active Directory-autentiseringen (AAD). Bokningssidan med självbetjäning kan göras tillgänglig för alla med länken webbsida. Men när inställningen **Kräv ett Microsoft 365-** eller Office 365-konto från min organisation till bok är markerad är sidan begränsad för användning endast inom Microsoft 365-klientorganisationen (med AAD-autentisering).
 
 
       :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Åtkomstkontroll för bokningssida i Bookings":::
   - question: >
       Lämnar kunddata av någon anledning produktionssystemet?
     answer: >
-      Ja, eftersom Bookings är en del av Exchange tillåter vi att Graph-API:er och EWS-API:er (Exchange Web Services) för kunderna kan ladda ned sina egna data som de har åtkomst till.
+      Ja, eftersom Bookings är en del av Exchange tillåter vi att Graph-API:er och Exchange Web Services -API:er (EWS) för kunderna kan ladda ned sina egna data som de har åtkomst till.
   - question: >
       Går det att anpassa e-postadresser för kundsvar?
     answer: >
-      Du kan definiera vilken e-postadress som kunden ska skicka svar till. Den här inställningen finns på **fliken Företagsinformation.** Bookings-postlådans namn kan också ändras i Exchange, genom vanliga namnbyten i Exchange-postlådor.
+      Du kan definiera vilken e-postadress som kunden ska skicka svar till. Den här inställningen finns på **fliken Företagsinformation.** Bookings-postlådans namn kan också ändras inom Exchange vanliga sätt Exchange byta namn på postlådan.
   - question: >
       Vi vill att kunden accepterar våra villkor under bokningsprocessen. Går det?
     answer: >
@@ -299,15 +299,15 @@ sections:
   - question: >
       Om en användare schemalägger en avtalad tid för en tjänst som består av ett onlinemöte, hur tar de emot Microsoft Teams-länken till mötet om de lämnar det valfria e-postadressfältet tomt?
     answer: >
-      Om systemet inte har kundens e-postinformation finns det inget sätt för bekräftelsemeddelandet att levereras till kunden, och därför får de inte någon Teams-länk. Lösningen är att ange e-postadressen som ett obligatoriskt fält, vilket du kan göra på fliken Tjänster i Bookings. Observera att när du skapar en ny tjänst i Bookings anges kundens e-postfält som ett obligatoriskt fält som standard.
+      Om systemet inte har kundens e-postinformation finns det inget sätt för bekräftelsemeddelandet att levereras till kunden och därför får de inte en Teams länk. Lösningen är att ange e-postadressen som ett obligatoriskt fält, vilket du kan göra på fliken Tjänster i Bookings. Observera att när du skapar en ny tjänst i Bookings anges kundens e-postfält som ett obligatoriskt fält som standard.
   - question: >
       Hur tilldelas personal till avtalade tider när "Alla" väljs, eller när kunder inte har möjlighet att välja en anställd för den avtalade tiden?
     answer: >
       Personal tilldelas slumpmässigt i dessa scenarier, av alla anställda som är tillgängliga vid tiden för den avtalade tiden som bokas. Det finns för närvarande inget sätt att säkerställa samma fördelning av slumpmässigt tilldelade avtalade tider för alla anställda eller för att minska antalet tilldelade avtalade tider för varje anställd. Om det finns belastningsutjämning som måste göras för din personal efter ett antal slumpmässiga tilldelningar kan du göra det manuellt på fliken Kalender på sidan Bookings.
   - question: >
-      Hur kan användarna avanmäla sig från SMS-meddelanden om de redan har valt att ta emot dem tidigare?
+      Hur kan användare avanmäla sig från att SMS meddelanden om de redan har valt att delta?
     answer: >
-      När bokning av ett möte med SMS-meddelanden är aktiverat uppmanas kunderna att markera rutan registrera sig varje gång de bokar. Kunder kan även svara direkt på SMS-meddelandet (SMS-leverantören) med information om att de vill att meddelandena ska upphöra, och sedan skickas inga fler sms till det telefonnumret. Om kunden väljer att inte ta emot sms från leverantören, inte från Bookings, kommer de inte längre att få SMS i framtiden, även när de väljer att gå med på Bookings-sidan.
+      När du gör en bokning SMS sms-meddelanden uppmanas kunderna att markera rutan registrera sig varje gång de bokar. Kunder kan också svara direkt på SMS-meddelandet (SMS-leverantören) med information om att de vill att meddelandena ska upphöra och sedan skickas inga ytterligare sms till telefonnumret. Om kunden väljer att inte ta emot sms från leverantören, inte från Bookings, kommer de inte längre att få SMS-meddelanden i framtiden, även när de väljer att gå med på Bookings-sidan.
 - name: Felsökning
   questions:
   - question: >
@@ -318,7 +318,7 @@ sections:
 
       > [!NOTE]
 
-      > Bookings aktiveras som standard för kunder med prenumeration på Microsoft 365 Business Standard, Microsoft 365 A3 eller Microsoft 365 A5. Bookings är även tillgängligt för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise E5, men är som standard inaktiverad. Information om hur du kommer igång [finns i Få åtkomst till Microsoft Bookings.](get-access.md) Om du vill aktivera eller inaktivera Bookings kan [du gå till Aktivera eller inaktivera Bookings för din organisation.](turn-bookings-on-or-off.md)
+      > Bookings aktiveras som standard för kunder med prenumeration på Microsoft 365 Business Standard, Microsoft 365 A3 Microsoft 365 A5. Bookings är även tillgänglig för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise E5, men är som standard inaktiverad. Information om hur du kommer igång [finns i Få åtkomst till Microsoft Bookings.](get-access.md) Om du vill aktivera eller inaktivera Bookings kan [du gå till Aktivera eller inaktivera Bookings för din organisation.](turn-bookings-on-or-off.md)
 
 
       Information om hur du synkroniserar personalens kalender finns i Lägga [till personal i Bookings.](add-staff.md) Kontrollera att händelser **i kalendern** påverkar **tillgängligheten på sidan Personalinformation är** markerat.
@@ -328,10 +328,10 @@ sections:
       För att Bookings ska kunna synkroniseras korrekt med de anställdas kalendrar måste varje anställd dela sin kalender. Varje anställd måste följa de här anvisningarna för att dela sin egen kalender.
 
 
-      1. Logga in på Microsoft 365 och välj **sedan Outlook** från appstartaren.
+      1. Logga in på Microsoft 365 och välj **Outlook** i startprogrammet.
 
          > [!div class="mx-imgBorder"]
-         > ![Bild av Outlook i startprogrammet](../media/bookings-applauncher-outlook.png)
+         > ![Bild på Outlook i startprogrammet](../media/bookings-applauncher-outlook.png)
 
       1. Högst upp på sidan väljer du **Dela** \> **kalender**.
 
@@ -348,7 +348,7 @@ sections:
       1. Välj **Klar**.
   - question: >
       Vi kan inte hitta en anställd i vår organisation
-    answer: "Om en anställd har lämnat företaget och du har tagit bort dem från din Microsoft 365- eller Office 365-organisation måste du fortfarande ta bort den användaren från Bookings så att de inte visas i kalendern och för att hindra kunder från att boka tider med dem.\n\n1. Logga in på Microsoft 365 och gå sedan till **Bookings** \\> **Staff.**\n\n1. Håll muspekaren över den anställdes namn. **Redigerings-** och borttagningsikoner visas till höger om **kolumnen** Telefon. \n\n1. Välj ikonen **Ta** bort.\n\n1. Välj OK i **bekräftelserutan.**\n\n> [!NOTE]\n> Om du har fler än en bokningskalender måste du ta bort användaren från alla.\n\nOm du vill kontrollera om du har fler än en kalender väljer du pilen bredvid företagsnamnet i den vänstra menyn och väljer sedan **Öppna**. Om du bara har en kalender visas bara alternativet för att lägga till en bokningskalender. Det här exemplet visar att det finns en andra kalender med namnet \"Contoso CO\".\n\n![Bild av skärmen Välj en kalender där en andra kalender visas](../media/bookings-choose-calendar.png)\n"
+    answer: "Om en anställd har lämnat företaget och du har tagit bort dem från din Microsoft 365- eller Office 365-organisation måste du fortfarande ta bort den användaren från Bookings så att de inte visas i kalendern och för att hindra kunder från att boka tider med dem.\n\n1. Logga in på Microsoft 365 och gå sedan till **Bookings** \\> **Staff.**\n\n1. Håll muspekaren över den anställdes namn. **Redigerings-** och borttagningsikonerna visas till höger **Telefon** kolumnen. \n\n1. Välj ikonen **Ta** bort.\n\n1. Välj OK i **bekräftelserutan.**\n\n> [!NOTE]\n> Om du har fler än en bokningskalender måste du ta bort användaren från alla.\n\nOm du vill kontrollera om du har fler än en kalender väljer du pilen bredvid företagsnamnet i den vänstra menyn och väljer sedan **Öppna**. Om du bara har en kalender visas bara alternativet för att lägga till en bokningskalender. Det här exemplet visar att det finns en andra kalender med namnet \"Contoso CO\".\n\n![Bild av skärmen Välj en kalender där en andra kalender visas](../media/bookings-choose-calendar.png)\n"
   - question: >
       Det finns ett synkroniseringsfel som vi inte kan identifiera
     answer: >

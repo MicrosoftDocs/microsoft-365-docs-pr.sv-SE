@@ -19,16 +19,21 @@ description: Läs mer om åtgärder i funktioner för automatisk undersökning o
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275078"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878778"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Granska och hantera åtgärdsåtgärder i Office 365
 
+**Gäller för**
+- [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
 Eftersom automatiska undersökningar av e& och samarbetsinnehåll resulterar  i bedömningar, till exempel skadlig eller *misstänkt,* skapas vissa åtgärder. I Microsoft Defender Office 365 kan åtgärder som vidtas omfattar:
+
 - Blockera en URL (tid för klickning)
 - Mjuk borttagning av e-postmeddelanden och kluster
 - Kvarantitiska e-postmeddelanden och e-postbilagor
@@ -36,13 +41,9 @@ Eftersom automatiska undersökningar av e& och samarbetsinnehåll resulterar  i 
 
 Dessa åtgärder vidtas inte om inte och tills ditt säkerhetsoperationsteam godkänner dem. Vi rekommenderar att du granskar och godkänner eventuella väntande åtgärder så snart som möjligt så att de automatiserade undersökningarna kan slutföras i tid. I vissa fall kan du ångra en åtgärdsåtgärd.
 
-**Gäller för**
-- [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 ## <a name="approve-or-reject-pending-actions"></a>Godkänna (eller avvisa) väntande åtgärder
 
-1. Gå till Microsoft 365 ( ) <https://security.microsoft.com> och logga in.
+1. Gå till Microsoft 365 Defender-portalen <https://security.microsoft.com> () och logga in.
 2. Välj Åtgärdscenter i **navigeringsfönstret.**
 3. Granska listan **över åtgärder** som väntar på godkännande på fliken Väntande.
 4. Markera ett objekt i listan. Den utfällna rutan öppnas. 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Kunder med Microsoft Defender Office 365 E5 samt P1 och P2 kan nu få en 360-gradersvy av varje e-postmeddelande med entitetssidan för e-post.
-ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c45b45101c27e92dd0fa8776ca5d8ee9eb3af5b7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539101"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878466"
 ---
 # <a name="the-email-entity-page"></a>Sidan E-postenhet
 
@@ -34,12 +34,17 @@ Administratörerna för Microsoft Defender för Office 365 (eller MDO) E5 och MD
 
 ## <a name="reach-the-email-entity-page"></a>Nå entitetssidan för e-post
 
-Oavsett om det befintliga säkerhets- & efterlevnadscentret (protection.office.com) eller det nya Microsoft 365 säkerhetscentret (security.microsoft.com) kan du se och använda sidan med e-post entitet.
+I det befintliga säkerhets- & kompatibilitetscentret eller på den nya Microsoft 365 Defender-portalen kan du se och använda sidan för e-post entitet.
+
+<br>
+
+****
 
 |Centrera|URL|Navigering|
 |---|---|---|
-|Säkerhets- & efterlevnad |protection.office.com|\>Hothanteringsutforskaren|
-|Microsoft 365 Säkerhetscenter |security.microsoft.com|E-& \> samarbetsutforskaren|
+|Säkerhets- och efterlevnadscenter|<https://protection.office.com>|\>Hothanteringsutforskaren|
+|Microsoft 365 Defender-portalen|<https://security.microsoft.com>|E-& \> samarbetsutforskaren|
+|
 
 I Hotutforskaren väljer du ämnet för ett e-postmeddelande som du undersöker. En guldlist visas högst upp i e-postmeddelandet. Den här inbjudan till den nya sidan säger "Prova vår nya sida för e-post entitet med bättre data...". Välj för att visa den nya sidan.
 
@@ -89,17 +94,20 @@ Administratörer kan förhandsgranska e-postmeddelanden i molnbaserade ***postl�
 
 ### <a name="detonation-details"></a>Information om detonation
 
-Den här informationen är specifik för e-postbilagor och URL-adresser.
+Den här informationen är specifik för e-postbilagor och URL-adresser. Användarna kan se den här informationen  genom att gå till Utforskaren och använda det teknikfilter som är inställt på detonation eller en URL-detonation. E-postmeddelanden som filtreras efter fil detonation innehåller en skadlig fil med information om detonation, och de som filtreras efter URL-adresser innehåller en skadlig URL och information om avonationen.
 
-Användarna ser bättre information om kända skadliga bilagor eller hyperlänkar i postlådorna, inklusive detonationskedjan, sammanfattningen av detonationen, skärmbilden och den observerade funktionsinformationen för att hjälpa kunderna att förstå varför den bifogade filen eller URL:en anses vara skadlig och detonerad.
+Användarna ser mer information som kan göra det mer avancerat för kända skadliga bifogade filer och URL-adresser som finns i deras e-postmeddelanden, som har detonerats för den specifika klientorganisationen. Den består av detonationskedjan, sammanfattningen av detonationen, skärmbilden och den observerade funktionsinformationen som hjälper kunderna att förstå varför den bifogade filen eller URL:en anses vara skadlig och detonerad.
 
-- *Detonationskedjan*: En enda fil- eller URL-detonation kan utlösa flera detonationer. Detonation-kedjan spårar sökvägen till detonationer, inklusive den ursprungliga skadliga filen eller URL-adressen som orsakade bedömning, och alla andra filer eller URL-adresser som upptäckts av detonationen. Dessa URL:er eller bifogade filer kanske inte finns direkt i e-postmeddelandet, men det är viktigt att ta med denna analys för att fastställa varför filen eller URL:en hittades som skadlig.
-- *Sammanfattning av detonation:* Den här ger information om:
-  - Detonationstidsintervall.
-  - Bedömning av den bifogade filen eller URL:en.
-  - Relaterad information (filnummer, URL:er, IP-adresser eller domäner) som är andra enheter som utser objekt vid detonation.
-- *Skärmbild av detonation*: Visar skärmbilder tagna under detonationsprocessen.
-- *Information om avonation:* Det här är exakt den funktionsinformation som gäller för varje process som ägde rum vid detonationen.
+1. *Detonation chain*. En enskild fil eller URL-detonation kan utlösa flera detonationer. Detonation-kedjan spårar sökvägen till detonationer, inklusive den ursprungliga skadliga filen eller URL-adressen som orsakade bedömning, och alla andra filer eller URL-adresser som upptäckts av detonationen. Dessa URL:er eller bifogade filer kanske inte finns direkt i e-postmeddelandet, men det är viktigt att ta med denna analys för att fastställa varför filen eller URL:en hittades som skadlig.  
+    > [!NOTE]
+    > Det här kan bara visa objektet på översta nivån om ingen av enheterna som är länkade till det visar sig vara problematiskt eller har detonerats.
+
+1. *Detonation Summary* ger en grundläggande sammanfattning för detonation, till exempel analystid, tiden då detonationen inträffade, operativsystem och program, operativsystemet och programmet där detonationen inträffade, filstorlek och bedömningsorsak.
+1. *Skärmbilder* visar skärmbilderna som tagits vid detonation. Det kan finnas flera skärmbilder vid detonation. Inga skärmbilder visas för
+    - Behållare skriver filer som .zip eller .rar.
+    - Om en URL öppnas i en länk som direkt laddar ned en fil. Men du ser den nedladdade filen i detonationskedjan.
+1. *Funktionsinformationen* är en export som visar information om beteendeinformation, till exempel exakta händelser som ägde rum vid detonation, och observabler som innehåller URL:er, IP-adresser, domäner och filer som hittades vid detonationen (och kan antingen vara problematiskt eller problematiskt). Observera att det kanske inte finns någon funktionsinformation för:
+    - Behållarfiler som .zip eller .rar som innehåller andra filer.
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Skärmbild av detonationssammanfattningen med kedja, sammanfattning, avoneringsinformation och skärmbild under rubriken *Djupanalys*.":::
 
@@ -111,7 +119,7 @@ Användarna ser bättre information om kända skadliga bilagor eller hyperlänka
 
 *E-postinformation:* Information krävs för en djupare förståelse av e-post på *fliken* Analys.
 
-- *Exchange Transportregler (ETR-regler* eller E-postflödesregler) : Dessa regler tillämpas på ett meddelande i transportlagret och har företräde framför nätt och skräppostutseningar. Dessa kan bara skapas och ändras i administrationscentret för Exchange, men om något ETR gäller för ett meddelande visas ETR-namnet och GUID här. Värdefull information för spårningssyfte.
+- *Exchange ETR-regler (ETR-regler eller* e-postflödesregler) : Dessa regler tillämpas på ett meddelande i transportlagret och har företräde framför nätt och skräppostutseningar. Dessa kan bara skapas och ändras i administrationscentret för Exchange, men om något ETR gäller för ett meddelande visas ETR-namnet och GUID här. Värdefull information för spårningssyfte.
 
 - *Åsidosättningar* i systemet: Det här är ett sätt att göra undantag till den leveransplats som är avsedd för ett meddelande genom att åsidosätta leveransplatsen som anges av systemet (enligt teknik för hot och identifiering).
 

@@ -19,12 +19,12 @@ ms.collection:
 description: Vad är metodtips för Exchange Online Protection (EOP) och Defender för Office 365 säkerhetsinställningar? Vilka är de aktuella rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vad får du om du även använder Defender för Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f00e1e2356839e70acafb0f98a5424a1311082e7
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 6c126a777d50fae93efdc618a8ac474dcee7ed75
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793226"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878994"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet
 
@@ -44,7 +44,7 @@ Information om hur du automatiskt använder standardinställningarna eller strik
 > [!NOTE]
 > Skräppostregeln måste aktiveras på postlådor för att filtreringen ska fungera ordentligt. Det är aktiverat som standard, men du bör kontrollera om filtrering inte verkar fungera. Mer information finns i [Konfigurera inställningar för skräppost i Exchange Online-postlådor](configure-junk-email-settings-on-exo-mailboxes.md).
 
-I den här artikeln beskrivs standardinställningarna och även de rekommenderade inställningarna Standard och Strikt för att skydda dina användare. Tabellerna innehåller inställningarna i Säkerhetscenter Microsoft 365 PowerShell (Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell för organisationer utan Exchange Online postlådor).
+I den här artikeln beskrivs standardinställningarna och även de rekommenderade inställningarna Standard och Strikt för att skydda dina användare. Tabellerna innehåller inställningarna i Microsoft 365 Defender-portalen och PowerShell (Exchange Online PowerShell eller fristående Exchange Online Protection PowerShell för organisationer Exchange Online postlådor).
 
 > [!TIP]
 > Med Office 365 orCA-modulen (Advanced Threat Protection Recommended Configuration Analyzer) för PowerShell kan du (administratörer) hitta de aktuella värdena i de här inställningarna. Mer specifikt genererar **cmdlet:en Get-ORCAReport** en bedömning av skydd mot skräppost, nätfiske och andra inställningar för meddelanden. Du kan ladda ned ORCA-modulen hos <https://www.powershellgallery.com/packages/ORCA/> .

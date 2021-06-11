@@ -32,9 +32,9 @@ I följande tabell finns begränsningar för grundläggande eDiscovery-ärenden 
   |:-----|:-----|
   |Maximalt antal ärenden för en organisation.  <br/> |Ingen gräns  <br/> |
   |Maximalt antal spärrade ärende för en organisation.  <br/> |10 000  <br/> |
-  |Maximalt antal postlådor för ett enskilt ärende håll. Den här gränsen omfattar totalt antal användarpostlådor och postlådorna som är kopplade Microsoft 365 grupper, Microsoft Teams och Yammer grupper.  <br/> |1 000  <br/> |
+  |Maximalt antal postlådor för ett enskilt ärende håll. Den här gränsen omfattar totalt antal användarpostlådor och postlådorna som är kopplade Microsoft 365 grupper, Microsoft Teams och Yammer grupper.  <br/> |1 000  <br/> |
   |Maximalt antal webbplatser i ett enskilt ärende. Den här gränsen omfattar det totala antalet OneDrive för företag, SharePoint webbplatser och webbplatser som är kopplade till grupper Microsoft 365, Microsoft Teams och Yammer grupper.  <br/> |100  <br/> |
-  |Maximalt antal ärenden som visas på eDiscovery-huvudsidan och det maximala antalet objekt som visas på flikarna Spärrar, Sökningar och Exportera i ett ärende. <sup>1</sup> |1 000|
+  |Maximalt antal ärenden som visas på eDiscovery-huvudsidan och det maximala antalet objekt som visas på flikarna Spärrar, Sökningar och Exportera i ett ärende. <sup>1</sup> |1 000|
   |||
 
    > [!NOTE]

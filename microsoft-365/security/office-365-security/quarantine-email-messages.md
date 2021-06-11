@@ -38,7 +38,7 @@ ms.locfileid: "52333812"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I Microsoft 365-organisationer som har postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor är karantän tillgänglig för potentiellt skadliga eller oönskade meddelanden.
+I Microsoft 365 organisationer som har postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection Exchange Online) är karantän tillgänglig för potentiellt skadliga eller oönskade meddelanden.
 
 Principer för skydd mot skadlig programvara sätt automatiskt ett meddelande i karantän *om en* bifogad fil påträffas som innehåller skadlig programvara. Mer information finns i Konfigurera [principer för skydd mot skadlig programvara i EOP.](configure-anti-malware-policies.md)
 

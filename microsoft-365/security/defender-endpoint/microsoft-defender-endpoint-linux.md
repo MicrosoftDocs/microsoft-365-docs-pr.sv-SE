@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd9d42ed85e9a489107a72ccbe841537a7e524d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4175d3bedff86dc7f8cdafc1ff2366ca1c9cffc4
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843524"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893746"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender för Endpoint för Linux
 
@@ -101,7 +101,9 @@ Om du får problem med installationen kan du gå till [Felsöka installationspro
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon kräver körbar behörighet. Mer information finns i "Se till att daemon har körbar behörighet" i Felsöka installationsproblem för [Microsoft Defender för slutpunkt i Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
 
-- Minne: 1 GB
+- Kärnor: minst 2, 4 som prioriteras
+
+- Minne: minst 1 GB, 4 som rekommenderas
 
     > [!NOTE]
     > Kontrollera att du har ledigt diskutrymme i /varians.

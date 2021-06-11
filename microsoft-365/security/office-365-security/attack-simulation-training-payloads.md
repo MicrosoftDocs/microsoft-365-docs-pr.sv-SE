@@ -12,14 +12,16 @@ ms.collection:
 - m365initiative-defender-office365
 description: Administratörer kan lära sig att skapa anpassade nyttolaster för utbildning av attackattacker i Microsoft Defender för Office 365.
 ms.technology: mdo
-ms.openlocfilehash: 6cc5dd4a48ab89193133cfaf823d0a1b1868fa79
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ac7963b71c466e8dfdc513a2563776cd4e10af95
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207050"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878766"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Skapa en anpassad nyttolast för att träna på attacksimulering
+
+**Gäller för** [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
 
 Microsoft erbjuder en robust katalog över nyttolaster för olika tekniker för social teknik som kan paras ihop med din attack simuleringsutbildning. Men det kan vara bra att skapa anpassade nyttolaster som fungerar bättre för din organisation. I den här artikeln beskrivs hur du skapar en nyttolast i utbildningen Attack simulering i Microsoft Defender för Office 365.
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratörer kan lära sig att använda den avancerade leveransprincipen i Exchange Online Protection (EOP) för att identifiera meddelanden som inte ska filtreras i specifika scenarier som stöds (nätfiskebedrägerier från tredje part och meddelanden som levereras till säkerhetsåtgärder (SecOps)-postlådor.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9c1c6f7635b87e25adcb121db79f67d4ec1988f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: deaad11b6397cd53017c0972a624b67a9623887f
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789006"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879114"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurera leverans av nätfiskebedrägerier från tredje part till användare och ofiltrerade meddelanden till SecOps-postlådor
 
@@ -62,20 +62,20 @@ Meddelanden som identifieras av den avancerade leveranspolicyn är inte säkerhe
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Microsoft 365 Säkerhetscenter på <https://security.microsoft.com>. Gå direkt till sidan **Avancerad leverans** genom att öppna <https://security.microsoft.com/advanceddelivery> .
+- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Gå direkt till sidan **Avancerad leverans** genom att öppna <https://security.microsoft.com/advanceddelivery> .
 
 - Du måste ha tilldelats behörigheter innan du kan utföra procedurerna i den här artikeln:
-  - Om du vill skapa, ändra eller ta bort konfigurerade inställningar i  den avancerade leveransprincipen måste du vara  medlem i rollgruppen Säkerhetsadministratör i säkerhetscentret och medlem i rollgruppen Organisationshantering i **Exchange Online.**   
+  - Om du vill skapa, ändra eller ta bort konfigurerade inställningar i  den avancerade leveransprincipen måste du vara medlem i  rollgruppen Säkerhetsadministratör i **Microsoft 365 Defender-portalen** och vara medlem i rollgruppen Organisationshantering i **Exchange Online.**  
   - För skrivskyddade åtkomst till avancerade leveransprinciper måste du vara medlem i rollgrupperna **Global Reader** **eller Säkerhetsläsare.**
 
-  Mer information finns i [Behörigheter i säkerhetscentret Microsoft 365 säkerhetscenter](permissions-microsoft-365-security-center.md) [och Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Mer information finns i [Behörigheter i Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md) och [Behörigheter i Exchange Online.](/exchange/permissions-exo/permissions-exo)
 
   > [!NOTE]
-  > Om du lägger till användare Azure Active Directory motsvarande roll får användarna  de behörigheter som krävs i säkerhetscentret och behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  > Om du lägger till användare i Azure Active Directory-rollen får användarna de behörigheter  som krävs i Microsoft 365 Defender-portalen samt behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
-## <a name="use-the-security-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Använda säkerhetscentret för att konfigurera SecOps-postlådor i den avancerade leveranspolicyn
+## <a name="use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Använd Microsoft 365 Defender-portalen för att konfigurera SecOps-postlådor i den avancerade leveransprincipen
 
-1. I säkerhetscentret går du till Avsnittet & **för samarbete** & Regler för \>  \> **hotregler** i avsnittet Avancerad \>  \> **leverans.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet & för **e&** eller regler för \>  \>  \>  \> **hotprinciper.**
 
 2. På sidan **Advanced delivery** kontrollerar du att **secOps-postlådefliken** är markerad och gör sedan något av följande:
    - Klicka ![ på Redigera-ikonen ](../../media/m365-cc-sc-edit-icon.png) **Redigera.**
@@ -93,9 +93,9 @@ Meddelanden som identifieras av den avancerade leveranspolicyn är inte säkerhe
 
 Postlådepostlådorna för SecOps som du har konfigurerat visas på **fliken SecOps-postlåda.** Om du vill göra ändringar klickar ![ du på ](../../media/m365-cc-sc-edit-icon.png) **Redigera-ikonen** Redigera på fliken.
 
-## <a name="use-the-security-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Använd säkerhetscentret för att konfigurera nätfiskebedrägerier från tredje part i den avancerade leveranspolicyn
+## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Använd Microsoft 365 Defender-portalen för att konfigurera nätfiskebedrägerier från tredje part i den avancerade leveranspolicyn
 
-1. I säkerhetscentret går du till Avsnittet & **för samarbete** & Regler för \>  \> **hotregler** i avsnittet Avancerad \>  \> **leverans.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet & för **e&** eller regler för \>  \>  \>  \> **hotprinciper.**
 
 2. På sidan **Avancerad leverans** väljer du fliken **Phishing simulering** och gör sedan något av följande:
    - Klicka ![ på Redigera-ikonen ](../../media/m365-cc-sc-edit-icon.png) **Redigera.**

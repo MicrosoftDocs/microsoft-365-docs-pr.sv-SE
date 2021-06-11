@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Översikt över Viva Topics.
-ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ecd090036f35a3cfdaffe532c800244c8174183b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877818"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302130"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Översikt över Microsoft Viva-ämnen 
 
-Viva Topics använder Microsoft AI-teknik, Microsoft 365, Microsoft Graph, Search och andra komponenter och tjänster för att ge användarna kunskap i de Microsoft 365-appar de använder varje dag, med början på moderna sidor i SharePoint, Microsoft Search och sökning i Word, PowerPoint, Outlook och Excel.
+Viva Topics använder Microsoft AI-teknik, Microsoft 365, Microsoft Graph, Search och andra komponenter och tjänster för att ge användarna kunskaper i Microsoft 365-appar de använder varje dag, med början på moderna SharePoint-sidor, Microsoft Search och sökning i Word, PowerPoint, Outlook och Excel.
 
 <br/>
 
@@ -31,9 +31,10 @@ Viva Topics använder Microsoft AI-teknik, Microsoft 365, Microsoft Graph, Searc
 
 <br/>
 
-Viva Topics hjälper till att lösa ett viktigt affärsproblem i många företag – att tillhandahålla information till användare när de behöver det. Till exempel behöver nya medarbetare snabbt lära sig mycket ny information, och stöter på termer som de inte vet något om när de läser igenom företagsinformation. För att lära sig mer kan användaren behöva ge sig av från vad de gör och ägna värdefull tid åt att söka efter information, till exempel information om vad termen är, vem i organisationen som är ämnesexpert och kanske webbplatser och dokument som är relaterade till termen.
+Med Viva Topics kan du hantera ett viktigt affärsproblem i många företag – där användarna får tillgång till informationen när de behöver den. Till exempel behöver nya medarbetare snabbt lära sig mycket ny information, och stöter på termer som de inte vet något om när de läser igenom företagsinformation. För att lära sig mer kan användaren behöva ge sig av från vad de gör och ägna värdefull tid åt att söka efter information, till exempel information om vad termen är, vem i organisationen som är ämnesexpert och kanske webbplatser och dokument som är relaterade till termen.
 
-Viva Topics använder AI för att automatiskt söka efter och identifiera *ämnen* i organisationen. Här sammanställs information om dem, till exempel en kort beskrivning, personer som arbetar med ämnet samt webbplatser, filer och sidor som är relaterade till det. En kunskapshanterare eller deltagare kan välja att uppdatera ämnesinformationen efter behov. Ämnena är tillgängliga för användarna, vilket innebär att för alla förekomster av ämnet som visas på en modern SharePoint-webbplats i nyheter och sidor markeras texten. Användarna kan välja ett ämne för att få mer information via ämnesinformationen. Ämnen finns också i SharePoint Search.
+Viva Topics använder AI för att automatiskt söka efter och identifiera **ämnen** i organisationen. Här sammanställs information om dem, till exempel en kort beskrivning, personer som arbetar med ämnet samt webbplatser, filer och sidor som är relaterade till det. En kunskapshanterare eller deltagare kan välja att uppdatera ämnesinformationen efter behov. Ämnena är tillgängliga för användarna, vilket innebär att för alla förekomster av ämnet som visas på en modern SharePoint-webbplats i nyheter och sidor markeras texten. Användarna kan välja ett ämne för att få mer information via ämnesinformationen. Ämnen finns också i SharePoint Search.
+
 
 ## <a name="how-topics-are-displayed-to-users"></a>Hur ämnen visas för användare
 
@@ -49,10 +50,9 @@ När du använder Sökning i Word, PowerPoint, Outlook eller Excel, antingen via
 
 ## <a name="knowledge-indexing"></a>Kunskapsindexering
 
-Viva Topics använder Microsoft AI-teknik för att identifiera *ämnen* i Microsoft 365-miljön.
+Viva Topics använder Microsoft AI-teknik för att identifiera **ämnen** i Microsoft 365-miljön.
 
 Ett ämne är en fras eller term som är organisatoriskt signifikativ eller viktig. Den har en specifik betydelse för organisationen och har relaterade resurser som kan hjälpa andra att förstå vad den är och hitta mer information om den. Det finns många olika typer av ämnen som är viktiga för din organisation. Till en början fokuserar Microsoft AI-tekniken på följande typer:
-
 - Project
 - Händelse
 - Organisation
@@ -61,7 +61,8 @@ Ett ämne är en fras eller term som är organisatoriskt signifikativ eller vikt
 - Kreativt arbete
 - Studiefält
 
-När ett ämne identifieras och AI bestämmer att det innehåller tillräckligt med information för att vara ett föreslaget ämne, visas informationen som hämtades via ämnesindexering på en *ämnessida*, till exempel:
+
+När ett ämne identifieras och AI bestämmer att det innehåller tillräckligt med information för att vara ett föreslaget ämne, visas informationen som hämtades via ämnesindexering på en **ämnessida**, till exempel:
 
 - Alternativa namn och förkortningar.
 - En kort beskrivning om ämnet.
@@ -70,7 +71,7 @@ När ett ämne identifieras och AI bestämmer att det innehåller tillräckligt 
 
 Dina kunskapsadministratörer kan välja att crawla alla SharePoint-webbplatser i klientorganisationen för ämnen eller att bara välja vissa.
 
-Mer information finns i avsnittet [Ämnesidentifiering och läroplan.](./topic-experiences-discovery-curation.md)
+Se [Ämnesidentifiering och curation](./topic-experiences-discovery-curation.md).
 
 ## <a name="roles"></a>Roller
 
@@ -80,25 +81,26 @@ När du använder Viva Topics i Microsoft 365-miljön har användarna följande 
 
 - Deltagare: Användare som har behörighet att redigera befintliga ämnen eller skapa nya. Kunskapsadministratörer tilldelar behörighet som deltagare till användare via inställningarna för Viva Topics i Administrationscenter för Microsoft 365. Observera att du även kan välja att ge alla som tittar på ämnet behörighet att redigera och skapa ämnen så att alla kan bidra till ämnen som de ser.
 
-- Kunskapshanterare: Användare som vägleder ämnen genom ämnets livscykel. Knowledge managers use the Manage topics page in the topic center to confirm AI-suggested topics, remove topics that are no longer relevant, as edit **existing topics** or create new ones, and are the only users who have access to it. Kunskapsadministratörer tilldelar behörighet som kunskapshanterare till användare via inställningarna för Viva Topics i Administrationscenter för Microsoft 365. 
+- Kunskapshanterare: Användare som vägleder ämnen genom ämnets livscykel. Kunskapshanterare använder sidan **Hantera Topics** i Temacenter för att bekräfta AI-föreslagna ämnen, ta bort ämnen som inte längre är relevanta och redigera befintliga ämnen eller skapa nya och är de enda användarna som har åtkomst till dem. Kunskapsadministratörer tilldelar behörighet som kunskapshanterare till användare via inställningarna för Viva Topics i Administrationscenter för Microsoft 365. 
 
-- Kunskapsadministratörer: Administratörer konfigurera Viva-ämnen och hantera det via administratörskontrollerna i Microsoft 365 administrationscenter. En global Microsoft 365- eller SharePoint-administratör kan för närvarande fungera som kunskapsadministratör.
+- Kunskapsadministratörer: Kunskapsadministratörer har ställt in Viva Topics och hanterar dem via administratörskontrollerna i Administrationscenter för Microsoft 365. En global Microsoft 365- eller SharePoint-administratör kan för närvarande fungera som kunskapsadministratör.
 
-Mer information finns i [Viva Topics-roller.](topic-experiences-roles.md)
+Se [roller för Viva Topics](topic-experiences-roles.md) för mer information.
 
 ## <a name="topic-management"></a>Ämneshantering
 
-Ämneshanteringen utförs **på sidan** Hantera ämnen i organisationens *ämnescenter.* Ämnescentret skapas under installationen och fungerar som ditt kunskapscenter för din organisation. 
+Ämneshanteringen görs på sidan **Hantera ämnen** på organisationens webbplats **temacenter**. Temacenter skapas under installationen och fungerar som kunskapscenter för organisationen. 
 
-Alla licensierade användare kan se ämnen som de är anslutna  till i ämnescentret, men endast användare med behörigheten Hantera ämnen (knowledge managers) kan visa och använda **sidan Hantera** ämnen.
+Alla licensierade användare kan se ämnen som de är anslutna till i temacenter, men endast användare med behörigheten *Hantera ämnen* (kunskapshanterare) kan visa och använda sidan Hantera ämnen.
 
 Kunskapshanterare kan:
 
 - Bekräfta eller ta bort ämnen som har upptäckts i klientorganisationen.
 - Skapa nya ämnen manuellt efter behov (om till exempel inte tillräckligt med information tillhandahölls för att den ska upptäckas via AI).
-- Redigera befintliga ämnessidor.
+- Redigera befintliga ämnessidor.<br/>
 
-Mer information finns i [Hantera ämnen i ämnescentret.](manage-topics.md)  
+Se [Hantera ämnen i temacenter](manage-topics.md) för mer information.  
+
 
 ## <a name="admin-controls"></a>Administratörskontroller
 
@@ -111,20 +113,20 @@ Med administratörskontroller i Microsoft 365 kan du hantera Viva Topics. De gö
 - Kontrollera vilka användare som kan skapa och redigera ämnen.
 - Kontrollera vilka användare som kan visa ämnen.
 
-Mer information om administratörskontroller finns i [Tilldela användarbehörigheter](./plan-topic-experiences.md#user-permissions), [hantera synlighet för ämnen](./topic-experiences-knowledge-rules.md)och hantera identifiering av [ämnen.](./topic-experiences-discovery.md)
+Se [tilldela användarbehörigheter](./plan-topic-experiences.md#user-permissions), [hantera synlighet för ämnen](./topic-experiences-knowledge-rules.md)och [hantera identifiering av ämnen](./topic-experiences-discovery.md) för mer information om administratörskontroller.
 
 ## <a name="topic-curation--feedback"></a>Ämneshantering och feedback
 
 AI kommer kontinuerligt att arbeta med att ge förslag för att förbättra dina ämnen när ändringar sker i din miljö. 
 
-Användare med behörighet att redigera eller skapa ämnen kan uppdatera ämnessidor direkt om de vill göra korrigeringar eller lägga till ytterligare information. De kan också lägga till nya ämnen som AI inte kunde identifiera. Om det finns tillräckligt med information om dessa manuellt tillagda ämnen, och AI kan identifiera den här typen av ämne, kan ytterligare förslag från AI förbättra dessa manuellt tillagda ämnen.
+Användare med behörighet att redigera eller skapa ämnen kan uppdatera ämnessidor direkt om de vill göra korrigeringar eller lägga till ytterligare information. De kan också lägga till nya ämnen som AI inte kunde identifiera. Om det finns tillräckligt med information om dessa manuellt tillagda ämnen, och AI kan identifiera den här typen av ämne, kan ytterligare förslag från AI förbättra dessa manuellt tillagda ämnen 
 
 Användare som du tillåter åtkomst till för att se ämnen i sitt dagliga arbete kan bli tillfrågade om ämnet var användbart för dem. Systemet ser på svaren och använder dem för att förbättra markering av ämnet, och hjälpa dig att avgöra vad som visas i ämnessammanfattningar och i ämnesinformation.
 
 Dessutom kan användare med rätt behörighet tagga objekt, till exempel Yammer-konversationer som är relevanta för ett ämne, och lägga till dem i ett visst ämne. 
 
-Mer information finns i avsnittet [Ämnesidentifiering och läroplan.](./topic-experiences-discovery-curation.md)
+Se [Ämnesidentifiering och curation](./topic-experiences-discovery-curation.md).
 
-## <a name="see-also"></a>Se även
-
-[Använda Microsoft Search för att hitta ämnen i Viva-ämnen](./search.md)
+<!--
+## See also
+-->

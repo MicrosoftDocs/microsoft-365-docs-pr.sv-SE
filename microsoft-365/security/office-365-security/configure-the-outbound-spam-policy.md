@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan lära sig att visa, skapa, ändra och ta bort principer för utgående skräppost i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ebff0a93acd505532773fbf5d714268df220c9a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 13b25300b6e5b42c860c58546f9c084a244b5f1f
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822015"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878922"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurera utgående skräppostfiltrering i EOP
 
@@ -43,14 +43,14 @@ EOP använder principer för utgående skräppost som en del av organisationens 
 
 Administratörer kan visa, redigera och konfigurera (men inte ta bort) standardprincipen för utgående skräppost. För större detaljnivå kan du också skapa anpassade principer för utgående skräppost som gäller för specifika användare, grupper eller domäner i organisationen. Anpassade principer har alltid företräde framför standardprincipen, men du kan ändra prioriteten (löpande ordning) för dina anpassade principer.
 
-Du kan konfigurera principer för utgående skräppost i säkerhetscentret i Microsoft 365 eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
+Du kan konfigurera principer för utgående skräppost i Microsoft 365 Microsoft 365 Defender-portalen eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
 De grundläggande elementen i en princip för utgående skräppost i EOP är:
 
 - **Principen för utgående skräppostfilter:** Anger åtgärderna för utgående skräppostfiltrering av bedömningsutskick och aviseringsalternativen.
 - **Regeln för utgående skräppostfilter:** Anger prioritet och mottagarfilter (som principen gäller för) för en princip för utgående skräppostfilter.
 
-Skillnaden mellan dessa två element är inte uppenbara när du hanterar utgående skräppost-faktorer på säkerhetscentret:
+Skillnaden mellan dessa två element är inte uppenbara när du hanterar utgående skräppost-faktorer i Microsoft 365 Defender-portalen:
 
 - När du skapar en princip skapar du faktiskt en utgående skräppostfilterregel och samtidigt den associerade policyn för utgående skräppostfilter med samma namn för båda.
 - När du ändrar en princip ändrar inställningar för namn, prioritet, aktiverade eller inaktiverade samt mottagarfilter regeln för skräppostfilter för utgående trafik. Alla andra inställningar ändrar den associerade policyn för skräppostfilter.
@@ -68,7 +68,7 @@ För att göra utgående skräppostfiltrering mer effektiv kan du skapa anpassad
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Microsoft 365 Säkerhetscenter på <https://security.microsoft.com>. Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://security.microsoft.com/antispam>.
+- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Om du vill gå direkt till **Inställningar för skräppostskydd** använder du <https://security.microsoft.com/antispam>.
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -87,11 +87,11 @@ För att göra utgående skräppostfiltrering mer effektiv kan du skapa anpassad
 
 - Standardprinciperna för avisering med namnet Begränsning av e-postutskick har [](../../compliance/alert-policies.md) **överskridits,** mönster för misstänkta e-postutskick och Användaren har begränsats från att skicka e-post, som redan har skickat e-postmeddelanden till medlemmar i **gruppen TenantAdmins** **(globala** administratörer) om ovanliga utgående e-postaktiviteter och blockerade användare på grund av utgående skräppost.  Mer information finns i [Verifiera aviseringsinställningarna för begränsade användare.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Vi rekommenderar att du använder dessa aviseringsprinciper i stället för alternativen för meddelanden i principer för utgående skräppost.
 
-## <a name="use-the-security-center-to-create-outbound-spam-policies"></a>Använda säkerhetscentret för att skapa principer för utgående skräppost
+## <a name="use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies"></a>Använda Defender Microsoft 365 portalen för att skapa principer för utgående skräppost
 
-När du skapar en anpassad utgående skräppostprincip i säkerhetscentret skapas skräppostfilterregeln och den tillhörande skräppostfilterprincipen samtidigt med samma namn för båda.
+När du skapar en anpassad utgående skräppostprincip i Microsoft 365 Defender-portalen skapas samtidigt en skräppostfilterregel och den tillhörande skräppostfilterprincipen med samma namn för båda.
 
-1. I säkerhetscentret går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **avsnittet Principer för &-&** \>  \>  \>  \> **e-&** principer för hot mot skräppost.
 
 2. På sidan **Principer för skydd mot skräppost** klickar du på Skapa ikon Skapa ![ ](../../media/m365-cc-sc-create-icon.png) **princip** och väljer sedan **Utgående** från listrutan.
 
@@ -134,7 +134,7 @@ När du skapar en anpassad utgående skräppostprincip i säkerhetscentret skapa
        - Aktivitetsaviseringen med **namnet Användare begränsad från att skicka e-postmeddelanden** till administratörer (via e-post och på sidan **Visa** aviseringar).
        - Alla mottagare som anges i inställningen Meddela specifika personer om en avsändare blockeras på grund av att skicka **utgående** skräppost i principen meddelas också.
        - Användaren kan inte skicka fler meddelanden förrän nästa dag, baserat på UTC-tid. Det finns inget sätt för administratören att åsidosätta det här blocket.
-     - **Hindra** användaren från att skicka e-post: E-postaviseringar skickas, användaren läggs till i Begränsade användare i säkerhetscentret och användaren kan inte skicka e-post förrän han eller hon har tagits bort från Begränsade användare av en  <https://security.microsoft.com/restrictedusers> administratör.  När en administratör tar bort användaren från listan begränsas inte användaren på nytt under den dagen. Instruktioner finns i Ta [bort en användare från portalen begränsade användare efter att ha skickat skräppost.](removing-user-from-restricted-users-portal-after-spam.md)
+     - **Hindra** användaren från att skicka e-post: E-postaviseringar skickas, användaren läggs till i Begränsade användare i  <https://security.microsoft.com/restrictedusers> Microsoft 365 Defender-portalen och användaren kan inte skicka e-post förrän de har tagits bort från begränsade användare av en administratör.  När en administratör tar bort användaren från listan begränsas inte användaren på nytt under den dagen. Instruktioner finns i Ta [bort en användare från portalen begränsade användare efter att ha skickat skräppost.](removing-user-from-restricted-users-portal-after-spam.md)
      - **Ingen åtgärd, endast avisering:** E-postaviseringar skickas.
 
    - **Regler för vidarebefordran:** Använd inställningarna i det här avsnittet för att styra automatisk vidarebefordran av **e Exchange Online postlådor** till externa avsändare. Mer information finns i Kontrollera [automatisk vidarebefordran av extern e-post i Microsoft 365](external-email-forwarding.md).
@@ -175,9 +175,9 @@ När du skapar en anpassad utgående skräppostprincip i säkerhetscentret skapa
 
 7. På bekräftelsesidan som visas klickar du på **Klar**.
 
-## <a name="use-the-security-center-to-view-outbound-spam-policies"></a>Använda säkerhetscentret för att visa principer för utgående skräppost
+## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>Använda Defender Microsoft 365 portalen för att visa principer för utgående skräppost
 
-1. I säkerhetscentret går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **avsnittet Principer för &-&** \>  \>  \>  \> **e-&** principer för hot mot skräppost.
 
 2. På sidan **Princip för skräppostskydd** letar du efter något av följande värden:
    - Värdet **för Type** är **Policyn för anpassad utgående skräppost**
@@ -192,15 +192,15 @@ När du skapar en anpassad utgående skräppostprincip i säkerhetscentret skapa
 
 3. När du väljer en princip för utgående skräppost genom att klicka på namnet visas principinställningarna i en utfällmapp.
 
-## <a name="use-the-security-center-to-modify-outbound-spam-policies"></a>Använda säkerhetscentret för att ändra principer för utgående skräppost
+## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>Använda Defender Microsoft 365 portalen för att ändra principer för utgående skräppost
 
-1. I säkerhetscentret går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **avsnittet Principer för &-&** \>  \>  \>  \> **e-&** principer för hot mot skräppost.
 
 2. På sidan **Principer för skräppostskydd** väljer du en utgående policy för skräppost i listan genom att klicka på namnet:
    - En anpassad princip som du har skapat där värdet i kolumnen **Typ** är **Anpassad utgående skräppostprincip.**
    - Standardprincipen med namnet **Utgående policy mot skräppost (standard).**
 
-3. I den utfällda menyn för principinformationen kan du välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet. Mer information om inställningarna finns i föregående Använda säkerhetscentret för att skapa principer för [utgående skräppost](#use-the-security-center-to-create-outbound-spam-policies) i den här artikeln.
+3. I den utfällda menyn för principinformationen kan du välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet. Mer information om inställningarna finns i föregående använda Defender-Microsoft 365 för att skapa principer för [utgående skräppost](#use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies) i den här artikeln.
 
    I standardprincipen för utgående skräppost är **avsnittet** Tillämpas på inte tillgängligt (principen gäller för alla) och du kan inte byta namn på principen.
 
@@ -210,7 +210,7 @@ Läs mer i följande avsnitt om du vill aktivera eller inaktivera en princip, an
 
 Du kan inte inaktivera standardprincipen för utgående skräppost.
 
-1. I säkerhetscentret går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **avsnittet Principer för &-&** \>  \>  \>  \> **e-&** principer för hot mot skräppost.
 
 2. På sidan **Principer för skydd mot** skräppost  väljer du en princip med värdet Typ av policy för anpassad **utgående skräppost** i listan genom att klicka på namnet.
 
@@ -228,14 +228,14 @@ Tillbaka på huvudsidan kommer värdet **Status** för principen att vara **På*
 
 Som standard prioriteras principer för utgående skräppost baserat på i vilken ordning de skapas (nyare principer har lägre prioritet än äldre principer). Ett lägre prioritetsnummer innebär att principen har högre prioritet (0 är det högsta), och principerna bearbetas i prioritetsordning (principer med högre prioritet bearbetas före principer med lägre prioritet). Inga två policyer kan ha samma prioritet, och policyhantering stannar efter att den första policyn har tillämpats.
 
-Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** eller **Minska prioritet** i egenskaperna för principen (du kan inte direkt ändra numret för **Prioritet** i Microsoft 365 Säkerhetscenter). Det är bara meningsfullt att ändra prioritet för en princip om du har flera principer.
+Om du vill ändra prioriteten för  en princip klickar du på Öka prioritet eller  Minska prioritet för egenskaperna för principen (du kan inte direkt ändra prioritetsnumret i Microsoft 365 Defender-portalen).  Det är bara meningsfullt att ändra prioritet för en princip om du har flera principer.
 
  **Anmärkningar**:
 
-- I säkerhetscentret kan du bara ändra prioriteten för policyn för utgående skräppost efter att du har skapat den. I PowerShell kan du åsidosätta standardprioriteten när du skapar regeln för skräppostfilter (vilket kan påverka prioriteringen för befintliga regler).
+- I Microsoft 365 Defender-portalen kan du bara ändra prioriteten för principen för utgående skräppost när du har skapat den. I PowerShell kan du åsidosätta standardprioriteten när du skapar regeln för skräppostfilter (vilket kan påverka prioriteringen för befintliga regler).
 - Principer för utgående skräppost bearbetas i den ordning som de visas (den första principen har **prioritetsvärdet** 0). Standardprincipen för utgående skräppost har prioritetsvärdet **Lägsta** och du kan inte ändra det.
 
-1. I säkerhetscentret går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **avsnittet Principer för &-&** \>  \>  \>  \> **e-&** principer för hot mot skräppost.
 
 2. På sidan **Principer för skydd mot skräppost** väljer  du en princip med värdet Typ av anpassad **utgående skräppost-policy** i listan genom att klicka på namnet.
 
@@ -248,11 +248,11 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 
 4. Klicka **Stäng** i den utfällda menyn principinformation när du är klar.
 
-## <a name="use-the-security-center-to-remove-custom-outbound-spam-policies"></a>Använda säkerhetscentret för att ta bort anpassade principer för utgående skräppost
+## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-outbound-spam-policies"></a>Använda Defender Microsoft 365 portalen för att ta bort anpassade principer för utgående skräppost
 
-När du använder säkerhetscentret för att ta bort en anpassad policy för utgående skräppost tas både skräppostfilterregeln och motsvarande policy för skräppostfilter bort. Du kan inte ta bort standardprincipen för utgående skräppost.
+När du använder Microsoft 365 Defender-portalen för att ta bort en anpassad princip för utgående skräppost tas både skräppostfilterregeln och motsvarande policy för skräppostfilter bort. Du kan inte ta bort standardprincipen för utgående skräppost.
 
-1. I säkerhetscentret går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **avsnittet Principer för &-&** \>  \>  \>  \> **e-&** principer för hot mot skräppost.
 
 2. På sidan **Principer för skydd mot** skräppost  väljer du en princip med värdet Typ av policy för anpassad **utgående skräppost** i listan genom att klicka på namnet. Längst upp i den utfällda menyn policyinformation som visas klickar du på ![ikonen Fler åtgärder](../../media/m365-cc-sc-more-actions-icon.png) **Fler åtgärder** \> ![ikonen Ta bort princip](../../media/m365-cc-sc-delete-icon.png) **Ta bort princip**.
 
@@ -278,10 +278,10 @@ Det krävs två steg för att skapa en princip för utgående skräppost i Power
    **Anmärkningar**:
 
    - Du kan skapa en ny regel för utgående skräppostfilter och tilldela en befintlig, oassocierad utgående skräppostfilterprincip till den. En utgående skräppostfilterregel kan inte associeras med mer än en princip för utgående skräppostfilter.
-   - Du kan konfigurera följande inställningar för nya principer för skräppostfilter i PowerShell som inte är tillgängliga i säkerhetscentret förrän du har skapat principen:
+   - Du kan konfigurera följande inställningar för nya principer för skräppostfilter i PowerShell som inte är tillgängliga i Microsoft 365 Defender-portalen förrän du har skapat principen:
      - Skapa den nya principen som _inaktiverad (aktiverad_ `$false` på cmdleten **New-HostedOutboundSpamFilterRule).**
      - Ange prioritet för principen vid skapande (_Prioritet_ ) på _\<Number\>_ cmdleten **New-HostedOutboundSpamFilterRule).**
-   - En ny princip för utgående skräppostfilter som du skapar i PowerShell visas inte i säkerhetscentret förrän du tilldelar principen till en regel för utgående skräppostfilter.
+   - En ny princip för utgående skräppostfilter som du skapar i PowerShell visas inte i Microsoft 365 Defender-portalen förrän du tilldelar principen till en regel för utgående skräppostfilter.
 
 #### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>Steg 1: Använda PowerShell för att skapa en princip för utgående skräppostfilter
 
@@ -387,7 +387,7 @@ Detaljerad information om syntax och parametrar finns i [Get-HostedOutboundSpamF
 Samma inställningar är tillgängliga när du ändrar en princip för skadlig programvara i PowerShell som när du skapar principen enligt beskrivningen i Steg [1:](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) Använda PowerShell för att skapa en princip för utgående skräppostfilter tidigare i den här artikeln.
 
 > [!NOTE]
-> Du kan inte byta namn på en utgående policy för skräppostfilter **(cmdleten Set-HostedOutboundSpamFilterPolicy** har ingen _namnparameter)._ När du byter namn på en utgående skräppostprincip i säkerhetscentret byter du bara namn på regeln för utgående _skräppostfilter._
+> Du kan inte byta namn på en utgående policy för skräppostfilter **(cmdleten Set-HostedOutboundSpamFilterPolicy** har ingen _namnparameter)._ När du byter namn på en utgående skräppostprincip i Microsoft 365 Defender-portalen byter du bara namn på filterregeln för _utgående skräppost._
 
 Använd följande syntax för att ändra en princip för utgående skräppostfilter:
 

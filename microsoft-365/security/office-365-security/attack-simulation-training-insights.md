@@ -10,20 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratörer kan lära sig hur attack simuleringsutbildning i Microsoft 365 säkerhetscenter påverkar anställda och kan få insikter från simulering och utbildningsresultat.
+description: Administratörer kan lära sig hur attack simuleringsutbildning i Microsoft 365 Defender-portalen påverkar anställda och kan få insikter från simulering och utbildningsresultat.
 ms.technology: mdo
-ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: e189864a42d025bb5ce720a6edb6c1c2c8c84623
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51600013"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878382"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Få insikter genom att träna på attacksimulering
 
+**Gäller för** [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
+
 I simuleringen av attacker ger Microsoft dig insikter baserade på resultat av simuleringar och utbildningar som anställda gick igenom. De här insikterna hjälper dig att hålla dig informerad om dina anställdas beredskapsstatus och rekommenderar nästa steg för att bättre förbereda de anställda och din miljö för attacker.
 
-Vi arbetar kontinuerligt med att expandera de insikter som är tillgängliga för dig. Funktionens påverkan och rekommenderade åtgärder är tillgängliga för närvarande. Börja med att gå till [simuleringsutbildning för attack i Microsoft 365 säkerhetscenter](https://security.microsoft.com/attacksimulator?viewid=overview).
+Vi arbetar kontinuerligt med att expandera de insikter som är tillgängliga för dig. Funktionens påverkan och rekommenderade åtgärder är tillgängliga för närvarande. Börja med att gå till [simuleringsutbildning för attack i Microsoft 365 Defender-portalen](https://security.microsoft.com/attacksimulator?viewid=overview).
 
 ## <a name="behavior-impact-on-compromise-rate"></a>Påverkan på kompromettränta
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Övervaka och hantera borttagning av innehåll, oavsett om du använder en borttagningsgranskning eller om innehåll tas bort automatiskt enligt de inställningar du har konfigurerat.
-ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594079"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878130"
 ---
 # <a name="disposition-of-content"></a>Borttagning av innehåll
 
@@ -38,7 +38,7 @@ Använd fliken **Borttagning** från **Hantering av arkivhandlingar** i Microsof
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Krav för att visa innehållsborttagningar
 
-Du måste ha tillräcklig behörighet för att hantera borttagningsgranskningar och bekräfta att arkivhandlingar har tagits bort. Granskning måste också vara aktiverat.
+Du måste ha tillräcklig behörighet för att hantera borttagningsgranskningar och bekräfta att arkivhandlingar har tagits bort. Granskning måste också vara aktiverat. Tänk även på eventuella [begränsningar](retention-limits.md#maximum-number-of-items-for-disposition) vad gäller borttagning.
 
 ### <a name="permissions-for-disposition"></a>Behörigheter för borttagning
 
@@ -215,8 +215,6 @@ Använd fliken **Borttagning** på sidan **Hantering av arkivhandlingar** för a
 För dessa objekt visas **Borttagna arkivhandlingar** i kolumnen **Typ**. Till exempel:
 
 ![Objekt som tagits bort utan en borttagningsgranskning](../media/records-disposed2.png)
-
-Objekt som visas på fliken **Borttagna objekt** behålls i upp till sju år efter att objektet tagits bort, med en begränsning på en miljon objekt per arkivhandling under perioden. Om du ser att talet **Antal** närmar sig den här gränsen på en miljon och du behöver bevis på borttagning för dina arkivhandlingar kontaktar du [Microsoft Support](../business-video/get-help-support.md).
 
 > [!NOTE]
 > Den här funktionen använder information från den [enhetliga granskningsloggen](search-the-audit-log-in-security-and-compliance.md) och kräver därför att granskning är [aktiverad och sökbar](turn-audit-log-search-on-or-off.md) så att motsvarande händelser registreras.

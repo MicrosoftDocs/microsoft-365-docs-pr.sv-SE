@@ -152,7 +152,7 @@ Om du migrerar en In-Place eDiscovery-sökning men inte associerar den med ett e
   
   - [Lokal eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
-  - [Bevarande av juridiska skäl på plats och bevarande av juridiska skäl](/exchange/security-and-compliance/in-place-and-litigation-holds)
+  - [Lokalt bevarande och bevarande av juridiska skäl](/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 - Mer information om PowerShell-cmdlets som används i artikeln finns i:
 

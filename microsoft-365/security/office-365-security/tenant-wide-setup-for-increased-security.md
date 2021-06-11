@@ -20,12 +20,12 @@ ms.custom:
 description: I det här avsnittet får du hjälp med den rekommenderade konfigurationen för inställningar för hela klientorganisationen som påverkar säkerheten Microsoft 365 miljön.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8a449d9647ae5a8b892967116f28aa6203a5e815
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: fd9d07388386ecc3d5877736e588393cdc38e7bb
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684177"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879222"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurera din Microsoft 365 för ökad säkerhet
 
@@ -42,9 +42,9 @@ I det här avsnittet får du hjälp med den rekommenderade konfigurationen för 
 
 Office 365 Secure Score analyserar organisationens säkerhet utifrån aktiviteter och säkerhetsinställningar samt tilldelar ett poäng. Börja med att anteckna det aktuella resultatet. Om du justerar vissa inställningar för hela klientorganisationen ökar poängen. Målet är inte att uppnå maxresultatet, utan att vara medveten om möjligheter att skydda din miljö som inte negativt påverkar användarnas produktivitet. Se [Microsoft Secure Score](../defender/microsoft-secure-score.md).
 
-## <a name="tune-threat-management-policies-in-the-microsoft-365-security-center"></a>Justera principer för hothantering Microsoft 365 säkerhetscenter
+## <a name="tune-threat-management-policies-in-the-microsoft-365-defender-portal"></a>Justera principer för hothantering i Microsoft 365 Defender-portalen
 
-I Microsoft 365 säkerhetscenter finns funktioner som skyddar din miljö. Den innehåller även rapporter och instrumentpaneler som du kan använda för att övervaka och vidta åtgärder. Vissa områden har standardprincipkonfigurationer. Vissa områden inkluderar inte standardprinciper eller regler. Besök de här principerna under hantering av hot för att anpassa inställningarna för hothantering för en säkrare miljö.
+I Microsoft 365 Defender-portalen finns funktioner som skyddar din miljö. Den innehåller även rapporter och instrumentpaneler som du kan använda för att övervaka och vidta åtgärder. Vissa områden har standardprincipkonfigurationer. Vissa områden inkluderar inte standardprinciper eller regler. Besök de här principerna under hantering av hot för att anpassa inställningarna för hothantering för en säkrare miljö.
 
 <br>
 
@@ -57,7 +57,7 @@ I Microsoft 365 säkerhetscenter finns funktioner som skyddar din miljö. Den in
 |**Valv Bifogade filer i Microsoft Defender för Office 365**|Nej|På huvudsidan för att Valv bifogade filer klickar **du på Globala inställningar** och aktiverar den här inställningen: <ul><li>**Aktivera Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams.**</li></ul> <p> Skapa en princip Valv för bifogade filer med följande inställningar: <ul><li> **Blockera:** Välj Blockera **som** det okända svaret på skadlig programvara.</li><li>**Aktivera omdirigering:** Markera den här rutan och ange en e-postadress, till exempel ett administratörs- eller karantänkonto.</li><li>**Använd ovanstående val om sökning efter bifogade filer med skadlig programvara inträffar:** Markera den här rutan.</li><li>**_Används för:_* **Mottagarens domän** \> är välj din domän.</li></ul> <p> Mer information: [Valv för bifogade filer SharePoint, OneDrive, Microsoft Teams](mdo-for-spo-odb-and-teams.md) och konfigurera principer för Valv för bifogade [filer](set-up-safe-attachments-policies.md)|
 |**Valv Länkar i Microsoft Defender för Office 365**|Ja|På huvudsidan för länken Valv du på **Globala inställningar:** <ul><li>**Använd Valv Länkar i: Office 365:** Kontrollera att den här inställningen är aktiverad.</li><li>**Spåra inte när användare klickar på Valv**: Inaktivera den här inställningen om du vill spåra användarklick.</li></ul> <p> Skapa en Valv Länkar med följande inställningar: <ul><li>**Välj åtgärden för okända potentiellt skadliga URL-adresser i meddelanden:** Kontrollera att den här inställningen är **På**.</li><li>**Välj åtgärden för okända eller potentiellt skadliga URL-adresser i Microsoft Teams:** Kontrollera att den här inställningen är **På**.</li><li>**Använd URL-skanning i realtid för misstänkta länkar och länkar som pekar på filer**: Markera den här rutan.</li><li>**Vänta tills URL-skanningen är klar innan du levererar meddelandet**: Markera den här rutan.</li><li>**Använd Valv länkar till e-postmeddelanden som skickas inom organisationen**: Markera den här rutan</li><li>**Tillåt inte användare att klicka sig fram till den ursprungliga URL:en:** Markera den här rutan.</li><li>**Används för:** **Mottagarens domän** \> är välj din domän.</li></ul> <p> Mer information: [Konfigurera principer Valv Länkar.](set-up-safe-links-policies.md)|
 |**Skräppostskydd (e-postfiltrering)**|Ja| Vad du bör titta efter: För mycket skräppost – Välj Anpassade inställningar och redigera standardprincipen för skräppostfilter. Mer information: [Microsoft 365 skydd mot skräppost för e-post.](anti-spam-protection.md)|
-|***E-postautentisering***|Ja|E-postautentisering använder ett DNS (Domain Name System) för att lägga till verifierbar information i e-postmeddelanden om avsändaren av ett e-postmeddelande. Microsoft 365 konfigurera e-postautentisering för sin standarddomän (onmicrosoft.com), men Microsoft 365-administratörer kan också använda e-postautentisering för egna domäner. Tre autentiseringsmetoder används: <ul><li>Sender Policy Framework (eller SPF).</li><ul><li>Mer information om konfiguration [finns i Konfigurera SPF i Microsoft 365 för att förhindra förfalskning.](set-up-spf-in-office-365-to-help-prevent-spoofing.md)</li></ul> <li>DKIM (DomainKeys Identified Mail).</li><ul><li>Se [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän.](use-dkim-to-validate-outbound-email.md)</li><li>När du har konfigurerat DKIM aktiverar du den i säkerhetscentret.</li></ul><li>DMARC (Domain-based Message Authentication, Reporting, and Conformance).</li><ul><li>För DMARC-konfiguration [Använder du DMARC för att verifiera e-Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
+|***E-postautentisering***|Ja|E-postautentisering använder ett DNS (Domain Name System) för att lägga till verifierbar information i e-postmeddelanden om avsändaren av ett e-postmeddelande. Microsoft 365 konfigurera e-postautentisering för sin standarddomän (onmicrosoft.com), men Microsoft 365-administratörer kan också använda e-postautentisering för egna domäner. Tre autentiseringsmetoder används: <ul><li>Sender Policy Framework (eller SPF).</li><ul><li>Mer information om konfiguration [finns i Konfigurera SPF i Microsoft 365 för att förhindra förfalskning.](set-up-spf-in-office-365-to-help-prevent-spoofing.md)</li></ul> <li>DKIM (DomainKeys Identified Mail).</li><ul><li>Se [Använda DKIM för att validera utgående e-post som skickas från din anpassade domän.](use-dkim-to-validate-outbound-email.md)</li><li>När du har konfigurerat DKIM aktiverar du den i Microsoft 365 Defender-portalen.</li></ul><li>DMARC (Domain-based Message Authentication, Reporting, and Conformance).</li><ul><li>För DMARC-konfiguration [Använder du DMARC för att verifiera e-Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
 |
 
 > [!NOTE]
@@ -73,16 +73,16 @@ Besök de här rapporterna och instrumentpanelerna om du vill veta mer om din mi
 
 |Instrumentpanelen|Beskrivning|
 |---|---|
-|[Instrumentpanel för hantering av hot](security-dashboard.md)|I avsnittet **Hantering** av hot på säkerhetscentret använder du den här instrumentpanelen för att se hot som redan har hanterats, och som ett praktiskt verktyg för att rapportera till beslutsfattare om vilka undersöknings- och svarsfunktioner för hot som redan har gjorts för att skydda ditt företag.|
-|[Hotutforskaren (eller realtidsidentifieringar)](threat-explorer.md)|Det här är också i **avsnittet Hantering av** hot i säkerhetscentret. Om du undersöker eller upplever en attack mot din klientorganisation kan du använda Utforskaren (eller identifieringar i realtid) för att analysera hot. Utforskaren (och rapporten över identifieringar i realtid) visar antalet attacker över tid och du kan analysera dessa data med hjälp av hotfamiljer, attackersinfrastruktur med mera. Du kan också markera alla misstänkta e-postmeddelanden för listan Incidenter.|
-|Rapporter – Instrumentpanel|I avsnittet **Rapporter** i säkerhetscenter kan du visa granskningsrapporter för SharePoint Online Exchange Online organisationer. Du kan också komma Azure Active Directory (Azure AD) inloggningsrapporter, användaraktivitetsrapporter och Azure AD-granskningsloggen från **sidan Visa** rapporter.|
+|[Instrumentpanel för hantering av hot](security-dashboard.md)|I **avsnittet** Hantering av hot på Microsoft 365 Defender-portalen använder du den här instrumentpanelen för att se hot som redan har hanterats, och som ett praktiskt verktyg för att rapportera till beslutsfattare om vilka undersöknings- och svarsfunktioner som redan har gjorts för att skydda ditt företag.|
+|[Hotutforskaren (eller realtidsidentifieringar)](threat-explorer.md)|Det här är också i **avsnittet om hantering** av hot på Microsoft 365 Defender-portalen. Om du undersöker eller upplever en attack mot din klientorganisation kan du använda Utforskaren (eller identifieringar i realtid) för att analysera hot. Utforskaren (och rapporten över identifieringar i realtid) visar antalet attacker över tid och du kan analysera dessa data med hjälp av hotfamiljer, attackersinfrastruktur med mera. Du kan också markera alla misstänkta e-postmeddelanden för listan Incidenter.|
+|Rapporter – Instrumentpanel|I avsnittet **Rapporter** på Defender Microsoft 365 portalen kan du visa granskningsrapporter för SharePoint Online och Exchange Online organisationer. Du kan också komma Azure Active Directory (Azure AD) inloggningsrapporter, användaraktivitetsrapporter och Azure AD-granskningsloggen från **sidan Visa** rapporter.|
 |
 
-![Instrumentpanel för säkerhetscenter](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![Microsoft 365 Defender Portal-instrumentpanel](../../media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
 
 ## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>Konfigurera ytterligare Exchange Online inställningar för hela klientorganisationen
 
-Många säkerhets- och skyddskontroller i administrationscentret Exchange även finns i säkerhetscentret. Du behöver inte konfigurera dessa på båda platserna. Här är några ytterligare inställningar som rekommenderas.
+Här är några ytterligare inställningar som rekommenderas.
 
 <br>
 

@@ -20,12 +20,12 @@ ms.custom:
 description: Användare kan läsa mer om hur de visar och hanterar meddelanden i karantän i Exchange Online Protection (EOP) som borde ha levererats till dem.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4913d0c6fc34d912474bcceac8b1785c4a7e07b3
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 60b319b81362b9d88afcd734021db227969b04d0
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821301"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877878"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Hitta och släppa meddelanden i karantän som användare i EOP
 
@@ -51,11 +51,11 @@ Som mottagare av ett meddelande i kvarantän, vad kan du göra med meddelandet s
 |Nätfiske (inte nätfiske med högt förtroende)|![Bockmarkering](../../media/checkmark.png)||![Bockmarkering](../../media/checkmark.png)|
 |
 
-Du visar och hanterar dina meddelanden i karantän i Microsoft 365 Säkerhetscenter eller (om en administratör har konfigurerat detta) i [slutanvändarens skräppostmeddelanden](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+Du visar och hanterar dina meddelanden i karantän i Microsoft 365 Defender-portalen eller (om en administratör har konfigurerat detta) i [slutanvändarens skräppostaviseringar](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- För att öppna säkerhetscenter, gå till <https://security.microsoft.com>. Om du vill öppna karantänsidan direkt går du till <https://security.microsoft.com/quarantine>.
+- Öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com>. Om du vill öppna karantänsidan direkt går du till <https://security.microsoft.com/quarantine>.
 
 - Administratörer kan konfigurera hur länge meddelanden behålls i karantän innan de tas bort permanent principer för skräppostskydd. Meddelanden som har upphört att gälla och tas bort från karantänen går inte att återställa. Mer information finns i [Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md).
 
@@ -67,7 +67,7 @@ Du visar och hanterar dina meddelanden i karantän i Microsoft 365 Säkerhetscen
 
 ## <a name="view-your-quarantined-messages"></a>Visa meddelanden i karantän
 
-1. I säkerhetscentret går du till **E-post och samarbete** \> **Granska** \> **Karantänen**.
+1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Granska** \> **Karantän**.
 
 2. Du kan sortera resultaten genom att klicka på en tillgänglig kolumnrubrik. Klicka på **Ändra kolumner** för att visa högst sju kolumner. Standardvärdena är markerade med en asterisk (<sup>\*</sup>):
 

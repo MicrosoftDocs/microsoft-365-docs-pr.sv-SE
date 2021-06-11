@@ -22,12 +22,12 @@ description: Använd känslighetsetiketter från Microsoft Information Protectio
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5c54b9c9b9046a1c410418a9ae5a922bdad9c442
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730252"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878082"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Lär dig mer om känslighetsetiketter
 
@@ -196,8 +196,7 @@ När du konfigurerar en etikettprincip kan du göra följande:
 
     ![Uppmaning i Outlook som ber användaren att använda en obligatorisk etikett](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
-    > [!NOTE]
-    > Obligatoriska etiketter för dokument och e-postmeddelanden är inte tillgängligt för alla appar eller alla plattformar. Mer information finns i [Kräva att användare använder en etikett för sin e-post och dokument](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
+    Mer information om obligatoriska etiketter för dokument och e-postmeddelanden finns i [Kräv att användare använder en etikett för sina e-postmeddelanden och dokument](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     
     För behållare måste en etikett tilldelas när gruppen eller webbplatsen skapas.
     

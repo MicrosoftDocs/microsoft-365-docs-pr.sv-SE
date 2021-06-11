@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebde023db5196117a02a2372784a3110839c51fa
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 956fb591154df374c8010d875645e1122f3419b2
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843536"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879246"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft Hotexperter
 
@@ -45,9 +45,9 @@ Denna tjänst för hantering av hot efter hot ger expertdrivna insikter och data
 > [!NOTE]
 > Diskutera kraven för berättigande med din Microsoft-leverantör och ditt kontoteam innan du använder den hanterade söktjänsten för hot.
 
-Om du är Microsoft Defender för slutpunktskund måste du ansöka om **Microsoft Hotexperter –** riktade attackmeddelanden för att få särskilda insikter och analyser som hjälper dig att identifiera de viktigaste hoten i din miljö så att du snabbt kan svara på dem
+Om du är Microsoft Defender för slutpunktskund måste du söka efter **Microsoft Hotexperter – riktade** attackmeddelanden för att få särskilda insikter och analyser som hjälper dig att identifiera de viktigaste hoten i din miljö så att du kan svara på dem snabbt.
 
-Om du vill registrera Microsoft Hotexperter – fördelar med riktade attackmeddelanden går du till Inställningar Allmänna avancerade funktioner  >    >    >  **Microsoft Hotexperter - Riktade attackmeddelanden** att använda. När du accepterat det får du fördelarna med riktade attackmeddelanden.
+Om du vill registrera Microsoft Hotexperter – fördelar för riktade attackmeddelanden går du till Inställningar  >  **Endpoints**  >    >  **General Advanced features** Microsoft Hotexperter - Targeted Attack  >  **Notifications** to apply. När du accepterat det får du fördelarna med riktade attackmeddelanden.
 
 Kontakta ditt kontoteam eller din Microsoft-representant för att prenumerera på **Microsoft Hotexperter – experter** på begäran och rådgör med våra hotexperter om relevanta identifieringar och adversaries som din organisation står inför.
 

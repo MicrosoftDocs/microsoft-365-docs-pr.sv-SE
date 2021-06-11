@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 036ef1c97788f310c5b906ae5f80076ca2359cdb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275090"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878886"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Så här rapporterar du falska positiva/negativa tal i automatiska undersöknings- och svarsfunktioner
 
@@ -68,17 +68,21 @@ Om en åtgärd har vidtagits för ett e-postmeddelande, en e-postbilaga eller en
 
 Med Threat Explorer kan ditt säkerhetsåtgärdsteam hitta ett e-postmeddelande som påverkas av en åtgärd och eventuellt ångra åtgärden.
 
+<br>
+
+****
+
 |Scenario|Ångra-alternativ|Mer information|
 |---|---|---|
-|Ett e-postmeddelande har dirigerats till en användares skräppostmapp|- Flytta meddelandet till användarens Borttaget-mapp<br/>– Flytta meddelandet till användarens inkorg<br/>- Ta bort meddelandet|[Hitta och undersöka skadlig e-post som levererats i Office 365](investigate-malicious-email-that-was-delivered.md)|
-|Ett e-postmeddelande eller en fil har satts i karantän|- Släpp e-postmeddelandet eller filen<br/>- Ta bort e-postmeddelandet eller filen|[Hantera meddelanden i karantän som administratör](manage-quarantined-messages-and-files.md)|
+|Ett e-postmeddelande har dirigerats till en användares skräppostmapp|<ul><li>Flytta meddelandet till användarens Borttaget-mapp</li><li>Flytta meddelandet till användarens inkorg</li><li>Ta bort meddelandet</li></ul>|[Hitta och undersöka skadlig e-post som levererats i Office 365](investigate-malicious-email-that-was-delivered.md)|
+|Ett e-postmeddelande eller en fil har satts i karantän|<ul><li>Släpp e-postmeddelandet eller filen</li><li> Ta bort e-postmeddelandet eller filen</li></ul>|[Hantera meddelanden i karantän som administratör](manage-quarantined-messages-and-files.md)|
 |
 
 ### <a name="undo-an-action-in-the-action-center"></a>Ångra en åtgärd i Åtgärdscenter
 
 I Åtgärdscenter kan du se åtgärder som har vidtagits och eventuellt ångra åtgärden.
 
-1. Gå till Microsoft 365 säkerhetscenter ( <https://security.microsoft.com> ).
+1. Gå till Microsoft 365 Defender-portalen ( <https://security.microsoft.com> ).
 2. Välj Åtgärdscenter i **navigeringsfönstret.**
 3. Välj fliken **Historik** för att visa listan över slutförda åtgärder.
 4. Markera ett objekt. Den utfällna rutan öppnas.

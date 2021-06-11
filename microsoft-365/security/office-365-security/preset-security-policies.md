@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan läsa om hur standard- och strikt-principinställningarna används i alla skyddsfunktioner i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 24fe67a7465ec71451b649dbc5963c28e0dc7cf3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822292"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879018"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förinställda säkerhetsprinciper i EOP och Microsoft Defender för Office 365
 
@@ -105,7 +105,7 @@ Inställningarna i principen för  strikt skydd åsidosätter med andra ord inst
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar säkerhetscentret Microsoft 365 på <https://security.microsoft.com> . Använd för att gå direkt **till sidan Förinställda** <https://security.microsoft.com/presetSecurityPolicies> säkerhetsprinciper.
+- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Använd för att gå direkt **till sidan Förinställda** <https://security.microsoft.com/presetSecurityPolicies> säkerhetsprinciper.
 
 - Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -117,9 +117,9 @@ Inställningarna i principen för  strikt skydd åsidosätter med andra ord inst
 
   **Obs!** Om du lägger till användare Azure Active Directory motsvarande roll i Microsoft 365-administrationscentret  får användarna de behörigheter och behörigheter som krävs för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
-### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Använda säkerhetscentret för att tilldela förinställda säkerhetsprinciper till användare
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Använda Defender Microsoft 365 portalen för att tilldela förinställda säkerhetsprinciper till användare
 
-1. I säkerhetscentret går du till Avsnittet Förinställda **&** principer för & för e-postsamarbete i \>  \>  \>  \> **Säkerhetscenter.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Förinställda säkerhetsprinciper för &-&** e-postsamarbetesprinciper i \>  \>  \>  \> **Defender-portalen.**
 
 2. Under **Standardskydd eller** **Strikt skydd klickar** du på **Redigera**.
 
@@ -144,9 +144,9 @@ Inställningarna i principen för  strikt skydd åsidosätter med andra ord inst
 
 5. På sidan **Granska och bekräfta ändringarna** verifierar du dina val och klickar sedan på **Bekräfta**.
 
-### <a name="use-the-security-center-to-modify-the-assignments-of-preset-security-policies"></a>Använda säkerhetscentret för att ändra tilldelningar av förinställda säkerhetsprinciper
+### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-preset-security-policies"></a>Använd Microsoft 365 Defender-portalen för att ändra tilldelningar av förinställda säkerhetsprinciper
 
-Stegen för att ändra tilldelningen av  **säkerhetsprincipen Standard** eller Strikt skydd är desamma som när du först tilldelade de förinställda [säkerhetsprinciperna till användare.](#use-the-security-center-to-assign-preset-security-policies-to-users)
+Stegen för att ändra tilldelningen av  **säkerhetsprincipen Standard** eller Strikt skydd är desamma som när du först tilldelade de förinställda [säkerhetsprinciperna till användare.](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)
 
 Om du vill  **inaktivera säkerhetsprinciperna Standardskydd** eller Strikt skydd samtidigt som de befintliga villkoren och undantagen bibehålls drar du reglaget **till Inaktiverad** ![ ](../../media/scc-toggle-off.png) av. Du aktiverar principerna genom att dra reglaget till **Aktiverad** ![ växlingsknapp På ](../../media/scc-toggle-on.png) .
 

@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan läsa om hur de konfigurerar anslutningsfiltrering i Exchange Online Protection (EOP) för att tillåta eller blockera e-post från e-postservrar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b5eb24377dd9f9ac304e1df7b2902d29e4a738b9
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 416fbd73d8412cf8697577df19f2fd2893b4ce96
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821967"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878826"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurera anslutningsfiltrering
 
@@ -44,14 +44,14 @@ Om du är Microsoft 365-kund med postlådor i Exchange Online eller en friståen
 
 - **Valv listan**: Listan *över säkra är* en dynamisk lista över tillåtna i Microsoft-datacentret som inte kräver någon kundkonfiguration. Microsoft identifierar dessa betrodda e-postkällor från prenumerationer till olika tredjepartslistor. Du aktiverar eller inaktiverar användningen av listan över säkra tjänster. kan du inte konfigurera käll-e-postservrarna i listan över säkra servrar. Skräppostfiltrering hoppas över på inkommande meddelanden från e-postservrarna på listan över säkra meddelanden.
 
-I den här artikeln beskrivs hur du konfigurerar standardprincipen för anslutningsfilter i säkerhetscentret i Microsoft 365 eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor). Mer information om hur EOP använder anslutningsfiltrering är en del av organisationens övergripande inställningar för skydd mot skräppost finns i [Skydd mot skräppost.](anti-spam-protection.md)
+I den här artikeln beskrivs hur du konfigurerar standardprincipen för anslutningsfilter i Microsoft 365 Microsoft 365 Defender-portalen eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor). Mer information om hur EOP använder anslutningsfiltrering är en del av organisationens övergripande inställningar för skydd mot skräppost finns i [Skydd mot skräppost.](anti-spam-protection.md)
 
 > [!NOTE]
 > Listan över tillåtna IP-adresser, listan över säkra och IP-blockeringslistan är en del av din övergripande strategi för att tillåta eller blockera e-post i organisationen. Mer information finns i Skapa [listor över betrodda avsändare](create-safe-sender-lists-in-office-365.md) och Skapa listor med [spärrade avsändare.](create-block-sender-lists-in-office-365.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Microsoft 365 Säkerhetscenter på <https://security.microsoft.com>. Om du vill gå direkt till sidan **Principer för skräppostskydd** använder du <https://security.microsoft.com/antispam>.
+- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Om du vill gå direkt till sidan **Principer för skräppostskydd** använder du <https://security.microsoft.com/antispam>.
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -72,9 +72,9 @@ I den här artikeln beskrivs hur du konfigurerar standardprincipen för anslutni
 
 - Listan över tillåtna IP-adresser och blockeringslistan för IP stöder maximalt 1273 poster, där en post är en enskild IP-adress, ett IP-adressintervall eller en CIDR-IP (Classless InterDomain Routing).
 
-## <a name="use-the-security-center-to-modify-the-default-connection-filter-policy"></a>Använda säkerhetscentret för att ändra standardprincipen för anslutningsfilter
+## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>Med Defender Microsoft 365 portalen kan du ändra standardprincipen för anslutningsfilter
 
-1. I säkerhetscentret går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **avsnittet Principer för &-&** \>  \>  \>  \> **e-&** principer för hot mot skräppost.
 
 2. På sidan **Principer för skydd mot skräppost** väljer du **Anslutningsfilterprincip (Standard)** i listan genom att klicka på namnet på principen.
 
@@ -103,9 +103,9 @@ I den här artikeln beskrivs hur du konfigurerar standardprincipen för anslutni
 
 4. Tillbaka på utfällda menyn principinformation klickar du **Stäng**.
 
-## <a name="use-the-security-center-to-view-the-default-connection-filter-policy"></a>Använda säkerhetscentret för att visa standardprincipen för anslutningsfilter
+## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>Använda Defender Microsoft 365 portalen för att visa standardprincipen för anslutningsfilter
 
-1. I säkerhetscentret går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **avsnittet Principer för &-&** \>  \>  \>  \> **e-&** principer för hot mot skräppost.
 
 2. På **sidan Principer för skydd mot** skräppost visas följande egenskaper i listan med principer:
 
@@ -152,7 +152,7 @@ Detaljerad information om syntax och parametrar finns i [Set-HostedConnectionFil
 
 Du kan kontrollera att standardprincipen för anslutningsfilter har ändrats genom att göra något av följande:
 
-- I säkerhetscentret går du till Email **& Collaboration** Policies & Rules Threat Policies Policies (Policyer för hot mot skräppost) och väljer Anslutningsfilterprincip \>  \>  \>  \>  \> **(standard)** i listan genom att klicka på namnet på principen och kontrollera inställningarna.
+- I Microsoft 365 Defender-portalen går du till Principer för **e-postsamarbete** & & Principer för hot mot skräppost. Välj Anslutningsfilterprincip \>  \>  \>  \>  \> **(standard)** i listan genom att klicka på principens namn och kontrollera inställningarna.
 
 - I Exchange Online PowerShell eller fristående EOP PowerShell kör du följande kommando och kontrollerar inställningarna:
 

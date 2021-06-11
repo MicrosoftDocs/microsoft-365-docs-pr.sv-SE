@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan lära sig hur de använder Attack Attack För att köra simulerade nätfiske- och lösenordsattacker i sina Microsoft 365 E5- eller Microsoft Defender-Office 365 abonnemang 2-organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 03e6c0077f13c85bfd20ac0583b64ce29e2535a1
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624831"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878682"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Attack Attack I Microsoft Defender för Office 365
 
@@ -37,9 +37,9 @@ Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som omf
 
 > [!NOTE]
 >
-> Attack Attack Så som beskrivs i den här artikeln  är nu skrivskyddad och har ersatts av utbildning av attack simulering **i e-& för** samarbete i [Microsoft 365 säkerhetscenter](https://security.microsoft.com). Mer information finns i Komma [igång med att använda simuleringsutbildning för attacker](attack-simulation-training-get-started.md).
+> Attack Attack Så som beskrivs i den här artikeln  är nu skrivskyddad och har ersatts av utbildning av attack simulering **i e-&** för samarbete i Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Mer information finns i Komma [igång med att använda simuleringsutbildning för attacker](attack-simulation-training-get-started.md).
 >
-> Möjligheten att starta nya simuleringar från den här versionen av Attack Attack har inaktiverats. Du kan dock fortfarande komma åt rapporter i upp till 90 dagar från den 24 januari 2021.
+> Möjligheten att starta nya simuleringar från den här versionen av Attack Attack har inaktiverats. Du kan dock fortfarande komma åt rapporter fram till den 24 april 2021.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 

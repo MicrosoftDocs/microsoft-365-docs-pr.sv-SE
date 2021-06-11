@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8973a78787345532055161507e2d30f75b3b2cf1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: aeb6d93017f138ce898d25f7d76e05cdcf3e90c5
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844976"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878574"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender för Endpoint och andra Microsoft-lösningar
 
@@ -66,9 +66,9 @@ Misstänkta aktiviteter körs under ett användarsammanhang. Integreringen mella
 Tack vare Skype för företag-integreringen kan analytiker kommunicera med en potentiellt komprometterad användare eller enhetsägare via en enkel knapp från portalen.
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
-Med Microsoft 365 Defender skapar Microsoft Defender för Endpoint och olika Microsoft-säkerhetslösningar en enhetlig företagssäkerhetssvit före och efter intrång som integrerar inbyggt i slutpunkt, identitet, e-post och program för att identifiera, förhindra, undersöka och automatiskt reagera på avancerade attacker. 
+Med Microsoft 365 Defender utgör Microsoft Defender för Endpoint och olika Microsoft-säkerhetslösningar en enhetlig företagssäkerhetssvit före och efter intrång som integrerar inbyggt i slutpunkt, identitet, e-post och program för att identifiera, förhindra, undersöka och automatiskt svara på avancerade attacker. 
  
-[Läs mer om Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)
+[Läs mer om Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
 ## <a name="related-topics"></a>Relaterade ämnen

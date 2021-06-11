@@ -19,12 +19,12 @@ description: Administratörer kan lära sig hur personifieringsinsikter fungerar
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b539cc50d3cf6ad637a749faa9d2cb5b2033b81
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: e1b99590d7ae96ad8371eb2a2fab5fb7e8f94d07
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821335"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879042"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Personifieringsinsikt i Defender för Office 365
 
@@ -46,27 +46,27 @@ Domänpersonifiering skiljer sig från [domänförfalskning](anti-spoofing-prote
 
 Personifieringsskydd är en del av de inställningar för skydd mot nätfiske som är exklusiva för Microsoft Defender för Office 365. Mer information om de här inställningarna finns [i Inställningar för personifiering i skydd mot nätfiske i Microsoft Defender för Office 365.](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-Du kan använda identitetsinsikter i säkerhetscentret i Microsoft 365 för att snabbt identifiera meddelanden från imiterade avsändare eller avsändardomäner som du har konfigurerat för personifieringsskydd.
+Du kan använda personifieringsinsikten i Microsoft 365 Defender-portalen för att snabbt identifiera meddelanden från imiterade avsändare eller avsändardomäner som du har konfigurerat för personifieringsskydd.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Microsoft 365 Säkerhetscenter på <https://security.microsoft.com>. Om du vill gå direkt till personifieringsinsikten **på sidan Skydd mot nätfiske** använder du <https://security.microsoft.com/antiphishing> . Använd för att gå **direkt till sidan Personifieringsinsikter.** <https://security.microsoft.com/impersonationinsight>
+- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Om du vill gå direkt till personifieringsinsikten **på sidan Skydd mot nätfiske** använder du <https://security.microsoft.com/antiphishing> . Använd för att gå **direkt till sidan Personifieringsinsikter.** <https://security.microsoft.com/impersonationinsight>
 
-- Du måste ha tilldelats behörigheter i säkerhetscentret innan du kan utföra procedurerna i den här artikeln:
+- Du måste ha tilldelats behörigheter i Microsoft 365 Defender-portalen innan du kan utföra procedurerna i den här artikeln:
   - **Organisationshantering**
   - **Säkerhetsadministratör**
   - **Säkerhetsläsare**
-  - **Global läsare**
+  - **Global Reader**
 
-  Mer information finns i [Behörigheter i säkerhetscentret.](permissions-in-the-security-and-compliance-center.md)
+  Mer information finns i [Behörigheter i Microsoft 365 Defender-portalen.](permissions-in-the-security-and-compliance-center.md)
 
-  **Obs!** Om du lägger till användare till motsvarande Azure Active Directory-roll i administrationscentret för  Microsoft 365 får användarna de behörigheter som krävs i säkerhetscentret och behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  **Obs!** Om du lägger till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna  de behörigheter som krävs i Microsoft 365 Defender-portalen samt behörigheter för andra funktioner Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
 - Du aktiverar och konfigurerar personifieringsskydd i skydd mot nätfiske i Microsoft Defender för Office 365. Personifieringsskydd är inte aktiverat som standard. Mer information finns i Konfigurera [principer för skydd mot nätfiske i Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
 
-## <a name="open-the-impersonation-insight-in-the-security-center"></a>Öppna personifieringsinsikten i säkerhetscentret
+## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Öppna personifieringsinsikten i Microsoft 365 Defender-portalen
 
-1. I säkerhetscentret går du till avsnittet & **för** & principer för skydd mot \> **nätfiske** i \>  \>  \> **säkerhetscentret.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer &** för \> **e-&-samarbete & principer** för hot \>  \> **mot** \> **nätfiske.**
 
 2. På sidan **Mot nätfiske** ser personifieringsinsikten ut så här:
 

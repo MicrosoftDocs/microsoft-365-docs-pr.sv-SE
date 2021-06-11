@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 95471f444117e1a44abe8de76c95cda52d5f7930
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3629df6dd88176f66ec6e0f1eeedb78771cc36ec
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842609"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879234"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender för Office 365 i Microsoft 365 Defender
 
@@ -48,7 +48,7 @@ Bilden och tabellen nedan innehåller ändringar i navigeringen mellan säkerhet
 |---|---|---|---|
 |Varningar|E-post och samarbete|||
 |Klassificering||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage)||
-|Dataförlustskydd||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage)||
+|Skydd mot dataförlust||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage)||
 |Hantering av arkivhandlingar||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage) ||
 |Informationsstyrning||Se [hur Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com/homepage)||
 |Hothantering|E-post och samarbete|||
@@ -78,7 +78,7 @@ Den här tabellen är en snabbreferens för områdena e-post och samarbete där 
 |Område|Beskrivning av ändring|
 |---|---|
 |[Sidan E-postenhet](../office-365-security/mdo-email-entity-page.md)|Den här sidan **förenar** information om e-postmeddelanden som varit utspridda över olika sidor eller vyer tidigare. Undersökning av e-post efter hot och trender är *centraliserat*. Rubrikinformation och förhandsgranskning av e-post kan nås via samma e-postsida och annan användbar e-postrelaterad information. På samma sätt kan detonationsstatus för skadliga bifogade filer eller URL-adresser finnas på en flik på samma sida. Sidan E-postenhet ger administratörer och säkerhetsteam möjlighet att förstå ett hot via e-postmeddelande och dess status, snabbt, och sedan agera för att snabbt avgöra hur hanteringen ska hanteras.|
-|[Undersökning](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center)|Samlar AIR-funktioner i [Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) och [Defender för Endpoint](../defender-endpoint/automated-investigations.md). Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.|
+|[Undersökning](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|Samlar AIR-funktioner i [Defender för Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) och [Defender för Endpoint](../defender-endpoint/automated-investigations.md). Med de här uppdateringarna och förbättringarna kommer säkerhetsgruppen att kunna visa information om automatiska undersökningar och åtgärder som gäller för e-post, samarbetsinnehåll, användarkonton och enheter, allt på ett och samma ställe.|
 |[Varningsvyn](../../compliance/alert-policies.md)|Den **utfällfönster** fönsterrutan Visa aviseringar i Office säkerhets- och efterlevnadscenter innehåller nu länkar till Microsoft 365 Defender. Klicka på länken **Öppna aviseringssida** så öppnas Microsoft 365 Defender. Du kan öppna sidan **Visa varningar** genom att klicka på en Office 365-avisering i kön Aviseringar.|
 |[Attacksimulering-utbildning](../office-365-security/attack-simulation-training-insights.md)|Använd Attacksimulering-utbildning för att köra realistiska attackscenarier i din organisation. De här simulerade attackerna kan utbilda din personal innan ett riktigt angrepp påverkar din organisation. Attacksimulering-utbildning innehåller fler alternativ, förbättrade rapporter och förbättrade utbildningsflöden som gör det enklare att leverera och hantera dina attacker samt utbildningsscenarier.|
 |

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3bab9d0248a2ed8e83807f3c38215e653cba26eb
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 23a9b99a71d700bdeddb3398c592eeb778ceef23
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843560"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879270"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender för Endpoint
 
@@ -49,7 +49,7 @@ Defender för Endpoint använder följande kombination av teknik som är inbyggd
 
 -   **Hotinformation:** Genereras av Microsoft-säkerhetsteam, säkerhetsteam och utökas av hotinformation som tillhandahålls av partner, och med hjälp av hotinformation kan Defender för Endpoint identifiera attackersverktyg, tekniker och procedurer, och generera aviseringar när de observeras i insamlade sensordata.
 
-<center><h2>Microsoft Defender för Endpoint</center></h2>
+<center><h2>Microsoft Defender för Slutpunkt</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Hot & sårbarhetshantering</b></center></a></td>
@@ -74,7 +74,7 @@ Defender för Endpoint använder följande kombination av teknik som är inbyggd
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0] 
 
 > [!TIP]
-> - Läs mer om de senaste förbättringarna i Defender för Slutpunkt: [Nyheter i Microsoft Defender för slutpunkt.](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/)
+> - Läs mer om de senaste förbättringarna i Defender för Slutpunkt: [Nyheter i Microsoft Defender för slutpunkt.](whats-new-in-microsoft-defender-atp.md)
 > - Microsoft Defender för Endpoint visade branschledandeoptisk och identifieringsfunktioner i den senaste MITRE-utvärderingen. Läs: [Insikter från MITRE ATT&CK-baserad utvärdering.](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)
 
 <a name="tvm"></a>

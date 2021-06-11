@@ -19,12 +19,12 @@ ms.collection:
 description: Läs mer om kampanjvyer i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04e3d76271e95d36d73dd473076029cb60c06900
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779469"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879138"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Kampanjvyer i Microsoft Defender för Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "52779469"
 **Gäller för**
 - [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
 
-Kampanjvyer är en funktion i Microsoft Defender för Office 365 abonnemang 2 (till exempel Microsoft 365 E5 eller organisationer med tillägget Defender Office 365 abonnemang 2). Kampanjvyer i Microsoft 365 säkerhetscenter identifierar och kategoriserar nätfiskeattacker i tjänsten. Kampanjvyer kan hjälpa dig att:
+Kampanjvyer är en funktion i Microsoft Defender för Office 365 abonnemang 2 (till exempel Microsoft 365 E5 eller organisationer med tillägget Defender Office 365 abonnemang 2). Kampanjvyer i Microsoft 365 Defender-portalen identifierar och kategoriserar nätfiskeattacker i tjänsten. Kampanjvyer kan hjälpa dig att:
 
 - Undersök effektivt och svara på nätfiskeattacker.
 - Bättre förståelse för attackens omfattning.
@@ -54,11 +54,11 @@ Microsoft använder sig av de omfattande mängder information om skydd mot nätf
 
 En kampanj kan vara kortlivad eller kan omfatta flera dagar, veckor eller månader med aktiva och inaktiva perioder. En kampanj kan startas mot din specifika organisation eller din organisation kan vara en del av en större kampanj i flera företag.
 
-## <a name="campaign-views-in-the-security-center"></a>Kampanjvyer i säkerhetscentret
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Kampanjvyer i Microsoft 365 Defender-portalen
 
-Kampanjvyer finns i [säkerhetscentret Microsoft 365](https://security.microsoft.com) **e-post och samarbetskampanjer** \> , & direkt på <https://security.microsoft.com/campaigns> .
+Kampanjvyer finns i Microsoft 365 Defender-portalen <https://security.microsoft.com> () **i e-& om** \> samarbetskampanjer eller direkt på <https://security.microsoft.com/campaigns> .
 
-![Översikt över kampanjer i Microsoft 365 säkerhetscenter](../../media/campaigns-overview.png)
+![Översikt över kampanjer i Microsoft 365 Defender-portalen](../../media/campaigns-overview.png)
 
 Du kan också komma åt kampanjvyer från:
 
@@ -67,7 +67,7 @@ Du kan också komma åt kampanjvyer från:
 - **Skicka e& och samarbete** \> **Utforskaren** \> **Visa** \> **Phish** \> **Fliken** Kampanj
 - **Skicka e& och samarbete** \> **Utforskaren** \> **Visa** \> **Skadlig programvara** \> **Fliken** Kampanj
 
-För att komma åt kampanjvyer måste du vara medlem  i rollgrupperna Organisationshantering, Säkerhetsadministratör eller Säkerhetsläsare i säkerhetscentret. Mer information finns i [Behörigheter i Microsoft 365 säkerhetscenter och Microsoft 365 säkerhetscenter.](permissions-microsoft-365-security-center.md)
+För att komma åt kampanjvyer måste du vara medlem  i rollgrupperna Organisationshantering, Säkerhetsadministratör eller Säkerhetsläsare i Microsoft 365 Defender-portalen. Mer information finns i [Behörigheter i Microsoft 365 Defender-portalen.](permissions-microsoft-365-security-center.md)
 
 ## <a name="campaigns-overview"></a>Översikt över kampanjer
 

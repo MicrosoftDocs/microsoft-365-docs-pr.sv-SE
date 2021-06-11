@@ -21,13 +21,13 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Läs mer om e-post- och dokumentegenskaper som du kan söka efter med hjälp av eDiscovery-sökverktygen i Microsoft 365.
-ms.openlocfilehash: 1e6612d658ff2fbcbee36b64dab9d352663f75b2
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+description: Läs mer om e-post- och filegenskaper som du kan söka efter med hjälp av eDiscovery-sökverktygen i Microsoft 365.
+ms.openlocfilehash: 390477012c6a2a57c5e305641ba5b79ff10f4ea7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866709"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538441"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Nyckelordsfrågor och sökvillkor för eDiscovery
 
@@ -252,7 +252,7 @@ Skapa ett villkor med dokumentegenskaper när du söker efter dokument på Share
 |Title|Dokumentets rubrik. Titelegenskapen är metadata som anges i Office dokument. Den är inte samma som filnamnet i dokumentet.|
 |Skapades|Datumet då ett dokument skapades.|
 |Senast ändrad|Datumet då ett dokument senast ändrades.|
-|Filtyp|Filnamnstillägget för en fil. Till exempel docx, ett, pptx eller xlsx. Det här är samma egenskap som egenskapen FileExtension-webbplats. <br/><br/> **Obs!** Om du använder villkoret Filtyp med  operatorn Lika med eller Lika med någon av operatorerna i en sökfråga kan du inte använda prefixsökning (genom att inkludera jokertecknet ( * ) i slutet av filtypen) för att returnera alla versioner av en filtyp.  Om du gör det ignoreras jokertecknet. Om du till exempel tar med `Equals any of doc*` villkoret returneras endast filer med `.doc` filnamnstillägget. Filer med ett tillägg `.docx` till returneras inte. För att returnera alla versioner av en filtyp använde du *egenskap:värde-par* i en nyckelordsfråga. till exempel `filetype:doc*` .|
+|Filtyp|Filnamnstillägget för en fil. Till exempel docx, ett, pptx eller xlsx. Det här är samma egenskap som egenskapen FileExtension-webbplats.|
 |||
   
 ### <a name="operators-used-with-conditions"></a>Operatorer som används med villkor
@@ -283,21 +283,21 @@ När du lägger till ett villkor kan du välja en operator som är relevant för
 
 Tänk på följande när du använder sökvillkor.
   
-- Ett villkor är logiskt kopplat till nyckelordsfrågan (anges i nyckelordsrutan) av **operatorn OCH.** Det innebär att objekt måste uppfylla både nyckelordsfrågan och villkoret som ska tas med i resultatet. Det är så du begränsar resultatet med hjälp av villkor.
-  
-- Om du lägger till två eller flera unika villkor i en sökfråga (villkor som anger olika egenskaper) är dessa villkor logiskt kopplade av **operatorn OCH.** Det innebär att endast objekt som uppfyller alla villkor (förutom en nyckelordsfråga) returneras.
-  
+- Ett villkor är logiskt kopplat till nyckelordsfrågan (anges i nyckelordsrutan) av **operatorn OCH.** Det innebär att objekt måste uppfylla både nyckelordsfrågan och villkoret som ska tas med i resultatet. Det är så du begränsar resultatet med hjälp av villkor. 
+    
+- Om du lägger till två eller flera unika villkor i en sökfråga (villkor som anger olika egenskaper) är dessa villkor logiskt kopplade av **operatorn OCH.** Det innebär att endast objekt som uppfyller alla villkor (förutom en nyckelordsfråga) returneras. 
+    
 - Om du lägger till fler än ett villkor för samma egenskap, är dessa villkor logiskt sammankopplade av **operatorn** ELLER. Det innebär att objekt som uppfyller nyckelordsfrågan och något av villkoren returneras. Grupper av samma villkor är därför sammankopplade med varandra av operatorn **ELLER** och sedan är uppsättningar av unika villkor sammankopplade av **OPERATORN.** 
-  
+    
 - Om du lägger till flera värden (avgränsade med semikolon eller semikolon) i ett enda villkor kopplas dessa värden av **operatorn** ELLER. Det innebär att element returneras om de innehåller något av de angivna värdena för egenskapen i villkoret. 
-  
-- Sökfrågan som skapas med hjälp av rutan nyckelord  och villkor visas på söksidan, i informationsfönstret för den valda sökningen. I en fråga anger allt till höger om  `(c:c)` notationen villkor som läggs till i frågan.
-  
-- Villkor lägger endast till egenskaper i sökfrågan. operatorerna inte. Det är därför frågan som visas i detaljfönstret inte visar operatorer till höger om  `(c:c)` notationen. KQL lägger till de logiska operatorerna (enligt reglerna som beskrivs tidigare) när frågan körs.
-  
+    
+- Sökfrågan som skapas med hjälp av rutan nyckelord  och villkor visas på söksidan, i informationsfönstret för den valda sökningen. I en fråga anger allt till höger om  `(c:c)` notationen villkor som läggs till i frågan. 
+    
+- Villkor lägger endast till egenskaper i sökfrågan. operatorerna inte. Det är därför frågan som visas i detaljfönstret inte visar operatorer till höger om  `(c:c)` notationen. KQL lägger till de logiska operatorerna (enligt reglerna som beskrivs tidigare) när frågan körs. 
+    
 - Du kan använda dra- och släppkontrollen för att skapa ordningsföljd. Klicka på kontrollen för ett villkor och flytta den uppåt eller nedåt.
-  
-- Som tidigare förklarats kan du med vissa villkorsegenskaper skriva flera värden (avgränsade med semikolon). Varje värde kopplas logiskt av **operatorn ELLER** och resulterar i `(filetype=docx) OR (filetype=pptx) OR (filetype=xlsx)` frågan. I följande bild visas ett exempel på ett villkor med flera värden.
+    
+- Som tidigare förklarats kan du med vissa villkorsegenskaper skriva flera värden (avgränsade med semikolon). Varje värde kopplas logiskt av **operatorn ELLER** och resulterar i `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)` frågan. I följande bild visas ett exempel på ett villkor med flera värden.
 
     ![Ett villkor med flera värden](../media/SearchConditions1.png)
   
