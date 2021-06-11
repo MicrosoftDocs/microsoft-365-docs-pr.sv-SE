@@ -336,6 +336,8 @@
                       href: api-list-incidents.md
                     - name: Uppdatera ärenden
                       href: api-update-incidents.md
+                    - name: Hämta incident
+                      href: api-get-incident.md
     - name: Microsoft Defender för Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender för Endpoint

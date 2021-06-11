@@ -273,7 +273,10 @@
 #### [Identifiera och blockera potentiellt oönskade program](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 #### [Aktivera och konfigurera alltid aktiverat skydd från Microsoft Defender Antivirus i grupprinciper](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Konfigurera åtgärd för identifiering för Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md)
-#### [Konfigurera schemalagda snabb- eller fullständiga genomsökningar för Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+#### [Konfigurera genomsökningar i Microsoft Defender Antivirus](schedule-antivirus-scans.md)
+##### [Schemalägga antivirusgenomsökning med grupprinciper](schedule-antivirus-scans-group-policy.md)
+##### [Schemalägg antivirusgenomsökning med PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Schemalägg antivirusgenomsökning med WMI (Windows Management Instrumentation)](schedule-antivirus-scans-wmi.md)
 #### [Använd begränsad periodisk genomsökning i Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Kompatibilitet med andra säkerhetsprodukter](microsoft-defender-antivirus-compatibility.md)
 
@@ -468,6 +471,8 @@
 ###### [Få åtkomst med programsammanhang](exposed-apis-create-app-webapp.md)
 ###### [Få åtkomst med användarsammanhang](exposed-apis-create-app-nativeapp.md)
 ###### [Få åtkomst till partnerprogram](exposed-apis-create-app-partners.md)
+
+
 ##### [Schema för Microsoft Defender för Endpoint API:er]()
 ###### [Microsoft Defender för Endpoint API:er som stöds](exposed-apis-list.md)
 ###### [Vanliga felkoder för REST API](common-errors.md)
@@ -520,6 +525,7 @@
 ####### [Hämta IP-relaterade varningar](get-ip-related-alerts.md)
 ####### [Hämta IP-statistik](get-ip-statistics.md)
 
+
 ###### [Maskin]()
 ####### [Maskinmetoder och egenskaper](machine.md)
 ####### [Maskinlista](get-machines.md)
@@ -535,19 +541,23 @@
 ####### [Hämta saknade KB:er](get-missing-kbs-machine.md)
 ####### [Ange enhetsvärde](set-device-value.md)
 
+
 ###### [Maskinåtgärd]()
 ####### [Metoder och egenskaper för maskinåtgärd](machineaction.md)
 ####### [Lista för maskinåtgärder](get-machineactions-collection.md)
 ####### [Hämta maskinåtgärd](get-machineaction-object.md)
 ####### [Samla in undersökningspaket](collect-investigation-package.md)
 ####### [Hämta undersökningspaket för SAS URI](get-package-sas-uri.md)
+####### [Hämta resultat för livesvar](get-live-response-result.md)
 ####### [Isolera maskin](isolate-machine.md)
 ####### [Släppa maskin för isolering](unisolate-machine.md)
 ####### [Begränsa körning av program](restrict-code-execution.md)
 ####### [Ta bort programbegränsning](unrestrict-code-execution.md)
 ####### [Kör antivirusgenomsökning](run-av-scan.md)
+####### [Kör livesvar](run-live-response.md) 
 ####### [Avregistrera maskin](offboard-machine-api.md)
 ####### [Stoppa och placera filen i karantän](stop-and-quarantine-file.md)
+####### [Avbryt maskinåtgärden](cancel-machine-action.md)
 
 ###### [Rekommendation]()
 ####### [Metoder och egenskaper för rekommendation](recommendation.md)

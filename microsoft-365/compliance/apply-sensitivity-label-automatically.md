@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: När du skapar en känslighetsetikett kan du automatiskt tilldela filer och e-postmeddelanden en etikett, eller så kan du uppmana användarna att välja den etikett som du rekommenderar.
-ms.openlocfilehash: 4c39e5895c3315d77d7bfc211f0ba3e65f06659b
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ad095db005421a58806d2775d4958cf3be5f474e
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769299"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866745"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Använda en känslighetsetikett för innehåll automatiskt
 
@@ -60,8 +60,9 @@ Det finns två olika metoder för att automatiskt använda en känslighetsetiket
     
     Specifikt för autoetikettering för SharePoint och OneDrive:
     - Office-filer för Word, PowerPoint och Excel stöds. Öppna XML-format stöds (t.ex. .docx och .xlsx) men inte Microsoft Office 97-2003-format (t.ex. .doc och .xls).
-        - Filerna kan märkas automatiskt före eller efter att principerna för automatisk etikettering har skapats. Observera att filer inte kan etiketteras automatiskt om de är en del av en öppen session (filen är öppen).
-    - Högst 25 000 automatiskt etiketterade filer i klientorganisationen per dag.
+        - Filerna kan märkas automatiskt före eller efter att principerna för automatisk etikettering har skapats. Filer kan inte etiketteras automatiskt om de är en del av en öppen session (filen är öppen).
+        - För närvarande stöds inte bilagor till listobjekt och de kommer inte att märkas automatiskt.
+    - Högst 25 000 automatiskt etiketterade filer i klientorganisationen per dag.
     - Högst tio principer för automatisk etikettering per klientorganisation, varav varje riktar sig till upp till tio webbplatser (SharePoint eller OneDrive).
     - Befintliga värden för ändrad, ändrad av och datum ändras inte på grund av principer för automatisk etikettering – det gäller både simuleringsläge och när etiketter används.
     - När etiketten tillämpar kryptering är det [utfärdaren av rättighetshantering och ägaren av rättighetshantering](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) det konto som senast ändrade filen.
@@ -189,7 +190,7 @@ Specifikt för inbyggd etikettering:
 
 - För rekommenderade etiketter i skrivbordsversionerna av Word flaggas det känsliga innehåll som utlöste rekommendationen så att användare kan granska och ta bort det känsliga innehållet i stället för att använda den rekommenderade känslighetsetiketten.
 
-- Mer information om hur de här etiketterna används i Office-appar, exempel på skärmbilder och hur känslig information identifieras finns i [Tillämpa känslighetsetiketter automatiskt eller rekommendera känslighetsetiketter för filer och e-postmeddelanden i Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Mer information om hur de här etiketterna används i Office-appar, exempel på skärmbilder och hur känslig information identifieras finns i [Tillämpa känslighetsetiketter automatiskt eller rekommendera känslighetsetiketter för filer och e-postmeddelanden i Office](https://support.office.com/sv-SE/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Specifikt för Azure Information Protection-klienten för enhetliga etiketter:
 
