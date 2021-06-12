@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Existing Office 365 customers must submit a request before the deadline for their country to have their Microsoft 365 services data moved to their new geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e68feeca842061c43c7be70d9b8b930f068d8e4e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4421b034c31adc3e8b0b017067b12086d364564
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927318"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908251"
 ---
 # <a name="how-to-request-your-data-move"></a>Hur du begär din dataflytt
 
@@ -74,7 +74,7 @@ Från och med januari 2020 kan kunder i kvalificerade Office 365 registrera sig 
 
 [Flytta basdata till nya Office 365 geodatadata](moving-data-to-new-datacenter-geos.md)
 
-[Vanliga frågor och svar om dataflytt](data-move-faq.md)
+[Vanliga frågor och svar om dataflytt](data-move-faq.yml)
 
 [Nya geodatadatadata för Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

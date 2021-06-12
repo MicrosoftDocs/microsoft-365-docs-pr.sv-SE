@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: fcf2310929937d1dacfc9c101d3e14414bad262b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b85c0c63cc7c72ad555d80bd8ce6c07c95b4b97b
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903750"
+ms.locfileid: "52908083"
 ---
 # <a name="client-behavioral-blocking"></a>Beteendeblockering av klientdator
 
@@ -46,7 +46,7 @@ Antivirusskyddet fungerar bäst när det paras ihop med molnskydd.
 
 [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) kan identifiera misstänkt beteende, skadlig kod, fillös och minnesintrång och mycket mer på en enhet. När misstänkta beteenden identifieras Microsoft Defender Antivirus och skickar de misstänkta beteendena och deras processträd till molnskyddstjänsten. Maskininlärning skiljer mellan skadliga program och bra beteenden inom millisekunder och klassificerar varje artefakt. I nästan realtid blockeras en artefakt på enheten när den visar sig vara skadlig. 
 
-När ett misstänkt beteende identifieras [](alerts-queue.md) genereras en avisering och visas i [Microsoft 365 Defender](microsoft-defender-security-center.md) (tidigare Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )).
+När ett misstänkt beteende identifieras [](alerts-queue.md) genereras en avisering och visas i [Microsoft 365 Defender-portalen](microsoft-defender-security-center.md) (tidigare Microsoft Defender Säkerhetscenter).
 
 Klientbeteendeblockering är effektivt eftersom det inte bara hjälper till att förhindra att en attack startar, den kan också stoppa en attack som har börjat köras. Och med [blockering av feedbackslingan](feedback-loop-blocking.md) (en annan funktion för blockering och inneslutning) förhindras attacker på andra enheter i organisationen.
 

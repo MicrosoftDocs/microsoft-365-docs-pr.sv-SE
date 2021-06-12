@@ -15,17 +15,17 @@ localization_priority: Normal
 ms.custom:
 - next-gen
 - edr
-ms.date: 05/08/2021
+ms.date: 06/11/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 86bb27005365b625ee07feaa067c0ac488c3bb4b
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302046"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908347"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Identifiering och svar av slutpunkt (Identifiering och åtgärd på slutpunkt) i blockeringsläge
 
@@ -62,7 +62,7 @@ Följande bild visar en instans av oönskad programvara som har upptäckts och b
 > [!IMPORTANT]
 > Kontrollera att kraven [uppfylls](#requirements-for-edr-in-block-mode) innan du Identifiering och åtgärd på slutpunkt i blockläge.
 
-1. Gå till Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) och logga in. 
+1. Gå till [Microsoft 365 Defender-portalen](microsoft-defender-security-center.md) och logga in. 
 
 2. Välj **Inställningar**  >  **Avancerade funktioner**.
 

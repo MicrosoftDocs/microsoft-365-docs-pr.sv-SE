@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Lär dig hur du ändrar standardtemat för navigeringsfältet högst upp i Microsoft 365 och anpassa det så att det matchar ditt företags logotyp eller färg.
-ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841312"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908167"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassa Microsoft 365 för din organisation
 
@@ -89,6 +89,9 @@ På sidan **Logotyper kan** du lägga till dina logotyper och ange URL-adressen 
 Välj **Spara** för att spara ändringarna.
 
 Du kan ta bort dina logotyper när som helst. Gå bara tillbaka till **sidan Logotyper och** välj Ta **bort**.
+
+> [!NOTE]
+> Som standard visar vi först de logotypval som de flesta organisationer använder. Uppladdningsalternativet gäller endast för standardteman och inte för gruppteman.
   
 ## <a name="colors-choose-theme-colors"></a>Färger: Välj temafärger
 

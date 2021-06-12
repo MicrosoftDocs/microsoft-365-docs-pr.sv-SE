@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: a8c5f5e04c629eb82a7e6f63f92d61030c544de4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ccbcbcb71d60dadf24b6f94bab126a1f1ca1c322
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841922"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908298"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>Hantera Microsoft Defender för slutpunkt med Intune
 
@@ -81,9 +81,7 @@ I följande tabell finns olika uppgifter som du kan utföra för att konfigurera
 
 ## <a name="configure-your-microsoft-defender-security-center"></a>Konfigurera Microsoft Defender Säkerhetscenter
 
-Om du inte redan har gjort det konfigurerar du din **Microsoft Defender Säkerhetscenter** () för att visa aviseringar, konfigurera skyddsfunktioner för hot och visa detaljerad information om organisationens övergripande [https://securitycenter.windows.com](https://securitycenter.windows.com) säkerhetsvarning. 
-
-Du kan också konfigurera om och vilka funktioner slutanvändare kan se i Microsoft Defender Säkerhetscenter.
+Om du inte redan har gjort det konfigurerar du din Microsoft 365 Defender-portal för att visa aviseringar, konfigurera skyddsfunktioner för hot och visa detaljerad information om organisationens övergripande säkerhetsvarning. Se [Microsoft Defender Säkerhetscenter](microsoft-defender-security-center.md). Du kan också konfigurera om och vilka funktioner slutanvändare kan se i Microsoft 365 Defender-portalen.
 
 - [Översikt över Microsoft Defender Säkerhetscenter](/microsoft-365/security/defender-endpoint/use)
 

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Lär dig hur du kan söka efter ämnen i Microsoft Viva.
-ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844738"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908071"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Använda Microsoft Search för att hitta ämnen i Microsoft Viva-ämnen
 
@@ -23,9 +23,10 @@ Viva Topics-användare kan hitta ämnen genom viktiga ämnen på sina SharePoint
 
 ## <a name="topic-answer"></a>Ämnessvar
 
-När du söker efter ett visst ämne i Microsoft Search (till exempel "Saturnus"), om ett ämne finns och hittas, visas resultatet i ämnets svarsförslagsformat.
+När du söker efter ett visst ämne från startsidan i SharePoint, på Office.com eller från en SharePoint-webbplats som har omfattningen begränsad till din organisation, visas resultatet i formatet ämnessvarsförslag om ett ämne finns och hittas.
 
 Ämnessvaret visas:
+
 - Ämnesnamn
 - Alternativa namn: Alternativa namn eller förkortningar för avsnittet.
 - Definition: Beskrivning av ämnet som tillhandahålls av AI eller manuellt läggs till av en person.
@@ -38,10 +39,9 @@ När du söker efter ett visst ämne i Microsoft Search (till exempel "Saturnus"
 
 Sökresultaten i Word, PowerPoint, Outlook och Excel visar också ämnessvaret när ett hittas.
 
-
 ## <a name="acronyms"></a>Förkortningar
 
-I Viva Ämnen kan du manuellt redigera ett ämne för att ta med en förkortning för det som ett <b>alternativt namn.</b> Det gör att en användare som söker efter bara ämnets förkortning kan hitta ämnessvaret via Microsoft Search.
+I Viva Ämnen kan du manuellt redigera ett ämne för att ta med en förkortning för det som ett *alternativt namn.* Det gör att en användare som söker efter bara ämnets förkortning kan hitta ämnessvaret via Microsoft Search.
 
 [Acronym Answers](/microsoftsearch/manage-acronyms) är en funktion som tillhandahålls genom Microsoft Search och hanteras separat från Viva Topics.
 
@@ -52,8 +52,13 @@ I Viva Ämnen kan du manuellt redigera ett ämne för att ta med en förkortning
 För användare som söker information om att boka en resa för arbete:
 
 - Om en del användare känner till reseverktygets namn (till exempel "Samtidiga") är det enklare att skapa ett bokmärke för att gå direkt till den externa webbplatsen.
+
 - För användare som ofta söker efter "resor" kan du skapa ett ämne på "Resor" som innehåller den information de förväntar sig. Det kan vara bra att lägga till en länk till den externa samtidiga webbplatsen i beskrivningen av avsnittet. Om länken istället är till en intern resebokningswebbplats hos Microsoft 365 kan du lägga till den i "Fästa resurser".
  
 ### <a name="search-results-priority"></a>Prioritet för sökresultat 
 
 När en användare söker efter en term som "resa" i användarens sökupplevelse visas ett bokmärke i stället för ett ämne, om ett bokmärke är tillgängligt.
+
+## <a name="see-also"></a>Se även
+
+[Översikt över Viva-ämnen](topic-experiences-overview.md)

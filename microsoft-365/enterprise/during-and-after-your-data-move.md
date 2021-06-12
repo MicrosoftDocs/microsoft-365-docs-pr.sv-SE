@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dataflyttningar är åtgärder i backend som utförs när Microsoft flyttar tjänster och associerade data för klientorganisationen till ett nytt datacenter geo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3d44ffc1650989e5c39f5f79cb6a07065f9e9f1
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: c0ea94a80de993d4d1341b8f9b19850d7149583f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625263"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908119"
 ---
 # <a name="during-and-after-your-data-move"></a>Under och efter dataflytt
 
@@ -122,7 +122,7 @@ Skype för företag är inte längre tillgängliga.  [Skype för företag Online
  
 [Hur du begär din dataflytt](request-your-data-move.md)
     
-[Vanliga frågor och svar om dataflytt](data-move-faq.md)
+[Vanliga frågor och svar om dataflytt](data-move-faq.yml)
   
 [Nya geodatadatadata för Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
