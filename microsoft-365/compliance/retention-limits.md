@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Förstå det högsta antalet principer och objekt per princip när det gäller principer för kvarhållning och kvarhållningsetiketter
-ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878058"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908107"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Begränsningar när det gäller principer för kvarhållning och kvarhållningsetiketter
 
@@ -37,7 +37,7 @@ En enskild klientorganisation kan ha högst 10 000 principer (alla konfiguration
 
 Inom denna gräns på 10.000 principer finns det också några begränsningar för det högsta antalet kvarhållningsprinciper per arbetsbelastning:
 
-- Exchange Online (alla konfigurationer): 1 800
+- Exchange (valfri konfiguration): 1 800
 - SharePoint eller OneDrive: (alla webbplatser inkluderas automatiskt): 13
 - SharePoint eller OneDrive (specifika platser inkluderas eller exkluderas): 2 600
 
@@ -49,10 +49,16 @@ Om du använder den valfria konfigurationen för att begränsa dina kvarhållnin
 
 Högsta antal objekt per kvarhållningsprincip:
 
-  - 1 000 postlådor (användarpostlådor eller gruppostlådor)
-  - 1 000 Microsoft 365-grupper
-  - 1 000 användare i Teams privata chattar
-  - 100 webbplatser (OneDrive eller SharePoint).
+- Exchange-postlådor: 1 000
+- Microsoft 365-grupper: 1 000
+- Teams-kanalmeddelanden: 1 000
+- Teams-chattar: 1 000
+- Community-meddelanden i Yammer: 1 000
+- Användarmeddelanden i Yammer: 1 000
+- SharePoint webbplatser: 100
+- OneDrive konton: 100
+
+Skype för företag måste vara begränsat till specifika användare och det maximala antalet som stöds per princip är 1 000.
 
 Eftersom dessa begränsningar gäller per princip kan du skapa ytterligare principer som har samma kvarhållningsinställningar om du behöver använda specifika inkluderingar eller exkluderingar som leder till att du överskrider dessa antal. I nästa avsnitt finns några [exempel på scenarion och lösningar](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) som använder flera kvarhållningsprinciper av den här anledningen.
 
@@ -91,4 +97,4 @@ När det [dispositionen av innehåll](disposition.md) finns det några begränsn
 
 - Dispositionsbevis i upp till sju år efter att objektet kasserades med en begränsning på 1 000 000 objekt per bevarandeetikett under perioden. 
     
-    Om du behöver ett bevis på disposition som är högre än den här gränsen på 1 000 000 för objekt som markeras som arkivhandlingar kontaktar du [Microsoft Support](../business-video/get-help-support.md).
+Om du behöver ett bevis på disposition som är högre än den här gränsen på 1 000 000 för objekt som markeras som arkivhandlingar kontaktar du [Microsoft Support](../business-video/get-help-support.md).

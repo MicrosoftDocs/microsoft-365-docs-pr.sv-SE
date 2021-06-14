@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender för Office 365 innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7570a925f4f24148874eada8a835ae473efaeb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650356"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904122"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender för Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "51650356"
 > [!IMPORTANT]
 > Den här artikeln är avsedd för företagskunder som har [Microsoft Defender för Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Läs [Avancerad Outlook.com-säkerhet för Microsoft 365-prenumeranter](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2) om du använder Outlook.com, Microsoft 365 Family eller Microsoft 365 Personal och vill ha information om säkra länkar och säkra bifogade filer i Outlook.
 
-Microsoft Defender för Office 365 skyddar din organisation mot skadliga hot från e-postmeddelanden, länkar (URL: er) och samarbetsverktyg. Defender för Office 365 innehåller:
+Microsoft Defender för Office 365 skyddar din organisation mot skadliga hot från e-postmeddelanden, länkar (URL:er) och samarbetsverktyg. Defender för Office 365 inkluderar:
 
 - **[Principer för hotskydd](#configure-microsoft-defender-for-office-365-policies)**: Definiera skyddsprinciper för hot för att ange rätt skyddsnivå för din organisation.
 
@@ -174,7 +174,7 @@ Microsoft Defender för Office 365 ingår i vissa prenumerationer, t.ex. Microso
 
 Nya funktioner läggs till i Microsoft Defender för Office 365 kontinuerligt. Mer information finns i följande resurser:
 
-- I [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) finns en lista över nya funktioner som utvecklas och lanseras.
+- I [Microsoft 365-översikten](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365) finns en lista över nya funktioner som utvecklas och lanseras.
 
 - [Tjänstbeskrivning för Microsoft Defender för Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) beskriver funktioner och tillgänglighet i Defender för Office 365-abonnemang.
 

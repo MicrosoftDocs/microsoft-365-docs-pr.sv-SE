@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Gruppmedlemmar i Microsoft 365 en grupp-e-post och en delad arbetsyta för konversationer, filer och kalenderhändelser, Stream samt en Planner.
-ms.openlocfilehash: 3e4fa36520247179b653f799f7b2a061b9d9f4a9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635600"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903846"
 ---
 # <a name="compare-groups"></a>Jämföra grupper
 
@@ -89,7 +89,7 @@ I delade postlådor finns en kalender som kan användas för samarbete.
 
 Användare som har behörighet till gruppens postlåda kan skicka som eller skicka för postlådans e-postadress om administratören har gett dig behörighet att göra det. Det här är särskilt användbart för postlådor i hjälp och support eftersom användare kan skicka e-post från "contoso support" eller "Byggnad As reception".
 
-Det är för närvarande inte möjligt att migrera en delad postlåda till en Microsoft 365-grupp. Finns det något du önskar? Berätta för oss. **[Rösta här](https://go.microsoft.com/fwlink/?linkid=871518)**.
+Det är inte möjligt att migrera en delad postlåda till en Microsoft 365-grupp. 
 
 ## <a name="related-content"></a>Relaterat innehåll
 

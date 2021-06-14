@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Deklarera poster med hjälp av kvarhållningsetiketter.
-ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730552"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903906"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Deklarera poster med hjälp av kvarhållningsetiketter
 
@@ -79,6 +79,18 @@ När kvarhållningsetiketter som markerar objekt som en post eller en regelbaser
 Exempel på ett dokument som markerats som en post med hjälp av en kvarhållningsetikett:
 
 ![Informationsfönster för ett dokument som markerats som en post](../media/recordversioning7.png)
+
+## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a>Söker i granskningsloggen efter märkta objekt som har deklarerats som arkivhandlingar
+
+Åtgärderna för att märka objekt som arkivhandlingar loggas i granskningsloggen.
+
+För SharePoint-objekt: 
+- Från **Fil- och sidaktiviteter** välj **Ändrad kvarhållningsetikett för en fil**. Den här granskningshändelsen gäller för kvarhållningsetiketter som markerar objekt som arkivhandlingar, regelposter eller som är vanliga kvarhållningsetiketter.
+
+För Exchange-objekt:
+- Från **Exchange postlåda aktiviteter** välj **Meddelandet har etiketterats som en arkivhandling**. Den här granskningshändelsen gäller för kvarhållningsetiketter som markerar objekt som arkivhandlingar eller regelposter.
+
+Mer information om hur du söker efter de här händelserna finns [Söka i granskningsloggen i Säkerhets- och efterlevnadscenter](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## <a name="next-steps"></a>Nästa steg
 

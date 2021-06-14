@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om de kvarhållningsprinciper som gäller för Microsoft Teams.
-ms.openlocfilehash: 607fbdd02cfaccfee79df67c4946c178ff3eb383
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861581"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908275"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Mer information om kvarhållning för Microsoft Teams
 
@@ -44,9 +44,6 @@ För övriga arbetsbelastningar finns information i:
 ## <a name="whats-included-for-retention-and-deletion"></a>Vad omfattas för kvarhållning och borttagning
 
 Teams-chattmeddelanden och Teams-kanalmeddelanden kan tas bort med hjälp av kvarhållningsprinciper för Teams, och utöver texten i meddelandena kan följande objekt bevaras av efterlevnadsskäl: Inbäddade bilder, tabeller, hypertextlänkar, länkar till andra Teams-meddelanden och -filer och [kortinnehåll](/microsoftteams/platform/task-modules-and-cards/what-are-cards). I chattmeddelanden ingår alla namn på personer i chatten, och i kanalmeddelanden ingår teamets namn och meddelanderubriken (om de har angetts). 
-
-> [!NOTE]
-> Möjligheten att ta med kortinnehåll i en kvarhållningsprincip för Teams lades till ganska nyligen. Mer information finns i [Microsoft 365 compliance capabilities for Adaptive Card content through apps in Teams now available](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Teams-meddelanden i privata kanaler stöds för närvarande inte för kvarhållningsprinciper. Kodfragment, inspelade röstmeddelanden från Teams-mobilklienten, miniatyrer, meddelandebilder och reaktioner från andra i form av uttryckssymboler bevaras inte när du använder kvarhållningsprinciper för Teams.
 

@@ -19,12 +19,12 @@ search.appverid:
 description: Läs om tre verktyg som du kan använda för att övervaka personliga data.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0976c0d1c0c8d3ebb25ebf423f1d9df2f71fc852
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 05d31ac36fbdc687c60ec3c03efac9be43da9c39
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538285"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878490"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Övervaka läckage av personliga data
 
@@ -50,20 +50,15 @@ När du har skapat dina principer för dataförlustskydd (DLP) ska du kontroller
 Du kan använda DLP-rapporterna för att:
 
 - Fokusera på vissa tidsperioder och förstå orsakerna till toppar och trender.
-
 - Upptäck affärsprocesser som strider mot organisationens DLP-principer.
-
 - Förstå alla affärseffekter i DLP-principerna.
-
 - Visa de resultat som skickats av användare när de löser ett principtips genom att åsidosätta principen eller rapportera en falsk positiv identifiering.
-
 - Kontrollera efterlevnaden med en särskild DLP-princip genom att visa de olika matchningarna för den principen.
-
 - Visa en lista med filer med känsliga data som överensstämmer med dina DLP-principer i informationsfönstret.
 
 Du kan också använda DLP-rapporterna för att finjustera dina DLP-principer när du kör dem i testläge.
 
-DLP-rapporter finns i säkerhetscenter och efterlevnadscenter. Gå till Rapporter \> Visa rapporter. Under Dataförlustskydd (DLP) går du till antingen Matchning mot DLP-principer och regler eller Falskt positiva identifieringar och åsidosättningar för DLP.
+DLP-rapporter finns i Microsoft 365 Efterlevnadscenter. Gå till avsnittet **Rapporter** \> avsnittet **Organisationsdata** för att hitta **DLP-principmatchningar som matchar**, **DLP-incidenter** och rapporter med **DLP-falska positiva fel och åsidosätter**.
 
 Mer information finns i [Visa rapporterna för dataförlustskydd](../../compliance/view-the-dlp-reports.md).
 
@@ -73,10 +68,9 @@ Mer information finns i [Visa rapporterna för dataförlustskydd](../../complian
 
 I granskningsloggen finns händelser från Exchange Online, SharePoint Online, OneDrive för företag, Azure Active Directory, Microsoft Teams, Power BI, Sway och andra tjänster.
 
-Säkerhetscenter och efterlevnadscenter tillhandahåller två olika sätt att övervaka och rapportera mot granskningsloggen:
+Microsoft 365 Defender och Microsoft 365 Efterlevnadscenter tillhandahåller två olika sätt att övervaka och rapportera mot granskningsloggen:
 
-- Konfigurera aviseringsprinciper, visa aviseringar och följa trender: använd verktygen för aviseringsprinciper och avisering på instrumentpanelen i säkerhetscenter eller efterlevnadscenter.
-
+- Konfigurera aviseringsprinciper, visa aviseringar och följa trender: använd verktygen för aviseringsprinciper och avisering på instrumentpanelen i Microsoft 365 Defender eller Microsoft 365 Efterlevnadscenter.
 - Sök direkt i granskningsloggen – sök efter alla händelser i ett specifikt datumintervall. Du kan också filtrera resultatet utifrån vissa villkor, t. ex. användaren som utförde åtgärden, åtgärden eller målobjektet.
 
 Team för informationsefterlevnad samt säkerhet kan använda de här verktygen för att proaktivt granska aktiviteter som utförs av både slutanvändare och administratörer i olika tjänster. Automatiska aviseringar kan konfigureras för att skicka e-postmeddelanden när vissa aktiviteter förekommer på särskilda webbplatssamlingar, till exempel när innehåll delas från webbplatser som är kända för att innehålla GDPR-relaterad information. På så sätt kan teamen följa upp användare för att säkerställa att företagets säkerhetsprinciper följs eller för att erbjuda ytterligare utbildning.
@@ -88,15 +82,10 @@ Det finns lösningar som du kan använda för att prenumerera på enhetliga gran
 Mer information om aviseringsprinciper och sökning i granskningsloggen:
 
 - [Aviseringsprinciper i Microsoft 365](../../compliance/alert-policies.md)
-
 - [Söka i granskningsloggen efter användar- och administratörsaktivitet i Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduktion)
-
 - [Aktivera och inaktivera granskningsloggsökning](../../compliance/turn-audit-log-search-on-or-off.md)
-
 - [Söka i granskningsloggen](../../compliance/search-the-audit-log-in-security-and-compliance.md)
-
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
-
 - [Detaljerade egenskaper i granskningsloggen](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
@@ -124,16 +113,15 @@ Dessa attributtyper kommer snart att ingå i Cloud App Security:
 
 Börja med att starta Cloud App Security om du inte redan har börjat använda det. Så här får du tillgång till Cloud App Security: <https://portal.cloudappsecurity.com>.
 
-OBS! Kom ihåg att aktivera automatiskt genomsökning av filnamn för Azure Information Protection-klassificeringsetiketter (i Allmänna inställningar) när du ska komma igång med Cloud App Security eller innan du tilldelar etiketter. När du har gjort det genomsöker inte Cloud App Security befintliga filer igen förrän de ändras.
+> [!NOTE]
+> Kom ihåg att aktivera automatiskt genomsökning av filnamn för Azure Information Protection-klassificeringsetiketter (i Allmänna inställningar) när du ska komma igång med Cloud App Security eller innan du tilldelar etiketter. När du har gjort det genomsöker inte Cloud App Security befintliga filer igen förrän de ändras.
 
 ![Instrumentpanel som visar information om aviseringar](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Mer information:
 
 - [Distribuera Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [Mer information om Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [Blockera nedladdning av känslig information med Microsoft Cloud App Security-proxyn](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Exempel på fil- och aktivitetsprinciper som identifierar delning av personliga data
@@ -141,6 +129,8 @@ Mer information:
 ### <a name="detect-sharing-of-files-containing-pii--credit-card-number"></a>Identifiera delning av filer som innehåller PII – kreditkortsnummer
 
 Avisera när en fil som innehåller ett kreditkortsnummer delas från en godkänd molnapp.
+
+<br>
 
 ****
 
@@ -153,7 +143,7 @@ Avisera när en fil som innehåller ett kreditkortsnummer delas från en godkän
 |Filterinställningar|Åtkomstnivå = offentlig (Internet), offentlig, extern <p> App = \<select apps\>(använd den här inställningen om du vill begränsa övervakning till vissa SaaS-appar)|
 |Använd för|Alla filer, alla ägare|
 |Innehållsgranskning|Innefattar filer som matchar ett befintligt uttryck: Alla länder: Ekonomi: Kreditkortsnummer <p> Kräv inte relevant kontext: avmarkerat (den här inställningen matchar nyckelord och regex) <p> Innefattar filer med minst 1 matchning <p> Ta bort mask för de fyra sista tecknen i överträdelsen: markerat|
-|Varningar|Skapa en avisering för varje matchande fil: markerat <p> Daglig aviseringsgräns: 1 000 <p> Välj en avisering som e-post: markerat <p> Till: infosec@contoso.com|
+|Varningar|Skapa en avisering för varje matchande fil: markerat <p> Daglig aviseringsgräns: 1 000 <p> Välj en avisering som e-post: markerat <p> Till: infosec@contoso.com|
 |Styrning|Microsoft OneDrive för företag <p> Gör privat: markera Ta bort externa användare <p> Alla andra inställningar: avmarkerade <p> Microsoft SharePoint Online <p> Gör privat: markera Ta bort externa användare <p> Alla andra inställningar: avmarkerade|
 |
 
@@ -171,6 +161,8 @@ Kommentarer:
 - Box-övervakning kräver att en anslutning konfigureras med hjälp av API-anslutaren SDK.
 - Principen kräver funktioner som för närvarande är i privat förhandsversion.
 
+<br>
+
 ****
 
 |Kontroll|Inställningar|
@@ -181,7 +173,7 @@ Kommentarer:
 |Kategori|Delningskontroll|
 |Agera på|Enskild aktivitet|
 |Filterinställningar|Aktivitetstyp = överföra fil <p> App = Microsoft OneDrive för företag och Box <p> Klassificeringsetikett (för närvarande i privat förhandsversion): Azure Information Protection = kunddata, personal – löneuppgifter, personal – information om anställda|
-|Varningar|Skapa en avisering: markerad <p> Daglig aviseringsgräns: 1 000 <p> Välj en avisering som e-post: markerat <p> Till: infosec@contoso.com|
+|Varningar|Skapa en avisering: markerad <p> Daglig aviseringsgräns: 1 000 <p> Välj en avisering som e-post: markerat <p> Till: infosec@contoso.com|
 |Styrning|Alla appar <p> Placera användare i karantän: markerad <p> Alla andra inställningar: avmarkerade <p> Office 365 <p> Placera användare i karantän: markerad <p> Alla andra inställningar: avmarkerade|
 |
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller som Tjänsteadministratör mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret.
-ms.openlocfilehash: 68a5c92faa6f5cdbbd56678649441a45a600ed04
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 1fea8720b174846dd95d9dd6aeee91f7ecfbc7fa
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809041"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908059"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
@@ -100,4 +100,5 @@ För att partnerföretaget ska kunna tilldela de här rollerna till användare m
 
 [Tilldela administratörsroller](assign-admin-roles.md) (artikel)\
 [Azure AD-roller i administrationscentret för Microsoft 365](azure-ad-roles-in-the-mac.md) (artikel)\
-[Administratörsroll i Exchange Online](about-exchange-online-admin-role.md) (artikel)\ [Aktivitetsrapporter i administrationscenter för Microsoft 365](../activity-reports/activity-reports.md) (artikel)
+[Aktivitetsrapporter i Administrationscentret för Microsoft 365](../activity-reports/activity-reports.md) (artikel)\
+[Administratörsrollen i Exchange Online](about-exchange-online-admin-role.md) (artikel)
