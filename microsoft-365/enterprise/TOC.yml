@@ -265,7 +265,7 @@
         - name: Under och efter dataflytt
           href: during-and-after-your-data-move.md
         - name: Vanliga frågor och svar om dataflytt
-          href: data-move-faq.md
+          href: data-move-faq.yml
         - name: Där kunddata lagras
           href: o365-data-locations.md
         - name: Dataplatser för Europeiska unionen
