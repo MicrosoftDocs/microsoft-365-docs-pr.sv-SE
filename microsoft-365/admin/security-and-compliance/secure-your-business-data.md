@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: Skydda din affärs-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer.
-ms.openlocfilehash: b274bb6bcdf71641ff8b196921a501bae9cbba28
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Hur du skyddar din företags-e-post och data från cyberhot, inklusive utpressningstrojaner, nätfiske och skadliga bifogade filer.
+ms.openlocfilehash: a5d87c907d47be2d8edc12642ad4e93afb0eb142
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635968"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924629"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>De 10 bästa sätten att skydda Microsoft 365 för företag-abonnemang
 
@@ -35,7 +35,7 @@ Om du är en liten eller medelstor organisation som använder en av Microsofts a
 
 Microsoft rekommenderar att du utför de uppgifter som listas i följande tabell som gäller för ditt abonnemang.
 
-||Uppgift|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
+|*Tal*|Uppgift|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
 |1|[Konfigurera multifaktorautentisering](secure-your-business-data.md#setup)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Utbilda dina användare](secure-your-business-data.md#train)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Ingår](../../media/d238e041-6854-4a78-9141-049224df0795.png)|

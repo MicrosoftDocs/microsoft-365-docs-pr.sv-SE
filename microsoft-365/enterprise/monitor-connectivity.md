@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: I den här artikeln får du lära dig mer om de verktyg och tekniker du kan använda för att övervaka och Microsoft 365 anslutning.
-ms.openlocfilehash: dfba158085e6642856049d7894b4156f42353236
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8fa0820cf9b7778001be5184041e5c96930a29dd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538813"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924205"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Övervaka Microsoft 365 anslutning
 
@@ -33,7 +33,7 @@ När du har distribuerat Microsoft 365 kan du upprätthålla Microsoft 365 med n
   
 ## <a name="monitoring-microsoft-365-connectivity"></a>Övervaka Microsoft 365 anslutning
 
-|||
+|Typ av övervakning |Beskrivning |
 |:-----|:-----|
 |**Få ett meddelande om nya Microsoft 365 slutpunkter** <br/> |Om du [](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)hanterar Microsoft 365-slutpunkter får du aviseringar när vi publicerar nya slutpunkter, så kan du prenumerera på vår RSS-feed med hjälp av din favorit RSS-läsare. Så här prenumererar du [via Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) eller så kan du få [RSS-feeduppdateringarna e-postade till dig.](https://go.microsoft.com/fwlink/p/?LinkId=532417)  <br/> |
 |**Använda System Center för att övervaka Microsoft 365** <br/> |Om du använder Microsoft System Center kan du ladda ned [System Center Management Pack](https://www.microsoft.com/download/details.aspx?id=43708) för att Office 365 börja övervaka Microsoft 365 dag. Mer detaljerad vägledning finns i guiden för hanteringspaket. <br/> |

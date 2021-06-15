@@ -1,6 +1,6 @@
 ---
 title: Förbereda Microsoft Defender för distribution av Endpoint
-description: Förbereda godkännanden från intressenter, tidslinjer, miljööverväganden och införandeordning när du distribuerar Microsoft Defender för Slutpunkt
+description: Förbereda godkännanden från intressenter, tidslinjer, miljööverväganden och införandeordning för distribution av Microsoft Defender för Slutpunkt
 keywords: distribuera, förbereda, intressenter, tidslinje, miljö, slutpunkt, server, hantering, införande
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 13748662f6e53db86352b903828978729f78e6a8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842440"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925657"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Förbereda Microsoft Defender för distribution av Endpoint
 
@@ -105,7 +105,7 @@ Defender för Endpoint har stöd för två sätt att hantera behörigheter:
 
 Microsoft rekommenderar att du utnyttjar RBAC för att säkerställa att endast användare som har ett företags justering kan komma åt Defender för Endpoint.
 
-Mer information om behörighetsriktlinjer finns [här.](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+Mer information om behörighetsriktlinjer finns här: [Skapa roller och tilldela rollen till en Azure Active Directory grupp](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group).
 
 Följande exempeltabell hjälper till att identifiera Cyber Defense Operations Center-strukturen i din miljö som hjälper dig att avgöra vilken RBAC-struktur som krävs för din miljö.
 
@@ -135,5 +135,6 @@ Välj komponenten i Defender för slutpunkt som ska användas och ta bort de som
 
 ## <a name="next-step"></a>Nästa steg
 
-![Fas 2: Installation](images/setup.png) <br>[Fas 2: Konfigurera](production-deployment.md) | Konfigurera Microsoft Defender för distribution av Slutpunkt
-
+|||
+|:-------|:-----|
+|![Fas 2: Installation](images/setup.png) <br>[Fas 2: Installation](production-deployment.md) | Konfigurera Microsoft Defender för distribution av Slutpunkt |

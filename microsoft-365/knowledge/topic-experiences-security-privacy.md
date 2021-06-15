@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig planera för säkerhet och sekretess i Microsoft Viva Topics
-ms.openlocfilehash: 587b6a2921e7d1a3cc8d4ab663ff199fdd36871d
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: b8c82b1914df739ea9086a4ce1585733a7b6d854
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114068"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925497"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Säkerhet och sekretess för Microsoft Viva Topics
 
@@ -57,6 +57,10 @@ I följande tabell beskrivs vad användare – ämnesanvändare, deltagare och k
 |Filer|Filer visas bara för användare som har behörighet till källinnehållet.|
 |Sidor|Sidor visas bara för användare som har behörighet till källinnehållet.|
 |Webbplatser|Webbplatser visas bara för användare som har behörighet till källinnehållet.|
+
+## <a name="users-personal-and-private-data"></a>Användarnas personliga och privata data
+
+Viva Ämnen identifierar endast ämnen på de SharePoint du anger. Användarnas personliga lagring, till exempel personlig e OneDrive postmeddelanden, ingår inte.
 
 ## <a name="best-practices"></a>Metodtips
 

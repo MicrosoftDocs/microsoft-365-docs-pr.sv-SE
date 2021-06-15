@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Lär dig hur du OneDrive och en gruppwebbplats för Microsoft 365 och sparar Microsoft 365 fildelning.
-ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635648"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924617"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Konfigurera fillagring och fildelning i Microsoft 365
 
@@ -56,12 +56,12 @@ Både OneDrive och gruppwebbplatser ger dig och dina anställda åtkomst överal
   
 ![Ett diagram som visar hur Microsoft 365 produkter kan använda OneDrive eller gruppwebbplatser](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
-Här är rekommendationer för vad du ska lagra på varje plats när du använder OneDrive och gruppwebbplatser tillsammans:
+Här är rekommendationer för vad du ska lagra på varje plats när du använder OneDrive och gruppwebbplatser tillsammans:<br/>
+
   
-||||
+|Lagringsplats|Vad är det för|Vad jag kan lagra här|
 |:-----|:-----|:-----|
-|**Lagringsplats** <br/> |**Vad det används till** <br/> |**Vad jag kan lagra här** <br/> |
-|**OneDrive** <br/> |Att lagra innehåll i OneDrive är som att lagra filer på datorn. Ingen annan kan enkelt komma åt dem.  <br/> Mer information finns i [Vad är OneDrive för företag?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Företagsfiler som andra gruppmedlemmar inte behöver samarbeta i eller ha tillgång till regelbundet.  <br/> |
+|**OneDrive** |Att lagra innehåll i OneDrive är som att lagra filer på datorn. Ingen annan kan enkelt komma åt dem.<br/> Mer information finns i [Vad är OneDrive för företag?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Företagsfiler som andra gruppmedlemmar inte behöver samarbeta i eller ha tillgång till regelbundet.<br/> |
 |**SharePoint-gruppwebbplatser** <br/> |Samarbete. När du skapar en Microsoft 365-grupp (till exempel i administrationscentret för Microsoft 365, i Outlook eller genom att skapa ett team i Microsoft Teams) skapas en SharePoint-gruppwebbplats för den gruppen. På samma sätt skapas en SharePoint gruppwebbplats från startsidan i SharePoint eller från det nya administrationscentret för SharePoint också en Microsoft 365 grupp. Mer information finns i Vad [är en SharePoint gruppwebbplats?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) och [Skapa en gruppwebbplats i SharePoint Online.](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)  <br/> |Filer som har delat ägarskap. Vi rekommenderar separata gruppwebbplatser för varje arbetsenhet i organisationen. Skapa till exempel en separat gruppwebbplats för att hålla personal- och ekonomidokument privata för en liten grupp.  <br/> |
 
 > [!NOTE]

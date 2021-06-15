@@ -7,14 +7,16 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5961ac4eb16928754849f5f32ecd06d4d2e4650d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d93bf492f7cfea5a1ff863205085d853c4bbadb
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917722"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925437"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Hur uppdateringar hanteras i Microsoft Hanterat skrivbord
 
@@ -38,7 +40,7 @@ Microsoft Hanterat skrivbord använder fyra Azure AD-grupper för att hantera up
 - **Bred:** Sista gruppen för att få tillgängliga funktioner och kvalitetsuppdateringar. Den här gruppen innehåller de flesta användare i klientorganisationen och gör därför stabilitet över hastigheten i distributionen. Testning av appar bör göras här eftersom miljön är mest stabil. 
 
 ### <a name="moving-devices-between-update-groups"></a>Flytta enheter mellan uppdateringsgrupper
-Du kanske vill att vissa enheter ska få uppdateringar senast och andra som du vill gå först. Om du vill flytta de här enheterna till lämplig uppdateringsgrupp skickar du en [supportbegäran](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) till administratören så flyttar vi enheterna åt dig. 
+Du kanske vill att vissa enheter ska få uppdateringar senast och andra som du vill gå först. Om du vill flytta de här enheterna till lämplig uppdateringsgrupp skickar du en [supportbegäran](../working-with-managed-desktop/admin-support.md) till administratören så flyttar vi enheterna åt dig. 
 
 > [!NOTE]
 > Om du behöver flytta en användare till en annan uppdateringsgrupp skickar du en supportbegäran. Flytta inte enheter mellan uppdatera grupper själv. Det finns allvarliga konsekvenser om en enhet flyttas felaktigt. Enheten kan uppdateras oväntat och principer kan vara i konflikt och enhetskonfigurationen ändras.

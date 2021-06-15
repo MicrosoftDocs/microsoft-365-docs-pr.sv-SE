@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Översikt över REST API för SharePoint Syntex-dokumentets förståelsemodell.
-ms.openlocfilehash: e661df76828db0d05f7c3492880259117b9f8bf1
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 279c624bb818e5d8d33b476f997290269ff634cb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908095"
+ms.locfileid: "52904317"
 ---
 # <a name="sharepoint-syntex-document-understanding-model-rest-api"></a>REST API för SharePoint Syntex-dokumentets tolkningsmodell
 
@@ -24,14 +24,14 @@ Du kan använda REST-gränssnittet i SharePoint för att skapa en dokumenttolkni
 
 SharePoint Onlines (samt SharePoint 2016 och senare lokalt) REST-tjänst har stöd för att kombinera flera förfrågningar till ett enda anrop till tjänsten genom att använda frågealternativet OData $batch. 
 
-Mer information och länkar till kodexempel finns i [Gör batchbegäranden med REST API:er](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis).
+Mer information och länkar till kodexempel finns i [Gör batchbegäranden med REST API:er](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis.md).
 
 ## <a name="prerequisites"></a>Förutsättningar
 
 Innan du börjar kontrollerar du att du är bekant med följande:
 
-- [Lär känna REST-tjänsten för SharePoint](/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service) 
-- [Slutföra grundläggande åtgärder med hjälp av REST-slutpunkter för SharePoint](/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints)
+- [Lär känna REST-tjänsten för SharePoint](/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service.md) 
+- [Slutföra grundläggande åtgärder med hjälp av REST-slutpunkter för SharePoint](/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints.md)
 
 ## <a name="rest-commands"></a>REST-kommandon
 

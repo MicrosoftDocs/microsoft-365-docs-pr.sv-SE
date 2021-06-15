@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Läs mer om tillgängliga inställningar i Microsoft 365 för företag för att skydda Windows 10 enheter.
-ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4859681d5e71a61b8a5dd58114bce899f485967a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578236"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925328"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Redigera eller skapa inställningar för enhetsskydd för Windows 10-datorer
 
@@ -67,10 +67,10 @@ Visa en video om hur du skyddar Windows 10 enheter med Microsoft 365 Business Pr
 Som standard är alla inställningar **På**. Följande inställningar är tillgängliga.
   
 Mer information finns i Hur [mappar skyddsfunktioner i Microsoft 365 Premium till Intune-inställningarna.](map-protection-features-to-intune-settings.md) 
-  
-|||
-|:-----|:-----|
+
+
 |Inställning  <br/> |Beskrivning  <br/> |
+|:-----|:-----|
 |Skydda PC-datorer mot virus och andra hot med Windows Defender Antivirus  <br/> |Kräver att antivirusprogrammet Windows Defender är aktiverat för att skydda datorer från fara vid uppkoppling till internet.  <br/> |
 |Skydda datorer från webbaserade hot i Microsoft Edge  <br/> |Aktiverar inställningarna Microsoft i Edge som hjälper till att skydda användare från skadliga webbplatser och nedladdningar.  <br/> |
 |Använd regler som minskar enheternas attackytor  <br/> |När inställningen är aktiv bidrar minskningen av attackytan till att blockera åtgärder och program som vanligtvis används av skadlig programvara för att smitta enheter. Inställningen är bara tillgänglig om Windows Defender Antivirus är aktiverad. Mer information finns i [Minska attackytor](/windows/security/threat-protection/microsoft-defender-atp/exploit-protection).  <br/> |

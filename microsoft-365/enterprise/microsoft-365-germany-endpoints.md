@@ -20,12 +20,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: I den här artikeln hittar du slutpunkter som kan nås av kunder som använder Office 365 i Tyskland.
 hideEdit: true
-ms.openlocfilehash: 0d96300e77c67ac05ea18ab23d63c01d4f840dfb
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 27d7b3c895cb3a8cae148262ce3962f03fb417aa
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759900"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925816"
 ---
 # <a name="office-365-germany-endpoints"></a>Slutpunkter för Office 365 Germany
 
@@ -39,9 +39,9 @@ Office 365 kräver internetanslutning. Slutpunkterna nedan bör endast kunna nå
   
  **Office 365 slutpunkter:** Globalt [(inklusive GCC)](urls-and-ip-address-ranges.md)Office 365 som drivs av   |  [21 Vianet](urls-and-ip-address-ranges-21vianet.md)   |  *Office 365 Germany* Office 365  |  [U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md)Office 365  |  [U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
-|||
-|:-----|:-----|
-|**Uppdaterades senast:** 2020-12-01 – ![ prenumeration på ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [RSS-ändringslogg](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**Ladda ned:** alla obligatoriska och valfria destinationer i en [JSON formaterad](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) lista.  <br/> |
+**Uppdaterades senast:** 2020-12-01 – ![ prenumeration på ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [RSS-ändringslogg](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+
+**Ladda ned:** alla obligatoriska och valfria destinationer i en [JSON formaterad](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) lista.
 
 Börja med [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md) för att förstå våra rekommendationer för hantering av nätverksanslutningar med dessa data. Slutpunktsdata uppdateras i början av varje månad med nya IP-adresser och URL:er som publicerats 30 dagar i förväg. På så sätt kan kunder som ännu inte har automatiska uppdateringar slutföra sina processer innan ny anslutning krävs. Slutpunkter kan också uppdateras under månaden om det behövs för att lösa stöd för eskalering, säkerhetstillbud och andra omedelbara driftskrav. Du kan alltid referera till prenumerationen [på ändringsloggen.](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 

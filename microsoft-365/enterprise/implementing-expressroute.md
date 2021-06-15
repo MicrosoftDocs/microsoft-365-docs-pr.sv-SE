@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Lär dig att implementera ExpressRoute för Office 365, som ger en alternativ routningssökväg till många Internet-Office 365 tjänster.
-ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ad6102193a12325de0e4bb2ff16087738688587
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051372"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924945"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementera ExpressRoute för Office 365
 
@@ -103,10 +103,10 @@ För varje tjänst som kräver en inkommande anslutning behöver du ytterligare 
   
 Inkommande anslutningar bör granskas oavsett om de ansluter via Internet eller ExpressRoute för att säkerställa att asymmetrisk routning inte har använts. I vissa fall kan lokala slutpunkter som Office 365 inkommande anslutningar till också behöva nås av andra Microsoft- och Microsoft-tjänster. Det är mycket viktigt att aktiveringen av ExpressRoute-routning till dessa Office 365 syften inte bryter mot andra scenarier. I många fall kan kunder behöva implementera specifika ändringar i sina interna nätverk, till exempel källbaserad NAT, för att säkerställa att inkommande flöden från Microsoft förblir symmetriska när ExpressRoute har aktiverats.
   
-Här är ett exempel på detaljnivån som krävs. I det Exchange fallet skulle hybriden dirigeras till det lokala systemet via ExpressRoute.
+Här är ett exempel på detaljnivån som krävs. I det Exchange fallet skulle hybriden dirigeras till det lokala systemet via ExpressRoute. 
 
-|**Anslutningsegenskap**|**Värde**|
-|:-----|:-----|
+|Anslutningsegenskap   |Värde  |
+|----------|-----------|
 |**Nätverkstrafikriktning** <br/> |Inkommande  <br/> |
 |**Tjänst** <br/> |Exchange-hybrid  <br/> |
 |**Offentlig Office 365 (källa)** <br/> |Exchange Online (IP-adresser)  <br/> |
@@ -115,15 +115,15 @@ Här är ett exempel på detaljnivån som krävs. I det Exchange fallet skulle h
 |**Kommer den här lokala slutpunkten användas av andra (icke-Office 365) Microsoft-tjänster** <br/> |Nej  <br/> |
 |**Kommer den här lokala slutpunkten användas av användare/system på Internet** <br/> |Ja  <br/> |
 |**Interna system som publiceras via offentliga slutpunkter** <br/> |Exchange Server för klientåtkomst (lokal) 192.168.101, 192.168.102, 192.168.103  <br/> |
-|**IP-annonsering för den offentliga slutpunkten** <br/> |**Till Internet:** 5.5.0.0/16  <br/> **Till ExpressRoute**: 5.5.5.0/24  <br/> |
-|**Säkerhets- och perimeterkontroller** <br/> |**Internetsökväg:** DeviceID_002  <br/> **ExpressRoute-sökväg:** DeviceID_003  <br/> |
-|**Hög tillgänglighet** <br/> |Aktiv/aktiv på 2 geo-redundanta  <br/> ExpressRoute-kretsar – Chicago och Dallas  <br/> |
-|**Symmetrikontroll för sökväg** <br/> |**Metod**: Käll-NAT  <br/> **Internetsökväg**: Inkommande anslutningar för käll-NAT till 192.168.5.5  <br/> |**ExpressRoute-sökväg:** Anslutningar för käll-NAT till 192.168.1.0 (Chicago) och 192.168.2.0 (Dallas)  <br/> |
+|**IP-annonsering för den offentliga slutpunkten** <br/> |**Till Internet:** 5.5.0.0/16 **till ExpressRoute**: 5.5.5.0/24  <br/> |
+|**Säkerhets- och perimeterkontroller** <br/> |**Internetsökväg:** DeviceID_002  **ExpressRoute-sökväg:** DeviceID_003  <br/> |
+|**Hög tillgänglighet** <br/> |Aktiv/aktiv på 2 geo-redundanta/ExpressRoute-kretsar – Chicago och Dallas  <br/> |
+|**Symmetrikontroll för sökväg** <br/> |**Metod**: Internetsökväg för käll-NAT : Inkommande anslutningar för käll-NAT till 192.168.5.5 **ExpressRoute-sökväg:** Anslutningar för käll-NAT till 192.168.1.0 (Chicago) och 192.168.2.0 (Dallas)  <br/> |
 
 Här är ett exempel på en tjänst som endast är utgående:
 
 |**Anslutningsegenskap**|**Värde**|
-|:-----|:-----|
+|----------|-----------|
 |**Nätverkstrafikriktning** <br/> |Utgående  <br/> |
 |**Tjänst** <br/> |SharePoint Online  <br/> |
 |**Lokal slutpunkt (källa)** <br/> |Användarens arbetsstation  <br/> |
@@ -189,9 +189,10 @@ Det innebär att det viktigaste som du måste göra när du väljer meet-me-plat
   
 Ofta går det att välja flera meet-me-platser i ett område som ligger relativt nära dina användare. Fyll i följande tabell för att vägleda dina beslut.
 
-|**Planerade ExpressRoute-meet-me-platser i Kalifornien och New York**||
-|:-----|:-----|
+**Planerade ExpressRoute-meet-me-platser i Kalifornien och New York**
+
 |Plats  <br/> |Antal personer  <br/> |Förväntad fördröjning till Microsoft-nätverket via utgående Internet-anslutning  <br/> |Förväntad fördröjning till Microsoft-nätverket via ExpressRoute  <br/> |
+|----------|-----------|----------|-----------|
 |Los Angeles  <br/> |10 000  <br/> |~15ms  <br/> |~10ms (via Silicon Valley)  <br/> |
 |Washington DC  <br/> |15 000  <br/> |~20ms  <br/> |~10ms (via New York)  <br/> |
 |Dallas  <br/> |5,000  <br/> |~15ms  <br/> |~40ms (via New York)  <br/> |
@@ -225,7 +226,7 @@ Din implementeringsplan bör omfatta både teknisk information om konfiguration 
 
 - Bestäm hur långt ExpressRoute-routes ska annonseras på ditt nätverk och vilken mekanism som ska finnas för klienter för att välja Internet- eller ExpressRoute-sökväg. till exempel direktroutning eller programproxy.
 
-- Planera DNS-poständringar, inklusive [Sender Policy Framework-poster.](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+- Planera DNS-poständringar, inklusive [Sender Policy Framework-poster.](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
 - Planera EN NAT-strategi som omfattar utgående och inkommande käll-NAT.
 

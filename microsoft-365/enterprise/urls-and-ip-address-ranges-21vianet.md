@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: Den här artikeln innehåller URL:er och IP-adressintervall för Office 365 som drivs av 21Vianet i Kina.
 hideEdit: true
-ms.openlocfilehash: ed9b6fdbef1ca121ccf53b635768ebdaab89763a
-ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
+ms.openlocfilehash: 80d9dd6626214215a4d84273297f881441992f14
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51418055"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925199"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URL:er och IP-adressintervall för Office 365 som drivs av 21Vianet
 
@@ -36,9 +36,9 @@ ms.locfileid: "51418055"
   
  **Office 365 slutpunkter:** Globalt [(inklusive GCC)](urls-and-ip-address-ranges.md)Office 365 som drivs av   |  *21 Vianet*  |  [Office 365 Germany](microsoft-365-germany-endpoints.md)Office 365  |  [U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md)Office 365  |  [U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
-|||
-|:-----|:-----|
-|**Uppdaterades senast:** 2021-03-29 – ![ prenumeration på ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [RSS-ändringslogg](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Ladda ned:** alla obligatoriska och valfria destinationer i en [JSON formaterad](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) lista.  <br/> |
+**Uppdaterades senast:** 2021-03-29 – ![ prenumeration på ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [RSS-ändringslogg](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+
+**Ladda ned:** alla obligatoriska och valfria destinationer i en [JSON formaterad](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) lista.
 
 Börja med [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md) för att förstå våra rekommendationer för hantering av nätverksanslutningar med dessa data. Slutpunktsdata uppdateras i början av varje månad med nya IP-adresser och URL:er som publicerats 30 dagar i förväg. Det gör det möjligt för kunder som ännu inte har automatiserade uppdateringar att slutföra processerna innan nya anslutningar krävs. Slutpunkter kan också uppdateras under månaden om det behövs för att lösa stöd för eskalering, säkerhetstillbud och andra omedelbara driftskrav. De data som visas på den här sidan nedan skapas från de REST-baserade webbtjänsterna. Om du använder ett skript eller en nätverksenhet för att komma åt dessa data ska du gå direkt till [Webbtjänst](microsoft-365-ip-web-service.md).
 

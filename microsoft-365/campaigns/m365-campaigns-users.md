@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur dessa rekommendationer om Microsoft 365 Business Premium påverkar användarna och skyddar dina data.
-ms.openlocfilehash: b8464396887daa408e94cfb6c151d998dd8b1ae2
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: ce64189d721bc3eb356a39f431af01e67973516a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398235"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924261"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Hur dessa säkerhetsrekommendationer påverkar dina användare
 
@@ -70,9 +70,9 @@ För [ohanterade Windows 10- och Mac-enheter](m365-campaigns-protect-pcs-macs.md
 
 **Aktivera grundläggande säkerhetsfunktioner på BYOD-Windows 10- och Mac-enheter**
 
-| |**Windows 10**|**Mac**|
-|:-----|:-----|:------|
-|Säkerhetsfunktioner|Aktivera BitLocker enhetsskydd<p><p> Se Windows Defender förblir på <p>Aktivera Windows brandväggen| Använda FileVault för att kryptera Mac-hårddisken <p><p>Använda ett tillförlitligt antivirusprogram <p>Aktivera brandväggsskydd|
+|**Windows 10**|**Mac**|
+|:-----|:------|
+|Aktivera BitLocker enhetsskydd<p><p> Se Windows Defender förblir på <p>Aktivera Windows brandväggen| Använda FileVault för att kryptera Mac-hårddisken <p><p>Använda ett tillförlitligt antivirusprogram <p>Aktivera brandväggsskydd|
 
 Mer information om dessa rekommendationer finns [i Skydda ditt konto och dina enheter från hackare och skadlig programvara.](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)
 

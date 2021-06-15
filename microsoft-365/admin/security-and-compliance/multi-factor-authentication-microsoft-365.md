@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Multifaktorautentisering (MFA) använder både ett lösenord, som bör vara starkt, och en ytterligare verifieringsmetod.
-ms.openlocfilehash: 6e1c43bdd66849a0043c0a1a927f48d925e0806e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: d9af486cf5e53609557b519612f185a20729cf76
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635780"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924737"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Multifaktorautentisering för Microsoft 365
 
@@ -150,7 +150,7 @@ När funktionen är aktiverad uppmanas användaren nästa gång att registrera s
 
 I den här tabellen visas resultatet av att aktivera MFA med standardinställningar för säkerhet, principer för villkorsstyrd åtkomst och användarspecifika kontoinställningar.
 
-||Aktiverat|Inaktiverad|Metod för sekundär autentisering|
+|*Objekt*|Aktiverad|Inaktiverad|Metod för sekundär autentisering|
 |---|---|---|---|
 |**Standardinställningar för säkerhet**|Det går inte att använda villkorsstyrda åtkomstprinciper|Det går att använda principer för villkorsstyrd åtkomst|Microsoft Authenticator-appen|
 |**Principer för villkorsstyrd åtkomst**|Om några är aktiverade kan du inte aktivera säkerhetsstandardvärden|Om alla är inaktiverade kan du aktivera standardinställningar för säkerhet|Användardefinierad under MFA-registrering|

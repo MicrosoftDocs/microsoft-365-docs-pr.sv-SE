@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Bestäm vilka Office-funktioner som ska visas eller döljas när en användare väljer Hjälp > Vad är nytt i användarens Office-appen på Windows med hjälp av funktionen Vad är nytt i Office i administrationscentret för Microsoft 365.
-ms.openlocfilehash: b9d20e3df4a2de540316dce0e6a6905c07e65176
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915043"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924841"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Hantera Office funktioner som visas i Vad är nytt
 
@@ -60,9 +60,8 @@ Du kan filtrera vilka funktioner som visas **på sidan Hantera Office vilka funk
 
 Nya funktioner visas på sidan enligt följande schema:
 
-||||
+|Kanal|Datum|Vidta åtgärder|
 |:-----|:-----|:-----|
-|**Kanal** <br/> |**Datum** <br/> |**Vidta åtgärder** <br/> |
 |**Aktuell** <br/> |15:e i månaden  <br/> |1–3 veckor före månadsutgåningen <br/> |
 |**Monthly Enterprise** <br/> |Första i månaden  <br/> |Två veckor före huvudsläppet som ger nya funktioner |
 |**Halvårsvisa företag (förhandsversion)** <br/> |1 september och 1 mars <br/> | 2 veckor före huvudsläppet som ger nya funktioner|

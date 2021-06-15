@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Lär dig att lägga till och konfigurera din domän i Microsoft 365 så att tjänster som e-post och Skype för företag Online använder ditt eget domännamn.
-ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9c26f9afcf17857c4b3b8f05b89253272cf20e56
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683133"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924509"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändra namnservrar för att konfigurera Microsoft 365 med valfri domänregistrator
 
@@ -66,18 +66,17 @@ Beroende på om du skapar en TXT-post eller en MX-post gör du något av följan
   
 **Om du skapar en TXT-post använder du följande värden:**
     
-|||||
+
+|Record type<br/> |Alias eller värdnamn <br/> |Värde <br/> |TTL<br/> |
 |:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Alias** eller **Host Name** <br/> |**Värde** <br/> |**TTL** <br/> |
 |TXT  <br/> |Gör något av följande: skriv **@**, lämna fältet tomt eller skriv domännamnet.  <br/> > [!NOTE]> Olika DNS-värdar har olika krav för det här fältet.           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv.  <br/> |
+|MS=ms *XXXXXXXX*  <br/>**Obs!** Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv.  <br/> |
    
 **Om du skapar en MX-post ska du använda följande värden:**
     
-||||||
+|Record type|Alias eller värdnamn|Värde|Prioritet|TTL|
 |:-----|:-----|:-----|:-----|:-----|
-|**Record Type**|**Alias** eller **Host Name**|**Värde**|**Prioritet**|**TTL**|
-|MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX* > [!NOTE]> Det här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.yml) |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
+|MX|Skriv antingen **@** eller domännamnet. |MS=ms *XXXXXXXX Obs!* **Det** här är ett exempel. Använd det specifika värdet för **Mål eller pekar på-adress** här, från tabellen i Microsoft 365.           [Hur hittar jag det här?](../get-help-with-domains/information-for-dns-records.md)          |Under **Prioritet** anger du en lägre prioritet än den som eventuella befintliga MX-poster har, för att undvika konflikter med den MX-post som används för e-postflöde. Mer information om prioritet finns i [Vad är MX-prioritet?](../setup/domains-faq.yml) |Ställ in det här värdet på **1 timme** eller till motsvarande minuter ( **60** ), sekunder ( **3600** ) osv. |
    
 ### <a name="save-the-record"></a>Spara posten
 
@@ -110,13 +109,12 @@ Gör så här om du själv vill ändra domänens namnservrar på din domänregis
 1. Leta reda på var på domänregistratorns webbplats som du kan ändra namnservrar för din domän eller ett område där du kan använda anpassade namnservrar.
     
 2. Skapa namnserverposter eller redigera de befintliga namnserverposterna så att de matchar följande värden:
-    
-|||
-|:-----|:-----|
-|Första namnservern  <br/> |ns1.bdm.microsoftonline.com  <br/> |
-|Andra namnservern  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Tredje namnserver  <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|Fjärde namnserver  <br/> |ns4.bdm.microsoftonline.com  <br/> |
+
+    - Första namnserver: ns1.bdm.microsoftonline.com
+    - Andra namnserver: ns2.bdm.microsoftonline.com
+    - Tredje namnserver: ns3.bdm.microsoftonline.com
+    - Fjärde namnserver: ns4.bdm.microsoftonline.com
+      
    
    > [!TIP]
    > Det är bäst att lägga till alla fyra posterna, men om din registrator bara har stöd för två lägger du **ns1.bdm.microsoftonline.com** och **ns2.bdm.microsoftonline.com**. 
@@ -133,12 +131,10 @@ Gör så här om du själv vill ändra domänens namnservrar på din domänregis
 1. Leta reda på var på domänregistratorns webbplats som du kan redigera namnservrar för din domän.
     
 2. Skapa två nya namnserverposter eller ändra de befintliga namnserverposterna så att de stämmer överens med följande värden:
+
+   - Första namnserver: ns1.dns.partner.microsoftonline.cn
+   - Andra namnserver: ns2.dns.partner.microsoftonline.cn
     
-|||
-|:-----|:-----|
-|Första namnservern  <br/> |ns1.dns.partner.microsoftonline.cn  <br/> |
-|Andra namnservern  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
-   
    > [!TIP]
    > Du bör använda minst två namnserverposter. Om det finns andra namnservrar listade kan du antingen ta bort dem eller ändra dem till **ns3.dns.partner.microsoftonline.cn** och **ns4.dns.partner.microsoftonline.cn**. 
   

@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Läs mer om Microsoft 365 förfalloprinciper för grupper.
-ms.openlocfilehash: 90807d6c178061804e64db4440af42050a1d8e77
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a5a57591e1659cf04b46f419bda3d3bca672729c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530856"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925929"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 förfalloprincip för grupper
 

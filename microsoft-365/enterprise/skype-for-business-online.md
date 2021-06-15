@@ -2,7 +2,7 @@
 title: Skype för företag - Online i Office 365 - hjälp för administratörer
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: scotv
+manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
 description: Som administratör kan du hitta hjälp med att konfigurera delar av Skype för företag Online, till exempel nätverk, möten, snabbmeddelanden och extern åtkomst för användare.
-ms.openlocfilehash: 1e3807199fc83d642399b29870f2cac477d2ec75
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 64d43b4593de9c23e28bcec1bb5c3ce369ee9b2b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415712"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926349"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype för företag - Online i Office 365 - hjälp för administratörer
 

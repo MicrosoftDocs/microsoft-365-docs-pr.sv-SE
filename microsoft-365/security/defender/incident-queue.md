@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: df2d2660267c38dccf5ef09fa4955615d3a78141
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636272"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925893"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera ärenden i Microsoft 365 Defender
 
@@ -82,6 +82,23 @@ I den här tabellen visas de tillgängliga filternamnen.
 | Allvarlighetsgrad | Händelsens allvarlighetsgrad är samma som den inverkan den kan ha på dina tillgångar. Ju högre allvarlighetsgrad, desto större påverkan är det och kräver vanligtvis den mest omedelbarta uppmärksamhet. |
 | Status | Du kan välja att begränsa listan över incidenter som visas baserat på deras status för att se vilka som är aktiva eller lösta. |
 |||
+
+## <a name="save-defined-filters-as-urls"></a>Spara definierade filter som URL-adresser
+
+När du har konfigurerat ett användbart filter i kön med incidenter kan du bokmärka URL-adressen till webbläsarfliken eller på annat sätt spara den som en länk på en webbsida, ett Word-dokument eller en valfri plats. Det ger dig enkelklicksåtkomst till viktiga vyer av incidentkön, till exempel:
+
+- Nya ärenden
+- Incidenter med hög allvarlighetsgrad
+- Incidenter som inte tilldelats
+- Hög allvarlighetsgrad, incidenter som inte tilldelats
+- Incidenter som tilldelats till mig
+- Incidenter som tilldelats till mig och för Microsoft Defender för Endpoint
+- Ärenden med en viss tagg eller taggar
+- Ärenden med en specifik hotkategori
+- Ärenden med specifika associerade hot
+- Incidenter med en specifik aktör
+
+När du har sammanställt och lagrat listan med användbara filtervyer som URL-adresser [](manage-incidents.md) kan du använda den för att snabbt bearbeta och prioritera incidenterna i kön och hantera dem för efterföljande analys.
 
 ## <a name="next-steps"></a>Nästa steg
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Lär dig hur du Office 365 av slutpunkter så att de fungerar med företagets nätverksarkitektur.
-ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fa727c5c80521b6ff67c50d202d0c11c643b021e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905122"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925869"
 ---
 # <a name="managing-office-365-endpoints"></a>Hantera Office 365-slutpunkter
 
@@ -161,7 +161,7 @@ Dessa CNAME-omdirigeringar är en normal del av DNS-posterna och är transparent
 
 En proxyserver verifierar den ursprungliga URL:en, som i exemplet ovan är serviceA.office.com och url-adressen inkluderas i Office 365 publicering. Proxyservern begär DNS-upplösningen från URL:en till en IP-adress och tar emot IP_1. Den verifierar inte de mellanliggande CNAME-omdirigeringsposterna.
 
-Hårdkodade konfigurationer eller vitlistning baserade på indirekt Office 365 FQDN rekommenderas inte, stöds inte av Microsoft och det är känt att orsaka anslutningsproblem för kunder. DNS-lösningar som blockerar vid CNAME-omdirigering eller som på annat sätt löser Office 365 DNS-poster kan lösas via DNS-vidarebefordrare med DNS-rekursion aktiverat eller genom att använda DNS-rottips. Många perimeterprodukter från tredje part integrerar rekommenderade inbyggt i Office 365 av ändpunktslistan i deras konfiguration [med hjälp av IP-Office 365- och URL-webbtjänsten för Office 365.](microsoft-365-ip-web-service.md)
+Hårdkodade konfigurationer eller användning av en lista över tillåtna data som baseras på indirekta Office 365 FQDN rekommenderas inte, stöds inte av Microsoft och det är känt att orsaka anslutningsproblem för kunder. DNS-lösningar som blockerar vid CNAME-omdirigering eller som på annat sätt löser Office 365 DNS-poster kan lösas via DNS-vidarebefordrare med DNS-rekursion aktiverat eller genom att använda DNS-rottips. Många perimeterprodukter från tredje part integrerar rekommenderade inbyggt i Office 365-slutpunkten för att inkludera en lista över tillåtna i konfigurationen med hjälp [av IP-Office 365- och URL-webbtjänsten](microsoft-365-ip-web-service.md)för Office 365.
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Varför visas namn som nsatc.net eller akadns.net i Microsoft-domännamnen?

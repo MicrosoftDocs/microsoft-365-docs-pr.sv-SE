@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Läs mer om hur du konfigurerar inställningarna för standardprincipen för enheter som Windows 10 enhet får när de loggar in på sitt arbets- eller skolkonto.
-ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3f85549e722c9aa4196cf50fc02bee2e89506017
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579983"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925248"
 ---
 # <a name="secure-windows-10-devices"></a>Skydda Windows 10-enheter
 
@@ -44,9 +44,10 @@ De inställningar som du konfigurerar här är en del av standardprincipen för 
 
 Som standard är alla inställningar **På**. Följande inställningar är tillgängliga:
   
-|||
-|:-----|:-----|
+
+
 |Inställning  <br/> |Beskrivning  <br/> |
+|:-----|:-----|
 |Skydda PC-datorer mot virus och andra hot med Windows Defender Antivirus  <br/> |Kräver att antivirusprogrammet Windows Defender är aktiverat för att skydda datorer från fara vid uppkoppling till internet.  <br/> |
 |Skydda datorer från webbaserade hot i Microsoft Edge  <br/> |Aktiverar inställningarna Microsoft i Edge som hjälper till att skydda användare från skadliga webbplatser och nedladdningar.  <br/> |
 |Skydda filer och mappar på PC-datorer från obehörig åtkomst med BitLocker  <br/> |BitLocker skyddar data genom att kryptera datorhårddiskar samt skyddar mot exponering av data om en dator försvinner eller blir stulen. Mer information finns i Vanliga [frågor och svar om Bitlocker.](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)  <br/> |

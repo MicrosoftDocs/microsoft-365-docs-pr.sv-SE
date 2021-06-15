@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Lär dig hur du använder återgivningar och sprites för att förbättra bildprestandan på dina SharePoint Online klassiska publiceringswebbplatser.
-ms.openlocfilehash: 0f0dd078ce28b86fc998b2f83ac19d04b1a3ab02
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15885f1d8803332e24e2656a48b796dab28c665f
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907486"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924581"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Bildoptimering för SharePoint klassiska publiceringswebbplatser i Online
 
@@ -35,9 +35,14 @@ En webbsidas inläsningshastighet beror på den kombinerade storleken på alla k
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>Använda sprites för snabbare bildinläsning
 
-|||
-|:-----|:-----|
-| En bild sprite innehåller många mindre bilder. Med CSS markerar du en del av den sammansatta bilden som ska visas på en viss del av sidan med absolut placering. Istället för att läsa in flera bilder flyttar du bara runt en enda bild på sidan och gör en liten del av bilden synlig genom ett litet fönster där den nödvändiga delen av spritebilden visas för slutanvändaren. SharePoint Online använder sprites för att visa dess olika ikoner i sprite-spcommon.png.  <br/>  Det här tas upp:  <br/>  Bildkomprimering  <br/>  Bildoptimering  <br/>  SharePoint bildåtergivningar  <br/> |![Skärmbild av spcommon](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+![Skärmbild av spcommon](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+
+En bild sprite innehåller många mindre bilder. Med CSS markerar du en del av den sammansatta bilden som ska visas på en viss del av sidan med absolut placering. Istället för att läsa in flera bilder flyttar du bara runt en enda bild på sidan och gör en liten del av bilden synlig genom ett litet fönster där den nödvändiga delen av spritebilden visas för slutanvändaren. SharePoint Online använder sprites för att visa dess olika ikoner i sprite-spcommon.png filen.
+
+Det här tas upp:
+- Bildkomprimering
+- Bildoptimering
+- SharePoint bildåtergivningar
    
 Det kan ge högre prestanda eftersom du bara laddar ned en bild i stället för flera och sedan cachelagrar och återanvänder bilden. Även om bilden inte förblir cachelagrad minskar den här metoden det totala antalet HTTP-förfrågningar till servern, vilket minskar inläsningstiden för sidor. Det här är en form av bild sammanslagning. Det här är en mycket användbar teknik om bilderna inte ändras särskilt ofta, till exempel ikoner, som visas i SharePoint ovan. Du kan använda [Web Essentials](https://vswebessentials.com/), ett tredjeparts communitybaserat projekt med öppen källkod för att göra det enkelt i Microsoft Visual Studio. Mer information finns i [Förminring och sammanslagning i SharePoint Online.](./minification-and-bundling-in-sharepoint-online.md)
   

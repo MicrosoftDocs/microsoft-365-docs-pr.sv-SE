@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: Lär dig konfigurera säkert innehållssamarbete i Teams att skydda dina data utifrån dess känslighet.
-ms.openlocfilehash: 12c8bfd2c7c59e1cc4dcf149e394d2c7dc456530
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7a5b8f58cc5e4a23d2d143419f99ecdd87b949c1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539065"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924365"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Konfigurera säkert samarbete med Microsoft 365 och Microsoft Teams
 
@@ -178,7 +178,7 @@ Dessa utbildningsmoduler kan hjälpa användarna att använda Teams, grupper och
 |:---|:---|
 |![Ikon för att konfigurera och anpassa teamets utbildning](../media/set-up-customize-team-training.png)<br>**[Konfigurera och anpassa ditt team](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint för att dela och synkronisera utbildning](../media/sharepoint-share-sync-training.png)<br>**[Dela och synkronisera](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teams ladda upp och hitta utbildningsikonen för filer](../media/smc-teams-upload-find-files-training.png)<br>**[Upload och söka efter filer](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
-|![Ikonen Samarbeta i team och kanaler](../media/teams-collaborate-channels-training.png)<br>**[Samarbeta i team och kanaler](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+|![Ikonen Samarbeta i team och kanaler](../media/teams-collaborate-channels-training.png)<br>**[Samarbeta i team och kanaler](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**||
 
 ## <a name="illustrations"></a>Illustrationer
 

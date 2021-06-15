@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Administratörsroller mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret. Tjänstadministratören öppnar till exempel supportbegäranden hos Microsoft.
-ms.openlocfilehash: c1baf7fcd9189973864929550b19ca6e32d499ae
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 4e2b1db207a2a590855f7fb2d0bf2019d4b57ea5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706208"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924569"
 ---
 # <a name="get-started-with-the-roles-page"></a>Komma igång med sidan Roller
 
@@ -41,11 +41,12 @@ Du kan exportera administratörslistan samt söka och filtrera efter roll.
 
 ![Filtrera eller importera administratörsroller](../../media/admin-role-page-options.png)
 
-|||
-|:-----|:-----|
-|  <br/> |Använd **exportadministratörslistan** för att få en fullständig lista över alla administratörsanvändare i organisationen. Listan lagras i en Excel .csv fil.   <br/> |
-|  <br/> |Använd **Sök** för att söka efter en administratörsroll och se vilka användare som har tilldelats den rollen.   <br/> |
-|  <br/> |Använd **Filter för** att ändra vyn för visade administratörsroller.   <br/> |
+- Använd exportadministratörslistan för att få en fullständig lista över alla administratörsanvändare i organisationen. Listan lagras i en Excel .csv fil.
+
+- Använd Sök för att söka efter en administratörsroll och se vilka användare som har tilldelats den rollen.
+
+- Använd Filter för att ändra vyn för visade administratörsroller.
+
 
 ## <a name="get-the-most-out-of-the-roles"></a>Få ut mesta av rollerna
 

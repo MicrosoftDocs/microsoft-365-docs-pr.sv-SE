@@ -1,6 +1,6 @@
 ---
-title: Köra och anpassa schemalagda genomsökningar och sökningar på begäran
-description: Anpassa och starta Microsoft Defender Antivirus genomsökningar på slutpunkter i nätverket.
+title: Kör och anpassa schemalagda genomsökningar och sökningar på begäran.
+description: Anpassa och starta Microsoft Defender Antivirus genomsökningar på slutpunkter i nätverket
 keywords: skanning, schemalägg, anpassa, undantag, exkludera filer, åtgärder, genomsökningsresultat, karantän, ta bort hot, snabbsökning, fullständig sökning, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 31dbfa2ac6d5537f6d42c0bad612be5ef059368d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bce3fe1b6490803cb571a1a8a2387c19cc589114
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275282"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926253"
 ---
 # <a name="customize-initiate-and-review-the-results-of-microsoft-defender-antivirus-scans-and-remediation"></a>Anpassa, initiera och granska resultaten av Microsoft Defender Antivirus genomsökningar och åtgärder
 

@@ -16,12 +16,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Läs mer om Business Assist-programmet och hur det kan hjälpa din organisation med förbättrad hjälp och användning för Microsoft 365 för företag.
-ms.openlocfilehash: ee0884ec1c95795a6a7847dfeaffdfcb2fac4beb
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52768987"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924593"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Business Assist för Microsoft 365
 
@@ -33,7 +33,7 @@ Få ut mesta mesta av prenumerationen med expertråd från småföretags special
 
 |&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
-|**Kom igång snabbt** <br> Arbeta med en small business-specialist för att konfigurera Microsoft 365 funktioner som skyddar ditt företag och ger det ett professionellt utseende. |**Ge alla i företaget nya möjligheter** <br> Alla anställda, inte bara den person som ansvarar för IT-ansvarig, kan gå direkt till Microsofts experter för att få kontinuerlig support snabbare. |**Låsa upp företagets potential** <br> Läs mer om underutnyttjade funktioner och få råd om olika sätt att få ut mer värde av prenumerationen. |
+|Arbeta med en small business-specialist för att konfigurera Microsoft 365 funktioner som skyddar ditt företag och ger det ett professionellt utseende. |Alla anställda, inte bara den person som ansvarar för IT-ansvarig, kan gå direkt till Microsofts experter för att få kontinuerlig support snabbare. |Läs mer om underutnyttjade funktioner och få råd om olika sätt att få ut mer värde av prenumerationen. |
 |**Påskynda molnmigrering** <br> Få anpassad hjälp med att flytta alla dina aktuella filer (e-post, lagring, dokument och kommunikation) till Microsoft 365. |**Åtkomstspecialister enkelt** <br> Vårt team tar upp konversationen där du lämnade den senast. Inga biljetter att spåra, inga robotar, inga långa väntetider. |**Håll dig uppdaterad** <br> Regelbundna checkar som hjälper dig att hålla dig aktuell när nya tjänstefunktioner läggs till och ditt företags behov utvecklas. |
 | | | |
 

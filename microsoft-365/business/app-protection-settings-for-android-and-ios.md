@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: Lär dig hur du skapar, redigerar eller tar bort en princip för apphantering och skyddar arbetsfiler på Android- eller iOS-enheter.
-ms.openlocfilehash: 2e157737990c7aca6e87a676e90f62f0d40ad372
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 92dce1e8761e53b85df85f2a84f30ab307f63e6d
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580303"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925072"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Ange inställningar för appskydd för Android- eller iOS-enheter
 
@@ -81,10 +81,10 @@ Följande tabeller innehåller detaljerad information om tillgängliga inställn
 ### <a name="settings-that-protect-work-files"></a>Inställningar som skyddar arbetsfiler
 
 Följande inställningar är tillgängliga för att skydda arbetsfiler om en användares enhet försvinner eller blir stulen:
-  
-|||
-|:-----|:-----|
+
+
 |Inställning  <br/> |Beskrivning  <br/> |
+|:-----|:-----|
 |Ta bort arbetsﬁler från en inaktiv enheten efter så många dagar  <br/> |Om en enhet inte används under det antal dagar som du anger här tas alla arbetsfiler som lagras på enheten bort automatiskt.  <br/> |
 |Tvinga användare att spara alla filer i OneDrive för företag  <br/> |Om den här inställningen **är På** är den enda tillgängliga platsen att spara arbetsfiler på OneDrive för företag.  <br/> |
 |Kryptera arbetsfiler  <br/> |Behåll den här inställningen **På** så att arbetsfiler skyddas av kryptering. Även om enheten försvinner eller blir stulen kan ingen läsa företagets data.  <br/> |
@@ -92,10 +92,10 @@ Följande inställningar är tillgängliga för att skydda arbetsfiler om en anv
 ### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Inställningar som styr hur användare kommer åt Office-filer på mobila enheter
 
 Följande inställningar är tillgängliga för att bestämma hur användare kan komma åt Office arbetsfiler:
-  
-|||
-|:-----|:-----|
+
+
 |Inställning  <br/> |Beskrivning  <br/> |
+|:-----|:-----|
 |Kräv PIN-kod eller fingeravtryck för åtkomst till Office-program  <br/> |Om den här inställningen **är På** måste användare utöver användarnamn och lösenord, tillhandahålla annan autentisering innan de kan använda appen Office sina mobila enheter.<br/> |
 |Återställ PIN-kod när inloggningen misslyckas så här många gånger  <br/> |Om du vill förhindra att obehöriga användare slumpmässigt gissar en PIN-kod. PIN-koden återställs efter det antal felaktiga försök som du anger.  <br/> |
 |Kräv att användare loggar in igen efter att Office-appar har varit inaktiva  <br/> |Den här inställningen bestämmer hur länge en användare kan vara inaktiv innan de uppmanas att logga in igen.  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Rapporter i administrationscentret – Microsoft Teams användaraktivitet
+title: Microsoft 365 i administrationscentret – Microsoft Teams användaraktivitet
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Lär dig hur du får Microsoft Teams av användaraktivitetsrapporten och får inblick i Teams aktivitet i organisationen.
-ms.openlocfilehash: 1f45cd380813a843ad54e6552578941a9741138e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c824a0ce285a085c9ae8b7326647ad4bcdf5f013
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579608"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924273"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365 Rapporter i administrationscentret – Microsoft Teams användaraktivitet
+# <a name="microsoft-365-admin-center-reports---microsoft-teams-user-activity"></a>Microsoft 365 i administrationscentret – Microsoft Teams användaraktivitet
 
 På Microsoft 365 **Rapporter** ser du en översikt över aktiviteter i organisationens produkter. Här kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md). I användaraktivitetsrapporten för Microsoft Teams får du inblick i Microsoft Teams-aktiviteterna i organisationen.
   

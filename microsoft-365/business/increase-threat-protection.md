@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Konfigurera Microsoft Defender för Office 365 skydda känsliga data mot nätfiske, skadlig programvara och andra hot.
-ms.openlocfilehash: 4b5142efbf4392f017cd9b96f6a9c36ef2000bb7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a995063cef6fdc42ad62079d49d58edc9d07b52c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245153"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924328"
 ---
 # <a name="increase-threat-protection"></a>Öka hotskyddet
 
@@ -81,8 +81,8 @@ Så här skapar du en regel för e-posttransport:
 
 6. Välj **Spara**.
 
-|Inställning|Varna användare innan de öppnar bifogade filer Office filer||
-|---|---|---|
+|Inställning|Varna användare innan de öppnar bifogade filer Office filer|
+|---|---|
 |Namn|Regel för utpressningstrojaner: varna användare|
 |Tillämpa den här regeln om . . .|En bifogad fil . . . filtillägg matchar . . .|
 |Ange ord eller fraser|Lägg till följande filtyper:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm|
