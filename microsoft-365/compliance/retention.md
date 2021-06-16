@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om kvarhållningsprinciper och kvarhållningsetiketter som hjälper dig att behålla det du behöver och ta bort det du inte behöver.
-ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710724"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932872"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Mer information om kvarhållningsprinciper och kvarhållningsetiketter
 
@@ -263,9 +263,16 @@ I följande tabell kan du avgöra om du ska använda en kvarhållningsprincip el
 |Borttagningsgranskning | Nej| Ja |
 |Bevis på borttagningen i upp till sju år | Nej |Ja, när du använder borttagningsgranskning eller objekt markeras som en post|
 |Granska aktiviteter för administratör| Ja | Ja|
+|Granskningsåtgärder för datakvarhållning| Nej | Ja <sup>\*</sup> |
 |Identifiera objekt som ska behållas: <br /> – Innehållssökning <br /> – Dataklassificeringssida, innehållsutforskaren, aktivitetsutforskaren | <br /> Nej <br /> Nej | <br /> Ja <br /> Ja|
 
-Observera att du kan använda både kvarhållningsprinciper och kvarhållningsetiketter som kompletterande kvarhållningsmetoder. Till exempel:
+**Fotnot:**
+
+<sup>\*</sup> För etiketter för datakvarhållning som inte markerar innehållet som en post eller regelbaserad post begränsas granskningshändelser till när ett objekt i SharePoint har en etikett tillämpad, ändrad eller borttagen. Granskningsinformation för etiketter för datakvarhållning finns i avsnittet [Granskningsåtgärder för datakvarhållning](#auditing-retention-actions) på den här sidan.
+
+### <a name="combining-retention-policies-and-retention-labels"></a>Kombinera principer och etiketter för datakvarhållning
+
+Du behöver inte välja mellan att bara använda principer eller etiketter för datakvarhållning. Båda metoderna kan användas tillsammans och kompletterar i själva verket varandra för en mer omfattande lösning. Till exempel:
 
 1. Du skapar och konfigurerar en kvarhållningsprincip som automatiskt tar bort innehåll fem år efter att det senast ändrades, och tillämpar principen på alla OneDrive-konton.
 
@@ -374,9 +381,31 @@ Mer information om biblioteket för bevarande av dokument finns i [Hur bevarande
 
 På grund av beteendet under respitperioden kan principen återupptas utan att någon permanent dataförlust sker under tiden om du återaktiverar principen eller ändrar dess platsstatus inom 30 dagar.
 
-## <a name="auditing-retention-configuration"></a>Granskning av kvarhållningskonfiguration
+## <a name="auditing-retention-configuration-and-actions"></a>Granskning av konfiguration och åtgärder för datakvarhållning
 
-Administratörsåtgärder för kvarhållningsprinciper och kvarhållningsetiketter sparas i granskningsloggen när granskning [har aktiverats](turn-audit-log-search-on-or-off.md). Till exempel skapas en granskningshändelse när en kvarhållningsprincip eller -etikett skapas, konfigureras eller tas bort. Den fullständiga listan finns i [Aktiviteter för kvarhållningsprincip och kvarhållningsetikett](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+När [granskning är aktiverat](turn-audit-log-search-on-or-off.md)stöds granskningshändelser för kvarhållning för både administrationskonfiguration (principer och etiketter för datakvarhållning) och åtgärder för datakvarhållning (endast etiketter för datakvarhållning).
+
+### <a name="auditing-retention-configuration"></a>Granskning av konfiguration för datakvarhållning
+
+Administratörskonfiguration av principer och etiketter för datakvarhållning loggas som granskningshändelser när en kvarhållningsprincip eller -etikett skapas, konfigureras om eller tas bort.
+
+En fullständig lista över granskningshändelser finns i [aktiviteter för princip och etikett för datakvarhållning](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+
+### <a name="auditing-retention-actions"></a>Granskning av åtgärder för kvarhållning
+
+Åtgärder för datakvarhållning loggas som granskningshändelser är endast tillgängliga för etiketter för datakvarhållning och inte för principer för datakvarhållning:
+
+- När en etikett för datakvarhållning används, ändras eller tas bort från ett objekt i SharePoint:
+    - Välj **Ändrad kvarhållningsetikett för en fil** från **Fil- och sidaktiviteter**. 
+
+- När ett etiketterat objekt i SharePoint markeras som en post och det låses upp eller låses av en användare:
+    - Välj **Ändrade poststatus till låst** och **Ändrade poststatus till olåst** från **Fil- och sidaktiviteter**.
+
+- När en etikett för datakvarhållning som markerar innehåll som en post eller regelpost tillämpas på ett objekt i Exchange:
+    - Välj **Etiketterat meddelande som en post** från **Exchange postlådeaktiviteter**.
+
+- När ett etiketterat objekt i SharePoint eller Exchange är markerat som en post eller regelpost och det tas bort permanent:
+    - Välj **Borttagen fil markerad som en post** från **Fil- och sidaktiviteter**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>PowerShell-cmdletar för kvarhållningsprinciper och kvarhållningsetiketter
 

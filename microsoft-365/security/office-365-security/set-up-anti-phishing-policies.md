@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan läsa mer om principer för nätfiske som finns i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
+description: Administratörer kan läsa mer om principer för skydd mot nätfiske som finns i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 205fd5cd40d187eada4f6b87edf64c0d35f7e3b3
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788421"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964891"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Principer mot nätfiske i Microsoft 365
 
@@ -33,20 +33,20 @@ ms.locfileid: "52788421"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Microsoft 365-organisationer med Exchange Online-postlådor, fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor och Microsoft Defender för Office 365 organisationer.
+Principer för att konfigurera inställningar för skydd mot nätfiske är tillgängliga i Microsoft 365-organisationer med Exchange Online-postlådor, fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor och Microsoft Defender för Office 365-organisationer.
 
-Principer för skydd mot nätfiske i Microsoft Defender Office 365 bara tillgängliga i organisationer som har Defender för Office 365. Till exempel:
+Principer för skydd mot nätfiske i Microsoft Defender för Office 365 är endast tillgängliga i organisationer som har Defender för Office 365. Till exempel:
 
 - Microsoft 365 Enterprise E5, Microsoft 365 Education A5 osv.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
-- [Microsoft Defender Office 365 tillägg som ett tillägg](https://products.office.com/exchange/advance-threat-protection)
+- [Microsoft Defender för Office 365 som ett tillägg](https://products.office.com/exchange/advance-threat-protection)
 
-De stora skillnaderna mellan principer för skydd mot nätfiske i EOP och principer för skydd mot nätfiske i Microsoft Defender Office 365 nätfiske beskrivs i följande tabell:
+De stora skillnaderna mellan principer för skydd mot nätfiske i EOP och principer för skydd mot nätfiske i Microsoft Defender för Office 365 beskrivs i följande tabell:
 
 ****
 
-|Funktion|Principer mot nätfiske i EOP|Principer mot nätfiske i Microsoft Defender för Office 365|
+|Funktion|Principer mot nätfiske i EOP|Principer för skydd mot nätfiske i Microsoft Defender för Office 365|
 |---|:---:|:---:|
 |Standardprincip skapad automatiskt|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
 |Skapa anpassade principer|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
@@ -62,7 +62,7 @@ Information om hur du konfigurerar principer mot nätfiske finns i följande art
 
 - [Konfigurera principer för skydd mot nätfiske i EOP](configure-anti-phishing-policies-eop.md)
 
-- [Konfigurera principer mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)
+- [Konfigurera principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)
 
 I resten av den här artikeln beskrivs de inställningar som är tillgängliga i principer mot nätfiske i EOP och Defender för Office 365.
 
@@ -80,7 +80,7 @@ Följande principinställningar är tillgängliga i principer för skydd mot nä
 
   - **Mottagaren är:** En eller flera postlådor, e-postanvändare eller e-postkontakter i organisationen.
   - **Mottagaren är medlem i**: En eller flera grupper i organisationen.
-  - **Mottagarens domän är:** En eller flera av de konfigurerade godkända domänerna i Microsoft 365.
+  - **Mottagarens domän är**: En eller flera av de konfigurerade godkända domänerna i Microsoft 365.
 
   - **Förutom när**: Undantag för regeln. Inställningarna och beteendet är exakt som villkoren:
 
@@ -89,7 +89,7 @@ Följande principinställningar är tillgängliga i principer för skydd mot nä
     - **Mottagarens domän är**
 
   > [!NOTE]
-  > Inställningen **Används för** krävs i anpassade principer för nätfiske för att identifiera vilka mottagare av **meddelandet** <u>som principen gäller för.</u> Principer för skydd mot nätfiske i Microsoft [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Defender för Office 365 har också personifieringsinställningar där du kan ange enskilda e-postadresser eller avsändardomäner som ska få <u>personifieringsskydd</u> enligt beskrivningen längre fram i den här artikeln.
+  > Inställningen **Används för** krävs i anpassade principer för nätfiske för att identifiera vilka mottagare av **meddelandet** <u>som principen gäller för.</u> Principer för skydd mot nätfiske i Microsoft [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Defender för Office 365 har också inställningar för personifiering där du kan ange enskilda e-postadresser eller avsändardomäner som ska få <u>personifieringsskydd</u> enligt beskrivningen längre fram i den här artikeln.
 
 ## <a name="spoof-settings"></a>Inställningar för förfalskning
 
@@ -108,7 +108,7 @@ Följande inställningar för förfalskning finns i principer för skydd mot nä
   >
   > - Skydd mot förfalskning är aktiverat som standard i standardprincipen för skydd mot nätfiske och i alla nya anpassade principer mot nätfiske som du skapar.
   >
-  > - Du behöver inte inaktivera skydd mot förfalskning om MX-posten inte pekar på Microsoft 365. aktiverar du Utökad filtrering för kopplingar i stället. Instruktioner finns i [Utökad filtrering för kopplingar i Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > - Du behöver inte inaktivera skydd mot förfalskning om MX-posten inte pekar på Microsoft 365. aktiverar du Utökad filtrering för kopplingar i stället. Instruktioner finns i [Utökad filtrering för kopplingar i Exchange Online.](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
   >
   > - Om du inaktiverar skydd mot förfalskning inaktiveras bara implicit förfalskningsskydd från [sammansatta autentiseringskontroller.](email-validation-and-authentication.md#composite-authentication) Om avsändaren misslyckas med ett [explicit DMARC-kontroller](use-dmarc-to-validate-email.md) där principen är inställd på att sätta i karantän eller avvisas meddelandet fortfarande i karantän eller avvisas.
 
@@ -116,7 +116,7 @@ Följande inställningar för förfalskning finns i principer för skydd mot nä
 
 - **Åtgärder:** För meddelanden från spärrade förfalskningsavsändare (blockeras automatiskt av förfalskningsinformation eller manuellt blockeras i listan Tillåt/blockera klientorganisation) kan du också ange vilken åtgärd som ska vidtas på meddelanden:
 
-  - **Flytta meddelanden till mottagarnas skräppostmappar:** Det här är standardvärdet. Meddelandet levereras till postlådan och flyttas till mappen Skräppost. I Exchange Online flyttas meddelandet till mappen Skräppost om skräppostregeln är aktiverad för postlådan (den är aktiverad som standard). Mer information finns i [Konfigurera inställningar för skräppost Exchange Online postlådor i Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Flytta meddelanden till mottagarnas skräppostmappar:** Det här är standardvärdet. Meddelandet levereras till postlådan och flyttas till mappen Skräppost. I Exchange Online flyttas meddelandet till mappen Skräppost om skräppostregeln är aktiverad för postlådan (den är aktiverad som standard). Mer information finns i Konfigurera [inställningar för skräppost i Exchange Online-postlådor i Microsoft 365.](configure-junk-email-settings-on-exo-mailboxes.md)
 
   - **Sätt meddelandet i karantän:** Skickar meddelandet till karantän i stället för de avsedda mottagarna. Mer information om karantän finns i följande artiklar:
 
@@ -209,10 +209,14 @@ Följande inställningar för personifiering är endast tillgängliga i principe
   - **Visa tips för ovanliga tecken:** Från-adressen innehåller ovanliga teckenuppsättningar (till exempel matematiska symboler och text eller en blandning av versaler och gemener) i en skyddad avsändare eller domän.
 
   > [!IMPORTANT]
+  > Även om säkerhetstips för personifiering  är avstängda rekommenderar vi att du använder en e-postflödesregel (kallas även transportregel) för att lägga till en följande meddelanderubrik i meddelanden:
   >
-  > Även när säkerhetstips för personifiering  är avstängda rekommenderar vi att du använder en e-postflödesregel (kallas även transportregel) för att lägga till ett meddelandehuvud med namnet **X-MS-Exchange-EnableFirstContactSafetyTip** med värde **enable** i meddelanden. En säkerhetstips meddelande informerar mottagarna första gången de får ett meddelande från avsändaren eller om de inte ofta får meddelanden från avsändaren. Den här funktionen ger ett extra säkerhetsskydd mot potentiella personifieringsattacker.
+  > - Rubriknamn: **X-MS-Exchange-EnableFirstContactSafetyTip**
+  > - Rubrikvärde: **Aktivera**
   >
-  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Texten i meddelandet säkerhetstips personifieringsskydd med flera mottagare.":::
+  > En säkerhetstips meddelande informerar mottagarna första gången de får ett meddelande från avsändaren eller om de inte ofta får meddelanden från avsändaren. Den här funktionen ger ett extra säkerhetsskydd mot potentiella personifieringsattacker.
+  >
+  > ![Texten i meddelandet säkerhetstips personifieringsskydd med flera mottagare.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 - Postlådeintelligens: Aktiverar eller inaktiverar artificiell intelligens (AI) som bestämmer användar-e-postmönster med vanliga kontakter. Den här inställningen hjälper AI att skilja mellan meddelanden från legitima och imiterade avsändare.
 

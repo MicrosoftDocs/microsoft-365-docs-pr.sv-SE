@@ -20,12 +20,12 @@ ms.custom:
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cd04911e3663bb6b9fa00d4946b26086dc8094d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 12c7609635d9140f2e8efda3f6f1397619ce4790
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538273"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929911"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -213,18 +213,16 @@ När du har publicerat CNAME-posterna i DNS är du redo att aktivera DKIM-signer
 
 1. [Logga in på Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) med ditt arbets- eller skolkonto.
 
-2. Gå till [protection.office.com](https://protection.office.com) eller [security.microsoft.com](https://security.microsoft.com), beroende på vilken portal du använder, och följ vägen nedan.
+2. Gå till [security.microsoft.com](https://security.microsoft.com) och följ vägen nedan.
 
-|protection.office.com  |security.microsoft.com  |
-|---------|---------|
-| Hothantering > Princip > Ytterligare principer > DKIM     | E-post och samarbete > Principer och regler > Hotprinciper > Ytterligare principer > DKIM        | 
+3. Gå till **E-post och samarbete > Principer och regler > Hotprinciper > DKIM**.
 
-3. Välj domänen som du vill aktivera DKIM för och sedan går du till **Sign messages for this domain with DKIM signatures** (Signera meddelanden för domänen ed DKIM-signaturer) och väljer **Aktivera**. Upprepa det här steget för varje anpassad domän.
+4. Välj domänen som du vill aktivera DKIM för och sedan går du till **Sign messages for this domain with DKIM signatures** (Signera meddelanden för domänen ed DKIM-signaturer) och väljer **Aktivera**. Upprepa det här steget för varje anpassad domän.
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>För att aktivera DKIM-signering för din anpassade domän med PowerShell
 
 > [!IMPORTANT]
->:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="Felet &quot;Inga DKIM-nycklar sparade för den här domänen.&quot;":::
+>:::image type="content" source="../../media/dkim.png" alt-text="Felet &quot;Inga DKIM-nycklar sparade för den här domänen.&quot;":::
 > Om du konfigurerar DKIM för första gången och ser felet "Inga DKIM-nycklar sparade för den här domänen." slutför kommandot i steg 2 nedan (till exempel *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) för att se nyckeln.
 
 1. [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).

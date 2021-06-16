@@ -16,19 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-search.appverid: MET150
-description: Registrera dig för en kostnadsfri 30-dagars utvärderingsversion för Microsoft 365 Business Standard, Microsoft 365 Business Premium eller Microsoft 365-applikationer för affärsverksamhet.
+search.appverid: GEA150
+description: Registrera dig för en kostnadsfri 30-dagars utvärderingsversion för Microsoft 365 Business Standard, Microsoft 365 Business Premium eller Microsoft 365-appar för småföretag.
 ms.date: 08/07/2020
-ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583454"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950053"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Prova eller köp en Microsoft 365 för företag-prenumeration
 
-Microsoft 365 för företag är en prenumerationstjänst som gör att du kan köra organisationen i molnet medan Microsoft tar hand om IT-tjänsten åt dig. Microsoft hanterar enheter, skyddar mot verkliga hot och ger din organisation det senaste inom företagsprogramvaran. Du kan registrera dig för en kostnadsfri provprenumeration på Microsoft 365 Business Standard, Microsoft 365 Business Premium eller Microsoft 365-applikationer för affärsverksamhet och prova i 30 dagar.
+Microsoft 365 för företag är en prenumerationstjänst som gör att du kan köra organisationen i molnet medan Microsoft tar hand om IT-tjänsten åt dig. Microsoft hanterar enheter, skyddar mot verkliga hot och ger din organisation det senaste inom företagsprogramvaran. Du kan registrera dig för en kostnadsfri provprenumeration på Microsoft 365 Business Standard, Microsoft 365 Business Premium eller Microsoft 365-appar för småföretag och prova i 30 dagar.
 
 > [!NOTE]
 > Du måste använda ett kreditkort när du registrerar dig för en kostnadsfri utvärderingsversion. När den kostnadsfria utvärderingsperioden är slut konverteras utvärderingsprenumerationen automatiskt till en betalprenumeration. Ditt kreditkort debiteras inte förrän utvärderingsperioden är slut.
@@ -49,20 +49,20 @@ Du behöver inte ett befintligt Microsoft-konto för att registrera dig för en 
 
 ## <a name="try-a-free-trial-subscription"></a>Prova en kostnadsfri provprenumeration
 
-Är du ny kund och har inte redan ett konto hos Microsoft? Använd de här stegen för att skapa ett konto och registrera dig för en kostnadsfri provprenumeration på Microsoft 365 Business Standard, Microsoft 365 Business Premium eller Microsoft 365-applikationer för affärsverksamhet.
+Är du ny kund och har inte redan ett konto hos Microsoft? Använd de här stegen för att skapa ett konto och registrera dig för en kostnadsfri provprenumeration på Microsoft 365 Business Standard, Microsoft 365 Business Premium eller Microsoft 365-appar för småföretag.
 
 1. Gå till webbplatsen <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Produkter.</a>
 2. Välj det abonnemang du vill registrera dig för, till exempel **Microsoft 365 Business Standard,** skrolla nedåt på sidan och välj Prova kostnadsfritt **i 1 månad.**
 3. På nästa sida följer du anvisningarna för att konfigurera ditt konto.
 4. Registreringsprocessen kan ta flera minuter att slutföra. När det \' är klart är du redo att starta installationsguiden för din prenumeration. Mer information om hur du inställningar för din prenumeration finns i [Nästa steg.](#next-steps)
 
-## <a name="buy-a-subscription-from-your-free-trial"></a>Köpa en prenumeration från din kostnadsfria utvärderingsversion
+## <a name="buy-a-subscription-from-your-free-trial"></a>Köp en prenumeration från din kostnadsfria utvärderingsversion
 
 När den kostnadsfria utvärderingsperioden är slut omvandlas utvärderingsprenumerationen automatiskt till en betalprenumeration. Betalprenumerationen blir som standard det abonnemang du har för närvarande. Du kan köpa ett annat abonnemang genom att följa stegen i [Köpa en annan prenumeration.](#buy-a-different-subscription)
 
 Om du vill köpa prenumerationen innan utvärderingsversionen är slut gör du så här:
 
-1. I Microsoft 365 administrationscentret går du till **sidan** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Fakturering dina</a> produkter.
+1. I Administrationscenter för Microsoft 365 du till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">dina</a> produkter.
 2. På sidan **Dina produkter** hittar du den prenumeration som du vill köpa.
 3. I avsnittet **Licenser** väljer du **Köp prenumeration**.
 4. Välj ett månatligt eller årligt åtagande för prenumerationen och välj sedan **Gå till kassan.**
@@ -70,7 +70,7 @@ Om du vill köpa prenumerationen innan utvärderingsversionen är slut gör du s
 6. På nästa sida verifierar du **adressen Såld till,** **Faktureras till-informationen** och **Artiklar i denna order.** Om du behöver göra några ändringar väljer **du Ändra** bredvid tillämpliga avsnitt.
 7. När du \' är klar väljer du Acceptera avtalet & lägg **order**.
 
-## <a name="extend-your-trial"></a>Förlänga utvärderingen
+## <a name="extend-your-trial"></a>Förläng din utvärdering
 
 Behöver du mer tid att prova funktionerna i Microsoft 365 för företag innan du köper det? Om det är mindre än 15 dagar tills din utvärderingsversion upphör att gälla och du inte har förlängt utvärderingsperioden redan så kan du förlänga perioden med 30 dagar. Du kan bara göra detta en gång.
 
@@ -83,13 +83,13 @@ När du är redo att köpa kan du gå till [Köp utvärderingsversionen.](#buy-a
 
 ## <a name="cancel-your-free-trial-subscription"></a>Avsluta din kostnadsfria provprenumeration
 
-Om du bestämmer dig för att avbryta utvärderingsprenumerationen innan den kostnadsfria utvärderingsperioden går ut går du Microsoft 365 administrationscentret [och inaktiverar Återkommande fakturering.](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) Utvärderingsversionen förfaller automatiskt när månaden går ut och kreditkortet \' debiteras inte.
+Om du bestämmer dig för att avbryta utvärderingsprenumerationen innan den kostnadsfria utvärderingsperioden går ut går du till Administrationscenter för Microsoft 365 [och inaktiverar Återkommande fakturering.](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) Utvärderingsversionen förfaller automatiskt när månaden går ut och kreditkortet \' debiteras inte.
 
 ## <a name="try-a-different-subscription"></a>Prova med en annan prenumeration
 
-Om du redan har en Microsoft 365 för företag-prenumeration kan du använda administrationscentret Microsoft 365 prova en annan prenumeration.
+Om du redan har en Microsoft 365 för företag-prenumeration kan du använda Administrationscenter för Microsoft 365 för att prova en annan prenumeration.
 
-När du lägger till en prenumeration Microsoft 365 administrationscentret kopplas den nya prenumerationen till samma organisation (domännamnsområde) som din befintliga prenumeration. Den här kopplingen gör det enklare att flytta användare i organisationen mellan prenumerationer eller att tilldela dem en licens för de ytterligare produkter de behöver.
+När du lägger till en prenumeration Administrationscenter för Microsoft 365 prenumerationen kopplas den nya prenumerationen till samma organisation (domännamnsområde) som din befintliga prenumeration. Den här kopplingen gör det enklare att flytta användare i organisationen mellan prenumerationer eller att tilldela dem en licens för de ytterligare produkter de behöver.
 
 1. I administrationscentret går du  till sidan \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Faktureringsköpstjänster.</a>
 2. På **sidan Köp** tjänster ser du de abonnemang som är tillgängliga för din organisation. Välj Microsoft 365-abonnemanget som du vill prova.
@@ -101,7 +101,7 @@ När du lägger till en prenumeration Microsoft 365 administrationscentret koppl
 
 ## <a name="buy-a-different-subscription"></a>Köpa en annan prenumeration
 
-Om du redan har en Microsoft 365 för företag-prenumeration kan du gå igenom administrationscentret för Microsoft 365 och köpa en annan prenumeration för din organisation.
+Om du redan har en Microsoft 365 för företag-prenumeration kan du gå igenom Administrationscenter för Microsoft 365 för att köpa en annan prenumeration för din organisation.
 
 När du köper ytterligare en prenumeration via administrationscentret kopplas den nya prenumerationen till samma organisation (domännamnsutrymme) som din befintliga prenumeration. Det gör det enklare att flytta användare i organisationen mellan prenumerationer eller tilldela dem en licens för den ytterligare prenumeration de behöver.
 

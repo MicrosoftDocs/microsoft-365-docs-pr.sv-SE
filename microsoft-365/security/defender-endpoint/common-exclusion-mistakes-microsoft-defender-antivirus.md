@@ -15,21 +15,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/17/2021
-ms.openlocfilehash: d10343538c995534878196cc57092c37fd2dcf7b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/15/2021
+ms.openlocfilehash: f9ca83fcfba4b79898a0fed527e38947a4c230d6
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538069"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950137"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Vanliga misstag att undvika när man definierar undantag
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-Du kan definiera en undantagslista för objekt som du inte vill Microsoft Defender Antivirus söka i. Sådana undantagna objekt kan innehålla hot som gör din enhet sårbar. 
-
-I den här artikeln beskrivs några vanliga misstag som du bör undvika när du definierar undantag. 
+Du kan definiera en undantagslista för objekt som du inte vill Microsoft Defender Antivirus söka i. Sådana undantagna objekt kan innehålla hot som gör din enhet sårbar. I den här artikeln beskrivs några vanliga misstag som du bör undvika när du definierar undantag. 
 
 Innan du definierar dina undantagslistor kan [du Rekommendationer för att definiera undantag](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
@@ -231,7 +227,9 @@ I allmänhet ska du inte definiera undantag för följande processer:
 
 `dbgsvc.exe`  
 
-`dnx.exe`  
+`dnx.exe`
+
+`dotnet.exe`
 
 `fsi.exe`  
 
@@ -272,9 +270,3 @@ Microsoft Defender Antivirus Tjänsten körs i systemsammanhang med hjälp av lo
 
 Mer information om hur du använder jokertecken i [undantagslistor](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) finns i Använda jokertecken i filnamn och mappsökväg eller undantagslistor för tillägg.
 
-## <a name="related-articles"></a>Relaterade artiklar
-
-- [Konfigurera och validera undantag i Microsoft Defender Antivirus genomsökningar](configure-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurera och validera undantag baserat på filtillägg och mappplats](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurera och validera undantag för filer som öppnas i processer](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurera Microsoft Defender Antivirus undantag på Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

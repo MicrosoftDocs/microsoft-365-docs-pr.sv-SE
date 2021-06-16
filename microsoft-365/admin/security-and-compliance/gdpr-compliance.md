@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,24 +19,31 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: Läs om hur Microsoft 365 för företag kan hjälpa dig i processen med den allmänna dataskyddsförordningen (GDPR).
-ms.openlocfilehash: c00dec46e47bde8afef8ffb2cd67dfc00ea98950
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 147843fab8fcb8d2d1793a21f9bb897cb4a59672
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914504"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929473"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR förenklat: En guide för småföretag
 
- *Använda Microsoft 365 för företag för att minimera och hantera GDPR-efterlevnad* 
+ *Användning av Microsoft 365 för företag hjälper dig att minimera och hantera GDPR-efterlevnad* 
   
-Allmänna dataskyddsförordning (GDPR) är en EU-förordning som bestämmer hur en organisation ska hantera personuppgifter. GDPR träder i kraft den 25 maj 2018. Om ditt företag säljer eller tillhandahåller tjänster till Europeiska Unionen eller anställer EU-medborgare så påverkas du av [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en). 
-  
-Den här artikeln hjälper dig att förstå vad GDPR är, varför den kom till och hur Microsoft 365 för företag kan hjälpa din organisation att följa GDPR.
+Allmänna dataskyddsförordning (GDPR) är en EU-förordning som bestämmer hur en organisation ska hantera personuppgifter. Om ditt företag säljer eller tillhandahåller tjänster till Europeiska Unionen eller anställer EU-medborgare så påverkas du av [GDPR](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en). 
+
+Som administratör för småföretag frågar du förmodligen dig själv "hur kommer jag igång"? Detta kan vara särskilt sant om ditt företag inte hanterar personuppgifter som en grundläggande affärsaktivitet, eller om GDPR är helt nytt för dig.
+
+Du kan komma igång genom att läsa den här artikeln som syftar till att hjälpa dig att förstå vad GDPR är, varför den kom till och hur Microsoft 365 för företag kan hjälpa din organisation att följa GDPR.
+
+Den innehåller också svar på vanliga frågor om GDPR som småföretag kan ha och belyser de steg som ett litet företag kan vidta för att förbereda sig för GDPR.
+
+> [!IMPORTANT]
+> Microsoft 365-lösningarna och rekommendationerna i den här artikeln är verktyg och resurser som kan hjälpa dig att hantera och skydda dina data, men som inte är en garanti för GDPR-efterlevnad. Det är upp till dig att utvärdera din egen efterlevnadsstatus. Rådgör med dina egna juridiska och/eller professionella rådgivare när det behövs. 
   
 ## <a name="a-quick-overview-of-the-gdpr"></a>En snabb översikt av GDPR
 
-GDPR är en EU-förordning som uppdaterar och utökar det tidigare Dataskyddsdirektivet som antogs 1995. GDPR berör sekretessen för enskilda personers uppgifter, vare sig det är en klient, en kund, en anställd eller en affärspartner. Målet med GDPR är att stärka det personliga dataskyddet för EU:s medborgare, oavsett om de bor i EU eller någon annanstans. I reglerna anges förväntningar och råd om hur du ska uppnå dem. När GDPR blir verkställbar i slutet av maj 2018 måste organisationer ha åtgärder på plats som uppfyller kraven i GDPR.
+GDPR är en EU-förordning som uppdaterar och utökar det tidigare Dataskyddsdirektivet som antogs 1995. GDPR berör sekretessen för enskilda personers uppgifter, vare sig det är en klient, en kund, en anställd eller en affärspartner. Målet med GDPR är att stärka det personliga dataskyddet för EU:s medborgare, oavsett om de bor i EU eller någon annanstans. I reglerna anges förväntningar och råd om hur du ska uppnå dem. Organisationer måste ha åtgärder på plats som uppfyller kraven i GDPR.
   
 GDPR handlar om data och hur de används. Tänk på data som en livscykel. Cykeln startar när du samlar in data, fortsätter när du lagrar och använder dem (bearbetning) och slutar när du tar bort dem helt från dina system. 
   
@@ -73,6 +80,97 @@ GDPR upprättar rättigheter för den registrerade, vilket innebär att kunder, 
 - **Göra invändningar:** En enskild person kan göra invändningar mot att deras uppgifter används för olika ändamål, inklusive direkt marknadsföring. 
     
 - **Be om att inte vara föremål för automatiserat beslutsfattande, inbegripet profilering:** GDPR har strikta regler för användning av data för profilering av personer och automatiserade beslut baserade på den profileringen. 
+
+
+## <a name="steps-to-prepare-for-gdpr"></a>Steg för att förbereda för GDPR
+
+I det här avsnittet beskrivs de steg som ett litet företag kan vidta för att göra sig redo för GDPR. Mycket av informationen för de här stegen tillhandahölls via [Sju steg för företag för att förbereda sig för den Allmänna dataskyddsförordningen](https://ec.europa.eu/info/sites/default/files/ds-02-18-544-en-n.pdf), en publikation som tillhandahålls via Europeiska unionens publikationskontor.
+
+Ett bra sätt för ett litet företag att komma igång med GDPR är att se till att tillämpa följande viktiga principer när du samlar in personuppgifter:
+
+- Samla in personuppgifter med tydligt definierade syften för det du använder dem för och använd dem inte för något annat. Om du till exempel ber dina klienter att ge dig sina e-postadresser så att de kan få dina nya erbjudanden eller kampanjer kan du bara använda deras e-postadresser för just det ändamålet.
+- Samla inte in mer data än du behöver. Om ditt företag till exempel kräver en postadress för att du ska kunna leverera varor behöver du en kunds adress och ett namn, men du behöver inte känna till personens civilstånd.
+
+
+### <a name="step-1-know-the-personal-data-that-you-collect-and-use-within-your-business-and-the-reasons-you-need-it"></a>Steg 1: Känna till de personuppgifter som du samlar in och använder inom företaget och varför du behöver dem
+
+Som ett litet företag är ett av de första stegen du bör vidta att göra en inventering av de personuppgifter som du samlar in och använder inom företaget och varför de behövs. Detta omfattar data om både dina anställda och dina kunder.
+
+Du kan till exempel behöva den anställdes personuppgifter baserat på anställningsavtalet och av juridiska skäl (till exempel att rapportera skatter till Skattemyndigheten).
+
+Som ett annat exempel kan du hantera listor över enskilda kunder för att skicka meddelanden om specialerbjudanden, om de har samtyckt till detta.
+
+#### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365-funktioner som kan hjälpa dig
+[Microsoft Information Protection i Microsoft 365](/microsoft-365/compliance/information-protection) kan hjälpa dig att identifiera, klassificera och skydda känslig information i ditt företag. Du kan använda klassificerare som kan tränas för att hjälpa dig att identifiera och märka dokumenttyper som innehåller personuppgifter. 
+
+### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>Steg 2: Informera dina kunder, anställda och andra personer när du behöver samla in deras personuppgifter
+
+Enskilda personer måste känna till att du bearbetar deras personuppgifter och för vilket syfte. Om en kund till exempel behöver skapa en kundprofil för att få åtkomst till ditt företags onlinewebbplats ska du se till att du anger specifikt vad du tänker göra med deras information.
+
+Men det finns inget behov av att informera enskilda personer när de redan vet hur du kommer att använda datan. När de till exempel tillhandahåller en hemadress för en leverans som de beställt.
+
+Du måste också kunna informera enskilda personer på begäran om de personuppgifter som du lagrar om dem och ge dem åtkomst till deras data. Att vara organiserad med dina data gör det enklare att tillhandahålla dem, om det behövs. 
+
+### <a name="step-3-keep-personal-data-for-only-as-long-as-necessary"></a>Steg 3: Behåll personuppgifter endast så länge det behövs
+
+För anställdas data behåller du den så länge anställningsrelationen finns kvar och för relaterade juridiska skyldigheter.
+För kunddata behåller du den så länge kundrelationen varar och för relaterade juridiska skyldigheter (till exempel skatteändamål).
+Ta bort data när de inte längre behövs för de syften som du har samlat in dem för.
+
+#### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365-funktioner som kan hjälpa dig
+[Kvarhållningsprinciper och etiketter](/microsoft-365/compliance/retention) kan användas för att skydda personuppgift under en viss tid och ta bort dem när de inte längre behövs.
+
+
+### <a name="step-4-secure-the-personal-data-you-are-processing"></a>Steg 4: Skydda de personuppgifter du bearbetar
+
+Om du lagrar personuppgifter i ett IT-system begränsar du åtkomsten till de filer som innehåller data, till exempel med ett starkt lösenord. Uppdatera regelbundet systemets säkerhetsinställningar.
+
+> [!NOTE]
+> GDPR förskriver inte användningen av något specifikt IT-system, men gör att systemet har rätt säkerhetsnivå. Mer information finns i [GDPR Artikel 32: Säkerhet för bearbetning](https://gdpr.eu/article-32-security-of-processing/).
+
+Om du lagrar fysiska dokument med personuppgifter kontrollerar du att de inte är tillgängliga för obehöriga personer.
+
+Om du väljer att lagra personuppgifter i molnet, till exempel via Microsoft 365, har du säkerhetsfunktioner som möjligheten att hjälpa dig att hantera behörigheter till filer och mappar, centraliserade säkra platser för att spara dina filer (OneDrive- eller SharePoint-dokumentbibliotek) och datakryptering när du skickar eller hämtar dina filer. 
+
+#### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365-funktioner som kan hjälpa dig
+Du kan använda [Microsoft skydd mot dataförlust (DLP)](/microsoft-365/business-video/set-up-dlp) för att skydda företagets känsliga information. Du kan [konfigurera en DLP-princip](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) som använder [GDPR-mallen](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+
+### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>Steg 5: Dokumentera dina databehandlingsaktiviteter
+
+Förbered ett kort dokument som förklarar vilka personuppgifter du har och av vilka skäl. Du kan behöva göra dokumentationen tillgänglig för din nationella dataskyddsmyndighet om det behövs.
+
+Sådana dokument bör innehålla den information som anges nedan.
+
+| Information | Exempel |
+|---|---|
+|Syftet med databearbetning|Varna kunder om specialerbjudanden som att tillhandahålla hemleverans; betalande leverantörer; löne- och socialförsäkringstäckning för anställda|
+|Typer av personuppgifter|Kontaktinformation för kunder; kontaktinformation för leverantörer; anställdas data|
+|De kategorier av dataobjekten som berörs|Anställda; kunder; leverantörer|
+|Mottagarkategorierna|Arbetsmyndigheter; skattemyndigheter|
+|Lagringsperioderna|Anställdas personuppgifter tills anställningsavtalet har upphört (och relaterade juridiska skyldigheter); kundernas personuppgifter fram till slutet av klient-/avtalsrelationen|
+|De tekniska och organisatoriska säkerhetsåtgärderna för att skydda personuppgifterna|IT-systemlösningar uppdateras regelbundet; skyddad plats; åtkomstkontroll; datakryptering; säkerhetskopiering av data|
+|Om personuppgifter överförs till mottagare utanför EU|Användning av en processor utanför EU (till exempel lagring i molnet); dataplats för processorn; avtalsenliga åtaganden|
+
+</br>
+
+Du hittar Microsofts avtalsenliga åtaganden avseende GDPR i [Microsoft Online Services datasäkerhetstillägg](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&Keyword=DPA), som tillhandahåller Microsofts sekretess- och säkerhetsåtaganden, databehandlingsvillkor och GDPR-villkor för Microsoft-värdbaserade tjänster som kunder prenumererar på enligt ett volymlicensavtal. 
+
+
+### <a name="step-6-make-sure-your-subcontractors-respect-the-rules"></a>Steg 6: Se till att dina underleverantörer följer reglerna
+
+Om du underkontrakterar bearbetning av personuppgifter till ett annat företag använder du bara en tjänstleverantör som garanterar bearbetningen i enlighet med kraven i GDPR (till exempel säkerhetsåtgärder). 
+
+
+
+### <a name="step-7-assign-someone-to-oversee-personal-data-protection"></a>Steg 7: Tilldela någon att övervaka skyddet för personuppgifter
+ 
+För att bättre skydda personuppgifter kan organisationer behöva utse ett <b>Dataskyddsombud (DPO)</b>. Du kanske dock inte behöver utse en dataskyddsombud om bearbetning av personuppgifter inte är en viktig del av ditt företag eller om ditt företag är ett litet företag. Om ditt företag till exempel bara samlar in data om dina kunder för hemleverans bör du inte behöva utse ett DPO. Även om du behöver använda en DPO kan dessa uppgifter tilldelas till en befintlig anställd utöver hans/hennes andra uppgifter. Eller så kan du välja att anlita en extern konsult för den här tjänsten efter behov.
+
+Normalt behöver du inte utföra en [konsekvensbedömning avseende dataskydd](https://gdpr.eu/article-35-impact-assessment/). Detta är reserverat för företag som utgör en större risk för personuppgifter (till exempel om de utför en storskalig övervakning av ett offentligt tillgängligt område, till exempel videoövervakning).
+
+Om du är ett litet företag som hanterar anställdas löner och en lista över klienter behöver du vanligtvis inte göra en konsekvensbedömning avseende dataskydd.  
+ 
+
     
 ## <a name="common-small-business-questions-about-the-gdpr"></a>Vanliga frågor om GDPR för småföretagare
 
@@ -118,7 +216,7 @@ Om du samlar in uppgifter påverkas du i viss utsträckning av GDPR. GDPR använ
 
 Du måste se till att dina kunder, även de som du har haft i flera år, har gett sitt samtycke till att deras uppgifter används till marknadsföring. Kanske har du samlat in samtycke tidigare och har ett dokument som bevisar det. I så fall kan du fortsätta marknadsföringen. Om inte så måste du få behörighet från kunden till att fortsätta marknadsföringen till dem. Vanligtvis innebär detta att du skickar ett e-postmeddelande till kunderna där du ber dem besöka din webbplats och välja ett alternativ för att ge sitt samtycke till framtida e-postmeddelanden. 
   
-### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>Behöver jag bry mig om GDPR när jag rekryterar ny personal? Vad gäller för nuvarande anställda?
+### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>Behöver jag oroa mig för GDPR när jag rekryterar nya anställda? Hur är det med nuvarande anställda?
 
 GDPR påverkar inte bara kunddata, det omfattar anställdas personuppgifter också. Nya rekryteringar hittas ofta med hjälp av plattformar för sociala medier såsom LinkedIn. Se till att du inte lagrar potentiella rekryteringsdata utan deras uttryckliga samtycke.
   
@@ -143,14 +241,16 @@ Microsoft 365 för företag kan hjälpa dig med GDPR-processen på följande sä
     Med verktyg som granskningsloggar kan du spåra och rapportera dataflyttning. Rapporterna inkluderar klassificering av de data du samlar in och lagrar, vad du gör med all data och överföringar av data. 
     
 Kunder, anställda och klienter blir allt mer medvetna om vikten av datasekretess och förväntar sig nu att ett företag eller en organisation ska respektera den sekretessen. Med Microsoft 365 för företag får du verktyg för att uppnå och upprätthålla GDPR-efterlevnad utan stor omvälvning för företaget.
-  
+
+
+
 ## <a name="next-steps"></a>Nästa steg
 
 Här är några förslag på nästa steg du kan vidta för att förbereda dig för GDPR:
   
 - Utvärdera ditt GDPR-program med [checklistor för beredskap av ansvarsskyldighet](/compliance/regulatory/gdpr-arc).
     
-- Undersök [Microsoft 365 för företag](https://www.microsoft.com/microsoft-365/business) som en lösning för att uppnå och upprätthålla efterlevnaden av GDPR. 
+- Undersök [Microsoft 365 för företag](/microsoft-365/business) som en lösning för att uppnå och upprätthålla efterlevnaden av GDPR. 
    
 
 > [!IMPORTANT]

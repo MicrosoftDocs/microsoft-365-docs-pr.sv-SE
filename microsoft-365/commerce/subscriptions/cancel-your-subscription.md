@@ -19,14 +19,17 @@ ms.custom:
 search.appverid: MET150
 description: Om du har färre än 25 användarlicenser kan du avbryta utvärderingsversionen eller den betalda prenumerationen för Microsoft 365 för företag i Administrationscenter.
 ms.date: 04/08/2021
-ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5c4ce1c00bfde4a895710d737fab0836998836c6
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536124"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929461"
 ---
 # <a name="cancel-your-subscription"></a>Avbryt din prenumeration
+
+> [!IMPORTANT]
+> Den här artikeln gäller bara för Microsoft 365 för företag-prenumerationer. Om du har Microsoft 365 Family eller Privat läser du [Avbryta en Microsoft 365-prenumeration](https://support.microsoft.com/sv-SE/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b).
 
 *Berättigande:* Om du har färre än 25 licenser tilldelade till användare kan du när som helst avbryta din utvärderingsversion eller betalda prenumeration av Microsoft 365 för företag online i administrationscentret för Microsoft 365. Om du har fler än 25 licenser tilldelade till användare, minska det till färre än 25 eller [ring supporten för att avbryta din prenumeration](../../business-video/get-help-support.md).
 

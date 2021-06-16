@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Läs om hur du skapar anpassade typer av känslig information med Exact Data Match-baserad klassificering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6839401bc1dd00acc45992f902a6360eb7f20120
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 05d5889ba690bdf61fd51044b3c059f1476342af
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878202"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964662"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Skapa anpassade typer av känslig information med Exact Data Match-baserad klassificering
 
@@ -612,7 +612,7 @@ De här platserna har stöd för EDM-baserade typer av känslig information:
 - Microsoft Teams (konversationer)
 - DLP för SharePoint (filer)
 - DLP-principer för Microsoft Cloud App Security
-- Principer för automatisk etikett på serversidan – tillgängliga för kommersiella molnkunder <!--, UNCOMMENT THIS ON 6/15 and government cloud customers-->
+- Principer för automatisk märkning på serversidan – tillgängligt för kommersiella molnkunder och myndighetsmolnkunder
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>Skapa en DLP-princip med EDM
 

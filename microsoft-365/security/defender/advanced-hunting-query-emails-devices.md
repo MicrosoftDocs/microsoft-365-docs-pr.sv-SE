@@ -1,7 +1,7 @@
 ---
 title: Sök efter hot på enheter, e-postmeddelanden, appar och identiteter med avancerad sökning
 description: Studera vanliga scenarier för sökningar och exempelfrågor som täcker enheter, e-postmeddelanden, appar och identiteter.
-keywords: avancerad sökning, Office365-data, Windows-enheter, Office365-e-postmeddelanden normalisera, e-postmeddelanden, appar, identiteter, sökning efter hot, sökning efter cyberhot, frågor, telemetri, Microsoft 365, Microsoft 365 Defender
+keywords: avancerad sökning, Office365-data, Windows-enheter, Office365-e-postmeddelanden normalisera, e-postmeddelanden, appar, identiteter, sökning efter hot, sökning, sökning, frågor, telemetri, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8a811d60af281bb534776736e77c3eb54ab6a760
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aacd0745ff507356035f8f460ed2b4307e9da6ed
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932971"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964879"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Jaga efter hot på olika enheter, e-postmeddelanden, appar och identiteter
 
@@ -35,7 +35,7 @@ ms.locfileid: "51932971"
 **Gäller för:**
 - Microsoft 365 Defender
 
-[Med avancerad](advanced-hunting-overview.md) sökning i Microsoft 365 Defender kan du proaktivt leta efter hot i:
+[Med avancerad](advanced-hunting-overview.md) sökning Microsoft 365 Defender du proaktivt leta efter hot i:
 - Enheter som hanteras av Microsoft Defender för Endpoint
 - E-postmeddelanden behandlas av Microsoft 365
 - Aktiviteter i molnappen, autentiseringshändelser och domänkontrollanter spåras av Microsoft Cloud App Security och Microsoft Defender för identitet
@@ -100,6 +100,90 @@ DeviceInfo
 | join AlertInfo on AlertId
 | project AlertId, Timestamp, Title, Severity, Category 
 ```
+
+
+### <a name="get-file-event-information"></a>Hämta filhändelseinformation
+
+Använd följande fråga för att få information om filrelaterade händelser. 
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceFileEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="get-network-event-information"></a>Hämta information om nätverkshändelse
+
+Använd följande fråga för att få information om nätverksrelaterade händelser.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-agent-version-information"></a>Hämta versionsinformation för enhetsagenter
+
+Använd följande fråga för att köra versionen av agenten på en enhet.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="example-query-for-macos-devices"></a>Exempelfråga för macOS-enheter
+
+Använd följande exempelfråga för att se alla enheter med macOS med en version som är äldre än Catalina.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OSPlatform == "macOS" and  OSVersion !contains "10.15" and OSVersion !contains "11."
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-status-info"></a>Hämta information om enhetsstatus
+
+Använd följande fråga för att få status för en enhet. I följande exempel kontrollerar frågan om enheten är onboarded.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OnboardingStatus != "Onboarded"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
 
 ## <a name="hunting-scenarios"></a>Scenarier för scenarier
 

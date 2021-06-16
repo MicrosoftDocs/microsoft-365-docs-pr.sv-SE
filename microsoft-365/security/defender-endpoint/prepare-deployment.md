@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 7841197594941354b21bd2104cd27ef37a1a25c9
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925657"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964602"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Förbereda Microsoft Defender för distribution av Endpoint
 
@@ -135,6 +135,7 @@ Välj komponenten i Defender för slutpunkt som ska användas och ta bort de som
 
 ## <a name="next-step"></a>Nästa steg
 
-|||
-|:-------|:-----|
-|![Fas 2: Installation](images/setup.png) <br>[Fas 2: Installation](production-deployment.md) | Konfigurera Microsoft Defender för distribution av Slutpunkt |
+
+![Fas 2: Installation](images/setup.png) <br>[Fas 2: Installation](production-deployment.md) 
+ 
+Konfigurera Microsoft Defender för distribution av Slutpunkt 

@@ -17,21 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Kvarhållningsprinciper för granskningsloggar är en del av de nya funktionerna för avancerad granskning i Microsoft 365. Med en kvarhållningsprincip för granskningsloggar kan du ange hur lång tid granskningsloggar ska behållas i organisationen.
-ms.openlocfilehash: b3534f5d0572b2656711850b483651270b9e3315
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 8df2e240440ad33ac82d926b63cc495d1aaef692
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822147"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925157"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Hantera kvarhållningsprinciper för granskningsloggar
 
 Du kan skapa och hantera kvarhållningsprinciper för granskningsloggar i Säkerhets- och efterlevnadscenter. Kvarhållningsprinciper för granskningsloggar är en del av de nya funktionerna för avancerad granskning i Microsoft 365. Med en kvarhållningsprincip för granskningsloggar kan du ange hur lång tid granskningsloggar ska behållas i organisationen. Du kan behålla granskningsloggar i upp till 10 år. Du kan skapa principer baserat på följande villkor:
 
 - Alla aktiviteter i en eller flera Microsoft 365-tjänster
-
 - Specifika aktiviteter (i en Microsoft 365-tjänst) som utförs av alla användare eller av specifika användare
-
 - En prioritetsnivå som anger vilken princip som har företräde om det finns flera principer i organisationen
 
 ## <a name="default-audit-log-retention-policy"></a>Standardkvarhållningsprincip för granskningsloggar
@@ -53,7 +51,7 @@ Avancerad granskning i Microsoft 365 tillhandahåller en standardkvarhållningsp
 
 ## <a name="create-an-audit-log-retention-policy"></a>Skapa en kvarhållningsprincip för granskningsloggar
 
-1. Gå till [https://compliance.microsoft.com](https://compliance.microsoft.com) och logga in med ett användarkonto som har tilldelats rollen Organisationskonfiguration på sidan Behörigheter i Säkerhets- och efterlevnadscenter.
+1. Gå till <https://compliance.microsoft.com> och logga in med ett användarkonto som har tilldelats rollen Organisationskonfiguration på sidan Behörigheter i Säkerhets- och efterlevnadscenter.
 
 2. I det vänstra fönstret i Microsoft 365 Efterlevnadscenter klickar du på **Visa alla** och sedan på **Granskning**.
 
@@ -61,7 +59,7 @@ Avancerad granskning i Microsoft 365 tillhandahåller en standardkvarhållningsp
 
 4. Klicka på **Skapa kvarhållningsprincip för granskning** och fyll sedan i följande fält på den utfällbara sidan:
 
-    ![Den utfällbara sidan Ny kvarhållningsprincip för granskning](../media/CreateAuditLogRetentionPolicy.png)
+   ![Den utfällbara sidan Ny kvarhållningsprincip för granskning](../media/CreateAuditLogRetentionPolicy.png)
 
    1. **Principnamn:** Namnet på kvarhållningsprincipen för granskningsloggar. Det här namnet måste vara unikt i din organisation och kan inte ändras när principen har skapats.
 
@@ -70,10 +68,8 @@ Avancerad granskning i Microsoft 365 tillhandahåller en standardkvarhållningsp
    3. **Användare:** Välj en eller flera användare som principen ska gälla för. Om du lämnar rutan tom gäller principen för alla användare. Om du lämnar **Posttyp** tom måste du välja en användare.
 
    4. **Posttyp:** Den granskningsposttyp som principen gäller för. Om du lämnar egenskapen tom måste du välja en användare i rutan **Användare**. Du kan välja en enskild posttyp eller flera posttyper:
-
-   - Om du väljer en enskild posttyp visas fältet **Aktiviteter** dynamiskt. Du kan använda listrutan för att välja aktiviteter från den valda posttypen som principen ska gälla för. Om du inte väljer specifika aktiviteter gäller principen för alla aktiviteter för den valda posttypen.
-
-   - Om du väljer flera posttyper kan du inte välja aktiviteter. Principen gäller för alla aktiviteter för de valda posttyperna.
+      - Om du väljer en enskild posttyp visas fältet **Aktiviteter** dynamiskt. Du kan använda listrutan för att välja aktiviteter från den valda posttypen som principen ska gälla för. Om du inte väljer specifika aktiviteter gäller principen för alla aktiviteter för den valda posttypen.
+      - Om du väljer flera posttyper kan du inte välja aktiviteter. Principen gäller för alla aktiviteter för de valda posttyperna.
 
    5. **Varaktighet:** Hur lång tid granskningsloggar som uppfyller principens villkor ska behållas.
 
@@ -81,9 +77,9 @@ Avancerad granskning i Microsoft 365 tillhandahåller en standardkvarhållningsp
 
 5. Klicka på **Spara** för att skapa den nya kvarhållningsprincipen för granskningsloggar.
 
-   Den nya principen visas i listan på fliken **Kvarhållningsprinciper för granskning**.
+Den nya principen visas i listan på fliken **Kvarhållningsprinciper för granskning**.
 
-## <a name="manage-audit-log-retention-policies"></a>Hantera kvarhållningsprinciper för granskningsloggar
+## <a name="manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center"></a>Hantera kvarhållningsprinciper i Microsoft 365 Efterlevnadscenter
 
 Kvarhållningsprinciper för granskningsloggar visas på fliken **Kvarhållningsprinciper för granskning** (kallas även *instrumentpanelen*). Du kan använda instrumentpanelen för att visa, redigera och ta bort kvarhållningsprinciper för granskning.
 
@@ -102,9 +98,11 @@ Du kan också välja en princip för att visa dess inställningar på den utfäl
 
 Om du vill redigera en princip markerar du den för att visa den utfällbara sidan. Du kan ändra en eller flera inställningar och sedan spara ändringarna.
 
-
 > [!IMPORTANT]
-> Om du använder cmdleten **New-UnifiedAuditLogRetentionPolicy** kan du skapa en kvarhållningsprincip för granskningsloggar för posttyper eller aktiviteter som inte är tillgängliga i verktyget **Skapa kvarhållningsprincip för granskning** på instrumentpanelen. I det här fallet kan du inte redigera principen (till exempel ändra kvarhållningens varaktighet eller lägga till och ta bort aktiviteter) på instrumentpanelen **Kvarhållningsprinciper för granskning**. Du kan bara visa och ta bort principen i efterlevnadscentret. För att redigera principen måste du använda cmdleten [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) i Säkerhets- och efterlevnadscenter PowerShell.<br/><br/>**Tips:** Ett meddelande visas längst upp på den utfällbara sidan för principer som måste redigeras med PowerShell.
+>
+> Om du använder cmdleten **New-UnifiedAuditLogRetentionPolicy** kan du skapa en kvarhållningsprincip för granskningsloggar för posttyper eller aktiviteter som inte är tillgängliga i verktyget **Skapa kvarhållningsprincip för granskning** på instrumentpanelen. I det här fallet kan du inte redigera principen (till exempel ändra kvarhållningens varaktighet eller lägga till och ta bort aktiviteter) på instrumentpanelen **Kvarhållningsprinciper för granskning**. Du kan bara visa och ta bort principen i efterlevnadscentret. För att redigera principen måste du använda cmdleten [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) i Säkerhets- och efterlevnadscenter PowerShell.>
+>
+> **Tips:** Ett meddelande visas längst upp på den utfällbara sidan för principer som måste redigeras med PowerShell.
 
 ### <a name="delete-policies-in-the-dashboard"></a>Ta bort principer på instrumentpanelen
 
@@ -120,20 +118,17 @@ Följ de här anvisningarna för att skapa en kvarhållningsprincip för granskn
 
 1. [Anslut till Säkerhets- och efterlevnadscenter PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-2. Kör följande kommando för att skapa en kvarhållningsprincip för granskningsloggar.
+2. Kör följande kommando för att skapa en kvarhållningsprincip för granskningsloggar:
 
    ```powershell
    New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TenYears -Priority 100
    ```
 
-    I det här exemplet skapas en kvarhållningsprincip för granskningsloggar med namnet "Microsoft Teams Audit Policy" med dessa inställningar:
+   I det här exemplet skapas en kvarhållningsprincip för granskningsloggar med namnet "Microsoft Teams Audit Policy" med dessa inställningar:
 
    - En beskrivning av principen.
-
    - Behåller alla Microsoft Teams-aktiviteter (så som definieras av parametern *RecordType*).
-
    - Behåller Microsoft Teams-granskningsloggar i 10 år.
-
    - Prioriteten 100.
 
 Här är ett annat exempel på hur du skapar en kvarhållningsprincip för granskningsloggar. Den här principen behåller granskningsloggar för aktiviteten "Användare loggade in" i sex månader för användaren admin@contoso.onmicrosoft.com.
@@ -169,8 +164,12 @@ Använd cmdleten [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exch
 
 Som tidigare beskrivits behålls granskningsposter för åtgärder i Azure Active Directory, Exchange Online, SharePoint Online och OneDrive för företag i ett år som standard. I följande tabell visas alla posttyper (för var och en av de här tjänsterna) som ingår i standardkvarhållningsprincipen för granskningsloggar. Det innebär att granskningsloggar för en åtgärd med den här posttypen behålls i ett år såvida inte en anpassad kvarhållningsprincip för granskningsloggar har företräde för en viss posttyp, åtgärd eller användare. Uppräkningsvärdet (som visas som värdet för egenskapen RecordType i en granskningspost) för varje posttyp visas inom parentes.
 
-|AzureActiveDirectory |Exchange  |SharePoint eller OneDrive|
-|:---------|:---------|:---------|
+<br>
+
+****
+
+|AzureActiveDirectory|Exchange |SharePoint eller OneDrive|
+|---|---|---|
 |AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
 |AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|
 |AzureActiveDirectoryStsLogon (15)|Kampanj (62)|Projekt (35)|

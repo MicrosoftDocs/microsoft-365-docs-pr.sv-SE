@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 05/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 34f423222068236271afdda13afb95cffa58b709
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 96e4dab96f8ceb149916c908991079bb2dfa866f
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683817"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964903"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Konfigurera alternativ för genomsökning i Microsoft Defender Antivirus
 
@@ -31,14 +31,11 @@ ms.locfileid: "52683817"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Använda Microsoft Intune för att konfigurera skanningsalternativ
 
-Se följande resurser: 
-
-- [Konfigurera inställningar för enhetsbegränsning i Microsoft Intune](/intune/device-restrictions-configure) 
-- [Microsoft Defender Antivirus för enhetsbegränsningar för Windows 10 i Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Mer information finns i [Konfigurera inställningar för](/intune/device-restrictions-configure) enhetsbegränsningar i Microsoft Intune och Microsoft Defender Antivirus för enhetsbegränsningar för Windows 10 i [Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus). 
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Använda Microsoft Endpoint Manager för att konfigurera skanningsalternativ
 
-Se [Hur du skapar och distribuerar principer för program mot skadlig programvara: Genomsökningsinställningar](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
+Mer information om konfigurering av Microsoft Endpoint Manager (current branch) finns i Skapa och distribuera principer för program mot skadlig [programvara: Genomsökningsinställningar](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>Konfigurera genomsökningsalternativ med grupprinciper
 
@@ -49,6 +46,7 @@ Se [Hur du skapar och distribuerar principer för program mot skadlig programvar
 3. I **redigeraren för grupprinciphantering går** du till **Datorkonfiguration och** klickar på **Administrativa mallar**.
 
 4. Expandera trädet till **Windows komponenter** Microsoft Defender Antivirus och välj sedan en plats (referera till  >  Inställningar och [platser](#settings-and-locations) i den här artikeln).
+
 
 5. Redigera principobjektet. 
 
@@ -69,13 +67,15 @@ Se [Hur du skapar och distribuerar principer för program mot skadlig programvar
 | Ange maximal processorbelastning (i procent) under en genomsökning. <p> **Skanna**  >  **Ange maximal procentandel av belastningen på processorerna vid en genomsökning** | 50 |  `-ScanAvgCPULoadFactor` <p>**OBS!** Maxbelastningen på processorerna är inte en svår gräns, men det är bra att se till att sökmotorn inte överskrider det högsta medelvärdet. Genomsökningar som körs manuellt ignorerar den här inställningen och körs utan några CPU-gränser. |
 | Ange den maximala storleken (i kilobyte) för arkivfiler som ska skannas. <p> **Skanna**  >  **Ange den maximala storleken på de arkivfiler som ska genomsökas** | Ingen gräns | Kan inte användas <p>Standardvärdet 0 gäller ingen gräns |
 | Konfigurera låg CPU-prioritet för schemalagda genomsökningar <p> **Skanna**  >  **Konfigurera låg CPU-prioritet för schemalagda genomsökningar** | Inaktiverad | Kan inte användas |
+
  
 > [!NOTE]
 > Om realtidsskydd är aktiverat genomsöks filer innan de används och körs. Skanningsomfånget inkluderar alla filer, inklusive filer påmonterade flyttbara media, t.ex. USB-enheter. Om enheten som utför genomsökningen har realtidsskydd eller skydd vid åtkomst aktiverat inkluderar genomsökningen även nätverksresurser.
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>Använda PowerShell för att konfigurera skanningsalternativ
 
-Se följande resurser:
+
+Mer information om hur du använder PowerShell med Microsoft Defender Antivirus finns i
 
 - [Hantera Microsoft Defender Antivirus med PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Defender-cmdlets](/powershell/module/defender/)
@@ -99,7 +99,13 @@ Om Microsoft Defender Antivirus upptäcker ett hot i ett e-postmeddelande visas 
 - Ämne för e-post
 - Namn på bifogad fil
 
+
+## <a name="scanning-mapped-network-drives"></a>Skanna mappade nätverksenheter
+
+I alla operativsystem skannas endast de nätverksenheter som mappas på systemnivå. Mappade nätverksenheter på användarnivå genomsöks inte. Mappade nätverksenheter på användarnivå är de enheter som en användare mappar i sessionen manuellt och med sina egna autentiseringsuppgifter.
+
 ## <a name="see-also"></a>Se även
+
 
 - [Anpassa, initiera och granska resultaten av Microsoft Defender Antivirus genomsökningar och åtgärder](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Konfigurera och kör genomsökningar på begäran för Microsoft Defender Antivirus](run-scan-microsoft-defender-antivirus.md)

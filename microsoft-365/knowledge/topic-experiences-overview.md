@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Översikt över Viva Topics.
-ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908334"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950029"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Översikt över Microsoft Viva-ämnen 
 
@@ -103,7 +103,7 @@ När du använder Viva Topics i Microsoft 365-miljön har användarna följande 
 
 - Kunskapshanterare: Användare som vägleder ämnen genom ämnets livscykel. Knowledge managers use the Manage topics page in the topic center to confirm AI-suggested topics, remove topics that are no longer relevant, as edit **existing topics** or create new ones, and are the only users who have access to it. Kunskapsadministratörer tilldelar behörighet som kunskapshanterare till användare via inställningarna för Viva Topics i Administrationscenter för Microsoft 365. 
 
-- Kunskapsadministratörer: Administratörer konfigurera Viva-ämnen och hantera det via administratörskontrollerna i Microsoft 365 administrationscenter. En global Microsoft 365- eller SharePoint-administratör kan för närvarande fungera som kunskapsadministratör.
+- Kunskapsadministratörer: Administratörer ställer in Viva-ämnen och hanterar det via administratörskontrollerna i Administrationscenter för Microsoft 365. En global Microsoft 365- eller SharePoint-administratör kan för närvarande fungera som kunskapsadministratör.
 
 Mer information finns i [Viva Topics-roller.](topic-experiences-roles.md)
 
@@ -123,7 +123,7 @@ Mer information finns i [Hantera ämnen i ämnescentret.](manage-topics.md)
 
 ## <a name="admin-controls"></a>Administratörskontroller
 
-Med administratörskontroller i Microsoft 365 kan du hantera Viva Topics. De gör det möjligt för en global Microsoft 365- eller SharePoint-administratör att:
+Administratörskontroller i Administrationscenter för Microsoft 365 du kan hantera Viva Ämnen. De gör det möjligt för en global Microsoft 365- eller SharePoint-administratör att:
 
 - Kontrollera vilka användare i organisationen som får se ämnen på moderna sidor i SharePoint eller i SharePoint-sökresultat.
 - Kontrollera vilka SharePoint-webbplatser som ska crawlas för att identifiera ämnen.
@@ -141,8 +141,6 @@ AI kommer kontinuerligt att arbeta med att ge förslag för att förbättra dina
 Användare med behörighet att redigera eller skapa ämnen kan uppdatera ämnessidor direkt om de vill göra korrigeringar eller lägga till ytterligare information. De kan också lägga till nya ämnen som AI inte kunde identifiera. Om det finns tillräckligt med information om dessa manuellt tillagda ämnen, och AI kan identifiera den här typen av ämne, kan ytterligare förslag från AI förbättra dessa manuellt tillagda ämnen.
 
 Användare som du tillåter åtkomst till för att se ämnen i sitt dagliga arbete kan bli tillfrågade om ämnet var användbart för dem. Systemet ser på svaren och använder dem för att förbättra markering av ämnet, och hjälpa dig att avgöra vad som visas i ämnessammanfattningar och i ämnesinformation.
-
-Dessutom kan användare med rätt behörighet tagga objekt, till exempel Yammer-konversationer som är relevanta för ett ämne, och lägga till dem i ett visst ämne. 
 
 Mer information finns i avsnittet [Ämnesidentifiering och läroplan.](./topic-experiences-discovery-curation.md)
 
