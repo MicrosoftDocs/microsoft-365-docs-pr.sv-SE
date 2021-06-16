@@ -20,12 +20,12 @@ ms.custom:
 description: I det här avsnittet får du hjälp med den rekommenderade konfigurationen för inställningar för hela klientorganisationen som påverkar säkerheten Microsoft 365 miljön.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd9d07388386ecc3d5877736e588393cdc38e7bb
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 623ea316d1ad92790b8818504970a1d35401f617
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879222"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929581"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurera din Microsoft 365 för ökad säkerhet
 
@@ -63,9 +63,9 @@ I Microsoft 365 Defender-portalen finns funktioner som skyddar din miljö. Den i
 > [!NOTE]
 > För distributioner av SPF som inte är standard, hybriddistributioner och felsökning: Hur [Microsoft 365 använder Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md)för att förhindra förfalskning.
 
-## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>Visa instrumentpaneler och rapporter i Säkerhets- & Säkerhets- och efterlevnadscenter
+## <a name="view-dashboards-and-reports-in-the-microsoft-365-defender-portal"></a>Visa instrumentpaneler och rapporter i Microsoft 365 Defender-portalen
 
-Besök de här rapporterna och instrumentpanelerna om du vill veta mer om din miljö. Data i de här rapporterna blir rikare när organisationen använder Office 365 tjänster. För tillfället bör du känna till vad du kan övervaka och vidta åtgärder för. Mer information finns i [Rapporter i Säkerhets- & Kompatibilitetscenter.](../../compliance/reports-in-security-and-compliance.md)
+Besök de här rapporterna och instrumentpanelerna om du vill veta mer om din miljö. Data i de här rapporterna blir rikare när organisationen använder Office 365 tjänster. För tillfället bör du känna till vad du kan övervaka och vidta åtgärder för. Mer information finns i [Rapporter på Microsoft 365 Defender-portalen](../../compliance/reports-in-security-and-compliance.md).
 
 <br>
 

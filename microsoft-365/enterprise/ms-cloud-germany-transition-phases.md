@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i den nya tyska datacenterregion.
-ms.openlocfilehash: 3a5b95bac74ae405f4e1d6fa91ba4ab51e4a9d05
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: c80a7cfc4f930011f65a07c4b46cdf4921766c34
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796048"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930457"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
@@ -102,8 +102,6 @@ Om uppgiften inte slutförs kan det leda till hybridförfrågningar om ledig/upp
 
 **Gäller för:** Alla kunder med Office 365 klientorganisation i Microsoft Cloud Deutschland (MCD)
 
-Partner Microsoft Cloud Deutschland-klientorganisationen kommer inte att migreras. Kunder som använder CSP migreras till Office 365-tjänster enligt den nya Office 365-tjänstklientorganisationen för samma partner. Efter kundmigrering kan partnern hantera den här kunden endast Office 365 klientorganisationen för tjänster.
-
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
 | Prenumerationer överförs| Microsoft Cloud Deutschland-prenumerationen migreras till motsvarande prenumeration Office 365 Globala tjänster. <ul><li>Erbjudandet Office 365 globala tjänster för prenumerationen definieras av Microsoft (kallas även _offermappning)._</li><li> Motsvarande Office 365 globala tjänstprenumerationer köps i den globala Office 365-instansen för de överförda Microsoft Cloud Deutschland-prenumerationerna.</li><li>Äldre Microsoft Cloud Deutschland-prenumerationer tas bort från klientorganisationen för Office 365-tjänster när den har slutförts.</li></ul>| <ul><li>Ändringar av befintliga prenumerationer kommer att blockeras (t.ex. inga ändringar av nya prenumerationer eller antal platser) under den här fasen.</li><li>Ändringar av licenstilldelning blockeras.</li><li>När prenumerationsmigrering är slutförd kommer både Office 365-tjänster och Microsoft Cloud Deutschland-prenumerationer att visas i Office 365 Admin-portalen med statusen Microsoft Cloud Deutschland-prenumerationer som _återkallade._ </li><li>Alla kundprocesser som är beroende av Microsoft Cloud Deutschland-prenumerationer eller SKU GUID kommer att brytas och måste revideras med Office 365-erbjudandet. </li><li>Nya prenumerationer i Office 365-tjänsterna köps med den nya perioden (per månad/kvartal/år) och kunden får en prorerad återbetalning för det oanvända saldot i Microsoft Cloud Deutschland-prenumerationen. </li></ul> |
@@ -116,6 +114,8 @@ Partner Microsoft Cloud Deutschland-klientorganisationen kommer inte att migrera
 
 Mellan fas 2 och fas 3 är partnerportalen kanske inte tillgänglig. Under tiden kanske partnern inte kan komma åt klientorganisationens information på partnerportalen. Eftersom varje migrering är olika kan varaktigheten för tillgänglighet vara i timmar.
 
+Mer information för molnlösningsleverantörer finns tillgänglig vid [migrering av partnerklientorganisationen.](ms-cloud-germany-transition-add-csp.md#partner-tenant-migration)
+
 
 ## <a name="phase-4-sharepoint-online"></a>Fas 4: SharePoint Online
 
@@ -126,7 +126,7 @@ Om du fortfarande använder SharePoint 2013-arbetsflöden ska du begränsa anvä
 | Steg | Beskrivning | Påverkan |
 |:-------|:-----|:-------|
 | SharePoint och OneDrive övergångar | SharePoint Online och OneDrive för företag migreras från Microsoft Cloud Deutschland till Office 365 globala tjänster i den här fasen.<br><ul><li>Befintliga Microsoft Cloud Deutschland-WEBBADRESSer bevaras (till exempel `contoso.sharepoint.de` ).</li><li>Befintliga webbplatser bevaras.</li><li>Klientbaserade autentiseringstoken som utfärdats av STS (Security Token Service) i Microsoft Cloud Deutschland eller Office 365 Global services-instansen är giltiga under övergången.</li></ul>|<ul><li>Innehållet kommer att vara skrivskyddat under två korta perioder under migreringen. Under tiden kan du förvänta dig en banderoll i SharePoint.</li><li>Sökindexet bevaras inte, och det kan ta upp till tio dagar att återskapa det.</li><li>SharePoint Online- OneDrive för företag innehåll skrivskyddas under två korta perioder under migreringen. Under den här tiden visas en banderoll som säger att du inte kan redigera innehåll.</li><li>När migreringen SharePoint Online är slutförd kanske sökresultaten för SharePoint Online och OneDrive för företag vara otillgängliga medan indexet är återskapat. Under den här perioden kan det hända att sökfrågor inte returnerar fullständiga resultat. Funktioner som är beroende av sökindex, t.ex. SharePoint onlinenyheter, kan påverkas när indexeringen slutförs.</li><li>SharePoint 2013-arbetsflöden bryts under migreringen och måste publiceras på nytt efter migreringen.</li></ul>
-|**SPO-administratör:** Publicera om SharePoint 2013-arbetsflöden| En SharePoint Online-administratör publicerar om SharePoint 2013-arbetsflödena efter migreringen.|SharePoint 2013-arbetsflöden är tillgängliga.
+|**SPO-administratör:** Publicera om SharePoint 2013-arbetsflöden| En SharePoint Online-administratör publicerar om SharePoint 2013-arbetsflödena efter migreringen.| Det här är en åtgärd som krävs. Om du inte gör det kan det leda till förvirring hos användarna, supportsamtal och minskad produktivitet.
 |**PowerShell-användare:** Uppdatera till ny modul| Alla användare av SharePoint Online PowerShell-modulen måste uppdatera modulen/Microsoft.SharePointOnline.CSOM till version 16.0.20717.12000 eller senare när SharePoint Online-migreringen har slutförts. Slutförande meddelas i meddelandecentret.| SharePoint Online via PowerShell eller klientobjektmodellen kommer inte längre att misslyckas.
 ||||
 
@@ -189,6 +189,8 @@ Ytterligare överväganden:
 - Användare av Outlook Web App som har åtkomst till en delad postlåda i en annan miljö (till exempel en användare i MCD-miljön har åtkomst till en delad postlåda i den globala miljön) uppmanas att autentisera en andra gång. Användaren måste först autentisera och komma åt sin postlåda i `outlook.office.de` och sedan öppna den delade postlådan som finns i `outlook.office365.com` . De måste autentiseras en andra gång när de får åtkomst till de delade resurser som finns i den andra tjänsten.
 - För befintliga Microsoft Cloud Deutschland-kunder eller användare som är under övergång kan det hända att en delad postlåda läggs till i Outlook med Arkiv **> Info >** Lägg till konto . Visa kalenderbehörigheter kan misslyckas (Outlook-klienten försöker använda Rest `https://outlook.office.de/api/v2.0/Me/Calendars` API). Kunder som vill lägga till ett konto för att visa kalenderbehörigheter kan lägga till registernyckeln enligt beskrivningen i Ändringar i användarupplevelsen för delning av en kalender i [Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) för att säkerställa att den här åtgärden lyckas. Den här registernyckeln kan distribueras i hela organisationen med hjälp av Grupprincip.
 - Alla kunder som använder en aktiv Exchange-hybridkonfiguration kan inte flytta postlådor från en lokal Exchange Server till Exchange Online, varken till Microsoft Cloud Deutschland eller till den nya datacenterområdet i Tyskland. Kunder måste säkerställa att löpande postlådeflyttningar har slutförts före fas 5 och återupptas efter den här fasen.
+- Att `Test-MigrationServerAvailabiilty` köra en PowerShell-cmdlet under migreringen av Exchange från Microsoft Cloud Deutschland till Office 365 kanske inte fungerar. Men det fungerar korrekt när migreringen är klar.
+- Om klienter får problem med autentiseringsuppgifter eller auktorisering efter att postlådorna migrerats anger du de lokala administratörsautentiseringsuppgifterna på nytt i migreringsslutpunkten genom att köra , eller genom att ange samma med hjälp av Exchange På Kontrollpanelen `Set-MigrationEndpoint -Identity <endpointName> -Credential $(Get-Credential)` (ECP).
 - Se till att alla användare som använder äldre protokoll (POP3/IMAP4/SMTP) för sina enheter är redo att ändra slutpunkterna i klienten när deras [Exchange-postlåda](ms-cloud-germany-transition-add-pre-work.md#exchange-online)har flyttats till den nya tyska datacenterområdet enligt beskrivningen i anvisningarna före migreringen för Exchange Online.
 - Schemaläggning Skype för företag möten i Outlook Web App inte längre tillgängligt efter att postlådan har migrerats. Om det behövs måste användarna använda Outlook stället.
 
@@ -315,6 +317,11 @@ Microsoft Azure måste dina kunder övergå till sina Azure-arbetsbelastningar e
 | Uppdatera Slutpunkter för Azure AD-program | Du måste uppdatera slutpunkter för autentisering, Azure Active Directory (Azure AD) Graph och MS Graph för dina program till slutpunkterna för Microsoft Worldwide-tjänsten. | Efter migreringen 30 dagar slutar Microsoft Cloud Deutschland-slutpunkterna att respektera förfrågningar. klient- eller programtrafiken misslyckas. |
 | Migrera Azure-arbetsbelastningar | Azure-tjänstkunder måste tillhandahålla nya globala prenumerationer för Azure-tjänster och utföra migrering enligt [Azure-migreringsspelboken.](/azure/germany/germany-migration-main) | Vid fullständig övergång till den globala tjänsten (fas 10) kommer kunderna inte längre att kunna komma åt Azure-arbetsbelastningar via Microsoft Cloud Deutschland Azure-portalen. |
 ||||
+
+**Gäller för:** Kunder med Azure AD registrerade eller anslutna enheter
+
+När fas 9 har slutförts måste Azure AD-registrerade och kopplade enheter vara anslutna till den överkopplade Azure AD-instansen i den nya tyska datacenterområdet.
+Enheter som inte åter är anslutna till Azure AD kanske inte längre fungerar i slutet av fas 10. Detaljerade anvisningar och mer information finns i den [ytterligare informationen om enheter.](ms-cloud-germany-transition-add-devices.md)
 
 ### <a name="azure-ad-connect"></a>Azure AD-Anslut
 **Gäller för:** Alla kunder synkroniserar identiteter med Azure AD Connect

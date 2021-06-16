@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844880"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929701"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender
 
@@ -334,6 +334,8 @@ Anvisningarna nedan ger vägledning för följande scenario:
 - Enheten stängs av eller startas om innan slutanvändaren loggar in första gången
 - I det här scenariot startar INTE SENSE-tjänsten automatiskt även om onboarding-paketet har distribuerats
 
+<div class="alert"><b>OBS!</b> Användarens inloggning efter OOBE krävs inte längre för att SENSE-tjänsten ska starta med följande eller nyare Windows-versioner: Windows 10, version 1809 eller Windows Server 2019 med samlad uppdatering [från den 22 april 2021](https://support.microsoft.com/kb/5001384) </br> Windows 10, version 1909 med samlad uppdatering i april [2021](https://support.microsoft.com/kb/5001396) </br> Windows 10, version 2004/20H2 med samlad [uppdatering för april 28 2021](https://support.microsoft.com/kb/5001391) </div> 
+<br></br>
 > [!NOTE]
 > Följande steg är bara relevanta när du använder Microsoft Endpoint Configuration Manager. Mer information om onboarding med hjälp Microsoft Endpoint Configuration Manager finns i [Microsoft Defender för Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 

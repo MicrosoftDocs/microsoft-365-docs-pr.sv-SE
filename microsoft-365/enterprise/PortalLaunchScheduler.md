@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: I den här artikeln beskrivs hur du kan starta portalen med hjälp av portalstartschemaläggeren
-ms.openlocfilehash: bf01f6ae93b424543a6a509f89961a1b7a0c9ad7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb092ea2500aaa139a34e511d224ec4419e04cb5
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841672"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930265"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Starta portalen med hjälp SharePoint- eller portalstartschemaläggeren
 
@@ -116,7 +116,10 @@ Tidigare kunde portalstarter bara schemaläggas via SharePoint PowerShell. Nu ha
 7. Bestäm vilka som behöver visa webbplatsen direkt och ange sin information i fältet **Användare undantas från vågor.** Dessa användare utesluts från vågor och omdirigeras inte före, under eller efter lanseringen.
 
     > [!NOTE]
-    > Upp till 50 distinkta användare eller säkerhetsgrupper max kan läggas till. Använd säkerhetsgrupper när fler än 50 personer behövs för att få åtkomst till portalen innan vågorna ska starta.
+    > Upp till 50 distinkta användare eller säkerhetsgrupper max kan användas under hela lanseringen. Varje start är oberoende av varandra, så om du schemalägger en lansering på en annan portal kan du använda upp till 50 användare/säkerhetsgrupper för den lanseringen. Dessutom kan du använda upp till 20 distinkta användare eller säkerhetsgrupper per omgång. 
+
+>Schemaläggaren för portalstart har stöd för säkerhetsgrupper och e-postaktiverade säkerhetsgrupper. 
+
 
 8. Bekräfta portalstartinformationen och välj **Schemalägg**. När lanseringen har schemalagts måste ändringar på startsidan för SharePoint-portalen få ett felfritt diagnostikresultat innan portalstarten återupptas.
 

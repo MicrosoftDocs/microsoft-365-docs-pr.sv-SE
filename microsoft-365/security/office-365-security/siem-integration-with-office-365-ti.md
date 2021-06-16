@@ -19,12 +19,12 @@ description: Integrera organisationens SIEM-server med Microsoft Defender för O
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca8f86c831df16568ae569e7b21c7e0a33475948
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f3d6bbacb4a64060ecd03cbb28eee3256f41827e
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207047"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929785"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM-integrering med Microsoft Defender för Office 365
 
@@ -67,7 +67,7 @@ I följande tabell sammanfattas värdena för **AuditLogRecordType** som är rel
 |
 
 > [!IMPORTANT]
-> Du måste vara global administratör eller ha säkerhetsadministratörsrollen tilldelad till Säkerhets- och &-efterlevnadscenter för att konfigurera SIEM-integrering med Microsoft Defender för Office 365.
+> Du måste vara global administratör eller ha säkerhetsadministratörsrollen tilldelad till Microsoft 365 Defender-portalen för att konfigurera SIEM-integrering med Microsoft Defender för Office 365.
 >
 > Granskningsloggning måste vara aktiverad i Microsoft 365 miljö. Om du behöver hjälp med detta kan du [gå till Aktivera eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)
 

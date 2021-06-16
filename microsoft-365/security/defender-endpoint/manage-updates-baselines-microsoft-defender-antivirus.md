@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/09/2021
-ms.openlocfilehash: 05b2b2af87e423058d18651571d52a97ac387506
-ms.sourcegitcommit: 3584c1fe59d12512d67faf3efc955e1d67e2baa0
+ms.date: 06/14/2021
+ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52862153"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929449"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer
 
@@ -31,17 +31,13 @@ ms.locfileid: "52862153"
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender Antivirus
 
-Det finns två typer av uppdateringar som är relaterade till Microsoft Defender Antivirus uppdateringar:
+Att Microsoft Defender Antivirus uppdaterade är viktigt för att säkerställa att dina enheter har den senaste tekniken och funktionerna som behövs för att skydda mot nya tekniker för skadlig programvara och attack. Uppdatera antivirusskyddet, även om det Microsoft Defender Antivirus i passiv [form.](microsoft-defender-antivirus-compatibility.md) Det finns två typer av uppdateringar som är relaterade till Microsoft Defender Antivirus uppdateringar:
 
 - Säkerhetsintelligensuppdateringar
 - Produktuppdateringar
 
-> [!IMPORTANT]
-> Att Microsoft Defender Antivirus uppdaterade är viktigt för att säkerställa att dina enheter har den senaste tekniken och funktionerna som behövs för att skydda mot nya tekniker för skadlig programvara och attack.
-> 
-> Se till att uppdatera antivirusskyddet även om Microsoft Defender Antivirus körs i passiv [form.](./microsoft-defender-antivirus-compatibility.md)
-> 
-> Du kan se de mest aktuella motor-, plattforms- och signaturdatumen i Säkerhetsintelligensuppdateringar för [Microsoft Defender Antivirus andra Microsoft-program mot skadlig programvara.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
+> [!TIP]
+> Om du vill se den mest aktuella motorn, plattformen och signaturdatumet går du till Säkerhetsintelligensuppdateringar för [Microsoft Defender Antivirus andra Microsoft-program](https://www.microsoft.com/en-us/wdsi/defenderupdates) mot skadlig programvara
 
 ## <a name="security-intelligence-updates"></a>Säkerhetsintelligensuppdateringar
 
@@ -81,7 +77,7 @@ Alla våra uppdateringar innehåller
 - prestandaförbättringar
 - förbättringar av användbarheten. och 
 - integreringsförbättringar (Molnet, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
-<br/>
+<br/><br/>
 <details>
 <summary> Maj-2021 (plattform: 4.18.2105.4 | Motor: 1.1.18200.4)</summary>
 
@@ -486,10 +482,10 @@ Mer information finns i [Microsoft Defender Update för Windows av installations
 &ensp;Signaturversion: **1.339.1923.0**    
     
 ### <a name="fixes"></a>Korrigeringar
-- Inga
+- Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
-- Inga  
+- Ingen  
 <br/>
 </details><details>
 <summary>1.1.2105.01</summary>
@@ -500,10 +496,10 @@ Mer information finns i [Microsoft Defender Update för Windows av installations
 &ensp;Signaturversion: **1.339.42.0**    
     
 ### <a name="fixes"></a>Korrigeringar
-- Inga
+- Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
-- Inga  
+- Ingen  
 <br/>
 </details><details>
 <summary>1.1.2104.01</summary>
@@ -514,10 +510,10 @@ Mer information finns i [Microsoft Defender Update för Windows av installations
 &ensp;Signaturversion: **1.335.232.0**    
     
 ### <a name="fixes"></a>Korrigeringar
-- Inga
+- Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
-- Inga  
+- Ingen  
 <br/>
 </details><details>
 <summary>1.1.2103.01</summary>
@@ -528,10 +524,10 @@ Mer information finns i [Microsoft Defender Update för Windows av installations
 &ensp;Signaturversion: **1.331.2302.0**    
     
 ### <a name="fixes"></a>Korrigeringar
-- Inga
+- Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
-- Inga  
+- Ingen  
 <br/>
 </details><details>
 <summary>1.1.2102.03</summary>
@@ -542,10 +538,10 @@ Mer information finns i [Microsoft Defender Update för Windows av installations
 &ensp;Signaturversion: **1.331.174.0**    
     
 ### <a name="fixes"></a>Korrigeringar
-- Inga
+- Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
-- Inga  
+- Ingen  
 <br/>
 </details><details>
 <summary>1.1.2101.02</summary>
@@ -556,10 +552,10 @@ Mer information finns i [Microsoft Defender Update för Windows av installations
 &ensp;Signaturversion: **1.329.1796.0**    
     
 ### <a name="fixes"></a>Korrigeringar
-- Inga
+- Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
-- Inga  
+- Ingen  
 <br/>
 </details><details>
 <summary>1.1.2012.01</summary>
@@ -570,10 +566,10 @@ Mer information finns i [Microsoft Defender Update för Windows av installations
 &ensp;Signaturversion: **1.327.1991.0**    
     
 ### <a name="fixes"></a>Korrigeringar
-- Inga
+- Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
-- Inga  
+- Ingen  
 <br/>
 </details><details>
 <summary>1.1.2011.02</summary>
@@ -584,7 +580,7 @@ Mer information finns i [Microsoft Defender Update för Windows av installations
 &ensp;Signaturversion: **1.327.658.0**    
     
 ### <a name="fixes"></a>Korrigeringar
-- Inga
+- Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
 - Uppdaterade Microsoft Defender Antivirus signaturer  
@@ -598,10 +594,10 @@ Mer information finns i [Microsoft Defender Update för Windows av installations
 &ensp;Signaturversion: **1.327.344.0**    
     
 ### <a name="fixes"></a>Korrigeringar
-- Inga
+- Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
-- Inga  
+- Ingen  
 <br/>
 </details><details>
 <summary>1.1.2009.10</summary>
@@ -612,7 +608,7 @@ Mer information finns i [Microsoft Defender Update för Windows av installations
 &ensp;Signaturversion: **1.327.2216.0**    
     
 ### <a name="fixes"></a>Korrigeringar
-- Inga
+- Ingen
 
 ### <a name="additional-information"></a>Ytterligare information
 - Lade till stöd för Windows 10 RS1 eller senare OS-installationsbilder.  

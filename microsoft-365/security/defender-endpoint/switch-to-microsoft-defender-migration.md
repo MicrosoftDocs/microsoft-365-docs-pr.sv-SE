@@ -17,29 +17,27 @@ ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
 - m365solution-overview
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 2a2b78089486b432ebf9492de26396b2bb96f94d
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 2953103cb3812103740f98a6db5b8f4d369731e3
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593507"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930313"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Göra bytet från skydd från andra slutpunkter än Microsoft Defender till Microsoft Defender för Slutpunkt
 
-Om du funderar på att byta från ditt icke-Microsoft-slutpunktsskydd till [Microsoft Defender](microsoft-defender-endpoint.md) för slutpunkt (Defender för slutpunkt) är du på rätt plats. Använd den här artikeln som en guide.
+Om du funderar på att byta från en lösning som inte är en Microsoft-slutpunktsskyddslösning till [Microsoft Defender](microsoft-defender-endpoint.md) för slutpunkt (Defender för slutpunkt) är du på rätt plats. Använd den här artikeln som en guide.
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Översikt över hur du migrerar till Defender för Endpoint":::
 
-När du byter till Defender för Slutpunkt börjar du med din lösning som inte är en Microsoft-lösning som fungerar i aktivt läge, konfigurerar Defender för Slutpunkt i passiv form, går in på Defender för Slutpunkt, ställer in Defender för Slutpunkt till aktivt läge och tar sedan bort lösningen som inte är Från Microsoft.
-
-> [!TIP]
-> - Om du använder McAfee Endpoint Security (McAfee), se [Migrera från McAfee till Defender för Slutpunkt](mcafee-to-microsoft-defender-migration.md).
-> - Om du för närvarande använder Symantec Endpoint Protection (Symantec) se Migrera från [Symantec till Defender för Slutpunkt.](symantec-to-microsoft-defender-endpoint-migration.md)
+När du byter till Defender för Endpoint börjar du med att din lösning som inte är en Microsoft-lösning fungerar i aktivt läge. Sedan konfigurerar du Defender för slutpunkt i passiv form och onboardar dina enheter till Defender för slutpunkt. Därefter anger du Defender för Slutpunkt som aktivt läge. Slutligen tar du bort lösningen som inte är en Microsoft-lösning.
 
 ## <a name="the-migration-process"></a>Migreringsprocessen
 

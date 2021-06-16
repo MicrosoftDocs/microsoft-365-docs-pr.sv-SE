@@ -20,12 +20,12 @@ description: Läs mer om SharePoint online identifierar virus i filer som använ
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd38b196c106a36fb1a1bfc0a441620b1c5b8ba5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ab11d4c1e2a064ad0717e6619f72a38b0cbc831
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207078"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932836"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Inbyggt virusskydd i SharePoint Online, OneDrive och Microsoft Teams
 
@@ -68,7 +68,7 @@ Så här går det till:
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>Vad händer när OneDrive försöker synkronisera en smittad fil?
 
-OneDrive laddar inte ned filer som innehåller virus. Synkroniseringsklienten visar ett meddelande om att filen inte kan synkroniseras.
+När en skadlig fil överförs till OneDrive synkroniseras den med den lokala datorn innan den markeras som skadlig programvara. När det har markerats som skadlig programvara kan användaren inte längre öppna den synkroniserade filen från sin lokala dator.
 
 ## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Utökade funktioner med Microsoft Defender för Office 365
 

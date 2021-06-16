@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e621b79d37a2c3a22394bd51e0493334eff461c7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932887"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930277"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Vanliga Microsoft 365 Defender REST API-felkoder
 
@@ -62,7 +62,7 @@ Inaktiveradfeature | Förbjudet (403) | Klientorganisationsfunktionen är inte a
 OtillåtenOperation | Förbjudet (403) | \<the disallowed operation and the reason\>.
 NotFound | Hittades inte (404) | Felmeddelandet Allmänt hittades inte.
 ResourceNotFound | Hittades inte (404) | Resursen \<the requested resource\> hittades inte.
-InternalServerError | Internt serverfel (500) | *Obs! Inget felmeddelande, försök igen eller kontakta Microsoft om problemet inte åtgärdas*
+InternalServerError | Internt serverfel (500) | *Obs! Inget felmeddelande, försök igen eller kontakta [Microsoft](/microsoft-365/business-video/get-help-support) om problemet inte åtgärdas*
 
 ## <a name="examples"></a>Exempel
 
@@ -100,6 +100,6 @@ Varje felsvar innehåller en unik ID-parameter för spårning. Egenskapsnamnet f
 ## <a name="related-articles"></a>Relaterade artiklar
 
 - [Microsoft 365 Översikt över Defender-API:er](api-overview.md)
-- [Microsoft 365 Defender API: er som stöds](api-supported.md)
+- [Microsoft 365 Defender API:er som stöds](api-supported.md)
 - [Komma åt Microsoft 365 Defender-API:er](api-access.md)
 - [Läs mer om API-begränsningar och licensiering](api-terms.md)

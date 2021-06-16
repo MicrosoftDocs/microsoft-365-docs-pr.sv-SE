@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Sammanfattning Förstå vad som har ändrats när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 tjänster i den nya tyska datacenterområdet.
-ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591786"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930409"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Vad kommer att ändras efter migreringen Office 365 tjänster i de nya tyska datacenterområdena
 
@@ -75,6 +75,12 @@ Att tänka på:
 - Postlådor migreras som en backend-process. Användare i organisationen kan vara i antingen Microsoft Cloud Deutschland eller den tyska regionen under övergången och är en del av samma Exchange-organisation (i samma globala adresslista).
 
 - Användare av Outlook Web App som använder tjänsten genom att använda en URL-adress där deras postlåda inte finns kommer att se en extra autentiseringsfråga. Om användarens postlåda till exempel finns i Office 365-tjänsterna och användarens Outlook Web App-anslutning använder den äldre slutpunkten autentiseras användaren först i och sedan `outlook.office.de` `login.microsoftonline.de` till `login.microsoftonline.com` . När migreringen är klar kan användaren komma åt den nya URL:en ( ), och de ser endast den `https://outlook.office365.com` enda, förväntade inloggningsförfrågan. 
+
+## <a name="sharepoint-online"></a>SharePoint Online
+
+I SharePoint Online och OneDrive för företag kan du dela objekt via Outlook. När du trycker Outlook här knappen skapas en delningsbar länk som sedan skickas till ett nytt meddelande i Outlook Web App.
+
+Delning av objekt SharePoint Online och OneDrive för företag via Outlook fungerar inte längre när migreringen av SharePoint Online har slutförts. Vi känner igen det här är ett känt problem. Men eftersom den Outlook är i vägen för utfasningen är det inte planerat att åtgärda problemet förrän utfasningen distribueras.
 
 ## <a name="office-services"></a>Office Tjänster
 

@@ -23,12 +23,12 @@ ms.custom:
 description: Läs mer om Microsoft Defender Office 365 för filer i SharePoint Online, OneDrive för företag och Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a74a75f12a758b9b116a3f752624df38f338d0d1
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 7aa375020ce05ca1d484bb7ed18b8cf7a6e7d04e
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878226"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932848"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Säkra bilagor för SharePoint, OneDrive och Microsoft Teams
 
@@ -66,7 +66,7 @@ Mer information om användarupplevelsen när en fil har identifierats som skadli
 
 Filer som identifieras som skadliga av Valv Bifogade filer för SharePoint, OneDrive och Microsoft Teams visas i rapporter för [Microsoft Defender för Office 365](view-reports-for-mdo.md) och i [Utforskaren (och](threat-explorer.md)identifieringar i realtid).
 
-Efter maj 2018, när en fil identifieras som skadlig av Valv Bifogade filer för SharePoint, OneDrive och Microsoft Teams, finns filen även i karantän. Mer information finns i Använda [Defender Microsoft 365 portalen](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)för att hantera filer i karantän i Defender för Office 365.
+Efter maj 2018, när en fil identifieras som skadlig av Valv Bifogade filer för SharePoint, OneDrive och Microsoft Teams, finns filen även i karantän. Mer information finns i [Hantera filer i karantän i Defender för Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
 
 ## <a name="keep-these-points-in-mind"></a>Tänk på följande punkter
 

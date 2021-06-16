@@ -13,16 +13,16 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Lär dig mer om hur du använder Threat Explorer och rapporten om identifiering i realtid för att undersöka och hantera hot i säkerhets- & efterlevnadscenter.
+description: Läs mer om hur du använder Threat Explorer och rapporten om identifieringar i realtid för att undersöka och hantera hot i Microsoft 365 Defender-portalen.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78c03b45063f4bc34b47ab003bcf00d2befab886
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1c79cc717a2dbe345627f99830590c674fa02f09
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207332"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929668"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vyer i Hotutforskaren och identifiering i realtid
 
@@ -33,9 +33,9 @@ ms.locfileid: "51207332"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![Hotutforskaren](../../media/ThreatExplorerFirstOpened.png)
+![Hotutforskaren](../../media/explorer.png)
 
-[Threat Explorer](threat-explorer.md) (och rapporten om identifieringar i realtid) är ett kraftfullt, när realtidsverktyg som hjälper grupper i säkerhetsåtgärder att undersöka och reagera på hot i Säkerhets- & Efterlevnadscenter. Utforskaren (och rapporten om identifieringar i realtid) visar information om misstänkt skadlig kod och nätsegeni i e-post och filer i Office 365, liksom andra säkerhetshot och risker för organisationen.
+[Hotutforskaren](threat-explorer.md) (och rapporten om identifiering i realtid) är ett kraftfullt, när realtidsverktyg som hjälper säkerhetsoperationsgrupper att undersöka och svara på hot i Microsoft 365 Defender-portalen. Utforskaren (och rapporten om identifieringar i realtid) visar information om misstänkt skadlig kod och nätsegeni i e-post och filer i Office 365, liksom andra säkerhetshot och risker för organisationen.
 
 - Om du har [Microsoft Defender Office 365](defender-for-office-365.md) abonnemang 2 har du Utforskaren.
 - Om du har Microsoft Defender Office 365 abonnemang 1 kan du göra identifieringar i realtid.
@@ -58,7 +58,7 @@ När du först öppnar Utforskaren (eller rapporten över identifieringar i real
 
 Använd **Visa-menyn** för att ändra vilken information som visas. Verktygstips hjälper dig att avgöra vilken vy du ska använda.
 
-![Menyn För att visa hot i Utforskaren](../../media/ThreatExplorerViewMenu.png)
+![Menyn För att visa hot i Utforskaren](../../media/all-email.png)
 
 När du har valt en vy kan du använda filter och konfigurera frågor för vidare analys. I följande avsnitt ges en kort översikt över de olika vyerna som är tillgängliga i Utforskaren (eller identifieringar i realtid).
 
@@ -66,7 +66,7 @@ När du har valt en vy kan du använda filter och konfigurera frågor för vidar
 
 Om du vill visa den här rapporten i Utforskaren (eller identifiering i realtid) väljer du **Visa skadlig programvara** för \> **e-post.** \>  I den här vyn visas information om e-postmeddelanden som identifierats som innehåller skadlig programvara.
 
-![Visa data om e-post som identifieras som skadlig programvara](../../media/ExplorerEmailMalwareMenu.png)
+![Visa data om e-post som identifieras som skadlig programvara](../../media/detection-technology.png)
 
 Klicka **på Avsändare** så att listan med visningsalternativ öppnas. Använd den här listan för att visa data efter avsändare, mottagare, avsändardomän, ämne, identifieringsteknik, skyddsstatus med mera.
 
@@ -82,13 +82,13 @@ Under diagrammet kan du visa mer information om specifika meddelanden. När du m
 
 Om du vill visa den här rapporten i Utforskaren (eller identifieringar i realtid) väljer du **Visa** \> **e-post** \> **phish**. I den här vyn visas e-postmeddelanden som identifieras som nätfiskeförsök.
 
-![Visa data om e-post som identifierats som nätfiskeförsök](../../media/ThreatExplorerEmailPhish.png)
+![Visa data om e-post som identifierats som nätfiskeförsök](../../media/phish.png)
 
 Klicka **på Avsändare** så att listan med visningsalternativ öppnas. Använd den här listan för att visa data efter avsändare, mottagare, avsändardomän, avsändar-IP, URL-domän, klicka på bedömning med mera.
 
 Om du till exempel vill se vilka åtgärder som har vidtagits när  personer klickade på URL-adresser som identifierats som nätfiskeförsök väljer du Klicka på bedömning i listan, väljer ett eller flera alternativ och klickar sedan på knappen Uppdatera.
 
-![Klicka på alternativ för bedömning av phish-rapporten](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![Klicka på alternativ för bedömning av phish-rapporten](../../media/click-verdict.png)
 
 Under diagrammet kan du visa mer information om specifika meddelanden, URL-klick, URL:er och e-postursprung.
 
@@ -135,7 +135,7 @@ Om du vill visa den här rapporten i Utforskaren (eller identifiering i realtid)
 
 Visa information efter programfamilj, identifieringsteknik (hur den skadlig programvara upptäcktes) och arbetsbelastningen (OneDrive, SharePoint eller Teams).
 
-![Visa data om upptäckt skadlig programvara](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
+![Visa data om upptäckt skadlig programvara](../../media/malware-family.png)
 
 Under diagrammet kan du visa mer information om specifika filer, till exempel filnamn på bifogade filer, arbetsbelastning, filstorlek, vem som senast ändrade filen och mycket mer.
 

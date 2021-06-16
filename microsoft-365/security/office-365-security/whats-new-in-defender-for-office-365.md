@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2895598c8d891b08229f072b7bff6b6549639093
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796072"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929560"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Vad är nytt i Microsoft Defender för Office 365
 
@@ -89,7 +89,7 @@ Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch
   - Avancerade NOT-filter (de här avancerade filtreringsalternativen innehåller inte, inkluderar inte osv.)
   - Granular time filters (day, hour, half-hour)
 
-- **Widgeten** Incidenter är nu **widgeten Åtgärdscenter.** (Om du vill visa dina säkerhetswidgetar går du till & Säkerhets- och **efterlevnadscenter** \> **Granska**.) (Microsoft Defender för Office 365 abonnemang 2)
+- **Widgeten** Incidenter är nu **widgeten Åtgärdscenter.** (Om du vill visa dina säkerhetswidgetar går du Microsoft 365 Defender-portalen till **E-& samarbete** \> **Granska**.) (Microsoft Defender för Office 365 abonnemang 2)
 
 - [Valv Dokument i Microsoft 365](safe-docs.md) **(förhandsgranskning)**
 

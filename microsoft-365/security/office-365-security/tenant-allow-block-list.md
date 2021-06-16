@@ -16,12 +16,12 @@ ms.collection:
 description: Administratörer kan ta reda på hur de konfigurerar tillåts och block i listan över tillåtna/blockerade klienter i säkerhetsportalen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12139708fc5cde133819713fd7185435e594a1a9
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 4228bb8abb70bbd96605a7d0f021a1a483e8715c
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809185"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929737"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Hantera Klientorganisationens Tillåt/blockera listan
 
@@ -40,17 +40,17 @@ ms.locfileid: "52809185"
 
 I Microsoft 365 organisationer med postlådor i Exchange Online eller fristående EOP-organisationer (Exchange Online Protection) utan Exchange Online-postlådor, kanske du inte instämmer i EOP-filtrerings förlopp. Till exempel kan ett bra meddelande markeras som dåligt (falskt positivt) eller så kan ett felaktigt meddelande tillåtas (falskt negativt).
 
-Med klientorganisationens lista över tillåtna/blockerade & säkerhets- och efterlevnadscenter får du ett sätt att manuellt åsidosätta Microsoft 365 filtrera överensstämmelser. Klientorganisationens lista över tillåtna/blockerade används under e-postflödet och när användaren klickar. Du kan ange följande typer av åsidosättningar:
+I klientorganisationens lista över tillåtna/blockerade Microsoft 365 Defender-portalen får du möjlighet att manuellt åsidosätta Microsoft 365 filtrera beslut. Klientorganisationens lista över tillåtna/blockerade används under e-postflödet och när användaren klickar. Du kan ange följande typer av åsidosättningar:
 
 - URL:er som ska blockeras.
 - Filer som ska blockeras.
 - Förfalskningsavsändare som ska tillåta eller blockera. Om du åsidosätter blockeringen av tillåtande eller blockering av förfalskningsinformation [blir](learn-about-spoof-intelligence.md)den falska avsändaren en  manuell tillåta- eller blockeringspost som bara visas på fliken Förfalskning i innehavarlistan över tillåtna/blockerade avsändare. Här kan du även manuellt skapa tillåta eller blockera poster för förfalskningsavsändare innan de identifieras av förfalskningsinformation.
 
-Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/blockerade klientorganisationer i Säkerhets- och efterlevnadscenter för & eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
+I den här artikeln beskrivs hur du konfigurerar poster i listan över tillåtna/blockerade klientorganisationer i Microsoft 365 Defender-portalen eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Använd för att gå direkt **till sidan För att tillåta/blockera** klientorganisation. <https://protection.office.com/tenantAllowBlockList>
+- Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com/>. Använd för att gå direkt till sidan för klientorganisationslistor om du vill **tillåta/blockera** <https://security.microsoft.com/tenantAllowBlockList> listor.
 
 - Du anger filer genom att använda hashvärdet SHA256 för filen. Om du vill hitta hashvärdet SHA256 för en fil i Windows kör du följande kommando i kommandotolken:
 
@@ -90,9 +90,9 @@ Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/
   >
   > - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
-## <a name="use-the-security--compliance-center-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & efterlevnadscenter för att skapa blockera URL-poster i klientorganisationens lista över tillåtna/blockerade adresser
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Använd Defender Microsoft 365 portalen för att skapa blockerings-URL-poster i listan över tillåtna/blockerade klientorganisationen
 
-1. I Säkerhets- & säkerhets- och efterlevnadscenter går du till **listan** över \>  \> **tillåtna/blockerade hotprinciper för klientorganisationen.**
+1. I Microsoft 365 Defender-portalen går du till Principer **& principer** för \>  \> **hotklientorganisationens tillåtna/blockerade listor.**
 
 2. På sidan **Lista över tillåtna/blockerade** klientorganisation kontrollerar du att **fliken URL:er** är markerad och klickar sedan på **Blockera**
 
@@ -112,9 +112,9 @@ Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/
 
 4. När du är klar klickar du på Lägg **till**.
 
-## <a name="use-the-security--compliance-center-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & säkerhets- och efterlevnadscenter för att skapa blockeringsfilposter i klientorganisationens lista över tillåtna/blockerade filer
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Använd Defender Microsoft 365 portalen för att skapa blockeringsfilposter i klientorganisationens lista över tillåtna/blockerade filer
 
-1. I Säkerhets- & säkerhets- och efterlevnadscenter går du till **listan** över \>  \> **tillåtna/blockerade hotprinciper för klientorganisationen.**
+1. I Microsoft 365 Defender-portalen går du till Principer **& principer för** \>  \> **hotklientorganisationens tillåtna/blockerade listor.**
 
 2. På sidan **Lista över tillåtna/blockerade** klientorganisation väljer du **fliken** Filer och klickar sedan på **Blockera**.
 
@@ -134,7 +134,7 @@ Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/
 
 4. När du är klar klickar du på Lägg **till**.
 
-## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & säkerhets- och efterlevnadscenter för att skapa tillåta eller blockera förfalskning av avsändare i listan Tillåt/blockera klientorganisation
+## <a name="use-the-microsoft-365-defender-portal-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Använd Defender Microsoft 365 portalen för att skapa tillåta eller blockera falska avsändarposter i listan över tillåtna/spärrade avsändare för klientorganisationen
 
 **Anmärkningar**:
 
@@ -142,7 +142,7 @@ Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/
 - När du konfigurerar en tillåta- eller blockeringspost för ett domänpar visas inte längre meddelanden från det domänparet i förfalskningsinformation.
 - Poster för falska avsändare upphör aldrig att gälla.
 
-1. I Säkerhets- & säkerhets- och efterlevnadscenter går du till **listan** över \>  \> **tillåtna/blockerade hotprinciper för klientorganisationen.**
+1. I Microsoft 365 Defender-portalen går du till Principer **& principer för** \>  \> **hotklientorganisationens tillåtna/blockerade listor.**
 
 2. Välj **fliken Förfalskning på sidan Lista** över tillåtna/blockerade **klientorganisation** och klicka sedan på Lägg **till.**
 
@@ -158,9 +158,9 @@ Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/
 
 4. När du är klar klickar du på Lägg **till**.
 
-## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & kompatibilitetscenter för att visa poster i listan över tillåtna/blockerade klientorganisationen
+## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>Använd Defender Microsoft 365 portalen för att visa poster i listan över tillåtna/blockerade klientorganisationen
 
-1. I Säkerhets- & säkerhets- och efterlevnadscenter går du till **listan** över \>  \> **tillåtna/blockerade hotprinciper för klientorganisationen.**
+1. I Microsoft 365 Defender-portalen går du till Principer **& principer för** \>  \> **hotklientorganisationens tillåtna/blockerade listor.**
 
 2. Välj den flik du vill använda. Vilka kolumner som är tillgängliga beror på vilken flik du valde:
 
@@ -220,9 +220,9 @@ Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/
 
    När du är klar klickar du på **Använd**. Om du vill ta bort befintliga  **filter klickar** du på Filter och sedan på Rensa filter i den **utfällklara filterfällan som visas.**
 
-## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Använd Säkerhets- & säkerhets- och efterlevnadscenter för att ändra poster i listan över tillåtna/blockerade klientorganisationen
+## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Använd Defender Microsoft 365 portalen för att ändra poster i listan över tillåtna/blockerade klientorganisationen
 
-1. I Säkerhets- & säkerhets- och efterlevnadscenter går du till **listan** över \>  \> **tillåtna/blockerade hotprinciper för klientorganisationen.**
+1. I Microsoft 365 Defender-portalen går du till Principer **& principer för** \>  \> **hotklientorganisationens tillåtna/blockerade listor.**
 
 2. Välj den flik som innehåller den typ av post som du vill ändra:
    - **URL:er**
@@ -248,9 +248,9 @@ Den här artikeln beskriver hur du konfigurerar poster i listan Över tillåtna/
 
 4. Klicka på **Spara** när du är klar.
 
-## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Använda Säkerhets- & säkerhets- och efterlevnadscenter för att ta bort poster från listan över tillåtna/blockerade klientorganisationen
+## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Använda Defender Microsoft 365 portalen för att ta bort poster från listan över tillåtna/blockerade klientorganisationen
 
-1. I Säkerhets- & säkerhets- och efterlevnadscenter går du till **listan** över \>  \> **tillåtna/blockerade hotprinciper för klientorganisationen.**
+1. I Microsoft 365 Defender-portalen går du till **blockeringslistor** för \>  \> **klientorganisationens tillåtna/blockerade hotprincip.**
 
 2. Välj den flik som innehåller den typ av post som du vill ta bort:
    - **URL:er**

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 1b03c2671939a3e8e3011b78b8f1484ef02979ea
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245383"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930193"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -111,7 +111,6 @@ Med läs- och skrivåtkomst kan du göra ändringar och interagera direkt med Se
 * Säkerhetsadministratör
 * Exchange-administratör
 * SharePoint-administratör
-* Kontoadministratör
 
 ### <a name="read-only-roles"></a>Skrivskyddade roller
 
@@ -119,7 +118,7 @@ Med skrivskydd kan du inte redigera status eller anteckningar för en förbättr
 
 * Helpdesk-administratör
 * Användaradministratör
-* Tjänstadministratör
+* Tjänstsupportadministratör
 * Säkerhetsläsare
 * Säkerhetsoperatör
 * Global läsare
@@ -137,4 +136,4 @@ Om du har problem kan du meddela oss genom att publicera i communityn [säkerhet
 - [Utvärdera din säkerhetsstatus](microsoft-secure-score-improvement-actions.md)
 - [Spåra din Microsoft Secure Score-historik och nå dina mål](microsoft-secure-score-history-metrics-trends.md)
 - [Kommer snart](microsoft-secure-score-whats-coming.md)
-- [Vad är det senaste](microsoft-secure-score-whats-new.md)
+- [Nyheter](microsoft-secure-score-whats-new.md)

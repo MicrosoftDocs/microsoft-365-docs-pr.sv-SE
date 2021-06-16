@@ -18,12 +18,12 @@ ms.custom:
 description: Få en översikt över säkerhetsinformation och händelsehantering (SIEM) serverintegrering med dina Microsoft 365 och program
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599953"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929797"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Säkerhetsinformation och händelsehantering (SIEM)-serverintegrering med Microsoft 365 och program
 
@@ -58,7 +58,7 @@ En SIEM-server kan ta emot data från en mängd Microsoft 365 tjänster och prog
 |Microsoft 365 Tjänst eller program|SIEM-serverindata/-metoder|Resurser för att få mer information|
 |---|---|---|
 |[Microsoft Defender för Office 365](defender-for-office-365.md)|Granskningsloggar|[SIEM-integrering med Microsoft Defender för Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender för Endpoint](/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure som värd <p> REST API|[Dra aviseringar till dina SIEM-verktyg](../defender-endpoint/configure-siem.md)|
+|[Microsoft Defender för Endpoint](/windows/security/threat-protection/)|HTTPS-slutpunkt med Azure som värd <p> REST-API|[Dra aviseringar till dina SIEM-verktyg](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|Loggintegrering|[SIEM-integrering med Microsoft Cloud App Security](/cloud-app-security/siem)|
 |
 
@@ -69,7 +69,7 @@ En SIEM-server kan ta emot data från en mängd Microsoft 365 tjänster och prog
 
 Kontrollera att granskningsloggning är aktiverat innan du konfigurerar SIEM-serverintegrering.
 
-- För SharePoint Online, OneDrive för företag och Azure Active Directory är granskningsloggning aktiverad i Säkerhets- & [efterlevnadscenter.](../../compliance/turn-audit-log-search-on-or-off.md)
+- För SharePoint Online, OneDrive för företag och Azure Active Directory är granskningsloggning aktiverad i [Microsoft 365 Defender-portalen.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 - Mer Exchange Online finns i Hantera [granskning av postlåda.](../../compliance/enable-mailbox-auditing.md)
 

@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Använd Threat Explorer eller identifieringar i realtid i &amp; Säkerhetsefterlevnad center för att undersöka och reagera på hot effektivt.
+description: Använd Threat Explorer eller identifieringar i realtid i Microsoft 365 Defender-portalen för att undersöka och reagera på hot effektivt.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65fe67103d9a380c63a0362594c23290457ea3aa
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 71052cc5a3874da250772bfa628417824ba51c63
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295328"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930139"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Hot jaga i Threat Explorer för Microsoft Defender för Office 365
 
@@ -42,7 +42,7 @@ I den här artikeln:
 
 Om din organisation har [Microsoft Defender för Office 365](defender-for-office-365.md) [](#required-licenses-and-permissions)och du har behörighet kan du använda **Utforskaren** eller **Realtidsidentifiering** för att identifiera och åtgärda hot. 
 
-I **Säkerhets- & säkerhets- och** efterlevnadscenter går du till Hantering av hot och väljer **sedan Utforskaren**  **eller Identifieringar i realtid.**
+Gå till **Microsoft 365 E& samarbete** i **Defender-& och** välj sedan **Utforskaren**.
 
 <br>
 
@@ -50,7 +50,7 @@ I **Säkerhets- & säkerhets- och** efterlevnadscenter går du till Hantering av
 
 |Med Microsoft Defender för Office 365 abonnemang 2 visas:|Med Microsoft Defender för Office 365 abonnemang 1 visas:|
 |---|---|
-|![Hotutforskaren](../../media/threatmgmt-explorer.png)|![Identifiering i realtid](../../media/threatmgmt-realtimedetections.png)|
+|![Hotutforskaren](../../media/path-to-explorer.png)|![Identifiering i realtid](../../media/threatmgmt-realtimedetections.png)|
 |
 
 Med dessa verktyg kan du:
@@ -68,15 +68,15 @@ I Microsoft Defender för Office 365 finns det två abonnemang – abonnemang 1 
 
 Defender för Office 365 abonnemang 1 använder identifieringar i *realtid,* vilket är en del av sökverktyget i Threat *Explorer* (kallas även *Utforskaren)* i abonnemang 2. I den här serien med artiklar har de flesta av exemplen skapats med hjälp av hela Hotutforskaren. Administratörer bör testa stegen i realtidsidentifiering för att se var de är tillämpliga.
 
-Öppna Utforskaren genom att gå till **Säkerhets- & Säkerhetscenter**–  >    >  **Hothanteringsutforskaren** (eller **Identifieringar i realtid).** Som standard kommer du till  sidan Skadlig programvara, men använder listrutan **Visa** för att bekanta dig med alternativen. Om du letar efter Phish eller är redo för en hotkampanj väljer du de här vyerna.
+Om du vill öppna verktyget Utforskaren går du till **Microsoft 365 Defender-portalen**  >  **för & för samarbete i**  >  **Utforskaren.** Som standard kommer du till  sidan Skadlig programvara, men använder listrutan **Visa** för att bekanta dig med alternativen. Om du letar efter Phish eller är redo för en hotkampanj väljer du de här vyerna.
 
 > [!div class="mx-imgBorder"]
-> ![Listrutan Visa i Utforskaren med hot](../../media/threat-explorer-view-drop-down.png)
+> ![Listrutan Visa i Utforskaren med hot](../../media/view-drop-down.png)
 
 När en säkerhetsoperationer (Sec Ops) väljer ut de data som de vill se, om omfattningen är smal vy som  användare Som skickar , eller en bredare vy, som All e-post, kan de använda knappen Avsändare för att filtrera ytterligare. Kom ihåg att välja Uppdatera för att slutföra filtreringsåtgärderna.
 
 > [!div class="mx-imgBorder"]
-> ![Knappen Avsändare i Utforskaren med hot](../../media/threat-explorer-sender-button.png)
+> ![Knappen Avsändare i Utforskaren med hot](../../media/sender-drop-down.png)
 
 Du kan tänka på att förfina fokus i Utforskaren eller Identifiering i realtid i lager. Det första är **Visa**. Det andra kan ses som ett *filtrerat fokus.* Du kan till exempel gå tillbaka till de steg du gick genom att registrera ett hot genom att registrera dina beslut så här: För att hitta problemet i Utforskaren valde jag vyn Skadlig programvara med filtret Mottagare i **fokus**. Det gör det enklare att ta om stegen.
 
@@ -86,7 +86,7 @@ Du kan tänka på att förfina fokus i Utforskaren eller Identifiering i realtid
 Du kan förbättra datumintervallen med hjälp av kontrollerna för datumintervall. Här kan du se Utforskaren i **vyn Skadlig** programvara med filtret **Identifieringsteknik** i fokus. Men det är filterknappen **Avancerat som** gör att Sek Ops grupper kan gräva djupare. 
 
 > [!div class="mx-imgBorder"]
-> ![Avancerat filter i Hotutforskaren](../../media/threat-explorer-advanced-filter.png)
+> ![Avancerat filter i Hotutforskaren](../../media/advanced-filter.png)
 
 Om du **klickar på filtret** Avancerat visas en panel som låter Sek Ops skapa frågor själva, så att de kan inkludera eller exkludera den information de behöver se. Både diagrammet och tabellen på sidan Utforskaren speglar deras resultat. 
 
@@ -99,7 +99,7 @@ Använd knappen **Kolumnalternativ** för att få den typ av information om tabe
 > ![Knappen Kolumnalternativ markerad](../../media/threat-explorer-column-options.png)
 
 > [!div class="mx-imgBorder"]
-> ![Tillgängliga alternativ i Kolumner](../../media/threat-explorer-column-options-details.png)
+> ![Tillgängliga alternativ i Kolumner](../../media/column-options.png)
 
 Testa bildskärmsalternativen med samma mien. Olika målgrupper kommer att reagera bra på olika presentationer med samma data. För vissa användare kan kartan för e-postsprung visa att  ett hot är svårt eller **ödslar** snabbare än visningsalternativet Kampanj bredvid det. Sek Ops kan använda dessa bildskärmar för att bäst understryka behovet av säkerhet och skydd, eller för senare jämförelse, för att visa hur effektivt deras åtgärder är. 
 
@@ -144,7 +144,7 @@ Här kan analytikern vidta åtgärder som att rapportera e-post som skräppost, 
 
 När du navigerar från en avisering till **Hotutforskaren filtreras** vyn med **aviserings-ID**. Det här gäller även vid identifiering i realtid. Meddelanden som är relevanta för den specifika aviseringen och en summa för e-post (antal) visas. Du kan se om ett meddelande var en del av en avisering och även navigera från det meddelandet till den relaterade aviseringen.
 
-Slutligen inkluderas aviserings-ID i URL:en, till exempel: `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+Slutligen inkluderas aviserings-ID i URL:en, till exempel: `https://https://security.microsoft.com/viewalerts`
 
 > [!div class="mx-imgBorder"]
 > ![Filtrera efter aviserings-ID](../../media/AlertID-Filter.png)
@@ -252,7 +252,7 @@ Du måste ha [Microsoft Defender Office 365](defender-for-office-365.md) kunna a
 
 Om du vill visa och använda Utforskaren eller Identifieringar i realtid måste du ha följande:
 
-- För Säkerhets- & Efterlevnadscenter:
+- På Microsoft 365 Defender-portalen:
 
   - Organisationshantering
   - Säkerhetsadministratör (det här kan tilldelas Azure Active Directory administrationscentret ( <https://aad.portal.azure.com> )
@@ -267,7 +267,7 @@ Om du vill visa och använda Utforskaren eller Identifieringar i realtid måste 
 
 Mer information om roller och behörigheter finns i följande resurser:
 
-- [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)
+- [Behörigheter på Microsoft 365 Defender-portalen](permissions-in-the-security-and-compliance-center.md)
 - [Funktionsbehörigheter i Exchange Online](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 

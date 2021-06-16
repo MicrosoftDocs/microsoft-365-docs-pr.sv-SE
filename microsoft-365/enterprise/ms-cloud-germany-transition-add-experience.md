@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Efter migreringens aktiviteter efter flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i den nya tyska datacenterområdet.'
-ms.openlocfilehash: ee8dedf7ffaf6bfc4246b1a8cc2522c15d763cd1
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: 3659ce8ffa3424c3521c8f8954be88c7d53d0a51
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899370"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930421"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktiviteter efter migreringen från Microsoft Cloud Deutschland
 
@@ -53,7 +53,7 @@ The following table provides an overview about which endpoints will replace the 
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-| Ta bort förtroenden från en part i Microsoft Cloud Deutschland AD FS. | Efter att användningen av Azure AD har slutförts använder organisationen alla tjänster Office 365 och är inte längre ansluten till Microsoft Cloud Deutschland. I det här läget behöver kunden ta bort det beroende tredjepartsförtroendet till Microsoft Cloud Deutschland-slutpunkterna. Detta kan endast göras om ingen av kundens program pekar på Microsoft Cloud Deutschland-slutpunkter när Azure AD används som en identitetsprovider (IdP). | Organisationer med federerad autentisering | Ingen. |
+| Ta bort förtroenden från en part i Microsoft Cloud Deutschland AD FS. | Efter att användningen av Azure AD har slutförts använder organisationen alla tjänster Office 365 och är inte längre ansluten till Microsoft Cloud Deutschland. I det här läget behöver kunden ta bort det beroende tredjepartsförtroendet till Microsoft Cloud Deutschland-slutpunkterna. Detta kan endast göras om ingen av kundens program pekar på Microsoft Cloud Deutschland-slutpunkter när Azure AD används som en identitetsprovider (IdP). | Organisationer med federerad autentisering | 
 ||||
 
 <!--
@@ -68,16 +68,12 @@ The following table provides an overview about which endpoints will replace the 
 | Förfrågningar om att gå med i en Azure AD-grupp de senaste 30 dagarna innan migreringen måste begäras igen om den ursprungliga begäran inte godkänts. | Slutanvändarkunder måste använda åtkomstpanelen för att skicka en begäran om att ansluta till en Azure AD-grupp igen om dessa begäranden inte godkänts under de senaste 30 dagarna före migreringen. |  Som slutanvändare: <ol><li>Gå till [åtkomstpanelen](https://account.activedirectory.windowsazure.com/r#/joinGroups).</li><li>Hitta en Azure AD-grupp för vilken godkännande av medlemskap väntar under 30 dagar före migreringen.</li><li>Begär att få gå med i Azure AD-gruppen igen.</li></ol> Förfrågningar om att gå med i en grupp som är aktiv mindre än 30 dagar innan migreringen kan inte godkännas, såvida de inte begärs igen efter migreringen. |
 ||||
 
-<!--
-    Question from ckinder
-    The following paragraph is not clear
--->
 ## <a name="custom-dns-updates"></a>Anpassade DNS-uppdateringar
 **Gäller för:**  Alla kunder som hanterar sina egna DNS-zoner
 
 | Steg | Beskrivning | Påverkan |
 |:------|:-------|:-------|
-| Uppdatera lokala DNS-tjänster för Office 365-tjänstens slutpunkter. | Kund hanterade DNS-poster som pekar på Microsoft Cloud Deutschland måste uppdateras så att de pekar Office 365 slutpunkter för globala tjänster. | Om du inte gör det kan det leda till att tjänsten eller programvaruklienten inte fungerar. |
+| Uppdatera lokala DNS-tjänster för Office 365-tjänstens slutpunkter. | Kund hanterade DNS-poster som pekar på Microsoft Cloud Deutschland måste uppdateras så att de pekar Office 365 slutpunkter för globala tjänster. Se Domäner [i administrationscentret Microsoft 365 och](https://admin.microsoft.com/Adminportal/Home#/Domains) tillämpa ändringarna i DNS-konfigurationen. | Om du inte gör det kan det leda till att tjänsten eller programvaruklienten inte fungerar. |
 ||||
 
 ## <a name="third-party-services"></a>Tredjepartstjänster
@@ -87,19 +83,3 @@ The following table provides an overview about which endpoints will replace the 
 |:-------|:-------|:-------|
 | Uppdatera partner och tredjepartstjänster för att Office 365 slutpunkter för tjänster. | <ul><li>Tredjepartstjänster och partner som pekar på Office 365 Germany måste uppdateras så att de pekar Office 365-tjänstslutpunkterna. Exempel: Registrera igen, i linje med dina leverantörer och partner, galleriets appversion av program, om tillgängligt. </li><li>Peka alla anpassade program som utnyttjar Graph API från `graph.microsoft.de` till `graph.microsoft.com` . Andra API:er med ändrade slutpunkter måste också uppdateras, om de används. </li><li>Ändra alla företagsprogram som inte är från första part så att de omdirigeras till de globala slutpunkterna. </li></ul>| Obligatorisk åtgärd. Om du inte gör det kan det leda till att tjänsten eller programvaruklienten inte fungerar. |
 ||||
-
-## <a name="sharepoint-online"></a>SharePoint Online
-**Gäller för:** Kunder som SharePoint 2013-arbetsflöden
-
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| Publicera om SharePoint 2013-arbetsflöden. | Under arbetet före migreringen minskade vi antalet arbetsflöden i SharePoint 2013. Nu när migreringen är klar kan kunden publicera arbetsflödena på nytt. | Det här är en åtgärd som krävs. Om du inte gör det kan det leda till förvirring och samtal till supporten. |
-| Dela objekt via Outlook | Delning av objekt SharePoint Online och OneDrive för företag via Outlook inte längre fungerar efter klientorganisationens övertid. |<ul><li>I SharePoint Online och OneDrive för företag kan du dela objekt via Outlook. När du trycker Outlook här knappen skapas en delningsbar länk som sedan skickas till ett nytt meddelande i Outlook Web App.</li><li>Efter att klientorganisationen har tagit över kommer den här delningsmetoden inte att fungera. Vi känner igen det här är ett känt problem. Men eftersom den Outlook är i vägen för utfasningen är det inte planerat att åtgärda problemet förrän utfasningen distribueras. </li></ul>|
-||||
-
-## <a name="exchange-online"></a>Exchange Online
-**Gäller för:** Kunder som använder en hybridkonfiguration Exchange hybridlösningar
-
-| Steg | Beskrivning | Påverkan |
-|:-------|:-------|:-------|
-| Kör om hybridkonfigurationsguiden (HCW) mot Office 365 tjänster. | Den befintliga HCW-konfigurationen är avsedd att stödja Microsoft Cloud Deutschland. När migreringen Exchange tjänster slutförs avkodas vi den lokala konfigurationen från Microsoft Cloud Deutschland. |<ul><li>Obligatorisk åtgärd. Om du inte gör det kan det leda till att tjänsten eller programvaruklienten inte fungerar. Innan Exchange postlådemigrering börjar (med 5 eller fler dagars förvarning) bör du meddela klienterna att de ska stoppa och ta bort alla flyttningar av onboarding eller offboarding för postlådorna.  Om de inte gör det visas fel i sina flyttningsförfrågningar. </li><li>När Exchange postlådemigrering har slutförts meddelar du klienter att de kan återuppta flyttningar av onboarding och offboarding. <br> **Test-MigrationServerAvailabiilty**, en PowerShell-cmdlet, under migreringen av Exchange från Microsoft Cloud Deutschland till Office 365-tjänster kanske inte fungerar. Men det fungerar korrekt när migreringen är klar. </li><li>Om klienter får problem med autentiseringsuppgifter eller auktorisering efter att postlådorna migrerats kan användare ange sina lokala administratörsautentiseringsuppgifter på nytt i migreringsslutpunkten genom att köra , eller genom att ange samma med hjälp av `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` Exchange Control Panel (ECP). </li></ul>|

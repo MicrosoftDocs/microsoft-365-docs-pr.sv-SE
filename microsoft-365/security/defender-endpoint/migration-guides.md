@@ -15,18 +15,16 @@ ms.collection:
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
-ms.date: 09/24/2020
+ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 7d6d92f3abc79552406c80a46a8c3390b91e31d0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4d10de35358d528f004ee11e931fc6f41ce20482
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843016"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930505"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Gå över till Microsoft Defender för Endpoint och Microsoft Defender Antivirus
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -42,13 +40,11 @@ Om du överväger att byta från en annan Defender-lösning än Microsoft 365 ti
 |:--|:--|
 |Du har inte någon lösning för slutpunktsskydd ännu och vill veta mer om hur Microsoft Defender för Slutpunkt & Microsoft Defender Antivirus fungerar.  |[Microsoft Defender för utvärderingslabb med slutpunkt](evaluation-lab.md)   |
 |Du har Microsoft Defender för & Microsoft Defender Antivirus och behöver hjälp med att konfigurera allt.  |[Distributionsguide för Microsoft Defender för slutpunkt](deployment-phases.md)  |
-|Du planerar att migrera från McAfee Endpoint Security (McAfee) till Microsoft Defender för Endpoint & Microsoft Defender Antivirus. |[Byta från McAfee till Microsoft Defender för Endpoint](mcafee-to-microsoft-defender-migration.md) |
-|Du planerar att migrera från Symantec Endpoint Protection (Symantec) till Microsoft Defender för endpoint & Microsoft Defender Antivirus. |[Byta från Symantec till Microsoft Defender för Endpoint](symantec-to-microsoft-defender-endpoint-migration.md) |
-|Du planerar att migrera från en lösning som inte är en Slutpunktsskyddslösning från Microsoft (förutom McAfee eller Symantec) till Microsoft Defender för & Microsoft Defender Antivirus. |[Gå över till Microsoft Defender för Slutpunkt](switch-to-microsoft-defender-migration.md)   |
+|Du planerar att migrera från en lösning som inte är en Slutpunktsskyddslösning från Microsoft Defender till Microsoft Defender för & Microsoft Defender Antivirus. |[Gå över till Microsoft Defender för Slutpunkt](switch-to-microsoft-defender-migration.md)   |
 |Du har migrerat till Microsoft Defender för & Microsoft Defender Antivirus och du behöver hjälp med nästa steg, till exempel konfigurera ytterligare funktioner eller finjustera dina säkerhetsinställningar. | [Hantera Microsoft Defender för Slutpunkt, efter migrering](manage-atp-post-migration.md) |
 
 
-## <a name="got-feedback"></a>Har du feedback att ge?
+## <a name="do-you-have-feedback-for-us"></a>Har du feedback till oss?
 
 Berätta vad du tycker! Skicka feedback längst ned på sidan. Vi tar med din feedback i beräkningen när vi fortsätter att förbättra och lägger till i våra migreringsvägledning.
 

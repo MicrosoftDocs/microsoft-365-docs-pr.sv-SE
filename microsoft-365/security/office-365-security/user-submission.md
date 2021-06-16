@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan lära sig hur de konfigurerar en postlåda för att samla in skräppost och nätfiske som rapporterats av användare.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4337b29e0718e23f43b441526232ec6ef66be1d
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 4827ce149632d0e37dbe9c3dc5fc8325dbfa8afa
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879210"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929881"
 ---
 # <a name="user-submissions-policy"></a>Princip för användarinskick
 
@@ -56,21 +56,21 @@ Använd följande artiklar för att konfigurera förutsättningarna som krävs s
 
 - Inaktivera URL-genomsökning av meddelanden i den anpassade postlådan. Använd [Konfigurera Valv-länkar](set-up-safe-links-policies.md) i Defender för Office 365 för att skapa en princip för  Valv-länkar med inställningen Av för Välj åtgärden för okända potentiellt skadliga URL-adresser i **meddelanden.**
 
-- Skapa en princip mot skadlig programvara för att inaktivera automatisk rensning av skadlig programvara utan timme. Se [Använda Säkerhets- & Efterlevnadscenter](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) för att skapa principer för skydd mot skadlig programvara och ange Automatisk rensning under **nolltimmar till** **Av.**
+- Skapa en princip mot skadlig programvara för att inaktivera automatisk rensning av skadlig programvara utan timme. Se [Använda Microsoft 365 Defender-portalen](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) för att skapa principer för skydd mot skräppost och ställ in Automatisk rensning under Noll **timme på** **Av.**
 
-- Skapa en policy för skräppostfilter för att inaktivera ZAP (Zero-hour Auto Purge) för skräppost och nätfiske i den anpassade postlådan. Se [Använda Säkerhets- & efterlevnadscenter](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) för att skapa  principer för skydd mot skräppost och avmarkera kryssrutorna On för **Spam ZAP** och **Phish ZAP.**
+- Skapa en policy för skräppostfilter för att inaktivera ZAP (Zero-hour Auto Purge) för skräppost och nätfiske i den anpassade postlådan. Se [Använda Microsoft 365 Defender-portalen](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) för att skapa principer  mot skräppost och avmarkera kryssrutorna On för **Spam ZAP** och **Phish ZAP**.
 
 - Inaktivera skräppostregeln i den anpassade postlådan. Använd [Konfigurera skräppostinställningar på Exchange Online för att](configure-junk-email-settings-on-exo-mailboxes.md) inaktivera skräppostregeln. När EOP har inaktiverats kan det inte flytta meddelanden till  mappen Skräppost baserat på åtgärden skräppostfiltreringsåtgärden Flytta meddelandet till mappen Skräppost eller samlingen lista över säkra e-postmeddelanden i postlådan.
 
-När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav använder du säkerhets- och [&-efterlevnadscentret](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) för att konfigurera postlådan för användarinskick (i den här artikeln).
+När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav implementerar du proceduren som anges i [Använda Microsoft 365 Defender-portalen](#use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox)för att konfigurera postlådan för användarinskick.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. För att gå direkt till **sidan användarinskickade** uppgifter använder du <https://protection.office.com/userSubmissionsReportMessage> .
+- Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com/>. Använd för att gå **direkt till sidan** Inskickade <https://security.microsoft.com/reportsubmission> material.
 
 - Du måste vara medlem i någon av följande rollgrupper för att kunna ändra konfigurationen för användarinskick:
 
-  - **Organisationshantering** eller **Säkerhetsadministratör** i [Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md).
+  - **Organisationshantering** eller **säkerhetsadministratör** i [Microsoft 365 Defender-portalen](permissions-in-the-security-and-compliance-center.md).
   - **Organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Du behöver åtkomst till Exchange Online PowerShell. Om kontot som du försöker använda inte har åtkomst till Exchange Online PowerShell får du ett felmeddelande som ser ut så här när du anger postlådan för inskickade inskickningar:
@@ -82,9 +82,9 @@ När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav anv�
   - [Aktivera eller inaktivera åtkomst till Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [Klientåtkomstregler i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Använd Säkerhets- & kompatibilitetscenter för att konfigurera postlådan för användarinskick
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Använda Defender Microsoft 365 portalen för att konfigurera postlådan för användarinskick
 
-1. Gå till användarinskick & av  hothanteringspolicyn i \>  \> **Säkerhets- och efterlevnadscenter.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & regler Hotprinciper** Användaren har \>  \> **rapporterat meddelandeinställningar** \> **Användarinskick.**
 
 2. På sidan **Användarinskickade** objekt som visas väljer du något av följande alternativ:
 

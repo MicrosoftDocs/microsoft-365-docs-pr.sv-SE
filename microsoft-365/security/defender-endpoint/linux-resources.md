@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 176ee89c8d60a1515855296e2565f0649f908a33
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aaf9c0a8eef4e050ca034d1aee69d24c5adb909d
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933331"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930373"
 ---
 # <a name="resources"></a>Resurser
 
@@ -31,6 +31,7 @@ ms.locfileid: "51933331"
 
 
 **Gäller för:**
+
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -69,6 +70,7 @@ Om du kan återskapa ett problem ökar du först loggningsnivån, kör systemet 
    ```bash
    mdatp log level set --level info
    ```
+
    ```Output
    Log level configured successfully
    ```
@@ -77,7 +79,8 @@ Om du kan återskapa ett problem ökar du först loggningsnivån, kör systemet 
 
 Om ett fel uppstår under installationen rapporterar installationsprogrammet bara ett allmänt fel.
 
-Den detaljerade loggen sparas i `/var/log/microsoft/mdatp_install.log` . Om du upplever problem under installationen kan du skicka den här filen till oss så att vi kan hjälpa till att diagnostisera orsaken.
+Den detaljerade loggen sparas i `/var/log/microsoft/mdatp/install.log` .
+Om du upplever problem under installationen kan du skicka den här filen till oss så att vi kan hjälpa till att diagnostisera orsaken.
 
 ## <a name="uninstall"></a>Avinstallera
 
@@ -104,7 +107,7 @@ I följande tabell visas kommandon för några av de vanligaste scenarierna. Kö
 |Grupp                 |Scenario                                                |Kommando                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Konfiguration         |Aktivera/inaktivera realtidsskydd                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
-|Konfiguration         |Aktivera/inaktivera beteendeövervakning                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
+|Konfiguration         |Aktivera/inaktivera beteendeövervakning                         |`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |Konfiguration         |Aktivera/inaktivera molnskydd                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |Konfiguration         |Aktivera/inaktivera produktdiagnostik                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |Konfiguration         |Aktivera/inaktivera automatisk exempelinskickning                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |

@@ -3,7 +3,7 @@ title: Office 365 säkerhet, Microsoft Defender för Office 365, EOP, MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/13/2020
+ms.date: 06/11/2021
 audience: Admin
 ms.topic: conceptual
 localization_priority: Normal
@@ -16,26 +16,25 @@ ms.collection:
 description: Säkerhet i Office 365, från EOP till Defender för Office 365 abonnemang 1 och 2, Standard jämfört med strikt säkerhetskonfigurationer med mera. Förstå vad du har och hur du skyddar dina egenskaper.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db37718ce2feae9c79ff6b323eb22e30f24e72b2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6ecdfe324ded6224745b0e2eac087e432ac76c83
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207167"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930253"
 ---
-# <a name="office-365-security-overview"></a>Översikt för Office 365 säkerhet
+# <a name="microsoft-defender-for-office-365-security-overview"></a>Översikt över Office 365 Microsoft Defender
 
 **Gäller för**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 
-
-Den här artikeln beskriver de nya säkerhetsegenskaperna i molnet. Oavsett om du är en del av ett Säkerhetscenter är du en säkerhetsadministratör som är ny till utrymmet eller vill uppdatera dig. Då börjar vi.
+Den här artikeln presenterar ditt nya Microsoft Defender för Office 365 säkerhetsegenskaper i molnet. Oavsett om du är en del av ett Säkerhetscenter är du en säkerhetsadministratör som är ny till utrymmet eller vill uppdatera dig. Då börjar vi.
 
 > [!CAUTION]
 > ***Klicka på denna länk*** om du använder **Outlook.com**, **Microsoft 365 Family** eller **Microsoft 365 Personal** och vill ha information om *Säkra länkar* eller *Säkra bifogade filer*: [Avancerad Outlook.com-säkerhet för Microsoft 365-prenumeranter](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-## <a name="office-365-security-spelled-out"></a>Office 365 säkerhet utskrivet
+## <a name="what-is-defender-for-office-365-security"></a>Vad är Defender för Office 365 säkerhet
 
 I varje Office 365-prenumeration ingår säkerhetsfunktioner. Vilka mål och åtgärder du kan ta beror på vilka prenumerationer som är i fokus. I Säkerhet i Office 365 finns det tre huvudsakliga säkerhetstjänster (eller produkter) kopplade till din prenumerationstyp:
 
@@ -57,8 +56,6 @@ Du är kanske van vid att se de här tre komponenterna som diskuterats på det h
 
 Men när det gäller arkitektur börjar vi med att se varje del som kumulativa lager av säkerhet, var och en med betoning på säkerheten. Mer så här:
 
-<!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
-
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP och Microsoft Defender för Office 365 samt deras relationer till varandra med tjänstefaktorer, inklusive en anteckning om e-postautentisering.":::
 
 Även om var och en av de här tjänsterna framhäver ett mål från skydda, identifiera, undersöka och svara ***alla** _ tjänsterna kan utföra _ *_något_** av målen för att skydda, identifiera, undersöka och svara.
@@ -73,8 +70,6 @@ Om du har En Office 365 E3 eller nedanför har du EOP, men med alternativet att 
 > Om din prenumeration varken är Office 365 E3 eller E5 kan du fortfarande kontrollera om du har möjlighet att uppgradera till Microsoft Defender för Office 365 P1. Om du är intresserad visar [den här webbsidan](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) prenumerationer som är kvalificerade för Uppgraderingen av Microsoft Defender för Office 365 P1 (kontrollera slutet av sidan för det finstilta).
 
 ## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>Office 365 säkerhet stege från EOP till Microsoft Defender för Office 365
-
-![EOP och Microsoft Defender för Office 365 samt deras säkerhetsbetoning, med fokus från att Skydda och Identifiera till att Undersöka och Svara. Konfiguration av e-postautentisering (minst DKIM och DMARC) bör konfigureras för EOP och uppåt.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 > [!IMPORTANT]
 > Läs mer på följande sidor: [Exchange Online Protection](exchange-online-protection-overview.md)och [Defender för Office 365](defender-for-office-365.md).
@@ -117,7 +112,7 @@ Fördelar med **Defender för Office 365 Abonnemang 2** (hittills):
 
 Därför utökar Microsoft Defender för Office 365 P2 ***undersökning och svar*** sidan av hemmet, och lägger till en ny jaktstyrka. Automatisering.
 
-I Microsoft Defender för Office 365 P2 kallas det primära sökverktyget **Hotutforskaren** i stället för Realtidsidentifiering. Om du ser Hotutforskaren när du går till Säkerhetscenter är du i Microsoft Defender för Office 365 P2.
+I Microsoft Defender för Office 365 P2 kallas det primära sökverktyget **Hotutforskaren** i stället för Realtidsidentifiering. Om du ser Hotutforskaren när du navigerar till Microsoft 365 Defender-portalen är du i Microsoft Defender för Office 365 P2.
 
 Om du vill gå in på information om Microsoft Defender för Office 365 P1 och P2 kan du **[hoppa till den här artikeln](defender-for-office-365.md)**.
 
@@ -159,3 +154,4 @@ Komma i kapp med [nyheter i Microsoft Defender för Office 365 (inklusive EOP-ut
 [Använda Hotutforskaren eller Realtidsidentifieringar](threat-explorer.md)
 
 Använda [Attacksimulator i Defender för Office 365](attack-simulator.md)
+

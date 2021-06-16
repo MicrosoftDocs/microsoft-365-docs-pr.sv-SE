@@ -15,12 +15,12 @@ ms.custom:
 description: Lär dig Exchange Online Protection (EOP) kan skydda din lokala e-postorganisation i fristående och hybridmiljöer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad083e828fbed27cce4b8929c1bee3081c983c17
-ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
+ms.openlocfilehash: a925b251ff79aec5acaa0b2c1da2aee3f5a6d70d
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52707290"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930169"
 ---
 # <a name="exchange-online-protection-overview"></a>Översikt över Exchange Online Protection
 
@@ -34,7 +34,7 @@ ms.locfileid: "52707290"
 Exchange Online Protection (EOP) är den molnbaserade filtreringstjänsten som skyddar organisationen mot skräppost, skadlig programvara och andra e-posthot. EOP ingår i alla Microsoft 365 med Exchange Online postlådor.
 
 > [!NOTE]
-> EOP är också tillgängligt för sig själv för att skydda lokala postlådor och i hybridmiljöer för att skydda lokala Exchange postlådor. Mer information finns i [Fristående Exchange Online Protection](/exchange/standalone-eop/standaonline-eop).
+> EOP är också tillgängligt för sig själv för att skydda lokala postlådor och i hybridmiljöer för att skydda lokala Exchange postlådor. Mer information finns i [Fristående Exchange Online Protection](/exchange/standalone-eop/standalone-eop).
 
 Anvisningarna för att konfigurera säkerhetsfunktionerna i EOP och en jämförelse med den extra säkerhet du får i Microsoft Defender för Office 365, [se skydda mot hot.](protect-against-threats.md) De rekommenderade inställningarna för EOP-funktioner finns i [Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet.](recommended-settings-for-eop-and-office365.md)
 

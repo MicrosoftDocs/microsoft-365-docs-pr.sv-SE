@@ -18,12 +18,12 @@ ms.collection:
 description: Administratörer kan läsa mer om hur de visar, skapar, ändrar och tar bort Valv-principer och globala Valv-länkar i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 61cb4746289a8acbdd9af7f668010604de511902
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 40ae52cfce53c3fa14253a94e72f1a2bccda9a86
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694503"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929833"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer Valv Länkar i Microsoft Defender för Office 365
 
@@ -43,7 +43,7 @@ Det finns ingen inbyggd eller standardprincip för Valv länkar. Om du Valv län
 > [!NOTE]
 > Du konfigurerar de globala inställningarna Valv skydd **vid länkar utanför** Valv Principer för länkar. Anvisningar finns i [Konfigurera globala inställningar för Valv i Microsoft Defender för Office 365.](configure-global-settings-for-safe-links.md)
 
-Du kan konfigurera principer för Valv-länkar i Säkerhets- och efterlevnadscenter för & eller i PowerShell (Exchange Online PowerShell för kvalificerade Microsoft 365-organisationer med postlådor i Exchange Online– fristående EOP PowerShell för organisationer utan Exchange Online-postlådor, men med Microsoft Defender för Office 365-tilläggsprenumerationer).
+Du kan konfigurera principer för Valv-länkar i Microsoft 365 Defender-portalen eller i PowerShell (Exchange Online PowerShell för kvalificerade Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor, men med Microsoft Defender för Office 365-tilläggsprenumerationer).
 
 De grundläggande elementen i en Valv-länkprincip är:
 
@@ -53,7 +53,7 @@ De grundläggande elementen i en Valv-länkprincip är:
 > [!IMPORTANT]
 > Administratörer bör överväga olika konfigurationsinställningar för Säkra länkar. Ett av de tillgängliga alternativen är att inkludera användaridentifierande information i Säkra länkar. Med den här funktionen kan *säkerhets ops-team* undersöka potentiella användarintrång, vidta korrigerande åtgärder och begränsa dyrbara överträdelser.
 
-Skillnaden mellan dessa två element är inte uppenbara när du hanterar Valv länkar i Säkerhets- & efterlevnadscenter:
+Skillnaden mellan dessa två element är inte uppenbara när du hanterar Valv Länkar i Microsoft 365 Defender-portalen:
 
 - När du skapar Valv princip för länkar skapar du egentligen en regel för säkra länkar och den tillhörande principen för säkra länkar samtidigt med samma namn för båda.
 - När du ändrar en Valv-länkprincip ändras regeln för säkra länkar om namn, prioritet, aktiverad eller inaktiverad, och mottagarfilter. Alla andra inställningar ändrar den associerade principen för säkra länkar.
@@ -63,19 +63,19 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com/>. Om du vill gå **direkt Valv sidan** Länkar använder du <https://protection.office.com/safelinksv2> .
+- Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com/>. Om du vill gå **direkt Valv sidan** Länkar använder du <https://security.microsoft.com/safelinksv2> .
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Du måste ha tilldelats behörigheter innan du kan utföra procedurerna i den här artikeln:
-  - Om du vill skapa, ändra och ta bort Valv-länkar måste du  vara medlem i rollgrupperna Organisationshantering eller Säkerhetsadministratör i  säkerhets- och efterlevnadscentret för & och medlem i rollgruppen Organisationshantering i Exchange Online.  
+  - Om du vill skapa, ändra och ta bort Valv-länkar måste du  vara medlem i rollgrupperna Organisationshantering  eller Säkerhetsadministratör  i Microsoft 365 Defender-portalen och medlem i rollgruppen Organisationshantering i Exchange Online. 
   - För skrivskyddade åtkomst Valv länkar måste du vara medlem i rollgrupperna **Global Reader** **eller Säkerhetsläsare.**
 
-  Mer information finns i [Behörigheter i Säkerhets- & säkerhets- och](permissions-in-the-security-and-compliance-center.md) [behörighetscenter i Exchange Online.](/exchange/permissions-exo/permissions-exo)
+  Mer information finns i [Behörigheter i Microsoft 365 Defender-portalen](permissions-in-the-security-and-compliance-center.md) och [Behörigheter i Exchange Online.](/exchange/permissions-exo/permissions-exo)
 
   > [!NOTE]
   > 
-  > - Genom att lägga till användare i motsvarande Azure Active Directory-rollen i Administrationscentret för Microsoft 365 får användarna den behörighet som krävs i Säkerhets- och efterlevnadscentret _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  > - Om du lägger till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna  de behörigheter som krävs i Microsoft 365 Defender-portalen och behörigheter för andra funktioner Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   . - **Rollgruppen Skrivskyddade** organisationshantering i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) även skrivskyddade funktioner för funktionen.
 
 - Vi rekommenderar inställningar för att Valv principer för länkar i Valv [principinställningar för länkar.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
@@ -84,11 +84,11 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
 - [Nya funktioner läggs kontinuerligt till i Microsoft Defender för Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). När nya funktioner läggs till kan du behöva justera dina befintliga principer Valv Länkar.
 
-## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a>Använd säkerhets- & säkerhets- och efterlevnadscenter för att Valv principer
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Använda Defender Microsoft 365 portalen för att skapa Valv länkar
 
-Om du skapar Valv egen princip för &-länkar i Säkerhets- och efterlevnadscenter skapas regeln för säkra länkar och den tillhörande principen för säkra länkar samtidigt med samma namn för båda.
+När du skapar Valv egen princip för Microsoft 365 Defender-portalen skapas regeln för säkra länkar och den tillhörande principen för säkra länkar samtidigt med samma namn för båda.
 
-1. I Säkerhets- & efterlevnadscenter går du **till** ATP för \> **hothanteringspolicy** Valv \> **Länkar.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & principer för** hot \> **Valv** \> **.**
 
 2. På sidan **Valv klickar** du på **Skapa**.
 
@@ -158,29 +158,29 @@ Om du skapar Valv egen princip för &-länkar i Säkerhets- och efterlevnadscent
 
    Klicka på Slutför när du är **klar.**
 
-## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>Använd säkerhets- & säkerhets- och efterlevnadscenter för att Valv principer för länkar
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Använda Defender Microsoft 365 portalen för att visa Valv principer för länkar
 
-1. I Säkerhets- & efterlevnadscenter går du **till** ATP för \> **hothanteringspolicy** Valv \> **Länkar.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & principer för** hot \> **Valv** \> **.**
 
 2. På **Valv länkar** väljer du en princip i listan och klickar på den (markera inte kryssrutan).
 
    Principinformationen visas i en flyg ut
 
-## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>Ändra principer för & och länkar med hjälp Valv Säkerhets- Valv Säkerhets- och efterlevnadscenter
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Använda Defender Microsoft 365 portalen för att ändra Valv länkar
 
-1. I Säkerhets- & efterlevnadscenter går du **till** ATP för \> **hothanteringspolicy** Valv \> **Länkar.**
+1. I Microsoft 365 Defender-portalen går du till ***Principer & principer för** hot \> **Valv** \> **.**
 
 2. På **Valv länkar** väljer du en princip i listan och klickar på den (markera inte kryssrutan).
 
 3. I den utfällna menyn med principinformation klickar du på **Redigera princip**.
 
-De tillgängliga inställningarna som visas är identiska med de som beskrivs i avsnittet Använda säkerhets- & [efterlevnadscenter](#use-the-security--compliance-center-to-create-safe-links-policies) för att skapa Valv principer.
+De tillgängliga inställningarna som visas är identiska med de som beskrivs i avsnittet [använda Defender Microsoft 365 för att skapa Valv-länkar.](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)
 
 Läs följande avsnitt om du vill aktivera eller inaktivera en princip eller ange prioritetsordning för principen.
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Aktivera eller inaktivera Valv länkar
 
-1. I Säkerhets- & efterlevnadscenter går du **till** ATP för \> **hothanteringspolicy** Valv \> **Länkar.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & principer för** hot \> **Valv** \> **.**
 
 2. Observera värdet i **kolumnen** Status:
 
@@ -197,11 +197,11 @@ För mer information om ordningsföljden och hur flera policyer utvärderas och 
 Valv Länkprinciper visas i den ordning de bearbetas (den första principen har **prioritetsvärdet** 0).
 
 > [!NOTE]
-> I Säkerhets- & efterlevnadscenter kan du bara ändra prioritet för Valv Länkar när du har skapat den. I PowerShell kan du åsidosätta standardprioritet när du skapar regeln om säkra länkar (vilket kan påverka prioriteringen för befintliga regler).
+> I Microsoft 365 Defender-portalen kan du bara ändra prioritet för Valv Länkar när du har skapat den. I PowerShell kan du åsidosätta standardprioritet när du skapar regeln om säkra länkar (vilket kan påverka prioriteringen för befintliga regler).
 
-Du ändrar prioriteten för en princip genom att flytta principen uppåt eller nedåt i listan (du kan inte ändra **prioritetsnumret** direkt i Säkerhets- och efterlevnadscenter).
+Om du vill ändra prioriteten för en princip flyttar du principen uppåt  eller nedåt i listan (du kan inte direkt ändra prioritetsnumret i Microsoft 365 Defender-portalen).
 
-1. I Säkerhets- & efterlevnadscenter går du **till** ATP för \> **hothanteringspolicy** Valv \> **Länkar.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & principer för** hot \> **Valv** \> **.**
 
 2. På **Valv länkar** väljer du en princip i listan och klickar på den (markera inte kryssrutan).
 
@@ -217,9 +217,9 @@ Du ändrar prioriteten för en princip genom att flytta principen uppåt eller n
 
 5. Klicka på **Stäng** när du är klar.
 
-## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>Använda Säkerhets- och & säkerhets- och efterlevnadscenter för att ta Valv principer för länkar
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Använda Defender-Microsoft 365 för att ta bort principer Valv Länkar
 
-1. I Säkerhets- & efterlevnadscenter går du **till** ATP för \> **hothanteringspolicy** Valv \> **Länkar.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & principer för** hot \> **Valv** \> **.**
 
 2. På **Valv länkar** väljer du en princip i listan och klickar på den (markera inte kryssrutan).
 
@@ -246,12 +246,12 @@ Att skapa Valv princip för Länkar i PowerShell är en process i två steg:
 > 
 > - Du kan skapa en ny regel för säkra länkar och tilldela en befintlig princip för säkra länkar som inte har associerats till den. En regel för säkra länkar kan inte associeras med mer än en princip för säkra länkar.
 > 
-> - Du kan konfigurera följande inställningar för nya principer för säkra länkar i PowerShell som inte är tillgängliga i Säkerhets- och &-efterlevnadscenter förrän du har skapat principen:
+> - Du kan konfigurera följande inställningar för nya principer för säkra länkar i PowerShell som inte är tillgängliga i Microsoft 365 Defender-portalen förrän du har skapat principen:
 > 
 >   - Skapa den nya principen som _inaktiverad (aktiverad_ `$false` på **cmdleten New-SafeLinksRule).**
 >   - Ange prioritet för principen vid skapandet _(Priority_ _\<Number\>_ ) på **New-SafeLinksRule-cmdleten).**
 > 
-> - En ny princip för säkra länkar som du skapar i PowerShell visas inte i Säkerhets- och &-efterlevnadscenter förrän du tilldelar principen till en regel för säkra länkar.
+> - En ny princip för säkra länkar som du skapar i PowerShell visas inte i Microsoft 365 Defender-portalen förrän du tilldelar principen till en regel för säkra länkar.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>Steg 1: Använda PowerShell för att skapa en princip för säkra länkar
 
@@ -360,7 +360,7 @@ Detaljerad information om syntax och parametrar finns i [Get-SafeLinksRule.](/po
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>Använda PowerShell för att ändra principer för säkra länkar
 
-Du kan inte byta namn på en princip för säkra länkar i PowerShell **(Set-SafeLinksPolicy-cmdleten** har ingen _namnparameter)._ När du byter namn Valv säkerhetslänkar i Säkerhets- och & säkerhets- och efterlevnadscenter byter du bara namn på regeln för säkra _länkar._
+Du kan inte byta namn på en princip för säkra länkar i PowerShell **(Set-SafeLinksPolicy-cmdleten** har ingen _namnparameter)._ När du byter namn Valv princip för Microsoft 365 Defender-portalen byter du bara namn på regeln för säkra _länkar._
 
 Den enda ytterligare faktorn för att ändra principer för säkra länkar i PowerShell är den tillgängliga syntaxen för parametern _DoNotRewriteUrls_ (listan ["Ange](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)inte om följande URL:er"):
 
@@ -472,13 +472,13 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 Detaljerad information om syntax och parametrar finns i [Remove-SafeLinksRule.](/powershell/module/exchange/remove-safelinksrule)
 
-Kontrollera att Valv söker igenom meddelanden genom att titta i tillgängliga Microsoft Defender Office 365. Mer information finns i [Visa rapporter för Defender för Office 365](view-reports-for-mdo.md) och Använda [Utforskaren i Säkerhets- & Kompatibilitetscenter.](threat-explorer.md)
+Kontrollera att Valv söker igenom meddelanden genom att titta i tillgängliga Microsoft Defender Office 365. Mer information finns i [Visa rapporter för Defender för Office 365](view-reports-for-mdo.md) och Använda [Utforskaren i Microsoft 365 Defender-portalen.](threat-explorer.md)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Hur vet jag att de här procedurerna fungerade?
 
 Kontrollera att du har skapat, ändrat eller tagit bort principer Valv länkar genom att göra något av följande:
 
-- I Säkerhets- & efterlevnadscenter går du **till** ATP för \> **hothanteringspolicy** Valv \> **Länkar.** Kontrollera listan med principer, deras **statusvärden** och deras **prioritetsvärden.** Om du vill visa mer information väljer du principen i listan och visar informationen i den utfäll plats du vill ha.
+- I Defender Microsoft 365 portalen går du till **Principer för & principer** för hot \> **Valv** \> **.** Kontrollera listan med principer, deras **statusvärden** och deras **prioritetsvärden.** Om du vill visa mer information väljer du principen i listan och visar informationen i den utfäll plats du vill ha.
 
 - I Exchange Online PowerShell eller Exchange Online Protection PowerShell ersätter du med namnet på principen eller regeln, kör följande kommando och \<Name\> kontrollerar inställningarna:
 

@@ -1,5 +1,5 @@
 ---
-title: Office 365 säkerhet, Microsoft Defender för Office 365, EOP, MSDO
+title: Office 365 Säkerhetsöversikt, Microsoft Defender för Office 365, EOP, MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -13,17 +13,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Säkerhet i Office 365, från EOP till Defender för Office 365 abonnemang 1 och 2, Standard jämfört med strikt säkerhetskonfigurationer med mera. Förstå vad du har och hur du skyddar dina egenskaper.
+description: Säkerhet i Office 365, från EOP till Defender för Office 365 abonnemang 1 och 2, Standard jämfört med strikt säkerhetskonfigurationer med mera. Förstå vad du har och lär dig hur du skyddar dina egenskaper.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db37718ce2feae9c79ff6b323eb22e30f24e72b2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8040a6b7758e271d68af872bc2acf9ebac3af9d4
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207171"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926493"
 ---
-# <a name="office-365-security-overview"></a>Översikt för Office 365 säkerhet
+# <a name="office-365-security"></a>Office 365-säkerhet
+
 
 **Gäller för**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

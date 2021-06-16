@@ -17,16 +17,18 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 2ea8cc323220024406a49eda8d6a7c0b42ca71a4
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 82c734d8a394be048f9be862be114fae7f90e6b3
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594055"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930481"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Växla till Microsoft Defender för slutpunkt – fas 2: Installation
 
@@ -93,14 +95,15 @@ Registernyckeln [DisableAntiSpyware](/windows-hardware/customize/desktop/unatten
 1. Som lokal administratör på slutpunkten eller enheten öppnar du Windows PowerShell.
 
 2. Kör följande PowerShell-cmdlets: <br/>   
+
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
-   > [!NOTE]
-   > När du använder DISM-kommandot i en aktivitetssekvens som kör PS krävs cmd.exe sökväg.
-   > Exempel:<br/>
-   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
-   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   När du använder DISM-kommandot i en aktivitetssekvens som kör PS krävs cmd.exe sökväg.
+   Exempel:<br/>
+   
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
+   `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. Kontrollera att Microsoft Defender Antivirus är igång med följande PowerShell-cmdlet: <br/>
    `Get-Service -Name windefend`
@@ -113,6 +116,7 @@ Registernyckeln [DisableAntiSpyware](/windows-hardware/customize/desktop/unatten
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. Redigera (eller skapa) en DWORD-post **som heter ForcePassiveMode** och ange följande inställningar:
+
    - Ställ in DWORD-värdet på **1.**
    - Under **Bas** väljer du **Hexadecimal**.
 

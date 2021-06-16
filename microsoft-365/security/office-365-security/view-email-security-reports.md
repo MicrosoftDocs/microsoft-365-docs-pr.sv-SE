@@ -1,5 +1,5 @@
 ---
-title: Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
+title: Visa e-postsäkerhetsrapporter i Microsoft 365 Defender-portalen
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur du hittar och använder e-postsäkerhetsrapporter för din organisation. Säkerhetsrapporter för e-post finns tillgängliga i & säkerhets- och efterlevnadscenter.
+description: Lär dig hur du hittar och använder e-postsäkerhetsrapporter för din organisation. Säkerhetsrapporter för e-post finns tillgängliga Microsoft 365 Defender-portalen.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bb7570722fcc957ca86d68f6b42ef254578d7bd7
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531022"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930331"
 ---
-# <a name="view-email-security-reports-in-the-security--compliance-center"></a>Visa rapporter om e-postsäkerhet i Säkerhets- och efterlevnadscenter
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visa e-postsäkerhetsrapporter i Microsoft 365 Defender-portalen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,9 +35,9 @@ ms.locfileid: "52531022"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Det finns en mängd olika rapporter i Säkerhets- och efterlevnadscenter för [&](https://protection.office.com) som hjälper dig se hur e-postsäkerhetsfunktioner, till exempel funktioner för skydd mot skräppost, skadlig programvara och kryptering i Microsoft 365 skyddar organisationen. Om du har nödvändiga [behörigheter kan](#what-permissions-are-needed-to-view-these-reports)du visa de här rapporterna i Säkerhets- & genom att gå till **Instrumentpanelen** \> **rapporter.** Gå direkt till instrumentpanelen Rapporter genom att öppna <https://protection.office.com/insightdashboard> .
+Det finns en mängd olika rapporter på [Microsoft 365 Defender-portalen](https://security.microsoft.com) som hjälper dig se hur e-postsäkerhetsfunktioner, till exempel funktioner för skydd mot skräppost, skadlig programvara och kryptering i Microsoft 365 skyddar organisationen. Om du har [nödvändiga](#what-permissions-are-needed-to-view-these-reports)behörigheter kan du visa de här rapporterna  i Microsoft 365 Defender-portalen genom att gå till Rapporterar e-& för samarbete \>  \> **E& och samarbetsrapporter**. Gå direkt till instrumentpanelen Rapporter genom att öppna <https://security.microsoft.com/emailandcollabreport> .
 
-![Instrumentpanelen Rapporter i Säkerhets- & Efterlevnadscenter](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Instrumentpanelen Rapporter i Microsoft 365 Defender-portalen](../../media/email-collaboration-reports.png)
 
 ## <a name="compromised-users-report"></a>Rapport om komprometterade användare
 
@@ -50,7 +50,7 @@ I **rapporten Komprometterade** användare visas antalet användarkonton som har
 
 I mängdvyn visas data för de senaste 90 dagarna och i detaljvyn visas data för de senaste 30 dagarna.
 
-Om du vill visa rapporten öppnar du [säkerhets- & efterlevnadscenter](https://protection.office.com), går till  \> **instrumentpanelen rapporter** och väljer **Komprometterade användare.** Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=CompromisedUsers> .
+Om du vill visa rapporten öppnar du Microsoft 365  [Defender-portalen](https://security.microsoft.com), går till E& och samarbete via e& och klickar på Visa \>  \>  **information** under **Komprometterade användare.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/CompromisedUsers> .
 
 Du kan filtrera både diagrammet och informationstabellen genom att klicka **på Filter** och välja ett eller flera av följande värden:
 
@@ -80,7 +80,7 @@ Krypteringsrapporten **är** tillgänglig i EOP (prenumerationer med postlådor 
 
 I mängdvyn kan du filtrera de senaste 90 dagarna, medan detaljvyn tillåter filtrering i 10 dagar.
 
-Om du vill visa rapporten öppnar du [Säkerhets- & Kompatibilitetscenter](https://protection.office.com), går till **Reports** \> **Dashboard** och väljer **Encryption report**. Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=EncryptionReport> .
+Om du vill visa rapporten öppnar du Microsoft 365  [Defender-portalen](https://security.microsoft.com), går till Rapporterar e-& samarbete E& och samarbetsrapporter och klickar på Visa \>  \>  **information** under **Krypteringsrapport.** Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=EncryptionReport> .
 
 Mer information om kryptering finns i [E-postkryptering i Microsoft 365](../../compliance/email-encryption.md).
 
@@ -153,7 +153,7 @@ I **rapporten om identifiering av skadlig programvara i** e-postmeddelanden visa
 
  Mängdvyfiltret tillåter 90 dagar, medan filtret i detaljtabellen bara tillåter 10 dagar.
 
-Om du vill visa rapporten öppnar du [Säkerhets- och &,](https://protection.office.com)går till **instrumentpanelen** Rapporter och väljer Identifiering av \>  skadlig programvara **i e-post.** Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=MalwareDetections> .
+Om du vill visa rapporten öppnar du [Microsoft 365 Defender-portalen](https://security.microsoft.com), går till E-& rapporter för samarbete & skicka  \>  \> **e& samarbetsrapporter**  och klickar på Visa information under Skadlig programvara som upptäckts via e-post.  Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/MalwareDetections> .
 
 ![Widget för identifiering av skadlig programvara i e-postwidgeten i instrumentpanelen Rapporter](../../media/malware-detections-widget.png)
 
@@ -191,7 +191,7 @@ Rapporten **Om identifiering av** skräppost visar e-postmeddelanden som har blo
 
 I mängdvyn kan du filtrera i 90 dagar, medan detaljtabellen tillåter 10 dagars filtrering.
 
-Om du vill visa rapporten öppnar du [Säkerhets- &,](https://protection.office.com)går till **instrumentpanelen** \> **Rapporter** och väljer **Identifiering av skräppost.** Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=SpamDetections> .
+Om du vill visa rapporten öppnar du Microsoft 365  [Defender-portalen](https://security.microsoft.com), går till Rapporterar e-& samarbete E& och samarbetsrapporter och klickar på Visa information under Identifiering av \>  \>  **skräppost.**  Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/SpamDetections> .
 
 ![Widget för identifiering av skräppost på instrumentpanelen Rapporter](../../media/spam-detections-report-widget.png)
 
@@ -255,7 +255,7 @@ I den samlade vyn för rapporten kan du filtrera i 45 dagar, medan <sup>\*</sup>
 
 <sup>\*</sup> Till slut kan du använda upp till 90 dagars filtrering.
 
-Om du vill visa rapporten öppnar [du Säkerhets- & Efterlevnadscenter](https://protection.office.com), går till **Instrumentpanelen** Rapporter \>  och väljer **Förfalskningsidentifiering.** Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=SpoofMailReport> .
+Om du vill visa rapporten öppnar du Microsoft 365  [Defender-portalen](https://security.microsoft.com), går till E-& rapporter för samarbete E& & och samarbetsrapporter och klickar på Visa information \>  \>  under **förfalskning.**  Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/SpoofMailReport> .
 
 ![Widget för identifiering av förfalskning på instrumentpanelen Rapporter](../../media/spoof-detections-widget.png)
 
@@ -269,7 +269,7 @@ Du kan filtrera både diagrammet och informationstabellen genom att klicka **på
   - **Godkänd**
   - **Fel**
   - **SoftPass**
-  - **Inga**
+  - **Ingen**
   - **Annat**
 
 - **Förfalskningstyp:** **Intern** och **Extern**
@@ -301,7 +301,7 @@ Rapporten innehåller antalet e-postmeddelanden med skadligt innehåll, till exe
 
 **Obs!** Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
 
-Om du vill visa rapporten öppnar du [säkerhets- & efterlevnadscenter](https://protection.office.com), går till **instrumentpanelen** \> **rapporter** och väljer status **för skydd mot hot.** Öppna någon av följande URL:er för att gå direkt till rapporten:
+Om du vill visa rapporten öppnar du Microsoft 365  [Defender-portalen](https://security.microsoft.com), går till Rapporterar e-& samarbete E& och klickar på Visa information under Status för skydd mot \>  \>  **hot.**  Öppna någon av följande URL:er för att gå direkt till rapporten:
 
 - Microsoft Defender för Office 365:<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
@@ -479,7 +479,7 @@ Om du **klickar på Visa** informationstabell beror den information som visas p�
 
 Den **viktigaste rapporten om** skadlig programvara visar de olika typer av skadlig programvara som identifierats av skydd mot skadlig programvara i [EOP.](anti-malware-protection.md)
 
-Om du vill visa rapporten öppnar du [Säkerhets- &,](https://protection.office.com)går till **instrumentpanelen** Rapporter \> **och** väljer Top **malware**. Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=TopMalware> .
+Om du vill visa rapporten öppnar du [Microsoft 365 Defender-portalen](https://security.microsoft.com), går till Rapporterar e-& samarbete  \> **E&** och klickar på Visa information under Mest \>  skadlig  **programvara.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/TopMalware> .
 
 ![Populära widget för skadlig programvara på instrumentpanelen Rapporter](../../media/top-malware-report-widget.png)
 
@@ -500,35 +500,33 @@ Rapporten **om skydd mot URL-hot** är tillgänglig i Microsoft Defender för Of
 
 ## <a name="user-reported-messages-report"></a>Rapport över användarrapporterade meddelanden
 
-Rapporten **Användarrapporterade** meddelanden visar information om e-postmeddelanden som användare har rapporterat som skräppost, nätfiskeförsök eller bra [e-post](enable-the-report-message-add-in.md) med hjälp av tilläggen Rapportmeddelande eller Rapport [nätfiske.](enable-the-report-phish-add-in.md)
+Rapporten **Om användarrapporter** visar information om e-postmeddelanden som användare har rapporterat som skräppost, nätfiskeförsök eller bra [e-post](enable-the-report-message-add-in.md) med hjälp av tilläggen Rapportmeddelande eller [Rapport nätfiske.](enable-the-report-phish-add-in.md)
 
 Information är tillgänglig för varje meddelande, inklusive leveransorsaken, ett sådant undantag från skräppostprincipen eller en e-postflödesregel som konfigurerats för din organisation. Om du vill visa information markerar du ett objekt i listan med användarrapporter och visar informationen på **flikarna Sammanfattning** **och** Information.
 
-![I User-Reported meddelanden visas meddelanden som användare märkt som skräppost, inte skräppost eller nätfiskeförsök.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![Rapporten Över rapporterade meddelanden visar meddelanden som användare märkt som skräppost, inte skräppost eller nätfiskeförsök.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
-Om du vill visa den här [rapporten gör & Säkerhets- och](https://protection.office.com)efterlevnadscenter på något av följande sätt:
+Du visar rapporten genom att gå [till Microsoft 365 Defender-portalen](https://security.microsoft.com)på & e-post och samarbete  \> **e&** \> **och samarbetsrapporter Användaren** har rapporterat \> **meddelanden.**
 
-- Gå till **Instrumentpanel för** \> **hantering av** hot \> **användarrapporterade meddelanden**.
+- Gå  till Rapporterar \> **e-& för samarbete** \> **E& och samarbetsrapporter** \> **Användarrapporterade meddelanden.**
 
-- Gå till **Hothanteringsgranskning** \>  \> **Av användarrapporterade meddelanden.**
-
-![Välj Hothanteringsgranskning av användarrapporter i säkerhets- & säkerhets- \> \> och efterlevnadscenter](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![I Den Microsoft 365 Defender-portalen väljer du Rapporterar \> e-& samarbete \> E& om \> samarbetsrapporter, användarrapporter](../../media/user-reported-messages.png)
 
 > [!IMPORTANT]
-> För att rapporten över användarrapporter ska fungera korrekt måste **granskningsloggning** vara aktiverad för din Office 365 miljö. Det görs vanligtvis av någon som har rollen Granskningsloggar tilldelad i Exchange Online. Mer information finns i aktivera [Microsoft 365 eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)
+> För att rapporten över användarrapporter ska fungera korrekt måste granskningsloggning vara **aktiverad** i din Office 365 miljö. Det görs vanligtvis av någon som har rollen Granskningsloggar tilldelad i Exchange Online. Mer information finns i aktivera [Microsoft 365 eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Vilka behörigheter krävs för att visa rapporterna?
 
-För att kunna visa och använda rapporterna som beskrivs i den här artikeln måste du vara medlem i någon av följande rollgrupper i Säkerhets- och & Efterlevnadscenter:
+För att kunna visa och använda rapporterna som beskrivs i den här artikeln måste du vara medlem i någon av följande rollgrupper i Microsoft 365 Defender-portalen:
 
 - **Organisationshantering**
 - **Säkerhetsadministratör**
 - **Säkerhetsläsare**
-- **Global läsare**
+- **Global Reader**
 
-Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+Mer information finns i [Behörigheter i Microsoft 365 Defender-portalen.](permissions-in-the-security-and-compliance-center.md)
 
-**Obs!** Om du lägger till användare till motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får  användarna de behörigheter som krävs i säkerhets- och efterlevnadscentret för & och behörigheter för andra Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+**Obs!** Om du lägger till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna  de behörigheter som krävs i Microsoft 365 Defender-portalen samt behörigheter för andra funktioner Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Vad händer om rapporterna inte visar data?
 
@@ -538,8 +536,8 @@ Om du inte ser data i rapporterna kan du kontrollera att dina principer är korr
 
 [Skydd mot skräppost och skadlig programvara i EOP](anti-spam-and-anti-malware-protection.md)
 
-[Smarta rapporter och insikter i Säkerhets- & Efterlevnadscenter](reports-and-insights-in-security-and-compliance.md)
+[Smarta rapporter och insikter i Microsoft 365 Defender-portalen](reports-and-insights-in-security-and-compliance.md)
 
-[Visa e-postflödesrapporter i Säkerhets- & Säkerhets- och efterlevnadscenter](view-mail-flow-reports.md)
+[Visa e-postflödesrapporter i Microsoft 365 Defender-portalen](view-mail-flow-reports.md)
 
 [Visa rapporter för Defender för Office 365](view-reports-for-mdo.md)

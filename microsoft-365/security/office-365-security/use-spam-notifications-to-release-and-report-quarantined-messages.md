@@ -21,12 +21,12 @@ ms.custom:
 description: Administratörer kan läsa mer om skräppost-aviseringar för slutanvändare för meddelanden i karantän i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f5eafbb51cd0ff32c69fa0cff85729ef95d3d1f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 30f82abc245a2f6022bd1a75b57e9d20e3e32a32
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274994"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929893"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Använda skräppost-aviseringar för användare för att släppa och rapportera meddelanden i karantän
 
@@ -58,9 +58,9 @@ En skräppost-avisering för slutanvändaren innehåller följande information f
 
 - **Spärra avsändare:** Klicka på den här länken om du vill lägga till avsändaren i listan Spärrade avsändare i din postlåda. Mer information finns i [Spärra e-postavsändare](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
-- **Version:** För skräppost (inte nätfiske) kan du släppa meddelandet här utan att gå till karantänen för & säkerhets- och efterlevnadscenter.
+- **Utgåva:** För skräppostmeddelanden (inte nätfiske) kan du släppa meddelandet här utan att gå till karantänen i Microsoft 365 Defender-portalen.
 
-- **Granska**&: Klicka på den här länken för att gå till karantän i säkerhets- och efterlevnadscentret, där du kan visa , släppa, ta bort eller rapportera dina meddelanden i karantän (beroende på varför meddelandet satt i karantän). Mer information finns i [Hitta och släppa meddelanden i karantän som en användare i EOP.](find-and-release-quarantined-messages-as-a-user.md)
+- **Granska:** Klicka på den här länken för att gå till karantän i Microsoft 365 Defender-portalen, där du kan visa ( beroende på varför meddelandet satt i karantän), släppa, ta bort eller rapportera dina meddelanden i karantän. Mer information finns i [Hitta och släppa meddelanden i karantän som en användare i EOP.](find-and-release-quarantined-messages-as-a-user.md)
 
 ![Exempel på skräppost-avisering för slutanvändare](../../media/end-user-spam-notification.png)
 

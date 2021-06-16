@@ -18,17 +18,17 @@ ms.custom:
 - seo-marvel-apr2020
 - Adm_O365
 description: Den här artikeln hjälper dig att planera nätverkets bandbreddskrav för Microsoft 365 samt finjustera och felsöka prestanda.
-ms.openlocfilehash: bf05e4128f8ba5ddecce76cb00dc945f43c9c59a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0e125011d06ce15218b8602169c08c538f5eec6c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923606"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926709"
 ---
 # <a name="network-planning-and-performance-tuning-for-microsoft-365"></a>Nätverksplanering och prestandajustering för Microsoft 365
 Innan du distribuerar för första gången eller migrerar till Microsoft 365 kan du använda informationen i följande avsnitt för att uppskatta vilken bandbredd du behöver och sedan testa och verifiera att du har tillräckligt med bandbredd för att distribuera eller migrera till Microsoft 365. En översikt finns i: [Nätverks- och migreringsplanering för Microsoft 365](network-and-migration-planning.md).
   
-|||||
+|Kategori |Beskrivning |Kategori |Beskrivning |
 |:-----|:-----|:-----|:-----|
 |**Nätverksplanering** <br/> ![Nätverk](../media/5e9dcd06-601b-4b28-88dc-f524e7548794.png)           <br/> |Vill du ha snabba anslutningar och sidor som läses in snabbt?  <br/> Läs [Få bästa möjliga anslutning och prestanda i Microsoft 365](https://aka.ms/o365perfprinciples).<br/>Läs [Microsoft 365 översikt över nätverksanslutning för](microsoft-365-networking-overview.md) att förstå begrepp.<br/> |**Mäta nätverket** <br/> ![Kalkylatorn](../media/d690a132-4884-40eb-a918-526bb3dff3cc.png)           <br/> |Läs [Microsoft 365 prestandajustering med baslinjer och prestandahistorik och](performance-tuning-using-baselines-and-history.md) Plan för [prestandafelsökning för Microsoft 365](performance-troubleshooting-plan.md).  <br/> Använd de här verktygen för [att utvärdera ditt befintliga nätverk.](network-and-migration-planning.md#calculators)  <br/> |
 |**Metodtips** <br/> ![Best practices](../media/2a659a5c-1007-47d3-a6c6-a19e018ab29b.png)           <br/> |[Rekommendationer för nätverksplanering och förbättring av migreringsprestanda för Microsoft 365.](network-and-migration-planning.md#BestPractices) Vill du komma igång och hjälpa användarna direkt? Läs [Rekommendationer för att Office 365 i ett långsamt nätverk.](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166)  <br/> [Microsoft 365 med nätverksanslutningsprinciper](./microsoft-365-network-connectivity-principles.md) hjälper dig att förstå de senaste vägsvägledningen så att du kan optimera Microsoft 365 och nätverksanslutningen på ett säkert sätt.  <br/> |**Referens** <br/> ![Bok eller journal](../media/56dff3c1-f605-48d8-811f-7d13ce639ecd.png)           <br/> |Vill du veta mer, som en lista med IP-adresser och portar? Se [referensen för nätverksplanering för Microsoft 365](network-and-migration-planning.md#NetReference).  <br/> |
