@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929560"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932824"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Vad är nytt i Microsoft Defender för Office 365
 
@@ -42,13 +42,13 @@ Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch
 > [!TIP]
 > Har du inte Microsoft Defender för Office 365 än? [Kontakta försäljning för att påbörja en utvärderingsversion](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
-## <a name="aprilmay-2021"></a>April/maj 2021 
+## <a name="aprilmay-2021"></a>April/maj 2021
 
 - [Sidan E-post](mdo-email-entity-page.md)entitet: En enhetlig 360-gradersvy av ett e-postmeddelande med bättre information om hot, autentisering och identifieringar, avonationsinformation och en helt ny förhandsgranskning av e-post.
 - [Office 365 Management API:](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)Uppdateringar för EmailEvents (RecordType 28) för att lägga till leveransåtgärd, ursprungliga och senaste leveransplatser och uppdaterad information om identifiering.
-- [Hotanalys för Defender för Office 365](/microsoft-365/security/defender/threat-analytics): Visa aktiva hot-aktör, populära tekniker och attackytor, tillsammans med omfattande rapportering från Microsoft-forskare om pågående kampanjer. 
+- [Hotanalys för Defender för Office 365](/microsoft-365/security/defender/threat-analytics): Visa aktiva hot-aktör, populära tekniker och attackytor, tillsammans med omfattande rapportering från Microsoft-forskare om pågående kampanjer.
 
-## <a name="februarymarch-2021"></a>Februari/mars 2021 
+## <a name="februarymarch-2021"></a>Februari/mars 2021
 
 - Integrering av aviserings-ID (sökning med aviserings-ID Alert-Explorer navigering) i [sökupplevelser](threat-explorer.md)
 - Öka gränserna för export av poster från 9 990 till 200 000 i [upplevelser för söker](threat-explorer.md)
@@ -89,7 +89,7 @@ Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch
   - Avancerade NOT-filter (de här avancerade filtreringsalternativen innehåller inte, inkluderar inte osv.)
   - Granular time filters (day, hour, half-hour)
 
-- **Widgeten** Incidenter är nu **widgeten Åtgärdscenter.** (Om du vill visa dina säkerhetswidgetar går du Microsoft 365 Defender-portalen till **E-& samarbete** \> **Granska**.) (Microsoft Defender för Office 365 abonnemang 2)
+- **Widgeten** Incidenter är nu **widgeten Åtgärdscenter.** (Om du vill visa dina säkerhetswidgetar i & säkerhets- och efterlevnadscenter går du till **Hothantering** \> **Granska**.) (Microsoft Defender för Office 365 abonnemang 2)
 
 - [Valv Dokument i Microsoft 365](safe-docs.md) **(förhandsgranskning)**
 

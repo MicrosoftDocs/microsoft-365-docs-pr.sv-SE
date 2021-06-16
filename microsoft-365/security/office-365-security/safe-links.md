@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: I den här artikeln kan administratörer läsa mer om skydd mot Valv-länkar i Defender för Office 365 för att skydda organisationen från nätfiske och andra angrepp som använder skadliga URL:er.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9775c67a35d45595f68cd364dc4d70e9985b7e9e
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 240056565d88977aa7019f5a14e2db98a8dbb6db
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930529"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933197"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Valv Länkar i Microsoft Defender för Office 365
 
@@ -294,7 +294,7 @@ Exempel på värden som du kan ange och deras resultat beskrivs i följande tabe
 
 Varje Valv-länkprincip innehåller  följande URL-lista som du kan använda för att ange URL-adresser som inte skrivs om av Valv Links skanning. Med andra ord gör listan att användare som ingår i principen får åtkomst till angivna URL-adresser som annars skulle blockeras av Valv Länkar. Du kan konfigurera olika listor i Valv principer för länkar. Principbearbetningen avbryts efter att den första principen (förmodligen högsta prioritet) tillämpas på användaren. Därför ska bara en **Av följande URL-lista** inte skrivas om för en användare som är inkluderad i flera aktiva Valv-länkar.
 
-Om du vill lägga till poster i listan i nya eller befintliga Valv-länkar kan du gå till Använda [Microsoft 365 Defender-portalen](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) för att skapa Valv-länkar eller Använda [Microsoft 365 Defender-portalen för att ändra Valv-länkar.](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)
+Om du vill lägga till poster i listan i nya eller befintliga Valv finns information i Skapa [länkar Valv](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) principer eller Ändra Valv principer för [länkar.](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)
 
 **Anmärkningar**:
 

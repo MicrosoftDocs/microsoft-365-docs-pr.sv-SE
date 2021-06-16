@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan lära sig hur de konfigurerar en postlåda för att samla in skräppost och nätfiske som rapporterats av användare.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4827ce149632d0e37dbe9c3dc5fc8325dbfa8afa
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a39c6a3b287933ff79f94b00e364d7a45378bd1f
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929881"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933089"
 ---
 # <a name="user-submissions-policy"></a>Princip för användarinskick
 
@@ -36,9 +36,7 @@ ms.locfileid: "52929881"
 I Microsoft 365 organisationer med Exchange Online postlådor kan du ange en postlåda för att ta emot meddelanden som användarna rapporterar som skadliga eller inte skadliga. När användare skickar meddelanden med de olika rapportalternativen kan du använda postlådan för att snappa upp meddelanden (skicka endast till den anpassade postlådan) eller ta emot kopior av meddelanden (skicka till den anpassade postlådan och Microsoft). Den här funktionen fungerar med följande alternativ för meddelanderapportering:
 
 - [Tillägget Rapportmeddelande](enable-the-report-message-add-in.md)
-
 - [Tillägget Rapport om nätfiske](enable-the-report-phish-add-in.md)
-
 - [Rapporteringsverktyg från tredje part](#third-party-reporting-tools)
 
 Genom att leverera användarrapporterade meddelanden till en egen postlåda i stället för direkt till Microsoft kan dina administratörer selektivt och manuellt rapportera meddelanden till Microsoft med hjälp av inskickad [administratör.](admin-submission.md)
@@ -52,17 +50,17 @@ Använd följande artiklar för att konfigurera förutsättningarna som krävs s
 
 - Hoppa över skräppostfiltrering på den anpassade postlådan genom att skapa en regel för Exchange-e-postflöde för att ange konfidensnivån för skräppost. Se [Använda EAC för att skapa en](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) e-postflödesregel som anger SCL för ett meddelande om du vill ange att SCL ska **kringgå skräppostfiltrering.**
 
-- Inaktivera genomsökning av bifogade filer för skadlig programvara i den anpassade postlådan. Använd [Konfigurera principer för Valv-bilagor](set-up-safe-attachments-policies.md) i Defender för Office 365 för att skapa en  princip för Valv-bilagor med inställningen Av för **okända Valv**(av) för bifogade filer.
+- [Skapa en princip Valv för](set-up-safe-attachments-policies.md) bifogade filer som innehåller den anpassade postlåda Valv har inaktiverat genomsökning av bifogade filer **(Valv okänd** svarsavsnitt för bifogade filer – okänd skadlig \> **kod**).
 
-- Inaktivera URL-genomsökning av meddelanden i den anpassade postlådan. Använd [Konfigurera Valv-länkar](set-up-safe-links-policies.md) i Defender för Office 365 för att skapa en princip för  Valv-länkar med inställningen Av för Välj åtgärden för okända potentiellt skadliga URL-adresser i **meddelanden.**
+- [Skapa en princip Valv länkar](set-up-safe-links-policies.md) som innehåller den anpassade postlådan där skanningen av Valv-länkar är inaktiverad (Välj åtgärden för okända potentiellt skadliga URL:er i **meddelandeavsnittet** \> **Av**).
 
-- Skapa en princip mot skadlig programvara för att inaktivera automatisk rensning av skadlig programvara utan timme. Se [Använda Microsoft 365 Defender-portalen](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) för att skapa principer för skydd mot skräppost och ställ in Automatisk rensning under Noll **timme på** **Av.**
+- [Skapa en](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) princip mot skadlig programvara som innehåller den anpassade postlådan där nolltimmars automatisk rensning (ZAP) för skadlig programvara är inaktiverat **(avsnittet** Skyddsinställningar Aktivera automatisk rensning utan timme för skadlig programvara har \>  inte valts).
 
-- Skapa en policy för skräppostfilter för att inaktivera ZAP (Zero-hour Auto Purge) för skräppost och nätfiske i den anpassade postlådan. Se [Använda Microsoft 365 Defender-portalen](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) för att skapa principer  mot skräppost och avmarkera kryssrutorna On för **Spam ZAP** och **Phish ZAP**.
+- [Skapa en princip](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) mot skräppost som inkluderar den anpassade postlådan där ZAP för skräppost och ZAP för nätfiske är inaktiverade **(avsnittet** Automatisk rensning utan timme Aktiverad nolltimmars automatisk rensning \> **(ZAP) har** inte valts).
 
-- Inaktivera skräppostregeln i den anpassade postlådan. Använd [Konfigurera skräppostinställningar på Exchange Online för att](configure-junk-email-settings-on-exo-mailboxes.md) inaktivera skräppostregeln. När EOP har inaktiverats kan det inte flytta meddelanden till  mappen Skräppost baserat på åtgärden skräppostfiltreringsåtgärden Flytta meddelandet till mappen Skräppost eller samlingen lista över säkra e-postmeddelanden i postlådan.
+- Inaktivera skräppostregeln i den anpassade postlådan. Använd [Konfigurera skräppostinställningar på Exchange Online för att](configure-junk-email-settings-on-exo-mailboxes.md) inaktivera skräppostregeln. När den är inaktiverad kan EOP inte flytta meddelanden till mappen Skräppost  baserat på åtgärden för filtrering av skräppost Flytta meddelandet till mappen Skräppost eller samlingen lista över säkra e-postmeddelanden i postlådan.
 
-När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav implementerar du proceduren som anges i [Använda Microsoft 365 Defender-portalen](#use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox)för att konfigurera postlådan för användarinskick.
+När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav kan du använda procedurerna i den här artikeln för att konfigurera postlådan för användarinskick.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
@@ -84,58 +82,45 @@ När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav impl
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Använda Defender Microsoft 365 portalen för att konfigurera postlådan för användarinskick
 
-1. I Microsoft 365 Defender-portalen går du till **Principer & regler Hotprinciper** Användaren har \>  \> **rapporterat meddelandeinställningar** \> **Användarinskick.**
+1. I Microsoft 365 Defender-portalen går du till Principer & **principer** för hotprinciper för andra. Avsnittet Användare har rapporterat \>  \>  \> **meddelandeinställningar** \> **Användarinskick.**
 
-2. På sidan **Användarinskickade** objekt som visas väljer du något av följande alternativ:
+2. På sidan **Användarinskickade** meddelanden avgörs det du ser av om **knappinställningen för Microsoft-Outlook-rapportmeddelande** är **Av** eller **På:**
 
-      1. Aktivera funktionen Rapportmeddelande för **Outlook (rekommenderas)**: Välj det här alternativet om du använder tillägget Rapportmeddelande, tillägget Rapport nätfiske eller den inbyggda rapporteringen i Outlook på webben och sedan konfigurerar följande inställningar:
+   - **Microsoft Outlook För att skicka ett rapportmeddelande** \> **På** ![ Aktivera: Välj det här alternativet om du använder tillägget Rapportmeddelande, tillägget Rapport nätfiske eller den inbyggda rapporteringen i Outlook på webben och sedan konfigurerar ](../../media/scc-toggle-on.png) följande inställningar:
+     - **Skicka de rapporterade meddelandena** till: Välj något av följande alternativ:
+       - **Microsoft**: Användarens inskickade postlåda används inte (alla rapporterade meddelanden går till Microsoft).
+       - **Microsofts och organisationens postlåda:** I rutan som visas anger du e-postadressen till en befintlig Exchange Online postlåda. Distributionsgrupper tillåts inte. Användarinskickade användare går till både Microsoft för analys och den anpassade postlådan som administratören eller säkerhetsteamet kan analysera.
+       - **Organisationens postlåda: I** rutan som visas anger du e-postadressen till en befintlig e-Exchange Online postlåda. Distributionsgrupper tillåts inte. Använd det här alternativet om du vill att meddelandet bara ska gå till en administratör eller säkerhetsgruppen för analys först. Meddelanden kommer inte att gå till Microsoft om inte administratören vidarebefordrar det själva.
 
-    - **Anpassa bekräftelsemeddelandet för slutanvändaren:** Klicka på den här länken. I den **utfällo** för bekräftelsemeddelandet Anpassa som visas konfigurerar du följande inställningar:
+          > [!IMPORTANT]
+          >
+          > Amerikanska statliga myndigheter (GCC, GCC High och DoD) kan bara konfigurera **Min organisations postlåda.** De andra två alternativen är inaktiverade.
+          >
+          > Om organisationer är konfigurerade att endast skicka till en anpassad postlåda skickas inte rapporterade meddelanden för sökning och resultat i portalen för användarrapporter är alltid tomma.
 
-        - **Före inskickning:**  I rutorna Rubrik och Bekräftelse anger du den beskrivande text som användarna ser innan de rapporterar ett meddelande med hjälp av tilläggen Rapportmeddelande eller Rapport nätfiske.  Du kan använda variabeln %type% för att inkludera inskickad typ (skräppost, inte skräppost, phish osv.).
+       Oavsett vilket värde du valde för **Skicka de rapporterade meddelandena till** är följande inställningar tillgängliga:
 
-          Som nämnts läggs följande text även till i meddelandet om du väljer ett alternativ som skickar de rapporterade meddelandena till Microsoft:
+       - **Låt användarna välja om de vill rapportera meddelandet till Microsoft**
+       - **Välj rapportalternativ som är tillgängliga för användare:** Välj minst ett av följande alternativ:
+         - **Fråga innan du skickar meddelandet**
+         - **Rapportera alltid meddelandet**
+         - **Rapportera aldrig meddelandet**
+
+          > [!CAUTION]
+          > Om du har inaktiverat skräppostrapportering i [Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) på webben med postlådeprinciper för Outlook på webben, men har konfigurerat någon av de tidigare inställningarna för att rapportera meddelanden till Microsoft, kommer användare att kunna rapportera meddelanden till Microsoft i Outlook på webben med hjälp av tilläggen Rapportmeddelande eller Rapportfiske.
+
+     - **Avsnittet Användarrapportering**
+       - **Före rapporteringsflik:**  I rutorna Rubrik och Meddelandetext anger du den beskrivande text som användarna ser innan de rapporterar ett meddelande med hjälp av tilläggen Rapportmeddelande eller Rapport nätfiske.  Du kan använda variabeln %type% för att inkludera inskickad typ (skräppost, inte skräppost, phish osv.).
+       - **Efter rapporteringsfliken:**  Ange den beskrivande text som användarna ser när de rapporterar ett meddelande med hjälp av tilläggen Rapportmeddelande eller Rapport nätfiske i rutorna Rubrik och Bekräftelsemeddelande.  Du kan använda variabeln %type% för att inkludera inskickingstypen.
+
+       Om du väljer ett alternativ som skickar de rapporterade meddelandena till Microsoft läggs följande text även till i meddelandet, så som visas på sidan:
 
           > Ditt e-postmeddelande skickas som det är till Microsoft för analys. Vissa e-postmeddelanden kan innehålla personlig eller känslig information.
 
-        - **Efter inskickat** meddelande : Klicka ![ på ikonen Expandera ](../../media/scc-expand-icon.png) . I **rutorna** Rubrik och Bekräftelse anger du den beskrivande text som användarna ser när de rapporterar ett meddelande med hjälp av tilläggen Rapportmeddelande eller Rapport nätfiske.  Du kan använda variabeln %type% för att inkludera inskickingstypen.
+   - **Microsoft Outlook För att skicka ett rapportmeddelande** \> **Av** ![ Inaktivera: Välj det här alternativet om du använder rapporteringsverktyg från tredje part i stället för tillägget Rapportmeddelande, tillägget Rapport nätfiske eller den inbyggda rapporteringen i Outlook på webben och sedan konfigurerar ](../../media/scc-toggle-off.png) följande inställningar:
+     - Välj **Använd den här anpassade postlådan för att ta emot användarrapporter**. I rutan som visas anger du e-postadressen till en befintlig e-Exchange Online som kan ta emot e-post.
 
-      Klicka på **Spara** när du är klar. Om du vill ta bort dessa värden **klickar du** på Återställ på **sidan Användarinskick.**
-    
-    - **Anpassa alternativ för rapportering av slutanvändare: Klicka** på den här länken. I den **utfällande alternativ för** Anpassa rapportering för slutanvändare som visas anger du den beskrivande texten för Rapporteringsalternativ för skräppost. 
-    
-      Under **Alternativ som visar när meddelanden rapporteras** väljer du minst ett av följande alternativ:
-        - **Fråga innan du skickar en rapport**
-        - **Skicka rapporter automatiskt**
-        - **Skicka aldrig rapporter**
-       
-      Klicka på **Spara** när du är klar.
-
-        - **Skicka de rapporterade meddelandena** till: Gör något av följande val:
-
-        - **Microsoft (rekommenderas)**: Användarens inskickade postlåda används inte (alla rapporterade meddelanden går till Microsoft).
-
-        - **Både Microsoft och en egen postlåda:** I rutan som visas anger du e-postadressen till en befintlig Exchange Online postlåda. Distributionsgrupper tillåts inte. Användarinskickade användare går till både Microsoft för analys och den anpassade postlådan som administratören eller säkerhetsteamet kan analysera.
-
-        - **Endast anpassad postlåda:** I rutan som visas anger du e-postadressen till en befintlig Exchange Online postlåda. Distributionsgrupper tillåts inte. Använd det här alternativet om du vill att meddelandet bara ska gå till en administratör eller säkerhetsgruppen för analys först. Meddelanden kommer inte att gå till Microsoft om inte administratören vidarebefordrar det själva.
-
-          > [!NOTE]
-          > U.S. Government organizations (GCC, GCC-H och DoD) kan bara konfigurera **anpassad postlåda.** De andra två alternativen är inaktiverade.
-
-          > [!NOTE]
-          > Om organisationer är konfigurerade att endast skicka till en anpassad postlåda skickas inte rapporterade meddelanden för sökning och resultat i portalen för användarrapporter är alltid tomma.
-
-      När du är klar klickar du på **Bekräfta.**
-
-      > [!CAUTION]
-      > Om du har inaktiverat skräppostrapportering i [Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) på webben med hjälp av Outlook på webbens postlådeprinciper, men konfigurerar någon av de tidigare inställningarna för att rapportera meddelanden till Microsoft, kommer användarna att kunna rapportera meddelanden till Microsoft i Outlook på webben med hjälp av tilläggen Rapportmeddelande eller Rapportfiske.
-
-
-    2. Inaktivera funktionen Rapportmeddelande för **Outlook:** Välj det här alternativet om du använder rapporteringsverktyg från tredje part i stället för tillägget Rapportmeddelande, tillägget Rapport nätfiske eller den inbyggda rapporteringen i Outlook på webben och sedan konfigurerar följande inställningar:
-
-       Välj **Använd den här anpassade postlådan för att ta emot användarrapporter**. I rutan som visas anger du e-postadressen till en befintlig postlåda som redan finns Office 365. Det måste vara en befintlig postlåda i ett Exchange Online kan ta emot e-post.
-
-       När du är klar klickar du på **Bekräfta.**
+   När du är klar klickar du på **Bekräfta.** Om du vill ta bort dessa värden klickar du på **Återställ**
 
 ## <a name="third-party-reporting-tools"></a>Rapporteringsverktyg från tredje part
 

@@ -17,26 +17,25 @@ ROBOTS: NOINDEX
 description: Användare kan lära sig hur de visar och agerar på meddelanden i karantän som har skickats till delade postlådor som de har behörighet till.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d6aed4a6e3bc725635558a5e8394b671d11f47c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 4b958bb07660f4e0c93865300e190c713148a21d
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929857"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933071"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visa och släppa meddelanden i karantän från delade postlådor
 
 > [!NOTE]
 > Funktionerna som beskrivs i den här artikeln är för närvarande i förhandsversion, är inte tillgängliga för alla och kan komma att ändras.
 
-Användare kan hantera meddelanden i karantän där de är en av mottagarna enligt beskrivningen i Hitta och släppa meddelanden i karantän [som en användare i EOP.](find-and-release-quarantined-messages-as-a-user.md) Men hur blir det med delade postlådor där användaren har behörigheten Fullständig åtkomst och Skicka som eller Skicka för till postlådan enligt beskrivningen i Delade postlådor [i Exchange Online?](/exchange/collaboration-exo/shared-mailboxes)
+Användare kan hantera meddelanden i karantän där de är en av mottagarna enligt beskrivningen i Hitta och släppa meddelanden i karantän [som en användare i EOP.](find-and-release-quarantined-messages-as-a-user.md) Men hur blir det **med delade postlådor** där användaren har behörigheten Fullständig åtkomst och Skicka som eller Skicka för till postlådan enligt beskrivningen i Delade postlådor [i Exchange Online](/exchange/collaboration-exo/shared-mailboxes)?
 
 Tidigare var möjligheten för användare att hantera meddelanden i karantän som skickades till en delad postlåda obligatoriska administratörer för att lämna automatisk mappning aktiverad för den delade postlådan (det är aktiverat som standard när en administratör ger en användare åtkomst till en annan postlåda). Men beroende på storleken på och antalet postlådor som användaren har tillgång till  kan prestandan drabbas av problem när Outlooks försöker öppna alla postlådor som användaren har åtkomst till. Därför väljer många administratörer att ta bort [automatisk mappning för delade postlådor.](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)
 
 Automatisk mappning krävs nu inte längre för att användare ska kunna hantera meddelanden i karantän som har skickats till delade postlådor. Det fungerar bara. Det finns två olika metoder för att komma åt meddelanden i karantän som har skickats till en delad postlåda:
 
 - Om administratören har aktiverat [skräppost-aviseringar](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)för slutanvändare i principer mot skräppost kan alla användare som har åtkomst  till skräppost-aviseringarna för slutanvändaren i den delade postlådan klicka på knappen Granska i meddelandet för att gå till karantän i Microsoft 365 Defender-portalen. Observera att den här metoden endast gör att användare kan hantera meddelanden i karantän som har skickats till den delade postlådan. Användare kan inte hantera sina egna karantänmeddelanden i det här sammanhanget.
-
 - Användaren kan [gå till karantän i den Microsoft 365 Defender-portalen.](find-and-release-quarantined-messages-as-a-user.md) Som standard visas endast meddelanden som skickats till användaren. Däremot kan användaren ändra sorteringsresultatet **(knappen**  **Meddelande-ID** som standard) till Mottagarens e-postadress, ange den delade postlådans e-postadress och sedan klicka på Uppdatera för att se meddelanden i karantän som har skickats till den delade postlådan. 
 
   ![Sortera meddelanden i karantän efter mottagarens e-postadress.](../../media/quarantine-sort-results-by-recipient-email-address.png)

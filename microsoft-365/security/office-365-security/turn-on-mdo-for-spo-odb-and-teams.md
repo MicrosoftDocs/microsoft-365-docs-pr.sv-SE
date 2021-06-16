@@ -20,12 +20,12 @@ description: Administratörer kan lära sig hur de aktiverar Valv-filer för Sha
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 374e67626eab07cc8ab89a52554658a31e661eec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a654db40e5dec8d23d07ec7455216fe4e0a8c0e7
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929953"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933017"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivera säkra bilagor för SharePoint, OneDrive och Microsoft Teams
 
@@ -53,9 +53,13 @@ Den här artikeln innehåller anvisningar för hur du aktiverar och konfigurerar
 
 ## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Steg 1: Använd Microsoft 365 Defender-portalen för att aktivera Valv för SharePoint, OneDrive och Microsoft Teams
 
-1. I Defender Microsoft 365 portalen går du till Principer **för & principer** för hot Valv \>  \> **och** klickar på Globala **inställningar.**
+1. I Defender Microsoft 365 portalen går du till **Principer för & principer** för \> **hotprinciper** Valv bifogade \>  \> **filer.**
 
-2. I den globala inställningsfällan som visas går du till Aktivera Defender för **Office 365 för SharePoint, OneDrive och Microsoft Teams** inställning.  Flytta växlingsknappen till höger Aktivera växlingsknappen för att ![ ](../../media/scc-toggle-on.png) aktivera Valv för SharePoint, OneDrive och Microsoft Teams.
+2. På sidan **Valv bifogade** filer klickar du på **Globala inställningar.**
+
+3. I den globala inställningsfällan som visas går du till avsnittet Skydda filer i **SharePoint, OneDrive och Microsoft Teams.** 
+
+   Flytta **växlingsknappen** Aktivera Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams till höger aktivera växlingsknappen för att aktivera ![ ](../../media/scc-toggle-on.png) Valv-bilagor för SharePoint, OneDrive och Microsoft Teams.
 
    Klicka på **Spara** när du är klar.
 
@@ -71,7 +75,9 @@ Detaljerad information om syntax och parametrar finns i [Set-AtpPolicyForO365.](
 
 ## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Steg 2: (Rekommenderas) Använd SharePoint Online PowerShell för att hindra användare från att hämta skadliga filer
 
-Standardinställningen är att användare inte kan öppna, flytta, kopiera eller dela skadliga filer som identifieras av ATP. Däremot kan de ta bort och ladda ned skadliga filer.
+Som standard kan användare inte öppna, flytta, kopiera eller dela skadliga filer som identifieras av <sup>\*</sup> Valv-bilagor för SharePoint, OneDrive och Microsoft Teams. Däremot kan de ta bort och ladda ned skadliga filer.
+
+<sup>\*</sup> Om användarna går **till Hantera åtkomst** är **alternativet** Dela fortfarande tillgängligt.
 
 För att hindra användare från att hämta skadliga filer [ansluter du till SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) och kör följande kommando:
 
@@ -90,34 +96,31 @@ Detaljerad information om syntax och parametrar finns [i Set-SPOTenant](/powersh
 
 Du kan skapa en aviseringsprincip som meddelar dig och andra administratörer när Valv-bilagor för SharePoint, OneDrive och Microsoft Teams upptäcker en skadlig fil. Mer information om aviseringar finns i Skapa [aktivitetsaviseringar i Microsoft 365 Defender-portalen.](../../compliance/create-activity-alerts.md)
 
-1. I Microsoft 365 [Defender-portalen](https://security.microsoft.com)går du till **Principer &** \> **Aviseringsprincip** eller öppna <https://security.microsoft.com/alertpolicies> .
+1. I Defender Microsoft 365 portalen går du till **Principer &** \> **Aviseringsprincip** eller öppna <https://security.microsoft.com/alertpolicies> .
 
 2. Klicka på **Ny aviseringsprincip** **på sidan Aviseringsprincip.**
 
 3. Guiden **Ny aviseringsprincip** öppnas i en flyg ut. På sidan **Namnge din avisering** konfigurerar du följande inställningar:
-
    - **Namn**: Ange ett unikt och beskrivande namn. Till exempel Skadliga filer i bibliotek.
    - **Beskrivning**: Ange en valfri beskrivning. Meddelar till exempel administratörer när skadliga filer identifieras i SharePoint Online, OneDrive eller Microsoft Teams.
-   - **Allvarlighetsgrad**: Lämna standardvärdet **Låg markerat** eller välj **Medel** eller **Hög.**
-   - **Kategori:** Välj **Hantering av hot.**
+   - **Allvarlighetsgrad**: **Välj Låg,** **Medel** eller **Hög** i listrutan.
+   - **Kategori:** **Välj Hothantering** i listrutan.
 
    Klicka på **Nästa** när du är klar.
 
 4. Konfigurera **följande inställningar på** sidan Skapa aviseringsinställningar:
-
-   - **Vad vill du avisering om?: Aktivitet är:** Välj **Upptäckte skadlig programvara i filen**.
-   - **Hur vill du att aviseringen ska utlösas?**: Lämna standardvärdet **Varje gång en aktivitet matchar regeln markerad.**
+   - **Vad vill du avisering om?** avsnitt \> **Aktivitet är** \> Välj Skadlig programvara i **filen** i listrutan.
+   - **Hur vill du att aviseringen ska utlösas?** avsnitt: Lämna standardvärdet **Varje gång en aktivitet matchar den valda** regeln.
 
    Klicka på **Nästa** när du är klar.
 
 5. På sidan **Ange mottagare** konfigurerar du följande inställningar:
-
-   - **Skicka e-postaviseringar:** Kontrollera att den här inställningen är markerad. I rutan **E-postmottagare** markerar du en eller flera globala administratörer, säkerhetsadministratörer eller säkerhetsläsare som ska få ett meddelande när en skadlig fil identifieras.
+   - Kontrollera **att Skicka e-postaviseringar** är markerat. I rutan **E-postmottagare** markerar du en eller flera globala administratörer, säkerhetsadministratörer eller säkerhetsläsare som ska få ett meddelande när en skadlig fil identifieras.
    - **Daglig meddelandegräns:** Lämna standardvärdet **Ingen gräns** markerat.
 
    Klicka på **Nästa** när du är klar.
 
-6. Granska **inställningarna på sidan Granska** dina inställningar och klicka på **Redigera i** något av avsnitten för att göra ändringar.
+6. Granska **inställningarna på sidan** Granska dina inställningar. Du kan välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet. Eller så kan du klicka på **Föregående** eller välj den specifika sidan i guiden.
 
    I avsnittet Vill du aktivera principen **direkt?** låter du standardvärdet Vara **Ja, aktivera det direkt markerat.**
 
@@ -139,7 +142,7 @@ Detaljerad information om syntax och parametrar finns [i New-ActivityAlert](/pow
 
 - Kontrollera att du har aktiverat Valv för SharePoint, OneDrive och Microsoft Teams genom att göra något av följande:
 
-  - I [Microsoft 365 Defender-portalen](https://security.microsoft.com)går du till **Principer &** regler Hotprinciper Valv-bilagor , väljer Globala inställningar och verifierar värdet för inställningen Aktivera Defender för Office 365 för SharePoint, OneDrive och \>  \>  **Microsoft Teams.** 
+  - I Microsoft 365 Defender-portalen går du till Avsnittet **Principer &** regler Hotprinciper Valv Bifogade filer , väljer Globala inställningar och verifierar värdet för aktivera Defender för Office 365 för SharePoint, OneDrive och \>  \>  \>  **Microsoft Teams.** 
 
   - I Exchange Online PowerShell kör du följande kommando för att verifiera egenskapsinställningen:
 
@@ -158,9 +161,7 @@ Detaljerad information om syntax och parametrar finns [i New-ActivityAlert](/pow
   Detaljerad information om syntax och parametrar finns i [Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 - Verifiera att du har konfigurerat en aviseringsprincip för identifierade filer genom att göra något av följande:
-
   - I Microsoft 365 Defender-portalen går du **till Principer &** princip för avisering markerar \>  \> aviseringsprincipen och kontrollerar inställningarna.
-
   - I Microsoft 365 Defender-portalen PowerShell ersätter du med namnet på aviseringsprincipen, kör följande kommando \<AlertPolicyName\> och verifierar egenskapsvärdena:
 
     ```powershell

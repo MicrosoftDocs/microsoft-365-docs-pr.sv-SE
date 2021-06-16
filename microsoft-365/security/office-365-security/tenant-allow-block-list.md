@@ -16,12 +16,12 @@ ms.collection:
 description: Administratörer kan ta reda på hur de konfigurerar tillåts och block i listan över tillåtna/blockerade klienter i säkerhetsportalen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4228bb8abb70bbd96605a7d0f021a1a483e8715c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 67c3badb86f1cfb9bf644cc202ed67e3163a6772
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929737"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933161"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Hantera Klientorganisationens Tillåt/blockera listan
 
@@ -92,44 +92,36 @@ I den här artikeln beskrivs hur du konfigurerar poster i listan över tillåtna
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Använd Defender Microsoft 365 portalen för att skapa blockerings-URL-poster i listan över tillåtna/blockerade klientorganisationen
 
-1. I Microsoft 365 Defender-portalen går du till Principer **& principer** för \>  \> **hotklientorganisationens tillåtna/blockerade listor.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & Regler** för \> **hotprinciper.** \>  \> 
 
-2. På sidan **Lista över tillåtna/blockerade** klientorganisation kontrollerar du att **fliken URL:er** är markerad och klickar sedan på **Blockera**
+2. På sidan **Lista över tillåtna/blockerade klientorganisation** kontrollerar du att **fliken URL:er** är markerad och klickar sedan på Blockera ikon ![ för ](../../media/m365-cc-sc-create-icon.png) **Blockera**.
 
 3. I den **utfällna** menyn Blockera URL:er som visas konfigurerar du följande inställningar:
-
-   - **Lägg till URL:er som ska** blockeras: Ange en URL per rad, upp till högst 20. Mer information om syntaxen för URL-poster finns i URL-syntaxen för avsnittet [Tillåt/blockera klientorganisation](#url-syntax-for-the-tenant-allowblock-list) längre fram i den här artikeln.
-
+   - **Lägga till URL:er med jokertecken**: Ange en URL per rad, upp till högst 20. Mer information om syntaxen för URL-poster finns i URL-syntaxen för avsnittet [Tillåt/blockera klientorganisation](#url-syntax-for-the-tenant-allowblock-list) längre fram i den här artikeln.
    - **Upphör aldrig** att gälla: Gör något av följande:
-
-     - Kontrollera att inställningen är inaktiverad (inaktiverad) och ange utgångsdatumet för posterna ![ ](../../media/scc-toggle-off.png) i rutan Förfaller. 
+     - Kontrollera att inställningen är inaktiverad (inaktiverad) och ange utgångsdatumet för posterna med hjälp av rutan Ta ![ ](../../media/scc-toggle-off.png) bort på. 
 
        eller
 
      - Flytta reglaget till höger för att konfigurera posterna så att de aldrig upphör att gälla: ![Växlingsknapp aktiverad](../../media/scc-toggle-on.png).
-
    - **Valfritt:** Ange beskrivande text för posterna.
 
 4. När du är klar klickar du på Lägg **till**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Använd Defender Microsoft 365 portalen för att skapa blockeringsfilposter i klientorganisationens lista över tillåtna/blockerade filer
 
-1. I Microsoft 365 Defender-portalen går du till Principer **& principer för** \>  \> **hotklientorganisationens tillåtna/blockerade listor.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & Regler** för \> **hotprinciper.** \>  \> 
 
-2. På sidan **Lista över tillåtna/blockerade** klientorganisation väljer du **fliken** Filer och klickar sedan på **Blockera**.
+2. På sidan **Lista över tillåtna/blockerade klientorganisation** väljer du **fliken Filer** och klickar sedan på Blockera ikon ![ för ](../../media/m365-cc-sc-create-icon.png) **Blockering.**
 
-3. I den **utfällna menyn** Lägg till filer för att blockera som visas konfigurerar du följande inställningar:
-
+3. I den **utfällna** menyn Blockera filer som visas konfigurerar du följande inställningar:
    - **Lägga till filhashar:** Ange ett SHA256-hashvärde per rad, upp till högst 20.
-
    - **Upphör aldrig** att gälla: Gör något av följande:
-
-     - Kontrollera att inställningen är inaktiverad (inaktiverad) och ange utgångsdatumet för posterna ![ ](../../media/scc-toggle-off.png) i rutan Förfaller. 
+     - Kontrollera att inställningen är inaktiverad (inaktiverad) och ange utgångsdatumet för posterna med hjälp av rutan Ta ![ ](../../media/scc-toggle-off.png) bort på. 
 
      eller
 
      - Flytta reglaget till höger för att konfigurera posterna så att de aldrig upphör att gälla: ![Växlingsknapp aktiverad](../../media/scc-toggle-on.png).
-
    - **Valfritt:** Ange beskrivande text för posterna.
 
 4. När du är klar klickar du på Lägg **till**.
@@ -142,42 +134,37 @@ I den här artikeln beskrivs hur du konfigurerar poster i listan över tillåtna
 - När du konfigurerar en tillåta- eller blockeringspost för ett domänpar visas inte längre meddelanden från det domänparet i förfalskningsinformation.
 - Poster för falska avsändare upphör aldrig att gälla.
 
-1. I Microsoft 365 Defender-portalen går du till Principer **& principer för** \>  \> **hotklientorganisationens tillåtna/blockerade listor.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & Regler** för \> **hotprinciper.** \>  \> 
 
-2. Välj **fliken Förfalskning på sidan Lista** över tillåtna/blockerade **klientorganisation** och klicka sedan på Lägg **till.**
+2. Välj fliken **Förfalskning på sidan Lista** över tillåtna/blockerade **klientorganisation** och klicka sedan på ![ Blockera ikon Lägg ](../../media/m365-cc-sc-create-icon.png) **till.**
 
 3. I den **utfällna menyn** Lägg till ny domänpar som visas konfigurerar du följande inställningar:
-
    - **Lägga till nya domänpar med jokertecken:** Ange ett domänpar per rad, upp till maximalt 20. Mer information om syntaxen för falska avsändarposter finns i syntaxen för domänpar för posterna för falska avsändare i avsnittet [Tillåt/blockera](#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) lista för klientorganisation längre fram i den här artikeln.
-
    - **Förfalskningstyp:** Välj något av följande värden:
      - **Internt**: Förfalskningsavsändare finns i en domän som tillhör din organisation (en [godkänd domän).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **Extern:** Den falska avsändaren finns i en extern domän.
-
    - **Åtgärd:** Välj **Tillåt** eller **Blockera**.
 
 4. När du är klar klickar du på Lägg **till**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>Använd Defender Microsoft 365 portalen för att visa poster i listan över tillåtna/blockerade klientorganisationen
 
-1. I Microsoft 365 Defender-portalen går du till Principer **& principer för** \>  \> **hotklientorganisationens tillåtna/blockerade listor.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & Regler** för \> **hotprinciper.** \>  \> 
 
 2. Välj den flik du vill använda. Vilka kolumner som är tillgängliga beror på vilken flik du valde:
 
    - **URL:er:**
      - **Värde:** URL:en.
      - **Åtgärd:** **Värdeblocket**.
-     - **Datum för senaste uppdatering**
-     - **Förfallodatum**
-     - **Obs!**
-
+     - **Uppdaterades senast**
+     - **Ta bort på**
+     - **Kommentarer**
    - **Filer**
      - **Värde:** Filens hash-kod.
      - **Åtgärd:** **Värdeblocket**.
-     - **Datum för senaste uppdatering**
-     - **Förfallodatum**
-     - **Obs!**
-
+     - **Uppdaterades senast**
+     - **Ta bort på**
+     - **Kommentarer**
    - **Förfalskning**
      - **Spoofed användare**
      - **Skicka infrastruktur**
@@ -190,10 +177,9 @@ I den här artikeln beskrivs hur du konfigurerar poster i listan över tillåtna
 
    - **URL:er:** Du kan gruppera resultatet efter **åtgärd.**
    - **Filer:** Du kan gruppera resultatet efter **åtgärd.**
-   - **Avsändardomäner för BCL-förbikoppling:** **Gruppen** är inte tillgänglig på den här fliken.
    - **Förfalskning:** Du kan gruppera resultaten efter **Åtgärds-** **eller förfalskningstyp.**
 
-   Klicka **på** Sök , ange hela eller en del av ett värde och tryck sedan på RETUR för att hitta ett visst värde. När du är klar klickar du på **Rensa sökning Ikonen** Rensa ![ ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) sökning.
+   Klicka **på** Sök , ange hela eller en del av ett värde och tryck sedan på RETUR för att hitta ett visst värde. När du är klar klickar du på ![ Ikonen Rensa sökning Rensa ](../../media/m365-cc-sc-close-icon.png) **sökning.**
 
    Filtrera **resultatet genom** att klicka på Filter. Vilka värden som är tillgängliga **i den utfällade** filterflik som visas beror på vilken flik du valde:
 
@@ -201,19 +187,12 @@ I den här artikeln beskrivs hur du konfigurerar poster i listan över tillåtna
      - **Åtgärd**
      - **Upphör aldrig att gälla**
      - **Datum för senaste uppdatering**
-     - **Förfallodatum**
-
+     - **Ta bort på**
    - **Filer**
      - **Åtgärd**
      - **Upphör aldrig att gälla**
-     - **Datum för senaste uppdatering**
-     - **Förfallodatum**
-
-   - **Sender domains for BCL bypass**
-     - **Upphör aldrig att gälla**
-     - **Datum för senaste uppdatering**
-     - **Förfallodatum**
-
+     - **Uppdaterades senast**
+     - **Ta bort på**
    - **Förfalskning**
      - **Åtgärd**
      - **Förfalskningstyp**
@@ -222,43 +201,34 @@ I den här artikeln beskrivs hur du konfigurerar poster i listan över tillåtna
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Använd Defender Microsoft 365 portalen för att ändra poster i listan över tillåtna/blockerade klientorganisationen
 
-1. I Microsoft 365 Defender-portalen går du till Principer **& principer för** \>  \> **hotklientorganisationens tillåtna/blockerade listor.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & Regler** för \> **hotprinciper.** \>  \> 
 
 2. Välj den flik som innehåller den typ av post som du vill ändra:
    - **URL:er**
    - **Filer**
-   - **Sender domains for BCL bypass**
    - **Förfalskning**
 
-3. Markera den post som du vill  ändra och klicka sedan på redigera ![ redigeringsikonen ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) . Vilka värden som du kan ändra i den utfäll plats som visas beror på vilken flik du valde i föregående steg:
-
+3. Markera den post som du vill ändra och klicka sedan på Redigera ![ ikon ](../../media/m365-cc-sc-edit-icon.png) **Redigera**. Vilka värden som du kan ändra i den utfäll plats som visas beror på vilken flik du valde i föregående steg:
    - **URL:er**
      - **Upphör aldrig att** gälla och/eller förfallodatum.
      - **Valfri anteckning**
-
    - **Filer**
      - **Upphör aldrig att** gälla och/eller förfallodatum.
      - **Valfri anteckning**
-
-   - **Sender domains for BCL bypass**
-     - **Upphör aldrig att** gälla och/eller förfallodatum.
-
    - **Förfalskning**
      - **Åtgärd:** Du kan ändra värdet till **Tillåt** eller **Blockera.**
-
 4. Klicka på **Spara** när du är klar.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Använda Defender Microsoft 365 portalen för att ta bort poster från listan över tillåtna/blockerade klientorganisationen
 
-1. I Microsoft 365 Defender-portalen går du till **blockeringslistor** för \>  \> **klientorganisationens tillåtna/blockerade hotprincip.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & Regler** för \> **hotprinciper.** \>  \> 
 
 2. Välj den flik som innehåller den typ av post som du vill ta bort:
    - **URL:er**
    - **Filer**
-   - **Sender domains for BCL bypass**
    - **Förfalskning**
 
-3. Markera den post som du vill ta bort och klicka sedan på ikonen **Ta** ![ ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) bort.
+3. Markera den post du vill ta bort och klicka sedan på Ta ![ bort-ikonen Ta ](../../media/m365-cc-sc-delete-icon.png) **bort**.
 
 4. Klicka på Ta bort i varningsdialogrutan som **visas.**
 
@@ -662,7 +632,7 @@ Här är några exempel på giltiga domänpar för att identifiera förfalskning
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-Det maximala antalet falska avsändarposter är 1 000. 
+Det maximala antalet falska avsändarposter är 1 000.
 
 Genom att lägga till ett domänpar tillåts *eller* blockeras bara kombinationen av den förfalskningsanvändaren *och* avsändarinfrastrukturen. E-post från förfalskningsanvändare från någon källa tillåts inte heller e-post från den avsändande infrastrukturkällan för någon förfalskningsanvändare. 
 
