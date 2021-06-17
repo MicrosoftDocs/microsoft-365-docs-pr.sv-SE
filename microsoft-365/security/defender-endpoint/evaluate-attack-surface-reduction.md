@@ -14,17 +14,16 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a5fa8e46de0a6561d3377ce77e38bd59aa97f3c4
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861233"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984730"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Utvärdera regler för minskning av attackytan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gäller för:**
 
@@ -33,19 +32,19 @@ ms.locfileid: "52861233"
 
 >Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Minskningsregler för attackytan hjälper till att förhindra åtgärder som vanligtvis används av skadlig programvara för att avslöja enheter eller nätverk. Minskningsregler för attackytor hjälper till att stänga av många av de vanliga instickspunkter som används av skadlig programvara och utpressningstrojaner. 
+Minskningsregler för attackytan hjälper till att förhindra åtgärder som vanligtvis används av skadlig programvara för att avslöja enheter eller nätverk. Minskningsregler för attackytor hjälper till att stänga av många av de vanliga instickspunkter som används av skadlig programvara och utpressningstrojaner.
 
 Ange minskningsregler för attackytan för enheter som kör någon av följande utgåvor och versioner av Windows:
 
-- Windows 10 Pro, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows 10 Enterprise, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
 - Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 > [!WARNING]
-> Aktivering av minskningsregler för attacktjänster på Windows Server 2016 kan leda till oväntade resultat och påverka serverprestandan. Vi rekommenderar inte att du aktiverar eller distribuerar minskningsregler för attackytan på plattformar som inte stöds.
+> Att aktivera regler för att minska attacktjänster i Windows Server 2016 kan leda till oväntade resultat och påverka serverprestandan. Vi rekommenderar inte att du aktiverar eller distribuerar minskningsregler för attackytan på plattformar som inte stöds.
 
-Lär dig hur du utvärderar regler för att minska attackytan genom att aktivera granskningsläge för att testa funktionen direkt i organisationen.
+Lär dig hur du utvärderar regler för att minska attackytan [genom att aktivera granskningsläge](audit-windows-defender.md) för att testa funktionen direkt i organisationen.
 
 > [!TIP]
 > Du kan också besöka webbplatsen med microsoft Defender för slutpunktsdemonstration på [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) för att bekräfta att funktionen fungerar och se hur den fungerar.
@@ -73,9 +72,9 @@ Använd följande PowerShell-cmdlet för att aktivera alla tillagda minskningsre
 
 Du kan också använda grupprincip-, Intune- eller MDM-konfigurationstjänstleverantörer (MDM) för att konfigurera och distribuera inställningen. Läs mer i huvudartikeln [om minskning av attackytor.](attack-surface-reduction.md)
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Granska minskningar av attackytor i Windows Event Viewer
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Granska händelser för att minska attackytan i Windows Loggboken
 
-Om du vill granska appar som skulle ha blockerats öppnar du Loggboken och filtrerar efter Händelse-ID 1121 i Microsoft-Windows-Windows Defender/operational log. I följande tabell visas alla nätverksskyddshändelser.
+Om du vill granska appar som skulle ha blockerats öppnar du Loggboken och filtrerar efter Händelse-ID 1121 i Microsoft-Windows-Windows Defender/driftloggen. I följande tabell visas alla nätverksskyddshändelser.
 
 Händelse-ID | Beskrivning
 -|-
@@ -91,6 +90,6 @@ Mer [information om hur du konfigurerar funktionen](customize-attack-surface-red
 
 ## <a name="see-also"></a>Se även
 
-* [Minska attackytor med minskningsregler för attackytan](attack-surface-reduction.md)
-* [Använda granskningsläge för att utvärdera Windows Defender](audit-windows-defender.md)
-* [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction.md)
+- [Minska attackytor med minskningsregler för attackytan](attack-surface-reduction.md)
+- [Använda granskningsläge för att utvärdera Windows Defender](audit-windows-defender.md)
+- [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction.md)

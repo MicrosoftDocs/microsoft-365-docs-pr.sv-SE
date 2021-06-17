@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: När du skapar en känslighetsetikett kan du automatiskt tilldela filer och e-postmeddelanden en etikett, eller så kan du uppmana användarna att välja den etikett som du rekommenderar.
-ms.openlocfilehash: ad095db005421a58806d2775d4958cf3be5f474e
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 4215e6618c1cc6359755c2af1e7b9e93ca07b58d
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866745"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984814"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Använda en känslighetsetikett för innehåll automatiskt
 
@@ -74,7 +74,7 @@ Det finns två olika metoder för att automatiskt använda en känslighetsetiket
     - Om du har regler för e-postflödet i Exchange eller DLP-principer (dataförlustskydd) som tillämpar IRM-kryptering: En etikett tillämpas när innehåll identifieras av dessa regler eller principer samt en princip för automatisk etikettering. Om den etiketten tillämpar kryptering ignoreras IRM-inställningarna från Exchange-e-postflödesregler eller DLP-principer. Om etiketten inte tillämpar kryptering tillämpas IRM-inställningarna från e-postflödesregler eller DLP-principer utöver etiketten.
     - E-post som har IRM-kryptering utan etikett ersätts med en etikett med alla krypteringsinställningar när det finns en matchning genom att använda automatisk etikettering.
     - Inkommande e-post etiketteras när det finns ett samband med de villkor som gäller för automatisk etikettering:
-        - Om etiketten har konfigurerats för [kryptering](encryption-sensitivity-labels.md), tillämpas den krypteringen. Den här konfigurationen stöds dock inte för närvarande.
+        - Lansering: Om etiketten har konfigurerats för [kryptering](encryption-sensitivity-labels.md)tillämpas inte den krypteringen.
         - Om etiketten är konfigurerad för att tillämpa [dynamiska markeringar](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) bör du vara medveten om att det kan resultera i namnen på personer utanför organisationen.
     - När etiketten tillämpar kryptering är [utfärdaren av rättighetshantering och ägaren av rättighetshantering](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) den person som skickar e-postmeddelandet. För närvarande går det inte att ställa in ägare för rättighetshantering för alla inkommande e-postmeddelanden som krypteras automatiskt.
     

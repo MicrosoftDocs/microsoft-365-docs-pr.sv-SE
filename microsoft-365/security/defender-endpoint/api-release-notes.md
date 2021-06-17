@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4843894638ccf119c0cadcf003e159e793c18368
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a0191a52c64b32b314d4b2f2f36c85b060226ad6
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843740"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984658"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Information om Microsoft Defender för Endpoint API
 
@@ -39,6 +39,10 @@ Följande information innehåller uppdateringar av Microsoft Defender för slutp
 > ```
 
 ## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>Utgivningsanteckningar – nyaste till äldsta (dd.mm.yyyy)
+
+### <a name="06102021"></a>06.10.2021
+
+- Ny exportutvärderings-API-metod – _Sårbarhetsbedömning av programvara deltaexport (OData) Exportera_ [utvärderingsmetoder och egenskaper per enhet.](get-assessment-methods-properties.md)
 
 ### <a name="05252021"></a>05.25.2021
 

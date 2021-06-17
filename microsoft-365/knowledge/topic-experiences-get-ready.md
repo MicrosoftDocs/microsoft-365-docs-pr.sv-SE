@@ -1,6 +1,6 @@
 ---
-title: Få din miljö klar för Microsoft Viva Ämnen
-description: Gör miljön klar så att du kan ge användarna så mycket innehåll som möjligt med Microsoft Viva-ämnen.
+title: Gör miljön redo för Microsoft Viva Topics
+description: Förbereda miljön så att du kan tillhandahålla så mycket innehåll som möjligt till användarna med Microsoft Viva Topics.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -10,26 +10,26 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2db8654bf7bb1bc5ef4759c1617a84ae2153553a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917398"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984886"
 ---
-# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Få din miljö klar för Microsoft Viva Ämnen
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Gör miljön redo för Microsoft Viva Topics
 
 För att få ut mesta möjliga av Viva-ämnen vill du ha med så mycket innehåll som möjligt för att kunna upptäcka ämnen, så att du kan ha en omfattande uppsättning ämnen för användarna. Men vilket innehåll ska användas för identifiering av ämnen? Hur maximerar du innehållet som indexeras och håller kontrollen över det? Ju mer innehåll som omfattas, desto bättre kan insikterna som artificiell intelligens kan upptäcka. I den här artikeln får du hjälp med planeringen för att se till att du tar med rätt innehåll och att du har rätt personer och resurser för att göra en bra upplevelse för användarna.
 
 För att planera för Viva Topics behöver du:
 
-![Migrera, ansluta, modernisera, skydda och identifiera steg för introduktion till kunskapshantering](../media/knowledge-management/km-adoption-onboarding-checklist.png)
+![Migrera, anslut, modernisera, skydda och identifiera steg för introduktion till Viva Topics.](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [Migrera innehåll till SharePoint](#1-migrate-content-to-microsoft-365)
     - Ämnesindexeringen omfattar endast innehåll SharePoint webbplatser.
       - Migrera om möjligt värdefullt innehåll till SharePoint Online från externa källor.
       - Prioritera innehållskällor med hög potential för tacit-kunskap.
-      - Framhäv fördelarna med kunskapshantering för att uppmuntra användarna att flytta innehåll från OneDrive till SharePoint webbplatser.
+      - Markera fördelarna med Viva-ämnen för att uppmuntra användare att flytta innehåll från OneDrive till SharePoint webbplatser.
 
 2. [Anslut information till Microsoft Graph](#2-connect-information-to-microsoft-graph)
     - I framtiden kan externt innehåll läggas till i kunskapsdiagrammet och bli tillgängligt.
@@ -73,7 +73,7 @@ Få ut det mesta av migreringen:
 
 Om du inte kan migrera visst innehåll kan du ansluta det till Microsoft-Graph:
 
-- Överväg att [Graph för innehållskopplingar.](/microsoftsearch/connectors-overview) Med hjälp av kopplingar kan externt innehåll indexeras i Microsoft Graph, där användarna sedan kan hitta det via Microsoft Search.
+- Överväg att [Graph för innehållskopplingar.](/microsoftsearch/connectors-overview) Med kopplingar kan externt innehåll indexeras i Microsoft-Graph, där användarna kan identifiera det via Microsoft Search.
 - Framtida utvecklingar kommer att hämta externa data till Viva Topics.
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. Modernisera SharePoint sidor
@@ -104,7 +104,7 @@ Här är det viktigt med bra behörighetshantering. Och god behörighetshanterin
 
 Förutom behörigheter kan du även styra omfattningen av vad som kan upptäckas via ämnen. Du har alltid kontroll över vad som indexeras.
 
-Administratörer kan konfigurera indexering i Microsoft 365 Admin Center. När du [konfigurerar Knowledge Management](set-up-topic-experiences.md)kan du:
+Administratörer kan konfigurera indexering i Microsoft 365 Admin Center. När du ställer [in Viva Ämnen](set-up-topic-experiences.md)kan du:
 
 - Tillåt identifiering på alla SharePoint eller ange webbplatser som ska ingå eller uteslutas som ämneskällor.
 - Om du har känsliga termer kan du också utesluta ämnen med namn. Om du till exempel har namnet på ett känsligt projekt, där du inte vill att en markering eller ett kort ska visas, oavsett användarens behörighet, kan du utesluta det projektnamnet.
@@ -128,9 +128,9 @@ Beroende på vilken organisation du har kanske det är få eller många som arbe
 | Uppsättningar Med Viva-ämnen | Äger hantering och kvalitet för ämnen | Bidrar till ämnen baserade på deras expertis. |
 | Säkerställer att säkerhet- och efterlevnadsstandarder tillämpas och förstår licensavtalet.| Utför ämneshanteringsuppgifter, till exempel att skapa, redigera, ta bort och avvisa ämnen. Stöder ämnesdeltagare med sina uppgifter. | Visar information och innehåll på ämnessidor, inklusive vilka personer och resurser som är fästa vid det ämnet. |
 
-Höjdpunkter kort visas för användarna i sitt arbete, till exempel när de bläddrar bland moderna sidor i SharePoint. Du kan styra slutanvändarupplevelsen för ämnen.
+Höjdpunkter och kort visas för användare i sitt arbete, till exempel när de bläddrar bland moderna sidor i SharePoint. Du kan styra slutanvändarupplevelsen för ämnen.
 
-- Vem finns ämnen? Synligheten för ämnen har konfigurerats Microsoft 365 administrationscentret. Välj vilka grupper du vill tillåta för att visa avsnitt:
+- Vem finns ämnen? Synlighet för ämne är konfigurerat i Microsoft 365 Admin Center. Välj vilka grupper du vill tillåta för att visa avsnitt:
   - Alla i min organisation. "Alla" inkluderar inte gäster, det är alla interna användare i katalogen
   - Endast valda personer eller säkerhetsgrupper (det här alternativet är bra medan du fortfarande distribuerar Viva Ämnen, så att du kan testa med några av användarna). Om du vill att gäster ska kunna visa ämnen måste du använda alternativet "valda personer eller säkerhetsgrupper" och ge dem en licens.
   - Ingen.

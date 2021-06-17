@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3a65fb6d5d3e5c6e68e100aa3ea2b4cf896dc281
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 4f2e16acf474d6da8867a6bd392f9e90e0cf166e
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789404"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984850"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportera utvärdering av programvaruinventering per enhet
 
@@ -34,14 +34,12 @@ ms.locfileid: "52789404"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
->
 >
 Det finns olika API-anrop för att få olika typer av data. Eftersom mängden data kan vara stor kan den hämtas på två sätt:
 
 - [Exportera utvärdering av programvaruinventering **av OData**](#1-export-software-inventory-assessment-odata)  API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
 
-- [Exportera utvärdering av programvaruinventering **via filer**](#2-export-software-inventory-assessment-via-files)  Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med det här API:t kan du ladda ned alla dina data Azure Storage enligt följande:
+- [Exportera utvärdering av programvaruinventering **via filer**](#2-export-software-inventory-assessment-via-files)  Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure-lagring. Med det här API:t kan du ladda ned alla dina data Azure-lagring enligt följande:
 
   - Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata.
 

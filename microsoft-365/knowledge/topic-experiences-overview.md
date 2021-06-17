@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Översikt över Viva Topics.
-ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 785fddb7c951bb6f7c170971f0af4eb7ac8f9a83
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950029"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984910"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Översikt över Microsoft Viva-ämnen 
 
@@ -39,14 +39,14 @@ Viva Topics använder AI för att automatiskt söka efter och identifiera *ämne
 
 Ämnen visas för användare via:
 
-- [Viktiga ämnen](topic-experiences-overview.md#topic-highlights) på SharePoint sidor
+- [Ämnen markerade](topic-experiences-overview.md#sharepoint-highlights) på SharePoint sidor
 - Ämnessvar [i sökresultat](topic-experiences-overview.md#search-results)
 - Söka i [Office-program](topic-experiences-overview.md#office-application-search)
 - [Startsida för](topic-experiences-overview.md#topic-center) Ämnescenter
 
-### <a name="topic-highlights"></a>Höjdpunkter Topic
+### <a name="sharepoint-highlights"></a>SharePoint över viktiga händelser
 
-När ett ämne omnämns i innehåll på nyheter och sidor i SharePoint markeras det. Du kan öppna ämnessammanfattningen från markeringen. Öppna ämnesinformationen från sammanfattningens rubrik om du vill se hela ämnessidan. Det omnämnda avsnittet kan identifieras automatiskt eller ha lagts till på sidan med en direkt referens till avsnittet av sidförfattaren. 
+När ett ämne omnämns i innehåll på nyheter och sidor i SharePoint markeras det. Du kan öppna ämnessammanfattningen från markeringen. Öppna ämnesinformationen från sammanfattningens rubrik om du vill se hela ämnessidan. Det omnämnda avsnittet kan identifieras automatiskt eller ha refererats direkt av sidans författare. 
 
    ![Skärmbild som visar viktiga ämnen.](../media/knowledge-management/saturn.png) 
 

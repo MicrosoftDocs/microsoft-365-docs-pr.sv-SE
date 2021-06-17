@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om kvarhållningsprinciper och kvarhållningsetiketter som hjälper dig att behålla det du behöver och ta bort det du inte behöver.
-ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 44761199eea1cf2649a15b6a36ccc08eda99c570
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932872"
+ms.locfileid: "52950065"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Mer information om kvarhållningsprinciper och kvarhållningsetiketter
 
@@ -268,7 +268,7 @@ I följande tabell kan du avgöra om du ska använda en kvarhållningsprincip el
 
 **Fotnot:**
 
-<sup>\*</sup> För etiketter för datakvarhållning som inte markerar innehållet som en post eller regelbaserad post begränsas granskningshändelser till när ett objekt i SharePoint har en etikett tillämpad, ändrad eller borttagen. Granskningsinformation för etiketter för datakvarhållning finns i avsnittet [Granskningsåtgärder för datakvarhållning](#auditing-retention-actions) på den här sidan.
+<sup>\*</sup> För kvarhållningsetiketter som inte markerar innehållet som en post eller regelpost begränsas granskningshändelser till när ett objekt i SharePoint eller OneDrive har en etikett tillämpad, ändrad eller borttagen. Granskningsinformation för etiketter för datakvarhållning finns i avsnittet [Granskningsåtgärder för datakvarhållning](#auditing-retention-actions) på den här sidan.
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>Kombinera principer och etiketter för datakvarhållning
 
@@ -395,7 +395,7 @@ En fullständig lista över granskningshändelser finns i [aktiviteter för prin
 
 Åtgärder för datakvarhållning loggas som granskningshändelser är endast tillgängliga för etiketter för datakvarhållning och inte för principer för datakvarhållning:
 
-- När en etikett för datakvarhållning används, ändras eller tas bort från ett objekt i SharePoint:
+- När en kvarhållningsetikett används, ändras eller tas bort från ett objekt i SharePoint eller OneDrive:
     - Välj **Ändrad kvarhållningsetikett för en fil** från **Fil- och sidaktiviteter**. 
 
 - När ett etiketterat objekt i SharePoint markeras som en post och det låses upp eller låses av en användare:
@@ -404,7 +404,7 @@ En fullständig lista över granskningshändelser finns i [aktiviteter för prin
 - När en etikett för datakvarhållning som markerar innehåll som en post eller regelpost tillämpas på ett objekt i Exchange:
     - Välj **Etiketterat meddelande som en post** från **Exchange postlådeaktiviteter**.
 
-- När ett etiketterat objekt i SharePoint eller Exchange är markerat som en post eller regelpost och det tas bort permanent:
+- När ett etiketterat objekt i SharePoint, OneDrive eller Exchange markeras som en post eller regelpost och tas bort permanent:
     - Välj **Borttagen fil markerad som en post** från **Fil- och sidaktiviteter**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>PowerShell-cmdletar för kvarhållningsprinciper och kvarhållningsetiketter

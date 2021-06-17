@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63e38d5c9cfe50d1fa4cda1f7ae9c7df55a45083
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: d0efd97359440ffb3d4b39b6389b477203c56084
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788841"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985006"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender för Endpoint API:er som stöds
 
@@ -62,7 +62,7 @@ Läs mer om de enskilda enheter som stöds, där du kan köra API-anrop till, oc
 :---|:---
 [Avancerad jakt](run-advanced-query-api.md) | Köra frågor från API.
 [Metod och egenskaper för varningar](alerts.md) | Kör API-anrop \- som få aviseringar, skapa en avisering, uppdatera avisering och mycket mer.
-[Exportera utvärderingsmetoder och egenskaper per enhet](get-assessment-methods-properties.md) | Kör API-anrop som \- export secure configuration assessment, export software inventory assessment och export software vulnerabilities assessment.
+[Exportera utvärderingsmetoder och egenskaper per enhet](get-assessment-methods-properties.md) | Kör API-anrop för att samla in sårbarhetsutvärderingar per enhet, till exempel: exportera säker konfigurationsutvärdering, exportera utvärdering av programvaruinventering, exportera säkerhetsproblem i programvara och delta i säkerhetsproblem för \- programvara.
 [Metoder och egenskaper för automatisk undersökning](investigation.md) | Kör API-anrop, \- till exempel hämta undersökningssamling.
 [Hämta domänrelaterade varningar](get-domain-related-alerts.md) | Kör API-anrop \- som att hämta domänrelaterade enheter, domänstatistik och mycket mer.
 [Filmetoder och -egenskaper](files.md) | Kör API-anrop \- som att få filinformation, filrelaterade aviseringar, filrelaterade enheter och filstatistik.

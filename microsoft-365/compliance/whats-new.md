@@ -18,23 +18,44 @@ ms.collection:
 - M365-security-compliance
 description: Oavsett om det handlar om att lägga till nya lösningar till efterlevnadscentret, uppdatera befintliga funktioner baserat på din feedback eller distribuera ny och uppdaterad dokumentation hjälper Microsoft 365 dig att hålla dig uppdaterad om den föränderliga miljön för efterlevnad. Ta reda på vad vi har gjort den här månaden.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d312b3ac3c2cb43e05a09936f1e5c07b32c22ef1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 1884989abba56a7da68a2a1372132015a81f5e03
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843252"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985018"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nyheter i Microsoft 365 Efterlevnad
 
-Oavsett om det handlar om att lägga till nya lösningar till efterlevnadscentret i [Microsoft 365,](microsoft-365-compliance-center.md)uppdatera befintliga funktioner baserat på din feedback eller distribuera ny och uppdaterad dokumentation hjälper Microsoft 365 dig att hålla dig uppdaterad om de ständigt föränderliga efterlevnadsmiljö. Ta en titt nedan för att se vad som är nytt i Microsoft 365 efterlevnad i dag.
+Oavsett om det handlar om att lägga till nya lösningar i [Microsoft 365 Efterlevnadscenter,](microsoft-365-compliance-center.md)uppdatera befintliga funktioner baserat på din feedback eller att distribuera ny och uppdaterad dokumentation hjälper Microsoft 365 dig att hålla dig uppdaterad om den föränderliga efterlevnadsmiljö. Ta en titt nedan för att se vad som är nytt i Microsoft 365 efterlevnad i dag.
 
 > [!NOTE]
 > Vissa efterlevnadsfunktioner distribueras i olika hastigheter för våra kunder. Om du inte ser en funktion ännu kan du prova att lägga till dig själv i [den riktade versionen](/office365/admin/manage/release-options-in-office-365).
 
 > [!TIP]
-> Vill du veta vad som händer i andra administrationscenter? Läs följande artiklar:<br>[Vad är nytt i Microsoft 365 administrationscenter](/office365/admin/whats-new-in-preview)<br>[Vad är nytt i SharePoint administrationscenter](/sharepoint/what-s-new-in-admin-center)<br>[Nyheter i Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
+> Vill du veta vad som händer i andra administrationscenter? Läs följande artiklar:<br>[Vad är nytt i Administrationscenter för Microsoft 365](/office365/admin/whats-new-in-preview)<br>[Vad är nytt i SharePoint administrationscenter](/sharepoint/what-s-new-in-admin-center)<br>[Nyheter i Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
 Besök även [Microsoft 365 Översikt](https://www.microsoft.com/microsoft-365/roadmap) och lär dig Microsoft 365 funktioner som släppts, håller på att lanseras, är under utveckling, har avbrutits eller släppts tidigare.
+
+## <a name="may-2021"></a>Maj 2021
+
+### <a name="data-loss-prevention"></a>Dataförlustskydd
+
+- Nya riktlinjer för [planering av din strategi för skydd mot dataförlust.](dlp-overview-plan-for-dlp.md)
+
+### <a name="retention-and-records-management"></a>Hantering av lagring och arkivhandlingar
+
+- Om du släpper en bevarandeprincip från en SharePoint-webbplats eller ett OneDrive-konto behöver du inte längre vänta under respitperioden på 30 dagar innan du kan ta bort webbplatsen eller kontot. Många kunder efterfrågar den här ändringen.
+- Dispositionsgranskning i flera steg i förhandsversionen: En administratör [](disposition.md) kan nu lägga till upp till fem på varandra följande steg av dispositionsgranskning för en bevarandeetikett, och granskare kan lägga till andra användare i dispositionsgranskningssteget. Du kan även anpassa e-postmeddelanden och påminnelser.
+
+### <a name="sensitive-information-types"></a>Typer av känslig information
+
+- Ny information som läggs till för att hjälpa [dig att ändra en nyckelordsordlista](sit-modify-keyword-dictionary.md).
+
+### <a name="sensitivity-labels"></a>Känslighetsetiketter
+
+- I förhandsgranskningen är en ny **inställning för autentiseringskontext** nu tillgänglig när du [konfigurerar en känslighetsetikett för grupper och webbplatser.]( sensitivity-labels-teams-groups-sites.md) Det här alternativet fungerar tillsammans med villkorsstyrda åtkomstprinciper i Azure AD för att tillämpa striktare villkor när användare använder SharePoint webbplatser som har etiketten tillämpad. Läs beroenden och [begränsningar innan du konfigurerar](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) den här inställningen.
+- [Principer för automatisk](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) märkning som är konfigurerade just för Exchange stöder nu  känslighetsetiketter som använder kryptering med Låt användare tilldela behörigheter för alternativen Vidarebefordra inte Encrypt-Only lösenord.
+- [Obligatoriska etiketter är](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) nu allmänt tillgängliga för alla Office, på alla plattformar.
 
 ## <a name="april-2021"></a>April 2021
 
@@ -76,7 +97,7 @@ Här är några av de ändringar Microsoft 365 av efterlevnadslösningar och inn
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 - **Advanced eDiscovery nu** med stöd för verktyget [och arbetsflödet för nya samlingar.](/microsoft-365/compliance/collections-overview) Andra nya ämnen är [att skapa ett utkast ,](/microsoft-365/compliance/create-draft-collection)spara ett utkast [till](/microsoft-365/compliance/commit-draft-collection)en granskningsuppsättning och samla in statistik [och rapporter.](/microsoft-365/compliance/collection-statistics-reports)
-- **Exportera dokument** i en granskning som är inställd på [Azure Storage](/microsoft-365/compliance/download-export-jobs) konto.
+- **Exportera dokument** i en granskning inställd på ett [Azure-lagring](/microsoft-365/compliance/download-export-jobs) dokumentkonto.
 - **Prediktiv kodningsmodul för Advanced eDiscovery**. Titta först på de nya [funktionerna för förutsägelsekodning](/microsoft-365/compliance/predictive-coding-overview) som ersätter den indragna relevansmodulen.
 
 ### <a name="data-classification"></a>Dataklassificering
@@ -87,7 +108,7 @@ Här är några av de ändringar Microsoft 365 av efterlevnadslösningar och inn
 
 - **Privata nycklar**. Stöd för privata nycklar har lagts till i [Bloomberg Message-data,](/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) [ICE-chattdata](/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) och [snabbkopplingar för Bloomberg-data.](/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys)
 
-### <a name="data-loss-prevention"></a>Dataförlustskydd
+### <a name="data-loss-prevention"></a>Skydd mot dataförlust
 
 - **Microsoft Teams support**. Stöd för dataförlustskydd utökad [till Microsoft Teams.](/microsoft-365/compliance/dlp-teams-default-policy)
 - **Microsoft Compliance-tillägg.** Komma igång med tillägget [Microsoft Compliance](/microsoft-365/compliance/dlp-chrome-get-started).
@@ -146,12 +167,12 @@ Innehållet har lagts till eller uppdaterats i följande avsnitt:
 ### <a name="sensitivity-labels"></a>Känslighetsetiketter
 
 - **DoD-stöd**. Stöd för amerikanska myndigheter med DoD-miljöer.
-- **Kryptera endast för Outlook**. Krypteringsalternativ för Outlook nu att Encrypt-Only när du väljer [Låt användare tilldela behörigheter.](encryption-sensitivity-labels.md#let-users-assign-permissions)
-- **Tillämpa inbyggda etiketter i Office appar.** Uppdaterad [vägledning](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) om hur du framtvingar inbyggda etiketter i Office-appar när du har installerat Azure Information Protection-unified labeling-klienten.
+- **Endast kryptera för Outlook.** Krypteringsalternativ för Outlook inkluderar nu Encrypt-Only när du markerar [Låt användare tilldela behörigheter.](encryption-sensitivity-labels.md#let-users-assign-permissions)
+- **Tillämpa inbyggda etiketter i Office-appar.** Uppdaterad [vägledning](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) för hur du framtvingar inbyggda etiketter i Office-program när du har installerat Unified Labeling-klienten för Azure Information Protection.
 
 ## <a name="february-2021"></a>Februari 2021
 
-Här är några av de ändringar Microsoft 365 av efterlevnadslösningar och -innehåll för månaden februari.
+Här är några av ändringarna av Microsoft 365-efterlevnadslösningar och -innehåll för februari månad.
 
 ### <a name="auditing"></a>Granskning
 
@@ -165,17 +186,17 @@ Innehållet har lagts till eller uppdaterats i följande avsnitt:
 - [Kom igång med innehållsutforskaren](/microsoft-365/compliance/data-classification-content-explorer)
 - [Viktig information för dataklassificering](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
-### <a name="data-loss-prevention"></a>Dataförlustskydd
+### <a name="data-loss-prevention"></a>Skydd mot dataförlust
 
 Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
 - [Läs mer om Slutpunkt DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
 - [Skicka e-postaviseringar och visa principtips för DLP-principer](/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [Lär dig mer Microsoft 365 skanner för dataförlustskydd på en lokal skanner](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [Lär dig mer om dataförlustskydd i lokal skanner i Microsoft 365](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
 - [Komma igång med dataförlustskydd i lokal skanner](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 - [Skapa en DLP-princip för att skydda dokument med FCI eller andra egenskaper](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
 - [Använda dataförlustskydd för slutpunkter](/microsoft-365/compliance/endpoint-dlp-using)
-- [Komma igång med dataförlustskydd för slutpunkter](/microsoft-365/compliance/endpoint-dlp-getting-started)
+- [Komma igång med dataförlustskydd för slutpunkt](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>eDiscovery
 
@@ -183,7 +204,7 @@ Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
 - [Dekryptering i Microsoft 365 eDiscovery-verktyg](/microsoft-365/compliance/ediscovery-decryption)
 - [Nyckelordsfrågor och sökvillkor](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [Relevansmodulen i Advanced eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
+- [Ta ur relevansmodulen i Avancerad eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
 - [Använda ett skript för att lägga till användare i ett ärende för bas-eDiscovery](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
 
 ### <a name="encryption"></a>Kryptering
@@ -193,20 +214,20 @@ Innehållet har lagts till eller uppdaterats i följande avsnitt:
 #### <a name="azure-rights-management-service-rms"></a>Azure Rights Management Service (RMS)
 
 - [Kundhanterade krypterings funktioner](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [Exchange Online e-postkryptering med AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). Supporten för den här tjänsten har tagits bort. Du kan inte längre använda AD RMS i en Exchange-hybridmiljö. Migrera i stället till Azure RMS.
+- [Exchange Online-e-postkryptering med AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). Supporten för den här tjänsten har tagits bort. Du kan inte längre använda AD RMS i en Exchange-hybridmiljö. Migrera i stället till Azure RMS.
 
 #### <a name="customer-key"></a>Customer Key
 
-- [Kundnyckel för Microsoft 365 på innehavarnivå](/microsoft-365/compliance/customer-key-tenant-level)
+- [Kundnyckel för Microsoft 365 på klientorganisationsnivå](/microsoft-365/compliance/customer-key-tenant-level)
 - [Översikt över säkerhet och efterlevnad](/microsoftteams/security-compliance-overview)
 
 #### <a name="information-rights-management-irm"></a>IRM (Information Rights Management)
 
 - [Tillämpa IRM (Information Rights Management) på en lista eller ett bibliotek.](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) De här nationella molnen stöder inte den här inställningen:
-    - Microsoft Cloud for US Government
+    - Microsoft Cloud för amerikanska myndigheter
     - Microsoft Cloud Germany
     - Azure och Microsoft 365 som drivs av 21Vianet i Kina)
-- [Konfigurera IRM för användning av en lokal AD RMS-server](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Stöd för den här tjänsten Exchange en e-posthybridmiljö har tagits bort.
+- [Konfigurera IRM för användning av en lokal AD RMS-server](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Stödet för den här tjänsten i en Exchange-hybridmiljö har tagits bort.
 
 ### <a name="sensitive-information-types"></a>Typer av känslig information
 
@@ -222,16 +243,16 @@ Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
 Innehållet har lagts till eller uppdaterats i följande avsnitt:
 
-- **SharePoint extern delning**. För [behållaretiketter](sensitivity-labels-teams-groups-sites.md) är alternativet för extern delning från SharePoint nu tillgängligt som allmänt tillgänglig. Dessutom har administrationscentret Microsoft 365 och Planner nu stöd för att använda känslighetsetiketterna. 
+- **Extern delning i SharePoint.** När [det gäller behållaretiketter](sensitivity-labels-teams-groups-sites.md) släpps nu alternativet för extern delning från SharePoint-webbplatser som allmänt tillgängligt. Dessutom har administrationscentret för Microsoft 365 och Planner nu stöd för att använda känslighetsetiketterna. 
 - **Samtidig redigering och spara automatiskt**. Stöd för [samtidig redigering och spara automatiskt](sensitivity-labels-coauthoring.md) för krypterade filer släpps som förhandsversion för testning i icke-produktionsklienter.
 
 ## <a name="january-2021"></a>Januari 2021
 
 ### <a name="support-for-card-content-in-teams"></a>Stöd för kortinnehåll i Teams
 
-Följande lösningar Microsoft 365 efterlevnad har nu stöd för identifiering av [kortinnehåll som](/microsoftteams/platform/task-modules-and-cards/what-are-cards) genererats via appar i Teams meddelanden:
+Följande Microsoft 365-efterlevnadslösningar har nu stöd för identifiering av [kortinnehåll som](/microsoftteams/platform/task-modules-and-cards/what-are-cards) genereras via appar i Teams-meddelanden:
 
-- **Kärn- och Advanced eDiscovery**. Kortinnehåll kan nu [sätts i is](create-ediscovery-holds.md#preserve-card-content) eller ingå [i sökningar](/microsoftteams/ediscovery-investigation#search-for-card-content) (gäller även innehållssökning).
+- **Core och Advanced eDiscovery**. Kortinnehåll kan nu [sätts i is](create-ediscovery-holds.md#preserve-card-content) eller ingå [i sökningar](/microsoftteams/ediscovery-investigation#search-for-card-content) (gäller även innehållssökning).
 - **Granska**. Kortaktivitet registreras [nu i granskningsloggen](/microsoftteams/audit-log-events#teams-activities).
 - **Bevarandeprinciper.** Bevarandeprinciper kan nu användas för [att behålla och ta bort kortinnehåll.](retention-policies-teams.md#whats-included-for-retention-and-deletion)
 
@@ -241,14 +262,14 @@ Följande lösningar Microsoft 365 efterlevnad har nu stöd för identifiering a
 
 ### <a name="sensitivity-labels"></a>Känslighetsetiketter
 
-- Känslighetsetiketter stöds nu för amerikanska myndigheters GCC och GCC–H).
+- Känslighetsetiketter stöds nu för amerikanska myndigheters klientorganisation (GCC och GCC-H).
 - Nytt [automatiskt etikettstöd](sensitivity-labels-office-apps.md) för macOS.
 
 ## <a name="december-2020"></a>December 2020
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>Spotlight: Nytt innehåll för Insider Risk-lösningar
 
-Teamet Microsoft 365 kompatibilitetsinnehåll arbetar hårt med att skapa dokument för "innehållslösning" för att främja hur efterlevnadsfunktioner kan användas tillsammans för att hjälpa dig att uppfylla dina efterlevnadsmål.
+Microsoft 365-teamet arbetar hårt med att skapa innehållslösningsdokument för att främja hur efterlevnadsfunktioner kan användas tillsammans för att uppfylla dina efterlevnadsmål.
 
 Först och främst är innehåll som binder samman våra Insider-risklösningar: kommunikationsefterlevnad, insider-riskhantering, informationsbarriärer och behörighetshantering. Här är en översikt över vad du hittar:
 
@@ -277,7 +298,7 @@ Vi [presenterar kundnyckel för Microsoft 365 på innehavarnivå.](customer-key-
 - Teams mediemeddelanden (bilder, kodstycken, videor, wiki-bilder)
 - Teams samtals- och mötesinspelningar som lagras Teams lagringsutrymme
 - Teams chattaviseringar
-- Teams förslag på chattar av Cortana
+- Teams chattförslag från Cortana
 - Teams statusmeddelanden
 - Information om användare och Exchange Online
 

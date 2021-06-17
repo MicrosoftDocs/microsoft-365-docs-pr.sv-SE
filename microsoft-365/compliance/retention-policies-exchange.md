@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mer information om hur kvarhållning för Exchange fungerar.
-ms.openlocfilehash: efb95b22355bff292ef63c77fb77fb5a15d66722
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861137"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985438"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Mer information om kvarhållning för Exchange
 
@@ -34,7 +34,7 @@ Informationen i den här artikeln kompletterar [Mer information om kvarhållning
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Vad ingår för kvarhållning och borttagning
 
-Följande Exchange-objekt kan kvarhållas och tas bort genom att använda kvarhållningsprinciper och kvarhållningsetiketter: E-postmeddelanden (inklusive utkast) med bifogade filer, uppgifter när de har ett slutdatum och anteckningar. 
+Följande Exchange-objekt från användarpostlådor samt delade postlådor kan behållas och tas bort med hjälp av kvarhållningsprinciper och kvarhållningsetiketter: e-postmeddelanden (inklusive mottagna meddelanden, utkast och skickade meddelanden) med bifogade filer, uppgifter när de har ett slutdatum och anteckningar. 
 
 Kalenderobjekt som har ett slutdatum stöds för kvarhållningsprinciper, men stöds inte för kvarhållningsetiketter.
 

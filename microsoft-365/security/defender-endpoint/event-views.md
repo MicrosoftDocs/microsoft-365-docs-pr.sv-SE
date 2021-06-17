@@ -14,18 +14,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769335"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985482"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Visa händelser för minskning av attackytan
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gäller för:**
+
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +39,7 @@ Det kan vara användbart att granska händelser när du utvärderar funktionerna
 
 Den här artikeln innehåller alla händelser, deras associerade funktion eller inställning och beskriver hur du skapar anpassade vyer för att filtrera efter specifika händelser.
 
-Få detaljerad rapportering om händelser och block som en del av Windows-säkerhet om du har en E5-prenumeration och använder [Microsoft Defender för slutpunkt.](microsoft-defender-endpoint.md)
+Få detaljerad rapportering om händelser, block och varningar som en del av Windows-säkerhet om du har en E5-prenumeration och använder [Microsoft Defender för slutpunkt.](microsoft-defender-endpoint.md)
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Använda anpassade vyer för att granska funktioner för att minska attackytan
 
@@ -54,11 +55,12 @@ Du kan också manuellt navigera till det händelseområde som motsvarar funktion
     - Anpassad vy för minskning av attackytor: *asr-events.xml*
     - Anpassad vy för nätverks- och skyddshändelser: *np-events.xml*
 
-2. Skriv **händelsevisare** på Start-menyn och öppna **Loggboken**.
+2. Skriv **händelsevisare** i Start-menyn och öppna **Loggboken**.
 
 3. Välj **Anpassad**  >  **vy för åtgärdsimport...**
 
-    ![Animeringsmarkering Importera anpassad vy till vänster om fönstret Jämn visningsprogram](/windows/security/threat-protection/images/events-import)
+  > [!div class="mx-imgBorder"]
+  > ![Animeringsmarkering Importera anpassad vy till vänster om fönstret Jämn visningsprogram](images/events-import.gif)
 
 4. Gå till den plats där du extraherade XML-filen för den anpassade vy du vill använda och markera den.
 
@@ -68,19 +70,18 @@ Du kan också manuellt navigera till det händelseområde som motsvarar funktion
 
 ### <a name="copy-the-xml-directly"></a>Kopiera XML direkt
 
-1. Skriv **händelsevisare** på Start-menyn och öppna Windows **Loggboken**.
+1. Skriv **händelsevisare** i Start-menyn och öppna Windows **Loggboken**.
 
 2. I den vänstra panelen under **Åtgärder väljer** du Skapa **anpassad vy...**
 
-    ![Animering som markerar alternativet Skapa anpassad vy i fönstret Loggboken](/windows/security/threat-protection/images/events-create)
+  > [!div class="mx-imgBorder"]
+  > ![Animering som markerar alternativet Skapa anpassad vy i fönstret Loggboken](images/events-create.gif)
 
 3. Gå till fliken XML och välj **Redigera fråga manuellt**. Ett varningsmeddelande visas om att du inte kan redigera frågan med hjälp av **fliken Filter** om du använder alternativet XML. Välj **Ja**.
 
 4. Klistra in XML-koden för den funktion du vill filtrera händelser från i XML-avsnittet.
 
-5. Välj **OK**. Ange ett namn för filtret.
-
-6. Den skapar en anpassad vy som filtrerar för att bara visa händelser relaterade till den funktionen.
+5. Välj **OK**. Ange ett namn för filtret. Då skapas en anpassad vy som filtreras för att bara visa händelser relaterade till den funktionen.
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>XML för händelser för attackytans minskningsregel
 
@@ -145,7 +146,7 @@ Du kan komma åt dessa händelser Windows i händelsevisaren:
 2. Expandera **Loggar för program och > för Microsoft > Windows** och gå sedan till den mapp som visas under **Leverantör/källa** i tabellen nedan.
 3. Dubbelklicka på underobjektet för att visa händelser. Bläddra igenom händelserna för att hitta den du letar efter.
 
-   ![Animering som visar hur du använder Loggboken](/windows/security/threat-protection/images/event-viewer)
+   ![Animering som visar hur du använder Loggboken](images/event-viewer.gif)
 
 Funktion | Leverantör/källa | Händelse-ID | Beskrivning
 :-|:-|:-:|:-

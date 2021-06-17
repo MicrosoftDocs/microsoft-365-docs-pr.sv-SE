@@ -1,7 +1,7 @@
 ---
 title: Lägga till och verifiera administratörskontakter i administratörsportalen
 description: Berätta vem vi ska kontakta för varje fokusområde.
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18823db8ca8d4bfa82b8ab6265ee8a0902a13e79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925898"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984706"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Lägga till och verifiera administratörskontakter i administratörsportalen
 
@@ -51,15 +51,11 @@ Administratörskontakter krävs när du [skickar en supportbegäran.](../service
 
 **Lägga till administratörskontakter**
 
-1.  Logga in på [Microsoft Hanterat skrivbord administrationsportalen](https://aka.ms/mwaasportal). 
+1.  Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com). 
 
-2.  Under **Support** väljer du **Administratörskontakter**. 
-
-    ![Supportmenyn, administratörskontakter nästan högst upp markerat](../../media/admincontacts.png)
+2.  Titta **efter avsnittet** för klientorganisationsadministration **Microsoft Hanterat skrivbord** välj sedan **Administratörskontakter**. 
 
 3. Välj **Lägg till**.
-
-    ![Administrationsportal, knappen Lägg till, till vänster om Exportera och uppdatera](../../media/adminadd.png)
 
 4.  Välj **ett område med fokus** och ange information om kontakten. 
 

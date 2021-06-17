@@ -1,7 +1,7 @@
 ---
-title: 'Microsoft 365 Defender API: er som stöds'
-description: 'Microsoft 365 Defender API: er som stöds'
-keywords: Microsoft 365 Defender, API:er, api
+title: Microsoft 365 Defender API:er som stöds
+description: Microsoft 365 Defender API:er som stöds
+keywords: Microsoft 365 Defender API:er, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c10b2863503a5bda829cbf67379a606b687ac2e3
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: acd8ec28fb1d78e3724cb0ca0ebee48133e7310f
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730948"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985090"
 ---
-# <a name="supported-microsoft-365-defender-apis"></a>Microsoft 365 Defender API: er som stöds 
+# <a name="supported-microsoft-365-defender-apis"></a>Microsoft 365 Defender API:er som stöds 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,9 +41,9 @@ ms.locfileid: "52730948"
 
 Artikel | Beskrivning
 -|-
-[Advanced jakt-API](api-advanced-hunting.md) | Kör avancerade frågor för sökning.
+[Avancerad jakt-API](api-advanced-hunting.md) | Kör avancerade frågor för sökning.
 [API:er för tillbud](api-incident.md) | Lista och uppdatera incidenter, tillsammans med andra praktiska uppgifter.
-[Direktuppspelnings-API](../defender-endpoint/raw-data-export.md) (förhandsversion) | Leverera händelser och aviseringar i realtid när de inträffar i en enda dataström.
+[Direktuppspelnings-API](streaming-api.md) (förhandsversion) | Leverera händelser och aviseringar i realtid när de inträffar i en enda dataström.
 
 ### <a name="endpoint-uris"></a>Slutpunkts-URI:er
 
@@ -59,8 +59,8 @@ Alla API:er längs sökvägen använder till exempel `/api` [OData-protokollet.]
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Microsoft 365 Översikt över Defender-API:er](api-overview.md)
-- [Komma åt Microsoft 365 Defender-API:er](api-access.md)
-- [Streaming API](../defender-endpoint/raw-data-export.md)
+- [Microsoft 365 Defender API:er – översikt](api-overview.md)
+- [Få åtkomst Microsoft 365 Defender API:er](api-access.md)
+- [API för direktuppspelning](../defender-endpoint/raw-data-export.md)
 - [Läs mer om API-begränsningar och licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)

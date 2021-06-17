@@ -1,6 +1,6 @@
 ---
 title: Konfigurera Microsoft Defender Antivirus meddelanden
-description: Lär dig hur du konfigurerar och anpassar både standard- och Microsoft Defender Antivirus standardaviseringar på slutpunkter.
+description: Lär dig hur du konfigurerar och anpassar både standardmeddelanden och Microsoft Defender Antivirus standardaviseringar på slutpunkter.
 keywords: meddelanden, defender, antivirus, slutpunkt, hantering, administratör
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -13,61 +13,64 @@ author: denisebmsft
 ms.topic: article
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/17/2021
+ms.date: 06/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 1e9f733b20b62af7e73a923932057920ff1dc155
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: a7a838bb15cd011b750fbfa3d6df100ddf9f713c
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926244"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985414"
 ---
-# <a name="configure-the-notifications-that-appear-on-endpoints"></a>Konfigurera meddelanden som visas på slutpunkter
+# <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>Konfigurera Microsoft Defender Antivirus som visas på slutpunkter
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](/microsoft-365/security/defender-endpoint/)
 
-I Windows 10 är programmeddelanden om identifiering och åtgärder av skadlig kod mer robusta, konsekventa och koncisa.
+I Windows 10 är programmeddelanden om identifiering och åtgärder av skadlig kod mer robusta, konsekventa och koncisa. Microsoft Defender Antivirus meddelanden visas på slutpunkter när genomsökningar har slutförts och hot identifieras. Meddelanden följer både schemalagda och manuellt utlösta genomsökningar. Dessa meddelanden visas också i **meddelandecentret**, och en sammanfattning av genomsökningar och identifieringar av hot visas med jämna mellanrum.
 
-Meddelanden visas på slutpunkter när manuellt utlösta och schemalagda genomsökningar har slutförts och hot identifieras. Dessa meddelanden visas också i **meddelandecentret**, och en sammanfattning av genomsökningar och identifieringar av hot visas med jämna mellanrum.
+Om du är en del av organisationens säkerhetsteam kan du konfigurera hur meddelanden visas på slutpunkter, till exempel meddelanden som uppmanar till en systemstart eller som anger att ett hot har upptäckts och åtgärdats.
 
-Du kan också konfigurera hur standardmeddelanden visas på slutpunkter, till exempel meddelanden för omstart eller när ett hot har upptäckts och åtgärdats.
-
-## <a name="configure-the-additional-notifications-that-appear-on-endpoints"></a>Konfigurera ytterligare meddelanden som visas på slutpunkter
+## <a name="configure-antivirus-notifications-using-group-policy-or-the-windows-security-app"></a>Konfigurera antivirusmeddelanden med grupprinciper eller Windows-säkerhet programmet
 
 Du kan konfigurera visningen av ytterligare meddelanden, till exempel sammanfattningar av nya identifieringar av hot, [Windows-säkerhet appen](microsoft-defender-security-center-antivirus.md) och med Grupprincip.
 
 > [!NOTE]
-> I Windows 10 version 1607 kallades funktionen  för Utökade meddelanden och kan konfigureras under **Windows Inställningar**  >  **Update & security**  >  **Windows Defender**. I grupprincipinställningar i alla versioner Windows 10 kallas det **utökade meddelanden.**
+> I Windows 10 version 1607 kallades funktionen  för Utökade meddelanden och konfigurerades under **Windows Inställningar**  >  **Update & security**  >  **Windows Defender**. I Grupprincipinställningar för alla versioner Windows 10 kallas meddelandefunktionen **Utökade meddelanden.**
+
+### <a name="use-group-policy-to-disable-additional-notifications"></a>Använda grupprinciper för att inaktivera ytterligare meddelanden
+
+1. Öppna [Konsolen för grupprinciphantering](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) på datorn för grupprinciphantering.
+
+2. Högerklicka på det grupprincipobjekt du vill konfigurera och välj sedan **Redigera**.
+
+3. Gå till **Datorkonfiguration i redigeraren** för **grupprinciphantering.**
+
+4. Välj **Administrativa mallar**.
+
+5. Expandera trädet och visa **Windows komponenter**  >  **Microsoft Defender Antivirus** >**.
+
+6. Dubbelklicka på **Inaktivera utökade meddelanden och** ställ in alternativet Aktiverad .  Välj sedan **OK**. Det gör att det inte visas fler meddelanden.
 
 > [!IMPORTANT]
 > Om du inaktiverar ytterligare meddelanden inaktiveras inte kritiska meddelanden, till exempel aviseringar om identifiering av hot och åtgärder.
 
-**Använd Windows-säkerhet för att inaktivera ytterligare meddelanden:**
+### <a name="use-the-windows-security-app-to-disable-additional-notifications"></a>Använd appen Windows-säkerhet för att inaktivera ytterligare meddelanden
 
 1. Öppna Windows-säkerhet genom att klicka på sköldikonen i aktivitetsfältet eller söka efter Säkerhet på **Start-menyn.**
 
 2. Välj **Virus &** skydd mot hot (eller sköldikonen i den vänstra menyraden) och välj sedan Inställningar för & skydd mot **virus**
 
-3. Bläddra till avsnittet **Meddelanden** och klicka på **Ändra aviseringsinställningar**.
+3. Bläddra till avsnittet **Meddelanden** och välj **Ändra aviseringsinställningar**.
 
 4. Dra reglaget till **Av** eller **På för** att inaktivera eller aktivera ytterligare meddelanden.
 
-**Använd Grupprincip för att inaktivera ytterligare meddelanden:**
+> [!IMPORTANT]
+> Om du inaktiverar ytterligare meddelanden inaktiveras inte kritiska meddelanden, till exempel aviseringar om identifiering av hot och åtgärder.
 
-1. På datorn för grupprinciphantering öppnar du [Konsolen för](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))grupprinciphantering, högerklickar på det grupprincipobjekt du vill konfigurera och klickar på **Redigera.**
-
-2. Gå till **Datorkonfiguration i redigeraren** för **grupprinciphantering.**
-
-3. Klicka **på Administrativa mallar**.
-
-4. Expandera trädet för att **Windows komponenter > Microsoft Defender Antivirus > rapportering.**
-
-5. Dubbelklicka på **Inaktivera utökade meddelanden och** ställ in alternativet Aktiverad.  Klicka på **OK**. Det gör att det inte visas fler meddelanden.
-
-## <a name="configure-standard-notifications-on-endpoints"></a>Konfigurera standardaviseringar på slutpunkter
+## <a name="configure-standard-notifications-on-endpoints-using-group-policy"></a>Konfigurera standardaviseringar på slutpunkter med grupprincip
 
 Du kan använda grupprinciper för att:
 
@@ -75,36 +78,37 @@ Du kan använda grupprinciper för att:
 - Dölj alla meddelanden på slutpunkter
 - Dölja meddelanden om omstart på slutpunkter
 
-Att dölja meddelanden kan vara användbart i situationer där du inte kan dölja Microsoft Defender Antivirus gränssnittet. Mer information [finns i Hindra användare från att se Microsoft Defender Antivirus interagera med användargränssnittet.](prevent-end-user-interaction-microsoft-defender-antivirus.md) 
+Att dölja meddelanden kan vara användbart i situationer där du inte kan dölja Microsoft Defender Antivirus gränssnittet. Mer information [finns i Hindra användare från att se Microsoft Defender Antivirus interagera med användargränssnittet.](prevent-end-user-interaction-microsoft-defender-antivirus.md) Om du döljer meddelanden visas det bara i slutpunkter där principen har distribuerats. Meddelanden om åtgärder som måste vidtas (till exempel en omstart) visas fortfarande på Microsoft Endpoint Manager Endpoint Protection [och instrumentpanelen för övervakning.](/configmgr/protect/deploy-use/monitor-endpoint-protection) 
 
-> [!NOTE]
-> Om du döljer meddelanden visas det bara i slutpunkter där principen har distribuerats. Meddelanden om åtgärder som måste vidtas (till exempel en omstart) visas fortfarande på Microsoft Endpoint Manager Endpoint Protection [och instrumentpanelen för övervakning.](/configmgr/protect/deploy-use/monitor-endpoint-protection) 
+Om du vill lägga till anpassad kontaktinformation i slutpunktsaviseringar går du [till Anpassa Windows-säkerhet för din organisation.](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)
 
-Se [Anpassa Windows-säkerhet för din organisation](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) för anvisningar om hur du lägger till anpassad kontaktinformation i meddelanden som användarna ser på sina datorer.
+### <a name="use-group-policy-to-hide-notifications"></a>Använda grupprinciper för att dölja meddelanden
 
-**Använd grupprinciper för att dölja meddelanden:**
+1. Öppna [Konsolen för grupprinciphantering](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) på datorn för grupprinciphantering.
 
-1. På datorn för grupprinciphantering öppnar du [Konsolen](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))för grupprinciphantering, högerklickar på det grupprincipobjekt du vill konfigurera och klickar på **Redigera.**
+2. Högerklicka på det grupprincipobjekt du vill konfigurera och välj sedan **Redigera**.
 
-2. I **redigeraren för grupprinciphantering går** du till **Datorkonfiguration och** klickar på **Administrativa mallar**.
+3. I **redigeraren för grupprinciphantering** går du **till Datorkonfiguration** och väljer sedan **Administrativa mallar**.
 
-3. Expandera trädet och visa **Windows i > Microsoft Defender Antivirus > klientgränssnittet.** 
+4. Expandera trädet till en **Windows Microsoft Defender Antivirus**  >    >  **klientgränssnittet**. 
 
-4. Dubbelklicka på **Ignorera alla meddelanden** och ange alternativet **Aktiverad**. Klicka på **OK**. Det gör att det inte visas fler meddelanden.
+5. Dubbelklicka på **Ignorera alla meddelanden** och ange alternativet **Aktiverad**. 
 
-**Använd Grupprincip för att dölja meddelanden om omstart:**
+6. Välj **OK**. Det gör att det inte visas fler meddelanden.
 
-1. På datorn för grupprinciphantering öppnar du [Konsolen för](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))grupprinciphantering, högerklickar på det grupprincipobjekt du vill konfigurera och klickar på **Redigera.**
+### <a name="use-group-policy-to-hide-reboot-notifications"></a>Använd grupprinciper för att dölja meddelanden om omstart
+
+1. Öppna [Konsolen för grupprinciphantering](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) på datorn för grupprinciphantering.
+
+2. Högerklicka på det grupprincipobjekt du vill konfigurera och välj sedan **Redigera.**
 
 2. Gå till **Datorkonfiguration i redigeraren** för **grupprinciphantering.**
 
 3. Klicka **på Administrativa mallar**.
 
-4. Expandera trädet och visa **Windows i > Microsoft Defender Antivirus > klientgränssnittet.**
+4. Expandera trädet till en **Windows Microsoft Defender Antivirus**  >    >  **klientgränssnittet**.
 
-5. Dubbelklicka på Ignorera **meddelanden vid omstart och** ställ in alternativet **Aktiverad**. Klicka på **OK**. Det gör att det inte visas fler meddelanden.
+5. Dubbelklicka på Ignorera **meddelanden vid omstart och** ställ in alternativet **Aktiverad**. 
 
-## <a name="related-topics"></a>Relaterade ämnen
+5. Välj **OK**. Det gör att det inte visas fler meddelanden.
 
-- [Microsoft Defender Antivirus i Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Konfigurera slutanvändares interaktion med Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)

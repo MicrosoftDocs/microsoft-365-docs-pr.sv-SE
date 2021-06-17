@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Adm_O365
 ms.custom:
@@ -18,17 +18,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Du måste vara administratör för en företagsprenumeration för att få administratörshjälp eller online- eller telefonsupport i Microsoft 365 Business Premium.
-ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
-ms.translationtype: MT
+description: Du måste vara administratör för en företagsprenumeration för att få administratörshjälp eller Online- eller telefonsupport i Microsoft 365 Business Premium.
+ms.openlocfilehash: 254e01894f430bdf6a8f666d1425af8705968647
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635908"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984754"
 ---
 # <a name="get-support"></a>Få support
 
-## <a name="watch-get-help-or-support"></a>Titta: Få hjälp eller support 
+## <a name="watch-get-help-or-support"></a>Titta på: Få hjälp eller support 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -259,6 +259,6 @@ Du kan också [söka i Microsoft 365 for business-forumen](https://go.microsoft.
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Söka efter dokument och utbildning](find-help-answers.md) (artikel)\
-[Snabbinstallationsguide](employee-quick-setup.md) för anställda (artikel)\
-[Översikt över Microsoft 365 Business Premium konfiguration](setup-overview.md) (video)
+[Sök efter dokument och utbildning](find-help-answers.md) (artikel)\
+[Snabbkonfiguration för anställda](employee-quick-setup.md) (artikel)\
+[Översikt över konfigurationen av Microsoft 365 Business Premium](setup-overview.md) (video)

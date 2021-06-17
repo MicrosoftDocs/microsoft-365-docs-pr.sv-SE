@@ -19,12 +19,12 @@ description: Administratörer kan läsa mer om de e-postflödesrapporter som är
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245678"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985510"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visa e-postflödesrapporter på instrumentpanelen Rapporter i Säkerhets- & Efterlevnadscenter
 
@@ -35,7 +35,7 @@ ms.locfileid: "52245678"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Utöver de e-postflödesrapporter som [](mail-flow-insights-v2.md) finns tillgängliga på instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & finns det en mängd andra e-postflödesrapporter på instrumentpanelen Rapporter som hjälper dig att övervaka Microsoft 365 organisation.
+Utöver de e-postflödesrapporter som [](mail-flow-insights-v2.md) finns tillgängliga på instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & finns det en mängd andra e-postflödesrapporter på instrumentpanelen Rapporter som hjälper dig att övervaka din Microsoft 365-organisation.
 
 Om du har nödvändiga [behörigheter kan](#what-permissions-are-needed-to-view-these-reports)du visa de här rapporterna i Säkerhets- [& efterlevnadscenter genom](https://protection.office.com) att gå till **Instrumentpanelen** \> **rapporter.** Gå direkt till instrumentpanelen Rapporter genom att öppna <https://protection.office.com/insightdashboard> .
 
@@ -95,29 +95,29 @@ Om du klickar **på** Filter i en detaljtabellvy kan du ange ett datumintervall 
 
 Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**
 
-## <a name="exchange-transport-rule-report"></a>Exchange över transportregel
+## <a name="exchange-transport-rule-report"></a>Rapport över Exchange-transportregel
 
-I **Exchange transportregel visas** effekten av e-postflödesregler (kallas även transportregler) på inkommande och utgående meddelanden i organisationen.
+I **rapporten Exchange-transportregel** visas effekten av e-postflödesregler (kallas även transportregler) på inkommande och utgående meddelanden i organisationen.
 
-Om du vill visa rapporten öppnar du [Säkerhets- &,](https://protection.office.com)går till **instrumentpanelen** Rapporter \>  och väljer **Exchange Transportregel.** Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Om du vill visa rapporten öppnar du [säkerhets- &,](https://protection.office.com)går till **instrumentpanelen** \> **Rapporter** och väljer **Exchange-transportregel**. Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
-![Exchange för transportregel på instrumentpanelen Rapporter](../../media/transport-rule-report-widget.png)
+![Widget för Exchange-transportregel på instrumentpanelen Rapporter](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Rapportvy för Exchange för transportregel
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Rapportvy för Exchange-transportregelrapporten
 
 Följande diagram är tillgängliga i rapportvyn:
 
-- **Visa data efter: Exchange för transportregler** \> **Dela upp efter: Riktning**: I det här diagrammet visas antalet **inkommande** och **utgående** meddelanden som påverkades av transportreglerna.
+- **Visa data efter: Exchange-transportregler** \> **Dela upp efter: Riktning**: I det här diagrammet visas antalet **inkommande** och **utgående** meddelanden som påverkades av transportreglerna.
 
-- **Visa data efter: Exchange för transportregler** \> **Dela upp efter: Allvarlighetsgrad**:  I det här diagrammet visas antalet meddelanden med hög allvarlighetsgrad och medel allvarlighetsgrad samt låg **allvarlighetsgrad.** Du anger allvarlighetsnivån som en åtgärd i regeln **(Granska** denna regel med allvarlighetsnivå eller _AngeGranskningSalla_). Mer information finns i Åtgärder [för e-postflödesregel i Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **Visa data efter: Exchange-transportregler** \> **Dela upp efter: Allvarlighetsgrad**:  I det här diagrammet visas antalet meddelanden med hög allvarlighetsgrad och medel allvarlighetsgrad samt låg **allvarlighetsgrad.** Du anger allvarlighetsnivån som en åtgärd i regeln **(Granska** denna regel med allvarlighetsnivå eller _AngeGranskningSalla_). Mer information finns i Åtgärder för [e-postflödesregel i Exchange Online.](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- **Visa data efter: DLP Exchange transportregler** \> **Dela upp efter: Riktning**: I det  här diagrammet visas antalet **inkommande** och utgående meddelanden som påverkades av DLP-transportregler (Data Loss Prevention). Du kan förfina diagrammet ytterligare genom att välja bland följande alternativ:
+- **Visa data efter: DLP Exchange-transportregler** \> **Dela upp efter: Riktning**: I det  här diagrammet visas antalet **inkommande** och utgående meddelanden som påverkades av DLP-transportregler (Data Loss Prevention). Du kan förfina diagrammet ytterligare genom att välja bland följande alternativ:
 
   - **Visa data för: Alla DLP-transportregler**
   - **Visa data för: Komprometterade användare**
   - **Visa data för: Låg mängd innehåll som identifierats av U.S. Act**
 
-- **Visa data efter: DLP Exchange transportregler** \> **Dela upp efter: Riktning**: I  den här vyn visas  antalet meddelanden med hög allvarlighetsgrad och medel allvarlighetsgrad och meddelanden med låg allvarlighetsgrad som påverkades av DLP-transportregler.  Du kan förfina diagrammet ytterligare genom att välja bland följande alternativ:
+- **Visa data efter: DLP Exchange-transportregler** \> **Dela upp efter: Riktning**: I  den här vyn visas  antalet meddelanden med hög allvarlighetsgrad och medel allvarlighetsgrad och meddelanden med låg allvarlighetsgrad som påverkades av DLP-transportregler.  Du kan förfina diagrammet ytterligare genom att välja bland följande alternativ:
 
   - **Visa data för: Alla DLP-transportregler**
   - **Visa data för: Komprometterade användare**
@@ -129,13 +129,13 @@ Om du klickar **på** Filter i en rapportvy kan du ändra resultatet med följan
 - Riktningsvärden
 - Värden för allvarlighetsgrad
 
-![Rapportvyn i Exchange med transportregel](../../media/transport-rule-report-report-view.png)
+![Rapportvyn i rapporten Exchange-transportregel](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Detaljtabellvyn för Exchange transportregelrapport
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Detaljtabellvyn för Exchange-transportregelrapporten
 
 Om du **klickar på Visa** informationstabell beror den information som visas på det diagram som du tittar på:
 
-- **Visa data efter: Exchange Transportregler:**
+- **Visa data efter: Exchange-transportregler:**
 
   - **Datum**
   - **Transportregel**
@@ -145,7 +145,7 @@ Om du **klickar på Visa** informationstabell beror den information som visas p�
   - **Allvarlighetsgrad**
   - **Riktning**
 
-- **Visa data efter: DLP Exchange transportregler:**
+- **Visa data efter: DLP-transportregler i Exchange:**
 
   - **Datum**
   - **DLP-princip**
@@ -166,7 +166,7 @@ Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**
 
 ## <a name="forwarding-report"></a>Vidarebefordransrapport
 
-I **vidarebefordransrapporten** visas organisationens automatiskt vidarebefordrade meddelanden till externa domäner från Exchange Online postlådor. Vidarebefordrade meddelanden kan vara en säkerhets- eller efterlevnadsrisk och kan ange ett komprometterat konto.
+I **vidarebefordransrapporten** visas organisationens automatiskt vidarebefordrade meddelanden till externa domäner från Exchange Online-postlådor. Vidarebefordrade meddelanden kan vara en säkerhets- eller efterlevnadsrisk och kan ange ett komprometterat konto.
 
 Om du vill visa rapporten öppnar du [säkerhets- & Kompatibilitetscenter](https://protection.office.com), går till  \> **instrumentpanelen rapporter** och väljer **Vidarebefordransrapport.** Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -450,7 +450,7 @@ Följande diagram är tillgängliga i rapportvyn:
 
   ![Riktningsvyn i rapporten Skickat och mottaget e-postmeddelande](../../media/sent-and-received-email-report-direction-view.png)
 
-- **Öka detalj detalj detalj för** \> **Skadlig programvara (skadlig programvara)**: Det här valet tar dig till [identifieringar av skadlig programvara i e-postrapporten.](view-email-security-reports.md#malware-detections-in-email-report)
+- **Öka detalj detalj detalj för** \> **Skadlig programvara (skadlig programvara)**: Det här valet tar dig till rapporten [om identifiering av skadlig programvara.](view-email-security-reports.md#malware-detections-report)
 
 - **Öka detalj detalj detalj för** \> **Identifiering av skräppost)**: Det här valet tar dig till [rapporten Identifiering av skräppost.](view-email-security-reports.md#spam-detections-report)
 
@@ -545,7 +545,7 @@ För att kunna visa och använda rapporterna som beskrivs i den här artikeln m�
 - **Organisationshantering**
 - **Säkerhetsadministratör**
 - **Säkerhetsläsare**
-- **Global läsare**
+- **Global Reader**
 
 Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
 
