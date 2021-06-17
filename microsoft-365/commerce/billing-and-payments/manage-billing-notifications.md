@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du hanterar vilka som får e-postmeddelanden om faktureringsaviseringar och fakturabilagor.
 ms.date: 03/17/2021
-ms.openlocfilehash: 75c75175930434619a01886b1096757bf04111c5
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888367"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998770"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Hantera faktureringsaviseringar och fakturabilagor
 
@@ -43,7 +43,7 @@ Du måste vara global administratör för att kunna göra det som beskrivs i den
 
 E-postmeddelanden om faktureringsaviseringar skickas på organisationens föredragna språk. Använd följande steg om du vill ändra önskat språk.
 
-1. I Microsoft 365 administrationscenter går du till sidan   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsfaktureringsaviseringar.</a>
+1. I Administrationscenter för Microsoft 365 du till sidan   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Faktureringsfaktureringsaviseringar.</a>
 2. Välj Redigera **aviseringsinställningar** i **avsnittet Inställningar för faktureringsaviseringar.**
 3. I fönstret Inställningar för faktureringsaviseringar under **Önskat** språk väljer du det språk du vill använda och väljer sedan **Spara**. 
 
@@ -87,9 +87,6 @@ Förutom dina globala administratörer och faktureringsadministratörer skickar 
 3. I det högra fönstret skriver du den e-postadress som du vill använda och väljer sedan **Spara**.
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Ta emot din organisations fakturor som e-postbilagor
-
-> [!NOTE]
-> Faktureringsadministratörer kan också följa anvisningarna i det här avsnittet.
 
 Du kan bifoga en kopia av organisationens faktura som en PDF-fil för att få fakturaaviseringar via e-post när en ny faktura är klar. Använd följande steg för att ta emot fakturor som bifogade filer.
 

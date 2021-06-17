@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d2edc5d429d124412134b466753b65506d2dd7a9
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 50b05b98ba507e120bbd6a3dc09f4633dac3a005
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772191"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998782"
 ---
 # <a name="get-domain-statistics-api"></a>Hämta API för domänstatistik
 
@@ -63,9 +63,9 @@ Delegerat (arbets- eller skolkonto) | URL. Read.All | "Läs URL:er"
 GET /api/domains/{domain}/stats
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
-Sidhuvud | Värde 
+Rubrik | Värde 
 :---|:---
 Auktorisering | Bearer {token}. **Obligatoriskt.**
 
@@ -75,7 +75,7 @@ Namn | Typ | Beskrivning
 :---|:---|:---
 lookBackHours | Int32 | Definierar hur många timmar vi söker tillbaka för att få fram statistiken. Standard är 30 dagar. **Valfritt.**
 
-## <a name="request-body"></a>Begärans brödtext
+## <a name="request-body"></a>Frågebrödtext
 Tom
 
 ## <a name="response"></a>Svar
@@ -101,7 +101,7 @@ Här är ett exempel på svaret.
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
     "host": "example.com",
-    "orgPrevalence": "4070",
+    "organizationPrevalence": 4070,
     "orgFirstSeen": "2017-07-30T13:23:48Z",
     "orgLastSeen": "2017-08-29T13:09:05Z"
 }

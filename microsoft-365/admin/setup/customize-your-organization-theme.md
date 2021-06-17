@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Lär dig hur du ändrar standardtemat för navigeringsfältet högst upp i Microsoft 365 och anpassa det så att det matchar ditt företags logotyp eller färg.
-ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908167"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998806"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassa Microsoft 365 för din organisation
 
@@ -82,16 +82,13 @@ Du kan skapa upp till fyra ytterligare gruppteman.
 
 På sidan **Logotyper kan** du lägga till dina logotyper och ange URL-adressen dit användarna ska navigera när de markerar logotypen.
 
-- **Standardlogotyp:** Lägg till en URL-plats som pekar på din logotyp. Kontrollera att URL:en använder HTTPS. Om du laddar upp en logotyp bör du kontrollera att den är mindre än 10 kb. Standardlogotypen kan vara i JPG-, PNG-, GIF- eller SVG-format. För SVG-bilder ändras storleken så att den passar 24 bildpunkter lodrätt. JPG-, PNG- och GIF-bilder skalas så att de passar 200 x 48 bildpunkter.
+- **Standardlogotyp:** Lägg till en URL-plats som pekar på din logotyp. Kontrollera att URL:en använder HTTPS. Lägg till en HTTPS-bild-URL som tillåter anonym åtkomst och inte kräver autentisering. För standardtema har du också ett alternativ för att ladda upp en logotypbild som är mindre än 10 kb. Standardlogotypen kan vara i JPG-, PNG-, GIF- eller SVG-format. För SVG-bilder ändras storleken så att den passar 24 bildpunkter lodrätt. JPG-, PNG- och GIF-bilder skalas så att de passar 200 x 48 bildpunkter. Proportionerna för logotypen bevaras alltid.
 - **Alternativ logotyp:** Lägg till en URL-plats som pekar på din logotyp. Din alternativa logotyp bör vara optimerad för användning i Office mörka teman. Samma krav som för standardlogotypen.
 - **Vid klickning länk:** Lägg till en URL-plats som pekar på din logotyp. Du kan använda din logotyp som en länk till valfri företagsresurs, till exempel företagets webbplats.
 
 Välj **Spara** för att spara ändringarna.
 
 Du kan ta bort dina logotyper när som helst. Gå bara tillbaka till **sidan Logotyper och** välj Ta **bort**.
-
-> [!NOTE]
-> Som standard visar vi först de logotypval som de flesta organisationer använder. Uppladdningsalternativet gäller endast för standardteman och inte för gruppteman.
   
 ## <a name="colors-choose-theme-colors"></a>Färger: Välj temafärger
 

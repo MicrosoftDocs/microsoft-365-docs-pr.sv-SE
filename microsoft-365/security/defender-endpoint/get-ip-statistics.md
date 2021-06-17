@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 55bf10d01093c17ba2d186ce0a1d1313db2c3a75
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4919f082c115d8a57960ec49532b6cda6a63833f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770091"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998734"
 ---
 # <a name="get-ip-statistics-api"></a>Hämta IP-statistik-API
 
@@ -61,7 +61,7 @@ Delegerat (arbets- eller skolkonto) | Ip.Read.All |  "Läs IP-adressprofiler"
 GET /api/ips/{ip}/stats
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 :---|:---|:---
@@ -73,7 +73,7 @@ Namn | Typ | Beskrivning
 :---|:---|:---
 lookBackHours | Int32 | Definierar hur många timmar vi söker tillbaka för att få fram statistiken. Standard är 30 dagar. **Valfritt.**
 
-## <a name="request-body"></a>Begärans brödtext
+## <a name="request-body"></a>Frågebrödtext
 Tom
 
 ## <a name="response"></a>Svar
@@ -99,7 +99,7 @@ Här är ett exempel på svaret.
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgIPStats",
     "ipAddress": "10.209.67.177",
-    "orgPrevalence": "63515",
+    "organizationPrevalence": 63515,
     "orgFirstSeen": "2017-07-30T13:36:06Z",
     "orgLastSeen": "2017-08-29T13:32:59Z"
 }
@@ -108,7 +108,7 @@ Här är ett exempel på svaret.
 
 | Namn | Beskrivning |
 | :--- | :---------- |
-| Organisations hos en organisation | det distinkta antalet enheter som öppnade nätverksanslutningen till denna IP. |
+| Organisationens organisationers | det distinkta antalet enheter som öppnade nätverksanslutningen till denna IP. |
 | Org visas först | den första anslutningen för denna IP i organisationen. |
 | Org senast sedd  | den sista anslutningen för denna IP i organisationen. |
 

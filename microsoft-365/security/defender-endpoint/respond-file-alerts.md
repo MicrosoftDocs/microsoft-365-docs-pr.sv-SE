@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 388d71ce4606acabaafdb32ba1baff87286951f1
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844088"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998794"
 ---
 # <a name="take-response-actions-on-a-file"></a>Vidta svarsåtgärder för en fil
 
@@ -35,7 +35,7 @@ ms.locfileid: "52844088"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
-Svara snabbt på identifierade attacker genom att stoppa och kvartilerna på filer eller blockera en fil. När du har agerat på filer kan du kontrollera aktivitetsinformation i Åtgärdscenter.
+Svara snabbt på identifierade attacker genom att stoppa och kvartilerna på filer eller blockera en fil. När du har vidta åtgärder för filer kan du kontrollera aktivitetsinformation i Åtgärdscenter.
 
 Svarsåtgärder är tillgängliga på en fils detaljerade profilsida. När du är på den här sidan kan du växla mellan den nya och gamla sidlayouten genom att byta **ny Filsida.** Resten av den här artikeln beskriver den nyare sidlayouten.
 
@@ -68,7 +68,7 @@ Du kan innehålla en attack i organisationen genom att stoppa den skadliga proce
 > Du kan bara vidta den här åtgärden om:
 >
 > - Den enhet som du vidtar åtgärden på körs i Windows 10, version 1703 eller senare
-> - Filen tillhör inte betrodda tredjepartsutgivare eller är inte signerad av Microsoft
+> - Filen tillhör inte betrodda utgivare från tredje part eller är inte signerad av Microsoft
 > - Microsoft Defender Antivirus måste åtminstone köras på passivt läge. Mer information finns i [Microsoft Defender Antivirus kompatibilitet](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
 Åtgärden **Stoppa och sätt i karantän** innehåller att stoppa processer, kvartiler av filerna och ta bort beständiga data, till exempel registernycklar.
@@ -82,7 +82,7 @@ Den här åtgärden gäller på enheter med Windows 10, version 1703 eller senar
 
 1. Markera den fil som du vill stoppa och sätt i karantän. Du kan välja en fil från någon av följande vyer eller använda sökrutan:
 
-   - **Aviseringar** – klicka på motsvarande länkar från beskrivningen eller informationen i tidslinjen Med Artefakt
+   - **Aviseringar** – klicka på motsvarande länkar från beskrivningen eller informationen på tidslinjen aviseringsartikeln
    - **Sökrutan** – **välj** Arkiv i den nedrullningsmenyn och ange filnamnet
 
    > [!NOTE]
@@ -128,14 +128,14 @@ Du kan återställa och ta bort en fil från karantän om du har fastställt att
 
 2. Ange följande kommando och tryck på **Retur:**
 
-   ```powershell
+   ```console
    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
-> [!NOTE]
-> I vissa fall kan **ThreatName** visas som: EUS:Win32/CustomEnterpriseBlock!cl.
->
-> Defender för Endpoint återställer alla egna blockerade filer som har satts i karantän på den här enheten under de senaste 30 dagarna.
+   > [!NOTE]
+   > I vissa fall kan **ThreatName** visas som: EUS:Win32/CustomEnterpriseBlock!cl.
+   >
+   > Defender för Endpoint återställer alla egna blockerade filer som har satts i karantän på den här enheten under de senaste 30 dagarna.
 
 > [!IMPORTANT]
 > En fil som har satts i karantän som ett potentiellt nätverkshot kanske inte kan återställas. Om en användare försöker återställa filen efter karantänen är filen kanske inte tillgänglig. Det kan bero på att systemet inte längre har nätverksautentiseringsuppgifter för att få åtkomst till filen. Vanligtvis beror det på en tillfällig inloggning till ett system eller en delad mapp och åtkomsttoken har upphört att gälla.
@@ -234,15 +234,13 @@ Du kan också skicka ett exempel via [Microsoft Security Center-portalen](https:
 > [!NOTE]
 > På grund av flöden för backend-bearbetning i Microsoft Security Center-portalen kan det finnas upp till 10 minuters fördröjning mellan filinskick och tillgängligheten för den djupanalysfunktion som finns i Defender för Slutpunkt.
 
-När exemplet samlas in kör Defender för Slutpunkt filen i en säker miljö. Sedan skapas en detaljerad rapport över observerade beteenden och associerade artefakter, till exempel filer som släppts på enheter, kommunikation till IP-adresser och registerändringar.
-
 ### <a name="submit-files-for-deep-analysis"></a>Skicka filer för djupanalys
 
 1. Välj den fil som du vill skicka för djupanalys. Du kan välja eller söka i en fil från någon av följande vyer:
 
-    - Aviseringar – välj fillänkarna från **beskrivningen eller** **informationen på** tidslinjen Artefakt
+    - **Aviseringar** – välj fillänkarna från **beskrivningen eller** **informationen på** tidslinjen aviseringsartikeln
     - **Listan Enheter** – välj fillänkarna i **avsnittet** **Beskrivning eller** Information i avsnittet **Enhet i** organisation
-    - Sökrutan – **välj** Arkiv i den nedrullningsmenyn och ange filnamnet
+    - **Sökrutan** – **välj** Arkiv i den nedrullningsmenyn och ange filnamnet
 
 2. På fliken **Djupanalys** i filvyn väljer du **Skicka.**
 
@@ -251,7 +249,7 @@ När exemplet samlas in kör Defender för Slutpunkt filen i en säker miljö. S
    > [!NOTE]
    > Endast PE-filer stöds, inklusive _.exe_ och _.dll_ filer.
 
-En förloppsfält visas med information om de olika stegen i analysen. Du kan sedan visa rapporten när analysen är klar.
+   En förloppsfält visas med information om de olika stegen i analysen. Du kan sedan visa rapporten när analysen är klar.
 
 > [!NOTE]
 > Exempel på samlingstid kan variera beroende på enhetens tillgänglighet. Det finns en tidsgräns på 3 timmar för exempelsamling. Samlingen misslyckas och åtgärden avbryts om det inte finns någon online-Windows 10 för enheten vid den tidpunkten. Du kan skicka filer igen för djupanalys för att hämta nya data i filen.
@@ -277,11 +275,14 @@ Informationen som ges kan hjälpa dig att undersöka om det finns uppgifter om e
 Om du får problem när du försöker skicka en fil kan du prova följande felsökningssteg.
 
 1. Kontrollera att filen i fråga är en PE-fil. PE-filer har _.exe_ eller _.dll_ tillägg (körbara program eller program).
+
 2. Kontrollera att tjänsten har åtkomst till filen, att den fortfarande finns och inte har skadats eller ändrats.
+
 3. Vänta en stund och försök sedan skicka filen igen. Kön kan vara full eller det har uppstått ett tillfälligt anslutnings- eller kommunikationsfel.
+
 4. Om exempelsamlingsprincipen inte är konfigurerad är standardbeteendet att tillåta exempelsamling. Om den är konfigurerad bör du kontrollera att principinställningen tillåter exempelinsamling innan du skickar filen igen. När exempelsamlingen är konfigurerad kontrollerar du följande registervärde:
 
-    ```powershell
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
@@ -291,6 +292,7 @@ Om du får problem när du försöker skicka en fil kan du prova följande fels�
     ```
 
 1. Ändra organisationsenheten via grupprincipen. Mer information finns i [Konfigurera med grupprincip.](configure-endpoints-gp.md)
+
 1. Om de här stegen inte löser problemet kontaktar du [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## <a name="related-topics"></a>Relaterade ämnen
