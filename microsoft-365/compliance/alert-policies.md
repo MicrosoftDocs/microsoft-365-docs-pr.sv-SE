@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Skapa aviseringsprinciper i säkerhets- och efterlevnadscentret i Office 365 och Microsoft 365 för att övervaka potentiella hot, dataförlust och behörighetsproblem.
-ms.openlocfilehash: 2fe23f3e6d6889c3fc80b94be6a07095e06d3d68
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 4bca7bb15900dbdd7caadb74ce7938b9483be03e
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950125"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964734"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Aviseringsregler i säkerhets- och efterlevnadscentret
 
@@ -285,11 +285,11 @@ När aviseringar har skapats och  visats på sidan Visa aviseringar i säkerhets
 
   - Antalet gånger som aktiviteten som spårades med aviseringen utfördes. Det här antalet kanske inte överensstämmer med det faktiska antalet relaterade aviseringar som visas på sidan Visa aviseringar eftersom fler aviseringar kan ha utlösts.
 
-  - En länk till en aktivitetslista som innehåller ett objekt för varje aktivitet som utfördes och som utlöste aviseringen. Varje post i den här listan identifierar när aktiviteten inträffade, namnet på den faktiska åtgärden (till exempel "FileDeleted") och användaren som utförde aktiviteten, objektet (till exempel en fil, ett eDiscovery-ärende eller en postlåda) som aktiviteten utfördes på och IP-adressen till användarens dator. Vid aviseringar om skadlig programvara länkas dessa till en meddelandelista.
+  - En länk till en aktivitetslista som innehåller ett objekt för varje aktivitet som utfördes och som utlöste aviseringen. Varje post i den här listan identifierar när aktiviteten inträffade, namnet på den faktiska åtgärden (till exempel "FileDeleted"), användaren som utförde aktiviteten, objektet (till exempel en fil, ett eDiscovery-ärende eller en postlåda) som aktiviteten utfördes på och IP-adressen till användarens dator. Vid aviseringar om skadlig programvara länkas dessa till en meddelandelista.
 
   - Namnet (och länken) på motsvarande aviseringsprincip.
 
-- **Hindra e-postaviseringar.** Du kan inaktivera (eller utelämna) e-postaviseringar från den utfällna sidan för att få en avisering. När du ignorerar e-postaviseringar kommer Microsoft inte att skicka meddelanden när aktiviteter eller händelser som matchar villkoren i aviseringsprincipen. Aviseringar utlöses dock när aktiviteter som utförs av användare matchar villkoren i aviseringsprincipen. Du kan också inaktivera e-postaviseringar genom att redigera aviseringsprincipen.
+- **Hindra e-postaviseringar.** Du kan inaktivera (eller utelämna) e-postaviseringar från den utfällna sidan för att få en avisering. När du förhindrar e-postaviseringar skickar Microsoft inga meddelanden när aktiviteter eller händelser som matchar villkoren i aviseringsprincipen inträffar. Aviseringar utlöses dock när aktiviteter som utförs av användare matchar villkoren i aviseringsprincipen. Du kan också inaktivera e-postaviseringar genom att redigera aviseringsprincipen.
 
 - **Lös aviseringar.** Du kan markera en avisering som löst på sidan med utfällning för en avisering (som anger statusen för aviseringen till **Löst**). Om du inte ändrar filtret visas inte lösta aviseringar på **sidan Visa** aviseringar.
 
