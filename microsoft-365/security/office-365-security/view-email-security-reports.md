@@ -1,5 +1,5 @@
 ---
-title: Visa e-postsäkerhetsrapporter i Microsoft 365 Defender-portalen
+title: Visa e-postsäkerhetsrapporter på Microsoft 365 Defender-portalen
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,529 +15,784 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur du hittar och använder e-postsäkerhetsrapporter för din organisation. Säkerhetsrapporter för e-post finns tillgängliga Microsoft 365 Defender-portalen.
+description: Lär dig hur du hittar och använder e-postsäkerhetsrapporter för din organisation. Säkerhetsrapporter för e-post finns tillgängliga på Microsoft 365 Defender-portalen.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb7570722fcc957ca86d68f6b42ef254578d7bd7
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: d46aec8601d19234eed8682955ffef27b7e9b467
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930331"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985309"
 ---
-# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a><span data-ttu-id="84aaa-104">Visa e-postsäkerhetsrapporter i Microsoft 365 Defender-portalen</span><span class="sxs-lookup"><span data-stu-id="84aaa-104">View email security reports in the Microsoft 365 Defender portal</span></span>
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a><span data-ttu-id="9ada3-104">Visa e-postsäkerhetsrapporter på Microsoft 365 Defender-portalen</span><span class="sxs-lookup"><span data-stu-id="9ada3-104">View email security reports in the Microsoft 365 Defender portal</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-<span data-ttu-id="84aaa-105">**Gäller för**</span><span class="sxs-lookup"><span data-stu-id="84aaa-105">**Applies to**</span></span>
-- [<span data-ttu-id="84aaa-106">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="84aaa-106">Exchange Online Protection</span></span>](exchange-online-protection-overview.md)
-- [<span data-ttu-id="84aaa-107">Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2</span><span class="sxs-lookup"><span data-stu-id="84aaa-107">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](defender-for-office-365.md)
-- [<span data-ttu-id="84aaa-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="84aaa-108">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
+<span data-ttu-id="9ada3-105">**Gäller för**</span><span class="sxs-lookup"><span data-stu-id="9ada3-105">**Applies to**</span></span>
+- [<span data-ttu-id="9ada3-106">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="9ada3-106">Exchange Online Protection</span></span>](exchange-online-protection-overview.md)
+- [<span data-ttu-id="9ada3-107">Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2</span><span class="sxs-lookup"><span data-stu-id="9ada3-107">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](defender-for-office-365.md)
+- [<span data-ttu-id="9ada3-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9ada3-108">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
 
-<span data-ttu-id="84aaa-109">Det finns en mängd olika rapporter på [Microsoft 365 Defender-portalen](https://security.microsoft.com) som hjälper dig se hur e-postsäkerhetsfunktioner, till exempel funktioner för skydd mot skräppost, skadlig programvara och kryptering i Microsoft 365 skyddar organisationen.</span><span class="sxs-lookup"><span data-stu-id="84aaa-109">A variety of reports are available in the [Microsoft 365 Defender portal](https://security.microsoft.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization.</span></span> <span data-ttu-id="84aaa-110">Om du har [nödvändiga](#what-permissions-are-needed-to-view-these-reports)behörigheter kan du visa de här rapporterna  i Microsoft 365 Defender-portalen genom att gå till Rapporterar e-& för samarbete \>  \> **E& och samarbetsrapporter**.</span><span class="sxs-lookup"><span data-stu-id="84aaa-110">If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="84aaa-111">Gå direkt till instrumentpanelen Rapporter genom att öppna <https://security.microsoft.com/emailandcollabreport> .</span><span class="sxs-lookup"><span data-stu-id="84aaa-111">To go directly to the Reports dashboard, open <https://security.microsoft.com/emailandcollabreport>.</span></span>
+<span data-ttu-id="9ada3-109">Det finns flera olika rapporter på Microsoft 365 Defender-portalen som hjälper dig se hur säkerhetsfunktioner för e-post, till exempel skydd mot skräppost, skadlig programvara och kryptering i <https://security.microsoft.com> Microsoft 365, skyddar organisationen.</span><span class="sxs-lookup"><span data-stu-id="9ada3-109">A variety of reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization.</span></span> <span data-ttu-id="9ada3-110">Om du har [nödvändiga](#what-permissions-are-needed-to-view-these-reports)behörigheter kan du visa de här rapporterna i  Microsoft 365 Defender-portalen genom att gå till Rapporterar \> **e-&-postsamarbete** \> **E& och samarbetsrapporter**.</span><span class="sxs-lookup"><span data-stu-id="9ada3-110">If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="9ada3-111">Om du vill gå direkt **till sidan & e-post och** samarbetsrapporter öppnar du <https://security.microsoft.com/emailandcollabreport> .</span><span class="sxs-lookup"><span data-stu-id="9ada3-111">To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.</span></span>
 
-![Instrumentpanelen Rapporter i Microsoft 365 Defender-portalen](../../media/email-collaboration-reports.png)
-
-## <a name="compromised-users-report"></a><span data-ttu-id="84aaa-113">Rapport om komprometterade användare</span><span class="sxs-lookup"><span data-stu-id="84aaa-113">Compromised users report</span></span>
+![Skicka & via e-post och samarbetsrapporter i Microsoft 365 Defender-portalen](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
-> <span data-ttu-id="84aaa-114">Den här rapporten är tillgänglig i Microsoft 365 organisationer med Exchange Online postlådor.</span><span class="sxs-lookup"><span data-stu-id="84aaa-114">This report is available in Microsoft 365 organizations with Exchange Online mailboxes.</span></span> <span data-ttu-id="84aaa-115">Det är inte tillgängligt i fristående EOP Exchange Online Protection(EOP).</span><span class="sxs-lookup"><span data-stu-id="84aaa-115">It's not available in standalone Exchange Online Protection (EOP) organizations.</span></span>
+>
+> <span data-ttu-id="9ada3-113">Vissa av rapporterna på sidan **e& och samarbetsrapporter** kräver Microsoft Defender för Office 365.</span><span class="sxs-lookup"><span data-stu-id="9ada3-113">Some of the reports on the **Email & collaboration reports** page require Microsoft Defender for Office 365.</span></span> <span data-ttu-id="9ada3-114">Mer information om de här rapporterna finns [i Visa Defender för Office 365-rapporter i Microsoft 365 Defender-portalen.](view-reports-for-mdo.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-114">For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).</span></span>
+>
+> <span data-ttu-id="9ada3-115">Rapporter som är relaterade till e-postflödet finns nu i administrationscentret för Exchange (EAC).</span><span class="sxs-lookup"><span data-stu-id="9ada3-115">Reports that are related to mail flow are now in the Exchange admin center (EAC).</span></span> <span data-ttu-id="9ada3-116">Mer information om rapporterna finns i [E-postflödesrapporter i det nya administrationscentret för Exchange.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)</span><span class="sxs-lookup"><span data-stu-id="9ada3-116">For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).</span></span>
 
-<span data-ttu-id="84aaa-116">I **rapporten Komprometterade** användare visas antalet användarkonton som har markerats **som misstänkta eller** begränsade **under** de senaste 7 dagarna.</span><span class="sxs-lookup"><span data-stu-id="84aaa-116">The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days.</span></span> <span data-ttu-id="84aaa-117">Konton i något av dessa tillstånd är problematiska eller till och med komprometterade.</span><span class="sxs-lookup"><span data-stu-id="84aaa-117">Accounts in either of these states are problematic or even compromised.</span></span> <span data-ttu-id="84aaa-118">Med regelbunden användning kan du använda rapporten för att upptäcka ökningar och även trender i misstänkta eller begränsade konton.</span><span class="sxs-lookup"><span data-stu-id="84aaa-118">With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts.</span></span> <span data-ttu-id="84aaa-119">Mer information om komprometterade användare finns i [Svara på ett komprometterat e-postkonto.](responding-to-a-compromised-email-account.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-119">For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).</span></span>
+## <a name="compromised-users-report"></a><span data-ttu-id="9ada3-117">Rapport om komprometterade användare</span><span class="sxs-lookup"><span data-stu-id="9ada3-117">Compromised users report</span></span>
 
-![Widget för komprometterade användare i instrumentpanelen Rapporter](../../media/compromised-users-report-widget.png)
+> [!NOTE]
+> <span data-ttu-id="9ada3-118">Den här rapporten är tillgänglig i Microsoft 365-organisationer med Exchange Online-postlådor.</span><span class="sxs-lookup"><span data-stu-id="9ada3-118">This report is available in Microsoft 365 organizations with Exchange Online mailboxes.</span></span> <span data-ttu-id="9ada3-119">Det är inte tillgängligt i fristående EOP-organisationer (Exchange Online Protection).</span><span class="sxs-lookup"><span data-stu-id="9ada3-119">It's not available in standalone Exchange Online Protection (EOP) organizations.</span></span>
 
-<span data-ttu-id="84aaa-121">I mängdvyn visas data för de senaste 90 dagarna och i detaljvyn visas data för de senaste 30 dagarna.</span><span class="sxs-lookup"><span data-stu-id="84aaa-121">The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days.</span></span>
+<span data-ttu-id="9ada3-120">I **rapporten Komprometterade** användare visas antalet användarkonton som har markerats **som misstänkta eller** begränsade **under** de senaste 7 dagarna.</span><span class="sxs-lookup"><span data-stu-id="9ada3-120">The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days.</span></span> <span data-ttu-id="9ada3-121">Konton i något av dessa tillstånd är problematiska eller till och med komprometterade.</span><span class="sxs-lookup"><span data-stu-id="9ada3-121">Accounts in either of these states are problematic or even compromised.</span></span> <span data-ttu-id="9ada3-122">Med regelbunden användning kan du använda rapporten för att upptäcka ökningar och även trender i misstänkta eller begränsade konton.</span><span class="sxs-lookup"><span data-stu-id="9ada3-122">With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts.</span></span> <span data-ttu-id="9ada3-123">Mer information om komprometterade användare finns i [Svara på ett komprometterat e-postkonto.](responding-to-a-compromised-email-account.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-123">For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).</span></span>
 
-<span data-ttu-id="84aaa-122">Om du vill visa rapporten öppnar du Microsoft 365  [Defender-portalen](https://security.microsoft.com), går till E& och samarbete via e& och klickar på Visa \>  \>  **information** under **Komprometterade användare.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-122">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Compromised users**.</span></span> <span data-ttu-id="84aaa-123">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/CompromisedUsers> .</span><span class="sxs-lookup"><span data-stu-id="84aaa-123">To go directly to the report, open <https://security.microsoft.com/reports/CompromisedUsers>.</span></span>
+![Widget för komprometterade användare på sidan & för e-post och samarbetsrapporter](../../media/compromised-users-report-widget.png)
 
-<span data-ttu-id="84aaa-124">Du kan filtrera både diagrammet och informationstabellen genom att klicka **på Filter** och välja ett eller flera av följande värden:</span><span class="sxs-lookup"><span data-stu-id="84aaa-124">You can filter both the chart and the details table by clicking **Filters** and selecting one or more of the following values:</span></span>
+<span data-ttu-id="9ada3-125">I mängdvyn visas data för de senaste 90 dagarna och i detaljvyn visas data för de senaste 30 dagarna.</span><span class="sxs-lookup"><span data-stu-id="9ada3-125">The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days.</span></span>
 
-- <span data-ttu-id="84aaa-125">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-125">**Start date** and **End date**</span></span>
+<span data-ttu-id="9ada3-126">Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-126">To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="9ada3-127">På **komprometterade** användare klickar **du på Visa information.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-127">On **Compromised users**, click **View details**.</span></span> <span data-ttu-id="9ada3-128">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/CompromisedUsers> .</span><span class="sxs-lookup"><span data-stu-id="9ada3-128">To go directly to the report, open <https://security.microsoft.com/reports/CompromisedUsers>.</span></span>
 
-- <span data-ttu-id="84aaa-126">**Misstänkt:** Användarkontot har skickat misstänkt e-postmeddelande och riskerar att bli begränsat från att skicka e-post.</span><span class="sxs-lookup"><span data-stu-id="84aaa-126">**Suspicious**: The user account has sent suspicious email and is at risk of being restricted from sending email.</span></span>
+<span data-ttu-id="9ada3-129">När du har **klickat på** Visa information kan du filtrera både diagrammet och detaljtabellen genom att klicka på **Filtrera** och välja ett eller flera av följande värden i den utfäll vy som visas:</span><span class="sxs-lookup"><span data-stu-id="9ada3-129">After you click **View details**, you can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:</span></span>
 
-- <span data-ttu-id="84aaa-127">**Begränsad:** Användarkontot har begränsats från att skicka e-post på grund av mycket misstänkta mönster.</span><span class="sxs-lookup"><span data-stu-id="84aaa-127">**Restricted**: The user account has been restricted from sending email due to highly suspicious patterns.</span></span>
+- <span data-ttu-id="9ada3-130">**Datum (UTC)**: **Startdatum** **och slutdatum.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-130">**Date (UTC)**: **Start date** and **End date**.</span></span>
+- <span data-ttu-id="9ada3-131">**Aktivitet**:</span><span class="sxs-lookup"><span data-stu-id="9ada3-131">**Activity**:</span></span>
+  - <span data-ttu-id="9ada3-132">**Misstänkt:** Användarkontot har skickat misstänkt e-postmeddelande och riskerar att bli begränsat från att skicka e-post.</span><span class="sxs-lookup"><span data-stu-id="9ada3-132">**Suspicious**: The user account has sent suspicious email and is at risk of being restricted from sending email.</span></span>
+  - <span data-ttu-id="9ada3-133">**Begränsad:** Användarkontot har begränsats från att skicka e-post på grund av mycket misstänkta mönster.</span><span class="sxs-lookup"><span data-stu-id="9ada3-133">**Restricted**: The user account has been restricted from sending email due to highly suspicious patterns.</span></span>
+
+<span data-ttu-id="9ada3-134">När du är klar med filtreringen klickar du på **Använd** eller **Avbryt**.</span><span class="sxs-lookup"><span data-stu-id="9ada3-134">When you're finished filtering, click **Apply** or **Cancel**.</span></span>
 
 ![Rapportvyn i rapporten Komprometterade användare](../../media/compromised-users-report-activity-view.png)
 
-<span data-ttu-id="84aaa-129">Om du **klickar på Visa informationstabell** visas följande information:</span><span class="sxs-lookup"><span data-stu-id="84aaa-129">If you click **View details table**, you can see the following details:</span></span>
+<span data-ttu-id="9ada3-136">I tabellen nedanför diagrammet kan du se följande information:</span><span class="sxs-lookup"><span data-stu-id="9ada3-136">In the table below the graph, you can see the following details:</span></span>
 
-- <span data-ttu-id="84aaa-130">**Tid då det skapades**</span><span class="sxs-lookup"><span data-stu-id="84aaa-130">**Creation time**</span></span>
-- <span data-ttu-id="84aaa-131">**Användar-ID**</span><span class="sxs-lookup"><span data-stu-id="84aaa-131">**User ID**</span></span>
-- <span data-ttu-id="84aaa-132">**Åtgärd**</span><span class="sxs-lookup"><span data-stu-id="84aaa-132">**Action**</span></span>
+- <span data-ttu-id="9ada3-137">**Tid då det skapades**</span><span class="sxs-lookup"><span data-stu-id="9ada3-137">**Creation time**</span></span>
+- <span data-ttu-id="9ada3-138">**Användar-ID**</span><span class="sxs-lookup"><span data-stu-id="9ada3-138">**User ID**</span></span>
+- <span data-ttu-id="9ada3-139">**Åtgärd**</span><span class="sxs-lookup"><span data-stu-id="9ada3-139">**Action**</span></span>
 
-<span data-ttu-id="84aaa-133">Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-133">To go back to the report view, click **View report**.</span></span>
+## <a name="exchange-transport-rule-report"></a><span data-ttu-id="9ada3-140">Rapport över Exchange-transportregel</span><span class="sxs-lookup"><span data-stu-id="9ada3-140">Exchange transport rule report</span></span>
 
-## <a name="encryption-report"></a><span data-ttu-id="84aaa-134">Krypteringsrapport</span><span class="sxs-lookup"><span data-stu-id="84aaa-134">Encryption report</span></span>
+<span data-ttu-id="9ada3-141">I **rapporten Exchange-transportregel** visas effekten av e-postflödesregler (kallas även transportregler) på inkommande och utgående meddelanden i organisationen.</span><span class="sxs-lookup"><span data-stu-id="9ada3-141">The **Exchange transport rule** report shows the effect of mail flow rules (also known as transport rules) on incoming and outgoing messages in your organization.</span></span>
 
-<span data-ttu-id="84aaa-135">Krypteringsrapporten **är** tillgänglig i EOP (prenumerationer med postlådor i Exchange Online eller fristående EOP utan Exchange Online postlådor).</span><span class="sxs-lookup"><span data-stu-id="84aaa-135">The **Encryption report** is available in EOP (subscriptions with mailboxes in Exchange Online or standalone EOP without Exchange Online mailboxes).</span></span> <span data-ttu-id="84aaa-136">Organisationens säkerhetsteam kan använda informationen i den här rapporten för att identifiera mönster och proaktivt tillämpa eller justera principer för känsliga e-postmeddelanden.</span><span class="sxs-lookup"><span data-stu-id="84aaa-136">Your organization's security team can use information in this report to identify patterns and proactively apply or adjust policies for sensitive email messages.</span></span> <span data-ttu-id="84aaa-137">Till exempel:</span><span class="sxs-lookup"><span data-stu-id="84aaa-137">For example:</span></span>
+<span data-ttu-id="9ada3-142">Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-142">To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="9ada3-143">Klicka **på Visa information i Exchange-transportregel.** </span><span class="sxs-lookup"><span data-stu-id="9ada3-143">On **Exchange transport rule**, click **View details**.</span></span> <span data-ttu-id="9ada3-144">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/ETRRuleReport> .</span><span class="sxs-lookup"><span data-stu-id="9ada3-144">To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.</span></span>
 
-- <span data-ttu-id="84aaa-138">Om du ser ett stort antal e-postmeddelanden som krypteras av användare kanske du vill lägga till en krypteringsprincip för att automatisera kryptering för vissa användningsfall.</span><span class="sxs-lookup"><span data-stu-id="84aaa-138">If you see a high number of email messages encrypted by users, you might want to add an encryption policy to automate encryption for certain use cases.</span></span> <span data-ttu-id="84aaa-139">Mer information finns i Definiera [e-postflödesregler för att kryptera e-postmeddelanden i Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).</span><span class="sxs-lookup"><span data-stu-id="84aaa-139">For more information, see [Define mail flow rules to encrypt email messages in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).</span></span>
+![Widget för Exchange-transportregel på sidan E& och samarbetsrapporter](../../media/transport-rule-report-widget.png)
 
-- <span data-ttu-id="84aaa-140">Om du har ett antal krypteringsmallar tillgängliga men ingen använder dem kan du undersöka om användarna behöver utbildningar i funktioner.</span><span class="sxs-lookup"><span data-stu-id="84aaa-140">If you have a number of encryption templates available but no one is using them, you might explore whether users need feature training.</span></span>
+<span data-ttu-id="9ada3-146">När du klickar **på Visa** information är följande diagram och data tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="9ada3-146">After you click **View details**, the following charts and data are available:</span></span>
 
-<span data-ttu-id="84aaa-141">I mängdvyn kan du filtrera de senaste 90 dagarna, medan detaljvyn tillåter filtrering i 10 dagar.</span><span class="sxs-lookup"><span data-stu-id="84aaa-141">The aggregate view allows filtering for the last 90 days, while the detail view allows filtering for 10 days.</span></span>
+- <span data-ttu-id="9ada3-147">**Visa data enligt Exchange-transportregler** \> **Diagram i detalj efter riktning:** Det här diagrammet visar antalet **inkommande** och **utgående** meddelanden som påverkades av e-postflödesregler.</span><span class="sxs-lookup"><span data-stu-id="9ada3-147">**View data by Exchange transport rules** \> **Chart breakdown by Direction**: This chart shows the number of **Inbound** and **Outbound** messages that were affected by mail flow rules.</span></span>
 
-<span data-ttu-id="84aaa-142">Om du vill visa rapporten öppnar du Microsoft 365  [Defender-portalen](https://security.microsoft.com), går till Rapporterar e-& samarbete E& och samarbetsrapporter och klickar på Visa \>  \>  **information** under **Krypteringsrapport.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-142">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Encryption report**.</span></span> <span data-ttu-id="84aaa-143">Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=EncryptionReport> .</span><span class="sxs-lookup"><span data-stu-id="84aaa-143">To go directly to the report, open <https://protection.office.com/reportv2?id=EncryptionReport>.</span></span>
+- <span data-ttu-id="9ada3-148">**Visa data enligt Exchange-transportregler** \> **Diagramfördelning efter allvarlighetsgrad**: Det här diagrammet visar antalet meddelanden med hög allvarlighetsgrad, **medel** allvarlighetsgrad och **låg allvarlighetsgrad.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-148">**View data by Exchange transport rules** \> **Chart breakdown by Severity**: This chart shows the number of **High severity**, **Medium severity**, and **Low severity** messages.</span></span> <span data-ttu-id="9ada3-149">Du anger allvarlighetsnivån som en åtgärd i regeln **(Granska** denna regel med allvarlighetsnivå eller _AngeGranskningSalla_).</span><span class="sxs-lookup"><span data-stu-id="9ada3-149">You set the severity level as an action in the rule (**Audit this rule with severity level** or _SetAuditSeverity_).</span></span> <span data-ttu-id="9ada3-150">Mer information finns i Åtgärder för [e-postflödesregel i Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)</span><span class="sxs-lookup"><span data-stu-id="9ada3-150">For more information, see [Mail flow rule actions in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).</span></span>
 
-<span data-ttu-id="84aaa-144">Mer information om kryptering finns i [E-postkryptering i Microsoft 365](../../compliance/email-encryption.md).</span><span class="sxs-lookup"><span data-stu-id="84aaa-144">To learn more about encryption, see [Email encryption in Microsoft 365](../../compliance/email-encryption.md).</span></span>
+- <span data-ttu-id="9ada3-151">**Visa data efter DLP Exchange-transportregler** \> **Diagramfördelning efter riktning:** Det här diagrammet  visar antalet **inkommande** och utgående meddelanden som påverkades av DLP-e-postflödesregler (Data Loss Prevention).</span><span class="sxs-lookup"><span data-stu-id="9ada3-151">**View data by DLP Exchange transport rules** \> **Chart breakdown by Direction**: This chart shows the number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) mail flow rules.</span></span>
 
-### <a name="report-view-for-the-encryption-report"></a><span data-ttu-id="84aaa-145">Rapportvy för rapporten Kryptering</span><span class="sxs-lookup"><span data-stu-id="84aaa-145">Report view for the Encryption report</span></span>
+- <span data-ttu-id="9ada3-152">**Visa data efter DLP Exchange-transportregler** \> **Diagramfördelning efter allvarlighetsgrad**: I den här vyn visas  antalet meddelanden med hög allvarlighetsgrad, medel allvarlighetsgrad och låg allvarlighetsgrad som påverkades av DLP-e-postflödesregler.</span><span class="sxs-lookup"><span data-stu-id="9ada3-152">**View data by DLP Exchange transport rules** \> **Chart breakdown by Severity**: This view shows the number of **High severity**, **Medium severity**, and **Low severity** messages that were affected by DLP mail flow rules.</span></span>
 
-<span data-ttu-id="84aaa-146">Du kan använda följande filter i diagrammet:</span><span class="sxs-lookup"><span data-stu-id="84aaa-146">You can use the following filters on the chart:</span></span>
+<span data-ttu-id="9ada3-153">För **val av Visa data efter Exchange-transportregler** visas följande information i detaljtabellen under diagrammet:</span><span class="sxs-lookup"><span data-stu-id="9ada3-153">For **View data by Exchange transport rules** selections, the following information is shown in the details table below the graph:</span></span>
 
-- <span data-ttu-id="84aaa-147">**Visa data efter: Meddelandekrypteringsrapport** **och Dela upp efter: Krypteringsmetod:** Följande krypteringsmetoder är tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="84aaa-147">**View data by: Message Encryption Report** and **Break down by: Encryption method**: The following encryption methods are available:</span></span>
+- <span data-ttu-id="9ada3-154">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-154">**Date**</span></span>
+- <span data-ttu-id="9ada3-155">**Transportregel**</span><span class="sxs-lookup"><span data-stu-id="9ada3-155">**Transport rule**</span></span>
+- <span data-ttu-id="9ada3-156">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="9ada3-156">**Subject**</span></span>
+- <span data-ttu-id="9ada3-157">**Avsändarens adress**</span><span class="sxs-lookup"><span data-stu-id="9ada3-157">**Sender address**</span></span>
+- <span data-ttu-id="9ada3-158">**Mottagaradress**</span><span class="sxs-lookup"><span data-stu-id="9ada3-158">**Recipient address**</span></span>
+- <span data-ttu-id="9ada3-159">**Allvarlighetsgrad**</span><span class="sxs-lookup"><span data-stu-id="9ada3-159">**Severity**</span></span>
+- <span data-ttu-id="9ada3-160">**Riktning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-160">**Direction**</span></span>
 
-  - <span data-ttu-id="84aaa-148">**Kryptering efter användare**</span><span class="sxs-lookup"><span data-stu-id="84aaa-148">**Encryption by user**</span></span>
-  - <span data-ttu-id="84aaa-149">**Kryptering efter princip**</span><span class="sxs-lookup"><span data-stu-id="84aaa-149">**Encryption by policy**</span></span>
+<span data-ttu-id="9ada3-161">När **du väljer visningsdata för DLP-transportregler** för DLP visas följande information i detaljtabellen under diagrammet:</span><span class="sxs-lookup"><span data-stu-id="9ada3-161">For **View data by DLP Exchange transport rules** selections, the following information is shown in the details table below the graph:</span></span>
 
-  <span data-ttu-id="84aaa-150">Om du **klickar på** Filter kan du ändra diagrammet med följande filter:</span><span class="sxs-lookup"><span data-stu-id="84aaa-150">If you click **Filters**, you can modify the chart with the following filters:</span></span>
+- <span data-ttu-id="9ada3-162">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-162">**Date**</span></span>
+- <span data-ttu-id="9ada3-163">**DLP-princip**</span><span class="sxs-lookup"><span data-stu-id="9ada3-163">**DLP policy**</span></span>
+- <span data-ttu-id="9ada3-164">**Transportregel**</span><span class="sxs-lookup"><span data-stu-id="9ada3-164">**Transport rule**</span></span>
+- <span data-ttu-id="9ada3-165">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="9ada3-165">**Subject**</span></span>
+- <span data-ttu-id="9ada3-166">**Avsändarens adress**</span><span class="sxs-lookup"><span data-stu-id="9ada3-166">**Sender address**</span></span>
+- <span data-ttu-id="9ada3-167">**Mottagaradress**</span><span class="sxs-lookup"><span data-stu-id="9ada3-167">**Recipient address**</span></span>
+- <span data-ttu-id="9ada3-168">**Allvarlighetsgrad**</span><span class="sxs-lookup"><span data-stu-id="9ada3-168">**Severity**</span></span>
+- <span data-ttu-id="9ada3-169">**Riktning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-169">**Direction**</span></span>
 
-  - <span data-ttu-id="84aaa-151">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-151">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="84aaa-152">Krypteringsmetod.</span><span class="sxs-lookup"><span data-stu-id="84aaa-152">Encryption method.</span></span>
-  - <span data-ttu-id="84aaa-153">Krypteringsmall.</span><span class="sxs-lookup"><span data-stu-id="84aaa-153">Encryption template.</span></span>
+<span data-ttu-id="9ada3-170">Du kan filtrera både diagrammet och informationstabellen genom att klicka på **Filtrera** och markera ett eller flera av följande värden i den utfällo som visas:</span><span class="sxs-lookup"><span data-stu-id="9ada3-170">You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:</span></span>
 
-- <span data-ttu-id="84aaa-154">**Visa data efter: Meddelandekrypteringsrapport** **och Dela upp efter: Krypteringsmall:** Följande krypteringsmetoder är tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="84aaa-154">**View data by: Message Encryption Report** and **Break down by: Encryption template**: The following encryption methods are available:</span></span>
+- <span data-ttu-id="9ada3-171">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-171">**Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-172">**Riktning**: **Utgående** och **inkommande**</span><span class="sxs-lookup"><span data-stu-id="9ada3-172">**Direction**: **Outbound** and **Inbound**</span></span>
+- <span data-ttu-id="9ada3-173">**Allvarlighetsgrad**: **Hög allvarlighetsgrad,** **medel allvarlighetsgrad** och **låg allvarlighetsgrad**</span><span class="sxs-lookup"><span data-stu-id="9ada3-173">**Severity**: **High severity**, **Medium severity**, and **Low severity**</span></span>
 
-  - <span data-ttu-id="84aaa-155">**Vidarebefordra inte**</span><span class="sxs-lookup"><span data-stu-id="84aaa-155">**Do not forward**</span></span>
-  - <span data-ttu-id="84aaa-156">**Kryptera endast**</span><span class="sxs-lookup"><span data-stu-id="84aaa-156">**Encrypt only**</span></span>
-  - <span data-ttu-id="84aaa-157">**OME föregående**</span><span class="sxs-lookup"><span data-stu-id="84aaa-157">**OME previous**</span></span>
-  - <span data-ttu-id="84aaa-158">**Anpassad**</span><span class="sxs-lookup"><span data-stu-id="84aaa-158">**Custom**</span></span>
+![Rapportvyn i rapporten Exchange-transportregel](../../media/transport-rule-report-report-view.png)
 
-  <span data-ttu-id="84aaa-159">Om du **klickar på** Filter kan du ändra diagrammet med följande filter:</span><span class="sxs-lookup"><span data-stu-id="84aaa-159">If you click **Filters**, you can modify the chart with the following filters:</span></span>
+## <a name="mailflow-status-report"></a><span data-ttu-id="9ada3-175">Statusrapport för e-postflöde</span><span class="sxs-lookup"><span data-stu-id="9ada3-175">Mailflow status report</span></span>
 
-  - <span data-ttu-id="84aaa-160">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-160">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="84aaa-161">Krypteringsmetod</span><span class="sxs-lookup"><span data-stu-id="84aaa-161">Encryption method</span></span>
-  - <span data-ttu-id="84aaa-162">Krypteringsmall</span><span class="sxs-lookup"><span data-stu-id="84aaa-162">Encryption template</span></span>
+<span data-ttu-id="9ada3-176">Statusrapporten **E-postflöde** är en smart rapport som visar information om inkommande och utgående e-post, identifiering av skräppost, skadlig programvara, e-post som identifieras som "bra" och information om e-post som är tillåten eller blockerad i kanten.</span><span class="sxs-lookup"><span data-stu-id="9ada3-176">The **Mailflow status report** is a smart report that shows information about incoming and outgoing email, spam detections, malware, email identified as "good", and information about email allowed or blocked on the edge.</span></span> <span data-ttu-id="9ada3-177">Det här är den enda rapporten som innehåller information om gränsskydd och som visar hur mycket e-post som blockeras innan de tillåts till tjänsten för utvärdering av Exchange Online Protection (EOP).</span><span class="sxs-lookup"><span data-stu-id="9ada3-177">This is the only report that contains edge protection information, and shows just how much email is blocked before being allowed into the service for evaluation by Exchange Online Protection (EOP).</span></span> <span data-ttu-id="9ada3-178">Det är viktigt att vara säker på att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.</span><span class="sxs-lookup"><span data-stu-id="9ada3-178">It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.</span></span>
 
-- <span data-ttu-id="84aaa-163">**Visa data efter: De 5 främsta** mottagardomänerna: I den här vyn visas ett cirkeldiagram med antal skickade meddelanden för de 5 översta mottagardomänerna.</span><span class="sxs-lookup"><span data-stu-id="84aaa-163">**View data by: Top 5 recipient domains**: This view shows a pie chart with sent message counts for the top 5 recipient domains.</span></span>
+<span data-ttu-id="9ada3-179">Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-179">To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="9ada3-180">Klicka **på Visa information i statussammanfattningen** för **E-postflöde.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-180">On **Mailflow status summary**, click **View details**.</span></span> <span data-ttu-id="9ada3-181">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/mailflowStatusReport> .</span><span class="sxs-lookup"><span data-stu-id="9ada3-181">To go directly to the report, open <https://security.microsoft.com/reports/mailflowStatusReport>.</span></span>
 
-  <span data-ttu-id="84aaa-164">Om du klickar **på** Filter kan du välja **startdatum** och **slutdatum.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-164">If you click **Filters**, you can select a **Start date** and **End date**.</span></span>
+![Widget för statussammanfattning av e-postflöde på sidan & för e-postsamarbete](../../media/mail-flow-status-report-widget.png)
 
-### <a name="details-table-view-for-the-encryption-report"></a><span data-ttu-id="84aaa-165">Detaljtabellvyn för krypteringsrapporten</span><span class="sxs-lookup"><span data-stu-id="84aaa-165">Details table view for the Encryption report</span></span>
+### <a name="type-view-for-the-mailflow-status-report"></a><span data-ttu-id="9ada3-183">Typvy för statusrapporten E-postflöde</span><span class="sxs-lookup"><span data-stu-id="9ada3-183">Type view for the Mailflow status report</span></span>
 
-<span data-ttu-id="84aaa-166">Om du **klickar på Visa** informationstabell beror den information som visas på det diagram som du tittar på:</span><span class="sxs-lookup"><span data-stu-id="84aaa-166">If you click **View details table**, the information that's shown depends on the chart you were looking at:</span></span>
+<span data-ttu-id="9ada3-184">När du öppnar rapporten är **fliken Typ** markerad som standard.</span><span class="sxs-lookup"><span data-stu-id="9ada3-184">When you open the report, the **Type** tab is selected by default.</span></span> <span data-ttu-id="9ada3-185">Som standard innehåller den här vyn ett diagram och en datatabell som är konfigurerad med följande filter:</span><span class="sxs-lookup"><span data-stu-id="9ada3-185">By default, this view contains a chart and a data table that's configured with the following filters:</span></span>
 
-- <span data-ttu-id="84aaa-167">**Dela upp dig efter: Krypteringsmetod** **eller Dela upp efter: Krypteringsmall:** Följande information visas:</span><span class="sxs-lookup"><span data-stu-id="84aaa-167">**Break down by: Encryption method** or **Break down by: Encryption template**: The following information is shown:</span></span>
+- <span data-ttu-id="9ada3-186">**Datum:** De senaste sju dagarna.</span><span class="sxs-lookup"><span data-stu-id="9ada3-186">**Date**: The last 7 days.</span></span>
+- <span data-ttu-id="9ada3-187">**E-postriktning:**</span><span class="sxs-lookup"><span data-stu-id="9ada3-187">**Mail direction**:</span></span>
+  - <span data-ttu-id="9ada3-188">**Inkommande**</span><span class="sxs-lookup"><span data-stu-id="9ada3-188">**Inbound**</span></span>
+  - <span data-ttu-id="9ada3-189">**Utgående**</span><span class="sxs-lookup"><span data-stu-id="9ada3-189">**Outbound**</span></span>
+  - <span data-ttu-id="9ada3-190">**Årsorganisation**: det här antalet gäller meddelanden inom en klientorganisation, dvs.</span><span class="sxs-lookup"><span data-stu-id="9ada3-190">**Intra-org**: this count is for messages within a tenant i.e</span></span> <span data-ttu-id="9ada3-191">sender abc@domain.com skickar till mottagarens xyz@domain.com (räknas separat från **inkommande** **och utgående**)</span><span class="sxs-lookup"><span data-stu-id="9ada3-191">sender abc@domain.com sends to recipient xyz@domain.com  (counted separately from **Inbound** and **Outbound**)</span></span>
+- <span data-ttu-id="9ada3-192">**Typ:**</span><span class="sxs-lookup"><span data-stu-id="9ada3-192">**Type**:</span></span>
+  - <span data-ttu-id="9ada3-193">**Bra e-post**</span><span class="sxs-lookup"><span data-stu-id="9ada3-193">**Good mail**</span></span>
+  - <span data-ttu-id="9ada3-194">**Skadlig programvara**</span><span class="sxs-lookup"><span data-stu-id="9ada3-194">**Malware**</span></span>
+  - <span data-ttu-id="9ada3-195">**Skräppost**</span><span class="sxs-lookup"><span data-stu-id="9ada3-195">**Spam**</span></span>
+  - <span data-ttu-id="9ada3-196">**Edge-skydd**</span><span class="sxs-lookup"><span data-stu-id="9ada3-196">**Edge protection**</span></span>
+  - <span data-ttu-id="9ada3-197">**Regelmeddelanden**</span><span class="sxs-lookup"><span data-stu-id="9ada3-197">**Rule messages**</span></span>
+  - <span data-ttu-id="9ada3-198">**Nätfiske-e-post**</span><span class="sxs-lookup"><span data-stu-id="9ada3-198">**Phishing email**</span></span>
+- <span data-ttu-id="9ada3-199">**Domän:** **Alla**</span><span class="sxs-lookup"><span data-stu-id="9ada3-199">**Domain**: **All**</span></span>
 
-  - <span data-ttu-id="84aaa-168">**Datum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-168">**Date**</span></span>
-  - <span data-ttu-id="84aaa-169">**Avsändarens adress**</span><span class="sxs-lookup"><span data-stu-id="84aaa-169">**Sender address**</span></span>
-  - <span data-ttu-id="84aaa-170">**Krypteringsmall**</span><span class="sxs-lookup"><span data-stu-id="84aaa-170">**Encryption template**</span></span>
-  - <span data-ttu-id="84aaa-171">**Krypteringsmetod**</span><span class="sxs-lookup"><span data-stu-id="84aaa-171">**Encryption method**</span></span>
-  - <span data-ttu-id="84aaa-172">**Mottagaradress**</span><span class="sxs-lookup"><span data-stu-id="84aaa-172">**Recipient address**</span></span>
-  - <span data-ttu-id="84aaa-173">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="84aaa-173">**Subject**</span></span>
+<span data-ttu-id="9ada3-200">Diagrammet ordnas efter **typvärdena.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-200">The chart is organized by the **Type** values.</span></span>
 
-- <span data-ttu-id="84aaa-174">**Visa data efter: De 5 främsta mottagardomänerna**:</span><span class="sxs-lookup"><span data-stu-id="84aaa-174">**View data by: Top 5 recipient domains**:</span></span>
+<span data-ttu-id="9ada3-201">Du kan ändra dessa filter genom att klicka **på Filter** eller genom att klicka på ett värde i diagramförklaringen.</span><span class="sxs-lookup"><span data-stu-id="9ada3-201">You can change these filters by clicking **Filter** or by clicking a value in the chart legend.</span></span>
 
-  - <span data-ttu-id="84aaa-175">**Datum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-175">**Date**</span></span>
-  - <span data-ttu-id="84aaa-176">**Mottagardomän**</span><span class="sxs-lookup"><span data-stu-id="84aaa-176">**Recipient domain**</span></span>
-  - <span data-ttu-id="84aaa-177">**Antal meddelanden**</span><span class="sxs-lookup"><span data-stu-id="84aaa-177">**Message count**</span></span>
+<span data-ttu-id="9ada3-202">Datatabellen innehåller följande information:</span><span class="sxs-lookup"><span data-stu-id="9ada3-202">The data table contains the following information:</span></span>
 
-<span data-ttu-id="84aaa-178">Om du klickar **på** Filter i en detaljtabellvy kan du ändra resultatet med följande filter:</span><span class="sxs-lookup"><span data-stu-id="84aaa-178">If you click **Filters** in a details table view, you can modify the results with the following filters:</span></span>
+- <span data-ttu-id="9ada3-203">**Riktning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-203">**Direction**</span></span>
+- <span data-ttu-id="9ada3-204">**Typ**</span><span class="sxs-lookup"><span data-stu-id="9ada3-204">**Type**</span></span>
+- <span data-ttu-id="9ada3-205">**24 timmar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-205">**24 hours**</span></span>
+- <span data-ttu-id="9ada3-206">**3 dagar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-206">**3 days**</span></span>
+- <span data-ttu-id="9ada3-207">**7 dagar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-207">**7 days**</span></span>
+- <span data-ttu-id="9ada3-208">**15 dagar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-208">**15 days**</span></span>
+- <span data-ttu-id="9ada3-209">**30 dagar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-209">**30 days**</span></span>
 
-- <span data-ttu-id="84aaa-179">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-179">**Start date** and **End date**</span></span>
-- <span data-ttu-id="84aaa-180">Krypteringsmetod</span><span class="sxs-lookup"><span data-stu-id="84aaa-180">Encryption method</span></span>
-- <span data-ttu-id="84aaa-181">Krypteringsmall</span><span class="sxs-lookup"><span data-stu-id="84aaa-181">Encryption template</span></span>
+<span data-ttu-id="9ada3-210">Om du klickar **på Välj en kategori för mer** information kan du välja bland följande värden:</span><span class="sxs-lookup"><span data-stu-id="9ada3-210">If you click **Choose a category for more details**, you can select from the following values:</span></span>
 
-<span data-ttu-id="84aaa-182">Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-182">To go back to the report view, click **View report**.</span></span>
+- <span data-ttu-id="9ada3-211">**Nätfiskemeddelande:** Det här valet tar dig till [rapporten status för skydd mot hot.](view-email-security-reports.md#threat-protection-status-report)</span><span class="sxs-lookup"><span data-stu-id="9ada3-211">**Phishing email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).</span></span>
+- <span data-ttu-id="9ada3-212">**Skadlig programvara i** e-post: Det här valet tar dig till [statusrapporten Skydd mot hot.](view-email-security-reports.md#threat-protection-status-report)</span><span class="sxs-lookup"><span data-stu-id="9ada3-212">**Malware in email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).</span></span>
+- <span data-ttu-id="9ada3-213">**Identifiering av skräppost:** Det här valet tar dig till [rapporten Identifiering av skräppost.](view-email-security-reports.md#spam-detections-report)</span><span class="sxs-lookup"><span data-stu-id="9ada3-213">**Spam detections**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).</span></span>
+- <span data-ttu-id="9ada3-214">**Edge blockerad skräppost:** Det här valet tar dig till rapporten [Identifiering av skräppost.](view-email-security-reports.md#spam-detections-report)</span><span class="sxs-lookup"><span data-stu-id="9ada3-214">**Edge blocked spam**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).</span></span>
 
-## <a name="mailflow-status-report"></a><span data-ttu-id="84aaa-183">Statusrapport för e-postflöde</span><span class="sxs-lookup"><span data-stu-id="84aaa-183">Mailflow status report</span></span>
+#### <a name="export-from-type-view"></a><span data-ttu-id="9ada3-215">Exportera i vyn Typ</span><span class="sxs-lookup"><span data-stu-id="9ada3-215">Export from Type view</span></span>
 
-<span data-ttu-id="84aaa-184">Statusrapporten **E-postflöde** innehåller information om blockerade meddelanden som skadlig kod, skräppost, nätfiske och edge.</span><span class="sxs-lookup"><span data-stu-id="84aaa-184">The **Mailflow status report** contains information about malware, spam, phishing and edge blocked messages.</span></span> <span data-ttu-id="84aaa-185">Mer information finns i [Statusrapport för e-postflöde](view-mail-flow-reports.md#mailflow-status-report).</span><span class="sxs-lookup"><span data-stu-id="84aaa-185">For more details, see [Mailflow status report](view-mail-flow-reports.md#mailflow-status-report).</span></span>
+<span data-ttu-id="9ada3-216">I detaljvyn kan du bara exportera data under en dag.</span><span class="sxs-lookup"><span data-stu-id="9ada3-216">For the detail view, you can only export data for one day.</span></span> <span data-ttu-id="9ada3-217">Om du vill exportera data i 7 dagar måste du utföra 7 olika exportåtgärder.</span><span class="sxs-lookup"><span data-stu-id="9ada3-217">So, if you want to export data for 7 days, you need to do 7 different export actions.</span></span>
 
-## <a name="malware-detections-in-email-report"></a><span data-ttu-id="84aaa-186">Identifieringar av skadlig programvara i en e-postrapport</span><span class="sxs-lookup"><span data-stu-id="84aaa-186">Malware detections in email report</span></span>
+<span data-ttu-id="9ada3-218">Varje exporterad .csv är begränsad till 150 000 rader.</span><span class="sxs-lookup"><span data-stu-id="9ada3-218">Each exported .csv file is limited to 150,000 rows.</span></span> <span data-ttu-id="9ada3-219">Om dagens data innehåller mer än 150 000 rader skapas .csv filer.</span><span class="sxs-lookup"><span data-stu-id="9ada3-219">If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.</span></span>
 
-<span data-ttu-id="84aaa-187">I **rapporten om identifiering av skadlig programvara i** e-postmeddelanden visas information om identifiering av skadlig programvara i inkommande och utgående e-postmeddelanden (skadlig kod som Exchange Online Protection eller EOP).</span><span class="sxs-lookup"><span data-stu-id="84aaa-187">The **Malware detections in email** report shows information about malware detections in incoming and outgoing email messages (malware detected by Exchange Online Protection or EOP).</span></span> <span data-ttu-id="84aaa-188">Mer information om skydd mot skadlig programvara i EOP finns [i Skydd mot skadlig programvara i EOP.](anti-malware-protection.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-188">For more information about malware protection in EOP, see [Anti-malware protection in EOP](anti-malware-protection.md).</span></span>
+![Typvy i statusrapporten För e-postflöde](../../media/mail-flow-status-report-type-view.png)
 
- <span data-ttu-id="84aaa-189">Mängdvyfiltret tillåter 90 dagar, medan filtret i detaljtabellen bara tillåter 10 dagar.</span><span class="sxs-lookup"><span data-stu-id="84aaa-189">The aggregate view filter allows for 90 days, while the details table filter only allows for 10 days.</span></span>
+### <a name="direction-view-for-the-mailflow-status-report"></a><span data-ttu-id="9ada3-221">Riktningsvyn för statusrapporten E-postflöde</span><span class="sxs-lookup"><span data-stu-id="9ada3-221">Direction view for the Mailflow status report</span></span>
 
-<span data-ttu-id="84aaa-190">Om du vill visa rapporten öppnar du [Microsoft 365 Defender-portalen](https://security.microsoft.com), går till E-& rapporter för samarbete & skicka  \>  \> **e& samarbetsrapporter**  och klickar på Visa information under Skadlig programvara som upptäckts via e-post. </span><span class="sxs-lookup"><span data-stu-id="84aaa-190">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Malware detected in email**.</span></span> <span data-ttu-id="84aaa-191">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/MalwareDetections> .</span><span class="sxs-lookup"><span data-stu-id="84aaa-191">To go directly to the report, open <https://security.microsoft.com/reports/MalwareDetections>.</span></span>
+<span data-ttu-id="9ada3-222">Om du klickar **på** fliken Riktning används samma standardfilter **från** vyn Typ.</span><span class="sxs-lookup"><span data-stu-id="9ada3-222">If you click the **Direction** tab, the same default filters from the **Type** view are used.</span></span>
 
-![Widget för identifiering av skadlig programvara i e-postwidgeten i instrumentpanelen Rapporter](../../media/malware-detections-widget.png)
+<span data-ttu-id="9ada3-223">Diagrammet är ordnat efter **riktningsvärden.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-223">The chart is organized by **Direction** values.</span></span>
 
-<span data-ttu-id="84aaa-193">Du kan filtrera både diagrammet och detaljtabellen genom att klicka **på Filter** och välja:</span><span class="sxs-lookup"><span data-stu-id="84aaa-193">You can filter both the chart and the details table by clicking **Filters** and selecting:</span></span>
+<span data-ttu-id="9ada3-224">Du kan ändra dessa filter genom att klicka **på Filter** eller genom att klicka på ett värde i diagramförklaringen.</span><span class="sxs-lookup"><span data-stu-id="9ada3-224">You can change these filters by clicking **Filter** or by clicking a value in the chart legend.</span></span> <span data-ttu-id="9ada3-225">Samma filter från **vyn** Typ används.</span><span class="sxs-lookup"><span data-stu-id="9ada3-225">The same filters from the **Type** view are used.</span></span>
 
-- <span data-ttu-id="84aaa-194">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-194">**Start date** and **End date**</span></span>
-- <span data-ttu-id="84aaa-195">**Inkommande**</span><span class="sxs-lookup"><span data-stu-id="84aaa-195">**Inbound**</span></span>
-- <span data-ttu-id="84aaa-196">**Utgående**</span><span class="sxs-lookup"><span data-stu-id="84aaa-196">**Outbound**</span></span>
+<span data-ttu-id="9ada3-226">Datatabellen innehåller samma information från **vyn** Typ.</span><span class="sxs-lookup"><span data-stu-id="9ada3-226">The data table contains same information from the **Type** view.</span></span>
+
+<span data-ttu-id="9ada3-227">Vyn **Välj en kategori för mer information** om tillgängliga val och beteenden är samma som **vyn** Typ.</span><span class="sxs-lookup"><span data-stu-id="9ada3-227">The **Choose a category for more details** available selections and behavior are the same as the **Type** view.</span></span>
+
+#### <a name="export-from-direction-view"></a><span data-ttu-id="9ada3-228">Exportera från riktningsvyn</span><span class="sxs-lookup"><span data-stu-id="9ada3-228">Export from Direction view</span></span>
+
+<span data-ttu-id="9ada3-229">I detaljvyn kan du bara exportera data under en dag.</span><span class="sxs-lookup"><span data-stu-id="9ada3-229">For the detail view, you can only export data for one day.</span></span> <span data-ttu-id="9ada3-230">Om du vill exportera data i 7 dagar måste du utföra 7 olika exportåtgärder.</span><span class="sxs-lookup"><span data-stu-id="9ada3-230">So, if you want to export data for 7 days, you need to do 7 different export actions.</span></span>
+
+<span data-ttu-id="9ada3-231">Varje exporterad .csv är begränsad till 150 000 rader.</span><span class="sxs-lookup"><span data-stu-id="9ada3-231">Each exported .csv file is limited to 150,000 rows.</span></span> <span data-ttu-id="9ada3-232">Om dagens data innehåller mer än 150 000 rader skapas .csv filer.</span><span class="sxs-lookup"><span data-stu-id="9ada3-232">If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.</span></span>
+
+![Riktningsvyn i statusrapporten E-postflöde](../../media/mail-flow-status-report-direction-view.png)
+
+### <a name="funnel-view-for-the-mailflow-status-report"></a><span data-ttu-id="9ada3-234">Trattvyn för statusrapporten E-postflöde</span><span class="sxs-lookup"><span data-stu-id="9ada3-234">Funnel view for the Mailflow status report</span></span>
+
+<span data-ttu-id="9ada3-235">I **vyn Tratt** kan du se hur Microsofts skyddsfunktioner för e-posthot filtrerar inkommande och utgående e-post i organisationen.</span><span class="sxs-lookup"><span data-stu-id="9ada3-235">The **Funnel** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization.</span></span> <span data-ttu-id="9ada3-236">Här finns information om totalt antal e-postmeddelanden och hur de konfigurerade funktionerna för skydd mot hot, inklusive gränsskydd, skydd mot skadlig programvara, skydd mot nätfiske, skräppost och förfalskning, påverkar antalet.</span><span class="sxs-lookup"><span data-stu-id="9ada3-236">It provides details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.</span></span>
+
+<span data-ttu-id="9ada3-237">Om du klickar **på fliken Tratt** innehåller den här vyn som standard ett diagram och en datatabell som är konfigurerad med följande filter:</span><span class="sxs-lookup"><span data-stu-id="9ada3-237">If you click the **Funnel** tab, by default, this view contains a chart and a data table that's configured with the following filters:</span></span>
+
+- <span data-ttu-id="9ada3-238">**Datum:** De senaste sju dagarna.</span><span class="sxs-lookup"><span data-stu-id="9ada3-238">**Date**: The last 7 days.</span></span>
+
+- <span data-ttu-id="9ada3-239">**Riktning**:</span><span class="sxs-lookup"><span data-stu-id="9ada3-239">**Direction**:</span></span>
+
+  - <span data-ttu-id="9ada3-240">**Inkommande**</span><span class="sxs-lookup"><span data-stu-id="9ada3-240">**Inbound**</span></span>
+  - <span data-ttu-id="9ada3-241">**Utgående**</span><span class="sxs-lookup"><span data-stu-id="9ada3-241">**Outbound**</span></span>
+  - <span data-ttu-id="9ada3-242">**Årsorganisation:** Antalet är för meddelanden som skickas inom en klientorganisation. det vill säga att avsändaren abc@domain.com till mottagarens xyz@domain.com (räknas separat från inkommande och utgående).</span><span class="sxs-lookup"><span data-stu-id="9ada3-242">**Intra-org**: This count is for messages sent within a tenant; i.e, sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound).</span></span>
+
+<span data-ttu-id="9ada3-243">För aggregerad vy och datatabellvy kan du filtrera i 90 dagar.</span><span class="sxs-lookup"><span data-stu-id="9ada3-243">The aggregate view and data table view allow for 90 days of filtering.</span></span>
+
+<span data-ttu-id="9ada3-244">Om du klickar **på** Filter kan du filtrera både diagrammet och datatabellen.</span><span class="sxs-lookup"><span data-stu-id="9ada3-244">If you click **Filter**, you can filter both the chart and the data table.</span></span>
+
+<span data-ttu-id="9ada3-245">I det här diagrammet visas antalet e-postmeddelanden ordnade efter:</span><span class="sxs-lookup"><span data-stu-id="9ada3-245">This chart shows the email count organized by:</span></span>
+
+- <span data-ttu-id="9ada3-246">**Totalt antal e-postmeddelanden**</span><span class="sxs-lookup"><span data-stu-id="9ada3-246">**Total email**</span></span>
+- <span data-ttu-id="9ada3-247">**E-post efter gränsskydd**</span><span class="sxs-lookup"><span data-stu-id="9ada3-247">**Email after edge protection**</span></span>
+- <span data-ttu-id="9ada3-248">**E-post efter transportregel** (e-postflödesregel)</span><span class="sxs-lookup"><span data-stu-id="9ada3-248">**Email after transport rule** (mail flow rule)</span></span>
+- <span data-ttu-id="9ada3-249">**E-post efter skadlig programvara, rykte, filtypsblockering**</span><span class="sxs-lookup"><span data-stu-id="9ada3-249">**Email after anti-malware, file reputation, file type block**</span></span>
+- <span data-ttu-id="9ada3-250">**E-post efter hot, URL-rykte, varumärkespersonifiering, skydd mot förfalskning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-250">**Email after anti-phish, URL reputation, brand impersonation, anti-spoof**</span></span>
+- <span data-ttu-id="9ada3-251">**E-post efter skräppost, massfiltrering**</span><span class="sxs-lookup"><span data-stu-id="9ada3-251">**Email after anti-spam, bulk mail filtering**</span></span>
+- <span data-ttu-id="9ada3-252">**E-post efter personifiering av användare och domän**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-252">**Email after user and domain impersonation**<sup>\*</sup></span></span>
+- <span data-ttu-id="9ada3-253">**E-post efter fil- och URL-detonation**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-253">**Email after file and URL detonation**<sup>\*</sup></span></span>
+- <span data-ttu-id="9ada3-254">**E-post identifierades som därefter skydd efter leverans (URL klicka på tidsskydd)**</span><span class="sxs-lookup"><span data-stu-id="9ada3-254">**Email detected as benign after post-delivery protection (URL click time protection)**</span></span>
+
+<span data-ttu-id="9ada3-255"><sup>\*</sup>Endast Defender Office 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9ada3-255"><sup>\*</sup> Defender for Office 365 only</span></span>
+
+<span data-ttu-id="9ada3-256">Om du vill visa e-post som filtrerats efter EOP eller Defender Office 365 separat klickar du på värdet i diagramförklaringen.</span><span class="sxs-lookup"><span data-stu-id="9ada3-256">To view the email filtered by EOP or Defender for Office 365 separately, click on the value in the chart legend.</span></span>
+
+<span data-ttu-id="9ada3-257">Datatabellen innehåller följande information, visad i fallande datumordning:</span><span class="sxs-lookup"><span data-stu-id="9ada3-257">The data table contains the following information, shown in descending date order:</span></span>
+
+- <span data-ttu-id="9ada3-258">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-258">**Date**</span></span>
+- <span data-ttu-id="9ada3-259">**Totalt antal e-postmeddelanden**</span><span class="sxs-lookup"><span data-stu-id="9ada3-259">**Total email**</span></span>
+- <span data-ttu-id="9ada3-260">**Edge-skydd**</span><span class="sxs-lookup"><span data-stu-id="9ada3-260">**Edge protection**</span></span>
+- <span data-ttu-id="9ada3-261">**Skydd mot skadlig programvara, rykte för filen, filtypsblockering:**</span><span class="sxs-lookup"><span data-stu-id="9ada3-261">**Anti-malware, file reputation, file type block**:</span></span>
+  - <span data-ttu-id="9ada3-262">**Rykte:** Meddelanden filtrerade på grund av identifiering av en bifogad fil av andra Microsoft-kunder.</span><span class="sxs-lookup"><span data-stu-id="9ada3-262">**File reputation**: Messages filtered due to identification of an attached file by other Microsoft customers.</span></span>
+  - <span data-ttu-id="9ada3-263">**Filtypsblock:** Meddelanden filtreras på grund av vilken typ av skadlig fil som identifieras i meddelandet.</span><span class="sxs-lookup"><span data-stu-id="9ada3-263">**File type block**: Messages filtered due to the type of malicious file identified in the message.</span></span>
+- <span data-ttu-id="9ada3-264">**Antifras, URL-rykte, varumärkespersonifiering, skydd mot förfalskning:**</span><span class="sxs-lookup"><span data-stu-id="9ada3-264">**Anti-phish, URL reputation, Brand impersonation, anti-spoof**:</span></span>
+  - <span data-ttu-id="9ada3-265">**URL-rykte:** Meddelanden filtreras på grund av identifiering av URL-adressen av andra Microsoft-kunder.</span><span class="sxs-lookup"><span data-stu-id="9ada3-265">**URL reputation**: Messages filtered due to the identification of the URL by other Microsoft customers.</span></span>
+  - <span data-ttu-id="9ada3-266">**Profilering:** Meddelanden filtrerade på grund av meddelanden från välkända varumärkespersonifieringsavsändare.</span><span class="sxs-lookup"><span data-stu-id="9ada3-266">**Brand impersonation**: Messages filtered due to the message coming from well-known brand impersonating senders.</span></span>
+  - <span data-ttu-id="9ada3-267">**Skydd mot förfalskning:** Meddelanden filtreras på grund av ett meddelande som försöker kapa en domän som mottagaren tillhör eller en domän som meddelandets avsändare inte äger.</span><span class="sxs-lookup"><span data-stu-id="9ada3-267">**Anti-spoof**: Messages filtered due to the message attempting to spoof a domain that the recipient belongs to, or a domain that the message sender doesn't own.</span></span>
+- <span data-ttu-id="9ada3-268">**Skräppostskydd, massfiltrering:**</span><span class="sxs-lookup"><span data-stu-id="9ada3-268">**Anti-spam, bulk mail filtering**:</span></span>
+  - <span data-ttu-id="9ada3-269">**Filtrering av** massutskick: Meddelanden filtreras baserat på tröskelvärdet för masskrekrektör (BCL) i en princip mot skräppost.</span><span class="sxs-lookup"><span data-stu-id="9ada3-269">**Bulk mail filtering**: Messages filtered based on the bulk complain level (BCL) threshold in an anti-spam policy.</span></span>
+- <span data-ttu-id="9ada3-270">**Användar- och domänpersonifiering (Defender för Office 365)**:</span><span class="sxs-lookup"><span data-stu-id="9ada3-270">**User and domain impersonation (Defender for Office 365)**:</span></span>
+  - <span data-ttu-id="9ada3-271">**Personifiering för användare:** Filtrerade meddelanden på grund av ett försök att utge sig för att vara en användare (meddelandeavsändare) som definierats i inställningarna för personifieringsskydd i en princip mot nätfiske.</span><span class="sxs-lookup"><span data-stu-id="9ada3-271">**User impersonation**: Messages filtered due to an attempt to impersonate a user (message sender) that's defined in the impersonation protection settings of an anti-phishing policy.</span></span>
+  - <span data-ttu-id="9ada3-272">**Domänpersonifiering:** Meddelanden filtrerade på grund av ett försök att utge sig för att vara en domän som definierats i inställningarna för personifieringsskydd i en princip mot nätfiske.</span><span class="sxs-lookup"><span data-stu-id="9ada3-272">**Domain impersonation**: Messages filtered due to an attempt to impersonate a domain that's defined in the impersonation protection settings of an anti-phishing policy.</span></span>
+- <span data-ttu-id="9ada3-273">**Detonation av fil och URL (Defender för Office 365)**:</span><span class="sxs-lookup"><span data-stu-id="9ada3-273">**File and URL detonation (Defender for Office 365)**:</span></span>
+  - <span data-ttu-id="9ada3-274">**Detonation för filer:** Meddelanden filtrerade efter Valv princip för bifogade filer.</span><span class="sxs-lookup"><span data-stu-id="9ada3-274">**File detonation**: Messages filtered by a Safe Attachments policy.</span></span>
+  - <span data-ttu-id="9ada3-275">**URL-detonation**: Meddelande filtrerat av Valv princip för länkar.</span><span class="sxs-lookup"><span data-stu-id="9ada3-275">**URL detonation**: Message filtered by a Safe Links policy.</span></span>
+- <span data-ttu-id="9ada3-276">**Post-delivery protection and ZAP (ATP) or ZAP (EOP) : Zero-hour** auto purge (ZAP) for malware, spam, and phishing.</span><span class="sxs-lookup"><span data-stu-id="9ada3-276">**Post-delivery protection and ZAP (ATP), or ZAP (EOP)**: Zero-hour auto purge (ZAP) for malware, spam, and phishing.</span></span>
+
+<span data-ttu-id="9ada3-277">Om du markerar en rad i datatabellen visas ytterligare en uppdelning av antalet e-postmeddelanden i den utfällklienten.</span><span class="sxs-lookup"><span data-stu-id="9ada3-277">If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.</span></span>
+
+#### <a name="export-from-funnel-view"></a><span data-ttu-id="9ada3-278">Exportera från trattvyn</span><span class="sxs-lookup"><span data-stu-id="9ada3-278">Export from Funnel view</span></span>
+
+<span data-ttu-id="9ada3-279">När du har **klickat** **på Exportera** under Alternativ kan du välja något av följande värden:</span><span class="sxs-lookup"><span data-stu-id="9ada3-279">After you click **Export** under **Options**, you can select one of the following values:</span></span>
+
+- <span data-ttu-id="9ada3-280">**Sammanfattning (med data för de senaste 90 dagarna som mest)**</span><span class="sxs-lookup"><span data-stu-id="9ada3-280">**Summary (with data for last 90 days at most)**</span></span>
+- <span data-ttu-id="9ada3-281">**Information (med data för de senaste 30 dagarna som mest)**</span><span class="sxs-lookup"><span data-stu-id="9ada3-281">**Details (with data for last 30 days at most)**</span></span>
+
+<span data-ttu-id="9ada3-282">Välj **ett** område under Datum och klicka sedan på **Använd**.</span><span class="sxs-lookup"><span data-stu-id="9ada3-282">Under **Date**, choose a range, and then click **Apply**.</span></span> <span data-ttu-id="9ada3-283">Data för de aktuella filtren exporteras till en .csv fil.</span><span class="sxs-lookup"><span data-stu-id="9ada3-283">Data for the current filters will be exported to a .csv file.</span></span>
+
+<span data-ttu-id="9ada3-284">Varje exporterad .csv är begränsad till 150 000 rader.</span><span class="sxs-lookup"><span data-stu-id="9ada3-284">Each exported .csv file is limited to 150,000 rows.</span></span> <span data-ttu-id="9ada3-285">Om informationen innehåller mer än 150 000 rader skapas .csv filer.</span><span class="sxs-lookup"><span data-stu-id="9ada3-285">If the data contains more than 150,000 rows, then multiple .csv files will be created.</span></span>
+
+![Trattvyn i statusrapporten För e-postflöde](../../media/mail-flow-status-report-funnel-view.png)
+
+### <a name="tech-view-for-the-mailflow-status-report"></a><span data-ttu-id="9ada3-287">Tech view for the Mailflow status report</span><span class="sxs-lookup"><span data-stu-id="9ada3-287">Tech view for the Mailflow status report</span></span>
+
+<span data-ttu-id="9ada3-288">**Tech-vyn** liknar vyn **Tratt, med** mer detaljerad information om de konfigurerade funktionerna för skydd mot hot.</span><span class="sxs-lookup"><span data-stu-id="9ada3-288">The **Tech view** is similar to the **Funnel** view, providing more granular details for the configured threat protections features.</span></span> <span data-ttu-id="9ada3-289">Från diagrammet kan du se hur meddelanden kategoriseras i olika faser av skydd mot hot.</span><span class="sxs-lookup"><span data-stu-id="9ada3-289">From the chart, you can see how messages are categorized at the different stages of threat protection.</span></span>
+
+<span data-ttu-id="9ada3-290">Om du klickar **på fliken Teknisk** vy innehåller den här vyn som standard ett diagram och en datatabell som är konfigurerad med följande filter:</span><span class="sxs-lookup"><span data-stu-id="9ada3-290">If you click the **Tech view** tab, by default, this view contains a chart and a data table that's configured with the following filters:</span></span>
+
+- <span data-ttu-id="9ada3-291">**Datum:** De senaste sju dagarna.</span><span class="sxs-lookup"><span data-stu-id="9ada3-291">**Date**: The last 7 days.</span></span>
+
+- <span data-ttu-id="9ada3-292">**Riktning**:</span><span class="sxs-lookup"><span data-stu-id="9ada3-292">**Direction**:</span></span>
+
+  - <span data-ttu-id="9ada3-293">**Inkommande**</span><span class="sxs-lookup"><span data-stu-id="9ada3-293">**Inbound**</span></span>
+  - <span data-ttu-id="9ada3-294">**Utgående**</span><span class="sxs-lookup"><span data-stu-id="9ada3-294">**Outbound**</span></span>
+  - <span data-ttu-id="9ada3-295">**Årsorganisation**: det här antalet gäller meddelanden inom en klientorganisation, dvs.</span><span class="sxs-lookup"><span data-stu-id="9ada3-295">**Intra-org**: this count is for messages within a tenant i.e</span></span> <span data-ttu-id="9ada3-296">sender abc@domain.com skickar till mottagarens xyz@domain.com (räknas separat från inkommande och utgående)</span><span class="sxs-lookup"><span data-stu-id="9ada3-296">sender abc@domain.com sends to recipient xyz@domain.com (counted separately from Inbound and Outbound)</span></span>
+
+<span data-ttu-id="9ada3-297">För aggregerad vy och datatabellvy kan du filtrera i 90 dagar.</span><span class="sxs-lookup"><span data-stu-id="9ada3-297">The aggregate view and data table view allow for 90 days of filtering.</span></span>
+
+<span data-ttu-id="9ada3-298">Om du klickar **på** Filter kan du filtrera både diagrammet och datatabellen.</span><span class="sxs-lookup"><span data-stu-id="9ada3-298">If you click **Filter**, you can filter both the chart and the data table.</span></span>
+
+<span data-ttu-id="9ada3-299">Det här diagrammet visar meddelanden ordnade i följande kategorier:</span><span class="sxs-lookup"><span data-stu-id="9ada3-299">This chart shows messages organized into the following categories:</span></span>
+
+- <span data-ttu-id="9ada3-300">**Totalt antal e-postmeddelanden**</span><span class="sxs-lookup"><span data-stu-id="9ada3-300">**Total email**</span></span>
+- <span data-ttu-id="9ada3-301">**Tillåt i Edge** **och Filtrerad Edge**</span><span class="sxs-lookup"><span data-stu-id="9ada3-301">**Edge allow** and **Edge filtered**</span></span>
+- <span data-ttu-id="9ada3-302">**Transportregel tillåt och** **transportregel filtrerad** (e-postflödesregler)</span><span class="sxs-lookup"><span data-stu-id="9ada3-302">**Transport rule allow** and **Transport rule filtered** (mail flow rules)</span></span>
+- <span data-ttu-id="9ada3-303">**Inte skadlig programvara**, **Valv identifiering av bifogade filer** och <sup>\*</sup> **motoridentifiering mot skadlig kod**</span><span class="sxs-lookup"><span data-stu-id="9ada3-303">**Not malware**, **Safe Attachments detection**<sup>\*</sup>, and **Anti-malware engine detection**</span></span>
+- <span data-ttu-id="9ada3-304">**Inte phish**, **DMARC-fel,** **personidentifiering,** <sup>\*</sup> **förfalskning och** **phish-identifiering**</span><span class="sxs-lookup"><span data-stu-id="9ada3-304">**Not phish**, **DMARC failure**, **Impersonation detection**<sup>\*</sup>, **Spoof detection**, and **Phish detection**</span></span>
+- <span data-ttu-id="9ada3-305">**Ingen identifiering med URL-detonation och** **URL-detonation**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-305">**No detection with URL detonation** and **URL detonation detection**<sup>\*</sup></span></span>
+- <span data-ttu-id="9ada3-306">**Inte** skräppost </span><span class="sxs-lookup"><span data-stu-id="9ada3-306">**Not spam** and  **Spam**</span></span>
+- <span data-ttu-id="9ada3-307">**Icke-skadlig e-post** **, Valv identifiering av länkar** och <sup>\*</sup> **ZAP**</span><span class="sxs-lookup"><span data-stu-id="9ada3-307">**Non-malicious email**, **Safe Links detection**<sup>\*</sup>, and **ZAP**</span></span>
+
+<span data-ttu-id="9ada3-308"><sup>\*</sup>Defender för Office 365</span><span class="sxs-lookup"><span data-stu-id="9ada3-308"><sup>\*</sup> Defender for Office 365</span></span>
+
+<span data-ttu-id="9ada3-309">När du hovrar över en kategori i diagrammet visas antalet meddelanden i den kategorin.</span><span class="sxs-lookup"><span data-stu-id="9ada3-309">When you hover over a category in the chart, you can see the number of messages in that category.</span></span>
+
+<span data-ttu-id="9ada3-310">Datatabellen innehåller följande information, visad i fallande datumordning:</span><span class="sxs-lookup"><span data-stu-id="9ada3-310">The data table contains the following information, shown in descending date order:</span></span>
+
+- <span data-ttu-id="9ada3-311">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-311">**Date**</span></span>
+- <span data-ttu-id="9ada3-312">**Totalt antal e-postmeddelanden**</span><span class="sxs-lookup"><span data-stu-id="9ada3-312">**Total email**</span></span>
+- <span data-ttu-id="9ada3-313">**Edge filtrerad**</span><span class="sxs-lookup"><span data-stu-id="9ada3-313">**Edge filtered**</span></span>
+- <span data-ttu-id="9ada3-314">**Regelmeddelanden:** Meddelanden filtrerade på grund av e-postflödesregler (kallas även transportregler).</span><span class="sxs-lookup"><span data-stu-id="9ada3-314">**Rule messages**: Messages filtered due to  mail flow rules (also known as transport rules).</span></span>
+- <span data-ttu-id="9ada3-315">**Motor för skydd mot skadlig programvara** Valv bifogade **filer:** <sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-315">**Anti-malware engine**, **Safe Attachments**<sup>\*</sup>:</span></span>
+- <span data-ttu-id="9ada3-316">**DMARC, personifiering** <sup>\*</sup> , **spoof**, **nätfiske filtrerat:**</span><span class="sxs-lookup"><span data-stu-id="9ada3-316">**DMARC, impersonation**<sup>\*</sup>, **spoof**, **phish filtered**:</span></span>
+  - <span data-ttu-id="9ada3-317">**DMARC:** Meddelanden filtreras på grund av att meddelandet inte klarar sin DMARC-autentiseringskontroll.</span><span class="sxs-lookup"><span data-stu-id="9ada3-317">**DMARC**: Messages filtered due to the message failing its DMARC authentication check.</span></span>
+- <span data-ttu-id="9ada3-318">**Identifiering av URL-adresser**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-318">**URL detonation detection**<sup>\*</sup></span></span>
+- <span data-ttu-id="9ada3-319">**Skräppostskydd filtreras**</span><span class="sxs-lookup"><span data-stu-id="9ada3-319">**Anti-spam filtered**</span></span>
+- <span data-ttu-id="9ada3-320">**ZAP har tagits bort**</span><span class="sxs-lookup"><span data-stu-id="9ada3-320">**ZAP removed**</span></span>
+- <span data-ttu-id="9ada3-321">**Identifiering av Valv länkar**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-321">**Detection by Safe Links**<sup>\*</sup></span></span>
+
+<span data-ttu-id="9ada3-322"><sup>\*</sup>Defender för Office 365</span><span class="sxs-lookup"><span data-stu-id="9ada3-322"><sup>\*</sup> Defender for Office 365</span></span>
+
+<span data-ttu-id="9ada3-323">Om du markerar en rad i datatabellen visas ytterligare en uppdelning av antalet e-postmeddelanden i den utfällklienten.</span><span class="sxs-lookup"><span data-stu-id="9ada3-323">If you select a row in the data table, a further breakdown of the email counts are shown in the flyout.</span></span>
+
+#### <a name="export-from-tech-view"></a><span data-ttu-id="9ada3-324">Exportera från teknisk vy</span><span class="sxs-lookup"><span data-stu-id="9ada3-324">Export from Tech view</span></span>
+
+<span data-ttu-id="9ada3-325">När du **klickar** på Exportera **kan** du välja något av följande värden under Alternativ:</span><span class="sxs-lookup"><span data-stu-id="9ada3-325">On clicking **Export**, under **Options** you can select one of the following values:</span></span>
+
+- <span data-ttu-id="9ada3-326">**Sammanfattning (med data för de senaste 90 dagarna som mest)**</span><span class="sxs-lookup"><span data-stu-id="9ada3-326">**Summary (with data for last 90 days at most)**</span></span>
+- <span data-ttu-id="9ada3-327">**Information (med data för de senaste 30 dagarna som mest)**</span><span class="sxs-lookup"><span data-stu-id="9ada3-327">**Details (with data for last 30 days at most)**</span></span>
+
+<span data-ttu-id="9ada3-328">Välj **ett** område under Datum och klicka sedan på **Använd**.</span><span class="sxs-lookup"><span data-stu-id="9ada3-328">Under **Date**, choose a range, and then click **Apply**.</span></span> <span data-ttu-id="9ada3-329">Data för de aktuella filtren exporteras till en .csv fil.</span><span class="sxs-lookup"><span data-stu-id="9ada3-329">Data for the current filters will be exported to a .csv file.</span></span>
+
+<span data-ttu-id="9ada3-330">Varje exporterad .csv är begränsad till 150 000 rader.</span><span class="sxs-lookup"><span data-stu-id="9ada3-330">Each exported .csv file is limited to 150,000 rows.</span></span> <span data-ttu-id="9ada3-331">Om informationen innehåller mer än 150 000 rader skapas .csv filer.</span><span class="sxs-lookup"><span data-stu-id="9ada3-331">If the data contains more than 150,000 rows, then multiple .csv files will be created.</span></span>
+
+![Tech view in the Mailflow status report](../../media/mail-flow-status-report-tech-view.png)
+
+## <a name="malware-detections-report"></a><span data-ttu-id="9ada3-333">Rapport om identifiering av skadlig programvara</span><span class="sxs-lookup"><span data-stu-id="9ada3-333">Malware detections report</span></span>
+
+<span data-ttu-id="9ada3-334">Rapporten **Om identifiering av skadlig programvara visar** information om identifiering av skadlig programvara i inkommande och utgående e-postmeddelanden (skadlig programvara som Exchange Online Protection eller EOP).</span><span class="sxs-lookup"><span data-stu-id="9ada3-334">The **Malware detections report** report shows information about malware detections in incoming and outgoing email messages (malware detected by Exchange Online Protection or EOP).</span></span> <span data-ttu-id="9ada3-335">Mer information om skydd mot skadlig programvara i EOP finns [i Skydd mot skadlig programvara i EOP.](anti-malware-protection.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-335">For more information about malware protection in EOP, see [Anti-malware protection in EOP](anti-malware-protection.md).</span></span>
+
+<span data-ttu-id="9ada3-336">Mängdvyfiltret tillåter 90 dagar, medan filtret i detaljtabellen bara tillåter 10 dagar.</span><span class="sxs-lookup"><span data-stu-id="9ada3-336">The aggregate view filter allows for 90 days, while the details table filter only allows for 10 days.</span></span>
+
+<span data-ttu-id="9ada3-337">Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-337">To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="9ada3-338">Vid **skadlig programvara som upptäckts i e-post** klickar du på Visa **information.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-338">On **Malware detected in email**, click **View details**.</span></span> <span data-ttu-id="9ada3-339">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/MalwareDetections> .</span><span class="sxs-lookup"><span data-stu-id="9ada3-339">To go directly to the report, open <https://security.microsoft.com/reports/MalwareDetections>.</span></span>
+
+![Identifiering av skadlig programvara i widgeten för e-& för e-& och samarbetsrapporter](../../media/malware-detections-widget.png)
+
+<span data-ttu-id="9ada3-341">När du har **klickat på** Visa information kan du filtrera både diagrammet och detaljtabellen genom att klicka **på Filtrera** och välja:</span><span class="sxs-lookup"><span data-stu-id="9ada3-341">After you click **View details**, you can filter both the chart and the details table by clicking **Filter** and selecting:</span></span>
+
+- <span data-ttu-id="9ada3-342">**Datum:** **Startdatum** **och slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-342">**Date**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-343">**Riktning:** **Inkommande** **och utgående**</span><span class="sxs-lookup"><span data-stu-id="9ada3-343">**Direction**: **Inbound** and **Outbound**</span></span>
 
 ![Rapportvyn i rapporten om identifiering av skadlig programvara i e-post](../../media/malware-detections-report-view.png)
 
-<span data-ttu-id="84aaa-198">Om du **klickar på Visa informationstabell** visas följande information:</span><span class="sxs-lookup"><span data-stu-id="84aaa-198">If you click **View details table**, you can see the following details:</span></span>
+<span data-ttu-id="9ada3-345">I informationstabellen under diagrammet kan du se följande information:</span><span class="sxs-lookup"><span data-stu-id="9ada3-345">In the details table below the graph, you can see the following details:</span></span>
 
-- <span data-ttu-id="84aaa-199">**Datum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-199">**Date**</span></span>
-- <span data-ttu-id="84aaa-200">**Avsändarens adress**</span><span class="sxs-lookup"><span data-stu-id="84aaa-200">**Sender address**</span></span>
-- <span data-ttu-id="84aaa-201">**Mottagaradress**</span><span class="sxs-lookup"><span data-stu-id="84aaa-201">**Recipient address**</span></span>
-- <span data-ttu-id="84aaa-202">**Meddelande-ID:** Tillgängligt i **sidhuvudet för meddelande-ID** i meddelandehuvudet och ska vara unikt.</span><span class="sxs-lookup"><span data-stu-id="84aaa-202">**Message ID**: Available in the **Message-ID** header field in the message header and should be unique.</span></span> <span data-ttu-id="84aaa-203">Ett exempelvärde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observera vinkelparenteserna).</span><span class="sxs-lookup"><span data-stu-id="84aaa-203">An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).</span></span>
-- <span data-ttu-id="84aaa-204">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="84aaa-204">**Subject**</span></span>
-- <span data-ttu-id="84aaa-205">**Filnamn**</span><span class="sxs-lookup"><span data-stu-id="84aaa-205">**Filename**</span></span>
-- <span data-ttu-id="84aaa-206">**Namn på skadlig programvara**</span><span class="sxs-lookup"><span data-stu-id="84aaa-206">**Malware name**</span></span>
+- <span data-ttu-id="9ada3-346">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-346">**Date**</span></span>
+- <span data-ttu-id="9ada3-347">**Avsändarens adress**</span><span class="sxs-lookup"><span data-stu-id="9ada3-347">**Sender address**</span></span>
+- <span data-ttu-id="9ada3-348">**Mottagaradress**</span><span class="sxs-lookup"><span data-stu-id="9ada3-348">**Recipient address**</span></span>
+- <span data-ttu-id="9ada3-349">**Meddelande-ID:** Tillgängligt i **sidhuvudet för meddelande-ID** i meddelandehuvudet och ska vara unikt.</span><span class="sxs-lookup"><span data-stu-id="9ada3-349">**Message ID**: Available in the **Message-ID** header field in the message header and should be unique.</span></span> <span data-ttu-id="9ada3-350">Ett exempelvärde är `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (observera vinkelparenteserna).</span><span class="sxs-lookup"><span data-stu-id="9ada3-350">An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).</span></span>
+- <span data-ttu-id="9ada3-351">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="9ada3-351">**Subject**</span></span>
+- <span data-ttu-id="9ada3-352">**Filnamn**</span><span class="sxs-lookup"><span data-stu-id="9ada3-352">**Filename**</span></span>
+- <span data-ttu-id="9ada3-353">**Namn på skadlig programvara**</span><span class="sxs-lookup"><span data-stu-id="9ada3-353">**Malware name**</span></span>
 
-<span data-ttu-id="84aaa-207">Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-207">To go back to the report view, click **View report**.</span></span>
+## <a name="mail-latency-report"></a><span data-ttu-id="9ada3-354">E-postsvarstid – rapport</span><span class="sxs-lookup"><span data-stu-id="9ada3-354">Mail latency report</span></span>
 
-## <a name="mail-latency-report"></a><span data-ttu-id="84aaa-208">E-postsvarstid – rapport</span><span class="sxs-lookup"><span data-stu-id="84aaa-208">Mail latency report</span></span>
+<span data-ttu-id="9ada3-355">Rapporten **Om E-postfördröjning** i Defender för Office 365 innehåller information om den e-postleverans och den tidsfördröjning som uppgers i din organisation.</span><span class="sxs-lookup"><span data-stu-id="9ada3-355">The **Mail latency report** in Defender for Office 365 contains information on the mail delivery and detonation latency experienced within your organization.</span></span> <span data-ttu-id="9ada3-356">Mer information finns i [E-postsvarstidsrapport](view-reports-for-mdo.md#mail-latency-report).</span><span class="sxs-lookup"><span data-stu-id="9ada3-356">For more information, see [Mail latency report](view-reports-for-mdo.md#mail-latency-report).</span></span>
 
-<span data-ttu-id="84aaa-209">Svarstiden **för E-post** innehåller information om den svarstid för e-postleverans och detonation som har upplevts inom organisationen.</span><span class="sxs-lookup"><span data-stu-id="84aaa-209">The **Mail latency report** contains information on the mail delivery and detonation latency experienced within your organization.</span></span> <span data-ttu-id="84aaa-210">Mer information finns i [E-postsvarstidsrapport](view-reports-for-mdo.md#mail-latency-report).</span><span class="sxs-lookup"><span data-stu-id="84aaa-210">For more information, see [Mail latency report](view-reports-for-mdo.md#mail-latency-report).</span></span>
-
-## <a name="sent-and-received-email-report"></a><span data-ttu-id="84aaa-211">Rapport om skickad och mottagen e-post</span><span class="sxs-lookup"><span data-stu-id="84aaa-211">Sent and received email report</span></span>
-
-<span data-ttu-id="84aaa-212">Rapporten **Skickad och mottagen** e-post innehåller information om skadlig programvara, skräppost, e-postflödesregler (kallas även transportregler) och avancerad identifiering av skadlig programvara efter att e-post har kommit in i tjänsten.</span><span class="sxs-lookup"><span data-stu-id="84aaa-212">The **Sent and received email** report contains information about malware, spam, mail flow rules (also known as transport rules), and advanced malware detections after email enters the service.</span></span> <span data-ttu-id="84aaa-213">Mer information finns i Rapporten [skickad och mottagen e-post](view-mail-flow-reports.md#sent-and-received-email-report).</span><span class="sxs-lookup"><span data-stu-id="84aaa-213">For more information, see [Sent and received email report](view-mail-flow-reports.md#sent-and-received-email-report).</span></span>
-
-## <a name="spam-detections-report"></a><span data-ttu-id="84aaa-214">Rapport om identifiering av skräppost</span><span class="sxs-lookup"><span data-stu-id="84aaa-214">Spam detections report</span></span>
-
-<span data-ttu-id="84aaa-215">Rapporten **Om identifiering av** skräppost visar e-postmeddelanden som har blockerats av EOP.</span><span class="sxs-lookup"><span data-stu-id="84aaa-215">The **Spam detections** report shows spam email messages that were blocked by EOP.</span></span> <span data-ttu-id="84aaa-216">Meddelanden räknas individuellt, inte per mottagare.</span><span class="sxs-lookup"><span data-stu-id="84aaa-216">Messages are counted individually, not per recipient.</span></span> <span data-ttu-id="84aaa-217">Om till exempel samma skräppostmeddelande har skickats till 100 mottagare i organisationen räknas det som ett meddelande.</span><span class="sxs-lookup"><span data-stu-id="84aaa-217">For example, if the same spam message was sent to 100 recipients in your organization, it counts as one message.</span></span>
-
-<span data-ttu-id="84aaa-218">I mängdvyn kan du filtrera i 90 dagar, medan detaljtabellen tillåter 10 dagars filtrering.</span><span class="sxs-lookup"><span data-stu-id="84aaa-218">The aggregate view allows for 90 days filtering, while the details table allows for 10 days filtering.</span></span>
-
-<span data-ttu-id="84aaa-219">Om du vill visa rapporten öppnar du Microsoft 365  [Defender-portalen](https://security.microsoft.com), går till Rapporterar e-& samarbete E& och samarbetsrapporter och klickar på Visa information under Identifiering av \>  \>  **skräppost.** </span><span class="sxs-lookup"><span data-stu-id="84aaa-219">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click click **View details** under **Spam detections**.</span></span> <span data-ttu-id="84aaa-220">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/SpamDetections> .</span><span class="sxs-lookup"><span data-stu-id="84aaa-220">To go directly to the report, open <https://security.microsoft.com/reports/SpamDetections>.</span></span>
-
-![Widget för identifiering av skräppost på instrumentpanelen Rapporter](../../media/spam-detections-report-widget.png)
-
-<span data-ttu-id="84aaa-222">Mer information om skydd mot skräppost finns i [Skydd mot skräppost i EOP.](anti-spam-protection.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-222">For more information about anti-spam protection, see [Anti-spam protection in EOP](anti-spam-protection.md).</span></span>
-
-### <a name="report-view-for-the-spam-detections-report"></a><span data-ttu-id="84aaa-223">Rapportvy för rapporten om identifiering av skräppost</span><span class="sxs-lookup"><span data-stu-id="84aaa-223">Report view for the Spam detections report</span></span>
-
-<span data-ttu-id="84aaa-224">Följande diagram är tillgängliga i rapportvyn:</span><span class="sxs-lookup"><span data-stu-id="84aaa-224">The following charts are available in the report view:</span></span>
-
-- <span data-ttu-id="84aaa-225">**Dela upp efter: Åtgärd:** Följande händelsetyper visas:</span><span class="sxs-lookup"><span data-stu-id="84aaa-225">**Break down by: Action**: The following event types are shown:</span></span>
-
-  - <span data-ttu-id="84aaa-226">**Skräppostinnehåll filtrerat**</span><span class="sxs-lookup"><span data-stu-id="84aaa-226">**Spam content filtered**</span></span>
-  - <span data-ttu-id="84aaa-227">**IP-block för skräppost**</span><span class="sxs-lookup"><span data-stu-id="84aaa-227">**Spam IP block**</span></span>
-  - <span data-ttu-id="84aaa-228">**Skräppostkuvertblock**</span><span class="sxs-lookup"><span data-stu-id="84aaa-228">**Spam envelope block**</span></span>
-  - <span data-ttu-id="84aaa-229">**DBEB-skräppostfilter:** Katalogbaserad kantblockering (DBEB)</span><span class="sxs-lookup"><span data-stu-id="84aaa-229">**Spam DBEB filter**: Directory based edge blocking (DBEB)</span></span>
-
-  <span data-ttu-id="84aaa-230">När du hovrar över en dag (datapunkt) i diagrammet kan du se hur många objekt som blockerades den dagen och hur de objekten kategoriserats.</span><span class="sxs-lookup"><span data-stu-id="84aaa-230">When you hover over a day (data point) in the chart, you can see how many items were blocked that day, as well as how those items are categorized.</span></span>
-
-  ![Åtgärdsvyn i rapporten om identifiering av skräppost](../../media/spam-detections-report-action-view.png)
-
-- <span data-ttu-id="84aaa-232">**Dela upp i: Riktning**: Följande anvisningar visas:</span><span class="sxs-lookup"><span data-stu-id="84aaa-232">**Break down by: Direction**: The following directions are shown:</span></span>
-
-  - <span data-ttu-id="84aaa-233">**Inkommande**</span><span class="sxs-lookup"><span data-stu-id="84aaa-233">**Inbound**</span></span>
-  - <span data-ttu-id="84aaa-234">**Utgående**</span><span class="sxs-lookup"><span data-stu-id="84aaa-234">**Outbound**</span></span>
-
-  ![Vy för riktning i rapporten om identifiering av skräppost](../../media/spam-detections-report-direction-view.png)
-
-<span data-ttu-id="84aaa-236">Om du klickar **på** Filter i en rapportvy kan du ändra resultatet med följande filter:</span><span class="sxs-lookup"><span data-stu-id="84aaa-236">If you click **Filters** in a report view, you can modify the results with the following filters:</span></span>
-
-- <span data-ttu-id="84aaa-237">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-237">**Start date** and **End date**</span></span>
-- <span data-ttu-id="84aaa-238">Riktningsvärden</span><span class="sxs-lookup"><span data-stu-id="84aaa-238">Direction values</span></span>
-- <span data-ttu-id="84aaa-239">Händelsetypsvärden</span><span class="sxs-lookup"><span data-stu-id="84aaa-239">Event type values</span></span>
-
-### <a name="details-table-view-for-the-spam-detections-report"></a><span data-ttu-id="84aaa-240">Detaljtabellvyn för rapporten om identifiering av skräppost</span><span class="sxs-lookup"><span data-stu-id="84aaa-240">Details table view for the Spam detections report</span></span>
-
-<span data-ttu-id="84aaa-241">Om du **klickar på Visa informationstabell** i en rapportvy visas följande information:</span><span class="sxs-lookup"><span data-stu-id="84aaa-241">If you click **View details table** in any report view, the following information is shown:</span></span>
-
-- <span data-ttu-id="84aaa-242">**Datum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-242">**Date**</span></span>
-- <span data-ttu-id="84aaa-243">**Avsändarens adress**</span><span class="sxs-lookup"><span data-stu-id="84aaa-243">**Sender address**</span></span>
-- <span data-ttu-id="84aaa-244">**Mottagaradress**</span><span class="sxs-lookup"><span data-stu-id="84aaa-244">**Recipient address**</span></span>
-- <span data-ttu-id="84aaa-245">**Händelsetyp**</span><span class="sxs-lookup"><span data-stu-id="84aaa-245">**Event type**</span></span>
-- <span data-ttu-id="84aaa-246">**Åtgärd**</span><span class="sxs-lookup"><span data-stu-id="84aaa-246">**Action**</span></span>
-- <span data-ttu-id="84aaa-247">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="84aaa-247">**Subject**</span></span>
-
-<span data-ttu-id="84aaa-248">Om du klickar **på** Filter i en informationstabell kan du ändra resultatet med följande filter:</span><span class="sxs-lookup"><span data-stu-id="84aaa-248">If you click **Filters** in a details table, you can modify the results with the following filters:</span></span>
-
-- <span data-ttu-id="84aaa-249">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-249">**Start date** and **End date**</span></span>
-- <span data-ttu-id="84aaa-250">Riktningsvärden</span><span class="sxs-lookup"><span data-stu-id="84aaa-250">Direction values</span></span>
-- <span data-ttu-id="84aaa-251">Händelsetypsvärden</span><span class="sxs-lookup"><span data-stu-id="84aaa-251">Event type values</span></span>
-
-<span data-ttu-id="84aaa-252">Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-252">To go back to the report view, click **View report**.</span></span>
-
-## <a name="spoof-detections-report"></a><span data-ttu-id="84aaa-253">Rapport om identifieringar av förfalskning</span><span class="sxs-lookup"><span data-stu-id="84aaa-253">Spoof detections report</span></span>
+## <a name="spam-detections-report"></a><span data-ttu-id="9ada3-357">Rapport om identifiering av skräppost</span><span class="sxs-lookup"><span data-stu-id="9ada3-357">Spam detections report</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="84aaa-254">Rapporten om förbättrade identifieringar av förfalskning som beskrivs i den här artikeln är en förhandsversion, kan komma att ändras och är inte tillgänglig i alla organisationer.</span><span class="sxs-lookup"><span data-stu-id="84aaa-254">The improved Spoof detections report as described in this article is in Preview, is subject to change, and is not available in all organizations.</span></span> <span data-ttu-id="84aaa-255">I den äldre versionen av rapporten visades endast **Bra e-post** **och Fångad som skräppost.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-255">The older version of the report showed only **Good mail** and **Caught as spam**.</span></span>
+> <span data-ttu-id="9ada3-358">Rapporten **om identifiering av skräppost** försvinner den 30 juni 2021.</span><span class="sxs-lookup"><span data-stu-id="9ada3-358">The **Spam detections report** will go away on June 30, 2021.</span></span> <span data-ttu-id="9ada3-359">Samma information är tillgänglig i rapporten [om skydd mot hot.](#threat-protection-status-report)</span><span class="sxs-lookup"><span data-stu-id="9ada3-359">The same information is available in the [Threat protection status report](#threat-protection-status-report).</span></span>
 
-<span data-ttu-id="84aaa-256">I **rapporten Identifieringar av förfalskning** visas information om meddelanden som har blockerats eller tillåts på grund av förfalskning.</span><span class="sxs-lookup"><span data-stu-id="84aaa-256">The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing.</span></span> <span data-ttu-id="84aaa-257">Mer information om förfalskning finns i [Skydd mot förfalskning i EOP.](anti-spoofing-protection.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-257">For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).</span></span>
+## <a name="spoof-detections-report"></a><span data-ttu-id="9ada3-360">Rapport om identifieringar av förfalskning</span><span class="sxs-lookup"><span data-stu-id="9ada3-360">Spoof detections report</span></span>
 
-<span data-ttu-id="84aaa-258">I den samlade vyn för rapporten kan du filtrera i 45 dagar, medan <sup>\*</sup> detaljvyn bara tillåter tio dagars filtrering.</span><span class="sxs-lookup"><span data-stu-id="84aaa-258">The aggregate view of the report allows for 45 days of filtering<sup>\*</sup>, while the detail view only allows for ten days of filtering.</span></span>
+> [!NOTE]
+> <span data-ttu-id="9ada3-361">Rapporten om förbättrade identifieringar av förfalskning som beskrivs i den här artikeln är en förhandsversion, kan komma att ändras och är inte tillgänglig i alla organisationer.</span><span class="sxs-lookup"><span data-stu-id="9ada3-361">The improved Spoof detections report as described in this article is in Preview, is subject to change, and is not available in all organizations.</span></span> <span data-ttu-id="9ada3-362">I den äldre versionen av rapporten visas bara **Bra e-post** **och Fångad som skräppost.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-362">The older version of the report shows only **Good mail** and **Caught as spam**.</span></span>
 
-<span data-ttu-id="84aaa-259"><sup>\*</sup> Till slut kan du använda upp till 90 dagars filtrering.</span><span class="sxs-lookup"><span data-stu-id="84aaa-259"><sup>\*</sup> Eventually, you'll be able to use up to 90 days of filtering.</span></span>
+<span data-ttu-id="9ada3-363">I **rapporten Identifieringar av förfalskning** visas information om meddelanden som har blockerats eller tillåts på grund av förfalskning.</span><span class="sxs-lookup"><span data-stu-id="9ada3-363">The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing.</span></span> <span data-ttu-id="9ada3-364">Mer information om förfalskning finns i [Skydd mot förfalskning i EOP.](anti-spoofing-protection.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-364">For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).</span></span>
 
-<span data-ttu-id="84aaa-260">Om du vill visa rapporten öppnar du Microsoft 365  [Defender-portalen](https://security.microsoft.com), går till E-& rapporter för samarbete E& & och samarbetsrapporter och klickar på Visa information \>  \>  under **förfalskning.** </span><span class="sxs-lookup"><span data-stu-id="84aaa-260">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Spoof detections**.</span></span> <span data-ttu-id="84aaa-261">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/SpoofMailReport> .</span><span class="sxs-lookup"><span data-stu-id="84aaa-261">To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.</span></span>
+<span data-ttu-id="9ada3-365">I den samlade vyn för rapporten kan du filtrera i 45 dagar, medan <sup>\*</sup> detaljvyn bara tillåter tio dagars filtrering.</span><span class="sxs-lookup"><span data-stu-id="9ada3-365">The aggregate view of the report allows for 45 days of filtering<sup>\*</sup>, while the detail view only allows for ten days of filtering.</span></span>
 
-![Widget för identifiering av förfalskning på instrumentpanelen Rapporter](../../media/spoof-detections-widget.png)
+<span data-ttu-id="9ada3-366"><sup>\*</sup> Till slut kan du använda upp till 90 dagars filtrering.</span><span class="sxs-lookup"><span data-stu-id="9ada3-366"><sup>\*</sup> Eventually, you'll be able to use up to 90 days of filtering.</span></span>
 
-<span data-ttu-id="84aaa-263">När du hovrar över en dag (datapunkt) i diagrammet kan du se hur många falska meddelanden som påträffades och varför.</span><span class="sxs-lookup"><span data-stu-id="84aaa-263">When you hover over a day (data point) in the chart, you can see how many spoofed messages were detected and why.</span></span>
+<span data-ttu-id="9ada3-367">Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-367">To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="9ada3-368">Vid **identifieringar av förfalskning klickar** du **på Visa information.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-368">On **Spoof detections**, click **View details**.</span></span> <span data-ttu-id="9ada3-369">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/SpoofMailReportV2> .</span><span class="sxs-lookup"><span data-stu-id="9ada3-369">To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReportV2>.</span></span>
 
-<span data-ttu-id="84aaa-264">Du kan filtrera både diagrammet och informationstabellen genom att klicka **på Filter** och välja ett eller flera av följande värden:</span><span class="sxs-lookup"><span data-stu-id="84aaa-264">You can filter both the chart and the details table by clicking **Filters** and selecting one or more of the following values:</span></span>
+![Widget för identifiering av förfalskning på sidan & för e-post och samarbete](../../media/spoof-detections-widget.png)
 
-- <span data-ttu-id="84aaa-265">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-265">**Start date** and **End date**</span></span>
+<span data-ttu-id="9ada3-371">När du hovrar över en dag (datapunkt) i diagrammet kan du se hur många falska meddelanden som påträffades och varför.</span><span class="sxs-lookup"><span data-stu-id="9ada3-371">When you hover over a day (data point) in the chart, you can see how many spoofed messages were detected and why.</span></span>
 
-- <span data-ttu-id="84aaa-266">**Result**</span><span class="sxs-lookup"><span data-stu-id="84aaa-266">**Result**</span></span>
-  - <span data-ttu-id="84aaa-267">**Godkänd**</span><span class="sxs-lookup"><span data-stu-id="84aaa-267">**Pass**</span></span>
-  - <span data-ttu-id="84aaa-268">**Fel**</span><span class="sxs-lookup"><span data-stu-id="84aaa-268">**Fail**</span></span>
-  - <span data-ttu-id="84aaa-269">**SoftPass**</span><span class="sxs-lookup"><span data-stu-id="84aaa-269">**SoftPass**</span></span>
-  - <span data-ttu-id="84aaa-270">**Ingen**</span><span class="sxs-lookup"><span data-stu-id="84aaa-270">**None**</span></span>
-  - <span data-ttu-id="84aaa-271">**Annat**</span><span class="sxs-lookup"><span data-stu-id="84aaa-271">**Other**</span></span>
+<span data-ttu-id="9ada3-372">När du klickar **på Visa** information kan du filtrera både diagrammet och detaljtabellen genom att klicka på **Filtrera** och markera ett eller flera av följande värden:</span><span class="sxs-lookup"><span data-stu-id="9ada3-372">After you click **View details**, you can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values:</span></span>
 
-- <span data-ttu-id="84aaa-272">**Förfalskningstyp:** **Intern** och **Extern**</span><span class="sxs-lookup"><span data-stu-id="84aaa-272">**Spoof type**: **Internal** and **External**</span></span>
+- <span data-ttu-id="9ada3-373">**Datum:** **Startdatum** **och slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-373">**Date**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-374">**Resultat:**</span><span class="sxs-lookup"><span data-stu-id="9ada3-374">**Result**:</span></span>
+  - <span data-ttu-id="9ada3-375">**Godkänd**</span><span class="sxs-lookup"><span data-stu-id="9ada3-375">**Pass**</span></span>
+  - <span data-ttu-id="9ada3-376">**Fel**</span><span class="sxs-lookup"><span data-stu-id="9ada3-376">**Fail**</span></span>
+  - <span data-ttu-id="9ada3-377">**SoftPass**</span><span class="sxs-lookup"><span data-stu-id="9ada3-377">**SoftPass**</span></span>
+  - <span data-ttu-id="9ada3-378">**Ingen**</span><span class="sxs-lookup"><span data-stu-id="9ada3-378">**None**</span></span>
+  - <span data-ttu-id="9ada3-379">**Annat**</span><span class="sxs-lookup"><span data-stu-id="9ada3-379">**Other**</span></span>
+- <span data-ttu-id="9ada3-380">**Förfalskningstyp:** **Intern** och **Extern**</span><span class="sxs-lookup"><span data-stu-id="9ada3-380">**Spoof type**: **Internal** and **External**</span></span>
 
-![Rapportvyn i rapporten Identifiering av förfalskning](../../media/spoof-detections-report-view.png)
+![Sidan Förfalskningsrapport på Microsoft 365 Defender portalen](../../media/spoof-detections-report-page.png)
 
-<span data-ttu-id="84aaa-274">Om du **klickar på Visa informationstabell** visas följande information:</span><span class="sxs-lookup"><span data-stu-id="84aaa-274">If you click **View details table**, you can see the following details:</span></span>
+<span data-ttu-id="9ada3-382">I tabellen nedanför diagrammet kan du se följande information:</span><span class="sxs-lookup"><span data-stu-id="9ada3-382">In the table below the graph, you can see the following details:</span></span>
 
-- <span data-ttu-id="84aaa-275">**Datum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-275">**Date**</span></span>
-- <span data-ttu-id="84aaa-276">**Spoofed användare**</span><span class="sxs-lookup"><span data-stu-id="84aaa-276">**Spoofed user**</span></span>
-- <span data-ttu-id="84aaa-277">**Skicka infrastruktur**</span><span class="sxs-lookup"><span data-stu-id="84aaa-277">**Sending infrastructure**</span></span>
-- <span data-ttu-id="84aaa-278">**Förfalskningstyp**</span><span class="sxs-lookup"><span data-stu-id="84aaa-278">**Spoof type**</span></span>
-- <span data-ttu-id="84aaa-279">**Result**</span><span class="sxs-lookup"><span data-stu-id="84aaa-279">**Result**</span></span>
-- <span data-ttu-id="84aaa-280">**Resultatkod**</span><span class="sxs-lookup"><span data-stu-id="84aaa-280">**Result code**</span></span>
-- <span data-ttu-id="84aaa-281">**SPF**</span><span class="sxs-lookup"><span data-stu-id="84aaa-281">**SPF**</span></span>
-- <span data-ttu-id="84aaa-282">**DKIM**</span><span class="sxs-lookup"><span data-stu-id="84aaa-282">**DKIM**</span></span>
-- <span data-ttu-id="84aaa-283">**DMARC**</span><span class="sxs-lookup"><span data-stu-id="84aaa-283">**DMARC**</span></span>
-- <span data-ttu-id="84aaa-284">**Antal meddelanden**</span><span class="sxs-lookup"><span data-stu-id="84aaa-284">**Message count**</span></span>
+- <span data-ttu-id="9ada3-383">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-383">**Date**</span></span>
+- <span data-ttu-id="9ada3-384">**Spoofed användare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-384">**Spoofed user**</span></span>
+- <span data-ttu-id="9ada3-385">**Skicka infrastruktur**</span><span class="sxs-lookup"><span data-stu-id="9ada3-385">**Sending infrastructure**</span></span>
+- <span data-ttu-id="9ada3-386">**Förfalskningstyp**</span><span class="sxs-lookup"><span data-stu-id="9ada3-386">**Spoof type**</span></span>
+- <span data-ttu-id="9ada3-387">**Result**</span><span class="sxs-lookup"><span data-stu-id="9ada3-387">**Result**</span></span>
+- <span data-ttu-id="9ada3-388">**Resultatkod**</span><span class="sxs-lookup"><span data-stu-id="9ada3-388">**Result code**</span></span>
+- <span data-ttu-id="9ada3-389">**SPF**</span><span class="sxs-lookup"><span data-stu-id="9ada3-389">**SPF**</span></span>
+- <span data-ttu-id="9ada3-390">**DKIM**</span><span class="sxs-lookup"><span data-stu-id="9ada3-390">**DKIM**</span></span>
+- <span data-ttu-id="9ada3-391">**DMARC**</span><span class="sxs-lookup"><span data-stu-id="9ada3-391">**DMARC**</span></span>
+- <span data-ttu-id="9ada3-392">**Antal meddelanden**</span><span class="sxs-lookup"><span data-stu-id="9ada3-392">**Message count**</span></span>
 
-<span data-ttu-id="84aaa-285">Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-285">To go back to the report view, click **View report**.</span></span>
+<span data-ttu-id="9ada3-393">Mer information om sammansatta resultatkoder för autentisering finns i Rubriker mot skräppost [i Microsoft 365.](anti-spam-message-headers.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-393">For more information about composite authentication result codes, see [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md).</span></span>
 
-<span data-ttu-id="84aaa-286">Mer information om sammansatta resultatkoder för autentisering finns i Rubriker mot skräppost [i Microsoft 365.](anti-spam-message-headers.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-286">For more information about composite authentication result codes, see [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md).</span></span>
+## <a name="threat-protection-status-report"></a><span data-ttu-id="9ada3-394">Statusrapport för hotskydd</span><span class="sxs-lookup"><span data-stu-id="9ada3-394">Threat protection status report</span></span>
 
-## <a name="threat-protection-status-report"></a><span data-ttu-id="84aaa-287">Statusrapport för hotskydd</span><span class="sxs-lookup"><span data-stu-id="84aaa-287">Threat protection status report</span></span>
+<span data-ttu-id="9ada3-395">Statusrapporten **för skydd** mot hot är tillgänglig i både EOP och Defender för Office 365. Rapporterna innehåller däremot olika data.</span><span class="sxs-lookup"><span data-stu-id="9ada3-395">The **Threat protection status** report is available in both EOP and Defender for Office 365; however, the reports contain different data.</span></span> <span data-ttu-id="9ada3-396">Till exempel kan EOP-kunder visa information om skadlig programvara som upptäckts i e-post, men inte information om skadliga filer som upptäckts av [Valv-bifogade](mdo-for-spo-odb-and-teams.md)filer för SharePoint, OneDrive och Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="9ada3-396">For example, EOP customers can view information about malware detected in email, but not information about malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).</span></span>
 
-<span data-ttu-id="84aaa-288">Statusrapporten **för skydd** mot hot är tillgänglig i både EOP och Microsoft Defender för Office 365. Rapporterna innehåller däremot olika data.</span><span class="sxs-lookup"><span data-stu-id="84aaa-288">The **Threat protection status** report is available in both EOP and Microsoft Defender for Office 365; however, the reports contain different data.</span></span> <span data-ttu-id="84aaa-289">Till exempel kan EOP-kunder visa information om skadlig programvara som upptäckts i e-post, men inte information om skadliga filer som upptäckts av [Valv-bifogade](mdo-for-spo-odb-and-teams.md)filer för SharePoint, OneDrive och Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="84aaa-289">For example, EOP customers can view information about malware detected in email, but not information about malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).</span></span>
+<span data-ttu-id="9ada3-397">Rapporten innehåller antalet e-postmeddelanden med skadligt innehåll, till exempel filer eller webbadresser (URL:er) som har blockerats av antivirusmotorn, nolltimmars automatisk rensning [(ZAP)](zero-hour-auto-purge.md)och Defender för [Office 365-funktioner](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)som [Valv-länkar,](safe-links.md) [Valv-bilagor](safe-attachments.md)och personifieringsskyddsfunktioner i principer för skydd mot nätfiske.</span><span class="sxs-lookup"><span data-stu-id="9ada3-397">The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and Defender for Office 365 features like [Safe Links](safe-links.md), [Safe Attachments](safe-attachments.md), and [impersonation protection features in anti-phishing policies](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).</span></span> <span data-ttu-id="9ada3-398">Du kan använda den här informationen för att identifiera trender eller avgöra om organisationens principer behöver justeras.</span><span class="sxs-lookup"><span data-stu-id="9ada3-398">You can use this information to identify trends or determine whether organization policies need adjustment.</span></span>
 
-<span data-ttu-id="84aaa-290">Rapporten innehåller antalet e-postmeddelanden med skadligt innehåll, till exempel filer eller webbadresser (URL:er) som har blockerats av skadlig programvara, ZAP [(Zero-hour Auto Purge)](zero-hour-auto-purge.md)och Defender för Office 365-funktioner som [Valv-länkar,](safe-links.md) [Valv-bilagor](safe-attachments.md)och [nätfiske](set-up-anti-phishing-policies.md).</span><span class="sxs-lookup"><span data-stu-id="84aaa-290">The report provides the count of email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and Defender for Office 365 features like [Safe Links](safe-links.md), [Safe Attachments](safe-attachments.md), and [Anti-phishing](set-up-anti-phishing-policies.md).</span></span> <span data-ttu-id="84aaa-291">Du kan använda den här informationen för att identifiera trender eller avgöra om organisationens principer behöver justeras.</span><span class="sxs-lookup"><span data-stu-id="84aaa-291">You can use this information to identify trends or determine whether organization policies need adjustment.</span></span>
+<span data-ttu-id="9ada3-399">**Obs!** Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.</span><span class="sxs-lookup"><span data-stu-id="9ada3-399">**Note**: It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.</span></span>
 
-<span data-ttu-id="84aaa-292">**Obs!** Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.</span><span class="sxs-lookup"><span data-stu-id="84aaa-292">**Note**: It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.</span></span>
+<span data-ttu-id="9ada3-400">Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-400">To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="9ada3-401">På **Status för skydd mot hot** klickar du på Visa **information.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-401">On **Threat protection status**, click **View details**.</span></span> <span data-ttu-id="9ada3-402">Öppna någon av följande URL:er för att gå direkt till rapporten:</span><span class="sxs-lookup"><span data-stu-id="9ada3-402">To go directly to the report, open one of the following URLs:</span></span>
 
-<span data-ttu-id="84aaa-293">Om du vill visa rapporten öppnar du Microsoft 365  [Defender-portalen](https://security.microsoft.com), går till Rapporterar e-& samarbete E& och klickar på Visa information under Status för skydd mot \>  \>  **hot.** </span><span class="sxs-lookup"><span data-stu-id="84aaa-293">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Threat protection status**.</span></span> <span data-ttu-id="84aaa-294">Öppna någon av följande URL:er för att gå direkt till rapporten:</span><span class="sxs-lookup"><span data-stu-id="84aaa-294">To go directly to the report, open one of the following URLs:</span></span>
+- <span data-ttu-id="9ada3-403">Defender för Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP></span><span class="sxs-lookup"><span data-stu-id="9ada3-403">Defender for Office 365: <https://security.microsoft.com/reports/TPSAggregateReportATP></span></span>
+- <span data-ttu-id="9ada3-404">EOP: <https://security.microsoft.com/reports/TPSAggregateReport></span><span class="sxs-lookup"><span data-stu-id="9ada3-404">EOP: <https://security.microsoft.com/reports/TPSAggregateReport></span></span>
 
-- <span data-ttu-id="84aaa-295">Microsoft Defender för Office 365:<https://protection.office.com/reportv2?id=TPSAggregateReportATP></span><span class="sxs-lookup"><span data-stu-id="84aaa-295">Microsoft Defender for Office 365: <https://protection.office.com/reportv2?id=TPSAggregateReportATP></span></span>
-- <span data-ttu-id="84aaa-296">EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport></span><span class="sxs-lookup"><span data-stu-id="84aaa-296">EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport></span></span>
+![Widget för hotskyddsstatus på sidan & och samarbetsrapporter](../../media/threat-protection-status-report-widget.png)
 
-![Widget för hotskyddsstatus på instrumentpanelen Rapporter](../../media/threat-protection-status-report-widget.png)
+<span data-ttu-id="9ada3-406">När du har klickat på **Visa information visas** som standard data för de senaste 7 dagarna i diagrammet.</span><span class="sxs-lookup"><span data-stu-id="9ada3-406">By default, after you click **View details**, the chart shows data for the past 7 days.</span></span> <span data-ttu-id="9ada3-407">Om du klickar **på Filter** kan du välja ett datumintervall på 90 dagar (utvärderingsprenumerationer kan vara begränsat till 30 dagar).</span><span class="sxs-lookup"><span data-stu-id="9ada3-407">If you click **Filter**, you can select a 90 day date range (trial subscriptions might be limited to 30 days).</span></span> <span data-ttu-id="9ada3-408">I detaljtabellen filtreras data i 30 dagar.</span><span class="sxs-lookup"><span data-stu-id="9ada3-408">The details table allows filtering for 30 days.</span></span>
 
-<span data-ttu-id="84aaa-298">Som standard visas data för de senaste 7 dagarna i diagrammet.</span><span class="sxs-lookup"><span data-stu-id="84aaa-298">By default, the chart shows data for the past 7 days.</span></span> <span data-ttu-id="84aaa-299">Om du klickar **på Filter** kan du välja ett datumintervall på 90 dagar (utvärderingsprenumerationer kan vara begränsat till 30 dagar).</span><span class="sxs-lookup"><span data-stu-id="84aaa-299">If you click **Filters**, you can select a 90 day date range (trial subscriptions might be limited to 30 days).</span></span> <span data-ttu-id="84aaa-300">I detaljtabellvyn kan du filtrera i 30 dagar.</span><span class="sxs-lookup"><span data-stu-id="84aaa-300">The details table view allows filtering for 30 days.</span></span>
+<span data-ttu-id="9ada3-409">De tillgängliga vyerna beskrivs i följande avsnitt.</span><span class="sxs-lookup"><span data-stu-id="9ada3-409">The available views are described in the following sections.</span></span>
 
-### <a name="report-view-for-the-threat-protection-status-report"></a><span data-ttu-id="84aaa-301">Rapportvy för statusrapporten för skydd mot hot</span><span class="sxs-lookup"><span data-stu-id="84aaa-301">Report view for the Threat protection status report</span></span>
+### <a name="view-data-by-overview"></a><span data-ttu-id="9ada3-410">Visa data per översikt</span><span class="sxs-lookup"><span data-stu-id="9ada3-410">View data by Overview</span></span>
 
-<span data-ttu-id="84aaa-302">Följande vyer är tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="84aaa-302">The following views are available:</span></span>
+![Översiktsvy i rapporten om skydd mot hot](../../media/threat-protection-status-report-overview-view.png)
 
-- <span data-ttu-id="84aaa-303">**Visa data efter: Översikt:** Följande identifieringsinformation visas:</span><span class="sxs-lookup"><span data-stu-id="84aaa-303">**View data by: Overview**: The following detection information is shown:</span></span>
+<span data-ttu-id="9ada3-412">I **vyn Visa data efter** översikt visas följande identifieringsinformation i diagrammet:</span><span class="sxs-lookup"><span data-stu-id="9ada3-412">In the **View data by Overview** view, the following detection information is shown in the chart:</span></span>
 
-  - <span data-ttu-id="84aaa-304">**Skadlig programvara för e-post**</span><span class="sxs-lookup"><span data-stu-id="84aaa-304">**Email malware**</span></span>
-  - <span data-ttu-id="84aaa-305">**E-post phish**</span><span class="sxs-lookup"><span data-stu-id="84aaa-305">**Email phish**</span></span>
-  - <span data-ttu-id="84aaa-306">**Skadlig programvara för innehåll**</span><span class="sxs-lookup"><span data-stu-id="84aaa-306">**Content malware**</span></span>
+- <span data-ttu-id="9ada3-413">**Skadlig programvara för e-post**</span><span class="sxs-lookup"><span data-stu-id="9ada3-413">**Email malware**</span></span>
+- <span data-ttu-id="9ada3-414">**E-post phish**</span><span class="sxs-lookup"><span data-stu-id="9ada3-414">**Email phish**</span></span>
+- <span data-ttu-id="9ada3-415">**Skadlig programvara för innehåll**</span><span class="sxs-lookup"><span data-stu-id="9ada3-415">**Content malware**</span></span>
 
-  ![Översiktsvy i rapporten om skydd mot hot](../../media/threat-protection-status-report-overview-view.png)
+<span data-ttu-id="9ada3-416">Ingen informationstabell är tillgänglig under diagrammet.</span><span class="sxs-lookup"><span data-stu-id="9ada3-416">No details table is available below the chart.</span></span>
 
-- <span data-ttu-id="84aaa-308">**Visa data efter: Innehåll \> Skadlig**<sup>programvara 1:</sup>Följande information visas för Microsoft Defender för Office 365 organisationer:</span><span class="sxs-lookup"><span data-stu-id="84aaa-308">**View data by: Content \> Malware**<sup>1</sup>: The following information is shown for Microsoft Defender for Office 365 organizations:</span></span>
+<span data-ttu-id="9ada3-417">Om du **klickar på** Filter är följande filter tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="9ada3-417">If you click **Filter**, the following filters are available:</span></span>
 
-  - <span data-ttu-id="84aaa-309">**Motor mot skadlig programvara:** Skadliga filer som upptäckts i Sharepoint, OneDrive och Microsoft Teams av den [inbyggda virusidentifieringen i Microsoft 365.](virus-detection-in-spo.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-309">**Anti-malware engine**: Malicious files detected in Sharepoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](virus-detection-in-spo.md).</span></span>
-  - <span data-ttu-id="84aaa-310">**Fildeonation:** Skadliga filer som upptäckts [Valv bifogade filer för SharePoint, OneDrive och Microsoft Teams](mdo-for-spo-odb-and-teams.md).</span><span class="sxs-lookup"><span data-stu-id="84aaa-310">**File detonation**: Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).</span></span>
+- <span data-ttu-id="9ada3-418">**Datum:** **Startdatum** **och slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-418">**Date**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-419">**Identifiering:** Skadlig programvara för **e-post, e-post phish** eller **skadlig programvara för innehåll** </span><span class="sxs-lookup"><span data-stu-id="9ada3-419">**Detection**: **Email malware**, **Email phish**, or **Content malware**</span></span>
+- <span data-ttu-id="9ada3-420">**Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**</span><span class="sxs-lookup"><span data-stu-id="9ada3-420">**Protected by**: **MDO** (Defender for Office 365) or **EOP**</span></span>
+- <span data-ttu-id="9ada3-421">**Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton).</span><span class="sxs-lookup"><span data-stu-id="9ada3-421">**Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts).</span></span> <span data-ttu-id="9ada3-422">Mer information om användartaggar finns i [Användartaggar.](user-tags.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-422">For more information about user tags, see [User tags](user-tags.md).</span></span>
+- <span data-ttu-id="9ada3-423">**Riktning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-423">**Direction**</span></span>
+- <span data-ttu-id="9ada3-424">**Domän**</span><span class="sxs-lookup"><span data-stu-id="9ada3-424">**Domain**</span></span>
+- <span data-ttu-id="9ada3-425">**Typ av princip**</span><span class="sxs-lookup"><span data-stu-id="9ada3-425">**Policy type**</span></span>
 
-  ![Vyn För skadlig programvara för innehåll i statusrapporten för skydd mot hot](../../media/threat-protection-status-report-content-malware-view.png)
+<span data-ttu-id="9ada3-426">När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-426">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
 
-- <span data-ttu-id="84aaa-312">**Visa data efter: Åsidosättning av** meddelande: Följande orsak till åsidosättning visas:</span><span class="sxs-lookup"><span data-stu-id="84aaa-312">**View data by: Message Override**: The following override reason information is shown:</span></span>
+### <a name="view-data-by-email--phish-and-chart-breakdown-by-detection-technology"></a><span data-ttu-id="9ada3-427">Visa data efter \> e-post phish och diagramfördelning efter identifieringsteknik</span><span class="sxs-lookup"><span data-stu-id="9ada3-427">View data by Email \> Phish and Chart breakdown by Detection Technology</span></span>
 
-  - <span data-ttu-id="84aaa-313">**Lokal hoppa över**</span><span class="sxs-lookup"><span data-stu-id="84aaa-313">**On-premises skip**</span></span>
-  - <span data-ttu-id="84aaa-314">**IP Allow**</span><span class="sxs-lookup"><span data-stu-id="84aaa-314">**IP Allow**</span></span>
-  - <span data-ttu-id="84aaa-315">**E-postflödesregel**</span><span class="sxs-lookup"><span data-stu-id="84aaa-315">**Mail flow rule**</span></span>
-  - <span data-ttu-id="84aaa-316">**Sender allow**</span><span class="sxs-lookup"><span data-stu-id="84aaa-316">**Sender allow**</span></span>
-  - <span data-ttu-id="84aaa-317">**Tillåt domän**</span><span class="sxs-lookup"><span data-stu-id="84aaa-317">**Domain allow**</span></span>
-  - <span data-ttu-id="84aaa-318">**ZAP inte aktiverat**</span><span class="sxs-lookup"><span data-stu-id="84aaa-318">**ZAP not enabled**</span></span>
-  - <span data-ttu-id="84aaa-319">**Mappen Skräppost är inte aktiverad**</span><span class="sxs-lookup"><span data-stu-id="84aaa-319">**Junk Mail folder not enabled**</span></span>
-  - <span data-ttu-id="84aaa-320">**Användare Valv avsändare**</span><span class="sxs-lookup"><span data-stu-id="84aaa-320">**User Safe Sender**</span></span>
-  - <span data-ttu-id="84aaa-321">**User Valv Domain**</span><span class="sxs-lookup"><span data-stu-id="84aaa-321">**User Safe Domain**</span></span>
+![Vy för identifieringsteknik för nätfiske i statusrapporten för skydd mot hot](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
-  ![Vy för åsidosättning av meddelande i rapporten om skydd mot hot](../../media/threat-protection-status-report-message-override-view.png)
+<span data-ttu-id="9ada3-429">I vyn **Visa data via \> e-post phish** **och diagram** som ligger i detalj efter vyn Identifieringsteknik visas följande information i diagrammet:</span><span class="sxs-lookup"><span data-stu-id="9ada3-429">In the **View data by Email \> Phish** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:</span></span>
 
-- <span data-ttu-id="84aaa-323">**Dela upp dig med: Identifieringsteknik** **och Visa data efter: E-postfras \>**: Följande information visas:</span><span class="sxs-lookup"><span data-stu-id="84aaa-323">**Break down by: Detection technology** and **View data by: Email \> Phish**: The following information is shown:</span></span>
-
-  - <span data-ttu-id="84aaa-324">**ATP-genererat URL-rykte**<sup>1</sup>: Skadligt URL-rykte genererat av Defender för Office 365 detonationer i andra Microsoft 365 kunder.</span><span class="sxs-lookup"><span data-stu-id="84aaa-324">**ATP-generated URL reputation**<sup>1</sup>: Malicious URL reputation generated from Defender for Office 365 detonations in other Microsoft 365 customers.</span></span>
-  - <span data-ttu-id="84aaa-325">**Avancerat nätfiskefilter:** Nätfiskesignaler baserade på maskininlärning.</span><span class="sxs-lookup"><span data-stu-id="84aaa-325">**Advanced phish filter**: Phishing signals based on machine learning.</span></span>
-  - <span data-ttu-id="84aaa-326">**Anti-spoof – DMARC-fel:** DMARC-autentiseringsfel i meddelanden.</span><span class="sxs-lookup"><span data-stu-id="84aaa-326">**Anti-spoof - DMARC failure**: DMARC authentication failure on messages.</span></span>
-  - <span data-ttu-id="84aaa-327">**Anti-förfalskning – årsorganisation:** Avsändaren försöker kapa mottagardomänen.</span><span class="sxs-lookup"><span data-stu-id="84aaa-327">**Anti-spoof - intra-org**: Sender is trying to spoof the recipient domain.</span></span>
-  - <span data-ttu-id="84aaa-328">**Skydd mot förfalskning – extern domän:** Avsändaren försöker kapa en annan domän.</span><span class="sxs-lookup"><span data-stu-id="84aaa-328">**Anti-spoof - external domain**: Sender is trying to spoof some other domain.</span></span>
-  - <span data-ttu-id="84aaa-329">**Personifiering av märke**: Personifiering av välkända varumärken baserat på avsändare.</span><span class="sxs-lookup"><span data-stu-id="84aaa-329">**Brand impersonation**: Impersonation of well-known brands based on senders.</span></span>
-  - <span data-ttu-id="84aaa-330">**Domänpersonifiering**<sup>1</sup>: Personifiering av domäner som kunden äger eller definierar.</span><span class="sxs-lookup"><span data-stu-id="84aaa-330">**Domain impersonation**<sup>1</sup>: Impersonation of domains that the customer owns or defines.</span></span>
-  - <span data-ttu-id="84aaa-331">**Ryktet EOP URL**: Skadligt URL-rykte.</span><span class="sxs-lookup"><span data-stu-id="84aaa-331">**EOP URL reputation**: Malicious URL reputation.</span></span>
-  - <span data-ttu-id="84aaa-332">**Allmänt nätfiskefilter:** Nätfiskesignaler baserade på analytiker.</span><span class="sxs-lookup"><span data-stu-id="84aaa-332">**General phish filter**: Phishing signals based on analyst rules.</span></span>
-  - <span data-ttu-id="84aaa-333">**Andra**</span><span class="sxs-lookup"><span data-stu-id="84aaa-333">**Others**</span></span>
-  - <span data-ttu-id="84aaa-334">**Phish ZAP**<sup>2</sup>: Automatisk rensning av nätfiskemeddelanden i noll timme.</span><span class="sxs-lookup"><span data-stu-id="84aaa-334">**Phish ZAP**<sup>2</sup>: Zero hour auto purge of phishing messages.</span></span>
-  - <span data-ttu-id="84aaa-335">**URL-detonation**<sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="84aaa-335">**URL detonation**<sup>1</sup></span></span>
-  - <span data-ttu-id="84aaa-336">**Användarpersonifiering**<sup>1</sup>: Personifiering av användare som definierats av administratör eller som har lärt sig postlådeintelligens.</span><span class="sxs-lookup"><span data-stu-id="84aaa-336">**User impersonation**<sup>1</sup>: Impersonation of users defined by admin or learned through mailbox intelligence.</span></span>
-
-  ![Vy för identifieringsteknik för nätfiske i statusrapporten för skydd mot hot](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
-
-- <span data-ttu-id="84aaa-338">**Dela upp dig med: Identifieringsteknik** **och Visa data efter: Skadlig e-post: \>** Följande information visas:</span><span class="sxs-lookup"><span data-stu-id="84aaa-338">**Break down by: Detection technology** and **View data by: Email \> Malware**: The following information is shown:</span></span>
-
-  - <span data-ttu-id="84aaa-339">**ATP-genererat rykte**<sup>1</sup>: Alla ryktet för skadlig fil som genererats av Defender Office 365 detonationer.</span><span class="sxs-lookup"><span data-stu-id="84aaa-339">**ATP-generated file reputation**<sup>1</sup>: All malicious file reputation generated by Defender for Office 365 detonations.</span></span>
-  - <span data-ttu-id="84aaa-340">**Motor mot skadlig programvara**<sup>1:</sup>Identifiering från sökmotorer mot skadlig programvara.</span><span class="sxs-lookup"><span data-stu-id="84aaa-340">**Anti-malware engine**<sup>1</sup>: Detection from anti-malware engines.</span></span>
-  - <span data-ttu-id="84aaa-341">**Filtypsblockering mot skadlig programvara:** Det här är e-postmeddelanden som filtrerats bort på grund av vilken typ av skadlig fil som identifieras i meddelandet.</span><span class="sxs-lookup"><span data-stu-id="84aaa-341">**Anti-malware policy file type block**: These are email messages filtered out due to the type of malicious file identified in the message.</span></span>
-  - <span data-ttu-id="84aaa-342">**Fildeonation**<sup>1</sup>: Identifiering av e Valv bifogade filer.</span><span class="sxs-lookup"><span data-stu-id="84aaa-342">**File detonation**<sup>1</sup>: Detection by Safe Attachments.</span></span>
-  - <span data-ttu-id="84aaa-343">**Skadligt filrynde**</span><span class="sxs-lookup"><span data-stu-id="84aaa-343">**Malicious file reputation**</span></span>
-  - <span data-ttu-id="84aaa-344">**Malware ZAP**<sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="84aaa-344">**Malware ZAP**<sup>2</sup></span></span>
-  - <span data-ttu-id="84aaa-345">**Andra**</span><span class="sxs-lookup"><span data-stu-id="84aaa-345">**Others**</span></span>
-
-  ![Vy för identifieringsteknik för skadlig programvara i statusrapporten för skydd mot hot](../../media/threat-protection-status-report-malware-detection-tech-view.png)
-
-- <span data-ttu-id="84aaa-347">**Dela upp efter: Principtyp och** Visa data efter: E-postfras eller Visa data efter: Skadlig e-post: Följande information visas: **\>** **\>**</span><span class="sxs-lookup"><span data-stu-id="84aaa-347">**Break down by: Policy type** and **View data by: Email \> Phish** or **View data by: Email \> Malware**: The following information is shown:</span></span>
-
-  - <span data-ttu-id="84aaa-348">**Skydd mot skadlig programvara**</span><span class="sxs-lookup"><span data-stu-id="84aaa-348">**Anti-malware**</span></span>
-  - <span data-ttu-id="84aaa-349">**Valv 1**<sup></sup></span><span class="sxs-lookup"><span data-stu-id="84aaa-349">**Safe Attachments**<sup>1</sup></span></span>
-  - <span data-ttu-id="84aaa-350">**Anti-phish**</span><span class="sxs-lookup"><span data-stu-id="84aaa-350">**Anti-phish**</span></span>
-  - <span data-ttu-id="84aaa-351">**Skräppostskydd**</span><span class="sxs-lookup"><span data-stu-id="84aaa-351">**Anti-spam**</span></span>
-  - <span data-ttu-id="84aaa-352">**E-postflödesregel** (kallas även transportregel)</span><span class="sxs-lookup"><span data-stu-id="84aaa-352">**Mail flow rule** (also known as a transport rule)</span></span>
-  - <span data-ttu-id="84aaa-353">**Andra**</span><span class="sxs-lookup"><span data-stu-id="84aaa-353">**Others**</span></span>
-
-  ![Vy av principtyp för nätfiske i statusrapporten för skydd mot hot](../../media/threat-protection-status-report-phishing-policy-type-view.png)
-
-- <span data-ttu-id="84aaa-355">**Dela upp efter: Leveransstatus** och **Visa data efter: E-postfras \>** eller Visa data efter: Skadlig e-post: Följande information visas: **\>**</span><span class="sxs-lookup"><span data-stu-id="84aaa-355">**Break down by: Delivery status** and **View data by: Email \> Phish** or **View data by: Email \> Malware**: The following information is shown:</span></span>
-
-  - <span data-ttu-id="84aaa-356">**Leveransen misslyckades**</span><span class="sxs-lookup"><span data-stu-id="84aaa-356">**Delivery failed**</span></span>
-  - <span data-ttu-id="84aaa-357">**Nedsnad**</span><span class="sxs-lookup"><span data-stu-id="84aaa-357">**Dropped**</span></span>
-  - <span data-ttu-id="84aaa-358">**Vidarebefordrad**</span><span class="sxs-lookup"><span data-stu-id="84aaa-358">**Forwarded**</span></span>
-  - <span data-ttu-id="84aaa-359">**Värdpostlåda: Anpassad mapp**</span><span class="sxs-lookup"><span data-stu-id="84aaa-359">**Hosted mailbox: Custom folder**</span></span>
-  - <span data-ttu-id="84aaa-360">**Värdpostlåda: Borttagna objekt**</span><span class="sxs-lookup"><span data-stu-id="84aaa-360">**Hosted mailbox: Deleted items**</span></span>
-  - <span data-ttu-id="84aaa-361">**Värdpostlåda: Inkorgen**</span><span class="sxs-lookup"><span data-stu-id="84aaa-361">**Hosted mailbox: Inbox**</span></span>
-  - <span data-ttu-id="84aaa-362">**Värdpostlåda: Skräppost**</span><span class="sxs-lookup"><span data-stu-id="84aaa-362">**Hosted mailbox: Junk**</span></span>
-  - <span data-ttu-id="84aaa-363">**Lokal server: Levererad**</span><span class="sxs-lookup"><span data-stu-id="84aaa-363">**On-premises server: Delivered**</span></span>
-  - <span data-ttu-id="84aaa-364">**Karantän**</span><span class="sxs-lookup"><span data-stu-id="84aaa-364">**Quarantine**</span></span>
-
-  ![Vyn Leveransstatus för nätfiskemeddelande i statusrapporten för skydd mot hot](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
-
-<span data-ttu-id="84aaa-366"><sup>1</sup> Defender för Office 365 endast</span><span class="sxs-lookup"><span data-stu-id="84aaa-366"><sup>1</sup> Defender for Office 365 only</span></span>
-
-<span data-ttu-id="84aaa-367"><sup>ZAP</sup> (Zero-hour auto purge) är inte tillgängligt i fristående EOP (det fungerar bara i Exchange Online postlådor).</span><span class="sxs-lookup"><span data-stu-id="84aaa-367"><sup>2</sup> Zero-hour auto purge (ZAP) isn't available in standalone EOP (it only works in Exchange Online mailboxes).</span></span>
-
-<span data-ttu-id="84aaa-368">Om du klickar **på** Filter beror de tillgängliga filtren på det diagram du tittar på:</span><span class="sxs-lookup"><span data-stu-id="84aaa-368">If you click **Filters**, the filters available depends on the chart you were looking at:</span></span>
-
-- <span data-ttu-id="84aaa-369">För **Visa data efter: Skadlig \>** programvara för  innehåll kan du ändra rapporten efter startdatum **och** slutdatum samt värdet **för Identifiering.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-369">For **View data by: Content \> Malware**, you can modify the report by **Start date** and **End date**, and the **Detection** value.</span></span>
-
-- <span data-ttu-id="84aaa-370">För **Visa data efter: Åsidosättning av** meddelande , kan du ändra rapporten med följande filter:</span><span class="sxs-lookup"><span data-stu-id="84aaa-370">For **View data by: Message Override**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="84aaa-371">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-371">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="84aaa-372">**Åsidosätt orsak**</span><span class="sxs-lookup"><span data-stu-id="84aaa-372">**Override Reason**</span></span>
-  - <span data-ttu-id="84aaa-373">**Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton).</span><span class="sxs-lookup"><span data-stu-id="84aaa-373">**Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts).</span></span> <span data-ttu-id="84aaa-374">Mer information om användartaggar finns i [Användartaggar.](user-tags.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-374">For more information about user tags, see [User tags](user-tags.md).</span></span>
-  - <span data-ttu-id="84aaa-375">**Domän**</span><span class="sxs-lookup"><span data-stu-id="84aaa-375">**Domain**</span></span>
-
-- <span data-ttu-id="84aaa-376">För alla andra vyer kan du ändra rapporten med följande filter:</span><span class="sxs-lookup"><span data-stu-id="84aaa-376">For all other views, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="84aaa-377">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-377">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="84aaa-378">**Identifiering**</span><span class="sxs-lookup"><span data-stu-id="84aaa-378">**Detection**</span></span>
-  - <span data-ttu-id="84aaa-379">**Skyddad av**: **ATP** eller **EOP**</span><span class="sxs-lookup"><span data-stu-id="84aaa-379">**Protected by**: **ATP** or **EOP**</span></span>
-  - <span data-ttu-id="84aaa-380">**Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton).</span><span class="sxs-lookup"><span data-stu-id="84aaa-380">**Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts).</span></span> <span data-ttu-id="84aaa-381">Mer information om användartaggar finns i [Användartaggar.](user-tags.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-381">For more information about user tags, see [User tags](user-tags.md).</span></span>
-  - <span data-ttu-id="84aaa-382">**Domän**</span><span class="sxs-lookup"><span data-stu-id="84aaa-382">**Domain**</span></span>
-
-### <a name="details-table-view-for-the-threat-protection-status-report"></a><span data-ttu-id="84aaa-383">Detaljtabellvy för rapporten om skydd mot hot</span><span class="sxs-lookup"><span data-stu-id="84aaa-383">Details table view for the Threat protection status report</span></span>
-
-<span data-ttu-id="84aaa-384">Om du **klickar på Visa** informationstabell beror den information som visas på det diagram som du tittar på:</span><span class="sxs-lookup"><span data-stu-id="84aaa-384">If you click **View details table**, the information that's shown depends on the chart you were looking at:</span></span>
-
-- <span data-ttu-id="84aaa-385">**Visa data efter: Översikt:** **Tabellknappen Ingen tabellvyinformation** är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="84aaa-385">**View data by: Overview**: No **View details table** button is available.</span></span>
-
-- <span data-ttu-id="84aaa-386">**Visa data efter: Innehåll \> Skadlig programvara:**</span><span class="sxs-lookup"><span data-stu-id="84aaa-386">**View data by: Content \> Malware**:</span></span>
-
-  - <span data-ttu-id="84aaa-387">**Datum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-387">**Date**</span></span>
-  - <span data-ttu-id="84aaa-388">**Plats**</span><span class="sxs-lookup"><span data-stu-id="84aaa-388">**Location**</span></span>
-  - <span data-ttu-id="84aaa-389">**Riktad av**</span><span class="sxs-lookup"><span data-stu-id="84aaa-389">**Directed by**</span></span>
-  - <span data-ttu-id="84aaa-390">**Namn på skadlig programvara**</span><span class="sxs-lookup"><span data-stu-id="84aaa-390">**Malware name**</span></span>
-
-  <span data-ttu-id="84aaa-391">Om du klickar **på** Filter i den här vyn kan du ändra rapporten **efter Startdatum** **och Slutdatum** och värdet **Identifiering.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-391">If you click **Filters** in this view, you can modify the report by **Start date** and **End date**, and the **Detection** value.</span></span>
-
-- <span data-ttu-id="84aaa-392">**Visa data efter: Åsidosättning av meddelande:**</span><span class="sxs-lookup"><span data-stu-id="84aaa-392">**View data by: Message Override**:</span></span>
-
-  - <span data-ttu-id="84aaa-393">**Datum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-393">**Date**</span></span>
-  - <span data-ttu-id="84aaa-394">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="84aaa-394">**Subject**</span></span>
-  - <span data-ttu-id="84aaa-395">**Avsändare**</span><span class="sxs-lookup"><span data-stu-id="84aaa-395">**Sender**</span></span>
-  - <span data-ttu-id="84aaa-396">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="84aaa-396">**Recipients**</span></span>
-  - <span data-ttu-id="84aaa-397">**Upptäckt av**</span><span class="sxs-lookup"><span data-stu-id="84aaa-397">**Detected by**</span></span>
-  - <span data-ttu-id="84aaa-398">**Åsidosätt orsak**</span><span class="sxs-lookup"><span data-stu-id="84aaa-398">**Override Reason**</span></span>
-  - <span data-ttu-id="84aaa-399">**Källan till en kompromett**</span><span class="sxs-lookup"><span data-stu-id="84aaa-399">**Source of Compromise**</span></span>
-  - <span data-ttu-id="84aaa-400">**Taggar**</span><span class="sxs-lookup"><span data-stu-id="84aaa-400">**Tags**</span></span>
-
-  <span data-ttu-id="84aaa-401">Om du **klickar på** Filter i den här vyn kan du ändra rapporten med följande filter:</span><span class="sxs-lookup"><span data-stu-id="84aaa-401">If you click **Filters** in this view, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="84aaa-402">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-402">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="84aaa-403">**Åsidosätt orsak**</span><span class="sxs-lookup"><span data-stu-id="84aaa-403">**Override Reason**</span></span>
-  - <span data-ttu-id="84aaa-404">**Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton).</span><span class="sxs-lookup"><span data-stu-id="84aaa-404">**Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts).</span></span> <span data-ttu-id="84aaa-405">Mer information om användartaggar finns i [Användartaggar.](user-tags.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-405">For more information about user tags, see [User tags](user-tags.md).</span></span>
-  - <span data-ttu-id="84aaa-406">**Domän**</span><span class="sxs-lookup"><span data-stu-id="84aaa-406">**Domain**</span></span>
-  - <span data-ttu-id="84aaa-407">**Mottagare** (observera att den här filtrerbara egenskapen endast är tillgänglig i detaljtabellvyn)</span><span class="sxs-lookup"><span data-stu-id="84aaa-407">**Recipients** (Note that this filterable property is only available in the details table view)</span></span>
-
-- <span data-ttu-id="84aaa-408">Alla andra diagram:</span><span class="sxs-lookup"><span data-stu-id="84aaa-408">All other charts:</span></span>
-
-  - <span data-ttu-id="84aaa-409">**Datum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-409">**Date**</span></span>
-  - <span data-ttu-id="84aaa-410">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="84aaa-410">**Subject**</span></span>
-  - <span data-ttu-id="84aaa-411">**Avsändare**</span><span class="sxs-lookup"><span data-stu-id="84aaa-411">**Sender**</span></span>
-  - <span data-ttu-id="84aaa-412">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="84aaa-412">**Recipients**</span></span>
-  - <span data-ttu-id="84aaa-413">**Upptäckt av**</span><span class="sxs-lookup"><span data-stu-id="84aaa-413">**Detected by**</span></span>
-  - <span data-ttu-id="84aaa-414">**Leveransstatus**</span><span class="sxs-lookup"><span data-stu-id="84aaa-414">**Delivery Status**</span></span>
-  - <span data-ttu-id="84aaa-415">**Källan till en kompromett**</span><span class="sxs-lookup"><span data-stu-id="84aaa-415">**Source of Compromise**</span></span>
-  - <span data-ttu-id="84aaa-416">**Taggar**</span><span class="sxs-lookup"><span data-stu-id="84aaa-416">**Tags**</span></span>
-
-  <span data-ttu-id="84aaa-417">Om du **klickar på** Filter kan du ändra rapporten med följande filter:</span><span class="sxs-lookup"><span data-stu-id="84aaa-417">If you click **Filters**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="84aaa-418">**Startdatum och** **slutdatum**</span><span class="sxs-lookup"><span data-stu-id="84aaa-418">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="84aaa-419">**Identifiering**</span><span class="sxs-lookup"><span data-stu-id="84aaa-419">**Detection**</span></span>
-  - <span data-ttu-id="84aaa-420">**Skyddad av**: **Defender för Office 365** eller **EOP**</span><span class="sxs-lookup"><span data-stu-id="84aaa-420">**Protected by**: **Defender for Office 365** or **EOP**</span></span>
-  - <span data-ttu-id="84aaa-421">**Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton).</span><span class="sxs-lookup"><span data-stu-id="84aaa-421">**Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts).</span></span> <span data-ttu-id="84aaa-422">Mer information om användartaggar finns i [Användartaggar.](user-tags.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-422">For more information about user tags, see [User tags](user-tags.md).</span></span>
-  - <span data-ttu-id="84aaa-423">**Domän**</span><span class="sxs-lookup"><span data-stu-id="84aaa-423">**Domain**</span></span>
-  - <span data-ttu-id="84aaa-424">**Mottagare** (observera att den här filtrerbara egenskapen endast är tillgänglig i detaljtabellvyn)</span><span class="sxs-lookup"><span data-stu-id="84aaa-424">**Recipients** (Note that this filterable property is only available in the details table view)</span></span>
-
-## <a name="top-malware-report"></a><span data-ttu-id="84aaa-425">Den viktigaste rapporten om skadlig programvara</span><span class="sxs-lookup"><span data-stu-id="84aaa-425">Top malware report</span></span>
-
-<span data-ttu-id="84aaa-426">Den **viktigaste rapporten om** skadlig programvara visar de olika typer av skadlig programvara som identifierats av skydd mot skadlig programvara i [EOP.](anti-malware-protection.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-426">The **Top malware** report shows the various kinds of malware that was detected by [anti-malware protection in EOP](anti-malware-protection.md).</span></span>
-
-<span data-ttu-id="84aaa-427">Om du vill visa rapporten öppnar du [Microsoft 365 Defender-portalen](https://security.microsoft.com), går till Rapporterar e-& samarbete  \> **E&** och klickar på Visa information under Mest \>  skadlig  **programvara.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-427">To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** and click **View details** under **Top malware**.</span></span> <span data-ttu-id="84aaa-428">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/TopMalware> .</span><span class="sxs-lookup"><span data-stu-id="84aaa-428">To go directly to the report, open <https://security.microsoft.com/reports/TopMalware>.</span></span>
-
-![Populära widget för skadlig programvara på instrumentpanelen Rapporter](../../media/top-malware-report-widget.png)
-
-<span data-ttu-id="84aaa-430">När du hovrar över en kil i cirkeldiagrammet kan du se namnet på en typ av skadlig programvara och hur många meddelanden som identifierats som har den skadlig kod.</span><span class="sxs-lookup"><span data-stu-id="84aaa-430">When you hover over a wedge in the pie chart, you can see the name of a kind of malware and how many messages were detected as having that malware.</span></span>
+- <span data-ttu-id="9ada3-430">**URL-skadligt** <sup>\*</sup> rykte: Skadligt URL-rykte skapat av Defender för Office 365 av detonationer i andra Microsoft 365 kunder.</span><span class="sxs-lookup"><span data-stu-id="9ada3-430">**URL malicious reputation**<sup>\*</sup>: Malicious URL reputation generated from Defender for Office 365 detonations in other Microsoft 365 customers.</span></span>
+- <span data-ttu-id="9ada3-431">**Avancerat filter:** Nätfiskesignaler baserade på maskininlärning.</span><span class="sxs-lookup"><span data-stu-id="9ada3-431">**Advanced filter**: Phishing signals based on machine learning.</span></span>
+- <span data-ttu-id="9ada3-432">**Allmänt filter:** Nätfiskesignaler baserade på analysregler.</span><span class="sxs-lookup"><span data-stu-id="9ada3-432">**General filter**: Phishing signals based on analyst rules.</span></span>
+- <span data-ttu-id="9ada3-433">**Förfalskning av årsorganisation**: Avsändaren försöker kapa mottagardomänen.</span><span class="sxs-lookup"><span data-stu-id="9ada3-433">**Spoof intra-org**: Sender is trying to spoof the recipient domain.</span></span>
+- <span data-ttu-id="9ada3-434">**Förfalskning av extern domän**: Avsändaren försöker kapa en annan domän.</span><span class="sxs-lookup"><span data-stu-id="9ada3-434">**Spoof external domain**: Sender is trying to spoof some other domain.</span></span>
+- <span data-ttu-id="9ada3-435">**Förfalskning DMARC**: DMARC-autentiseringsfel på meddelanden.</span><span class="sxs-lookup"><span data-stu-id="9ada3-435">**Spoof DMARC**: DMARC authentication failure on messages.</span></span>
+- <span data-ttu-id="9ada3-436">**Personifieringsmärke**: Personifiering av välkända varumärken baserat på avsändare.</span><span class="sxs-lookup"><span data-stu-id="9ada3-436">**Impersonation brand**: Impersonation of well-known brands based on senders.</span></span>
+- <span data-ttu-id="9ada3-437">**Identifiering av blandad analys**</span><span class="sxs-lookup"><span data-stu-id="9ada3-437">**Mixed analysis detection**</span></span>
+- <span data-ttu-id="9ada3-438">**Beryknat fil**</span><span class="sxs-lookup"><span data-stu-id="9ada3-438">**File reputation**</span></span>
+- <span data-ttu-id="9ada3-439">**Fingeravtrycksmatchning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-439">**Fingerprint matching**</span></span>
+- <span data-ttu-id="9ada3-440">**URL-detonationsrekt**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-440">**URL detonation reputation**<sup>\*</sup></span></span>
+- <span data-ttu-id="9ada3-441">**URL-detonation**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-441">**URL detonation**<sup>\*</sup></span></span>
+- <span data-ttu-id="9ada3-442">**Personifieringsanvändare**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-442">**Impersonation user**<sup>\*</sup></span></span>
+- <span data-ttu-id="9ada3-443">**Personifieringsdomän:** <sup>\*</sup> Personifiering av domäner som kunden äger eller definierar.</span><span class="sxs-lookup"><span data-stu-id="9ada3-443">**Impersonation domain**<sup>\*</sup>: Impersonation of domains that the customer owns or defines.</span></span>
+- <span data-ttu-id="9ada3-444">**Postlådeintelligens** <sup>\*</sup> : Personifiering av användare som definierats av administratören eller som lärt sig via postlådeintelligens.</span><span class="sxs-lookup"><span data-stu-id="9ada3-444">**Mailbox intelligence impersonation**<sup>\*</sup>: Impersonation of users defined by admin or learned through mailbox intelligence.</span></span>
+- <span data-ttu-id="9ada3-445">**Fil detonation**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-445">**File detonation**<sup>\*</sup></span></span>
+- <span data-ttu-id="9ada3-446">**Kampanj**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-446">**Campaign**<sup>\*</sup></span></span>
+
+<span data-ttu-id="9ada3-447">I informationstabellen under diagrammet finns följande information tillgänglig:</span><span class="sxs-lookup"><span data-stu-id="9ada3-447">In the details table below the chart, the following information is available:</span></span>
+
+- <span data-ttu-id="9ada3-448">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-448">**Date**</span></span>
+- <span data-ttu-id="9ada3-449">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="9ada3-449">**Subject**</span></span>
+- <span data-ttu-id="9ada3-450">**Avsändare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-450">**Sender**</span></span>
+- <span data-ttu-id="9ada3-451">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-451">**Recipients**</span></span>
+- <span data-ttu-id="9ada3-452">**Upptäckt av**</span><span class="sxs-lookup"><span data-stu-id="9ada3-452">**Detected by**</span></span>
+- <span data-ttu-id="9ada3-453">**Leveransstatus**</span><span class="sxs-lookup"><span data-stu-id="9ada3-453">**Delivery Status**</span></span>
+- <span data-ttu-id="9ada3-454">**Källan till en kompromett**</span><span class="sxs-lookup"><span data-stu-id="9ada3-454">**Source of Compromise**</span></span>
+- <span data-ttu-id="9ada3-455">**Taggar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-455">**Tags**</span></span>
+
+<span data-ttu-id="9ada3-456">Om du **klickar på** Filter är följande filter tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="9ada3-456">If you click **Filter**, the following filters are available:</span></span>
+
+- <span data-ttu-id="9ada3-457">**Datum:** **Startdatum** **och slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-457">**Date**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-458">**Identifiering**</span><span class="sxs-lookup"><span data-stu-id="9ada3-458">**Detection**</span></span>
+- <span data-ttu-id="9ada3-459">**Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**</span><span class="sxs-lookup"><span data-stu-id="9ada3-459">**Protected by**: **MDO** (Defender for Office 365) or **EOP**</span></span>
+- <span data-ttu-id="9ada3-460">**Riktning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-460">**Direction**</span></span>
+- <span data-ttu-id="9ada3-461">**Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton).</span><span class="sxs-lookup"><span data-stu-id="9ada3-461">**Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts).</span></span> <span data-ttu-id="9ada3-462">Mer information om användartaggar finns i [Användartaggar.](user-tags.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-462">For more information about user tags, see [User tags](user-tags.md).</span></span>
+- <span data-ttu-id="9ada3-463">**Domän**</span><span class="sxs-lookup"><span data-stu-id="9ada3-463">**Domain**</span></span>
+- <span data-ttu-id="9ada3-464">**Typ av princip**</span><span class="sxs-lookup"><span data-stu-id="9ada3-464">**Policy type**</span></span>
+- <span data-ttu-id="9ada3-465">**Principnamn** (endast informationstabell)</span><span class="sxs-lookup"><span data-stu-id="9ada3-465">**Policy name** (details table only)</span></span>
+- <span data-ttu-id="9ada3-466">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-466">**Recipients**</span></span>
+
+<span data-ttu-id="9ada3-467">När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-467">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
+
+### <a name="view-data-by-email--malware-and-chart-breakdown-by-detection-technology"></a><span data-ttu-id="9ada3-468">Visa data efter skadlig programvara \> för e-post och diagramfördelning med identifieringsteknik</span><span class="sxs-lookup"><span data-stu-id="9ada3-468">View data by Email \> Malware and Chart breakdown by Detection Technology</span></span>
+
+![Vy för identifieringsteknik för skadlig programvara i statusrapporten för skydd mot hot](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+
+<span data-ttu-id="9ada3-470">I vyn **Visa data efter \> e-post** **skadlig** programvara och diagram som ligger i detalj i vyn Identifieringsteknik visas följande information i diagrammet:</span><span class="sxs-lookup"><span data-stu-id="9ada3-470">In the **View data by Email \> Malware** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:</span></span>
+
+- <span data-ttu-id="9ada3-471">**Detonation för filen:** <sup>\*</sup> Identifiering av Valv bifogade filer.</span><span class="sxs-lookup"><span data-stu-id="9ada3-471">**File detonation**<sup>\*</sup>: Detection by Safe Attachments.</span></span>
+- <span data-ttu-id="9ada3-472">**Rykte för fil detonation** <sup>\*</sup> : Allt skadligt filrynde som genererats av Defender för Office 365 detonationer.</span><span class="sxs-lookup"><span data-stu-id="9ada3-472">**File detonation reputation**<sup>\*</sup>: All malicious file reputation generated by Defender for Office 365 detonations.</span></span>
+- <span data-ttu-id="9ada3-473">**Beryknat fil**</span><span class="sxs-lookup"><span data-stu-id="9ada3-473">**File reputation**</span></span>
+- <span data-ttu-id="9ada3-474">**Motor mot skadlig programvara:** <sup>\*</sup> Identifiering från sökmotorer mot skadlig programvara.</span><span class="sxs-lookup"><span data-stu-id="9ada3-474">**Anti-malware engine**<sup>\*</sup>: Detection from anti-malware engines.</span></span>
+- <span data-ttu-id="9ada3-475">**Filtypsblockering mot skadlig programvara:** Det här är e-postmeddelanden som filtrerats bort på grund av vilken typ av skadlig fil som identifieras i meddelandet.</span><span class="sxs-lookup"><span data-stu-id="9ada3-475">**Anti-malware policy file type block**: These are email messages filtered out due to the type of malicious file identified in the message.</span></span>
+- <span data-ttu-id="9ada3-476">**URL-skadligt rykte**</span><span class="sxs-lookup"><span data-stu-id="9ada3-476">**URL malicious reputation**</span></span>
+- <span data-ttu-id="9ada3-477">**URL-detonation**</span><span class="sxs-lookup"><span data-stu-id="9ada3-477">**URL detonation**</span></span>
+- <span data-ttu-id="9ada3-478">**URL-detonationsrekt**</span><span class="sxs-lookup"><span data-stu-id="9ada3-478">**URL detonation reputation**</span></span>
+- <span data-ttu-id="9ada3-479">**Kampanj**</span><span class="sxs-lookup"><span data-stu-id="9ada3-479">**Campaign**</span></span>
+
+<span data-ttu-id="9ada3-480">I informationstabellen under diagrammet finns följande information tillgänglig:</span><span class="sxs-lookup"><span data-stu-id="9ada3-480">In the details table below the chart, the following information is available:</span></span>
+
+- <span data-ttu-id="9ada3-481">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-481">**Date**</span></span>
+- <span data-ttu-id="9ada3-482">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="9ada3-482">**Subject**</span></span>
+- <span data-ttu-id="9ada3-483">**Avsändare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-483">**Sender**</span></span>
+- <span data-ttu-id="9ada3-484">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-484">**Recipients**</span></span>
+- <span data-ttu-id="9ada3-485">**Upptäckt av**</span><span class="sxs-lookup"><span data-stu-id="9ada3-485">**Detected by**</span></span>
+- <span data-ttu-id="9ada3-486">**Leveransstatus**</span><span class="sxs-lookup"><span data-stu-id="9ada3-486">**Delivery Status**</span></span>
+- <span data-ttu-id="9ada3-487">**Källan till en kompromett**</span><span class="sxs-lookup"><span data-stu-id="9ada3-487">**Source of Compromise**</span></span>
+- <span data-ttu-id="9ada3-488">**Taggar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-488">**Tags**</span></span>
+
+<span data-ttu-id="9ada3-489">Om du **klickar på** Filter är följande filter tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="9ada3-489">If you click **Filter**, the following filters are available:</span></span>
+
+- <span data-ttu-id="9ada3-490">**Datum:** **Startdatum** **och slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-490">**Date**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-491">**Identifiering**</span><span class="sxs-lookup"><span data-stu-id="9ada3-491">**Detection**</span></span>
+- <span data-ttu-id="9ada3-492">**Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**</span><span class="sxs-lookup"><span data-stu-id="9ada3-492">**Protected by**: **MDO** (Defender for Office 365) or **EOP**</span></span>
+- <span data-ttu-id="9ada3-493">**Riktning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-493">**Direction**</span></span>
+- <span data-ttu-id="9ada3-494">**Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton).</span><span class="sxs-lookup"><span data-stu-id="9ada3-494">**Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts).</span></span> <span data-ttu-id="9ada3-495">Mer information om användartaggar finns i [Användartaggar.](user-tags.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-495">For more information about user tags, see [User tags](user-tags.md).</span></span>
+- <span data-ttu-id="9ada3-496">**Domän**</span><span class="sxs-lookup"><span data-stu-id="9ada3-496">**Domain**</span></span>
+- <span data-ttu-id="9ada3-497">**Typ av princip**</span><span class="sxs-lookup"><span data-stu-id="9ada3-497">**Policy type**</span></span>
+- <span data-ttu-id="9ada3-498">**Principnamn** (endast informationstabell)</span><span class="sxs-lookup"><span data-stu-id="9ada3-498">**Policy name** (details table only)</span></span>
+- <span data-ttu-id="9ada3-499">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-499">**Recipients**</span></span>
+
+<span data-ttu-id="9ada3-500">När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-500">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
+
+### <a name="chart-breakdown-by-policy-type-and-view-data-by-email--phish-or-view-data-by-email--malware"></a><span data-ttu-id="9ada3-501">Diagramfördelning efter typ av princip och Visa data efter e-post \> phish eller Visa data efter e-postprogram \></span><span class="sxs-lookup"><span data-stu-id="9ada3-501">Chart breakdown by Policy type and View data by Email \> Phish or View data by Email \> Malware</span></span>
+
+![Vy av principtyp för nätfiskemeddelande eller skadlig e-post i statusrapporten för skydd mot hot](../../media/threat-protection-status-report-phishing-policy-type-view.png)
+
+<span data-ttu-id="9ada3-503">I **diagramfördelningen efter typ av princip** och Visa data efter e-postfras eller **Visa data \>** efter e-post för skadlig programvara visas följande information i diagrammen: **\>**</span><span class="sxs-lookup"><span data-stu-id="9ada3-503">In the **Chart breakdown by Policy type** and **View data by Email \> Phish** or **View data by Email \> Malware** views, the following information is shown in the charts:</span></span>
+
+- <span data-ttu-id="9ada3-504">**Skydd mot skadlig programvara**</span><span class="sxs-lookup"><span data-stu-id="9ada3-504">**Anti-malware**</span></span>
+- <span data-ttu-id="9ada3-505">**Valv Bifogade filer**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="9ada3-505">**Safe Attachments**<sup>\*</sup></span></span>
+- <span data-ttu-id="9ada3-506">**Anti-phish**</span><span class="sxs-lookup"><span data-stu-id="9ada3-506">**Anti-phish**</span></span>
+- <span data-ttu-id="9ada3-507">**Skräppostskydd**</span><span class="sxs-lookup"><span data-stu-id="9ada3-507">**Anti-spam**</span></span>
+- <span data-ttu-id="9ada3-508">**E-postflödesregel** (kallas även transportregel)</span><span class="sxs-lookup"><span data-stu-id="9ada3-508">**Mail flow rule** (also known as a transport rule)</span></span>
+- <span data-ttu-id="9ada3-509">**Andra**</span><span class="sxs-lookup"><span data-stu-id="9ada3-509">**Others**</span></span>
+
+<span data-ttu-id="9ada3-510">I informationstabellen under diagrammet finns följande information tillgänglig:</span><span class="sxs-lookup"><span data-stu-id="9ada3-510">In the details table below the chart, the following information is available:</span></span>
+
+- <span data-ttu-id="9ada3-511">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-511">**Date**</span></span>
+- <span data-ttu-id="9ada3-512">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="9ada3-512">**Subject**</span></span>
+- <span data-ttu-id="9ada3-513">**Avsändare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-513">**Sender**</span></span>
+- <span data-ttu-id="9ada3-514">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-514">**Recipients**</span></span>
+- <span data-ttu-id="9ada3-515">**Upptäckt av**</span><span class="sxs-lookup"><span data-stu-id="9ada3-515">**Detected by**</span></span>
+- <span data-ttu-id="9ada3-516">**Leveransstatus**</span><span class="sxs-lookup"><span data-stu-id="9ada3-516">**Delivery Status**</span></span>
+- <span data-ttu-id="9ada3-517">**Källan till en kompromett**</span><span class="sxs-lookup"><span data-stu-id="9ada3-517">**Source of Compromise**</span></span>
+- <span data-ttu-id="9ada3-518">**Taggar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-518">**Tags**</span></span>
+
+<span data-ttu-id="9ada3-519">Om du **klickar på** Filter är följande filter tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="9ada3-519">If you click **Filter**, the following filters are available:</span></span>
+
+- <span data-ttu-id="9ada3-520">**Datum:** **Startdatum** **och slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-520">**Date**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-521">**Identifiering**</span><span class="sxs-lookup"><span data-stu-id="9ada3-521">**Detection**</span></span>
+- <span data-ttu-id="9ada3-522">**Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**</span><span class="sxs-lookup"><span data-stu-id="9ada3-522">**Protected by**: **MDO** (Defender for Office 365) or **EOP**</span></span>
+- <span data-ttu-id="9ada3-523">**Riktning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-523">**Direction**</span></span>
+- <span data-ttu-id="9ada3-524">**Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton).</span><span class="sxs-lookup"><span data-stu-id="9ada3-524">**Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts).</span></span> <span data-ttu-id="9ada3-525">Mer information om användartaggar finns i [Användartaggar.](user-tags.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-525">For more information about user tags, see [User tags](user-tags.md).</span></span>
+- <span data-ttu-id="9ada3-526">**Domän**</span><span class="sxs-lookup"><span data-stu-id="9ada3-526">**Domain**</span></span>
+- <span data-ttu-id="9ada3-527">**Typ av princip**</span><span class="sxs-lookup"><span data-stu-id="9ada3-527">**Policy type**</span></span>
+- <span data-ttu-id="9ada3-528">**Principnamn** (endast informationstabell)</span><span class="sxs-lookup"><span data-stu-id="9ada3-528">**Policy name** (details table only)</span></span>
+- <span data-ttu-id="9ada3-529">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-529">**Recipients**</span></span>
+
+<span data-ttu-id="9ada3-530">När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-530">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
+
+### <a name="chart-breakdown-by-delivery-status-and-view-data-by-email--phish-or-view-data-by-email--malware"></a><span data-ttu-id="9ada3-531">Diagram efter leveransstatus och Visa data efter e-post \> phish eller Visa data efter e-post skadlig \> programvara</span><span class="sxs-lookup"><span data-stu-id="9ada3-531">Chart breakdown by Delivery status and View data by Email \> Phish or View data by Email \> Malware</span></span>
+
+![Leveransstatusvy för nätfiskemeddelande och skadlig e-post i statusrapporten för skydd mot hot](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
+
+<span data-ttu-id="9ada3-533">I **diagramfördelningen efter leveransstatus** och Visa data efter e-postfras eller **Visa data \>** efter e-post för skadlig programvara visas följande information i diagrammen: **\>**</span><span class="sxs-lookup"><span data-stu-id="9ada3-533">In the **Chart breakdown by Delivery status** and **View data by Email \> Phish** or **View data by Email \> Malware** views, the following information is shown in the charts:</span></span>
+
+- <span data-ttu-id="9ada3-534">**Värdpostlåda: Inkorgen**</span><span class="sxs-lookup"><span data-stu-id="9ada3-534">**Hosted mailbox: Inbox**</span></span>
+- <span data-ttu-id="9ada3-535">**Värdpostlåda: Skräppost**</span><span class="sxs-lookup"><span data-stu-id="9ada3-535">**Hosted mailbox: Junk**</span></span>
+- <span data-ttu-id="9ada3-536">**Värdpostlåda: Anpassad mapp**</span><span class="sxs-lookup"><span data-stu-id="9ada3-536">**Hosted mailbox: Custom folder**</span></span>
+- <span data-ttu-id="9ada3-537">**Värdpostlåda: Borttagna objekt**</span><span class="sxs-lookup"><span data-stu-id="9ada3-537">**Hosted mailbox: Deleted items**</span></span>
+- <span data-ttu-id="9ada3-538">**Vidarebefordrad**</span><span class="sxs-lookup"><span data-stu-id="9ada3-538">**Forwarded**</span></span>
+- <span data-ttu-id="9ada3-539">**Lokal server: Levererad**</span><span class="sxs-lookup"><span data-stu-id="9ada3-539">**On-premises server: Delivered**</span></span>
+- <span data-ttu-id="9ada3-540">**Karantän**</span><span class="sxs-lookup"><span data-stu-id="9ada3-540">**Quarantine**</span></span>
+- <span data-ttu-id="9ada3-541">**Leveransen misslyckades**</span><span class="sxs-lookup"><span data-stu-id="9ada3-541">**Delivery failed**</span></span>
+- <span data-ttu-id="9ada3-542">**Nedsnad**</span><span class="sxs-lookup"><span data-stu-id="9ada3-542">**Dropped**</span></span>
+
+<span data-ttu-id="9ada3-543">I informationstabellen under diagrammet finns följande information tillgänglig:</span><span class="sxs-lookup"><span data-stu-id="9ada3-543">In the details table below the chart, the following information is available:</span></span>
+
+- <span data-ttu-id="9ada3-544">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-544">**Date**</span></span>
+- <span data-ttu-id="9ada3-545">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="9ada3-545">**Subject**</span></span>
+- <span data-ttu-id="9ada3-546">**Avsändare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-546">**Sender**</span></span>
+- <span data-ttu-id="9ada3-547">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-547">**Recipients**</span></span>
+- <span data-ttu-id="9ada3-548">**Upptäckt av**</span><span class="sxs-lookup"><span data-stu-id="9ada3-548">**Detected by**</span></span>
+- <span data-ttu-id="9ada3-549">**Leveransstatus**</span><span class="sxs-lookup"><span data-stu-id="9ada3-549">**Delivery Status**</span></span>
+- <span data-ttu-id="9ada3-550">**Källan till en kompromett**</span><span class="sxs-lookup"><span data-stu-id="9ada3-550">**Source of Compromise**</span></span>
+- <span data-ttu-id="9ada3-551">**Taggar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-551">**Tags**</span></span>
+
+<span data-ttu-id="9ada3-552">Om du **klickar på** Filter är följande filter tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="9ada3-552">If you click **Filter**, the following filters are available:</span></span>
+
+- <span data-ttu-id="9ada3-553">**Datum:** **Startdatum** **och slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-553">**Date**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-554">**Identifiering**</span><span class="sxs-lookup"><span data-stu-id="9ada3-554">**Detection**</span></span>
+- <span data-ttu-id="9ada3-555">**Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**</span><span class="sxs-lookup"><span data-stu-id="9ada3-555">**Protected by**: **MDO** (Defender for Office 365) or **EOP**</span></span>
+- <span data-ttu-id="9ada3-556">**Riktning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-556">**Direction**</span></span>
+- <span data-ttu-id="9ada3-557">**Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton).</span><span class="sxs-lookup"><span data-stu-id="9ada3-557">**Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts).</span></span> <span data-ttu-id="9ada3-558">Mer information om användartaggar finns i [Användartaggar.](user-tags.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-558">For more information about user tags, see [User tags](user-tags.md).</span></span>
+- <span data-ttu-id="9ada3-559">**Domän**</span><span class="sxs-lookup"><span data-stu-id="9ada3-559">**Domain**</span></span>
+- <span data-ttu-id="9ada3-560">**Typ av princip**</span><span class="sxs-lookup"><span data-stu-id="9ada3-560">**Policy type**</span></span>
+- <span data-ttu-id="9ada3-561">**Principnamn** (endast informationstabell)</span><span class="sxs-lookup"><span data-stu-id="9ada3-561">**Policy name** (details table only)</span></span>
+- <span data-ttu-id="9ada3-562">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-562">**Recipients**</span></span>
+
+<span data-ttu-id="9ada3-563">När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-563">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
+
+### <a name="view-data-by-content--malware"></a><span data-ttu-id="9ada3-564">Visa data efter skadlig programvara för \> innehåll</span><span class="sxs-lookup"><span data-stu-id="9ada3-564">View data by Content \> Malware</span></span>
+
+![Vyn För skadlig programvara för innehåll i statusrapporten för skydd mot hot](../../media/threat-protection-status-report-content-malware-view.png)
+
+<span data-ttu-id="9ada3-566">I vyn **Visa data efter skadlig \>** programvara för innehåll visas följande information i diagrammet för Microsoft Defender för Office 365 organisationer:</span><span class="sxs-lookup"><span data-stu-id="9ada3-566">In the **View data by Content \> Malware** view, the following information is shown in the chart for Microsoft Defender for Office 365 organizations:</span></span>
+
+- <span data-ttu-id="9ada3-567">**Motor mot skadlig programvara:** Skadliga filer som upptäckts i Sharepoint, OneDrive och Microsoft Teams av den [inbyggda virusidentifieringen i Microsoft 365.](virus-detection-in-spo.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-567">**Anti-malware engine**: Malicious files detected in Sharepoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](virus-detection-in-spo.md).</span></span>
+- <span data-ttu-id="9ada3-568">**Fildeonation:** Skadliga filer som upptäckts [Valv bifogade filer för SharePoint, OneDrive och Microsoft Teams](mdo-for-spo-odb-and-teams.md).</span><span class="sxs-lookup"><span data-stu-id="9ada3-568">**File detonation**: Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).</span></span>
+
+<span data-ttu-id="9ada3-569">I informationstabellen under diagrammet finns följande information tillgänglig:</span><span class="sxs-lookup"><span data-stu-id="9ada3-569">In the details table below the chart, the following information is available:</span></span>
+
+- <span data-ttu-id="9ada3-570">**Datum:** **Startdatum** **och slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-570">**Date**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-571">**Plats**</span><span class="sxs-lookup"><span data-stu-id="9ada3-571">**Location**</span></span>
+- <span data-ttu-id="9ada3-572">**Upptäckt av**</span><span class="sxs-lookup"><span data-stu-id="9ada3-572">**Detected by**</span></span>
+- <span data-ttu-id="9ada3-573">**Namn på skadlig programvara**</span><span class="sxs-lookup"><span data-stu-id="9ada3-573">**Malware name**</span></span>
+
+<span data-ttu-id="9ada3-574">Om du **klickar på** Filter är följande filter tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="9ada3-574">If you click **Filter**, the following filters are available:</span></span>
+
+- <span data-ttu-id="9ada3-575">**Datum:** **Startdatum** **och slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-575">**Date**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-576">**Identifiering:** **Motor mot skadlig programvara** eller **detonation av filer**</span><span class="sxs-lookup"><span data-stu-id="9ada3-576">**Detection**: **Anti-malware engine** or **File detonation**</span></span>
+
+<span data-ttu-id="9ada3-577">När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-577">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
+
+### <a name="view-data-by-system-override"></a><span data-ttu-id="9ada3-578">Visa data efter åsidosättning av system</span><span class="sxs-lookup"><span data-stu-id="9ada3-578">View data by System override</span></span>
+
+![Vy för åsidosättning av meddelande i rapporten om skydd mot hot](../../media/threat-protection-status-report-message-override-view.png)
+
+<span data-ttu-id="9ada3-580">I vyn **För visning av data efter** system, visas följande orsak till åsidosättning i diagrammet:</span><span class="sxs-lookup"><span data-stu-id="9ada3-580">In the **View data by System override** view, the following override reason information is shown in the chart:</span></span>
+
+- <span data-ttu-id="9ada3-581">**Lokal hoppa över**</span><span class="sxs-lookup"><span data-stu-id="9ada3-581">**On-premises skip**</span></span>
+- <span data-ttu-id="9ada3-582">**IP tillåt**</span><span class="sxs-lookup"><span data-stu-id="9ada3-582">**IP allow**</span></span>
+- <span data-ttu-id="9ada3-583">**Exchange för e-posttransport** (e-postflödesregel)</span><span class="sxs-lookup"><span data-stu-id="9ada3-583">**Exchange mail transport rule** (mail flow rule)</span></span>
+- <span data-ttu-id="9ada3-584">**Organisationen tillät avsändare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-584">**Organization allowed senders**</span></span>
+- <span data-ttu-id="9ada3-585">**Tillåtna domäner för organisationen**</span><span class="sxs-lookup"><span data-stu-id="9ada3-585">**Organization allowed domains**</span></span>
+- <span data-ttu-id="9ada3-586">**ZAP inte aktiverat**</span><span class="sxs-lookup"><span data-stu-id="9ada3-586">**ZAP not enabled**</span></span>
+- <span data-ttu-id="9ada3-587">**Mappen Skräppost är inte aktiverad**</span><span class="sxs-lookup"><span data-stu-id="9ada3-587">**Junk Mail folder not enabled**</span></span>
+- <span data-ttu-id="9ada3-588">**Användare Valv avsändare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-588">**User Safe Sender**</span></span>
+- <span data-ttu-id="9ada3-589">**User Valv Domain**</span><span class="sxs-lookup"><span data-stu-id="9ada3-589">**User Safe Domain**</span></span>
+
+<span data-ttu-id="9ada3-590">I informationstabellen under diagrammet finns följande information tillgänglig:</span><span class="sxs-lookup"><span data-stu-id="9ada3-590">In the details table below the chart, the following information is available:</span></span>
+
+- <span data-ttu-id="9ada3-591">**Datum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-591">**Date**</span></span>
+- <span data-ttu-id="9ada3-592">**Ämne**</span><span class="sxs-lookup"><span data-stu-id="9ada3-592">**Subject**</span></span>
+- <span data-ttu-id="9ada3-593">**Avsändare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-593">**Sender**</span></span>
+- <span data-ttu-id="9ada3-594">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-594">**Recipients**</span></span>
+- <span data-ttu-id="9ada3-595">**Upptäckt av**</span><span class="sxs-lookup"><span data-stu-id="9ada3-595">**Detected by**</span></span>
+- <span data-ttu-id="9ada3-596">**Leveransstatus**</span><span class="sxs-lookup"><span data-stu-id="9ada3-596">**Delivery Status**</span></span>
+- <span data-ttu-id="9ada3-597">**Källan till en kompromett**</span><span class="sxs-lookup"><span data-stu-id="9ada3-597">**Source of Compromise**</span></span>
+- <span data-ttu-id="9ada3-598">**Taggar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-598">**Tags**</span></span>
+
+<span data-ttu-id="9ada3-599">Om du **klickar på** Filter är följande filter tillgängliga:</span><span class="sxs-lookup"><span data-stu-id="9ada3-599">If you click **Filter**, the following filters are available:</span></span>
+
+- <span data-ttu-id="9ada3-600">**Datum:** **Startdatum** **och slutdatum**</span><span class="sxs-lookup"><span data-stu-id="9ada3-600">**Date**: **Start date** and **End date**</span></span>
+- <span data-ttu-id="9ada3-601">**Identifiering**</span><span class="sxs-lookup"><span data-stu-id="9ada3-601">**Detection**</span></span>
+- <span data-ttu-id="9ada3-602">**Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**</span><span class="sxs-lookup"><span data-stu-id="9ada3-602">**Protected by**: **MDO** (Defender for Office 365) or **EOP**</span></span>
+- <span data-ttu-id="9ada3-603">**Riktning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-603">**Direction**</span></span>
+- <span data-ttu-id="9ada3-604">**Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton).</span><span class="sxs-lookup"><span data-stu-id="9ada3-604">**Tag**: Filter the results by users or groups that have had the specified user tag applied (including priority accounts).</span></span> <span data-ttu-id="9ada3-605">Mer information om användartaggar finns i [Användartaggar.](user-tags.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-605">For more information about user tags, see [User tags](user-tags.md).</span></span>
+- <span data-ttu-id="9ada3-606">**Domän**</span><span class="sxs-lookup"><span data-stu-id="9ada3-606">**Domain**</span></span>
+- <span data-ttu-id="9ada3-607">**Typ av princip**</span><span class="sxs-lookup"><span data-stu-id="9ada3-607">**Policy type**</span></span>
+- <span data-ttu-id="9ada3-608">**Principnamn** (endast informationstabell)</span><span class="sxs-lookup"><span data-stu-id="9ada3-608">**Policy name** (details table only)</span></span>
+- <span data-ttu-id="9ada3-609">**Mottagare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-609">**Recipients**</span></span>
+
+<span data-ttu-id="9ada3-610">När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-610">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
+
+<span data-ttu-id="9ada3-611"><sup>\*</sup>Endast Defender Office 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9ada3-611"><sup>\*</sup> Defender for Office 365 only</span></span>
+
+## <a name="top-malware-report"></a><span data-ttu-id="9ada3-612">Den viktigaste rapporten om skadlig programvara</span><span class="sxs-lookup"><span data-stu-id="9ada3-612">Top malware report</span></span>
+
+<span data-ttu-id="9ada3-613">Den **viktigaste rapporten om** skadlig programvara visar de olika typer av skadlig programvara som identifierats av skydd mot skadlig programvara i [EOP.](anti-malware-protection.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-613">The **Top malware** report shows the various kinds of malware that was detected by [anti-malware protection in EOP](anti-malware-protection.md).</span></span>
+
+<span data-ttu-id="9ada3-614">Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-614">To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.</span></span> <span data-ttu-id="9ada3-615">Klicka **på Visa information** vid den översta skadlig **programvara.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-615">On **Top malware**, click **View details**.</span></span> <span data-ttu-id="9ada3-616">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/TopMalware> .</span><span class="sxs-lookup"><span data-stu-id="9ada3-616">To go directly to the report, open <https://security.microsoft.com/reports/TopMalware>.</span></span>
+
+![Populära widget för skadlig programvara på sidan & och samarbetsrapporter](../../media/top-malware-report-widget.png)
+
+<span data-ttu-id="9ada3-618">När du hovrar över en kil i cirkeldiagrammet kan du se namnet på en typ av skadlig programvara och hur många meddelanden som identifierats som har den skadlig kod.</span><span class="sxs-lookup"><span data-stu-id="9ada3-618">When you hover over a wedge in the pie chart, you can see the name of a kind of malware and how many messages were detected as having that malware.</span></span>
+
+<span data-ttu-id="9ada3-619">När du har **klickat på** Visa information visas en större version av cirkeldiagrammet på rapportsidan. I detaljtabellen under diagrammet visas följande information:</span><span class="sxs-lookup"><span data-stu-id="9ada3-619">After you click **View details**, a larger version of the pie chart is displayed on the report page.The details table below the chart shows the following information:</span></span>
+
+- <span data-ttu-id="9ada3-620">**Populära skadlig programvara**</span><span class="sxs-lookup"><span data-stu-id="9ada3-620">**Top malware**</span></span>
+- <span data-ttu-id="9ada3-621">**Antal**</span><span class="sxs-lookup"><span data-stu-id="9ada3-621">**Count**</span></span>
+
+<span data-ttu-id="9ada3-622">Om du klickar **på** Filter kan du ange ett datumintervall **med Startdatum** **och Slutdatum.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-622">If you click **Filter**, you can specify a date range with **Start date** and **End date**.</span></span>
 
 ![Den övre vyn för skadlig programvara](../../media/top-malware-report-view.png)
 
-<span data-ttu-id="84aaa-432">Om du **klickar på Visa informationstabell** visas följande information:</span><span class="sxs-lookup"><span data-stu-id="84aaa-432">If you click **View details table**, you can see the following details:</span></span>
+## <a name="url-threat-protection-report"></a><span data-ttu-id="9ada3-624">Rapport om skydd mot URL-hot</span><span class="sxs-lookup"><span data-stu-id="9ada3-624">URL threat protection report</span></span>
 
-- <span data-ttu-id="84aaa-433">**Populära skadlig programvara**</span><span class="sxs-lookup"><span data-stu-id="84aaa-433">**Top malware**</span></span>
-- <span data-ttu-id="84aaa-434">**Antal**</span><span class="sxs-lookup"><span data-stu-id="84aaa-434">**Count**</span></span>
+<span data-ttu-id="9ada3-625">Rapporten **om skydd mot URL-hot** är tillgänglig i Microsoft Defender för Office 365.</span><span class="sxs-lookup"><span data-stu-id="9ada3-625">The **URL threat protection report** is available in Microsoft Defender for Office 365.</span></span> <span data-ttu-id="9ada3-626">Mer information finns i Rapporten [om url-skydd mot hot.](view-reports-for-mdo.md#url-threat-protection-report)</span><span class="sxs-lookup"><span data-stu-id="9ada3-626">For more information, see [URL threat protection report](view-reports-for-mdo.md#url-threat-protection-report).</span></span>
 
-<span data-ttu-id="84aaa-435">Om du klickar **på** Filter i rapportvyn eller i detaljtabellvyn kan du ange ett datumintervall **med Startdatum** **och Slutdatum.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-435">If you click **Filters** in the report view or details table view, you can specify a date range with **Start date** and **End date**.</span></span>
-
-## <a name="url-threat-protection-report"></a><span data-ttu-id="84aaa-436">Rapport om skydd mot URL-hot</span><span class="sxs-lookup"><span data-stu-id="84aaa-436">URL threat protection report</span></span>
-
-<span data-ttu-id="84aaa-437">Rapporten **om skydd mot URL-hot** är tillgänglig i Microsoft Defender för Office 365.</span><span class="sxs-lookup"><span data-stu-id="84aaa-437">The **URL threat protection report** is available in Microsoft Defender for Office 365.</span></span> <span data-ttu-id="84aaa-438">Mer information finns i Rapporten [om url-skydd mot hot.](view-reports-for-mdo.md#url-threat-protection-report)</span><span class="sxs-lookup"><span data-stu-id="84aaa-438">For more information, see [URL threat protection report](view-reports-for-mdo.md#url-threat-protection-report).</span></span>
-
-## <a name="user-reported-messages-report"></a><span data-ttu-id="84aaa-439">Rapport över användarrapporterade meddelanden</span><span class="sxs-lookup"><span data-stu-id="84aaa-439">User reported messages report</span></span>
-
-<span data-ttu-id="84aaa-440">Rapporten **Om användarrapporter** visar information om e-postmeddelanden som användare har rapporterat som skräppost, nätfiskeförsök eller bra [e-post](enable-the-report-message-add-in.md) med hjälp av tilläggen Rapportmeddelande eller [Rapport nätfiske.](enable-the-report-phish-add-in.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-440">The **User reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](enable-the-report-message-add-in.md) or [The Report Phishing add-in](enable-the-report-phish-add-in.md).</span></span>
-
-<span data-ttu-id="84aaa-441">Information är tillgänglig för varje meddelande, inklusive leveransorsaken, ett sådant undantag från skräppostprincipen eller en e-postflödesregel som konfigurerats för din organisation.</span><span class="sxs-lookup"><span data-stu-id="84aaa-441">Details are available for each message, including the delivery reason, such a spam policy exception or mail flow rule configured for your organization.</span></span> <span data-ttu-id="84aaa-442">Om du vill visa information markerar du ett objekt i listan med användarrapporter och visar informationen på **flikarna Sammanfattning** **och** Information.</span><span class="sxs-lookup"><span data-stu-id="84aaa-442">To view details, select an item in the user-reports list, and then view the information on the **Summary** and **Details** tabs.</span></span>
-
-![Rapporten Över rapporterade meddelanden visar meddelanden som användare märkt som skräppost, inte skräppost eller nätfiskeförsök.](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
-
-<span data-ttu-id="84aaa-444">Du visar rapporten genom att gå [till Microsoft 365 Defender-portalen](https://security.microsoft.com)på & e-post och samarbete  \> **e&** \> **och samarbetsrapporter Användaren** har rapporterat \> **meddelanden.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-444">To view this report, in the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \>**Email & collaboration reports** \> **User reported messages**.</span></span>
-
-- <span data-ttu-id="84aaa-445">Gå  till Rapporterar \> **e-& för samarbete** \> **E& och samarbetsrapporter** \> **Användarrapporterade meddelanden.**</span><span class="sxs-lookup"><span data-stu-id="84aaa-445">Go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports** \> **User reported messages**.</span></span>
-
-![I Den Microsoft 365 Defender-portalen väljer du Rapporterar \> e-& samarbete \> E& om \> samarbetsrapporter, användarrapporter](../../media/user-reported-messages.png)
+## <a name="user-reported-messages-report"></a><span data-ttu-id="9ada3-627">Rapport över användarrapporterade meddelanden</span><span class="sxs-lookup"><span data-stu-id="9ada3-627">User reported messages report</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="84aaa-447">För att rapporten över användarrapporter ska fungera korrekt måste granskningsloggning vara **aktiverad** i din Office 365 miljö.</span><span class="sxs-lookup"><span data-stu-id="84aaa-447">In order for the User reported messages report to work correctly, **audit logging must be turned on** for your Office 365 environment.</span></span> <span data-ttu-id="84aaa-448">Det görs vanligtvis av någon som har rollen Granskningsloggar tilldelad i Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="84aaa-448">This is typically done by someone who has the Audit Logs role assigned in Exchange Online.</span></span> <span data-ttu-id="84aaa-449">Mer information finns i aktivera [Microsoft 365 eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-449">For more information, see [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).</span></span>
+> <span data-ttu-id="9ada3-628">För att rapporten **över användarrapporter ska** fungera korrekt måste granskningsloggning **vara aktiverad** i din Microsoft 365 miljö.</span><span class="sxs-lookup"><span data-stu-id="9ada3-628">In order for the **User reported messages** report to work correctly, **audit logging must be turned on** for your Microsoft 365 environment.</span></span> <span data-ttu-id="9ada3-629">Det görs vanligtvis av någon som har rollen Granskningsloggar tilldelad i Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="9ada3-629">This is typically done by someone who has the Audit Logs role assigned in Exchange Online.</span></span> <span data-ttu-id="9ada3-630">Mer information finns i aktivera [Microsoft 365 eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-630">For more information, see [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).</span></span>
 
-## <a name="what-permissions-are-needed-to-view-these-reports"></a><span data-ttu-id="84aaa-450">Vilka behörigheter krävs för att visa rapporterna?</span><span class="sxs-lookup"><span data-stu-id="84aaa-450">What permissions are needed to view these reports?</span></span>
+<span data-ttu-id="9ada3-631">Rapporten **Om användarrapporter** visar information om e-postmeddelanden som användare har rapporterat som skräppost, nätfiskeförsök eller bra [e-post](enable-the-report-message-add-in.md) med hjälp av tilläggen Rapportmeddelande eller [Rapport nätfiske.](enable-the-report-phish-add-in.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-631">The **User reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md).</span></span>
 
-<span data-ttu-id="84aaa-451">För att kunna visa och använda rapporterna som beskrivs i den här artikeln måste du vara medlem i någon av följande rollgrupper i Microsoft 365 Defender-portalen:</span><span class="sxs-lookup"><span data-stu-id="84aaa-451">In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Microsoft 365 Defender portal:</span></span>
+<span data-ttu-id="9ada3-632">Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till Rapporterar  \> **e-& samarbete** \> **E& och** \> **samarbetsrapporter Användarrapporter .**</span><span class="sxs-lookup"><span data-stu-id="9ada3-632">To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \>**Email & collaboration reports** \> **User reported messages**.</span></span> <span data-ttu-id="9ada3-633">På **användarrapporterade meddelanden** klickar du **på Visa information.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-633">On **User reported messages**, click **View details**.</span></span> <span data-ttu-id="9ada3-634">Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/userSubmissionReport> .</span><span class="sxs-lookup"><span data-stu-id="9ada3-634">To go directly to the report, open <https://security.microsoft.com/reports/userSubmissionReport>.</span></span> <span data-ttu-id="9ada3-635">Om du vill [gå till administrationsinskick i Microsoft 365 Defender klickar](admin-submission.md)du på Gå till **inskickade material.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-635">To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**.</span></span>
 
-- <span data-ttu-id="84aaa-452">**Organisationshantering**</span><span class="sxs-lookup"><span data-stu-id="84aaa-452">**Organization Management**</span></span>
-- <span data-ttu-id="84aaa-453">**Säkerhetsadministratör**</span><span class="sxs-lookup"><span data-stu-id="84aaa-453">**Security Administrator**</span></span>
-- <span data-ttu-id="84aaa-454">**Säkerhetsläsare**</span><span class="sxs-lookup"><span data-stu-id="84aaa-454">**Security Reader**</span></span>
-- <span data-ttu-id="84aaa-455">**Global Reader**</span><span class="sxs-lookup"><span data-stu-id="84aaa-455">**Global Reader**</span></span>
+![Widget för användarrapporter på sidan e& och samarbetsrapporter](../../media/user-reported-messages-widget.png)
 
-<span data-ttu-id="84aaa-456">Mer information finns i [Behörigheter i Microsoft 365 Defender-portalen.](permissions-in-the-security-and-compliance-center.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-456">For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).</span></span>
+<span data-ttu-id="9ada3-637">När du har **klickat på** Visa information kan du filtrera både diagrammet och detaljtabellen genom att klicka på **Filtrera** och välja ett eller flera av följande värden i den utfäll vy som visas:</span><span class="sxs-lookup"><span data-stu-id="9ada3-637">After you click **View details**, you can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:</span></span>
 
-<span data-ttu-id="84aaa-457">**Obs!** Om du lägger till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna  de behörigheter som krävs i Microsoft 365 Defender-portalen samt behörigheter för andra funktioner Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="84aaa-457">**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365.</span></span> <span data-ttu-id="84aaa-458">Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="84aaa-458">For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).</span></span>
+- <span data-ttu-id="9ada3-638">**Rapporterad** datum : **Starttid** **och Sluttid**</span><span class="sxs-lookup"><span data-stu-id="9ada3-638">**Date reported**: **Start time** and **End time**</span></span>
+- <span data-ttu-id="9ada3-639">**Rapporterad av**</span><span class="sxs-lookup"><span data-stu-id="9ada3-639">**Reported by**</span></span>
+- <span data-ttu-id="9ada3-640">**Ämne för e-post**</span><span class="sxs-lookup"><span data-stu-id="9ada3-640">**Email subject**</span></span>
+- <span data-ttu-id="9ada3-641">**Rapporterat ID för meddelande**</span><span class="sxs-lookup"><span data-stu-id="9ada3-641">**Message reported ID**</span></span>
+- <span data-ttu-id="9ada3-642">**Id för nätverksmeddelande**</span><span class="sxs-lookup"><span data-stu-id="9ada3-642">**Network Message ID**</span></span>
+- <span data-ttu-id="9ada3-643">**Avsändare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-643">**Sender**</span></span>
+- <span data-ttu-id="9ada3-644">**Rapporterad orsak**</span><span class="sxs-lookup"><span data-stu-id="9ada3-644">**Reported reason**</span></span>
+  - <span data-ttu-id="9ada3-645">**Inte skräppost**</span><span class="sxs-lookup"><span data-stu-id="9ada3-645">**Not junk**</span></span>
+  - <span data-ttu-id="9ada3-646">**Nätfiske**</span><span class="sxs-lookup"><span data-stu-id="9ada3-646">**Phish**</span></span>
+  - <span data-ttu-id="9ada3-647">**Skräppost**</span><span class="sxs-lookup"><span data-stu-id="9ada3-647">**Spam**</span></span>
+- <span data-ttu-id="9ada3-648">**Phish simulering**: **Ja** eller **Nej**</span><span class="sxs-lookup"><span data-stu-id="9ada3-648">**Phish simulation**: **Yes** or **No**</span></span>
 
-## <a name="what-if-the-reports-arent-showing-data"></a><span data-ttu-id="84aaa-459">Vad händer om rapporterna inte visar data?</span><span class="sxs-lookup"><span data-stu-id="84aaa-459">What if the reports aren't showing data?</span></span>
+<span data-ttu-id="9ada3-649">När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**</span><span class="sxs-lookup"><span data-stu-id="9ada3-649">When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.</span></span>
 
-<span data-ttu-id="84aaa-460">Om du inte ser data i rapporterna kan du kontrollera att dina principer är korrekt konfigurerade.</span><span class="sxs-lookup"><span data-stu-id="84aaa-460">If you are not seeing data in your reports, double-check that your policies are set up correctly.</span></span> <span data-ttu-id="84aaa-461">Mer information finns i [Skydda mot hot.](protect-against-threats.md)</span><span class="sxs-lookup"><span data-stu-id="84aaa-461">To learn more, see [Protect against threats](protect-against-threats.md).</span></span>
+<span data-ttu-id="9ada3-650">Om du vill gruppera posterna **klickar du** på Gruppera och väljer något av följande värden i listrutan:</span><span class="sxs-lookup"><span data-stu-id="9ada3-650">To group the entries, click **Group** and select one of the following values from the drop down list:</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="84aaa-462">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="84aaa-462">Related topics</span></span>
+- <span data-ttu-id="9ada3-651">**Ingen**</span><span class="sxs-lookup"><span data-stu-id="9ada3-651">**None**</span></span>
+- <span data-ttu-id="9ada3-652">**Orsak**</span><span class="sxs-lookup"><span data-stu-id="9ada3-652">**Reason**</span></span>
+- <span data-ttu-id="9ada3-653">**Avsändare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-653">**Sender**</span></span>
+- <span data-ttu-id="9ada3-654">**Rapporterad av**</span><span class="sxs-lookup"><span data-stu-id="9ada3-654">**Reported by**</span></span>
+- <span data-ttu-id="9ada3-655">**Rescan-resultat**</span><span class="sxs-lookup"><span data-stu-id="9ada3-655">**Rescan result**</span></span>
+- <span data-ttu-id="9ada3-656">**Phish-simulering**</span><span class="sxs-lookup"><span data-stu-id="9ada3-656">**Phish simulation**</span></span>
 
-[<span data-ttu-id="84aaa-463">Skydd mot skräppost och skadlig programvara i EOP</span><span class="sxs-lookup"><span data-stu-id="84aaa-463">Anti-spam and anti-malware protection in EOP</span></span>](anti-spam-and-anti-malware-protection.md)
+![Rapport över användarrapporterade meddelanden](../../media/user-reported-messages-report.png)
 
-[<span data-ttu-id="84aaa-464">Smarta rapporter och insikter i Microsoft 365 Defender-portalen</span><span class="sxs-lookup"><span data-stu-id="84aaa-464">Smart reports and insights in the Microsoft 365 Defender portal</span></span>](reports-and-insights-in-security-and-compliance.md)
+<span data-ttu-id="9ada3-658">I tabellen nedanför diagrammet kan du se följande information:</span><span class="sxs-lookup"><span data-stu-id="9ada3-658">In the table below the graph, you can see the following details:</span></span>
 
-[<span data-ttu-id="84aaa-465">Visa e-postflödesrapporter i Microsoft 365 Defender-portalen</span><span class="sxs-lookup"><span data-stu-id="84aaa-465">View mail flow reports in the Microsoft 365 Defender portal</span></span>](view-mail-flow-reports.md)
+- <span data-ttu-id="9ada3-659">**Ämne för e-post**</span><span class="sxs-lookup"><span data-stu-id="9ada3-659">**Email subject**</span></span>
+- <span data-ttu-id="9ada3-660">**Rapporterad av**</span><span class="sxs-lookup"><span data-stu-id="9ada3-660">**Reported by**</span></span>
+- <span data-ttu-id="9ada3-661">**Rapporterad**</span><span class="sxs-lookup"><span data-stu-id="9ada3-661">**Date reported**</span></span>
+- <span data-ttu-id="9ada3-662">**Avsändare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-662">**Sender**</span></span>
+- <span data-ttu-id="9ada3-663">**Rapporterad orsak**</span><span class="sxs-lookup"><span data-stu-id="9ada3-663">**Reported reason**</span></span>
+- <span data-ttu-id="9ada3-664">**Rescan-resultat**</span><span class="sxs-lookup"><span data-stu-id="9ada3-664">**Rescan result**</span></span>
+- <span data-ttu-id="9ada3-665">**Taggar**</span><span class="sxs-lookup"><span data-stu-id="9ada3-665">**Tags**</span></span>
 
-[<span data-ttu-id="84aaa-466">Visa rapporter för Defender för Office 365</span><span class="sxs-lookup"><span data-stu-id="84aaa-466">View reports for Defender for Office 365</span></span>](view-reports-for-mdo.md)
+<span data-ttu-id="9ada3-666">Om du vill skicka ett meddelande till Microsoft för analys markerar du meddelandeposten i tabellen, klickar på Skicka till **Microsoft** för analys och väljer sedan något av följande värden i listrutan:</span><span class="sxs-lookup"><span data-stu-id="9ada3-666">To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop down list:</span></span>
+
+- <span data-ttu-id="9ada3-667">**Rapportrensning**</span><span class="sxs-lookup"><span data-stu-id="9ada3-667">**Report clean**</span></span>
+- <span data-ttu-id="9ada3-668">**Rapportera nätfiske**</span><span class="sxs-lookup"><span data-stu-id="9ada3-668">**Report phishing**</span></span>
+- <span data-ttu-id="9ada3-669">**Rapportera skadlig programvara**</span><span class="sxs-lookup"><span data-stu-id="9ada3-669">**Report malware**</span></span>
+- <span data-ttu-id="9ada3-670">**Rapportera skräppost**'</span><span class="sxs-lookup"><span data-stu-id="9ada3-670">**Report spam**'</span></span>
+- <span data-ttu-id="9ada3-671">**Undersökning av utlösare** (Defender för Office 365)</span><span class="sxs-lookup"><span data-stu-id="9ada3-671">**Trigger investigation** (Defender for Office 365)</span></span>
+
+## <a name="what-permissions-are-needed-to-view-these-reports"></a><span data-ttu-id="9ada3-672">Vilka behörigheter krävs för att visa rapporterna?</span><span class="sxs-lookup"><span data-stu-id="9ada3-672">What permissions are needed to view these reports?</span></span>
+
+<span data-ttu-id="9ada3-673">För att kunna visa och använda rapporterna som beskrivs i den här artikeln måste du vara medlem i någon av följande rollgrupper i Microsoft 365 Defender portalen:</span><span class="sxs-lookup"><span data-stu-id="9ada3-673">In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Microsoft 365 Defender portal:</span></span>
+
+- <span data-ttu-id="9ada3-674">**Organisationshantering**</span><span class="sxs-lookup"><span data-stu-id="9ada3-674">**Organization Management**</span></span>
+- <span data-ttu-id="9ada3-675">**Säkerhetsadministratör**</span><span class="sxs-lookup"><span data-stu-id="9ada3-675">**Security Administrator**</span></span>
+- <span data-ttu-id="9ada3-676">**Säkerhetsläsare**</span><span class="sxs-lookup"><span data-stu-id="9ada3-676">**Security Reader**</span></span>
+- <span data-ttu-id="9ada3-677">**Global Reader**</span><span class="sxs-lookup"><span data-stu-id="9ada3-677">**Global Reader**</span></span>
+
+<span data-ttu-id="9ada3-678">Mer information finns i [Behörigheter i Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="9ada3-678">For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).</span></span>
+
+<span data-ttu-id="9ada3-679">**Obs!** Om du lägger till användare i motsvarande Azure Active Directory-roll i Administrationscenter för Microsoft 365 får användarna  de behörigheter som krävs i Microsoft 365 Defender-portalen och behörigheter för andra funktioner Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="9ada3-679">**Note**: Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365.</span></span> <span data-ttu-id="9ada3-680">Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="9ada3-680">For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).</span></span>
+
+## <a name="what-if-the-reports-arent-showing-data"></a><span data-ttu-id="9ada3-681">Vad händer om rapporterna inte visar data?</span><span class="sxs-lookup"><span data-stu-id="9ada3-681">What if the reports aren't showing data?</span></span>
+
+<span data-ttu-id="9ada3-682">Om du inte ser data i rapporterna kan du kontrollera att dina principer är korrekt konfigurerade.</span><span class="sxs-lookup"><span data-stu-id="9ada3-682">If you are not seeing data in your reports, double-check that your policies are set up correctly.</span></span> <span data-ttu-id="9ada3-683">Mer information finns i [Skydda mot hot.](protect-against-threats.md)</span><span class="sxs-lookup"><span data-stu-id="9ada3-683">To learn more, see [Protect against threats](protect-against-threats.md).</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="9ada3-684">Relaterade ämnen</span><span class="sxs-lookup"><span data-stu-id="9ada3-684">Related topics</span></span>
+
+[<span data-ttu-id="9ada3-685">Skydd mot skräppost och skadlig programvara i EOP</span><span class="sxs-lookup"><span data-stu-id="9ada3-685">Anti-spam and anti-malware protection in EOP</span></span>](anti-spam-and-anti-malware-protection.md)
+
+[<span data-ttu-id="9ada3-686">Smarta rapporter och insikter i Microsoft 365 Defender portalen</span><span class="sxs-lookup"><span data-stu-id="9ada3-686">Smart reports and insights in the Microsoft 365 Defender portal</span></span>](reports-and-insights-in-security-and-compliance.md)
+
+[<span data-ttu-id="9ada3-687">Visa e-postflödesrapporter i Microsoft 365 Defender portalen</span><span class="sxs-lookup"><span data-stu-id="9ada3-687">View mail flow reports in the Microsoft 365 Defender portal</span></span>](view-mail-flow-reports.md)
+
+[<span data-ttu-id="9ada3-688">Visa rapporter för Defender för Office 365</span><span class="sxs-lookup"><span data-stu-id="9ada3-688">View reports for Defender for Office 365</span></span>](view-reports-for-mdo.md)

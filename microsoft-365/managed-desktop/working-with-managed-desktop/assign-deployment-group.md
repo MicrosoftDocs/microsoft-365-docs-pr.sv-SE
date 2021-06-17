@@ -1,0 +1,39 @@
+---
+title: Tilldela enheter till en distributionsgrupp
+description: Hur du anger vilken distributionsgrupp du vill att enheterna ska vara i
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
+ms.service: m365-md
+author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 19465d2d2f077859490c106b9c01f08beb6e3906
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.translationtype: MT
+ms.contentlocale: sv-SE
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985642"
+---
+# <a name="assign-devices-to-a-deployment-group"></a><span data-ttu-id="c8862-104">Tilldela enheter till en distributionsgrupp</span><span class="sxs-lookup"><span data-stu-id="c8862-104">Assign devices to a deployment group</span></span>
+
+<span data-ttu-id="c8862-105">Microsoft Hanterat skrivbord tilldelar enheter till de olika distributionsgrupper, men du kan ange eller ändra grupp som en enhet tilldelas till en enhet med hjälp av administrationsportalen.</span><span class="sxs-lookup"><span data-stu-id="c8862-105">Microsoft Managed Desktop will assign devices to the various deployment groups, but you can specify or change group a device is assigned to a device by using the Admin portal.</span></span> <span data-ttu-id="c8862-106">Du ändrar tilldelningen efter att en enhet har registrerats eller efter att en användare har registrerat sig.</span><span class="sxs-lookup"><span data-stu-id="c8862-106">You change the assignment after a device is registered or after a user has enrolled.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="c8862-107">Om du ändrar tilldelningen tillämpas principer som är specifika för den gruppen på enheten.</span><span class="sxs-lookup"><span data-stu-id="c8862-107">If you change the assignment, policies that are specific to that group will be applied to the device.</span></span> <span data-ttu-id="c8862-108">Ändringen kan installera den senaste versionen av Windows 10 (inklusive eventuella nya funktioner eller kvalitetsuppdateringar).</span><span class="sxs-lookup"><span data-stu-id="c8862-108">The change might install the latest version of Windows 10 (including any new feature or quality updates).</span></span> <span data-ttu-id="c8862-109">Det är bäst att flytta bara några enheter i början och sedan kontrollera användarupplevelsen.</span><span class="sxs-lookup"><span data-stu-id="c8862-109">It's best to move just a few devices at first and then check the resulting user experience.</span></span> <span data-ttu-id="c8862-110">Tänk på att vissa uppdateringar startar om enheten.</span><span class="sxs-lookup"><span data-stu-id="c8862-110">Be aware that certain updates will restart the device.</span></span> <span data-ttu-id="c8862-111">Kontrollera att du har valt rätt enheter att tilldela.</span><span class="sxs-lookup"><span data-stu-id="c8862-111">Double-check that you've selected the right devices to assign.</span></span> <span data-ttu-id="c8862-112">Det kan ta upp till 24 timmar innan uppgiften verkställs.</span><span class="sxs-lookup"><span data-stu-id="c8862-112">It can take up to 24 hours for the assignment to take effect.</span></span>
+
+<span data-ttu-id="c8862-113">Följ de här stegen om du vill tilldela enheter till en distributionsgrupp.</span><span class="sxs-lookup"><span data-stu-id="c8862-113">To assign devices to a deployment group, follow these steps.</span></span> <span data-ttu-id="c8862-114">Upprepa de här stegen för varje grupp om du vill flytta separata enheter till olika grupper.</span><span class="sxs-lookup"><span data-stu-id="c8862-114">If you want to move separate devices to different groups, repeat these steps for each group.</span></span>
+
+1. <span data-ttu-id="c8862-115">I Microsoft Endpoint Manager väljer du **Enheter** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="c8862-115">In Microsoft Endpoint Manager, select **Devices** in the left pane.</span></span> <span data-ttu-id="c8862-116">I avsnittet **Microsoft Hanterat skrivbord** väljer du **Enheter**.</span><span class="sxs-lookup"><span data-stu-id="c8862-116">In the **Microsoft Managed Desktop** section, select **Devices**.</span></span>
+2. <span data-ttu-id="c8862-117">Välj de enheter som du vill tilldela.</span><span class="sxs-lookup"><span data-stu-id="c8862-117">Select the devices you want to assign.</span></span> <span data-ttu-id="c8862-118">Alla valda enheter tilldelas till den grupp som du anger.</span><span class="sxs-lookup"><span data-stu-id="c8862-118">All selected devices will be assigned to the group you specify.</span></span>
+3. <span data-ttu-id="c8862-119">Välj **Enhetsåtgärder** på menyn.</span><span class="sxs-lookup"><span data-stu-id="c8862-119">Select **Device actions** from the menu.</span></span>
+4. <span data-ttu-id="c8862-120">Välj **Tilldela enhet till grupp**.</span><span class="sxs-lookup"><span data-stu-id="c8862-120">Select **Assign device to group**.</span></span> <span data-ttu-id="c8862-121">Ett flyg in öppnas.</span><span class="sxs-lookup"><span data-stu-id="c8862-121">A fly-in opens.</span></span>
+5. <span data-ttu-id="c8862-122">Använd den nedrullningsmenyn för att välja gruppen du vill flytta enheter till och välj sedan **Spara**.</span><span class="sxs-lookup"><span data-stu-id="c8862-122">Use the drop-down menu to select the group to move devices to, and then select **Save**.</span></span> <span data-ttu-id="c8862-123">Gruppen **som tilldelats av** ändras till **Väntande.**</span><span class="sxs-lookup"><span data-stu-id="c8862-123">The **Group assigned by** will change to **Pending**.</span></span>
+
+<span data-ttu-id="c8862-124">När uppgiften är klar ändras **gruppen** som tilldelats av till **Administratör** (anges som du gjorde ändringen) och den nya grupptilldelningen visas i kolumnen Grupp. </span><span class="sxs-lookup"><span data-stu-id="c8862-124">When the assignment is complete, **Group assigned by** will change to **Admin** (indicated that you made the change) and the **Group** column will show the new group assignment.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="c8862-125">Du kan inte flytta enheter till andra grupper om de har registreringstillståndet "fel" eller "väntande".</span><span class="sxs-lookup"><span data-stu-id="c8862-125">You can't move devices to other groups if they're in the "error" or "pending" registration state.</span></span>
+>
+><span data-ttu-id="c8862-126">Om en enhet inte har tagits bort korrekt kan den visa statusen "klar".</span><span class="sxs-lookup"><span data-stu-id="c8862-126">If a device hasn't been properly removed, it could show a status of "ready."</span></span> <span data-ttu-id="c8862-127">Om du flyttar en sådan enhet är det möjligt att flyttningen inte kan slutföras.</span><span class="sxs-lookup"><span data-stu-id="c8862-127">If you move such a device, it's possible that the move won't complete.</span></span> <span data-ttu-id="c8862-128">Om du inte  ser Gruppera tilldelad efter ändring till Väntande i steg 5 kontrollerar du att enheten är tillgänglig genom att söka efter den i Intune. </span><span class="sxs-lookup"><span data-stu-id="c8862-128">If you don't see **Group assigned by** change to **Pending** in Step 5, check that the device is available by searching for it in Intune.</span></span> <span data-ttu-id="c8862-129">Mer information finns i [Visa enhetsinformation i Intune](/mem/intune/remote-actions/device-inventory).</span><span class="sxs-lookup"><span data-stu-id="c8862-129">For more information, see [See device details in Intune](/mem/intune/remote-actions/device-inventory).</span></span>
