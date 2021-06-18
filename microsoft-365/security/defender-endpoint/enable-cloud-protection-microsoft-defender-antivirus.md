@@ -10,17 +10,17 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/18/2021
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: e7b7a0ba5c301829633c27f3add8f7f7daa70dfd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 694c09c5136f874550fa4a47586f3268ee2d0833
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924713"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007191"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>Aktivera molnbaserat skydd
 
@@ -146,7 +146,7 @@ Mer information om tillåtna parametrar finns i Windows Defender [WMIv2-API:er](
 
 2. Välj panelen **&** för skydd mot hot (eller sköldikonen på den vänstra menyraden) och sedan & för skydd **mot** hot:
 
-    ![Skärmbild på inställningsetiketten för Skydd mot virus och hot i Windows-säkerhetsappen](images/defender/wdav-protection-settings-wdsc.png)
+    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Skärmbild av inställningarna för & skydd mot virus":::
 
 3. Kontrollera att **molnbaserat skydd och automatisk** **exempelinskickning** är på **.**
 

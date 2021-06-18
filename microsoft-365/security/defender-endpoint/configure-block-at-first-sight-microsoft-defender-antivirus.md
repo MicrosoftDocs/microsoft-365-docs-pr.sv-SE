@@ -12,20 +12,17 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 04/28/2021
+ms.date: 06/15/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274958"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964707"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Aktivera Blockera när det först påträffas
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gäller för:**
 
@@ -34,7 +31,7 @@ ms.locfileid: "52274958"
 I den här artikeln beskrivs antivirus-/antimalware-funktionen som kallas Blockera när det först påträffas och hur du aktiverar Blockera när det först påträffas för din organisation. 
 
 > [!TIP]
-> Den här artikeln är avsedd för företagsadministratörer och IT-tekniker som hanterar säkerhetsinställningar för organisationer. Om du inte är företagsadministratör eller IT-tekniker, men har frågor om Blockera när det först påträffas kan du läsa [Är du inte företagsadministratör eller IT-tekniker?](#not-an-enterprise-admin-or-it-pro).
+> Den här artikeln är avsedd för företagsadministratörer och IT-tekniker som hanterar säkerhetsinställningar för organisationer. Om du inte är företagsadministratör eller IT-tekniker, men har frågor om Blockera när det först påträffas kan du läsa avsnittet[Är du inte företagsadministratör eller IT-tekniker?](#not-an-enterprise-admin-or-it-pro).
 
 ## <a name="what-is-block-at-first-sight"></a>Vad är Blockera när det först påträffas?
 
@@ -55,7 +52,7 @@ Microsoft Defender Antivirus använder flera tekniker för identifiering och sky
 ![Lista över motorer för Microsoft Defender Antivirus](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> Mer information finns i den här bloggen: [Lär känna de avancerade teknikerna i Microsoft Defender för Endpoint – nästa generations skydd](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+> Mer information finns i [ (Blogg) Lär känna de avancerade teknikerna i Microsoft Defender för Endpoint – nästa generations skydd](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
 ## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Några saker du bör veta om Blockera när det först påträffas
 
@@ -149,7 +146,9 @@ Du kan kontrollera att Blockera när det först påträffas är aktiverat på en
 
 ## <a name="validate-block-at-first-sight-is-working"></a>Kontrollera att Blockera när det först påträffas fungerar
 
-Kontrollera att funktionen fungerar genom att följa instruktionerna i [Verifiera anslutningar mellan ditt nätverk och molnet](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
+Om du vill verifiera att funktionen fungerar laddar du ned exempelfilen [Blockera exempelfil vid första anblicken](https://demo.wd.microsoft.com/Page/BAFS). Om du vill ladda ned filen behöver du ett konto i Azure AD som har tilldelats rollen säkerhetsadministratör eller global administratör.
+
+Kontrollera att funktionen Molnaktiverat skydd fungerar följer du instruktionerna i [Verifiera anslutningar mellan ditt nätverk och molnet](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud). 
 
 ## <a name="turn-off-block-at-first-sight"></a>Inaktivera Blockera när det först påträffas
 

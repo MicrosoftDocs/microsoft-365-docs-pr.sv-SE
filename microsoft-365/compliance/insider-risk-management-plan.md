@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fafd3eed63e077ded41259d25f0d8a1a89802925
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: 6884ec3b2bc7c24e4f7f6e62d9b24add3aeee2c0
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998746"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007351"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planera för hantering av insiderrisker
 
@@ -48,8 +48,8 @@ Beroende på strukturen hos ditt team för efterlevnadshantering finns alternati
 
 | **Rollgrupp** | **Rollbehörigheter** |
 | :------------- | :------------------- |
-| **Insider-riskhantering** | Använd den här rollgruppen för att hantera insider-riskhantering för organisationen i en enda grupp. Genom att lägga till alla användarkonton för angivna administratörer, analytiker, ekonomi och granskare kan du konfigurera behörigheter för Insider-riskhantering i en enda grupp. Den här rollgruppen innehåller alla behörighetsroller för Insider-riskhantering och associerade behörigheter. Den här konfigurationen är det enklaste sättet att snabbt komma igång med insider-riskhantering och är en god passform för organisationer som inte behöver separata behörigheter som definierats för separata användargrupper. När du använder den här konfigurationen bör du se till att alltid ha minst en användare tilldelad till den här rollen för att säkerställa att dina principer fungerar som förväntat och så att användaren kan skapa och redigera principer, konfigurera lösningsinställningar och granska hälsovarningar för principer. |
-| **Insider-riskhanteringsadministratör** | Använd den här rollgruppen när du först konfigurerar Insider-riskhantering och senare för att dela upp Insider-riskadministratörer i en definierad grupp. Användare i den här rollgruppen kan aktivera och visa analysinsikter och skapa, läsa, uppdatera och ta bort principer för insider-riskhantering, globala inställningar och tilldelningar av rollgrupper. När du använder den här konfigurationen bör du se till att alltid ha minst en användare tilldelad till den här rollen för att säkerställa att dina principer fungerar som förväntat och så att användaren kan skapa och redigera principer, konfigurera lösningsinställningar och granska hälsovarningar för principer. |
+| **Insider-riskhantering** | Använd den här rollgruppen för att hantera insider-riskhantering för organisationen i en enda grupp. Genom att lägga till alla användarkonton för angivna administratörer, analytiker, ekonomi och granskare kan du konfigurera behörigheter för Insider-riskhantering i en enda grupp. Den här rollgruppen innehåller alla behörighetsroller för Insider-riskhantering och associerade behörigheter. Den här konfigurationen är det enklaste sättet att snabbt komma igång med insider-riskhantering och är en god passform för organisationer som inte behöver separata behörigheter som definierats för separata användargrupper. När du använder den här konfigurationen bör du se till att alltid ha minst en användare tilldelad till den här rollgruppen för att säkerställa att dina principer fungerar som förväntat och så att användaren kan skapa och redigera principer, konfigurera lösningsinställningar och granska hälsovarningar för principer. |
+| **Insider-riskhanteringsadministratör** | Använd den här rollgruppen till att först konfigurera Insider-riskhantering och senare för att dela upp Insider-riskadministratörer i en definierad grupp. Användare i den här rollgruppen kan aktivera och visa analysinsikter och skapa, läsa, uppdatera och ta bort principer för insider-riskhantering, globala inställningar och tilldelningar av rollgrupper. När du använder den här konfigurationen bör du se till att alltid ha minst en användare tilldelad till den här rollgruppen för att säkerställa att dina principer fungerar som förväntat och så att användaren kan skapa och redigera principer, konfigurera lösningsinställningar och granska hälsovarningar för principer. |
 | **Analytiker för hantering av interna risker** | Använd den här gruppen för att tilldela behörigheter till användare som fungerar som insider-riskfallsanalytiker. Användare i den här rollgruppen kan komma åt och visa alla varningar för Insider-riskhantering, fall, analysinsikter och meddelandemallar. De kan inte komma åt Insider-risken i Innehållsutforskaren. |
 | **Utredare för hantering av interna risker** | Använd den här gruppen för att tilldela behörigheter till användare som ska agera som insider-riskgruppsbehörigheter. Användare i den här rollgruppen kan komma åt alla varningar för insider-riskhantering, ärenden, meddelandemallar och Innehållsutforskaren för alla ärenden. |
 | **Insider-riskhanteringsgranskningar** | Använd den här gruppen för att tilldela behörigheter till användare som ska granska aktiviteter inom insider-riskhantering. Användare i den här rollgruppen kan komma åt granskningsloggen för Insider-risker. |

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Vilken metod du använder för att ta bort licenser beror på om du tar bort licenser från specifika användare eller från en viss produkt.
 ms.date: 07/01/2020
-ms.openlocfilehash: f7624432590a5731b57c45c25e7e7dc458a5b8f5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f79ffecc22fe4531076ccacd83c25e44b81052a6
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623595"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006979"
 ---
 # <a name="unassign-licenses-from-users"></a>Ta bort tilldelningen av licenser från användare
 
@@ -117,18 +117,18 @@ När du använder sidan **Aktiva användare** för att ta bort licenser tar du b
 ::: moniker-end
 
 2. Markera cirklarna bredvid namnen på de användare som du vill ta bort licenser för.
-3. Högst upp väljer du de tre punkterna (fler åtgärder) och väljer sedan **Hantera produktlicenser**.
-4. I fönstret **Hantera produktlicenser** väljer du **Ersätt befintliga produktlicenstilldelningar** \> **Nästa**.
-5. Längst ned i fönstret **Ersätt befintliga produkter** markerar du kryssrutan Ta bort alla **produktlicenser** från de markerade användarna och väljer sedan **Ersätt** \> **Stäng.**
+3. Högst upp väljer du **Hantera produktlicenser.**
+4. I fönstret **Hantera produktlicenser** väljer du **Ta bort alla Spara**  >  **ändringar.**
+5. Välj Klar längst ned i **fönstret.**  
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Vad händer med en användares data när du tar bort deras licens?
 
-- När en licens tas bort från en användare Exchange onlinedata som är kopplade till det kontot i 30 dagar. Efter respitperioden på 30 dagar tas data bort och kan inte återställas.
-- Filer som sparas OneDrive för företag tas inte bort såvida inte användaren tas bort från Microsoft 365 eller tas bort via Active Directory-synkronisering. Mer information finns i OneDrive [och ta bort](/onedrive/retention-and-deletion).
-- När licensen tas bort är användarens postlåda inte längre sökbar med hjälp av ett eDiscovery-verktyg som innehållssökning eller Advanced eDiscovery. Mer information finns i "Söka i frånkopplade eller avlicensierade postlådor" i [Innehållssökning i Microsoft 365](../../compliance/content-search.md).
-- Om du har ett Enterprise-abonnemang, till exempel Office 365 Enterprise E3, kan Exchange Online bevara e-postdata för ett borttagna användarkonto genom att använda [inaktiva postlådor.](../../compliance/inactive-mailboxes-in-office-365.md) Mer information finns i Skapa [och hantera inaktiva postlådor i Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
-- Information om hur du blockerar en användares åtkomst till data i Microsoft 365 efter att licensen har tagits bort, och hur du får åtkomst till data efteråt, finns i Ta bort en [tidigare anställd](../add-users/remove-former-employee.md).
-- Om du tar bort en [användares](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) licens och användaren fortfarande har Office-appar installerade visas felmeddelanden om ej licensierad produkt och aktivering i Office när de använder Office program.
+- När en licens tas bort från en användare lagras Exchange Online-data som är kopplade till kontot i 30 dagar. Efter respitperioden på 30 dagar tas data bort och kan inte återställas.
+- Filer som har sparats i OneDrive för företag tas inte bort såvida inte användaren tas bort från administrationscentret för Microsoft 365 eller tas bort via Active Directory-synkronisering. Mer information finns i [OneDrive-bevarande och -borttagning.](/onedrive/retention-and-deletion)
+- När licensen tas bort är användarens postlåda inte längre sökbar med hjälp av ett eDiscovery-verktyg som Innehållssökning eller Avancerad eDiscovery. Mer information finns i "Söka i frånkopplade eller avlicensierade postlådor" i [Innehållssökning i Microsoft 365.](../../compliance/content-search.md)
+- Om du har en Enterprise-prenumeration, till exempel Office 365 Enterprise E3, kan du behålla e-postdata för ett borttagna användarkonton med hjälp av [inaktiva postlådor](../../compliance/inactive-mailboxes-in-office-365.md)i Exchange Online. Mer information finns i Skapa [och hantera inaktiva postlådor i Exchange Online.](../../compliance/create-and-manage-inactive-mailboxes.md)
+- Information om hur du blockerar en användares åtkomst till data i Microsoft 365 efter att licensen har tagits bort, och hur du får åtkomst till data efteråt, finns i Ta bort [en tidigare anställd](../add-users/remove-former-employee.md).
+- Om du tar bort en [användares](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) licens och de fortfarande har Office-program installerade visas felmeddelanden om ej licensierad produkt och aktivering i Office när de använder Office-program.
 
 ## <a name="next-steps"></a>Nästa steg
 

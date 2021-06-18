@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratörsroller som Tjänsteadministratör mappar till affärsfunktioner och ger behörighet att utföra särskilda uppgifter i administrationscentret.
-ms.openlocfilehash: 1fea8720b174846dd95d9dd6aeee91f7ecfbc7fa
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 801a5a85479e431b46883c69e75b1ea909892ca1
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908059"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964578"
 ---
 # <a name="about-admin-roles"></a>Om administratörsroller
 
@@ -77,7 +77,7 @@ Du behöver antagligen bara tilldela följande roller i organisationen. Som stan
 |Administratör för Office-program    |   Tilldela rollen som administratör för Office-program till användare som behöver göra följande: <br> – Använda tjänsten för molnprinciper i Office för att skapa och hantera molnbaserade principer för Office <br> – Skapa och hantera tjänsteförfrågningar <br> – Hantera nyhetsinnehållet som användarna ser i sina Office-program   <br> – Övervaka tjänstens status  |
 |Lösenordsadministratör  |   Tilldela rollen lösenordsadministratör till en användare som behöver återställa lösenord för icke-administratörer och lösenordsadministratörer.   |
 |Läsare i Meddelandecenter |   Tilldela rollen som rapportläsare till användare som behöver göra följande: <br> – Övervaka meddelanden i meddelandecentret <br> – Få veckovisa e-postmeddelanden med inlägg och uppdateringar i meddelandecentret <br> – Dela inlägg i Meddelandecenter <br> – Ha skrivskyddad åtkomst till Azure AD-tjänster, till exempel användare och grupper|
-|Administratör för Power Platform |   Tilldela rollen som rapportläsare till användare som behöver göra följande: <br> – Hantera alla administrativa funktioner för PowerApps, Microsoft Flow och dataförlustskydd <br> – Skapa och hantera tjänsteförfrågningar <br> – Övervaka tjänstens status  |
+|Administratör för Power Platform |   Tilldela rollen som rapportläsare till användare som behöver göra följande: <br> – Hantera alla administrativa funktioner för PowerApps, Power Automate och dataförlustskydd <br> – Skapa och hantera tjänsteförfrågningar <br> – Övervaka tjänstens status  |
 |Rapportläsare |   Tilldela rollen som rapportläsare till användare som behöver göra följande: <br> – Visa användningsdata och aktivitetsrapporterna i administrationscentret för Microsoft 365 <br> – Få tillgång till innehållspaketet för införande av Power BI <br> – Få åtkomst till inloggningsrapporter och -aktivitet i Azure AD <br> – Visa data som returneras av rapporterings-API i Microsoft Graph|
 |Supportadministratör för tjänst   |   Tilldela rollen Tjänstsupportadministratör som en extra-roll för administratörer eller användare som behöver göra följande utöver deras vanliga administratörsroll: <br> – Öppna och hantera tjänsteförfrågningar <br> – Visa och dela inlägg från meddelandecenter <br> – Övervaka tjänstens status   |
 |SharePoint-administratör    |   Tilldela SharePoint-administratörsrollen till användare som behöver åtkomst till och behöver hantera administrationscentret för SharePoint Online. <br><br>SharePoint-administratörer kan även: <br> – Skapa och ta bort webbplatser <br> – Hantera webbplatssamlingar och globala SharePoint-inställningar   |

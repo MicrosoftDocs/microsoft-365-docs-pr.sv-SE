@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Lär dig hur du ändrar standardtemat för navigeringsfältet högst upp i Microsoft 365 och anpassa det så att det matchar ditt företags logotyp eller färg.
-ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998806"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006919"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassa Microsoft 365 för din organisation
 
@@ -70,7 +70,7 @@ Standardtemat är det första temat som visas.
 
 Du kan skapa upp till fyra ytterligare gruppteman.
 
-1. Ange **ett** namn för ditt tema på sidan Allmänt.
+1. Ange **ett** namn för det nya temat på sidan Allmänt.
 
 2. Under **Grupper** kan du välja upp till 5 Microsoft 365 grupper som kan se ditt grupptema i stället för att använda standardtemat. Du kan också förhindra att användare åsidosätter temat och visa användarens visningsnamn.
 

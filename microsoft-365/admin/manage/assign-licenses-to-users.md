@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Tilldela licenser beroende på om du vill tilldela produktlicenser till specifika användare eller tilldela användarlicenser till en viss produkt.
 ms.date: 04/26/2021
-ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c8e5c6a648f08aaba97fe05e19a5cfa0cada2174
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537541"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007015"
 ---
 # <a name="assign-licenses-to-users"></a>Tilldela licenser till användare
 
@@ -59,7 +59,7 @@ När du tilldelar licenser på sidan **Licenser** tilldelar du licenser för en 
 
 ::: moniker range="o365-germany"
 
- 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i Administrationscenter.
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i administrationscentret.
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Vid konflikt visas ett meddelande som talar om vad problemet är och hur du åtg
 
 ::: moniker range="o365-germany"
 
- 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i Administrationscenter.
+ 1. Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i administrationscentret.
 
 ::: moniker-end
 
@@ -129,11 +129,12 @@ När du använder sidan **Aktiva användare** för att tilldela licenser tilldel
 
 
 2. Markera cirklarna bredvid namnen på de användare som du vill tilldela licenser till.
-3. Högst upp väljer du de tre punkterna (fler åtgärder) och väljer sedan **Hantera produktlicenser**.
-4. I fönstret **Hantera produktlicenser** väljer du **Lägg till i befintliga produktlicenstilldelningar** \> **Nästa**.
-5. I fönstret **Lägg till i befintliga produkter** ställer du reglaget i läget **På** för den licens som du vill att de valda användarna ska ha.\
-    Som standard tilldelas alla tjänster, som är associerade till de licenserna, automatiskt till användarna. Du kan begränsa vilka tjänster som är tillgängliga för användarna. Ställ reglagen i läget **Av** för de tjänster som du inte vill att användarna ska ha.
-6. Längst ned i fönstret väljer du **Lägg till** \> **Stäng**.  
+3. Längst upp väljer du **Hantera produktlicenser**.
+4. I fönstret **Hantera produktlicenser** väljer du **Tilldela fler: Behåll de befintliga licenserna och tilldela fler** \> **Nästa**.
+5. Under **Licenser** markerar du rutan för de licenser som du vill att de valda användarna ska ha.\
+    Som standard tilldelas alla tjänster, som är associerade till de licenserna, automatiskt till användarna. Du kan begränsa vilka tjänster som är tillgängliga för användarna. Avmarkera rutorna för de tjänster som du inte vill att användarna ska ha.
+6. Längst ned i fönstret väljer du **Spara ändringar**.  
+    Du kan behöva köpa ytterligare licenser om du inte har tillräckligt med licenser för alla.
 
 
 > [!NOTE]

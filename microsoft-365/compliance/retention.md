@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om kvarhållningsprinciper och kvarhållningsetiketter som hjälper dig att behålla det du behöver och ta bort det du inte behöver.
-ms.openlocfilehash: 44761199eea1cf2649a15b6a36ccc08eda99c570
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 65c9216e30c2db04b1981a17d73b3a9f0b5f1594
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950065"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007507"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Mer information om kvarhållningsprinciper och kvarhållningsetiketter
 
@@ -373,9 +373,11 @@ Du använder Bevarandelås när kvarhållningsprincipen eller kvarhållningsetik
 
 ## <a name="releasing-a-policy-for-retention"></a>Släppa en kvarhållningsprincip
 
-När du tillhandahåller kvarhållningsprinciper som inte har något bevarandelås kan du ta bort principerna när som helst, vilket effektivt inaktiverar inställningarna för kvarhållning som använts tidigare. Du kan också behålla principen, men ta bort en webbplats för SharePoint eller ett konto för OneDrive, eller ändra platsstatus till av eller inaktivera principen.
+När du tillhandahåller kvarhållningsprinciper som inte har något bevarandelås kan du ta bort principerna när som helst, vilket effektivt inaktiverar inställningarna för kvarhållning som använts tidigare. Du kan också behålla principen, eller ändra platsstatus till av eller inaktivera principen. Om principen är konfigurerad för att inkludera specifika webbplatser för SharePoint eller konton för OneDrive kan du också redigera principen för att ta bort en eller flera av dessa poster för att släppa principen för dessa webbplatser eller konton.
  
 När du vidtar någon av dessa åtgärder kommer allt SharePoint- eller OneDrive-innehåll som är lagrat från principen att behållas i 30 dagar för att förhindra oavsiktlig dataförlust. Under den här respitperioden på 30 dagar sparas borttagna filer fortfarande (filer läggs fortfarande till i biblioteket för bevarande av dokument), men det tidsinställda jobbet som regelbundet rensar biblioteket för bevarande av dokument är inaktiverat för dessa filer så att du kan återställa dem om det behövs.
+
+Ett undantag till den här respitperioden på 30 dagar är när du uppdaterar principen för att exkludera en eller flera webbplatser för SharePoint eller konton för OneDrive. I det här fallet tar det tidsinställda jobbet bort filer för dessa platser i biblioteket för bevarande av dokument utan 30 dagars fördröjning.
 
 Mer information om biblioteket för bevarande av dokument finns i [Hur bevarande fungerar för SharePoint och OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 

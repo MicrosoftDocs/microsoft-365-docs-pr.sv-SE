@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Få en översikt över hur din organisation inför nya Microsoft 365 för att kommunicera och samarbeta.
-ms.openlocfilehash: db61ed4d4c087b76895d08e43f6b1a2c00ed8172
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635396"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007171"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 användningsanalyser
 
@@ -101,11 +101,11 @@ Endast den användare som har skapat den första anslutningen till mallappen kan
 
 ### <a name="can-i-only-customize-the-reports-from-the-power-bi-web-interface"></a>Kan jag bara anpassa rapporter från Power BI webbgränssnittet?
 
-Förutom att anpassa rapporter från Power BI-webbgränssnittet kan användare också använda Power BI Desktop för att ansluta direkt till Microsoft 365-rapporttjänsten och skapa egna rapporter.
+Förutom att anpassa rapporter från Power BI-webbgränssnittet kan användare också använda skrivbordsversion av Power BI för att ansluta direkt till Microsoft 365-rapporttjänsten och skapa egna rapporter.
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>Hur får jag pbit-filen som är associerad med den här instrumentpanelen?
 
-Du kan komma åt pbit-filen från [Microsoft Download Center.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)
+Du kan komma åt pbit-filen från [Microsoft Download Center.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) 
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>Vem kan visa instrumentpaneler och rapporter?
 
@@ -129,7 +129,7 @@ Data i mallappen täcker för närvarande samma uppsättning aktivitetsmått som
 
 ### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>Hur skiljer sig data i mallappen från data i användningsrapporterna?
 
-Underliggande data som visas i mallappen matchar de data du ser i aktivitetsrapporterna Microsoft 365 administrationscentret. De viktigaste skillnaderna är att data i administrationscentret är tillgänglig för de senaste 7/30/90/180 dagarna medan mallappen presenterar data månadsvis för upp till 12 månader.
+Underliggande data som visas i mallappen matchar de data du ser i aktivitetsrapporterna i Administrationscenter för Microsoft 365. De viktigaste skillnaderna är att data i administrationscentret är tillgänglig för de senaste 7/30/90/180 dagarna medan mallappen presenterar data månadsvis för upp till 12 månader.
 
 Dessutom är informationen på användarnivå i mallappen endast tillgänglig för den senaste fullständiga månaden för användare som har tilldelats en produktlicens och utfört en aktivitet.
 
@@ -187,7 +187,7 @@ I mallappen representeras användningen på produktnivå. Data om de olika prenu
 
 ### <a name="is-it-possible-to-integrate-other-data-sets-into-the-template-app"></a>Går det att integrera andra datauppsättningar i mallappen?
 
-Du kan använda Power BI Desktop ansluta till API:er för Microsoft 365 (i förhandsversionen) för att få ytterligare datakällor att kombinera med mallappdata.
+Du kan använda skrivbordsversion av Power BI ansluta till API:erna för Microsoft 365 (i förhandsversionen) för att få ytterligare datakällor att kombinera med mallappdata.
 
 Mer information finns i [anpassa dokumentet](customize-reports.md).
 

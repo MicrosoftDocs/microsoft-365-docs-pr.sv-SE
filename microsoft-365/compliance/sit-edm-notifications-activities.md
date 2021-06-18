@@ -1,5 +1,5 @@
 ---
-title: Skapa meddelande för exakta datamatchningsaktiviteter (förhandsversion)
+title: Skapa aviseringar för exakta datamatchningsaktiviteter
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Lär dig att skapa aviseringar för exakta datamatchningsaktiviteter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e2f67ef0f276211483519bd5e246e4e041b2b15
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162037"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007567"
 ---
-# <a name="create-notifications-for-exact-data-match-activities-preview"></a>Skapa meddelande för exakta datamatchningsaktiviteter (förhandsversion)
+# <a name="create-notifications-for-exact-data-match-activities"></a>Skapa aviseringar för exakta datamatchningsaktiviteter
 
 När du [skapar anpassade typer av känslig information med exakt datamatchning (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) finns det ett antal aktiviteter som har skapats i [granskningsloggen](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log). Du kan använda cmdleten [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) PowerShell för att skapa meddelande som visar när dessa aktiviteter inträffar:
 
@@ -33,9 +33,6 @@ När du [skapar anpassade typer av känslig information med exakt datamatchning 
 - RemoveSchema
 - UploadDataFailed
 - UploadDataCompleted
-
-> [!NOTE]
-> Möjligheten att skapa meddelande för EDM-aktiviteter är endast tillgänglig för World Wide- och GCC-moln.
 
 ## <a name="pre-requisites"></a>Förutsättningar
 

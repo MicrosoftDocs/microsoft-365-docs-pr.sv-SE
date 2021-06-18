@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78cfef52988e7da611edc0cc4d475e8a4624bc0e
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: bb3e378c13507e354cdd1d739214c1c2d9d6aa98
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879102"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950101"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
@@ -307,7 +307,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 3. Högst upp i den utfällda menyn principinformation som visas ser du **Öka prioritet** eller **Minska prioritet** baserat på det aktuella prioritetsvärdet och antalet anpassade principer:
    - Princip för skräppostskydd med värdet **Prioritet** **0** har bara alternativet **Minska prioritet** tillgängligt.
    - Princip för skräppostskydd med det lägsta värdet **Prioritet** (till exempel **3**) har bara alternativet **Öka prioritet** tillgängligt.
-   - Om du har tre eller fler principer för skräppostskydd har principer mellan de högsta och lägsta prioritetsvärdena både alternativen **Öka prioritet** och **Minska prioritet** tillgängliga.
+   - Om du har tre eller fler principer för skräppostskydd har principerna mellan de högsta och lägsta prioritetsvärdena både alternativen **Öka prioritet** och **Minska prioritet** tillgängliga.
 
    Klicka ![ikonen Öka prioritet](../../media/m365-cc-sc-increase-icon.png) **Öka prioritet** eller ![Ikonen Minska prioritet](../../media/m365-cc-sc-decrease-icon.png) **Minska prioritet** om du vill ändra värdet **Prioritet**.
 

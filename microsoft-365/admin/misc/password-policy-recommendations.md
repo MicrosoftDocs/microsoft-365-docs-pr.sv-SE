@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Gör organisationen säkrare mot lösenordsattacker och förbjud vanliga lösenord och aktivera riskbaserad multifaktorautentisering.
-ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635980"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006931"
 ---
 # <a name="password-policy-recommendations"></a>Policyrekommendationer för lösenord
 
@@ -131,6 +131,8 @@ Med riskbaserad multifaktorautentisering går det att kontrollera att användare
 ## <a name="next-steps"></a>Nästa steg
 
 Vill du veta mer om hur du hanterar lösenord? Här är några rekommenderade artiklar att läsa:
+
+- [Vägledning för Microsoft-lösenord](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
 - [Fyller starka webblösenord någon funktion?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 

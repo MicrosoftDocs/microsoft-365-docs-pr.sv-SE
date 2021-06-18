@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 708e5dc68b777db42696c6791124b2a8dd1d3b87
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cbd1ff5f2baf17e9a45a64e46d2e9f9f02e1fb68
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162322"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007435"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Förbereda för TLS 1.2 i Office 365 och Office 365 GCC
 
@@ -70,6 +70,7 @@ Om du använder någon lokal infrastruktur för hybridscenarier eller Active Dir
 Följande resurser ger vägledning för att se till att dina klienter använder TLS 1.2 eller senare och inaktivera TLS 1.0 och 1.1.
 
 - Se till att TLS 1.2 är det förinställda säkra protokollet i WinHTTP i Windows för Windows 7-klienter som ansluter till Office 365. För mer information se [KB 3140245 - uppdatering att aktivera TLS 1.1 och 1.2 TLS som standard säkerhetsprotokoll i WinHTTP i Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in).
+- [TLS-chiffersviter som stöds av Office 365](/microsoft-365/compliance/technical-reference-details-about-encryption?view=o365-worldwide#tls-cipher-suites-supported-by-office-365)
 - För att börja ta itu med svaga TLS genom att ta bort TLS 1.0 och 1.1 beroenden, se [TLS 1.2 stöd på Microsoft](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/).
 - [Nya IIS-funktioner](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) gör det lättare att hitta kunder på [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) och [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) att ansluta till tjänsten med hjälp av svag säkerhetsprotokoll.
 - Få mer information om hur du [löser TLS 1.0-problemet.](https://www.microsoft.com/download/details.aspx?id=55266)

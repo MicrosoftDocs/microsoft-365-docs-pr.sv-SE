@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/28/2020
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ec3dd2edc09d504af0ed76b17577130b1cdce1b7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bc7c84e089b08c440512f8a8bf7583f41394f2ca
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275378"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007639"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Granska Microsoft Defender Antivirus genomsökningsresultat
 
@@ -47,7 +47,7 @@ Följande cmdlet returnerar varje identifiering på slutpunkten. Om det finns fl
 Get-MpThreatDetection
 ```
 
-![skärmbild av PowerShell-cmdlets och utdata](images/defender/wdav-get-mpthreatdetection.png)
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="skärmbild av PowerShell-cmdlets och utdata":::
 
 Du kan ange `-ThreatID` för att begränsa utdata för att bara visa identifieringar för ett visst hot.
 
@@ -57,7 +57,7 @@ Om du vill lista identifieringar av hot, men kombinera identifieringar av samma 
 Get-MpThreat
 ```
 
-![skärmbild av PowerShell](images/defender/wdav-get-mpthreat.png)
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell-kod":::
 
 Se [Använda PowerShell-cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) för att konfigurera och köra Microsoft Defender Antivirus- och [Defender-cmdlets för](/powershell/module/defender/) mer information om hur du använder PowerShell med Microsoft Defender Antivirus.
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: a25a2ec513cd7c25f9f6ddf3d5e328928837bf2d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: b2a6ee7c3f3ea2fb31b31d2f1db178bfd9847fbc
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275150"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007482"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Kör och granska resultatet av en genomsökning för Microsoft Defender Offline
 
@@ -69,7 +69,7 @@ Att du behöver göra en offlinesökning visas också i Microsoft Endpoint Manag
 
 Uppmaningen kan visas via ett meddelande, ungefär så här:
 
-![Windows meddelande som visar kravet att köra Microsoft Defender Offline](images/defender/notification.png)
+:::image type="content" source="../../media/notification.png" alt-text="Avisering om att köra Microsoft Defender Offline":::
 
 Användaren meddelas också Windows Defender klienten.
 
@@ -77,7 +77,7 @@ I Konfigurationshanteraren kan du identifiera slutpunktens status genom att gå 
 
 Microsoft Defender Offline genomsökningar visas under Status för skadlig kod **som Offlinesökning** **krävs.**
 
-![Microsoft Endpoint Manager att en Microsoft Defender Offline krävs](images/defender/sccm-wdo.png)
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender Offline sökning krävs":::
 
 ## <a name="configure-notifications"></a>Konfigurera meddelanden
 
