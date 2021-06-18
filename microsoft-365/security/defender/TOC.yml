@@ -328,6 +328,8 @@
                       href: streaming-api-event-hub.md
                     - name: Strömma avancerade jakthändelser till ditt lagringskonto
                       href: streaming-api-storage.md
+                    - name: Konfigurera händelsehubben
+                      href: configure-event-hub.md
                 - name: Avancerad jakt-API
                   href: api-advanced-hunting.md
                 - name: 'API:er för incidenter'
