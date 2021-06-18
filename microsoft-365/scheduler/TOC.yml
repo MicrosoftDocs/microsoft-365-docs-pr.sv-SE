@@ -1,10 +1,10 @@
-- name: Schemaläggare för Microsoft 365
+- name: Schemaläggaren för Microsoft 365
   href: scheduler-overview.md
 - name: Förtroende och sekretess
   href: scheduler-trust-privacy.md
-- name: Konfigurera Scheduler för Microsoft 365
+- name: Konfigurera Schemaläggaren för Microsoft 365
   href: scheduler-setup.md
-- name: Så här använder du Scheduler för Microsoft 365
+- name: Så här använder du Schemaläggaren för Microsoft 365
   href: scheduler-using.md
-- name: Schemaläggaren för Microsoft 365 vanliga frågor och svar
+- name: Vanliga frågor och svar om Schemaläggaren för Microsoft 365
   href: scheduler-faqs.md

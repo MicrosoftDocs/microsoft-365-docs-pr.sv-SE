@@ -1,11 +1,11 @@
 - name: Microsoft 365 Efterlevnad
   href: index.yml
+- name: Nyheter i Microsoft 365 Efterlevnad
+  href: whats-new.md
 - name: Komma igång
   items:
     - name: Snabbuppgifter för att komma igång med efterlevnad
       href: compliance-quick-tasks.md
-    - name: Nyheter i Microsoft 365 Efterlevnad
-      href: whats-new.md
     - name: Lösningskatalog för Microsoft 365
       href: microsoft-365-solution-catalog.md
     - name: Microsoft 365 Efterlevnadscenter

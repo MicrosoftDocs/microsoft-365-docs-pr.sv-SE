@@ -530,6 +530,8 @@
 ####### [Hitta maskiner efter tagg](find-machines-by-tag.md)
 ####### [Hämta saknade KB:er](get-missing-kbs-machine.md)
 ####### [Ange enhetsvärde](set-device-value.md)
+####### [Uppdatera dator](update-machine-method.md)
+
 
 
 ###### [Maskinåtgärd]()

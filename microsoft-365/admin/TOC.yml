@@ -255,7 +255,7 @@
           href: manage/pin-apps-to-app-launcher.md
         - name: Uppgradera användare till de senaste apparna
           href: setup/upgrade-users-to-latest-office-client.md
-        - name: Testa och distribuera Microsoft 365-applikationer i administrationscentret för Microsoft 365
+        - name: Integrerade appar
           href: manage/test-and-deploy-microsoft-365-apps.md
         - name: Centraliserad distribution av tillägg
           items:

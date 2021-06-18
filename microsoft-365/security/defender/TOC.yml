@@ -164,6 +164,8 @@
                   href: advanced-hunting-query-emails-devices.md
                 - name: Jag utpressningstrojan
                   href: advanced-hunting-find-ransomware.md
+                - name: Exempel på avancerad jakt
+                  href: advanced-hunting-example.md
                 - name: Övergång från Defender för Endpoint
                   href: advanced-hunting-migrate-from-mde.md
             - name: Arbeta med frågeresultat

@@ -23,172 +23,173 @@ ms.custom:
 search.appverid: MET150
 description: Tilldela licenser beroende på om du vill tilldela produktlicenser till specifika användare eller tilldela användarlicenser till en viss produkt.
 ms.date: 04/26/2021
-ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c8e5c6a648f08aaba97fe05e19a5cfa0cada2174
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537541"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007015"
 ---
-# <a name="assign-licenses-to-users"></a><span data-ttu-id="c3aa0-103">Tilldela licenser till användare</span><span class="sxs-lookup"><span data-stu-id="c3aa0-103">Assign licenses to users</span></span>
+# <a name="assign-licenses-to-users"></a><span data-ttu-id="61323-103">Tilldela licenser till användare</span><span class="sxs-lookup"><span data-stu-id="61323-103">Assign licenses to users</span></span>
 
-<span data-ttu-id="c3aa0-104">Du kan tilldela licenser till användare antingen på sidan **Aktiva användare** eller på sidan **Licenser**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-104">You can assign licenses to users on either the **Active users** page, or on the **Licenses** page.</span></span> <span data-ttu-id="c3aa0-105">Metoden du använder beror på om du vill tilldela produktlicenser till särskilda användare eller tilldela licenser för en särskild produkt till användare.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-105">The method you use depends on whether you want to assign product licenses to specific users or assign users licenses to a specific product.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="c3aa0-106">Som administratör kan du inte tilldela eller ta bort licenser för en självbetjäningsprenumeration som köpts av en användare i din organisation.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-106">As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization.</span></span> <span data-ttu-id="c3aa0-107">Du kan [ta över en självbetjäningsprenumeration](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)och sedan tilldela eller ta bort licenser.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-107">You can [take over a self-service purchase subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription), and then assign or unassign licenses.</span></span>
-
-<span data-ttu-id="c3aa0-108">[Läs om hur du lägger till ett användare och tilldelar en licens samtidigt](../add-users/add-users.md).</span><span class="sxs-lookup"><span data-stu-id="c3aa0-108">[Learn how to add a user and assign a license at the same time](../add-users/add-users.md).</span></span>
-
-## <a name="before-you-begin"></a><span data-ttu-id="c3aa0-109">Innan du börjar</span><span class="sxs-lookup"><span data-stu-id="c3aa0-109">Before you begin</span></span>
-
-- <span data-ttu-id="c3aa0-110">Du måste vara global-, licens- eller användaradministratör för att tilldela licenser.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-110">You must be a Global, License, or User admin to assign licenses.</span></span> <span data-ttu-id="c3aa0-111">Mer information finns i [Om Microsoft 365-administratörsroller](../add-users/about-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="c3aa0-111">For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).</span></span>
-- <span data-ttu-id="c3aa0-112">Du kan [tilldela Microsoft 365-licenser till användarkonton med PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="c3aa0-112">You can [assign Microsoft 365 licenses to user accounts with PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).</span></span>
-- <span data-ttu-id="c3aa0-113">Information om hur du använder gruppbaserad licensiering finns i [Tilldela licenser till användare efter gruppmedlemskap i Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)</span><span class="sxs-lookup"><span data-stu-id="c3aa0-113">To use group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)</span></span>
-- <span data-ttu-id="c3aa0-114">Vissa tjänster, till exempel Sway, tilldelas automatiskt till användarna och behöver inte tilldelas individuellt.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-114">Some services, like Sway, are automatically assigned to users, and don't need to be assigned individually.</span></span>
-
-
-## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a><span data-ttu-id="c3aa0-115">Använd sidan licenser för att tilldela licenser till användare</span><span class="sxs-lookup"><span data-stu-id="c3aa0-115">Use the Licenses page to assign licenses to users</span></span>
-
-<span data-ttu-id="c3aa0-116">När du tilldelar licenser på sidan **Licenser** tilldelar du licenser för en särskild produkt till upp till 20 användare.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-116">When you use the **Licenses** page to assign licenses, you assign licenses for a specific product to up to 20 users.</span></span> <span data-ttu-id="c3aa0-117">På sidan **Licenser** ser du en lista över alla produkter som du har prenumerationer för.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-117">On the **Licenses** page, you see a list of all the products that you have subscriptions for.</span></span> <span data-ttu-id="c3aa0-118">Du ser också det totala antalet licenser för varje produkt, hur många licenser som har tilldelats och hur många som är tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-118">You also see the total number of licenses for each product, how many licenses are assigned, and how many are available.</span></span>
-
-::: moniker range="o365-worldwide"
-
-1. <span data-ttu-id="c3aa0-119">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-119">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. <span data-ttu-id="c3aa0-120">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i Administrationscenter.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-120">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- 1. <span data-ttu-id="c3aa0-121">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-121">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.</span></span>
-
-::: moniker-end
-
-
-2. <span data-ttu-id="c3aa0-122">Välj en produkt.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-122">Select a product.</span></span>
-3. <span data-ttu-id="c3aa0-123">Välj **Tilldela licenser** på sidan produktinformation.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-123">On the product details page, select **Assign licenses**.</span></span>
-4. <span data-ttu-id="c3aa0-124">I fönstret **Tilldela licenser till användare** börjar du skriva ett namn och väljer sedan namnet från resultatet för att lägga till det i listan.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-124">In the **Assign licenses to users** pane, begin typing a name, and then choose it from the results to add it to the list.</span></span> <span data-ttu-id="c3aa0-125">Du kan lägga till upp till 20 användare åt gången.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-125">You can add up to 20 users at a time.</span></span>
-4. <span data-ttu-id="c3aa0-126">Välj **Aktivera eller inaktivera appar och tjänster** för att tilldela eller ta bort åtkomst till särskilda objekt.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-126">Select **Turn apps and services on or off** to assign or remove access to specific items.</span></span>
-6. <span data-ttu-id="c3aa0-127">När du är klar väljer du **Tilldela** och sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-127">When you're finished, select **Assign**, then select **Close**.</span></span>
-
-<span data-ttu-id="c3aa0-128">Vid konflikt visas ett meddelande som talar om vad problemet är och hur du åtgärdar det.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-128">If there's a conflict, a message displays, tells you what the problem is, and tells you how to fix it.</span></span> <span data-ttu-id="c3aa0-129">Om du till exempel valt licenser där det finns tjänster som är i konflikt, står det i meddelandet att du ska granska de tjänster som ingår i varje licens och försöka igen.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-129">For example, if you selected licenses that contain conflicting services, the error message says to review the services included with each license and try again.</span></span>
-
-## <a name="change-the-apps-and-services-a-user-has-access-to"></a><span data-ttu-id="c3aa0-130">Ändra de appar och tjänster som en användare har åtkomst till:</span><span class="sxs-lookup"><span data-stu-id="c3aa0-130">Change the apps and services a user has access to</span></span>
-
-::: moniker range="o365-worldwide"
-
-1. <span data-ttu-id="c3aa0-131">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-131">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. <span data-ttu-id="c3aa0-132">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i Administrationscenter.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-132">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- 1. <span data-ttu-id="c3aa0-133">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-133">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.</span></span>
-
-::: moniker-end
-
-
-2. <span data-ttu-id="c3aa0-134">På sidan **Licenser** väljer du raden för en enskild användare.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-134">On the **Licenses** page, select the row for a specific user.</span></span>
-3. <span data-ttu-id="c3aa0-135">I det högra fönstret markerar eller avmarkerar du de appar och tjänster som du vill ge åtkomst till eller ta bort åtkomst för.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-135">In the right pane, select or deselect the apps and services that you want to give access to or remove access from.</span></span>
-4. <span data-ttu-id="c3aa0-136">När du är klar väljer du **Spara** och sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-136">When you're finished, select **Save**, then select **Close**.</span></span>
-
-## <a name="use-the-active-users-page-to-assign-licenses"></a><span data-ttu-id="c3aa0-137">Använd sidan Aktiva användare för att tilldela licenser</span><span class="sxs-lookup"><span data-stu-id="c3aa0-137">Use the Active users page to assign licenses</span></span>
-
-<span data-ttu-id="c3aa0-138">När du använder sidan **Aktiva användare** för att tilldela licenser tilldelar du användarlicenser till produkter.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-138">When you use the **Active users** page to assign licenses, you assign users licenses to products.</span></span>
-
-### <a name="assign-licenses-to-multiple-users"></a><span data-ttu-id="c3aa0-139">Tilldela licenser till flera användare</span><span class="sxs-lookup"><span data-stu-id="c3aa0-139">Assign licenses to multiple users</span></span>
-
-::: moniker range="o365-worldwide"
-
-1. <span data-ttu-id="c3aa0-140">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-140">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. <span data-ttu-id="c3aa0-141">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-141">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- 1. <span data-ttu-id="c3aa0-142">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-142">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
-
-::: moniker-end
-
-
-2. <span data-ttu-id="c3aa0-143">Markera cirklarna bredvid namnen på de användare som du vill tilldela licenser till.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-143">Select the circles next to the names of the users that you want to assign licenses to.</span></span>
-3. <span data-ttu-id="c3aa0-144">Högst upp väljer du de tre punkterna (fler åtgärder) och väljer sedan **Hantera produktlicenser**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-144">At the top, select the three dots (more actions), then select **Manage product licenses**.</span></span>
-4. <span data-ttu-id="c3aa0-145">I fönstret **Hantera produktlicenser** väljer du **Lägg till i befintliga produktlicenstilldelningar** \> **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-145">In the **Manage product licenses** pane, select **Add to existing product license assignments** \> **Next**.</span></span>
-5. <span data-ttu-id="c3aa0-146">I fönstret **Lägg till i befintliga produkter** ställer du reglaget i läget **På** för den licens som du vill att de valda användarna ska ha.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-146">In the **Add to existing products** pane, switch the toggle to the **On** position for the license that you want the selected users to have.</span></span>\
-    <span data-ttu-id="c3aa0-147">Som standard tilldelas alla tjänster, som är associerade till de licenserna, automatiskt till användarna.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-147">By default, all services associated with those licenses are automatically assigned to the users.</span></span> <span data-ttu-id="c3aa0-148">Du kan begränsa vilka tjänster som är tillgängliga för användarna.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-148">You can limit which services are available to the users.</span></span> <span data-ttu-id="c3aa0-149">Ställ reglagen i läget **Av** för de tjänster som du inte vill att användarna ska ha.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-149">Switch the toggles to the **Off** position for the services that you don't want the users to have.</span></span>
-6. <span data-ttu-id="c3aa0-150">Längst ned i fönstret väljer du **Lägg till** \> **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-150">At the bottom of the pane, select **Add** \> **Close**.</span></span>  
-
+<span data-ttu-id="61323-104">Du kan tilldela licenser till användare antingen på sidan **Aktiva användare** eller på sidan **Licenser**.</span><span class="sxs-lookup"><span data-stu-id="61323-104">You can assign licenses to users on either the **Active users** page, or on the **Licenses** page.</span></span> <span data-ttu-id="61323-105">Metoden du använder beror på om du vill tilldela produktlicenser till särskilda användare eller tilldela licenser för en särskild produkt till användare.</span><span class="sxs-lookup"><span data-stu-id="61323-105">The method you use depends on whether you want to assign product licenses to specific users or assign users licenses to a specific product.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c3aa0-151">Om du vill tilldela licenser för ett stort antal användare använder du [Tilldela användarlicenser efter gruppmedlemskap i Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)</span><span class="sxs-lookup"><span data-stu-id="c3aa0-151">If you want to assign licenses for a large number of users, use [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)</span></span>
+> <span data-ttu-id="61323-106">Som administratör kan du inte tilldela eller ta bort licenser för en självbetjäningsprenumeration som köpts av en användare i din organisation.</span><span class="sxs-lookup"><span data-stu-id="61323-106">As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization.</span></span> <span data-ttu-id="61323-107">Du kan [ta över en självbetjäningsprenumeration](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)och sedan tilldela eller ta bort licenser.</span><span class="sxs-lookup"><span data-stu-id="61323-107">You can [take over a self-service purchase subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription), and then assign or unassign licenses.</span></span>
 
-### <a name="assign-licenses-to-one-user"></a><span data-ttu-id="c3aa0-152">Tilldela licenser till en användare</span><span class="sxs-lookup"><span data-stu-id="c3aa0-152">Assign licenses to one user</span></span>
+<span data-ttu-id="61323-108">[Läs om hur du lägger till ett användare och tilldelar en licens samtidigt](../add-users/add-users.md).</span><span class="sxs-lookup"><span data-stu-id="61323-108">[Learn how to add a user and assign a license at the same time](../add-users/add-users.md).</span></span>
+
+## <a name="before-you-begin"></a><span data-ttu-id="61323-109">Innan du börjar</span><span class="sxs-lookup"><span data-stu-id="61323-109">Before you begin</span></span>
+
+- <span data-ttu-id="61323-110">Du måste vara global-, licens- eller användaradministratör för att tilldela licenser.</span><span class="sxs-lookup"><span data-stu-id="61323-110">You must be a Global, License, or User admin to assign licenses.</span></span> <span data-ttu-id="61323-111">Mer information finns i [Om Microsoft 365-administratörsroller](../add-users/about-admin-roles.md).</span><span class="sxs-lookup"><span data-stu-id="61323-111">For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).</span></span>
+- <span data-ttu-id="61323-112">Du kan [tilldela Microsoft 365-licenser till användarkonton med PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="61323-112">You can [assign Microsoft 365 licenses to user accounts with PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).</span></span>
+- <span data-ttu-id="61323-113">Information om hur du använder gruppbaserad licensiering finns i [Tilldela licenser till användare efter gruppmedlemskap i Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)</span><span class="sxs-lookup"><span data-stu-id="61323-113">To use group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)</span></span>
+- <span data-ttu-id="61323-114">Vissa tjänster, till exempel Sway, tilldelas automatiskt till användarna och behöver inte tilldelas individuellt.</span><span class="sxs-lookup"><span data-stu-id="61323-114">Some services, like Sway, are automatically assigned to users, and don't need to be assigned individually.</span></span>
+
+
+## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a><span data-ttu-id="61323-115">Använd sidan licenser för att tilldela licenser till användare</span><span class="sxs-lookup"><span data-stu-id="61323-115">Use the Licenses page to assign licenses to users</span></span>
+
+<span data-ttu-id="61323-116">När du tilldelar licenser på sidan **Licenser** tilldelar du licenser för en särskild produkt till upp till 20 användare.</span><span class="sxs-lookup"><span data-stu-id="61323-116">When you use the **Licenses** page to assign licenses, you assign licenses for a specific product to up to 20 users.</span></span> <span data-ttu-id="61323-117">På sidan **Licenser** ser du en lista över alla produkter som du har prenumerationer för.</span><span class="sxs-lookup"><span data-stu-id="61323-117">On the **Licenses** page, you see a list of all the products that you have subscriptions for.</span></span> <span data-ttu-id="61323-118">Du ser också det totala antalet licenser för varje produkt, hur många licenser som har tilldelats och hur många som är tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="61323-118">You also see the total number of licenses for each product, how many licenses are assigned, and how many are available.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c3aa0-153">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-153">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
+1. <span data-ttu-id="61323-119">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="61323-119">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. <span data-ttu-id="c3aa0-154">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-154">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>
+ 1. <span data-ttu-id="61323-120">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="61323-120">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. <span data-ttu-id="c3aa0-155">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-155">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
+ 1. <span data-ttu-id="61323-121">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="61323-121">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.</span></span>
 
 ::: moniker-end
 
 
-2. <span data-ttu-id="c3aa0-156">Markerar raden för den användare som du vill tilldela en licens till.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-156">Select the row of the user that you want to assign a license to.</span></span>
-3. <span data-ttu-id="c3aa0-157">I det högra fönstret väljer du **Licenser och appar**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-157">In the right pane, select **Licenses and Apps**.</span></span>
-4. <span data-ttu-id="c3aa0-158">Expandera avsnittet **Licenser**, markera kryssrutorna för de licenser som du vill tilldela och välj sedan **Spara ändringar**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-158">Expand the **Licenses** section, select the boxes for the licenses that you want to assign, then select **Save changes**.</span></span>
+2. <span data-ttu-id="61323-122">Välj en produkt.</span><span class="sxs-lookup"><span data-stu-id="61323-122">Select a product.</span></span>
+3. <span data-ttu-id="61323-123">Välj **Tilldela licenser** på sidan produktinformation.</span><span class="sxs-lookup"><span data-stu-id="61323-123">On the product details page, select **Assign licenses**.</span></span>
+4. <span data-ttu-id="61323-124">I fönstret **Tilldela licenser till användare** börjar du skriva ett namn och väljer sedan namnet från resultatet för att lägga till det i listan.</span><span class="sxs-lookup"><span data-stu-id="61323-124">In the **Assign licenses to users** pane, begin typing a name, and then choose it from the results to add it to the list.</span></span> <span data-ttu-id="61323-125">Du kan lägga till upp till 20 användare åt gången.</span><span class="sxs-lookup"><span data-stu-id="61323-125">You can add up to 20 users at a time.</span></span>
+4. <span data-ttu-id="61323-126">Välj **Aktivera eller inaktivera appar och tjänster** för att tilldela eller ta bort åtkomst till särskilda objekt.</span><span class="sxs-lookup"><span data-stu-id="61323-126">Select **Turn apps and services on or off** to assign or remove access to specific items.</span></span>
+6. <span data-ttu-id="61323-127">När du är klar väljer du **Tilldela** och sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="61323-127">When you're finished, select **Assign**, then select **Close**.</span></span>
 
-## <a name="assign-a-license-to-a-guest-user"></a><span data-ttu-id="c3aa0-159">Tilldela en licens till en gästanvändare</span><span class="sxs-lookup"><span data-stu-id="c3aa0-159">Assign a license to a guest user</span></span>
+<span data-ttu-id="61323-128">Vid konflikt visas ett meddelande som talar om vad problemet är och hur du åtgärdar det.</span><span class="sxs-lookup"><span data-stu-id="61323-128">If there's a conflict, a message displays, tells you what the problem is, and tells you how to fix it.</span></span> <span data-ttu-id="61323-129">Om du till exempel valt licenser där det finns tjänster som är i konflikt, står det i meddelandet att du ska granska de tjänster som ingår i varje licens och försöka igen.</span><span class="sxs-lookup"><span data-stu-id="61323-129">For example, if you selected licenses that contain conflicting services, the error message says to review the services included with each license and try again.</span></span>
 
-<span data-ttu-id="c3aa0-160">Du kan bjuda in gästanvändare att samarbeta med din organisation i Azure Active Directory administrationscenter.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-160">You can invite guest users to collaborate with your organization in the Azure Active Directory admin center.</span></span> <span data-ttu-id="c3aa0-161">För information om gästanvändaren, se [Vad är gästanvändaråtkomst i Azure Active Directory B2B?](/azure/active-directory/external-identities/what-is-b2b).</span><span class="sxs-lookup"><span data-stu-id="c3aa0-161">To learn about guest users, see [What is guest user access in Azure Active Directory B2B?](/azure/active-directory/external-identities/what-is-b2b).</span></span> <span data-ttu-id="c3aa0-162">Om du inte har någon gästanvändare se [Snabb start: lägga till gästanvändare i katalogen i Azure-portalen](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).</span><span class="sxs-lookup"><span data-stu-id="c3aa0-162">If you don't have any guest users, see [Quickstart: Add guest users to your directory in the Azure portal](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).</span></span>
+## <a name="change-the-apps-and-services-a-user-has-access-to"></a><span data-ttu-id="61323-130">Ändra de appar och tjänster som en användare har åtkomst till:</span><span class="sxs-lookup"><span data-stu-id="61323-130">Change the apps and services a user has access to</span></span>
+
+::: moniker range="o365-worldwide"
+
+1. <span data-ttu-id="61323-131">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="61323-131">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. <span data-ttu-id="61323-132">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="61323-132">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. <span data-ttu-id="61323-133">Gå till sidan **Fakturering** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenser</a> i administrationscentret.</span><span class="sxs-lookup"><span data-stu-id="61323-133">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.</span></span>
+
+::: moniker-end
+
+
+2. <span data-ttu-id="61323-134">På sidan **Licenser** väljer du raden för en enskild användare.</span><span class="sxs-lookup"><span data-stu-id="61323-134">On the **Licenses** page, select the row for a specific user.</span></span>
+3. <span data-ttu-id="61323-135">I det högra fönstret markerar eller avmarkerar du de appar och tjänster som du vill ge åtkomst till eller ta bort åtkomst för.</span><span class="sxs-lookup"><span data-stu-id="61323-135">In the right pane, select or deselect the apps and services that you want to give access to or remove access from.</span></span>
+4. <span data-ttu-id="61323-136">När du är klar väljer du **Spara** och sedan **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="61323-136">When you're finished, select **Save**, then select **Close**.</span></span>
+
+## <a name="use-the-active-users-page-to-assign-licenses"></a><span data-ttu-id="61323-137">Använd sidan Aktiva användare för att tilldela licenser</span><span class="sxs-lookup"><span data-stu-id="61323-137">Use the Active users page to assign licenses</span></span>
+
+<span data-ttu-id="61323-138">När du använder sidan **Aktiva användare** för att tilldela licenser tilldelar du användarlicenser till produkter.</span><span class="sxs-lookup"><span data-stu-id="61323-138">When you use the **Active users** page to assign licenses, you assign users licenses to products.</span></span>
+
+### <a name="assign-licenses-to-multiple-users"></a><span data-ttu-id="61323-139">Tilldela licenser till flera användare</span><span class="sxs-lookup"><span data-stu-id="61323-139">Assign licenses to multiple users</span></span>
+
+::: moniker range="o365-worldwide"
+
+1. <span data-ttu-id="61323-140">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="61323-140">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. <span data-ttu-id="61323-141">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="61323-141">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. <span data-ttu-id="61323-142">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="61323-142">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
+
+::: moniker-end
+
+
+2. <span data-ttu-id="61323-143">Markera cirklarna bredvid namnen på de användare som du vill tilldela licenser till.</span><span class="sxs-lookup"><span data-stu-id="61323-143">Select the circles next to the names of the users that you want to assign licenses to.</span></span>
+3. <span data-ttu-id="61323-144">Längst upp väljer du **Hantera produktlicenser**.</span><span class="sxs-lookup"><span data-stu-id="61323-144">At the top, select **Manage product licenses**.</span></span>
+4. <span data-ttu-id="61323-145">I fönstret **Hantera produktlicenser** väljer du **Tilldela fler: Behåll de befintliga licenserna och tilldela fler** \> **Nästa**.</span><span class="sxs-lookup"><span data-stu-id="61323-145">In the **Manage product licenses** pane, select **Assign more: Keep the existing licenses and assign more** \> **Next**.</span></span>
+5. <span data-ttu-id="61323-146">Under **Licenser** markerar du rutan för de licenser som du vill att de valda användarna ska ha.</span><span class="sxs-lookup"><span data-stu-id="61323-146">Under **Licenses**, select the box for the license(s) that you want the selected users to have.</span></span>\
+    <span data-ttu-id="61323-p107">Som standard tilldelas alla tjänster, som är associerade till de licenserna, automatiskt till användarna. Du kan begränsa vilka tjänster som är tillgängliga för användarna. Avmarkera rutorna för de tjänster som du inte vill att användarna ska ha.</span><span class="sxs-lookup"><span data-stu-id="61323-p107">By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Deselect the boxes for the services that you don't want the users to have.</span></span>
+6. <span data-ttu-id="61323-150">Längst ned i fönstret väljer du **Spara ändringar**.</span><span class="sxs-lookup"><span data-stu-id="61323-150">At the bottom of the pane, select **Save changes**.</span></span>  
+    <span data-ttu-id="61323-151">Du kan behöva köpa ytterligare licenser om du inte har tillräckligt med licenser för alla.</span><span class="sxs-lookup"><span data-stu-id="61323-151">You might have to buy additional licneses if you don't have enough licenses for everyone.</span></span>
+
+
+> [!NOTE]
+> <span data-ttu-id="61323-152">Om du vill tilldela licenser för ett stort antal användare använder du [Tilldela användarlicenser efter gruppmedlemskap i Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)</span><span class="sxs-lookup"><span data-stu-id="61323-152">If you want to assign licenses for a large number of users, use [Assign licenses to users by group membership in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-assign)</span></span>
+
+### <a name="assign-licenses-to-one-user"></a><span data-ttu-id="61323-153">Tilldela licenser till en användare</span><span class="sxs-lookup"><span data-stu-id="61323-153">Assign licenses to one user</span></span>
+
+::: moniker range="o365-worldwide"
+
+1. <span data-ttu-id="61323-154">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="61323-154">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. <span data-ttu-id="61323-155">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="61323-155">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. <span data-ttu-id="61323-156">I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktiva användare</a>.</span><span class="sxs-lookup"><span data-stu-id="61323-156">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
+
+::: moniker-end
+
+
+2. <span data-ttu-id="61323-157">Markerar raden för den användare som du vill tilldela en licens till.</span><span class="sxs-lookup"><span data-stu-id="61323-157">Select the row of the user that you want to assign a license to.</span></span>
+3. <span data-ttu-id="61323-158">I det högra fönstret väljer du **Licenser och appar**.</span><span class="sxs-lookup"><span data-stu-id="61323-158">In the right pane, select **Licenses and Apps**.</span></span>
+4. <span data-ttu-id="61323-159">Expandera avsnittet **Licenser**, markera kryssrutorna för de licenser som du vill tilldela och välj sedan **Spara ändringar**.</span><span class="sxs-lookup"><span data-stu-id="61323-159">Expand the **Licenses** section, select the boxes for the licenses that you want to assign, then select **Save changes**.</span></span>
+
+## <a name="assign-a-license-to-a-guest-user"></a><span data-ttu-id="61323-160">Tilldela en licens till en gästanvändare</span><span class="sxs-lookup"><span data-stu-id="61323-160">Assign a license to a guest user</span></span>
+
+<span data-ttu-id="61323-161">Du kan bjuda in gästanvändare att samarbeta med din organisation i Azure Active Directory administrationscenter.</span><span class="sxs-lookup"><span data-stu-id="61323-161">You can invite guest users to collaborate with your organization in the Azure Active Directory admin center.</span></span> <span data-ttu-id="61323-162">För information om gästanvändaren, se [Vad är gästanvändaråtkomst i Azure Active Directory B2B?](/azure/active-directory/external-identities/what-is-b2b).</span><span class="sxs-lookup"><span data-stu-id="61323-162">To learn about guest users, see [What is guest user access in Azure Active Directory B2B?](/azure/active-directory/external-identities/what-is-b2b).</span></span> <span data-ttu-id="61323-163">Om du inte har någon gästanvändare se [Snabb start: lägga till gästanvändare i katalogen i Azure-portalen](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).</span><span class="sxs-lookup"><span data-stu-id="61323-163">If you don't have any guest users, see [Quickstart: Add guest users to your directory in the Azure portal](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="c3aa0-163">Du måste vara en global administratör för att utföra de här stegen.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-163">You must be a Global admin to do these steps.</span></span>
+> <span data-ttu-id="61323-164">Du måste vara en global administratör för att utföra de här stegen.</span><span class="sxs-lookup"><span data-stu-id="61323-164">You must be a Global admin to do these steps.</span></span>
 
-1. <span data-ttu-id="c3aa0-164">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory-administratörcenter</a></span><span class="sxs-lookup"><span data-stu-id="c3aa0-164">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory admin center</a></span></span>
-2. <span data-ttu-id="c3aa0-165">Välj **Användare** i navigeringsfönstret.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-165">In the navigation pane, select **Users**.</span></span>
-3. <span data-ttu-id="c3aa0-166">På **Användare | Alla användare (Förhandsgranskning)** sidan väljer du **Lägg till filter**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-166">On the **Users | All Users (Preview)** page, select **Add filters**.</span></span>
-4. <span data-ttu-id="c3aa0-167">I **Välj ett fält** väljer du **Användartyp** och sedan **Verkställ**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-167">In the **Pick a field** menu, choose **User type**, then select **Apply**.</span></span>
-5. <span data-ttu-id="c3aa0-168">I nästa meny väljer du **Gäst**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-168">In the next menu, select **Guest**.</span></span>
-6. <span data-ttu-id="c3aa0-169">Välj den användare som behöver en licens i resultatlistan.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-169">In the list of results, select the user who needs a license.</span></span>
-7. <span data-ttu-id="c3aa0-170">Under **Hantera** väljer du **Licenser**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-170">Under **Manage**, select **Licenses**.</span></span>
-8. <span data-ttu-id="c3aa0-171">Välj **Uppgifter**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-171">Select **Assignments**.</span></span>
-9. <span data-ttu-id="c3aa0-172">På sidan **Uppdatera licenstilldelningar** väljer du den produkt som du vill tilldela en licens för.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-172">On the **Update license assignments** page, select the product you want to assign a license for.</span></span>
-10. <span data-ttu-id="c3aa0-173">Gå till höger och avmarkera kryssrutorna för de tjänster som du inte vill att gäst användaren ska ha tillgång till.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-173">On the right, clear the check boxes for any services you don't want the guest user to have access to.</span></span>
-11. <span data-ttu-id="c3aa0-174">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="c3aa0-174">Select **Save**.</span></span>
+1. <span data-ttu-id="61323-165">Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory-administratörcenter</a></span><span class="sxs-lookup"><span data-stu-id="61323-165">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory admin center</a></span></span>
+2. <span data-ttu-id="61323-166">Välj **Användare** i navigeringsfönstret.</span><span class="sxs-lookup"><span data-stu-id="61323-166">In the navigation pane, select **Users**.</span></span>
+3. <span data-ttu-id="61323-167">På **Användare | Alla användare (Förhandsgranskning)** sidan väljer du **Lägg till filter**.</span><span class="sxs-lookup"><span data-stu-id="61323-167">On the **Users | All Users (Preview)** page, select **Add filters**.</span></span>
+4. <span data-ttu-id="61323-168">I **Välj ett fält** väljer du **Användartyp** och sedan **Verkställ**.</span><span class="sxs-lookup"><span data-stu-id="61323-168">In the **Pick a field** menu, choose **User type**, then select **Apply**.</span></span>
+5. <span data-ttu-id="61323-169">I nästa meny väljer du **Gäst**.</span><span class="sxs-lookup"><span data-stu-id="61323-169">In the next menu, select **Guest**.</span></span>
+6. <span data-ttu-id="61323-170">Välj den användare som behöver en licens i resultatlistan.</span><span class="sxs-lookup"><span data-stu-id="61323-170">In the list of results, select the user who needs a license.</span></span>
+7. <span data-ttu-id="61323-171">Under **Hantera** väljer du **Licenser**.</span><span class="sxs-lookup"><span data-stu-id="61323-171">Under **Manage**, select **Licenses**.</span></span>
+8. <span data-ttu-id="61323-172">Välj **Uppgifter**.</span><span class="sxs-lookup"><span data-stu-id="61323-172">Select **Assignments**.</span></span>
+9. <span data-ttu-id="61323-173">På sidan **Uppdatera licenstilldelningar** väljer du den produkt som du vill tilldela en licens för.</span><span class="sxs-lookup"><span data-stu-id="61323-173">On the **Update license assignments** page, select the product you want to assign a license for.</span></span>
+10. <span data-ttu-id="61323-174">Gå till höger och avmarkera kryssrutorna för de tjänster som du inte vill att gäst användaren ska ha tillgång till.</span><span class="sxs-lookup"><span data-stu-id="61323-174">On the right, clear the check boxes for any services you don't want the guest user to have access to.</span></span>
+11. <span data-ttu-id="61323-175">Välj **Spara**.</span><span class="sxs-lookup"><span data-stu-id="61323-175">Select **Save**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="c3aa0-175">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="c3aa0-175">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="61323-176">Nästa steg</span><span class="sxs-lookup"><span data-stu-id="61323-176">Next steps</span></span>
 
-<span data-ttu-id="c3aa0-176">Om dina användare inte har installerat Office-apparna kan du dela [snabbstartsguide för anställda](../../business-video/employee-quick-setup.md) med dina användare att konfigurera saker, t. ex. [hur du laddar ned och installerar Microsoft 365 eller Office 2019 på en PC-eller Mac-](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) och [hur du konfigurerar Office-appar och e-post på en mobil enhet](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).</span><span class="sxs-lookup"><span data-stu-id="c3aa0-176">If your users don't yet have the Office apps installed, you can share the [Employee quick start guide](../../business-video/employee-quick-setup.md) with your users to set up things, like [how to download and install Microsoft 365 or Office 2019 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and [how to set up Office apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).</span></span>
+<span data-ttu-id="61323-177">Om dina användare inte har installerat Office-apparna kan du dela [snabbstartsguide för anställda](../../business-video/employee-quick-setup.md) med dina användare att konfigurera saker, t. ex. [hur du laddar ned och installerar Microsoft 365 eller Office 2019 på en PC-eller Mac-](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) och [hur du konfigurerar Office-appar och e-post på en mobil enhet](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).</span><span class="sxs-lookup"><span data-stu-id="61323-177">If your users don't yet have the Office apps installed, you can share the [Employee quick start guide](../../business-video/employee-quick-setup.md) with your users to set up things, like [how to download and install Microsoft 365 or Office 2019 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and [how to set up Office apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="c3aa0-177">Relaterat innehåll</span><span class="sxs-lookup"><span data-stu-id="c3aa0-177">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="61323-178">Relaterat innehåll</span><span class="sxs-lookup"><span data-stu-id="61323-178">Related content</span></span>
 
-<span data-ttu-id="c3aa0-178">[Allmänt om prenumerationer och licenser](../../commerce/licenses/subscriptions-and-licenses.md) (artikel)</span><span class="sxs-lookup"><span data-stu-id="c3aa0-178">[Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md) (article)</span></span>\
-<span data-ttu-id="c3aa0-179">[Ta bort tilldelningen av licenser från användare](remove-licenses-from-users.md) (artikel)</span><span class="sxs-lookup"><span data-stu-id="c3aa0-179">[Unassign licenses from users](remove-licenses-from-users.md) (article)</span></span>\
-<span data-ttu-id="c3aa0-180">[Köpa eller ta bort licenser för prenumerationen](../../commerce/licenses/buy-licenses.md) (artikel)</span><span class="sxs-lookup"><span data-stu-id="c3aa0-180">[Buy or remove licenses for your subscription](../../commerce/licenses/buy-licenses.md) (article)</span></span>
+<span data-ttu-id="61323-179">[Allmänt om prenumerationer och licenser](../../commerce/licenses/subscriptions-and-licenses.md) (artikel)</span><span class="sxs-lookup"><span data-stu-id="61323-179">[Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md) (article)</span></span>\
+<span data-ttu-id="61323-180">[Ta bort tilldelningen av licenser från användare](remove-licenses-from-users.md) (artikel)</span><span class="sxs-lookup"><span data-stu-id="61323-180">[Unassign licenses from users](remove-licenses-from-users.md) (article)</span></span>\
+<span data-ttu-id="61323-181">[Köpa eller ta bort licenser för prenumerationen](../../commerce/licenses/buy-licenses.md) (artikel)</span><span class="sxs-lookup"><span data-stu-id="61323-181">[Buy or remove licenses for your subscription](../../commerce/licenses/buy-licenses.md) (article)</span></span>
