@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964707"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007407"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Aktivera Blockera när det först påträffas
 
@@ -82,7 +82,7 @@ Microsoft Defender Antivirus använder flera tekniker för identifiering och sky
    - **Tidstillägg för genomsökning av filer via molnet**: 50
    - **Fråga användare innan exempel skickas**: skicka alla data utan att fråga
 
-   ![Intune-konfiguration](images/defender/intune-block-at-first-sight.png)
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Konfigurationsblockering för Intune vid första anblicken":::
 
 4. Spara dina inställningar.
 
@@ -136,7 +136,7 @@ Du kan kontrollera att Blockera när det först påträffas är aktiverat på en
 
 2. Välj **Skydd mot virus och hot** och under **Inställningar för skydd mot virus och hot** väljer du **Hantera inställningar**.
 
-   ![Skärmbild på inställningsetiketten för Skydd mot virus och hot i Windows-säkerhetsappen](images/defender/wdav-protection-settings-wdsc.png)
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Skärmbild av inställningsetiketten för Skydd mot hot och virus i appen Windows-säkerhet":::
 
 3. Kontrollera att **Molnbaserat skydd** och **Skicka exempel automatiskt** är aktiverade.
 
