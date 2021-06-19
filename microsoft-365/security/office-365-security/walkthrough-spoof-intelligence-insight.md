@@ -19,12 +19,12 @@ description: Administratörer kan lära sig att använda förfalsknings- och fö
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: a683ed93e4e483e63fe01281b32661f0b803d1ce
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793214"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029303"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Hantera förfalskningsavsändare med förfalsknings- och förfalskningsinformation i EOP
 
@@ -67,7 +67,7 @@ Du kan hantera & förfalskningsinformation i Säkerhets- och efterlevnadscenter 
 - Du kan aktivera, inaktivera och konfigurera inställningarna för förfalskningsinformation i principer mot nätfiske. Anvisningar som baseras på din prenumeration finns i följande avsnitt:
 
   - [Konfigurera principer för skydd mot nätfiske i EOP.](configure-anti-phishing-policies-eop.md)
-  - [Konfigurera principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md).
+  - [Konfigurera principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-mdo-anti-phishing-policies.md).
 
 - Vi rekommenderar inställningar för förfalskningsinformation i inställningarna för [EOP-policy mot nätfiske.](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)
 
@@ -184,7 +184,7 @@ Detaljerad information om syntax och parametrar finns [i Set-PhishFilterPolicy.]
 
 1. I Säkerhets- & efterlevnadscenter går du till **Instrumentpanelen för hantering av** \> **hot.**
 
-2. Leta **efter något** av följande objekt på raden Insikter:
+2. På **Insights** kan du leta efter något av följande:
 
    - **Troliga förfalskningsdomäner de** senaste sju dagarna: Den här insikten anger att förfalskningsinformation är aktiverad (den är aktiverad som standard).
    - **Aktivera förfalskningsskydd:** Den här insikten anger att förfalskningsinformation är inaktiverad och om du klickar på insikten kan du aktivera förfalskningsinformation.

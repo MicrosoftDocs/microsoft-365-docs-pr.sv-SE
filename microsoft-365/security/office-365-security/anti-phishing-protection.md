@@ -21,12 +21,12 @@ ms.custom:
 description: Administratörer kan läsa mer om funktionerna för skydd mot nätfiske i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538345"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029243"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Skydd mot nätfiske i Microsoft 365
 
@@ -65,7 +65,7 @@ EOP (d.v.s. Microsoft 365 organisationer utan Microsoft Defender för Office 365
 
 Microsoft Defender för Office 365 innehåller ytterligare och mer avancerade funktioner mot nätfiske:
 
-- Principer för skydd mot nätfiske i **Microsoft Defender för Office 365:** Konfigurera inställningar för personifieringsskydd för specifika meddelandeavsändare och avsändardomäner, postlådeintelligensinställningar och justerbara avancerade tröskelvärden för nätfiske. Mer information finns i Konfigurera [principer för skydd mot nätfiske i Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md) Mer information om skillnaderna mellan principer för skydd mot nätfiske i EOP och principer för skydd mot nätfiske i Defender för Office 365 finns i Principer för skydd mot [nätfiske i Microsoft 365.](set-up-anti-phishing-policies.md)
+- Principer för skydd mot nätfiske i **Microsoft Defender för Office 365:** Konfigurera inställningar för personifieringsskydd för specifika meddelandeavsändare och avsändardomäner, postlådeintelligensinställningar och justerbara avancerade tröskelvärden för nätfiske. Mer information finns i Konfigurera [principer för skydd mot nätfiske i Microsoft Defender för Office 365.](configure-mdo-anti-phishing-policies.md) Mer information om skillnaderna mellan principer för skydd mot nätfiske i EOP och principer för skydd mot nätfiske i Defender för Office 365 finns i Principer för skydd mot [nätfiske i Microsoft 365.](set-up-anti-phishing-policies.md)
 
 - **Kampanjvyer:** Maskininlärning och annan heuristik identifierar och analyserar meddelanden som är inblandade i koordinerade nätfiskeattacker mot hela tjänsten och organisationen. Mer information finns i [Kampanjvyer i Microsoft Defender för Office 365](campaigns.md).
 

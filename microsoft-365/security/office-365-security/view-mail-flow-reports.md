@@ -19,12 +19,12 @@ description: Administratörer kan läsa mer om de e-postflödesrapporter som är
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985510"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029483"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Visa e-postflödesrapporter på instrumentpanelen Rapporter i Säkerhets- & Efterlevnadscenter
 
@@ -34,6 +34,9 @@ ms.locfileid: "52985510"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+> [!NOTE]
+> De flesta rapporter som beskrivs i det här avsnittet är tillgängliga i administrationscentret för Exchange (EAC). Mer information finns i [E-postflödesrapporter i det nya administrationscentret för Exchange.](/exchange/monitoring/mail-flow-reports/mail-flow-reports) [Exchange-transportregelrapporten](view-email-security-reports.md#exchange-transport-rule-report) är tillgänglig på Microsoft 365 Defender-portalen.
 
 Utöver de e-postflödesrapporter som [](mail-flow-insights-v2.md) finns tillgängliga på instrumentpanelen för e-postflöde i säkerhets- och efterlevnadscentret för & finns det en mängd andra e-postflödesrapporter på instrumentpanelen Rapporter som hjälper dig att övervaka din Microsoft 365-organisation.
 
@@ -166,7 +169,7 @@ Om du vill gå tillbaka till rapportvyn klickar du **på Visa rapport.**
 
 ## <a name="forwarding-report"></a>Vidarebefordransrapport
 
-I **vidarebefordransrapporten** visas organisationens automatiskt vidarebefordrade meddelanden till externa domäner från Exchange Online-postlådor. Vidarebefordrade meddelanden kan vara en säkerhets- eller efterlevnadsrisk och kan ange ett komprometterat konto.
+I **vidarebefordransrapporten** visas organisationens automatiskt vidarebefordrade meddelanden till externa domäner från Exchange Online postlådor. Vidarebefordrade meddelanden kan vara en säkerhets- eller efterlevnadsrisk och kan ange ett komprometterat konto.
 
 Om du vill visa rapporten öppnar du [säkerhets- & Kompatibilitetscenter](https://protection.office.com), går till  \> **instrumentpanelen rapporter** och väljer **Vidarebefordransrapport.** Gå direkt till rapporten genom att öppna <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -421,7 +424,9 @@ Varje exporterad .csv är begränsad till 150 000 rader. Om informationen inneh�
 
 ## <a name="sent-and-received-email-report"></a>Rapport om skickad och mottagen e-post
 
-Rapporten **Skickad och mottagen** e-post är en smart rapport som visar information om inkommande och utgående e-post, inklusive identifiering av skräppost, skadlig programvara och e-post som identifieras som "bra". Skillnaden mellan den här rapporten och [statusrapporten](#mailflow-status-report) E-postflöde är: den här rapporten innehåller inga data om meddelanden som blockeras av edge-skydd. Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som ett meddelande.
+Rapporten **Skickad och mottagen** e-post är en smart rapport som visar information om inkommande och utgående e-post, inklusive identifiering av skräppost, skadlig programvara och e-post som identifieras som "bra". Skillnaden mellan den här rapporten och [statusrapporten](#mailflow-status-report) E-postflöde är: den här rapporten innehåller inga data om meddelanden som blockeras av edge-skydd.
+
+**Obs!** Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som ett meddelande.
 
 Mängdvyn och detaljvyn för rapporten tillåter 90 dagars filtrering.
 

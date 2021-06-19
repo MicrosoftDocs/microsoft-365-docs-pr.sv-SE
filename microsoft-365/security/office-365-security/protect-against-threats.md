@@ -20,12 +20,12 @@ description: Administratörer kan läsa mer om skydd mot hot i Microsoft 365 kon
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d61b17fc4575249bb592fc4ca865c34a628361a
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 407838c815a85ce7c73322a0de176970ee93e537
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878334"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029615"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -139,11 +139,12 @@ Här beskrivs hur du konfigurerar standardprincipen för skydd mot nätfiske. In
        - **Om postlådeinformation** upptäcker en imiterad användare: Välj Flytta meddelandet till mottagarnas skräppostmappar (Standard) eller Sätt meddelandet <sup>\*</sup> i **karantän** (Strikt). 
        - **Om meddelandet identifieras som förfalskning** väljer du Flytta meddelandet till mottagarnas skräppostmappar **(Standard)** eller Sätt meddelandet **i** karantän (strikt).
      - **Säkerhetstips & indikatorer:** Konfigurera följande inställningar:
+       - **Visa dialogrutan för säkerhetstips**: Välj (aktivera).
        - **Visa användares personifiering säkerhetstips:** <sup>\*</sup> Välj (aktivera).
        - **Visa domänens personifiering säkerhetstips** <sup>\*</sup> : Välj (aktivera).
        - **Visa användarpersonifiering ovanliga tecken säkerhetstips** <sup>\*</sup> : Välj (aktivera).
        - **Visa (?) för oauthenticerade avsändare för förfalskning:** Välj (aktivera).
-       - **Visa via-taggen:** Välj (aktivera) om den här inställningen är tillgänglig.
+       - **Visa "via"-taggen:** Välj (aktivera).
 
      Klicka på **Spara** när du är klar.
 
@@ -151,7 +152,7 @@ Här beskrivs hur du konfigurerar standardprincipen för skydd mot nätfiske. In
 
 4. Klicka **på Spara** och sedan på **Stäng**
 
-Detaljerade anvisningar för hur du konfigurerar principer för skydd mot nätfiske finns i Konfigurera principer för skydd mot nätfiske i [EOP](configure-anti-phishing-policies-eop.md) och Konfigurera principer för skydd mot nätfiske i [Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
+Detaljerade anvisningar för hur du konfigurerar principer för skydd mot nätfiske finns i Konfigurera principer för skydd mot nätfiske i [EOP](configure-anti-phishing-policies-eop.md) och Konfigurera principer för skydd mot nätfiske i [Microsoft Defender för Office 365.](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>Del 3 – Skydd mot skräppost i EOP
 
@@ -278,7 +279,7 @@ Mer information om aviseringar finns i [Skapa aktivitetsaviseringar i Säkerhets
 > När du är klar med konfigureringen använder du de här länkarna för att starta undersökningar om arbetsbelastningen:
 >
 >- [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
->- [Använda Defender Microsoft 365 portalen för att hantera filer i karantän i Defender för Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+>- [Använd Microsoft 365 Defender för att hantera filer i karantän i Defender för Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 >- [Vad kan jag göra när en skadlig fil hittas i SharePoint Online, OneDrive och Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
 

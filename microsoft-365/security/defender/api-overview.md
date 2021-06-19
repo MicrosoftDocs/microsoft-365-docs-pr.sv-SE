@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1ddb6da49e5e9f23aacf73caaeb91302ac9c19c9
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 2ca601c3c68df9f9f1cc4fb90bcfbe907850ce91
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028973"
+ms.locfileid: "53029735"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>Översikt över Microsoft 365 Defender API:er
 
@@ -48,13 +48,10 @@ Använd API:Microsoft 365 Defender för att automatisera arbetsflöden baserat p
 
 Använd [Streaming API för](../defender-endpoint/raw-data-export.md) att skicka händelser och aviseringar i realtid från instanser när de inträffar i en enda dataström.
 
-
 Tillsammans med dessa Microsoft 365 Defender-specifika API:er visar var och en av våra andra säkerhetsprodukter ytterligare [API:er](api-articles.md) så att du kan använda deras unika funktioner.
-
 
 > [!NOTE]
 > Övergången till den enhetliga portalen bör inte påverka PowerBi-instrumentpanelerna baserade på Microsoft Defender för slutpunkts-API:er. Du kan fortsätta att arbeta med befintliga API:er oavsett den interaktiva portalövergången.
-
 
 ## <a name="learn-more"></a>Mer information
 

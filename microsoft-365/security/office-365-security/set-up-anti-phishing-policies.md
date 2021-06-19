@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om principer för skydd mot nätfiske som finns i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 846043be72be741e60c09c85fba14dbf291612a1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964891"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029375"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Principer mot nätfiske i Microsoft 365
 
@@ -62,7 +62,7 @@ Information om hur du konfigurerar principer mot nätfiske finns i följande art
 
 - [Konfigurera principer för skydd mot nätfiske i EOP](configure-anti-phishing-policies-eop.md)
 
-- [Konfigurera principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)
+- [Konfigurera principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-mdo-anti-phishing-policies.md)
 
 I resten av den här artikeln beskrivs de inställningar som är tillgängliga i principer mot nätfiske i EOP och Defender för Office 365.
 
@@ -131,9 +131,6 @@ Inställningar för oautherade avsändare är [](#spoof-settings) en del av inst
 - Aktivera oautentiserade avsändares frågetecken **(?)-symbol?**: När den här inställningen är aktiverad läggs ett frågetecken till på avsändarens foto  i rutan Från om meddelandet inte klarar SPF- eller DKIM-kontroller och meddelandet inte klarar DMARC eller sammansatt [autentisering.](email-validation-and-authentication.md#composite-authentication) När den här inställningen är inaktiverad läggs frågetecknet inte till på avsändarens foto.
 
 - Aktivera **via-taggen?**: När den här inställningen är aktiverad läggs via-taggen (chris@contoso.com via fabrikam.com) till i rutan Från om domänen i från-adressen (meddelandets avsändare som visas i e-postklienter) skiljer sig från domänen i DKIM-signaturen eller <sup>\*</sup> MAIL <u></u> **FROM-adressen.** Mer information om de här adresserna finns i [En översikt över e-poststandarder.](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
-
-> [!NOTE]
-> För närvarande är **inställningen Aktivera via-taggen inte** tillgänglig i alla organisationer. Om du inte har inställningen Enable **"via"** så  styrs frågetecknet och via-taggen båda av inställningen Enable **unauthenticated sender frågetecken (?)** i organisationen.
 
 Om du vill förhindra att frågetecknet eller via taggen läggs till i meddelanden från specifika avsändare har du följande alternativ:
 

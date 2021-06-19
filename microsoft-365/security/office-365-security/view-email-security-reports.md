@@ -19,12 +19,12 @@ description: Administratörer kan ta reda på hur de e-postsäkerhetsrapporter s
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022955"
+ms.locfileid: "53029579"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visa e-postsäkerhetsrapporter på Microsoft 365 Defender-portalen
 
@@ -157,7 +157,9 @@ Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& fö
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>Typvy för statusrapporten E-postflöde
 
-När du öppnar rapporten är **fliken Typ** markerad som standard. Som standard innehåller den här vyn ett diagram och en informationstabell som är konfigurerad med följande filter:
+![Typvy i statusrapporten För e-postflöde](../../media/mail-flow-status-report-type-view.png)
+
+På sidan **Statusrapport för e-postflöde** **är fliken** Typ markerad som standard. Som standard innehåller den här vyn ett diagram och en informationstabell som är konfigurerad med följande filter:
 
 - **Datum (UTC)** De senaste sju dagarna.
 - **E-postriktning:**
@@ -175,7 +177,7 @@ När du öppnar rapporten är **fliken Typ** markerad som standard. Som standard
 
 Diagrammet ordnas efter **typvärdena.**
 
-Du kan ändra dessa filter genom att klicka **på Filter** eller genom att klicka på ett värde i diagramförklaringen.
+Du kan ändra filtren genom att klicka på **Filter.**
 
 Följande information visas i detaljtabellen under diagrammet:
 
@@ -200,9 +202,9 @@ I detaljvyn kan du bara exportera data under en dag. Om du vill exportera data i
 
 Varje exporterad .csv är begränsad till 150 000 rader. Om dagens data innehåller mer än 150 000 rader skapas .csv filer.
 
-![Typvy i statusrapporten För e-postflöde](../../media/mail-flow-status-report-type-view.png)
-
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Riktningsvyn för statusrapporten E-postflöde
+
+![Riktningsvyn i statusrapporten E-postflöde](../../media/mail-flow-status-report-direction-view.png)
 
 Om du klickar **på** fliken Riktning används samma standardfilter **från** vyn Typ.
 
@@ -220,11 +222,11 @@ I detaljvyn kan du bara exportera data under en dag. Om du vill exportera data i
 
 Varje exporterad .csv är begränsad till 150 000 rader. Om dagens data innehåller mer än 150 000 rader skapas .csv filer.
 
-![Riktningsvyn i statusrapporten E-postflöde](../../media/mail-flow-status-report-direction-view.png)
-
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Trattvyn för statusrapporten E-postflöde
 
 I **vyn Tratt** kan du se hur Microsofts skyddsfunktioner för e-posthot filtrerar inkommande och utgående e-post i organisationen. Här finns information om totalt antal e-postmeddelanden och hur de konfigurerade funktionerna för skydd mot hot, inklusive gränsskydd, skydd mot skadlig programvara, skydd mot nätfiske, skräppost och förfalskning, påverkar antalet.
+
+![Trattvyn i statusrapporten För e-postflöde](../../media/mail-flow-status-report-funnel-view.png)
 
 Om du klickar **på fliken Tratt** innehåller den här vyn som standard ett diagram och en informationstabell som är konfigurerad med följande filter:
 
@@ -289,8 +291,6 @@ När du har **klickat** **på Exportera** under Alternativ kan du välja något 
 Välj **ett** område under Datum och klicka sedan på **Använd**. Data för de aktuella filtren exporteras till en .csv fil.
 
 Varje exporterad .csv är begränsad till 150 000 rader. Om informationen innehåller mer än 150 000 rader skapas .csv filer.
-
-![Trattvyn i statusrapporten För e-postflöde](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>Tech view for the Mailflow status report
 
@@ -460,14 +460,23 @@ Diagrammet visar följande information:
 På sidan **Inskickade** data kan du filtrera både diagrammet och detaljtabellen genom att klicka på **Filtrera** och välja ett eller flera av följande värden:
 
 - **Rapporterad** datum : **Starttid** **och Sluttid**
-- **Inskickingstyp:** **E-post, URL** eller **fil** 
+- **Överföringstyp:**
+  - **E-post**
+  - **URL**
+  - **Fil**
 - **Sändnings-ID**
 - **Id för nätverksmeddelande**
 - **Avsändare**
 - **Namn**
 - **Skickat av**
-- **Orsak till att skicka:** **Inte skräppost,** **phish,** **skadlig** programvara eller **skräppost**
-- **Rescan-status:** **Väntande** eller **Slutförd**
+- **Orsak till att skicka:**
+  - **Inte skräppost**
+  - **Nätfiske**
+  - **Skadlig programvara**
+  - **Skräppost**
+- **Rescan-status**:
+  - **Väntande**
+  - **Slutförd**
 
 Detaljtabellen under diagrammet visar samma information  och har samma alternativ  för Gruppera eller Anpassa kolumner som på fliken Skickat för analys i Skicka e-& **med** samarbete –  \> **inskickade.** Mer information finns i [Visa inskickade administratörer till Microsoft.](admin-submission.md#view-admin-submissions-to-microsoft)
 
@@ -772,7 +781,7 @@ Om du klickar **på** Filter kan du ange ett datumintervall **med Startdatum** *
 
 ## <a name="url-threat-protection-report"></a>Rapport om skydd mot URL-hot
 
-Rapporten **om skydd mot URL-hot** är tillgänglig i Microsoft Defender för Office 365. Mer information finns i Rapporten [om url-skydd mot hot.](view-reports-for-mdo.md#url-threat-protection-report)
+Rapporten **om skydd mot URL-hot** är endast tillgänglig i Microsoft Defender för Office 365. Mer information finns i Rapporten [om url-skydd mot hot.](view-reports-for-mdo.md#url-threat-protection-report)
 
 ## <a name="user-reported-messages-report"></a>Rapport över användarrapporterade meddelanden
 

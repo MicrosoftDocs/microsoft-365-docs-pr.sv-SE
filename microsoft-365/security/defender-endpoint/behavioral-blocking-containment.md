@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c480bb83465e6057cd1cf29f1f5077f2a0e165e8
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 98ea631536bbfa9e1858f70ae3a0ea9de8743572
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028829"
+ms.locfileid: "53029783"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Beteendeblockering och inneslutning
 
@@ -36,9 +36,9 @@ ms.locfileid: "53028829"
 
 ## <a name="overview"></a>Översikt
 
-Dagens hot landskap är över [](/windows/security/threat-protection/intelligence/fileless-threats) av fillös skadlig programvara och som lever utanför landet, mycket polymorfiska hot som muterar snabbare än traditionella lösningar kan hålla dig till och mänskliga drivna attacker som anpassar sig till vad adversaries hittar på komprometterade enheter. Traditionella säkerhetslösningar är inte tillräckliga för att stoppa sådana attacker. du behöver artificiell intelligens (AI) och enheter för utbildning (ML) säkerhetskopierade funktioner, till exempel beteendeblockering och inneslutning, som finns i [Defender för slutpunkt.](/windows/security) 
+Dagens hot landskap är över [](/windows/security/threat-protection/intelligence/fileless-threats) av fillös skadlig programvara och som lever utanför landet, mycket polymorfiska hot som muterar snabbare än traditionella lösningar kan hålla dig till och mänskliga drivna attacker som anpassar sig till vad adversaries hittar på komprometterade enheter. Traditionella säkerhetslösningar är inte tillräckliga för att stoppa sådana attacker. du behöver artificiell intelligens (AI) och enheter för utbildning (ML) säkerhetskopierade funktioner, till exempel beteendeblockering och inneslutning, som finns i [Defender för slutpunkt.](/windows/security)
 
-Funktioner för blockering och inneslutning kan hjälpa till att identifiera och stoppa hot baserat på deras beteende och processträd även när hoten har börjat användas. Nästa generations skydd, Identifiering och åtgärd på slutpunkt Defender för Slutpunktskomponenter och funktioner fungerar tillsammans för funktioner för beteendeblockering och inneslutning. 
+Funktioner för blockering och inneslutning kan hjälpa till att identifiera och stoppa hot baserat på deras beteende och processträd även när hoten har börjat användas. Nästa generations skydd, Identifiering och åtgärd på slutpunkt Defender för Slutpunktskomponenter och funktioner fungerar tillsammans för funktioner för beteendeblockering och inneslutning.
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Beteendeblockering och inneslutning":::
 
@@ -50,7 +50,7 @@ Funktioner för blockering och inneslutning fungerar med flera komponenter och f
 
 - [Defender för Endpoint](overview-endpoint-detection-response.md) har ett brett utbud avropsoptisk över identiteter, e-post, data och appar, utöver de nätverks-, slutpunkts- och kernel-funktionssignaler som tas emot via Identifiering och åtgärd på slutpunkt. En komponent i [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender för Endpoint bearbetar och korrelerar dessa signaler, upphöjer identifieringsaviseringar och kopplar relaterade aviseringar i incidenter.
 
-Med dessa funktioner kan fler hot förhindras eller blockeras, även om de börjar köras. När misstänkt beteende upptäcks finns risken kvar, aviseringar skapas och hot stoppas i deras spår. 
+Med dessa funktioner kan fler hot förhindras eller blockeras, även om de börjar köras. När misstänkt beteende upptäcks finns risken kvar, aviseringar skapas och hot stoppas i deras spår.
 
 Följande bild visar ett exempel på en varning som utlöstes genom funktionella blockerings- och inneslutningsfunktioner:
 
@@ -58,13 +58,13 @@ Följande bild visar ett exempel på en varning som utlöstes genom funktionella
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Komponenter i beteendeblockering och inneslutning
 
-- **Regler för att minska attackytan på [klientsidan](attack-surface-reduction.md)** Fördefinierade vanliga attackbeteenden förhindras från att köras, enligt reglerna för minskning av attackytan. När sådana beteenden försöker köras kan de ses i Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) som informationsaviseringar. Minskning av attackytan är inte aktiverat som standard. konfigurerar du dina principer i [Microsoft 365 Defender](microsoft-defender-security-center.md).
+- **Regler för att minska attackytan på [klientsidan](attack-surface-reduction.md)** Fördefinierade vanliga attackbeteenden förhindras från att köras, enligt reglerna för minskning av attackytan. När sådana beteenden försöker köras kan de ses i Microsoft 365 Defender <https://security.microsoft.com> som informationsaviseringar. Minskning av attackytan är inte aktiverat som standard. konfigurerar du dina principer i [Microsoft 365 Defender](microsoft-defender-security-center.md).
 
-- **[Klientbeteendeblockering](client-behavioral-blocking.md)** Hot på slutpunkter upptäcks genom maskininlärning och blockeras och åtgärdas automatiskt. (Klientbeteendeblockering är aktiverat som standard.) 
+- **[Klientbeteendeblockering](client-behavioral-blocking.md)** Hot på slutpunkter upptäcks genom maskininlärning och blockeras och åtgärdas automatiskt. (Klientbeteendeblockering är aktiverat som standard.)
 
-- **[Blockering av feedbackslingor](feedback-loop-blocking.md)** (kallas även snabbt skydd) Hotidentifiering observeras via beteendeinformation. Hot stoppas och förhindras från att köras på andra slutpunkter. (Blockering av feedbackslingar är aktiverat som standard.) 
+- **[Blockering av feedbackslingor](feedback-loop-blocking.md)** (kallas även snabbt skydd) Hotidentifiering observeras via beteendeinformation. Hot stoppas och förhindras från att köras på andra slutpunkter. (Blockering av feedbackslingar är aktiverat som standard.)
 
-- **[Identifiering och svar av slutpunkt (Identifiering och åtgärd på slutpunkt) i blockeringsläge](edr-in-block-mode.md)** Skadliga artefakter eller beteenden som observerats genom skydd efter intrång blockeras och finns. Identifiering och åtgärd på slutpunkt i blockeringsläge fungerar även om Microsoft Defender Antivirus inte är den primära antiviruslösningen. (Identifiering och åtgärd på slutpunkt i blockläge är inte aktiverat som standard, du aktiverar det Microsoft 365 Defender.) 
+- **[Identifiering och svar av slutpunkt (Identifiering och åtgärd på slutpunkt) i blockeringsläge](edr-in-block-mode.md)** Skadliga artefakter eller beteenden som observerats genom skydd efter intrång blockeras och finns. Identifiering och åtgärd på slutpunkt i blockeringsläge fungerar även om Microsoft Defender Antivirus inte är den primära antiviruslösningen. (Identifiering och åtgärd på slutpunkt i blockläge är inte aktiverat som standard, du aktiverar det Microsoft 365 Defender.)
 
 Räkna med att fler kommer in när det gäller beteendeblockering och inneslutning, eftersom Microsoft fortsätter att förbättra funktionerna för skydd mot hot. Om du vill se vad som är planerat och lanserat nu kan du besöka [Microsoft 365 översikt.](https://www.microsoft.com/microsoft-365/roadmap)
 
@@ -88,12 +88,12 @@ Nedan finns två verkliga exempel på beteendeblockering och inneslutning i prak
 
 ### <a name="example-1-credential-theft-attack-against-100-organizations"></a>Exempel 1: Autentiseringsstöldattack mot 100 organisationer
 
-Så som beskrivs i Hot hot mot [elusiva hot: AI-drivna](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)beteendebaserade blockering stoppar attacker i sina spår , en autentiseringsstöldattack mot 100 organisationer runt om i världen har stoppats av funktionsblockering och inneslutningsfunktioner. E-postmeddelanden om försök till nätfiske som innehöll ett lure-dokument har skickats till de riktade organisationerna. Om en mottagare öppnade den bifogade filen kunde ett relaterat fjärrdokument köra kod på användarens enhet och läsa in malware från Malware för Malware, som har stulit autentiseringsuppgifter, lagrat stulna data och väntat på ytterligare instruktioner från en kommando- och kontrollserver. 
+Så som beskrivs i Hot hot mot [elusiva hot: AI-drivna](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)beteendebaserade blockering stoppar attacker i sina spår , en autentiseringsstöldattack mot 100 organisationer runt om i världen har stoppats av funktionsblockering och inneslutningsfunktioner. E-postmeddelanden om försök till nätfiske som innehöll ett lure-dokument har skickats till de riktade organisationerna. Om en mottagare öppnade den bifogade filen kunde ett relaterat fjärrdokument köra kod på användarens enhet och läsa in malware från Malware för Malware, som har stulit autentiseringsuppgifter, lagrat stulna data och väntat på ytterligare instruktioner från en kommando- och kontrollserver.
 
 Behavior-based device learning models in Defender for Endpoint caught and stopped the attacker's techniques at two points in the attack chain:
 
 - Det första skyddslagret upptäckte sårbarhetsbeteendet. Enhet med utbildning i molnet har identifierat hoten korrekt och omedelbart fått instruktioner om att klientenheten ska blockera attacken.
-- Det andra skyddlagret, som hjälpte dig att stoppa fall där attacken kom förbi det första lagret, upptäckte process ihålig process, stoppade processen och tog bort motsvarande filer (till exempelLagraibot). 
+- Det andra skyddlagret, som hjälpte dig att stoppa fall där attacken kom förbi det första lagret, upptäckte process ihålig process, stoppade processen och tog bort motsvarande filer (till exempelLagraibot).
 
 När attacken upptäcktes och stoppades utlöstes varningar, till exempel en "initial åtkomstvarning", och visades [i Microsoft 365 Defender](microsoft-defender-security-center.md) -portalen (tidigare Microsoft Defender Säkerhetscenter):
 
@@ -107,15 +107,15 @@ Enligt beskrivningen i det senaste blogginlägget upptäcktes blockering och inn
 
 :::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="NTLM-varning för skadlig juicy-potatis":::
 
-Hot som visades vara skadlig kod. det var en ny variant som inte syns förut, av ett ökänt hackverktyg som kallas Juicy Potatis, som används av attackerare för att få eskalering av behörighet på en enhet. 
+Hot som visades vara skadlig kod. det var en ny variant som inte syns förut, av ett ökänt hackverktyg som kallas Juicy Potatis, som används av attackerare för att få eskalering av behörighet på en enhet.
 
 Minuter efter att aviseringen utlöstes analyserades filen och bekräftades vara skadlig. Processen har stoppats och blockerats, enligt följande bild:
 
 :::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artefakt blockerad":::
 
-Några minuter efter att artefakten blockerades blockerades flera instanser av samma fil på samma enhet, vilket hindrade ytterligare attacker eller annan skadlig programvara från att distribuera på enheten. 
+Några minuter efter att artefakten blockerades blockerades flera instanser av samma fil på samma enhet, vilket hindrade ytterligare attacker eller annan skadlig programvara från att distribuera på enheten.
 
-Det här exemplet visar att hot identifieras, finns och blockeras automatiskt med funktioner för beteendeblockering och inneslutning. 
+Det här exemplet visar att hot identifieras, finns och blockeras automatiskt med funktioner för beteendeblockering och inneslutning.
 
 ## <a name="next-steps"></a>Nästa steg
 

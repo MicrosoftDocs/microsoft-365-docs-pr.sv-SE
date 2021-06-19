@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 03fd82cd5dc24653b6d67fa47cc225d355bfac45
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 3cbd329c63d7cf1868083c66919773e14ed51156
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028805"
+ms.locfileid: "53029603"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>Få åtkomst Microsoft 365 Defender API:er
 
@@ -59,7 +59,7 @@ Använd det här sammanhanget för appar som körs utan att en inloggad använda
 2. Tilldela önskad behörighet till programmet.
 3. Skapa en nyckel för programmet.
 4. Hämta en säkerhetstoken med hjälp av programmet och dess nyckel.
-5. Använd tokenet för att komma Microsoft 365 Defender API.
+5. Använd tokenet för att komma åt Microsoft 365 Defender API.
 
 Mer information finns i Skapa **[ett program för att komma Microsoft 365 Defender utan en användare.](api-create-app-web.md)**
 
@@ -70,7 +70,7 @@ Använd det här sammanhanget för att utföra åtgärder för en enskild använ
 1. Skapa ett Azure Active Directory inbyggt program.
 2. Tilldela önskad behörighet till programmet.
 3. Hämta en säkerhetstoken med användaruppgifterna för programmet.
-4. Använd tokenet för att komma Microsoft 365 Defender API.
+4. Använd tokenet för att komma åt Microsoft 365 Defender API.
 
 Mer information finns i Skapa **[ett program för att komma Microsoft 365 Defender API:er åt en användare.](api-create-app-user-context.md)**
 
@@ -82,7 +82,7 @@ Använd det här sammanhanget när du behöver tillhandahålla ett program för 
 2. Tilldela önskad behörighet till programmet.
 3. Få [administratörsmedgivande](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) för appen från varje klientorganisation.
 4. Hämta en säkerhetstoken med användarautentiseringsuppgifter baserat på en kunds klientorganisations-ID.
-5. Använd tokenet för att komma Microsoft 365 Defender API.
+5. Använd tokenet för att komma åt Microsoft 365 Defender API.
 
 Mer information finns i Skapa **[ett program med partneråtkomst till Microsoft 365 Defender API:er.](api-partner-access.md)**
 

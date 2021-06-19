@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 14033ffeb3d08efad7f45eb4c319ac0401b7df09
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 7891d61de7581a896a6599004eae91a4e47e1581
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028481"
+ms.locfileid: "53029951"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Felsöka Microsoft 365 Defender problem med tjänsten
 
@@ -56,5 +56,3 @@ Du aktiverar Microsoft 365 Defender genom att **Inställningar** från navigerin
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Hur skapar jag ett undantag för min fil/URL?
 
 En falsk positiv inställning är en fil eller URL som identifieras som skadlig men inte är ett hot. Du kan skapa indikatorer och definiera undantag för att häva blockeringen och tillåta vissa filer/URL-adresser. Se [Adress: falska positiva/negativa i Defender för Slutpunkt](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).
-
-

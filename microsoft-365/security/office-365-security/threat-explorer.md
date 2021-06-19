@@ -19,12 +19,12 @@ description: Använd Explorer och realtidsidentifiering i säkerhetscentret i Mi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12fb7f757912a8f1c87a57c386c6f698d777752a
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930301"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029591"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Identifiering av hot i Utforskaren och i realtid
 
@@ -513,12 +513,12 @@ Anta att du vill se [e-postmeddelanden](enable-the-report-message-add-in.md) som
    > [!div class="mx-imgBorder"]
    > ![Användarrapporterad phish](../../media/EmailUserReportedReportType.png)
 
-Rapporten uppdateras för att visa data om e-postmeddelanden som personer i organisationen har rapporterat som nätfiskeförsök. Du kan använda den här informationen för ytterligare analys och, om det behövs, justera dina principer mot nätfiske i [Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
+Rapporten uppdateras för att visa data om e-postmeddelanden som personer i organisationen har rapporterat som nätfiskeförsök. Du kan använda den här informationen för ytterligare analys och, om det behövs, justera dina principer mot nätfiske i [Microsoft Defender för Office 365.](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="start-automated-investigation-and-response"></a>Starta automatisk undersökning och svar
 
 > [!NOTE]
-> Funktioner för automatisk undersökning och svar finns i *Microsoft Defender för Office 365 abonnemang 2* och *e5 Office 365.*
+> Funktioner för automatisk undersökning och svar finns i *Microsoft Defender för Office 365 abonnemang 2* och *Office 365 E5.*
 
 [Med automatiserad undersökning och](automated-investigation-response-office.md) svar kan du spara tid och arbete som utförs i säkerhetsåtgärder mot cyberattacker. Förutom att konfigurera aviseringar som kan utlösa en säkerhetsspelbok kan du starta en automatiserad undersökning och svarsprocess från en vy i Utforskaren. Mer information finns i [Exempel: En säkerhetsadministratör utlöser en undersökning från Utforskaren](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
@@ -530,11 +530,11 @@ Utöver scenarierna som beskrivs i den här artikeln finns det många fler rappo
 - [Visa skadliga filer som upptäckts SharePoint Online, OneDrive och Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Få en översikt över vyerna i Hotutforskaren (och identifieringar i realtid)](threat-explorer-views.md)
 - [Statusrapport för hotskydd](view-email-security-reports.md#threat-protection-status-report)
-- [Automatiserad undersökning och svar i Microsoft 365 Defender](../defender/m365d-autoir.md)
+- [Automatisk undersökning och svar i Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Obligatoriska licenser och behörigheter
 
-Du måste ha [Microsoft Defender Office 365](defender-for-office-365.md) kunna använda Utforskaren eller identifiering i realtid.
+Du måste ha [Microsoft Defender för Office 365](defender-for-office-365.md) för att kunna använda Utforskaren eller identifiering i realtid.
 
 - Utforskaren ingår i Defender för Office 365 abonnemang 2.
 - Rapporten Identifieringar i realtid ingår i Defender för Office 365 abonnemang 1.
@@ -545,10 +545,10 @@ Om du vill visa och använda Utforskaren eller Identifiering i realtid måste du
 - För Säkerhets- & efterlevnadscenter måste du ha en av följande roller tilldelade:
 
   - Organisationshantering
-  - Säkerhetsadministratör (det här kan tilldelas Azure Active Directory administrationscentret ( <https://aad.portal.azure.com> )
+  - Säkerhetsadministratör (detta kan tilldelas i administrationscentret för Azure Active Directory ( <https://aad.portal.azure.com> )
   - Säkerhetsläsare
 
-- För Exchange Online rollerna måste du ha en av följande roller tilldelade i Exchange admin center ( <https://admin.protection.outlook.com/ecp/> ) eller [Exchange Online PowerShell:](/powershell/exchange/exchange-online-powershell)
+- För Exchange Online måste du ha någon av följande roller tilldelade i administrationscentret för Exchange ( <https://admin.protection.outlook.com/ecp/> ) eller Exchange Online [PowerShell:](/powershell/exchange/exchange-online-powershell)
 
   - Organisationshantering
   - View-Only organisationshantering
@@ -565,7 +565,7 @@ Mer information om roller och behörigheter finns i följande resurser:
 - Rapporten *Identifieringar i realtid finns* i Defender för Office 365 abonnemang 1. *Threat Explorer* är tillgänglig i Defender för Office 365 abonnemang 2.
 - Med rapporten Realtidsidentifiering kan du visa identifieringar i realtid. Threat Explorer gör detta också, men det ger också ytterligare information om en viss attack.
 - Vyn *Alla e-postmeddelanden* är tillgänglig i Utforskaren med hot men inte i rapporten om identifiering i realtid.
-- Fler filtreringsfunktioner och tillgängliga åtgärder ingår i Hotutforskaren. Mer information finns i [Microsoft Defender för Office 365 Beskrivning: Funktionstillgänglighet i Defender för Office 365 abonnemang.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+- Fler filtreringsfunktioner och tillgängliga åtgärder ingår i Hotutforskaren. Mer information finns i [Tjänstbeskrivning för Microsoft Defender för Office 365: Funktionstillgänglighet i Defender för Office 365-abonnemang.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
 
 ## <a name="other-articles"></a>Andra artiklar
 

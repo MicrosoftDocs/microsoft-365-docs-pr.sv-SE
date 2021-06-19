@@ -1,6 +1,6 @@
 ---
 title: Ordning och prioritet för e-postskydd
-keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, Microsoft Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Defender för identitet
+keywords: säkerhet, skadlig programvara, Microsoft 365, M365, säkerhetscenter, Microsoft 365 Defender-portalen, Microsoft Defender för slutpunkt, Microsoft Defender för Office 365, Microsoft Defender för identitet
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om programordningen för skydd i Exchange Online Protection (EOP), och hur prioritetsvärdet i skyddsprinciperna avgör vilken princip som används.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539017"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029291"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordning och prioritet för e-postskydd
 
@@ -51,8 +51,8 @@ Det finns två viktiga faktorer som avgör vilken princip som ska tillämpas på
   |2|Fiske|CAT:PHSH|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |3|Skräppost med hög konfidens|CAT:HSPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |4|Förfalskning|CAT:SPOOF|[Falska intelligensinsikter i EOP](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|Användarpersonifiering (skyddade användare)|UIMP|[Konfigurera principer mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|Domänpersonifiering (skyddade domäner)|DIMP|[Konfigurera principer mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|Användarpersonifiering (skyddade användare)|UIMP|[Konfigurera principer mot nätfiske i Microsoft Defender för Office 365](configure-mdo-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|Domänpersonifiering (skyddade domäner)|DIMP|[Konfigurera principer mot nätfiske i Microsoft Defender för Office 365](configure-mdo-anti-phishing-policies.md)|
   |7|Skräppost|CAT:SPM|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |8|Massutskick|CAT:BULK|[Konfigurera principer för skräppostskydd i EOP](configure-your-spam-filter-policies.md)|
   |

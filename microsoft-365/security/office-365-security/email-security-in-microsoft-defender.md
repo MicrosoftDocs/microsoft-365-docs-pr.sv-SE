@@ -16,12 +16,12 @@ description: Visa och undersöka försök till nätfiske efter skadlig kod.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 917ad3caf96a982df8b88058ff1c394b3d21dd75
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: eb62961bb26b079c508cbd5bc559a95d172cff86
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028562"
+ms.locfileid: "53029891"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>E-postsäkerhet med Threat Explorer i Microsoft Defender för Office 365
 
@@ -32,11 +32,11 @@ I den här artikeln:
 - [Starta automatisk undersökning och svar](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> Det här är en del av en **3-artikelserie** om grunderna för identifiering av  **hotutforskaren (Explorer),** e-postsäkerhet och Utforskaren och **realtidsidentifiering** (till exempel skillnader mellan verktygen och behörigheter som krävs för att hantera dem). De andra två artiklarna i den här serien [är Grunderna i Hotutforskaren](threat-hunting-in-threat-explorer.md) och Hotutforskaren och [Realtidsidentifiering.](real-time-detections.md) 
+> Det här är en del av en **3-artikelserie** om grunderna för identifiering av  **hotutforskaren (Explorer),** e-postsäkerhet och Utforskaren och **realtidsidentifiering** (till exempel skillnader mellan verktygen och behörigheter som krävs för att hantera dem). De andra två artiklarna i den här serien [är Grunderna i Hotutforskaren](threat-hunting-in-threat-explorer.md) och Hotutforskaren och [Realtidsidentifiering.](real-time-detections.md)
 
-I den här artikeln förklarar vi hur du visar och undersöker skadlig kod och nätfiskeförsök som identifieras i e-Microsoft 365 säkerhetsfunktionerna. 
+I den här artikeln förklarar vi hur du visar och undersöker skadlig kod och nätfiskeförsök som identifieras i e-Microsoft 365 säkerhetsfunktionerna.
 
-**Gäller för**
+**Gäller för:**
 
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
@@ -45,45 +45,42 @@ I den här artikeln förklarar vi hur du visar och undersöker skadlig kod och n
 
 Om du vill se skadlig programvara som upptäckts [](threat-explorer-views.md#email--malware) i e-Microsoft 365 efter teknik använder du vyn E> program för skadlig programvara i Utforskaren (eller identifieringar i realtid). Skadlig programvara är standardvyn, så den kan väljas så fort du öppnar Utforskaren.
 
-1. I Microsoft 365 Defender () <https://security.microsoft.com> väljer du **E-& för samarbete** \> **i Utforskaren** (eller **Identifieringar i realtid).** (I det här exemplet används Utforskaren.) Om du är i den konvergerade Microsoft 365 Defender (bläddra https://security.microsoft.com/) till Skicka e-& **med samarbetsutforskaren**  >  .
+1. I Microsoft 365 Defender () <https://security.microsoft.com> väljer du **E-& för samarbete** i \> **Utforskaren** (eller **Identifieringar i realtid;** I det här exemplet används Utforskaren).
 
    Härifrån börjar du med visa, väljer en viss tidsperiod att undersöka (om det behövs) och fokuserar dina filter, enligt [Utforskarens genomgång.](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)
 
-2. I **visa-menyn** väljer du Skadlig **programvara** under **E-post.**
+2. Kontrollera att **Skadlig programvara** för  e-post är markerat i \> **listrutan** Visa.
 
-3. Klicka **på Avsändare** och välj sedan **Enkel** \> **identifieringsteknik.**
+3. Klicka **på** Avsändare och välj sedan **Enkel** \> **identifieringsteknik** i listrutan.
 
-   
    :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="teknik för identifiering av skadlig programvara":::
 
    Dina identifieringstekniker är nu tillgängliga som filter för rapporten.
 
-4. Välj ett alternativ. Välj sedan knappen **Uppdatera** för att använda filtret.
+4. Välj ett alternativ och klicka sedan **på Uppdatera** om du vill använda filtret (uppdatera inte webbläsarfönstret).
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="vald identifieringsteknik"::: 
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="vald identifieringsteknik":::
 
-   Rapporten uppdateras för att visa resultat som skadlig programvara upptäckt i e-post med hjälp av det teknikalternativ som du valt. Härifrån kan du göra ytterligare analyser. 
+   Rapporten uppdateras för att visa resultat som skadlig programvara upptäckt i e-post med hjälp av det teknikalternativ som du valt. Härifrån kan du göra ytterligare analyser.
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Visa nätfiske-URL och klicka på bedömningsdata
 
 Du kan visa nätfiskeförsök via URL:er i e-postmeddelanden, inklusive en lista över URL:er som tillåts, blockerades och åsidosätts. Om du vill identifiera url:er som [klickades Valv måste](safe-links.md) länkarna konfigureras. Kontrollera att du har Valv [principer](set-up-safe-links-policies.md) för klickningsskydd och loggning av klickning genom att Valv Länkar.
 
-Om du vill granska webbadresser i meddelanden och klicka på WEBBADRESSer i [   >  **phish-meddelanden**](threat-explorer-views.md#email--phish) använder du e-postvyn Phish i Utforskaren eller identifieringar i realtid.
+1. I Microsoft 365 Defender () <https://security.microsoft.com> väljer du **E-& för samarbete** i \> **Utforskaren** (eller **Identifieringar i realtid;** I det här exemplet används Utforskaren).
 
-1. I Microsoft 365 Defender () <https://security.microsoft.com> väljer du **E-& för samarbete** \> **i Utforskaren** (eller **Identifieringar i realtid).** (I det här exemplet används Utforskaren.)
-
-2. Välj **E-post**  \> **phish på menyn Visa.**
+2. Välj **E-post** phish  i \> **listrutan Visa.**
 
    > [!div class="mx-imgBorder"]
    > ![Visa-menyn för Utforskaren i nätfiskekontext](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Klicka **på Avsändare** och välj sedan **URL:er Klicka** på \> **Bedömning**.
+3. Klicka **på Avsändare** och välj sedan **URL:er** Klicka \> **på** bedömning i listrutan.
 
-4. Välj ett eller flera  alternativ, som Blockerad och Blockera  **åsidosätts,** och välj sedan knappen Uppdatera på samma rad som alternativen för att använda filtret. (Uppdatera inte webbläsarfönstret.)
+4. I alternativ som visas väljer du ett  eller flera alternativ, till exempel Blockerad och Blockera **åsidosätts,** och klickar sedan på Uppdatera **(uppdatera** inte webbläsarens fönster).
 
     :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URL:er och klicka på bedömningar":::
 
-   Rapporten uppdateras så att två olika URL-tabeller visas på fliken URL under rapporten:
+   Rapporten uppdateras så att två olika URL-tabeller visas på **fliken URL:er** under rapporten:
 
    - **Url:er** är URL:er i de meddelanden som du filtrerat ned till och åtgärden för e-postleverans räknas för varje URL. I e-postvyn för phish innehåller den här listan vanligtvis legitima URL:er. Attacker kan innehålla en blandning av bra och dåliga URL-adresser i sina meddelanden för att försöka få dem levererade, men de gör skadliga länkar mer intressanta. Tabellen med URL:er sorteras efter totalt antal e-postmeddelanden, men den här kolumnen är dold för att förenkla vyn.
 

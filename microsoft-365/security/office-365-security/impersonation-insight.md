@@ -19,12 +19,12 @@ description: Administratörer kan lära sig hur personifieringsinsikter fungerar
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6aab20cc9050152b7ba9f86baed887969ad4da0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 53baecd100851eb5ab05fe79751961baef3acd5c
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029021"
+ms.locfileid: "53029675"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Personifieringsinsikt i Defender för Office 365
 
@@ -53,7 +53,6 @@ Du kan använda personifieringsinsikter i Microsoft 365 Defender-portalen för a
 - Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com>. Om du vill gå direkt till personifieringsinsikten **på sidan Skydd mot nätfiske** använder du <https://security.microsoft.com/antiphishing> . Använd för att gå **direkt till sidan Personifieringsinsikter.** <https://security.microsoft.com/impersonationinsight>
 
 - Du måste ha tilldelats behörigheter i Microsoft 365 Defender-portalen innan du kan utföra procedurerna i den här artikeln:
-
   - **Organisationshantering**
   - **Säkerhetsadministratör**
   - **Säkerhetsläsare**
@@ -63,7 +62,7 @@ Du kan använda personifieringsinsikter i Microsoft 365 Defender-portalen för a
 
   **Obs!** Om du lägger till användare i motsvarande Azure Active Directory-roll i Administrationscenter för Microsoft 365 får användarna  de behörigheter som krävs i Microsoft 365 Defender-portalen och behörigheter för andra funktioner Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
-- Du aktiverar och konfigurerar personifieringsskydd i skydd mot nätfiske i Microsoft Defender för Office 365. Personifieringsskydd är inte aktiverat som standard. Mer information finns i Konfigurera [principer för skydd mot nätfiske i Microsoft Defender för Office 365.](configure-atp-anti-phishing-policies.md)
+- Du aktiverar och konfigurerar personifieringsskydd i skydd mot nätfiske i Microsoft Defender för Office 365. Personifieringsskydd är inte aktiverat som standard. Mer information finns i Konfigurera [principer för skydd mot nätfiske i Microsoft Defender för Office 365.](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Öppna personifieringsinsikten i Microsoft 365 Defender portalen
 

@@ -1,5 +1,5 @@
 ---
-title: Undersöka skadlig e-post som levererats i Office 365, Hitta och undersöka skadlig e-post
+title: Undersöka skadlig e-post som levererats i Microsoft 365, Hitta och undersöka skadlig e-post
 keywords: TIMailData-Inline, Säkerhetshändelse, incident, Microsoft Defender för Endpoint PowerShell, skadlig e-post, komprometterade användare, e-post phish, skadlig programvara för e-post, läsa e-postrubriker, öppna e-posthuvuden, specialåtgärder
 f1.keywords:
 - NOCSH
@@ -20,18 +20,18 @@ description: Lär dig hur du använder funktioner för undersökning av hot och 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef29493bd68166b88bba3ef5905f0427823b4015
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: e99cda906e97db72a440c3daf509a767181e5342
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028857"
+ms.locfileid: "53029813"
 ---
-# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersök skadlig e-post som levererats i Office 365
+# <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Undersök skadlig e-post som levererats i Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Gäller för**
+**Gäller för:**
 
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
@@ -51,41 +51,44 @@ Kontrollera att följande krav uppfylls:
 
 - Organisationen har definierat principer för skydd mot skräppost, skadlig programvara, nätfiske och så vidare. Se [Skydda mot hot i Office 365](protect-against-threats.md).
 
-- Du är global administratör eller säkerhetsadministratör eller sök- och rensningsroll i Microsoft 365 Defender. Se [Behörigheter i Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md). För vissa åtgärder måste du också ha en ny förhandsgranskningsroll tilldelad.
+- Du är global administratör eller har antingen säkerhetsadministratören eller rollen Sök och rensning tilldelad i Microsoft 365 Defender portalen. Mer information finns i [Behörigheter i Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). För vissa åtgärder måste du också ha rollen Förhandsgranska tilldelad.
 
 ### <a name="preview-role-permissions"></a>Förhandsgranska rollbehörigheter
 
-För att utföra vissa åtgärder, till exempel visa meddelanderubriker eller ladda  ned innehåll i e-postmeddelanden, måste du ha en ny roll som kallas Förhandsgranskning tillagd i en annan lämplig rollgrupp. I följande tabell förtydligas de roller och behörigheter som krävs.
+För att utföra vissa åtgärder, till exempel visa meddelanderubriker eller  ladda ned innehåll i e-postmeddelanden, måste du ha rollen Förhandsgranska tillagd i en annan lämplig rollgrupp. I följande tabell förtydligas de roller och behörigheter som krävs.
+
+<br>
 
 ****
 
 |Aktivitet|Rollgrupp|Krävs en förhandsgranskningsroll?|
 |---|---|---|
-|Använd Threat Explorer (och identifieringar i realtid) för att analysera hot |Global administratör <p> Säkerhetsadministratör <p> Säkerhetsläsare|Nej|
+|Använd Threat Explorer (och realtidsidentifiering) för att analysera hot |Global administratör <p> Säkerhetsadministratör <p> Säkerhetsläsare|Nej|
 |Använd Hotutforskaren (och identifieringar i realtid) för att visa rubriker för e-postmeddelanden samt förhandsgranska och ladda ned e-postmeddelanden i karantän|Global administratör <p> Säkerhetsadministratör <p> Säkerhetsläsare|Nej|
 |Använda Hotutforskaren för att visa rubriker, förhandsgranska e-post (endast i sidan för e-post entitet) och ladda ned e-postmeddelanden som levereras till postlådor|Global administratör <p> Säkerhetsadministratör <p> Säkerhetsläsare <p> Förhandsgranska|Ja|
 |
 
 > [!NOTE]
-> *Förhandsversion* är en roll och inte en rollgrupp. Förhandsversionsrollen måste läggas till i en befintlig rollgrupp för Office 365 (vid <https://security.microsoft.com> ). Gå till **Behörigheter** och redigera sedan en befintlig rollgrupp eller lägg till en ny rollgrupp med rollen **Förhandsgranskning** tilldelad.
-> Rollen Global administratör tilldelas rollerna Administrationscenter för Microsoft 365 ( ) och roller som säkerhetsadministratör och säkerhetsläsare <https://admin.microsoft.com> tilldelas i Microsoft 365 Defender ( <https://security.microsoft.com> ). Mer information om roller och behörigheter finns i [Behörigheter i Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+> *Förhandsgranskning* är en roll, inte en rollgrupp. Förhandsversionsrollen måste läggas till i en befintlig rollgrupp i Microsoft 365 Defender portalen ( <https://security.microsoft.com> ). Gå till **Behörigheter** och redigera sedan en befintlig rollgrupp eller lägg till en ny rollgrupp med rollen **Förhandsgranskning** tilldelad.
+>
+> Rollen Global administratör tilldelas rollerna Administrationscenter för Microsoft 365 ( ) och roller som säkerhetsadministratör och säkerhetsläsare <https://admin.microsoft.com> tilldelas i Microsoft 365 Defender ( <https://security.microsoft.com> ). Mer information om roller och behörigheter finns i [Behörigheter i Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-Vi förstår att förhandsgranskning och nedladdning av e-postmeddelanden är känsliga aktiviteter och därför är granskning aktiverad för dessa. När en administratör utför de här aktiviteterna i e-postmeddelanden genereras granskningsloggar för samma och visas i Office 365 Microsoft 365 Defender ( <https://security.microsoft.com> ). Gå till **Sök**  >  **i granskningsloggsökning** och filtrera på administratörsnamnet i avsnittet Sök. De filtrerade resultaten visar aktivitet **AdminMailAccess.** Markera en rad för att visa information i avsnittet **Mer information om** förhandsgranskad eller nedladdad e-post.
+Vi förstår att förhandsgranskning och nedladdning av e-postmeddelanden är känsliga aktiviteter och därför är granskning aktiverad för dessa. När en administratör utför de här aktiviteterna i e-postmeddelanden genereras granskningsloggar för samma och visas i Office 365 Security & Compliance Center ( <https://protection.office.com> ). Gå till **Sök**  >  **i granskningsloggsökning** och filtrera på administratörsnamnet i avsnittet Sök. De filtrerade resultaten visar aktivitet **AdminMailAccess.** Markera en rad för att visa information i avsnittet **Mer information om** förhandsgranskad eller nedladdad e-post.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Hitta misstänkt e-postmeddelande som har levererats
 
 Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel att hitta och ta bort meddelanden, identifiera IP-adressen för en skadlig e-postavsändare eller starta en incident för vidare undersökning. Följande procedur fokuserar på att använda Utforskaren för att hitta och ta bort skadlig e-post från mottagarens postlådor.
 
 > [!NOTE]
-> Standardsökningar i Utforskaren inkluderar för närvarande inte Zapped-objekt.  Det här gäller för alla vyer, till exempel skadlig programvara eller phish-vyer. Om du vill inkludera zapped-objekt måste du lägga till en **leveransåtgärd som** är inställd på tas **bort av ZAP.** Om du inkluderar alla alternativ visas alla leveransåtgärdsresultat, inklusive Zapped-objekt.
+> Standardsökningar i Utforskaren inkluderar för närvarande inte levererade objekt som har tagits bort från den molnbaserade postlådan med ett automatiskt skydd på nolltimmars timmar (ZAP). Den här begränsningen gäller för **alla \>** vyer (till exempel vyerna E-postprogram för skadlig programvara **eller \> E-post).** Om du vill inkludera objekt som tagits bort med ZAP måste du lägga till en **leveransåtgärd** som är inställd på att inkludera **Borttaget av ZAP.** Om du tar med alla alternativ visas alla leveransåtgärdsresultat, inklusive objekt som tagits bort av ZAP.
 
-1. **Gå till Hotutforskaren:** Gå <https://security.microsoft.com> till och logga in med ditt arbets- eller skolkonto för Office 365. Då kommer du till Microsoft 365 Defender.
+1. Öppna Microsoft 365 Defender och <https://security.microsoft.com> logga in med ditt arbets- eller skolkonto för Office 365.
 
-2. I snabbstartsguide för det vänstra navigeringsfältet väljer **du E& för samarbete i** \> **Utforskaren.**
+2. Gå till **Threat Explorer genom** att välja **E& för samarbete** \> **i** det vänstra navigeringsfältet. Om du vill gå **direkt till Threat Explorer** använder du <https://security.microsoft.com/threatexplorer> .
 
-      Den nya kolumnen **Specialåtgärder kanske visas.** Den här funktionen är avsedd att berätta för administratörer resultatet av att bearbeta ett e-postmeddelande. Kolumnen **Specialåtgärder** kan nås på samma plats som **leveransåtgärd och** **leveransplats.** Särskilda åtgärder kan uppdateras i slutet av e-posttidslinjen i Threat Explorer, vilket är en ny funktion som är avsedd att göra upplevelsen bättre för administratörer.
+   På sidan **Utforskaren** visar **kolumnen Ytterligare åtgärder** resultatet av bearbetningen av ett e-postmeddelande. Kolumnen **Ytterligare åtgärder** kan nås på samma plats som leveransåtgärd **och** **leveransplats.** Särskilda åtgärder kan uppdateras i slutet av e-posttidslinjen i Threat Explorer, vilket är en ny funktion som är avsedd att göra upplevelsen bättre för administratörer.
 
-3. **Vyer i Utforskaren med hot:** Välj **All e-post** på **menyn Visa.**
+3. I menyn **Visa** väljer du **Skicka** all \> **e-post** med e-post i listrutan.
 
     ![Visa-menyn för Hotutforskaren och E-post – skadlig programvara, nättröjning, inskickade meddelanden och alla e-postalternativ, även innehåll – skadlig programvara.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
@@ -105,11 +108,11 @@ Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel at
 
 5. **Avancerade filter:** Med dessa filter kan du skapa komplexa frågor och filtrera datauppsättningen. Om du *klickar på Avancerade* filter öppnas en utfäll plats med alternativ.
 
-   Avancerad filtrering är ett bra tillägg till sökfunktionerna. Ett booleskt **NOT-filter** har introducerats för domänen *Recipient*, *Sender* *och Sender för* att tillåta administratörer att undersöka genom att utesluta värden. Det här alternativet visas under *urvalsparametern Innehåller inget av*. **ICKE** låter administratörer utesluta aviseringspostlådor, standardsvarspostlådor från sina undersökningar och är användbart för fall där administratörer söker efter ett specifikt ämne (subject="Attention") där mottagaren kan ställas in på ingen standardpostlåda *\@ contoso.com*. Det här är en exakt värdesökning.
+   Avancerad filtrering är ett bra tillägg till sökfunktionerna. Ett booleskt NOT för **domänfiltren** **Recipient , Sender** **och Sender gör** att administratörer kan undersöka detta genom att utesluta värden. Det här alternativet är **lika med inget val.** Med det här alternativet kan administratörer utesluta oönskade postlådor från undersökningar (till exempel aviseringspostlådor och standardsvarspostlådor) och är användbart för fall där administratörer söker efter ett specifikt ämne (till exempel Attention) där mottagaren kan ställas in på Är lika med inget *av: defaultMail@contoso.com.* Det här är en exakt värdesökning.
 
    ![Mottagarna – "Innehåller inget av" avancerat filter.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
-   *Om du filtrerar* efter timmar kan organisationens säkerhetsteam snabbt öka detalj detaljringen. Den kortaste tillåtna varaktigheten är 30 minuter. Om du kan begränsa den misstänkta åtgärden efter tidsperiod (t.ex. för 3 timmar sedan) begränsar det här sammanhanget och hjälper dig att hitta problemet.
+   Om du lägger till ett tidsfilter till startdatum och slutdatum kan säkerhetsteamet snabbt öka detalj granska nedåt. Den kortaste tillåtna varaktigheten är 30 minuter. Om du kan begränsa den misstänkta åtgärden efter tidsperiod (t.ex. för 3 timmar sedan) begränsar det här sammanhanget och gör det enkelt att hitta problemet.
 
    ![Alternativet filtrera efter timmar för att begränsa mängden datasäkerhetsgrupper måste bearbetas, och vars kortaste varaktighet är 30 minuter.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
@@ -135,6 +138,8 @@ Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel at
     **Riktning: Det här** alternativet gör att teamet för säkerhetsåtgärder kan filtrera efter "riktning" som ett e-postmeddelande kommer från eller går. Directionality values are *Inbound*, *Outbound*, and *Intra-org* (corresponding to mail coming into your org from outside, being sent out of your org, or being sent internally to your org, respectively). Den här informationen kan hjälpa säkerhetsåtgärder grupper att upptäcka förfalskning och personifiering, eftersom det finns en felmatchning mellan directionality-värdet (t.ex. *Inkommande*) och domänen för avsändaren (som *verkar* vara en intern domän) blir tydligt! Värdet för Riktning är separat och kan skilja sig från meddelandespårningen. Resultaten kan exporteras till kalkylblad.
 
     **Åsidosätter:** Det här filtret tar information som visas på fliken för e-postinformation och använder den för att visa var organisations- eller användarprinciper för att tillåta och blockera e-postmeddelanden har *åsidosättts.* Det viktigaste med filtret är att det hjälper organisationens säkerhetsgrupp att se hur många misstänkta e-postmeddelanden som har levererats på grund av konfigurationen. Då kan de ändra tillåt och spärrar efter behov. Den här resultatuppsättningen för det här filtret kan exporteras till kalkylblad.
+
+    <br>
 
     ****
 
@@ -166,33 +171,23 @@ I [Threat Explorer (och i realtidsidentifiering)](threat-explorer.md)har  du nu 
 Leveransstatus delas nu upp i två kolumner:
 
 - **Leveransåtgärd** – Vilken status har det här e-postmeddelandet?
-
 - **Leveransplats** – Var dirigerades det här e-postmeddelandet till följd av det?
 
 Leveransåtgärd är den åtgärd som vidtas på ett e-postmeddelande på grund av befintliga principer eller identifieringar. Här är de möjliga åtgärder som kan vidtas i ett e-postmeddelande:
 
 - **Levererad** – e-post levererades till en användares inkorg eller mapp och användaren kan komma åt den direkt.
-
 - **Skräppost** – e-post skickades till antingen användarens skräppostmapp eller till en borttaget borttaget-mapp, och användaren har åtkomst till e-postmeddelanden i mappen Skräppost eller Borttaget.
-
 - **Blockerad** – alla e-postmeddelanden som har satts i karantän, som misslyckades eller släppts. (Detta är helt otillgängligt för användaren.)
-
 - **Ersatt** – alla e-postmeddelanden där skadliga bifogade filer ersätts med .txt filer som uppger att den bifogade filen var skadlig.
 
 Leveransplats visar resultatet av principer och identifieringar som körs efter leveransen. Det är länkat till en leveransåtgärd. Det här fältet har lagts till för att ge insyn i åtgärder som vidtas när ett problem har hittats. Här är de möjliga värdena för leveransplatsen:
 
 - **Inkorgen eller mappen** – E-postmeddelandet ligger i inkorgen eller i en mapp (enligt e-postreglerna).
-
 - **Lokal eller extern** – Postlådan finns inte i molnet men är lokal.
-
 - **Skräppostmapp** – E-postmeddelandet finns i användarens skräppostmapp.
-
 - **Mappen Borttaget** – e-postmeddelandet finns i en användares Borttaget-mapp.
-
 - **Karantän** – E-postmeddelandet i karantän, och inte i en användares postlåda.
-
 - **Misslyckades** – E-postmeddelandet kunde inte nå postlådan.
-
 - **Nedslöt** – e-postmeddelandet försvinner någonstans i e-postflödet.
 
 ### <a name="view-the-timeline-of-your-email"></a>Visa tidslinjen för din e-post

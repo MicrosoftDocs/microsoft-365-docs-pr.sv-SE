@@ -19,12 +19,12 @@ ms.collection:
 description: Vad är metodtips för Exchange Online Protection (EOP) och Defender för Office 365 säkerhetsinställningar? Vilka är de aktuella rekommendationerna för standardskydd? Vad ska användas om du vill vara striktare? Och vad får du om du även använder Defender för Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c126a777d50fae93efdc618a8ac474dcee7ed75
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 031dd6ffe05c700b65fb56da90a49ed194c17321
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878994"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029519"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet
 
@@ -177,11 +177,11 @@ Om din prenumeration omfattar Microsoft Defender för Office 365 eller om du har
 
 ### <a name="anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Inställningar för mot nätfiskeprincip i Microsoft Defender för Office 365
 
-EOP-kunder får grundläggande skydd mot nätfiske enligt beskrivningen tidigare, men Microsoft Defender för Office 365 har fler funktioner och kontroll för att förhindra, upptäcka och åtgärda angrepp. Information om hur du skapar och konfigurerar dessa [principer finns i Konfigurera principer för skydd mot nätfiske i Defender Office 365.](configure-atp-anti-phishing-policies.md)
+EOP-kunder får grundläggande skydd mot nätfiske enligt beskrivningen tidigare, men Microsoft Defender för Office 365 har fler funktioner och kontroll för att förhindra, upptäcka och åtgärda angrepp. Information om hur du skapar och konfigurerar dessa [principer finns i Konfigurera principer för skydd mot nätfiske i Defender Office 365.](configure-mdo-anti-phishing-policies.md)
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Inställningar för personifiering i principer för skydd mot nätfiske i Microsoft Defender för Office 365
 
-Mer information om de här inställningarna finns [i Inställningar för personifiering i skydd mot nätfiske i Microsoft Defender för Office 365.](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Information om hur du konfigurerar de här inställningarna finns i Konfigurera principer för [skydd mot nätfiske i Defender Office 365](configure-atp-anti-phishing-policies.md).
+Mer information om de här inställningarna finns [i Inställningar för personifiering i skydd mot nätfiske i Microsoft Defender för Office 365.](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Information om hur du konfigurerar de här inställningarna finns i Konfigurera principer för [skydd mot nätfiske i Defender Office 365](configure-mdo-anti-phishing-policies.md).
 
 <br>
 
@@ -221,7 +221,7 @@ Observera att det är samma inställningar som är tillgängliga i inställninga
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Avancerade inställningar i principer för skydd mot nätfiske i Microsoft Defender för Office 365
 
-Mer information om den här inställningen finns i [Avancerade tröskelvärden för nätfiske i principer mot nätfiske i Microsoft Defender för Office 365.](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Information om hur du konfigurerar den [här inställningen finns i Konfigurera principer för skydd mot nätfiske i Defender Office 365](configure-atp-anti-phishing-policies.md).
+Mer information om den här inställningen finns i [Avancerade tröskelvärden för nätfiske i principer mot nätfiske i Microsoft Defender för Office 365.](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Information om hur du konfigurerar den [här inställningen finns i Konfigurera principer för skydd mot nätfiske i Defender Office 365](configure-mdo-anti-phishing-policies.md).
 
 <br>
 

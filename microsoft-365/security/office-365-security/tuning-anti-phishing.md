@@ -16,12 +16,12 @@ ms.collection:
 description: Administratörer kan läsa mer om varför och hur nätfiskemeddelanden kom fram i Microsoft 365 och vad de kan göra för att förhindra fler nätfiskemeddelanden i framtiden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d8f3f93b3fe1643467a12f90123b839addad2ed
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5093981c5f0166d3f53c3b6c7d24371312633c99
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537853"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029351"
 ---
 # <a name="tune-anti-phishing-protection"></a>Finjustera skydd mot nätfiske
 
@@ -44,7 +44,7 @@ Om Microsoft Defender för Office 365 ingår i prenumerationen kan du använda [
 
 - [Valv Bifogade filer i Microsoft Defender för Office 365](set-up-safe-attachments-policies.md)
 
-- [Principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-atp-anti-phishing-policies.md). Observera att du tillfälligt kan öka avancerade tröskelvärden **för nätfiske** i principen från **Standard** till **Aggressiv**, Mer **aggressiva** eller **Mest aggressiva.**
+- [Principer för skydd mot nätfiske i Microsoft Defender för Office 365](configure-mdo-anti-phishing-policies.md). Observera att du tillfälligt kan öka avancerade tröskelvärden **för nätfiske** i principen från **Standard** till **Aggressiv**, Mer **aggressiva** eller **Mest aggressiva.**
 
 Kontrollera att Office 365 Defender Office 365 är aktiverat.
 
@@ -66,7 +66,7 @@ Mer specifikt bör du titta i huvudfältet **för X-Forefront-Antispam-Report** 
 
 - E-post från falska avsändare (meddelandets Från-adress stämmer inte överens med meddelandets källa) klassificeras som nätfiske i Defender för Office 365. Ibland är förfalskning och ibland vill inte användare att meddelanden från en viss förfalskningsavsändare ska läggas i karantän. För att minimera påverkan på [](learn-about-spoof-intelligence.md)användare bör du regelbundet granska förfalskningsinformation, fliken **Förfalskning** i listan [Tillåt/blockera](tenant-allow-block-list.md)klientorganisation och rapporten Identifieringar av [förfalskning.](view-email-security-reports.md#spoof-detections-report) När du har granskat tillåtna och blockerade förfalskningsavsändare och gjort nödvändiga åsidosättningar kan du vara säker  på att konfigurera [förfalskningsinformation](set-up-anti-phishing-policies.md#spoof-settings) i principer för nätfiske för att sätta misstänkta meddelanden i karantän i stället för att leverera dem till användarens skräppostmapp.
 
-- Du kan upprepa steget ovan för Personifiering (domän eller användare) i Microsoft Defender för Office 365. Personifieringsrapporten finns under **Instrumentpanelinsikter för** \>  \> **hothantering.**
+- Du kan upprepa steget ovan för Personifiering (domän eller användare) i Microsoft Defender för Office 365. Personifieringsrapporten finns under Instrumentpanelen **för** \> **hothantering** \> **Insights**.
 
 - Gå regelbundet igenom [rapporten om hotskyddsstatus](view-reports-for-mdo.md#threat-protection-status-report).
 
