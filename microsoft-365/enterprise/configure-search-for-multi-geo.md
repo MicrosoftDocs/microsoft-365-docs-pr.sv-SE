@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Lär dig hur du konfigurerar sökning i en miljö med flera geoer. Endast vissa klienter, till exempel OneDrive för företag,kan returnera resultat i en geomiljö med flera funktioner.
-ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 31e0c4ae3fe73f2f6e113dbc38989726eb1ca590
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911168"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022336"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Konfigurera sökning efter Microsoft 365 multi-geo
 
@@ -206,11 +206,11 @@ MultiGeoSearchConfiguration – Det här är en valfri lista över vilka geoplat
 </tbody>
 </table>
 
-Om du utelämnar DataLocation eller EndPoint, eller om en DataLocation dupliceras, misslyckas begäran. [Du kan få information om slutpunkten för en klientorganisations geografiska platser med hjälp av Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
+Om du utelämnar DataLocation eller EndPoint, eller om en DataLocation dupliceras, misslyckas begäran. [Du kan få information om slutpunkten för en klientorganisations geografiska platser med hjälp av Microsoft Graph.](/sharepoint/dev/solution-guidance/multigeo-discovery)
 
 ### <a name="response-data"></a>Svarsdata
 
-MultiGeoSearchStatus – Det här är en egenskap som SharePoint sök-API returnerar som svar på en begäran. Värdet för egenskapen är en sträng och ger följande information om de resultat som sök-API:t SharePoint returnerar:
+MultiGeoSearchStatus – Det här är en egenskap som SharePoint Search API returnerar som svar på en begäran. Värdet för egenskapen är en sträng och ger följande information om de resultat som Sök-API:t för SharePoint returnerar:
 
 <table>
 <thead>
@@ -235,7 +235,7 @@ MultiGeoSearchStatus – Det här är en egenskap som SharePoint sök-API return
 
 Med en HÄMTA-begäran anger du frågeparametrar i URL-adressen. Med en POST-begäran skickar du frågeparametrarna i brödtexten i JavaScript Object Notation-formatet (JSON).
 
-#### <a name="request-headers"></a>Begäran om rubriker
+#### <a name="request-headers"></a>Frågerubriker
 
 <table>
 <thead>
@@ -246,7 +246,7 @@ Med en HÄMTA-begäran anger du frågeparametrar i URL-adressen. Med en POST-beg
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Innehållstyp</td>
+<td align="left">Content-Type</td>
 <td align="left">application/json;odata=verbose</td>
 </tr>
 </tbody>
@@ -325,5 +325,5 @@ Här är ett exempel på en CSOM-fråga som är borta **från alla** geoplatser:
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;
-keywordQuery["EnableMultiGeoSearch"] = true;
+keywordQuery.Properties["EnableMultiGeoSearch"] = true;
 ```

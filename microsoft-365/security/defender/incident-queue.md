@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925893"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022751"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Prioritera ärenden i Microsoft 365 Defender
 
@@ -36,17 +36,17 @@ ms.locfileid: "52925893"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender tillämpar korrelationsanalyser och sammanställer relaterade aviseringar och automatiska undersökningar från olika produkter till ett incident. Microsoft 365 Defender utlöser även unika aviseringar för aktiviteter som bara kan identifieras som skadliga givet den synlighet från end-to-end som Microsoft 365 Defender har i hela produktsviten. Den här vyn ger dina säkerhetsanalytiker den bredare attack storyn, som hjälper dem att bättre förstå och hantera komplexa hot i organisationen.
+Microsoft 365 Defender tillämpar korrelationsanalys och sammanställer relaterade aviseringar och automatiska undersökningar från olika produkter för ett incident. Microsoft 365 Defender utlöser även unika aviseringar för aktiviteter som bara kan identifieras som skadliga givet den end-to-end-synlighet som Microsoft 365 Defender har i hela produktpaketet. Den här vyn ger dina säkerhetsanalytiker den bredare attack storyn, som hjälper dem att bättre förstå och hantera komplexa hot i organisationen.
 
 I **kön Incident** visas en samling incidenter som har skapats på olika enheter, användare och postlådor. Det hjälper dig att sortera olika incidenter för att prioritera och skapa ett välgrundat beslut om cybersäkerhet. 
 
-Du kommer till incidentkön från **Incidenter & aviseringar > Incidenter** i snabbstarten av Microsoft 365 säkerhetscenter [(security.microsoft.com).](https://security.microsoft.com) Här är ett exempel.
+Du kommer till incidentkön från **Incidenter & aviseringar > Incidenter** i snabbstarten av Microsoft 365 Defender portalen [(security.microsoft.com).](https://security.microsoft.com) Här är ett exempel.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Exempel på incidentkön":::
 
 I **avsnittet Senaste incidenter och aviseringar** visas ett diagram över antalet aviseringar som tagits emot och incidenter som skapats de senaste 24 timmarna.
 
-Som standard visar incidentkön i säkerhetscentret Microsoft 365 incidenter som har inträffat under de senaste sex månaderna. Det senaste incidenten visas högst upp i listan så att du kan se den först.
+Som standard visar incidentkön i Microsoft 365 Defender-portalen incidenter som har setts de senaste sex månaderna. Det senaste incidenten visas högst upp i listan så att du kan se den först.
 
 Incidentkön har anpassningsbara kolumner (välj **Välj** kolumner) som ger dig insyn i olika egenskaper för incidenten eller berörda enheter. På så sätt kan du fatta ett välgrundat beslut om prioritering av incidenter för analys.
 
@@ -72,7 +72,7 @@ I den här tabellen visas de tillgängliga filternamnen.
 | Tilldelad till | Du kan välja att visa aviseringar som tilldelats dig eller de som hanteras automatiskt. |
 | Kategorier | Välj kategorier om du vill fokusera på specifika taktiker, tekniker eller attackkomponenter som visas. |
 | Klassificering | Filtrera incidenter baserat på de inställda klassificeringarna av relaterade aviseringar. Värdena omfattar sant varningar, falska aviseringar eller inte har angetts. |
-| Datakänslighet | Vissa attacker fokuserar på att rikta för att föra in känsliga eller värdefulla data. Genom att använda ett filter för att se om känsliga data är inblandade i händelsen kan du snabbt avgöra om känslig information potentiellt har komprometterats och prioriterat de incidenterna. <br><br> Gäller endast om Microsoft informationsskydd är aktiverat.|
+| Datakänslighet | Vissa attacker fokuserar på att rikta för att föra in känsliga eller värdefulla data. Genom att använda ett filter för att se om känsliga data är inblandade i händelsen kan du snabbt avgöra om känslig information potentiellt har komprometterats och prioriterat de incidenterna. <br><br> Endast tillämpligt om Microsoft Information Protection är aktiverat.|
 | Enhetsgrupp | Filtrera efter definierade enhetsgrupper. |
 | Undersökningstillstånd | Filtrera ärenden efter status för automatiserad undersökning.  |
 | Flera kategorier | Du kan välja att endast visa incidenter som har mappats till flera kategorier och därmed potentiellt kan orsaka mer skada. |

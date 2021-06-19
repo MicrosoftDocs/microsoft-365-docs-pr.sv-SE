@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender för Office 365 innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 00dcd5d8f5d18b59de67318049cc1e5807451f14
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904122"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022360"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender för Office 365
 
@@ -122,13 +122,7 @@ I Microsoft Defender för Office 365 ingår en [instrumentpanel för avancerad r
 Rapporterar uppdateringar i realtid, så att du får de senaste insikterna. I de här rapporterna får du också rekommendationer, och de uppmärksammar dig på kommande hot. I fördefinierade rapporter finns följande:
 
 - [Hotutforskaren (eller realtidsidentifieringar)](threat-explorer.md)
-
 - [Statusrapport för hotskydd](view-reports-for-mdo.md#threat-protection-status-report)
-
-- [Typrapport för Defender for Office 365](view-reports-for-mdo.md#defender-for-office-365-file-types-report)
-
-- [Rapport om meddelandeborttagning i Office 365](view-reports-for-mdo.md#defender-for-office-365-message-disposition-report)
-
 - ... och många fler.
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>Använda funktioner för undersökning av hot och svar

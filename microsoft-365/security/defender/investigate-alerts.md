@@ -1,5 +1,5 @@
 ---
-title: Undersöka aviseringar i Microsoft 365 Defender
+title: Undersök aviseringar i Microsoft 365 Defender
 description: Undersök aviseringar som visas på olika enheter, användare och postlådor.
 keywords: incidenter, aviseringar, undersöker, analyserar, svar, korrelation, attack, datorer, enheter, användare, identiteter, identitet, postlåda, e-post, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a6e11aea14a7b8d99c0098b68951790328ec593e
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 567916e9e1a1d96d77bc6c187b384a1ec3be72a5
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782915"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022719"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>Undersöka aviseringar i Microsoft 365 Defender
+# <a name="investigate-alerts-in-microsoft-365-defender"></a>Undersök aviseringar i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "52782915"
 
 Aviseringar utgör grunden för alla händelser och anger förekomsten av skadliga eller misstänkta händelser i din miljö. Aviseringar är vanligtvis en del av en bredare attack och ger ledtrådar om en händelse.
 
-I Microsoft 365 Defender sammanställs relaterade aviseringar till [](incidents-overview.md)formulärincidenter . Incidenter ger alltid ett bredare sammanhang för en attack, men det kan vara värdefullt att analysera aviseringar när en djupare analys krävs. 
+I Microsoft 365 Defender sammanförs relaterade aviseringar för [formulärincidenter.](incidents-overview.md) Incidenter ger alltid ett bredare sammanhang för en attack, men det kan vara värdefullt att analysera aviseringar när en djupare analys krävs. 
 
-I **kön Aviseringar** visas den aktuella uppsättningen aviseringar. Du kommer till aviseringskön från **Incidenter &** aviseringar > aviseringar i snabbstarten av säkerhetscentret Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)).
+I **kön Aviseringar** visas den aktuella uppsättningen aviseringar. Du kommer till aviseringskön **från Incidenter & aviseringar > aviseringar** i snabbstarten av Microsoft 365 Defender portalen [(security.microsoft.com).](https://security.microsoft.com)
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exempel på aviseringskön":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exempel på aviseringskön":::
 
 Aviseringar från olika Microsoft-säkerhetslösningar som Microsoft Defender för Endpoint, Microsoft Defender för Office 365 och Microsoft 365 Defender visas här.
 
-Som standard visar varningskön i säkerhetscentret Microsoft 365 de nya och pågående aviseringarna från de senaste 30 dagarna. Den senaste aviseringen visas högst upp i listan så att du kan se den först. 
+Som standard visar aviseringskön i Microsoft 365 Defender-portalen de nya och pågående aviseringarna från de senaste 30 dagarna. Den senaste aviseringen visas högst upp i listan så att du kan se den först. 
 
 Från standardaviseringskön kan  du välja  Filter för att visa ett filterfönster där du kan ange en delmängd av aviseringarna. Här är ett exempel.
 
@@ -66,7 +66,7 @@ Du kan filtrera aviseringar enligt följande kriterier:
 
 Markera namnet på aviseringen om du vill se huvudaviseringssidan. Här är ett exempel.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exempel på informationssidan för en avisering i Microsoft 365 säkerhetscenter":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exempel på informationssidan för en avisering i Microsoft 365 Defender portalen":::
 
 Du kan också välja **åtgärden Öppna huvudaviseringssidan** i **fönstret Hantera** avisering.
 
@@ -75,12 +75,12 @@ En aviseringssida består av följande avsnitt:
 - Aviseringsartikel, som är kedjan med händelser och aviseringar som är relaterade till den här aviseringen i kronologisk ordning
 - Sammanfattningsinformation
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exempel på informationssidan för en avisering i Microsoft 365 säkerhetscenter":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exempel på informationssidan för en avisering i Microsoft 365 Defender portalen":::
 
 På en aviseringssida kan du välja punkterna (**...**) bredvid en enhet för att se tillgängliga åtgärder, till exempel öppna aviseringssidan eller länka aviseringen till en annan händelse.
 
 ### <a name="alert-sources"></a>Aviseringskällor
-Microsoft 365 Defender-aviseringar kan komma från lösningar som Microsoft Defender för Endpoint, Microsoft Defender för Office 365 och Microsoft Cloud App Security. Du kanske lägger märke till aviseringar med in prepended characters i aviseringen. Följande tabell innehåller vägledning för att hjälpa dig att förstå mappningen av aviseringskällor baserat på det tecken som ska förberedas i aviseringen.
+Microsoft 365 Defender kan komma från lösningar som Microsoft Defender för Endpoint, Microsoft Defender för Office 365 och Microsoft Cloud App Security. Du kanske lägger märke till aviseringar med in prepended characters i aviseringen. Följande tabell innehåller vägledning för att hjälpa dig att förstå mappningen av aviseringskällor baserat på det tecken som ska förberedas i aviseringen.
 
 > [!NOTE]
 > - De ursprungliga GUID:erna är endast specifika för enhetliga upplevelser, till exempel enhetlig aviseringskö, sida för enhetliga aviseringar, enhetlig undersökning och enhetlig incident.<br>
@@ -94,13 +94,11 @@ Microsoft Defender för Endpoint | `da` eller `ed` för aviseringar om anpassad 
 Microsoft Defender for Identity | `aa{GUID}` <br> Exempel: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Cloud App Security |`ca{GUID}` <br> Exempel: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
-
-
 ### <a name="analyze-affected-assets"></a>Analysera påverkade tillgångar
 
 Avsnittet **Åtgärder som** vidtas har en lista över påverkade tillgångar, till exempel postlådor, enheter och användare som påverkas av den här aviseringen. 
 
-Du kan också välja **Visa i åtgärdscenter** för att **visa** fliken **Historik** i Åtgärdscenter Microsoft 365 säkerhetscenter. 
+Du kan också välja **Visa i åtgärdscenter** för att visa **fliken** Historik **i Åtgärdscenter** Microsoft 365 Defender administrationsportalen. 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Spåra en aviserings roll i aviseringsartikeln
 
@@ -143,7 +141,7 @@ Från det här fönstret kan du även utföra följande ytterligare åtgärder:
 
 Här är ett exempel.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Exempel på åtgärder för en avisering Microsoft 365 säkerhetscenter":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Exempel på åtgärder på en avisering i Microsoft 365 Defender portalen":::
 
 Listan med ytterligare åtgärder beror på typen av avisering.
 
@@ -151,7 +149,7 @@ Listan med ytterligare åtgärder beror på typen av avisering.
 
 När du är klar med att analysera en avisering  och den kan lösas går du  till fönstret Hantera avisering för aviseringen och markerar dess status som Löst och klassificerar den som en **falsk** avisering eller **Sant-avisering.** För verkliga varningar anger du aviseringens hottyp i **fältet Determination.**
 
-Genom att klassificera aviseringar och ange deras avgörande hjälper du Microsoft 365 Defender för att tillhandahålla mer sanna aviseringar och mindre falska aviseringar.
+Genom att klassificera aviseringar och ange deras avgörande hjälper du Microsoft 365 Defender att tillhandahålla mer sanna aviseringar och mindre falska aviseringar.
 
 ## <a name="next-steps"></a>Nästa steg
 

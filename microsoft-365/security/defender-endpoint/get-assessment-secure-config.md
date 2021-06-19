@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5742c121b73eb8709e770c9b2c4da6dbfd942276
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ad8b2030da4fb4815eb71ca53fb2dbac67a05d79
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984862"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022396"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exportera utvärdering av säker konfiguration per enhet
 
@@ -39,7 +39,7 @@ Returnerar alla konfigurationer och deras status per enhet.
 
 Det finns olika API-anrop för att få olika typer av data. Eftersom mängden data kan vara stor kan den hämtas på två sätt:
 
-- [Exportera **OData** för säker](#1-export-secure-configuration-assessment-odata)konfigurationsutvärdering: API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
+- [Exportera **JSON-svar för säker**](#1-export-secure-configuration-assessment-json-response)konfigurationsutvärdering: API:t hämtar alla data i organisationen som Json-svar. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
 
 - [Exportera säker konfigurationsbedömning **via filer**](#2-export-secure-configuration-assessment-via-files): Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure-lagring. Med det här API:t kan du ladda ned alla dina data Azure-lagring enligt följande:
 
@@ -53,7 +53,7 @@ Data som samlas in (med hjälp av _antingen OData_ eller _via_ filer) är den ak
 >
 > Om inget annat anges exporteras alla utvärderingsmetoder som **_listas för fullständig export_** **_och_** efter enhet (kallas även **_per enhet)._**
 
-## <a name="1-export-secure-configuration-assessment-odata"></a>1. Exportera utvärdering av säker konfiguration (OData)
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. Exportera säker konfigurationsutvärdering (JSON-svar)
 
 ### <a name="11-api-method-description"></a>1.1 API-metodbeskrivning
 

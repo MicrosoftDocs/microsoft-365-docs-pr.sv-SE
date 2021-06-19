@@ -1,5 +1,5 @@
 ---
-title: Visa e-postsäkerhetsrapporter på Microsoft 365 Defender-portalen
+title: Visa säkerhetsrapporter för e-post
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Lär dig hur du hittar och använder e-postsäkerhetsrapporter för din organisation. Säkerhetsrapporter för e-post finns tillgängliga på Microsoft 365 Defender-portalen.
+description: Administratörer kan ta reda på hur de e-postsäkerhetsrapporter som finns i Microsoft 365 Defender-portalen hittar och använder.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d46aec8601d19234eed8682955ffef27b7e9b467
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985309"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022955"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visa e-postsäkerhetsrapporter på Microsoft 365 Defender-portalen
 
@@ -56,20 +56,20 @@ I **rapporten Komprometterade** användare visas antalet användarkonton som har
 
 I mängdvyn visas data för de senaste 90 dagarna och i detaljvyn visas data för de senaste 30 dagarna.
 
-Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.** På **komprometterade** användare klickar **du på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/CompromisedUsers> .
+Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.** På sidan **E& och samarbetsrapporter** går du till **Komprometterade användare** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/CompromisedUsers> .
 
-När du har **klickat på** Visa information kan du filtrera både diagrammet och detaljtabellen genom att klicka på **Filtrera** och välja ett eller flera av följande värden i den utfäll vy som visas:
+På sidan **Komprometterade** användare kan du filtrera både diagrammet och informationstabellen genom att klicka på **Filtrera** och välja ett eller flera av följande värden i den utfällda listan som visas:
 
 - **Datum (UTC)**: **Startdatum** **och slutdatum.**
 - **Aktivitet**:
   - **Misstänkt:** Användarkontot har skickat misstänkt e-postmeddelande och riskerar att bli begränsat från att skicka e-post.
   - **Begränsad:** Användarkontot har begränsats från att skicka e-post på grund av mycket misstänkta mönster.
 
-När du är klar med filtreringen klickar du på **Använd** eller **Avbryt**.
+När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**
 
 ![Rapportvyn i rapporten Komprometterade användare](../../media/compromised-users-report-activity-view.png)
 
-I tabellen nedanför diagrammet kan du se följande information:
+I informationstabellen under diagrammet kan du se följande information:
 
 - **Tid då det skapades**
 - **Användar-ID**
@@ -79,34 +79,25 @@ I tabellen nedanför diagrammet kan du se följande information:
 
 I **rapporten Exchange-transportregel** visas effekten av e-postflödesregler (kallas även transportregler) på inkommande och utgående meddelanden i organisationen.
 
-Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.** Klicka **på Visa information i Exchange-transportregel.**  Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/ETRRuleReport> .
+Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.** På sidan **E& och samarbetsrapporter** hittar du **Exchange-transportregel** och klickar sedan på **Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/ETRRuleReport> .
 
 ![Widget för Exchange-transportregel på sidan E& och samarbetsrapporter](../../media/transport-rule-report-widget.png)
 
-När du klickar **på Visa** information är följande diagram och data tillgängliga:
+Tillgängliga diagram **och data beskrivs** i följande avsnitt på sidan Exchange-transportregelrapport.
 
-- **Visa data enligt Exchange-transportregler** \> **Diagram i detalj efter riktning:** Det här diagrammet visar antalet **inkommande** och **utgående** meddelanden som påverkades av e-postflödesregler.
+### <a name="chart-breakdown-by-direction"></a>Diagramfördelning efter riktning
 
-- **Visa data enligt Exchange-transportregler** \> **Diagramfördelning efter allvarlighetsgrad**: Det här diagrammet visar antalet meddelanden med hög allvarlighetsgrad, **medel** allvarlighetsgrad och **låg allvarlighetsgrad.** Du anger allvarlighetsnivån som en åtgärd i regeln **(Granska** denna regel med allvarlighetsnivå eller _AngeGranskningSalla_). Mer information finns i Åtgärder för [e-postflödesregel i Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+![Riktningsvyn för Exchange-transportregler i exchange-transportregelrapporten](../../media/transport-rule-report-etr-direction-view.png)
 
-- **Visa data efter DLP Exchange-transportregler** \> **Diagramfördelning efter riktning:** Det här diagrammet  visar antalet **inkommande** och utgående meddelanden som påverkades av DLP-e-postflödesregler (Data Loss Prevention).
+Om du väljer **Diagramfördelning efter riktning** är följande diagram tillgängliga:
 
-- **Visa data efter DLP Exchange-transportregler** \> **Diagramfördelning efter allvarlighetsgrad**: I den här vyn visas  antalet meddelanden med hög allvarlighetsgrad, medel allvarlighetsgrad och låg allvarlighetsgrad som påverkades av DLP-e-postflödesregler.
+- **Visa data enligt Exchange-transportregler:** Antalet **inkommande** och **utgående** meddelanden som påverkades av e-postflödesregler.
+- **Visa data med DLP-transportregler** för Exchange: Antalet **inkommande** och utgående meddelanden som påverkades av DLP-e-postflödesregler (Data Loss Prevention). 
 
-För **val av Visa data efter Exchange-transportregler** visas följande information i detaljtabellen under diagrammet:
-
-- **Datum**
-- **Transportregel**
-- **Ämne**
-- **Avsändarens adress**
-- **Mottagaradress**
-- **Allvarlighetsgrad**
-- **Riktning**
-
-När **du väljer visningsdata för DLP-transportregler** för DLP visas följande information i detaljtabellen under diagrammet:
+Följande information visas i detaljtabellen under diagrammet:
 
 - **Datum**
-- **DLP-princip**
+- **DLP-princip** (**endast visa data efter DLP-transportregler i Exchange)**
 - **Transportregel**
 - **Ämne**
 - **Avsändarens adress**
@@ -116,25 +107,59 @@ När **du väljer visningsdata för DLP-transportregler** för DLP visas följan
 
 Du kan filtrera både diagrammet och informationstabellen genom att klicka på **Filtrera** och markera ett eller flera av följande värden i den utfällo som visas:
 
-- **Startdatum och** **slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Riktning**: **Utgående** och **inkommande**
 - **Allvarlighetsgrad**: **Hög allvarlighetsgrad,** **medel allvarlighetsgrad** och **låg allvarlighetsgrad**
 
-![Rapportvyn i rapporten Exchange-transportregel](../../media/transport-rule-report-report-view.png)
+När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**
+
+### <a name="chart-breakdown-by-severity"></a>Diagramfördelning per allvarlighetsgrad
+
+![Vyn Allvarlighetsgrad för Exchange-transportregler i rapporten Exchange-transportregel](../../media/transport-rule-report-etr-severity-view.png)
+
+Om du väljer **Diagramfördelning efter allvarlighetsgrad** är följande diagram tillgängliga:
+
+- **Visa data efter Exchange-transportregler:** Antalet **meddelanden** med hög allvarlighetsgrad, medel allvarlighetsgrad och låg **allvarlighetsgrad.** Du anger allvarlighetsnivån som en åtgärd i regeln **(Granska** denna regel med allvarlighetsnivå eller _AngeGranskningSalla_). Mer information finns i Åtgärder för [e-postflödesregel i Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+
+- **Visa data med DLP-transportregler** i Exchange: Antalet hög  allvarlighetsgrad **,** **Medel** allvarlighetsgrad och Meddelanden med låg allvarlighetsgrad som påverkades av DLP-e-postflödesregler.
+
+Följande information visas i detaljtabellen under diagrammet:
+
+- **Datum**
+- **DLP-princip** (**endast visa data efter DLP-transportregler i Exchange)**
+- **Transportregel**
+- **Ämne**
+- **Avsändarens adress**
+- **Mottagaradress**
+- **Allvarlighetsgrad**
+- **Riktning**
+
+Du kan filtrera både diagrammet och informationstabellen genom att klicka på **Filtrera** och markera ett eller flera av följande värden i den utfällo som visas:
+
+- **Datum (UTC)** **startdatum** **och slutdatum**
+- **Riktning**: **Utgående** och **inkommande**
+- **Allvarlighetsgrad**: **Hög allvarlighetsgrad,** **medel allvarlighetsgrad** och **låg allvarlighetsgrad**
+
+När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**
+
+## <a name="forwarding-report"></a>Vidarebefordransrapport
+
+> [!NOTE]
+> **Vidarebefordransrapporten är** nu tillgänglig i EAC. Mer information finns i [Rapporten om automatiska vidarebefordrade meddelanden i nya EAC.](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)
 
 ## <a name="mailflow-status-report"></a>Statusrapport för e-postflöde
 
 Statusrapporten **E-postflöde** är en smart rapport som visar information om inkommande och utgående e-post, identifiering av skräppost, skadlig programvara, e-post som identifieras som "bra" och information om e-post som är tillåten eller blockerad i kanten. Det här är den enda rapporten som innehåller information om gränsskydd och som visar hur mycket e-post som blockeras innan de tillåts till tjänsten för utvärdering av Exchange Online Protection (EOP). Det är viktigt att vara säker på att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
 
-Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.** Klicka **på Visa information i statussammanfattningen** för **E-postflöde.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/mailflowStatusReport> .
+Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.** På sidan **E& och samarbetsrapporter hittar** du **Statussammanfattning av E-postflöde** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/mailflowStatusReport> .
 
 ![Widget för statussammanfattning av e-postflöde på sidan & för e-postsamarbete](../../media/mail-flow-status-report-widget.png)
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>Typvy för statusrapporten E-postflöde
 
-När du öppnar rapporten är **fliken Typ** markerad som standard. Som standard innehåller den här vyn ett diagram och en datatabell som är konfigurerad med följande filter:
+När du öppnar rapporten är **fliken Typ** markerad som standard. Som standard innehåller den här vyn ett diagram och en informationstabell som är konfigurerad med följande filter:
 
-- **Datum:** De senaste sju dagarna.
+- **Datum (UTC)** De senaste sju dagarna.
 - **E-postriktning:**
   - **Inkommande**
   - **Utgående**
@@ -152,7 +177,7 @@ Diagrammet ordnas efter **typvärdena.**
 
 Du kan ändra dessa filter genom att klicka **på Filter** eller genom att klicka på ett värde i diagramförklaringen.
 
-Datatabellen innehåller följande information:
+Följande information visas i detaljtabellen under diagrammet:
 
 - **Riktning**
 - **Typ**
@@ -183,9 +208,9 @@ Om du klickar **på** fliken Riktning används samma standardfilter **från** vy
 
 Diagrammet är ordnat efter **riktningsvärden.**
 
-Du kan ändra dessa filter genom att klicka **på Filter** eller genom att klicka på ett värde i diagramförklaringen. Samma filter från **vyn** Typ används.
+Du kan ändra filtren genom att klicka på **Filter.** Samma filter från **vyn** Typ används.
 
-Datatabellen innehåller samma information från **vyn** Typ.
+Informationstabellen innehåller samma information från **vyn** Typ.
 
 Vyn **Välj en kategori för mer information** om tillgängliga val och beteenden är samma som **vyn** Typ.
 
@@ -201,19 +226,18 @@ Varje exporterad .csv är begränsad till 150 000 rader. Om dagens data innehål
 
 I **vyn Tratt** kan du se hur Microsofts skyddsfunktioner för e-posthot filtrerar inkommande och utgående e-post i organisationen. Här finns information om totalt antal e-postmeddelanden och hur de konfigurerade funktionerna för skydd mot hot, inklusive gränsskydd, skydd mot skadlig programvara, skydd mot nätfiske, skräppost och förfalskning, påverkar antalet.
 
-Om du klickar **på fliken Tratt** innehåller den här vyn som standard ett diagram och en datatabell som är konfigurerad med följande filter:
+Om du klickar **på fliken Tratt** innehåller den här vyn som standard ett diagram och en informationstabell som är konfigurerad med följande filter:
 
 - **Datum:** De senaste sju dagarna.
 
 - **Riktning**:
-
   - **Inkommande**
   - **Utgående**
   - **Årsorganisation:** Antalet är för meddelanden som skickas inom en klientorganisation. det vill säga att avsändaren abc@domain.com till mottagarens xyz@domain.com (räknas separat från inkommande och utgående).
 
-För aggregerad vy och datatabellvy kan du filtrera i 90 dagar.
+Den samlade vyn och detaljtabellvyn ger 90 dagars filtrering.
 
-Om du klickar **på** Filter kan du filtrera både diagrammet och datatabellen.
+Du kan ändra filtren genom att klicka på **Filter.** Samma filter från **vyn** Typ används.
 
 I det här diagrammet visas antalet e-postmeddelanden ordnade efter:
 
@@ -231,7 +255,7 @@ I det här diagrammet visas antalet e-postmeddelanden ordnade efter:
 
 Om du vill visa e-post som filtrerats efter EOP eller Defender Office 365 separat klickar du på värdet i diagramförklaringen.
 
-Datatabellen innehåller följande information, visad i fallande datumordning:
+Informationstabellen innehåller följande information, visad i fallande datumordning:
 
 - **Datum**
 - **Totalt antal e-postmeddelanden**
@@ -253,7 +277,7 @@ Datatabellen innehåller följande information, visad i fallande datumordning:
   - **URL-detonation**: Meddelande filtrerat av Valv princip för länkar.
 - **Post-delivery protection and ZAP (ATP) or ZAP (EOP) : Zero-hour** auto purge (ZAP) for malware, spam, and phishing.
 
-Om du markerar en rad i datatabellen visas ytterligare en uppdelning av antalet e-postmeddelanden i den utfällklienten.
+Om du markerar en rad i informationstabellen visas ytterligare en uppdelning av antalet e-postmeddelanden i den utfällade listan.
 
 #### <a name="export-from-funnel-view"></a>Exportera från trattvyn
 
@@ -272,19 +296,18 @@ Varje exporterad .csv är begränsad till 150 000 rader. Om informationen inneh�
 
 **Tech-vyn** liknar vyn **Tratt, med** mer detaljerad information om de konfigurerade funktionerna för skydd mot hot. Från diagrammet kan du se hur meddelanden kategoriseras i olika faser av skydd mot hot.
 
-Om du klickar **på fliken Teknisk** vy innehåller den här vyn som standard ett diagram och en datatabell som är konfigurerad med följande filter:
+Om du klickar **på fliken Teknisk** vy innehåller den här vyn som standard ett diagram och en informationstabell som är konfigurerad med följande filter:
 
 - **Datum:** De senaste sju dagarna.
 
 - **Riktning**:
-
   - **Inkommande**
   - **Utgående**
   - **Årsorganisation**: det här antalet gäller meddelanden inom en klientorganisation, dvs. sender abc@domain.com skickar till mottagarens xyz@domain.com (räknas separat från inkommande och utgående)
 
-För aggregerad vy och datatabellvy kan du filtrera i 90 dagar.
+Den samlade vyn och detaljtabellvyn ger 90 dagars filtrering.
 
-Om du klickar **på** Filter kan du filtrera både diagrammet och datatabellen.
+Du kan ändra filtren genom att klicka på **Filter.** Samma filter från **vyn** Typ används.
 
 Det här diagrammet visar meddelanden ordnade i följande kategorier:
 
@@ -301,9 +324,9 @@ Det här diagrammet visar meddelanden ordnade i följande kategorier:
 
 När du hovrar över en kategori i diagrammet visas antalet meddelanden i den kategorin.
 
-Datatabellen innehåller följande information, visad i fallande datumordning:
+Informationstabellen innehåller följande information, visad i fallande datumordning:
 
-- **Datum**
+- **Datum (UTC)**
 - **Totalt antal e-postmeddelanden**
 - **Edge filtrerad**
 - **Regelmeddelanden:** Meddelanden filtrerade på grund av e-postflödesregler (kallas även transportregler).
@@ -317,7 +340,7 @@ Datatabellen innehåller följande information, visad i fallande datumordning:
 
 <sup>\*</sup>Defender för Office 365
 
-Om du markerar en rad i datatabellen visas ytterligare en uppdelning av antalet e-postmeddelanden i den utfällklienten.
+Om du markerar en rad i informationstabellen visas ytterligare en uppdelning av antalet e-postmeddelanden i den utfällade listan.
 
 #### <a name="export-from-tech-view"></a>Exportera från teknisk vy
 
@@ -338,13 +361,13 @@ Rapporten **Om identifiering av skadlig programvara visar** information om ident
 
 Mängdvyfiltret tillåter 90 dagar, medan filtret i detaljtabellen bara tillåter 10 dagar.
 
-Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** Vid **skadlig programvara som upptäckts i e-post** klickar du på Visa **information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/MalwareDetections> .
+Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** På sidan **E& och samarbetsrapporter hittar** du Skadlig **programvara som upptäckts i e-post** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/MalwareDetections> .
 
 ![Identifiering av skadlig programvara i widgeten för e-& för e-& och samarbetsrapporter](../../media/malware-detections-widget.png)
 
-När du har **klickat på** Visa information kan du filtrera både diagrammet och detaljtabellen genom att klicka **på Filtrera** och välja:
+På **rapportsidan Identifiering av skadlig** programvara kan du filtrera både diagrammet och informationstabellen genom att klicka på **Filtrera** och välja något av följande värden:
 
-- **Datum:** **Startdatum** **och slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Riktning:** **Inkommande** **och utgående**
 
 ![Rapportvyn i rapporten om identifiering av skadlig programvara i e-post](../../media/malware-detections-report-view.png)
@@ -366,7 +389,7 @@ Rapporten **Om E-postfördröjning** i Defender för Office 365 innehåller info
 ## <a name="spam-detections-report"></a>Rapport om identifiering av skräppost
 
 > [!NOTE]
-> Rapporten **om identifiering av skräppost** försvinner den 30 juni 2021. Samma information är tillgänglig i rapporten [om skydd mot hot.](#threat-protection-status-report)
+> Rapporten **om identifiering av skräppost** försvinner så småningom. Samma information är tillgänglig i rapporten [om skydd mot hot.](#threat-protection-status-report)
 
 ## <a name="spoof-detections-report"></a>Rapport om identifieringar av förfalskning
 
@@ -379,15 +402,23 @@ I den samlade vyn för rapporten kan du filtrera i 45 dagar, medan <sup>\*</sup>
 
 <sup>\*</sup> Till slut kan du använda upp till 90 dagars filtrering.
 
-Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** Vid **identifieringar av förfalskning klickar** du **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/SpoofMailReportV2> .
+Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** På sidan **E& och samarbetsrapporter** hittar du **Identifieringar av förfalskning** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/SpoofMailReportV2> .
 
 ![Widget för identifiering av förfalskning på sidan & för e-post och samarbete](../../media/spoof-detections-widget.png)
 
+Diagrammet visar följande information:
+
+- **Godkänd**
+- **Fel**
+- **SoftPass**
+- **Ingen**
+- **Annat**
+
 När du hovrar över en dag (datapunkt) i diagrammet kan du se hur många falska meddelanden som påträffades och varför.
 
-När du klickar **på Visa** information kan du filtrera både diagrammet och detaljtabellen genom att klicka på **Filtrera** och markera ett eller flera av följande värden:
+På sidan **Förfalskningsrapport kan** du filtrera både diagrammet och informationstabellen genom att klicka på **Filtrera** och markera ett eller flera av följande värden:
 
-- **Datum:** **Startdatum** **och slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Resultat:**
   - **Godkänd**
   - **Fel**
@@ -398,7 +429,7 @@ När du klickar **på Visa** information kan du filtrera både diagrammet och de
 
 ![Sidan Förfalskningsrapport på Microsoft 365 Defender portalen](../../media/spoof-detections-report-page.png)
 
-I tabellen nedanför diagrammet kan du se följande information:
+I informationstabellen under diagrammet kan du se följande information:
 
 - **Datum**
 - **Spoofed användare**
@@ -413,6 +444,35 @@ I tabellen nedanför diagrammet kan du se följande information:
 
 Mer information om sammansatta resultatkoder för autentisering finns i Rubriker mot skräppost [i Microsoft 365.](anti-spam-message-headers.md)
 
+## <a name="submissions-report"></a>Rapport över inskickade uppgifter
+
+Rapporten **Över inlämningar** visar information om objekt som administratörer har rapporterat till Microsoft för analys. Mer information finns i Använda [administratörsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft.](admin-submission.md)
+
+Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** På sidan **E& och samarbetsrapporter** hittar du **Inlämningar** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/adminSubmissionReport> . Om du vill [gå till administrationsinskick i Microsoft 365 Defender klickar](admin-submission.md)du på Gå till **inskickade material.**
+
+![Widget för inlämningar på sidan & för e-post och samarbetsrapporter](../../media/submissions-report-widget.png)
+
+Diagrammet visar följande information:
+
+- **Väntande**
+- **Slutförd**
+
+På sidan **Inskickade** data kan du filtrera både diagrammet och detaljtabellen genom att klicka på **Filtrera** och välja ett eller flera av följande värden:
+
+- **Rapporterad** datum : **Starttid** **och Sluttid**
+- **Inskickingstyp:** **E-post, URL** eller **fil** 
+- **Sändnings-ID**
+- **Id för nätverksmeddelande**
+- **Avsändare**
+- **Namn**
+- **Skickat av**
+- **Orsak till att skicka:** **Inte skräppost,** **phish,** **skadlig** programvara eller **skräppost**
+- **Rescan-status:** **Väntande** eller **Slutförd**
+
+Detaljtabellen under diagrammet visar samma information  och har samma alternativ  för Gruppera eller Anpassa kolumner som på fliken Skickat för analys i Skicka e-& **med** samarbete –  \> **inskickade.** Mer information finns i [Visa inskickade administratörer till Microsoft.](admin-submission.md#view-admin-submissions-to-microsoft)
+
+![Rapportsida för inlämningar i Microsoft 365 Defender portalen](../../media/submissions-report-page.png)
+
 ## <a name="threat-protection-status-report"></a>Statusrapport för hotskydd
 
 Statusrapporten **för skydd** mot hot är tillgänglig i både EOP och Defender för Office 365. Rapporterna innehåller däremot olika data. Till exempel kan EOP-kunder visa information om skadlig programvara som upptäckts i e-post, men inte information om skadliga filer som upptäckts av [Valv-bifogade](mdo-for-spo-odb-and-teams.md)filer för SharePoint, OneDrive och Microsoft Teams.
@@ -421,14 +481,14 @@ Rapporten innehåller antalet e-postmeddelanden med skadligt innehåll, till exe
 
 **Obs!** Det är viktigt att förstå att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
 
-Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** På **Status för skydd mot hot** klickar du på Visa **information.** Öppna någon av följande URL:er för att gå direkt till rapporten:
+Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** På sidan **E& och samarbetsrapporter** hittar du **status för skydd mot hot** och klickar sedan på Visa **information.** Öppna någon av följande URL:er för att gå direkt till rapporten:
 
 - Defender för Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
 
 ![Widget för hotskyddsstatus på sidan & och samarbetsrapporter](../../media/threat-protection-status-report-widget.png)
 
-När du har klickat på **Visa information visas** som standard data för de senaste 7 dagarna i diagrammet. Om du klickar **på Filter** kan du välja ett datumintervall på 90 dagar (utvärderingsprenumerationer kan vara begränsat till 30 dagar). I detaljtabellen filtreras data i 30 dagar.
+Som standard visas data för de senaste 7 dagarna i diagrammet. Om du klickar **på Filter** **på** sidan för skydd mot hotstatus kan du välja ett datumintervall på 90 dagar (utvärderingsprenumerationer kan vara begränsat till 30 dagar). I detaljtabellen filtreras data i 30 dagar.
 
 De tillgängliga vyerna beskrivs i följande avsnitt.
 
@@ -446,7 +506,7 @@ Ingen informationstabell är tillgänglig under diagrammet.
 
 Om du **klickar på** Filter är följande filter tillgängliga:
 
-- **Datum:** **Startdatum** **och slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Identifiering:** Skadlig programvara för **e-post, e-post phish** eller **skadlig programvara för innehåll** 
 - **Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**
 - **Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton). Mer information om användartaggar finns i [Användartaggar.](user-tags.md)
@@ -493,7 +553,7 @@ I informationstabellen under diagrammet finns följande information tillgänglig
 
 Om du **klickar på** Filter är följande filter tillgängliga:
 
-- **Datum:** **Startdatum** **och slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Identifiering**
 - **Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**
 - **Riktning**
@@ -534,7 +594,7 @@ I informationstabellen under diagrammet finns följande information tillgänglig
 
 Om du **klickar på** Filter är följande filter tillgängliga:
 
-- **Datum:** **Startdatum** **och slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Identifiering**
 - **Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**
 - **Riktning**
@@ -572,7 +632,7 @@ I informationstabellen under diagrammet finns följande information tillgänglig
 
 Om du **klickar på** Filter är följande filter tillgängliga:
 
-- **Datum:** **Startdatum** **och slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Identifiering**
 - **Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**
 - **Riktning**
@@ -613,7 +673,7 @@ I informationstabellen under diagrammet finns följande information tillgänglig
 
 Om du **klickar på** Filter är följande filter tillgängliga:
 
-- **Datum:** **Startdatum** **och slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Identifiering**
 - **Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**
 - **Riktning**
@@ -636,14 +696,14 @@ I vyn **Visa data efter skadlig \>** programvara för innehåll visas följande 
 
 I informationstabellen under diagrammet finns följande information tillgänglig:
 
-- **Datum:** **Startdatum** **och slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Plats**
 - **Upptäckt av**
 - **Namn på skadlig programvara**
 
 Om du **klickar på** Filter är följande filter tillgängliga:
 
-- **Datum:** **Startdatum** **och slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Identifiering:** **Motor mot skadlig programvara** eller **detonation av filer**
 
 När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**
@@ -677,7 +737,7 @@ I informationstabellen under diagrammet finns följande information tillgänglig
 
 Om du **klickar på** Filter är följande filter tillgängliga:
 
-- **Datum:** **Startdatum** **och slutdatum**
+- **Datum (UTC)** **startdatum** **och slutdatum**
 - **Identifiering**
 - **Skyddad av**: **MDO** (Defender för Office 365) eller **EOP**
 - **Riktning**
@@ -695,13 +755,13 @@ När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbry
 
 Den **viktigaste rapporten om** skadlig programvara visar de olika typer av skadlig programvara som identifierats av skydd mot skadlig programvara i [EOP.](anti-malware-protection.md)
 
-Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** Klicka **på Visa information** vid den översta skadlig **programvara.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/TopMalware> .
+Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** På sidan **E& och samarbetsrapporter** hittar du **Den största skadlig programvara** och klickar sedan på Visa **information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/TopMalware> .
 
 ![Populära widget för skadlig programvara på sidan & och samarbetsrapporter](../../media/top-malware-report-widget.png)
 
 När du hovrar över en kil i cirkeldiagrammet kan du se namnet på en typ av skadlig programvara och hur många meddelanden som identifierats som har den skadlig kod.
 
-När du har **klickat på** Visa information visas en större version av cirkeldiagrammet på rapportsidan. I detaljtabellen under diagrammet visas följande information:
+På **sidan Den översta rapporten** om skadlig programvara visas en större version av cirkeldiagrammet på rapportsidan. I detaljtabellen under diagrammet visas följande information:
 
 - **Populära skadlig programvara**
 - **Antal**
@@ -721,11 +781,11 @@ Rapporten **om skydd mot URL-hot** är tillgänglig i Microsoft Defender för Of
 
 Rapporten **Om användarrapporter** visar information om e-postmeddelanden som användare har rapporterat som skräppost, nätfiskeförsök eller bra [e-post](enable-the-report-message-add-in.md) med hjälp av tilläggen Rapportmeddelande eller [Rapport nätfiske.](enable-the-report-phish-add-in.md)
 
-Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till Rapporterar  \> **e-& samarbete** \> **E& och** \> **samarbetsrapporter Användarrapporter .** På **användarrapporterade meddelanden** klickar du **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/userSubmissionReport> . Om du vill [gå till administrationsinskick i Microsoft 365 Defender klickar](admin-submission.md)du på Gå till **inskickade material.**
+Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** På sidan **E& och samarbetsrapporter** hittar du användarrapporterade **meddelanden** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/userSubmissionReport> . Om du vill [gå till administrationsinskick i Microsoft 365 Defender klickar](admin-submission.md)du på Gå till **inskickade material.**
 
 ![Widget för användarrapporter på sidan e& och samarbetsrapporter](../../media/user-reported-messages-widget.png)
 
-När du har **klickat på** Visa information kan du filtrera både diagrammet och detaljtabellen genom att klicka på **Filtrera** och välja ett eller flera av följande värden i den utfäll vy som visas:
+På sidan **Användarrapporterade** meddelanden kan du filtrera både diagrammet och informationstabellen genom att klicka på **Filtrera** och välja ett eller flera av följande värden i den utfäll plats som visas:
 
 - **Rapporterad** datum : **Starttid** **och Sluttid**
 - **Rapporterad av**
@@ -752,7 +812,7 @@ Om du vill gruppera posterna **klickar du** på Gruppera och väljer något av f
 
 ![Rapport över användarrapporterade meddelanden](../../media/user-reported-messages-report.png)
 
-I tabellen nedanför diagrammet kan du se följande information:
+I informationstabellen under diagrammet kan du se följande information:
 
 - **Ämne för e-post**
 - **Rapporterad av**

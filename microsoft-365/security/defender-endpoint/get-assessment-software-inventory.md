@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4f2e16acf474d6da8867a6bd392f9e90e0cf166e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 639f850119498222684c4b3804b32a29dda3eac4
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984850"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022888"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportera utvärdering av programvaruinventering per enhet
 
@@ -37,7 +37,7 @@ ms.locfileid: "52984850"
 >
 Det finns olika API-anrop för att få olika typer av data. Eftersom mängden data kan vara stor kan den hämtas på två sätt:
 
-- [Exportera utvärdering av programvaruinventering **av OData**](#1-export-software-inventory-assessment-odata)  API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
+- [Exportera JSON-svar för **lagerutvärdering för programvara**](#1-export-software-inventory-assessment-json-response) API:t hämtar alla data i organisationen som Json-svar. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
 
 - [Exportera utvärdering av programvaruinventering **via filer**](#2-export-software-inventory-assessment-via-files)  Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure-lagring. Med det här API:t kan du ladda ned alla dina data Azure-lagring enligt följande:
 
@@ -51,7 +51,7 @@ Data som samlas in (med hjälp av _antingen OData_ eller _via_ filer) är den ak
 >
 > Om inget annat anges exporteras alla utvärderingsmetoder som **_listas för fullständig export_** **_och_** efter enhet (kallas även **_per enhet)._**
 
-## <a name="1-export-software-inventory-assessment-odata"></a>1. Exportera utvärdering av programvara för lager (OData)
+## <a name="1-export-software-inventory-assessment-json-response"></a>1. Exportera utvärdering av programvara för lager (JSON-svar)
 
 ### <a name="11-api-method-description"></a>1.1 API-metodbeskrivning
 
@@ -88,11 +88,13 @@ GET /api/machines/SoftwareInventoryByMachine
 
 >[!NOTE]
 >
->-Varje post är cirka 0,5 kB data. Du bör ta med detta i beräkningen när du väljer rätt pageSize-parameter.
-
->-Egenskaperna som definieras i följande tabell anges i alfabetisk ordning, efter egenskaps-ID. När du kör det här API:t returneras inte resultatet nödvändigtvis i samma ordning som anges i den här tabellen.
+>- Varje post motsvarar cirka 0,5 kB data. Du bör ta med detta i beräkningen när du väljer rätt pageSize-parameter.
 >
->-Några ytterligare kolumner kan returneras i svaret. Kolumnerna är tillfälliga och kan komma att tas bort. Använd bara de dokumenterade kolumnerna.
+>- Egenskaperna som definieras i följande tabell anges i alfabetisk ordning, efter egenskaps-ID. När du kör det här API:t returneras inte resultatet nödvändigtvis i samma ordning som anges i den här tabellen.
+>
+>- Vissa ytterligare kolumner kan returneras i svaret. Kolumnerna är tillfälliga och kan komma att tas bort. Använd bara de dokumenterade kolumnerna.
+
+<br/>
 
 Egenskap (ID) | Datatyp | Beskrivning | Exempel på ett returnerat värde
 :---|:---|:---|:---
@@ -246,12 +248,14 @@ GET /api/machines/SoftwareInventoryExport
 
 >[!Note]
 >
->- Filerna är gzip komprimerade & I multiline Json-format.
+>- Filerna är gzip komprimerade & multiline JSON-format.
 >
 >- Url:erna för nedladdning är endast giltiga i 3 timmar. Annars kan du använda parametern.
 >
->_ För maximal nedladdningshastighet för dina data kan du se till att du laddar ned från samma Azure-region som dina data finns i.
->
+>- För maximal nedladdningshastighet för dina data kan du se till att du laddar ned från samma Azure-region som dina data finns i.
+
+<br/><br/>
+
 Egenskap (ID) | Datatyp | Beskrivning | Exempel på ett returnerat värde
 :---|:---|:---|:---
 Exportera filer | \[matrissträng\] | En lista över hämtnings-URL:er för filer som innehåller den aktuella ögonblicksbilden av organisationen | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]

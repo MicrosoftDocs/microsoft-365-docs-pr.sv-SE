@@ -1,6 +1,6 @@
 ---
-title: Incidenter i Microsoft 365 Defender
-description: Undersök incidenter som kan visas på olika enheter, användare och postlådor Microsoft 365 säkerhetscenter.
+title: Ärenden i Microsoft 365 Defender
+description: Undersök incidenter som kan visas på olika enheter, användare och postlådor i Microsoft 365 Defender portalen.
 keywords: incidenter, aviseringar, undersöker, analyserar, svar, korrelation, attack, datorer, enheter, användare, identiteter, identitet, postlåda, e-post, 365, microsoft, m365, incidentsvar, cyberattack
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9970bb6d410f39ff5d796dec678a750342f0f599
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842032"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022792"
 ---
-# <a name="incidents-in-microsoft-365-defender"></a>Incidenter i Microsoft 365 Defender
+# <a name="incidents-in-microsoft-365-defender"></a>Ärenden i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,15 +40,15 @@ ms.locfileid: "52842032"
 > Vill du uppleva Microsoft 365 Defender? Du kan [utvärdera det i en laboratoriemiljö](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eller [köra ett pilotprojekt i produktionen](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
-En incident i Microsoft 365 Defender är en samling korrelerade varningar och associerade data som utgör en attacks historia. 
+En incident i Microsoft 365 Defender är en samling korrelerade varningar och associerade data som utgör storyn av en attack. 
 
 Microsoft 365 och appar skapar aviseringar när de upptäcker misstänkt eller skadlig händelse eller aktivitet. Enskilda aviseringar ger värdefulla ledtrådar om en slutförd eller pågående attack. Men attacker använder vanligtvis olika tekniker mot olika typer av enheter, till exempel enheter, användare och postlådor. Resultatet är flera aviseringar för flera enheter i klientorganisationen. 
 
-Eftersom det kan vara svårt och tidskrävande att samla ihop enskilda aviseringar för att få insikter i en attack, sammanställer Microsoft 365 Defender automatiskt aviseringarna och deras tillhörande information till en incident.
+Eftersom det kan vara svårt och tidskrävande att samla ihop enskilda aviseringar för att få insikter i en attack sammanställer Microsoft 365 Defender automatiskt aviseringarna och deras tillhörande information till en incident.
 
 :::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Hur Microsoft 365 Defender korrelerar händelser från enheter till ett incident":::
 
-Titta på den här korta översikten över incidenter i Microsoft 365 Defender (4 minuter).
+Titta på den här korta översikten över incidenter om Microsoft 365 Defender (4 minuter).
 
 <br>
 
@@ -62,17 +62,17 @@ Om du grupperar relaterade aviseringar i en incident får du en omfattande bild 
 - Attackens omfattning, till exempel hur många enheter, användare och postlådor som påverkades. 
 - Alla data som är associerade med attacken.
 
-Om [den](m365d-enable.md)är aktiverad Microsoft 365 Defender [undersöka och åtgärda](m365d-autoir.md) varningar automatiskt och artificiell intelligens. Du kan också utföra ytterligare åtgärdssteg för att lösa attacken. 
+Om [den](m365d-enable.md)är aktiverad Microsoft 365 Defender automatiskt [undersöka och åtgärda](m365d-autoir.md) varningar med hjälp av automatisering och artificiell intelligens. Du kan också utföra ytterligare åtgärdssteg för att lösa attacken. 
 
-## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>Incidenter och aviseringar på Microsoft 365 säkerhetscenter
+## <a name="incidents-and-alerts-in-the-microsoft-365-defender-portal"></a>Incidenter och aviseringar i Microsoft 365 Defender portalen
 
-Du hanterar incidenter **från & och > incidenter** i snabbstarten av säkerhetscentret i Microsoft 365 [(security.microsoft.com).](https://security.microsoft.com) Här är ett exempel.
+Du hanterar incidenter **från & och > incidenter** i snabbstarten av Microsoft 365 Defender portalen [(security.microsoft.com).](https://security.microsoft.com) Här är ett exempel.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Sidan Incidenter i Microsoft 365 säkerhetscenter":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Sidan Incidenter i Microsoft 365 Defender portalen":::
 
 När du väljer ett namn på incidenten visas en sammanfattning av händelsen och det ger tillgång till flikar med ytterligare information.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exempel på sidan Sammanfattning för en incident i Microsoft 365 säkerhetscenter":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exempel på sidan Sammanfattning för en incident i Microsoft 365 Defender portalen":::
 
 Ytterligare flikar för en händelse är:
 
@@ -104,13 +104,13 @@ Ytterligare flikar för en händelse är:
 
   En bild som visar kopplingen av aviseringar till de påverkade tillgångarna i organisationen.
 
-Här är förhållandet mellan en händelse och dess data och flikarna för en incident i Microsoft 365 säkerhetscenter.
+Här är förhållandet mellan en händelse och dess data och flikarna för en incident i Microsoft 365 Defender portalen.
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Förhållandet mellan en incident och dess data till flikarna för en händelse i Microsoft 365 säkerhetscenter":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Förhållandet mellan en händelse och dess data till flikarna för en händelse i Microsoft 365 Defender portalen":::
 
 ## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Exempel på arbetsflöde av incidentsvar för Microsoft 365 Defender
 
-Här är ett exempel på ett arbetsflöde för att svara på incidenter i Microsoft 365 med Microsoft 365 säkerhetscenter.
+Här är ett exempel på ett arbetsflöde för att svara på incidenter Microsoft 365 med Microsoft 365 Defender portalen.
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Exempel på ett arbetsflöde för incidentsvar för Microsoft 365":::
 
@@ -121,15 +121,15 @@ Identifiera ärenden med högsta prioritet för analys och lösning i incidentk�
 
 1. Påbörja en attack och aviseringsundersökning och analys [för varje händelse:](investigate-incidents.md)
  
-   a. Visa sammanfattningen av incidenten för att förstå dess omfattning och allvarlighetsgrad och vilka enheter som påverkas **(fliken** Sammanfattning).
+   1. Visa sammanfattningen av incidenten för att förstå dess omfattning och allvarlighetsgrad och vilka enheter som påverkas **(fliken** Sammanfattning).
 
-   b. Börja analysera aviseringarna så att du förstår deras ursprung, omfattning och allvarlighetsgrad **(fliken** Aviseringar).
+   1. Börja analysera aviseringarna så att du förstår deras ursprung, omfattning och allvarlighetsgrad **(fliken** Aviseringar).
 
-   c. Vid behov samlar du in information om påverkade enheter, användare och postlådor **(flikarna** **Enheter,** Användare **och Postlådor).**
+   1. Vid behov samlar du in information om påverkade enheter, användare och postlådor **(flikarna** **Enheter,** Användare **och Postlådor).**
 
-   d. Se hur Microsoft 365 Defender har [löst vissa aviseringar automatiskt](m365d-autoir.md) **(fliken Undersökningar).**
+   1. Se hur Microsoft 365 Defender har [löst vissa aviseringar](m365d-autoir.md) automatiskt **(fliken Undersökningar).**
    
-   e. Vid behov kan du använda informationen i datauppsättningen för incidenten för mer information **(fliken Bevis och** svar).
+   1. Vid behov kan du använda informationen i datauppsättningen för incidenten för mer information **(fliken Bevis och** svar).
 
 2. Efter eller under analysen bör du utföra inneslutning för att minska eventuella ytterligare effekter av attacken och säkerhetshotet.
 
@@ -173,11 +173,11 @@ Dagliga, månatliga, kvartals- och årliga uppgifter kan användas för att uppd
 
 **Om du inte har angående** säkerhetsanalys och incidentsvar:
 
-- I [](first-incident-overview.md) genomgången Svara på din första incident finns en guidad genomgång av en typisk process av analys, åtgärder och efter incidentgranskning i säkerhetscentret i Microsoft 365 med ett exempel på en attack.
+- I [](first-incident-overview.md) genomgången Svara på din första incident finns en guidad genomgång av en typisk process av analys, åtgärder och efter incidentgranskning i Microsoft 365 Defender-portalen med ett exempel på en attack.
 
 **Om du har erfarenhet av** säkerhetsanalys och incidentsvar:
 
-- Kom igång med incidentkön på sidan **Incidenter** Microsoft 365 säkerhetscenter. Härifrån kan du:
+- Kom igång med incidentkön på sidan **Incidenter** i Microsoft 365 Defender portalen. Härifrån kan du:
 
   - Se vilka incidenter som [ska prioriteras](incident-queue.md) utifrån allvarlighetsgrad och andra faktorer. 
 

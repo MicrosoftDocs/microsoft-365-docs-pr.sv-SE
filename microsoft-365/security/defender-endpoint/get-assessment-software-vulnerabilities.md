@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea05d37ebcd0953dd109f524775a55cf8d6b3683
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984970"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022876"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exportera bedömningar av säkerhetsproblem för programvara per enhet
 
@@ -39,16 +39,16 @@ Returnerar alla kända säkerhetsproblem i programvaran och deras information f�
 
 Det finns olika API-anrop för att få olika typer av data. Eftersom mängden data kan vara mycket stor kan den hämtas på två sätt:
 
-1. [Exportera säkerhetsproblem med programvara, utvärdering av OData](#1-export-software-vulnerabilities-assessment-odata)  API:t hämtar alla data i organisationen som Json-svar efter OData-protokollet. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
+1. [Exportera säkerhetsproblem för programvara, **bedömning JSON-svar**](#1-export-software-vulnerabilities-assessment-json-response)  API:t hämtar alla data i organisationen som Json-svar. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
 
-2. [Exportera utvärdering av säkerhetsproblem för programvara via filer](#2-export-software-vulnerabilities-assessment-via-files) Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Via-filer rekommenderas för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure-lagring. Med det här API:t kan du ladda ned alla dina data Azure-lagring enligt följande:
+2. [Exportera utvärdering av säkerhetsproblem för programvara **via filer**](#2-export-software-vulnerabilities-assessment-via-files) Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Via-filer rekommenderas för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure-lagring. Med det här API:t kan du ladda ned alla dina data Azure-lagring enligt följande:
 
    - Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata.
 
    - Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
 
-3. [Delta i utvärdering av säkerhetsproblem för export av programvara, OData](#3-delta-export-software-vulnerabilities-assessment-odata)  Returnerar en tabell med en post för varje unik kombination av: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId och EventTimestamp.
-API:t hämtar data i organisationen som Json-svar efter OData-protokollet. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat. <br><br> Till skillnad från säkerhetsproblem i programvaran (OData) – som används för att få en fullständig ögonblicksbild av säkerhetsproblem i programvarans bedömning av organisationen efter enhet – används deltaexport-OData API-anropet för att bara hämta ändringar som har inträffat mellan ett valt datum och dagens datum (delta-API-anropet). I stället för att få en fullständig export med en stor mängd data varje gång får du bara specifik information om nya, korrigerade och uppdaterade svagheter. Deltaexport av OData API-anrop kan också användas för att beräkna olika KPI:er, till exempel "hur många säkerhetsproblem har åtgärdats?" eller "hur många nya säkerhetsproblem lades till i organisationen?" <br><br> Eftersom deltaexporten av OData API-anropet för svagheter i programvaran returnerar data endast för ett måldatum betraktas det inte som en _fullständig export._
+3. [Delta i export av säkerhetsproblem vid **bedömning av JSON-svar**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Returnerar en tabell med en post för varje unik kombination av: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId och EventTimestamp.
+API:t hämtar data i organisationen som Json-svar. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat. <br><br> Till skillnad från den fullständiga utvärderingen av säkerhetsproblem för programvara (JSON-svar) – som används för att erhålla en hel ögonblicksbild av svagheter i programvarans bedömning av organisationen efter enhet – används deltaexport-OData API-anropet för att bara hämta de ändringar som har inträffat mellan ett valt datum och dagens datum (delta-API-anropet). I stället för att få en fullständig export med en stor mängd data varje gång får du bara specifik information om nya, korrigerade och uppdaterade svagheter. Deltaexportera JSON-svars-API-anrop kan också användas för att beräkna olika KPI:er, till exempel "hur många säkerhetsproblem har åtgärdats?" eller "hur många nya säkerhetsproblem lades till i organisationen?" <br><br> Eftersom deltaexporten av JSON-svars-API:t för svagheter i programvaran returnerar data endast för ett måldatumintervall anses det inte vara _en fullständig export._
 
 Data som samlas in (med hjälp av _antingen OData_ eller _via_ filer) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
 
@@ -56,17 +56,17 @@ Data som samlas in (med hjälp av _antingen OData_ eller _via_ filer) är den ak
 >
 > Om inget annat anges exporteras alla utvärderingsmetoder som **_listas för fullständig export_** **_och_** efter enhet (kallas även **_per enhet)._**
 
-## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. Utvärdering av säkerhetsproblem med programvara (OData)
+## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. Exportera utvärdering av säkerhetsproblem för programvara (JSON-svar)
 
 ### <a name="11-api-method-description"></a>1.1 API-metodbeskrivning
 
 Det här API-svaret innehåller alla data om installerad programvara per enhet. Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
-#### <a name="limitations"></a>Begränsningar
+#### <a name="111-limitations"></a>1.1.1 Begränsningar
 
->- Maximal sidstorlek är 200 000.
->
->- Prisbegränsningar för detta API är 30 samtal per minut och 1 000 samtal per timme.
+- Maximal sidstorlek är 200 000.
+
+- Prisbegränsningar för detta API är 30 samtal per minut och 1 000 samtal per timme.
 
 ### <a name="12-permissions"></a>1.2 Behörigheter
 
@@ -89,15 +89,16 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 - $top – antal resultat som ska returneras (returnerar inte @odata.nextLink och därför inte alla data)
 
 ### <a name="15-properties"></a>1.5 Egenskaper
->
+
 >[!Note]
 >
->- Varje post motsvarar ungefär 1 kB data. Du bör ta med detta i beräkningen när du väljer rätt pageSize-parameter.
+>- Varje post är cirka 1 kB data. Du bör ta med detta i beräkningen när du väljer rätt pageSize-parameter.
 >
 >- Vissa ytterligare kolumner kan returneras i svaret. Kolumnerna är tillfälliga och kan komma att tas bort. Använd bara de dokumenterade kolumnerna.
 >
 >- Egenskaperna som definieras i följande tabell anges i alfabetisk ordning, efter egenskaps-ID.  När du kör det här API:t returneras inte resultatet nödvändigtvis i samma ordning som anges i den här tabellen.
->
+
+<br/>
 
 Egenskap (ID) | Datatyp | Beskrivning | Exempel på ett returnerat värde
 :---|:---|:---|:---
@@ -335,17 +336,17 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 }
 ```
 
-## <a name="3-delta-export-software-vulnerabilities-assessment-odata"></a>3. Utvärdering av delta vid export av säkerhetsproblem (OData)
+## <a name="3-delta-export-software-vulnerabilities-assessment-json-response"></a>3. Sårbarhetsbedömning av deltaexportprogramvara (JSON-svar)
 
 ### <a name="31-api-method-description"></a>3.1 API-metodbeskrivning
 
-Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. API:t hämtar data i organisationen som Json-svar efter OData-protokollet. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat. Till skillnad från säkerhetsproblem i programvaran (OData) – som används för att få en fullständig ögonblicksbild av säkerhetsproblem i programvarans bedömning av organisationen efter enhet – används deltaexport-OData API-anropet för att bara hämta ändringar som har inträffat mellan ett valt datum och dagens datum (delta-API-anropet). I stället för att få en fullständig export med en stor mängd data varje gång får du bara specifik information om nya, korrigerade och uppdaterade svagheter. Deltaexport av OData API-anrop kan också användas för att beräkna olika KPI:er, till exempel "hur många säkerhetsproblem har åtgärdats?" eller "hur många nya säkerhetsproblem lades till i organisationen?"
+Returnerar en tabell med en post för varje unik kombination av DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. API:t hämtar data i organisationen som Json-svar. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat. Till skillnad från den fullständiga utvärderingen av säkerhetsproblem för programvara (JSON-svar), som används för att erhålla en hel ögonblicksbild av säkerhetsproblem i programvarans bedömning av organisationen efter enhet, används deltaexports-JSON-svars-API-anropet för att bara hämta ändringar som har skett mellan ett valt datum och dagens datum (delta-API-anropet). I stället för att få en fullständig export med en stor mängd data varje gång får du bara specifik information om nya, korrigerade och uppdaterade svagheter. Deltaexportera JSON-svars-API-anrop kan också användas för att beräkna olika KPI:er, till exempel "hur många säkerhetsproblem har åtgärdats?" eller "hur många nya säkerhetsproblem lades till i organisationen?"
 
 >[!NOTE]
 >
->Vi rekommenderar starkt att du använder säkerhetsproblemen vid export av programvara genom enhets-API-anrop minst en gång i veckan, och detta ytterligare säkerhetsproblem vid export av programvara ändras efter enhet (delta) API-anrop alla övriga dagar i veckan.  Till skillnad från andra OData API:er är "deltaexporten" inte en fullständig export. Deltaexporten innehåller bara de ändringar som har skett mellan ett valt datum och dagens datum (API-anropet "delta").
+>Vi rekommenderar starkt att du använder säkerhetsproblemen vid export av programvara genom enhets-API-anrop minst en gång i veckan, och detta ytterligare säkerhetsproblem vid export av programvara ändras efter enhet (delta) API-anrop alla övriga dagar i veckan.  Till skillnad från andra JSON-svars-API:er för utvärderingar är "deltaexporten" inte en fullständig export. Deltaexporten innehåller bara de ändringar som har skett mellan ett valt datum och dagens datum (API-anropet "delta").
 
-#### <a name="limitations"></a>Begränsningar
+#### <a name="311-limitations"></a>3.1.1 Begränsningar
 
 - Maximal sidstorlek är 200 000.
 
@@ -379,10 +380,10 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 Varje returnerad post innehåller alla data från säkerhetsproblem i exportprogramvaran som bedöms av enhets-OData API plus ytterligare två fält:  _**EventTimestamp**_ och _**Status**_.
 
 >[!NOTE]
->-Några ytterligare kolumner kan returneras i svaret. Kolumnerna är tillfälliga och kan komma att tas bort, så använd bara de dokumenterade kolumnerna.
+>- Vissa ytterligare kolumner kan returneras i svaret. Kolumnerna är tillfälliga och kan komma att tas bort, så använd bara de dokumenterade kolumnerna.
 >
->-Egenskaperna som definieras i följande tabell anges i alfabetisk ordning, efter egenskaps-ID.  När du kör det här API:t returneras inte resultatet nödvändigtvis i samma ordning som anges i den här tabellen.
-<br>
+>- Egenskaperna som definieras i följande tabell anges i alfabetisk ordning, efter egenskaps-ID.  När du kör det här API:t returneras inte resultatet nödvändigtvis i samma ordning som anges i den här tabellen.
+<br><br/>
 
 Egenskap (ID) | Datatyp | Beskrivning | Exempel på returnerat värde
 :---|:---|:---|:---
@@ -411,12 +412,12 @@ VulnerabilitySeverityLevel | sträng | Allvarlighetsnivå tilldelad till säkerh
 #### <a name="clarifications"></a>Förtydligande
 
 - Om programvaran uppdaterades från version 1.0 till version 2.0 och båda versionerna exponeras för CVE-A, får du 2 separata händelser:  
-   a. Åtgärdat – CVE-A i version 1.0 har åtgärdats  
-   b. Nytt – CVE-A på version 2.0 lades till
+   1. Åtgärdat – CVE-A i version 1.0 har åtgärdats  
+   1. Nytt – CVE-A på version 2.0 lades till
 
 - Om ett specifikt problem (till exempel CVE-A) först sågs vid en viss tidpunkt (till exempel 10 januari) på programvara med version 1.0, och några dagar senare uppdaterades programvaran till version 2.0 som också exponerades för samma CVE-A, får du dessa två separata händelser:  
-   a. Åtgärdat – CVE-X, FirstSeenTimestamp 10 januari, version 1,0.  
-   b. Nytt – CVE-X, FirstSeenTimestamp 10 januari, version 2.0.
+   1. Åtgärdat – CVE-X, FirstSeenTimestamp 10 januari, version 1,0.  
+   1. Nytt – CVE-X, FirstSeenTimestamp 10 januari, version 2.0.
 
 ### <a name="36-examples"></a>3.6 Exempel
 

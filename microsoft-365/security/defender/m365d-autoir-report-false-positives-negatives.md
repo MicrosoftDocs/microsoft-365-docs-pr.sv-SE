@@ -1,5 +1,5 @@
 ---
-title: Hantera falska positiva resultat eller falska negativa tal i Microsoft 365 Defender
+title: Åtgärda falska positiva eller falska negativa tal i Microsoft 365 Defender
 description: Har något missats eller identifierats felaktigt av AIR i Microsoft 365 Defender? Lär dig hur du skickar falska positiva eller falska negativa tal till Microsoft för analys.
 keywords: automatiserad, undersökning, avisering, åtgärd, falskt positivt, falskt negativt
 search.appverid: met150
@@ -21,21 +21,21 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 3cffa97d26b2b28de8d9e45d7030e0931a7ba072
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f60208b06e66c1e9803e05ee1fc41376824e9b56
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269586"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022540"
 ---
-# <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Hantera falska positiva resultat eller falska negativa tal i Microsoft 365 Defender
+# <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Åtgärda falska positiva eller falska negativa tal i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Gäller för:**
 - Microsoft 365 Defender
 
-Falska positiva eller negativa resultat kan ibland uppstå med någon lösning för skydd mot hot. Om [automatisk undersökning och svarsfunktioner i](m365d-autoir.md) Microsoft 365 Defender har missat eller identifierat något fel finns det åtgärder som ditt säkerhetsteam kan vidta:
+Falska positiva eller negativa resultat kan ibland uppstå med någon lösning för skydd mot hot. Om [automatisk undersökning och svarsfunktioner i](m365d-autoir.md) Microsoft 365 Defender har missat eller felaktigt identifierat något finns det åtgärder som ditt säkerhetsteam kan vidta:
 
 - [Rapportera ett falskt positivt/negativt resultat till Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [Justera dina aviseringar](#adjust-an-alert-to-prevent-false-positives-from-recurring) (om det behövs)
@@ -72,5 +72,4 @@ Om en åtgärdsåtgärd har vidtagits för en entitet (till exempel en enhet ell
 ## <a name="see-also"></a>Se även
 
 - [Visa information och resultat från en automatiserad undersökning](m365d-autoir-results.md)
-- [Proaktiv sökning efter hot med avancerad sökning i Microsoft 365 Defender](advanced-hunting-overview.md)
-- [Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)
+- [Proaktivt leta efter hot med avancerad sökning i Microsoft 365 Defender](advanced-hunting-overview.md)

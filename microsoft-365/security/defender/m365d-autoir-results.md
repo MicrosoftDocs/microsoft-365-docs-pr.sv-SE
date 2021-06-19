@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ad774fc36f4f167cb7a4e695b9f572ceb55b968b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9ee2f0402e8cfd184e59dce5a382f835b706d6aa
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274682"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022571"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Information och resultat från en automatiserad undersökning
 
@@ -35,9 +35,9 @@ ms.locfileid: "52274682"
 **Gäller för:**
 - Microsoft 365 Defender
 
-När Microsoft 365 en automatiserad [](m365d-autoir.md) undersökning körs med Defender är information om undersökningen tillgänglig både under och efter den automatiska undersökningen. Om du har nödvändiga [behörigheter kan](m365d-action-center.md#required-permissions-for-action-center-tasks)du visa de uppgifterna i en vy med undersökningsinformation. Den här vyn ger dig uppdaterad status och möjlighet att godkänna eventuella väntande åtgärder. 
+När Microsoft 365 Defender en automatiserad [undersökning](m365d-autoir.md) körs är information om undersökningen tillgänglig både under och efter den automatiska undersökningen. Om du har nödvändiga [behörigheter kan](m365d-action-center.md#required-permissions-for-action-center-tasks)du visa de uppgifterna i en vy med undersökningsinformation. Den här vyn ger dig uppdaterad status och möjlighet att godkänna eventuella väntande åtgärder. 
 
-![Undersökningsinformation](../../media/mtp-air-investdetails.png)
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Undersökningsinformation":::
 
 ## <a name="new-unified-investigation-page"></a>(NY!) Sida för enhetlig undersökning
 
@@ -45,7 +45,7 @@ Undersökningssidan har nyligen uppdaterats för att inkludera information på d
 
 - Sidan Undersökning i säkerhets- Office 365 säkerhets- & ( [https://protection.office.com](https://protection.office.com) )
 - Undersökningssida i Microsoft Defender Säkerhetscenter ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Alla incident- eller åtgärdscenterupplevelser i Microsoft 365 säkerhetscenter ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Alla incident- eller åtgärdscenterupplevelser på Microsoft 365 Defender portalen [https://security.microsoft.com](https://security.microsoft.com) ()
 
 ## <a name="open-the-investigation-details-view"></a>Öppna detaljvyn för undersökningen
 
@@ -89,13 +89,13 @@ Använd sidan incidentinformation om du vill visa detaljerad information om en h
 
 Här är ett exempel.
 
-![Incidentinformation](../../media/mtp-incidentdetails-tabs.png)
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="Incidentinformation":::
 
 ## <a name="investigation-details"></a>Undersökningsinformation
 
 Använd vyn med undersökningsinformation för att se tidigare, aktuella och väntande aktiviteter som hör till en undersökning. Här är ett exempel.
 
-![Undersökningsinformation](../../media/mtp-air-investdetails.png)
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="Undersökningsinformation":::
 
 I vyn Undersökningsinformation kan du se information om flikarna **Undersökningsdiagram**, Varningar, Enheter, Identiteter, Nyckelresultat, Enheter, Logg och Väntande åtgärder, som beskrivs i följande tabell.       
 
@@ -105,7 +105,7 @@ I vyn Undersökningsinformation kan du se information om flikarna **Undersöknin
 | Tabb | Beskrivning |
 |:--------|:--------|
 | **Undersökningsdiagram**   | Ger en visuell representation av undersökningen. Visar enheter och visar hot som hittas, tillsammans med aviseringar och om några åtgärder väntar på godkännande.<br/>Du kan markera ett objekt i diagrammet om du vill visa mer information. Om du till exempel **väljer ikonen Bevis** kommer du till fliken **Bevis** där du kan se identifierade enheter och deras bedömningar. |
-| **Varningar**    | Listar aviseringar kopplade till undersökningen. Varningar kan komma från skyddsfunktioner för hot på en användares enhet, i Office appar, Microsoft Cloud App Security och andra Microsoft 365 Defender-funktioner.|
+| **Varningar**    | Listar aviseringar kopplade till undersökningen. Varningar kan komma från skyddsfunktioner för hot på en användares enhet, i Office appar, Microsoft Cloud App Security och andra Microsoft 365 Defender funktioner.|
 | **Enheter** | Visar enheter som ingår i undersökningen tillsammans med deras åtgärdsnivå. (Åtgärdsnivåer motsvarar [automationsnivån för enhetsgrupper](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **Postlådor** |Listar postlådor som påverkas av identifierade hot.  |
 | **Användare**  | Här listas användarkonton som påverkas av identifierade hot. |
@@ -116,5 +116,5 @@ I vyn Undersökningsinformation kan du se information om flikarna **Undersöknin
 
 ## <a name="next-steps"></a>Nästa steg
 
-- [Visa och hantera åtgärdsåtgärder](m365d-autoir-actions.md)
+- [Visa och hantera reparationsåtgärder](m365d-autoir-actions.md)
 - [Läs mer om åtgärder](m365d-remediation-actions.md)
