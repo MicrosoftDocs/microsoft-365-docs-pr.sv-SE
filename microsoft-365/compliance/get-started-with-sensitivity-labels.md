@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Är du redo att distribuera känslighetsetiketter för att skydda organisationens data, men är osäker på var du ska börja? Läs några praktiska riktlinjer som hjälper dig med etiketteringsresan.
-ms.openlocfilehash: c87289fc7017e75db3b8a5b84a8af3a42dc16a10
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 550a1a84df88340de14caff08284ef6a8cadc9e9
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689127"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022492"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Kom igång med känslighetsetiketter
 
@@ -86,7 +86,7 @@ Alla scenarier kräver att du [skapar och konfigurerar känslighetsetiketter och
 |Använda samtidig redigering och spara automatiskt i Office-program när dokument krypteras | [Aktivera samtidig redigering för filer krypterade med känslighetsetiketter](sensitivity-labels-coauthoring.md)
 |Använda känslighetsetiketter automatiskt i dokument och e-postmeddelanden | [Använda en känslighetsetikett för innehåll automatiskt](apply-sensitivity-label-automatically.md)|
 |Använd känslighetsetiketter för att skydda innehåll i Teams och SharePoint |[Använd känslighetsetiketter i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser](sensitivity-labels-teams-groups-sites.md)|
-|Förhindra eller varna användare om att dela filer eller e-postmeddelanden med en särskild känslighetsetikett |[Använda känslighetsetiketter som villkor i DLP-principer (förhandsversion)](dlp-sensitivity-label-as-condition.md) |
+|Förhindra eller varna användare om att dela filer eller e-postmeddelanden med en särskild känslighetsetikett |[Använda känslighetsetiketter som villkor i DLP-principer](dlp-sensitivity-label-as-condition.md) |
 |Upptäck, märka och skydda filer som lagrats i datalagringsfiler lokalt |[Distribuera Azure Information Protection-skannern för att automatiskt klassificera och skydda filer](/azure/information-protection/deploy-aip-scanner)|
 |Upptäck, märka och skydda filer som lagrats i datalagringsfiler som finns i molnet|[Upptäck, klassificera, märka och skydda känsliga och reglerade data som lagras i molnet](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Använda och visa etiketter i Power BI och skydda data när de sparas utanför tjänsten|[Känslighetsetiketter i Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|

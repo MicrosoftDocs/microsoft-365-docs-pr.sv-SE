@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Diskutera hur man tillämpar en kvarhållningsetikett på en modell i SharePoint Syntex.
-ms.openlocfilehash: 799ab3fa0fcdc9af9d227428056d2cd7abeaf539
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2ddfd6ffe11e8e01e32b6e1b5ddf65763e4ae381
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706726"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022420"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Använda en kvarhållningsetikett på en modell för dokumenttolkning i Microsoft SharePoint Syntex
 
 Du kan enkelt använda en [känslighetsetikett](../compliance/sensitivity-labels.md) på modeller för dokumenttolkning i Microsoft SharePoint Syntex. Den här funktionen är inte tillgänglig ännu för modeller för formulärbearbetning.
 
-Med känslighetsetiketter kan du tillämpa krypterings-, delnings- och villkorsstyrda principer på de dokument som modeller identifierar. Du vill till exempel att modellen inte bara ska identifiera finansiella dokument som innehåller bankkontonummer eller kreditkortsnummer som laddas upp till ditt dokumentbibliotek, utan även använda en *-krypteringsetikett* för att begränsa vem som kan komma åt innehållet och hur det kan användas.
+Med känslighetsetiketter kan du tillämpa krypterings-, delnings- och villkorsstyrda principer på de dokument som modeller identifierar. Du vill till exempel att modellen inte bara ska identifiera finansiella dokument som innehåller bankkontonummer eller kreditkortsnummer som laddas upp till ditt dokumentbibliotek, utan även använda en *-krypteringsetikett* för att begränsa vem som kan komma åt innehållet och hur det kan användas. Syntex-modeller följer [etikettordning](../compliance/apply-sensitivity-label-automatically.md?view=o365-worldwide#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) regler och skriver inte heller över en befintlig etikett som tillämpades manuellt av en användare i filen. 
 
 Du kan använda en befintlig känslighetsetikett på modellen för dokumenttolkning i modellinställningarna på modellens startsida. Etiketten måste redan vara publicerad för att vara tillgänglig för val från modellinställningar.
 
