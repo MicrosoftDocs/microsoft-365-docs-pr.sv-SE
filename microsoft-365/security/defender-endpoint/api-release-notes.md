@@ -16,69 +16,69 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a0191a52c64b32b314d4b2f2f36c85b060226ad6
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 5e72db8d986ad096d6312f90530d9f9ff246afc3
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984658"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022300"
 ---
-# <a name="microsoft-defender-for-endpoint-api-release-notes"></a><span data-ttu-id="3b39b-104">Information om Microsoft Defender för Endpoint API</span><span class="sxs-lookup"><span data-stu-id="3b39b-104">Microsoft Defender for Endpoint API release notes</span></span>
+# <a name="microsoft-defender-for-endpoint-api-release-notes"></a><span data-ttu-id="da309-104">Information om Microsoft Defender för Endpoint API</span><span class="sxs-lookup"><span data-stu-id="da309-104">Microsoft Defender for Endpoint API release notes</span></span>
 
-<span data-ttu-id="3b39b-105">**Gäller för:** [Microsoft Defender för slutpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="3b39b-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="da309-105">**Gäller för:** [Microsoft Defender för slutpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="da309-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="3b39b-106">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="3b39b-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="3b39b-107">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="3b39b-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- <span data-ttu-id="da309-106">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="da309-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="da309-107">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="da309-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-<span data-ttu-id="3b39b-108">Följande information innehåller uppdateringar av Microsoft Defender för slutpunkts-API:er och datum då de gjordes.</span><span class="sxs-lookup"><span data-stu-id="3b39b-108">The following information lists the updates made to the Microsoft Defender for Endpoint APIs and the dates they were made.</span></span>
+<span data-ttu-id="da309-108">Följande information innehåller uppdateringar av Microsoft Defender för slutpunkts-API:er och datum då de gjordes.</span><span class="sxs-lookup"><span data-stu-id="da309-108">The following information lists the updates made to the Microsoft Defender for Endpoint APIs and the dates they were made.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="3b39b-109">RSS-feed: Få ett meddelande när sidan uppdateras genom att kopiera och klistra in följande URL i din feedläsare:</span><span class="sxs-lookup"><span data-stu-id="3b39b-109">RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:</span></span>
+> <span data-ttu-id="da309-109">RSS-feed: Få ett meddelande när sidan uppdateras genom att kopiera och klistra in följande URL i din feedläsare:</span><span class="sxs-lookup"><span data-stu-id="da309-109">RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:</span></span>
 >
 > ```http
 > /api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
 > ```
 
-## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a><span data-ttu-id="3b39b-110">Utgivningsanteckningar – nyaste till äldsta (dd.mm.yyyy)</span><span class="sxs-lookup"><span data-stu-id="3b39b-110">Release notes - newest to oldest (dd.mm.yyyy)</span></span>
+## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a><span data-ttu-id="da309-110">Utgivningsanteckningar – nyaste till äldsta (dd.mm.yyyy)</span><span class="sxs-lookup"><span data-stu-id="da309-110">Release notes - newest to oldest (dd.mm.yyyy)</span></span>
 
-### <a name="06102021"></a><span data-ttu-id="3b39b-111">06.10.2021</span><span class="sxs-lookup"><span data-stu-id="3b39b-111">06.10.2021</span></span>
+### <a name="06102021"></a><span data-ttu-id="da309-111">06.10.2021</span><span class="sxs-lookup"><span data-stu-id="da309-111">06.10.2021</span></span>
 
-- <span data-ttu-id="3b39b-112">Ny exportutvärderings-API-metod – _Sårbarhetsbedömning av programvara deltaexport (OData) Exportera_ [utvärderingsmetoder och egenskaper per enhet.](get-assessment-methods-properties.md)</span><span class="sxs-lookup"><span data-stu-id="3b39b-112">Added new Export assessment API method  - _Delta Export software vulnerabilities assessment (OData)_ [Export assessment methods and properties per device](get-assessment-methods-properties.md).</span></span>
+- <span data-ttu-id="da309-112">Ny exportutvärderings-API-metod – säkerhetsbedömning av deltaexportprogramvara _(JSON-svar) Exportera_ [utvärderingsmetoder och egenskaper per enhet.](get-assessment-methods-properties.md)</span><span class="sxs-lookup"><span data-stu-id="da309-112">Added new Export assessment API method  - _Delta Export software vulnerabilities assessment (JSON response)_ [Export assessment methods and properties per device](get-assessment-methods-properties.md).</span></span>
 
-### <a name="05252021"></a><span data-ttu-id="3b39b-113">05.25.2021</span><span class="sxs-lookup"><span data-stu-id="3b39b-113">05.25.2021</span></span>
+### <a name="05252021"></a><span data-ttu-id="da309-113">05.25.2021</span><span class="sxs-lookup"><span data-stu-id="da309-113">05.25.2021</span></span>
 
-- <span data-ttu-id="3b39b-114">Nya API Exportera [utvärderingsmetoder och egenskaper per enhet](get-assessment-methods-properties.md)har lagts till.</span><span class="sxs-lookup"><span data-stu-id="3b39b-114">Added new API [Export assessment methods and properties per device](get-assessment-methods-properties.md).</span></span>
+- <span data-ttu-id="da309-114">Nya API Exportera [utvärderingsmetoder och egenskaper per enhet](get-assessment-methods-properties.md)har lagts till.</span><span class="sxs-lookup"><span data-stu-id="da309-114">Added new API [Export assessment methods and properties per device](get-assessment-methods-properties.md).</span></span>
 
-### <a name="03052021"></a><span data-ttu-id="3b39b-115">03.05.2021</span><span class="sxs-lookup"><span data-stu-id="3b39b-115">03.05.2021</span></span>
+### <a name="03052021"></a><span data-ttu-id="da309-115">03.05.2021</span><span class="sxs-lookup"><span data-stu-id="da309-115">03.05.2021</span></span>
 
-- <span data-ttu-id="3b39b-116">Nytt API har lagts till: [Metoder och egenskaper för åtgärdsaktivitet.](get-remediation-methods-properties.md)</span><span class="sxs-lookup"><span data-stu-id="3b39b-116">Added new API: [Remediation activity methods and properties](get-remediation-methods-properties.md).</span></span>
+- <span data-ttu-id="da309-116">Nytt API har lagts till: [Metoder och egenskaper för åtgärdsaktivitet.](get-remediation-methods-properties.md)</span><span class="sxs-lookup"><span data-stu-id="da309-116">Added new API: [Remediation activity methods and properties](get-remediation-methods-properties.md).</span></span>
 
-### <a name="10022021"></a><span data-ttu-id="3b39b-117">10.02.2021</span><span class="sxs-lookup"><span data-stu-id="3b39b-117">10.02.2021</span></span>
+### <a name="10022021"></a><span data-ttu-id="da309-117">10.02.2021</span><span class="sxs-lookup"><span data-stu-id="da309-117">10.02.2021</span></span>
 
-- <span data-ttu-id="3b39b-118">Nytt API har lagts till: [Batchuppdateringsaviseringar](batch-update-alerts.md).</span><span class="sxs-lookup"><span data-stu-id="3b39b-118">Added new API: [Batch update alerts](batch-update-alerts.md).</span></span>
+- <span data-ttu-id="da309-118">Nytt API har lagts till: [Batchuppdateringsaviseringar](batch-update-alerts.md).</span><span class="sxs-lookup"><span data-stu-id="da309-118">Added new API: [Batch update alerts](batch-update-alerts.md).</span></span>
 
-### <a name="25012021"></a><span data-ttu-id="3b39b-119">25.01.2021</span><span class="sxs-lookup"><span data-stu-id="3b39b-119">25.01.2021</span></span>
+### <a name="25012021"></a><span data-ttu-id="da309-119">25.01.2021</span><span class="sxs-lookup"><span data-stu-id="da309-119">25.01.2021</span></span>
 
-- <span data-ttu-id="3b39b-120">Uppdaterade räntebegränsningar [för Advanced Hunting API](run-advanced-query-api.md) från 15 till 45 förfrågningar per minut.</span><span class="sxs-lookup"><span data-stu-id="3b39b-120">Updated rate limitations for [Advanced Hunting API](run-advanced-query-api.md) from 15 to 45 requests per minute.</span></span>
+- <span data-ttu-id="da309-120">Uppdaterade räntebegränsningar [för Advanced Hunting API](run-advanced-query-api.md) från 15 till 45 förfrågningar per minut.</span><span class="sxs-lookup"><span data-stu-id="da309-120">Updated rate limitations for [Advanced Hunting API](run-advanced-query-api.md) from 15 to 45 requests per minute.</span></span>
 
-### <a name="21012021"></a><span data-ttu-id="3b39b-121">21.01.2021</span><span class="sxs-lookup"><span data-stu-id="3b39b-121">21.01.2021</span></span>
+### <a name="21012021"></a><span data-ttu-id="da309-121">21.01.2021</span><span class="sxs-lookup"><span data-stu-id="da309-121">21.01.2021</span></span>
 
-- <span data-ttu-id="3b39b-122">Nytt API har lagts till: [Hitta enheter efter tagg.](machine-tags.md)</span><span class="sxs-lookup"><span data-stu-id="3b39b-122">Added new API: [Find devices by tag](machine-tags.md).</span></span>
-- <span data-ttu-id="3b39b-123">Nytt API har lagts till: [Importindikatorer](import-ti-indicators.md).</span><span class="sxs-lookup"><span data-stu-id="3b39b-123">Added new API: [Import Indicators](import-ti-indicators.md).</span></span>
+- <span data-ttu-id="da309-122">Nytt API har lagts till: [Hitta enheter efter tagg.](machine-tags.md)</span><span class="sxs-lookup"><span data-stu-id="da309-122">Added new API: [Find devices by tag](machine-tags.md).</span></span>
+- <span data-ttu-id="da309-123">Nytt API har lagts till: [Importindikatorer](import-ti-indicators.md).</span><span class="sxs-lookup"><span data-stu-id="da309-123">Added new API: [Import Indicators](import-ti-indicators.md).</span></span>
 
-### <a name="03012021"></a><span data-ttu-id="3b39b-124">03.01.2021</span><span class="sxs-lookup"><span data-stu-id="3b39b-124">03.01.2021</span></span>
+### <a name="03012021"></a><span data-ttu-id="da309-124">03.01.2021</span><span class="sxs-lookup"><span data-stu-id="da309-124">03.01.2021</span></span>
 
-- <span data-ttu-id="3b39b-125">Uppdaterade aviserings bevis: lade till ***detectionStatus** _, _*_parentProcessFilePath_*_ och _ *_parentProcessFileName_** egenskaper.</span><span class="sxs-lookup"><span data-stu-id="3b39b-125">Updated Alert evidence: added ***detectionStatus** _, _*_parentProcessFilePath_*_ and _ *_parentProcessFileName_** properties.</span></span>
-- <span data-ttu-id="3b39b-126">Uppdaterad [avisering entitet:](alerts.md)lade ***till egenskapen id-egenskap.***</span><span class="sxs-lookup"><span data-stu-id="3b39b-126">Updated [Alert entity](alerts.md): added ***detectorId*** property.</span></span>
+- <span data-ttu-id="da309-125">Uppdaterade aviserings bevis: lade till ***detectionStatus** _, _*_parentProcessFilePath_*_ och _ *_parentProcessFileName_** egenskaper.</span><span class="sxs-lookup"><span data-stu-id="da309-125">Updated Alert evidence: added ***detectionStatus** _, _*_parentProcessFilePath_*_ and _ *_parentProcessFileName_** properties.</span></span>
+- <span data-ttu-id="da309-126">Uppdaterad [avisering entitet:](alerts.md)lade ***till egenskapen id-egenskap.***</span><span class="sxs-lookup"><span data-stu-id="da309-126">Updated [Alert entity](alerts.md): added ***detectorId*** property.</span></span>
 
-### <a name="15122020"></a><span data-ttu-id="3b39b-127">15.12.2020</span><span class="sxs-lookup"><span data-stu-id="3b39b-127">15.12.2020</span></span>
+### <a name="15122020"></a><span data-ttu-id="da309-127">15.12.2020</span><span class="sxs-lookup"><span data-stu-id="da309-127">15.12.2020</span></span>
 
-- <span data-ttu-id="3b39b-128">Uppdaterad [](machine.md) enhetsentitet: ***IpInterfaces-lista*** tillagd.</span><span class="sxs-lookup"><span data-stu-id="3b39b-128">Updated [Device](machine.md) entity: added ***IpInterfaces*** list.</span></span> <span data-ttu-id="3b39b-129">Se [Listenheter](get-machines.md).</span><span class="sxs-lookup"><span data-stu-id="3b39b-129">See [List devices](get-machines.md).</span></span>
+- <span data-ttu-id="da309-128">Uppdaterad [](machine.md) enhetsentitet: ***IpInterfaces-lista*** tillagd.</span><span class="sxs-lookup"><span data-stu-id="da309-128">Updated [Device](machine.md) entity: added ***IpInterfaces*** list.</span></span> <span data-ttu-id="da309-129">Se [Listenheter](get-machines.md).</span><span class="sxs-lookup"><span data-stu-id="da309-129">See [List devices](get-machines.md).</span></span>
 
-### <a name="04112020"></a><span data-ttu-id="3b39b-130">04.11.2020</span><span class="sxs-lookup"><span data-stu-id="3b39b-130">04.11.2020</span></span>
+### <a name="04112020"></a><span data-ttu-id="da309-130">04.11.2020</span><span class="sxs-lookup"><span data-stu-id="da309-130">04.11.2020</span></span>
 
-- <span data-ttu-id="3b39b-131">Nytt API har lagts till: [Ange enhetsvärde](set-device-value.md).</span><span class="sxs-lookup"><span data-stu-id="3b39b-131">Added new API: [Set device value](set-device-value.md).</span></span>
-- <span data-ttu-id="3b39b-132">Uppdaterade [enhetsentitet:](machine.md) egenskapen ***deviceValue*** tillagd.</span><span class="sxs-lookup"><span data-stu-id="3b39b-132">Updated [Device](machine.md) entity: added ***deviceValue*** property.</span></span>
+- <span data-ttu-id="da309-131">Nytt API har lagts till: [Ange enhetsvärde](set-device-value.md).</span><span class="sxs-lookup"><span data-stu-id="da309-131">Added new API: [Set device value](set-device-value.md).</span></span>
+- <span data-ttu-id="da309-132">Uppdaterade [enhetsentitet:](machine.md) egenskapen ***deviceValue*** tillagd.</span><span class="sxs-lookup"><span data-stu-id="da309-132">Updated [Device](machine.md) entity: added ***deviceValue*** property.</span></span>
 
-### <a name="01092020"></a><span data-ttu-id="3b39b-133">01.09.2020</span><span class="sxs-lookup"><span data-stu-id="3b39b-133">01.09.2020</span></span>
+### <a name="01092020"></a><span data-ttu-id="da309-133">01.09.2020</span><span class="sxs-lookup"><span data-stu-id="da309-133">01.09.2020</span></span>
 
-- <span data-ttu-id="3b39b-134">Lade till alternativ för att expandera aviseringsenheten med tillhörande bevis.</span><span class="sxs-lookup"><span data-stu-id="3b39b-134">Added option to expand the Alert entity with its related Evidence.</span></span> <span data-ttu-id="3b39b-135">Visa [listaviseringar](get-alerts.md).</span><span class="sxs-lookup"><span data-stu-id="3b39b-135">See [List Alerts](get-alerts.md).</span></span>
+- <span data-ttu-id="da309-134">Lade till alternativ för att expandera aviseringsenheten med tillhörande bevis.</span><span class="sxs-lookup"><span data-stu-id="da309-134">Added option to expand the Alert entity with its related Evidence.</span></span> <span data-ttu-id="da309-135">Visa [listaviseringar](get-alerts.md).</span><span class="sxs-lookup"><span data-stu-id="da309-135">See [List Alerts](get-alerts.md).</span></span>
