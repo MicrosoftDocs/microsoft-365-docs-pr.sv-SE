@@ -18,12 +18,12 @@ description: Lär dig hur du känner igen och åtgärdar de medgivande som medgi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5675a7a83bb62bae80f20e8e7c86fde38599ec6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c3c3c06974feb2dab3985a60938fe7d543543c3
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538309"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028925"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Identifiera och åtgärda medgivandesstipend
 
@@ -50,7 +50,7 @@ Du måste söka i **granskningsloggen** för att hitta tecken, även kallade ind
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Steg för att hitta tecken på den här attacken
 
-1. Öppna **Säkerhets- & Efterlevnadscenter** på <https://protection.office.com> .
+1. Öppna **Microsoft 365 Defender portalen** på <https://security.microsoft.com> .
 
 2. Gå till **Sök** och välj **Granskningsloggsökning**.
 
@@ -143,7 +143,7 @@ Skriptet skapar en fil med namnet Permissions.csv. Följ de här anvisningarna o
 
 ## <a name="determine-the-scope-of-the-attack"></a>Fastställa attackens omfattning
 
-När du har slutfört inventeringen av programåtkomst granskar du **granskningsloggen** för att fastställa den fullständiga omfattningen av intrånget. Sök efter de användare som påverkas, de tidsramar som det aktuella programmet hade åtkomst till din organisation och vilka behörigheter appen hade. Du kan söka i **granskningsloggen** [i Säkerhets- & Kompatibilitetscenter.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
+När du har slutfört inventeringen av programåtkomst granskar du **granskningsloggen** för att fastställa den fullständiga omfattningen av intrånget. Sök efter de användare som påverkas, de tidsramar som det aktuella programmet hade åtkomst till din organisation och vilka behörigheter appen hade. Du kan söka **i granskningsloggen** i [Microsoft 365 Defender](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 > [!IMPORTANT]
 > [Granskning av](../../compliance/enable-mailbox-auditing.md) [postlådor och aktivitet för administratörer och användare måste](../../compliance/turn-audit-log-search-on-or-off.md) ha aktiverats före attacken för att du ska kunna få den här informationen.

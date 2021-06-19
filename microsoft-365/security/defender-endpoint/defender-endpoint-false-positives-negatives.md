@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 1cd29c3a631334ee3a2791cca3c7ac1c83a1692f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b8060952960f89e274361bb6382f03d482346e0d
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903834"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028865"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint
 
@@ -41,7 +41,7 @@ I slutpunktsskyddslösningar är en falsk positivhet en enhet, till exempel en f
 
 ![Definition av falska positiva och negativa tal i Defender för Slutpunkt](images/false-positives-overview.png)
 
-Som tur är går det att vidta åtgärder för att åtgärda och minska den här typen av problem. Om du ser falska positiva/negativa resultat i [Microsoft 365 Defender](microsoft-defender-security-center.md) (tidigare Microsoft Defender Säkerhetscenter) kan dina säkerhetsåtgärder vidta åtgärder för att åtgärda dem på följande sätt:
+Som tur är går det att vidta åtgärder för att åtgärda och minska den här typen av problem. Om du ser falska positiva/negativa tal i [Microsoft 365 Defender](microsoft-defender-security-center.md) (tidigare i Microsoft Defender Säkerhetscenter) kan dina säkerhetsåtgärder vidta åtgärder för att åtgärda dem genom att använda följande process:
 
 1.  [Granska och klassificera aviseringar](#part-1-review-and-classify-alerts) 
 2.  [Granska åtgärder som har vidtagits](#part-2-review-remediation-actions)
@@ -66,7 +66,7 @@ Att hantera dina varningar och klassificera sant/falskt-positiva hjälper till a
 
 Innan du klassificerar eller ignorerar en avisering måste du avgöra om aviseringen är korrekt, en falsk positiv eller en varning.
 
-1. Gå till Microsoft 365 Defender-portalen [https://security.microsoft.com](https://security.microsoft.com) () och logga in.
+1. Gå till Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) och logga in.
 
 2. Välj Aviseringskö **i navigeringsfönstret.**
 
@@ -84,7 +84,7 @@ Innan du klassificerar eller ignorerar en avisering måste du avgöra om aviseri
 
 Aviseringar kan klassificeras som falska positiva resultat eller sant positiva resultat i Microsoft 365 Defender. Genom att klassificera aviseringar kan du träna Microsoft Defender för Endpoint så att du med tiden ser fler sanna aviseringar och färre falska aviseringar.
 
-1. Gå till Microsoft 365 Defender-portalen [https://security.microsoft.com](https://security.microsoft.com) () och logga in.
+1. Gå till Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) och logga in.
 
 2. Välj **Aviseringskö** och välj sedan en avisering.
 
@@ -99,7 +99,7 @@ Aviseringar kan klassificeras som falska positiva resultat eller sant positiva r
 
 Om du har aviseringar som antingen är falska positiva eller som är sanna positiva, men för oimporterande händelser, kan du dölja dessa aviseringar i Microsoft 365 Defender. Att dölja aviseringar hjälper till att minska bruset i instrumentpanelen för säkerhetsåtgärder. 
 
-1. Gå till Microsoft 365 Defender-portalen [https://security.microsoft.com](https://security.microsoft.com) () och logga in.
+1. Gå till Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) och logga in.
 
 2. I navigeringsfönstret väljer du **Aviseringskö**.
 
@@ -276,7 +276,7 @@ Innan du skapar indikatorer för IP-adresser, URL:er eller domäner bör du kont
 - Antimalware client version is 4.18.1906.x or later 
 - Enheter med Windows 10, version 1709 eller senare 
 
-Anpassade nätverksindikatorer är aktiverat i Microsoft 365 [Defender.](microsoft-defender-security-center.md) Mer information finns i [Avancerade funktioner.](/microsoft-365/security/defender-endpoint/advanced-features)
+Anpassade nätverksindikatorer aktiveras i [Microsoft 365 Defender](microsoft-defender-security-center.md). Mer information finns i [Avancerade funktioner.](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-application-certificates"></a>Indikatorer för programcertifikat 
 
@@ -452,4 +452,4 @@ Kontakta teknisk support om du har gått igenom alla steg i den här artikeln oc
 
 [Hantera Microsoft Defender för Slutpunkt](manage-atp-post-migration.md)
 
-[Översikt över Microsoft 365 Defender-portalen](/microsoft-365/security/defender-endpoint/use) 
+[Översikt över Microsoft 365 Defender portalen](/microsoft-365/security/defender-endpoint/use) 

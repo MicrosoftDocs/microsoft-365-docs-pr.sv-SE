@@ -16,19 +16,18 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 409f6d0bbbcf9f8b50119e35bdb7852c4323bbf9
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984994"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028793"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Använd minskningsregler för attackytan för att förhindra skadlig smitta
 
 **Gäller för:**
 
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Varför det är viktigt att minska attackytans regler
@@ -91,7 +90,7 @@ Dessutom stöds inte varningsläge på enheter med äldre versioner av Windows. 
 
 ## <a name="notifications-and-alerts"></a>Meddelanden och aviseringar
 
-När en minskningsregel för attackytan utlöses visas ett meddelande på enheten. Du kan [anpassa meddelandet med](customize-attack-surface-reduction.md#customize-the-notification) företagets information och kontaktinformation.
+När en minskningsregel för attackytan utlöses visas ett meddelande på enheten. Du kan [anpassa aviseringen](customize-attack-surface-reduction.md#customize-the-notification) med företagets information och kontaktinformation.
 
 När vissa minskningsregler för attackytan utlöses genereras dessutom varningar.
 
@@ -160,7 +159,7 @@ Du kan skapa en anpassad vy som filtrerar händelser för att endast visa följa
 
 ## <a name="attack-surface-reduction-rules"></a>Regler för minskning av attackytan
 
-I följande tabell och underavsnitt beskrivs var och en av de 15 minskningsregler för attackytor. Minskningsregler för attackytor listas i alfabetisk ordning, efter regelnamn.
+I följande tabell och underavsnitt beskrivs var och en av de 16 minskningsregler för attackytor. Minskningsregler för attackytor listas i alfabetisk ordning, efter regelnamn.
 
 Om du konfigurerar regler för att minska attackytan med grupprinciper eller PowerShell måste du ha GUID:er. Å andra sidan behöver du inte GUID:er om du använder Microsoft Endpoint Manager eller Microsoft Intune.
 

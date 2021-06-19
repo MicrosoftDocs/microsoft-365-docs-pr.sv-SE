@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan få mer information om förfalskningsinformation i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 280743e87ce6039f456cec0b89bff57a31d75691
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 94dc1e438f913c1103154afb8803ef4cf89f64af
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877830"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028817"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Falska intelligensinsikter i EOP
 
@@ -53,13 +53,16 @@ När en avsändare kapar en e-postadress verkar det vara en användare i en av o
   - Avsändaren finns på en distributionslista (kallas även diskussionslista) och distributionslistan vidarebefordrar e-post från den ursprungliga avsändaren till alla deltagare på distributionslistan.
   - Ett externt företag skickar e-post åt ett annat företag (till exempel en automatiserad rapport eller ett företag som använder en programvara).
 
-Du kan  använda förfalskningsinformation i Microsoft 365 Defender-portalen för att snabbt identifiera förfalskningsavsändare som på ett legitimt sätt skickar oauthenticerad e-post (meddelanden från domäner som inte klarar SPF-, DKIM- eller DMARC-kontroller) och manuellt tillåter dessa avsändare.
+
+Du kan använda **förfalskningsinformation** i Microsoft 365 Defender-portalen för att snabbt identifiera förfalskningsavsändare som på ett legitimt sätt skickar oauthenticerad e-post (meddelanden från domäner som inte klarar SPF-, DKIM- eller DMARC-kontroller) och manuellt tillåta dessa avsändare.
+
 
 Genom att tillåta kända avsändare att skicka falska meddelanden från kända platser kan du minska falska positiva resultat (bra e-postmeddelande markerat som dåligt). Genom att övervaka tillåtna förfalskningsavsändare tillhandahåller du ytterligare en säkerhetsnivå för att förhindra att osäkra meddelanden kommer till organisationen.
 
 På samma sätt kan du granska falska avsändare som tillåts av förfalskningsinformation och manuellt blockera dessa avsändare från förfalskningsinformation.
 
 Resten av den här artikeln förklarar hur du använder förfalskningsinformation i Microsoft 365 Defender-portalen och i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
+
 
 > [!NOTE]
 >
@@ -71,7 +74,7 @@ Resten av den här artikeln förklarar hur du använder förfalskningsinformatio
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com/> . Om du vill gå direkt **till sidan Mot nätfiske** använder du <https://security.microsoft.com/antiphishing> . För att gå direkt till **sidan Spoof intelligence insight** använder du <https://security.microsoft.com/spoofintelligence> .
+- Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com/>. Om du vill gå direkt **till sidan Mot nätfiske** använder du <https://security.microsoft.com/antiphishing> . För att gå direkt till **sidan Spoof intelligence insight** använder du <https://security.microsoft.com/spoofintelligence> .
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -90,9 +93,9 @@ Resten av den här artikeln förklarar hur du använder förfalskningsinformatio
 
 - Vi rekommenderar inställningar för förfalskningsinformation i inställningarna för [EOP-policy mot nätfiske.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)
 
-## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Öppna förfalskningsinformationsinsikten i Microsoft 365 Defender-portalen
+## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Öppna förfalskningsinformationsinsikten i Microsoft 365 Defender portalen
 
-1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer &** för \> **e-&-samarbete & principer** för hot \>  \> **mot** \> **nätfiske.**
+1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
 2. På sidan **Mot nätfiske** ser förfalskningsinformation ut så här:
 

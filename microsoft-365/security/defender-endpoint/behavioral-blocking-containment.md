@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: f2de1f6bf35f4454ed6ab286c0bc8004a0d6301b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: c480bb83465e6057cd1cf29f1f5077f2a0e165e8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904074"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028829"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Beteendeblockering och inneslutning
 
@@ -48,7 +48,7 @@ Funktioner för blockering och inneslutning fungerar med flera komponenter och f
 
 - [Identifiering och svar av slutpunkter](overview-endpoint-detection-response.md) (Identifiering och åtgärd på slutpunkt) får säkerhetssignaler i nätverket, enheterna och kernel-beteendet. När hot upptäcks skapas aviseringar. Flera aviseringar av samma typ sammanställs till incidenter, vilket gör det enklare för teamet med säkerhetsåtgärder att undersöka och svara.
 
-- [Defender för Endpoint](overview-endpoint-detection-response.md) har ett brett utbud avropsoptisk över identiteter, e-post, data och appar, utöver de nätverks-, slutpunkts- och kernel-funktionssignaler som tas emot via Identifiering och åtgärd på slutpunkt. En komponent i [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender för slutpunkt bearbetar och korrelerar dessa signaler, upphöjer identifieringsaviseringar och kopplar relaterade aviseringar i incidenter.
+- [Defender för Endpoint](overview-endpoint-detection-response.md) har ett brett utbud avropsoptisk över identiteter, e-post, data och appar, utöver de nätverks-, slutpunkts- och kernel-funktionssignaler som tas emot via Identifiering och åtgärd på slutpunkt. En komponent i [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender för Endpoint bearbetar och korrelerar dessa signaler, upphöjer identifieringsaviseringar och kopplar relaterade aviseringar i incidenter.
 
 Med dessa funktioner kan fler hot förhindras eller blockeras, även om de börjar köras. När misstänkt beteende upptäcks finns risken kvar, aviseringar skapas och hot stoppas i deras spår. 
 
@@ -58,13 +58,13 @@ Följande bild visar ett exempel på en varning som utlöstes genom funktionella
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Komponenter i beteendeblockering och inneslutning
 
-- **Regler för att minska attackytan på [klientsidan](attack-surface-reduction.md)** Fördefinierade vanliga attackbeteenden förhindras från att köras, enligt reglerna för minskning av attackytan. När sådana beteenden försöker köras visas de i Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) som informationsaviseringar. Minskning av attackytan är inte aktiverat som standard. konfigurerar du dina principer i [Microsoft 365 Defender](microsoft-defender-security-center.md).
+- **Regler för att minska attackytan på [klientsidan](attack-surface-reduction.md)** Fördefinierade vanliga attackbeteenden förhindras från att köras, enligt reglerna för minskning av attackytan. När sådana beteenden försöker köras kan de ses i Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) som informationsaviseringar. Minskning av attackytan är inte aktiverat som standard. konfigurerar du dina principer i [Microsoft 365 Defender](microsoft-defender-security-center.md).
 
 - **[Klientbeteendeblockering](client-behavioral-blocking.md)** Hot på slutpunkter upptäcks genom maskininlärning och blockeras och åtgärdas automatiskt. (Klientbeteendeblockering är aktiverat som standard.) 
 
 - **[Blockering av feedbackslingor](feedback-loop-blocking.md)** (kallas även snabbt skydd) Hotidentifiering observeras via beteendeinformation. Hot stoppas och förhindras från att köras på andra slutpunkter. (Blockering av feedbackslingar är aktiverat som standard.) 
 
-- **[Identifiering och svar av slutpunkt (Identifiering och åtgärd på slutpunkt) i blockeringsläge](edr-in-block-mode.md)** Skadliga artefakter eller beteenden som observerats genom skydd efter intrång blockeras och finns. Identifiering och åtgärd på slutpunkt i blockeringsläge fungerar även om Microsoft Defender Antivirus inte är den primära antiviruslösningen. (Identifiering och åtgärd på slutpunkt i blockeringsläge är inte aktiverat som standard, du aktiverar det Microsoft 365 Defender.) 
+- **[Identifiering och svar av slutpunkt (Identifiering och åtgärd på slutpunkt) i blockeringsläge](edr-in-block-mode.md)** Skadliga artefakter eller beteenden som observerats genom skydd efter intrång blockeras och finns. Identifiering och åtgärd på slutpunkt i blockeringsläge fungerar även om Microsoft Defender Antivirus inte är den primära antiviruslösningen. (Identifiering och åtgärd på slutpunkt i blockläge är inte aktiverat som standard, du aktiverar det Microsoft 365 Defender.) 
 
 Räkna med att fler kommer in när det gäller beteendeblockering och inneslutning, eftersom Microsoft fortsätter att förbättra funktionerna för skydd mot hot. Om du vill se vad som är planerat och lanserat nu kan du besöka [Microsoft 365 översikt.](https://www.microsoft.com/microsoft-365/roadmap)
 
@@ -95,9 +95,9 @@ Behavior-based device learning models in Defender for Endpoint caught and stoppe
 - Det första skyddslagret upptäckte sårbarhetsbeteendet. Enhet med utbildning i molnet har identifierat hoten korrekt och omedelbart fått instruktioner om att klientenheten ska blockera attacken.
 - Det andra skyddlagret, som hjälpte dig att stoppa fall där attacken kom förbi det första lagret, upptäckte process ihålig process, stoppade processen och tog bort motsvarande filer (till exempelLagraibot). 
 
-När attacken upptäcktes och stoppades utlöstes varningar, till exempel en "initial access alert", och visades [i Microsoft 365 Defender-portalen](microsoft-defender-security-center.md) (tidigare Microsoft Defender Säkerhetscenter):
+När attacken upptäcktes och stoppades utlöstes varningar, till exempel en "initial åtkomstvarning", och visades [i Microsoft 365 Defender](microsoft-defender-security-center.md) -portalen (tidigare Microsoft Defender Säkerhetscenter):
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Avisering om inledande åtkomst i Microsoft 365 Defender-portalen":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Avisering om inledande åtkomst i Microsoft 365 Defender portalen":::
 
 Det här exemplet visar hur funktionsbaserade enhetsinlärningsmodeller i molnet lägger till nya skyddslager mot attacker, även efter att de har börjat köra.
 

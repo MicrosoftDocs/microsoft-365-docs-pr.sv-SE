@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan lära sig att visa och hantera meddelanden i karantän för alla användare i Exchange Online Protection (EOP). Administratörer i organisationer med Microsoft Defender för Office 365 kan också hantera filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01d5011248d1c0fc0daab0d04e1cca39e26e34bd
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 59bdfdaddbc091467bfd2ccddc2c40377955fab3
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878898"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028997"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Hantera meddelanden och filer i karantän som administratör i EOP
 
@@ -41,11 +41,11 @@ Administratörer kan visa, släppa och ta bort alla typer av meddelanden i karan
 
 Administratörer i organisationer med Microsoft Defender för Office 365 kan också visa, ladda ned och ta bort filer i karantän i SharePoint Online, OneDrive för företag och Microsoft Teams.
 
-Du visar och hanterar meddelanden i karantän i Microsoft 365 Defender-portalen eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online-postlådor).
+Du visar och hanterar meddelanden i karantän i Microsoft 365 Defender-portalen eller i PowerShell (Exchange Online PowerShell för Microsoft 365-organisationer med postlådor i Exchange Online, fristående EOP PowerShell för organisationer utan Exchange Online postlådor).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Om du vill öppna Microsoft 365 Defender-portalen går du till <https://security.microsoft.com> . Om du vill öppna karantänsidan direkt går du till <https://security.microsoft.com/quarantine>.
+- Öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com>. Om du vill öppna karantänsidan direkt går du till <https://security.microsoft.com/quarantine>.
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -68,11 +68,11 @@ Du visar och hanterar meddelanden i karantän i Microsoft 365 Defender-portalen 
 
   När ett meddelande förfaller från karantän kan du inte återställa det.
 
-## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>Använda Defender Microsoft 365 portalen för att hantera e-postmeddelanden i karantän
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>Använda Microsoft 365 Defender för att hantera e-postmeddelanden i karantän
 
 ### <a name="view-quarantined-email"></a>Visa e-post i karantän
 
-1. I Defender Microsoft 365 portalen går du till karantänen för **e&-postsamarbete** \>  \> **– granska.**
+1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Granska** \> **Karantän**.
 
 2. På sidan **Karantän** kontrollerar du att Visa **i karantän är** inställt på standardvärdet för e-post. 
 
@@ -102,7 +102,7 @@ Du visar och hanterar meddelanden i karantän i Microsoft 365 Defender-portalen 
    - **Togs emot**: Ange ett **Startdatum** och **Slutdatum**.
    - **Orsak till karantän**:
      - **Princip:** Meddelandet matchade villkoren i en e-postflödesregel (kallas även transportregel).
-     - **Bulk** (Massutskick)
+     - **Massutskick**
      - **Phish:** Skräppostfiltrets  bedömning var nätfiskeskydd eller skydd mot nätfiske i karantän för meddelandet [(förfalskningsinställningar](set-up-anti-phishing-policies.md#spoof-settings) eller [personifieringsskydd).](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
      - **Skadlig programvara**
      - **Skräppost**
@@ -195,8 +195,7 @@ När du markerar flera meddelanden i karantän i listan (upp till 100) visas den
 
 Klicka på **Stäng** när du är klar.
 
-## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Använda Defender Microsoft 365 portalen för att hantera filer i karantän i Defender för Office 365
-
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Använd Microsoft 365 Defender för att hantera filer i karantän i Defender för Office 365
 > [!NOTE]
 > Procedurerna för filer i karantän i det här avsnittet är endast tillgängliga för Microsoft Defender för Office 365 abonnemang 1- och abonnemang 2-prenumeranter.
 
@@ -204,7 +203,8 @@ I organisationer med Defender för Office 365 kan administratörer hantera filer
 
 ### <a name="view-quarantined-files"></a>Visa filer i karantän
 
-1. I Defender Microsoft 365 portalen går du till karantänen för **e&-postsamarbete** \>  \> **– granska.**
+1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Granska** \> **Karantän**.
+
 
 2. På sidan **Karantän** ändrar du **Visa i karantän** till värdefilerna.  Du kan sortera på ett fält genom att klicka på en tillgänglig kolumnrubrik.
 
@@ -227,7 +227,7 @@ I organisationer med Defender för Office 365 kan administratörer hantera filer
      - Ett anpassat datum-/tidsintervall.
    - **Mottagen tid**
    - **Orsak till karantän:** Det enda tillgängliga värdet är skadlig **programvara.**
-   - **Principtyp**
+   - **Typ av princip**
 
 När du har hittat en viss fil i karantän väljer du filen för att visa information om den och för att vidta åtgärder för den (till exempel visa, släppa, ladda ned eller ta bort meddelandet).
 

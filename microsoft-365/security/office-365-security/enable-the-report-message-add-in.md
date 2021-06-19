@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Läs om hur du aktiverar tilläggen Rapportmeddelande eller Rapport nätfiske för Outlook och Outlook på webben, för enskilda användare eller för hela organisationen.
+description: Läs om hur du aktiverar rapportmeddelandet eller tilläggen för rapportfiske för Outlook och Outlook på webben, för enskilda användare eller för hela organisationen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ff91cf4c99c9552ab5f5fecd7c6d2efee8d2d9a8
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: c7e5136e6d1a118df2e0e91f09a79a9a63e88052
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789262"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028589"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Aktivera rapportmeddelandet eller tilläggen för nätfiske
 
@@ -34,9 +34,9 @@ ms.locfileid: "52789262"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Om du är administratör i en Microsoft 365 organisation med Exchange Online postlådor rekommenderar vi att du använder portalen för inskickade inskickade material i Säkerhets- & efterlevnadscenter. Mer information finns i Använda [administratörsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft.](admin-submission.md)
+> Om du är administratör i en Microsoft 365-organisation med Exchange Online-postlådor rekommenderar vi att du använder portalen för inskickade material i Microsoft 365 Defender. Mer information finns i Använda [administratörsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft.](admin-submission.md)
 
-Med tilläggen Rapportmeddelande och Rapport om nätfiske för Outlook och Outlook på webben (tidigare kallat Outlook Web App) kan användare enkelt rapportera falska positiva meddelanden (bra e-postmeddelanden som markerats som dåliga) eller falska negativa (felaktig e-post tillåts) till Microsoft och dess dotterbolag för analys. 
+Med tilläggen Rapportmeddelande och Rapport nätfiske för Outlook och Outlook på webben (tidigare kallat Outlook Web App) kan användare enkelt rapportera falska positiva resultat (bra e-post markerad som dålig) eller falska negativa (felaktig e-post tillåten) till Microsoft och dess dotterbolag för analys. 
 
 Microsoft använder dessa inskickade material för att göra e-postskyddstekniken mer effektiv. Anta till exempel att personer rapporterar många meddelanden med hjälp av tillägget Rapport om nätfiske. Den här informationen visas i säkerhetspanelen och andra rapporter. Din organisations säkerhetsgrupp kan använda den här informationen som en indikation på att principer mot nätfiske kan behöva uppdateras. 
 
@@ -48,29 +48,29 @@ Tillägget Rapport nätfiske ger möjlighet att endast rapportera nätfiskemedde
 
 Om du är enskild användare kan du aktivera båda tilläggen själv.
 
-Om du är global administratör eller Exchange Online-administratör och Exchange har konfigurerats att använda OAuth-autentisering kan du aktivera tilläggen Rapportmeddelande och Rapportera nätfiske för organisationen. Båda tilläggen är nu tillgängliga via [centraliserad distribution.](../../admin/manage/centralized-deployment-of-add-ins.md)
+Om du är global administratör eller Exchange Online-administratör och Exchange är konfigurerat att använda OAuth-autentisering kan du aktivera tillägget Rapportmeddelande och tillägget Rapportfiske för organisationen. Båda tilläggen är nu tillgängliga via [centraliserad distribution.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Både tillägget Rapportmeddelande och tillägget Rapportfiske fungerar med de flesta Microsoft 365 prenumerationer och följande produkter:
+- Både tillägget Rapportmeddelande och tillägget Rapportfiske fungerar med de flesta Microsoft 365-prenumerationer och följande produkter:
   - Outlook på webben
   - Outlook 2013 SP1 eller senare
   - Outlook 2016 för Mac
-  - Outlook ingår i Microsoft 365 för företag
-  - Outlook för iOS och Android
+  - Outlook ingår i Microsoft 365-appar för företag
+  - Outlook-appen för iOS och Android
 
-- Båda tilläggen är inte tillgängliga för delade postlådor eller postlådor i lokala Exchange organisationer.
+- Båda tilläggen är inte tillgängliga för delade postlådor eller postlådor i lokala Exchange-organisationer.
 
 - Din befintliga webbläsare bör fungera med tilläggen Rapportmeddelande och Rapportera nätfiske. Om du märker att tillägget inte är tillgängligt eller inte fungerar som förväntat kan du prova en annan webbläsare.
 
 - För organisationsinstallationer måste organisationen konfigureras för att använda OAuth-autentisering. Mer information finns i [Avgöra om centraliserad distribution av tillägg fungerar för din organisation.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-- Administratörer måste vara medlemmar i rollgruppen Globala administratörer. Mer information finns i [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md).
+- Administratörer måste vara medlemmar i rollgruppen Globala administratörer. Mer information finns i [Behörigheter i Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)
 
-- Mer information om hur du rapporterar ett meddelande med hjälp av funktionen Rapportmeddelande finns i Rapportera falska positiva och falska [negativa resultat i Outlook](report-false-positives-and-false-negatives.md).
+- Mer information om hur du rapporterar ett meddelande med hjälp av funktionen Rapportmeddelande finns i Rapportera falska positiva och [falska negativa objekt i Outlook.](report-false-positives-and-false-negatives.md)
 
 > [!IMPORTANT]
-> Vi rekommenderar inte den inbyggda rapporteringsupplevelsen i Outlook eftersom den inte kan använda principen för [användarinskicking.](./user-submission.md) Vi rekommenderar att du använder tilläggen Rapportmeddelande eller Nätfiskerapport i stället.
+> Vi rekommenderar inte den inbyggda rapporteringsupplevelsen i Outlook eftersom det inte kan använda principen för [användarinskickning.](./user-submission.md) Vi rekommenderar att du använder tilläggen Rapportmeddelande eller Nätfiskerapport i stället.
 
 ## <a name="get-the-report-message-add-in"></a>Hämta tillägget Rapportmeddelande
 
@@ -88,26 +88,26 @@ Om du är global administratör eller Exchange Online-administratör och Exchang
 
 När tillägget har installerats och aktiverats visas följande ikoner:
 
-- I Outlook ser ikonen ut så här:
+- Ikonen ser ut så här i Outlook:
 
   > [!div class="mx-imgBorder"]
   > ![Ikonen för tillägget Rapportmeddelande för Outlook](../../media/OutlookReportMessageIcon.png)
 
-- I Outlook på webben ser ikonen ut så här:
+- Ikonen ser ut så här i Outlook på webben:
 
   > [!div class="mx-imgBorder"]
-  > ![Outlook på webbikonen Rapportmeddelande](../../media/owa-report-message-icon.png)
+  > ![Tilläggsikon för meddelande i Outlook på webben](../../media/owa-report-message-icon.png)
 
 ### <a name="get-the-add-in-for-your-organization"></a>Hämta tillägget för din organisation
 
 > [!NOTE]
 > Det kan ta upp till 12 timmar innan tillägget visas i organisationen.
 
-1. I Microsoft 365 administrationscentret går du till sidan **Inställningar** tillägg \>  på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Om du inte ser  tilläggssidan går du till **länken Inställningar** Tillägg för integrerade appar högst upp på sidan \>  \>  **Integrerade** appar.
+1. I administrationscentret för Microsoft 365  går du till \> **sidan Tillägg för inställningar** på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Om du inte ser  tilläggssidan går du  till länken Inställningar Integrerade appar Tillägg högst upp på \>  \>  sidan **Integrerade** appar.
 
 2. Välj **Distribuera tillägg** högst upp på sidan och välj sedan **Nästa.**
 
-   ![Sidan Tjänster och tillägg i Microsoft 365 administrationscenter](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Sidan Tjänster och tillägg i administrationscentret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. I den **utfällbaserade menyn** Distribuera ett nytt tillägg som visas granskar du informationen och klickar sedan på **Nästa.**
 
@@ -149,9 +149,9 @@ När tillägget har installerats och aktiverats visas följande ikoner:
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Granska eller redigera inställningar för tillägget Rapportmeddelande
 
-1. I Microsoft 365 administrationscentret går du till sidan **Inställningar** tillägg \>  på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Om du inte ser  tilläggssidan går du till **länken Inställningar** Tillägg för integrerade appar högst upp på sidan \>  \>  **Integrerade** appar.
+1. I administrationscentret för Microsoft 365 går du till **sidan** \> **Förinställningar-tillägg** på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Om du inte ser  tilläggssidan går du  till länken Inställningar Integrerade appar Tillägg högst upp på \>  \>  sidan **Integrerade** appar.
 
-   ![Tjänster och Add-Ins i det nya Microsoft 365 Administrationscenter](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Tjänster och Add-Ins i det nya administrationscentret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Leta upp och **välj tillägget** Rapportmeddelande.
 
@@ -173,25 +173,25 @@ När tillägget har installerats och aktiverats visas följande ikoner:
 
 När tillägget har installerats och aktiverats visas följande ikoner:
 
-- I Outlook ser ikonen ut så här:
+- Ikonen ser ut så här i Outlook:
 
-  ![Ikonen för tillägget Nätfiske för Outlook](../../media/Outlook-ReportPhishing.png)
+  ![Ikon för tillägget Nätfiske för Outlook](../../media/Outlook-ReportPhishing.png)
 
-- I Outlook på webben ser ikonen ut så här:
+- Ikonen ser ut så här i Outlook på webben:
 
   > [!div class="mx-imgBorder"]
-  > ![Outlook på webbrapportens ikon för nätfiske](../../media/OWA-ReportPhishing.png)
+  > ![Outlook på webben-tillägget Nätfiske](../../media/OWA-ReportPhishing.png)
 
 ### <a name="get-the-add-in-for-your-organization"></a>Hämta tillägget för din organisation
 
 > [!NOTE]
 > Det kan ta upp till 12 timmar innan tillägget visas i organisationen.
 
-1. I Microsoft 365 administrationscentret går du till sidan **Inställningar** tillägg \>  på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Om du inte ser  tilläggssidan går du till **länken Inställningar** Tillägg för integrerade appar högst upp på sidan \>  \>  **Integrerade** appar.
+1. I administrationscentret för Microsoft 365 går du till **sidan** \> **Förinställningar-tillägg** på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Om du inte ser  tilläggssidan går du  till länken Inställningar Integrerade appar Tillägg högst upp på \>  \>  sidan **Integrerade** appar.
 
 2. Välj **Distribuera tillägg** högst upp på sidan och välj sedan **Nästa.**
 
-   ![Sidan Tjänster och tillägg i Microsoft 365 administrationscenter](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Sidan Tjänster och tillägg i administrationscentret för Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. I den **utfällbaserade menyn** Distribuera ett nytt tillägg som visas granskar du informationen och klickar sedan på **Nästa.**
 
@@ -225,7 +225,7 @@ När tillägget har installerats och aktiverats visas följande ikoner:
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>Granska eller redigera inställningar för tillägget Rapport nätfiske
 
-1. I Microsoft 365 administrationscentret går du till sidan **Inställningar** tillägg \>  på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Om du inte ser  tilläggssidan går du till **länken Inställningar** Tillägg för integrerade appar högst upp på sidan \>  \>  **Integrerade** appar.
+1. I administrationscentret för Microsoft 365 går du till **sidan** \> **Förinställningar-tillägg** på <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Om du inte ser  tilläggssidan går du  till länken Inställningar Integrerade appar Tillägg högst upp på \>  \>  sidan **Integrerade** appar.
 
 2. Leta upp och **välj tillägget** Rapport nätfiske.
 

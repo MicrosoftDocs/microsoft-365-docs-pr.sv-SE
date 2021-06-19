@@ -1,6 +1,6 @@
 ---
-title: Strömma Microsoft 365 Defender-händelser till ditt Storage konto
-description: Läs om hur du konfigurerar Microsoft 365 Defender för att strömma Advanced Hunting-händelser till Storage-konto.
+title: Strömma Microsoft 365 Defender händelser till ditt Storage konto
+description: Läs om hur du Microsoft 365 Defender att strömma Advanced Hunting-händelser till ditt Storage konto.
 keywords: raw data export, streaming API, API, Event Hubs, Azure Storage, Storage Account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4e706bbb2246bd0629db721373ffcd4164d123d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: fa61e2fd0591d375a17bad6e166a76c1ca40862e
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772556"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028901"
 ---
-# <a name="configure--microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Konfigurera Microsoft 365 Defender för att strömma Advanced Hunting-händelser till ditt Storage konto
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Konfigurera Microsoft 365 Defender att strömma Advanced Hunting-händelser till ditt Storage konto
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "52772556"
 
 1. Skapa ett [Storage konto](/azure/storage/common/storage-account-overview) i klientorganisationen.
 
-2. Logga in på [din Azure-klientorganisation](https://ms.portal.azure.com/)och **gå till Prenumerationer > din > eller resursleverantörer > Registrera dig i Microsoft.Insights.**
+2. Logga in på [din Azure-klientorganisation](https://ms.portal.azure.com/)och gå till Prenumerationer > Din > eller **resursleverantörer > Registrera dig på Microsoft.Insights.**
 
 ## <a name="enable-raw-data-streaming"></a>Aktivera direktuppspelning av rådata:
 
@@ -50,7 +50,7 @@ ms.locfileid: "52772556"
 
 4. Välj ett namn för de nya inställningarna.
 
-5. Välj **Vidarebefordra händelser om du vill Azure Storage**.
+5. Välj **Vidarebefordra händelser om du vill Azure-lagring**.
 
 6. Ange ditt **Storage Kontoresurs-ID**. För att få ditt **Storage Kontoresurs-ID** går du till din Storage-kontosida på fliken egenskaper i [Azure portal](https://ms.portal.azure.com/) > och kopierar > texten under **Storage Kontoresurs-ID:**
 
@@ -79,7 +79,7 @@ ms.locfileid: "52772556"
 
 - Varje rad innehåller händelsenamnet, tiden Defender för Slutpunkt tog emot händelsen, den klientorganisation den tillhör (du får bara händelser från klientorganisationen) och händelsen i JSON-format i en egenskap som kallas "egenskaper".
 
-- Mer information om schemat för de Microsoft 365 Defender-händelser finns i Avancerad sökning [– översikt.](../defender/advanced-hunting-overview.md)
+- Mer information om schemat för de Microsoft 365 Defender hittar du i [Avancerad sökning – översikt.](../defender/advanced-hunting-overview.md)
 
 
 ## <a name="data-types-mapping"></a>Mappning av datatyper
@@ -103,5 +103,5 @@ För att hämta datatyperna för våra händelseegenskaper gör du följande:
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över Avancerad sökning](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defender Streaming API](streaming-api.md)
-- [Strömma Microsoft 365 Defender-händelser till ditt Azure Storage-konto](streaming-api-storage.md)
-- [Azure Storage Kontodokumentation](/azure/storage/common/storage-account-overview)
+- [Strömma Microsoft 365 Defender till ditt Azure Storage-konto](streaming-api-storage.md)
+- [Azure-lagring Kontodokumentation](/azure/storage/common/storage-account-overview)

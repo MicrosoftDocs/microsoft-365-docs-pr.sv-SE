@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: b6830c77a0c5cc93ea202844a8793c5f69f07650
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022792"
+ms.locfileid: "53028529"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Ärenden i Microsoft 365 Defender
 
@@ -144,9 +144,11 @@ Identifiera ärenden med högsta prioritet för analys och lösning i incidentk�
 
 Om du inte har varit [](incidents-overview.md) så bra på säkerhetsanalys kan du gå till introduktionen till att svara på din första incident för ytterligare information och gå igenom en exempelhändelse.
 
+Mer information om åtgärder vid incidenter i microsoft-produkter finns i [den här artikeln.](/security/compass/incident-response-overview)
+
 ## <a name="example-security-operations-for-microsoft-365-defender"></a>Exempel på säkerhetsåtgärder för Microsoft 365 Defender
 
-Här är ett exempel på säkerhetsåtgärder för Microsoft 365 Defender.
+Här är ett exempel på säkerhetsåtgärder (SecOps) för Microsoft 365 Defender.
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Ett exempel på säkerhetsåtgärder för Microsoft 365 Defender":::
 
@@ -169,11 +171,19 @@ Kvartalsvisa uppgifter kan innehålla en rapport och genomgång av säkerhetsres
 
 Dagliga, månatliga, kvartals- och årliga uppgifter kan användas för att uppdatera eller förfina processer, principer och säkerhetskonfigurationer.
 
+### <a name="secops-resources-across-microsoft-products"></a>SecOps-resurser i alla Microsoft-produkter
+
+Mer information om SecOps i Microsofts produkter finns i följande resurser:
+
+- [Kapaciteter](/security/compass/security-operations-capabilities)
+- [Metodtips](/security/compass/security-operations)
+- [Videor och bilder](/security/compass/security-operations-videos-and-decks)
+
 ## <a name="next-steps"></a>Nästa steg
 
 **Om du inte har angående** säkerhetsanalys och incidentsvar:
 
-- I [](first-incident-overview.md) genomgången Svara på din första incident finns en guidad genomgång av en typisk process av analys, åtgärder och efter incidentgranskning i Microsoft 365 Defender-portalen med ett exempel på en attack.
+- I [genomgången](first-incident-overview.md) Svara på din första incident finns en guidad genomgång av en typisk process av analys, åtgärder och granskning efter incident i Microsoft 365 Defender-portalen med ett exempel på en attack.
 
 **Om du har erfarenhet av** säkerhetsanalys och incidentsvar:
 
@@ -181,7 +191,7 @@ Dagliga, månatliga, kvartals- och årliga uppgifter kan användas för att uppd
 
   - Se vilka incidenter som [ska prioriteras](incident-queue.md) utifrån allvarlighetsgrad och andra faktorer. 
 
-  - [Hantera incidenter,](manage-incidents.md)som omfattar att byta namn på, tilldelning, klassificera och lägga till taggar och kommentarer baserat på arbetsflödet för incidenthantering.
+  - [Hantera incidenter,](manage-incidents.md)som omfattar att byta namn på, tilldela, klassificera och lägga till taggar och kommentarer baserat på arbetsflödet för hantering av incidenter.
 
   - Utföra [undersökningar](investigate-incidents.md) av incidenter.
 

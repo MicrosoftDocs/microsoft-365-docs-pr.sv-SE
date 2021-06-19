@@ -19,12 +19,12 @@ description: Använd Microsoft Defender för Office 365 microsoft Defender för 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 63ae9f8c1136a973e4fccb63ecfbaee2639c3f6f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: e59f608a6f732f58002dfd2ff34666865ab23f3d
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904086"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028887"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Använda Microsoft Defender för Office 365 tillsammans med Microsoft Defender för Endpoint
 
@@ -42,13 +42,13 @@ I följande bild visas hur fliken **Enheter ser** ut när du har aktiverat Micro
 I det här exemplet kan du se att mottagarna av det identifierade e-postmeddelandet har fyra enheter och en har en avisering. Om du klickar på länken för en enhet öppnas sidan [Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md) (tidigare Microsoft Defender Säkerhetscenter).
 
 > [!TIP]
-> Defender Microsoft 365 portalen ersätter den Microsoft Defender Säkerhetscenter. Se [Microsoft Defender för slutpunkt i Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
+> Den Microsoft 365 Defender portalen ersätter Microsoft Defender Säkerhetscenter. Se [Microsoft Defender för Slutpunkt i Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
 ## <a name="requirements"></a>Krav
 
 - Din organisation måste ha Microsoft Defender för Office 365 (eller Office 365 E5) och Microsoft Defender för Slutpunkt.
 
-- Du måste vara global administratör eller ha en säkerhetsadministratörsroll (till exempel säkerhetsadministratör) som tilldelats Microsoft 365. (Se [Behörigheter i säkerhets- & Säkerhets- och efterlevnadscenter](permissions-in-the-security-and-compliance-center.md))
+- Du måste vara global administratör eller ha en säkerhetsadministratörsroll (till exempel säkerhetsadministratör) som tilldelats Microsoft 365. (Se [Behörigheter i Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md))
 
 - Du måste ha tillgång [till Utforskaren (eller identifieringar i realtid).](threat-explorer.md)
 
@@ -56,19 +56,17 @@ I det här exemplet kan du se att mottagarna av det identifierade e-postmeddelan
 
 Integrering av Microsoft Defender för Office 365 med Microsoft Defender för slutpunkt konfigureras i både Defender för Slutpunkt och Defender för Office 365.
 
-1. Som global administratör eller säkerhetsadministratör går du till [https://protection.office.com](https://protection.office.com) och loggar in. (Då kommer du till Office 365 Säkerhets- & Efterlevnadscenter.)
+1. Som global administratör eller säkerhetsadministratör går du till [https://security.microsoft.com](https://security.microsoft.com) och loggar in. (Då kommer du till Microsoft 365 Defender portalen.)
 
-2. Välj Hothanteringsutforskaren **i** \> **navigeringsfönstret.**
+2. I navigeringsfönstret väljer du **E-& för samarbete** \> **i Utforskaren.**
 
-   ![Utforskaren på menyn Hantering av hot](../../media/ThreatMgmt-Explorer-nav.png)
-
-3. Välj Defender för Endpoint Inställningar **(MDE-Inställningar) i skärmens övre högra Inställningar.**
+3. Klicka på **MDE-Inställningar i skärmens övre högra Inställningar**.
 
 4. I dialogrutan Microsoft Defender för slutpunktsanslutning aktiverar du Microsoft **Defender Anslut microsoft Defender för slutpunkt.**
 
-   ![Microsoft Defender för Slutpunktsanslutning](../../media/Explorer-WDATPConnection-dialog.png)
+    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE-anslutning":::
 
-5. Gå till Microsoft 365 Defender-portalen ( [https://security.microsoft.com](https://security.microsoft.com) .
+5. Gå till Microsoft 365 Defender portalen ( [https://security.microsoft.com](https://security.microsoft.com) .
 
 6. I navigeringsfältet väljer **du Inställningar**. Välj sedan **Avancerade funktioner** under **Allmänt.**
 

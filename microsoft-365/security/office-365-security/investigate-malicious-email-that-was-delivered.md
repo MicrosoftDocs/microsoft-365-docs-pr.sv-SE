@@ -20,12 +20,12 @@ description: Lär dig hur du använder funktioner för undersökning av hot och 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02e396cac060f2b8431b2b70e89c18950596d9c2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ef29493bd68166b88bba3ef5905f0427823b4015
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933379"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028857"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Undersök skadlig e-post som levererats i Office 365
 
@@ -51,7 +51,7 @@ Kontrollera att följande krav uppfylls:
 
 - Organisationen har definierat principer för skydd mot skräppost, skadlig programvara, nätfiske och så vidare. Se [Skydda mot hot i Office 365](protect-against-threats.md).
 
-- Du är global administratör eller har antingen säkerhetsadministratören eller rollen Sök och rensning tilldelad i Säkerhets- & Efterlevnadscenter. Se [Behörigheter i Säkerhets- & Säkerhets- och efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md) För vissa åtgärder måste du också ha en ny förhandsgranskningsroll tilldelad.
+- Du är global administratör eller säkerhetsadministratör eller sök- och rensningsroll i Microsoft 365 Defender. Se [Behörigheter i Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md). För vissa åtgärder måste du också ha en ny förhandsgranskningsroll tilldelad.
 
 ### <a name="preview-role-permissions"></a>Förhandsgranska rollbehörigheter
 
@@ -67,10 +67,10 @@ För att utföra vissa åtgärder, till exempel visa meddelanderubriker eller la
 |
 
 > [!NOTE]
-> *Förhandsversion* är en roll och inte en rollgrupp. Förhandsversionsrollen måste läggas till i en befintlig rollgrupp för Office 365 (vid <https://protection.office.com> ). Gå till **Behörigheter** och redigera sedan en befintlig rollgrupp eller lägg till en ny rollgrupp med rollen **Förhandsgranskning** tilldelad.
-> Rollen Global administratör tilldelas rollen Microsoft 365 admin center ( ) och roller som säkerhetsadministratör och säkerhetsläsare tilldelas i Säkerhets- och & <https://admin.microsoft.com> Efterlevnadscenter ( <https://protection.office.com> ). Mer information om roller och behörigheter finns i [Behörigheter i Säkerhets- och & Efterlevnadscenter.](permissions-in-the-security-and-compliance-center.md)
+> *Förhandsversion* är en roll och inte en rollgrupp. Förhandsversionsrollen måste läggas till i en befintlig rollgrupp för Office 365 (vid <https://security.microsoft.com> ). Gå till **Behörigheter** och redigera sedan en befintlig rollgrupp eller lägg till en ny rollgrupp med rollen **Förhandsgranskning** tilldelad.
+> Rollen Global administratör tilldelas rollerna Administrationscenter för Microsoft 365 ( ) och roller som säkerhetsadministratör och säkerhetsläsare <https://admin.microsoft.com> tilldelas i Microsoft 365 Defender ( <https://security.microsoft.com> ). Mer information om roller och behörigheter finns i [Behörigheter i Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
 
-Vi förstår att förhandsgranskning och nedladdning av e-postmeddelanden är känsliga aktiviteter och därför är granskning aktiverad för dessa. När en administratör utför de här aktiviteterna i e-postmeddelanden genereras granskningsloggar för samma och visas i Office 365 Security & Compliance Center ( <https://protection.office.com> ). Gå till **Sök**  >  **i granskningsloggsökning** och filtrera på administratörsnamnet i avsnittet Sök. De filtrerade resultaten visar aktivitet **AdminMailAccess.** Markera en rad för att visa information i avsnittet **Mer information om** förhandsgranskad eller nedladdad e-post.
+Vi förstår att förhandsgranskning och nedladdning av e-postmeddelanden är känsliga aktiviteter och därför är granskning aktiverad för dessa. När en administratör utför de här aktiviteterna i e-postmeddelanden genereras granskningsloggar för samma och visas i Office 365 Microsoft 365 Defender ( <https://security.microsoft.com> ). Gå till **Sök**  >  **i granskningsloggsökning** och filtrera på administratörsnamnet i avsnittet Sök. De filtrerade resultaten visar aktivitet **AdminMailAccess.** Markera en rad för att visa information i avsnittet **Mer information om** förhandsgranskad eller nedladdad e-post.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Hitta misstänkt e-postmeddelande som har levererats
 
@@ -79,13 +79,11 @@ Hotutforskaren är en kraftfull rapport som kan ha flera syften, till exempel at
 > [!NOTE]
 > Standardsökningar i Utforskaren inkluderar för närvarande inte Zapped-objekt.  Det här gäller för alla vyer, till exempel skadlig programvara eller phish-vyer. Om du vill inkludera zapped-objekt måste du lägga till en **leveransåtgärd som** är inställd på tas **bort av ZAP.** Om du inkluderar alla alternativ visas alla leveransåtgärdsresultat, inklusive Zapped-objekt.
 
-1. **Gå till Hotutforskaren:** Gå <https://protection.office.com> till och logga in med ditt arbets- eller skolkonto för Office 365. Då kommer du till Säkerhets- & Efterlevnadscenter.
+1. **Gå till Hotutforskaren:** Gå <https://security.microsoft.com> till och logga in med ditt arbets- eller skolkonto för Office 365. Då kommer du till Microsoft 365 Defender.
 
-2. Välj Hothanteringsutforskaren i **det vänstra navigeringsfältet.** \> 
+2. I snabbstartsguide för det vänstra navigeringsfältet väljer **du E& för samarbete i** \> **Utforskaren.**
 
-    ![Utforskaren med fälten Leveransåtgärd och Leveransplats.](../../media/ThreatExFields.PNG)
-
-    Den nya kolumnen **Specialåtgärder kanske visas.** Den här funktionen är avsedd att berätta för administratörer resultatet av att bearbeta ett e-postmeddelande. Kolumnen **Specialåtgärder** kan nås på samma plats som **leveransåtgärd och** **leveransplats.** Särskilda åtgärder kan uppdateras i slutet av e-posttidslinjen i Threat Explorer, vilket är en ny funktion som är avsedd att göra upplevelsen bättre för administratörer.
+      Den nya kolumnen **Specialåtgärder kanske visas.** Den här funktionen är avsedd att berätta för administratörer resultatet av att bearbeta ett e-postmeddelande. Kolumnen **Specialåtgärder** kan nås på samma plats som **leveransåtgärd och** **leveransplats.** Särskilda åtgärder kan uppdateras i slutet av e-posttidslinjen i Threat Explorer, vilket är en ny funktion som är avsedd att göra upplevelsen bättre för administratörer.
 
 3. **Vyer i Utforskaren med hot:** Välj **All e-post** på **menyn Visa.**
 

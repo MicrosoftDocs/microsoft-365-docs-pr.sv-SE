@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf8e74a6886d7086da062d6258e3e1e1a1cbd730
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: cb23987600a5f87a99449510f7651c4fdcd45f66
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861725"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028409"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender för endpoint-enhetskontroll, flyttbar Storage access-kontroll
 
@@ -41,18 +41,18 @@ Med Microsoft Defender för Endpoint Device Control Storage och Access Control k
 
 ## <a name="prepare-your-endpoints"></a>Förbered dina slutpunkter
 
-Distribuera Flyttbart Storage Access Control på Windows 10-enheter med klientversionen mot skadlig programvara **version 4.18.2103.3 eller senare.**
-1. **4.18.2104** eller senare: Add SerialNumberId, VID_PID, filepath-baserat GPO-stöd, ComputerSid
+Distribuera Flyttbara Storage Access Control på Windows 10-enheter som har version **4.18.2103.3 eller senare av** program mot skadlig programvara.
 
-2. **4.18.2105** eller senare: Lägg till stöd för jokertecken för HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, kombinationen av en specifik användare på en specifik dator, removeable SSD (en SanDisk Extreme SSD)/USB Attached MORD (UAS) stöd
+- **4.18.2104** eller senare: Add SerialNumberId, VID_PID, filepath-baserat GPO-stöd, ComputerSid
+
+- **4.18.2105** eller senare: Lägg till stöd för jokertecken för HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, kombinationen av en specifik användare på en specifik dator, removeable SSD (en SanDisk Extreme SSD)/USB Attached MORD (UAS) stöd
 
 :::image type="content" source="images/powershell.png" alt-text="PowerShell-gränssnittet":::
 
-   > [!NOTE]
-   > Ingen av Windows-säkerhet komponenter måste vara aktiva, du kan köra Flyttbara Storage Access Control oberoende av Windows-säkerhet status.
+> [!NOTE]
+> Ingen av Windows-säkerhet komponenter måste vara aktiva, du kan köra Flyttbara Storage Access Control oberoende av Windows-säkerhet status.
 
 ## <a name="policy-properties"></a>Principegenskaper
-
 
 Du kan använda följande egenskaper till att skapa en flyttbar lagringsgrupp:
 
@@ -67,6 +67,7 @@ Ange de enhetsegenskaper du vill använda i gruppen.
 Mer information om varje **enhetsegenskap finns** i avsnittet Enhetsegenskaper ovan.
 
 1. Alternativ:
+
     - Primärt ID
         - FlyttbaraMediaDevices
         - CdRomDevices
@@ -87,11 +88,9 @@ Mer information om varje **enhetsegenskap finns** i avsnittet Enhetsegenskaper o
 1. Beskrivning: När det finns flera enhetsegenskaper som används i DescriptorIDList definierar MatchType relationen.
 
 1. Alternativ:
+
     - MatchAll: Attributen under DescriptorIdList blir **och relationen;** Om administratören till exempel placerar DeviceID och InstancePathID för varje ansluten USB kontrollerar systemet om USB-minnet uppfyller båda värdena.
-
     - MatchAny: Attributen under DescriptorIdList blir **Eller relationen;** Om administratören till exempel placerar DeviceID och InstancePathID, för varje anslutet USB-minne, kommer systemet att upprätthålla tillämpning så länge USB-minnet har antingen ett identiskt **DeviceID-** eller **InstanceID-värde.**
-
-
 
 Här är egenskaperna för principegenskaper för åtkomstkontroll:
 
@@ -101,9 +100,9 @@ Här är egenskaperna för principegenskaper för åtkomstkontroll:
 
 **Egenskapsnamn: IncludedIdList**
 
-1. Beskrivning: De grupper som principen ska tillämpas på. Om flera grupper läggs till tillämpas principen på alla media i alla grupperna.
+2. Beskrivning: De grupper som principen ska tillämpas på. Om flera grupper läggs till tillämpas principen på alla media i alla grupperna.
 
-1. Alternativ: Grupp-ID/GUID måste användas i den här instansen.
+3. Alternativ: Grupp-ID/GUID måste användas i den här instansen.
 
 I följande exempel visas användningen av GroupID:
 
@@ -111,8 +110,9 @@ I följande exempel visas användningen av GroupID:
 
 **Egenskapsnamn: ExcludedIDList**
 
-1. Beskrivning: De grupper som principen inte ska tillämpas på.
-1. Alternativ: Grupp-ID/GUID måste användas i den här instansen.
+Beskrivning: De grupper som principen inte ska tillämpas på.
+
+Alternativ: Grupp-ID/GUID måste användas i den här instansen.
 
 **Egenskapsnamn: Post-ID**
 
@@ -123,7 +123,9 @@ I följande exempel visas användningen av GroupID:
 1. Beskrivning: Definierar åtgärden för de flyttbara lagringsgrupperna i IncludedIDList.
     - Tillämpning: Tillåt eller Neka
     - Granskning: GranskningSalla eller GranskaDenied 
-1. Alternativ:
+
+2. Alternativ:
+
     - Tillåt
     - Neka
     - AuditAllowed: Definierar meddelande och händelse när åtkomst är tillåten
@@ -133,19 +135,19 @@ När det finns konflikttyper för samma media används den första i principen i
 
 **Egenskapsnamn: Sid**
 
-1. Beskrivning: Definierar om den här principen ska användas i en viss användare eller användargrupp. en post kan ha maximalt en Sid och en post utan sid innebär att principen tillämpas på datorn.
+Beskrivning: Definierar om den här principen ska användas i en viss användare eller användargrupp. en post kan ha maximalt en Sid och en post utan sid innebär att principen tillämpas på datorn.
 
 **Egenskapsnamn: DatorSid**
 
-1. Beskrivning: Definierar om den här principen ska användas i en viss dator eller datorgrupp. En post kan ha maximalt en ComputerSid och en post utan ComputerSid innebär att principen tillämpas på datorn. Om du vill använda en Post för en viss användare och en viss dator lägger du till både Sid och DatorSid i samma Post.
+Beskrivning: Definierar om den här principen ska användas i en viss dator eller datorgrupp. En post kan ha maximalt en ComputerSid och en post utan ComputerSid innebär att principen tillämpas på datorn. Om du vill använda en Post för en viss användare och en viss dator lägger du till både Sid och DatorSid i samma Post.
 
 **Egenskapsnamn: Alternativ**
 
-1. Beskrivning: Definierar om meddelandet ska visas eller inte.
+Beskrivning: Definierar om meddelandet ska visas eller inte.
 
    :::image type="content" source="images/device-status.png" alt-text="Skärmen där enhetens status visas":::
 
-1. Alternativ: 0–4. När Tillåt eller Neka är markerat:
+Alternativ: 0–4. När Tillåt eller Neka är markerat:
 
    - 0: ingenting
    - 4: Inaktivera **AuditAllowed** **och AuditDenied för** den här posten. Även om **Blockera** inträffar **och AuditDenied-inställningen** har konfigurerats visas inget meddelande i systemet.
@@ -159,16 +161,16 @@ När det finns konflikttyper för samma media används den första i principen i
 
 **Egenskapsnamn: AccessMask**
 
-1. Beskrivning: Definierar åtkomsten.
+Beskrivning: Definierar åtkomsten.
 
-1. Alternativ: 1–7:
-    - 1: Läsa
-    - 2: Skriva
-    - 3: Läsa och skriva
-    - 4: Utför
-    - 5: Läsa och utföra
-    - 6: Skriva och utföra
-    - 7: Läsa och skriva och utföra
+Alternativ 1–7:
+  - 1: Läsa
+  - 2: Skriva
+  - 3: Läsa och skriva
+  - 4: Utför
+  - 5: Läsa och utföra
+  - 6: Skriva och utföra
+  - 7: Läsa och skriva och utföra
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>Vanliga scenarier för Storage och Access-kontroll
 
@@ -177,6 +179,7 @@ Vi har satt ihop några vanliga scenarier som du kan följa för att bekanta dig
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>Scenario 1: Förhindra skrivning och körning av åtkomst till alla men tillåta specifika godkända USBs
 
 1. Skapa grupper
+
     1. Grupp 1: Alla flyttbara lagringsmedia och CD/DVD. Ett exempel på flyttbart lagringsutrymme och cd/dvd är: Group **9b28fae8-72f7-4267-a1a5-685f747a7146** i exemplet Any [Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Grupp 2: Godkända usa baserat på enhetsegenskaper. Ett exempel för det här användningsfall är: Instans-ID – Grupp **65fa649a-a111-4912-9294-fb6337a25038** i exemplet Godkända [amerikanska Group.xml-filer.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
@@ -185,13 +188,15 @@ Vi har satt ihop några vanliga scenarier som du kan följa för att bekanta dig
     > Du måste ersätta `&` med `&amp;` i värdet.
 
 2. Skapa princip
-    1. Princip 1: Blockera skrivning och körning av Access men tillåt godkända amerikanskabs. Ett exempel för det här användningsfall är: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** i exemplet [Scenario 1 Blockera skrivning](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) och kör Access men tillåt godkända USBs .xml-fil.
+
+    1. Princip 1: Blockera skrivning och körning av Access men tillåt godkända amerikanskabs. Ett exempel för det här användningsfall är: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** i exemplet [Scenario 1 Blockera skrivning](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) och kör Access men tillåt godkänd USBs.xmlfil.
     
     2. Princip 2: Granska skrivning och kör åtkomst till tillåtna USB. Ett exempel för det här användningsfall är: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** i exemplet Scenario 1 Granskningsskrivning och Kör åtkomst till [godkänd USBs.xml-fil.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
 
 ### <a name="scenario-2-audit-write-and-execute-access-to-all-but-block-specific-unapproved-usbs"></a>Scenario 2: Granska skrivning och kör åtkomst till alla utom blockera specifika usbs som inte godkänts
 
 1. Skapa grupper
+
     1. Grupp 1: Alla flyttbara lagringsmedia och CD/DVD. Ett exempel för det här användningsfall är: Grupp **9b28fae8-72f7-4267-a1a5-685f747a7146** i exemplet [Flyttbara Storage- och CD-DVD-Group.xmlfiler.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
     
     2. Grupp 2: Ej godkända amerikanska sampel baserat på enhetsegenskaper, exempelvis leverantörs-ID/produkt-ID, eget namn – grupp **65fa649a-a111-4912-9294-fb6337a25038** i [exempelfilen Group.xmlusbs som](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) inte godkänts. 
@@ -200,6 +205,7 @@ Vi har satt ihop några vanliga scenarier som du kan följa för att bekanta dig
     > Du måste ersätta `&` med `&amp;` i värdet.
 
 2. Skapa princip
+
     1. Princip 1: Blockera skrivning och körning av åtkomst till alla utom blockera specifika usBs som inte godkänts. Ett exempel på det här användningsfall är: PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** i exempelscenario 2 Granskningsskrivning och Kör åtkomst till alla men blockerar en viss ej USBs.xml [fil.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
     
     2. Princip 2: Granska skrivning och utför åtkomst till andra. Ett exempel på det här användningsfall är: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** i exemplet [Scenario 2](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) Granskningsskrivning och Kör åtkomst till others.xmlfil.
@@ -314,3 +320,31 @@ DeviceEvents
 ```
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="Skärmen visar hur det flyttbara lagringsutrymmet blockeras":::
+
+## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
+**Vad är begränsningen för flyttbara lagringsmedia för det maximala antalet AMERIKANSKABB?**
+
+Vi har validerat en USB-grupp med 100 000 media – upp till 7 MB i storlek. Principen fungerar i både Intune och GPO utan prestandaproblem.
+
+**Varför fungerar inte principen?**
+
+Den vanligaste orsaken är att det inte finns någon [obligatorisk version av program mot skadlig programvara.](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints)
+
+En annan orsak kan vara att XML-filen inte är korrekt formaterad, t.ex. att rätt formatering för tecknet "&" i XML-filen inte används, eller att textredigeraren lägger till en XML-0xEF 0xBB 0xBF (Byte Order Mark) i början av filerna, vilket gör att XML-tolkningarna inte fungerar. En enkel lösning är att ladda ned [exempelfilen](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (välj **Raw** och **sedan Spara som**) och sedan uppdatera.
+
+Om det finns ett värde och principen hanteras via grupprincip kontrollerar du om klientenheten kan komma åt XML-sökvägen.
+
+**Hur vet jag vilken dator som använder en inversion av den senaste klientversionen av program mot skadlig programvara i organisationen?**
+
+Du kan använda följande fråga för att få klientversionen av program mot skadlig programvara på Microsoft 365-säkerhetsportalen:
+```kusto
+//check the antimalware client version
+DeviceFileEvents
+| where FileName == "MsMpEng.exe"
+| where FolderPath contains @"C:\ProgramData\Microsoft\Windows Defender\Platform\"
+| extend PlatformVersion=tostring(split(FolderPath, "\\", 5))
+//| project DeviceName, PlatformVersion // check which machine is using legacy platformVersion
+| summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
+| order by PlatformVersion desc
+```
+

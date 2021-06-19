@@ -16,12 +16,12 @@ description: Visa och undersöka försök till nätfiske efter skadlig kod.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0326a51f14b402b9a579e8668ef2c026f9de789
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 917ad3caf96a982df8b88058ff1c394b3d21dd75
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877902"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028562"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>E-postsäkerhet med Threat Explorer i Microsoft Defender för Office 365
 
@@ -45,28 +45,22 @@ I den här artikeln förklarar vi hur du visar och undersöker skadlig kod och n
 
 Om du vill se skadlig programvara som upptäckts [](threat-explorer-views.md#email--malware) i e-Microsoft 365 efter teknik använder du vyn E> program för skadlig programvara i Utforskaren (eller identifieringar i realtid). Skadlig programvara är standardvyn, så den kan väljas så fort du öppnar Utforskaren.
 
-1. I Säkerhets- & (), <https://protection.office.com> väljer du **Utforskaren för hantering** av hot \>  **(eller identifieringar i realtid).** (I det här exemplet används Utforskaren.)
-
-   Om du är i den konvergerade Microsoft 365 Defender-portalen <https://security.microsoft.com> () bläddrar du till **E-& för samarbete**  >  **i Utforskaren.**
+1. I Microsoft 365 Defender () <https://security.microsoft.com> väljer du **E-& för samarbete** \> **i Utforskaren** (eller **Identifieringar i realtid).** (I det här exemplet används Utforskaren.) Om du är i den konvergerade Microsoft 365 Defender (bläddra https://security.microsoft.com/) till Skicka e-& **med samarbetsutforskaren**  >  .
 
    Härifrån börjar du med visa, väljer en viss tidsperiod att undersöka (om det behövs) och fokuserar dina filter, enligt [Utforskarens genomgång.](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)
 
-2. Välj Skadlig **programvara för** e-post **i visa-menyn.** \> 
-
-   > [!div class="mx-imgBorder"]
-   > ![Visa-menyn för Utforskaren](../../media/ExplorerViewEmailMalwareMenu.png)
+2. I **visa-menyn** väljer du Skadlig **programvara** under **E-post.**
 
 3. Klicka **på Avsändare** och välj sedan **Enkel** \> **identifieringsteknik.**
 
-   Dina identifieringstekniker är nu tillgängliga som filter för rapporten.
+   
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="teknik för identifiering av skadlig programvara":::
 
-   > [!div class="mx-imgBorder"]
-   > ![Teknik för identifiering av skadlig programvara](../../media/ExplorerEmailMalwareDetectionTech.png)
+   Dina identifieringstekniker är nu tillgängliga som filter för rapporten.
 
 4. Välj ett alternativ. Välj sedan knappen **Uppdatera** för att använda filtret.
 
-   > [!div class="mx-imgBorder"]
-   > ![Vald identifieringsteknik](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="vald identifieringsteknik"::: 
 
    Rapporten uppdateras för att visa resultat som skadlig programvara upptäckt i e-post med hjälp av det teknikalternativ som du valt. Härifrån kan du göra ytterligare analyser. 
 
@@ -76,7 +70,7 @@ Du kan visa nätfiskeförsök via URL:er i e-postmeddelanden, inklusive en lista
 
 Om du vill granska webbadresser i meddelanden och klicka på WEBBADRESSer i [   >  **phish-meddelanden**](threat-explorer-views.md#email--phish) använder du e-postvyn Phish i Utforskaren eller identifieringar i realtid.
 
-1. I Säkerhets- & (), <https://protection.office.com> väljer du **Utforskaren för hantering** av hot \>  **(eller identifieringar i realtid).** (I det här exemplet används Utforskaren.)
+1. I Microsoft 365 Defender () <https://security.microsoft.com> väljer du **E-& för samarbete** \> **i Utforskaren** (eller **Identifieringar i realtid).** (I det här exemplet används Utforskaren.)
 
 2. Välj **E-post**  \> **phish på menyn Visa.**
 
@@ -87,8 +81,7 @@ Om du vill granska webbadresser i meddelanden och klicka på WEBBADRESSer i [   
 
 4. Välj ett eller flera  alternativ, som Blockerad och Blockera  **åsidosätts,** och välj sedan knappen Uppdatera på samma rad som alternativen för att använda filtret. (Uppdatera inte webbläsarfönstret.)
 
-   > [!div class="mx-imgBorder"]
-   > ![URL:er och klicka på bedömningar](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URL:er och klicka på bedömningar":::
 
    Rapporten uppdateras så att två olika URL-tabeller visas på fliken URL under rapporten:
 
@@ -122,7 +115,7 @@ I de utfällliga e-post- eller URL-adresserna, de övre klicken och i våra filt
 ## <a name="start-automated-investigation-and-response"></a>Starta automatisk undersökning och svar
 
 > [!NOTE]
-> Funktioner för automatisk undersökning och svar finns i *Microsoft Defender för Office 365 abonnemang 2* och *e5 Office 365.*
+> Funktioner för automatisk undersökning och svar finns i *Microsoft Defender för Office 365 abonnemang 2* och *Office 365 E5.*
 
 [Med automatiserad undersökning och](automated-investigation-response-office.md) svar kan du spara tid och arbete som utförs i säkerhetsåtgärder mot cyberattacker. Förutom att konfigurera aviseringar som kan utlösa en säkerhetsspelbok kan du starta en automatiserad undersökning och svarsprocess från en vy i Utforskaren. Mer information finns i [Exempel: En säkerhetsadministratör utlöser en undersökning från Utforskaren](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
