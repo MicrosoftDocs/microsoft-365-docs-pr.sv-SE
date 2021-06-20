@@ -20,12 +20,12 @@ ms.custom:
 description: Användare kan läsa mer om hur de visar och hanterar meddelanden i karantän i Exchange Online Protection (EOP) som borde ha levererats till dem.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02119130df847da48f0c25ba13cbb321c83f59dd
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: c0f95561977c453d7040d84ba0c779c3d33e07f0
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028397"
+ms.locfileid: "53029831"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Hitta och släppa meddelanden i karantän som användare i EOP
 
@@ -38,6 +38,18 @@ ms.locfileid: "53028397"
 
 I Microsoft 365-organisationer med postlådor i Exchange Online eller fristående Exchange Online Protection-organisationer (EOP) utan Exchange Online-postlådor lagrar karantänen potentiellt farliga eller oönskade meddelanden. Mer information finns i [Karantän i EOP](quarantine-email-messages.md).
 
+I tabellen beskrivs vad kan du som vanlig användare kan göra som mottagare av ett meddelande i karantän:
+
+<br>
+
+****
+
+|Orsak till karantän|Visa|Version|Radera|
+|---|:---:|:---:|:---:|
+|Massutskick|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|Skräppost|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
+|Nätfiske (inte nätfiske med högt förtroende)|![Bockmarkering](../../media/checkmark.png)||![Bockmarkering](../../media/checkmark.png)|
+|
 
 Du visar och hanterar dina meddelanden i karantän i Microsoft 365 Defender-portalen eller (om en administratör har konfigurerat detta) i [slutanvändarens skräppostaviseringar](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
