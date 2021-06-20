@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: När du skapar en känslighetsetikett kan du automatiskt tilldela filer och e-postmeddelanden en etikett, eller så kan du uppmana användarna att välja den etikett som du rekommenderar.
-ms.openlocfilehash: 4215e6618c1cc6359755c2af1e7b9e93ca07b58d
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 49f50b99d6c1b46394e26447bd33b6bf93e2917f
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984814"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029009"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Använda en känslighetsetikett för innehåll automatiskt
 
@@ -369,3 +369,17 @@ Mer information om PowerShell-cmdletar som stöder automatiska etiketter, deras 
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
+
+## <a name="tips-to-increase-labeling-reach"></a>Tips för att öka etiketteringsräckvidd
+
+Även om automatisk etikettering är ett av de mest effektiva sätten att klassificera, märka och skydda Office-filer som din organisation äger, kontrollera om du kan komplettera det med någon av de ytterligare metoderna för att öka din etiketteringsräckvidd:
+
+- När du använder [Azure Information Protection enhetliga etiketteringsklienten](/azure/information-protection/rms-client/aip-clientv2):
+    
+    - För filer i lokala datalager som nätverksresurser och SharePoint Server-bibliotek: Använd [-skannern](/azure/information-protection/deploy-aip-scanner) för att identifiera känslig information i dessa filer och märka dem på rätt sätt. Om du planerar att migrera eller ladda upp dessa filer till SharePoint i Microsoft 365 använder du skannern för att märka filerna innan du flyttar dem till molnet.
+    
+    - Om du har använt en annan etikettlösning innan du använder känslighetsetiketter: Använd PowerShell och [en avancerad inställning för att återanvända etiketter](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) från dessa lösningar.
+
+- Uppmuntra [manuell etikettering](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) när du har gett användarna utbildning om vilka känslighetsetiketter som ska tillämpas. När du är säker på att användarna förstår vilken etikett som ska tillämpas bör du överväga att konfigurera en standardetikett och obligatorisk etikettering som [principinställningar](sensitivity-labels.md#what-label-policies-can-do). 
+
+Överväg också [att markera nya filer som känsliga som standard](/sharepoint/sensitive-by-default) i SharePoint för att hindra gäster från att komma åt nyligen tillagda filer tills minst en DLP-princip söker igenom innehållet i filen.

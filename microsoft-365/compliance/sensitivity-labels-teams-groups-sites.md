@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd känslighetsetiketter för att skydda innehåll i Sharepoint- och Microsoft Teams-webbplatser samt Microsoft 365-grupper.
-ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 8c19853730376e36ffe7ac136e7fc6036b8b5f12
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694407"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028985"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser
 
@@ -163,20 +163,6 @@ Alla appar har inte stöd för autentiseringskontexter. Om en användare med en 
     - Android: Stöds inte än
 
 Kända begränsningar för den här förhandsversionen:
-
-- Den här funktionen distribueras fortfarande till vissa klientorganisationer. Om principen Villkorsstyrd åtkomst* med ditt valda autentiseringskontext inte verkställs när en användare öppnar webbplatsen kan du använda PowerShell för att bekräfta att konfigurationen är korrekt och att alla krav uppfylls. Du måste ta bort känslighetsetiketten från webbplatsen och sedan konfigurera webbplatsen för autentiseringskontext med hjälp av cmdleten [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) från aktuell [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online). Om den här metoden fungerar bör du vänta några dagar till innan du försöker använda känslighetsetiketten igen.
-    
-    Så här testar du autentiseringskontext med PowerShell:
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
-    ```
-    
-    Om du vill ta bort autentiseringskontext så att du kan prova att använda känslighetsetiketten igen:
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
-    ```
 
 - För OneDrive-synkroniseringsappen, stöds endast för OneDrive, och inte andra webbplatser.
 
@@ -429,13 +415,19 @@ Mer information om hur du hanterar samexistensen för känslighetsetiketter och 
 
 Om någon överför ett dokument till en webbplats som är skyddad med en känslighetsetikett och dokumentet har en känslighetsetikett med [högre prioritet](sensitivity-labels.md#label-priority-order-matters) än känslighetsetiketten som används på webbplatsen blockeras inte den här åtgärden. Om du har till exempel använt etiketten **Allmänt** på en SharePoint-webbplats och någon laddar upp ett dokument med etiketten **Konfidentiellt** på den här webbplatsen. Eftersom en känslighetsetikett med högre prioritet identifierar innehåll som är mer känsligt än innehåll som har en lägre prioritet, kan det här vara ett säkerhetsproblem.
 
-Även om åtgärden inte blockeras granskas den och genererar automatiskt ett e-postmeddelande till personen som har laddat upp dokumentet och webbplatsadministratören. På så sätt kan både användare och administratörer identifiera dokument som har den här felaktiga etikettprioriteringen och vid behov vidta åtgärder. Till exempel att bort eller flytta det uppladdade dokumentet från webbplatsen.
+Även om åtgärden inte blockeras granskas den och genererar automatiskt som standard ett e-postmeddelande till personen som har laddat upp dokumentet och webbplatsadministratören. På så sätt kan både användare och administratörer identifiera dokument som har den här felaktiga etikettprioriteringen och vid behov vidta åtgärder. Till exempel att bort eller flytta det uppladdade dokumentet från webbplatsen.
 
 Det skulle inte vara ett säkerhetsproblem om dokumentet har en etikett med lägre prioritet än känslighetsetiketten som används på webbplatsen. Till exempel laddas ett dokument med etiketten **Allmänt** upp på en webbplats som har etiketten **Konfidentiellt**. I det här scenariot genereras ingen granskningshändelse och inget e-postmeddelande.
 
 Om du vill söka i granskningsloggen efter den här händelsen ska du leta efter **Identifierade en felmatchning mellan dokumentens känsligheter** från kategorin **Fil- och sidaktiviteter**.
 
 Det e-postmeddelande som genereras automatiskt har ämnesraden **Inkompatibel känslighetsetikett har upptäckts** och i e-postmeddelandet förklaras etikettfelet med en länk till det uppladdade dokumentet och webbplatsen. Det innehåller även en länk till dokumentationen som förklarar hur användare kan ändra känslighetsetiketten. För närvarande kan inte dessa automatiska e-postmeddelanden inaktiveras eller anpassas.
+
+Om du vill förhindra att e-postmeddelandet genereras automatiskt använder du följande PowerShell-kommando från [Set-SPOSite-](/powershell/module/sharepoint-online/set-sposite):
+
+```PowerShell
+Set-SPOTenant -BlockSendLabelMismatchEmail $True
+```
 
 När någon lägger till eller tar bort en känslighetsetikett för en webbplats eller grupp granskas även den här aktiviteten, men utan att automatiskt generera ett e-postmeddelande.
 

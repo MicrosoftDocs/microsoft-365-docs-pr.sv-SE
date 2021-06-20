@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d7625c5a577ff01544a2602092c4ee34875efdb6
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934399"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028505"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Ledande inom branschtester
 
@@ -43,7 +43,7 @@ Grundläggande för MITRE:s testningsmetod är att hantera verkliga attacker fö
 
 - ATT&CK-baserad utvärdering av Microsoft 365 Defender, maj 2020: [Ledande inom verklig identifiering](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 365 Defender täcker så gott som 100 % från alla attacker. Det gav toppklassig synlighet gällande angriparens aktiviteter. Synligheten minskar avsevärt det manuella arbetet för säkerhetsåtgärdscenter och leverantörslösningar som förlitar sig på specifika konfigurationsändringar. Microsoft 365 Defender hade även de minsta luckorna i synlighet, vilket minskade risken för att angripare kunde fortsätta oupptäckta.
+ Microsoft 365 Defender täcker så gott som 100 % från alla attacker. Det gav toppklassig synlighet gällande angriparens aktiviteter. Synligheten minskar avsevärt det manuella arbetet för säkerhetsåtgärdscenter och leverantörslösningar som förlitar sig på specifika konfigurationsändringar. Microsoft 365 Defender hade även de minsta luckorna i synlighet, vilket minskade risken för att angripare kunde fortsätta oupptäckta.
 
 ## <a name="next-generation-protection"></a>Nästa generations skydd
 
