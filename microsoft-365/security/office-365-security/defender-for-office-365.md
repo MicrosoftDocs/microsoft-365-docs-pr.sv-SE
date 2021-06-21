@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender för Office 365 innehåller säkra bifogade filer, säkra länkar, avancerade verktyg för skydd mot nätfiske, rapporteringsverktyg och funktioner för hotinformation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bdb1e16c20b623934bb4fb994fcb8c6ef5f5ff0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 81a45f6839538118c5413c1f5fc09e0cd19903a0
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028479"
+ms.locfileid: "53029879"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender för Office 365
 
@@ -96,9 +96,9 @@ I följande tabell sammanfattas vad som ingår i varje abonnemang.
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Konfigurera principer för Microsoft Defender för Office 365
 
-Med Office 365 ATP kan din organisations säkerhetsteam konfigurera skydd genom att definiera principer i r i Microsoft 365 Defender (gå till <https://security.microsoft.com> \> **E-post och samarbete** \> **Principer och regler**.)
+Med Microsoft Defender för Office 365 kan din organisations säkerhetsteam konfigurera skydd genom att definiera principer i Microsoft 365 Defender-portalen (gå till <https://security.microsoft.com> \> **E-post och samarbete** \> **Principer och regler**).
 
-Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch?v=vivvTmWJ_3c). 
+Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch?v=vivvTmWJ_3c).
 
 > [!TIP]
 > En kort lista över principer som ska definieras finns i [Skydda mot hot](protect-against-threats.md).
@@ -113,11 +113,11 @@ Principerna som definieras för din organisation avgör beteendet och skyddsniv�
 
 - **[Säkra bilagor för SharePoint, OneDrive och Microsoft Teams](mdo-for-spo-odb-and-teams.md)**: skyddar din organisation när användare samarbetar och delar filer genom att identifiera och blockera skadliga filer på gruppwebbplatser och dokumentbibliotek. Mer information finns i [Aktivera Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
-- **[Skydd mot nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: identifierar försök att imitera användare och interna eller anpassade domäner. Det tillämpar maskininlärningsmodeller och avancerade algoritmer för identifiering av personifiering för att avvärja nätfiskeattacker. Mer information finns i [Skydd mot nätfiske i Defender för Office 365](configure-atp-anti-phishing-policies.md).
+- **[Skydd mot nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: identifierar försök att imitera användare och interna eller anpassade domäner. Det tillämpar maskininlärningsmodeller och avancerade algoritmer för identifiering av personifiering för att avvärja nätfiskeattacker. Mer information finns i [Skydd mot nätfiske i Defender för Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Visa rapporter för Microsoft Defender för Office 365 Plan 2
 
-I Microsoft Defender för Office 365 ingår en [instrumentpanel för avancerad rapportering ](view-reports-for-mdo.md)för att övervaka prestandan i Defender för Office 365. Du kan komma åt den via **Rapporter**\>**Instrumentpanel** i Microsoft 365 Defender-portalen.
+I Microsoft Defender för Office 365 ingår [rapporter](view-reports-for-mdo.md)för övervakning av Defender för Office 365. Du kan komma åt rapporterna i Microsoft 365 Defender-portalen på **Rapporter** \> **E-post och samarbete** \> **E-post- och samarbetsrapporter** eller direkt på <https://security.microsoft.com/securityreports>.
 
 Rapporterar uppdateringar i realtid, så att du får de senaste insikterna. I de här rapporterna får du också rekommendationer, och de uppmärksammar dig på kommande hot. I fördefinierade rapporter finns följande:
 
@@ -141,16 +141,19 @@ Microsoft Defender för Office 365-abonnemang 2 inkluderar förstklassiga [verkt
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Behörigheter som krävs för att använda Microsoft Defender för Office 365-funktioner
 
-För att få åtkomst till Microsoft Defender för Office 365-funktioner i Microsoft 365 Defender måste du vara tilldelad en lämplig roll. Följande tabell innehåller några exempel:
+För att få åtkomst till Microsoft Defender för Office 365-funktioner måste du vara tilldelad en lämplig roll. Följande tabell innehåller några exempel:
+
+<br>
+
+****
 
 |Roll eller rollgrupp|Resurser för att få mer information|
 |---|---|
-|Global administratör (detta kan tilldelas i Azure Active Directory eller i Microsoft 365 Defender)|[Om administratörsroller i Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Säkerhetsadministratör (detta kan tilldelas i Azure Active Directory eller i  Microsoft 365 Defender)|[Administratörens rollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Behörigheter i Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)|
-|Organisationshantering för Exchange Online (detta har tilldelats i Exchange Online)|[Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Sök och rensa (det här är bara tilldelat i Microsoft 365 Defender)|[Behörigheter i Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)|
-
-Mer information finns under [Behörigheter i Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+|global administratör (organisationshantering)|Du kan tilldela den här rollen i Azure Active Directory eller i Microsoft 365 Defender-portalen. Mer information finns under [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md).|
+|Säkerhetsadministratör|Du kan tilldela den här rollen i Azure Active Directory eller i Microsoft 365 Defender-portalen. Mer information finns under [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md).|
+|Organisationshantering i Exchange Online|[Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
+|Sök och rensa|Den här rollen är endast tillgänglig på Microsoft 365 Defender-portalen eller Microsoft 365 Efterlevnadscenter. Mer information finns i [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md) och [Behörigheter i Microsoft 365 Efterlevnadscenter](../../compliance/microsoft-365-compliance-center-permissions.md).|
+|||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>Hämta Microsoft Defender för Office 365
 
@@ -177,4 +180,3 @@ Nya funktioner läggs till i Microsoft Defender för Office 365 kontinuerligt. M
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 - [Automatiserad undersökning och svar (AIR) i Microsoft 365 Defender](../defender/m365d-autoir.md)
-

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: d7625c5a577ff01544a2602092c4ee34875efdb6
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 4d49772eb3932ae98840d2be94c447183e94fade
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028505"
+ms.locfileid: "53029627"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Ledande inom branschtester
 
@@ -39,7 +39,7 @@ I Microsoft 365 Defender kombineras funktionerna i [Microsoft Defender för Endp
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE: Demonstrerat verkliga identifieringar, svar och skydd mot avancerade attacker
 
-Grundläggande för MITRE:s testningsmetod är att hantera verkliga attacker för att förstå om lösningarna kan identifiera och svara på dem. Medan testet fokuserar på slutpunktsidentifiering och svar, spänner MITRE:s simulerade APT29-attack över flera attackdomäner, vilket ger möjlighet att skapa bättre möjligheter än bara slutpunktsskydd. Med Microsoft 365 Defender expanderade Microsoft försvarets synlighet utanför slutpunkten.
+Grundläggande för MITRE:s testningsmetod är att emulera verkliga attacker för att förstå om lösningarna kan identifiera och svara på dem. Medan testet fokuserar på slutpunktsidentifiering och svar, spänner MITRE:s simulerade APT29-attack över flera attackdomäner, vilket ger möjlighet att skapa bättre skyddsmöjligheter än bara slutpunktsskydd. Med Microsoft 365 Defender expanderade Microsoft försvarets synlighet bortom slutpunkten.
 
 - ATT&CK-baserad utvärdering av Microsoft 365 Defender, maj 2020: [Ledande inom verklig identifiering](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
@@ -79,7 +79,7 @@ Test för företagssäkerhet består av tre huvudsakliga delar: verkligt skyddst
 
 - Test för företagssäkerhet 2020 (mars–juni): [99,7 % verkligt skydd](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
 
-- Test för företagssäkerhet 2019 (augusti–november): [99,6 % verkligt skydd](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
+- Test för företagssäkerhet 2019 (augusti–november): [99,6 % verkligt skydd](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/)
 
 - Test för företagssäkerhet 2019 (mars–juni): [99,9 % verkligt skydd](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [Analys](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
