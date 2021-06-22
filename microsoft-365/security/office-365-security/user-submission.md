@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan lära sig hur de konfigurerar en postlåda för att samla in skräppost och nätfiske som rapporterats av användare.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a39c6a3b287933ff79f94b00e364d7a45378bd1f
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933089"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052993"
 ---
 # <a name="user-submissions-policy"></a>Princip för användarinskick
 
@@ -42,7 +42,7 @@ I Microsoft 365 organisationer med Exchange Online postlådor kan du ange en pos
 Genom att leverera användarrapporterade meddelanden till en egen postlåda i stället för direkt till Microsoft kan dina administratörer selektivt och manuellt rapportera meddelanden till Microsoft med hjälp av inskickad [administratör.](admin-submission.md)
 
   > [!NOTE]
-  > Om rapportering har [inaktiverats i Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)på webben, åsidosätts den inställningen och användare kan rapportera meddelanden i Outlook på webben igen om de har Outlook in på webben.
+  > Om rapportering har [inaktiverats i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)åsidosätts den inställningen och användarna kan rapportera meddelanden i Outlook på webben här.
 
 ## <a name="custom-mailbox-prerequisites"></a>Anpassade postlådekrav
 
@@ -68,7 +68,7 @@ När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav kan 
 
 - Du måste vara medlem i någon av följande rollgrupper för att kunna ändra konfigurationen för användarinskick:
 
-  - **Organisationshantering** eller **säkerhetsadministratör** i [Microsoft 365 Defender-portalen](permissions-in-the-security-and-compliance-center.md).
+  - **Organisationshantering** eller **säkerhetsadministratör** på [Microsoft 365 Defender portalen.](permissions-in-the-security-and-compliance-center.md)
   - **Organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Du behöver åtkomst till Exchange Online PowerShell. Om kontot som du försöker använda inte har åtkomst till Exchange Online PowerShell får du ett felmeddelande som ser ut så här när du anger postlådan för inskickade inskickningar:
@@ -80,9 +80,9 @@ När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav kan 
   - [Aktivera eller inaktivera åtkomst till Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
   - [Klientåtkomstregler i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Använda Defender Microsoft 365 portalen för att konfigurera postlådan för användarinskick
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Använd Microsoft 365 Defender-portalen för att konfigurera postlådan för användarinskick
 
-1. I Microsoft 365 Defender-portalen går du till Principer & **principer** för hotprinciper för andra. Avsnittet Användare har rapporterat \>  \>  \> **meddelandeinställningar** \> **Användarinskick.**
+1. I Microsoft 365 Defender går du till Principer för **& Principer** för hot andra avsnitt Användare har rapporterat \>  \>  \> **meddelandeinställningar** \> **Användarinskick.**
 
 2. På sidan **Användarinskickade** meddelanden avgörs det du ser av om **knappinställningen för Microsoft-Outlook-rapportmeddelande** är **Av** eller **På:**
 
@@ -107,7 +107,7 @@ När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav kan 
          - **Rapportera aldrig meddelandet**
 
           > [!CAUTION]
-          > Om du har inaktiverat skräppostrapportering i [Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) på webben med postlådeprinciper för Outlook på webben, men har konfigurerat någon av de tidigare inställningarna för att rapportera meddelanden till Microsoft, kommer användare att kunna rapportera meddelanden till Microsoft i Outlook på webben med hjälp av tilläggen Rapportmeddelande eller Rapportfiske.
+          > Om du har inaktiverat skräppostrapportering i [Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) med postlådeprinciper i Outlook på webben, men om du har konfigurerat någon av de tidigare inställningarna för att rapportera meddelanden till Microsoft, kommer användarna att kunna rapportera meddelanden till Microsoft i Outlook på webben med hjälp av tilläggen Rapportmeddelande eller Rapport nätfiske.
 
      - **Avsnittet Användarrapportering**
        - **Före rapporteringsflik:**  I rutorna Rubrik och Meddelandetext anger du den beskrivande text som användarna ser innan de rapporterar ett meddelande med hjälp av tilläggen Rapportmeddelande eller Rapport nätfiske.  Du kan använda variabeln %type% för att inkludera inskickad typ (skräppost, inte skräppost, phish osv.).
@@ -124,7 +124,9 @@ När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav kan 
 
 ## <a name="third-party-reporting-tools"></a>Rapporteringsverktyg från tredje part
 
-Du kan konfigurera rapporteringsverktyg från tredje part så att rapporterade meddelanden skickas till den anpassade postlådan. Det enda kravet är att det ursprungliga meddelandet bifogas som en bifogad fil i meddelandet som skickas till den anpassade postlådan (vidarebefordra inte bara det ursprungliga meddelandet till den anpassade postlådan).
+Du kan konfigurera rapporteringsverktyg från tredje part så att rapporterade meddelanden skickas till den anpassade postlådan. Det gör du genom att ange **knappen Microsoft Outlook-rapportmeddelande**  till Av och ange Min organisations postlåda till en valfri Office 365 postlåda. 
+
+Det enda kravet är att det ursprungliga meddelandet tas med som ett . EML eller . Bifogad MSG-fil (inte komprimerad) i meddelandet som skickas till den anpassade postlådan (vidarebefordra inte bara det ursprungliga meddelandet till den anpassade postlådan).
 
 Formateringskraven för meddelanden beskrivs i nästa avsnitt. Formateringen är valfritt, men om det inte följer det bestämt formatet kommer rapporterna alltid att skickas som phish.
 

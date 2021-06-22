@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 87fb5c62b520168a686cc0b95a321becdd4656ba
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022876"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052969"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exportera bedömningar av säkerhetsproblem för programvara per enhet
 
@@ -41,16 +41,16 @@ Det finns olika API-anrop för att få olika typer av data. Eftersom mängden da
 
 1. [Exportera säkerhetsproblem för programvara, **bedömning JSON-svar**](#1-export-software-vulnerabilities-assessment-json-response)  API:t hämtar alla data i organisationen som Json-svar. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
 
-2. [Exportera utvärdering av säkerhetsproblem för programvara **via filer**](#2-export-software-vulnerabilities-assessment-via-files) Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Via-filer rekommenderas för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure-lagring. Med det här API:t kan du ladda ned alla dina data Azure-lagring enligt följande:
+2. [Exportera utvärdering av säkerhetsproblem för programvara **via filer**](#2-export-software-vulnerabilities-assessment-via-files) Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Via-filer rekommenderas för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med det här API:t kan du ladda ned alla dina data Azure Storage enligt följande:
 
    - Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata.
 
    - Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
 
 3. [Delta i export av säkerhetsproblem vid **bedömning av JSON-svar**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Returnerar en tabell med en post för varje unik kombination av: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId och EventTimestamp.
-API:t hämtar data i organisationen som Json-svar. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat. <br><br> Till skillnad från den fullständiga utvärderingen av säkerhetsproblem för programvara (JSON-svar) – som används för att erhålla en hel ögonblicksbild av svagheter i programvarans bedömning av organisationen efter enhet – används deltaexport-OData API-anropet för att bara hämta de ändringar som har inträffat mellan ett valt datum och dagens datum (delta-API-anropet). I stället för att få en fullständig export med en stor mängd data varje gång får du bara specifik information om nya, korrigerade och uppdaterade svagheter. Deltaexportera JSON-svars-API-anrop kan också användas för att beräkna olika KPI:er, till exempel "hur många säkerhetsproblem har åtgärdats?" eller "hur många nya säkerhetsproblem lades till i organisationen?" <br><br> Eftersom deltaexporten av JSON-svars-API:t för svagheter i programvaran returnerar data endast för ett måldatumintervall anses det inte vara _en fullständig export._
+API:t hämtar data i organisationen som Json-svar. Svaret är paginerat, så du kan använda fältet @odata.nextLink från svaret för att hämta nästa resultat. <br><br> Till skillnad från den fullständiga utvärderingen av säkerhetsproblem för programvara (JSON-svar) – som används för att erhålla en hel ögonblicksbild av säkerhetsproblem i programvarans bedömning av organisationen per enhet – används deltaexport-API-anropet för att bara hämta de ändringar som har inträffat mellan ett valt datum och dagens datum (delta-API-anropet). I stället för att få en fullständig export med en stor mängd data varje gång får du bara specifik information om nya, korrigerade och uppdaterade svagheter. Deltaexportera JSON-svars-API-anrop kan också användas för att beräkna olika KPI:er, till exempel "hur många säkerhetsproblem har åtgärdats?" eller "hur många nya säkerhetsproblem lades till i organisationen?" <br><br> Eftersom deltaexporten av JSON-svars-API:t för svagheter i programvaran returnerar data endast för ett måldatumintervall anses det inte vara _en fullständig export._
 
-Data som samlas in (med hjälp av _antingen OData_ eller _via_ filer) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
+Data som samlas in (med hjälp av _Antingen Json-svar_ eller _via_ filer) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
 
 > [!Note]
 >
@@ -377,7 +377,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### <a name="35-properties"></a>3.5 Egenskaper
 
-Varje returnerad post innehåller alla data från säkerhetsproblem i exportprogramvaran som bedöms av enhets-OData API plus ytterligare två fält:  _**EventTimestamp**_ och _**Status**_.
+Varje returnerad post innehåller alla data från säkerhetsproblem i exportprogramvaran som bedömer efter enhets-API, plus ytterligare två fält: _**EventTimestamp**_ och _**Status.**_
 
 >[!NOTE]
 >- Vissa ytterligare kolumner kan returneras i svaret. Kolumnerna är tillfälliga och kan komma att tas bort, så använd bara de dokumenterade kolumnerna.

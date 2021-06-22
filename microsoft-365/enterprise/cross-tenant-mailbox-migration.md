@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f9a4b7679a33d6722336ee5412e4992389ba915f
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 40ec3887cd37ddb412df3ae78300c1f9e9c60ecc
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694419"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053053"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Postlådemigrering mellan klientorganisationen (förhandsversion)
 
@@ -53,7 +53,7 @@ Dessutom krävs e-postaktiverade säkerhetsgrupper i källklientorganisationen i
 
 Du måste också kommunicera med ditt betrodda partnerföretag (som du kommer att flytta postlådor med) för att få deras Microsoft 365 klientorganisations-ID. Detta klient-ID används i fältet `DomainName` Organisationsrelation.
 
-Om du vill ha klientorganisations-ID för en prenumeration loggar du in Microsoft 365 administrationscentret och går till [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Klicka på kopieringsikonen för egenskapen Klientorganisations-ID för att kopiera den till Urklipp.
+Om du vill ha klient-ID för en prenumeration loggar du in på Administrationscenter för Microsoft 365 går till [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) . Klicka på kopieringsikonen för egenskapen Klientorganisations-ID för att kopiera den till Urklipp.
 
 Så här fungerar processen.
 
@@ -122,6 +122,7 @@ Förbereda källklientorganisationen:
 6. Skriptet pausas och du uppmanas att acceptera eller godkänna Exchange postlådemigreringsprogrammet som skapades under den här processen. Här är ett exempel.
 
     ```powershell
+    PS C:\PowerShell\> # Note: the below User.Invite.All permission is optional, and will only be used to retrieve access token to send invitation email to source tenant
     PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureResourceLocation "Brazil Southeast" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
 
     cmdlet Get-Credential at command pipeline position 1
@@ -134,7 +135,7 @@ Förbereda källklientorganisationen:
     Pay-As-You-Go (ewe23423-a3327-34232-343... Admin@fabrikam... Pay-As-You-Go                           AzureCloud                              dsad938432-dd8e-s9034-bf9a-83984293n43
     Auditing setup successfully for Cross-TenantMovesVault
     Exchange application given access to KeyVault Cross-TenantMovesVault
-    Application fabrikam_Friends_contoso_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - Directory.ReadWrite.All. Exchange - Mailbox.Migration
+    Application fabrikam_Friends_contoso_2520 created successfully in fabrikam.onmicrosoft.com tenant with following permissions. MSGraph - User.Invite.All. Exchange - Mailbox.Migration
     Admin consent URI for fabrikam.onmicrosoft.com tenant admin is -
     https://login.microsoftonline.com/fabrikam.onmicrosoft.com/adminconsent?client_id=6fea6ere-0dwe-404d-ad35-c71a15cers5c&redirect_uri=https://office.com
     Admin consent URI for contoso.onmicrosoft.com tenant admin is -
@@ -175,7 +176,7 @@ Konfigurationen av måladministratören är nu klar!
    > [!NOTE]
    > Om du inte får det här e-postmeddelandet eller inte hittar det har målklientorganisationens administratör fått en direkt-URL som du kan få för att acceptera inbjudan. URL-adressen ska i transkriptionen av målklientorganisationens administratörs Fjärr-PowerShell-session.
 
-3. Skapa en eller flera e-postaktiverade säkerhetsgrupper i administrationscentret för Microsoft 365 eller i en fjärrsession för att styra listan över postlådor som målklientorganisationen kan hämta (flytta) från källklientorganisationen till målklientorganisationen. Du behöver inte fylla i den här gruppen i förväg, men du måste ha minst en grupp för att kunna köra konfigurationsstegen (skript). Kapslade grupper stöds inte. 
+3. Skapa en eller flera e-postaktiverade säkerhetsgrupper i Administrationscenter för Microsoft 365- eller en Fjärr-PowerShell-session för att styra listan över postlådor som tillåts av målklientorganisationen att hämta (flytta) från källklientorganisationen till målklientorganisationen. Du behöver inte fylla i den här gruppen i förväg, men du måste ha minst en grupp för att kunna köra konfigurationsstegen (skript). Kapslade grupper stöds inte. 
 
 4. Ladda ned SetupCrossTenantRelationshipForResourceTenant.ps1 för källklientorganisationens konfiguration från lagringsplatsen GitHub här: [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) . 
 
@@ -716,7 +717,7 @@ Kom ihåg att den här funktionen är i förhandsversion och SLA och alla tillä
    | Informationsbarriärer                              |
    | Informationsskydd för Office 365 – Premium   |
    | Informationsskydd för Office 365 – Standard  |
-   | Insights från MyAnalytics                           |
+   | Insights av MyAnalytics                           |
    | Microsoft 365 Avancerad granskning                   |
    | Microsoft Bookings                                |
    | Microsoft Business Center                         |

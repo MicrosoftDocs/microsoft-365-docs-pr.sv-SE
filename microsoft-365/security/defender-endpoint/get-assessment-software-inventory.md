@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 639f850119498222684c4b3804b32a29dda3eac4
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 6a0bc142d8fa353e7e5910b0a5eba4842cd7ff50
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022888"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053173"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportera utvärdering av programvaruinventering per enhet
 
@@ -39,13 +39,13 @@ Det finns olika API-anrop för att få olika typer av data. Eftersom mängden da
 
 - [Exportera JSON-svar för **lagerutvärdering för programvara**](#1-export-software-inventory-assessment-json-response) API:t hämtar alla data i organisationen som Json-svar. Den här metoden är bäst _för små organisationer med mindre än 100 K-enheter._ Svaret är paginerat, så du kan använda \@ odata.nextLink-fältet från svaret för att hämta nästa resultat.
 
-- [Exportera utvärdering av programvaruinventering **via filer**](#2-export-software-inventory-assessment-via-files)  Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure-lagring. Med det här API:t kan du ladda ned alla dina data Azure-lagring enligt följande:
+- [Exportera utvärdering av programvaruinventering **via filer**](#2-export-software-inventory-assessment-via-files)  Med den här API-lösningen kan du hämta stora mängder data snabbare och mer tillförlitligt. Därför rekommenderas det för stora organisationer med fler än 100 K-enheter. Detta API hämtar alla data i organisationen som nedladdningsfiler. Svaret innehåller URL:er för att ladda ned alla data från Azure Storage. Med det här API:t kan du ladda ned alla dina data Azure Storage enligt följande:
 
   - Anropa API:t för att få en lista med hämtningsadresser med alla dina organisationsdata.
 
   - Ladda ned alla filer med hjälp av URL:er för nedladdning och bearbeta dina data som du vill.
 
-Data som samlas in (med hjälp av _antingen OData_ eller _via_ filer) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
+Data som samlas in (med hjälp av _Antingen Json-svar_ eller _via_ filer) är den aktuella ögonblicksbilden av den aktuella statusen, och innehåller inte historiska data. För att kunna samla in historiska data måste kunderna spara data i sina egna datalagringar.
 
 > [!Note]
 >

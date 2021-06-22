@@ -2,7 +2,7 @@
 title: Microsoft 365 Defender
 summary: Läs mer om robusta säkerhetslösningar i Microsoft 365 Defender så att du bättre kan skydda ditt företag över attackytor.
 metadata:
-  title: Microsoft 365 Defender-dokumentation
+  title: Microsoft 365 Defender dokumentation
   description: Läs mer om robusta säkerhetslösningar i Microsoft 365 Defender så att du bättre kan skydda ditt företag över attackytor.
   services: office-365-security-compliance
   ms.service: O365-seccomp
@@ -13,19 +13,21 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 68909caf8844b5ea4d20029a04d1b7d81ca25e66
-  ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+  ms.openlocfilehash: d4fa7ecef5bb132ca23084b5f46af230a3d181aa
+  ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 06/10/2021
-  ms.locfileid: "52878454"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53053137"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
   - linkListType: overview
     links:
     - text: Vad är Microsoft 365 Defender?
-      url: ../defender/microsoft-365-defender.md
+      url: microsoft-365-defender.md
+    - text: Översikt över Microsoft 365 Defender
+      url: overview-security-center.md
   - linkListType: whats-new
     links:
     - text: Vad är nytt Microsoft 365 Defender
@@ -72,7 +74,7 @@ landingContent:
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
     - text: Defender för Office 365 i Microsoft 365 Defender
       url: microsoft-365-security-center-mdo.md
-    - text: Omdirigerar Defender för Office 365 i Microsoft 365 Defender
+    - text: Omdirigera Defender för Office 365 i Microsoft 365 Defender
       url: microsoft-365-security-mdo-redirection.md
 - title: Microsoft Defender för Endpoint
   linkLists:
@@ -80,20 +82,10 @@ landingContent:
     links:
     - text: Vad är Microsoft Defender för Endpoint?
       url: ../defender-endpoint/microsoft-defender-endpoint.md
-    - text: Defender för slutpunkt i Microsoft 365 Defender
+    - text: Defender för Endpoint i Microsoft 365 Defender
       url: microsoft-365-security-center-mde.md
-    - text: Omdirigerar Defender för slutpunkt i Microsoft 365 Defender
+    - text: Omdirigera Defender för Slutpunkt i Microsoft 365 Defender
       url: ../defender/microsoft-365-security-mde-redirection.md
-- title: Microsoft 365 Säkerhetscenter
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Översikt över Microsoft 365 säkerhetscenter
-      url: overview-security-center.md
-    - text: Microsoft Defender för Slutpunkt i Microsoft 365 säkerhetscenter
-      url: microsoft-365-security-center-mde.md
-    - text: Microsoft Defender för Office 365 i Microsoft 365 Säkerhetscenter
-      url: ../defender/microsoft-365-security-center-mdo.md
 - title: Microsoft Cloud App Security
   linkLists:
   - linkListType: overview
@@ -108,7 +100,7 @@ landingContent:
     links:
     - text: Undersöka incidenter
       url: investigate-incidents.md
-    - text: Spåra och svara på nya hot
+    - text: Följ upp och svara på nya hot
       url: threat-analytics.md
     - text: Automatiska undersökningar och svar
       url: m365d-autoir.md
@@ -118,5 +110,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Microsoft 365 Defender-API:er (förhandsversion)
+    - text: Microsoft 365 Defender API:er (förhandsversion)
       url: api-overview.md

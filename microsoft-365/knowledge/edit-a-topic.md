@@ -1,8 +1,7 @@
 ---
-title: 'Redigera ett befintligt ämne i Microsoft Viva-ämnen '
-description: Så här redigerar du ett befintligt ämne i Microsoft Viva-ämnen.
-author: efrene
-ms.author: efrene
+title: Redigera ett befintligt ämne i Microsoft Viva-ämnen
+author: chuckedmonson
+ms.author: chucked
 manager: pamgreen
 audience: admin
 ms.reviewer: cjtan
@@ -14,12 +13,13 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 23c870826261a85aee23af82bb177825f55f4eb2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+description: Lär dig hur du redigerar ett befintligt ämne i Microsoft Viva-ämnen.
+ms.openlocfilehash: 6e1f85737298736a3aafcb30cfe103c28654d1c1
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165399"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053219"
 ---
 # <a name="edit-an-existing-topic-in-microsoft-viva-topics"></a>Redigera ett befintligt ämne i Microsoft Viva-ämnen 
 
@@ -32,104 +32,122 @@ ms.locfileid: "51165399"
 Du kan redigera ett befintligt ämne i Viva-ämnen. Du kan behöva göra det här om du vill korrigera eller lägga till ytterligare information på en befintlig ämnessida. 
 
 > [!Note] 
-> Observera att informationen om avsnittet och [](topic-experiences-security-trimming.md)personinformationen som du lägger till manuellt när du redigerar ett befintligt ämne är synlig för alla användare som har behörighet att visa avsnitt medan information i ett ämne som har samlats av AI är säkerhets trimad. 
+> När information i ett ämne som [](topic-experiences-security-trimming.md)har samlats av AI är säkerhets trimad är ämnesbeskrivningen och personinformationen som du lägger till manuellt när du redigerar ett befintligt ämne synlig för alla användare som har behörighet att visa ämnen. 
 
 ## <a name="requirements"></a>Krav
 
 Om du vill redigera ett befintligt ämne måste du:
 - Ha en Viva Topics-licens.
-- Har behörighet att [**Vem kan skapa eller redigera ämnen**](./topic-experiences-user-permissions.md). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Har behörighet att [skapa eller redigera ämnen](./topic-experiences-user-permissions.md). Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
 
 > [!Note] 
-> Användare som har behörighet att hantera ämnen i Ämnescenter (knowledge managers) har redan behörighet att skapa och redigera ämnen.
+> Användare som har behörighet att hantera ämnen i ämnescentret (knowledge managers) har redan behörighet att skapa och redigera ämnen.
 
 ## <a name="how-to-edit-a-topic-page"></a>Redigera en ämnessida
 
-Användare som har **Vem** kan skapa eller redigera ämnesbehörighet kan redigera ett ämne genom att <b></b> öppna ämnessidan från en ämnesstrykning och sedan välja knappen Redigera längst upp till höger på ämnessidan. Ämnessidan kan också öppnas från startsidan för ämnescentret där du hittar alla ämnen som du har en anslutning till.
+Användare som har *Vem* kan skapa eller redigera ämnesbehörighet kan redigera ett ämne genom att  öppna ämnessidan från en ämnesstrykning och sedan välja knappen Redigera längst upp till höger på ämnessidan. Ämnessidan kan också öppnas från startsidan för ämnescentret där du hittar alla ämnen som du har en anslutning till.
 
-   ![Knappen Redigera](../media/knowledge-management/edit-button.png) </br> 
+   ![Skärmbild som visar knappen Redigera.](../media/knowledge-management/edit-button.png) </br> 
 
-Knowledge managers can also edit topics directly from the Manage Topics page by selecting the topic, and then <b>selecting Edit</b> in the toolbar.
+Knowledge managers can also edit topics directly from **the Manage topics** page by selecting the topic, and then selecting **Edit** in the toolbar.
 
-   ![Redigera ämne i Hantera ämnen](../media/knowledge-management/manage-topics-edit.png) </br> 
+   ![Skärmbild som visar Redigera ämne på sidan Hantera ämnen.](../media/knowledge-management/manage-topics-edit.png)
 
 ### <a name="to-edit-a-topic-page"></a>Redigera en ämnessida
 
 1. På ämnessidan väljer du **Redigera**. På så sätt kan du göra ändringar efter behov på ämnessidan.
 
-   ![Redigeringskontroll](../media/knowledge-management/topic-page-edit.png) </br>  
+   ![Skärmbild som visar knappen Redigera på ämnessidan.](../media/knowledge-management/topic-page-edit.png)  
 
 
-2. I <b>avsnittet Alternativa namn</b> skriver du alla andra namn som ämnet kan hänvisas till. 
+2. I avsnittet **Alternativa namn** skriver du andra namn som ämnet kan hänvisas till. 
 
-    ![Alternativa namn](../media/knowledge-management/alt-names.png) </br> 
-3. Skriv <b>ett</b> par meningar som beskriver ämnet i avsnittet Beskrivning. Om det redan finns en beskrivning uppdaterar du den om det behövs.
+    ![Skärmbild som visar avsnittet Alternativa namn.](../media/knowledge-management/alt-names.png)
 
-    ![Avsnittet Beskrivning](../media/knowledge-management/description.png)</br>
+3. Skriv **ett** par meningar som beskriver ämnet i avsnittet Beskrivning. Om det redan finns en beskrivning uppdaterar du den om det behövs.
 
-4. I avsnittet <b>Fästa personer kan</b> du fästa en person så att de ser att de har en anslutning till ämnet (till exempel en ägare till en ansluten resurs). Börja med att skriva in <b></b> användarens namn eller e-postadress i rutan Lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan även "ta bort" dem genom att välja <b>ikonen Ta bort från</b> listan på användarkortet.
+    ![Skärmbild som visar avsnittet Beskrivning.](../media/knowledge-management/description.png)</br>
+
+4. I avsnittet **Fästa personer kan** du fästa en person så att de ser att de har en anslutning till ämnet (till exempel en ägare till en ansluten resurs). Börja med att skriva in  användarens namn eller e-postadress i rutan Lägg till en ny användare och välj sedan den användare du vill lägga till i sökresultatet. Du kan även "ta bort" dem genom att välja **ikonen Ta bort från** listan på användarkortet.
  
-    ![Lägga till fästa personer](../media/knowledge-management/pinned-people.png)</br>
+    ![Skärmbild som visar avsnittet Lägg till fästa personer.](../media/knowledge-management/pinned-people.png)</br>
 
-    I <b>avsnittet Föreslagna personer</b> visas användare som AI tror kan vara anslutna till ämnet från deras anslutning till resurser om ämnet. Du kan ändra deras status från Föreslagen till Fäst genom att klicka på fästikonen på användarkortet.
+    I **avsnittet Föreslagna personer** visas användare som AI tror kan vara anslutna till ämnet från deras anslutning till resurser om ämnet. Du kan ändra deras status från Föreslagen till Fäst genom att klicka på fästikonen på användarkortet.
 
-   ![Fästa föreslagna personer](../media/knowledge-management/suggested-people.png)</br>
+   ![Skärmbild som visar hur du fäster föreslagna personer.](../media/knowledge-management/suggested-people.png)
 
-5. I avsnittet <b>Fästa filer och sidor kan</b> du lägga till eller "fästa" en fil SharePoint en webbplatssida som är kopplad till avsnittet.
+5. I avsnittet **Fästa filer och sidor kan** du lägga till eller "fästa" en fil SharePoint en webbplatssida som är kopplad till avsnittet.
 
-   ![Avsnittet Fästa filer och sidor](../media/knowledge-management/pinned-files-and-pages.png)</br>
+   ![Skärmbild som visar avsnittet Fästa filer och sidor.](../media/knowledge-management/pinned-files-and-pages.png)
  
-    Om du vill lägga till en ny fil väljer du Lägg till <b>,</b>SharePoint webbplats från ofta besökta eller följda webbplatser och väljer sedan filen från webbplatsens dokumentbibliotek.
+    Om du vill lägga till en ny fil väljer du Lägg till **,** SharePoint webbplats från ofta besökta eller följda webbplatser och väljer sedan filen från webbplatsens dokumentbibliotek.
 
-    Du kan också använda alternativet <b>Från en länk för</b> att lägga till en fil eller sida genom att ange URL-adressen. 
+    Du kan också använda alternativet **Från en länk för** att lägga till en fil eller sida genom att ange URL-adressen. 
 
    > [!Note] 
    > Filer och sidor som du lägger till måste finnas inom samma Microsoft 365 klientorganisation. Om du vill lägga till en länk till en extern resurs i ämnet kan du lägga till den via ikonen för arbetsytan i steg 9.
 
-6. I <b>avsnittet Föreslagna filer och sidor</b> visas filer och sidor som AI föreslår för att associeras till ämnet.
+6. I **avsnittet Föreslagna filer och sidor** visas filer och sidor som AI föreslår för att associeras till ämnet.
 
-   ![Avsnittet Föreslagna filer och sidor](../media/knowledge-management/suggested-files-and-pages.png)</br>
+   ![Skärmbild som visar avsnittet Föreslagna filer och sidor.](../media/knowledge-management/suggested-files-and-pages.png)
 
     Du kan ändra en föreslagen fil eller sida till en fäst fil eller sida genom att välja ikonen fäst.
 
-7.  I <b>avsnittet Relaterade</b> webbplatser visas webbplatser som har information om ämnet. 
+7.  I avsnittet **Fästa webbplatser** kan du lägga till eller "fästa" en webbplats som är kopplad till avsnittet. 
 
-    ![Avsnittet Relaterade webbplatser](../media/knowledge-management/related-sites.png)</br>
+    ![Skärmbild som visar avsnittet Fästa webbplatser.](../media/knowledge-management/pinned-sites-section.png)
 
-    Du kan lägga till <b></b> en relaterad webbplats genom att välja Lägg till och sedan söka efter webbplatsen eller välja den i listan med vanliga eller senaste webbplatser.</br>
+    Om du vill lägga till en ny webbplats **väljer** du Lägg till och söker sedan efter webbplatsen eller väljer den i listan vanliga eller senaste webbplatser.
     
-    ![Välj en webbplats](../media/knowledge-management/sites.png)</br>
+    ![Skärmbild som visar avsnittet Lägg till eller ta bort en fäst webbplats.](../media/knowledge-management/add-or-remove-pinned-sites.png)
 
-8. I <b>avsnittet Närliggande</b> information visas kopplingar mellan olika ämnen. Du kan lägga till en anslutning till ett annat ämne genom att välja <b>knappen Anslut</b> för ett relaterat ämne, skriva namnet på det relaterade ämnet och välja det i sökresultatet. 
+8. I **avsnittet föreslagna webbplatser** visas de webbplatser som AI föreslår för att associeras till ämnet. 
 
-   ![Avsnittet Närliggande ämnen](../media/knowledge-management/related-topic.png)</br>  
+   ![Skärmbild av avsnittet föreslagna webbplatser](../media/knowledge-management/suggested-sites-section.png)  
 
-    Du kan sedan ge en beskrivning av hur ämnena är relaterade och välja <b>Uppdatera</b>.</br>
+    Du kan ändra en föreslagen webbplats till en fäst webbplats genom att välja ikonen fäst.
 
-   ![Beskrivning av relaterade ämnen](../media/knowledge-management/related-topics-update.png)</br> 
 
-   Det relaterade ämnet du har lagt till visas som ett anslutet ämne.
+<!---
 
-   ![Närliggande ämnen kopplade](../media/knowledge-management/related-topics-final.png)</br> 
+7.  The <b>Related sites</b> section shows sites that have information about the topic. 
 
-   Om du vill ta bort ett relaterat ämne markerar du det ämne du vill ta bort och väljer sedan <b>ikonen Ta bort</b> ämne.</br>
+    ![Related sites section](../media/knowledge-management/related-sites.png)</br>
+
+    You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</br>
+    
+    ![Select a site](../media/knowledge-management/sites.png)</br>
+
+8. The <b>Related topics</b> section shows connections that exists between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
+
+   ![Related topics section](../media/knowledge-management/related-topic.png)</br>  
+
+    You can then give a description of how the topics are related, and select <b>Update</b>.</br>
+
+   ![Related topics description](../media/knowledge-management/related-topics-update.png)</br> 
+
+   The related topic you added will display as a connected topic.
+
+   ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
+
+   To remove a related topic, select the topic you want to remove, then select the <b>Remove topic</b> icon.</br>
  
-   ![Ta bort relaterade ämnen](../media/knowledge-management/remove-related.png)</br>  
+   ![Remove related topic](../media/knowledge-management/remove-related.png)</br>  
 
-   Välj sedan Ta <b>bort</b>.</br>
+   Then select <b>Remove</b>.</br>
 
-   ![Bekräfta borttagning](../media/knowledge-management/remove-related-confirm.png)</br> 
+   ![Confirm remove](../media/knowledge-management/remove-related-confirm.png)</br> 
 
+--->
 
 9. Du kan också lägga till statiska objekt på sidan, t.ex. text, bilder eller länkar, genom att välja ikonen för arbetsytan, som du hittar under den korta beskrivningen. Om du markerar den SharePoint verktygslådan där du kan välja objektet du vill lägga till på sidan.
 
-   ![Canvas-ikon](../media/knowledge-management/webpart-library.png)</br> 
+   ![Skärmbild som visar ikonen Arbetsyta.](../media/knowledge-management/webpart-library.png)
 
 
 10. Välj **Publicera** eller **Publicera på nytt** för att spara ändringarna. **Publicera på** nytt är ett tillgängligt alternativ om ämnet har publicerats tidigare.
 
 
-## <a name="see-also"></a>Se även
 
 
 

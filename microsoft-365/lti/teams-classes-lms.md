@@ -12,20 +12,20 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: Integrera Microsoft Teams kurser i ditt System för utbildningshantering
-ms.openlocfilehash: 287b9f1cadfdcf3adafdca91f4a351865bbcf3bc
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+description: Integrera Microsoft Teams klasser i ditt Learning Management System
+ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821277"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053257"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard"></a>Använda Microsoft Teams-klasser med Blackboard
 
 > [!IMPORTANT]
 > En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
-Microsoft Teams är en LTI-app (Learning Tools Interoperability) som hjälper lärare och elever att enkelt navigera mellan sina LMS (Learning Management System) och Teams. Användare kan komma åt sina klassteam som är kopplade till kursen direkt från LMS.
+Microsoft Teams är en LTI Learning-app (Tools Interoperability) som hjälper lärare och elever att enkelt navigera mellan sina LMS (Learning Management System) och Teams. Användare kan komma åt sina klassteam som är kopplade till kursen direkt från LMS.
 
 ## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>Godkänna appen i Microsoft Azure klientorganisationen
 
@@ -37,7 +37,7 @@ Innan du hanterar integreringen i Blackboard Learn Ultra måste Microsoft Office
 
 2. Omdirigera slutpunkten för administratörsmedgivande för Microsoft-identitetsplattformen enligt följande exempel:
 
-   `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
+   `https://login.microsoftonline.com/{tenant}/adminconsent?client_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
    > [!NOTE]
    > Ersätt {tenant} med din organisations Microsoft-klientorganisations-ID.

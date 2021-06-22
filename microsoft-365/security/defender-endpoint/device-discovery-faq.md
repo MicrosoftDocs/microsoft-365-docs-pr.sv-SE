@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b2c0b986ef6dbb54cd34e9b4413711cd3e5f9c6d
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245966"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053161"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Vanliga frågor och svar om enhetsidentifiering
 
@@ -65,7 +65,7 @@ Ja, du kan använda filter som utesluter ohanterade enheter från listan över e
  Som standard samlar alla onboarded-enheter som körs på Windows 10 version 1809 eller senare in och analyserar följande protokoll: ARP, CDP,HCPv6, IP (rubriker), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (rubriker), UDP (rubriker), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Vilka protokoll använder du för aktiv sannolikhet vid standardidentifiering?
- När en enhet är konfigurerad för att köra standardidentifiering, används sannolikhet för exponerade tjänster med hjälp av följande protokoll: ARP, FTP, HTTP, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL
+ När en enhet är konfigurerad för att köra standardidentifiering används sannolikhets för exponerade tjänster med hjälp av följande protokoll: ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, WM, AFP, SiponCIP, IphoneSync
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>Hur kan jag utesluta mål från att få reda på standardidentifiering?
  Om det finns enheter i nätverket som inte bör sökas aktivt kan du också definiera en lista över undantag för att förhindra att de genomsöks. Konfigurationen är tillgänglig på sidan inställningar för enhetsidentifiering.
@@ -91,4 +91,5 @@ Du kan märka skillnader mellan antalet listade enheter under "kan introduceras"
 ## <a name="can-i-onboard-unmanaged-devices-that-were-found"></a>Kan jag registrera ohanterade enheter som hittades?
  Ja. Ohanterade slutpunkter i nätverket innebär svagheter och risker för nätverket. Att registrera dem i tjänsten kan öka säkerheten för dem. 
 
-
+## <a name="ive-noticed-that-unmanaged-device-health-state-is-always-active-why-is-that"></a>Jag har lagt märke till att ohanterad enhetshälsa alltid är "aktiv", varför är det?
+Tillfälligt, ohanterad enhetshälsa blir "Aktiv" under standardlagringsperioden för enhetsinventeringen, oavsett deras faktiska status.
