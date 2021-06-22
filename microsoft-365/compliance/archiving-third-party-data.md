@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du importerar data från tredje part från plattformar för sociala medier, snabbmeddelandeplattformar och dokumentsamarbete till Microsoft 365 postlådor.
-ms.openlocfilehash: a51b298b934431a1be8a416dac1f831ddaca5ffe
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861209"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054772"
 ---
 # <a name="archive-third-party-data"></a>Arkivera data från tredje part
 
@@ -35,7 +35,7 @@ Microsoft 365 kan administratörer använda datakopplingar för att importera oc
 
 ## <a name="third-party-data-connectors"></a>Datakopplingar för tredje part
 
-I följande tabell visas de datakopplingar från tredje part som är tillgängliga Microsoft 365 kompatibilitetscentret. Tabellen sammanfattar även de efterlevnadslösningar som du kan använda på data från tredje part efter att du importerat och arkiverat dem i Microsoft 365. I nästa [avsnitt finns](#overview-of-compliance-solutions-that-support-third-party-data) en mer detaljerad beskrivning av varje efterlevnadslösning och hur den kan vara till nytta för data från tredje part.
+I följande tabell visas de datakopplingar från tredje part som är tillgängliga i Microsoft 365 Efterlevnadscenter. Tabellen sammanfattar även de efterlevnadslösningar som du kan använda på data från tredje part efter att du importerat och arkiverat dem i Microsoft 365. I nästa [avsnitt finns](#overview-of-compliance-solutions-that-support-third-party-data) en mer detaljerad beskrivning av varje efterlevnadslösning och hur den kan vara till nytta för data från tredje part.
 
 > [!TIP]
 > Klicka på länken i **kolumnen med data från** tredje part om du vill ha stegvisa anvisningar för hur du skapar en koppling för den datatypen.
@@ -69,8 +69,11 @@ I följande tabell visas de datakopplingar från tredje part som är tillgängli
 |[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Salesforce Chatter <sup>2</sup>](archive-salesforcechatter-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
 |[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
+|[Signal <sup>1</sup>](archive-signal-archiver-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Skype för företag <sup>2</sup>](archive-skypeforbusiness-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Slack eDiscovery <sup>2</sup>](archive-slack-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Hann <sup>2</sup>](archive-symphony-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Hansson <sup>1</sup>](archive-telegram-archiver-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[TELUS Network <sup>1</sup>](archive-telus-network-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Textavgränsad <sup>2</sup>](archive-text-delimited-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||

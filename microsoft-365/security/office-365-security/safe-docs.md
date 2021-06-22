@@ -16,12 +16,12 @@ ms.collection:
 description: Läs mer Valv dokument i Microsoft 365 E5 eller Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1186c7856d0b979c483cf6dd1c0a010ab582e2ce
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 1049543b11ad14eeeed596367228f025cc8edd65
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644758"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054438"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Säkra dokument i Microsoft 365 E5
 
@@ -38,11 +38,11 @@ Valv Dokument är en funktion i Microsoft 365 E5 eller Microsoft 365 E5 Security
 
 - Valv Dokument stöds i Microsoft 365-appar för företag (tidigare kallad Office 365 ProPlus) version 2004 eller senare.
 
-- Öppna Säkerhets- och efterlevnadscentret på <https://protection.office.com>. Gå direkt till **ATP-sidan Valv bifogade filer** genom att öppna <https://protection.office.com/safeattachmentv2> .
+- Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com>. Om du vill gå direkt **Valv bifogade filer** använder du <https://security.microsoft.com/safeattachmentv2> .
 
-- Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Du måste ha tilldelats behörigheter i **Exchange Online** innan du kan genomföra procedurerna i den här artikeln:
+- Du behöver behörighet **Exchange Online** innan du kan göra procedurerna i den här artikeln:
   - Om du Valv för dokumentinställningar måste du vara medlem i **rollgrupperna Organisationshantering** **eller Säkerhetsadministratör.**
   - För skrivskyddade åtkomst Valv i dokumentinställningarna måste du vara medlem i rollgrupperna **Global Reader** **eller Säkerhetsläsare.**
 
@@ -60,19 +60,19 @@ Om du vill skydda dig Valv Dokument filer till [Microsoft Defender för Endpoint
 
 Filer som Valv sparas inte i Defender utöver den tid som krävs för analys (normalt mindre än 24 timmar).
 
-## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>Använd Säkerhets- och & för att konfigurera Valv dokument
+## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>Använda Microsoft 365 Defender för att konfigurera Valv dokument
 
-1. I Säkerhets- & säkerhets- och  efterlevnadscenter går du till ATP för hothanteringspolicy Valv bifogade filer \>  \> och klickar sedan **på Globala inställningar.**
+1. Öppna portalen Microsoft 365 Defender och gå till Principer för **&-& e-&** principer för hotprinciper \>  \>  \>  Valv \> **bifogade filer.**
 
-2. I den **globala inställningsfällan** som visas konfigurerar du följande inställningar:
+2. På sidan **Valv bifogade** filer klickar du på **Globala inställningar.**
 
+3. I den **globala inställningsfällan** som visas konfigurerar du följande inställningar:
    - **Aktivera Valv dokument för Office**: Flytta reglaget åt höger för att aktivera funktionen: Aktivera ![ ](../../media/scc-toggle-on.png) .
-
-   - Tillåt att andra klickar i Skyddad vy även om Valv-dokument identifierar filen som skadlig: Vi rekommenderar att du låter det här alternativet vara inaktiverat (låt **växlingsknappen** vara till vänster: inaktivera ![ ](../../media/scc-toggle-off.png) ).
+   - **Tillåt att** andra klickar i Skyddad vy även om Valv-dokument identifierat filen som skadlig: Vi rekommenderar att du lämnar det här alternativet inaktiverat (låt växlingsknappen vara till vänster: inaktivera ![ ](../../media/scc-toggle-off.png) ).
 
    Klicka på **Spara** när du är klar.
 
-   ![Valv Dokumentinställningarna när du har valt Globala inställningar Valv bifogade filer.](../../media/safe-docs.png)
+   ![Valv Dokumentinställningarna när du har valt Globala inställningar Valv bifogade filer.](../../media/safe-docs-global-settings.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Använda Exchange Online PowerShell för att konfigurera Valv-dokument
 
@@ -95,15 +95,15 @@ Detaljerad information om syntax och parametrar finns i [Set-AtpPolicyForO365.](
 
 ### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Gå till Microsoft Defender för slutpunktstjänsten för att aktivera granskningsfunktioner
 
-Om du vill distribuera Microsoft Defender för Endpoint måste du gå igenom de olika faserna i distributionen. Efter introduktionen kan du konfigurera granskningsfunktionerna i Säkerhets- & efterlevnadscenter.
+Om du vill distribuera Microsoft Defender för Endpoint måste du gå igenom de olika faserna i distributionen. Efter introduktionen kan du konfigurera granskningsfunktionerna i Microsoft 365 Defender portal.
 
-Mer information finns i [Onboard to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/onboarding). Om du behöver mer hjälp går du till Felsöka problem med [Microsoft Defender för slutpunkts onboarding.](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
+Mer information finns i [Onboard to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/onboarding). Om du behöver mer hjälp går du till Felsöka [problem med Microsoft Defender för slutpunkts onboarding.](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
 
 ### <a name="how-do-i-know-this-worked"></a>Hur vet jag att det fungerade?
 
 Verifiera att du har aktiverat och konfigurerat Valv genom att göra något av följande:
 
-- I Säkerhets- &  och efterlevnadscenter går du till ATP för hothanteringspolicy Valv Bifogade filer , klickar på Globala inställningar och verifierar Aktivera Valv-dokument för Office-klienter och Tillåt användare att klicka igenom Skyddad vy även om filen identifieras som skadlig i \>  \>    **Valv-dokument.**
+- I Microsoft 365 Defender-portalen går du till Principer för **& e-postsamarbete** & regler för hotprinciper i avsnittet globala inställningar för bifogade filer Valv och kontrollerar aktivera Valv-dokument för Office-klienter och Tillåt användare att klicka igenom Skyddad vy även om filen identifieras som skadlig i \>  \>  \>  \>  \>   **Valv-dokument.**
 
 - Kör följande kommando i Exchange Online PowerShell och verifiera egenskapsvärdena:
 

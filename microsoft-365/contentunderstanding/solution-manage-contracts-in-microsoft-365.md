@@ -13,16 +13,16 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Lär dig hur du hanterar kontrakt med en Microsoft 365 lösning av SharePoint Syntex, SharePoint listor, Microsoft Teams och Power Automate.
-ms.openlocfilehash: 352ebd1b9170aaf7829c414e87f7a79c4f17a1df
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843776"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054761"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Hantera kontrakt med en Microsoft 365-lösning
 
-I den här artikeln beskrivs hur du skapar en kontraktshanteringslösning för organisationen med hjälp SharePoint Syntex och komponenter i Microsoft 365. Det ger dig ett ramverk som hjälper dig att planera och skapa en lösning som passar dina unika affärsbehov. Även om den här lösningen inte passar dina affärsbehov som helhet kan delar av den användas i din planering för att skapa en anpassad lösning för kontraktshantering.
+I den här artikeln beskrivs hur du skapar en lösning för kontraktshantering för organisationen med hjälp SharePoint Syntex och komponenter Microsoft 365. Det ger dig ett ramverk som hjälper dig att planera och skapa en lösning som passar dina unika affärsbehov. Även om den här lösningen inte passar dina affärsbehov som helhet kan delar av den användas i din planering för att skapa en anpassad lösning för kontraktshantering.
 
 *Det här innehållet innehåller dokument Microsoft 365 en lösning som utvecklats av Thomas ThomasBach med Teamet modern arbetslösningsstrategi på Microsoft.*
 
@@ -40,11 +40,11 @@ Det första steget när du planerar ditt kontraktshanteringssystem är att förs
 
 ## <a name="overview-of-the-solution"></a>Översikt över lösningen
 
-  ![Översikt över lösningen med hjälp SharePoint Syntex, SharePoint, Teams och Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
+  ![Diagram över lösningen med hjälp SharePoint Syntex, SharePoint, Teams och Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
 
 Den här lösningen för kontraktshantering innehåller fyra komponenter Microsoft 365:
 
-- **Microsoft SharePoint Syntex**: Skapa modeller för att identifiera och klassificera kontraktsfilerna och extrahera lämplig data från dem.
+- **Microsoft SharePoint Syntex:** Skapa modeller för att identifiera och klassificera dina kontraktsfiler och sedan extrahera lämplig data från dem.
 
 - **Microsoft SharePoint listor:** Använd den formatering som är tillgänglig i moderna SharePoint för att presentera kontrakt i ett företagsvänligt format.
 
@@ -56,7 +56,7 @@ Den här lösningen för kontraktshantering innehåller fyra komponenter Microso
 
   ![Diagram över lösningen som visar arbetsflödet för att ladda upp dokument, extrahera data, meddela intressenter och godkänna eller avvisa avtalet.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Dokument laddas upp till ett SharePoint ett dokumentbibliotek. En SharePoint med en förstå-modell för Syntex-dokument har använts i dokumentbiblioteket. Varje fil kontrolleras för att se om någon matchar en typ av innehåll av typen "kontrakt" som filen letar efter. Om en matchning hittas klassificeras filen som ett "kontrakt" och innehållstypen för dokumentet uppdateras.
+1. Dokument laddas upp till ett SharePoint ett dokumentbibliotek. En SharePoint Syntex dokument förstå modellen har tillämpats på dokumentbiblioteket. Varje fil kontrolleras för att se om någon matchar en typ av innehåll av typen "kontrakt" som filen letar efter. Om en matchning hittas klassificeras filen som ett "kontrakt" och innehållstypen för dokumentet uppdateras.
 
 2. Modellen hämtar även specifika data från varje kontraktsfil som intressenter är intresserade av, till exempel *klient,* leverantörer och *avgiftsbelopp.*
 

@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan lära sig att skapa, ändra och ta bort de principer mot nätfiske som är tillgängliga i Exchange Online Protection-organisationer (EOP) med eller utan Exchange Online postlådor.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2aaeb10eaa3c06e721df3cf7a00658482e6ffc0c
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 8633644ab0380cf2adcf30c006a7d6d141a6040a
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029927"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054575"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurera principer för skydd mot nätfiske i EOP
 
@@ -144,7 +144,7 @@ Om du skapar en egen policy mot nätfiske i Microsoft 365 Defender-portalen skap
 
 1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
-2. På **sidan Mot nätfiske** visas följande egenskaper i listan över principer mot nätfiske:
+2. På **sidan Mot nätfiske** visas följande egenskaper i listan med principer:
 
    - **Namn**
    - **Status**
@@ -213,9 +213,11 @@ När du använder Microsoft 365 Defender-portalen för att ta bort en anpassad p
 
 1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
-2. Välj en anpassad princip i listan genom att klicka på namnet på principen. Längst upp i den utfällda menyn policyinformation som visas klickar du på ![ikonen Fler åtgärder](../../media/m365-cc-sc-more-actions-icon.png) **Fler åtgärder** \> ![ikonen Ta bort princip](../../media/m365-cc-sc-delete-icon.png) **Ta bort princip**.
+2. På sidan **Mot nätfiske** väljer du en anpassad princip i listan genom att klicka på namnet.
 
-3. I bekräftelsedialogrutan som visas klickar du på **Ja**.
+3. Längst upp i den utfällda menyn policyinformation som visas klickar du på ![ikonen Fler åtgärder](../../media/m365-cc-sc-more-actions-icon.png) **Fler åtgärder** \> ![ikonen Ta bort princip](../../media/m365-cc-sc-delete-icon.png) **Ta bort princip**.
+
+4. I bekräftelsedialogrutan som visas klickar du på **Ja**.
 
 ## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>Använda Exchange Online PowerShell för att konfigurera principer mot nätfiske
 

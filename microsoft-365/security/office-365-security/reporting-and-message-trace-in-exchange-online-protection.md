@@ -15,12 +15,12 @@ ms.custom:
 description: I den här artikeln får du lära dig mer om rapporter och felsökningsverktyg som är tillgängliga Microsoft Exchange Online Protection (EOP) administratörer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841444"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054374"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapportering och meddelandespårning i EOP
 
@@ -35,30 +35,17 @@ I Microsoft 365-organisationer med postlådor i Exchange Online eller friståend
 
 ## <a name="usage-reports"></a>Användningsrapporter
 
-**Microsoft 365 gruppaktivitet**: Visa information om antalet Microsoft 365 grupper som skapas och används.
+- **Microsoft 365 gruppaktivitet**: Visa information om antalet Microsoft 365 grupper som skapas och används. Mer information finns i [Microsoft 365 rapporter i administrationscentret – Microsoft 365 grupper.](../../admin/activity-reports/office-365-groups.md)
+- **E-postaktivitet:** Visa information om antalet meddelanden som skickas, tas emot och läses i hela organisationen och av specifika användare. Mer information finns i Microsoft 365 [i administrationscentret – E-postaktivitet.](../../admin/activity-reports/email-activity.md)
+- **Användning av e-postprogram:** Visa information om vilka e-postprogram som används. Det här inkluderar det totala antalet anslutningar för varje app och de versioner Outlook som ansluter. Mer information finns i artikeln Microsoft 365 [i administrationscentret – Användning av e-postprogram.](../../admin/activity-reports/email-apps-usage.md)
+- **Postlådeanvändning:** Visa information om använt lagringsutrymme, kvotanvändning, antal objekt och senaste aktivitet (skicka eller läsaktivitet) för postlådor. Mer information finns i [Microsoft 365 i administrationscentret – Postlådeanvändning.](../../admin/activity-reports/mailbox-usage.md)
 
-**E-postaktivitet:** Visa information om antalet meddelanden som skickas, tas emot och läses i hela organisationen och av specifika användare.
-
-**Användning av e-postprogram:** Visa information om vilka e-postprogram som används. Det inkluderar det totala antalet anslutningar för varje app och de versioner Outlook som ansluter.
-
-**Postlådeanvändning:** Visa information om använt lagringsutrymme, kvotanvändning, antal objekt och senaste aktivitet (skicka eller läsaktivitet) för postlådor.
-
-Mer information finns i följande resurser:
-
-- [Microsoft 365 Rapporter i administrationscentret – Microsoft 365 grupper](../../admin/activity-reports/office-365-groups.md)
-- [Microsoft 365 Rapporter i administrationscentret – E-postaktivitet](../../admin/activity-reports/email-activity.md)
-- [Microsoft 365 Rapporter i administrationscentret – Användning av e-postprogram](../../admin/activity-reports/email-apps-usage.md)
-- [Microsoft 365 Rapporter i administrationscentret – Postlådeanvändning](../../admin/activity-reports/mailbox-usage.md)
-
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Säkerhets& och efterlevnadsrapporter i Microsoft 365 administrationscenter
+## <a name="security-reports-in-the-microsoft-365-defender-portal"></a>Säkerhetsrapporter i Microsoft 365 Defender-portalen
 
 De här förbättrade rapporterna ger en interaktiv rapporteringsupplevelse för EOP-administratörer, som innehåller sammanfattningsinformation och möjlighet att granska nedåt för mer information.
 
-**Defender för Office 365:** Visa information om Valv och länkar Valv Bifogade filer som ingår i Microsoft Defender för Office 365.
-
-**EOP:** Visa information om identifiering av skadlig programvara, förfalskning, identifiering av skräppost och e-postflöde till och från organisationen.
-
-[Visa rapporter för Defender för Office 365](view-reports-for-mdo.md)
+- **Defender för Office 365:** Visa information om Valv och länkar Valv Bifogade filer som ingår i Microsoft Defender för Office 365. Mer information finns i [Visa Defender för Office 365 i Microsoft 365 Defender portal.](view-reports-for-mdo.md)
+- **EOP:** Visa information om identifiering av skadlig programvara, förfalskning, identifiering av skräppost och e-postflöde till och från organisationen. Mer information finns i Visa [säkerhetsrapporter för e-post i Microsoft 365 Defender portal](view-email-security-reports.md).
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Anpassade rapporter med Microsoft Graph
 
@@ -70,7 +57,7 @@ Följer upp e-postmeddelanden när de färdas genom EOP. Du kan avgöra om ett e
 
 Du kan använda den här informationen för att effektivt besvara användarnas frågor, felsöka problem i e-postflödet, verifiera principändringar och förbättra behovet av att kontakta teknisk support för att få hjälp.
 
-Läs [Meddelandespårning i Säkerhets- & Säkerhets- och efterlevnadscenter.](message-trace-scc.md)
+Läs [Meddelandespårning i Microsoft 365 Defender portalen](message-trace-scc.md).
 
 ## <a name="audit-logging"></a>Granskningsloggning
 
@@ -79,6 +66,8 @@ Spårar specifika ändringar som gjorts av administratörer i organisationen. De
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Rapportering och meddelandespårning av datatillgänglighet och svarstid
 
 I följande tabell beskrivs när EOP-rapportering och meddelandespårningsdata är tillgängliga och hur länge.
+
+<br>
 
 ****
 

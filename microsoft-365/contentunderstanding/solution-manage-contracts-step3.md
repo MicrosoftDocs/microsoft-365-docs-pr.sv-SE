@@ -12,20 +12,20 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Lär dig hur du Power Automate skapa ett flöde för att bearbeta kontrakt med en Microsoft 365 lösning.
-ms.openlocfilehash: 0ddcbeff6c8bd119850e3e4ea45db2513e774433
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e6c1d1e53363f996241efb2394189853d840c6c2
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636260"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054467"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Steg 3. Använd Power Automate för att skapa ett flöde för att bearbeta dina kontrakt
 
-Du har skapat din kanal för kontraktshantering och bifogat ditt SharePoint dokumentbibliotek. Nästa steg är att skapa ett Power Automate flöde för att bearbeta de kontrakt som din SharePoint Syntex-modell identifierar och klassificerar. Du kan göra det här steget genom [att skapa Power Automate ett flöde i SharePoint-dokumentbiblioteket](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
+Du har skapat din kanal för kontraktshantering och bifogat ditt SharePoint dokumentbibliotek. Nästa steg är att skapa ett Power Automate flöde för att bearbeta de kontrakt som SharePoint Syntex i modellen identifierar och klassificerar. Du kan göra det här steget genom [att skapa Power Automate ett flöde i SharePoint-dokumentbiblioteket](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
 För din lösning för kontraktshantering vill du skapa ett Power Automate för att göra följande åtgärder:
 
--  När ett kontrakt har klassificerats av din SharePoint Syntex-modell ändrar du kontraktsstatusen till **Vid granskning.**
+-  När ett kontrakt har klassificerats av din SharePoint Syntex kan du ändra kontraktsstatus till **Vid granskning.**
 - Avtalet granskas sedan och godkänns eller avvisas.
 - För godkända kontrakt publiceras kontraktsinformationen på en flik för betalningsbearbetning.
 - För avvisade kontrakt meddelas teamet för vidare analys. 
@@ -36,7 +36,7 @@ Följande diagram visar Power Automate för kontraktshanteringslösningen.
 
 ## <a name="prepare-your-contract-for-review"></a>Förbered ditt kontrakt för granskning
 
-När ett kontrakt identifieras och klassificeras av din förstå-modell för SharePoint Syntex-dokument ändrar Power Automate-flödet först statusen till **I granskning.**
+När ett kontrakt identifieras och klassificeras av din modell SharePoint Syntex dokumentförståelse kommer Power Automate att först ändra status till **Vid granskning.**
 
 ![Uppdateringsstatus.](../media/content-understanding/flow-overview.png)
 
@@ -127,9 +127,9 @@ Följande kod är det JSON som används för det här steget i Power Automate fl
 ```
 
 
-## <a name="conditional"></a>Villkorsstyrd
+## <a name="conditional-context"></a>Villkorsstyrd kontext
 
-I flödet måste du sedan skapa ett villkor där avtalet antingen godkänns eller avvisas.
+I ditt flöde måste du skapa ett villkor där avtalet antingen [godkänns](#if-the-contract-is-approved) eller [avvisas.](#if-the-contract-is-rejected)
 
 ![Villkorsstyrd.](../media/content-understanding/condition.png)
 
@@ -152,6 +152,19 @@ När ett kontrakt har godkänts inträffar följande:
 - I flödet skapar du följande objekt för att flytta godkända kontrakt till **fliken För utbetalning.**
 
    ![Flow att flytta till Betala ut.](../media/content-understanding/ready-for-payout.png)
+
+    Om du vill hämta uttrycken för den information Teams kort använder du värdena som visas i följande tabell.
+ 
+    |Namn     |Expression |
+    |---------|-----------|
+    | Godkännandetillstånd  | brödtext('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['submitActionId']         |
+    | Godkänd av     | brödtext('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['svarare'] ['displayName']        |
+    | Godkännandedatum     | brödtext('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['responseTime']         |
+    | Kommentar     | brödtext('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')? ['data'] ['acComments']         |
+    
+    I följande exempel visas hur du använder formelrutan i Power Automate för att skriva ett uttryck.
+
+   ![Skärmbild i Power Automate med en uttrycksformel.](../media/content-understanding/expression-formula-power-automate.png)    
 
 - Ett adaptivt kort som anger att avtalet har godkänts skapas och publiceras i kanalen Kontraktshantering.
 
@@ -250,11 +263,11 @@ När ett kontrakt har avvisats inträffar följande:
 
 - I flödet checkar du ut kontraktsfilen, ändrar status till **Avvisat** och checkar sedan in filen igen.
 
-   ![Flow status avvisades.](../media/content-understanding/reject-flow.png)
+   ![Flow statusen avvisades i kontraktsfil.](../media/content-understanding/reject-flow.png)
 
 - I flödet skapar du ett adaptivt kort som säger att avtalet har avvisats.
 
-   ![Flow status avvisades.](../media/content-understanding/reject-flow-item.png)
+   ![Flow status visas avvisat på adaptivt kort.](../media/content-understanding/reject-flow-item.png)
 
 Följande kod är det JSON som används för det här steget i Power Automate flöde.
 

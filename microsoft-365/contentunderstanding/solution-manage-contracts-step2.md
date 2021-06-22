@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Lär dig hur du Microsoft Teams skapa din kanal för kontraktshantering med hjälp av en Microsoft 365 lösning.
-ms.openlocfilehash: 073ef1651ea5470594bfce0ffce65e849f9e063a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 099487279482385760e05d9b166ae80c665d931e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841180"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054752"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Steg 2. Använd Microsoft Teams för att skapa din kanal för kontraktshantering
 
@@ -31,30 +31,31 @@ När din organisation skapar en lösning för kontraktshantering behöver du en 
 
      ![Fliken Inlägg.](../media/content-understanding/posts.png)
 
-- **Ha en plats där medlemmarna kan se godkända kontrakt för att veta när de kan skickas in för betalning.** I Teams kan du skapa en **för** betalningskanal som visar alla kontrakt som ska skickas till betalningen. Du kan enkelt utöka den här lösningen så att den istället skriver den här informationen direkt till en ekonomisk app från tredje part (till exempel Dynamics CRM).
+- **Ha en plats där medlemmarna kan se godkända kontrakt för att veta när de kan skickas in för betalning.** I SharePoint fall måste du skapa en  lista med utbetalnings och ta med kolumner för **Klient,** Leverantörer och Avgiftsbelopp **och** välja Enskild rad med **text** som kolumntyp. Du måste lägga till  listan För utbetalning som en Teams fliken i kanalen Kontraktshantering, ungefär som du gör för [ **fliken** Kontrakt.](solution-manage-contracts-step2.md#attach-your-sharepoint-document-library-to-the-contracts-tab) På **fliken För** utbetalningar visas alla kontrakt som ska skickas in för betalning. Du kan enkelt utöka den här lösningen så att den istället skriver den här informationen direkt till en ekonomisk app från tredje part (till exempel Dynamics CRM). 
+
 
 ## <a name="attach-your-sharepoint-document-library-to-the-contracts-tab"></a>Bifoga ditt SharePoint dokumentbibliotek på fliken Kontrakt
 
-När du har skapat **fliken** Kontrakt i kanalen Kontraktshantering måste du bifoga ditt SharePoint [till det](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). Den SharePoint dokumentbibliotek som du vill bifoga är den där du SharePoint med förstå-modellen för Syntex-dokument i föregående avsnitt.
+När du har skapat **fliken** Kontrakt i kanalen Kontraktshantering måste du bifoga ditt SharePoint [till det](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b). Den SharePoint dokumentbibliotek som du vill bifoga är den där du SharePoint Syntex din mall för dokument förstå i föregående avsnitt.
 
 När du bifogat SharePoint-dokumentbiblioteket kan du visa alla klassificerade kontrakt i en standardlistvy.
 
-   ![Listvy.](../media/content-understanding/list-view.png)
+   ![Listvy över SharePoint bibliotek.](../media/content-understanding/list-view.png)
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Anpassa panelvyn på fliken Kontrakt
 
 > [!NOTE]
 > Det här avsnittet refererar till kodexempel som finns [iContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) filen som ingår i lagringsplatsen för lösningstillgångar [i kontraktshantering.](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)
 
-Även Teams visa kontrakten i en panelvy kan du anpassa dem för att visa de kontraktsdata du vill göra synliga på kontraktskortet. För fliken Kontrakt är **det till** exempel viktigt att medlemmarna ser klienten, leverantören och avgiftsbeloppet på kontraktskortet. Alla dessa fält har extraherats från varje kontrakt via din SharePoint Syntex-modell som tillämpats på ditt dokumentbibliotek. Du vill också kunna ändra panelrubrikfältet till olika färger för varje status så att medlemmarna enkelt kan se var avtalet ligger i godkännandeprocessen. Alla godkända kontrakt kommer till exempel att ha en blå rubrikfält.
+Även Teams visa kontrakten i en panelvy kan du anpassa dem för att visa de kontraktsdata du vill göra synliga på kontraktskortet. För fliken Kontrakt är **det till** exempel viktigt att medlemmarna ser klienten, leverantören och avgiftsbeloppet på kontraktskortet. Alla dessa fält har extraherats från varje kontrakt via din SharePoint Syntex modell som tillämpats på ditt dokumentbibliotek. Du vill också kunna ändra panelrubrikfältet till olika färger för varje status så att medlemmarna enkelt kan se var avtalet ligger i godkännandeprocessen. Alla godkända kontrakt kommer till exempel att ha en blå rubrikfält.
 
-   ![Listvy.](../media/content-understanding/tile.png)
+   ![Panelvy över SharePoint bibliotek.](../media/content-understanding/tile.png)
 
 Den anpassade panelvyn du använder kräver att du gör ändringar i JSON-filen som används för att formatera den aktuella panelvyn. Du kan referera till den JSON-fil som används för att skapa kortvyn genom [att tittaContractTileFormatting.jsfilen.](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) I följande avsnitt visas specifika avsnitt i koden för funktioner som finns på kontraktskorten.
 
 Om du vill se eller göra ändringar i JSON-koden för vyn i din Teams-kanal går du till Teams-kanalen, väljer listrutan Vy och väljer sedan **Formatera aktuell vy.**
 
-   ![json-format.](../media/content-understanding/jason-format.png)
+   ![Skärmbild av json-format i Teams kanal.](../media/content-understanding/jason-format.png)
 
 ## <a name="card-size-and-shape"></a>Kortstorlek och -form
 
@@ -105,7 +106,7 @@ Med följande kod kan du ange status för varje titelkort. Observera att varje s
 
 ## <a name="extracted-fields"></a>Extraherade fält
 
-Varje kontraktskort visar tre fält som har extraherats för varje kontrakt *(klient,* *leverantörer* och *avgiftsbelopp).* Dessutom vill du visa det tid/datum då filen klassificerades av den SharePoint Syntex-modellen som använts för att identifiera den.
+Varje kontraktskort visar tre fält som har extraherats för varje kontrakt *(klient,* *leverantörer* och *avgiftsbelopp).* Dessutom vill du visa det tid/datum då filen klassificerades av den SharePoint Syntex användes för att identifiera den.
 
 I [ContractTileFormatting.jsfilen](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) definierar följande avsnitt var och en av dessa.
 

@@ -19,21 +19,21 @@ ms.custom:
 description: Använd den nya säkerhetspanelen för att Office 365 status för skydd mot hot, och visa och agera på säkerhetsvarningar.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1504c84f0657dd049b63908d56c4ec6cca4871de
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274418"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055162"
 ---
-# <a name="security-dashboard"></a>Säkerhetsinstrumentpanel
+# <a name="security-dashboard-in-the-security--compliance-center"></a>Säkerhetsinstrumentpanel i Säkerhets- & Säkerhets- och efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Grundläggande funktioner och hur du öppnar Säkerhetsinstrumentpanel
+## <a name="basic-functions-and-how-to-open-security-dashboard"></a>Grundläggande funktioner och hur du öppnar säkerhetsinstrumentpanel
 
-Säkerhets- [& efterlevnadscenter](../../compliance/microsoft-365-compliance-center.md) gör det möjligt för organisationen att hantera dataskydd och efterlevnad. Om du har de behörigheter som krävs kan du med hjälp av instrumentpanelen för säkerhet granska din status för skydd mot hot samt visa och agera på säkerhetsvarningar.
+Säkerhets- & <https://protection.office.com> efterlevnadscenter som gör det möjligt för organisationen att hantera dataskydd och efterlevnad. Om du har de behörigheter som krävs kan du med hjälp av instrumentpanelen för säkerhet granska din status för skydd mot hot samt visa och agera på säkerhetsvarningar.
 
 Titta på videon för att få en översikt och läs sedan den här artikeln om du vill veta mer.
 
@@ -41,10 +41,10 @@ Titta på videon för att få en översikt och läs sedan den här artikeln om d
 
 Beroende på vad din organisations prenumeration inkluderar innehåller instrumentpanelen för säkerhet flera widgetar, till exempel Sammanfattning av hothantering, Hotskyddsstatus, Global veckovis identifiering av hot, skadlig programvara med mera, som beskrivs i följande avsnitt.
 
-Om du vill visa Säkerhetsinstrumentpanel går [du & Säkerhets- och efterlevnadscenter](../../compliance/microsoft-365-compliance-center.md)på **Instrumentpanelen för hantering av** \> **hot.**
+Om du vill visa Säkerhetsinstrumentpanel i säkerhets- & säkerhets- och efterlevnadscenter går du till **Instrumentpanel för hantering av** \> **hot.** Om du vill gå direkt till instrumentpanelen säkerhet använder du <https://protection.office.com/searchandinvestigation/dashboard> .
 
 > [!NOTE]
-> Du måste vara global administratör, säkerhetsadministratör eller säkerhetsläsare för att kunna visa instrumentpanelen för säkerhet. Vissa widgetar kräver ytterligare behörigheter för att visa. Mer information finns i [Behörigheter i Säkerhets- & Kompatibilitetscenter.](permissions-in-the-security-and-compliance-center.md)
+> Du måste vara global administratör, säkerhetsadministratör eller säkerhetsläsare för att kunna visa instrumentpanelen för säkerhet. Vissa widgetar kräver ytterligare behörigheter för att visa. Mer information finns i [Behörigheter i Säkerhets- & Kompatibilitetscenter](permissions-in-the-security-and-compliance-center.md)[.
 
 ## <a name="threat-management-summary"></a>Sammanfattning av hothantering
 
@@ -54,9 +54,14 @@ Widgeten Sammanfattning av hothantering visar direkt hur organisationen har skyd
 
 Vilken information du ser i sammanfattningen av hothanteringen beror på vad din prenumeration innehåller. I följande tabell beskrivs vilken information som ingår i Office 365 E3 och Office 365 E5.
 
+<br>
+
+****
+
 |Office 365 E3|Office 365 E5|
 |---|---|
 |Skadliga meddelanden blockerade<br>Nätfiskemeddelanden är blockerade<br>Meddelanden som rapporterats av användare<br><br><br><br>|Skadliga meddelanden blockerade<br>Nätfiskemeddelanden är blockerade<br>Meddelanden som rapporterats av användare<br>Nolldagars skadlig programvara blockerad<br>Avancerade nätfiskemeddelanden har upptäckts<br>Skadliga URL:er blockeras|
+|
 
 Om du vill visa eller komma åt widgeten Sammanfattning av hothantering måste du ha behörighet att visa Defender Office 365. Mer information finns i [Vilka behörigheter krävs för att visa Defender för Office 365 rapporter?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
@@ -68,10 +73,15 @@ Widgeten Hotskyddsstatus visar hur effektivt skyddet för hot är med en trendan
 
 Informationen beror på om EOP (Microsoft 365 Subscription includes [Exchange Online Protection)](exchange-online-protection-overview.md) med eller utan [Microsoft Defender för Office 365.](defender-for-office-365.md)
 
+<br>
+
+****
+
 |Om din prenumeration inkluderar...|Den här informationen visas|
 |---|---|
 |EOP men inte Microsoft Defender för Office 365|Skadlig e-post som har upptäckts och blockerats av EOP.<p> Se [Statusrapport för skydd mot hot (EOP).](view-email-security-reports.md#threat-protection-status-report)|
 |Microsoft Defender för Office 365|Skadligt innehåll och skadlig e-post som identifieras och blockeras av EOP och Defender för Office 365 <p> Aggregerat antal unika e-postmeddelanden med skadligt innehåll som [](zero-hour-auto-purge.md)blockerats av antivirusmotorn, automatisk rensning utan timme och Defender för Office 365-funktioner (inklusive [Valv-länkar,](safe-links.md) [Valv-bilagor](safe-attachments.md)och skydd mot nätfiske i Defender för [Office 365).](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) <p> Se [statusrapport om skydd mot hot.](view-reports-for-mdo.md#threat-protection-status-report)|
+|
 
 Om du vill visa eller komma åt widgeten Hotskyddsstatus måste du ha behörighet att visa Defender Office 365 rapporter. Mer information finns i [Vilka behörigheter krävs för att visa Defender för Office 365 rapporter?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -83,12 +93,17 @@ Widgeten Global Weekly Threat Detections visar hur många hot som har upptäckts
 
 Måtten beräknas enligt beskrivningen i följande tabell:
 
+<br>
+
+****
+
 |Metrisk|Så här beräknas det|
 |---|---|
 |Meddelanden skannade|Antalet e-postmeddelanden som genomsöks multiplicerat med antalet mottagare|
 |Hot har stoppats|Antalet e-postmeddelanden som identifierats som innehåller skadlig programvara multiplicerat med antalet mottagare|
 |Blockeras av [Defender för Office 365](defender-for-office-365.md)|Antalet e-postmeddelanden som blockeras av Defender för Office 365 multiplicerat med antalet mottagare|
 |Tas bort efter leverans|Antalet meddelanden som tagits [bort med en automatisk rensning på nolltimmar](zero-hour-auto-purge.md) multiplicerat med antalet mottagare|
+|
 
 ## <a name="malware"></a>Skadlig programvara
 
@@ -96,9 +111,9 @@ Widgetar för skadlig programvara visar information om trender och familjetyper 
 
 ![Trender och familjetyper för skadlig programvara](../../media/malwarewidgetatpe5.png)
 
-## <a name="insights"></a>Insikter
+## <a name="insights"></a>Insights
 
-Insikter tar inte bara upp viktiga problem som du bör granska, de innehåller även rekommendationer och åtgärder att överväga.
+Insights du inte bara surface-viktiga problem som du bör granska, utan även rekommendationer och åtgärder att överväga.
 
 ![Smarta insikter](../../media/smartinsights.png)
 
@@ -122,7 +137,7 @@ Om du vill visa eller komma åt widgeten Skickad och mottagen e-post måste du h
 
 Om du vill visa eller komma åt widgeten Senaste hothanteringsvarningar måste du ha behörighet att visa aviseringar. Mer information finns i [RBAC-behörigheter som krävs för att visa aviseringar.](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)
 
-## <a name="related-topics"></a>Relaterade ämnen
+## <a name="related-articles"></a>Relaterade artiklar
 
 [Visa e-postsäkerhetsrapporter i Säkerhets- & Säkerhets- och efterlevnadscenter](view-email-security-reports.md)
 

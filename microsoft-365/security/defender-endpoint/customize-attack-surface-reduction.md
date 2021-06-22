@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6b9814180df2cad2553c4565ebb65891b5cf9bf5
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 0705ba096c2aefc6bd089bd5fba80b055fd881dc
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985426"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055242"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Anpassa regler för minskning av attackytan
 
@@ -33,14 +33,14 @@ ms.locfileid: "52985426"
 > [!IMPORTANT]
 > En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
-[Minskningsregler för attackytan](enable-attack-surface-reduction.md) hjälper till att förhindra programvarubeteenden som ofta missbrukeras för att avslöja din enhet eller ditt nätverk. En attackerare kan till exempel försöka köra ett osignerat skript från en USB-enhet eller ha ett makro i ett Office-dokument som ringer samtal direkt till Win32 API. Minskning av attackytan kan begränsa dessa typer av riskfyllda beteenden och förbättra organisationens grundbeteende.
+[Minskningsregler för attackytan](enable-attack-surface-reduction.md) hjälper till att förhindra programvarubeteenden som ofta missbrukeras för att avslöja din enhet eller ditt nätverk. En attackerare kan till exempel försöka köra ett osignerat skript från en USB-enhet eller ha ett makro i ett Office-dokument som ringer anrop direkt till Win32 API. Minskning av attackytan kan begränsa dessa typer av riskfyllda beteenden och förbättra organisationens grundbeteende.
 
 Lär dig hur du kan [](#exclude-files-and-folders) anpassa regler för att minska attackytan genom att utesluta filer och mappar eller lägga till anpassad [text](#customize-the-notification) i meddelandemeddelandet som visas på en användares dator.
 
-Du kan ange minskningsregler för attackytan för enheter som kör någon av följande utgåvor och versioner av Windows:
+Du kan ange minskningsregler för attackytan för enheter som kör någon av följande utgåvor och versioner Windows:
 
-- Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Pro, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Enterprise, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
 - Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19) Du kan använda grupprincip-, PowerShell- och MDM-konfigurationstjänstleverantörer (Mobile Device Management) för att konfigurera de här inställningarna.
 
@@ -66,10 +66,10 @@ Om du stöter på problem med regler för att identifiera filer som du tror inte
 
 | Regelbeskrivning | GUID |
 |:----|:----|
-| Blockera alla Office-program från att skapa underordnade processer | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
+| Blockera alla Office från att skapa underordnade processer | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | Blockera körning av potentiellt oönskade skript | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
-| Blockera Win32 API-anrop från Office-makro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
-| Blockera Office-program från att skapa körbart innehåll | `3B576869-A4EC-4529-8536-B80A7769E899` |
+| Blockera Win32 API-anrop från Office makro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
+| Blockera Office program från att skapa körbart innehåll | `3B576869-A4EC-4529-8536-B80A7769E899` |
 | Blockera Office-program från att mata in kod i andra processer | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
 | Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll | `D3E037E1-3EB8-44C8-A917-57927947596D` |
 | Blockera körbart innehåll från e-postklient och webbaserad e-post | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
@@ -78,7 +78,7 @@ Om du stöter på problem med regler för att identifiera filer som du tror inte
 | Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
 | Blockera processskapanden som kommer från PSExec- och WMI-kommandon | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
 | Blockera icke betrodda och osignerade processer som körs från USB | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| Blockera Office-kommunikationsprogram från att skapa underordnade processer | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
+| Blockera Office kommunikationsprogram från att skapa underordnade processer | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
 | Blockera Adobe Reader från att skapa underordnade processer | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
 | Blockera beständighet via WMI-händelseprenumeration | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 
@@ -90,7 +90,7 @@ Mer information [om varje regel](attack-surface-reduction.md) finns i avsnittet 
 
 2. I **redigeraren för grupprinciphantering går** du till **Datorkonfiguration och** klickar på **Administrativa mallar**.
 
-3. Expandera trädet till **Windows-komponenter**  >  **Microsoft Defender Antivirus** Windows Defender  >  **Sårbarhetsskydd-minskning** av  >  **attackytan**.
+3. Expandera trädet för att **Windows komponenter Microsoft Defender Antivirus**  >    >  **Microsoft Defender Exploit Guard**  >  **minska attackytan.**
 
 4. Dubbelklicka på inställningen Exkludera **filer och sökvägar från minskningsregler för attackytan** och ange alternativet **Aktiverad.** Välj **Visa** och ange varje fil eller mapp i **kolumnen Värdenamn.** Ange **0** i **värdekolumnen** för varje objekt.
 
@@ -99,7 +99,7 @@ Mer information [om varje regel](attack-surface-reduction.md) finns i avsnittet 
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>Använda PowerShell för att utesluta filer och mappar
 
-1. Skriv **powershell** på Start-menyn, högerklicka på **Windows PowerShell och** välj Kör som **administratör**
+1. Skriv **powershell** i Start-menyn, högerklicka på **Windows PowerShell** välj **Kör som administratör**
 2. Ange följande cmdlet:
 
     ```PowerShell
@@ -117,7 +117,7 @@ Använd [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusio
 
 ## <a name="customize-the-notification"></a>Anpassa meddelandet
 
-Du kan anpassa meddelandet för när en regel utlöses och spärra en app eller fil. Se [artikeln om Windows-säkerhet.](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)
+Du kan anpassa meddelandet för när en regel utlöses och spärra en app eller fil. Mer information [Windows-säkerhet](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center) artikeln.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

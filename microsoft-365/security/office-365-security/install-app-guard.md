@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Få den senaste versionen av maskinvarubaserad isolering. Förhindra aktuella och nya attacker som sårbarheter eller skadliga länkar från att störa personalens produktivitet och företagssäkerhet.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0fa6ad884c6b21457c8359cf82e32e4b8c100ba
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 39d6a9c3a3c3a5e2c736025a26c22588f9f08bb0
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488317"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055262"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard för Office för administratörer
 
@@ -120,7 +120,6 @@ När filen öppnas bör den visa några visuella indikatorer på att filen öppn
 ## <a name="configure-application-guard-for-office"></a>Konfigurera Application Guard för Office
 
 Office kan använda följande principer för att konfigurera funktionerna i Application Guard för Office. De här principerna kan konfigureras via grupprinciper eller Office [molnprinciptjänsten.](/DeployOffice/overview-office-cloud-policy-service)
-Se konfiguration som angetts av administratören genom att granska grupprincipinställningarna i Administrativa mallar för användarkonfiguration **\\ Microsoft Office \\ 2016 \\ Säkerhetscenter Inställningar Application \\ \\ Guard**.
 
 
 > [!NOTE]
@@ -234,6 +233,9 @@ När den här heuristisk uppfylls skapar Office en Application Guard-behållare 
 ## <a name="known-issues"></a>Kända problem
 
 * Om du väljer `http` `https` webblänkar ( eller ) öppnas inte webbläsaren.
-* Att klistra in RTF-innehåll eller -bilder i Office dokument som öppnats med Application Guard stöds inte för närvarande.
-* Standardinställningen för skyddsprincipen för filtyper som inte stöds är att blockera öppning av filtyper som inte stöds av IRM (Information Rights Management), CSV eller HTML som inte stöds.
+* Standardinställningen för skyddsprincipen för kopiera och klistra in är att aktivera endast åtkomst till text i Urklipp.
+* Standardinställningen för skyddsprincipen för filtyper som inte stöds är att blockera öppna filtyper som inte stöds och som är krypterade eller har IRM (Information Rights Management). Detta omfattar filer som har Microsoft Information Protection känslighetsetiketter med kryptering (konfidentiell eller mycket konfidentiell).
+* CSV- och HTML-filer stöds inte för närvarande.
+* Application Guard för Office fungerar för närvarande inte med NTFS-komprimerade volymer. Om du får felmeddelandet "ERROR_VIRTUAL_DISK_LIMITATION" kan du prova att expandera volymen.
 * Uppdateringar av .NET kan orsaka att filer inte öppnas i Application Guard. Som en lösning kan användare starta om enheten när de får det här felet. Läs mer om problemet under Ta [emot ett felmeddelande när du försöker öppna ett begränsat Windows Defender Application Guard eller Windows begränsat läge.](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)
+* Mer [information finns i Vanliga frågor och svar - Microsoft Defender Application Guard hittar du mer information.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

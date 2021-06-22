@@ -20,12 +20,12 @@ ms.collection:
 description: Administratörer kan läsa mer om Valv i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc5fabf7b0bb4a649aeb7c4e09155037fc09e9f9
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 127d862d235abc4cd81f62679b97077c7a80bd70
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625011"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054388"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Valv Bifogade filer i Microsoft Defender för Office 365
 
@@ -56,7 +56,7 @@ I följande tabell beskrivs scenarier för Valv Bifogade filer i Microsoft 365- 
 Valv Genomsökning av bifogade filer sker i samma region där Microsoft 365 data finns. Mer information om datacentrets geografi finns i [Var finns dina data?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> Följande funktioner finns i de globala inställningarna för principer Valv bilagor i Säkerhets- och & Säkerhets- och efterlevnadscenter. Men de här inställningarna är aktiverade eller inaktiverade globalt och kräver Valv principer för bifogade filer:
+> Följande funktioner finns i de globala inställningarna för principer Valv bifogade filer i Microsoft 365 Defender portalen. Men de här inställningarna är aktiverade eller inaktiverade globalt och kräver Valv principer för bifogade filer:
 >
 > - [Valv bifogade filer SharePoint, OneDrive och Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 > - [Säkra dokument i Microsoft 365 E5](safe-docs.md)
@@ -75,8 +75,8 @@ I det här avsnittet beskrivs inställningarna i Valv principer för bifogade fi
   |---|---|---|
   |**Av**|Bifogade filer genomsöks inte efter skadlig programvara genom att Valv bifogade filer. Meddelanden genomsöks fortfarande efter skadlig programvara med [skydd mot skadlig programvara i EOP.](anti-malware-protection.md)|Inaktivera genomsökning för valda mottagare. <p> Förhindra onödiga fördröjningar i dirigering av intern e-post. <p> **Det här alternativet rekommenderas inte för de flesta användare. Du bör bara använda det här alternativet för Valv sökning efter bifogade filer för mottagare som bara tar emot meddelanden från betrodda avsändare.**|
   |**Övervaka**|Levererar meddelanden med bifogade filer och spårar sedan vad som händer med identifierade skadlig programvara. <p> Leverans av säkra meddelanden kan fördröjas på grund av Valv genomsökning av bifogade filer.|Se var skadlig programvara hamnar i organisationen.|
-  |**Blockera**|Förhindrar att meddelanden med bifogade filer från skadlig programvara levereras. <p> Meddelanden ligger [i karantän](manage-quarantined-messages-and-files.md) där bara administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden. <p> Blockerar automatiskt framtida instanser av meddelanden och bifogade filer. <p> Leverans av säkra meddelanden kan fördröjas på grund av Valv genomsökning av bifogade filer.|Skyddar organisationen från upprepade attacker med hjälp av samma bifogade filer från skadlig programvara. <p> Det här är standardvärdet och det rekommenderade värdet i de förinställda säkerhetsprinciperna Standard [och Strikt.](preset-security-policies.md)|
-  |**Ersätt**|Tar bort bifogade filer från skadlig programvara. <p> Meddelar mottagarna att bifogade filer har tagits bort. <p>  Meddelanden ligger [i karantän](manage-quarantined-messages-and-files.md) där bara administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden. <p> Leverans av säkra meddelanden kan fördröjas på grund av Valv genomsökning av bifogade filer.|Synliggöra mottagare om att bifogade filer har tagits bort på grund av skadlig programvara.|
+  |**Blockera**|Förhindrar att meddelanden med bifogade filer från skadlig programvara levereras. <p> Meddelanden [sätts i karantän](manage-quarantined-messages-and-files.md) där bara administratörer (inte användare) kan granska, släppa eller ta bort meddelanden. <p> Blockerar automatiskt framtida instanser av meddelanden och bifogade filer. <p> Leverans av säkra meddelanden kan fördröjas på grund av Valv genomsökning av bifogade filer.|Skyddar organisationen från upprepade attacker med hjälp av samma bifogade filer från skadlig programvara. <p> Det här är standardvärdet och det rekommenderade värdet i de förinställda säkerhetsprinciperna Standard [och Strikt.](preset-security-policies.md)|
+  |**Ersätt**|Tar bort bifogade filer från skadlig programvara. <p> Meddelar mottagarna att bifogade filer har tagits bort. <p>  Meddelanden [sätts i karantän](manage-quarantined-messages-and-files.md) där bara administratörer (inte användare) kan granska, släppa eller ta bort meddelanden. <p> Leverans av säkra meddelanden kan fördröjas på grund av Valv genomsökning av bifogade filer.|Synliggöra mottagare om att bifogade filer har tagits bort på grund av skadlig programvara.|
   |**Dynamisk leverans**|Levererar meddelanden direkt, men ersätter bifogade filer med platshållare tills Valv har slutfört genomsökning av bifogade filer. <p> Mer information finns i avsnittet [Principer för dynamisk Valv bifogade filer](#dynamic-delivery-in-safe-attachments-policies) längre fram i den här artikeln.|Undvik meddelandefördröjningar och skydda mottagare från skadliga filer. <p> Gör det möjligt för mottagarna att förhandsgranska bifogade filer i felsäkert läge medan genomsökning sker.|
   |
 
@@ -104,11 +104,11 @@ I det här avsnittet beskrivs inställningarna i Valv principer för bifogade fi
 
 Med åtgärden Dynamisk leverans i Valv principer för bifogade filer vill du eliminera alla e-postleveransfördröjningar som kan orsakas av Valv genomsökning av bifogade filer. Brödtexten i e-postmeddelandet levereras till mottagaren med en platshållare för varje bifogad fil. Platshållaren blir kvar tills den bifogade filen har varit säker, och sedan blir den bifogade filen tillgänglig att öppna eller ladda ned.
 
-Om en bifogad fil skulle vara skadlig sätts meddelandet i karantän. Endast administratörer (inte slutanvändare) kan granska, släppa eller ta bort meddelanden som har satts i karantän Valv genomsökning av bifogade filer. Mer information finns i [Hantera meddelanden i karantän och filer som administratör.](manage-quarantined-messages-and-files.md)
+Om en bifogad fil skulle vara skadlig sätts meddelandet i karantän. Endast administratörer (inte användare) kan granska, släppa eller ta bort meddelanden som satts i karantän Valv genomsökning av bifogade filer. Mer information finns i [Hantera meddelanden i karantän och filer som administratör.](manage-quarantined-messages-and-files.md)
 
 De flesta PDF-filer Office dokument kan förhandsgranskas i felsäkert läge medan Valv sökning efter bifogade filer pågår. Om en bifogad fil inte är kompatibel med förhandsgranskningen av dynamisk leverans visas en platshållare för den bifogade filen tills Valv genomsökning av bifogade filer har slutförts.
 
-Om du använder en mobil enhet och PDF-filer inte återges i förhandsgranskningen av dynamisk leverans på din mobila enhet kan du försöka öppna meddelandet i Outlook på webben (tidigare kallat Outlook Web App) i din mobila webbläsare.
+Om du använder en mobil enhet och PDF-filer inte återges i förhandsgranskningen av dynamisk leverans på din mobila enhet kan du försöka öppna meddelandet i Outlook på webben (tidigare kallat Outlook Web App) med din mobila webbläsare.
 
 Här är några saker att tänka på när det gäller dynamisk leverans och vidarebefordrade meddelanden:
 

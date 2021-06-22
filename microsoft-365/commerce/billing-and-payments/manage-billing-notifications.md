@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du hanterar vilka som får e-postmeddelanden om faktureringsaviseringar och fakturabilagor.
 ms.date: 03/17/2021
-ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998770"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054586"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Hantera faktureringsaviseringar och fakturabilagor
 
@@ -37,9 +37,6 @@ På **sidan Faktureringsaviseringar** kan du hantera vilka som får e-postmeddel
 Du måste vara global administratör för att kunna göra det som beskrivs i den här artikeln. Faktureringsadministratörer kan göra en del av dessa ändringar, som nämnts i avsnitten nedan. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="change-the-language-you-receive-email-in"></a>Ändra det språk som du får e-post på
-
-> [!NOTE]
-> Faktureringsadministratörer kan också följa anvisningarna i det här avsnittet.
 
 E-postmeddelanden om faktureringsaviseringar skickas på organisationens föredragna språk. Använd följande steg om du vill ändra önskat språk.
 
@@ -87,6 +84,9 @@ Förutom dina globala administratörer och faktureringsadministratörer skickar 
 3. I det högra fönstret skriver du den e-postadress som du vill använda och väljer sedan **Spara**.
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Ta emot din organisations fakturor som e-postbilagor
+
+> [!NOTE]
+> Faktureringsadministratörer kan också följa anvisningarna i det här avsnittet.
 
 Du kan bifoga en kopia av organisationens faktura som en PDF-fil för att få fakturaaviseringar via e-post när en ny faktura är klar. Använd följande steg för att ta emot fakturor som bifogade filer.
 

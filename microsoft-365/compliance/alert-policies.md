@@ -1,12 +1,12 @@
 ---
-title: Aviseringsprinciper i säkerhets- och efterlevnadscenter
+title: Microsoft 365 principer för avisering
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -15,72 +15,73 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
-description: Skapa aviseringsprinciper i säkerhets- och efterlevnadscentret i Office 365 och Microsoft 365 för att övervaka potentiella hot, dataförlust och behörighetsproblem.
-ms.openlocfilehash: 4bca7bb15900dbdd7caadb74ce7938b9483be03e
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+description: Skapa aviseringsprinciper i Microsoft 365 Efterlevnadscenter övervaka potentiella hot, dataförlust och behörighetsproblem.
+ms.openlocfilehash: a6f9b7dec1a147b9cd9b00b5516c77aea79437e9
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964734"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054677"
 ---
-# <a name="alert-policies-in-the-security-and-compliance-center"></a>Aviseringsregler i säkerhets- och efterlevnadscentret
+# <a name="alert-policies-in-the-microsoft-365-compliance-center"></a>Aviseringsprinciper i Microsoft 365 Efterlevnadscenter
 
-Du kan skapa aviseringsprinciper och instrumentpaneler för aviseringar i Säkerhets- och efterlevnadscenter för Microsoft 365 för att skapa aviseringsprinciper och sedan visa aviseringar som genereras när användare utför aktiviteter som matchar villkoren i en aviseringsprincip. Det finns flera standardaviseringsprinciper som hjälper dig att övervaka aktiviteter, till exempel tilldela administratörsbehörigheter i Exchange Online, attacker mot skadlig programvara, nätfiskekampanjer och ovanliga nivåer av filborttagning och extern delning.
+Du kan använda verktygen för aviseringsprincip och aviseringsinstrumentpanel i Microsoft 365 Efterlevnadscenter för att skapa aviseringsprinciper och sedan visa de aviseringar som genereras när användare utför aktiviteter som matchar villkoren i en aviseringsprincip. Det finns flera standardprinciper för aviseringar som hjälper dig att övervaka aktiviteter, till exempel tilldela administratörsbehörigheter i Exchange Online, attacker mot skadlig programvara, nätfiskekampanjer och ovanliga nivåer av filborttagning och extern delning.
 
-Med aviseringsprinciper kan du kategorisera aviseringar som utlöses av en princip, tillämpa principen på alla användare i organisationen, ange en tröskelvärdesnivå för när en avisering ska utlösas och bestämma om du vill få e-postaviseringar när aviseringar utlöses. Det finns även  sidan Visa aviseringar i säkerhets- och efterlevnadscentret där du kan visa och filtrera aviseringar, ange en aviseringsstatus som hjälper dig att hantera aviseringar och sedan stänga aviseringar när du har hanterat eller löst den underliggande incidenten.
+Med aviseringsprinciper kan du kategorisera aviseringar som utlöses av en princip, tillämpa principen på alla användare i organisationen, ange en tröskelvärdesnivå för när en avisering ska utlösas och bestämma om du vill få e-postaviseringar när aviseringar utlöses. Det finns också  en sida aviseringar i efterlevnadscentret där du kan visa och filtrera aviseringar, ange en aviseringsstatus som hjälper dig att hantera aviseringar och sedan stänga aviseringar när du har hanterat eller löst den underliggande incidenten.
 
 > [!NOTE]
-> Aviseringsprinciper är tillgängliga för organisationer som har en Microsoft 365 Enterprise-, Office 365 Enterprise- eller Office 365 US Government E1/F1/G1-, E3/F3/G3- eller E5/G5-prenumeration. Avancerade funktioner är endast tillgängliga för organisationer som har en E5/G5-prenumeration eller för organisationer som har en E1/F1/G1- eller E3/F3/G3-prenumeration och en Microsoft Defender för Office 365 P2 eller en Microsoft 365 E5-efterlevnad eller en E5-prenumeration för eDiscovery och granskning. Funktionen som kräver en E5/G5 eller en tilläggsprenumeration är markerad i det här avsnittet. Observera även att aviseringsprinciper är tillgängliga i office 365 GCC-, GCC High- och doD-amerikanska myndigheters miljöer.
+> Aviseringsprinciper är tillgängliga för organisationer som har en prenumeration på Microsoft 365 Enterprise, Office 365 Enterprise eller Office 365 för myndigheter i USA, abonnemanget E1/F1/G1, E3/F3/G3 eller E5/G5. Avancerade funktioner är endast tillgängliga för organisationer med en E5/G5-prenumeration eller för organisationer som har en E1/F1/G1- eller E3/F3/G3-prenumeration och en Microsoft Defender för Office 365 P2 eller en Microsoft 365 E5 Compliance- eller E5-prenumeration för eDiscovery och granskning. Funktionen som kräver en E5/G5 eller en tilläggsprenumeration är markerad i det här avsnittet. Observera även att aviseringsprinciper är tillgängliga i Office 365 GCC, GCC hög och doD amerikanska myndigheters miljöer.
 
 ## <a name="how-alert-policies-work"></a>Hur aviseringsprinciper fungerar
 
 Här är en snabb överblick över hur aviseringsprinciper fungerar och aviseringar som utlöses när användar- eller administratörsaktivitet matchar villkoren i en aviseringsprincip.
 
-![Översikt över hur aviseringsprinciper fungerar](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
+![Översikt över hur aviseringsprinciper fungerar](../media/M365-AlertPolicies-Overview.png)
 
-1. En administratör i organisationen skapar, konfigurerar och aktiverar en  aviseringsprincip genom att använda sidan Aviseringsprinciper i säkerhets- och efterlevnadscentret. Du kan också skapa aviseringsprinciper med hjälp av cmdleten [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) i Security & Compliance Center PowerShell.
+1. En administratör i organisationen skapar, konfigurerar och aktiverar en aviseringsprincip genom att använda **sidan Aviseringsprinciper** i efterlevnadscentret. Du kan också skapa aviseringsprinciper med hjälp av cmdleten [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) i Security & Compliance Center PowerShell.
 
-   För att skapa aviseringsprinciper måste du ha tilldelats rollen Hantera aviseringar eller rollen Organisationskonfiguration i säkerhets- och efterlevnadscentret.
+   För att skapa aviseringsprinciper måste du ha tilldelats rollen Hantera aviseringar eller rollen Organisationskonfiguration i efterlevnadscentret.
 
    > [!NOTE]
    > Det tar upp till 24 timmar efter att en aviseringsprincip har skapats eller uppdaterats innan aviseringar kan utlösas av principen. Det beror på att principen måste synkroniseras till aviseringsmotorn.
 
 2. En användare utför en aktivitet som matchar villkoren i en aviseringsprincip. Vid attacker mot skadlig programvara utlöser smittade e-postmeddelanden som skickas till användare i organisationen en avisering.
 
-3. Microsoft 365 genererar en avisering  som visas på sidan Visa aviseringar i säkerhets- & efterlevnadscenter. Och om e-postaviseringar är aktiverade för aviseringsprincipen skickar Microsoft en avisering till en lista över mottagare. Aviseringarna som en administratör eller andra användare kan se på sidan Visa aviseringar bestäms av de roller som tilldelats till användaren. Mer information finns i [RBAC-behörigheter som krävs för att visa aviseringar.](#rbac-permissions-required-to-view-alerts)
+3. Microsoft 365 en avisering som visas på sidan Aviseringar **i** Microsoft 365 Efterlevnadscenter. Och om e-postaviseringar är aktiverade för aviseringsprincipen skickar Microsoft en avisering till en lista över mottagare. Vilka aviseringar som en administratör eller andra användare kan se på sidan Aviseringar bestäms av användarens roller. Mer information finns i [RBAC-behörigheter som krävs för att visa aviseringar.](#rbac-permissions-required-to-view-alerts)
 
-4. En administratör hanterar aviseringar i säkerhets- och efterlevnadscentret. Hantering av aviseringar består av att tilldela en aviseringsstatus för att spåra och hantera en undersökning.
+4. En administratör hanterar aviseringar i efterlevnadscentret. Hantering av aviseringar består av att tilldela en aviseringsstatus för att spåra och hantera en undersökning.
 
 ## <a name="alert-policy-settings"></a>Aviseringsprincipinställningar
 
-En aviseringsprincip består av en uppsättning regler och villkor som definierar den användar- eller administratörsaktivitet som genererar en avisering, en lista över användare som utlöser aviseringen om de utför aktiviteten samt ett tröskelvärde som anger hur många gånger aktiviteten måste utföras innan en avisering utlöses. Du kategoriserar även principen och tilldelar den en allvarlighetsnivå. De här två inställningarna hjälper dig att hantera aviseringsprinciper (och aviseringar som utlöses när principvillkoren matchas) eftersom du kan filtrera på de här inställningarna när du hanterar principer och visar aviseringar i säkerhets- och efterlevnadscentret. Du kan till exempel visa aviseringar som matchar villkoren från samma kategori eller visa aviseringar med samma allvarlighetsnivå.
+En aviseringsprincip består av en uppsättning regler och villkor som definierar den användar- eller administratörsaktivitet som genererar en avisering, en lista över användare som utlöser aviseringen om de utför aktiviteten samt ett tröskelvärde som anger hur många gånger aktiviteten måste utföras innan en avisering utlöses. Du kategoriserar även principen och tilldelar den en allvarlighetsnivå. De här två inställningarna hjälper dig att hantera aviseringsprinciper (och aviseringar som utlöses när principvillkoren matchas) eftersom du kan filtrera på de här inställningarna när du hanterar principer och visar aviseringar i efterlevnadscentret. Du kan till exempel visa aviseringar som matchar villkoren från samma kategori eller visa aviseringar med samma allvarlighetsnivå.
 
-Om du vill visa och skapa aviseringsprinciper går du [https://protection.office.com](https://protection.office.com) till och väljer principer för  \> **aviseringar.**
+**Så här visar och skapar du aviseringsprinciper:**
 
-![I säkerhets- och efterlevnadscentret väljer du Aviseringar och sedan Aviseringsprinciper för att visa och skapa aviseringsprinciper](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
+Gå till <https://compliance.microsoft.com> och välj sedan Principer **aviseringsprinciper** för  >    >  **avisering.** Alternativt kan du gå direkt till <https://compliance.microsoft.com/alertpolicies> .
+
+![Välj Principer i efterlevnadscentret och under Avisering väljer du Aviseringsprinciper för att visa och skapa aviseringsprinciper](../media/LaunchAlertPoliciesMCC.png)
 
 En aviseringsprincip består av följande inställningar och villkor.
 
-- **Aktiviteten** som aviseringen spårar – Du skapar en princip för att spåra en aktivitet eller i vissa fall några relaterade aktiviteter, till exempel att dela en fil med en extern användare genom att dela den, tilldela åtkomstbehörigheter eller skapa en anonym länk. När en användare utför aktiviteten som definieras av principen utlöses en avisering baserat på inställningarna för aviseringströskel.
+- **Aktiviteten som aviseringen spårar**. Du skapar en princip för att spåra en aktivitet eller i vissa fall några relaterade aktiviteter, t.ex. att dela en fil med en extern användare genom att dela den, tilldela åtkomstbehörigheter eller skapa en anonym länk. När en användare utför aktiviteten som definieras av principen utlöses en avisering baserat på inställningarna för aviseringströskel.
 
     > [!NOTE]
-    > Vilka aktiviteter du kan spåra beror på organisationens office 365 Enterprise- eller Office 365-abonnemang för myndigheter i USA. I allmänhet kräver aktiviteter som rör skadlig programvara och nätfiskeattacker en E5/G5-prenumeration eller en E1/F1/G1- eller E3/F3/G3-prenumeration med en tilläggsprenumeration på Defender för [Office 365](../security/office-365-security/defender-for-office-365.md) abonnemang 2.
+    > Vilka aktiviteter du kan spåra beror på organisationens plan för Office 365 Enterprise eller Office 365 amerikanska myndigheter. I allmänhet kräver aktiviteter som rör skadlig programvara och nätfiskeattacker en E5/G5-prenumeration eller en E1/F1/G1- eller E3/F3/G3-prenumeration med en [Defender för Office 365](../security/office-365-security/defender-for-office-365.md) Abonnemang 2-tilläggsprenumeration.
 
-- **Aktivitetsvillkor** – För de flesta aktiviteter kan du definiera ytterligare villkor som måste uppfyllas för att utlösa en avisering. Vanliga villkor omfattar IP-adresser (så att en avisering utlöses när användaren utför aktiviteten på en dator med en viss IP-adress eller inom ett IP-adressintervall), om en avisering utlöses om en viss användare eller användare utför aktiviteten och om aktiviteten utförs på ett visst filnamn eller en viss URL. Du kan också konfigurera ett villkor som utlöser en avisering när aktiviteten utförs av en användare i organisationen. De tillgängliga villkoren är beroende av den valda aktiviteten.
+- **Aktivitetsvillkor**. För de flesta aktiviteter kan du definiera ytterligare villkor som måste uppfyllas för att utlösa en avisering. Vanliga villkor omfattar IP-adresser (så att en avisering utlöses när användaren utför aktiviteten på en dator med en viss IP-adress eller inom ett IP-adressintervall), om en avisering utlöses om en viss användare eller användare utför aktiviteten och om aktiviteten utförs på ett visst filnamn eller en viss URL. Du kan också konfigurera ett villkor som utlöser en avisering när aktiviteten utförs av en användare i organisationen. De tillgängliga villkoren är beroende av den valda aktiviteten.
 
-- **När aviseringen utlöses** – Du kan konfigurera en inställning som definierar hur ofta en aktivitet kan inträffa innan en avisering utlöses. Det här gör att du kan konfigurera en princip för att generera en avisering varje gång en aktivitet matchar principvillkoren, när ett visst tröskelvärde överskrids eller när förekomsten av aktiviteten som aviseringen spårar blir ovanlig för organisationen.
+- **När aviseringen utlöses**. Du kan konfigurera en inställning som definierar hur ofta en aktivitet kan inträffa innan en avisering utlöses. Det här gör att du kan konfigurera en princip för att generera en avisering varje gång en aktivitet matchar principvillkoren, när ett visst tröskelvärde överskrids eller när förekomsten av aktiviteten som aviseringen spårar blir ovanlig för organisationen.
 
-    ![Konfigurera hur aviseringar utlöses, baserat på när aktiviteten inträffar, ett tröskelvärde eller ovanlig aktivitet för organisationen](../media/97ee1ed2-e7a9-47a2-a980-5f9f63872c65.png)
+    ![Konfigurera hur aviseringar utlöses, baserat på när aktiviteten inträffar, ett tröskelvärde eller ovanlig aktivitet för organisationen](../media/howalertsaretriggered.png)
 
     Om du väljer inställningen baserat på ovanlig aktivitet upprättar Microsoft ett baslinjevärde som definierar normalfrekvensen för den valda aktiviteten. Det tar upp till sju dagar att upprätta den här baslinjen, då aviseringar inte genereras. När baslinjen har upprättats utlöses en avisering när frekvensen för aktiviteten som spåras av aviseringsprincipen avsevärt överskrider baslinjevärdet. För granskningsrelaterade aktiviteter (till exempel fil- och mappaktiviteter) kan du skapa en baslinje baserat på en enskild användare eller baserat på alla användare i organisationen. för aktiviteter som rör skadlig programvara kan du upprätta en baslinje baserat på en enskild programfamilj, en enskild mottagare eller alla meddelanden i organisationen.
 
     > [!NOTE]
-    > Möjligheten att konfigurera aviseringsprinciper baserat på ett tröskelvärde eller baserat på ovanlig aktivitet kräver en prenumeration på E5/G5 eller en prenumeration på E1/F1/F1 eller E3/F3/G3 med en Prenumeration på Microsoft Defender för Office 365 P2, Microsoft 365 E5-efterlevnad eller Microsoft 365-prenumeration för eDiscovery och granskning. Organisationer som har en E1/F1/G1- och E3/F3/G3-prenumeration kan bara skapa aviseringsprinciper där en avisering utlöses varje gång en aktivitet inträffar.
+    > Möjligheten att konfigurera aviseringsprinciper baserat på ett tröskelvärde eller baserat på ovanlig aktivitet kräver en prenumeration på E5/G5 eller en prenumeration på E1/F1/F1 eller E3/F3/G3 med en prenumeration på Microsoft Defender för Office 365 P2, Microsoft 365 E5 Compliance eller Microsoft 365 för tillägget eDiscovery och granskning. Organisationer som har en E1/F1/G1- och E3/F3/G3-prenumeration kan bara skapa aviseringsprinciper där en avisering utlöses varje gång en aktivitet inträffar.
 
-- **Aviseringskategori** – Om du vill ha hjälp med att spåra och hantera aviseringar som skapas av en princip kan du tilldela en av följande kategorier till en princip.
+- **Aviseringskategori**. För att underlätta uppföljning och hantering av aviseringar som genereras av en princip kan du tilldela en av följande kategorier till en princip.
 
   - Skydd mot dataförlust
 
@@ -94,26 +95,26 @@ En aviseringsprincip består av följande inställningar och villkor.
 
   - Andra
 
-  När en aktivitet inträffar som matchar villkoren i aviseringsprincipen taggas den avisering som skapas med den kategori som definierats i den här inställningen. På så sätt kan du spåra och hantera  aviseringar som har samma kategoriinställning på sidan Visa aviseringar i säkerhets- och efterlevnadscentret eftersom du kan sortera och filtrera aviseringar baserat på kategori.
+  När en aktivitet inträffar som matchar villkoren i aviseringsprincipen taggas den avisering som skapas med den kategori som definierats i den här inställningen. På så sätt kan du spåra och hantera  aviseringar som har samma kategoriinställning på sidan Aviseringar i efterlevnadscentret eftersom du kan sortera och filtrera aviseringar baserat på kategori.
 
-- **Aviserings allvarlighetsgrad** – Liknar aviseringskategorin och tilldelar ett attribut för allvarlighetsgrad **(låg,**  **medel,** hög eller **information)** till aviseringsprinciper. På samma sätt som aviseringskategorin taggas den avisering som skapas med samma allvarlighetsnivå som angetts för aviseringsprincipen när en aktivitet inträffar som matchar villkoren i aviseringsprincipen. På så sätt kan du spåra och hantera aviseringar som har samma inställning för allvarlighetsgrad på **sidan Visa** aviseringar. Du kan till exempel filtrera listan med aviseringar så att endast aviseringar med **hög** allvarlighetsgrad visas.
+- **Aviserings allvarlighetsgrad**. På ungefär samma sätt som aviseringskategorin tilldelar du ett attribut för allvarlighetsgrad **(låg,**  **medel,** hög eller **information)** till aviseringsprinciper. På samma sätt som aviseringskategorin taggas den avisering som skapas med samma allvarlighetsnivå som angetts för aviseringsprincipen när en aktivitet inträffar som matchar villkoren i aviseringsprincipen. På så sätt kan du spåra och hantera aviseringar som har samma inställning för allvarlighetsgrad på **sidan** Aviseringar. Du kan till exempel filtrera listan med aviseringar så att endast aviseringar med **hög** allvarlighetsgrad visas.
 
     > [!TIP]
     > När du ställer in en aviseringsprincip kan du överväga att tilldela aktiviteter med större allvarlighetsgrad som kan leda till allvarliga negativa konsekvenser, t.ex. identifiering av skadlig programvara efter leverans till användare, visning av känsliga eller klassificerade data, delning av data med externa användare eller andra aktiviteter som kan leda till dataförlust eller säkerhetshot. Det kan hjälpa dig att prioritera aviseringar och de åtgärder du vidta för att undersöka och lösa de underliggande orsakerna.
 
-- **E-postaviseringar** – Du kan konfigurera principen så att e-postaviseringar skickas (eller inte skickas) till en lista över användare när en avisering utlöses. Du kan också ange en daglig aviseringsgräns så att inga fler aviseringar skickas för aviseringen under den dagen när det maximala antalet aviseringar har uppnåtts. Förutom e-postaviseringar kan du och andra administratörer visa aviseringar som utlöses av en princip på **sidan Visa** aviseringar. Överväg att aktivera e-postaviseringar för aviseringsprinciper för en viss kategori eller som har en högre inställning för allvarlighetsgrad.
+- **E-postaviseringar.** Du kan konfigurera principen så att e-postaviseringar skickas (eller inte skickas) till en lista med användare när en avisering utlöses. Du kan också ange en daglig aviseringsgräns så att inga fler aviseringar skickas för aviseringen under den dagen när det maximala antalet aviseringar har uppnåtts. Förutom e-postaviseringar kan du och andra administratörer visa aviseringar som utlöses av en princip på **sidan** Aviseringar. Överväg att aktivera e-postaviseringar för aviseringsprinciper för en viss kategori eller som har en högre inställning för allvarlighetsgrad.
 
 ## <a name="default-alert-policies"></a>Standardaviseringsprinciper
 
-Microsoft tillhandahåller inbyggda aviseringsprinciper som hjälper till att identifiera missbruk av behörigheter för Exchange-administratörer, skadlig programvara, potentiella externa och interna hot samt informationsstyrningsrisker. På sidan **Aviseringsprinciper** är namnen på dessa inbyggda principer i fetstil och principtypen definieras som **System**. De här principerna är aktiverat som standard. Du kan inaktivera de här principerna (eller aktivera dem igen), konfigurera en lista över mottagare att skicka e-postaviseringar till och ange en daglig aviseringsgräns. Andra inställningar för dessa principer kan inte redigeras.
+Microsoft tillhandahåller inbyggda aviseringsprinciper som hjälper till Exchange identifiera missbruk av administratörsbehörighet, skadlig programvara, potentiella externa och interna hot samt informationsstyrningsrisker. På sidan **Aviseringsprinciper** är namnen på dessa inbyggda principer i fetstil och principtypen definieras som **System**. De här principerna är aktiverat som standard. Du kan inaktivera de här principerna (eller aktivera dem igen), konfigurera en lista över mottagare att skicka e-postaviseringar till och ange en daglig aviseringsgräns. Andra inställningar för dessa principer kan inte redigeras.
 
-I följande tabell visas och beskrivs de tillgängliga standardaviseringsprinciperna och den kategori som varje princip tilldelas till. Kategorin används för att avgöra vilka aviseringar en användare kan visa på sidan Visa aviseringar. Mer information finns i [RBAC-behörigheter som krävs för att visa aviseringar.](#rbac-permissions-required-to-view-alerts)
+I följande tabell visas och beskrivs de tillgängliga standardaviseringsprinciperna och den kategori som varje princip tilldelas till. Kategorin används för att avgöra vilka aviseringar en användare kan visa på sidan Aviseringar. Mer information finns i [RBAC-behörigheter som krävs för att visa aviseringar.](#rbac-permissions-required-to-view-alerts)
 
-Tabellen anger också vilket Office 365 Enterprise- och Office 365 för myndigheter i USA som krävs för var och en av dem. Vissa standardaviseringsprinciper är tillgängliga om din organisation har rätt tilläggsprenumeration utöver en E1/F1/G1- eller E3/F3/G3-prenumeration.
+Tabellen anger också vilket Office 365 Enterprise och Office 365 för var och en av dem. Vissa standardaviseringsprinciper är tillgängliga om din organisation har rätt tilläggsprenumeration utöver en E1/F1/G1- eller E3/F3/G3-prenumeration.
 
 | Standardaviseringsprincip | Beskrivning | Kategori | Enterprise-prenumeration |
 |:-----|:-----|:-----|:-----|
-|**Ett potentiellt skadligt URL-klick upptäcktes**|Genererar en avisering när en användare som skyddas [av säkra](../security/office-365-security/safe-links.md) länkar i organisationen klickar på en skadlig länk. Händelsen utlöses när ändringar av URL-bedömning identifieras av Microsoft Defender för Office 365 eller när användare åsidosätter sidorna med säkra länkar (baserat på din organisations Policy för säkra länkar i Microsoft 365 för företag). Den här aviseringsprincipen har **inställningen Hög** allvarlighetsgrad. För Defender för Office 365 P2-, E5- och G5-kunder utlöser den här aviseringen automatiskt automatisk undersökning och [svar i Office 365.](../security/office-365-security/office-365-air.md) Mer information om händelser som utlöser den här aviseringen finns [i Konfigurera principer för säkra länkar.](../security/office-365-security/set-up-safe-links-policies.md)|Hothantering|E5/G5 eller Defender för Office 365 P2-tilläggsprenumeration|
+|**Ett potentiellt skadligt URL-klick upptäcktes**|Genererar en avisering när en användare som skyddas [Valv länkar](../security/office-365-security/safe-links.md) i din organisation klickar på en skadlig länk. Händelsen utlöses när ändringar av URL-bedömning identifieras av Microsoft Defender för Office 365 eller när användare åsidosätter Valv-länksidorna (baserat på organisationens Microsoft 365 för företag Valv Links-policy). Den här aviseringsprincipen har **inställningen Hög** allvarlighetsgrad. För Defender för Office 365 P2-, E5- och G5-kunder utlöser den här aviseringen automatiskt automatisk undersökning och [svar i Office 365.](../security/office-365-security/office-365-air.md) Mer information om händelser som utlöser den här aviseringen finns [i Konfigurera Valv principer för länkar.](../security/office-365-security/set-up-safe-links-policies.md)|Hothantering|E5/G5 eller Defender Office 365 en P2-tilläggsprenumeration|
 |**Resultat av administratörsinskick slutfört**|Genererar en avisering när en [administratörs inskickad](../security/office-365-security/admin-submission.md) inskickad entitet har slutförts. En avisering utlöses varje gång ett återskanna resultat återges från en inskickad administratör. Dessa aviseringar är avsedda [](https://protection.office.com/reportsubmission)att påminna dig att granska resultaten av tidigare inskickade , skicka användarrapporterade meddelanden för att få den senaste principkontrollen och visa på nytt för att avgöra om filtreringsprinciperna i organisationen har den avsedda påverkan. Den här principen har inställningen **Informations** allvarlighetsgrad.|Hothantering|E1/F1, E3/F3 eller E5|
 |**Admin utlöst manuell undersökning av e-post**|Genererar en varning när en administratör utlöser manuell undersökning av ett e-postmeddelande från Hotutforskaren. Mer information finns i [Exempel: En säkerhetsadministratör utlöser en undersökning från Threat Explorer](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). Det här meddelandet meddelar organisationen att undersökningen har påbörjats. Aviseringen ger information om vem som utlöste den och innehåller en länk till undersökningen. Den här principen har inställningen **Allvarlighetsgrad** i information.|Hothantering| E5/G5 eller Microsoft Defender Office 365 en P2-tilläggsprenumeration| 
 |**Skapa regel för vidarebefordran / omdirigering**|Genererar en avisering när någon i organisationen skapar en inkorgsregel för sin postlåda som vidarebefordrar eller omdirigerar meddelanden till ett annat e-postkonto. Med den här principen spårar du bara inkorgsregler som skapats med Outlook på webben (tidigare kallat Outlook Web App) eller Exchange Online PowerShell. Den här principen har inställningen **Informations** allvarlighetsgrad. Mer information om hur du använder inkorgsregler för att vidarebefordra och omdirigera e-Outlook på webben finns i Använda regler i Outlook på webben för att automatiskt vidarebefordra [meddelanden till ett annat konto.](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)|Hothantering|E1/F1/G1, E3/F3/G3 eller E5/G5|
@@ -143,7 +144,7 @@ Tabellen anger också vilket Office 365 Enterprise- och Office 365 för myndighe
 |**Ovanlig volym av filborttagning**|Genererar en avisering när ett ovanligt stort antal filer tas bort i SharePoint eller OneDrive inom en kort tidsperiod. Den här principen har inställningen **Medel** allvarlighetsgrad.|Informationsstyrning|E5/G5, Defender för Office 365 P2 Microsoft 365 E5 prenumeration på tillägget|
 |**Ovanlig ökning av e-postmeddelanden rapporterade som nätfiske**|Genererar en avisering när antalet personer i organisationen ökar avsevärt med tillägget Rapportmeddelande i Outlook för att rapportera meddelanden som nätfiskemeddelanden. Den här principen har inställningen **Medel** allvarlighetsgrad. Mer information om det här tillägget finns i [Använda tillägget Rapportmeddelande.](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)|Hothantering|E5/G5 eller Defender Office 365 en P2-tilläggsprenumeration|
 |**Personifiering av användare levererad till inkorgen/mapp**<sup>1,</sup><sup>2</sup>|Genererar en avisering när Microsoft upptäcker att en administratör eller användare som åsidosätter en användare har tillåtit leverans av en användare som utger sig för att vara nätfiskemeddelande till inkorgen (eller någon annan användartillgänglig mapp) i en postlåda. Exempel på åsidosättningar är en inkorgs- eller e-postflödesregel som tillåter meddelanden från en viss avsändare eller domän, eller en princip för skydd mot skräppost som tillåter meddelanden från vissa avsändare eller domäner. Den här principen har inställningen **Medel** allvarlighetsgrad.|Hothantering|E5/G5 eller Defender Office 365 en P2-tilläggsprenumeration|
-|**Användaren begränsad från att skicka e-post**|Genererar en avisering när någon i din organisation är begränsad från att skicka utgående e-post. Det här resulterar vanligtvis när ett konto har komprometterats och användaren visas på sidan Begränsade användare i & Säkerhets- och efterlevnadscenter.  (Du kommer åt den här sidan genom att gå **till > Review > Restricted Users**). Den här principen har **inställningen Hög** allvarlighetsgrad. Mer information om begränsade användare finns i Ta bort en användare, domän eller IP-adress från en [blockeringslista efter att ha skickat skräppost.](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam)|Hothantering|E1/F1/G1, E3/F3/G3 eller E5/G5|
+|**Användaren begränsad från att skicka e-post**|Genererar en avisering när någon i din organisation är begränsad från att skicka utgående e-post. Det här resulterar vanligtvis när ett konto har komprometterats och användaren visas på sidan **Begränsade** användare i Microsoft 365 Efterlevnadscenter. (Du kommer åt den här sidan genom att gå **till > Review > Restricted Users**). Den här principen har **inställningen Hög** allvarlighetsgrad. Mer information om begränsade användare finns i Ta bort en användare, domän eller IP-adress från en [blockeringslista efter att ha skickat skräppost.](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam)|Hothantering|E1/F1/G1, E3/F3/G3 eller E5/G5|
 |**Användare begränsad till delning av formulär och insamling av svar**|Genererar en avisering när någon i organisationen har begränsats från att dela formulär och samla in svar med Microsoft Forms på grund av upptäckt upprepat beteende för nätfiskeförsök. Den här principen har **inställningen Hög** allvarlighetsgrad.|Hothantering|E1, E3/F3 eller E5|
 |||||
 
@@ -154,13 +155,13 @@ Den ovanliga aktivitet som övervakas av vissa av de inbyggda principerna basera
 
 ## <a name="viewing-alerts"></a>Visa aviseringar
 
-Om en aktivitet som utförs av användare i organisationen matchar inställningarna för en  aviseringsprincip genereras en avisering och visas på sidan Visa aviseringar i säkerhets- och efterlevnadscentret. Beroende på inställningarna för en aviseringsprincip skickas även ett e-postmeddelande till en lista med angivna användare när en avisering utlöses. För varje avisering visar  instrumentpanelen på sidan Visa aviseringar namnet på motsvarande aviseringsprincip, allvarlighetsgrad och kategori för aviseringen (definierad i aviseringsprincipen) och antalet gånger en aktivitet har inträffat som resulterade i att aviseringen skapades. Det här värdet baseras på tröskelvärdet för aviseringsprincipen. Instrumentpanelen visar också status för varje avisering. Mer information om hur du använder statusegenskapen för att hantera aviseringar finns [i Hantera aviseringar.](#managing-alerts)
+Om en aktivitet som utförs av användare i organisationen matchar inställningarna för en  aviseringsprincip genereras en avisering och visas på sidan Aviseringar i efterlevnadscentret. Beroende på inställningarna för en aviseringsprincip skickas även ett e-postmeddelande till en lista med angivna användare när en avisering utlöses. För varje avisering visar  instrumentpanelen på sidan Aviseringar namnet på motsvarande aviseringsprincip, aviseringens allvarlighetsgrad och kategori (definierad i aviseringsprincipen) och antalet gånger en aktivitet har inträffat som resulterade i att aviseringen skapades. Det här värdet baseras på tröskelvärdet för aviseringsprincipen. Instrumentpanelen visar också status för varje avisering. Mer information om hur du använder statusegenskapen för att hantera aviseringar finns [i Hantera aviseringar.](#managing-alerts)
 
-Om du vill visa aviseringar går du [https://protection.office.com](https://protection.office.com) till och väljer aviseringar **–** \> **visa aviseringar.**
+Om du vill visa aviseringar går <https://compliance.microsoft.com> du till och väljer **Aviseringar**. Alternativt kan du gå direkt till <https://compliance.microsoft.com/compliancealerts> .
 
-![I säkerhet och efterlevnad väljer du Aviseringar och sedan Visa aviseringar för att visa aviseringar](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
+![I Microsoft 365 Efterlevnadscenter väljer du Aviseringar](../media/ViewAlertsMCC.png)
 
-Du kan använda följande filter för att visa en delmängd av alla aviseringar på **sidan Visa** aviseringar.
+Du kan använda följande filter för att visa en delmängd av alla aviseringar på **sidan** Aviseringar.
 
 - **Status.** Använd det här filtret för att visa aviseringar som har tilldelats en viss status. Standardstatusen är **Aktiv.** Du eller andra administratörer kan ändra statusvärdet.
 
@@ -172,9 +173,9 @@ Du kan använda följande filter för att visa en delmängd av alla aviseringar 
 
 - **Kategori.** Använd det här filtret för att visa aviseringar från en eller flera aviseringskategorier.
 
-- **Taggar.** Använd det här filtret för att visa aviseringar från en eller flera användartaggar. Taggar återspeglas utifrån taggade postlådor eller användare som visas i aviseringarna. Mer [information finns i Användartaggar i Office 356 ATP.](../security/office-365-security/user-tags.md)
+- **Taggar.** Använd det här filtret för att visa aviseringar från en eller flera användartaggar. Taggar återspeglas utifrån taggade postlådor eller användare som visas i aviseringarna. Mer [information finns i Användartaggar Office 356 ATP.](../security/office-365-security/user-tags.md)
 
-- **Källa.** Använd det här filtret för att visa aviseringar som utlöses av aviseringsprinciper i säkerhets- och efterlevnadscentret eller varningar som utlöses av Säkerhetsprinciper för Office 365 Cloud App, eller båda. Mer information om säkerhetsvarningar för Office 365 Cloud App finns i [Visa säkerhetsvarningar för Cloud App.](#viewing-cloud-app-security-alerts)
+- **Källa.** Använd det här filtret för att visa aviseringar som utlöses av aviseringsprinciper i efterlevnadscentret eller varningar som Office 365 Cloud App Security principer, eller både och. Mer information om hur du Office 365 Cloud App Security aviseringar finns i [Visa Cloud App Security aviseringar](#viewing-cloud-app-security-alerts).
 
 > [!IMPORTANT]
 > Filtrering och sortering efter användartaggar är för närvarande en offentlig förhandsgranskning.
@@ -182,9 +183,9 @@ Du kan använda följande filter för att visa en delmängd av alla aviseringar 
 
 ## <a name="alert-aggregation"></a>Aviseringsaggregering
 
-Om flera händelser som matchar villkoren i en aviseringsprincip inträffar med en kort tidsperiod läggs de till i en befintlig avisering genom en process som kallas *aviseringsaggregering.* När en händelse utlöser en avisering genereras aviseringen och visas på **sidan Visa** aviseringar och ett meddelande skickas. Om samma händelse inträffar inom aggregeringsintervallet lägger Microsoft 365 till information om den nya händelsen i den befintliga aviseringen i stället för att utlösa en ny avisering. Syftet med aggregering för aviseringar är att minska aviseringsutmattningen och att du kan fokusera på och vidta åtgärder på färre aviseringar för samma händelse.
+Om flera händelser som matchar villkoren i en aviseringsprincip inträffar med en kort tidsperiod läggs de till i en befintlig avisering genom en process som kallas *aviseringsaggregering.* När en händelse utlöser en avisering genereras aviseringen och visas på **sidan Aviseringar** och ett meddelande skickas. Om samma händelse inträffar inom aggregeringsintervallet lägger Microsoft 365 information om den nya händelsen till den befintliga aviseringen i stället för att utlösa en ny avisering. Syftet med aggregering för aviseringar är att minska aviseringsutmattningen och att du kan fokusera på och vidta åtgärder på färre aviseringar för samma händelse.
 
-Längden på aggregeringsintervallet beror på Office 365- eller Microsoft 365-prenumerationen.
+Längden på aggregeringsintervallet beror på din Office 365 eller Microsoft 365 prenumeration.
 
 |Prenumeration|Aggregeringsintervall|
 |:---------|:---------:|
@@ -209,7 +210,7 @@ Tänk på följande om aviseringsaggregering:
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>RBAC-behörigheter krävs för att visa aviseringar
 
-RBAC-behörigheterna (Rollbaserad åtkomstkontroll) som tilldelats användare i organisationen avgör vilka aviseringar en användare kan se på **sidan Visa aviseringar.** Hur ska det göras? De hanteringsroller som tilldelats användare & (baserat på deras medlemskap i rollgrupper i säkerhets- och efterlevnadscentret) avgör vilka aviseringskategorier en användare kan se på sidan **Visa** aviseringar. Här är några exempel:
+RBAC-behörigheterna (Rollbaserad åtkomstkontroll) som tilldelats användare i organisationen avgör vilka aviseringar en användare kan se på **sidan** Aviseringar. Hur ska det göras? De hanteringsroller som tilldelats användarna (beroende på deras medlemskap i rollgrupper i Microsoft 365 Efterlevnadscenter) avgör vilka aviseringskategorier en användare kan se på **sidan Aviseringar.** Här är några exempel:
 
 - Medlemmar i rollgruppen Hantering av arkivhandlingar kan bara visa aviseringar som genereras av aviseringsprinciper som tilldelats kategorin **Informationsstyrning.**
 
@@ -219,7 +220,7 @@ RBAC-behörigheterna (Rollbaserad åtkomstkontroll) som tilldelats användare i 
 
 Med den här designen (baserat på behörigheterna för RBAC) kan du avgöra vilka aviseringar som kan visas (och hanteras) av användare i specifika roller i organisationen.
 
-I följande tabell visas de roller som krävs för att visa aviseringar från de sex olika aviseringskategorierna. Den första kolumnen i tabellerna innehåller alla roller i säkerhets- & kompatibilitetscentret.  En bockmarkering anger att en användare som har tilldelats rollen kan visa aviseringar från motsvarande aviseringskategori i den översta raden.
+I följande tabell visas de roller som krävs för att visa aviseringar från de sex olika aviseringskategorierna. Den första kolumnen i tabellerna innehåller alla roller i Microsoft 365 Efterlevnadscenter.  En bockmarkering anger att en användare som har tilldelats rollen kan visa aviseringar från motsvarande aviseringskategori i den översta raden.
 
 Du kan se vilken kategori en standardaviseringsprincip har tilldelats i tabellen i [Standardaviseringsprinciper.](#default-alert-policies)
 
@@ -266,12 +267,12 @@ Du kan se vilken kategori en standardaviseringsprincip har tilldelats i tabellen
 > ```powershell
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
-> 
-> Du kan också visa de roller som tilldelats en rollgrupp i Säkerhets- & Efterlevnadscenter. Gå till **sidan Behörigheter** och välj en rollgrupp. De tilldelade rollerna visas på den utfällna sidan.
+>
+> Du kan också visa rollerna som tilldelats en rollgrupp i Microsoft 365 Efterlevnadscenter. Gå till **sidan Behörigheter** och välj en rollgrupp. De tilldelade rollerna visas på den utfällna sidan.
 
 ## <a name="managing-alerts"></a>Hantera aviseringar
 
-När aviseringar har skapats och  visats på sidan Visa aviseringar i säkerhets- och efterlevnadscentret kan du kontrollera, undersöka och lösa dem. Här är några uppgifter som du kan utföra för att hantera aviseringar.
+När aviseringar har skapats och visats **på** sidan Aviseringar i efterlevnadscentret kan du kontrollera, undersöka och lösa dem. Här är några uppgifter som du kan utföra för att hantera aviseringar.
 
 - **Tilldela en status till aviseringar.** Du kan tilldela en av följande statusar till aviseringar: **Aktiv** (standardvärdet), **Undersöker,** **Löst** **eller Ignorerad.** Sedan kan du filtrera på den här inställningen för att visa aviseringar med samma statusinställning. Den här statusinställningen kan underlätta hanteringen av aviseringar.
 
@@ -283,7 +284,7 @@ När aviseringar har skapats och  visats på sidan Visa aviseringar i säkerhets
 
   - Den användare (eller lista över användare) som utlöste aviseringen. Det här inkluderas endast för aviseringsprinciper som har ställts in för att spåra en enskild användare eller en enskild aktivitet.
 
-  - Antalet gånger som aktiviteten som spårades med aviseringen utfördes. Det här antalet kanske inte överensstämmer med det faktiska antalet relaterade aviseringar som visas på sidan Visa aviseringar eftersom fler aviseringar kan ha utlösts.
+  - Antalet gånger som aktiviteten som spårades med aviseringen utfördes. Det här antalet kanske inte överensstämmer med det faktiska antalet relaterade aviseringar som visas på sidan Aviseringar eftersom fler aviseringar kan ha utlösts.
 
   - En länk till en aktivitetslista som innehåller ett objekt för varje aktivitet som utfördes och som utlöste aviseringen. Varje post i den här listan identifierar när aktiviteten inträffade, namnet på den faktiska åtgärden (till exempel "FileDeleted"), användaren som utförde aktiviteten, objektet (till exempel en fil, ett eDiscovery-ärende eller en postlåda) som aktiviteten utfördes på och IP-adressen till användarens dator. Vid aviseringar om skadlig programvara länkas dessa till en meddelandelista.
 
@@ -291,21 +292,21 @@ När aviseringar har skapats och  visats på sidan Visa aviseringar i säkerhets
 
 - **Hindra e-postaviseringar.** Du kan inaktivera (eller utelämna) e-postaviseringar från den utfällna sidan för att få en avisering. När du förhindrar e-postaviseringar skickar Microsoft inga meddelanden när aktiviteter eller händelser som matchar villkoren i aviseringsprincipen inträffar. Aviseringar utlöses dock när aktiviteter som utförs av användare matchar villkoren i aviseringsprincipen. Du kan också inaktivera e-postaviseringar genom att redigera aviseringsprincipen.
 
-- **Lös aviseringar.** Du kan markera en avisering som löst på sidan med utfällning för en avisering (som anger statusen för aviseringen till **Löst**). Om du inte ändrar filtret visas inte lösta aviseringar på **sidan Visa** aviseringar.
+- **Lös aviseringar.** Du kan markera en avisering som löst på sidan med utfällning för en avisering (som anger statusen för aviseringen till **Löst**). Om du inte ändrar filtret visas inte lösta aviseringar på **sidan** Aviseringar.
 
-## <a name="viewing-cloud-app-security-alerts"></a>Visa säkerhetsvarningar för molnappen
+## <a name="viewing-cloud-app-security-alerts"></a>Visa Cloud App Security aviseringar
 
-Varningar som utlöses av Säkerhetsprinciper för Office 365  Cloud App visas nu på sidan Visa aviseringar i säkerhets- och efterlevnadscentret. Detta inkluderar aviseringar som utlöses av aktivitetsprinciper och aviseringar som utlöses av avvikande identifieringsprinciper i Office 365 Cloud App Security. Det innebär att du kan visa alla aviseringar i säkerhets- och efterlevnadscentret. Office 365 Cloud App Security är endast tillgängligt för organisationer som har en office 365 Enterprise E5- eller Office 365 US Government G5-prenumeration. Mer information finns i [Översikt över Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
+Aviseringar som utlöses av Office 365 Cloud App Security principer visas nu på **sidan Aviseringar** i efterlevnadscentret. Detta inkluderar aviseringar som utlöses av aktivitetsprinciper och aviseringar som utlöses av avvikande identifieringsprinciper i Office 365 Cloud App Security. Det innebär att du kan visa alla aviseringar i efterlevnadscentret. Office 365 Cloud App Security är endast tillgängligt för organisationer som har en Office 365 Enterprise E5 eller Office 365 för myndigheter i USA G5. Mer information finns i [Översikt över Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
-Organisationer som har Microsoft Cloud App Security som en del av en Enterprise Mobility + Security E5-prenumeration eller som en fristående tjänst kan också visa säkerhetsvarningar för molnappar som är relaterade till Office 365-program och -tjänster i Säkerhets- och & efterlevnadscenter.
+Organisationer som har Microsoft Cloud App Security som en del av en Enterprise Mobility + Security E5-prenumeration eller som en fristående tjänst kan också visa Cloud App Security-aviseringar som är relaterade till Microsoft 365-program och -tjänster i Microsoft 365 Efterlevnadscenter.
 
-Om du bara vill visa aviseringar om Cloud App-säkerhet i säkerhets- och efterlevnadscentret använder du **källfiltret** och väljer **Molnappsäkerhet.**
+Om du bara Cloud App Security meddelanden i efterlevnadscentret använder du **filtret Källa** och väljer **Cloud App Security**.
 
-![Använd filtret Källa för att endast visa säkerhetsvarningar för molnappen](../media/FilterCASAlerts.png)
+![Använd filtret Källa för att endast visa Cloud App Security aviseringar](../media/FilterCASAlerts.png)
 
-På ungefär samma sätt som en avisering som utlöses av en aviseringsprincip i säkerhets- och efterlevnadscentret kan du välja en Cloud App-säkerhetsvarning för att visa en utfällsida med information om aviseringen. Aviseringen innehåller en länk för att visa information och hantera aviseringen i Cloud App Security-portalen samt en länk till motsvarande Cloud App Security-princip som utlöste aviseringen. Se [Övervaka aviseringar i Cloud App Security](/cloud-app-security/monitor-alerts).
+På ungefär samma sätt som en avisering som utlöses av en aviseringsprincip i efterlevnadscentret kan du välja en Cloud App Security-avisering för att visa en utfällsida med information om aviseringen. Aviseringen innehåller en länk för att visa information och hantera aviseringen i Cloud App Security-portalen samt en länk till Cloud App Security princip som utlöste aviseringen. Se [Övervaka aviseringar i Cloud App Security](/cloud-app-security/monitor-alerts).
 
-![Aviseringsinformation innehåller länkar till Cloud App Security-portalen](../media/CASAlertDetail.png)
+![Aviseringsinformation innehåller länkar till Cloud App Security portalen](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> Om statusen för en Cloud App-säkerhetsvarning ändras i säkerhets- och efterlevnadscentret uppdateras inte upplösningsstatusen för samma avisering i Cloud App Security-portalen. Om du till exempel markerar statusen  för aviseringen som Löst i säkerhets- och efterlevnadscentret ändras inte statusen för aviseringen i Cloud App Security-portalen. Om du vill lösa eller stänga en Cloud App-säkerhetsvarning hanterar du aviseringen i Cloud App Security-portalen.
+> Om du ändrar status Cloud App Security meddelande i efterlevnadscentret uppdateras inte upplösningsstatusen för samma avisering i Cloud App Security portalen. Om du till exempel markerar statusen för aviseringen som **Löst** i efterlevnadscentret ändras inte statusen för Cloud App Security-portalen. Du kan lösa eller stänga Cloud App Security aviseringen genom att hantera den i Cloud App Security portalen.

@@ -20,12 +20,12 @@ ms.collection:
 description: Administratörer kan lära sig att höja säkerhetsinställningarna och använda rapporter, aviseringar och undersökningar för prioritetskonton i deras Microsoft 365 organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632227"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055250"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Säkerhetsrekommendationer för prioriterade konton i Microsoft 365
 
@@ -36,6 +36,8 @@ För attacker är vanliga nätfiskeattacker som kastar ett slumpmässigt net fö
 Microsoft 365 och Microsoft Defender för Office 365 innehåller flera viktiga funktioner som ger ytterligare säkerhetsnivåer för dina prioriterade konton. I den här artikeln beskrivs de här funktionerna och hur du använder dem.
 
 ![Sammanfattning av säkerhetsrekommendationerna i ikonformulär](../../media/security-recommendations-for-priority-users.png)
+
+<br>
 
 ****
 
@@ -61,7 +63,7 @@ Anvisningar finns i [Steg 1. Öka säkerheten för inloggning för fjärranslutn
 
 - Du kan [](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) använda [](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) autentiseringsprinciper och klientåtkomstregler i Exchange Online för att blockera eller tillåta grundläggande autentisering och äldre autentiseringsprotokoll som POP3, IMAP4 och autentiserad SMTP för specifika användare.
 
-- Du kan inaktivera åtkomst via POP3 och IMAP4 för enskilda postlådor. Du kan inaktivera autentiserad SMTP på organisationsnivå och aktivera den för specifika postlådor som fortfarande kräver det. Instruktioner finns i följande avsnitt:
+- Du kan inaktivera åtkomst via POP3 och IMAP4 för enskilda postlådor. Du kan inaktivera autentiserad SMTP på organisationsnivå och aktivera den för specifika postlådor som fortfarande kräver det. Instruktioner finns i följande artiklar:
   - [Aktivera eller inaktivera åtkomst via POP3 eller IMAP4 för en användare](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [Aktivera eller inaktivera autentiserad sändning via SMTP -klient (SMTP AUTH)](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
@@ -85,7 +87,7 @@ Med användartaggar i Microsoft Defender för Office 365 abonnemang 2 (som en de
 
 **Prioritetskonton** är en typ av inbyggd användartagg (kallas _för systemtagg)_ som du kan använda för att identifiera incidenter och aviseringar som omfattar prioritetskonton. Mer information om **prioritetskonton finns** i [Hantera och övervaka prioritetskonton.](../../admin/setup/priority-accounts.md)
 
-Du kan också skapa anpassade taggar för att ytterligare identifiera och klassificera dina prioritetskonton. Mer information finns i [Användartaggar.](user-tags.md) Observera att du kan hantera **prioritetskonton** (systemtaggar) i samma gränssnitt som anpassade användartaggar.
+Du kan också skapa anpassade taggar för att ytterligare identifiera och klassificera dina prioritetskonton. Mer information finns i [Användartaggar.](user-tags.md) Du kan hantera **prioritetskonton** (systemtaggar) i samma gränssnitt som anpassade användartaggar.
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Övervaka prioritetskonton i aviseringar, rapporter och identifieringar
 
@@ -97,8 +99,8 @@ När du har skyddat och taggt dina prioriterade användare kan du använda tillg
 
 |Funktion|Beskrivning|
 |---|---|
-|Varningar|Användartaggarna för påverkade användare är synliga  och tillgängliga som filter på sidan Visa aviseringar i Säkerhets- & efterlevnadscenter. Mer information finns i [Visa aviseringar](../../compliance/alert-policies.md#viewing-alerts).|
-|Hotutforskaren <p> Identifiering i realtid|I **Threat Explorer** (Microsoft Defender för Office 365 abonnemang 2) eller identifieringar i realtid (Microsoft Defender för Office 365 abonnemang 1) visas användartaggar i rutnätsvyn för e-post och den utfällbara fönsterbilden med **e-postinformation.** Användartaggar är också tillgängliga som en filtrerbar egenskap. Mer information finns i [Taggar i Hotutforskaren.](threat-explorer.md#tags-in-threat-explorer)|
+|Varningar|Användartaggarna för påverkade användare är synliga och tillgängliga som filter **på sidan** Aviseringar i Microsoft 365 Defender portal. Mer information finns i [Visa aviseringar](../../compliance/alert-policies.md#viewing-alerts).|
+|Explorer <p> Identifiering i realtid|I **Utforskaren** (Defender för Office 365 abonnemang 2) och realtidsidentifiering (Defender för Office 365 abonnemang 1) visas användartaggar i **rutnätsvyn för e-post** och den utfällbara fliken E-postinformation. Användartaggar är också tillgängliga som en filtrerbar egenskap. Mer information finns i [Taggar i Utforskaren.](threat-explorer.md#tags-in-threat-explorer)|
 |Kampanjvyer|Användartaggar är en av många filtrerbara egenskaper i kampanjvyer i Microsoft Defender för Office 365 abonnemang 2. Mer information finns i [Kampanjvyer.](campaigns.md)|
 |Statusrapport för hotskydd|I praktiskt taget alla vyer och detaljtabeller i rapporten **om hotskyddsstatus** kan du filtrera resultatet efter **prioritetskonton**. Mer information finns i [Statusrapport för skydd mot hot.](view-email-security-reports.md#threat-protection-status-report)|
 |Rapport om e-postproblem för prioritetskonton|Rapporten **E-postproblem för** prioritetskonton i administrationscentret för Exchange (EAC) innehåller information om ofördröjda och fördröjda meddelanden för **prioritetskonton.** Mer information finns i rapporten [E-postproblem för prioritetskonton.](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
@@ -119,7 +121,7 @@ Microsoft 365 följande resurser för att informera användarna i organisationen
 |Begrepp|Resurser|Beskrivning|
 |---|---|---|
 |Microsoft 365|[Anpassningsbara utbildningsvägar](/office365/customlearning/)|De här resurserna kan hjälpa dig att sätta ihop utbildning för användare i organisationen.|
-|Microsoft 365-säkerhet|[Utbildningsmodul: Skydda organisationen med inbyggd och intelligent säkerhet från Microsoft 365](/learn/modules/security-with-microsoft-365)|I den här modulen kan du beskriva hur Microsoft 365 fungerar tillsammans och att formulera fördelarna med dessa säkerhetsfunktioner.|
+|Microsoft 365-säkerhet|[Learning: Skydda organisationen med inbyggd och intelligent säkerhet från Microsoft 365](/learn/modules/security-with-microsoft-365)|I den här modulen kan du beskriva hur Microsoft 365 fungerar tillsammans och att formulera fördelarna med dessa säkerhetsfunktioner.|
 |Multifaktorautentisering|[Tvåstegsverifiering: Vad är den ytterligare verifieringssidan?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Den här artikeln hjälper slutanvändarna att förstå vad multifaktorautentisering är och varför det används i organisationen.|
 |Utbildning av attack simulering|[Kom igång med Attack simuleringsträning](attack-simulation-training-get-started.md)|Med utbildning av attack simulering i Microsoft Defender för Office 365 abonnemang 2 kan administratörer konfigurera, starta och spåra simulerade nätfiskeattacker mot specifika grupper av användare.|
 

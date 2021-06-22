@@ -11,17 +11,17 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Lär dig hur du använder SharePoint Syntex för att identifiera kontraktsfiler och extrahera data med hjälp av en Microsoft 365 lösning.
-ms.openlocfilehash: b4b11b1bdb980b0ee7629af0cbecbb126a5ae5e5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Lär dig hur du använder SharePoint Syntex identifiera kontraktsfiler och extrahera data med hjälp av en Microsoft 365 lösning.
+ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636212"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054503"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Steg 1. Använda SharePoint Syntex för att identifiera kontraktsfiler och extrahera data
 
-Din organisation behöver ett sätt att identifiera och klassificera alla kontraktsdokument från de många filer du får. Du vill också snabbt kunna visa flera nyckelelement i var och en av de identifierade kontraktsfilerna (till exempel *kund,* entreprenör *och* *avgiftsbelopp).* Det kan du göra genom att [SharePoint Syntex för](index.md) att skapa en dokumentförståelsemodell och använda den på ett dokumentbibliotek.
+Din organisation behöver ett sätt att identifiera och klassificera alla kontraktsdokument från de många filer du får. Du vill också snabbt kunna visa flera nyckelelement i var och en av de identifierade kontraktsfilerna (till exempel *kund,* entreprenör *och* *avgiftsbelopp).* Det kan du göra genom att [SharePoint Syntex](index.md) skapa en dokumentförståelsemodell och använda den i ett dokumentbibliotek.
 
 ## <a name="overview-of-the-process"></a>Översikt över processen
 
@@ -37,7 +37,7 @@ Din organisation behöver ett sätt att identifiera och klassificera alla kontra
 
    ![Kontrakt i dokumentbibliotek](../media/content-understanding/doc-lib-solution.png)
 
-5. Om du har kvarhållningskrav för kontrakten kan [](apply-a-retention-label-to-a-model.md) du även använda modellen för att använda en bevarandeetikett som gör att kontrakten inte raderas under en viss tidsperiod.
+5. Om du har kvarhållnings- eller säkerhetskrav för kontrakten [](apply-a-retention-label-to-a-model.md) kan du [](apply-a-sensitivity-label-to-a-model.md) även använda modellen för att använda en bevarandeetikett eller en känslighetsetikett som gör att kontrakten inte raderas under en viss tidsperiod eller för att begränsa vem som kan komma åt kontrakten.
 
 ## <a name="steps-to-create-and-train-your-model"></a>Steg för att skapa och utbilda din modell
 
@@ -198,6 +198,11 @@ Så här använder du modellen på SharePoint ett dokumentbibliotek:
 6. I **avsnittet Bibliotek >** denna modell  på sidan Modeller eller kontrakt ser du URL-adressen till den SharePoint visas.
 
     ![Skärmbild av startsidan för Avtal som visar biblioteken med den här modellens avsnitt.](../media/content-understanding/contract-libraries-with-this-model.png)
+
+7. Under **Inställningar**  >  **Inställningar för bibliotek:**
+
+   - Lägg till en kolumn **med namnet Status** och **välj** Alternativ som kolumntyp.
+   - Använd **värdena I** **granskning,** Godkänd **och Avvisad.**
 
 När du har tillämpat modellen på dokumentbiblioteket kan du börja ladda upp dokument till webbplatsen och se resultatet.
 

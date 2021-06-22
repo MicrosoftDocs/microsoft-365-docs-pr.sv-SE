@@ -1,5 +1,5 @@
 ---
-title: Princip för användarinskick
+title: Användarrapporterade meddelandeinställningar
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -17,14 +17,14 @@ ms.collection:
 description: Administratörer kan lära sig hur de konfigurerar en postlåda för att samla in skräppost och nätfiske som rapporterats av användare.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f565a71b44d27076ea6ff0b25be5d5b3932913c9
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: e990721dacaa373b6782ee916f051e4753f3edfd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052993"
+ms.locfileid: "53055127"
 ---
-# <a name="user-submissions-policy"></a>Princip för användarinskick
+# <a name="user-reported-message-settings"></a>Användarrapporterade meddelandeinställningar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,16 +33,16 @@ ms.locfileid: "53052993"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-I Microsoft 365 organisationer med Exchange Online postlådor kan du ange en postlåda för att ta emot meddelanden som användarna rapporterar som skadliga eller inte skadliga. När användare skickar meddelanden med de olika rapportalternativen kan du använda postlådan för att snappa upp meddelanden (skicka endast till den anpassade postlådan) eller ta emot kopior av meddelanden (skicka till den anpassade postlådan och Microsoft). Den här funktionen fungerar med följande alternativ för meddelanderapportering:
+I Microsoft 365 organisationer med Exchange Online postlådor kan du ange en postlåda för att ta emot meddelanden som användarna rapporterar som skadliga eller inte skadliga. När användare rapporterar meddelanden med de olika rapportalternativen kan du använda den här postlådan för att snappa upp meddelanden (skicka endast till den anpassade postlådan) eller ta emot kopior av meddelanden (skicka till den anpassade postlådan och Microsoft). Den här funktionen fungerar med följande alternativ för meddelanderapportering:
 
 - [Tillägget Rapportmeddelande](enable-the-report-message-add-in.md)
 - [Tillägget Rapport om nätfiske](enable-the-report-phish-add-in.md)
 - [Rapporteringsverktyg från tredje part](#third-party-reporting-tools)
 
-Genom att leverera användarrapporterade meddelanden till en egen postlåda i stället för direkt till Microsoft kan dina administratörer selektivt och manuellt rapportera meddelanden till Microsoft med hjälp av inskickad [administratör.](admin-submission.md)
+Genom att leverera användarrapporterade meddelanden till en egen postlåda i stället för direkt till Microsoft kan dina administratörer selektivt och manuellt rapportera meddelanden till Microsoft med hjälp av inskickad [administratör.](admin-submission.md) Dessa inställningar kallades tidigare användarinskickingsprincip.
 
   > [!NOTE]
-  > Om rapportering har [inaktiverats i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)åsidosätts den inställningen och användarna kan rapportera meddelanden i Outlook på webben här.
+  > Om rapportering har [inaktiverats i Outlook på webben](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), kommer aktivering av användarrapporter här att åsidosätta den inställningen och göra det möjligt för användare att rapportera meddelanden i Outlook på webben igen.
 
 ## <a name="custom-mailbox-prerequisites"></a>Anpassade postlådekrav
 

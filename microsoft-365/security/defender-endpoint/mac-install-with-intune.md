@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5aeffdaff39c2f10dfa5164764bff38e99c00010
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 077411e5af5825efcf81d19ce8cb72ef850ae17b
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684225"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054320"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Intune-baserad distribution för Microsoft Defender för Slutpunkt i macOS
 
@@ -101,12 +101,12 @@ Den här profilen innehåller licensinformation för Microsoft Defender för End
     > [!div class="mx-imgBorder"]
     > ![Skapa anpassad konfigurationsprofil](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. Välj ett namn för profilen, t.ex. "MDATP onboarding för macOS". Klicka på **Nästa**.
+1. Välj ett namn på profilen, t.ex. "MDE-registrering för macOS". Klicka på **Nästa**.
 
     > [!div class="mx-imgBorder"]
     > ![Anpassad konfigurationsprofil – namn](images/mdatp-6-systemconfigurationprofiles-2.png)
 
-1. Välj ett namn för konfigurationsprofilens namn, t.ex. "MDATP onboarding för macOS".
+1. Välj ett namn för konfigurationsprofilens namn, t.ex. "MDE-registrering för macOS".
 1. Välj intune/WindowsDefenderATPOnboarding.xml som du extraherade från onboarding-paketet ovan som konfigurationsprofilfil.
 
     > [!div class="mx-imgBorder"]
@@ -172,7 +172,7 @@ Den här profilen krävs för macOS 10.15 (Catalina) eller äldre. Det ignoreras
 
 Ladda [**ned fulldisk.mobileconfig från**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) vår [GitHub-lagringsplats.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
-Följ instruktionerna för [blob för onboarding ovan,](#onboarding-blob) med hjälp av "MDATP Full Disk Access" som profilnamn och nedladdat **fulldisk.mobileconfig** som konfigurationsprofilnamn.
+Följ instruktionerna för [blob för onboarding ovan,](#onboarding-blob) med "MDE Full Disk Access" som profilnamn och nedladdad **fulldisk.mobileconfig** som konfigurationsprofilnamn.
 
 ### <a name="network-filter"></a>Nätverksfilter
 
@@ -180,7 +180,7 @@ Som en del av funktionerna Slutpunktsidentifiering och svar inspekterar Microsof
 
 Ladda [**ned netfilter.mobileconfig från**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) vår [GitHub-lagringsplats](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-Följ instruktionerna för [blob för onboarding](#onboarding-blob) ovan, med "MDATP Network Filter" som profilnamn och nedladdat **netfilter.mobileconfig** som konfigurationsprofilnamn.
+Följ instruktionerna för [blob för onboarding](#onboarding-blob) ovan, med "MDE-nätverksfilter" som profilnamn och nedladdat **netfilter.mobileconfig** som konfigurationsprofilnamn.
 
 ### <a name="notifications"></a>Meddelanden
 
@@ -188,7 +188,7 @@ Den här profilen används för att tillåta Microsoft Defender för Slutpunkt p
 
 Ladda [**ned notif.mobileconfig från**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) vår [GitHub-lagringsplats](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-Följ instruktionerna för [blob för onboarding](#onboarding-blob) ovan, med "MDATP Network Filter" som profilnamn och nedladdat **notif.mobileconfig** som konfigurationsprofilnamn.
+Följ instruktionerna för [blob för onboarding](#onboarding-blob) ovan, med "MDE-aviseringar" som profilnamn och nedladdat **notif.mobileconfig** som konfigurationsprofilnamn.
 
 ### <a name="view-status"></a>Visa status
 

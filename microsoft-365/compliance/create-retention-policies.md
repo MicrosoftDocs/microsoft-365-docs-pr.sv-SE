@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd en kvarhållningsprincip för effektiv kontroll över innehåll som användare genererar med e-post, dokument och konversationer. Behåll det du vill ha och ta bort det du inte vill ha.
-ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769425"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053077"
 ---
 # <a name="create-and-configure-retention-policies"></a>Skapa och konfigurera kvarhållningsprinciper
 
@@ -116,7 +116,7 @@ Det är möjligt att en kvarhållningsprincip som används på Microsoft 365-gru
 ### <a name="retention-policy-for-yammer-locations"></a>Kvarhållningsprincip för Yammer-platser
 
 > [!NOTE]
-> Kvarhållningsprinciper för Yammer distribueras som förhandsversion. Om du inte ser de nya platserna för Yammer kan du försöka igen om några veckor.
+> Kvarhållningsprinciper för Yammer är i förhandsversion.
 >
 > För att använda den här funktionen måste Yammer-nätverket vara i [enhetligt läge](/yammer/configure-your-yammer-network/overview-native-mode), inte hybridläge.
 
@@ -127,8 +127,6 @@ Det är möjligt att en kvarhållningsprincip som används på Microsoft 365-gru
 3. För sidan **Bestäm om du vill bevara innehållet och/eller ta bort det** i guiden anger du konfigurationsalternativ för att behålla och ta bort innehåll. 
     
     Du kan skapa en kvarhållningsprincip som bara behåller innehåll utan borttagning, som behåller och sedan tar bort efter en angiven tidsperiod eller som bara tar bort innehåll efter en angiven tidsperiod. Mer information finns i [Inställningar för att behålla och ta bort innehåll](#settings-for-retaining-and-deleting-content) på den här sidan.
-    
-    Välj inte **Använd avancerade inställningar för kvarhållning** eftersom det här alternativet inte stöds för Yammer-platser. 
 
 4. För sidan **Välj platser** väljer du **Låt mig välja specifika platser**. Aktivera sedan en eller båda platserna för Yammer: **Community-meddelanden i Yammer** och **Användarmeddelanden i Yammer**.
     
