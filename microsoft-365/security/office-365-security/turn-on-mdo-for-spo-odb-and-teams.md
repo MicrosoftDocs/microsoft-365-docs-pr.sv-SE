@@ -20,12 +20,12 @@ description: Administratörer kan lära sig hur de aktiverar Valv-filer för Sha
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a654db40e5dec8d23d07ec7455216fe4e0a8c0e7
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: b64b3cfb29b3be999c9e26804e35dc4d02e48fbb
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933017"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083098"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivera säkra bilagor för SharePoint, OneDrive och Microsoft Teams
 
@@ -43,7 +43,7 @@ Den här artikeln innehåller anvisningar för hur du aktiverar och konfigurerar
 
 - Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com>. Gå direkt till sidan **Valv genom** att öppna <https://security.microsoft.com/safeattachmentv2> .
 
-- Om du vill aktivera Valv-bilagor för SharePoint, OneDrive och Microsoft Teams måste du vara medlem i  rollgrupperna  Organisationshantering eller Säkerhetsadministratör i Microsoft 365 Defender-portalen. Mer information finns i [Behörigheter i Microsoft 365 Defender-portalen.](permissions-in-the-security-and-compliance-center.md)
+- Om du Valv aktivera bifogade filer för SharePoint, OneDrive och Microsoft Teams måste du vara medlem i  rollgrupperna  Organisationshantering eller Säkerhetsadministratör i Microsoft 365 Defender portalen. Mer information finns under [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md).
 
 - Om du vill använda SharePoint Online PowerShell för att förhindra att användare [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) laddar ned skadliga filer måste du vara medlem i den globala administratören eller [administratörsrollen SharePoint](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) i Azure AD.
 
@@ -53,7 +53,7 @@ Den här artikeln innehåller anvisningar för hur du aktiverar och konfigurerar
 
 ## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Steg 1: Använd Microsoft 365 Defender-portalen för att aktivera Valv för SharePoint, OneDrive och Microsoft Teams
 
-1. I Defender Microsoft 365 portalen går du till **Principer för & principer** för \> **hotprinciper** Valv bifogade \>  \> **filer.**
+1. I Microsoft 365 Defender-portalen går du till **Principer & Principer** för \>  \> **hotregler Valv** \> **Bifogade filer.**
 
 2. På sidan **Valv bifogade** filer klickar du på **Globala inställningar.**
 
@@ -94,9 +94,9 @@ Detaljerad information om syntax och parametrar finns [i Set-SPOTenant](/powersh
 
 ## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>Steg 3 (rekommenderas) Använd Microsoft 365 Defender-portalen för att skapa en aviseringsprincip för identifierade filer
 
-Du kan skapa en aviseringsprincip som meddelar dig och andra administratörer när Valv-bilagor för SharePoint, OneDrive och Microsoft Teams upptäcker en skadlig fil. Mer information om aviseringar finns i Skapa [aktivitetsaviseringar i Microsoft 365 Defender-portalen.](../../compliance/create-activity-alerts.md)
+Du kan skapa en aviseringsprincip som meddelar dig och andra administratörer när Valv-bilagor för SharePoint, OneDrive och Microsoft Teams upptäcker en skadlig fil. Mer information om aviseringar finns i [Skapa aktivitetsaviseringar i Microsoft 365 Defender portalen.](../../compliance/create-activity-alerts.md)
 
-1. I Defender Microsoft 365 portalen går du till **Principer &** \> **Aviseringsprincip** eller öppna <https://security.microsoft.com/alertpolicies> .
+1. I Microsoft 365 Defender går du till Principer **för &** \> **Principavisering eller** öppnar <https://security.microsoft.com/alertpolicies> .
 
 2. Klicka på **Ny aviseringsprincip** **på sidan Aviseringsprincip.**
 
@@ -142,7 +142,7 @@ Detaljerad information om syntax och parametrar finns [i New-ActivityAlert](/pow
 
 - Kontrollera att du har aktiverat Valv för SharePoint, OneDrive och Microsoft Teams genom att göra något av följande:
 
-  - I Microsoft 365 Defender-portalen går du till Avsnittet **Principer &** regler Hotprinciper Valv Bifogade filer , väljer Globala inställningar och verifierar värdet för aktivera Defender för Office 365 för SharePoint, OneDrive och \>  \>  \>  **Microsoft Teams.** 
+  - I Microsoft 365 Defender-portalen går du till **Policies & rules** Threat \>  \> **Policies** \> **(regler** för hotprinciper) Valv  Bifogade filer , väljer Globala inställningar och verifierar värdet för inställningen Aktivera Defender för Office 365 för SharePoint, OneDrive och Microsoft Teams.
 
   - I Exchange Online PowerShell kör du följande kommando för att verifiera egenskapsinställningen:
 
@@ -161,8 +161,8 @@ Detaljerad information om syntax och parametrar finns [i New-ActivityAlert](/pow
   Detaljerad information om syntax och parametrar finns i [Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 - Verifiera att du har konfigurerat en aviseringsprincip för identifierade filer genom att göra något av följande:
-  - I Microsoft 365 Defender-portalen går du **till Principer &** princip för avisering markerar \>  \> aviseringsprincipen och kontrollerar inställningarna.
-  - I Microsoft 365 Defender-portalen PowerShell ersätter du med namnet på aviseringsprincipen, kör följande kommando \<AlertPolicyName\> och verifierar egenskapsvärdena:
+  - I Microsoft 365 Defender går du till Principer **& princip** för avisering \>  \> markerar aviseringsprincipen och kontrollerar inställningarna.
+  - I Microsoft 365 Defender-portalen Ersätter du med namnet på aviseringsprincipen, kör följande kommando \<AlertPolicyName\> och verifierar egenskapsvärdena:
 
     ```powershell
     Get-ActivityAlert -Identity "<AlertPolicyName>"

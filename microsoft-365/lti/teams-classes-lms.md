@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrera Microsoft Teams klasser i ditt Learning Management System
-ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 940c5c695d602ddce6ea49b1f914f2345fbeb7e5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053257"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083249"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard"></a>Använda Microsoft Teams-klasser med Blackboard
 
@@ -63,8 +63,6 @@ Som Blackboard Learn Ultra-administratör måste du registrera 2 LTI 1.3-integre
 3. Välj **Registrera LTI1.3/Advantage-verktyget**.
 
 4. Ange det första klient-IDt som tillhandahålls (antingen Blackboard eller Microsoft) och välj **Skicka**.
-
-   ![LTI-registerverktyget med ett fält för att ange klient-ID](../media/lti-media/register-tool.png)
 
 5. Granska de ifyllda inställningarna och kontrollera att verktygsstatusen har markerats som godkänd.
 

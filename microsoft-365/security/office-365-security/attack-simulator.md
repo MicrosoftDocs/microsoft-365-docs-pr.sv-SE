@@ -1,5 +1,5 @@
 ---
-title: Attack Attack I Microsoft Defender för Office 365
+title: Attack Attack i Säkerhets- & Säkerhets- och efterlevnadscenter
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,17 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan lära sig hur de använder Attack Attack För att köra simulerade nätfiske- och lösenordsattacker i sina Microsoft 365 E5- eller Microsoft Defender-Office 365 abonnemang 2-organisationer.
+description: Administratörer kan lära sig hur de använder attackattacker i Security & Complance Center för att köra simulerade attacker på nätfiske och lösenord i sina Microsoft 365 E5- eller Microsoft Defender för Office 365 Plan 2-organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 03e6c0077f13c85bfd20ac0583b64ce29e2535a1
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: aa10c30644562a156964ebaa1d63145047ca9264
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878682"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082870"
 ---
-# <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Attack Attack I Microsoft Defender för Office 365
+# <a name="attack-simulator-in-the-security--compliance-center"></a>Attack Attack i Säkerhets- & Säkerhets- och efterlevnadscenter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ Om din organisation har Microsoft Defender för Office 365 abonnemang 2, som omf
 
 > [!NOTE]
 >
-> Attack Attack Så som beskrivs i den här artikeln  är nu skrivskyddad och har ersatts av utbildning av attack simulering **i e-&** för samarbete i Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Mer information finns i Komma [igång med att använda simuleringsutbildning för attacker](attack-simulation-training-get-started.md).
+> Attack Attack Så som beskrivs i den här artikeln  är nu skrivskyddad och har ersatts av utbildning av attack simulering **i e-& för** samarbete i Microsoft 365 Defender portal på <https://security.microsoft.com> . Mer information finns i Komma [igång med att använda simuleringsutbildning för attacker](attack-simulation-training-get-started.md).
 >
 > Möjligheten att starta nya simuleringar från den här versionen av Attack Attack har inaktiverats. Du kan dock fortfarande komma åt rapporter fram till den 24 april 2021.
 

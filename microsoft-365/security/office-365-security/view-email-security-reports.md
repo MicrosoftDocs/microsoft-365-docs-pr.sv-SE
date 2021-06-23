@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Administratörer kan ta reda på hur de e-postsäkerhetsrapporter som finns i Microsoft 365 Defender-portalen hittar och använder.
+description: Administratörer kan ta reda på och använda de e-postsäkerhetsrapporter som finns tillgängliga i Microsoft 365 Defender portalen.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2ad90038ac818f9759768d0d00019393205b03f3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029579"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083530"
 ---
-# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visa e-postsäkerhetsrapporter på Microsoft 365 Defender-portalen
+# <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Visa e-postsäkerhetsrapporter på Microsoft 365 Defender portalen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,20 +35,20 @@ ms.locfileid: "53029579"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Det finns flera olika rapporter på Microsoft 365 Defender-portalen som hjälper dig se hur säkerhetsfunktioner för e-post, till exempel skydd mot skräppost, skadlig programvara och kryptering i <https://security.microsoft.com> Microsoft 365, skyddar organisationen. Om du har [nödvändiga](#what-permissions-are-needed-to-view-these-reports)behörigheter kan du visa de här rapporterna i  Microsoft 365 Defender-portalen genom att gå till Rapporterar \> **e-&-postsamarbete** \> **E& och samarbetsrapporter**. Om du vill gå direkt **till sidan & e-post och** samarbetsrapporter öppnar du <https://security.microsoft.com/emailandcollabreport> .
+En mängd olika rapporter finns på Microsoft 365 Defender-portalen för att hjälpa dig se hur e-postsäkerhetsfunktioner, till exempel skydd mot skräppost, skadlig programvara och krypteringsfunktioner i Microsoft 365 skyddar <https://security.microsoft.com> organisationen. Om du har [nödvändiga](#what-permissions-are-needed-to-view-these-reports)behörigheter kan du visa de här rapporterna  i Microsoft 365 Defender-portalen genom att gå till Rapporterar e-& för samarbete \>  \> **E& och samarbetsrapporter.** Om du vill gå direkt **till sidan & e-post och** samarbetsrapporter öppnar du <https://security.microsoft.com/emailandcollabreport> .
 
-![Skicka & via e-post och samarbetsrapporter i Microsoft 365 Defender-portalen](../../media/email-collaboration-reports.png)
+![Skicka & via e-post och samarbetsrapporter i Microsoft 365 Defender portalen](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
-> Vissa av rapporterna på sidan **e& och samarbetsrapporter** kräver Microsoft Defender för Office 365. Mer information om de här rapporterna finns [i Visa Defender för Office 365-rapporter i Microsoft 365 Defender-portalen.](view-reports-for-mdo.md)
+> Vissa av rapporterna på sidan **E& och samarbetsrapporter** kräver Microsoft Defender för Office 365. Mer information om rapporterna finns i [Visa Defender för Office 365 i Microsoft 365 Defender portal.](view-reports-for-mdo.md)
 >
-> Rapporter som är relaterade till e-postflödet finns nu i administrationscentret för Exchange (EAC). Mer information om rapporterna finns i [E-postflödesrapporter i det nya administrationscentret för Exchange.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> Rapporter som är relaterade till e-postflödet finns nu Exchange administrationscenter (EAC). Mer information om rapporterna finns i [E-postflödesrapporter i det nya Exchange administrationscentret.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 ## <a name="compromised-users-report"></a>Rapport om komprometterade användare
 
 > [!NOTE]
-> Den här rapporten är tillgänglig i Microsoft 365-organisationer med Exchange Online-postlådor. Det är inte tillgängligt i fristående EOP-organisationer (Exchange Online Protection).
+> Den här rapporten är tillgänglig i Microsoft 365 organisationer med Exchange Online postlådor. Det är inte tillgängligt i fristående EOP Exchange Online Protection(EOP).
 
 I **rapporten Komprometterade** användare visas antalet användarkonton som har markerats **som misstänkta eller** begränsade **under** de senaste 7 dagarna. Konton i något av dessa tillstånd är problematiska eller till och med komprometterade. Med regelbunden användning kan du använda rapporten för att upptäcka ökningar och även trender i misstänkta eller begränsade konton. Mer information om komprometterade användare finns i [Svara på ett komprometterat e-postkonto.](responding-to-a-compromised-email-account.md)
 
@@ -56,7 +56,7 @@ I **rapporten Komprometterade** användare visas antalet användarkonton som har
 
 I mängdvyn visas data för de senaste 90 dagarna och i detaljvyn visas data för de senaste 30 dagarna.
 
-Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.** På sidan **E& och samarbetsrapporter** går du till **Komprometterade användare** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/CompromisedUsers> .
+Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** På sidan **E& och samarbetsrapporter** går du till **Komprometterade användare** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/CompromisedUsers> .
 
 På sidan **Komprometterade** användare kan du filtrera både diagrammet och informationstabellen genom att klicka på **Filtrera** och välja ett eller flera av följande värden i den utfällda listan som visas:
 
@@ -75,29 +75,29 @@ I informationstabellen under diagrammet kan du se följande information:
 - **Användar-ID**
 - **Åtgärd**
 
-## <a name="exchange-transport-rule-report"></a>Rapport över Exchange-transportregel
+## <a name="exchange-transport-rule-report"></a>Exchange över transportregel
 
-I **rapporten Exchange-transportregel** visas effekten av e-postflödesregler (kallas även transportregler) på inkommande och utgående meddelanden i organisationen.
+I **Exchange transportregel** visas effekten av e-postflödesregler (kallas även transportregler) på inkommande och utgående meddelanden i organisationen.
 
-Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.** På sidan **E& och samarbetsrapporter** hittar du **Exchange-transportregel** och klickar sedan på **Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/ETRRuleReport> .
+Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** På sidan **E& och samarbetsrapporter** går du till Exchange **transportregel** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/ETRRuleReport> .
 
-![Widget för Exchange-transportregel på sidan E& och samarbetsrapporter](../../media/transport-rule-report-widget.png)
+![Exchange för transportregel på sidan E& och samarbetsrapporter](../../media/transport-rule-report-widget.png)
 
-Tillgängliga diagram **och data beskrivs** i följande avsnitt på sidan Exchange-transportregelrapport.
+På sidan **Exchange transportregelrapport** beskrivs tillgängliga diagram och data i följande avsnitt.
 
 ### <a name="chart-breakdown-by-direction"></a>Diagramfördelning efter riktning
 
-![Riktningsvyn för Exchange-transportregler i exchange-transportregelrapporten](../../media/transport-rule-report-etr-direction-view.png)
+![Riktningsvyn Exchange Över transportregler i Exchange över transportregel](../../media/transport-rule-report-etr-direction-view.png)
 
 Om du väljer **Diagramfördelning efter riktning** är följande diagram tillgängliga:
 
-- **Visa data enligt Exchange-transportregler:** Antalet **inkommande** och **utgående** meddelanden som påverkades av e-postflödesregler.
-- **Visa data med DLP-transportregler** för Exchange: Antalet **inkommande** och utgående meddelanden som påverkades av DLP-e-postflödesregler (Data Loss Prevention). 
+- **Visa data från Exchange för transport:** Antalet **inkommande** och **utgående** meddelanden som påverkades av e-postflödesregler.
+- **Visa data från DLP Exchange för transportregler:** Antalet  **inkommande** och utgående meddelanden som påverkades av DLP-e-postflödesregler (Data Loss Prevention).
 
 Följande information visas i detaljtabellen under diagrammet:
 
 - **Datum**
-- **DLP-princip** (**endast visa data efter DLP-transportregler i Exchange)**
+- **DLP-princip** **(endast visa data Exchange och transportregler)**
 - **Transportregel**
 - **Ämne**
 - **Avsändarens adress**
@@ -115,18 +115,18 @@ När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbry
 
 ### <a name="chart-breakdown-by-severity"></a>Diagramfördelning per allvarlighetsgrad
 
-![Vyn Allvarlighetsgrad för Exchange-transportregler i rapporten Exchange-transportregel](../../media/transport-rule-report-etr-severity-view.png)
+![Vyn Allvarlighetsgrad för Exchange för transportregler i Exchange för transportregel](../../media/transport-rule-report-etr-severity-view.png)
 
 Om du väljer **Diagramfördelning efter allvarlighetsgrad** är följande diagram tillgängliga:
 
-- **Visa data efter Exchange-transportregler:** Antalet **meddelanden** med hög allvarlighetsgrad, medel allvarlighetsgrad och låg **allvarlighetsgrad.** Du anger allvarlighetsnivån som en åtgärd i regeln **(Granska** denna regel med allvarlighetsnivå eller _AngeGranskningSalla_). Mer information finns i Åtgärder för [e-postflödesregel i Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- **Visa data efter Exchange för transportregler:** Antalet meddelanden med hög allvarlighetsgrad, medel allvarlighetsgrad och låg **allvarlighetsgrad.** Du anger allvarlighetsnivån som en åtgärd i regeln **(Granska** denna regel med allvarlighetsnivå eller _AngeGranskningSalla_). Mer information finns i Åtgärder [för e-postflödesregel i Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Visa data med DLP-transportregler** i Exchange: Antalet hög  allvarlighetsgrad **,** **Medel** allvarlighetsgrad och Meddelanden med låg allvarlighetsgrad som påverkades av DLP-e-postflödesregler.
+- **Visa data från DLP Exchange -transportregler:** Antalet hög allvarlighetsgrad  **,** **medel** allvarlighetsgrad och meddelanden med låg allvarlighetsgrad som påverkades av DLP-e-postflödesregler.
 
 Följande information visas i detaljtabellen under diagrammet:
 
 - **Datum**
-- **DLP-princip** (**endast visa data efter DLP-transportregler i Exchange)**
+- **DLP-princip** **(endast visa data Exchange och transportregler)**
 - **Transportregel**
 - **Ämne**
 - **Avsändarens adress**
@@ -149,9 +149,9 @@ När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbry
 
 ## <a name="mailflow-status-report"></a>Statusrapport för e-postflöde
 
-Statusrapporten **E-postflöde** är en smart rapport som visar information om inkommande och utgående e-post, identifiering av skräppost, skadlig programvara, e-post som identifieras som "bra" och information om e-post som är tillåten eller blockerad i kanten. Det här är den enda rapporten som innehåller information om gränsskydd och som visar hur mycket e-post som blockeras innan de tillåts till tjänsten för utvärdering av Exchange Online Protection (EOP). Det är viktigt att vara säker på att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
+Statusrapporten **E-postflöde** är en smart rapport som visar information om inkommande och utgående e-post, identifiering av skräppost, skadlig programvara, e-post som identifieras som "bra" och information om e-post som är tillåten eller blockerad i kanten. Det här är den enda rapporten som innehåller information om gränsskydd och som visar hur mycket e-post som blockeras innan den tillåts till tjänsten för utvärdering av Exchange Online Protection (EOP). Det är viktigt att vara säker på att om ett meddelande skickas till fem mottagare räknas det som fem olika meddelanden och inte ett meddelande.
 
-Om du vill visa rapporten i Microsoft 365 Defender-portalen går du till E-& för  \> **& med** \> **e-& för samarbete.** På sidan **E& och samarbetsrapporter hittar** du **Statussammanfattning av E-postflöde** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/mailflowStatusReport> .
+Om du vill visa rapporten i Microsoft 365 Defender  går du till Rapporterar \> **e-& samarbete** \> **E& och samarbetsrapporter.** På sidan **E& och samarbetsrapporter hittar** du **Statussammanfattning av E-postflöde** och klickar sedan **på Visa information.** Gå direkt till rapporten genom att öppna <https://security.microsoft.com/reports/mailflowStatusReport> .
 
 ![Widget för statussammanfattning av e-postflöde på sidan & för e-postsamarbete](../../media/mail-flow-status-report-widget.png)
 
@@ -521,7 +521,7 @@ Om du **klickar på** Filter är följande filter tillgängliga:
 - **Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton). Mer information om användartaggar finns i [Användartaggar.](user-tags.md)
 - **Riktning**
 - **Domän**
-- **Typ av princip**
+- **Principtyp**
 
 När du är klar med att konfigurera filtren klickar du **på Använd**, **Avbryt** eller **Rensa filter.**
 
@@ -568,7 +568,7 @@ Om du **klickar på** Filter är följande filter tillgängliga:
 - **Riktning**
 - **Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton). Mer information om användartaggar finns i [Användartaggar.](user-tags.md)
 - **Domän**
-- **Typ av princip**
+- **Principtyp**
 - **Principnamn** (endast informationstabell)
 - **Mottagare**
 
@@ -609,7 +609,7 @@ Om du **klickar på** Filter är följande filter tillgängliga:
 - **Riktning**
 - **Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton). Mer information om användartaggar finns i [Användartaggar.](user-tags.md)
 - **Domän**
-- **Typ av princip**
+- **Principtyp**
 - **Principnamn** (endast informationstabell)
 - **Mottagare**
 
@@ -647,7 +647,7 @@ Om du **klickar på** Filter är följande filter tillgängliga:
 - **Riktning**
 - **Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton). Mer information om användartaggar finns i [Användartaggar.](user-tags.md)
 - **Domän**
-- **Typ av princip**
+- **Principtyp**
 - **Principnamn** (endast informationstabell)
 - **Mottagare**
 
@@ -688,7 +688,7 @@ Om du **klickar på** Filter är följande filter tillgängliga:
 - **Riktning**
 - **Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton). Mer information om användartaggar finns i [Användartaggar.](user-tags.md)
 - **Domän**
-- **Typ av princip**
+- **Principtyp**
 - **Principnamn** (endast informationstabell)
 - **Mottagare**
 
@@ -752,7 +752,7 @@ Om du **klickar på** Filter är följande filter tillgängliga:
 - **Riktning**
 - **Tagg:** Filtrera resultatet efter användare eller grupper som har tillämpat den angivna användartaggen (inklusive prioritetskonton). Mer information om användartaggar finns i [Användartaggar.](user-tags.md)
 - **Domän**
-- **Typ av princip**
+- **Principtyp**
 - **Principnamn** (endast informationstabell)
 - **Mottagare**
 
@@ -848,7 +848,7 @@ För att kunna visa och använda rapporterna som beskrivs i den här artikeln m�
 - **Säkerhetsläsare**
 - **Global Reader**
 
-Mer information finns i [Behörigheter i Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
+Mer information finns under [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md).
 
 **Obs!** Om du lägger till användare i motsvarande Azure Active Directory-roll i Administrationscenter för Microsoft 365 får användarna  de behörigheter som krävs i Microsoft 365 Defender-portalen och behörigheter för andra funktioner Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 

@@ -16,12 +16,12 @@ ms.collection:
 description: Administratörer kan lära sig att identifiera särskilda grupper av användare med användartaggar i Microsoft Defender för Office 365 abonnemang 2. Taggfiltrering är tillgängligt i aviseringar, rapporter och undersökningar i Microsoft Defender för Office 365 för att snabbt identifiera de taggade användarna.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 105e927e50f7b1d1217587587b8d7ee3b7d6bd4c
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 3ac53891e0eb106ab3681251cc4cb8c969b51f8a
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904110"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083122"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Användartaggar i Microsoft Defender för Office 365
 
@@ -48,34 +48,34 @@ När du har tillämpat systemtaggar eller anpassade taggar för användare kan d
 - [Kampanjvyer](campaigns.md)
 - För prioritetskonton kan du använda rapporten [E-postproblem](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) för prioritetskonton Exchange administrationscenter (EAC).
 
-I den här artikeln förklarar vi hur du konfigurerar användartaggar Microsoft 365 Defender-portalen. Det finns inga cmdlets i Microsoft 365 Defender-portalen för att hantera användartaggar.
+I den här artikeln förklaras hur du konfigurerar användartaggar Microsoft 365 Defender portalen. Det finns inga cmdlets i Microsoft 365 Defender portal för att hantera användartaggar.
 
 Information om hur användartaggar ingår i strategin för att skydda användarkonton med hög effekt finns i Säkerhetsrekommendationer för [prioriterade konton i Microsoft 365.](security-recommendations-for-priority-accounts.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com/> . Gå direkt till sidan **Användartaggar** genom att öppna <https://security.microsoft.com/securitysettings/userTags> .
+- Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com/>. Gå direkt till sidan **Användartaggar** genom att öppna <https://security.microsoft.com/securitysettings/userTags> .
 
 - Du måste ha tilldelats behörigheter i Microsoft 365 Defender-portalen innan du kan utföra procedurerna i den här artikeln:
   - Om du vill skapa, ändra och ta bort användartaggar måste du vara medlem i rollgrupperna **Organisationshantering** eller **Säkerhetsadministratör.**
   - Om du vill lägga till och ta bort medlemmar från befintliga användartaggar måste du vara medlem i rollgrupperna Organisationshantering, **Säkerhetsadministratör** eller **Säkerhetsoperator**
   - För skrivskyddade åtkomst till användartaggar måste du vara medlem i rollgrupperna **Global Reader** eller **Säkerhetsläsare.**
 
-  Mer information finns i [Behörigheter i Microsoft 365 Defender-portalen.](permissions-in-the-security-and-compliance-center.md)
+  Mer information finns under [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md).
 
   > [!NOTE]
   >
-  > - Om du lägger till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna  de behörigheter som krävs i Microsoft 365 Defender-portalen och behörigheter för andra funktioner Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  > - Om du lägger till användare i Azure Active Directory-rollen i Administrationscenter för Microsoft 365 får användarna de  behörigheter som krävs i Microsoft 365 Defender-portalen och behörigheter för andra funktioner Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   >
   > - Hantering av användartaggar styrs av **rollerna Taggläsare** **och Tagghanteraren.**
 
-- Du kan också hantera och övervaka konton med prioritet Microsoft 365 administrationscentret. Anvisningar finns i Hantera [och övervaka prioritetskonton.](../../admin/setup/priority-accounts.md)
+- Du kan också hantera och övervaka prioritetskonton i Administrationscenter för Microsoft 365. Anvisningar finns i Hantera [och övervaka prioritetskonton.](../../admin/setup/priority-accounts.md)
 
 - Information om hur du skyddar _behöriga konton_ (administratörskonton) finns i det [här avsnittet.](/azure/architecture/framework/security/critical-impact-accounts)
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Använda Defender Microsoft 365 portalen för att skapa användartaggar
+## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Använda Microsoft 365 Defender för att skapa användartaggar
 
-1. Gå till Microsoft 365-post och e-Inställningar och **&** \> **i** \> **Defender-portalen.**
+1. Gå Microsoft 365 Defender e-post och  Inställningar \> **användartaggar för & samarbete i** \> **portalen.**
 
 2. Klicka på **Skapa taggikon** skapa ![ tagg på sidan ](../../media/m365-cc-sc-create-icon.png) **Användartaggar.**
 
@@ -105,9 +105,9 @@ Information om hur användartaggar ingår i strategin för att skydda användark
 
    När du är klar klickar du på **Skicka** och sedan på **Klar**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>Använda Defender Microsoft 365 portalen för att visa användartaggar
+## <a name="use-the-microsoft-365-defender-portal-to-view-user-tags"></a>Använda Microsoft 365 Defender för att visa användartaggar
 
-1. Gå till Microsoft 365-post och e-Inställningar och **&** \> **i** \> **Defender-portalen.**
+1. Gå Microsoft 365 Defender e-post och  Inställningar \> **användartaggar för & samarbete i** \> **portalen.**
 
 2. På **sidan Användartaggar** visas följande egenskaper i listan med användartaggar:
 
@@ -118,25 +118,25 @@ Information om hur användartaggar ingår i strategin för att skydda användark
 
 3. När du väljer en användartagg genom att klicka på namnet visas informationen i en utfällbladstext.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>Använda Defender Microsoft 365 portalen för att ändra användartaggar
+## <a name="use-the-microsoft-365-defender-portal-to-modify-user-tags"></a>Använda Microsoft 365 Defender för att ändra användartaggar
 
-1. Gå till Microsoft 365-post och e-Inställningar och **&** \> **i** \> **Defender-portalen.**
+1. Gå Microsoft 365 Defender e-post och  Inställningar \> **användartaggar för & samarbete i** \> **portalen.**
 
 2. På sidan **Användartaggar** väljer du användartaggen i listan och klickar sedan på Redigera ![ ](../../media/m365-cc-sc-edit-icon.png) **taggikonEn redigera-tagg.**
 
-3. I den utfällklara informationen som visas är samma guide och inställningar tillgängliga enligt beskrivningen i [avsnittet använda Microsoft 365 Defender-portalen](#use-the-microsoft-365-defender-portal-to-create-user-tags) för att skapa användartaggar längre fram i den här artikeln.
+3. I den utfällsamma informationen som visas är samma guide och inställningar tillgängliga enligt beskrivningen i [avsnittet använda Microsoft 365 Defender för](#use-the-microsoft-365-defender-portal-to-create-user-tags) att skapa användartaggar längre fram i den här artikeln.
 
    **Anmärkningar**:
 
    - Sidan **Definiera tagg** är inte tillgänglig för den inbyggda systemtaggen för **Priority-kontot,** så du kan inte byta namn på taggen eller ändra beskrivningen.
    - Du kan inte byta namn på en anpassad tagg, men du kan ändra beskrivningen.
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-user-tags"></a>Använda Defender Microsoft 365 portalen för att ta bort användartaggar
+## <a name="use-the-microsoft-365-defender-portal-to-remove-user-tags"></a>Använda Microsoft 365 Defender för att ta bort användartaggar
 
 > [!NOTE]
 > Du kan inte ta bort systemtaggen för det **inbyggda prioritetskontot.**
 
-1. Gå till Microsoft 365-post och e-Inställningar och **&** \> **i** \> **Defender-portalen.**
+1. Gå Microsoft 365 Defender e-post och  Inställningar \> **användartaggar för & samarbete i** \> **portalen.**
 
 2. På sidan **Användartaggar** väljer du användartaggen i listan och klickar sedan på Ta bort ![ taggikon Ta ](../../media/m365-cc-sc-delete-icon.png) **bort tagg.**
 

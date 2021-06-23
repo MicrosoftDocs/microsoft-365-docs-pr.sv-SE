@@ -16,12 +16,12 @@ description: Visa och undersöka försök till nätfiske efter skadlig kod.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb62961bb26b079c508cbd5bc559a95d172cff86
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cebe76536c5ed309ca16777e85c5cdf919d0fb5c
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029891"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083002"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>E-postsäkerhet med Threat Explorer i Microsoft Defender för Office 365
 
@@ -43,7 +43,7 @@ I den här artikeln förklarar vi hur du visar och undersöker skadlig kod och n
 
 ## <a name="view-malware-detected-in-email"></a>Visa skadlig programvara som upptäckts i e-post
 
-Om du vill se skadlig programvara som upptäckts [](threat-explorer-views.md#email--malware) i e-Microsoft 365 efter teknik använder du vyn E> program för skadlig programvara i Utforskaren (eller identifieringar i realtid). Skadlig programvara är standardvyn, så den kan väljas så fort du öppnar Utforskaren.
+Om du vill se skadlig programvara som upptäckts [**\>**](threat-explorer-views.md#email--malware) i e-Microsoft 365 efter e-Microsoft 365 kan du använda vyn Skadlig e-post i Utforskaren (eller Identifieringar i realtid). Skadlig programvara är standardvyn, så den kan väljas så fort du öppnar Utforskaren.
 
 1. I Microsoft 365 Defender () <https://security.microsoft.com> väljer du **E-& för samarbete** i \> **Utforskaren** (eller **Identifieringar i realtid;** I det här exemplet används Utforskaren).
 

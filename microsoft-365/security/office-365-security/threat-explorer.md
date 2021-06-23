@@ -19,12 +19,12 @@ description: Använd Explorer och realtidsidentifiering i säkerhetscentret i Mi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 4a9a364f82b7f7836c2f0177dfbde80171b9c36f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029591"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083230"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Identifiering av hot i Utforskaren och i realtid
 
@@ -534,7 +534,7 @@ Utöver scenarierna som beskrivs i den här artikeln finns det många fler rappo
 
 ## <a name="required-licenses-and-permissions"></a>Obligatoriska licenser och behörigheter
 
-Du måste ha [Microsoft Defender för Office 365](defender-for-office-365.md) för att kunna använda Utforskaren eller identifiering i realtid.
+Du måste ha [Microsoft Defender Office 365](defender-for-office-365.md) kunna använda Utforskaren eller identifiering i realtid.
 
 - Utforskaren ingår i Defender för Office 365 abonnemang 2.
 - Rapporten Identifieringar i realtid ingår i Defender för Office 365 abonnemang 1.
@@ -545,10 +545,10 @@ Om du vill visa och använda Utforskaren eller Identifiering i realtid måste du
 - För Säkerhets- & efterlevnadscenter måste du ha en av följande roller tilldelade:
 
   - Organisationshantering
-  - Säkerhetsadministratör (detta kan tilldelas i administrationscentret för Azure Active Directory ( <https://aad.portal.azure.com> )
+  - Säkerhetsadministratör (det här kan tilldelas Azure Active Directory administrationscentret ( <https://aad.portal.azure.com> )
   - Säkerhetsläsare
 
-- För Exchange Online måste du ha någon av följande roller tilldelade i administrationscentret för Exchange ( <https://admin.protection.outlook.com/ecp/> ) eller Exchange Online [PowerShell:](/powershell/exchange/exchange-online-powershell)
+- För Exchange Online rollerna måste du ha en av följande roller tilldelade i Exchange admin center ( <https://admin.protection.outlook.com/ecp/> ) eller [Exchange Online PowerShell:](/powershell/exchange/exchange-online-powershell)
 
   - Organisationshantering
   - View-Only organisationshantering
@@ -557,7 +557,7 @@ Om du vill visa och använda Utforskaren eller Identifiering i realtid måste du
 
 Mer information om roller och behörigheter finns i följande resurser:
 
-- [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)
+- [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md)
 - [Funktionsbehörigheter i Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>Skillnader mellan identifiering av hotutforskaren och realtidsidentifiering
@@ -565,7 +565,7 @@ Mer information om roller och behörigheter finns i följande resurser:
 - Rapporten *Identifieringar i realtid finns* i Defender för Office 365 abonnemang 1. *Threat Explorer* är tillgänglig i Defender för Office 365 abonnemang 2.
 - Med rapporten Realtidsidentifiering kan du visa identifieringar i realtid. Threat Explorer gör detta också, men det ger också ytterligare information om en viss attack.
 - Vyn *Alla e-postmeddelanden* är tillgänglig i Utforskaren med hot men inte i rapporten om identifiering i realtid.
-- Fler filtreringsfunktioner och tillgängliga åtgärder ingår i Hotutforskaren. Mer information finns i [Tjänstbeskrivning för Microsoft Defender för Office 365: Funktionstillgänglighet i Defender för Office 365-abonnemang.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+- Fler filtreringsfunktioner och tillgängliga åtgärder ingår i Hotutforskaren. Mer information finns i [Microsoft Defender för Office 365 Beskrivning: Funktionstillgänglighet i Defender för Office 365 abonnemang.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
 
 ## <a name="other-articles"></a>Andra artiklar
 

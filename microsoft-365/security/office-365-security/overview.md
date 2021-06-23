@@ -16,12 +16,12 @@ ms.collection:
 description: Säkerhet i Office 365, från EOP till Defender för Office 365 abonnemang 1 och 2, Standard jämfört med strikt säkerhetskonfigurationer med mera. Förstå vad du har och hur du skyddar dina egenskaper.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ecdfe324ded6224745b0e2eac087e432ac76c83
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: db458f0a3a3ac2cc4a06d0827844e156798f6505
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930253"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083662"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Översikt över Office 365 Microsoft Defender
 
@@ -125,7 +125,7 @@ Den här snabbreferensen hjälper dig att förstå vilka funktioner som ingår i
 
 |Microsoft Defender för Office 365 Abonnemang 1|Microsoft Defender för Office 365 abonnemang 2|
 |---|---|
-|Funktioner för konfiguration, skydd och identifiering: <ul><li>[Säkra bifogade filer](safe-attachments.md)</li><li>[Säkra länkar](safe-links.md)</li><li>[Säkra bilagor för SharePoint, OneDrive och Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Skydd mot nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Identifiering i realtid](threat-explorer.md)</li></ul>|Defender för Office 365 Abonnemang 1  <p> --- plus --- <p> Funktioner för automatisering, undersökning, reparationer och utbildning: <ul><li>[Hotspårare](threat-trackers.md)</li><li>[Hotutforskaren](threat-explorer.md)</li><li>[Automatiska undersökningar och svar](office-365-air.md)</li><li>[Attacksimulator](attack-simulator.md)</li></ul>|
+|Funktioner för konfiguration, skydd och identifiering: <ul><li>[Säkra bifogade filer](safe-attachments.md)</li><li>[Säkra länkar](safe-links.md)</li><li>[Säkra bilagor för SharePoint, OneDrive och Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Skydd mot nätfiske i Defender för Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Identifiering i realtid](threat-explorer.md)</li></ul>|Defender för Office 365 Abonnemang 1  <p> --- plus --- <p> Funktioner för automatisering, undersökning, reparationer och utbildning: <ul><li>[Hotspårare](threat-trackers.md)</li><li>[Hotutforskaren](threat-explorer.md)</li><li>[Automatiska undersökningar och svar](office-365-air.md)</li><li>[Utbildning av attack simulering](attack-simulation-training.md)</li></ul>|
 |
 
 - Microsoft Defender för Office 365 Abonnemang 2 ingår i Office 365 E5, Office 365 A5, Microsoft 365 E5.
@@ -153,5 +153,4 @@ Komma i kapp med [nyheter i Microsoft Defender för Office 365 (inklusive EOP-ut
 
 [Använda Hotutforskaren eller Realtidsidentifieringar](threat-explorer.md)
 
-Använda [Attacksimulator i Defender för Office 365](attack-simulator.md)
-
+Använda [utbildning av attack simulering](attack-simulation-training.md)

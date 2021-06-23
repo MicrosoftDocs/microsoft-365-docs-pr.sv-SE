@@ -74,14 +74,10 @@
       items:
         - name: Läs om Office 365 som drivs av 21Vianet
           href: services-in-china/services-in-china.md
-        - name: Köp eller prova prenumerationer
-          href: ../commerce/try-or-buy-microsoft-365.md?view=o365-21vianet
         - name: Ladda ned Office-appen för Android för Office 365 som drivs av 21Vianet
           href: services-in-china/download-office-app-for-Android.md
         - name: Ladda ned Office-appen för iOS för Office 365 som drivs av 21Vianet
           href: services-in-china/download-office-app-for-iOS.md
-        - name: Visa din faktura eller få en Fapiao
-          href: ../commerce/billing-and-payments/view-your-bill-or-invoice.md?view=o365-21vianet
         - name: Ansöka om en Fapiao
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure Information Protection-support

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccff6abcfcd1a2da32a8e1614a2de45afed69aef
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 52fa73774933ba90e8ca92dd1b337f983f5446c5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843004"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082918"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Minimikraven för Microsoft Defender för Slutpunkt
 
@@ -39,7 +39,7 @@ Det finns några minimikrav för onboarding-enheter i tjänsten. Läs mer om lic
 
 > [!TIP]
 > - Läs mer om de senaste förbättringarna i Defender för Slutpunkt: [Defender för Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
-> - Defender för Endpoint visade branschledandeoptisk och identifieringsfunktioner i den senaste MITRE-utvärderingen. Läs: [Insikter från MITRE ATT&CK-baserad utvärdering.](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)
+> - Defender för Endpoint visade branschledandeoptisk och identifieringsfunktioner i den senaste MITRE-utvärderingen. Läs: [Insights från MITRE ATT&CK-baserad utvärdering.](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)
 
 ## <a name="licensing-requirements"></a>Licensieringskrav
 
@@ -214,7 +214,7 @@ Om Microsoft Defender Antivirus inte är det aktiva program mot skadlig programv
 
 Om din organisation har inaktiverat Microsoft Defender Antivirus grupprincip eller andra metoder måste enheter som är onboarded uteslutas från den här grupprincipen.
 
-Om du onboarding servers och Microsoft Defender Antivirus inte är det aktiva program mot skadlig programvara på dina servrar måste Microsoft Defender Antivirus antingen konfigureras för att gå i passiv form eller avinstalleras. Konfigurationen är beroende av serverversionen. Mer information finns i [Microsoft Defender Antivirus kompatibilitet](/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
+Om du onboarding servers och Microsoft Defender Antivirus inte är det aktiva program mot skadlig programvara på dina servrar måste Microsoft Defender Antivirus antingen konfigureras för att gå i passiv form eller avinstalleras. Konfigurationen är beroende av serverversionen. Mer information finns i [Microsoft Defender Antivirus kompatibilitet](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
 > Din vanliga grupprincip gäller inte för skydd mot manipulering, och ändringar i Microsoft Defender Antivirus-inställningarna ignoreras när Skydd mot manipulering är på.

@@ -1,5 +1,5 @@
 ---
-title: Skydda mot hot
+title: Skydda mot hot i Microsoft Defender för Office 365, skadlig programvara, skydd mot nätfiske, skräppost, Valv-länkar, Valv-bilagor, zap (Zero-hour auto purge), MDO-säkerhetskonfiguration
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 localization_priority: Normal
-ms.date: 09/08/2020
+ms.date: 06/22/2021
 search.appverid:
 - MOE150
 - MET150
@@ -20,12 +20,12 @@ description: Administratörer kan läsa mer om skydd mot hot i Microsoft 365 kon
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 407838c815a85ce7c73322a0de176970ee93e537
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 31ca7c27e3be20e20c16004490bd2ecd5ca4ae05
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029615"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083686"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -40,6 +40,8 @@ Här är en snabbstartsguide som bryter konfigurationen av Defender för Office 
 
 > [!IMPORTANT]
 > **Rekommenderade initiala inställningar ingår för** varje typ av princip, men det finns många alternativ och du kan justera inställningarna så att de uppfyller organisationens behov. Det kan ta ungefär 30 minuter innan principerna eller ändringarna fungerar via datacentret.
+>
+> Om du vill hoppa över manuell konfiguration av de flesta principer i Defender Office 365 kan du använda förinställda säkerhetsprinciper på nivå standard eller strikt. Mer information finns i [Förinställda säkerhetsprinciper i EOP och Microsoft Defender för Office 365.](preset-security-policies.md)
 
 ## <a name="requirements"></a>Krav
 
@@ -48,7 +50,7 @@ Här är en snabbstartsguide som bryter konfigurationen av Defender för Office 
 Skyddsfunktioner för hot ingår i *alla* Microsoft- eller Office 365 prenumerationer. Men vissa prenumerationer har avancerade funktioner. I tabellen nedan visas skyddsfunktioner som ingår i den här artikeln tillsammans med minimikraven för prenumeration.
 
 > [!TIP]
-> Lägg märke till att, förutom anvisningarna för att aktivera *granskning,* börjar du med åtgärder mot skadlig programvara, skydd mot nätfiske och skräppost, som markeras som en del av Office 365 Exchange Online Protection **(EOP).** Det här kan verka konstigt i en Defender Office 365 artikel, tills du kommer ihåg att ( Defender för **Office 365**) innehåller, och bygger på, EOP.
+> Lägg märke till att stegen,  utöver anvisningarna för att aktivera granskning, startar skydd mot skadlig programvara, nätfiske och skräppost, som markeras som en del av Office 365 Exchange Online Protection **(EOP).** Det här kan verka konstigt i en Defender Office 365 artikel, tills du kommer ihåg att ( Defender för **Office 365**) innehåller, och bygger på, EOP.
 
 <br>
 
@@ -60,14 +62,11 @@ Skyddsfunktioner för hot ingår i *alla* Microsoft- eller Office 365 prenumerat
 |Skydd mot skadlig kod|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Skydd mot nätfiske|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Skydd mot skräppost|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Automatisk rensning (för e-post)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Skydd mot skadliga URL:er och filer i e-Office och dokument (Valv och bifogade filer Valv)|[Microsoft Defender för Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Aktivera bifogade filer Valv för SharePoint, OneDrive och Microsoft Teams arbetsbelastningar|[Microsoft Defender för Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
-|Avancerat skydd mot nätfiske|[Microsoft Defender för Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roller och behörigheter
 
-Om du vill konfigurera Defender Office 365-principer måste du ha tilldelats en lämplig roll i [& Säkerhets- och efterlevnadscenter.](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) I tabellen nedan ser du vilka roller som kan utföra de här åtgärderna.
+Du måste vara tilldelad Office 365 för att kunna konfigurera Defender för Office 365-principer. I tabellen nedan ser du vilka roller som kan utföra de här åtgärderna.
 
 <br>
 
@@ -77,27 +76,28 @@ Om du vill konfigurera Defender Office 365-principer måste du ha tilldelats en 
 |---|---|
 |global administratör|[Om administratörsroller i Microsoft 365](../../admin/add-users/about-admin-roles.md)|
 |Säkerhetsadministratör|[Administratörens rollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Exchange Online Organisationshantering|[Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo) <p> och <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
+|Exchange Online Organisationshantering|[Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo)|
 |
 
-Mer information finns i [Behörigheter i Säkerhets- & Kompatibilitetscenter.](permissions-in-the-security-and-compliance-center.md)
+Mer information finns i [Behörigheter i Microsoft 365 Defender portalen.](permissions-microsoft-365-security-center.md)
 
 ### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Aktivera granskningsloggning för rapportering och undersökning
 
-- Starta granskningsloggningen tidigt. Du måste granska vara PÅ **för** vissa av följande steg. Granskningsloggning är tillgänglig i prenumerationer som innehåller [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Om du vill visa data i skyddsrapporter om [](view-email-security-reports.md)hot, till exempel i säkerhetspanelen, [](security-dashboard.md)e-postsäkerhetsrapporter och [Utforskaren,](threat-explorer.md)måste granskningsloggning vara *På.* Mer information finns i [Aktivera eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Starta granskningsloggningen tidigt. Du måste granska vara PÅ **för** vissa av följande steg. Granskningsloggning är tillgänglig i prenumerationer som innehåller [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). För att du ska kunna [](view-email-security-reports.md)visa data i rapporter om skydd mot hot, e-postsäkerhetsrapporter [och Utforskaren](threat-explorer.md)måste granskningsloggningen vara *På.* Mer information finns i [Aktivera eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="part-1---anti-malware-protection-in-eop"></a>Del 1 – Skydd mot skadlig programvara i EOP
 
 Mer information om rekommenderade inställningar för skydd mot skadlig programvara finns i Inställningar för [EOP-policy mot skadlig programvara.](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)
 
-1. Öppna <https://security.microsoft.com/antimalwarev2> .
+1. Öppna sidan **mot skadlig programvara** i Microsoft 365 Defender på <https://security.microsoft.com/antimalwarev2> .
 
-2. På sidan **mot skadlig programvara** väljer du principen **Standardprincip genom** att klicka på namnet.
+2. På sidan **mot skadlig programvara** väljer du principen Standard **(standard) genom att** klicka på namnet.
 
 3. Klicka på Redigera skyddsinställningar i den utfäll plats som öppnas med **principinformation** och konfigurera sedan följande inställningar:
-   - Välj **Aktivera filtret för vanliga bifogade filer om** du vill aktivera filtret för vanliga bifogade filer. Klicka **på Anpassa filtyper om** du vill lägga till fler filtyper.
-   - Kontrollera att **Aktivera automatisk rensning utan timme för skadlig programvara** är markerat.
-   - Kontrollera att ingen av inställningarna i **meddelandeavsnittet** är markerad.
+   - **Avsnittet Skyddsinställningar:**
+     - Välj **Aktivera filtret för vanliga bifogade filer om** du vill aktivera filtret för vanliga bifogade filer. Klicka **på Anpassa filtyper om** du vill lägga till fler filtyper.
+     - **Aktivera automatisk rensning utan timme för skadlig programvara:** Kontrollera att den här inställningen är markerad. Mer information om ZAP för skadlig programvara finns i [Zap (Zero-hour auto purge) för skadlig programvara.](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)
+   - **Meddelandeavsnitt:** Kontrollera att inga av meddelandeinställningarna är markerade.
 
    Klicka på **Spara** när du är klar.
 
@@ -113,13 +113,12 @@ Mer information om rekommenderade inställningar för principer för skydd mot n
 
 Här beskrivs hur du konfigurerar standardprincipen för skydd mot nätfiske. Inställningar som bara finns i Defender för Office 365 är tydligt markerade.
 
-1. Öppna <https://security.microsoft.com/antiphishing> .
+1. Öppna sidan **Mot nätfiske** i Microsoft 365 Defender i <https://security.microsoft.com/antiphishing> .
 
 2. På sidan **Mot nätfiske** väljer du principen **Office365 AntiPhish Default (standard) genom** att klicka på namnet.
 
 3. Konfigurera följande inställningar i den utfällade menyn med principinformation:
-
-   - **Tröskelvärde för & skydd:** Klicka **på** Redigera skyddsinställningar och  konfigurera följande inställningar i den utfällklara menyn Redigera skyddsinställningar:
+   - **Tröskelvärde för & skydd:** Klicka **på Redigera skyddsinställningar** och konfigurera följande inställningar i den utfällklara menyn som öppnas:
      - **Tröskelvärde för nätfiske:** <sup>\*</sup> Välj **2 – Aggressiv** (standard) eller **3 – Mer aggressiva** (strikt).
      - **Personifieringsavsnitt:** <sup>\*</sup> Konfigurera följande värden:
        - Välj **Aktivera** användare att skydda , klicka på länken Hantera **(nn)** avsändare som visas och lägg sedan till interna och externa avsändare som ska skyddas från personifiering, till exempel företagets styrelsemedlemmar, din VD, CFO och andra högre chefer.
@@ -132,7 +131,7 @@ Här beskrivs hur du konfigurerar standardprincipen för skydd mot nätfiske. In
 
      Klicka på **Spara** när du är klar.
 
-   - **Avsnittet** Åtgärder: Klicka **på Redigera åtgärder** och konfigurera följande inställningar i den **utfällfältet** Redigera åtgärder som öppnas:
+   - **Avsnittet** Åtgärder: Klicka **på Redigera åtgärder** och konfigurera följande inställningar i den utfällfältet som öppnas:
      - **Avsnittet Meddelandeåtgärder:** Konfigurera följande inställningar:
        - **Om meddelandet identifieras som en imiterad användare:** <sup>\*</sup> Välj Sätt meddelandet i **karantän.**
        - **Om meddelandet identifieras som en imiterad domän:** <sup>\*</sup> Välj Sätt meddelandet i **karantän.**
@@ -158,13 +157,39 @@ Detaljerade anvisningar för hur du konfigurerar principer för skydd mot nätfi
 
 Mer information om rekommenderade inställningar för skydd mot skräppost finns i Inställningarna för [EOP-policy](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)mot skräppost.
 
-1. Öppna <https://security.microsoft.com/antispam> .
+1. Öppna sidan **Principer för skydd mot skräppost** i Microsoft 365 Defender på <https://security.microsoft.com/antispam> .
 
 2. På sidan **Principer för skräppostskydd** markerar du principen **Anti-spam inbound policy (Default)** i listan genom att klicka på namnet.
 
-3. Gör så här i den utfällade policyinformation som visas:
-   - **Tröskelvärde för massutskick & egenskaper för skräppost:** Klicka **på Redigera tröskelvärde för skräppost och egenskaper**. I **tröskelvärdet för skräppost och** de  egenskaper som visas anger du tröskelvärdet för Massutskick av e-post till 5 (strikt) eller 6 (standard). Klicka på **Spara** när du är klar.
-   - **Avsnittet Tillåtna och blockerade avsändare och domäner:** Granska eller redigera dina tillåtna avsändare och tillåtna domäner.
+3. Konfigurera följande inställningar i den utfällade menyn med principinformation:
+   - **Tröskelvärde för massutskick & egenskaper för skräppost:** Klicka **på Redigera tröskelvärde för skräppost och egenskaper**. Konfigurera följande inställningar i den utfäll du vill använda:
+     - **Tröskelvärde för massutskick:** Ställ in det här värdet på 5 (strikt) eller 6 (standard).
+     - Lämna andra inställningar för standardvärdena **(Av** eller **Inget).**
+
+     Klicka på **Spara** när du är klar.
+
+   - **Avsnittet** Åtgärder: Klicka på **Redigera åtgärder.** Konfigurera följande inställningar i den utfäll du vill använda:
+     - **Avsnittet Meddelandeåtgärder:**
+       - **Skräppost:** Kontrollera **att Flytta meddelandet till mappen Skräppost är** markerat (Standard) eller välj Sätt meddelande i **karantän** (strikt).
+       - **Skräppost med hög** konfidens: **Välj sätt meddelande i karantän.**
+       - **Nätfiske:** Välj **Sätt meddelande i karantän.**
+       - **Nätfiske med hög** konfidens: **Kontrollera att meddelanden i karantän** är markerat.
+       - **Mass:** Kontrollera **att Flytta meddelandet till mappen Skräppost är** markerat (Standard) eller välj Sätt meddelande i **karantän** (strikt).
+     - **Behåll skräppost i karantän i så här många** dagar: Verifiera värdet **30** dagar.
+     - **Aktivera säkerhetstips för skräppost:** Kontrollera att den här inställningen är markerad (aktiverad).
+     - **Aktivera ZAP (Zero-hour auto purge):** Kontrollera att den här inställningen är vald (aktiverad).
+       - **Aktivera för nätfiskemeddelanden:** Kontrollera att den här inställningen är markerad (aktiverad). Mer information finns i [ZAP (Zero-hour auto purge) för nätfiske.](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-phishing)
+       - **Aktivera för skräppostmeddelanden:** Kontrollera att den här inställningen är markerad (aktiverad). Mer information finns i [ZAP (Zero-hour auto purge) för skräppost.](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-spam)
+     - **Avsnittet** Meddelanden:
+       - Välj **Aktivera skräppost-aviseringar för slutanvändaren.**
+         - **Skicka skräppost-aviseringar till slutanvändare var (dagar)**: Verifiera värdet **3** dagar.
+         - **Språk:** Verifiera värdet **Standard eller** välj ett språk.
+
+     Klicka på **Spara** när du är klar.
+
+   - **Avsnittet Tillåtna** och blockerade avsändare och domäner: Granska eller redigera tillåtna avsändare och tillåtna domäner enligt beskrivningen i Skapa spärrade avsändarlistor i [EOP](create-block-sender-lists-in-office-365.md) eller Skapa listor över betrodda avsändare [i EOP.](create-safe-sender-lists-in-office-365.md)
+
+     Klicka på **Spara** när du är klar.
 
 4. Klicka på **Stäng** när du är klar.
 
@@ -176,104 +201,120 @@ Skydd vid klickning från skadliga URL:er och filer är tillgängligt i prenumer
 
 ### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Valv Principer för bifogade filer i Microsoft Defender för Office 365
 
-Konfigurera en Valv [genom](safe-attachments.md)att skapa minst en Valv Princip för länkar.
+Mer information om rekommenderade inställningar för bifogade Valv finns i . [Valv för bifogade filer](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
-1. I [säkerhets- & säkerhets- och efterlevnadscenter](https://protection.office.com) **väljer** du \>  \> **ATP för hothanteringspolicy Valv och** klickar sedan på **Skapa**.
+1. Öppna sidan **Valv bifogade** filer i Microsoft 365 Defender portal på <https://security.microsoft.com/safeattachmentv2> .
 
-2. I guiden **ny Valv bifogade filer** som visas konfigurerar du följande inställningar:
+2. På sidan **Valv bifogade** filer klickar du **på Globala** inställningar och konfigurerar sedan följande inställningar på den utfäll sida som visas:
+   - **Aktivera Defender för Office 365 för SharePoint, OneDrive** och Microsoft Teams : Aktivera den här inställningen ![ ](../../media/scc-toggle-on.png) (aktivera).
 
-   - I rutan **Namn** skriver du `Block malware` och klickar sedan på **Nästa.**
+     > [!IMPORTANT]
+     > **Innan du aktiverar Valv för SharePoint, OneDrive** och Microsoft Teams kontrollerar du att granskningsloggning har aktiverats i organisationen. Den här åtgärden utförs vanligtvis av någon som har rollen Granskningsloggar tilldelad i Exchange Online. Mer information finns i Aktivera [eller inaktivera granskningsloggsökning!](../../compliance/turn-audit-log-search-on-or-off.md)
 
-   - På **Inställningar** konfigurerar du följande inställningar:
-     - I avsnittet **om Valv (okänd respons) för skadlig programvara** väljer du **Blockera**.
-     - I avsnittet **Omdirigera bifogad** fil markerar du alternativet **Aktivera omdirigering.** Ange e-postadressen till organisationens säkerhetsadministratör eller operatör, som ska granska identifierade filer.
+   - **Aktivera Valv dokument för Office**: Aktivera den här inställningen ![ (växlingsknapp ](../../media/scc-toggle-on.png) på). Observera att den här funktionen endast är tillgänglig och meningsfull med Microsoft 365 E5 eller Microsoft 365 E5 Security licenser.
+   - **Tillåt att andra klickar i Skyddad vy även om Valv** dokument identifierat filen som skadlig : Kontrollera att den här inställningen är inaktiverad ![ ](../../media/scc-toggle-off.png) (inaktivera).
 
-     Klicka på **Nästa**.
+   När du är klar klickar du på **Spara**
 
-3. På sidan Används **på** klickar du på Lägg till ett villkor . Välj Används **om:** Mottagardomänen är , klicka på Lägg till , välj din domän eller domäner, klicka på Lägg **till,** klicka på Klar och klicka sedan på **Nästa.**   
+3. På sidan för **Valv klickar** du på Skapa ![ ikon ](../../media/m365-cc-sc-create-icon.png) .
 
-4. Granska inställningarna och klicka sedan på **Slutför**.
+4. I guiden **skapa Valv bifogade** filer som öppnas konfigurerar du följande inställningar:
+   - **Namnge principsidan:**
+     - **Namn**: Ange något unikt och beskrivande.
+     - **Beskrivning**: Ange en valfri beskrivning.
+   - **Sidan Användare och** domäner: Eftersom det här är din första princip och du förmodligen vill maximera täckningen kan du ange dina godkända [domäner](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) i **rutan** Domäner. Annars kan du använda **rutorna Användare** **och** Grupper för en mer detaljerad kontroll. Du kan ange undantag genom att **välja Exkludera dessa användare, grupper och domäner och** ange värden.
+   - **Inställningar** sidan:
+     - **Valv som är okänt svar på skadlig programvara:** Välj **Blockera**.
+     - **Omdirigera bifogade filer med identifierade bifogade filer** : **Aktivera** omdirigering: Aktivera (markera) den här inställningen och ange en e-postadress för att ta emot identifierade meddelanden.
+     - Använd Valv för identifiering av bifogade filer om genomsökning inte kan **slutföras (timeout** eller fel) : Kontrollera att den här inställningen är markerad.
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Valv Länkprinciper i Microsoft Defender för Office 365
+5. När du är klar klickar du på **Skicka** och sedan på **Klar**.
 
-Du kan [Valv konfigurera länkar,](safe-links.md)granska och redigera dina globala inställningar för Valv och skapa minst en Valv Princip för länkar.
-
-1. I [säkerhets- & efterlevnadscenter](https://protection.office.com)  väljer du ATP för hothanteringspolicy Valv och klickar på Globala inställningar och \>  \> konfigurerar sedan följande inställningar: 
-
-   - Kontrollera **att Valv länkar i: Office 365 är** aktiverat: ![ aktivera ](../../media/scc-toggle-on.png) .
-   - **Spåra inte när användare klickar på Valv**: Inaktivera den här inställningen om du vill spåra användarklick: Inaktivera ![ ](../../media/scc-toggle-off.png) .
-   - **Låt inte användare klicka sig fram genom säkra länkar till den ursprungliga** URL:en: Kontrollera att den här inställningen är aktiverad: ![ Aktivera ](../../media/scc-toggle-on.png) .
-
-   Klicka på **Spara** när du är klar.
-
-2. Tillbaka på huvudsidan för Valv klickar du på **Skapa**.
-
-3. I **principguiden Valv Skapa länkar** som visas konfigurerar du följande inställningar:
-
-   - Skriv **ett namn** i rutan Namn, till exempel `Safe Links` , och klicka sedan på **Nästa**.
-
-   - På **Inställningar** konfigurerar du följande inställningar:
-     - **Välj åtgärden för okända potentiellt skadliga URL-adresser i meddelanden:** Välj **På**.
-     - **Välj åtgärden för okända eller potentiellt skadliga URL-adresser i Microsoft Teams**: Välj **På**.
-     - **Använda säkra länkar i e-postmeddelanden som skickas inom organisationen**
-     - **Vänta tills URL-skanningen är klar innan du levererar meddelandet**
-     - **Använda säkra länkar i e-postmeddelanden som skickas inom organisationen**
-     - **Tillåt inte användare att klicka till den ursprungliga URL:en**
-
-     Klicka på **Nästa**
-
-4. På sidan Används **på** klickar du på Lägg till ett villkor . Välj Används **om:** Mottagardomänen är , klicka på Lägg till , välj din domän eller domäner, klicka på Lägg **till,** klicka på Klar och klicka sedan på **Nästa.**   
-
-5. Granska inställningarna och klicka sedan på **Slutför**.
-
-Mer information finns i [Ställ in policyer för säkra länkar](set-up-safe-links-policies.md).
-
-## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Del 5 – Valv att SharePoint, OneDrive och Microsoft Teams är aktiverat
-
-Arbetsbelastningar som SharePoint, OneDrive och Teams är skapade för samarbete. Att använda Defender Office 365 hjälper dig att blockera och identifiera filer som identifieras som skadliga på gruppwebbplatser och i dokumentbibliotek. Du kan läsa mer om hur det fungerar [här.](mdo-for-spo-odb-and-teams.md)
-
-> [!IMPORTANT]
-> **Innan du börjar kontrollerar du att granskningsloggning redan är aktiverat i din Microsoft 365 miljö.** Det görs vanligtvis av någon som har rollen Granskningsloggar tilldelad i Exchange Online. Mer information finns i Aktivera [eller inaktivera granskningsloggsökning!](../../compliance/turn-audit-log-search-on-or-off.md)
-
-1. I [säkerhets- & säkerhets- och efterlevnadscenter](https://protection.office.com)väljer du ATP för  \>  \> **hothanteringspolicy Valv och** klickar sedan **på Globala inställningar.**
-
-2. Kontrollera att **växlingsknappen Aktivera Defender Office 365** för SharePoint, OneDrive och Microsoft Teams är till höger: aktivera och klicka ![ sedan på ](../../media/scc-toggle-on.png) **Spara.**
-
-3. Granska (och, efter behov, redigera) organisationens principer [för Valv för](set-up-safe-attachments-policies.md) bifogade filer Valv principer för [länkar.](set-up-safe-links-policies.md)
-
-4. (Rekommenderas) Som global administratör eller SharePoint Online-administratör kör du cmdleten **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** med _parametern DisallowInfectedFileDownload_ inställt på `$true` .
-
+6. (Rekommenderas) Som global administratör eller SharePoint Online-administratör kör du cmdleten **[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant)** med _parametern DisallowInfectedFileDownload_ inställd på `$true` i SharePoint Online PowerShell.
    - `$true` blockerar alla åtgärder (utom Ta bort) för identifierade filer. Användare kan inte öppna, flytta, kopiera eller dela identifierade filer.
    - `$false` blockerar alla åtgärder utom Ta bort och Ladda ned. Användare kan välja att acceptera risken och ladda ned en upptäckt fil.
 
-   > [!TIP]
-   > Mer information om hur du använder PowerShell Microsoft 365 finns i [Hantera Microsoft 365 med PowerShell.](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)
+7. Det kan ta upp till 30 minuter innan ändringarna sprids till alla Microsoft 365 datacenter.
 
-5. Det kan ta upp till 30 minuter innan ändringarna sprids till alla Microsoft 365 datacenter.
+Detaljerade instruktioner för hur du konfigurerar Valv principer för bifogade filer och globala inställningar Valv bifogade filer finns i följande avsnitt:
 
-### <a name="now-set-up-alerts-for-detected-files"></a>Konfigurera nu aviseringar för identifierade filer
+- [Konfigurera principer Valv för bifogade filer i Microsoft Defender för Office 365](set-up-safe-attachments-policies.md)
+- [Aktivera säkra bilagor för SharePoint, OneDrive och Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)
+- [Säkra dokument i Microsoft 365 E5](safe-docs.md)
 
-Om du vill få ett meddelande när en fil i SharePoint Online, OneDrive för företag eller Microsoft Teams har identifierats som skadlig kan du konfigurera en avisering.
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Valv Länkprinciper i Microsoft Defender för Office 365
 
-1. I [Säkerhets- & säkerhets- och](https://protection.office.com) **efterlevnadscenter väljer du Aviseringar** Hantera \> **aviseringar.**
+Mer information om rekommenderade inställningar för Valv finns i Valv [Inställningar för länkar.](recommended-settings-for-eop-and-office365.md#safe-links-settings)
 
-2. Välj **Ny aviseringsprincip**.
+1. Öppna sidan **Valv Länkar** i Microsoft 365 Defender på <https://security.microsoft.com/safelinksv2> .
 
-3. Ange ett namn för aviseringen. Du kan till exempel skriva Skadliga filer i bibliotek.
+2. På sidan **Valv länkar** klickar du **på Globala** inställningar och konfigurerar sedan följande inställningar på den utfäll sida som visas:
+   - **Inställningar som gäller för innehåll i avsnittet Office 365 program** som stöds:
+     - **Använd Valv länkar i Office 365:** Kontrollera att den här inställningen är aktiverad ![ ](../../media/scc-toggle-on.png) (aktivera).
+     - **Spåra inte när användare klickar på skyddade länkar i Office 365**: Inaktivera den här inställningen ![ ](../../media/scc-toggle-off.png) (inaktivera)
+     - **Låt inte användare klicka till den ursprungliga URL:en i Office 365-appar:** Kontrollera att den här inställningen är aktiverad ![ (växlingsknapp ](../../media/scc-toggle-on.png) på).
 
-4. Skriv en beskrivning för aviseringen. Du kan till exempel skriva Meddelar administratörer när skadliga filer identifieras i SharePoint Online, OneDrive eller Microsoft Teams.
+   När du är klar klickar du på **Spara**
 
-5. I avsnittet **Skicka denna avisering när...** anger du:
+3. På sidan **Valv klickar** du på Skapa ikon ![ ](../../media/m365-cc-sc-create-icon.png) .
 
-   a. I listan **Aktiviteter** väljer du **Upptäckte skadlig programvara i filen**.
+4. I **principguiden Valv Länkar** som öppnas konfigurerar du följande inställningar:
+   - **Namnge principsidan:**
+     - **Namn**: Ange något unikt och beskrivande.
+     - **Beskrivning**: Ange en valfri beskrivning.
+   - **Sidan Användare och** domäner: Eftersom det här är din första princip och du förmodligen vill maximera täckningen kan du ange dina godkända [domäner](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) i **rutan** Domäner. Annars kan du använda **rutorna Användare** **och** Grupper för en mer detaljerad kontroll. Du kan ange undantag genom att **välja Exkludera dessa användare, grupper och domäner och** ange värden.
+   - **Inställningssidan för** skydd:
+     - **Välj åtgärden för okända potentiellt skadliga URL-adresser i meddelanden:** Aktivera den här **inställningen**.
+     - **Välj åtgärden för okända eller potentiellt skadliga URL-adresser i Microsoft Teams**: Aktivera den **här inställningen.** Från och med mars 2020 är den här inställningen förhandsversion och kan bara användas av medlemmar i Microsoft Teams Technology Adoption Program (TAP).
+     - **Använd URL-skanning i realtid för misstänkta länkar och länkar som pekar på filer**: Välj den här inställningen (aktivera).
+       - **Vänta tills URL-skanningen är klar innan du levererar meddelandet:** Välj den här inställningen (aktivera).
+     - **Använd Valv länkar till e-postmeddelanden som skickas inom organisationen:** Välj den här inställningen (aktivera).
+     - **Spåra inte användarklick: Kontrollera** att den här inställningen inte är markerad (inaktiverad).
+     - **Låt inte användarna klicka sig fram till den ursprungliga URL:en:** Kontrollera att den här inställningen är aktiverad (markerad).
+     - **Visa företagets** varumärke på aviserings- och varningssidor: Det är meningsfullt att välja den här inställningen (aktivera den) när du har följt instruktionerna i [Anpassa Microsoft 365](../../admin/setup/customize-your-organization-theme.md) för din organisation för att ladda upp företagets logotyp.
+     - **Omskrivning inte av följande URL:er: Vi** har ingen särskild rekommendation för den här inställningen. Mer information finns i ["Skriva inte om följande URL-listor" i avsnittet Valv Principer för länkar.](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
+   - **Meddelandesida:**
+     - **Hur vill du meddela användarna?** avsnitt: Alternativt kan du välja Använd anpassad **meddelandetext för** att ange anpassad meddelandetext som ska användas. Du kan också välja **Använd Microsoft Translator för automatisk lokalisering** för att översätta den anpassade aviseringstexten till användarens språk. Annars lämnar du **Använd standardmeddelandetexten** markerad.
 
-   b. Lämna **fältet Användare** tomt.
+5. När du är klar klickar du på **Skicka** och sedan på **Klar**.
 
-6. I avsnittet **Skicka den här aviseringen till...** väljer du en eller flera globala administratörer, säkerhetsadministratörer eller säkerhetsläsare som ska få ett meddelande när en skadlig fil identifieras.
+Detaljerade instruktioner för hur du konfigurerar Valv principer för länkar och globala inställningar Valv länkar finns i följande avsnitt:
 
-7. **Spara**.
+- [Konfigurera principer Valv Länkar i Microsoft Defender för Office 365](set-up-safe-links-policies.md)
+- [Konfigurera globala inställningar för Valv Länkar i Microsoft Defender för Office 365](configure-global-settings-for-safe-links.md)
 
-Mer information om aviseringar finns i [Skapa aktivitetsaviseringar i Säkerhets- & Säkerhets- och efterlevnadscenter.](../../compliance/create-activity-alerts.md)
+### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>Konfigurera nu aviseringar för identifierade filer i SharePoint Online eller OneDrive för företag
+
+Om du vill få ett meddelande när en fil i SharePoint Online eller OneDrive för företag har identifierats som skadlig kan du konfigurera en avisering enligt beskrivningen i det här avsnittet.
+
+1. I den Microsoft 365 Defender på <https://security.microsoft.com> går du till E-post **och &-&** \> **princip för** \> **avisering.**
+
+2. Klicka på **Ny aviseringsprincip** **på sidan Aviseringsprincip.**
+
+3. Guiden **Ny aviseringsprincip** öppnas. Konfigurera **följande** inställningar på sidan Namn:
+   - **Namn**: Ange ett unikt och beskrivande namn. Du kan till exempel skriva Skadliga filer i bibliotek.
+   - **Beskrivning**: Ange en valfri beskrivning.
+   - **Allvarlighetsgrad**: Välj **Låg,** **Medel** eller **Hög.**
+   - **Kategori:** Välj **Hantering av hot.**
+
+   Klicka på Nästa när du är **klar**
+
+4. Konfigurera **följande inställningar på** sidan Skapa aviseringsinställningar:
+   - **Vad vill du avisering om?** avsnitt: **Aktivitet har** \> **upptäckts av skadlig programvara i filen**.
+   - **Hur vill du att aviseringen ska utlösas:** Verifiera **varje gång en aktivitet matchar regeln** markeras.
+
+   Klicka på Nästa när du är **klar**
+
+5. På sidan **Ange mottagare** konfigurerar du följande inställningar:
+   - **Skicka** e-postaviseringar: Kontrollera att den här inställningen är gäller.
+   - **E-postmottagare:** Välj en eller flera globala administratörer, säkerhetsadministratörer eller säkerhetsläsare som ska få ett meddelande när en skadlig fil identifieras.
+   - **Daglig meddelandegräns:** Kontrollera **att ingen gräns** har valts.
+
+   Klicka på Nästa när du är **klar**
+
+6. Granska **inställningarna på sidan** Granska dina inställningar, kontrollera **Ja, aktivera det direkt** är markerat och klicka sedan på **Slutför**
+
+Mer information om aviseringsprinciper finns [i Aviseringsprinciper i Microsoft 365 Efterlevnadscenter](../../compliance/alert-policies.md).
 
 > [!NOTE]
 > När du är klar med konfigureringen använder du de här länkarna för att starta undersökningar om arbetsbelastningen:
@@ -283,29 +324,17 @@ Mer information om aviseringar finns i [Skapa aktivitetsaviseringar i Säkerhets
 >- [Vad kan jag göra när en skadlig fil hittas i SharePoint Online, OneDrive och Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [Hantera meddelanden och filer i karantän som administratör i Microsoft 365](manage-quarantined-messages-and-files.md)
 
-## <a name="part-6---additional-settings-to-configure"></a>Del 6 – Ytterligare inställningar att konfigurera
-
-Förutom att konfigurera skydd mot skadlig programvara, skadliga URL:er och filer, nätfiske och skräppost rekommenderar vi att du konfigurerar automatisk rensning utan timme.
-
-### <a name="zero-hour-auto-purge-for-email-in-eop"></a>Automatisk rensning utan timme för e-post i EOP
-
-[ZAP (Zero-hour auto purge)](zero-hour-auto-purge.md) är tillgänglig i prenumerationer som inkluderar [EOP.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) Det här skyddet är aktiverat som standard. Följande villkor måste dock vara uppfyllda för att skyddet ska gälla:
-
-- Åtgärderna för skräppost är inställda **på Flytta meddelandet till mappen Skräppost** i principerna för [skräppostskydd.](anti-spam-protection.md)
-
-- Användarna har kvar sina [standardinställningar för skräppost](configure-junk-email-settings-on-exo-mailboxes.md), och har inte inaktiverat skräppostskyddet.
-
-Mer information finns i [Automatisk rensning på nolltimmar – skydd mot skräppost och skadlig programvara.](zero-hour-auto-purge.md)
-
 ## <a name="post-setup-tasks-and-next-steps"></a>Uppgifter efter installationen och nästa steg
 
 När du har konfigurerat funktionerna för skydd mot hot ska du övervaka hur de här funktionerna fungerar! Granska och ändra dina principer så att de gör det de behöver för dem. Titta också efter nya funktioner och tjänstuppdateringar som kan tillför något.
+
+<br>
 
 ****
 
 |Lämplig åtgärd|Resurser för att få mer information|
 |---|---|
-|Se hur skyddsfunktioner för hot fungerar för organisationen genom att visa rapporter|[Säkerhetsinstrumentpanel](security-dashboard.md) <p> [Säkerhetsrapporter för e-post](view-email-security-reports.md) <p> [Rapporter för Microsoft Defender för Office 365](view-reports-for-mdo.md) <p> [Hotutforskaren](threat-explorer.md)|
-|Regelbundet granska och ändra dina principer för skydd mot hot efter behov|[Secure Score](../defender/microsoft-secure-score.md) <p> [Smarta rapporter och insikter](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 undersökning av hot och svarsfunktioner](./office-365-ti.md)|
+|Se hur skyddsfunktioner för hot fungerar för organisationen genom att visa rapporter|[Säkerhetsrapporter för e-post](view-email-security-reports.md) <p> [Rapporter för Microsoft Defender för Office 365](view-reports-for-mdo.md) <p> [Hotutforskaren](threat-explorer.md)|
+|Regelbundet granska och ändra dina principer för skydd mot hot efter behov|[Secure Score](../defender/microsoft-secure-score.md) <p> [Microsoft 365 undersökning av hot och svarsfunktioner](./office-365-ti.md)|
 |Håll utkik efter nya funktioner och tjänstuppdateringar|[Alternativ för standard- och riktad version](../../admin/manage/release-options-in-office-365.md) <p> [Meddelandecentral](../../admin/manage/message-center.md) <p> [Översikt över Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Tjänstbeskrivningar](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|Läs mer om rekommenderade standard- och strikt säkerhetskonfigurationer för EOP och Defender för Office 365|[Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet](recommended-settings-for-eop-and-office365.md)|
+|

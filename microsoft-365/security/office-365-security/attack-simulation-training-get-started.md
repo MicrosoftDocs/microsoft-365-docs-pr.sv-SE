@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan lära sig hur de använder utbildning av attack simulering för att köra simulerad nätfiske- och lösenordsattacker i sina Microsoft 365 E5 eller Microsoft Defender för Office 365 abonnemang 2 organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 182d3d3c1d3b7c0c43caa8a809e993933707af00
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ad86f77399cfa2a3a780d3fed7e483e3c11bc08d
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878790"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082906"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Kom igång med Attack simuleringsträning
 
@@ -40,21 +40,21 @@ Om din organisation har Microsoft 365 E5 eller Microsoft Defender för Office 36
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Om du vill öppna Microsoft 365 Defender-portalen går du till <https://security.microsoft.com> . Utbildning av attack simulering är tillgänglig på **E-post och** \> **samarbete Attack simulering utbildning**. Om du vill gå direkt till simuleringsutbildningen för attack öppnar du <https://security.microsoft.com/attacksimulator> .
+- Öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com>. Utbildning av attack simulering är tillgänglig på **E-post och** \> **samarbete Attack simulering utbildning**. Om du vill gå direkt till simuleringsutbildningen för attack öppnar du <https://security.microsoft.com/attacksimulator> .
 
 - Mer information om tillgängligheten för simulering av attack i olika abonnemang Microsoft 365 finns i [Microsoft Defender Office 365 beskrivning av tjänsten](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- Du måste ha tilldelats behörigheter i säkerhets- & säkerhets- och efterlevnadscentret eller i Azure Active Directory innan du kan utföra procedurerna i den här artikeln. Du måste vara medlem i Organisationshantering, **Säkerhetsadministratör** eller någon av följande roller: 
+- Du måste ha tilldelats behörigheter i portalen Microsoft 365 Defender eller i Azure Active Directory innan du kan utföra procedurerna i den här artikeln. Du måste vara medlem i Organisationshantering, **Säkerhetsadministratör** eller någon av följande roller: 
   - **Attack attackadministratörer:** Skapa och hantera alla aspekter av attack simuleringskampanjer.
   - **Författare av attack av nyttolast**: Skapa attack payloads som en administratör kan initiera senare.
 
-  Mer information finns i [Behörigheter i Säkerhets- & Kompatibilitetscenter](permissions-in-the-security-and-compliance-center.md) eller [Om administratörsroller.](../../admin/add-users/about-admin-roles.md)
+  Mer information finns i [Behörigheter i Microsoft 365 Defender eller](permissions-microsoft-365-security-center.md) Om [administratörsroller.](../../admin/add-users/about-admin-roles.md)
 
 - Det finns inga Motsvarande PowerShell-cmdlets för simulering av attackattacker.
 
 - Attack simulering och utbildning relaterade data lagras med andra kunddata för Microsoft 365 tjänster. Mer information finns [Microsoft 365 dataplatser](../../enterprise/o365-data-locations.md). Attack simulering är tillgänglig i följande regioner: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN och KOR.
 
-- Från och med 15 juni 2021 finns simuleringsutbildning för attack i GCC. Om din organisation har Office 365 G5 GCC eller Microsoft Defender för Office 365 (abonnemang 2) för myndigheter kan du använda utbildning av attack simulering i Microsoft 365 Defender-portalen för att köra realistiska attackscenarier i organisationen enligt beskrivningen i den här artikeln. Utbildning av attack simulering är ännu inte tillgängligt GCC hög- eller dod-miljöer.
+- Från och med 15 juni 2021 finns simuleringsutbildning för attack i GCC. Om din organisation har Office 365 G5 GCC eller Microsoft Defender för Office 365 (abonnemang 2) för myndigheter kan du använda utbildning av attackspel i Microsoft 365 Defender-portalen för att köra realistiska attackscenarier i organisationen enligt beskrivningen i den här artikeln. Utbildning av attack simulering är ännu inte tillgängligt GCC hög- eller dod-miljöer.
 
 > [!NOTE]
 > Utbildning av attack simulering ger en del av funktionerna för E3-kunder som en utvärderingsversion. Utvärderingserbjudandet innehåller möjligheten att använda en nyttolast för autentiseringsuppgifter och möjligheten att välja utbildningsupplevelser om ISA-nätfiske eller massutfiske. Inga andra funktioner ingår i utvärderingsversionen av E3.

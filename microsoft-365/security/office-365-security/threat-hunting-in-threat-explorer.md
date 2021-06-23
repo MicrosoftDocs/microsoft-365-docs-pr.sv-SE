@@ -12,16 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Använd Threat Explorer eller identifieringar i realtid i Microsoft 365 Defender-portalen för att undersöka och reagera på hot effektivt.
+description: Använd Threat Explorer eller identifieringar i realtid i Microsoft 365 Defender för att undersöka och reagera på hot effektivt.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71052cc5a3874da250772bfa628417824ba51c63
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 2b0c0c36cb481aac64b55467da4aaf9e3cf7a493
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930139"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083566"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Hot jaga i Threat Explorer för Microsoft Defender för Office 365
 
@@ -42,7 +42,7 @@ I den här artikeln:
 
 Om din organisation har [Microsoft Defender för Office 365](defender-for-office-365.md) [](#required-licenses-and-permissions)och du har behörighet kan du använda **Utforskaren** eller **Realtidsidentifiering** för att identifiera och åtgärda hot. 
 
-Gå till **Microsoft 365 E& samarbete** i **Defender-& och** välj sedan **Utforskaren**.
+Gå till **Microsoft 365 Defender e-postsamarbete** i & **och** välj sedan **Utforskaren**.
 
 <br>
 
@@ -68,7 +68,7 @@ I Microsoft Defender för Office 365 finns det två abonnemang – abonnemang 1 
 
 Defender för Office 365 abonnemang 1 använder identifieringar i *realtid,* vilket är en del av sökverktyget i Threat *Explorer* (kallas även *Utforskaren)* i abonnemang 2. I den här serien med artiklar har de flesta av exemplen skapats med hjälp av hela Hotutforskaren. Administratörer bör testa stegen i realtidsidentifiering för att se var de är tillämpliga.
 
-Om du vill öppna verktyget Utforskaren går du till **Microsoft 365 Defender-portalen**  >  **för & för samarbete i**  >  **Utforskaren.** Som standard kommer du till  sidan Skadlig programvara, men använder listrutan **Visa** för att bekanta dig med alternativen. Om du letar efter Phish eller är redo för en hotkampanj väljer du de här vyerna.
+Om du vill öppna verktyget Utforskaren går du till **Microsoft 365 Defender portalen**  >  **E& för samarbete i**  >  **Utforskaren.** Som standard kommer du till  sidan Skadlig programvara, men använder listrutan **Visa** för att bekanta dig med alternativen. Om du letar efter Phish eller är redo för en hotkampanj väljer du de här vyerna.
 
 > [!div class="mx-imgBorder"]
 > ![Listrutan Visa i Utforskaren med hot](../../media/view-drop-down.png)
@@ -252,7 +252,7 @@ Du måste ha [Microsoft Defender Office 365](defender-for-office-365.md) kunna a
 
 Om du vill visa och använda Utforskaren eller Identifieringar i realtid måste du ha följande:
 
-- På Microsoft 365 Defender-portalen:
+- För Microsoft 365 Defender portal:
 
   - Organisationshantering
   - Säkerhetsadministratör (det här kan tilldelas Azure Active Directory administrationscentret ( <https://aad.portal.azure.com> )
@@ -267,7 +267,7 @@ Om du vill visa och använda Utforskaren eller Identifieringar i realtid måste 
 
 Mer information om roller och behörigheter finns i följande resurser:
 
-- [Behörigheter på Microsoft 365 Defender-portalen](permissions-in-the-security-and-compliance-center.md)
+- [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md)
 - [Funktionsbehörigheter i Exchange Online](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 

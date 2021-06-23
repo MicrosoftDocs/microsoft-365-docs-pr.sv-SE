@@ -19,12 +19,12 @@ description: Administratörer kan lära sig hur personifieringsinsikter fungerar
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53baecd100851eb5ab05fe79751961baef3acd5c
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cebccf09c30264d1b7c94185eb4ad28a1b1cf75e
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029675"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083410"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Personifieringsinsikt i Defender för Office 365
 
@@ -58,7 +58,7 @@ Du kan använda personifieringsinsikter i Microsoft 365 Defender-portalen för a
   - **Säkerhetsläsare**
   - **Global Reader**
 
-  Mer information finns i [Behörigheter i Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
+  Mer information finns under [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md).
 
   **Obs!** Om du lägger till användare i motsvarande Azure Active Directory-roll i Administrationscenter för Microsoft 365 får användarna  de behörigheter som krävs i Microsoft 365 Defender-portalen och behörigheter för andra funktioner Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 

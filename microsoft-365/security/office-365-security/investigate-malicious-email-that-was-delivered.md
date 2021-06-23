@@ -20,12 +20,12 @@ description: Lär dig hur du använder funktioner för undersökning av hot och 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e99cda906e97db72a440c3daf509a767181e5342
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: e49963d1ffaeb7bce20f21f82f37fd3675b9cdd3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029813"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083362"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Undersök skadlig e-post som levererats i Microsoft 365
 
@@ -51,7 +51,7 @@ Kontrollera att följande krav uppfylls:
 
 - Organisationen har definierat principer för skydd mot skräppost, skadlig programvara, nätfiske och så vidare. Se [Skydda mot hot i Office 365](protect-against-threats.md).
 
-- Du är global administratör eller har antingen säkerhetsadministratören eller rollen Sök och rensning tilldelad i Microsoft 365 Defender portalen. Mer information finns i [Behörigheter i Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md). För vissa åtgärder måste du också ha rollen Förhandsgranska tilldelad.
+- Du är global administratör eller har antingen säkerhetsadministratören eller rollen Sök och rensning tilldelad i Microsoft 365 Defender portalen. Mer information finns under [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md). För vissa åtgärder måste du också ha rollen Förhandsgranska tilldelad.
 
 ### <a name="preview-role-permissions"></a>Förhandsgranska rollbehörigheter
 
@@ -73,7 +73,7 @@ För att utföra vissa åtgärder, till exempel visa meddelanderubriker eller  l
 >
 > Rollen Global administratör tilldelas rollerna Administrationscenter för Microsoft 365 ( ) och roller som säkerhetsadministratör och säkerhetsläsare <https://admin.microsoft.com> tilldelas i Microsoft 365 Defender ( <https://security.microsoft.com> ). Mer information om roller och behörigheter finns i [Behörigheter i Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-Vi förstår att förhandsgranskning och nedladdning av e-postmeddelanden är känsliga aktiviteter och därför är granskning aktiverad för dessa. När en administratör utför de här aktiviteterna i e-postmeddelanden genereras granskningsloggar för samma och visas i Office 365 Security & Compliance Center ( <https://protection.office.com> ). Gå till **Sök**  >  **i granskningsloggsökning** och filtrera på administratörsnamnet i avsnittet Sök. De filtrerade resultaten visar aktivitet **AdminMailAccess.** Markera en rad för att visa information i avsnittet **Mer information om** förhandsgranskad eller nedladdad e-post.
+Vi förstår att förhandsgranskning och nedladdning av e-postmeddelanden är känsliga aktiviteter och därför är granskning aktiverad för dessa. När en administratör utför de här aktiviteterna i e-postmeddelanden genereras granskningsloggar för samma och visas i Microsoft 365 Defender portalen ( <https://security.microsoft.com> ). Gå till **fliken** \> **Granskningssökning** och filtrera på administratörsnamnet i **rutan** Användare. De filtrerade resultaten visar aktivitet **AdminMailAccess.** Markera en rad för att visa information i avsnittet **Mer information om** förhandsgranskad eller nedladdad e-post.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Hitta misstänkt e-postmeddelande som har levererats
 

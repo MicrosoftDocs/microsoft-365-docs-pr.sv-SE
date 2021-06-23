@@ -21,12 +21,12 @@ ms.custom:
 description: Läs mer om funktionerna för undersökning av hot och svar i Microsoft Defender för Office 365 plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d61da5a12882bef3ffee715bffb37ec96a18fd1
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b0a9ff9c06f7e97d6f74c901c156bfae6c9eb91d
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207174"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083710"
 ---
 # <a name="threat-investigation-and-response"></a>Undersökning och svar på hot
 
@@ -43,33 +43,24 @@ Med funktionerna för undersökning av hot och svar i [Microsoft Defender för O
 - Tillhandahålla insikter och kunskaper för att hjälpa säkerhetsåtgärder förhindra cyberattacker mot organisationen
 - Använda automatisk [undersökning och svar i Office 365](automated-investigation-response-office.md) för kritiska e-postbaserade hot
 
-Funktionerna för undersökning av hot och svar ger insikter i hot och relaterade svarsåtgärder som är tillgängliga i Säkerhets- & efterlevnadscenter. De här insikterna kan hjälpa organisationens säkerhetsteam att skydda användare från e-post- eller filbaserade attacker. Funktionerna hjälper till att övervaka signaler och samla in data från flera källor, till exempel användaraktivitet, autentisering, e-post, komprometterade datorer och säkerhetstillbud. Beslutsfattare och ditt säkerhetsteam kan använda den här informationen för att förstå och reagera på hot mot organisationen och skydda din immateriella egendom.
+Funktioner för undersökning av hot och svar ger insikter i hot och relaterade svarsåtgärder som är tillgängliga i Microsoft 365 Defender portalen. De här insikterna kan hjälpa organisationens säkerhetsteam att skydda användare från e-post- eller filbaserade attacker. Funktionerna hjälper till att övervaka signaler och samla in data från flera källor, till exempel användaraktivitet, autentisering, e-post, komprometterade datorer och säkerhetstillbud. Beslutsfattare och ditt säkerhetsteam kan använda den här informationen för att förstå och reagera på hot mot organisationen och skydda din immateriella egendom.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Bekanta dig med undersökning av hot och svarsverktyg
 
-Funktionerna för undersökning av hot och svar finns i Säkerhets- & säkerhets- och efterlevnadscenter, som en uppsättning verktyg och svarsarbetsflöden, inklusive följande:
+Funktionerna för undersökning av hot och svar surface Microsoft 365 Defender-portalen, som en uppsättning verktyg och svarsarbetsflöden, inklusive följande:
 
-- [Instrumentpanelen för hot](#threat-dashboard)
-- [Explorer](#threat-explorer)
+- [Explorer](#explorer)
 - [Incidenter](#incidents)
-- [Attacksimulator](#attack-simulator)
+- [Utbildning av attack simulering](attack-simulation-training.md)
 - [Automatiska undersökningar och svar](automated-investigation-response-office.md)
 
-### <a name="threat-dashboard"></a>Instrumentpanelen för hot
+### <a name="explorer"></a>Explorer
 
-Använd instrumentpanelen för hot (kallas [](security-dashboard.md)även för säkerhetsinstrumentpanel) för att snabbt se vilka hot som har åtgärdats och som ett visuellt sätt att rapportera till beslutsfattare om hur Microsoft 365 skyddar ditt företag.
-
-![Instrumentpanelen för hot](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
-
-Om du vill visa och använda den här instrumentpanelen går du & Säkerhets- och efterlevnadscenter på **Instrumentpanelen för** \> **hothantering.**
-
-### <a name="threat-explorer"></a>Hotutforskaren
-
-Använd [Threat Explorer (och identifieringar](threat-explorer.md) i realtid) för att analysera hot, se mängden attacker över tid och analysera data efter hotfamiljer, attackers infrastruktur och mycket mer. Threat Explorer (kallas även Utforskaren) är startpunkten för alla säkerhetsanalytikers arbetsflöde för undersökning.
+Använd [Utforskaren (och](threat-explorer.md) identifieringar i realtid) för att analysera hot, se mängden attacker över tid och analysera data efter hotfamiljer, attackersinfrastruktur och mycket mer. Utforskaren (kallas även Threat Explorer) är startpunkten för alla säkerhetsanalytikers arbetsflöde för undersökning.
 
 ![Hotutforskaren](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
 
-Om du vill visa och använda den här rapporten går du & Säkerhets- och efterlevnadscenter i **Utforskaren för** \> **hothantering.**
+Om du vill visa och använda den här rapporten går Microsoft 365 Defender e-postportalen i **Utforskaren för & samarbete.**  >  
 
 ### <a name="incidents"></a>Incidenter
 
@@ -77,13 +68,15 @@ Använd listan Incidenter (kallas även Undersökningar) om du vill se en lista 
 
 ![Lista över aktuella hotincidenter i Office 365](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-Om du vill visa en lista över aktuella incidenter för organisationen går du & Säkerhets- och efterlevnadscenter på Granska incidenter **för** \>  \> **hothantering.**
+Om du vill visa en lista över aktuella incidenter för organisationen går du Microsoft 365 Defender i &  >  **incidenter**.
 
 ![Välj Granskning av hothantering i & säkerhets- och \> efterlevnadscenter](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
-### <a name="attack-simulator"></a>Attacksimulator
+### <a name="attack-simulation-training"></a>Utbildning av attack simulering
 
-Använd Attack Attack För att konfigurera och köra realistiska cyberattacker i organisationen och identifiera sårbara personer innan en verklig cyberattack påverkar ditt företag. Mer information finns i [Attack Attack in Office 365](attack-simulator.md).
+Använd utbildning för att skapa och köra realistiska cyberattacker i organisationen och identifiera sårbara personer innan en verklig cyberattacker påverkar ditt företag. Mer information finns i Simulera [nätfiskeangrepp](attack-simulation-training.md).
+
+Om du vill visa och använda den här funktionen i Microsoft 365 Defender-portalen går du till **E-& om samarbete** Attack  >  **simuleringsutbildning**.
 
 ### <a name="automated-investigation-and-response"></a>Automatiska undersökningar och svar
 
@@ -101,32 +94,30 @@ Microsoft 365 funktioner för undersökning av hot och svar ingår i Microsoft D
 
 ## <a name="required-roles-and-permissions"></a>Roller och behörigheter som krävs
 
-Microsoft Defender för Office 365 använder rollbaserad åtkomstkontroll. Behörigheter tilldelas via vissa roller Azure Active Directory, administrationscentret Microsoft 365 och Säkerhets- & säkerhets- och efterlevnadscenter.
+Microsoft Defender för Office 365 använder rollbaserad åtkomstkontroll. Behörigheter tilldelas via vissa roller i Azure Active Directory, Administrationscenter för Microsoft 365 och Microsoft 365 Defender portal.
 
 > [!TIP]
-> Även om vissa roller, till exempel säkerhetsadministratören, kan tilldelas i säkerhets- och efterlevnadscentret för & kan du överväga att använda antingen administrationscentret Microsoft 365 eller Azure Active Directory i stället. Mer information om roller, rollgrupper och behörigheter finns i följande resurser:
+> Även om vissa roller, till exempel säkerhetsadministratör, kan tilldelas i Microsoft 365 Defender-portalen kan du använda antingen Administrationscenter för Microsoft 365 eller Azure Active Directory stället. Mer information om roller, rollgrupper och behörigheter finns i följande resurser:
 >
-> - [Behörigheter i Säkerhets- och efterlevnadscentret](permissions-in-the-security-and-compliance-center.md)
->
+> - [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md)
 > - [Administratörens rollbehörigheter i Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+
+<br>
 
 ****
 
 |Aktivitet|Roller och behörigheter|
 |---|---|
-|Använd instrumentpanelen för hot (eller den nya [säkerhetspanelen)](security-dashboard.md) <p> Visa information om de senaste eller aktuella hoten|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhetsadministratör**</li><li>**Säkerhetsläsare**</li></ul> <p> De här rollerna kan tilldelas i Azure Active Directory ( <https://portal.azure.com> ) eller administrationscentret Microsoft 365 ( <https://admin.microsoft.com> ).|
-|Använd [Threat Explorer (och identifieringar i realtid) för](threat-explorer.md) att analysera hot|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhetsadministratör**</li><li>**Säkerhetsläsare**</li></ul> <p> De här rollerna kan tilldelas i Azure Active Directory ( <https://portal.azure.com> ) eller administrationscentret Microsoft 365 ( <https://admin.microsoft.com> ).|
-|Visa incidenter (kallas även undersökningar) <p> Lägga till e-postmeddelanden till ett problem|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhetsadministratör**</li><li>**Säkerhetsläsare**</li></ul> <p> De här rollerna kan tilldelas i Azure Active Directory ( <https://portal.azure.com> ) eller administrationscentret Microsoft 365 ( <https://admin.microsoft.com> ).|
-|Utlösa e-poståtgärder i ett incident <p> Hitta och ta bort misstänkta e-postmeddelanden|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhetsadministratör** plus **rollen Sök och** rensning</li></ul> <p> Rollerna **Global administratör** **och Säkerhetsadministratör** kan tilldelas i antingen Azure Active Directory ( <https://portal.azure.com> ) eller i administrationscentret Microsoft 365 ( <https://admin.microsoft.com> ). <p> Rollen **Sök och rensning måste** vara tilldelad i Säkerhets- och & <https://protection.office.com> ().|
-|Integrera Microsoft Defender för Office 365 abonnemang 2 med Microsoft Defender för Slutpunkt  <p> Integrera Microsoft Defender för Office 365 abonnemang 2 med en SIEM-server|Rollen Global **administratör eller** Säkerhetsadministratör **som** tilldelats i antingen Azure Active Directory ( ) eller <https://portal.azure.com> administrationscentret Microsoft 365 ( <https://admin.microsoft.com> ). <p> --- **plus** --- <p> En lämplig roll tilldelad i ytterligare program (till [exempel Microsoft Defender Säkerhetscenter](/windows/security/threat-protection/microsoft-defender-atp/user-roles) eller SIEM-servern).|
+|Använd instrumentpanelen för & Sårbarhetshantering (eller den nya [säkerhetspanelen)](security-dashboard.md) <p> Visa information om de senaste eller aktuella hoten|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhetsadministratör**</li><li>**Säkerhetsläsare**</li></ul> <p> De här rollerna kan tilldelas i Azure Active Directory ( <https://portal.azure.com> ) eller i Administrationscenter för Microsoft 365 ( <https://admin.microsoft.com> ).|
+|Använd [Utforskaren (och identifieringar i realtid) för](threat-explorer.md) att analysera hot|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhetsadministratör**</li><li>**Säkerhetsläsare**</li></ul> <p> De här rollerna kan tilldelas i Azure Active Directory ( <https://portal.azure.com> ) eller i Administrationscenter för Microsoft 365 ( <https://admin.microsoft.com> ).|
+|Visa incidenter (kallas även undersökningar) <p> Lägga till e-postmeddelanden till ett problem|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhetsadministratör**</li><li>**Säkerhetsläsare**</li></ul> <p> De här rollerna kan tilldelas i Azure Active Directory ( <https://portal.azure.com> ) eller i Administrationscenter för Microsoft 365 ( <https://admin.microsoft.com> ).|
+|Utlösa e-poståtgärder i ett incident <p> Hitta och ta bort misstänkta e-postmeddelanden|Något av följande: <ul><li>**Global administratör**</li><li>**Säkerhetsadministratör** plus **rollen Sök och** rensning</li></ul> <p> Rollerna **Global administratör** **och Säkerhetsadministratör** kan tilldelas i antingen Azure Active Directory ( <https://portal.azure.com> ) eller i Administrationscenter för Microsoft 365 ( <https://admin.microsoft.com> ). <p> Rollen **Sök och rensning måste** vara tilldelad i rollerna **e& och samarbete** i Microsoft 36 Defender-portalen ( <https://security.microsoft.com> ).|
+|Integrera Microsoft Defender för Office 365 abonnemang 2 med Microsoft Defender för Slutpunkt <p> Integrera Microsoft Defender för Office 365 abonnemang 2 med en SIEM-server|Antingen **global administratör** eller **säkerhetsadministratörsroll** som tilldelats i antingen Azure Active Directory ( <https://portal.azure.com> ) eller Administrationscenter för Microsoft 365 ( <https://admin.microsoft.com> ). <p> --- **plus** --- <p> En lämplig roll tilldelad i ytterligare program (till [exempel Microsoft Defender Säkerhetscenter](/windows/security/threat-protection/microsoft-defender-atp/user-roles) eller SIEM-servern).|
 |
 
 ## <a name="next-steps"></a>Nästa steg
 
 - [Lär dig mer om hotspårningar – nytt och värt att uppmärksamma](threat-trackers.md)
-
 - [Hitta och undersöka skadlig e-post som har Office 365 (undersökning av hot och svar)](investigate-malicious-email-that-was-delivered.md)
-
 - [Integrera Office 365 undersökning av hot och svar med Microsoft Defender för Slutpunkt](integrate-office-365-ti-with-mde.md)
-
-- [Lär dig mer om Attack Attack](attack-simulator.md)
+- [Simulera en nätfiskeattack](attack-simulation-training.md)

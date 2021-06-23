@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan läsa om hur standard- och strikt-principinställningarna används i alla skyddsfunktioner i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24fe67a7465ec71451b649dbc5963c28e0dc7cf3
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: eb5fb2e882348e2cd0480abf5ad7217095b2522d
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879018"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083494"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förinställda säkerhetsprinciper i EOP och Microsoft Defender för Office 365
 
@@ -105,7 +105,7 @@ Inställningarna i principen för  strikt skydd åsidosätter med andra ord inst
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Använd för att gå direkt **till sidan Förinställda** <https://security.microsoft.com/presetSecurityPolicies> säkerhetsprinciper.
+- Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com>. Använd för att gå direkt **till sidan Förinställda** <https://security.microsoft.com/presetSecurityPolicies> säkerhetsprinciper.
 
 - Information om hur du ansluter till Exchange Online PowerShell finns i [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -115,11 +115,11 @@ Inställningarna i principen för  strikt skydd åsidosätter med andra ord inst
 
   Mer information finns under [Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Obs!** Om du lägger till användare Azure Active Directory motsvarande roll i Microsoft 365-administrationscentret  får användarna de behörigheter och behörigheter som krävs för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  **Obs!** Om du lägger till användare Azure Active Directory motsvarande roll i Administrationscenter för Microsoft 365  får användarna nödvändiga behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 
-### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Använda Defender Microsoft 365 portalen för att tilldela förinställda säkerhetsprinciper till användare
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Använd Microsoft 365 Defender-portalen för att tilldela förinställda säkerhetsprinciper till användare
 
-1. I Microsoft 365 Defender-portalen går du till avsnittet **Förinställda säkerhetsprinciper för &-&** e-postsamarbetesprinciper i \>  \>  \>  \> **Defender-portalen.**
+1. I Microsoft 365 Defender går du till avsnittet Förinställda **&** för e& för samarbete i & Principer för hot i \>  \>  \>  \> **mallen.**
 
 2. Under **Standardskydd eller** **Strikt skydd klickar** du på **Redigera**.
 
@@ -132,7 +132,7 @@ Inställningarna i principen för  strikt skydd åsidosätter med andra ord inst
 
    För användare eller grupper kan du använda de flesta identifierare (namn, visningsnamn, alias, e-postadress, kontonamn osv.), men motsvarande visningsnamn visas i resultatet. Om du vill visa alla tillgängliga värden för användare anger du en asterisk (\*) för sig själv.
 
-   - **Exkludera dessa användare, grupper och domäner**: Om du vill lägga till undantag för interna mottagare som principen gäller för (Mottagarundantag), väljer du det här alternativet och konfigurerar undantagen. Inställningarna och beteendet är likadana som villkoren.
+   - **Uteslut dessa användare, grupper** och domäner: Om du vill lägga till undantag för de interna mottagare som principen gäller för (mottagarundantag), väljer du det här alternativet och konfigurerar undantagen. Inställningarna och beteendet är likadana som villkoren.
 
    Klicka på **Nästa** när du är klar.
 

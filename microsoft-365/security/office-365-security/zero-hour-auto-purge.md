@@ -1,11 +1,11 @@
 ---
-title: Automatisk rensning (ZAP) på nolltimmar
+title: Automatisk rensning utan timme i Microsoft Defender för Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 06/22/2021
 audience: Admin
 ms.topic: conceptual
 localization_priority: Normal
@@ -19,15 +19,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratörer kan ta reda på hur ZAP (Zero-hour Auto Purge) retroaktivt kan flytta skickade meddelanden i en Exchange Online-postlåda till mappen Skräppost eller karantän som retroaktivt visar sig vara skräppost eller nätfiske.
+description: Zap (Zero-hour auto purge) flyttar retroaktivt alla meddelanden i en Exchange Online-postlåda till mappen Skräppost eller karantän som visar sig vara skräppost eller nätfiske efter leveransen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9612f6267a0786b6f81f1c9a3f2ac270e344d0a8
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: fdfc39b8bd18d33f95b85028e3661008a17a1209
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730684"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083506"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>ZAP (Zero-hour auto purge) i Exchange Online
 
@@ -38,8 +38,7 @@ ms.locfileid: "52730684"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-## <a name="basic-features-of-zap"></a>Grundläggande funktioner i ZAP
+## <a name="zero-hour-auto-purge-zap-basics"></a>Grundläggande om autorensning (ZAP) på nolltimmar
 
 I Microsoft 365 organisationer med postlådor i Exchange Online är ZAP (zero-hour auto purge) en funktion för e-postskydd som retroaktivt identifierar och neutralerar skadliga nätfiske-, skräppost- eller skadlig programvara som redan har levererats till Exchange Online-postlådor.
 
@@ -53,13 +52,13 @@ ZAP-åtgärden är smidig för användaren. de meddelas inte om ett meddelande i
 
 [Valv distributionslistor](create-safe-sender-lists-in-office-365.md)har e-postflödesregler (kallas även transportregler), inkorgsregler eller ytterligare filter företräde framför ZAP. På ungefär samma sätt som i e-postflödet innebär det att även om tjänsten bestämmer att det levererade meddelandet behöver ZAP, så ageras meddelandet inte på grund av konfigurationen betrodda avsändare. Det här är en annan anledning till att vara försiktig med att konfigurera meddelanden för att kringgå filtrering.
 
-### <a name="zap-for-malware"></a>ZAP för skadlig programvara
+### <a name="zero-hour-auto-purge-zap-for-malware"></a>ZAP (Zero-hour auto purge) för skadlig programvara
 
 För **lästa eller olästa meddelanden** som innehåller skadlig programvara efter leverans sätts det meddelande som innehåller den bifogade filen i skadlig programvara i karantän av ZAP. Endast administratörer kan visa och hantera meddelanden om skadlig programvara från karantän.
 
 ZAP för skadlig programvara är aktiverat som standard i principer mot skadlig programvara. Mer information finns i Konfigurera [principer för skydd mot skadlig programvara i EOP.](configure-anti-malware-policies.md)
 
-### <a name="zap-for-phishing"></a>ZAP för nätfiske
+### <a name="zero-hour-auto-purge-zap-for-phishing"></a>Zap (Zero-hour auto purge) för nätfiske
 
 För lästa eller **olästa** meddelanden som identifieras som nätfiske efter leverans beror  ZAP-resultatet på åtgärden som är konfigurerad för en filtrering av nätfiskemeddelanden i gällande policy mot skräppost. Tillgängliga filtreringsåtgärder för nätfiske och deras möjliga ZAP-resultat beskrivs i följande lista:
 
@@ -73,13 +72,13 @@ Som standard är ZAP för nätfiske aktiverat i principer för  skydd mot skräp
 
 Mer information om konfigurering av skräppostfiltrering av filtreringsprinciper finns i [Konfigurera principer mot skräppost i Microsoft 365.](configure-your-spam-filter-policies.md)
 
-### <a name="zap-for-high-confidence-phishing"></a>ZAP för nätfiske med hög förtroende 
+### <a name="zero-hour-auto-purge-zap-for-high-confidence-phishing"></a>ZAP (Zero-hour auto purge) för nätfiske med hög säkerhet
 
-För **lästa eller olästa** meddelanden som identifieras som nätfiske efter leverans sätts meddelandet i karantän av ZAP. Endast administratörer kan visa och hantera meddelanden med hög säkerhet från karantän. 
+För **lästa eller olästa** meddelanden som identifieras som nätfiske efter leverans sätts meddelandet i karantän av ZAP. Endast administratörer kan visa och hantera meddelanden med hög säkerhet från karantän.
 
 ZAP för hög konfidens är aktiverat som standard. Mer information finns i [Skydda som standard i Office 365](secure-by-default.md).
 
-### <a name="zap-for-spam"></a>ZAP för skräppost
+### <a name="zero-hour-auto-purge-zap-for-spam"></a>ZAP (Zero-hour auto purge) för skräppost
 
 För **olästa** meddelanden som identifieras som skräppost efter leverans beror ZAP-resultatet  på åtgärden som är konfigurerad för skräppostfiltreringen i tillämplig skyddsprincip. Tillgängliga filtreringsåtgärder för skräppost och deras möjliga ZAP-resultat beskrivs i följande lista:
 
@@ -93,7 +92,7 @@ Som standard har ZAP för skräppost aktiverats i principer  för skydd mot skr�
 
 Mer information om konfigurering av skräppostfiltrering av filtreringsprinciper finns i [Konfigurera principer mot skräppost i Microsoft 365.](configure-your-spam-filter-policies.md)
 
-### <a name="zap-considerations-for-microsoft-defender-for-office-365"></a>ZAP-överväganden för Microsoft Defender för Office 365
+### <a name="zero-hour-auto-purge-zap-considerations-for-microsoft-defender-for-office-365"></a>ZAP-överväganden (Zero-hour auto purge) för Microsoft Defender för Office 365
 
 ZAP sätt inte i karantän ett meddelande [](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) som pågår i processen för dynamisk leverans i genomsökning av bifogade filer i Valv, eller där EOP-filtrering av skadlig programvara redan har ersatt den bifogade filen med **Text.txtfil.** Om en nätfiske- eller skräppostsignal tas emot för dessa typer av meddelanden, och filtreringen av bedömning i principen mot skräppost är inställd på att vidta någon åtgärd för meddelandet (Flytta till Skräppost, Omdirigera, Ta bort eller Karantän) använder ZAP en "Flytta till skräppost"-åtgärd.
 
@@ -101,7 +100,7 @@ ZAP sätt inte i karantän ett meddelande [](safe-attachments.md#dynamic-deliver
 
 Om du vill avgöra om ZAP har [](view-email-security-reports.md#threat-protection-status-report) flyttat ditt meddelande kan du använda antingen rapporten om hotskyddsstatus eller [Threat Explorer (och identifieringar i realtid).](threat-explorer.md) Observera att ZAP inte loggas i Exchange postlådegranskningsloggar som en systemåtgärd.
 
-## <a name="zap-faq"></a>VANLIGA FRÅGOR OM ZAP
+## <a name="zero-hour-auto-purge-zap-faq"></a>Vanliga frågor om autorensning (ZAP) (Zero-hour auto purge)
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>Vad händer om ett legitimt meddelande flyttas till mappen Skräppost?
 
@@ -115,16 +114,16 @@ ZAP kommer att vidta åtgärder för ett meddelande baserat på konfigurationen 
 
 Valv avsändare, e-postflödesregler eller blockera och tillåta att organisationsinställningar prioriteras. Dessa meddelanden är undantagna från ZAP eftersom tjänsten gör vad du har konfigurerat den för. Det här är en annan anledning till att vara försiktig med att konfigurera meddelanden för att kringgå filtrering.
 
-### <a name="what-are-the-licensing-requirements-for-zap-to-work"></a>Vilka licenskrav gäller för att ZAP ska fungera?
+### <a name="what-are-the-licensing-requirements-for-zero-hour-auto-purge-zap-to-work"></a>Vilka licenskrav gäller för att ZAP (Zero-hour auto purge) ska fungera?
 
 Det finns inga begränsningar för licenser. ZAP fungerar för alla postlådor som finns på Exchange online. ZAP fungerar inte i fristående EOP Exchange Online Protection miljöer (EOP) som skyddar lokala e-postlådor Exchange postlådor.
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Vad händer om ett meddelande flyttas till en annan mapp (t.ex. inkorgsregler)?
 
-ZAP fungerar fortfarande så länge meddelandet inte har tagits bort, eller så länge samma, eller starkare, åtgärder inte redan har tillämpats. Om till exempel principen för nätfiske är inställd på att sätta i karantän och meddelandet redan finns i skräpposten kommer ZAP att vidta åtgärder för att sätta i karantän meddelandet.
+Automatisk rensning utan timme fungerar fortfarande så länge meddelandet inte har tagits bort, eller så länge samma, eller starkare, åtgärd inte redan har tillämpats. Om till exempel principen för nätfiske är inställd på att sätta i karantän och meddelandet redan finns i skräpposten kommer ZAP att vidta åtgärder för att sätta i karantän meddelandet.
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Hur påverkar ZAP postlådorna?
 
-ZAP sätt meddelanden från postlådor i karantän. ZAP kan flytta meddelanden till mappen Skräppost baserat på åtgärder som är konfigurerade för skräppost eller nätfiske mot skräppost.
+En automatisk rensning utan timme sätt meddelanden från postlådor i karantän. ZAP kan flytta meddelanden till mappen Skräppost baserat på åtgärder som är konfigurerade för skräppost eller nätfiske mot skräppost.
 
 Mer information om bevarande i Exchange Online finns i Bevarande av juridiska skäl på plats [i Exchange Online.](/Exchange/security-and-compliance/in-place-and-litigation-holds)

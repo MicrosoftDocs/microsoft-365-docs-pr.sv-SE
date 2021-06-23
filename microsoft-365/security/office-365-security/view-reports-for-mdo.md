@@ -20,12 +20,12 @@ description: Administratörer kan läsa mer om hur de hittar och använder Defen
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b9279614571c123ad92f1684f86175b410c6c5c
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: f7eab856f22ac1c2282e83897db6e3f93d4d97e6
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022862"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083518"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Visa Defender för Office 365 i Microsoft 365 Defender portalen
 
@@ -207,7 +207,7 @@ För att kunna visa och använda rapporterna som beskrivs i den här artikeln m�
 - **Säkerhetsläsare**
 - **Global Reader**
 
-Mer information finns i [Behörigheter i Microsoft 365 Defender portal](permissions-in-the-security-and-compliance-center.md).
+Mer information finns under [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md).
 
 **Obs!** Om du lägger till användare i motsvarande Azure Active Directory-roll i Administrationscenter för Microsoft 365 får användarna  de behörigheter som krävs i Microsoft 365 Defender-portalen och behörigheter för andra funktioner Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
 

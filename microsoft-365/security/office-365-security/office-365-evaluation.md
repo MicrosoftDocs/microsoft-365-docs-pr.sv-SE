@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab0f05c45afa6a4ad66c9fc1bf58e69505632171
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 89562a5fd7c2d869f8a060e7ceda1c32a093c175
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624999"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083674"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
@@ -37,10 +37,10 @@ Genom att göra en noggrann utvärdering av säkerhetsprodukter kan du få välg
 
 [Utvärderingsupplevelsen i Microsoft Defender Office 365](defender-for-office-365.md) är utformad för att eliminera komplexiteten i konfigurationen av enheter och miljöer så att du kan fokusera på att utvärdera funktionerna i Microsoft Defender för Office 365. Med utvärderingsläget kan alla meddelanden som skickas Exchange Online e-postlådor utvärderas utan att MX-poster pekar på Microsoft. Funktionen gäller endast e-postskydd och inte för Office klienter som Word, SharePoint eller Teams.
 
-Om du inte redan har en licens som stöder Microsoft Defender för Office 365 kan du starta en kostnadsfri [30-dagarsutvärdering](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) och testa funktionerna i Säkerhets- och Office 365 Säkerhets- och & efterlevnadscenter https://protection.office.com/homepage) (. Du kommer att njuta av den snabba uppsättningen och du kan enkelt stänga av den om det behövs.
+Om du inte redan har en licens som stöder Microsoft Defender för Office 365 kan du påbörja en kostnadsfri [30-dagarsutvärdering](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) och testa funktionerna i Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Du kommer att njuta av den snabba uppsättningen och du kan enkelt stänga av den om det behövs.
 
 > [!NOTE]
-> Om du är på den enhetliga säkerhetsportalen för Microsoft 365 (security.microsoft.com) kan du starta en Defender för Office 365-utvärdering här: Principer för e-post &-samarbete > & > principer för hot > ytterligare principer.
+> Om du är på Microsoft 365 Defender-portalen ( ) kan du starta en Defender för Office 365-utvärdering här: E-& för samarbete & principer för regel hot andra avsnitt <https://security.microsoft.com>  \>  \>  \>  \> **utvärderingsläge.**
 
 ## <a name="how-the-evaluation-works"></a>Så här fungerar utvärderingen
 
@@ -50,9 +50,9 @@ Med utvärderingsläge kan [Valv,](safe-attachments.md) [Valv,](safe-links.m
 
 Som en del av konfigurationen konfigurerar utvärderingsläget även [Utökad filtrering för kopplingar.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Filtreringen förbättrar filtreringsprecisionen genom att bevara IP-adress och avsändarinformation, som annars försvinner när e-post passerar genom en e-postsäkerhetsgateway (ESG) framför Defender för Office 365. Förbättrad filtrering för kopplingar förbättrar också filtreringsprecisionen för din Exchange Online Protection (EOP) skydd mot skräppost och nätfiske.
 
-Aktiverad förbättrad filtrering för kopplingar förbättrar filtreringsprecisionen men kan ändra slutbarheten för vissa meddelanden om du har en ESG framför Defender för Office 365 och för närvarande inte kringgår EOP-filtrering. Effekterna är begränsade till EOP-principer. Konfiguration av MDO-principer som en del av utvärderingen skapas i icke-verkställande läge. Om du vill minimera potentiell produktionsrisk kan du kringgå all EOP-filtrering genom att skapa en transportregel som anger SCL (Spam Confidence Level) till -1. Mer [information finns i Använda EAC för att skapa](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)en e-postflödesregel som anger SCL för ett   meddelande.
+Förbättrad filtrering för kopplingar förbättrar filtreringsprecisionen men kan ändra slutbarheten för vissa meddelanden om du har en ESG framför Defender för Office 365 och för närvarande inte kringgår EOP-filtrering. Effekterna är begränsade till EOP-principer. MDO-principer som har ställts in som en del av utvärderingen skapas i icke-verkställande läge. Om du vill minimera potentiell produktionsrisk kan du kringgå all EOP-filtrering genom att skapa en e-postflödesregel (kallas även transportregel) för att ange SCL (Spam Confidence Level) för meddelanden till -1. Mer information finns i Använda e-postflödesregler för att ange [SCL (Spam Confidence Level) i](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)Exchange Online postmeddelanden.  
 
-När utvärderingsläget har ställts in får du en rapport som uppdateras dagligen med upp till 90 dagars data om de meddelanden som skulle ha blockerats om principerna implementerats (till exempel ta bort, skicka till skräppost, karantän). Rapporter skapas för alla Defender för identifiering Office 365 och EOP. De aggregeras per identifieringsteknik (till exempel personifiering) och kan filtreras efter tidsperiod. Dessutom kan du skapa meddelanderapporter på begäran för att skapa anpassade pivoter eller för att djupdykning av meddelanden med hjälp av Threat Explorer.
+När utvärderingsläget har ställts in får du en rapport som uppdateras dagligen med upp till 90 dagars data om de meddelanden som skulle ha blockerats om principerna implementerats (till exempel ta bort, skicka till skräppost, karantän). Rapporter skapas för alla Defender för identifiering Office 365 och EOP. De aggregeras per identifieringsteknik (till exempel personifiering) och kan filtreras efter tidsperiod. Dessutom kan du skapa meddelanderapporter på begäran för att skapa anpassade pivoter eller för att djupdykar meddelanden med hjälp av Utforskaren.
 
 Med den förenklade uppsättningen kan du fokusera på:
 
@@ -78,7 +78,7 @@ Om du inte har någon av dessa licenser måste du skaffa en utvärderingslicens.
 
 Om du vill ha en utvärderingslicens för Microsoft Defender för Office 365 måste du ha rollen **Faktureringsadministratör** eller **Global administratör.** Begära behörighet från någon som har rollen Global administratör. [Läs mer om prenumerationer och licenser](../../commerce/licenses/subscriptions-and-licenses.md)
 
-När du har rätt roll är den rekommenderade sökvägen till att skaffa en utvärderingslicens för Microsoft Defender för Office 365 (abonnemang 2) i administrationscentret för Microsoft 365 genom att gå till Fakturering > Köptjänster. Utvärderingsversionen omfattar en kostnadsfri provperiod på 30 dagar för 25 licenser. [Hämta en utvärderingsversion av Microsoft Defender för Office 365 (abonnemang 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
+När du har rätt roll är den rekommenderade sökvägen till att skaffa en utvärderingslicens för Microsoft Defender för Office 365 (abonnemang 2) i Administrationscenter för Microsoft 365 genom att gå till Fakturering > Köptjänster. Utvärderingsversionen omfattar en kostnadsfri provperiod på 30 dagar för 25 licenser. [Hämta en utvärderingsversion av Microsoft Defender för Office 365 (abonnemang 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
 Du har ett 30-dagarsfönster med utvärdering för att övervaka och rapportera avancerade hot. Du kan också köpa en betald prenumeration om du vill ha hela Defender för Office 365 prenumeration.
 
@@ -141,11 +141,11 @@ Du kan begränsa utvärderingen till en inkommande koppling. Om det inte finns n
 
 ## <a name="get-started-with-the-evaluation"></a>Komma igång med utvärderingen
 
-Leta reda på kortet för Office 365 för utvärdering i Säkerhets- Office 365 i & https://protection.office.com/homepage) (tre åtkomstpunkter:
+Du hittar kortet för Office 365 för utvärdering i e-Microsoft 365 Defender <https://security.microsoft.com> () från tre åtkomstpunkter:
 
-- Hothantering > Instrumentpanel
-- Policy för > hot
-- Rapporter > Instrumentpanel
+- **Slutpunkter** \> **Sårbarhetshantering** \> **Instrumentpanel** ( <https://security.microsoft.com/tvm_dashboard> )
+- **Skicka e& och samarbete** \> **Principer & regler** \> **Hotprinciper** ( <https://security.microsoft.com/threatpolicy> )
+- **Rapporter** \> **Skicka e& och samarbete** \> **Skicka e& och samarbetsrapporter** ( <https://security.microsoft.com/emailandcollabreport> )
 
 ## <a name="setting-up-the-evaluation"></a>Konfigurera utvärderingen
 
@@ -159,9 +159,9 @@ Granska inställningarna och redigera dem om det behövs. Välj sedan **Skapa ut
 
 Utvärderingsrapporten i Microsoft Defender Office 365 genereras en gång per dag. Det kan ta upp till 24 timmar innan data fylls i.
 
-### <a name="exchange-rules-optional"></a>Exchange regler (valfritt)
+### <a name="exchange-mail-flow-rules-optional"></a>Exchange för e-postflöde (valfritt)
 
-Om du har en befintlig gateway aktiverar aktivering av utvärderingsläge utökad filtrering för kopplingar. Filtreringsprecisionen förbättras genom att IP-adressen för inkommande avsändare ändras. Det kan ändra filtrets bedömningsegenskaper och om du inte kringgår Exchange Online Protection kan detta ändra slutbarheten för vissa meddelanden. I det här fallet kanske du tillfälligt vill kringgå filtrering för att analysera påverkan. Om du vill kringgå detta går du Exchange administrationscentret och skapar en princip för SCL -1 (om du inte redan har ett). Mer information om regelkomponenter och hur de fungerar finns i E-postflödesregler (transportregler) i Exchange Online.
+Om du har en befintlig gateway aktiverar aktivering av utvärderingsläge Utökad filtrering för kopplingar. Den här funktionen förbättrar filtreringsprecisionen genom att ändra IP-adressen för inkommande avsändare. Den här funktionen kan ändra filtrets bedömningar, och om du inte kringgår Exchange Online Protection kan detta ändra slutbarheten för vissa meddelanden. I det här fallet kanske du tillfälligt vill kringgå filtrering för att analysera påverkan. Om du vill kringgå filtrering öppnar du Exchange admin center (EAC) vid och skapar en e-postflödesregel som anger SCL för meddelanden till -1 (om du inte redan har <https://admin.exchange.microsoft.com> ett). Instruktioner finns i Använda [e-postflödesregler för att ange SCL (Spam Confidence Level) i meddelanden i Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
 
 ## <a name="evaluate-capabilities"></a>Utvärdera funktioner
 
