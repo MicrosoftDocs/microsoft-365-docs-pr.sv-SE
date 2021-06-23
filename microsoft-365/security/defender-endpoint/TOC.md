@@ -241,7 +241,7 @@
 #### [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)
 #### [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
 #### [Anpassa regler för minskning av attackytan](customize-attack-surface-reduction.md)
-#### [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction-faq.md)
+#### [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction-faq.yml)
 #### [Visa händelser för minskning av attackytan](event-views.md)
 #### [Använda granskningsläge för minskning av attackytan](audit-windows-defender.md)
 

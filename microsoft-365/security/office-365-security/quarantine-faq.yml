@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
-  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+  ms.openlocfilehash: c8f821381d8e51b843f3a213d8daec5ef6ffaf5f
+  ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 05/24/2021
-  ms.locfileid: "52625419"
+  ms.lasthandoff: 06/23/2021
+  ms.locfileid: "53083650"
 title: Vanliga frågor och svar om meddelanden i karantän
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -82,14 +82,14 @@ sections:
   - question: >
       Kan jag släppa eller rapportera fler än ett meddelande i karantän i taget?
     answer: >
-      I Säkerhets- & efterlevnadscenter kan du välja och släppa upp till 100 meddelanden i taget.
+      I Microsoft 365 Defender kan du välja och släppa upp till 100 meddelanden i taget.
 
 
       Administratörer kan använda cmdletarna [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) och [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) i Exchange Online PowerShell eller fristående EOP PowerShell för att hitta och släppa meddelanden i karantän i grupp och för att massuppge felaktiga positiva meddelanden.
   - question: >
       Stöds jokertecken när du söker efter meddelanden i karantän? Kan jag söka efter meddelanden i karantän efter en viss domän?
     answer: >-
-      Jokertecken stöds inte i Säkerhets- och & säkerhets- och efterlevnadscenter. När du söker efter en avsändare måste du till exempel ange hela e-postadressen. Men du kan använda jokertecken i Exchange Online PowerShell eller fristående EOP PowerShell.
+      Jokertecken stöds inte i Microsoft 365 Defender portal. När du söker efter en avsändare måste du till exempel ange hela e-postadressen. Men du kan använda jokertecken i Exchange Online PowerShell eller fristående EOP PowerShell.
 
 
       Kopiera till exempel följande PowerShell-kod till Anteckningar och spara filen som .ps1 på en plats som är lätt att hitta (till exempel C:\Data\QuarantineRelease.ps1).
