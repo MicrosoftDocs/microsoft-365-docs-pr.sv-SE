@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan lära sig att skapa, ändra och ta bort avancerade principer mot nätfiske som är tillgängliga i organisationer med Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bbf90f52127e96e08f1c176a23d5f5ab1d6d86c4
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: dd69e00b0e8929752341bf3d2b0abde88921066b
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054545"
+ms.locfileid: "53061886"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer mot nätfiske i Microsoft Defender för Office 365
 
@@ -230,7 +230,7 @@ Om du skapar en egen policy mot nätfiske i Microsoft 365 Defender-portalen skap
        - **Sätt meddelandet i karantän**
 
    - **Säkerhetstips för &**: Konfigurera följande inställningar:
-     - Visa första säkerhetstips **:** Den här säkerhetstips ersätter behovet av att skapa e-postflödesregler (kallas även transportregler) som lägger till rubriken **X-MS-Exchange-EnableFirstContactSafetyTip** med värdet **Enable** to messages.
+     - **Visa first contact säkerhetstips**: Mer information finns i [First contact säkerhetstips](set-up-anti-phishing-policies.md#first-contact-safety-tip).
      - **Visa funktionen för användarpersonifiering säkerhetstips:** Den här inställningen är bara tillgänglig om du har markerat Aktivera användare **att skydda** på föregående sida.
      - **Visa domänpersonifiering säkerhetstips:** Den här inställningen är bara tillgänglig om du har markerat Aktivera **domäner att skydda** på föregående sida.
      - **Visa ovanliga tecken för användarpersonifiering säkerhetstips** Den här inställningen är bara tillgänglig om du **har markerat Aktivera användare för att** skydda eller Aktivera domäner att **skydda** på föregående sida.

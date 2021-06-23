@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e26bb85fc74b6be49a9f8116792a7f28e8fa7e05
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: b6c2c9fe82486030814e89a0ff655d8f631064e4
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842272"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062269"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Konfigurera principer för Microsoft Defender för slutpunkt på macOS i Jamf Pro
 
@@ -90,7 +90,7 @@ Du måste göra följande:
 3. Ange följande information:
 
    **Allmänt**
-   - Namn: MDATP onboarding för macOS
+   - Namn: MDATP-registrering för macOS
    - Beskrivning: MDATP Identifiering och åtgärd på slutpunkt onboarding för macOS
    - Kategori: Ingen
    - Distributionsmetod: Installera automatiskt
@@ -106,32 +106,31 @@ Du måste göra följande:
 
     ![Bild av listfil med filegenskap](images/jamfpro-plist-file.png)
 
-7. Välj **Öppna** och välj onboarding-filen.
+6. Välj **Öppna** och välj onboarding-filen.
 
     ![Bild på onboarding-fil](images/jamfpro-plist-file-onboard.png)
 
-8. Välj **Upload**. 
+7. Välj **Upload**. 
 
     ![Bild på uppladdning av plist-fil](images/jamfpro-upload-plist.png)
 
-
-9. Välj **fliken Omfattning.**
+8. Välj **fliken Omfattning.**
 
     ![Bild på fliken omfattning](images/jamfpro-scope-tab.png)
 
-10. Välj måldatorerna.
+9. Välj måldatorerna.
 
     ![Bild på måldatorer](images/jamfpro-target-computer.png)
 
     ![Bild av mål](images/jamfpro-targets.png) 
 
-11. Välj **Spara**.
+10. Välj **Spara**.
 
     ![Bild av måldatorer för distribution](images/jamfpro-deployment-target.png)
 
     ![Bild på valda måldatorer](images/jamfpro-target-selected.png)
 
-12. Välj **Klar**.
+11. Välj **Klar**.
 
     ![Bild av målgruppsdatorer](images/jamfpro-target-group.png)
 
@@ -139,11 +138,72 @@ Du måste göra följande:
 
 ## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a>Steg 3: Konfigurera Microsoft Defender för Slutpunktsinställningar
 
-1.  Använd följande konfigurationsinställningar för Microsoft Defender för Slutpunkt:
+Du kan antingen använda JAMF Pro GUI för att redigera enskilda inställningar för Microsoft Defender-konfigurationen eller använda den äldre metoden genom att skapa en konfigurations-Plist i en textredigerare och ladda upp den till JAMF-Pro.
+
+Observera att du måste använda exakt `com.microsoft.wdav` som **Inställningsdomän**, microsoft Defender använder bara det här namnet och `com.microsoft.wdav.ext` för att läsa in de hanterade inställningarna.
+
+(Versionen kan användas i sällsynta fall när du föredrar att använda GUI-metod, men också behöver konfigurera en inställning som inte har lagts till `com.microsoft.wdav.ext` i schemat ännu.)
+
+### <a name="gui-method"></a>GUI-metod
+
+1. Ladda schema.jsfil från [Defenders lagringsplats GitHub och](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema) spara den i en lokal fil:
+
+    ```bash
+    curl -o ~/Documents/schema.json https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/schema/schema.json
+    ```
+
+2. Skapa en ny konfigurationsprofil under Datorer - > konfigurationsprofiler, ange följande information på **fliken** Allmänt:
+
+    ![Ny profil](images/644e0f3af40c29e80ca1443535b2fe32.png)
+
+    - Namn: Konfigurationsinställningar för MDATP MDAV
+    - Beskrivning:\<blank\>
+    - Kategori: Ingen (standard)
+    - Nivå: Datornivå (standard)
+    - Distributionsmetod: Installera automatiskt (standard)
+
+3. Rulla ned till fliken & egna **Inställningar** program, välj Externa  **program,** klicka på Lägg till och använd Eget **schema** som källa för inställningsdomänen.
+
+    ![Lägga till ett anpassat schema](images/4137189bc3204bb09eed3aabc41afd78.png)
+
+4. Ange `com.microsoft.wdav` som inställningsdomän, klicka på **Lägg till schema** **Upload** lägg schema.jsfilen som hämtas i steg 1. Klicka på **Spara**.
+
+    ![Upload schema](images/a6f9f556037c42fabcfdcb1b697244cf.png)
+
+5. Du kan se alla konfigurationsinställningar som stöds av Microsoft Defender nedan, under **Preference Domain Properties**. Klicka **på Lägg till/ta** bort egenskaper för att välja vilka inställningar som ska hanteras och klicka på **Ok** för att spara ändringarna. (Inställningar omarkerad inte inkluderas i den hanterade konfigurationen kommer en slutanvändare att kunna konfigurera inställningarna på sina datorer.)
+
+    ![Välj hanterade inställningar](images/817b3b760d11467abe9bdd519513f54f.png)
+
+6. Ändra värdena i inställningarna till önskade värden. Du kan klicka på **Mer information** för att hitta dokumentation om en viss inställning. (Du kan klicka på **Förhandsgranskning av Plist** för att kontrollera hur konfigurations-plisten kommer att se ut. Klicka **på Formulärredigeraren** för att återgå till den visuella redigeraren.)
+
+    ![Ändra inställningsvärden](images/a14a79efd5c041bb8974cb5b12b3a9b6.png)
+
+7. Välj **fliken Omfattning.**
+
+    ![Konfigurationsprofilens omfattning](images/9fc17529e5577eefd773c658ec576a7d.png)
+
+8. Välj **Contosos datorgrupp.**
+
+9. Välj **Lägg** till och välj sedan **Spara**.
+
+    ![Konfigurationsinställningar – lägg till](images/cf30438b5512ac89af1d11cbf35219a6.png)
+
+    ![Konfigurationsinställningar – spara](images/6f093e42856753a3955cab7ee14f12d9.png)
+
+10. Välj **Klar**. Den nya konfigurationsprofilen **visas.**
+
+    ![Konfigurationsinställningar – klar](images/dd55405106da0dfc2f50f8d4525b01c8.png)
+
+Microsoft Defender lägger till nya inställningar med tiden. De nya inställningarna läggs till i schemat och en ny version publiceras på Github.
+Allt du behöver göra för att få uppdateringar är att ladda ned ett uppdaterat schema, redigera befintlig konfigurationsprofil och Redigera **schema** på fliken **& Program Inställningar** schema.
+
+### <a name="legacy-method"></a>Äldre metod
+
+1. Använd följande konfigurationsinställningar för Microsoft Defender för Slutpunkt:
 
     - enableRealTimeProtection
     - passivläge
-    
+
     >[!NOTE]
     >Inte aktiverat som standard om du planerar att köra en tredjeparts-AV för macOS ställer du in den på `true` .
 
@@ -153,10 +213,10 @@ Du måste göra följande:
     - excludedFileName
     - exclusionsMergePolicy
     - allowedThreats
-    
+
     >[!NOTE]
     >EICAR ingår i exemplet. Om du går igenom ett koncepttest bör du ta bort det särskilt om du testar EICAR.
-        
+
     - disallowedThreatActions
     - potentially_unwanted_application
     - archive_bomb
@@ -164,7 +224,7 @@ Du måste göra följande:
     - automaticSampleSubmission
     - taggar
     - hideStatusMenuIcon
-    
+
      Mer information finns i [egenskapslistan för Jamf-konfigurationsprofilen](mac-preferences.md#property-list-for-jamf-configuration-profile).
 
      ```XML
@@ -270,22 +330,21 @@ Du måste göra följande:
 
 2. Spara filen som `MDATP_MDAV_configuration_settings.plist` .
 
+3. I instrumentpanelen i Jamf Pro du **Datorer** och där finns **Konfigurationsprofiler.** Klicka på **Ny(* och växla till **fliken** Allmänt.
 
-3.  I instrumentpanelen i Jamf Pro väljer du **Allmänt**.
-
-    ![Bild på den nya Dashboard-Pro Jamf](images/644e0f3af40c29e80ca1443535b2fe32.png)
+    ![Ny profil](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
 4. Ange följande information:
 
     **Allmänt**
     
-    - Namn: MDATP MDAV-konfigurationsinställningar
+    - Namn: Konfigurationsinställningar för MDATP MDAV
     - Beskrivning:\<blank\>
     - Kategori: Ingen (standard)
     - Distributionsmetod: Installera automatiskt(standard)
     - Nivå: Datornivå(standard)
 
-    ![Bild av MDATP för MDAV-konfiguration](images/3160906404bc5a2edf84d1d015894e3b.png)
+    ![Bild av konfigurationsinställningar för MDATP MDAV](images/3160906404bc5a2edf84d1d015894e3b.png)
 
 5. I **Program & Egen Inställningar** du **Konfigurera**.
 
@@ -344,7 +403,6 @@ Du måste göra följande:
 
     ![Bild på konfigurationsinställningar konfigurationsprofil bild](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
-
 ## <a name="step-4-configure-notifications-settings"></a>Steg 4: Konfigurera aviseringsinställningar
 
 De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
@@ -354,7 +412,7 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 2. Klicka **på** Nytt och ange följande information för **Alternativ:**
     
     - Tabb **Allmänt:** 
-        - **Namn**: MDATP för MDAV-aviseringar
+        - **Namn**: Meddelandeinställningar för MDATP MDAV
         - **Beskrivning**: macOS 10.15 (Catalina) eller nyare
         - **Kategori:** Ingen *(standard)*
         - **Distributionsmetod:** Installera automatiskt *(standard)*
@@ -585,7 +643,7 @@ Du kan också ladda ned [fulldisk.mobileconfig](https://github.com/microsoft/mda
     **Allmänt** 
     
     - Namn: MDATP MDAV Kernel-tillägg
-    - Beskrivning: MDATP (kext)
+    - Beskrivning: MDATP-kerneltillägg (kext)
     - Kategori: Ingen
     - Distributionsmetod: Installera automatiskt
     - Nivå: Datornivå
@@ -637,7 +695,7 @@ Du kan också ladda ned [kext.mobileconfig](https://github.com/microsoft/mdatp-x
     **Allmänt**
     
     - Namn: MDATP MDAV-systemtillägg
-    - Beskrivning: MDATP för systemtillägg
+    - Beskrivning: MDATP-systemtillägg
     - Kategori: Ingen
     - Distributionsmetod: Installera automatiskt
     - Nivå: Datornivå
@@ -690,14 +748,14 @@ De här stegen gäller för macOS 10.15 (Catalina) eller nyare.
 2. Klicka **på** Nytt och ange följande information för **Alternativ:**
 
     - Tabb **Allmänt:** 
-        - **Namn**: Microsoft Defender ATP nätverkstillägg
+        - **Namn:** Microsoft Defender ATP-nätverkstillägg
         - **Beskrivning**: macOS 10.15 (Catalina) eller nyare
         - **Kategori:** Ingen *(standard)*
         - **Distributionsmetod:** Installera automatiskt *(standard)*
         - **Nivå:** Datornivå *(standard)*
 
     - **Flikinnehållsfilter:**
-        - **Filternamn:** Microsoft Defender ATP innehållsfilter
+        - **Filternamn:** Microsoft Defender ATP-innehållsfilter
         - **Identifierare:**`com.microsoft.wdav`
         - Lämna **Tjänstadress,** **Organisation,** **Användarnamn,** **Lösenord,** **Certifikat** tomt **(Inkludera** *är inte* markerat)
         - **Filterordning**: Kontroll
@@ -770,7 +828,7 @@ Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för 
     
     ![En skärmbild av en datorskärmsbeskrivning som genereras automatiskt](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
-7. Välj **Öppna**. Ställ in **visningsnamnet** till **Microsoft Defender Avancerat skydd och Microsoft Defender Antivirus**.
+7. Välj **Öppna**. Ställ in **visningsnamnet** på **Microsoft Defender Avancerat skydd och Microsoft Defender Antivirus**.
 
     **Manifestfil** krävs inte. Microsoft Defender för slutpunkt fungerar utan manifestfil.
     
@@ -814,9 +872,9 @@ Följ anvisningarna i [Schemalägga genomsökningar med Microsoft Defender för 
  
     ![Bild på konfigurationsinställningar för konfigurering](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
-15. Välj Lägg **till** bredvid Microsoft Defender Avancerat skydd **och Microsoft Defender Antivirus**.
+15. Välj Lägg **till** bredvid **Microsoft Defender Advanced Threat Protection och välj Microsoft Defender Antivirus**.
 
-    ![Bild av konfigurationsinställningar som MDATP och MDA lägger till](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
+    ![Bild av konfigurationsinställningar MDATP och MDA add](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
 16. Välj **Spara**.
 

@@ -1,6 +1,6 @@
 ---
 title: Översikt över enhetsidentifiering
-description: Lär dig hur du utnyttjar slutpunktsidentifieringen i Microsoft 365 Defender för att hitta ohanterade enheter i nätverket
+description: Lär dig hur du använder slutpunktsidentifiering i Microsoft 365 Defender för att hitta ohanterade enheter i nätverket
 keywords: identifiering av enheter, upptäck, passiv, proaktiv, nätverk, synlighet, server, arbetsstation, onboard, ohanterade enheter
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 16baaa6fd9865140d42c0ca3a566427f761a28c2
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636248"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062220"
 ---
 # <a name="device-discovery-overview"></a>Översikt över enhetsidentifiering
 
@@ -35,7 +35,6 @@ ms.locfileid: "52636248"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 För att du ska kunna skydda din miljö måste du göra en inventering av de enheter som finns i nätverket. Det kan dock vara dyr, utmanande och tidskrävande att mappa enheter i ett nätverk. 
 

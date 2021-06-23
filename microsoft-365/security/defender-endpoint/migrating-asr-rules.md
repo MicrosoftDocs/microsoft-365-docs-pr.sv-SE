@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fd7c6a217c1bc1ce3b278afb911988b94a6951e0
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933787"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062157"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migrera från tredjeparts hips till ASR-regler
 
@@ -148,6 +148,6 @@ I den här artikeln får du hjälp att mappa vanliga regler till Microsoft Defen
 
 Se även
 
-- [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction-faq.md)
+- [Vanliga frågor och svar för minskning av attackytan](attack-surface-reduction-faq.yml)
 - [Aktivera regler för minskning av attackytan](enable-attack-surface-reduction.md)
 - [Utvärdera regler för minskning av attackytan](evaluate-attack-surface-reduction.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ceca8ac76f63ef7da34f4222312e9e03a3b0e23a
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844196"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062257"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Senaste nytt i Microsoft Defender för Endpoint
 
@@ -45,6 +45,16 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 > ```https
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
+
+## <a name="june-2021"></a>Juni 2021
+
+- [Enhetsidentifiering](device-discovery.md) <br> Hjälper dig att hitta ohanterade enheter anslutna till företagsnätverket utan att behöva extra utrustning eller krångliga processändringar. Med onboarded-enheter kan du hitta ohanterade enheter i nätverket och bedöma svagheter och risker. Du kan sedan hantera identifierade enheter för att minska riskerna med ohanterade slutpunkter i nätverket.
+
+   > [!IMPORTANT]
+   > Standardidentifiering kommer att vara standardläge för alla kunder från och med den 19 juli 2021. Du kan välja att behålla grundläget via inställningssidan. 
+
+
+- [Enhetsgruppsdefinitioner](/microsoft-365/security/defender-endpoint/machine-groups) kan nu innehålla flera värden för varje villkor. Du kan ange definitionen för en enda enhetsgrupp för flera taggar, enhetsnamn och domäner.
 
 ## <a name="march-2021"></a>Mars 2021
 - [Hantera skydd mot manipulering med hjälp av Microsoft Defender Säkerhetscenter](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Du kan hantera inställningar för manipuleringsskydd i Windows 10, Windows Server 2016 och Windows Server 2019 med hjälp av en metod som kallas *klient bifoga.* 

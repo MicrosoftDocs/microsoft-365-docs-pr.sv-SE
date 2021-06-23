@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Blockera en tidigare anställd från att logga in och blockera åtkomst till Microsoft 365 tjänster.
-ms.openlocfilehash: cdba6dcaf239e94cf33f3bf88e7f217b4793bfd6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840856"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061820"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Steg 1 – Förhindra en tidigare anställd från att logga in och blockera åtkomst Microsoft 365 tjänster
 
@@ -41,12 +41,12 @@ Om du omedelbart behöver förhindra en användares inloggningsåtkomst ska du �
 1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
 2. Markera rutan bredvid användarens namn och välj sedan **Återställ lösenord**.
 3. Ange ett nytt lösenord och välj sedan **Återställ**. (Skicka det inte till dem.)
-4. Välj användarens namn för att gå till egenskapsfönstret och välj Initiera ut logga **ut på fliken Konto.** 
+4. Välj användarens namn för att gå till egenskapsfönstret och på fliken Konto **väljer** du **Logga ut från alla sessioner.**
 
 Inom en timme – eller efter att han eller hon lämnar den Microsoft 365 aktuella sidan de befinner sig på – uppmanas de att logga in igen. En åtkomsttoken är bra i en timme, så tidslinjen beror på hur mycket tid som återstår för den tokenen och om de navigerar från den aktuella webbsidan.
   
 > [!IMPORTANT]
-> Om användaren är i Outlook på webben, bara klickar runt i postlådan, kanske han/hon inte sparkas ut direkt. Så snart de väljer en annan panel, till OneDrive, eller uppdaterar sin webbläsare initieras ut logga ut.
+> Om användaren är i Outlook på webben, bara klickar runt i postlådan, kanske han/hon inte blir utslängd direkt. Så snart de väljer en annan panel, till OneDrive, eller uppdaterar sin webbläsare initieras ut logga ut.
   
 Om du vill använda PowerShell för att logga ut en användare direkt går du till cmdleten [Revoke-AzureADUserAllRefreshToken.](/powershell/module/azuread/revoke-azureaduserallrefreshtoken)
   

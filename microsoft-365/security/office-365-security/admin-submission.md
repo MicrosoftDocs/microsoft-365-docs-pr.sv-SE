@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan ta reda på hur de använder portalen för inskickade innehåll i Microsoft 365 Defender-portalen för att skicka misstänkta e-postmeddelanden, misstänkta nätfiskemeddelanden, skräppost och andra potentiellt skadliga meddelanden, URL-adresser och e-postbilagor till Microsoft för att återsöka.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b671ce5a44c7be61331a121b49e96658cf14bab1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964807"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061969"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administrationsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft
 
@@ -91,7 +91,8 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
 5. När du är klar klickar du på **skicka-knappen.**
 
-   ![Exempel på ny URL-inskickning](../../media/submission-flyout-email.PNG)
+> [!div class="mx-imgBorder"]
+> ![Exempel på ny URL-inskickning](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Skicka en misstänkt URL till Microsoft
 
@@ -105,7 +106,8 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
 4. När du är klar klickar du på **skicka-knappen.**
 
-   ![Exempel på ny e-postinskickning](../../media/submission-url-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![Exempel på ny e-postinskickning](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Skicka en misstänkt e-postbilaga till Microsoft
 
@@ -119,7 +121,8 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
 4. När du är klar klickar du på **skicka-knappen.**
 
-   ![Exempel på ny inskickade bifogade filer](../../media/submission-file-flyout.PNG)
+> [!div class="mx-imgBorder"]
+> ![Exempel på ny inskickade bifogade filer](../../media/submission-file-flyout.png)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Visa administrationsinskick till Microsoft
 
@@ -157,7 +160,8 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
      När du är klar klickar du på **Använd**.
 
-     ![Nya filteralternativ för administratörsinskick](../../media/admin-submission-email-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![Nya filteralternativ för administratörsinskick](../../media/admin-submission-filters.png)
 
    - Om du vill gruppera posterna **klickar du** på Gruppera och väljer något av följande värden i listrutan:
      - **Ingen**
@@ -170,7 +174,7 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
 ### <a name="admin-submission-rescan-details"></a>Information om administratörsinskickning igen
 
-Meddelanden som skickas i administrationsinskick genomsöks på annat sätt och resultaten visas i den utfällkommning som visas i inskickade uppgifter:
+Meddelanden som skickas i administratörsinskick granskas och resultaten visas i den utfällda utfällningen med information om inskickade inskickade meddelanden:
 
 - Om avsändarens e-postautentisering misslyckades vid leveransen.
 - Information om politiska träffar som kan ha påverkat eller åsidosatt bedömningen av ett meddelande.
@@ -214,7 +218,8 @@ Om du har distribuerat tillägget Rapportmeddelande, [](enable-the-report-phish-
 
      När du är klar klickar du på **Använd**.
 
-    ![Nya filteralternativ för användarinskick](../../media/user-submissions-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![Nya filteralternativ för användarinskick](../../media/admin-submission-reported-messages.png)
 
    - Om du vill gruppera posterna **klickar du** på Gruppera och väljer något av följande värden i listrutan:
      - **Ingen**
@@ -245,4 +250,5 @@ På fliken **Användarrapporterade** meddelanden väljer du ett meddelande i lis
 - **Rapportera skräppost**
 - **Undersökning av utlösare**
 
-![Nya alternativ på knappen Åtgärd](../../media/user-submission-custom-mailbox-action-button.png)
+> [!div class="mx-imgBorder"]
+> ![Nya alternativ på knappen Åtgärd](../../media/admin-submission-main-action-button.png)

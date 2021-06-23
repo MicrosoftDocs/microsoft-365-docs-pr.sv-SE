@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: d73ddb3a8defb7697a995c2593d6a240a59c9cfe
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7a5aa5e049159761c46e2103f7b1ecdd1499f3cd
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934627"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061639"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Licensvillkor för Microsoft Defender för slutpunkt på Android-program
 
@@ -56,7 +56,7 @@ för den här appen, såvida inte andra termer medföljer de objekten. I så fal
 
 1.  **INSTALLATION AND USE RIGHTS.**
 
-    1.  **Installation och användning.** Du kan installera och använda val valfria kopior av det här programmet på enheter eller enheter med Android som du äger eller kontrollerar. Du kan använda det här programmet med företagets giltiga prenumeration på Microsoft Defender för Endpoint eller en onlinetjänst som innehåller Microsoft Defender för Slutpunkt-funktioner.
+    1.  **Installation och användning.** Du kan installera och använda val valfria kopior av det här programmet på enheter eller enheter med Android som du äger eller kontrollerar. 
 
     2.  **Uppdateringar.** Uppdateringar eller uppgraderingar av Microsoft Defender för Endpoint kan krävas för fullständiga funktioner. Vissa funktioner är eventuellt inte tillgängliga i alla länder.
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Konfigurera dataförlustskydd för slutpunkter i Microsoft 365 för att övervaka filaktiviteter och implementera skyddsåtgärder för dessa filer till slutpunkter.
-ms.openlocfilehash: bf607890fcae34e95da15954349e7190bdbb19ac
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 134c5426e428372670a50c76301a9e9e0c10b343
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878106"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061667"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Komma igång med dataförlustskydd för slutpunkter
 
@@ -77,9 +77,6 @@ Data från slutpunkts-DLP kan visas i [Aktivitetsutforskaren](data-classificatio
 - Efterlevnadsadministratör
 - Säkerhetsadministratör
 - Administratör för efterlevnadsdata
-- Global läsare
-- Säkerhetsläsare
-- Rapportläsare
 
 ### <a name="prepare-your-endpoints"></a>Förbered dina slutpunkter
 

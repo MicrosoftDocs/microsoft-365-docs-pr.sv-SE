@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan lära sig att skapa, ändra och ta bort de principer mot nätfiske som är tillgängliga i Exchange Online Protection-organisationer (EOP) med eller utan Exchange Online postlådor.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8633644ab0380cf2adcf30c006a7d6d141a6040a
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1dcfba32a5c76915c8c905d55b69712162efac48
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054575"
+ms.locfileid: "53062233"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurera principer för skydd mot nätfiske i EOP
 
@@ -126,11 +126,14 @@ Om du skapar en egen policy mot nätfiske i Microsoft 365 Defender-portalen skap
      - **Flytta meddelandet till mottagarnas skräppostmappar**
      - **Sätt meddelandet i karantän**
 
-   - **Säkerhetstips & indikatorer:** Den här inställningen är bara tillgänglig om du **har markerat Aktivera förfalskningsinformation** på föregående sida:
-     - Visa (?) för oautenterade avsändare för förfalskning: Lägger till ett frågetecken på **avsändarens** foto i rutan Från i Outlook om  meddelandet inte klarar SPF- eller DKIM-kontroller och meddelandet inte klarar DMARC eller sammansatt [autentisering.](email-validation-and-authentication.md#composite-authentication)
-     - **Visa** via-taggen: Lägger till en via-tagg (chris@contoso.com via fabrikam.com) till från-adressen om den skiljer sig från domänen i DKIM-signaturen eller **MAIL FROM-adressen.**
+   - **Säkerhetstips för &:**
+     - **Visa first contact säkerhetstips**: Mer information finns i [First contact säkerhetstips](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - Visa **(?)** för oautenterade avsändare för förfalskning: Lägger till ett frågetecken på avsändarens foto i rutan Från i Outlook om meddelandet inte klarar SPF- eller DKIM-kontroller och meddelandet inte klarar DMARC eller sammansatt <sup>\*</sup>  autentisering. [](email-validation-and-authentication.md#composite-authentication)
+     - **Visa** via-taggen: Lägger till en via-tagg (chris@contoso.com via fabrikam.com) till från-adressen om den skiljer sig från domänen i DKIM-signaturen eller <sup>\*</sup> **MAIL FROM-adressen.**
 
      Markera kryssrutan om du vill aktivera en inställning. Om du vill inaktivera den avmarkerar du kryssrutan.
+
+     <sup>\*</sup> Den här inställningen är bara tillgänglig om **du har markerat Aktivera förfalskningsinformation** på föregående sida. Mer information finns i [Ejauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).
 
    Klicka på **Nästa** när du är klar.
 

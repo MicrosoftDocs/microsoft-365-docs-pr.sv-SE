@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: referensmaterial för dataförlustskydd
-ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 5c01b6419a9af100cfaedccbd5a9c4923ca3e42f
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572567"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061788"
 ---
 # <a name="data-loss-prevention-reference"></a>Referens för dataförlustskydd
  
@@ -37,7 +37,7 @@ ms.locfileid: "52572567"
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> Funktioner för dataförlustskydd har nyligen lagts till i Microsoft Teams chatt- och kanalmeddelanden för användare som är licensierade för Office 365 Advanced Compliance, som är tillgängligt som ett fristående alternativ och ingår i Office 365 E5 och Microsoft 365 E5 Compliance. Mer information om licenskrav finns i [licensvägledning Microsoft 365 Tenant-Level Services Licensing Guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+> Funktioner för skydd mot dataförlust har nyligen lagts till i Microsoft Teams chatt- och kanalmeddelanden för användare som är licensierade för Office 365 Advanced Compliance, som är tillgängligt som ett fristående alternativ och ingår i Office 365 E5 och Microsoft 365 E5 Compliance. Mer information om licenskrav finns i [licensvägledning Microsoft 365 Tenant-Level Services Licensing Guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 
 
@@ -110,9 +110,6 @@ Om du väljer att inkludera specifika distributionsgrupper i Exchange omfattning
 Om du väljer att inkludera eller exkludera specifika SharePoint webbplatser kan en DLP-princip inte innehålla fler än 100 sådana inkludering och undantag. Även om den här gränsen finns kan du överskrida den här gränsen genom att använda en organisationsomfattande princip eller en princip som gäller för hela platser.
 
 Om du väljer att inkludera eller exkludera specifika OneDrive-konton eller grupper kan en DLP-princip innehålla högst 100 användarkonton eller 50 grupper som inkludering eller undantag.
-
-> [!NOTE]
-> OneDrive för företag-principens användning av konton eller grupper är en offentlig förhandsversion. Under den här fasen kan du antingen inkludera eller exkludera användarkonton och grupper som en del av en DLP-princip. Både inkludering och undantag som en del av samma princip stöds inte.
   
 ### <a name="rules"></a>Regler
 
@@ -490,7 +487,7 @@ DLP identifierar känslig information med hjälp av djup innehållsanalys (inte 
 
 När du har skapat en DLP-princip i Säkerhetsefterlevnadscenter lagras den i en central principkälla och synkroniseras sedan med de olika &amp; innehållskällorna, till exempel:
   
-- Exchange Online och vidare till Outlook på webben och Outlook.
+- Exchange Online och därifrån till Outlook på webben och Outlook.
     
 - OneDrive för företag webbplatser.
     
@@ -526,7 +523,7 @@ DLP utvärderar allt innehåll som kan indexeras. Mer information om vilka filty
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Principutvärderingar i Exchange Online, Outlook och Outlook på webben
 
-När du skapar en DLP-princip som innehåller Exchange Online som en plats synkroniseras principen från säkerhetsefterlevnadscentret för Office 365 till Exchange Online och sedan från Exchange Online till Outlook på webben &amp; och Outlook.
+När du skapar en DLP-princip som innehåller Exchange Online som en plats synkroniseras principen från säkerhetsefterlevnadscentret för Office 365 till Exchange Online och sedan från Exchange Online till &amp; Outlook på webben och Outlook.
   
 När ett meddelande skapas i Outlook kan användaren se principtips när innehållet som skapas utvärderas mot DLP-principer. När ett meddelande har skickats utvärderas det mot DLP-principer som en normal del av e-postflödet, tillsammans med Exchange-e-postflödesregler (kallas även transportregler) och DLP-principer som skapats i Exchange-administrationscentret. DLP-principer söker igenom både meddelandet och eventuella bifogade filer.
   
@@ -544,7 +541,7 @@ När du skapar en DLP-princip som innehåller Microsoft Teams som en plats synkr
  
 ## <a name="permissions"></a>Behörigheter
 
-Medlemmar i efterlevnadsteamet som ska skapa DLP-principer behöver behörighet till &amp; Säkerhetsefterlevnadscenter. Som standard har din innehavaradministratör åtkomst till den här platsen och kan ge efterlevnadsansvariga och andra personer tillgång till Säkerhetsefterlevnadscenter, utan att ge dem alla behörigheter som en administratör för &amp; klientorganisationen har. För att göra det rekommenderar vi att du:
+Som standard får globala administratörer, säkerhetsadministratörer och efterlevnadsadministratörer åtkomst till att skapa och tillämpa en DLP-princip. Andra medlemmar i efterlevnadsteamet som skapar DLP-principer behöver behörighet till &amp; Säkerhetsefterlevnadscenter. Som standard har din innehavaradministratör åtkomst till den här platsen och kan ge efterlevnadsansvariga och andra personer tillgång till Säkerhetsefterlevnadscenter, utan att ge dem alla behörigheter som en administratör &amp; för klientorganisationen har. För att göra det rekommenderar vi att du:
   
 1. Skapa en grupp i Microsoft 365 och lägg till efterlevnadsansvariga i den.
     

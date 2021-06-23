@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Lär dig hur du skapar en princip för arkivering och borttagning i Microsoft 365 som automatiskt flyttar objekt till en användares arkivpostlåda.
-ms.openlocfilehash: ae48335203968b25a00fda61bfe65ffde85649ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162047"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062164"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Konfigurera en princip för arkivering och borttagning för postlådor i din organisation
 
@@ -294,6 +294,6 @@ I steg 4 måste du tilldela den nya bevarandeprincipen till befintliga postlådo
     |Ta aldrig bort  <br/> |Den här taggen förhindrar att objekt tas bort av en bevarandeprincip.  <br/> |Inbyggd  <br/> |Personligt; den här taggen kan tillämpas av användarna.  <br/> |
     |Privat 1 år flytta till arkiv  <br/> |Flyttar objekt till arkivpostlådan efter 1 år.  <br/> |Inbyggd  <br/> |Personligt; den här taggen kan tillämpas av användarna.  <br/> |
 
-    > <sup>\*</sup>Användare kan använda verktyget Återställ borttagna objekt i Outlook och Outlook på webben (kallades tidigare Outlook Web App) för att återställa ett borttagna objekt under en bevarandeperiod för borttagna objekt, som som standard är 14 dagar i Exchange Online. En administratör kan Windows PowerShell till att öka lagringstiden för borttagna objekt till högst 30 dagar. Mer information finns i: Återställa borttagna objekt i [Outlook för Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) och Ändra kvarhållningstiden för borttagna objekt för en postlåda i [Exchange Online](https://www.microsoft.com/?ref=go)
+    > <sup>\*</sup>Användare kan använda verktyget Återställ borttagna objekt i Outlook och Outlook på webben (kallades tidigare Outlook Web App) för att återställa ett borttagna objekt inom en bevarandeperiod för borttagna objekt, som standard är 14 dagar i Exchange Online. En administratör kan Windows PowerShell till att öka lagringstiden för borttagna objekt till högst 30 dagar. Mer information finns i: Återställa borttagna objekt i [Outlook för Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) och Ändra kvarhållningstiden för borttagna objekt för en postlåda i [Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)
   
 - Med **bevarandetaggen Återställningsbara objekt 14** dagar Flytta till Arkiv frigörs lagringsutrymme i mappen Återställningsbara objekt i användarens primära postlåda. Det här är användbart när en användares postlåda är satt på en hold-plats, vilket innebär att ingenting tas bort permanent från användarens postlåda. Utan att flytta objekt till arkivpostlådan kan lagringskvoten för mappen Återställningsbara objekt i den primära postlådan uppnås. Mer information om det här och hur du undviker det finns i [Öka lagringskvoten](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)för återställningsbara objekt för postlådor.

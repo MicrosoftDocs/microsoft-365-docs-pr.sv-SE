@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932824"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062209"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Vad är nytt i Microsoft Defender för Office 365
 
@@ -42,6 +42,14 @@ Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch
 > [!TIP]
 > Har du inte Microsoft Defender för Office 365 än? [Kontakta försäljning för att påbörja en utvärderingsversion](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
+## <a name="june-2021"></a>Juni 2021
+
+- Ny första kontakt säkerhetstips i skydd mot nätfiske. Den säkerhetstips visas när mottagarna först får ett e-postmeddelande från en avsändare eller inte ofta får e-post från en avsändare. Mer information om den här inställningen och hur du konfigurerar den finns i följande artiklar:
+
+- [Första säkerhetstips](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- [Konfigurera principer för skydd mot nätfiske i EOP](configure-anti-phishing-policies-eop.md)
+- [Konfigurera principer mot nätfiske i Microsoft Defender för Office 365](configure-mdo-anti-phishing-policies.md)
+
 ## <a name="aprilmay-2021"></a>April/maj 2021
 
 - [Sidan E-post](mdo-email-entity-page.md)entitet: En enhetlig 360-gradersvy av ett e-postmeddelande med bättre information om hot, autentisering och identifieringar, avonationsinformation och en helt ny förhandsgranskning av e-post.
@@ -54,6 +62,7 @@ Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch
 - Öka gränserna för export av poster från 9 990 till 200 000 i [upplevelser för söker](threat-explorer.md)
 - Utöka datalagrings- och sökbegränsningen i Utforskaren (och Realtidsidentifiering) för utvärderingsklienter från 7 (föregående gräns) till 30 dagar i [sökning](threat-explorer.md)
 - Nya pivoter  för sökning som  kallas personifierad domän och personifierad användare i Utforskaren (och identifieringar i realtid) för att söka efter personifieringsattacker mot skyddade användare eller domäner. Mer information finns i [.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
+- Ny första kontakt som säkerhetstips för när mottagarna först får ett e-postmeddelande från en avsändare eller inte ofta får e-post från en avsändare. Mer information om den här inställningen och hur du konfigurerar den med hjälp Exchange e-postflödesregler (kallas även transportregler) finns i [Säkerhetstips.](set-up-anti-phishing-policies.md#first-contact-safety-tip)
 
 ## <a name="december-2020"></a>December 2020
 

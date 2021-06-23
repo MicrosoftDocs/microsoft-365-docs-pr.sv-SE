@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du importerar data från tredje part från plattformar för sociala medier, snabbmeddelandeplattformar och dokumentsamarbete till Microsoft 365 postlådor.
-ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054772"
+ms.locfileid: "53061731"
 ---
 # <a name="archive-third-party-data"></a>Arkivera data från tredje part
 
@@ -143,7 +143,6 @@ Som tidigare nämnts är dataanslutningar från TeleMessage tillgängliga i moln
 |O2 SMS och Voice Network Archiver | Ja         | Nej | Nej |
 |TELUS SMS Network Archiver | Ja | Nej | Nej |
 |Verizon SMS/MMS Network Archiver | Ja | Nej | Nej |
-|WeChat Archiver | Ja | Nej | Nej |
 |WhatsApp Archiver | Ja | Nej | Nej |
 |||||
 

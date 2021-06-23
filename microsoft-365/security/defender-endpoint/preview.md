@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c77762de4dbd70922eb5623f801837bf6454ec7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 65edf54ea0bf5cb0a0210dd306db07c756149f65
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842369"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062128"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Förhandsversionsfunktioner i Microsoft Defender för slutpunkt
 
@@ -61,12 +61,6 @@ Aktivera inställningen för förhandsversionen och var bland de första att pro
 ## <a name="preview-features"></a>Förhandsgranskningsfunktioner
 
 Följande funktioner ingår i förhandsversionen:
-
-- [Enhetsidentifiering](device-discovery.md) <br> Hjälper dig att hitta ohanterade enheter anslutna till företagsnätverket utan att behöva extra utrustning eller krångliga processändringar. Med onboarded-enheter kan du hitta ohanterade enheter i nätverket och bedöma svagheter och risker. Du kan sedan hantera identifierade enheter för att minska riskerna med ohanterade slutpunkter i nätverket.
-
-   > [!IMPORTANT]
-   > Standardidentifiering kommer att vara standardläge för alla kunder från och med den 19 juli 2021. Du kan välja att behålla grundläget via inställningssidan. 
-
 
 - [Webbinnehållsfiltrering](web-content-filtering.md) <br> Webbinnehållsfiltrering är en del av webbskyddsfunktionerna i Microsoft Defender för Endpoint. Det gör att din organisation kan spåra och reglera åtkomsten till webbplatser baserat på deras innehållskategorier. Många av dessa webbplatser, även om de inte är skadliga, kan vara problematiska på grund av regelefterlevnad, bandbreddsanvändning eller andra problem.
 
