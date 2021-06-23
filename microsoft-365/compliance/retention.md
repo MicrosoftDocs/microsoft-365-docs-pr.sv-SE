@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om kvarhållningsprinciper och kvarhållningsetiketter som hjälper dig att behålla det du behöver och ta bort det du inte behöver.
-ms.openlocfilehash: 65c9216e30c2db04b1981a17d73b3a9f0b5f1594
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: e39f4e65d5c4bdf4235e7ae2d8aa207c986c76c8
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007507"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055050"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Mer information om kvarhållningsprinciper och kvarhållningsetiketter
 
@@ -224,17 +224,12 @@ När kvarhållningsetiketter markerar objekt som en post eller en regelpost änd
 
 #### <a name="monitoring-retention-labels"></a>Övervaka kvarhållningsetiketter
 
-Från Microsoft 365 Efterlevnadscenter använder du **Dataklassificering** > **Översikt** för att övervaka hur kvarhållningsetiketterna används i klientorganisationen och identifiera var de märkta objekten finns. Mer information, inklusive viktiga krav, finns i [Få koll på dina data – en översikt över dataklassificering](data-classification-overview.md).
+Från Microsoft 365 Efterlevnadscenter använder du **Dataklassificering** och sidan **Översikt** för att övervaka hur kvarhållningsetiketterna används i klientorganisationen och identifiera var de märkta objekten finns. Mer information, inklusive viktiga krav, finns i [Läs mer om dataklassificering](data-classification-overview.md).
 
 Du kan sedan öka detaljinformationen genom att använda [innehållsutforskaren](data-classification-content-explorer.md) och [aktivitetsutforskaren](data-classification-activity-explorer.md).
 
 > [!TIP]
 >Du kan använda några av de andra insikterna om dataklassificering, till exempel träningsbara klassificerare och typer av känslig information, som hjälper dig att identifiera innehåll som du kan behöva behålla eller ta bort eller hantera som arkivhandlingar.
-
-I Säkerhets- och efterlevnadscenter för Office 365 finns motsvarande översiktsinformation för kvarhållningsetiketter från **Informationsstyrning** > **Instrumentpanel** och mer detaljerad information från **Informationsstyrning** > **Utforskaren för etikettaktivitet**. Mer information om hur du övervakar kvarhållningsetiketter från det här äldre administrationscentret finns i följande dokumentation:
-- [Visa datastyrningsrapporter](view-the-data-governance-reports.md)
-- [Komma igång med dataklassificering](data-classification-overview.md).
-- [Visa etikettaktivitet för dokument](view-label-activity-for-documents.md)
 
 #### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label"></a>Använda Innehållssökning för att hitta allt innehåll med en viss kvarhållningsetikett
 

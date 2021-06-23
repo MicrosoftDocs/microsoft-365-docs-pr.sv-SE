@@ -22,77 +22,141 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du importerar data från tredje part från plattformar för sociala medier, snabbmeddelandeplattformar och dokumentsamarbete till Microsoft 365 postlådor.
-ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: de4c3c6454809cc1b7f78c0e5790fcbe8b3887c0
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061731"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096174"
 ---
-# <a name="archive-third-party-data"></a>Arkivera data från tredje part
+# <a name="archive-third-party-data-in-microsoft-365"></a>Arkivera data från tredje part i Microsoft 365
 
 Microsoft 365 kan administratörer använda datakopplingar för att importera och arkivera data från tredje part från plattformar för sociala medier, snabbmeddelanden och plattformar för dokumentsamarbete till postlådor i Microsoft 365 organisation. En av de största fördelarna med att använda datakopplingar för att importera och arkivera data från tredje part i Microsoft 365 är att du kan använda olika Microsoft 365-efterlevnadslösningar för dem när de har importerats. På så sätt kan du säkerställa att organisationens data som inte är Microsoft följer föreskrifter och standarder som påverkar organisationen.
 
 ## <a name="third-party-data-connectors"></a>Datakopplingar för tredje part
 
-I följande tabell visas de datakopplingar från tredje part som är tillgängliga i Microsoft 365 Efterlevnadscenter. Tabellen sammanfattar även de efterlevnadslösningar som du kan använda på data från tredje part efter att du importerat och arkiverat dem i Microsoft 365. I nästa [avsnitt finns](#overview-of-compliance-solutions-that-support-third-party-data) en mer detaljerad beskrivning av varje efterlevnadslösning och hur den kan vara till nytta för data från tredje part.
+I Microsoft 365 Efterlevnadscenter finns inbyggda dataanslutningar från tredje part från Microsoft för att importera data från olika datakällor, till exempel LinkedIn, Instant Bloomberg och Twitter, och datakopplingar som stöder Insider-riskhanteringslösningen. Förutom dessa dataanslutningar arbetar Microsoft tillsammans med följande partner för att tillhandahålla många fler tredjepartsdatakopplingar i Microsoft 365 Efterlevnadscenter. Din organisation arbetar med dessa partner för att konfigurera arkiveringstjänsten innan en motsvarande datakoppling skapas i Microsoft 365 Efterlevnadscenter.
 
-> [!TIP]
-> Klicka på länken i **kolumnen med data från** tredje part om du vill ha stegvisa anvisningar för hur du skapar en koppling för den datatypen.
+- [Veritas](#veritas-data-connectors)
+
+- [TeleMessage](#telemessage-data-connectors)
+
+- [17a-4 LLC](#17a-4-data-connectors)
+
+- [CellTrust](#celltrust-data-connectors)
+
+Data från tredje part som listas i nästa avsnitt (förutom HR-data och fysiska badgingdata som används för Microsoft 365 Insider-riskhanteringslösningen) importeras till användarnas postlådor. De Microsoft 365 efterlevnadslösningar som stöder data från tredje part tillämpas på den användarpostlåda där data lagras.
+
+### <a name="microsoft-data-connectors"></a>Microsoft-datakontakter
+
+I följande tabell visas de inbyggda datakopplingarna från tredje part som är tillgängliga i Microsoft 365 Efterlevnadscenter. Tabellen sammanfattar även de efterlevnadslösningar som du kan använda efter att du har importerat och arkiverat data från tredje Microsoft 365. I avsnittet [Översikt över efterlevnadslösningar](#overview-of-compliance-solutions-that-support-third-party-data) som stöder data från tredje part finns en mer detaljerad beskrivning av varje efterlevnadslösning och hur den har stöd för data från tredje part.
+
+Klicka på länken i **kolumnen med data från** tredje part om du vill ha stegvisa anvisningar för hur du skapar en koppling för den datatypen.
 
 |Data från tredje part  |Bevarande av juridiska skäl|eDiscovery  |Inställningar för bevarande  |Hantering av arkivhandlingar  |Kommunikationsefterlevnad  |Hantering av insiderrisk  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Android <sup>1</sup>](archive-android-archiver-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[AT&T Network <sup>1</sup>](archive-att-network-archiver-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Bell Network <sup>1</sup>](archive-bell-network-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Bloomberg-meddelande](archive-bloomberg-message-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Cisco Jabber på MS SQL <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Cisco Jabber på Oracle <sup>2</sup>](archive-ciscojabberonoracle-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Cisco Jabber på PostgreSQL <sup>2</sup>](archive-ciscojabberonpostgresql-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[EML <sup>2</sup>](archive-eml-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
-|[Företagsnummer <sup>1</sup>](archive-enterprise-number-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
-|[FX Anslut <sup>2</sup>](archive-fxconnect-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Personalavdelningen](import-hr-data.md) ||||||![Bockmarkering](../media/checkmark.png)
 |[ICE-chatt](archive-icechat-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Jive <sup>2</sup>](archive-jive-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
-|[MS SQL Database <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
-|[O2 Network <sup>1</sup>](archive-o2-network-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Fysisk aktivitet](import-physical-badging-data.md) ||||||![Bockmarkering](../media/checkmark.png)|
-|[Pivot <sup>2</sup>](archive-pivot-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Redtail Speak <sup>2</sup>](archive-redtailspeak-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Reuters Dealing <sup>2</sup>](archive-reutersdealing-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Reuters Eikon <sup>2</sup>](archive-reuterseikon-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Salesforce Chatter <sup>2</sup>](archive-salesforcechatter-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
-|[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
-|[Signal <sup>1</sup>](archive-signal-archiver-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Skype för företag <sup>2</sup>](archive-skypeforbusiness-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Slack eDiscovery <sup>2</sup>](archive-slack-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Hann <sup>2</sup>](archive-symphony-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Hansson <sup>1</sup>](archive-telegram-archiver-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[TELUS Network <sup>1</sup>](archive-telus-network-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Textavgränsad <sup>2</sup>](archive-text-delimited-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
-|[Verizon Network <sup>1</sup>](archive-verizon-network-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Webbsidor <sup>2</sup>](archive-webpagecapture-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
-|[WeChat <sup>1</sup>](archive-wechat-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Arbetsplats från Facebook <sup>2</sup>](archive-workplacefromfacebook-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[XIP <sup>2</sup>](archive-xip-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[XSLT/XML <sup>2</sup>](archive-xslt-xml-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
-|[Yieldbroker <sup>2</sup>](archive-yieldbroker-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
-|[Zooma möten <sup>2</sup>](archive-zoommeetings-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 ||||||||
 
-> [!NOTE]
-> <sup>1</sup> Data connector provided by TeleMessage. Innan du kan arkivera data i Microsoft 365 måste du arbeta med TeleMessage för att konfigurera deras arkiveringstjänst för din organisation. Mer information finns i avsnittet som krävs i de stegvisa instruktionerna för den här datatypen. TeleMessage-dataanslutningar är också tillgängliga GCC miljöer i Microsoft 365 för myndigheter i USA. Mer information finns i avsnittet [Dataanslutningar i molnet för myndigheter i USA i](#data-connectors-in-the-us-government-cloud) den här artikeln. <br/><br/><sup>2</sup> Datakoppling tillhandahålls av Veritas. Innan du kan arkivera data i Microsoft 365 måste du arbeta med Veritas för att konfigurera deras arkiveringstjänst för organisationen. Mer information finns i avsnittet som krävs i de stegvisa instruktionerna för den här datatypen.
+### <a name="veritas-data-connectors"></a>Veritas-datakopplingar
 
-Data från tredje part som listas i föregående tabell (utom hr-data och fysiska badgingdata) importeras till användarpostlådor. Motsvarande efterlevnadslösningar som stöder data från tredje part tillämpas på den användarpostlåda där data lagras.
+Tabellen i det här avsnittet innehåller de datakopplingar från tredje part som är tillgängliga i samarbete med Veritas. Tabellen sammanfattar även de efterlevnadslösningar som du kan använda på data från tredje part efter att du har importerat och arkiverat dem i Microsoft 365. I avsnittet [Översikt över efterlevnadslösningar](#overview-of-compliance-solutions-that-support-third-party-data) som stöder data från tredje part finns en mer detaljerad beskrivning av varje efterlevnadslösning och hur den har stöd för data från tredje part.
+
+Innan du kan arkivera data från tredje part i Microsoft 365 måste du arbeta med Veritas och konfigurera deras arkiveringstjänst (kallas *Merge1*) för organisationen. Om du vill ha mer information klickar du på länken i **datakolumnen** från tredje part om du vill gå till steg-för-steg-instruktionerna för att skapa en koppling för den datatypen.
+
+|Data från tredje part  |Bevarande av juridiska skäl|eDiscovery  |Inställningar för bevarande  |Hantering av arkivhandlingar  |Kommunikationsefterlevnad  |Hantering av insiderrisk  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust](archive-celltrust-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Cisco Jabber på MS SQL](archive-ciscojabberonmssql-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Cisco Jabber på Oracle](archive-ciscojabberonoracle-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Cisco Jabber på PostgreSQL](archive-ciscojabberonpostgresql-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[EML](archive-eml-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
+|[FX-anslutning](archive-fxconnect-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Jive](archive-jive-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[MS SQL-databas](archive-mssqldatabaseimporter-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
+|[Pivot](archive-pivot-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Redtail Speak](archive-redtailspeak-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Reuters Dealing](archive-reutersdealing-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Reuters Eikon](archive-reuterseikon-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Reuters FX](archive-reutersfx-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Salesforce Chatter](archive-salesforcechatter-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
+|[ServiceNow](archive-servicenow-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
+|[EDiscovery för slack](archive-slack-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Symphony](archive-symphony-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Textavgränsad](archive-text-delimited-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
+|[Webex Teams](archive-webexteams-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Webbsidor](archive-webpagecapture-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
+|[Arbetsplats från Facebook](archive-workplacefromfacebook-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[XIP](archive-xip-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[XSLT/XML](archive-xslt-xml-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
+|[Yieldbroker](archive-yieldbroker-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Zooma möten](archive-zoommeetings-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+||||||||
+
+### <a name="telemessage-data-connectors"></a>TeleMessage-datakontakter
+
+Tabellen i det här avsnittet innehåller de datakopplingar från tredje part som är tillgängliga i samarbete med TeleMessage. Tabellen sammanfattar även de efterlevnadslösningar som du kan använda på data från tredje part efter att du har importerat och arkiverat dem i Microsoft 365. I avsnittet [Översikt över efterlevnadslösningar](#overview-of-compliance-solutions-that-support-third-party-data) som stöder data från tredje part finns en mer detaljerad beskrivning av varje efterlevnadslösning och hur den har stöd för data från tredje part.
+
+Innan du kan arkivera data från tredje Microsoft 365 måste du arbeta med TeleMessage och konfigurera deras arkiveringstjänst för organisationen. Om du vill ha mer information klickar du på länken i **datakolumnen** från tredje part om du vill gå till steg-för-steg-instruktionerna för att skapa en koppling för den datatypen.
+
+TeleMessage-dataanslutningar är också tillgängliga GCC miljöer i Microsoft 365 för myndigheter i USA. Mer information finns i avsnittet Dataanslutningar i molnet för myndigheter i USA i den här artikeln.
+
+|Data från tredje part  |Bevarande av juridiska skäl|eDiscovery  |Inställningar för bevarande  |Hantering av arkivhandlingar  |Kommunikationsefterlevnad  |Hantering av insiderrisk  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Android ](archive-android-archiver-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[AT&T Network ](archive-att-network-archiver-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Bell Network ](archive-bell-network-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Företagsnummer ](archive-enterprise-number-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[O2-nätverk ](archive-o2-network-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[TELUS Network ](archive-telus-network-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Verizon Network ](archive-verizon-network-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[WeChat ](archive-wechat-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[WhatsApp ](archive-whatsapp-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+||||||||
+
+### <a name="17a-4-data-connectors"></a>17a-4 datakopplingar
+
+Tabellen i det här avsnittet innehåller de datakopplingar från tredje part som är tillgängliga i samarbete med 17a-4 LLC. Tabellen sammanfattar även de efterlevnadslösningar som du kan använda på data från tredje part efter att du har importerat och arkiverat dem i Microsoft 365. I avsnittet [Översikt över efterlevnadslösningar](#overview-of-compliance-solutions-that-support-third-party-data) som stöder data från tredje part finns en mer detaljerad beskrivning av varje efterlevnadslösning och hur den har stöd för data från tredje part.
+
+Innan du kan arkivera data från tredje part i Microsoft 365 måste du arbeta med Veritas och konfigurera deras arkiveringstjänst (som kallas *DataParser)* för organisationen. Om du vill ha mer information klickar du på länken i **datakolumnen** från tredje part om du vill gå till steg-för-steg-instruktionerna för att skapa en koppling för den datatypen.
+
+|Data från tredje part  |Bevarande av juridiska skäl|eDiscovery  |Inställningar för bevarande  |Hantering av arkivhandlingar  |Kommunikationsefterlevnad  |Hantering av insiderrisk  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[BlackBerry](archive-17a-4-blackberry-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Bloomberg ](archive-17a-4-bloomberg-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Cisco Jabber ](archive-17a-4-cisco-jabber-data.md)   |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Cisco Webex ](archive-17a-4-webex-teams-data.md)   |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[FactSet ](archive-17a-4-factset-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Fuze ](archive-17a-4-fuze-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[FX Anslut](archive-17a-4-fxconnect-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[ICE-chatt](archive-17a-4-ice-im-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[InvestEdge ](archive-17a-4-investedge-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Konversationsmoln för LivePerson ](archive-17a-4-liveperson-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Quip ](archive-17a-4-quip-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Refinitiv Eikon Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[ServiceNow ](archive-17a-4-servicenow-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Slack ](archive-17a-4-slack-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Så här ser det ut ](archive-17a-4-symphony-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Zooma ](archive-17a-4-zoom-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+||||||||
+
+### <a name="celltrust-data-connectors"></a>CellTrust-datakopplingar
+
+Tabellen i det här avsnittet innehåller den datakoppling från tredje part som är tillgänglig i samarbete med CellTrust. Tabellen sammanfattar även de efterlevnadslösningar som du kan använda på data från tredje part efter att du har importerat och arkiverat dem i Microsoft 365. I avsnittet [Översikt över efterlevnadslösningar](#overview-of-compliance-solutions-that-support-third-party-data) som stöder data från tredje part finns en mer detaljerad beskrivning av varje efterlevnadslösning och hur den har stöd för data från tredje part.
+
+Innan du kan arkivera data från tredje part i Microsoft 365 måste du arbeta med CellTrust och konfigurera deras arkiveringstjänst (kallas *CellTrust SL2)* för organisationen. Om du vill ha mer information klickar du på länken i **kolumnen data** från tredje part för att gå till steg-för-steg-instruktionerna för att skapa en CellTrust SL2-koppling.
+
+|Data från tredje part  |Bevarande av juridiska skäl|eDiscovery  |Inställningar för bevarande  |Hantering av arkivhandlingar  |Kommunikationsefterlevnad  |Hantering av insiderrisk  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust SL2](archive-data-from-celltrustsl2.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+||||||||
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Översikt över efterlevnadslösningar som stöder data från tredje part
 

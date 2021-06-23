@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 461911a1e14241112f4ff0e8efb0135b4e1a5a25
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028793"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096738"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Använd minskningsregler för attackytan för att förhindra skadlig smitta
 
@@ -46,7 +46,7 @@ Mer information om hur du konfigurerar regler för att minska attackytan finns i
 
 ## <a name="assess-rule-impact-before-deployment"></a>Utvärdera påverkan på regeln före distribution
 
-Du kan utvärdera hur en minskningsregel för attackytan kan påverka nätverket genom att öppna säkerhetsrekommendationerna för den regeln i [hantering av hot och sårbarhet.](/windows/security/threat-protection/#tvm)
+Du kan utvärdera hur en minskningsregel för attackytan kan påverka nätverket genom att öppna säkerhetsrekommendationerna för den [regeln i Hantering av hot och säkerhetsrisker](/windows/security/threat-protection/#tvm).
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Säkerhetsreco för minskningsregel för attackytan":::
 
@@ -66,12 +66,12 @@ Varningsläge hjälper din organisation att ha regler för att minska attackytan
 
 Varningsläge stöds på enheter som kör följande versioner av Windows:
 
-- [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809) eller senare
+- [Windows 10 version 1809](/windows/whats-new/whats-new-windows-10-version-1809) eller senare
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809) eller senare
 
 Microsoft Defender Antivirus måste köras med realtidsskydd i [aktivt läge.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
 
-Kontrollera också att uppdateringar [för Microsoft Defender Antivirus och program mot skadlig programvara](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) är installerade.
+Kontrollera också att Microsoft Defender Antivirus [programuppdateringar och program mot skadlig programvara](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) har installerats.
 
 - Lägsta krav för plattformsutgågår: `4.18.2008.9`
 - Lägsta krav för släppt motor: `1.1.17400.5`
@@ -80,13 +80,13 @@ Mer information och information om hur du får dina uppdateringar finns [i Uppda
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Fall där varningsläge inte stöds
 
-Varningsläge stöds inte för tre minskningsregler för attackytor när du konfigurerar dem i Microsoft Endpoint Manager. (Om du använder grupprinciper för att konfigurera reglerna för att minska attackytan stöds varningsläge.) De tre regler som inte stöder varningsläge när du konfigurerar dem i Microsoft Endpoint Manager är följande:
+Varningsläge stöds inte för tre minskningsregler för attackytor när du konfigurerar dem i Microsoft Endpoint Manager. (Om du använder grupprinciper för att konfigurera reglerna för att minska attackytan stöds varningsläge.) De tre reglerna som inte stöder varningsläge när du konfigurerar dem i Microsoft Endpoint Manager är följande:
 
 - [Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) (GUID `d3e037e1-3eb8-44c8-a917-57927947596d` )
 - [Blockera beständighet via WMI-händelseprenumeration](#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b` )
 - [Använd avancerat skydd mot utpressningstrojaner](#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35` )
 
-Dessutom stöds inte varningsläge på enheter med äldre versioner av Windows. I sådana fall kommer minskningsregler för attackytan som är konfigurerade att köras i varningsläge att köras i blockläge.
+Dessutom stöds inte varningsläge på enheter som kör äldre versioner av Windows. I sådana fall kommer minskningsregler för attackytan som är konfigurerade att köras i varningsläge att köras i blockläge.
 
 ## <a name="notifications-and-alerts"></a>Meddelanden och aviseringar
 
@@ -94,7 +94,7 @@ När en minskningsregel för attackytan utlöses visas ett meddelande på enhete
 
 När vissa minskningsregler för attackytan utlöses genereras dessutom varningar.
 
-Meddelanden och alla aviseringar som genereras kan visas i Microsoft 365 Defender-portalen [https://security.microsoft.com](https://security.microsoft.com) () () (kallades [tidigare Microsoft Defender Säkerhetscenter).](microsoft-defender-security-center.md)
+Meddelanden och alla aviseringar som genereras kan visas i [https://security.microsoft.com](https://security.microsoft.com) Microsoft 365 Defender portalen () (kallades [tidigare för Microsoft Defender Säkerhetscenter](microsoft-defender-security-center.md)).
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Avancerad sökning och minskning av attackytor
 
@@ -104,27 +104,27 @@ Anta till exempel att en minskning av attackytan inträffat på 10 enheter under
 
 Mer information om avancerad sökning finns i [Proaktivt sök efter hot med avancerad sökning.](advanced-hunting-overview.md)
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>Funktioner för att minska attackytan i alla Windows-versioner
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>Funktioner för att minska attackytan i Windows versioner
 
-Du kan ange minskningsregler för attackytan för enheter som kör någon av följande versioner av Windows:
+Du kan ange minskningsregler för attackytan för enheter som kör någon av följande utgåvor och versioner av Windows:
 
-- Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Pro, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Enterprise, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
 - Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Även om minskningsregler för attackytor inte kräver en [Windows E5-licens](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. Följande avancerade funktioner, som endast är tillgängliga i Windows E5, är:
+Även om minskningsregler för attackytan inte kräver en [E5 Windows-licens,](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. De avancerade funktionerna – endast tillgängliga i Windows E5 – omfattar:
 
 - Övervakning, analys och arbetsflöden som är tillgängliga i [Defender för Slutpunkt](microsoft-defender-endpoint.md)
-- Rapporterings- och konfigurationsfunktionerna i [Microsoft 365 Defender.](/microsoft-365/security/defender/overview-security-center)
+- Rapporterings- och konfigurationsfunktionerna i [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-Dessa avancerade funktioner är inte tillgängliga med en Windows Professional- eller Windows E3-licens. Men om du har de licenserna kan du använda Loggboken och Microsoft Defender Antivirus-loggarna för att granska dina minskningsregelhändelser för attackytan.
+Dessa avancerade funktioner är inte tillgängliga med en licens från Windows Professional eller Windows E3. Men om du har de licenserna kan du använda Loggboken och Microsoft Defender Antivirus för att granska dina minskningsregelhändelser för attackytan.
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Granska händelser för att minska attackytan på Microsoft 365 Defender-portalen
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Granska händelser för att minska attackytan i Microsoft 365 Defender portalen
 
 Defender för Endpoint tillhandahåller detaljerad rapportering för händelser och block som en del av scenarier för aviseringsundersökning.
 
-Du kan fråga Defender för slutpunktsdata i [Microsoft 365 Defender genom](microsoft-defender-security-center.md) att använda avancerad [sökning](advanced-hunting-query-language.md). Om du kör granskningsläget [kan du](audit-windows-defender.md)använda avancerad sökning för att förstå hur minskning av attackytan kan påverka din miljö.
+Du kan fråga Defender om slutpunktsdata i Microsoft 365 Defender genom [att](microsoft-defender-security-center.md) använda [avancerad sökning](advanced-hunting-query-language.md). Om du kör granskningsläget [kan du](audit-windows-defender.md)använda avancerad sökning för att förstå hur minskning av attackytan kan påverka din miljö.
 
 Här är en exempelfråga:
 
@@ -133,13 +133,13 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Granska händelser för att minska attackytan i Windows Loggboken
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Granska minskningar av attackytor i Windows Event Viewer
 
-Du kan granska Windows-händelseloggen om du vill visa händelser som genererats av minskningsregler för attackytan:
+Du kan granska Windows för att visa händelser som genereras av minskningsregler för attackytan:
 
 1. Ladda ned [utvärderingspaketet](https://aka.ms/mp7z2w) och extrahera filen *cfa-events.xml* till en lättillgänglig plats på enheten.
 
-2. Ange orden, *Loggboken,* på Start-menyn för att öppna Windows Loggboken.
+2. Ange orden, *Loggboken*, i Start-menyn för att öppna Windows Loggboken.
 
 3. Under **Åtgärder** väljer du **Importera anpassad vy...**.
 
@@ -155,32 +155,32 @@ Du kan skapa en anpassad vy som filtrerar händelser för att endast visa följa
 |1121|Händelse när en regel ut sätts i blockläge|
 |1122|Händelse när en regel aktiveras i granskningsläge|
 
-"engine version" listed for attack surface reduction events in the event log, is generated by Defender for Endpoint, not by the operating system. Defender för slutpunkt är integrerad med Windows 10, så den här funktionen fungerar på alla enheter med Windows 10 installerat.
+"engine version" listed for attack surface reduction events in the event log, is generated by Defender for Endpoint, not by the operating system. Defender för Endpoint är integrerat med Windows 10, så den här funktionen fungerar på alla enheter Windows 10 installerat.
 
 ## <a name="attack-surface-reduction-rules"></a>Regler för minskning av attackytan
 
 I följande tabell och underavsnitt beskrivs var och en av de 16 minskningsregler för attackytor. Minskningsregler för attackytor listas i alfabetisk ordning, efter regelnamn.
 
-Om du konfigurerar regler för att minska attackytan med grupprinciper eller PowerShell måste du ha GUID:er. Å andra sidan behöver du inte GUID:er om du använder Microsoft Endpoint Manager eller Microsoft Intune.
+Om du konfigurerar regler för att minska attackytan med grupprinciper eller PowerShell måste du ha GUID:er. Å andra sidan, om du använder Microsoft Endpoint Manager eller Microsoft Intune behöver du inte GUID:er.
 
 |Regelnamn|GUID|Undantag & mappar|Lägsta operativsystem som stöds|
 |---|:---:|---|---|
-|[Blockera missbruk av utnyttjas sårbara signerade drivrutiner](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare) |
-|[Blockera Adobe Reader från att skapa underordnade processer](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera alla Office-program från att skapa underordnade processer](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera körbart innehåll från e-postklient och webbaserad e-post](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera körbara filer från att köras såvida de inte uppfyller ett villkor för en vän, ålder eller en betrodd lista](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera körning av potentiellt oönskade skript](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Office-program från att skapa körbart innehåll](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Office-program från att mata in kod i andra processer](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Office-kommunikationsprogram från att skapa underordnade processer](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera beständighet via WMI-händelseprenumeration](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Stöds inte|[Windows 10, version 1903](/windows/whats-new/whats-new-windows-10-version-1903) (version 18362) eller senare|
-|[Blockera processskapanden som kommer från PSExec- och WMI-kommandon](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera icke betrodda och osignerade processer som körs från USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Blockera Win32 API-anrop från Office-makron](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|[Använd avancerat skydd mot utpressningstrojaner](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Stöds|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera missbruk av utnyttjas sårbara signerade drivrutiner](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare) |
+|[Blockera Adobe Reader från att skapa underordnade processer](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera alla Office från att skapa underordnade processer](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera körbart innehåll från e-postklient och webbaserad e-post](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera körbara filer från att köras såvida de inte uppfyller ett villkor för en vän, ålder eller en betrodd lista](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera körning av potentiellt oönskade skript](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Office program från att skapa körbart innehåll](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Office-program från att mata in kod i andra processer](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Office kommunikationsprogram från att skapa underordnade processer](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera beständighet via WMI-händelseprenumeration](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Stöds inte|[Windows 10 version 1903](/windows/whats-new/whats-new-windows-10-version-1903) (version 18362) eller senare|
+|[Blockera processskapanden som kommer från PSExec- och WMI-kommandon](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera icke betrodda och osignerade processer som körs från USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Blockera Win32 API-anrop från Office makron](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
+|[Använd avancerat skydd mot utpressningstrojaner](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
 |
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Blockera missbruk av utnyttjas sårbara signerade drivrutiner
@@ -216,7 +216,7 @@ Genom social teknik eller sårbarheter kan skadlig programvara ladda ned och sta
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows 10 version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
@@ -226,11 +226,11 @@ Konfigurationshanterarens namn: Ännu inte tillgängligt
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
-### <a name="block-all-office-applications-from-creating-child-processes"></a>Blockera alla Office-program från att skapa underordnade processer
+### <a name="block-all-office-applications-from-creating-child-processes"></a>Blockera alla Office från att skapa underordnade processer
 
-Den här regeln blockerar Office-appar från att skapa underordnade processer. Office-apparna innehåller Word, Excel, PowerPoint, OneNote och Access.
+Den här regeln blockerar Office appar från att skapa underordnade processer. Office till exempel Word, Excel, PowerPoint, OneNote och Access.
 
-Att skapa skadliga underordnade processer är en vanlig strategi för skadlig programvara. Skadlig programvara som utnyttjar Office som en vektor ofta kör VBA-makron och utnyttjar kod för att ladda ned och försöka köra fler nyttolaster. Men vissa legitima affärsprogram kan också generera underordnade processer för ändamål med särskilda syften. som att ta bort en kommandotolk eller använda PowerShell för att konfigurera registerinställningar.
+Att skapa skadliga underordnade processer är en vanlig strategi för skadlig programvara. Skadlig programvara som Office som en vektor ofta kör VBA-makron och utnyttjar kod för att ladda ned och försöka köra fler nyttolaster. Men vissa legitima affärsprogram kan också generera underordnade processer för ändamål med särskilda syften. som att ta bort en kommandotolk eller använda PowerShell för att konfigurera registerinställningar.
 
 Den här regeln infördes i:
 
@@ -296,9 +296,11 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Blockera körbara filer från att köras såvida de inte uppfyller ett villkor för en vän, ålder eller en betrodd lista
 
-Den här regeln blockerar följande filtyper från att startas såvida de inte uppfyller särskilda villkor eller ålderskriterier, eller om de finns i en betrodd lista eller en undantagslista:
+Den här regeln blockerar körbara filer, till exempel .exe, .dll eller .scr, från att startas såvida inte något av följande villkor uppfylls:
 
-- Körbara filer (till exempel .exe, .dll eller .scr)
+- Ärenden: De körbara filerna finns på fler än 1 000 slutpunkter
+- Ålder: De körbara filerna släpptes för mer än 24 timmar sedan
+- Plats: De körbara filerna ingår i en betrodd lista eller en undantagslista
 
 Det kan vara riskabelt att starta opålitliga eller okända körbara filer, eftersom det kanske inte står helt klart om filerna är skadliga.
 
@@ -404,16 +406,16 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Blockera Office kommunikationsprogram från att skapa underordnade processer
 
-Den här regeln förhindrar att Outlook skapar underordnade processer, samtidigt som legitima Outlook-funktioner tillåts.
+Den här regeln förhindrar Outlook att skapa underordnade processer, samtidigt som legitima Outlook tillåts.
 
-Den här regeln skyddar mot social engineering-angrepp och förhindrar att sårbarheter i kod från säkerhetsproblem i Outlook utnyttjas. Det skyddar även mot [Outlook-regler och formulär sårbarheter](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) som attacker kan använda när en användares autentiseringsuppgifter har komprometterats.
+Den här regeln skyddar mot social engineering-angrepp och förhindrar att kod utnyttjas på fel i Outlook. Det skyddar även mot Outlook regler och formulär sårbarheter som attacker kan använda när en [användares](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) autentiseringsuppgifter har komprometterats.
 
 > [!NOTE]
-> Den här regeln blockerar DLP-principtips och verktygstips i Outlook. Den här regeln gäller endast Outlook.com Outlook.
+> Den här regeln blockerar DLP-principtips och verktygstips i Outlook. Denna regel gäller endast Outlook och Outlook.com.
 
 Den här regeln infördes i:
 
-- [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
+- [Windows 10 version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
@@ -448,7 +450,7 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 Den här regeln blockerar processer som skapats [via PsExec](/sysinternals/downloads/psexec) [och WMI](/windows/win32/wmisdk/about-wmi) från att köras. Både PsExec och WMI kan köra kod via fjärrstyrd körning, så det finns en risk för att skadlig programvara ska kunna använda den här funktionen för kommando- och kontrolländamål eller för att sprida en smitta i organisationens nätverk.
 
 > [!WARNING]
-> Använd bara den här regeln om du hanterar dina enheter med [Intune eller en](/intune) annan MDM-lösning. Den här regeln är inkompatibel med hantering genom [Microsoft Endpoint Configuration Manager](/configmgr) eftersom den här regeln blockerar WMI-kommandon som Configuration Manager-klienten använder för att fungera korrekt.
+> Använd bara den här regeln om du hanterar dina enheter med [Intune eller en](/intune) annan MDM-lösning. Den här regeln är inkompatibel med [hantering via Microsoft Endpoint Configuration Manager](/configmgr) eftersom den här regeln blockerar WMI-kommandon som Configuration Manager-klienten använder för att fungera korrekt.
 
 Den här regeln infördes i:
 
@@ -479,7 +481,7 @@ Konfigurationshanterarens namn: `Block untrusted and unsigned processes that run
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### <a name="block-win32-api-calls-from-office-macros"></a>Blockera Win32 API-anrop från Office-makron
+### <a name="block-win32-api-calls-from-office-macros"></a>Blockera Win32 API-anrop från Office makron
 
 Den här regeln förhindrar VBA-makron från att anropa Win32-API:er.
 

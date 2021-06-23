@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om principer för nätfiske som finns i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e5cd60915699cd2adb42e575c25912f5f164a5b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055130"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096801"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Principer mot nätfiske i Microsoft 365
 
@@ -141,9 +141,11 @@ Mer information finns i [Identifiera misstänkta meddelanden på Outlook.com och
 Inställningarna **visa inställningar säkerhetstips** kontakter är tillgängliga i EOP och Defender för Office 365-organisationer och är inte beroende av inställningarna för förfalskningsskydd eller personifieringsskydd. Tabellen säkerhetstips visas för mottagarna i följande scenarier:
 
 - Första gången de får ett meddelande från en avsändare
-- Om de inte ofta får meddelanden från avsändaren.
+- De får inte ofta meddelanden från avsändaren.
 
-![Texten i meddelandet säkerhetstips personifieringsskydd med flera mottagare.](../../media/safety-tip-first-contact-multiple-recipients.png)
+![Första kontakten säkerhetstips meddelanden med en mottagare.](../../media/safety-tip-first-contact-one-recipient.png)
+
+![Första kontakten säkerhetstips meddelanden med flera mottagare.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 Den här funktionen ger ett extra säkerhetsskydd mot potentiella personifieringsattacker, så vi rekommenderar att du aktiverar den.
 

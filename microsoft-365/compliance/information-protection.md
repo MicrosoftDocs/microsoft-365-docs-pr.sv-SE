@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implementera Microsoft Information Protection (MIP) som hjälper dig att skydda känslig information var du än befinner dig eller på språng.
-ms.openlocfilehash: 2de9b1e4a3901477df883287a1ee350885de5513
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1d8e0340e518bcc66399dcc667e030efca89316a
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683697"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055100"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection i Microsoft 365.
 
@@ -77,7 +77,7 @@ Använd följande funktioner för att förhindra att känslig information förs 
 |:------|:------------|:---------------------|
 |[Dataförlustskydd](dlp-learn-about-dlp.md)| Förhindrar oavsiktlig delning av känsliga objekt. | [Kom igång med DLP-standardprincipen](get-started-with-the-default-dlp-policy.md)|
 |[Dataförlustskydd för slutpunkt](endpoint-dlp-learn-about.md)| Utökar DLP-funktionerna till objekt som används och delas på Windows 10-datorer. | [Komma igång med dataförlustskydd för slutpunkt](endpoint-dlp-getting-started.md)|
-|[Microsoft-efterlevnadstillägg (förhandsversion)](dlp-chrome-learn-about.md) | Utökar DLP-funktionerna till webbläsaren Chrome | [Kom igång med Microsofts Efterlevnadstillägg (förhandsversion)](dlp-chrome-get-started.md)|
+|[Tillägg för Microsoft Efterlevnad](dlp-chrome-learn-about.md) | Utökar DLP-funktionerna till webbläsaren Chrome | [Kom igång med Microsofts efterlevnadstillägg](dlp-chrome-get-started.md)|
 |[Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)](dlp-on-premises-scanner-learn.md)|Utökar DLP-övervakning av filaktiviteter och skyddsåtgärder för dessa filer till lokala filresurser samt SharePoint-mappar och dokumentbibliotek.|[Kom igång med Microsoft 365 lokal skanner för dataförlustskydd (förhandsversion)](dlp-on-premises-scanner-get-started.md)|
 |[Skydda känslig information i Teams-chatt och -kanalmeddelanden i Microsoft Teams](dlp-microsoft-teams.md) | Utökar vissa DLP-funktioner till Teams chatt- och kanalmeddelanden | [Läs mer om standardprincipen för dataförlustskydd i Microsoft Teams (förhandsversion)](dlp-teams-default-policy.md)|
 

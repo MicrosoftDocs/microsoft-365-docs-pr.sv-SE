@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 582116047900fc5f28d5580398cf5c065e6a3e23
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053029"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096822"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nyheter i Microsoft 365 Defender
 
@@ -38,6 +38,8 @@ RSS-feed: Få ett meddelande när sidan uppdateras genom att kopiera och klistra
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+## <a name="june-2021"></a>Juni 2021
+- Hottaggar [Microsoft 365 Defender rapporten om hotanalys](threat-analytics.md) <br> Hottaggar hjälper dig att fokusera på specifika hotkategorier och granska de mest relevanta rapporterna. 
 
 ## <a name="april-2021"></a>April 2021
 - Microsoft 365 Defender<br> Den förbättrade [Microsoft 365 Defender](https://security.microsoft.com) är nu tillgänglig. I den här nya upplevelsen samlas Defender för Slutpunkt, Defender för Office 365, Defender för identitet och annat till en enda portal. Det här är det nya hemmet för att hantera dina säkerhetskontroller. [Läs om de senaste](./overview-security-center.md).

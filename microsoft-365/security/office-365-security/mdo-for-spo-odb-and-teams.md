@@ -23,12 +23,12 @@ ms.custom:
 description: Läs mer om Microsoft Defender Office 365 för filer i SharePoint Online, OneDrive för företag och Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67bd2a0952ac630888b07eaf05d365736a0472ea
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 5a0c9721c4d8fc2087e0dbbce19305060344430c
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028841"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096750"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Säkra bilagor för SharePoint, OneDrive och Microsoft Teams
 
@@ -38,7 +38,7 @@ ms.locfileid: "53028841"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Valv Bifogade filer för SharePoint, OneDrive och Microsoft Teams i [Microsoft Defender för Office 365](whats-new-in-defender-for-office-365.md) ger ytterligare ett skyddslager för filer som redan har genomsökts vid uppladdningen av den vanliga motor för virus i [Microsoft 365.](virus-detection-in-spo.md) Valv Bifogade filer SharePoint, OneDrive filer och Microsoft Teams hjälper till att identifiera och blockera befintliga filer som identifieras som skadliga på gruppwebbplatser och dokumentbibliotek.
+Valv Bifogade filer för SharePoint, OneDrive och Microsoft Teams i [Microsoft Defender för Office 365](whats-new-in-defender-for-office-365.md) ger ytterligare ett skyddslager för filer som redan har genomsökts asynkront av den vanliga motor för virusidentifiering i [Microsoft 365.](virus-detection-in-spo.md) Valv Bifogade filer SharePoint, OneDrive filer och Microsoft Teams hjälper till att identifiera och blockera befintliga filer som identifieras som skadliga på gruppwebbplatser och dokumentbibliotek.
 
 Valv Bifogade filer SharePoint, OneDrive och Microsoft Teams är inte aktiverade som standard. Om du vill aktivera den går [du till Aktivera Valv för SharePoint, OneDrive och Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
@@ -67,7 +67,6 @@ Mer information om användarupplevelsen när en fil har identifierats som skadli
 Filer som identifieras som skadliga av Valv Bifogade filer för SharePoint, OneDrive och Microsoft Teams visas i rapporter för [Microsoft Defender för Office 365](view-reports-for-mdo.md) och i [Utforskaren (och](threat-explorer.md)identifieringar i realtid).
 
 Efter maj 2018, när en fil identifieras som skadlig av Valv Bifogade filer för SharePoint, OneDrive och Microsoft Teams, finns filen även i karantän. Mer information finns i [Hantera filer i karantän i Defender för Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
-
 
 ## <a name="keep-these-points-in-mind"></a>Tänk på följande punkter
 

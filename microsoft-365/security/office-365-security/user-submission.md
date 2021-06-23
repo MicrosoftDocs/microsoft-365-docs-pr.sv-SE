@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan lära sig hur de konfigurerar en postlåda för att samla in skräppost och nätfiske som rapporterats av användare.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083542"
+ms.locfileid: "53096162"
 ---
 # <a name="user-reported-message-settings"></a>Användarrapporterade meddelandeinställningar
 
@@ -134,24 +134,19 @@ Formateringskraven för meddelanden beskrivs i nästa avsnitt. Formateringen är
 
 För att identifiera de ursprungliga bifogade meddelandena korrekt måste meddelanden som skickas till den anpassade postlådan ha särskild formatering. Om meddelandena inte använder det här formatet identifieras alltid de ursprungliga bifogade meddelandena som nätfiskeinskick.
 
-För att de ursprungliga bifogade meddelandena ska kunna identifieras korrekt måste meddelanden som skickas till den anpassade postlådan använda följande syntax för Ämne (Kuvertrubrik):
+Om du vill ange den rapporterade orsaken till de ursprungliga bifogade meddelandena måste meddelanden som skickas till den anpassade postlådan (ändra inte den bifogade filen) börja med något av följande prefix i Ämne (Kuvertrubrik):
 
-`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
+- 1| eller Skräppost:
+- 2| eller Inte skräppost
+- 3| eller nätfiske
 
-där SafetyAPIAction är ett av följande heltalsvärden:
+Till exempel:
 
-- 1: Skräppost
-- 2: Inte skräppost
-- 3: Nätfiske
+`3|This part is ignored by the system` <br>
+`Not Junk:This part of the subject is ignored as well`
 
-I det här exemplet används följande värden:
+- Båda dessa meddelanden rapporteras som Inte skräppost baserat på ämne.
+- Resten ignoreras.
 
-- Meddelandet rapporteras som nätfiske.
-- Id för nätverksmeddelande är 49871234-6dc6-43e8-abcd-08d797f20abe.
-- Sender IP is 167.220.232.101.
-- Från-adressen är test@contoso.com.
-- Meddelandets ämnesrad är "testa nätfiske"
-
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Meddelanden som inte följer det här formatet visas inte korrekt i portalen för inskickade meddelanden.

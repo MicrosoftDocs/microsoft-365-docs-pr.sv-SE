@@ -18,12 +18,12 @@ ms.collection:
 description: Administratörer kan läsa mer om hur de visar, skapar, ändrar och tar bort Valv-principer och globala Valv-länkar i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b4254d62cfa5844756392c00686e7b93c466d160
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082762"
+ms.locfileid: "53096774"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer Valv Länkar i Microsoft Defender för Office 365
 
@@ -53,7 +53,7 @@ De grundläggande elementen i en Valv-länkprincip är:
 - Principen för säkra **länkar:** Aktivera skydd mot Valv-länkar, aktivera URL-genomsökning i realtid, ange om du vill vänta på att skanning i realtid ska slutföras innan meddelandet levereras, aktivera genomsökning av interna meddelanden, ange om användaren ska klicka på URL-adresser och ange om de vill tillåta att användare klickar på samma webbadress.
 - **Regeln säkra länkar:** Anger prioritet och mottagarfilter (vem principen gäller för).
 
-Skillnaden mellan dessa två element är inte uppenbara när du hanterar Valv-länkar i Microsoft 365 Defender portalen:
+Skillnaden mellan dessa två element är inte uppenbara när du hanterar Valv principer i Microsoft 365 Defender portalen:
 
 - När du skapar Valv princip för länkar skapar du egentligen en regel för säkra länkar och den tillhörande principen för säkra länkar samtidigt med samma namn för båda.
 - När du ändrar en Valv-länkprincip ändras regeln för säkra länkar om namn, prioritet, aktiverad eller inaktiverad, och mottagarfilter. Alla andra inställningar ändrar den associerade principen för säkra länkar.
@@ -110,7 +110,7 @@ När du skapar Valv egen princip för Microsoft 365 Defender-länkar i Microsoft
 
    Använd ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_) för flera värden i samma villkor. Använd OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_) för olika villkor.
 
-   - **Exkludera dessa användare, grupper och domäner**: Om du vill lägga till undantag för interna mottagare som principen gäller för (Mottagarundantag), väljer du det här alternativet och konfigurerar undantagen. Inställningarna och beteendet är likadana som villkoren.
+   - **Uteslut dessa användare, grupper** och domäner: Om du vill lägga till undantag för de interna mottagare som principen gäller för (mottagarundantag), väljer du det här alternativet och konfigurerar undantagen. Inställningarna och beteendet är likadana som villkoren.
 
    Klicka på **Nästa** när du är klar.
 
@@ -138,7 +138,7 @@ När du skapar Valv egen princip för Microsoft 365 Defender-länkar i Microsoft
 
 6. På sidan **Meddelande** som visas väljer du något av följande värden för **Hur vill du meddela dina användare?**:
    - **Använda standardmeddelandetexten**
-   - **Använd anpassad meddelandetext:** Om du väljer det här värdet visas följande inställningar:
+   - **Använd anpassad meddelandetext:** Om du väljer det här värdet (längden får inte vara längre än 200 tecken) visas följande inställningar:
      - **Använda Microsoft Translator för automatisk lokalisering**
      - **Anpassad meddelandetext:** Ange den anpassade aviseringstexten i den här rutan.
 
