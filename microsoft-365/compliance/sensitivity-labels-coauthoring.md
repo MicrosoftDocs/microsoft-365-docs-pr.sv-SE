@@ -13,23 +13,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Aktivera en inställning som möjliggör samtidig redigering och Spara automatiskt i skrivbordsprogram för etiketterade och krypterade dokument i SharePoint och OneDrive.
-ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: bd197a55e5a119263bd9c67716c38010a86e5263
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796060"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062195"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Aktivera samtidig redigering för filer krypterade med känslighetsetiketter
 
 >*[Licensieringsvägledning för Microsoft 365 för säkerhet och efterlevnad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Den här funktionen är i förhandsversion och kan komma att ändras. 
->
-> Aktivera den här funktionen i en testklientorganisation i stället för en produktionsklientorganisation eftersom:
-> - Funktionen gör ändringar i etiketteringsmetadata och alla appar på alla plattformar stöder för närvarande inte den här ändringen
-> - Du kan inte själv inaktivera den här funktionen när den är aktiverad
+> Den här funktionen är i förhandsversion och kan komma att ändras.
 
 Aktivera inställningen för stöd för [samtidig redigering](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) för Office-skrivbordsprogram så att flera användare kan redigera de här dokumenten samtidigt när dokument etiketteras och krypteras med [känslighetsetiketter](sensitivity-labels.md).
 
@@ -37,7 +33,7 @@ Om inte den här inställningen är aktiverad för klientorganisationen måste a
 
 Om du aktiverar den här funktionen blir dessutom funktionen [Spara automatiskt](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) tillgänglig för dessa etiketterade och krypterade filer.
 
-Om du vill läsa lanseringsmeddelandet går du till blogginlägget [Vi presenterar samtidig redigering för Microsoft Information Protection-krypterade dokument och etiketter](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+Om du vill läsa det första lanseringsmeddelandet går du till blogginlägget [Vi presenterar samtidig redigering för Microsoft Information Protection-krypterade dokument och etiketter](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Metadataändringar för känslighetsetiketter
 
@@ -76,15 +72,13 @@ Se följande avsnitt för en lista med program och tjänster som har stöd för 
 
 Se till att du förstår följande krav innan du aktiverar den här funktionen.
 
-- Du måste använda en testklientorganisation för den här förhandsversionen.
-
 - Du måste vara global administratör för att kunna aktivera den här funktionen.
 
 - Känslighetsetiketter måste vara [aktiverade för Office-filer i SharePoint och OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) för klientorganisationen. Om den här funktionen inte redan är aktiverad aktiveras den automatiskt när du väljer inställningen för att aktivera samtidig redigering för filer med känslighetsetiketter.
 
 - Microsoft 365-appar för företag:
-    - **Windows**: Förhandsversion: [Aktuell kanal (förhandsversion)](https://office.com/insider)
-    - **macOS**: Förhandsversion: [Aktuell kanal (förhandsversion)](https://office.com/insider)
+    - **Windows**: Lägsta version 2105: 18 juni
+    - **macOS**: Lägsta version 16.50
     - **iOS**: Stöds inte än
     - **Android**: Stöds inte än
 
@@ -142,34 +136,26 @@ Den här förhandsversionen av samtidig redigering för filer som krypterats med
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Så här aktiverar du samtidig redigering för filer med känslighetsetiketter
 
 > [!CAUTION]
-> Att aktivera den här inställningen är en enkelriktad åtgärd. Med den här funktionen i förhandsversion ska du bara testa den i en icke-produktionsmiljö och bara när du har läst och förstått metadataändringarna, förutsättningar, begränsningar och kända problem som är dokumenterade på den här sidan.
+> Att aktivera den här inställningen är en enkelriktad åtgärd. Med den här funktionen i förhandsversion ska du bara aktivera den bara när du har läst och förstått metadataändringarna, förutsättningar, begränsningar och kända problem som är dokumenterade på den här sidan.
 
-Med förhandsversionen måste du använda en specifik URL för att komma åt den här inställningen i Microsoft 365 Efterlevnadscenter.
+1. Logga in på [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) som global administratör för klientorganisationen.
 
-1. Logga in på Microsoft 365 Efterlevnadscenter som global administratör för testklientorganisationen med hjälp av följande länk:
+2. I navigeringsfönstret väljer du **Inställningar** > **Samtidig redigering för filer med känslighetsfiler**.
+
+2. I **Samtidig redigering för filer med känslighetsetiketter (förhandsversion)** läs sammanfattningsbeskrivningen, förutsättningarna, vad du kan förvänta dig och varningen om att du inte kan inaktivera den här inställningen när du har aktiverat den.
     
-    ```http
-    https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ```
-    Den här länken tar dig direkt till klientorganisationens inställning, **Samtidig redigering för filer med känslighetsetiketter**.
-
-    > [!IMPORTANT]
-    > Innan du fortsätter kontrollerar du att du är inloggad på en testklientorganisation som inte påverkar användarna: 
-    >
-    > Välj cirkeln med dina kontoinitialer längst upp till höger i efterlevnadscentret och bekräfta att klientorganisationens namn visar den avsedda testklientorganisationen.
-    
-2. Läs sammanfattningsbeskrivningen, förutsättningarna, vad du kan förvänta dig och varningen om att du inte kan inaktivera den här inställningen när du har aktiverat den. Välj sedan **Aktivera samtidig redigering för filer med känslighetsetiketter** och **Använd**:
+    Välj sedan **Aktivera samtidig redigering för filer med känslighetsetiketter** och **Använd**:
     
     ![Alternativ för att aktivera samtidig redigering för filer med känslighetsetiketter](../media/co-authoring-tenant-option-for-sensitivity-labels.png)
 
-3. Vänta i 24 timmar på att den här inställningen replikeras i miljön innan du testar den här nya funktionen för samtidig redigering.
+3. Vänta i 24 timmar på att den här inställningen replikeras i miljön innan du använder den här nya funktionen för samtidig redigering.
 
 ## <a name="contact-support-if-you-need-to-disable-this-feature"></a>Kontakta supporten om du behöver inaktivera funktionen
 
 > [!IMPORTANT]
 > Om du behöver inaktivera den här funktionen bör du tänka på att etiketteringsinformationen kan gå förlorad.
 
-När du har aktiverat samtidig redigering för filer med känslighetsetiketter för klientorganisationen kan du inte inaktivera inställningen själv. Därför är det så viktigt att du kontrollerar och förstår förutsättningar, konsekvenser och begränsningar innan du aktiverar inställningen. Därför rekommenderar vi också att du testar funktionen med en testklientorganisation i stället för en produktionsklientorganisation.
+När du har aktiverat samtidig redigering för filer med känslighetsetiketter för klientorganisationen kan du inte inaktivera inställningen själv. Därför är det så viktigt att du kontrollerar och förstår förutsättningar, konsekvenser och begränsningar innan du aktiverar inställningen.
 
 ![Alternativ som visar att samtidig redigering är aktiverat för känslighetsetiketter](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
