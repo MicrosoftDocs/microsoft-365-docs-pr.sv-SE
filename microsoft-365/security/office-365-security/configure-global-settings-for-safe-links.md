@@ -18,12 +18,12 @@ ms.collection:
 description: Administratörer kan lära sig hur de visar och konfigurerar globala inställningar (listan "Blockera följande URL:er" och skydd för Office 365-appar) för Valv-länkar i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b1bcdaf92412b17b231e3f4849bae8aab72f292
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 46bafd89400dfa551641c055f6f0e208c0ecd49f
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878538"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108049"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Konfigurera globala inställningar för Valv Länkar i Microsoft Defender för Office 365
 
@@ -51,7 +51,7 @@ Du kan konfigurera de globala inställningarna för Valv-länkar i Microsoft 365
 
 - Det finns ingen inbyggd eller standardprincip för Valv-länkar, så du måste skapa minst en Valv-länkprincip för att listan Blockera följande URL:er ska vara aktiv.  Instruktioner finns i Konfigurera [principer Valv länkar i Microsoft Defender för Office 365.](set-up-safe-links-policies.md)
 
-- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Om du vill gå **direkt Valv sidan** Länkar använder du <https://security.microsoft.com/safelinksv2> .
+- Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com>. Om du vill gå **direkt Valv sidan** Länkar använder du <https://security.microsoft.com/safelinksv2> .
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Information om hur du ansluter till fristående EOP PowerShell finns i [Anslut till Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -72,11 +72,11 @@ Du kan konfigurera de globala inställningarna för Valv-länkar i Microsoft 365
 
 - [Nya funktioner läggs kontinuerligt till i Microsoft Defender för Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). När nya funktioner läggs till kan du behöva justera dina befintliga principer Valv Länkar.
 
-## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>Konfigurera listan "Blockera följande URL:er" i Microsoft 365 Defender-portalen
+## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>Konfigurera listan "Blockera följande URL:er" i Microsoft 365 Defender portalen
 
 I **listan Blockera följande URL:er** identifieras de länkar som alltid ska blockeras av Valv i program som stöds. Mer information finns i [listan "Blockera följande URL:er" för Valv Länkar.](safe-links.md#block-the-following-urls-list-for-safe-links)
 
-1. I Defender Microsoft 365 portalen går du till avsnittet **Principer för &-&-e-post** och & Principer för hot \>  \>  \>  \> **Valv .**
+1. I Microsoft 365 Defender-portalen går du till Avsnittet **Principer &** e&-post och samarbete & Principer \>  \>  \>  för hot \> **Valv.**
 
 2. På sidan **Valv klickar** du på **Globala inställningar**. I den **Valv princip för** länkar för organisationen som visas går du till rutan Blockera följande **URL:er.**
 
@@ -117,11 +117,11 @@ Du kan använda cmdleten **Get-AtpPolicyForO365** till att visa befintliga poste
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
 
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>Konfigurera Valv för länkar för Office 365 i Defender-Microsoft 365-portalen
+## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>Konfigurera Valv för länkar för Office 365-program i Microsoft 365 Defender portalen
 
 Valv Länkskydd för Office 365-appar gäller för dokument i Office-, mobil- och webbappar som stöds. Mer information finns i inställningar [Valv länkar för appar Office 365 .](safe-links.md#safe-links-settings-for-office-365-apps)
 
-1. I Defender Microsoft 365 portalen går du till avsnittet **Principer för &-&-e-post** och & Principer för hot \>  \>  \>  \> **Valv .**
+1. I Microsoft 365 Defender-portalen går du till Avsnittet **Principer &** e&-post och samarbete & Principer \>  \>  \>  för hot \> **Valv.**
 
 2. På sidan **Valv klickar** du på **Globala inställningar**. I den **Valv-länkprincip** för organisationen som visas konfigurerar du följande inställningar i avsnittet Inställningar som gäller för innehåll i **Office 365-appar:**
 
@@ -157,7 +157,7 @@ Detaljerad information om syntax och parametrar finns i [Set-AtpPolicyForO365.](
 
 Kontrollera att du har konfigurerat de globala inställningarna för Valv-länkar (listan Blockera följande **URL:er** och Office 365-programskyddsinställningarna) genom att göra något av följande:
 
-- I Microsoft 365 Defender-portalen går du till Principer för **e-&-samarbete** & i avsnittet Principer för hot mot hot Valv Länkar klickar på Globala inställningar och kontrollerar inställningarna i flyg ut som \>  \>  \>  \>  \> visas. 
+- I Microsoft 365 Defender-portalen går du till Principer för **e-&-samarbete** & principer för regler och hot Valv Länkar klickar på Globala inställningar och kontrollerar inställningarna i flyg ut som \>  \>  \>  \>  \> visas. 
 
 - I Exchange Online PowerShell Exchange Online Protection PowerShell kör du följande kommando och kontrollerar inställningarna:
 

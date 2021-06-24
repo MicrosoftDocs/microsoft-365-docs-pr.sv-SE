@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan läsa om hur standard- och strikt-principinställningarna används i alla skyddsfunktioner i Exchange Online Protection (EOP) och Microsoft Defender för Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb5fb2e882348e2cd0480abf5ad7217095b2522d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: e41edb6c2d77a69ee3d4fa28ff86e0e77410caa5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083494"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108301"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Förinställda säkerhetsprinciper i EOP och Microsoft Defender för Office 365
 
@@ -119,7 +119,7 @@ Inställningarna i principen för  strikt skydd åsidosätter med andra ord inst
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Använd Microsoft 365 Defender-portalen för att tilldela förinställda säkerhetsprinciper till användare
 
-1. I Microsoft 365 Defender går du till avsnittet Förinställda **&** för e& för samarbete i & Principer för hot i \>  \>  \>  \> **mallen.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Förinställda** säkerhetsprinciper & e-& principer för säkerhetsprinciper för regler och \>  \>  \>  \> **hot.**
 
 2. Under **Standardskydd eller** **Strikt skydd klickar** du på **Redigera**.
 

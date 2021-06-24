@@ -16,12 +16,12 @@ ms.collection:
 description: Läs mer Valv dokument i Microsoft 365 E5 eller Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1049543b11ad14eeeed596367228f025cc8edd65
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 0e1bd2150a04e51e0d06c6cd1c17a71a032df1a5
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054438"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108613"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Säkra dokument i Microsoft 365 E5
 
@@ -62,7 +62,7 @@ Filer som Valv sparas inte i Defender utöver den tid som krävs för analys (no
 
 ## <a name="use-the-microsoft-365-defender-to-configure-safe-documents"></a>Använda Microsoft 365 Defender för att konfigurera Valv dokument
 
-1. Öppna portalen Microsoft 365 Defender och gå till Principer för **&-& e-&** principer för hotprinciper \>  \>  \>  Valv \> **bifogade filer.**
+1. Öppna Microsoft 365 Defender och gå till avsnittet Principer för **&** e&-post och samarbete & Principer för hot mot \>  \>  regler \>  \> **Valv bilagor.**
 
 2. På sidan **Valv bifogade** filer klickar du på **Globala inställningar.**
 
@@ -103,7 +103,7 @@ Mer information finns i [Onboard to the Microsoft Defender for Endpoint service]
 
 Verifiera att du har aktiverat och konfigurerat Valv genom att göra något av följande:
 
-- I Microsoft 365 Defender-portalen går du till Principer för **& e-postsamarbete** & regler för hotprinciper i avsnittet globala inställningar för bifogade filer Valv och kontrollerar aktivera Valv-dokument för Office-klienter och Tillåt användare att klicka igenom Skyddad vy även om filen identifieras som skadlig i \>  \>  \>  \>  \>   **Valv-dokument.**
+- I Microsoft 365 Defender-portalen går du  till Avsnittet Principer för e-post &-samarbete & Principer för hot mot internet Valv Globala bifogade filer och kontrollerar aktivera Valv-dokument för Office-klienter och Tillåt användare att klicka igenom skyddad vy även \>  \>  \>  \>  \>  **om Valv-dokument**  identifierar filen som skadlig.
 
 - Kör följande kommando i Exchange Online PowerShell och verifiera egenskapsvärdena:
 

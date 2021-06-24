@@ -15,12 +15,12 @@ ms.date: 06/10/2021
 description: Lär dig hur du kan snabba upp processen med att identifiera och åtgärda komprometterade användarkonton med funktioner för automatisk undersökning och svar i Microsoft Defender för Office 365 abonnemang 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cd84617230e774b92902ef3d11a365c1965ac814
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: fd1ad6f52114340153f3958441bfb9500db67215
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904146"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108591"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Adress komprometterade användarkonton med automatiserad undersökning och svar
 
@@ -37,9 +37,7 @@ ms.locfileid: "52904146"
 Den komprometterade säkerhetsspelboken för användare gör det möjligt för organisationens säkerhetsteam att:
 
 - Snabbare identifiering av komprometterade användarkonton.
-
 - Begränsa omfattningen av ett intrång när ett konto har komprometterats. och
-
 - Reagera på komprometterade användare mer effektivt och effektivare.
 
 ## <a name="compromised-user-alerts"></a>Komprometterade användaraviseringar
@@ -67,21 +65,17 @@ När ett användarkonto har komprometterats utlöses aviseringar. Och i vissa fa
 
 ### <a name="view-and-investigate-restricted-users"></a>Visa och undersöka begränsade användare
 
-Du har några alternativ för att navigera till en lista med begränsade användare. I säkerhets- och efterlevnadscentret för & kan du till exempel gå till **Granska** begränsade användare \> **för** \> **hothantering.** I följande procedur beskrivs  navigering med instrumentpanelen Aviseringar, som är ett bra sätt att se olika typer av aviseringar som kan ha utlösts.
+Du har några alternativ för att navigera till en lista med begränsade användare. I portalen för e Microsoft 365 Defender kan du till exempel gå till Skicka **e-& och granska** \>  \> **begränsade användare.** I följande procedur beskrivs  navigering med instrumentpanelen Aviseringar, som är ett bra sätt att se olika typer av aviseringar som kan ha utlösts.
 
-1. Gå till [https://protection.office.com](https://protection.office.com) och logga in.
+1. Öppna Microsoft 365 Defender <https://security.microsoft.com> () och gå till Incidenter **& aviseringar** \> . Du kan också använda om du vill gå **direkt** till sidan <https://security.microsoft.com/alerts> Aviseringar.
 
-2. Välj Instrumentpanelen aviseringar  i \> **navigeringsfönstret.**
+2. På sidan **Aviseringar** filtrerar du resultaten efter tidsperiod och principen med namnet Användare begränsad **från att skicka e-post.**
 
-3. Välj Restricted **Users (begränsade användare)** i **widgeten Other alerts (andra aviseringar).**
+   ![Sidan Aviseringar i Microsoft 365 Defender filtrerats för begränsade användare](../../media/m365-sc-alerts-page-with-restricted-user.png)
 
-   ![Widget för andra aviseringar](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+3. Om du markerar posten genom att  klicka på namnet öppnas en användare som inte kan skicka e-post med ytterligare information som du kan granska. Bredvid knappen **Hantera** aviseringar kan du klicka på Ikonen Fler alternativ Fler alternativ och sedan välja Visa begränsad användarinformation för att gå till sidan Begränsade användare där du kan släppa en begränsad ![ ](../../media/m365-cc-sc-more-actions-icon.png)  [användare.](removing-user-from-restricted-users-portal-after-spam.md)  
 
-   Listan med begränsade användare öppnas.
-
-   ![Begränsade användare i Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
-
-4. Välj ett användarkonto i listan för att visa information och vidta åtgärder, t.ex. [släppa en begränsad användare.](removing-user-from-restricted-users-portal-after-spam.md)
+   ![Användaren begränsad från att skicka e-postsida från Aviseringscenter](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
 
 ### <a name="view-details-about-automated-investigations"></a>Visa information om automatiserade undersökningar
 

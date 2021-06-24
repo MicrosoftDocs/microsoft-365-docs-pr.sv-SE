@@ -1,5 +1,5 @@
 ---
-title: Varningar i Säkerhets- & Efterlevnadscenter
+title: Aviseringar i Microsoft 365 Defender portalen
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,18 +17,18 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Läs mer om hur du använder varningsfunktioner i Säkerhets- Office 365 säkerhets- & för att visa och hantera aviseringar, inklusive hantering av avancerade varningar.
+description: Läs mer om hur du använder varningsfunktioner i Microsoft 365 Defender för att visa och hantera aviseringar, inklusive hantering av avancerade aviseringar.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbc1bfbd1fc1f21035edf34ad743755b0f51018b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44009ac90dddf9a8f901fdcc5d46496e4bc78338
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207115"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108289"
 ---
-# <a name="alerts-in-the-security--compliance-center"></a>Varningar i Säkerhets- & Efterlevnadscenter
+# <a name="alerts-in-the-microsoft-365-defender-portal"></a>Aviseringar i Microsoft 365 Defender portalen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,33 +36,19 @@ ms.locfileid: "51207115"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 
-Använd varningsfunktioner i Säkerhets- och & för att visa och hantera aviseringar för din organisation, inklusive hantering av avancerade aviseringar som en del [av Microsoft Cloud App Security översikt.](/cloud-app-security/what-is-cloud-app-security)
+Använd varningsfunktioner i Microsoft 365 Defender-portalen för att visa och hantera aviseringar för din organisation, inklusive hantering av avancerade aviseringar som en del [av Microsoft Cloud App Security översikt.](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="how-to-get-to-the-alerts-features"></a>Så här kommer du till varningsfunktioner
 
-Aviseringar finns i säkerhets- & efterlevnadscenter. Så här kommer du till sidan.
+Aviseringar finns i Microsoft 365 Defender portalen ( <https://security.microsoft.com> ). Så här kommer du till sidan:
 
-### <a name="to-go-directly-to-the-security--compliance-center"></a>Gå direkt till säkerhets- & Säkerhets- och efterlevnadscenter
-
-1. Gå till <https://protection.office.com>.
-
-2. Logga in med ditt arbets- eller skolkonto.
-
-3. I den vänstra rutan klickar du på **Aviseringar för** att se varningsfunktioner.
-
-### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>Gå till säkerhets- & efterlevnadscenter med startprogrammet
-
-1. Logga in med ditt arbets- eller skolkonto.
-
-2. Klicka på appstartaren i det övre vänstra hörnet och klicka sedan på **Säkerhet och & efterlevnad.**
-
-   Hittar du inte appen du söker? Från appfönstret kan du välja **Alla appar** för att se en alfabetisk lista över tillgängliga Office 365-appar. Därifrån kan du söka efter en specifik app.
-
-3. I den vänstra rutan klickar du på **Aviseringar för** att se varningsfunktioner.
+I Microsoft 365 Defender **går** du till **Aviseringar**. Du kan också använda för att gå direkt **till** sidan <https://security.microsoft.com/alerts> Aviseringar.
 
 ## <a name="alerts-features"></a>Varningsfunktioner
 
-I följande tabell beskrivs de verktyg som är tillgängliga under **Varningar** i säkerhets- & Säkerhets- och efterlevnadscenter.
+I följande tabell beskrivs de verktyg som är tillgängliga under **Aviseringar** i Microsoft 365 Defender portalen.
+
+<br>
 
 ****
 

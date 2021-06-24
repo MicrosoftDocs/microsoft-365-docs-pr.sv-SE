@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Lär dig hur du skyddar känslig information med hjälp Microsoft 365 principer och verktyg för skydd mot dataförlust och ta en rundtur genom DLP-livscykeln.
-ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244618"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108265"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Mer information om skydd mot dataförlust
 
@@ -121,7 +121,9 @@ I testläge kan du övervaka policyresultaten och finjustera den så att den upp
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>Aktivera kontrollen och justera principerna
 
-När principen uppfyller alla dina mål kan du aktivera den. Fortsätt att övervaka policyprogrammets resultat och justera efter behov. I allmänhet gäller principer ungefär en timme efter att de aktiverats. <!--Se, LÄNK TILL ämne för SLA:er för platsspecifik information – >
+När principen uppfyller alla dina mål kan du aktivera den. Fortsätt att övervaka policyprogrammets resultat och justera efter behov. I allmänhet gäller principer ungefär en timme efter att de aktiverats. 
+
+<!--See, LINK TO topic for SLAs for location specific  details-->
 
 ## <a name="dlp-policy-configuration-overview"></a>Översikt över DLP-principkonfiguration
 
@@ -165,7 +167,7 @@ All DLP policies are created and maintained in the Microsoft 365 Compliance cent
 
 När du har skapat en DLP-princip i efterlevnadscentret lagras den i en central principkälla och synkroniseras sedan med de olika innehållskällorna, till exempel:
   
-- Exchange Online och vidare till Outlook på webben och Outlook.
+- Exchange Online och därifrån till Outlook på webben och Outlook.
 - OneDrive för företag webbplatser.
 - SharePoint Onlinewebbplatser.
 - Office -skrivbordsprogram (Excel, PowerPoint och Word).

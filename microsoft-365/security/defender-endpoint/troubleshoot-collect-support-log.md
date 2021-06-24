@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 07593fac6ed9a3fbc00d904718380b386f31dba3
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 0e7634177e58b558381fdc230533b55cade9dc13
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893419"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108517"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Samla in supportloggar i Microsoft Defender för slutpunkt med live-svar 
 
@@ -63,7 +63,7 @@ I det här avsnittet finns instruktioner om hur du kör verktyget via Live Respo
 
     ```console
     Run MDELiveAnalyzer.ps1
-    GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
+    GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
     ```
 
     [![Bild på kommandon ](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
@@ -79,7 +79,7 @@ I det här avsnittet finns instruktioner om hur du kör verktyget via Live Respo
 >   ```console
 >   PutFile MDEClientAnalyzerPreview.zip -overwrite
 >   Run MDELiveAnalyzer.ps1
->   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
+>   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" 
 >   ```
 > 
 > - Mer information om hur du samlar in data lokalt på en dator om datorn inte kommunicerar med Microsoft Defender för Endpoint-molntjänster, eller om den inte visas i Microsoft Defender för Slutpunktsportalen som förväntat, finns i Verifiera klientanslutningen till Microsoft Defender för [slutpunktstjänst-URL:er.](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)

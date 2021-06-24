@@ -19,12 +19,12 @@ description: Administratörer kan lära sig hur personifieringsinsikter fungerar
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cebccf09c30264d1b7c94185eb4ad28a1b1cf75e
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b7254dce40f72ecc01dc532f1b6c51f252a2b3ac
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083410"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108637"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Personifieringsinsikt i Defender för Office 365
 
@@ -66,7 +66,7 @@ Du kan använda personifieringsinsikter i Microsoft 365 Defender-portalen för a
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Öppna personifieringsinsikten i Microsoft 365 Defender portalen
 
-1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
 2. På sidan **Mot nätfiske** ser personifieringsinsikten ut så här:
 

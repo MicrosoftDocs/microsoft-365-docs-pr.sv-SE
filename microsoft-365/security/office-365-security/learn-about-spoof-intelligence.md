@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan få mer information om förfalskningsinformation i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08b9586edf565c4f69c51f732511d3a0956ae500
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: a0131266d5830988ed23fc11e01323025aa6d50a
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029255"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108529"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Falska intelligensinsikter i EOP
 
@@ -92,7 +92,7 @@ Resten av den här artikeln förklarar hur du använder förfalskningsinformatio
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Öppna förfalskningsinformationsinsikten i Microsoft 365 Defender portalen
 
-1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
 2. På sidan **Mot nätfiske** ser förfalskningsinformation ut så här:
 

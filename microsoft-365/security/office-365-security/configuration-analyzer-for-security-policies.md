@@ -18,12 +18,12 @@ ms.collection:
 description: Administratörer kan lära sig att använda konfigurationsanalysatorn för att hitta och åtgärda säkerhetsprinciper som finns under de förinställda säkerhetsprinciperna Standardskydd och Strikt skydd.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f98ab9b251894a5821d308d95fd786b496e396e4
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 01a9b3a2b01a3cfc95a3911f75907cbe0ef9d58f
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878670"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108433"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Konfigurationsanalys för skyddsprinciper i EOP och Microsoft Defender för Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "52878670"
 - [Microsoft Defender för Office 365 Abonnemang 1 och Abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Konfigurationsanalys i Microsoft 365 Defender-portalen ger dig en central plats för att hitta och åtgärda säkerhetsprinciper där inställningarna finns under inställningarna Standardskydd och Strikt skydd i [förinställda säkerhetsprinciper.](preset-security-policies.md)
+Konfigurationsanalys i Microsoft 365 Defender-portalen ger en central plats för att hitta och åtgärda säkerhetsprinciper där inställningarna finns under profilinställningarna Standardskydd och Strikt skydd i [förinställda säkerhetsprinciper.](preset-security-policies.md)
 
 Följande typer av principer analyseras av konfigurationsanalysatorn:
 
@@ -57,7 +57,7 @@ Följande typer av principer analyseras av konfigurationsanalysatorn:
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-- Du öppnar Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Använd för att gå **direkt till sidan Configuration analyzer** <https://security.microsoft.com/configurationAnalyzer> .
+- Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com>. Använd för att gå **direkt till sidan Configuration analyzer** <https://security.microsoft.com/configurationAnalyzer> .
 
 - Information om hur du använder Windows PowerShell för att ansluta till Exchange Online finns i artikeln om att [ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -65,17 +65,17 @@ Följande typer av principer analyseras av konfigurationsanalysatorn:
   - Om du vill använda konfigurationsanalysatorn och uppdatera säkerhetsprinciper måste  du vara medlem i rollgrupperna Organisationshantering eller **Säkerhetsadministratör.** 
   - För skrivskyddade åtkomst till konfigurationsanalys behöver du vara medlem i rollgrupperna **Global Reader** eller **Säkerhetsläsare.**
 
-  Mer information finns i [Behörigheter i Microsoft 365 Defender-portalen.](permissions-microsoft-365-security-center.md)
+  Mer information finns under [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md).
 
   > [!NOTE]
   >  
-  > - Om du lägger till användare i Azure Active Directory-rollen får användarna de behörigheter  som krävs i Microsoft 365 Defender-portalen samt behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  > - Om du lägger till användare i Azure Active Directory-rollen får användarna de  behörigheter som krävs i Microsoft 365 Defender-portalen samt behörighet för andra funktioner Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
   >
   > - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
-## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Använda konfigurationsanalysen i Microsoft 365 Defender-portalen
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Använda konfigurationsanalysatorn i Microsoft 365 Defender portalen
 
-I Den Microsoft 365 Defender-portalen går du till avsnittet & för **&** e-postsamarbete & principer för hotprinciper i \>  \>  \>  \> **mallade principer.**
+I Microsoft 365 Defender-portalen går du till avsnittet **Konfigurationsanalys för &** e-& principer för samarbete & principer för regler och \>  \>  \>  \> **hot.**
 
 Sidan **Konfigurationsanalys** har två huvudflikar:
 

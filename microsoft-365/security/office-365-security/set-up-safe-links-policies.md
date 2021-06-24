@@ -18,12 +18,12 @@ ms.collection:
 description: Administratörer kan läsa mer om hur de visar, skapar, ändrar och tar bort Valv-principer och globala Valv-länkar i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1e0257fd124a53b2191ad8025ce42dc13a2e23e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 8d42051d2ca4f26758cbe7334d427f3f93178f97
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096774"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108217"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer Valv Länkar i Microsoft Defender för Office 365
 
@@ -173,7 +173,7 @@ Läs följande avsnitt om du vill aktivera eller inaktivera en princip eller ang
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Aktivera eller inaktivera Valv länkar
 
-1. I portalen Microsoft 365 Defender du till **E-& principer för** samarbete & principer för hot mot regler \>  \>  \>  \> **Valv Länkar.**
+1. I Microsoft 365 Defender-portalen går du till Avsnittet **Principer &** e&-post och samarbete & Principer \>  \>  \>  för hot \> **Valv.**
 
 2. På sidan **Valv väljer** du en princip i listan genom att klicka på namnet.
 
@@ -198,7 +198,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 - I Microsoft 365 Defender kan du bara ändra prioritet för principen Valv Länkar när du har skapat den. I PowerShell kan du åsidosätta standardprioritet när du skapar regeln om säkra länkar (vilket kan påverka prioriteringen för befintliga regler).
 - Valv Länkprinciper bearbetas i den ordning som de visas (den första principen har **prioritetsvärdet** 0). För mer information om ordningsföljden och hur flera policyer utvärderas och tillämpas, se [Order och prioritet för e-postskydd](how-policies-and-protections-are-combined.md).
 
-1. I portalen Microsoft 365 Defender du till **E-& principer för** samarbete & principer för hot mot regler \>  \>  \>  \> **Valv Länkar.**
+1. I Microsoft 365 Defender-portalen går du till Avsnittet **Principer &** e&-post och samarbete & Principer \>  \>  \>  för hot \> **Valv.**
 
 2. På sidan **Valv väljer** du en princip i listan genom att klicka på namnet.
 
@@ -213,7 +213,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Använda Microsoft 365 Defender-portalen för att ta bort Valv principer för länkar
 
-1. I portalen Microsoft 365 Defender du till **E-& principer för** samarbete & principer för hot mot regler \>  \>  \>  \> **Valv Länkar.**
+1. I Microsoft 365 Defender-portalen går du till Avsnittet **Principer &** e&-post och samarbete & Principer \>  \>  \>  för hot \> **Valv.**
 
 2. På sidan **Valv väljer** du en princip i listan genom att klicka på namnet. Längst upp i den utfällda menyn policyinformation som visas klickar du på ![ikonen Fler åtgärder](../../media/m365-cc-sc-more-actions-icon.png) **Fler åtgärder** \> ![ikonen Ta bort princip](../../media/m365-cc-sc-delete-icon.png) **Ta bort princip**.
 

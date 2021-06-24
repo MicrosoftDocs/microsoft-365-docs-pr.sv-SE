@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan lära sig att skapa, ändra och ta bort avancerade principer mot nätfiske som är tillgängliga i organisationer med Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd69e00b0e8929752341bf3d2b0abde88921066b
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 1a948604f11064f2c1fefcc441adc4a9792ac918
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061886"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108445"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer mot nätfiske i Microsoft Defender för Office 365
 
@@ -86,7 +86,7 @@ Om du vill öka effektiviteten i skydd mot nätfiske i Defender för Office 365 
 
 Om du skapar en egen policy mot nätfiske i Microsoft 365 Defender-portalen skapas samtidigt den antifiska regeln och den tillhörande nätfiskeprincipen med samma namn för båda.
 
-1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
 2. På sidan **Mot nätfiske** klickar du på ![ Skapa ikon ](../../media/m365-cc-sc-create-icon.png) **Skapa**.
 
@@ -252,7 +252,7 @@ Om du skapar en egen policy mot nätfiske i Microsoft 365 Defender-portalen skap
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-phishing-policies"></a>Använd Microsoft 365 Defender för att se principer mot nätfiske
 
-1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
 2. På **sidan Mot nätfiske** visas följande egenskaper i listan över principer mot nätfiske:
 
@@ -265,7 +265,7 @@ Om du skapar en egen policy mot nätfiske i Microsoft 365 Defender-portalen skap
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies"></a>Använda Microsoft 365 Defender för att ändra principer för skydd mot nätfiske
 
-1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
 2. På sidan **Mot nätfiske** väljer du en princip i listan genom att klicka på namnet.
 
@@ -279,7 +279,7 @@ Läs följande avsnitt om du vill aktivera eller inaktivera en princip eller ang
 
 Du kan inte inaktivera standardprincipen för nätfiske.
 
-1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
 2. På sidan **Mot nätfiske** väljer du en anpassad princip i listan genom att klicka på namnet.
 
@@ -304,7 +304,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 - I Microsoft 365 Defender-portalen kan du bara ändra prioriteten för nätfiskeprincipen när du har skapat den. I PowerShell kan du åsidosätta standardprioritet när du skapar antifrasregeln (vilket kan påverka prioriteringen för befintliga regler).
 - Principer för skydd mot nätfiske bearbetas i den ordning som de visas (den första principen har **prioritetsvärdet** 0). Standardprincipen för skydd mot nätfiske har **prioritetsvärdet Lägsta** och du kan inte ändra den.
 
-1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
 2. På sidan **Mot nätfiske** väljer du en anpassad princip i listan genom att klicka på namnet.
 
@@ -321,7 +321,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 
 När du använder Microsoft 365 Defender-portalen för att ta bort en anpassad policy mot nätfiske tas både antifishregeln och motsvarande anti-phish-policy bort. Du kan inte ta bort standardprincipen för nätfiske.
 
-1. I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
+1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
 
 2. På sidan **Mot nätfiske** väljer du en anpassad princip i listan genom att klicka på namnet på principen.
 
@@ -568,7 +568,7 @@ Detaljerad information om syntax och parametrar finns i [Remove-AntiPhishRule.](
 
 Verifiera att du har konfigurerat principer för skydd mot nätfiske i Defender för Office 365 genom att göra något av följande:
 
-- I Microsoft 365 Defender går du till avsnittet Principer **för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.** Kontrollera listan med principer, deras **statusvärden** och deras **prioritetsvärden.** Om du vill visa mer information väljer du principen i listan genom att klicka på namnet och visa informationen i den utfäll vy som visas.
+- I Microsoft 365 Defender-portalen går du till avsnittet **Principer för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.** Kontrollera listan med principer, deras **statusvärden** och deras **prioritetsvärden.** Om du vill visa mer information väljer du principen i listan genom att klicka på namnet och visa informationen i den utfäll vy som visas.
 
 - I Exchange Online Ersätt med namnet på principen eller regeln i PowerShell och kör \<Name\> följande kommando och verifiera inställningarna:
 

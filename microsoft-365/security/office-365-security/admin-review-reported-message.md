@@ -13,12 +13,12 @@ ms.collection:
 description: Lär dig hur du granskar meddelanden som rapporteras och ger feedback till användarna.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e6969b6dee38135ee2d1d41bbcdb2561943d1fe
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: a9fa6c890f0fa6098a2bb712f79ab82fc1edb68b
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878718"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108565"
 ---
 # <a name="admin-review-for-reported-messages"></a>Administratörsgranskning för rapporterade meddelanden
 
@@ -39,21 +39,19 @@ Du kan bara markera och meddela användarna om [granskningsresultat](report-fals
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Vad behöver jag veta innan jag börjar?
 
-
-- Du öppnar säkerhetscentret Microsoft 365 på <https://security.microsoft.com/> . Använd för att gå **direkt till sidan** Inskickade <https://security.microsoft.com/reportsubmission> material.
+- Du kan öppna Microsoft 365 Defender-portalen genom att gå till <https://security.microsoft.com/>. Använd för att gå **direkt till sidan** Inskickade <https://security.microsoft.com/reportsubmission> material.
 
 - Du måste vara medlem i någon av följande rollgrupper för att kunna ändra konfigurationen för användarinskick:
-  - Organisationshantering eller säkerhetsadministratör i [Microsoft 365 säkerhetscenter](permissions-microsoft-365-security-center.md).
+  - Organisationshantering eller säkerhetsadministratör på [Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)
   - Organisationshantering i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
-
-- Du behöver också åtkomst till programmet Exchange Online PowerShell. Om kontot som du försöker använda inte har åtkomst till Exchange Online PowerShell visas felmeddelandet Ange en e-postadress i *din domän.* Mer information om hur du aktiverar eller inaktiverar åtkomst till Exchange Online PowerShell finns i följande avsnitt:
+- Du behöver också åtkomst till Exchange Online PowerShell. Om kontot som du försöker använda inte har åtkomst till Exchange Online PowerShell visas felmeddelandet Ange en e-postadress i *din domän.* Mer information om hur du aktiverar eller inaktiverar åtkomst till Exchange Online PowerShell finns i följande avsnitt:
   - [Aktivera eller inaktivera åtkomst till Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Klientåtkomstregler i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="configure-the-messages-used-to-notify-users"></a>Konfigurera meddelanden som används för att meddela användarna
 
-1. I Microsoft 365 Defender-portalen går du till Principer för **&-&** e-& principer för hot andra avsnittet \>  \>  \>  \> **Användarrapporterade meddelandeinställningar**.
+1. I Microsoft 365 Defender-portalen går du till **E-& principer** för samarbete & principer för regler för hot för andra. \>  \>  \>  \> **Avsnittet Användarrapporterade meddelandeinställningar**.
 
 2. Om du vill ange avsändarens visningsnamn på sidan Användarinskickade användare markerar du kryssrutan för  Ange Office 365-e-postadress som ska användas som avsändare under avsnittet E-postaviseringar för **administratörsgranskningsresultat** och anger det namn du vill använda.  Det här är den e-postadress som visas i Outlook svar skickas till.
 

@@ -19,12 +19,12 @@ description: Läs mer om de smarta rapporter och insikter som finns i Säkerhets
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4af84c058eb3d9d7112f6102d39b209c34148d0e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 9408f99b72821e6510927755a9fe6f3aa525a5e0
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054508"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108625"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Smarta rapporter och insikter i Säkerhets- och efterlevnadscenter
 
@@ -55,7 +55,7 @@ En mängd olika rapporter finns tillgängliga i Säkerhets- & efterlevnadscenter
 
 |Typ av information|Så här kommer du dit|Mer information finns i|
 |---|---|---|
-|**Microsoft 365 Defender (helt** upp) <p> Viktiga insikter och rekommendationer samt länkar till Microsoft 365 Defender, inklusive rapporter om skydd mot dataförlust, etiketter, e-postsäkerhetsrapporter, Defender för Office 365 och mycket mer|I Säkerhets- & efterlevnadscenter går du till Rapporter  >  **e-& för samarbete**  >  **[E& och samarbetsrapporter](https://security.microsoft.com/emailandcollabreport)**|[Övervaka och visa rapporter i Microsoft 365 säkerhetscenter](../defender/overview-security-center.md)|
+|**Säkerhet & kompatibilitetscenterrapporter** (alla upp) <p> Viktiga insikter och rekommendationer, och länkar till säkerhetsrapporter om &, inklusive rapporter om skydd mot dataförlust, etiketter, e-postsäkerhetsrapporter, Defender för Office 365 och mycket mer|I Säkerhets- & Efterlevnadscenter går  du till \> **Instrumentpanelen Rapporter**|[Rapporter i Säkerhets- & Efterlevnadscenter](../../compliance/reports-in-security-and-compliance.md)|
 |**Dataförlustskydd** <p> Matchningar mot dataförlustskydd, falska positiva resultat och åsidosättningar samt länkar för att skapa eller redigera principer|Gå till policyn för & dataförlustskydd i Säkerhets- **och efterlevnadscenter** \> |[Visa rapporter för dataförlustskydd](../../compliance/view-the-dlp-reports.md)|
 |**Datastyrning** <p> Information om hur etiketter används, etiketter som klassificeras som arkivhandlingar, etiketttrender med mera|Gå till Instrumentpanelen för & informationsstyrning i Säkerhets- **och efterlevnadscentret** \> |[Visa datastyrningsrapporter](../../compliance/view-the-data-governance-reports.md)|
 |**Instrumentpanel för hantering** av hot (kallas även för säkerhetsinstrumentpanel) <p> Identifiering av hot, trender mot skadlig programvara, populära användare, information om skickade och mottagna e-postmeddelanden och mer|I Säkerhets- & säkerhets- och efterlevnadscenter går du till **Vulnerability Management** \> **Dashboard**|[Visa rapporter för Defender för Office 365](view-reports-for-mdo.md)|

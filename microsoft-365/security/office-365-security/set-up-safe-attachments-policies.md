@@ -18,12 +18,12 @@ description: Lär dig mer om hur du Valv principer för bifogade filer för att 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7220140c25ecf457b42514356e41aabdf5481bb
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: e516a16ff28c762e154fd908312df65ea48699bc
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054326"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108229"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer Valv för bifogade filer i Microsoft Defender för Office 365
 
@@ -83,7 +83,7 @@ I Exchange Online PowerShell eller fristående EOP PowerShell hanterar du policy
 
 När du skapar Valv egen princip för bifogade filer i Microsoft 365 Defender-portalen skapas en regel för säker bifogad fil och tillhörande princip för säkra bifogade filer samtidigt med samma namn för båda.
 
-1. I portalen Microsoft 365 Defender du till Principer för **&-& e-&** principer för hotprinciper \>  \>  \>  Valv \> **bifogade filer.**
+1. I Microsoft 365 Defender går du till avsnittet Principer för **&** e&-post och samarbete & Principer för hot mot regler i Valv \>  \>  \>  \> **bilagor.**
 
 2. På sidan **Valv klickar** du på Skapa ![ ikon ](../../media/m365-cc-sc-create-icon.png) **Skapa**.
 
@@ -135,7 +135,7 @@ När du skapar Valv egen princip för bifogade filer i Microsoft 365 Defender-po
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Använda Microsoft 365 Defender för att visa principer Valv bifogade filer
 
-1. I portalen Microsoft 365 Defender du till Principer för **&-& e-&** principer för hotprinciper \>  \>  \>  Valv \> **bifogade filer.**
+1. I Microsoft 365 Defender går du till avsnittet Principer för **&** e&-post och samarbete & Principer för hot mot regler i Valv \>  \>  \>  \> **bilagor.**
 
 2. På **Valv bifogade** filer visas följande egenskaper i listan med principer:
    - **Namn**
@@ -146,7 +146,7 @@ När du skapar Valv egen princip för bifogade filer i Microsoft 365 Defender-po
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Använda Microsoft 365 Defender för att ändra principer för Valv och bilagor
 
-1. I portalen Microsoft 365 Defender du till Principer för **&-& e-&** principer för hotprinciper \>  \>  \>  Valv \> **bifogade filer.**
+1. I Microsoft 365 Defender går du till avsnittet Principer för **&** e&-post och samarbete & Principer för hot mot regler i Valv \>  \>  \>  \> **bilagor.**
 
 2. På sidan **Valv bifogade** filer väljer du en princip i listan genom att klicka på namnet.
 
@@ -156,7 +156,7 @@ Läs följande avsnitt om du vill aktivera eller inaktivera en princip eller ang
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Aktivera eller inaktivera principer Valv för bifogade filer
 
-1. I portalen Microsoft 365 Defender du till Principer för **&-& e-&** principer för hotprinciper \>  \>  \>  Valv \> **bifogade filer.**
+1. I Microsoft 365 Defender går du till avsnittet Principer för **&** e&-post och samarbete & Principer för hot mot regler i Valv \>  \>  \>  \> **bilagor.**
 
 2. På sidan **Valv bifogade** filer väljer du en princip i listan genom att klicka på namnet.
 
@@ -182,7 +182,7 @@ Valv Principer för bifogade filer visas i den ordning de bearbetas (den första
 
 Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** eller **Minska prioritet** i egenskaperna för principen (du kan inte direkt ändra numret för **Prioritet** i Microsoft 365 Defender-portalen). Det är bara meningsfullt att ändra prioritet för en princip om du har flera principer.
 
-1. I portalen Microsoft 365 Defender du till Principer för **&-& e-&** principer för hotprinciper \>  \>  \>  Valv \> **bifogade filer.**
+1. I Microsoft 365 Defender går du till avsnittet Principer för **&** e&-post och samarbete & Principer för hot mot regler i Valv \>  \>  \>  \> **bilagor.**
 
 2. På sidan **Valv bifogade** filer väljer du en princip i listan genom att klicka på namnet.
 
@@ -197,7 +197,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Använda Microsoft 365 Defender för att ta bort principer för Valv och bilagor
 
-1. I portalen Microsoft 365 Defender du till Principer för **&-& e-&** principer för hotprinciper \>  \>  \>  Valv \> **bifogade filer.**
+1. I Microsoft 365 Defender går du till avsnittet Principer för **&** e&-post och samarbete & Principer för hot mot regler i Valv \>  \>  \>  \> **bilagor.**
 
 2. På sidan **Valv bifogade** filer väljer du en anpassad princip i listan genom att klicka på namnet på principen.
 
@@ -439,7 +439,7 @@ Detaljerad information om syntax och parametrar finns i [Remove-SafeAttachmentRu
 
 Kontrollera att du har skapat, ändrat eller tagit bort Valv principer för bifogade filer genom att göra något av följande:
 
-- I portalen Microsoft 365 Defender du till Principer för **&-& e-&** principer för hotprinciper \>  \>  \>  Valv \> **bifogade filer.** Kontrollera listan med principer, deras **statusvärden** och deras **prioritetsvärden.** Om du vill visa mer information väljer du principen i listan genom att klicka på namnet och visa informationen i den utfällovyn.
+- I Microsoft 365 Defender går du till avsnittet Principer för **&** e&-post och samarbete & Principer för hot mot regler i Valv \>  \>  \>  \> **bilagor.** Kontrollera listan med principer, deras **statusvärden** och deras **prioritetsvärden.** Om du vill visa mer information väljer du principen i listan genom att klicka på namnet och visa informationen i den utfällovyn.
 
 - I Exchange Online PowerShell eller Exchange Online Protection PowerShell ersätter du med namnet på principen eller regeln, kör följande kommando och \<Name\> kontrollerar inställningarna:
 

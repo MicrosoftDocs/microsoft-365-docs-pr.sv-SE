@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89562a5fd7c2d869f8a060e7ceda1c32a093c175
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083674"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108337"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
@@ -40,7 +40,7 @@ Genom att göra en noggrann utvärdering av säkerhetsprodukter kan du få välg
 Om du inte redan har en licens som stöder Microsoft Defender för Office 365 kan du påbörja en kostnadsfri [30-dagarsutvärdering](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) och testa funktionerna i Microsoft 365 Defender-portalen på <https://security.microsoft.com> . Du kommer att njuta av den snabba uppsättningen och du kan enkelt stänga av den om det behövs.
 
 > [!NOTE]
-> Om du är på Microsoft 365 Defender-portalen ( ) kan du starta en Defender för Office 365-utvärdering här: E-& för samarbete & principer för regel hot andra avsnitt <https://security.microsoft.com>  \>  \>  \>  \> **utvärderingsläge.**
+> Om du är i Microsoft 365 Defender-portalen () kan du starta en Defender för Office 365-utvärdering här: Skicka & e-post & principer för samarbete & principer för regler och hot på sidan Andra avsnitt <https://security.microsoft.com>  \>  \>  \>  \> **Utvärderingsläge**.
 
 ## <a name="how-the-evaluation-works"></a>Så här fungerar utvärderingen
 

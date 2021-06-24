@@ -20,12 +20,12 @@ search.appverid:
 description: Lär dig hur du känner igen och hanterar ett komprometterat e-postkonto ned tillgängliga verktyg i Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1bf2a5dbc7e1fdd447baf76fd051abff88b4b30
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 090253806295d0a5db67afbe769c9c0ca8be4b39
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207147"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054341"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Hantera ett komprometterat e-postkonto
 
@@ -41,6 +41,7 @@ ms.locfileid: "51207147"
 ## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a>Vad är ett komprometterat e-postkonto i Microsoft 365?
 
 Åtkomst till Microsoft 365-postlådor, data och andra tjänster styrs genom användningen av autentiseringsuppgifter, t.ex. ett användarnamn och lösenord eller en PIN-kod. När någon annan än den avsedda användaren stjäl de här autentiseringsuppgifterna anses de stulna uppgifterna ha komprometterats. Angriparen kan använda dem för att logga in som den ursprungliga användaren och utföra illegala åtgärder.
+
 Med hjälp av de stulna autentiseringsuppgifterna kan angriparen komma åt användarens Microsoft 365-postlåda, SharePoint-mappar eller filer i användarens OneDrive. En vanligt förekommande åtgärd är att angriparen skickar e-postmeddelanden i den ursprungliga användarens namn till mottagare både inom och utanför organisationen. När angriparen skickar data via e-post till externa mottagare kallas det för dataexfiltrering.
 
 ## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>Symptom hos ett komprometterat Microsoft-e-postkonto
@@ -48,33 +49,23 @@ Med hjälp av de stulna autentiseringsuppgifterna kan angriparen komma åt anvä
 Användarna kan lägga märka till och rapportera ovanliga aktiviteter i sina Microsoft 365-postlådor. Här är några vanliga tecken:
 
 - Misstänkt aktivitet, t.ex. saknade eller borttagna e-postmeddelanden.
-
 - Andra användare kan få e-postmeddelanden från det skadade kontot utan att motsvarande e-postmeddelanden finns i mappen **Skickat** hos avsändaren.
-
 - Förekomsten av inkorgsregler som inte har skapats av den avsedda användaren eller administratören. Reglerna kan automatiskt vidarebefordra e-postmeddelanden till okända adresser eller flytta dem till någon av mapparna **Anteckningar**, **Skräppost** eller **RSS-prenumerationer**.
-
 - Användarens visningsnamn kan ändras i den globala adresslistan.
-
 - Användarens postlåda hindras från att skicka e-post.
-
 - Mapparna Skickat och Borttaget i Microsoft Outlook eller Outlook på webben (tidigare Outlook Web App) innehåller vanliga meddelanden för hackade konton, t. ex. ”Jag är fast i London, skicka pengar”.
-
 - Ovanliga profiländringar av t.ex. namn eller telefonnummer, eller uppdatering av postnumret.
-
 - Ovanliga ändringar av autentiseringsuppgifter, till exempel flera ändringar av lösenordet krävs.
-
 - Vidarebefordring av e-post har lagts till nyligen.
-
 - En ovanlig signatur har nyligen lagts till, t.ex. en förfalskad banksignatur eller en signatur för ett receptbelagt läkemedel.
 
-Om en användare rapporterar något av ovanstående symptom bör du utföra ytterligare utredningar. Säkerhets- och efterlevnadscenter för Microsoft 365 och Azure-portalen tillhandahåller verktyg som hjälper dig att undersöka aktiviteter hos ett användarkonto som du misstänker kan ha komprometterats.
+Om en användare rapporterar något av ovanstående symptom bör du utföra ytterligare utredningar. [Microsoft 365 Defender](https://security.microsoft.com) och Azure-portalen tillhandahåller verktyg som hjälper dig att undersöka aktiviteter hos ett användarkonto som du misstänker kan ha komprometterats.
 
-- **Enhetliga granskningsloggar i Säkerhets- och efterlevnadscenter**: Granska alla aktiviteter för det misstänkta kontot genom att filtrera resultaten för datumintervallet från före den misstänkta aktiviteten till dagens datum. Filtrera inte på aktiviteterna under sökningen.
+- **Enhetliga granskningsloggar i Microsoft 365 Defender-portalen**: Granska alla aktiviteter för det misstänkta kontot genom att filtrera resultaten för datumintervallet från före den misstänkta aktiviteten till dagens datum. Filtrera inte på aktiviteterna under sökningen.
 
 - **Granskningsloggar för administratörer i EAC**: I Exchange Online kan du använda administrationscentret för Exchange (EAC) för att söka efter och visa poster i granskningsloggen för administratörer. I granskningsloggen för administratörer registreras vissa åtgärder baserat på Exchange Online PowerShell-cmdletar, utförda av administratörer och användare som har tilldelats administratörsbehörigheter. Poster i granskningsloggen för administratörer innehåller information om vilken cmdlet som kördes, vilka parametrar som användes, vem som körde cmdleten och vilka objekt som påverkades.
 
 - **Inloggningsloggar för Azure AD och andra riskrapporter på Azure AD-portalen**: Granska värdena i följande kolumner:
-
   - Granska IP-adress
   - inloggningsplatser
   - inloggningstider
@@ -108,7 +99,7 @@ Följ anvisningarna i [återställa ett företags lösen ord för någon](../../
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Steg 2 Ta bort misstänkta adresser för vidarebefordran av e-post
 
-1. Öppna Administrationscenter för Microsoft 365 på <https://admin.microsoft.com>
+1. Öppna Administrationscenter för Microsoft 365 på <https://admin.microsoft.com>.
 
 2. Gå till **användare** \> **aktiva användare**. Hitta användarkontot i fråga och välj användare (rad) utan att markera kryssrutan.
 
@@ -137,50 +128,52 @@ Om du vill tillåta att en postlåda skickar e-post igen följer du procedurerna
 > [!IMPORTANT]
 > Du kan blockera inloggning på det misstänkt komprometterade kontot tills du anser att det är säkert att aktivera åtkomst igen.
 
-1. Öppna Administrationscenter för Microsoft 365 och gå till **användare** \> **aktiva användare**.
+1. Öppna Administrationscenter för Microsoft 365 på <https://admin.microsoft.com> och gå till **Användare** \> **Aktiva användare**.
 
 2. Hitta och välj användarkontot, klicka på ![More-ikonen](../../media/ITPro-EAC-MoreOptionsIcon.png) och välj sedan **Redigera inloggningsstatus**.
 
 3. I fönstret **Blockera inloggning** väljer du **Blockera användaren från att logga in**, och klickar sedan på **Spara ändringar**.
 
-4. Öppna Exchange administrations centret (EAC) på <admin.protection.outlook.com/ecp/> och gå till **Mottagare> Mailboxes**.
+4. Öppna administrationscentret för Exchange (EAC) på <https://admin.exchange.microsoft.com>och gå till **Mottagare** \> **Postlådor**.
 
-5. Hitta och välj markera användaren. Gör följande steg i detaljrutan:
+5. Hitta och välj markera användaren. Gör följande i den utfällbara menyn med postlådeinformation som öppnas:
+   - I avsnittet **e-postappar** blockerar du alla tillgängliga inställningar genom att flytta växlingsknappen till höger ![Inaktivera](../../media/scc-toggle-on.png):
+     - **Outlook på webben**
+     - **Outlook-skrivbordsversion (MAPI)**
+     - **Exchange-webbtjänster**
+     - **Mobil (Exchange ActiveSync)**
+     - **IMAP**
+     - **POP3**
 
-   - Gör följande steg i avsnittet **Telefon- och röstfunktioner**:
-
-     - Välj **inaktivera Exchange ActiveSync** och klicka sedan på **Ja** i varningen som visas.
-     - Välj **inaktivera OWA för enheter** och klicka sedan på **Ja** i varningen som visas.
-
-   - Gå till avsnittet **e-postanslutning** för Outlook på webben. Klicka på **inaktivera** och klicka sedan på **Ja** i varningen som visas.
+   När du är klar klickar du på **Spara** och sedan på **Stäng**.
 
 ### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>Steg 6 valfritt: Ta bort det misstänkt komprometterade kontot från alla administrativa rollgrupper
 
 > [!NOTE]
 > Medlemskap i administratörsgruppen kan återställas när kontot har skyddats.
 
-1. Logga in med ett globalt administratörskonto:
-
-2. Gör följande steg i Administrationscenter för Microsoft 365:
-
+1. Öppna Administrationscenter för Microsoft 365 på <https://admin.microsoft.com> med ett globalt administratörskonto och gör följande:
    1. Gå till **användare** \> **aktiva användare**.
    2. Hitta och välj användarkontot, klicka på ![More-ikonen](../../media/ITPro-EAC-MoreOptionsIcon.png) och välj sedan **Hantera roller**.
    3. Ta bort alla administrativa roller som tilldelas kontot. När du är klar klickar du på **Spara ändringar**.
 
-3. I säkerhets & Compliance Center på <https://protection.office.com>gör du så här:
+2. Öppna Microsoft 365 Defender-portalen på <https://security.microsoft.com> och gör följande:
+   1. Gå till **behörigheter och roller** \> **E-post- och samarbetsroller** \> **Roller**.
+   2. På sidan **Behörigheter**, välj varje rollgrupp i listan och leta efter användarkontot i **Medlemmar** delen av den information som visas. Om rollgruppen innehåller användarkontot gör du följande steg:
+      1. I avsnittet **Medlemmar** klickar du på **Redigera**.
+      2. På den utfällbara menyn **Redigera Välj medlemmar** som visas klickar du på **Redigera**.
+      3. På den utfällbara menyn **Välj medlemmar** som visas, klicka på **Ta bort**.
+      4. På den utfällbara menyn som visas väljer du användarkonto och klickar sedan på **Ta bort**.
 
-   Välj **behörigheter**. Välj varje roll grupp i listan och leta efter användar kontot i **Medlemmar** delen av den information som visas. Om rollgruppen innehåller användarkontot gör du följande steg:
+         När du är klar klickar du på **klar** **Spara** och **sedan** stänga.
 
-   a. Klicka på **redigera** bredvid **medlemmar**.
-   b. I **redigerar väljer du medlemmar** utfällbar som visas klickar du på **redigera**.
-   c. I **Välj medlemmar** utfällbar som visas väljer du användar konto och klickar sedan på **ta bort**. När du är klar klickar du på **klar** **Spara** och **sedan** stänga.
+3. Öppna EAC vid <https://admin.exchange.microsoft.com> och gör följande:
+   1. Välj **Roller** \> **Administratörsroller**.
+   2. På sidan **Administratörsroller** väljer du varje rollgrupp manuellt och i informationsfönstret väljer du fliken **Tilldelad** för att verifiera användarkontona. Om rollgruppen innehåller användarkontot gör du följande steg:
+      1. Välj användarkontot.
+      2. Klicka på ![ikonen Ta bort](../../media/m365-cc-sc-delete-icon.png).
 
-4. Gör följande steg i EAC på <admin.protection.outlook.com/ecp/>:
-
-   Välj **behörigheter**, markera varje roll grupp manuellt och kontrol lera sedan användar kontona i avsnittet **medlemmar** i informations fönstret.  Om rollgruppen innehåller användarkontot gör du följande steg:
-
-   a. Välj roll gruppen och klicka på **redigera** ![redigera ikonen](../../media/ITPro-EAC-EditIcon.png).
-   b. Gå till avsnittet **medlem**, Välj användar kontot och klicka sedan på **ta bort** ![ta bort ikonen](../../media/ITPro-EAC-RemoveIcon.gif). Klicka på **Spara** när du är klar.
+         Klicka på **Spara** när du är klar.
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>Steg 7 Valfritt: Ytterligare försiktighetsåtgärder
 
@@ -192,20 +185,15 @@ Om du vill tillåta att en postlåda skickar e-post igen följer du procedurerna
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Skydda Microsoft 365 som en expert på cybersäkerhet
 
-Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare.  Använd [Säkerhetsöversikt för Microsoft 365 – de vanligaste prioriteringarna för de första 30 dagarna, 90 dagarna och bortom](security-roadmap.md) för att implementera Microsofts metodtips för att skydda din Microsoft 365-klientorganisation.
+Din Microsoft 365-prenumeration innehåller kraftfulla säkerhetsfunktioner som du kan använda för att skydda dina data och dina användare.  Använd [Säkerhetsöversikt för Microsoft 365 – de vanligaste prioriteringarna för de första 30 dagarna, 90 dagarna och bortom](security-roadmap.md) för att implementera Microsofts metodtips för att skydda din Microsoft 365-klientorganisation.
 
-- Uppgifter som ska utföras under de första 30 dagarna.  De har omedelbar effekt och påverkar inte användarna i någon större utsträckning.
-
+- Uppgifter som ska utföras under de första 30 dagarna. De har omedelbar effekt och påverkar inte användarna i någon större utsträckning.
 - Uppgifter som ska utföras inom 90 dagar. De tar lite längre tid att planera och implementera men förbättrar din säkerhet avsevärt.
-
-- Efter 90 dagar. De här förbättringarna uppnås under de första 90 dagarna.
+- Mer än 90 dagar. De här förbättringarna uppnås under de första 90 dagarna.
 
 ## <a name="see-also"></a>Se även
 
 - [Identifiera och reparera Outlook-regler och inmatningsattacker i anpassade formulär i Microsoft 365](detect-and-remediate-outlook-rules-forms-attack.md)
-
 - [Klagomålscenter för brottslighet på Internet](https://www.ic3.gov/Home/Ransomware)
-
 - [Tillsynsmyndigheten för värdepapper – Bedrägerier genom nätfiske](https://www.sec.gov/investor/pubs/phishing.htm)
-
 - Om du vill rapportera skräppost direkt till Microsoft och din administratör [använder du tillägget Rapportera meddelande](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
