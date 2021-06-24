@@ -273,6 +273,8 @@
 #### [Hämta uppdateringar för antivirusprogram och program mot skadlig programvara](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Hantera källor för skyddsuppdateringar av Microsoft Defender Antivirus](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Hantera schemat för när skyddsuppdateringar ska laddas ned och tillämpas](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [Hantera gradvis distributionsprocess för Microsoft Defender-uppdateringar](manage-gradual-rollout.md)
+##### [Konfigurera gradvis distributionsprocess för Microsoft Defender-uppdateringar](configure-updates.md)
 ##### [Hantera uppdateringar och genomsökningar för slutpunkter som utgått för Microsoft Defender Antivirus](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Hantera händelsebaserade uppdateringar](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Hantera uppdateringar för mobila enheter och virtuella datorer(VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -309,7 +311,6 @@
 ##### [Felsöka prestandaproblem](troubleshoot-performance-issues.md)
 ##### [Felsök problem med Microsoft Defender Antivirus genom att granska händelseloggar och felkoder](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Felsök Microsoft Defender Antivirus när du migrerar från en lösning från tredje part](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
 
 #### [Maskinvarubaserad isolering]()
 ##### [Maskinvarubaserad isolering i Windows 10](overview-hardware-based-isolation.md)
