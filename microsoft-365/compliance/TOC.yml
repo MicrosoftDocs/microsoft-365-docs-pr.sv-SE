@@ -395,9 +395,9 @@
               href: archive-celltrust-data.md
             - name: Cisco Jabber på MS SQL
               href: archive-ciscojabberonmssql-data.md
-            - name: Cisco Jabber på Oracle (förhandsversion)
+            - name: Cisco Jabber på Oracle
               href: archive-ciscojabberonoracle-data.md
-            - name: Cisco Jabber på PostgreSQL (förhandsversion)
+            - name: Cisco Jabber på PostgreSQL
               href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
@@ -421,6 +421,8 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
+            - name: Skype för företag (förhandsversion)
+              href: archive-skypeforbusiness-data.md
             - name: EDiscovery för slack
               href: archive-slack-data.md
             - name: Symphony
@@ -429,8 +431,6 @@
               href: archive-text-delimited-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
-            - name: Webbsidor
-              href: archive-webpagecapture-data.md
             - name: Webbsidor
               href: archive-webpagecapture-data.md
             - name: Arbetsplats från Facebook
@@ -455,11 +455,15 @@
               href: archive-enterprise-number-data.md
             - name: O2-nätverk
               href: archive-o2-network-data.md
+            - name: Signal (förhandsversion)
+              href: archive-signal-archiver-data.md
+            - name: Telegram (förhandsversion)
+              href: archive-telegram-archiver-data.md
             - name: TELUS-nätverk
               href: archive-telus-network-data.md
             - name: Verizon-nätverk
               href: archive-verizon-network-data.md
-            - name: WeChat (förhandsversion)
+            - name: WeChat
               href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
