@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: Exportera sökresultatet från en innehållssökning i kompatibilitetscentret Microsoft 365 en lokal dator. E-postresultat exporteras som PST-filer. Innehåll från SharePoint och OneDrive för företag exporteras som ursprungliga dokument Office dokument.
+description: Exportera sökresultatet från en innehållssökning i sökrutan Microsoft 365 Efterlevnadscenter en lokal dator. E-postresultat exporteras som PST-filer. Innehåll från SharePoint och OneDrive för företag exporteras som ursprungliga dokument Office dokument.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: d3ae14fc0ac31e50d579668c7fafba5390c5b8fc
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653541"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114770"
 ---
 # <a name="export-content-search-results"></a>Exportera resultat av innehållssökning
 
@@ -90,7 +90,7 @@ Om du exporterar resultaten av en innehållssökning förbereds resultaten och h
 
 Det första steget är att förbereda sökresultatet för export. När du förbereder resultat överförs de till en plats i Microsoft som Azure Storage i Microsoft-molnet. Innehåll från postlådor och webbplatser laddas upp med en maxhastighet på 2 GB per timme.
   
-1. I Microsoft 365 kompatibilitetscenter väljer du den innehållssökning som du vill exportera resultat från.
+1. I Microsoft 365 Efterlevnadscenter väljer du den innehållssökning som du vill exportera resultat från.
   
 2. På menyn **Åtgärder** längst ned på den utfällade sidan klickar du på **Exportera resultat.**
 
@@ -133,6 +133,8 @@ Det första steget är att förbereda sökresultatet för export. När du förbe
    2. Markera kryssrutan **Inkludera versioner SharePoint filer om** du vill exportera alla versioner SharePoint dokument. Det här alternativet visas bara om innehållskällorna för sökningen omfattar SharePoint eller OneDrive för företag webbplatser.
   
    3. Välj **Exportera filer i en komprimerad mapp. Innehåller bara enskilda meddelanden och SharePoint dokument,** kryssruta för att exportera sökresultatet till komprimerade mappar. Det här alternativet visas bara när du väljer att exportera Exchange objekt som enskilda meddelanden och när sökresultatet innehåller SharePoint eller OneDrive dokument. Det här alternativet används främst för att komma runt gränsen på 260 Windows i sökvägsnamnen när objekt exporteras. Se "Filnamn på exporterade objekt" i avsnittet [Mer information.](#more-information)
+   > [!IMPORTANT]
+   > Exporten ökar om du exporterar filer i en komprimerad mapp.
   
 6. Klicka **på Exportera** för att starta exporten. Sökresultaten förbereds för nedladdning, vilket innebär att de samlas in från de ursprungliga innehållsplatserna och sedan laddas upp till en Azure Storage plats i Microsoft-molnet. Det kan ta flera minuter.
 
@@ -142,7 +144,7 @@ Instruktioner för hur du laddar ned exporterade sökresultat finns i nästa avs
 
 Nästa steg är att ladda ned sökresultatet från den Azure Storage platsen till din lokala dator.
   
-1. På sidan **Innehållssökning** i kompatibilitetscentret för Microsoft 365 väljer du **fliken Exporter**
+1. På sidan **Innehållssökning** i Microsoft 365 Efterlevnadscenter väljer du **fliken Exporter**
   
    Du kanske måste klicka på **Uppdatera** för att uppdatera listan med exportjobb så att den visar det exportjobb du har skapat. Exportjobb har samma namn som motsvarande sökning **_Export** lagts till i söknamnet.
   

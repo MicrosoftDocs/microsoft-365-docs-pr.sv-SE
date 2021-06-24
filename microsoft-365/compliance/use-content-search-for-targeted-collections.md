@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: Använd Innehållssökning i kompatibilitetscentret för Microsoft 365 för att utföra en riktad samling som söker efter objekt i en viss postlåda eller webbplatsmapp.
-ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+description: Använd innehållssökning i Microsoft 365 Efterlevnadscenter för att utföra en riktad samling som söker efter objekt i en viss postlåda eller webbplatsmapp.
+ms.openlocfilehash: 925a6e5e0e56c63cde8bfa1b39cca6e64abcd016
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311904"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114758"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Använda innehållssökning för riktade samlingar
 
-Verktyget för innehållssökning i efterlevnadscentret för Microsoft 365 tillhandahåller inte något direkt sätt i användargränssnittet för att söka i specifika mappar i Exchange-postlådor eller på SharePoint- och OneDrive för företag-webbplatser. Du kan emellertid söka i specifika mappar (kallas för riktad *samling)* genom att ange egenskapen mapp-ID för e-post eller sökväg (DocumentLink) för webbplatser i den faktiska sökfrågesyntaxen. Det kan vara användbart att använda innehållssökning för att utföra en riktad samling när du är säker på att objekt som svarar på ett ärende eller objekt med privilegierad åtkomst finns i en viss postlåda eller webbplatsmapp. Du kan använda skriptet i den här artikeln för att hämta mapp-ID för postlådemappar eller sökvägen (DocumentLink) för mappar på en SharePoint och OneDrive för företag webbplats. Sedan kan du använda mapp-ID:t eller sökvägen i en sökfråga för att returnera objekt som finns i mappen.
+Verktyget för innehållssökning i Microsoft 365 Efterlevnadscenter-webbplatsen tillhandahåller inte något direkt sätt i användargränssnittet för att söka i specifika mappar i Exchange-postlådor eller SharePoint och OneDrive för företag-webbplatser. Du kan emellertid söka i specifika mappar (kallas för riktad *samling)* genom att ange egenskapen mapp-ID för e-post eller sökväg (DocumentLink) för webbplatser i den faktiska sökfrågesyntaxen. Det kan vara användbart att använda innehållssökning för att utföra en riktad samling när du är säker på att objekt som svarar på ett ärende eller objekt med privilegierad åtkomst finns i en viss postlåda eller webbplatsmapp. Du kan använda skriptet i den här artikeln för att hämta mapp-ID för postlådemappar eller sökvägen (DocumentLink) för mappar på en SharePoint och OneDrive för företag webbplats. Sedan kan du använda mapp-ID:t eller sökvägen i en sökfråga för att returnera objekt som finns i mappen.
 
 > [!NOTE]
 > För att returnera innehåll som finns i en mapp på en SharePoint- eller OneDrive för företag-webbplats använder skriptet i det här avsnittet den hanterade DocumentLink-egenskapen i stället för egenskapen Path. Egenskapen DocumentLink är mer robust än egenskapen Path eftersom den returnerar allt innehåll i en mapp, medan egenskapen Path inte returnerar vissa mediefiler.
@@ -216,17 +216,19 @@ Här är ett exempel på resultatet som returneras av skriptet för webbplatsmap
 
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Steg 2: Använd ett mapp-ID eller en dokumentlänk för att utföra en riktad samling
 
-När du har kört skriptet för att samla in en lista med mapp-ID eller dokumentlänkar för en viss användare går du till efterlevnadscentret för Microsoft 365 och skapar en ny innehållssökning för att söka efter en särskild mapp. Du använder värdeparet eller i sökfrågan som du konfigurerar i rutan Nyckelord för innehållssökning (eller som värde för parametern ContentMatchQuery om du använder `folderid:<folderid>` `documentlink:<path>` cmdleten **New-ComplianceSearch).**  Du kan kombinera egenskapen  `folderid`  `documentlink` eller med andra sökparametrar eller sökvillkor. Om du bara tar med egenskapen eller i frågan returneras alla objekt i den  `folderid`  `documentlink` angivna mappen.
+När du har kört skriptet för att samla in en lista med mapp-ID eller dokumentlänkar för en viss användare går du till nästa steg för att gå till Microsoft 365 Efterlevnadscenter och skapa en ny innehållssökning för att söka i en särskild mapp. Du använder värdeparet eller i sökfrågan som du konfigurerar i rutan Nyckelord för innehållssökning (eller som värde för parametern ContentMatchQuery om du använder `folderid:<folderid>` `documentlink:<path>` cmdleten **New-ComplianceSearch).**  Du kan kombinera egenskapen  `folderid`  `documentlink` eller med andra sökparametrar eller sökvillkor. Om du bara tar med egenskapen eller i frågan returneras alla objekt i den  `folderid`  `documentlink` angivna mappen.
 
 1. Gå till <https://compliance.microsoft.com> och logga in med det konto och de autentiseringsuppgifter som du använde för att köra skriptet i steg 1.
 
 2. I det vänstra fönstret i efterlevnadscentret klickar du på **Visa all**  >  **innehållssökning** och sedan på **Ny sökning.**
 
-3. I rutan **Nyckelord** klistrar du in `folderid:<folderid>` det eller det värde som  `documentlink:<path>` returnerades av skriptet i steg 1.
+3. I rutan **Nyckelord** klistrar du in `folderid:<folderid>` det eller det värde som  `documentlink:<path>/*` returnerades av skriptet i steg 1.
 
     Frågan på följande skärmbild söker till exempel efter alla objekt i undermappen Rensningar i användarens Återställningsbara objekt-mapp (egenskapens värde för undermappen Rensningar visas på skärmbilden i `folderid` steg 1):
 
     ![Klistra in mappid eller dokumentlänk i nyckelordsrutan för sökfrågan](../media/FolderIDSearchQuery.png)
+    > [!IMPORTANT]
+    > sökning efter dokumentlänk kräver att en avslutande sökning  `asterisk '/*'` används.  
 
 4. Under **Platser väljer** du Specifika platser **och** klickar sedan på **Ändra**.
 
@@ -259,13 +261,13 @@ Här är några exempel på hur du kan  `folderid` använda egenskaperna och i e
 - I det här exemplet genomsöks en webbplatsmapp (och eventuella undermappar) efter dokument som innehåller bokstäverna "SEKRETESS" i rubriken.
 
   ```powershell
-  documentlink:<path> AND filename:nda
+  documentlink:"<path>/*" AND filename:nda
   ```
 
 - I det här exemplet genomsöks en webbplatsmapp (och eventuella undermappar) efter dokument som har ändrats inom ett datumintervall.
 
   ```powershell
-  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:"<path>/*" AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
 ## <a name="more-information"></a>Mer information
