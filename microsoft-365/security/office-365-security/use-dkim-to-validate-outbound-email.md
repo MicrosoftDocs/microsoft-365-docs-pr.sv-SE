@@ -20,12 +20,12 @@ ms.custom:
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12c7609635d9140f2e8efda3f6f1397619ce4790
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e9aa3a72a36a146d121c9302a4b6cb126e765671
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929911"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082786"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -40,21 +40,14 @@ ms.locfileid: "52929911"
 
 I den här artikeln:
 
-- [Hur DKIM fungerar bättre än enbart SPF för att förhindra skadlig förfalskning](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
-
-- [Steg för att manuellt uppgradera dina 1024-bitars nycklar till 2048-bitars DKIM-krypteringsnycklar](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
-
-- [Steg för att konfigurera DKIM manuellt](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
-
-- [Steg för att konfigurera DKIM för fler än en anpassad domän](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
-
-- [Inaktivera DKIM-signeringsprincipen för en anpassad domän](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
-
-- [Standardbeteende för DKIM och Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)
-
-- [Konfigurera DKIM så att en tjänst från tredje part kan skicka, eller förfalska, e-postmeddelanden för din anpassade domän](use-dkim-to-validate-outbound-email.md#SetUp3rdPartyspoof)
-
-- [Nästa steg: När du har konfigurerat DKIM för Microsoft 365](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
+- [Hur DKIM fungerar bättre än enbart SPF för att förhindra skadlig förfalskning](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
+- [Steg för att manuellt uppgradera dina 1024-bitars nycklar till 2048-bitars DKIM-krypteringsnycklar](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
+- [Steg för att konfigurera DKIM manuellt](#steps-to-manually-set-up-dkim)
+- [Steg för att konfigurera DKIM för fler än en anpassad domän](#to-configure-dkim-for-more-than-one-custom-domain)
+- [Inaktivera DKIM-signeringsprincipen för en anpassad domän](#disabling-the-dkim-signing-policy-for-a-custom-domain)
+- [Standardbeteende för DKIM och Microsoft 365](#default-behavior-for-dkim-and-microsoft-365)
+- [Konfigurera DKIM så att en tjänst från tredje part kan skicka, eller förfalska, e-postmeddelanden för din anpassade domän](#set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain)
+- [Nästa steg: När du har konfigurerat DKIM för Microsoft 365](#next-steps-after-you-set-up-dkim-for-microsoft-365)
 
 > [!NOTE]
 > Microsoft 365 konfigurerar automatiskt DKIM för dess ursprungliga ”onmicrosoft.com”-domäner. Det innebär att du inte behöver göra något för att konfigurera DKIM för alla inledande domännamn (t. ex. litware.onmicrosoft.com). Mer information om domäner finns i [Vanliga frågor och svar om domäner](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
@@ -71,15 +64,10 @@ Enkelt sagt krypterar en privat nyckel rubriken i utgående e-postmeddelanden fr
  Den inbyggda DKIM-konfigurationen för Microsoft 365 är tillräcklig täckning för de flesta kunder. Men du bör manuellt konfigurera DKIM för din anpassade domän i följande fall:
 
 - Du har fler än en anpassad domän i Microsoft 365
-
 - Du ska även konfigurera DMARC (**rekommenderas**)
-
 - Du vill ha kontroll över din privata nyckel
-
 - Du vill anpassa dina CNAME-poster
-
 - Du vill konfigurera DKIM-nycklar för e-post som kommer från en domän från tredje part, t. ex. om du använder ett massutskick från tredje part.
-
 
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing"></a>Hur DKIM fungerar bättre än enbart SPF för att förhindra skadlig förfalskning
 <a name="HowDKIMWorks"> </a>
@@ -135,7 +123,6 @@ För detaljerad information om syntax och parametrar, se följande artiklar: [Ro
 Om du vill konfigurera DKIM gör du så här:
 
 - [Publicera två CNAME-poster för din anpassade domän i DNS](use-dkim-to-validate-outbound-email.md#Publish2CNAME)
-
 - [Aktivera DKIM-signering för din anpassade domän](use-dkim-to-validate-outbound-email.md#EnableDKIMinO365)
 
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>Publicera två CNAME-poster för din anpassade domän i DNS
@@ -173,7 +160,6 @@ TTL:                3600
 Var:
 
 - För Microsoft 365 är väljarna alltid ”selector1” eller ”selector2”.
-
 - _domainGUID_ är samma som _domainGUID_ i den anpassade MX-posten för din domän som visas före mail.protection.outlook.com. Exempel: i följande MX-post för domänen contoso.com blir din _domainGUID_ contoso-com:
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
@@ -203,39 +189,42 @@ TTL:                3600
 > [!NOTE]
 > Det är viktigt att skapa den andra posten, men bara en av dem kan vara tillgänglig när du skapar den. I själva verket kan den andra väljarens peka på en adress som inte har skapats än. Vi rekommenderar fortfarande att du skapar den andra CNAME-posten eftersom nyckelroteringen blir smidig.
 
-
 ### <a name="steps-to-enable-dkim-signing-for-your-custom-domain"></a>Steg för att aktivera DKIM-signering för din anpassade domän
 <a name="EnableDKIMinO365"> </a>
 
 När du har publicerat CNAME-posterna i DNS är du redo att aktivera DKIM-signering via Microsoft 365. Du kan göra det antingen via administrationscentret för Microsoft 365 eller med hjälp av PowerShell.
 
-#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>Aktivera DKIM-signering för din anpassade domän via administrationscentret
+#### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Så här aktiverar du DKIM-signering för din anpassade domän i Microsoft 365 Defender-portalen
 
-1. [Logga in på Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) med ditt arbets- eller skolkonto.
+1. Öppna Microsoft 365 Defender-portalen [med ditt arbets- eller skolkonto](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Gå till [security.microsoft.com](https://security.microsoft.com) och följ vägen nedan.
+2. Gå till **E-post och samarbete** \> **Principer och regler** \> **Hotprinciper** \> **Regler** avsnitt \> **DKIM**. Om du vill gå direkt till DKIM-sidan använder du <https://security.microsoft.com/dkimv2>.
 
-3. Gå till **E-post och samarbete > Principer och regler > Hotprinciper > DKIM**.
+3. På sidan **DKIM** markerar du domänen genom att klicka på namnet.
 
-4. Välj domänen som du vill aktivera DKIM för och sedan går du till **Sign messages for this domain with DKIM signatures** (Signera meddelanden för domänen ed DKIM-signaturer) och väljer **Aktivera**. Upprepa det här steget för varje anpassad domän.
+4. I den utfällbara menyn med information ändrar du inställningen **Signera meddelanden för den här domänen med DKIM-signaturer** till **Aktiverad** (![Växlingsknapp på](../../media/scc-toggle-on.png))
+
+   Klicka på **Rotera DKIM-nycklar** när du är klar.
+
+5. Upprepa det här steget för varje anpassad domän.
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>För att aktivera DKIM-signering för din anpassade domän med PowerShell
 
 > [!IMPORTANT]
->:::image type="content" source="../../media/dkim.png" alt-text="Felet &quot;Inga DKIM-nycklar sparade för den här domänen.&quot;":::
-> Om du konfigurerar DKIM för första gången och ser felet "Inga DKIM-nycklar sparade för den här domänen." slutför kommandot i steg 2 nedan (till exempel *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) för att se nyckeln.
+> :::image type="content" source="../../media/dkim.png" alt-text="Felet &quot;Inga DKIM-nycklar sparade för den här domänen.&quot;":::
+> Om du konfigurerar DKIM för första gången och ser felet "Inga DKIM-nycklar har sparats för den här domänen" slutför du kommandot i steg 2 nedan (till exempel `Set-DkimSigningConfig -Identity contoso.com -Enabled $true`) för att se nyckeln.
 
 1. [Ansluta till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Kör följande kommando:
+2. Använd följande syntax:
 
    ```powershell
-   Set-DkimSigningConfig -Identity <domain> -Enabled $true
+   Set-DkimSigningConfig -Identity <Domain> -Enabled $true
    ```
 
-   Här är _domänen_ namnet på den anpassade domän som du vill aktivera DKIM-signering för.
+   \<Domain\> är namnet på den anpassade domän som du vill aktivera DKIM-signering för.
 
-   Till exempel för domänen contoso.com:
+   Det här exemplet aktiverar DKIM-signering för domänen contoso.com:
 
    ```powershell
    Set-DkimSigningConfig -Identity contoso.com -Enabled $true
@@ -246,9 +235,7 @@ När du har publicerat CNAME-posterna i DNS är du redo att aktivera DKIM-signer
 Vänta några minuter innan du följer de här anvisningarna för att kontrollera att du har konfigurerat DKIM. Då får DKIM-informationen om domänen tid att spridas i hela nätverket.
 
 - Skicka ett meddelande från ett konto i din DKIM-aktiverade Microsoft 365-domän till ett annat e-postkonto, till exempel outlook.com eller Hotmail.com.
-
 - Använd inte ett aol.com-konto för testningsändamål. AOL kan hoppa över DKIM för att kontrollera om SPF-kontrollen överförs. Det här annullerar testet.
-
 - Öppna meddelandet och titta på rubriken. Information om hur du visar rubriken för meddelandet beror på vilken meddelandeklient du har. Information om hur du visar meddelanderubriker i Outlook finns i [Visa internetmeddelandehuvud i Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
   Det DKIM-signerade meddelandet innehåller värdnamnet och domänen som du angav när du publicerade CNAME-posterna. Meddelandet ser ut ungefär så här:
@@ -281,7 +268,7 @@ När du inaktiverar signeringsprincipen inaktiveras inte DKIM fullständigt. Eft
 2. Kör något av följande kommandon för varje domän som du vill inaktivera DKIM-signering för.
 
    ```powershell
-   $p = Get-DkimSigningConfig -Identity <domain>
+   $p = Get-DkimSigningConfig -Identity <Domain>
    $p[0] | Set-DkimSigningConfig -Enabled $false
    ```
 

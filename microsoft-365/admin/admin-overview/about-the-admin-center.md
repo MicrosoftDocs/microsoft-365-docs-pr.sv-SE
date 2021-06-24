@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Logga in med administratörsbehörigheter för Administrationscenter för Microsoft 365 när du vill konfigurera din organisation i molnet, hantera användare och hantera prenumerationer.
-ms.openlocfilehash: eff0ab72ef3e4634e7a83d1af825bc42d11686af
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 7817861e79b86a6c43ea26fdb03b037b40a3f564
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52949993"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083059"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Om Administrationscenter för Microsoft 365
 
-**Om du köpte ett Microsoft 365-abonnemang för företag OCH du har administratörsbehörigheter har du åtkomst till administrationscentret**. Den här artikeln är för dig!
+**Om du köpte ett Microsoft 365-abonnemang för företag OCH du har administratörsbehörigheter så har du åtkomst till administrationscentret**. Den här artikeln är till för dig!
 
-**Om du är användare eller har ett Microsoft 365 Family-abonnemang har du inget administrationscenter.** Konfigurera Microsoft 365 genom att gå till [Ladda ned och installera eller ominstallera Microsoft 365 eller Office 2019 på en PC- eller Mac-dator](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
+**Om du är en användare eller har ett Microsoft 365 Family-abonnemang har du inget administrationscenter.** Om du vill konfigurera Microsoft 365 går du till [Ladda ned och installera eller installera om Microsoft 365 eller Office 2019 på en PC eller Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
 
 Du kan använda Administrationscenter för Microsoft 365 för att konfigurera din organisation i molnet, hantera användare, hantera prenumerationer och mycket mer. I den här artikeln kan du läsa mer om hur du kommer till Administrationscenter för Microsoft 365 och om tillgängliga funktioner och inställningar.
 
@@ -51,23 +51,23 @@ Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbild
 
 2. Välj ikonen för startprogrammet i det övre vänstra hörnet och välj sedan **Administratör**.
 
-    Panelen **Administratör** visas endast för personer som har [administratörsbehörigheter](../add-users/about-admin-roles.md) för Microsoft 365. Om du inte ser panelen har du inte behörighet att använda administrationscentret för din organisation.
+    Panelen **Administratör** visas endast för personer som har [administratörsbehörigheter](../add-users/about-admin-roles.md) i Microsoft 365. Om du inte ser panelen har du inte behörighet att använda administrationscentret för din organisation.
 
-## <a name="admin-center-features-and-settings"></a>Funktioner och inställningar för Administrationscenter
+## <a name="admin-center-features-and-settings"></a>Funktioner och inställningar för administrationscentret
 
-Här är funktionerna och inställningarna du hittar i navigeringen till vänster sida i Administrationscenter.. Mer information om administrativa uppgifter i [administratörs hjälp](../../business-video/admin-center-overview.md).
+Här är de funktioner och inställningar som finns i det vänstra navigeringsfältet i administrationscentret. Få mer information om administrativa uppgifter i [administratörshjälp](../../business-video/admin-center-overview.md).
   
-|**Meny**|**Vad det används till**|
+| Meny | Vad det används till |
 |-----|-----|
 |**Start** <br/> |Det här är startsidan i Administrationscenter. Här kan du se hur du hanterar användare, fakturering, tjänstehälsa och rapporter.  <br/> |
 |**Användare** <br/> |Skapa och hantera användare i din organisation, som anställda eller elever. Du kan även ställa in deras behörighetsnivå eller återställa deras lösenord.   <br/> |
-|**Grupper** <br/> |Skapa och hantera grupper i din organisation, som en Microsoft 365-grupp, distributionsgrupp, säkerhetsgrupp eller delad postlåda. Lär dig [skapa](../create-groups/create-groups.md) och [hantera](../create-groups/manage-groups.md) grupper.  <br/> |
-|**Resurser** <br/> |Skapa och hantera resurser, som en SharePoint-webbplatssamling. Lär dig [skapa webbplatssamlingar](/sharepoint/create-site-collection).  <br/> |
-|**Fakturering** <br/> |Visa köp eller avbryt prenumerationer för en organisation. Visa kontoutdrag eller visa antalet aktiverade licenser för enskilda användare. Läs mer om hur du [hanterar faktureringen](../../commerce/index.yml).  <br/> |
+|**Grupper** <br/> |Skapa och hantera grupper i din organisation, som till exempel en Microsoft 365-grupp, distributionsgrupp, säkerhetsgrupp eller delad postlåda. Lär dig hur du [skapar](../create-groups/create-groups.md) och [hanterar](../create-groups/manage-groups.md) grupper.<br/> |
+|**Resurser** <br/> |Skapa och hantera resurser som en SharePoint-webbplatssamling. Lär dig hur du [skapar webbplatssamlingar](/sharepoint/create-site-collection).  <br/> |
+|**Fakturering** <br/> |Visa, köp eller avbryt prenumerationer för din organisation. Visa kontoutdrag eller antalet tilldelade licenser till enskilda användare. Lär dig hur du [hanterar fakturering](../../commerce/index.yml).  <br/> |
 |**Support** <br/> | Visa befintliga tjänstförfrågningar eller skapa nya. Läs mer under [Kontakta supporten för företagsprodukter – hjälp för administratörer](../../business-video/get-help-support.md). |
 |**Inställningar** <br/> |Hantera globala inställningar för program som e-post, webbplatser och Office-paketet. Ändra lösenordsprincip och utgångsdatum. Lägg till och uppdatera domännamn som contoso.com. Ändra organisationens profil och inställningar. Bestäm om partners kan komma åt ditt administrationscenter.  <br/> |
 |**Installation** <br/> |Hantera befintliga domäner, aktivera och hantera multifaktorautentisering, hantera administratörsåtkomst, migrera användarpostlådor till Office 365, hantera funktionsuppdateringar och hjälpa användare att installera Office-programmen. |
-|**Rapporter** <br/> |Få en överblick av hur din organisation använder Microsoft 365, med detaljerade rapporter om e-postanvändning, Office-aktivering och annat. Lär dig använda de nya [aktivitetsrapporterna](../activity-reports/activity-reports.md).  <br/> |
+|**Rapporter** <br/> |Få en överblick över hur din organisation använder Microsoft 365 med detaljerade rapporter om e-postanvändning, Office-aktivering med mera. Lär dig använda de nya [aktivitetsrapporterna](../activity-reports/activity-reports.md).  <br/> |
 |**Hälsa** <br/> |Få en överblick över PC Health. Du kan även få mer detaljerad information och ta del av hälsohistoriken. Se [Kontrollera tjänststatus](../../enterprise/view-service-health.md) och [Kontrollera hälsostatus för Windows-version](/windows/deployment/update/check-release-health) för mer information.  <br/><br/>Använd Meddelandecenter för att hålla reda på kommande ändringar i funktioner och tjänster. Vi publicerar meddelanden där med information som hjälper dig att planera för ändringen och förstå hur den kan påverka användarna. Få mer information i [Meddelandecenter](../manage/message-center.md). <br/> |
 |**Administratörscentra** <br/> |Öppna separata administratörscentra för Exchange, Skype för företag, SharePoint, Yammer och Azure AD. Varje administratörscenter innehåller alla tillgängliga inställningar för den tjänsten.<br/> I till exempel administratörscentret för Exchange kan du konfigurera och hantera e-post, kalendrar, distributionsgrupper med mera. I administratörscentret för SharePoint kan du skapa och hantera webbplatssamlingar, webbplatsinställningar och OneDrive för företag. I administratörscentret för Skype för företag kan du konfigurera aviseringar för snabbmeddelanden, konferens med uppringning och onlinenärvaro.  <br/> Läs mer om [administratörscentret för Exchange](/exchange/exchange-admin-center) och [administratörscentret för SharePoint](/sharepoint/sharepoint-online).<br/> **Obs!** Vilka administrationscenter som är tillgängliga varierar beroende på abonnemang och region.           |
    
