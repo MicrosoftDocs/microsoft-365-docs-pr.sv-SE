@@ -160,10 +160,10 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Aktivera känslighetsetiketter för Office-filer i SharePoint och OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Använda känslighetsetiketter i Office-appar
-          href: sensitivity-labels-office-apps.md
         - name: Aktivera samtidig redigering för dokument krypterade med känslighetsetiketter (förhandsgranskning)
           href: sensitivity-labels-coauthoring.md
+        - name: Använda känslighetsetiketter i Office-appar
+          href: sensitivity-labels-office-apps.md
     - name: Kryptering
       items:
         - name: Förstå kryptering
@@ -445,15 +445,15 @@
               href: archive-zoommeetings-data.md
         - name: TeleMessage-datakontakter
           items:
-            - name: Android
+            - name: Android-arkivering
               href: archive-android-archiver-data.md
-            - name: AT & T-nätverk
+            - name: AT&T SMS/MMS-nätverksarkivering
               href: archive-att-network-archiver-data.md
-            - name: Bell-nätverk
+            - name: Bell SMS/MMS-nätverksarkivering
               href: archive-bell-network-data.md
-            - name: Företagsnummer
+            - name: Enterprise nummerarkivering
               href: archive-enterprise-number-data.md
-            - name: O2-nätverk
+            - name: O2 Telefonica SMS- och röstnätverksarkivering
               href: archive-o2-network-data.md
             - name: Signal (förhandsversion)
               href: archive-signal-archiver-data.md
@@ -461,12 +461,50 @@
               href: archive-telegram-archiver-data.md
             - name: TELUS-nätverk
               href: archive-telus-network-data.md
-            - name: Verizon-nätverk
+            - name: Verizon SMS/MMS nätverksarkivering
               href: archive-verizon-network-data.md
-            - name: WeChat
+            - name: WeChat-arkivering
               href: archive-wechat-data.md
-            - name: WhatsApp
+            - name: WhatsApp-arkivering
               href: archive-whatsapp-data.md
+        - name: 17a-4 datakopplingar
+          items:
+            - name: BlackBerry DataParser (förhandsversion)
+              href: archive-17a-4-blackberry-data.md
+            - name: Bloomberg DataParser (förhandsversion)
+              href: archive-17a-4-bloomberg-data.md
+            - name: Cisco Jabber DataParser (förhandsversion)
+              href: archive-17a-4-cisco-jabber-data.md
+            - name: Cisco Webex DataParser (förhandsversion)
+              href: archive-17a-4-webex-teams-data.md
+            - name: FactSet DataParser (förhandsversion)
+              href: archive-17a-4-factset-data.md
+            - name: Fuze DataParser (förhandsversion)
+              href: archive-17a-4-fuze-data.md
+            - name: FX Connect DataParser (förhandsversion)
+              href: archive-17a-4-fxconnect-data.md
+            - name: ICE DataParser (förhandsversion)
+              href: archive-17a-4-ice-im-data.md
+            - name: InvestEdge DataParser (förhandsversion)
+              href: archive-17a-4-investedge-data.md
+            - name: LivePerson Conversational Cloud DataParser (förhandsversion)
+              href: archive-17a-4-liveperson-data.md
+            - name: Quip DataParser (förhandsversion)
+              href: archive-17a-4-quip-data.md
+            - name: Refinitiv Eikon Messenger DataParser (förhandsversion)
+              href: archive-17a-4-refinitiv-messenger-data.md
+            - name: ServiceNow DataParser (förhandsversion)
+              href: archive-17a-4-servicenow-data.md
+            - name: Slack DataParser (förhandsversion)
+              href: archive-17a-4-slack-data.md
+            - name: Symphony DataParser (förhandsversion)
+              href: archive-17a-4-symphony-data.md
+            - name: Zooma DataParser (förhandsversion)
+              href: archive-17a-4-zoom-data.md
+        - name: CellTrust-kopplingar
+          items:
+            - name: CellTrust SL2 (förhandsversion)
+              href: archive-data-from-celltrustsl2.md
         - name: Arbeta med en partner för att arkivera data från tredje part
           href: work-with-partner-to-archive-third-party-data.md
         - name: Söka efter data från tredje part

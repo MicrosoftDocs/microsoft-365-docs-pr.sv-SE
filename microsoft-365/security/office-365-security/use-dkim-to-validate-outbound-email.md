@@ -20,12 +20,12 @@ ms.custom:
 description: Lär dig hur du använder DomainKeys identifierad e-post (DKIM) med Microsoft 365 för att säkerställa att meddelanden som skickas från din anpassade domän är betrodda av mål-e-postsystemet.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9aa3a72a36a146d121c9302a4b6cb126e765671
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 9aa67d7875bb7f81c6569b56704d221b57378962
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082786"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108505"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Använda DKIM för att validera utgående e-post som skickas från din anpassade domän
 
@@ -198,7 +198,7 @@ När du har publicerat CNAME-posterna i DNS är du redo att aktivera DKIM-signer
 
 1. Öppna Microsoft 365 Defender-portalen [med ditt arbets- eller skolkonto](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Gå till **E-post och samarbete** \> **Principer och regler** \> **Hotprinciper** \> **Regler** avsnitt \> **DKIM**. Om du vill gå direkt till DKIM-sidan använder du <https://security.microsoft.com/dkimv2>.
+2. Gå till sidan **E-post och samarbete** \> **Principer och regler** \> **Hotprinciper** \> **Regler** avsnitt \> **DKIM**. Om du vill gå direkt till DKIM-sidan använder du <https://security.microsoft.com/dkimv2>.
 
 3. På sidan **DKIM** markerar du domänen genom att klicka på namnet.
 
