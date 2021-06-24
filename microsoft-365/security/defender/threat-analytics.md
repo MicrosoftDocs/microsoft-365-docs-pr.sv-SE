@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d07a7210b8426349f18a2305069c4ed0a08ce660
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: a6de0cb646eb8c12e4863facdb42c1f9494120f9
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096849"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105662"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Spåra och svara på nya hot med hotanalyser 
 
@@ -115,24 +115,6 @@ Varje rapport innehåller diagram som är utformade för att ge information om h
 Varje rapport innehåller diagram som ger en översikt över hur flexibel din organisation är mot ett givet hot:
 - **Säker konfigurationsstatus**– visar antalet enheter med felkonfigurerade säkerhetsinställningar. Använd de rekommenderade säkerhetsinställningarna för att minska risken. Enheter anses vara **säkra** om de har _tillämpat alla_ spårade inställningar.
 - **Status för sårbarhetskorrigering**– visar antalet sårbara enheter. Tillämpa säkerhetsuppdateringar eller korrigeringar för att åtgärda säkerhetsproblem som utnyttjas av risken.
-
-#### <a name="view-reports-per-threat-tags"></a>Visa rapporter per hottaggar
-Du kan filtrera listan med hotrapporter och visa de mest relevanta rapporterna enligt en specifik hottagg (kategori) eller en rapporttyp. 
-- **Hottaggar**– hjälper dig att visa de mest relevanta rapporterna utifrån en specifik hotkategori. Till exempel alla rapporter relaterade till utpressningstrojaner.
-- **Rapporttyper**– hjälper dig att visa de mest relevanta rapporterna enligt en viss rapporttyp. Till exempel alla rapporter som täcker verktyg och tekniker. 
-- **Filter**– hjälper dig att effektivt granska hotrapportlistan och filtrera vyn baserat på en specifik hottagg eller rapporttyp. Granska till exempel alla rapporter om hot relaterade till utpressningstrojaner eller hotrapporter som täcker säkerhetsproblem.
-
-##### <a name="how-does-it-work"></a>Hur fungerar det?
-Microsoft Threat Intelligence-teamet har lagt till hottaggar i varje hotrapport:
-- Fyra hottaggar är nu tillgängliga:
-  - Utpressningstrojaner
-  - Fiske
-  - Sårbarhet
-  - Aktivitetsgrupp
-- Hottaggar visas högst upp på sidan för hotanalys, med räknare för antalet tillgängliga rapporter under varje tagg.
-    ![hottaggar](../../media/threat-analytics/ta-threattags-mtp.png)
-- Listan kan också sorteras efter hottaggar:   ![ listor](../../media/threat-analytics//ta-taglist-mtp.png)
-- Filter är tillgängliga per hottagg och rapporttyp:   ![ filter](../../media/threat-analytics/ta-threattag-filters-mtp.png)
 
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Analytikerrapport: Få expertinsikter från Microsoft-säkerhetsanalytiker
 I avsnittet **Analytikerrapport** kan du läsa igenom den detaljerade expertens uppskrivning. De flesta rapporter ger detaljerade beskrivningar av attackkedjor, inklusive taktiker och tekniker som mappats till MITRE ATT&CK-ramverket, uttömmande listor med rekommendationer och kraftfulla vägledningar för hot [efter](advanced-hunting-overview.md) hot.

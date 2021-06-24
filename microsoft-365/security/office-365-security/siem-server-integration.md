@@ -18,12 +18,12 @@ ms.custom:
 description: Få en översikt över säkerhetsinformation och händelsehantering (SIEM) serverintegrering med dina Microsoft 365 och program
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: ea4d844595aaab8d8148666430187edef463b92e
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929797"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105602"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Säkerhetsinformation och händelsehantering (SIEM)-serverintegrering med Microsoft 365 och program
 
@@ -46,12 +46,13 @@ Använder eller planerar din organisation att skaffa en säkerhetsinformations- 
 Om du behöver en SIEM-server beror på många faktorer, till exempel organisationens säkerhetskrav och var dina data finns. Microsoft 365 innehåller ett brett utbud av säkerhetsfunktioner som uppfyller många organisationers säkerhetsbehov utan ytterligare servrar, till exempel en SIEM-server. Vissa organisationer har särskilda omständigheter som kräver användningen av en SIEM-server. Här är några exempel:
 
 - *Fabrikam* har en del innehåll och program lokalt och en del i molnet (de har en hybridmolndistribution). För att få säkerhetsrapporter för allt innehåll och alla program har Fabrikam implementerat en SIEM-server.
-
 - *Contoso* är en organisation för finansiella tjänster som har särskilt strikta säkerhetskrav. De har lagt till en SIEM-server i miljön för att kunna dra nytta av det extra säkerhetsskydd de behöver.
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>SIEM-serverintegrering med Microsoft 365
 
 En SIEM-server kan ta emot data från en mängd Microsoft 365 tjänster och program. I följande tabell visas flera Microsoft 365-tjänster och -program, tillsammans med SIEM-serverindata och -resurser för mer information.
+
+<br>
 
 ****
 
@@ -69,8 +70,7 @@ En SIEM-server kan ta emot data från en mängd Microsoft 365 tjänster och prog
 
 Kontrollera att granskningsloggning är aktiverat innan du konfigurerar SIEM-serverintegrering.
 
-- För SharePoint Online, OneDrive för företag och Azure Active Directory är granskningsloggning aktiverad i [Microsoft 365 Defender-portalen.](../../compliance/turn-audit-log-search-on-or-off.md)
-
+- Mer SharePoint Online, OneDrive för företag och Azure Active Directory finns [i Aktivera eller inaktivera granskning.](../../compliance/turn-audit-log-search-on-or-off.md)
 - Mer Exchange Online finns i Hantera [granskning av postlåda.](../../compliance/enable-mailbox-auditing.md)
 
 ## <a name="more-resources"></a>Fler resurser

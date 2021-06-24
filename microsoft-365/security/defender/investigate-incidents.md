@@ -1,5 +1,5 @@
 ---
-title: Undersöka incidenter i Microsoft 365 Defender
+title: Undersöka ärenden i Microsoft 365 Defender
 description: Undersök incidenter relaterade till enheter, användare och postlådor.
 keywords: incidenter, incidenter, analysera, svar, datorer, enheter, användare, identiteter, e-post, e-post, postlåda, undersökning, diagram, bevis
 search.product: eADQiWindows 10XVcnh
@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dcfc3bd0e06e0bdca6c834e947d7d136af47fde3
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fdfc065aea3549e99de72c968c0fa19412f9e246
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782831"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105362"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>Undersöka incidenter i Microsoft 365 Defender
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Undersöka ärenden i Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "52782831"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender sammanställer alla relaterade aviseringar, tillgångar, undersökningar och bevis från alla dina enheter, användare och postlådor för att ge dig en fullständig översikt över hela attacken.
+Microsoft 365 Defender sammanställer alla relaterade aviseringar, tillgångar, undersökningar och bevis från olika enheter, användare och postlådor för att ge dig en fullständig översikt över hela attacken.
 
 Inom en incident analyserar du aviseringarna som påverkar nätverket, förstår vad de betyder och sorterar bevisen så att du kan skapa en gällande åtgärdsplan.
 
@@ -66,7 +66,7 @@ Du kan också öppna huvudsidan för en händelse genom att välja incidentnamne
 
 :::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exempel på sidan Sammanfattning för en incident i Microsoft 365 säkerhetscenter":::
 
-Attackkategorierna ger dig en visuell och numerisk vy av hur avancerat attacken har fortskridt mot kill chain. Precis som andra Microsoft-säkerhetsprodukter Microsoft 365 Defender i linje med [MITRE ATT &trade;&CK-ramverket.](https://attack.mitre.org/)
+Attackkategorierna ger dig en visuell och numerisk vy av hur avancerat attacken har fortskridt mot kill chain. Precis som för andra Microsoft-Microsoft 365 Defender är den i linje med [MITRE &trade; ATT&CK-ramverket.](https://attack.mitre.org/)
 
 I omfattningsavsnittet visas en lista över de viktigaste tillgångar som är en del av den här händelsen. Om det finns specifik information om den här tillgången, till exempel risknivå, undersökningsprioritering och taggning av tillgångarna, visas detta även i det här avsnittet.
 
@@ -89,7 +89,7 @@ Här är ett exempel.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Exempel på en aviseringssida för ett incident":::
 
-Som standard sorteras aviseringarna kronologiskt så att du kan se hur händelsen spelats ut med tiden. När du väljer en avisering i en Microsoft 365 Defender visas aviseringsinformation som är specifik för den övergripande händelsen. 
+Som standard sorteras aviseringarna kronologiskt så att du kan se hur händelsen spelats ut med tiden. När du väljer en avisering i en Microsoft 365 Defender visas den aviseringsinformation som är specifik för den övergripande händelsen. 
 
 Du kan se händelser för aviseringen, vilket andra utlöste aviseringar orsakade den aktuella aviseringen och alla berörda enheter och aktiviteter som var inblandade i attacken, inklusive filer, användare och postlådor.
 
@@ -145,7 +145,15 @@ På **fliken Undersökningar** finns alla automatiserade undersökningar [som](m
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Exempel på en sida för undersökningar för en incident":::
 
-Välj en undersökning för att gå till sidan Undersökningsinformation för att få fullständig information om undersöknings- och åtgärdsstatus. Om det finns åtgärder som väntar på godkännande som en del av undersökningen visas de på fliken Väntande åtgärder. Vidta åtgärder som en del av åtgärder för incidenter.
+Välj en undersökning för att navigera till dess informationssida för fullständig information om undersöknings- och åtgärdsstatus. Om det finns åtgärder som väntar på godkännande som en del av undersökningen visas de på fliken Historik för **väntande** åtgärder. Vidta åtgärder som en del av åtgärder för incidenter.
+
+Det finns även fliken **Undersökningsdiagram** som visar:
+
+- Kopplingen av aviseringar till de påverkade tillgångarna i organisationen.
+- Vilka enheter är relaterade till vilka aviseringar och hur de är en del av attackens historia.
+- Aviseringarna om händelsen.
+
+Med hjälp av undersökningsdiagrammet kan du snabbt förstå den fullständiga omfattningen av attacken genom att ansluta olika misstänkta enheter som är en del av attacken till sina relaterade tillgångar, till exempel användare, enheter och postlådor. 
 
 Mer information finns i [Automatiserad undersökning och svar i Microsoft 365 Defender](m365d-autoir.md).
 
@@ -158,22 +166,6 @@ På **fliken Bevis och** svar visas alla händelser som stöds och misstänkta e
 Microsoft 365 Defender undersöker automatiskt alla händelser som stöds och misstänkta enheter i aviseringarna, vilket ger dig information om viktiga e-postmeddelanden, filer, processer, tjänster, IP-adresser med mera. På så sätt kan du snabbt identifiera och blockera potentiella hot i händelsen.
 
 Var och en av de analyserade enheterna är markerade med en bedömning (skadlig, misstänkt, ren) och en åtgärdsstatus. På så sätt får du en bättre förståelse för statusen för hela händelsen och vad som kan göras härnäst.
-
-## <a name="graph-in-preview"></a>Graph (i förhandsgranskning)
-
-Med den **nya Graph** (i förhandsgranskningen) kan du se:
-
-- Kopplingen av aviseringar till de påverkade tillgångarna i organisationen.
-- Vilka enheter är relaterade till vilka aviseringar och hur de är en del av attackens historia.
-- Aviseringarna om händelsen.
-
-Här är ett exempel.
-
-:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Exempel på en Graph för ett incident":::
-
-Med hjälp av incidentdiagrammet får du snabbt en fullständig förståelse för attacken genom att ansluta olika misstänkta enheter som är en del av attacken till sina relaterade tillgångar, till exempel användare, enheter och postlådor. 
-
-Nu kan du förstå hur attacken spridas genom nätverket över tid, var den startade och hur långt attacken gick.
 
 ## <a name="next-steps"></a>Nästa steg
 

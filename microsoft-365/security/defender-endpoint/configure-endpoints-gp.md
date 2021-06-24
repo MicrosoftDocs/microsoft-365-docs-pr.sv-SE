@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f607e36cef85f30fa1d6e073da871ac1c140684c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841840"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105692"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Introducera Windows 10 enheter med grupprincip 
 
@@ -119,7 +119,7 @@ När du har konfigurerat onboarding-skriptet fortsätter du att redigera samma g
 
 Alla principer finns under `Computer Configuration\Policies\Administrative Templates` .
 
-**Plats för principen:** \Windows Components\Windows Defender SmartScreen*
+**Principplats:** \Windows Components\Windows Defender ATP
 
 Princip | Inställning 
 :---|:---
@@ -155,7 +155,7 @@ Genomsöka alla nedladdade filer och bifogade filer|Aktiverad
 
 <br/>
 
-**Policyplats:** \Windows Components\Microsoft Defender AntivirusScan
+**Policyplats:** \Windows Components\Microsoft Defender Antivirus\Scan
 
 De här inställningarna konfigurerar periodiska genomsökningar av slutpunkten. Vi rekommenderar att du gör en snabbsökning varje vecka, om det är möjligt med prestanda.
 

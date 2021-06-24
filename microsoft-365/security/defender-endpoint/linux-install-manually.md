@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3ed033f137d3329dc208183fe8fad1f300ffd4c9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841802"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105578"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuera Microsoft Defender för Slutpunkt i Linux manuellt
 
@@ -349,6 +349,21 @@ Ladda ned introduktionspaketet från Microsoft Defender Säkerhetscenter:
         ```bash
         mdatp threat list
         ```
+
+## <a name="experience-linux-endpoint-detection-and-response-edr-capabilities-with-simulated-attacks"></a>Upplev Linux identifiering och åtgärd på slutpunkt (Identifiering och åtgärd på slutpunkt) med simulerade attacker
+
+För att testa funktionerna i Identifiering och åtgärd på slutpunkt för Linux följer du stegen nedan för att simulera en identifiering på din Linux-server och undersöka ärendet. 
+
+1.  Kontrollera att den onboarded Linux-servern visas i Microsoft Defender Säkerhetscenter. Om det här är den första onboarding av datorn kan det ta upp till 20 minuter tills den visas. 
+
+2.  Ladda ned och extrahera [skriptfilen](https://aka.ms/LinuxDIY) till en onboarded Linux-server och kör följande kommando: `./mde_linux_edr_diy.sh`
+
+3.  Efter några minuter ska en identifiering av den upphöjas Microsoft Defender Säkerhetscenter.
+
+4.  Titta på varningsinformationen, datortidslinjen och utför dina vanliga undersökningssteg.
+
+
+
 
 ## <a name="installer-script"></a>Installationsskript
 

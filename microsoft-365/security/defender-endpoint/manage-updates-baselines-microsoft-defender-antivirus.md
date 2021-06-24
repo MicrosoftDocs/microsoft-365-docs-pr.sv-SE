@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/14/2021
-ms.openlocfilehash: 1c7ff52398e048aa34fd9c5ab3d8edd1004ea5ec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.date: 06/23/2021
+ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929449"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105338"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer
 
@@ -76,7 +76,7 @@ Information om hur du uppdaterar eller installerar plattformsuppdateringen finns
 Alla våra uppdateringar innehåller 
 - prestandaförbättringar
 - förbättringar av användbarheten. och 
-- integreringsförbättringar (Molnet, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
+- integreringsförbättringar (Moln, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/><br/>
 <details>
 <summary> Maj-2021 (plattform: 4.18.2105.4 | Motor: 1.1.18200.4)</summary>
@@ -105,6 +105,8 @@ Inga kända problem
 ### <a name="whats-new"></a>Nyheter
 - Ytterligare logik för funktionsövervakning
 - Förbättrad identifiering av kernelläge
+- Nya kontroller för hantering av den gradvisa utrullningsprocessen för [Microsoft Defender-uppdateringar har lagts till](manage-gradual-rollout.md)
+
 
 ### <a name="known-issues"></a>Kända problem
 Inga kända problem  

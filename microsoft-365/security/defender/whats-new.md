@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0068d5aeef1289d8775dcefd0b4f60cb8f8ed0de
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096822"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105410"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nyheter i Microsoft 365 Defender
 
@@ -38,8 +38,12 @@ RSS-feed: Få ett meddelande när sidan uppdateras genom att kopiera och klistra
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>Juni 2021
-- Hottaggar [Microsoft 365 Defender rapporten om hotanalys](threat-analytics.md) <br> Hottaggar hjälper dig att fokusera på specifika hotkategorier och granska de mest relevanta rapporterna. 
+
+## <a name="may-2021"></a>Maj 2021
+
+- [Ny aviseringssida i Microsoft 365 Defender portalen](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> Ger förbättrad information för kontexten i en attack. Du kan se vilka andra utlösta aviseringar som orsakade den aktuella aviseringen och alla berörda enheter och aktiviteter som var inblandade i attacken, inklusive filer, användare och postlådor. Mer information [finns i](/microsoft-365/security/defender/investigate-alerts) Undersöka aviseringar.
+- [Trenddiagram för incidenter och aviseringar på Microsoft 365 Defender portalen](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425) <br> Avgör om det finns flera aviseringar om en enstaka incident eller om organisationen är under attack med flera olika incidenter. Mer information [finns](/microsoft-365/security/defender/incident-queue) i Prioritera incidenter.
+
 
 ## <a name="april-2021"></a>April 2021
 - Microsoft 365 Defender<br> Den förbättrade [Microsoft 365 Defender](https://security.microsoft.com) är nu tillgänglig. I den här nya upplevelsen samlas Defender för Slutpunkt, Defender för Office 365, Defender för identitet och annat till en enda portal. Det här är det nya hemmet för att hantera dina säkerhetskontroller. [Läs om de senaste](./overview-security-center.md).

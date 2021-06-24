@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: Så här aktiverar eller inaktiverar du funktionen Granskningsloggsökning i Microsoft 365 efterlevnadscenter för att aktivera eller inaktivera administratörers möjlighet att söka i granskningsloggen.
-ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Så här aktiverar eller inaktiverar du funktionen Granskningsloggsökning i Microsoft 365 Efterlevnadscenter för att aktivera eller inaktivera administratörs möjlighet att söka i granskningsloggen.
+ms.openlocfilehash: 7c55443eda9a99ff4ef153d8564fd9ac43fcc549
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706670"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105314"
 ---
 # <a name="turn-auditing-on-or-off"></a>Aktivera eller inaktivera granskningar
 
@@ -39,7 +39,7 @@ Granskningsloggning är som standard aktiverat för Microsoft 365 och Office 365
 - Du måste ha tilldelats rollen Granskningsloggar i Exchange Online att aktivera eller inaktivera granskning i Microsoft 365 organisation. Som standard är den här rollen tilldelad rollgrupperna  Efterlevnadshantering och Organisationshantering på sidan Behörigheter Exchange administrationscentret. Globala administratörer i Microsoft 365 är medlemmar i rollgruppen Organisationshantering i Exchange Online. 
 
     > [!NOTE]
-    > Användare måste ha tilldelats behörigheter i Exchange Online att aktivera eller inaktivera granskning. Om du tilldelar användarna rollen  Granskningsloggar på sidan Behörigheter i Säkerhets- & efterlevnadscenter kan de inte aktivera eller inaktivera granskning. Det beror på att den underliggande cmdleten är en Exchange Online PowerShell-cmdlet. 
+    > Användare måste ha tilldelats behörigheter i Exchange Online att aktivera eller inaktivera granskning. Om du tilldelar användarna rollen  Granskningsloggar på sidan Behörigheter i Säkerhets- & efterlevnadscenter kan de inte aktivera eller inaktivera granskning. Det beror på att den underliggande cmdleten är en Exchange Online PowerShell-cmdlet.
 
 - Stegvisa instruktioner för hur du söker i granskningsloggen finns i Söka i [granskningsloggen i Säkerhets- & Efterlevnadscenter.](search-the-audit-log-in-security-and-compliance.md) Mer information om API för hanteringsaktivitet Microsoft 365 finns i Komma [igång Microsoft 365 Management API:er.](/office/office-365-management-api/get-started-with-office-365-management-apis)
 
@@ -59,7 +59,7 @@ Om granskning inte är aktiverat för organisationen kan du aktivera den i efter
 
 1. Gå till <https://compliance.microsoft.com> och logga in.
 
-2. I det vänstra navigeringsfönstret i Microsoft 365, klickar du på **Visa alla** och sedan på **Granska**.
+2. Klicka på Visa alla i navigeringsrutan till **Microsoft 365 Efterlevnadscenter,** och klicka sedan på **Granska.**
 
    Om granskning inte är aktiverat för organisationen visas en banderoll där du uppmanas att börja spela in användar- och administratörsaktivitet.
 
@@ -103,6 +103,6 @@ Du måste använda Exchange Online PowerShell för att inaktivera granskning.
 
       Värdet för  `False` egenskapen  _UnifiedAuditLogIngestionEnabled_ anger att granskning är inaktiverat.
 
-    - Gå till **sidan Granskning** i Microsoft 365 kompatibilitetscenter.
+    - Gå till **sidan** Granskning i Microsoft 365 Efterlevnadscenter.
 
       Om granskning inte är aktiverat för organisationen visas en banderoll där du uppmanas att börja spela in användar- och administratörsaktivitet.

@@ -19,12 +19,12 @@ description: Integrera organisationens SIEM-server med Microsoft Defender för O
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f3d6bbacb4a64060ecd03cbb28eee3256f41827e
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e11d1e64b7c8c3b9d5b93516fe05aed3d5937290
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929785"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105638"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>SIEM-integrering med Microsoft Defender för Office 365
 
@@ -41,7 +41,6 @@ Om organisationen använder en säkerhetsinformations- och händelsehanteringsse
 Med SIEM-integrering kan du visa information, t.ex. skadlig kod eller phish som upptäckts av Microsoft Defender för Office 365, i dina SIEM-serverrapporter.
 
 - Ett exempel på SIEM-integrering med Microsoft Defender för Office 365 finns i [Tech Community-bloggen:](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)Öka effektiviteten i SOC med Defender för Office 365 och O365 Management API.
-
 - Mer information om hur du Office 365 API:er för hantering finns i Office 365 [över API:er för hantering.](/office/office-365-management-api/office-365-management-apis-overview)
 
 ## <a name="how-siem-integration-works"></a>Så här fungerar SIEM-integrering
@@ -58,6 +57,10 @@ SIEM-servern eller något annat liknande system avsöker arbetsbelastningen **au
 
 I följande tabell sammanfattas värdena för **AuditLogRecordType** som är relevanta för Microsoft Defender för Office 365 händelser:
 
+<br>
+
+****
+
 |Värde|Medlemsnamn|Beskrivning|
 |---|---|---|
 |28|ThreatIntelligence|Nätfiske- och skadlig programvara från Exchange Online Protection och Microsoft Defender för Office 365.|
@@ -67,7 +70,7 @@ I följande tabell sammanfattas värdena för **AuditLogRecordType** som är rel
 |
 
 > [!IMPORTANT]
-> Du måste vara global administratör eller ha säkerhetsadministratörsrollen tilldelad till Microsoft 365 Defender-portalen för att konfigurera SIEM-integrering med Microsoft Defender för Office 365.
+> Du måste vara global administratör eller ha rollen Säkerhetsadministratör tilldelad i Microsoft 365 Defender-portalen för att konfigurera SIEM-integrering med Microsoft Defender för Office 365. Mer information finns under [Behörigheter på Microsoft 365 Defender-portalen](permissions-microsoft-365-security-center.md).
 >
 > Granskningsloggning måste vara aktiverad i Microsoft 365 miljö. Om du behöver hjälp med detta kan du [gå till Aktivera eller inaktivera granskningsloggsökning.](../../compliance/turn-audit-log-search-on-or-off.md)
 

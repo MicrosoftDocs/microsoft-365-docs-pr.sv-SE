@@ -20,12 +20,12 @@ description: Administratörer kan läsa mer om skydd mot hot i Microsoft 365 kon
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31ca7c27e3be20e20c16004490bd2ecd5ca4ae05
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 7e37b67dbed75e3283070ba94321fcb03979a5a6
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083686"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105398"
 ---
 # <a name="protect-against-threats"></a>Skydda mot hot
 
@@ -95,7 +95,7 @@ Mer information om rekommenderade inställningar för skydd mot skadlig programv
 
 3. Klicka på Redigera skyddsinställningar i den utfäll plats som öppnas med **principinformation** och konfigurera sedan följande inställningar:
    - **Avsnittet Skyddsinställningar:**
-     - Välj **Aktivera filtret för vanliga bifogade filer om** du vill aktivera filtret för vanliga bifogade filer. Klicka **på Anpassa filtyper om** du vill lägga till fler filtyper.
+     - **Aktivera filtret för vanliga bifogade filer:** Välj (aktivera). Klicka **på Anpassa filtyper om** du vill lägga till fler filtyper.
      - **Aktivera automatisk rensning utan timme för skadlig programvara:** Kontrollera att den här inställningen är markerad. Mer information om ZAP för skadlig programvara finns i [Zap (Zero-hour auto purge) för skadlig programvara.](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)
    - **Meddelandeavsnitt:** Kontrollera att inga av meddelandeinställningarna är markerade.
 
@@ -251,7 +251,7 @@ Mer information om rekommenderade inställningar för Valv finns i Valv [Instäl
 2. På sidan **Valv länkar** klickar du **på Globala** inställningar och konfigurerar sedan följande inställningar på den utfäll sida som visas:
    - **Inställningar som gäller för innehåll i avsnittet Office 365 program** som stöds:
      - **Använd Valv länkar i Office 365:** Kontrollera att den här inställningen är aktiverad ![ ](../../media/scc-toggle-on.png) (aktivera).
-     - **Spåra inte när användare klickar på skyddade länkar i Office 365**: Inaktivera den här inställningen ![ ](../../media/scc-toggle-off.png) (inaktivera)
+     - **Spåra inte när användare klickar på skyddade länkar i Office 365**: Inaktivera den här inställningen ![ ](../../media/scc-toggle-off.png) (inaktivera).
      - **Låt inte användare klicka till den ursprungliga URL:en i Office 365-appar:** Kontrollera att den här inställningen är aktiverad ![ (växlingsknapp ](../../media/scc-toggle-on.png) på).
 
    När du är klar klickar du på **Spara**

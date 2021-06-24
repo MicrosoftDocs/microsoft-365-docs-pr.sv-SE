@@ -18,12 +18,12 @@ description: Administratörer och slutanvändare kan lära sig att e-postmeddela
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d277df764ce2fb135f11c6320bc990e4d4142d6
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: d0d48c3c6f6d082085390d6e246a088b6d3f6bf0
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929773"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105554"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Skicka meddelanden till Microsoft manuellt för analys
 
@@ -35,7 +35,7 @@ ms.locfileid: "52929773"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Om du är administratör i en organisation med Exchange Online postlådor rekommenderar vi att du använder portalen för sändning i Microsoft 365 Defender-portalen. Mer information finns i Använda [administratörsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft.](admin-submission.md)
+> Om du är administratör i en organisation med Exchange Online postlådor rekommenderar  vi att du använder sidan Inskickade i Microsoft 365 Defender postportalen. Mer information finns i Använda [administratörsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft.](admin-submission.md)
 
 Det kan vara frustrerande när användare i organisationen tar emot skräppost eller nätfiskemeddelanden i Inkorgen, eller om de inte får ett legitimt e-postmeddelande eftersom det markeras som skräppost. Vi finjusterar ständigt våra skräppostfilter så att de blir mer exakta.
 
@@ -47,7 +47,7 @@ Du och dina användare kan hjälpa till med detta genom att skicka falska positi
 ## <a name="submit-false-negatives-to-microsoft"></a>Skicka falska negativa tal till Microsoft
 
 > [!TIP]
-> I stället för att använda följande procedurer för att rapportera falska negativa tal kan användare i Outlook och Outlook på webben (tidigare kallat Outlook Web App) använda tilläggen Rapportmeddelande eller Rapportera nätfiske. Mer information om hur du installerar [](enable-the-report-message-add-in.md) och använder dessa verktyg finns i Aktivera tillägget Rapportmeddelande och Aktivera tillägget [Rapportfiske.](enable-the-report-phish-add-in.md)
+> I stället för att använda följande procedurer för att rapportera falska negativa tal kan användare i Outlook och Outlook på webben (tidigare kallade Outlook Web App) använda tilläggen Rapportmeddelande eller Rapportera nätfiske. Mer information om hur du installerar [](enable-the-report-message-add-in.md) och använder dessa verktyg finns i Aktivera tillägget Rapportmeddelande och Aktivera tillägget [Rapportfiske.](enable-the-report-phish-add-in.md)
 
 Om du får ett meddelande som har passerat skräppostfiltrering som borde ha identifierats som skräppost eller nätfiske kan du skicka meddelandet till Microsofts grupper för skräppostanalys och Microsoft-nätfiskeanalys. Analytikerna granskar meddelandet och lägger till det i filtren för hela tjänsten om det uppfyller klassificeringskriterierna.
 
@@ -72,7 +72,7 @@ Om du får ett meddelande som har passerat skräppostfiltrering som borde ha ide
 ## <a name="submit-false-positives-to-microsoft"></a>Skicka falska positiva resultat till Microsoft
 
 > [!TIP]
-> I stället för att använda följande procedurer för att rapportera falska positiva resultat kan användare i Outlook och Outlook på webben (tidigare kallat Outlook Web App) använda tilläggen Rapportmeddelande eller Rapportera nätfiske. Mer information om hur du installerar [](enable-the-report-message-add-in.md) och använder dessa verktyg finns i Aktivera tillägget Rapportmeddelande och Aktivera tillägget [Rapportfiske.](enable-the-report-phish-add-in.md)
+> Istället för att använda följande procedurer för att rapportera falska positiva resultat kan användare i Outlook och Outlook på webben använda tilläggen Rapportmeddelande eller Rapport nätfiske. Mer information om hur du installerar [](enable-the-report-message-add-in.md) och använder dessa verktyg finns i Aktivera tillägget Rapportmeddelande och Aktivera tillägget [Rapportfiske.](enable-the-report-phish-add-in.md)
 
 Om ett meddelande felaktigt identifierades som skräppost kan du skicka meddelandet till Microsofts team för skräppostanalys. Analytikerna utvärderar meddelandet och (beroende på resultatet av analysen) kan filtren för hela tjänsten justeras så att meddelandet går att komma igenom.
 
