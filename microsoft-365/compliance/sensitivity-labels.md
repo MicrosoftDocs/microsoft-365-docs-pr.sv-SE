@@ -22,12 +22,12 @@ description: Använd känslighetsetiketter från Microsoft Information Protectio
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 5c54b9c9b9046a1c410418a9ae5a922bdad9c442
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 972282713e21c0e1f99a66e696de32531e68d4a7
+ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878082"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114782"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Lär dig mer om känslighetsetiketter
 
@@ -186,7 +186,7 @@ När du konfigurerar en etikettprincip kan du göra följande:
     
     Överväg att använda en standardetikett för att ange en grundnivå för skyddsinställningar som du vill använda för allt innehåll. Men utan användarutbildning och andra kontroller kan den här inställningen också leda till felaktiga etiketter. Det är oftast en dålig idé att välja en etikett som tillämpar kryptering som standardetikett för dokument. Många organisationer behöver till exempel skicka och dela dokument med externa användare som kanske inte har program som stöder krypteringen eller som kanske inte använder ett konto som kan auktoriseras. Mer information om det här scenariot finns i [Dela krypterade dokument med externa användare](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).
 
-- **Kräv en motivering för att ändra en etikett.** Om en användare försöker ta bort en etikett eller ersätta den med en etikett med ett lägre ordningsnummer kan du kräva att användaren anger en motivering för att utföra den här åtgärden. En användare öppnar till exempel ett dokument med etiketten Konfidentiellt (ordningsnummer 3) och ersätter etiketten med en som heter Offentligt (ordningsnummer 1). Administratörer kan läsa motiveringen tillsammans med etikettändringen i [aktivitetsutforskaren](data-classification-activity-explorer.md).
+- **Kräv en motivering för att ändra en etikett.** Om en användare försöker ta bort en etikett eller ersätta den med en etikett med ett lägre ordningsnummer kan du kräva att användaren anger en motivering för att utföra den här åtgärden. En användare öppnar till exempel ett dokument med etiketten Konfidentiellt (ordningsnummer 3) och ersätter etiketten med en som heter Offentligt (ordningsnummer 1). För Office-appar utlöses den här motiveringsfrågan en gång per appsession när du använder inbyggd etikettering, och per fil när du använder den enhetliga etiketteringsklienten för Azure Information Protection. Administratörer kan läsa motiveringen tillsammans med etikettändringen i [aktivitetsutforskaren](data-classification-activity-explorer.md).
 
     ![Uppmaning där användarna anger en motivering](../media/Sensitivity-label-justification-required.png)
 

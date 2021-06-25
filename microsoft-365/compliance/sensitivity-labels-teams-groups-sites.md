@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd känslighetsetiketter för att skydda innehåll i Sharepoint- och Microsoft Teams-webbplatser samt Microsoft 365-grupper.
-ms.openlocfilehash: 8c19853730376e36ffe7ac136e7fc6036b8b5f12
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 2ffc0350dd61a0064ce2e9891b18a6769a437d2e
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028985"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096762"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser
 
@@ -421,9 +421,7 @@ Det skulle inte vara ett säkerhetsproblem om dokumentet har en etikett med läg
 
 Om du vill söka i granskningsloggen efter den här händelsen ska du leta efter **Identifierade en felmatchning mellan dokumentens känsligheter** från kategorin **Fil- och sidaktiviteter**.
 
-Det e-postmeddelande som genereras automatiskt har ämnesraden **Inkompatibel känslighetsetikett har upptäckts** och i e-postmeddelandet förklaras etikettfelet med en länk till det uppladdade dokumentet och webbplatsen. Det innehåller även en länk till dokumentationen som förklarar hur användare kan ändra känslighetsetiketten. För närvarande kan inte dessa automatiska e-postmeddelanden inaktiveras eller anpassas.
-
-Om du vill förhindra att e-postmeddelandet genereras automatiskt använder du följande PowerShell-kommando från [Set-SPOSite-](/powershell/module/sharepoint-online/set-sposite):
+Det e-postmeddelande som genereras automatiskt har ämnesraden **Inkompatibel känslighetsetikett har upptäckts** och i e-postmeddelandet förklaras etikettfelet med en länk till det uppladdade dokumentet och webbplatsen. Det innehåller även en länk till dokumentationen som förklarar hur användare kan ändra känslighetsetiketten. Dessa automatiserade e-postmeddelanden kan inte anpassas, men du kan förhindra att de skickas när du använder följande PowerShell-kommando från [Set-SPOTenant-](/powershell/module/sharepoint-online/set-spotenant):
 
 ```PowerShell
 Set-SPOTenant -BlockSendLabelMismatchEmail $True
