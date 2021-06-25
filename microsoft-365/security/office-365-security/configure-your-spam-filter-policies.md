@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb3e378c13507e354cdd1d739214c1c2d9d6aa98
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: afcb82789168999f5f061ca0f86ad3c07b54846d
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950101"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108241"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
@@ -83,7 +83,7 @@ Om du vill öka effektiviteten för filtrering av skräppost kan du skapa anpass
 
 När du skapar en anpassad princip för skräppostskydd i Microsoft 365 Defender-portalen skapar du samtidigt regeln för skräppostfilter och den associerade principen för skräppostfilter med samma namn för båda två.
 
-1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** sidan \> **Principer** avdelning \> **Skräppostskydd**.
 
 2. På sidan **Principer för skräppostskydd** klickar du på ikonen ![Skapa](../../media/m365-cc-sc-create-icon.png) **Skapa princip** och väljer sedan **Inkommande** i listrutan.
 
@@ -242,7 +242,7 @@ När du skapar en anpassad princip för skräppostskydd i Microsoft 365 Defender
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>Använda Microsoft 365 Defender-portalen för att visa principer för skräppostskydd
 
-1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** sidan \> **Principer** avdelning \> **Skräppostskydd**.
 
 2. På sidan **Princip för skräppostskydd** letar du efter något av följande värden:
    - Värdet **Typ** är **Anpassad princip för skräppost**
@@ -259,7 +259,7 @@ När du skapar en anpassad princip för skräppostskydd i Microsoft 365 Defender
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Använda Microsoft 365 Defender-portalen för att modifiera principer för skräppostskydd
 
-1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** sidan \> **Principer** avdelning \> **Skräppostskydd**.
 
 2. På sidan **Principer för skräppostskydd** väljer du en princip för skräppostskydd i listan genom att klicka på namnet:
    - En anpassad princip som du har skapat där värdet i kolumnen **Typ** är **Anpassad princip för skräppostskydd**.
@@ -275,7 +275,7 @@ Läs mer i följande avsnitt om du vill aktivera eller inaktivera en princip, an
 
 Du kan inte inaktivera standardprincipen för skräppostskydd.
 
-1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** sidan \> **Principer** avdelning \> **Skräppostskydd**.
 
 2. På sidan **Princip för skräppostskydd** väljer du en princip med **Typvärde** för **Anpassad princip för skräppostskydd** i listan genom att klicka på namnet.
 
@@ -300,7 +300,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 - I Microsoft 365 Defender-portalen kan du bara ändra prioriteten för principen för skräppostskydd efter att du har skapat den. I PowerShell kan du åsidosätta standardprioriteten när du skapar regeln för skräppostfilter (vilket kan påverka prioriteringen för befintliga regler).
 - Anpassade principer för skräppostskydd visas i den ordning som de bearbetas (den första principen har värdet 0 för **Prioritet**). Standardprincipen för skräppostskydd har prioritetsvärdet **Lägsta** och du kan inte ändra det.
 
-1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** sidan \> **Principer** avdelning \> **Skräppostskydd**.
 
 2. På sidan **Principer för skräppostskydd** väljer du en princip med **Typvärde** för **Anpassad princip för skräppostskydd** i listan genom att klicka på namnet.
 
@@ -317,7 +317,7 @@ Om du vill ändra prioriteten för en princip klickar du på **Öka prioritet** 
 
 När ett utfall av skräppostfiltreringen sätter ett meddelande i karantän kan du konfigurera skräppostaviseringar för slutanvändare så att mottagare får veta vad som har hänt med meddelanden som skickats till dem. Mer information om aviseringarna finns i artikeln om [skräppostaviseringar för slutanvändare i EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** sidan \> **Principer** avdelning \> **Skräppostskydd**.
 
 2. På sidan **Principer för skräppostskydd** väljer du en princip för skräppostskydd i listan genom att klicka på namnet:
    - En anpassad princip som du har skapat där värdet i kolumnen **Typ** är **Anpassad princip för skräppostskydd**.
@@ -344,7 +344,7 @@ När ett utfall av skräppostfiltreringen sätter ett meddelande i karantän kan
 
 När du använder Microsoft 365 Defender-portalen för att ta bort en princip för anpassat skräppostskydd, tas både regeln för skräppostfilter och motsvarande princip för skräppostfilter bort. Du kan inte ta bort standardprincipen för skräppostskydd.
 
-1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** \> **Principer** avdelning \> **Skräppostskydd**.
+1. I Microsoft 365 Defender-portalen går du till **E-post och samarbete** \> **Principer och regler** \> **Principer för hot** sidan \> **Principer** avdelning \> **Skräppostskydd**.
 
 2. På sidan **Principer för skräppostskydd** väljer du en princip med **Typvärde** för **Anpassad princip för skräppostskydd** i listan genom att klicka på namnet. Längst upp i den utfällda menyn policyinformation som visas klickar du på ![ikonen Fler åtgärder](../../media/m365-cc-sc-more-actions-icon.png) **Fler åtgärder** \> ![ikonen Ta bort princip](../../media/m365-cc-sc-delete-icon.png) **Ta bort princip**.
 
