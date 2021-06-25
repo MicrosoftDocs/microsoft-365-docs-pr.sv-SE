@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig hur du administrerar synligheten för ämnen i Microsoft Viva-ämnen.
-ms.openlocfilehash: cd6a712687a63c3d131ee678c6c408f516c7b529
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 07679b2de668ba5e0c9fdf206310233ce7af84a4
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107679"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137757"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Hantera synlighet för ämnen i Microsoft Viva-ämnen
 
-Du kan hantera den uppsättning användare som kan se viktiga ämnen, ämneskort och ämnescentret i [Microsoft 365 administrationscentret.](https://admin.microsoft.com) Du måste vara global administratör SharePoint administratör för att utföra de här uppgifterna.
+Du kan hantera vem som kan se viktiga ämnen, ämneskort och ämnescentret i [Administrationscenter för Microsoft 365](https://admin.microsoft.com). Du måste vara global administratör eller administratör SharePoint grupper eller administratör för att utföra de här uppgifterna.
 
 ## <a name="to-access-topics-management-settings"></a>Så här kommer du åt inställningar för hantering av ämnen:
 
-1. I Microsoft 365 klickar du på **Inställningar** och sedan **på Organisationsinställningar.**
+1. I dialogrutan Administrationscenter för Microsoft 365 du på **Inställningar** och sedan **på Organisationsinställningar**.
 2. Klicka på **Ämnesupplevelser** på **fliken Tjänster.**
 
     ![Anslut att få kunskap](../media/admin-org-knowledge-options-completed.png) 

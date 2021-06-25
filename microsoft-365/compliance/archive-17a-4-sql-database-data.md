@@ -11,14 +11,13 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: noindex,nofollow
 description: Lär dig att konfigurera och använda en 17a-4-SQL DataParser-koppling för att importera och arkivera SQL data i Microsoft 365.
-ms.openlocfilehash: 17e7da9e064e6d149ebdca0436f9180c8d17ca41
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 51fd433ad072ba5afe0b314d7b61041728337240
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097202"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137673"
 ---
 # <a name="set-up-a-connector-to-archive-sql-data-preview"></a>Konfigurera en koppling för att arkivera SQL data (förhandsgranskning)
 

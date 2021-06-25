@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du importerar data från tredje part från plattformar för sociala medier, snabbmeddelandeplattformar och dokumentsamarbete till Microsoft 365 postlådor.
-ms.openlocfilehash: de4c3c6454809cc1b7f78c0e5790fcbe8b3887c0
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: c30be0888a2c92a23c4e5f323235eba671c5ab1d
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096174"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137730"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Arkivera data från tredje part i Microsoft 365
 
@@ -143,6 +143,7 @@ Innan du kan arkivera data från tredje part i Microsoft 365 måste du arbeta me
 |[Refinitiv Eikon Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[ServiceNow ](archive-17a-4-servicenow-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Slack ](archive-17a-4-slack-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[SQL](archive-17a-4-sql-database-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Så här ser det ut ](archive-17a-4-symphony-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Zooma ](archive-17a-4-zoom-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 ||||||||
@@ -201,13 +202,13 @@ Som tidigare nämnts är dataanslutningar från TeleMessage tillgängliga i moln
 |Datakoppling för TeleMessage  |GCC  |GCC Hög  |DoD  |
 |:---------|:---------|:---------|:---------|
 |Android-arkivering | Ja | Nej | Nej |
-|AT&T SMS/MMS Network Archiver | Ja | Nej | Nej |
-|Bell SMS/MMS Network Archiver | Ja | Nej | Nej |
-|Enterprise Number Archiver | Ja | Nej | Nej |
+|AT&T SMS/MMS-nätverksarkivering | Ja | Nej | Nej |
+|Bell SMS/MMS-nätverksarkivering | Ja | Nej | Nej |
+|Enterprise nummerarkivering | Ja | Nej | Nej |
 |O2 SMS och Voice Network Archiver | Ja         | Nej | Nej |
 |TELUS SMS Network Archiver | Ja | Nej | Nej |
-|Verizon SMS/MMS Network Archiver | Ja | Nej | Nej |
-|WhatsApp Archiver | Ja | Nej | Nej |
+|Verizon SMS/MMS nätverksarkivering | Ja | Nej | Nej |
+|WhatsApp-arkivering | Ja | Nej | Nej |
 |||||
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Arbeta med en Microsoft-partner för att arkivera data från tredje part

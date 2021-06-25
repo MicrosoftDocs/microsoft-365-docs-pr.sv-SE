@@ -13,19 +13,19 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Integrera Microsoft Teams klasser med Canvas
-ms.openlocfilehash: 1a16d6a4f5e0cfbb592c335163bb4e33fd3c1301
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 8e28cc8401dbf37d6e780b8f56dc300982abd0cc
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821934"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137685"
 ---
 # <a name="use-microsoft-teams-classes-with-canvas"></a>Använda Microsoft Teams-klasser med Canvas
 
 > [!IMPORTANT]
 > En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
 
-Microsoft Teams är en LTI-app (Learning Tools Interoperability) som hjälper lärare och elever att enkelt navigera mellan sina LMS (Learning Management System) och Teams. Användare kan komma åt sina klassteam som är kopplade till kursen direkt från LMS.
+Microsoft Teams är en LTI Learning-app (Tools Interoperability) som hjälper lärare och elever att enkelt navigera mellan sina LMS (Learning Management System) och Teams. Användare kan komma åt sina klassteam som är kopplade till kursen direkt från LMS.
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administratör
 
@@ -37,22 +37,22 @@ Innan du hanterar Microsoft Teams-integreringen i Instructure Canvas är det vik
 
 3. I administratörsnavigeringen väljer **Inställningar** och sedan **fliken** Integrationer. 
 
-4. Ange microsofts klientorganisationsnamn och inloggningsattribut. 
-
-   Attributet Login används för att associera Canvas-användaren med en Azure Active Directory användare. 
-
-5. Välj **Uppdatera Inställningar klar.**
-
-6. Om du vill godkänna åtkomst för Canvas **microsoft-Teams-Sync-for-Canvas Azure-app** väljer du **länken Bevilja åtkomst för klientorganisation.** Du omdirigeras till slutpunkten för administratörsmedgivande för Microsoft-identitetsplattformen.
-
-   ![behörigheter](media/permissions.png)
-
-7. Välj **Acceptera**.
- 
-8. Aktivera Microsoft Teams genom att aktivera växlingsknappen.
+4. Aktivera Microsoft Teams genom att aktivera växlingsknappen.
 
    ![teams-sync](media/teams-sync.png)
 
+5. Ange microsofts klientorganisationsnamn och inloggningsattribut. 
+
+   Attributet Login används för att associera Canvas-användaren med en Azure Active Directory användare. 
+
+6. Välj **Uppdatera Inställningar klar.**
+
+7. Om du vill godkänna åtkomst för Canvas **microsoft-Teams-Sync-for-Canvas Azure-app** väljer du **länken Bevilja åtkomst för klientorganisation.** Du omdirigeras till slutpunkten för administratörsmedgivande för Microsoft-identitetsplattformen.
+
+   ![behörigheter](media/permissions.png)
+
+8. Välj **Acceptera**.
+ 
 ## <a name="canvas-admin"></a>Canvas-administratör
 
 Konfigurera integreringen Microsoft Teams LTI 1.3.
