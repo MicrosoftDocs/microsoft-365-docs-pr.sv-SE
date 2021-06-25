@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Lär dig hur du hämtar en användningsrapport för Microsoft Microsoft 365 instrumentpanelen Rapporter i Microsoft 365 administrationscenter.
-ms.openlocfilehash: f655a3951dc58ddd5089c8034db64af3840ebf7d
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+description: Lär dig hur du hämtar en användningsrapport för Microsoft Microsoft 365 instrumentpanelen Rapporter i Administrationscenter för Microsoft 365.
+ms.openlocfilehash: f2d8d8347e7b71375958c56f6649fbb911155d46
+ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50606240"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53125426"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Rapporter i administrationscentret – Microsofts webbläsaranvändning
 
-På Microsoft 365 **Rapporter** visas en översikt över aktiviteter för alla produkter i organisationen. Där kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md). I Microsofts användningsrapport för webbläsare får du inblick i Internet Explorer, Microsoft Edge (äldre version) och ny Microsoft Edge användning. Användningsrapportering baseras på Microsoft 365 onlinetjänster som nås via en Microsoft-webbläsare.
+På Microsoft 365 **Rapporter** visas en översikt över aktiviteter för alla produkter i organisationen. Där kan du gå in på detaljnivå i rapporter för enskilda produkter för att få bättre insikter om aktiviteterna inom varje produkt. Ta en titt på [översiktsavsnittet för Rapporter](activity-reports.md). I Microsofts användningsrapport för webbläsare får du inblick i Internet Explorer, Microsoft Edge (äldre version) och ny Microsoft Edge användning. Användningsrapportering baseras på hur Microsoft 365 onlinetjänster som nås via en Microsoft-webbläsare.
 
  > [!NOTE]
  > Du måste vara global administratör, global läsare eller rapportläsare i Microsoft 365 eller Exchange, SharePoint eller Skype för företag-administratör för att kunna se rapporter.
@@ -36,6 +36,16 @@ På Microsoft 365 **Rapporter** visas en översikt över aktiviteter för alla p
 
 1. I administrationscentret går du till sidan **Rapporter** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Användning</a>. 
 2. På startsidan för instrumentpanelen klickar du på **knappen Visa mer** på Microsoft-kortet för webbläsaranvändning.
+
+## <a name="how-to-notify-users-to-upgrade-their-browser"></a>Så här meddelar du användarna att uppgradera sin webbläsare
+
+![Åtgärdsflöde för Microsoft-webbläsaranvändningsrapport](../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png)
+
+Globala administratörer kan registrera sig för att skicka meddelanden till användare som använder Microsoft 365-tjänster i Edge (stöds inte) och Internet Explorer (stöds snart inte). Det riktade meddelandet meddelar användarna att stöd för dessa webbläsare snart kommer att upphöra och länkar till en supportartikel med information om Microsoft Edge och enkla steg att följa för att byta webbläsare. 
+
+Du hittar den här funktionen på rapportsidan. När meddelandet har skapats meddelas användarna med angiven frekvens fram till den 17 augusti 2021. Du kan inaktivera den här funktionen när som helst om du inte vill skicka meddelanden till användarna. Om du vill börja skicka meddelanden igen aktiverar du funktionen igen.
+
+Mer information finns i Microsoft Edge [hjälp & utbildning](https://support.microsoft.com/microsoft-edge).
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Tolka Microsofts användningsrapport för webbläsare
 

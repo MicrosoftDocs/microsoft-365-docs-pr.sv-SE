@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8ad5ffe2b175a8f7a42b2fad353fcde13a60cfec
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
+ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730530"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53125404"
 ---
-# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Förhandsgranskningsfunktioner i Defender
+# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender förhandsgranskningsfunktioner
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,15 +37,15 @@ ms.locfileid: "52730530"
 **Gäller för:**
 - Microsoft 365 Defender
 
-Tjänsten Microsoft 365 Defender uppdateras hela tiden med nya funktionsförbättringar och funktioner.
+Vi Microsoft 365 Defender ständigt med nya funktionsförbättringar och nya funktioner.
 
-Lär dig mer om de nya funktionerna i Microsoft 365 Defender förhandsversion och bli bland de första att prova kommande funktioner genom att aktivera förhandsgranskningen.
+Lär dig mer om nya funktioner Microsoft 365 Defender förhandsversionen och bli bland de första som kan prova kommande funktioner genom att aktivera förhandsversionen.
 
-Mer information om nya funktioner som är allmänt tillgängliga finns i [Vad är nytt](whats-new.md)i Microsoft 365 Defender .
+Mer information om nya funktioner som är allmänt tillgängliga finns i [Vad är nytt i Microsoft 365 Defender](whats-new.md).
 
 ## <a name="required-permissions"></a>Behörighet som krävs
 
-Konton som tilldelats Azure Active Directory (Azure AD) roller kan aktivera Microsoft 365 Defender Preview-funktioner:
+Konton som tilldelats följande Azure Active Directory (Azure AD)-roller kan aktivera Microsoft 365 Defender förhandsgranskningsfunktioner:
 
 - Global administratör
 - Säkerhetsadministratör
@@ -68,8 +68,9 @@ Du vet att du har aktiverat förhandsgranskningsfunktionerna när kryssrutan **A
 
 Följande funktioner och förbättringar är för närvarande tillgängliga för förhandsgranskning:
 
-- **[Direktuppspelnings-API](../defender-endpoint/raw-data-export.md)** – Microsoft 365 Defender har stöd för direktuppspelning av alla händelser som är tillgängliga via Avancerad sökning till ett evenemangsnav och/eller Azure-lagringskonto.
-- **[Microsoft 365 Defender-API:er](api-overview.md)** – Defender-API:er på den översta nivån Microsoft 365 i Defender-API:er kan du automatisera arbetsflöden baserat på delade incidenter och avancerade tabeller för sökning. 
+- **[Visa rapporter per hottaggar](threat-analytics.md#view-reports-per-threat-tags)** – Hottaggar hjälper dig att fokusera på specifika hotkategorier och granska de mest relevanta rapporterna.
+- **[Api för direktuppspelning](../defender-endpoint/raw-data-export.md)** – Microsoft 365 Defender har stöd för att strömma alla händelser som är tillgängliga via Avancerad sökning till ett evenemangsnav och/eller Azure-lagringskonto.
+- **[Microsoft 365 Defender API:er](api-overview.md)** – API:erna på den Microsoft 365 Defender nivån kan du automatisera arbetsflöden baserat på delade tabeller för incidenter och avancerad sökning. 
 - **[Vidta åtgärder inom avancerad sökning](advanced-hunting-take-action.md)** – innehåller snabbt hot eller hantera komprometterade tillgångar som du hittar vid avancerad [sökning.](advanced-hunting-overview.md)
 - **[Schemareferens i portalen](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** – Få information om avancerade schematabeller för sökning direkt i säkerhetscentret. Förutom tabell- och kolumnbeskrivningar innehåller den här referensen händelsetyper `ActionType` (värden) och exempelfrågor som stöds.
 - **[Funktionen DeviceFromIP()](advanced-hunting-devicefromip-function.md)** – Få information om vilka enheter som har tilldelats en specifik IP-adress eller adresser vid ett visst tidsintervall.
