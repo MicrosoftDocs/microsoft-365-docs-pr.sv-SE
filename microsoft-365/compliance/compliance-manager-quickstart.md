@@ -2,8 +2,8 @@
 title: Snabbstartsguide för Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd snabbstartsguiden för Efterlevnadshanteraren för att hjälpa dig på vägen mot att förstå, komma igång och använda Efterlevnadshanteraren.
-ms.openlocfilehash: bb40fe0ace2f4b751e24d77f46dc1fc509eb42f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52161860"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149052"
 ---
 # <a name="compliance-manager-quickstart"></a>Snabbstart för Compliance Manager
 
@@ -31,7 +31,7 @@ Oavsett om du kommer till Efterlevnadshanteraren för första gången eller är 
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>Första besöket: lär känna Efterlevnadshanteraren
 
-Efterlevnadshanteraren finns i Microsoft 365 i https://compliance.microsoft.com . Organisationens globala administratör måste konfigurera [användarbehörigheter och tilldela roller innan](compliance-manager-setup.md#set-user-permissions-and-assign-roles) du börjar använda Efterlevnadshanteraren.
+Efterlevnadshanteraren finns i Microsoft 365 Efterlevnadscenter på https://compliance.microsoft.com . Organisationens globala administratör måste konfigurera [användarbehörigheter och tilldela roller innan](compliance-manager-setup.md#set-user-permissions-and-assign-roles) du börjar använda Efterlevnadshanteraren.
 
 Första gången du besöker Efterlevnadshanteraren ser du en efterlevnadspoäng för din organisation. Efterlevnadshanteraren utvärderar redan din aktuella Microsoft 365 mot dataskyddsbaslinjen. Det bästa sättet att börja bekanta dig med Efterlevnadshanteraren är att förstå vad det visar dig, dess huvudelement och hur du anpassar instrumentpanelen.
 
@@ -63,8 +63,8 @@ När du känner dig bekväm med att hantera utvärderingar i Efterlevnadshantera
 
 Du kan också ställa in automatiserad testning av alla eller en delmängd av förbättringsåtgärderna. Gå till länkarna nedan för att förstå mer avancerade funktioner i Efterlevnadshanteraren:
 
-- [Utöka en bedömning med Efterlevnadshanteraren genom att lägga till egna kontroller och förbättringsåtgärder](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [Skapa en egen anpassad bedömning](compliance-manager-assessments.md#create-your-own-custom-assessment)
+- [Utöka en mall för Efterlevnadshanteraren genom att lägga till egna kontroller och förbättringsåtgärder](compliance-manager-templates.md#extend-an-assessment-template)
+- [Skapa en egen anpassad mall](compliance-manager-templates.md#create-an-assessment-template)
 - [Ändra en befintlig mall för att lägga till eller ta bort kontroller och åtgärder](compliance-manager-templates.md#modify-a-template)
 - [Konfigurera automatisk testning av förbättringsåtgärder](compliance-manager-setup.md#set-up-automated-testing)
 - [Tilldela om förbättringsåtgärder till en annan användare](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

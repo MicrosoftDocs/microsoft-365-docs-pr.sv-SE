@@ -2,8 +2,8 @@
 title: Komma igång med Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ange användarbehörigheter och roller för Microsoft Compliance Manager och konfigurera automatisk testning av åtgärder. Hantera användarhistorik och filtrera instrumentpanelsvyn.
-ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7e29dd0eff7b05cb55a1fb0e071632353dadbdf8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "52162632"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148908"
 ---
 # <a name="get-started-with-compliance-manager"></a>Kom igång med Compliance Manager
 
@@ -38,7 +38,7 @@ Den Microsoft 365 globala administratören för organisationen är antagligen de
 
 ## <a name="sign-in"></a>Logga in
 
-1. Gå till [kom Microsoft 365 och](https://compliance.microsoft.com/) logga in med ditt **Microsoft 365** globala administratörskonto.
+1. Gå till [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/) och **logga in med** ditt Microsoft 365 globala administratörskonto.
 2. Välj **Efterlevnadshanteraren** i det vänstra navigeringsfönstret. Du kommer till instrumentpanelen [för Efterlevnadshanteraren.](#understand-the-compliance-manager-dashboard)
 
 Den direkta länken för att komma åt Efterlevnadshanteraren är [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) .
@@ -80,7 +80,7 @@ Om du inte har tillgång till säkerhets- och efterlevnadscentret för Office 36
 
 Information om hur du tilldelar roller och anger behörigheter i Azure AD finns i [Tilldela administratörsroller och icke-administratörsroller till användare med Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
-Användare med Azure AD-identiteter som inte har Office 365- eller Microsoft 365-prenumerationer kommer inte att kunna komma åt Efterlevnadshanteraren i Microsoft 365 efterlevnadscenter. Om du vill ha hjälp med att komma åt Efterlevnadshanteraren kontaktar [du cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
+Användare med Azure AD-identiteter som inte har Office 365 eller Microsoft 365-prenumerationer kommer inte att kunna komma åt Efterlevnadshanteraren i Microsoft 365 Efterlevnadscenter. Om du vill ha hjälp med att komma åt Efterlevnadshanteraren kontaktar [du cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
 ### <a name="role-types"></a>Rolltyper
 
@@ -97,7 +97,7 @@ I tabellen nedan visas de funktioner som tillåts av varje roll i Efterlevnadsha
 
 ## <a name="settings-for-automated-testing-and-user-history"></a>Inställningar för automatiserad testning och användarhistorik
 
-Med inställningarna för Efterlevnadshanteraren Microsoft 365 kompatibilitetscenter kan du aktivera och inaktivera automatisk testning av förbättringsåtgärder. Med inställningarna kan du också hantera data för användare som är associerade med förbättringsåtgärder, inklusive möjligheten att omtilldela förbättringsåtgärder till en annan användare.  Endast personer med en global administratör eller efterlevnadshanterarens administratörsroll kan komma åt inställningarna för Efterlevnadshanteraren.
+Med inställningarna för Efterlevnadshanteraren i Microsoft 365 Efterlevnadscenter kan du aktivera och inaktivera automatisk testning av förbättringsåtgärder. Med inställningarna kan du också hantera data för användare som är associerade med förbättringsåtgärder, inklusive möjligheten att omtilldela förbättringsåtgärder till en annan användare.  Endast personer med en global administratör eller efterlevnadshanterarens administratörsroll kan komma åt inställningarna för Efterlevnadshanteraren.
 
 > [!NOTE]
 > Funktionen för automatisk testning är inte tillgänglig för kunder GCC hög- och doD-miljöer eftersom Secure Score inte är tillgängligt i dessa miljöer. GCC Kunder med hög kvalitet och doD måste manuellt implementera och testa sina förbättringsåtgärder.
@@ -112,7 +112,7 @@ Den globala administratören för organisationen kan när som helst ändra inst�
 
 #### <a name="to-manage-your-automated-testing-settings"></a>Så här hanterar du dina automatiska testinställningar:
 
-1. Välj **Inställningar** i det vänstra navigeringsfältet var som helst i [Microsoft 365 kompatibilitetscenter.](https://compliance.microsoft.com/)
+1. Välj **Inställningar** i det vänstra navigeringsfältet var som helst i [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/).
 
 2. Välj Efterlevnadshanteraren på **inställningssidan.**
 
@@ -134,7 +134,7 @@ Med användarhistorikinställningarna kan du även omtilldela alla förbättring
 
 **Så här hittar du inställningarna för användarhistorik:**
 
-1. Välj Inställningar i det vänstra navigeringsfältet var som helst i [Microsoft 365 kompatibilitetscenter.](https://compliance.microsoft.com/)
+1. Välj Inställningar i det vänstra navigeringsfältet var som helst i [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/).
 
 2. Välj Efterlevnadshanteraren på **inställningssidan.**
 
@@ -152,7 +152,7 @@ Rapporten återspeglar förbättringsåtgärdens status från och med datumet d�
 
 **Följ anvisningarna nedan om du vill exportera en rapport efter användare:**
 
-1. Välj **Inställningar** i det vänstra navigeringsfältet var som helst i [Microsoft 365 kompatibilitetscenter.](https://compliance.microsoft.com/)
+1. Välj **Inställningar** i det vänstra navigeringsfältet var som helst i [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/).
 
 2. Välj Efterlevnadshanteraren på **inställningssidan.**
 
@@ -170,7 +170,7 @@ Du kan omtilldela förbättringsåtgärder från en användare till en annan. N�
 
 **Följ stegen nedan för att omtilldela förbättringsåtgärder till en annan användare:**
 
-1. Välj **Inställningar** i det vänstra navigeringsfältet var som helst i [Microsoft 365 kompatibilitetscenter.](https://compliance.microsoft.com/)
+1. Välj **Inställningar** i det vänstra navigeringsfältet var som helst i [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/).
 
 2. Välj Efterlevnadshanteraren på **inställningssidan.**
 
@@ -197,7 +197,7 @@ Om du tar bort en användares historik tas användaren bort som ägare av förb�
 
 Om du vill ta bort en användares historik följer du stegen nedan:
 
-1. Välj **Inställningar** i det vänstra navigeringsfältet var som helst i [Microsoft 365 kompatibilitetscenter.](https://compliance.microsoft.com/)
+1. Välj **Inställningar** i det vänstra navigeringsfältet var som helst i [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/).
 
 2. Välj Efterlevnadshanteraren på **inställningssidan.**
 
@@ -322,7 +322,7 @@ Du kan vidta åtgärder från den här skärmen på två sätt:
 
 På utvärderingssidan visas alla utvärderingar [som](compliance-manager-assessments.md) du har angett för organisationen. Nämnaren för ditt efterlevnadsresultat bestäms av alla dina spårade utvärderingar. När du lägger till fler utvärderingar visas fler förbättringsåtgärder på sidan förbättringsåtgärder, och nämnaren för efterlevnadsresultatet ökar.
 
-I **den aktiva mallräknaren** nästan längst upp på sidan visas antalet aktiva utvärderingsmallar som för närvarande används av det totala antalet tillgängliga mallar som organisationen kan använda. Mer information [finns](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) i Malltyp.
+I **den aktiva mallräknaren** nästan längst upp på sidan visas antalet aktiva utvärderingsmallar som för närvarande används av det totala antalet tillgängliga mallar som organisationen kan använda. Mer information [finns i Malltillgänglighet](compliance-manager-templates.md#template-availability-and-licensing) och licensiering.
 
 Utvärderingssidan sammanfattar viktig information om varje bedömning:
 
@@ -357,7 +357,7 @@ Som standard visas utvärderingen av [dataskyddsbaslinjen](compliance-manager-as
 
 En mall är ett ramverk för att skapa en bedömning i Efterlevnadshanteraren. På sidan utvärderingsmallar visas en lista med mallar och viktig information. Listan innehåller mallar som tillhandahålls av Efterlevnadshanteraren samt alla mallar som din organisation har ändrat eller skapat. Du kan använda filter för att hitta en mall baserat på certifiering, produktomfattning, land, bransch och vem som skapade den.
 
-I **den aktiva mallräknaren** nästan längst upp på sidan visas antalet aktiva utvärderingsmallar som för närvarande används av det totala antalet tillgängliga mallar som organisationen kan använda. Mer information [finns](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) i Malltyp.
+I **den aktiva mallräknaren** nästan längst upp på sidan visas antalet aktiva utvärderingsmallar som för närvarande används av det totala antalet tillgängliga mallar som organisationen kan använda. Mer information [finns i Malltillgänglighet](compliance-manager-templates.md#template-availability-and-licensing) och licensiering.
 
 Välj en mall på raden så att informationssidan visas, som innehåller en beskrivning av mallen och ytterligare information om certifiering, omfattning och kontroller. På den här sidan kan du välja lämpliga knappar för att skapa en utvärdering, exportera malldata till Excel eller ändra mallen.
 

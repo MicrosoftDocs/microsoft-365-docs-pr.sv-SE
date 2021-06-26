@@ -2,8 +2,8 @@
 title: Vad är nytt i Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Ta reda på vad som är nytt i Compliance Manger och vad som kommer. Läs om uppdaterade utvärderingar, nya utvärderingsmallar, nya åtgärder med mera.
-ms.openlocfilehash: fe5e8056bd771082436c3cd941cd6f4e602c11a9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52465472"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149028"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Vad är nytt i Microsoft Compliance Manager
 
@@ -48,4 +48,4 @@ Efterlevnadshanteraren är nu tillgänglig för kunder i amerikanska myndigheter
 
 ### <a name="active-and-inactive-templates"></a>Aktiva och inaktiva mallar
 
-Varje utvärderingssida och utvärderingsmallssida har en aktiverad mallräknare. Den här räknaren visar hur många kvalificerade mallar du använder i enlighet med ditt licensavtal. Visa [malltyper: inkluderade och premium, aktiva och inaktiva om du](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) vill veta mer.
+Varje utvärderingssida och utvärderingsmallssida har en aktiverad mallräknare. Den här räknaren visar hur många kvalificerade mallar du använder i enlighet med ditt licensavtal. Visa [malltillgänglighet och licensiering om](compliance-manager-templates.md#template-availability-and-licensing) du vill veta mer.

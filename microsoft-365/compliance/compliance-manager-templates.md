@@ -2,8 +2,8 @@
 title: Arbeta med utvärderingsmallar i Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,34 +14,34 @@ search.appverid:
 - MOE150
 - MET150
 description: Förstå hur du använder och hanterar mallar för att skapa bedömningar i Microsoft Compliance Manager. Skapa och ändra mallar med hjälp av en formaterad Excel fil.
-ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 2d20fa69345f2ff2624252972cb0e017e401f0dd
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "52162617"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149136"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Arbeta med utvärderingsmallar i Efterlevnadshanteraren
 
-**I den här artikeln:** Förstå **hur mallar fungerar** och hur du hanterar **dem** från sidan med utvärderingsmallar. Få instruktioner **för hur** du skapar nya **mallar,** ändrar befintliga mallar, formaterar dina **malldata med Excel** och exporterar **mallrapporter.**
+**I den här artikeln:** Förstå **hur mallar fungerar** och hur du hanterar **dem** från sidan med utvärderingsmallar. Få instruktioner för **hur** du  skapar **nya** mallar, utökar och ändrar befintliga mallar, formaterar dina malldata med **Excel** och exporterar **mallrapporter.**
 
 > [!IMPORTANT]
-> Vilka utvärderingsmallar som är tillgängliga för din organisation beror på ditt licensavtal. [Granska informationen](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> De utvärderingsmallar som är tillgängliga för din organisation beror på ditt licensavtal. [Granska informationen](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="templates-overview"></a>Översikt över mallar
 
-En mall är ett ramverk av kontroller för att skapa en utvärdering i Efterlevnadshanteraren. Vår omfattande uppsättning mallar kan hjälpa din organisation att uppfylla nationella, regionala och branschspecifika krav som styr insamling och användning av data. Vi hänvisar till mallar med samma namn som deras underliggande certifiering eller bestämmelser, till exempel EU GDPR-mallen och ISO 27001:2013-mallen.
+En mall är ett ramverk av kontroller för att skapa en utvärdering i Efterlevnadshanteraren. Vår omfattande uppsättning mallar kan hjälpa din organisation att uppfylla nationella, regionala och branschspecifika krav som styr insamling och användning av data. Vi hänvisar till mallar med samma namn som deras underliggande certifiering eller bestämmelser, till exempel EU GDPR-mallen och ISO/IEC 27701:2019-mallen.
 
- Visa en [fullständig lista över mallar](compliance-manager-templates-list.md).
-
-## <a name="template-types-included-and-premium-active-and-inactive"></a>Malltyper: ingår och premium, aktiva och inaktiva
-
-#### <a name="included-and-premium-templates"></a>Inkluderade och premiummallar
+## <a name="template-availability-and-licensing"></a>Malltillgänglighet och licensiering
 
 Vilka mallar som är tillgängliga för användning baseras på din organisations licensavtal[(visa licensinformation).](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) Det finns två kategorier av mallar: inkluderade och premium.
 
-1. **Mallar som** ingår är tillgängliga för användning som en del av din organisations licensavtal.
-2. **Premium mallar** måste köpas för att bedömningar ska kunna skapas av dem. När du har köpt kan du skapa så många utvärderingar från en mall som behövs. [Läs om hur du kan köpa premiummallar.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+#### <a name="included-and-premium-templates"></a>Inkluderade och premiummallar
+
+1. **Mallar som** ingår tilldelas genom din licens och täcker viktiga bestämmelser och krav.
+2. **Premium mallar** kan köpas för att utöka biblioteket och täcka specifika behov. När du har köpt kan du skapa så många utvärderingar från en mall som behövs. [Läs om hur du kan köpa premiummallar.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+
+Visa en [fullständig lista över mallar](compliance-manager-templates-list.md).
 
 #### <a name="active-and-inactive-templates"></a>Aktiva och inaktiva mallar
 
@@ -50,64 +50,40 @@ Mallar visar en aktiveringsstatus som antingen aktiv eller inaktiv:
 - En mall anses vara **aktiv** när du har skapat en bedömning från den mallen.
 - En mall anses **vara inaktiv** om din organisation inte använder den för en utvärdering.
 
-När du köper en premiummall och skapar en bedömning utifrån den, är den mallen aktiv i ett år. Köpet förnyas automatiskt om du inte avbryter förnyelsen.
+När du köper en premiummall och skapar en bedömning utifrån den, är den mallen aktiv i ett år. Ditt köp förnyas automatiskt om du inte avbryter.
 
-**Räknare för aktiverade mallar**
+Du kan även prova premiummallar under en provperiod. Utvärderingslicenser gäller i upp till 25 mallar i 30 dagar. När utvärderingsversionen börjar ska mallarna bli tillgängliga i klientorganisationen inom 48 timmar. Försök kan aktiveras via Administrationscenter för Microsoft 365.
 
-Sidan för utvärderings- och utvärderingsmallar **har en aktiverad mallräknare** längst upp. På räknaren visas antalet mallar som används av det antal som kan användas i enlighet med ditt licensavtal.
+#### <a name="activated-templates-counter"></a>Räknare för aktiverade mallar
+
+Sidan för utvärderings- och utvärderingsmallar **har en aktiverad mallräknare** längst upp. På räknaren visas antalet mallar som används av det antal som du är berättigad att använda i enlighet med ditt licensavtal. Mallanvändning räknas på certifieringsnivån.
 
 Om räknaren till exempel visar 2/5 betyder det att din organisation har aktiverat 2 mallar av de 5 som är tillgängliga för användning.
 
 Om räknaren visar 5/2 betyder det att organisationen överskrider sina gränser och behöver köpa 3 av de premiummallar som används.
 
-Mer information [finns i Licensieringsvägledning](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) för Efterlevnadshanteraren.
+Mer information finns i [Licensvägledning för Efterlevnadshanteraren.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
-## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>Visa och hantera mallar från sidan utvärderingsmallar
+## <a name="view-and-manage-templates"></a>Visa och hantera mallar
 
-På sidan utvärderingsmallar i Efterlevnadshanteraren visas en lista med mallar och viktig information. Listan innehåller mallar som tillhandahålls av Efterlevnadshanteraren samt alla mallar som din organisation har ändrat eller skapat. Du kan använda filter för att hitta en mall baserat på certifiering, produktomfattning, land, bransch, vem som skapade den och om mallen har aktiverats för utvärdering.
+På sidan utvärderingsmallar i Efterlevnadshanteraren visas en lista med mallar och viktig information om dem. Listan innehåller mallar som tillhandahålls av Efterlevnadshanteraren samt alla mallar som din organisation har ändrat eller skapat. Du kan använda filter för att hitta en mall baserat på certifiering, produktomfattning, land, bransch, vem som skapade den och om mallen har aktiverats för utvärdering.
 
 Välj en mall på raden så att informationssidan visas. Den här sidan innehåller en beskrivning av mallen och ytterligare information om certifiering, omfattning och kontroller. På den här sidan kan du välja lämpliga knappar för att skapa en utvärdering, exportera malldata till Excel eller ändra mallen.
 
-## <a name="creating-and-modifying-templates-overview"></a>Översikt över hur du skapar och ändrar mallar
+## <a name="format-template-data-with-excel"></a>Formatera malldata med Excel
 
-Om du vill ändra en befintlig mall eller skapa en egen, ny mall använder du ett specialformaterat Excel-kalkylblad[(ladda](https://go.microsoft.com/fwlink/?linkid=2124865)ned ett exempel) för att sammanställa nödvändiga kontrolldata. När du har slutfört kalkylbladet importerar du det till Efterlevnadshanteraren när du skapar eller ändrar en mall.
-
-> [!NOTE]
-> Kalkylbladet har ett specifikt format och schema som måste användas, eller också importeras det inte på rätt sätt till Efterlevnadshanteraren. [Formateringsanvisningarna](#formatting-your-template-data-with-excel) finns nedan.
-
-**Roller som krävs**
-
-Endast användare med rollen Global administratör eller Efterlevnadshanteraren kan skapa och ändra mallar. Läs mer om [roller och behörigheter.](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
-
-## <a name="create-a-new-template"></a>Skapa en ny mall
-
-Följ stegen nedan om du vill skapa en egen ny mall (används för att skapa anpassade utvärderingar).
-
-1. Gå till sidan **för utvärderingsmallar** i Efterlevnadshanteraren.
-2. Välj **Skapa ny mall**. En guide för att skapa mallar öppnas.
-3. Välj den typ av mall du vill skapa. I det här fallet väljer **du Skapa en anpassad mall** och sedan **Nästa.**
-4. På skärmen **Upload väljer** du  Bläddra för att hitta och ladda upp den formaterade Excel-filen med alla obligatoriska malldata (se anvisningar för korrekt formatering [av filen](#formatting-your-template-data-with-excel)).
-5. Om det inte är problem med filen visas namnet på den fil som har laddats upp. Gå vidare genom att klicka på **Nästa.** (Om du behöver ändra filen väljer du Upload **annan fil**).
-    - Om det finns ett fel med filen förklarar ett felmeddelande högst upp vad som är fel. Du måste åtgärda filen och ladda upp den igen. Fel uppstår om kalkylbladet är felaktigt formaterat eller om det finns ogiltig information i vissa fält (läs mer om [formateringsanvisningarna](#formatting-your-template-data-with-excel)).  
-    
-6. På **skärmen Granska och** slutför visas antalet förbättringsåtgärder och -kontroller och mallens högsta poäng. När du är redo att godkänna väljer **du Skapa mall.** (Om du behöver göra ändringar väljer du **Tillbaka**.)
-7. På den sista skärmen bekräftar du att en ny mall har skapats. Välj **Klar** för att avsluta guiden.
-8. Du kommer till den nya mallens informationssida, där du kan [skapa din utvärdering.](compliance-manager-assessments.md#create-your-own-custom-assessment)
-
-## <a name="formatting-your-template-data-with-excel"></a>Formatera dina malldata med Excel
-
-Kalkylbladet Excel som används för att skapa mallar innehåller fyra flikar, av vilka tre krävs:
+Det Excel (ladda ned ett[exempel)](https://go.microsoft.com/fwlink/?linkid=2124865)som används för att skapa eller ändra mallar har ett specifikt format och schema som måste användas för att importeras korrekt till Efterlevnadshanteraren. Den innehåller fyra flikar, av vilka tre är obligatoriska:
 
 1. [Mall](#template-tab) (obligatoriskt)
 2. [ControlFamily](#controlfamily-tab) (obligatoriskt)
 3. [Åtgärder](#actions-tab) (obligatoriskt)
 4. [Dimensioner](#dimensions-tab) (valfritt)
 
-När du fyller i ett kalkylblad med malldata måste kalkylbladet ha flikarna i den ordning som anges  **ovan,** annars importeras inte dina data till en mall.
+När du fyller i ett kalkylblad med malldata måste kalkylbladet ha flikarna i den ordning som anges **ovan,** annars importeras inte dina data till en mall.
 
 ##### <a name="template-tab"></a>Fliken Mall
 
-Fliken **Mall** är obligatorisk. Informationen på den här fliken ger metadata om mallen. Det finns fyra obligatoriska kolumner. Kolumnerna måste behålla ordningen på det Excel bladet som anges nedan. Du kan lägga till en egen **kolumn efter** de fyra kolumnerna för att ge dina egna mått. Om du gör det måste du se till att lägga till dem **på fliken Mått** med hjälp av [instruktionerna nedan.](#dimensions-tab)
+Fliken **Mall** är obligatorisk. Informationen på den här fliken ger metadata om mallen. Det finns fyra obligatoriska kolumner. Kolumnerna måste behålla ordningen på det Excel bladet som anges nedan. Du kan lägga till en egen **kolumn efter** de fyra kolumnerna för att ge dina egna mått. Om du gör det måste du lägga till dem på **fliken** Mått.
 
 - **rubrik**: Det här är rubriken för mallen, som måste vara unik. Det kan inte dela ett namn med en annan mall som du har i Efterlevnadshanteraren, inklusive dina egna mallar eller en mall för Efterlevnadshanteraren.
 
@@ -142,10 +118,10 @@ Fliken **Åtgärder** är obligatorisk.  Den utser förbättringsåtgärder som 
 
 - **implementationType**: I det här obligatoriska fältet anger du en av de tre implementeringstyperna nedan:
     - **Drift** – åtgärder som implementeras av personer och processer för att skydda sekretess, integritet och tillgänglighet för organisationssystem, tillgångar, data och personal (till exempel: säkerhetsmedvetenhet och utbildning)
-    - **Teknik** – åtgärder som slutförs med hjälp av teknik och mekanismer som ingår i maskinvaran, programvaran eller de inbyggda komponenterna i informationssystemet för att skydda sekretess, integritet och tillgänglighet för organisationssystem och data (exempel: multifaktorautentisering)
+    - **Teknik** – åtgärder som slutförs med hjälp av teknik och mekanismer som ingår i maskinvaran, programvaran eller komponenterna i den inbyggda programvaran i informationssystemet för att skydda konfidentialitet, integritet och tillgänglighet för organisationssystem och data (exempel: multifaktorautentisering)
     - **Dokumentation** – åtgärder som implementeras genom dokumenterade principer och metoder för att upprätta och definiera de kontroller som krävs för att skydda sekretess, integritet och tillgänglighet för organisationssystem, tillgångar, data och personal (exempel: en informationssäkerhetspolicy)
 
-- **actionScore**: Ange ett numeriskt poängvärde för åtgärden i det här fältet. Det måste vara ett helt nummer mellan 1 och 99. får inte vara 0, null eller tomt. Ju högre värde, desto större värde kan du få för att förbättra din efterlevnad. I bilden nedan visas hur Efterlevnadshanterarens resultat styr:
+- **actionScore**: Ange ett numeriskt poängvärde för åtgärden i det här fältet. Värdet måste vara ett helt tal mellan 1 och 99. får inte vara 0, null eller tomt. Ju högre värde, desto större värde kan du få för att förbättra din efterlevnad. I bilden nedan visas hur Efterlevnadshanterarens resultat styr:
 
 ![Efterlevnadshanteraren styr punktvärden](../media/compliance-score-action-scoring.png "Efterlevnadshanteraren styr punktvärden")
 
@@ -162,38 +138,75 @@ Fliken **Mått** är valfri. Men om du refererar till en dimension någon annans
 - **dimensionKey**: lista som "produkt", "certifieringar", "åtgärdssyfte"
 - **dimensionValue**: exempel: Office 365, HIPPA, Preventative,Aktivering
 
-Du kan visa dina befintliga mått genom att gå **till Hantering av klientorganisation** och välja **fliken** Mått. När du exporterar en befintlig mall kommer det exporterade kalkylbladet också att ha fliken **Mått,** som innehåller alla dimensioner som används i mallen.
+När du exporterar en befintlig mall har det exporterade kalkylbladet fliken **Mått,** som innehåller alla dimensioner som används i mallen.
+
+## <a name="create-an-assessment-template"></a>Skapa en utvärderingsmall
+
+Om du vill skapa en egen mall för anpassade utvärderingar använder du det specialformaterade Excel-kalkylbladet för att sammanställa nödvändiga kontrolldata. När du har slutfört kalkylbladet importerar du det till Efterlevnadshanteraren.
+
+#### <a name="required-roles"></a>Roller som krävs
+
+Endast användare med rollen Global administratör eller Efterlevnadshanteraren kan skapa och ändra mallar. Läs mer om [roller och behörigheter.](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
+
+### <a name="create-new-template-in-compliance-manager"></a>Skapa ny mall i Efterlevnadshanteraren
+
+1. Gå till sidan **för utvärderingsmallar** i Efterlevnadshanteraren.
+2. Välj **Skapa ny mall**. En guide för att skapa mallar öppnas.
+3. Välj den typ av mall du vill skapa. I det här fallet väljer **du Skapa en anpassad mall** och sedan **Nästa.**
+4. På skärmen **Upload väljer** du  Bläddra för att hitta och ladda upp den formaterade Excel filen med alla obligatoriska malldata.
+5. Om det inte är problem med filen visas namnet på den fil som har laddats upp. Gå vidare genom att klicka på **Nästa.** (Om du behöver ändra filen väljer du Upload **annan fil**).
+    - Om det finns ett fel med filen förklarar ett felmeddelande högst upp vad som är fel. Du måste åtgärda filen och ladda upp den igen. Fel uppstår om kalkylbladet är felaktigt formaterat eller om det finns ogiltig information i vissa fält.
+6. På **skärmen Granska och** slutför visas antalet förbättringsåtgärder och -kontroller och mallens högsta poäng. När du är redo att godkänna väljer **du Skapa mall.** (Om du behöver göra ändringar väljer du **Tillbaka**.)
+7. På den sista skärmen bekräftar du att en ny mall har skapats. Välj **Klar** för att avsluta guiden.
+8. Du kommer till den nya mallens informationssida, där du kan [skapa din utvärdering.](compliance-manager-assessments.md#create-assessments)
+
+## <a name="extend-an-assessment-template"></a>Utöka en utvärderingsmall
+
+Efterlevnadshanteraren ger dig möjlighet att lägga till egna kontroller och förbättringsåtgärder i en befintlig Microsoft-mall. Den här processen kallas för att utöka en Microsoft-mall. När du utökar en mall kan den fortfarande få uppdateringar som släppts av Microsoft, vilket kan hända när det finns ändringar i den relaterade lagstiftningen eller produkten (se Acceptera [uppdateringar av utvärderingar](compliance-manager-assessments.md#accept-updates-to-assessments)).
+
+För att förbereda behöver du sätta ihop ett specialformaterat Excel för att importera nödvändiga malldata. Filen Excel samma format som beskrivs ovan, men det finns särskilda krav för tillägg. Se följande ytterligare punkter för att förhindra fel:
+
+- Kalkylbladet ska bara innehålla de åtgärder och kontroller som du vill lägga till i utvärderingen.
+- Kalkylbladet kan inte innehålla någon av de kontroller eller åtgärder som redan finns i utvärderingen som du vill ändra.
+- Överväg att inkludera "anknytning" i mallens titel, till exempel tillägget "GDPR – [ditt företagsnamn]." Det gör det enklare att i  listan på sidan för utvärderingsmallar identifiera sig som skild från standardmallen från Microsoft eller en anpassad mall med ett liknande namn.
+
+När du har formaterat kalkylbladet följer du stegen nedan.
+
+1. Gå till sidan **Utvärderingsmallar** och välj **Skapa ny mall**. En guide för att skapa mallar öppnas.
+
+2. Välj den typ av mall du vill skapa. I det här fallet väljer **du Utöka en Microsoft-mall** och **sedan Välj Microsoft-mall**.
+
+3. Ett utfällningsfönster för mallval visas till höger på skärmen med en lista över alla mallar och deras status som aktiv eller inaktiv. Räknare **för aktiverade** mallar visar hur många mallar som för närvarande används av det totala antal som är tillgängliga att använda. Om du är över gränsen visas ett meddelande i meddelandefältet.
+
+4. Ett utfällningsfönster för mallval visas till höger på skärmen. Använd **Sök** för att använda filter för att hitta den mall du vill använda
+
+5. När du har hittat mallen väljer du alternativknappen till vänster om dess namn och väljer **sedan Spara**.
+
+6. På nästa skärm visas den mall du har valt. Om det är korrekt väljer du **Nästa.** (Om det är felaktigt väljer **du Välj en annan mall** för att välja igen.)
+
+7. På skärmen **Upload väljer** du  Bläddra för att hitta och ladda upp den formaterade Excel filen med alla obligatoriska malldata.
+
+8. Om det inte är problem med filen visas namnet på den fil som laddats upp på nästa skärm. Välj **Nästa** för att fortsätta (om du behöver ändra filen väljer du Ändra **Upload annan fil**).
+
+    - Om det är problem med filen visas ett felmeddelande högst upp som förklarar vad som är fel. Du måste åtgärda och ladda upp filen på ny tid. Fel uppstår om kalkylbladet är felaktigt formaterat eller om det finns ogiltig information i vissa fält.
+
+9. På **skärmen Granska och** slutför visas antalet förbättringsåtgärder och -kontroller och mallens högsta poäng. Välj Nästa när du är redo att **godkänna.** (Om du behöver göra ändringar väljer du **Upload en annan fil**.)
+
+10. På den sista skärmen bekräftar du att en ny mall har skapats. Välj **Klar** för att avsluta guiden.
+
+11. Du kommer till den nya mallens informationssida. Härifrån kan du skapa din utvärdering genom att välja **Skapa bedömning.** Vägledning finns i [Skapa och hantera utvärderingar.](compliance-manager-assessments.md#create-assessments)
 
 ## <a name="modify-a-template"></a>Ändra en mall
 
 Du kanske vill ändra en mall som du redan har skapat, till exempel lägga till kontroller eller lägga till eller ta bort förbättringsåtgärder. Processen liknar processen för att skapa mallar på så sätt att du laddar upp formaterade Excel filen med dina malldata.
 
-Det finns dock viss information att vara medveten om när du formaterar filen med ändringar av befintliga malldata. **Vi rekommenderar att du granskar de här instruktionerna noggrant så att du inte skriver över befintliga data som du vill behålla.**
+Det finns dock information som du bör känna till när du formaterar filen med ändringar av befintliga malldata. **Vi rekommenderar att du granskar de här instruktionerna noggrant så att du inte skriver över befintliga data som du vill behålla.**
 
-### <a name="template-modification-process-steps"></a>Steg för malländringsprocess
+### <a name="format-your-excel-file-to-modify-an-existing-template"></a>Formatera Excel för att ändra en befintlig mall
 
-Följ stegen nedan om du vill ändra en mall:
+Välj den **mall du** vill ändra på sidan med utvärderingsmallar, så visas   dess informationssida. Välj sedan **Exportera till Excel**. En Excel fil med alla dina malldata laddas ned. Spara filen lokalt.
 
-1. Välj den **mall du** vill ändra på sidan med utvärderingsmallar, så visas dess informationssida.
-2. Välj **Exportera till Excel**. En Excel fil med alla dina malldata laddas ned. Spara filen lokalt.
-3. Gör dina malländringar genom [att ändra Excel filen enligt anvisningarna nedan.](#formatting-your-excel-file-to-modify-a-template)
-4. När du är klar med ändringarna i Excel sparar du filen.
-5. Välj Ändra mall på mallens **informationssida för att** påbörja ändringsguiden. 
-6. På skärmen **Upload väljer** du Bläddra för **att hitta** och ladda upp Excel filen.
-7. Om det inte är problem med filen visas namnet på den fil som laddats upp på nästa skärm. Välj **Nästa** för att fortsätta (om du behöver ändra filen väljer du Ändra **Upload annan fil**).
-    - Om det är problem med filen visas ett felmeddelande högst upp som förklarar vad som är fel. Du måste åtgärda filen och ladda upp den igen. Fel uppstår om kalkylbladet är felaktigt formaterat eller om det finns ogiltig information i vissa fält.
-
-8. På **skärmen Granska och** slutför visas antalet förbättringsåtgärder och -kontroller och mallens högsta poäng. Välj Nästa när du är redo att **godkänna.**
-9. På den sista skärmen bekräftar du att mallen har ändrats. Välj **Klar** för att avsluta guiden.
-
-Mallen innehåller nu de ändringar du har gjort. Alla utvärderingar som använder den här ändrade mallen visar nu väntande uppdateringar och du måste acceptera uppdateringarna av utvärderingarna för att återspegla ändringarna som gjorts i mallen. Läs mer om [uppdateringar av utvärderingar.](compliance-manager-assessments.md#accepting-updates-to-assessments)
-
-> [!NOTE]
-> Om du använder Compliance Manager på ett annat språk än engelska kommer du att märka att en del text visas på engelska när du exporterar en mall till Excel. Rubrikerna för åtgärder (både dina förbättringsåtgärder och Microsoft-åtgärder) måste vara på engelska för att kunna identifieras av kontroller. Om du ändrar en åtgärdstitel ska du skriva den på engelska så att filimporterna blir rätt.
-
-### <a name="formatting-your-excel-file-to-modify-a-template"></a>Formatera en Excel för att ändra en mall
-
-Gå till ett avsnitt nedan för att snabbt hitta de instruktioner du behöver:
+Om du vill arbeta med den här filen går du till ett avsnitt nedan för att snabbt hitta de instruktioner du behöver:
 
 - [Redigera huvudmallens attribut](#edit-the-main-template-attributes)
 - [Lägga till en förbättringsåtgärd](#add-an-improvement-action)
@@ -254,9 +267,26 @@ Om du vill ta bort en kontroll ändrar du kalkylbladet genom att följa stegen n
 
 När du importerar kalkylbladet till mallen igen tas kontrollen bort från mallen.
 
+### <a name="modify-template-info-in-compliance-manager"></a>Ändra mallinformation i Efterlevnadshanteraren
+
+Följ de Excel när filen har slutförts och sparats.
+
+1. Öppna utvärderingsmallssidan igen och välj mallen. Välj Ändra mall på mallens **informationssida för att** påbörja ändringsguiden.
+2. På skärmen **Upload väljer** du Bläddra för **att hitta** och ladda upp Excel filen.
+3. Om det inte är problem med filen visas namnet på den fil som laddats upp på nästa skärm. Välj **Nästa** för att fortsätta (om du behöver ändra filen väljer du Ändra **Upload annan fil**).
+    - Om det är problem med filen visas ett felmeddelande högst upp som förklarar vad som är fel. Du måste åtgärda filen och ladda upp den igen. Fel uppstår om kalkylbladet är felaktigt formaterat eller om det finns ogiltig information i vissa fält.
+
+4. På **skärmen Granska och** slutför visas antalet förbättringsåtgärder och -kontroller och mallens högsta poäng. Välj Nästa när du är redo att **godkänna.**
+5. På den sista skärmen bekräftar du att mallen har ändrats. Välj **Klar** för att avsluta guiden.
+
+Mallen innehåller nu de ändringar du har gjort. Alla utvärderingar som använder den här ändrade mallen visar nu väntande uppdateringar och du måste acceptera uppdateringarna av utvärderingarna för att återspegla ändringarna som gjorts i mallen. Läs mer om [uppdateringar av utvärderingar.](compliance-manager-assessments.md#accept-updates-to-assessments)
+
+> [!NOTE]
+> Om du använder Compliance Manager på ett annat språk än engelska kommer du att märka att en del text visas på engelska när du exporterar en mall till Excel. Rubrikerna för åtgärder (både dina förbättringsåtgärder och Microsoft-åtgärder) måste vara på engelska för att kunna identifieras av kontroller. Om du ändrar en åtgärdstitel ska du skriva den på engelska så att filimporterna blir rätt.
+
 ## <a name="export-a-template"></a>Exportera en mall
 
-Du kan Excel en fil som innehåller alla data i en mall. Du måste exportera en mall för att kunna ändra mallen, eftersom det här är den Excel redigerar och laddar upp i [ändringsprocessen.](#modify-a-template)
+Du kan Excel en fil som innehåller alla data i en mall. Du måste exportera en mall för att kunna ändra den eftersom det här är den Excel redigerar och laddar upp i [ändringsprocessen.](#modify-a-template)
 
 Om du vill exportera mallen går du till sidan med mallinformation och väljer **knappen Exportera Excel** mall.
 

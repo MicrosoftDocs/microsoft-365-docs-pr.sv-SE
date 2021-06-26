@@ -2,8 +2,8 @@
 title: Microsoft Compliance Configuration Analyzer för Efterlevnadshanteraren
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Förstå hur du använder Microsoft Compliance Configuration Analyzer för att snabbt komma igång med Microsoft Compliance Manager.
-ms.openlocfilehash: 5d74d9980daf7f6ff7f013578cb11be83d18948e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 36f11597eac1837e3e18885f3c0a5d8dbc89a774
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244642"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148968"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Microsoft Compliance Configuration Analyzer för Efterlevnadshanteraren (förhandsversion)
 
@@ -153,7 +153,7 @@ Markera en ruta för att visa förbättringar och rekommendationer.
 
 **Objekt med förbättringsstatus**
 
-Välj listrutan bredvid etiketten **Förbättring** till höger om förbättringsåtgärden. Du ser en snabbsammanfattning och information om dina aktuella inställningar och rekommenderade förbättringsåtgärder. Sammanfattningen innehåller direktlänkar till Efterlevnadshanteraren, den tillämpliga lösningen i Microsoft 365 kompatibilitetscenter och relevant dokumentation.
+Välj listrutan bredvid etiketten **Förbättring** till höger om förbättringsåtgärden. Du ser en snabbsammanfattning och information om dina aktuella inställningar och rekommenderade förbättringsåtgärder. Sammanfattningen innehåller direktlänkar till Efterlevnadshanteraren, den tillämpliga lösningen i Microsoft 365 Efterlevnadscenter och relevant dokumentation.
 
 Om du klickar på länken Efterlevnadshanteraren visas en filtrerad vy över alla förbättringsåtgärder i lösningen som du ännu inte har implementerat. Därifrån kan du se antalet punkter du kan uppnå för att öka ditt efterlevnadsresultat [,](compliance-score-calculation.md)och de utvärderingar som de gäller för, samt tillämpliga bestämmelser och certifieringar.
 

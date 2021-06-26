@@ -2,8 +2,8 @@
 title: Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager hjälper organisationer att förenkla och automatisera riskutvärderingar och föreslår rekommenderade åtgärder för att hantera risker.
-ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc1919f63716dfa79274a5cf7016ef07f2f36f92
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244401"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148956"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft Compliance Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "52244401"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Vad är nytt: GA-versionen av Efterlevnadshanteraren
 
-Efterlevnadshanteraren är nu allmänt tillgänglig (GA) som en punkt till punkt-lösning för efterlevnadshantering i [Microsoft 365 för efterlevnadscenter.](microsoft-365-compliance-center.md) Med den här versionen slutförs övergången från den tidigare platsen i Microsoft Service Trust Portal. Efterlevnadshanteraren är även tillgänglig för kunder i amerikanska government community (GCC) måttliga, GCC hög och doD-kunder (Department of Defense).
+Efterlevnadshanteraren är nu allmänt tillgänglig (GA) som en punkt till punkt-lösning för efterlevnadshantering i [Microsoft 365 Efterlevnadscenter.](microsoft-365-compliance-center.md) Med den här versionen slutförs övergången från den tidigare platsen i Microsoft Service Trust Portal. Efterlevnadshanteraren är även tillgänglig för kunder i amerikanska government community (GCC) måttliga, GCC hög och doD-kunder (Department of Defense).
 
 Det som började som den offentliga förhandsversionen av Efterlevnadsresultat har utvecklats till ett centralt verktyg med förbättrade funktioner för efterlevnadshantering och enklare användning.  Med GA-versionen får du en större samling färdiga bedömningar som hjälper dig att anpassa dina efterlevnadsaktiviteter.
 
@@ -45,7 +45,7 @@ Titta på videon nedan för att lära dig hur Efterlevnadshanteraren kan förenk
 
 ## <a name="what-is-compliance-manager"></a>Vad är Efterlevnadshanteraren
 
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) är en funktion i [Microsoft 365 efterlevnadscenter](microsoft-365-compliance-center.md) som hjälper dig att hantera organisationens efterlevnadskrav enklare och enklare. Efterlevnadshanteraren kan hjälpa dig under hela resan, från att inventera dina dataskyddsrisker till att hantera komplexiteten i implementeringen av kontroller, hålla dig aktuell med bestämmelser och certifieringar och rapportera till granskare.
+[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) är en funktion i [Microsoft 365 Efterlevnadscenter](microsoft-365-compliance-center.md) som hjälper dig att hantera organisationens efterlevnadskrav enklare och enklare. Efterlevnadshanteraren kan hjälpa dig under hela resan, från att inventera dina dataskyddsrisker till att hantera komplexiteten i implementeringen av kontroller, hålla dig aktuell med bestämmelser och certifieringar och rapportera till granskare.
 
 Efterlevnadshanteraren hjälper till att förenkla efterlevnad och minska risken genom att tillhandahålla:
 

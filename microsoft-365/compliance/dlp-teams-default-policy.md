@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Läs mer om standardprincipen för skydd mot dataförlust i Microsoft Teams
-ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c6b7413fdd4017fe1211e804c00a2e9c0684468d
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52163000"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149124"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Läs mer om standardprincipen för dataförlustskydd i Microsoft Teams (förhandsversion)
 
-[Funktioner för skydd mot](dlp-learn-about-dlp.md) dataförlust har utökats så att de omfattar Microsoft Teams och kanalmeddelanden, inklusive meddelanden i privata kanaler. Som en del av den här versionen skapade vi en standard-DLP-princip för första gången kunder till efterlevnadscenter.
+[Funktioner för skydd mot](dlp-learn-about-dlp.md) dataförlust har utökats så att de omfattar Microsoft Teams och kanalmeddelanden, inklusive meddelanden i privata kanaler. Som en del av den här versionen skapade vi en standard-DLP-princip för Microsoft Teams för första gången kunder till efterlevnadscenter.
 
 ## <a name="applies-to"></a>Gäller för
 
@@ -41,7 +41,7 @@ Alla klientorganisationar som är licensierade med en eller flera av licenserna 
 
 ## <a name="what-does-the-default-policy-do"></a>Vad innebär standardprincipen?
 
-Med standardprincipen för DLP spårar du alla kreditkortsnummer som delas internt och externt i organisationen. Den här principen är som standardinställning för alla användare av klientorganisationen. Inga principtips skapas för slutanvändarna, men en aviseringshändelse skapas och ett meddelande med låg allvarlighetsgrad utlöses för administratören (som läggs till i principen). Administratören kan visa aktiviteterna och redigera policyinformationen genom att logga in på efterlevnadscentret.
+Standardprincipen för DLP för Teams spårar alla kreditkortsnummer som delas internt och externt i organisationen. Den här principen är som standardinställning för alla användare av klientorganisationen. Inga principtips skapas för slutanvändarna, men en aviseringshändelse skapas och ett meddelande med låg allvarlighetsgrad utlöses för administratören (som läggs till i principen). Administratören kan visa aktiviteterna och redigera policyinformationen genom att logga in på efterlevnadscentret.
 
 Administratörer kan visa den här principen i [efterlevnadscentret >](https://compliance.microsoft.com/compliancesettings) sidan Principer för skydd mot dataförlust.
 
