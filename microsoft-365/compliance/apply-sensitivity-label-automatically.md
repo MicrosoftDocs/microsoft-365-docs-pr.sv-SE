@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: När du skapar en känslighetsetikett kan du automatiskt tilldela filer och e-postmeddelanden en etikett, eller så kan du uppmana användarna att välja den etikett som du rekommenderar.
-ms.openlocfilehash: 77834c71c7df9f5a460533f1a06878e0e3e38145
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061893"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137781"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Använda en känslighetsetikett för innehåll automatiskt
 
@@ -140,6 +140,9 @@ Mer information om de här konfigurationsalternativen från DLP-dokumentationen 
 
 Precis som med DLP-principkonfigurationen kan du också välja om ett villkor ska identifiera alla typer av känslig information eller bara en av dem. Om du vill göra villkoren mer flexibla eller komplexa kan du lägga till [grupper och använda logiska operatorer mellan grupperna](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
+> [!NOTE]
+> Principer för automatisk etikettering baserat på anpassade typer av känslig information gäller endast för nyligen skapat eller ändrat innehåll i OneDrive och SharePoint. 
+
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Konfigurera träningsbara klassificerare för en etikett
 
 Det här alternativet är en förhandsversion. Om du använder det här alternativet ska du kontrollera att du har publicerat minst en annan känslighetsetikett som har konfigurerats för automatisk etikettering och alternativet [Typer av känslig information](#configuring-sensitive-info-types-for-a-label).
@@ -215,7 +218,7 @@ Kontrollera att du är medveten om kraven innan du konfigurerar principer för a
     - När principen för automatisk etikettering körs får filen inte vara öppen av en annan process eller användare. En fil som är utcheckad för redigering tillhör den här kategorin.
 
 - Om du planerar att använda [anpassade typer av känslig information](sensitive-information-type-learn-about.md) i stället för de inbyggda känslighetstyperna: 
-    - Anpassade informationstyper för känslighet utvärderas för innehåll som läggs till i SharePoint eller OneDrive efter att de anpassade informationstyperna för känslighet sparats. 
+    - Anpassade typer av känslighetsinformation gäller endast för innehåll som läggs till eller ändras i SharePoint eller OneDrive när de anpassade typer av känslighetsinformation har tillämpats. 
     - Om du vill testa nya anpassade typer av känslig information skapar du dem innan du skapar din automatiska etikettprincip och skapar sedan nya dokument med exempeldata för testning.
 
 - En eller flera känslighetsetiketter [skapas och publiceras](create-sensitivity-labels.md) (till minst en användare) som du kan välja för principer för automatisk etikettering. För dessa etiketter:

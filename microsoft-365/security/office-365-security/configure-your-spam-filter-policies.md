@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: afcb82789168999f5f061ca0f86ad3c07b54846d
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108241"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137769"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
@@ -104,7 +104,7 @@ När du skapar en anpassad princip för skräppostskydd i Microsoft 365 Defender
 
    Använd ELLER-logik (till exempel _\<recipient1\>_ eller _\<recipient2\>_) för flera värden i samma villkor. Använd OCH-logik (till exempel _\<recipient1\>_ och _\<member of group 1\>_) för olika villkor.
 
-   - **Exkludera dessa användare, grupper och domäner**: Om du vill lägga till undantag för interna mottagare som principen gäller för (Mottagarundantag), väljer du det här alternativet och konfigurerar undantagen. Inställningarna och beteendet är likadana som villkoren.
+   - **Exkludera dessa användare, grupper och domäner**: Om du vill lägga till undantag för de interna mottagarna som principen gäller för (mottagarundantag), väljer du det här alternativet och konfigurerar undantagen. Inställningarna och beteendet är likadana som villkoren.
 
    Klicka på **Nästa** när du är klar.
 
@@ -203,7 +203,7 @@ När du skapar en anpassad princip för skräppostskydd i Microsoft 365 Defender
    >
    > Tänk efter noga innan du lägger till domäner på listan över tillåtna domäner. Mer information finns i [Skapa listor över betrodda avsändare i EOP](create-safe-sender-lists-in-office-365.md).
    >
-   > Lägg aldrig till egna [godkända domäner](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) eller vanliga domäner (till exempel microsoft.com eller office.com) i listan över tillåtna domäner. Om de här domänerna tillåts kringgå skräppostfiltreringen kan du tillåta att attackerare enkelt skickar e-post till din organisation.
+   > Lägg aldrig till egna [godkända domäner](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) eller vanliga domäner (till exempel microsoft.com eller office.com) i listan över tillåtna domäner. Om dessa domäner tillåts kringgå skräppostfiltrering kan angripare enkelt skicka meddelanden som förfalskar dessa betrodda domäner till din organisation.
    >
    > Manuell blockering av domäner genom att lägga till domänerna på listan över blockerade domäner är inte farligt, men det kan öka mängden administrativt arbete. Mer information finns i artikeln om att [skapa listor över blockerade avsändare i EOP](create-block-sender-lists-in-office-365.md).
    >

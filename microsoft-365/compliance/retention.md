@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om kvarhållningsprinciper och kvarhållningsetiketter som hjälper dig att behålla det du behöver och ta bort det du inte behöver.
-ms.openlocfilehash: e39f4e65d5c4bdf4235e7ae2d8aa207c986c76c8
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: f882a9a215f331930de7473d6bf057a3d45bc50e
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055050"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137697"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Mer information om kvarhållningsprinciper och kvarhållningsetiketter
 
@@ -283,11 +283,11 @@ Vad prioriteras för att fastställa resultatet när objekt kan ha flera kvarhå
 
 Resultatet betyder inte vilken enskild kvarhållningsprincip eller enskild kvarhållningsetikett som vinner, utan hur länge ett objekt behålls (om tillämpligt) och när ett objekt tas bort (om tillämpligt). De här två åtgärderna beräknas oberoende av varandra, från alla kvarhållningsinställningar som används för ett objekt.
 
-Ett objekt kan till exempel ha en kvarhållningsprincip som är konfigurerad enbart för en borttagningsåtgärd och en annan kvarhållningsprincip som är konfigurerad för att behålla och sedan ta bort. Det här objektet har därför bara en kvarhållningsåtgärd men två borttagningsåtgärder. Kvarhållnings- och borttagningsåtgärderna kan vara i konflikt med varandra och de två borttagningsåtgärderna kan ha ett datum som står i konflikt. För att få reda på resultatet måste du tillämpa kvarhållningsprinciperna.
+Ett objekt kan till exempel ha en kvarhållningsprincip som är konfigurerad enbart för en borttagningsåtgärd och en annan kvarhållningsprincip som är konfigurerad för att behålla och sedan ta bort. Det här objektet har därför bara en kvarhållningsåtgärd men två borttagningsåtgärder. Kvarhållnings- och borttagningsåtgärderna kan vara i konflikt med varandra och de två borttagningsåtgärderna kan ha ett datum som står i konflikt. Principerna för kvarhållning förklarar resultatet.
 
-På hög nivå kan du vara säker på att kvarhållningen alltid prioriteras framför borttagningen, och att den längsta kvarhållningsperioden vinner. De här två enkla reglerna avgör alltid hur länge ett objekt ska behållas.
+På en hög nivå kan du vara säker på att kvarhållning alltid har företräde framför permanent borttagning och att den längsta kvarhållningsperioden vinner. De här två enkla reglerna avgör alltid hur länge ett objekt ska behållas.
 
-Det finns några fler faktorer som avgör när ett objekt kommer att tas bort, vilket omfattar att borttagningsåtgärden från en kvarhållningsetikett alltid har företräde framför borttagningsåtgärden från en kvarhållningsprincip.
+Det finns några fler faktorer som avgör när ett objekt tas bort permanent, vilket inkluderar borttagningsåtgärden från en kvarhållningsetikett har alltid företräde framför borttagningsåtgärden från en kvarhållningsprincip.
 
 I följande flöde kan du se resultatet av kvarhållning och borttagning för ett enskilt objekt, där varje nivå fungerar som tie-breaker för konflikter uppifrån och ned. Om resultatet bestäms av den första nivån på grund av att det inte finns några fler konflikter behöver du inte gå vidare till nästa nivå och så vidare.
 
@@ -296,13 +296,18 @@ I följande flöde kan du se resultatet av kvarhållning och borttagning för et
 
 ![Diagram över kvarhållningsprinciperna](../media/principles-of-retention.png)
   
-Förklaring av de fyra nivåerna:
+Förklaring till de fyra olika principerna:
   
-1. **Kvarhållning prioriteras före borttagning.** Innehåll tas inte bort permanent när det även har kvarhållningsinställningar för att behålla det.  
+1. **Kvarhållning prioriteras före borttagning.** Innehåll tas inte bort permanent när det även har kvarhållningsinställningar för att behålla det. Den här principen säkerställer att innehållet bevaras av efterlevnadsskäl, men borttagningsprocessen initieras fortfarande och kan ta bort innehållet från användarvyn. Ett dokument i SharePoint flyttas till exempel från den ursprungliga mappen till mappen Bevarande av dokument. Permanent borttagning har dock inaktiverats. Mer information om hur och var innehållet bevaras finns på följande länkar för varje arbetsbelastning:
+    
+    - [Så här fungerar kvarhållning för SharePoint och OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
+    - [Så här fungerar kvarhållning för Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
+    - [Så här fungerar kvarhållning för Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
+    - [Så här fungerar kvarhållning för Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
     
     Exempel: För ett e-postmeddelande gäller en kvarhållningsprincip för Exchange, som är konfigurerad att ta bort objekt efter tre år, och där det även finns en kvarhållningsetikett som är konfigurerad att behålla objekt i fem år.
     
-    E-postmeddelandet behålls i fem år eftersom kvarhållningsåtgärden prioriteras framför borttagning. E-postmeddelandet tas bort i slutet av de fem åren på grund av den uppskjutna borttagningsåtgärden.
+    E-postmeddelandet behålls i fem år eftersom kvarhållningsåtgärden prioriteras framför borttagning. E-postmeddelandet tas sedan bort permanent i slutet av de fem åren på grund av borttagningsåtgärden.
 
 2. **Den längsta kvarhållningsperioden vinner.** Om innehållet har flera kvarhållningsinställningar som behåller innehåll under olika tidsperioder behålls innehållet till slutet av den längsta kvarhållningsperioden.
     
@@ -316,7 +321,7 @@ Förklaring av de fyra nivåerna:
         
         Exempel: Ett dokument har två kvarhållningsprinciper som omfattar en borttagningsåtgärd på fem respektive tio år, samt en kvarhållningsetikett som har en borttagningsåtgärd på sju år.
         
-        Dokumentet tas bort efter sju år eftersom borrtagningsåtgärden från kvarhållningsetiketten prioriteras.
+        Dokumentet tas bort permanent efter sju år eftersom borttagningsåtgärden från kvarhållningsetiketten har företräde.
     
     2. När du endast har kvarhållningsprinciper: Om en kvarhållningsprincip för en plats är begränsad till att använda en inkluderande konfiguration (t.ex. specifika användare för Exchange-e-post) har kvarhållningsprincipen företräde framför obegränsade kvarhållningsprinciper för samma plats.
         
@@ -324,19 +329,19 @@ Förklaring av de fyra nivåerna:
         
         Exempel 1: Ett e-postmeddelande har två kvarhållningsprinciper. Den första kvarhållningsprincipen är obegränsad och objekt tas bort efter tio år. Den andra kvarhållningsprincipen är begränsad till specifika postlådor och tar bort objekt efter fem år.
         
-        E-postmeddelandet tas bort efter fem år eftersom borttagningsåtgärden från den begränsade kvarhållningsprincipen har företräde framför den obegränsade kvarhållningsprincipen.
+        E-postmeddelandet tas bort permanent efter fem år eftersom borttagningsåtgärden från den begränsade kvarhållningsprincipen har företräde framför den obegränsade kvarhållningsprincipen.
         
         Exempel 2: Ett dokument i en användares OneDrive-konto lyder under två kvarhållningsprinciper. Den första kvarhållningsprincipen omfattar användarens OneDrive-konto och har en borttagningsåtgärd efter 10 år. Den andra kvarhållningsprincipen omfattar användarens OneDrive-konto och har en borttagningsåtgärd efter sju år.
         
-        När dokumentet tas bort går inte att fastställa på den här nivån eftersom båda kvarhållningsprinciperna är begränsade.
+        När det här dokumentet tas bort permanent, det går inte att fastställas på den här nivån eftersom båda kvarhållningsprinciperna är begränsade.
 
-4. **Den kortaste borttagningsperioden vinner.** Tillämplig för att avgöra när objekt kommer att tas bort från kvarhållningsprinciper och resultatet inte kunde lösas från den föregående nivån: Innehåll tas bort i slutet av den kortaste kvarhållningsperioden.
+4. **Den kortaste borttagningsperioden vinner.** Kan användas för att avgöra när objekt tas bort från kvarhållningsprinciper och resultatet inte kunde lösas från föregående nivå: Innehållet tas bort permanent i slutet av den kortaste kvarhållningsperioden.
     
     Exempel: Ett dokument i en användares OneDrive-konto lyder under två kvarhållningsprinciper. Den första kvarhållningsprincipen omfattar användarens OneDrive-konto och har en borttagningsåtgärd efter 10 år. Den andra kvarhållningsprincipen omfattar användarens OneDrive-konto och har en borttagningsåtgärd efter sju år.
     
-    Det här dokumentet tas bort efter sju år eftersom det är den kortaste kvarhållningsperioden för dessa två begränsade kvarhållningsprinciper.
+    Det här dokumentet tas bort permanent efter sju år eftersom det är den kortaste kvarhållningsperioden för dessa två begränsade kvarhållningsprinciper.
 
-Observera att även objekt som omfattas av eDiscovery-undantag även omfattas av den första kvarhållningsprincipen. De kan inte tas bort med någon kvarhållningsprincip eller kvarhållningsetikett. När undantaget släpps fortsätter kvarhållningsprinciperna att gälla för dem. De kan till exempel lyda under en kvarhållningsperiod som inte har löpt ut eller en uppskjuten borttagningsåtgärd.
+Observera att även objekt som omfattas av eDiscovery-undantag omfattas av den första kvarhållningsprincipen. De kan inte tas bort permanent med någon kvarhållningsprincip eller kvarhållningsetikett. När undantaget släpps fortsätter kvarhållningsprinciperna att gälla för dem. De kan till exempel lyda under en kvarhållningsperiod som inte har löpt ut eller en borttagningsåtgärd.
 
 Mer komplexa exempel som kombinerar åtgärder för kvarhållning och borttagning:
 
@@ -346,9 +351,9 @@ Mer komplexa exempel som kombinerar åtgärder för kvarhållning och borttagnin
     - En kvarhållningsprincip som bevaras i tre år och sedan tas bort
     - En kvarhållningsetikett som endast behålls i sju år
     
-    **Resultat**: Objektet behålls i sju år eftersom kvarhållningen prioriteras framför borttagningen och sju år är den längsta kvarhållningsperioden. I slutet av kvarhållningsperioden tas objektet bort på grund av borttagningsåtgärden från kvarhållningsprinciperna som sköts upp när objektet bevarades.
+    **Resultat**: Objektet behålls i sju år eftersom kvarhållningen prioriteras framför borttagningen och sju år är den längsta kvarhållningsperioden. I slutet av den här kvarhållningsperioden tas objektet bort permanent på grund av borttagningsåtgärden från kvarhållningsprinciperna.
     
-    Även om de två kvarhållningsprinciperna har olika datum för borttagningsåtgärderna kan objektet tidigast tas bort i slutet av den längsta kvarhållningsperioden, som är längre än båda borttagningsdatumen. I det här exemplet finns det ingen konflikt att lösa för borttagningsdatumen så alla konflikter löses av den andra nivån.
+    Även om de två kvarhållningsprinciperna har olika datum för borttagningsåtgärderna kan objektet tidigast tas bort permanent i slutet av den längsta kvarhållningsperioden, som är längre än båda borttagningsdatumen. 
 
 2.  Ett objekt har följande kvarhållningsinställningar:
     
@@ -356,7 +361,7 @@ Mer komplexa exempel som kombinerar åtgärder för kvarhållning och borttagnin
     - En omfattad kvarhållningsprincip som bevaras i fem år och sedan tas bort
     - En kvarhållningsetikett som bevaras i tre år och sedan tas bort
     
-    **Resultat**: Objektet behålls i fem år eftersom det är den längsta kvarhållningsperioden. I slutet av kvarhållningsperioden tas objektet bort på grund av borttagningsåtgärden på tre år från kvarhållningsetiketten som sköts upp när objektet bevarades. Borttagning från kvarhållningsetiketter har företräde framför borttagning från alla kvarhållningsprinciper. I det här exemplet löses alla konflikter av den tredje nivån.
+    **Resultat**: Objektet behålls i fem år eftersom det är den längsta kvarhållningsperioden. I slutet av kvarhållningsperioden tas objektet bort permanent på grund av borttagningsåtgärden på tre år från kvarhållningsetiketten. Borttagning från kvarhållningsetiketter har företräde framför borttagning från alla kvarhållningsprinciper. I det här exemplet löses alla konflikter av den tredje nivån.
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Använda Bevarandelås för att begränsa ändringar av principer
 
