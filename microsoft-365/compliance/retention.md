@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om kvarhållningsprinciper och kvarhållningsetiketter som hjälper dig att behålla det du behöver och ta bort det du inte behöver.
-ms.openlocfilehash: f882a9a215f331930de7473d6bf057a3d45bc50e
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 9337bddd87dd24d42b4d06fe77225901701cbdee
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137697"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149184"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Mer information om kvarhållningsprinciper och kvarhållningsetiketter
 
@@ -298,7 +298,7 @@ I följande flöde kan du se resultatet av kvarhållning och borttagning för et
   
 Förklaring till de fyra olika principerna:
   
-1. **Kvarhållning prioriteras före borttagning.** Innehåll tas inte bort permanent när det även har kvarhållningsinställningar för att behålla det. Den här principen säkerställer att innehållet bevaras av efterlevnadsskäl, men borttagningsprocessen initieras fortfarande och kan ta bort innehållet från användarvyn. Ett dokument i SharePoint flyttas till exempel från den ursprungliga mappen till mappen Bevarande av dokument. Permanent borttagning har dock inaktiverats. Mer information om hur och var innehållet bevaras finns på följande länkar för varje arbetsbelastning:
+1. **Kvarhållning prioriteras före borttagning.** Innehåll tas inte bort permanent när det även har kvarhållningsinställningar för att behålla det. Den här principen säkerställer att innehållet bevaras av efterlevnadsskäl, men borttagningsprocessen initieras fortfarande och kan ta bort innehållet från användarvyn och sökningar. För SharePoint flyttas till exempel ett dokument från den ursprungliga mappen till mappen Bevarande av dokument. Permanent borttagning har dock inaktiverats. Mer information om hur och var innehållet kvarhålls finns på följande länkar för varje arbetsbelastning:
     
     - [Så här fungerar kvarhållning för SharePoint och OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
     - [Så här fungerar kvarhållning för Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
@@ -307,7 +307,7 @@ Förklaring till de fyra olika principerna:
     
     Exempel: För ett e-postmeddelande gäller en kvarhållningsprincip för Exchange, som är konfigurerad att ta bort objekt efter tre år, och där det även finns en kvarhållningsetikett som är konfigurerad att behålla objekt i fem år.
     
-    E-postmeddelandet behålls i fem år eftersom kvarhållningsåtgärden prioriteras framför borttagning. E-postmeddelandet tas sedan bort permanent i slutet av de fem åren på grund av borttagningsåtgärden.
+    E-postmeddelandet behålls i fem år eftersom kvarhållningsåtgärden prioriteras framför borttagning. E-postmeddelandet tas bort permanent i slutet av de fem åren på grund av den borttagningsåtgärd som pausades när kvarhållningsåtgärden tillämpades.
 
 2. **Den längsta kvarhållningsperioden vinner.** Om innehållet har flera kvarhållningsinställningar som behåller innehåll under olika tidsperioder behålls innehållet till slutet av den längsta kvarhållningsperioden.
     
