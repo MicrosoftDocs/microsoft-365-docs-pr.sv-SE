@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: b4040a60e59f3256b69f90d33af6f7543e50784e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984802"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169610"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivera regler för minskning av attackytan
 
@@ -35,14 +35,16 @@ ms.locfileid: "52984802"
 
 [Minskningsregler för attackytor](attack-surface-reduction.md) (ASR-regler) hjälper till att förhindra åtgärder som ofta används för missbruk av skadlig programvara för att avslöja enheter och nätverk.
 
-**Krav** Du kan ange minskningsregler för attackytan för enheter som kör någon av följande versioner av Windows:
+## <a name="requirements"></a>Krav
 
-- Windows 10 Pro, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
-- Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+Du kan ange minskningsregler för attackytan för enheter som kör någon av följande utgåvor och versioner av Windows:
+
+- Windows 10 Pro, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
+- Windows 10 Enterprise, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
 - Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Även om minskningsregler för attackytor inte kräver en [Windows E5-licens](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. Dessa funktioner är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)samt rapporterings- och konfigurationsfunktioner i [Säkerhetscenter för Microsoft 365.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Dessa avancerade funktioner är inte tillgängliga med en Windows Professional- eller Windows E3-licens. Men om du har de licenserna kan du använda Loggboken och Microsoft Defender Antivirus-loggarna för att granska dina minskningsregelhändelser för attackytan.
+Även om minskningsregler för attackytan inte kräver en [E5 Windows-licens,](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. De här funktionerna är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)samt rapporterings- och konfigurationsfunktioner [i Microsoft 365 säkerhetscenter.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Dessa avancerade funktioner är inte tillgängliga med en licens från Windows Professional eller Windows E3. Men om du har dessa licenser kan du använda Loggboken och Microsoft Defender Antivirus för att granska dina attack surface-minskningsregelhändelser.
 
 Varje ASR-regel innehåller en av fyra inställningar:
 
@@ -54,10 +56,10 @@ Varje ASR-regel innehåller en av fyra inställningar:
 > [!IMPORTANT]
 > För närvarande stöds inte varningsläge för tre ASR-regler när du konfigurerar ASR-regler i Microsoft Endpoint Manager (MEM). Mer information finns i [Fall där varningsläge inte stöds.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-Vi rekommenderar starkt att du använder ASR-regler med en Windows E5-licens (eller liknande licens-SKU) för att dra nytta av de avancerade funktioner för övervakning och rapportering som finns i [Microsoft Defender](microsoft-defender-endpoint.md) för slutpunkt (Defender för slutpunkt). Men om du har en annan licens, till exempel Windows Professional eller Windows E3 som inte innehåller avancerade funktioner för övervakning och rapportering, kan du utveckla egna övervakning- och rapporteringsverktyg ovanpå händelser som genereras vid varje slutpunkt när ASR-regler utlöses (till exempel vidarebefordran av händelse).
+Vi rekommenderar starkt att du använder ASR-regler med en Windows E5-licens (eller liknande licens-SKU) för att dra nytta av de avancerade funktioner för övervakning och rapportering som finns tillgängliga i [Microsoft Defender](microsoft-defender-endpoint.md) för slutpunkt (Defender för slutpunkt). Men om du har en annan licens, till exempel Windows Professional eller Windows E3 som inte innehåller avancerade funktioner för övervakning och rapportering, kan du utveckla egna övervaknings- och rapporteringsverktyg ovanpå händelser som genereras vid varje slutpunkt när ASR-regler utlöses (till exempel Vidarebefordran av händelse).
 
 > [!TIP]
-> Mer information om Windows-licensiering finns i [Windows 10-licensiering](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) och volymlicensieringsguiden [för Windows 10.](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
+> Mer information om Windows finns i [Windows 10 licensiering](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) och få [volymlicensieringsguiden för Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
 Du kan aktivera minskningsregler för attackytan med någon av följande metoder:
 
@@ -89,7 +91,7 @@ Följande procedurer för att aktivera ASR-regler innehåller instruktioner för
 
 1. Välj **Profiler för**  >  **enhetskonfiguration**. Välj en befintlig profil för slutpunktsskydd eller skapa en ny. Om du vill skapa en ny väljer du **Skapa profil och** anger information om den här profilen. För **Profiltyp** väljer du **Slutpunktsskydd**. Om du har valt en befintlig profil väljer du **Egenskaper** och sedan **Inställningar**.
 
-2. I fönstret **Slutpunktsskydd** väljer du **Windows Defender Exploit Guard och** sedan Attack Surface **Reduction**. Välj önskad inställning för varje ASR-regel.
+2. I fönstret **Slutpunktsskydd** väljer du **Windows Defender Exploit Guard** och sedan Attack Surface **Reduction.** Välj önskad inställning för varje ASR-regel.
 
 3. Ange **enskilda filer och mappar** under Undantag för minskning av attackytan. Du kan också välja **Importera om du** vill importera en CSV-fil som innehåller filer och mappar som ska undantas från ASR-regler. Varje rad i CSV-filen ska vara formaterad på följande sätt:
 
@@ -101,7 +103,7 @@ Följande procedurer för att aktivera ASR-regler innehåller instruktioner för
 
 Du kan använda Microsoft Endpoint Manager (MEM) OMA-URI för att konfigurera anpassade ASR-regler. I följande procedur används regeln [Blockera missbruk av utnyttjas sårbara signerade drivrutiner](attack-surface-reduction.md#block-abuse-of-exploited-vulnerable-signed-drivers) för exemplet.
 
-1. Öppna administrationscentret för Microsoft Endpoint Manager (MEM). På **Start-menyn** klickar du  **på Enheter**, väljer **Konfigurationsprofil** och klickar sedan **på Skapa profil**.
+1. Öppna administrationscentret Microsoft Endpoint Manager (MEM). På **Start-menyn** klickar du  **på Enheter**, väljer **Konfigurationsprofil** och klickar sedan **på Skapa profil**.
 
    > [!div class="mx-imgBorder"]
    > ![MEM– Skapa profil](images/mem01-create-profile.png)
@@ -121,12 +123,12 @@ Du kan använda Microsoft Endpoint Manager (MEM) OMA-URI för att konfigurera an
    > [!div class="mx-imgBorder"]
    > ![Grundläggande MEM-attribut](images/mem03-1-basics.png)
 
-4. Klicka på **Nästa**. Steg **2 Konfigurationsinställningar** öppnas. För OMA-URI-inställningar klickar du på **Lägg till.** Nu visas två alternativ: **Lägg till** och **Exportera.**
+4. Klicka **Nästa**. Steg **2 Konfigurationsinställningar** öppnas. Om du vill använda OMA-URI Inställningar du på **Lägg till.** Nu visas två alternativ: **Lägg till** och **Exportera.**
 
    > [!div class="mx-imgBorder"]
    > ![Inställningar för MEM-konfiguration](images/mem04-2-configuration-settings.png)
 
-5. Klicka **på Lägg till** igen. Lägg **till rad OMA-URI-inställningar** öppnas. Gör **följande i** Lägg till rad:
+5. Klicka **på Lägg till** igen. Lägg **till rad OMA-URI Inställningar** rad. Gör **följande i** Lägg till rad:
 
    - Ange **ett** namn för regeln i Namn.
    - Skriv **en** kort beskrivning i Beskrivning.
@@ -162,7 +164,7 @@ Du kan använda Microsoft Endpoint Manager (MEM) OMA-URI för att konfigurera an
    > [!div class="mx-imgBorder"]
    > ![Tillämplighetsregler för MEM](images/mem07-5-applicability-rules.png)
 
-10. Klicka på **Nästa**. I steg **6 Granska + skapa** granskar du de inställningar och den information du har valt och angett och klickar sedan på **Skapa**.
+10. Klicka **Nästa**. I steg **6 Granska + skapa** granskar du de inställningar och den information du har valt och angett och klickar sedan på **Skapa**.
 
     > [!div class="mx-imgBorder"]
     > ![MEM – granska och skapa](images/mem08-6-review-create.png)

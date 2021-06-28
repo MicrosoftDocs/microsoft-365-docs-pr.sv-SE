@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Läs mer om Deployment Lab kit för Windows och Office, och var du hittar det.
-ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3f9899726838caca678542e17206dae038c39a3d
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770679"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169574"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Deployment Lab Kit för Windows 10 och Office 365
 
@@ -55,9 +55,11 @@ Det resulterande labbet är utformat för att anslutas till försök för:
 Du får utföra flera labbuppgifter för olika distributions- och hanteringsscenarier med detaljerad vägledning. Labbuppgifterna har uppdaterats för de senaste versionerna av Intune och Configuration Manager. 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Planera och förbereda infrastrukturen 
+
 - Desktop Analytics 
 - Molnhanteringsgateway & molndistributionspunkt 
-- Klientorganisationskoppling, samhantering och växling av arbetsbelastningar 
+- NYHET! Klientorganisationsklient och samtidig hantering
+- NYHET! Slutpunktsanalyser 
 - Fjärråtkomst (VPN) 
 
 ### <a name="prepare-configuration"></a>Förbereda konfiguration   
@@ -91,6 +93,7 @@ Du får utföra flera labbuppgifter för olika distributions- och hanteringsscen
 - Företags hanterad distribution med Microsoft Intune  
 - Distribution och hantering av verksamhetsstyrning med Microsoft Intune
 - Distribuera Microsoft Teams
+- NYHET! Tilldelningsfilter  
 
 ### <a name="deploy-windows-virtual-desktop"></a>Distribuera Windows virtuellt skrivbord  
 

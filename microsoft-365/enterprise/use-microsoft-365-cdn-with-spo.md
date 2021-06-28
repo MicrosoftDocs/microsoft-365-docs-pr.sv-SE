@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Lär dig hur du använder Office 365 Content Delivery Network (CDN) för att snabba på leveransen av dina SharePoint Online-tillgångar.
-ms.openlocfilehash: 6819f627d3590cd2739b36cb1bc303f197d6aaa5
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: e6cce93be0e8d893d68ae8bcdb15fde325a2cb59
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570411"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169562"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Använda Office 365 Content Delivery Network (CDN) med SharePoint Online
 
@@ -898,7 +898,7 @@ Om du vill använda den fullständiga URL:en till tillgången i stället för en
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> I allmänhet bör du inte hårdkoda URL-adresser direkt till tillgångar i CDN. Du kan dock manuellt skapa URL-adresser för tillgångar i offentliga ursprung om det behövs. Mer information finns i [Hardcoding CDN URL:er för offentliga tillgångar.](use-microsoft-365-cdn-with-spo.md)
+> I allmänhet bör du inte hårdkoda URL-adresser direkt till tillgångar i CDN. Du kan dock manuellt skapa URL-adresser för tillgångar i offentliga ursprung om det behövs. Mer information finns i [Hardcoding CDN URL:er för offentliga tillgångar.](use-microsoft-365-cdn-with-spo.md#constructing-cdn-urls-for-public-assets)
 
 Mer information om hur du verifierar att tillgångar kommer från CDN finns i Hur bekräftar jag att tillgångarna [CDN?](use-microsoft-365-cdn-with-spo.md#CDNConfirm) i Felsökning av [Office 365 CDN](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting).
 
