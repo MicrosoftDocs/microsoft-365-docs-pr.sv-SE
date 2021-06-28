@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Lär dig hur du hittar resurser för Microsoft SharePoint Syntex.
-ms.openlocfilehash: 0daad53e1f6a84f0399c3bfcfb48b92db547f64b
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: a3bd14c379425573ee7ad57604cc4cbb706741b8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657627"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149016"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introduktion till Microsoft SharePoint-Syntex
 
@@ -56,6 +56,7 @@ Läs mer om hur du använder och implementerar SharePoint-Syntex i din organisat
 | Om du letar efter den här informationen: | Gå till den här resursen: |
 |:-----|:-----|
 |Så börjar du planera för att använda SharePoint Syntex |[SharePoint Syntex-införande: komma igång](./adoption-getstarted.md)| 
+|Se exempelscenarier som ger dig idéer om hur du kan använda SharePoint Syntex i din organisation |[Scenarier och användningsfall för Microsoft SharePoint Syntex](./adoption-scenarios.md)| 
 |Lär dig använda SharePoint Syntex för att automatisera dokumentprocesser |[Hantera kontrakt med en Microsoft 365-lösning](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex

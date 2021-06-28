@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd känslighetsetiketter för att skydda innehåll i Sharepoint- och Microsoft Teams-webbplatser samt Microsoft 365-grupper.
-ms.openlocfilehash: 2ffc0350dd61a0064ce2e9891b18a6769a437d2e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 844391ee20d2c8e8b94261659b18de0690dee119
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096762"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149196"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Använd känslighetsetiketter för att skydda innehåll i Microsoft Teams, Microsoft 365-grupper och SharePoint-webbplatser
 
@@ -141,6 +141,8 @@ För att kunna visas i rullgardinsmenyn för val måste autentiseringskontexter 
 Alla appar har inte stöd för autentiseringskontexter. Om en användare med en app som inte stöds ansluter till webbplatsen som är konfigurerad för en autentiseringskontext, ser de antingen ett meddelande om åtkomst nekad eller så uppmanas de att autentisera men avvisas. Apparna som för närvarande stöder autentiseringskontexter:
 
 - Office för webben, som inkluderar Outlook för webben
+
+- Microsoft Teams för Windows och macOS (exkluderar Teams-webbapp)
 
 - Microsoft Planner
 
