@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Konfigurera Basic Mobility and Security för att skydda och hantera användarnas mobila enheter genom att utföra åtgärder som att fjärradera en enhet.
-ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f1cfa6cdc8d799ba62c687408cb12a4ba453f313
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634298"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177279"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Konfigurera grundläggande Mobility and Security
 
 Den inbyggda funktionen Basic Mobility and Security för Microsoft 365 hjälper dig att skydda och hantera användarnas mobila enheter, till exempel iPhone, iPad, Android och Windows telefoner. Du kan skapa och hantera säkerhetsprinciper för enheter, fjärradea enheter och visa detaljerade enhetsrapporter.
 
-Har du frågor? Vanliga frågor och svar om grundläggande rörlighet och säkerhet finns i Vanliga frågor och svar om [grundläggande rörlighet och säkerhet.](frequently-asked-questions.md) Observera att du inte kan använda ett delegerat administratörskonto för att hantera grundläggande rörlighet och säkerhet. Mer information finns i [Partner: Erbjuda delegerad administration.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
+Har du frågor? Vanliga frågor och svar om grundläggande rörlighet och säkerhet finns i Vanliga frågor och svar om [grundläggande rörlighet och säkerhet.](frequently-asked-questions.yml) Observera att du inte kan använda ett delegerat administratörskonto för att hantera grundläggande rörlighet och säkerhet. Mer information finns i [Partner: Erbjuda delegerad administration.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
 
 Enhetshantering är en del av säkerhets- & säkerhets- och efterlevnadscentret, så du måste gå dit för att starta installationen av Basic Mobility and Security.
 

@@ -1,0 +1,76 @@
+### YamlMime:FAQ
+metadata:
+  title: Vanliga frågor och svar om Basic Mobility and Security (Vanliga frågor och svar)
+  f1.keywords:
+  - NOCSH
+  ms.author: kwekua
+  author: kwekua
+  manager: scotv
+  audience: Admin
+  ms.topic: reference
+  ms.service: o365-administration
+  localization_priority: Normal
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_TOC
+  ms.custom:
+  - AdminSurgePortfolio
+  search.appverid:
+  - MET150
+  description: Vanliga frågor och svar om Grundläggande rörlighet och säkerhet.
+  ms.openlocfilehash: 4d57b1fce05329b294aade2806400e343f7f6ad7
+  ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 06/29/2021
+  ms.locfileid: "53177670"
+title: Vanliga frågor och svar om Basic Mobility and Security (Vanliga frågor och svar)
+summary: Den här artikeln innehåller vanliga frågor och svar om grundläggande rörlighet och säkerhet, en funktion som hjälper dig att hantera och skydda mobila enheter i Microsoft 365. Om du inte hittar ett svar på din fråga vill vi gärna lämna en kommentar på sidan så att vi kan lägga till din fråga i den här artikeln.
+sections:
+- name: Ignoreras
+  questions:
+  - question: >
+      Hur får jag Basic Mobility and Security? Jag ser det inte i Administrationscenter för Microsoft 365
+    answer: >
+      1.  Aktivera Grundläggande rörlighet och säkerhet genom att gå till [sidan Office 365 säkerhet och & standard.](https://protection.office.com/)
+
+
+      2.  Gå till Dataförlustskydd > Enhetshantering.
+  - question: >
+      Hur kommer jag igång med enhetshantering i Basic Mobility and Security?
+    answer: "Det finns fyra steg för att komma igång med Basic Mobility och säkerhet: \n\n1. Aktivera Basic Mobility and Security genom att gå till [Office 365 säkerhet & efterlevnad.](https://protection.office.com/)\n\n2. Gå till Skydd mot dataförlust > av enhetshantering > principer för enheter.\n    \n3. Skapa principer för enhetshantering och använd dem på grupper av användare som har angetts i säkerhetsgrupper. Vi rekommenderar att du börjar genom att distribuera principerna till en liten testgrupp. Mer information finns i Skapa [säkerhetsprinciper för enheter i Grundläggande rörlighet och säkerhet.](create-device-security-policies.md)\n\n4. Användare som har tillämpat en princip på dem uppmanas att registrera sina enheter när de försöker få åtkomst Microsoft 365 data. Mer information finns i [Registrera din mobila enhet med grundläggande rörlighet och säkerhet.](enroll-your-mobile-device.md)\n\nMer information finns i [Konfigurera Grundläggande rörlighet och säkerhet.](set-up.md)\n"
+  - question: >
+      Jag försöker konfigurera Basic Mobility and Security men den verkar ha låst sig. Den Microsoft 365 tjänstens hälsa har visat "etablering" ett tag. Vad kan jag göra?
+    answer: >
+      Det kan ta lite tid att förbereda tjänsten åt dig. När etableringen är klar visas sidan Grundläggande rörlighet och säkerhet. Om du har väntat 24 timmar och status fortfarande är etablering kan du kontakta supporten så hjälper vi dig att ta reda på vad problemet är.
+  - question: >
+      Vad kan jag göra om enhetsregistrering misslyckas?
+    answer: "Om du har problem med att registrera en enhet kontrollerar du först följande:\n\n- Kontrollera att enheten inte redan är registrerad hos en annan leverantör för hantering av mobila enheter, till exempel Intune.\n\n- Kontrollera att enheten är inställd på rätt datum och tid.\n\n- Växla till ett annat WIFI-nätverk eller mobilt nätverk på enheten.\n\n- För Android- eller iOS-enheter avinstallerar du och Intune-företagsportal appen på enheten.\n    \nOm registrering fortfarande inte fungerar kan du gå till [Felsöka grundläggande rörlighet och säkerhet.](troubleshoot.md)\n"
+  - question: >
+      Vad är skillnaden mellan Intune och Enkel rörlighet och säkerhet?
+    answer: >
+      Basic Mobility and Security är värd för Intune-tjänsten. Det är en delmängd av Intune-tjänster som tillhandahålls som en extra förmån för Microsoft 365 och är en inbyggd molnbaserad lösning för hantering av enheter i organisationen. En jämförelse sida vid sida av de två tjänsterna som hjälper dig att avgöra om det är bäst att använda Intune eller Basic Mobility and Security för Microsoft 365 finns i Välja mellan Basic Mobility Security och [Intune.](choose-between-basic-mobility-and-security-and-intune.md)
+  - question: >
+      Hur fungerar principer för grundläggande rörlighet och säkerhet? Hur ställer jag in dem? Inaktivera dem?
+    answer: >
+      När du har slutfört den första konfigurationen för grundläggande rörlighet och säkerhet skapar du principer och tillämpar dem på grupper av användare i säkerhets- & efterlevnadscenter. Principer kräver att användare av principerna registrerar sina enheter i grundläggande rörlighet och säkerhet innan enheten kan användas för att komma åt Microsoft 365 data. Principerna som du bestämr bestämmer inställningar för mobila enheter, till exempel hur ofta lösenord måste återställas eller om datakryptering krävs. Mer information finns i [Skapa säkerhetsprinciper för enheter i Basic Mobility and Security](create-device-security-policies.md)och   [Microsoft 365 Efterlevnadscenter.](../../compliance/microsoft-365-compliance-center.md)
+
+
+      Stegvisa instruktioner för hur du skapar och distribuerar enhetsprinciper finns i Skapa säkerhetsprinciper för [enheter i Basic Mobility and Security.](create-device-security-policies.md)
+
+
+      Om du vill exkludera en viss grupp av användare från att påverkas av principerna kan du lägga till en grupp i undantagsgruppen.
+  - question: >
+      Kan jag byta från Exchange ActiveSync till Grundläggande rörlighet och säkerhet för Microsoft 365?
+    answer: >
+      Om du redan använder Exchange ActiveSync principer för att hantera mobila enheter kan du börja använda Basic Mobility and Security genom att följa stegen för att konfigurera Basic Mobility and Security. Mer information finns i [Skydda åtkomst till användare och enheter](../../compliance/protect-access-to-data-and-services.md) och Konfigurera grundläggande rörlighet och [säkerhet.](set-up.md)
+
+
+      När du tillämpar principerna som du skapar i Grundläggande rörlighet och säkerhet för grupper av användare åsidosätter dessa principer Exchange ActiveSync postlådeprinciper för mobila enheter och åtkomstregler för enheter som du tidigare skapat i administrationscentret för Exchange för dessa användare.
+
+
+      När en enhet har registrerats i Basic Mobility and Security ignoreras Exchange ActiveSync postlådeprinciper för mobila enheter eller enhetsåtkomstregel som tillämpas på enheten.
+  - question: >
+      Jag har ställt in Basic Mobility and Security men nu vill jag ta bort den. Vilka är stegen?
+    answer: Tyvärr kan du inte bara "återkalla" Basic Mobility and Security när du har konfigurerat den. Men du kan ta bort det för grupper av användare genom att ta bort användarsäkerhetsgrupper från de enhetsprinciper som du har skapat. Du kan också inaktivera det för alla genom att ta bort enhetsprinciperna så att de inte finns på plats och inte tillämpas. Mer information finns i [Inaktivera Grundläggande rörlighet och säkerhet.](turn-off.md)

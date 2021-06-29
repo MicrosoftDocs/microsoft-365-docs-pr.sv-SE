@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: ''
+ms.date: 06/28/2021
 audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 description: Läs mer om inställningen säker som standard i Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: c737647202e82af0fc217c0eadb3e2573d13a9b1
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861533"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177651"
 ---
 # <a name="secure-by-default-in-office-365"></a>Säker som standard i Office 365
 
@@ -75,7 +75,7 @@ Till att uttrycka det på ett annat sätt: som en säkerhetstjänst arbetar vi �
 ## <a name="exceptions"></a>Undantag
 
 > [!NOTE]
-> I juli 2021 utökas säkerhet som standard till att Exchange till e-postflödesregler (kallas även transportregler). Om du använder e-postflödesregler för att tillåta nätfiskebedrägerier eller ofiltrerad leverans till postlådor för [](configure-advanced-delivery.md) säkerhetsåtgärd måste du så småningom eliminera dessa regler och byta till att använda den avancerade leveransprincipen när funktionen är tillgänglig för _dig._
+> I augusti 2021 utökas säkerhet som standard till Exchange e-postflödesregler (kallas även transportregler). Om du använder e-postflödesregler för att tillåta nätfiskebedrägerier eller ofiltrerad leverans till postlådor för [](configure-advanced-delivery.md) säkerhetsåtgärd måste du så småningom eliminera dessa regler och byta till att använda den avancerade leveransprincipen när funktionen är tillgänglig för _dig._
 
 Den enda åsidosättningen som tillåter nätfiskemeddelande med hög säkerhet att kringgå filtrering är e-postflödesregler. Information om hur du använder e-postflödesregler för att kringgå filtrering finns i [Använda e-postflödesregler för att ange SCL i meddelanden.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
 

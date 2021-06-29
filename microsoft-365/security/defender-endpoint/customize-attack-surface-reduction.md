@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0705ba096c2aefc6bd089bd5fba80b055fd881dc
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 6d2770dec270e2d1c1b9750387a0f07f82b357f9
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055242"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177099"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Anpassa regler för minskning av attackytan
 
@@ -42,7 +42,11 @@ Du kan ange minskningsregler för attackytan för enheter som kör någon av fö
 - Windows 10 Pro, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
 - Windows 10 Enterprise, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
 - Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19) Du kan använda grupprincip-, PowerShell- och MDM-konfigurationstjänstleverantörer (Mobile Device Management) för att konfigurera de här inställningarna.
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+
+Du kan använda grupprincip-, PowerShell- och MDM-konfigurationstjänstleverantörer (Mobile Device Management) för att konfigurera de här inställningarna.
+
+Se [Krav](enable-attack-surface-reduction.md#requirements) i artikeln "Aktivera regler för att minska attackytan" för information om operativsystem som stöds och ytterligare krav.
 
 ## <a name="exclude-files-and-folders"></a>Undanta filer och mappar
 
@@ -66,21 +70,22 @@ Om du stöter på problem med regler för att identifiera filer som du tror inte
 
 | Regelbeskrivning | GUID |
 |:----|:----|
+| Blockera missbruk av utnyttjas sårbara signerade drivrutiner | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
+| Blockera Adobe Reader från att skapa underordnade processer | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
 | Blockera alla Office från att skapa underordnade processer | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
-| Blockera körning av potentiellt oönskade skript | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
-| Blockera Win32 API-anrop från Office makro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
-| Blockera Office program från att skapa körbart innehåll | `3B576869-A4EC-4529-8536-B80A7769E899` |
-| Blockera Office-program från att mata in kod i andra processer | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
-| Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
 | Blockera körbart innehåll från e-postklient och webbaserad e-post | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
 | Blockera körbara filer från att köras såvida de inte uppfyller villkoren för en vän, ålder eller ett betrott listvillkor | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| Använd avancerat skydd mot utpressningstrojaner | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
-| Blockera att autentiseringsuppgifter stjäls från Windows lokala säkerhetsutfärdares undersystem (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
+| Blockera körning av potentiellt oönskade skript | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
+| Blockera JavaScript eller VBScript från att starta hämtat körbart innehåll | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| Blockera Office program från att skapa körbart innehåll | `3B576869-A4EC-4529-8536-B80A7769E899` |
+| Blockera Office-program från att mata in kod i andra processer | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
+| Blockera Office kommunikationsprogram från att skapa underordnade processer | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
+| Blockera beständighet via WMI-händelseprenumeration | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 | Blockera processskapanden som kommer från PSExec- och WMI-kommandon | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
 | Blockera icke betrodda och osignerade processer som körs från USB | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| Blockera Office kommunikationsprogram från att skapa underordnade processer | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
-| Blockera Adobe Reader från att skapa underordnade processer | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| Blockera beständighet via WMI-händelseprenumeration | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
+| Blockera Win32 API-anrop från Office makro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
+| Använd avancerat skydd mot utpressningstrojaner | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
 
 Mer information [om varje regel](attack-surface-reduction.md) finns i avsnittet för att minska attackytan.
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du hanterar Valv för att skydda företaget från skadliga webbplatser.
-ms.openlocfilehash: ce0c1ba6e4099b6eaf4ec974938170020b8a5892
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7e6b4507cd363a448812b48e3eafc7f4c077be3c
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580636"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177519"
 ---
 # <a name="manage-safe-links"></a>Hantera Valv länkar
 
@@ -37,14 +37,10 @@ Microsoft Defender för Office 365 , kallades tidigare för Microsoft 365 ATP el
 ## <a name="try-it"></a>Prova själv!
 
 1. Gå till [administrationscentret](https://admin.microsoft.com)och välj **Konfigurera**.
-1. Rulla nedåt till **Öka skyddet mot avancerade hot**. Välj **Visa,** **Hantera** och sedan **ATP Valv Länkar**.
-1. Under **Principer som gäller för hela organisationen** väljer du **Standardprincip** och sedan **redigeringsikonen.**
-1. Ange en URL-adress som du vill blockera.
-1. Välj **Använd säkra länkar i Office, Office för iOS och Android**; välj **Spåra inte när användare klickar på säkra länkar**; och välj **Låt inte användare klicka sig igenom säkra länkar till den ursprungliga URL:en.** De kanske redan är markerade om du har ställt in standardprincipen. Välj **Spara**.
-1. Under **Principer som gäller för specifika mottagare** väljer du **Rekommenderad regel för säkra** länkar och sedan **redigeringsikonen.**
-1. Välj **inställningar**, rulla nedåt, ange den URL-adress som du inte vill kontrollera och välj sedan ikonen **Lägg till.**
-1. Välj **tillämpas på** och välj sedan ditt domännamn. Markera alla ytterligare domäner som du vill att regeln ska tillämpas på. Välj **lägg** till , **OK** och sedan **Spara**.
+2. Rulla nedåt till **Öka skyddet mot avancerade hot**. Välj **Hantera** och välj **Valv Länkar**.
+3. Välj **Global Inställningar** och **ange den** URL du vill blockera i Blockera följande URL:er.
+4. Välj **Använd Valv-länkar** i Office 365-appen , markera Spåra inte när användare klickar på skyddade länkar i **Office 365-appar** och välj Låt inte användare klicka sig fram till den ursprungliga URL:en **i Office 365-appar**. De kanske redan är markerade om du har ställt in standardprincipen. Välj **Spara**.
 
-ATP Valv-länkar är nu konfigurerade. Det kan ta upp till 30 minuter innan ändringarna verkställs.
+Valv Länkar är nu konfigurerade. Det kan ta upp till 30 minuter innan ändringarna verkställs.
 
 När en användare får ett e-postmeddelande med länkar genomsöks länkarna. Om länkarna anses vara säkra går de att klicka på. Men om länken finns med i listan över blockerade länkar visas ett meddelande om att länken har blockerats.

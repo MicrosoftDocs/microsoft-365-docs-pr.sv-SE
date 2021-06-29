@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 0a9eb63ed4508ff875324cf6fb0b4a8ad59cb29f
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062209"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177555"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Vad är nytt i Microsoft Defender för Office 365
 
@@ -62,7 +62,6 @@ Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch
 - Öka gränserna för export av poster från 9 990 till 200 000 i [upplevelser för söker](threat-explorer.md)
 - Utöka datalagrings- och sökbegränsningen i Utforskaren (och Realtidsidentifiering) för utvärderingsklienter från 7 (föregående gräns) till 30 dagar i [sökning](threat-explorer.md)
 - Nya pivoter  för sökning som  kallas personifierad domän och personifierad användare i Utforskaren (och identifieringar i realtid) för att söka efter personifieringsattacker mot skyddade användare eller domäner. Mer information finns i [.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender för Office 365 abonnemang 1 eller abonnemang 2)
-- Ny första kontakt som säkerhetstips för när mottagarna först får ett e-postmeddelande från en avsändare eller inte ofta får e-post från en avsändare. Mer information om den här inställningen och hur du konfigurerar den med hjälp Exchange e-postflödesregler (kallas även transportregler) finns i [Säkerhetstips.](set-up-anti-phishing-policies.md#first-contact-safety-tip)
 
 ## <a name="december-2020"></a>December 2020
 
@@ -75,6 +74,7 @@ Lär dig mer genom att titta på [den här videon](https://www.youtube.com/watch
 
 ## <a name="septemberoctober-2020"></a>September/oktober 2020
 
+- Ny första kontakt som säkerhetstips för när mottagarna först får ett e-postmeddelande från en avsändare eller inte ofta får e-post från en avsändare. Mer information om den här inställningen och hur du konfigurerar den med hjälp Exchange e-postflödesregler (kallas även transportregler) finns i [Säkerhetstips.](set-up-anti-phishing-policies.md#first-contact-safety-tip)
 - [Kontrollera principer med hjälp av Configuration Analyzer](configuration-analyzer-for-security-policies.md)
 - Utökade funktioner i Hotutforskaren, inklusive populära användare, transportregler och kopplingar (Defender för Office 365 information i [Threat Explorer](threat-explorer.md) (e-post [tillåts/blockerades](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) av klientorganisation/användarprincip) (Defender för Office 365 abonnemang 2)
 - Surfa med URL-hot i [Threat Explorer](threat-explorer.md#threats-in-urls) (skadlig kod, nätt, skräppost eller ingen) (Defender för Office 365 abonnemang 2)

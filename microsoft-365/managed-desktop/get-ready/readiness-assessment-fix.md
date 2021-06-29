@@ -1,7 +1,7 @@
 ---
 title: Åtgärda problem som hittats av verktyget för bedömning av beredskap
 description: Detaljerade åtgärder som ska vidtas för varje problem som verktyget hittar
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 5a22996ce9e39dc16191ddddc6aa9393de557bbc
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0296e8151162ad4f2855fdd29ff2fc0ed4b4d6b2
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579416"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177579"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
 
@@ -65,6 +65,14 @@ Minst en certifikatkoppling har ett fel. Om du behöver den här anslutningen f�
 **Rådgivning**
 
 Du har minst en certifikatkoppling och inga fel rapporteras. Men inför distributionen kan du behöva skapa en profil för att kunna återanvända kopplingen för Microsoft Hanterat skrivbord enheter. Mer information finns i Förbereda [certifikat och nätverksprofiler för Microsoft Hanterat skrivbord](certs-wifi-lan.md).
+
+### <a name="company-portal"></a>Företagsportal
+
+Microsoft Hanterat skrivbord att IT-administratörer installerar Intune-företagsportal för sina användare med Microsoft Hanterat skrivbord enheter. 
+
+**Inte klar**
+
+Du har inte Företagsportal för användarna. Köp Företagsportal och tvinga fram en synkronisering mellan Intune och Microsoft Store för företag. Mer information finns i [Installera Intune-företagsportal på enheter.](../get-started/company-portal.md)
 
 
 ### <a name="conditional-access-policies"></a>Villkorsstyrda åtkomstprinciper
@@ -218,15 +226,15 @@ Du kan be din Microsoft-kontorepresentant för en fråga i Microsoft Endpoint Co
 
 ### <a name="windows-hello-for-business"></a>Windows Hello för företag
 
-Microsoft Hanterat skrivbord måste Windows Hello för företag för att aktiveras.
+Microsoft Hanterat skrivbord kräver Windows Hello för företag är aktiverat.
 
 **Inte klar**
 
-Windows Hello for Business är inaktiverat. Aktivera den genom att följa stegen i [Skapa en princip Windows Hello för företag](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
+Windows Hello för företag är inaktiverat. Aktivera den genom att följa stegen i [Skapa en Windows Hello för företag-princip](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
 
 **Rådgivning**
 
-Windows Hello for Business har inte ställts in. Aktivera den genom att följa stegen i [Skapa en Windows Hello for Business-princip](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
+Windows Hello för företag har inte ställts in. Aktivera den genom att följa stegen i [Skapa en Windows Hello för företag-princip.](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
 
 
 ### <a name="windows-10-update-rings"></a>Windows 10 uppdateringsringar

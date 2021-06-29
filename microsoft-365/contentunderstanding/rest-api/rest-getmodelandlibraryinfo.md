@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Använd REST API för att få information om en modell och biblioteket där den har tillämpats.
-ms.openlocfilehash: 6cd61364ed3b360ef235aaba21a2735002fe481e
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2449084653c6d9af8d774edc306c485e7a466bf6
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904298"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177075"
 ---
 # <a name="get-model-and-library-information"></a>Hämta modell- och biblioteksinformation
 
@@ -25,13 +25,13 @@ Hämtar information om en modell och biblioteket där den har tillämpats (se [e
 ## <a name="http-request"></a>HTTP-begäran
 
 ```HTTP
-GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP/1.1
+GET /_api/machinelearning/publications/getbymodeluniqueid('{modelUniqueId}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI-parametrar
 
 | Namn | In | Obligatoriskt | Typ | Beskrivning |
-|--------|-------|--------|------------|
+|--------|-------|--------|------------|-----------|
 |ModelUniqueId|fråga|Sant|GUID|Modellfilens unika ID.|
 
 ## <a name="request-headers"></a>Frågerubriker
@@ -41,22 +41,11 @@ GET /_api/machinelearning/publications/getbyuniqueid(‘{modelUniqueId}’) HTTP
 |Acceptera|application/json;odata=verbose|
 
 
-## <a name="request-body"></a>Frågebrödtext
-
-| Namn | Obligatoriskt | Typ | Beskrivning |
-|--------|-------|--------|------------|
-|ModelUniqueId|ja|sträng|Modellfilens unika ID.|
-|TargetSiteUrl|ja|sträng|Den fullständiga URL-adressen till målbibliotekswebbplatsen.|
-|TargetWebServerRelativeUrl|ja|sträng|Serverns relativa URL-adress för webben för målbiblioteket.|
-|TargetLibraryServerRelativeUrl|ja|sträng|Serverns relativa URL-adress för målbiblioteket.|
-|TargetLibraryRemoved|ja|int|Flaggan som anger om målbiblioteket har tagits bort eller inte.|
-
 ## <a name="response"></a>Svar
 
 | Namn   | Typ  | Beskrivning|
 |--------|-------|------------|
 |200 OK| |Klart|
-|201 skapad| |Observera att eftersom detta API stöder att tillämpa modell på flera bibliotek, kan en 201 returneras även om det inte går att tillämpa modellen på ett av biblioteken. <br>Kontrollera svarbrödtexten för att förstå om modellen har tillämpats på alla angivna bibliotek. Gå till [Frågebrödtext](rest-getmodelandlibraryinfo.md#request-body) för mer information.|
 
 ## <a name="examples"></a>Exempel
 
@@ -67,7 +56,7 @@ I det här exemplet är ID:t för dokumenttolkningsmodellen i Contoso Contract `
 #### <a name="sample-request"></a>Exempelbegäran
 
 ```HTTP
-GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e69d-21fb-4a24-a17a-9bdfa7cb63dc}’) HTTP/1.1
+GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid('7645e69d-21fb-4a24-a17a-9bdfa7cb63dc') HTTP/1.1
 ```
 #### <a name="sample-response"></a>Exempelsvar
 
@@ -130,7 +119,7 @@ GET /sites/TestCC/_api/machinelearning/publications/getbymodeluniqueid(‘{7645e
             "ViewOption": "NewViewAsDefault"
         }
     ]
-}```
+}
 ```
 
 ## <a name="see-also"></a>Se även

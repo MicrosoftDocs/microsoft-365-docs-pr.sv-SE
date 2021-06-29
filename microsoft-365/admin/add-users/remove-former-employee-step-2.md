@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig hur du sparar innehållet i en tidigare anställds postlåda.
-ms.openlocfilehash: d73d7005d2ccea429f66c5b2564220424665439f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd24145b6b5162a03dee0338cc0820e5af271ddd
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244287"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177495"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Steg 2 - Spara innehållet i en tidigare anställds postlåda
 
@@ -45,4 +45,4 @@ När du har blockerat en användare från att logga in i organisationen kan du s
 
     **ELLER**
 
-2. Lägg till den tidigare anställdas e-postadress i din version Outlook och exportera sedan data till en PST-fil. Du kan importera dessa data till ett annat e-postkonto vid behov. Läs steg [6 – Ge en annan anställd tillgång till OneDrive och Outlook data.](remove-former-employee-step-6.md)
+2. Lägg till den tidigare anställdas e-postadress i din version av Outlook på skrivbordet och exportera sedan data till en PST-fil. Du kan importera dessa data till ett annat e-postkonto vid behov. Läs steg [6 – Ge en annan anställd tillgång till OneDrive och Outlook data.](remove-former-employee-step-6.md)

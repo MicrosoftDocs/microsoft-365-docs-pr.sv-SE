@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Blockera en tidigare anställd från att logga in och blockera åtkomst till Microsoft 365 tjänster.
-ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061820"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177123"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Steg 1 – Förhindra en tidigare anställd från att logga in och blockera åtkomst Microsoft 365 tjänster
 
@@ -65,7 +65,7 @@ Mer information om hur lång tid det tar att avsluta en persons e-post finns i [
 
 Om du har e-post som en del av Microsoft 365-prenumerationen loggar du in på Exchange-administrationscentret och följer de här stegen för att blockera den tidigare anställda från att komma åt sin e-post.
   
-1. Gå till <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">administrationscentret för Exchange</a>.
+1. Gå till <a href="https://admin.exchange.microsoft.com/" target="_blank">administrationscentret för Exchange</a>.
 2. I Administrationscenter för Exchange går du till **Mottagare** \> **Postlådor**.
-3. Dubbelklicka på användaren och gå till sidan **Postlådefunktioner.** Under **Mobila enheter** väljer du Inaktivera **Exchange ActiveSync** inaktivera **OWA** för enheter och svarar **Ja** på båda när du uppmanas att göra det.
-4. Under **E-postanslutning** väljer **du Inaktivera** och svarar Ja **när** du uppmanas att göra det.
+3. Dubbelklicka på användaren och gå till Hantera inställningar för **e-postprogram** under **E-postprogram**. Stäng **av** skjutreglaget för alla alternativ. **Mobil (Exchange ActiveSync),** **Outlook på webben**, **Outlook (MAPI)**, **Exchange webbtjänster,** **POP3** och **IMAP.**
+4. Välj **Spara**.

@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Använd REST API för att hämta eller uppdatera information om en dokumenttolkningsmodell för SharePoint Syntex med användning av modellrubriken.
-ms.openlocfilehash: a6fbe9ba9d3f5240c7b775613f97b83bfa2caa50
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b50849d0dc1c9deefa55a5c92303d18f251e2f8b
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904328"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177135"
 ---
 # <a name="getbytitle"></a>GetBy rubrik
 
@@ -25,13 +25,13 @@ Hämtar eller uppdaterar information om en dokumenttolkningsmodell för SharePoi
 ## <a name="http-request"></a>HTTP-begäran
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 Samma metod kan även användas för att ta bort en modell.
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>URI-parametrar
@@ -42,7 +42,7 @@ DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
 
 ## <a name="request-headers"></a>Frågerubrik
 
-| Rubrikfält | Värde |
+| Rubrik | Värde |
 |--------|-------|
 |Acceptera|application/json;odata=verbose|
 
@@ -65,12 +65,12 @@ I det här exemplet är namnet på tolkningsmodellen för Syntex-dokumentet `Con
 #### <a name="sample-request"></a>Exempelbegäran
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 #### <a name="sample-response"></a>Exempelsvar
 
-**Statuskod:** 204
+**Statuskod:** 200
 
 ```HTTP
 {
@@ -109,9 +109,9 @@ I det här exemplet är namnet på tolkningsmodellen för Contoso Contract-dokum
 ##### <a name="sample-request"></a>Exempelbegäran
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 ## <a name="see-also"></a>Se även
 
-[REST API för Syntex-dokumentets tolkningsmodell](syntex-model-rest-api.md)
+[REST API för dokumenttolkningsmodell i Syntex](syntex-model-rest-api.md)

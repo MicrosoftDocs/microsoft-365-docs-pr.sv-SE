@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169610"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177627"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivera regler för minskning av attackytan
 
@@ -37,6 +37,8 @@ ms.locfileid: "53169610"
 
 ## <a name="requirements"></a>Krav
 
+Funktioner för att minska attackytan i Windows versioner
+
 Du kan ange minskningsregler för attackytan för enheter som kör någon av följande utgåvor och versioner av Windows:
 
 - Windows 10 Pro, version [1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
@@ -44,7 +46,13 @@ Du kan ange minskningsregler för attackytan för enheter som kör någon av fö
 - Windows Server, [version 1803 (Halvårskanal)](/windows-server/get-started/whats-new-in-windows-server-1803) eller senare
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Även om minskningsregler för attackytan inte kräver en [E5 Windows-licens,](/windows/deployment/deploy-enterprise-licenses)får du avancerade hanteringsfunktioner om du har Windows E5. De här funktionerna är endast tillgängliga i Windows E5: övervakning, analys och arbetsflöden som är tillgängliga i Defender för [slutpunkt,](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)samt rapporterings- och konfigurationsfunktioner [i Microsoft 365 säkerhetscenter.](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true) Dessa avancerade funktioner är inte tillgängliga med en licens från Windows Professional eller Windows E3. Men om du har dessa licenser kan du använda Loggboken och Microsoft Defender Antivirus för att granska dina attack surface-minskningsregelhändelser.
+Om du vill använda hela funktionsuppsättningen för minskningsregler för attackytan behöver du:
+
+- Windows Defender Antivirus som primärt AV (realtidsskydd på)
+- [Molnleveransskydd på](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (vissa regler kräver det)
+- Windows 10 Enterprise E5- eller E3-licens Microsoft 365 Företagslicens
+
+Även om minskningsregler för attackytan inte kräver en [Windows E5-licens](/windows/deployment/deploy-enterprise-licenses), med en Windows E5-licens, får du avancerade hanteringsfunktioner, inklusive övervakning, analys och arbetsflöden som är tillgängliga i Defender för Slutpunkt, samt rapporterings- och konfigurationsfunktioner i Microsoft 365 säkerhetscenter. Dessa avancerade funktioner är inte tillgängliga med en E3-licens, men du kan fortfarande använda Loggboken för att granska händelser för attackytans minskning av regler.
 
 Varje ASR-regel innehåller en av fyra inställningar:
 
