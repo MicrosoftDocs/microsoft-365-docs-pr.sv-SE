@@ -393,7 +393,7 @@
             - name: Sekretess och säkerhet
               href: basic-mobility-security/privacy-and-security.md
             - name: Vanliga frågor och svar
-              href: basic-mobility-security/frequently-asked-questions.md
+              href: basic-mobility-security/frequently-asked-questions.yml
             - name: Rensa mobila enheter
               href: basic-mobility-security/wipe-mobile-device.md
             - name: Stäng av grundläggande Mobility and Security
