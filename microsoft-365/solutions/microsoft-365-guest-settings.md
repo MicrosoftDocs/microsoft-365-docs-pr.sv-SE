@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Läs mer om de inställningar för gästdelning som är tillgängliga i Microsoft 365 som kan påverka delning med personer utanför organisationen.
-ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 622e3ac0c44ec763cffff51773edbe6c64515a11
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625436"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177446"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Inställningar för gästdelning i Microsoft 365
 
@@ -165,8 +165,10 @@ Eftersom OneDrive är en webbplatshierarki i SharePoint påverkar delningsinstä
 | Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Begränsa extern delning per domän|Av|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna.<br><br> Den här inställningen påverkar alla SharePoint- och OneDrive-webbplatser i organisationen.|
+|Tillåt endast användare i specifika säkerhetsgrupper att dela externt|Av|Om du vill begränsa vilka som kan dela med gäster i SharePoint och OneDrive begränsar du delning till personer i särskilda säkerhetsgrupper. De här inställningarna påverkar inte delning via Microsoft 365-grupper eller Teams. Gäster som bjuds in via en grupp eller Teams har också åtkomst till den associerade webbplatsen, men dokument- och mappdelning kan endast göras av personer i de angivna säkerhetsgrupperna.<br><br>För varje angiven grupp kan du välja vilka användare som kan dela med alla länkar.|
 |Gäster måste logga in med det konto som delningsinbjudningar skickas till|Av|Hindrar gäster från att acceptera inbjudningar till webbplatsdelningar med en annan e-postadress än den som inbjudan skickades till.<br><br>[SharePoint- och OneDrive-integrering med Azure AD B2B (förhandsversion)](/sharepoint/sharepoint-azureb2b-integration-preview) använder inte den här inställningen eftersom alla gäster läggs till i katalogen utifrån den e-postadress som inbjudan skickades till. Det går inte att komma åt webbplatsen med alternativa e-postadresser.|
 |Tillåt gäster att dela objekt som de inte äger|På|När inställningen är **På** kan gäster dela objekt som de inte äger med andra användare eller gäster. När den är **Av** kan de inte det. Gäster kan alltid dela objekt som de har fullständig kontroll över.|
+|Personer som använder en verifieringskod måste autentiseras igen efter så här många dagar|Av|Med den här inställningen kan du kräva att användare som autentiserar med ett engångslösenord måste autentiseras igen efter ett visst antal dagar.|
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Inställningar för fil- och mapplänkar för SharePoint och OneDrive
 
@@ -182,21 +184,6 @@ När filer och mappar delas i SharePoint och OneDrive får delningsmottagare en 
 |Länkarna måste upphöra att gälla inom så här många dagar|Av (upphör inte)|*Alla*-länken upphör efter det angivna antalet dagar efter att den har skapats. Länkar som har upphört kan inte förnyas. Skapa en ny länk om du vill fortsätta att dela efter förfallotiden.|
 |Filbehörigheter|Visa och redigera|Anger filbehörighetsnivåer som är tillgängliga för användare när de skapar en *Alla*-länk. Om **Visa** har valts kan användare bara skapa *Alla*-fillänkar med visningsbehörigheter. Om **Visa och redigera** har valts kan användare välja mellan behörigheter för att visa och visa och redigera när de skapar länken.|
 |Mappbehörigheter|Visa, redigera och ladda upp|Anger mappbehörighetsnivåer som är tillgängliga för användare när de skapar en *Alla*-länk. Om **Visa** har valts kan användare bara skapa *Alla*-mapplänkar med visningsbehörigheter. Om **Visa, redigera och ladda upp** har valts kan användare välja mellan behörigheter för att visa och visa, redigera och ladda upp när de skapar länken.|
-
-### <a name="sharepoint-and-onedrive-security-group-settings"></a>Inställningar för säkerhetsgrupper i SharePoint och OneDrive
-
-Om du vill begränsa vilka som kan dela med gäster i SharePoint och OneDrive begränsar du delning till personer i särskilda säkerhetsgrupper. De här inställningarna påverkar inte delning via Microsoft 365-grupper eller Teams. Gäster som bjuds in via en grupp eller Teams har också åtkomst till den associerade webbplatsen, men dokument- och mappdelning kan endast göras av personer i de angivna säkerhetsgrupperna.
-
-**Navigering:** Administrationscenter för SharePoint > Delning > Begränsa extern delning till specifika säkerhetsgrupper
-
-![Skärmbild av delningsinställningar för säkerhetsgrupper i SharePoint på organisationsnivå](../media/sharepoint-organization-external-sharing-security-groups.png)
-
-| Inställning | Standard | Beskrivning |
-|:-----|:-----|:-----|
-|Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade externa användare|Av|När **På** kan bara personer i de angivna säkerhetsgrupperna dela med personer utanför organisationen. Bara länkar för *Vissa personer* är tillgängliga. Delning med *Alla* inaktiveras, såvida inte **Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade användare och med hjälp av anonyma länkar** också är **På**|
-|Tillåt endast användare i valda säkerhetsgrupper att dela med autentiserade användare och med hjälp av anonyma länkar|Av|När inställningen är **På** kan bara personerna i de angivna säkerhetsgrupperna dela med gäster. Både länkar för *Alla* och *Vissa personer* är tillgängliga.|
-
-Båda inställningarna kan användas samtidigt. Om en användare ingår i säkerhetsgrupper som angetts för båda inställningarna, kommer den högre behörighetsnivån att gälla (*Alla* plus *Vissa användare*). Kapslade säkerhetsgrupper stöds.
 
 ## <a name="sharepoint-site-level"></a>SharePoint (webbplatsnivå)
 
