@@ -25,20 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Säkerhets- och samarbetsrekommendationer för Microsoft 365 Business Premium för småföretag, inklusive mindre firmor, praktiker och politiska kampanjer.
-ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 34f36a86167ebba2ad80cc0046184b3c1997f845
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245034"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177471"
 ---
-<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 för småföretag och kampanjer
-===========================
+# <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 för småföretag och kampanjer
 
 Om du har Microsoft 365 Business Premium är anvisningarna i det här biblioteket det snabbaste sättet för dig att konfigurera säkerheten och börja samarbeta på ett säkert sätt. Att säkra data och kommunikation i dagens värld är en prioritering, särskilt för medicinska och juridiska metoder praxis, politiska kampanjer och många andra mindre branscher. Den här lösningen ger en uppsättning rekommendationer som hjälper till att skydda dig och din data. Det här biblioteket innehåller hjälp med konfiguration och användning av den här rekommenderade miljön, oavsett ditt företagstyp.
 
 
-![Microsoft 365 Business Premium skyddar dina produktivitetsverktyg, samarbetsverktyg, fillagring, e-post, enheter och identiteter](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business Premium skyddar dina produktivitetsverktyg, samarbetsverktyg, fillagring, e-post, enheter och identiteter](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 Den här konfigurationen innehåller följande riktlinjer för produktivitet, samarbete, fillagring, e-post, enheter och identitet för att skydda ditt företag:
 
@@ -50,8 +49,7 @@ Den här konfigurationen innehåller följande riktlinjer för produktivitet, sa
 |Lagra och dela filer på ett säkert sätt | Dela filer och videor från Microsoft Teams, OneDrive, SharePoint och Microsoft Stream samt skydda känsliga data.| [Dela filer och videor](share-files-and-videos.md) |
 |Hanterade Windows 10-enheter |Använd hanterade enheter för viktig personal och skydda dessa enheter. | [Konfigurera hanterade enheter](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
-<a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>En rekommenderad säkerhetskonfiguration för Microsoft 365 Business Premium
-------------------------------------
+## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>En rekommenderad säkerhetskonfiguration för Microsoft 365 Business Premium
 
 Med den här rekommenderade säkra konfigurationen för Microsoft 365 Business Premium kan du:
 
@@ -71,8 +69,7 @@ Biblioteket innehåller följande:
 
 Mer information om innehållet finns i [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
 
-<a name="get-started"></a>Komma igång
---------------------------
+## <a name="get-started"></a>Komma igång
 
 Följ dessa steg för att komma igång:
 
@@ -80,8 +77,7 @@ Följ dessa steg för att komma igång:
 - För vilket företag som helst: [Lär dig hur dina användare kommer att jobba med Microsoft 365](m365-campaigns-users.md)
 - För alla företag: [Konfigurera Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
-<a name="solutions-for-your-business"></a>Lösningar för ditt företag
---------------------------
+## <a name="solutions-for-your-business"></a>Lösningar för ditt företag
 
 När du har installerat din säkra Microsoft 365-miljö kan du börja arbeta med följande lösningar:
 
