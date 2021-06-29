@@ -1,5 +1,5 @@
 ---
-title: Tillämpa en modell
+title: Batch-tillämpa modell
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,14 +11,14 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Använd REST API för att tillämpa en dokumenttolkningsmodell på ett eller flera bibliotek.
-ms.openlocfilehash: d4cadad3c45dd7af0cdaeb4e1b367426289db870
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904357"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177267"
 ---
-# <a name="apply-model"></a>Tillämpa en modell
+# <a name="batch-apply-model"></a>Batch-tillämpa modell
 
 Tillämpar (eller synkroniserar) en tränad dokumenttolkningsmodell på ett eller flera bibliotek (se [exempel](rest-applymodel-method.md#examples)).
 
@@ -44,18 +44,45 @@ Ingen
 
 | Namn | Obligatoriskt | Typ | Beskrivning |
 |--------|-------|--------|------------|
+|_metadata|ja|sträng|Ställ in objektmeta på SPO. Använd alltid värdet: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"}.|
+|Publikationer|ja|MachineLearningPublicationEntityData[]|Samlingen MachineLearningPublicationEntityData som var och en anger modell- och måldokumentbiblioteket.|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Namn | Obligatoriskt | Typ | Beskrivning |
+|--------|-------|--------|------------|
 |ModelUniqueId|ja|sträng|Modellfilens unika ID.|
-TargetSiteUrl|ja|sträng|Den fullständiga URL-adressen till målbibliotekswebbplatsen.|
-TargetWebServerRelativeUrl|ja|sträng|Serverns relativa URL-adress för webben för målbiblioteket.|
-TargetLibraryServerRelativeUrl|ja|sträng|Serverns relativa URL-adress för målbiblioteket.|
-ViewOption|nej|sträng|Anger om den nya modellvyn ska anges som biblioteksstandard.|
+|TargetSiteUrl|ja|sträng|Den fullständiga URL-adressen till målbibliotekswebbplatsen.|
+|TargetWebServerRelativeUrl|ja|sträng|Serverns relativa URL-adress för webben för målbiblioteket.|
+|TargetLibraryServerRelativeUrl|ja|sträng|Serverns relativa URL-adress för målbiblioteket.|
+|ViewOption|nej|sträng|Anger om den nya modellvyn ska anges som biblioteksstandard.|
 
 ## <a name="response"></a>Svar
 
 | Namn   | Typ  | Beskrivning|
 |--------|-------|------------|
-|200 OK| |Klart|
-|201 skapad| |Observera att eftersom detta API stöder att tillämpa modell för flera bibliotek kan 201 returneras även om det inte går att tillämpa modellen på ett av biblioteken. <br>Kontrollera svarbrödtexten för att förstå om modellen har tillämpats på alla angivna bibliotek. Gå till [Frågebrödtext](rest-applymodel-method.md#request-body) för mer information.|
+|201 skapad||Det här är ett anpassat API som stöder tillämpning av en modell för flera dokumentbibliotek. Om det skulle lyckas delvis kan 201 som skapats fortfarande returneras och anroparen måste inspektera svarstexten för att förstå om modellen har tillämpats på ett dokumentbibliotek.|
+
+## <a name="response-body"></a>Svarstext
+| Namn   | Typ  | Beskrivning|
+|--------|-------|------------|
+|TotalSuccccis|int|Det totala antalet modeller som har tillämpats på ett dokumentbibliotek.|
+|TotalFailures|int|Det totala antalet modeller som inte kan tillämpas på ett dokumentbibliotek.|
+|Information|MachineLearningPublicationResult[]|Samlingen MachineLearningPublicationResult som var och en anger det detaljerade resultatet av att tillämpa modellen på dokumentbiblioteket.|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| Namn   | Typ  | Beskrivning|
+|--------|-------|------------|
+|StatusCode|int|HTTP-statuskoden.|
+|ErrorMessage|sträng|Felmeddelandet som anger vad som är fel när modellen tillämpas på dokumentbiblioteket.|
+|Publicering|MachineLearningPublicationEntityData|Den anger modellinformationen och måldokumentbiblioteket.| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Namn | Typ | Beskrivning |
+|--------|--------|------------|
+|ModelUniqueId|sträng|Modellfilens unika ID.|
+|TargetSiteUrl|sträng|Den fullständiga URL-adressen till målbibliotekswebbplatsen.|
+|TargetWebServerRelativeUrl|sträng|Serverns relativa URL-adress för webben för målbiblioteket.|
+|TargetLibraryServerRelativeUrl|sträng|Serverns relativa URL-adress för målbiblioteket.|
 
 ## <a name="examples"></a>Exempel
 
@@ -89,7 +116,7 @@ I det här exemplet är ID:t för dokumenttolkningsmodellen i Contoso Contract `
 
 I svaret refererar TotalFailures och TotalSuccesses till antalet misslyckanden och framgångar för modellen som tillämpas på de angivna biblioteken.
 
-**Statuskod:** 200
+**Statuskod:** 201
 
 ```JSON
 {
@@ -103,7 +130,7 @@ I svaret refererar TotalFailures och TotalSuccesses till antalet misslyckanden o
                 "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
                 "ViewOption": "NewViewAsDefault"
             },
-            "StatusCode": 200
+            "StatusCode": 201
         }
     ],
     "TotalFailures": 0,

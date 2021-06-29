@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Använd REST API för att skapa en begäran om att klassificera en eller flera filer med hjälp av en tränad dokumenttolkningsmodell.
-ms.openlocfilehash: 6a218db181368c2837d570062b6101bc3bacfb05
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 3a796bcdb38a9a6930b51f7d585febb69082732e
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904278"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177087"
 ---
 # <a name="create-classification-request"></a>Skapa klassificeringsbegäran
 
@@ -33,19 +33,19 @@ POST /_api/machinelearning/workItems HTTP/1.1
 
 Ingen
 
-## <a name="request-headers"></a>Frågerubrik
+## <a name="request-headers"></a>Frågerubriker
 
-| Rubrikfält | Värde |
+| Rubrik | Värde |
 |--------|-------|
 |Acceptera|application/json;odata=verbose|
-|Innehållstyp|application/json;odata=verbose;charset=utf-8|
-|x-requestdigest|Lämplig sammanfattning för aktuell webbplats|
+|Content-Type|application/json;odata=verbose;charset=utf-8|
+|x-requestdigest|Den lämpliga sammanfattningen för aktuell webbplats|
 
 ## <a name="request-body"></a>Frågebrödtext
 
 |Namn    |Typ   |Beskrivning |
 |--------|-------|------------|
-|_metadata|sträng |Ställ in objektmeta på SPO. Använd alltid värdet: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"}. |
+|_metadata|sträng |Ställ in objektmeta på SPO. Använd alltid värdet: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"}. |
 |TargetSiteId|guid|ID för webbplatsen där filen som ska klassificera finns.|
 |TargetWebId|guid|ID på webben där filen som ska klassificera finns.|
 |TargetUniqueId|guid|ID för filen som ska klassificeras.|
@@ -65,7 +65,7 @@ Ingen
 ```
 {
     "__metadata": {
-        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningModelEntityData"
+        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"
     },
     "TargetSiteId": "f686e63b-aba7-48e5-97c7-68c4c1df292f",
     "TargetWebId": "66d6b64d-6f88-4dd9-b3db-47e6f00c53e8",
@@ -79,4 +79,4 @@ Ingen
 
 ## <a name="see-also"></a>Se även
 
-[REST API för Syntex-dokumentets tolkningsmodell](syntex-model-rest-api.md)
+[REST API för dokumenttolkningsmodell i Syntex](syntex-model-rest-api.md)

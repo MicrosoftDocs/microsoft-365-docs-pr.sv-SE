@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd en kvarhållningsprincip för effektiv kontroll över innehåll som användare genererar med e-post, dokument och konversationer. Behåll det du vill ha och ta bort det du inte vill ha.
-ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053077"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169598"
 ---
 # <a name="create-and-configure-retention-policies"></a>Skapa och konfigurera kvarhållningsprinciper
 
@@ -116,7 +116,7 @@ Det är möjligt att en kvarhållningsprincip som används på Microsoft 365-gru
 ### <a name="retention-policy-for-yammer-locations"></a>Kvarhållningsprincip för Yammer-platser
 
 > [!NOTE]
-> Kvarhållningsprinciper för Yammer är i förhandsversion.
+> Kvarhållningsprinciper för Yammer finns i förhandsversion och informerar för närvarande inte användarna när meddelanden tas bort på grund av en kvarhållningsprincip.
 >
 > För att använda den här funktionen måste Yammer-nätverket vara i [enhetligt läge](/yammer/configure-your-yammer-network/overview-native-mode), inte hybridläge.
 

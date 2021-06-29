@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: När du skapar en känslighetsetikett kan du automatiskt tilldela filer och e-postmeddelanden en etikett, eller så kan du uppmana användarna att välja den etikett som du rekommenderar.
-ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 5fdb3bd963468fb7fdb4de307df8ccda0c69bbb4
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137781"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169622"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Använda en känslighetsetikett för innehåll automatiskt
 
@@ -89,6 +89,7 @@ I följande tabell kan du identifiera skillnader i beteende för två kompletter
 |Begränsa efter plats|Nej |Ja |
 |Villkor: träningsbara klassificerare|Ja |Nej |
 |Villkor: Delningsalternativ och ytterligare alternativ för e-post|Nej |Ja |
+|Villkor: Undantag|Nej |Ja (endast e-post) |
 |Rekommendationer, principbeskrivningar och användaråsidosättningar|Ja |Nej |
 |Simuleringsläge|Nej |Ja |
 |Exchange-bilagor som kontrollerats för villkor|Nej | Ja|
@@ -297,7 +298,17 @@ Slutligen kan du använda simuleringsläge för att få en ungefärlig bild av h
     - Bifogad fil är lösenordsskyddad
     - Det gick inte att skanna innehållet i en e-postbilaga
     - Genomsökningen slutfördes inte för innehåll i e-postbilaga
-
+    - Rubriken matchar mönster
+    - Ämnet matchar mönster
+    - Mottagarens adress innehåller ord
+    - Mottagarens adress matchar mönster
+    - Avsändarens adress matchar mönster
+    - Avsändardomänen är
+    - Mottagaren är medlem i
+    - Avsändaren är
+    
+    För vart och ett av dessa villkor kan du sedan ange undantag.
+    
 8. Beroende på dina tidigare val har du nu möjlighet att skapa nya regler med hjälp av villkor och undantag.
     
     Konfigurationsalternativen för typer av känslig information är desamma som de du väljer för automatisk etikettering för Office-appar. Om du behöver mer information går du till [Konfigurera typer av känslig information för en etikett](#configuring-sensitive-info-types-for-a-label).

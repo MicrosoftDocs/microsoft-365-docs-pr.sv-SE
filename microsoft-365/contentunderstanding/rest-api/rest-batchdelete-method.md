@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Använd REST API för att ta bort en tillämpad dokumenttolkningsmodell från ett eller flera bibliotek.
-ms.openlocfilehash: 8c7aeb449da161fe49050631643c63c93268a13f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904277"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177243"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -44,18 +44,43 @@ Ingen
 
 | Namn | Obligatoriskt | Typ | Beskrivning |
 |--------|-------|--------|------------|
+|Publikationer|ja|MachineLearningPublicationEntityData[]|Samlingen MachineLearningPublicationEntityData som var och en anger modell- och måldokumentbiblioteket.|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Namn | Obligatoriskt | Typ | Beskrivning |
+|--------|-------|--------|------------|
 |ModelUniqueId|ja|sträng|Modellfilens unika ID.|
-TargetSiteUrl|ja|sträng|Den fullständiga URL-adressen till målbibliotekswebbplatsen.|
-TargetWebServerRelativeUrl|ja|sträng|Serverns relativa webbadress för webben för målbiblioteket.|
-TargetLibraryServerRelativeUrl|ja|sträng|Serverns relativa URL-adress för målbiblioteket.|
-ViewOption|ingen|sträng|Anger om den nya modellvyn ska anges som biblioteksstandard.|
+|TargetSiteUrl|ja|sträng|Den fullständiga URL-adressen till målbibliotekswebbplatsen.|
+|TargetWebServerRelativeUrl|ja|sträng|Serverns relativa URL-adress för webben för målbiblioteket.|
+|TargetLibraryServerRelativeUrl|ja|sträng|Serverns relativa URL-adress för målbiblioteket.|
 
 ## <a name="response"></a>Svar
 
 | Namn   | Typ  | Beskrivning|
 |--------|-------|------------|
-|200 OK| |Klart|
+|200 OK||Det här är ett anpassat API som stöder borttagning av en modell från bibliotek med flera dokument. Vid delvis lyckad åtgärd kan 200 OK fortfarande returneras och anroparen måste inspektera svarstexten för att förstå om modellen har tagits bort från ett dokumentbibliotek.|
 
+## <a name="response-body"></a>Svarstext
+| Namn   | Typ  | Beskrivning|
+|--------|-------|------------|
+|TotalSuccccis|int|Det totala antalet modeller som tas bort från ett dokumentbibliotek.|
+|TotalFailures|int|Det totala antalet modeller som inte kan tas bort från ett dokumentbibliotek.|
+|Information|MachineLearningPublicationResult[]|Samlingen MachineLearningPublicationResult som var och en anger det detaljerade resultatet av att ta bort modellen från ett dokumentbibliotek.|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| Namn   | Typ  | Beskrivning|
+|--------|-------|------------|
+|StatusCode|int|HTTP-statuskoden.|
+|ErrorMessage|sträng|Felmeddelandet som anger vad som är fel när modellen tillämpas på dokumentbiblioteket.|
+|Publicering|MachineLearningPublicationEntityData|Den anger modellinformationen och måldokumentbiblioteket.| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Namn | Typ | Beskrivning |
+|--------|--------|------------|
+|ModelUniqueId|sträng|Modellfilens unika ID.|
+|TargetSiteUrl|sträng|Den fullständiga URL-adressen till målbibliotekswebbplatsen.|
+|TargetWebServerRelativeUrl|sträng|Serverns relativa URL-adress för webben för målbiblioteket.|
+|TargetLibraryServerRelativeUrl|sträng|Serverns relativa URL-adress för målbiblioteket.|
 
 ## <a name="examples"></a>Exempel
 
@@ -66,28 +91,22 @@ I det här exemplet är ID:t för dokumenttolkningsmodellen i Contoso Contract `
 #### <a name="sample-request"></a>Exempelbegäran
 
 ```HTTP
-{
-    "__metadata": {
-        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"
-    },
-    "Publications": {
-        "results": [
-            {
-                "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc",
-                "TargetSiteUrl": "https://contoso.sharepoint.com/sites/repository/",
-                "TargetWebServerRelativeUrl": "/sites/repository",
-                "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
-                "ViewOption": "NewViewAsDefault"
-            }
-        ]
-    }
-}
+{ 
+    "publications": [ 
+        { 
+            "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc", 
+            "TargetSiteUrl": "https://constco.sharepoint-df.com/sites/docsite", 
+            "TargetWebServerRelativeUrl": "/sites/docsite ", 
+            "TargetLibraryServerRelativeUrl": "/sites/dcocsite/joedcos" 
+        } 
+    ] 
+} 
 ```
 
 
 #### <a name="sample-response"></a>Exempelsvar
 
-I svaret refererar TotalFailures och TotalSuccesses till antalet misslyckanden och framgångar för modellen som tillämpas på de angivna biblioteken.
+I svaret refererar TotalFailures och TotalSuccesses till antalet misslyckanden och framgångar för modellen som tas bort på de angivna biblioteken.
 
 **Statuskod:** 200
 
