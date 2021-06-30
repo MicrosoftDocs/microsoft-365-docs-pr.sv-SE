@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Tolka debiterings-, fakturerings- och betalningsinformation på din Microsoft 365 för företag-faktura och hur du ändrar ett inköpsordernummer.
+description: Tolka avgifter, fakturerings- och betalningsinformation på Microsoft 365 för företag-faktura och hur du ändrar ett inköpsordernummer.
 ms.date: 05/04/2021
-ms.openlocfilehash: ba20e390e279d45d56671d49e32250d2db04c220
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 07d8b9fe88849b693388adf4d98813073764676d
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888379"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203154"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Förstå fakturan för Microsoft 365 för företag
 
@@ -129,8 +129,8 @@ Om du betalar med faktura kan du lägga till eller ändra inköpsordernumret fö
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Läs om hur du hittar och visar din faktura](view-your-bill-or-invoice.md) (artikel)\
-[Faktureringsinformation för Microsoft 365 för företag i Mexiko](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (artikel) \
+[Faktureringsinformation för Microsoft 365 för företag i Mexiko](mexico-billing-info.md) (artikel) \
 [Ändra dina faktureringsadresser](change-your-billing-addresses.md) (artikel)\
 [Ändra organisationens adress, e-postadress för teknisk kontakt och annan information](../../admin/manage/change-address-contact-and-more.md) (artikel)\
-[Betala för din Prenumeration på Microsoft 365 för företag](pay-for-your-subscription.md) (artikel)\
+[Betala för din Microsoft 365 för företag-prenumeration](pay-for-your-subscription.md) (artikel)\
 [Betalningsalternativ för Minecraft: Education Edition](/education/windows/school-get-minecraft) (artikel)

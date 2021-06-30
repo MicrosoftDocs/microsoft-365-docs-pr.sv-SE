@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du hanterar vilka som får e-postmeddelanden om faktureringsaviseringar och fakturabilagor.
 ms.date: 03/17/2021
-ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054586"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203250"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Hantera faktureringsaviseringar och fakturabilagor
 
@@ -127,6 +127,6 @@ Om du vill få dina fakturor som bifogade filer i dina fakturaaviseringar använ
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Visa din räkning eller faktura](view-your-bill-or-invoice.md) (artikel)\
-[Faktureringsinformation för Microsoft 365 för företag i Mexiko](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (artikel) \
+[Faktureringsinformation för Microsoft 365 för företag i Mexiko](mexico-billing-info.md) (artikel) \
 [Förstå din faktura för Microsoft 365 för företag](understand-your-invoice2.md) (artikel)\
 [Lägga till användare och tilldela licenser samtidigt](../../admin/add-users/add-users.md) (artikel)

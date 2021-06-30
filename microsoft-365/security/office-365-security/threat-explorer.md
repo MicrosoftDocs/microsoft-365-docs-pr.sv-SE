@@ -19,12 +19,12 @@ description: Använd Utforskaren och realtidsidentifiering i Microsoft 365 Defen
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bb72c99ae0b80c4091e79801c5515190811324a7
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: ee9c4c63817d9c6860942eb8001b02a0535333b1
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "53195039"
+ms.locfileid: "53203262"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Identifiering av hot i Utforskaren och i realtid
 
@@ -56,7 +56,8 @@ Med den här rapporten kan du:
 
 ## <a name="improvements-to-threat-hunting-experience"></a>Förbättringar av Threat Hunting Experience
 
-### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections-preview"></a>Introduktion till aviserings-ID för Defender Office 365 aviseringar i Utforskaren/realtidsidentifiering (förhandsversion)
+
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>Introduktion till aviserings-ID för Defender Office 365 aviseringar i Utforskaren/identifieringar i realtid
 
 Om du i dag navigerar från en avisering till Hotutforskaren öppnas en filtrerad vy i Utforskaren, med vyn filtrerad med aviseringsprincip-ID (princip-ID är en unik identifierare för en aviseringsprincip).
 Vi gör den här integreringen mer relevant genom att introducera aviserings-ID (se ett exempel på aviserings-ID nedan) i Threat Explorer och i realtidsidentifiering så att du ser meddelanden som är relevanta för den specifika aviseringen och antalet e-postmeddelanden. Du kan också se om ett meddelande var en del av en avisering och även navigera från det meddelandet till den specifika aviseringen.
@@ -69,12 +70,12 @@ Aviserings-ID är tillgängligt i URL-adressen när du visar en enskild aviserin
 > [!div class="mx-imgBorder"]
 > ![Aviserings-ID i den utfällade informationen](../../media/AlertID-DetailsFlyout.png)
 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Utöka databevarandet i Utforskaren (och realtidsidentifiering) och sökbegränsningen för utvärderingsklienter från 7 till 30 dagar (förhandsversion)
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>Utöka databevarandet i Utforskaren (och realtidsidentifiering) och sökbegränsningen för utvärderingsklienter från 7 till 30 dagar
 
 Som en del av den här ändringen kan du söka efter och filtrera e-postdata över 30 dagar (en ökning från de föregående sju dagarna) i Threat Explorer/Realtidsidentifiering för både Defender för Office P1- och P2-utvärderingsklienter.
 Detta påverkar inte produktionsklienter för både P1- och P2/E5-kunder som redan har 30 dagars datalagring och sökfunktioner.
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Uppdaterade begränsningar för export av poster för Threat Explorer (förhandsversion)
+### <a name="updated-limits-for-export-of-records-for-threat-explorer"></a>Uppdaterade begränsningar för export av poster för Hotutforskaren
 
 Som en del av den här uppdateringen kommer antalet rader för e-postposter som kan exporteras från Threat Explorer att ökas från 9 990 till 200 000 poster. Den uppsättning kolumner som kan exporteras för närvarande förblir densamma, men antalet rader ökar från den aktuella gränsen.
 

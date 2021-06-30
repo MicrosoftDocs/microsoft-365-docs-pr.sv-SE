@@ -19,12 +19,12 @@ ms.custom:
 description: Administratörer kan ta reda på hur de använder portalen för inskickade innehåll i Microsoft 365 Defender-portalen för att skicka misstänkta e-postmeddelanden, misstänkta nätfiskemeddelanden, skräppost och andra potentiellt skadliga meddelanden, URL-adresser och e-postbilagor till Microsoft för att återsöka.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: eecb635972be85e1a1a4f95c2786f209ee249745
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061969"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203286"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Använd administrationsinskick för att skicka misstänkt skräppost, nättr ut, URL:er och filer till Microsoft
 
@@ -55,8 +55,7 @@ Andra sätt att skicka e-postmeddelanden, URL:er och bifogade filer till Microso
 
 - För att skicka meddelanden och filer till Microsoft måste du vara medlem i någon av följande rollgrupper:
   - **Organisationshantering** eller **säkerhetsläsare** i [Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)
-  - **Organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
-
+  
     Observera att medlemskap i den här rollgruppen krävs för att [visa användarinskick till den anpassade postlådan enligt](#view-user-submissions-to-microsoft) beskrivningen längre fram i den här artikeln.
 
 - Mer information om hur användare kan skicka meddelanden och filer till Microsoft finns i [Rapportera meddelanden och filer till Microsoft.](report-junk-email-messages-to-microsoft.md)

@@ -1,7 +1,7 @@
 ---
 title: Aktivera Enterprise State Roaming
 description: ''
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,20 +9,18 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 61b84b3c7b6550a8ce426a3e41630a0d3e269c41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f9d478412d2a1aac6f3e701aca59fcf74ceacce6
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921960"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203214"
 ---
 # <a name="enable-enterprise-state-roaming"></a>Aktivera Enterprise State Roaming
 
-För bästa upplevelse med Microsoft Hanterat skrivbord företagsroaming [kan](/azure/active-directory/devices/enterprise-state-roaming-overview)användarna på ett säkert sätt synkronisera användar- och programinställningar till molnet. Det innebär att de har samma upplevelse oavsett vilken enhet Windows loggar in på. Om du till exempel ersätter en av deras Microsoft Hanterat skrivbord enheter med en ny kommer den att se ut och fungera på exakt samma sätt som den sista.
+[Med Roaming för](/azure/active-directory/devices/enterprise-state-roaming-overview) företag kan användare på ett säkert sätt synkronisera data om användar- och programinställningar till molnet. Det innebär att de har samma upplevelse oavsett vilken enhet Windows loggar in på. Om du till exempel ersätter en av deras Microsoft Hanterat skrivbord enheter med en ny kommer den att se ut och fungera på exakt samma sätt som den sista. Roaming är en valfri funktion för Microsoft Hanterat skrivbord-tjänsten som du kan konfigurera för dina användare och inte ingår eller hanteras som en del av Microsoft Hanterat skrivbord.
 
-Om du vill aktivera State Roaming för företag följer du stegen i Aktivera [företagsroaming i Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable)och återgår sedan till den här dokumentationen.
-
-Om du har problem med Roaming i Enterprise State Roaming kontaktar du [administratörssupport.](../working-with-managed-desktop/admin-support.md)
+Om du vill aktivera Företagsroaming följer du stegen [i Aktivera företagsroaming i Azure Active Directory.](/azure/active-directory/devices/enterprise-state-roaming-enable)
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Hanterat skrivbord
 

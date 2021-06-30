@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan läsa om hur de visar, skapar, ändrar och tar bort principer för skräppostskydd i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 1aa37beef940803a3dd399cec4ff23133a10c5ad
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137769"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203298"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurera principer för skräppostskydd i EOP
 
@@ -149,7 +149,7 @@ När du skapar en anpassad princip för skräppostskydd i Microsoft 365 Defender
 
      |Åtgärd|Skräppost|Högsta<br>konfidens<br>skräppost|Fiske|Högsta<br>konfidens<br>fiske|Massutskick|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**Flytta meddelandet till mappen skräppost**: Meddelandet levereras till postlådan och flyttas till mappen Skräppost.<sup>1</sup>|![Bockmarkering](../../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)<sup>\*</sup>|
+     |**Flytta meddelandet till mappen skräppost**: Meddelandet levereras till postlådan och flyttas till mappen Skräppost.<sup>1</sup>|![Bockmarkering](../../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../../media/checkmark.png)||![Bockmarkering](../../media/checkmark.png)<sup>\*</sup>|
      |**Lägg till X-rubrik**: Lägger till ett X-huvud i meddelandehuvudet och levererar meddelandet till postlådan. <p> Du anger fältnamnet för X-huvudet (inte värdet) senare i rutan **Lägg till följande X-sidhuvudtext**. <p> Om utfallet är **Skräppost** eller **Skräppost med hög konfidens** flyttas meddelandet till mappen Skräppost.<sup>1,2</sup>|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)||![Bockmarkering](../../media/checkmark.png)<sup>\*</sup>|
      |**Lägg till text i ämnesraden**: Lägger till text i början av meddelandets ämnesrad. Meddelandet levereras till postlådan och flyttas till mappen Skräppost.<sup>1,2</sup> <p> Du anger texten senare i rutan **Lägg till den här texten i ämnesraden**.|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)||![Bockmarkering](../../media/checkmark.png)|
      |**Omdirigera meddelandet till e-postadressen**: Skickar meddelandet till andra mottagare istället för till avsedda mottagare. <p> Du anger mottagarna senare i rutan **Omdirigera till den här e-postadressen**.|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|![Bockmarkering](../../media/checkmark.png)|
@@ -182,7 +182,7 @@ När du skapar en anpassad princip för skräppostskydd i Microsoft 365 Defender
 
    - **Omdirigera till den här e-postadressen**: Den här rutan krävs och är endast tillgänglig om du har valt **Omdirigera meddelandet till e-postadressen** som åtgärd för ett utfall av skräppostfiltreringen. Ange den e-postadress dit du vill leverera meddelandet. Du kan ange flera värden avgränsade med semikolon (;).
 
-   - **Aktivera säkerhetstips**: Säkerhetstips är aktiverade som standard, men du kan inaktivera dem genom att avmarkera kryssrutan. Mer information om säkerhetstips finns i [Säkerhetstips i e-postmeddelanden](safety-tips-in-office-365.md).
+   - **Aktivera säkerhetstips**: Säkerhetstips är aktiverade som standard, men du kan inaktivera dem genom att avmarkera kryssrutan.
 
    - **Aktivera automatisk rensning**: Automatisk rensning identifierar och vidtar åtgärder för meddelanden som redan har levererats till Exchange Online-postlådor. Mer information finns i [Automatisk rensning – skydd mot skräppost och skadlig kod](zero-hour-auto-purge.md).
 
