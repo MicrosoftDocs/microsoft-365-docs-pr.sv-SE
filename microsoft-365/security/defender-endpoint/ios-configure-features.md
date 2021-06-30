@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d32d40ac8ce086caedd53e0a69aac2a3025dc702
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842260"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194955"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurera Microsoft Defender för slutpunkt för iOS-funktioner
 
@@ -65,6 +65,26 @@ När den är aktiverad som standard kan det finnas fall där du måste inaktiver
 
 Apple iOS stöder inte flera vpn som gäller hela enheten för att vara aktiva samtidigt. Även om flera VPN-profiler kan finnas på enheten kan bara ett VPN vara aktivt i taget.
 
+## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>Konfigurera Microsoft Defender för Slutpunktsrisk signal i programskyddsprincip (MAM)
+
+Microsoft Defender för Endpoint kan konfigureras för att skicka hotsignaler som ska användas i appskyddsprinciper (APP, som även kallas MAM) på iOS/iPadOS. Med den här funktionen kan du även använda Microsoft Defender för Endpoint för att skydda åtkomsten till företagsdata från oregistrerade enheter.
+
+Steg för att konfigurera principer för programskydd med Microsoft Defender för Slutpunkt är enligt nedan:
+
+1. Konfigurera anslutningen från din klientorganisation Microsoft Endpoint Manager Microsoft Defender för Endpoint. I [Administrationscenter](https://go.microsoft.com/fwlink/?linkid=2109431)för Microsoft Endpoint Manager går du till Kopplingar för klientorganisationsadministration och tokens Microsoft Defender för slutpunkt (under flera plattformar) eller  >  **Slutpunktssäkerhet** Microsoft Defender för Slutpunkt (under Installation) och aktiverar  >     >   växlingsknapparna under Programskyddsprincip Inställningar för **iOS.**
+1. Välj Spara. Anslutningsstatus **visas nu** som **Aktiverad.**
+1. Skapa programskyddsprincip: När konfigurationen av Microsoft Defender för Endpoint-kopplingen är klar går du till  >  **Programskyddsprinciper** (under Princip) för att skapa en ny princip eller uppdatera en befintlig.
+1. Välj den plattform, **appar, dataskydd, åtkomstkravinställningar** som din organisation kräver för principen.
+1. Under **Villkor för**  >  **villkorsstyrd** start av enhet hittar du inställningen **Max hotnivå för tillåtna enheter.** Det här måste konfigureras för antingen Låg, Medel, Hög eller Skyddad. De tillgängliga åtgärderna blir Blockera åtkomst **eller** **Rensa data.** Det kan visas en informationsdialogruta för att kontrollera att du har angett kopplingen innan den här inställningen används. Om kopplingen redan är konfigurerad kan du ignorera den här dialogrutan.
+1. Slutför med Uppgifter och spara principen.
+
+Mer information om MAM- eller appskyddsprincip finns i [principinställningar för iOS-programskydd.](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)
+
+### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Distribuera Microsoft Defender för slutpunkt för MAM eller på oregistrerade enheter
+
+Microsoft Defender för slutpunkt i iOS aktiverar Scenariot för programskyddsprincip och är tillgängligt i Apple App Store.
+
+Slutanvändarna bör installera den senaste versionen av programmet direkt från Apple App Store.
 
 ## <a name="configure-compliance-policy-against-jailbroken-devices"></a>Konfigurera efterlevnadsprincip mot jailbroken enheter
 
@@ -86,12 +106,12 @@ Följ stegen nedan för att skapa en efterlevnadsprincip mot jailbroken enheter.
     > [!div class="mx-imgBorder"]
     > ![Princip Inställningar](images/ios-jb-settings.png)
 
-4. I avsnittet *Åtgärd för icke-efterlevnad* väljer du åtgärderna enligt dina krav och väljer **Nästa.**
+4. I avsnittet **Åtgärd för icke-efterlevnad** väljer du åtgärderna enligt dina krav och väljer **Nästa.**
 
     > [!div class="mx-imgBorder"]
     > ![Principåtgärder](images/ios-jb-actions.png)
 
-5. I avsnittet *Tilldelningar* väljer du de användargrupper som du vill inkludera för den här principen och väljer sedan **Nästa.**
+5. I avsnittet **Tilldelningar** väljer du de användargrupper som du vill inkludera för den här principen och väljer sedan **Nästa.**
 6. I avsnittet **Granska+Skapa** kontrollerar du att all information som angetts är korrekt och väljer sedan **Skapa**.
 
 ## <a name="configure-custom-indicators"></a>Konfigurera anpassade indikatorer

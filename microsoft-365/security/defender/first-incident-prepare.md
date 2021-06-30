@@ -1,6 +1,6 @@
 ---
 title: Förbered säkerheten för den första händelsen
-description: Konfigurera din Microsoft 365 säkerhet för den första incidenten i Microsoft 365 Defender.
+description: Konfigurera din Microsoft 365 säkerhet för den första händelsen i Microsoft 365 Defender.
 keywords: incidenter, aviseringar, undersöker, korrelation, attack, datorer, enheter, användare, identiteter, identiteter, postlåda, e-post, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da9147955c5da9ea727854420b3d4d160583ef73
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fcdce7f5a41c23dfe33eb75ef15b579ac12c8742
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840952"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194943"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Förbered säkerheten för den första händelsen
 
@@ -38,7 +38,7 @@ ms.locfileid: "52840952"
 
 Förberedelse för incidenthantering omfattar att konfigurera tillräckligt skydd av organisationens nätverk från olika typer av säkerhetsincidenter. För att minska risken för säkerhetsincidenter rekommenderar National Institute of Standards and Technology (NIST) flera säkerhetsmetoder, bland annat riskbedömning, hårdnande värdsäkerhet, konfigurera nätverk säkert och förhindra skadlig programvara. 
 
-Microsoft 365 Defender kan åtgärda flera aspekter av incidentskydd: 
+Microsoft 365 Defender kan hantera flera aspekter av incidentskydd: 
 
 - Implementera ett [Zero Trust Framework](/security/zero-trust/)
 - Fastställa din säkerhet genom att tilldela ett poäng med [Microsoft Secure Score](microsoft-secure-score.md)
@@ -47,17 +47,17 @@ Microsoft 365 Defender kan åtgärda flera aspekter av incidentskydd:
 
 ## <a name="step-1-implement-zero-trust"></a>Steg 1. Implementera nollförtroende
 
-[Zero Trust](/security/zero-trust/) är en integrerad säkerhetsstrategi som tar hänsyn till hur komplex en modern miljö är, inklusive den mobila arbetsstyrkan och användare, enheter, program och data, var de än befinner sig. Genom att ha ett enda fönster med fönster för att hantera alla identifieringar på ett konsekvent sätt [](/security/zero-trust/#guiding-principles-of-zero-trust) kan Microsoft 365 Defender göra det enklare för din säkerhetsgrupp att implementera de vägledande principerna för Zero Trust. 
+[Zero Trust](/security/zero-trust/) är en integrerad säkerhetsstrategi som tar hänsyn till hur komplex en modern miljö är, inklusive den mobila arbetsstyrkan och användare, enheter, program och data, var de än befinner sig. Genom att ha ett enda fönster med fönster för att hantera alla identifieringar på ett konsekvent [](/security/zero-trust/#guiding-principles-of-zero-trust) sätt kan Microsoft 365 Defender göra det enklare för din säkerhetsgrupp att implementera de vägledande principerna för Zero Trust. 
 
-Komponenter i Microsoft 365 Defender kan visa överträdelser av regler som har implementerats för att upprätta villkorsstyrda åtkomstprinciper för Zero Trust genom att integrera data från Microsoft Defender för slutpunkt (MDE) eller andra mobila säkerhetsleverantörer som en informationskälla för principer för enhetsefterlevnad och implementering av enhetsbaserade villkorsbaserade principer. 
+Komponenter i Microsoft 365 Defender kan visa överträdelser av regler som har implementerats för att upprätta villkorsstyrda åtkomstprinciper för Zero Trust genom att integrera data från Microsoft Defender för Endpoint eller andra mobila säkerhetsleverantörer som en informationskälla för principer för enhetsefterlevnad och implementering av enhetsbaserade villkorsstyrda åtkomstprinciper. 
 
-Enhetsrisker påverkar direkt vilka resurser som är tillgängliga för användaren av enheten. Denial of access to resources based on certain criteria is the main theme of Zero Trust and Microsoft 365 Defender provides information needed to determine the trust level criteria. Till exempel kan Microsoft 365 Defender tillhandahålla programvaruversionsnivån för en enhet via sidan Threat and Vulnerability Management medan villkorsstyrd åtkomst begränsar enheter som har inaktuella eller sårbara versioner.
+Enhetsrisker påverkar direkt vilka resurser som är tillgängliga för användaren av enheten. Denial of access to resources based on certain criteria is the main theme of Zero Trust and Microsoft 365 Defender provides information needed to determine the trust level criteria. Till exempel kan Microsoft 365 Defender tillhandahålla programvaruversionsnivån för en enhet på sidan Hantering av hot och sårbarhet medan villkorsstyrd åtkomst begränsar enheter som har inaktuella eller sårbara versioner.
 
-Automation är en viktig del i implementeringen och underhållet av en nollförtroendemiljö samtidigt som antalet aviseringar som potentiellt skulle leda till incidentåtgärdshändelser (IR-händelser) minskar. Komponenter i Microsoft 365 Defender kan automatiseras, till exempel åtgärder [(kallas](m365d-autoir.md) undersökningar för en incident i säkerhetscentret i Microsoft 365), aviseringsåtgärder och till och med skapandet av supportärenden i [ServiceNow.](https://microsoft.service-now.com/sp/)
+Automation är en viktig del i implementeringen och underhållet av en nollförtroendemiljö samtidigt som antalet aviseringar som potentiellt skulle leda till incidentåtgärdshändelser (IR-händelser) minskar. Delar av Microsoft 365 Defender kan automatiseras, till exempel åtgärder [(kallas](m365d-autoir.md) undersökningar för en incident i säkerhetscentret i Microsoft 365), aviseringsåtgärder och till och med skapandet av supportärenden i [ServiceNow.](https://microsoft.service-now.com/sp/)
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Steg 2. Fastställa säkerheten i din organisation
 
-Därefter kan organisationer använda [Microsoft Secure Score](microsoft-secure-score.md) i Microsoft 365 Defender för att avgöra vilken säkerhetsrisk du har och fundera på rekommendationer om hur du kan förbättra den. Ju högre poäng desto fler säkerhetsrekommendationer och förbättringsåtgärder har genomförts av organisationen. Rekommendationer om Secure Score kan användas i olika produkter och organisationer kan höja sina resultat ännu högre. 
+Därefter kan organisationer använda [Microsoft Secure Score i](microsoft-secure-score.md) Microsoft 365 Defender fastställa den aktuella säkerheten och fundera på rekommendationer om hur du kan förbättra den. Ju högre poäng desto fler säkerhetsrekommendationer och förbättringsåtgärder har genomförts av organisationen. Rekommendationer om Secure Score kan användas i olika produkter och organisationer kan höja sina resultat ännu högre. 
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Exempel på Microsoft Secure Score i Microsofts säkerhetscenter":::
  
@@ -65,7 +65,7 @@ Därefter kan organisationer använda [Microsoft Secure Score](microsoft-secure-
 
 Att förhindra incidenter kan effektivisera arbetet med säkerhetsåtgärder för att fokusera på viktiga säkerhetsincidenter som är viktiga i det här processen. Säkerhetsproblem av programvara är ofta en startpunkt som kan förhindras för attacker som kan leda till datastöld, dataförlust eller störningar i affärsåtgärder. Om inga attacker är i gång måste säkerhetsåtgärder strävar efter att uppnå och upprätthålla en godtagbar nivå av [exponering](../defender-endpoint/tvm-exposure-score.md) av sårbarheter i organisationen.
 
-Om du vill kontrollera förloppet [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) för programkorrigeringar går du till sidan Hantering av hot och sårbarhet i Defender för slutpunkt, som du kan komma åt från Microsoft 365 Defender på **fliken Fler** resurser.
+Om du vill kontrollera förloppet [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) för programkorrigeringar går du till sidan Hantering av hot och sårbarhet i Defender för slutpunkt, som du kan komma åt Microsoft 365 Defender via **fliken Fler** resurser.
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Exempel på sidan Hot och sårbarhet i Microsofts säkerhetscenter"::: 
  

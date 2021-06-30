@@ -1,5 +1,5 @@
 ---
-title: Tilldela eDiscovery-behörigheter i Microsoft 365 efterlevnadscenter
+title: Tilldela eDiscovery-behörigheter i Microsoft 365 Efterlevnadscenter
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,26 +16,26 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Tilldela de behörigheter som krävs för att utföra eDiscovery-relaterade uppgifter med hjälp Microsoft 365 efterlevnadscenter.
+description: Tilldela de behörigheter som krävs för att utföra eDiscovery-relaterade uppgifter med hjälp av Microsoft 365 Efterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 63afafbb8254169e266e5a3305df64aa9d271f79
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 06e75a18c338d2634ae3be93514ee518d9e91860
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782459"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194679"
 ---
-# <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Tilldela eDiscovery-behörigheter i Microsoft 365 efterlevnadscenter
+# <a name="assign-ediscovery-permissions-in-the-microsoft-365-compliance-center"></a>Tilldela eDiscovery-behörigheter i Microsoft 365 Efterlevnadscenter
 
-Om du vill att andra ska använda något av [de eDiscovery-relaterade](ediscovery.md) verktygen i Microsoft 365 efterlevnadscenter måste du tilldela dem rätt behörigheter. Det enklaste sättet är att lägga till personen i lämplig rollgrupp på **sidan Behörigheter** i efterlevnadscentret. I det här avsnittet beskrivs behörigheterna som krävs för att utföra eDiscovery-uppgifter.
+Om du vill att andra ska använda något av [de eDiscovery-relaterade](ediscovery.md) verktygen i Microsoft 365 Efterlevnadscenter måste du tilldela dem rätt behörigheter. Det enklaste sättet är att lägga till personen i lämplig rollgrupp på **sidan Behörigheter** i efterlevnadscentret. I det här avsnittet beskrivs behörigheterna som krävs för att utföra eDiscovery-uppgifter.
   
-Den primära eDiscovery-relaterade rollgruppen i Microsoft 365 efterlevnadscenter kallas **eDiscovery Manager.** Det finns två undergrupper i den här rollgruppen.
+Den primära eDiscovery-relaterade rollgruppen i Microsoft 365 Efterlevnadscenter kallas **eDiscovery Manager.** Det finns två undergrupper i den här rollgruppen.
   
 - **eDiscovery-hanterare** – en eDiscovery-hanterare kan använda eDiscovery-sökverktyg för att söka efter innehållsplatser i organisationen och utföra olika sökrelaterade åtgärder som exempelvis förhandsgranska och exportera sökresultat. Medlemmar kan också skapa och hantera ärenden i Grundläggande e-dataidentifiering och Advanced eDiscovery, lägga till och ta bort medlemmar i ett ärende, skapa fallande ärenden, köra sökningar kopplade till ett ärende och åtkomstfallsdata. eDiscovery-hanterare kan bara komma åt och hantera de fall som de skapar. De kan inte komma åt eller hantera ärenden som skapats av andra eDiscovery-hanterare.
   
 - **eDiscovery-administratörer** – en eDiscovery-administratör är medlem i rollgruppen för eDiscovery Manager och kan utföra samma innehållssöknings- och ärendehanteringsrelaterade uppgifter som en eDiscovery-hanterare kan utföra. En eDiscovery-administratör kan dessutom:
   
-  - Få åtkomst till alla ärenden som listas **på sidorna Bas-eDiscovery** och Advanced eDiscovery-dataidentifiering i Microsoft 365 efterlevnadscenter. 
+  - Få åtkomst till alla ärenden som listas **på core-eDiscovery-** **Advanced eDiscovery-sidorna** i Microsoft 365 Efterlevnadscenter.
 
   - Access case data in Advanced eDiscovery for any case in the organization.
   
@@ -44,11 +44,11 @@ Den primära eDiscovery-relaterade rollgruppen i Microsoft 365 efterlevnadscente
   Anledningar till varför du kanske vill använda eDiscovery-administratörer i organisationen finns i [Mer information.](#more-information)
 
 > [!NOTE]
-> För att kunna analysera en användares data med hjälp Advanced eDiscovery måste användaren (den som har använt informationen) tilldelas en licens av Office 365 E5 eller Microsoft 365 E5. Alternativt kan användare med en Office 365 E1- eller Office 365- eller Microsoft 365 E3-licens tilldelas en tilläggslicens för Microsoft 365 E5 Compliance eller Microsoft 365 eDiscovery och audit. Administratörer, efterlevnadsansvariga och juridisk personal som tilldelas ärenden som medlemmar och använder Advanced eDiscovery för att samla in, visa och analysera data behöver inte en E5-licens. Mer information om hur Advanced eDiscovery finns i [Prenumerationer och licensiering i Advanced eDiscovery](overview-ediscovery-20.md#subscriptions-and-licensing).
+> För att kunna analysera en användares data med hjälp Advanced eDiscovery måste användaren (den som upptog informationen) tilldelas en licens Office 365 E5 eller Microsoft 365 E5 licens. Alternativt kan användare med en Office 365 E1- eller Office 365- eller Microsoft 365 E3-licens tilldelas en tilläggslicens för Microsoft 365 E5 Compliance eller Microsoft 365 eDiscovery och audit. Administratörer, efterlevnadsansvariga och juridisk personal som tilldelas ärenden som medlemmar och använder Advanced eDiscovery för att samla in, visa och analysera data behöver inte en E5-licens. Mer information om hur Advanced eDiscovery finns i [Prenumerationer och licensiering i Advanced eDiscovery](overview-ediscovery-20.md#subscriptions-and-licensing).
   
 ## <a name="before-you-assign-permissions"></a>Innan du tilldelar behörigheter
 
-- Du måste vara medlem i rollgruppen organisationshantering eller ha tilldelats rollhanteringsrollen för att tilldela eDiscovery-behörigheter i Microsoft 365 efterlevnadscenter.
+- Du måste vara medlem i rollgruppen Organisationshantering eller ha tilldelats rollhanteringsrollen för att tilldela eDiscovery-behörigheter i Microsoft 365 Efterlevnadscenter.
 
 - Du kan använda cmdleten [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) i Security & Compliance Center PowerShell för att lägga till en e-postaktiverad säkerhetsgrupp som medlem i undergruppen för eDiscovery-hanterare i rollgruppen för eDiscovery-hanteraren. Du kan dock inte lägga till en e-postaktiverad säkerhetsgrupp i undergruppen eDiscovery-administratörer. Mer information finns i [Mer information.](#more-information) 
   
@@ -56,7 +56,7 @@ Den primära eDiscovery-relaterade rollgruppen i Microsoft 365 efterlevnadscente
 
 1. Gå till <https://compliance.microsoft.com> och logga in med ett konto som kan tilldela behörigheter.
   
-2. Välj Behörigheter i Microsoft 365 vänstra fönsterrutan i **kompatibilitetscentret.**
+2. I det vänstra fönstret i Microsoft 365 Efterlevnadscenter väljer du **Behörigheter**.
 
 3. På sidan **Behörigheter & Roller,** under **Efterlevnadscenter,** klickar du på **Roller**.
 
@@ -71,11 +71,11 @@ Den primära eDiscovery-relaterade rollgruppen i Microsoft 365 efterlevnadscente
 > [!NOTE]
 > Du kan också använda cmdleten **Add-eDiscoveryCaseAdmin** för att göra en användare till eDiscovery-administratör. Men användaren måste vara tilldelad rollen Ärendehantering innan du kan använda den här cmdleten för att göra dem till eDiscovery-administratör. Mer information finns i [Add-eDiscoveryCaseAdmin.](/powershell/module/exchange/add-ediscoverycaseadmin) 
   
-På sidan **Behörigheter** i kompatibilitetscentret för Microsoft 365 kan du också tilldela användare eDiscovery-relaterade behörigheter genom att lägga till dem i rollgrupperna Efterlevnadsadministratör, Organisationshantering och Granskare. En beskrivning av de eDiscovery-relaterade RBAC-rollerna som tilldelats var och en av dessa rollgrupper finns i [RBAC-roller relaterade till eDiscovery.](#rbac-roles-related-to-ediscovery)
+På sidan **Behörigheter** i Microsoft 365 Efterlevnadscenter kan du också tilldela användare eDiscovery-relaterade behörigheter genom att lägga till dem i rollgrupperna Efterlevnadsadministratör, Organisationshantering och Granskare. En beskrivning av de eDiscovery-relaterade RBAC-rollerna som tilldelats var och en av dessa rollgrupper finns i [RBAC-roller relaterade till eDiscovery.](#rbac-roles-related-to-ediscovery)
 
 ## <a name="rbac-roles-related-to-ediscovery"></a>RBAC-roller relaterade till eDiscovery
 
-I följande tabell visas de eDiscovery-relaterade rollerna för dataidentifierings- och efterlevnadscentret i Microsoft 365 och anger de inbyggda rollgrupper som varje roll tilldelas till som standard.
+I följande tabell visas de eDiscovery-relaterade rollerna för rollbaserade dataidentifieringsroller i Microsoft 365 Efterlevnadscenter och anger de inbyggda rollgrupper som varje roll är tilldelad till som standard.
   
 | Roll | Efterlevnadsadministratör | eDiscovery Manager & administratör | Organisationshantering | Granskare |
 |:-----|:-----:|:-----:|:-----:|:-----:|
@@ -95,7 +95,7 @@ I följande avsnitt beskrivs var och en av de eDiscovery-relaterade RBAC-rollern
 
 ### <a name="case-management"></a>Ärendehantering
 
-Med den här rollen kan användare skapa, redigera, ta bort och kontrollera åtkomsten till grundläggande eDiscovery och Advanced eDiscovery-ärenden i Microsoft 365 efterlevnadscenter. Som tidigare förklarats måste en användare tilldelas rollen Ärendehantering innan du kan använda cmdleten **Add-eDiscoveryCaseAdmin** till att göra dem till eDiscovery-administratör.
+Med den här rollen kan användare skapa, redigera, ta bort och kontrollera åtkomsten till grundläggande eDiscovery och Advanced eDiscovery-ärenden i Microsoft 365 Efterlevnadscenter. Som tidigare förklarats måste en användare tilldelas rollen Ärendehantering innan du kan använda cmdleten **Add-eDiscoveryCaseAdmin** till att göra dem till eDiscovery-administratör.
 
 Mer information finns i:
 
@@ -111,13 +111,13 @@ Mer information finns i [Arbeta med kommunikation i Advanced eDiscovery](managin
 
 ### <a name="compliance-search"></a>Efterlevnadssökning
 
-Med den här rollen kan användare köra verktyget Innehållssökning i efterlevnadscentret för Microsoft 365 för att söka i postlådor och gemensamma mappar, SharePoint Online-webbplatser, OneDrive för företag-webbplatser, Skype för företag-konversationer, Microsoft 365-grupper, Microsoft Teams och Yammer-grupper. Med den här rollen kan användaren få en uppskattning av sökresultaten och skapa exportrapporter, men andra roller krävs för att initiera innehållssökningsåtgärder som förhandsgranskning, export eller borttagning av sökresultat.
+Med den här rollen kan användarna köra verktyget Innehållssökning i Microsoft 365 Efterlevnadscenter för att söka i postlådor och gemensamma mappar, SharePoint Online-webbplatser, OneDrive för företag-webbplatser, Skype för företag-konversationer, Microsoft 365-grupper, Microsoft Teams och Yammer-grupper. Med den här rollen kan användaren få en uppskattning av sökresultaten och skapa exportrapporter, men andra roller krävs för att initiera innehållssökningsåtgärder som förhandsgranskning, export eller borttagning av sökresultat.
 
-Användare som har tilldelats rollen Efterlevnadssökning men inte har rollen Förhandsgranska kan förhandsgranska resultatet av en sökning där förhandsgranskningsåtgärden har initierats av en användare som har tilldelats rollen Förhandsgranska. Användaren utan rollen Förhandsgranska kan förhandsgranska resultat i upp till två veckor efter att den första förhandsgranskningsåtgärden skapades.
+I Innehållssökning och Bas-eDiscovery kan användare som har tilldelats rollen Efterlevnadssökning men inte har rollen Förhandsgranska förhandsgranska resultatet av en sökning där förhandsgranskningsåtgärden har initierats av en användare som har tilldelats rollen Förhandsgranska. Användaren utan rollen Förhandsgranska kan förhandsgranska resultat i upp till två veckor efter att den första förhandsgranskningsåtgärden skapades.
 
-På samma sätt kan användare som har tilldelats rollen Efterlevnadssökning men inte har exportrollen ladda ned resultatet av en sökning där exportåtgärden initierades av en användare som har tilldelats rollen Exportera. Användaren utan exportrollen kan hämta resultatet av en sökning i upp till två veckor efter att den första exportåtgärden skapades. Därefter kan de inte ladda ned resultaten om inte någon med rollen Exportera startar om exporten.
+På samma sätt kan användare med innehållssökning och bas-eDiscovery som har tilldelats rollen Efterlevnadssökning men inte har exportrollen ladda ned resultatet av en sökning där exportåtgärden initierades av en användare som har tilldelats exportrollen. Användaren utan exportrollen kan hämta resultatet av en sökning i upp till två veckor efter att den första exportåtgärden skapades. Därefter kan de inte ladda ned resultaten om inte någon med rollen Exportera startar om exporten.
 
-Mer information finns i [Innehållssökning i Office 365](content-search.md).
+Respitperioden på två veckor för förhandsgranskning och export av sökresultat (utan motsvarande sök- och exportroller) gäller inte för Advanced eDiscovery. Användarna måste ha förhandsgransknings- och exportroller för att förhandsgranska och exportera innehåll i Advanced eDiscovery.
 
 ### <a name="custodian"></a>Insikare
 
@@ -129,7 +129,7 @@ Mer information finns i Arbeta [med vårdnadshavare i Advanced eDiscovery](manag
 
 Med den här rollen kan användare exportera resultatet av en innehållssökning till en lokal dator. De kan också förbereda sökresultatet för analys i Advanced eDiscovery.
 
-Mer information om hur du exporterar sökresultat finns i [Exportera sökresultat från Microsoft 365 kompatibilitetscenter.](export-search-results.md)
+Mer information om hur du exporterar sökresultat finns [i Exportera sökresultat från Microsoft 365 Efterlevnadscenter](export-search-results.md).
 
 ### <a name="hold"></a>Håll ned
 
@@ -147,7 +147,7 @@ Med den här rollen kan användare visa en lista över objekt som returnerats fr
 
 ### <a name="review"></a>Granska
 
-Med den här rollen kan användare komma åt granskningsuppsättningar [i Advanced eDiscovery](overview-ediscovery-20.md). Användare som har tilldelats den här rollen kan se och öppna listan över ärenden på sidan **eDiscovery > Advanced** i kompatibilitetscentret för Microsoft 365 som de är medlemmar i. När användaren har åtkomst till ett Advanced eDiscovery ärende kan de välja Granska uppsättningar **för åtkomst** till ärendedata. Med den här rollen kan användaren inte förhandsgranska resultatet av en sökning i en samling som är kopplad till ärendet eller utföra andra åtgärder för sökning eller ärendehantering. Användare med den här rollen kan bara komma åt data i en granskningsuppsättning.
+Med den här rollen kan användare komma åt granskningsuppsättningar [i Advanced eDiscovery](overview-ediscovery-20.md). Användare som har tilldelats den här rollen kan se och öppna listan över ärenden på sidan **eDiscovery > Advanced** i Microsoft 365 Efterlevnadscenter där de är medlemmar. När användaren har åtkomst till ett Advanced eDiscovery ärende kan de välja Granska uppsättningar **för åtkomst** till ärendedata. Med den här rollen kan användaren inte förhandsgranska resultatet av en sökning i en samling som är kopplad till ärendet eller utföra andra åtgärder för sökning eller ärendehantering. Användare med den här rollen kan bara komma åt data i en granskningsuppsättning.
 
 ### <a name="rms-decrypt"></a>RMS-dekryptera
 
@@ -171,7 +171,7 @@ Med den här rollen kan användarna utföra massborttagning av data som matchar 
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange inte Microsoft 365 distributionsgrupper eller distributionsgrupper. Du måste använda en e-postaktiverad säkerhetsgrupp som du kan skapa i Exchange Online PowerShell genom att köra `New-DistributionGroup -Type Security` . Du kan också skapa en e-postaktiverad säkerhetsgrupp (och lägga till medlemmar) Exchange administrationscentret eller i Microsoft 365 administrationscentret. Det kan ta upp till 60 minuter efter att du skapat den för att en ny e-postaktiverad säkerhet ska vara tillgänglig att lägga till i rollgruppen för eDiscovery-hanterare. 
+    Exchange inte Microsoft 365 distributionsgrupper eller distributionsgrupper. Du måste använda en e-postaktiverad säkerhetsgrupp som du kan skapa i Exchange Online PowerShell genom att köra `New-DistributionGroup -Type Security` . Du kan också skapa en e-postaktiverad säkerhetsgrupp (och lägga till medlemmar) Exchange administrationscentret eller i Administrationscenter för Microsoft 365. Det kan ta upp till 60 minuter efter att du skapat den för att en ny e-postaktiverad säkerhet ska vara tillgänglig att lägga till i rollgruppen för eDiscovery-hanterare. 
 
     Som tidigare nämnts kan du inte göra en e-postaktiverad säkerhetsgrupp till eDiscovery-administratör med hjälp av cmdleten **Add-eDiscoveryCaseAdmin** i Security & Compliance Center PowerShell. Du kan bara lägga till enskilda användare som eDiscovery-administratörer.
 

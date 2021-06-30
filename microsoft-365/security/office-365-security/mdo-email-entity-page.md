@@ -1,5 +1,5 @@
 ---
-title: Sidan för e-post entitet i Microsoft Defender Office 365 (MDO)
+title: Sidan Microsoft Defender för Office 365 e-post entitet
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender för Office 365 E5- och P1- och P2-kunder kan nu få en 360-gradersvy av varje e-postmeddelande med entitetssidan.
-ms.openlocfilehash: d2f5a5b20034ef22b8e3894885079609a9ad5874
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 5621476f8f8f7270d241d642354ab174a25b8b37
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083304"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194997"
 ---
 # <a name="the-email-entity-page"></a>Sidan E-postenhet
 
@@ -30,11 +30,11 @@ ms.locfileid: "53083304"
 - [Använda sidflikar för e-post entitet](#use-email-entity-page-tabs)
 - [Nytt för sidan e-post entitet](#new-to-the-email-entity-page)
 
-Administratörerna för Microsoft Defender för Office 365 (eller MDO) E5 och MDO P1 och P2 har en 360-gradersvy av e-post på sidan **E-post entitet.** Den här sidan för att gå till e-post har skapats för att förbättra informationen som levereras i e-postutforskaren i [Hotutforskaren.](threat-explorer-views.md)
+Administratörerna för Microsoft Defender för Office 365 E5 och Defender för Office P1 och P2 har en 360-gradersvy av e-post med hjälp av sidan **E-post entitet.** Den här sidan för att gå till e-post har skapats för att förbättra informationen som levereras i e-postutforskaren i [Hotutforskaren.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Nå entitetssidan för e-post
 
-Sidan för e-post entitet är tillgänglig i Microsoft 365 defender-portalen <https://security.microsoft.com> () i **E& för samarbete** \> **i Utforskaren.** Du kan också använda för att gå **direkt till** sidan i <https://security.microsoft.com/threatexplorer> Utforskaren.
+Sidan för e-post entitet är tillgänglig i Microsoft 365 Defender <https://security.microsoft.com> () i **E-& för samarbete** \> **i Utforskaren.** Du kan också använda för att gå **direkt till** sidan i <https://security.microsoft.com/threatexplorer> Utforskaren.
 
 I **Utforskaren** väljer du ämnet för ett e-postmeddelande som du undersöker. En guldlist visas högst upp i e-postmeddelandet. Den här inbjudan till den nya sidan säger "Prova vår nya sida för e-post entitet med bättre data...". Välj för att visa den nya sidan.
 

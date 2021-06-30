@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Den här artikeln innehåller en sammanfattning av hur Microsoft tillämpar innehavarisolering i molntjänster som Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c5be65186b75f6056a64b776e4f0d25bcd55eb1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b52d936bb00ac0adef0baf428cbc5f9a8f8aba49
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923082"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194655"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Tenant Isolation i Microsoft 365
 
@@ -39,7 +39,7 @@ Flera olika former av skydd har implementerats i hela Microsoft 365 för att fö
 - Logisk avgränsning av kundinnehållet i varje klientorganisation för Microsoft 365 tjänster kan åstadkommas Azure Active Directory auktorisering och rollbaserad åtkomstkontroll.
 - SharePoint Online tillhandahåller mekanismer för dataisolering på lagringsnivån.
 - Microsoft använder fysisk säkerhet, bakgrundskontroller och en flerlagerskrypteringsstrategi för att skydda kundinnehållets konfidentialitet och integritet. Alla Microsoft 365 har biometriska åtkomstkontroller, med mest krav på palmutskrifter för att få fysisk åtkomst. Dessutom krävs alla USA-baserade Microsoft-anställda för att genomföra en standardbakgrundskontroll som en del av anställningsprocessen. Mer information om de kontroller som används för administrativ åtkomst i Microsoft 365 finns i [Microsoft 365 Administrationsåtkomstkontroller.](/compliance/assurance/assurance-administrative-access-controls-overview)
-- Microsoft 365 använder tjänstebaserade tekniker som krypterar kundinnehåll i vila och överföring, inklusive BitLocker, kryptering per fil, TLS (Transport Layer Security) och IPsec (Internet Protocol Security). Specifik information om kryptering i Microsoft 365 finns i [Datakrypteringsteknik i Microsoft 365.](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)
+- Microsoft 365 använder tjänstebaserade tekniker som krypterar kundinnehåll vid vila och överföring, inklusive BitLocker, kryptering per fil, TLS (Transport Layer Security) och IPsec (Internet Protocol Security). Specifik information om kryptering i Microsoft 365 finns i [Datakrypteringsteknik i Microsoft 365.](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)
 
 Tillsammans tillhandahåller de ovan listade skydden robusta logiska avgränsningskontroller som tillhandahåller skydd mot hot och åtgärder som motsvarar det som tillhandahålls av fysisk avgränsning.
 
@@ -48,7 +48,6 @@ Tillsammans tillhandahåller de ovan listade skydden robusta logiska avgränsnin
 - [Isolering och åtkomstkontroll i Azure Active Directory](microsoft-365-isolation-in-azure-active-directory.md)
 - [Klientisolering i Office Graph och Delve](microsoft-365-isolation-in-graph-and-delve.md)
 - [Innehavarisolering i Microsoft 365 sökning](microsoft-365-isolation-in-microsoft-365-search.md)
-- [Tenant Isolation i Office 365 Video](microsoft-365-isolation-in-microsoft-365-video.md)
 - [Resursgränser](/compliance/assurance/assurance-resource-limits)
 - [Övervaka och testa klientorganisations begränsningar](/compliance/assurance/assurance-monitoring-and-testing)
 - [Isolerings- och åtkomstkontroll i Microsoft 365](microsoft-365-isolation-in-microsoft-365.md)

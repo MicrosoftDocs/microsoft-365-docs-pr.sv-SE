@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c043e97d6c02e4f41d000e9ce8cfea4a0950252a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 65e3e8d1baef7ca4440824c9a262f0b5f696b657
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246259"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194751"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>Rapportera och felsöka Microsoft Defender för ATP ASR-regler
 
@@ -42,7 +42,7 @@ Här är en skärmbild från säkerhetscentret Microsoft 365 (under Rapporter **
 
 En av de mest kraftfulla funktionerna i Microsoft Defender för Endpoint är avancerad sökning. Om du inte är bekant med avancerad sökning kan du referera till att [proaktivt leta efter hot med avancerad sökning.](advanced-hunting-overview.md)
 
-Avancerad sökning är ett frågebaserat verktyg (Kusto Query Language) som du kan använda för att utforska upp till 30 dagar efter de registrerade (rådata) som MDE-slutpunktsidentifiering och svar (Identifiering och åtgärd på slutpunkt) samlar in från alla dina datorer. Genom avancerad sökning kan du proaktivt kontrollera händelser för att hitta intressanta indikatorer och enheter. Den flexibla åtkomsten till data hjälper till att undvika en fast uppgift om både kända och potentiella hot.
+Avancerad sökning är ett frågebaserat (Kusto Query Language) hotjningsverktyg som gör att du kan utforska upp till 30 dagar av registrerade (rådata) data som Defender för Endpoint samlar in från dina enheter. Genom avancerad sökning kan du proaktivt kontrollera händelser för att hitta intressanta indikatorer och enheter. Den flexibla åtkomsten till data hjälper till att undvika en fast uppgift om både kända och potentiella hot.
 
 Genom avancerad sökning kan du extrahera ASR-regelinformation, skapa rapporter och få ingående information om kontexten för en viss ASR-regelgranskning eller blockhändelse.
 

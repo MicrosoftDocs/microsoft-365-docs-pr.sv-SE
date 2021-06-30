@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Administratörer kan läsa mer om utvärderingsläget för Microsoft Defender för Office 365
-ms.openlocfilehash: ba01fa45ca9a4e2e5b3597378bf7ddafc8be3f56
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 50060e36a0dd6d82ccbdf6d2bb8a00b2bf5e9d6d
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768752"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195015"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Om utvärderingsversionen av Microsoft Defender Office 365
 
@@ -49,7 +49,7 @@ Med en utvärderingsversion kan organisationer enkelt konfigurera och konfigurer
 
 Som standard är de här principerna begränsade till alla användare i organisationen, men administratörer kan anpassa principerna under eller efter installationen så att de endast gäller för specifika användare.
 
-Under installationen konfigureras även MDO-svarsfunktioner (finns i MDO P2 eller motsvarande) för hela organisationen. Det krävs ingen principomfång.
+Under installationen konfigureras Defender Office 365 svarsfunktioner (finns i Defender för Office 365 P2 eller motsvarande) också för hela organisationen. Det krävs ingen principomfång.
 
 ## <a name="licensing"></a>Licensiering
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8297fac0f733b93b1d8e3eabb25eeee7b1e07acb
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5eca3b7e712b1fc5bdb876630c47bd24e73c7c76
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821983"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194691"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Operativsystem, plattformar och funktioner som stöds – för Hantering av hot och säkerhetsrisker
 
@@ -56,11 +56,11 @@ Windows Server 2008 R2 | Ja | Ja | Ja | Ja | Ja
 Windows Server 2012 R2 | Ja | Ja | Ja | Ja | Ja
 Windows Server 2016 | Ja | Ja | Ja | Ja | Ja
 Windows Server 2019 | Ja | Ja | Ja | Ja | Ja
-macOS 10.14 "Mojave" och högre | Ja | Ja | Ja (förhandsversion) | Ja (förhandsversion) | Ja (förhandsversion)
-Red Hat Enterprise Linux 7.2 eller senare **(förhandsversion)** ( \* se meddelandet "Viktigt" nedan) | Ja | Ja | Ja | Ja | Ja
-CentOS 7.2 eller senare **(förhandsversion)** | Ja | Ja | Ja | Ja | Ja
-Ubuntu 16.04 LTS eller senare LTS **(förhandsversion)** | Ja | Ja | Ja | Ja | Ja
-Oracle Linux 7.2 eller senare **(förhandsversion)** | Ja | Ja | Ja | Ja | Ja
+macOS 10.14 "Mojave" och högre | Ja | Ja | Ja | Ja | Ja 
+Red Hat Enterprise Linux 7.2 eller senare \* (se meddelandet "Viktigt" nedan) | Ja | Ja | Ja | Ja | Ja
+CentOS 7.2 eller senare | Ja | Ja | Ja | Ja | Ja
+Ubuntu 16.04 LTS eller senare LTS | Ja | Ja | Ja | Ja | Ja
+Oracle Linux 7.2 eller senare | Ja | Ja | Ja | Ja | Ja
 
 >[!IMPORTANT]
 > \* Red Hat Enterprise Linux: "Sårbarhetsdata som tillhandahålls och visas som en del av din Microsoft Defender för Endpoint-tjänster görs tillgängliga för dig i sin rådata, "AS IS", från Red Hat, Inc., och kanske inte är uppdaterade. De data som är tillgängliga i Red Hat Security Data API är licensierade enligt Den internationella Creative Commons Attribution 4.0-licensen. Du tar risken med att använda dessa data. Microsoft och dess tredjepartsleverantörer frånsäger sig allt ansvar för följdskador och andra indirekta skador och underförstådda garantier, inklusive underförstådda garantier för icke-intrång, säljbarhet och lämplighet för ett visst ändamål. © 2020 Red Hat. Med ensamrätt. © 2020 Microsoft. Med ensamrätt."

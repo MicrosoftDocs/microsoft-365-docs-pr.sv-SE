@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 79d736330a40d33f5334196d165e72f487b6d959
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108337"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194787"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Utvärdera Microsoft Defender för Office 365
 
@@ -50,7 +50,7 @@ Med utvärderingsläge kan [Valv,](safe-attachments.md) [Valv,](safe-links.m
 
 Som en del av konfigurationen konfigurerar utvärderingsläget även [Utökad filtrering för kopplingar.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Filtreringen förbättrar filtreringsprecisionen genom att bevara IP-adress och avsändarinformation, som annars försvinner när e-post passerar genom en e-postsäkerhetsgateway (ESG) framför Defender för Office 365. Förbättrad filtrering för kopplingar förbättrar också filtreringsprecisionen för din Exchange Online Protection (EOP) skydd mot skräppost och nätfiske.
 
-Förbättrad filtrering för kopplingar förbättrar filtreringsprecisionen men kan ändra slutbarheten för vissa meddelanden om du har en ESG framför Defender för Office 365 och för närvarande inte kringgår EOP-filtrering. Effekterna är begränsade till EOP-principer. MDO-principer som har ställts in som en del av utvärderingen skapas i icke-verkställande läge. Om du vill minimera potentiell produktionsrisk kan du kringgå all EOP-filtrering genom att skapa en e-postflödesregel (kallas även transportregel) för att ange SCL (Spam Confidence Level) för meddelanden till -1. Mer information finns i Använda e-postflödesregler för att ange [SCL (Spam Confidence Level) i](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)Exchange Online postmeddelanden.  
+Förbättrad filtrering för kopplingar förbättrar filtreringsprecisionen men kan ändra slutbarheten för vissa meddelanden om du har en ESG framför Defender för Office 365 och för närvarande inte kringgår EOP-filtrering. Effekterna är begränsade till EOP-principer. Defender Office 365 principer som har ställts in som en del av utvärderingen skapas i icke-tvingande läge. Om du vill minimera potentiell produktionsrisk kan du kringgå all EOP-filtrering genom att skapa en e-postflödesregel (kallas även transportregel) för att ange SCL (Spam Confidence Level) för meddelanden till -1. Mer information finns i Använda e-postflödesregler för att ange [SCL (Spam Confidence Level) i](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)Exchange Online postmeddelanden.  
 
 När utvärderingsläget har ställts in får du en rapport som uppdateras dagligen med upp till 90 dagars data om de meddelanden som skulle ha blockerats om principerna implementerats (till exempel ta bort, skicka till skräppost, karantän). Rapporter skapas för alla Defender för identifiering Office 365 och EOP. De aggregeras per identifieringsteknik (till exempel personifiering) och kan filtreras efter tidsperiod. Dessutom kan du skapa meddelanderapporter på begäran för att skapa anpassade pivoter eller för att djupdykar meddelanden med hjälp av Utforskaren.
 

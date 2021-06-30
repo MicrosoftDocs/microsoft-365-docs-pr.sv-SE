@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Följ sökvägen till ett inkommande meddelande via filtreringsstacken för hot i Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1113d04cabdabe2925242cb18dde78daf9ef6e2c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683301"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194811"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Steg-för-steg skydd mot hot i Microsoft Defender för Office 365
 
@@ -51,7 +51,7 @@ Edge-block är utformade för att vara automatiska. Om det är falskt positivt m
 
 Funktioner i avsändarinformation är avgörande för att upptäcka skräppost, massutskick, personifiering och obehöriga förfalskningsmeddelanden och även för att göra identifiering av meddelanden. De flesta av dessa funktioner kan konfigureras individuellt.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Fas 2 av filtrering i MDO är Sender Intelligence.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Fas 2 av filtrering i Defender för Office 365 är Sender Intelligence.":::
 
 1. **Identifiering av konto** komprometteringar utlöses och aviseringar höjs när ett konto har avvikande beteende, konsekvent med intrång. I vissa fall blockeras användarkontot och hindras från att skicka ytterligare e-postmeddelanden tills problemet har lösts av en organisations säkerhetsgrupp.
 
@@ -133,7 +133,7 @@ Det sista steget äger rum efter e-post- eller filleverans, och då gäller e-po
 
 Det slutliga diagrammet (som med alla delar av diagrammet som skriver det) kan komma att ändras allt eftersom *produkten växer och utvecklar.* Bokmärk den här sidan och använd **alternativet** för feedback som du hittar längst ned om du behöver fråga efter uppdateringar. För dina poster är det här högen med alla faser i ordning:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Alla faser av filtrering i MDO i ordningsföljd, 1 till 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Alla faser i filtreringen i Defender för Office 365 i ordningsföljd, 1 till 4.":::
 
 ## <a name="more-information"></a>Mer information
 

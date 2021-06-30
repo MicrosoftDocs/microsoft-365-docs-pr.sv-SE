@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: I den här artikeln kan du läsa mer om Azure ExpressRoute-dirigeringskrav, kretsar och dirigeringsdomäner för användning Office 365.
-ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b27e3cfe41af8cf5e444f1221f1cee2e3bbf5826
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687175"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194799"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Dirigering med ExpressRoute för Office 365
 
@@ -85,14 +85,6 @@ För att Microsoft ska kunna dirigera de här dubbelriktade trafikflödena tillb
 
 När du konfigurerar en peeringrelation med hjälp av Microsoft-peeringdirigeringsdomänen och godkänns för rätt åtkomst kommer du att kunna se alla PaaS- och SaaS-tjänster som är tillgängliga via ExpressRoute. De Office 365-tjänster som utformats för ExpressRoute kan hanteras med [BGP-communities](./bgp-communities-in-expressroute.md) eller [routefilter.](/azure/expressroute/how-to-routefilter-portal)
   
-Andra program, till Office 365 Video, är ett Office 365 program. Men Office 365 Video består av tre olika komponenter: portalen, direktuppspelningstjänsten och innehållsleveransnätverket. Portalen finns i SharePoint Online, direktuppspelningstjänsten i Azure Media Services och innehållsleveransnätverket finns i Azure CDN. I följande tabell beskrivs dessa komponenter.
-
-|**Komponent**|**Underliggande program**|**Ingår i SharePoint BGP-communityn online?**|**Använd**|
-|:-----|:-----|:-----|:-----|
-|Office 365 Videoportal  <br/> |SharePoint Online  <br/> |Ja  <br/> |Konfiguration, uppladdning  <br/> |
-|Office 365 Tjänst för direktuppspelning av video  <br/> |Azure Media Services  <br/> |Nej  <br/> |Direktuppspelningstjänst som används om videon inte är tillgänglig från CDN  <br/> |
-|Office 365 Nätverk för videoinnehållsleverans  <br/> |Azure CDN  <br/> |Nej  <br/> |Primär källa för nedladdning/direktuppspelning av video. [Läs mer om Office 365 videonätverk](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e).  <br/> |
-
 Alla Office 365 som är tillgängliga med Microsoft-peering visas i artikeln om [Office 365-slutpunkter](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) efter programtyp och FQDN. Anledningen till att använda FQDN i tabellerna är att kunderna kan hantera trafik med hjälp av PAC-filer eller andra proxykonfigurationer. Se vår guide för att hantera [Office 365 slutpunkter,](./managing-office-365-endpoints.md) till exempel PAC-filer.
   
 I vissa situationer har vi använt en jokerteckendomän där en eller flera under-FQDN annonseras på ett annat sätt än jokerteckendomänen på högre nivå. Det här inträffar vanligtvis när jokertecknet representerar en lång lista med servrar som alla annonseras till ExpressRoute och Internet, medan en liten delmängd av destinationer endast annonseras till Internet, eller tvärtom. I tabellerna nedan kan du se var skillnaderna finns.

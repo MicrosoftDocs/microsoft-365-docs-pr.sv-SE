@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Ta reda på vad som händer när en undersökning eller ett juridiskt ärende som stöds Advanced eDiscovery ett ärende stängs eller tas bort.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7b11faa2ccdb44fca916b2f602d5120adadf1739
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: efbcbe34e6d7d8b564bcfa0cf9bbd8a1fbb59709
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657657"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194638"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Stänga eller ta bort ett Advanced eDiscovery ärende
 
@@ -36,7 +36,7 @@ Följande händer när du stänger ett Advanced eDiscovery ärende:
 
 - Om du stänger ett ärende inaktiveras bara det som är kopplat till det aktuella ärendet. Om andra innehåll sätts på en plats (t.ex. bevarande av juridiska skäl, bevarande av bas för eDiscovery eller ett bevarande från ett annat Advanced eDiscovery ärende) kommer de innehållna innehållet fortfarande att bibehållas.
 
-- Ärendet är fortfarande listat på sidan eDiscovery i Microsoft 365 efterlevnadscenter. Informationen, som sätts i spärrade fall, sökningar och medlemmar i ett stängt ärende bevaras.
+- Ärendet finns fortfarande kvar på sidan eDiscovery i Microsoft 365 Efterlevnadscenter. Informationen, som sätts i spärrade fall, sökningar och medlemmar i ett stängt ärende bevaras.
 
 - Du kan redigera ett ärende när det har stängts. Du kan till exempel lägga till eller ta bort medlemmar, skapa sökningar, exportera sökresultat och förbereda sökresultat för analys i Advanced eDiscovery. Den största skillnaden mellan aktiva och stängda ärenden är att kvarstad är inaktiverad när ett ärende stängs.
 
@@ -46,9 +46,9 @@ Så här stänger du ett ärende:
 
 2. På fliken **Inställningar,** under **Ärendeinformation,** klickar du på **Välj**.
 
-3. Längst ned på den **utfällade sidan** Ärendeinformation klickar du på (**...**) **Fler alternativ**, och klicka sedan på **Stäng ärende**.
+   ![Öppna den utfällingssidan med ärendeinformation i Advanced eDiscovery ärende](..\media\AeDSelectCaseInformation.png) 
 
-   ![Alternativ på menyn Fler alternativ för att stänga ett Advanced eDiscovery ärende](..\Media\CloseAdvancedeDiscoveryCase.png)
+3. Längst ned på den **utfällade** sidan Ärendeinformation klickar du **på Åtgärder** och sedan **på Stäng ärende.**
 
    Det kan ta upp till 60 minuter innan avslutsprocessen slutförs.
 
@@ -62,15 +62,13 @@ Så här öppnar du ett stängt ärende:
 
 2. På fliken **Inställningar,** under **Ärendeinformation,** klickar du på **Välj**.
 
-3. Längst ned på den **utfällade sidan** Ärendeinformation klickar du på (**...**) **Fler alternativ** och klicka sedan på **Öppna ärendet igen.**
-
-   ![Alternativ i menyn Fler alternativ för att öppna ett Advanced eDiscovery ärende](..\Media\ReopenAdvancedeDiscoveryCase.png)
+3. Längst ned på den **utfällade sidan** Ärendeinformation klickar du på **Åtgärder** och sedan på **Öppna ärendet igen.**
 
    Det kan ta upp till 60 minuter innan återöppnandeprocessen slutförs.
 
 ## <a name="delete-a-case"></a>Ta bort ett ärende
 
-Du kan ta bort både aktiva och stängda Advanced eDiscovery fall. När du tar bort ett ärende tas alla komponenter som är associerade med ärendet bort, till exempel listan över biblioteksarier, kommunikationer, sökningar, granskningsuppsättningar och exportjobb. Ärendet tas bort från listan över ärenden på sidan **Advanced eDiscovery** i Microsoft 365 efterlevnadscenter. Du kan inte återskapa eller öppna ett borttagna ärende.
+Du kan ta bort både aktiva och stängda Advanced eDiscovery fall. När du tar bort ett ärende tas alla komponenter som är associerade med ärendet bort, till exempel listan över biblioteksarier, kommunikationer, sökningar, granskningsuppsättningar och exportjobb. Ärendet tas bort från listan med ärenden på **Advanced eDiscovery** i Microsoft 365 Efterlevnadscenter. Du kan inte återskapa eller öppna ett borttagna ärende.
 
 > [!NOTE]
 > Vid data spill är det enda sättet att ta bort objekt i en granskningsuppsättning att ta bort det Advanced eDiscovery fall. Andra "söknings- och rensningsmetoder" tar inte bort objekt från en granskningsuppsättning.
@@ -91,6 +89,5 @@ Så här tar du bort ett ärende:
 
 2. På fliken **Inställningar,** under **Ärendeinformation,** klickar du på **Välj**.
 
-3. Längst ned på den **utfällade sidan** Ärendeinformation klickar du på (**...**) **Fler alternativ och** klicka sedan på Ta **bort ärende.**
+3. Längst ned på den **utfällade sidan** Ärendeinformation klickar du på **Åtgärder** och sedan på Ta **bort ärende.**
 
-   ![Alternativ på menyn Fler alternativ för att ta bort ett Advanced eDiscovery ärende](..\Media\DeleteAdvancedeDiscoveryCase.png)

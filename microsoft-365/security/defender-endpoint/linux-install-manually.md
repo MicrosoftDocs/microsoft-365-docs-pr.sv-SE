@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8d7ac39baabca1496a5d2c22521874cfd60c6208
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 2b75a9f4446c875e73245aa7d51e8fcc15e8d23c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105578"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53195027"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuera Microsoft Defender för Slutpunkt i Linux manuellt
 
@@ -92,7 +92,7 @@ Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar v
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
     ```
 
-    Eller om du vill utforska nya funktioner på valda enheter kanske du vill distribuera MDE för Linux till *insiders-fast-kanal:*
+    Eller om du vill utforska nya funktioner på valda enheter kanske du vill distribuera Microsoft Defender för Slutpunkt på Linux till *insiders-snabb* kanal:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
@@ -120,7 +120,7 @@ Om du vill förhandsgranska nya funktioner och ge tidig feedback rekommenderar v
     sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Om du till exempel kör SLES 12 och vill distribuera MDE för Linux från *prod-kanalen:*
+    Om du till exempel kör SLES 12 och vill distribuera Microsoft Defender för Endpoint på Linux från *prod-kanalen:*
 
     ```bash
     sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -400,13 +400,13 @@ När du uppgraderar ditt operativsystem till en ny huvudversion måste du först
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Migrera från Insiders-Fast till produktionskanalen
 
-1. Avinstallera "Insiders-Fast-kanalen" versionen av MDE för Linux.
+1. Avinstallera "Insiders-Fast-kanalen"-versionen av Defender för Slutpunkt på Linux.
 
     ``
     sudo yum remove mdatp
     ``
 
-1. Inaktivera MDE för Linux Insiders-Fast platsen  ``
+1. Inaktivera Defender för slutpunkten på Linux Insiders-Fast platsen  ``
     sudo yum repolist
     ``
 

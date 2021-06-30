@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Lär dig hur du använder efterlevnadsgränser för att skapa logiska gränser som styr användarinnehållsplatser som en eDiscovery-hanterare kan söka i Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23ff50b9cd0ab0178962f7be9f1cedfbd6a7a1f7
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: be857277d36d95ac1cd974ccb0c87f2048798450
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022348"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194715"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Konfigurera efterlevnadsgränser för eDiscovery-undersökningar
 
@@ -205,7 +205,7 @@ Med sökbehörighetsfilter kan du också styra vart innehåll dirigeras för exp
    För att förenkla begreppet styr **regionparametern** det datacenter som används för att söka efter innehåll i SharePoint och OneDrive. Det här gäller inte vid sökning efter innehåll i Exchange eftersom Exchange av innehållssökningar inte är bundna av datacentrets geografiska plats. Dessutom kan samma **Region-parametervärde** diktera det datacenter som exporterar dirigeras genom. Detta är ofta nödvändigt för att styra dataförflyttningen mellan geografiska tavla.
 
 > [!NOTE]
-> Om du använder Advanced eDiscovery kontrollerar **inte parametern Region** det område som data exporteras från. Data exporteras från organisationens primära datacenter. Dessutom är sökning efter innehåll i SharePoint OneDrive datacentret inte bundet av datacentrets geografiska placering. Alla datacenter genomsöks. Mer information om Advanced eDiscovery finns i [Översikt över Advanced eDiscovery lösning i Microsoft 365.](overview-ediscovery-20.md)
+> Om du använder Advanced eDiscovery kontrollerar **inte parametern Region** det område som data exporteras från. Data exporteras från organisationens centrala plats. Dessutom är sökning efter innehåll i SharePoint OneDrive datacentret inte bundet av datacentrets geografiska placering. Alla datacenter genomsöks. Mer information om Advanced eDiscovery finns i [Översikt över Advanced eDiscovery lösning i Microsoft 365.](overview-ediscovery-20.md)
 
 Här är exempel på hur du använder **parametern Region** när du skapar sökbehörighetsfilter för efterlevnadsgränser. Detta förutsätter att dotterbolaget Fourth Coffee finns i Nordamerika och att Coho Winery finns i Europa. 
   
@@ -225,7 +225,9 @@ Tänk på följande när du söker efter och exporterar innehåll i multigeobase
 
 - När du söker efter innehåll i SharePoint och  OneDrive dirigerar regionparametern sökningar till antingen den primära platsen eller satellitplatsen där eDiscovery-chefen kommer att utföra eDiscovery-undersökningar. Om en eDiscovery-hanterare söker SharePoint och OneDrive webbplatser utanför den region som anges i filtret för sökbehörigheter returneras inga sökresultat.
 
-- När du exporterar sökresultat överförs innehåll från alla innehållsplatser (inklusive Exchange, Skype för företag, SharePoint, OneDrive och andra tjänster som du kan söka i med hjälp av verktyget Innehållssökning) till den Azure-lagring-plats i datacentret som anges av **parametern Region.** Det här hjälper organisationer att hålla sig inom efterlevnadsgränserna genom att inte tillåta att innehåll exporteras över styrda kantlinjer. Om ingen region anges i filtret för sökbehörigheter laddas innehåll upp till organisationens primära datacenter.
+- När du exporterar sökresultat från bas-eDiscovery överförs innehåll från alla innehållsplatser (inklusive Exchange, Skype för företag, SharePoint, OneDrive och andra tjänster som du kan söka efter med hjälp av verktyget Innehållssökning) till den Azure Storage-plats i datacentret som anges av **parametern Region.** Det här hjälper organisationer att hålla sig inom efterlevnadsgränserna genom att inte tillåta att innehåll exporteras över styrda kantlinjer. Om ingen region anges i filtret för sökbehörigheter laddas innehåll upp till organisationens primära datacenter.
+
+  När du exporterar innehåll Advanced eDiscovery innehåll kan du inte styra vart innehåll laddas upp med hjälp av **parametern Region.** Innehållet laddas upp till en Azure Storage plats i ett datacenter på organisationens centrala plats. En lista över geoplatser baserat på din centrala plats finns Microsoft 365 [Multi-Geo eDiscovery-konfiguration](../enterprise/multi-geo-ediscovery-configuration.md).
 
 - Du kan redigera ett befintligt sökbehörighetsfilter för att lägga till eller ändra området genom att köra följande kommando:
 
@@ -269,19 +271,19 @@ Tänk på följande begränsningar när du hanterar eDiscovery-ärenden och unde
 
 - Om efterlevnadsgränser och sökbehörighetsfilter implementeras för en användare rekommenderar vi att du inte tar bort en användares postlåda och inte användarens OneDrive konto. Med andra ord, om du tar bort en användares postlåda bör du också ta bort användarens OneDrive-konto eftersom mailbox_RecipientFilter används för att tillämpa sökbehörighetsfilter för OneDrive.
 
-- Efterlevnadsgränser och sökbehörighetsfilter beror på attribut som stämplas på innehåll i Exchange, OneDrive och SharePoint och efterföljande indexering av det här stämplade innehållet.
+- Efterlevnadsgränser och sökbehörighetsfilter beror på attribut som stämplas på innehåll i Exchange, OneDrive och SharePoint samt efterföljande indexering av det här stämplade innehållet.
 
 - Vi rekommenderar inte att du använder undantagsfilter (som att använda i ett filter för `-not()` sökbehörigheter) för en innehållsbaserad efterlevnadsgräns. Användning av ett undantagsfilter kan få oväntade resultat om innehåll med nyligen uppdaterade attribut inte har indexerats.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 
-**Vem kan skapa och hantera sökbehörighetsfilter (med hjälp New-ComplianceSecurityFilter och Set-ComplianceSecurityFilter cmdlets)?**
+**Vem kan skapa och hantera sökbehörighetsfilter (med New-ComplianceSecurityFilter och Set-ComplianceSecurityFilter cmdlets)?**
   
-Om du vill skapa, visa och ändra sökbehörighetsfilter måste du vara medlem i rollgruppen Organisationshantering i Kompatibilitetscenter för Microsoft 365.
+Om du vill skapa, visa och ändra sökbehörighetsfilter måste du vara medlem i rollgruppen Organisationshantering i Microsoft 365 Efterlevnadscenter.
   
 **Om en eDiscovery-hanterare har tilldelats fler än en rollgrupp som spänner över flera byråer, hur gör de för att söka efter innehåll i en agentur eller den andra?**
   
-EDiscovery-hanteraren kan lägga till parametrar i sina sökfrågor som begränsar sökningen till en specifik agentur. Om en organisation till exempel har angett egenskapen **CustomAttribute10** för att skilja mellan byråerna kan de lägga till följande i sina sökfrågor för att söka i postlådor och OneDrive-konton i en viss agentur:  `CustomAttribute10:<value>` .
+EDiscovery-hanteraren kan lägga till parametrar i sina sökfrågor som begränsar sökningen till en specifik agentur. Om en organisation till exempel har angett egenskapen **CustomAttribute10** för att skilja mellan byråer kan de lägga till följande i sina sökfrågor för att söka i postlådor och OneDrive-konton i en viss agentur: `CustomAttribute10:<value>` .
   
 **Vad händer om värdet för attributet som används som efterlevnadsattribut i ett filter för sökbehörigheter ändras?**
   
@@ -289,13 +291,13 @@ Det tar upp till tre dagar för ett filter med sökbehörigheter att tillämpa e
   
 **Kan en eDiscovery-hanterare se innehåll från två separata efterlevnadsgränser?**
   
-Ja, det kan du göra när du söker i Exchange-postlådor genom att lägga till eDiscovery-hanteraren i rollgrupper som är synliga för båda byråerna. När du söker på SharePoint-webbplatser och OneDrive-konton kan en eDiscovery-hanterare söka efter innehåll i olika efterlevnadsgränser endast om byråerna finns i samma region eller geo plats. **Obs!** Den här begränsningen för webbplatser gäller inte i Avancerad eDiscovery eftersom sökning efter innehåll i SharePoint och OneDrive inte är bunden av geografisk plats.
+Ja, det kan du göra när du söker Exchange postlådor genom att lägga till eDiscovery-hanteraren i rollgrupper som har insyn i båda byråerna. Men när en eDiscovery-hanterare söker SharePoint webbplatser och OneDrive-konton kan du bara söka efter innehåll i olika efterlevnadsgränser om byråerna befinner sig i samma region eller geo plats. **Obs!** Den här begränsningen för webbplatser gäller inte i Advanced eDiscovery eftersom sökning efter innehåll i SharePoint och OneDrive inte är bunden av geografisk plats.
   
-**Fungerar sökbehörighetsfilter för eDiscovery-fall som sätts i spärrade eDiscovery-fall, Microsoft 365-kvarhållningsprinciper eller DLP?**
+**Fungerar filter för sökbehörigheter för eDiscovery-fall som sätts i Microsoft 365 bevarandeprinciper eller DLP?**
   
 Nej, inte för stunden.
   
-**Om jag anger ett område som styr vart innehåll exporteras, men jag har en SharePoint-organisation i det området, kan jag ändå söka i SharePoint?**
+**Om jag anger ett område som styr vart innehåll exporteras, men jag har ingen SharePoint organisation i det området, kan jag ändå söka i SharePoint?**
   
 Om området som anges i filtret för sökbehörigheter inte finns i organisationen genomsöks standardområdet.
   

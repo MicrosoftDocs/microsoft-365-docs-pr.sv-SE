@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b7699b1a24e7e1d74a48389d02518e814911ecc
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 7ebb37e80cae0e9dd70d01600c47bd1459c122c3
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730876"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194907"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Schemalägga en uppdatering av Microsoft Defender för Endpoint (Linux)
 
@@ -98,7 +98,7 @@ Skriv ":wq" utan dubbla citattecken.
 
 Om du vill visa dina jobb skriver du `sudo crontab -l`
 
-:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="uppdatera MDE linux":::
+:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="uppdatera Defender för Endpoint på Linux":::
 
 Så här inspekterar du ett jobb: `sudo grep mdatp /var/log/cron`
 
