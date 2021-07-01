@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Lär dig hur du kontaktar supporten för ditt land eller din region.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0f9f5665345733abafc6e4f2e777958feb4e11b6
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8240b9f4c4402e0e372a5e242d8b200f26f28717
+ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298641"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53243977"
 ---
 # <a name="contact-support-for-india"></a>Kontakta supporten för Indien
 
@@ -36,7 +36,3 @@ Engelska: Mon-Fri 9.00–18.00
 ### <a name="technical-support"></a>Teknisk support:
 
 Engelska: mån–sön, dygnet runt
-
-Alternativ Telefon tal: 1800 200 2052
-
-Lokal avgiftsfritt
