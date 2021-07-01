@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: SKOS formatreferens för SharePoint-taxonomi
-ms.openlocfilehash: 6a565de9598706e998206304093ed86a1a55704d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c08073f453ef0b6a224829b7d4cb4034b74ed14
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911180"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228741"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>SKOS formatreferens för SharePoint-taxonomi
 
@@ -55,7 +55,7 @@ En taxonomi är ett formellt klassificeringssystem. En taxonomi grupperar ord, e
 
 Representerar en term eller ett nyckelord i en hierarki med hanterade metadata.
 
-En [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) är den atomiska enheten i en SharePoint [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore). Varje [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) tillhör en [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) som tillhör ett [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group). 
+En [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) är den atomiska enheten i en SharePoint [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore). Varje [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) tillhör en [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) som tillhör ett [TermGroup](/dotnet/api/microsoft.sharepoint.taxonomy.group).
 
 Syntaxen för att definiera en [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) är följande:
 
@@ -79,14 +79,14 @@ En [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) kan:
 - Ha flera underordnade [Termer](/dotnet/api/microsoft.sharepoint.taxonomy.term) men bara en överordnad [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 - Inte har någon överordnad [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) definierad om det är en topLevelTermOf ett [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
 - Ha en defaultLabel, per [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) arbetsspråk.
-- Inte finnas om den varken innehåller en överordnad [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) eller är topLevelTermOf ett [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). 
+- Inte finnas om den varken innehåller en överordnad [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) eller är topLevelTermOf ett [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset).
 - Har bara ett unikt defaultLabel på samma hierarkiska nivå.
 
 **sharepoint-taxonomi:TermSet**
 
 Representerar en hierarkisk eller platt uppsättning termobjekt som kallas "TermSet".
 
-Som namnet antyder är TermSet en uppsättning [Termer](/dotnet/api/microsoft.sharepoint.taxonomy.term). En [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) i en [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) måste tillhöra ett [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Ingen [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) kan finnas oberoende. 
+Som namnet antyder är TermSet en uppsättning [Termer](/dotnet/api/microsoft.sharepoint.taxonomy.term). En [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) i en [TermStore](/dotnet/api/microsoft.sharepoint.taxonomy.termstore) måste tillhöra ett [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Ingen [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) kan finnas oberoende.
 
 Syntaxen för att definiera en [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) är:
 
@@ -105,7 +105,7 @@ Om den termSetName som anges inte är unik i [TermGroup](/dotnet/api/microsoft.s
 
 **sharepoint-taxonomi:hasTopLevelTerm**
 
-I SharePoint används den här egenskapen för att avbilda den översta [Termen](/dotnet/api/microsoft.sharepoint.taxonomy.term) i [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) som är startpunkten i hierarkin för [Termer](/dotnet/api/microsoft.sharepoint.taxonomy.term) i ett [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Det här är en inverterad relation till sharepoint-taxonomi:topLevelTermOf. 
+I SharePoint används den här egenskapen för att avbilda den översta [Termen](/dotnet/api/microsoft.sharepoint.taxonomy.term) i [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) som är startpunkten i hierarkin för [Termer](/dotnet/api/microsoft.sharepoint.taxonomy.term) i ett [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset). Det här är en inverterad relation till sharepoint-taxonomi:topLevelTermOf.
 
 Syntaxen för att definiera detta är:
 
@@ -113,7 +113,7 @@ Syntaxen för att definiera detta är:
 ex:TermSetA    sharepoint-taxonomy:hasTopLevelTerm    ex:TermA.
 ```
 
->[!NOTE]
+> [!NOTE]
 > Det går inte att definiera [Term på översta nivån](/dotnet/api/microsoft.sharepoint.taxonomy.term) för en överordnad [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
 **sharepoint-taxonomi:topLevelTermOf**
@@ -180,7 +180,7 @@ Du kan även lägga till valfria etiketter i din taxonomi.
 
 **sharepoint-taxonomi:otherLabel**
 
-Det här är den alternativa lexikala etiketten för en [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term). 
+Det här är den alternativa lexikala etiketten för en [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
 Syntaxen för att definiera en otherLabel är:
 
@@ -190,11 +190,11 @@ ex:TermA    sharepoint-taxonomy:otherLabel    “Term A”@en-us.
 
 ## <a name="semantic-relationships"></a>Semantiska relationer
 
-Taxonomier har hierarkiska och ibland en enkel "relaterad term" som associerande relation men vissa har "semantiska relationer" eller egendefinierade relationer. 
+Taxonomier har hierarkiska och ibland en enkel "relaterad term" som associerande relation men vissa har "semantiska relationer" eller egendefinierade relationer.
 
 **sharepoint-taxonomi:parent**
 
-Den här hierarkiska relationen relaterar en [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) till en annan [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term). En [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) kan vara en toppnivå [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) av ett [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset), men om det inte måste det finnas en överordnad [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term). 
+Den här hierarkiska relationen relaterar en [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) till en annan [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term). En [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) kan vara en toppnivå [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) av ett [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset), men om det inte måste det finnas en överordnad [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
 Syntaxen för att definiera en parent är:
 
@@ -206,7 +206,7 @@ Det innebär att TermA är det överordnade objektet och TermA är det underordn
 
 **sharepoint-taxonomi:child**
 
-Objektet innehåller ett eller flera underordnade TermSet-instanser och du kan komma åt dessa via TermSets egenskaper. I den här klassen finns också metoder för att skapa nya underordnade TermSet-objekt. Behörigheter för att redigera underordnad Term och TermSet-instanser anges i gruppen. 
+Objektet innehåller ett eller flera underordnade TermSet-instanser och du kan komma åt dessa via TermSets egenskaper. I den här klassen finns också metoder för att skapa nya underordnade TermSet-objekt. Behörigheter för att redigera underordnad Term och TermSet-instanser anges i gruppen.
 
 Den här hierarkiska relationen relaterar en [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) till en annan [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term).
 
@@ -224,7 +224,7 @@ I det här avsnittet beskrivs taxonomin detaljerad i Microsoft. SharePoint. taxo
 
 **sharepoint-taxonomi:description**
 
-Det här är en detaljerad beskrivning av alla vokabulära enheter i [SharePoint-taxonomi](/dotnet/api/microsoft.sharepoint.taxonomy). 
+Det här är en detaljerad beskrivning av alla vokabulära enheter i [SharePoint-taxonomi](/dotnet/api/microsoft.sharepoint.taxonomy).
 
 Syntaxen för att lägga till en beskrivning är:
 
@@ -280,7 +280,7 @@ På varje nivå i hierarkin kan du konfigurera vissa dataegenskaper för en Term
 
 **sharepoint-taxonomi:isAvailableForTagging**
 
-Använd det här alternativet om du vill ange om en [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) eller [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) tillgänglig i SharePoint-listor och -bibliotek.  
+Använd det här alternativet om du vill ange om en [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term) eller [TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset) tillgänglig i SharePoint-listor och -bibliotek.
 
 Syntaxen för det här är:
 
@@ -315,7 +315,7 @@ PropertyName|Har egenskapsetikett|SharedCustomPropertyForTerm, LocalCustomProper
 - Hierarkisk redundans – ett [SKOS](https://www.w3.org/TR/skos-primer/)-konceptet kan kopplas till flera mer omfattande begrepp samtidigt men en sharepoint-taxonomi:Term kan bara ha en SharePoint-taxonomi:parent och därför är det inte heller tillåtet att använda cykliska beroenden för Termer.
 - Du kan inte använda ägarlösa termer i SharePoint-taxonomi. Alla sharepoint-taxonomier:Term ska antingen ha en sharepoint-taxonomi:parent eller så bör den vara sharepoint-taxonomi:topLevelTermOf ett TermSet.
 - SharePoint-taxonomi saknar stöd för associeringsrelationer.
-- I SharePoint kan du bara använda 2 typer av hierarkiska relationer – sharepoint-taxonomi:parent and sharepoint-taxonomi:child. 
+- I SharePoint kan du bara använda 2 typer av hierarkiska relationer – sharepoint-taxonomi:parent and sharepoint-taxonomi:child.
 - Till skillnad från [SKOS](https://www.w3.org/TR/skos-primer/) kan den hierarkiska relationen i SharePoint-taxonomivokabulär bara upprättas med Termer i samma TermSet.
 
 ## <a name="see-also"></a>Se även

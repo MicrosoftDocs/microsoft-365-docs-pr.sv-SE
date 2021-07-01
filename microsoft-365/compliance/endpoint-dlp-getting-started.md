@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Konfigurera dataförlustskydd för slutpunkter i Microsoft 365 för att övervaka filaktiviteter och implementera skyddsåtgärder för dessa filer till slutpunkter.
-ms.openlocfilehash: 134c5426e428372670a50c76301a9e9e0c10b343
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 8dc57bfe395ad76e6b8aef336aaadb2cb7e42f81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061667"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226677"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Komma igång med dataförlustskydd för slutpunkter
 
@@ -44,7 +44,6 @@ Innan du börjar med slutpunkts-DLP måste du bekräfta din [Microsoft 365-prenu
 - Microsoft 365 A5 Compliance
 - Microsoft 365 E5 – Informationsskydd och styrning
 - Microsoft 365 A5 – Informationsskydd och styrning
-
 
 ### <a name="permissions"></a>Behörigheter
 
@@ -84,25 +83,26 @@ Kontrollera att de Windows 10-enheter som du planerar att distribuera slutpunkts
 
 1. Måste köra Windows 10 x64 version 1809 eller senare.
 
-2. Klientversion för program mot skadlig kod version 4.18.2009.7 eller senare. Kontrollera din aktuella version genom att öppna Windows-säkerhet, välja ikonen Inställningar och sedan Om. Versionsnumret visas under Klientversion för program mot skadlig kod. Uppdatera till den senaste klientversionen för program mot skadlig kod genom att installera Windows Update KB4052623. 
+2. Klientversion för program mot skadlig kod version 4.18.2009.7 eller senare. Kontrollera din aktuella version genom att öppna Windows-säkerhet, välja ikonen Inställningar och sedan Om. Versionsnumret visas under Klientversion för program mot skadlig kod. Uppdatera till den senaste klientversionen för program mot skadlig kod genom att installera Windows Update KB4052623.
 
    > [!NOTE]
    > Ingen av Windows-säkerhetskomponenterna behöver vara aktiv. Du kan köra slutpunkts-DLP oberoende av Windows-säkerhetsstatus, men [Realtidsskydd och beteendeövervakning](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) måste vara aktiverat.
- 
-3. Följande Windows-uppdateringar installeras. 
- 
+
+3. Följande Windows-uppdateringar installeras.
+
    > [!NOTE]
    > Dessa uppdateringar är inte en förutsättning för att en enhet ska kunna installeras i slutpunkt-DLP, men innehåller korrigeringar för viktiga problem som gör att de måste installeras innan produkten används.
 
-    - För Windows 10 1809 – KB4559003, KB4577069, KB4580390
-    - För Windows 10 1903 eller 1909 – KB4559004, KB4577062, KB4580386
-    - För Windows 10 2004 – KB4568831, KB4577063
-    - För enheter med Office 2016 (och inte någon annan Office-version) – KB4577063 
+   - För Windows 10 1809 – KB4559003, KB4577069, KB4580390
+   - För Windows 10 1903 eller 1909 – KB4559004, KB4577062, KB4580386
+   - För Windows 10 2004 – KB4568831, KB4577063
+   - För enheter med Office 2016 (och inte någon annan Office-version) – KB4577063
 
 4. Alla enheter måste vara någon av följande:
-- [Azure Active Directory (AAD)-ansluten](/azure/active-directory/devices/concept-azure-ad-join)
-- [Hybrid Azure AD-ansluten](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-- [AAD-registrerad](/azure/active-directory/user-help/user-help-register-device-on-network)
+
+   - [Azure Active Directory (AAD)-ansluten](/azure/active-directory/devices/concept-azure-ad-join)
+   - [Hybrid Azure AD-ansluten](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+   - [AAD-registrerad](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Installera webbläsaren Microsoft Chromium Edge på slutpunktsenheten för att framtvinga principåtgärder för aktiviteten uppladdning till moln. Se [Ladda ned nya Microsoft Edge som baseras på Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -124,7 +124,7 @@ I det här distributionsscenariot kan du registrera enheter som ännu inte har r
 
 1. Öppna [Microsoft Efterlevnadscenter](https://compliance.microsoft.com).
 
-2. Öppna inställningssidan för Efterlevnadscenter och välj **Registrera enheter**. 
+2. Öppna inställningssidan för Efterlevnadscenter och välj **Registrera enheter**.
 
    > [!div class="mx-imgBorder"]
    > ![aktivera enhetshantering](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -140,7 +140,7 @@ I det här distributionsscenariot kan du registrera enheter som ännu inte har r
 
    > [!div class="mx-imgBorder"]
    > ![distributionsmetod](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-   
+
 6. Följ lämpliga instruktioner i [Registrera verktyg och metoder för Windows 10-datorer](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Den här länken tar dig till en landningssida där du kan komma åt procedurer för Microsoft Defender för Endpoint som matchar distributionspaketet du valde i steg 5:
 
     - Registrera Windows 10-datorer med hjälp av grupprincip
@@ -166,13 +166,12 @@ I det här scenariot är Microsoft Defender för Endpoint redan distribuerat och
 
    > [!div class="mx-imgBorder"]
    > ![enhetshantering](../media/endpoint-dlp-getting-started-2-device-management.png)
-   
+
 4. Välj **Registrering** om du behöver registrera ytterligare enheter.
 
 5. Välj hur du vill distribuera till dessa ytterligare enheter i listan **Distributionsmetod** och **ladda sedan ned paketet**.
 
 6. Följ lämpliga instruktioner i [Registrera verktyg och metoder för Windows 10-datorer](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Den här länken tar dig till en landningssida där du kan komma åt procedurer för Microsoft Defender för Endpoint som matchar distributionspaketet du valde i steg 5:
-
     - Registrera Windows 10-datorer med hjälp av grupprincip
     - Registrera Windows-datorer med Microsoft Endpoint Configuration Manager
     - Registrera Windows 10-datorer med hanteringsverktyg för mobila enheter
@@ -190,7 +189,6 @@ När du är klar och slutpunkten har registrerats ska den visas under tabellen *
 
 2. Se metoderna i [Konfigurera och visa aviseringar för DLP-principer](dlp-configure-view-alerts-policies.md) om du vill se aviseringarna för slutpunkts-DLP-principer.
 
-
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Visa data för slutpunkts-DLP i aktivitetsutforskaren
 
 1. Öppna [sidan Dataklassificering](https://compliance.microsoft.com/dataclassification?viewid=overview) för din domän i Microsoft 365 Efterlevnadscenter och välj Aktivitetsutforskaren.
@@ -201,13 +199,14 @@ När du är klar och slutpunkten har registrerats ska den visas under tabellen *
    > ![aktivitetsutforskarens filter för slutpunktsenheter](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>Nästa steg
+
 Nu när du har registrerat enheter och kan se aktivitetsdata i aktivitetsutforskaren, kan du gå vidare till nästa steg där du skapar DLP-principer som skyddar dina känsliga objekt.
 
 - [Använda dataförlustskydd för slutpunkter](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Se även
 
-- [Mer information om dataförlustskydd för slutpunkter](endpoint-dlp-learn-about.md)
+- [Mer information om dataförlustskydd för slutpunkt](endpoint-dlp-learn-about.md)
 - [Använda dataförlustskydd för slutpunkter](endpoint-dlp-using.md)
 - [Mer information om dataförlustskydd](dlp-learn-about-dlp.md)
 - [Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)

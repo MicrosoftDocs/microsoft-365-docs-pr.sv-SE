@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Läs mer om de nya meddelandekrypteringsfunktionerna i Office 365 som skyddar e-postkommunikationen med personer inom och utanför organisationen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 9b738c0f93b8958e441b34b458942c2b34c16661
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "52162750"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228585"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Konfigurera nya funktioner för meddelandekryptering
 
@@ -39,13 +39,13 @@ Det enda som krävs för att använda de nya OME-funktionerna är att [Azure Rig
 
 Azure RMS aktiveras också automatiskt för de flesta abonnemangen, så du behöver förmodligen inte göra något i det här avseendet heller. Se [Aktivera Azure Rights Management](/azure/information-protection/activate-service) för mer information.
 
->[!IMPORTANT]
->Om du använder Active Directory Rights Management Service (AD RMS) med Exchange Online måste du [migrera till Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) innan du kan använda de nya OME-funktionerna. OME är inte kompatibelt med AD RMS.  
+> [!IMPORTANT]
+> Om du använder Active Directory Rights Management Service (AD RMS) med Exchange Online måste du [migrera till Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) innan du kan använda de nya OME-funktionerna. OME är inte kompatibelt med AD RMS.
 
 Mer information finns i:
 
 - [Vilka prenumerationer behöver jag för att kunna använda de nya OME-funktionerna?](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) för att kontrollera om ditt abonnemang innehåller Azure Information Protection (som innehåller Azure RMS-funktionen).
-- [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) för information om hur du köper en prenumeration.  
+- [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) för information om hur du köper en prenumeration.
 
 ### <a name="manually-activating-azure-rights-management"></a>Aktivera Azure Rights Management manuellt
 
@@ -63,7 +63,7 @@ Det finns många orsaker, till exempel krav på efterlevnad, som kan innebära a
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Verifiera den nya OME-konfigurationen i Exchange Online PowerShell
 
 Du kan kontrollera att Microsoft 365-klientorganisationen är korrekt konfigurerad för att använda de nya OME-funktionerna i [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
-  
+
 1. [Anslut till Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) med ett konto med behörighet som global administratör i Microsoft 365-klientorganisationen.
 
 2. Kör cmdleten Get-IRMConfiguration.
@@ -74,7 +74,7 @@ Du kan kontrollera att Microsoft 365-klientorganisationen är korrekt konfigurer
 
      ```powershell
      Test-IRMConfiguration [-Sender <email address >]
-     ```  
+     ```
 
    **Exempel**:
 
@@ -114,11 +114,11 @@ Du kan kontrollera att Microsoft 365-klientorganisationen är korrekt konfigurer
 
 Om det finns tidigare konfigurerade e-postflödesregler för att kryptera e-post i organisationen, måste du uppdatera de befintliga reglerna för att kunna använda de nya OME-funktionerna. För nya distributioner måste du skapa nya e-postflödesregler.
 
->[!IMPORTANT]
->Om du inte uppdaterar befintliga e-postflödesregler fortsätter användarna att ta emot krypterad e-post med det tidigare HTML-formatet för bilagor i stället för det nya smidiga OME-formatet.
+> [!IMPORTANT]
+> Om du inte uppdaterar befintliga e-postflödesregler fortsätter användarna att ta emot krypterad e-post med det tidigare HTML-formatet för bilagor i stället för det nya smidiga OME-formatet.
 
 E-postflödesreglerna avgör när e-postmeddelanden ska krypteras och villkoren för att ta bort krypteringen. När du anger en åtgärd för en regel krypteras alla meddelanden som matchar regelvillkoren när de skickas.
-  
+
 Anvisningar om hur du skapar e-postflödesregler för OME finns i [Definiera e-postflödesregler för att kryptera e-postmeddelanden i Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
 Uppdatera befintliga regler till att använda de nya OME-funktionerna:

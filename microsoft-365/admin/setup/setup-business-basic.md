@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Lär dig hur du konfigurerar din Microsoft 365 Business Basic-abonnemang.
-ms.openlocfilehash: 0251f601b8200bcd5f4f5a2d5640ff774cc94562
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: d0ac9835be25377496893d62076a5cdc426f3b9e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706340"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227745"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Konfigurera Microsoft 365 Business Basic
 
@@ -71,7 +71,7 @@ När du köper Microsoft 365 Business Basic får du möjlighet att använda en d
     > Om du har köpt en domän under registreringen ser du inte steget **Lägg till en domän** här. Gå i stället till [Lägg till användare](#add-users-and-assign-licenses).
 
     
-4. Följ anvisningarna i guiden för att [Skapa DNS-poster på vilken DNS-värd som helst för Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) som verifierar att du äger domänen. Om du vet vilken din domänvärd är kan du även se [Värdspecifika anvisningar](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Följ anvisningarna i guiden för att [Skapa DNS-poster på vilken DNS-värd som helst för Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) som verifierar att du äger domänen. Om du känner till din domänvärd kan du även läsa [Lägga till en domän i Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     Om din värd är GoDaddy eller en annan värd som är aktiverad med [Domain Connect](/office365/admin/get-help-with-domains/domain-connect)är processen enkel och du blir automatiskt ombedd att logga in och låta Microsoft autentisera.
 

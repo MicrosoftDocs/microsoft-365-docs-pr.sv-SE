@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Information för IT-administratörer om hur du hanterar känslighetsetiketter i Office-appar för dator, mobila enheter och webben.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2510e840cfdd23969549cb3dbb83ec0c649741f5
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 1cdfe9d106a55cef79a63b42b47f28b2d9bb9c53
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062174"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228597"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Använda känslighetsetiketter i Office-appar
 
@@ -66,7 +66,7 @@ Siffrorna som visas är den lägsta Office-programversion som krävs för varje 
 |[Låt användare tilldela behörigheter: <br /> – Fråga användare](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Under granskning   | Under granskning         | Under granskning                                                        |
 |[Granska etikettrelaterad användaraktivitet](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Lansering: 16.0.13628+ | Ja <sup>\*</sup>                                                        |
 |[Kräva att användare använder en etikett för sin e-post och dokument](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Lansering: 16.45+         | Lansering: 2.47+ | 16.0.13628+ | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md)                                            
-|[Använda en känslighetsetikett för innehåll automatiskt](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Lansering: 16.44+ | Under granskning | Under granskning | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Använda en känslighetsetikett för innehåll automatiskt](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 16.44+  | Under granskning | Under granskning | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Stöd för samtidig redigering och spara automatiskt](sensitivity-labels-coauthoring.md) för etiketterade och krypterade dokument | 2105: juni 18+ |  16.50+ | Under granskning | Under granskning | [Ja – Välj till](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 

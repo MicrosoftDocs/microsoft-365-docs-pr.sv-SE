@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Logga in med administratörsbehörigheter för Administrationscenter för Microsoft 365 när du vill konfigurera din organisation i molnet, hantera användare och hantera prenumerationer.
-ms.openlocfilehash: 7817861e79b86a6c43ea26fdb03b037b40a3f564
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b7ad483ccfe21ac38edc7db735bccee49b937b6b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083059"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228357"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Om Administrationscenter för Microsoft 365
 
@@ -79,7 +79,7 @@ Här är de funktioner och inställningar som finns i det vänstra navigeringsf�
 
 - Se aktivitetsrapporter: [Aktivitetsrapporter](../activity-reports/activity-reports.md)
 
-- [Skapa en Microsoft 365-grupp ](../create-groups/create-groups.md)
+- [Skapa en Microsoft 365-grupp](../create-groups/create-groups.md)
 
 - [Hantera en Microsoft 365-grupp](../create-groups/manage-groups.md)
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Information om hur du kan använda kvarhållningsetiketter för att hantera livscykeln för dokument i SharePoint med hjälp av metadata för att klassificera innehåll, automatiskt tillämpa etiketterna och använda händelsebaserad kvarhållning för att starta kvarhållningsperioden.
-ms.openlocfilehash: 6c58658378fd0def9a56783e7b8b35db3323b135
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 3bc2d6f5baa2f11e7905ccf98e16145fef24d64d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "52162330"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227609"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>Hantera livscykeln för dokument som lagras i SharePoint med hjälp av kvarhållningsetiketter
 
@@ -121,19 +121,19 @@ Följande skärmbild visar inställningarna när du skapar en kvarhållningsetik
 ### <a name="create-an-event-type-when-you-create-a-retention-label"></a>Skapa en händelsetyp när du skapar en kvarhållningsetikett
 
 1. Efter **Start the retention period based on** (Starta kvarhållningsperioden baserat på) på sidan **Define retention settings** (Definiera kvarhållningsinställningar) i guiden Skapa kvarhållningsetikett väljer du **Create new event type** (Skapa ny händelsetyp):
-    
+
     ![Skapa en ny händelsetyp för dialogrutan för produktspecifikationsetikett](../media/SPRetention6.png)
 
 3. På sidan **Name your event type** (Namnge din händelsetyp) anger du **Product Cessation** (Produktupphörande) och en valfri beskrivning. Välj sedan **Nästa**, **Skicka** och **Klart**.
 
 4. Tillbaka på sidan **Define retention settings** (Definiera kvarhållningsinställningar) väljer du händelsetypen **Produktupphörande** (som du skapade) i **Start the retention period based on** (Starta kvarhållningsperioden baserat på).
-    
-    Så här ser inställningar ut för kvarhållningsetiketten för produktspecifikation: 
-    
+
+    Så här ser inställningar ut för kvarhållningsetiketten för produktspecifikation:
+
    ![Inställningar för den nya produktspecifikationsetiketten](../media/SPRetention7.png)
 
-6. Välj **Skapa etikett**. På nästa sida ser du alternativen för att publicera etiketten, tillämpa den automatiskt eller bara spara etiketten: Välj **Just save the label for now** (Spara bara etiketten för tillfället) och välj sedan **Klar**. 
-    
+6. Välj **Skapa etikett**. På nästa sida ser du alternativen för att publicera etiketten, tillämpa den automatiskt eller bara spara etiketten: Välj **Just save the label for now** (Spara bara etiketten för tillfället) och välj sedan **Klar**.
+
     > [!TIP]
     > Mer detaljerade anvisningar finns i [Skapa en etikett vars kvarhållningstid baseras på en händelse](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event).
 
@@ -188,9 +188,9 @@ Så här mappar du den crawlade egenskapen **ows\_Doc\_x0020\_Type**:
 
 1. I filterrutan **Hanterad egenskap** skriver du **_RefinableString00_** och väljer den gröna pilen.
 
-2. Välj länken **RefinableString00** i resultatlistan och rulla sedan ned till avsnittet **Mappningar till crawlade egenskaper**.  
+2. Välj länken **RefinableString00** i resultatlistan och rulla sedan ned till avsnittet **Mappningar till crawlade egenskaper**.
 
-3. Välj **Lägg till en mappning** och skriv sedan **_ows\_Doc\_x0020\_Type_*_ i rutan _* Sök efter crawlade egenskapsnamn** i fönstret **Välj crawlad egenskap**. Välj **Sök**.  
+3. Välj **Lägg till en mappning** och skriv sedan **_ows\_Doc\_x0020\_Type_*_ i rutan _* Sök efter crawlade egenskapsnamn** i fönstret **Välj crawlad egenskap**. Välj **Sök**.
 
 4. I resultatlistan väljer du **ows\_Doc\_x0020\_Type** och sedan **OK**.
 
@@ -222,19 +222,19 @@ Nu när vi har kontrollerat att KQL-frågan fungerar ska vi skapa en princip fö
 2. På sidan för att **namnge principen för automatisk etikettering** i guiden för att skapa princip för automatisk etikettering anger du ett namn, till exempel **Automatisk tillämpning av etiketten Produktspecifikation**, och anger en beskrivning (valfritt). Välj sedan **Nästa**.
 
 3. Välj **Tillämpa etiketten på innehåll som innehåller specifika ord eller fraser, eller egenskaper** på sidan **Välj den typ av innehåll du vill använda etiketten med** och välj sedan **Nästa**.
-    
+
    [ ![Välj Tillämpa etiketten på innehåll som innehåller specifika ord eller fraser, eller egenskaper](../media/SPRetention17.png) ](../media/SPRetention17.png#lightbox)
-    
+
    Med det här alternativet kan vi ange samma KQL-sökfråga som vi testade i föregående avsnitt. Frågan returnerar alla produktspecifikationsdokument som har statusen *Slutgiltig*. När vi använder samma fråga i principen för automatisk etikettillämpning tillämpas kvarhållningsetiketten Produktspecifikation automatiskt för alla dokument som matchar den.
 
 4. På sidan **Använd etiketten på innehåll som matchar den här frågan** skriver du **RefinableString00:"Produktspecifikation" AND RefinableString01:Slutgiltig** och väljer sedan **Nästa**.
 
    ![Ange frågan i rutan Frågeredigerare för nyckelord](../media/SPRetention19.png)
 
-5. På sidan **Välj platser där principen ska tillämpas** väljer du de innehållsplatser där principen ska tillämpas. I det här scenariot tillämpar vi principen endast på SharePoint-webbplatser eftersom alla produktionsdokument lagras i SharePoint-dokumentbibliotek. Växla status för **Exchange-e-post**, **OneDrive-konton** och **Microsoft 365-grupper** till **Av**. Kontrollera att statusen för SharePoint-webbplatser är inställd på **På** innan du väljer **Nästa**: 
-    
+5. På sidan **Välj platser där principen ska tillämpas** väljer du de innehållsplatser där principen ska tillämpas. I det här scenariot tillämpar vi principen endast på SharePoint-webbplatser eftersom alla produktionsdokument lagras i SharePoint-dokumentbibliotek. Växla status för **Exchange-e-post**, **OneDrive-konton** och **Microsoft 365-grupper** till **Av**. Kontrollera att statusen för SharePoint-webbplatser är inställd på **På** innan du väljer **Nästa**:
+
     ![Välj de specifika webbplatser där etiketter ska tillämpas automatiskt](../media/SPRetentionSPlocations.png)
-    
+
    > [!TIP]
    > I stället för att använda principen på alla SharePoint-webbplatser kan du välja **Välj webbplats** och lägga till URL-adresser för specifika SharePoint-webbplatser.
 
@@ -247,9 +247,9 @@ Nu när vi har kontrollerat att KQL-frågan fungerar ska vi skapa en princip fö
     ![Inställningar för automatisk tillämpning av etiketten](../media/SPRetention18.png)
 
 9. Välj **Skicka** för att skapa principen för automatisk etikettillämpning.
-    
-   >[!NOTE]
-   >Det tar upp till sju dagar att automatiskt tillämpa etiketten Produktspecifikation på alla dokument som matchar KQL-sökfrågan.
+
+   > [!NOTE]
+   > Det tar upp till sju dagar att automatiskt tillämpa etiketten Produktspecifikation på alla dokument som matchar KQL-sökfrågan.
 
 ### <a name="verify-that-the-retention-label-was-automatically-applied"></a>Kontrollera att kvarhållningsetiketten tillämpats automatiskt
 
@@ -287,7 +287,7 @@ Om du vill skapa det här flödet utgår du från en SharePoint-anslutningsapp o
 - **URI**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
-    
+
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'>
     <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
@@ -324,10 +324,10 @@ Välj händelsen om du vill visa informationen på den utfällbara sidan. Observ
 
 ![Händelseinformation](../media/SPRetention29.png)
 
-Men efter en fördröjning visas händelsestatusen att en SharePoint-webbplats och ett SharePoint-dokument har bearbetats.  
+Men efter en fördröjning visas händelsestatusen att en SharePoint-webbplats och ett SharePoint-dokument har bearbetats.
 
 ![Händelseinformation som visar att dokument har bearbetats.](../media/SPRetention31.png)
- 
+
 Du kan se att kvarhållningsperioden för etiketten som används för produktdokumentet Spinning Widget har startats baserat på händelsedatumet för händelsen *Cessation Production Spinning Widget*. Om du implementerade scenariot i din testmiljö genom att konfigurera en kvarhållningsperiod på en dag kan du gå till dokumentbiblioteket för dina produktdokument ett par dagar efter händelsen skapades och kontrollera att dokumentet har tagits bort (efter att borttagningsjobbet i SharePoint har körts).
 
 ### <a name="more-about-asset-ids"></a>Mer om tillgångs-ID:n

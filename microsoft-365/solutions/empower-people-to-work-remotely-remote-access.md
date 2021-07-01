@@ -1,5 +1,5 @@
 ---
-title: Steg 2. Tillhandahålla fjärråtkomst till lokala appar och tjänster
+title: 'Steg 2: Ge fjärråtkomst till lokala appar och tjänster'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Kontrollera att dina distansarbetare kan komma åt lokala resurser samtidigt som du optimerar åtkomst till Microsoft 365-molntjänster.
-ms.openlocfilehash: 9fea86bb9c564a37a519d2c7e0ef2e2fd0a59470
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: bc446cf26ec99d3e9f81564b5474777c674603bc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029140"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229437"
 ---
-# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Steg 2. Tillhandahålla fjärråtkomst till lokala appar och tjänster
+# <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>Steg 2: Ge fjärråtkomst till lokala appar och tjänster
 
-Användarna använda VPN-anslutningarna för fjärråtkomst för att komma åt lokala appar och servrar om din organisation använder en VPN-lösning för fjärråtkomst, oftast med VPN-servrar på kanten av ditt nätverk och VPN-klienter som är installerade på användarnas enheter. Men du kan behöva optimera trafik för molnbaserade Microsoft 365-tjänster.
+Användarna använda VPN-anslutningarna för fjärråtkomst för att komma åt lokala appar och servrar om din organisation använder en VPN-lösning för fjärråtkomst, oftast med VPN-servrar på kanten av ditt nätverk och VPN-klienter som är installerade på användarnas enheter. Men du kan behöva optimera trafik för molnbaserade Microsoft 365-tjänster. 
 
 Om dina användare inte använder en VPN-lösning kan du med hjälp av Azure Active Directory (Azure AD) Application Proxy och Azure Point-to-Site (P2S) VPN för att ge åtkomst, beroende på om alla dina appar är webbaserade.
 
@@ -51,7 +51,7 @@ Utan delad tunnel skickas all din fjärrtrafik över VPN-anslutningen, där den 
 
 ![Nätverkstrafik från VPN-klienter utan tunnel](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
-Microsoft 365-trafik måste ta en indirekt väg genom din organisation, som kan vidarebefordras till en Microsoft-nätverksingångspunkt långt ifrån VPN-klientens fysiska plats. Denna indirekta väg lägger till en fördröjning för nätverkstrafiken och minskar prestandan. 
+Microsoft 365-trafik måste ta en indirekt väg via din organisation, som kan vara vidarebefordrad till en Microsoft Network startpunkt långt bort från VPN-klientens fysiska plats. Denna indirekta väg lägger till en fördröjning för nätverkstrafiken och minskar prestandan.
 
 Med delad tunnel kan du konfigurera VPN-klienten så att den exkluderar vissa typer av trafik som inte skickas via VPN-anslutningen till organisationens nätverk.
 
@@ -67,7 +67,7 @@ Detaljerad information finn i [Optimera Office 365-anslutning för fjärranvänd
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>Distribuera fjärråtkomst när alla dina appar är webbprogram och du har en hybrididentitet
 
-Om dina distansarbetare inte använder en traditionell VPN-klient och dina lokala användarkonton och -grupper är synkroniserade med Azure AD, kan du använda Azure AD Application Proxy för att tillhandahålla säker fjärråtkomst för webbaserade program som finns på lokala servrar. Webbaserade program är SharePoint Server-webbplatser, Outlook Web Access-servrar eller andra webbaserade affärsprogram. 
+Om dina distansarbetare inte använder en traditionell VPN-klient och dina lokala användarkonton och -grupper är synkroniserade med Azure AD, kan du använda Azure AD Application Proxy för att tillhandahålla säker fjärråtkomst för webbaserade program som finns på lokala servrar. Webbaserade program är SharePoint Server-webbplatser, Outlook Web Access-servrar eller andra webbaserade affärsprogram.
 
 Här är komponenterna i Azure Active Directory Application Proxy.
 
@@ -75,35 +75,32 @@ Här är komponenterna i Azure Active Directory Application Proxy.
 
 Mer information finns i den här [översikt över Azure Active Directory Application Proxy](/azure/active-directory/manage-apps/application-proxy).
 
->[!Note]
->Azure Active Directory Application Proxy ingår inte i en Microsoft 365-prenumeration. Du måste betala för användning med en separat Azure-prenumeration.
->
+> [!NOTE]
+> Azure Active Directory Application Proxy ingår inte i en Microsoft 365-prenumeration. Du måste betala för användning med en separat Azure-prenumeration.
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>Distribuera fjärråtkomst när alla appar inte är webbprogram
 
 Om dina distansarbetare inte använder en traditionell VPN-klient och några av dina appar inte är webbaserade kan du använda en Azure Point-to-Site (P2S) VPN.
 
-En P2S VPN-anslutning skapar en säker anslutning från en distansarbetares enhet till organisationens nätverk via ett virtuellt Azure-nätverk. 
+En P2S VPN-anslutning skapar en säker anslutning från en distansarbetares enhet till organisationens nätverk via ett virtuellt Azure-nätverk.
 
 ![Komponenter i Azure P2S VPN](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
 Mer information finns i denna [översikt över P2S VPN](/azure/vpn-gateway/point-to-site-about).
 
->[!Note]
->Azure P2S VPN ingår inte i en Microsoft 365-prenumeration. Du måste betala för användning med en separat Azure-prenumeration.
->
+> [!NOTE]
+> Azure P2S VPN ingår inte i en Microsoft 365-prenumeration. Du måste betala för användning med en separat Azure-prenumeration.
 
-## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Distribuera Windows Virtual Desktop för att tillhandahålla fjärråtkomst för distansarbetare som använder personliga enheter 
+## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>Distribuera Windows Virtual Desktop för att tillhandahålla fjärråtkomst för distansarbetare som använder personliga enheter
 
 Om du vill stödja distansarbetare som endast kan använda sina personliga och ohanterade enheter kan du använda Windows Virtual Desktop i Azure och skapa och allokera virtuella skrivbord för användarna att använda hemifrån. Virtualiserade datorer kan agera precis som datorer som är anslutna till din organisations nätverk.
 
 ![Komponenter i Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-Mer information finns i [den här översikten över Windows Virtual Desktop](/azure/virtual-desktop/overview). 
+Mer information finns i [den här översikten över Windows Virtual Desktop](/azure/virtual-desktop/overview).
 
->[!Note]
+> [!NOTE]
 >Windows Virtual Desktop ingår inte i en Microsoft 365-prenumeration. Du måste betala för användning med en separat Azure-prenumeration.
->
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>Skydda dina anslutningar för fjärrskrivbordstjänster med gateway för fjärrskrivbordstjänster
 
