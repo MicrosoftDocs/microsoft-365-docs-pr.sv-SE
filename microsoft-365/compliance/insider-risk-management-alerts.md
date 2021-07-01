@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9fe1665eda882793a62315299a3cbf6667ec7988
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 0ee3fdf19552ee80737f6758e655d297228c469e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "52162559"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226557"
 ---
 # <a name="insider-risk-management-alerts"></a>Varningar för Insider-riskhantering
 
@@ -32,14 +32,14 @@ På instrumentpanelen för **insiderriskvarningar** kan du visa och agera på va
 - **Totalt antal aviseringar som behöver granskas:** Det totala antalet aviseringar som behöver granskas och triangel visas, inklusive en uppdelning efter allvarlighetsgrad för aviseringar.
 - **Öppna aviseringar under de senaste 30** dagarna: Det totala antalet aviseringar som skapats med principmatchningar under de senaste 30 dagarna, sorterade efter hög, medium och låg allvarlighetsnivå för aviseringar.
 - **Genomsnittlig tid för att lösa aviseringar**: En sammanfattning av användbar aviseringsstatistik:
-    - Genomsnittlig tid för att lösa varningar med hög allvarlighetsgrad i timmar, dagar eller månader.
-    - Genomsnittlig tid för att lösa aviseringar om medelstor allvarlighetsgrad i timmar, dagar eller månader.
-    - Genomsnittlig tid för att lösa aviseringar med låg allvarlighetsgrad i timmar, dagar eller månader.
+  - Genomsnittlig tid för att lösa varningar med hög allvarlighetsgrad i timmar, dagar eller månader.
+  - Genomsnittlig tid för att lösa aviseringar om medelstor allvarlighetsgrad i timmar, dagar eller månader.
+  - Genomsnittlig tid för att lösa aviseringar med låg allvarlighetsgrad i timmar, dagar eller månader.
 
 ![Instrumentpanel för insiderriskhanteringsvarning](../media/insider-risk-alerts-dashboard.png)
 
->[!NOTE]
->Insider-riskhantering använder inbyggd aviseringsbegränsning för att skydda och optimera din riskundersökning och granskningsupplevelse. Den här begränsningen gentemot problem som kan leda till att policymeddelanden överbelastas, till exempel felkonfigurerade datakopplingar eller DLP-principer. På grund av detta kan det uppstå en fördröjning i visningen av nya aviseringar för en användare.
+> [!NOTE]
+> Insider-riskhantering använder inbyggd aviseringsbegränsning för att skydda och optimera din riskundersökning och granskningsupplevelse. Den här begränsningen gentemot problem som kan leda till att policymeddelanden överbelastas, till exempel felkonfigurerade datakopplingar eller DLP-principer. På grund av detta kan det uppstå en fördröjning i visningen av nya aviseringar för en användare.
 
 ## <a name="alert-status-and-severity"></a>Aviseringsstatus och allvarlighetsgrad
 
@@ -75,7 +75,7 @@ Om du vill söka efter aviseringsnamnet för ett visst ord **väljer du sökkont
 
 Så här gör du om du vill ha en insider-riskvarning:
 
-1. I Microsoft 365 [säkerhets- och efterlevnadscenter](https://compliance.microsoft.com)går **du till Insider-riskhantering** och väljer **fliken** Aviseringar.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering** och väljer **fliken** Aviseringar.
 2. På **instrumentpanelen Aviseringar** väljer du den avisering du vill triangel.
 3. I **informationsfönstret Aviseringar** kan du granska följande flikar och kontrollera varningen:
     - **Sammanfattning:** Den här fliken innehåller allmän information om aviseringen och du kan bekräfta aviseringen och skapa ett nytt ärende eller stänga aviseringen. Den innehåller aktuell status för aviseringen och allvarlighetsnivån för aviseringen, som anges som *Hög,* *Medium* eller *Låg.* Allvarlighetsnivån kan öka eller minska med tiden om aviseringen inte är triangeld.
@@ -91,8 +91,8 @@ Så här gör du om du vill ha en insider-riskvarning:
 
 ## <a name="activity-explorer-preview"></a>Aktivitetsutforskaren (förhandsversion)
 
->[!NOTE]
->Aktivitetsutforskaren är tillgänglig i området aviseringshantering för användare som utlöser händelser efter att den här funktionen är tillgänglig i din organisation.
+> [!NOTE]
+> Aktivitetsutforskaren är tillgänglig i området aviseringshantering för användare som utlöser händelser efter att den här funktionen är tillgänglig i din organisation.
 
 Aktivitetsutforskaren tillhandahåller riskprognoser och analytiker med ett omfattande analysverktyg som ger detaljerad information om aviseringar. Med Aktivitetsutforskaren kan granskare snabbt granska en tidslinje med identifierade riskfyllda aktiviteter och identifiera och filtrera alla riskaktiviteter som associeras med aviseringar. Om du vill filtrera aviseringar i Aktivitetsutforskaren väljer du filterkontrollen. Du kan filtrera aviseringar efter ett eller flera attribut som visas i informationsfönstret för aviseringen. Aktivitetsutforskaren har också stöd för anpassningsbara kolumner så att vi och analytiker kan fokusera på instrumentpanelen på den information som är viktigast för dem.
 
@@ -100,7 +100,7 @@ Aktivitetsutforskaren tillhandahåller riskprognoser och analytiker med ett omfa
 
 Så här använder du Aktivitetsutforskaren: 
 
-1. I Microsoft 365 säkerhets- och efterlevnadscenter går **du till Insider-riskhantering** och väljer **fliken** Aviseringar.
+1. I Microsoft 365 Efterlevnadscenter går du till **Insider-riskhantering** och väljer **fliken** Aviseringar.
 2. På **instrumentpanelen Aviseringar** väljer du den avisering du vill triangel.
 3. I **informationsfönstret Aviseringar väljer** du **Öppna expanderad vy**.
 4. På sidan för den valda aviseringen väljer du **fliken Aktivitetsutforskaren.**
@@ -113,7 +113,7 @@ När du granskar aktiviteter i Aktivitetsutforskaren kan analytiker välja en vi
 
 När aviseringen granskas och triangelts kan du skapa ett nytt ärende för att ytterligare undersöka riskaktiviteten. Skapa ett ärende för en avisering genom att följa de här stegen:
 
-1. I Microsoft 365 [säkerhets- och efterlevnadscenter](https://compliance.microsoft.com)går **du till Insider-riskhantering** och väljer **fliken** Aviseringar.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering** och väljer **fliken** Aviseringar.
 2. På **instrumentpanelen Aviseringar** väljer du den avisering du vill bekräfta och skapar ett nytt ärende för.
 3. I **informationsfönstret Aviseringar väljer** du **Åtgärder Bekräfta** aviseringar & skapa  >  **ärende**.
 4. I dialogrutan Bekräfta avisering och skapa **insider-riskfall** anger du ett namn för ärendet, väljer användare att lägga till som deltagare och lägger till kommentarer som tillämpliga. Kommentarer läggs automatiskt till i ärendet som en ärendeanteckning.

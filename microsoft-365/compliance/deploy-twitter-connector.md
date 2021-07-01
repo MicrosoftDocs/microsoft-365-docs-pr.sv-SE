@@ -15,16 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Administratörer kan konfigurera en intern anslutning för att importera och arkivera Twitter-data för att Microsoft 365. När dessa data har importerats till Microsoft 365 kan du använda efterlevnadsfunktioner som bevarande av juridiska regler, innehållssökning och bevarandeprinciper för att hantera styrning av organisationens Twitter-data.
-ms.openlocfilehash: 0dd996802964b2a2fc58d26e23af57193c89ee8c
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 0a0ebb18cb39b7dd7416f2d03dcb5b4d21332c9b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "52161637"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227061"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Distribuera en anslutare för att arkivera Twitter-data
 
-Den här artikeln innehåller stegvisa instruktioner för att distribuera en anslutare som använder tjänsten Office 365 för att importera data från organisationens Twitter-konto till Microsoft 365. En översikt över den här processen och en lista över förutsättningar för att distribuera en Twitter-anslutning finns i Konfigurera en anslutning för att arkivera [Twitter-data. ](archive-twitter-data-with-sample-connector.md) 
+Den här artikeln innehåller stegvisa instruktioner för att distribuera en anslutare som använder tjänsten Office 365 för att importera data från organisationens Twitter-konto till Microsoft 365. En översikt över den här processen och en lista över förutsättningar för att distribuera en Twitter-anslutning finns i Konfigurera en anslutning för att arkivera [Twitter-data. ](archive-twitter-data-with-sample-connector.md)
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Steg 1: Skapa en app i Azure Active Directory
 
@@ -42,7 +42,7 @@ Den här artikeln innehåller stegvisa instruktioner för att distribuera en ans
 
 4. Registrera programmet. Under **Omdirigera URI (valfritt)** väljer du **Webb** i listrutan programtyp och skriver sedan i rutan `https://portal.azure.com` för URI:n.
 
-   ![Ange https://portal.azure.com omdirigerings-URI ](../media/TCimage04.png)
+   ![Ange https://portal.azure.com omdirigerings-URI](../media/TCimage04.png)
 
 5. Kopiera **program-ID(klient)ID** **och katalog-ID (klientorganisation)** och spara dem i en textfil eller på en annan säker plats. Du använder de här ID:erna i senare steg.
 
@@ -52,7 +52,7 @@ Den här artikeln innehåller stegvisa instruktioner för att distribuera en ans
 
    ![Skapa en ny klienthemlighet](../media/TCimage06.png)
 
-7. Skapa en ny hemlig. Skriv hemligheten i beskrivningsrutan och välj sedan en utgångsperiod. 
+7. Skapa en ny hemlig. Skriv hemligheten i beskrivningsrutan och välj sedan en utgångsperiod.
 
    ![Skriv hemligheten och välj utgångsperiod](../media/TCimage08.png)
 
@@ -72,15 +72,15 @@ Den här artikeln innehåller stegvisa instruktioner för att distribuera en ans
    ![Klicka på Skapa en resurs och skriv lagringskonto](../media/FBCimage12.png)
 
     - **Prenumeration:** Välj den Azure-prenumeration du vill distribuera webbtjänsten för Twitter-anslutning till.
-    
+
     - **Resursgrupp:** Välj eller skapa en ny resursgrupp. En resursgrupp är en behållare som innehåller relaterade resurser för en Azure-lösning.
 
     - **Plats:** Välj en plats.
 
     - **Web App-namn:** Ange ett unikt namn för webbappen för anslutning. Namnet måste vara mellan 3 och 18 tecken långt. Det här namnet används för att skapa URL-adressen för Azure-apptjänsten. Om du till exempel anger webbappens namn **för twitterconnector** kommer Azure-apptjänstens URL att **twitterconnector.azurewebsites.net.**
-    
+
     - **tenantId:** Klientorganisations-ID:t för Microsoft 365 organisationen som du kopierade när du skapade Facebook-anslutningsappen i Azure Active Directory i steg 1.
-    
+
    - **APISecretKey:** Du kan ange vilket värde som helst som hemlig. Det här används för att komma åt webbappen för anslutning i steg 5.
 
 3. När distributionen är lyckad ser sidan ut ungefär som på följande skärmbild:
@@ -93,7 +93,7 @@ Den här artikeln innehåller stegvisa instruktioner för att distribuera en ans
 
    ![Gå till https://developer.twitter.com och logga in](../media/TCimage25-5.png)
 2. Klicka **på Skapa ett program.**
-   
+
    ![Gå till sidan Program för att skapa ett program](../media/TCimage26.png)
 
 3. Lägg **till information** om programmet under Programinformation.
@@ -101,11 +101,11 @@ Den här artikeln innehåller stegvisa instruktioner för att distribuera en ans
    ![Ange information om programmet](../media/TCimage27.png)
 
 4. På instrumentpanelen för Twitter-utvecklare väljer du appen du just skapade och klickar sedan på **Information**.
-   
+
    ![Kopiera och spara app-ID:t](../media/TCimage28.png)
 
 5. Under **Konsument-API-nycklar** på  fliken Nycklar och token kopierar du både API-nyckeln och API-hemliga nyckeln och sparar dem till en textfil eller annan lagringsplats. Klicka sedan på **Skapa** för att generera en åtkomsttoken och åtkomsttokenhemlighet och kopiera dessa till en textfil eller annan lagringsplats.
-   
+
    ![Kopiera och spara till API-hemlig nyckel](../media/TCimage29.png)
 
    Klicka sedan **på Skapa** för att generera en åtkomsttoken och en åtkomsttokenhemlighet, och kopiera dessa till en textfil eller annan lagringsplats.
@@ -121,14 +121,14 @@ Den här artikeln innehåller stegvisa instruktioner för att distribuera en ans
 8. Gör följande:
 
    - Markera kryssrutan om du vill tillåta att anslutningsappen loggar in på Twitter.
-   
+
    - Lägg till OAuth-omdirigerings-Uri med följande format: **\<connectorserviceuri> /Views/TwitterOAuth**, där värdet för *connectorserviceuri* är Azure-apptjänst-URL:en för organisationen, till exempel https://twitterconnector.azurewebsites.net/Views/TwitterOAuth .
 
     ![Tillåt att anslutningsappen loggar in på Twitter och lägger till OAuth-omdirigerings-Uri](../media/TCimage32.png)
 
 Utvecklarappen för Twitter är nu redo att använda.
 
-## <a name="step-4-configure-the-connector-web-app"></a>Steg 4: Konfigurera webbprogrammet för anslutning 
+## <a name="step-4-configure-the-connector-web-app"></a>Steg 4: Konfigurera webbprogrammet för anslutning
 
 1. Gå till https:// \<AzureAppResourceName> .azurewebsites.net (där **AzureAppResourceName** är namnet på din Azure-appresurs som du döpte i steg 4). Om namnet till exempel är **twitterconnector går** du till https://twitterconnector.azurewebsites.net . Startsidan för appen ser ut som på följande skärmbild:
 
@@ -142,23 +142,23 @@ Utvecklarappen för Twitter är nu redo att använda.
 
    ![Logga in med klientorganisations-ID och API-hemlig nyckel](../media/TCimage35.png)
 
-4. Ange följande konfigurationsinställningar 
+4. Ange följande konfigurationsinställningar
 
    - **Api-nyckel för Twitter:** API-nyckeln för Twitter-programmet som du skapade i steg 3.
-   
+
    - **Twitter Api-hemlig nyckel:** API-hemlig nyckel för Twitter-programmet som du skapade i steg 3.
-   
+
    - **Twitter-åtkomsttoken:** Åtkomsttoken som du skapade i steg 3.
-   
+
    - **Twitter Access Token Secret:** Den åtkomsttokens hemligt som du skapade i steg 3.
-   
+
    - **AAD-program-ID:** Program-ID för Azure Active Directory som du skapade i steg 1
-   
+
    - **AAD-programhemlighet:** Värdet för APISecretKey-hemligheten som du skapade i steg 1.
 
 5. Spara **kopplingsinställningarna** genom att klicka på Spara.
 
-## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>Steg 5: Konfigurera en Twitter-anslutning i Microsoft 365 för efterlevnadscenter
+## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>Steg 5: Konfigurera en Twitter-anslutning i Microsoft 365 Efterlevnadscenter
 
 1. Gå till [https://compliance.microsoft.com](https://compliance.microsoft.com) och klicka sedan på Datakopplingar i den vänstra **navigeringsfältet.**
 
@@ -173,11 +173,11 @@ Utvecklarappen för Twitter är nu redo att använda.
    ![Ange autentiseringsuppgifter för kopplingsappen](../media/TCimage38.png)
 
     - Ange ett **namn** på kopplingen i rutan Namn, till exempel **Twitter-hjälphandtaget**.
-    
+
     - I rutan **Kopplings-URL** skriver eller klistrar du in Azure-apptjänst-URL:en. till exempel `https://twitterconnector.azurewebsites.net` .
-    
+
     - I rutan **Lösenord** skriver eller klistrar du in värdet för APISecretKey som du skapade i steg 2.
-    
+
     - I rutan **Azure-app-ID** skriver eller klistrar du in värdet för Azure Application App-ID (kallas även *klient-ID)* som du fick i steg 1.
 
 6. När anslutningen har verifierats klickar du på **Nästa.**

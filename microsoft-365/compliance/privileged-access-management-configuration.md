@@ -21,34 +21,34 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: I den här artikeln kan du läsa mer om hur du aktiverar och konfigurerar hantering av behörighet Office 365.
-ms.openlocfilehash: 0b8d79c3012ecd321d7b00c1566aa557077d55f1
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 13b600c60e1b9c88285ee58efcf80a7ff5ea17fe
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "52161794"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226125"
 ---
 # <a name="get-started-with-privileged-access-management"></a>Kom igång med privilegierad åtkomsthantering
 
-I det här avsnittet får du hjälp med att aktivera och konfigurera hantering av behörighet i din organisation. Du kan använda antingen Microsoft 365 administrationscenter eller PowerShell Exchange management för att hantera och använda behörighet.
+I det här avsnittet får du hjälp med att aktivera och konfigurera hantering av behörighet i din organisation. Du kan använda PowerShell Administrationscenter för Microsoft 365 eller Exchange för att hantera och använda behörighet.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
 Innan du kommer igång med hantering av behörighet ska du bekräfta [Microsoft 365-prenumerationen](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) och alla tillägg. Om du vill komma åt och använda hantering av privilegierad åtkomst måste din organisation ha någon av följande prenumerationer eller tillägg:
 
 - Microsoft 365 E5 prenumeration (betald version eller utvärderingsversion)
-- Microsoft 365 E3 -prenumeration (Office 365 E3-abonnemang + Enterprise Mobility and Security E3)+ Microsoft 365 E5 Compliance-tillägget
-- Alla Microsoft 365, Office 365, Exchange, SharePoint eller OneDrive för företag-prenumerationen + Microsoft 365 E5-tillägget Microsoft 365 E5 Insider Risk Management  
-- Microsoft 365 A5-prenumeration (betald eller utvärderingsversion)
-- Microsoft 365 A3-abonnemang (Office 365 A3 prenumeration + Enterprise Mobility and Security A3-prenumeration) + tillägget Microsoft A5 efterlevnad
+- Microsoft 365 E3 -prenumeration (Office 365 E3 prenumerationen + Enterprise Mobility and Security E3) + Microsoft 365 E5 Compliance-tillägget
+- Alla Microsoft 365, Office 365, Exchange, SharePoint eller OneDrive för företag-prenumerationen + Microsoft 365 E5-tillägget Microsoft 365 E5 Insider Risk Management
+- Microsoft 365 A5 prenumeration (betald version eller utvärderingsversion)
+- Microsoft 365 A3 prenumeration (Office 365 A3 prenumeration + Enterprise Mobility and Security A3-prenumeration) + tillägget Microsoft A5 efterlevnad
 - Alla Microsoft 365, Office 365, Exchange, SharePoint eller OneDrive för utbildning-prenumerationen + Microsoft 365 A5 Insider Risk Management-tillägget
 - Office 365 Enterprise E5-prenumeration (betald eller utvärderingsversion)
 - Office 365 Enterprise E3-prenumeration + Office 365 Advanced Compliance-tillägget (inte längre tillgängligt för nya prenumerationer, se anteckningen)
 
 Användare som skickar och svarar på begäran om behörighet för åtkomsthantering måste tilldelas någon av licenserna ovan.
 
->[!IMPORTANT]
->Office 365 Advanced Compliance säljs inte längre som en fristående prenumeration. När aktuella prenumerationer går ut bör kunderna gå över till en av prenumerationerna ovan, som innehåller samma eller ytterligare efterlevnadsfunktioner.
+> [!IMPORTANT]
+> Office 365 Advanced Compliance säljs inte längre som en fristående prenumeration. När aktuella prenumerationer går ut bör kunderna gå över till en av prenumerationerna ovan, som innehåller samma eller ytterligare efterlevnadsfunktioner.
 
 Om du inte har ett befintligt Office 365 Enterprise E5-abonnemang och vill prova hantering av behörighet kan du lägga till [](https://www.microsoft.com/microsoft-365/enterprise) [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) i din befintliga Office 365-prenumeration eller registrera dig för en utvärderingsversion av Microsoft 365 Enterprise E5.
 
@@ -72,22 +72,22 @@ Följ de här anvisningarna för att konfigurera och använda behörighetsbehör
 
     När den är aktiverad kräver behörigheten godkännanden för alla aktiviteter som har en associerad godkännandeprincip definierad. För uppgifter som ingår i en godkännandeprincip måste användarna begära och beviljas behörighetsgodkännande för att få den behörighet som krävs för att utföra uppgiften.
 
-När godkännande har beviljats kan den som begär behörighet köra den avsedda uppgiften och behörigheten att auktorisera och köra uppgiften åt användaren. Godkännandet förblir giltigt under den begärda varaktigheten (standardlängden är 4 timmar), under vilken den som begär kan köra den avsedda aktiviteten flera gånger. Alla sådana körningar loggas och görs tillgängliga för granskning av säkerhet och efterlevnad. 
+När godkännande har beviljats kan den som begär behörighet köra den avsedda uppgiften och behörigheten att auktorisera och köra uppgiften åt användaren. Godkännandet förblir giltigt under den begärda varaktigheten (standardlängden är 4 timmar), under vilken den som begär kan köra den avsedda aktiviteten flera gånger. Alla sådana körningar loggas och görs tillgängliga för granskning av säkerhet och efterlevnad.
 
->[!NOTE]
->Om du vill använda Exchange Management PowerShell för att aktivera och konfigurera behörighetsåtkomst följer du stegen i [Anslut för Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa) med multifaktorautentisering för att ansluta till Exchange Online PowerShell med dina Office 365-autentiseringsuppgifter. Du behöver inte aktivera multifaktorautentisering för din organisation för att kunna använda stegen för att aktivera privilegierad åtkomst när du ansluter till Exchange Online PowerShell. Om du ansluter med multifaktorautentisering skapas en OAuth-token som används av behörig åtkomst för att signera dina begäranden.
+> [!NOTE]
+> Om du vill använda Exchange Management PowerShell för att aktivera och konfigurera behörighetsåtkomst följer du stegen i [Anslut för Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa) med multifaktorautentisering för att ansluta till Exchange Online PowerShell med dina Office 365-autentiseringsuppgifter. Du behöver inte aktivera multifaktorautentisering för din organisation för att kunna använda stegen för att aktivera privilegierad åtkomst när du ansluter till Exchange Online PowerShell. Om du ansluter med multifaktorautentisering skapas en OAuth-token som används av behörig åtkomst för att signera dina begäranden.
 
 <a name="step1"> </a>
 
 ## <a name="step-1-create-an-approvers-group"></a>Steg 1: Skapa en godkännaresgrupp
 
-1. Logga in Microsoft 365 [administrationscenter med](https://admin.microsoft.com) autentiseringsuppgifter för ett administratörskonto i organisationen.
+1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com) autentiseringsuppgifter för ett administratörskonto i organisationen.
 
 2. Gå till Lägg till grupp i  >  **administrationscentret.**
 
 3. Välj **e-postaktiverad säkerhetsgrupp** och fyll i **fälten Namn,** Grupp-e-postadress **och** Beskrivning för den nya gruppen. 
 
-4. Spara gruppen. Det kan ta några minuter innan gruppen har konfigurerats helt och visas i Microsoft 365 administrationscenter.
+4. Spara gruppen. Det kan ta några minuter innan gruppen har konfigurerats helt och visas i Administrationscenter för Microsoft 365.
 
 5. Välj den nya godkännaren och välj Redigera för **att** lägga till användare i gruppen.
 
@@ -97,9 +97,9 @@ När godkännande har beviljats kan den som begär behörighet köra den avsedda
 
 ## <a name="step-2-enable-privileged-access"></a>Steg 2: Aktivera privilegierad åtkomst
 
-### <a name="in-the-microsoft-365-admin-center"></a>I Microsoft 365 Administrationscenter
+### <a name="in-the-microsoft-365-admin-center"></a>I Microsoft 365 Admin Center
 
-1. Logga in på [Microsoft 365 administrationscenter med](https://admin.microsoft.com) autentiseringsuppgifter för ett administratörskonto i organisationen.
+1. Logga in på [Microsoft 365 Admin autentiseringsuppgifter](https://admin.microsoft.com) för ett administratörskonto i organisationen.
 
 2. Gå till administrationscentret och gå till sidan **Inställningar**  >  **för Inställningar** åtkomst &  >  **sekretessbehörighet.**  >  
 
@@ -123,8 +123,8 @@ Exempel:
 Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', 'sys2@fabrikamorg.onmicrosoft.com')
 ```
 
->[!NOTE]
->Funktionen för systemkonton är tillgänglig för att säkerställa att vissa automatiseringar inom organisationen kan fungera utan att vara beroende av privilegierad åtkomst, men vi rekommenderar att sådana undantag blir undantag som inte är tillåtna och att de tillåts godkänns och granskas regelbundet.
+> [!NOTE]
+> Funktionen för systemkonton är tillgänglig för att säkerställa att vissa automatiseringar inom organisationen kan fungera utan att vara beroende av privilegierad åtkomst, men vi rekommenderar att sådana undantag blir undantag som inte är tillåtna och att de tillåts godkänns och granskas regelbundet.
 
 <a name="step3"> </a>
 
@@ -132,9 +132,9 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 Du kan skapa och konfigurera upp till 30 principer för behörighet för din organisation.
 
-### <a name="in-the-microsoft-365-admin-center"></a>I Microsoft 365 Administrationscenter
+### <a name="in-the-microsoft-365-admin-center"></a>I Microsoft 365 Admin Center
 
-1. Logga in på [Microsoft 365 administrationscenter med](https://admin.microsoft.com) autentiseringsuppgifter för ett administratörskonto i organisationen.
+1. Logga in på [Microsoft 365 Admin autentiseringsuppgifter](https://admin.microsoft.com) för ett administratörskonto i organisationen.
 
 2. Gå till administrationscentret och gå till sidan **Inställningar**  >  **för Inställningar** åtkomst &  >  **sekretessbehörighet.**  >  
 
@@ -143,7 +143,7 @@ Du kan skapa och konfigurera upp till 30 principer för behörighet för din org
 4. Välj **Konfigurera principer** och välj Lägg till en **princip.**
 
 5. I listrutan väljer du lämpliga värden för din organisation:
-    
+
     **Principtyp**: Aktivitet, Roll eller Rollgrupp
 
     **Policyomfattning**: Exchange
@@ -178,9 +178,9 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 Begäranden om behörighet är giltiga i upp till 24 timmar efter att begäran har skickats. Om begärandena inte har godkänts eller nekats, upphör att gälla och åtkomst är inte godkända.
 
-#### <a name="in-the-microsoft-365-admin-center"></a>I Microsoft 365 Administrationscenter
+#### <a name="in-the-microsoft-365-admin-center"></a>I Microsoft 365 Admin Center
 
-1. Logga in på [Microsoft 365 administrationscenter med](https://admin.microsoft.com) dina autentiseringsuppgifter.
+1. Logga in på [Microsoft 365 Admin med](https://admin.microsoft.com) dina autentiseringsuppgifter.
 
 2. Gå till administrationscentret och gå till sidan **Inställningar**  >  **för Inställningar** åtkomst &  >  **sekretessbehörighet.**  >  
 
@@ -218,9 +218,9 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 När en begäran om godkännande har skapats kan status för höjdbegäran granskas i administrationscentret eller i Exchange Management PowerShell med hjälp av det som är associerat med begärande-ID.
 
-#### <a name="in-the-microsoft-365-admin-center"></a>I Microsoft 365 administrationscenter
+#### <a name="in-the-microsoft-365-admin-center"></a>I Administrationscenter för Microsoft 365
 
-1. Logga in på [Microsoft 365 administrationscenter](https://admin.microsoft.com) med dina autentiseringsuppgifter.
+1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com) med dina autentiseringsuppgifter.
 
 2. Gå till administrationscentret och gå till sidan **Inställningar**  >  **för Inställningar** åtkomst &  >  **sekretessbehörighet.**  >  
 
@@ -246,9 +246,9 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 När en begäran om godkännande skapas får medlemmar i den relevanta godkännargruppen ett e-postmeddelande och kan godkänna den begäran som är kopplad till begärans ID. Beställaren meddelas om begärans godkännande eller av nekande via e-postmeddelande.
 
-#### <a name="in-the-microsoft-365-admin-center"></a>I Microsoft 365 administrationscenter
+#### <a name="in-the-microsoft-365-admin-center"></a>I Administrationscenter för Microsoft 365
 
-1. Logga in på [Microsoft 365 administrationscenter](https://admin.microsoft.com) med dina autentiseringsuppgifter.
+1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com) med dina autentiseringsuppgifter.
 
 2. Gå till administrationscentret och gå till sidan **Inställningar**  >  **för Inställningar** åtkomst &  >  **sekretessbehörighet.**  >  
 
@@ -288,9 +288,9 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 Om den inte längre behövs i organisationen kan du ta bort en princip för privilegierad åtkomst.
 
-### <a name="in-the-microsoft-365-admin-center"></a>I Microsoft 365 administrationscenter
+### <a name="in-the-microsoft-365-admin-center"></a>I Administrationscenter för Microsoft 365
 
-1. Logga in Microsoft 365 [administrationscenter med](https://admin.microsoft.com) autentiseringsuppgifter för ett administratörskonto i organisationen.
+1. Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com) autentiseringsuppgifter för ett administratörskonto i organisationen.
 
 2. Gå till administrationscentret och gå till sidan **Inställningar**  >  **för Inställningar** åtkomst &  >  **sekretessbehörighet.**  >  
 
@@ -314,9 +314,9 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 Om det behövs kan du inaktivera hantering av behörighet för organisationen. Om du inaktiverar behörighet tas inte associerade principer eller godkännargrupper bort.
 
-### <a name="in-the-microsoft-365-admin-center"></a>I Microsoft 365 administrationscenter
+### <a name="in-the-microsoft-365-admin-center"></a>I Administrationscenter för Microsoft 365
 
-1. Logga in på [Microsoft 365 administrationscenter](https://admin.microsoft.com) med autentiseringsuppgifter för ett administratörskonto i organisationen.
+1. Logga in [Administrationscenter för Microsoft 365](https://admin.microsoft.com) autentiseringsuppgifter för ett administratörskonto i organisationen.
 
 2. Gå till administrationscentret och gå till sidan **Inställningar**  >  **för Inställningar** åtkomst &  >  **sekretessbehörighet.**  >  
 

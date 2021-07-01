@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 44a17471f1e2ba92d0099f62b95dec8d0e56a224
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 3ff3c652d5446167ac3c2bf78a2405c21929ea11
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "52162806"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226473"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Insider-riskhantering – Innehållsutforskaren
 
@@ -29,8 +29,8 @@ I vissa fall kanske data som är associerade med ett ärende inte är tillgängl
 
 Om innehållet omfattar informationsbehörigheter för rättighetshantering behålls de här behörigheterna för det kopierade innehållet och användare som tilldelats rollen *Insider-riskhanteringsrollen* måste ha dessa behörigheter och rättigheter om de behöver öppna och visa filerna. Varje fil och meddelande tilldelas automatiskt ett unikt fil-ID i insider-riskhanteringsfall i hanteringssyfte. Dokument som är kopplade till enhetsindikatoraktiviteter ingår inte i Innehållsutforskaren.
 
->[!Note]
->Innehållsutforskaren innehåller aktiviteter som är Microsoft Office filer. Aktiviteter på webbplatsnivå, till exempel när en SharePoint webbplats tas bort eller om webbplatsbehörigheter ändras, inte ingår i Innehållsutforskaren.
+> [!NOTE]
+> Innehållsutforskaren innehåller aktiviteter som är Microsoft Office filer. Aktiviteter på webbplatsnivå, till exempel när en SharePoint webbplats tas bort eller om webbplatsbehörigheter ändras, inte ingår i Innehållsutforskaren.
 
 ## <a name="column-options"></a>Kolumnalternativ
 

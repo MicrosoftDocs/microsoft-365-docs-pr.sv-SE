@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du använder dlp-principer för program som inte är Microsoft-molnappar.
-ms.openlocfilehash: ca522b5accbd2c08e80b0ce63871179ff64bbcc8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149160"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226845"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Använda principer för skydd mot dataförlust för molnappar som inte kommer från Microsoft (förhandsversion)
 
@@ -59,8 +59,8 @@ Om du vill använda DLP-principen för en viss app som inte är en Microsoft-mol
 
 När du har anslutt dina molnprogram till Cloud App Security kan du skapa Microsoft 365 DLP-principer för dem.
 
->[!NOTE]
->Det går också bra att använda Microsoft Cloud App Security för att skapa DLP-principer för Microsoft-molnappar. Vi rekommenderar dock att du använder Microsoft 365 att skapa och hantera DLP-principer för Microsoft-molnappar.
+> [!NOTE]
+> Det går också bra att använda Microsoft Cloud App Security för att skapa DLP-principer för Microsoft-molnappar. Vi rekommenderar dock att du använder Microsoft 365 att skapa och hantera DLP-principer för Microsoft-molnappar.
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>Skapa en DLP-princip i en molnbaserad app som inte är en Microsoft-app
 
@@ -81,12 +81,12 @@ När du skapar en regel i DLP-principen kan du välja en åtgärd för icke-Micr
 
 ![Begränsa appar från tredje part](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
->[OBS] De DLP-principer som tillämpas på icke-Microsoft-appar Microsoft Cloud App Security. När DLP-principen för en app som inte är en Microsoft-app skapas samma princip automatiskt Microsoft Cloud App Security.
+> [OBS] De DLP-principer som tillämpas på icke-Microsoft-appar Microsoft Cloud App Security. När DLP-principen för en app som inte är en Microsoft-app skapas samma princip automatiskt Microsoft Cloud App Security.
 
-Information om hur du skapar och konfigurerar DLP-principer finns [i Skapa testa och finjustera en DLP-princip.](./create-test-tune-dlp-policy.md?view=o365-worldwide)
+Information om hur du skapar och konfigurerar DLP-principer finns [i Skapa testa och finjustera en DLP-princip.](./create-test-tune-dlp-policy.md)
 
 ## <a name="see-also"></a>Se även
 
-- [Skapa testa och finjustera en DLP-princip](./create-test-tune-dlp-policy.md?view=o365-worldwide)
-- [Kom igång med DLP-standardprincipen](./get-started-with-the-default-dlp-policy.md?view=o365-worldwide)
-- [Skapa en DLP-princip från en mall](./create-a-dlp-policy-from-a-template.md?view=o365-worldwide)
+- [Skapa testa och finjustera en DLP-princip](./create-test-tune-dlp-policy.md)
+- [Kom igång med DLP-standardprincipen](./get-started-with-the-default-dlp-policy.md)
+- [Skapa en DLP-princip från en mall](./create-a-dlp-policy-from-a-template.md)

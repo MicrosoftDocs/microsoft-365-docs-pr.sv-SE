@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Lär dig hur du skyddar känslig information med hjälp Microsoft 365 principer och verktyg för skydd mot dataförlust och ta en rundtur genom DLP-livscykeln.
-ms.openlocfilehash: 9b449886e0856f7407fcd49b83192dd0c01474bd
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 291a9ab09d14e24d58604644d77381d7f41214d6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108265"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226857"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Mer information om skydd mot dataförlust
 
@@ -35,7 +35,7 @@ I Microsoft 365 implementerar du skydd mot dataförlust genom att definiera och 
 - lokala filresurser och lokala SharePoint.
 
 Microsoft 365 identifierar känsliga objekt med hjälp av djup innehållsanalys, inte bara genom en enkel genomsökning av text. Innehållet analyseras för primärdatamatchningar till nyckelord, genom utvärdering av reguljära uttryck, efter intern funktionsverifiering och av sekundära datamatchningar som är i närheten av matchningen för primära data. Utöver det använder DLP även maskininlärningsalgoritmer och andra metoder för att identifiera innehåll som matchar dina DLP-principer.
-  
+
 ## <a name="dlp-is-part-of-the-larger-microsoft-365-compliance-offering"></a>DLP är en del av det större erbjudandet Microsoft 365 efterlevnad
 
 Microsoft 365 DLP är bara ett av de Microsoft 365 efterlevnadsverktyg som du använder för att skydda känsliga objekt oavsett var de bor eller färdas. Du bör förstå de andra verktygen i Microsoft 365 och efterlevnadsverktyg, hur de förs samman och fungerar bättre tillsammans.  Mer [Microsoft 365 information om](protect-information.md) informationsskyddsprocessen finns i Informationsskyddsverktyg.
@@ -69,7 +69,7 @@ Microsoft 365 DLP-övervakning och -skydd ingår i de program som användarna an
 
 **Teknikplanering för DLP**
 
-Kom ihåg att med DLP som teknik kan du övervaka och skydda dina data i vila, data som används och data som används inom olika Microsoft 365-tjänster, Windows 10-enheter, lokala filresurser och lokala SharePoint. Det finns planeringskonsekvenser för de olika platserna, vilken typ av data du vill övervaka och skydda och vilka åtgärder som ska vidtas när en principmatchning inträffar.  
+Kom ihåg att med DLP som teknik kan du övervaka och skydda dina data i vila, data som används och data som används inom olika Microsoft 365-tjänster, Windows 10-enheter, lokala filresurser och lokala SharePoint. Det finns planeringskonsekvenser för de olika platserna, vilken typ av data du vill övervaka och skydda och vilka åtgärder som ska vidtas när en principmatchning inträffar.
 
 **Planering av affärsprocesser för DLP**
 
@@ -121,7 +121,7 @@ I testläge kan du övervaka policyresultaten och finjustera den så att den upp
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>Aktivera kontrollen och justera principerna
 
-När principen uppfyller alla dina mål kan du aktivera den. Fortsätt att övervaka policyprogrammets resultat och justera efter behov. I allmänhet gäller principer ungefär en timme efter att de aktiverats. 
+När principen uppfyller alla dina mål kan du aktivera den. Fortsätt att övervaka policyprogrammets resultat och justera efter behov. I allmänhet gäller principer ungefär en timme efter att de aktiverats.
 
 <!--See, LINK TO topic for SLAs for location specific  details-->
 
@@ -133,7 +133,7 @@ Du har flexibiliteten i hur du skapar och konfigurerar DLP-principer. Du kan utg
     - En fördefinierad principmall: Ekonomiska data, medicinska och hälsodata, sekretessdata för olika länder och regioner.
     - En anpassad princip som använder tillgängliga typer av känslig information, bevarandeetiketter och känslighetsetiketter.
 2. **Välj var du vill övervaka –** Du väljer en eller flera platser där du vill att DLP ska övervaka känslig information. Du kan övervaka:
-    
+
 plats | inkludera/exkludera efter|
 |---------|---------|
 |Exchange-e-post| distributionsgrupper|
@@ -154,7 +154,7 @@ plats | inkludera/exkludera efter|
 
 - SharePoint/Exchange/OneDrive: Blockera personer utanför organisationens formulär som kommer åt innehållet. Visa ett tips för användaren och skicka ett e-postmeddelande om att de vidtar en åtgärd som är förbjuden av DLP-principen.
 - Teams Chatt och kanal: Blockera känslig information från att delas i chatten eller kanalen
-- Windows 10 Enheter: Granska eller begränsa kopiering av känsliga objekt till en borttagningsbar USB-enhet 
+- Windows 10 Enheter: Granska eller begränsa kopiering av känsliga objekt till en borttagningsbar USB-enhet
 - Office Appar: Visa en popup-popup som meddelar användaren att han eller hon engagerar sig i ett riskabelt beteende och blockerar eller blockerar men tillåter åsidosättning.
 - Lokala filresurser: flytta filen från den plats där den lagras till en karantänmapp
 
@@ -166,18 +166,18 @@ plats | inkludera/exkludera efter|
 All DLP policies are created and maintained in the Microsoft 365 Compliance center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
 
 När du har skapat en DLP-princip i efterlevnadscentret lagras den i en central principkälla och synkroniseras sedan med de olika innehållskällorna, till exempel:
-  
+
 - Exchange Online och därifrån till Outlook på webben och Outlook.
 - OneDrive för företag webbplatser.
 - SharePoint Onlinewebbplatser.
 - Office -skrivbordsprogram (Excel, PowerPoint och Word).
 - Microsoft Teams kanaler och chattmeddelanden.
-    
+
 När principen har synkroniserats till rätt platser börjar den utvärdera innehåll och tillämpa åtgärder.
 
 ## <a name="viewing-policy-application-results"></a>Visa principprogramsresultat
 
-DLP rapporterar en stor mängd information till användare Microsoft 365 övervakning, principmatchningar, åtgärder och användaraktiviteter. Du måste använda och agera på den informationen för att justera principer och åtgärder för känsliga objekt. Telemetrin går in i [Microsoft 365 granskningsloggar](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) för efterlevnadscenter först, bearbetas och tar sig till olika rapporteringsverktyg. Varje rapporteringsverktyg har ett annat syfte.  
+DLP rapporterar en stor mängd information till användare Microsoft 365 övervakning, principmatchningar, åtgärder och användaraktiviteter. Du måste använda och agera på den informationen för att justera principer och åtgärder för känsliga objekt. Telemetrin går in i [Microsoft 365 granskningsloggar](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) för efterlevnadscenter först, bearbetas och tar sig till olika rapporteringsverktyg. Varje rapporteringsverktyg har ett annat syfte.
 
 ### <a name="dlp-alerts-dashboard"></a>Instrumentpanelen för DLP-aviseringar
 
@@ -203,7 +203,7 @@ Du kan också se information om den associerade händelsen med omfattande metada
 
 Fliken Aktivitetsutforskaren på sidan DLP har *filtret* Aktivitet förinställt *på DLPRuleMatchning.* Använd det här verktyget för att granska aktiviteter som är relaterade till innehåll som innehåller känslig information eller har etiketter använts, t.ex. vilka etiketter som har ändrats, filer ändrades och matchade en regel.
 
-![skärmbild av den DLPRuleMatch-omfattande aktivitetsutforskaren ](../media/dlp-activity-explorer.png)
+![skärmbild av den DLPRuleMatch-omfattande aktivitetsutforskaren](../media/dlp-activity-explorer.png)
 
 Mer information finns i Komma [igång med aktivitetsutforskaren](data-classification-activity-explorer.md)
 

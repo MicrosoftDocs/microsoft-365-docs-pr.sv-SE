@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e59fb8a32275a2ef7c4865e93400b97ad5560df5
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 802f3fdacba62839b93b8441502334ae486cdacc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "52161818"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226329"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>Insider-riskhantering – instrumentpanel för användare
 
@@ -45,15 +45,15 @@ Instrumentpanelen **Användare** innehåller användare som lagts till i princip
 
 När en användare läggs till manuellt i en princip poängas användaraktiviteterna för de föregående 90 dagarna och läggs till på tidslinjen **för användaraktivitet.** Till exempel har du en användare som för närvarande inte tilldelats riskresultat för en Insider-riskpolicy och användaren har rapporterat dataläckor till den juridiska avdelningen i organisationen. Den juridiska avdelningen rekommenderar att du konfigurerar nya uppföljningskrav för användaren. Du kan tillfälligt tilldela användaren till principen för *Dataläckor* under en angiven tid (aktiveringsfönstret). Alla användare som lagts till tillfälligt visas i **instrumentpanelen Användare eftersom** händelsekrav avsäger sig.
 
->[!NOTE]
->Det kan ta flera timmar innan nya manuellt tillagda användare visas i **instrumentpanelen Användare.** Det kan ta upp till 24 timmar att visa aktiviteter för de senaste 90 dagarna för dessa användare. Om du vill visa aktiviteter för manuellt  tillagda användare väljer du användaren på instrumentpanelen Användare och öppnar **fliken Användaraktivitet** i informationsfönstret.
+> [!NOTE]
+> Det kan ta flera timmar innan nya manuellt tillagda användare visas i **instrumentpanelen Användare.** Det kan ta upp till 24 timmar att visa aktiviteter för de senaste 90 dagarna för dessa användare. Om du vill visa aktiviteter för manuellt  tillagda användare väljer du användaren på instrumentpanelen Användare och öppnar **fliken Användaraktivitet** i informationsfönstret.
 
 Användaren tas automatiskt bort från instrumentpanelen **användare och** poäng poäng upphör när den tid som definierats i **aktiveringsfönstret går** ut om:
 
 - användaren inte har några ytterligare utlösande händelser eller varningar för Insider-riskprinciper, och
 - om den manuellt definierade **varaktigheten för aktiveringsfönstret** är längre än tidsperioden för global **principaktivering.**
 
-**Aktiveringsfönstrets** inställning med längst varaktighet åsidosätter alltid inställningen **för aktiveringsfönstret** med kortare varaktighet. Du har till exempel konfigurerat  aktiveringsfönstret på  fliken global policys (tidsramar) i de globala inställningarna för Insider-riskhantering i 15 dagar, som automatiskt tillämpas på alla dina Insider-riskprinciper. 
+**Aktiveringsfönstrets** inställning med längst varaktighet åsidosätter alltid inställningen **för aktiveringsfönstret** med kortare varaktighet. Du har till exempel konfigurerat  aktiveringsfönstret på  fliken global policys (tidsramar) i de globala inställningarna för Insider-riskhantering i 15 dagar, som automatiskt tillämpas på alla dina Insider-riskprinciper.
 
 Du lägger tillfälligt till en användare i principen för Insider-risker för *Dataläckor* och definierar 30 dagar som **aktiveringsfönster** för den här användaren. Inställningen för **det globala aktiveringsfönstret** på 15  dagar åsidosätts genom att definiera inställningen för aktiveringsfönstret på 30 dagar för den tillfälligt tillagda användaren. Den tillfälligt tillagda användaren finns kvar på **instrumentpanelen Användare** och finns kvar i principen i 30 dagar.
 
@@ -71,32 +71,32 @@ Varje användare som visas på **instrumentpanelen Användare** har följande in
 
 ![Instrumentpanel för Insider-riskhanteringsanvändare](../media/insider-risk-users-dashboard.png)
 
->[!NOTE]
->Antalet användare som visas på **instrumentpanelen Användare** kan vara begränsat i vissa fall, beroende på mängden aktiva aviseringar och matchande principer. Användare med aktiva aviseringar  visas på instrumentpanelen Användare när aviseringarna genereras och det kan finnas sällsynta fall när det maximala antalet användare som visas nås. Om den här gränsen inträffar kommer användare med aktiva  aviseringar som inte visas att läggas till på instrumentpanelen Användare när befintliga användaraviseringar tritrerats.
+> [!NOTE]
+> Antalet användare som visas på **instrumentpanelen Användare** kan vara begränsat i vissa fall, beroende på mängden aktiva aviseringar och matchande principer. Användare med aktiva aviseringar  visas på instrumentpanelen Användare när aviseringarna genereras och det kan finnas sällsynta fall när det maximala antalet användare som visas nås. Om den här gränsen inträffar kommer användare med aktiva  aviseringar som inte visas att läggas till på instrumentpanelen Användare när befintliga användaraviseringar tritrerats.
 
 ## <a name="view-user-details"></a>Visa användarinformation
 
 Om du vill visa mer information om riskaktivitet för en användare öppnar du fönstret med användarinformation genom att dubbelklicka på en användare i **instrumentpanelen Användare.** I informationsfönstret kan du visa följande information:
 
 - **Fliken Användarprofil**
-    - **Namn och titel:** Användarens namn och befattning från Azure Active Directory. De här användarfälten anonymiseras eller är tomma om den globala anonymiseringsinställningen för Insider-riskhantering är aktiverad.
-    - **Användarens** e-postadress: Användarens e-postadress.
-    - **Alias**: Användarens nätverksalias.
-    - **Organisation eller avdelning**: Organisationen eller avdelningen för användaren.
+  - **Namn och titel:** Användarens namn och befattning från Azure Active Directory. De här användarfälten anonymiseras eller är tomma om den globala anonymiseringsinställningen för Insider-riskhantering är aktiverad.
+  - **Användarens** e-postadress: Användarens e-postadress.
+  - **Alias**: Användarens nätverksalias.
+  - **Organisation eller avdelning**: Organisationen eller avdelningen för användaren.
 
 - **Fliken Användaraktivitet**
-    - **Historik över den senaste användaraktiviteten**: Visar både utlösande indikatorer och insiderriskindikatorer för användaraktiviteter upp till de senaste 180 dagarna. Alla aktiviteter som är relevanta för insiderriskindikatorer poängas också, även om aktiviteterna kanske eller inte har genererat en riskvarning för Insider. Exempel på utlösande indikator kan vara ett förfallodatum eller det senast schemalagda arbetsdatumet för användaren. Insider-riskindikatorer är aktiviteter som avgörs av en del av risker och definieras i principer som användaren ingår i. Händelse- och riskaktiviteter visas med det senaste objektet först.
+  - **Historik över den senaste användaraktiviteten**: Visar både utlösande indikatorer och insiderriskindikatorer för användaraktiviteter upp till de senaste 180 dagarna. Alla aktiviteter som är relevanta för insiderriskindikatorer poängas också, även om aktiviteterna kanske eller inte har genererat en riskvarning för Insider. Exempel på utlösande indikator kan vara ett förfallodatum eller det senast schemalagda arbetsdatumet för användaren. Insider-riskindikatorer är aktiviteter som avgörs av en del av risker och definieras i principer som användaren ingår i. Händelse- och riskaktiviteter visas med det senaste objektet först.
 
 ## <a name="remove-users-from-in-scope-assignment-to-policies"></a>Ta bort användare från tilldelning inom omfattningen till principer
 
 Det kan finnas scenarier där du behöver sluta tilldela riskpoäng till en användares aktiviteter i insider-riskhanteringsprinciper. Använd **Ta bort** användare på sidan **Användare** instrumentpanelen om du vill sluta tilldela riskpoäng för en eller flera användare från alla principer för Insider-riskhantering som de för närvarande finns inom omfattningen för. Den här åtgärden tar inte bort användare från den övergripande principtilldelningen (när du lägger till användare eller grupper i en principkonfiguration), utan tar bara bort användarna från aktiv bearbetning efter principer efter aktuella utlösande händelser. Om användarna har en annan utlösande händelse i framtiden börjar riskresultat från principer automatiskt tilldelas till användarna igen. Befintliga aviseringar eller ärenden för den här användaren tas inte bort.
 
->[!NOTE]
->Det kan ta flera minuter att ta bort en användare från en princip. När det är klart visas användaren inte längre på sidan Användare. Om den borttagna användaren har aktiva aviseringar eller ärenden finns användaren kvar på sidan Användare och information för användaren visar att de inte längre omfattas av en princip.
+> [!NOTE]
+> Det kan ta flera minuter att ta bort en användare från en princip. När det är klart visas användaren inte längre på sidan Användare. Om den borttagna användaren har aktiva aviseringar eller ärenden finns användaren kvar på sidan Användare och information för användaren visar att de inte längre omfattas av en princip.
 
 Om du vill ta bort användare från omfattningens status manuellt i alla insider-riskhanteringsprinciper slutför du följande steg:
 
-1. I Microsoft 365 [kompatibilitetscenter](https://compliance.microsoft.com)går du **till Insider-riskhantering** och väljer **fliken** Användare.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering** och väljer **fliken** Användare.
 2. På **instrumentpanelen Användare** väljer du den eller de användare som du vill ta bort från att omfattas av insider-riskhanteringsprinciper.
 3. Välj **Ta bort användare.**
 4. I fönstret **Ta bort användare** väljer du Ta **bort** **eller Avbryt** för att ignorera ändringarna och stänga dialogrutan.

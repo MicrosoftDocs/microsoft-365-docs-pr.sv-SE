@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Användare med giltiga arbets- eller skolkonton kan få Cortana i Microsoft 365 upplevelser som uppfyller Office 365 säkerhet på företagsnivå.
-ms.openlocfilehash: 45e6f46fa753096c535add9daf486ef6a9f1bff0
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054596"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227901"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
@@ -39,7 +39,7 @@ När användare är inloggade med giltiga arbets- eller skolkonton kan de få mo
 
 - I enlighet med andra Office 365 tjänster uppfyller Cortana företagstjänster samma sekretess,säkerhet och efterlevnad på företagsnivå som i villkoren för [onlinetjänster (OST).](https://www.microsoft.com/licensing/product-licensing/products)
 
-- Nya Microsoft 365 funktioner, till exempel genomgången i e-postmeddelanden och Spela upp mina e-postmeddelanden, kommer att aktiveras med Cortana företagstjänster och helt följa de här löftena. De här funktionerna är för närvarande tillgängliga i hela världen (standard för flera innehavare). Mer information om hur du hittar användningsplatsen finns i [Visa ytterligare egenskapsvärden för konton.](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts)
+- Nya Microsoft 365 funktioner, till exempel genomgången i e-postmeddelanden och Spela upp mina e-postmeddelanden, kommer att aktiveras med Cortana företagstjänster och helt följa de här löftena. De här funktionerna är för närvarande tillgängliga i hela världen (standard för flera innehavare). Mer information om hur du hittar användningsplatsen finns i [Visa ytterligare egenskapsvärden för konton.](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md#view-additional-property-values-for-accounts)
 
 - Befintliga konsumentupplevelser, t.ex. Cortana i Windows 10 (version 1909 och tidigare), regleras av [Microsofts](https://www.microsoft.com/licensing/product-licensing/products) tjänstavtal och [Microsofts](https://privacy.microsoft.com/privacystatement) sekretesspolicy (se avsnittet Befintliga tjänster för konsumenter nedan). Dessa villkor gäller även för Cortana företagstjänster som tillhandahålls till användaren när de är inloggade med sina konsumentinloggningsuppgifter.
 

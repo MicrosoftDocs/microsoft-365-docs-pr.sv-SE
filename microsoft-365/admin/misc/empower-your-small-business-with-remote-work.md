@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Hitta den senaste informationen, tips, resurser och vägledning om distansarbete för företag som använder Microsoft 365.
-ms.openlocfilehash: 5bdff59f3d07c59951c6da87d7b28432fb7c5878
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: fb261fbb5b52e81861fde16f6effc12b0a232e80
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023743"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227925"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Förbättra småföretagen med distansarbete
 
 När företag anpassar sig till det ökade behovet av att få människor att arbeta på distans och ansluta till sina kunder virtuellt, är den här webbplatsen uppdaterad med den senaste informationen, tips, resurser och vägledning för distansarbete för företag som använder Microsoft 365.
 
->[!TIP]
->Har du inte Microsoft_Teams? Få 6 månader Microsoft Teams i Office gratis (när du registrerar dig för 1 år). Hämta teknikerna som beskrivs i den här artikeln som en del av erbjudandet. Mer information finns i [Prova kostnadsfritt 1 månad.](https://aka.ms/SMBTeamsOffer)
+> [!TIP]
+> Har du inte Microsoft_Teams? Få 6 månader Microsoft Teams i Office gratis (när du registrerar dig för 1 år). Hämta teknikerna som beskrivs i den här artikeln som en del av erbjudandet. Mer information finns i [Prova kostnadsfritt 1 månad.](https://aka.ms/SMBTeamsOffer)
 
 ## <a name="remote-work-for-your-small-business-video"></a>Distansarbete för småföretag (video)
 
@@ -43,7 +43,7 @@ Har du redan en prenumeration men behöver konfigurera den? Se [Microsoft 365 ut
 
 ## <a name="connect-with-employees-and-customers"></a>Anslut med anställda och kunder
 
-Du kan fortfarande ansluta till anställda, kunder, klienter och partner, även om ni inte kan träffas. Använd Microsoft Teams för att fortsätta att göra affärer och ansluta till dina kunder. 
+Du kan fortfarande ansluta till anställda, kunder, klienter och partner, även om ni inte kan träffas. Använd Microsoft Teams för att fortsätta att göra affärer och ansluta till dina kunder.
 
 ### <a name="meet-up-in-teams"></a>Möts i Teams
 
@@ -81,13 +81,13 @@ Mer information finns i [Hantera enheter](../../business-video/secure-win-10-pro
 
 ### <a name="more-for-admins-and-partners"></a>Mer för administratörer och partner
 
-Navet för teknisk Microsoft 365 Business uppdateras med ny säker fjärrvägledning.
+Navet för teknisk dokumentation för Microsoft 365 Business uppdateras med ny säker fjärrvägledning.
 
-Mer information finns i [Microsoft 365 Business resurser](https://docs.microsoft.com/microsoft-365/business).
+Mer information finns i [Microsoft 365 Business-resurser.](/microsoft-365/business)
 
-## <a name="need-to-ask-a-question"></a>Behöver du ställa en fråga? 
+## <a name="need-to-ask-a-question"></a>Behöver du ställa en fråga?
 
 Fråga i [Teams eller](https://answers.microsoft.com/msteams/forum) i [administratörsforumet Office](https://answers.microsoft.com).
 
 > [!NOTE]
-> De flesta av uppgifterna i den här artikeln och videon kan utföras med en prenumeration på Microsoft 365 Business Basic (tidigare Office 365 Business Essentials), men vissa kräver en premium-prenumeration. 
+> De flesta av uppgifterna i den här artikeln och videon kan utföras med en prenumeration på Microsoft 365 Business Basic (tidigare Office 365 Business Essentials), men vissa kräver en premium-prenumeration.

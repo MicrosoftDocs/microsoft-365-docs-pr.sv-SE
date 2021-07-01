@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Innan du kan Microsoft 365 med din enhet kan du behöva registrera den i Basic Mobility and Security för Microsoft 365.
-ms.openlocfilehash: 2ad0aac331969696bbf53d0b06c18ee5c0ee90f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 9da3424409a950670e3be45354a5c399fec52372
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706172"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228189"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Registrera din mobila enhet med Basic Mobility and Security
 
@@ -31,8 +31,8 @@ Om du använder en telefon, surfplatta eller andra mobila enheter för att arbet
 
 Organisationer väljer Grundläggande rörlighet och säkerhet så att anställda kan använda sina mobila enheter för att säkert komma åt arbetse-post, kalendrar och dokument samtidigt som verksamheten skyddar viktiga data och uppfyller deras efterlevnadskrav.Mer information finns i [Översikt över Grundläggande rörlighet och säkerhet för Microsoft 365.](overview.md) Mer information finns i [Vilken information kan min organisation se när jag registrerar min enhet?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
->[!IMPORTANT] 
->När du registrerar enheten i Basic Mobility and Security för Microsoft 365 kan du behöva konfigurera ett lösenord och ge din arbetsorganisation möjlighet att rensa enheten. Rensning av enheten kan till exempel utföras från administrationscentret i Microsoft 365 för att ta bort alla data från enheten om fel lösenord anges för många gånger eller om användningsvillkoren bryts.
+> [!IMPORTANT]
+> När du registrerar enheten i Basic Mobility and Security för Microsoft 365 kan du behöva konfigurera ett lösenord och ge din arbetsorganisation möjlighet att rensa enheten. Rensning av enheten kan utföras från Administrationscenter för Microsoft 365 till exempel för att ta bort alla data från enheten om fel lösenord angetts för många gånger eller om användningsvillkoren bryts.
 
 ## <a name="supported-devices"></a>Enheter som stöds
 
@@ -46,8 +46,8 @@ Basic Mobility and Security Microsoft 365 hos Intune-tjänsten fungerar med de f
 
 Om enheten inte finns med i listan ovan och du behöver använda den med Basic Mobility and Security kontaktar du din arbets- eller skoladministratör.
 
->[!TIP]
->Om du har problem med att registrera din enhet kan du gå till [Felsöka grundläggande rörlighet och säkerhet.](troubleshoot.md)
+> [!TIP]
+> Om du har problem med att registrera din enhet kan du gå till [Felsöka grundläggande rörlighet och säkerhet.](troubleshoot.md)
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Konfigurera din mobila enhet med Intune och Enkel rörlighet och säkerhet
 
@@ -55,8 +55,8 @@ Med Intune-företagsportal enhet hanteras en enhet av grundläggande Microsoft 3
 
 ### <a name="iphone-or-ipad"></a>iPhone eller iPad
 
->[!TIP]
->Du kan inte skicka och ta emot e-post förrän du är klar med det här steget.
+> [!TIP]
+> Du kan inte skicka och ta emot e-post förrän du är klar med det här steget.
 
 Gå till Apple App Store och ladda ned och installera Intune-företagsportal.
 
@@ -64,8 +64,8 @@ Information om hur du ansluter och konfigurerar din iOS-telefon eller iOS-surfpl
 
 ### <a name="android-phone-or-tablet"></a>Android-telefon eller -surfplatta
 
->[!TIP]
->Du kan inte skicka och ta emot e-post förrän du är klar med det här steget.
+> [!TIP]
+> Du kan inte skicka och ta emot e-post förrän du är klar med det här steget.
 
 Gå till Google Play-butiken och ladda ned och installera Intune-företagsportal.
 

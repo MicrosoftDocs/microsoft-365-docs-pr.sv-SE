@@ -1,5 +1,5 @@
 ---
-title: Datatabeller i Microsoft 365 Defender avancerade sökschema
+title: Datatabeller i Microsoft 365 Defender avancerat sökschema
 description: Läs mer om tabellerna i det avancerade sökschemat för att förstå vilka data du kan köra sökning efter hot på
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 50a221a65c8264d816de958ec74fa99e9e6db762
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470586"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53225998"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Förstå det avancerade sökschemat
 
@@ -48,9 +48,9 @@ När du skapar frågor kan du använda den inbyggda schemareferensen för att sn
 - **Exempelfråga**– exempelfrågor som innehåller hur tabellen kan användas.
 
 ### <a name="access-the-schema-reference"></a>Komma åt schemareferensen
-Om du snabbt vill komma åt schemareferensen **väljer du åtgärden** Visa referens bredvid tabellnamnet i schemarepresentationen. Du kan också välja **Schemareferens om** du vill söka efter en tabell.   
+Om du snabbt vill komma åt schemareferensen **väljer du åtgärden** Visa referens bredvid tabellnamnet i schemarepresentationen. Du kan också välja **Schemareferens om** du vill söka efter en tabell.
 
-![Bild som visar hur du kommer åt schemareferensen i portalen ](../../media/mtp-ah/ah-reference.png) 
+![Bild som visar hur du kommer åt schemareferensen i portalen](../../media/mtp-ah/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>Lär dig schematabellerna
 I följande referens visas alla tabeller i schemat. Varje tabellnamn länkar till en sida som beskriver kolumnnamnen för tabellen. Tabell- och kolumnnamn visas också i säkerhetscentret som en del av schemarepresentationen på den avancerade sökskärmen.

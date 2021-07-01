@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Ta bort grupper eller principer för att inaktivera Grundläggande rörlighet och säkerhet.
-ms.openlocfilehash: 1d81aed01193fb2ba821ebc055958ac6cd8ac382
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 7ec4ec0d47668c21824d8e01e3845d637b9b0922
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023875"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228141"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>Stäng av grundläggande Mobility and Security
 
@@ -29,16 +29,16 @@ För att effektivt inaktivera Grundläggande rörlighet och säkerhet tar du bor
 
 - Inaktivera grundläggande rörlighet och säkerhet för alla genom att ta bort alla principer för grundläggande rörlighet och säkerhetsenhet.
 
-Med de här alternativen tas tillämpning av Basic Mobility och Security bort för enheter i organisationen. Tyvärr kan du inte bara "återkalla" Basic Mobility and Security när du har konfigurerat den. 
+Med de här alternativen tas tillämpning av Basic Mobility och Security bort för enheter i organisationen. Tyvärr kan du inte bara "återkalla" Basic Mobility and Security när du har konfigurerat den.
 
->[!IMPORTANT]
->Tänk på hur användarnas enheter påverkas när du tar bort användarnas säkerhetsgrupper från principerna eller tar bort principerna. Till exempel kan e-postprofiler och cachelagrade e-postmeddelanden tas bort, beroende på enhet. Mer information finns i Vad  [händer när du tar bort en princip eller tar bort en användare från principen?](../../admin/basic-mobility-security/create-device-security-policies.md)
+> [!IMPORTANT]
+> Tänk på hur användarnas enheter påverkas när du tar bort användarnas säkerhetsgrupper från principerna eller tar bort principerna. Till exempel kan e-postprofiler och cachelagrade e-postmeddelanden tas bort, beroende på enhet. Mer information finns i Vad  [händer när du tar bort en princip eller tar bort en användare från principen?](../../admin/basic-mobility-security/create-device-security-policies.md)
 
 ## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Ta bort användarsäkerhetsgrupper från principer för grundläggande rörlighet och säkerhetsenhet
 
 1. Skriv följande i webbläsaren:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2. Välj en enhetsprincip och sedan **Redigera princip**. 
+2. Välj en enhetsprincip och sedan **Redigera princip**.
 
 3. Välj  **Ta bort**   på sidan **Distribution.**
 
@@ -48,11 +48,11 @@ Med de här alternativen tas tillämpning av Basic Mobility och Security bort f�
 
 ## <a name="remove-basic-mobility-and-security-device-policies"></a>Ta bort principer för grundläggande rörlighet och säkerhetsenhet
 
-1.  Skriv följande i webbläsaren:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) . 
+1. Skriv följande i webbläsaren:  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2.  Välj en enhetsprincip och välj sedan Ta  **bort princip**.
-    
-3.  Välj Ja i dialogrutan **Varning.**
+2. Välj en enhetsprincip och välj sedan Ta  **bort princip**.
 
->[!NOTE]
->Mer information om hur du tar bort blockering av enheter om organisationens enheter fortfarande är blockerade finns i blogginlägget Ta bort åtkomstkontroll [från Mobile Device Management för Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).
+3. Välj Ja i dialogrutan **Varning.**
+
+> [!NOTE]
+> Mer information om hur du tar bort blockering av enheter om organisationens enheter fortfarande är blockerade finns i blogginlägget Ta bort åtkomstkontroll [från Mobile Device Management för Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).

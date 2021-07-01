@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Upptäck konfigurationsstegen för Microsoft 365 Business Premium, inklusive att lägga till en domän och användare, konfigurera säkerhetsprinciper med mera.
-ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 74a98e915577cf86ec32a706bd3b8f558f49db95
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624398"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227648"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Konfigurera Microsoft 365 Business Premium i installationsguiden
 
@@ -69,7 +69,7 @@ När du köper Microsoft 365 Business Premium domän kan du välja att använda 
     ![Skärmbild av sidan Anpassa din inloggning.](../media/adddomain.png)
 
     
-4. Följ stegen i guiden för att [Skapa DNS-poster hos en DNS-värd](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) för Microsoft 365 som verifierar att du äger domänen. Om du vet vilken din domänvärd är kan du även se [Värdspecifika anvisningar](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Följ stegen i guiden för att [Skapa DNS-poster hos en DNS-värd](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) för Microsoft 365 som verifierar att du äger domänen. Om du känner till värden för din domän kan du även [gå till Lägg till en domän för att Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     Om din värd är GoDaddy eller en annan värd som är aktiverad med [Domain Connect](/office365/admin/get-help-with-domains/domain-connect)är processen enkel och du blir automatiskt ombedd att logga in och låta Microsoft autentisera.
 
@@ -135,4 +135,4 @@ Du kan också installera Office individuellt. Anvisningar finns Office installer
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Microsoft 365 om utbildningsvideor för företag](../business-video/index.yml) (länksida)
+[Utbildningsvideor för Microsoft 365 Business](../business-video/index.yml) (länksida)

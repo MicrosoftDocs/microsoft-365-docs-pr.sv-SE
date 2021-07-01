@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Använd verktyget Kommunikation i ett Advanced eDiscovery ärende för att skicka, samla in och spåra aviseringar om juridiska frågor.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: df1b2d962e83110c62ccac871f669bbc0d3bfe02
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 026670b9ed45f366ff3d711d8f2b2d0274be5a19
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "52161787"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227109"
 ---
 # <a name="create-a-legal-hold-notice"></a>Skapa ett meddelande om juridiskt väntande
 
@@ -52,34 +52,34 @@ Det första steget är att ange lämpliga uppgifter för meddelanden om juridisk
 > Den som utfärdar en officer måste ha **en aktiv** postlåda för att visas i listrutan Utfärdar konstapel
 
 
-4. Klicka på **Nästa**.
+4. Klicka **Nästa**.
 
 ## <a name="step-2-define-the-portal-content"></a>Steg 2: Definiera portalinnehållet
 
-Sedan kan du skapa och lägga till innehållet i meddelandet om väntande meddelanden. På sidan **Definiera portalinnehåll** i guiden **Skapa kommunikation** anger du innehållet i meddelandet om väntande meddelanden. Innehållet läggs automatiskt till i meddelandena Utfärdning, Omproblem, Påminnelse och eskalering. Dessutom visas det här innehållet i den uppsövandes portal för efterlevnad. 
+Sedan kan du skapa och lägga till innehållet i meddelandet om väntande meddelanden. På sidan **Definiera portalinnehåll** i guiden **Skapa kommunikation** anger du innehållet i meddelandet om väntande meddelanden. Innehållet läggs automatiskt till i meddelandena Utfärdning, Omproblem, Påminnelse och eskalering. Dessutom visas det här innehållet i den uppsövandes portal för efterlevnad.
 
 ![Sida för portalinnehåll](../media/PortalContent.PNG)
 
 Så här skapar du portalinnehållet:
 
-1. Skriv (eller klipp ut och klistra in från ett annat dokument) ditt hållmeddelande i textrutan för portalinnehållet. 
+1. Skriv (eller klipp ut och klistra in från ett annat dokument) ditt hållmeddelande i textrutan för portalinnehållet.
 
 2. Infoga kopplingsvariabler i ditt meddelande för att anpassa meddelandet och dela portalen för efterlevnadsefterlevnad.
 
-3. Klicka på **Nästa**.
+3. Klicka **Nästa**.
 
-  >[!Tip]
-  >Mer information om hur du kan anpassa innehållet och formatet för portalinnehållet finns i [Använda kommunikationsredigeraren.](using-communications-editor.md)
+  > [!TIP]
+  > Mer information om hur du kan anpassa innehållet och formatet för portalinnehållet finns i [Använda kommunikationsredigeraren.](using-communications-editor.md)
 
 ## <a name="step-3-set-the-required-notifications"></a>Steg 3: Ange de aviseringar som krävs
 
-När du har definierat innehållet i meddelandet om väntande åtgärder kan du konfigurera arbetsflödena kring att skicka och hantera meddelandeprocessen. Aviseringar är e-postmeddelanden som skickas för att meddela och följa upp med biblioteksklienter. Alla inseristare som läggs till i meddelandet får samma avisering. 
+När du har definierat innehållet i meddelandet om väntande åtgärder kan du konfigurera arbetsflödena kring att skicka och hantera meddelandeprocessen. Aviseringar är e-postmeddelanden som skickas för att meddela och följa upp med biblioteksklienter. Alla inseristare som läggs till i meddelandet får samma avisering.
 
 Om du vill skapa och skicka ett meddelande om väntande måste du inkludera Utfärdning, Utfärdning och Meddelanden om utgivning.
 
-### <a name="issuance-notification"></a>Meddelande om utfärdning 
+### <a name="issuance-notification"></a>Meddelande om utfärdning
 
-När meddelandet har skapats initieras **utfärdningsmeddelandet** av den angivna utfärdaren. Meddelandet Utfärdning är den första meddelandet som skickas till den som skickat in information om sina bevarandeåtaganden. 
+När meddelandet har skapats initieras **utfärdningsmeddelandet** av den angivna utfärdaren. Meddelandet Utfärdning är den första meddelandet som skickas till den som skickat in information om sina bevarandeåtaganden.
 
 Så här skapar du en utfärdningsavisering:
 
@@ -89,7 +89,7 @@ Så här skapar du en utfärdningsavisering:
 
 3. Ange Ämne **för** meddelandet (obligatoriskt).
 
-4. Ange innehållet eller ytterligare instruktioner som du vill ge till den som ska göra det (obligatoriskt). Portalinnehållet som du definierade i steg 2 läggs till i slutet av utfärdningsmeddelandet. 
+4. Ange innehållet eller ytterligare instruktioner som du vill ge till den som ska göra det (obligatoriskt). Portalinnehållet som du definierade i steg 2 läggs till i slutet av utfärdningsmeddelandet.
 
 5. Klicka på **Spara**.
 
@@ -116,7 +116,7 @@ Så här skapar du en ny utfärdningsavisering:
 
 När en fråga har lösts, eller om en vårdnadshavare inte längre behöver bevara innehållet, kan du släppa den vårdnadshavare som avknöjt från ett ärende. Om den vårdnadshavare som tidigare utfärdat en varning om att ett certifikat är intr dess kan den utgivna aviseringen användas för att varna dem om att de har frisläppts från sina skyldigheter.
 
-Så här skapar du ett release-meddelande: 
+Så här skapar du ett release-meddelande:
 
 1. Klicka på **Redigera** på panelen **Släpp.**
 
@@ -148,7 +148,7 @@ Så här schemalägger du påminnelser:
 
 4. Ange Antal **påminnelser** (krävs). Det här fältet anger hur många påminnelser som ska skickas till icke svarare biblioteksnamn. Om du till exempel anger antalet påminnelser till 3 får en vårdnadshavare högst tre påminnelser. När en vårdnadshavare bekräftar att en avisering är väntad skickas inte längre påminnelser till den användaren.
 
-5. Ange Ämne **för** meddelandet (obligatoriskt). 
+5. Ange Ämne **för** meddelandet (obligatoriskt).
 
 6. Ange innehållet eller ytterligare instruktioner som du vill ge till den som ska göra det (obligatoriskt). Portalinnehållet som du definierade i steg 2 läggs till i slutet av påminnelsen.
 
@@ -168,7 +168,7 @@ Så här schemalägger du eskalering:
 
 4. Ange antalet **eskaleringar** (obligatoriskt). Det här fältet anger hur många eskaleringar som ska skickas till icke-svarare obehöriga personer. Om du till exempel anger antalet eskalering till 3 skickas ett eskaleringsmeddelande till den vårdnadshavare och deras chef högst tre gånger. När en vårdnadshavare bekräftar att en avisering om inhållen är bekräftad kommer eskalering inte längre att skickas.
 
-5. Ange Ämne **för** meddelandet (obligatoriskt). 
+5. Ange Ämne **för** meddelandet (obligatoriskt).
 
 6. Ange innehållet eller ytterligare instruktioner som du vill ge till den som ska göra det (obligatoriskt). Portalinnehållet som du definierade i steg 2 läggs till i slutet av eskaleringsmeddelandet.
 
@@ -176,7 +176,7 @@ Så här schemalägger du eskalering:
 
 ## <a name="step-5-assign-custodians-to-receive-notifications"></a>Steg 5: Tilldela användare som ska ta emot aviseringar
 
-När du har färdigfört innehållet för aviseringar väljer du de objekt du vill skicka aviseringar till. 
+När du har färdigfört innehållet för aviseringar väljer du de objekt du vill skicka aviseringar till.
 
 ![Välj objektssida](../media/SelectCustodians.PNG)
 
@@ -188,8 +188,8 @@ Så här lägger du till biblioteksvårdare:
 
 2. Klicka **på Nästa** för att granska kommunikationsinställningarna och detaljerna.
 
->[!NOTE]
->Du kan bara lägga till brevare som har lagts till i ärendet och inte har fått någon annan avisering i ärendet.
+> [!NOTE]
+> Du kan bara lägga till brevare som har lagts till i ärendet och inte har fått någon annan avisering i ärendet.
 
 ## <a name="step-6-review-settings"></a>Steg 6: Granska inställningar
 

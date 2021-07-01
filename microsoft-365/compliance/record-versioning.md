@@ -17,38 +17,38 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om arkivhandlingar som hjälper dig att implementera en lösning för hantering av arkivhandlingar i Microsoft 365.
-ms.openlocfilehash: 5c828f06f2ce9e2bd18869f897f1f372c1a62f21
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 86fbd84e03263ca5d99e1bfe6ab572589dc98bbd
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "52162605"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226137"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Använd versionshantering för att uppdatera arkivhandlingar som lagras i SharePoint eller OneDrive
 
 >*[Vägledning för säkerhet och efterlevnad med licensiering i Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
->[!NOTE] 
+> [!NOTE]
 > Eftersom regelbaserade arkivhandlingar blockerar redigering är inte versionshantering tillgänglig för regelbaserade arkivhandlingar.
 
 Möjligheten att markera ett dokument som en [arkivhandling](records-management.md#records) och begränsa åtgärder som kan utföras för den är ett viktigt mål för alla lösningar för hantering av arkivhandlingar. Dock kan det även behövas samarbete för att skapa senare versioner.
 
 Du kan till exempel markera ett säljavtal som en arkivhandling, men sedan måste du uppdatera avtalet med nya villkor och markera den senaste versionen som en ny arkivhandling samtidigt som du behåller den tidigare versionen. För de här typerna av scenarier har SharePoint och OneDrive stöd för *versionshantering av arkivhandlingar*. Mappar i OneNote-anteckningsböcker har inte stöd för versionshantering av arkivhandlingar.
 
-Om du vill använda versionshantering för arkivhandlingar [namnger du först dokumentet och markerar det som en arkivhandling](declare-records.md). I det här skedet visas en dokumentegenskap som kallas *Arkivhandlingsstatus* bredvid bevarandeetiketten och den första statusen är **Låst**. 
+Om du vill använda versionshantering för arkivhandlingar [namnger du först dokumentet och markerar det som en arkivhandling](declare-records.md). I det här skedet visas en dokumentegenskap som kallas *Arkivhandlingsstatus* bredvid bevarandeetiketten och den första statusen är **Låst**.
 
 Nu kan du göra följande:
 
-  - **Redigera kontinuerligt och behåll enskilda versioner av dokumentet som arkivhandlingar genom att låsa upp och låsa egenskapen Arkivhandlingsstatus.** Endast när egenskapen **Arkivhandlingsstatus** är inställd på **Låst** kan en ny version av arkivhandlingen behållas. Genom att växla mellan låsta och olåsta dokument minskar risken att onödiga versioner och kopior behålls av dokumentet.
+- **Redigera kontinuerligt och behåll enskilda versioner av dokumentet som arkivhandlingar genom att låsa upp och låsa egenskapen Arkivhandlingsstatus.** Endast när egenskapen **Arkivhandlingsstatus** är inställd på **Låst** kan en ny version av arkivhandlingen behållas. Genom att växla mellan låsta och olåsta dokument minskar risken att onödiga versioner och kopior behålls av dokumentet.
 
-  - **Lagra arkivhandlingarna automatiskt i en lagringsplats för arkivhandlingar på plats inom webbplatssamlingen.** Varje webbplatssamling i SharePoint och OneDrive bevarar innehållet i sitt bibliotek för bevarande av dokument. Arkivhandlingsversioner lagras i mappen Arkivhandlingar i det här biblioteket.
+- **Lagra arkivhandlingarna automatiskt i en lagringsplats för arkivhandlingar på plats inom webbplatssamlingen.** Varje webbplatssamling i SharePoint och OneDrive bevarar innehållet i sitt bibliotek för bevarande av dokument. Arkivhandlingsversioner lagras i mappen Arkivhandlingar i det här biblioteket.
 
-  - **Bevara ett evighetsdokument som innehåller alla versioner.** Som standard har varje SharePoint- och OneDrive-dokument en versionshistorik tillgänglig på objektmenyn. I den här versionshistoriken kan du enkelt se vilka versioner som är arkivhandlingar och visa dessa dokument.
+- **Bevara ett evighetsdokument som innehåller alla versioner.** Som standard har varje SharePoint- och OneDrive-dokument en versionshistorik tillgänglig på objektmenyn. I den här versionshistoriken kan du enkelt se vilka versioner som är arkivhandlingar och visa dessa dokument.
 
 > [!TIP]
 > När du använder versionshantering för arkivhandlingar med en bevarandeetikett som har en borttagningsåtgärd kan du konfigurera bevarandeinställningen **Starta bevarandetiden baserat på:** till **När objekt har etiketter**. Med den här etikettinställningen återställs bevarandetidens början för varje ny arkivhandlingsversion, vilket säkerställer att äldre versioner tas bort innan nyare versioner.
 
-Versionshantering för arkivhandlingar är automatiskt tillgängligt för alla dokument som har en bevarandeetikett som markerar objektet som en arkivhandling. När en användare visar dokumentegenskaperna med hjälp av informationsfönstret kan de växla **Status** från **Låst** till **Olåst**. Den här åtgärden skapar en arkivhandling i mappen Arkivhandlingar i biblioteket för bevarande av dokument, där den finns i resten av bevarandeperioden. 
+Versionshantering för arkivhandlingar är automatiskt tillgängligt för alla dokument som har en bevarandeetikett som markerar objektet som en arkivhandling. När en användare visar dokumentegenskaperna med hjälp av informationsfönstret kan de växla **Status** från **Låst** till **Olåst**. Den här åtgärden skapar en arkivhandling i mappen Arkivhandlingar i biblioteket för bevarande av dokument, där den finns i resten av bevarandeperioden.
 
 Även om dokumentet är olåst kan alla användare med standardredigeringsbehörighet redigera filen. Användare kan dock inte ta bort filen eftersom det fortfarande är en arkivhandling. När redigeringen är klar kan en användare sedan växla **Status** från **Olåst** till **Låst**, vilket förhindrar ytterligare redigeringar när denna status har valts.
 <br/><br/>

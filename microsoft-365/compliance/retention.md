@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om kvarhållningsprinciper och kvarhållningsetiketter som hjälper dig att behålla det du behöver och ta bort det du inte behöver.
-ms.openlocfilehash: 9337bddd87dd24d42b4d06fe77225901701cbdee
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 1aca97f12fe75dd74467007f35858c72caa38606
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149184"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226113"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Mer information om kvarhållningsprinciper och kvarhållningsetiketter
 
@@ -433,7 +433,7 @@ Om du vill använda cmdletar för kvarhållning måste du [ansluta till Office 3
 
 - [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
 
-- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig )
+- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig)
 
 - [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 
@@ -494,7 +494,7 @@ Om du använder de här äldre funktionerna kommer de att fortsätta fungera sid
     
 - [Konfigurera hantering av arkivhandlingar på plats](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (endast kvarhållning) 
     
-- [Använda principer för att stänga och ta bort webbplatsen](https://support.microsoft.com/sv-SE/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (endast borttagning)
+- [Använda principer för att stänga och ta bort webbplatsen](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (endast borttagning)
     
 - [Principer för informationshantering](intro-to-info-mgmt-policies.md) (endast borttagning)
      

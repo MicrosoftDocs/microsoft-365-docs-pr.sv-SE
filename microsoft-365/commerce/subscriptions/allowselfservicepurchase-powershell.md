@@ -21,12 +21,12 @@ search.appverid:
 description: Lär dig hur du använder powerShell-cmdleten AllowSelfServicePurchase för att aktivera eller inaktivera självbetjäning för köp.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fbba7f4385684a8a34f9feebc28a27e8e867bacb
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536136"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227481"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Använd AllowSelfServicePurchase för modulen MSCommerce PowerShell
 
@@ -150,7 +150,7 @@ Det här kan bero på en äldre version av TLS (Transport Layer Security). Du m�
 
 ### <a name="solution"></a>Lösning
 
-Uppgradera till TLS 1.2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+Uppgradera till TLS 1.2: (/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

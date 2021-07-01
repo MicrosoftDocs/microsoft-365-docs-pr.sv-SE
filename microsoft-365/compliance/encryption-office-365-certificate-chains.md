@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Visa en fullständig lista över rotcertifikat och certifikatutfärdare i Microsoft 365.
-ms.openlocfilehash: c5b00a3a663c2ae4862cfa3d11f92015c0331e59
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bb48bf82f3f00223d3a913280e34fe4f0686426
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52161941"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226761"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 krypteringskedjor
 
@@ -30,8 +30,8 @@ Microsoft 365 utnyttjar ett antal olika certifikatleverantörer. Nedan beskrivs 
 
 Uppdaterades senast: **2020-10-16**
 
->[!NOTE]
->Certifikatinformation som gäller för DOD och **GCC high-kunder** finns i avsnittet [om Microsoft 365 - DOD och GCC High](encryption-office-365-certificate-chains-itar.md).
+> [!NOTE]
+> Certifikatinformation som gäller för DOD och **GCC high-kunder** finns i avsnittet [om Microsoft 365 - DOD och GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **Certifikattyp** | **Nedladdning av P7B** | **Slutpunkter för CRL** | **OCSP-slutpunkter** | **AIA-slutpunkter** |
 | --- | --- | --- | --- | --- |

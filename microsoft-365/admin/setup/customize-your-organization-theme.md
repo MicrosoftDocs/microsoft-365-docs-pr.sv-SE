@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Lär dig hur du ändrar standardtemat för navigeringsfältet högst upp i Microsoft 365 och anpassa det så att det matchar ditt företags logotyp eller färg.
-ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006919"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227805"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Anpassa Microsoft 365 för din organisation
 
@@ -41,12 +41,12 @@ Du kan lägga till eller uppdatera ett standardtema som gäller för alla i din 
 
 2. På fliken **Organisationsprofil** väljer du **Anpassade teman**.
 
-Alla teman kan anpassas på följande flikar.
+Du kan anpassa alla organisationsteman på följande flikar.
 
 |**Tabb**|**Vad kan du göra?**|
 |:-----|:-----|
 |[Allmänt](#general-modify-a-theme) <br/> |Ändra ett temanamn och tilldela till upp till fem grupper (om tillämpligt).  <br/> |
-|[Logotyper](#logos-specify-your-theme-logos) <br/> |Lägg till din temalogotyp, bland Office mörkt tema och mobila alternativ.  <br/> |
+|[Logotyper](#logos-specify-your-theme-logos) <br/> |Lägg till organisationens logotyp, inklusive alternativ logotyp för mörkt tema.  <br/> |
 |[Färger](#colors-choose-theme-colors) <br/> |Anpassa ett färgschema genom att ange navigeringsfält, accenter, text och ikonfärger. <br/> |
 
 ## <a name="general-modify-a-theme"></a>Allmänt: Ändra ett tema
@@ -64,7 +64,7 @@ Standardtemat är det första temat som visas.
 > [!IMPORTANT]
 > Standardtemat är unikt, det går inte att byta namn på det och det gäller alla i organisationen. Om du vill ta bort standardtemat måste du först ta bort alla andra teman.
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Skärmbild: Fliken Allmänt med organisationens standardtema":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="Skärmbild: Fliken Allmänt med organisationens standardtema":::
 
 ### <a name="create-a-group-theme"></a>Skapa ett grupptema
 
@@ -76,7 +76,7 @@ Du kan skapa upp till fyra ytterligare gruppteman.
 
 3. Välj **Spara**.
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Skärmbild: Fliken Allmänt med standardtemat för en grupp användare i organisationen":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Skärmbild: Fliken Allmänt med standardtemat för en grupp användare i organisationen":::
 
 ## <a name="logos-specify-your-theme-logos"></a>Logotyper: Ange temalogotyp
 
@@ -84,9 +84,11 @@ På sidan **Logotyper kan** du lägga till dina logotyper och ange URL-adressen 
 
 - **Standardlogotyp:** Lägg till en URL-plats som pekar på din logotyp. Kontrollera att URL:en använder HTTPS. Lägg till en HTTPS-bild-URL som tillåter anonym åtkomst och inte kräver autentisering. För standardtema har du också ett alternativ för att ladda upp en logotypbild som är mindre än 10 kb. Standardlogotypen kan vara i JPG-, PNG-, GIF- eller SVG-format. För SVG-bilder ändras storleken så att den passar 24 bildpunkter lodrätt. JPG-, PNG- och GIF-bilder skalas så att de passar 200 x 48 bildpunkter. Proportionerna för logotypen bevaras alltid.
 - **Alternativ logotyp:** Lägg till en URL-plats som pekar på din logotyp. Din alternativa logotyp bör vara optimerad för användning i Office mörka teman. Samma krav som för standardlogotypen.
-- **Vid klickning länk:** Lägg till en URL-plats som pekar på din logotyp. Du kan använda din logotyp som en länk till valfri företagsresurs, till exempel företagets webbplats.
+- **Vid klickning länk:** Lägg till en URL-plats som pekar på din logotyp. Du kan använda din logotyp som en länk till valfri företagsresurs, till exempel företagets webbplats. Om du inte väljer en URL-plats för logotypen används den automatiskt Office startsida.
 
 Välj **Spara** för att spara ändringarna.
+
+:::image type="content" source="../../media/Logos_Tab.png" alt-text="Skärmbild: Fliken Logotyper med alternativ för logotypen":::
 
 Du kan ta bort dina logotyper när som helst. Gå bara tillbaka till **sidan Logotyper och** välj Ta **bort**.
   
@@ -98,9 +100,8 @@ På sidan **Färger** kan du ange standardfärger och välja vilken logotyp som 
 - **Text- och ikonfärg:** Välj en färg som ska användas för text och ikoner i det övre navigeringsfältet.
 - **Accentfärg:** Välj en färg som syns bra mot en vit eller ljus bakgrund. Accentfärgen används som färg på vissa länkar och knappar som visas mot en vit eller ljus bakgrund. Accentfärgen används till exempel som färg på element i en användares inkorg och på portalsidan Office.com.
 - **Återställ färg:** Välj den här länken om du vill återställa färgerna till standardfärgerna.
-- **Vilken logotyp ska användas?**: Välj standardlogotyp eller andra logotyper som du själv har skapat.
 
-:::image type="content" source="../../media/default-theme-colors.png" alt-text="Skärmbild: Fliken Färger med standardtemafärger för organisationen":::
+:::image type="content" source="../../media/default-theme-colors1.png" alt-text="Skärmbild: Fliken Färger med standardtemafärger för organisationen":::
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
 

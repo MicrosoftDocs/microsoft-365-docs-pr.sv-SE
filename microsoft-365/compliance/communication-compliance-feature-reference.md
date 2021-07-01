@@ -18,24 +18,24 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5a9f5a6b218ec7a0e1fe9b05524ea1898b03e370
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: f94d2bbb8a65a4004ee05b9d740f94ae841f9a4e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822135"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227381"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referens för funktioner för kommunikationsefterlevnad
 
 ## <a name="policies"></a>Principer
 
->[!Important]
->Det går inte att använda PowerShell för att skapa och hantera principer för kommunikationsefterlevnad. Om du vill skapa och hantera de här principerna måste du använda principhanteringskontrollerna [i Microsoft 365 för kommunikationsefterlevnad.](https://compliance.microsoft.com/supervisoryreview)
+> [!IMPORTANT]
+> Det går inte att använda PowerShell för att skapa och hantera principer för kommunikationsefterlevnad. Om du vill skapa och hantera de här principerna måste du använda principhanteringskontrollerna [i Microsoft 365 för kommunikationsefterlevnad.](https://compliance.microsoft.com/supervisoryreview)
 
-Du skapar principer för kommunikationsefterlevnad för Microsoft 365 organisationer i Microsoft 365 efterlevnadscenter. Principer för kommunikationsefterlevnad definierar vilken kommunikation och vilka användare som granskas i organisationen, definierar vilka anpassade villkor som måste uppfyllas av kommunikationen och anger vilka som ska granskas. Användare som *har* tilldelats rollen Administratör för kommunikation och efterlevnad kan  konfigurera principer, och alla som har den här rollen tilldelad kan komma åt sidan för kommunikationsefterlevnad och globala inställningar Microsoft 365 efterlevnadscentret. Om det behövs kan du exportera historiken över ändringar i en princip till en .csv-fil (kommaavgränsade värden) som även innehåller status för aviseringar som väntar på granskning, eskalerade objekt och lösta objekt. Det går inte att byta namn på principer och de kan tas bort när de inte längre behövs.
+Du skapar principer för kommunikationsefterlevnad för Microsoft 365 organisationer i Microsoft 365 Efterlevnadscenter. Principer för kommunikationsefterlevnad definierar vilken kommunikation och vilka användare som granskas i organisationen, definierar vilka anpassade villkor som måste uppfyllas av kommunikationen och anger vilka som ska granskas. Användare som *har* tilldelats rollen Administratör för kommunikation och efterlevnad kan  konfigurera principer, och alla som har den här rollen tilldelad kan komma åt sidan för kommunikationsefterlevnad och globala inställningar i Microsoft 365 Efterlevnadscenter. Om det behövs kan du exportera historiken över ändringar i en princip till en .csv-fil (kommaavgränsade värden) som även innehåller status för aviseringar som väntar på granskning, eskalerade objekt och lösta objekt. Det går inte att byta namn på principer och de kan tas bort när de inte längre behövs.
 
->[!NOTE]
->Skyddsprinciper som skapas i Säkerhets- & efterlevnadscenter för Office 365 prenumerationer kan inte migreras till Microsoft 365. Om du migrerar från en Office 365-prenumeration till en Microsoft 365-prenumeration måste du skapa nya principer för kommunikationsefterlevnad som ersätter befintliga efterlevnadsprinciper.
+> [!NOTE]
+> Skyddsprinciper som skapas i Säkerhets- & efterlevnadscenter för Office 365 prenumerationer kan inte migreras till Microsoft 365. Om du migrerar från en Office 365-prenumeration till en Microsoft 365-prenumeration måste du skapa nya principer för kommunikationsefterlevnad som ersätter befintliga efterlevnadsprinciper.
 
 ## <a name="policy-templates"></a>Principmallar
 
@@ -69,10 +69,10 @@ Om du vill återuppta en princip går du till **sidan Princip,** väljer en prin
 
 ## <a name="permissions"></a>Behörigheter
 
->[!Important]
->Som standard har globala administratörer inte tillgång till funktioner för kommunikationsefterlevnad. Rollerna som tilldelats i det här steget krävs för att alla funktioner för kommunikationsefterlevnad ska vara tillgängliga.
+> [!IMPORTANT]
+> Som standard har globala administratörer inte tillgång till funktioner för kommunikationsefterlevnad. Rollerna som tilldelats i det här steget krävs för att alla funktioner för kommunikationsefterlevnad ska vara tillgängliga.
 
-Det finns fem rollgrupper som används för att konfigurera behörigheter för att hantera funktioner för kommunikationsefterlevnad. För att göra **kommunikationsefterlevnad** tillgängligt som ett menyalternativ i Microsoft 365 efterlevnadscenter och för  att fortsätta med de här konfigurationsstegen måste du tilldelas rollgrupperna Administratör för kommunikationsefterlevnad *eller* kommunikationsefterlevnad. För att komma åt och hantera funktioner för kommunikationsefterlevnad efter den första konfigurationen måste användare vara medlemmar i minst en rollgrupp för kommunikationsefterlevnad.
+Det finns fem rollgrupper som används för att konfigurera behörigheter för att hantera funktioner för kommunikationsefterlevnad. För att **göra kommunikationsefterlevnad** tillgängligt som ett menyalternativ i Microsoft 365 Efterlevnadscenter och för  att fortsätta med de här konfigurationsstegen måste du tilldelas rollgrupperna Kommunikationsefterlevnad eller Administratör för kommunikationsefterlevnad.  För att komma åt och hantera funktioner för kommunikationsefterlevnad efter den första konfigurationen måste användare vara medlemmar i minst en rollgrupp för kommunikationsefterlevnad.
 
 Beroende på hur du vill hantera kommunikationsprinciper och aviseringar måste du tilldela användare till specifika rollgrupper. Du kan välja att tilldela användare med olika efterlevnadsansvar till specifika rollgrupper för att hantera olika områden av funktioner för kommunikationsefterlevnad. Eller så kanske du bestämmer dig för att tilldela alla användarkonton till administratörer, analytiker, slutanvändare och läsare till rollgruppen *för* kommunikationsefterlevnad. Använd en rollgrupp eller flera rollgrupper som bäst passar kraven på efterlevnadshantering.
 
@@ -88,7 +88,7 @@ Välj bland de här rollgruppsalternativen när du konfigurerar kommunikationsef
 
 ### <a name="for-organizations-using-the-original-permissions-and-role-groups"></a>För organisationer som använder de ursprungliga behörigheterna och rollgrupperna
 
-Den nya rollgruppsstrukturen ersätter den ursprungliga rollgruppsstrukturen för kommunikationsefterlevnad. För organisationer som redan använder kommunikationsefterlevnad måste du tilldelas rollen Övervakande granskningsadministratör för att komma igång med kommunikationsefterlevnad i Microsoft 365 efterlevnadscenter. Dessutom var du tvungen att skapa en ny rollgrupp för granskare med övervakande granskningsadministratören, ärendehantering, efterlevnadsadministratör och granskningsroller för att undersöka och åtgärda meddelanden med principmatchningar. I princip fanns alla administratörer och granskare i en enda rollgrupp och alla hade samma åtkomst- och hanteringsbehörigheter. Med de senaste uppdateringarna för kommunikationsefterlevnad bör du planera att migrera från föregående rollgruppsstruktur till den nya strukturen för rollgrupper. Stödet för den tidigare rollgruppsstrukturen fasas ut.
+Den nya rollgruppsstrukturen ersätter den ursprungliga rollgruppsstrukturen för kommunikationsefterlevnad. För organisationer som redan använder kommunikationsefterlevnad måste du tilldelas rollen Övervakande granskningsadministratör för att komma igång med kommunikationsefterlevnad i Microsoft 365 Efterlevnadscenter. Dessutom var du tvungen att skapa en ny rollgrupp för granskare med övervakande granskningsadministratören, ärendehantering, efterlevnadsadministratör och granskningsroller för att undersöka och åtgärda meddelanden med principmatchningar. I princip fanns alla administratörer och granskare i en enda rollgrupp och alla hade samma åtkomst- och hanteringsbehörigheter. Med de senaste uppdateringarna för kommunikationsefterlevnad bör du planera att migrera från föregående rollgruppsstruktur till den nya strukturen för rollgrupper. Stödet för den tidigare rollgruppsstrukturen fasas ut.
 
 Tänk på följande exempel som hjälp vid migreringsplaneringen. Du har för närvarande tre typer av användare i organisationen: IT-administratörer, triage och granskare. De här tre typerna av användare finns i den föregående rollgruppsstrukturen och är alla medlemmar i en rollgrupp med följande roller tilldelade:
 
@@ -107,8 +107,8 @@ Om du vill uppdatera rollerna för de här användarna för den nya rollgruppsst
 
 Innan du börjar använda kommunikationsefterlevnad måste du avgöra vem som behöver få sin kommunikation granskad. I principen identifierar användarnas e-postadresser personer eller grupper av personer som ska övervakas. Några exempel på sådana grupper Microsoft 365 grupper, Exchange distributionslistor, Yammer och Microsoft Teams distributionskanaler. Du kan även utesluta vissa användare eller grupper från genomsökning med en viss undantagsgrupp eller en lista med grupper. Mer information om grupptyper som stöds i principer för kommunikationsefterlevnad finns i [Komma igång med kommunikationsefterlevnad.](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance)
 
->[!IMPORTANT]
->Användare som omfattas av principer för kommunikationsefterlevnad måste ha antingen en Microsoft 365 E5 Compliance-licens, en Office 365 Enterprise E3-licens med tillägget Advanced Compliance eller ingå i en Office 365 Enterprise E5-prenumeration. Om du inte har ett befintligt Enterprise E5-abonnemang och vill prova kommunikationsefterlevnad kan du registrera dig för en [utvärderingsversion av Office 365 Enterprise E5.](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+> [!IMPORTANT]
+> Användare som omfattas av principer för kommunikationsefterlevnad måste ha antingen en Microsoft 365 E5 Compliance-licens, en Office 365 Enterprise E3-licens med tillägget Advanced Compliance eller ingå i en Office 365 Enterprise E5-prenumeration. Om du inte har ett befintligt Enterprise E5-abonnemang och vill prova kommunikationsefterlevnad kan du registrera dig för en [utvärderingsversion av Office 365 Enterprise E5.](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
 ## <a name="reviewers"></a>Granskare
 
@@ -140,7 +140,7 @@ Med principer för kommunikationsefterlevnad kan du välja att söka igenom medd
 
     - **Mer Skype för företag onlinechattkommunikation:** Tilldela enskilda användare eller tilldela en [distributionsgrupp](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) till principen för kommunikationsefterlevnad. Den här inställningen är för 1:1- eller en-till-många-användare/chattrelationer.
 
-- **Tredjepartskällor:** Du kan söka igenom kommunikationer efter data som importerats till postlådor i Microsoft 365-organisationen från tredjepartskällor, till exempel [Instant Bloomberg,](archive-instant-bloomberg-data.md) [Slack,](archive-slack-data.md) [Zoom](archive-zoommeetings-data.md), SMS och många fler. En fullständig lista över kopplingar som stöds i kommunikationsefterlevnad finns i [Arkivera data från tredje part.](archiving-third-party-data.md)
+- **Tredjepartskällor:** Du kan söka igenom kommunikationer efter data som importerats till postlådor i Microsoft 365-organisationen från tredjepartskällor, till exempel [Instant Bloomberg,](archive-instant-bloomberg-data.md) [Slack,](archive-slack-data.md) [Zoom,](archive-zoommeetings-data.md)SMS och många fler. En fullständig lista över kopplingar som stöds i kommunikationsefterlevnad finns i [Arkivera data från tredje part.](archiving-third-party-data.md)
 
     Du måste konfigurera en anslutning från tredje part för organisationen Microsoft 365 organisationen innan du kan tilldela kopplingen till en princip för kommunikationsefterlevnad. Avsnittet **Tredjepartskällor i** guiden för kommunikationsefterlevnadsprincip visar endast för närvarande konfigurerade kopplingar från tredje part.
 
@@ -199,8 +199,8 @@ Inbyggda, utbildande och globala klassificerare för kommunikationsefterlevnad s
 
 Inbyggda utbildare och globala klassificerare tillhandahåller inte en uttömmande lista över termer eller bilder i dessa områden. Ytterligare, språk och kulturstandarder ändras kontinuerligt, och mot bakgrund av dessa ovidkomlighet förbehåller sig Microsoft rätten att uppdatera klassificerare enligt eget gottfinnande. Medan klassificerare kan hjälpa organisationen att övervaka dessa områden, är klassificerare inte avsedda att tillhandahålla organisationens enda sätt att övervaka eller adressera ett sådant språk eller sådana bilder. Din organisation, inte Microsoft, förblir ansvarig för alla beslut som rör övervakning, skanning och blockering av språk och bilder inom dessa områden, inklusive efterlevnad av lokal sekretess och andra tillämpliga lagar. Microsoft uppmuntrar konsultarbete med juridiska råd före distribution och användning.
 
->[!NOTE]
->Principer med klassificerare kontrollerar och utvärderar meddelanden med ordantalet 6 eller fler. Meddelanden som innehåller färre än sex ord utvärderas inte i principer med hjälp av klassificerare. För att identifiera och vidta åtgärder på kortare meddelanden som innehåller olämpligt innehåll rekommenderar vi att du tar med en egen nyckelordsordlista för övervakning av principer för kommunikationsefterlevnad för den här typen av innehåll.
+> [!NOTE]
+> Principer med klassificerare kontrollerar och utvärderar meddelanden med ordantalet 6 eller fler. Meddelanden som innehåller färre än sex ord utvärderas inte i principer med hjälp av klassificerare. För att identifiera och vidta åtgärder på kortare meddelanden som innehåller olämpligt innehåll rekommenderar vi att du tar med en egen nyckelordsordlista för övervakning av principer för kommunikationsefterlevnad för den här typen av innehåll.
 
 Mer information om utbildare i Microsoft 365 finns i [Komma igång med utbildare.](classifier-get-started-with.md)
 
@@ -218,8 +218,8 @@ Bilder från 50 kB till 4 MB i följande bildformat skannas och bearbetas:
 - .tiff (tag image-filformat)
 - .pdf (Portable Document Format)
 
->[!NOTE]
->Skanning och extrahering för inbäddade och .pdf bilder stöds för närvarande endast för e-postmeddelanden.
+> [!NOTE]
+> Skanning och extrahering för inbäddade och .pdf bilder stöds för närvarande endast för e-postmeddelanden.
 
 När du granskar väntande aviseringar för principer med OCR-aktiverat visas bilder som identifieras och matchas med principvillkor som underordnade objekt för associerade aviseringar. Du kan visa den ursprungliga bilden och utvärdera den identifierade texten i sitt sammanhang med det ursprungliga meddelandet. Det kan ta upp till 48 timmar innan identifierade bilder blir tillgängliga med aviseringar.
 
@@ -229,7 +229,7 @@ När du granskar väntande aviseringar för principer med OCR-aktiverat visas bi
 De villkor du väljer för principen gäller för kommunikation från både e-post- och tredjepartskällor i organisationen (t.ex. från Instant Bloomberg).
 
 I följande tabell beskrivs mer information om varje villkor.
-  
+
 |**Villkor**|**Så här använder du det här villkoret**|
 |:-----|:-----|
 | **Innehållet matchar någon av dessa klassificerare** | Gäller för principen när klassificerare inkluderas eller utesluts i ett meddelande. Vissa klassificerare är fördefinierade i klientorganisationen och anpassade klassificerare måste konfigureras separat innan de är tillgängliga för det här villkoret. Endast en klassificerare kan definieras som ett villkor i en princip. Mer information om hur du konfigurerar klassificerare finns i Läs mer om [utbildande klassificerare (förhandsversion).](classifier-learn-about.md) |
@@ -242,24 +242,26 @@ I följande tabell beskrivs mer information om varje villkor.
 | **Bifogad fil är någon av dessa filtyper**  <br><br> **Bifogad fil är ingen av de här filtyperna** | Som en övervakande kommunikation som omfattar eller utesluter specifika typer av bifogade filer anger du filnamnstilläggen (till exempel .exe eller .pdf). Om du vill inkludera eller exkludera flera filnamnstillägg anger du dem på separata rader. Bara ett tillägg till bifogade filer måste matcha för att principen ska tillämpas.|
 | **Meddelandestorleken är större än**  <br><br> **Meddelandestorleken inte är större än** | Om du vill granska meddelanden som baseras på en viss storlek använder du dessa villkor för att ange den största eller minsta storlek som ett meddelande kan vara innan det kan granskas. Om du till  exempel anger att meddelandestorleken är större än \> **1,0 MB** kan alla meddelanden som är 1,01 MB och större granskas. Du kan välja byte, kilobyte, megabyte eller gigabyte för det här villkoret.|
 | **Bifogad fil är större än**  <br><br> **Den bifogade filen är inte större än** | Om du vill granska meddelanden utifrån storleken på bifogade filer, anger du den största eller minsta storlek som en bifogad fil kan ha innan meddelandet och bifogade filer kan granskas. Om du till  exempel anger att Bifogad fil är större än 2,0 MB kommer alla meddelanden med bifogade \> filer 2,01 MB och mer att granskas. Du kan välja byte, kilobyte, megabyte eller gigabyte för det här villkoret.|
-   
+
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Matcha ord och fraser i e-postmeddelanden och bifogade filer
 <a name="Matchwords"> </a>
 
 Varje ord som du anger och avgränsar med kommatecken tillämpas separat (endast ett ord måste gälla för att principvillkoret ska gälla för e-postmeddelandet eller den bifogade filen). Vi kan till exempel använda **villkoret,** Meddelandet innehåller något av dessa ord , med nyckelorden "bank", "konfidentiell" och "insider-handel" avgränsade med ett komma (bank, konfidentiellt", "insider-handel"). Principen gäller för alla meddelanden som innehåller ordet "bankman", "konfidentiellt" eller frasen "insider-handel". Endast ett av dessa ord eller fraser måste finnas för att det här principvillkoret ska tillämpas. Orden i meddelandet eller den bifogade filen måste exakt matcha det du skriver.
 
->[!IMPORTANT]
->När du importerar en egen ordlistefil måste varje ord eller fras avgränsas med en vagnretur och på en separat rad. <br> Till exempel: <br><br>
->*bank* <br>
->*konfidentiellt* <br>
->*insider handel*
+> [!IMPORTANT]
+>
+> När du importerar en egen ordlistefil måste varje ord eller fras avgränsas med en vagnretur och på en separat rad. Ett exempel:
+>
+> *bank* <br>
+> *konfidentiellt* <br>
+> *insider handel*
 
 Om du vill söka i både e-postmeddelanden och bifogade [](create-a-keyword-dictionary.md) filer efter samma nyckelord skapar du en princip för skydd mot [dataförlust](create-test-tune-dlp-policy.md) med en egen nyckelordsordlista för termer som du vill söka igenom i meddelanden. I den här principkonfigurationen identifieras definierade nyckelord som visas i e-postmeddelandet ELLER i e-postmeddelandebilagat.  Användning av standardinställningarna för villkorsstyrda principer *(Meddelandet* innehåller något av dessa ord och Bifogad fil innehåller  något av dessa ord *)* för att identifiera termer i meddelanden och i bifogade filer kräver att villkoren finns i både meddelandet och den bifogade filen.
-  
+
 #### <a name="enter-multiple-conditions"></a>Ange flera villkor
 
 Om du anger flera villkor Microsoft 365 alla villkor tillsammans för att avgöra när kommunikationsefterlevnadsprincipen ska tillämpas på kommunikationsobjekt. När du anger flera villkor måste alla villkor vara uppfyllda för att principen ska tillämpas, såvida du inte anger ett undantag. Du behöver till exempel en princip som gäller om ett meddelande innehåller ordet "byta" och är större än 2 MB. Men om meddelandet även innehåller orden "Godkänd av Contoso ekonomi" ska policyn inte gälla. I det här exemplet skulle de tre villkoren definieras så här:
-  
+
 - **Meddelandet innehåller något av dessa ord** med nyckelordet "byta"
 - **Meddelandestorleken är större än**, med värdet 2 MB
 - **Meddelandet innehåller inget av dessa ord** med nyckelorden "Godkänd av Contoso ekonomiteam"
@@ -308,8 +310,8 @@ Om du vill skapa mer än ett enkelt textbaserat e-postmeddelande för aviseringa
 </html>
 ```
 
->[!NOTE]
->Implementering av HTML href-attribut i meddelandemallarna för kommunikationsefterlevnad stöder för närvarande endast enkla citattecken i stället för dubbla citattecken för URL-referenser.
+> [!NOTE]
+> Implementering av HTML href-attribut i meddelandemallarna för kommunikationsefterlevnad stöder för närvarande endast enkla citattecken i stället för dubbla citattecken för URL-referenser.
 
 ## <a name="filters"></a>Filter
 
@@ -344,8 +346,8 @@ För principer för kommunikationsefterlevnad är följande aviseringsprincipvä
 | Tröskelvärde | 4 aktiviteter |
 | Fönster | 60 minuter |
 
->[!Note]
->Tröskelvärdet för aviseringsprincip utlöser inställningar för aktiviteter har ett minimivärde på 3 eller högre för principer för kommunikationsefterlevnad.
+> [!NOTE]
+> Tröskelvärdet för aviseringsprincip utlöser inställningar för aktiviteter har ett minimivärde på 3 eller högre för principer för kommunikationsefterlevnad.
 
 Du kan ändra standardinställningarna för utlösare för antal aktiviteter, period för aktiviteter och  för specifika användare i aviseringsprinciper på sidan Aviseringsprinciper i Säkerhets- & efterlevnadscenter.
 
@@ -355,7 +357,7 @@ Om du vill ändra allvarlighetsnivån som tilldelats i en aviseringsprincip för
 
 1. Logga in [https://compliance.microsoft.com](https://compliance.microsoft.com) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
 
-2. I Microsoft 365 information om efterlevnadscentret går du till **Principer.**
+2. I Microsoft 365 Efterlevnadscenter går du till **Principer.**
 
 3. Välj **Office 365 avisering** på **sidan** Principer  för att öppna sidan Principer för aviseringar **Office 365 Säkerhets- & Efterlevnadscenter.**
 
@@ -373,17 +375,17 @@ Om du vill ändra allvarlighetsnivån som tilldelats i en aviseringsprincip för
 
 Kunder med Microsoft 365 prenumerationer som innehåller kommunikationsefterlevnad behöver inte ytterligare Power Automate licenser för att kunna använda den rekommenderade standardmallen för Power Automate kommunikationsefterlevnad. Standardmallen kan anpassas för att stödja din organisation och omfattar grundläggande scenarier för kommunikationsefterlevnad. Om du väljer att använda Premium Power Automate-funktionerna i dessa mallar kan du skapa en anpassad mall med hjälp av Microsoft 365-efterlevnadskopplingen eller använda Power Automate-mallar för andra efterlevnadsområden i Microsoft 365, men du kan behöva ytterligare Power Automate-licenser.
 
->[!IMPORTANT]
->Får du uppmaningar om ytterligare licensverifiering när du testar Power Automate flöden? Din organisation kanske inte har fått tjänstuppdateringar för den här förhandsversionen ännu. Uppdateringar distribueras och alla organisationer med Microsoft 365-prenumerationer som innehåller kommunikationsefterlevnad bör ha licensstöd för flöden som skapats från de rekommenderade Power Automate-mallarna senast den 30 oktober 2020.
+> [!IMPORTANT]
+> Får du uppmaningar om ytterligare licensverifiering när du testar Power Automate flöden? Din organisation kanske inte har fått tjänstuppdateringar för den här förhandsversionen ännu. Uppdateringar distribueras och alla organisationer med Microsoft 365-prenumerationer som innehåller kommunikationsefterlevnad bör ha licensstöd för flöden som skapats från de rekommenderade Power Automate-mallarna senast den 30 oktober 2020.
 
 ![Power Automate](../media/communication-compliance-power-automate.png)
 
 Följande mall Power Automate för kunder som stöder process automation för aviseringar om kommunikationsefterlevnad:
 
 - **Meddela chefen när en användare har en avisering** för kommunikationsefterlevnad: Vissa organisationer kan behöva få en omedelbar avisering om hantering när en användare har en avisering för kommunikationsefterlevnad. När det här flödet är konfigurerat och markerat skickas ett e-postmeddelande med följande information om alla aviseringar till chefen för ärendet:
-    - Tillämplig princip för aviseringen
-    - Datum/tid för aviseringen
-    - Aviseringens allvarlighetsnivå
+  - Tillämplig princip för aviseringen
+  - Datum/tid för aviseringen
+  - Aviseringens allvarlighetsnivå
 
 ### <a name="create-a-power-automate-flow"></a>Skapa ett Power Automate flöde
 
@@ -391,7 +393,7 @@ Om du vill Power Automate ett flöde från en rekommenderad standardmall använd
 
 Gör följande för att skapa en Power Automate flöde från en standardmall:
 
-1. Gå till Microsoft 365 Policyer för kommunikation och välj principen med den avisering du vill granska i säkerhets- och  >   efterlevnadscentret.
+1. I Microsoft 365 Efterlevnadscenter går du till Principer **för**  >  **kommunikationsefterlevnad** och väljer principen med den avisering du vill granska.
 2. I principen väljer du fliken **Väntande** och väljer en väntande avisering.
 3. Välj **Power Automate** i åtgärdsmenyn för aviseringar.
 4. På **Power Automate** väljer du en standardmall från de mallar för **kommunikationsefterlevnad som du kanske gillar** i avsnittet på sidan.
@@ -408,7 +410,7 @@ Som standard är Power Automate som skapats av en användare bara tillgängliga 
 Om du vill Power Automate ett kommunikationsflöde måste du vara medlem i minst en rollgrupp för kommunikationsefterlevnad.
 Gör följande för att dela ett Power Automate flöde:
 
-1. Gå till Microsoft 365 Policyer för kommunikation och välj principen med den avisering du vill granska i säkerhets- och  >   efterlevnadscentret.
+1. I Microsoft 365 Efterlevnadscenter går du till Principer **för**  >  **kommunikationsefterlevnad** och väljer principen med den avisering du vill granska.
 2. I principen väljer du fliken **Väntande** och väljer en väntande avisering.
 3. Välj **Power Automate** i åtgärdsmenyn för aviseringar.
 4. På sidan **Power Automate flöden** väljer du **fliken Mina flöden** **eller Teamflöden.**
@@ -422,7 +424,7 @@ Om du behöver redigera ett flöde använder du Power Automate **när** du arbet
 
 Gör följande för att redigera ett Power Automate flöde:
 
-1. Gå till Microsoft 365 Policyer för kommunikation och välj principen med den avisering du vill granska i säkerhets- och  >   efterlevnadscentret.
+1. I Microsoft 365 Efterlevnadscenter går du till Principer **för**  >  **kommunikationsefterlevnad** och väljer principen med den avisering du vill granska.
 2. I principen väljer du fliken **Väntande** och väljer en väntande avisering.
 3. Välj **Power Automate** i åtgärdsmenyn för aviseringar.
 4. På sidan **Power Automate flöde väljer** du flöde för att redigera. Välj **Redigera** på flödeskontrollmenyn.
@@ -435,7 +437,7 @@ Om du behöver ta bort ett flöde använder du Power Automate **när** du arbeta
 
 Gör följande för att ta bort ett Power Automate flöde:
 
-1. Gå till Microsoft 365 Policyer för kommunikation och välj principen med den avisering du vill granska i säkerhets- och  >   efterlevnadscentret.
+1. I Microsoft 365 Efterlevnadscenter går du till Principer **för**  >  **kommunikationsefterlevnad** och väljer principen med den avisering du vill granska.
 2. I principen väljer du fliken **Väntande** och väljer en väntande avisering.
 3. Välj **Power Automate** i åtgärdsmenyn för aviseringar.
 4. På sidan **Power Automate väljer** du flöde för att ta bort. Välj **Ta** bort på flödeskontrollmenyn.
@@ -466,7 +468,7 @@ Instrumentpanelen **Rapporter** innehåller följande rapportwidgetar och detalj
     - Objekt som väntar på att granskas
     - Användaren meddelas
     - Skapat ärende
-    
+
     Använd alternativet *Exportera* om du vill skapa .csv fil som innehåller rapportinformationen.
 - **Objekt och åtgärder per plats,** detaljerad rapport: Granska och exportera matchande objekt och åtgärdsåtgärder per Microsoft 365 plats. Innehåller information om hur plattformar för arbetsbelastning är kopplade till:
 
@@ -510,8 +512,8 @@ Instrumentpanelen **Rapporter** innehåller följande rapportwidgetar och detalj
 
 I vissa fall måste du informera regel- eller efterlevnadsgranskningar för att bevisa att du är över över användaraktiviteter och kommunikation. Den här informationen kan vara en sammanfattning av alla aktiviteter som är associerade med en definierad organisationspolicy eller när en princip för kommunikationsefterlevnad ändras. Principer för kommunikationsefterlevnad har inbyggda granskningshistorik för fullständig beredskap för interna eller externa granskningar. Detaljerade granskningshistoriker för varje åtgärd för att skapa, redigera och ta bort fångas upp av dina kommunikationsprinciper för att tillhandahålla bevis på övervakande procedurer.
 
->[!Important]
->Granskning måste vara aktiverad för organisationen innan händelser för kommunikationsefterlevnad registreras. Information om hur du aktiverar granskning [finns i Aktivera granskningsloggen](communication-compliance-configure.md#step-2-required-enable-the-audit-log). När aktiviteter utlöser händelser som fångas i Microsoft 365-granskningsloggen kan det ta upp till 48 timmar innan dessa händelser kan visas i principer för kommunikationsefterlevnad.
+> [!IMPORTANT]
+> Granskning måste vara aktiverad för organisationen innan händelser för kommunikationsefterlevnad registreras. Information om hur du aktiverar granskning [finns i Aktivera granskningsloggen](communication-compliance-configure.md#step-2-required-enable-the-audit-log). När aktiviteter utlöser händelser som fångas i Microsoft 365-granskningsloggen kan det ta upp till 48 timmar innan dessa händelser kan visas i principer för kommunikationsefterlevnad.
 
 Om du vill visa uppdateringsaktiviteter för kommunikationsefterlevnadsprincipen väljer du kontrollen Exportera principuppdateringar på huvudsidan för en princip.  Du måste vara global administratör *eller administratör för* *kommunikationsefterlevnad för att* kunna exportera uppdateringsaktiviteter. Den här åtgärden genererar en granskningsfil i .csv format som innehåller följande information:
 
@@ -548,7 +550,7 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Disco
 Det här exemplet returnerar aktiviteter som matchar dina aktuella principer för kommunikationsefterlevnad:
 
 ```PowerShell
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
 Matchningar av policyer för kommunikation lagras i en översättpostlåda för varje princip. I vissa fall kan du behöva kontrollera storleken på din överstående postlåda för en princip för att se till att du inte närmar dig den aktuella gränsen på 50 GB. Om postlådegränsen har nåtts fångas inte principmatchningar, och du måste skapa en ny princip (med samma inställningar) för att kunna fortsätta samla in matchningar för samma aktiviteter.
@@ -559,7 +561,7 @@ Så här kontrollerar du storleken på en överstående postlåda för en princi
 2. Kör följande kommando i PowerShell:
 
     ```PowerShell
-    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name) 
+    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name)
     {
        "<Name of your communication compliance policy>: " + $p.Name
        Get-MailboxStatistics $p.ReviewMailbox | ft ItemCount,TotalItemSize

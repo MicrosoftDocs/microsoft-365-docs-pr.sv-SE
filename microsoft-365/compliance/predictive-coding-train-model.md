@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: ef6d1cf23d6cca58f4226696bc63c1dea5816cc1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822615"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226221"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Utbilda en prediktiv kodningsmodell (förhandsversion)
 
@@ -29,11 +29,11 @@ Information om hur du granskar arbetsflödet för förutsägelsekodning finns [i
 
 ## <a name="before-you-train-a-model"></a>Innan du utbildar en modell
 
-- Under en utbildningsrunda kan du **ange** att objekten ska **vara relevanta** eller inte relevanta baserat på hur relevant innehållet i dokumentet är. Basera inte ditt beslut på värdena i metadatafälten. Om du till exempel vill skicka e Teams eller konversationer baserar du inte etikettbeslutet på meddelandedeltagarna. 
+- Under en utbildningsrunda kan du **ange** att objekten ska **vara relevanta** eller inte relevanta baserat på hur relevant innehållet i dokumentet är. Basera inte ditt beslut på värdena i metadatafälten. Om du till exempel vill skicka e Teams eller konversationer baserar du inte etikettbeslutet på meddelandedeltagarna.
 
 ## <a name="train-a-model-for-the-first-time"></a>Utbilda en modell för första gången
 
-1. I Microsoft 365, öppna ett ärende Advanced eDiscovery välj sedan fliken **Granska uppsättningar.**
+1. I Microsoft 365 Efterlevnadscenter öppnar du ett Advanced eDiscovery och väljer sedan **fliken Granska uppsättningar.**
 
 2. Öppna en granskningsuppsättning och klicka sedan **på Analys**  >  **Hantera prediktiv kodning (förhandsgranskning).**
 
@@ -63,10 +63,10 @@ När du har genomför den första utbildningsomgången startas ett jobb som gör
 
 - Modellen lär sig av dina etiketter och uppdateringar baserat på hur du har etiketterat 40 objekt i utbildningsuppsättningen för att göra den mer exakt.
 
-- Modellen bearbetar sedan varje objekt i hela granskningsuppsättningen och tilldelar ett prognosresultat mellan **0** (inte relevant) och **1** (relevant).  
+- Modellen bearbetar sedan varje objekt i hela granskningsuppsättningen och tilldelar ett prognosresultat mellan **0** (inte relevant) och **1** (relevant).
 
 - Modellen tilldelar ett förutsägelseresultat till de 10 objekten i kontrolluppsättningen som du har angett under utbildningsomgången. Modellen jämför förutsägelseresultatet för dessa 10 objekt med den faktiska etikett som du har tilldelat till objektet under utbildningsomgången. Utifrån denna jämförelse identifierar modellen följande klassificering (kallas kontrolluppsättningens förväxlingsmatris) för att bedöma modellens prognosprestanda:
-  
+
   |          |Modell förutsägelser om att objekt är relevanta |Modell förutsägelser om att objekt inte är relevanta |
   |:---------|:---------|:---------|
   |**Granskaren ser objekt som relevant**| Sant positivt| Falskt positivt resultat |

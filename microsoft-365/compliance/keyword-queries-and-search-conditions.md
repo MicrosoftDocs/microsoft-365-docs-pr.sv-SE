@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Läs mer om e-post- och filegenskaper som du kan söka efter med hjälp av eDiscovery-sökverktygen i Microsoft 365.
-ms.openlocfilehash: 390477012c6a2a57c5e305641ba5b79ff10f4ea7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Läs mer om e-post- och dokumentegenskaper som du kan söka efter med hjälp av eDiscovery-sökverktygen i Microsoft 365.
+ms.openlocfilehash: bb87125b8cb4091121c6a389bcba8d69be7cc71e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538441"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226365"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Nyckelordsfrågor och sökvillkor för eDiscovery
 
-I det här avsnittet beskrivs de e-post- och dokumentegenskaper som du kan söka efter i e-postobjekt och Microsoft Teams-chattkonversationer i Exchange Online samt dokument som lagras på SharePoint- och OneDrive för företag-webbplatser med eDiscovery-sökverktygen i efterlevnadscentret för Microsoft 365. Det omfattar innehållssökning, bas-eDiscovery och Advanced eDiscovery (eDiscovery-sökningar i Advanced eDiscovery kallas *samlingar).* Du kan också använda **\* cmdletarna -ComplianceSearch** i Security & Compliance Center PowerShell för att söka efter de här egenskaperna. I det här avsnittet beskrivs också:
+I det här avsnittet beskrivs de e-post- och dokumentegenskaper som du kan söka efter i e-postobjekt och Microsoft Teams-chattkonversationer i Exchange Online samt dokument som lagras på SharePoint- och OneDrive för företag-webbplatser med eDiscovery-sökverktygen i Microsoft 365 Efterlevnadscenter. Det omfattar innehållssökning, bas-eDiscovery och Advanced eDiscovery (eDiscovery-sökningar i Advanced eDiscovery kallas *samlingar).* Du kan också använda **\* cmdletarna -ComplianceSearch** i Security & Compliance Center PowerShell för att söka efter de här egenskaperna. I det här avsnittet beskrivs också:
   
 - Använd booleska sökoperatorer, sökvillkor och andra sökfrågetekniker för att förfina sökresultaten.
 
@@ -48,11 +48,11 @@ Stegvisa instruktioner för hur du skapar olika eDiscovery-sökningar finns i:
 - [Skapa ett utkast i Advanced eDiscovery](create-draft-collection.md)
 
 > [!NOTE]
-> eDiscovery-sökningar i efterlevnadscentret för Microsoft 365 och motsvarande **\* -ComplianceSearch-cmdlets** i Security & Compliance Center PowerShell använder Keyword Query Language (KQL). Mer detaljerad information finns i [Syntaxreferens för nyckelordsfrågaspråk.](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+> eDiscovery-sökningar i Microsoft 365 Efterlevnadscenter och motsvarande **\* -ComplianceSearch-cmdlets** i Security & Compliance Center PowerShell använder Keyword Query Language (KQL). Mer detaljerad information finns i [Syntaxreferens för nyckelordsfrågaspråk.](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
   
 ## <a name="searchable-email-properties"></a>Sökbara e-postegenskaper
 
-I följande tabell visas e-postegenskaper som kan sökas igenom med hjälp av eDiscovery-sökverktygen i efterlevnadscentret för Microsoft 365 eller med hjälp av **New-ComplianceSearch** eller **cmdleten Set-ComplianceSearch.** Tabellen innehåller ett exempel på  _syntaxen property:value_ för varje egenskap och en beskrivning av sökresultaten som returneras av exemplen. Du kan skriva dessa  `property:value` par i rutan nyckelord för en eDiscovery-sökning. 
+I följande tabell visas egenskaper för e-postmeddelanden som kan sökas med hjälp av eDiscovery-sökverktygen i Microsoft 365 Efterlevnadscenter eller med **new-compliancesearch** eller **cmdleten Set-ComplianceSearch.** Tabellen innehåller ett exempel på  _syntaxen property:value_ för varje egenskap och en beskrivning av sökresultaten som returneras av exemplen. Du kan skriva dessa  `property:value` par i rutan nyckelord för en eDiscovery-sökning. 
 
 > [!NOTE]
 > När du söker efter e-postegenskaper går det inte att söka efter objekt där den angivna egenskapen är tom eller tom. Om du till exempel använder ämnesparet **property:value:""** när du söker efter e-postmeddelanden med en tom ämnesrad returneras noll resultat.  Det här gäller även när du söker i egenskaper för webbplats och kontakt.
@@ -61,7 +61,7 @@ I följande tabell visas e-postegenskaper som kan sökas igenom med hjälp av eD
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|Namnen på filerna som bifogats i ett e-postmeddelande.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |Meddelanden som har en bifogad fil med namnet annualreport.ppt. I det andra exemplet returnerar jokertecknet ( * ) meddelanden med ordet "årlig" i filnamnet på en bifogad fil. Det tredje exemplet returnerar alla bifogade filer med pptx-filnamnstillägget.|
 |Hemlig kopia|Fältet Hemlig kopia i ett e-postmeddelande. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|Alla exempel returnerar meddelanden med Pilar Pinilla som finns i fältet Hemlig kopia.|
-|Kategori| De kategorier som ska sökas. Kategorier kan definieras av användare med hjälp av Outlook eller Outlook på webben (hette tidigare Outlook Web App). Möjliga värden är:  <br/><br/>  blå  <br/>  grön  <br/>  orange  <br/>  lila  <br/>  röd  <br/>  gul|`category:"Red Category"`|Meddelanden som har tilldelats den röda kategorin i källpostlådorna.|
+|Kategori| De kategorier som ska sökas. Kategorier kan definieras av användare med hjälp av Outlook eller Outlook på webben (tidigare kallat Outlook Web App). Möjliga värden är:  <br/><br/>  blå  <br/>  grön  <br/>  orange  <br/>  lila  <br/>  röd  <br/>  gul|`category:"Red Category"`|Meddelanden som har tilldelats den röda kategorin i källpostlådorna.|
 |Kopia|Fältet Kopia i ett e-postmeddelande. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|I båda exemplen har meddelanden där Pilar Pinilla angetts i fältet Kopia.|
 |Folderid|Mapp-ID (GUID) för en viss postlådemapp. Om du använder den här egenskapen ska du se till att söka i postlådan som den angivna mappen finns i. Endast den angivna mappen genomsöks. Undermappar i mappen genomsöks inte. Om du vill söka i undermappar måste du använda egenskapen Folderid för den undermapp du vill söka i.  <br/> Mer information om hur du söker efter egenskapen Folderid och använder ett skript för att hämta mapp-ID:na för en viss postlåda finns i Använda innehållssökning [för riktade samlingar.](use-content-search-for-targeted-collections.md)|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|I det första exemplet returneras alla objekt i den angivna postlådemappen. Det andra exemplet returnerar alla objekt i den angivna postlådemappen som har skickats eller tagits emot av garthf@contoso.com.|
 |Från|Avsändaren av ett e-postmeddelande. <sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|Meddelanden som skickas av den angivna användaren eller som skickas från en angiven domän.|
@@ -149,9 +149,9 @@ I följande tabell visas de kontaktegenskaper som är indexerade och som du kan 
 
 ## <a name="searchable-sensitive-data-types"></a>Sökbara typer av känsliga data
 
-Du kan använda sökverktygen för eDiscovery i kompatibilitetscentret för Microsoft 365 för att söka efter känsliga data, till exempel kreditkortsnummer och personnummer, som lagras i dokument på SharePoint och OneDrive för företag webbplatser. Det kan du göra genom att använda `SensitiveType` egenskapen och namnet (eller ID) för en typ av känslig information i en nyckelordsfråga. Frågan returnerar till `SensitiveType:"Credit Card Number"` exempel dokument som innehåller ett kreditkortsnummer. Frågan  `SensitiveType:"U.S. Social Security Number (SSN)"` returnerar dokument som innehåller ett amerikanskt personnummer.
+Du kan använda eDiscovery-sökverktygen i Microsoft 365 Efterlevnadscenter för att söka efter känsliga data, till exempel kreditkortsnummer eller personnummer, som är lagrade i dokument på SharePoint och OneDrive för företag webbplatser. Det kan du göra genom att använda `SensitiveType` egenskapen och namnet (eller ID) för en typ av känslig information i en nyckelordsfråga. Frågan returnerar till `SensitiveType:"Credit Card Number"` exempel dokument som innehåller ett kreditkortsnummer. Frågan  `SensitiveType:"U.S. Social Security Number (SSN)"` returnerar dokument som innehåller ett amerikanskt personnummer.
 
-Om du vill visa en lista över de typer av känslig information som du kan söka efter går du till **Dataklassificeringstyperna** Känslig information i \>  Microsoft 365 kompatibilitetscenter. Du kan också använda cmdleten **Get-DlpSensitiveInformationType** i Security & Compliance Center PowerShell för att visa en lista över typer av känslig information.
+En lista med de typer av känslig information som du kan söka efter finns i **Dataklassificeringarna** Typer av \> **känslig information** i Microsoft 365 Efterlevnadscenter. Du kan också använda cmdleten **Get-DlpSensitiveInformationType** i Security & Compliance Center PowerShell för att visa en lista över typer av känslig information.
   
 Mer information om hur du skapar frågor med egenskapen finns i Skapa en fråga `SensitiveType` för att hitta känsliga data som [lagras på webbplatser.](form-a-query-to-find-sensitive-data-stored-on-sites.md)
 
@@ -189,7 +189,7 @@ Booleska sökoperatorer som **AND,** **OR** och **NOT** hjälper dig att definie
 |\>=|property \> =value|Anger att egenskapen som genomsöks är större än eller lika med ett visst värde. <sup>1</sup>|
 |..|egenskap:värde1.. värde2|Anger att den egenskap som genomsöks är större än eller lika med värde1 och mindre än eller lika med värde2. <sup>1</sup>|
 |"  "|"rättvist värde"  <br/> subject:"Kvartalsredovisning"|Använd dubbla citattecken (" ") om du vill söka efter en exakt fras eller term i nyckelord  `property:value` och sökfrågor.|
-|\*|katt\*  <br/> ämne:ange\*|Prefixsökningar (kallas *även prefixmatchning)* där ett jokertecken ( * ) placeras i slutet av ett ord i nyckelord `property:value` eller frågor. I prefixsökningar returnerar sökningen resultat med termer som innehåller ordet följt av noll eller fler tecken. Exempelvis returneras dokument som innehåller ordet "set", "setup" och "setting" (och andra ord som börjar med `title:set*` "set") i dokumenttiteln.  <br/><br/> **Obs!** Du kan endast använda prefixsökningar. till exempel **cat _ eller \* *_* set \* *_. Suffixsökningar (_* \* katt** ), infix-sökningar (**c \* t**) och sökning efter understrängar **\* (katt) \*** stöds inte.<br/><br/>Lägg också till en punkt ( \. ) till ett prefix genom att ändra resultatet som returneras. Det beror på att en punkt behandlas som ett stoppord. Om du till exempel söker **efter katt _ och söker efter \* *_* \* katt.** returneras olika resultat. Vi rekommenderar att du inte använder en punkt i en prefixsökning. |
+|\*|katt\*  <br/> ämne:ange\*|Prefixsökningar (kallas *även prefixmatchning)* där ett jokertecken ( * ) placeras i slutet av ett ord i nyckelord `property:value` eller frågor. I prefixsökningar returnerar sökningen resultat med termer som innehåller ordet följt av noll eller fler tecken. Exempelvis returneras dokument som innehåller ordet "set", "setup" och "setting" (och andra ord som börjar med `title:set*` "set") i dokumenttiteln.  <br/><br/> **Obs!** Du kan endast använda prefixsökningar. till exempel **cat _ eller \* *_* set \* *_. Suffixsökningar (_* \* katt**), infix-sökningar (**c \* t**) och sökning efter understrängar **\* (katt) \*** stöds inte.<br/><br/>Lägg också till en punkt ( \. ) till ett prefix genom att ändra resultatet som returneras. Det beror på att en punkt behandlas som ett stoppord. Om du till exempel söker **efter katt _ och söker efter \* *_* \* katt.** returneras olika resultat. Vi rekommenderar att du inte använder en punkt i en prefixsökning. |
 |(  )|(rättvist ELLER kostnadsfritt) OCH (från:contoso.com)  <br/> (IPO ELLER initial) AND (aktie ELLER aktier)  <br/> (kvartalsvis ekonomi)|Parenteser grupperar booleska fraser,  `property:value` objekt och nyckelord. Returnerar exempelvis  `(quarterly financials)` poster som innehåller orden kvartalsvisa och finansiella poster.|
 |||||
    
@@ -252,7 +252,7 @@ Skapa ett villkor med dokumentegenskaper när du söker efter dokument på Share
 |Title|Dokumentets rubrik. Titelegenskapen är metadata som anges i Office dokument. Den är inte samma som filnamnet i dokumentet.|
 |Skapades|Datumet då ett dokument skapades.|
 |Senast ändrad|Datumet då ett dokument senast ändrades.|
-|Filtyp|Filnamnstillägget för en fil. Till exempel docx, ett, pptx eller xlsx. Det här är samma egenskap som egenskapen FileExtension-webbplats.|
+|Filtyp|Filnamnstillägget för en fil. Till exempel docx, ett, pptx eller xlsx. Det här är samma egenskap som egenskapen FileExtension-webbplats. <br/><br/> **Obs!** Om du använder villkoret Filtyp med  operatorn Lika med eller Lika med någon av operatorerna i en sökfråga kan du inte använda prefixsökning (genom att inkludera jokertecknet ( * ) i slutet av filtypen) för att returnera alla versioner av en filtyp.  Om du gör det ignoreras jokertecknet. Om du till exempel tar med `Equals any of doc*` villkoret returneras endast filer med `.doc` filnamnstillägget. Filer med ett tillägg `.docx` till returneras inte. För att returnera alla versioner av en filtyp använde du *egenskap:värde-par* i en nyckelordsfråga. till exempel `filetype:doc*` .|
 |||
   
 ### <a name="operators-used-with-conditions"></a>Operatorer som används med villkor
@@ -283,21 +283,21 @@ När du lägger till ett villkor kan du välja en operator som är relevant för
 
 Tänk på följande när du använder sökvillkor.
   
-- Ett villkor är logiskt kopplat till nyckelordsfrågan (anges i nyckelordsrutan) av **operatorn OCH.** Det innebär att objekt måste uppfylla både nyckelordsfrågan och villkoret som ska tas med i resultatet. Det är så du begränsar resultatet med hjälp av villkor. 
-    
-- Om du lägger till två eller flera unika villkor i en sökfråga (villkor som anger olika egenskaper) är dessa villkor logiskt kopplade av **operatorn OCH.** Det innebär att endast objekt som uppfyller alla villkor (förutom en nyckelordsfråga) returneras. 
-    
+- Ett villkor är logiskt kopplat till nyckelordsfrågan (anges i nyckelordsrutan) av **operatorn OCH.** Det innebär att objekt måste uppfylla både nyckelordsfrågan och villkoret som ska tas med i resultatet. Det är så du begränsar resultatet med hjälp av villkor.
+  
+- Om du lägger till två eller flera unika villkor i en sökfråga (villkor som anger olika egenskaper) är dessa villkor logiskt kopplade av **operatorn OCH.** Det innebär att endast objekt som uppfyller alla villkor (förutom en nyckelordsfråga) returneras.
+  
 - Om du lägger till fler än ett villkor för samma egenskap, är dessa villkor logiskt sammankopplade av **operatorn** ELLER. Det innebär att objekt som uppfyller nyckelordsfrågan och något av villkoren returneras. Grupper av samma villkor är därför sammankopplade med varandra av operatorn **ELLER** och sedan är uppsättningar av unika villkor sammankopplade av **OPERATORN.** 
-    
+  
 - Om du lägger till flera värden (avgränsade med semikolon eller semikolon) i ett enda villkor kopplas dessa värden av **operatorn** ELLER. Det innebär att element returneras om de innehåller något av de angivna värdena för egenskapen i villkoret. 
-    
-- Sökfrågan som skapas med hjälp av rutan nyckelord  och villkor visas på söksidan, i informationsfönstret för den valda sökningen. I en fråga anger allt till höger om  `(c:c)` notationen villkor som läggs till i frågan. 
-    
-- Villkor lägger endast till egenskaper i sökfrågan. operatorerna inte. Det är därför frågan som visas i detaljfönstret inte visar operatorer till höger om  `(c:c)` notationen. KQL lägger till de logiska operatorerna (enligt reglerna som beskrivs tidigare) när frågan körs. 
-    
+  
+- Sökfrågan som skapas med hjälp av rutan nyckelord  och villkor visas på söksidan, i informationsfönstret för den valda sökningen. I en fråga anger allt till höger om  `(c:c)` notationen villkor som läggs till i frågan.
+  
+- Villkor lägger endast till egenskaper i sökfrågan. operatorerna inte. Det är därför frågan som visas i detaljfönstret inte visar operatorer till höger om  `(c:c)` notationen. KQL lägger till de logiska operatorerna (enligt reglerna som beskrivs tidigare) när frågan körs.
+  
 - Du kan använda dra- och släppkontrollen för att skapa ordningsföljd. Klicka på kontrollen för ett villkor och flytta den uppåt eller nedåt.
-    
-- Som tidigare förklarats kan du med vissa villkorsegenskaper skriva flera värden (avgränsade med semikolon). Varje värde kopplas logiskt av **operatorn ELLER** och resulterar i `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)` frågan. I följande bild visas ett exempel på ett villkor med flera värden.
+  
+- Som tidigare förklarats kan du med vissa villkorsegenskaper skriva flera värden (avgränsade med semikolon). Varje värde kopplas logiskt av **operatorn ELLER** och resulterar i `(filetype=docx) OR (filetype=pptx) OR (filetype=xlsx)` frågan. I följande bild visas ett exempel på ett villkor med flera värden.
 
     ![Ett villkor med flera värden](../media/SearchConditions1.png)
   

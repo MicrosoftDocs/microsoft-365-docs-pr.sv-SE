@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1b9bef180fed9c3afa3b3d8d2319a1fa0260ed14
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: bd3904b480f757c1cf684e15afaae9c19559e1ea
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "52161795"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227405"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Fallstudie – Contoso konfigurerar snabbt en anstötlig språkprincip för Microsoft Teams, Exchange och Yammer kommunikationer
 
@@ -55,9 +55,9 @@ Det första steget är att bekräfta att Contosos licens för Microsoft 365 komm
 - Microsoft 365 E5 prenumeration (betald version eller utvärderingsversion)
 - Microsoft 365 E3-prenumeration + Microsoft 365 E5 Compliance-tillägget
 - Microsoft 365 E3 -prenumerationen + Microsoft 365 E5-tillägget Insider Risk Management
-- Microsoft 365 A5-prenumeration (betald eller utvärderingsversion)
-- Microsoft 365 A3-prenumeration + Microsoft 365 A5-tillägget efterlevnad
-- Microsoft 365 En 3-prenumeration + Microsoft 365 A5 Insider Risk Management-tillägget
+- Microsoft 365 A5 prenumeration (betald version eller utvärderingsversion)
+- Microsoft 365 A3 prenumeration + Microsoft 365 A5 tillägget efterlevnad
+- Microsoft 365 A3 -prenumerationen + Microsoft 365 A5-tillägget Insider riskhantering
 - Microsoft 365 G5-prenumeration (betald eller utvärderingsversion)
 - Microsoft 365 G5-prenumeration + Microsoft 365 G5-tillägget för efterlevnad
 - Microsoft 365 G5-prenumeration + Microsoft 365 G5 Insider Risk Management-tillägget
@@ -66,12 +66,12 @@ Det första steget är att bekräfta att Contosos licens för Microsoft 365 komm
 
 De måste också bekräfta att användare som ingår i principer för kommunikationsefterlevnad måste tilldelas en av licenserna ovan.
 
->[!IMPORTANT]
->Office 365 Advanced Compliance säljs inte längre som en fristående prenumeration. När aktuella prenumerationer går ut bör kunderna gå över till en av prenumerationerna ovan, som innehåller samma eller ytterligare efterlevnadsfunktioner.
+> [!IMPORTANT]
+> Office 365 Advanced Compliance säljs inte längre som en fristående prenumeration. När aktuella prenumerationer går ut bör kunderna gå över till en av prenumerationerna ovan, som innehåller samma eller ytterligare efterlevnadsfunktioner.
 
 Contoso IT-administratörer kontrollerar licenssupporten för Contoso på följande sätt:
 
-1. IT-administratörer loggar in **Microsoft 365 administrationscenter** [(och https://admin.microsoft.com)](https://admin.microsoft.com) går till **faktureringslicenser Microsoft 365**  >    >  **administrationscentret.**
+1. IT-administratörer loggar in på **Administrationscenter för Microsoft 365** <https://admin.microsoft.com> och navigerar till **Administrationscenter för Microsoft 365**  >  **faktureringslicenser.**  >  
 
 2. Här bekräftar de att de har ett av [licensalternativen som](communication-compliance-configure.md#subscriptions-and-licensing) inkluderar stöd för kommunikationsefterlevnad.
 
@@ -79,7 +79,7 @@ Contoso IT-administratörer kontrollerar licenssupporten för Contoso på följa
 
 ### <a name="permissions-for-communication-compliance"></a>Behörigheter för kommunikationsefterlevnad
 
-Det finns fem rollgrupper som används för att konfigurera behörigheter för att hantera funktioner för kommunikationsefterlevnad. För att **göra Kommunikationsefterlevnad** tillgängligt som ett menyalternativ i Microsoft 365 efterlevnadscenter och för att fortsätta med de här konfigurationsstegen, tilldelas Contoso-administratörer rollen *Kommunikationsefterlevnadsadministratör.*
+Det finns fem rollgrupper som används för att konfigurera behörigheter för att hantera funktioner för kommunikationsefterlevnad. För att **göra Kommunikationsefterlevnad** tillgängligt som ett menyalternativ i Microsoft 365 Efterlevnadscenter och för att fortsätta med de här konfigurationsstegen, tilldelas Contoso-administratörer rollen *Kommunikationsefterlevnadsadministratör.*
 
 Contoso bestämmer sig  för att använda rollgruppen Kommunikationsefterlevnad som tilldelar alla administratörer för kommunikationsefterlevnad, analytiker, licenser och läsare till gruppen. Det gör det enklare för Contoso att komma igång snabbt och passar bäst för krav på efterlevnadshantering.
 
@@ -104,9 +104,9 @@ Contoso bestämmer sig  för att använda rollgruppen Kommunikationsefterlevnad 
 När contoso IT-administratörer och efterlevnadsspecialister har konfigurerat behörigheterna för kommunikationsefterlevnad, kan de få åtkomst till kommunikationsefterlevnadslösningen i Microsoft 365. Contoso IT-administratörer och efterlevnadsspecialister har flera olika sätt att komma åt kommunikationsefterlevnad och komma igång med att skapa en ny princip:
 
 - Börja direkt från lösningen för kommunikationsefterlevnad
-- Från och med Microsoft 365 säkerhets- och efterlevnadscenter
+- Startar från Microsoft 365 Efterlevnadscenter
 - Från och med Microsoft 365-lösningskatalogen
-- Börja från Microsoft 365 administrationscenter
+- Startar från Administrationscenter för Microsoft 365
 
 ### <a name="starting-directly-from-the-communication-compliance-solution"></a>Börja direkt från lösningen för kommunikationsefterlevnad
 
@@ -114,29 +114,29 @@ Det snabbaste sättet att komma åt lösningen är att logga in direkt till **l�
 
 ![Översikt över kommunikationsefterlevnad](../media/communication-compliance-case-overview.png)
 
-### <a name="starting-from-the-microsoft-365-compliance-center"></a>Från och med Microsoft 365 säkerhets- och efterlevnadscenter
+### <a name="starting-from-the-microsoft-365-compliance-center"></a>Startar från Microsoft 365 Efterlevnadscenter
 
-Ett annat enkelt sätt för Contosos IT-administratörer och efterlevnadsspecialister att få åtkomst till kommunikationsefterlevnadslösningen är att logga in direkt Microsoft 365 **efterlevnadscenter** [ https://compliance.microsoft.com) (.](https://compliance.microsoft.com) När du har loggat in behöver användarna välja Visa **all** kontroll för att visa alla efterlevnadslösningar och sedan välja lösningen för **kommunikationsefterlevnad** för att komma igång.
+Ett annat enkelt sätt för Contosos IT-administratörer och efterlevnadsspecialister att få åtkomst till kommunikationsefterlevnadslösningen är att logga in direkt till **Microsoft 365 Efterlevnadscenter** [( https://compliance.microsoft.com)](https://compliance.microsoft.com). När du har loggat in behöver användarna välja Visa **all** kontroll för att visa alla efterlevnadslösningar och sedan välja lösningen för **kommunikationsefterlevnad** för att komma igång.
 
 ![Efterlevnadscenter](../media/communication-compliance-case-center.png)
 
 ### <a name="starting-from-the-microsoft-365-solution-catalog"></a>Från och med Microsoft 365-lösningskatalogen
 
-Contoso IT-administratörer och efterlevnadsspecialister kan också välja att få åtkomst till lösningen för kommunikationsefterlevnad genom att välja Microsoft 365 lösningslösningskatalogen. Genom att **välja Katalog** **i** avsnittet Lösningar i det vänstra navigeringsfältet i **Microsoft 365 efterlevnadscenter** kan de öppna lösningskatalogen med Microsoft 365 alla efterlevnadslösningar. Contoso **IT-administratörer kan välja** Kommunikationsefterlevnad för att komma igång genom att rulla ned till avsnittet för Insider-riskhantering. Contoso-IT-administratörer bestämmer sig också för att använda kontrollen Visa i navigering för att fästa lösningen för kommunikationsefterlevnad i det vänstra navigeringsfönstret för snabbare åtkomst när de loggar in i framtiden.
+Contoso IT-administratörer och efterlevnadsspecialister kan också välja att få åtkomst till lösningen för kommunikationsefterlevnad genom att välja Microsoft 365 lösningslösningskatalogen. Genom att **välja Katalog** **i** avsnittet Lösningar i det vänstra **navigeringsfältet i Microsoft 365 Efterlevnadscenter** kan de öppna lösningskatalogen med alla Microsoft 365 efterlevnadslösningar. Contoso **IT-administratörer kan välja** Kommunikationsefterlevnad för att komma igång genom att rulla ned till avsnittet för Insider-riskhantering. Contoso-IT-administratörer bestämmer sig också för att använda kontrollen Visa i navigering för att fästa lösningen för kommunikationsefterlevnad i det vänstra navigeringsfönstret för snabbare åtkomst när de loggar in i framtiden.
 
 ![Lösningskatalog](../media/communication-compliance-case-solution.png)
 
-### <a name="starting-from-the-microsoft-365-admin-center"></a>Börja från Microsoft 365 administrationscenter
+### <a name="starting-from-the-microsoft-365-admin-center"></a>Startar från Administrationscenter för Microsoft 365
 
-För att komma åt kommunikationsefterlevnad när contoso IT-administratörer och efterlevnadsspecialister börjar från administrationscentret i Microsoft 365 loggar Contoso IT-administratörer och efterlevnadsspecialister in på administrationscentret för Microsoft 365 [( https://admin.microsoft.com)](https://admin.microsoft.com) och navigerar till efterlevnad **i administrationscentret för Microsoft 365).**  >  
+För att komma åt kommunikationsefterlevnad när contoso IT-administratörer och efterlevnadsspecialister börjar på Administrationscenter för Microsoft 365 loggar Contoso IT-administratörer och efterlevnadsspecialister in på Administrationscenter för Microsoft 365 [ https://admin.microsoft.com) (](https://admin.microsoft.com) och navigerar till **Administrationscenter för Microsoft 365**  >  **efterlevnad.**
 
 ![Länk till kommunikationsefterlevnad](../media/communication-compliance-case-compliance-link.png)
 
-Med den här **åtgärden Office 365** säkerhets- och efterlevnadscentret, och de måste välja länken till efterlevnadscentret för **Microsoft 365** som finns i banderollen högst upp på sidan.
+Med den här **åtgärden Office 365** säkerhets- och efterlevnadscentret, och de måste välja länken till Microsoft 365 Efterlevnadscenter som finns i **banderollen** högst upp på sidan.
 
 ![Office 365 säkerhets- och efterlevnadscenter](../media/communication-compliance-case-scc.png)
 
-I kompatibilitetscentret **för Microsoft 365 väljer** Contoso  IT-administratörer Visa alla för att visa en fullständig lista över efterlevnadslösningar.
+I listan **Microsoft 365 Efterlevnadscenter**, Contoso IT-administratörer, väljer du **Visa alla** för att visa en fullständig lista över efterlevnadslösningar.
 
 ![Meny för kommunikationsefterlevnad](../media/communication-compliance-case-show-all.png)
 
@@ -166,7 +166,7 @@ Contosos efterlevnadsspecialister vill lägga till alla användare i kommunikati
 
 De måste skapa en ny grupp för att ta med alla Contoso-användare, så de gör följande:
 
-1. Contoso IT-administratörer IT-administratörer loggar in **Microsoft 365 administrationscentret** [(och https://admin.microsoft.com)](https://admin.microsoft.com) **navigerar Microsoft 365 grupper i**  >    >  **administrationscentret Grupper.**
+1. Contoso IT-administratörer IT-administratörer loggar in **på Administrationscenter för Microsoft 365** [ https://admin.microsoft.com) (](https://admin.microsoft.com) och navigerar till **Administrationscenter för Microsoft 365**  >  **Groups**  >  **Groups**.
 2. De väljer **Lägg till en grupp** och slutför guiden för att skapa en Microsoft 365 *grupp* eller *distributionsgrupp.*
 
     ![Grupper](../media/communication-compliance-case-all-employees.png)
@@ -179,7 +179,7 @@ De måste skapa en ny grupp för att ta med alla Contoso-användare, så de gör
 
 När alla krav har slutförts är IT-administratörerna och efterlevnadsspecialisterna för Contoso redo att konfigurera principen för kommunikationsefterlevnad för att övervaka för anstötligt språk. Med den nya stötande språkprincipmallen är det enkelt och snabbt att konfigurera den här principen.
 
-1. Contosos IT-administratörer och efterlevnadsspecialister loggar in på **Microsoft 365 efterlevnadscenter** och väljer **Kommunikationsefterlevnad** i det vänstra navigeringsfönstret. Med den här åtgärden öppnas **instrumentpanelen** Översikt som har snabblänkar för policymallar för kommunikationsefterlevnad. De väljer mallen **Övervaka för anstötligt** språk genom att **välja Kom igång** för mallen.
+1. Contosos IT-administratörer och efterlevnadsspecialister loggar in **i Microsoft 365 Efterlevnadscenter** och väljer **Kommunikationsefterlevnad** i det vänstra navigeringsfönstret. Med den här åtgärden öppnas **instrumentpanelen** Översikt som har snabblänkar för policymallar för kommunikationsefterlevnad. De väljer mallen **Övervaka för anstötligt** språk genom att **välja Kom igång** för mallen.
 
     ![Anstötlig språkmall för kommunikationsefterlevnad](../media/communication-compliance-case-template.png)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Läs om hur du skapar anpassade typer av känslig information med Exact Data Match-baserad klassificering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05d5889ba690bdf61fd51044b3c059f1476342af
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: e8f6c075d706da46d7163705f6aa9d0ca6cad1a2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964662"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227133"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Skapa anpassade typer av känslig information med Exact Data Match-baserad klassificering
 
@@ -385,15 +385,15 @@ Om du inte vill exponera en fil med känsliga data kan du hasha den på en dator
 - ett arbets- eller skolkonto för Microsoft 365 som läggs till i säkerhetsgruppen **EDM\_DataUploaders**
 - en dator med Windows 10 eller Windows Server 2016 med .NET version 4.6.2 för att köra EDMUploadAgent
 - en katalog på uppladdningsdatorn för:
-    -  EDMUploadAgent
-    - Din fil med känsligt objekt .csv .tsv-format, **PatientRecords.csv** i våra exempel
-    -  och hash- och saltutdatafilerna
-    - namnet för datalagret från filen **edm.xml**, `PatientRecords` i vårt exempel
+  - EDMUploadAgent
+  - Din fil med känsligt objekt .csv .tsv-format, **PatientRecords.csv** i våra exempel
+  - Hash-utdata och saltfiler
+  - namnet för datalagret från filen **edm.xml**, `PatientRecords` i vårt exempel
 - Om du använder [guiden för Exact Data Match-schema och typ av känslig information](sit-edm-wizard.md) ***måste*** du ladda ned den
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Konfigurera säkerhetsgruppen och användarkontot
 
-1. Gå till administrationscentret som global administratör med lämplig [länk för din prenumeration](#portal-links-for-your-subscription) och [skapa en säkerhetsgrupp](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) med namnet **EDM\_DataUploaders**.
+1. Gå till administrationscentret som global administratör med lämplig [länk för din prenumeration](#portal-links-for-your-subscription) och [skapa en säkerhetsgrupp](/office365/admin/email/create-edit-or-delete-a-security-group) med namnet **EDM\_DataUploaders**.
 
 2. Lägg till en eller flera användare i säkerhetsgruppen **EDM\_DataUploaders**. (De här användarna kommer att hantera databasen med känslig information.)
 
@@ -401,18 +401,17 @@ Om du inte vill exponera en fil med känsliga data kan du hasha den på en dator
 
 Den här datorn måste ha direkt åtkomst till din Microsoft 365-klientorganisation.
 
->[!NOTE]
+> [!NOTE]
+>
 > Innan du börjar försäkrar du dig om att du är medlem i säkerhetsgruppen **EDM\_DataUploaders**.
-
-> [!TIP]
+>
 > Om du vill kan du köra en verifiering mot .csv- eller .tsv-filen innan du laddar upp den genom att köra:
 >
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+> `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
->Mer information om alla parametrar som stöds av EdmUploadAgent.exe får du genom att köra
+> Mer information om alla parametrar som stöds av EdmUploadAgent.exe får du genom att köra
 >
 > `EdmUploadAgent.exe /?`
-
 
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>Länkar till EDM-uppladdningsagenten efter prenumerationstyp
 

@@ -15,49 +15,49 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ab9f52e2e8376f20bb56aa4389bdaa417826eca1
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 50273fabc85ecedc92b9c3ec379d3b82a63dd6e1
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007363"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226449"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Kom igång med hantering av insiderrisker
 
 Använd insider-principer för riskhantering för att identifiera riskfyllda aktiviteter och hanteringsverktyg för att agera på riskvarningar i organisationen. Utför följande steg för att konfigurera förutsättningar och konfigurera en princip för insider-riskhantering.
 
->[!IMPORTANT]
->Microsoft 365 Insider-riskhanteringslösningen tillhandahåller ett alternativ på klientorganisationsnivå som hjälper kunder att främja intern styrning på användarnivå. Administratörer på innehavarnivå kan konfigurera behörigheter för att ge åtkomst till den här lösningen för medlemmar i organisationen och konfigurera dataanslutningar i efterlevnadscentret för Microsoft 365 för att importera relevanta data för att stödja identifiering av potentiellt riskabel aktivitet på användarnivå. Kunder bekräftar insikter som är relaterade till den enskilda användarens beteende, karaktär eller prestanda material som relaterar till anställning kan beräknas av administratören och göras tillgänglig för andra i organisationen. Dessutom bekräftar kunder att de måste genomföra en egen fullständig undersökning relaterad till den enskilda användarens beteende, karaktär eller prestanda i material som är relaterad till anställning, och inte bara förlita sig på insikter från insider-riskhanteringstjänsten. Kunder är ensamt ansvariga för att använda Microsoft 365 Insider-riskhanteringstjänsten och alla associerade funktioner eller tjänster i enlighet med alla tillämpliga lagar, inklusive lagar som relaterar till personidentifiering och åtgärder för åtgärder.
+> [!IMPORTANT]
+> The Microsoft 365 insider risk management solution provides a tenant level option to help customers facilitate internal governance at the user level. Administratörer på innehavarnivå kan konfigurera behörigheter för att ge åtkomst till den här lösningen för medlemmar i organisationen och konfigurera datakopplingar i Microsoft 365 Efterlevnadscenter för att importera relevanta data för att stödja identifiering av potentiellt riskabel aktivitet på användarnivå. Kunder bekräftar insikter som är relaterade till den enskilda användarens beteende, karaktär eller prestanda material som relaterar till anställning kan beräknas av administratören och göras tillgänglig för andra i organisationen. Dessutom bekräftar kunder att de måste genomföra en egen fullständig undersökning relaterad till den enskilda användarens beteende, karaktär eller prestanda i material som är relaterad till anställning, och inte bara förlita sig på insikter från insider-riskhanteringstjänsten. Kunder är ensamt ansvariga för att använda Microsoft 365 insider-riskhanteringstjänsten och alla associerade funktioner eller tjänster i enlighet med alla tillämpliga lagar, inklusive lagar som relaterar till personidentifiering och åtgärder för åtgärder.
 
-Mer information om hur insiderriskpolicyer kan hjälpa dig att hantera risker i din organisation finns i [Insider-riskhantering i Microsoft 365.](insider-risk-management.md)
+Mer information om hur insiderriskprinciper kan hjälpa dig att hantera risker i organisationen finns i [Insider-riskhantering i Microsoft 365.](insider-risk-management.md)
 
 ## <a name="subscriptions-and-licensing"></a>Prenumerationer och licensiering
 
-Innan du börjar med Insider-riskhantering bör du bekräfta din [Microsoft 365-prenumeration](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) och eventuella tillägg. För att komma åt och använda Insider-riskhantering måste din organisation ha någon av följande prenumerationer eller tillägg:
+Innan du börjar med insiderriskhantering bör du bekräfta [Microsoft 365-prenumerationen](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) och eventuella tillägg. För att komma åt och använda Insider-riskhantering måste din organisation ha någon av följande prenumerationer eller tillägg:
 
-- Microsoft 365 E5-prenumeration (betald eller utvärderingsversion)
-- Microsoft 365 E3-prenumeration + tillägget Microsoft 365 E5 efterlevnad
-- Microsoft 365 E3-prenumeration + tillägget Microsoft 365 E5 Insider Risk Management
-- Microsoft 365 A5-prenumeration (betald eller utvärderingsversion)
-- Microsoft 365 A3-prenumeration + tillägget Microsoft 365 A5 efterlevnad
-- Microsoft 365 A3-prenumeration + tillägget Microsoft 365 A5 Insider Risk Management
+- Microsoft 365 E5 prenumeration (betald version eller utvärderingsversion)
+- Microsoft 365 E3-prenumeration + Microsoft 365 E5 Compliance-tillägget
+- Microsoft 365 E3 -prenumerationen + Microsoft 365 E5-tillägget Insider Risk Management
+- Microsoft 365 A5 prenumeration (betald version eller utvärderingsversion)
+- Microsoft 365 A3 prenumeration + Microsoft 365 A5 tillägget efterlevnad
+- Microsoft 365 A3 -prenumerationen + Microsoft 365 A5-tillägget Insider riskhantering
 - Microsoft 365 G5-prenumeration (betald eller utvärderingsversion)
-- Microsoft 365 G3-prenumeration + tillägget Microsoft 365 G5 efterlevnad
-- Microsoft 365 G3-prenumeration + tillägget Microsoft 365 G5 Insider Risk Management
-- Office 365 E3-prenumeration + Enterprise Mobility and Security E3 + Microsoft 365 E5 compliance-tillägget
+- Microsoft 365 G3 prenumeration + Microsoft 365 G5-tillägget efterlevnad
+- Microsoft 365 G3 -prenumerationen + Microsoft 365 G5 Insider Risk Management-tillägget
+- Office 365 E3 prenumeration + Enterprise Mobility and Security E3 + Microsoft 365 E5 Compliance-tillägget
 
 Användare som ingår i insider-riskhanteringsprinciper måste tilldelas en av licenserna ovan.
 
-Om du inte har ett befintligt Microsoft 365 Enterprise, E5-abonnemang och vill prova insider-riskhantering kan [](https://www.microsoft.com/microsoft-365/enterprise) du lägga till [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) i ditt befintliga abonnemang eller registrera dig för en utvärderingsversion av Microsoft 365 Enterprise E5.
+Om du inte har ett befintligt Microsoft 365 Enterprise E5-abonnemang och vill prova insider-riskhantering kan du lägga [](https://www.microsoft.com/microsoft-365/enterprise) till [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) i din befintliga prenumeration eller registrera dig för en utvärderingsversion av Microsoft 365 Enterprise E5.
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>Steg 1: Aktivera behörigheter för Insider-riskhantering
 
->[!Important]
->När du har konfigurerat rollgrupperna kan det ta upp till 30 minuter för rollgruppsbehörigheterna att gälla för tilldelade användare i organisationen.
+> [!IMPORTANT]
+> När du har konfigurerat rollgrupperna kan det ta upp till 30 minuter för rollgruppsbehörigheterna att gälla för tilldelade användare i organisationen.
 
 Det finns fyra rollgrupper som används för att konfigurera behörigheter för hantering av insiderriskhanteringsfunktioner. Om du vill fortsätta med de här konfigurationsstegen måste innehavaradministratörerna först tilldela dig rollgruppen **Insider Risk Management** eller Insider Risk **Management** Admin. För att komma åt och hantera insider-riskhanteringsfunktioner efter den första konfigurationen måste användarna vara medlemmar i minst en rollgrupp för insider-riskhantering.
 
-Beroende på strukturen hos ditt team för efterlevnadshantering finns alternativ för att tilldela användare till specifika rollgrupper för att hantera olika uppsättningar med insider-riskhanteringsfunktioner. Om du  vill visa fliken Behörigheter i Säkerhets- och efterlevnadscenter för Office 365  & och hantera rollgrupper, måste du vara tilldelad till rollgruppen Organisationshantering eller ha rollen *Rollhantering.* Välj bland de här rollgruppsalternativen när du konfigurerar insider-riskhantering:
+Beroende på strukturen hos ditt team för efterlevnadshantering finns alternativ för att tilldela användare till specifika rollgrupper för att hantera olika uppsättningar med insider-riskhanteringsfunktioner. Om du  vill visa fliken Behörigheter i Office 365 säkerhets- & Säkerhets- och efterlevnadscenter  i & och hantera rollgrupper, måste du vara tilldelad till rollgruppen Organisationshantering eller ha rollen *Rollhantering.* Välj bland de här rollgruppsalternativen när du konfigurerar insider-riskhantering:
 
 | **Rollgrupp** | **Rollbehörigheter** |
 | :------------- | :------------------- |
@@ -68,13 +68,13 @@ Beroende på strukturen hos ditt team för efterlevnadshantering finns alternati
 | **Insider-riskhanteringsgranskningar** | Använd den här gruppen för att tilldela behörigheter till användare som ska granska aktiviteter inom insider-riskhantering. Användare i den här rollgruppen kan komma åt granskningsloggen för Insider-risker. |
 
 > [!NOTE]
-> De här rollgrupperna stöds för närvarande inte i PIM (Privileged Identity Management). Mer information om PIM finns i Tilldela [Azure AD-roller i Behörighetsidentitetshantering.](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)
+> De här rollgrupperna stöds för närvarande inte på Privileged Identity Management (PIM). Mer information om PIM finns i Tilldela [Azure AD-roller i Privileged Identity Management.](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>Lägga till användare i en rollgrupp för Insider-riskhantering
 
 Utför följande steg för att lägga till användare i en rollgrupp för Insider-riskhantering:
 
-1. Logga in [https://protection.office.com/permissions](https://protection.office.com/permissions) med autentiseringsuppgifter för ett administratörskonto i din Microsoft 365-organisation.
+1. Logga in [https://protection.office.com/permissions](https://protection.office.com/permissions) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
 
 2. I &amp; Säkerhetsefterlevnadscenter går du till **Behörigheter.** Välj länken för att visa och hantera roller i Office 365.
 
@@ -88,21 +88,21 @@ Utför följande steg för att lägga till användare i en rollgrupp för Inside
 
 7. Välj **Spara** för att lägga till användare i rollgruppen. Välj **Stäng** för att slutföra stegen.
 
-## <a name="step-2-enable-the-microsoft-365-audit-log"></a>Steg 2: Aktivera Microsoft 365-granskningsloggen
+## <a name="step-2-enable-the-microsoft-365-audit-log"></a>Steg 2: Aktivera Microsoft 365 granskningsloggen
 
-Insider-riskhantering använder Microsoft 365-granskningsloggar för användarinsikter och aktiviteter som identifieras i principer och analysinsikter. Microsoft 365-granskningsloggarna är en sammanfattning av alla aktiviteter inom organisationen och insider-riskhanteringsprinciper kan använda dessa aktiviteter för att generera principinsikter.
+Insider-riskhantering använder Microsoft 365 för användarinsikter och aktiviteter som identifieras i principer och analysinsikter. I Microsoft 365 är en sammanfattning av alla aktiviteter inom organisationen och principer för insider-riskhantering kan använda dessa aktiviteter för att generera principinsikter.
 
-Stegvisa instruktioner för hur du aktiverar granskning finns i [Aktivera eller inaktivera granskningsloggsökning.](turn-audit-log-search-on-or-off.md) När du aktiverar granskningen visas ett meddelande om att granskningsloggen förbereds och att du kan köra en sökning om några timmar efter att förberedelserna har slutförts. Du behöver bara göra den här åtgärden en gång. Mer information om hur du använder Microsoft 365-granskningsloggen finns i [Söka i granskningsloggen.](search-the-audit-log-in-security-and-compliance.md)
+Stegvisa instruktioner för hur du aktiverar granskning finns i [Aktivera eller inaktivera granskningsloggsökning.](turn-audit-log-search-on-or-off.md) När du aktiverar granskningen visas ett meddelande om att granskningsloggen förbereds och att du kan köra en sökning om några timmar efter att förberedelserna har slutförts. Du behöver bara göra den här åtgärden en gång. Mer information om hur du använder Microsoft 365 granskningsloggen finns i [Söka i granskningsloggen.](search-the-audit-log-in-security-and-compliance.md)
 
 ## <a name="step-3-enable-and-view-insider-risk-analytics-insights-optional"></a>Steg 3: Aktivera och visa insikter om Insider-riskanalyser (valfritt)
 
 Med Insider-riskhanteringsanalyser kan du göra en utvärdering av potentiella Insider-risker i organisationen utan att konfigurera insiderriskprinciper. Denna utvärdering kan hjälpa din organisation att identifiera potentiella områden med högre användarrisk och hjälpa till att bestämma typen och omfattningen av principer för hantering av insiderrisk som du kan överväga att konfigurera. Den här utvärderingen kan också hjälpa dig att fastställa behov av ytterligare licensiering eller framtida optimering av befintliga principer. Analyssökningsresultaten kan ta upp till 48 timmar innan insikterna är tillgängliga som rapporter för granskning. Mer information om analysinsikter finns i Inställningar för [Insider-riskhantering: Analys (förhandsversion)](insider-risk-management-settings.md#analytics-preview) och titta på videon om Insider Risk Management Analytics för att bättre förstå hur analyser kan hjälpa dig att identifiera potentiella [Insider-risker](https://www.youtube.com/watch?v=5c0P5MCXNXk) och hjälpa dig att snabbt vidta åtgärder.
 
-För att aktivera Insider risk Analytics måste du vara medlem i rollgruppen *för Insider-riskhantering,* *Insider-riskhanteringsadministratör* eller Microsoft 365 global administratör. 
+För att aktivera Insider risk Analytics måste du vara medlem i rollgruppen för *Insider-riskhantering,* *Insider-riskhanteringsadministratör* eller Microsoft 365 *global* administratör.
 
 Utför följande steg för att aktivera Insider Risk Analytics:
 
-1. Gå till [Insider-riskhantering i Microsoft 365](https://compliance.microsoft.com) **efterlevnadscenter.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering.**
 2. Välj **Kör genomsökning** på **fliken Översikt över Insider-risker** i din **organisation.** Den här åtgärden aktiverar analyssökning för organisationen. Du kan också aktivera genomsökning i organisationen genom att gå till **Insider-riskinställningar** Analys (förhandsversion) och aktivera Genomsökning av klientorganisationens användaraktivitet för att  >   identifiera **potentiella Insider-risker.**
 3. I **informationsfönstret Analys** väljer du **Kör genomsökning för att starta sökningen för din organisation**. Analyssökningsresultaten kan ta upp till 24 timmar innan insikterna är tillgängliga som rapporter för granskning.
 
@@ -114,16 +114,16 @@ De flesta insider-riskhanteringsprinciper har krav som måste konfigureras för 
 
 ### <a name="configure-microsoft-365-hr-connector"></a>Konfigurera Microsoft 365 HR-koppling
 
-Insider-riskhantering har stöd för import av användar- och loggdata som importerats från tredjepartsplattformar för riskhantering och personalavdelningen. Med datakopplingen för Microsoft 365 Human Resources (HR) kan du hämta personaldata från CSV-filer, inklusive uppsägningsdatum för användare, sista anställningsdatum, meddelanden om planen för prestandaförbättringar, åtgärder för prestationsgranskning och status för ändring på arbetsnivå. Dessa data hjälper till att skapa varningsindikatorer i insider-riskhanteringsprinciper och är en viktig del av konfigurationen av den fullständiga riskhanteringstäckningen i organisationen. Om du konfigurerar fler än en HR-koppling för organisationen hämtar Insider-riskhantering automatiskt indikatorer från alla HR-kopplingar.
+Insider-riskhantering har stöd för import av användar- och loggdata som importerats från tredjepartsplattformar för riskhantering och personalavdelningen. Med datakopplingen Microsoft 365 Human Resources (HR) kan du hämta personaldata från CSV-filer, inklusive slutdatum för användare, datum för senaste anställning, meddelanden om planen för prestandaförbättringar, åtgärder för prestationsgranskning och status för arbetsnivåändring. Dessa data hjälper till att skapa varningsindikatorer i insider-riskhanteringsprinciper och är en viktig del av konfigurationen av den fullständiga riskhanteringstäckningen i organisationen. Om du konfigurerar fler än en HR-koppling för organisationen hämtar Insider-riskhantering automatiskt indikatorer från alla HR-kopplingar.
 
-Microsoft 365 HR-kopplingen krävs när du använder följande principmallar:
+Den Microsoft 365 HR-koppling krävs när du använder följande principmallar:
 
 - Avgående användardatastöld
 - Överträdelser av säkerhetsprincip av användare som slutar
 - Överträdelse av säkerhetsprincip av en missnöjd användare
 - Dataläckage av missnöjda användare
 
-Stegvisa [anvisningar för hur du](import-hr-data.md) konfigurerar Microsoft 365 HR-kopplingen för din organisation finns i artikeln Konfigurera en koppling för HR-data för din organisation. När du har konfigurerat HR-kopplingen återgår du till de här konfigurationsstegen.
+Stegvisa [anvisningar för hur du](import-hr-data.md) konfigurerar en hr-koppling för din organisation finns i artikeln Konfigurera en Microsoft 365 koppling för hr-data. När du har konfigurerat HR-kopplingen återgår du till de här konfigurationsstegen.
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>Konfigurera DLP-principer (Data Loss Prevention)
 
@@ -131,7 +131,7 @@ Insider-riskhantering kan användas med DLP-principer för att identifiera avsik
 
 DLP-principer hjälper till att identifiera användare för att aktivera riskbedömning i insider-riskhantering för hög allvarlighetsgrad DLP-varningar för känslig information och är en viktig del av konfigurationen av fullständig riskhanteringstäckning i organisationen. Mer information om Insider-riskhantering och integrering med DLP-principer och överväganden vid planering finns i [Insider-principer för riskhantering.](insider-risk-management-policies.md#general-data-leaks)
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Kontrollera att du har slutfört följande:
 >
 >- Du förstår och konfigurerar användarnas omfattning i både DLP- och Insider-riskhanteringsprinciperna så att de ger den täckning du förväntar dig.
@@ -159,8 +159,8 @@ I artikeln [Komma igång med inställningar för insider-riskhantering](insider-
 
 Insider-riskhantering har stöd för import av användar- och loggdata från fysiska kontroll- och åtkomstplattformar. Med den fysiska badgingkopplingen kan du hämta åtkomstdata från JSON-filer, inklusive användar-ID, åtkomstpunkts-ID, åtkomsttid och datum samt åtkomststatus. Dessa data hjälper till att skapa varningsindikatorer i insider-riskhanteringsprinciper och är en viktig del av konfigurationen av den fullständiga riskhanteringstäckningen i organisationen. Om du konfigurerar fler än en fysisk badging-koppling för organisationen hämtar Insider-riskhantering automatiskt indikatorer från alla fysiska badging-kopplingar. Information från Fysiska tillägg till andra Insider-risker-signaler när du använder alla mallar för Insider-riskpolicyer.
 
->[!IMPORTANT]
->För att insider-riskhanteringsprinciper ska använda och korrelera signaldata relaterade till avgående och uppsagda användare med händelsedata från din fysiska kontroll och åtkomstplattformar måste du också konfigurera Microsoft 365 HR-kopplingen. Om du aktiverar den fysiska anslutningen för fysisk aktivitet utan att aktivera Microsoft 365 HR-kopplingen bearbetar insiders riskhanteringsprinciper endast händelser för obehörig fysisk åtkomst för användare i organisationen.
+> [!IMPORTANT]
+> För att insider-riskhanteringsprinciper ska använda och korrelera signaldata relaterade till avgående och uppsagda användare med händelsedata från din fysiska kontroll och åtkomstplattformar måste du också konfigurera Microsoft 365 HR-anslutningen. Om du aktiverar anslutningen för fysisk aktivitet utan att aktivera Microsoft 365 HR-anslutningen bearbetar insiders riskhanteringsprinciper endast händelser för obehörig fysisk åtkomst för användare i organisationen.
 
 Stegvisa [anvisningar](import-physical-badging-data.md) för hur du konfigurerar kopplingen Fysiskt dåligt för din organisation finns i artikeln Konfigurera en koppling för fysisk aktivitet för din organisation. När du har konfigurerat kopplingen återgår du till de här konfigurationsstegen.
 
@@ -174,16 +174,16 @@ I artikeln [Konfigurera avancerade funktioner i Defender](/windows/security/thre
 
 ## <a name="step-5-configure-insider-risk-settings"></a>Steg 5: Konfigurera inställningar för Insider-risker
 
-[Insider-riskinställningar](insider-risk-management-settings.md) gäller för alla principer för Insider-riskhantering, oavsett vilken mall du valde när du skapar en princip. Inställningar konfigureras med hjälp av **kontrollen för Insider-risker** som finns längst upp på alla flikar för Insider-riskhantering. De här inställningarna styr sekretess, indikatorer, övervakning av fönster och intelligenta identifieringar.
+[Insider-riskinställningar](insider-risk-management-settings.md) gäller för alla principer för Insider-riskhantering, oavsett vilken mall du valde när du skapar en princip. Inställningar konfigureras med hjälp av **kontrollen för Insider-riskinställningar** högst upp på alla flikar för insiderriskhantering. De här inställningarna styr sekretess, indikatorer, övervakning av fönster och intelligenta identifieringar.
 
 Innan du konfigurerar en princip definierar du följande inställningar för Insider-risker:
 
-1. I [Microsoft 365 efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering** och väljer Inställningar för **Insider-risker** i det övre högra hörnet på valfri sida.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering** och väljer Inställningar för **Insider-risker** i det övre högra hörnet på valfri sida.
 2. På sidan **Sekretess** väljer du en sekretessinställning för att visa användarnamn för principaviseringar.
 3. På sidan **Indikatorer** markerar du de aviseringsindikatorer som du vill tillämpa på alla insiderriskprinciper.
 
-    >[!IMPORTANT]
-    >Om du vill få aviseringar om riskabel aktivitet som definieras i principerna måste du välja en eller flera indikatorer. Om indikatorerna inte har konfigurerats i Inställningar kan inte indikatorerna väljas i Insider-riskprinciper.
+    > [!IMPORTANT]
+    > Om du vill få aviseringar om riskabel aktivitet som definieras i principerna måste du välja en eller flera indikatorer. Om indikatorerna inte är Inställningar i Inställningar kan inte indikatorerna markeras i insider-riskprinciper.
 
 4. På sidan **Princip tidsramar** väljer [](insider-risk-management-settings.md#policy-timeframes) du de tidsramar för principen som ska gälla för en användare när de utlöser en matchning för en insider-riskprincip.
 5. På sidan **Intelligenta identifieringar** konfigurerar du följande inställningar för Insider-riskprinciper:
@@ -192,11 +192,11 @@ Innan du konfigurerar en princip definierar du följande inställningar för Ins
     - [Aviseringsvolymnivå](insider-risk-management-settings.md#alert-volume)
     - [Aviseringsstatus för Microsoft Defender för slutpunkt](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Domäninställningar](insider-risk-management-settings.md#domains-preview)
-6. På sidan **Export-aviseringar** kan du aktivera export av information om Insider-riskvarningar med hjälp av Office 365-hanterings-API:er om det behövs.
+6. På sidan **Export-aviseringar** aktiverar du export av information om Insider-riskvarningar med hjälp Office 365 API:er för hantering om det behövs.
 7. På sidan **Prioritet för användargrupper** skapar du en prioritetsgrupp för användare och lägger till användare om de inte har skapats **i steg 3.**
-8. På sidan **Power Automate-flöden** konfigurerar du ett flöde från mallar för Insider-riskflöden eller skapar ett nytt flöde. Stegvisa [anvisningar finns i](insider-risk-management-settings.md#power-automate-flows-preview) artikeln Komma igång med inställningar för insider-riskhantering.
+8. På sidan **Power Automate flödesflöden** konfigurerar du ett flöde från mallar för Insider-riskflöden eller skapar ett nytt flöde. Stegvisa [anvisningar finns i](insider-risk-management-settings.md#power-automate-flows-preview) artikeln Komma igång med inställningar för insider-riskhantering.
 9. På sidan **Prioritetstillgångar konfigurerar** du prioritetstillgångar för att använda data från din fysiska kontroll och åtkomstplattform som importerats av kopplingen Fysiskt dåligt. Stegvisa [anvisningar finns i](insider-risk-management-settings.md#priority-physical-assets-preview) artikeln Komma igång med inställningar för insider-riskhantering.
-10. På microsoft **Teams-sidan** kan du aktivera Microsoft Teams-integrering med Insider-riskhantering för att automatiskt skapa ett team för samarbete i fall eller användare. Stegvisa [anvisningar finns i](insider-risk-management-settings.md#microsoft-teams-preview) artikeln Komma igång med inställningar för insider-riskhantering.
+10. På **Microsoft Teams** kan du aktivera Microsoft Teams med insider-riskhantering för att automatiskt skapa ett team för samarbete i olika fall eller användare. Stegvisa [anvisningar finns i](insider-risk-management-settings.md#microsoft-teams-preview) artikeln Komma igång med inställningar för insider-riskhantering.
 11. Välj **Spara** för att aktivera de här inställningarna för dina Insider-riskprinciper.
 
 ## <a name="step-6-create-an-insider-risk-management-policy"></a>Steg 6: Skapa en princip för insider-riskhantering
@@ -207,8 +207,8 @@ Insider-riskhanteringsprinciper omfattar tilldelade användare och definierar vi
 2. Välj **Skapa princip** för att öppna principguiden.
 3. På sidan **Principmall** väljer du en principkategori och väljer sedan mallen för den nya principen. De här mallarna består av villkor och indikatorer som definierar den riskaktivitet du vill identifiera och undersöka. Granska förutsättningarna, utlösande händelser och upptäckta aktiviteter flr mallen för att bekräfta att denna principmall passar dina behov.
 
-    >[!IMPORTANT]
-    >Vissa principmallar har förutsättningar som måste konfigureras för att principen ska generera relevanta varningar. Om du inte har konfigurerat tillämpliga principförutsättningar, se **Steg 4** ovan.
+    > [!IMPORTANT]
+    > Vissa principmallar har förutsättningar som måste konfigureras för att principen ska generera relevanta varningar. Om du inte har konfigurerat tillämpliga principförutsättningar, se **Steg 4** ovan.
 
 4. Gå vidare genom att klicka på **Nästa.**
 5. På sidan **Namn och beskrivning** färdigställer du följande fält:
@@ -234,8 +234,8 @@ Insider-riskhanteringsprinciper omfattar tilldelade användare och definierar vi
 12. Gå vidare genom att klicka på **Nästa.**
 13. På sidan **Indikatorer och utlösande händelser** kommer du att se [indikatorerna](insider-risk-management-settings.md#indicators) som du har definierat som tillgängliga på sidan **Inställningar för insiderrisk** > **Indikatorer**. Om du valde en mall för *Dataläckor* i början av guiden måste du välja en DLP-princip i **DLP-principens** nedrullningsbara lista för att aktivera utlösande indikatorer för principen eller välja den inbyggda utlösande händelsen.
 
-    >[!IMPORTANT]
-    >Om indikatorer på den här sidan inte kan väljas måste du välja de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer** i guiden eller välja indikatorerna på sidan **Hantering av insiderrisk** > **Inställningar** > **Principindikatorer**.
+    > [!IMPORTANT]
+    > Om indikatorer på den här sidan inte kan väljas måste du välja de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer** i guiden eller välja indikatorerna på sidan **Hantering av insiderrisk** > **Inställningar** > **Principindikatorer**.
 
     Välj de indikatorer som du vill tillämpa på principen. Om du föredrar att inte använda principens standardtrösklar för dessa indikatorer, inaktivera **Använd standardtrösklar som rekommenderas av Microsoft** och ange tröskelvärdena för varje vald indikator.
 

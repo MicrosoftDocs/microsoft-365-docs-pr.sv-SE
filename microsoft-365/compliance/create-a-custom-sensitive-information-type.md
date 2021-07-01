@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du skapar, ändrar, tar bort och testar anpassade typer av känslig information för DLP i Säkerhets- & säkerhets- och efterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683859"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227157"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Komma igång med anpassade typer av känslig information
 
@@ -45,7 +45,7 @@ Det finns två sätt att skapa en ny typ av känslig information:
     - [funktioner](what-the-dlp-functions-look-for.md)
     - [konfidensnivåer](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-- Du måste ha behörighet som global administratör eller efterlevnadsadministratör för att skapa, testa och distribuera en anpassad typ av känslig information via användargränssnittet. Gå till [Om administratörsroller](/office365/admin/add-users/about-admin-roles?view=o365-worldwide) i Office 365.
+- Du måste ha behörighet som global administratör eller efterlevnadsadministratör för att skapa, testa och distribuera en anpassad typ av känslig information via användargränssnittet. Gå till [Om administratörsroller](/office365/admin/add-users/about-admin-roles) i Office 365.
 
 - Organisationen måste ha en prenumeration, till exempel Office 365 Enterprise, som omfattar dataförlustskydd (DLP). Gå till [Tjänstbeskrivning för meddelandeprincip och efterlevnad](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 

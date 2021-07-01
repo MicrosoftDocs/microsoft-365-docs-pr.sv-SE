@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'När du har skapat en postlåda för ett rum eller en utrustning, kan alla i företaget boka den för möten eller händelser med hjälp av Outlook. '
-ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d999cb04161b1284025aa1b587fe7368c25eb4f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915176"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227937"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Postlådor för rum och utrustning
 
@@ -88,7 +88,7 @@ Om du vill konfigurera en postlåda för ett rum eller en utrustning, går du ti
 6. Om du har gjort ändringar väljer du **Spara** och **Stäng**.
 
 > [!Note]
-> Om du vill behålla postlådorna för rummet och utrustningen säkra blockerar du inloggning till postlådorna. Mer information finns i [Blockera inloggning för den delade postlådans konto](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
+> Om du vill behålla postlådorna för rummet och utrustningen säkra blockerar du inloggning till postlådorna. Mer information finns i [Blockera inloggning för den delade postlådans konto](/office365/admin/email/create-a-shared-mailbox#block-sign-in-for-the-shared-mailbox-account).
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>Här är några andra vanliga frågor om postlådor för rum och utrustning.
 

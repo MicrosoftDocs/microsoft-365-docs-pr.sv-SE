@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Använd inbyggd basic mobility and security för att ta bort information från registrerade enheter.
-ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: c3cc547ce5e135ccdabf9a09b0d572f1b2530f47
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706148"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228153"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Rensa en mobil enhet i Basic Mobility and Security
 
@@ -45,7 +45,7 @@ Mobila enheter kan lagra känslig information om organisationen och ge åtkomst 
 
 ## <a name="wipe-a-mobile-device"></a>Rensa en mobil enhet
 
-1. Gå till [Microsoft 365 administrationscentret.](../../admin/admin-overview/about-the-admin-center.md)
+1. Gå till [Administrationscenter för Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
 
 2. Skriv Hantering av mobila enheter i sökfältet och välj **Hantering av mobila** enheter i listan med resultat.
 
@@ -86,5 +86,6 @@ Rensningen skickas direkt till den mobila enheten och enheten markeras som inte 
 |Microsoft 365 programdata rensas om enheten skyddas av Appskyddsprinciper för Intune. Apparna tas inte bort. För enheter som inte skyddas av MAM-principer (Mobile Application Management) Outlook och OneDrive inte cachelagrade data.<br/>**Obs!** För att använda Intune-appskyddsprinciper måste du ha en Intune-licens.|Ja|Ja|
 |Principinställningarna som används av Basic Mobility och Security på enheter tillämpas inte längre. användare kan ändra inställningarna.|Ja|Ja|
 |E-postprofiler som skapats med Basic Mobility and Security tas bort och cachelagrad e-post på enheten tas bort.|Ja|Uppgift saknas|
->[!NOTE]
->Företagsportal app finns i App Store för iOS och Play Store för Android-enheter.
+
+> [!NOTE]
+> Företagsportal app finns i App Store för iOS och Play Store för Android-enheter.

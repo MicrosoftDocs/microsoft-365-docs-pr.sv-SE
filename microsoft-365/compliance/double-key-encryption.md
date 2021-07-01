@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: b9696f26dd8f68ba291eab50e11a4cb6dd55ab7a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "52162551"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226917"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Dubbelnyckelkryptering för Microsoft 365
 
@@ -35,7 +35,7 @@ Mer information om den molnbaserade klientorganisationens standardrotnycklar fin
 
 ## <a name="when-your-organization-should-adopt-dke"></a>När din organisation ska använda DKE
 
-Dubbelnyckelkryptering är avsedd för de känsligaste data som omfattas av de strikta skyddskraven. DKE är inte avsett för alla data. I allmänhet använder du Dubbelnyckelkryptering för att endast skydda en liten del av dina övergripande data. Du bör vara noggrann med att identifiera rätt data som ska täckas med den här lösningen innan du distribuerar. I vissa fall kan du behöva begränsa omfattningen och använda andra lösningar för de flesta data, till exempel Microsoft Information Protection med Microsoft-hanterade nycklar eller BYOK. Dessa lösningar är tillräckliga för dokument som inte omfattas av förbättrade skydd och föreskrifter. De här lösningarna ger dig också möjlighet att använda de Office 365 tjänsterna. tjänster som du inte kan använda med DKE-krypterat innehåll. Till exempel:
+Dubbelnyckelkryptering är avsedd för de känsligaste data som omfattas av de strikta skyddskraven. DKE är inte avsett för alla data. I allmänhet använder du Dubbelnyckelkryptering för att endast skydda en liten del av dina övergripande data. Du bör vara noggrann med att identifiera rätt data som ska täckas med den här lösningen innan du distribuerar. I vissa fall kan du behöva begränsa omfattningen och använda andra lösningar för de flesta data, till exempel Microsoft Information Protection med nycklar som hanteras av Microsoft eller BYOK. Dessa lösningar är tillräckliga för dokument som inte omfattas av förbättrade skydd och föreskrifter. De här lösningarna ger dig också möjlighet att använda de Office 365 tjänsterna. tjänster som du inte kan använda med DKE-krypterat innehåll. Ett exempel:
 
 - Transportregler som skydd mot skadlig programvara och skräppost som kräver insyn i den bifogade filen
 - Microsoft Delve
@@ -45,7 +45,7 @@ Dubbelnyckelkryptering är avsedd för de känsligaste data som omfattas av de s
 
 Externa program eller tjänster som inte är integrerade med DKE via MIP SDK kan inte utföra åtgärder på krypterade data.
 
-Microsoft Information Protection SDK 1.7+ har stöd för Dubbel nyckelkryptering. program som integrerar med vårt SDK kommer att kunna använda dessa data med tillräcklig behörighet och integrering.
+I Microsoft Information Protection SDK 1.7+ stöds Dubbel nyckelkryptering. program som integrerar med vårt SDK kommer att kunna använda dessa data med tillräcklig behörighet och integrering.
 
 Vi rekommenderar att organisationer använder Microsofts informationsskyddsfunktioner (klassificering och märkning) för att skydda de flesta känsliga data och bara använda DKE för verksamhetskritiska data. Dubbel nyckelkryptering är relevant för känsliga data i branscher som är reglerade, till exempel finansiella tjänster och sjukvård.
 
@@ -79,7 +79,7 @@ Du följer de här allmänna anvisningarna för att konfigurera DKE. När du har
 
 1. Distribuera DKE-tjänsten enligt beskrivningen i den här artikeln.
 
-2. Skapa en etikett med Dubbelnyckelkryptering. Gå till Informationsskydd under [kompatibilitetscentret Microsoft 365 och](https://compliance.microsoft.com) skapa en ny etikett med Dubbelnyckelkryptering. Läs [Begränsa åtkomst till innehåll genom att använda känslighetsetiketter för att tillämpa kryptering.](./encryption-sensitivity-labels.md)
+2. Skapa en etikett med Dubbelnyckelkryptering. Gå till Informationsskydd under [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) och skapa en ny etikett med Dubbel nyckelkryptering. Läs [Begränsa åtkomst till innehåll genom att använda känslighetsetiketter för att tillämpa kryptering.](./encryption-sensitivity-labels.md)
 
 3. Använd etiketter för dubbelnyckelkryptering. Skydda data genom att välja etiketten Dubbelnyckelkrypterad i menyfliksområdet Känslighet i Microsoft Office.
 
@@ -139,12 +139,12 @@ Följande anvisningar är avsedda för oerfarna git eller Visual Studio kodanvä
 
 2. Välj Kod till höger på **skärmen.** Din version av användargränssnittet kan visa knappen **Klona eller ladda** ned. I den nedrullningsbara listrutan som visas väljer du ikonen Kopiera för att kopiera URL-adressen till Urklipp.
 
-    Till exempel:
+    Ett exempel:
 
    > [!div class="mx-imgBorder"]
    > ![Klona tjänsten dubbelnyckelkryptering från GitHub](../media/dke-clone.png)
 
-3. I Visual Studio väljer du  Visa \> **kommandopalett och** **sedan Git: Klona**. Om du vill gå till alternativet i listan börjar du skriva för att `git: clone` filtrera posterna och väljer det i listrutan. Till exempel:
+3. I Visual Studio väljer du  Visa \> **kommandopalett och** **sedan Git: Klona**. Om du vill gå till alternativet i listan börjar du skriva för att `git: clone` filtrera posterna och väljer det i listrutan. Ett exempel:
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Kod GIT:alternativet Klona](../media/dke-vscode-clone.png)
@@ -153,7 +153,7 @@ Följande anvisningar är avsedda för oerfarna git eller Visual Studio kodanvä
 
 5. I dialogrutan **Välj mapp** som visas bläddrar du till och väljer en plats där du vill lagra lagringsplatsen. Välj Öppna när du **uppmanas att göra det.**
 
-    Lagringsplatsen öppnas Visual Studio kod och visar den aktuella Git-grenen längst ned till vänster. Grenen ska till exempel vara **huvud.** Till exempel:
+    Lagringsplatsen öppnas Visual Studio kod och visar den aktuella Git-grenen längst ned till vänster. Grenen ska till exempel vara **huvud.** Ett exempel:
 
    ![Skärmbild av DKE-lagringsplatsen Visual Studio kod som visar huvudgrenen](../media/dke-vscode-main-branch.jpg)
 
@@ -183,11 +183,11 @@ Välj om du vill använda e-post eller rollauktorisering. DKE stöder endast en 
 
 - **Rollauktorisering**. Ger organisationen behörighet att auktorisera åtkomst till nycklar baserat på Active Directory-grupper och kräver att webbtjänsten kan köra frågor för LDAP.
 
-**Så här anger du tangentåtkomstinställningar för DKE med e-postauktorisering**
+##### <a name="to-set-key-access-settings-for-dke-using-email-authorization"></a>Så här anger du tangentåtkomstinställningar för DKE med e-postauktorisering
 
 1. Öppna **filenappsettings.js** filen och leta reda på `AuthorizedEmailAddress` inställningen.
 
-2. Lägg till den e-postadress eller de adresser som du vill auktorisera. Avgränsa flera e-postadresser med dubbla citattecken och kommatecken. Till exempel:
+2. Lägg till den e-postadress eller de adresser som du vill auktorisera. Avgränsa flera e-postadresser med dubbla citattecken och kommatecken. Ett exempel:
 
    ```json
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
@@ -205,17 +205,17 @@ Den här bilden visar filen **appsettings.jskorrekt formaterad** för e-postaukt
 
    ![Filen appsettings.jssom visar e-postauktoriseringsmetod](../media/dke-email-accesssetting.png)
 
-**Så här anger du nyckelåtkomstinställningar för DKE med rollauktorisering**
+##### <a name="to-set-key-access-settings-for-dke-using-role-authorization"></a>Så här anger du nyckelåtkomstinställningar för DKE med rollauktorisering
 
 1. Öppna **filenappsettings.js** filen och leta reda på `AuthorizedRoles` inställningen.
 
-2. Lägg till de Active Directory-gruppnamn som du vill auktorisera. Avgränsa flera gruppnamn med dubbla citattecken och kommatecken. Till exempel:
+2. Lägg till de Active Directory-gruppnamn som du vill auktorisera. Avgränsa flera gruppnamn med dubbla citattecken och kommatecken. Ett exempel:
 
    ```json
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. Leta reda `LDAPPath` på inställningen och lägg till Active Directory-domänen. Till exempel:
+3. Leta reda `LDAPPath` på inställningen och lägg till Active Directory-domänen. Ett exempel:
 
    ```json
    "LDAPPath": "contoso.com"
@@ -231,21 +231,22 @@ I den här bilden **appsettings.jsfilen** är korrekt formaterad för rollauktor
 
 Klientorganisation och nyckelinställningar för DKE finns i **filenappsettings.jsfilen.**
 
-**Så här konfigurerar du klientorganisations- och nyckelinställningar för DKE**
+##### <a name="to-configure-tenant-and-key-settings-for-dke"></a>Så här konfigurerar du klientorganisations- och nyckelinställningar för DKE
 
 1. Öppna **filenappsettings.jsfilen.**
 
-2. Leta reda på `ValidIssuers` inställningen och ersätt med ditt `<tenantid>` klientorganisations-ID. Du kan hitta ditt klient-ID genom att gå till Azure-portalen och visa [klientorganisationens egenskaper.](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) Till exempel:
+2. Leta reda på `ValidIssuers` inställningen och ersätt med ditt `<tenantid>` klientorganisations-ID. Du kan hitta ditt klient-ID genom att gå till Azure-portalen och visa [klientorganisationens egenskaper.](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) Ett exempel:
 
    ```json
    "ValidIssuers": [
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+
 > [!NOTE]
 > Om du vill aktivera extern B2B-åtkomst till nyckelarkivet måste du också inkludera dessa externa innehavare som en del av listan över giltiga utfärdare.
 
-Leta reda på `JwtAudience` . Ersätt `<yourhostname>` med värdnamnet för den dator där DKE-tjänsten körs. Till exempel:
+Leta reda på `JwtAudience` . Ersätt `<yourhostname>` med värdnamnet för den dator där DKE-tjänsten körs. Ett exempel:
 
   > [!IMPORTANT]
   > Värdet för måste `JwtAudience` matcha värdens namn *exakt.* Du kan använda **localhost:5001** när du felsöker. Men när du är klar med felsökningen måste du uppdatera det här värdet till serverns värdnamn.
@@ -263,7 +264,7 @@ När du har definierat dina programinställningar är du redo att skapa offentli
 
 Så här skapar du nycklar:
 
-1. I Windows På Start-menyn kör du Kommandotolken i OpenSSL.
+1. I Windows Start-menyn kör du Kommandotolken i OpenSSL.
 
 2. Byt till den mapp där du vill spara testnycklarna. Filer som du skapar genom att utföra stegen i uppgiften lagras i samma mapp.
 
@@ -352,7 +353,7 @@ Använd följande anvisningar för att skapa DKE-projektet lokalt:
 
 4. Välj **Kör** \> **Starta felsökning för** att felsöka processen. Om du uppmanas att välja en miljö väljer du **.NET core**.
 
-   .NET core debugger startar vanligtvis på `https://localhost:5001` . Du visar testtangenten genom att gå till `https://localhost:5001` och lägga till ett snedstreck (/) och namnet på tangenten. Till exempel:
+   .NET core debugger startar vanligtvis på `https://localhost:5001` . Du visar testtangenten genom att gå till `https://localhost:5001` och lägga till ett snedstreck (/) och namnet på tangenten. Ett exempel:
 
    ```https
    https://localhost:5001/TestKey1
@@ -370,7 +371,7 @@ Du kanske föredrar andra metoder för att distribuera dina nycklar. Välj den m
 
 För pilotdistributioner kan du distribuera i Azure och komma igång direkt.
 
-**Så här skapar du en Azure Web App-instans som värd för DKE-distributionen**
+#### <a name="to-create-an-azure-web-app-instance-to-host-your-dke-deployment"></a>Så här skapar du en Azure Web App-instans som värd för DKE-distributionen
 
 När du ska publicera nyckellagringsnyckeln skapar du en Azure App Service-instans som värd för DKE-distributionen. Därefter ska du publicera de nycklar du skapat i Azure.
 
@@ -382,7 +383,7 @@ När du ska publicera nyckellagringsnyckeln skapar du en Azure App Service-insta
 
    - För **Publicera** väljer du **kod** och för **Runtime-stack** väljer du **.NET Core 3.1.**
 
-   Till exempel:
+   Ett exempel:
 
    > [!div class="mx-imgBorder"]
    > ![Lägg till din programtjänst](../media/dke-azure-add-app-service.png)
@@ -423,7 +424,7 @@ DKE distribueras och du kan bläddra till testnycklarna som du har skapat. Forts
 
 2. Kopiera anslutningssträngarna som visas till en lokal fil. Du använder strängarna för att ansluta till Webbtjänsten och ladda upp filer via FTP.
 
-   Till exempel:
+   Ett exempel:
 
    ![Kopiera anslutningssträngar från FTP-instrumentpanelen](../media/dke-ftp-dashboard.png)
 
@@ -453,7 +454,7 @@ Kör:
 src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
 ```
 
-Till exempel:
+Ett exempel:
 
 ```powershell
 key_store_tester.ps1 https://mydkeservice.com/mykey
@@ -477,7 +478,7 @@ Så här registrerar du DKE-tjänsten:
 
    Om du använder Microsoft Azure domän som inte är en egen domän, till exempel **onmicrosoft.com,** väljer du Konton endast i den här organisationskatalogen **(Endast Microsoft – enskild klient).**
 
-   Till exempel:
+   Ett exempel:
 
    > [!div class="mx-imgBorder"]
    > ![Registrering för ny app](../media/dke-app-registration.png)
@@ -530,18 +531,18 @@ Så här registrerar du DKE-tjänsten:
 
     4. Spara **ändringarna** genom att välja Spara högst upp.
 
-    5. Upprepa dessa steg, men nu definierar du klient-ID som `c00e9d32-3c8d-4a7d-832b-029040e7db99` . Det här värdet är det enhetliga klient-ID:t för Azure Information Protection. 
+    5. Upprepa dessa steg, men nu definierar du klient-ID som `c00e9d32-3c8d-4a7d-832b-029040e7db99` . Det här värdet är det enhetliga klient-ID:t för Azure Information Protection.
 
 Din DKE-tjänst är nu registrerad. Fortsätt genom [att skapa etiketter med DKE](#create-sensitivity-labels-using-dke).
 
 ## <a name="create-sensitivity-labels-using-dke"></a>Skapa känslighetsetiketter med DKE
 
-I Microsoft 365 säkerhets- och efterlevnadscenter skapar du en ny känslighetsetikett och tillämpar kryptering som du annars skulle göra. Välj **Använd dubbelnyckelkryptering** och ange slutpunkts-URL:en för din nyckel.
+I Microsoft 365 Efterlevnadscenter du en ny känslighetsetikett och tillämpar kryptering som du annars skulle göra. Välj **Använd dubbelnyckelkryptering** och ange slutpunkts-URL:en för din nyckel.
 
-Till exempel:
+Ett exempel:
 
 > [!div class="mx-imgBorder"]
-> ![Välj Använd dubbelnyckelkryptering i Microsoft 365 kompatibilitetscenter](../media/dke-use-dke.png)
+> ![Välj Använd dubbelnyckelkryptering i Microsoft 365 Efterlevnadscenter](../media/dke-use-dke.png)
 
 De DKE-etiketter du lägger till visas i de senaste versionerna av Microsoft 365-appar för företag.
 

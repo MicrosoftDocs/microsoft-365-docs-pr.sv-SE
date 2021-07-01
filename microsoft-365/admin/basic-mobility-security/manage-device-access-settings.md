@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security kan hjälpa dig att skydda och hantera mobila enheter.
-ms.openlocfilehash: dd9d777798c2c96776a8f9b40a3c4dfe0b95702a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 24eeb1dfccef3d30e577b15ecb9d2fda4d902cdc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876954"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228165"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Hantera inställningar för enhetsåtkomst i Basic Mobility and Security
 
@@ -33,10 +33,10 @@ Gör så här:
 
 1. Logga in på Microsoft 365 ditt globala administratörskonto.
 
-2. I webbläsaren skriver du:  [https://protection.office.com](https://protection.office.com/) .    
+2. I webbläsaren skriver du:  [https://protection.office.com](https://protection.office.com/) .
 
-    >[!IMPORTANT]
-    >Om det här är första gången du använder Basic Mobility and Security för Microsoft 365 Business Standard du det här: [Aktivera Grundläggande säkerhet och mobilitet.](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx) När du har aktiverat den kan du hantera dina enheter med [Office 365 säkerhet & efterlevnad.](https://protection.office.com/)
+    > [!IMPORTANT]
+    > Om det här är första gången du använder Basic Mobility and Security för Microsoft 365 Business Standard du det här: [Aktivera Grundläggande säkerhet och mobilitet.](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx) När du har aktiverat den kan du hantera dina enheter med [Office 365 säkerhet & efterlevnad.](https://protection.office.com/)
 
 3. Gå till Dataförlustskydd > **Principer för**   >  **enhetshantering** och välj **Hantera enhetsåtkomstinställningar för hela organisationen.**
 

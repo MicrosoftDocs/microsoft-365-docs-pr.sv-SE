@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5ecee4a71ef0b6f607a284766163a90f16bc27dc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5e92cd8b15a744301755dcd17633616e3061292c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843076"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53225981"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>Användbara Microsoft Defender för Slutpunkt-resurser
 
@@ -32,7 +32,7 @@ ms.locfileid: "52843076"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Få tillgång till användbara resurser, till exempel länkar till bloggar och andra resurser relaterade till Microsoft Defender för Slutpunkt.
 
@@ -57,7 +57,7 @@ Få tillgång till användbara resurser, till exempel länkar till bloggar och a
 
 - [Golden Hour-remake – Definiera mått för en framgångsrik säkerhetsoperation](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/The-Golden-Hour-remake-Defining-metrics-for-a-successful/ba-p/782014)
 
-- [Defender för slutpunktsutvärderingslabb är nu tillgängligt i offentlig förhandsversion   ](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Microsoft-Defender-ATP-Evaluation-lab-is-now-available-in-public/ba-p/770271)
+- [Defender för slutpunktsutvärderingslabb är nu tillgängligt i offentlig förhandsversion](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Microsoft-Defender-ATP-Evaluation-lab-is-now-available-in-public/ba-p/770271)
 
 - [Hur automatisering tillför värde till dina säkerhetsteam](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 

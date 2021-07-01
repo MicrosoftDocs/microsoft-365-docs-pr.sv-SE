@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Läs mer om tillgänglighetsnyckeln som används för att återställa förlorade kundnycklar.
-ms.openlocfilehash: 4f4dfdff0aa1c7ebe6dd1266c82c6fd290913a3e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: a4db6eab78feebd171dbfd5c8b45252837f229d0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345100"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227085"
 ---
 # <a name="learn-about-the-availability-key-for-customer-key"></a>Lär dig mer om tillgänglighetsnyckeln för Customer Key
 
@@ -155,8 +155,8 @@ Microsoft 365 utlöser bara tillgänglighetsnyckeln under vissa omständigheter.
 
        - I det här fallet används tillgänglighetsnyckeln endast för systemåtgärder och inte för användaråtgärder, användarens begäran misslyckas och användaren får ett felmeddelande.
 
->[!IMPORTANT]
->Microsoft 365-tjänstkod har alltid en giltig inloggningstoken som skäl över kunddata för att tillhandahålla värdebaserade molntjänster. Tills tillgänglighetsnyckeln har tagits bort kan den därför användas som reserv för åtgärder initierade av, eller interna till, Exchange Online och Skype för företag till exempel skapa sökindex eller flytta postlådor. Det här gäller både tillfälliga FEL och ÅTKOMST NEKADE förfrågningar till Azure Key Vault.
+> [!IMPORTANT]
+> Microsoft 365-tjänstkod har alltid en giltig inloggningstoken som skäl över kunddata för att tillhandahålla värdebaserade molntjänster. Tills tillgänglighetsnyckeln har tagits bort kan den därför användas som reserv för åtgärder initierade av, eller interna till, Exchange Online och Skype för företag till exempel skapa sökindex eller flytta postlådor. Det här gäller både tillfälliga FEL och ÅTKOMST NEKADE förfrågningar till Azure Key Vault.
 
 ### <a name="triggers-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Utlösare för SharePoint Online, OneDrive för företag och Teams filer
 

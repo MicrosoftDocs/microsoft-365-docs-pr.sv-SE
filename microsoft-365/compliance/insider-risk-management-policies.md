@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 23c2ed180606e61820c6e736e472aef0ae4933a5
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
-ms.translationtype: HT
+ms.openlocfilehash: f64fcf4908f119e261b07bbc4feaed2151e30187
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "52162560"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226437"
 ---
 # <a name="insider-risk-management-policies"></a>Principer för hantering av insiderrisk
 
@@ -52,8 +52,8 @@ Mallar för hantering av insiderrisk är fördefinierade principförhållanden s
 
 När användare lämnar din organisation finns det specifika riskindikatorer som vanligtvis är associerade med datastöld av användare som slutar. Denna principmall använder exfiltreringsindikatorer för riskbedömning och fokuserar på upptäckt och varningar inom detta riskområde. Datastöld av användare som slutar kan inkludera nedladdning av filer från SharePoint Online, utskrift av filer och kopiering av data till personliga molntjänster och lagringstjänster nära deras avgång och slutdatum. Genom att använda antingen Microsoft 365 HR-anslutning eller alternativet att automatiskt övervaka borttagning av användarkonton i Azure Active Directory för din organisation, börjar den här mallen att sätta poäng på riskindikatorer som rör dessa aktiviteter och hur de korrelerar med användarens anställningsstatus.
 
->[!IMPORTANT]
->När du använder den här mallen kan du konfigurera en Microsoft 365 HR-anslutning för att regelbundet importera information om avgångs- och uppsägningsdatum för användare i din organisation. Se artikeln [Importera data med HR-anslutning](import-hr-data.md) för steg-för-steg-vägledning för att konfigurera Microsoft 365 HR-anslutning för din organisation. Om du väljer att inte använda HR-anslutning, måste du välja alternativet Användarkontot togs bort från Azure Active Directory vid konfigurering av utlösningshändelser i steg-för-steg-guiden.
+> [!IMPORTANT]
+> När du använder den här mallen kan du konfigurera en Microsoft 365 HR-anslutning för att regelbundet importera information om avgångs- och uppsägningsdatum för användare i din organisation. Se artikeln [Importera data med HR-anslutning](import-hr-data.md) för steg-för-steg-vägledning för att konfigurera Microsoft 365 HR-anslutning för din organisation. Om du väljer att inte använda HR-anslutning, måste du välja alternativet Användarkontot togs bort från Azure Active Directory vid konfigurering av utlösningshändelser i steg-för-steg-guiden.
 
 ### <a name="general-data-leaks"></a>Allmänna dataläckor
 
@@ -74,8 +74,8 @@ När du skapar eller ändrar DLP-principerför användning med principer för ha
 
     ![Inställning för DLP-principavisering](../media/insider-risk-DLP-policy-high-severity.png)
 
-     >[!NOTE]
-     >När du skapar en ny DLP-princip med de inbyggda mallarna måste du välja alternativet **Skapa eller anpassa avancerade DLP-regler** för att konfigurera inställningen för **Incidentrapporter** för *Hög* allvarlighetsgrad.
+     > [!NOTE]
+     > När du skapar en ny DLP-princip med de inbyggda mallarna måste du välja alternativet **Skapa eller anpassa avancerade DLP-regler** för att konfigurera inställningen för **Incidentrapporter** för *Hög* allvarlighetsgrad.
 
 Varje princip för hantering av insiderrisk som skapas från mallen för **Dataläckor** kan bara tilldelas en DLP-princip. Överväg att skapa en dedikerad DLP-princip som kombinerar de olika aktiviteterna du vill upptäcka och som fungerar som utlösande händelser för principer för insiderrisk som använder mallen för **Dataläckor**.
 
@@ -164,8 +164,8 @@ Dessa principer för hantering av insiderrisk kan använda specifika indikatorer
 - **Förvirring**: Dessa kategorisignaler fokuserar på maskering av riskabla aktiviteter av principanvändare inom omfattningen. Ett exempel på en aktivitet i den här kategorin är att byta namn på filer i en enhet.
 - **Rensa**: Dessa kategorisignaler fokuserar på borttagningsaktiviteter av principanvändare inom omfattningen. Ett exempel på en aktivitet i den här kategorin är att ta bort filer från en enhet.
 
->[!NOTE]
->Sekvensdetektering använder indikatorer som är aktiverade i de globala inställningarna för hantering av insiderrisk och indikatorer som väljs i en princip. Om inga lämpliga indikatorer väljs fungerar inte sekvensdetektering.
+> [!NOTE]
+> Sekvensdetektering använder indikatorer som är aktiverade i de globala inställningarna för hantering av insiderrisk och indikatorer som väljs i en princip. Om inga lämpliga indikatorer väljs fungerar inte sekvensdetektering.
 
 Du kan anpassa individuella tröskelinställningar för varje typ av sekvensdetektering när de konfigureras i principen. Dessa tröskelinställningar justerar varningar baserat på volymen av filer som är associerade med sekvensen.
 
@@ -182,8 +182,8 @@ Identifiering av kumulativ dataexfiltrering är aktiverad som standard när du a
 - Dataläckor av prioritetsanvändare
 - Dataläckage av missnöjda användare
 
->[!NOTE]
->Identifiering av kumulativ exfiltrering använder exfilreringsindikatorer som är aktiverade i de globala inställningarna för hantering av insiderrisk och exfilreringsindikatorer som väljs i en princip. Som sådan utvärderas identifiering av kumulativ exfiltrering endast för de nödvändiga exfiltreringsindikatorerna.
+> [!NOTE]
+> Identifiering av kumulativ exfiltrering använder exfilreringsindikatorer som är aktiverade i de globala inställningarna för hantering av insiderrisk och exfilreringsindikatorer som väljs i en princip. Som sådan utvärderas identifiering av kumulativ exfiltrering endast för de nödvändiga exfiltreringsindikatorerna.
 
 När identifiering av kumulativ exfiltrering är aktiverad för principer för datastöld eller dataläckor visas insikter från kumulativa exfiltreringsaktiviteter på fliken **Användaraktivitet** i ett fall för hantering av insiderrisk.
 
@@ -260,8 +260,8 @@ Slutför följande steg för att skapa en ny princip:
 2. Välj **Skapa princip** för att öppna principguiden.
 3. På sidan **Principmall** väljer du en principkategori och väljer sedan mallen för den nya principen. De här mallarna består av villkor och indikatorer som definierar den riskaktivitet du vill identifiera och undersöka. Granska förutsättningarna, utlösande händelser och upptäckta aktiviteter flr mallen för att bekräfta att denna principmall passar dina behov.
 
-    >[!IMPORTANT]
-    >Vissa principmallar har förutsättningar som måste konfigureras för att principen ska generera relevanta varningar. Om du inte har konfigurerat tillämpliga principförutsättningar, se **Steg 4** ovan.
+    > [!IMPORTANT]
+    > Vissa principmallar har förutsättningar som måste konfigureras för att principen ska generera relevanta varningar. Om du inte har konfigurerat tillämpliga principförutsättningar, se **Steg 4** ovan.
 
 4. Gå vidare genom att klicka på **Nästa.**
 5. På sidan **Namn och beskrivning** färdigställer du följande fält:
@@ -287,8 +287,8 @@ Slutför följande steg för att skapa en ny princip:
 12. Gå vidare genom att klicka på **Nästa.**
 13. På sidan **Indikatorer och utlösande händelser** kommer du att se [indikatorerna](insider-risk-management-settings.md#indicators) som du har definierat som tillgängliga på sidan **Inställningar för insiderrisk** > **Indikatorer**. Om du valde en mall för *Dataläckor* i början av guiden måste du välja en DLP-princip i **DLP-principens** nedrullningsbara lista för att aktivera utlösande indikatorer för principen eller välja den inbyggda utlösande händelsen.
 
-    >[!IMPORTANT]
-    >Om indikatorer på den här sidan inte kan väljas måste du välja de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer** i guiden eller välja indikatorerna på sidan **Hantering av insiderrisk** > **Inställningar** > **Principindikatorer**.
+    > [!IMPORTANT]
+    > Om indikatorer på den här sidan inte kan väljas måste du välja de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer** i guiden eller välja indikatorerna på sidan **Hantering av insiderrisk** > **Inställningar** > **Principindikatorer**.
 
     Välj de indikatorer som du vill tillämpa på principen. Om du föredrar att inte använda principens standardtrösklar för dessa indikatorer, inaktivera **Använd standardtrösklar som rekommenderas av Microsoft** och ange tröskelvärdena för varje vald indikator.
 
@@ -332,8 +332,8 @@ Slutför följande steg för att hantera en befintlig princip:
 12. Gå vidare genom att klicka på **Nästa.**
 13. På sidan **Indikatorer och utlösande händelser** kommer du att se [indikatorerna](insider-risk-management-settings.md#indicators) som du har definierat som tillgängliga på sidan **Inställningar för insiderrisk** > **Indikatorer**. Om du valde en mall för *Dataläckor* i början av guiden måste du välja en DLP-princip i **DLP-principens** nedrullningsbara lista för att aktivera utlösande indikatorer för principen eller välja den inbyggda utlösande händelsen.
 
-    >[!IMPORTANT]
-    >Om indikatorer på den här sidan inte kan väljas måste du välja de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer** i guiden eller välja indikatorerna på sidan **Hantering av insiderrisk** > **Inställningar** > **Principindikatorer**.
+    > [!IMPORTANT]
+    > Om indikatorer på den här sidan inte kan väljas måste du välja de indikatorer som du vill aktivera för alla principer. Du kan använda knappen **Aktivera indikatorer** i guiden eller välja indikatorerna på sidan **Hantering av insiderrisk** > **Inställningar** > **Principindikatorer**.
 
     Välj de indikatorer som du vill tillämpa på principen. Om du föredrar att inte använda principens standardtrösklar för dessa indikatorer, inaktivera **Använd standardtrösklar som rekommenderas av Microsoft** och ange tröskelvärdena för varje vald indikator.
 
@@ -366,8 +366,8 @@ Några scenarier där du kanske omedelbart vill börja göra användaraktivitete
 - När det finns en incident som kan kräva att du omedelbart börjar tilldela riskpoäng för de berörda användarnas aktiviteter för en eller flera av dina principer
 - När du har inte konfigurerat en HR-anslutning ännu, men du kan börja tilldela riskpoäng till användaraktiviteter för HR-händelser genom att ladda upp en CSV-fil för användarna
 
->[!NOTE]
->Det kan ta flera timmar för nya manuellt tillagda användare att visas i instrumentpanelen för **Användare**. Det kan ta upp till 24 timmar att visa aktiviteter för de senaste 90 dagarna för dessa användare. Om du vill visa aktiviteter för användare som har lagts till manuellt navigerar du till fliken **Användare** och väljer användaren på instrumentpanelen för **Användare** och öppnar fliken **Användaraktivitet** i informationsfönstret.
+> [!NOTE]
+> Det kan ta flera timmar för nya manuellt tillagda användare att visas i instrumentpanelen för **Användare**. Det kan ta upp till 24 timmar att visa aktiviteter för de senaste 90 dagarna för dessa användare. Om du vill visa aktiviteter för användare som har lagts till manuellt navigerar du till fliken **Användare** och väljer användaren på instrumentpanelen för **Användare** och öppnar fliken **Användaraktivitet** i informationsfönstret.
 
 För att manuellt starta poängsättningsaktivitet för användare i en eller flera principer för hantering av insiderrisk, gör du följande:
 
@@ -393,8 +393,8 @@ Gå till artikeln [Användare av hantering av insiderrisk: Ta bort användare fr
 
 ## <a name="delete-a-policy"></a>Ta bort en princip
 
->[!NOTE]
->Borttagning av en princip tar inte bort aktiva eller arkiverade varningar som genereras från principen.
+> [!NOTE]
+> Borttagning av en princip tar inte bort aktiva eller arkiverade varningar som genereras från principen.
 
 Ta följande steg för att ta bort en befintlig princip för hantering av internrisk:
 

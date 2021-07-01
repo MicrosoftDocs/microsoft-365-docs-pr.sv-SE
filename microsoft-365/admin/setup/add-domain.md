@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Använd installationsguiden för att lägga till din domän Microsoft 365 i Microsoft 365 genom att lägga till en DNS-post hos din DNS-värd.
-ms.openlocfilehash: 152144737b0ff8cb8b0c27db2a4fc1051fb2a8a7
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Använd installationsguiden för att lägga till din domän Microsoft 365 i Administrationscenter för Microsoft 365 genom att lägga till en DNS-post hos DNS-värden.
+ms.openlocfilehash: 547a3bf242130993522b00f53819908b10c9e4d1
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635684"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227841"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Lägga till en domän i Microsoft 365
 
@@ -80,8 +80,6 @@ Följ de här anvisningarna om du vill lägga till, konfigurera eller fortsätta
 7. Om du väljer att lägga  till *DNS-poster* själv väljer du Nästa. Då visas en sida med alla poster som du behöver lägga till på domänregistratorns webbplats för att konfigurera domänen. 
 
     Om portalen inte känner igen din registrator kan du [följa de här allmänna anvisningarna.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
-    
-    Kontrollera listan med [värdspecifika instruktioner](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) för att hitta din värd och följ sedan anvisningarna för att lägga till alla posterna du behöver. 
     
     Om du inte känner till DNS-värden eller domänregistratorn för din domän kan du läsa [Hitta din domänregistrator eller DNS-värd](../get-help-with-domains/find-your-domain-registrar.md).
     
@@ -139,4 +137,3 @@ Om du har en webbplats som du använder med ditt företag kommer den att fortsä
 [Vanliga frågor och svar om domäner](domains-faq.yml) (artikel)\
 [Vad är en domän?](../get-help-with-domains/what-is-a-domain.md) (artikel)\
 [Köp ett domännamn i Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (artikel)\
-[Konfigurera din domän](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (artikel)

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b59fb57ebd17050624ce36805558dcd1eef0503
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "52162798"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226533"
 ---
 # <a name="insider-risk-management-cases"></a>Insider-riskhanteringsärenden
 
@@ -142,8 +142,8 @@ Fliken **Användaraktivitet** är ett av de mest kraftfulla verktygen för inter
 
 ### <a name="activity-explorer-preview"></a>Aktivitetsutforskaren (förhandsversion)
 
->[!IMPORTANT]
->Fliken Aktivitetsutforskaren är tillgänglig i området Ärendehantering för användare med utlösande händelser när den här funktionen är tillgänglig i din organisation.
+> [!IMPORTANT]
+> Fliken Aktivitetsutforskaren är tillgänglig i området Ärendehantering för användare med utlösande händelser när den här funktionen är tillgänglig i din organisation.
 
 På **fliken Aktivitetsutforskaren** kan riskanalytiker och experter granska aktivitetsinformation som är kopplad till riskvarningar. Som en del av åtgärderna för ärendehantering kan till exempel finansanalytiker och analytiker behöva granska alla riskaktiviteter som är associerade med ärendet för att få mer information. Med **Aktivitetsutforskaren** kan granskare snabbt granska en tidslinje med identifierade riskfyllda aktiviteter och identifiera och filtrera alla riskaktiviteter som är associerade med aviseringar.
 
@@ -165,7 +165,7 @@ Instrumentpanelen för ärendeanteckningar visas anteckningar från användaren 
 
 Så här lägger du till en anteckning i ett ärende:
 
-1. I Microsoft 365 [på Säkerhets-](https://compliance.microsoft.com)och efterlevnadscenter går du till **Insider-riskhantering** och väljer **fliken** Ärenden.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering** och väljer **fliken** Ärenden.
 2. Markera ett ärende och välj sedan **fliken Ärendeanteckningar.**
 3. Välj **Lägg till ärendeanteckning**.
 4. Skriv **anteckningen för ärendet** i dialogrutan Lägg till ärendeanteckning. Välj **Spara** om du vill lägga till anteckningen i ärendet eller välj **Avbryt** stängning utan att spara anteckningen i ärendet.
@@ -182,7 +182,7 @@ Temporär åtkomst till ett ärende kan beviljas genom att en användare läggs 
 
 Så här lägger du till en deltagare i ett ärende:
 
-1. I Microsoft 365 [på Säkerhets-](https://compliance.microsoft.com)och efterlevnadscenter går du till **Insider-riskhantering** och väljer **fliken** Ärenden.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering** och väljer **fliken** Ärenden.
 2. Markera ett ärende och välj sedan **fliken** Deltagare.
 3. Välj **Lägg till deltagare.**
 4. Börja skriva **namnet på** den användare som du vill lägga till i dialogrutan Lägg till deltagare och välj sedan användaren från listan med förslag på användare. Den här listan genereras från Azure Active Directory av din klientorganisationsprenumeration.
@@ -200,7 +200,7 @@ Det är viktigt att komma ihåg att det inte löser problemet **genom** att skic
 
 Så här skickar du ett meddelande till användaren som har tilldelats ett ärende:
 
-1. I Microsoft 365 [på Säkerhets-](https://compliance.microsoft.com)och efterlevnadscenter går du till **Insider-riskhantering** och väljer **fliken** Ärenden.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering** och väljer **fliken** Ärenden.
 2. Markera ett ärende och välj sedan knappen **Skicka e-postmeddelande i** åtgärdsverktygsfältet.
 3. I dialogrutan **Skicka e-postmeddelande väljer** du listrutekontrollen Välj en meddelandemall för att välja meddelandemallen för meddelandet.  Det här valet fyller i de andra fälten i meddelandet i förväg.
 4. Granska meddelandefälten och uppdatera efter behov. Värdena som anges här åsidosätter värdena i mallen.
@@ -212,13 +212,13 @@ Eskalera ärendet för användarundersökning i situationer där det krävs ytte
 
 Så här eskalerar du ett ärende till en användarundersökning:
 
-1. I Microsoft 365 [på Säkerhets-](https://compliance.microsoft.com)och efterlevnadscenter går du till **Insider-riskhantering** och väljer **fliken** Ärenden.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering** och väljer **fliken** Ärenden.
 2. Markera ett ärende och välj sedan **knappen Eskalera för undersökning** i verktygsfältet för fallåtgärd.
 3. I dialogrutan **Eskalera för undersökning** anger du ett namn för den nya användarundersökningen. Om det behövs skriver du kommentarer om ärendet och väljer **Eskalera**.
 4. Granska meddelandefälten och uppdatera efter behov. Värdena som anges här åsidosätter värdena i mallen.
 5. Välj **Bekräfta för** att skapa användarundersökningsfall eller välj **Avbryt** för att stänga dialogrutan utan att skapa ett nytt användarundersökningsfall.
 
-När insider-ärendet har eskalerats till ett nytt ärende för användarundersökning kan du granska det nya ärendet i området Avancerat för **e-dataidentifiering**  >   i Microsoft 365 efterlevnadscenter.
+När insider-ärendet har eskalerats till ett nytt användarundersökningsfall kan du granska det nya ärendet i området Avancerat för **e-dataidentifiering**  >   i Microsoft 365 Efterlevnadscenter.
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Köra automatiserade uppgifter med Power Automate flöden för ärendet
 
@@ -256,7 +256,7 @@ När riskanalytiker och undersökningar har slutfört sin granskning och unders�
 
 Så här löser du ett ärende:
 
-1. I Microsoft 365 [på Säkerhets-](https://compliance.microsoft.com)och efterlevnadscenter går du till **Insider-riskhantering** och väljer **fliken** Ärenden.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering** och väljer **fliken** Ärenden.
 2. Markera ett ärende och välj sedan **knappen Lös ärende** i åtgärdsverktygsfältet.
 3. Välj **listrutekontrollen** Lös som **i** dialogrutan Lös ärende och välj klassificeringen för ärendets upplösning. Alternativen är **bekräftad** **eller bekräftad principbrott.**
 4. I dialogrutan **Lös ärende** anger du orsakerna till lösningsklassificering i **textfältet Åtgärder** vidtas.

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: När du skapar en känslighetsetikett kan du automatiskt tilldela filer och e-postmeddelanden en etikett, eller så kan du uppmana användarna att välja den etikett som du rekommenderar.
-ms.openlocfilehash: 6b74c36707b9fe1fdbe00eb7058554b54ec95755
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 2f873482dc351050a87993420e718f6de87ac218
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194775"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227537"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Använda en känslighetsetikett för innehåll automatiskt
 
@@ -44,20 +44,20 @@ När innehållet har etiketterats manuellt kommer den etiketten aldrig att ersä
 
 Det finns två olika metoder för att automatiskt använda en känslighetsetikett för innehåll i Microsoft 365:
 
-- **Etikett på klientsidan när användare redigerar dokument eller skriver (eller svarar på eller vidarebefordrar) e-postmeddelanden**: Använd en etikett som är konfigurerad för automatisk etikettering för filer och e-postmeddelanden (inkluderar Word, Excel, PowerPoint och Outlook). 
-    
-    Den här metoden kan användas för att rekommendera en etikett till användare, liksom att automatiskt använda en etikett. I båda fallen bestämmer användaren om du vill acceptera eller avvisa etiketten för att säkerställa rätt etikettering av innehållet. På den här sidan i klienten finns det minimalt med dokument. det innebär att du inte kan använda etiketter. Det är dock inga klient program som har stöd för automatisk etikettering. Den här funktionen stöds av den enhetliga klient versionen av Azure information Protection och [vissa versioner av Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps). 
-    
+- **Etikett på klientsidan när användare redigerar dokument eller skriver (eller svarar på eller vidarebefordrar) e-postmeddelanden**: Använd en etikett som är konfigurerad för automatisk etikettering för filer och e-postmeddelanden (inkluderar Word, Excel, PowerPoint och Outlook).
+
+    Den här metoden kan användas för att rekommendera en etikett till användare, liksom att automatiskt använda en etikett. I båda fallen bestämmer användaren om du vill acceptera eller avvisa etiketten för att säkerställa rätt etikettering av innehållet. På den här sidan i klienten finns det minimalt med dokument. det innebär att du inte kan använda etiketter. Det är dock inga klient program som har stöd för automatisk etikettering. Den här funktionen stöds av den enhetliga klient versionen av Azure information Protection och [vissa versioner av Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+
     Instruktioner för konfiguration finns i [hur du konfigurerar automatisk etikettering för Office-program](#how-to-configure-auto-labeling-for-office-apps) på den här sidan.
 
-- **Etikettering på tjänstsidan när innehåll redan har sparats (i SharePoint eller OneDrive) eller mejlats (bearbetats av Exchange Online)**: Använd en princip för automatisk etikettering. 
-    
+- **Etikettering på tjänstsidan när innehåll redan har sparats (i SharePoint eller OneDrive) eller mejlats (bearbetats av Exchange Online)**: Använd en princip för automatisk etikettering.
+
     Du kanske också har hört att metoden kallas för automatisk etikettering av data i vila (dokument i SharePoint och OneDrive) och data som överförs (e-post som skickas eller tas emot av Exchange). För Exchange innehåller det inte e-postmeddelanden i vila (postlådor).
-    
+
     Eftersom den här etiketteringen tillämpas av tjänster i stället för program behöver du inte oroa dig för vilket appanvändare har eller vilken version. Därför är den här funktionen omedelbart tillgänglig i hela organisationen och lämpar sig för etikettering vid skalan. Automatiskt märkta principer har inte stöd för Rekommenderad etikett eftersom användaren inte interagerar med namngivnings processen. I stället körs principerna i simuleringsläge för att säkerställa rätt etikettering av innehållet innan etiketten tillämpas.
-    
+
     Instruktioner för konfiguration finns i [hur du konfigurerar principer för automatisk etikettering för SharePoint, OneDrive och Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) på den här sidan.
-    
+
     Specifikt för autoetikettering för SharePoint och OneDrive:
     - Office-filer för Word, PowerPoint och Excel stöds. Öppna XML-format stöds (t.ex. .docx och .xlsx) men inte Microsoft Office 97-2003-format (t.ex. .doc och .xls).
         - Filerna kan märkas automatiskt före eller efter att principerna för automatisk etikettering har skapats. Filer kan inte etiketteras automatiskt om de är en del av en öppen session (filen är öppen).
@@ -77,7 +77,7 @@ Det finns två olika metoder för att automatiskt använda en känslighetsetiket
         - Om etiketten har konfigurerats för [kryptering](encryption-sensitivity-labels.md), tillämpas inte den krypteringen.
         - Om etiketten är konfigurerad för att tillämpa [dynamiska markeringar](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) bör du vara medveten om att det kan resultera i namnen på personer utanför organisationen.
     - När etiketten tillämpar kryptering är [utfärdaren av rättighetshantering och ägaren av rättighetshantering](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) den person som skickar e-postmeddelandet. För närvarande går det inte att ställa in ägare för rättighetshantering för alla inkommande e-postmeddelanden som krypteras automatiskt.
-    
+
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Jämföra automatisk etikettering för Office-appar med principer för automatisk etikettering
 
@@ -115,7 +115,7 @@ Mer information om överordnade etiketter och underetiketter finns i [Underetike
 
 Automatisk etikettering i Office-appar för Windows stöds av Azure Information Protection-klienten för enhetliga etiketter. För inbyggd etikettering i Office-appar finns den här funktionen i [olika faser av tillgänglighet för olika appar](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-Inställningarna för automatisk etikettering för Office-appar är tillgängliga när du [skapar eller redigerar en känslighetsetikett](create-sensitivity-labels.md). Kontrollera att **Filer och e-postmeddelanden** är valt för etikettens omfattning: 
+Inställningarna för automatisk etikettering för Office-appar är tillgängliga när du [skapar eller redigerar en känslighetsetikett](create-sensitivity-labels.md). Kontrollera att **Filer och e-postmeddelanden** är valt för etikettens omfattning:
 
 ![Omfångsalternativ för känslighetsetiketter i filer och e-postmeddelanden](../media/filesandemails-scope-options-sensitivity-label.png)
 
@@ -142,7 +142,7 @@ Mer information om de här konfigurationsalternativen från DLP-dokumentationen 
 Precis som med DLP-principkonfigurationen kan du också välja om ett villkor ska identifiera alla typer av känslig information eller bara en av dem. Om du vill göra villkoren mer flexibla eller komplexa kan du lägga till [grupper och använda logiska operatorer mellan grupperna](data-loss-prevention-policies.md#grouping-and-logical-operators).
 
 > [!NOTE]
-> Principer för automatisk etikettering som baseras på anpassade typer av känslig information gäller endast för nyligen skapat eller ändrat innehåll i OneDrive och SharePoint, inte för befintligt innehåll. 
+> Principer för automatisk etikettering som baseras på anpassade typer av känslig information gäller endast för nyligen skapat eller ändrat innehåll i OneDrive och SharePoint, inte för befintligt innehåll.
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>Konfigurera träningsbara klassificerare för en etikett
 
@@ -194,7 +194,7 @@ Specifikt för inbyggd etikettering:
 
 - För rekommenderade etiketter i skrivbordsversionerna av Word flaggas det känsliga innehåll som utlöste rekommendationen så att användare kan granska och ta bort det känsliga innehållet i stället för att använda den rekommenderade känslighetsetiketten.
 
-- Mer information om hur de här etiketterna används i Office-appar, exempel på skärmbilder och hur känslig information identifieras finns i [Tillämpa känslighetsetiketter automatiskt eller rekommendera känslighetsetiketter för filer och e-postmeddelanden i Office](https://support.office.com/sv-SE/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Mer information om hur de här etiketterna används i Office-appar, exempel på skärmbilder och hur känslig information identifieras finns i [Tillämpa känslighetsetiketter automatiskt eller rekommendera känslighetsetiketter för filer och e-postmeddelanden i Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Specifikt för Azure Information Protection-klienten för enhetliga etiketter:
 
@@ -206,7 +206,7 @@ Specifikt för Azure Information Protection-klienten för enhetliga etiketter:
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>Så här konfigurerar du principer för automatisk etikettering för SharePoint, OneDrive och Exchange
 
-Kontrollera att du är medveten om kraven innan du konfigurerar principer för automatisk etikettering. 
+Kontrollera att du är medveten om kraven innan du konfigurerar principer för automatisk etikettering.
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>Krav för principer för automatisk etikettering
 
@@ -218,7 +218,7 @@ Kontrollera att du är medveten om kraven innan du konfigurerar principer för a
     - Du har [aktiverade känslighetsetiketter för Office-filer i SharePoint och OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
     - När principen för automatisk etikettering körs får filen inte vara öppen av en annan process eller användare. En fil som är utcheckad för redigering tillhör den här kategorin.
 
-- Om du planerar att använda [anpassade typer av känslig information](sensitive-information-type-learn-about.md) i stället för de inbyggda känslighetstyperna: 
+- Om du planerar att använda [anpassade typer av känslig information](sensitive-information-type-learn-about.md) i stället för de inbyggda känslighetstyperna:
     - Anpassade typer av känslighetsinformation gäller endast för innehåll som läggs till eller ändras i SharePoint eller OneDrive när de anpassade typer av känslighetsinformation har tillämpats.
     - Om du vill testa nya anpassade typer av känslig information skapar du dem innan du skapar din automatiska etikettprincip och skapar sedan nya dokument med exempeldata för testning.
 
@@ -254,42 +254,42 @@ Slutligen kan du använda simuleringsläge för att få en ungefärlig bild av h
 ### <a name="creating-an-auto-labeling-policy"></a>Skapa en princip för automatisk etikettering
 
 1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/) går du till känslighetsetiketter:
-    
+
     - **Lösningar** > **Informationsskydd**
-    
+
     Om du inte ser det här alternativet direkt väljer du först **Visa alla**.
 
 2. Välj fliken **Automatisk etikettering**:
-    
+
     ![Fliken Automatisk etikettering](../media/auto-labeling-tab.png)
-    
+
     > [!NOTE]
     > Om fliken **Automatisk etikettering** inte visas är den här funktionen inte tillgänglig i din region.
 
 3. Välj **+Skapa princip för automatisk etikettering**. Guiden för ny princip startas:
-    
-    ![Ny principguide för automatisk etikettering ](../media/auto-labeling-wizard.png)
+
+    ![Ny principguide för automatisk etikettering](../media/auto-labeling-wizard.png)
 
 4. På sidan **Välj information som du vill att etiketten ska tillämpas på**: Välj en av mallarna, till exempel **Ekonomi** eller **Sekretess**. Du kan förfina sökningen med hjälp av listrutan **Visa alternativ för**. Eller välj **Anpassad princip** om mallarna inte uppfyller dina krav. Välj **Nästa**.
 
 5. På sidan **Namnge principen för automatiska etiketter**: Ange ett unikt namn och alternativt en beskrivning för att identifiera automatiskt tillämpade etiketter, platser och villkor som identifierar innehållet på etiketten.
 
 6. På sidan **Välj platser där du vill tillämpa etiketten**: Välj och ange platser för Exchange, SharePoint-webbplatser och OneDrive. Välj sedan **Nästa**.
-    
-    ![Choose locations page auto-labelingwizard ](../media/locations-auto-labeling-wizard.png)
-    
+
+    ![Choose locations page auto-labelingwizard](../media/locations-auto-labeling-wizard.png)
+
     Du måste ange enskilda SharePoint-webbplatser och OneDrive-konton. För OneDrive har URL-adressen för en användares OneDrive-konto följande format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
-    
+
     Exempelvis för en användare i Contoso-klientorganisationen som har användarnamnet ”rsimone”: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-    
+
     Information om hur du verifierar klientorganisationens syntax och identifierar URL-adresser för användare finns i [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls) (Få en lista över alla OneDrive-URL:er för användare i organisationen).
 
 7. På sidan **Konfigurera gemensamma eller avancerade regler**: Behåll standardinställningen **Gemensamma regler** för att definiera regler som identifierar innehåll som ska märkas på alla valda platser. Om du behöver olika regler per plats väljer du **Avancerade regler**. Välj sedan **Nästa**.
-    
+
     Reglerna använder villkor som innehåller typer av känslig information och delningsalternativ:
     - För känslig information kan du välja både inbyggda och anpassade typer av känslig information.
     - För de delade alternativen kan du välja **bara med personer inom organisationen** eller **med personer utanför organisationen**.
-    
+
     Om den enda platsen **är Exchange**, eller om du väljer **Avancerade regler**, finns det ytterligare villkor som du kan välja:
     - Avsändarens IP-adress är
     - Mottagardomän är
@@ -306,19 +306,19 @@ Slutligen kan du använda simuleringsläge för att få en ungefärlig bild av h
     - Avsändardomänen är
     - Mottagaren är medlem i
     - Avsändaren är
-    
+
     För vart och ett av dessa villkor kan du sedan ange undantag.
-    
+
 8. Beroende på dina tidigare val har du nu möjlighet att skapa nya regler med hjälp av villkor och undantag.
-    
+
     Konfigurationsalternativen för typer av känslig information är desamma som de du väljer för automatisk etikettering för Office-appar. Om du behöver mer information går du till [Konfigurera typer av känslig information för en etikett](#configuring-sensitive-info-types-for-a-label).
-    
+
     När du har definierat alla regler du behöver och bekräftat att deras status är på väljer du **Nästa** för att gå vidare och välja en etikett som ska tillämpas automatiskt.
 
 11. På sidan **Välj en etikett som ska tillämpas automatiskt**: Välj **+ Välj en etikett**, välj en etikett i fönstret **Välj en känslighetsetikett** och välj sedan **Nästa**.
 
-12. På sidan **Bestäm om du vill testa principen nu eller senare**: Välj **Kör principen i simuleringsläge** om du är redo att köra principen för automatisk etikettering i simuleringsläge nu. Annars väljer du **Låt principen förbli inaktiverad**. Välj **Nästa**: 
-    
+12. På sidan **Bestäm om du vill testa principen nu eller senare**: Välj **Kör principen i simuleringsläge** om du är redo att köra principen för automatisk etikettering i simuleringsläge nu. Annars väljer du **Låt principen förbli inaktiverad**. Välj **Nästa**:
+
     ![Testa principen för att skapa automatisk etikettering](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. På sidan **Sammanfattning**: Kontrollera konfigurationen av principen för automatisk etikettering, gör de ändringar som behövs och slutför guiden.
@@ -330,9 +330,9 @@ Du kan ändra din princip direkt i det här gränssnittet:
 - För en princip i avsnittet **Av** väljer du knappen **Redigera princip**.
 
 - För princip i avsnittet **Simulering** väljer du alternativet **Redigera princip** högst upp på sidan på någon av flikarna:
-    
+
     ![Alternativ för att redigera en princip för automatisk etikettering](../media/auto-labeling-edit.png)
-    
+
     När du är redo att köra principen utan simulering väljer du alternativet **Aktivera principen**.
 
 Dina automatiska principer körs kontinuerligt tills de tas bort. Nya och ändrade dokument inkluderas exempelvis i de aktuella principinställningarna.
@@ -350,12 +350,12 @@ Du kan använda [Säkerhets- och efterlevnadscenter PowerShell](/powershell/exch
 
 Innan du kör kommandona i PowerShell måste du först [ansluta till Säkerhets- och efterlevnadscentret via PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-Skapa en ny princip för automatisk etikettering: 
+Skapa en ny princip för automatisk etikettering:
 
 ```powershell
 New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocation "<SharePointSiteLocation>" -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
-Med det här kommandot skapas en princip med automatisk etikettering för en SharePoint-webbplats som du anger. För en OneDrive-plats använder du istället parametern *OneDriveLocation*. 
+Med det här kommandot skapas en princip med automatisk etikettering för en SharePoint-webbplats som du anger. För en OneDrive-plats använder du istället parametern *OneDriveLocation*.
 
 Så här lägger du till fler webbplatser i en befintlig princip för automatisk etikettering:
 
@@ -389,11 +389,11 @@ Mer information om PowerShell-cmdletar som stöder automatiska etiketter, deras 
 Även om automatisk etikettering är ett av de mest effektiva sätten att klassificera, märka och skydda Office-filer som din organisation äger, kontrollera om du kan komplettera det med någon av de ytterligare metoderna för att öka din etiketteringsräckvidd:
 
 - När du använder [Azure Information Protection enhetliga etiketteringsklienten](/azure/information-protection/rms-client/aip-clientv2):
-    
+
     - För filer i lokala datalager som nätverksresurser och SharePoint Server-bibliotek: Använd [-skannern](/azure/information-protection/deploy-aip-scanner) för att identifiera känslig information i dessa filer och märka dem på rätt sätt. Om du planerar att migrera eller ladda upp dessa filer till SharePoint i Microsoft 365 använder du skannern för att märka filerna innan du flyttar dem till molnet.
-    
+
     - Om du har använt en annan etikettlösning innan du använder känslighetsetiketter: Använd PowerShell och [en avancerad inställning för att återanvända etiketter](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) från dessa lösningar.
 
-- Uppmuntra [manuell etikettering](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) när du har gett användarna utbildning om vilka känslighetsetiketter som ska tillämpas. När du är säker på att användarna förstår vilken etikett som ska tillämpas bör du överväga att konfigurera en standardetikett och obligatorisk etikettering som [principinställningar](sensitivity-labels.md#what-label-policies-can-do). 
+- Uppmuntra [manuell etikettering](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) när du har gett användarna utbildning om vilka känslighetsetiketter som ska tillämpas. När du är säker på att användarna förstår vilken etikett som ska tillämpas bör du överväga att konfigurera en standardetikett och obligatorisk etikettering som [principinställningar](sensitivity-labels.md#what-label-policies-can-do).
 
 Överväg också [att markera nya filer som känsliga som standard](/sharepoint/sensitive-by-default) i SharePoint för att hindra gäster från att komma åt nyligen tillagda filer tills minst en DLP-princip söker igenom innehållet i filen.

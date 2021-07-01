@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Deklarera poster med hjälp av kvarhållningsetiketter.
-ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: ba0587619609adba2d7746a45a3b24008a4a00be
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903906"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227001"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Deklarera poster med hjälp av kvarhållningsetiketter
 
@@ -36,7 +36,7 @@ Därefter kan du antingen publicera etiketterna i en policy för kvarhållningse
 
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>Så här visar du alternativet för att markera innehåll som en regelbaserad post
 
->[!NOTE] 
+> [!NOTE]
 > Följande procedur är en granskningsbar åtgärd som medför att **Aktivering av alternativet för regelbaserade poster för kvarhållningsetiketter** loggas i avsnittet [Kvarhållningspolicy och aktiviteter gällande kvarhållningsetiketter](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) i granskningsloggen.
 
 Som standard visas inte alternativet för kvarhållningsetiketter, där innehåll kan markeras som en regelbaserad post, i guiden för kvarhållningsetiketter. Om du vill att det här alternativet ska visas måste du först köra ett PowerShell-kommando:
@@ -44,13 +44,14 @@ Som standard visas inte alternativet för kvarhållningsetiketter, där innehål
 1. [Anslut till Säkerhets- och efterlevnadscenter för Office 365 via PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Kör följande cmdlet:
-    
+
     ```powershell
     Set-RegulatoryComplianceUI -Enabled $true
     ````
+
     Du behöver inte bekräfta åtgärden och inställningen börjar gälla omedelbart.
 
-Om du ångrar dig och inte längre vill att alternativet ska visas i guiden kan du dölja det genom att köra samma cmdlet med värdet **falskt**: `Set-RegulatoryComplianceUI -Enabled $false` 
+Om du ångrar dig och inte längre vill att alternativet ska visas i guiden kan du dölja det genom att köra samma cmdlet med värdet **falskt**: `Set-RegulatoryComplianceUI -Enabled $false`
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Konfigurera kvarhållningsetiketter för att deklarera poster
 
@@ -60,7 +61,7 @@ Till exempel:
 
 ![Konfigurera en kvarhållningsetikett för att markera innehåll som en post eller en regelbaserad post](../media/recordversioning6.png)
 
-Därefter kan du vid behov använda kvarhållningsetiketten på Exchange-meddelanden eller SharePoint- och OneDrive-dokument. 
+Därefter kan du vid behov använda kvarhållningsetiketten på Exchange-meddelanden eller SharePoint- och OneDrive-dokument.
 
 Fullständiga instruktioner:
 
@@ -73,7 +74,7 @@ Fullständiga instruktioner:
 
 När kvarhållningsetiketter som markerar objekt som en post eller en regelbaserad post görs tillgängliga för användare som vill använda dem i appar:
 
-- I Exchange kan alla användare som har skrivbehörighet till postlådan använda dessa etiketter. 
+- I Exchange kan alla användare som har skrivbehörighet till postlådan använda dessa etiketter.
 - I SharePoint och OneDrive kan alla användare i standardmedlemsgruppen (med behörighetsnivån Delta) använda dessa etiketter.
 
 Exempel på ett dokument som markerats som en post med hjälp av en kvarhållningsetikett:
@@ -84,7 +85,7 @@ Exempel på ett dokument som markerats som en post med hjälp av en kvarhållnin
 
 Åtgärderna för att märka objekt som arkivhandlingar loggas i granskningsloggen.
 
-För SharePoint-objekt: 
+För SharePoint-objekt:
 - Från **Fil- och sidaktiviteter** välj **Ändrad kvarhållningsetikett för en fil**. Den här granskningshändelsen gäller för kvarhållningsetiketter som markerar objekt som arkivhandlingar, regelposter eller som är vanliga kvarhållningsetiketter.
 
 För Exchange-objekt:

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Lär dig hur du använder felreparation för att korrigera dataproblem i Advanced eDiscovery som kan förhindra korrekt bearbetning av innehåll.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f2067831a85e3b3a506917fac5b93acfa0b174db
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 891e8292fca629669a48684e95f522c08838d3aa
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52161936"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226665"
 ---
 # <a name="error-remediation-when-processing-data"></a>Åtgärda fel vid bearbetning av data
 
@@ -32,8 +32,8 @@ Använd följande arbetsflöde för att åtgärda filer med fel i Advanced eDisc
 
 ## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Skapa en session för felreparation för att åtgärda filer med bearbetningsfel
 
->[!NOTE]
->Om åtgärdsguiden är stängd när som helst under följande procedur kan du återgå till  felreparationssessionen på  fliken Bearbetning genom att välja Åtgärder i den nedrullningsmenyn Visa. 
+> [!NOTE]
+> Om åtgärdsguiden är stängd när som helst under följande procedur kan du återgå till  felreparationssessionen på  fliken Bearbetning genom att välja Åtgärder i den nedrullningsmenyn Visa. 
 
 1. På fliken **Bearbetning** i Advanced eDiscovery fallet väljer du Fel  i den nedrullningsmenyn Visa och väljer sedan  en **granskningsuppsättning** eller hela ärendet i listrutan Omfattning. I det här avsnittet visas alla fel från ärendet eller felet från en viss granskningsuppsättning.
 
@@ -51,13 +51,13 @@ Använd följande arbetsflöde för att åtgärda filer med fel i Advanced eDisc
 
     ![Ladda ned filer](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Om du vill ladda ned filer anger **du målsökvägen för nedladdning**. Det här är en sökväg till den överordnade mappen på den lokala datorn dit filen ska laddas ned.  Standardsökvägen, %USERPROFILE%\Downloads\errors, pekar på den inloggade användarens hämtade mapp. Du kan ändra den här sökvägen om du vill. Om du ändrar den rekommenderar vi att du använder en lokal filsökväg för bästa prestanda. Använd inte en fjärrnätverkssökväg. Du kan till exempel använda sökvägen **C:\Remediation.** 
+5. Om du vill ladda ned filer anger **du målsökvägen för nedladdning**. Det här är en sökväg till den överordnade mappen på den lokala datorn dit filen ska laddas ned.  Standardsökvägen, %USERPROFILE%\Downloads\errors, pekar på den inloggade användarens hämtade mapp. Du kan ändra den här sökvägen om du vill. Om du ändrar den rekommenderar vi att du använder en lokal filsökväg för bästa prestanda. Använd inte en fjärrnätverkssökväg. Du kan till exempel använda sökvägen **C:\Remediation.**
 
    Sökvägen till den överordnade mappen läggs automatiskt till i AzCopy-kommandot (som värdet för **parametern /Dest).**
 
-6. Kopiera det fördefinierade kommandot genom att klicka **på Kopiera till Urklipp.** Öppna ett Windows Kommandotolk, klistra in kommandot AzCopy och tryck sedan på **Retur.**  
+6. Kopiera det fördefinierade kommandot genom att klicka **på Kopiera till Urklipp.** Öppna ett Windows Kommandotolk, klistra in kommandot AzCopy och tryck sedan på **Retur.**
 
-    ![Förbereda för felreparation](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+    ![Förbereda för felreparation](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > Du måste använda AzCopy v8.1 om du vill använda kommandot som finns på **sidan Ladda ned** filer. Du måste också använda AzCopy v8.1 för att ladda upp filerna i steg 10. Information om hur du installerar den här versionen av AzCopy finns i Överföra data med [AzCopy v8.1 på Windows](/previous-versions/azure/storage/storage-use-azcopy). Om det angivna AzCopy-kommandot misslyckas kan du [gå till Felsöka AzCopy i Advanced eDiscovery.](troubleshooting-azcopy.md)
@@ -97,7 +97,7 @@ Använd följande arbetsflöde för att åtgärda filer med fel i Advanced eDisc
 
 11. När du har kört kommandot AzCopy klickar du på **Nästa: Bearbeta filer**.
 
-    När bearbetningen är klar kan du gå till granskningsuppsättningen och visa de åtgärdade filerna. 
+    När bearbetningen är klar kan du gå till granskningsuppsättningen och visa de åtgärdade filerna.
 
 ## <a name="remediating-errors-in-container-files"></a>Åtgärdar fel i behållarfiler
 
@@ -109,7 +109,7 @@ Ibland går det inte att åtgärda så att filen får det ursprungliga format so
 
 ## <a name="what-happens-when-files-are-remediated"></a>Vad händer när filer åtgärdas?
 
-När åtgärdade filer överförs bevaras de ursprungliga metadata, förutom följande fält: 
+När åtgärdade filer överförs bevaras de ursprungliga metadata, förutom följande fält:
 
 - ExtractedTextSize
 - HasText

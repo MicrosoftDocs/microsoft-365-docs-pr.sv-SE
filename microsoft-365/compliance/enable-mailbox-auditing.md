@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: Granskningsloggning för postlådor är aktiverat som standard i Microsoft 365 (kallas även standardgranskning av postlådor eller postlådegranskning på som standard). Det innebär att vissa åtgärder som utförs av postlådeägare, ombud och administratörer loggas automatiskt i en granskningslogg för postlådor, där du kan söka efter aktiviteter som utförs för postlådan.
-ms.openlocfilehash: 0fd15ffd26ad28b9e8b4f2b627ff26206983f21e
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 56207a21d9a13edb04a07234764257d3c27f2d0f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108097"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226785"
 ---
 # <a name="manage-mailbox-auditing"></a>Hantera postlådegranskning
 
@@ -92,7 +92,7 @@ Inloggningstyper klassificerar användaren som gjorde de granskade åtgärderna 
 
 I följande tabell beskrivs de postlådeåtgärder som är tillgängliga i granskningsloggningen för postlådor för användares postlådor och delade postlådor.
 
-- En bockmarkering ( ![Bockmarkering](../media/checkmark.png)) anger att postlådeåtgärden kan loggas för inloggningstypen (alla åtgärder är inte tillgängliga för alla inloggningstyper).
+- En bockmarkering (![Bockmarkering](../media/checkmark.png)) anger att postlådeåtgärden kan loggas för inloggningstypen (alla åtgärder är inte tillgängliga för alla inloggningstyper).
 - En asterisk ( <sup>\*</sup> ) efter bockmarkeringen anger att postlådeåtgärden loggas som standard för inloggningstypen.
 - Kom ihåg att en administratör med fullständig behörighet till en postlåda betraktas som ombud.
 
@@ -311,7 +311,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 Du kan för närvarande inte inaktivera granskning av postlådor för specifika postlådor när postlådegranskning är aktiverad som standard i din organisation. Till exempel ignoreras *inställningen för postlådeegenskapen AuditEnabled* **till** False.
 
-Du kan dock fortfarande använda cmdleten **Set-MailboxAuditBypassAssociation** i Exchange Online  PowerShell för att förhindra att några och alla postlådeåtgärder från angivna användare loggas, oavsett var åtgärderna sker. Till exempel:
+Du kan dock fortfarande använda cmdleten **Set-MailboxAuditBypassAssociation** i Exchange Online  PowerShell för att förhindra att några och alla postlådeåtgärder från angivna användare loggas, oavsett var åtgärderna sker. Ett exempel:
 
 - Åtgärder som utförs av de förbikopplade användarna loggas inte.
 - Ombudsåtgärder som utförts av förbikopplingsanvändare i andra användares postlådor (inklusive delade postlådor) loggas inte.

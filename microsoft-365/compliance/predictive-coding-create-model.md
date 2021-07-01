@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Lär dig hur du skapar en prediktiv kodningsmodell i Advanced eDiscovery. Det här är det första steget när du använder funktionerna för maskininlärning i Advanced eDiscovery för att hjälpa dig att identifiera relevant och icke-relevant innehåll i en granskningsuppsättning.
-ms.openlocfilehash: 7724062848d8d757fbfd3a7870853d6f2c409d84
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ab84f529169c780e58888cc2726fbabfef33219e
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822638"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226233"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>Skapa en prediktiv kodningsmodell (förhandsversion)
 
@@ -37,7 +37,7 @@ Information om hur du granskar arbetsflödet för förutsägelsekodning finns [i
 
 ## <a name="create-a-model"></a>Skapa en modell
 
-1. I Microsoft 365, öppna ett ärende Advanced eDiscovery välj sedan fliken **Granska uppsättningar.**
+1. I Microsoft 365 Efterlevnadscenter öppnar du ett Advanced eDiscovery och väljer sedan **fliken Granska uppsättningar.**
 
 2. Öppna en granskningsuppsättning och klicka sedan **på Analys**  >  **Hantera prediktiv kodning (förhandsgranskning).**
 

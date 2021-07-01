@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Dataförlustskyddet för slutpunkter i Microsoft 365 utökar övervakningen av filaktiviteter och skyddsåtgärder för dessa filer till slutpunkter. Filerna visas i lösningarna för Microsoft 365 Efterlevnadscenter '
-ms.openlocfilehash: b5aa6c737bc54129ce49378a7dcaf81e9d5c612f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162990"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226689"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Mer information om dataförlustskydd för slutpunkter i Microsoft 365
 
@@ -34,7 +34,7 @@ Du kan använda dataförlustskyddet (DLP) i Microsoft 365 till att övervaka åt
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Slutpunktsaktiviteter som du kan övervaka och vidta åtgärder för
 
-Med Microsofts slutpunkts-DLP kan du granska och hantera följande typer av aktiviteter som användare utför på känsliga objekt som finns på Windows 10-enheter. 
+Med Microsofts slutpunkts-DLP kan du granska och hantera följande typer av aktiviteter som användare utför på känsliga objekt som finns på Windows 10-enheter.
 
 |Aktivitet |Beskrivning  | Granskningsbar/begränsningsbar|
 |---------|---------|---------|
@@ -48,7 +48,7 @@ Med Microsofts slutpunkts-DLP kan du granska och hantera följande typer av akti
 |skapa ett objekt.|Upptäcker när en användare skapar ett objekt| granskningsbart|
 |byta namn på ett objekt|Upptäcker när en användare byter namn på ett objekt| granskningsbart|
 
- ## <a name="monitored-files"></a>Övervakade filer
+## <a name="monitored-files"></a>Övervakade filer
 
 Slutpunkts-DLP:n stöder övervakning av följande filtyper:
 
@@ -66,10 +66,10 @@ Slutpunkts-DLP:n stöder övervakning av följande filtyper:
 - .cs-filer
 - .h-filer
 - .java-filer
- 
+
 Som standard granskar slutpunkts-DLP:n aktiviteterna för dessa filtyper, även om det inte finns någon principmatchning. Om du bara vill övervaka data från principmatchningar kan du stänga av **Granska alltid filaktivitet för enheter** i de globala inställningarna för slutpunkts-DLP:n. Om inställningen är på granskas alltid aktiviteter i Word-, PowerPoint-, Excel-, PDF- och .csv-filer, även om enheten inte omfattas av någon princip.
 
-Slutpunkts-DLP:n övervakar aktivitet baserat på MIME-typ, så aktiviteterna samlas in även om filtillägget ändras. 
+Slutpunkts-DLP:n övervakar aktivitet baserat på MIME-typ, så aktiviteterna samlas in även om filtillägget ändras.
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Vad är annorlunda i slutpunkts-DLP?
 
@@ -153,8 +153,8 @@ Om en fil till exempel kopieras till ett flyttbart USB-medium visas följande at
 
 Nu när du har lärt dig mer om slutpunkts-DLP är nästa steg:
 
-1) [Komma igång med Microsofts dataförlustskydd för slutpunkter](endpoint-dlp-getting-started.md)
-2) [Använda Microsofts dataförlustskydd för slutpunkter](endpoint-dlp-using.md)
+1. [Komma igång med Microsoft dataförlustskydd för slutpunkt](endpoint-dlp-getting-started.md)
+2. [Använda Microsofts dataförlustskydd för slutpunkter](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Se även
 

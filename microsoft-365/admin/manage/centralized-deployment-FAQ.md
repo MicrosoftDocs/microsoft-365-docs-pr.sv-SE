@@ -18,33 +18,33 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Läs svaren på vanliga frågor om centraliserad distribution från administrationscentret för Microsoft 365.
-ms.openlocfilehash: 210174d80a94df640245e1b80c5a7670e68952b1
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+description: Läs svaren på vanliga frågor om centraliserad distribution från Administrationscenter för Microsoft 365.
+ms.openlocfilehash: 0da9ec9595fd433abe1e2e2ae3f2e3a0c6b3b9b5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950005"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228020"
 ---
 # <a name="centralized-deployment-faq"></a>Vanliga frågor och svar om centraliserad distribution
 
-Centraliserad distribution är det rekommenderade sättet för Office 365-administratörer att distribuera Office-tillägg (Word, Excel, PowerPoint och Outlook) till användare och grupper inom en organisation, förutsatt att organisationen uppfyller alla krav för användning av centraliserad distribution som beskrivs i den här artikeln.   
+Centraliserad distribution är det rekommenderade sättet för en Office 365-administratör att distribuera Office-tillägg (Word, Excel, PowerPoint och Outlook) till användare och grupper inom en organisation, förutsatt att organisationen uppfyller alla krav för centraliserad distribution som beskrivs i den här artikeln.   
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>Hur vet jag om min organisation är konfigurerad för centraliserad distribution?  
 
-Centraliserad distribution av tillägg kräver att användarna använder Microsoft 365-program för företag (och är inloggade på Office med inloggningsuppgifter för organisationen) och har Exchange Online-postlådor. Prenumerationskatalogen måste finnas i eller vara extern till Azure Active Directory.  
+Centraliserad distribution av tillägg kräver att användarna använder Microsoft 365-appar för företag (och är inloggade på Office med sina autentiseringsuppgifter för organisationsinloggning) och har Exchange Online postlådor. Din prenumerationskatalog måste antingen finnas i eller vara extern Azure Active Directory.  
  
-Centraliserad distribution stöds endast för onlinepostlådor. Den har inte stöd för distribution till lokala Exchange-postlådor.
+Centraliserad distribution stöds endast för onlinepostlådor. Den har inte stöd för distribution till lokala Exchange postlådor.
 
 Du kan använda [kompatibilitetskontrollen för centraliserad distribution för att](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   avgöra om din prenumeration är berättigad. 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>Hur riktar du användartilldelningar för tillägg med centraliserad distribution?  
 
-Centraliserad distribution har stöd för tilldelningar till enskilda användare, grupper och alla i klientorganisationen. Centraliserad distribution kan användas för användare i grupper på översta nivå eller grupper utan överordnade grupper, men inte för användare i kapslade grupper eller grupper som har överordnade grupper. Centraliserad distribution ingår också i de flesta Azure Active Directory-grupper, inklusive Office 365-grupper, distributionslistor och säkerhetsgrupper.  
+Centraliserad distribution har stöd för tilldelningar till enskilda användare, grupper och alla i klientorganisationen. Centraliserad distribution kan användas för användare i grupper på översta nivå eller grupper utan överordnade grupper, men inte för användare i kapslade grupper eller grupper som har överordnade grupper. Centraliserad distribution ingår också i de Azure Active Directory grupperna, inklusive Office 365, distributionslistor och säkerhetsgrupper.  
 
 Det är bättre att använda grupptilldelningar i stället för tilldelning av enskilda användare för att underlätta hanteringen.
  
-Mer information finns i [Användar- och grupptilldelningar.](./centralized-deployment-of-add-ins.md?view=o365-worldwide#user-and-group-assignments)  
+Mer information finns i [Användar- och grupptilldelningar.](./centralized-deployment-of-add-ins.md#user-and-group-assignments)  
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>Hur lång tid tar det innan tillägg visas för alla användare?  
 
@@ -55,22 +55,22 @@ Det kan ta upp till 24 timmar innan ett tillägg visas för alla användare. Det
 För enkel distribution av tillägg till användare, grupper eller till hela organisationen rekommenderar vi att administratörer använder centraliserad distribution.
 
 Mer information om hur du hanterar användaråtkomst finns i:
- - [Förhindra tilläggsnedladdningar genom att inaktivera Office Store för alla klienter (utom Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [Förhindra nedladdningar av tillägg genom att inaktivera Office Store i alla klienter (utom Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
  - [Ange de administratörer och användare som kan installera och hantera tillägg för Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
-## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>Ger centraliserad distribution administratörer flexibiliteten att välja distributionsmetod för Outlook-tillägg?  
+## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>Ger centraliserad distribution administratörer flexibiliteten att välja distributionsmetod för Outlook tillägg?  
 
-Ja. Centraliserad distribution ger administratörer möjlighet att välja någon av tre distributionsmetoder för Outlook-tillägg under distributionen:
+Ja. Centraliserad distribution ger administratörer flexibiliteten att välja någon av tre distributionsmetoder för Outlook-tillägg under distributionen:
 
 **Fast (standard)**   Tillägget distribueras automatiskt till de tilldelade användarna och de kan inte ta bort det.  
  
-**Tillgänglig** Användarna kan installera tillägget i Outlook genom att välja Start > Hämta fler tillägg och **> administratör hanterade.**
+**Tillgänglig** Användarna kan installera tillägget i Outlook genom att välja Start > Hämta fler tillägg > **administratör hanterade.**
  
 **Valfritt** Tillägget distribueras automatiskt till de tilldelade användarna, men de kan välja att ta bort det.  
     
 ## <a name="can-admins-update-line-of-business-lob-add-ins"></a>Kan administratörer uppdatera verksamhetsbaserade tillägg?  
 
-Ja. Administratörer kan ladda upp en ny manifestfil för att stödja metadataändringar för administratörs deployerade LOB-tillägg. Tillägget uppdateras nästa gång Office-programmen startas. Webbprogrammet kan ändras när som helst.  
+Ja. Administratörer kan ladda upp en ny manifestfil för att stödja metadataändringar för administratörs deployerade LOB-tillägg. Tillägget uppdateras nästa gång Office programmen startas. Webbprogrammet kan ändras när som helst.  
  
 Mer information finns [i verksamhets tillägg.](./manage-addins-in-the-admin-center.md)  
 
@@ -86,7 +86,7 @@ Ja. Administratörer kan ta bort tillägg som de har distribuerat för alla anv�
 
 Mer information finns i [Ta bort ett tillägg.](./manage-addins-in-the-admin-center.md#delete-an-add-in) 
   
-## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>Kan administratörer distribuera betalda tillägg från Office Store med centraliserad distribution? 
+## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>Kan administratörer distribuera betalda tillägg från Office med hjälp av centraliserad distribution? 
 
 Nej. Du kan för stunden inte distribuera betalda tillägg från Office Store med centraliserad distribution.  
  
@@ -96,6 +96,6 @@ Vi föreslår att ISV-utvecklaren tar del av det betalda tillägget för att beg
 
 Global administratör är den rekommenderade rollen med fullständig åtkomst till livscykeln för hantering av tillägg. Om du är den person som köpte Microsoft 365 Business-prenumerationen är du global administratör. 
  
-Din prenumeration levereras med en uppsättning administratörsroller som du kan tilldela andra användare i organisationen. Varje administratörsroll mappar till vanliga affärsfunktioner och ger personerna i organisationen behörighet att utföra särskilda uppgifter i administrationscentret för Microsoft 365.  
+Din prenumeration levereras med en uppsättning administratörsroller som du kan tilldela andra användare i organisationen. Varje administratörsroll mappar till vanliga affärsfunktioner och ger personerna i organisationen behörighet att utföra särskilda uppgifter i Administrationscenter för Microsoft 365.  
  
-Mer information finns i Tilldela [administratörsroller.](../add-users/assign-admin-roles.md?view=o365-worldwide) 
+Mer information finns i Tilldela [administratörsroller.](../add-users/assign-admin-roles.md) 

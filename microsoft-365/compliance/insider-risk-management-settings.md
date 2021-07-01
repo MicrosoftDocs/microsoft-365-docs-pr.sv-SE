@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 7592b92b74173e77e7937151ba88c23163363fde
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1dd61570a0695124fdd675241535dec7d288a627
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624699"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226389"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Komma igång med inställningar för Insider-riskhantering
 
@@ -70,8 +70,8 @@ I vissa fall kanske du vill begränsa indikatorerna för Insider-risker som till
 
 Om du vill definiera indikatorer för Insider-risker som är aktiverade i alla Insider-riskprinciper går du till Indikatorer för **Insider-risker** och väljer en eller flera  >   principindikatorer. De indikatorer som valts på sidan Indikatorinställningar kan inte konfigureras individuellt när du skapar eller redigerar en Insider-riskprincip i principguiden.
 
->[!NOTE]
->Det kan ta flera timmar innan nya manuellt tillagda användare visas i **instrumentpanelen Användare.** Det kan ta upp till 24 timmar att visa aktiviteter för de senaste 90 dagarna för dessa användare. Om du vill visa aktiviteter för manuellt  tillagda användare väljer du användaren på instrumentpanelen Användare och öppnar **fliken Användaraktivitet** i informationsfönstret.
+> [!NOTE]
+> Det kan ta flera timmar innan nya manuellt tillagda användare visas i **instrumentpanelen Användare.** Det kan ta upp till 24 timmar att visa aktiviteter för de senaste 90 dagarna för dessa användare. Om du vill visa aktiviteter för manuellt  tillagda användare väljer du användaren på instrumentpanelen Användare och öppnar **fliken Användaraktivitet** i informationsfönstret.
 
 ### <a name="enable-device-indicators-and-onboard-devices"></a>Aktivera enhetsindikatorer och onboard-enheter
 <a name="OnboardDevices"> </a>
@@ -199,8 +199,8 @@ Aviseringar från Defender för Slutpunkt importeras dagligen. Beroende på vilk
 
 Om du till exempel väljer *Ny*  *,* Pågår och Matchad för den här inställningen, importeras en första aviseringsaktivitet för användaren i insider-risk när en Microsoft Defender för slutpunkt-avisering skapas och statusen är Ny. När Defender för slutpunkt-status ändras till *Pågående* importeras en andra aktivitet för den här aviseringen för användaren i Insider-risken. När den slutliga Defender för slutpunktstremning för *Matchad* har ställts in importeras en tredje aktivitet för den här aviseringen för användaren i Insider-risken. Med den här funktionen kan användaren följa förloppet för Defender för slutpunktsaviseringar och välja vilken synlighetsnivå som krävs för undersökningen.
 
->[!IMPORTANT]
->Du måste ha Microsoft Defender för Endpoint konfigurerad i din organisation och aktivera Defender för Endpoint för integrering av hantering av insiderrisk i Defender Security Center för att importera varningar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Endpoint för integrering av hantering av insiderrisk finns i [Konfigurera avancerade funktioner i Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
+> [!IMPORTANT]
+> Du måste ha Microsoft Defender för Endpoint konfigurerad i din organisation och aktivera Defender för Endpoint för integrering av hantering av insiderrisk i Defender Security Center för att importera varningar om säkerhetsöverträdelser. Mer information om hur du konfigurerar Defender för Endpoint för integrering av hantering av insiderrisk finns i [Konfigurera avancerade funktioner i Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 
 ### <a name="domains-preview"></a>Domäner (förhandsversion)
 
@@ -272,11 +272,11 @@ Du behöver till exempel skydda mot dataläckor för ett mycket konfidentiellt p
 
 ### <a name="create-a-priority-user-group"></a>Skapa en prioritetsgrupp för användare
 
-Om du vill skapa en ny prioritetsgrupp använder du kontroller i **Insider-riskhanteringslösningen** i Microsoft 365 efterlevnadscenter. Om du vill skapa en prioritetsgrupp för användare måste du vara medlem i rollgruppen *för Insider-riskhantering* eller Insider-riskhanteringsadministratör. 
+Om du vill skapa en ny prioritetsgrupp använder du kontroller i **Insider-riskhanteringslösningen** i Microsoft 365 Efterlevnadscenter. Om du vill skapa en prioritetsgrupp för användare måste du vara medlem i rollgruppen *för Insider-riskhantering* eller Insider-riskhanteringsadministratör. 
 
 Skapa en prioritetsgrupp genom att följa anvisningarna nedan:
 
-1. Gå [till Microsoft 365 Insider-riskhantering](https://compliance.microsoft.com) **i kompatibilitetscentret** och välj **Inställningar för Insider-risker.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering och** väljer Inställningar för **Insider-risker.**
 2. Välj fliken **Prioritet för användargrupper**
 3. På fliken **Prioritet för användargrupper** väljer du **Skapa prioritet för användargrupp för** att starta guiden skapa grupp.
 4. Fyll **i följande fält** på sidan Definiera grupp:
@@ -290,11 +290,11 @@ Skapa en prioritetsgrupp genom att följa anvisningarna nedan:
 
 ### <a name="update-a-priority-user-group"></a>Uppdatera en prioritetsgrupp för användare
 
-Om du vill uppdatera en befintlig prioritetsgrupp använder du inställningar för kontroller i **Insider-riskhanteringslösningen** i Microsoft 365 kompatibilitetscenter. Om du vill uppdatera en prioriterad användargrupp måste du vara medlem i rollgruppen för *Insider-riskhantering* eller *Insider-riskhanteringsadministratör.*
+Om du vill uppdatera en befintlig prioritetsgrupp använder du inställningar för kontroller i **Insider-riskhanteringslösningen** i Microsoft 365 Efterlevnadscenter. Om du vill uppdatera en prioriterad användargrupp måste du vara medlem i rollgruppen för *Insider-riskhantering* eller *Insider-riskhanteringsadministratör.*
 
 Så här redigerar du en prioritetsgrupp:
 
-1. Gå [till Microsoft 365 Insider-riskhantering](https://compliance.microsoft.com) **i kompatibilitetscentret** och välj **Inställningar för Insider-risker.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering och** väljer Inställningar för **Insider-risker.**
 2. Välj fliken **Prioritet för användargrupper**
 3. Markera den prioritetsgrupp du vill redigera och välj **Redigera grupp.**
 4. Uppdatera fältet **Beskrivning på** sidan Definiera grupp om det behövs. Du kan inte uppdatera namnet på prioritetsgruppen. Gå vidare genom att klicka på **Nästa.**
@@ -304,14 +304,14 @@ Så här redigerar du en prioritetsgrupp:
 
 ### <a name="delete-a-priority-user-group"></a>Ta bort en prioritetsgrupp
 
-Om du vill ta bort en befintlig prioritetsgrupp använder du inställningar för kontroller i **Insider-riskhanteringslösningen** i Microsoft 365 efterlevnadscenter. Om du vill ta bort en prioritetsgrupp för användare måste du vara medlem i rollgruppen för *Insider-riskhantering* eller *Insider-riskhanteringsadministratör.*
+Om du vill ta bort en befintlig prioritetsgrupp använder du inställningar för kontroller i **Insider-riskhanteringslösningen** i Microsoft 365 Efterlevnadscenter. Om du vill ta bort en prioritetsgrupp för användare måste du vara medlem i rollgruppen för *Insider-riskhantering* eller *Insider-riskhanteringsadministratör.*
 
->[!IMPORTANT]
->Om du tar bort en prioritetsanvändargrupp tas den bort från alla aktiva principen som den är tilldelad till. Om du tar bort en användargrupp med prioritet som tilldelats en aktiv princip innehåller principen inte några användare inom omfattningen och kommer därför inte att vara inaktiv, och inga aviseringar skapas.
+> [!IMPORTANT]
+> Om du tar bort en prioritetsanvändargrupp tas den bort från alla aktiva principen som den är tilldelad till. Om du tar bort en användargrupp med prioritet som tilldelats en aktiv princip innehåller principen inte några användare inom omfattningen och kommer därför inte att vara inaktiv, och inga aviseringar skapas.
 
 Så här tar du bort en prioritetsgrupp:
 
-1. Gå [till Microsoft 365 Insider-riskhantering](https://compliance.microsoft.com) **i kompatibilitetscentret** och välj **Inställningar för Insider-risker.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering och** väljer Inställningar för **Insider-risker.**
 2. Välj fliken **Prioritet för användargrupper**
 3. Markera den prioritetsgrupp du vill redigera och välj Ta **bort på** instrumentpanelens meny.
 4. I dialogrutan **Ta bort** väljer du Ja **för att** ta bort prioritetsgruppen eller Avbryt **för** att återgå till instrumentpanelen.
@@ -330,16 +330,16 @@ Du väljer att aktivera datakopplingen Fysiska badging i Microsoft 365 för att 
 
 ### <a name="configure-priority-physical-assets"></a>Konfigurera fysiska tillgångar med prioritet
 
-Om du vill konfigurera fysiska tillgångar för prioritet konfigurerar du kopplingen  för fysisk aktivitet och använder inställningskontroller i Insider-riskhanteringslösningen i Microsoft 365 kompatibilitetscenter. För att konfigurera fysiska tillgångar för prioritet måste du vara medlem i rollgruppen *för Insider-riskhantering* eller *Insider-riskhanteringsadministratör.*
+Om du vill konfigurera fysiska tillgångar för prioritet konfigurerar du kopplingen för fysisk aktivitet och använder inställningskontroller **i Insider-riskhanteringslösningen** i Microsoft 365 Efterlevnadscenter. För att konfigurera fysiska tillgångar för prioritet måste du vara medlem i rollgruppen *för Insider-riskhantering* eller *Insider-riskhanteringsadministratör.*
 
 Så här konfigurerar du fysiska tillgångar med prioritet:
 
 1. Följ konfigurationsstegen för Insider-riskhantering i [artikeln Komma igång med Insider-riskhantering.](insider-risk-management-configure.md) I steg 3 kontrollerar du att du konfigurerar kopplingen Fysiskt dåligt.
 
-    >[!IMPORTANT]
-    >För att insider-riskhanteringsprinciper ska använda och korrelera signaldata relaterade till avgående och uppsagda användare med händelsedata från din fysiska kontroll och åtkomstplattformar måste du också konfigurera Microsoft 365 HR-anslutningen. Om du aktiverar anslutningen för fysisk aktivitet utan att Microsoft 365 HR-anslutningen bearbetas bara händelser för fysiska åtkomstaktiviteter för användare i organisationen.
+    > [!IMPORTANT]
+    > För att insider-riskhanteringsprinciper ska använda och korrelera signaldata relaterade till avgående och uppsagda användare med händelsedata från din fysiska kontroll och åtkomstplattformar måste du också konfigurera Microsoft 365 HR-anslutningen. Om du aktiverar anslutningen för fysisk aktivitet utan att Microsoft 365 HR-anslutningen bearbetas bara händelser för fysiska åtkomstaktiviteter för användare i organisationen.
 
-2. I [kompatibilitetscentret för Microsoft 365 går](https://compliance.microsoft.com)du till **Insider-riskhantering och** väljer Inställningar för **Insider-risker**  >  **Prioritet för fysiska tillgångar.**
+2. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering och** väljer Inställningar för **Insider-riskerPrioriterade**  >  **fysiska tillgångar.**
 3. På  sidan Prioriterade fysiska tillgångar kan du antingen manuellt lägga till de fysiska tillgångs-ID:n som du vill övervaka för de tillgångshändelser som importerats av anslutningen För fysiska tillgångar eller importera en .csv-fil med alla fysiska tillgångs-ID:n som importerats av den fysiska badgingkopplingen: a) Om du vill lägga till id:n för fysiska tillgångar manuellt väljer du Lägg till prioriterade fysiska tillgångar **,** anger ett fysiskt tillgångs-ID och väljer sedan Lägg till **.** Ange andra fysiska tillgångs-ID och välj sedan **Lägg till fysiska tillgångar** prioritet för att spara alla tillgångar som angetts.
     b) Om du vill lägga till en lista över fysiska tillgångs-ID .csv en fil väljer **du Importera fysiska tillgångar med prioritet.** I dialogrutan utforskaren väljer du den .csv du vill importera och väljer sedan **Öppna**. De fysiska tillgångs-ID:na från .csv läggs till i listan.
 4. Gå till fliken **Principindikatorer** i Inställningar.
@@ -348,14 +348,14 @@ Så här konfigurerar du fysiska tillgångar med prioritet:
 
 ### <a name="delete-a-priority-physical-asset"></a>Ta bort en prioriterad fysisk tillgång
 
-Om du vill ta bort en befintlig prioriterad fysisk tillgång använder du inställningar för kontroller i Insider-riskhanteringslösningen i Microsoft 365 efterlevnadscenter. Om du vill ta bort en prioriterad fysisk tillgång måste du vara medlem i rollgruppen för Insider-riskhantering eller Insider-riskhanteringsadministratör.
+Om du vill ta bort en befintlig prioriterad fysisk tillgång använder du inställningar för kontroller i Insider-riskhanteringslösningen i Microsoft 365 Efterlevnadscenter. Om du vill ta bort en prioriterad fysisk tillgång måste du vara medlem i rollgruppen för Insider-riskhantering eller Insider-riskhanteringsadministratör.
 
->[!IMPORTANT]
->Om du tar bort en prioriterad fysisk tillgång tas den bort från undersökning med hjälp av alla aktiva policyer som de tidigare inkluderades i. Varningar som genereras av aktiviteter som är associerade med den prioriterade fysiska tillgången tas inte bort.
+> [!IMPORTANT]
+> Om du tar bort en prioriterad fysisk tillgång tas den bort från undersökning med hjälp av alla aktiva policyer som de tidigare inkluderades i. Varningar som genereras av aktiviteter som är associerade med den prioriterade fysiska tillgången tas inte bort.
 
 Så här tar du bort en prioriterad fysisk tillgång:
 
-1. I [kompatibilitetscentret för Microsoft 365 går](https://compliance.microsoft.com)du till **Insider-riskhantering och** väljer Inställningar för **Insider-risker**  >  **Prioritet för fysiska tillgångar.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering och** väljer Inställningar för **Insider-riskerPrioriterade**  >  **fysiska tillgångar.**
 2. På sidan **Prioriterade fysiska tillgångar** väljer du den tillgång som du vill ta bort.
 3. Välj **Ta** bort på åtgärdsmenyn för att ta bort tillgången.
 
@@ -379,13 +379,13 @@ Följande mallar Power Automate för att stödja process automation för använd
 
 ### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Skapa ett Power Automate flöde från mallen för Insider-riskhantering
 
-Om du vill skapa ett Power Automate-flöde från en rekommenderad insider-riskhanteringsmall använder du inställningskontrollerna i **Insider-riskhanteringslösningen** i **efterlevnadscentret** för Microsoft 365 eller  alternativet Hantera **Power Automate-flöden** från **Automate-kontrollen** när du arbetar direkt i instrumentpanelerna Ärenden eller Användare.
+Om du vill skapa ett Power Automate-flöde från en rekommenderad insider-riskhanteringsmall använder du inställningskontrollerna i **Insider-riskhanteringslösningen** i Microsoft 365 Efterlevnadscenter eller  alternativet Hantera **Power Automate-flöden** från **automatkontrollen** när du arbetar direkt i instrumentpanelen för Ärenden eller **Användare.**
 
 Om du vill Power Automate ett arbetsflöde i inställningsområdet måste du vara medlem i rollgruppen *för Insider-riskhantering* eller Insider-riskhanteringsadministratör.  Om du vill Power Automate ett arbetsflöde med **alternativet Hantera Power Automate-flöden** måste du vara medlem i minst en rollgrupp för Insider-riskhantering.
 
 Utför följande steg för att skapa en Power Automate flöde från en rekommenderad mall för insider-riskhantering:
 
-1. Gå till [Microsoft 365 För Insider-riskhantering](https://compliance.microsoft.com/) **i säkerhets- och** efterlevnadscentret och välj Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/)går du till **Insider-riskhantering och** väljer Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
 2. På sidan **Power Automate flöden** väljer du en rekommenderad mall från **mallarna** för Insider-riskhantering som du kanske gillar i avsnittet på sidan.
 3. Flödet visar de inbäddade anslutningar som behövs för flödet och ser om anslutningsstatus är tillgänglig. Om det behövs uppdaterar du alla anslutningar som inte visas som tillgängliga. Välj **Fortsätt.**
 4. Som standard är de rekommenderade flödena förkonfigurerade med den rekommenderade insider-riskhanteringen och Microsoft 365 tjänstdatafält som krävs för att slutföra den tilldelade aktiviteten för flödet. Om det behövs kan du anpassa flödeskomponenterna med hjälp av **kontrollen Visa avancerade** alternativ och konfigurera de tillgängliga egenskaperna för flödeskomponenten.
@@ -393,8 +393,8 @@ Utför följande steg för att skapa en Power Automate flöde från en rekommend
 6. Välj **Spara utkast** för att spara flödet för ytterligare konfiguration eller **välj** Spara för att slutföra konfigurationen av flödet.
 7. Välj **Stäng** för att återgå **till Power Automate flödessidan.** Den nya mallen visas som ett  flöde på flikarna Mina flöden och är automatiskt tillgänglig från listrutan **Automate** när de arbetar med ärenden inom Insider-riskhantering för användaren som skapar flödet.
 
->[!IMPORTANT]
->Om andra användare i organisationen behöver åtkomst till flödet måste flödet delas.
+> [!IMPORTANT]
+> Om andra användare i organisationen behöver åtkomst till flödet måste flödet delas.
 
 ![Automatiska flöden för Insider-riskhantering](../media/insider-risk-settings-power-automate-flows.png)
 
@@ -419,13 +419,13 @@ Gör följande för att skapa en egen Power Automate för Insider-riskhantering:
 
 ### <a name="share-a-power-automate-flow"></a>Dela ett Power Automate flöde
 
-Som standard är Power Automate som skapats av en användare bara tillgängliga för den användaren. För att andra insider-riskhanteringsanvändare ska ha åtkomst till och använda ett flöde måste flödet delas av den som skapat flödet. Om du vill dela ett flöde använder du inställningskontrollerna i **Insider-riskhanteringslösningen** i efterlevnadscentret för Microsoft 365 eller alternativet Hantera  Power Automate-flöden från Automate-kontrollen när du arbetar direkt på sidorna för instrumentpanelen För ärenden eller **Användare.**  När du har delat ett flöde kan alla som det har delats med  komma åt flödet i listrutan **Automate-kontroll** i instrumentpanelen för ärende och **användare.**
+Som standard är Power Automate som skapats av en användare bara tillgängliga för den användaren. För att andra insider-riskhanteringsanvändare ska ha åtkomst till och använda ett flöde måste flödet delas av den som skapat flödet. Om du vill dela ett flöde använder du inställningskontrollerna i **Insider-riskhanteringslösningen** i Microsoft 365 Efterlevnadscenter eller alternativet Hantera **Power Automate-flöden** från automatkontrollen när du arbetar direkt på sidorna i instrumentpanelen Ärenden eller **Användare.**  När du har delat ett flöde kan alla som det har delats med  komma åt flödet i listrutan **Automate-kontroll** i instrumentpanelen för ärende och **användare.**
 
 Om du vill Power Automate ett arbetsflöde i inställningsområdet måste du vara medlem i rollgruppen *för Insider-riskhantering* eller Insider-riskhanteringsadministratör.  Om du vill Power Automate ett arbetsflöde med **alternativet Hantera Power Automate-flöden** måste du vara medlem i minst en rollgrupp för Insider-riskhantering.
 
 Gör följande för att dela ett Power Automate flöde:
 
-1. Gå till [Microsoft 365 För Insider-riskhantering](https://compliance.microsoft.com) **i säkerhets- och** efterlevnadscentret och välj Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering och** väljer Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
 2. På sidan **Power Automate flöden** väljer du **fliken Mina flöden** **eller Teamflöden.**
 3. Välj flödet du vill dela och välj sedan **Dela** på menyn flödesalternativ.
 4. På sidan flödesdelning anger du namnet på den användare eller grupp du vill lägga till som ägare av flödet.
@@ -433,26 +433,26 @@ Gör följande för att dela ett Power Automate flöde:
 
 ### <a name="edit-a-power-automate-flow"></a>Redigera Power Automate flöde
 
-Om du vill redigera ett flöde använder du inställningskontrollerna i **Insider-riskhanteringslösningen** i **efterlevnadscentret** för Microsoft 365 eller alternativet hantera  **Power Automate-flöden** från **automatkontrollen** när du arbetar direkt i instrumentpanelen för ärenden eller användare.
+Om du vill redigera ett flöde använder du inställningskontrollerna i **Insider-riskhanteringslösningen** i Microsoft 365 Efterlevnadscenter eller alternativet Hantera **Power Automate-flöden** från **automatkontrollen** när du arbetar direkt i instrumentpanelen för ärenden eller användare. 
 
 Om du Power Automate ett arbetsflöde i inställningsområdet måste du vara medlem i rollgruppen *för Insider-riskhantering* eller Insider-riskhanteringsadministratör.  Om du vill Power Automate ett arbetsflöde med **alternativet Hantera Power Automate-flöden** måste du vara medlem i minst en rollgrupp för Insider-riskhantering.
 
 Gör följande för att redigera ett Power Automate flöde:
 
-1. Gå till [Microsoft 365 För Insider-riskhantering](https://compliance.microsoft.com) **i säkerhets- och** efterlevnadscentret och välj Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering och** väljer Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
 2. På sidan **Power Automate flöde väljer** du ett flöde för att redigera och väljer **Redigera** på flödeskontrollmenyn.
 3. Markera **ellipsen för**  >  **Inställningar** ändra en flödeskomponentinställning eller **ellips Ta** bort för att ta bort en  >   flödeskomponent.
 4. Välj **Spara** och sedan **Stäng för** att slutföra redigeringen av flödet.
 
 ### <a name="delete-a-power-automate-flow"></a>Ta bort ett Power Automate flöde
 
-Om du vill ta bort ett flöde använder du inställningskontrollerna i **Insider-riskhanteringslösningen** i **efterlevnadscentret** för Microsoft 365 eller alternativet  för att hantera **Power Automate-flöden** från **automatkontrollen** när du arbetar direkt i instrumentpanelen för ärenden eller användare. När ett flöde tas bort tas det bort som ett alternativ för alla användare.
+Om du vill ta bort ett flöde använder du inställningskontrollerna i **Insider-riskhanteringslösningen** i Microsoft 365 Efterlevnadscenter eller alternativet Hantera **Power Automate-flöden** från **automatkontrollen** när du arbetar direkt i instrumentpanelen för ärenden eller användare.   När ett flöde tas bort tas det bort som ett alternativ för alla användare.
 
 Om du vill Power Automate ett arbetsflöde i inställningsområdet måste du vara medlem i rollgruppen *för Insider-riskhantering* eller Insider-riskhanteringsadministratör.  Om du vill Power Automate ett arbetsflöde med **alternativet Hantera Power Automate-flöden** måste du vara medlem i minst en rollgrupp för Insider-riskhantering.
 
 Gör följande för att ta bort ett Power Automate flöde:
 
-1. Gå till [Microsoft 365 För Insider-riskhantering](https://compliance.microsoft.com) **i säkerhets- och** efterlevnadscentret och välj Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering och** väljer Inställningar för **Insider-Power Automate**  >  **flöden.** Du kan också komma åt sidorna **för Ärenden** **eller Användare genom** att välja **Automatisera** Hantera  >  **Power Automate flöden.**
 2. På sidan **Power Automate flöde väljer** du ett flöde för att ta bort och väljer Ta **bort** på flödeskontrollmenyn.
 3. I bekräftelsedialogrutan för borttagning väljer du **Ta bort för** att ta bort flödet eller så väljer du **Avbryt** för att avsluta borttagningsåtgärden.
 
@@ -470,7 +470,7 @@ Mer information om hur du använder team och kanaler i Microsoft Teams finns i [
 
 Det går snabbt Microsoft Teams att aktivera support för ärenden. Så här Microsoft Teams du aktivera Microsoft Teams för insider-riskhantering:
 
-1. I Microsoft 365 [kompatibilitetscenter](https://compliance.microsoft.com)går du till **Insider-riskhanteringsinställningar**  >  **för Insider- risk.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhanteringsinställningar**  >  **för Insider-risker.**
 2. Markera **Microsoft Teams** fliken.
 3. Aktivera Microsoft Teams för insider-riskhantering.
 4. Välj **Spara för** att konfigurera och avsluta.
@@ -485,7 +485,7 @@ Användarna behöver behörighet för att skapa Microsoft 365 grupper i organisa
 
 Om du vill skapa en grupp för ett ärende använder du kontrollen Skapa Microsoft Team när du arbetar direkt i ett befintligt ärende. Så här skapar du ett nytt team:
 
-1. I Microsoft 365 [kompatibilitetscenter](https://compliance.microsoft.com)går du till **Insider-riskhanteringsärenden**  >   och väljer ett befintligt ärende.
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhanteringsärenden** och väljer ett befintligt  >   ärende.
 2. På ärendeåtgärdsmenyn väljer du **Skapa Microsoft Team**.
 3. Ange ett **namn på** det nya teamet Microsoft Teams team i fältet Teamnamn.
 4. Välj **Skapa Microsoft-team** och välj sedan **Stäng**.
@@ -516,7 +516,7 @@ Analysinsikter från genomsökningar baseras på samma riskaktivitetssignaler so
 För att kunna aktivera Insider-riskanalyser måste du vara medlem i rollgruppen för Insider-riskhantering, Insider-riskhantering eller Microsoft 365 global administratör.
 Utför följande steg för att aktivera Insider Risk Analytics:
 
-1. I Microsoft 365 [kompatibilitetscenter](https://compliance.microsoft.com)går du **till Insider-riskhantering.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering.**
 2. Välj **Kör genomsökning** på **fliken Översikt över Insider-risker** i din **organisation.** Då aktiverar analysskanning för organisationen. Du kan också aktivera genomsökning i organisationen genom att gå till **Insider-riskinställningarAnalyser** och aktivera Genomsökning av klientorganisationens användaraktivitet för att  >   identifiera **potentiella insiderrisker.**
 3. I **informationsfönstret Analys** väljer du Kör **genomsökning** för att starta sökningen för organisationen. Analyssökningsresultaten kan ta upp till 24 timmar innan insikterna är tillgängliga som rapporter för granskning.
 
@@ -546,6 +546,6 @@ Om du vill inaktivera Insider-riskanalyser måste du vara medlem i rollgruppen f
 
 Utför följande steg för att inaktivera Insider-riskanalyser:
 
-1. I Microsoft 365 [kompatibilitetscenter](https://compliance.microsoft.com)går du **till Insider-riskhantering.**
+1. I [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com)går du till **Insider-riskhantering.**
 2. Välj **Analyssida för**  >  **Insider-riskinställningar.**
 3. Inaktivera Sök igenom klientorganisationens användaraktivitet på sidan **Analys** **för att identifiera potentiella insiderrisker.**

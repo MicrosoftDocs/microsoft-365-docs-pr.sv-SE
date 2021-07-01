@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 30363b544d9016b10dd9aad463d33c40065da0f3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162054"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226353"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Läs mer om Insider-riskhantering i Microsoft 365
 
@@ -127,8 +127,8 @@ I mer allvarliga situationer kan du behöva dela information om insider-riskhant
 - **Advanced eDiscovery**: Om du eskalerar ett ärende för undersökning kan du överföra data och hanteringen av ärendet till ett Advanced eDiscovery i Microsoft 365. Advanced eDiscovery ett end-to-end-arbetsflöde för att bevara, samla in, granska, analysera och exportera innehåll som svarar på organisationens interna och externa undersökningar. Det gör att juridiska grupper kan hantera hela arbetsflödet för aviseringar om juridiska frågor. Mer information om Advanced eDiscovery fall finns i [Översikt över Advanced eDiscovery i Microsoft 365](overview-ediscovery-20.md).
 - **Office 365 Management API-integrering (förhandsversion)**: Insider-riskhantering har stöd för export av aviseringsinformation till säkerhetsinformation och händelsehanteringstjänster (SIEM) via Office 365-API:er. Att ha åtkomst till aviseringsinformation på plattformen passar bäst för organisationens riskprocesser ger dig mer flexibilitet i hur du agerar på riskaktiviteter. Mer information om hur du exporterar aviseringsinformation med Office 365 API:er för hantering finns i [Exportera aviseringar.](insider-risk-management-settings.md#export-alerts-preview)
 
->[!NOTE]
->Tack för din feedback och support under förhandsversionen av ServiceNow-anslutningen. Vi har beslutat att avsluta förhandsversionen av ServiceNow Connector och upphöra med supporten för Insider-riskhantering den 30 november 2020. Vi utvärderar aktivt alternativa metoder för att ge kunderna ServiceNow-integrering med insiderriskhantering.
+> [!NOTE]
+> Tack för din feedback och support under förhandsversionen av ServiceNow-anslutningen. Vi har beslutat att avsluta förhandsversionen av ServiceNow Connector och upphöra med supporten för Insider-riskhantering den 30 november 2020. Vi utvärderar aktivt alternativa metoder för att ge kunderna ServiceNow-integrering med insiderriskhantering.
 
 ## <a name="scenarios"></a>Scenarier
 

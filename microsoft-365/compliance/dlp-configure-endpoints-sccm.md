@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Använd Konfigurationshanteraren för att distribuera konfigurationspaketet på enheter så att de introduceras till tjänsten.
-ms.openlocfilehash: ac05581ce33e94859dbd67848197878595d5ed0f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: d2db35e50d31a0a19076965da6dcecf9cfeef826
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "52162760"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226903"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Registrera Windows 10-enheter med konfigurationshanteraren
 
@@ -35,7 +35,7 @@ ms.locfileid: "52162760"
 2. I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**  >  **Onboarding för enheter.**
 
 3. I fältet **Distributionsmetod** väljer du **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602.**
- 
+
 4. Välj **Ladda ned** paket och spara .zip filen.
 
 5. Extrahera innehållet i filen .zip till en delad, skrivskyddad plats som kan nås av nätverksadministratörerna som ska distribuera paketet. Du bör ha en fil med namnet *DeviceComplianceOnboardingScript.cmd*.
@@ -47,12 +47,12 @@ ms.locfileid: "52162760"
 > [!NOTE]
 > Microsoft 365 Dataförlustskydd i slutpunkten stöder inte onboarding under fas [OOBE (Out-Box Experience).](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) Se till att användarna slutför OOBE när de har Windows installationen eller uppgraderingen.
 
->[!TIP]
+> [!TIP]
 > När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att en enhet är korrekt onboarded till tjänsten. Mer information finns i Köra [ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet.](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
 >
 > Observera att det är möjligt att skapa en identifieringsregel i ett Configuration Manager-program för att kontinuerligt kontrollera om en enhet har introducerats. Ett program är en annan typ av objekt än ett paket och ett program.
 > Om en enhet ännu inte är igång (på grund av att OOBE har slutförts eller av någon annan anledning) försöker Konfigurationshanteraren att registrera enheten igen tills regeln identifierar statusändringen.
-> 
+>
 > Du kan åstadkomma detta genom att skapa en kontroll för identifieringsregel om registervärdet "OnboardingState" (av typen REG_DWORD) = 1.
 > Registervärdet finns under "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
 Mer information finns i Konfigurera [identifieringsmetoder i System Center 2012 R2 Configuration Manager.](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)
@@ -61,8 +61,8 @@ Mer information finns i Konfigurera [identifieringsmetoder i System Center 2012 
 
 För varje enhet kan du ange ett konfigurationsvärde för att ange om exempel kan samlas in från enheten när en förfrågan görs via Microsoft Defender Säkerhetscenter att skicka en fil för djupanalys.
 
->[!NOTE]
->De här konfigurationsinställningarna görs vanligtvis via Konfigurationshanteraren. 
+> [!NOTE]
+> De här konfigurationsinställningarna görs vanligtvis via Konfigurationshanteraren.
 
 Du kan ange en regel för efterlevnad för konfigurationsobjektet i Konfigurationshanteraren om du vill ändra inställningen för exempelresursen på en enhet.
 
@@ -112,7 +112,7 @@ Följande konfigurationsinställningar rekommenderas:
 
 **Minskning av attackytan** Konfigurera alla tillgängliga regler för granskning.
 
->[!NOTE]
+> [!NOTE]
 > Att blockera dessa aktiviteter kan avbryta legitima affärsprocesser. Det bästa sättet är att ange allt som ska granskas, identifiera vilka som är säkra att aktivera och sedan aktivera inställningarna på slutpunkter som inte har falsk positiv identifiering.
 
 **Nätverksskydd**
@@ -147,7 +147,7 @@ Om du använder Microsoft Endpoint Configuration Manager current branch finns me
 3. Välj Windows 10 som operativsystem.
 
 4. I fältet **Distributionsmetod** väljer du **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602.**
-    
+
 5. Välj **Ladda ned** paket och spara .zip filen.
 
 6. Extrahera innehållet i filen .zip till en delad, skrivskyddad plats som kan nås av nätverksadministratörerna som ska distribuera paketet. Du bör ha en fil med *namnet DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
@@ -162,7 +162,7 @@ Om du använder Microsoft Endpoint Configuration Manager current branch finns me
 
 ## <a name="monitor-device-configuration"></a>Övervaka enhetskonfiguration
 
-Om du använder en Microsoft Endpoint Configuration Manager gren använder du den inbyggda Microsoft Defender för slutpunkt-instrumentpanelen i konfigurationshanterarens konsol. Mer information finns i [Microsoft Defender Avancerat skydd - Bildskärm.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
+Om du använder en Microsoft Endpoint Configuration Manager gren använder du den inbyggda Microsoft Defender för slutpunkt-instrumentpanelen i konfigurationshanterarens konsol. Mer information finns i [Microsoft Defender Avancerat skydd – Bildskärm.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)
 
 Om du använder konfigurationshanteraren System Center 2012 R2 består övervakning av två delar:
 
@@ -180,7 +180,7 @@ Om du använder konfigurationshanteraren System Center 2012 R2 består övervakn
 
 4. Granska statusindikatorerna under **Slutstatistik** och **Innehållsstatus.**
 
-    Om distributionen misslyckades (enheter med **fel-** och krav **som** inte uppfylls eller **statusen Misslyckades)** kan du behöva felsöka enheterna. Mer information finns i Felsöka [problem Microsoft Defender Avancerat skydd-introduktion.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+    Om distributionen misslyckades (enheter med **fel-** och krav **som** inte uppfylls eller **statusen Misslyckades)** kan du behöva felsöka enheterna. Mer information finns i Felsöka [onboardingproblem i Microsoft Defender Advanced Threat Protection.](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
 
     ![Konfigurationshanteraren visar en lyckad distribution utan fel](../media/sccm-deployment.png)
 
@@ -207,4 +207,4 @@ Mer information finns i Introduktion [till inställningar för efterlevnad i Sys
 - [Registrera Windows 10-enheter med ett lokalt skript](dlp-configure-endpoints-script.md)
 - [Registrera enheter för icke beständiga VDI-enheter (Virtual Desktop Infrastructure)](dlp-configure-endpoints-vdi.md)
 - [Köra ett identifieringstest på en nyligen onboarded Microsoft Defender för Endpoint-enhet](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Felsöka Microsoft Defender Avancerat skydd onboarding-problem](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Felsöka problem med onboarding av Microsoft Defender Avancerat skydd](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Läs mer om uppgifter som hjälper dig att snabbt komma igång med efterlevnad i Microsoft 365.
-ms.openlocfilehash: 3f93eb31800d158a33b1f3c0acdd48d650b2153e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 61a057c3666faae51a012dd9db2d4c63ded0f77a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52162938"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227265"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Snabba uppgifter för att komma igång med Microsoft 365 Efterlevnadscenter
 
@@ -30,7 +30,7 @@ När du har utfört de här grundläggande efterlevnadsuppgifterna kan du utöka
 
 ## <a name="task-1-configure-compliance-permissions"></a>Uppgift 1: Konfigurera efterlevnadsbehörigheter
 
-Det är viktigt att hantera vem i organisationen som har åtkomst till Microsoft 365 om du vill visa innehåll och utföra administrativa uppgifter. Microsoft 365 administrativa roller som är specifika för efterlevnad och för användning av verktyg som ingår i Microsoft 365 efterlevnadscenter.
+Det är viktigt att hantera vem i organisationen som har åtkomst till Microsoft 365 Efterlevnadscenter visa innehåll och utföra administrativa uppgifter. Microsoft 365 administrativa roller som är specifika för efterlevnad och användning av verktyg som ingår i Microsoft 365 Efterlevnadscenter.
 
 Börja med att tilldela efterlevnadsbehörigheter till personer i organisationen så att de kan utföra dessa uppgifter och förhindra att obehöriga personer får åtkomst till områden utanför deras ansvarsområden. Se till att du har tilldelat rätt personer till  administratörsrollerna  för efterlevnadsdata och efterlevnadsadministratörer innan du börjar konfigurera och implementera efterlevnadslösningar som ingår i Microsoft 365. Du måste också tilldela användare rollen som global Azure Active Directory för att visa data i Efterlevnadshanteraren.
 
@@ -44,10 +44,10 @@ Det är svårt att veta vart du ska gå om du inte vet var du är. När du uppfy
 
 Stegvisa instruktioner för hur du kommer igång med Efterlevnadshanteraren finns i [Komma igång med Efterlevnadshanteraren.](compliance-manager-setup.md)
 
->[!IMPORTANT]
->Säkerhet och efterlevnad är nära integrerade för de flesta organisationer. Det är viktigt att din organisation tar itu med grundläggande säkerhets-, hotskydd och identitets- och åtkomsthanteringsområden för att bidra till ett bättre skydd för både säkerhet och efterlevnad.
+> [!IMPORTANT]
+> Säkerhet och efterlevnad är nära integrerade för de flesta organisationer. Det är viktigt att din organisation tar itu med grundläggande säkerhets-, hotskydd och identitets- och åtkomsthanteringsområden för att bidra till ett bättre skydd för både säkerhet och efterlevnad.
 >
->Kontrollera ditt [Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) i Microsoft 365 säkerhetscenter och slutföra uppgifter som beskrivs i följande artiklar:
+> Kontrollera ditt [Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) i Microsoft 365 säkerhetscenter och slutföra uppgifter som beskrivs i följande artiklar:
 >
 > - [Säkerhetsöversikt – Högsta prioritet de första 30 dagarna, 90 dagarna och därefter](../security/office-365-security/security-roadmap.md)
 > - [De 12 viktigaste uppgifterna för säkerhetsteam att stödja arbetet hemifrån](../security/top-security-tasks-for-remote-work.md)
@@ -56,7 +56,7 @@ Stegvisa instruktioner för hur du kommer igång med Efterlevnadshanteraren finn
 
 Nu när du har fastställt organisationens aktuella status och vem som kan hantera efterlevnadsfunktioner är nästa steg att se till att du har de data som finns för att utföra efterlevnadsundersökningar och generera rapporter för nätverks- och användaraktiviteter i organisationen. Att aktivera granskning är också en viktig förutsättning för efterlevnadslösningar som beskrivs senare i den här artikeln.
 
-Insikter som tillhandahålls av granskningsloggen är ett värdefullt verktyg för att hjälpa dig att matcha dina efterlevnadskrav med lösningar som kan hjälpa dig att hantera och övervaka efterlevnadsområden som behöver förbättras. Granskningsloggning måste vara aktiverad innan aktiviteter registreras och innan du kan söka i granskningsloggen. När den är aktiverad registreras användar- och administratörsaktiviteten från organisationen i granskningsloggen och sparas i 90 dagar, och upp till ett år beroende på vilken licens som tilldelats användarna.
+Insights som tillhandahålls av granskningsloggen är ett värdefullt verktyg som hjälper dig att matcha dina efterlevnadskrav med lösningar som kan hjälpa dig att hantera och övervaka efterlevnadsområden som behöver förbättras. Granskningsloggning måste vara aktiverad innan aktiviteter registreras och innan du kan söka i granskningsloggen. När den är aktiverad registreras användar- och administratörsaktiviteten från organisationen i granskningsloggen och sparas i 90 dagar, och upp till ett år beroende på vilken licens som tilldelats användarna.
 
 Stegvisa instruktioner för hur du aktiverar granskning finns i [Aktivera eller inaktivera granskningsloggsökning.](turn-audit-log-search-on-or-off.md)
 

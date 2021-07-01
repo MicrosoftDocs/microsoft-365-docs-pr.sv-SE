@@ -23,19 +23,19 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som Microsoft 365 en användarpostlåda till en annan postlåda i eller utanför organisationen.
-ms.openlocfilehash: dfea738f5d786b6e476dd02dc92fd0aef452d62f
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: e0043fe75eefe224c63fd23f352d4bd3ddf2c326
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730144"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228057"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurera vidarebefordran av e-post i Microsoft 365
 
 Som administratör för en organisation kanske du behöver konfigurera vidarebefordran av e-post för en användares postlåda. Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som skickas till en användares brevlåda till en annan användares brevlåda i eller utanför organisationen.
 
 > [!IMPORTANT]
-> Du kan använda principer för utgående skräppostfilter för att styra automatisk vidarebefordran till externa mottagare. Mer information finns i Kontrollera [automatisk vidarebefordran av extern e-post i Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
+> Du kan använda principer för utgående skräppostfilter för att styra automatisk vidarebefordran till externa mottagare. Mer information finns i Kontrollera [automatisk vidarebefordran av extern e-post i Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
 ## <a name="configure-email-forwarding"></a>Konfigurera vidarebefordran av e-post
 

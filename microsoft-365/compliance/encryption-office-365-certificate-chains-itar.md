@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Visa en fullständig lista över DOD GCC certifikat och certifikatutfärdare i Microsoft 365.
-ms.openlocfilehash: 016c7d6b4c5557b7930763c2628525cc3c2c409f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ae8954ecb80cdcef0a62cbf4f928f7ffe6b8c4d7
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162249"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226773"
 ---
 # <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 krypteringskedjor – DOD och GCC High
 
@@ -32,8 +32,8 @@ Följande certifikatinformation gäller för **alla DOD- och GCC High-kunder.**
 
 Uppdaterades senast: **2020-10-16**
 
->[!NOTE]
->Certifikatinformation som gäller för globala **kunder finns i** avsnittet om Microsoft 365 [krypteringskedjor](encryption-office-365-certificate-chains.md).
+> [!NOTE]
+> Certifikatinformation som gäller för globala **kunder finns i** avsnittet om Microsoft 365 [krypteringskedjor](encryption-office-365-certificate-chains.md).
 
 | **Certifikattyp** | **Nedladdning av P7B** | **Slutpunkter för CRL** | **OCSP-slutpunkter** |
 | --- | --- | --- | --- | --- |

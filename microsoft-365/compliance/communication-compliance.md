@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 9d9c439704b6837cec086b390cde9c480d2d69ba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 2bf40f5b1d89b7a232f86c1e186ca660db9f8bbc
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "52162669"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227289"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Läs mer om kommunikationsefterlevnad i Microsoft 365
 
@@ -103,7 +103,7 @@ Nya interaktiva instrumentpaneler för aviseringar, principmatchningar, åtgärd
 
 - **Proaktiva intelligenta aviseringar:** Aviseringar för principmatchningar som kräver omedelbar uppmärksamhet är nya instrumentpaneler för väntande objekt som sorteras efter allvarlighetsgrad och nya automatiska e-postaviseringar som skickas till angivna granskare.
 - **Interaktiva instrumentpaneler**: Nya instrumentpaneler visar principmatchningar, väntande och lösta åtgärder samt trender för användare och policyer.
-- **Granskningssupport:** En fullständig logg med princip- och granskningsaktiviteter exporteras enkelt från Microsoft 365 för att det ska gå att stödja granskningsförfrågningar.
+- **Granskningsstöd:** En fullständig logg med princip- och granskningsaktiviteter exporteras enkelt från Microsoft 365 Efterlevnadscenter för att det ska gå att stödja granskningsförfrågningar.
 
 ## <a name="integration-with-microsoft-365-services"></a>Integrering med Microsoft 365 tjänster
 
@@ -129,10 +129,10 @@ Att identifiera och lösa efterlevnadsproblem med kommunikationsefterlevnad i Mi
 
 I det här arbetsflödessteget identifierar du dina efterlevnadskrav och konfigurerar tillämpliga principer för kommunikationsefterlevnad. Principmallar är ett bra sätt att inte bara snabbt konfigurera en ny efterlevnadsprincip, utan även snabbt ändra och uppdatera principer när dina krav ändras. Du kanske till exempel snabbt vill testa en princip för anstötligt språk och skydd mot trakasserier av kommunikation för en liten grupp användare innan du konfigurerar en princip för alla användare i organisationen.
 
->[!Important]
->Som standard har globala administratörer inte tillgång till funktioner för kommunikationsefterlevnad. Information om hur du aktiverar behörigheter för funktioner för kommunikationsefterlevnad finns i Göra [kommunikationsefterlevnad tillgänglig i din organisation.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
+> [!IMPORTANT]
+> Som standard har globala administratörer inte tillgång till funktioner för kommunikationsefterlevnad. Information om hur du aktiverar behörigheter för funktioner för kommunikationsefterlevnad finns i Göra [kommunikationsefterlevnad tillgänglig i din organisation.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
-Du kan välja bland följande principmallar i kompatibilitetscentret Microsoft 365 principefterlevnad:
+Du kan välja bland följande principmallar i Microsoft 365 Efterlevnadscenter:
 
 - **Stötande eller stötande** språk: Använd den här mallen för att snabbt skapa en princip som använder inbyggda klassificerare för att automatiskt identifiera innehåll som kan anses vara olämpligt eller stötande.
 - **Känslig information:** Använd den här mallen för att snabbt skapa en princip för att söka igenom kommunikationer som innehåller definierade typer av känslig information eller nyckelord för att se till att viktiga data inte delas med personer som inte ska ha åtkomst.
@@ -142,7 +142,7 @@ Du kan välja bland följande principmallar i kompatibilitetscentret Microsoft 3
 
 ### <a name="investigate"></a>Undersöka
 
-I det här steget kan du titta närmare på de problem som identifierats när du matchar dina principer för kommunikationsefterlevnad. Det här steget innehåller följande åtgärder som är tillgängliga i Microsoft 365 kompatibilitetscenter:
+I det här steget kan du titta närmare på de problem som identifierats när du matchar dina principer för kommunikationsefterlevnad. Det här steget innehåller följande åtgärder som är tillgängliga i Microsoft 365 Efterlevnadscenter:
 
 - **Aviseringar**: När ett meddelande matchar ett principvillkor genereras automatiskt en avisering. För varje avisering kan du se status, allvarlighetsgrad, tid och om ett Advanced eDiscovery har tilldelats och dess status. Nya aviseringar visas på startsidan för kommunikationsefterlevnad och **aviseringar,** och visas i allvarlighetsordning.
 - **Problemhantering:** För varje avisering kan du vidta åtgärder som vidtas för att åtgärda problemet som upptäckts i meddelandet.

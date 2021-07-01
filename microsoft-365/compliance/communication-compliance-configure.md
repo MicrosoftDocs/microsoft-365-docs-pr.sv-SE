@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e258a7fec21bd3499553fe726730ac685ff990b5
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: d76bc36ca8c79d318e1b632517e2a182857627ff
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821385"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227349"
 ---
 # <a name="get-started-with-communication-compliance"></a>Kom igång med kommunikationsefterlevnad
 
@@ -38,9 +38,9 @@ Innan du börjar med kommunikationsefterlevnad bör du bekräfta [Microsoft 365 
 - Microsoft 365 E5 prenumeration (betald version eller utvärderingsversion)
 - Microsoft 365 E3-prenumeration + Microsoft 365 E5 Compliance-tillägget
 - Microsoft 365 E3 -prenumerationen + Microsoft 365 E5-tillägget Insider Risk Management
-- Microsoft 365 A5-prenumeration (betald eller utvärderingsversion)
-- Microsoft 365 A3-prenumeration + Microsoft 365 A5-tillägget efterlevnad
-- Microsoft 365 En 3-prenumeration + Microsoft 365 A5 Insider Risk Management-tillägget
+- Microsoft 365 A5 prenumeration (betald version eller utvärderingsversion)
+- Microsoft 365 A3 prenumeration + Microsoft 365 A5 tillägget efterlevnad
+- Microsoft 365 A3 -prenumerationen + Microsoft 365 A5-tillägget Insider riskhantering
 - Microsoft 365 G5-prenumeration (betald eller utvärderingsversion)
 - Microsoft 365 G5-prenumeration + Microsoft 365 G5-tillägget för efterlevnad
 - Microsoft 365 G5-prenumeration + Microsoft 365 G5 Insider Risk Management-tillägget
@@ -50,17 +50,17 @@ Innan du börjar med kommunikationsefterlevnad bör du bekräfta [Microsoft 365 
 
 Användare som ingår i principer för kommunikationsefterlevnad måste tilldelas en av licenserna ovan.
 
->[!IMPORTANT]
->Office 365 Advanced Compliance säljs inte längre som en fristående prenumeration. När aktuella prenumerationer går ut bör kunderna gå över till en av prenumerationerna ovan, som innehåller samma eller ytterligare efterlevnadsfunktioner.
+> [!IMPORTANT]
+> Office 365 Advanced Compliance säljs inte längre som en fristående prenumeration. När aktuella prenumerationer går ut bör kunderna gå över till en av prenumerationerna ovan, som innehåller samma eller ytterligare efterlevnadsfunktioner.
 
 Om du inte har ett befintligt Office 365 Enterprise E5-abonnemang och vill prova kommunikationsefterlevnad kan du [](https://www.microsoft.com/microsoft-365/enterprise) lägga till [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) i din befintliga prenumeration eller registrera dig för en utvärderingsversion av Office 365 Enterprise E5.
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>Steg 1 (obligatoriskt): Aktivera behörigheter för kommunikationsefterlevnad
 
->[!Important]
->Som standard har globala administratörer inte tillgång till funktioner för kommunikationsefterlevnad. Rollerna som tilldelats i det här steget krävs för att alla funktioner för kommunikationsefterlevnad ska vara tillgängliga. När du har konfigurerat rollgrupperna kan det ta upp till 30 minuter för rollgruppsbehörigheterna att gälla för tilldelade användare i organisationen.
+> [!IMPORTANT]
+> Som standard har globala administratörer inte tillgång till funktioner för kommunikationsefterlevnad. Rollerna som tilldelats i det här steget krävs för att alla funktioner för kommunikationsefterlevnad ska vara tillgängliga. När du har konfigurerat rollgrupperna kan det ta upp till 30 minuter för rollgruppsbehörigheterna att gälla för tilldelade användare i organisationen.
 
-Det finns fem rollgrupper som används för att konfigurera behörigheter för att hantera funktioner för kommunikationsefterlevnad. För att göra **kommunikationsefterlevnad** tillgängligt som ett menyalternativ i Microsoft 365 efterlevnadscenter och för  att fortsätta med de här konfigurationsstegen måste du tilldelas rollgrupperna Administratör för kommunikationsefterlevnad *eller* kommunikationsefterlevnad. För att komma åt och hantera funktioner för kommunikationsefterlevnad efter den första konfigurationen måste användare vara medlemmar i minst en rollgrupp för kommunikationsefterlevnad.
+Det finns fem rollgrupper som används för att konfigurera behörigheter för att hantera funktioner för kommunikationsefterlevnad. För att **göra kommunikationsefterlevnad** tillgängligt som ett menyalternativ i Microsoft 365 Efterlevnadscenter och för  att fortsätta med de här konfigurationsstegen måste du tilldelas rollgrupperna Kommunikationsefterlevnad eller Administratör för kommunikationsefterlevnad.  För att komma åt och hantera funktioner för kommunikationsefterlevnad efter den första konfigurationen måste användare vara medlemmar i minst en rollgrupp för kommunikationsefterlevnad.
 
 Beroende på hur du vill hantera kommunikationsprinciper och aviseringar måste du tilldela användare till specifika rollgrupper. Du kan tilldela användare med olika efterlevnadsansvar till specifika rollgrupper för att hantera olika områden av funktioner för kommunikationsefterlevnad. Eller så kanske du bestämmer dig för att tilldela alla användarkonton till administratörer, analytiker, slutanvändare och läsare till rollgruppen *för* kommunikationsefterlevnad. Använd en rollgrupp eller flera rollgrupper som bäst passar kraven på efterlevnadshantering.
 
@@ -129,8 +129,8 @@ Använd följande diagram för att hjälpa dig att konfigurera grupper i organis
 | **Principmedlem** | **Grupper som stöds** | **Grupper som inte stöds** |
 |:-----|:-----|:-----|
 |Övervakade användare <br> Undantagna användare | Distributionsgrupper <br> Microsoft 365-grupper | Dynamiska distributionsgrupper <br> Kapslade distributionsgrupper <br> E-postaktiverad säkerhetsgrupp <br> Microsoft 365 grupper med dynamiskt medlemskap |
-| Granskare | Inga | Distributionsgrupper <br> Dynamiska distributionsgrupper <br> Kapslade distributionsgrupper <br> E-postaktiverad säkerhetsgrupp |
-  
+| Granskare | Ingen | Distributionsgrupper <br> Dynamiska distributionsgrupper <br> Kapslade distributionsgrupper <br> E-postaktiverad säkerhetsgrupp |
+
 När du tilldelar en distributionsgrupp i principen övervakar principen alla e-postmeddelanden Teams och chattar från varje användare i distributionsgruppen. När du tilldelar en Microsoft 365-grupp i principen övervakar principen alla e-postmeddelanden och Teams-chattar som skickas till den gruppen, inte de enskilda e-postmeddelanden och chattar som tas emot av varje gruppmedlem.
 
 Om du är en organisation med en lokal distribution av Exchange eller en extern e-postleverantör och du vill övervaka Microsoft Teams-chattar för användarna måste du skapa en distributionsgrupp som ska övervakas av användare med lokala eller externa postlådor. Senare i de här stegen tilldelar du den här distributionsgruppen som val **av övervakade användare** och grupper i principguiden. Mer information om krav och begränsningar för att aktivera molnbaserad lagring och stöd för Teams för lokala användare finns i Söka efter Teams och chattdata för [lokala användare.](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -154,11 +154,11 @@ Om du vill hantera övervakade användare i stora företag kan du behöva överv
     ```PowerShell
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
     $i = 0
-    ForEach ($M in $Mbx) 
+    ForEach ($M in $Mbx)
     {
       Write-Host "Adding" $M.DisplayName
       Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
-      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded
       $i++
     }
     Write-Host $i "Mailboxes added to supervisory review distribution group."
@@ -179,14 +179,14 @@ Mer information om hur du konfigurerar Yammer i inbyggt läge finns i:
 - [Konfigurera ditt Yammer för inbyggt läge för Microsoft 365](/yammer/configure-your-yammer-network/native-mode)
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>Steg 5 (obligatoriskt): Skapa en princip för kommunikationsefterlevnad
-  
->[!Important]
->Det går inte att använda PowerShell för att skapa och hantera principer för kommunikationsefterlevnad. Om du vill skapa och hantera de här principerna måste du använda principhanteringskontrollerna [i Microsoft 365 för kommunikationsefterlevnad.](https://compliance.microsoft.com/supervisoryreview)
 
-1. Logga in [https://compliance.microsoft.com](https://compliance.microsoft.com) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
+> [!IMPORTANT]
+> Det går inte att använda PowerShell för att skapa och hantera principer för kommunikationsefterlevnad. Om du vill skapa och hantera de här principerna måste du använda principhanteringskontrollerna [i Microsoft 365 för kommunikationsefterlevnad.](https://compliance.microsoft.com/supervisoryreview)
 
-2. I Microsoft 365 väljer du **Kommunikationsefterlevnad.**
-  
+1. Logga in <https://compliance.microsoft.com> med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
+
+2. I Microsoft 365 Efterlevnadscenter väljer du **Kommunikationsefterlevnad**.
+
 3. Välj **fliken** Principer.
 
 4. Välj **Skapa princip om** du vill skapa och konfigurera en ny princip från en mall eller skapa och konfigurera en anpassad princip.
@@ -201,8 +201,8 @@ Mer information om hur du konfigurerar Yammer i inbyggt läge finns i:
 
     - Välj ett begränsat villkorsfält, vanligtvis en typ av känslig information eller nyckelordsordlista som ska användas för principen.
 
-    >[!NOTE]
-    >Om du vill aktivera optisk teckenläsning [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) för att skanna inbäddade eller bifogade bilder i meddelanden för tryckt eller handskriven text som matchar principvillkor väljer du Anpassa principvillkor och procentandel och aktiverar Extrahera tryckt eller  >   **handskriven text** från bilder för utvärdering.
+    > [!NOTE]
+    > Om du vill aktivera optisk teckenläsning [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) för att skanna inbäddade eller bifogade bilder i meddelanden för tryckt eller handskriven text som matchar principvillkor väljer du Anpassa principvillkor och procentandel och aktiverar Extrahera tryckt eller  >   **handskriven text** från bilder för utvärdering.
 
     Om du väljer att använda principguiden för att skapa en anpassad princip gör du följande:
 
@@ -240,7 +240,7 @@ Du kan också välja att aktivera anonymisering för visade användarnamn när d
 
 1. Logga in [https://compliance.microsoft.com](https://compliance.microsoft.com) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
 
-2. Gå till Microsoft 365 i **kompatibilitetscentret för kommunikation.**
+2. I Microsoft 365 Efterlevnadscenter du till **Kommunikationsefterlevnad.**
 
 3. Om du vill konfigurera anonymisering för användarnamn väljer du **fliken** Sekretess.
 

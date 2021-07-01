@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bda9633ab37fd21fd66b3a8a53d4dd522e48ced1
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b7eb225f04f531c3b6de71bf72df0f8062a8c93d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "52161816"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226509"
 ---
 # <a name="insider-risk-management-audit-log"></a>Granskningslogg för Insider-riskhantering
 
@@ -38,8 +38,8 @@ Exempel på områden som ingår i aktivitetsövervakning:
 
 Om du vill visa och exportera data från granskningsloggen måste användarna tilldelas rollgrupperna *Insider-riskhantering* eller *Insider-riskhanteringsgranskningar.* Mer information om rollgrupper i Insider-riskhantering finns i [Komma igång med insider-riskhantering steg 1: Aktivera behörigheter.](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)
 
->[!NOTE]
->Insider-granskningsloggen för riskhantering är inte kopplad till Microsoft 365, de är oberoende granskningssystem och samlar in information om separata aktiviteter. Om du inaktiverar Microsoft 365 påverkar inte aktivitetgranskning inom Insider-riskhantering.
+> [!NOTE]
+> Insider-granskningsloggen för riskhantering är inte kopplad till Microsoft 365, de är oberoende granskningssystem och samlar in information om separata aktiviteter. Om du inaktiverar Microsoft 365 påverkar inte aktivitetgranskning inom Insider-riskhantering.
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>Visa aktivitet i granskningsloggen för Insider-risker
 
