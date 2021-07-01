@@ -9,12 +9,12 @@ metadata:
   ms.service: bookings
   localization_priority: Normal
   description: Vanliga frågor och svar om Microsoft Bookings.
-  ms.openlocfilehash: e9617710b70c0b79f855284e789c58b3f1124515
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: 956d423ef89454fa87524ce15165ffd3c8b59507
+  ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334129"
+  ms.lasthandoff: 06/30/2021
+  ms.locfileid: "53227709"
 title: Vanliga frågor och svar om Microsoft Bookings
 summary: ''
 sections:
@@ -55,7 +55,7 @@ sections:
   - question: >
       Kan IT-avdelningen styra om slutanvändare kan komma åt Bookings?
     answer: >
-      Bookings finns som standard i Microsoft 365 Business Premium-, Microsoft 365 Business Standard-, M365 A3-/A5- och E3/E5-klienter, men administratörer kan inaktivera det i administrationscentret för Microsoft 365 om de vill. Följ de här [anvisningarna om du vill göra det.](turn-bookings-on-or-off.md)
+      Bookings finns som standard i Microsoft 365 Business Premium-, Microsoft 365 Business Standard-, M365 A3-/A5- och E3/E5-klienter, men administratörer kan inaktivera det i Administrationscenter för Microsoft 365 om de vill. Följ de här [anvisningarna om du vill göra det.](turn-bookings-on-or-off.md)
 
 
       Om en kund vill inaktivera åtkomsten till Bookings för vissa kvalificerade licenser i klientorganisationen kan de antingen använda en grupprincip för att begränsa licenser eller implementera en OWA-postlådeprincip som begränsar vem som kan skapa nya Bookings-kalendrar.
@@ -201,9 +201,9 @@ sections:
     answer: >
       E-postadresserna kontrolleras och hanteras på Microsoft 365 inställningsnivå och är beroende av domänkonfigurationsinställningarna där. Mer information finns [här](/powershell/module/exchange/get-accepteddomain).
   - question: >
-      Är möjligheten att skicka e SMS meddelanden beroende på en annan tjänst eller specifik konfiguration?
+      Är möjligheten att skicka SMS-meddelanden beroende på en annan tjänst eller specifik konfiguration?
     answer: >
-      SMS är för närvarande tillgänglig i Nordamerika, och ett Skype- eller Twilio-konto används för SMS leverans.
+      SMS-meddelanden finns för närvarande i Nordamerika och ett Skype- eller Twilio-konto används för SMS-leverans.
   - question: >
       Hur kan Bookings avtalade tider visas i en persons kalender?
     answer: >
@@ -305,9 +305,9 @@ sections:
     answer: >
       Personal tilldelas slumpmässigt i dessa scenarier, av alla anställda som är tillgängliga vid tiden för den avtalade tiden som bokas. Det finns för närvarande inget sätt att säkerställa samma fördelning av slumpmässigt tilldelade avtalade tider för alla anställda eller för att minska antalet tilldelade avtalade tider för varje anställd. Om det finns belastningsutjämning som måste göras för din personal efter ett antal slumpmässiga tilldelningar kan du göra det manuellt på fliken Kalender på sidan Bookings.
   - question: >
-      Hur kan användare avanmäla sig från att SMS meddelanden om de redan har valt att delta?
+      Hur kan användarna avanmäla sig från SMS-meddelanden om de redan har valt att ta emot dem tidigare?
     answer: >
-      När du gör en bokning SMS sms-meddelanden uppmanas kunderna att markera rutan registrera sig varje gång de bokar. Kunder kan också svara direkt på SMS-meddelandet (SMS-leverantören) med information om att de vill att meddelandena ska upphöra och sedan skickas inga ytterligare sms till telefonnumret. Om kunden väljer att inte ta emot sms från leverantören, inte från Bookings, kommer de inte längre att få SMS-meddelanden i framtiden, även när de väljer att gå med på Bookings-sidan.
+      När bokning av ett möte med SMS-meddelanden är aktiverat uppmanas kunderna att markera rutan registrera sig varje gång de bokar. Kunder kan även svara direkt på SMS-meddelandet (SMS-leverantören) med information om att de vill att meddelandena ska upphöra, och sedan skickas inga fler sms till det telefonnumret. Om kunden väljer att inte ta emot sms från leverantören, inte från Bookings, kommer de inte längre att få SMS i framtiden, även när de väljer att gå med på Bookings-sidan.
 - name: Felsökning
   questions:
   - question: >
@@ -318,7 +318,7 @@ sections:
 
       > [!NOTE]
 
-      > Bookings aktiveras som standard för kunder med prenumeration på Microsoft 365 Business Standard, Microsoft 365 A3 Microsoft 365 A5. Bookings är även tillgänglig för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise E5, men är som standard inaktiverad. Information om hur du kommer igång [finns i Få åtkomst till Microsoft Bookings.](get-access.md) Om du vill aktivera eller inaktivera Bookings kan [du gå till Aktivera eller inaktivera Bookings för din organisation.](turn-bookings-on-or-off.md)
+      > Bookings aktiveras som standard för kunder med prenumeration på Microsoft 365 Business Standard, Microsoft 365 A3 eller Microsoft 365 A5. Bookings är även tillgänglig för kunder som har Office 365 Enterprise E3 och Office 365 Enterprise E5, men är som standard inaktiverad. Information om hur du kommer igång [finns i Få åtkomst till Microsoft Bookings.](get-access.md) Om du vill aktivera eller inaktivera Bookings kan [du gå till Aktivera eller inaktivera Bookings för din organisation.](turn-bookings-on-or-off.md)
 
 
       Information om hur du synkroniserar personalens kalender finns i Lägga [till personal i Bookings.](add-staff.md) Kontrollera att händelser **i kalendern** påverkar **tillgängligheten på sidan Personalinformation är** markerat.
@@ -356,4 +356,4 @@ sections:
 
 
       Kontakta support om du fortfarande ser det här felet efter en längre tid eller om du ofta ser det.
-additionalContent: "\n## <a name=\"additional-resources\"></a>Ytterligare resurser\n\n- [Microsoft Bookings utökar tillgängligheten i företagsbloggen](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Så här fungerar Microsoft Bookings-video](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [Börja använda Microsoft Bookings](get-access.md)\n\n- [Aktivera eller inaktivera Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [Lägga till användare individuellt eller flera samtidigt](../admin/add-users/add-users.md?view=o365-worldwide.)\n\n- [Lägg till personal i Bookings](add-staff.md)\n\n- [API-komponenter för automatisering efter att mallen har definierats](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [URL till Bookings Kalender för visning](https://outlook.office.com/bookings/calendar)\n\n- [Bookings efterlevnadsprinciper](/compliance/regulatory/gdpr-dsr-Office365?view=o365-worldwide#bookings)\n\n- [Anpassa och publicera din bokningssida](customize-booking-page.md)\n\n- [Konfiguration av klientpostlåda](/powershell/module/exchange/get-accepteddomain)\n\n- [Gruppbokningar](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [Statistik för Bookings och aktivitetsspårning](metrics-and-activity-tracking.md)\n\n- [M365 Offentlig översikt](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)\n\n- Skicka feedback via [UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)"
+additionalContent: "\n## <a name=\"additional-resources\"></a>Ytterligare resurser\n\n- [Microsoft Bookings utökar tillgängligheten i företagsbloggen](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-expands-availability-in-enterprises/ba-p/1214065)\n\n- [Så här fungerar Microsoft Bookings-video](https://support.office.com/article/microsoft-bookings-69c45b78-6de4-4f28-9449-cdcc18b7ae45)\n\n- [Börja använda Microsoft Bookings](get-access.md)\n\n- [Aktivera eller inaktivera Microsoft Bookings](turn-bookings-on-or-off.md)\n\n- [Lägga till användare individuellt eller flera samtidigt](../admin/add-users/add-users.md)\n\n- [Lägg till personal i Bookings](add-staff.md)\n\n- [API-komponenter för automatisering efter att mallen har definierats](/graph/api/bookingbusiness-post-bookingbusinesses)\n\n- [URL till Bookings Kalender för visning](https://outlook.office.com/bookings/calendar)\n\n- [Bookings efterlevnadsprinciper](/compliance/regulatory/gdpr-dsr-Office365#bookings)\n\n- [Anpassa och publicera din bokningssida](customize-booking-page.md)\n\n- [Konfiguration av klientpostlåda](/powershell/module/exchange/get-accepteddomain)\n\n- [Gruppbokningar](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)\n\n- [Statistik för Bookings och aktivitetsspårning](metrics-and-activity-tracking.md)\n\n- [M365 Offentlig översikt](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)\n\n- Skicka feedback via [UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)"
