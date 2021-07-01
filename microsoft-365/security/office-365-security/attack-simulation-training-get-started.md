@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan lära sig hur de använder utbildning av attack simulering för att köra simulerad nätfiske- och lösenordsattacker i sina Microsoft 365 E5 eller Microsoft Defender för Office 365 abonnemang 2 organisationer.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad86f77399cfa2a3a780d3fed7e483e3c11bc08d
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 1fa10d0d29b76d1631dd349d255b6c386557b5b8
+ms.sourcegitcommit: 2266c2da090bc9a6dc1e01dea07f26901d20d57b
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082906"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53222676"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Kom igång med Attack simuleringsträning
 
@@ -52,7 +52,7 @@ Om din organisation har Microsoft 365 E5 eller Microsoft Defender för Office 36
 
 - Det finns inga Motsvarande PowerShell-cmdlets för simulering av attackattacker.
 
-- Attack simulering och utbildning relaterade data lagras med andra kunddata för Microsoft 365 tjänster. Mer information finns [Microsoft 365 dataplatser](../../enterprise/o365-data-locations.md). Attack simulering är tillgänglig i följande regioner: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN och KOR.
+- Attack simulering och utbildning relaterade data lagras med andra kunddata för Microsoft 365 tjänster. Mer information finns [Microsoft 365 dataplatser](../../enterprise/o365-data-locations.md). Attack simulering är tillgänglig i följande regioner: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN, KOR, BRA, CHE.
 
 - Från och med 15 juni 2021 finns simuleringsutbildning för attack i GCC. Om din organisation har Office 365 G5 GCC eller Microsoft Defender för Office 365 (abonnemang 2) för myndigheter kan du använda utbildning av attackspel i Microsoft 365 Defender-portalen för att köra realistiska attackscenarier i organisationen enligt beskrivningen i den här artikeln. Utbildning av attack simulering är ännu inte tillgängligt GCC hög- eller dod-miljöer.
 
