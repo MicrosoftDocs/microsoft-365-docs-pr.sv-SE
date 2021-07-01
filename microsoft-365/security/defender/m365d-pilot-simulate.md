@@ -1,6 +1,6 @@
 ---
-title: Köra din Microsoft 365 Defender-attack simuleringar
-description: Kör attack simuleringar för ditt Microsoft 365 Defender-pilotprojekt för att se hur det utvecklas och snabbt åtgärdas.
+title: Köra din Microsoft 365 Defender attack simuleringar
+description: Kör attack simuleringar för ditt Microsoft 365 Defender pilotprojekt för att se hur det fungerar och snabbt åtgärdas.
 keywords: Microsoft 365 Defender pilotattack simulering, kör Microsoft 365 Defender pilotattack simulering, simulera attack i Microsoft 365 Defender, Microsoft 365 Defender pilotprojekt, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enhet, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18dc8158ef3c806e5dac5a01778adebc6eecc1ce
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934483"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230025"
 ---
-# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Köra din Microsoft 365 Defender-attack simuleringar
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Köra din Microsoft 365 Defender attack simuleringar
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934483"
 
 Du befinner dig för närvarande i simuleringsfasen av attacken.
 
-När du har förberett pilotmiljön är det dags att testa Microsoft 365 Defender-incidenthantering och automatiska undersöknings- och åtgärdsfunktioner. Vi hjälper dig att simulera en avancerad attack som använder avancerade tekniker för att dölja det. Attacken räknar upp öppna SMB-sessioner (Server Message Block) på domänkontrollanter och hämtar de senaste IP-adresserna för användarnas enheter. Den här kategorin av attacker inkluderar vanligtvis inte filer som släppts på offerts enhet – de förekommer endast i minnet. De "boar av landet" genom att använda befintliga system- och administrationsverktyg och mata in kod i systemprocesser för att dölja körningen, ett sådant beteende gör att de kan avkoda identifieringen och finnas kvar på enheten.
+När pilotmiljön har förberetts är det dags att testa Microsoft 365 Defender och automatiserad undersökning och åtgärder. Vi hjälper dig att simulera en avancerad attack som använder avancerade tekniker för att dölja det. Attacken räknar upp öppna SMB-sessioner (Server Message Block) på domänkontrollanter och hämtar de senaste IP-adresserna för användarnas enheter. Den här kategorin av attacker inkluderar vanligtvis inte filer som släppts på offerts enhet – de förekommer endast i minnet. De "boar av landet" genom att använda befintliga system- och administrationsverktyg och mata in kod i systemprocesser för att dölja körningen, ett sådant beteende gör att de kan avkoda identifieringen och finnas kvar på enheten.
 
 I den här simuleringen börjar vårt exempelscenario med ett PowerShell-skript. En användare kan bli lurad att köra ett skript. Eller så kan skriptet köras från en fjärranslutning till en annan dator från en tidigare smittad enhet – då försöker attackeraren flytta sig fritt i nätverket. Det kan vara svårt att identifiera de här skripten eftersom administratörer också ofta kör skript på distans för att utföra olika administrativa aktiviteter.
 
@@ -134,7 +134,7 @@ När du växlar till SOC-analytiker kan du börja undersöka attacken i Microsof
 
 ### <a name="investigate-the-attack-as-a-single-incident"></a>Undersök attacken som en enda incident
 
-Microsoft 365 Defender korrelerar analyser och sammanställer alla relaterade aviseringar och undersökningar från olika produkter till en enda incidentenhet. På så sätt Microsoft 365 Defender en bredare attackhistoria, så att SOC-analytiker kan förstå och reagera på komplexa hot.
+Microsoft 365 Defender korrelerar analyser och aggregerar alla relaterade aviseringar och undersökningar från olika produkter till en enda incidentenhet. På så sätt Microsoft 365 Defender en bredare attackhistoria, så att SOC-analytiker kan förstå och reagera på komplexa hot.
 
 Aviseringarna som genererades under den här simuleringen är associerade med samma hot och därför aggregeras automatiskt som en enda incident.
 
@@ -158,14 +158,14 @@ Så här visar du händelsen:
 
    ![Skärmbild av var du klickar på Hantera incident](../../media/mtp/fig5a.png)
 
-   ![Skärmbild av fälten i panelen Hantera incident där du kan tagga händelsen, tilldela den till dig själv och lägga till kommentarer ](../../media/mtp/fig5b.png)
+   ![Skärmbild av fälten i panelen Hantera incident där du kan tagga händelsen, tilldela den till dig själv och lägga till kommentarer](../../media/mtp/fig5b.png)
 
 ### <a name="review-generated-alerts"></a>Granska genererade aviseringar
 
 Vi tittar på några av de aviseringar som genererades vid en simulerad attack.
 
 > [!NOTE]
-> Vi går bara igenom några få av de aviseringar som genererats under den simulerade attacken. Beroende på vilken version av Windows och Microsoft 365 Defender-produkter som körs på testenheten kan du se fler aviseringar som visas i en något annan ordning.
+> Vi går bara igenom några få av de aviseringar som genererats under den simulerade attacken. Beroende på vilken version av Windows och vilka Microsoft 365 Defender-produkter som körs på testenheten kan du se fler aviseringar som visas i en något annan ordning.
 
 ![Skärmbild av genererade aviseringar](../../media/mtp/fig6.png)
 
@@ -432,14 +432,14 @@ Anpassade identifieringar kör frågan enligt den frekvens du har angett, och re
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Mer avancerad genomgångs övningar för sökning
 
-Om du vill veta mer om avancerad sökning går följande webbsändningar igenom funktionerna för avancerad sökning i Microsoft 365 Defender för att skapa korsreparationsfrågor, pivotera till enheter och skapa anpassade identifieringar och åtgärder.
+I följande webbsändningar får du lära dig mer om avancerad sökning i Microsoft 365 Defender, där du får hjälp med att skapa korsfrågor, pivotera till enheter och skapa anpassade identifieringar och åtgärdsåtgärder.
 
 > [!NOTE]
 > Förbered dig med ditt GitHub konto för att köra frågor om testlabb.
 
 |Title|Beskrivning|Ladda ned MP4|Titta på YouTube|CSL-fil att använda|
 |---|---|---|---|---|
-|Avsnitt 1: Grunderna i KQL|Vi tar upp grunderna i avancerad sökning i Microsoft 365 Defender. Läs mer om tillgängliga avancerade data för sökning och grundläggande KQL-syntax och -operatorer.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Avsnitt 1: CSL-fil i Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
+|Avsnitt 1: Grunderna i KQL|Vi går in på grunderna i avancerade sökfunktioner i Microsoft 365 Defender. Läs mer om tillgängliga avancerade data för sökning och grundläggande KQL-syntax och -operatorer.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Avsnitt 1: CSL-fil i Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |Avsnitt 2: Kopplingar|Vi fortsätter att lära oss mer om data inom avancerad sökning och hur du kan koppla ihop tabeller. Lär dig mer om inre, yttre, unika och halvseparerade kopplingar och nyanserna hos standardkopplingen i Kusto innerunique.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Avsnitt 2: CSL-fil på Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |Avsnitt 3: Sammanfatta, pivotera och visualisera data|Nu när vi kan filtrera, manipulera och sammanfoga data är det dags att börja sammanfatta, mäta, pivotera och visualisera. I det här avsnittet tar vi upp sammanfattningsoperatorn och en del av beräkningarna du kan utföra när du börjar med fler tabeller i det avancerade sökschemat. Vi omvandlar datamängderna till diagram som kan förbättra analysen.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Avsnitt 3: CSL-fil i Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
 |Avsnitt 4: Vi jagar! Tillämpa KQL på incidentspårning|Dags att spåra vissa attacker! I det här avsnittet använder vi vår förbättrade förståelse av KQL och avancerad sökning i Microsoft 365 Defender för att spåra en attack. Lär dig några tips som används för att spåra attackersaktivitet, till exempel ABCS för cybersäkerhet och hur de tillämpas på incidentsvar.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Avsnitt 4: CSL-fil i Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
@@ -447,5 +447,5 @@ Om du vill veta mer om avancerad sökning går följande webbsändningar igenom 
 
 ## <a name="next-step"></a>Nästa steg
 
-|![Slutfas och sammanfattningsfas](../../media/mtp/close.png) <br>[Slutfas och sammanfattningsfas](m365d-pilot-close.md)|Analysera ditt Microsoft 365 Defender-pilotresultat, presentera dem för dina intressenter och ta nästa steg.
+|![Slutfas och sammanfattningsfas](../../media/mtp/close.png) <br>[Slutfas och sammanfattningsfas](m365d-pilot-close.md)|Analysera dina Microsoft 365 Defender pilotresultat, presentera dem för dina intressenter och ta nästa steg.
 |:-----|:-----|

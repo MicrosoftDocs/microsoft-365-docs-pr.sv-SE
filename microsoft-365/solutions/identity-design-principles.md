@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: c94b387bbd73e2c4f9b3de243131ae023ddb4cb8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: b424b4f611f0553de4b7129d2c0b63cefbdeeab3
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222531"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229365"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>För identitet och vidarestöld – En arkitekts byggnad
 
@@ -50,7 +50,7 @@ Hoppa inte över det här avsnittet. Jag tycker ofta att jag måste gå tillbaka
 Språket är tyvärr inte ett exakt verktyg. Vi använder ofta samma ord för att betyda olika begrepp eller olika ord för att betyda samma koncept. I det här diagrammet nedan använder jag ofta terminologi och hierarkimodell.
 <br><br>
 
-![Illustration av klientorganisation, prenumeration, tjänst och data](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)  
+![Illustration av klientorganisation, prenumeration, tjänst och data](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)
 
 <br>
 
@@ -98,7 +98,7 @@ XYZ SaaS har stöd för JIT-etablering (Just-in-Time), varför behöver jag synk
 
 [Synkronisering av](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization) lösenordshashar (PHS) jämfört med [direktautentisering](/azure/active-directory/hybrid/how-to-connect-pta-how-it-works) (PTA) jämfört med [federation](/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
 
-Det finns oftast en starkt engagerade [diskussioner](/azure/active-directory/hybrid/choose-ad-authn) kring federation. Enklare är oftast bättre och därför bör du använda PHS om du inte har goda skäl att inte göra det. Det går även att konfigurera olika autentiseringsmetoder för olika DNS-domäner i samma klientorganisation. 
+Det finns oftast en starkt engagerade [diskussioner](/azure/active-directory/hybrid/choose-ad-authn) kring federation. Enklare är oftast bättre och därför bör du använda PHS om du inte har goda skäl att inte göra det. Det går även att konfigurera olika autentiseringsmetoder för olika DNS-domäner i samma klientorganisation.
 
 Vissa kunder aktiverar federation + PHS huvudsakligen för:
 
@@ -132,14 +132,14 @@ Om du kombinerar alla dessa signaler möjliggörs dynamiska principer som dessa:
 
 Om du godkänner denna utökade auktoriseringsdefinition måste du implementera ytterligare lösningar. Vilka lösningar du implementerar beror på hur dynamiskt du vill att principen ska vara och vilka hot du vill prioritera. Några exempel på sådana system är:
 
-- [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
+- [Azure AD Identity Protection](/azure/active-directory/identity-protection/)
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender för Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [Microsoft Defender för Office 365](../security/office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
-- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
+- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)
 - [Microsoft Intune](/mem/intune/)
-- [Microsoft Information Protection](../compliance/information-protection.md?view=o365-worldwide) (MIP)
+- [Microsoft Information Protection](../compliance/information-protection.md) (MIP)
 - [Azure Sentinel](/azure/sentinel/)
 
 Utöver Azure AD har naturligtvis olika tjänster och program egna specifika auktoriseringsmodeller. En del av dem tas upp senare i delegeringsavsnittet.
@@ -154,11 +154,11 @@ Ingen panik! Det innebär inte Exchange (eller föråldrade SharePoint och så v
 
 ![Bifoga en fil i ett e-postmeddelande](../media/solutions-architecture-center/modern-attachments.png)
 
-När du tittar på Outlook kan du se många tjänster som är "anslutna" som en del av den här upplevelsen, inte bara Exchange. Det omfattar Azure AD, Microsoft Search, Appar, Profil, efterlevnad och Office 365 grupper. 
+När du tittar på Outlook kan du se många tjänster som är "anslutna" som en del av den här upplevelsen, inte bara Exchange. Det inkluderar Azure AD, Microsoft Search, appar, profil, efterlevnad och Office 365 grupper.
 
 ![Outlook gränssnitt med bildtext](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
-Läs mer [Microsoft Fluid Framework](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268) om hur du förhandsgranskar kommande funktioner. I förhandsgranskningsläge nu kan jag läsa och svara på Teams direkt i Outlook. Faktum är att [Teams är ett](https://products.office.com/microsoft-teams/download-app) av de mest framträdande exemplen på den här strategi. 
+Läs mer [Microsoft Fluid Framework](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268) om hur du förhandsgranskar kommande funktioner. I förhandsgranskningsläge nu kan jag läsa och svara på Teams direkt i Outlook. Faktum är att [Teams är ett](https://products.office.com/microsoft-teams/download-app) av de mest framträdande exemplen på den här strategi.
 
 Generellt sett blir det svårare att rita en tydlig linje mellan Office 365 och andra tjänster i Microsoft-moln. Jag ser det som en stor fördel för kunderna eftersom de kan dra nytta av den totala innovationen i allt vi gör även om de använder en komponent. Ganska coolt och har betydande konsekvenser för många kunder.
 
@@ -182,10 +182,10 @@ Vissa kunder väljer att använda fler än en klientorganisation. Det bör vara 
 
 - En företagsstruktur av typen holding där enkelt samarbete mellan olika enheter inte krävs och det finns starka behov av administrativ och annan avgränsning.
 - Efter ett företagsköp görs ett beslut om att hålla två enheter separerade.
-- Simulering av en kundmiljö som inte ändrar kundens produktionsmiljö. 
+- Simulering av en kundmiljö som inte ändrar kundens produktionsmiljö.
 - Utveckling av programvara för kunder.
 
-I de här scenarierna med flera innehavare vill kunder ofta behålla samma konfiguration för flera klientorganisationener eller rapportera om konfigurationsändringar och drift. Det innebär ofta att flytta från manuella ändringar till konfiguration som kod. Microsoft Premier-supporten erbjuder en utgångspunkt för de här typerna av krav som baseras på denna offentliga IP: [https://Microsoft365dsc.com](https://Microsoft365dsc.com) .
+I de här scenarierna med flera innehavare vill kunder ofta behålla samma konfiguration för flera klientorganisationener eller rapportera om konfigurationsändringar och drift. Det innebär ofta att flytta från manuella ändringar till konfiguration som kod. Microsoft Premier-supporten erbjuder en utgångspunkt för de här typerna av krav som baseras på denna offentliga IP: <https://Microsoft365dsc.com> .
 
 ### <a name="multi-geo"></a>Multi-Geo
 
@@ -195,7 +195,7 @@ Om [du vill använda Multi-Geo](../enterprise/microsoft-365-multi-geo.md) eller 
 - Det är inte en lösning för [GDPR:s efterlevnad.](https://www.microsoft.com/trust-center/privacy/gdpr-overview) GDPR fokuserar inte på data eller lagringsplatser. Det finns andra ramverk för efterlevnad för detta.
 - Den löser inte delegering av administration (se nedan) eller [informationsbarriärer.](../compliance/information-barriers.md)
 - Det är inte detsamma som flerklientorganisationen och kräver ytterligare [arbetsflöden för användaretablering.](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md)
-- Din klientorganisation [(din](../enterprise/moving-data-to-new-datacenter-geos.md) Azure AD) flyttas inte till en annan geografi. 
+- Din klientorganisation [(din](../enterprise/moving-data-to-new-datacenter-geos.md) Azure AD) flyttas inte till en annan geografi.
 
 ## <a name="delegation-of-administration"></a>Delegering av administration
 
@@ -205,13 +205,13 @@ I de flesta stora organisationer är avgränsningen av uppgifter och rollbaserad
 
 Det finns en lång och växande lista [med inbyggda roller.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Varje roll består av en lista över rollbehörigheter som grupperats för att tillåta att särskilda åtgärder utförs. De här behörigheterna visas på fliken Beskrivning i varje roll. Alternativt kan du se en mer läsbar version av dessa i Microsoft 365 Admin Center. Definitionerna för inbyggda roller kan inte ändras. I allmänhet grupperar jag dessa i tre kategorier:
 
-- **Global administratör:** Den här "all kraftfulla" rollen bör [skyddas i hög grad](../enterprise/protect-your-global-administrator-accounts.md) på samma sätt som i andra system. Vanliga rekommendationer är: ingen permanent tilldelning och användning av Azure AD Privileged Identity Management (PIM); stark autentisering; och så vidare. På ett intressant sätt ger den här rollen dig inte tillgång till allt som standard. Jag brukar se förvirring vad gäller åtkomst till efterlevnad och Azure-åtkomst, vilket diskuteras senare. Den här rollen kan dock alltid tilldela åtkomst till andra tjänster i klientorganisationen. 
+- **Global administratör:** Den här "all kraftfulla" rollen bör [skyddas i hög grad](../enterprise/protect-your-global-administrator-accounts.md) på samma sätt som i andra system. Vanliga rekommendationer är: ingen permanent tilldelning och användning av Azure AD Privileged Identity Management (PIM); stark autentisering; och så vidare. På ett intressant sätt ger den här rollen dig inte tillgång till allt som standard. Jag brukar se förvirring vad gäller åtkomst till efterlevnad och Azure-åtkomst, vilket diskuteras senare. Den här rollen kan dock alltid tilldela åtkomst till andra tjänster i klientorganisationen.
 - **Specifika tjänstadministratörer:** Vissa tjänster (Exchange, SharePoint, Power BI och så vidare) använder administratörsroller på hög nivå från Azure AD. Det är inte konsekvent i alla tjänster och det finns fler tjänstespecifika roller som diskuteras senare.
 - **Funktionellt:** Det finns en lång (och växande) lista med roller som fokuserar på specifika åtgärder (gäst inbjudna och så vidare). Med jämna mellanrum läggs fler av dem till utifrån kundens behov.
 
 Det går inte att delegera allt (även om mellanrummet minskar), vilket innebär att den globala administratörsrollen ibland skulle behöva användas. Konfiguration som kod och automatisering bör övervägas i stället för att personer ska vara medlemmar i den här rollen.
 
-**Obs!** Microsoft 365 administrationscentret har ett mer användarvänligt gränssnitt men har en delmängd funktioner jämfört med administratörsupplevelsen i Azure AD. Båda portalerna använder samma Azure AD-roller, så ändringar sker på samma plats. Tips: Om du vill ha ett användargränssnitt med identitetshantering som är fokuserad administratör utan all Azure-röra kan du använda [https://aad.portal.azure.com](https://aad.portal.azure.com) . 
+**Obs!** Administrationscenter för Microsoft 365 har ett mer användarvänligt gränssnitt men har en delmängd funktioner jämfört med administrationsupplevelsen i Azure AD. Båda portalerna använder samma Azure AD-roller, så ändringar sker på samma plats. Tips: Om du vill ha ett användargränssnitt med identitetshantering som är fokuserad administratör utan all Azure-röra kan du använda <https://aad.portal.azure.com> .
 
 Vad finns i namnet? Gör inte antaganden från namnet på rollen. Språket är inte ett mycket exakt verktyg. Målet bör vara att definiera åtgärder som ska delegeras innan du ser vilka roller som behövs. Om du lägger till någon i rollen "Säkerhetsläsare" ser de inte säkerhetsinställningar i allt.
 
@@ -221,7 +221,7 @@ En annan vanlig fråga är möjligheten att begränsa roller till en delmängd a
 
 I dag kräver alla de här rollerna direkt medlemskap (eller dynamisk tilldelning om du använder [Azure AD PIM).](/azure/active-directory/privileged-identity-management/) Det innebär att kunder måste hantera dessa direkt i Azure AD och dessa kan inte baseras på ett medlemskap i säkerhetsgrupper. Jag gillar inte att skapa skript för att hantera dem eftersom det skulle behöva köras med förhöjda rättigheter. Jag rekommenderar api-integrering med processsystem som ServiceNow eller partnerstyrningsverktyg som Saviynt. Teknikarbetet kommer att åtgärdas med tiden.
 
-Jag nämnde [Azure AD PIM](/azure/active-directory/privileged-identity-management/) några gånger. Det finns en Microsoft Identity Manager (MIM) [privileged access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services) (PAM) för lokala kontroller. Du kanske också vill titta på [Paws (Privileged Access Arbetsstationer)](/windows-server/identity/securing-privileged-access/privileged-access-workstations) och Azure [AD-identitetsstyrning.](/azure/active-directory/governance/identity-governance-overview) Det finns även olika verktyg från tredje part som kan aktivera precis i tid, precis tillräckligt många och dynamisk rollhöjd. Det här är vanligtvis en del av en större diskussion om att skydda en miljö. 
+Jag nämnde [Azure AD PIM](/azure/active-directory/privileged-identity-management/) några gånger. Det finns en Microsoft Identity Manager (MIM) [privileged access Management](/microsoft-identity-manager/pam/privileged-identity-management-for-active-directory-domain-services) (PAM) för lokala kontroller. Du kanske också vill titta på [Paws (Privileged Access Arbetsstationer)](/windows-server/identity/securing-privileged-access/privileged-access-workstations) och Azure [AD-identitetsstyrning.](/azure/active-directory/governance/identity-governance-overview) Det finns även olika verktyg från tredje part som kan aktivera precis i tid, precis tillräckligt många och dynamisk rollhöjd. Det här är vanligtvis en del av en större diskussion om att skydda en miljö.
 
 Ibland anropas scenarier för att lägga till en extern användare till en roll (se avsnittet med flera innehavare ovan). Det här fungerar alldeles utmärkt. [Azure AD B2B är](/azure/active-directory/b2b/) ett annat stort och roligt ämne som kunderna kan gå igenom, kanske i en annan artikel.
 
@@ -231,7 +231,7 @@ Ibland anropas scenarier för att lägga till en extern användare till en roll 
 
 Det här är i en mening en vidareutveckling Exchange modell för rollgrupper. Men Exchange Online har ett eget gränssnitt [för grupphantering.](/exchange/permissions-exo) Vissa rollgrupper i Exchange Online är låsta och hanteras från Azure AD eller Säkerhets- och efterlevnadscenter för &, men andra kan ha samma eller liknande namn och hanteras i Exchange Online (som en del av den förvirringen). Jag rekommenderar att du undviker att Exchange Online användargränssnittet såvida du inte behöver omfattningar för Exchange hantering.
 
-Du kan inte skapa anpassade roller. Roller definieras av tjänster som skapas av Microsoft och växer i och med att nya tjänster införs. Det här fungerar ungefär som roller [som definieras av program](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) i Azure AD. När nya tjänster är aktiverade behöver ofta nya rollgrupper skapas för att bevilja eller delegera åtkomst till dessa (till exempel [insiderriskhantering).](../compliance/insider-risk-management-configure.md?view=o365-worldwide)
+Du kan inte skapa anpassade roller. Roller definieras av tjänster som skapas av Microsoft och växer i och med att nya tjänster införs. Det här fungerar ungefär som roller [som definieras av program](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) i Azure AD. När nya tjänster är aktiverade behöver ofta nya rollgrupper skapas för att bevilja eller delegera åtkomst till dessa (till exempel [insiderriskhantering).](../compliance/insider-risk-management-configure.md)
 
 De här rollgrupperna kräver direkt medlemskap och får inte innehålla Azure AD-grupper. Idag stöds tyvärr inte de här rollgrupperna av Azure AD PIM. Precis som med Azure AD-roller brukar jag rekommendera hantering av dessa via API:er eller en produkt för partnerstyrning, till exempel Saviynt.
 
@@ -243,31 +243,37 @@ Det är värt att notera att kontroller som hanteras via säkerhets- och efterle
 
 Som vi nämnt tidigare vill många kunder uppnå en mer detaljerad delegeringsmodell. Ett vanligt exempel: "Hantera XYZ-tjänsten endast för Division X-användare och -platser" (eller någon annan dimension). Möjligheten att göra detta beror på varje tjänst och är inte konsekvent för alla tjänster och funktioner. Dessutom kan varje tjänst ha en separat och unik RBAC-modell. I stället för att diskutera allt detta (det tar evigheter) lägger jag till relevanta länkar för varje tjänst. Det här är inte en fullständig lista, men det hjälper dig att komma igång.
 
-- **Exchange Online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](/exchange/permissions-exo/permissions-exo) 
-- **SharePoint Online** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](/sharepoint/manage-site-collection-administrators) 
-- **Microsoft Teams**  -  [https://docs.microsoft.com/microsoftteams/itadmin-readiness](/microsoftteams/itadmin-readiness)
-- **eDiscovery** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](../compliance/index.yml) 
-  + **Behörighetsfiltrering**  -  [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search](../compliance/index.yml)
-  + **Efterlevnadsgränser**  -  [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](../compliance/set-up-compliance-boundaries.md)
-  + **Advanced eDiscovery**  -  [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](../compliance/overview-ediscovery-20.md)
-- **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](/yammer/manage-yammer-users/manage-yammer-admins) 
-- **Multi-geo** - [https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin](../enterprise/add-a-sharepoint-geo-admin.md) 
-- **Dynamics 365** – [https://docs.microsoft.com/dynamics365/](/dynamics365/) <br>
-  Obs! Den här länken finns i roten till dokumentationen. Det finns flera typer av tjänster med variationer i modellen för administratörer/delegering.
-- **Power Platform**  -  [https://docs.microsoft.com/power-platform/admin/admin-documentation](/power-platform/admin/admin-documentation)
-  + **Power Apps**  -  [https://docs.microsoft.com/power-platform/admin/wp-security](/power-platform/admin/wp-security) <br>
-    Obs! Det finns flera typer med variationer i modeller för administratörer/delegering.
-  + **Power Automate**  -  [https://docs.microsoft.com/power-automate/environments-overview-admin](/power-automate/environments-overview-admin)
-  + **Power BI**  -  [https://docs.microsoft.com/power-bi/service-admin-governance](/power-bi/service-admin-governance) <br>
-Obs! Säkerhet och delegering av dataplattform (som Power BI en komponent) är ett komplext område.
-- **MEM/Intune**  -  [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](/mem/intune/fundamentals/role-based-access-control)
-- **Microsoft Defender för Slutpunkt**  -  [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/m365d-permissions.md)
-- **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](/cloud-app-security/manage-admins)
-- **Streama**  -  [https://docs.microsoft.com/stream/assign-administrator-user-role](/stream/assign-administrator-user-role)
-- **Informationsbarriärer**  -  [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](../compliance/information-barriers.md)
+- **Exchange Online** – (/exchange/permissions-exo/permissions-exo)
+- **SharePoint Online** – (/sharepoint/manage-site-collection-administrators)
+- **Microsoft Teams** – (/microsoftteams/itadmin-readiness)
+- **eDiscovery** – (.. /compliance/index.yml)
+  - **Behörighetsfiltrering** – (.. /compliance/index.yml)
+  - **Efterlevnadsgränser** – (.. /compliance/set-up-compliance-boundaries.md)
+  - **Advanced eDiscovery** - (.. /compliance/overview-ediscovery-20.md)
+- **Yammer** - (/yammer/manage-yammer-users/manage-yammer-admins)
+- **Multi-geo** - (.. /enterprise/add-a-sharepoint-geo-admin.md)
+- **Dynamics 365** – (/dynamics365/)
 
-I övrigt har sökningen i Docs varit riktigt bra den senaste tiden – [https://docs.microsoft.com/](../compliance/information-barriers.md) . 
+  Obs! Den här länken finns i roten till dokumentationen. Det finns flera typer av tjänster med variationer i modellen för administratörer/delegering.
+
+- **Power Platform** – (/power-platform/admin/admin-documentation)
+  - **Power Apps** – (/power-platform/admin/wp-security)
+
+    Obs! Det finns flera typer med variationer i modeller för administratörer/delegering.
+
+  - **Power Automate** - (/power-automate/environments-overview-admin)
+  - **Power BI** – (/power-bi/service-admin-governance)
+
+    Obs! Säkerhet och delegering av dataplattform (som Power BI en komponent) är ett komplext område.
+
+- **MEM/Intune** - (/mem/intune/fundamentals/role-based-access-control)
+- **Microsoft Defender för slutpunkt** – (/windows/security/threat-protection/microsoft-defender-atp/user-roles)
+- **Microsoft 365 Defender** – (.. /security/defender/m365d-permissions.md)
+- **Microsoft Cloud App Security** - (/cloud-app-security/manage-admins)
+- **Stream** – (/stream/assign-administrator-user-role)
+- **Informationsbarriärer** – (.. /compliance/information-barriers.md)
+
+I övrigt har sökningen i Docs varit riktigt bra den senaste tiden – <https://docs.microsoft.com/> .
 
 ### <a name="activity-logs"></a>Aktivitetsloggar
 
@@ -278,37 +284,37 @@ Exempel på Microsoft 365 loggar som används via andra API:er är bland annat f
 - [Azure AD](/azure/azure-monitor/platform/diagnostic-settings) (aktiviteter som inte är relaterade till Office 365)
 - [Exchange Meddelandespårning](/powershell/module/exchange/get-messagetrace)
 - Hot/UEBA-system som nämns ovan (till exempel Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender för Endpoint och så vidare)
-- [Microsofts informationsskydd](../compliance/data-classification-activity-explorer.md?view=o365-worldwide)
+- [Microsofts informationsskydd](../compliance/data-classification-activity-explorer.md)
 - [Microsoft Defender för Endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
-Det är viktigt att först identifiera alla loggkällor som behövs för ett säkerhets- och efterlevnadsprogram. Observera även att olika loggar har olika begränsningar för lagring på rad. 
+Det är viktigt att först identifiera alla loggkällor som behövs för ett säkerhets- och efterlevnadsprogram. Observera även att olika loggar har olika begränsningar för lagring på rad.
 
-Ur administratörsdelegeringsperspektiv har Microsoft 365 de flesta aktivitetsloggar inte en inbyggd RBAC-modell. Om du har behörighet att se en logg kan du se allt i den. Ett vanligt exempel på ett kundkrav är: "Jag vill kunna fråga aktivitet endast för EU-användare" (eller någon annan dimension). För att uppnå det här kravet måste vi överföra loggar till en annan tjänst. I Microsoft-molnet rekommenderar vi att du överför den till [antingen Azure Sentinel](/azure/sentinel/overview) eller [Log Analytics.](/azure/azure-monitor/learn/quick-create-workspace) 
+Ur administratörsdelegeringsperspektiv har Microsoft 365 de flesta aktivitetsloggar inte en inbyggd RBAC-modell. Om du har behörighet att se en logg kan du se allt i den. Ett vanligt exempel på ett kundkrav är: "Jag vill kunna fråga aktivitet endast för EU-användare" (eller någon annan dimension). För att uppnå det här kravet måste vi överföra loggar till en annan tjänst. I Microsoft-molnet rekommenderar vi att du överför den till [antingen Azure Sentinel](/azure/sentinel/overview) eller [Log Analytics.](/azure/azure-monitor/learn/quick-create-workspace)
 
 Översiktsdiagram:
 
-![Diagram över loggkällor för ett säkerhets- och efterlevnadsprogram](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![Diagram över loggkällor för ett säkerhets- och efterlevnadsprogram](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
 
 Diagrammet ovan representerar inbyggda funktioner för att skicka loggar till Händelsehubben och/eller Azure Storage och/eller Azure Log Analytics. Alla system har inte den här inbyggda ännu. Men det finns andra sätt att skicka loggarna till samma lagringsplats. Se till exempel Skydda [din Teams med Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761).
 
 Om du kombinerar alla loggar till en lagringsplats innebär det ytterligare fördelar, till exempel korskorrelationer, anpassade kvarhållningstider, utfyllning med data som behövs för att stödja RBAC-modellen och så vidare. När data finns i det här lagringssystemet kan du skapa en Power BI instrumentpanel (eller en annan typ av visualisering) med en lämplig RBAC-modell.
 
-Loggar behöver inte dirigeras till en enda plats. Det kan också vara bra att integrera [Office 365 loggar med Microsoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) eller en anpassad RBAC-modell i [Power BI](../admin/usage-analytics/usage-analytics.md?view=o365-worldwide). Olika lagringsplatsen har olika fördelar och målgrupper.
+Loggar behöver inte dirigeras till en enda plats. Det kan också vara bra att integrera [Office 365 loggar med Microsoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) eller en anpassad RBAC-modell i [Power BI](../admin/usage-analytics/usage-analytics.md). Olika lagringsplatsen har olika fördelar och målgrupper.
 
-Det är värt att nämna att det finns ett mycket omfattande inbyggt analyssystem för säkerhet, hot, svagheter och så vidare i en tjänst som kallas [Microsoft 365 Defender.](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
+Det är värt att nämna att det finns ett mycket omfattande inbyggt analyssystem för säkerhet, hot, svagheter och så vidare i en tjänst som kallas [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md).
 
 Många stora kunder vill överföra dessa loggdata till ett tredjepartssystem (till exempel SIEM). Det finns olika metoder för detta, men i allmänhet [är Azure Event Hub](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) [Graph](/graph/security-integration) en bra utgångspunkt.
 
 ### <a name="azure"></a>Azure
 
-Jag blir ofta tillfrågad om det finns något sätt att separera roller med hög behörighet mellan Azure AD, Azure och SaaS (till exempel: Global administratör för Office 365 men inte Azure).  Inte riktigt.  Arkitektur med flera klientorganisationar krävs om fullständig administrativ avgränsning krävs, men det ökar [komplexiteten](https://aka.ms/multi-tenant-user) (se ovan). Alla dessa tjänster är en del av samma säkerhets- och identitetsgräns (titta på hierarkimodellen ovan).  
+Jag blir ofta tillfrågad om det finns något sätt att separera roller med hög behörighet mellan Azure AD, Azure och SaaS (till exempel: Global administratör för Office 365 men inte Azure).  Inte riktigt.  Arkitektur med flera klientorganisationar krävs om fullständig administrativ avgränsning krävs, men det ökar [komplexiteten](https://aka.ms/multi-tenant-user) (se ovan). Alla dessa tjänster är en del av samma säkerhets- och identitetsgräns (titta på hierarkimodellen ovan).
 
 Det är viktigt att förstå relationer mellan olika tjänster i samma klientorganisation. Jag arbetar med många kunder som bygger affärslösningar som spänner över Azure, Office 365 och Power Platform (och ofta även lokala och tredjepartsmolntjänster). Ett vanligt exempel:
 
 1. Jag vill samarbeta i en uppsättning dokument/bilder/osv.(Office 365)
 2. Skicka var och en av dem genom en godkännandeprocess (Power Platform)
-3.  När alla komponenter har godkänts sätter du ihop dem till en enhetlig slutbar produkt (Azure) [Microsoft Graph API](/azure/active-directory/develop/microsoft-graph-intro) är din bästa vän för dessa.  Inte omöjligt, men betydligt mer komplicerat med att utforma en lösning som spänner [över flera klientorganisationar.](/azure/active-directory/develop/single-and-multi-tenant-apps)
+3. När alla komponenter har godkänts sätter du ihop dem till en enhetlig slutbar produkt (Azure) [Microsoft Graph API](/azure/active-directory/develop/microsoft-graph-intro) är din bästa vän för dessa.  Inte omöjligt, men betydligt mer komplicerat med att utforma en lösning som spänner [över flera klientorganisationar.](/azure/active-directory/develop/single-and-multi-tenant-apps)
 
 Azure Role-Based Access Control (RBAC) ger enkel åtkomsthantering för Azure. Med RBAC kan du hantera åtkomst till resurser genom att bevilja användare de längsta behörigheterna som behövs för att utföra deras jobb. Informationen är inte begränsad till det här dokumentet, men mer information om RBAC finns i Vad är rollbaserad åtkomstkontroll [(RBAC) i Azure?](/azure/role-based-access-control/overview) RBAC är viktigt men bara en del av hanteringsöverväganden för Azure. [Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/) är en bra utgångspunkt för mer information. Jag gillar hur min vän Andres Hansson vägkar kunderna steg för steg, men olika komponenter för att bestämma vilken metod jag ska välja. Vyn på hög nivå för olika element (inte lika bra som processen för att komma åt faktiska kundmodeller) ser ut ungefär så här:
 

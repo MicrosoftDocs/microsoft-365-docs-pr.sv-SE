@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 65215d15e79ab03611bbf28c153d6882fd1c355d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177627"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229149"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivera regler för minskning av attackytan
 
@@ -49,7 +49,7 @@ Du kan ange minskningsregler för attackytan för enheter som kör någon av fö
 Om du vill använda hela funktionsuppsättningen för minskningsregler för attackytan behöver du:
 
 - Windows Defender Antivirus som primärt AV (realtidsskydd på)
-- [Molnleveransskydd på](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (vissa regler kräver det)
+- [Molnleveransskydd på](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) (vissa regler kräver det)
 - Windows 10 Enterprise E5- eller E3-licens Microsoft 365 Företagslicens
 
 Även om minskningsregler för attackytan inte kräver en [Windows E5-licens](/windows/deployment/deploy-enterprise-licenses), med en Windows E5-licens, får du avancerade hanteringsfunktioner, inklusive övervakning, analys och arbetsflöden som är tillgängliga i Defender för Slutpunkt, samt rapporterings- och konfigurationsfunktioner i Microsoft 365 säkerhetscenter. Dessa avancerade funktioner är inte tillgängliga med en E3-licens, men du kan fortfarande använda Loggboken för att granska händelser för attackytans minskning av regler.

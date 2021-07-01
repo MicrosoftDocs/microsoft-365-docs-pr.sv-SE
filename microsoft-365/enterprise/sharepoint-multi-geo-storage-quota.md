@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Läs mer SharePoint om lagringskvoter i geomiljöer och hur kvoter kan hanteras av SharePoint Online-administratören.
-ms.openlocfilehash: ec736a6bd6061f8b028fca7a1c34d5278a84db89
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0843407e7926027e28cdd1f5893c4aafec4e1cd5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694940"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230097"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>SharePoint för flera geografiska miljöer
 
@@ -32,22 +32,30 @@ Lagringskvoten SharePoint geoplats kan tilldelas av SharePoint Online-administra
 
 ## <a name="configure-a-storage-quota-for-a-geo-location"></a>Konfigurera en lagringskvot för en geoplats
 
-Använd Microsoft Office SharePoint Online [och anslut](https://www.microsoft.com/download/details.aspx?id=35588 ) till den centrala platsen för att tilldela lagringskvoten för en geoplats. 
+Använd Microsoft Office SharePoint Online [och anslut](https://www.microsoft.com/download/details.aspx?id=35588) till den centrala platsen för att tilldela lagringskvoten för en geoplats.
 
 För att tilldela Storage för en plats kör du cmdlet:
 
-`Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB <value>`
+```powershell
+Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB <value>
+```
 
 Visa Storage för den aktuella geoplatsen genom att köra:
 
-`Get-SPOGeoStorageQuota`
+```powershell
+Get-SPOGeoStorageQuota
+```
 
 ![Skärmbild av PowerShell-fönstret med Get-SPOGeoStorageQuota cmdlet](../media/multi-geo-storage-quota.png)
 
 Visa Storage för alla geografiska platser genom att köra:
 
-`Get-SPOGeoStorageQuota -AllLocations`
+```powershell
+Get-SPOGeoStorageQuota -AllLocations
+```
 
 Ta bort den tilldelade lagringskvoten för en geoplats genom att `StorageQuota value = 0` ange:
 
-`Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0`
+```powershell
+Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0
+```

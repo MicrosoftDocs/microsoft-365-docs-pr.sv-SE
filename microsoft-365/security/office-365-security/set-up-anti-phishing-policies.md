@@ -17,12 +17,12 @@ ms.custom:
 description: Administratörer kan läsa mer om principer för nätfiske som finns i Exchange Online Protection (EOP) och Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 850756acacc757526352b9249c0e9efbe82fac8d
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 9abed7f9601872eeb14ceb294c54a1cb54f63c2f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096801"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229113"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Principer mot nätfiske i Microsoft 365
 
@@ -175,7 +175,7 @@ Följande inställningar för personifiering är endast tillgängliga i principe
 
   > [!NOTE]
   >
-  > - I varje princip mot nätfiske kan du ange högst 60 skyddade användare (avsändar-e-postadresser). Du kan inte ange samma skyddade användare i flera principer. Oavsett hur många principer som gäller för en mottagare är det maximala antalet skyddade användare (avsändar-e-postadresser) för varje enskild mottagare 60. Mer information om principprioritet och hur principbearbetningen avbryts efter att den första principen har tillämpats finns i Ordning och [prioritet för e-postskydd.](how-policies-and-protections-are-combined.md)
+  > - I varje princip mot nätfiske kan du ange högst 350 skyddade användare (avsändar-e-postadresser). Du kan inte ange samma skyddade användare i flera principer. Oavsett hur många principer som gäller för en mottagare är det maximala antalet skyddade användare (avsändar-e-postadresser) för varje enskild mottagare 350. Mer information om principprioritet och hur principbearbetningen avbryts efter att den första principen har tillämpats finns i Ordning och [prioritet för e-postskydd.](how-policies-and-protections-are-combined.md)
   > - Skydd för användarpersonifiering fungerar inte om avsändaren och mottagaren tidigare har kommunicerat via e-post. Om avsändaren och mottagaren aldrig har kommunicerat via e-post identifieras meddelandet som ett personifieringsförsök.
 
   Som standard är inga avsändar-e-postadresser konfigurerade för personifieringsskydd i **Användare som ska skydda**. Som standard omfattas därför inga avsändar-e-postadresser av personifieringsskydd, antingen i standardprincipen eller i anpassade principer.

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security ingår i Microsoft 365 abonnemang.
-ms.openlocfilehash: b7b1d229e87a313a9567daed87f03452b1925a65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904270"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228273"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Välja mellan Basic Mobility och Security eller Intune
 
@@ -52,17 +52,17 @@ Både Basic Mobility och Security och Intune ingår i en mängd olika planer som
 |Enterprise Mobility & Security E3 |Nej|Ja|
 |Enterprise Mobility & Security E5 |Nej|Ja|
 
->[!NOTE]
->Du kan inte börja använda Basic Mobility and Security om du redan använder Microsoft Intune.
+> [!NOTE]
+> Du kan inte börja använda Basic Mobility and Security om du redan använder Microsoft Intune.
 
- Mer information finns i [Microsoft 365 och Office 365 tjänstbeskrivningar för plattformen.](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description) 
+ Mer information finns i [Microsoft 365 och Office 365 tjänstbeskrivningar för plattformen.](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)
 
 ## <a name="differences-in-capabilities"></a>Skillnader i funktioner
 
 Microsoft Intune och inbyggd basic mobility and security ger dig både möjlighet att hantera mobila enheter i organisationen, men det finns viktiga skillnader i funktion, som beskrivs i följande tabell.
 
->[!NOTE]
->Du kan hantera användare och deras mobila enheter med både Intune och Basic Mobility och Security i samma Microsoft 365 Business Standard-organisation genom att först konfigurera Basic Mobility and Security och sedan lägga *till Microsoft Intune.* På så sätt kan du välja Basic Mobility and Security eller den mer funktionsrika Intune-lösningen. Tilldela en Intune-licens för att aktivera Intune-funktionerna.
+> [!NOTE]
+> Du kan hantera användare och deras mobila enheter med både Intune och Basic Mobility och Security i samma Microsoft 365 Business Standard-organisation genom att först konfigurera Basic Mobility and Security och sedan lägga *till Microsoft Intune.* På så sätt kan du välja Basic Mobility and Security eller den mer funktionsrika Intune-lösningen. Tilldela en Intune-licens för att aktivera Intune-funktionerna.
 
 | Funktionsområde | Funktionspunkter | Grundläggande Mobility and Security | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
@@ -80,7 +80,7 @@ Microsoft Intune och inbyggd basic mobility and security ger dig både möjlighe
 |Program för noll pekregistrering (AutoPilot) |Registrera ett stort antal företagsägda enheter, samtidigt som det förenklar användarinställningar. |Nej|Ja|
 |||
 
-Förutom de funktioner som visas i föregående tabell innehåller både Basic Mobility och Security och Intune en uppsättning fjärråtgärder som skickar kommandon till enheter via Internet. Du kan till exempel ta bort Office data från en anställds enhet medan personliga data är kvar (dra tillbaka), ta bort Office-appar från en anställds enhet (rensning) eller återställa en enhet till fabriksinställningarna (fullständig rensning). 
+Förutom de funktioner som visas i föregående tabell innehåller både Basic Mobility och Security och Intune en uppsättning fjärråtgärder som skickar kommandon till enheter via Internet. Du kan till exempel ta bort Office data från en anställds enhet medan personliga data är kvar (dra tillbaka), ta bort Office-appar från en anställds enhet (rensning) eller återställa en enhet till fabriksinställningarna (fullständig rensning).
 
 I fjärråtgärderna för grundläggande rörlighet och säkerhet ingår retire, wipe och full wipe. Mer information om åtgärder för grundläggande rörlighet och säkerhet finns [i Funktioner för enkel rörlighet och säkerhet.](capabilities.md)
 

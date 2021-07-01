@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 749e03cb9d14476245baea82c21d322d4d726aad
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194955"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230013"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Konfigurera Microsoft Defender för slutpunkt för iOS-funktioner
 
@@ -78,7 +78,7 @@ Steg för att konfigurera principer för programskydd med Microsoft Defender fö
 1. Under **Villkor för**  >  **villkorsstyrd** start av enhet hittar du inställningen **Max hotnivå för tillåtna enheter.** Det här måste konfigureras för antingen Låg, Medel, Hög eller Skyddad. De tillgängliga åtgärderna blir Blockera åtkomst **eller** **Rensa data.** Det kan visas en informationsdialogruta för att kontrollera att du har angett kopplingen innan den här inställningen används. Om kopplingen redan är konfigurerad kan du ignorera den här dialogrutan.
 1. Slutför med Uppgifter och spara principen.
 
-Mer information om MAM- eller appskyddsprincip finns i [principinställningar för iOS-programskydd.](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)
+Mer information om MAM- eller appskyddsprincip finns i [principinställningar för iOS-programskydd.](/mem/intune/apps/app-protection-policy-settings-ios)
 
 ### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Distribuera Microsoft Defender för slutpunkt för MAM eller på oregistrerade enheter
 

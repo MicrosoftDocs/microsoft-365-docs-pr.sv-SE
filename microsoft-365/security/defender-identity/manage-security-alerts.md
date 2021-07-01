@@ -1,18 +1,18 @@
 ---
 title: Microsoft Defender för identitetssäkerhetsvarningar i Microsoft 365 Defender
-description: Lär dig hur du hanterar och granskar säkerhetsvarningar som utfärdats av Microsoft Defender för identitet Microsoft 365 Defender
+description: Lär dig hur du hanterar och granskar säkerhetsvarningar som utfärdats av Microsoft Defender för identitet i Microsoft 365 Defender
 ms.date: 05/20/2021
 ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
-ms.openlocfilehash: 0c48c9076d05cd352229477acc28b32185eef54f
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: c81f14b92b285359bda7e291bd8d3a8b636ae54d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657876"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228969"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>Defender för identitetssäkerhetsvarningar i Microsoft 365 Defender
 
@@ -23,20 +23,20 @@ ms.locfileid: "52657876"
 
 I den här artikeln förklaras grunderna i hur du arbetar med Microsoft Defender för identitetssäkerhetsvarningar [Microsoft 365 säkerhetscenter.](/microsoft-365/security/defender/overview-security-center) [](/defender-for-identity)
 
-Defender för identitetsaviseringar integreras inbyggt i [Microsoft 365 säkerhetscenter](https://security.microsoft.com) med ett dedikerat sidformat för identitetsavisering. Det här markerar det första steget i resan att [introducera hela Microsoft Defender för identitetsupplevelsen i Microsoft 365 Defender.](/defender-for-identity/defender-for-identity-in-microsoft-365-defender)
+Defender för identitetsaviseringar integreras inbyggt i [Microsoft 365 säkerhetscenter](https://security.microsoft.com) med ett dedikerat sidformat för identitetsavisering. Det här markerar det första steget i resan att [introducera hela Microsoft Defender för identitetsupplevelse i Microsoft 365 Defender](/defender-for-identity/defender-for-identity-in-microsoft-365-defender).
 
 Den nya sidan med identitetsavisering ger Microsoft Defender för identitetskunder bättre signalberikande över domäner och nya automatiska identitetssvarsfunktioner. Det säkerställer att du håller dig säker och hjälper till att förbättra effektiviteten i dina säkerhetsåtgärder.
 
-En av fördelarna med att undersöka aviseringar [via Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) är att Microsoft Defender för identitetsaviseringar är ytterligare korrelerat med information som hämtas från var och en av de andra produkterna i programsviten. Dessa förbättrade aviseringar är konsekventa med de Microsoft 365 Defender-aviseringsformaten som kommer från [Microsoft Defender för Office 365](/microsoft-365/security/office-365-security) och Microsoft Defender för [slutpunkten.](/microsoft-365/security/defender-endpoint) På den nya sidan slipper du navigera till en annan produktportal och undersöker aviseringar som är associerade med identitet.
+En av fördelarna med att undersöka aviseringar [via Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) är att Microsoft Defender för identitetsaviseringar är ytterligare korrelerad med information som hämtas från var och en av de andra produkterna i programsviten. Dessa förbättrade aviseringar är konsekventa med de Microsoft 365 Defender aviseringsformat som kommer från [Microsoft Defender för Office 365](/microsoft-365/security/office-365-security) och Microsoft Defender för [slutpunkt.](/microsoft-365/security/defender-endpoint) På den nya sidan slipper du navigera till en annan produktportal och undersöker aviseringar som är associerade med identitet.
 
-Aviseringar som kommer från Defender för identitet kan nu utlösa funktionerna i Microsoft 365 Defender automatisk undersökning och svar [(AIR),](/microsoft-365/security/defender/m365d-autoir) inklusive automatisk åtgärd av aviseringar och minskning av verktyg och processer som kan bidra till den misstänkta aktiviteten.
+Aviseringar som kommer från Defender för identitet kan nu utlösa funktionerna för automatiserad undersökning och svar [(AIR)](/microsoft-365/security/defender/m365d-autoir) i Microsoft 365 Defender, inklusive automatisk åtgärd av aviseringar och minskning av verktyg och processer som kan bidra till den misstänkta aktiviteten.
 
->[!IMPORTANT]
->Som en del av den här Microsoft 365 Defender har vissa alternativ och viss information ändrats från sin plats i Defender för identitetsportalen. Läs informationen nedan för att ta reda på var du hittar både de välbekanta och nya funktionerna.
+> [!IMPORTANT]
+> Som en del av de Microsoft 365 Defender har vissa alternativ och information ändrats från sin plats i Defender för identitetsportalen. Läs informationen nedan för att ta reda på var du hittar både de välbekanta och nya funktionerna.
 
 ## <a name="review-security-alerts"></a>Granska säkerhetsvarningar
 
-Aviseringar kan nås från flera platser,  bland annat sidan Aviseringar, sidan  **Incidenter,** sidorna för enskilda enheter och från **sidan Avancerad** sökning. I det här exemplet granskar vi **sidan Aviseringar.**  
+Aviseringar kan nås från flera platser,  bland annat sidan Aviseringar, sidan  **Incidenter,** sidorna för enskilda enheter och från **sidan Avancerad** sökning. I det här exemplet granskar vi **sidan Aviseringar.**
 
 I [säkerhetscentret Microsoft 365 du](https://security.microsoft.com/)till **Incidenter, & aviseringar** och sedan till **Aviseringar.**
 
@@ -85,9 +85,9 @@ I det högra fönstret visas **aviseringsinformationen.** Här kan du se mer inf
 
     ![Hantera avisering](../../media/defender-identity/manage-alert.png)
 
-    >[!NOTE]
-    >I Excel finns nu två länkar: Visa **i Microsoft Defender** för identitet och **Visa i Microsoft 365 Defender.** Varje länk tar dig till relevant portal och ger information om aviseringen där.
+    > [!NOTE]
+    > I Excel finns nu två länkar: Visa **i Microsoft Defender** för identitet **och visa i Microsoft 365 Defender.** Varje länk tar dig till relevant portal och ger information om aviseringen där.
 
 ## <a name="see-also"></a>Se även
 
-- [Undersöka aviseringar i Microsoft 365 Defender](../defender/investigate-alerts.md)
+- [Undersök aviseringar i Microsoft 365 Defender](../defender/investigate-alerts.md)

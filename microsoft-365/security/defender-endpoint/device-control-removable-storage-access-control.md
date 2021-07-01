@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb23987600a5f87a99449510f7651c4fdcd45f66
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028409"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229581"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender för endpoint-enhetskontroll, flyttbar Storage access-kontroll
 
@@ -328,7 +328,7 @@ Vi har validerat en USB-grupp med 100 000 media – upp till 7 MB i storlek. Pri
 
 **Varför fungerar inte principen?**
 
-Den vanligaste orsaken är att det inte finns någon [obligatorisk version av program mot skadlig programvara.](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints)
+Den vanligaste orsaken är att det inte finns någon [obligatorisk version av program mot skadlig programvara.](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints)
 
 En annan orsak kan vara att XML-filen inte är korrekt formaterad, t.ex. att rätt formatering för tecknet "&" i XML-filen inte används, eller att textredigeraren lägger till en XML-0xEF 0xBB 0xBF (Byte Order Mark) i början av filerna, vilket gör att XML-tolkningarna inte fungerar. En enkel lösning är att ladda ned [exempelfilen](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (välj **Raw** och **sedan Spara som**) och sedan uppdatera.
 

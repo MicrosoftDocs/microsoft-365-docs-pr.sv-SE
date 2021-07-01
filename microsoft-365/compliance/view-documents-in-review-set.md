@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Välj hur innehåll ska visas i Advanced eDiscovery, till exempel text, anteckningar, konverterade eller ursprungliga vyn.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aa8e8e9ea22469ab6d0b223c1bcc9285e2c2ef40
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 7c2adf5a1b06761832b96a06a85f72c471e5dd1c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "52162602"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228525"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Visa dokument i en granskningsuppsättning i Advanced eDiscovery
 
@@ -49,44 +49,31 @@ I det inbyggda visningsprogrammet visas den största vyn i ett dokument. Den har
 
 I textvisningsprogrammet visas den extraherade texten i en fil. Den ignorerar inbäddade bilder och all formatering men är mycket effektivt om du försöker förstå innehållet snabbt. Textvyn innehåller även följande funktioner:
 
-  - Med linjeräknare blir det enklare att referera till vissa delar av ett dokument
+- Med linjeräknare blir det enklare att referera till vissa delar av ett dokument
+- Sökmarkering där termer i dokumentet och rullningslisten markeras
+- Med diff-vyn får du en jämförelsevy som markerar textskillnaderna när du visar nära dubblettdokument
 
-  - Sökmarkering där termer i dokumentet och rullningslisten markeras
+![Textvy](../media/Reviewimage4.png)
 
-  - Med diff-vyn får du en jämförelsevy som markerar textskillnaderna när du visar nära dubblettdokument
-
-![Textvy
-](../media/Reviewimage4.png)
-
-![Diff-vy
-](../media/Reviewimage5.png)
+![Diff-vy](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Kommentera i vyn
 
 Anteckningsvyn innehåller funktioner som gör att användare kan använda markeringar i ett dokument, till exempel:
 
-  - Områdesredigering – användarna kan rita en ruta i dokumentet för att dölja känsligt innehåll
+- Områdesredigering – användarna kan rita en ruta i dokumentet för att dölja känsligt innehåll
+- Pencil – användare kan fritt rita på ett dokument för att uppmärksamma vissa delar av ett dokument
+- Markera anteckningar – användarna kan markera anteckningar i ett dokument för att ta bort dem
+- Växla anteckningsgenomskinlighet – gör anteckningar halvgenomskinliga för att visa innehållet bakom anteckningen
+- Föregående sida – navigerar till föregående sida
+- Nästa sida – navigerar till nästa sida
+- Gå till sidan – användaren kan ange ett specifikt sidnummer för att gå till
+- Zooma – ange zoomnivån för kommentarvyn
+- Rotera – användaren kan rotera dokumentet medurs
+- Sökning – användaren kan söka i ett dokument och navigera till de olika träffarna i dokumentet
 
-  - Pencil – användare kan fritt rita på ett dokument för att uppmärksamma vissa delar av ett dokument
+  ![Kommentera i vyn](../media/Reviewimage1.png)
 
-  - Markera anteckningar – användarna kan markera anteckningar i ett dokument för att ta bort dem
+## <a name="dashboard-view"></a>Instrumentpanelsvy
 
-  - Växla anteckningsgenomskinlighet – gör anteckningar halvgenomskinliga för att visa innehållet bakom anteckningen
-
-  - Föregående sida – navigerar till föregående sida
-
-  - Nästa sida – navigerar till nästa sida
-
-  - Gå till sidan – användaren kan ange ett specifikt sidnummer för att gå till
-
-  - Zooma – ange zoomnivån för kommentarvyn
-
-  - Rotera – användaren kan rotera dokumentet medurs
-
-  - Sökning – användaren kan söka i ett dokument och navigera till de olika träffarna i dokumentet
-    
-    ![Kommentera i vyn
-    ](../media/Reviewimage1.png)
-
-## <a name="dashboard-view"></a>Instrumentpanelsvy 
-Med instrumentpanelsvyn kan du visualisera och sammanfatta data i sökresultatrutnätet. I den här vyn kan du skapa anpassade widgetar för att göra det intuitivt och enkelt att analysera och rapportera din granskning. När du har skapat widgetarna kan du interagera med dem för att räkna objekt eller skapa en sökning. 
+Med instrumentpanelsvyn kan du visualisera och sammanfatta data i sökresultatrutnätet. I den här vyn kan du skapa anpassade widgetar för att göra det intuitivt och enkelt att analysera och rapportera din granskning. När du har skapat widgetarna kan du interagera med dem för att räkna objekt eller skapa en sökning.

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: Sammanfattning Förstå åtgärderna i migreringsfaserna och hur de påverkar flytten från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i den nya tyska datacenterregion.
-ms.openlocfilehash: c80a7cfc4f930011f65a07c4b46cdf4921766c34
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: abf58930e2f937922733fedec2f13bfc2949fcb8
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930457"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229833"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Åtgärder i migreringsfaser och påverkan på migreringen från Microsoft Cloud Deutschland
 
@@ -134,7 +134,7 @@ Ytterligare överväganden:
 
 - Om organisationen fortfarande använder SharePoint 2010-arbetsflöden kommer de inte längre att fungera efter den 31 december 2021. SharePoint 2013-arbetsflöden kommer att fortsätta stödjas, även om det är inaktiverat som standard för nya klientorganisationen från och med den 1 november 2020. När migreringen till SharePoint Online-tjänsten är klar rekommenderar vi att du går över till Power Automate andra lösningar som stöds.
  - Microsoft Cloud Deutschland-kunder vars SharePoint Online-instans ännu inte har migrerats måste vara kvar på SharePoint Online PowerShell-modul/Microsoft.SharePointOnline.CSOM version 16.0.20616.12000 eller senare. Annars går det inte att SharePoint till online via PowerShell eller objektmodellen på klientsidan.
-- Under den här fasen ändras IP-adresserna SharePoint adresserna. Efter övergången till globala Office 365-tjänster ändras adresserna för de bevaras klientorganisationens URL:er (till exempel och ) till URL:er och IP-adressintervall för `contoso.sharepoint.de` `contoso-my.sharepoint.de` Microsoft 365 Microsoft 365 [(SharePoint Online och OneDrive för företag).](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)
+- Under den här fasen ändras IP-adresserna SharePoint adresserna. Efter övergången till globala Office 365-tjänster ändras adresserna för de bevaras klientorganisationens URL:er (till exempel och ) till URL:er och IP-adressintervall för `contoso.sharepoint.de` `contoso-my.sharepoint.de` Microsoft 365 Microsoft 365 [(SharePoint Online och OneDrive för företag).](/microsoft-365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business)
 - Även SharePoint och OneDrive tjänster har övergångar, Office Online kanske inte fungerar som förväntat. 
 
 > [!NOTE]
@@ -169,7 +169,7 @@ Kunder som inte utför de här DNS-uppdateringarna vid slutförande av migrering
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **Gäller för:** Exchange Online med hjälp Exchange Online PowerShell
 
-Under migreringsfasen kan användning av **PowerShell-cmdlets New-MigrationEndpoint,** **Set-MigrationEndpoint** och **Test-MigrationsServerAvailability** resultera i fel (fel på proxy). Det här inträffar när skiljebrevlådan har migrerats till hela världen men administratörspostlådan inte har det eller vice versa. Du kan lösa problemet genom att använda skiljepostlådan som tips om routning i **ConnectionUri** när du skapar PowerShell-klientsessionen. Till exempel:
+Under migreringsfasen kan användning av **PowerShell-cmdlets New-MigrationEndpoint,** **Set-MigrationEndpoint** och **Test-MigrationsServerAvailability** resultera i fel (fel på proxy). Det här inträffar när skiljebrevlådan har migrerats till hela världen men administratörspostlådan inte har det eller vice versa. Du kan lösa problemet genom att använda skiljepostlådan som tips om routning i **ConnectionUri** när du skapar PowerShell-klientsessionen. Ett exempel:
 
 ```powershell
 New-PSSession 
@@ -231,7 +231,7 @@ I den här Skype för företag migreras till Microsoft Teams. Existing Skype fö
 - Användarna kan inte logga in på Skype för företag mellan att tjänster går över Office 365 tjänster och inte förrän DNS-posterna för kunder är slutförda.
 - Kontakter och befintliga möten fortsätter att fungera som Skype för företag möten.
 
-När en annan domän har konfigurerats för Skype för företag måste DNS-posterna uppdateras. Se Domäner [i administrationscentret Microsoft 365 och](https://admin.microsoft.com/Adminportal/Home#/Domains) tillämpa ändringarna i DNS-konfigurationen. 
+När en annan domän har konfigurerats för Skype för företag måste DNS-posterna uppdateras. Se Domäner [i Administrationscenter för Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/Domains) och tillämpa ändringarna i DNS-konfigurationen. 
 
 Om du måste ansluta till Skype för företag Online med PowerShell efter att migreringsfasen 9 har slutförts använder du följande PowerShell-kod för att ansluta:
 

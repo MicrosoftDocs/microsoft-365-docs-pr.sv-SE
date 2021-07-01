@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2231a4fc1f8bb58a83c639c8e60ad790af0df236
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845636"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228729"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Kontakta support för Microsoft Defender för Endpoint
 
@@ -34,39 +34,38 @@ ms.locfileid: "52845636"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender för Endpoint har nyligen uppgraderat supportprocessen för att erbjuda en mer modern och avancerad supportupplevelse. 
+Defender för Endpoint har nyligen uppgraderat supportprocessen för att erbjuda en mer modern och avancerad supportupplevelse.
 
 Med den nya widgeten kan kunder:
+
 - Hitta lösningar på vanliga problem
 - Skicka ett supportfall till Microsofts supportteam
 
 ## <a name="prerequisites"></a>Förutsättningar
+
 Det är viktigt att känna till de specifika roller som har behörighet att öppna supportärenden.
 
 Du måste minst ha rollen Tjänstsupportadministratör **ELLER** Supportadministratör.
 
-
 Mer information om vilka roller som har behörighet finns i Behörigheter [för säkerhetsadministratör.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Roller som innehåller åtgärden kan `microsoft.office365.supportTickets/allEntities/allTasks` skicka ett ärende.
 
-Allmän information om administratörsroller finns i [Om administratörsroller.](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
-
+Allmän information om administratörsroller finns i [Om administratörsroller.](/microsoft-365/admin/add-users/about-admin-roles)
 
 ## <a name="access-the-widget"></a>Komma åt widgeten
 Åtkomst till den nya supportwidgeten kan göras på två olika sätt:
 
-1.  Klicka på frågetecknet längst upp till höger i portalen och klicka sedan på "Microsoft Support":
+1. Klicka på frågetecknet längst upp till höger i portalen och klicka sedan på "Microsoft Support":
 
     ![Bild av widget när frågetecken markeras](images/support-widget.png)
 
 2. Klickar du på **behöver du hjälp?**  längst ned till höger i Microsoft Defender Säkerhetscenter:
 
-
     ![Bild av hjälpknappen som behövs](images/need-help.png)
 
 I widgeten erbjuds du två alternativ:
 
-- Hitta lösningar på vanliga problem    
-- Öppna en tjänstbegäran  
+- Hitta lösningar på vanliga problem
+- Öppna en tjänstbegäran
 
 ## <a name="find-solutions-to-common-problems"></a>Hitta lösningar på vanliga problem
 Det här alternativet innehåller artiklar som kan vara relaterade till den fråga du kan ställa. Börja skriva frågan i sökrutan så visas artiklar relaterade till sökningen.
@@ -77,23 +76,24 @@ Om de föreslagna artiklarna inte är tillräckliga kan du öppna en tjänstbeg�
 
 ## <a name="open-a-service-request"></a>Öppna en tjänstbegäran
 
-Lär dig hur du öppnar supportärenden genom att kontakta Defender för Endpoint-supporten. 
+Lär dig hur du öppnar supportärenden genom att kontakta Defender för Endpoint-supporten.
 
 > [!Note]
 > Om du har ett permiersupportavtal med Microsoft ser du Premier-taggen på widgeten. Annars kontaktar du din Microsoft-kontohanterare.
 
 ### <a name="contact-support"></a>Kontakta support
+
 Du kan välja det här alternativet genom att klicka på ikonen som ser ut som ett headset. Du får sedan följande sida för att skicka ditt supportfall:
 
 ![Bild av widgeten öppna en tjänstförfrågan](images/Support4.png)
 
-1. Fyll i en titel och beskrivning av ditt problem, samt ett telefonnummer och en e-postadress som vi kan nå dig på. 
+1. Fyll i en titel och beskrivning av ditt problem, samt ett telefonnummer och en e-postadress som vi kan nå dig på.
 
-2. (Valfritt) Ta med upp till fem bifogade filer som är relevanta för problemet för att ge ytterligare kontext för supportproblemet. 
+2. (Valfritt) Ta med upp till fem bifogade filer som är relevanta för problemet för att ge ytterligare kontext för supportproblemet.
 
 3. Välj din tidszon och ett alternativt språk, om tillämpligt. Begäran skickas till Microsofts supportteam. Gruppen svarar på din tjänstbegäran inom kort.
 
-
 ## <a name="related-topics"></a>Relaterade ämnen
+
 - [Felsöka tjänstproblem](troubleshoot-mdatp.md)
 - [Kontrollera tjänststatus](service-status.md)

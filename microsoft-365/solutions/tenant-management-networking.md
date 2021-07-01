@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimera nätverksåtkomsten till dina Microsoft 365 klienter.
-ms.openlocfilehash: 5eac0793d2afc924a919671ffa105362ea1866d9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cf9591d2ec027c42f5ef9e7abac6dc9b06744a81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407198"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229185"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Steg 2. Optimala nätverk för din Microsoft 365 för företagsklienter
 
@@ -31,7 +31,7 @@ Om du vill optimera nätverksåtkomsten för din klientorganisation måste du:
 
 - Optimera sökvägen mellan dina lokala användare och den närmaste platsen för Microsofts globala nätverk.
 - Optimera åtkomsten till Microsofts globala nätverk för dina fjärranvändare som använder en VPN-lösning för fjärråtkomst.
-- Använd Nätverksinsikter för att utforma nätverks perimeter för dina kontorsplatser.
+- Använd Nätverksnätverk Insights att utforma nätverks perimeter för dina kontorsplatser.
 - Optimera åtkomsten till specifika tillgångar på SharePoint webbplatser med Office 365 CDN.
 - Konfigurera proxy- och nätverkets edge-enheter för att kringgå Microsoft 365 betrodd trafik med listan med slutpunkter och automatisera uppdateringen av listan när ändringar görs.
 
@@ -94,7 +94,7 @@ I den här illustrationen skickar VPN-klienten och tar emot viktig Microsoft 365
 
 Detaljerad information finn i [Optimera Office 365-anslutning för fjärranvändare med delad VPN-tunnel](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
-## <a name="using-network-insights-preview"></a>Använda Nätverksinsikter (förhandsversion)
+## <a name="using-network-insights-preview"></a>Använda Insights (förhandsversion)
 
 Nätverksinsikter är prestandamätvärden som samlas Microsoft 365 klientorganisation som hjälper dig att utforma nätverks perimeter för kontorsplatserna. Varje insikt ger detaljerad information om prestandaegenskaperna för ett visst problem för varje geografisk plats där lokala användare har åtkomst till din klientorganisation.
 
@@ -112,10 +112,10 @@ Det här är specifika nätverksinsikter för varje kontorsplats:
 - [Låg nedladdningshastighet SharePoint fronten](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
 - [Optimal utgående nätverkstrafik för användare i Kina](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
->[!IMPORTANT]
->Nätverksinsikter, prestandarekommendationer och utvärderingar i administrationscentret Microsoft 365 finns för närvarande i förhandsgranskningsstatus. Det är bara tillgängligt för Microsoft 365 som har registrerats i programmet för funktionsförhandsgranskning.
+> [!IMPORTANT]
+> Nätverksinsikter, prestandarekommendationer och utvärderingar i Microsoft 365 Admin finns för närvarande i förhandsgranskningsstatus. Det är bara tillgängligt för Microsoft 365 som har registrerats i programmet för funktionsförhandsgranskning.
 
-Mer information finns i [Microsoft 365 Network Insights.](../enterprise/office-365-network-mac-perf-insights.md)
+Mer information finns i Microsoft 365 [i Insights](../enterprise/office-365-network-mac-perf-insights.md).
 
 ## <a name="sharepoint-performance-with-the-office-365-cdn"></a>SharePoint med Office 365 CDN
 
@@ -152,7 +152,7 @@ För din Microsoft 365 med optimala nätverk har du fastställt:
 - Optimera nätverksprestandan för lokala användare genom att lägga till Internetanslutningar till alla filialkontor och ta bort hårnålsanslutning i nätverket.
 - Så här implementerar du automatiska betrodda slutpunktslistor för dina klientbaserade PAC-filer och dina nätverksenheter och -tjänster, inklusive pågående uppdateringar (mest lämpliga för företagsnätverk).
 - Hur du kan ge distansarbetare tillgång till lokala resurser.
-- Använda Nätverksinsikter
+- Så här använder du Insights
 - Hur du distribuerar Office 365 CDN.
 
 Här är ett exempel på en företagsorganisation och dess klientorganisation med optimala nätverksfunktioner.

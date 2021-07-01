@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Diskutera hur man tillämpar en kvarhållningsetikett på en modell i SharePoint Syntex.
-ms.openlocfilehash: ebcd398799e7c8addd96d5941427628d3db5ad43
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: c7d6c17dc4d41bf2dab663618e740318d88dd723
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028949"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228753"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Använda en kvarhållningsetikett på en modell för dokumenttolkning i Microsoft SharePoint Syntex
 
 Du kan enkelt använda en [känslighetsetikett](../compliance/sensitivity-labels.md) på modeller för dokumenttolkning i Microsoft SharePoint Syntex. Den här funktionen är inte tillgänglig ännu för modeller för formulärbearbetning.
 
-Med känslighetsetiketter kan du tillämpa krypterings-, delnings- och villkorsstyrda principer på de dokument som modeller identifierar. Du vill till exempel att modellen inte bara ska identifiera finansiella dokument som innehåller bankkontonummer eller kreditkortsnummer som laddas upp till ditt dokumentbibliotek, utan även använda en *-krypteringsetikett* för att begränsa vem som kan komma åt innehållet och hur det kan användas. SharePoint Syntex-modeller följer [etikettordning](../compliance/apply-sensitivity-label-automatically.md?view=o365-worldwide#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) regler och skriver inte heller över en befintlig etikett som tillämpades manuellt av en användare i filen. 
+Med känslighetsetiketter kan du tillämpa krypterings-, delnings- och villkorsstyrda principer på de dokument som modeller identifierar. Du vill till exempel att modellen inte bara ska identifiera finansiella dokument som innehåller bankkontonummer eller kreditkortsnummer som laddas upp till ditt dokumentbibliotek, utan även använda en *-krypteringsetikett* för att begränsa vem som kan komma åt innehållet och hur det kan användas. SharePoint Syntex-modeller följer [etikettordning](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) regler och skriver inte heller över en befintlig etikett som tillämpades manuellt av en användare i filen. 
 
 Du kan använda en befintlig känslighetsetikett på modellen för dokumenttolkning i modellinställningarna på modellens startsida. Etiketten måste redan vara publicerad för att vara tillgänglig för val från modellinställningar.
 
@@ -123,6 +123,6 @@ You can add a sensitivity label to an existing form processing model that you ow
 
 [Skapa en klassificerare](create-a-classifier.md)
 
-[Skapa en extraktor](create-an-extractor.md)
+[Skapa en extraherare](create-an-extractor.md)
 
 [Översikt av dokumenttolkning](document-understanding-overview.md)

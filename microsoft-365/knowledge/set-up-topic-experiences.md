@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig hur du ställer in Microsoft Viva-ämnen
-ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 42f84b9b792907d7fe118e0b15c3767674ddf19b
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893770"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229593"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Konfigurera Microsoft Viva-ämnen
 
-Du kan använda Microsoft 365 för att konfigurera och konfigurera [ämnen.](topic-experiences-overview.md) 
+Du kan använda Administrationscenter för Microsoft 365 för att konfigurera [ämnen.](topic-experiences-overview.md) 
 
 Det är viktigt att planera det bästa sättet att konfigurera ämnen i din miljö. Läs Planera för [Microsoft Viva Topics innan du](plan-topic-experiences.md) börjar med procedurerna i den här artikeln.
 
-Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör eller SharePoint administratör för att få åtkomst Microsoft 365 administrationscenter och konfigurera Ämnen.
+Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör SharePoint administratör för att få åtkomst Administrationscenter för Microsoft 365 och konfigurera Ämnen.
 
 Om du har konfigurerat SharePoint kräver [hanterade enheter](/sharepoint/control-access-from-unmanaged-devices)måste du konfigurera Ämnen från en hanterad enhet.
 
@@ -52,7 +52,7 @@ För att tilldela licenser:
 4. Kontrollera **att** Graph **Med Index (Viva Ämnen)** och **Viva** Ämnen under Appar är markerade.
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva Topics-licenser i Microsoft 365 administrationscenter](../media/topic-experiences-licenses.png)
+   > ![Microsoft Viva Topics-licenser i Administrationscenter för Microsoft 365](../media/topic-experiences-licenses.png)
 
 5. Klicka på **Spara ändringar**.
 
@@ -64,7 +64,7 @@ Det kan ta upp till en timme för användarna att få åtkomst till Ämnen när 
 > Första gången identifieringen av ämnen är aktiverad kan det ta upp till två veckor för alla föreslagna ämnen att visas i vyn Hantera ämnen. Ämnesidentifiering fortsätter allt eftersom nytt innehåll eller uppdateringar av innehåll görs. Det är normalt att ha fluktuationer i antalet föreslagna ämnen i organisationen eftersom Viva Topics utvärderar ny information.
 
 Så här ställer du in ämnen
-1. I Microsoft 365 [väljer du](https://admin.microsoft.com) **Konfigurera** och visar sedan **avsnittet Filer och** innehåll.
+1. I [Administrationscenter för Microsoft 365](https://admin.microsoft.com)väljer du **Konfigurera** och visar sedan **avsnittet Filer och** innehåll.
 2. I avsnittet **Filer och innehåll** klickar du på Dela Anslut att få kunskap **om**.
 
     ![Anslut att få kunskap](../media/admin-org-knowledge-options.png) 
@@ -132,7 +132,10 @@ Så här ställer du in ämnen
 
     Välj **Nästa**.
 
-9. På sidan **Skapa ämnescenter** kan du skapa en ämnescenterwebbplats där ämnessidor kan visas och ämnen kan hanteras. Ange **ett namn** på ämnescentret i rutan Webbplatsnamn. Du kan också skriva en kort beskrivning i **rutan** Beskrivning. 
+9. På sidan **Skapa ämnescenter** kan du skapa en ämnescenterwebbplats där ämnessidor kan visas och ämnen kan hanteras. Ange **ett namn** på ämnescentret i rutan Webbplatsnamn. Du kan klicka på pennikonen om du vill ändra URL-adressen. Du kan också skriva en kort beskrivning i **rutan** Beskrivning. 
+
+   > [!Important]
+   > Du kan ändra webbplatsens namn senare, men du kan inte ändra URL-adressen när du har slutfört guiden.
 
    Välj **Nästa**.
 
@@ -148,7 +151,7 @@ Så här ställer du in ämnen
 
 ## <a name="manage-topic-experiences"></a>Hantera ämnesupplevelser
 
-När du har ställt in Ämnen kan du ändra de inställningar som du valde under installationen Microsoft 365 [administrationscentret.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Se följande exempel:
+När du har ställt in Ämnen kan du ändra de inställningar som du valde vid installationen i [Administrationscenter för Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement). Se följande exempel:
 
 - [Hantera identifiering av ämnen i Microsoft Viva-ämnen](topic-experiences-discovery.md)
 - [Hantera synlighet för ämnen i Microsoft Viva-ämnen](topic-experiences-knowledge-rules.md)

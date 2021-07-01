@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Lär dig hur du använder Efterlevnadspoäng och Efterlevnadshanteraren för att förbättra skyddsnivån för personuppgifter.
-ms.openlocfilehash: 87131ea65661e8285fd7c3b36a87c79b618348d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 26e9f54ce77869f4f6ef07c18147483628ddc223
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918576"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229305"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>Använda Efterlevnadshanteraren för att hantera förbättringsåtgärder
 
@@ -30,19 +30,18 @@ Microsoft Compliance Manager kan hjälpa dig att hantera förbättringar relater
 
 Den här artikeln innehåller vägledning om hur du använder verktyget i datasekretesssyfte.
 
->[!Note]
->Rekommendationer från Compliance Manager ska inte tolkas som en garanti för överensstämmelse. Det är upp till dig att utvärdera och verifiera hur effektiv kundkontrollerna är i olika regelverk. Dessa tjänster omfattas av de allmänna villkoren i [villkoren för onlinetjänster.](https://go.microsoft.com/fwlink/?linkid=2108910) Se även [vägledning Microsoft 365 om licensiering för säkerhet och efterlevnad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
->
+> [!NOTE]
+> Rekommendationer från Compliance Manager ska inte tolkas som en garanti för överensstämmelse. Det är upp till dig att utvärdera och verifiera hur effektiv kundkontrollerna är i olika regelverk. Dessa tjänster omfattas av de allmänna villkoren i [villkoren för onlinetjänster.](https://go.microsoft.com/fwlink/?linkid=2108910) Se även [vägledning Microsoft 365 om licensiering för säkerhet och efterlevnad](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>Komma igång med Efterlevnadshanteraren
 
 #### <a name="what-is-compliance-manager"></a>Vad är Efterlevnadshanteraren
 
-[Efterlevnadshanteraren](../compliance/compliance-manager.md) är ett arbetsflödesbaserat riskutvärderingsverktyg i kompatibilitetscentret för Microsoft 365 att hantera efterlevnadsaktiviteter för föreskrifter och föreskrifter som är relaterade till Microsofts molntjänster. Som en del av Microsoft 365- eller Azure Active Directory-prenumerationen (Azure AD) hjälper Efterlevnadshanteraren dig att hantera regelefterlevnad i den delade ansvarsfördelningsmodellen för Microsoft-molntjänster.
+[Efterlevnadshanteraren](../compliance/compliance-manager.md) är ett arbetsflödesbaserat riskutvärderingsverktyg i Microsoft 365 Efterlevnadscenter att hantera aktiviteter för regelefterlevnad som är relaterade till Microsofts molntjänster. Som en del av Microsoft 365- eller Azure Active Directory-prenumerationen (Azure AD) hjälper Efterlevnadshanteraren dig att hantera regelefterlevnad i den delade ansvarsfördelningsmodellen för Microsoft-molntjänster.
 
 **Redo att använda utvärderingar**
 
-Efterlevnadshanteraren tillhandahåller färdiga [](../compliance/compliance-manager-assessments.md) mallar för att skapa bedömningar som är anpassade till datasekretessrelaterade bestämmelser som GDPR och HIPAA/HITECH. Mallarna har inbyggd kontrollmappning som hjälper dig att vidta förbättringsåtgärder för att uppfylla kraven i reglerna. Varje bedömning innehåller information om de kontroller som krävs för varje regel som är specifika för måltjänsten, uppdelade upp av kontroller som du hanterar och kontroller som Microsoft hanterar. 
+Efterlevnadshanteraren tillhandahåller färdiga [](../compliance/compliance-manager-assessments.md) mallar för att skapa bedömningar som är anpassade till datasekretessrelaterade bestämmelser som GDPR och HIPAA/HITECH. Mallarna har inbyggd kontrollmappning som hjälper dig att vidta förbättringsåtgärder för att uppfylla kraven i reglerna. Varje bedömning innehåller information om de kontroller som krävs för varje regel som är specifika för måltjänsten, uppdelade upp av kontroller som du hanterar och kontroller som Microsoft hanterar.
 
 Med hjälp av en färdig mall kan du snabbt komma igång med riskbedömning. Allt eftersom du snabbt kan använda Efterlevnadshanteraren kan du anpassa en färdig mall genom att lägga till egna kontroller och förbättringsåtgärder, eller så kan du skapa egna utvärderingar som passar organisationens behov.
 
@@ -59,7 +58,7 @@ Efterlevnadshanteraren ger dig även ett efterlevnadsresultat som mäter hur lå
 - [Första besöket: bekanta dig med Efterlevnadshanteraren](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - Arbeta med instrumentpanelen för Efterlevnadshanteraren
     - Förstå din efterlevnadspoäng
-    - Utbildning om förbättringsåtgärder
+    - Learning om förbättringsåtgärder
     - Förstå utvärderingar och mallar
 - [Så här går det till: konfigurera Efterlevnadshanteraren för att hantera dina efterlevnadsaktiviteter](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - Skapa och hantera din första bedömning

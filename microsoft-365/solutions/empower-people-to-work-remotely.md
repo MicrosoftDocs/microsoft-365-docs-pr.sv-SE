@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: arbeta hemifrån, arbeta-hemifrån, distansarbetare, hybridarbete, distansmedarbetare, hybridanslutning, fjärråtkomst, distansarbete, distansarbeta, distansarbete, mobilt arbete, distansarbete, arbeta var som helst, flexibel arbetsplats
 description: Gå igenom infrastrukturens delar så att dina hybridmedarbetarna har säker åtkomst till lokala och Microsoft 365 resurser.
-ms.openlocfilehash: 55f1cf5c922166e1fe3932b6fe89fbdfcbfba466
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: fed23a4607cfb47049a6540dfb592d9a8baf9d21
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788882"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229377"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Konfigurera din infrastruktur för hybridarbete med Microsoft 365
 
@@ -40,9 +40,8 @@ Microsoft 365 har förmågan att möjliggör för dina hybridarbetare att kunna 
 
 ![Möjliggör för dina hybridarbetare med Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
->[!Note]
->Om du är ny på Microsoft 365, se [de här resurserna](https://www.microsoft.com/microsoft-365).
->
+> [!NOTE]
+> Om du är ny på Microsoft 365, se [de här resurserna](https://www.microsoft.com/microsoft-365).
 
 Titta på den här videon för att få en översikt över distributionsprocessen.
 <br>
@@ -53,9 +52,9 @@ För IT-proffs som hanterar lokal- och molnbaserad infrastruktur för att möjli
 
 - Ansluten
 
-  Var som helst i världen, och när som helst, kan dina hybridarbetare få åtkomst till: 
+  Var som helst i världen, och när som helst, kan dina hybridarbetare få åtkomst till:
 
-  - Molnbaserade tjänster och data i din Microsoft 365-prenumeration. 
+  - Molnbaserade tjänster och data i din Microsoft 365-prenumeration.
 
   - Organisationsresurser av samma slag som finns att tillgå med programdatacentraler på plats.
 
@@ -71,11 +70,11 @@ För IT-proffs som hanterar lokal- och molnbaserad infrastruktur för att möjli
 
   Dina hybridarbetare kan vara lika produktiva som de lokala på ett mycket samarbetande sätt med:
 
-  - Onlinemöten och chattsessioner med Teams. 
+  - Onlinemöten och chattsessioner med Teams.
 
   - Delade arbetsytor för molnbaserad fillagring med global tillgänglighet och samarbete i realtid med SharePoint och OneDrive.
 
-  - Delade uppgifter och arbetsflöden för att dela upp arbetet och få saker gjorda. 
+  - Delade uppgifter och arbetsflöden för att dela upp arbetet och få saker gjorda.
 
 För smidig inloggning lokalt bör dina användarkonton i Active Directory Domain Services (AD DS) synkroniseras med Azure Active Directory (Azure AD). För att skydda dina Windows 10-enheter bör de registreras i Intune. Här är en övergripande vy över infrastrukturen.
 
@@ -86,15 +85,15 @@ Använd de här Microsoft 365-funktionerna om du vill aktivera funktionerna i Mi
 | Resurs eller funktion | Beskrivning | Licensiering |
 |:-------|:-----|:-------|
 | MFA som förstärks med säkerhetsstandarder   | Skydda er mot identitetsstölder och komprometterade enheter genom att kräva en andra form av autentisering vid inloggning. Säkerhetsstandarderna kräver MFA för alla användarkonton.   | Microsoft 365 E3 eller E5 |
-| MFA som förstärks med villkorsstyrd åtkomst| Använd villkorsstyrda åtkomstprinciper för att kräva MFA baserat på egenskaperna för inloggningen.    | Microsoft 365 E3 eller E5 | 
-| MFA som förstärks med riskbaserad villkorsstyrd åtkomst   | Använd Microsoft Defender for Identity för att kräva MFA baserat på risken som är kopplad till användarens inloggning. | Microsoft 365 E5 eller E3 med Azure AD Premium P2-licenser | 
+| MFA som förstärks med villkorsstyrd åtkomst| Använd villkorsstyrda åtkomstprinciper för att kräva MFA baserat på egenskaperna för inloggningen.    | Microsoft 365 E3 eller E5 |
+| MFA som förstärks med riskbaserad villkorsstyrd åtkomst   | Använd Microsoft Defender for Identity för att kräva MFA baserat på risken som är kopplad till användarens inloggning. | Microsoft 365 E5 eller E3 med Azure AD Premium P2-licenser |
 | Självbetjäning för återställning av lösenord (SSPR)    | Låt användarna återställa eller låsa upp sina lösenord och konton.  | Microsoft 365 E3 eller E5 |
 | Azure Active Directory Application Proxy    | Tillhandahåll säker fjärråtkomst till webbaserade program som finns på intranätsservrar.   | För detta krävs en separat, betald Azure-prenumeration |
 | Azure Point-to-Site VPN   | Skapa en säker anslutning från en distansarbetares enhet till ert intranät via ett virtuellt Azure-nätverk.   | För detta krävs en separat, betald Azure-prenumeration |
 | Windows Virtual Desktop   | Underlätta för distansarbetare som bara kan använda privata och ohanterade enheter med hjälp av virtuella skrivbord som körs i Azure. | För detta krävs en separat, betald Azure-prenumeration |
-| Fjärrskrivbordstjänster (RDS) | Låt medarbetarna ansluta till Windows-baserade datorer på intranätet. | Microsoft 365 E3 eller E5 | 
+| Fjärrskrivbordstjänster (RDS) | Låt medarbetarna ansluta till Windows-baserade datorer på intranätet. | Microsoft 365 E3 eller E5 |
 | Gateway för fjärrskrivbordstjänster   | Kryptera kommunikationen och hindra värddatorerna för fjärrskrivbordstjänsterna från att exponeras direkt på internet. | För detta krävs separata Windows Server-licenser |
-| Microsoft Intune | Hantera enheter och program.   | Microsoft 365 E3 eller E5 | 
+| Microsoft Intune | Hantera enheter och program.   | Microsoft 365 E3 eller E5 |
 | Konfigurationshanteraren | Hantera programvaruinstallationer, uppdateringar och inställningar på dina enheter | För detta krävs separata licenser för Konfigurationshanteraren |
 | Desktop Analytics | Avgör uppdateringsberedskapen hos dina Windows-klienter.   | För detta krävs separata licenser för Konfigurationshanteraren |
 | Windows Autopilot | Förinstallera och konfigurera nya Windows 10-enheter för effektiv användning.   | Microsoft 365 E3 eller E5 |

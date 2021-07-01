@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Använd Basic Mobility and Security för att skapa enhetsprinciper som skyddar din organisations information.
-ms.openlocfilehash: 5519351db428faa837a63eedb384b42c8d8ee07c
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 62dc2eef87d413a9cb62a01541126860620eec3f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706328"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228261"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Skapa säkerhetsprinciper för enheter i Basic Mobility and Security
 
@@ -39,14 +39,14 @@ Du kan använda Grundläggande rörlighet och säkerhet för att skapa enhetspri
 - För att skapa och distribuera principer för grundläggande rörlighet och säkerhet Microsoft 365 användare måste du vara global Microsoft 365 administratör. Mer information finns i [Behörigheter i säkerhets- & Säkerhets- och efterlevnadscenter.](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 - Innan du distribuerar principer bör du meddela organisationen hur de kan påverkas av att registrera en enhet i Basic Mobility and Security. Beroende på hur du installerar principerna kan enheter som inte är kompatibla blockeras från att komma åt Microsoft 365 och data, inklusive installerade program, foton och personlig information på en registrerad enhet, och data kan tas bort.
 
->[!NOTE]
->Principer och åtkomstregler som skapats i Basic Mobility and Security för Microsoft 365 Business Standard åsidosätter Exchange ActiveSync postlådeprinciper för mobila enheter och enhetsåtkomstregler som skapats Exchange administrationscenter. När en enhet har registrerats i Basic Mobility and Security för Microsoft 365 Business Standard ignoreras eventuella Exchange ActiveSync-postlådeprinciper för mobila enheter eller enhetsåtkomstregel som tillämpats på enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
+> [!NOTE]
+> Principer och åtkomstregler som skapats i Basic Mobility and Security för Microsoft 365 Business Standard åsidosätter Exchange ActiveSync postlådeprinciper för mobila enheter och enhetsåtkomstregler som skapats Exchange administrationscenter. När en enhet har registrerats i Basic Mobility and Security för Microsoft 365 Business Standard ignoreras eventuella Exchange ActiveSync-postlådeprinciper för mobila enheter eller enhetsåtkomstregel som tillämpats på enheten. Mer information om Exchange ActiveSync finns i [Exchange ActiveSync i Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Steg 1: Skapa en enhetsprincip och distribuera till en testgrupp
 
 Innan du kan starta bör du kontrollera att du har aktiverat och ställt in Basic Mobility and Security. Instruktioner finns i [Översikt över Grundläggande rörlighet och säkerhet.](overview.md)
 
-1. I webbläsaren skriver du [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
+1. I webbläsaren skriver du <https://protection.office.com/devicev2> .
 
 2. Välj **Skapa en princip.**
 

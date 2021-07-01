@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Konfigurera informationsskydd i Microsoft 365 för dataskyddsföreskrifter som GDPR och California Consumer Privacy Act (CCPA), inklusive Microsoft Teams, SharePoint och e-post.
-ms.openlocfilehash: cae3a559c2bce39ecb02afa9be0878ff5e19ba48
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: 76bac526dbf648b402c14b3304e32a308219bf02
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100777"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229209"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Distribuera informationsskydd för bestämmelser om datasekretess med Microsoft 365
 
@@ -32,16 +32,16 @@ Exempel på datatyper i Microsoft 365 är chattsessioner i Microsoft Teams, e-po
 
 ![Vad är informationsskydd för bestämmelser om datasekretess](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-Ytterligare information ges också om hur du använder Microsoft 365, kontroller av identitet, enhet och hot för dina datasekretessbehov. 
+Ytterligare information ges också om hur du använder Microsoft 365, kontroller av identitet, enhet och hot för dina datasekretessbehov.
 
 De Microsoft 365 funktioner hjälper dig att uppfylla kriterierna för att skydda information.
 
 | Resurs eller funktion | Beskrivning | Licensiering |
 |:-------|:-----|:-------|
-| Efterlevnadshanteraren | Hantera aktiviteter för regelefterlevnad, få en övergripande poäng för din aktuella efterlevnadskonfiguration och hitta rekommendationer för förbättring. Det här är ett arbetsflödesbaserat riskutvärderingsverktyg i Microsoft 365 efterlevnadscenter. | Microsoft 365 E3 och E5 |
-| Microsoft Defender för Office 365 | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. | Microsoft 365 E3 och E5 | 
+| Efterlevnadshanteraren | Hantera aktiviteter för regelefterlevnad, få en övergripande poäng för din aktuella efterlevnadskonfiguration och hitta rekommendationer för förbättring. Det här är ett arbetsflödesbaserat riskutvärderingsverktyg i Microsoft 365 Efterlevnadscenter. | Microsoft 365 E3 och E5 |
+| Microsoft Defender för Office 365 | Skydda dina Microsoft 365-appar och data – t.ex. e-postmeddelanden, Office-dokument och samarbetsverktyg – från angrepp. | Microsoft 365 E3 och E5 |
 | Känslighetsetiketter | Klassificera och skydda organisationens data utan att hindra användarnas produktivitet och deras förmåga att samarbeta. Placera etiketter med olika skyddsnivåer på e-post, filer eller webbplatser. | Microsoft 365 E3 och E5 |
-| Dataförlustskydd (DLP) | Identifiera, varna och blockera riskabel, oavsiktlig eller olämplig delning av data som innehåller personlig information, både internt och externt. | Microsoft 365 E3 och E5 | 
+| Dataförlustskydd (DLP) | Identifiera, varna och blockera riskabel, oavsiktlig eller olämplig delning av data som innehåller personlig information, både internt och externt. | Microsoft 365 E3 och E5 |
 | Etiketter och principer för kvarhållning av data | Implementera kontroller för informationsstyrning. De kan innefatta att fastställa hur lång tid data (till exempel personuppgifter relaterade till kunder) ska följa organisationens regler eller dataregler. | Microsoft 365 E3 och E5 |
 | E-postkryptering | Skydda personliga data genom att skicka och ta emot krypterade e-postmeddelanden mellan personer inom och utanför organisationen. | Microsoft 365 E3 och E5 |
 ||||
@@ -49,17 +49,16 @@ De Microsoft 365 funktioner hjälper dig att uppfylla kriterierna för att skydd
 ## <a name="organization-of-the-guidance-in-this-solution"></a>Organisation av vägledningen i den här lösningen
 
 För att hjälpa dig att Microsoft 365 de verktyg som finns för att hjälpa dig att uppfylla en eller flera sekretessrelaterade bestämmelser är den här vägledningen ordnad i avsnitt.
- 
+
 ![Steg för att implementera informationsskydd för bestämmelser om datasekretess](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 Vart och ett av dessa avsnitt motsvarar en separat artikel i den här lösningen.
 
->[!Note]
->Om du redan är bekant med dina sekretesskrav för data och kör mot ett befintligt abonnemang kanske du vill fokusera på vägledningen Förhindra, skydda, behålla och undersöka.
+> [!NOTE]
+> Om du redan är bekant med dina sekretesskrav för data och kör mot ett befintligt abonnemang kanske du vill fokusera på vägledningen Förhindra, skydda, behålla och undersöka.
 
->[!Important]
->Om du följer de här anvisningarna följer du inte nödvändigtvis alla regler om datasekretess, särskilt när det gäller antalet steg som krävs utanför funktionerna. Du är ansvarig för att säkerställa din efterlevnad och att kontakta dina grupper för lagstiftning och efterlevnad eller söka vägledning och råd från tredje part som är berörda av efterlevnad.
->
+> [!IMPORTANT]
+> Om du följer de här anvisningarna följer du inte nödvändigtvis alla regler om datasekretess, särskilt när det gäller antalet steg som krävs utanför funktionerna. Du är ansvarig för att säkerställa din efterlevnad och att kontakta dina grupper för lagstiftning och efterlevnad eller söka vägledning och råd från tredje part som är berörda av efterlevnad.
 
 ## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Planera: Utvärdera datasekretessrisker och identifiera känsliga objekt
 
@@ -69,7 +68,7 @@ Mer information finns i Utvärdera [datasekretessrisker och identifiera känslig
 
 ## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>Spåra: Kör riskbedömning och kontrollera ditt efterlevnadsresultat
 
-Efterlevnadshanteraren, som finns i efterlevnadscentret för Microsoft 365, ger dig en inbyggd möjlighet att spåra och hantera förbättringsåtgärder övergripande och de som gäller flera bestämmelser om datasekretess som gäller för dig.
+Efterlevnadshanteraren, som finns i Microsoft 365 Efterlevnadscenter, ger dig en inbyggd möjlighet att spåra och hantera förbättringsåtgärder övergripande och de som gäller flera bestämmelser om datasekretess som gäller för dig.
 
 Du kan använda inbyggda utvärderingsmallar som är specifika för varje regel, där du kan spåra uppgifter för varje vald bedömningsmall, visa specifika regler och relatera dem till specifika åtgärder.
 
@@ -77,11 +76,11 @@ Mer information finns i Hantera [förbättringsåtgärder med efterlevnadshanter
 
 ## <a name="prevent-protect-personal-data"></a>Förhindra: Skydda personliga data
 
-Microsoft 365 tillhandahåller funktioner för skydd mot identitet, enheter och hot som du kan använda för att uppfylla efterlevnad av datasekretess. 
+Microsoft 365 tillhandahåller funktioner för skydd mot identitet, enheter och hot som du kan använda för att uppfylla efterlevnad av datasekretess.
 
 Mer information finns i Använda [identitet, enhet och skydd mot datasekretess.](information-protection-deploy-identity-device-threat.md)
 
-Den här artikeln ger en kort beskrivning av vad sekretessregler för data vanligtvis anropar för dessa områden och innehåller en lista med relaterade Microsoft 365-lösningar, med länkar till mer information som hjälper dig att hantera eventuella implementeringskrav. 
+Den här artikeln ger en kort beskrivning av vad sekretessregler för data vanligtvis anropar för dessa områden och innehåller en lista med relaterade Microsoft 365-lösningar, med länkar till mer information som hjälper dig att hantera eventuella implementeringskrav.
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>Skydda information som omfattas av datasekretess
 
@@ -101,7 +100,7 @@ Mer information finns i Reglera [information som omfattas av sekretessförordnin
 
 ## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>Kontrollera: Övervaka, undersök och svara på sekretessincidenter för data
 
-Det finns Microsoft 365 funktioner som hjälper dig att övervaka, undersöka och svara på datasekretessincidenter i din organisation när du driftiserar relaterade funktioner. 
+Det finns Microsoft 365 funktioner som hjälper dig att övervaka, undersöka och svara på datasekretessincidenter i din organisation när du driftiserar relaterade funktioner.
 
 Att ha processer, procedurer och annan dokumentation för att använda dessa funktioner kan vara viktigt för att visa efterlevnad för reglerande myndigheter.
 

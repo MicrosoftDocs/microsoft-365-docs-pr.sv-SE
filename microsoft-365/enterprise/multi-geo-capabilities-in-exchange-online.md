@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Läs mer om multi-geofunktioner i Exchange Online, till exempel funktionsbegränsningar och postlådeplacering.
-ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: c7c7699906b92e09f88f59bb9d34d1c3b2c36135
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694311"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229809"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Multi-Geo Capabilities i Exchange Online
 
@@ -53,10 +53,10 @@ Exchange Online synkroniserar egenskapen **PreferredDataLocation från** Azure A
 
 - Outlook för Mac användare kan uppleva en tillfällig förlust av åtkomsten till sin onlinearkivmapp när du flyttar postlådan till en ny geoplats. Det här villkoret inträffar när användarens primära postlådor och arkivpostlådor finns på olika geoplatser, eftersom flytt av geopostlådor kan slutföras vid olika tidpunkter.
 
-- Användare kan inte dela *postlådemappar* över geoplatser på Outlook på webben (hette tidigare Outlook Web App eller OWA). En användare i EU kan till exempel inte använda Outlook på webben för att öppna en delad mapp i en postlåda som finns i USA. Däremot kan Outlook på webben öppna  andra postlådor på olika geografiska platser genom att använda ett separat webbläsarfönster enligt beskrivningen i Öppna en annan persons postlåda i ett separat webbläsarfönster [i Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
+- Användare kan inte dela *postlådemappar* över geoplatser i Outlook på webben (kallades tidigare för Outlook Web App eller OWA). En användare i EU kan till exempel inte använda Outlook på webben för att öppna en delad mapp i en postlåda som finns i USA. Däremot kan Outlook på webben öppna  andra postlådor på olika geografiska platser genom att använda ett separat webbläsarfönster enligt beskrivningen i Öppna en annan persons postlåda i ett separat webbläsarfönster [i Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
 
   **Obs!** Delning av mappar för flera geopostlådor stöds i Outlook på Windows.
 
 - Gemensamma mappar stöds i organisationer med flera geografiska funktioner. De gemensamma mapparna måste dock finnas kvar på den centrala geoplatsen. Det går inte att flytta gemensamma mappar till satellitgeoplatser.
 
-- I en multigeomiljö stöds inte granskning av flera geopostlådor. Om en användare till exempel har tilldelats behörigheter för att komma åt en delad postlåda på en annan geo plats loggas inte postlådeåtgärder som utförs av den användaren i granskningsloggen för postlådan för den delade postlådan. Mer information finns i [Hantera postlådegranskning](../compliance/enable-mailbox-auditing.md?view=o365-worldwide).
+- I en multigeomiljö stöds inte granskning av flera geopostlådor. Om en användare till exempel har tilldelats behörigheter för att komma åt en delad postlåda på en annan geo plats loggas inte postlådeåtgärder som utförs av den användaren i granskningsloggen för postlådan för den delade postlådan. Mer information finns i [Hantera postlådegranskning](../compliance/enable-mailbox-auditing.md).

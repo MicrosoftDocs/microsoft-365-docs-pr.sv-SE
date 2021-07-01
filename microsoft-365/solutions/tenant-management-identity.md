@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Distribuera rätt identitetsmodell för Microsoft 365 klientorganisation och framtvinga starka användar inloggningar.
-ms.openlocfilehash: 57e84b38715c4fbe29f9aa362e363663b0401f91
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c6b098cf73ef56327448413381d5621dfd4d2b59
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052368"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229077"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Steg 3. Identitet för din Microsoft 365 för företagsklienter
 
@@ -39,7 +39,7 @@ Här är de två typerna av identitetsmodeller och deras bästa form och fördel
 ||||||
 
 Här är de grundläggande komponenterna i identiteter som bara är molnbaserade.
- 
+
 ![Grundläggande komponenter i identiteter med endast molnet](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 I den här illustrationen loggar lokala användare och fjärranvändare in med konton i Azure AD-klientorganisationen i Microsoft 365 klientorganisation.
@@ -54,9 +54,8 @@ I den här illustrationen loggar lokala användare och fjärranvändare in på s
 
 Beroende på dina affärsbehov och tekniska krav är hybrididentitetsmodellen och katalogsynkroniseringen det vanligaste valet för företagskunder som inför Microsoft 365. Med katalogsynkronisering kan du hantera identiteter i din AD DS och alla uppdateringar av användarkonton, grupper och kontakter synkroniseras till Azure AD-klientorganisationen i Microsoft 365 klientorganisationen.
 
->[!Note]
->När AD DS-användarkonton synkroniseras för första gången tilldelas de inte automatiskt en Microsoft 365-licens och kan inte komma åt Microsoft 365 tjänster, till exempel e-post. Du måste först tilldela dem en användningsplats. Tilldela sedan en licens till dessa användarkonton, antingen individuellt eller dynamiskt genom gruppmedlemskap.
->
+> [!NOTE]
+> När AD DS-användarkonton synkroniseras för första gången tilldelas de inte automatiskt en Microsoft 365-licens och kan inte komma åt Microsoft 365 tjänster, till exempel e-post. Du måste först tilldela dem en användningsplats. Tilldela sedan en licens till dessa användarkonton, antingen individuellt eller dynamiskt genom gruppmedlemskap.
 
 Här är de två typerna av autentisering när du använder hybrididentitetsmodellen.
 
@@ -74,10 +73,10 @@ För att öka säkerheten för användarens inloggningar använder du funktioner
 
 | Funktion | Beskrivning | Mer information | Licensieringskrav |
 |:-------|:-----|:-----|:-----|:-----|
-| Windows Hello för företag | Ersätter lösenord med stark tvåfaktorautentisering när du loggar in på en Windows enhet. De två faktorerna är en ny typ av användaruppgifter som är kopplade till en enhet och ett biometriskt attribut eller en PIN-kod. | [Windows Översikt över Hello för företag](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 eller E5 |
+| Windows Hello för företag | Ersätter lösenord med stark tvåfaktorautentisering när du loggar in på en Windows enhet. De två faktorerna är en ny typ av användaruppgifter som är kopplade till en enhet och ett biometriskt attribut eller en PIN-kod. | [Windows Hello för företag – översikt](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 eller E5 |
 | Azure AD-lösenordsskydd | Identifierar och blockerar kända svaga lösenord och deras varianter och kan även blockera ytterligare svaga termer som är specifika för din organisation. | [Konfigurera lösenordsskydd i Azure AD](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 eller E5 |
 | Använd multifaktorautentisering (MFA) | MFA kräver att användarens inloggningar måste verifieras mer än lösenordet för användarkontot, till exempel verifiering med en smartphone-app eller ett SMS som skickas till en smartphone. I [den här videon](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) finns instruktioner om hur användarna ställer in MFA. | [MFA för Microsoft 365 för företag](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 eller E5 |
-| Konfigurationer av identiteter och enhetsåtkomst | Inställningar principer som består av rekommenderade nödvändiga funktioner och deras inställningar i kombination med villkorsstyrd åtkomst, Intune och Azure AD Identity Protection-principer som bestämmer om en viss åtkomstbegäran ska beviljas och under vilka villkor.  | [Konfigurationer för identitets- och enhetsåtkomst](../security/defender-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 eller E5 |
+| Konfigurationer av identiteter och enhetsåtkomst | Inställningar principer som består av rekommenderade nödvändiga funktioner och deras inställningar i kombination med villkorsstyrd åtkomst, Intune och Azure AD Identity Protection-principer som bestämmer om en viss åtkomstbegäran ska beviljas och under vilka villkor.  | [Konfigurationer för identitets- och enhetsåtkomst](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 eller E5 |
 | Azure AD Identity Protection | Skydda mot autentiseringsuppgifter, där en attack avgör en användares kontonamn och lösenord för att få åtkomst till en organisations molntjänster och data. | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 eller Microsoft 365 E3 med tillägget & Identity & Threat Protection |
 |  |  |  |
 
@@ -98,13 +97,13 @@ I den här illustrationen har klientorganisationen:
 
 - En AD DS-skog som synkroniseras med Azure AD-klientorganisationen med en DirSync-server och Azure AD Anslut.
 - En kopia av AD DS-användarkontona och andra objekt från AD DS-skogen.
-- En uppsättning principer för villkorsstyrd åtkomst för att framtvinga säkra användar inloggningar och åtkomst baserat på användarkontot. 
+- En uppsättning principer för villkorsstyrd åtkomst för att framtvinga säkra användar inloggningar och åtkomst baserat på användarkontot.
 
 ## <a name="ongoing-maintenance-for-identity"></a>Löpande underhåll för identitet
 
 Du kan behöva:
 
-- Lägga till eller ändra användarkonton och grupper. När det gäller endast molnidentitet behåller du dina molnbaserade användare och grupper med Azure AD-verktyg som Microsoft 365 administrationscenter eller PowerShell. För hybrididentitet behåller du lokala användare och grupper med AD DS-verktyg.
+- Lägga till eller ändra användarkonton och grupper. Vid identitet endast i molnet behåller du dina molnbaserade användare och grupper med Azure AD-verktyg som Administrationscenter för Microsoft 365 eller PowerShell. För hybrididentitet behåller du lokala användare och grupper med AD DS-verktyg.
 - Lägg till eller ändra konfigurationen av identitets- och enhetsåtkomst för att tillämpa säkerhetskraven för inloggning.
 
 ## <a name="next-step"></a>Nästa steg

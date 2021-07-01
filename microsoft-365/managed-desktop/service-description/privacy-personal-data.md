@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 0ee214cf7ff5d5998a7fa35688574a23f8b082f0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177483"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229605"
 ---
 # <a name="overview"></a>Översikt
 
@@ -68,16 +68,16 @@ Identifiering av data som används av Microsoft Hanterat skrivbord lagras av Azu
 ## <a name="microsoft-intune"></a>Microsoft Intune
 Microsoft Intune samlar in, bearbetar och delar data i ett Microsoft Hanterat skrivbord för att stödja affärsverksamhet och tjänster. Mer information om data som samlas in i Intune finns i Datainsamling i [Intune.](/mem/intune/protect/privacy-data-collect) 
 
-Mer information om Microsoft Intune dataplatser finns i [Var dina Microsoft 365 kunddata lagras](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide). Intune respekterar de lagringsplatser som administratören gjort för kunddata.
+Mer information om Microsoft Intune dataplatser finns i [Var dina Microsoft 365 kunddata lagras](/microsoft-365/enterprise/o365-data-locations). Intune respekterar de lagringsplatser som administratören gjort för kunddata.
 
 ## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender för Endpoint
-Microsoft Defender för Endpoint samlar in och lagrar information för enheter som är registrerade Microsoft Hanterat skrivbord för administrations-, spårnings- och rapporteringssyften. Information som samlas in omfattar fildata (t.ex. filnamn, storlek och hash-filer), processdata (processer, hash-processer), registerdata, nätverksanslutningsdata och enhetsinformation (till exempel enhetsidentifierare, enhetsnamn och operativsystemsversionen). Se [Microsoft Defender för slutpunktens datalagring och](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) sekretess för mer information om Microsoft Defender för Endpoints datainsamlings- och lagringsplatser. 
+Microsoft Defender för Endpoint samlar in och lagrar information för enheter som är registrerade Microsoft Hanterat skrivbord för administrations-, spårnings- och rapporteringssyften. Information som samlas in omfattar fildata (t.ex. filnamn, storlek och hash-filer), processdata (processer, hash-processer), registerdata, nätverksanslutningsdata och enhetsinformation (till exempel enhetsidentifierare, enhetsnamn och operativsystemsversionen). Se [Microsoft Defender för slutpunktens datalagring och](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) sekretess för mer information om Microsoft Defender för Endpoints datainsamlings- och lagringsplatser. 
 
 ## <a name="microsoft-365-apps-for-enterprise"></a> Microsoft 365 Apps för företag 
-Microsoft 365-appar för företag samlar in och delar data med Microsoft Hanterat skrivbord för att säkerställa att apparna är uppdaterade med den senaste versionen baserat på fördefinierade uppdateringskanaler som hanteras av Microsoft Hanterat skrivbord. Se [Microsoft Defender för Slutpunktens datalagring och](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) sekretess för mer information Microsoft 365-applikationer information om datainsamling och lagringsplatser.
+Microsoft 365-appar för företag samlar in och delar data med Microsoft Hanterat skrivbord för att säkerställa att apparna är uppdaterade med den senaste versionen baserat på fördefinierade uppdateringskanaler som hanteras av Microsoft Hanterat skrivbord. Se [Microsoft Defender för Slutpunktens datalagring och](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) sekretess för mer information Microsoft 365-applikationer information om datainsamling och lagringsplatser.
 
 ## <a name="major-data-change-notification"></a>Meddelande om större dataändring
-Microsoft Hanterat skrivbord följer en ändringskontrollprocess enligt beskrivningen i vårt tjänstkommunikationsramverk. Vi meddelar kunderna via Microsoft 365 meddelandecenter och Microsoft Hanterat skrivbord administrationsportal om både säkerhetsincidenter och större ändringar av tjänsten. Ändringar av de typer av data som samlats och var de lagras betraktas som en materialändring. Vi kommer att meddela minst 30 dagar i förväg om den här ändringen enligt standard för Microsoft 365 produkter och tjänster. Mer information finns i [Tjänständringar och kommunikation.](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide)
+Microsoft Hanterat skrivbord följer en ändringskontrollprocess enligt beskrivningen i vårt tjänstkommunikationsramverk. Vi meddelar kunderna via Microsoft 365 meddelandecenter och Microsoft Hanterat skrivbord administrationsportal om både säkerhetsincidenter och större ändringar av tjänsten. Ändringar av de typer av data som samlats och var de lagras betraktas som en materialändring. Vi kommer att meddela minst 30 dagar i förväg om den här ändringen enligt standard för Microsoft 365 produkter och tjänster. Mer information finns i [Tjänständringar och kommunikation.](/microsoft-365/managed-desktop/service-description/servicechanges)
 
 ## <a name="compliance"></a>Efterlevnad
 Microsoft Hanterat skrivbord har genomgått externa granskningar och fått en omfattande uppsättning efterlevnadserbjudanden. Mer information finns i Microsoft Hanterat skrivbord [regelefterlevnad.](/microsoft-365/managed-desktop/intro/compliance) Granskningsrapporter finns tillgängliga för nedladdning på Microsoft [Service Trust Portal,](https://aka.ms/stp)som fungerar som en central lagringsplats för Microsoft Enterprise Online Services. (Microsoft Hanterat skrivbord i de här dokumenten under kategorin "Övervakning och hantering".) 

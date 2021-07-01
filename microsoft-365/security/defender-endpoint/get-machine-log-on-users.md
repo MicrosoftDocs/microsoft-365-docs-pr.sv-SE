@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1c81d2978677b751a8085f88b5c4732fd4a5a247
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 634a381ca862dc7580d82168a4b9540acc0cd394
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770055"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229029"
 ---
 # <a name="get-machine-logon-users-api"></a>API för att hämta maskininloggningsanvändare
 
@@ -30,7 +30,7 @@ ms.locfileid: "52770055"
 
 **Gäller för:** [Microsoft Defender för slutpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,47 +40,47 @@ ms.locfileid: "52770055"
 ## <a name="api-description"></a>API-beskrivning
 Hämtar en samling inloggade användare på en viss enhet.
 
-
 ## <a name="limitations"></a>Begränsningar
 1. Du kan fråga efter aviseringar som senast uppdaterades enligt din konfigurerade lagringstid.
 2. Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.
 
-
 ## <a name="permissions"></a>Behörigheter
 En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)
 
-Behörighetstyp |   Behörighet  |   Visningsnamn för behörighet
+Behörighetstyp |Behörighet|Visningsnamn för behörighet
 :---|:---|:---
-Program |   User.Read.All | "Läsa användarprofiler"
+Program |User.Read.All |"Läsa användarprofiler"
 Delegerat (arbets- eller skolkonto) | User.Read.All | "Läsa användarprofiler"
 
->[!Note]
+> [!NOTE]
 > När du skaffar en token med hjälp av användarautentiseringsuppgifter:
->- Användaren måste ha minst följande rollbehörighet: "Visa data". Mer information finns i [Skapa och hantera roller](user-roles.md) )
->- Svaret inkluderar endast användare om enheten är synlig för användaren, baserat på enhetens gruppinställningar. Mer information finns i Skapa [och hantera enhetsgrupper](machine-groups.md).
+>
+> - Användaren måste ha minst följande rollbehörighet: "Visa data". Mer information finns i Skapa [och hantera roller](user-roles.md).
+> - Svaret inkluderar endast användare om enheten är synlig för användaren, baserat på enhetens gruppinställningar. Mer information finns i Skapa [och hantera enhetsgrupper](machine-groups.md).
 
 ## <a name="http-request"></a>HTTP-begäran
+
 ```http
 GET /api/machines/{id}/logonusers
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 
+## <a name="request-body"></a>Frågebrödtext
 
-## <a name="request-body"></a>Begärans brödtext
 Tom
 
 ## <a name="response"></a>Svar
-Om det fungerar och det finns en enhet – 200 OK med en lista [över användarenheter](user.md) i brödtexten. Om enheten inte hittades – 404 Hittades inte.
 
+Om det fungerar och det finns en enhet – 200 OK med en lista [över användarenheter](user.md) i brödtexten. Om enheten inte hittades – 404 Hittades inte.
 
 ## <a name="example"></a>Exempel
 
-**Begäran**
+### <a name="request"></a>Begäran
 
 Här är ett exempel på begäran.
 
@@ -88,10 +88,9 @@ Här är ett exempel på begäran.
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
 ```
 
-**Svar**
+### <a name="response"></a>Svar
 
 Här är ett exempel på svaret.
-
 
 ```http
 HTTP/1.1 200 OK

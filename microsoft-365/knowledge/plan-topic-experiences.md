@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Lär dig planera för Abonnemang på Microsoft Viva Topics
-ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583118"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229545"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planera för Microsoft Viva Topics
 
@@ -36,13 +36,15 @@ Mer information om AI-tekniken bakom Viva Topics finns [i Alexandria i Microsoft
 
 ## <a name="requirements"></a>Krav
 
-Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör eller SharePoint administratör för att få åtkomst Microsoft 365 administrationscenter och konfigurera Ämnen.
+Du måste prenumerera [på Viva Topics](https://www.microsoft.com/microsoft-viva/topics) och vara global administratör SharePoint administratör för att få åtkomst Administrationscenter för Microsoft 365 och konfigurera Ämnen.
 
 Alla användare som ska använda Ämnen kräver en **licens för ämnesupplevelser.** Tilldelning av licenser omfattas av [Konfigurera Microsoft Viva-ämnen.](set-up-topic-experiences.md)
 
 ## <a name="topic-discovery"></a>Upptäckt av ämne
 
-Inställningarna för identifiering av ämne anger vilka SharePoint som används som källor för ämnen. Du kan välja att inkludera SharePoint webbplatser, en viss lista med webbplatser eller inga webbplatser. Vi rekommenderar att du väljer alla webbplatser så att ämnesupplevelsen kan upptäcka ett stort antal bra ämnen för användarna.
+Inställningarna för identifiering av ämne anger vilka SharePoint som används som källor för ämnen. Det inkluderar både klassiska och moderna webbplatser samt webbplatser som är associerade med Microsoft Teams och Microsoft 365 Groups. OneDrive-webbplatserna inte ingår.
+
+Du kan välja att inkludera SharePoint webbplatser, en viss lista med webbplatser eller inga webbplatser. Vi rekommenderar att du väljer alla webbplatser så att ämnesupplevelsen kan upptäcka ett stort antal bra ämnen för användarna.
 
 När du konfigurerade ämnen kan du välja bland följande alternativ:
 
@@ -128,7 +130,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Administration
 
-När du ställer in Ämnen skapas ett ämnescenter automatiskt som en del av installationen. Fundera på vad du vill ge ämnescentret ett namn och vad du vill att URL-adressen ska vara. Du kan ange både namn och URL som en del av installationen och du kan ändra namn (men inte URL) senare i Microsoft 365 administrationscenter. Du kan bara ha ett ämnescenter.
+När du ställer in Ämnen skapas ett ämnescenter automatiskt som en del av installationen. Fundera på vad du vill ge ämnescentret ett namn och vad du vill att URL-adressen ska vara. Du kan ange både namn och URL-adress som en del av installationsprocessen och du kan ändra namnet (men inte URL:en) senare i Administrationscenter för Microsoft 365. Du kan bara ha ett ämnescenter.
 
 ## <a name="setup-checklist"></a>Checklista för konfiguration
 

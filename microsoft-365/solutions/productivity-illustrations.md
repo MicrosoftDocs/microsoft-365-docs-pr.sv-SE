@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0123fc5cb22e249475f7e95426ee74f6e0939aaa
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: e052f3c287a6523174259a0a58017421bc989071
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788442"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229617"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Produktivitetsillustrationer för Microsoft 365
 
@@ -41,17 +41,17 @@ Den här bilden innehåller information för IT-arkitekter om Microsoft 365 grup
 
 ## <a name="migrate-to-microsoft-365"></a>Migrera till Microsoft 365
 
-Microsoft tillhandahåller verktyg för att migrera dina lokala nätverksfilresurser och SharePoint Server-webbplatser för att Microsoft 365 med en betoning på att skydda och säkerställa innehållets säkerhet under migreringen. Den här uppsättningen illustrationer visar de olika metoder som finns tillgängliga för att flytta innehåll till SharePoint, Teams och OneDrive och hur dina data flödar genom processen. 
+Microsoft tillhandahåller verktyg för att migrera dina lokala nätverksfilresurser och SharePoint Server-webbplatser för att Microsoft 365 med en betoning på att skydda och säkerställa innehållets säkerhet under migreringen. Den här uppsättningen illustrationer visar de olika metoder som finns tillgängliga för att flytta innehåll till SharePoint, Teams och OneDrive och hur dina data flödar genom processen.
 
 | Objekt | Beskrivning |
 |:-----|:-----|
-|[![Modellaffisch: Migrera till Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/>[PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <br/> Uppdaterades mars 2021 |Innehåller: <ul><li>  Migrering av filresurs</li><li>SharePoint Servermigrering </li> </ul><br> Mer information finns i [Migrera ditt innehåll till Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
+|[![Modellaffisch: Migrera till Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> Uppdaterades mars 2021 |Innehåller: <ul><li> Migrering av filresurs</li><li>SharePoint Servermigrering</li></ul> <p> Mer information finns i [Migrera ditt innehåll till Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
 
 ## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 funktioner för informationsskydd och efterlevnad
 
-Microsoft 365 innehåller en omfattande uppsättning funktioner för informationsskydd och efterlevnad. Tillsammans med Microsofts produktivitetsverktyg är dessa funktioner utformade för att hjälpa organisationer att samarbeta i realtid samtidigt som de följer strikt reglerande ramverk för efterlevnad. 
+Microsoft 365 innehåller en omfattande uppsättning funktioner för informationsskydd och efterlevnad. Tillsammans med Microsofts produktivitetsverktyg är dessa funktioner utformade för att hjälpa organisationer att samarbeta i realtid samtidigt som de följer strikt reglerande ramverk för efterlevnad.
 
-I den här uppsättningen illustrationer används en av de mest reglerade branscherna och finansiella tjänsterna för att visa hur dessa funktioner kan tillämpas för att uppfylla vanliga regleringskrav. Du kan anpassa illustrationerna för eget bruk. 
+I den här uppsättningen illustrationer används en av de mest reglerade branscherna och finansiella tjänsterna för att visa hur dessa funktioner kan tillämpas för att uppfylla vanliga regleringskrav. Du kan anpassa illustrationerna för eget bruk.
 
 
 | Objekt | Beskrivning |
@@ -84,16 +84,16 @@ Rekommenderade funktioner för att skydda identiteter och enheter som använder 
 | Objekt | Beskrivning |
 |:-----|:-----|
 |[![Modellaffisch: Identitets- och enhetsskydd för Microsoft 365](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Visa som PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Ladda ned som PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Ladda ned som Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Uppdaterad september 2020|Det är viktigt att använda konsekventa skyddsnivåer för dina data, identiteter och enheter. Den här modellen visar vilka funktioner som kan jämföras med mer information om funktioner för att skydda identiteter och enheter.  <br/> |
- 
+
 <a name="BKMK_ediscovery"></a>
 ## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery arkitektur i Microsoft 365
 
-Advanced eDiscovery arbetsflöden och dataflöden från hela slutet, även Microsoft 365 multigeobaserade miljöer. 
+Advanced eDiscovery arbetsflöden och dataflöden från hela slutet, även Microsoft 365 multigeobaserade miljöer.
 
 | Objekt | Beskrivning |
 |:-----|:-----|
 |[![Modellaffisch: Advanced eDiscovery arkitektur i Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [Visa som en bild](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [Ladda ned som PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \| [Ladda ned som Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> Uppdaterades: Oktober 2020|Innehåller: <ul><li>  Hela arbetsflödet i en enda miljö</li><li>Hela arbetsflödet i en Microsoft 365 Multi-Geo-miljö </li><li>End-to-end-dataflöde som har stöd för EDRM-arbetsflödet</li> |
-  
+
 
 
 ## <a name="microsoft-telephony-solutions"></a>Microsofts telefonilösningar
@@ -107,7 +107,7 @@ Microsoft har stöd för flera olika alternativ när du påbörjar övergången 
 
 ## <a name="set-up-your-infrastructure-for-hybrid-work"></a>Konfigurera din infrastruktur för hybridarbete
 
-Med Microsoft 365 och andra Microsoft-molntekniker kan du ge dina medarbetare säker åtkomst till organisationens lokala och molnbaserade information, verktyg och resurser från deras hem. 
+Med Microsoft 365 och andra Microsoft-molntekniker kan du ge dina medarbetare säker åtkomst till organisationens lokala och molnbaserade information, verktyg och resurser från deras hem.
 
 [![Konfigurera infrastrukturen för hybridarbete, affisch](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
 [PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)  |  [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
@@ -120,13 +120,14 @@ Mer information finns i artikeln för den här affischen: [Konfigurera infrastru
 Med Microsoft 365 kan du konfigurera ett privat team i Microsoft Teams och använda säkerhetsinställningarna för SharePoint-webbplatsen och en unik känslighetsetikett för att kryptera filer så att endast teammedlemmar kan dekryptera dem.
 
 [![Microsoft Teams med säkerhets isolering, affisch](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> Uppdaterades augusti 2020
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
+Uppdaterades augusti 2020
 
 Mer information finns i artikeln för den här affischen: [Konfigurera ett team med säkerhetsisolering](secure-teams-security-isolation.md).
 
-  
+
 ## <a name="see-also"></a>Se även
 
 [Arkitekturmodeller för SharePoint, Exchange, Skype för företag och Lync](../enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
-  
+
 [Testlabbguider för integrering med molntjänster](../enterprise/cloud-adoption-test-lab-guides-tlgs.md)

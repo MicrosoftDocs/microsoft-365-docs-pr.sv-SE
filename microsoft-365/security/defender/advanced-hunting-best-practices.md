@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: abc6b561c2fca8106397b1656432628c983e2ece
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: ae2e7fb960dd8ce2a42ce62fe0b8da7675e00ce5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952698"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228381"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Avancerade metodtips för sökningsfrågor
 
@@ -50,7 +50,7 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     ```kusto
     DeviceEvents
     | where Timestamp > ago(1d)
-    | where ActionType == "UsbDriveMount" 
+    | where ActionType == "UsbDriveMount"
     | where DeviceName == "user-desktop.domain.com"
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
@@ -66,12 +66,12 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
 ## <a name="optimize-the-join-operator"></a>Optimera `join` operatorn
 [Kopplingsoperatorn](/azure/data-explorer/kusto/query/joinoperator) slår samman rader från två tabeller genom att matcha värden i angivna kolumner. Använd de här tipsen om du vill optimera frågor som använder den här operatorn.
 
-- **Mindre tabell till vänster –** Operatorn matchar poster i tabellen på vänster sida av kopplingssatsen till poster till `join` höger. Genom att ha den mindre tabellen till vänster behöver färre poster matchas, vilket gör frågan snabbare. 
+- **Mindre tabell till vänster –** Operatorn matchar poster i tabellen på vänster sida av kopplingssatsen till poster till `join` höger. Genom att ha den mindre tabellen till vänster behöver färre poster matchas, vilket gör frågan snabbare.
 
     I tabellen nedan ser vi till att den vänstra tabellen endast omfattar tre specifika enheter innan du ansluter `DeviceLogonEvents` till den med via `IdentityLogonEvents` konto-SID.
- 
+
     ```kusto
-    DeviceLogonEvents 
+    DeviceLogonEvents
     | where DeviceName in ("device-1.domain.com", "device-2.domain.com", "device-3.domain.com")
     | where ActionType == "LogonFailed"
     | join
@@ -89,19 +89,19 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
+    | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
     ```
 
     För att åtgärda den här begränsningen tillämpar vi [den inre join-smak](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) genom att ange att alla rader i den vänstra tabellen ska visas `kind=inner` med matchande värden till höger:
-    
+
     ```kusto
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
+    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
     ```
 - **Koppla poster från ett tidsfönster**– När analytiker undersöker säkerhetshändelser letar analytiker efter relaterade händelser som inträffar under samma tidsperiod. Tillämpa samma metod när du också `join` använder fördelar prestanda genom att minska antalet poster att kontrollera.
-    
+
     Med frågan nedan söker du efter inloggningshändelser inom 30 minuter efter att en skadlig fil mottagits:
 
     ```kusto
@@ -110,10 +110,10 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     | where ThreatTypes has "Malware"
     | project EmailReceivedTime = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0])
     | join (
-    DeviceLogonEvents 
+    DeviceLogonEvents
     | where Timestamp > ago(7d)
     | project LogonTime = Timestamp, AccountName, DeviceName
-    ) on AccountName 
+    ) on AccountName
     | where (LogonTime - EmailReceivedTime) between (0min .. 30min)
     ```
 - **Använda tidsfilter på** båda sidor – Även om du inte undersöker ett visst tidsfönster kan du minska antalet poster för att kontrollera och förbättra prestanda genom att använda tidsfilter på både den vänstra och den högra `join` tabellen. Frågan nedan gäller för `Timestamp > ago(1h)` båda tabellerna så att den bara sammanför poster från den senaste timmen:
@@ -122,8 +122,8 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     EmailAttachmentInfo
     | where Timestamp > ago(1h)
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
-    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
-    ```  
+    | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256
+    ```
 
 - **Använd tips för prestanda –** Använd tips med operatorn för att instruera backend att fördela belastningen när du kör `join` resursintensiva åtgärder. [Läs mer om kopplingstips](/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
@@ -132,19 +132,19 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     ```kusto
     IdentityInfo
     | where JobTitle == "CONSULTANT"
-    | join hint.shufflekey = AccountObjectId 
+    | join hint.shufflekey = AccountObjectId
     (IdentityDirectoryEvents
         | where Application == "Active Directory"
         | where ActionType == "Private data retrieval")
-    on AccountObjectId 
+    on AccountObjectId
     ```
-    
+
     **[Sändningstipset](/azure/data-explorer/kusto/query/broadcastjoin)** hjälper när den vänstra tabellen är liten (upp till 100 000 poster) och den högra tabellen är extremt stor. Frågan nedan försöker till exempel ansluta till några e-postmeddelanden som har specifika ämnen med _alla_ meddelanden som innehåller länkar i `EmailUrlInfo` tabellen:
 
     ```kusto
-    EmailEvents 
+    EmailEvents
     | where Subject in ("Warning: Update your credentials now", "Action required: Update your credentials now")
-    | join hint.strategy = broadcast EmailUrlInfo on NetworkMessageId 
+    | join hint.strategy = broadcast EmailUrlInfo on NetworkMessageId
     ```
 
 ## <a name="optimize-the-summarize-operator"></a>Optimera `summarize` operatorn
@@ -153,25 +153,25 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
 - **Hitta distinkta värden**– Använd i allmänhet för `summarize` att hitta distinkta värden som kan upprepas. Det kan vara onödigt att använda den för att sammanställa kolumner som inte har repetitiva värden.
 
     Även om ett enskilt e-postmeddelande kan vara  en del av flera händelser är exemplet nedan inte effektivt, eftersom ett nätverksmeddelande-ID för ett enskilt e-postmeddelande alltid levereras med en `summarize` unik avsändaradress.
- 
+
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | summarize by NetworkMessageId, SenderFromAddress   
+    | summarize by NetworkMessageId, SenderFromAddress
     ```
     Operatorn `summarize` kan enkelt ersättas med , vilket `project` eventuellt ger samma resultat samtidigt som färre resurser används:
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | project NetworkMessageId, SenderFromAddress   
+    | project NetworkMessageId, SenderFromAddress
     ```
     Följande exempel är ett mer effektivt sätt att använda eftersom det kan finnas flera distinkta instanser av en avsändaradress som skickar `summarize` e-post till samma mottagaradress. Sådana kombinationer är mindre distinkta och kan ha dubbletter.
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
-    | summarize by SenderFromAddress, RecipientEmailAddress   
+    | summarize by SenderFromAddress, RecipientEmailAddress
     ```
 
 - **Blanda frågan –** Även om den bäst används i kolumner med repetitiva värden, kan samma kolumner också ha hög `summarize` _kardinalitet_ eller ett stort antal unika värden. Precis som operatorn kan du även använda slumpa aningen med för att fördela belastningen och potentiellt förbättra prestandan när du `join` arbetar med kolumner med hög [](/azure/data-explorer/kusto/query/shufflequery) `summarize` kardinalitet.
@@ -179,7 +179,7 @@ Kunder som kör flera frågor regelbundet bör spåra förbrukning och använda 
     Frågan nedan använder för `summarize` att räkna distinkta mottagares e-postadress, som kan köras i hundratals tusentals i stora organisationer. För att förbättra prestanda omfattar `hint.shufflekey` det:
 
     ```kusto
-    EmailEvents  
+    EmailEvents
     | where Timestamp > ago(1h)
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
@@ -210,7 +210,7 @@ Det finns flera sätt att skapa en kommandorad för att utföra en aktivitet. En
 Använd följande metoder för att skapa mer beständiga frågor runt kommandorader:
 
 - Identifiera de kända processerna (till *exempelnet.exe* eller *psexec.exe*) genom att matcha på filnamnsfälten, i stället för att filtrera på själva kommandoraden.
-- Tolka kommandoradsavsnitt med funktionen [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) 
+- Tolka kommandoradsavsnitt med funktionen [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line)
 - Vid sökning efter kommandoradsargument bör du inte söka efter en exakt matchning för flera orelaterade argument i en viss ordning. I stället kan du använda reguljära uttryck eller använda flera separata operatorer.
 - Använd fallkänsliga matchningar. Använd till exempel `=~` , och i stället för , och `in~` `contains` `==` `in` `contains_cs` .
 - Överväg att ta bort citattecken, ersätta kommatecken med blanksteg och ersätta flera efterföljande blanksteg med ett enda blanksteg för att minimera teknik för att begränsa anropsteknik för kommandorader. Det finns mer komplexa lösningar på problem som kräver andra metoder, men de här justeringarna kan vara till stor hjälp för vanliga.
@@ -225,47 +225,47 @@ DeviceProcessEvents
 
 // Better query - filters on file name, does case-insensitive matches
 DeviceProcessEvents
-| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc" 
+| where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe") and ProcessCommandLine contains "stop" and ProcessCommandLine contains "MpsSvc"
 
 // Best query also ignores quotes
 DeviceProcessEvents
 | where Timestamp > ago(7d) and FileName in~ ("net.exe", "net1.exe")
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
-| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
+| where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc"
 ```
 
 ### <a name="ingest-data-from-external-sources"></a>Mata in data från externa källor
 Om du vill infoga långa listor eller stora tabeller i frågan använder du [operatorn externaldata för](/azure/data-explorer/kusto/query/externaldata-operator) att mata in data från en viss URI. Du kan hämta data från filer i TXT, CSV, JSON eller [andra format.](/azure/data-explorer/ingestion-supported-formats) Exemplet nedan visar hur du kan använda den omfattande listan med SHA-256-hashprogram för skadlig programvara som tillhandahålls av MalwareBazaar (abuse.ch) för att kontrollera bifogade filer i e-postmeddelanden:
 
 ```kusto
-let abuse_sha256 = (externaldata(sha256_hash: string )
+let abuse_sha256 = (externaldata(sha256_hash: string)
 [@"https://bazaar.abuse.ch/export/txt/sha256/recent/"]
 with (format="txt"))
 | where sha256_hash !startswith "#"
 | project sha256_hash;
 abuse_sha256
-| join (EmailAttachmentInfo 
-| where Timestamp > ago(1d) 
+| join (EmailAttachmentInfo
+| where Timestamp > ago(1d)
 ) on $left.sha256_hash == $right.SHA256
 | project Timestamp,SenderFromAddress,RecipientEmailAddress,FileName,FileType,
 SHA256,ThreatTypes,DetectionMethods
 ```
 
 ### <a name="parse-strings"></a>Tolka strängar
-Det finns olika funktioner som du kan använda för att effektivt hantera strängar som behöver parsning eller konvertering. 
+Det finns olika funktioner som du kan använda för att effektivt hantera strängar som behöver parsning eller konvertering.
 
 | Sträng | Funktion | Användningsexempel |
 |--|--|--|
-| Kommandorader | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extrahera kommandot och alla argument. | 
+| Kommandorader | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extrahera kommandot och alla argument. |
 | Sökvägar | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | Extrahera avsnitten i en fil- eller mappsökväg. |
 | Versionsnummer | [parse_version()](/azure/data-explorer/kusto/query/parse-versionfunction) | Avmarkera ett versionsnummer med upp till fyra avsnitt och upp till åtta tecken per avsnitt. Använd tolkade data för att jämföra versions ålder. |
 | IPv4-adresser | [parse_ipv4()](/azure/data-explorer/kusto/query/parse-ipv4function) | Konvertera en IPv4-adress till ett långt heltal. Om du vill jämföra IPv4-adresser utan att konvertera dem använder [du ipv4_compare()](/azure/data-explorer/kusto/query/ipv4-comparefunction). |
 | IPv6-adresser | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | Konvertera en IPv4- eller IPv6-adress till den kanoniska IPv6-notationen. Jämför IPv6-adresser med hjälp [av ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-Mer information om alla parsingsfunktioner som stöds finns [i Kusto-strängfunktioner.](/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
+Mer information om alla parsingsfunktioner som stöds finns [i Kusto-strängfunktioner.](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)
 
 >[!NOTE]
->Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender för](m365d-enable.md) att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)
+>Vissa tabeller i den här artikeln kanske inte är tillgängliga i Microsoft Defender för Endpoint. [Aktivera Microsoft 365 Defender](m365d-enable.md) för att leta efter hot med hjälp av fler datakällor. Du kan flytta dina avancerade arbetsflöden för sökning från Microsoft Defender för Endpoint till Microsoft 365 Defender genom att följa stegen i Migrera avancerade sökfrågor från [Microsoft Defender för Slutpunkt.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Språkdokumentation för kustofrågor](/azure/data-explorer/kusto/query/)

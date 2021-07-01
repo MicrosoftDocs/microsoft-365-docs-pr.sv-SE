@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Här beskrivs hur du förbereder för att tillhandahålla Microsoft 365 med hjälp av katalogsynkronisering och de långsiktiga fördelarna med den här metoden.
-ms.openlocfilehash: 7f701bf0a8b165323f7fd61b50b41fb5e18268a6
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: ee6cfe9adfe029e620d2465f08a3fbe1e9290503
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259565"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229773"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Förbereda för katalogsynkronisering till Microsoft 365
 
@@ -180,7 +180,7 @@ Därför är det bäst att attributen stämmer överens. För att uppfylla krave
 
 Du kan behöva lägga till ett alternativt UPN-suffix för att associera användarens företagsautentiseringsuppgifter med Microsoft 365 miljö. Ett UPN-suffix är den del av ett UPN som står till höger om @-tecknet. UPN-nummer som används för enkel inloggning får innehålla bokstäver, siffror, punkter, bindestreck och understreck, men inga andra typer av tecken.
 
-Mer information om hur du lägger till ett alternativt UPN-suffix i Active Directory finns i [Förbereda katalogsynkronisering.]( https://go.microsoft.com/fwlink/p/?LinkId=525430)
+Mer information om hur du lägger till ett alternativt UPN-suffix i Active Directory finns i [Förbereda katalogsynkronisering.](https://go.microsoft.com/fwlink/p/?LinkId=525430)
 
 ## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Matcha AD DS UPN med MICROSOFT 365 UPN
 

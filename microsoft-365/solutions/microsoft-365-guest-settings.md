@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Läs mer om de inställningar för gästdelning som är tillgängliga i Microsoft 365 som kan påverka delning med personer utanför organisationen.
-ms.openlocfilehash: 622e3ac0c44ec763cffff51773edbe6c64515a11
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 57db724fe8938d0e258dd1df58fe5016d5e8d2c7
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177446"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229233"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Inställningar för gästdelning i Microsoft 365
 
@@ -47,9 +47,9 @@ Azure Active Directory är den katalogtjänst som används av Microsoft 365. Ins
 | Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
 |Gästanvändarbehörighet|Gästanvändare har begränsad åtkomst till egenskaper och medlemskap i katalogobjekt|Avgör vilka [behörigheter som gäster har i Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions).|
-|Inställningar för gästinbjudning|Alla i organisationen kan bjuda in gästanvändare, inklusive gäster och icke-administratörer|Avgör om gäster, medlemmar och administratörer kan bjuda in gäster till organisationen.<br><br> Den här inställningen påverkar Microsoft 365-delningsupplevelser som Team och SharePoint.|
+|Inställningar för gästinbjudning|Alla i organisationen kan bjuda in gästanvändare, inklusive gäster och icke-administratörer|Avgör om gäster, medlemmar och administratörer kan bjuda in gäster till organisationen. <p> Den här inställningen påverkar Microsoft 365-delningsupplevelser som Team och SharePoint.|
 |Aktivera självbetjäning för gäster att registrera via användarflöden|Nej|Fastställer om du kan skapa användarflöden som tillåter att någon registrerar sig för ett program som du har skapat och skapar ett nytt gästkonto.|
-|Samarbetsbegränsningar|Tillåt att inbjudningar skickas till alla domäner|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna.<br><br> Den här inställningen påverkar Microsoft 365-delningsupplevelser som Team och SharePoint. Du kan tillåta eller blockera domäner på en mer detaljerad nivå med hjälp av domänfiltrering i SharePoint eller Teams.|
+|Samarbetsbegränsningar|Tillåt att inbjudningar skickas till alla domäner|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna. <p> Den här inställningen påverkar Microsoft 365-delningsupplevelser som Team och SharePoint. Du kan tillåta eller blockera domäner på en mer detaljerad nivå med hjälp av domänfiltrering i SharePoint eller Teams.|
 
 Dessa inställningar påverkar hur användare bjuds in till katalogen. De påverkar inte delning med gäster som redan finns i katalogen.
 
@@ -67,7 +67,7 @@ Administrationscenter för Microsoft 365 har inställningar på organisationsniv
 
 | Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
-|Låt användarna lägga till nya gäster i organisationen|På|När du har angett **Ja** kan Azure AD-medlemmar bjuda in gäster via Azure AD. Om du har angett **Nej** kan de inte göra det. När du har angett **Ja** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande. Om du har angett **Nej** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande, men ägarna måste vara globala administratörer för att kunna godkänna. <br><br>Observera att **Medlemmar kan bjuda in** gäller medlemmar i Azure AD (inte gäster) och inte webbplats- eller gruppmedlemmar i Microsoft 365. <br><br>Den här motsvarar inställningen **Medlemmar kan bjuda in** i Azure Active Directory för relationer i organisationen.|
+|Låt användarna lägga till nya gäster i organisationen|På|När du har angett **Ja** kan Azure AD-medlemmar bjuda in gäster via Azure AD. Om du har angett **Nej** kan de inte göra det. När du har angett **Ja** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande. Om du har angett **Nej** kan Microsoft 365-gruppmedlemmar bjuda in gäster med ägargodkännande, men ägarna måste vara globala administratörer för att kunna godkänna. <p> Observera att **Medlemmar kan bjuda in** gäller medlemmar i Azure AD (inte gäster) och inte webbplats- eller gruppmedlemmar i Microsoft 365. <p> Den här motsvarar inställningen **Medlemmar kan bjuda in** i Azure Active Directory för relationer i organisationen.|
 
 ### <a name="microsoft-365-groups"></a>Microsoft 365-grupper
 
@@ -164,9 +164,9 @@ Eftersom OneDrive är en webbplatshierarki i SharePoint påverkar delningsinstä
 
 | Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
-|Begränsa extern delning per domän|Av|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna.<br><br> Den här inställningen påverkar alla SharePoint- och OneDrive-webbplatser i organisationen.|
-|Tillåt endast användare i specifika säkerhetsgrupper att dela externt|Av|Om du vill begränsa vilka som kan dela med gäster i SharePoint och OneDrive begränsar du delning till personer i särskilda säkerhetsgrupper. De här inställningarna påverkar inte delning via Microsoft 365-grupper eller Teams. Gäster som bjuds in via en grupp eller Teams har också åtkomst till den associerade webbplatsen, men dokument- och mappdelning kan endast göras av personer i de angivna säkerhetsgrupperna.<br><br>För varje angiven grupp kan du välja vilka användare som kan dela med alla länkar.|
-|Gäster måste logga in med det konto som delningsinbjudningar skickas till|Av|Hindrar gäster från att acceptera inbjudningar till webbplatsdelningar med en annan e-postadress än den som inbjudan skickades till.<br><br>[SharePoint- och OneDrive-integrering med Azure AD B2B (förhandsversion)](/sharepoint/sharepoint-azureb2b-integration-preview) använder inte den här inställningen eftersom alla gäster läggs till i katalogen utifrån den e-postadress som inbjudan skickades till. Det går inte att komma åt webbplatsen med alternativa e-postadresser.|
+|Begränsa extern delning per domän|Av|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna. <p> Den här inställningen påverkar alla SharePoint- och OneDrive-webbplatser i organisationen.|
+|Tillåt endast användare i specifika säkerhetsgrupper att dela externt|Av|Om du vill begränsa vilka som kan dela med gäster i SharePoint och OneDrive begränsar du delning till personer i särskilda säkerhetsgrupper. De här inställningarna påverkar inte delning via Microsoft 365-grupper eller Teams. Gäster som bjuds in via en grupp eller Teams har också åtkomst till den associerade webbplatsen, men dokument- och mappdelning kan endast göras av personer i de angivna säkerhetsgrupperna. <p> För varje angiven grupp kan du välja vilka användare som kan dela med alla länkar.|
+|Gäster måste logga in med det konto som delningsinbjudningar skickas till|Av|Hindrar gäster från att acceptera inbjudningar till webbplatsdelningar med en annan e-postadress än den som inbjudan skickades till. <p> [SharePoint- och OneDrive-integrering med Azure AD B2B (förhandsversion)](/sharepoint/sharepoint-azureb2b-integration-preview) använder inte den här inställningen eftersom alla gäster läggs till i katalogen utifrån den e-postadress som inbjudan skickades till. Det går inte att komma åt webbplatsen med alternativa e-postadresser.|
 |Tillåt gäster att dela objekt som de inte äger|På|När inställningen är **På** kan gäster dela objekt som de inte äger med andra användare eller gäster. När den är **Av** kan de inte det. Gäster kan alltid dela objekt som de har fullständig kontroll över.|
 |Personer som använder en verifieringskod måste autentiseras igen efter så här många dagar|Av|Med den här inställningen kan du kräva att användare som autentiserar med ett engångslösenord måste autentiseras igen efter ett visst antal dagar.|
 
@@ -215,7 +215,7 @@ Du kan ange standardinställningar för länktyp och behörigheter samt förfall
 
 | Inställning | Standard | Beskrivning |
 |:-----|:-----|:-----|
-|Begränsa delning per domän|Av|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna.<br><br> Den här inställningen kan inte åsidosätta domänbegränsningar som anges på organisations- eller Azure AD-nivå.|
+|Begränsa delning per domän|Av|Med den här inställningen kan du ange en lista över tillåtna eller blockerade domäner för delning. När tillåtna domäner anges kan delningsinbjudningar bara skickas till dessa domäner. När blockerade domäner anges kan delningsinbjudningar inte skickas till de domänerna. <p> Den här inställningen kan inte åsidosätta domänbegränsningar som anges på organisations- eller Azure AD-nivå.|
 |Standardtyp för delningslänk|Samma som inställningarna på organisationsnivå|Med den här inställningen kan du ange standarddelningslänken som visas för användarna på webbplatsen. Alternativet *Samma som inställningarna på organisationsnivå* definieras av en kombination av inställningar för delning på organisations- och webbplatsnivå.|
 |Avancerade inställningar för Alla-länkar|Samma som inställningarna på organisationsnivå|*Alla*-länken upphör efter det angivna antalet dagar efter att den har skapats för en fil på den här webbplatsen. Länkar som har upphört kan inte förnyas. Skapa en ny länk om du vill fortsätta att dela efter förfallotiden.|
 |Standardbehörighet för länk|Samma som inställningarna på organisationsnivå|Med den här inställningen kan du ange standardbehörighet (Visa eller Redigera) för delning av länkar som skapas för filer på webbplatsen.|

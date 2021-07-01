@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Supporten upphör Project Server 2010 upphör den 13 april 2021. Använd den här artikeln som en guide för Project Online eller en nyare version Project server lokalt.
-ms.openlocfilehash: f57fa15da3cabc4b326a52359a29c652fcbe9e7f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 0ca37d00ee670a8a3f7c83d75864b5af19587951
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842236"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229761"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Project Server 2010 – översikt för slutet av supporten
 
@@ -157,11 +157,11 @@ Viktiga resurser:
 
 - [Vad är nytt i Project Server 2013-uppgraderingen](/project/what-s-new-in-project-server-2013-upgrade) omfattar viktiga ändringar för den här versionen, inklusive:
 
-   - Det finns ingen på plats-uppgradering till Project Server 2013. Metoden med databas bifoga är det enda sättet att uppgradera från Project Server 2010 till Project Server 2013.
+  - Det finns ingen på plats-uppgradering till Project Server 2013. Metoden med databas bifoga är det enda sättet att uppgradera från Project Server 2010 till Project Server 2013.
 
-   - Uppgraderingen kommer inte bara att konvertera dina Project Server 2010-data till Project Server 2013-format, utan kommer också att konsolidera de fyra Project Server 2010-databaserna till en Project Web App databas.
+  - Uppgraderingen kommer inte bara att konvertera dina Project Server 2010-data till Project Server 2013-format, utan kommer också att konsolidera de fyra Project Server 2010-databaserna till en Project Web App databas.
 
-   - Både SharePoint Server 2013 och Project Server 2013 har ändrats till anspråksbaserad autentisering från den föregående versionen. Om du använder klassisk autentisering måste du tänka på detta när du uppgraderar. Mer information finns i [Migrera från klassiskt läge till anspråksbaserad autentisering i SharePoint 2013.]( /sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)
+  - Både SharePoint Server 2013 och Project Server 2013 har ändrats till anspråksbaserad autentisering från den föregående versionen. Om du använder klassisk autentisering måste du tänka på detta när du uppgraderar. Mer information finns i [Migrera från klassiskt läge till anspråksbaserad autentisering i SharePoint 2013.](/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013)
 
 Viktiga resurser:
 
@@ -213,9 +213,9 @@ Viktiga resurser:
 
 - [Saker du behöver veta om Project Server 2019-uppgraderingen](/project/plan-for-upgrade-to-project-server-2016)<br/><br/>Läs mer om viktiga ändringar när du uppgraderar till den här versionen, bland annat:
 
-   - Under uppgraderingen migreras dina data från din Project Server 2016 till innehållsdatabasen SharePoint Server 2019 Innehåll.  Project Server 2019 skapar inte längre en egen Project i servergruppen SharePoint Server.
+  - Under uppgraderingen migreras dina data från din Project Server 2016 till innehållsdatabasen SharePoint Server 2019 Innehåll.  Project Server 2019 skapar inte längre en egen Project i servergruppen SharePoint Server.
 
-   - Efter uppgraderingen bör du vara medveten om flera ändringar i Project Web App.  Mer information finns [i Vad är nytt i Project Server 2019.](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)
+  - Efter uppgraderingen bör du vara medveten om flera ändringar i Project Web App.  Mer information finns [i Vad är nytt i Project Server 2019.](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)
 
 **Andra resurser:**
 

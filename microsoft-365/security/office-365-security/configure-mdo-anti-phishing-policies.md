@@ -15,12 +15,12 @@ ms.collection:
 description: Administratörer kan lära sig att skapa, ändra och ta bort avancerade principer mot nätfiske som är tillgängliga i organisationer med Microsoft Defender för Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a948604f11064f2c1fefcc441adc4a9792ac918
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 71baf947c5834e2eb4b8ef62af69da77ea5bd090
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108445"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230049"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurera principer mot nätfiske i Microsoft Defender för Office 365
 
@@ -125,8 +125,7 @@ Om du skapar en egen policy mot nätfiske i Microsoft 365 Defender-portalen skap
 
      > [!NOTE]
      >
-     > - I varje princip mot nätfiske kan du ange högst 60 skyddade användare (avsändar-e-postadresser). Du kan inte ange samma skyddade användare i flera principer.
-     >
+     > - I varje princip mot nätfiske kan du ange högst 350 skyddade användare (avsändar-e-postadresser). Du kan inte ange samma skyddade användare i flera principer.
      > - Skydd för användarpersonifiering fungerar inte om avsändaren och mottagaren tidigare har kommunicerat via e-post. Om avsändaren och mottagaren aldrig har kommunicerat via e-post identifieras meddelandet som ett personifieringsförsök.
 
      - **Aktivera att användare skyddar:** Standardvärdet är inaktiverat (inte markerat). Om du vill aktivera den markerar du kryssrutan och klickar sedan på länken **Hantera (nn)** avsändare som visas.
@@ -246,7 +245,7 @@ Om du skapar en egen policy mot nätfiske i Microsoft 365 Defender-portalen skap
 
 7. Granska inställningarna på sidan **Granska** som visas. Du kan välja **Redigera** i varje avsnitt om du vill ändra inställningarna i avsnittet. Eller så kan du klicka på **Föregående** eller välj den specifika sidan i guiden.
 
-   När du är klar klickar du på **Skicka.**
+   Klicka på **Skicka in** när du är klar.
 
 8. På bekräftelsesidan som visas klickar du på **Klar**.
 

@@ -157,7 +157,7 @@
 > - [Nederländerna](../support/netherlands.md)
 > - [Nya Kaledonien](../support/new-caledonia.md)
 > - [Nya Zeeland](../support/new-zealand.md)
-> - [Nicaragua](../support/nicaragua.md)
+> - [Nicaragua ](../support/nicaragua.md)
 > - [Niue](../support/niue.md)
 > - [Niger](../support/niger.md)
 > - [Nigeria](../support/nigeria.md)

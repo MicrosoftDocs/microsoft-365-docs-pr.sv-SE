@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Lär dig hur du hanterar Azure AD-användaridentitetstjänsten i Microsoft 365 med endast moln- eller hybrididentitetsmodeller.
-ms.openlocfilehash: b54ccce6ea2a468e02d9db95e7932d847df4e64b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93a37f39a4d96d7c2e434ed6edf4df588e672a0f
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905710"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228501"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 identitetsmodeller och Azure Active Directory
 
@@ -46,7 +46,7 @@ Ditt första planeringsval är den Microsoft 365 identitetsmodellen.
 
 ## <a name="microsoft-365-identity-models"></a>Microsoft 365 identitetsmodeller
 
-För att kunna planera för användarkonton måste du först förstå de två identitetsmodellerna i Microsoft 365. Du kan endast underhålla organisationens identiteter i molnet, eller så kan du underhålla dina lokala AD DS-identiteter (Active Directory Domain Services) och använda dem för autentisering när användare använder Microsoft 365 molntjänster.  
+För att kunna planera för användarkonton måste du först förstå de två identitetsmodellerna i Microsoft 365. Du kan endast underhålla organisationens identiteter i molnet, eller så kan du underhålla dina lokala AD DS-identiteter (Active Directory Domain Services) och använda dem för autentisering när användare använder Microsoft 365 molntjänster.
 
 Här är de två typerna av identitet och deras bästa form och fördelar.
 
@@ -60,16 +60,16 @@ Här är de två typerna av identitet och deras bästa form och fördelar.
 
 ## <a name="cloud-only-identity"></a>Identitet endast för molnet
 
-En identitet som bara är molnbaserad använder användarkonton som bara finns i Azure AD. Identitet endast i molnet används vanligtvis av små organisationer som inte har lokala servrar eller inte använder AD DS för att hantera lokala identiteter. 
+En identitet som bara är molnbaserad använder användarkonton som bara finns i Azure AD. Identitet endast i molnet används vanligtvis av små organisationer som inte har lokala servrar eller inte använder AD DS för att hantera lokala identiteter.
 
 Här är de grundläggande komponenterna i identiteter som bara är molnbaserade.
- 
+
 ![Grundläggande komponenter i identiteter med endast molnet](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 Både lokala användare och fjärranvändare (online) använder sina Azure AD-användarkonton och lösenord för åtkomst Microsoft 365 molntjänster. Azure AD autentiserar användarautentiseringsuppgifter baserat på dess lagrade användarkonton och lösenord.
 
 ### <a name="administration"></a>Administration
-Eftersom användarkonton endast lagras i Azure AD hanterar du molnidentiteter med verktyg som Microsoft 365 [administrationscenter](../admin/add-users/index.yml) och [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). 
+Eftersom användarkonton endast lagras i Azure AD hanterar du molnidentiteter med verktyg som Administrationscenter för Microsoft 365 [och](../admin/add-users/index.yml) [Windows PowerShell.](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
 ## <a name="hybrid-identity"></a>Hybrididentitet
 
@@ -77,7 +77,7 @@ Hybrididentitet använder konton som har sitt ursprung i en lokal AD DS och har 
 
 Med Azure AD Anslut kontinuerlig kontosynkronisering. Den körs på en lokal server, söker efter ändringar i AD DS och vidarebefordrar ändringarna till Azure AD. Med Azure AD Anslut kan du filtrera vilka konton som synkroniseras och om du vill synkronisera en hash-version av användarlösenord, så kallad synkronisering av lösenordshashar (PHS).
 
-När du implementerar hybrididentitet är din lokala AD DS den auktoritativa källan för kontoinformation. Det innebär att du oftast utför administrativa uppgifter lokalt, som sedan synkroniseras till Azure AD. 
+När du implementerar hybrididentitet är din lokala AD DS den auktoritativa källan för kontoinformation. Det innebär att du oftast utför administrativa uppgifter lokalt, som sedan synkroniseras till Azure AD.
 
 Här är komponenterna i hybrididentitet.
 
@@ -85,22 +85,20 @@ Här är komponenterna i hybrididentitet.
 
 Azure AD-klientorganisationen har en kopia av AD DS-kontona. I den här konfigurationen autentiseras både lokala användare och fjärranvändare som öppnar Microsoft 365-molntjänster mot Azure AD.
 
->[!Note]
->Du måste alltid använda Azure AD Anslut för att synkronisera användarkonton för hybrididentitet. Du behöver de synkroniserade användarkontona i Azure AD för att utföra licenstilldelning och grupphantering, konfigurera behörigheter och andra administrativa uppgifter som omfattar användarkonton.
->
+> [!NOTE]
+> Du måste alltid använda Azure AD Anslut för att synkronisera användarkonton för hybrididentitet. Du behöver de synkroniserade användarkontona i Azure AD för att utföra licenstilldelning och grupphantering, konfigurera behörigheter och andra administrativa uppgifter som omfattar användarkonton.
 
 ### <a name="administration"></a>Administration
 
-Eftersom de ursprungliga och auktoritativa användarkontona lagras i den lokala AD DS hanterar du dina identiteter med samma verktyg som du hanterar dina AD DS. 
+Eftersom de ursprungliga och auktoritativa användarkontona lagras i den lokala AD DS hanterar du dina identiteter med samma verktyg som du hanterar dina AD DS.
 
-Du använder inte administrationscentret för Microsoft 365 eller PowerShell för Microsoft 365 att hantera synkroniserade användarkonton i Azure AD.
+Du använder inte tjänsten Administrationscenter för Microsoft 365 eller PowerShell för Microsoft 365 att hantera synkroniserade användarkonton i Azure AD.
 
 ## <a name="next-step"></a>Nästa steg
 
 Om du behöver den molnbaserade identitetsmodellen kan du [gå till Molnidentitet.](cloud-only-identities.md)
 
 Om du behöver hybrididentitetsmodellen kan du gå till [Hybrididentitet](plan-for-directory-synchronization.md).
-
 
 ## <a name="see-also"></a>Se även
 

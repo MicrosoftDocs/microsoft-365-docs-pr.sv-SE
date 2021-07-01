@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Arbeta i förväg när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 i den nya tyska datacenterområdet.'
-ms.openlocfilehash: db4563b4a63dc39ee8171e80fd76ae15b7cd10e9
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 9b7a43789aaa61c03e254275fbf7cc945670ccc2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844292"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229821"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktiviteter före migreringen från Microsoft Cloud Deutschland
 
@@ -68,7 +68,7 @@ Office 365 och användaridentifierare bevaras under migreringen. Azure AD-tjäns
 
 **Gäller för:** Kunder som har angett en anpassad _msoid_ CNAME i sin egen DNS-domän eller använder en domän för Exchange Online
 
-Om det är konfigurerat påverkar _msoid_ CNAME bara kunder som använder Office-skrivbordsklienten (Microsoft 365-appar, Office 365 ProPlus, Office 2019, 2016, ...).
+Om den konfigureras påverkar _msoid_ CNAME bara kunder som använder Office-skrivbordsklienten (Microsoft 365-applikationer, Office 365 ProPlus, Office 2019, 2016, ...).
 
 Om du har angett dns-CNAME med namnet _msoid_ i ett eller flera DNS-namnområden som du äger, måste du ta bort CNAME-namnet till slutet av fas 8 senast. Du kan ta bort _CNAME-msoid_ när som helst före slutet av fas 8.
 
@@ -122,8 +122,8 @@ Läsa och använda [ADFS-migreringsstegen](ms-cloud-germany-transition-add-adfs.
 
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
-| Meddela externa partner om den kommande övergången till Office 365 tjänster. |  Kunderna måste meddela sina partner som de har aktiverat för delning av kalender och tillgänglighet för adressutrymme (tillåt delning av ledig/upptagen-information med Office 365). Tillgänglighetskonfigurationen måste gå över till att [använda Office 365 globala slutpunkterna](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) när Exchange Online migreringen har slutförts. | Om du inte gör det kan det leda till service- eller klientfel i en senare fas av kundmigrering. |
-| Meddela användarna om obligatoriska IMAP4-/POP3-/SMTP-klientändringar. | Användare som har enhetsanslutningar till Microsoft Cloud Deutschland-slutpunkter för klientprotokoll IMAP4, POP3 och SMTP måste manuellt uppdatera sina klientenheter för att växla [till Exchange Online-servernamnen](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes). | Informera i förväg om det här beroendet till användare av dessa protokoll och se till att de antingen byter till Outlook mobila enheter eller Outlook på webben under den här migreringen. Om det inte går att uppdatera klientens slutpunkter misslyckas klientanslutningen mot Microsoft Cloud Deutschland när användarpostlådor migreras. |
+| Meddela externa partner om den kommande övergången till Office 365 tjänster. |  Kunderna måste meddela sina partner som de har aktiverat för delning av kalender och tillgänglighet för adressutrymme (tillåt delning av ledig/upptagen-information med Office 365). Tillgänglighetskonfigurationen måste gå över till att [använda Office 365 globala slutpunkterna](/microsoft-365/enterprise/urls-and-ip-address-ranges) när Exchange Online migreringen har slutförts. | Om du inte gör det kan det leda till service- eller klientfel i en senare fas av kundmigrering. |
+| Meddela användarna om obligatoriska IMAP4-/POP3-/SMTP-klientändringar. | Användare som har enhetsanslutningar till Microsoft Cloud Deutschland-slutpunkter för klientprotokoll IMAP4, POP3 och SMTP måste manuellt uppdatera sina klientenheter för att växla [till Exchange Online-servernamnen](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes). | Informera i förväg om det här beroendet till användarna av dessa protokoll och se till att de antingen byter till Outlook mobil eller Outlook på webben under den här migreringen. Om det inte går att uppdatera klientens slutpunkter misslyckas klientanslutningen mot Microsoft Cloud Deutschland när användarpostlådor migreras. |
 ||||
 
 ### <a name="exchange-online-hybrid-customers"></a>Exchange Online Hybridkunder
@@ -139,7 +139,7 @@ Katalogattribut synkroniseras mellan Office 365 och Azure AD med den lokala dist
 | Steg | Beskrivning | Påverkan |
 |:-------|:-------|:-------|
 | Kör om HCW med hjälp Office 365 Germany-inställningarna <br><br> <i>Du kan starta aktiviteten direkt när du har fått meddelandet i meddelandecentret om att Office 365-klientorganisationens migrering har startat (fas 1).</i>| Avinstallera och köra HCW (17.0.5378.0 eller senare) från innan fas 5 så att din lokala konfiguration är redo att skicka och ta emot e-post med både Microsoft Cloud Deutschland-användare och användare som migreras till [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) regionen Office 365 Germany. <p><li> I HCW för listrutan under Min **Office 365 organisation** finns på väljer du **Office 365 Tyskland.** | Om du inte kan slutföra den här uppgiften innan fas 5 [Exchange-migrering] börjar kan det resultera i NDR-meddelanden för e-post som dirigeras mellan din lokala Exchange-distribution och Office 365.
-| Bevara inställningarna för delad postlåda | Vissa hybridkunder har konverterat molnbaserade användarpostlådor till delade postlådor med hjälp Exchange Online postlådor. Den här molnpostlådekonfigurationen skrivs till postlådan och den lokala Exchange Online-katalogen men synkroniseras inte tillbaka till kundens Active Directory via AAD Anslut. Resultatet är en avvikelse mellan Active Directory-representationen av postlådans RemoteRecipientType- och RemoteDisplayType-värden och den i Exchange Online definierar postlådan som delad. <br><br> Kunden ansvarar för att säkerställa att alla delade postlådor är korrekt etablerade med hjälp `New-RemoteMailbox -Shared` av , `Enable-RemoteMailbox -Shared` eller `Set-RemoteMailbox -Shared` .  I den här referensen finns [information om hur du konverterar en användares postlåda i en hybridmiljö.](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)| Om du inte kan slutföra den här uppgiften före fas 5 [Exchange Online-migrering] kan det resultera i NDR-resultat för delade postlådor som konverteras tillbaka till olicensierade postlådor och förlorad delad åtkomst för berörda postlådor. Delade postlådor konverteras oväntat till användarpostlådor när katalogsynkroniseringen körs i en [Exchange-hybriddistribution](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) ger en översikt över effekterna av att inte åtgärda detta Exchange Online katalogmigreringen har slutförts.
+| Bevara inställningarna för delad postlåda | Vissa hybridkunder har konverterat molnbaserade användarpostlådor till delade postlådor med hjälp Exchange Online postlådor. Den här molnpostlådekonfigurationen skrivs till postlådan och den lokala Exchange Online-katalogen men synkroniseras inte tillbaka till kundens Active Directory via AAD Anslut. Resultatet är en avvikelse mellan Active Directory-representationen av postlådans RemoteRecipientType- och RemoteDisplayType-värden och den i Exchange Online definierar postlådan som delad. <br><br> Kunden ansvarar för att säkerställa att alla delade postlådor är korrekt etablerade med hjälp `New-RemoteMailbox -Shared` av , `Enable-RemoteMailbox -Shared` eller `Set-RemoteMailbox -Shared` .  I den här referensen finns [information om hur du konverterar en användares postlåda i en hybridmiljö.](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox)| Om du inte kan slutföra den här uppgiften före fas 5 [Exchange Online-migrering] kan det resultera i NDR-resultat för delade postlådor som konverteras tillbaka till olicensierade postlådor och förlorad delad åtkomst för berörda postlådor. Delade postlådor konverteras oväntat till användarpostlådor när katalogsynkroniseringen körs i en [Exchange-hybriddistribution](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) ger en översikt över effekterna av att inte åtgärda detta Exchange Online katalogmigreringen har slutförts.
 ||||
 
 ## <a name="skype-for-business-online"></a>Skype för företag – Online

@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Lär dig hur du konfigurerar Teams för bättre säkerhet vid delning av filer med hjälp av tre skyddsnivåer, och balansera säkerhet med att kunna samarbete enkelt.
-ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 0c1eb9585326f2269dca02f52e9170788f659c46
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683409"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228825"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurera Teams med tre skyddsnivåer
 
@@ -122,7 +122,7 @@ Observera att gäster ofta inte har enheter som hanteras av din organisation. Om
 
 Inställningen för ohanterade enheter bland känslighetsetiketterna påverkar bara SharePoint-åtkomst. Om du vill utöka kontrollen av ohanterade enheter så den gäller utanför SharePoint kan du istället [Skapa en villkorsstyrd åtkomstprincip för Azure Active Directory för alla program och tjänster i din organisation](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). Om du vill konfigurera den här principen specifikt för [Microsoft 365-tjänster](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365)ska du välja molnappen för **Office 365** under **Molnappar eller åtgärder**.
 
-![Skärmbild av Office 365-molnappen i en Azure Active Directory-princip för villkorsstyrd åtkomst](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+![Skärmbild av Office 365-molnappen i en Azure Active Directory-princip för villkorsstyrd åtkomst](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
 
 En princip som påverkar alla Microsoft 365-tjänster kan leda till bättre säkerhet och en bättre upplevelse för användarna. Om du till exempel blockerar åtkomst till ohanterade enheter i SharePoint kan användarna komma åt chatten i en grupp med en ohanterad enhet, men förlorar åtkomst när de försöker komma åt fliken **Filer**. Med hjälp av Office 365-molnappen undviker du problem med [Tjänstberoenden](/azure/active-directory/conditional-access/service-dependencies).
 

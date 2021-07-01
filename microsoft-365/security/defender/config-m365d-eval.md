@@ -1,7 +1,7 @@
 ---
-title: Konfigurera Microsoft 365 Defender-pelarna för testlabb eller pilotmiljö
-description: Konfigurera Microsoft 365 Defender-pelarpelare, till exempel Microsoft Defender för Office 365, Microsoft Defender för identitet, Microsoft Cloud App Security och Microsoft Defender för Slutpunkt, för din testlabb eller pilotmiljö.
-keywords: konfigurera Microsoft 365 Defender-utvärderingsversion, Microsoft 365 Defender-utvärderingskonfiguration, konfigurera Microsoft 365 Defender-pilotprojekt, konfigurera Microsoft 365 Defender-pelar, Microsoft 365 Defender-pelarpelare
+title: Konfigurera Microsoft 365 Defender för testlabb eller pilotmiljö
+description: Konfigurera Microsoft 365 Defender, till exempel Microsoft Defender för Office 365, Microsoft Defender för identitet, Microsoft Cloud App Security och Microsoft Defender för Slutpunkt, för din testlabb eller pilotmiljö.
+keywords: konfigurera Microsoft 365 Defender provversion, Microsoft 365 Defender utvärderingsversion, konfigurera Microsoft 365 Defender pilotprojekt, konfigurera Microsoft 365 Defender pelare, Microsoft 365 Defender pelare
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 05bdc9cbb678a3d6c1cee726fc4d8c2e45d2d360
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e50210f02d14be33c357517515d456318aac4bb6
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933511"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229785"
 ---
-# <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurera Microsoft 365 Defender-pelarna för din testlabb- eller pilotmiljö
+# <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Konfigurera Microsoft 365 Defender för testlabb- eller pilotmiljö
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "51933511"
 - Microsoft 365 Defender
 
 
-Att skapa Microsoft 365 Defender-testlabb eller testmiljö och distribuera den är en process i tre steg:
+Att skapa Microsoft 365 Defender testlabb eller pilotmiljö och distribuera den är en trefasprocess:
 
 |[![Fas 1: Förbereda](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Fas 1: Förbereda](prepare-m365d-eval.md) |[![Fas 2: Konfigurera](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Fas 2: Konfigurera](setup-m365deval.md) |![Fas 3: Introduktion](../../media/phase-diagrams/onboard.png)<br/>Fas 3: Introduktion | [![Tillbaka till pilottestning](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Tillbaka till pilotspelboken](m365d-pilot.md) |
 |--|--|--|--|
@@ -47,45 +47,44 @@ Du befinner dig för närvarande i konfigurationsfasen.
 
 Förberedelse är avgörande för en lyckad distribution. I den här artikeln får du vägledning i de punkter du behöver tänka på när du förbereder distributionen av Microsoft Defender för Slutpunkt.
 
-
-## <a name="microsoft-365-defender-pillars"></a>Microsoft 365 Defender-pelarna
-Microsoft 365 Defender består av fyra pelar. Även om en av de här pelarna redan kan ge värde åt nätverksorganisationens säkerhet ger det din organisation störst värde genom att aktivera de fyra Microsoft 365 Defender-pelarna.
+## <a name="microsoft-365-defender-pillars"></a>Microsoft 365 Defender pelare
+Microsoft 365 Defender av fyra pelar. Även om en ände redan kan ge värde åt er nätverksorganisations säkerhet, ger de fyra Microsoft 365 Defender ger organisationen störst värde.
 
 ![Bild of_Microsoft 365 Defender-lösning för användare, Microsoft Defender för identitet, för slutpunkter Microsoft Defender för slutpunkt, för molnappar, Microsoft Cloud App Security och för data, Microsoft Defender för Office 365](../../media/mtp/m365pillars.png)
 
 I det här avsnittet får du veta hur du konfigurerar:
--   Microsoft Defender för Office 365
--   Microsoft Defender for Identity 
--   Microsoft Cloud App Security
--   Microsoft Defender för Endpoint
 
+- Microsoft Defender för Office 365
+- Microsoft Defender for Identity
+- Microsoft Cloud App Security
+- Microsoft Defender för Endpoint
 
 ## <a name="configure-microsoft-defender-for-office-365"></a>Konfigurera Microsoft Defender för Office 365
 
->[!NOTE]
->Hoppa över det här steget om du redan har aktiverat Defender för Office 365. 
+> [!NOTE]
+> Hoppa över det här steget om du redan har aktiverat Defender för Office 365.
 
-Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)* som hjälper dig att avgöra vissa av de här inställningarna. När du kör som administratör i klientorganisationen får du en utvärdering av anti-spam, anti-phish och andra inställningar för att bli kontaktad av ett meddelande. Du kan hämta den här modulen från https://www.powershellgallery.com/packages/ORCA/ . 
+Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)* som hjälper dig att avgöra vissa av de här inställningarna. När du kör som administratör i klientorganisationen får du en utvärdering av anti-spam, anti-phish och andra inställningar för att bli kontaktad av ett meddelande. Du kan hämta den här modulen från https://www.powershellgallery.com/packages/ORCA/ .
 
 1. Gå till [Office 365 säkerhet & Hothanteringspolicy](https://protection.office.com/homepage)  >  **i**  >  **Säkerhetscenter.**
 
    ![Image of_Office 365 Security & Compliance Center Threat Management Policy page](../../media/mtp-eval-32.png)
- 
-2. Klicka **på Skydd mot nätfiske** och **välj** Skapa och fyll i principens namn och beskrivning. Klicka på **Nästa**.
+
+2. Klicka **på Skydd mot nätfiske** och **välj** Skapa och fyll i principens namn och beskrivning. Klicka **Nästa**.
 
    ![Bild of_Office 365 Security & Compliance Center – skydd mot nätfiske-policy där du kan namnge principen](../../media/mtp-eval-33.png)
 
    > [!NOTE]
    > Redigera principen för avancerad skydd mot nätfiske i Microsoft Defender för Office 365. Ändra **avancerat tröskelvärde för nätfiske** **till 2 – Aggressivt.**
 
-3. Klicka på **listrutan Lägg** till ett villkor och välj dina domäner som mottagardomän. Klicka på **Nästa**.
+3. Klicka på **listrutan Lägg** till ett villkor och välj dina domäner som mottagardomän. Klicka **Nästa**.
 
    ![Bild of_Office 365 Säkerhetscenter & policysida mot nätfiske där du kan lägga till ett villkor för programmet](../../media/mtp-eval-34.png)
- 
-4. Granska inställningarna. Klicka **på Skapa den här principen för** att bekräfta. 
+
+4. Granska inställningarna. Klicka **på Skapa den här principen för** att bekräfta.
 
    ![Bild of_Office 365 Säkerhet & sidan Skydd mot nätfiskeprincip i Säkerhetscenter där du kan granska dina inställningar och klicka på knappen Skapa den här principen](../../media/mtp-eval-35.png)
- 
+
 5. Välj **Valv bifogade** filer och välj alternativet Aktivera **ATP för SharePoint, OneDrive och Microsoft Teams.**
 
    ![Bild of_Office 365 Säkerhets- & Efterlevnadscenter där du kan aktivera ATP för SharePoint, OneDrive och Microsoft Teams](../../media/mtp-eval-36.png)
@@ -93,10 +92,10 @@ Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection 
 6. Klicka på +-ikonen för att skapa en ny princip för säkra bifogade filer, använd den som mottagardomän för domänerna. Klicka på **Spara**.
 
    ![Bild of_Office 365 Säkerhets- & Efterlevnadscenter där du kan skapa en ny princip för säkra bifogade filer](../../media/mtp-eval-37.png)
- 
+
 7. Välj sedan principen **Valv och** klicka sedan på pennikonen för att redigera standardprincipen.
 
-8. Kontrollera att alternativet **Spåra inte när användare klickar** på säkra länkar inte är markerat, medan resten av alternativen är markerade. Mer [Valv finns i inställningar för Valv](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) länkar. Klicka på **Spara**. 
+8. Kontrollera att alternativet **Spåra inte när användare klickar** på säkra länkar inte är markerat, medan resten av alternativen är markerade. Mer [Valv finns i inställningar för Valv](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) länkar. Klicka på **Spara**.
 
    ![Bild of_Office 365 Säkerhets- & Säkerhetscenter som visar att alternativet Spåra inte när användare klickar på Kassaskåp inte är markerat](../../media/mtp-eval-38.png)
 
@@ -105,7 +104,7 @@ Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection 
 10. Klicka **Inställningar** väljer Ja och **använd standardmeddelandetexten för** att aktivera svar för identifiering av skadlig **programvara.** Aktivera filtret **Vanliga typer av bifogade filer.** Klicka på **Spara**.
 
     ![Bild of_Office 365 Säkerhet och efterlevnadscenter & som visar att svaret för identifiering av skadlig programvara är aktiverat med standardmeddelande och att filtret för vanliga bifogade filer är aktiverat](../../media/mtp-eval-39.png)
-  
+
 11. Gå till [Office 365 att & granskningsloggsökning](https://protection.office.com/homepage)i efterlevnadscenter  >    >   och aktivera granskning.
 
     ![Bild of_Office 365 säkerhets- & efterlevnadscenter där du kan aktivera granskningsloggsökning](../../media/mtp-eval-40.png)
@@ -116,18 +115,18 @@ Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection 
 
 ## <a name="configure-microsoft-defender-for-identity"></a>Konfigurera Microsoft Defender för identitet
 
->[!NOTE]
->Hoppa över det här steget om du redan har aktiverat Microsoft Defender för identitet
+> [!NOTE]
+> Hoppa över det här steget om du redan har aktiverat Microsoft Defender för identitet
 
 1. Gå till [Microsoft 365 säkerhetscenter och](https://security.microsoft.com/info) > **fler resurser** Microsoft Defender för  >  **identitet.**
 
    ![Bild of_Microsoft 365 Säkerhetscenter där det finns ett alternativ för att öppna Microsoft Defender för identitet](../../media/mtp-eval-42.png)
 
-2. Klicka **på Skapa** för att starta guiden Microsoft Defender för identitet. 
+2. Klicka **på Skapa** för att starta guiden Microsoft Defender för identitet.
 
    ![Bild of_Microsoft sida i guiden Defender för identitet där du ska klicka på knappen Skapa](../../media/mtp-eval-43.png)
 
-3. Välj **Ange ett användarnamn och lösenord för att ansluta till Active Directory-skogen**.  
+3. Välj **Ange ett användarnamn och lösenord för att ansluta till Active Directory-skogen**.
 
    ![Bild of_Microsoft välkomstsidan för Defender för identitet](../../media/mtp-eval-44.png)
 
@@ -142,51 +141,50 @@ Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection 
 6. Kör Microsoft Defender för konfiguration av identitets sensor och börja följa guiden.
 
    ![Bild of_Microsoft Defender för identitetssida där du ska klicka på nästa för att följa guiden Microsoft Defender för identitets sensor](../../media/mtp-eval-47.png)
- 
+
 7. Klicka **på** Nästa vid sensordistributionstypen.
 
    ![Bild of_Microsoft Defender för identitetssida där du ska klicka på Nästa för att gå till nästa sida](../../media/mtp-eval-48.png)
- 
+
 8. Kopiera snabbtangenten eftersom du måste ange den nästa i guiden.
 
    ![Bild of_the sensorsidan där du bör kopiera snabbtangenten som du behöver ange på nästa sida i Microsoft Defender för installationsguiden för identitetssensorer](../../media/mtp-eval-49.png)
- 
-9. Kopiera in snabbtangenten i guiden och klicka på **Installera**. 
+
+9. Kopiera in snabbtangenten i guiden och klicka på **Installera**.
 
    ![Bild of_Microsoft sidan för guiden Defender för identitets sensor, där du bör ange snabbtangenten och klicka sedan på installationsknappen](../../media/mtp-eval-50.png)
 
 10. Grattis! Du har konfigurerat Microsoft Defender för identitet på domänkontrollanten.
 
     ![Bild of_Microsoft defender för komplettering av identitets sensorguiden, där du ska klicka på knappen Slutför](../../media/mtp-eval-51.png)
- 
-11. Under avsnittet [Microsoft Defender för identitetsinställningar](https://go.microsoft.com/fwlink/?linkid=2040449) väljer du **Microsoft Defender för slutpunkt **. Aktivera sedan växlingsknappen. Klicka på **Spara**. 
+
+11. Under avsnittet [Microsoft Defender för identitetsinställningar](https://go.microsoft.com/fwlink/?linkid=2040449) väljer du **Microsoft Defender för slutpunkt **. Aktivera sedan växlingsknappen. Klicka på **Spara**.
 
     ![Bild of_the microsoft Defender för identitetsinställningar, där du ska aktivera växlingsknappen Microsoft Defender för slutpunkt](../../media/mtp-eval-52.png)
-
 
 ## <a name="configure-microsoft-cloud-app-security"></a>Konfigurera Microsoft Cloud App Security
 
 > [!NOTE]
-> Hoppa över det här steget om du redan har aktiverat Microsoft Cloud App Security. 
+> Hoppa över det här steget om du redan har aktiverat Microsoft Cloud App Security.
 
 1. Gå till [Microsoft 365 Säkerhetscenter](https://security.microsoft.com/info)  >  **Fler resurser**  >  **Microsoft Cloud App Security**.
 
    ![Bild of_Microsoft 365 Säkerhetscenter där du kan se kortet Microsoft Cloud App och ska klicka på öppna-knappen](../../media/mtp-eval-53.png)
 
 2. När du uppmanas att integrera Microsoft Defender för identitet markerar du **Aktivera Microsoft Defender för identitetsdataintegrering.**
-  
+
    ![Bild of_the informationsfråga om att integrera Microsoft Defender för identitet, där du bör välja länken Aktivera Microsoft Defender för identitetsdataintegrering](../../media/mtp-eval-54.png)
 
    > [!NOTE]
-   > Om du inte ser det här alternativet kan det innebära att microsoft Defender för identitetsdataintegrering redan har aktiverats. Om du är osäker kan du kontakta IT-administratören för att bekräfta. 
+   > Om du inte ser det här alternativet kan det innebära att microsoft Defender för identitetsdataintegrering redan har aktiverats. Om du är osäker kan du kontakta IT-administratören för att bekräfta.
 
-3. Gå till **Inställningar**, aktivera **växlingsknappen Microsoft Defender för identitetsintegrering** och klicka sedan på **Spara**. 
+3. Gå till **Inställningar**, aktivera **växlingsknappen Microsoft Defender för identitetsintegrering** och klicka sedan på **Spara**.
 
    ![Bild of_the inställningar där du ska aktivera växlingsknappen För identitetsintegrering i Microsoft Defender och sedan klicka på Spara](../../media/mtp-eval-55.png)
-   
+
    > [!NOTE]
    > För nya microsoft Defender för identitetsinstanser är växlingsknappen för den här integreringen aktiverad automatiskt. Bekräfta att Microsoft Defender för identitetsintegrering har aktiverats innan du går vidare till nästa steg.
- 
+
 4. Under inställningarna för molnidentifiering väljer du **Microsoft Defender för Slutpunktsintegrering** och aktiverar sedan integreringen. Klicka på **Spara**.
 
    ![Bild of_the på sidan Microsoft Defender för slutpunkt där kryssrutan blockera osanerade appar under Microsoft Defender för slutpunktsintegrering är markerad. Klicka på Spara.](../../media/mtp-eval-56.png)
@@ -195,28 +193,27 @@ Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection 
 
    ![Bild av avsnittet Användarberikning där kryssrutan identifierad användaridentifierare Azure Active Directory användaranvändar är markerad](../../media/mtp-eval-57.png)
 
-
 ## <a name="configure-microsoft-defender-for-endpoint"></a>Konfigurera Microsoft Defender för slutpunkt
 
->[!NOTE]
->Hoppa över det här steget om du redan har aktiverat Microsoft Defender för Slutpunkt.
+> [!NOTE]
+> Hoppa över det här steget om du redan har aktiverat Microsoft Defender för Slutpunkt.
 
 1. Gå till [Microsoft 365 Säkerhetscenter](https://security.microsoft.com/info)  >  **Fler resurser**  >  **Microsoft Defender Säkerhetscenter**. Klicka **på Öppna**.
 
    ![Bild of_Microsoft av alternativet Defender Säkerhetscenter Microsoft 365 sidan Säkerhetscenter](../../media/mtp-eval-58.png)
- 
-2. Följ guiden Microsoft Defender för slutpunkt. Klicka på **Nästa**. 
+
+2. Följ guiden Microsoft Defender för slutpunkt. Klicka **Nästa**.
 
    ![Sida i of_the Microsoft Defender Säkerhetscenter för bild av välkomstguiden](../../media/mtp-eval-59.png)
 
 3. Välj baserat på önskad datalagringsplats, databevarandeprincip, organisationsstorlek och möjlighet att registrera dig för förhandsgranskningsfunktioner.
 
    ![Bild of_the väljer du land för datalagring, bevarandeprincip och organisationsstorlek. Klicka på Nästa när du är klar med att välja.](../../media/mtp-eval-60.png)
-   
-   > [!NOTE]
-   > Du kan inte ändra vissa inställningar, till exempel datalagringsplats efteråt. 
 
-   Klicka på **Nästa**. 
+   > [!NOTE]
+   > Du kan inte ändra vissa inställningar, till exempel datalagringsplats efteråt.
+
+   Klicka **Nästa**.
 
 4. Klicka **på Fortsätt** så etableras microsoft Defender för slutpunktsklientorganisationen.
 
@@ -228,7 +225,7 @@ Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection 
 
    ![Bild of_page du uppmanas att klicka på knappen Ladda ned paket för att kopiera onboarding-skriptet till slutpunkten eller slutpunkterna](../../media/mtp-eval-62.png)
 
-7. Kör onboarding-skriptet som administratör på slutpunkten och välj Y. 
+7. Kör onboarding-skriptet som administratör på slutpunkten och välj Y.
 
    ![Bild of_the här du kör onboarding-skriptet och väljer Y för att fortsätta](../../media/mtp-eval-63.png)
 
@@ -240,19 +237,19 @@ Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection 
 
    ![Bild of_the köra ett teststeg för identifiering där du ska klicka på Kopiera för att kopiera det identifieringstestskript som du ska klistra in i kommandotolken](../../media/mtp-eval-65.png)
 
-10. Kopiera PowerShell-skriptet till en upphöjd kommandotolk och kör den. 
+10. Kopiera PowerShell-skriptet till en upphöjd kommandotolk och kör den.
 
     ![Bild of_command fråga var du ska kopiera PowerShell-skriptet till en upphöjd kommandotolk och köra den](../../media/mtp-eval-66.png)
 
 11. Välj **Börja använda Microsoft Defender för slutpunkt** i guiden.
 
     ![Bild of_the i guiden där du ska klicka på Börja använda Microsoft Defender för slutpunkt](../../media/mtp-eval-67.png)
- 
-12. Besök [Microsoft Defender Säkerhetscenter](https://securitycenter.windows.com/). Gå till **Inställningar** och välj sedan **Avancerade funktioner**. 
+
+12. Besök [Microsoft Defender Säkerhetscenter](https://securitycenter.windows.com/). Gå till **Inställningar** och välj sedan **Avancerade funktioner**.
 
     ![Bild of_Microsoft i Defender Säkerhetscenter Inställningar meny där du bör välja Avancerade funktioner](../../media/mtp-eval-68.png)
 
-13. Aktivera integrering med **Microsoft Defender för identitet.**  
+13. Aktivera integrering med **Microsoft Defender för identitet.**
 
     ![Bild of_Microsoft av avancerade funktioner i Defender Säkerhetscenter, alternativet Microsoft Defender för identitet, omkopplare som du behöver aktivera](../../media/mtp-eval-69.png)
 
@@ -270,17 +267,16 @@ Det finns en PowerShell-modul som kallas *Office 365 Advanced Threat Protection 
 
 ## <a name="start-the-microsoft-365-defender-service"></a>Starta tjänsten Microsoft 365 Defender
 
->[!NOTE]
->Från och med den 1 juni 2020 aktiverar Microsoft automatiskt Microsoft 365 Defender-funktioner för alla berättigade klienter. Mer information finns [i den här Microsoft Tech Community-artikeln om licensberättigande.](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) 
+> [!NOTE]
+> Från och med den 1 juni 2020 aktiverar Microsoft automatiskt Microsoft 365 Defender för alla berättigade klientorganisationar. Mer information finns [i den här Microsoft Tech Community-artikeln om licensberättigande.](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426)
 
+Gå till [Microsoft 365 Säkerhetscenter](https://security.microsoft.com/homepage). Gå till **Inställningar** och välj **sedan Microsoft 365 Defender**.
 
-Gå till [Microsoft 365 Säkerhetscenter](https://security.microsoft.com/homepage). Gå till **Inställningar** och välj Microsoft 365 **Defender**.
+![Skärmbild of_Microsoft 365 Defender-alternativ Microsoft 365 på sidan Inställningar Säkerhetscenter](../../media/mtp-eval-72b.png)
 
-![Skärmbild of_Microsoft 365 Defender-alternativ Microsoft 365 på sidan Inställningar Säkerhetscenter ](../../media/mtp-eval-72b.png) <br>
+Mer omfattande vägledning finns i [Aktivera Microsoft 365 Defender.](m365d-enable.md)
 
-Mer omfattande vägledning finns i Aktivera [Microsoft 365 Defender.](m365d-enable.md) 
-
-Grattis! Du har just skapat din testlabb- Microsoft 365 Defender-testlabb eller pilotmiljö! Nu kan du bekanta dig med Microsoft 365 Defender-användargränssnittet! Se vad du kan lära dig av följande interaktiva guide Microsoft 365 Defender och vet hur du använder varje instrumentpanel för dina dagliga säkerhetsåtgärdsuppgifter.
+Grattis! Du har just skapat din Microsoft 365 Defender testlabb eller pilotmiljö! Nu kan du bekanta dig Microsoft 365 Defender användargränssnittet! Se vad du kan lära dig av följande Microsoft 365 Defender interaktiva guide och vet hur du använder varje instrumentpanel för dina dagliga säkerhetsåtgärdsuppgifter.
 
 [Ta del av den interaktiva guiden](https://aka.ms/MTP-Interactive-Guide)
 
@@ -288,4 +284,4 @@ Sedan kan du simulera en attack och se hur funktionerna i olika produkter identi
 
 ## <a name="next-step"></a>Nästa steg
 
-- [Generera en testavisering](generate-test-alert.md) – Kör en attack simulering i Microsoft 365 Defender testlabb.
+- [Generera en testavisering](generate-test-alert.md) – Kör en attack simulering i Microsoft 365 Defender provlabb.

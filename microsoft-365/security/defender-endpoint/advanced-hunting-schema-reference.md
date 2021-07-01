@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: fa111197dfd68cfcca40ce8a39befe20b97d1be8
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: fcc7d96f51121824550128e89186074e1ebc3ce0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939642"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228885"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Förstå det avancerade schemat för sökning i Microsoft Defender för Endpoint
 
@@ -77,7 +77,7 @@ Tabell- och kolumnnamn visas också i Microsoft Defender Säkerhetscenter, i sch
 
 >[!TIP]
 >Använd [avancerad sökning i Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) för att leta efter hot med hjälp av data från Defender för Slutpunkt, Microsoft Defender för Office 365, Microsoft Cloud App Security och Microsoft Defender för identitet. [Aktivera Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)<br><br>
-Läs mer om hur du flyttar dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender i Migrera avancerade sökfrågor från [Microsoft Defender för slutpunkt.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
+Läs mer om hur du flyttar dina avancerade arbetsflöden för sökning från Microsoft Defender för Slutpunkt till Microsoft 365 Defender i Migrera avancerade sökfrågor [från Microsoft Defender för Slutpunkt.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="related-topics"></a>Relaterade ämnen
 - [Översikt över avancerad jakt](advanced-hunting-overview.md)

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security kan hjälpa dig att skydda och hantera mobila enheter.
-ms.openlocfilehash: 41df5bfba7362d9c2b3a47deca4e4586902bbd98
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: a5f20b2999a1a54070433560904e9535a4d1524a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706184"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228285"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Funktioner i grundläggande Mobility and Security
 
@@ -47,12 +47,12 @@ Du kan använda Basic Mobility and Security för att skydda och hantera följand
 
 <sup>1</sup> Åtkomstkontrollen för Windows 8.1 RT-enheter är begränsad till Exchange ActiveSync.
 
-<sup>2</sup> Åtkomstkontroll för Windows 10 kräver en prenumeration som innehåller Azure AD Premium och enheten måste vara ansluten till Azure Active Directory.
+<sup>2</sup> Åtkomstkontroll för Windows 10 kräver en prenumeration som Azure AD Premium och enheten måste vara ansluten till Azure Active Directory.
 
 <sup>3</sup> Efter juni 2020 kan Android-versioner senare än 9 inte hantera lösenordsinställningar utom på Samsung Knox-enheter.
 
->[!NOTE]
->Enheter som redan har registrerats med tidigare os-versioner fortsätter att fungera, men funktionerna kan ändras utan föregående meddelande.
+> [!NOTE]
+> Enheter som redan har registrerats med tidigare os-versioner fortsätter att fungera, men funktionerna kan ändras utan föregående meddelande.
 
 Om personer i din organisation använder mobila enheter som inte stöds av Grundläggande rörlighet och säkerhet kanske du vill blockera Exchange ActiveSync-appåtkomst till Microsoft 365-e-post för dessa enheter, för att göra organisationens data säkrare. Information om hur du blockerar Exchange ActiveSync finns i [Hantera inställningar för enhetsåtkomst i Grundläggande rörlighet och säkerhet.](manage-device-access-settings.md)
 
@@ -65,10 +65,11 @@ Apparna som stöds för de olika typerna av mobila enheter i följande tabell up
 |**Exchange** Exchange ActiveSync innehåller inbyggda e-post- och tredjepartsprogram, till exempel TouchDown, som använder Exchange ActiveSync version 14.1 eller senare. |E-post |E-post |
 |**Office**   och  **OneDrive för företag** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**På telefoner och surfplattor:**<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Endast på telefoner:** <br/> Office Mobil |
 
->[!NOTE]
-- >Stöd för iOS 10.0 och senare versioner omfattar även iPhone och iPad enheter.
-- >Hantering av BlackBerry OS-enheter stöds inte av Basic Security och Mobility. Använd BlackBerry Business Cloud Services (BBCS) från BlackBerry för att hantera BlackBerry OS-enheter. Blackberry-enheter med Android OS stöds som vanliga Android-enheter
-- >Användarna uppmanas inte att registrera sig och de kommer inte att blockeras eller rapporteras för principbrott om de använder mobilwebbläsaren för att komma åt Microsoft 365 SharePoint-webbplatser, dokument i Office Online eller e-post i Outlook Web App.
+> [!NOTE]
+>
+> - Stöd för iOS 10.0 och senare versioner omfattar även iPhone och iPad enheter.
+> - Hantering av BlackBerry OS-enheter stöds inte av Basic Security och Mobility. Använd BlackBerry Business Cloud Services (BBCS) från BlackBerry för att hantera BlackBerry OS-enheter. Blackberry-enheter med Android OS stöds som vanliga Android-enheter
+> - Användarna uppmanas inte att registrera sig och de kommer inte att blockeras eller rapporteras för principbrott om de använder mobilwebbläsaren för att komma åt Microsoft 365 SharePoint-webbplatser, dokument i Office Online eller e-post i Outlook Web App.
 
 Följande diagram visar vad som händer när en användare med en ny enhet loggar in i en app som stöder åtkomstkontroll med Basic Mobility och Security. Användaren blockeras från att komma åt Microsoft 365 i programmet tills de registrerar sin enhet.
 
@@ -79,7 +80,7 @@ Följande diagram visar vad som händer när en användare med en ny enhet logga
 
 ## <a name="policy-settings-for-mobile-devices"></a>Principinställningar för mobila enheter
 
-Om du skapar en princip för att blockera åtkomst med vissa inställningar påslagna blockeras användarna från att komma åt Microsoft 365-resurser när de använder ett program som stöds och som finns i Access-kontrollen för e-post och dokument i [Microsoft 365.](capabilities.md) 
+Om du skapar en princip för att blockera åtkomst med vissa inställningar påslagna blockeras användarna från att komma åt Microsoft 365-resurser när de använder ett program som stöds och som finns i Access-kontrollen för e-post och dokument i [Microsoft 365.](capabilities.md)
 
 De inställningar som kan blockera användare från att komma åt Microsoft 365 finns i följande avsnitt:
 
@@ -89,7 +90,7 @@ De inställningar som kan blockera användare från att komma åt Microsoft 365 
 
 - Jail broken
 
-- Hanterad e-postprofil  
+- Hanterad e-postprofil
 
 Följande diagram visar till exempel vad som händer när en användare med en registrerad enhet inte följer en säkerhetsinställning i en princip för hantering av mobila enheter som gäller för deras enhet. Användaren loggar in på en app som har stöd för åtkomstkontroll med Basic Mobility and Security. De blockeras från att komma Microsoft 365-resurser i programmet tills enheten uppfyller säkerhetsinställningen.
 
@@ -116,15 +117,15 @@ I följande avsnitt finns en lista över de principinställningar du kan använd
 |:-----|:-----|:-----|:-----|
 |Kräva datakryptering på enheter<sup>1</sup> |Nej|Ja|Ja|
 
-<sup>1</sup> Med Samsung Knox kan du också kräva kryptering på minneskort. 
+<sup>1</sup> Med Samsung Knox kan du också kräva kryptering på minneskort.
 
-## <a name="jail-broken-setting"></a>Inskannad inställning av jail broken 
+## <a name="jail-broken-setting"></a>Inskannad inställning av jail broken
 
 |**Ställa in namn**|**iOS 7.1 och senare**|**Android 5 och senare**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Enheten kan inte bli jail broken or rooted |Ja|Ja|Ja|
 
-## <a name="managed-email-profile-option"></a>Alternativ för hanterad e-postprofil 
+## <a name="managed-email-profile-option"></a>Alternativ för hanterad e-postprofil
 
 Följande alternativ kan blockera användare från att komma åt sin e Microsoft 365-post om de använder en manuellt skapad e-postprofil. Användare på iOS-enheter måste ta bort sin manuellt skapade e-postprofil innan de kan komma åt sin e-post. När profilen tas bort skapas automatiskt en ny profil på enheten. Anvisningar om hur slutanvändare följer finns i Ett [befintligt e-postkonto hittades.](/intune-user-help/existing-company-email-account-found)
 
@@ -205,8 +206,8 @@ Följande inställningar stöds för Windows 10 enheter som är registrerade som
 
 - Kom ihåg lösenordshistorik och förhindra återanvändning
 
->[!NOTE]
->Följande inställningar som kontrollerar lösenord styr bara lokala Windows konton. Windows konton som tillhandahålls genom att ansluta till en domän eller Azure Active Directory påverkas inte av de här inställningarna.
+> [!NOTE]
+> Följande inställningar som kontrollerar lösenord styr bara lokala Windows konton. Windows konton som tillhandahålls genom att ansluta till en domän eller Azure Active Directory påverkas inte av de här inställningarna.
 
 ### <a name="system-settings"></a>Systeminställningar
 
