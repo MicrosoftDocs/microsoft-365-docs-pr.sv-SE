@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: ed6dc9956c3e78f8ed39dca9cd6bf0421dd28456
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177639"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276995"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Använd minskningsregler för attackytan för att förhindra skadlig smitta
 
@@ -183,7 +183,6 @@ Om du konfigurerar regler för att minska attackytan med grupprinciper eller Pow
 |[Blockera icke betrodda och osignerade processer som körs från USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
 |[Blockera Win32 API-anrop från Office makron](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
 |[Använd avancerat skydd mot utpressningstrojaner](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Stöds|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, version 16299) eller senare|
-|
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Blockera missbruk av utnyttjas sårbara signerade drivrutiner
 
@@ -199,7 +198,7 @@ Blockerings **missbruk av utnyttjas sårbara signerade** drivrutiner regeln bloc
 >
 > Om du vill att en drivrutin ska vara en av de första kan du använda den här webbplatsen [för att Skicka in en drivrutin för analys.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
-Den här regeln stöds i alla versioner där ASR stöds. vilket är:
+Operativsystem som stöds:
 
 - [Windows 10 Pro, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
 - [Windows 10 Enterprise, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) eller senare
@@ -216,7 +215,7 @@ Den här regeln förhindrar attacker genom att blockera Adobe Reader från att s
 
 Genom social teknik eller sårbarheter kan skadlig programvara ladda ned och starta nyttolaster och bryta ut från Adobe Reader. Genom att blockera underordnade processer från att genereras av Adobe Reader förhindras skadlig programvara som försöker använda den som en vektor från att spridas.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10 version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -234,7 +233,7 @@ Den här regeln blockerar Office appar från att skapa underordnade processer. O
 
 Att skapa skadliga underordnade processer är en vanlig strategi för skadlig programvara. Skadlig programvara som Office som en vektor ofta kör VBA-makron och utnyttjar kod för att ladda ned och försöka köra fler nyttolaster. Men vissa legitima affärsprogram kan också generera underordnade processer för ändamål med särskilda syften. som att ta bort en kommandotolk eller använda PowerShell för att konfigurera registerinställningar.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -256,7 +255,7 @@ LSASS autentiserar användare som loggar in på en Windows dator. Microsoft Defe
 > [!NOTE]
 > I vissa appar uppräkningar koden alla körprocesser och försöker öppna dem med uttömmande behörighet. Den här regeln nekar programåtgärden öppna och loggar information i säkerhetshändelseloggen. Den här regeln kan generera mycket brus. Om du har en app som bara räknar upp LSASS, men som inte har någon verklig påverkan på funktioner, behöver du INTE lägga till den i undantagslistan. Det är inte säkert att den här händelseloggposten indikerar något skadligt hot.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -276,7 +275,7 @@ Den här regeln blockerar följande filtyper från att startas från e-post som 
 - Körbara filer (till exempel .exe, .dll eller .scr)
 - Skriptfiler (till exempel en PowerShell.ps-, Visual Basic VBS- eller JavaScript-.js fil)
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -313,7 +312,7 @@ Det kan vara riskabelt att starta opålitliga eller okända körbara filer, efte
 >
 > Du kan ange enskilda filer eller mappar (med hjälp av mappsökvägar eller fullständigt kvalificerade resursnamn) men du kan inte ange vilka regler eller undantag som gäller för.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -332,7 +331,7 @@ Den här regeln identifierar misstänkta egenskaper i ett intjänat skript.
 
 Script obfuscation är en vanlig teknik som både författare av skadlig programvara och legitima program använder för att dölja immateriell egendom eller minska inläsningstider för skript. Författare som använder skadlig programvara använder också information för att göra skadlig kod svårare att läsa, vilket förhindrar en närmare granskning av människor och säkerhetsprogramvara.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -351,7 +350,7 @@ Den här regeln förhindrar skript från att starta potentiellt skadligt hämtat
 
 Även om det inte är vanligt använder verksamhetsbaserade program ibland skript för att ladda ned och starta installationsprogram.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -370,7 +369,7 @@ Den här regeln förhindrar Office-program, till exempel Word, Excel och PowerPo
 
 Skadlig programvara som Office som en vektor kan försöka bryta ut från Office och spara skadliga komponenter på disken. De här skadliga komponenterna skulle överleva en dator omstart och skulle finnas kvar på systemet. Därför försvaras den här regeln mot en vanlig beständig teknik.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -393,7 +392,7 @@ Det finns inga kända legitima affärssyften för att använda kodinjicering.
 
 Den här regeln gäller för Word, Excel och PowerPoint.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -415,7 +414,7 @@ Den här regeln skyddar mot social engineering-angrepp och förhindrar att kod u
 > [!NOTE]
 > Den här regeln blockerar DLP-principtips och verktygstips i Outlook. Denna regel gäller endast Outlook och Outlook.com.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10 version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -436,7 +435,7 @@ Den här regeln förhindrar skadlig programvara från att använda WMI så att d
 
 Fillösa hot använder olika taktiker för att hålla sig dold, för att undvika att synas i filsystemet och för att få periodisk körningskontroll. Vissa hot kan missbruket av WMI-lagringsplatsen och händelsemodellen för att förbli dold.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1903](/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
@@ -454,7 +453,7 @@ Den här regeln blockerar processer som skapats [via PsExec](/sysinternals/downl
 > [!WARNING]
 > Använd bara den här regeln om du hanterar dina enheter med [Intune eller en](/intune) annan MDM-lösning. Den här regeln är inkompatibel med [hantering via Microsoft Endpoint Configuration Manager](/configmgr) eftersom den här regeln blockerar WMI-kommandon som Configuration Manager-klienten använder för att fungera korrekt.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -470,7 +469,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 Med den här regeln kan administratörer förhindra att osignerade eller icke betrodda körbara filer körs från flyttbara USB-enheter, inklusive SD-kort. Blockerade filtyper är körbara filer (till exempel .exe, .dll eller .scr)
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -489,7 +488,7 @@ Den här regeln förhindrar VBA-makron från att anropa Win32-API:er.
 
 Office VBA aktiverar Win32 API-anrop. Skadlig programvara kan missbruka den här funktionen, till exempel att [anropa Win32-API:er](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) för att starta skadlig kod utan att skriva något direkt på disken. De flesta organisationer förlitar sig inte på möjligheten att anropa Win32-API:er i sina dagliga funktioner, även om de använder makron på andra sätt.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -515,7 +514,7 @@ Regeln tar brukar vara försiktig för att förhindra utpressningstrojaner.
 > [!NOTE]
 > Du måste [aktivera moln levererat skydd om du](enable-cloud-protection-microsoft-defender-antivirus.md) vill använda den här regeln.
 
-Den här regeln infördes i:
+Operativsystem som stöds:
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)

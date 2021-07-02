@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Läs mer om Advanced eDiscovery lösning i Microsoft 365. Den här artikeln innehåller en översikt över Advanced eDiscovery i Microsoft 365, ett verktyg som hjälper dig att hantera interna och externa undersökningar. Dessutom ramar det till affärsorsaker till att Advanced eDiscovery att hantera juridiska undersökningar.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16f597fdbbbad89116af73fdd0a607f3f03116ad
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4fe94aed10a7b9e981e2a9d46e992d5557e35dcb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840844"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256465"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Översikt över Microsoft 365 Advanced eDiscovery
 
@@ -95,7 +95,7 @@ Så här fungerar ett EDRM-Advanced eDiscovery på en hög nivå:
 
 För licensiering Advanced eDiscovery krävs rätt organisationsprenumeration och licensiering per användare.
 
-- **Organisationsprenumeration:** För att Advanced eDiscovery i Microsoft 365 efterlevnadscenter måste din organisation ha något av följande:
+- **Organisationsprenumeration:** Om du Advanced eDiscovery åtkomst Microsoft 365 Efterlevnadscenter i organisationen måste den ha något av följande:
 
   - Microsoft 365 E5 eller Office 365 E5-prenumeration
   
@@ -111,7 +111,7 @@ För licensiering Advanced eDiscovery krävs rätt organisationsprenumeration oc
 
   - Microsoft 365: Användarna måste ha tilldelats en Microsoft 365 E5-licens, en tilläggslicens för E5-efterlevnad eller en tilläggslicens för E5 eDiscovery och Audit. Microsoft 365 Education måste ha en A5-licens.
 
-  - Office 365: Användarna måste tilldelas en E5 Office 365 eller en A5 Office 365 Education licens.
+  - Office 365: Användarna måste tilldelas en licens Office 365 E5 eller Office 365 Education A5.
 
    Mer information om hur du tilldelar licenser finns [i Tilldela licenser till användare.](/microsoft-365/admin/manage/assign-licenses-to-users)
 
@@ -141,3 +141,7 @@ Här är ett Advanced eDiscovery-arkitekturdiagram som visar hela arbetsflödet 
 [Ladda ned som PDF-fil](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
 [Ladda ned som Visio fil](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+
+## <a name="training"></a>Utbildning
+
+Utbildning av IT-administratörer, eDiscovery-hanterare och undersökningsgrupper för efterlevnad i grunderna för Advanced eDiscovery kan hjälpa din organisation att komma igång snabbare med hjälp Microsoft 365 eDiscovery-verktyg. Microsoft 365 följande resurs som hjälper användarna i organisationen att komma igång med eDiscovery: [Beskriv eDiscovery- och granskningsfunktionerna i eDiscovery Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

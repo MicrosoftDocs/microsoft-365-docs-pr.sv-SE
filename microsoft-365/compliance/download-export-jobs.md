@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Exportera dokument i en granskning som är inställd på Azure Storage konto och använd sedan Azure Storage Explorer att ladda ned dem till en lokal dator.
-ms.openlocfilehash: dfb3892f31e857d4744f6da337c924efaa87ab11
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b7638e33a40a2ac46f4bb69b869e4c2cf6d48f65
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "52162637"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256513"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exportera dokument i en granskning som är inställd på ett Azure Storage konto
 
-När du exporterar dokument från en granskning i ett Advanced eDiscovery fall kan du exportera dem till ett Azure Storage konto som hanteras av din organisation. Om du använde det här alternativet laddas dokumenten upp till din Azure Storage plats. När de har exporterats kan du komma åt dokumenten (och ladda ned dem till en lokal dator eller annan plats) med hjälp av Azure Storage Explorer. Den här artikeln innehåller instruktioner för hur du exporterar dokument till ditt Azure Storage-konto och hur du använder Azure Storage Explorer för att ansluta till en Azure Storage-plats för att ladda ned exporterade dokument. Mer information om Azure Storage Explorer finns i [Använda Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+När du exporterar dokument från en granskning i ett Advanced eDiscovery fall kan du exportera dem till ett Azure Storage konto som hanteras av din organisation. Om du använder det här alternativet laddas dokumenten upp till din Azure Storage plats. När de har exporterats kan du komma åt dokumenten (och ladda ned dem till en lokal dator eller annan plats) med hjälp av Azure Storage Explorer. Den här artikeln innehåller instruktioner för hur du exporterar dokument till ditt Azure Storage-konto och hur du använder Azure Storage Explorer för att ansluta till en Azure Storage-plats för att ladda ned exporterade dokument. Mer information om Azure Storage Explorer finns i [Använda Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="before-you-export-documents-from-a-review-set"></a>Innan du exporterar dokument från en granskningsuppsättning
 
@@ -41,7 +41,7 @@ När du exporterar dokument från en granskning i ett Advanced eDiscovery fall k
 
 Det första steget är att skapa ett exportjobb för att exportera dokument från en granskningsuppsättning. Mer detaljerade anvisningar om alla exportalternativ finns i [Exportera dokument från en granskningsuppsättning](export-documents-from-review-set.md). I följande procedur markeras inställningarna för att exportera dokument till organisationens Azure Storage konto.
 
-1. I Microsoft 365 kompatibilitetscenter öppnar du Advanced eDiscovery, väljer fliken Granska **uppsättningar** och väljer sedan den granskningsuppsättning som du vill exportera.
+1. I Microsoft 365 Efterlevnadscenter fliken öppnar Advanced eDiscovery, väljer fliken Granska **uppsättningar** och väljer sedan den granskningsuppsättning som du vill exportera.
 
 2. Klicka på Åtgärdsexport i   >  **granskningsuppsättningen.**
 

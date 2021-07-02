@@ -1,7 +1,7 @@
 ---
 title: Enhetsbilder
 description: Bildkrav när du beställer nya enheter eller återanvänder befintliga enheter
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841288"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276935"
 ---
 # <a name="device-images"></a>Enhetsbilder
 
@@ -25,7 +25,7 @@ ms.locfileid: "52841288"
 Oavsett om du [beställer nya](#new-devices) enheter [eller](#existing-devices) återanvänder befintliga har du flera alternativ för att säkerställa att bilden på enheten uppfyller våra [enhetskrav.](device-requirements.md#check-hardware-requirements)
 
 ## <a name="new-devices"></a>Nya enheter.
-När du beställer en [](device-requirements.md#minimum-requirements)ny enhet från en godkänd tillverkare följer du de här anvisningarna för att se till att de levereras med rätt Microsoft Hanterat skrivbord bild- och programvarukonfiguration.
+När du beställer en [](device-requirements.md#minimum-requirements)ny enhet från en godkänd tillverkare följer du de här anvisningarna för att se till att de levereras med rätt Microsoft Hanterat skrivbord bild- och programvarukonfiguration. När du planerar att registrera en viss enhetsmodell i tjänsten för första gången bör du testa ett exempel för att säkerställa att den ger den användarupplevelse du förväntar dig. Mer information finns i [Validera nya enheter](/microsoft-365/managed-desktop/get-started/validate-device).
 
 ### <a name="dell"></a>Dell
 Arbeta direkt med Dell-säljrepresentanten, som ser till att den bild som godkänts av Microsoft Hanterat skrivbord tillämpas på enheter för din beställning. Om du har fler frågor om Dell-enheter, bilden och beställningsprocessen kontaktar du MMD_at_dell@dell.com.
@@ -99,10 +99,10 @@ De här bilderna använder Windows Recovery Environment (WinRE) och det här är
 
 
 ### <a name="universal-image"></a>Universell bild
-Microsoft Hanterat skrivbord har skapat en bild som Windows 10 Pro och Microsoft 365 för företag som du kan använda med Microsoft Hanterat skrivbord. Det är dock bäst att använda bilder lämpliga för Microsoft Hanterat skrivbord som tillhandahålls av tillverkaren när det är möjligt, även om det innebär en äldre Windows-version som sedan måste uppdateras när användaren loggar in. Att använda Microsoft Hanterat skrivbord Universell bild bör vara ett slutligt alternativ.
+Microsoft Hanterat skrivbord har skapat en bild som innehåller Windows 10 Pro och Microsoft 365-applikationer för företag som du kan använda med Microsoft Hanterat skrivbord. Det är dock bäst att använda bilder lämpliga för Microsoft Hanterat skrivbord som tillhandahålls av tillverkaren när det är möjligt, även om det innebär en äldre Windows-version som sedan måste uppdateras när användaren loggar in. Att använda Microsoft Hanterat skrivbord Universell bild bör vara ett slutligt alternativ.
 
-- Vi uppdaterar bilden med de senaste Windows månatliga kvalitetsuppdateringarna var 30–60:e dag och Microsoft 365 Apps for Enterprise-uppdateringar minst två gånger per år.
-- Bilden innehåller ett paket för återställningsetablering för att säkerställa Microsoft 365 program för företag återställs efter Windows och återställningsscenarier.
+- Vi uppdaterar bilden med de senaste Windows månatliga kvalitetsuppdateringarna var 30–60:e dag och Microsoft 365-applikationer för Enterprise-uppdateringar minst två gånger per år.
+- Bilden innehåller ett paket för återställningsetablering för att säkerställa att Microsoft 365-applikationer för företag återställs efter Windows återställningsscenarier.
 - Du kan distribuera bilden med USB-enheter. Den innehåller en skriptbar process för att infoga drivrutiner (anges i dokumentationen som ingår i bilden).
 - Du kan ändra skripten och mapparna som ingår och användas med andra anpassningar, till exempel lägga till specifika kumulativa uppdateringar, kopiera filen eller utföra andra kontroller.
 - Drivrutiner och kvalitetsuppdateringar läggs till i Windows under distributionen från USB-enheten.

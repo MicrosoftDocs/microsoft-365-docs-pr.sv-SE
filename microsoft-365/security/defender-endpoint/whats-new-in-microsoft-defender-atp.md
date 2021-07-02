@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c200d4ac81f12e46b085261c5ece279839255f4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 7bb231049815da12ef6e5e48c88d79f5263f8708
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228393"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53277019"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Senaste nytt i Microsoft Defender för Endpoint
 
@@ -48,15 +48,21 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 
 ## <a name="june-2021"></a>Juni 2021
 
+- [Delta i utvärdering av säkerhetsproblem vid export av programvara](get-assessment-methods-properties.md#31-methods) API <br> Ett tillägg till [Export-utvärderingar av svagheter och säker konfiguration API-samling.](get-assessment-methods-properties.md) <br> Till skillnad från säkerhetsproblem i programvaran (JSON-svar) – som används för att erhålla en hel ögonblicksbild av säkerhetsproblem i programvarans bedömning av organisationen efter enhet – används API-anropet för deltaexport för att bara hämta ändringar som har inträffat mellan ett valt datum och dagens datum (delta-API-anropet). I stället för att få en fullständig export med en stor mängd data varje gång får du bara specifik information om nya, korrigerade och uppdaterade svagheter. Deltaexport-API-anrop kan också användas för att beräkna olika KPI:er, till exempel "hur många säkerhetsproblem har åtgärdats" eller "hur många nya säkerhetsproblem som har lagts till i en organisation".
+
+- [Exportera bedömningar av säkerhetsproblem och säkra konfigurationer](get-assessment-methods-properties.md) API <br> Lägger till en samling API:er som hämtar Hantering av hot och säkerhetsrisker data per enhet. Det finns olika API-anrop för att få olika typer av data: bedömning av säker konfiguration, utvärdering av programvaruinventering och svagheter i programvara. Varje API-anrop innehåller nödvändiga data för enheter i organisationen.
+
+- [Åtgärdsaktivitet](get-remediation-methods-properties.md) API <br>  Lägger till en samling MED API:er med svar Hantering av hot och säkerhetsrisker åtgärder som har skapats i klientorganisationen. Svarsinformationstyper omfattar en åtgärdsaktivitet efter ID, alla åtgärdsaktiviteter och exponerade enheter för en åtgärdsaktivitet.
+
 - [Enhetsidentifiering](device-discovery.md) <br> Hjälper dig att hitta ohanterade enheter anslutna till företagsnätverket utan att behöva extra utrustning eller krångliga processändringar. Med onboarded-enheter kan du hitta ohanterade enheter i nätverket och bedöma svagheter och risker. Du kan sedan hantera identifierade enheter för att minska riskerna med ohanterade slutpunkter i nätverket.
 
    > [!IMPORTANT]
    > Standardidentifiering kommer att vara standardläge för alla kunder från och med den 19 juli 2021. Du kan välja att behålla grundläget via inställningssidan.
 
-
 - [Enhetsgruppsdefinitioner](/microsoft-365/security/defender-endpoint/machine-groups) kan nu innehålla flera värden för varje villkor. Du kan ange definitionen för en enda enhetsgrupp för flera taggar, enhetsnamn och domäner.
 
 ## <a name="march-2021"></a>Mars 2021
+
 - [Hantera skydd mot manipulering med hjälp av Microsoft Defender Säkerhetscenter](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Du kan hantera inställningar för manipuleringsskydd i Windows 10, Windows Server 2016 och Windows Server 2019 med hjälp av en metod som kallas *klient bifoga.*
 
 ## <a name="january-2021"></a>Januari 2021
@@ -64,25 +70,27 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender för Endpoint lägger nu till stöd för Windows virtuellt skrivbord.
 
 ## <a name="december-2020"></a>December 2020
+
 - [Microsoft Defender för Endpoint för iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för iOS. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint på iOS.
 
 ## <a name="september-2020"></a>September 2020
+
 - [Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Android. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för slutpunkt på Android.
 - [Support för hantering av säkerhetsrisker macOS](tvm-supported-os.md)<br> Hot och hantering av säkerhetsrisker för macOS är nu i offentlig förhandsversion och kommer kontinuerligt att upptäcka svagheter på dina macOS-enheter så att du kan prioritera åtgärder genom att fokusera på risker. Läs mer i det [här Microsoft Tech Community-blogginlägget](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
-
 ## <a name="august-2020"></a>Augusti 2020
+
 - [Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Android. Lär dig hur du installerar, konfigurerar och använder Microsoft Defender för slutpunkt på Android.
 
-
 ## <a name="july-2020"></a>Juli 2020
+
 - [Skapa indikatorer för certifikat](manage-indicators.md) <br> Skapa indikatorer för att tillåta eller blockera certifikat.
 
 ## <a name="june-2020"></a>Juni 2020
+
 - [Microsoft Defender för Endpoint för Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender för Endpoint lägger nu till stöd för Linux. Lär dig hur du installerar, konfigurerar, uppdaterar och använder Microsoft Defender för Endpoint på Linux.
 
 - [Attackattack i utvärderingslabb](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender för Endpoint har samarbetat med olika simuleringsplattformar för hot för att ge dig bekväm åtkomst till att testa plattformens funktioner direkt från portalen.
-
 
 ## <a name="april-2020"></a>April 2020
 
@@ -104,24 +112,21 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 
 - [Indikatorer för IP-adresser, URL:er/domäner](manage-indicators.md) <BR> Nu kan du tillåta eller blockera URL:er/domäner med din egen hotinformation.
 
-
 - [Microsoft Hotexperter – experter på begäran](microsoft-threat-experts.md) <BR> Du kan nu rådgöra med Microsoft Hotexperter från flera platser i portalen för att underlätta din undersökning.
 
 - [Anslutna Azure AD-program](connected-applications.md)<br> Sidan Anslutna program innehåller information om de Azure AD-program som är anslutna till Microsoft Defender för Slutpunkt i din organisation.
 
 - [API Explorer](api-explorer.md)<br> API-utforskaren gör det enkelt att skapa och utföra API-frågor, testa och skicka förfrågningar för alla tillgängliga Microsoft Defender för Endpoint API-slutpunkt.
 
-
 ## <a name="september-2019"></a>September 2019
 
-- [Inställningar för manipuleringsskydd med Intune](prevent-changes-to-security-settings-with-tamper-protection.md)<br/>Du kan nu aktivera (eller inaktivera) skydd mot manipulering för din organisation Microsoft 365 i Intune-portalen (Device Management Portal).
+- [Inställningar för manipuleringsskydd med Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> Du kan nu aktivera (eller inaktivera) skydd mot manipulering för din organisation Microsoft 365 i Intune-portalen (Device Management Portal).
 
-- [Livesvar](live-response.md)<BR> Få omedelbar åtkomst till en enhet med en anslutning för fjärrgränssnitt. Arbeta på djupet och vidta åtgärder omedelbart för att snabbt hitta identifierade hot – i realtid.
+- [Livesvar](live-response.md) <BR> Få omedelbar åtkomst till en enhet med en anslutning för fjärrgränssnitt. Arbeta på djupet och vidta åtgärder omedelbart för att snabbt hitta identifierade hot – i realtid.
 
 - [Utvärderingslabb](evaluation-lab.md) <BR> Utvärderingslabb med Microsoft Defender för slutpunkter är utformat för att eliminera komplexiteten i konfigurationen av enheter och miljöer så att du kan fokusera på att utvärdera plattformens funktioner, köra simuleringar och se funktionerna för skydd, identifiering och åtgärder i praktiken.
 
 - [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> Nu kan du Windows Server 2008 R2 SP1.
-
 
 ## <a name="june-2019"></a>Juni 2019
 
@@ -133,29 +138,26 @@ Mer information om förhandsgranskningsfunktioner finns i [Förhandsgranskningsf
 
 - [Rapporter om skydd mot hot](threat-protection-reports.md)<BR>Rapporten om skydd mot hot ger information på hög nivå om aviseringar som genereras i organisationen.
 
-
 - [Microsoft Hotexperter](microsoft-threat-experts.md)<BR> Microsoft Hotexperter är den nya tjänsten för hotsäkerhet i Microsoft Defender för Endpoint som tillhandahåller förebyggande jagning, prioritering och ytterligare kontext och insikter som ytterligare ger säkerhetscenter (SOCs) möjlighet att identifiera och reagera på hot snabbt och korrekt. Det ger ytterligare expertkunskaper ochoptisk information som Microsoft-kunder kan använda för att utöka funktionerna för säkerhetsåtgärd som en del av Microsoft 365.
 
 - [Indikatorer](ti-indicator.md) <BR> API:er för indikatorer är nu allmänt tillgängliga.
 
-
 - [Interoperabilitet](partner-applications.md) <BR> Microsoft Defender för Endpoint har stöd för program från tredje part som hjälper till att förbättra plattformens funktioner för identifiering, undersökning och hotinformation.
 
-
 ## <a name="april-2019"></a>April 2019
+
 - [Microsoft Hotexperter Funktion för riktad attackavisering](microsoft-threat-experts.md) <BR> Microsoft Hotexperter:s varningar om riktade attackaviseringar är skräddarsydda för organisationer som tillhandahåller så mycket information som kan levereras snabbt och på så sätt uppmärksamma viktiga hot i nätverket, inklusive tidslinjen, omfattningen av intrång och intrångsmetoderna.
 
 - [Microsoft Defender för Endpoint API](apis-intro.md) <BR> Microsoft Defender för slutpunkt visar mycket av dess data och åtgärder via en uppsättning programmässiga API:er. Med de HÄR API:erna kan du automatisera arbetsflöden och nya funktioner baserat på Microsoft Defender för slutpunktsfunktioner.
 
-
-
 ## <a name="february-2019"></a>Februari 2019
+
 - [Incidenter](view-incidents-queue.md) <BR> Incidenten är en ny enhet i Microsoft Defender för Endpoint som samlar alla relevanta aviseringar och relaterade enheter för att berätta den bredare attackbilden, vilket ger analytiker bättre perspektiv på hur komplexa hot visas.
 
 - [Registrera tidigare versioner av Windows](onboard-downlevel.md)<BR> Registrera versioner av enheter som Windows registrera så att de kan skicka sensordata till Microsoft Defender för slutpunkts sensor.
 
-
 ## <a name="october-2018"></a>Oktober 2018
+
 - [Regler för minskning av attackytan](attack-surface-reduction.md)<BR>Alla minskningsregler för attackytan stöds nu på Windows Server 2019.
 
 - [Kontrollerad mappåtkomst](enable-controlled-folders.md)<BR> Reglerad mappåtkomst stöds nu i Windows Server 2019.
@@ -222,5 +224,3 @@ Nu kan du blockera processer som inte är betrodda från att skriva till diskarv
 Microsoft Defender Antivirus delar nu identifieringsstatus mellan Microsoft 365 och interopererar med Microsoft Defender för Slutpunkt. Mer information finns i [Använda nästa generationens tekniker i Microsoft Defender Antivirus av moln levererat skydd.](cloud-protection-microsoft-defender-antivirus.md)
 
     Spärr vid första anblicken kan nu blockera icke-bärbara körbara filer (t.ex. JS, VBS eller makron) samt körbara filer. Mer information finns i [Aktivera block vid första synen.](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-
-

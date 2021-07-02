@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Ändra prenumerationer manuellt genom att köpa en ny prenumeration och se till att båda prenumerationerna visas och är aktiva.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5db328cb1545279faa1332c144c7a8b60a50fa05
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536112"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256777"
 ---
 # <a name="change-plans-manually"></a>Ändra abonnemang manuellt
 
@@ -79,6 +79,8 @@ Ta med en licens för varje användare som du vill flytta.
 Licenser för den aktuella prenumerationen tas bort senare. Du betalar då bara för de nya licenserna.
 
 ## <a name="step-4-reassign-licenses"></a>Steg 4: Fördela om licenser
+
+När du uppgraderar från Office 365-abonnemang till ett Microsoft 365-abonnemang måste du ändra licenstilldelningarna för alla användare. Licenser tilldelas inte automatiskt när du ändrar abonnemang manuellt.
 
 ### <a name="reassign-a-license-for-one-user"></a>Fördela om en licens för en användare
 

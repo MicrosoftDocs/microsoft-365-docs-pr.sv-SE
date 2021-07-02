@@ -18,16 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Översikt över bearbetning av olika typer av data i Advanced eDiscovery.
-ms.openlocfilehash: d7969b1ef77fc161cccc85a8dee020ebe21acdb0
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: ad723195ab0ae8a8d1200428bde00e2fcb0094ae
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "52161718"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256309"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Arbeta med bearbetningsfel i Advanced eDiscovery
 
-*Bearbetning* är processen med filidentifiering, expansion av inbäddade dokument och bifogade filer, textextrahering och optisk teckenläsning (OCR)) för bildfiler och efterföljande indexering av innehållet.  
+*Bearbetning* är processen med filidentifiering, expansion av inbäddade dokument och bifogade filer, textextrahering och optisk teckenläsning (OCR) för bildfiler och efterföljande indexering av innehållet.  
 
 När du lägger till inskannaderade och  icke-objekterade datakällor till ett ärende på fliken Källor bearbetas alla delvis indexerade objekt från Microsoft 365 så att de blir fullt sökbara. När innehåll läggs till i en granskning som både Microsoft 365 och andra datakällor Microsoft 365 bearbetas även det här innehållet.
 

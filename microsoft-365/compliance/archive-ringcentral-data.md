@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratörer kan konfigurera en koppling för att importera och arkivera RingCentral-data från Veritas till Microsoft 365. Med den här kopplingen kan du arkivera data från datakällor från tredje part i Microsoft 365. När du har arkiverat dessa data kan du använda efterlevnadsfunktioner som bevarande av juridiska regler, eDiscovery och bevarandeprinciper för att hantera data från tredje part.
-ms.openlocfilehash: 57c993ce99556677c0161649254b5ab43caace0e
-ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
+ms.openlocfilehash: b5e98df50b0610c9fb583a8521c7a6d6fdb48e44
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53244022"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276863"
 ---
-# <a name="set-up-a-connector-to-archive-ringcentral-data"></a>Konfigurera en koppling för att arkivera RingCentral-data
+# <a name="set-up-a-connector-to-archive-ringcentral-data-preview"></a>Konfigurera en koppling för att arkivera RingCentral-data (förhandsversion)
 
 Använd en Veritas-koppling i Microsoft 365 Efterlevnadscenter om du vill importera och arkivera data från RingCentral-plattformen till användarpostlådor i Microsoft 365 organisation. Veritas tillhandahåller en [RingCentral-koppling](https://www.veritas.com/insights/merge1/ringcentral) som är konfigurerad för att hämta objekt från tredje parts datakälla och importera objekten till Microsoft 365. Kopplingen omvandlar innehåll som chattar, bifogade filer, uppgifter, anteckningar och inlägg från RingCentral till ett e-postmeddelandeformat och importerar sedan dessa objekt till användarnas postlådor i Microsoft 365.
 

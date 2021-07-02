@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 50273fabc85ecedc92b9c3ec379d3b82a63dd6e1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8bcd9577308e31eb4bd48a5b1e0ad5748ef738e9
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226449"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256333"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Kom igång med hantering av insiderrisker
 
@@ -61,7 +61,7 @@ Beroende på strukturen hos ditt team för efterlevnadshantering finns alternati
 
 | **Rollgrupp** | **Rollbehörigheter** |
 | :------------- | :------------------- |
-| **Insider-riskhantering** | Använd den här rollgruppen för att hantera insider-riskhantering för organisationen i en enda grupp. Genom att lägga till alla användarkonton för angivna administratörer, analytiker, ekonomi och granskare kan du konfigurera behörigheter för Insider-riskhantering i en enda grupp. Den här rollgruppen innehåller alla behörighetsroller för Insider-riskhantering och associerade behörigheter. Den här konfigurationen är det enklaste sättet att snabbt komma igång med insider-riskhantering och är en god passform för organisationer som inte behöver separata behörigheter som definierats för separata användargrupper. När du använder den här konfigurationen bör du se till att alltid ha minst en användare tilldelad till den här rollgruppen för att säkerställa att dina principer fungerar som förväntat och så att användaren kan skapa och redigera principer, konfigurera lösningsinställningar och granska hälsovarningar för principer.|
+| **Hantering av insiderrisk** | Använd den här rollgruppen för att hantera insider-riskhantering för organisationen i en enda grupp. Genom att lägga till alla användarkonton för angivna administratörer, analytiker, ekonomi och granskare kan du konfigurera behörigheter för Insider-riskhantering i en enda grupp. Den här rollgruppen innehåller alla behörighetsroller för Insider-riskhantering och associerade behörigheter. Den här konfigurationen är det enklaste sättet att snabbt komma igång med insider-riskhantering och är en god passform för organisationer som inte behöver separata behörigheter som definierats för separata användargrupper. När du använder den här konfigurationen bör du se till att alltid ha minst en användare tilldelad till den här rollgruppen för att säkerställa att dina principer fungerar som förväntat och så att användaren kan skapa och redigera principer, konfigurera lösningsinställningar och granska hälsovarningar för principer.|
 | **Insider-riskhanteringsadministratör** | Använd den här rollgruppen till att först konfigurera Insider-riskhantering och senare för att dela upp Insider-riskadministratörer i en definierad grupp. Användare i den här rollgruppen kan aktivera och visa analysinsikter och skapa, läsa, uppdatera och ta bort principer för insider-riskhantering, globala inställningar och tilldelningar av rollgrupper. När du använder den här konfigurationen bör du se till att alltid ha minst en användare tilldelad till den här rollgruppen för att säkerställa att dina principer fungerar som förväntat och så att användaren kan skapa och redigera principer, konfigurera lösningsinställningar och granska hälsovarningar för principer. |
 | **Analytiker för hantering av interna risker** | Använd den här gruppen för att tilldela behörigheter till användare som fungerar som insider-riskfallsanalytiker. Användare i den här rollgruppen kan komma åt och visa alla varningar för Insider-riskhantering, fall, analysinsikter och meddelandemallar. De kan inte komma åt Insider-risken i Innehållsutforskaren. |
 | **Utredare för hantering av interna risker** | Använd den här gruppen för att tilldela behörigheter till användare som ska agera som insider-riskgruppsbehörigheter. Användare i den här rollgruppen kan komma åt alla varningar för insider-riskhantering, ärenden, meddelandemallar och Innehållsutforskaren för alla ärenden. |
@@ -74,7 +74,7 @@ Beroende på strukturen hos ditt team för efterlevnadshantering finns alternati
 
 Utför följande steg för att lägga till användare i en rollgrupp för Insider-riskhantering:
 
-1. Logga in [https://protection.office.com/permissions](https://protection.office.com/permissions) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
+1. Logga in [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
 
 2. I &amp; Säkerhetsefterlevnadscenter går du till **Behörigheter.** Välj länken för att visa och hantera roller i Office 365.
 

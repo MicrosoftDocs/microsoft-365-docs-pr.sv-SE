@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Förbered och distribuera Microsofts efterlevnadstillägg.
-ms.openlocfilehash: 5a2fa5958117d14715292245924dce2ff63b09a0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843836"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226965"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Kom igång med Microsofts efterlevnadstillägg
 
@@ -84,11 +84,11 @@ Distributionen av Microsofts efterlevnadstillägg är en process med flera faser
 4. [Distribuera med grupprincip](#deploy-using-group-policy)
 5. [Testa tillägget](#test-the-extension)
 6. [Använda instrumentpanelen för hantering av aviseringar till att visa Chrome DLP-aviseringar](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
-7. [Visa Chrome DLP-data i aktivitetsutforskaren](#viewing-chrome-dlp-data-in-activity-explorer) 
+7. [Visa Chrome DLP-data i aktivitetsutforskaren](#viewing-chrome-dlp-data-in-activity-explorer)
 
 ### <a name="prepare-infrastructure"></a>Förbereda infrastrukturen
 
-Om du distribuerar Microsofts efterlevnadstillägg till alla övervakade Windows 10-enheter, bör du ta bort Google Chrome från listan med otillåtna appar och listan med otillåtna webbläsare. Mer information finns i [Otillåtna webbläsare](endpoint-dlp-using.md#unallowed-browsers). Om du bara distribuerar det till några få enheter kan du låta Chrome finnas kvar i listorna med otillåtna webbläsare eller appar. Microsofts efterlevnadstillägg kringgår begränsningarna i båda listorna för de datorer där det är installerat.  
+Om du distribuerar Microsofts efterlevnadstillägg till alla övervakade Windows 10-enheter, bör du ta bort Google Chrome från listan med otillåtna appar och listan med otillåtna webbläsare. Mer information finns i [Otillåtna webbläsare](endpoint-dlp-using.md#unallowed-browsers). Om du bara distribuerar det till några få enheter kan du låta Chrome finnas kvar i listorna med otillåtna webbläsare eller appar. Microsofts efterlevnadstillägg kringgår begränsningarna i båda listorna för de datorer där det är installerat.
 
 ### <a name="prepare-your-devices"></a>Förbereda dina enheter
 
@@ -99,13 +99,13 @@ Om du distribuerar Microsofts efterlevnadstillägg till alla övervakade Windows
 
 ### <a name="basic-setup-single-machine-selfhost"></a>Grundläggande konfiguration av en dator med selfhost
 
-Detta är den rekommenderade metoden. 
+Detta är den rekommenderade metoden.
 
-1. Logga in på den Windows 10-dator där du vill installera Microsofts efterlevnadstillägg och kör PowerShell-skriptet som administratör. 
+1. Logga in på den Windows 10-dator där du vill installera Microsofts efterlevnadstillägg och kör PowerShell-skriptet som administratör.
 
    ```powershell
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ``` 
+   ```
 
 2.  Gå till [Microsofts efterlevnadstillägg – Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
@@ -158,7 +158,7 @@ Innan du lägger till Microsofts efterlevnadstillägg i listan med tillägg som 
 7.  Välj **Lägg till**.
 
 8.  Ange nedanstående principinformation.
-    
+
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Datatyp: `String`<br/>
     Värde: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
@@ -221,34 +221,32 @@ Om du inte vill använda Microsoft Endpoint Manager kan du använda grupprincipe
 
 ### <a name="test-the-extension"></a>Testa tillägget
 
-#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>Ladda upp till molntjänst eller åtkomst av otillåtna webbläsare med utgående moln  
+#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>Ladda upp till molntjänst eller åtkomst av otillåtna webbläsare med utgående moln
 
 1. Skapa eller hämta ett känsligt objekt och försök att ladda upp en fil till någon av organisationens begränsade tjänstdomäner. Den känsliga datan måste matcha någon av våra inbyggda [typer av känslig information](sensitive-information-type-entity-definitions.md), eller någon av organisationens typer av känslig information. Du bör få ett popup-meddelande från DLP:n på den enhet du testar från, som visar att åtgärden inte är tillåten när filen är öppen.
 
-#### <a name="testing-other-dlp-scenarios-in-chrome"></a>Testa andra DLP-scenarier i Chrome 
+#### <a name="testing-other-dlp-scenarios-in-chrome"></a>Testa andra DLP-scenarier i Chrome
 
 Nu när du har tagit bort Chrome från listan med otillåtna webbläsare/appar kan du testa scenarierna nedan för att kontrollera att beteendet uppfyller organisationens krav:
 
 - Kopiera data från ett känsligt objekt till ett annat dokument med hjälp av Urklipp
-    - Testa genom att öppna en fil som är skyddad från att kopiera till Urklipp i webbläsaren Chrome och försök kopiera data från filen.
-    - Förväntat resultat: Ett popup-meddelande från DLP om att åtgärden inte är tillåten när filen är öppen.
+  - Testa genom att öppna en fil som är skyddad från att kopiera till Urklipp i webbläsaren Chrome och försök kopiera data från filen.
+  - Förväntat resultat: Ett popup-meddelande från DLP om att åtgärden inte är tillåten när filen är öppen.
 - Skriva ut ett dokument
-    - Testa genom att öppna en fil som är skyddad mot utskriftsåtgärder i webbläsaren Chrome och försök att skriva ut filen.
-    - Förväntat resultat: Ett popup-meddelande från DLP om att åtgärden inte är tillåten när filen är öppen.
+  - Testa genom att öppna en fil som är skyddad mot utskriftsåtgärder i webbläsaren Chrome och försök att skriva ut filen.
+  - Förväntat resultat: Ett popup-meddelande från DLP om att åtgärden inte är tillåten när filen är öppen.
 - Kopiera till USB-flyttbart medium
-    - Prova att spara filen i en flyttbar medielagring.
-    - Förväntat resultat: Ett popup-meddelande från DLP om att åtgärden inte är tillåten när filen är öppen.
+  - Prova att spara filen i en flyttbar medielagring.
+  - Förväntat resultat: Ett popup-meddelande från DLP om att åtgärden inte är tillåten när filen är öppen.
 - Kopiera till en nätverksresurs
-    - Prova att spara filen på en nätverksresurs.
-    - Förväntat resultat: Ett popup-meddelande från DLP om att åtgärden inte är tillåten när filen är öppen.
-
+  - Prova att spara filen på en nätverksresurs.
+  - Förväntat resultat: Ett popup-meddelande från DLP om att åtgärden inte är tillåten när filen är öppen.
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>Använda instrumentpanelen för hantering av aviseringar till att visa DLP-aviseringar för Chrome
 
 1. Öppna sidan **Dataförlustskydd** i [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com) och välj **Aviseringar**.
 
 2. Se metoderna i [Konfigurera och visa aviseringar för DLP-principer](dlp-configure-view-alerts-policies.md) om du vill se aviseringarna för slutpunkts-DLP:ns principer.
-
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>Visa Chrome DLP-data i aktivitetsutforskaren
 
@@ -265,13 +263,14 @@ Nu när du har tagit bort Chrome från listan med otillåtna webbläsare/appar k
 2. Inkognitoläge stöds inte och måste vara inaktiverat.
 
 ## <a name="next-steps"></a>Nästa steg
+
 Nu när du har registrerat enheter och kan se aktivitetsdata i aktivitetsutforskaren, kan du gå vidare till nästa steg där du skapar DLP-principer som skyddar dina känsliga objekt.
 
 - [Använda dataförlustskydd för slutpunkter](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Se även
 
-- [Mer information om dataförlustskydd för slutpunkter](endpoint-dlp-learn-about.md)
+- [Mer information om dataförlustskydd för slutpunkt](endpoint-dlp-learn-about.md)
 - [Använda dataförlustskydd för slutpunkter](endpoint-dlp-using.md)
 - [Mer information om dataförlustskydd](dlp-learn-about-dlp.md)
 - [Skapa, testa och justera en DLP-princip](create-test-tune-dlp-policy.md)

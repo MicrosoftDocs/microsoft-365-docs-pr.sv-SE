@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: När du har skapat och itererat en utkastsamling kan du bekräfta den i en granskningsuppsättning. När du åtar dig att skapa ett utkast läggs de insamlade objekten till för granskning. När de insamlade objekten finns i granskningsuppsättningen kan du analysera, granska och exportera dem.
-ms.openlocfilehash: e28592e7aac289bfc0cc29d312963fa21d9f8fd4
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: dceb661d9586e324482dc4f56bce12fafaf9b251
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "52161824"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276983"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Spara ett utkast till en granskningsuppsättning i Advanced eDiscovery
 
@@ -29,7 +29,7 @@ När du är nöjd med de objekt du har samlat in i en utkastsamling och är redo
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>Spara en utkastsamling till en granskningsuppsättning 
 
-1. I Microsoft 365 kompatibilitetscenter öppnar du Advanced eDiscovery och väljer sedan fliken  Samlingar för att visa en lista med de aktuella samlingarna.
+1. I Microsoft 365 Efterlevnadscenter öppnar du Advanced eDiscovery och väljer sedan fliken Samlingar  för att visa en lista med de aktuella samlingarna.
 
    ![Lista med samlingar i ett ärende](../media/CommitDraftCollections1.png)
 
@@ -46,7 +46,7 @@ När du är nöjd med de objekt du har samlat in i en utkastsamling och är redo
 
    1. Välj **Samla in objekt och lägg till i granskningsuppsättningen**.
 
-   2. Bestäm om du vill lägga till samlingen i en ny granskningsuppsättning (som skapas efter att du har skickat in samlingen) eller till en befintlig granskningsuppsättning. Fyll i det här avsnittet baserat på ditt beslut.
+   2. Bestäm om du vill lägga till samlingen i en ny granskningsuppsättning (som skapas efter att du har skickat in samlingen) eller lägga till den i en befintlig granskningsuppsättning. Fyll i det här avsnittet baserat på ditt beslut.
 
    3. Konfigurera ytterligare inställningar för samlingen:
 
@@ -73,6 +73,8 @@ När du är nöjd med de objekt du har samlat in i en utkastsamling och är redo
 ## <a name="what-happens-after-you-commit-a-draft-collection"></a>Vad händer efter att du har bekräftat ett utkast
 
 När du åtar dig att skapa ett utkast i en granskningsuppsättning sker följande:
+
+- Om du har skapat en ny granskningsuppsättning som den ska bekräfta så skapas uppsättningen och visas på fliken Granska **uppsättningar** för ärendet. Statusen för den nya granskningsuppsättningen är **Klar**. Det här statusvärdet innebär att granskningsuppsättningen har skapats. Det innebär inte att samlingen har lagts till i granskningsuppsättningen. Status för att lägga till objekt i samlingen i granskningsuppsättningen visas på **fliken** Samlingar.
 
 - Sökfrågan för samlingen körs igen. Det innebär att de verkliga sökresultaten som kopierats till granskningsuppsättningen kan vara annorlunda än de uppskattade resultat som returnerades när samlingssökningen senast körts.
 

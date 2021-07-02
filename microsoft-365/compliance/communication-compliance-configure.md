@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d76bc36ca8c79d318e1b632517e2a182857627ff
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f099d7bd180843530d23d0bbcee89dc8ae35cdbb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227349"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256741"
 ---
 # <a name="get-started-with-communication-compliance"></a>Kom igång med kommunikationsefterlevnad
 
@@ -68,7 +68,7 @@ Välj bland de här rollgruppsalternativen när du konfigurerar kommunikationsef
 
 | Roll | Rollbehörigheter |
 |:-----|:-----|
-| **Kommunikationsefterlevnad** | Använd den här rollgruppen för att hantera kommunikationsefterlevnad för organisationen i en enda grupp. Genom att lägga till alla användarkonton för angivna administratörer, analytiker, slutanvändare och läsare kan du konfigurera behörigheter för kommunikationsefterlevnad i en enda grupp. Den här rollgruppen innehåller alla behörighetsroller för kommunikationsefterlevnad. Den här konfigurationen är det enklaste sättet att snabbt komma igång med kommunikationsefterlevnad och är en god passform för organisationer som inte behöver separata behörigheter som definierats för olika användargrupper. |
+| **Efterlevnad av kommunikation** | Använd den här rollgruppen för att hantera kommunikationsefterlevnad för organisationen i en enda grupp. Genom att lägga till alla användarkonton för angivna administratörer, analytiker, slutanvändare och läsare kan du konfigurera behörigheter för kommunikationsefterlevnad i en enda grupp. Den här rollgruppen innehåller alla behörighetsroller för kommunikationsefterlevnad. Den här konfigurationen är det enklaste sättet att snabbt komma igång med kommunikationsefterlevnad och är en god passform för organisationer som inte behöver separata behörigheter som definierats för olika användargrupper. |
 | **Admin för kommunikationsefterlevnad** | Använd den här rollgruppen till att först konfigurera kommunikationsefterlevnad och senare för att avgränsa administratörer för kommunikationsefterlevnad i en definierad grupp. Användare som tilldelats den här rollgruppen kan skapa, läsa, uppdatera och ta bort principer för kommunikationsefterlevnad, globala inställningar och tilldelningar av rollgrupper. Användare som tilldelats den här rollgruppen kan inte visa meddelandeaviseringar. |
 | **Analytiker för kommunikationsefterlevnad** | Använd den här gruppen för att tilldela behörigheter till användare som fungerar som kommunikationsefterlevnadsanalytiker. Användare som har tilldelats den här rollgruppen kan visa principer där de har tilldelats som granskare, visa metadata för meddelanden (inte meddelandeinnehåll), eskalera till ytterligare granskare eller skicka meddelanden till användare. Analytiker kan inte lösa väntande aviseringar. |
 | **Communication Compliance Investigator** | Använd den här gruppen för att tilldela behörigheter till användare som ska agera som kommunikationsefterlevnad. Användare som har tilldelats den här rollgruppen kan visa metadata och innehåll för meddelanden, eskalera till ytterligare granskare, eskalera till ett Advanced eDiscovery-ärende, skicka meddelanden till användare och lösa aviseringen. |
@@ -76,7 +76,7 @@ Välj bland de här rollgruppsalternativen när du konfigurerar kommunikationsef
 
 ### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>Alternativ 1: Tilldela alla efterlevnadsanvändare till rollgruppen för kommunikationsefterlevnad
 
-1. Logga in [https://protection.office.com/permissions](https://protection.office.com/permissions) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
+1. Logga in [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
 
 2. I &amp; Säkerhetsefterlevnadscenter går du till **Behörigheter.** Välj länken för att visa och hantera roller i Office 365.
 
@@ -94,7 +94,7 @@ Välj bland de här rollgruppsalternativen när du konfigurerar kommunikationsef
 
 Använd det här alternativet om du vill tilldela användare specifika rollgrupper för segmenterad åtkomst och ansvar för kommunikationsefterlevnad mellan olika användare i organisationen.
 
-1. Logga in [https://protection.office.com/permissions](https://protection.office.com/permissions) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
+1. Logga in [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
 
 2. I &amp; Säkerhetsefterlevnadscenter går du till **Behörigheter.** Välj länken för att visa och hantera roller i Office 365.
 

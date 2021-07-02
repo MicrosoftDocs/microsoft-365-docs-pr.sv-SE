@@ -1,5 +1,5 @@
 ---
-title: Nätverksanslutning i Microsoft 365 Administrationscenter
+title: Nätverksanslutning i Microsoft 365 Admin Center
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,22 +14,22 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: Översikt över nätverksanslutningen i Microsoft 365 Administrationscenter
-ms.openlocfilehash: 75451a73ed56dade796f6de288f7f4acfb147960
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+description: Översikt över nätverksanslutningen i Microsoft 365 Admin Center
+ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470666"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53277007"
 ---
-# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Nätverksanslutning i Microsoft 365 Administrationscenter
+# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Nätverksanslutning i Microsoft 365 Admin Center
 
 I Microsoft 365 Admin Center ingår nu aggregerade mått för nätverksanslutning som samlats in från Microsoft 365-klientorganisationen och är tillgängliga för att endast visas av administrativa användare i klientorganisationen.
 
 > [!div class="mx-imgBorder"]
 > ![Testverktyg för nätverksanslutning](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-**Nätverksutvärderingar** **och nätverksinsikter** visas i Microsoft 365 administrationscenter under **| Nätverksanslutning**.
+**Nätverksutvärderingar** **och nätverksinsikter** visas i Microsoft 365 Admin under **Hälsocenter | Nätverksanslutning**.
 
 > [!div class="mx-imgBorder"]
 > ![Sidan Nätverksprestanda](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
@@ -75,7 +75,10 @@ För det här alternativet måste du identifiera en person på varje plats. Be d
 
 Testrapporter länkas till en plats om den har lagts till med information om LAN-undernätet, annars visas de endast på platsen för staden.
 
-Måttprov och kontorsplatser bör börja visas 2–3 minuter efter att en testrapport har slutförts. Mer information finns i Microsoft 365 [av nätverksanslutningstest (förhandsversion).](office-365-network-mac-perf-onboarding-tool.md)
+Måttprov och kontorsplatser bör börja visas 2–3 minuter efter att en testrapport har slutförts. Mer information finns i Microsoft 365 [av nätverksanslutningstestet](office-365-network-mac-perf-onboarding-tool.md).
+
+> [!NOTE]
+> När du lägger till dina kontorsplatser Microsoft 365 nätverksanslutningar i Administrationscenter för Microsoft 365 kan du ange antingen IPv4- eller IPv6-adresser för dina LAN-undernät. Egress IP-adresser måste använda IPv4.
 
 ## <a name="how-do-i-use-this-information"></a>Hur använder jag den här informationen?
 
@@ -86,7 +89,7 @@ Måttprov och kontorsplatser bör börja visas 2–3 minuter efter att en testra
 Komplexa företag med flera kontorsplatser och perimeterarkitekturer utanför nätverket kan dra nytta av den här informationen antingen under den första introduktionen till Microsoft 365 eller för att åtgärda problem med nätverksprestanda som upptäcks med användningstillväxt. Detta är vanligtvis inte nödvändigt för små företag som Microsoft 365 eller företag som redan har enkel och direkt nätverksanslutning. Företag med fler än 500 användare och flera kontor förväntas ha störst nytta.
 
 >[!IMPORTANT]
->Nätverksinsikter, prestandarekommendationer och utvärderingar i administrationscentret för Microsoft 365 är för närvarande i förhandsgranskningsstatus och är endast tillgängligt för Microsoft 365-klienter som har registrerats i programmet för förhandsgranskning av funktioner.
+>Nätverksinsikter, prestandarekommendationer och utvärderingar i Microsoft 365 Admin Center är för närvarande i förhandsgranskningsstatus och är endast tillgängligt för Microsoft 365-klienter som har registrerats i programmet för förhandsgranskning av funktioner.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Utmaningar vid företagsnätverksanslutningar
 
@@ -97,13 +100,13 @@ Många företag har nätverks perimeterkonfigurationer som har vuxit över tid o
 
 ## <a name="how-we-can-solve-these-challenges"></a>Hur vi kan lösa de här problemen
 
-Företag kan förbättra den allmänna användarupplevelsen och skydda miljön genom [att följa Office 365-anslutningsprinciperna](./microsoft-365-network-connectivity-principles.md) och genom att använda Microsoft 365 Admin Center-nätverksanslutningsfunktionen. I de flesta fall har följande allmänna principer betydande inverkan på slutanvändarens svarstid, tjänstens pålitlighet och övergripande prestanda i Microsoft 365.
+Företag kan förbättra användarupplevelsen och skydda miljön genom [att följa Office 365 och](./microsoft-365-network-connectivity-principles.md) med hjälp Microsoft 365 Admin Center-nätverksanslutningsfunktionen. I de flesta fall har följande allmänna principer betydande inverkan på slutanvändarens svarstid, tjänstens pålitlighet och övergripande prestanda i Microsoft 365.
 
 Microsoft uppmanas ibland att undersöka prestandaproblem i nätverket med Microsoft 365 för stora företagskunder, och dessa har ofta en orsak relaterad till kundens perimeterinfrastruktur i nätverket. När en vanlig orsak till ett perimeterproblem i kundens nätverk påträffas försöker vi identifiera enkla testmått som identifierar det. Ett test med ett mättröskelvärde som identifierar ett specifikt problem är värdefullt eftersom vi kan testa samma mått på valfri plats, avgöra om orsaken finns där och dela den som en nätverksinsikt med administratören.
 
 Vissa nätverksinsikter anger bara ett problem som behöver undersökas ytterligare. En nätverksinsikt där vi har tillräckligt många tester för att visa en viss åtgärd för att korrigera orsaken visas som en **rekommenderad åtgärd.** De här rekommendationerna, baserat på livevärden som visar värden som faller utanför ett förutbestämt tröskelvärde, är mycket mer värdefulla än allmänna råd om metodtips eftersom de är specifika för din miljö och visar den faktiska förbättringen när de rekommenderade ändringarna har gjorts.
 
-## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Översikt över nätverksanslutningen i Microsoft 365 Administrationscenter
+## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Översikt över nätverksanslutningen i Microsoft 365 Admin Center
 
 Microsoft har befintliga nätverksmått från flera Office- och webbklienter som stöder användningen av Microsoft 365. Dessa mått används nu för att ge insikter om nätverksarkitekturdesign  och en nätverksutvärdering som visas på sidan Nätverksanslutning i Microsoft 365 Admin Center.
 
@@ -220,7 +223,7 @@ Den utgående internetplatsen är den plats där din nätverkstrafik går ut ur 
 
 ### <a name="what-license-is-needed-for-this-capability"></a>Vilken licens krävs för den här funktionen?
 
-Du behöver en licens som ger åtkomst till Microsoft 365 administrationscenter.
+Du behöver en licens som ger åtkomst till Administrationscenter för Microsoft 365.
 
 ## <a name="related-topics"></a>Relaterade ämnen
 

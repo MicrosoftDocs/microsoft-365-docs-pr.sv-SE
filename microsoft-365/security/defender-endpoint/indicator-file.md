@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b56a18e1b35b65629318ab29f2189ef1f73373f5
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730540"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256921"
 ---
 # <a name="create-indicators-for-files"></a>Skapa indikatorer för filer
 
@@ -80,10 +80,13 @@ Filer som blockeras automatiskt av en indikator visas inte i filens Åtgärdscen
 
 >[!IMPORTANT]
 >- Vanligtvis används filblock och tas bort inom några minuter, men det kan ta upp till 30 minuter.
->- Om det finns filindikatorprinciper som står i konflikt tillämpas den säkrare principens tillämpningsprincip. En SHA-256-princip för hash-kod för filer har till exempel företräde framför en MD5-princip för hash-hash-kod för filer om båda hash-typerna definierar samma fil.
->- Om grupprincipen EnableFileHashComputation är inaktiverad minskar blockeringsprecisionen för filens IoC. Men aktivering av EnableFileHashComputation kan påverka enhetens prestanda.
->    - Till exempel kan kopiering av stora filer från en nätverksresurs till din lokala enhet, särskilt via en VPN-anslutning, påverka enhetens prestanda.
->    - Mer information om grupprincipen EnableFileHashComputation finns i [Defender CSP](/windows/client-management/mdm/defender-csp)
+> 
+>- Om det finns IoC-principer i konflikt med samma tillämpningstyp och mål tillämpas principen för den säkrare hashtaggen. En SHA-256-IoC-princip för filshashar vinner över en SHA-1-IoC-princip för filshashar, som vinner över en MD5-IoC-princip för filshashar om hash-typerna definierar samma fil. Det gäller alltid oavsett enhetsgrupp. 
+>   I alla andra fall, om IoC-principer i konflikt med samma tillämpningsmål tillämpas på alla enheter och på enhetens grupp, kommer principen i enhetsgruppen att vinna för en enhet. 
+>   
+>- Om grupprincipen EnableFileHashComputation är inaktiverad minskar blockeringsprecisionen för filens IoC. Aktivering kan dock `EnableFileHashComputation` påverka enhetens prestanda. Till exempel kan kopiering av stora filer från en nätverksresurs till din lokala enhet, särskilt via en VPN-anslutning, påverka enhetens prestanda.
+>
+>   Mer information om grupprincipen EnableFileHashComputation finns i [Defender CSP](/windows/client-management/mdm/defender-csp)
 
 ## <a name="policy-conflict-handling"></a>Hantering av policykonflikter  
 
@@ -101,9 +104,9 @@ Konflikter i hanteringen av certifikat- och fil-IoC-policyer följer nedanståen
 
 - Tillåt **annars** (skickar Windows Defender programkontroll & AppLocker-principen, inga IoC-regler gäller för den)
 
-Om det finns IoC-principer i konflikt med samma tillämpningstyp och mål tillämpas principen för den säkrare hashen (vilket innebär längre). En SHA-256-IoC-princip för filshashar vinner till exempel över en MD5-IoC-princip för filshashar om båda hashtyperna definierar samma fil.
+Om det finns IoC-principer i konflikt med samma tillämpningstyp och mål tillämpas principen för den säkrare hashen (vilket innebär längre). En SHA-256-IoC-princip med hash-hash i SHA-256 får till exempel över en MD5-IoC-princip för filshashar om båda hashtyperna definierar samma fil.
 
-Observera att Hantering av hot och säkerhetsrisker blockerat sårbart program använder fil-IoCs för tillämpning och kommer att följa den ordning som beskrivs ovan för hantering av konflikter.
+Hot och hantering av säkerhetsrisker blockera sårbara program använder fil-IoCs för tillämpning och följer konflikthanteringsordningen ovan.
 
 ### <a name="examples"></a>Exempel
 

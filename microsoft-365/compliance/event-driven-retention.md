@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: Vanligtvis kan du som en del av en lösning för hantering av arkivhandlingar konfigurera en kvarhållningsetikett för att starta kvarhållningsperioden baserat på en händelse som du identifierar.
-ms.openlocfilehash: ee828b6852440f5be07fdf34df2fb6a11253ae1c
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 83f1be417b706fdb66b1df71ba351ce16d5ad485
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "52162331"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226629"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Starta kvarhållning när en händelse inträffar
 
@@ -41,7 +41,7 @@ Exempel på användning av händelsebaserad kvarhållning:
     
 - **Produktlivslängd** Organisationen kan ha kvarhållningskrav relaterade till senaste tillverkningsdatum för produkter för innehåll som exempelvis tekniska specifikationer. I så fall är sista tillverkningsdatum den händelse som utlöser kvarhållningsperioden. 
     
-Händelsebaserad kvarhållning används vanligtvis som en del av en process för hantering av arkivhandlingar. Det innebär följande:
+Händelsebaserad kvarhållning används vanligtvis som en del av en process för hantering av arkivhandlingar. Det innebär att:
   
 - Kvarhållningsetiketter baserade på händelser markerar vanligtvis också objekt som en post, som en del av en lösning för hantering av arkivhandlingar. Mer information finns i [Läs mer om hantering av arkivhandlingar](records-management.md).
 
@@ -153,17 +153,19 @@ När du skapar händelsen väljer du samma händelsetyp som anges i inställning
 
 Om du behöver skapa en händelse för flera kvarhållningsetiketter som har olika händelsetyper väljer du alternativet **Välj befintliga etiketter**. Välj sedan de etiketter som är konfigurerade för de händelsetyper som du vill associera med händelsen.
 
-### <a name="step-7-enter-keywords-or-an-asset-id"></a>Steg 7: Ange nyckelord eller ett tillgångs-ID
+### <a name="step-7-enter-keywords-or-query-for-exchange-asset-id-for-sharepoint-and-onedrive"></a>Steg 7: ange nyckelord eller fråga för Exchange, tillgångs-ID för SharePoint och OneDrive
 
-Nu kan du begränsa innehållets omfång genom att ange tillgångs-ID:n för SharePoint- och OneDrive-innehåll, eller nyckelord för Exchange-innehåll. För tillgångs-ID:n kommer kvarhållning endast att tillämpas på innehåll med angiven kombination av *egenskap:värde*. Om ett tillgångs-ID inte anges får allt innehåll med etiketter av den händelsetypen samma kvarhållningsdatum.
+Nu begränsar du innehålletsomfattning. För Exchange-innehåll gör du detta genom att ange nyckelord eller en fråga. För SharePoint- och OneDrive-innehåll gör du detta genom att ange tillgångs-ID:n.
 
-Om du till exempel använder egenskapen tillgångs-ID anger du `ComplianceAssetID:<value>` i rutan för tillgångs-ID:n som visas nedan.
-  
+För Exchange-objekt använder du nyckelord eller en fråga som använder KQL (Keyword Query Language). Mer information om frågesyntax finns i [Syntaxreferensen för KQL (Keyword Query Language)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). Mer information om de sökbara egenskaper du kan använda för Exchange finns i [Nyckelordsfrågor och sökvillkor för innehållssökning](keyword-queries-and-search-conditions.md).
+
+För tillgångs-ID:n kommer kvarhållning endast att tillämpas på innehåll med angiven kombination av *egenskap:värde*. Om du till exempel använder egenskapen tillgångs-ID anger du `ComplianceAssetID:<value>` i rutan för tillgångs-ID:n som visas  i följande bild.
+
+Om ett tillgångs-ID inte anges får allt innehåll med etiketter av den händelsetypen samma kvarhållningsdatum.
+
 Din organisation kan ha använt andra egenskaper och ID:n för dokument relaterade till den här händelsetypen. Om du till exempel behöver identifiera en specifik produkts poster kan ID:t vara en kombination av ditt anpassade produkt-ID och värdet ”XYZ”. I det här fallet anger du `ProductID:XYZ` i rutan för tillgångs-ID:n som visas i följande bild.
-  
-För Exchange-objekt använder du nyckelord. Du kan använda en fråga med hjälp av sökoperatorer som AND, OR och NOT (OCH, ELLER och INTE). Mer information finns i [Nyckelordsfrågor och sökvillkor för innehållssökning](keyword-queries-and-search-conditions.md).
-  
-Välj slutligen datumet då händelsen inträffade. Det här datumet används som start för kvarhållningsperioden. När du har skapat en händelse synkroniseras händelsedatumet med allt innehåll med en kvarhållningsetikett för den händelsetypen, tillgångs-ID:t och nyckelorden. Precis som för alla kvarhållningsetiketter kan den här synkroniseringen ta upp till sju dagar.
+
+Välj slutligen datumet då händelsen inträffade. Det här datumet används som start för kvarhållningsperioden. När du har skapat en händelse synkroniseras händelsedatumet med allt innehåll med en kvarhållningsetikett för den händelsetypen, tillgångs-ID:t och nyckelorden eller frågor. Precis som för alla kvarhållningsetiketter kan den här synkroniseringen ta upp till sju dagar.
   
 ![Sidan Händelseinställningar](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
@@ -280,7 +282,7 @@ Exempelkod som anropar REST API:et:
 |Parametrar|Beskrivning|Kommentar|
 |--- |--- |--- |
 |<d:Name></d:Name>|Ange ett unikt namn för händelsen|Får inte innehålla avslutande blanksteg eller följande tecken: % * \ & < \> \| # ? , : ;|
-|<d:EventType></d:EventType>|Ange namn på händelsetyp (eller GUID),|Exempel: ”Anställds uppsägning”. Händelsetypen måste associeras med en kvarhållningsetikett.|
+|<d:EventType></d:EventType>|Ange namn på händelsetyp (eller GUID),|Exempel: "Uppsägning av anställd". Händelsetypen måste associeras med en kvarhållningsetikett.|
 |<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Ange "ComplianceAssetId:" + anställnings-ID|Exempel: "ComplianceAssetId:12345"|
 |<d:EventDateTime></d:EventDateTime>|Datum och tid för händelse|Format: åååå-MM-ddTHH:mm:ssZ, Exempel: 2018-12-01T00:00:00Z
 |

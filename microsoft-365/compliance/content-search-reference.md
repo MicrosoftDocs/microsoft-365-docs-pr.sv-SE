@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Den här artikeln innehåller referensinformation om verktyget eDiscovery för innehållssökning i Microsoft 365 Efterlevnadscenter som hjälper dig få mer information om innehållssökning.
-ms.openlocfilehash: 14660b4cfcd09f5346fa8d0d901880d0a6c774c2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c66ef036e7a44e64a4e4e99aec3c81da287590d0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538489"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227277"
 ---
 # <a name="feature-reference-for-content-search"></a>Funktionsreferens för Innehållssökning
 
@@ -34,33 +34,33 @@ I den här artikeln beskrivs funktioner och funktionalitet för innehållssökni
 ## <a name="content-search-limits"></a>Begränsningar för innehållssökning
 
 En beskrivning av begränsningarna för innehållssökning finns i [Begränsningar för innehållssökning](limits-for-content-search.md).
-  
+
 ## <a name="building-a-search-query"></a>Skapa en sökfråga
 
 Detaljerad information om hur du skapar en sökfråga, använder booleska sökoperatorer och sökvillkor samt söker efter olika typer av känslig information och innehåll som delas med användare utanför organisationen finns i [Nyckelordsfrågor och sökvillkor för innehållssökning ](keyword-queries-and-search-conditions.md).
-  
+
 Tänk på följande när du använder nyckelordslistan för att skapa en sökfråga.
-  
+
 - Du måste markera kryssrutan **Visa nyckelordslista** och sedan skriva varje nyckelord på en separat rad när du skapar en sökfråga där nyckelorden (eller nyckelordsfraserna) på varje rad har kopplats samman med operatorn **OR**. Om du klistrar in en lista med nyckelord i nyckelordsrutan eller trycker på **Retur** när du har skrivit ett nyckelord kopplas de inte samman med operatorn **OR**. Här är ett felaktigt och ett korrekt exempel på hur du lägger till en lista med nyckelord.
-    
+
     **Fel**
-    
+
     ![Det felaktiga sättet att formatera en nyckelordslista (genom att klistra in listan i nyckelordsrutan)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
-  
+
     **Rätt**
-    
+
     ![Rätt sätt att formatera en nyckelordslista (genom att markera kryssrutan och sedan klistra in listan)](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
-  
-- Du kan också förbereda en lista med nyckelord eller nyckelordsfraser i en Excel-fil eller en fil med oformaterad text och sedan kopiera och klistra in listan i nyckelordslistan. För att göra det måste du markera kryssrutan **Visa nyckelordslista**. Klicka sedan på den första raden i nyckelordslistan och klistra in listan. Varje rad från Excel eller textfilen klistras in på en separat rad i nyckelordslistan. 
-    
-- När du har skapat en fråga med hjälp av nyckelordslistan bör du kontrollera frågesyntaxen för att försäkra dig om att sökfrågan ser ut som du tänkt dig. I sökfrågan som visas under **Fråga** i informationsfönstret avgränsas nyckelorden med texten **(c:s)**. Detta anger att nyckelorden är sammankopplade med en logisk operator som har en liknande funktion som operatorn **OR**. Och om sökfrågan innehåller villkor avgränsas nyckelorden och villkoren med texten **(c:c)**. Detta anger att nyckelorden är sammankopplade med en logisk operator som har en liknande funktion som operatorn **AND**. Här är ett exempel på hur en sökfråga (visas i informationsfönstret) kan se ut när du använder nyckelordslistan och ett villkor. 
-    
+
+- Du kan också förbereda en lista med nyckelord eller nyckelordsfraser i en Excel-fil eller en fil med oformaterad text och sedan kopiera och klistra in listan i nyckelordslistan. För att göra det måste du markera kryssrutan **Visa nyckelordslista**. Klicka sedan på den första raden i nyckelordslistan och klistra in listan. Varje rad från Excel eller textfilen klistras in på en separat rad i nyckelordslistan.
+
+- När du har skapat en fråga med hjälp av nyckelordslistan bör du kontrollera frågesyntaxen för att försäkra dig om att sökfrågan ser ut som du tänkt dig. I sökfrågan som visas under **Fråga** i informationsfönstret avgränsas nyckelorden med texten **(c:s)**. Detta anger att nyckelorden är sammankopplade med en logisk operator som har en liknande funktion som operatorn **OR**. Och om sökfrågan innehåller villkor avgränsas nyckelorden och villkoren med texten **(c:c)**. Detta anger att nyckelorden är sammankopplade med en logisk operator som har en liknande funktion som operatorn **AND**. Här är ett exempel på hur en sökfråga (visas i informationsfönstret) kan se ut när du använder nyckelordslistan och ett villkor.
+
     ![Exempel på en fråga som skapas när du använder nyckelordslistan och ett villkor](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
-  
+
 - När du kör en innehållssökning söker Microsoft 365 automatiskt igenom din sökfråga efter tecken som inte stöds och efter booleska operatorer som inte är versaler. Tecken som inte stöds är ofta dolda och leder vanligtvis till sökfel eller returnerar oväntade resultat. Mer information om vilka tecken som kontrolleras finns i [Kontrollera om det finns fel i din innehållssökningsfråga](check-your-content-search-query-for-errors.md).
-    
+
 - Om din sökfråga innehåller nyckelord med icke-engelska tecken (till exempel kinesiska tecken) kan du klicka på **Frågespråk-land/region**![Ikonen Frågespråk – land/region i Innehållssökning](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) och välja en kod (i formatet språk-land/region) för sökningen. Standardalternativet för språk/region är neutralt. Hur vet du om du behöver ändra språkinställningen för en innehållssökning? Om du vet att vissa innehållsplatser som du söker på innehåller icke-engelska tecken och sökningen inte returnerar några resultat kan det bero på språkinställningen.
-  
+
 ## <a name="partially-indexed-items"></a>Delvis indexerade objekt
 
 - Delvis indexerade objekt i postlådor tas med i de uppskattade sökresultaten. Delvis indexerade objekt från SharePoint och OneDrive tas inte med i de uppskattade sökresultaten. Mer information finns i [Delvis indexerade objekt i eDiscovery](partially-indexed-items-in-content-search.md).
@@ -68,21 +68,21 @@ Tänk på följande när du använder nyckelordslistan för att skapa en sökfr�
 ## <a name="searching-onedrive-accounts"></a>Söka i OneDrive-konton
 
 - Information om hur du samlar in en lista med URL-adresser för OneDrive-webbplatserna i organisationen finns i [Skapa en lista över alla OneDrive-platser i organisationen](/onedrive/list-onedrive-urls). Med skriptet i den här artikeln skapas en textfil som innehåller en lista över alla OneDrive-webbplatser. Om du vill köra det här skriptet måste du installera och använda SharePoint Online Management Shell. Se till att du lägger till URL-adressen för organisationens Min Webbplats-domän för alla OneDrive-webbplatser som du vill söka på. Det här är domänen som innehåller alla dina OneDrive-webbplatser, till exempel `https://contoso-my.sharepoint.com`. Exempel på en URL-adress för en användares OneDrive-webbplats: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
-    
+
     Om ett användarhuvudnamn (UPN) ändras, vilket är ovanligt, ändras URL-adressen för användarens OneDrive-plats för att ta med det nya användarhuvudnamnet. I så fall måste du ändra innehållssökningen genom att lägga till användarens nya OneDrive-URL och ta bort den gamla. Mer information finns i [Hur UPN-ändringar påverkar OneDrive-URL:en](/onedrive/upn-changes).
-  
+
 ## <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Söka i Microsoft Teams och Microsoft 365-grupper
 
 Du kan söka i postlådan som är kopplad till ett Microsoft Teams-team eller en Microsoft 365-grupp. Eftersom Microsoft Teams-team bygger på Microsoft 365-grupper fungerar sökningen i dem på liknande sätt. I båda fallen genomsöks bara gruppens eller teamets postlåda. Grupp- eller teammedlemmarnas postlådor genomsöks inte. Om du vill söka i dem måste du lägga till dem i sökningen.
-  
+
 Tänk på följande när du söker efter innehåll i Microsoft Teams-team och Microsoft 365-grupper.
-  
+
 - Om du vill söka efter innehåll i Teams-team och Microsoft 365-grupper måste du ange postlådan och SharePoint-webbplatsen som är kopplade till en grupp.
 
 - Innehåll från privata kanaler lagras i varje användares postlåda, inte i den gemensamma postlådan. Om du vill söka efter innehåll i privata kanaler kan du se [eDiscovery för privata kanaler](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
-    
-- Kör cmdleten **Get-UnifiedGroup** i Exchange Online om du vill visa egenskaper för ett team eller en Microsoft 365-grupp. Det här är ett bra sätt att hämta URL-adressen för den webbplatsen som är kopplad till ett team eller en grupp. Följande kommando visar till exempel valda egenskaper för en Microsoft 365-grupp som heter Senior Leadership Team: 
-    
+
+- Kör cmdleten **Get-UnifiedGroup** i Exchange Online om du vill visa egenskaper för ett team eller en Microsoft 365-grupp. Det här är ett bra sätt att hämta URL-adressen för den webbplatsen som är kopplad till ett team eller en grupp. Följande kommando visar till exempel valda egenskaper för en Microsoft 365-grupp som heter Senior Leadership Team:
+
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
   DisplayName            : Senior Leadership Team
@@ -92,33 +92,33 @@ Tänk på följande när du söker efter innehåll i Microsoft Teams-team och Mi
   ```
 
     > [!NOTE]
-    > För att kunna köra cmdleten **Get-UnifiedGroup** måste du ha tilldelats rollen View-Only Recipients i Exchange Online eller vara medlem i en rollgrupp som har tilldelats rollen View-Only Recipients. 
-  
+    > För att kunna köra cmdleten **Get-UnifiedGroup** måste du ha tilldelats rollen View-Only Recipients i Exchange Online eller vara medlem i en rollgrupp som har tilldelats rollen View-Only Recipients.
+
 - Vid en genomsökning av en användares postlåda genomsöks inte något team eller någon Microsoft 365-grupp som användaren är medlem i. Och när du söker i ett team eller i en Microsoft 365-grupp genomsöks bara den gruppostlåda och gruppwebbplats som du anger. Gruppmedlemmarnas postlådor och OneDrive för företag-konton genomsöks inte, såvida du inte uttryckligen lägger till dem i sökningen.
 
-- Om du vill hämta en lista över medlemmarna i ett team eller i en Microsoft 365-grupp kan du visa egenskaperna på sidan **Start \> Grupper** i Administrationscenter för Microsoft 365. Eller så kan du köra följande kommando i Exchange Online PowerShell: 
+- Om du vill hämta en lista över medlemmarna i ett team eller i en Microsoft 365-grupp kan du visa egenskaperna på sidan **Start \> Grupper** i Administrationscenter för Microsoft 365. Eller så kan du köra följande kommando i Exchange Online PowerShell:
 
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
   ```
 
     > [!NOTE]
-    > För att kunna köra cmdleten **Get-UnifiedGroupLinks** måste du ha tilldelats rollen View-Only Recipients i Exchange Online eller vara medlem i en rollgrupp som har tilldelats rollen View-Only Recipients. 
-  
+    > För att kunna köra cmdleten **Get-UnifiedGroupLinks** måste du ha tilldelats rollen View-Only Recipients i Exchange Online eller vara medlem i en rollgrupp som har tilldelats rollen View-Only Recipients.
+
 - De konversationer som ingår i en Teams-kanal lagras i postlådan som är kopplad till teamet. På samma sätt lagras filer som teammedlemmar delar i en kanal på teamets SharePoint-webbplats. Därför måste du lägga till teampostlådan och SharePoint-webbplatsen som en innehållsplats när du ska söka efter konversationer och filer i en kanal.
-    
+
 - Du kan också lagra konversationer som ingår i chattlistan i Teams i Exchange Online-postlådan för de användare som deltar i chatten. Och de filer som en användare delar i chattkonversationer lagras i OneDrive för företag-kontot för den användare som delar filen. Därför måste du lägga till enskilda användarpostlådor och OneDrive för företag-konton som innehållsplatser när du söker i konversationer och filer i chattlistan.
-    
+
     > [!NOTE]
     > I en Exchange-hybriddistribution kan användare med en lokal postlåda delta i konversationer som ingår i chattlistan i Teams. I så fall är innehållet i dessa konversationer också sökbart eftersom det sparas på en molnbaserad lagringsplats (en så kallad *molnbaserad postlåda för lokala användare*) för användare som har en lokal postlåda. Mer information finns i [Söka efter Teams chattdata för lokala användare](search-cloud-based-mailboxes-for-on-premises-users.md).
-  
+
 - Alla team- och gruppkanaler innehåller en wiki-sida för anteckningar och samarbete. Wiki-innehållet sparas automatiskt i en MHT-fil. Den här filen lagras i dokumentbiblioteket för Teams-wikidata på teamets SharePoint-webbplats. Med verktyget Innehållssökning kan du söka på wiki-sidan genom att ange teamets SharePoint-webbplats som innehållsplats för sökning.
 
     > [!NOTE]
     > Möjligheten att söka på wiki-sidan för en grupp eller kanal (när du söker på teamets SharePoint-webbplats) släpptes den 22 juni 2017. Du kan söka på wiki-sidor som sparats eller uppdaterats från och med det datumet. Du kan inte söka på wiki-sidor som sparats eller uppdaterats före det datumet.
 
 - Sammanfattningsinformation för möten och samtal i en Teams-kanal lagras också i postlådorna för de användare som har ringt in till mötet eller samtalet. Det betyder att du kan använda innehållssökning för att söka i sammanfattningsposterna. Sammanfattningsinformation omfattar:
-  
+
   - Datum, startdatum, sluttid och varaktighet för ett möte eller samtal
 
   - Datum och tid då varje deltagare gick med i eller lämnade mötet eller samtalet
@@ -132,7 +132,7 @@ Tänk på följande när du söker efter innehåll i Microsoft Teams-team och Mi
   Det kan ta upp till 8 timmar innan sammanfattningsposterna för möten och samtal blir tillgängliga för sökning.
 
   Mötessammanfattningar identifieras som **Möte** i fältet **Typ** i sökresultat och samtalssammanfattningar identifieras som **Samtal**. Konversationer som ingår i en Teams-kanal och gruppchattar identifieras som **Snabbmeddelande** i fältet **Typ**.
-  
+
   ![Teams-möten, samtal och gruppchattar identifieras i fältet Typ](../media/O365-ContentSearch-Teams-MessageKind.png)
 
    Mer information finns i artikeln [Microsoft Teams lanserar eDiscovery för samtal och möten](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
@@ -150,24 +150,24 @@ Tänk på följande när du söker efter innehåll i Microsoft Teams-team och Mi
   ![Kortinnehåll i Teams-kanalmeddelande](../media/CardContentTeams.png)
 
   **Kortinnehåll i sökresultat**
-  
+
   ![Samma kortinnehåll i resultatet av en innehållssökning](../media/CardContentEdiscoverySearchResults.png)
 
   > [!NOTE]
   > Om du vill visa bilder från kortinnehåll i sökresultat (till exempel bockmarkeringarna på föregående skärmbild) måste du vara inloggad i Teams (på https://teams.microsoft.com) på en annan flik i samma webbläsarsession som du använder för att visa sökresultaten. Annars visas bildplatshållare.
 
 - Du kan använda e-postegenskapen **Kind** eller sökvillkoret **Meddelandetyp** för att söka specifikt efter innehåll i Teams.
-  
+
   - Om du vill använda egenskapen **Kind** i en nyckelordsfråga skriver du `kind:microsoftteams` i rutan **Nyckelord** för en sökfråga.
 
     ![Använda kind:microsoftteams i rutan Nyckelord](../media/O365-ContentSearch-Teams-Keywords.png)
-  
+
   - Om du vill använda ett sökvillkor lägger du till **Meddelandetyp** och använder värdet `microsoftteams`.
 
     ![Använd villkoret Medddelandetyp med värdet microsoftteams.](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
    Villkor är logiskt kopplade till nyckelordsfrågan med operatorn **AND**. Det innebär att ett objekt måste matcha både nyckelordsfrågan och sökvillkoret för att returneras i sökresultatet. Mer information finns i avsnittet ”Riktlinjer för användning av villkor” i [Nyckelordsfrågor och sökvillkor för innehållssökning.](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)
-  
+
 ## <a name="searching-yammer-groups"></a>Söka i Yammer-grupper
 
 Du kan använda e-postegenskapen **ItemClass** eller sökvillkoret **Typ** för att söka specifikt efter konversationsobjekt i Yammer-grupper.
@@ -178,19 +178,19 @@ Du kan använda e-postegenskapen **ItemClass** eller sökvillkoret **Typ** för 
      - ItemClass:IPM.Yammer.poll
      - ItemClass:IPM.Yammer.praise
      - ItemClass:IPM.Yammer.question
-  
+
     Du kan till exempel använda följande sökfråga för att returnera Yammer-meddelanden och Yammer-beröm:
 
     ![Söka efter Yammer-objekt med egenskapen ItemClass](../media/YammerContentSearch1.png)
-  
-  - Du kan också använda e-postvillkoret **Typ** och välja **Yammer-meddelanden** om du vill returnera Yammer-objekt. Följande sökfråga returnerar till exempel alla Yammer-konversationsobjekt som innehåller nyckelordet ”konfidentiellt”. 
+
+  - Du kan också använda e-postvillkoret **Typ** och välja **Yammer-meddelanden** om du vill returnera Yammer-objekt. Följande sökfråga returnerar till exempel alla Yammer-konversationsobjekt som innehåller nyckelordet ”konfidentiellt”.
 
     ![Söka efter Yammer-konversationsobjekt med villkorskortet Typ](../media/YammerContentSearch2.png)
 
 ## <a name="searching-inactive-mailboxes"></a>Söka i inaktiva postlådor
 
 Du kan söka i inaktiva postlådor i en innehållssökning. Om du vill hämta en lista över inaktiva postlådor i din organisation kör du kommandot `Get-Mailbox -InactiveMailboxOnly` i Exchange Online PowerShell. Du kan också gå till **Informationsstyrning** \> **Kvarhållning** i Säkerhets- och efterlevnadscenter och sedan klicka på **Mer**![Ellips i navigeringsfält](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inaktiva postlådor**.
-  
+
 Här är några saker att tänka på vid sökning i inaktiva postlådor.
 
 - Om en användarpostlåda ingår i en befintlig innehållssökning och den postlådan inaktiveras kommer postlådan fortfarande att ingå i innehållssökningen efter att den har inaktiverats.
@@ -215,7 +215,7 @@ Här är några saker att tänka på vid sökning i inaktiva postlådor.
 
 Om Exchange Online-licensen (eller hela Microsoft 365-licensen) tas bort från ett användarkonto eller i Azure Active Directory blir användarens postlåda en *frånkopplad* postlåda. Det innebär att postlådan inte längre är kopplad till användarkontot. Det här händer när du söker i frånkopplade postlådor:
 
-- Om licensen tas bort från en postlåda blir postlådan inte längre sökbar. 
+- Om licensen tas bort från en postlåda blir postlådan inte längre sökbar.
 
 - Om en befintlig innehållssökning innehåller en postlåda som licensen har tagits bort för, returneras inga sökresultat från den frånkopplade postlådan om du kör innehållssökningen igen.
 
@@ -256,7 +256,7 @@ New-ComplianceSecurityFilter -FilterName "SPMultiGeo-APC" -Users ediscovery-apc@
 
 Tänk på följande när du söker efter innehåll i flera Multi-Geo-miljöer med hjälp av sökbehörighetsfilter:
 
-- Parametern **Region** dirigerar sökningar till den angivna satellitplatsen. Om en eDiscovery-hanterare endast söker på SharePoint- och OneDrive-webbplatser utanför den region som anges i sökbehörighetsfiltret returneras inga sökresultat. 
+- Parametern **Region** dirigerar sökningar till den angivna satellitplatsen. Om en eDiscovery-hanterare endast söker på SharePoint- och OneDrive-webbplatser utanför den region som anges i sökbehörighetsfiltret returneras inga sökresultat.
 
 - Parametern **Region** kontrollerar inte sökningar i Exchange-postlådor. Alla datacenter genomsöks när du söker i postlådor.
 

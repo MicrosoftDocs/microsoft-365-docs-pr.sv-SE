@@ -1,0 +1,8 @@
+- name: M365 Office LTI (förhandsversion)
+  href: index.md
+- name: Använda Microsoft OneDrive LTI med Canvas (förhandsversion)
+  href: onedrive-lti.md
+- name: Använda Microsoft Teams-klasser med Canvas (förhandsversion)
+  href: teams-classes-with-canvas.md
+- name: Använda Microsoft Teams möten med Canvas (förhandsversion)
+  href: teams-meetings-with-canvas.md

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du skapar, ändrar, tar bort och testar anpassade typer av känslig information för DLP i Säkerhets- & säkerhets- och efterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227157"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256729"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Komma igång med anpassade typer av känslig information
 
@@ -182,10 +182,16 @@ Här finns definitioner och några exempel för tillgängliga ytterligare kontro
 
 
 > [!NOTE]
-> Microsoft 365 Information Protection har i förhandsversionen stöd för teckenuppsättningsspråk med dubbla byte för:
+> Microsoft 365 Informationsskydd har stöd för språk med dubbla byte-teckenuppsättning för:
 > - Kinesiska (förenklad)
 > - Kinesiska (traditionell)
 > - Koreanska
 > - Japanska
 >
 >Stödet är tillgängligt för typer av känslig information. Se [Viktig information gällande stöd i Information Protection för teckenuppsättningar med dubbla byte (förhandsversion)](mip-dbcs-relnotes.md) för mer information.
+
+> [!TIP]
+> Om du vill identifiera mönster som innehåller kinesiska/japanska tecken och single byte-tecken eller för att identifiera mönster som innehåller kinesiska/japanska och engelska definierar du två varianter av nyckelordet eller regex. Om du till exempel vill identifiera ett nyckelord som "机密的document" använder du två varianter av nyckelordet: En med ett blanksteg mellan japansk och engelsk text och en annan utan blanksteg mellan japansk och engelsk text. Nyckelorden som ska läggas till i SIT bör därför vara "机密的 document" och "机密的document". Om du vill hitta frasen "リ京オリンピック2020" bör du använda två varianter. "リ京オリンピック 2020" och "リ京オリンピック2020".
+> När du skapar ett regex med ett bindestreck med dubbla byte eller en punkt med dubbla byte, måste du undvika båda tecknen som ett bindestreck eller punkt i en regex. Här är ett exempel på en regex som referens:
+    - (?<!\d) ([4][0–9] {3} [ \- ?\-\t]*[0-9]{4}
+> Vi rekommenderar att du använder en strängmatchning i stället för en matchning mellan ord i en nyckelordslista.

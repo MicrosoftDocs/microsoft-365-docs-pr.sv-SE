@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Behöver du en lösning för hantering av arkivhandlingar för Microsoft 365 för att hantera värdefullt innehåll för rättsliga, affärsmässiga eller regelmässiga skyldigheter, men är osäker på var du ska börja? Läs några praktiska råd för att komma igång.
-ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 173086799e4ae7cec3192f95248f0a7f26a10552
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244350"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226581"
 ---
 # <a name="get-started-with-records-management"></a>Komma igång med hantering av arkivhandlingar
 
@@ -30,14 +30,14 @@ ms.locfileid: "52244350"
 
 Är du redo att börja hantera organisationens högt värderade innehåll för rättsliga, affärsmässiga eller regelmässiga skyldigheter genom att använda en lösning för hantering av arkivhandlingar i Microsoft 365? Använd följande anvisningar för att komma igång:
 
-1. **Förstå lösningen för hantering av arkivhandlingar** och vilka åtgärder som tillåts eller blockeras när dokument och e-postmeddelanden är deklarerade arkivhandlingar: [Mer information om hantering av arkivhandlingar](records-management.md). 
+1. **Förstå lösningen för hantering av arkivhandlingar** och vilka åtgärder som tillåts eller blockeras när dokument och e-postmeddelanden är deklarerade arkivhandlingar: [Mer information om hantering av arkivhandlingar](records-management.md).
 
 2. **Förstå kvarhållningsetiketter och hur kvarhållning fungerar** för SharePoint och Exchange, eftersom kvarhållningsetiketter används för att deklarera arkivhandlingar: [Mer information om kvarhållningsprinciper och kvarhållningsetiketter](retention.md)
 
-3. **Skapa en filplan för kvarhållningsinställningar och åtgärder** genom att [importera en befintlig plan](file-plan-manager.md#import-retention-labels-into-your-file-plan ) om du har en sådan eller skapa [nya kvarhållningsetiketter som deklarerar arkivhandlingar](declare-records.md).
+3. **Skapa en filplan för kvarhållningsinställningar och åtgärder** genom att [importera en befintlig plan](file-plan-manager.md#import-retention-labels-into-your-file-plan) om du har en sådan eller skapa [nya kvarhållningsetiketter som deklarerar arkivhandlingar](declare-records.md).
 
-4. **Publicera och använda kvarhållningsetiketter**. Kvarhållningsetiketter är återanvändbara byggblock som kan användas i flera principer och läggas till i användarnas arbetsflöden: 
-    
+4. **Publicera och använda kvarhållningsetiketter**. Kvarhållningsetiketter är återanvändbara byggblock som kan användas i flera principer och läggas till i användarnas arbetsflöden:
+
     - [Skapa kvarhållningsetiketter och använda dem i appar](create-apply-retention-labels.md)
     - [Använda en kvarhållningsetikett för innehåll automatiskt](apply-retention-labels-automatically.md)
 
@@ -49,9 +49,9 @@ Om du vill se licensalternativen för att användarna ska kunna dra nytta av eft
 
 ## <a name="permissions-required-for-records-management"></a>Behörigheter som krävs för hantering av arkivhandlingar
 
-Medlemmar i efterlevnadsteamet som ansvarar för hantering av arkivhandlingar behöver behörighet till [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/). Som standard har klientadministratören (global administratör) åtkomst till den här platsen och kan ge ansvariga för uppfyllelse av myndighetskrav och andra personer åtkomst utan att ge dem alla behörigheter en klientadministratör har. För att bevilja behörigheter för den här begränsade administrationen rekommenderar vi att du lägger till användare i administratörsrollgruppen för **hantering av arkivhandlingar**. Då beviljas behörigheter för alla funktioner som hör till hantering av arkivhandlingar, till exempel [borttagningsgranskning och verifiering](disposition.md). 
+Medlemmar i efterlevnadsteamet som ansvarar för hantering av arkivhandlingar behöver behörighet till [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/). Som standard har klientadministratören (global administratör) åtkomst till den här platsen och kan ge ansvariga för uppfyllelse av myndighetskrav och andra personer åtkomst utan att ge dem alla behörigheter en klientadministratör har. För att bevilja behörigheter för den här begränsade administrationen rekommenderar vi att du lägger till användare i administratörsrollgruppen för **hantering av arkivhandlingar**. Då beviljas behörigheter för alla funktioner som hör till hantering av arkivhandlingar, till exempel [borttagningsgranskning och verifiering](disposition.md).
 
-För skrivskyddade roller kan du skapa en ny rollgrupp och lägga till rollen för **skrivskyddad hantering av arkivhandlingar** i den här gruppen. 
+För skrivskyddade roller kan du skapa en ny rollgrupp och lägga till rollen för **skrivskyddad hantering av arkivhandlingar** i den här gruppen.
 
 Mer information om rollgrupper och roller finns i [Behörigheter i Säkerhets- och efterlevnadscenter](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 

@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du importerar data från tredje part från plattformar för sociala medier, snabbmeddelandeplattformar och dokumentsamarbete till Microsoft 365 postlådor.
-ms.openlocfilehash: acd7f9ee838308b277f725e5b7d80c69c6407b59
-ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
+ms.openlocfilehash: 76df1ffa7afdeeda9a35744e9e4bfffae4576ca9
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53243965"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276959"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Arkivera data från tredje part i Microsoft 365
 
@@ -107,7 +107,7 @@ Tabellen i det här avsnittet innehåller de datakopplingar från tredje part so
 
 Innan du kan arkivera data från tredje Microsoft 365 måste du arbeta med TeleMessage och konfigurera deras arkiveringstjänst för organisationen. Om du vill ha mer information klickar du på länken i **datakolumnen** från tredje part om du vill gå till steg-för-steg-instruktionerna för att skapa en koppling för den datatypen.
 
-TeleMessage-dataanslutningar är också tillgängliga GCC miljöer i Microsoft 365 för myndigheter i USA. Mer information finns i avsnittet Dataanslutningar i molnet för myndigheter i USA i den här artikeln.
+TeleMessage-dataanslutningar är också tillgängliga GCC miljöer i Microsoft 365 för myndigheter i USA. Mer information finns i avsnittet [Dataanslutningar i molnet för myndigheter i USA i](#data-connectors-in-the-us-government-cloud) den här artikeln.
 
 |Data från tredje part  |Bevarande av juridiska skäl|eDiscovery  |Inställningar för bevarande  |Hantering av arkivhandlingar  |Kommunikationsefterlevnad  |Hantering av insiderrisk  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|

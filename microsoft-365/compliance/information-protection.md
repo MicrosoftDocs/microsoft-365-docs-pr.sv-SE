@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implementera Microsoft Information Protection (MIP) som hjälper dig att skydda känslig information var du än befinner dig eller på språng.
-ms.openlocfilehash: 1d8e0340e518bcc66399dcc667e030efca89316a
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bca6ce0dabaa9db2444da374b5d3ee166154fdd8
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055100"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226545"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection i Microsoft 365.
 
@@ -43,12 +43,12 @@ Information om hur du styr dina data finns i [Informationsstyrning i Microsoft 3
 > Information om omfattningen om hur du klassificerar och etiketterar data i Azure Purview, som för närvarande är i förhandsversion, finns i[ Märka innehållet i Azure Purview automatiskt](/azure/purview/create-sensitivity-label).
 
 För att förstå datalandskapet och identifiera viktiga data i hybridmiljön använder du följande funktioner:
- 
+
 |Funktion|Vilka problem löser den?|Komma igång|
 |:------|:------------|:--------------------|
 |[Typer av känslig information](sensitive-information-type-learn-about.md)| Identifierar känsliga data med inbyggda eller anpassade reguljära uttryck eller en funktion. Samarbetsbevis som omfattar nyckelord, konfidensnivåer och närhet.| [Anpassa en inbyggd typ av känslig information](customize-a-built-in-sensitive-information-type.md)|
 |[Utbildningsbara klassificerare](classifier-learn-about.md)| Identifierar känsliga data med hjälp av exempel på data som du är intresserad av i stället för att identifiera element i objektet (mönstermatchning). Du kan använda inbyggda klassificerare eller träna en klassificerare med ditt eget innehåll.| [Kom igång med utbildningsbara klassificerare](classifier-get-started-with.md) |
-|[Dataklassificering](data-classification-overview.md) | En grafisk identifiering av objekt i organisationen som har en känslighetsetikett, en kvarhållningsetikett eller som har klassificeras. Du kan också använda den här informationen för att få insights om vad användarna gör med de här objekten. | [Kom igång med innehållsutforskaren](data-classification-content-explorer.md)<br /><br /> [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md) |
+|[Dataklassificering](data-classification-overview.md) | En grafisk identifiering av objekt i organisationen som har en känslighetsetikett, en kvarhållningsetikett eller som har klassificeras. Du kan också använda den här informationen för att få insights om vad användarna gör med de här objekten. | [Kom igång med innehållsutforskaren](data-classification-content-explorer.md) <p> [Kom igång med aktivitetsutforskaren](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>Skydda dina data
 
@@ -56,16 +56,16 @@ Om du vill använda flexibla skyddsåtgärder som inkluderar kryptering, åtkoms
 
 |Funktion|Vilka problem löser den?|Komma igång|
 |:------|:------------|---------------------|
-|[Känslighetsetiketter](sensitivity-labels.md)| En lösning för alla program, tjänster och enheter som kan märka och skydda dina data när de färdas inom och utanför organisationen. <br /><br />Exempelscenarier: <br /> [Använda känslighetsetiketter för Office-appar](sensitivity-labels-office-apps.md)<br /> [Kryptera dokument och e-postmeddelanden](encryption-sensitivity-labels.md )<br /> [Använda och visa etiketter i Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> En fullständig lista över scenarier för känslighetsetiketter finns i komma igång-dokumentationen.|[Kom igång med känslighetsetiketter](get-started-with-sensitivity-labels.md) |
-|[Azure Information Protection-klienten för enhetliga etiketter:](/azure/information-protection/rms-client/aip-clientv2)| För Windows-datorer utökar känslighetsetiketterna för ytterligare egenskaper och funktioner, inklusive etikettering och skydd av alla filtyper från Utforskaren och PowerShell<br /><br /> Exempel på ytterligare funktioner: [Anpassade konfigurationer för Azure Information Protection-klienten för enhetliga etiketter](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Administratörsguiden för Azure Information Protection-klienten för enhetliga etiketter](/azure/information-protection/rms-client/clientv2-admin-guide)|
+|[Känslighetsetiketter](sensitivity-labels.md)| En lösning för alla program, tjänster och enheter som kan märka och skydda dina data när de färdas inom och utanför organisationen. <p> Exempelscenarier: <p> [Använda känslighetsetiketter för Office-appar](sensitivity-labels-office-apps.md) <p> [Kryptera dokument och e-postmeddelanden](encryption-sensitivity-labels.md) <p> [Använda och visa etiketter i Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <p> En fullständig lista över scenarier för känslighetsetiketter finns i komma igång-dokumentationen.|[Komma igång med känslighetsetiketter](get-started-with-sensitivity-labels.md) |
+|[Azure Information Protection-klienten för enhetliga etiketter:](/azure/information-protection/rms-client/aip-clientv2)| För Windows-datorer utökar känslighetsetiketterna för ytterligare egenskaper och funktioner, inklusive etikettering och skydd av alla filtyper från Utforskaren och PowerShell <p> Exempel på ytterligare funktioner: [Anpassade konfigurationer för Azure Information Protection-klienten för enhetliga etiketter](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Administratörsguiden för Azure Information Protection-klienten för enhetliga etiketter](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Kryptering med dubbla nycklar](double-key-encryption.md)| Under alla förhållanden är det bara organisationen som kan dekryptera skyddat innehåll eller för att uppfylla gällande bestämmelser måste du hålla krypteringsnycklar inom en geografisk gräns. | [Distribuera kryptering med dubbla nycklar](double-key-encryption.md#deploy-dke)|
-|[Meddelandekryptering i Office 365 (OME)](ome.md)| Krypterar e-postmeddelanden och bifogade dokument som skickas till alla användare på valfri enhet, så att endast behöriga mottagare kan läsa information som skickas via e-post.  <br /><br />Exempelscenario: [Återkalla e-post som krypterats med Advanced Message Encryption](revoke-ome-encrypted-mail.md) | [Konfigurera nya funktioner för meddelandekryptering](set-up-new-message-encryption-capabilities.md)|
+|[Meddelandekryptering i Office 365 (OME)](ome.md)| Krypterar e-postmeddelanden och bifogade dokument som skickas till alla användare på valfri enhet, så att endast behöriga mottagare kan läsa information som skickas via e-post. <p> Exempelscenario: [Återkalla e-post som krypterats med Advanced Message Encryption](revoke-ome-encrypted-mail.md) | [Konfigurera nya funktioner för meddelandekryptering](set-up-new-message-encryption-capabilities.md)|
 |[Tjänst kryptering med kundnyckel](customer-key-overview.md) | Skyddar mot visning av data av obehöriga system eller personal och kompletterar BitLocker-diskkryptering i Microsofts datacenter. | [Konfigurera Customer Key för Office 365](customer-key-set-up.md)|
 |[SharePoint Information Rights Management (IRM).](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Skyddar SharePoint-listor och SharePoint-bibliotek så att den nedladdade filen skyddas när en användare checkar ut ett dokument så att endast behöriga användare kan visa och använda filen enligt principer som du anger. | [Konfigurera Information Rights Management (IRM) i SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
 [Rights Management anslutningsprogram](/azure/information-protection/deploy-rms-connector) |Skydd endast för befintliga lokala distributioner som använder Exchange eller SharePoint Server, eller filservrar som kör Windows Server och File Classification Infrastructure (FCI). | [Steg för att distribuera RMS-anslutningsprogram](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure Information Protection-skanner för enhetliga etikett:](/azure/information-protection/deploy-aip-scanner)| Identifierar, etiketterar och skyddar känslig information som finns i lokala datalager. | [Konfigurera och installera Azure Information Protection-skanner för enhetliga etikettskanner](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)| Identifierar, etiketterar och skyddar känslig information som finns i molnet. | [Upptäck, klassificera, märka och skydda känsliga och reglerade data som lagras i molnet](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|Utökar känslighetsetiketter till appar och tjänster från tredje part.  <br /><br /> Exempelscenario: [Ange och få en känslighetsetikett ( C++ )](/information-protection/develop/quick-file-set-get-label-cpp) |[Installation och konfiguration av SDK för Microsoft Information Protection (MIP)](/information-protection/develop/setup-configure-mip)|
+|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|Utökar känslighetsetiketter till appar och tjänster från tredje part. <p> Exempelscenario: [Ange och få en känslighetsetikett ( C++ )](/information-protection/develop/quick-file-set-get-label-cpp) |[Installation och konfiguration av SDK för Microsoft Information Protection (MIP)](/information-protection/develop/setup-configure-mip)|
 
 
 ## <a name="prevent-data-loss"></a>Förhindra dataförlust
