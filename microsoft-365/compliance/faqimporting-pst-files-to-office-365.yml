@@ -18,12 +18,12 @@ metadata:
   ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
   ms.custom: seo-marvel-apr2020
   description: Den här artikeln innehåller svar på några vanliga frågor för administratörer om hur du importerar PST-filer Microsoft 365 använder Office 365 importtjänsten.
-  ms.openlocfilehash: 27fa3b93b53a497fcff63524b04f427049bac412
-  ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+  ms.openlocfilehash: 4340285e6c7cff857e3f3de771ec6e67d4ce010c
+  ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
   ms.translationtype: MT
   ms.contentlocale: sv-SE
-  ms.lasthandoff: 04/28/2021
-  ms.locfileid: "52090641"
+  ms.lasthandoff: 07/02/2021
+  ms.locfileid: "53276947"
 title: Vanliga frågor om import av PST-filer
 summary: "**Den här artikeln är för administratörer. Vill du importera PST-filer till din egen postlåda? Läs [Importera e-post, kontakter och kalender från en Outlook PST-fil](https://go.microsoft.com/fwlink/p/?LinkID=785075)**\n\nHär är några vanliga frågor om hur du Office 365 importtjänsten för att massimporterar PST-filer till Microsoft 365 postlådor. Mer information om hur du importerar PST-filer finns i [Översikt över import av PST-filer till Office 365.](./importing-pst-files-to-office-365.md)\n  \n## <a name=\"using-network-upload-to-import-pst-files\"></a>Importera PST-filer via nätverksuppladdning\n\nStegvisa anvisningar finns i Använda nätverksuppladdning [för att importera PST-filer till Office 365](use-network-upload-to-import-pst-files.md).\n"
 sections:
@@ -72,12 +72,9 @@ sections:
       Kan jag använda nätverksuppladdning för att importera PST-filer till gemensamma mappar i Exchange Online?
     answer: >
       Nej, du kan inte importera PST-filer till gemensamma mappar.
-
-
-      ## <a name="using-drive-shipping-to-import-pst-files"></a>Importera PST-filer med hjälp av enhetsleverans
-
-
-      Stegvisa anvisningar finns i Använda hårddiskleverans [för att importera PST-filer till en Office 365.](use-drive-shipping-to-import-pst-files-to-office-365.md)
+  - question: >
+      Finns det några skärmupplösningskrav när jag skapar ett importjobb för nätverksuppladdning?
+    answer: "Om skärmupplösningen på den lokala datorn är inställd på 1366 x 768 kan det uppstå problem när du ska skapa ett importjobb. Om så är fallet rekommenderar vi att du ändrar skärmupplösningen till en annan inställning och sedan skapar ett nytt importjobb. Vi arbetar med att lösa det här problemet.     \n\n\n\n## <a name=\"using-drive-shipping-to-import-pst-files\"></a>Importera PST-filer med hjälp av enhetsleverans\n\nStegvisa anvisningar finns i Använda hårddiskleverans [för att importera PST-filer till en Office 365.](use-drive-shipping-to-import-pst-files-to-office-365.md)\n"
   - question: >
       Vilka behörigheter krävs för att skapa importjobb i Office365-importtjänsten?
     answer: "Du måste vara tilldelad rollen Import/export av postlåda för att kunna importera PST-filer till Microsoft 365-postlådor. Som standard är den här rollen inte tilldelad en rollgrupp i Exchange Online. Du kan lägga till rollen Import/export av postlåda i rollgruppen Organisationshantering. Eller så kan du skapa en ny rollgrupp, tilldela rollen Import/export av postlåda och sedan lägga till dig själv eller andra användare som medlemmar. Mer information finns i avsnitten ”Lägg till en roll i rollgrupp” och ”Skapa en rollgrupp” i [Hantera rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).\n  \nOm du ska skapa importjobb i Säkerhets- och efterlevnadscenter måste dessutom något av följande stämma:\n  \n- Du har tilldelats rollen E-postmottagare i Exchange Online. Som standard är den här rollen tilldelad rollgrupperna Organisationshantering och Hantering av mottagare.\n    \n    Eller\n    \n- Du måste vara global administratör i din organisation.\n    \n> [!TIP]\n> Du kan skapa en ny rollgrupp i Exchange Online som är specifikt avsedd att importera PST-filer till Office 365. För den lägsta nivån av behörighet som krävs för att importera PST-filer tilldelar du rollerna Import/export av postlåda och E-postmottagare till den nya rollgruppen och lägger sedan till medlemmar. \n  \n"
@@ -162,4 +159,8 @@ sections:
       Ja.
   - question: >
       Om jag måste skicka min hårddisk till ett annat land, finns det något särskilt jag behöver tänkta på?
-    answer: Hårddisken som du skickar till Microsoft kan behöva korsa internationella gränslinjer. I så fall är du ansvarig för att säkerställa att hårddisken och de data den innehåller importeras och/eller exporteras i enlighet med gällande lagstiftning. Fråga dina rådgivare för att försäkra dig om att din hårddisk och dina data lagligt kan skickas till det angivna Microsoft-datacentret innan du skickar hårddisken. Det här gör det lättare att se till att det når Microsoft i tid.
+    answer: >
+      Hårddisken som du skickar till Microsoft kan behöva korsa internationella gränslinjer. I så fall är du ansvarig för att säkerställa att hårddisken och de data den innehåller importeras och/eller exporteras i enlighet med gällande lagstiftning. Fråga dina rådgivare för att försäkra dig om att din hårddisk och dina data lagligt kan skickas till det angivna Microsoft-datacentret innan du skickar hårddisken. Det här gör det lättare att se till att det når Microsoft i tid.
+  - question: >
+      Finns det några skärmupplösningskrav när jag skapar ett importjobb för att skicka in en hårddisk?
+    answer: Om skärmupplösningen på den lokala datorn är inställd på 1366 x 768 kan det uppstå problem när du ska skapa ett importjobb. Om så är fallet rekommenderar vi att du ändrar skärmupplösningen till en annan inställning och sedan skapar ett nytt importjobb. Vi arbetar med att lösa det här problemet.
