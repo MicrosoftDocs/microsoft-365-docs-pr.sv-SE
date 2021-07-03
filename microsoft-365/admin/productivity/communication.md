@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om kommunikationen – Produktivitetsresultat.
-ms.openlocfilehash: b744f9631deabb9c7bc97ab6a0cf1ba8fc61c5dd
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 3ea17bb859fc02343a97033fa65e830f305b69cf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779752"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286135"
 ---
 # <a name="communication--people-experiences"></a>Kommunikation – upplevelser för personer
 
@@ -42,7 +42,7 @@ Mer information finns i [tilldela licenser till användare.](../manage/assign-li
 
 När användare har varit aktiva i ovanstående produkter minst en gång under de senaste 28 dagarna börjar du se insikterna.
 
-## <a name="why-your-organizations-communication-score-matters"></a>Därför är organisationens kommunikationsresultat viktigt 
+## <a name="why-your-organizations-communication-score-matters"></a>Därför är organisationens kommunikationsresultat viktigt
 
 Microsoft förstår att personer har olika kommunikationsbehov. Om du vill få ett snabbt svar på en fråga kan du välja att skicka ett snabbmeddelande. Om du vill skicka statusuppdateringar till din ledning kan du välja ett e-postmeddelande. Om du vill nå en bredare målgrupp kan du välja att publicera ett community-meddelande. Microsoft 365 här flexibiliteten i kommunikationslägen så att de passar allas behov. Forskning visar att användning av kommunikationsverktyg i realtid skapar en mer enhetlig organisation och bygger upp moral, oavsett plats.
 
@@ -62,14 +62,14 @@ Microsoft 365 för att ge alla möjlighet att anpassa kommunikationsformatet gen
    - Skicka meddelanden via Teams
    - Publicera på communities i Yammer
 
-   Det här nyckeltal visas som procent av alla personer som använder två eller flera personer Exchange, Teams eller Yammer. 
+   Det här nyckeltal visas som procent av alla personer som använder två eller flera personer Exchange, Teams eller Yammer.
 
 2. **Brödtext:** Ger mer information om hur flexibilitet i kommunikationslägena är värdefullt för personer i organisationen.
 
 3. **Visualisering av aktuellt tillstånd:**
 
    - Vågrät stapel där den blå delen representerar procentandelen uttryckt i sidhuvudet
-   - Höjdpunkter den (täljare/nämnare) som används för att beräkna procentsatsen uttryckt i rubriken:
+   - Markerar den (täljare/nämnare) som används för att beräkna procentsatsen uttryckt i rubriken:
      - **Täljare:**# av personer som använder mer än ett kommunikationsläge under de senaste 28 dagarna
      - **Nämnare:**# av personer som markerats som aktiverade för mer än en kommunikationsprodukt de senaste 28 dagarna
    - **Peer Benchmark-värdet** för det viktiga värdet visas också som procent
@@ -84,7 +84,7 @@ Microsoft 365 för att ge alla möjlighet att anpassa kommunikationsformatet gen
 
 ### <a name="scoring-model"></a>Poängmodell
 
-Kommunikationsresultatet för organisationens åtgärder på en aggregerad (organisations)nivå om personer konsekvent kommunicerar med flera lägen för e-post, chatt och community-inlägg under ett 28-dagarsfönster.  
+Kommunikationsresultatet för organisationens åtgärder på en aggregerad (organisations)nivå om personer konsekvent kommunicerar med flera lägen för e-post, chatt och community-inlägg under ett 28-dagarsfönster.
 
 Resultat anges inte på användarnivå.
 
@@ -96,49 +96,49 @@ Vi ger dig även information som hjälper dig att få insyn i hur din organisati
 
 :::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Uppdelning av kommunikationslägen.]":::
 
-1. **Rubrik:** Höjdpunkter målet med insikten att ge en detaljerad uppdelning över de olika kommunikationslägen som beaktas i kommunikationen.
+1. **Sidhuvud:** Framhäver målet med insikten för att ge en detaljerad uppdelning över de olika kommunikationslägen som beaktas inom kommunikation.
 
 2. **Brödtext:** Innehåller information om värdet av att använda olika lägen för att dela kunskaper.
 
 3. **Visualisering:** Fördelningen motsvarar användningen för varje läge. Den färgade delen och bråktalet på varje stapel representerar antalet personer som skickar e-postmeddelanden, meddelanden eller community-inlägg som en procentandel av antalet personer som aktiverats för det läget:
 
    - **Personer som skickar e-postmeddelanden:** Den färgade delen och bråket representerar procentandelen användare som aktiverats för Exchange som skickar e-postmeddelanden. Bråket är uppbyggt av:
-   
+
      - **Täljare:** Personer som skickat e-postmeddelanden de senaste 28 dagarna.
      - **Nämnare:** Personer som aktiverats för Exchange de senaste 28 dagarna.
-     
+
    - **Personer som skickar meddelanden Microsoft Teams:** Den färgade delen och bråket representerar procentandelen användare som aktiverats för Microsoft Teams som skickar meddelanden. Bråket är uppbyggt av:
-   
+
      - **Täljare:** Personer som skickar Microsoft Teams meddelanden de senaste 28 dagarna.
      - **Nämnare: Personer** som aktiverats för Microsoft Teams de senaste 28 dagarna.
-     
+
    - **Personer som publicerar i communities:** Den färgade delen och bråket representerar procentandelen användare som aktiverats för Yammer som publicerar i communities. Bråket är uppbyggt av:
-   
+
      - **Täljare:** Personer som publicerar Yammer grupper de senaste 28 dagarna.
      - **Nämnare:** Personer som aktiverats Yammer de senaste 28 dagarna.
-          
+
 4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälpinnehåll.
 
 ### <a name="mentions-in-emails"></a>@mentions i e-postmeddelanden
 
 :::image type="content" source="../../media/emailmentions.png" alt-text="! [E-postmeddelanden med omnämnanden.]":::
 
-1. **Sidhuvud:** Höjdpunkter den ökade svarshastigheten för nya e-posttrådar som startats de senaste 28 dagarna när de innehåller @mentions.
+1. **Sidhuvud:** Markerar den ökade svarshastigheten för nya e-posttrådar som startats de senaste 28 dagarna när de innehåller @mentions.
 
 2. **Brödtext:** Innehåller information om värdet för att använda @mentions i e-postmeddelanden. Dessutom uttrycks personer som använder @mentions som en procentandel av alla användare som har skickat ett e-postmeddelande de senaste 28 dagarna.
 
 3. **Visualisering:** Bryter ned svarsfrekvensen för nya e-posttrådar baserat på om de @mentions eller inte:
 
    - **Svar på \@ e-postmeddelanden med omnämnanden:** Den färgade delen och bråket representerar svarsfrekvensen för nya e-posttrådar som @mentions. Bråket är uppbyggt av:
-   
+
      - **Täljare:** Nya e-posttrådar @mentions har startats och fått ett svar under de senaste 28 dagarna.
      - **Nämnare:** Nya e-posttrådar @mentions som har startats de senaste 28 dagarna.
-     
+
    - **Svar på e-postmeddelanden \@ utan omnämnanden:** Den färgade delen och bråket representerar svarsfrekvensen för nya e-posttrådar som @mentions. Bråket är uppbyggt av:
-   
+
      - **Täljare:** Nya e-posttrådar som inte innehåller @mentions, som startades och också fick ett svar under de senaste 28 dagarna.
      - **Nämnare:** Nya e-posttrådar som inte @mentions som har startats de senaste 28 dagarna.
-     
+
 4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälpinnehåll.
 
 
@@ -146,29 +146,29 @@ Vi ger dig även information som hjälper dig att få insyn i hur din organisati
 
 :::image type="content" source="../../media/teamsmessages.png" alt-text="! [Teams meddelandetyper.]":::
 
-1. **Rubrik:** Höjdpunkter personer som har skickat kanalmeddelanden som en procentandel av personer som skickat någon typ av meddelande (inklusive chatt- och kanalmeddelanden) de senaste 28 dagarna.
+1. **Sidhuvud:** Markerar de personer som har skickat kanalmeddelanden som en procentandel av de personer som skickat någon typ av meddelande (inklusive chatt- och kanalmeddelanden) under de senaste 28 dagarna.
 
 2. **Brödtext:** Innehåller information om värdet för att använda kanalmeddelanden i Microsoft Teams.
 
 3. **Visualisering:** Bryter ned användningen av chatt- och kanalmeddelanden:
 
       - **Personer som skickar chattmeddelanden:** Den färgade delen och bråket representerar användningen av chattmeddelanden i personer som har skickat meddelanden på Microsoft Teams. Bråket är uppbyggt från:
-      
+
         - **Täljare:** Personer som skickat chattmeddelanden på Microsoft Teams de senaste 28 dagarna.
         - **Nämnare:** Personer som skickat meddelanden den Microsoft Teams de senaste 28 dagarna.
-        
+
       - **Personer som skickar kanalmeddelanden:** Den färgade delen och bråket representerar användningen av kanalmeddelanden i personer som skickar meddelanden Microsoft Teams. Bråket är uppbyggt från:
-      
+
         - **Täljare:** Personer som har skickat kanalmeddelanden Microsoft Teams de senaste 28 dagarna.
         - **Nämnare:** Personer som skickat meddelanden den Microsoft Teams de senaste 28 dagarna.
-        
+
 4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälpinnehåll.
 
 ### <a name="questions-and-answers-in-yammer"></a>Frågor och svar i Yammer
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Frågor och svar i Yammer]"::: 
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Frågor och svar i Yammer]":::
 
-1. **Sidhuvud:** Höjdpunkter de inlägg som markerats som frågor på Yammer som har fått ett svar markerat som bästa svar som procent av alla inlägg som markerats som frågor Yammer &quot; &quot; de senaste 28 dagarna.
+1. **Sidhuvud:** Markerar de inlägg som markerats som frågor på Yammer som har fått ett svar markerat som Bästa svar som en procentandel av alla inlägg som markerats som frågor Yammer &quot; &quot; de senaste 28 dagarna.
 
 2. **Brödtext:** Ger information om värdet av att använda frågor och svar i Yammer att dela kunskaper.
 
@@ -177,7 +177,7 @@ Vi ger dig även information som hjälper dig att få insyn i hur din organisati
    - **Frågor:** Den färgade delen av fältet och tillhörande nummer representerar det totala antalet inlägg som har markerats som frågor de senaste 28 dagarna.
    - **Frågor med svar:** Den färgade delen av fältet och det associerade antalet representerar antalet inlägg som har markerats som frågor och har fått svar under de senaste 28 dagarna.
    - **Frågor med bästa svar:** Den färgade delen av fältet och det associerade talet representerar antalet inlägg som har markerats som frågor och även fått ett bästa svar under de &quot; &quot; senaste 28 dagarna.
-      
+
 4. **Visa relaterat innehåll:** Välj den här länken om du vill visa sorterade videoklipp och annat relaterat hjälpinnehåll.
 
 ## <a name="related-content"></a>Relaterat innehåll

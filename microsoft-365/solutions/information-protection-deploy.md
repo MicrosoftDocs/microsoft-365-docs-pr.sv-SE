@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: Konfigurera informationsskydd i Microsoft 365 för dataskyddsföreskrifter som GDPR och California Consumer Privacy Act (CCPA), inklusive Microsoft Teams, SharePoint och e-post.
-ms.openlocfilehash: 76bac526dbf648b402c14b3304e32a308219bf02
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c0ffe7cf850ec6e7ae8c974f983ce43668bf6f30
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229209"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287717"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Distribuera informationsskydd för bestämmelser om datasekretess med Microsoft 365
 
@@ -33,6 +33,11 @@ Exempel på datatyper i Microsoft 365 är chattsessioner i Microsoft Teams, e-po
 ![Vad är informationsskydd för bestämmelser om datasekretess](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
 Ytterligare information ges också om hur du använder Microsoft 365, kontroller av identitet, enhet och hot för dina datasekretessbehov.
+
+Titta på den här videon för att få en översikt över distributionsprocessen.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4NHCQ]
 
 De Microsoft 365 funktioner hjälper dig att uppfylla kriterierna för att skydda information.
 
@@ -105,3 +110,26 @@ Det finns Microsoft 365 funktioner som hjälper dig att övervaka, undersöka oc
 Att ha processer, procedurer och annan dokumentation för att använda dessa funktioner kan vara viktigt för att visa efterlevnad för reglerande myndigheter.
 
 Mer information finns i Övervaka [och svara på sekretessincidenter för data i din organisation.](information-protection-deploy-monitor-respond.md)
+
+## <a name="training-for-administrators"></a>Utbildning för administratörer
+
+De här utbildningsmodulerna från Microsoft Learn kan hjälpa dig att lära dig mer om funktioner som är viktiga för informationsskydd.
+
+
+#### <a name="information-protection"></a>Informationsskydd
+
+|Utbildning:|Skydda företagsinformation med Microsoft 365|
+|:---|:---|
+|![Teams för utbildning om informationsskydd](../media/protect-enterprise-information-microsoft-365.svg)|Det är svårare än någonsin att skydda och skydda organisationens information. I utbildningsvägen Skydda företagsinformation med Microsoft 365 diskuteras hur du skyddar känslig information från att oavsiktligt skriva över eller felaktigt använda data, hur du identifierar och klassificerar data, hur du skyddar dem med känslighetsetiketter och hur du både övervakar och analyserar din känsliga information för att skydda mot förlust. Den här utbildningsvägen kan hjälpa dig att förbereda för Microsoft 365 Certified: Security Administrator Associate och Microsoft 365 Certified: Enterprise Administration Expert-certifieringar.<br><br>1 t - Learning sökväg - 5 moduler|
+
+> [!div class="nextstepaction"]
+> [Starta >](/learn/modules/m365-security-info-overview/introduction/)
+
+#### <a name="identity-and-access"></a>Identitet och åtkomst
+
+|Utbildning:|Skydda identitet och åtkomst med Azure Active Directory|
+|:---|:---|
+|![Ikon för identitets- och åtkomstutbildning](../media/protect-identity-and-access-with-microsoft-365.svg)|Utbildningsvägen för identitet och åtkomst omfattar de senaste identitets- och åtkomsttekniker, verktyg för att förstärka autentisering och vägledning om identitetsskydd i organisationen. Med microsofts teknik för åtkomst och identitet kan du skydda organisationens identitet, oavsett om den är lokal eller i molnet, och ge dina användare möjlighet att arbeta säkert från valfri plats. Den här utbildningsvägen kan hjälpa dig att förbereda för Microsoft 365 Certified: Security Administrator Associate och Microsoft 365 Certified: Enterprise Administration Expert-certifieringar.<br><br>2 t 52 min - Learning bana - 6 moduler|
+
+> [!div class="nextstepaction"]
+> [Starta >](/learn/modules/m365-identity-overview/introduction/)

@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: Läs om hur du skapar anpassade typer av känslig information med Exact Data Match-baserad klassificering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc1d3f08ab55f496ae7c6a12f35b71fa5b384688
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 17b9d9b1f551c62e42b2f5291f4d1fba8622f1ae
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256705"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287047"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Skapa anpassade typer av känslig information med Exact Data Match-baserad klassificering
-
-
 
 [Anpassade typer av känslig information](sensitive-information-type-learn-about.md) används för att identifiera känsliga objekt och förhindra att du delar dem oavsiktligt eller på ett olämpligt sätt. Du definierar en anpassad typ av känslig information (SIT) baserat på:
 
@@ -52,13 +50,13 @@ Med en EDM-baserad klassificering kan du skapa anpassade typer av känslig infor
 
 > [!NOTE]
 > Microsoft 365 Informationsskydd har stöd för språk med dubbla byte-teckenuppsättning för:
+>
 > - Kinesiska (förenklad)
 > - Kinesiska (traditionell)
 > - Koreanska
 > - Japanska
-> 
+>
 > Stödet är tillgängligt för typer av känslig information. Se [Viktig information gällande stöd i Information Protection för teckenuppsättningar med dubbla byte (förhandsversion)](mip-dbcs-relnotes.md) för mer information.
-
 
 ## <a name="required-licenses-and-permissions"></a>Obligatoriska licenser och behörigheter
 
@@ -73,21 +71,19 @@ EDM-baserad klassificering ingår i dessa prenumerationer
 
 ## <a name="portal-links-for-your-subscription"></a>Portallänkar för prenumerationen
 
-
-|Portal  |World Wide/GCC  |GCC-High  |DOD  |
-|---------|---------|---------|---------|
-|Office SCC     |  protection.office.com       |scc.office365.us         |scc.protection.apps.mil |
-|Microsoft 365 Säkerhetscenter     |security.microsoft.com         |security.microsoft.us         |security.apps.mil|
-|Microsoft 365 Efterlevnadscenter     |compliance.microsoft.com         |compliance.microsoft.us         |compliance.apps.mil|
-
+|Portal|World Wide/GCC|GCC-High|DOD|
+|---|---|---|---|
+|Office SCC|protection.office.com|scc.office365.us|scc.protection.apps.mil|
+|Microsoft 365 Säkerhetscenter|security.microsoft.com|security.microsoft.us|security.apps.mil|
+|Microsoft 365 Efterlevnadscenter|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
 ## <a name="the-work-flow-at-a-glance"></a>Överblick över arbetsflödet
 
-|Fas  |Det här behövs  |
-|---------|---------|
-|[Del 1: Konfigurera EDM-baserad klassificering](#part-1-set-up-edm-based-classification)<br/><br/>(vid behov)<br/>- [Redigera databasschemat](#editing-the-schema-for-edm-based-classification) <br/>- [Ta bort schemat](#removing-the-schema-for-edm-based-classification) |- Läsåtkomst till känsliga data<br/>- Databasschema i XML-format (exempel tillhandahålls)<br/>- Regelpaket i XML-format (exempel tillhandahålls)<br/>- Administratörsbehörigheter till Säkerhets- och efterlevnadscenter (med PowerShell) |
-|[Del 2: Hasha och ladda upp känsliga data](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(vid behov)<br/>[Uppdatera data](#refreshing-your-sensitive-information-database) |- Anpassad säkerhetsgrupp och användarkonto<br/>- Lokal administratörsåtkomst till datorn med EDM-uppladdningsagenten<br/>- Läsåtkomst till känsliga data<br/>- Process och schema för uppdatering av data|
-|[Del 3: Använda EDM-baserad klassificering med dina Microsoft-molntjänster](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Microsoft 365-prenumeration med DLP<br/>- Aktiverad funktion för EDM-baserad klassificering |
+|Fas|Det här behövs|
+|---|---|
+|[Del 1: Konfigurera EDM-baserad klassificering](#part-1-set-up-edm-based-classification)<br/><br/>(vid behov)<br/>- [Redigera databasschemat](#editing-the-schema-for-edm-based-classification) <br/>- [Ta bort schemat](#removing-the-schema-for-edm-based-classification)|- Läsåtkomst till känsliga data<br/>- Databasschema i XML-format (exempel tillhandahålls)<br/>- Regelpaket i XML-format (exempel tillhandahålls)<br/>- Administratörsbehörigheter till Säkerhets- och efterlevnadscenter (med PowerShell)|
+|[Del 2: Hasha och ladda upp känsliga data](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(vid behov)<br/>[Uppdatera data](#refreshing-your-sensitive-information-database)|- Anpassad säkerhetsgrupp och användarkonto<br/>- Lokal administratörsåtkomst till datorn med EDM-uppladdningsagenten<br/>- Läsåtkomst till känsliga data<br/>- Process och schema för uppdatering av data|
+|[Del 3: Använda EDM-baserad klassificering med dina Microsoft-molntjänster](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services)|- Microsoft 365-prenumeration med DLP<br/>- Aktiverad funktion för EDM-baserad klassificering|
 
 ### <a name="part-1-set-up-edm-based-classification"></a>Del 1: Konfigurera EDM-baserad klassificering
 
@@ -97,14 +93,13 @@ I konfigurationen av EDM-baserad klassificering ingår att:
 2. [Definiera ett databasschema för känslig information](#define-the-schema-for-your-database-of-sensitive-information)
 3. [Skapa ett regelpaket](#set-up-a-rule-package)
 
-
 #### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>Spara känsliga data i .csv eller .tsv-format
 
 1. Identifiera den känsliga information du vill använda. Exportera data till ett program, till exempel Microsoft Excel, och spara filen i en textfil. Filen kan sparas i .csv (kommaavgränsade värden), .tsv (tabbavgränsade värden) eller pipe-avgränsade (|) format. TSV-formatet rekommenderas i fall där datavärdena kan innehålla kommatecken, till exempel gatuadresser.
 Datafilen kan innehålla högst:
-      - 100 miljoner rader med känsliga data
-      - 32 kolumner (fält) per datakälla
-      - 5 kolumner (fält) markerade som sökbara
+   - 100 miljoner rader med känsliga data
+   - 32 kolumner (fält) per datakälla
+   - 5 kolumner (fält) markerade som sökbara
 
 2. Strukturera känsliga data i .csv- eller .tsv-filen så att den första raden innehåller namnen på de fält som används för EDM-baserad klassificering. I filen kan du ha fältnamn som "ssn", "födelsedatum", "förnamn", "efternamn". Kolumnrubriknamn får inte innehålla blanksteg eller understreck. Exempelfilen i CSV-format som vi använder i den här artikeln heter till exempel *PatientRecords.csv*, och innehåller kolumnerna *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN* med flera.
 
@@ -117,7 +112,7 @@ Om du av affärsmässiga eller tekniska skäl inte vill använda PowerShell elle
 > [!NOTE]
 > Guiden för Exact Data Match-schema och typ av känslig information är endast tillgänglig för molnen World Wide och GCC.
 
-1. Definiera schemat för databasen med känslig information i XML-format (ungefär som i exemplet nedan). Ge schemafilen namnet **edm.xml** och konfigurera den så att det finns en rad med följande syntax för varje kolumn i databasen: 
+1. Definiera schemat för databasen med känslig information i XML-format (ungefär som i exemplet nedan). Ge schemafilen namnet **edm.xml** och konfigurera den så att det finns en rad med följande syntax för varje kolumn i databasen:
 
       `\<Field name="" searchable=""/\>`.
 
@@ -146,11 +141,12 @@ Om du av affärsmässiga eller tekniska skäl inte vill använda PowerShell elle
 
 ##### <a name="configurable-match-using-the-caseinsensitive-and-ignoreddelimiters-fields"></a>Konfigurerbar matchning med fälten caseInsensitive och ignoredDelimiters
 
-I XML-exemplet ovan används fälten `caseInsensitive` och `ignoredDelimiters`. 
+I XML-exemplet ovan används fälten `caseInsensitive` och `ignoredDelimiters`.
 
 När du tar med fältet ***caseInsensitive** _ inställt på värdet `true` i din schemadefinition exkluderar EDM inte objekt på grund av skillnader i skiftläge i fältet `PatientID`. EDM tolkar `PatientID` _ *FOO-1234** och **fOo-1234** som identiska.
 
 Om du tar med fältet ***ignoredDelimiters** _ med tecken som stöds ignorerar EDM dessa tecken i `PatientID`. EDM tolkar `PatientID` _ *FOO-1234** och `PatientID` **FOO#1234** som identiska. Flaggan `ignoredDelimiters` stöder alla icke-alfanumeriska tecken. Här är några exempel:
+
 - \.
 - \-
 - \/
@@ -166,20 +162,21 @@ Om du tar med fältet ***ignoredDelimiters** _ med tecken som stöds ignorerar E
 - \}
 - \\
 - \~
-- \; 
+- \;
 
 Flaggan `ignoredDelimiters` stöder inte:
+
 - tecknen 0–9
 - A–Z
 - a–z
 - \"
 - \,
 
-I det här exempel använder vi både `caseInsensitive` och `ignoredDelimiters` vilket innebär att EDM skulle se **FOO-1234** och **fOo#1234** som identiska och klassificera objektet som känslig information av typen patientjournal. 
+I det här exempel använder vi både `caseInsensitive` och `ignoredDelimiters` vilket innebär att EDM skulle se **FOO-1234** och **fOo#1234** som identiska och klassificera objektet som känslig information av typen patientjournal.
 
-4. Anslut till Säkerhets- och efterlevnadscenter med hjälp av metoderna i [Ansluta till Säkerhets- och efterlevnadscentret i PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. Anslut till Säkerhets- & Compliance Center PowerShell med procedurerna [i Anslut security & Compliance Center PowerShell.](/powershell/exchange/connect-to-scc-powershell)
 
-5. Om du vill ladda upp databasschemat kör du följande cmdletar, en i taget:
+2. Om du vill ladda upp databasschemat kör du följande cmdletar, en i taget:
 
       ```powershell
       $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
@@ -208,13 +205,13 @@ I det här exempel använder vi både `caseInsensitive` och `ignoredDelimiters` 
 
       När du konfigurera ditt regelpaket ska du se till att referera till din .csv- eller .tsv-fil **ochedm.xml** filen. Du kan kopiera, ändra och använda vårt exempel. I det här XML-exemplet måste följande fält anpassas för att skapa en EDM-känslig typ:
 
-      - **RulePack id och ExactMatch id**: Använd [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) för att generera ett GUID.
+      - **RulePack id och ExactMatch id**: Använd [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) för att generera ett GUID.
 
       - **Datastore**: Det här fältet anger vilket datalager för EDM-sökning som ska användas. Ange namnet på datakällan för ett konfigurerat EDM-schema.
 
       - **idMatch**: Det här fältet pekar på det primära elementet för EDM.
         - Matches: Anger vilket fält som ska användas i en exakt sökning. Ange ett sökbart fältnamn i EDM-schemat för DataStore.
-        - Classification: Det här fältet anger den matchning av känslig typ som utlöser en EDM-sökning. Du kan ange namnet eller GUID för en befintlig inbyggd eller anpassad typ av känslig information. Observera att alla strängar som matchar den angivna typen av känslig information kommer att hashas och jämföras med varje post i tabellen med känslig information. För att det inte ska uppstå prestandaproblem bör du undvika att använda en typ som matchar en hög procent av innehållet (till exempel “alla siffror” eller “alla ord med fem bokstäver”) om du använder en anpassad typ av känslig information som klassificeringselement i EDM. Lägg i så fall till nyckelord eller inkludera formatering i definitionen av den anpassade typen av känslig information. 
+        - Classification: Det här fältet anger den matchning av känslig typ som utlöser en EDM-sökning. Du kan ange namnet eller GUID för en befintlig inbyggd eller anpassad typ av känslig information. Observera att alla strängar som matchar den angivna typen av känslig information kommer att hashas och jämföras med varje post i tabellen med känslig information. För att det inte ska uppstå prestandaproblem bör du undvika att använda en typ som matchar en hög procent av innehållet (till exempel “alla siffror” eller “alla ord med fem bokstäver”) om du använder en anpassad typ av känslig information som klassificeringselement i EDM. Lägg i så fall till nyckelord eller inkludera formatering i definitionen av den anpassade typen av känslig information.
 
       - **Match:** Det här fältet pekar på ytterligare bevis som hittats i närheten av idMatch.
         - Matches: Ange valfritt fältnamn i EDM-schemat för DataStore.
@@ -302,7 +299,7 @@ Observera i det här exemplet att:
 
 > [!NOTE]
 > Det kan ta mellan 10–60 minuter att uppdatera EDMSchema med tillägg. Uppdateringen måste slutföras innan du utför de steg där tilläggen används.
- 
+
 När du har importerat ditt regelpaket med den EDM-baserade typen av känslig information och har importerat din tabell med känsliga data kan du testa den nya typen med **testfunktionen** i EDM-guiden i efterlevnadscentret. Instruktioner för hur du använder den här funktionen finns i [Använda guiden för Exact Data Match-schema och typ av känslig information](sit-edm-wizard.md).
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>Redigera schemat för EDM-baserad klassificering
@@ -431,28 +428,34 @@ Den här datorn måste ha direkt åtkomst till din Microsoft 365-klientorganisat
    > [!TIP]
    > Om du vill visa en lista över de kommandoparametrar som stöds kör du agenten utan argument. Till exempel ”EdmUploadAgent.exe”.
 
-2. Godkänn EDM-uppladdningsagenten, öppna kommandotolken (som administratör), växla till katalogen **C:\EDM\Data** och kör följande kommando:
+3. Godkänn EDM-uppladdningsagenten, öppna kommandotolken (som administratör), växla till katalogen **C:\EDM\Data** och kör följande kommando:
 
    `EdmUploadAgent.exe /Authorize`
 
-3. Logga in med det arbets- eller skolkonto för Microsoft 365 som du lade till i säkerhetsgruppen EDM_DataUploaders. Din innehavarinformation extraheras från användarkontot för att upprätta anslutningen.
+4. Logga in med det arbets- eller skolkonto för Microsoft 365 som du lade till i säkerhetsgruppen EDM_DataUploaders. Din innehavarinformation extraheras från användarkontot för att upprätta anslutningen.
 
    VALFRITT: Om du skapade schemat och mönsterfilerna med guiden för Exact Data Match-schema och typ av känslig information kör du följande kommando i ett kommandotolksfönster:
 
-   `EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+   ```dos
+   EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
+   ```
 
-4. Om du vill hasha och ladda upp känsliga data kör du följande kommando i kommandotolksfönstret:
+5. Om du vill hasha och ladda upp känsliga data kör du följande kommando i kommandotolksfönstret:
 
-   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]`
+   ```dos
+   EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]
+   ```
 
    Exempel: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   Standardformatet för den känsliga datafilen är kommaavgränsade värden. Du kan ange en tabbavgränsad fil genom att ange alternativet "{Tab}" med parametern /ColumnSeparator, eller så kan du ange en röravgränsad fil genom att ange alternativet "|".  
+   Standardformatet för den känsliga datafilen är kommaavgränsade värden. Du kan ange en tabbavgränsad fil genom att ange alternativet "{Tab}" med parametern /ColumnSeparator, eller så kan du ange en röravgränsad fil genom att ange alternativet "|".
    Det här kommandot lägger automatiskt till ett slumpmässigt genererat saltvärde i hashtaggen för bättre säkerhet. Om du vill använda ett eget saltvärde lägger du till **/Salt <saltvalue>** i kommandot. Det här värdet måste vara 64 tecken långt och får endast innehåll tecknen a–z och 0–9.
 
-5. Kontrollera uppladdningsstatus genom att köra det här kommandot:
+6. Kontrollera uppladdningsstatus genom att köra det här kommandot:
 
-   `EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+   ```dos
+   EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
+   ```
 
    Exempel: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
 
@@ -464,17 +467,24 @@ Utför hashningen på en dator i en säker miljö.
 
 VALFRITT: Om du skapade schemat och mönsterfilerna med guiden för Exact Data Match-schema och typ av känslig information kör du följande kommando i ett kommandotolksfönster:
 
-`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+```dos
+EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
+````
 
 1. Kör följande kommando i ett kommandotolksfönster:
 
-   `EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
+   ```dos
+   EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]
+   ```
 
    Till exempel:
 
-   > **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   ```dos
+   EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml
+   ```
 
    Då matas en hashad fil och en saltfil ut med dessa filnamnstillägg om du inte har angett alternativet **/Salt <saltvalue>**:
+
    - .EdmHash
    - .EdmSalt
 
@@ -482,22 +492,29 @@ VALFRITT: Om du skapade schemat och mönsterfilerna med guiden för Exact Data M
 
    Om du vill ladda upp hashade data kör du följande kommando i kommandotolken i Windows:
 
-   `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
+   ```dos
+   EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>
+   ```
 
    Till exempel:
 
-   > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
-
+   ```dos
+   EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
+   ```
 
    Om du vill kontrollera att känsliga data har laddats upp kör du följande kommando i kommandotolksfönstret:
 
-   `EdmUploadAgent.exe /GetDataStore`
+   ```dos
+   EdmUploadAgent.exe /GetDataStore
+   ```
 
    Du ser en lista med datalager och när de uppdaterades senast.
 
    Om du vill se alla datauppladdningar till ett visst lager kör du följande kommando i en kommandotolk i Windows:
 
-   `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+   ```dos
+   EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
+   ```
 
    Fortsätt med att konfigurera din process och ditt schemat för [uppdatering av din databas för känslig information](#refreshing-your-sensitive-information-database).
 
@@ -516,11 +533,11 @@ Du kan uppdatera databasen för känslig information dagligen och EDM-uppladdnin
 
 3. Använd [Schemaläggaren](/windows/desktop/TaskSchd/task-scheduler-start-page) för att automatisera steg 2 och 3 i [Hasha och ladda upp känsliga data](#part-2-hash-and-upload-the-sensitive-data). Du kan schemalägga aktiviteter på flera sätt:
 
-      | Metod             | Lämplig åtgärd |
-      | ---------------------- | ---------------- |
-      | Windows PowerShell     | Se dokumentationen för [ScheduledTasks](/powershell/module/scheduledtasks/?view=win10-ps) och [PowerShell-exempelskriptet](#example-powershell-script-for-task-scheduler) i den här artikeln |
-      | API för Schemaläggaren     | Se dokumentationen för [Schemaläggaren](/windows/desktop/TaskSchd/using-the-task-scheduler)                                                                                                                                                                                                                                                                                |
-      | Windows-användargränssnittet | Klicka på **Start** i Windows och skriv Schemaläggaren. Högerklicka sedan på **Schemaläggaren** i listan med resultat och välj **Kör som administratör**.                                                                                                                                                                                                                                                                           |
+   |Metod|Lämplig åtgärd|
+   |---|---|
+   |Windows PowerShell|Se dokumentationen för [ScheduledTasks](/powershell/module/scheduledtasks/) och [PowerShell-exempelskriptet](#example-powershell-script-for-task-scheduler) i den här artikeln|
+   |API för Schemaläggaren|Se dokumentationen för [Schemaläggaren](/windows/desktop/TaskSchd/using-the-task-scheduler)|
+   |Windows-användargränssnittet|Klicka på **Start** i Windows och skriv Schemaläggaren. Högerklicka sedan på **Schemaläggaren** i listan med resultat och välj **Kör som administratör**.|
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>PowerShell-exempelskript för Schemaläggaren
 
@@ -599,7 +616,6 @@ $password=\[Runtime.InteropServices.Marshal\]::PtrToStringAuto(\[Runtime.Interop
 \# Register the scheduled task
 $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
-
 ```
 
 ### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a>Del 3: Använda EDM-baserad klassificering med dina Microsoft-molntjänster
@@ -637,7 +653,7 @@ De här platserna har stöd för EDM-baserade typer av känslig information:
 
       ![Innehållet har typer av känslig information](../media/edm-dlp-newrule-conditions.png)
 
-11. Sök efter den typ av känslig information som du skapade när du konfigurerade regelpaketet och välj sedan **+ Lägg till**.  
+11. Sök efter den typ av känslig information som du skapade när du konfigurerade regelpaketet och välj sedan **+ Lägg till**.
     Välj **Klar**.
 
 12. Välj alternativ för din regel, till exempel **Användarmeddelanden**, **Användaråsidosättningar** och **Incidentrapporter**, och välj sedan **Spara**.

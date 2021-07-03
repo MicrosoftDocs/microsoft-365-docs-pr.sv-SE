@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce387799a2f9e6d6cdffe063d3adf7310d7e7757
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: eec4869c5ff0b4caeedc52891a56d604c4b54348
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842728"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286039"
 ---
 # <a name="define-information-barrier-policies"></a>Definiera informationsbarriärsprinciper
 
@@ -38,8 +38,8 @@ När du definierar principer för informationsbarriärer arbetar du med använda
 - Användarkontoattribut definieras i Azure Active Directory (eller Exchange Online). Attributen kan omfatta avdelning, befattning, plats, gruppnamn och annan jobbprofilinformation. 
 - Segment är uppsättningar av användare som har definierats i säkerhets- & Säkerhets- och efterlevnadscenter med ett valt **användarkontoattribut**. (Se listan [över attribut som stöds](information-barriers-attributes.md).)
 - Informationsbarriärpolicyer bestämmer kommunikationsbegränsningar eller begränsningar. När du definierar principer för informationsbarriärer väljer du mellan två typer av principer:
-    - "Blockera" principer hindrar ett segment från att kommunicera med ett annat segment.
-    - Med "Tillåt" principer kan ett segment bara kommunicera med vissa andra segment.
+  - "Blockera" principer hindrar ett segment från att kommunicera med ett annat segment.
+  - Med "Tillåt" principer kan ett segment bara kommunicera med vissa andra segment.
 - Policyprogrammet utförs när alla principer för informationsbarriärer har definierats och du är redo att tillämpa dem i din organisation.
 
 ## <a name="the-work-flow-at-a-glance"></a>Överblick över arbetsflödet
@@ -71,8 +71,8 @@ Kontrollera att följande [krav uppfylls,](information-barriers.md#required-lice
 - Inga adressboksprinciper – Innan du definierar och tillämpar principer för informationsbarriärer kontrollerar du att Exchange principer för adressboken finns. Informationsbarriärer baseras på adressboksprinciper, men de två typerna av principer är inte kompatibla. Om du har sådana principer ska du se till att [ta bort dina adressboksprinciper](/exchange/address-books/address-book-policies/remove-an-address-book-policy) först. När principer för informationsbarriärer har aktiverats och du  har aktiverat hierarkisk adressbok kan [](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) alla användare som inte ingår i informationsbarriärsegmenten se den hierarkiska adressboken i Exchange online.
 
 - PowerShell – För närvarande definieras och hanteras informationsbarriärprinciper i Office 365 Säkerhets- & Säkerhetscenter med PowerShell-cmdlets. Även om flera exempel finns i den här artikeln måste du vara bekant med PowerShell-cmdlets och parametrar. Du behöver också Azure PowerShell modulen.
-    - [Anslut till Säkerhets- och efterlevnadscenter i PowerShell](/powershell/exchange/connect-to-scc-powershell).
-    - [Installera Azure PowerShell modulen](/powershell/azure/install-az-ps?view=azps-2.3.2)
+  - [Anslut till Säkerhets- och efterlevnadscenter i PowerShell](/powershell/exchange/connect-to-scc-powershell).
+  - [Installera Azure PowerShell modulen](/powershell/azure/install-az-ps)
 
 - Administratörsmedgivande om informationsbarriärer i Microsoft Teams – När dina IB-principer finns kan de ta bort användare som inte är IB-efterlevnad från grupper (dvs. Teams-kanaler, som baseras på grupper). Den här konfigurationen ser till att organisationen fortfarande följer principer och bestämmelser. Använd följande procedur för att göra det möjligt för informationsbarriärprinciper att fungera som förväntat i Microsoft Teams.
 
@@ -91,10 +91,9 @@ Kontrollera att följande [krav uppfylls,](information-barriers.md#required-lice
    1. När du uppmanas till det loggar du in med ditt arbets- eller skolkonto för Office 365.
 
    1. Granska **informationen i** dialogrutan Behörigheter som krävs och välj sedan **Acceptera**. De behörigheter som begärs av Appen ges nedan.
-      
+
       > [!div class="mx-imgBorder"]
       > ![bild](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
-
 
 När alla krav uppfylls går du till nästa avsnitt.
 

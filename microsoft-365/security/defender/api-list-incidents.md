@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 038879e77dfa26d82add20d043a32de117f95b19
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730890"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287837"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>API för listincidenter i Microsoft 365 Defender
 
@@ -38,7 +38,6 @@ ms.locfileid: "52730890"
 
 > [!IMPORTANT]
 > En del information gäller förinstallerad produkt som kan ha ändrats mycket innan den släpps kommersiellt. Microsoft lämnar inga garantier, uttryckliga eller underförstådda, med avseende på den information som anges här.
-
 
 ## <a name="api-description"></a>API-beskrivning
 
@@ -57,7 +56,7 @@ API:t stöder följande **OData-operatorer:**
 
 ## <a name="permissions"></a>Behörigheter
 
-En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i [Access-Microsoft 365 Defender-API:er](api-access.md)
+En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i [Access-API:Microsoft 365 Defender-API:er](api-access.md)
 
 Behörighetstyp | Behörighet | Visningsnamn för behörighet
 -|-|-
@@ -78,14 +77,14 @@ Delegerat (arbets- eller skolkonto) | Incident.ReadWrite | Läs- och skrivincide
 GET /api/incidents
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 -|-|-
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt**
 
 
-## <a name="request-body"></a>Begärans brödtext
+## <a name="request-body"></a>Frågebrödtext
 
 Ingen.
 
@@ -125,7 +124,7 @@ lastUpdatedTime | Tid när aviseringen uppdaterades senast på backend. | 2020-0
 resolvedTime | Tid när aviseringen löstes. | 2020-09-10T05:22:59Z
 firstActivity | Tid när aviseringen först rapporterade att aktiviteten uppdaterades på backend.| 2020-09-04T05:22:59Z
 rubrik | Kort identifiering av strängvärde som är tillgängligt för varje avisering. | Utpressningstrojaner
-beskrivning | Strängvärde som beskriver varje avisering. | Användaren Test User2 (testUser2@contoso.com) har hanterat 99 filer med flera tillägg som slutar med den ovanliga filnamnstillägget *herunterladen.* Det här är ett ovanligt antal filmanipuleringar och är en potentiell utpressningstrojanattack.
+description | Strängvärde som beskriver varje avisering. | Användaren Test User2 (testUser2@contoso.com) har hanterat 99 filer med flera tillägg som slutar med den ovanliga filnamnstillägget *herunterladen.* Det här är ett ovanligt antal filmanipuleringar och är en potentiell utpressningstrojanattack.
 kategori | Visuell och numerisk vy över hur långt attacken har fortskridt längs killkedja. I linje med [MITRE ATT&CK™ framework](https://attack.mitre.org/). | Påverkan
 status | Kategorisera aviseringar (som *Ny,* *Aktiv* eller *Löst*). Det kan hjälpa dig att organisera och hantera dina svar på aviseringar. | Ny
 allvarlighetsgrad | Anger den möjliga påverkan på tillgångar. Ju högre allvarlighetsgrad, desto större påverkan. I regel krävs det mest omedelbar uppmärksamhet för objekt med högre allvarlighetsgrad.<br>Ett av följande värden: *Information,* *Låg,**Medel och *Hög.* | Medel
@@ -151,7 +150,7 @@ osBuild | Versionsversionen för operativsystemet som enheten kör. | 14393
 rbacGroupName | Den [rollbaserade åtkomstkontrollgruppen](/azure/role-based-access-control/overview) (RBAC) som är kopplad till enheten. | WDATP-Ring0
 firstSeen | Tid när enheten sågs första gången. | 2020-02-06T14:16:01.9330135Z
 healthStatus | Status för enheten. | Aktiv
-riskScore | Riskresultatet för enheten. | Högsta
+riskScore | Riskresultatet för enheten. | Hög
 enheter | Alla enheter som har identifierats vara en del av eller relaterade till en viss avisering. | \[\] (mer information om entitetsfälten finns nedan)
 
 ### <a name="entity-format"></a>Enhetsformat
@@ -192,13 +191,13 @@ deviceId | ID:t, om det finns något, för enheten som är relaterad till enhete
 
 ## <a name="example"></a>Exempel
 
-**Begäran**
+### <a name="request"></a>Begäran
 
 ```HTTP
 GET https://api.security.microsoft.com/api/incidents
 ```
 
-**Svar**
+### <a name="response"></a>Svar
 
 ```json
 {
@@ -724,7 +723,7 @@ GET https://api.security.microsoft.com/api/incidents
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Komma åt Microsoft 365 Defender-API:er](api-access.md)
+- [Få åtkomst Microsoft 365 Defender API:er](api-access.md)
 - [Läs mer om API-begränsningar och licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)
 - [Översikt över incidenter](incidents-overview.md)

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: I den här artikeln lär du dig vilka plattformar, klienter och PowerShell-moduler som har stöd för multifaktorautentisering för Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80ee370526d17d472cd048cd4d89b862e158b631
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8749c05e3f7ce5dacf7d3ed1eaa46a46a20482d5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927573"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286459"
 ---
 # <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 Stöd för klientprogram: Multifaktorautentisering
 
@@ -44,6 +44,6 @@ De senaste versionerna av följande klienter och plattformar har stöd för mult
 
 ## <a name="supported-powershell-modules"></a>PowerShell-moduler som stöds
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

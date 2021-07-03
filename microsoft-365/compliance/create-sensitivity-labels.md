@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Ett krav för alla Microsoft Information Protection-lösningar: skapa, konfigurera och publicera känslighetsetiketter för att klassificera och skydda organisationens data.'
-ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ac87608a2a7c4913811c090ae3c2befadaf2327e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878190"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286627"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Skapa och konfigurera känslighetsetiketter och deras principer
 
@@ -41,36 +41,36 @@ Den globala administratören för organisationen har fullständiga behörigheter
 ## <a name="create-and-configure-sensitivity-labels"></a>Skapa och konfigurera känslighetsetiketter
 
 1. Gå till känslighetsetiketterna i administrationscentret för etiketter:
-    
+
     - Microsoft 365 Efterlevnadscenter: 
         - **Lösningar** > **Informationsskydd**
-        
+
         Om du inte ser det här alternativet direkt väljer du först **Visa alla**. 
-    
+
     - Säkerhets- och efterlevnadscenter:
         - **Klassificering** > **Känslighetsetiketter**
 
 2. På sidan **Etiketter** väljer du **+ Skapa en etikett**, så startas guiden Ny känslighetsetikett. 
-    
+
     Till exempel, från Microsoft 365 Efterlevnadscenter:
-    
+
     ![Skapa en känslighetsetikett](../media/create-sensitivity-label-full.png)
-    
+
     > [!NOTE]
     > Klientorganisationen har som standard inga etiketter och du måste skapa dem. Etiketterna i exempelbilden visar standardetiketter som har [migrerats från Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
 3. På sidan **Definiera etikettens omfattning** avgör de valda alternativen etikettens omfattning för de inställningar som du kan konfigurera och var de visas när de har publicerats:
-    
+
     ![Omfattningar för känslighetsetiketter](../media/sensitivity-labels-scopes.png)
-    
+
     - Om **Filer och e-postmeddelanden** har markerats kan du konfigurera inställningar i den här guiden som tillämpas för appar som stöder känslighetsetiketter, till exempel Office Word och Outlook. Om det här alternativet inte har markerats visas den första sidan för de här inställningarna i guiden, men du kan inte konfigurera dem och etiketterna kommer inte att vara tillgängliga för användare att välja i de här apparna.
-    
+
     - Om **Grupper och webbplatser** har markerats kan du konfigurera inställningar i den här guiden som tillämpas för Microsoft 365-grupper och webbplatser för Teams och SharePoint. Om det här alternativet inte har markerats visas den första sidan för de här inställningarna i guiden, men du kan inte konfigurera dem och etiketterna kommer inte att vara tillgängliga för användare att välja för grupper och webbplatser.
-    
+
     Information om omfattningen för **Azure Purview-resurser (förhandsversion)** finns i artikeln om att [automatiskt sätta en etikett på innehållet i Azure Purview](/azure/purview/create-sensitivity-label).
 
 4. Följ anvisningarna i guiden för etikettinställningarna.
-    
+
     Om du vill veta mer om etikettinställningarna kan du läsa avsnittet om [vad känslighetsetiketter kan göra](sensitivity-labels.md#what-sensitivity-labels-can-do) i översiktsinformationen och använda hjälpen i guiden för enskilda inställningar.
 
 5. Upprepa de här stegen om du vill skapa fler etiketter. Om du däremot vill skapa en underetikett markerar du först den överordnade etiketten och väljer sedan **...** för **Fler åtgärder**. Välj **Lägg till underetikett**.
@@ -113,7 +113,6 @@ Använd [språk-ID:n](/deployoffice/office2016/language-identifiers-and-optionst
 
 Innan du kör kommandona i PowerShell måste du först [ansluta till Säkerhets- och efterlevnadscentret via PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-
 ```powershell
 $Languages = @("fr-fr","it-it","de-de")
 $DisplayNames=@("Publique","Publico","Oeffentlich")
@@ -135,42 +134,42 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publicera känslighetsetiketter genom att skapa en etikettprincip
 
 1. Gå till känslighetsetiketterna i administrationscentret för etiketter:
-    
+
     - Microsoft 365 Efterlevnadscenter: 
         - **Lösningar** > **Informationsskydd**
-        
+
         Om du inte ser det här alternativet direkt väljer du först **Visa alla**. 
-    
+
     - Säkerhets- och efterlevnadscenter:
         - **Klassificering** > **Känslighetsetiketter**
 
 2. Välj fliken **Etikettprinciper** och sedan **Publicera etiketter** när du vill starta guiden Skapa princip:
-    
+
     Till exempel, från Microsoft 365 Efterlevnadscenter:
-        
+
     ![Publicera etiketter](../media/publish-sensitivity-labels-full.png)
-    
+
     > [!NOTE]
     > Klientorganisationen har som standard inga etikettprinciper och du måste skapa dem. 
 
 3. I guiden väljer du **Välj vilka känslighetsetiketter som ska publiceras**. Markera de etiketter som du vill göra tillgängliga i appar och tjänster, och välj sedan **Lägg till**.
-    
+
     > [!IMPORTANT]
     > Om du väljer en underetikett väljer du också den överordnade etiketten.
-    
+
 4. Granska de markerade etiketterna och gör eventuella ändringar genom att välja **Redigera**. Annars väljer du **Nästa**.
 
 5. Följ anvisningarna för att konfigurera principinställningarna.
-    
+
     De principinställningar som visas matchar omfattningen för de etiketter du har valt. Om du till exempel har markerat etiketter som bara har omfattningen **Filer och e-postmeddelanden** visas inte principinställningarna **Använd den här etiketten som standard för grupper och webbplatser** och **Kräver att användare märker sina grupper och webbplatser**.
-    
+
     Om du vill veta mer om de här inställningarna kan du läsa avsnittet om [vad etikettprinciper kan göra](sensitivity-labels.md#what-label-policies-can-do) i översiktsinformationen och använda hjälpen i guiden för enskilda inställningar.
-    
+
     För etiketter som har konfigurerats för **Azure Purview-resurser (förhandsversion)**: De här etiketterna har inga associerade principinställningar.
 
-7. Upprepa de här stegen om du behöver olika principinställningar för olika användare eller omfattningar. Du kanske till exempel vill använda ytterligare etiketter för en grupp användare eller en annan standardetikett för en del av användarna. Eller du kanske har konfigurerat etiketter så att de har olika omfattningar.
+6. Upprepa de här stegen om du behöver olika principinställningar för olika användare eller omfattningar. Du kanske till exempel vill använda ytterligare etiketter för en grupp användare eller en annan standardetikett för en del av användarna. Eller du kanske har konfigurerat etiketter så att de har olika omfattningar.
 
-8. Om du skapar fler än en etikettprincip som kan leda till en konflikt för en användare granskar du principordningen och flyttar dem vid behov uppåt eller nedåt. Om du vill ändra ordningen för en etikettprincip väljer du **...** för **Fler åtgärder**. Välj sedan **Flytta uppåt** eller **Flytta nedåt**. Mer information finns i avsnittet för [Prioritet för etikettprinciper (ordning spelar roll)](sensitivity-labels.md#label-policy-priority-order-matters) i översiktsinformationen.
+7. Om du skapar fler än en etikettprincip som kan leda till en konflikt för en användare granskar du principordningen och flyttar dem vid behov uppåt eller nedåt. Om du vill ändra ordningen för en etikettprincip väljer du **...** för **Fler åtgärder**. Välj sedan **Flytta uppåt** eller **Flytta nedåt**. Mer information finns i avsnittet för [Prioritet för etikettprinciper (ordning spelar roll)](sensitivity-labels.md#label-policy-priority-order-matters) i översiktsinformationen.
 
 När du slutför guiden publiceras etikettprincipen automatiskt. Om du vill ändra en publicerad princip behöver du bara redigera den. Du behöver inte välja någon specifik åtgärd för att publicera eller publicera på nytt.
 

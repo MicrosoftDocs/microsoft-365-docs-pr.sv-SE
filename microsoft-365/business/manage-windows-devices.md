@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Lär dig hur du Microsoft 365 att skydda lokala Active Directory-anslutna Windows 10 med några få steg.
-ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: eb95c437030ae13a44f5e8043b3544d5846001c2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636095"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287704"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivera att domänaktiverade Windows 10 hanteras av Microsoft 365 Business Premium
 
@@ -109,13 +109,13 @@ Med det första kommandot upprättas en anslutning till Microsoft-molnet, och n�
 
 Om du inte ser principen Aktivera automatisk **MDM-registrering** med standardautentiseringsuppgifter för Azure AD kan det beror på att du inte har ADMX installerat för Windows 10, version 1803 eller senare. Lös problemet genom att följa de här anvisningarna (Obs! den senaste MDM.admx är bakåtkompatibel):
 
-1.  Ladda ned: [Administrativa mallar (.admx) för Windows 10 oktober 2020-uppdatering (20H2).](https://www.microsoft.com/download/102157)
-2.  Installera paketet på en domänkontrollant.
-3.  Navigera, beroende på versionen av Administrativa mallar, till mappen: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 oktober 2020-uppdatering (20H2).**
-4.  Byt **namn på** mappen Principdefinitioner i sökvägen ovan till **Principdefinitioner.**
-5.  Kopiera mappen **Principdefinitioner** till SYSVOL-resursen, som standard finns i **C:\Windows\SYSVOL\domän\Principer.** 
-    -   Om du planerar att använda ett centralt principarkiv för hela domänen lägger du till innehållet i Principdefinitioner där.
-6.  Om du har flera domänkontrollanter väntar du tills SYSVOL replikerar för att principerna ska vara tillgängliga. Den här proceduren fungerar även för alla framtida versioner av administrativa mallar.
+1. Ladda ned: [Administrativa mallar (.admx) för Windows 10 oktober 2020-uppdatering (20H2).](https://www.microsoft.com/download/102157)
+2. Installera paketet på en domänkontrollant.
+3. Navigera, beroende på versionen av Administrativa mallar, till mappen: **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 oktober 2020-uppdatering (20H2).**
+4. Byt **namn på** mappen Principdefinitioner i sökvägen ovan till **Principdefinitioner.**
+5. Kopiera mappen **Principdefinitioner** till SYSVOL-resursen, som standard finns i **C:\Windows\SYSVOL\domän\Principer.**
+   - Om du planerar att använda ett centralt principarkiv för hela domänen lägger du till innehållet i Principdefinitioner där.
+6. Om du har flera domänkontrollanter väntar du tills SYSVOL replikerar för att principerna ska vara tillgängliga. Den här proceduren fungerar även för alla framtida versioner av administrativa mallar.
 
 Nu bör du kunna se principen Aktivera automatisk MDM-registrering med hjälp av **standardautentiseringsuppgifter för Azure AD.**
 

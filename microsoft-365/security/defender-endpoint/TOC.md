@@ -66,7 +66,7 @@
 #### [Microsoft Defender för Endpoint för macOS]()
 ##### [Översikt över Microsoft Defender för Endpoint för macOS](microsoft-defender-endpoint-mac.md)
 ##### [Nyheter](mac-whatsnew.md)
- 
+
 ##### [Distribuera]()
 ###### [Microsoft Intune-baserad distribution](mac-install-with-intune.md)
 ###### [JAMF Pro-baserad distribution]()
@@ -75,11 +75,11 @@
 ####### [Konfigurera enhetsgrupper](mac-jamfpro-device-groups.md)
 ####### [Konfigurera principer](mac-jamfpro-policies.md)
 ####### [Registrera enheter](mac-jamfpro-enroll-devices.md)
- 
+
 ###### [Distribution med ett annat MDM-system (Mobile Device Management)](mac-install-with-other-mdm.md)
 ###### [Manuell distribution](mac-install-manually.md)
 ##### [Uppdatera](mac-updates.md)
- 
+
 ##### [Konfigurera]()
 ###### [Konfigurera och validera undantag](mac-exclusions.md)
 ###### [Ange inställningar](mac-preferences.md)
@@ -89,14 +89,14 @@
 ####### [Exempel på JAMF](mac-device-control-jamf.md)
 ####### [Exempel på Intune](mac-device-control-intune.md)
 ###### [Schemalägga genomsökningar](mac-schedule-scan.md)
- 
+
 ##### [Felsökning]()
 ###### [Felsöka installationsproblem](mac-support-install.md)
 ###### [Felsöka prestandaproblem](mac-support-perf.md)
 ###### [Felsöka molnanslutning](troubleshoot-cloud-connect-mdemac.md)
 ###### [Felsöka problem med kernel-tillägg](mac-support-kext.md)
 ###### [Felsöka licensproblem](mac-support-license.md)
- 
+
 ##### [Sekretess](mac-privacy.md)
 ##### [Resurser](mac-resources.md)
 
@@ -104,10 +104,10 @@
 #### [Microsoft Defender för Endpoint för iOS]()
 ##### [Översikt över Microsoft Defender för Endpoint för iOS](microsoft-defender-endpoint-ios.md)
 ##### [Nyheter](ios-whatsnew.md)
- 
+
 ##### [Distribuera]()
 ###### [Distribuera Microsoft Defender för Endpoint för iOS via Intune](ios-install.md)
- 
+
 ##### [Konfigurera]()
 ###### [Konfigurera iOS-funktioner](ios-configure-features.md)
 
@@ -115,8 +115,8 @@
 ###### [FAQ och felsöka problem](ios-troubleshoot.md)
 
 ##### [Sekretess](ios-privacy.md)
- 
- 
+
+
 #### [Microsoft Defender för Endpoint för Linux]()
 ##### [Översikt över Microsoft Defender för Endpoint för Linux](microsoft-defender-endpoint-linux.md)
 ##### [Nyheter](linux-whatsnew.md)
@@ -127,7 +127,7 @@
 ###### [Distribuera Defender för Endpoint på Linux med Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
 ##### [Uppdatera](linux-updates.md)
- 
+
 ##### [Konfigurera]()
 ###### [Konfigurera och validera undantag](linux-exclusions.md)
 ###### [Konfiguration av statisk proxy](linux-static-proxy-configuration.md)
@@ -136,29 +136,29 @@
 ###### [Schemalägga genomsökningar med Microsoft Defender för Endpoint för Linux](linux-schedule-scan-atp.md)
 ###### [Schemalägga en uppdatering av Microsoft Defender för Endpoint (Linux)](linux-update-MDE-Linux.md)
 
- 
+
 ##### [Felsökning]()
 ###### [Felsöka installationsproblem](linux-support-install.md)
 ###### [Undersöka hälsoproblem i agenten](health-status.md)
 ###### [Felsöka anslutningsproblem med molnet](linux-support-connectivity.md)
 ###### [Felsöka prestandaproblem](linux-support-perf.md)
 ###### [Felsöka problem med saknade händelser](linux-support-events.md)
- 
+
 ##### [Sekretess](linux-privacy.md)
 ##### [Resurser](linux-resources.md)
- 
+
 #### [Microsoft Defender för Endpoint för Android]()
 ##### [Översikt över Microsoft Defender för Endpoint för Android](microsoft-defender-endpoint-android.md)
- 
+
 ##### [Distribuera]()
 ###### [Distribuera Microsoft Defender för Endpoint för Android med Microsoft Intune](android-intune.md)
- 
+
 ##### [Konfigurera]()
 ###### [Konfigurera Microsoft Defender för Endpoint för Android-funktioner](android-configure.md)
- 
+
 ##### [Sekretess]()
 ###### [Microsoft Defender för Endpoint för Android – Sekretessinformation](android-privacy.md)
- 
+
 ##### [Felsökning]()
 ###### [Felsöka problem](android-support-signin.md)
 
@@ -321,13 +321,13 @@
 ##### [Aktivera exploateringsskydd](enable-exploit-protection.md)
 ##### [Anpassa exploateringsskydd](customize-exploit-protection.md)
 ##### [Konfigurationer för att import, export och distribuering av exploateringsskydd](import-export-exploit-protection-emet-xml.md)
-##### [Referens för exploateringsskydd](exploit-protection-reference.md )
+##### [Referens för exploateringsskydd](exploit-protection-reference.md)
 
 #### [Nätverksskydd]()
 ##### [Skydda ditt nätverk](network-protection.md)
 ##### [Utvärdera nätverksskydd](evaluate-network-protection.md)
 ##### [Aktivera nätverksskydd](enable-network-protection.md)
- 
+
 #### [Webbskydd]()
 ##### [Översikt över webbskydd](web-protection-overview.md)
 ##### [Skydd mot webbhot]()
@@ -335,7 +335,7 @@
 ###### [Övervaka webbsäkerhet](web-protection-monitoring.md)
 ###### [Svara på webbhot](web-protection-response.md)
 ##### [Filtrering av webbinnehåll](web-content-filtering.md)
- 
+
 #### [Kontrollerad mappåtkomst]()
 ##### [Skydda mappar](controlled-folders.md)
 ##### [Utvärdera kontrollerad mappåtkomst](evaluate-controlled-folder-access.md)
@@ -371,7 +371,7 @@
 ##### [Visa och ordna incidentkö](view-incidents-queue.md)
 ##### [Hantera incidenter](manage-incidents.md)
 ##### [Undersöka incidenter](investigate-incidents.md)
- 
+
 #### [Varningskö]()
 ##### [Visa och ordna varningskö](alerts-queue.md)
 ##### [Granska varningar](review-alerts.md)
@@ -383,12 +383,12 @@
 ##### [Undersöka en domän](investigate-domain.md)
 ###### [Undersöka anslutningshändelser som inträffar bakom vidarebefordrade proxy](investigate-behind-proxy.md)
 ##### [Undersöka ett användarkonto](investigate-user.md)
- 
+
 #### [Enhetslista]()
 ##### [Visa och ordna Enhetslista](machines-view-overview.md)
 ##### [Händelseflaggor för enhetstidslinje](device-timeline-event-flag.md)
 ##### [Hantera enhetsgrupp och taggar](machine-tags.md)
- 
+
 #### [Vidta svarsåtgärder]()
 ##### [Vidta svarsåtgärder på en enhet]()
 ###### [Svarsåtgärder på enheter](respond-machine-alerts.md)
@@ -547,7 +547,7 @@
 ####### [Begränsa körning av program](restrict-code-execution.md)
 ####### [Ta bort programbegränsning](unrestrict-code-execution.md)
 ####### [Kör antivirusgenomsökning](run-av-scan.md)
-####### [Kör livesvar](run-live-response.md) 
+####### [Kör livesvar](run-live-response.md)
 ####### [Avregistrera maskin](offboard-machine-api.md)
 ####### [Stoppa och placera filen i karantän](stop-and-quarantine-file.md)
 ####### [Avbryt maskinåtgärden](cancel-machine-action.md)
@@ -661,7 +661,7 @@
 ##### [Inaktiva enheter](fix-unhealthy-sensors.md#inactive-devices)
 ##### [Felkonfigurerade enheter](fix-unhealthy-sensors.md#misconfigured-devices)
 ##### [Granska sensorhändelser och fel på datorer med Händelsevisning](event-error-codes.md)
-  
+
 #### [Felsöka tjänsteproblem med Microsoft Defender för Endpoint]()
 ##### [Felsöka tjänstproblem](troubleshoot-mdatp.md)
 ##### [Kontrollera tjänststatus](service-status.md)
@@ -669,8 +669,8 @@
 
 #### [Felsöka problem med livesvar](troubleshoot-live-response.md)
 
-#### [Samla in supportloggar med LiveAnalyzer ](troubleshoot-collect-support-log.md)
- 
+#### [Samla in supportloggar med LiveAnalyzer](troubleshoot-collect-support-log.md)
+
 #### [Felsöka problem med minskning av attackytan]()
 ##### [Nätverksskydd](troubleshoot-np.md)
 ##### [Regler för minskning av attackytan](troubleshoot-asr.md)
@@ -678,4 +678,4 @@
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Microsoft Defender för Office 365](../office-365-security/index.yml)
-# [Defender för identitet](https://docs.microsoft.com/defender-for-identity/)
+# [Defender för identitet](/defender-for-identity/)

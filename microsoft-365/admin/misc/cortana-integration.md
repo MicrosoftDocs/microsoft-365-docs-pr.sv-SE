@@ -19,19 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Användare med giltiga arbets- eller skolkonton kan få Cortana i Microsoft 365 upplevelser som uppfyller Office 365 säkerhet på företagsnivå.
-ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6887032e62d397659dc73475418f52b0c1246a2f
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227901"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286699"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana i Microsoft 365
 
 Cortana, din personliga produktivitetsassistent, erbjuder AI-baserade upplevelser för att spara tid och fokusera på det som är viktigast. Cortana har utformats för att ge funktioner som på ett säkert sätt bearbetar och skäl över Office 365-data som e-post, filer, chattar osv. för att spara tid, öka effektiviteten och förbättra användarnas produktivitet.
 
-När användare är inloggade med giltiga arbets- eller skolkonton kan de få molnbaserade hjälptjänster med Cortana i Microsoft 365-upplevelser som uppfyller Office 365:s sekretess, säkerhet och efterlevnad på företagsnivå **("Cortana företagstjänster")** på företagsnivå. 
-
+När användare är inloggade med giltiga arbets- eller skolkonton kan de få molnbaserade hjälptjänster med Cortana i Microsoft 365-upplevelser som uppfyller Office 365:s sekretess, säkerhet och efterlevnad på företagsnivå **("Cortana företagstjänster")** på företagsnivå.
 
 - **Cortana företagstjänster** omfattar Cortana i Windows 10 (version 2004 och senare), Outlook för iOS och Android, Microsoft Teams-mobilappar för iOS och Android [Microsoft Teams visas.](/microsoftteams/devices/teams-displays)
 
@@ -88,19 +87,18 @@ Från och med Windows 10, version 2004, är Cortana en UWP-app (Universell Windo
 
 Cortana rösthjälp i mobilappen Teams och på Microsoft Teams-visningsenheter kan Microsoft 365 Enterprise-användare effektivisera kommunikation, samarbete och mötesrelaterade uppgifter med talat naturligt språk. Användarna kan prata med Cortana genom att välja mikrofonknappen längst upp till höger i Teams-mobilappen eller genom att säga &#8220;Cortana&#8221; på Microsoft Teams skärmen. För att snabbt komma i kontakt med sitt team handsfree och när de är på språng kan användare säga frågor som &#8220;-samtal till Abby&#8221; eller &#8220;skicka ett meddelande till mitt nästa&#8221;. Användare kan också ansluta till möten genom att säga &#8220;ansluta till mitt nästa&#8221; och använda rösthjälp för att dela filer, kontrollera deras kalender med mera. De här rösthjälpsupplevelserna levereras med Cortana företagstjänster som helt uppfyller Office 365:s sekretess, säkerhet och efterlevnad vad som utspelas i [OST (Online Services Terms).](https://www.microsoft.com/licensing/product-licensing/products)
 
-**Administratörskontroll**
+#### <a name="admin-control"></a>Administratörskontroll
 
 Cortana för röstsamtal aktiveras som standard för klientorganisationen. Administratörer kan styra vilka i klientorganisationen som kan Cortana rösthjälp i Teams via en policy (TeamsCortanaPolicy). Den här principen kan ställas in på antingen användarkontonivå eller klientnivå. Administratörer kan också använda fältet CortanaVoiceInvocationMode i den här principkontrollen för att avgöra om Cortana är inaktiverat, aktiverat med endast push-knappanrop eller aktiverat med aktivera ordanrop (gäller för enheter som stöder det, t.ex. Microsoft Teams-skärm). 
 
-**Användarkontroll**
+#### <a name="user-control"></a>Användarkontroll
 
 Enskilda användare kan prova att Cortana rösthjälp i Teams-mobilappen genom att klicka på mikrofonknappen. De kan prova Cortana rösthjälp på Microsoft Teams-visningsenheter genom att säga &#8220;Cortana.&#8221; De kan också styra om Cortana svarar på aktivering av ordanrop. 
 
-1.  Öppna Teams mobil
-2.  Gå till Inställningar
-3.  Välj Cortana
-4.  Ändra växlingsknappen för röstaktivering
-
+1. Öppna Teams mobil
+2. Gå till Inställningar
+3. Välj Cortana
+4. Ändra växlingsknappen för röstaktivering
 
 [Läs mer om Cortana rösthjälp i Teams](/microsoftteams/cortana-in-teams)
 
@@ -123,7 +121,6 @@ Enskilda användare uppmanas att registrera sig för den konversationsmässiga A
 Spela upp mina e-postmeddelanden (som anslutna till via Outlook mobile) är en röststyrd, handsfree-upplevelse där användare kan lyssna på nya meddelanden i sin fokuserade inkorg och ändra sina dagar via högtalarna på sin telefon, hörlurar eller anslutna ljudenhet. Användare kan be Cortana att läsa upp sina senaste e-postmeddelanden och Cortana att vidta åtgärder som flagga, arkivera, ta bort och hoppa över meddelanden. Den här funktionen är särskilt användbar om du behöver komma i god tid till din e-post när du kör, multitasking eller när du är på resa. När användaren pratar för Cortana i Spela upp mina e-postmeddelanden, skickas talljudbegäran direkt till Cortana företagstjänster. En text till tal-läsning av användarens e-post bearbetas i Office 365 molnet. Under den här processen behandlas Office 365 data på användarens mobila enhet och inga e-postdata sparas. En avskrift av talade kommandon (t.ex. "markera som läst", "nästa", "flagga" osv.) kan behållas i enlighet med dataskyddsvillkoren i Villkoren för Microsoft [Online Services.](https://www.microsoft.com/licensing/product-licensing/products)
 
 Cortana visas när ett e-postmeddelande är skyddat och tillfälligt pausas innan meddelandet läss, så att användarna får tillräckligt med tid att pausa uppspelningen eller hoppa till nästa meddelande. I likhet med ett privat telefonsamtal bör användarna vara försiktig när de initierar uppspelningen på platser där konfidentiell information eventuellt kan repeteras. I de här fallen rekommenderar vi att organisationens anställda har hörlurar i lämpliga miljöer när de använder Spela upp mina e-postmeddelanden i Outlook mobil.
-
 
 ### <a name="how-to-opt-out-of-play-my-emails"></a>Så här avanmäler du dig från Spela upp mina e-postmeddelanden
 
@@ -183,10 +180,8 @@ Inaktivera Cortana åtkomst till din organisations Microsoft-värddata
 
 Microsoft är datakontrollant för [tjänster](https://go.microsoft.com/fwlink/p/?LinkId=2109174) som [regleras av Tjänstavtal](https://privacy.microsoft.com/privacystatement)för Microsoft och Microsofts sekretesspolicy. Som datakontrollant använder Microsoft data för att förbättra produkter och tjänster i enlighet med [Microsofts sekretesspolicy.](https://privacy.microsoft.com/privacystatement)
 
-
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Cortana rösthjälp i Teams](/microsoftteams/cortana-in-teams) (artikel)\
 [Konfigurera Cortana i Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (artikel)\
 [Vad kan du göra med Spela upp mina e-postmeddelanden Cortana?](https://support.microsoft.com/help/4558256)
-

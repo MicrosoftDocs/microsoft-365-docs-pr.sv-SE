@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En Microsoft 365 är ett verktyg som du kan utbilda dig för att identifiera olika typer av innehåll genom att ge den exempel att titta på. I den här artikeln beskrivs hur du skapar och utbildar en anpassad klassificerare och hur du utbildar dem för ökad precision.
-ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3053e5154fb4e1ff39ce7db366ce4679bbb8911d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162018"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286639"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Kom igång med utbildningsbara klassificerare
 
@@ -108,7 +108,7 @@ När den utbildande klassificeraren har hanterat tillräckligt positiva prover f
    > [!TIP]
    > Om du skapar en ny webbplats och mapp för dina startdata bör du tillåta minst en timme för indexeringen av platsen innan du skapar den trainable-klassificerare som använder dessa tillåtna data.
 
-3. Logga in på Microsoft 365 efterlevnadscenter med rollåtkomst för efterlevnadsadministratörer eller säkerhetsadministratörer och öppna **Microsoft 365** eller **Microsoft 365 säkerhetscenter**  >  **Dataklassificering.**
+3. Logga in på Microsoft 365 Efterlevnadscenter med rollåtkomst från efterlevnadsadministratör eller säkerhetsadministratör och öppna **Microsoft 365 Efterlevnadscenter** eller **Microsoft 365 säkerhetscenter**  >  **Dataklassificering.**
 
 4. Välj **fliken Utbildare.**
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Följ de här stegen om du vill ta bort en tidigare anställds användarkonto.
-ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e2e1b234eaee3818321761af8f737bad8d131b62
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782387"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286329"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Steg 7 – Ta bort en tidigare anställds användarkonto
 
@@ -48,7 +48,7 @@ När du tar bort en användare blir dennes konto inaktivt i ca 30 dagar. Du har 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../../business-video/index.yml).
+Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](../../business-video/index.yml).
 
 ## <a name="does-your-organization-use-active-directory"></a>Använder ni Active Directory i organisationen?
 
@@ -61,28 +61,36 @@ Om du använder en Azure Active Directory, se [PowerShell-cmdleten Remove-MsolUs
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>Vad du behöver veta om att avsluta en anställds e-postsession
 
 Här finns information om hur du avslutar en anställds e-post (Exchange).
-  
-|||
+
+<br>
+
+****
+
+|Vad du kan göra|Hur gör du det?|
 |:-----|:-----|
-|**Vad du kan göra** <br/> |**Hur gör du det?** <br/> |
-|Avsluta en session (till exempel Outlook på webben, Outlook, Exchange ActiveSync, etc.) och framtvinga en ny session  <br/> |Återställa lösenord  <br/> |
-|Avsluta en session och blockera åtkomst till framtida sessioner (för alla protokoll)  <br/> |Inaktivera kontot. Till exempel (i Exchange eller med PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|Avbryt sessionen för ett visst protokoll (till exempel ActiveSync)  <br/> |Inaktivera protokollet. Till exempel (i Exchange eller med PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|Avsluta en session (till exempel Outlook på webben, Outlook, Exchange ActiveSync, etc.) och framtvinga en ny session|Återställa lösenord|
+|Avsluta en session och blockera åtkomst till framtida sessioner (för alla protokoll)|Inaktivera kontot. Till exempel (i Exchange eller med PowerShell): <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Avbryt sessionen för ett visst protokoll (till exempel ActiveSync)|Inaktivera protokollet. Till exempel (i Exchange eller med PowerShell): <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|
 
 Åtgärderna ovan kan utföras på tre platser:
   
-|||
-|:-----|:-----|
-|**Om du avslutar sessionen här** <br/> |**Hur lång tid det tar** <br/> |
-|I administrationscentret för Exchange eller med PowerShell  <br/> |Förväntad fördröjning mindre än 30 minuter  <br/> |
-|I Azure Active Directory-administratörcenter  <br/> |Förväntad fördröjning mindre än 60 minuter  <br/> |
-|I en lokal miljö  <br/> |Förväntad fördröjning 3 timmar eller mer  <br/> |
+<br>
+
+****
+
+|Om du avslutar sessionen här|Hur lång tid det tar|
+|---|---|
+|I administrationscentret för Exchange eller med PowerShell|Förväntad fördröjning mindre än 30 minuter|
+|I Azure Active Directory-administratörcenter|Förväntad fördröjning mindre än 60 minuter|
+|I en lokal miljö|Förväntad fördröjning 3 timmar eller mer|
+|
 
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>Så här får du snabbast svar vid kontouppsägning
 
- **Snabbast**: Använd administrationscentret för Exchange (använd PowerShell) eller administrationscentret för Azure Active Directory. Det kan ta flera timmar att synkronisera ändringar genom DirSync i en lokal miljö.
+**Snabbast**: Använd administrationscentret för Exchange (använd PowerShell) eller administrationscentret för Azure Active Directory. Det kan ta flera timmar att synkronisera ändringar genom DirSync i en lokal miljö.
   
- **Snabbast för en användare med närvaro lokalt och i Exchange-datacentret**: Avbryt sessionen med administrationscentret för Azure Active Directory/administrationscentret för Exchange OCH gör även ändringen i den lokala miljön. Ändringen i administrationscentret för Azure Active Directory/administrationscentret för Exchange kommer annars att skrivas över av DirSync.
+**Snabbast för en användare med närvaro lokalt och i Exchange-datacentret**: Avbryt sessionen med administrationscentret för Azure Active Directory/administrationscentret för Exchange OCH gör även ändringen i den lokala miljön. Ändringen i administrationscentret för Azure Active Directory/administrationscentret för Exchange kommer annars att skrivas över av DirSync.
   
 ## <a name="related-content"></a>Relaterat innehåll
 

@@ -13,16 +13,16 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Lär dig hur du hanterar kontrakt med en Microsoft 365 lösning av SharePoint Syntex, SharePoint listor, Microsoft Teams och Power Automate.
-ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bc2570b08add2fa93637b9f64931c5903795a079
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054761"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287323"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Hantera kontrakt med en Microsoft 365-lösning
 
-I den här artikeln beskrivs hur du skapar en lösning för kontraktshantering för organisationen med hjälp SharePoint Syntex och komponenter Microsoft 365. Det ger dig ett ramverk som hjälper dig att planera och skapa en lösning som passar dina unika affärsbehov. Även om den här lösningen inte passar dina affärsbehov som helhet kan delar av den användas i din planering för att skapa en anpassad lösning för kontraktshantering.
+I den här artikeln beskrivs hur du skapar en lösning för kontraktshantering för organisationen med hjälp SharePoint Syntex och komponenter Microsoft 365. Det ger dig ett ramverk som hjälper dig att planera och skapa en lösning som passar dina unika affärsbehov. Även om den här lösningen handlar om kontraktshantering kan du anpassa den för att skapa andra dokumenthanteringslösningar, till exempel för kontoutdrag eller fakturor.
 
 *Det här innehållet innehåller dokument Microsoft 365 en lösning som utvecklats av Thomas ThomasBach med Teamet modern arbetslösningsstrategi på Microsoft.*
 
@@ -65,10 +65,10 @@ Den här lösningen för kontraktshantering innehåller fyra komponenter Microso
       ![Exempel på ett kontrakt.](../media/content-understanding/contract.png)
 
 3. I Microsoft Teams är alla intressenter medlemmar i en säker Teams kanal där alla kontrakt i dokumentbiblioteket visas för godkännande eller avvisning. Med hjälp Teams funktioner meddelas alla intressenter när nya kontrakt behöver granskas.
- 
-4. Med hjälp Power Automate flyttas kontrakt genom godkännandeprocessen i Teams kanalen. När en medlem godkänner ett avtal ändras kontraktsstatusen för att godkännas, alla medlemmar meddelas via ett Teams-inlägg och ett radobjekt skapas för att visa att avtalet är klart för utbetalning. Den här processen kan utökas till att skriva direkt till en betalningsansökan från tredje part.
 
-5.  När en medlem avvisar ett kontrakt ändras statusen till avvisad och alla medlemmar meddelas via ett Teams inlägg.
+4. Med hjälp Power Automate flyttas kontrakt genom godkännandeprocessen i Teams kanalen. När en medlem godkänner ett avtal ändras kontraktsstatusen till godkänd, alla medlemmar meddelas via ett Teams-inlägg och ett radobjekt skapas för att visa att avtalet är klart för utbetalning. Den här processen kan utökas till att skriva direkt till en betalningsansökan från tredje part.
+
+5. När en medlem avvisar ett kontrakt ändras statusen till avvisad och alla medlemmar meddelas via ett Teams inlägg.
 
 6. Resultatet av den här lösningen är en automatiserad affärsprocess för din organisation. Anställda kan enkelt använda den anpassade panelvyn i Teams initiera och övervaka arbetsflödet för godkännande av dina dokument. 
 
@@ -78,9 +78,9 @@ Den här lösningen för kontraktshantering innehåller fyra komponenter Microso
 
 Den här lösningen använder följande funktioner, som alla är tillgängliga som en del av en licens för Microsoft 365 Enterprise (E1, E3, E5, F3) eller Business (Basic, Standard eller Premium):
 
--   Microsoft SharePoint Syntex
--   Microsoft Teams
--   Power Automate
+- Microsoft SharePoint Syntex
+- Microsoft Teams
+- Power Automate
 
 ## <a name="create-the-solution"></a>Skapa lösningen
 

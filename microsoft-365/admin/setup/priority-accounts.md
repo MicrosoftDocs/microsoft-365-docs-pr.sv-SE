@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Övervaka misslyckades och fördröjda e-postmeddelanden som skickas till eller från konton som har stor inverkan på verksamheten.
-ms.openlocfilehash: 2a58f4090244fc6d68be69cf6b3c8ab6e00874fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 86e01e591823c94d8279f975ed7de24cc65776dc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535812"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286147"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Hantera och övervaka prioritetskonton
 
@@ -45,7 +45,7 @@ Funktionen **för att skydda** ett Priority-konto som beskrivs i det här avsnit
 
 Funktionen **Premium e Flow postmeddelanden** som beskrivs i det här avsnittet är endast tillgänglig för organisationer som uppfyller följande krav:
 
-- Din organisation behöver ha ett antal licenser på minst 10 000, från en av eller en kombination av följande produkter: Office 365 E3, Microsoft 365 E3, Office 365 E5 och Microsoft 365 E5. Din organisation kan till exempel ha 3 000 E3 Office 365 licenser och 8500 Microsoft 365 E5, vilket ger totalt 11 500 licenser från de kvalificerande produkterna.
+- Organisationen måste ha ett antal licenser på minst 5 000, från en av eller en kombination av följande produkter: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Din organisation kan till exempel ha 3 000 Office 365 E3-licenser och 2 500 Microsoft 365 E5 som totalt blir 5 500 licenser av de kvalificerande produkterna.
 - Din organisation måste ha minst 50 månatliga aktiva Exchange Online-användare.
 
 > [!NOTE]
@@ -57,7 +57,7 @@ När du tillämpar prioritetskontoskydd på en postlåda bör du även tillämpa
 
 Lägg till prioritetskonton från **sidan Inställningar.**
 
-1. Gå till Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> administrationscenter.
+1. Gå till Administrationscenter för Microsoft 365 vid <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
 2. Gå till **Kunskap**  >  **om konfigurationen** av organisationen och välj **Visa** under Övervaka dina **viktigaste konton.**
 
@@ -83,7 +83,7 @@ Lägg till prioritetskonton från sidan Aktiva användare.
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>Ta bort en användare från listan med prioriterade konton
 
-1. Gå till Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> administrationscenter.
+1. Gå till Administrationscenter för Microsoft 365 vid <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
 2. Gå till **Kunskap**  >  **om konfigurationen** av organisationen och välj **Visa** under Övervaka dina **viktigaste konton.**
 

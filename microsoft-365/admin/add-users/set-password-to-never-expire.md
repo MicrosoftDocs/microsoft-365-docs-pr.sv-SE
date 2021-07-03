@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Logga in på ditt Microsoft 365 för att ange att vissa lösenord aldrig ska upphöra att gälla genom att använda Windows PowerShell.
-ms.openlocfilehash: 12c717d8d625b0135f185b1af131db00e9762c73
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a0b247f4b736ecccab57398e1e7131f0a06a2958
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635564"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286279"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Ange att en enskild användares lösenord aldrig ska förfalla
 
@@ -35,11 +35,11 @@ I den här artikeln förklaras hur du anger ett lösenord så att en enskild anv
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../../business-video/admin-center-overview.md). 
+Den här artikeln är avsedd för personer som anger en förfalloprincip för lösenord för ett företag, en skola eller en ideell förening. Du måste logga in med ditt administratörskonto för Microsoft 365 för att slutföra de här stegen. [Vad är ett administratörskonto?](../../business-video/admin-center-overview.md).
 
 Du måste vara global [administratör eller lösenordsadministratör för att](about-admin-roles.md) utföra de här stegen.
 
-En global administratör för en Microsoft-molntjänst kan använda [PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) för Azure Active Directory för Graph ange att lösenord inte ska upphöra att gälla för specifika användare. Du kan [](/powershell/module/Azuread) också använda AzureAD-cmdlets för att ta bort konfigurationen med aldrig upphör att gälla eller för att se vilka användarlösenord som är inställda på att aldrig upphöra.
+En global administratör för en Microsoft-molntjänst kan använda [PowerShell](/powershell/azure/active-directory/install-adv2) för Azure Active Directory för Graph ange att lösenord inte ska upphöra att gälla för specifika användare. Du kan [](/powershell/module/Azuread) också använda AzureAD-cmdlets för att ta bort konfigurationen med aldrig upphör att gälla eller för att se vilka användarlösenord som är inställda på att aldrig upphöra.
 
 Den här guiden gäller för andra leverantörer, till exempel Intune och Microsoft 365, som också förlitar sig på Azure AD för identitet och katalogtjänster. Lösenordsförfallotid är den enda del av principen som kan ändras.
 
@@ -48,7 +48,7 @@ Den här guiden gäller för andra leverantörer, till exempel Intune och Micros
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Så här kontrollerar du förfalloprincipen för ett lösenord
 
-Mer information om kommandot Get-AzureADUser AzureAD-modulen finns i referensartikeln [Get-AzureADUser.](/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)
+Mer information om kommandot Get-AzureADUser AzureAD-modulen finns i referensartikeln [Get-AzureADUser.](/powershell/module/Azuread/Get-AzureADUser)
 
 Kör något av följande kommandon:
 
@@ -66,7 +66,7 @@ Kör något av följande kommandon:
     Get-AzureADUser -ObjectId userUPN@contoso.com | Select-Object UserprincipalName,@{
         N="PasswordNeverExpires";E={$_.PasswordPolicies -contains "DisablePasswordExpiration"}
     }
-    ```  
+    ```
 
 - Om du vill **se inställningen för Lösenord upphör** aldrig att gälla för alla användare kör du följande cmdlet:
 
@@ -82,7 +82,7 @@ Kör något av följande kommandon:
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
         N="PasswordNeverExpires";E={$_.PasswordPolicies -contains "DisablePasswordExpiration"}
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
-    ```  
+    ```
 
 - För att få en rapport över alla användare med PasswordNeverExpires i CSV på skrivbordet för den aktuella användaren med **ReportPasswordNeverExpires.csv**
 

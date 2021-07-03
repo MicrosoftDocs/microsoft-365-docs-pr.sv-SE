@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 0296e8151162ad4f2855fdd29ff2fc0ed4b4d6b2
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177579"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286891"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
 
@@ -262,14 +262,13 @@ Windows 10 enheter i din Azure AD-organisation måste kunna registreras automati
 
 Kontrollera att **MDM-användarens omfattning** är inställd **på Vissa** eller **Alla**, inte **Inget.** Om du väljer **Vissa** kommer du tillbaka efter registreringen och  väljer den moderna arbetsplatsen – alla Azure **AD-grupper** för grupper eller en motsvarande grupp som är riktad mot alla Microsoft Hanterat skrivbord användare.  Se [Konfigurera registrering för Windows enheter med hjälp av Microsoft Intune](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment).
 
-
 ### <a name="ad-hoc-subscriptions"></a>Ad hoc-prenumerationer
 
 Ger information om hur du kontrollerar en inställning som (om denna är inställd på "falskt") kan förhindra att Roaming i företagstillståndet fungerar korrekt.
 
 **Rådgivning**
 
-Kontrollera att **AllowAdHocSubscriptions** är inställt på **Sant.** Annars kanske Inte Enterprise State Roaming fungerar. Mer information finns i [Set-MsolCompanySettings.](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)
+Kontrollera att **AllowAdHocSubscriptions** är inställt på **Sant.** Annars kanske Inte Enterprise State Roaming fungerar. Mer information finns i [Set-MsolCompanySettings.](/powershell/module/msonline/set-msolcompanysettings)
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming

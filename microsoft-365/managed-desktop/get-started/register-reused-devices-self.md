@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: ed254234109bc5ff9865ff49ed3fa0fff8770ab0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893281"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286915"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrera befintliga enheter själv
 
@@ -75,13 +75,13 @@ I en Active Directory-miljö kan du använda PowerShell-cmdleten för att fjärr
 - Kontrollera att du har en parameter för domänbehörigheter för autentiseringsuppgifter som kan köras via fjärrstyrning på enheterna.
 - Kontrollera att Windows tillåter åtkomst till WMI. Det gör du genom att följa de här stegen:
 
-    1. Öppna **Windows Defender-brandväggen** och välj Tillåt **en app eller funktion via Windows Defender-brandväggen**.
-    
+    1. Öppna kontrollpanelen **Windows Defender brandväggen** och välj **Tillåt en app eller funktion i Windows Defender brandväggen**.
+
     2. Leta **Windows (Management Instrumentation) (WMI)** i listan, aktivera både privat och **offentligt** och välj sedan **OK.**
 
-1.  Öppna en PowerShell-fråga med administrativa rättigheter.
+1. Öppna en PowerShell-fråga med administrativa rättigheter.
 
-2.  Kör *något av* följande skript:
+2. Kör *något av* följande skript:
 
     ```powershell
     Install-script -name Get-WindowsAutoPilotInfo 
@@ -102,9 +102,9 @@ Nu kan du fortsätta att [registrera enheter](#register-devices-by-using-the-adm
 
 #### <a name="manual-powershell-script-method"></a>Manuell PowerShell-skriptmetod
 
-1.  Öppna en PowerShell-fråga med administrativa rättigheter.
-2.  Kör `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  Kör `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+1. Öppna en PowerShell-fråga med administrativa rättigheter.
+2. Kör `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. Kör `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 4. [Slå samman hash-data.](#merge-hash-data)
 
 #### <a name="flash-drive-method"></a>Flash-enhetsmetod
@@ -120,10 +120,8 @@ Nu kan du fortsätta att [registrera enheter](#register-devices-by-using-the-adm
 9. Ta bort USB-enheten och stäng sedan av enheten genom att köra `shutdown -s -t 0`
 10. [Slå samman hash-data.](#merge-hash-data)
 
->[!IMPORTANT]
->Ström inte på enheten som du registrerar igen förrän du har slutfört registreringen för den. 
-
-
+> [!IMPORTANT]
+> Ström inte på enheten som du registrerar igen förrän du har slutfört registreringen för den. 
 
 ### <a name="merge-hash-data"></a>Slå samman hash-data
 
@@ -135,16 +133,13 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 Med hash-data kopplade till en CSV-fil kan du nu fortsätta att [registrera enheterna](#register-devices-by-using-the-admin-portal).
 
-
 ## <a name="register-devices-by-using-the-admin-portal"></a>Registrera enheter med hjälp av administrationsportalen
 
 I [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)väljer du **Enheter** i det vänstra navigeringsfönstret. Titta efter Microsoft Hanterat skrivbord i menyn och välj **Enheter**. I arbetsytan Microsoft Hanterat skrivbord Enheter väljer du **+ Registrera enheter,** som gör att du kan registrera nya enheter.
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 Gör så här:
 
@@ -187,12 +182,3 @@ Du får också gärna använda bilden på egen hand om du föredrar det. Kontakt
 > Innan du lämnar över enheten till användaren kontrollerar du att du har skaffat och [tillämpat lämpliga licenser](../get-ready/prerequisites.md) för den användaren.
 
 Om alla licenser används kan [](get-started-devices.md)du förbereda användarna för att använda enheter och sedan starta enheten och gå Windows konfiguration.
-
-
-
-
-
-
-
-
-

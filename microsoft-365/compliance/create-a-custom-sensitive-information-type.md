@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du skapar, ändrar, tar bort och testar anpassade typer av känslig information för DLP i Säkerhets- & säkerhets- och efterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256729"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287545"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Komma igång med anpassade typer av känslig information
 
@@ -128,12 +128,14 @@ Du kan också skapa anpassade typer av känslig information med hjälp av PowerS
 ### <a name="checksum-validator"></a>Kontrollerasummator
 
 Om du behöver köra en kontrollsumma för en siffra i ett reguljärt uttryck kan du använda *giltigt kontrollsumma.* Säg till exempel att du behöver skapa en SIT för ett åttasiffrigt licensnummer där den sista siffran är en kontrollsummassiffra som valideras med en mod 9-beräkning. Du har ställt in algoritmen för kontrollsumma så här:
- 
+
 Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value != digit 8 Account number is invalid
 
 1. Definiera det primära elementet med det här reguljära uttrycket:
 
-`\d{8}`
+   ```console
+   \d{8}
+   ```
 
 2. Lägg sedan till valideraren för kontrollsumma.
 3. Lägg till viktvärdena avgränsade med kommatecken, bchecksiffrans position och värdet Mod. Mer information om Modulo-åtgärden finns i [Modulo-åtgärden](https://en.wikipedia.org/wiki/Modulo_operation).
@@ -145,11 +147,13 @@ Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * w
 
 ### <a name="date-validator"></a>Datum validerare
 
-Om ett datumvärde som är inbäddat i ett reguljärt uttryck ingår i ett nytt mönster som du skapar kan du använda *datum-giltigt* datum för att testa att det uppfyller villkoren. Säg till exempel att du vill skapa en SIT för ett niosiffrigt anställningsnummer. De första sex siffrorna är anställningsdatumet i DDMMYY-format och de sista tre är slumpgenererade siffror. Verifiera att de första sex siffrorna har rätt format. 
+Om ett datumvärde som är inbäddat i ett reguljärt uttryck ingår i ett nytt mönster som du skapar kan du använda *datum-giltigt* datum för att testa att det uppfyller villkoren. Säg till exempel att du vill skapa en SIT för ett niosiffrigt anställningsnummer. De första sex siffrorna är anställningsdatumet i DDMMYY-format och de sista tre är slumpgenererade siffror. Verifiera att de första sex siffrorna har rätt format.
 
 1. Definiera det primära elementet med det här reguljära uttrycket:
 
-`\d{9}`
+   ```console
+   \d{9}
+   ```
 
 2. Lägg sedan till datum giltigare.
 3. Välj datumformat och startförskjutning. Eftersom datumsträngen är de första sex siffrorna är förskjutningen `0` .

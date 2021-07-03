@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Förstå hur du använder Microsoft Compliance Configuration Analyzer för att snabbt komma igång med Microsoft Compliance Manager.
-ms.openlocfilehash: 36f11597eac1837e3e18885f3c0a5d8dbc89a774
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 7652a53e0d63e52d92e0d0506207c28f67459029
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148968"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287059"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Microsoft Compliance Configuration Analyzer för Efterlevnadshanteraren (förhandsversion)
 
@@ -167,4 +167,4 @@ Välj listrutan bredvid etiketten **Rekommendation** till höger om förbättrin
 
 Mer detaljerad information om att installera, konfigurera och använda MCCA finns i [README-anvisningarna](https://github.com/OfficeDev/MCCA#overview) för GitHub (inget GitHub konto krävs).
 
-Mer information om Windows PowerShell finns i Så [här använder du PowerShell-dokumentationen.](/powershell/scripting/how-to-use-docs?view=powershell-7) Se även [Windows PowerShell.](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7)
+Mer information om Windows PowerShell finns i Så [här använder du PowerShell-dokumentationen.](/powershell/scripting/how-to-use-docs) Se även [Windows PowerShell.](/powershell/scripting/windows-powershell/starting-windows-powershell)

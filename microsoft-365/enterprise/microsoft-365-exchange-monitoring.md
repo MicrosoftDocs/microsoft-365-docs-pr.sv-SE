@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Använd Exchange Online-övervakning för information om e-postincidenter eller rekommendationer i Microsoft 365.
-ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
-ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
+ms.openlocfilehash: 3d88378449879d451b21ba8bf2a7b5c3032a2c07
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52707302"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286447"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Exchange Online-övervakning för Microsoft 365
 
@@ -133,4 +133,3 @@ För att lämna feedback om incidenter eller rekommendationer använder du länk
 #### <a name="7-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>7. Var är data instrumenterad för de scenarier som visar aktivitetstrender?
 
 Data är instrumenterade i Exchange Online-tjänsten. Om det finns ett fel som uppstår innan begäran når Exchange Online eller om det finns ett fel i Exchange Online ser du en nedgång i aktivitetssignalen.
-

@@ -20,30 +20,30 @@ ms.custom:
 search.appverid: MET150
 description: Läs mer Microsoft 365 självbetjäning för registrering och tillgängliga självbetjäningsprogram som Microsoft Power Apps, Microsoft Flow och Dynamics 365 för ekonomi.
 ms.date: 03/17/2021
-ms.openlocfilehash: f3427294a94875e21a5e6b99a09056617a7dea99
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7aec03abce468342cfeb23da490b1f950ecd7050
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332384"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286591"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>Använda självbetjäning för registrering i organisationen
 
 Registrering med självbetjäning gör det enklare för användarna i organisationen att registrera sig för onlinetjänster från Microsoft. Vi kallar den här registreringsprocessen "självbetjäning för registrering" eftersom dina användare kan registrera sig för att använda tjänster som betalas i ditt abonnemang eller använda kostnadsfria tjänster utan att be dig vidta åtgärder för deras räkning.
-  
+
 ## <a name="how-self-service-sign-up-works"></a>Så här fungerar självbetjäning för registrering
 
 I följande exempel beskrivs hur självinlärning fungerar för en skola. Samma process fungerar för alla organisationer som har självbetjäningsprogram aktiverade i klientorganisationen.
-  
+
 1. Studenter och lärare har e-postadresser för skolan som anger att de är kopplade till din institution. Till exempel kan e-postadressen jakob@uw.edu ange en elev på University of Washington.
 2. Studenter och personal går till vår webbplats [och](https://go.microsoft.com/fwlink/p/?LinkId=536628)använder sin e-postadress för att registrera sig för de tjänster som din organisation erbjuder, till exempel Microsoft 365-appar för företag. De kan även registrera sig för andra kostnadsfria tjänster som vi erbjuder.
 3. Vi validerar deras e-postadress och sedan kan de börja Microsoft 365, Power BI eller andra tjänster direkt.
-4. Som företagsadministratör kan du se vem som har registrerat sig  för en prenumeration genom att välja prenumerationen på sidan Licensiering Microsoft 365 administrationscentret. På så sätt kan du se när det finns nya eller okända licenser för tjänster i klientorganisationen. Om du vill styra om användare kan registrera sig för prenumerationer med självbetjäning använder du powershell-cmdleten [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0&preserve-view=true) med **parametern AllowAdHocSubscriptions.** Mer information finns i [Hur styr jag självbetjäningsuppgifter?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
+4. Som företagsadministratör kan du se vem som har registrerat sig för en prenumeration genom att välja prenumerationen på sidan **Licensiering** i Administrationscenter för Microsoft 365. På så sätt kan du se när det finns nya eller okända licenser för tjänster i klientorganisationen. Om du vill styra om användare kan registrera sig för prenumerationer med självbetjäning använder du powershell-cmdleten [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings) med **parametern AllowAdHocSubscriptions.** Mer information finns i [Hur styr jag självbetjäningsuppgifter?](/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)
 
 ## <a name="available-self-service-programs"></a>Tillgängliga självbetjäningsprogram
 
 Här följer de för närvarande tillgängliga självbetjäningsprogram som finns tillgängliga. Den här listan uppdateras när nya program läggs till.
-  
+
 | Program <br/> | Beskrivning <br/> | Ytterligare information <br/> | Webbplats för självbetjäning vid registrering <br/> |
 |:-----|:-----|:-----|:-----|
 |Office 365 A1**** <br/> |Vilken elev eller lärare som helst kan använda en e-postadress för skolan för att registrera sig kostnadsfritt Office 365 och få Office-appar för webben, 1 TB molnlagring i OneDrive och SharePoint Online för klass-, grupp- och projektwebbplatser.  <br/> |[Office 365 Education Vanliga tekniska frågor och svar](/microsoft-365/education/deploy/office-365-education-self-sign-up) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |

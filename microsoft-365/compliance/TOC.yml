@@ -114,7 +114,7 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Skapa aviseringar för exakta datamatchningsaktiviteter (förhandsversion)
           href: sit-edm-notifications-activities.md
-        - name: Skapa en anpassad känslig informationstyp – Säkerhets- och efterlevnadscenter
+        - name: Komma igång med anpassade typer av känslig information - Säkerhets- och efterlevnadscenter
           href: create-a-custom-sensitive-information-type.md
         - name: Skapa en anpassad känslig informationstyp – PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md

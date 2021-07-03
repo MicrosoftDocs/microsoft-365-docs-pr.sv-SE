@@ -19,49 +19,33 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Du kan använda Microsoft 365 Efterlevnadscenter för att söka i den enhetliga granskningsloggen för att visa användar- och administratörsaktivitet i organisationen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809149"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287509"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Söka i granskningsloggen i Efterlevnadscenter
 
 Behöver du ta reda på om en användare har visat ett visst dokument eller tagit bort ett objekt från postlådan? I så fall kan du använda Microsoft 365 Efterlevnadscenter för att söka i den enhetliga granskningsloggen för att visa användar- och administratörsaktivitet i organisationen. Varför en enhetlig granskningslogg? Därför att du kan söka efter följande typer av [användar- och administratörsaktivitet](#audited-activities) i Microsoft 365:
 
 - Användaraktivitet i SharePoint Online och OneDrive för företag
-
 - Användaraktivitet i Exchange Online (granskningsloggning för Exchange-postlåda)
-
 - Administratörsaktivitet i SharePoint Online
-
 - Administratörsaktivitet i Azure Active Directory (katalogtjänsten för Microsoft 365)
-
 - Administratörsaktivitet i Exchange Online (granskningsloggning för Exchange-administratör)
-
 - eDiscovery-aktiviteter i Säkerhets- och efterlevnadscenter
-
 - Användar- och administratörsaktivitet i Power BI
-
 - Användar- och administratörsaktivitet i Microsoft Teams
-
 - Användar- och administratörsaktivitet i Dynamics 365
-
 - Användar- och administratörsaktivitet i Yammer
-
 - Användar- och administratörsaktivitet i Microsoft Power Automate
-
 - Användar- och administratörsaktivitet i Microsoft Stream
-
 - Analytiker- och administratörsaktivitet i Microsoft Workplace Analytics
-
 - Användar- och administratörsaktivitet i Microsoft Power Apps
-
 - Användar- och administratörsaktivitet i Microsoft Forms
-
 - Användar- och administratörsaktivitet för känslighetsetiketter för webbplatser som använder SharePoint Online eller Microsoft Teams
-
 - Administratörsaktivitet i Briefing-e-post och MyAnalytics
 
 ## <a name="requirements-to-search-the-audit-log"></a>Krav för att söka i granskningsloggen
@@ -73,6 +57,7 @@ Läs följande innan du börjar söka i granskningsloggen.
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
+
   Värdet `True` för egenskapen *UnifiedAuditLogIngestionEnabled* anger att granskningsloggsökning är aktiverat. Du kan läsa mer i [Aktivera och inaktivera granskningsloggsökning](turn-audit-log-search-on-or-off.md).
 
 - Du måste ha tilldelats rollen Skrivskyddade granskningsloggar eller Granskningsloggar i Exchange Online för att söka i granskningsloggen. Som standard tilldelas de här rollerna till rollgrupperna Efterlevnadshantering och Organisationshantering på sidan **Behörigheter** i administrationscentret för Exchange. Observera att globala administratörer i Office 365 och Microsoft 365 automatiskt läggs till som medlemmar i rollgruppen Organisationshantering i Exchange Online. Om du vill ge en användare möjlighet att söka i granskningsloggen med den lägsta graden av behörighet kan du skapa en anpassad rollgrupp i Exchange Online, lägga till rollen Skrivskyddade granskningsloggar eller Granskningsloggar och sedan lägga till användaren som medlem i den nya rollgruppen. Mer information finns i [Hantera rollgrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
@@ -114,8 +99,12 @@ Läs följande innan du börjar söka i granskningsloggen.
 
 - Det kan ta upp till 30 minuter eller upp till 24 timmar efter att en händelse inträffat innan motsvarande granskningsloggpost returneras i resultaten för en granskningsloggsökning. I följande tabell visas den tid det tar för olika tjänster i Office 365.
 
+  <br>
+
+  ****
+
   |Microsoft 365-tjänst eller -funktion|30 minuter|24 timmar|
-  |:-----|:-----:|:-----:|
+  |---|:---:|:---:|
   |Defender för Office 365 och Threat Intelligence|![Bockmarkering](../media/checkmark.png)||
   |Azure Active Directory (användarinloggningshändelser)||![Bockmarkering](../media/checkmark.png)|
   |Azure Active Directory (administratörshändelser)||![Bockmarkering](../media/checkmark.png)|
@@ -133,9 +122,9 @@ Läs följande innan du börjar söka i granskningsloggen.
   |Känslighetsetiketter||![Bockmarkering](../media/checkmark.png)|
   |SharePoint Online och OneDrive för företag|![Bockmarkering](../media/checkmark.png)||
   |Workplace Analytics|![Bockmarkering](../media/checkmark.png)||
-  |Yammer||![Bockmarkering](../media/checkmark.png)||
-  |Microsoft Forms|![Bockmarkering](../media/checkmark.png)|
-  ||||
+  |Yammer||![Bockmarkering](../media/checkmark.png)|
+  |Microsoft Forms|![Bockmarkering](../media/checkmark.png)||
+  |
 
 - Azure Active Directory (Azure AD) är katalogtjänsten för Office 365. Den enhetliga granskningsloggen innehåller användar-, grupp-, program-, domän- och katalogaktiviteter som utförts i administrationscentret för Microsoft 365 eller i Azure-hanteringsportalen. En fullständig lista över Azure AD-händelser finns i [Azure Active Directory-granskningsrapporthändelser](/azure/active-directory/reports-monitoring/concept-audit-logs).
 

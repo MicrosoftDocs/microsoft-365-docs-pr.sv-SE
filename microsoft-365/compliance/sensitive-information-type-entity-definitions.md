@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Det finns 200 typer av känslig information som är färdiga att använda i DLP-principerna. Den här artikeln innehåller alla dessa typer av känslig information och visar vad en DLP-princip söker efter när den identifierar varje typ.
-ms.openlocfilehash: 4efa411f7cc34b4116cc418e328e5c3f7545f788
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 614649367e72766d8df210fccbb4e3cdc9cdb4b6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789225"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287473"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitetsdefinitioner för typer av känslig information
 
@@ -133,16 +133,16 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
-- Argentina National Identity Number 
-- cedula 
-- ratdula 
-- dni 
-- documento nacional de identidad 
-- documento número 
-- documento numero 
-- registro nacional de las personas 
-- rnp 
-   
+- Argentina National Identity Number
+- cedula
+- ratdula
+- dni
+- documento nacional de identidad
+- documento número
+- documento numero
+- registro nacional de las personas
+- rnp
+
 ## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Argentinas unika skatteidentifieringsnyckel (CUIT/CUIL)
 
 ### <a name="format"></a>Format
@@ -224,8 +224,8 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - tax identification
 - Número de Identificación Fiscal
 - número de contribuyente
-   
-   
+
+
 ## <a name="australia-bank-account-number"></a>Bankkontonummer för Australien
 
 ### <a name="format"></a>Format
@@ -237,8 +237,8 @@ Sex till tio siffror med eller utan ett bankkontorsnummer
 Kontonumret kan vara 6 till 10 siffror.
 
 Bankkontor i Australien:
-- tre siffror 
-- ett bindestreck 
+- tre siffror
+- ett bindestreck
 - tre siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -420,15 +420,15 @@ nio bokstäver och siffror
 
 ### <a name="pattern"></a>Mönster
 
-Nio bokstäver och siffror: 
+Nio bokstäver och siffror:
 
-- två siffror eller bokstäver (inte teckenkänsliga) 
-- två siffror 
+- två siffror eller bokstäver (inte teckenkänsliga)
+- två siffror
 - Fem siffror eller bokstäver (inte teckenkänsliga)
 
 ELLER
 
-- En till två valfria bokstäver (inte teckenkänsliga) 
+- En till två valfria bokstäver (inte teckenkänsliga)
 - fyra till nio siffror
 
 ELLER
@@ -525,7 +525,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - Driver's Lic #
 - Driver's Lics #
 - Driver's Licence #
-- Driver's Licences # 
+- Driver's Licences #
 
 #### <a name="keyword_australia_drivers_license_number_exclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
@@ -562,7 +562,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - Driver'sLicenses #
 - Driver's License #
 - Driver's Licenses #
-   
+
 ## <a name="australia-medical-account-number"></a>Australiens medicinska kontonummer
 
 ### <a name="format"></a>Format
@@ -613,12 +613,12 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 - lokal tjänst
 - medicare
 
-   
+
 ## <a name="australia-passport-number"></a>Australien passnummer
 
 ### <a name="format"></a>Format
 
-Åtta eller nio alfanumeriska tecken 
+Åtta eller nio alfanumeriska tecken
 
 ### <a name="pattern"></a>Mönster
 
@@ -648,7 +648,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
       <Pattern confidenceLevel="65">
         <IdMatch idRef="Regex_australia_passport_number" />
       </Pattern>
-    </Entity>  
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Nyckelord
@@ -683,10 +683,10 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="pattern"></a>Mönster
 
 Åtta till nio siffror visas vanligtvis med blanksteg enligt följande:
-- tre siffror 
-- ett valfritt blanksteg 
-- tre siffror 
-- ett valfritt blanksteg 
+- tre siffror
+- ett valfritt blanksteg
+- tre siffror
+- ett valfritt blanksteg
 - Två till tre siffror där den sista siffran är en bård
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -729,22 +729,22 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ### <a name="format"></a>Format
 
 Åtta siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 åtta siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Det reguljära  `Regex_austria_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_austria_eu_driver's_license_number` hittas. 
-    
+
+- Det reguljära  `Regex_austria_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_austria_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Austria Driver's License Number -->
       <Entity id="682f18ce-44eb-482b-8198-2bcb96a0761e" patternsProximity="300" recommendedConfidence="75">
@@ -901,26 +901,26 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 En kombination av bokstäver, siffror och specialtecken med 24 tecken
-  
+
 ### <a name="pattern"></a>Mönster
 
 24 tecken:
-  
--  22 bokstäver (inte versaler, siffror, omslag, snedstreck eller plustecken 
-    
+
+-  22 bokstäver (inte versaler, siffror, omslag, snedstreck eller plustecken
+
 - Två bokstäver (inte teckenkänsliga), siffror, omslag, snedstreck, plustecken eller likhetstecken
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Det reguljära  `Regex_austria_eu_national_id_card` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_austria_eu_national_id_card` från hittas. 
-   
+
+- Det reguljära  `Regex_austria_eu_national_id_card` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_austria_eu_national_id_card` från hittas.
+
 ```xml
       <!-- Austria Identity Card -->
       <Entity id="5ec06c3b-007e-4820-8343-7ff73b889735" patternsProximity="300" recommendedConfidence="75">
@@ -944,30 +944,30 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 En bokstav följt av ett valfritt blanksteg och sju siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 En kombination av en bokstav, sju siffror och ett blanksteg:
-  
+
 - en bokstav (inte en ärendekänslig)
 - ett blanksteg (valfritt)
 - sju siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_austria_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_austria_eu_passport_number` hittas. 
+- Det reguljära  `Regex_austria_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_austria_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date1` uttrycket hittar datum i formatet DD.MM.YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_austria_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_austria_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_austria_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_austria_eu_passport_number` hittas.
+
 ```xml
       <!-- Austria Passport Number -->
       <Entity id="1c96ae4e-303b-447d-86c7-77113ac266bf" patternsProximity="300" recommendedConfidence="75">
@@ -1011,7 +1011,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 - reisepassnummer
 - reisepasse
-- No-Reisepass 
+- No-Reisepass
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -1027,28 +1027,28 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 10 siffror i det angivna formatet
-  
+
 ### <a name="pattern"></a>Mönster
 
 10 siffror:
-  
-- Tre siffror som motsvarar ett serienummer 
+
+- Tre siffror som motsvarar ett serienummer
 - en checksiffra
 - Sex siffror som motsvarar födelsedatumet (DDMMYY)
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_austria_eu_ssn_or_equivalent` innehåll som matchar mönstret. 
-- ett nyckelord  `Keywords_austria_eu_ssn_or_equivalent` från hittas. 
-    
+- Funktionen hittar  `Func_austria_eu_ssn_or_equivalent` innehåll som matchar mönstret.
+- ett nyckelord  `Keywords_austria_eu_ssn_or_equivalent` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_austria_eu_ssn_or_equivalent` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_austria_eu_ssn_or_equivalent` innehåll som matchar mönstret.
+
 ```xml
       <!-- Austria Social Security Number -->
       <Entity id="6896a906-86c9-4d19-a2da-6e43ccd19b7b" patternsProximity="300" recommendedConfidence="85">
@@ -1099,30 +1099,30 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Nio siffror med valfritt bindestreck och snedstreck
-  
+
 ### <a name="pattern"></a>Mönster
 
 Nio siffror med valfritt bindestreck och snedstreck:
-  
+
 - två siffror
 - Ett bindestreck (valfritt)
 - tre siffror
 - ett snedstreck (valfritt)
 - fyra siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_austria_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_austria_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_austria_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_austria_eu_tax_file_number` från hittas.
+
 En DLP-princip har låg konfidens för att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_austria_eu_tax_file_number` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_austria_eu_tax_file_number` innehåll som matchar mönstret.
+
 ```xml
       <!-- Austria Tax Identification Number -->
       <Entity id="4fd58d22-af28-4451-b18a-6f722430a56d" patternsProximity="300" recommendedConfidence="85">
@@ -1160,7 +1160,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 - tin no
 - tin #
 - tax number
- 
+
 ## <a name="austria-value-added-tax"></a>Moms i Österrike
 Den här typen av känslig information kan bara användas i:
 - principer för dataförlustskydd
@@ -1706,21 +1706,21 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ### <a name="format"></a>Format
 
 10 siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 10 siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_belgium_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
+- Det reguljära  `Regex_belgium_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
 - Ett nyckelord från `Keywords_eu_driver's_license_number` eller `Keywords_belgium_eu_driver's_license_number` hittas.
-    
+
 ```xml
       <!-- Belgium Driver's License Number -->
       <Entity id="d89fd329-9324-433c-b687-2c37bd5166f3" patternsProximity="300" recommendedConfidence="75">
@@ -1882,10 +1882,10 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 11 siffror plus avgränsare:
-- Sex siffror och två valfria punkter i formatet YY. MM.DD för födelsedatum 
-- En valfri avgränsare från punkt, streck, blanksteg 
-- Tre siffror i följd (udda för män, även för kvinnor) 
-- En valfri avgränsare från punkt, streck, blanksteg 
+- Sex siffror och två valfria punkter i formatet YY. MM.DD för födelsedatum
+- En valfri avgränsare från punkt, streck, blanksteg
+- Tre siffror i följd (udda för män, även för kvinnor)
+- En valfri avgränsare från punkt, streck, blanksteg
 - två kontrollsiffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -1982,25 +1982,25 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="format"></a>Format
 
 Två bokstäver följt av sex siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Två bokstäver och följt av sex siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
  En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_belgium_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_belgium_eu_passport_number` hittas. 
+- Det reguljära  `Regex_belgium_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_belgium_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date2` uttrycket hittar datum i formatet DD MM YY eller ett nyckelord från eller `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_belgium_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_belgium_eu_passport_number` hittas. 
+- Det reguljära  `Regex_belgium_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_belgium_eu_passport_number` hittas.
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -2185,13 +2185,13 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - Identifiering
 - Registrering
 - Intäkter
-- Cadastro de Pessoas Físicas 
-- Imposto 
-- Identificação 
-- Inscrição 
-- Receita 
+- Cadastro de Pessoas Físicas
+- Imposto
+- Identificação
+- Inscrição
+- Receita
 
-   
+
 ## <a name="brazil-legal-entity-number-cnpj"></a>Brasiliens juridiska enhetsnummer (CNPJ)
 
 ### <a name="format"></a>Format
@@ -2202,14 +2202,14 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 14 siffror plus avgränsare:
 
-- två siffror 
-- en punkt 
-- tre siffror 
-- en punkt 
-- tre siffror (de åtta första siffrorna är registreringsnumret) 
-- ett snedstreck 
-- fyrsiffrigt branchnummer 
-- ett bindestreck 
+- två siffror
+- en punkt
+- tre siffror
+- en punkt
+- tre siffror (de åtta första siffrorna är registreringsnumret)
+- ett snedstreck
+- fyrsiffrigt branchnummer
+- ett bindestreck
 - två siffror som anger siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -2244,27 +2244,27 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_brazil_cnpj"></a>Keyword_brazil_cnpj
 
-- CNPJ 
-- CNPJ/MF 
-- CNPJ-MF 
-- National Registry of Legal Entities 
-- Taxpayers Registry 
-- Juridisk person 
-- Juridiska enheter 
-- Registreringsstatus 
-- Business 
+- CNPJ
+- CNPJ/MF
+- CNPJ-MF
+- National Registry of Legal Entities
+- Taxpayers Registry
+- Juridisk person
+- Juridiska enheter
+- Registreringsstatus
+- Business
 - Company
-- CNPJ 
-- Cadastro Nacional da Pessoa Jurídica 
-- Cadastro Geral de Contribuintes 
-- CGC 
-- Pessoa jurídica 
-- Pessoas jurídicas 
-- Situação cadasua 
-- Inscrição 
-- Anstresa 
+- CNPJ
+- Cadastro Nacional da Pessoa Jurídica
+- Cadastro Geral de Contribuintes
+- CGC
+- Pessoa jurídica
+- Pessoas jurídicas
+- Situação cadasua
+- Inscrição
+- Anstresa
 
-   
+
 ## <a name="brazil-national-identification-card-rg"></a>Brasiliens national identification card (RG)
 
 ### <a name="format"></a>Format
@@ -2276,17 +2276,17 @@ Registro de Identidade (RIC) (nytt format): 11 siffror
 ### <a name="pattern"></a>Mönster
 
 Registro Geral (gammalt format):
-- två siffror 
-- en punkt 
-- tre siffror 
-- en punkt 
-- tre siffror 
-- ett bindestreck 
+- två siffror
+- en punkt
+- tre siffror
+- en punkt
+- tre siffror
+- ett bindestreck
 - en siffra som är en biffrig siffra
 
 Registro de Identidade (RIC) (nytt format):
-- 10 siffror 
-- ett bindestreck 
+- 10 siffror
+- ett bindestreck
 - en siffra som är en biffrig siffra
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -2317,12 +2317,12 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 
 - Sådär de identidade
 - identitetskort
-- national id 
+- national id
 - número de rregistro
-- registro de Iidentidade 
+- registro de Iidentidade
 - registro geral
-- RG (det här nyckelordet är fallkänsligt) 
-- RIC (det här nyckelordet är fallkänsligt) 
+- RG (det här nyckelordet är fallkänsligt)
+- RIC (det här nyckelordet är fallkänsligt)
 
 
 ## <a name="bulgaria-drivers-license-number"></a>Bulgariens körkortsnummer
@@ -2330,21 +2330,21 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ### <a name="format"></a>Format
 
 Nio siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 nio siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_bulgaria_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_bulgaria_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_bulgaria_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_bulgaria_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Bulgaria Driver's License Number -->
       <Entity id="66d39258-94c2-43b2-804b-aa312258e54b" patternsProximity="300" recommendedConfidence="75">
@@ -2355,7 +2355,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
             <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
           </Any>
         </Pattern>
-      </Entity>    
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Nyckelord
@@ -2501,12 +2501,12 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 10 siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 10 siffror utan blanksteg och avgränsare
-  
-- Sex siffror som motsvarar födelsedatumet (AMMDD) 
+
+- Sex siffror som motsvarar födelsedatumet (AMMDD)
 - två siffror som motsvarar födelsedatumet
 - en siffra som motsvarar kön: En jämn siffra för man och en udda siffra för kvinna
 - en checksiffra
@@ -2514,16 +2514,16 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_bulgaria_eu_national_id_card` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_bulgaria_eu_national_id_card` från hittas. 
+- Funktionen hittar  `Func_bulgaria_eu_national_id_card` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_bulgaria_eu_national_id_card` från hittas.
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_bulgaria_eu_national_id_card` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_bulgaria_eu_national_id_card` innehåll som matchar mönstret.
+
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
       <Entity id="100d58b1-0a35-4fb1-aa89-e4a86fb53fcc" patternsProximity="300" recommendedConfidence="85">
@@ -2594,25 +2594,25 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Nio siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
-nio siffror 
-  
+nio siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_bulgaria_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_bulgaria_eu_passport_number` hittas. 
+- Det reguljära  `Regex_bulgaria_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_bulgaria_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date1` uttrycket hittar datum i formatet DD.MM.YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_bulgaria_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_bulgaria_eu_passport_number` hittas. 
+- Det reguljära  `Regex_bulgaria_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_bulgaria_eu_passport_number` hittas.
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2674,10 +2674,10 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 Ett bankkontonummer i Kanada har 7 eller 12 siffror.
 
 Ett bankkontotransitnummer för Kanada är:
-- fem siffror 
-- ett bindestreck 
+- fem siffror
+- ett bindestreck
 - tre siffror ELLER
-- en nolla "0" 
+- en nolla "0"
 - åtta siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -2736,7 +2736,7 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 - bankinformation
 - direktinsättning
 
-   
+
 ## <a name="canada-drivers-license-number"></a>Kanadas körkortsnummer
 
 ### <a name="format"></a>Format
@@ -2901,70 +2901,70 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - identification #s
 - identification card
 - identification cards
-- identification 
+- identification
 - DL #
-- DLS # 
-- CDL # 
-- CDLS # 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
-- DriverLicence # 
-- DriverLicences # 
+- DLS #
+- CDL #
+- CDLS #
+- DriverLic #
+- DriverLics #
+- DriverLicense #
+- DriverLicenses #
+- DriverLicence #
+- DriverLicences #
 - Driver Lic #
-- Driver Lics # 
-- Driver License # 
-- Driver Licenses # 
-- Driver License # 
-- Driver Licences # 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
-- DriversLicence # 
-- DriversLicences # 
-- Drivers Lic # 
-- Drivers Lics # 
-- Drivers License # 
-- Drivers Licenses # 
-- Drivers Licence # 
-- Drivers Licences # 
-- Driver'Lic # 
-- Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
-- Driver'Licence # 
-- Driver'Licences # 
-- Driver' Lic # 
-- Driver' Lics # 
-- Driver' License # 
-- Driver' Licenses # 
-- Driver' Licence # 
-- Driver' Licences # 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
-- Driver'sLicence # 
-- Driver'sLicences # 
-- Driver's Lic # 
-- Driver's Lics # 
-- Driver's License # 
-- Driver's Licenses # 
-- Driver's Licence # 
-- Driver's Licences # 
-- Permis de Conduire # 
-- id # 
-- ids # 
-- idcard-kort # 
-- idcard-kort # 
-- idcard # 
-- identification card # 
-- identification cards # 
-- identification # 
+- Driver Lics #
+- Driver License #
+- Driver Licenses #
+- Driver License #
+- Driver Licences #
+- DriversLic #
+- DriversLics #
+- DriversLicense #
+- DriversLicenses #
+- DriversLicence #
+- DriversLicences #
+- Drivers Lic #
+- Drivers Lics #
+- Drivers License #
+- Drivers Licenses #
+- Drivers Licence #
+- Drivers Licences #
+- Driver'Lic #
+- Driver'Lics #
+- Driver'License #
+- Driver'Licenses #
+- Driver'Licence #
+- Driver'Licences #
+- Driver' Lic #
+- Driver' Lics #
+- Driver' License #
+- Driver' Licenses #
+- Driver' Licence #
+- Driver' Licences #
+- Driver'sLic #
+- Driver'sLics #
+- Driver'sLicense #
+- Driver'sLicenses #
+- Driver'sLicence #
+- Driver'sLicences #
+- Driver's Lic #
+- Driver's Lics #
+- Driver's License #
+- Driver's Licenses #
+- Driver's Licence #
+- Driver's Licences #
+- Permis de Conduire #
+- id #
+- ids #
+- idcard-kort #
+- idcard-kort #
+- idcard #
+- identification card #
+- identification cards #
+- identification #
 
-   
+
 ## <a name="canada-health-service-number"></a>Kanadas hälsotjänstnummer
 
 ### <a name="format"></a>Format
@@ -3011,7 +3011,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - kompensation för anställda
 - funktionshinder
 
-      
+
 ## <a name="canada-passport-number"></a>Kanada passnummer
 
 ### <a name="format"></a>Format
@@ -3032,7 +3032,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - Det reguljära uttrycket Regex_canada_passport_number hittar innehåll som matchar mönstret.
 - Ett nyckelord från Keyword_canada_passport_number eller Keyword_passport hittas.
 
-```xml 
+```xml
 <!-- Canada Passport Number -->
 <Entity id="14d0db8b-498a-43ed-9fca-f6097ae687eb" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -3079,7 +3079,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - PasseportNon
 - Passeportn °
 
-   
+
 ## <a name="canada-personal-health-identification-number-phin"></a>Canada Personal Health Identification Number (PHIN)
 
 ### <a name="format"></a>Format
@@ -3150,7 +3150,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - Prince Edward Island
 - Kanada
 
-   
+
 ## <a name="canada-social-insurance-number"></a>Kanadas socialförsäkringsnummer
 
 ### <a name="format"></a>Format
@@ -3160,10 +3160,10 @@ Nio siffror med valfria bindestreck eller blanksteg
 ### <a name="pattern"></a>Mönster
 
 Formaterat:
-- tre siffror 
-- Ett bindestreck eller blanksteg 
-- tre siffror 
-- Ett bindestreck eller blanksteg 
+- tre siffror
+- Ett bindestreck eller blanksteg
+- tre siffror
+- Ett bindestreck eller blanksteg
 - tre siffror
 
 Oformaterad: nio siffror
@@ -3209,32 +3209,32 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_sin"></a>Keyword_sin
 
-- sin 
-- social insurance 
-- numero d'assurance sociale 
-- sins 
-- ssn 
-- ssns 
-- social security 
-- numero d'assurance social 
-- national identification number 
-- national id 
-- sin # 
-- soc ins 
-- sociala ins 
+- sin
+- social insurance
+- numero d'assurance sociale
+- sins
+- ssn
+- ssns
+- social security
+- numero d'assurance social
+- national identification number
+- national id
+- sin #
+- soc ins
+- sociala ins
 
 #### <a name="keyword_sin_collaborative"></a>Keyword_sin_collaborative
 
-- driver's license 
-- drivers license 
-- driver's licence 
-- drivers licence 
-- DOB 
-- Birthdate 
-- Födelsedag 
-- Födelsedatum 
+- driver's license
+- drivers license
+- driver's licence
+- drivers licence
+- DOB
+- Birthdate
+- Födelsedag
+- Födelsedatum
 
-   
+
 ## <a name="chile-identity-card-number"></a>Chiles identitetskortsnummer
 
 ### <a name="format"></a>Format
@@ -3244,12 +3244,12 @@ sju till åtta siffror plus avgränsare en kontrollerad siffra eller bokstav
 ### <a name="pattern"></a>Mönster
 
 sju till åtta siffror plus avgränsare:
-- En till två siffror 
-- en valfri period 
-- tre siffror 
-- en valfri period 
-- tre siffror 
-- ett streck 
+- En till två siffror
+- en valfri period
+- tre siffror
+- en valfri period
+- tre siffror
+- ett streck
 - en siffra eller bokstav (inte en teckenkänslig) som är en kontrollsiffra
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -3319,7 +3319,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - Chile-identitetsnummer
 - Chile-identitet #
 
-   
+
 ## <a name="china-resident-identity-card-prc-number"></a>Inhörande identitetskort (Folkrepubliken Kina) i Kina
 
 ### <a name="format"></a>Format
@@ -3329,9 +3329,9 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 18 siffror:
-- Sex siffror som är en adresskod 
-- Åtta siffror i formuläret YYYYMMDD, som är födelsedatumet 
-- tre siffror som är en orderkod 
+- Sex siffror som är en adresskod
+- Åtta siffror i formuläret YYYYMMDD, som är födelsedatumet
+- tre siffror som är en orderkod
 - en siffra som är en biffrig siffra
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -3366,18 +3366,18 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 ### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
-- Insvarande identitetskort 
-- Folkrepubliken Kina 
-- National Identification Card 
-- 身份证 
-- 居民 身份证 
-- 居民身份证 
-- 鉴定 
-- 身分證 
+- Insvarande identitetskort
+- Folkrepubliken Kina
+- National Identification Card
+- 身份证
+- 居民 身份证
+- 居民身份证
+- 鉴定
+- 身分證
 - 居民 身份證
-- 鑑定 
+- 鑑定
 
-   
+
 ## <a name="credit-card-number"></a>Kreditkortsnummer
 
 ### <a name="format"></a>Format
@@ -3681,21 +3681,21 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="format"></a>Format
 
 Åtta siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 åtta siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Det reguljära  `Regex_croatia_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från `Keywords_eu_driver's_license_number` eller `Keywords_croatia_eu_driver's_license_number` hittas. 
+
+- Det reguljära  `Regex_croatia_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från `Keywords_eu_driver's_license_number` eller `Keywords_croatia_eu_driver's_license_number` hittas.
 
 ```xml
       <!-- Croatia Driver's License Number -->
@@ -3910,26 +3910,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Nio siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
-nio siffror 
-  
+nio siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_croatia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_croatia_eu_passport_number` hittas. 
+- Det reguljära  `Regex_croatia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_croatia_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date1` uttrycket hittar datum i formatet DD.MM.YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_croatia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_croatia_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_croatia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_croatia_eu_passport_number` hittas.
+
 ```xml
       <!-- Croatia Passport Number -->
       <Entity id="7d7a729d-32d8-4204-8d01-d5e6a6c25581" patternsProximity="300" recommendedConfidence="75">
@@ -3973,7 +3973,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - broj putovnice
 - br. Putovnice
 - br putovnice
-   
+
 ## <a name="croatia-personal-identification-oib-number"></a>Kroatiens id-nummer (OIB)
 
 ### <a name="format"></a>Format
@@ -3983,7 +3983,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 11 siffror:
-- 10 siffror 
+- 10 siffror
 - slutsiffra är en kontrollsiffra
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -4052,19 +4052,19 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 12 siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 12 siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_cyprus_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
+- Det reguljära  `Regex_cyprus_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
 - Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_cyprus_eu_driver's_license_number` hittas.
 
 ```xml
@@ -4221,22 +4221,22 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 10 siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
-10 siffror 
-  
+10 siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_cyprus_eu_national_id_card` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_cyprus_eu_national_id_card` från hittas. 
-    
-```xml 
+- Det reguljära  `Regex_cyprus_eu_national_id_card` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_cyprus_eu_national_id_card` från hittas.
+
+```xml
       <!-- Cyprus Identity Card -->
       <Entity id="3ba8afe5-7a6c-4929-8247-0001b6878438" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
@@ -4263,26 +4263,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 en bokstav följt av 6–8 siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 en bokstav följt av sex till åtta siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_cyprus_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_cyprus_eu_passport_number` hittas. 
+- Det reguljära  `Regex_cyprus_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_cyprus_eu_passport_number` hittas.
 - Det reguljära `Regex_cyprus_eu_passport_date` uttrycket hittar datum i formatet DD/MM/YYY eller ett nyckelord från `Keywords_cyprus_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_cyprus_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_cyprus_eu_passport_number` hittas.  
-    
+- Det reguljära  `Regex_cyprus_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_cyprus_eu_passport_number` hittas.
+
 ```xml
       <!-- Cyprus Passport Number -->
       <Entity id="9193e2e8-7f8c-43c1-a274-ac40d651936f" patternsProximity="300" recommendedConfidence="75">
@@ -4353,28 +4353,28 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 Åtta siffror och en bokstav i det angivna mönstret
-  
+
 ### <a name="pattern"></a>Mönster
 
 Åtta siffror och en bokstav:
-  
+
 - a "0" eller "9"
 - sju siffror
 - en bokstav (inte en ärendekänslig)
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_cyprus_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_cyprus_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_cyprus_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_cyprus_eu_tax_file_number` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_cyprus_eu_tax_file_number` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_cyprus_eu_tax_file_number` innehåll som matchar mönstret.
+
 ```xml
       <!-- Cyprus Tax Identification Number -->
       <Entity id="40e64bd9-55f3-4a09-9bd6-1db18dced9dd" patternsProximity="300" recommendedConfidence="85">
@@ -4424,11 +4424,11 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Två bokstäver följt av sex siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 Åtta bokstäver och siffror:
-  
+
 - bokstaven "E" (inte den är det.
 - en bokstav
 - ett blanksteg (valfritt)
@@ -4437,12 +4437,12 @@ Två bokstäver följt av sex siffror
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_czech_republic_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_czech_republic_eu_driver's_license_number` hittas. 
+- Det reguljära  `Regex_czech_republic_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_czech_republic_eu_driver's_license_number` hittas.
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4593,26 +4593,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Åtta siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Åtta siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_czech_republic_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_czech_republic_eu_passport_number` hittas. 
+- Det reguljära  `Regex_czech_republic_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_czech_republic_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date1` uttrycket hittar datum i formatet DD.MM.YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_czech_republic_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_czech_republic_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_czech_republic_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_czech_republic_eu_passport_number` hittas.
+
 ```xml
       <!-- Czech Republic Passport Number -->
       <Entity id="7bcd8ce8-5e92-4bbe-bc92-fa669f0369fa" patternsProximity="300" recommendedConfidence="75">
@@ -4681,7 +4681,7 @@ Nio siffror (gammalt format):
 
 10 siffror (nytt format):
 - Sex siffror som representerar födelsedatum
-- ett valfritt snedstreck 
+- ett valfritt snedstreck
 - fyra siffror där sista siffran är en bård
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -4771,21 +4771,21 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Åtta siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 åtta siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_denmark_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_denmark_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_denmark_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_denmark_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Denmark Driver's License Number -->
       <Entity id="98a95812-6203-451a-a220-d39870ebef0e" patternsProximity="300" recommendedConfidence="75">
@@ -4933,26 +4933,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Nio siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
-nio siffror 
-  
+nio siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_denmark_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_denmark_eu_passport_number` hittas. 
+- Det reguljära  `Regex_denmark_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_denmark_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date2` uttrycket hittar datum i formatet DD MM YY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_denmark_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_denmark_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_denmark_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_denmark_eu_passport_number` hittas.
+
 ```xml
       <!-- Denmark Passport Number -->
       <Entity id="25e8c47e-e6fe-4884-a211-74898f8c0196" patternsProximity="300" recommendedConfidence="75">
@@ -5014,8 +5014,8 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 10 siffror:
-- Sex siffror i formatet DDMMYY, som är födelsedatumet 
-- ett bindestreck 
+- Sex siffror i formatet DDMMYY, som är födelsedatumet
+- ett bindestreck
 - fyra siffror där den sista siffran är en bård
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -5035,7 +5035,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 
 ```xml
 <!-- Denmark Personal Identification Number -->
-      <!-- Denmark Personal Identification Number -->
+    <!-- Denmark Personal Identification Number -->
       <Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_denmark_eu_tax_file_number" />
@@ -5131,7 +5131,7 @@ Två bokstäver följt av sju siffror
 ### <a name="pattern"></a>Mönster
 
 Mönster måste omfatta alla följande:
-- en bokstav (inte den här uppsättning möjliga bokstäver) från den här uppsättningen möjliga bokstäver: abcdefghjklmnprstux, som är en registrantkod 
+- en bokstav (inte den här uppsättning möjliga bokstäver) från den här uppsättningen möjliga bokstäver: abcdefghjklmnprstux, som är en registrantkod
 - en bokstav (inte fallkänslig), som är den första bokstaven i registrantens efternamn eller siffran "9"
 - sju siffror, den sista är bårdsiffran
 
@@ -5185,24 +5185,24 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Två bokstäver följt av sex siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 Två bokstäver och sex siffror:
-  
-- bokstäverna "ET" (inte case-sensitive) 
+
+- bokstäverna "ET" (inte case-sensitive)
 - sex siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_estonia_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_estonia_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_estonia_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_estonia_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Estonia Driver's License Number -->
       <Entity id="51da8171-da70-4cc1-9d65-055a59ca4f83" patternsProximity="300" recommendedConfidence="75">
@@ -5358,29 +5358,29 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 11 siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 11 siffror:
-  
+
 - en siffra som motsvarar sex och ett sekel (udda nummer man, jämn kvinna; 1–2: 19:e talet; 3–4: 20:e talet; 5–6: 2000)
 - Sex siffror som motsvarar födelsedatumet (DSMMMDD)
 - Tre siffror som motsvarar ett serienummer som separerar personer som föds samma datum
 - en checksiffra
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_estonia_eu_national_id_card` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_estonia_eu_national_id_card` från hittas. 
-    
+- Funktionen hittar  `Func_estonia_eu_national_id_card` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_estonia_eu_national_id_card` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_estonia_eu_national_id_card` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_estonia_eu_national_id_card` innehåll som matchar mönstret.
+
 ```xml
       <!-- Estonia Personal Identification Code -->
       <Entity id="bfb26de6-dad5-4d48-ab72-4789cdd0654c" patternsProximity="300" recommendedConfidence="85">
@@ -5439,26 +5439,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 en bokstav följt av sju siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 en bokstav följt av sju siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_estonia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_estonia_eu_passport_number` hittas. 
+- Det reguljära  `Regex_estonia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_estonia_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date1` uttrycket hittar datum i formatet DD.MM.YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_estonia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_estonia_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_estonia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_estonia_eu_passport_number` hittas.
+
 ```xml
       <!-- Estonia Passport Number -->
       <Entity id="61f7073a-509e-425b-a754-bc01bb5d5b8c" patternsProximity="300" recommendedConfidence="75">
@@ -5554,315 +5554,315 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 
 #### <a name="keyword_eu_debit_card"></a>Keyword_eu_debit_card
 
-- kontonummer 
-- kortnummer 
-- kortnr 
-- säkerhetsnummer 
-- kopia # 
+- kontonummer
+- kortnummer
+- kortnr
+- säkerhetsnummer
+- kopia #
 
 #### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
-- acct nbr 
-- acct num 
-- acct no 
-- american express 
-- americanexpress 
-- americano sådd 
-- amex 
-- bank kort 
-- bank kort 
-- atm kaart 
-- bankkort 
-- bankkort 
-- atmkaart 
-- atmkaarten 
-- bancontact 
-- bankkort 
-- bankkaart 
-- kort innehavare 
-- kort innehavare 
-- kortnum 
-- kortnummer 
-- kortnummer 
-- korttyp 
-- cardano numerico 
-- kortinnehavare 
-- kortinnehavare 
-- kortnummer 
-- kortnummer 
-- carta några 
-- carta credito 
-- carta di credito 
-- cartao de credito 
-- cartao de crédito 
-- cartao de debito 
-- cartao de débito 
-- carte bancaire 
-- carte blanche 
-- carte bleue 
-- carte de credit 
-- carte de crédit 
-- carte di credito 
-- carteblanche 
-- cartão de credito 
-- cartão de crédito 
-- cartão de debito 
-- cartão de débito 
-- cb 
-- ccn 
-- de olika korten 
-- de olika korten 
+- acct nbr
+- acct num
+- acct no
+- american express
+- americanexpress
+- americano sådd
+- amex
+- bank kort
+- bank kort
+- atm kaart
+- bankkort
+- bankkort
+- atmkaart
+- atmkaarten
+- bancontact
+- bankkort
+- bankkaart
+- kort innehavare
+- kort innehavare
+- kortnum
+- kortnummer
+- kortnummer
+- korttyp
+- cardano numerico
+- kortinnehavare
+- kortinnehavare
+- kortnummer
+- kortnummer
+- carta några
+- carta credito
+- carta di credito
+- cartao de credito
+- cartao de crédito
+- cartao de debito
+- cartao de débito
+- carte bancaire
+- carte blanche
+- carte bleue
+- carte de credit
+- carte de crédit
+- carte di credito
+- carteblanche
+- cartão de credito
+- cartão de crédito
+- cartão de debito
+- cartão de débito
+- cb
+- ccn
+- de olika korten
+- de olika korten
 - degcard
-- degcards 
-- chekaart 
-- cirrus 
-- cirrus-edc-maestro 
-- controlekaart 
-- controlekaarten 
-- kreditkort 
-- kreditkort 
-- kreditkort 
-- kreditkort 
-- debetkaart 
-- debetkaarten 
-- betalkort 
-- betalkort 
-- betalkort 
-- betalkort 
-- debito automatico 
-- diners club 
-- diners besser 
-- upptäck 
-- discover card 
-- discover cards 
-- discovercard 
-- discovercards 
+- degcards
+- chekaart
+- cirrus
+- cirrus-edc-maestro
+- controlekaart
+- controlekaarten
+- kreditkort
+- kreditkort
+- kreditkort
+- kreditkort
+- debetkaart
+- debetkaarten
+- betalkort
+- betalkort
+- betalkort
+- betalkort
+- debito automatico
+- diners club
+- diners besser
+- upptäck
+- discover card
+- discover cards
+- discovercard
+- discovercards
 - débito automático
-- edc 
-- eigentümername 
-- europeiskt bankkort 
-- hoofdkaart 
-- hoofdkaarten 
-- in vi andra 
-- japansk kortbyrå 
-- japanse kaartdienst 
-- jcb 
-- kaart 
-- kaart num 
-- kaartaantal 
-- kaartaantallen 
-- kaarthouder 
-- kaarthouder 
-- karte  
-- karteninhaber 
+- edc
+- eigentümername
+- europeiskt bankkort
+- hoofdkaart
+- hoofdkaarten
+- in vi andra
+- japansk kortbyrå
+- japanse kaartdienst
+- jcb
+- kaart
+- kaart num
+- kaartaantal
+- kaartaantallen
+- kaarthouder
+- kaarthouder
+- karte
+- karteninhaber
 - karteninhabers
-- kartennr 
-- kartennummer 
-- kreditkarte 
-- kreditkarten-nummer 
-- kreditkarteninhaber 
-- kreditkarteninstitut 
-- kreditkartennummer 
-- kreditkartentyp 
-- maestro 
-- master card 
-- master cards 
-- mastercard 
-- mastercards 
-- mc 
-- cash 
-- n carta 
-- carta 
-- no de tarjeta 
-- no do cartao 
-- no do cartão 
-- Nej. de tarjeta 
-- Nej. do cartao 
-- Nej. do cartão 
-- nr carta 
-- nr. carta 
-- numeri di scheda 
-- numero carta 
-- numero de cartao 
-- numero de carte 
-- numero de cartão 
+- kartennr
+- kartennummer
+- kreditkarte
+- kreditkarten-nummer
+- kreditkarteninhaber
+- kreditkarteninstitut
+- kreditkartennummer
+- kreditkartentyp
+- maestro
+- master card
+- master cards
+- mastercard
+- mastercards
+- mc
+- cash
+- n carta
+- carta
+- no de tarjeta
+- no do cartao
+- no do cartão
+- Nej. de tarjeta
+- Nej. do cartao
+- Nej. do cartão
+- nr carta
+- nr. carta
+- numeri di scheda
+- numero carta
+- numero de cartao
+- numero de carte
+- numero de cartão
 - numero de tarjeta
-- numero della carta 
-- numero di carta 
-- numero di scheda 
-- numero do cartao 
-- numero do cartão 
-- numéro de carte 
-- nº carta 
-- nº de carte 
-- nº de la carte 
-- nº de tarjeta 
-- nº do cartao 
-- nº do cartão 
-- nº. do cartão 
-- número de cartao 
-- número de cartão 
-- número de tarjeta 
-- número do cartao 
-- scheda dell'assegno 
-- scheda dell'atmosfera 
-- scheda dell'atmosfera 
-- scheda della banca 
-- scheda di controllo 
-- scheda di debito 
-- scheda matrice 
-- schede dell'atmosfera 
-- schede di controllo 
-- schede di debito 
-- schede matrici 
-- scoprono la scheda 
-- scoprono le schede 
-- solo 
-- supporti di scheda 
-- supporto di scheda 
-- växla 
-- tarjeta atm 
-- tarjeta credito 
-- tarjeta de atm 
-- tarjeta de credito 
-- tarjeta de debito 
-- tarjeta debito 
+- numero della carta
+- numero di carta
+- numero di scheda
+- numero do cartao
+- numero do cartão
+- numéro de carte
+- nº carta
+- nº de carte
+- nº de la carte
+- nº de tarjeta
+- nº do cartao
+- nº do cartão
+- nº. do cartão
+- número de cartao
+- número de cartão
+- número de tarjeta
+- número do cartao
+- scheda dell'assegno
+- scheda dell'atmosfera
+- scheda dell'atmosfera
+- scheda della banca
+- scheda di controllo
+- scheda di debito
+- scheda matrice
+- schede dell'atmosfera
+- schede di controllo
+- schede di debito
+- schede matrici
+- scoprono la scheda
+- scoprono le schede
+- solo
+- supporti di scheda
+- supporto di scheda
+- växla
+- tarjeta atm
+- tarjeta credito
+- tarjeta de atm
+- tarjeta de credito
+- tarjeta de debito
+- tarjeta debito
 - tarjeta no
-- tarjetahabiente 
-- tipo della scheda 
-- ufficio giapponese della 
-- scheda 
-- v pay 
-- v-pay 
-- visa 
-- visa plus 
-- visa electron 
-- visto 
-- var och en 
-- vpay   
+- tarjetahabiente
+- tipo della scheda
+- ufficio giapponese della
+- scheda
+- v pay
+- v-pay
+- visa
+- visa plus
+- visa electron
+- visto
+- var och en
+- vpay
 
 #### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
 
 - id-nummer för kort
-- kortverifiering 
-- cardi la verifica 
-- cid 
-- cod seg 
-- cod seguranca 
-- cod segurança 
-- cod sicurezza 
-- cod. seg 
-- cod. seguranca 
-- cod. segurança 
-- cod. sicurezza 
-- codice di sicurezza 
-- codice di verifica 
-- codigo 
-- codigo de seguranca 
-- codigo de segurança 
-- crittogramma 
-- cryptogram 
-- cryptogramm 
-- cv2 
-- cvc 
-- cvc2 
-- cvn 
-- cvv 
-- cvv2 
-- cód seguranca 
-- cód segurança 
-- cód. seguranca 
-- cód. segurança 
-- código 
-- código de seguranca 
-- código de segurança 
-- de kaart controle 
-- geeft nr uit 
-- problemnr 
-- utfärdandenummer 
-- kaartidentificatienummer 
-- kreditkartenprufnummer 
-- kreditkartenprüfnummer 
-- kwestieaantal 
-- Nej. dell'edizione 
-- Nej. di sicurezza 
-- numero de securite 
-- numero de verificacao 
-- numero dell'edizione 
-- numero di identificazione della 
-- scheda 
-- numero di sicurezza 
-- numero van veiligheid 
-- numéro de sécurité 
-- nº autorizzazione 
-- número de verificação 
-- perno il blocco 
-- fästblock 
-- prufziffer 
-- prüfziffer 
-- säkerhetskod 
-- säkerhetsnr 
-- säkerhetsnummer 
-- sicherheits kode 
-- sicherheitscode 
-- sicherheitsnummer 
-- speldblok 
-- veiligheid nr 
-- veiligheidsaantal 
-- veiligheidscode 
-- veiligheidsnummer 
-- verfalldatum 
+- kortverifiering
+- cardi la verifica
+- cid
+- cod seg
+- cod seguranca
+- cod segurança
+- cod sicurezza
+- cod. seg
+- cod. seguranca
+- cod. segurança
+- cod. sicurezza
+- codice di sicurezza
+- codice di verifica
+- codigo
+- codigo de seguranca
+- codigo de segurança
+- crittogramma
+- cryptogram
+- cryptogramm
+- cv2
+- cvc
+- cvc2
+- cvn
+- cvv
+- cvv2
+- cód seguranca
+- cód segurança
+- cód. seguranca
+- cód. segurança
+- código
+- código de seguranca
+- código de segurança
+- de kaart controle
+- geeft nr uit
+- problemnr
+- utfärdandenummer
+- kaartidentificatienummer
+- kreditkartenprufnummer
+- kreditkartenprüfnummer
+- kwestieaantal
+- Nej. dell'edizione
+- Nej. di sicurezza
+- numero de securite
+- numero de verificacao
+- numero dell'edizione
+- numero di identificazione della
+- scheda
+- numero di sicurezza
+- numero van veiligheid
+- numéro de sécurité
+- nº autorizzazione
+- número de verificação
+- perno il blocco
+- fästblock
+- prufziffer
+- prüfziffer
+- säkerhetskod
+- säkerhetsnr
+- säkerhetsnummer
+- sicherheits kode
+- sicherheitscode
+- sicherheitsnummer
+- speldblok
+- veiligheid nr
+- veiligheidsaantal
+- veiligheidscode
+- veiligheidsnummer
+- verfalldatum
 
 #### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
 
-- ablauf 
-- data de expiracao 
-- data de expiração 
-- data del exp 
-- data di exp 
-- data di scadenza 
-- data em que expira 
-- data scad 
-- data scadenza 
-- date de validité 
-- datum afloop 
-- datum van exp 
-- de afloop 
-- espira 
-- espira 
-- exp datum 
-- exp datum 
-- utgång 
-- utgå 
-- förfaller 
-- utgång 
-- fecha de expiracion 
-- fecha de venc 
-- gultig bis 
-- gultigkeitsdatum 
-- gültig bis 
-- gültigkeitsdatum 
-- la scadenza 
-- scadenza 
-- valable 
-- validade 
-- valido hasta 
-- valor 
-- venc 
-- vencimento 
-- vencimiento 
-- verloopt 
-- vervaldag 
-- vervaldatum 
-- vto 
-- válido hasta 
+- ablauf
+- data de expiracao
+- data de expiração
+- data del exp
+- data di exp
+- data di scadenza
+- data em que expira
+- data scad
+- data scadenza
+- date de validité
+- datum afloop
+- datum van exp
+- de afloop
+- espira
+- espira
+- exp datum
+- exp datum
+- utgång
+- utgå
+- förfaller
+- utgång
+- fecha de expiracion
+- fecha de venc
+- gultig bis
+- gultigkeitsdatum
+- gültig bis
+- gültigkeitsdatum
+- la scadenza
+- scadenza
+- valable
+- validade
+- valido hasta
+- valor
+- venc
+- vencimento
+- vencimiento
+- verloopt
+- vervaldag
+- vervaldatum
+- vto
+- válido hasta
 
 
 ## <a name="eu-drivers-license-number"></a>EU:s körkortsnummer
 
 De här enheterna finns i EU:s licensnummer och är typer av känslig information.
 
-- [Österrike](#austria-drivers-license-number) 
+- [Österrike](#austria-drivers-license-number)
 - [Belgien](#belgium-drivers-license-number)
 - [Bulgarien](#bulgaria-drivers-license-number)
 - [Kroatien](#croatia-drivers-license-number)
@@ -5871,7 +5871,7 @@ De här enheterna finns i EU:s licensnummer och är typer av känslig informatio
 - [Danmark](#denmark-drivers-license-number)
 - [Estland](#estonia-drivers-license-number)
 - [Finland](#finland-drivers-license-number)
-- [Frankrike](#france-drivers-license-number) 
+- [Frankrike](#france-drivers-license-number)
 - [Tyskland](#germany-drivers-license-number)
 - [Grekland](#greece-drivers-license-number)
 - [Ungern](#hungary-drivers-license-number)
@@ -5882,7 +5882,7 @@ De här enheterna finns i EU:s licensnummer och är typer av känslig informatio
 - [Luxemburg](#luxemburg-drivers-license-number)
 - [Malta](#malta-drivers-license-number)
 - [Nederländerna](#netherlands-drivers-license-number)
-- [Polen](#poland-drivers-license-number) 
+- [Polen](#poland-drivers-license-number)
 - [Portugal](#portugal-drivers-license-number)
 - [Rumänien](#romania-drivers-license-number)
 - [Slovakien](#slovakia-drivers-license-number)
@@ -5922,10 +5922,10 @@ Enheterna finns i EU:s National Identification Number och är typer av känslig 
 - [Slovakien](#slovakia-personal-number)
 - [Slovenien](#slovenia-unique-master-citizen-number)
 - [Spanien](#spain-dni)
-- [Storbritannien](#uk-national-insurance-number-nino)                                        
+- [Storbritannien](#uk-national-insurance-number-nino)
 
 
-## <a name="eu-passport-number"></a>EU-passnummer 
+## <a name="eu-passport-number"></a>EU-passnummer
 
 Dessa enheter finns i EU:s passnummer och är typer av känslig information. De här enheterna finns i EU:s passnummerpaket.
 
@@ -6017,26 +6017,26 @@ Enheterna finns i typen Skatteidentifieringsnummer för känslig information ino
 ### <a name="format"></a>Format
 
 10 siffror som innehåller ett bindestreck
-  
+
 ### <a name="pattern"></a>Mönster
 
 10 siffror som innehåller ett bindestreck:
-  
-- sex siffror 
+
+- sex siffror
 - ett bindestreck
-- tre siffror 
+- tre siffror
 - en siffra eller bokstav
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_finland_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_finland_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_finland_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_finland_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Finland Driver's License Number -->
       <Entity id="bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7" patternsProximity="300" recommendedConfidence="75">
@@ -6256,9 +6256,9 @@ Sex siffror plus ett tecken som anger ett sekel plus tre siffror plus en bård
 ### <a name="pattern"></a>Mönster
 
 Mönster måste omfatta alla följande:
-- Sex siffror i formatet DDMMYY, som är ett födelsedatum 
-- talmarkör (antingen '-', '+' eller 'a') 
-- tresiffrigt id-nummer 
+- Sex siffror i formatet DDMMYY, som är ett födelsedatum
+- talmarkör (antingen '-', '+' eller 'a')
+- tresiffrigt id-nummer
 - En siffra eller bokstav (tecken insensitiv) som är en kontrollsiffra
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -6349,7 +6349,7 @@ kombination av nio bokstäver och siffror
 
 ### <a name="pattern"></a>Mönster
 kombination av nio bokstäver och siffror:
-- Två bokstäver (inte versaler och teckenkänsliga) 
+- Två bokstäver (inte versaler och teckenkänsliga)
 - sju siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -6679,7 +6679,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 - numéro d'assurance malakit
 - numéro de carte vitale
 
-   
+
 ## <a name="france-passport-number"></a>Frankrike passnummer
 Den här entiteten är tillgänglig i typen Känslig information av eu-passnummer. Det är också tillgängligt som en fristående typ av känslig information.
 
@@ -6690,8 +6690,8 @@ Nio siffror och bokstäver
 ### <a name="pattern"></a>Mönster
 
 Nio siffror och bokstäver:
-- två siffror 
-- Två bokstäver (inte versaler och teckenkänsliga) 
+- två siffror
+- Två bokstäver (inte versaler och teckenkänsliga)
 - fem siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -6853,36 +6853,36 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 13 siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 13 siffror
-  
+
 - En siffra som måste vara 0, 1, 2 eller 3
 - En siffra
 - Ett blanksteg (valfritt)
-- Två siffror 
+- Två siffror
 - Ett blanksteg (valfritt)
-- Tre siffror 
+- Tre siffror
 - Ett blanksteg (valfritt)
-- Tre siffror 
+- Tre siffror
 - Ett blanksteg (valfritt)
-- Tre kontrollsiffror 
+- Tre kontrollsiffror
 
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_france_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_france_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_france_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_france_eu_tax_file_number` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_france_eu_tax_file_number` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_france_eu_tax_file_number` innehåll som matchar mönstret.
+
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
       <Entity id="ed59e77e-171d-442c-9ec1-88e2ebcb5b0a" patternsProximity="300" recommendedConfidence="85">
@@ -7002,10 +7002,10 @@ kombination av 11 siffror och bokstäver
 ### <a name="pattern"></a>Mönster
 
 11 siffror och bokstäver (inte teckenkänsliga):
-- en siffra eller bokstav 
-- två siffror 
-- Sex siffror eller bokstäver 
-- en siffra 
+- en siffra eller bokstav
+- två siffror
+- Sex siffror eller bokstäver
+- en siffra
 - en siffra eller bokstav
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -7192,7 +7192,7 @@ från 1 april 1987 till 31 oktober 2010: 10 siffror
 ### <a name="pattern"></a>Mönster
 
 sedan 1 november 2010:
-- en bokstav (inte en ärendekänslig) 
+- en bokstav (inte en ärendekänslig)
 - åtta siffror
 
 från den 1 april 1987 till den 31 oktober 2010:
@@ -7248,9 +7248,9 @@ Den här entiteten ingår i typen KÄNSLIG information av EU-passnummer och är 
 ### <a name="pattern"></a>Mönster
 
 Mönster måste omfatta alla följande:
-- det första tecknet är en siffra eller en bokstav från denna uppsättning (C, F, G, H, J, K) 
-- tre siffror 
-- Fem siffror eller bokstäver från denna uppsättning (C, -H, J-N, P, R, T, V-Z) 
+- det första tecknet är en siffra eller en bokstav från denna uppsättning (C, F, G, H, J, K)
+- tre siffror
+- Fem siffror eller bokstäver från denna uppsättning (C, -H, J-N, P, R, T, V-Z)
 - en siffra
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -7295,7 +7295,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 - reisepasse
 - reisepassnummer
-- No-Reisepass 
+- No-Reisepass
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -7322,33 +7322,33 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 11 siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 11 siffror
-  
-- Två siffror 
+
+- Två siffror
 - Ett valfritt blanksteg
-- Tre siffror 
+- Tre siffror
 - Ett valfritt blanksteg
-- Tre siffror 
+- Tre siffror
 - Ett valfritt blanksteg
 - Två siffror
 - en checksiffra
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_germany_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_germany_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_germany_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_germany_eu_tax_file_number` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_germany_eu_tax_file_number` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_germany_eu_tax_file_number` innehåll som matchar mönstret.
+
 ```xml
       <!-- Germany Tax Identification Number -->
       <Entity id="43316a89-9880-40cf-b980-04bc7eefcec5" patternsProximity="300" recommendedConfidence="85">
@@ -7461,21 +7461,21 @@ Den här enheten ingår i EU:s informationstyp Licensnummerkänslig information.
 ### <a name="format"></a>Format
 
 Nio siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
-nio siffror 
-  
+nio siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_greece_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_greece_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_greece_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_greece_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Greece Driver's License Number -->
       <Entity id="7a2200b5-aacf-4e3c-ab36-136d3e68b7da" patternsProximity="300" recommendedConfidence="75">
@@ -7630,13 +7630,13 @@ Kombination av 7–8 bokstäver och siffror plus ett streck
 ### <a name="pattern"></a>Mönster
 
 Sju bokstäver och siffror (gammalt format):
-- En bokstav (valfri bokstav i det grekiska alfabetet) 
-- Ett streck 
+- En bokstav (valfri bokstav i det grekiska alfabetet)
+- Ett streck
 - Sex siffror
 
 Åtta bokstäver och siffror (nytt format):
-- Två bokstäver med versaler både i det grekiska och det latinska alfabetet (ABEZHIKMNOPTYX) 
-- Ett streck 
+- Två bokstäver med versaler både i det grekiska och det latinska alfabetet (ABEZHIKMNOPTYX)
+- Ett streck
 - Sex siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -7684,26 +7684,26 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="format"></a>Format
 
 Två bokstäver följt av sju siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Två bokstäver följt av sju siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_greece_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_greece_eu_passport_number` hittas. 
+- Det reguljära  `Regex_greece_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_greece_eu_passport_number` hittas.
 - Det reguljära uttrycket hittar datum i `Regex_greece_eu_passport_date` formatet DD MMM YY (Exempel - 28 augusti 19) eller ett `Keywords_greece_eu_passport_date` nyckelord från hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_greece_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_greece_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_greece_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_greece_eu_passport_number` hittas.
+
 ```xml
       <!-- Greece Passport Number -->
       <Entity id="7e65eb47-cdf9-4f52-8f90-2a27d5ee67e3" patternsProximity="300" recommendedConfidence="75">
@@ -7761,25 +7761,25 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 11 siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 - Sex siffror som födelsedatumMMDD
 - Fyra siffror
 - en kontrollsiffra
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_greece_eu_ssn` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_greece_eu_ssn_or_equivalent` från hittas. 
-    
+- Funktionen hittar  `Func_greece_eu_ssn` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_greece_eu_ssn_or_equivalent` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_greece_eu_ssn` innehåll som matchar mönstret. 
+- Funktionen hittar  `Func_greece_eu_ssn` innehåll som matchar mönstret.
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->
@@ -7819,22 +7819,22 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 Nio siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Nio siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Det reguljära  `Regex_greece_eu_tax_file_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_greece_eu_tax_file_number` från hittas. 
-    
+
+- Det reguljära  `Regex_greece_eu_tax_file_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_greece_eu_tax_file_number` från hittas.
+
 ```xml
       <!-- Greek Tax Identification Number -->
       <Entity id="15a54a5a-53d4-4080-ad43-a2a4fe1d3bf7" patternsProximity="300" recommendedConfidence="75">
@@ -7886,8 +7886,8 @@ Kombination av 8–9 bokstäver och siffror samt valfria parenteser runt det sis
 ### <a name="pattern"></a>Mönster
 
 Kombination av 8–9 bokstäver:
-- 1–2 bokstäver (inte teckenkänsliga) 
-- Sex siffror 
+- 1–2 bokstäver (inte teckenkänsliga)
+- Sex siffror
 - Det sista tecknet (valfri siffra eller bokstaven A), som är en kontrollsiffra och som kan omges av parenteser.
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -7960,31 +7960,31 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 - 香港特別行政區非永久性居民身分證
 - 香港特別行政區非永久性居民身分証
 
-   
+
 ## <a name="hungary-drivers-license-number"></a>Ungerns körkortsnummer
 
 ### <a name="format"></a>Format
 
 Två bokstäver följt av sex siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 Två bokstäver och sex siffror:
-  
-- Två bokstäver (inte versaler och teckenkänsliga) 
+
+- Två bokstäver (inte versaler och teckenkänsliga)
 - Sex siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Det reguljära  `Regex_hungary_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_hungary_eu_driver's_license_number` hittas. 
-    
+
+- Det reguljära  `Regex_hungary_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_hungary_eu_driver's_license_number` hittas.
+
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
@@ -8139,31 +8139,31 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 11 siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 11 siffror:
-  
+
 - En siffra som motsvarar kön, 1 för man, 2 för kvinna. Andra siffror är också möjliga för personer som föddes före 1900 eller för personer med dubbel detknubb.
 - Sex siffror som motsvarar födelsedatum (AMMDD)
 - Tre siffror som motsvarar ett serienummer
 - En kontrollsiffra
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Funktionen hittar  `Func_hungary_eu_national_id_card` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_hungary_eu_national_id_card` från hittas. 
-    
+
+- Funktionen hittar  `Func_hungary_eu_national_id_card` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_hungary_eu_national_id_card` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Funktionen hittar  `Func_hungary_eu_national_id_card` innehåll som matchar mönstret. 
-    
+
+- Funktionen hittar  `Func_hungary_eu_national_id_card` innehåll som matchar mönstret.
+
 ```xml
       <!-- Hungary Personal Identification Number -->
       <Entity id="7b5cc218-7046-47d9-80c9-f325b50896ca" patternsProximity="300" recommendedConfidence="85">
@@ -8199,26 +8199,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Två bokstäver följt av sex eller sju siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Två bokstäver följt av sex eller sju siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_hungary_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_hungary_eu_passport_number` hittas. 
+- Det reguljära  `Regex_hungary_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_hungary_eu_passport_number` hittas.
 - Det reguljära uttrycket hittar datum i `Regex_hungary_eu_passport_date` formatet DD MMM/MMM YY (Exempel - 01 MÁR/MAR 12) eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_hungary_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_hungary_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_hungary_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_hungary_eu_passport_number` hittas.
+
 ```xml
       <!-- Hungary Passport Number -->
       <Entity id="5b483910-9aa7-4c99-9917-f4001464bda7" patternsProximity="300" recommendedConfidence="75">
@@ -8274,26 +8274,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Nio siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Nio siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Funktionen hittar  `Func_hungary_eu_ssn_or_equivalent` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_hungary_eu_ssn_or_equivalent` från hittas. 
-    
+
+- Funktionen hittar  `Func_hungary_eu_ssn_or_equivalent` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_hungary_eu_ssn_or_equivalent` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Funktionen hittar  `Func_hungary_eu_ssn_or_equivalent` innehåll som matchar mönstret. 
-    
+
+- Funktionen hittar  `Func_hungary_eu_ssn_or_equivalent` innehåll som matchar mönstret.
+
 ```xml
       <!-- Hungarian Social Security Number (TAJ) -->
       <Entity id="0de78315-9537-47f5-95ab-b3e77eba3993" patternsProximity="300" recommendedConfidence="85">
@@ -8341,30 +8341,30 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 10 siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 10 siffror:
-  
-- En siffra som måste vara "8" 
+
+- En siffra som måste vara "8"
 - Åtta siffror
 - En kontrollsiffra
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Funktionen hittar  `Func_hungary_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_hungary_eu_tax_file_number` från hittas. 
-    
+
+- Funktionen hittar  `Func_hungary_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_hungary_eu_tax_file_number` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Funktionen hittar  `Func_hungary_eu_tax_file_number` innehåll som matchar mönstret. 
-    
+
+- Funktionen hittar  `Func_hungary_eu_tax_file_number` innehåll som matchar mönstret.
+
 ```xml
       <!-- Hungary Tax Identification Number -->
       <Entity id="ede42eb4-59d9-49eb-9603-d7853fbda91d" patternsProximity="300" recommendedConfidence="85">
@@ -8485,10 +8485,10 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 10 bokstäver eller siffror:
-- Tre bokstäver (inte teckenkänsliga) 
+- Tre bokstäver (inte teckenkänsliga)
 - En bokstav i C, P, H, F, A, T, B, L, J, G (inte ärendekänsligt)
 - En bokstav
-- Fyra siffror 
+- Fyra siffror
 - En bokstav med en alfabetisk kontrollsiffra
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -8524,9 +8524,9 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 
 #### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
-- Permanent kontonummer 
-- PAN 
-   
+- Permanent kontonummer
+- PAN
+
 ## <a name="india-unique-identification-aadhaar-number"></a>Indiens unika ID-nummer (Aadhaar)
 
 ### <a name="format"></a>Format
@@ -8537,10 +8537,10 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 
 12 siffror:
 - En siffra som inte är 0 eller 1
-- Tre siffror 
-- Ett blanksteg eller streck (valfritt) 
-- Fyra siffror 
-- Ett blanksteg eller streck (valfritt) 
+- Tre siffror
+- Ett blanksteg eller streck (valfritt)
+- Fyra siffror
+- Ett blanksteg eller streck (valfritt)
 - Den sista siffran, som är kontrollsiffran
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -8553,7 +8553,7 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 - Funktionen för Func_india_aadhaar hittar innehåll som matchar mönstret.
 - Ett nyckelord från Keyword_india_aadhar hittas.
 - Kontrollsumman passeras.
-- 
+-
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
 
 - Funktionen för Func_india_aadhaar hittar innehåll som matchar mönstret.
@@ -8572,7 +8572,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 </Entity>
 ```
 ### <a name="keywords"></a>Nyckelord
-   
+
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
 - aadhaar
 - aadhar
@@ -8580,7 +8580,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - uid
 - आधार
 - uidai
-   
+
 ## <a name="indonesia-identity-card-ktp-number"></a>Indonesia Identity Card-nummer (KTP)
 
 ### <a name="format"></a>Format
@@ -8590,13 +8590,13 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 16 siffror:
-- Tvåsiffrig provinskod 
-- En punkt (valfritt) 
-- Tvåsiffrig regency eller ortkod 
-- Tvåsiffrig underpriskod 
-- En punkt (valfritt) 
-- Sex siffror i formatet DDMMYY, som är födelsedatumet 
-- En punkt (valfritt) 
+- Tvåsiffrig provinskod
+- En punkt (valfritt)
+- Tvåsiffrig regency eller ortkod
+- Tvåsiffrig underpriskod
+- En punkt (valfritt)
+- Sex siffror i formatet DDMMYY, som är födelsedatumet
+- En punkt (valfritt)
 - Fyra siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -8620,13 +8620,13 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ```
 
 ### <a name="keywords"></a>Nyckelord
-   
+
 #### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
 
 - KTP
-- Kartu Tanda Penduduk 
-- Nomor Induk Kependudukan 
-   
+- Kartu Tanda Penduduk
+- Nomor Induk Kependudukan
+
 ## <a name="international-banking-account-number-iban"></a>Nummer för internationella banktjänster (IBAN)
 
 ### <a name="format"></a>Format
@@ -8638,7 +8638,7 @@ Landskod (två bokstäver) plus kontrollera siffror (två siffror) plus bban-num
 Mönster måste omfatta alla följande:
 
 - Landskod med två bokstäver
-- Två kontrollsiffror (följt av ett valfritt blanksteg) 
+- Två kontrollsiffror (följt av ett valfritt blanksteg)
 - 1–7 grupper med fyra bokstäver eller siffror (kan avgränsas med blanksteg)
 - 1–3 bokstäver eller siffror
 
@@ -8726,9 +8726,9 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 
 ### <a name="keywords"></a>Nyckelord
 
-Inga
+Ingen
 
-   
+
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Internationell klassificering av den internationella klassificeringen (ICD-10-CM)
 
 ### <a name="format"></a>Format
@@ -8871,35 +8871,35 @@ För IPv6 har en DLP-princip med hög säkerhet identifierat den här typen av k
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
 - IP (det här nyckelordet är det här är det ärendekänsliga)
-- ip-adress 
+- ip-adress
 - ip-adresser
 - internetprotokoll
-- IP-כתובת 
+- IP-כתובת
 
 ## <a name="ireland-drivers-license-number"></a>Irlands körkortsnummer
 
 ### <a name="format"></a>Format
 
 Sex siffror följt av fyra bokstäver
-  
+
 ### <a name="pattern"></a>Mönster
 
 Sex siffror och fyra bokstäver:
-  
+
 - Sex siffror
 - Fyra bokstäver (inte teckenkänsliga)
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-  
-- Det reguljära  `Regex_ireland_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_ireland_eu_driver's_license_number` hittas. 
-    
+
+- Det reguljära  `Regex_ireland_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_ireland_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Ireland Driver's License Number -->
       <Entity id="e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca" patternsProximity="300" recommendedConfidence="75">
@@ -9047,29 +9047,29 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Två bokstäver eller siffror följt av sju siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Två bokstäver eller siffror följt av sju siffror:
-  
+
 - Två siffror eller bokstäver (inte teckenkänsliga)
 - Sju siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_ireland_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_ireland_eu_passport_number` hittas. 
+- Det reguljära  `Regex_ireland_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_ireland_eu_passport_number` hittas.
 - Det reguljära uttrycket hittar datum i formatet `Regex_ireland_eu_passport_date` DD MMM/MMM YYYY (Exempel - 01 BEA/MAJ 1988) eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_ireland_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
+- Det reguljära  `Regex_ireland_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
 - Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_ireland_eu_passport_number` hittas.
-    
+
 ```xml
       <!-- Ireland Passport Number -->
       <Entity id="a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf" patternsProximity="300" recommendedConfidence="75">
@@ -9130,7 +9130,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Gammalt format (till 31 december 2012):
-- sju siffror följt av 1–2 bokstäver 
+- sju siffror följt av 1–2 bokstäver
 
 Nytt format (1 januari 2013 och senare):
 - sju siffror följt av två bokstäver
@@ -9138,12 +9138,12 @@ Nytt format (1 januari 2013 och senare):
 ### <a name="pattern"></a>Mönster
 
 Gammalt format (till 31 december 2012):
-- sju siffror 
-- En till två bokstäver (inte teckenkänsligt) 
+- sju siffror
+- En till två bokstäver (inte teckenkänsligt)
 
 Nytt format (1 januari 2013 och senare):
-- sju siffror 
-- En bokstav (inte en teckenkänslig) som är en alfabetisk kontrollsiffra 
+- sju siffror
+- En bokstav (inte en teckenkänslig) som är en alfabetisk kontrollsiffra
 - En valfri bokstav i cellområdet A-I eller "W"
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -9231,10 +9231,10 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="pattern"></a>Mönster
 
 Formaterat:
-- två siffror 
-- ett streck 
-- tre siffror 
-- ett streck 
+- två siffror
+- ett streck
+- tre siffror
+- ett streck
 - åtta siffror
 
 Oformaterat:
@@ -9266,11 +9266,11 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_israel_bank_account_number"></a>Keyword_israel_bank_account_number
 
-- Bankkontonummer 
-- Bankkonto 
-- Kontonummer 
-- מספר חשבון בנק 
-   
+- Bankkontonummer
+- Bankkonto
+- Kontonummer
+- מספר חשבון בנק
+
 ## <a name="israel-national-identification-number"></a>Israels national identification number
 
 ### <a name="format"></a>Format
@@ -9325,7 +9325,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 -   personligt ID
 -   unikt ID  
 
-   
+
 ## <a name="italy-drivers-license-number"></a>Italiens körkortsnummer
 
 Den här typen av entitet ingår i EU-drivrutinens informationstyp Licensnummerkänslig information. Det är också tillgängligt som en fristående typ av känslig information.
@@ -9337,8 +9337,8 @@ en kombination av 10 bokstäver och siffror
 ### <a name="pattern"></a>Mönster
 
 en kombination av 10 bokstäver och siffror:
-- en bokstav (inte en ärendekänslig) 
-- bokstaven "A" eller "V" (inte ärendekänsligt) 
+- en bokstav (inte en ärendekänslig)
+- bokstaven "A" eller "V" (inte ärendekänsligt)
 - sju siffror
 - en bokstav (inte en ärendekänslig)
 
@@ -9491,7 +9491,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
 - numero di patente
-- patente di guida 
+- patente di guida
 - patente guida
 - patenti di guida
 - patenti guida
@@ -9508,7 +9508,7 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 En kombination av bokstäver och siffror på 16 tecken i det angivna mönstret
-  
+
 ### <a name="pattern"></a>Mönster
 
 En kombination av 16 tecken och siffror:
@@ -9519,20 +9519,20 @@ En kombination av 16 tecken och siffror:
 - Två siffror som motsvarar dagen i månaden för att skilja mellan könen läggs 40 till vid födelsedatumet för kvinnor
 - fyra siffror som motsvarar den specifika areakoden för den valuta som personen är föds på (landskoder används för externa länder)
 - en paritetssiffra
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_italy_eu_national_id_card` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_italy_eu_national_id_card` från hittas. 
-    
+- Funktionen hittar  `Func_italy_eu_national_id_card` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_italy_eu_national_id_card` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_italy_eu_national_id_card` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_italy_eu_national_id_card` innehåll som matchar mönstret.
+
 ```xml
       <!-- Italy Fiscal Code -->
       <Entity id="4cd79172-8da9-4ff5-9188-98b1e7e2eca6" patternsProximity="300" recommendedConfidence="85">
@@ -9589,29 +9589,29 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 två bokstäver eller siffror följt av sju siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Två bokstäver eller siffror följt av sju siffror:
-  
+
 - två siffror eller bokstäver (inte teckenkänsliga)
 - sju siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_italy_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_italy_eu_passport_number` hittas. 
+- Det reguljära  `Regex_italy_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_italy_eu_passport_number` hittas.
 - Det reguljära uttrycket hittar datum i formatet `Regex_italy_eu_passport_date` DD MMM/MMM YYYY (Exempel - 01 GEN/JAN 1988) eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_italy_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_italy_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_italy_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_italy_eu_passport_number` hittas.
+
 ```xml
       <!-- Italy Passport Number -->
       <Entity id="39811019-4750-445f-b26d-4c0e6c431544" patternsProximity="300" recommendedConfidence="75">
@@ -9736,8 +9736,8 @@ sju eller åtta siffror
 bankkontonummer:
 - sju eller åtta siffror
 - bankkontokontorskod:
-- fyra siffror 
-- Blanksteg eller streck (valfritt) 
+- fyra siffror
+- Blanksteg eller streck (valfritt)
 - tre siffror
 
 Kontrollsumma
@@ -9769,7 +9769,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
             <Match idRef="Keyword_jp_bank_branch_code" />
           </Any>
       </Pattern>
-  </Version>    
+  </Version>
      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_jp_bank_account" />
         <Match idRef="Keyword_jp_bank_account" />
@@ -9781,34 +9781,34 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_jp_bank_account"></a>Keyword_jp_bank_account
 
-- Checking Account Number 
-- Checking Account 
-- Checking Account # 
-- Checking Acct Number 
-- Checking Acct # 
-- Checking Acct No. 
-- Checking Account No. 
-- Bankkontonummer 
-- Bankkonto 
-- Bankkonto # 
-- Bank Acct Number 
-- Bank Acct # 
-- Bank Acct No. 
-- Bank Account No. 
-- Savings Account Number 
-- Savings Account 
-- Savings Account # 
-- Savings Acct Number 
-- Savings Acct # 
-- Savings Acct No. 
-- Savings Account No. 
-- Debit Account Number 
-- Debit Account 
-- Debit Account # 
-- Debit Acct Number 
-- Debit Acct # 
-- Debit Acct No. 
-- Debit Account No. 
+- Checking Account Number
+- Checking Account
+- Checking Account #
+- Checking Acct Number
+- Checking Acct #
+- Checking Acct No.
+- Checking Account No.
+- Bankkontonummer
+- Bankkonto
+- Bankkonto #
+- Bank Acct Number
+- Bank Acct #
+- Bank Acct No.
+- Bank Account No.
+- Savings Account Number
+- Savings Account
+- Savings Account #
+- Savings Acct Number
+- Savings Acct #
+- Savings Acct No.
+- Savings Account No.
+- Debit Account Number
+- Debit Account
+- Debit Account #
+- Debit Acct Number
+- Debit Acct #
+- Debit Acct No.
+- Debit Account No.
 - 口座番号
 - 銀行口座
 - 銀行口座番号
@@ -10023,7 +10023,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 - 個人識別ナンバー
 - 通知カード
 
-   
+
 ## <a name="japan-passport-number"></a>Japan passport number
 
 ### <a name="format"></a>Format
@@ -10084,7 +10084,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 12 bokstäver och siffror:
 - Två bokstäver (inte versaler och teckenkänsliga)
-- åtta siffror 
+- åtta siffror
 - Två bokstäver (inte versaler och teckenkänsliga)
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -10153,17 +10153,17 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Invånarregistreringsnummer
-- Boendes grundläggande registernummer 
-- Registreringsnr för boende. 
-- Resident Register No. 
-- Residents Basic Registry No. 
-- Basic Resident Register No. 
+- Boendes grundläggande registernummer
+- Registreringsnr för boende.
+- Resident Register No.
+- Residents Basic Registry No.
+- Basic Resident Register No.
 - 外国人登録証明書番号
 - 証明書番号
 - 登録番号
 - 外国人登録証
 
-   
+
 ## <a name="japan-social-insurance-number-sin"></a>Japan social insurance number (SIN)
 
 ### <a name="format"></a>Format
@@ -10173,8 +10173,8 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 7-12 siffror:
-- fyra siffror 
-- Ett bindestreck (valfritt) 
+- fyra siffror
+- Ett bindestreck (valfritt)
 - sex siffror ELLER
 - 7–12 siffror i följd
 
@@ -10210,9 +10210,9 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_jp_sin"></a>Keyword_jp_sin
 
-- Social Insurance No. 
-- Social Insurance Num 
-- Social Insurance Number 
+- Social Insurance No.
+- Social Insurance Num
+- Social Insurance Number
 - 健康保険被保険者番号
 - 健保番号
 - 基礎年金番号
@@ -10235,24 +10235,24 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Tre bokstäver följt av sex siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 tre bokstäver och sex siffror:
-  
-- Tre bokstäver (inte versaler och teckenkänsliga) 
+
+- Tre bokstäver (inte versaler och teckenkänsliga)
 - sex siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_latvia_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_latvia_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_latvia_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_latvia_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Latvia Driver's License Number -->
       <Entity id="ec996de0-30f2-46b1-b192-4d2ff8805fa7" patternsProximity="300" recommendedConfidence="75">
@@ -10401,14 +10401,14 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 11 siffror och ett valfritt bindestreck
-  
+
 ### <a name="pattern"></a>Mönster
 
 Gammalt format
 
 11 siffror och ett bindestreck:
-  
-- Sex siffror som motsvarar födelsedatumet (DDMMYY) 
+
+- Sex siffror som motsvarar födelsedatumet (DDMMYY)
 - ett bindestreck
 - en siffra som motsvarar födelsedatumet ("0" för 19:e talet, "1" för 20:e talet och "2" för 2000-talet)
 - fyra siffror, slumpmässigt genererade
@@ -10419,20 +10419,20 @@ Nytt format
 
 - Två siffror "32"
 - Nio siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen eller  `Func_latvia_eu_national_id_card` regex hittar `Regex_latvia_eu_national_id_card_new_format` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_latvia_eu_national_id_card` från hittas. 
-    
+- Funktionen eller  `Func_latvia_eu_national_id_card` regex hittar `Regex_latvia_eu_national_id_card_new_format` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_latvia_eu_national_id_card` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen eller  `Func_latvia_eu_national_id_card` regex hittar `Regex_latvia_eu_national_id_card_new_format` innehåll som matchar mönstret. 
-    
+- Funktionen eller  `Func_latvia_eu_national_id_card` regex hittar `Regex_latvia_eu_national_id_card_new_format` innehåll som matchar mönstret.
+
 ```xml
       <!-- Latvia Personal Code -->
       <Entity id="03fcf763-27c2-49ed-9422-2641c6c895c9" patternsProximity="300" recommendedConfidence="85">
@@ -10532,29 +10532,29 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 två bokstäver eller siffror följt av sju siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Två bokstäver eller siffror följt av sju siffror:
-  
+
 - två siffror eller bokstäver (inte teckenkänsliga)
 - sju siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_latvia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_latvia_eu_passport_number` hittas. 
+- Det reguljära  `Regex_latvia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_latvia_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date1` uttrycket hittar datum i formatet DD.MM.YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_latvia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_latvia_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_latvia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_latvia_eu_passport_number` hittas.
+
 ```xml
       <!-- Latvia Passport Number -->
       <Entity id="23ae25ec-cc28-421b-b77a-3054eadf1ede" patternsProximity="300" recommendedConfidence="75">
@@ -10614,21 +10614,21 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Åtta siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
-åtta siffror 
-  
+åtta siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_lithuania_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_lithuania_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_lithuania_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_lithuania_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Lithuania Driver's License Number -->
       <Entity id="86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78" patternsProximity="300" recommendedConfidence="75">
@@ -10783,29 +10783,29 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 11 siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 11 siffror utan blanksteg och avgränsare:
-  
+
 - en siffra (1–6) som motsvarar personens kön och födelsedatumet
-- Sex siffror som motsvarar födelsedatum (AMMDD) 
+- Sex siffror som motsvarar födelsedatum (AMMDD)
 - Tre siffror som motsvarar serienumret för födelsedatumet
 - en checksiffra
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_lithuania_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_lithuania_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_lithuania_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_lithuania_eu_tax_file_number` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_lithuania_eu_tax_file_number` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_lithuania_eu_tax_file_number` innehåll som matchar mönstret.
+
 ```xml
       <!-- Lithuania Personal Code -->
       <Entity id="cd6d3786-8ec3-4524-a2cf-1e0095379171" patternsProximity="300" recommendedConfidence="85">
@@ -10865,26 +10865,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 åtta siffror eller bokstäver utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 åtta siffror eller bokstäver (inte teckenkänsliga)
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_lithuania_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_lithuania_eu_passport_number` hittas. 
+- Det reguljära  `Regex_lithuania_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_lithuania_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date3` uttrycket hittar datum i formatet DD MM YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_lithuania_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_lithuania_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_lithuania_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_lithuania_eu_passport_number` hittas.
+
 ```xml
       <!-- Lithuania Passport Number -->
       <Entity id="1b79900f-047b-4c3f-846f-7d73b5534bce" patternsProximity="300" recommendedConfidence="75">
@@ -10941,21 +10941,21 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Sex siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
-sex siffror 
-  
+sex siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_luxemburg_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_luxemburg_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_luxemburg_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_luxemburg_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Luxemburg Driver's License Number -->
       <Entity id="89daf717-1544-4860-9a2e-fc9166dd8852" patternsProximity="300" recommendedConfidence="75">
@@ -11109,26 +11109,26 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 13 siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 13 siffror:
-  
-- 11 siffror 
+
+- 11 siffror
 - två kontrollsiffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_luxemburg_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_luxemburg_eu_national_id_card` från hittas. 
+- Funktionen hittar  `Func_luxemburg_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_luxemburg_eu_national_id_card` från hittas.
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_luxemburg_eu_tax_file_number` innehåll som matchar mönstret. 
+- Funktionen hittar  `Func_luxemburg_eu_tax_file_number` innehåll som matchar mönstret.
 
 
 ```xml
@@ -11178,26 +11178,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 åtta siffror eller bokstäver utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 åtta siffror eller bokstäver (inte teckenkänsliga)
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_luxemburg_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_luxemburg_eu_passport_number` hittas. 
+- Det reguljära  `Regex_luxemburg_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_luxemburg_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date3` uttrycket hittar datum i formatet DD MM YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_luxemburg_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_luxemburg_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_luxemburg_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_luxemburg_eu_passport_number` hittas.
+
 ```xml
       <!-- Luxemburg Passport Number -->
       <Entity id="81d5c027-bed9-4421-91a0-3b2e55b3eb85" patternsProximity="300" recommendedConfidence="75">
@@ -11265,33 +11265,33 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 11 siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 11 siffror
-  
+
 - två siffror
-- ett valfritt blanksteg 
-- tre siffror 
 - ett valfritt blanksteg
-- tre siffror 
+- tre siffror
+- ett valfritt blanksteg
+- tre siffror
 - ett valfritt blanksteg
 - två siffror
 - en checksiffra
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_luxemburg_eu_tax_file_number_non_natural` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_luxemburg_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_luxemburg_eu_tax_file_number_non_natural` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_luxemburg_eu_tax_file_number` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_luxemburg_eu_tax_file_number_non_natural` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_luxemburg_eu_tax_file_number_non_natural` innehåll som matchar mönstret.
+
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
       <Entity id="84bffa3a-d805-4788-a613-b1e4df3804cf" patternsProximity="300" recommendedConfidence="85">
@@ -11361,11 +11361,11 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 12 siffror:
-- Sex siffror i formatet YYMMDD, som är födelsedatumet 
-- Ett streck (valfritt) 
-- plats-av-födelsedatum med två bokstäver 
-- Ett streck (valfritt) 
-- tre slumpmässiga siffror 
+- Sex siffror i formatet YYMMDD, som är födelsedatumet
+- Ett streck (valfritt)
+- plats-av-födelsedatum med två bokstäver
+- Ett streck (valfritt)
+- tre slumpmässiga siffror
 - ensiffrig kön-kod
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -11390,7 +11390,7 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ```
 
 ### <a name="keywords"></a>Nyckelord
-   
+
 #### <a name="keyword_malaysia_id_card_number"></a>Keyword_malaysia_id_card_number
 
 - digitalt programkort
@@ -11423,27 +11423,27 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ### <a name="format"></a>Format
 
 Kombination av två tecken och sex siffror i det angivna mönstret
-  
+
 ### <a name="pattern"></a>Mönster
 
 kombination av två tecken och sex siffror:
-  
+
 - Två tecken (siffror eller bokstäver, inte teckenkänsliga)
 - ett blanksteg (valfritt)
 - tre siffror
 - ett blanksteg (valfritt)
 - tre siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_malta_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_malta_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_malta_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_malta_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Malta Driver's License Number -->
       <Entity id="a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4" patternsProximity="300" recommendedConfidence="75">
@@ -11598,27 +11598,27 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 sju siffror följt av en bokstav
-  
+
 ### <a name="pattern"></a>Mönster
 
 sju siffror följt av en bokstav:
-  
-- sju siffror 
+
+- sju siffror
 - en bokstav i "M, G, A, P, L, H, B, Z" (ärendekänsligt)
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_malta_eu_national_id_card` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_malta_eu_national_id_card` från hittas. 
-    
+- Det reguljära  `Regex_malta_eu_national_id_card` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_malta_eu_national_id_card` från hittas.
+
 En DLP-princip har låg konfidens för att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_malta_eu_national_id_card` uttrycket hittar innehåll som matchar mönstret. 
-    
+- Det reguljära  `Regex_malta_eu_national_id_card` uttrycket hittar innehåll som matchar mönstret.
+
 ```xml
       <!-- Malta Identity Card Number -->
       <Entity id="854b36b3-a388-4ac8-a4ec-677c2b5e4356" patternsProximity="300" recommendedConfidence="75">
@@ -11657,26 +11657,26 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="format"></a>Format
 
 sju siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
-sju siffror 
-  
+sju siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_malta_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_malta_eu_passport_number` hittas. 
+- Det reguljära  `Regex_malta_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_malta_eu_passport_number` hittas.
 - Ett nyckelord `Keywords_eu_passport_date` från hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_malta_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_malta_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_malta_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_malta_eu_passport_number` hittas.
+
 ```xml
       <!-- Malta Passport Number -->
       <Entity id="b2b21198-48f9-4d13-b2a5-03969bff0fb8" patternsProximity="300" recommendedConfidence="75">
@@ -11731,34 +11731,34 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 För Maltesiska:
 - sju siffror och en bokstav i det angivna mönstret
-  
+
 Non-Denesiska ochesiska enheter:
 - nio siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 Esiska: sju siffror och en bokstav
-  
-- sju siffror 
+
+- sju siffror
 - en bokstav (inte en ärendekänslig)
-    
+
 Non-Denesiska och enheter av senesiska: nio siffror
-  
-- nio siffror 
-    
+
+- nio siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Regex eller  `Regex_malta_eu_tax_file_number`  hittar innehåll som matchar `Regex_malta_eu_tax_file_number_non_maltese_national` mönstret. 
-- Ett nyckelord  `Keywords_malta_eu_tax_file_number` från hittas. 
-    
+- Regex eller  `Regex_malta_eu_tax_file_number`  hittar innehåll som matchar `Regex_malta_eu_tax_file_number_non_maltese_national` mönstret.
+- Ett nyckelord  `Keywords_malta_eu_tax_file_number` från hittas.
+
 En DLP-princip har låg konfidens för att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Regex eller  `Regex_malta_eu_tax_file_number` hittar innehåll som matchar `Regex_malta_eu_tax_file_number_non_maltese_national` mönstret. 
-    
+- Regex eller  `Regex_malta_eu_tax_file_number` hittar innehåll som matchar `Regex_malta_eu_tax_file_number_non_maltese_national` mönstret.
+
 ```xml
       <!-- Malta Tax ID Number -->
       <Entity id="ec830c63-65f4-45d0-9d8c-910dc8334b20" patternsProximity="300" recommendedConfidence="75">
@@ -11820,7 +11820,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="format"></a>Format
 
 Alfanumeriskt mönster med 11 tecken
-  
+
 ### <a name="pattern"></a>Mönster
 
 - en siffra mellan 1 och 9
@@ -11834,20 +11834,20 @@ Alfanumeriskt mönster med 11 tecken
 - ett valfritt bindestreck
 - två bokstäver utom S, L, O, I, B, Z
 - två siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_mbi_card` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord  `Keyword_mbi_card` från hittas. 
-    
+- Det reguljära  `Regex_mbi_card` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord  `Keyword_mbi_card` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_mbi_card` uttrycket hittar innehåll som matchar mönstret. 
-    
+- Det reguljära  `Regex_mbi_card` uttrycket hittar innehåll som matchar mönstret.
+
 ```xml
     <!-- Medicare Beneficiary Identifier (MBI) card -->
       <Entity id="f753a286-f5cc-47e6-a592-4be25fd02591" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
@@ -11879,7 +11879,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 18 tecken för alfanumeriskt mönster
-  
+
 ### <a name="pattern"></a>Mönster
 
 - fyra bokstäver (inkänsliga versaler)
@@ -11889,20 +11889,20 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - tre bokstäver
 - en bokstav eller en siffra
 - en siffra
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_mexico_population_registry_code` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keyword_mexico_population_registry_code` från hittas. 
-    
+- Funktionen hittar  `Func_mexico_population_registry_code` innehåll som matchar mönstret.
+- Ett nyckelord  `Keyword_mexico_population_registry_code` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_mexico_population_registry_code` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_mexico_population_registry_code` innehåll som matchar mönstret.
+
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->
       <Entity id="e905ad4d-5a74-406d-bf36-b1efca798af4" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
@@ -11949,10 +11949,10 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 åtta-nio siffror:
-- tre siffror 
-- ett blanksteg (valfritt) 
-- tre siffror 
-- ett blanksteg (valfritt) 
+- tre siffror
+- ett blanksteg (valfritt)
+- tre siffror
+- ett blanksteg (valfritt)
 - två-tre siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -11979,7 +11979,7 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ### <a name="keywords"></a>Nyckelord
 
 #### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
-  
+
 - bsn #
 - bsn
 - servicenummer
@@ -12007,21 +12007,21 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ### <a name="format"></a>Format
 
 10 siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 10 siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_netherlands_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_netherlands_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_netherlands_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_netherlands_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Netherlands Driver's License Number -->
       <Entity id="6247fbea-ab80-4be5-8233-308b7c031401" patternsProximity="300" recommendedConfidence="75">
@@ -12174,26 +12174,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Nio bokstäver eller siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 nio bokstäver eller siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_netherlands_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_netherlands_eu_passport_number` hittas. 
+- Det reguljära  `Regex_netherlands_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_netherlands_eu_passport_number` hittas.
 - Det reguljära uttrycket hittar datum i formatet `Regex_netherlands_eu_passport_date` DD MMM/MMM YYYY (Exempel - 26 MAA/MAR 2012)
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_netherlands_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_netherlands_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_netherlands_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_netherlands_eu_passport_number` hittas.
+
 ```xml
       <!-- Netherlands Passport Number -->
       <Entity id="61786727-bafd-45f6-94d9-888d815e228e" patternsProximity="300" recommendedConfidence="75">
@@ -12248,24 +12248,24 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 Nio siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
-nio siffror 
-  
+nio siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_netherlands_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_netherlands_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_netherlands_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_netherlands_eu_tax_file_number` från hittas.
+
 En DLP-princip har låg konfidens för att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_netherlands_eu_tax_file_number` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_netherlands_eu_tax_file_number` innehåll som matchar mönstret.
+
 ```xml
       <!-- Netherlands Tax Identification Number -->
       <Entity id="01f42a64-eba7-4892-a67b-398237e4ade2" patternsProximity="300" recommendedConfidence="85">
@@ -12460,7 +12460,7 @@ Den här typen av känslig information kan bara användas i:
 
 åtta tecken för alfanumeriskt mönster
 
-- två bokstäver 
+- två bokstäver
 - sex siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -12628,7 +12628,7 @@ tre bokstäver, ett blanksteg (valfritt) och fyra siffror
 ### <a name="pattern"></a>Mönster
 
 - Tre bokstäver (inte ärendekänsliga) förutom "I" och "O"
-- ett blanksteg (valfritt) 
+- ett blanksteg (valfritt)
 - fyra siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -12735,7 +12735,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 - social social social en-nummer
 - swn #
 
-   
+
 ## <a name="norway-identification-number"></a>Id-nummer för Norge
 
 ### <a name="format"></a>Format
@@ -12745,8 +12745,8 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="pattern"></a>Mönster
 
 11 siffror:
-- Sex siffror i formatet DDMMYY, som är födelsedatumet 
-- tresiffrigt enskilt nummer 
+- Sex siffror i formatet DDMMYY, som är födelsedatumet
+- tresiffrigt enskilt nummer
 - två kontrollsiffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -12788,7 +12788,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - Personnummer
 - Fødselsnummer
 
-   
+
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>Philippines unified multi-purpose identification number
 
 ### <a name="format"></a>Format
@@ -12798,10 +12798,10 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 12 siffror:
-- fyra siffror 
-- ett bindestreck 
-- sju siffror 
-- ett bindestreck 
+- fyra siffror
+- ett bindestreck
+- sju siffror
+- ett bindestreck
 - en siffra
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -12825,12 +12825,12 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ```
 
 ### <a name="keywords"></a>Nyckelord
-   
+
 #### <a name="keyword_philippines_id"></a>Keyword_philippines_id
 
-- Enhetligt flerfunktions-ID 
-- UMID 
-- Identitetskort 
+- Enhetligt flerfunktions-ID
+- UMID
+- Identitetskort
 - Pinag-isang Multi-Layunin-ID
 
 ## <a name="poland-drivers-license-number"></a>Polens körkortsnummer
@@ -12838,27 +12838,27 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 14 siffror med två snedstreck
-  
+
 ### <a name="pattern"></a>Mönster
 
 14 siffror och två snedstreck:
-  
-- fem siffror 
+
+- fem siffror
 - ett snedstreck
 - två siffror
 - ett snedstreck
 - sju siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_poland_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_poland_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_poland_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_poland_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Poland Driver's License Number -->
       <Entity id="24d51f99-ee9e-4060-a077-cae58cab1ee4" patternsProximity="300" recommendedConfidence="75">
@@ -13044,7 +13044,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - Dowód Toósamoòci
 - dow. os.
 
-   
+
 ## <a name="poland-national-id-pesel"></a>Polens national-ID (PESEL)
 
 ### <a name="format"></a>Format
@@ -13099,7 +13099,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - pesel
 - tociesamoóci narodowej
 
-   
+
 ## <a name="poland-passport-number"></a>Polen passnummer
 Den här typen av känslig information ingår i typen Känslig information i EU Passport Number. Det är också tillgängligt som en fristående typ av känslig information.
 
@@ -13204,7 +13204,7 @@ Den här typen av känslig information kan bara användas i:
 
 Nio eller fyrsiffriga siffror:
 
-- nio siffror eller 
+- nio siffror eller
 - nio siffror
 - bindestreck
 - fem siffror
@@ -13265,22 +13265,22 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 11 siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 11 siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_poland_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_poland_eu_tax_file_number` från hittas. 
-    
-  
+- Funktionen hittar  `Func_poland_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_poland_eu_tax_file_number` från hittas.
+
+
 ```xml
       <!-- Poland Tax Identification Number -->
       <Entity id="1ff28b4d-40f2-49e9-b677-9606a88e2bca" patternsProximity="300" recommendedConfidence="85">
@@ -13322,7 +13322,7 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 - vatid #
 - vatid
 - vatno #
-   
+
 
 ## <a name="portugal-citizen-card-number"></a>Portugal med kreditkortsnummer
 
@@ -13382,7 +13382,7 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ### <a name="format"></a>Format
 
 två mönster – två bokstäver följt av 5–8 siffror med specialtecken
-  
+
 ### <a name="pattern"></a>Mönster
 
 Mönster 1: Två bokstäver följt av 5/6 med specialtecken:
@@ -13399,17 +13399,17 @@ Mönster 2: En bokstav följt av 6/8 siffror med specialtecken:
 - Ett blanksteg
 - En siffra
 
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_portugal_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_portugal_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_portugal_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_portugal_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Portugal Driver's License Number -->
       <Entity id="977f1e5a-2c33-4bcc-b516-95bb275cff23" patternsProximity="300" recommendedConfidence="75">
@@ -13565,29 +13565,29 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 en bokstav följt av sex siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 en bokstav följt av sex siffror:
-  
+
 - en bokstav (inte en ärendekänslig)
 - sex siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_portugal_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_portugal_eu_passport_number` hittas. 
+- Det reguljära  `Regex_portugal_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_portugal_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date1` uttrycket hittar datum i formatet DD.MM.YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_portugal_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
+- Det reguljära  `Regex_portugal_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
 - Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_portugal_eu_passport_number` hittas.
-    
+
 ```xml
       <!-- Portugal Passport Number -->
       <Entity id="080a52fd-a7bc-431e-b54d-51f08f59db11" patternsProximity="300" recommendedConfidence="75">
@@ -13651,7 +13651,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Nio siffror med valfria blanksteg
-  
+
 ### <a name="pattern"></a>Mönster
 
 - tre siffror
@@ -13659,20 +13659,20 @@ Nio siffror med valfria blanksteg
 - tre siffror
 - ett valfritt blanksteg
 - tre siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_portugal_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_portugal_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_portugal_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_portugal_eu_tax_file_number` från hittas.
+
 En DLP-princip har låg konfidens för att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_portugal_eu_tax_file_number` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_portugal_eu_tax_file_number` innehåll som matchar mönstret.
+
 ```xml
       <!-- Portugal Tax Identification Number -->
       <Entity id="65372402-3131-4f1e-9983-4439841d1f15" patternsProximity="300" recommendedConfidence="85">
@@ -13719,23 +13719,23 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="format"></a>Format
 
 ett tecken följt av åtta siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 ett tecken följt av åtta siffror:
-- en bokstav (inte en teckenkänslig) eller en siffra 
+- en bokstav (inte en teckenkänslig) eller en siffra
 - åtta siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_romania_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_romania_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_romania_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_romania_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Romania Driver's License Number -->
       <Entity id="b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c" patternsProximity="300" recommendedConfidence="75">
@@ -13893,7 +13893,7 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 13 siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 - en siffra från 1–9
@@ -13904,16 +13904,16 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_romania_eu_national_id_card` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_romania_eu_national_id_card` från hittas. 
-    
+- Funktionen hittar  `Func_romania_eu_national_id_card` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_romania_eu_national_id_card` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_romania_eu_national_id_card` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_romania_eu_national_id_card` innehåll som matchar mönstret.
+
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
       <Entity id="eb5fa399-fe28-4c67-8188-d63a616ed89c" patternsProximity="300" recommendedConfidence="85">
@@ -13985,26 +13985,26 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Åtta eller nio siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Åtta eller nio siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_romania_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_romania_eu_passport_number` hittas. 
+- Det reguljära  `Regex_romania_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_romania_eu_passport_number` hittas.
 - Det reguljära uttrycket hittar datum i `Regex_romania_eu_passport_date` formatet DD MMM/MMM YY (Exempel- 01 FEB/10 FEB) eller ett nyckelord `Keywords_eu_passport_date` från hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_romania_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_romania_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_romania_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_romania_eu_passport_number` hittas.
+
 ```xml
       <!-- Romania Passport Number -->
       <Entity id="5d31b90c-7fe2-4a76-a14b-767b8fd19d6c" patternsProximity="300" recommendedConfidence="75">
@@ -14212,12 +14212,12 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_saudi_arabia_national_id"></a>Keyword_saudi_arabia_national_id
 
-- ID-kort 
-- Jag kortnummer 
-- ID-nummer 
-- الوطنية الهوية بطاقة رقم 
+- ID-kort
+- Jag kortnummer
+- ID-nummer
+- الوطنية الهوية بطاقة رقم
 
-   
+
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>Nummer till Singapore national registration identity card (NRIC)
 
 ### <a name="format"></a>Format
@@ -14227,8 +14227,8 @@ nio bokstäver och siffror
 ### <a name="pattern"></a>Mönster
 
 - Nio bokstäver och siffror:
-- bokstaven "F", "G", "S" eller "T" (inte ärendekänsligt) 
-- sju siffror 
+- bokstaven "F", "G", "S" eller "T" (inte ärendekänsligt)
+- sju siffror
 - en alfabetisk kontrollsiffra
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -14260,41 +14260,41 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ```
 
 ### <a name="keywords"></a>Nyckelord
-   
+
 #### <a name="keyword_singapore_nric"></a>Keyword_singapore_nric
 
-- National Registration Identity Card 
-- Identitetskortsnummer 
-- NRIC 
-- IC 
-- Foreign Identification Number 
-- FIN 
-- 身份证 
-- 身份證 
+- National Registration Identity Card
+- Identitetskortsnummer
+- NRIC
+- IC
+- Foreign Identification Number
+- FIN
+- 身份证
+- 身份證
 
 ## <a name="slovakia-drivers-license-number"></a>Slovakiens körkortsnummer
 
 ### <a name="format"></a>Format
 
 ett tecken följt av sju siffror
-  
+
 ### <a name="pattern"></a>Mönster
 
 ett tecken följt av sju siffror
-  
+
 - en bokstav (inte en teckenkänslig) eller en siffra
-- sju siffror 
-    
+- sju siffror
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_slovakia_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_slovakia_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_slovakia_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_slovakia_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Slovakia Driver's License Number -->
       <Entity id="14240c22-b6de-4ce5-a90b-137f74252513" patternsProximity="300" recommendedConfidence="75">
@@ -14450,27 +14450,27 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 nio eller 10 siffror som innehåller valfria omslag
-  
+
 ### <a name="pattern"></a>Mönster
 
 - Sex siffror som representerar födelsedatum
 - valfritt snedstreck (/)
 - tre siffror
 - en valfri kontrollsiffra
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_slovakia_eu_national_id_card` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_slovakia_eu_national_id_card` från hittas. 
-    
+- Funktionen hittar  `Func_slovakia_eu_national_id_card` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_slovakia_eu_national_id_card` från hittas.
+
 En DLP-princip har låg konfidens för att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_slovakia_eu_national_id_card` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_slovakia_eu_national_id_card` innehåll som matchar mönstret.
+
 ```xml
       <!-- Slovakia Personal Number -->
       <Entity id="951c26b7-3b35-4f73-924b-15dd599cb9ab" patternsProximity="300" recommendedConfidence="85">
@@ -14539,26 +14539,26 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="format"></a>Format
 
 en siffra eller bokstav följt av sju siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 en siffra eller bokstav (inte en teckenkänslig) följt av sju siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_slovakia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_slovakia_eu_passport_number` hittas. 
+- Det reguljära  `Regex_slovakia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_slovakia_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date1` uttrycket hittar datum i formatet DD.MM.YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_slovakia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_slovakia_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_slovakia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_slovakia_eu_passport_number` hittas.
+
 ```xml
       <!-- Slovakia Passport Number -->
       <Entity id="238e1f08-d80e-4793-af33-9b57918335b7" patternsProximity="300" recommendedConfidence="75">
@@ -14617,21 +14617,21 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Nio siffror utan blanksteg och avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 nio siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_slovenia_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_slovenia_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_slovenia_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_slovenia_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Slovenia Driver's License Number -->
       <Entity id="d5bc089a-f2ee-433d-a6b1-5c253051d6f2" patternsProximity="300" recommendedConfidence="75">
@@ -14788,29 +14788,29 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 13 siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 13 siffror i det angivna mönstret:
-  
-- sju siffror som motsvarar födelsedatumet (DDMMLLL) där "LLL" motsvarar de tre sista siffrorna i födelsedatumet 
+
+- sju siffror som motsvarar födelsedatumet (DDMMLLL) där "LLL" motsvarar de tre sista siffrorna i födelsedatumet
 - två siffror som motsvarar födelsedatumet "50"
 - Tre siffror som motsvarar en kombination av kön och serienummer för personer som föds på samma dag. 000–499 för man och 500–999 för kvinna.
 - en checksiffra
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_slovenia_eu_national_id_card` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_slovenia_eu_national_id_card` från hittas. 
-    
+- Funktionen hittar  `Func_slovenia_eu_national_id_card` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_slovenia_eu_national_id_card` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_slovenia_eu_national_id_card` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_slovenia_eu_national_id_card` innehåll som matchar mönstret.
+
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
       <Entity id="68948b27-803d-41e4-adf1-13e05eb541bb" patternsProximity="300" recommendedConfidence="85">
@@ -14859,30 +14859,30 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Två bokstäver följt av sju siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 Två bokstäver följt av sju siffror:
-  
+
 - bokstaven "P"
 - en versal
 - sju siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_slovenia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_slovenia_eu_passport_number` hittas. 
+- Det reguljära  `Regex_slovenia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_slovenia_eu_passport_number` hittas.
 - Det reguljära `Regex_eu_passport_date1` uttrycket hittar datum i formatet DD.MM.YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_slovenia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_slovenia_eu_passport_number` hittas. 
-    
+- Det reguljära  `Regex_slovenia_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_slovenia_eu_passport_number` hittas.
+
 ```xml
       <!-- Slovenia Passport Number -->
       <Entity id="235b7976-7bbe-4df5-bb40-08678e749d1a" patternsProximity="300" recommendedConfidence="75">
@@ -14948,26 +14948,26 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 Åtta siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 - en siffra från 1–9
 - sex siffror
 - en checksiffra
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_slovenia_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_slovenia_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_slovenia_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_slovenia_eu_tax_file_number` från hittas.
+
 En DLP-princip har låg konfidens för att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_slovenia_eu_tax_file_number` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_slovenia_eu_tax_file_number` innehåll som matchar mönstret.
+
 ```xml
       <!-- Slovenia Tax Identification Number -->
       <Entity id="e47b071e-c352-4d70-8241-8c215ad65505" patternsProximity="300" recommendedConfidence="85">
@@ -15017,10 +15017,10 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 ### <a name="pattern"></a>Mönster
 
 13 siffror:
-- Sex siffror i formatet YYMMDD, som är födelsedatumet 
-- fyra siffror 
-- en ensiffrig indikator 
-- siffran "8" eller "9" 
+- Sex siffror i formatet YYMMDD, som är födelsedatumet
+- fyra siffror
+- en ensiffrig indikator
+- siffran "8" eller "9"
 - en siffra, som är en kontrollsummasiffra
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -15045,13 +15045,13 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ```
 
 ### <a name="keywords"></a>Nyckelord
-   
+
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - Identitetskort
 - ID
-- Identifiering 
-   
+- Identifiering
+
 ## <a name="south-korea-resident-registration-number"></a>Registreringsnummer för sydkoreanska invånare
 
 ### <a name="format"></a>Format
@@ -15061,11 +15061,11 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 13 siffror:
-- Sex siffror i formatet YYMMDD, som är födelsedatumet 
-- ett bindestreck 
-- en siffra som bestäms av talet och kön 
-- fyrsiffrig födelsedatumskod 
-- en siffra som används för att särskilja personer som de föregående siffrorna är identiska för 
+- Sex siffror i formatet YYMMDD, som är födelsedatumet
+- ett bindestreck
+- en siffra som bestäms av talet och kön
+- fyrsiffrig födelsedatumskod
+- en siffra som används för att särskilja personer som de föregående siffrorna är identiska för
 - en kontrollsiffra.
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -15097,13 +15097,13 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ```
 
 ### <a name="keywords"></a>Nyckelord
-   
+
 #### <a name="keyword_south_korea_resident_number"></a>Keyword_south_korea_resident_number
 
-- National ID card 
-- Medborgares registreringsnummer 
-- Jumin deungnok beonho 
-- RRN 
+- National ID card
+- Medborgares registreringsnummer
+- Jumin deungnok beonho
+- RRN
 - 주민등록번호
 
 ## <a name="spain-drivers-license-number"></a>Spaniens körkortsnummer
@@ -15111,27 +15111,27 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 Åtta siffror följt av ett tecken
-  
+
 ### <a name="pattern"></a>Mönster
 
 Åtta siffror följt av ett tecken:
-  
-- åtta siffror 
+
+- åtta siffror
 - en siffra eller bokstav (inte en teckenkänslig)
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen eller  `Func_spain_eu_DL_and_NI_number_citizen` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_foreigner` mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_spain_eu_driver's_license_number` hittas. 
+- Funktionen eller  `Func_spain_eu_DL_and_NI_number_citizen` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_foreigner` mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_spain_eu_driver's_license_number` hittas.
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen eller  `Func_spain_eu_DL_and_NI_number_citizen` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_foreigner` mönstret. 
-    
+- Funktionen eller  `Func_spain_eu_DL_and_NI_number_citizen` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_foreigner` mönstret.
+
 ```xml
       <!-- Spain Driver's License Number -->
       <Entity id="d5a82922-b501-4f40-8868-341321146aa2" patternsProximity="300" recommendedConfidence="75">
@@ -15308,29 +15308,29 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 Åtta siffror följt av ett tecken
-  
+
 ### <a name="pattern"></a>Mönster
 
 sju siffror följt av ett tecken
-  
+
 - åtta siffror
 - Ett valfritt blanksteg eller bindestreck
 - en bkryssbokstav (inte fallkänslig)
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen eller  `Func_spain_eu_DL_and_NI_number_citizen` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_foreigner` mönstret. 
-- Ett nyckelord  `Keywords_spain_eu_national_id_card"` från hittas. 
+- Funktionen eller  `Func_spain_eu_DL_and_NI_number_citizen` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_foreigner` mönstret.
+- Ett nyckelord  `Keywords_spain_eu_national_id_card"` från hittas.
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen eller  `Func_spain_eu_DL_and_NI_number_citizen` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_foreigner` mönstret. 
+- Funktionen eller  `Func_spain_eu_DL_and_NI_number_citizen` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_foreigner` mönstret.
 
-    
+
 ```xml
       <!-- Spain DNI -->
       <Entity id="8e6251b9-47b4-40e8-a42b-0f80876be192" patternsProximity="300" recommendedConfidence="85">
@@ -15382,30 +15382,30 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="format"></a>Format
 
 En kombination av åtta eller nio tecken med bokstäver och siffror utan blanksteg eller avgränsare
-  
+
 ### <a name="pattern"></a>Mönster
 
 En kombination av åtta eller nio tecken med bokstäver och siffror:
-  
-- två siffror eller bokstäver 
+
+- två siffror eller bokstäver
 - en siffra eller bokstav (valfritt)
 - sex siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ej tillämpligt
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_spain_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_spain_eu_passport_number` hittas. 
+- Det reguljära  `Regex_spain_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_spain_eu_passport_number` hittas.
 - Det reguljära `Regex_spain_eu_passport_date` uttrycket hittar datum i formatet DD-MM-YYYY eller ett nyckelord från `Keywords_eu_passport_date` hittas
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_spain_eu_passport_number` uttrycket hittar innehåll som matchar mönstret. 
+- Det reguljära  `Regex_spain_eu_passport_number` uttrycket hittar innehåll som matchar mönstret.
 - Ett nyckelord från  `Keywords_eu_passport_number` eller `Keywords_spain_eu_passport_number` hittas.
-    
+
 ```xml
       <!-- Spain Passport Number -->
       <Entity id="d17a57de-9fa5-4e9f-85d3-85c26d89686e" patternsProximity="300" recommendedConfidence="75">
@@ -15476,10 +15476,10 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 11–12 siffror:
-- två siffror 
-- ett snedstreck (valfritt) 
-- sju till åtta siffror 
-- ett snedstreck (valfritt) 
+- två siffror
+- ett snedstreck (valfritt)
+- sju till åtta siffror
+- ett snedstreck (valfritt)
 - två siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -15491,7 +15491,7 @@ Ja
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
 - Funktionen för Func_spanish_social_security_number hittar innehåll som matchar mönstret.
 - Kontrollsumman passeras.
-- - Ett nyckelord  `Keywords_spain_eu_ssn_or_equivalent` från hittas. 
+- - Ett nyckelord  `Keywords_spain_eu_ssn_or_equivalent` från hittas.
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
 - Funktionen för Func_spanish_social_security_number hittar innehåll som matchar mönstret.
@@ -15532,51 +15532,51 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 sju eller åtta siffror och en eller två bokstäver i det angivna mönstret
-  
+
 ### <a name="pattern"></a>Mönster
 
 Spanska naturliga personer med ett Spanien National Identity Card:
-  
-- åtta siffror 
-- en versaler (gemener och versaler) 
-    
+
+- åtta siffror
+- en versaler (gemener och versaler)
+
 Non-resident Sstraards utan ett Spain National Identity Card
-  
+
 - en versaler "L" (gemener/versaler) (gemener/VERSALER) (gemener och versaler) (gemener/VERSALER)
 - sju siffror
-- en versaler (gemener och versaler) 
-    
-Invånare som är under 14 år utan spaniens nationalidentitetskort:
-  
-- en versal "K" (gemener/versaler) (gemener och versaler) (gemener och versaler)
-- sju siffror 
 - en versaler (gemener och versaler)
-    
+
+Invånare som är under 14 år utan spaniens nationalidentitetskort:
+
+- en versal "K" (gemener/versaler) (gemener och versaler) (gemener och versaler)
+- sju siffror
+- en versaler (gemener och versaler)
+
 Foreigners with a Foreigner's Identification Number
-  
-- en versal som är "X", "Y" eller "Z" (gemener och versaler) 
+
+- en versal som är "X", "Y" eller "Z" (gemener och versaler)
 - sju siffror
-- en versaler (gemener och versaler) 
-    
+- en versaler (gemener och versaler)
+
 Foreigners without a Foreigner's Identification Number
-  
-- en versal som är "M" (gemener/versaler) (gemener och versaler) (gemener och versaler) 
+
+- en versal som är "M" (gemener/versaler) (gemener och versaler) (gemener och versaler)
 - sju siffror
-- en versaler (gemener och versaler) 
-    
+- en versaler (gemener och versaler)
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen eller  `Func_spain_eu_tax_file_number` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_citizen` mönstret. 
-- Ett nyckelord  `Keywords_spain_eu_tax_file_number` från hittas. 
-    
+- Funktionen eller  `Func_spain_eu_tax_file_number` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_citizen` mönstret.
+- Ett nyckelord  `Keywords_spain_eu_tax_file_number` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen eller  `Func_spain_eu_tax_file_number` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_citizen` mönstret. 
-    
+- Funktionen eller  `Func_spain_eu_tax_file_number` hittar innehåll som matchar `Func_spain_eu_DL_and_NI_number_citizen` mönstret.
+
 ```xml
       <!-- Spain Tax Identification Number -->
       <Entity id="10f0d113-b0e1-47dc-872a-a4f45b9376a3" patternsProximity="300" recommendedConfidence="85">
@@ -15712,25 +15712,25 @@ Med den här typen av känslig information identifieras dessa nyckelord med hjä
 ### <a name="format"></a>Format
 
 10 siffror som innehåller ett bindestreck
-  
+
 ### <a name="pattern"></a>Mönster
 
 10 siffror som innehåller ett bindestreck:
-  
-- sex siffror 
+
+- sex siffror
 - ett bindestreck
 - fyra siffror
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Det reguljära  `Regex_sweden_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret. 
-- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_sweden_eu_driver's_license_number` hittas. 
-    
+- Det reguljära  `Regex_sweden_eu_driver's_license_number` uttrycket hittar innehåll som matchar mönstret.
+- Ett nyckelord från  `Keywords_eu_driver's_license_number` eller `Keywords_sweden_eu_driver's_license_number` hittas.
+
 ```xml
       <!-- Sweden Driver's License Number -->
       <Entity id="70088720-90dd-47f5-805e-5525f3567391" patternsProximity="300" recommendedConfidence="75">
@@ -15891,8 +15891,8 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 10 eller 12 siffror och en valfri avgränsare:
-- två siffror (valfritt) 
-- Sex siffror i datumformat YYMMDD 
+- två siffror (valfritt)
+- Sex siffror i datumformat YYMMDD
 - avgränsare av "-" eller "+" (valfritt)
 - fyra siffror
 
@@ -15945,7 +15945,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - personnummer #
 - personnummer
 - skatteidentifikationsnummer
-   
+
 ## <a name="sweden-passport-number"></a>Sverige passnummer
 
 ### <a name="format"></a>Format
@@ -15997,7 +15997,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ```
 
 ### <a name="keywords"></a>Nyckelord
-   
+
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - pass #
@@ -16050,31 +16050,31 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 10 siffror och en symbol i det angivna mönstret
-  
+
 ### <a name="pattern"></a>Mönster
 
 10 siffror och en symbol:
-  
-- Sex siffror som motsvarar födelsedatumet (AMMDD) 
+
+- Sex siffror som motsvarar födelsedatumet (AMMDD)
 - ett plustecken eller minustecken
-- Tre siffror som gör ID-numret unikt där: 
+- Tre siffror som gör ID-numret unikt där:
   - för nummer som utfärdats före 1990, den sjunde och åttonde siffran identifiera födelsedatum eller foreign-born people
   - Siffran i den nionde positionen anger kön med antingen udda för man eller till och med för kvinna
 - en checksiffra
-    
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Ja
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har hög säkerhet att den har upptäckt den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_sweden_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_sweden_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_sweden_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_sweden_eu_tax_file_number` från hittas.
+
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_sweden_eu_tax_file_number` innehåll som matchar mönstret. 
-    
+- Funktionen hittar  `Func_sweden_eu_tax_file_number` innehåll som matchar mönstret.
+
 ```xml
       <!-- Sweden Tax Identification Number -->
       <Entity id="139acba0-a5bc-4fbb-876d-f7a493ae8a40" patternsProximity="300" recommendedConfidence="85">
@@ -16130,10 +16130,10 @@ fyra bokstäver följt av 5–31 bokstäver eller siffror
 ### <a name="pattern"></a>Mönster
 
 fyra bokstäver följt av 5–31 bokstäver eller siffror:
-- bankkod på fyra bokstäver (inte ärendekänsligt) 
-- ett valfritt blanksteg 
-- 4–28 bokstäver eller siffror (BBAN (Basic Bank Account Number)) 
-- ett valfritt blanksteg 
+- bankkod på fyra bokstäver (inte ärendekänsligt)
+- ett valfritt blanksteg
+- 4–28 bokstäver eller siffror (BBAN (Basic Bank Account Number))
+- ett valfritt blanksteg
 - en till tre bokstäver eller siffror (resten av BBAN)
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -16156,7 +16156,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ```
 
 ### <a name="keywords"></a>Nyckelord
-   
+
 #### <a name="keyword_swift"></a>Keyword_swift
 
 - internationella standardiseringsorganisationen 9362
@@ -16267,7 +16267,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - identification personnelle id
 - numéro de sécurité sociale
 
-   
+
 ## <a name="taiwan-national-identification-number"></a>Taiwans national identification number
 
 ### <a name="format"></a>Format
@@ -16277,8 +16277,8 @@ en bokstav (på engelska) följt av nio siffror
 ### <a name="pattern"></a>Mönster
 
 en bokstav (på engelska) följt av nio siffror:
-- en bokstav (på engelska, inte den där den är det. 
-- siffran "1" eller "2" 
+- en bokstav (på engelska, inte den där den är det.
+- siffran "1" eller "2"
 - åtta siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -16313,21 +16313,21 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_taiwan_national_id"></a>Keyword_taiwan_national_id
 
-- 身份證字號 
-- 身份證 
-- 身份證號碼 
-- 身份證號 
-- 身分證字號 
-- 身分證 
-- 身分證號碼 
-- 身份證號 
-- 身分證統一編號 
-- 國民身分證統一編號 
-- 簽名 
-- 蓋章 
-- 簽名或蓋章 
-- 簽章   
-   
+- 身份證字號
+- 身份證
+- 身份證號碼
+- 身份證號
+- 身分證字號
+- 身分證
+- 身分證號碼
+- 身份證號
+- 身分證統一編號
+- 國民身分證統一編號
+- 簽名
+- 蓋章
+- 簽名或蓋章
+- 簽章
+
 ## <a name="taiwan-passport-number"></a>Taiwan passport number
 
 ### <a name="format"></a>Format
@@ -16337,7 +16337,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 ### <a name="pattern"></a>Mönster
 biometrisk pass nummer:
-- tecknet "3" 
+- tecknet "3"
 - åtta siffror
 
 icke-biometrisk passnummer:
@@ -16367,15 +16367,15 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_taiwan_passport"></a>Keyword_taiwan_passport
 
-- ROC-passnummer 
-- Passnummer 
-- Passport no 
-- Passport Num 
-- Pass # 
-- 护照 
-- 中華民國護照 
+- ROC-passnummer
+- Passnummer
+- Passport no
+- Passport Num
+- Pass #
+- 护照
+- 中華民國護照
 - Zhōnghuá Mínguó hùzhào
-   
+
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>Taiwan-intjänat certifikat (ARC/TARC) nummer
 
 ### <a name="format"></a>Format
@@ -16385,7 +16385,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 10 bokstäver och siffror:
-- Två bokstäver (inte versaler och teckenkänsliga) 
+- Två bokstäver (inte versaler och teckenkänsliga)
 - åtta siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -16412,17 +16412,17 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_taiwan_resident_certificate"></a>Keyword_taiwan_resident_certificate
 
-- Inebonnat certifikat 
-- Intreifit certifikat 
-- Resident Cert. 
-- ID-kort 
-- Alien Resident Certificate 
-- ARC 
-- Taiwan Area Resident Certificate 
-- TARC 
-- 居留證 
-- 外僑居留證 
-- 台灣地區居留證 
+- Inebonnat certifikat
+- Intreifit certifikat
+- Resident Cert.
+- ID-kort
+- Alien Resident Certificate
+- ARC
+- Taiwan Area Resident Certificate
+- TARC
+- 居留證
+- 外僑居留證
+- 台灣地區居留證
 
 ## <a name="thai-population-identification-code"></a>Identifieringskod för thailändska
 
@@ -16433,7 +16433,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 13 siffror:
-- första siffran är inte noll eller nio 
+- första siffran är inte noll eller nio
 - 12 siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -16472,7 +16472,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - รหัสบัตรประชาชน
 - บัตรประชาชน
 - รหัสบัตรประชาชน
-  
+
 ## <a name="turkish-national-identification-number"></a>Turkiska national identification number
 
 ### <a name="format"></a>Format
@@ -16527,10 +16527,10 @@ Kombination av 18 bokstäver och siffror i det angivna formatet
 ### <a name="pattern"></a>Mönster
 
 18 bokstäver och siffror:
-- Fem bokstäver (inte ärendekänsliga) eller siffran "9" i stället för en bokstav. 
+- Fem bokstäver (inte ärendekänsliga) eller siffran "9" i stället för en bokstav.
 - En siffra.
 - Fem siffror i datumformatet MMDDY för födelsedatumet. Det sjunde tecknet ökas med 50 om drivrutinen är kvinna. för prov, 51 till 62 i stället för 01 till 12.
-- Två bokstäver (inte teckenkänsliga) eller siffran "9" i stället för en bokstav. 
+- Två bokstäver (inte teckenkänsliga) eller siffran "9" i stället för en bokstav.
 - Fem siffror.
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -16684,7 +16684,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 - dlno
 - dl-nummer
 
-   
+
 ## <a name="uk-electoral-roll-number"></a>Storbritannien nummer för att samla, rulla ut, 75
 
 ### <a name="format"></a>Format
@@ -16721,12 +16721,12 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_uk_electoral"></a>Keyword_uk_electoral
 
-- mötesmöte 
-- formulär för att skapa en 20 
-- register över registrering av registrer 
+- mötesmöte
+- formulär för att skapa en 20
+- register över registrering av registrer
 - roll för underse
 
-   
+
 ## <a name="uk-national-health-service-number"></a>Storbritannien national health service number
 
 ### <a name="format"></a>Format
@@ -16736,10 +16736,10 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 ### <a name="pattern"></a>Mönster
 
 10–17 siffror:
-- antingen 3 eller 10 siffror 
-- ett blanksteg 
-- tre siffror 
-- ett blanksteg 
+- antingen 3 eller 10 siffror
+- ett blanksteg
+- tre siffror
+- ett blanksteg
 - fyra siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -16771,29 +16771,29 @@ En DLP-princip har hög säkerhet att den har upptäckt den här typen av känsl
 ```
 
 ### <a name="keywords"></a>Nyckelord
-   
+
 #### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
-- national health service 
-- nhs 
-- hälsotjänstutfärdare 
+- national health service
+- nhs
+- hälsotjänstutfärdare
 - hälsoutfärdare
 
 #### <a name="keyword_uk_nhs_number1"></a>Keyword_uk_nhs_number1
 
-- patient-ID 
-- patientidentifiering 
-- patientnr 
+- patient-ID
+- patientidentifiering
+- patientnr
 - patientnummer
 
 #### <a name="keyword_uk_nhs_number_dob"></a>Keyword_uk_nhs_number_dob
 
-- GP 
-- DOB 
-- D.O.B 
-- Födelsedatum 
-- Födelsedatum 
-   
+- GP
+- DOB
+- D.O.B
+- Födelsedatum
+- Födelsedatum
+
 ## <a name="uk-national-insurance-number-nino"></a>Storbritannien national insurance number (NINO)
 Den här typen av känslig information ingår i den nationella identifieringstypen (EU). Det är också tillgängligt som en fristående typ av känslig information.
 
@@ -16871,7 +16871,7 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 - national en #
 - national den 10:e
 
-    
+
 ## <a name="uk-unique-taxpayer-reference-number"></a>Storbritannien Unique Taxpayer-referensnummer
 Den här typen av känslig information kan bara användas i:
 - principer för dataförlustskydd
@@ -16883,22 +16883,22 @@ Den här typen av känslig information kan bara användas i:
 ### <a name="format"></a>Format
 
 10 siffror utan blanksteg och avgränsare
- 
-  
+
+
 ### <a name="pattern"></a>Mönster
 
 10 siffror
-  
+
 ### <a name="checksum"></a>Kontrollsumma
 
 Nej
-  
+
 ### <a name="definition"></a>Definition
 
 En DLP-princip har med medelhög säkerhet identifierat den här typen av känslig information om följande inifrån 300 tecken:
-- Funktionen hittar  `Func_uk_eu_tax_file_number` innehåll som matchar mönstret. 
-- Ett nyckelord  `Keywords_uk_eu_tax_file_number` från hittas. 
-    
+- Funktionen hittar  `Func_uk_eu_tax_file_number` innehåll som matchar mönstret.
+- Ett nyckelord  `Keywords_uk_eu_tax_file_number` från hittas.
+
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
       <Entity id="ad4a8116-0db8-439a-b545-6d967642f0ec" patternsProximity="300" recommendedConfidence="85">
@@ -16965,33 +16965,33 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keyword_usa_bank_account"></a>Keyword_usa_Bank_Account
 
-- Checking Account Number 
-- Checking Account 
-- Checking Account # 
-- Checking Acct Number 
-- Checking Acct # 
-- Checking Acct No. 
-- Checking Account No. 
-- Bankkontonummer 
-- Bankkonto # 
-- Bank Acct Number 
-- Bank Acct # 
-- Bank Acct No. 
-- Bank Account No. 
-- Savings Account Number 
-- Savings Account. 
-- Savings Account # 
-- Savings Acct Number 
-- Savings Acct # 
-- Savings Acct No. 
-- Savings Account No. 
-- Debit Account Number 
-- Debit Account 
-- Debit Account # 
-- Debit Acct Number 
-- Debit Acct # 
-- Debit Acct No. 
-- Debit Account No. 
+- Checking Account Number
+- Checking Account
+- Checking Account #
+- Checking Acct Number
+- Checking Acct #
+- Checking Acct No.
+- Checking Account No.
+- Bankkontonummer
+- Bankkonto #
+- Bank Acct Number
+- Bank Acct #
+- Bank Acct No.
+- Bank Account No.
+- Savings Account Number
+- Savings Account.
+- Savings Account #
+- Savings Acct Number
+- Savings Acct #
+- Savings Acct No.
+- Savings Account No.
+- Debit Account Number
+- Debit Account
+- Debit Account #
+- Debit Acct Number
+- Debit Acct #
+- Debit Acct No.
+- Debit Account No.
 
 ## <a name="us-drivers-license-number"></a>U.S. driver's license number
 
@@ -17044,105 +17044,105 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 
 #### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
-- DL 
-- DLS 
-- CDL 
-- CDLS 
-- ID 
-- IDs 
-- DL # 
-- DLS # 
-- CDL # 
-- CDLS # 
+- DL
+- DLS
+- CDL
+- CDLS
+- ID
+- IDs
+- DL #
+- DLS #
+- CDL #
+- CDLS #
 - ID #
-- IDs # 
-- ID-nummer 
-- ID-nummer 
-- LIC 
-- LIC # 
+- IDs #
+- ID-nummer
+- ID-nummer
+- LIC
+- LIC #
 
 #### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
-- DriverLic 
-- DriverLics 
-- DriverLicense 
-- DriverLicenses 
-- Driver Lic 
-- Driver Lics 
-- Driver License 
-- Driver Licenses 
-- DriversLic 
-- DriversLics 
-- DriversLicense 
-- DriversLicenses 
-- Drivers Lic 
-- Drivers Lics 
-- Drivers License 
-- Drivers Licenses 
-- Driver'Lic 
-- Driver'Lics 
-- Driver'License 
-- Driver'Licenses 
-- Driver' Lic 
-- Driver' Lics 
-- Driver' License 
+- DriverLic
+- DriverLics
+- DriverLicense
+- DriverLicenses
+- Driver Lic
+- Driver Lics
+- Driver License
+- Driver Licenses
+- DriversLic
+- DriversLics
+- DriversLicense
+- DriversLicenses
+- Drivers Lic
+- Drivers Lics
+- Drivers License
+- Drivers Licenses
+- Driver'Lic
+- Driver'Lics
+- Driver'License
+- Driver'Licenses
+- Driver' Lic
+- Driver' Lics
+- Driver' License
 - Driver' Licenses
-- Driver'sLic 
-- Driver'sLics 
-- Driver'sLicense 
-- Driver'sLicenses 
-- Driver's Lic 
-- Driver's Lics 
-- Driver's License 
-- Driver's Licenses 
-- identification number 
-- identification numbers 
-- identification # 
-- id card 
-- id cards 
-- identification card 
-- identification cards 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
-- Driver Lic # 
-- Driver Lics # 
-- Driver License # 
-- Driver Licenses # 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
-- Drivers Lic # 
-- Drivers Lics # 
-- Drivers License # 
-- Drivers Licenses # 
-- Driver'Lic # 
-- Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
-- Driver' Lic # 
-- Driver' Lics # 
-- Driver' License # 
-- Driver' Licenses # 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
-- Driver's Lic # 
-- Driver's Lics # 
-- Driver's License # 
-- Driver's Licenses # 
-- id card # 
-- id cards # 
-- identification card # 
-- identification cards # 
+- Driver'sLic
+- Driver'sLics
+- Driver'sLicense
+- Driver'sLicenses
+- Driver's Lic
+- Driver's Lics
+- Driver's License
+- Driver's Licenses
+- identification number
+- identification numbers
+- identification #
+- id card
+- id cards
+- identification card
+- identification cards
+- DriverLic #
+- DriverLics #
+- DriverLicense #
+- DriverLicenses #
+- Driver Lic #
+- Driver Lics #
+- Driver License #
+- Driver Licenses #
+- DriversLic #
+- DriversLics #
+- DriversLicense #
+- DriversLicenses #
+- Drivers Lic #
+- Drivers Lics #
+- Drivers License #
+- Drivers Licenses #
+- Driver'Lic #
+- Driver'Lics #
+- Driver'License #
+- Driver'Licenses #
+- Driver' Lic #
+- Driver' Lics #
+- Driver' License #
+- Driver' Licenses #
+- Driver'sLic #
+- Driver'sLics #
+- Driver'sLicense #
+- Driver'sLicenses #
+- Driver's Lic #
+- Driver's Lics #
+- Driver's License #
+- Driver's Licenses #
+- id card #
+- id cards #
+- identification card #
+- identification cards #
 
 
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
-- delstatsförkortning (t.ex. "NY") 
+- delstatsförkortning (t.ex. "NY")
 - delstatsnamn (till exempel "New York")
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>U.S. individual taxpayer identification number (ITIN)
@@ -17154,18 +17154,18 @@ Nio siffror som börjar med "9" och innehåller "7" eller "8" som fjärde siffra
 ### <a name="pattern"></a>Mönster
 
 formaterat:
-- siffran "9" 
-- två siffror 
-- blanksteg eller streck 
-- a "7" eller "8" 
-- en siffra 
-- blanksteg eller streck 
+- siffran "9"
+- två siffror
+- blanksteg eller streck
+- a "7" eller "8"
+- en siffra
+- blanksteg eller streck
 - fyra siffror
 
 oformaterad:
-- siffran "9" 
-- två siffror 
-- a "7" eller "8" 
+- siffran "9"
+- två siffror
+- a "7" eller "8"
 - fem siffror
 
 ### <a name="checksum"></a>Kontrollsumma
@@ -17209,18 +17209,18 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
-- taxpayer 
-- tax id 
-- tax identification 
-- itin 
+- taxpayer
+- tax id
+- tax identification
+- itin
 - i.t.i.n.
-- ssn 
-- tin 
-- social security 
-- tax payer 
-- itins 
-- taxid 
-- individual taxpayer 
+- ssn
+- tin
+- social security
+- tax payer
+- itins
+- taxid
+- individual taxpayer
 
 
 ## <a name="us-social-security-number-ssn"></a>U.S. social security number (SSN)
@@ -17302,7 +17302,7 @@ En DLP-princip har låg konfidens för att den har upptäckt den här typen av k
 - SSN #
 - SS #
 - SSID
-   
+
 ## <a name="us--uk-passport-number"></a>U.S. / Storbritannien passnummer
 
 ### <a name="format"></a>Format
@@ -17366,8 +17366,8 @@ En DLP-princip har med medelhög säkerhet identifierat den här typen av känsl
 
 #### <a name="keywords_uk_eu_passport_number"></a>Keywords_uk_eu_passport_number
 
-- brittisk pass 
-- uk passport 
+- brittisk pass
+- uk passport
 
 
 ## <a name="ukraine-passport-domestic"></a>Ukrainas pass inrikes

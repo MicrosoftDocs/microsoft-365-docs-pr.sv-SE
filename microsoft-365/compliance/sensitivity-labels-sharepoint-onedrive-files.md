@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratörer kan aktivera stöd för känslighetsetiketter för Word, Excel och PowerPoint filer i SharePoint och OneDrive.
-ms.openlocfilehash: e123dbd523bdaa648ee66b6ef56ee071b917fd86
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 08ea7c88fffebd4466d81ca18f273281ff74c06a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052981"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286555"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivera känslighetsetiketter för Office-filer i SharePoint och OneDrive
 
@@ -42,7 +42,7 @@ När du har aktivera känslighetsetiketter för Office-filer i SharePoint och On
 
 - Använd Office för webben (Word, Excel, PowerPoint) för att öppna och redigera Office filer som har känslighetsetiketter som använder kryptering. Behörigheterna som tilldelades med krypteringen tillämpas. Du kan också [använda automatisk etikett för](apply-sensitivity-label-automatically.md) dessa dokument.
 
-- Externa användare kan komma åt dokument som är märkta med kryptering med hjälp av gästkonton. Mer information finns i [Stöd för externa användare och märkt innehåll.](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) 
+- Externa användare kan komma åt dokument som är märkta med kryptering med hjälp av gästkonton. Mer information finns i [Stöd för externa användare och märkt innehåll.](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)
 
 - Office 365 eDiscovery har stöd för fullständig textsökning för dessa filer och DLP-principer (Data Loss Prevention) stöder innehåll i dessa filer.
 
@@ -52,6 +52,7 @@ När du har aktivera känslighetsetiketter för Office-filer i SharePoint och On
 > Beteendet SharePoint och OneDrive ändras inte heller för befintliga filer på dessa platser som är märkta med kryptering med en enda Azure-baserad nyckel. För att de här filerna ska dra nytta av de nya funktionerna när du har aktivera känslighetsetiketter för Office-filer i SharePoint och OneDrive måste filerna antingen laddas ned och laddas upp igen eller redigeras.
 
 När du har aktivera känslighetsetiketter för Office-filer i SharePoint och [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) OneDrive finns tre nya granskningshändelser tillgängliga för att övervaka känslighetsetiketter som tillämpas på dokument i SharePoint och OneDrive:
+
 - **Känslighetsetikett använd för fil**
 - **Känslighetsetikett använd för fil är ändrad**
 - **Känslighetsetikett borttagen från fil**
@@ -62,7 +63,7 @@ Titta på följande video (inget ljud) om du vill se de nya funktionerna i prakt
 
 Du kan alltid inaktivera känslighetsetiketter för Office i SharePoint och OneDrive ([avanmäla)](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)när som helst.
 
-Om du för närvarande skyddar dokument i SharePoint med hjälp av SharePoint IRM (Information Rights Management SharePoint) kontrollerar du avsnittet [IRM (Information Rights Management)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) och känslighetsetiketter på den här sidan. 
+Om du för närvarande skyddar dokument i SharePoint med hjälp av SharePoint IRM (Information Rights Management SharePoint) kontrollerar du avsnittet [IRM (Information Rights Management)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) och känslighetsetiketter på den här sidan.
 
 ## <a name="requirements"></a>Krav
 
@@ -73,42 +74,42 @@ Använd OneDrive-synkronisering-appversion 19.002.0121.0008 eller senare på Win
 ## <a name="limitations"></a>Begränsningar
 
 - SharePoint och OneDrive kan inte bearbeta vissa filer som är märkta och krypterade från Office-skrivbordsprogram när dessa filer innehåller PowerQuery-data, data som lagrats med anpassade tillägg eller anpassade XML-delar som egenskaper för försättsblad, innehållstypscheman, anpassad dokumentinformationspanel och anpassade XSN. Den här begränsningen gäller även filer där ett [dokument-ID](https://support.microsoft.com/office/enable-and-configure-unique-document-ids-ea7fee86-bd6f-4cc8-9365-8086e794c984) läggs till när de överförs.
-    
+
     För de här filerna använder du antingen en etikett utan kryptering så att de senare kan öppnas i Office på webben eller instruera användarna att öppna filerna i sina skrivbordsprogram. Filer som bara är etiketterade och krypterade i Office på webben påverkas inte.
 
 - SharePoint och OneDrive av känslighetsetiketter för befintliga filer som du redan har krypterat med hjälp av Azure Information Protection-etiketter. För att funktionerna ska fungera när du har Office känslighetsetiketter i SharePoint och OneDrive utför du följande uppgifter:
-    
+
     1. Kontrollera att du har [migrerat Azure Information Protection-etiketter](/azure/information-protection/configure-policy-migrate-labels) till känslighetsetiketter och [publicerat dem](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) från Microsoft 365 Efterlevnadscenter.
     2. Ladda ned de etiketterade filerna och ladda sedan upp dem till sin ursprungliga plats i SharePoint eller OneDrive.
 
 - SharePoint och OneDrive krypterade filer inte kan bearbeta krypterade filer när etiketten som tillämpat krypteringen har någon av följande [konfigurationer för kryptering:](encryption-sensitivity-labels.md#configure-encryption-settings)
-    - **Låt användare tilldela behörigheter när de använder etiketten** och kryssrutan **Uppmana användare att ange behörigheter i Word, PowerPoint och Excel** är markerad. Den här inställningen kallas ibland för "användardefinierade behörigheter".
-    - **Användaråtkomst till innehåll upphör** har ställts in på ett annat värde än **Aldrig**.
-    - **Kryptering med dubbla nycklar** har valts.
-    
+  - **Låt användare tilldela behörigheter när de använder etiketten** och kryssrutan **Uppmana användare att ange behörigheter i Word, PowerPoint och Excel** är markerad. Den här inställningen kallas ibland för "användardefinierade behörigheter".
+  - **Användaråtkomst till innehåll upphör** har ställts in på ett annat värde än **Aldrig**.
+  - **Kryptering med dubbla nycklar** har valts.
+
     Etiketter med någon av dessa krypteringskonfigurationer visas inte etiketterna för användare i Office för webben. De nya funktionerna kan inte användas med etiketterade dokument som redan har de här krypteringsinställningarna. Exempelvis returneras de här dokumenten inte i sökresultat, även om de uppdateras.
 
 - Av prestandaskäl kan det ta en stund innan kolumnen Känslighet i dokumentbiblioteket kan visas  när du överför eller sparar ett dokument till SharePoint och filens etikett inte använder kryptering. Faktor för den här fördröjningen om du använder skript eller automatisering som är beroende av etikettnamnet i den här kolumnen.
 
-- Användare kan uppleva fördröjningar i att kunna öppna krypterade dokument i följande Spara som-scenario: Om du använder en skrivbordsversion av Office väljer en användare Spara som för ett dokument som har en känslighetsetikett som tillämpar kryptering. Användaren väljer SharePoint eller OneDrive för platsen och försöker sedan direkt öppna det dokumentet i Office för webben. Om tjänsten fortfarande bearbetar krypteringen ser användaren ett meddelande om att dokumentet måste öppnas i skrivbordsappen. Om de försöker igen om några minuter öppnas dokumentet om Office för webben. 
+- Användare kan uppleva fördröjningar i att kunna öppna krypterade dokument i följande Spara som-scenario: Om du använder en skrivbordsversion av Office väljer en användare Spara som för ett dokument som har en känslighetsetikett som tillämpar kryptering. Användaren väljer SharePoint eller OneDrive för platsen och försöker sedan direkt öppna det dokumentet i Office för webben. Om tjänsten fortfarande bearbetar krypteringen ser användaren ett meddelande om att dokumentet måste öppnas i skrivbordsappen. Om de försöker igen om några minuter öppnas dokumentet om Office för webben.
 
 - För krypterade dokument stöds inte utskrift.
 
 - För krypterade dokument som beviljar användare redigeringsbehörighet kan kopiering inte blockeras i webbversioner av Office program.
 
 - Som standard Office skrivbordsappar och mobilappar inte stöd för samtidig redigering för filer som är märkta med kryptering. Dessa appar fortsätter att öppna etiketterade och krypterade filer i exklusivt redigeringsläge.
-    
+
     > [!NOTE]
     > Samtidig redigering stöds nu i förhandsversionen. Mer information finns i [Aktivera samtidig redigering för filer som krypteras med känslighetsetiketter.](sensitivity-labels-coauthoring.md)
 
 - Om en administratör ändrar inställningarna för en publicerad etikett som redan tillämpas på filer som laddats ned till användarnas synkroniseringsklient kanske användarna inte kan spara ändringar som de gör i filen i OneDrive-synkroniseringsmappen. Det här scenariot gäller filer som har etiketten med kryptering, och även när etikettändringen kommer från en etikett som inte använder kryptering på en etikett som tillämpar kryptering. Användarna ser en [röd cirkel med ett felmeddelande med en](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)vit korsikon och uppmanas att spara nya ändringar som en separat kopia. I stället kan de stänga och öppna filen igen, eller använda Office för webben.
 
-- Användare kan uppleva problem när de går offline eller i viloläge när de i stället för att använda Office för webben kan använda skrivbords- och mobilapparna för Word, Excel och PowerPoint. För dessa användare: när de återupptar sin Office-appen-session och försöker spara ändringarna visas ett meddelande om överföringsfel med ett alternativ för att spara en kopia i stället för att spara den ursprungliga filen. 
+- Användare kan uppleva problem när de går offline eller i viloläge när de i stället för att använda Office för webben kan använda skrivbords- och mobilapparna för Word, Excel och PowerPoint. För dessa användare: när de återupptar sin Office-appen-session och försöker spara ändringarna visas ett meddelande om överföringsfel med ett alternativ för att spara en kopia i stället för att spara den ursprungliga filen.
 
 - Dokument som har krypterats på följande sätt kan inte öppnas i Office för webben:
-    - Kryptering som använder en lokal nyckel ("håll ned din egen nyckel" eller HYOK)
-    - Kryptering som tillämpats med Dubbel [nyckelkryptering](double-key-encryption.md)
-    - Kryptering som tillämpats oberoende av en etikett, till exempel genom att direkt tillämpa en mall för rättighetshanteringsskydd.
+  - Kryptering som använder en lokal nyckel ("håll ned din egen nyckel" eller HYOK)
+  - Kryptering som tillämpats med Dubbel [nyckelkryptering](double-key-encryption.md)
+  - Kryptering som tillämpats oberoende av en etikett, till exempel genom att direkt tillämpa en mall för rättighetshanteringsskydd.
 
 - Etiketter som har [konfigurerats för andra](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) språk stöds inte och det visas endast det ursprungliga språket.
 
@@ -125,13 +126,13 @@ Du kan aktivera de nya funktionerna med hjälp av Microsoft 365 Efterlevnadscent
 Det här alternativet är det enklaste sättet att aktivera känslighetsetiketter för SharePoint och OneDrive, men du måste logga in som global administratör för klientorganisationen.
 
 1. Logga in på [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/) som global administratör och gå till   >  **Lösningsinformationsskydd**
-    
-    Om du inte ser det här alternativet direkt väljer du först **Visa alla**. 
+
+    Om du inte ser det här alternativet direkt väljer du först **Visa alla**.
 
 2. Om du ser ett meddelande om att aktivera möjligheten att bearbeta innehåll i Office-onlinefiler väljer **du Aktivera nu:**
-    
+
     ![Knappen Aktivera nu för att aktivera känslighetsetiketter för Office Online](../media/sensitivity-labels-turn-on-banner.png)
-    
+
     Kommandot körs direkt och när sidan uppdateras nästa gång visas inte längre meddelandet eller knappen.
 
 > [!NOTE]
@@ -139,7 +140,7 @@ Det här alternativet är det enklaste sättet att aktivera känslighetsetikette
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Använda PowerShell för att aktivera stöd för känslighetsetiketter
 
-Som ett alternativ till att använda efterlevnadscentret kan du aktivera stöd för känslighetsetiketter med hjälp av [cmdleten Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) från SharePoint Online PowerShell. 
+Som ett alternativ till att använda efterlevnadscentret kan du aktivera stöd för känslighetsetiketter med hjälp av [cmdleten Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) från SharePoint Online PowerShell.
 
 Om du har Microsoft 365 Multi-Geo måste du använda PowerShell för att aktivera det här stödet för alla dina geoplatser.
 
@@ -168,7 +169,7 @@ Innan du kör PowerShell-kommandot för att aktivera känslighetsetiketter för 
 För att aktivera de nya funktionerna använder du [cmdleten Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) med *parametern EnableAIPIntegration:*
 
 1. Använd ett arbets- eller skolkonto med global administratör SharePoint administratörsbehörighet i Microsoft 365 ansluta till SharePoint. Mer information finns i Komma [igång med SharePoint Online Management Shell.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-    
+
     > [!NOTE]
     > Om du har Microsoft 365 Multi-Geo använder du parametern -URL med [Anslut-SPOService](/powershell/module/sharepoint-online/connect-sposervice)och anger webbadressen till webbplatsen SharePoint Online Administration Center för någon av dina geoplatser.
 
@@ -183,7 +184,7 @@ För att aktivera de nya funktionerna använder du [cmdleten Set-SPOTenant](/pow
 
 När du använder känslighetsetiketter med SharePoint och OneDrive bör du tänka på att du måste tillåta replikeringstid när du publicerar nya känslighetsetiketter eller uppdaterar befintliga känslighetsetiketter. Det här är särskilt viktigt för nya etiketter som använder kryptering.
 
-Till exempel: Du skapar och publicerar en ny känslighetsetikett som tillämpar kryptering och den visas mycket snabbt i en användares skrivbordsprogram. Användaren använder etiketten på ett dokument och laddar sedan upp det till SharePoint eller OneDrive. Om märkningsreplikeringen inte har slutförts för tjänsten kommer de nya funktionerna inte att tillämpas på det dokumentet vid uppladdning. Därför returneras inte dokumentet i sökningar eller efter eDiscovery och dokumentet kan inte öppnas i Office för webben.  
+Till exempel: Du skapar och publicerar en ny känslighetsetikett som tillämpar kryptering och den visas mycket snabbt i en användares skrivbordsprogram. Användaren använder etiketten på ett dokument och laddar sedan upp det till SharePoint eller OneDrive. Om märkningsreplikeringen inte har slutförts för tjänsten kommer de nya funktionerna inte att tillämpas på det dokumentet vid uppladdning. Därför returneras inte dokumentet i sökningar eller efter eDiscovery och dokumentet kan inte öppnas i Office för webben.
 
 Följande ändringar replikeras inom en timme: Nya och borttagna känslighetsetiketter och principinställningar för känslighetsetiketter som innehåller vilka etiketter som finns i principen.
 
@@ -197,7 +198,7 @@ Eftersom replikeringsfördröjningen endast är en timme för nya känslighetset
 
 Känslighetsetiketter ger i jämförelse skyddsinställningarna för visuella markeringar (sidhuvuden, sidfötter, vattenstämplar) utöver kryptering. Krypteringsinställningarna stödjer alla [](/azure/information-protection/configure-usage-rights) användningsrättigheter för att begränsa vad användarna kan göra med innehållet, och samma känslighetsetiketter stöds för [många scenarier.](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels) Om du använder samma skyddsmetod med konsekventa inställningar för olika arbetsbelastningar och appar får du en enhetlig skyddsstrategi.
 
-Du kan emellertid använda båda skyddslösningarna tillsammans och beteendet är följande: 
+Du kan emellertid använda båda skyddslösningarna tillsammans och beteendet är följande:
 
 - Om du laddar upp en fil med känslighetsetikett som tillämpar kryptering kan SharePoint inte bearbeta innehållet i de här filerna så samtidig sökning, eDiscovery, DLP och sökning stöds inte för dessa filer.
 
@@ -224,17 +225,17 @@ InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
 
 Sökningen hittar inte etiketterade dokument i en komprimerad fil, till exempel en .zip fil.
 
-Om du vill få GUID:er för dina känslighetsetiketter använder du cmdleten [Get-Label:](/powershell/module/exchange/get-label)    
+Om du vill få GUID:er för dina känslighetsetiketter använder du cmdleten [Get-Label:](/powershell/module/exchange/get-label)
 
-1. Först ansluter [du till Office 365 Security & Compliance Center PowerShell.](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) 
-   
-    I en PowerShell-session som du kör som administratör kan du till exempel logga in med ett globalt administratörskonto.    
+1. Först ansluter [du till Office 365 Security & Compliance Center PowerShell.](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
 
-2. Kör sedan följande kommando:  
+    I en PowerShell-session som du kör som administratör kan du till exempel logga in med ett globalt administratörskonto.
 
-    ```powershell   
-    Get-Label |ft Name, Guid    
-    ``` 
+2. Kör sedan följande kommando:
+
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
 
 Mer information om hur du använder hanterade egenskaper [finns i Hantera sökschemat i SharePoint](/sharepoint/manage-search-schema).
 
@@ -242,7 +243,7 @@ Mer information om hur du använder hanterade egenskaper [finns i Hantera söksc
 
 Det kan hända sällsynta tillfällen när en SharePoint administratör behöver ta bort kryptering från ett dokument som lagras i SharePoint. Alla användare som [](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) har behörighetshanteringsanvändningen för Export eller Fullständig kontroll tilldelat till sig för dokumentet kan ta bort kryptering som tillämpats av Azure Rights Management-tjänsten från Azure Information Protection. Till exempel kan användare med någon av dessa användningsrättigheter ersätta en etikett som tillämpar kryptering med en etikett utan kryptering. En superanvändare [kan också ladda](/azure/information-protection/configure-super-users) ned filen och spara en lokal kopia utan kryptering.
 
-Alternativt kan en global administratör eller [SharePoint-administratör](/sharepoint/sharepoint-admin-role) köra cmdleten [Unlock-SPOSensitivityLabelEncryptedFile,](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) som tar bort både känslighetsetiketten och krypteringen. Den här cmdleten körs även om administratören inte har åtkomstbehörighet till webbplatsen eller filen, eller om Azure Rights Management-tjänsten inte är tillgänglig. 
+Alternativt kan en global administratör eller [SharePoint-administratör](/sharepoint/sharepoint-admin-role) köra cmdleten [Unlock-SPOSensitivityLabelEncryptedFile,](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) som tar bort både känslighetsetiketten och krypteringen. Den här cmdleten körs även om administratören inte har åtkomstbehörighet till webbplatsen eller filen, eller om Azure Rights Management-tjänsten inte är tillgänglig.
 
 Till exempel:
 

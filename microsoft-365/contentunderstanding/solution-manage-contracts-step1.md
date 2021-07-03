@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Lär dig hur du använder SharePoint Syntex identifiera kontraktsfiler och extrahera data med hjälp av en Microsoft 365 lösning.
-ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: b73f7b96a1f1a9159770fb1bfb20bf2718f08c07
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054503"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287359"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Steg 1. Använda SharePoint Syntex för att identifiera kontraktsfiler och extrahera data
 
@@ -25,7 +25,9 @@ Din organisation behöver ett sätt att identifiera och klassificera alla kontra
 
 ## <a name="overview-of-the-process"></a>Översikt över processen
 
-[Dokument förstå](document-understanding-overview.md) använder artificiell intelligens (AI) modeller för att automatisera klassificering av filer och extrahering av information. Dokument förstå modeller är också optimala för att extrahera information från ostrukturerade och semi-strukturerade dokument där den information du behöver inte finns i tabeller eller formulär, till exempel kontrakt.
+[Dokument förstå](document-understanding-overview.md) använder artificiell intelligens (AI) modeller för att automatisera klassificering av filer och extrahering av information. Dokument förstå modeller är också optimala för att extrahera information från ostrukturerade och semi-strukturerade dokument där den information du behöver inte finns i tabeller eller formulär, till exempel kontrakt. 
+
+Dokument för dokumenttolkning använder optisk teckenläsning (OCR) för att skanna PDF-filer, bilder och TIFF-filer, både när du utbildar en modell med exempelfiler och när du kör modellen mot filer i ett dokumentbibliotek.
 
 1. Först måste du hitta minst fem exempelfiler som du kan använda för att "utbilda" modellen för att söka efter egenskaper som är specifika för den innehållstyp som du försöker identifiera (ett kontrakt). 
 

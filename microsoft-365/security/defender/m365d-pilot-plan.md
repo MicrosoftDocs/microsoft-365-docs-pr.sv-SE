@@ -1,7 +1,7 @@
 ---
-title: Planera ditt pilotprojekt Microsoft 365 Defender-projekt
-description: Planera din pilotplan Microsoft 365 Defender-projektet med intressenter för att hantera förväntningar och säkerställa ett lyckat resultat.
-keywords: Microsoft 365 Defender pilottest, planera pilottest Microsoft 365 Defender-projekt, utvärdera Microsoft 365 Defender i produktion, Microsoft 365 Defender-pilotprojekt, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatisk undersökning och åtgärd, avancerad sökning
+title: Planera ditt Microsoft 365 Defender projekt
+description: Planera ditt pilotprojekt med Microsoft 365 Defender intressenter för att hantera förväntningar och säkerställa ett lyckat resultat.
+keywords: Microsoft 365 Defender pilottest, planera Microsoft 365 Defender-projekt, utvärdera Microsoft 365 Defender i produktion, Microsoft 365 Defender-pilotprojekt, cybersäkerhet, avancerade beständiga hot, företagssäkerhet, enheter, enheter, identitet, användare, data, program, incidenter, automatiserad undersökning och åtgärd, avancerad sökning
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,14 +21,14 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 98f0c91a51cc2b73cc26e6fb53143a417a7a147e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 6a52df8035ce6f84770a2d06c3b8c127e426622e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932553"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286003"
 ---
-# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planera ditt pilotprojekt Microsoft 365 Defender-projekt 
+# <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planera ditt Microsoft 365 Defender projekt 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -53,6 +53,7 @@ I den här guiden får du hjälp med att planera ditt pilotprojekt.
 ## <a name="scope"></a>Omfattning
 
 Pilotens omfattning avgör hur omfattande testet ska vara, baserat på din miljö och godtagbara testmetoder. Här är några exempel på omfattningar att tänka på:
+
 - Utvecklings- eller testmiljö som omfattar slutpunkter, servrar och domänkontrollanter.
 - Produktionsmiljö med Microsoft 365, Azure, Active Directory-tjänster, slutpunkter och servrar
 
@@ -64,6 +65,7 @@ Vilka typer av operativsystem som ska utvärderas bör också definieras utifrå
 ## <a name="use-cases"></a>Användningsfall
 
 Användningsfall representerar instruktioner om hur verktyget som testas är avsett att användas av de avsedda användarna. De kan utformas som användarberättelser ur perspektiv hos en viss person, till exempel som SOC-analytiker. Till exempel:
+
 - Som SOC-analytiker behöver jag visa, korrelera, bedöma och hantera aviseringar och händelser för olika enheter, användare och postlådor i nätverket. [Incidenthantering]
 - Som SOC-analytiker måste jag ha verktyget och processen för att automatiskt undersöka och svara på skadliga händelser i nätverket. [Automatisk IR]
 - Som SOC-analytiker måste jag söka efter data från min miljö för att hitta kända och potentiella hot och misstänkta aktiviteter. [Advanced Hunting]
@@ -76,11 +78,11 @@ Från listan över användningsfall kan du börja skapa krav. Kraven omfattar fu
 
 ## <a name="test-plan"></a>Testplan
 
-Olika testmetoder kan vara lämpliga beroende på kraven. Om kravet till exempel är att utvärdera hur effektiv automatiserad åtgärd är, måste testplanen innehålla steg för att generera beteendet som utlöser en automatiserad åtgärd inom Microsoft 365 Defender. Om kravet är att identifiera ett visst beteende eller en viss attack kan testet innebära fler steg. Poängen är att ha en plan för att testa mot dina krav korrekt.
+Olika testmetoder kan vara lämpliga beroende på kraven. Om kravet till exempel är att utvärdera hur effektiv Automatiserad åtgärd är, måste testplanen innehålla steg för att generera beteendet som utlöser en automatiserad åtgärd inom Microsoft 365 Defender. Om kravet är att identifiera ett visst beteende eller en viss attack kan testet innebära fler steg. Poängen är att ha en plan för att testa mot dina krav korrekt.
 
 ## <a name="success-criteria"></a>Kriterier för framgång
 
-Framgångskriterierna är i slutänden den stapel som mäter mot det du testar. Oavsett om du testar Microsoft 365 Defender (eller någon annan teknik för den delen) mot andra verktyg eller för sig själv, måste det finnas några kvantifierbara villkor för att fastställa vilket värde verktyget tillhandahåller. Utifrån omfattningen, kraven och testplanen avgör framgångskriterierna hur testet ska betygstesta. Det bör vara mindre godkänt eller misslyckat och mer av en viktad poäng baserat på dina behov. Ett verktyg kan till exempel behöva poäng över 80 % i vissa kritiska områden som du identifierar.
+Framgångskriterierna är i slutänden den stapel som mäter mot det du testar. Oavsett om du testar Microsoft 365 Defender (eller någon annan teknik för den delen) mot andra verktyg eller för sig, måste det finnas några kvantifierbara villkor för att fastställa vilket värde verktyget tillhandahåller. Utifrån omfattningen, kraven och testplanen avgör framgångskriterierna hur testet ska betygstesta. Det bör vara mindre godkänt eller misslyckat och mer av en viktad poäng baserat på dina behov. Ett verktyg kan till exempel behöva poäng över 80 % i vissa kritiska områden som du identifierar.
 
 ## <a name="scorecard"></a>Styrkort
 
@@ -88,12 +90,11 @@ Ett sätt att samla alla delar av planen kan vara att skapa ett styrkort. Se ett
 
 | Användningsfall | Krav | Konfigurationskrav | Testplan | Förväntat resultat | Teststatus | Poäng | Kommentar |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|Incidenthantering|- Microsoft 365 Defender  </br></br>- Microsoft Defender för identitet </br></br>- Microsoft Defender för Slutpunkt </br></br>- Microsoft Cloud App Security (valfritt)|Mer information [finns i](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) förutsättningarna för att förbereda, konfigurera och konfigurera |[Simulera attack](m365d-pilot-simulate.md) <br></br>[Undersök incidenten](./m365d-pilot-simulate.md#investigate-an-incident) |En verksamhet kan förstå händelsens omfattning och påverkan och hur den hanteras||||
+|Incidenthantering|- Microsoft 365 Defender </br></br>- Microsoft Defender för identitet </br></br>- Microsoft Defender för Slutpunkt </br></br>- Microsoft Cloud App Security (valfritt)|Mer information [finns i](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) förutsättningarna för att förbereda, konfigurera och konfigurera |[Simulera attack](m365d-pilot-simulate.md) <br></br>[Undersök incidenten](./m365d-pilot-simulate.md#investigate-an-incident) |En verksamhet kan förstå händelsens omfattning och påverkan och hur den hanteras||||
 |AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender för identitet </br></br>- Microsoft Defender för Slutpunkt |Mer information [finns i](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) förutsättningarna för att förbereda, konfigurera och konfigurera <br>Aktivera AutoIR  |[Simulera attack](m365d-pilot-simulate.md) <br></br>[Automatiserad undersökning](m365d-pilot-simulate.md#automated-investigation-and-remediation) |Aviseringar och incidenter åtgärdas automatiskt av Microsoft 365 Defender||||
 |Avancerad jakt|- Microsoft 365 Defender </br></br>- Microsoft Defender för Slutpunkt </br></br>-Microsoft Defender för Office 365 |Mer information [finns i](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) förutsättningarna för att förbereda, konfigurera och konfigurera|[Avancerat sökningsscenario](./m365d-pilot-simulate.md#advanced-hunting-scenario) |Funktioner kan hitta data via avancerad sökning, pivotering till berörda enheter och genom att skapa anpassade identifieringar||||
 
-
-
 ## <a name="next-step"></a>Nästa steg
-|![Förberedelsefas](../../media/mtp/prep.png) <br>[Förberedelsefas](prepare-m365d-eval.md) | Förbereda din Microsoft 365 Defender-pilotmiljö
+
+|![Förberedelsefas](../../media/mtp/prep.png) <br>[Förberedelsefas](prepare-m365d-eval.md) | Förbereda din Microsoft 365 Defender pilotmiljö
 |:-------|:-----|

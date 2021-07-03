@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9a7ad1241ce73bb9b68e173faa9433c7326e14e5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933955"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286939"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Konfigurera aviseringsmeddelanden i Microsoft Defender för Slutpunkt
 
@@ -31,7 +31,7 @@ ms.locfileid: "51933955"
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+> Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 Du kan konfigurera Defender för Endpoint så att e-postaviseringar skickas till vissa mottagare för nya aviseringar. Med den här funktionen kan du identifiera en grupp personer som omedelbart informeras och kan agera på aviseringar utifrån deras allvarlighetsgrad.
 
@@ -46,7 +46,6 @@ Endast användare som tilldelats rollen Global administratör kan hantera meddel
 
 E-postmeddelandet innehåller grundläggande information om aviseringen och en länk till portalen där du kan undersöka frågan ytterligare.
 
-
 ## <a name="create-rules-for-alert-notifications"></a>Skapa regler för aviseringar
 Du kan skapa regler som bestämmer enheter och allvarlighetsgrad för aviseringar för att skicka e-postaviseringar till och aviseringsmottagarna.
 
@@ -60,15 +59,15 @@ Du kan skapa regler som bestämmer enheter och allvarlighetsgrad för aviseringa
     - **Ta med organisationsnamn** – Ange kundens namn som visas i e-postmeddelandet.
     - **Inkludera klientspecifik portallänk – Lägger** till en länk med klientorganisations-ID:t för att tillåta åtkomst till en viss klientorganisation.
     - **Ta med enhetsinformation** – Innehåller enhetens namn i e-postaviseringstexten.
-    
-        >[!NOTE]
+
+        > [!NOTE]
         > Den här informationen kan bearbetas av mottagarens e-postservrar som inte finns på den geografiska plats som du har valt för Defender för slutpunktsdata.
 
     - **Enheter** – Välj om du vill meddela mottagare för aviseringar på alla enheter (endast rollen Global administratör) eller för valda enhetsgrupper. Mer information finns i Skapa [och hantera enhetsgrupper](machine-groups.md).
     - **Aviserings allvarlighetsgrad** – välj en allvarlighetsnivå för aviseringen.
 
 4. Klicka på **Nästa**.
-    
+
 5. Ange mottagarens e-postadress och klicka sedan på **Lägg till mottagare.** Du kan lägga till flera e-postadresser.
 
 6. Kontrollera att e-postmottagarna kan få e-postaviseringar genom att **välja Skicka testmeddelande**.
@@ -76,12 +75,12 @@ Du kan skapa regler som bestämmer enheter och allvarlighetsgrad för aviseringa
 7. Klicka **på Spara meddelanderegel.**
 
 ## <a name="edit-a-notification-rule"></a>Redigera en aviseringsregel
+
 1. Välj den aviseringsregel som du vill redigera.
 
 2. Uppdatera informationen på fliken Allmänt och Mottagare.
 
 3. Klicka **på Spara meddelanderegel.**
-
 
 ## <a name="delete-notification-rule"></a>Ta bort meddelanderegel
 
@@ -89,8 +88,8 @@ Du kan skapa regler som bestämmer enheter och allvarlighetsgrad för aviseringa
 
 2. Klicka på **Ta bort**.
 
-
 ## <a name="troubleshoot-email-notifications-for-alerts"></a>Felsöka e-postaviseringar för aviseringar
+
 Det här avsnittet innehåller en lista över olika problem som kan uppstå när du använder e-postaviseringar för aviseringar.
 
 **Problem:** Avsedd mottagare rapporterar att de inte får aviseringarna.
@@ -102,5 +101,6 @@ Det här avsnittet innehåller en lista över olika problem som kan uppstå när
 3. Kontrollera dina e-postprogramsregler som kanske fångar och flyttar din Defender för slutpunkts-e-postaviseringar.
 
 ## <a name="related-topics"></a>Relaterade ämnen
+
 - [Uppdatera inställningar för datalagring](data-retention-settings.md)
 - [Konfigurera avancerade funktioner](advanced-features.md)

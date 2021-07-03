@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: Granskningsloggning för postlådor är aktiverat som standard i Microsoft 365 (kallas även standardgranskning av postlådor eller postlådegranskning på som standard). Det innebär att vissa åtgärder som utförs av postlådeägare, ombud och administratörer loggas automatiskt i en granskningslogg för postlådor, där du kan söka efter aktiviteter som utförs för postlådan.
-ms.openlocfilehash: 56207a21d9a13edb04a07234764257d3c27f2d0f
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: f74cb23a029d4710a19aeb18999169f6adc636a4
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226785"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287035"
 ---
 # <a name="manage-mailbox-auditing"></a>Hantera postlådegranskning
 
@@ -111,7 +111,7 @@ I följande tabell beskrivs de postlådeåtgärder som är tillgängliga i grans
 |**MailboxLogin**|Användaren loggade in i postlådan.|||![Bockmarkering](../media/checkmark.png)|
 |**MailItemsAccessed**|**Obs!** Det här värdet är endast tillgängligt för användare av tilläggsprenumerationen E5 eller E5 för efterlevnad. Mer information finns i [Konfigurera avancerad granskning i Microsoft 365](set-up-advanced-audit.md). <p> E-postdata används av e-postprotokoll och -klienter.|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**Obs!** Det här värdet är endast tillgängligt för E3-användare (användare utan tilläggsprenumerationer för E5 eller E5 för efterlevnad). <p> Ett meddelande visades i förhandsgranskningsfönstret eller öppnades av en administratör.|![Bockmarkering](../media/checkmark.png)|||
-|**ModifyFolderPermissions**|Även om det här värdet accepteras som en postlådeåtgärd ingår det redan i åtgärden **UpdateFolderPermissions** och granskas inte separat. Använd med andra ord inte det här värdet.|||||
+|**ModifyFolderPermissions**|Även om det här värdet accepteras som en postlådeåtgärd ingår det redan i åtgärden **UpdateFolderPermissions** och granskas inte separat. Använd med andra ord inte det här värdet.||||
 |**Move**|Ett meddelande flyttades till en annan mapp.|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
 |**MoveToDeletedItems**|Ett meddelande togs bort och flyttades till mappen Borttaget.|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|![Bockmarkering](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Ett objekt som märks som en post togs bort mjukt (flyttades till mappen Återställningsbara objekt). Objekt som har etiketter som poster kan inte tas bort permanent (rensas från mappen för permanent borttagna objekt).|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
@@ -311,7 +311,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 Du kan för närvarande inte inaktivera granskning av postlådor för specifika postlådor när postlådegranskning är aktiverad som standard i din organisation. Till exempel ignoreras *inställningen för postlådeegenskapen AuditEnabled* **till** False.
 
-Du kan dock fortfarande använda cmdleten **Set-MailboxAuditBypassAssociation** i Exchange Online  PowerShell för att förhindra att några och alla postlådeåtgärder från angivna användare loggas, oavsett var åtgärderna sker. Ett exempel:
+Du kan dock fortfarande använda cmdleten **Set-MailboxAuditBypassAssociation** i Exchange Online  PowerShell för att förhindra att några och alla postlådeåtgärder från angivna användare loggas, oavsett var åtgärderna sker. Till exempel:
 
 - Åtgärder som utförs av de förbikopplade användarna loggas inte.
 - Ombudsåtgärder som utförts av förbikopplingsanvändare i andra användares postlådor (inklusive delade postlådor) loggas inte.
@@ -338,10 +338,10 @@ Värdet **True anger** att granskningsloggning för postlådor kringgås för an
   Om du vill hämta granskningsloggposter för postlådor för användare utan E5-licenser kan du:
 
   - Aktivera postlådegranskning manuellt för enskilda postlådor (kör kommandot `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` ). När du har gjort det kan du använda granskningsloggsökningar i Säkerhets- & eller via API:t Office 365 för hanteringsaktivitet.
-  
+
     > [!NOTE]
     > Om postlådegranskning redan verkar vara aktiverad för postlådan, men sökningarna inte returnerar några resultat, så kan du ändra värdet för parametern _AuditEnabled_ till och `$false` sedan tillbaka till `$true` .
-  
+
   - Använd följande cmdlets i Exchange Online PowerShell:
     - [Search-MailboxAuditLog för](/powershell/module/exchange/search-mailboxauditlog) att söka i granskningsloggen för postlådor för specifika användare.
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) för att söka i granskningsloggen för postlådor för specifika användare och få resultatet skickat via e-post till vissa mottagare.

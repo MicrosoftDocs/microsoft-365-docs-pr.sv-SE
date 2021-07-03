@@ -1,6 +1,6 @@
 ---
 title: Api för uppdatering av incident
-description: Lär dig hur du uppdaterar incidenter med Microsoft 365 Defender API
+description: Lär dig hur du uppdaterar incidenter med hjälp Microsoft 365 Defender API
 keywords: uppdatering, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861509"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287825"
 ---
 # <a name="update-incidents-api"></a>API för uppdatering av incidenter
 
@@ -67,14 +67,14 @@ Delegerat (arbets- eller skolkonto) | Incident.ReadWrite | Läs- och skrivincide
 PATCH /api/incidents/{id}
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 -|-|-
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
-Innehållstyp | Sträng | application/json. **Obligatoriskt.**
+Content-Type | Sträng | application/json. **Obligatoriskt.**
 
-## <a name="request-body"></a>Begärans brödtext
+## <a name="request-body"></a>Frågebrödtext
 
 Ange värden för fälten som ska uppdateras i brödtexten för begäran. Befintliga egenskaper som inte finns i begärans brödtext bibehåller sina värden, såvida de inte behöver beräknas om på grund av ändringar av relaterade värden. För bästa prestanda bör du utelämna befintliga värden som inte har ändrats.
 
@@ -127,7 +127,7 @@ Här är ett exempel på begäran.
 
 ## <a name="related-articles"></a>Relaterade artiklar
 
-- [Komma åt Microsoft 365 Defender-API:er](api-access.md)
+- [Få åtkomst Microsoft 365 Defender API:er](api-access.md)
 - [Läs mer om API-begränsningar och licensiering](api-terms.md)
 - [Förstå felkoder](api-error-codes.md)
 - [API:er för tillbud](api-incident.md)

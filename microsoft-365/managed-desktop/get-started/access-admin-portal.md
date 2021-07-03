@@ -1,6 +1,6 @@
 ---
 title: Tillgång till administrationsportalen
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 description: Hur du hittar och använder administrationsportalen, inklusive att kontrollera åtkomsten till den.
 ms.service: m365-md
 ms.author: jaimeo
@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2facd506497cbdab42f2d8b051fbd50f82432927
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 345ae56a1c328dad7b777468dd03bcab40f9b4e1
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770607"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286879"
 ---
 # <a name="access-the-admin-portal"></a>Få åtkomst till administrationsportalen
 
@@ -61,12 +61,12 @@ Om du behöver hjälp med att tilldela Azure Active Directory kan du läsa behö
 ### <a name="assigning-built-in-roles-to-user"></a>Tilldela inbyggda roller till användaren
 
 För enkel hantering av inbyggda roller finns det en säkerhetsgrupp för varje anpassad roll med namnet "Roller på en modern arbetsplats _–_ rollnamn"(t.ex. "Roller på modern arbetsplats – säkerhetshanteraren"). Så här tilldelar du användare till någon av dessa säkerhetsgrupper:
-1.  Gå till Microsoft Endpoint Manager portalen.
-2.  Välj **Grupper** till vänster.
-3.  Sök efter **Roller på den moderna** arbetsplatsen och välj sedan den grupp som är kopplad till den roll som du vill tilldela. 
-4.  Välj **Medlemmar** till vänster och välj sedan **+ Lägg till medlemmar** i kommandofältet.
-5.  Ange e-postadressen till den person som läggs till. Om de är gäster måste du bjuda in dem innan du kan tilldela gruppen.
-6.  Välj **Välj** längst ned.
+1. Gå till Microsoft Endpoint Manager portalen.
+2. Välj **Grupper** till vänster.
+3. Sök efter **Roller på den moderna** arbetsplatsen och välj sedan den grupp som är kopplad till den roll som du vill tilldela. 
+4. Välj **Medlemmar** till vänster och välj sedan **+ Lägg till medlemmar** i kommandofältet.
+5. Ange e-postadressen till den person som läggs till. Om de är gäster måste du bjuda in dem innan du kan tilldela gruppen.
+6. Välj **Välj** längst ned.
 
 > [!NOTE]
 > Kapslade säkerhetsgrupper för rolltilldelning stöds inte för närvarande. 
@@ -74,6 +74,7 @@ För enkel hantering av inbyggda roller finns det en säkerhetsgrupp för varje 
 ### <a name="assigning-built-in-roles-to-groups"></a>Tilldela inbyggda roller till grupper
 
 Om du behöver tilldela en eller flera av de inbyggda rollerna till en befintlig grupp gör du så här:
+
 1. Gå till [portal.azure.com](https://portal.azure.com/).
 2. Sök efter och öppna **Enterprise-program.**
 3. Ändra **programtypsfiltret** till _Microsoft-program_ och välj sedan **Använd**.

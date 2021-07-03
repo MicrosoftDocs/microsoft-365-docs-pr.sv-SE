@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105692"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286963"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Introducera Windows 10 enheter med grupprincip 
 
@@ -36,28 +36,25 @@ ms.locfileid: "53105692"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
-
 > [!NOTE]
 > Om du vill använda grupprincipuppdateringar (GP) för att distribuera paketet måste du använda Windows Server 2008 R2 eller senare.
-> 
+>
 > För Windows Server 2019 kan du behöva ersätta NT AUTHORITY\Well-Known-System-Account med NT AUTHORITY\SYSTEM för den XML-fil som grupprincipinställning skapar.
 
 ## <a name="onboard-devices-using-group-policy"></a>Registrera enheter med grupprinciper
 
 [![Bild av PDF-filen som visar de olika distributionssökvägarna](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
-Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) se de olika sökvägarna i distribuera Defender för Endpoint. 
-
-
+Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) se de olika sökvägarna i distribuera Defender för Endpoint.
 
 1. Öppna filen för GP.zip konfigurationspaket *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för registrering av tjänster. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
- 
+
     1. I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**.
 
     1. Välj Windows 10 som operativsystem.
-    
+
     1. Välj **Grupprincip i** fältet **Distributionsmetod.**
-    
+
     1. Klicka **på Ladda ned** paket och spara .zip filen.
 
 2. Extrahera innehållet i filen .zip till en delad, skrivskyddad plats som kan nås av enheten. Du bör ha en mapp med namnet *OptionalParamsPolicy* och filen *WindowsDefenderATPOnboardingScript.cmd*.
@@ -76,7 +73,7 @@ Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public
 
 9. Klicka **på OK** och stäng alla öppna GPMC-fönster.
 
->[!TIP]
+> [!TIP]
 > När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att enheten är korrekt onboarded till tjänsten. Mer information finns i Köra [ett identifieringstest på en nyligen onboarded Defender för Slutpunkt-enhet](run-detection-test.md).
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Ytterligare Defender för konfigurationsinställningar för slutpunkt
@@ -85,31 +82,31 @@ För varje enhet kan du ange om exempel kan samlas in från enheten när en beg�
 Du kan använda Grupprincip (GP) för att konfigurera inställningar, till exempel inställningar för exempeldelningen som används i funktionen djupanalys.
 
 ### <a name="configure-sample-collection-settings"></a>Konfigurera exempelsamlingsinställningar
-1.  Kopiera följande filer från konfigurationspaketet på GP-hanteringsenheten:
+
+1. Kopiera följande filer från konfigurationspaketet på GP-hanteringsenheten:
 
     - Kopiera _AtpConfiguration.admx_ till _C: \\ Windows \\ PolicyDefinitions_
 
     - Kopiera _AtpConfiguration.adml_ till _C: \\ Windows \\ PolicyDefinitions \\ en-US_
 
     Om du använder en [central lagring för administrativa mallar för grupprinciper](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)kopierar du följande filer från konfigurationspaketet:
-    
+
     - Kopiera _AtpConfiguration.admx till_ _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ Policies \\ PolicyDefinitions_
 
     - Kopiera _AtpConfiguration.adml_ till _\\ \\ \<forest.root\> \\ SysVol \\ \<forest.root\> \\ Policies \\ PolicyDefinitions \\ en-US_
 
-2.  Öppna konsolen [grupprinciphantering,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)högerklicka på det GPO du vill konfigurera och klicka på **Redigera.**
+2. Öppna konsolen [grupprinciphantering,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)högerklicka på det GPO du vill konfigurera och klicka på **Redigera.**
 
-3.  Gå till **Datorkonfiguration i redigeraren** för **grupprinciphantering.**
+3. Gå till **Datorkonfiguration i redigeraren** för **grupprinciphantering.**
 
-4.  Klicka **på Principer** och sedan på Administrativa **mallar.**
+4. Klicka **på Principer** och sedan på Administrativa **mallar.**
 
-5.  Klicka **Windows på komponenter** och Windows Defender på **SmartScreen.**
+5. Klicka **Windows på komponenter** och Windows Defender på **SmartScreen.**
 
-6.  Välj för att aktivera eller inaktivera exempeldelning från dina enheter.
+6. Välj för att aktivera eller inaktivera exempeldelning från dina enheter.
 
->[!NOTE]
+> [!NOTE]
 > Om du inte anger något värde är standardvärdet att aktivera exempelsamling.
-
 
 ## <a name="other-recommended-configuration-settings"></a>Andra rekommenderade konfigurationsinställningar
 
@@ -121,39 +118,39 @@ Alla principer finns under `Computer Configuration\Policies\Administrative Templ
 
 **Principplats:** \Windows Components\Windows Defender ATP
 
-Princip | Inställning 
+Princip | Inställning
 :---|:---
-Aktivera\Inaktivera exempelsamling|   Aktiverad – "Aktivera exempelsamling på datorer" markerat
+Aktivera\Inaktivera exempelsamling| Aktiverad – "Aktivera exempelsamling på datorer" markerat
 
-<br/>
+<br>
 
 **Principplats:** \Windows Components\Microsoft Defender Antivirus
 
-Princip | Inställning 
+Princip | Inställning
 :---|:---
 Konfigurera identifiering för potentiellt oönskade program | Aktiverad, Blockera
 
-<br/>
+<br>
 
 **Policyplats:** \Windows Components\Microsoft Defender Antivirus\MAPS
 
-Princip | Inställning 
+Princip | Inställning
 :---|:---
 Ansluta till Microsoft MAPS | Aktiverade, avancerade KARTOR
 Skicka filexempel när ytterligare analys krävs | Aktiverad, Skicka säkra exempel
 
-<br/>
+<br>
 
 **Principplats:** \Windows Components\Microsoft Defender Antivirus\Real-time Protection
 
-Princip | Inställning 
+Princip | Inställning
 :---|:---
 Inaktivera realtidsskydd|Inaktiverad
 Aktivera beteendeövervakning|Aktiverad
 Genomsöka alla nedladdade filer och bifogade filer|Aktiverad
 Övervaka fil- och programaktivitet på datorn|Aktiverad
 
-<br/>
+<br>
 
 **Policyplats:** \Windows Components\Microsoft Defender Antivirus\Scan
 
@@ -163,8 +160,7 @@ Princip | Inställning
 :---|:---
 Sök efter den senaste säkerhetsinformation om virus och spionprogram innan du kör en schemalagd sökning |Aktiverad
 
-
-<br/>
+<br>
 
 **Policyplats:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
@@ -182,15 +178,12 @@ Hämta den aktuella listan med GUID för att minska attackytan från Anpassa min
 
    ![Bild av konfiguration för att minska attackytan](images/asr-guid.png)
 
-
-
-Princip | Inställning 
+Princip | Inställning
 :---|:---
 Konfigurera reglerad mappåtkomst| Aktiverat, granskningsläge
 
-
-
 ## <a name="offboard-devices-using-group-policy"></a>Offboard-enheter med grupprincip
+
 Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar efter det datum då det laddades ned. Utgångna offboarding-paket som skickats till en enhet kommer att avvisas. När du laddar ned ett offboarding-paket meddelas du om paketens utgångsdatum och det inkluderas också i paketnamnet.
 
 > [!NOTE]
@@ -201,7 +194,7 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
     1. I navigeringsfönstret väljer du **Inställningar**  >  **Offboarding**.
 
     1. Välj Windows 10 som operativsystem.
-    
+
     1. Välj **Grupprincip i** fältet **Distributionsmetod.**
 
     1. Klicka **på Ladda ned** paket och spara .zip filen.
@@ -225,11 +218,12 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
 > [!IMPORTANT]
 > Offboarding gör att enheten slutar skicka sensordata till portalen men data från enheten, inklusive referens till aviseringar som den haft kommer att behållas i upp till 6 månader.
 
-
 ## <a name="monitor-device-configuration"></a>Övervaka enhetskonfiguration
+
 Med Grupprincip finns det inte något alternativ för att övervaka distribution av principer på enheter. Övervakning kan utföras direkt i portalen eller med hjälp av de olika distributionsverktygen.
 
 ## <a name="monitor-devices-using-the-portal"></a>Övervaka enheter med hjälp av portalen
+
 1. Gå till [Microsoft Defender Säkerhetscenter](https://securitycenter.windows.com/).
 2. Klicka **på listan Enheter.**
 3. Kontrollera att enheter visas.
@@ -237,8 +231,8 @@ Med Grupprincip finns det inte något alternativ för att övervaka distribution
 > [!NOTE]
 > Det kan ta flera dagar innan enheter börjar visas i **listan Enheter.** Det inkluderar den tid det tar för principerna att distribueras till enheten, den tid det tar innan användaren loggar in och den tid det tar för slutpunkten att starta rapporteringen.
 
-
 ## <a name="related-topics"></a>Relaterade ämnen
+
 - [Introducera Windows 10 enheter med Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter](configure-endpoints-mdm.md)
 - [Registrera Windows 10-enheter med ett lokalt skript](configure-endpoints-script.md)

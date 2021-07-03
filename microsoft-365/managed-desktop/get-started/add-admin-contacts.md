@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ba4f1b0e4b2e00334dbffb4bf0aa9edb1b8c5622
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984706"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286927"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Lägga till och verifiera administratörskontakter i administratörsportalen
 
@@ -26,12 +26,13 @@ Det finns flera sätt Microsoft Hanterat skrivbord kommunicerar med kunder. För
 ## <a name="azure-active-directory-access-for-microsoft-managed-desktop-admin-portal"></a>Azure Active Directory åtkomst Microsoft Hanterat skrivbord administrationsportalen
 
 Microsoft Hanterat skrivbord Administratörsportalen kräver att personer som har åtkomst till portalen har någon av Azure Active Directory-roller (AD):
+
 - Global administratör
 - Intune-tjänstadministratör
 - Global läsare
 - Tjänstsupportadministratör
 
-Den globala administratören måste vara den som registrerar din organisation i Microsoft Hanterat skrivbord. Alla fem rollerna har samma åtkomst i administrationsportalen för att initiera och visa uppgifter. Mer information om hur du tilldelar de här rollerna i Azure AD finns i [Behörigheter för administratörsroller i Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 
+Den globala administratören måste vara den som registrerar din organisation i Microsoft Hanterat skrivbord. Alla fem rollerna har samma åtkomst i administrationsportalen för att initiera och visa uppgifter. Mer information om hur du tilldelar de här rollerna i Azure AD finns i [Behörigheter för administratörsroller i Azure Active Directory.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 ## <a name="admin-contact-areas-of-focus"></a>Administratörskontaktområden i fokus
 
@@ -47,21 +48,21 @@ Annat | För problem som inte omfattas av andra områden
 
 **De som du väljer för dessa kontakter måste ha kunskap och behörighet att fatta beslut i din Microsoft Hanterat skrivbord miljö.** När du onboard your Microsoft Hanterat skrivbord environment, you're prompted to add contacts for your local Helpdesk and Security. 
 
-Administratörskontakter krävs när du [skickar en supportbegäran.](../service-description/support.md) Du måste ha en administratörskontakt för fokusområdet i supportbegäran. 
+Administratörskontakter krävs när du [skickar en supportbegäran.](../service-description/support.md) Du måste ha en administratörskontakt för fokusområdet i supportbegäran.
 
 **Lägga till administratörskontakter**
 
-1.  Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com). 
+1. Logga in på [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
-2.  Titta **efter avsnittet** för klientorganisationsadministration **Microsoft Hanterat skrivbord** välj sedan **Administratörskontakter**. 
+2. Titta **efter avsnittet** för klientorganisationsadministration **Microsoft Hanterat skrivbord** välj sedan **Administratörskontakter**.
 
 3. Välj **Lägg till**.
 
-4.  Välj **ett område med fokus** och ange information om kontakten. 
+4. Välj **ett område med fokus** och ange information om kontakten. 
 
     ![listan över fokusområden, till exempel Andra, Appar och Säkerhet](../../media/areaoffocus.png)
 
-5. Upprepa detta för varje fokusområde. 
+5. Upprepa detta för varje fokusområde.
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Steg för att komma igång med Microsoft Hanterat skrivbord
 

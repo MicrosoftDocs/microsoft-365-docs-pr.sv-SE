@@ -12,15 +12,16 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
+ms.topic: article
 ms.collection: M365-security-compliance
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: f06973bc45ecac05c15d48afe5f0e2e9e7788f78
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d52e1b69311c26144684b90545e17934d1223332
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770757"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287861"
 ---
 # <a name="list-machines-api"></a>API för listdatorer
 
@@ -67,14 +68,14 @@ Delegerat (arbets- eller skolkonto) | Machine.ReadWrite | Maskininformation för
 GET https://api.securitycenter.microsoft.com/api/machines
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 
 
-## <a name="request-body"></a>Begärans brödtext
+## <a name="request-body"></a>Frågebrödtext
 Tom
 
 ## <a name="response"></a>Svar

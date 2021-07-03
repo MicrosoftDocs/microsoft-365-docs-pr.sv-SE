@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs mer Microsoft 365 Business Premium, en prenumerationstjänst som innehåller en Office-appar och avancerat skydd mot cyberhot.
-ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: b7b71032ffc19c582f9658b93dae7dd9f89e02eb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705531"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287636"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Översikt av Microsoft 365 Business Premium
 
@@ -44,14 +44,14 @@ Microsoft 365 Business Premium (tidigare Microsoft 365 Business) är en omfattan
 
 ## <a name="watch-what-is-microsoft-365-business-premium"></a>Video: Vad är Microsoft 365 Business Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
-  
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../business-video/index.yml). 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA]
+
+Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../business-video/index.yml).
 
 Microsoft 365 Business Premium är avsett för upp till 300 licenser. Om du behöver fler licenser finns mer information i dokumentationen för [Microsoft 365 Enterprise](../enterprise/index.yml).
 
 Se [tjänstebeskrivning för Microsoft 365 Business Premium ](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) för hela listan med funktioner.
-  
+
 ## <a name="small-business-security-needs"></a>Säkerhetsbehov för småföretag
 
 Din affärsdata kan komprometteras på många olika sätt. Du och dina användare kan äventyra organisationens säkerhet när du loggar in med komprometterade autentiseringsuppgifter eller tittar på organisationsdata på olika enheter och program. Specifikt riskerar din organisation att utsättas för:
@@ -73,17 +73,17 @@ Microsoft 365 Business Premium hjälper **att försvara mot hot** genom att:
 
 - Genomsök länkar i e-postmeddelanden och dokument i realtid för att blockera osäkra webbplatser (Valv Länkar).
 
-- Utföra avancerade analyser av e-postbilagor i en sandbox-miljö för att identifiera nyligen utvecklade skadlig programvara (Valv bifogade filer). 
+- Utföra avancerade analyser av e-postbilagor i en sandbox-miljö för att identifiera nyligen utvecklade skadlig programvara (Valv bifogade filer).
 
-- Aktivera skydd mot nätfiskeprinciper som använder maskininlärningsmodeller och identifiering av personifiering för att skydda mot avancerade attacker (skydd mot nätfiske i Defender för Office 365 information). 
+- Aktivera skydd mot nätfiskeprinciper som använder maskininlärningsmodeller och identifiering av personifiering för att skydda mot avancerade attacker (skydd mot nätfiske i Defender för Office 365 information).
 
-- Konfigurera avancerade principer som inaktiverar åtkomst från otillförlitliga platser eller kringgå multifaktorautentisering från betrodda platser, t. ex. ditt kontorsnätverk (Azure MFA inklusive betrodda IP-adresser och villkorsstyrd åtkomst). 
+- Konfigurera avancerade principer som inaktiverar åtkomst från otillförlitliga platser eller kringgå multifaktorautentisering från betrodda platser, t. ex. ditt kontorsnätverk (Azure MFA inklusive betrodda IP-adresser och villkorsstyrd åtkomst).
 
 - Upprätthålla skydd mot skadlig programvara för alla organisationens Windows 10-enheter och skydda filer i viktiga systemmappar från förändringar gjorda av utpressningstrojan (Windows Defender)
 
 Din **företagsinformation skyddas** genom att:
 
-- Använda automatisk identifiering för att förhindra känslig information, t. ex. personnummer eller kreditkort att läcka ut utanför företaget (skydd mot dataförlust). 
+- Använda automatisk identifiering för att förhindra känslig information, t. ex. personnummer eller kreditkort att läcka ut utanför företaget (skydd mot dataförlust).
 
 - Kryptering av känsliga e-postmeddelanden så att du kan kommunicera säkert med kunder eller andra personer utanför din organisation. På så sätt ser du till att bara den avsedda mottagaren kan läsa meddelandet (meddelandekryptering för Office 365).
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Distribuera Microsoft 365 säkerhets- och efterlevnadsfunktioner och skydda din personliga information.
-ms.openlocfilehash: 479774069844964e2e603dee5efbc7b8ef867918
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 7325aad0392d559703199c81f2544a582d7eadcb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229269"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287753"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Skydda information som omfattas av datasekretess
 
@@ -66,7 +66,6 @@ För att hjälpa dig att komma igång med ett informationsskyddsschema i Microso
 
 Microsofts [informationsskyddslösningar](../compliance/information-protection.md) omfattar ett antal integrerade funktioner i Microsoft 365, Microsoft Azure och Microsoft Windows. I Microsoft 365 omfattar informationsskyddslösningar:
 
-- [Tjänst kryptering med kundnyckel](../compliance/customer-key-overview.md)
 - [Typer av känslig information](../compliance/sensitive-information-type-entity-definitions.md) (beskrivs i utvärdera [datasekretessrisker och identifiera känsliga objekt)](information-protection-deploy-assess.md)
 - [Känslighetsetiketter](../compliance/sensitivity-labels.md)
   - Service/container-nivå

@@ -1,7 +1,7 @@
 ---
 title: Använda Microsoft Search för att hitta ämnen i Microsoft Viva-ämnen
-ms.author: chuckedmonson
-author: chucked
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Lär dig hur du kan söka efter ämnen i Microsoft Viva.
-ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908071"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287263"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Använda Microsoft Search för att hitta ämnen i Microsoft Viva-ämnen
 
@@ -43,11 +43,11 @@ Sökresultaten i Word, PowerPoint, Outlook och Excel visar också ämnessvaret n
 
 I Viva Ämnen kan du manuellt redigera ett ämne för att ta med en förkortning för det som ett *alternativt namn.* Det gör att en användare som söker efter bara ämnets förkortning kan hitta ämnessvaret via Microsoft Search.
 
-[Acronym Answers](/microsoftsearch/manage-acronyms) är en funktion som tillhandahålls genom Microsoft Search och hanteras separat från Viva Topics.
+[Acronym Answers](/microsoftsearch/manage-acronyms) är en funktion som tillhandahålls Microsoft Search även hanteras separat från Viva Topics.
 
 ## <a name="bookmarks-and-topics"></a>Bokmärken och ämnen
 
-[Bokmärken](/microsoftsearch/manage-bookmarks) är en Microsoft Search-funktion som hjälper användare att snabbt hitta viktiga webbplatser och verktyg med bara en sökning (till exempel ett resebokningsverktyg på en extern webbplats utanför Microsoft 365-klientorganisationen). De skapas av sökadministratörer i Microsoft 365 administrationscenter. 
+[Bokmärken](/microsoftsearch/manage-bookmarks) är en Microsoft Search funktion som hjälper användare att snabbt hitta viktiga webbplatser och verktyg med bara en sökning (till exempel ett resebokningsverktyg på en extern webbplats utanför deras Microsoft 365-klientorganisation). De skapas av sökadministratörer i Administrationscenter för Microsoft 365. 
 
 För användare som söker information om att boka en resa för arbete:
 

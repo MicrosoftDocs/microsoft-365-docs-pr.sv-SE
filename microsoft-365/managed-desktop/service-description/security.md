@@ -1,19 +1,19 @@
 ---
 title: Säkerhetstekniker i Microsoft Hanterat skrivbord
 description: Tekniker som används för enhetssäkerhet, identitets- och åtkomsthantering, nätverkssäkerhet och informationssäkerhet
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b1111f0867ff9a49ba670cdd8b48d10d158fd3ed
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 07d4632c6ce775d98d9606f9edc4566aa48d9d8e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917776"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287813"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Säkerhetstekniker i Microsoft Hanterat skrivbord
 
@@ -21,12 +21,12 @@ ms.locfileid: "50917776"
 
 Microsoft Hanterat skrivbord flera microsoft-tekniker som hjälper till att skydda hanterade enheter och data. Dessutom använder Microsoft Hanterat skrivbord Security Operations Center olika processer [tillsammans](security-operations.md) med dessa tekniker.
 
-Mer specifikt: 
+Mer specifikt:
 
 - [Enhetssäkerhet](#device-security) – säkerhet och skydd på Microsoft Hanterat skrivbord enheter
 - [Identitets- och åtkomsthantering](#identity-and-access-management) – hantera säker användning av enheter via Azure Active Directory identitetstjänster
 - [Nätverkssäkerhet](#network-security) – VPN-information Microsoft Hanterat skrivbord rekommenderade lösningar och inställningar
-- [Informationssäkerhet](#information-security) – valfria tjänster för ytterligare skydd av känslig information 
+- [Informationssäkerhet](#information-security) – valfria tjänster för ytterligare skydd av känslig information
 
 Mer information om datalagring, användning och säkerhetsmetoder som används Microsoft Hanterat skrivbord finns i vår informationsblad på [https://aka.ms/mmd-data](https://aka.ms/mmd-data) .
 
@@ -38,21 +38,21 @@ Microsoft Hanterat skrivbord säkerställer att alla hanterade enheter är skydd
 Tjänst | Beskrivning
 --- | ---
 Antivirus | Microsoft Defender AV är installerat och konfigurerat<br>Microsoft Defender AV-definitioner är uppdaterade
-Fullständig volymkryptering |    Windows BitLocker är volymkrypteringslösningen för Microsoft Hanterat skrivbord enheter.<br><br>När en organisation har introducerats till tjänsten krypteras enheter med Windows BitLocker med den inbyggda TPM (Trust Platform Module) för att förhindra obehörig åtkomst till lokal data när enheten är i strömsparläge eller inaktiverad. 
-Övervakning |    Microsoft Defender för Endpoint används för övervakning av säkerhetshot på alla Microsoft Hanterat skrivbord enheter. Med Defender för Slutpunkt kan företagskunder identifiera, undersöka och reagera på avancerade hot i sina företagsnätverk. Mer information finns i [Microsoft Defender för Endpoint.](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
-Uppdateringar av operativsystem |  Microsoft Hanterat skrivbord-enheter alltid skyddas med de senaste säkerhetsuppdateringarna.
-Säker enhetskonfiguration |   Microsoft Hanterat skrivbord implementerar Microsofts baslinje för säkerhet. Mer information finns i Windows [baslinjer för säkerhet.](/windows/security/threat-protection/windows-security-baselines)
+Fullständig volymkryptering | Windows BitLocker är en volymkrypteringslösning för Microsoft Hanterat skrivbord enheter.<br><br>När en organisation introduceras till tjänsten krypteras enheter med Windows BitLocker med inbyggd TPM (Trust Platform Module) för att förhindra obehörig åtkomst till lokala data när enheten är i strömsparläge eller inaktiverad.
+Övervakning | Microsoft Defender för Endpoint används för övervakning av säkerhetshot på alla Microsoft Hanterat skrivbord enheter. Med Defender för Slutpunkt kan företagskunder identifiera, undersöka och reagera på avancerade hot i sina företagsnätverk. Mer information finns i [Microsoft Defender för Endpoint.](/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
+Uppdateringar av operativsystem | Microsoft Hanterat skrivbord-enheter alltid skyddas med de senaste säkerhetsuppdateringarna.
+Säker enhetskonfiguration | Microsoft Hanterat skrivbord implementerar Microsofts baslinje för säkerhet. Mer information finns i Windows [baslinjer för säkerhet.](/windows/security/threat-protection/windows-security-baselines)
 
 
 
 ## <a name="identity-and-access-management"></a>Identitets- och åtkomsthantering
 
-Identitets- och åtkomsthantering skyddar företagets tillgångar och affärskritiska data. Microsoft Hanterat skrivbord konfigurerar enheter för säker användning med hanterade Azure Active Directory (Azure AD). Det är kundens ansvar att upprätthålla korrekt information i Azure AD-klientorganisationen. 
+Identitets- och åtkomsthantering skyddar företagets tillgångar och affärskritiska data. Microsoft Hanterat skrivbord konfigurerar enheter för säker användning med hanterade Azure Active Directory (Azure AD). Det är kundens ansvar att upprätthålla korrekt information i Azure AD-klientorganisationen.
 
 Tjänst | Beskrivning
 --- | ---
-Autentisering med autentisering |  Windows Med Hello kan användarna logga in med sitt ansikte eller med en PIN-kod, vilket gör det svårare att glömma eller stjäla lösenord. Kunderna ansvarar för att implementera nödvändiga förutsättningar för sin lokala Active Directory för användning av den här tjänsten i en hybridkonfiguration. Mer information finns i [Windows Hello.](/windows-hardware/design/device-experiences/windows-hello) 
-Standardanvändarbehörighet |  För att skydda systemet och göra det säkrare får användaren standardanvändarbehörigheter. Den här behörigheten tilldelas som en del av den inbaserade Windows Autopilot-upplevelsen.
+Autentisering med autentisering | Windows Hello användarna att logga in med sitt ansikte eller med en PIN-kod, vilket gör det svårare att glömma eller stjäla lösenord. Kunderna ansvarar för att implementera nödvändiga förutsättningar för sin lokala Active Directory för användning av den här tjänsten i en hybridkonfiguration. Mer information finns i [Windows Hello.](/windows-hardware/design/device-experiences/windows-hello) 
+Standardanvändarbehörighet | För att skydda systemet och göra det säkrare får användaren standardanvändarbehörigheter. Den här behörigheten tilldelas som en del av den inbaserade Windows Autopilot-upplevelsen.
 
 
 
@@ -71,5 +71,5 @@ Du kan konfigurera de här valfria tjänsterna för att skydda företagets tillg
 
 Tjänst | Beskrivning
 --- | ---
-Dataåterställning  | Information som lagras i viktiga mappar på enheten säkerhetskopieras till OneDrive för företag. Microsoft Hanterat skrivbord ansvarar inte för data som inte synkroniseras med OneDrive för företag. 
-Windows Information Protection |    För företag som kräver hög informationssäkerhetsnivå rekommenderar vi att [Windows informationsskydd](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) och [Azure Information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection)
+Dataåterställning  | Information som lagras i viktiga mappar på enheten säkerhetskopieras till OneDrive för företag. Microsoft Hanterat skrivbord ansvarar inte för data som inte synkroniseras med OneDrive för företag.
+Windows Information Protection | För företag som kräver hög informationssäkerhetsnivå rekommenderar vi att [Windows informationsskydd](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) och [Azure Information Protection.](https://www.microsoft.com/cloud-platform/azure-information-protection)
