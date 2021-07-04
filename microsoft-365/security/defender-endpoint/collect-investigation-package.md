@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0083d806f3e52307e6dce30f74e255073a09c16a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4cf60ea73ea907be9c10b2dd9562a0ea60127f2d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770511"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289901"
 ---
 # <a name="collect-investigation-package-api"></a>API för insamling av undersökningspaket
 
@@ -40,52 +40,56 @@ ms.locfileid: "52770511"
 
 
 ## <a name="api-description"></a>API-beskrivning
+
 Samla in undersökningspaket från en enhet.
 
-
 ## <a name="limitations"></a>Begränsningar
+
 1. Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.
 
-
 ## <a name="permissions"></a>Behörigheter
+
 En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i [Använda Defender för slutpunkts-API:er](apis-intro.md)
 
-Behörighetstyp |   Behörighet  |   Visningsnamn för behörighet
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
 :---|:---|:---
-Program |   Machine.CollectForensics |  "Samla in en forensiska"
-Delegerat (arbets- eller skolkonto) |    Machine.CollectForensics |  "Samla in en forensiska"
+Program | Machine.CollectForensics | "Samla in en forensiska"
+Delegerat (arbets- eller skolkonto) | Machine.CollectForensics | "Samla in en forensiska"
 
->[!Note]
+> [!NOTE]
 > När du skaffar en token med hjälp av användarautentiseringsuppgifter:
->- Användaren måste ha minst följande rollbehörighet: "Undersökning av aviseringar" (mer information finns i [Skapa och](user-roles.md) hantera roller)
->- Användaren måste ha åtkomst till enheten baserat på enhetsgruppinställningar (mer information finns i [Skapa och](machine-groups.md) hantera enhetsgrupper)
+>
+> - Användaren måste ha minst följande rollbehörighet: "Undersökning av aviseringar" (mer information finns i [Skapa och](user-roles.md) hantera roller)
+> - Användaren måste ha åtkomst till enheten baserat på enhetsgruppinställningar (mer information finns i [Skapa och](machine-groups.md) hantera enhetsgrupper)
 
 ## <a name="http-request"></a>HTTP-begäran
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestigationPackage
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
-Innehållstyp | sträng | application/json. **Obligatoriskt.**
+Content-Type | sträng | application/json. **Obligatoriskt.**
 
-## <a name="request-body"></a>Begärans brödtext
+## <a name="request-body"></a>Frågebrödtext
+
 Ange följande parametrar för ett JSON-objekt i begärans brödtext:
 
-Parameter | Typ    | Beskrivning
+Parameter | Typ | Beskrivning
 :---|:---|:---
-Kommentar |   Sträng |    Kommentar som ska associeras med åtgärden. **Obligatoriskt.**
+Kommentar | Sträng | Kommentar som ska associeras med åtgärden. **Obligatoriskt.**
 
 ## <a name="response"></a>Svar
-Om det lyckas returnerar den här metoden 201 – Skapad svarskod [och Maskinåtgärd](machineaction.md) i svarstexten.
 
+Om det lyckas returnerar den här metoden 201 – Skapad svarskod [och Maskinåtgärd](machineaction.md) i svarstexten.
 
 ## <a name="example"></a>Exempel
 
-**Begäran**
+### <a name="request"></a>Begäran
 
 Här är ett exempel på begäran.
 

@@ -16,12 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4be9116b83c2ee4eec410f3d8d68c289f3c8b9a5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 15fd70a2a60da7b0541446a98f0094c73c831d51
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925833"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289829"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Distribuera, hantera och rapportera Microsoft Defender Antivirus
 
@@ -57,7 +57,7 @@ Microsoft Azure|Distribuera Microsoft Antimalware för Azure i Azure-portalen ge
 
 1. <span id="fn1" />Tillgängligheten för vissa funktioner, särskilt relaterade till skydd mot molntjänster, skiljer sig mellan Microsoft Endpoint Manager (Current Branch) och System Center 2012 Configuration Manager. I det här biblioteket fokuserar vi på Windows 10, Windows Server 2016 och Microsoft Endpoint Manager (Current Branch). Se [Använda Molnskydd i Microsoft i Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) en tabell som beskriver de största skillnaderna. [(Återgå till tabell)](#ref2)
   
-2.  <span id="fn2" />I Windows 10 är Microsoft Defender Antivirus en komponent som är tillgänglig utan installation eller distribution av ytterligare en klient eller tjänst. Det aktiveras automatiskt när antivirusprodukter från tredje part antingen avinstalleras eller är inaktiva (utom[på Windows Server 2016).](microsoft-defender-antivirus-on-windows-server.md) Traditionell distribution är därför inte obligatoriskt. Distribution här avser att säkerställa att Microsoft Defender Antivirus komponenten är tillgänglig och aktiverad på slutpunkter eller servrar. [(Återgå till tabell)](#ref2)
+2. <span id="fn2" />I Windows 10 är Microsoft Defender Antivirus en komponent som är tillgänglig utan installation eller distribution av ytterligare en klient eller tjänst. Det aktiveras automatiskt när antivirusprodukter från tredje part antingen avinstalleras eller är inaktiva (utom[på Windows Server 2016).](microsoft-defender-antivirus-on-windows-server.md) Traditionell distribution är därför inte obligatoriskt. Distribution här avser att säkerställa att Microsoft Defender Antivirus komponenten är tillgänglig och aktiverad på slutpunkter eller servrar. [(Återgå till tabell)](#ref2)
 
 3. <span id="fn3" />Konfiguration av funktioner och skydd, inklusive konfiguration av uppdateringar av produkter och skydd, beskrivs mer i [avsnittet Konfigurera Microsoft Defender Antivirus funktioner](configure-notifications-microsoft-defender-antivirus.md) i det här biblioteket. [(Återgå till tabell)](#ref2)
 

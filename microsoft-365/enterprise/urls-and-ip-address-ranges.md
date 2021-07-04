@@ -24,24 +24,25 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Sammanfattning: Office 365 kräver internetanslutning. Slutpunkterna nedan bör vara åtkomliga för kunder som använder Office 365-abonnemang, inklusive Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 99a58e1f520c7f22fcb0d78a7d4b7e400b5ed87d
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: 22294294ba35f00ff33a9b849f320f0e8b42e0ba
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203142"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290261"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URL-adresser och IP-adressintervall för Office 365
 
 Office 365 kräver internetanslutning. Slutpunkterna nedan bör vara åtkomliga för kunder som använder Office 365-abonnemang, inklusive Government Community Cloud (GCC).
   
-*Office 365 Globalt (plus GCC)* | [Office 21 genom 365 Vianet](urls-and-ip-address-ranges-21vianet.md) | [Office 365 Tyskland](microsoft-365-germany-endpoints.md) | [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md)  | [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
+*Office 365Globalt (plus GCC)* \| [Office 21 genom 365 Vianet](urls-and-ip-address-ranges-21vianet.md) \| [Office 365 Tyskland](microsoft-365-germany-endpoints.md) \| [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) \| [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) \|
 
-||||
-|:-----|:-----|:-----|
-|**Uppdaterades senast:** 2021-06-28 – ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Ändringsloggsprenumeration](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Ladda ned:** alla obligatoriska och valfria destinationer i en [JSON formaterad](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) lista.  <br/> | **Använd:** våra proxy-[PAC-filer](managing-office-365-endpoints.md#pacfiles) <br/> |
+|Kommentar|Ladda ned|Användning|
+|---|---|---|
+|**Uppdaterades senast:** 2021-06-28 – ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Ändringsloggsprenumeration](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Ladda ned:** alla obligatoriska och valfria destinationer i en [JSON formaterad](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) lista.|**Använd:** våra proxy-[PAC-filer](managing-office-365-endpoints.md#pacfiles)|
+|
 
- Börja med [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md) för att förstå våra rekommendationer för hantering av nätverksanslutningar med dessa data. Slutpunktsdata uppdateras i början av varje månad med nya IP-adresser och URL:er som publicerats 30 dagar i förväg. Det gör det möjligt för kunder som ännu inte har automatiserade uppdateringar att slutföra processerna innan nya anslutningar krävs. Slutpunkter kan också uppdateras under månaden om det behövs för att lösa stöd för eskalering, säkerhetstillbud och andra omedelbara driftskrav. De data som visas på den här sidan nedan skapas från de REST-baserade webbtjänsterna. Om du använder ett skript eller en nätverksenhet för att komma åt dessa data ska du gå direkt till [Webbtjänst](microsoft-365-ip-web-service.md).
+Börja med [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md) för att förstå våra rekommendationer för hantering av nätverksanslutningar med dessa data. Slutpunktsdata uppdateras i början av varje månad med nya IP-adresser och URL:er som publicerats 30 dagar i förväg. Det gör det möjligt för kunder som ännu inte har automatiserade uppdateringar att slutföra processerna innan nya anslutningar krävs. Slutpunkter kan också uppdateras under månaden om det behövs för att lösa stöd för eskalering, säkerhetstillbud och andra omedelbara driftskrav. De data som visas på den här sidan nedan skapas från de REST-baserade webbtjänsterna. Om du använder ett skript eller en nätverksenhet för att komma åt dessa data ska du gå direkt till [Webbtjänst](microsoft-365-ip-web-service.md).
 
 I slutpunktsdata nedan visar krav för anslutning från en användares dator till Office 365. Den innehåller inte nätverksanslutningar från Microsoft till ett kundnätverk, som ibland kallas hybrid-eller inkommande nätverksanslutningar. Mer information finns i [Ytterligare slutpunkter](additional-office365-ip-addresses-and-urls.md).
 
@@ -56,16 +57,16 @@ Data kolumnerna som visas är:
 - **ER**: Det här är **Ja** om slutpunktsuppsättningen stöds över Azure ExpressRoute med Office 365-väg-prefix. BGP-communityn som innehåller de väg-prefix som visas är justeras med tjänstområdet som visas. När ER är **Nej**, innebär det att ExpressRoute inte stöds för denna slutpunktsuppsättning. Tänk dock på att det inte ska finnas några vägar som annonseras för en slutpunkt där ER är **Nej**.
 
 - **Adresser**: listar FQDN-namn eller domännamn med jokertecken och IP-adressintervall för slutpunktsuppsättningen. Observera att ett IP-adressintervall är i CIDR-format och kan innehålla många enskilda IP-adresser i det angivna nätverket.
- 
+
 - **Portar**: Listar de TCP-eller UDP-portar som kombineras med adresserna för att skapa nätverksslutpunkten. Du märker kanske att det finns dubbletter i IP-adressintervall där olika portar finns med i listan.
 
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
->[!Note]
->Rekommendationer om IP- och URL-adresser för Yammer finns i [Vi rekommenderar inte att du använder hårdkodade IP-adresser för Yammer](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592) på Yammer-bloggen.
->
+> [!NOTE]
+> Rekommendationer om IP- och URL-adresser för Yammer finns i [Vi rekommenderar inte att du använder hårdkodade IP-adresser för Yammer](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592) på Yammer-bloggen.
 
 ## <a name="related-topics"></a>Relaterade ämnen
+
 [Ytterligare slutpunkter ingår inte i IP-adressen och URL-webbtjänsten för Office 365](additional-office365-ip-addresses-and-urls.md)
 
 [Hantera Office 365-slutpunkter](managing-office-365-endpoints.md)

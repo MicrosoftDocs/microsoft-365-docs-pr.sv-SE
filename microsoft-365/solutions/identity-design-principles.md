@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b424b4f611f0553de4b7129d2c0b63cefbdeeab3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b22a3b8fc73ca1825f07dda5b84c85e2d2a68805
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229365"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289745"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>För identitet och vidarestöld – En arkitekts byggnad
 
@@ -164,7 +164,7 @@ Generellt sett blir det svårare att rita en tydlig linje mellan Office 365 och 
 
 Idag tycker jag att många kund-IT-grupper är strukturerade kring "produkter". Det är logiskt för en lokal värld eftersom du behöver en expert för varje specifik produkt. Men jag är helt nöjd över att jag inte behöver felsöka en Active Directory- eller Exchange-databas igen när de här tjänsterna har flyttats till molnet. Automation (vilken molnlösning det är) tar bort vissa återkommande manuella jobb (se vad som har hänt med faktorn). De ersätts dock med mer komplexa krav för att förstå interaktion mellan tjänster, påverkan, affärsbehov och så vidare. Om du vill lära dig [finns](/learn/)det stora möjligheter som kan aktiveras genom molnomvandling. Innan jag hoppar in i teknik pratar jag ofta med kunderna om att hantera förändring av IT-kunskaper och teamstrukturer.
 
-Sluta fråga SharePoint "Hur gör jag med XYZ i SharePoint online?" till alla som gillar personer och utvecklare. Använd [Power Automate](/power-automate/) (eller Flow) för arbetsflödet, det är en mycket mer kraftfull plattform. Använd [Azure Bot Framework för](/azure/bot-service/?view=azure-bot-service-4.0) att skapa en bättre UX för objektlistan på 500 K. Börja använda [Microsoft Graph](https://developer.microsoft.com/graph/) i stället för CSOM. [Microsoft Teams](/MicrosoftTeams/Teams-overview) innehåller SharePoint men även en värld mer. Det finns många andra exempel som jag kan ta med. Det finns ett enormt och fantastiskt universum. Öppna dörren och [börja utforska]().
+Sluta fråga SharePoint "Hur gör jag med XYZ i SharePoint online?" till alla som gillar personer och utvecklare. Använd [Power Automate](/power-automate/) (eller Flow) för arbetsflödet, det är en mycket mer kraftfull plattform. Använd [Azure Bot Framework för](/azure/bot-service/) att skapa en bättre UX för objektlistan på 500 K. Börja använda [Microsoft Graph](https://developer.microsoft.com/graph/) i stället för CSOM. [Microsoft Teams](/MicrosoftTeams/Teams-overview) innehåller SharePoint men även en värld mer. Det finns många andra exempel som jag kan ta med. Det finns ett enormt och fantastiskt universum. Öppna dörren och [börja utforska]().
 
 Andra vanliga konsekvenser ligger i efterlevnadsområdet. Den här metoden för tvärtjänster verkar totalt förvirra många efterlevnadsprinciper. Organisationer med statusen "Jag behöver journalför all e-postkommunikation till ett e-dataidentifieringssystem". Vad innebär detta egentligen när e-post inte längre bara är e-post utan ett fönster in i andra tjänster? Office 365 har en omfattande metod för [efterlevnad,](../compliance/index.yml)men det är ofta mycket svårare än teknik att ändra personer och processer.
 

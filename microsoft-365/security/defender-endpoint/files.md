@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c4d392c9c7777a5ab5435d70e36822e11aa39dae
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 83a011e649a7289f62acd6a8d985f020b27b1e10
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771195"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290021"
 ---
 # <a name="file-resource-type"></a>Filresurstyp
 
@@ -36,10 +36,10 @@ ms.locfileid: "52771195"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Representerar en filentitet i Defender för Slutpunkt.
 
 ## <a name="methods"></a>Metoder
+
 Metod|Returtyp |Beskrivning
 :---|:---|:---
 [Hämta fil](get-file-information.md) | [fil](files.md) | Hämta en enda fil 
@@ -49,7 +49,8 @@ Metod|Returtyp |Beskrivning
 
 
 ## <a name="properties"></a>Egenskaper
-|Egenskap | Typ    |   Beskrivning |
+
+|Egenskap | Typ | Beskrivning |
 |:---|:---|:---|
 |sha1 | Sträng | Hashtaggen Sha1 för filinnehållet |
 |sha256 | Sträng | Sha256-hash för filinnehållet |
@@ -67,7 +68,6 @@ Metod|Returtyp |Beskrivning
 |isValidCertificate | Boolesk | Signeringscertifikat har verifierats av Microsoft Defender för Endpoint-agenten |
 |determinationType | Sträng | Avgöra vilken typ av fil som ska avgöras |
 |determinationValue | Sträng | Determination value |
-
 
 ## <a name="json-representation"></a>Json-representation
 

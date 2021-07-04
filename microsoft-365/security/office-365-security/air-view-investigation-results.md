@@ -19,12 +19,12 @@ description: Under och efter en automatiserad undersökning i Microsoft 365 kan 
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc7c61fae83f2d10f8b66cbfce86bcee6e3a5bd6
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: ef91a3b218c2dda671bf7d07bf2615001bd20ebc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878430"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290141"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Information och resultat från en automatiserad undersökning i Microsoft 365
 
@@ -32,10 +32,10 @@ ms.locfileid: "52878430"
 - [Microsoft Defender för Office 365 abonnemang 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-När en [automatiserad undersökning](office-365-air.md) sker i [Microsoft Defender](defender-for-office-365.md)för Office 365 , finns det information om undersökningen tillgänglig under och efter den automatiska undersökningen. Om du har den behörighet som krävs kan du visa den informationen i Microsoft 365 Defender-portalen. Undersökningsinformation ger dig aktuell status och möjlighet att godkänna eventuella väntande åtgärder.
+När en [automatiserad undersökning](office-365-air.md) sker i [Microsoft Defender](defender-for-office-365.md)för Office 365 , finns det information om undersökningen tillgänglig under och efter den automatiska undersökningen. Om du har rätt behörighet kan du visa den informationen i Microsoft 365 Defender portalen. Undersökningsinformation ger dig aktuell status och möjlighet att godkänna eventuella väntande åtgärder.
 
 > [!TIP]
-> Titta på den nya sidan för enhetlig undersökning i Microsoft 365 Defender-portalen. Mer information finns i [(NYTT!) Sida för enhetlig undersökning](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Ta en titta på den nya, enhetliga undersökningssidan i Microsoft 365 Defender portalen. Mer information finns i [(NYTT!) Sida för enhetlig undersökning](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## <a name="investigation-status"></a>Undersökningsstatus
 
@@ -50,19 +50,19 @@ Undersökningsstatusen anger förloppet för analysen och åtgärderna. När und
 |**Startar**|Undersökningen har utlösts och väntar på att starta.|
 |**Körs**|Undersökningsprocessen har startat och pågår. Det här tillståndet inträffar även [när väntande åtgärder](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) har godkänts.|
 |**Inga hot hittades**|Undersökningen har slutförts och inga hot (användarkonto, e-postmeddelande, URL eller fil) har identifierats. <p> **TIPS:** Om du misstänker att något har missats (t.ex. falskt negativa) kan du vidta åtgärder med hjälp av [Hotutforskaren.](threat-explorer.md)|
-|**Hot hittades**|Den automatiska undersökningen hittade problem, men det finns inga specifika åtgärdsåtgärder för att lösa problemen. <p> Statusen **Hot hittades** kan uppstå när någon typ av användaraktivitet har identifierats men inga rensningsåtgärder är tillgängliga. Några exempel är några av följande användaraktiviteter: <br/>- En [dataförlustskyddshändelse](../../compliance/dlp-learn-about-dlp.md)<br/>- Ett e-postmeddelande som skickar avvikande avvikelse<br/>- Skickad skadlig programvara<br/>- Skickad phish <p> Undersökningen hittade inga skadliga URL:er, filer eller e-postmeddelanden för att åtgärda och ingen postlådeaktivitet för att åtgärda, till exempel inaktivera regler för vidarebefordran eller delegering. <p> **TIPS:** Om du misstänker att något har missats (t.ex. falskt negativa) kan du undersöka och vidta åtgärder med hjälp av [Hotutforskaren.](threat-explorer.md)|
-|**Avslutas av system**|Undersökningen har stoppats. En undersökning kan avbrytas av flera orsaker: <br/>- Undersökningens väntande åtgärder har upphört att gälla. Väntande åtgärder tar slut när du väntar på godkännande för en vecka.<br/>- Det finns för många åtgärder. Om till exempel för många användare klickar på skadliga URL-adresser kan det överskrida undersökningens möjlighet att köra alla analysverktyg, så undersökningen pausar.<p> **TIPS:** Om en undersökning stannar innan åtgärder vidtas kan du använda [Hotutforskaren](threat-explorer.md) för att hitta och åtgärda hot.|
+|**Hot hittades**|Den automatiska undersökningen hittade problem, men det finns inga specifika åtgärdsåtgärder för att lösa problemen. <p> Statusen **Hot hittades** kan uppstå när någon typ av användaraktivitet har identifierats men inga rensningsåtgärder är tillgängliga. Några exempel är några av följande användaraktiviteter: <ul><li>En [dataförlustskyddshändelse](../../compliance/dlp-learn-about-dlp.md)</li><li>Ett e-postmeddelande som skickar avvikelser</li><li>Skickad skadlig programvara</li><li>Skickad phish</li></ul> <p> Undersökningen hittade inga skadliga URL:er, filer eller e-postmeddelanden för att åtgärda och ingen postlådeaktivitet för att åtgärda, till exempel inaktivera regler för vidarebefordran eller delegering. <p> **TIPS:** Om du misstänker att något har missats (t.ex. falskt negativa) kan du undersöka och vidta åtgärder med hjälp av [Hotutforskaren](threat-explorer.md)|
+|**Avslutas av system**|Undersökningen har stoppats. En undersökning kan avbrytas av flera orsaker: <ul><li>Undersökningens väntande åtgärder har upphört att gälla. Väntande åtgärder time out efter att väntar på godkännande för en vecka</li><li>Det finns för många åtgärder. Om till exempel för många användare klickar på skadliga URL:er kan det överskrida undersökningens möjlighet att köra alla analysverktyg, så undersökningen pausar</li></ul> <p> **TIPS:** Om en undersökning stannar innan åtgärder vidtas kan du använda [Hotutforskaren](threat-explorer.md) för att hitta och åtgärda hot.|
 |**Väntande åtgärd**|Undersökningen har hittat ett hot, till exempel en skadlig e-post, en skadlig URL-adress eller en riskabel postlåda samt en åtgärd för att åtgärda att hoten [väntar på godkännande.](air-review-approve-pending-completed-actions.md) <p> Statusen **Väntande** åtgärd utlöses när ett hot med en motsvarande åtgärd hittas. Listan med väntande åtgärder kan dock öka i och med att en undersökning körs. Visa undersökningsinformation för att se om andra objekt fortfarande är slutförda.|
 |**Åtgärdat**|Undersökningen slutfördes och alla åtgärder godkänts (antecknas som helt åtgärdade). <p> **Obs!** Godkända åtgärdsåtgärder kan ha fel som hindrar att åtgärderna vidtas. Oavsett om åtgärdsåtgärder slutförs ändras inte undersökningsstatusen. Visa undersökningsinformation.|
 |**Delvis åtgärdat**|Undersökningen resulterade i åtgärder och vissa godkänts och slutförts. Andra åtgärder väntar [fortfarande.](air-review-approve-pending-completed-actions.md)|
-|**Misslyckades**|Minst en undersökningsanalys körde ett problem där det inte gick att slutföra korrekt. <p> **OBS!** Om en undersökning misslyckas efter att åtgärdsåtgärder godkänts kan det hända att åtgärdsåtgärderna fortfarande har godkänts. Visa undersökningsuppgifterna. |
+|**Misslyckades**|Minst en undersökningsanalys körde ett problem där det inte gick att slutföra korrekt. <p> **OBS!** Om en undersökning misslyckas efter att åtgärder har godkänts kan det hända att åtgärdsåtgärderna fortfarande har godkänts. Visa undersökningsuppgifterna.|
 |**I kö efter begränsning**|En undersökning görs i en kö. När andra undersökningar är klara påbörjas undersökningar i kö. Begränsning hjälper till att undvika dålig tjänstprestanda.  <p> **TIPS:** Väntande åtgärder kan begränsa hur många nya undersökningar som kan köras. Godkänn [(eller avvisa) väntande åtgärder](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
 |**Avslutas av begränsning**|Om en undersökning hålls i kön för länge stoppas den. <p> **TIPS:** Du kan [starta en undersökning från Hotutforskaren.](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)|
 |
 
 ## <a name="view-details-of-an-investigation"></a>Visa information om en undersökning
 
-1. Gå till Microsoft 365 Defender-portalen <https://security.microsoft.com> () och logga in.
+1. Gå till Microsoft 365 Defender ( <https://security.microsoft.com> ) och logga in.
 2. Välj Åtgärdscenter i **navigeringsfönstret.**
 3. Välj en **åtgärd på flikarna** **Väntande** eller Historik. Den utfällna rutan öppnas.
 4. Välj Öppna undersökningssida i den **utfällfällade fönsterrutan**. 
@@ -72,7 +72,7 @@ Undersökningsstatusen anger förloppet för analysen och åtgärderna. När und
 
 Vissa typer av aviseringar utlöser automatisk undersökning i Microsoft 365. Mer information finns i [aviseringsprinciper som utlöser automatiska undersökningar.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
 
-1. Gå till Microsoft 365 Defender-portalen <https://security.microsoft.com> () och logga in.
+1. Gå till Microsoft 365 Defender ( <https://security.microsoft.com> ) och logga in.
 2. Välj Åtgärdscenter i **navigeringsfönstret.**
 3. Välj en **åtgärd på flikarna** **Väntande** eller Historik. Den utfällna rutan öppnas.
 4. Välj Öppna undersökningssida i den **utfällfällade fönsterrutan**.

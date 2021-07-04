@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0ddb38e713f08c101639976b9f2c8c1ee32e63a3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 23d9d61644b4c9adad69a5e467e49ca2b1d92413
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843788"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290237"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Skapa anpassade rapporter med Power BI
 
@@ -33,7 +33,7 @@ ms.locfileid: "52843788"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,16 +49,16 @@ I det första exemplet visas hur du ansluter Power BI till Advanced Hunting API 
 
 - Klicka **på Hämta data** tom  >  **fråga**
 
-    ![Bild av skapa en tom fråga](images/power-bi-create-blank-query.png)
+  ![Bild av skapa en tom fråga](images/power-bi-create-blank-query.png)
 
 - Klicka på **Avancerad redigerare**
 
-    ![Bild av en öppen avancerad redigerare](images/power-bi-open-advanced-editor.png)
+  ![Bild av en öppen avancerad redigerare](images/power-bi-open-advanced-editor.png)
 
 - Kopiera nedan och klistra in den i redigeraren:
 
 ```
-    let 
+    let
         AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
 
         HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
@@ -93,7 +93,6 @@ I det första exemplet visas hur du ansluter Power BI till Advanced Hunting API 
         Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
 
     in Table
-
 ```
 
 - Klicka **på Klar**
@@ -118,7 +117,7 @@ I det första exemplet visas hur du ansluter Power BI till Advanced Hunting API 
 
 ## <a name="connect-power-bi-to-odata-apis"></a>Anslut Power BI till OData-API:er
 
-- Den enda skillnaden från exemplet ovan är frågan i redigeraren. 
+- Den enda skillnaden från exemplet ovan är frågan i redigeraren.
 
 - Kopiera nedan och klistra in den i redigeraren för att hämta alla **datoråtgärder** från organisationen:
 
@@ -130,22 +129,21 @@ I det första exemplet visas hur du ansluter Power BI till Advanced Hunting API 
         Source = OData.Feed("https://api.securitycenter.microsoft.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
     in
         Source
-
 ```
 
 - Du kan göra samma sak för **Aviseringar** och **Maskiner.**
-
 - Du kan också använda OData-frågor för frågefilter. Mer information finns i [Använda OData-frågor](exposed-apis-odata-samples.md)
 
-
 ## <a name="power-bi-dashboard-samples-in-github"></a>Power BI exempel på instrumentpaneler i GitHub
+
 Mer information finns i [Power BI rapportmallar](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## <a name="sample-reports"></a>Exempelrapporter
+
 Visa exempel för Microsoft Defender Power BI slutpunktsrapport. Mer information finns i Bläddra [i kodexempel](/samples/browse/?products=mdatp).
 
+## <a name="related-topics"></a>Relaterade ämnen
 
-## <a name="related-topic"></a>Relaterat ämne
 - [Defender för slutpunkts-API:er](apis-intro.md)
-- [Advanced jakt-API](run-advanced-query-api.md)
+- [Avancerad jakt-API](run-advanced-query-api.md)
 - [Använda OData-frågor](exposed-apis-odata-samples.md)

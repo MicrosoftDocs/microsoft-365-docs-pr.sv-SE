@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6de0cb646eb8c12e4863facdb42c1f9494120f9
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: c03dfef28744e2ee565c25d921902b8d11ecb7a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105662"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290249"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Spåra och svara på nya hot med hotanalyser 
 
@@ -39,7 +39,6 @@ ms.locfileid: "53105662"
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
-
 
 Hotanalyser är vår in-product threat intelligence-lösning från en expert på Microsoft-säkerhet som utformats för att hjälpa säkerhetsteam att bli så effektiva som möjligt samtidigt som de står inför nya hot, inklusive:
 
@@ -61,7 +60,7 @@ _Var du kan komma åt hotanalyser_
 
 Med mer avancerade adversaries och nya hot som dyker upp ofta och ofta är det viktigt att kunna snabbt:
 
-- Identifiera och reagera på nya hot 
+- Identifiera och reagera på nya hot
 - Ta reda på om du är under attack
 - Utvärdera effekterna av hoten på dina tillgångar
 - Granska din motståndskraft mot eller exponering för hoten
@@ -85,9 +84,9 @@ _Instrumentpanel för hotanalyser. Du kan också klicka på sökikonen för att 
 
 ## <a name="view-a-threat-analytics-report"></a>Visa en rapport över hotanalyser
 
-Varje rapport om hotanalyser innehåller information i flera avsnitt: 
+Varje rapport om hotanalyser innehåller information i flera avsnitt:
 
-- [**Översikt**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses) 
+- [**Översikt**](#overview-quickly-understand-the-threat-assess-its-impact-and-review-defenses)
 - [**Analytiker**](#analyst-report-get-expert-insight-from-microsoft-security-researchers)
 - [**Relaterade ärenden**](#related-incidents-view-and-manage-related-incidents)
 - [**Påverkade tillgångar**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
@@ -103,7 +102,9 @@ I **avsnittet** Översikt finns en förhandsgranskning av den detaljerade analyt
 _Översiktsavsnitt i en rapport om hotanalyser_
 
 #### <a name="assess-impact-on-your-organization"></a>Utvärdera påverkan på organisationen
+
 Varje rapport innehåller diagram som är utformade för att ge information om hur ett hot påverkar organisationen:
+
 - **Relaterade incidenter**– ger en översikt över effekterna av de spårade hoten för din organisation med följande data:
   - Antalet aktiva aviseringar och antalet aktiva incidenter de är associerade med
   - Allvarlighetsgrad för aktiva incidenter
@@ -112,24 +113,60 @@ Varje rapport innehåller diagram som är utformade för att ge information om h
 - **Förhindrade e-postförsök**– visar antalet e-postmeddelanden från de senaste sju dagarna som antingen har blockerats före leveransen eller levererats till mappen Skräppost.
 
 #### <a name="review-security-resilience-and-posture"></a>Granska motståndskraften hos säkerhet och utvärdering
+
 Varje rapport innehåller diagram som ger en översikt över hur flexibel din organisation är mot ett givet hot:
+
 - **Säker konfigurationsstatus**– visar antalet enheter med felkonfigurerade säkerhetsinställningar. Använd de rekommenderade säkerhetsinställningarna för att minska risken. Enheter anses vara **säkra** om de har _tillämpat alla_ spårade inställningar.
 - **Status för sårbarhetskorrigering**– visar antalet sårbara enheter. Tillämpa säkerhetsuppdateringar eller korrigeringar för att åtgärda säkerhetsproblem som utnyttjas av risken.
 
+#### <a name="view-reports-per-threat-tags"></a>Visa rapporter per hottaggar
+
+Du kan filtrera listan med hotrapporter och visa de mest relevanta rapporterna enligt en specifik hottagg (kategori) eller en rapporttyp.
+
+- **Hottaggar**– hjälper dig att visa de mest relevanta rapporterna utifrån en specifik hotkategori. Till exempel alla rapporter relaterade till utpressningstrojaner.
+- **Rapporttyper**– hjälper dig att visa de mest relevanta rapporterna enligt en viss rapporttyp. Till exempel alla rapporter som täcker verktyg och tekniker. 
+- **Filter**– hjälper dig att effektivt granska hotrapportlistan och filtrera vyn baserat på en specifik hottagg eller rapporttyp. Granska till exempel alla rapporter om hot relaterade till utpressningstrojaner eller hotrapporter som täcker säkerhetsproblem.
+
+##### <a name="how-does-it-work"></a>Hur fungerar det?
+
+Microsoft Threat Intelligence-teamet har lagt till hottaggar i varje hotrapport:
+
+- Fyra hottaggar är nu tillgängliga:
+  - Utpressningstrojaner
+  - Fiske
+  - Sårbarhet
+  - Aktivitetsgrupp
+- Hottaggar visas högst upp på sidan för hotanalys, med räknare för antalet tillgängliga rapporter under varje tagg.
+
+  ![hottaggar](../../media/threat-analytics/ta-threattags-mtp.png)
+
+- Listan kan också sorteras efter hottaggar:
+
+  ![listor](../../media/threat-analytics//ta-taglist-mtp.png)
+
+- Filter är tillgängliga per hottagg och rapporttyp:
+
+  ![filter](../../media/threat-analytics/ta-threattag-filters-mtp.png)
+
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Analytikerrapport: Få expertinsikter från Microsoft-säkerhetsanalytiker
+
 I avsnittet **Analytikerrapport** kan du läsa igenom den detaljerade expertens uppskrivning. De flesta rapporter ger detaljerade beskrivningar av attackkedjor, inklusive taktiker och tekniker som mappats till MITRE ATT&CK-ramverket, uttömmande listor med rekommendationer och kraftfulla vägledningar för hot [efter](advanced-hunting-overview.md) hot.
 
 [Läs mer om analytiker](threat-analytics-analyst-reports.md)
 
 ### <a name="related-incidents-view-and-manage-related-incidents"></a>Relaterade ärenden: Visa och hantera relaterade ärenden
+
 På **fliken Relaterade** incidenter visas en lista över alla incidenter som är relaterade till de spårade hoten. Du kan tilldela incidenter eller hantera aviseringar som är kopplade till varje incident. 
+
 
 ![Bild av avsnittet relaterade incidenter i en rapport om hotanalys](../../media/threat-analytics/ta_related_incidents_mtp.png)
 
 _Avsnittet relaterade incidenter i en rapport om hotanalys_
 
 ### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>Påverkade tillgångar: Hämta en lista över påverkade enheter och postlådor
+
 En tillgång anses påverkas om den påverkas av en aktiv, omatchad avisering. På **fliken Påverkade tillgångar** visas följande typer av påverkade tillgångar:
+
 - **Påverkade enheter –** slutpunkter som har omatchade Microsoft Defender för slutpunktsaviseringar. Dessa varningar kan i regel uppmärksamma syn på kända hotindikatorer och -aktiviteter.
 - **Påverkade postlådor –** postlådor som har tagit emot e-postmeddelanden som har utlöst Microsoft Defender för Office 365 postmeddelanden. Även om de flesta meddelanden som utlöser aviseringar vanligtvis blockeras, kan principer på användar- eller organisationsnivå åsidosätta filter.
 
@@ -138,6 +175,7 @@ En tillgång anses påverkas om den påverkas av en aktiv, omatchad avisering. P
 _Avsnittet Påverkade tillgångar i en rapport om hotanalys_
 
 ### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>Förhindrade e-postförsök: Visa blockerade eller skräppostade hotmeddelanden
+
 Microsoft Defender för Office 365 blockerar vanligtvis e-postmeddelanden med kända hotindikatorer, inklusive skadliga länkar eller bifogade filer. I vissa fall kommer proaktiva filtreringsmetoder som söker efter misstänkt innehåll i stället att skicka e-postmeddelanden med hot till skräppostmappen. I båda fallen minskar risken för att skadlig kod ska startas på enheten.
 
 På **fliken Förhindrade e-postförsök** visas alla e-postmeddelanden som antingen har blockerats före leveransen eller skickats till skräppostmappen av Microsoft Defender för Office 365. 
@@ -147,6 +185,7 @@ På **fliken Förhindrade e-postförsök** visas alla e-postmeddelanden som anti
 _Avsnittet Förhindrade e-postförsök i en rapport om hotanalyser_
 
 ### <a name="mitigations-review-list-of-mitigations-and-the-status-of-your-devices"></a>Minskningar: Granska en lista över åtgärder och status för dina enheter
+
 Granska listan **över specifika åtgärdsbara** rekommendationer i avsnittet Minskningar som kan hjälpa dig att öka organisationens motståndskraft mot risken. Listan över spårade åtgärder omfattar:
 
 - **Säkerhetsuppdateringar**– distribution av säkerhetsuppdateringar av programvara som stöds för säkerhetsproblem som påträffas på enheter som är ombord
@@ -154,31 +193,37 @@ Granska listan **över specifika åtgärdsbara** rekommendationer i avsnittet Mi
   - Molnbaserat skydd  
   - Potentiellt oönskat programskydd (PUA)
   - Realtidsskydd
- 
+
 I den här informationen ingår data från [Hantering av hot och säkerhetsrisker](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), som också innehåller detaljerad information om åtgärder från olika länkar i rapporten.
 
-![Bild av avsnittet åtgärder i en rapport om hotanalys som visar säker konfigurationsinformation Bild av avsnittet om åtgärder i en rapport om hotanalys som visar information om ](../../media/threat-analytics/ta_mitigations_mtp.png)
- ![ problemet](../../media/threat-analytics/ta_mitigations_mtp2.png)
+![Bild av avsnittet om åtgärder i en rapport över hotanalyser som visar information om säker konfiguration](../../media/threat-analytics/ta_mitigations_mtp.png)
+
+![Bild av avsnittet åtgärder i en rapport om hotanalys som visar sårbarhetsinformation](../../media/threat-analytics/ta_mitigations_mtp2.png)
 
 _Avsnittet Åtgärder i en rapport om hotanalys_
 
 ## <a name="additional-report-details-and-limitations"></a>Ytterligare rapportinformation och begränsningar
->[!NOTE]
->Som en del av den enhetliga säkerhetsupplevelsen är hotanalyser nu inte bara tillgängliga för Microsoft Defender för Endpoint, utan även för Microsoft Defender för Office E5-licensinnehavare.
->Om du inte använder säkerhetsportalen för Microsoft 365 (Microsoft 365 Defender) kan du även se rapportinformationen (utan Microsoft Defender för Office-data) i Microsoft Defender Säkerhetscenter-portalen (Microsoft Defender för slutpunkt). 
+
+> [!NOTE]
+> Som en del av den enhetliga säkerhetsupplevelsen är hotanalyser nu inte bara tillgängliga för Microsoft Defender för Endpoint, utan även för Microsoft Defender för Office E5-licensinnehavare.
+>
+> Om du inte använder säkerhetsportalen för Microsoft 365 (Microsoft 365 Defender) kan du även se rapportinformationen (utan Microsoft Defender för Office-data) i Microsoft Defender Säkerhetscenter-portalen (Microsoft Defender för slutpunkt).
 
 För att komma åt rapporten över hotanalyser behöver du vissa roller och behörigheter. Mer [information finns i Anpassade roller i rollbaserad åtkomstkontroll Microsoft 365 Defender](custom-roles.md) mer information.
-  - Om du vill visa aviseringar, incidenter eller data om påverkade tillgångar måste du ha behörighet till Microsoft Defender för Office eller Microsoft Defender för data om slutpunktsaviseringar, eller både och.
-  - Om du vill visa förhindrade e-postförsök måste du ha behörighet till Microsoft Defender för Office med data om du vill söka. 
-  - Om du vill visa minskningar måste du ha behörighet att Hantering av hot och säkerhetsrisker data i Microsoft Defender för Slutpunkt.
+
+- Om du vill visa aviseringar, incidenter eller data om påverkade tillgångar måste du ha behörighet till Microsoft Defender för Office eller Microsoft Defender för data om slutpunktsaviseringar, eller både och.
+- Om du vill visa förhindrade e-postförsök måste du ha behörighet till Microsoft Defender för Office med data om du vill söka. 
+- Om du vill visa minskningar måste du ha behörighet att Hantering av hot och säkerhetsrisker data i Microsoft Defender för Slutpunkt.
 
 När du tittar på data från hotanalyser ska du tänka på följande faktorer:
+
 - Diagram återspeglar endast minskningar som spåras. Kontrollera rapportens översikt för ytterligare åtgärder som inte visas i diagrammen.
 - Minskningar garanterar inte fullständig motståndskraft. Tillhandahållna minskningar återspeglar bästa möjliga åtgärder som krävs för att förbättra motståndskraften.
 - Enheter räknas som "inte tillgängliga" om de inte har överfört data till tjänsten.
 - Antivirusrelaterad statistik baseras på de Microsoft Defender Antivirus inställningarna. Enheter med antiviruslösningar från tredje part kan visas som "exponerade".
 
 ## <a name="related-topics"></a>Relaterade ämnen
+
 - [Hitta hot proaktivt med avancerad sökning](advanced-hunting-overview.md) 
 - [Förstå analytikernas rapportavsnitt](threat-analytics-analyst-reports.md)
 - [Utvärdera och lösa säkerhetsbrister och exponeringar](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

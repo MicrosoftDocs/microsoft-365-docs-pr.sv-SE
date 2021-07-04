@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2570aba26d65a573c19777bc70db77f4118e336
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ff13a382f7c59083c217f937b996e63abc2ff52a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771051"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290009"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>OData-frågor med Microsoft Defender för Slutpunkt
 
@@ -41,13 +41,13 @@ Om du inte är bekant med OData-frågor kan du gå till: [OData V4-frågor](http
 
 Alla egenskaper kan inte filtreras.
 
-## <a name="properties-that-support-filter"></a>Egenskaper som stöder $filter:
-```
-- [Alert](alerts.md): ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category```.
-- [Machine](machine.md): ```ComputerDnsName```, ```LastSeen```, ```HealthStatus```, ```OsPlatform```, ```RiskScore``` and ```RbacGroupId```.
-- [MachineAction](machineaction.md): ```Status```, ```MachineId```, ```Type```, ```Requestor``` and ```CreationDateTimeUtc```.
-- [Indicator](ti-indicator.md): ```indicatorValue```, ```indicatorType```, ```creationTimeDateTimeUtc```, ```createdBy```, ```severity ``` and ```action ```.
-```
+## <a name="properties-that-support-filter"></a>Egenskaper som stöder $filter
+
+- [Varning:](alerts.md) `alertCreationTime` , , , , och `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
+- [Dator:](machine.md) `ComputerDnsName` , , , och `LastSeen` `HealthStatus` `OsPlatform` `RiskScore` `RbacGroupId` .
+- [MachineAction:](machineaction.md) `Status` , , och `MachineId` `Type` `Requestor` `CreationDateTimeUtc` .
+- [Indikator:](ti-indicator.md) `indicatorValue` , , , och `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
+
 ### <a name="example-1"></a>Exempel 1
 
 Få 10 senaste aviseringar med relaterade bevis:
@@ -56,7 +56,7 @@ Få 10 senaste aviseringar med relaterade bevis:
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-**Svar:**
+#### <a name="response"></a>Svar
 
 ```json
 {
@@ -201,7 +201,7 @@ Hämta alla aviseringar som uppdaterades senast efter 2019-11-22 00:00:00:
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
-**Svar:**
+#### <a name="response"></a>Svar
 
 ```json
 {
@@ -263,7 +263,7 @@ Skaffa alla enheter med "Hög" "RiskScore":
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
-**Svar:**
+#### <a name="response"></a>Svar
 
 ```json
 {
@@ -316,7 +316,7 @@ Få de 100 bästa enheterna med "HealthStatus" inte lika med "Aktiv":
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
-**Svar:**
+#### <a name="response"></a>Svar
 
 ```json
 {
@@ -369,7 +369,7 @@ Få alla enheter som senast sågs efter 2018-10-20:
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
-**Svar:**
+#### <a name="response"></a>Svar
 
 ```json
 {
@@ -422,7 +422,7 @@ Hämta alla antivirussökningar som användaren har Analyst@examples.onmicrosoft
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
-**Svar:**
+#### <a name="response"></a>Svar
 
 ```json
 json{
@@ -454,7 +454,7 @@ Få antalet öppna aviseringar för en viss enhet:
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
-**Svar:**
+#### <a name="response"></a>Svar
 
 ```json
 4
@@ -468,7 +468,7 @@ Skaffa alla enheter med "computerDnsName" från och med "mymachine":
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
 ```
 
-**Svar:**
+#### <a name="response"></a>Svar
 
 ```json
 json{
@@ -514,4 +514,5 @@ json{
 ```
 
 ## <a name="see-also"></a>Se även
-- [Microsoft Defender för slutpunkts-API:er](apis-intro.md)
+
+[Microsoft Defender för slutpunkts-API:er](apis-intro.md)

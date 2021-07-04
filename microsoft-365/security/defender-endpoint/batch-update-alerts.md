@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db745c1b12c64baff5bf2c0a212446ce0f773709
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 80f88b31c1e07d1f40f3f58a1bd21b4a5c58c60b
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167086"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290213"
 ---
 # <a name="batch-update-alerts"></a>Batchuppdateringsaviseringar
 
@@ -37,46 +37,53 @@ ms.locfileid: "51167086"
 
 
 ## <a name="api-description"></a>API-beskrivning
-Uppdaterar egenskaper för en batch med befintliga [aviseringar.](alerts.md)
-<br>**Kommentarsinskick** är tillgängligt med eller utan uppdatering av egenskaper.
-<br>Egenskaper som kan uppdateras är: `status` `determination` , och `classification` `assignedTo` .
 
+Uppdaterar egenskaper för en batch med befintliga [aviseringar.](alerts.md)
+
+**Kommentarsinskick** är tillgängligt med eller utan uppdatering av egenskaper.
+
+Egenskaper som kan uppdateras är: `status` `determination` , och `classification` `assignedTo` .
 
 ## <a name="limitations"></a>Begränsningar
+
 1. Du kan uppdatera aviseringar som är tillgängliga i API:et. Mer information finns i Listaviseringar. [](get-alerts.md)
 2. Begränsningar i kursen för detta API är 10 samtal per minut och 500 samtal per timme.
 
-
 ## <a name="permissions"></a>Behörigheter
+
 En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)
 
-Behörighetstyp |   Behörighet  |   Visningsnamn för behörighet
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
 :---|:---|:---
-Program |   Alerts.ReadWrite.All |  "Läs och skriv alla aviseringar"
+Program | Alerts.ReadWrite.All | "Läs och skriv alla aviseringar"
 Delegerat (arbets- eller skolkonto) | Alert.ReadWrite | "Aviseringar om läsning och skrivning"
 
->[!Note]
+> [!NOTE]
 > När du skaffar en token med hjälp av användarautentiseringsuppgifter:
->- Användaren måste ha minst följande rollbehörighet: "Undersökning av aviseringar" (mer information finns i [Skapa och](user-roles.md) hantera roller)
->- Användaren måste ha åtkomst till enheten som är kopplad till aviseringen, baserat på enhetsgruppinställningar (mer information finns i Skapa och hantera enhetsgrupper) [](machine-groups.md)
+>
+> - Användaren måste ha minst följande rollbehörighet: "Undersökning av aviseringar" (mer information finns i [Skapa och](user-roles.md) hantera roller)
+> - Användaren måste ha åtkomst till enheten som är kopplad till aviseringen, baserat på enhetsgruppinställningar (mer information finns i Skapa och hantera enhetsgrupper) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-begäran
+
 ```http
 POST /api/alerts/batchUpdate
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
-Innehållstyp | Sträng | application/json. **Obligatoriskt.**
+Content-Type | Sträng | application/json. **Obligatoriskt.**
 
+## <a name="request-body"></a>Frågebrödtext
 
-## <a name="request-body"></a>Begärans brödtext
 Ange i meddelandetexten för begäran de aviseringar som ska uppdateras och värdena för de relevanta fält som du vill uppdatera för dessa aviseringar.
-<br>Befintliga egenskaper som inte ingår i begärans brödtext behåller sina tidigare värden eller beräknas om baserat på ändringar av andra egenskapsvärden. 
-<br>För bästa prestanda bör du inte inkludera befintliga värden som inte har ändrats.
+
+Befintliga egenskaper som inte ingår i begärans brödtext behåller sina tidigare värden eller beräknas om baserat på ändringar av andra egenskapsvärden.
+
+För bästa prestanda bör du inte inkludera befintliga värden som inte har ändrats.
 
 Egenskap | Typ | Beskrivning
 :---|:---|:---
@@ -88,12 +95,12 @@ determination | Sträng | Anger vilka aviseringar som ska avgöras. Egenskapsvä
 kommentar | Sträng | Kommentar som ska läggas till i de angivna aviseringarna.
 
 ## <a name="response"></a>Svar
-Om det lyckas returnerar den här metoden 200 OK, med en tom svarstext.
 
+Om det lyckas returnerar den här metoden 200 OK, med en tom svarstext.
 
 ## <a name="example"></a>Exempel
 
-**Begäran**
+### <a name="request"></a>Begäran
 
 Här är ett exempel på begäran.
 

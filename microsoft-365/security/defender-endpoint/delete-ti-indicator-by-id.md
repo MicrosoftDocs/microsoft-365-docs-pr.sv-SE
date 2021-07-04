@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: eaef6b25e2db72149a1a1128899d8a79a38a4c60
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1541e1d6e177416d77d768cef04d2524e6907ab5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771027"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289925"
 ---
 # <a name="delete-indicator-api"></a>Ta bort indikator-API
 
@@ -39,46 +39,49 @@ ms.locfileid: "52771027"
 
 
 ## <a name="api-description"></a>API-beskrivning
+
 Tar bort en [indikatortitet](ti-indicator.md) med hjälp av ID.
 
-
 ## <a name="limitations"></a>Begränsningar
-1. Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.
 
+Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.
 
 ## <a name="permissions"></a>Behörigheter
+
 En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i [Komma igång](apis-intro.md)
 
-Behörighetstyp |   Behörighet  |   Visningsnamn för behörighet
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
 :---|:---|:---
-Program |   Ti.ReadWrite |  "Läs och skriv TI-indikatorer"
-Program |   Ti.ReadWrite.All |  Indikatorer för läsning och skrivning
-
+Program | Ti.ReadWrite | "Läs och skriv TI-indikatorer"
+Program | Ti.ReadWrite.All | Indikatorer för läsning och skrivning
 
 ## <a name="http-request"></a>HTTP-begäran
-```
+
+```http
 Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
 ```
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 
+## <a name="request-body"></a>Frågebrödtext
 
-## <a name="request-body"></a>Begärans brödtext
 Tom
 
 ## <a name="response"></a>Svar
+
 Om indikator finns och tagits bort korrekt – 204 OK utan innehåll.
+
 Om indikator med det angivna ID:t hittades inte – 404 Hittades inte.
 
 ## <a name="example"></a>Exempel
 
-**Begäran**
+### <a name="request"></a>Begäran
 
 Här är ett exempel på begäran.
 

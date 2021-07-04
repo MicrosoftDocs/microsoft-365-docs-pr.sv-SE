@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 4b34d3ea20716fb2424d9317b8a51c088a5714a6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ddc28149ca2ab43b7c14d3bdbaeeecdad1b18387
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935359"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289769"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>Tillhandahålla åtkomst för hanterad säkerhetstjänstleverantör (MSSP) 
 
@@ -50,10 +50,9 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
 
     De här grupperna länkas till de roller som du skapar i Defender för slutpunkt i Microsoft 365 säkerhetscenter. Det gör du genom att skapa tre grupper i kundens AD-klientorganisation. Med den här metoden skapar vi följande grupper:
 
-    - Analytiker på nivå 1 
-    - Analytiker på nivå 2 
+    - Analytiker på nivå 1
+    - Analytiker på nivå 2
     - Mssp-analytikers godkännare  
-
 
 2. Skapa Defender för slutpunktsroller för lämpliga åtkomstnivåer i Customer Defender för Slutpunkt Microsoft 365 roller och grupper i säkerhetscentret.
 
@@ -73,12 +72,10 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
 
     Mer information finns i Använda [rollbaserad åtkomstkontroll.](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 
-
-
 ## <a name="configure-governance-access-packages"></a>Konfigurera styrningsåtkomstpaket
 
-1.  **Lägg till MSSP som ansluten organisation i kund AAD: identitetsstyrning**
-    
+1. **Lägg till MSSP som ansluten organisation i kund AAD: identitetsstyrning**
+
     Om du lägger till MSSP som en ansluten organisation kan MSSP begära åtkomst och tillhandahålla åtkomst. 
 
     Det gör du genom att i kundens AD-klientorganisation få åtkomst till identitetsstyrning: Ansluten organisation. Lägg till en ny organisation och sök efter din MSSP-analytiker via klientorganisations-ID eller domän. Vi föreslår att du skapar en separat AD-klientorganisation för dina MSSP-analytiker.
@@ -87,12 +84,11 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
 
     Resurskataloger är en logisk samling åtkomstpaket som skapats i kundens AD-klientorganisation.
 
-    Det gör du genom att i kundens AD-klientorganisation få åtkomst till identitetsstyrning: kataloger och lägga till **ny katalog.** I exemplet kallar vi det **MSSP Accesses.** 
+    Det gör du genom att i kundens AD-klientorganisation få åtkomst till identitetsstyrning: kataloger och lägga till **ny katalog.** I exemplet kallar vi det **MSSP Accesses.**
 
     ![Bild av ny katalog](../../media/goverance-catalog.png)
 
     Mer information finns i [Skapa en resurskatalog.](/azure/active-directory/governance/entitlement-management-catalog-create)
-
 
 3. **Skapa åtkomstpaket för MSSP-resurser Kund AAD: Identitetsstyrning**
 
@@ -109,28 +105,27 @@ Om du vill implementera en lösning med flera klientorganisationens delegerade �
 
     Mer information finns i [Skapa ett nytt åtkomstpaket.](/azure/active-directory/governance/entitlement-management-access-package-create)
 
-
 4. **Länk för åtkomstbegäran till MSSP-resurser från kund AAD: identitetsstyrning**
 
     Länken Min åtkomstportal används av MSSP SOC-analytiker för att begära åtkomst via de åtkomstpaket som skapats. Länken är beständiga, vilket innebär att samma länk kan användas med tiden för nya analytiker. Analytikerbegäran går i en kö för godkännande av analytiker som godkänner **MSSP.**
-
 
     ![Bild av åtkomstegenskaper](../../media/access-properties.png)
 
     Länken finns på översiktssidan för varje åtkomstpaket.
 
-## <a name="manage-access"></a>Hantera åtkomst 
+## <a name="manage-access"></a>Hantera åtkomst
 
 1. Granska och auktorisera åtkomstförfrågningar i Customer and/or MSSP myaccess.
 
     Åtkomstförfrågningar hanteras i kundens My Access av medlemmar i gruppen Analysts godkännare för MSSP.
 
-    Det gör du genom att använda kundens myaccess med hjälp av:  `https://myaccess.microsoft.com/@<Customer Domain >` . 
+    Det gör du genom att använda kundens myaccess med hjälp av: `https://myaccess.microsoft.com/@<Customer Domain>` .
 
-    Exempel:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
+    Exempel: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
+
 2. Godkänn eller neka förfrågningar i **avsnittet Godkännanden** i användargränssnittet.
 
-     Analytikernas åtkomst har etablerats och varje analytiker ska kunna komma åt kundens Microsoft 365 Säkerhetscenter: 
+     Analytikernas åtkomst har etablerats och varje analytiker ska kunna komma åt kundens Microsoft 365 Säkerhetscenter:
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` med de behörigheter och roller som de har tilldelats.
 

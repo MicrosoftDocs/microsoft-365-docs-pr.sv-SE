@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a506f4913369e53fd2ed4943bb2557935f1d62e5
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.openlocfilehash: a7a560cb33190105f8df5922e04aeada4d75f398
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105566"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290045"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Skapa en anpassad stegvis införandeprocess för Microsoft Defender-uppdateringar
 
@@ -43,7 +43,7 @@ Om du vill skapa en egen, stegvis utrullningsprocess för Defender-uppdateringar
 I följande tabell finns tillgängliga grupprincipinställningar för konfigurering av uppdateringskanaler:
 
 | Ange rubrik  | Beskrivning  | Plats  |
-|-|-|-|
+|:---|:---|:---|
 | Välj gradvis utrullningskanal för månatlig uppdatering av Microsoft Defender-plattformen  | Aktivera den här principen för att ange när enheter ska få uppdateringar av Microsoft Defender-plattformen under den månatliga gradvisa utrullningen. Betakanal: Enheter som är inställda på den här kanalen blir först med att ta emot nya uppdateringar. Välj Betakanal för att delta i identifiering och rapportering av problem till Microsoft. Enheter i Windows Insider Program prenumererar på den här kanalen som standard. Endast för användning i (manuella) testmiljöer och ett begränsat antal enheter.  <br><br>  Aktuell kanal (förhandsversion): Enheter som använder den här kanalen kommer att erbjudas tidigast under den månatliga gradvisa versionen. Förslag för miljöer före produktion/validering.  <br><br>  Aktuell kanal (stegvis): Enheter erbjuds uppdateringar efter den månatliga gradvisa utgivningscykeln. Rekommenderas att gälla för en liten, representativ del av produktionspopulationen (~10 %).  <br><br>  Aktuell kanal (bred): Enheter erbjuds endast uppdateringar efter att den gradvisa versionen har slutförts. Rekommenderas att användas på en omfattande uppsättning enheter i produktionspopulationen (~10–100 %).  <br><br>   Om du inaktiverar eller inte konfigurerar den här principen kommer enheten att uppdateras automatiskt under den gradvisa versionen. Passar för de flesta enheter.  | Windows Components\Microsoft Defender Antivirus  |
 | Välj gradvis utrullningskanal för månadsuppdatering av Microsoft Defender  | Aktivera den här principen för att ange när enheter får Microsoft Defender-motoruppdateringar under den månatliga gradvisa utrullningen.  <br><br>  Betakanal: Enheter som är inställda på den här kanalen blir först med att ta emot nya uppdateringar. Välj Betakanal för att delta i identifiering och rapportering av problem till Microsoft. Enheter i Windows Insider Program prenumererar på den här kanalen som standard. Endast för användning i (manuella) testmiljöer och ett begränsat antal enheter.  <br><br>  Aktuell kanal (förhandsversion): Enheter som använder den här kanalen kommer att erbjudas tidigast under den månatliga gradvisa versionen. Förslag för miljöer före produktion/validering.  <br><br>  Aktuell kanal (stegvis): Enheter erbjuds uppdateringar efter den månatliga gradvisa utgivningscykeln. Rekommenderas att gälla för en liten, representativ del av produktionspopulationen (~10 %).  <br><br>  Aktuell kanal (bred): Enheter erbjuds endast uppdateringar efter att den gradvisa versionen har slutförts. Rekommenderas att användas på en omfattande uppsättning enheter i produktionspopulationen (~10–100 %).  <br><br>  Om du inaktiverar eller inte konfigurerar den här principen kommer enheten att uppdateras automatiskt under den gradvisa versionen. Passar för de flesta enheter.  | Windows Components\Microsoft Defender Antivirus  |
 | Utrullningskanal för dagliga uppdateringar för Microsoft Defender gradvis  | Aktivera den här principen för att ange när enheter ska få uppdateringar av Microsoft Defender-definition under den dagliga gradvisa utrullningen. <br><br> Aktuell kanal (fasad): Enheter erbjuds uppdateringar efter utgivningscykeln. Rekommenderas att gälla för en liten, representativ del av produktionspopulationen (~10 %). <br><br>   Aktuell kanal (bred): Enheter erbjuds endast uppdateringar efter att den gradvisa versionen har slutförts. Rekommenderas att användas på en omfattande uppsättning enheter i produktionspopulationen (~10–100 %). <br><br>   Om du inaktiverar eller inte konfigurerar den här principen kommer enheten att uppdateras automatiskt under den dagliga versionen. Passar för de flesta enheter.  | Windows Components\Microsoft Defender Antivirus  |
@@ -76,6 +76,8 @@ Följ länken nedan för att skapa en anpassad princip i Intune:
 
 [Lägga till anpassade inställningar Windows 10 enheter i Microsoft Intune – Azure \| Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
 
+Mer information om Defender CSP:er som används för den stegvisa utrullningsprocessen finns [i Defender CSP.](/windows/client-management/mdm/defender-csp)
+
 ## <a name="powershell"></a>PowerShell
 
 Använd `Set-MpPreference` cmdleten för att konfigurera de gradvisa uppdateringarna.
@@ -94,4 +96,4 @@ Exempel:
 
 Används `Set-MpPreference -PlatformUpdatesChannel Beta` för att konfigurera plattformsuppdateringar så att de kommer från Beta-kanalen.
 
-Mer information om parametrar och hur du konfigurerar dem finns i [Set-MpPreference (Defender) | Microsoft Docs.](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps&preserve-view=true)
+Mer information om parametrar och hur du konfigurerar dem finns i [Set-MpPreference (Defender) | Microsoft Docs.](/powershell/module/defender/set-mppreference)

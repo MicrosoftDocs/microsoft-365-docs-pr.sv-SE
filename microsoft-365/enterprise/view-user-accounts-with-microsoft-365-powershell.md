@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: Lär dig hur du visar, listar eller visar Microsoft 365-användarkonton på olika sätt med PowerShell.
-ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 77219fb89430ed257ef2a68a7b24bf9ebac715b2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924654"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290177"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Visa Microsoft 365-användarkonton med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Du kan använda Microsoft 365 administrationscenter för att visa kontona för Microsoft 365 klientorganisationen. PowerShell för Microsoft 365 detta men ger även ytterligare funktioner.
+Du kan använda Administrationscenter för Microsoft 365 för att visa kontona för din Microsoft 365 klientorganisation. PowerShell för Microsoft 365 detta men ger även ytterligare funktioner.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Använda Azure Active Directory PowerShell för Graph modul
 
@@ -148,8 +148,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  Syntaxen för  cmdleten Where i de här exemplen **är Where {$ \_ .** [användarnamn för användarkontoegenskap] [jämförelseoperator] [värde] **}**.> [jämförelseoperator] är **-eq** för lika med, **-ne** för inte lika med, **-lt** för mindre än, **-gt** för större än och andra.  [värde] är vanligtvis en sträng (en sekvens med bokstäver, siffror och andra tecken), ett numeriskt värde eller **$Null** ospecificerat värde. Mer information finns i [Var](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
-  
+> Syntaxen för  cmdleten Where i de här exemplen **är Where {$ \_ .** [användarnamn för användarkontoegenskap] [jämförelseoperator] [värde] **}**.> [jämförelseoperator] är **-eq** för lika med, **-ne** för inte lika med, **-lt** för mindre än, **-gt** för större än och andra.  [värde] är vanligtvis en sträng (en sekvens med bokstäver, siffror och andra tecken), ett numeriskt värde eller **$Null** ospecificerat värde. Mer information finns i [Var](/powershell/module/microsoft.powershell.core/where-object).
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Använda Microsoft Azure Active Directory för Windows PowerShell
 
@@ -241,7 +240,7 @@ Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  Syntaxen för  cmdleten Where i de här exemplen **är Where {$ \_ .** [användarnamn för användarkontoegenskap] [jämförelseoperator] [värde] **}**.  [jämförelseoperator] är **-eq** för lika med, **-ne** för inte lika med, **-lt** för mindre än, **-gt för** större än och andra.  [värde] är vanligtvis en sträng (en sekvens med bokstäver, siffror och andra tecken), ett numeriskt värde eller **$Null** ospecificerat värde. Mer information finns i [Var](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
+> Syntaxen för  cmdleten Where i de här exemplen **är Where {$ \_ .** [användarnamn för användarkontoegenskap] [jämförelseoperator] [värde] **}**.  [jämförelseoperator] är **-eq** för lika med, **-ne** för inte lika med, **-lt** för mindre än, **-gt för** större än och andra.  [värde] är vanligtvis en sträng (en sekvens med bokstäver, siffror och andra tecken), ett numeriskt värde eller **$Null** ospecificerat värde. Mer information finns i [Var](/powershell/module/microsoft.powershell.core/where-object).
   
 Om du vill kontrollera blockerad status för ett användarkonto använder du följande kommando:
   
@@ -254,11 +253,11 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 Som standard visar **cmdlet:en Get-MsolUser** dessa tre egenskaper för användarkonton:
   
 - UserPrincipalName
-    
+
 - DisplayName
-    
+
 - isLicensed
-    
+
 Om du behöver ytterligare egenskaper, till exempel avdelningen där användaren arbetar och landet/regionen där de använder Microsoft 365-tjänster, kan du köra **Get-MsolUser** i kombination med cmdleten **Select** och ange listan med egenskaper för användarkonton. Här är ett exempel:
   
 ```powershell

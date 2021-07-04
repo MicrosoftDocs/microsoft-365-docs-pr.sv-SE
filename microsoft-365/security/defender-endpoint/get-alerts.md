@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769263"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289853"
 ---
 # <a name="list-alerts-api"></a>API för listvarningar
 
@@ -59,40 +59,42 @@ Hämtar en samling aviseringar.
 ## <a name="permissions"></a>Behörigheter
 En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)
 
-Behörighetstyp |   Behörighet  |   Visningsnamn för behörighet
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
 :---|:---|:---
-Program |   Alert.Read.All |    "Läs alla aviseringar"
-Program |   Alert.ReadWrite.All |   "Läs och skriv alla aviseringar"
+Program | Alert.Read.All | "Läs alla aviseringar"
+Program | Alert.ReadWrite.All | "Läs och skriv alla aviseringar"
 Delegerat (arbets- eller skolkonto) | Avisering.Läsa | Läsaviseringar
 Delegerat (arbets- eller skolkonto) | Alert.ReadWrite | "Aviseringar om läsning och skrivning"
 
->[!Note]
+> [!NOTE]
 > När du skaffar en token med hjälp av användarautentiseringsuppgifter:
->- Användaren måste ha minst följande rollbehörighet: 'Visa data' (mer information finns i [Skapa och](user-roles.md) hantera roller)
->- Svaret tar bara med aviseringar som associeras med enheter som användaren kan [](machine-groups.md) komma åt, baserat på enhetsgruppsinställningar (mer information finns i Skapa och hantera enhetsgrupper)
+>
+> - Användaren måste ha minst följande rollbehörighet: 'Visa data' (mer information finns i [Skapa och](user-roles.md) hantera roller)
+> - Svaret tar bara med aviseringar som associeras med enheter som användaren kan [](machine-groups.md) komma åt, baserat på enhetsgruppsinställningar (mer information finns i Skapa och hantera enhetsgrupper)
 
 ## <a name="http-request"></a>HTTP-begäran
-```
+
+```http
 GET /api/alerts
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 
+## <a name="request-body"></a>Frågebrödtext
 
-## <a name="request-body"></a>Begärans brödtext
 Tom
 
 ## <a name="response"></a>Svar
-Om det lyckas returnerar den här metoden 200 OK och en lista med [aviseringsobjekt](alerts.md) i svarets brödtext.
 
+Om det lyckas returnerar den här metoden 200 OK och en lista med [aviseringsobjekt](alerts.md) i svarets brödtext.
 
 ## <a name="example-1---default"></a>Exempel 1 – Standard
 
-**Begäran**
+### <a name="request"></a>Begäran
 
 Här är ett exempel på begäran.
 
@@ -100,13 +102,12 @@ Här är ett exempel på begäran.
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-**Svar**
+### <a name="response"></a>Svar
 
 Här är ett exempel på svaret.
 
->[!NOTE]
->Svarslistan som visas här kan trunkeras för att vara kort. Alla aviseringar returneras från ett faktiskt samtal.
-
+> [!NOTE]
+> Svarslistan som visas här kan trunkeras för att vara kort. Alla aviseringar returneras från ett faktiskt samtal.
 
 ```json
 {
@@ -162,7 +163,7 @@ Här är ett exempel på svaret.
 
 ## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Exempel 2 – Få 10 senaste aviseringar med relaterade bevis
 
-**Begäran**
+### <a name="request"></a>Begäran
 
 Här är ett exempel på begäran.
 
@@ -170,14 +171,12 @@ Här är ett exempel på begäran.
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-
-**Svar**
+### <a name="response"></a>Svar
 
 Här är ett exempel på svaret.
 
->[!NOTE]
->Svarslistan som visas här kan trunkeras för att vara kort. Alla aviseringar returneras från ett faktiskt samtal.
-
+> [!NOTE]
+> Svarslistan som visas här kan trunkeras för att vara kort. Alla aviseringar returneras från ett faktiskt samtal.
 
 ```json
 {
@@ -314,6 +313,6 @@ Här är ett exempel på svaret.
 }
 ```
 
-
 ## <a name="see-also"></a>Se även
-- [OData-frågor med Microsoft Defender för Slutpunkt](exposed-apis-odata-samples.md)
+
+[OData-frågor med Microsoft Defender för Slutpunkt](exposed-apis-odata-samples.md)

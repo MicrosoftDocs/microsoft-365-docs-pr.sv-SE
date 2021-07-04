@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b85c0c63cc7c72ad555d80bd8ce6c07c95b4b97b
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 83f269a13a54ee38b7e7a464d794d87ddbd7b520
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908083"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289937"
 ---
 # <a name="client-behavioral-blocking"></a>Beteendeblockering av klientdator
 
@@ -46,7 +46,7 @@ Antivirusskyddet fungerar bäst när det paras ihop med molnskydd.
 
 [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) kan identifiera misstänkt beteende, skadlig kod, fillös och minnesintrång och mycket mer på en enhet. När misstänkta beteenden identifieras Microsoft Defender Antivirus och skickar de misstänkta beteendena och deras processträd till molnskyddstjänsten. Maskininlärning skiljer mellan skadliga program och bra beteenden inom millisekunder och klassificerar varje artefakt. I nästan realtid blockeras en artefakt på enheten när den visar sig vara skadlig. 
 
-När ett misstänkt beteende identifieras [](alerts-queue.md) genereras en avisering och visas i [Microsoft 365 Defender-portalen](microsoft-defender-security-center.md) (tidigare Microsoft Defender Säkerhetscenter).
+När ett misstänkt beteende upptäcks genereras [en](alerts-queue.md) avisering och visas i [Microsoft 365 Defender](microsoft-defender-security-center.md) (tidigare Microsoft Defender Säkerhetscenter).
 
 Klientbeteendeblockering är effektivt eftersom det inte bara hjälper till att förhindra att en attack startar, den kan också stoppa en attack som har börjat köras. Och med [blockering av feedbackslingan](feedback-loop-blocking.md) (en annan funktion för blockering och inneslutning) förhindras attacker på andra enheter i organisationen.
 
@@ -54,26 +54,24 @@ Klientbeteendeblockering är effektivt eftersom det inte bara hjälper till att 
 
 Beteendebaserade identifieringar namnges enligt [MITRE ATT-&CK-matrisen för företag.](https://attack.mitre.org/matrices/enterprise) Namngivningskonventionerna hjälper till att identifiera attackfasen där det skadliga beteendet har observerats:
 
-
-|Taktik |   Namn på identifiering av hot |
+|Taktik | Namn på identifiering av hot |
 |----|----|
 |Inledande åtkomst | `Behavior:Win32/InitialAccess.*!ml` |
-|Körning  | `Behavior:Win32/Execution.*!ml` |
-|Beständighet    | `Behavior:Win32/Persistence.*!ml` |
-|Eskalering av behörighet   | `Behavior:Win32/PrivilegeEscalation.*!ml` |
-|Defense Evasion    | `Behavior:Win32/DefenseEvasion.*!ml` |
-|Åtkomst till autentiseringsuppgifter  | `Behavior:Win32/CredentialAccess.*!ml` |
-|Upptäckt  | `Behavior:Win32/Discovery.*!ml` |
+|Körning | `Behavior:Win32/Execution.*!ml` |
+|Beständighet | `Behavior:Win32/Persistence.*!ml` |
+|Eskalering av behörighet | `Behavior:Win32/PrivilegeEscalation.*!ml` |
+|Defense Evasion | `Behavior:Win32/DefenseEvasion.*!ml` |
+|Åtkomst till autentiseringsuppgifter | `Behavior:Win32/CredentialAccess.*!ml` |
+|Upptäckt | `Behavior:Win32/Discovery.*!ml` |
 |Lateral Movement | `Behavior:Win32/LateralMovement.*!ml` |
-|Samling |   `Behavior:Win32/Collection.*!ml` |
+|Samling | `Behavior:Win32/Collection.*!ml` |
 |Kommando och kontroll | `Behavior:Win32/CommandAndControl.*!ml` |
-|Exfiltration   | `Behavior:Win32/Exfiltration.*!ml` |
+|Exfiltration | `Behavior:Win32/Exfiltration.*!ml` |
 |Påverkan | `Behavior:Win32/Impact.*!ml` |
-|Ej kategoriserat  | `Behavior:Win32/Generic.*!ml` |
+|Ej kategoriserat | `Behavior:Win32/Generic.*!ml` |
 
 > [!TIP]
 > Mer information om specifika hot finns i den senaste **[globala hotaktiviteten.](https://www.microsoft.com/wdsi/threats)**
-
 
 ## <a name="configuring-client-behavioral-blocking"></a>Konfigurera klientbeteendeblockering
 
@@ -88,4 +86,3 @@ Om din organisation använder Defender för Slutpunkt är klientbeteendeblockeri
 - [Minskning av attackytan](attack-surface-reduction.md)
 
 - [Nästa generations skydd](configure-microsoft-defender-antivirus-features.md) (antivirus, program mot skadlig programvara och andra skyddsfunktioner för hot)
-

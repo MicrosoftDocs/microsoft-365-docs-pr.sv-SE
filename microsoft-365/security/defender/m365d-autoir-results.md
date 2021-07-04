@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9ee2f0402e8cfd184e59dce5a382f835b706d6aa
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 2cc83e24d4dd81c9d2e972fa274b48fc3946532a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022571"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289733"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Information och resultat från en automatiserad undersökning
 
@@ -104,14 +104,14 @@ I vyn Undersökningsinformation kan du se information om flikarna **Undersöknin
 
 | Tabb | Beskrivning |
 |:--------|:--------|
-| **Undersökningsdiagram**   | Ger en visuell representation av undersökningen. Visar enheter och visar hot som hittas, tillsammans med aviseringar och om några åtgärder väntar på godkännande.<br/>Du kan markera ett objekt i diagrammet om du vill visa mer information. Om du till exempel **väljer ikonen Bevis** kommer du till fliken **Bevis** där du kan se identifierade enheter och deras bedömningar. |
-| **Varningar**    | Listar aviseringar kopplade till undersökningen. Varningar kan komma från skyddsfunktioner för hot på en användares enhet, i Office appar, Microsoft Cloud App Security och andra Microsoft 365 Defender funktioner.|
+| **Undersökningsdiagram** | Ger en visuell representation av undersökningen. Visar enheter och visar hot som hittas, tillsammans med aviseringar och om några åtgärder väntar på godkännande.<br/>Du kan markera ett objekt i diagrammet om du vill visa mer information. Om du till exempel **väljer ikonen Bevis** kommer du till fliken **Bevis** där du kan se identifierade enheter och deras bedömningar. |
+| **Varningar** | Listar aviseringar kopplade till undersökningen. Varningar kan komma från skyddsfunktioner för hot på en användares enhet, i Office appar, Microsoft Cloud App Security och andra Microsoft 365 Defender funktioner.|
 | **Enheter** | Visar enheter som ingår i undersökningen tillsammans med deras åtgärdsnivå. (Åtgärdsnivåer motsvarar [automationsnivån för enhetsgrupper](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **Postlådor** |Listar postlådor som påverkas av identifierade hot.  |
 | **Användare**  | Här listas användarkonton som påverkas av identifierade hot. |
 | **Bevis** | Här listas bevis som upphöjts av varningar eller undersökningar. Omfattar bedömningstillstånd *(Skadlig,* *Misstänkt,* Okänd eller *Inga hot hittades)* och åtgärdsstatus. |
-| **Enheter**  | Innehåller information om varje analyserad enhet, inklusive en bedömning för varje typ av enhet *(Skadlig,* Misstänkt eller *Inga hot hittades).*|
-|**Logg**    | Visar en kronologisk, detaljerad vy av alla undersökningsåtgärder som har vidtagits efter att en avisering utlösts.|
+| **Enheter** | Innehåller information om varje analyserad enhet, inklusive en bedömning för varje typ av enhet *(Skadlig,* Misstänkt eller *Inga hot hittades).*|
+|**Logg** | Visar en kronologisk, detaljerad vy av alla undersökningsåtgärder som har vidtagits efter att en avisering utlösts.|
 | **Historik för väntande åtgärder** | En lista med objekt som måste godkännas för att fortsätta. Gå till Åtgärdscenter [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () för att godkänna väntande åtgärder. |
 
 ## <a name="next-steps"></a>Nästa steg

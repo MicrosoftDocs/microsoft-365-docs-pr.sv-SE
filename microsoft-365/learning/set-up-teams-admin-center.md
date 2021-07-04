@@ -15,75 +15,74 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Lär dig hur du konfigurerar Microsoft Viva Learning (förhandsversion) Teams administrationscentret.
-ms.openlocfilehash: 860f16bee7d93f2212072c5d738263402704272f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 99e63210e8f8c10e3721c35fb69df7880c7e1929
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789237"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290225"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Konfigurera Microsoft Viva Learning (förhandsversion) i Teams administrationscenter
 
 > [!NOTE]
 > Informationen i den här artikeln gäller en förhandsversion av en produkt som kan komma att ändras väsentligt innan den släpps till kommersiellt bruk. 
 
-Administratören Teams utföra vissa steg för att aktivera Viva Learning (förhandsversion) för sina användare i klientorganisationen. De här stegen varierar beroende på hur klientorganisationen är aktiverad: [*Offentlig förhandsversion*](set-up-teams-admin-center.md#public-preview-tenants) eller [ *Privat förhandsversion* (eller betaversion).](set-up-teams-admin-center.md#private-preview-tenants)
+Administratören Teams vissa steg för att aktivera Viva Learning (förhandsversion) för sina användare i klientorganisationen. De här stegen varierar beroende på hur klientorganisationen är aktiverad: [*Offentlig förhandsversion*](set-up-teams-admin-center.md#public-preview-tenants) eller [ *Privat förhandsversion* (eller betaversion).](set-up-teams-admin-center.md#private-preview-tenants)
 
 ## <a name="public-preview-tenants"></a>Offentliga förhandsversionsklienter
 
 ### <a name="administrator-steps-for-public-preview-tenants"></a>Administratörssteg för offentliga förhandsversionsklienter
 
-Eftersom Viva Learning (förhandsversion) ännu inte är tillgängligt i allmänhet krävs vissa steg för att aktivera funktionerna och ange behörigheter för specifika användare eller grupper. 
+Eftersom Viva-Learning (förhandsversion) ännu inte är tillgängligt i allmänhet krävs vissa steg för att aktivera funktioner och ange behörigheter för specifika användare eller grupper. 
 
 1. Aktivera funktioner för offentlig förhandsversion för Viva Learning -användare (förhandsversion).
 
     a. Ändra Teams för att aktivera funktioner för offentlig förhandsgranskning. Se [Microsoft Teams offentlig förhandsversion](/microsoftteams/public-preview-doc-updates).
 
-    b. Aktivera uppdateringsprincipen för användare eller grupper som ska testa Viva Learning (förhandsversion). Se [Tilldela principer till användare och grupper.](/microsoftteams/assign-policies-users-and-groups)
+    b. Aktivera uppdateringsprincipen för användare eller grupper som ska utföra Viva Learning testning (förhandsversion). Se [Tilldela principer till användare och grupper.](/microsoftteams/assign-policies-users-and-groups)
 
-2. Ändra appbehörighetsprincipen för Viva Learning-användare (förhandsversion).
+2. Ändra appens behörighetsprincip för Viva Learning -användare (förhandsversion).
 
     a. Såvida den inte ingår i den globala principen ska du tillåta alla Microsoft-appar i appens behörighetsprincip. Se [Hantera appbehörighetsprinciper i Microsoft Teams](/microsoftteams/teams-app-permission-policies). 
 
-    b. Aktivera appens behörighetsprincip för användare eller grupper som ska utföra Viva Learning-testning (förhandsversion). Se [Tilldela principer till användare och grupper.](/microsoftteams/assign-policies-users-and-groups)
+    b. Aktivera appens behörighetsprincip för användare eller grupper som utför Viva Learning testning (förhandsversion). Se [Tilldela principer till användare och grupper.](/microsoftteams/assign-policies-users-and-groups)
 
-3.  Meddela användare som kommer att testa Viva Learning (förhandsversion) för att [byta sin build-klient till offentlig förhandsversion för Teams](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants).
+3. Meddela användare som ska testa Viva Learning (förhandsversion) för att byta sin build-klient till [offentlig förhandsversion för Teams.](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants)
 
 > [!IMPORTANT]
-> För offentliga förhandsversionsklienter visas Viva Learning (förhandsversion) inte i Hanterade appar i Teams förrän den slutgiltiga produktlansen.  Aktiverade användare av offentlig förhandsversion kan hitta Viva Learning (förhandsversion) i appbutiken Teams och använda den, när rätt principer och behörigheter har angetts.
+> För klientorganisation av offentlig förhandsversion visas Viva Learning (förhandsversion) inte i Hanterade appar i Teams administrationscenter förrän den slutgiltiga produktlansen.  Aktiverade användare av offentlig förhandsversion kan hitta Viva Learning (förhandsversion) i appbutiken Teams och använda den, när rätt principer och behörigheter har angetts.
 
 ### <a name="user-steps-for-public-preview-tenants"></a>Användarsteg för offentliga förhandsversionsklienter
 
 Användare som har aktiverats för test av den offentliga förhandsversionen – genom att aktivera de principer som tidigare beskrivits [–](set-up-teams-admin-center.md#administrator-steps-for-public-preview-tenants) måste växla till offentlig förhandsgranskning i Teams klient. [](/microsoftteams/public-preview-doc-updates#enable-public-preview)
 
 1. Användarna måste välja sin profilbild > **om**  >  **offentlig förhandsversion**.
-   
+
     ![Övre navigeringsfältet i Teams visar användarens profil](../media/learning/learning-app-select-profile-teams.png)
-    
+
 2. Användarna måste godkänna villkoren för den offentliga förhandsversionen.
 
     ![Växla till offentlig förhandsversion](../media/learning/learning-app-switch-to-public-preview.png)
- 
-3. Användare kan nu hitta Viva Learning (förhandsversion) i Teams app store och börja använda den.
+
+3. Användare kan nu hitta Viva Learning (förhandsversion) i Teams App Store och börja använda den.
 
 ## <a name="private-preview-tenants"></a>Privata förhandsversionsklienter
 
 ### <a name="administrator-steps-for-private-preview-or-beta-tenants"></a>Administratörssteg för privata förhandsversionsklienter (eller betaklienter)
 
-Det finns inga ytterligare principer som behöver aktiveras för klientorganisationen av den privata förhandsversionen. Viva Learning (förhandsversion) måste emellertid göras tillgängligt för användare i organisationen.
+Det finns inga ytterligare principer som behöver aktiveras för klientorganisationen av den privata förhandsversionen. Men Viva Learning (förhandsversion) måste göras tillgängligt för användare i organisationen.
 
 1. I det vänstra navigeringsfältet i Teams administrationscenter går du till Teams   >  **Hantera appar**.
 
    ![Vänster navigering i Teams administrationscenter som visar Teams program och avsnittet Hantera appar.](../media/learning/learning-app-teams-manage-apps-nav.png)
 
-2. På sidan **Hantera appar** skriver du *Viva Learning* i sökrutan och väljer sedan **Viva Learning (förhandsversion).**
+2. På sidan **Hantera appar** skriver du *Viva Learning* i sökrutan och väljer sedan **Viva Learning (förhandsversion)**.
 
    ![Sidan Hantera appar i Teams administrationscenter som visar sökrutan.](../media/learning/learning-app-teams-manage-apps-page.png)
 
-3. På sidan **Viva Learning (förhandsversion)** under **Status** väljer du **Tillåts** att aktivera Viva Learning (förhandsversion).
+3. På **sidan Viva Learning (förhandsversion)** under **Status**  väljer du Tillåts att aktivera Viva Learning (förhandsversion).
 
-   ![Sidan Utbildning i Teams visar avsnittet Status och Appinställningar.](../media/learning/learning-app-teams-learning-page.png)
-
+   ![Learning sidan i Teams administrationscenter med avsnittet Status och appinställningar.](../media/learning/learning-app-teams-learning-page.png)
 
 <!---
 The Teams admin installs Viva Learning (Preview) and applies permission policies through the Teams admin center.
@@ -141,4 +140,4 @@ To make Viva Learning (Preview) available for users in your organization, follow
 
 ## <a name="next-step"></a>Nästa steg
 
-[Konfigurera utbildningsinnehållskällor för Viva Learning (förhandsversion) Microsoft 365 administrationscentret](content-sources-365-admin-center.md)
+[Konfigurera utbildningsinnehållskällor för Viva Learning (förhandsversion) i Administrationscenter för Microsoft 365](content-sources-365-admin-center.md)

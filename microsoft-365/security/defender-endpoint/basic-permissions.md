@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e7c208998e436245c53b90905858b7cf7ebe91d6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844664"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290201"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Använda grundläggande behörigheter för att komma åt portalen
 
@@ -54,7 +54,7 @@ Du kan tilldela användare med någon av följande behörighetsnivåer:
     > [!NOTE]
     > Du måste köra PowerShell-cmdletarna i en upphöjd kommandorad.
 
-- Anslut på Azure Active Directory. Mer information finns i [Anslut-MsolService.](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)
+- Anslut på Azure Active Directory. Mer information finns i [Anslut-MsolService.](/powershell/module/msonline/connect-msolservice)
 
 **Fullständig åtkomst** <br>
 Användare med fullständig åtkomst kan logga in, visa all systeminformation och lösa aviseringar, skicka filer för djupanalys och ladda ned onboarding-paketet.
