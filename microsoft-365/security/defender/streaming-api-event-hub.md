@@ -1,6 +1,6 @@
 ---
-title: Strömma Microsoft 365 Defender-händelser till Azure Event Hub
-description: Läs om hur du konfigurerar Microsoft 365 Defender för att strömma Advanced Hunting-händelser till händelsehubben.
+title: Strömma Microsoft 365 Defender till Azure Event Hub
+description: Lär dig hur du Microsoft 365 Defender att strömma Advanced Hunting-händelser till händelsehubben.
 keywords: raw data export, streaming API, API, Azure Event Hub, Azure Storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f5d04d35c8c4fec18e1a689c51ecbc32d416adf
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2e43b75e49d01a05fdacae0adf63ea3337631dfd
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903822"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289253"
 ---
-# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Konfigurera Microsoft 365 Defender för att strömma Advanced Hunting-händelser till Azure Event Hub
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Konfigurera Microsoft 365 Defender att strömma Advanced Hunting-händelser till Azure Event Hub
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,12 +37,14 @@ ms.locfileid: "52903822"
 
 1. Skapa ett [händelsenav](/azure/event-hubs/) i klientorganisationen.
 
-2. Logga in på [din Azure-klientorganisation](https://ms.portal.azure.com/)och **gå till Prenumerationer > din > eller resursleverantörer > Registrera dig i Microsoft.Insights.**
+2. Logga in på [din Azure-klientorganisation](https://ms.portal.azure.com/)och gå till Prenumerationer > Din > eller **resursleverantörer > Registrera dig på Microsoft.Insights.**
 
 3. Skapa ett namnområde för händelsehubben, gå till Händelsehubben **>** Lägg till och välj prissättningsnivå, dataflödesenheter och Automatisk härdning som är lämpligt för förväntad belastning. Mer information finns i Priser [– | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
-### <a name="add-contributor-permissions"></a>Lägga till deltagarbehörigheter 
+### <a name="add-contributor-permissions"></a>Lägga till deltagarbehörigheter
+
 När namnområdet i Händelsehubben har skapats måste du:
+
 1. Definiera den användare som ska loggas in på Microsoft 365 Defender som deltagare.
 
 2. Om du ansluter till ett program lägger du till Tjänsten för registrering av appar som läsare, Azure Event Hub Data Receiver (detta kan också göras på resursgrupp- eller prenumerationsnivå). 
@@ -51,7 +53,7 @@ När namnområdet i Händelsehubben har skapats måste du:
 
 ## <a name="enable-raw-data-streaming"></a>Aktivera direktuppspelning av rådata
 
-1. Logga in på Microsoft 365 [Defender säkerhetscenter](https://security.microsoft.com) som en ***global administratör** _ eller _*_säkerhetsadministratör_**.
+1. Logga in på [säkerhetscentret Microsoft 365 Defender *](https://security.microsoft.com) **global administratör** _ eller _*_säkerhetsadministratör_**.
 
 2. Gå till [inställningssidan för Streaming API.](https://security.microsoft.com/settings/mtp_settings/raw_data_export)
 
@@ -75,15 +77,15 @@ När namnområdet i Händelsehubben har skapats måste du:
 
 ```JSON
 {
-    "records": [
-                    {
-                        "time": "<The time Microsoft 365 Defender received the event>"
-                        "tenantId": "<The Id of the tenant that the event belongs to>"
-                        "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                        "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
-                    }
-                    ...
-                ]
+   "records": [
+               {
+                  "time": "<The time Microsoft 365 Defender received the event>"
+                  "tenantId": "<The Id of the tenant that the event belongs to>"
+                  "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+                  "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+               }
+               ...
+            ]
 }
 ```
 
@@ -91,12 +93,9 @@ När namnområdet i Händelsehubben har skapats måste du:
 
 - Varje post innehåller händelsenamnet, tiden då Microsoft 365 Defender tog emot händelsen, den klientorganisation som den tillhör (du får bara händelser från klientorganisationen) och händelsen i JSON-format i en egenskap med namnet "**egenskaper**".
 
-- Mer information om schemat för de Microsoft 365 Defender-händelser finns i Avancerad sökning [– översikt.](advanced-hunting-overview.md)
+- Mer information om schemat för de Microsoft 365 Defender hittar du i [Avancerad sökning – översikt.](advanced-hunting-overview.md)
 
 - I tabellen Avancerad sökning finns en kolumn med namnet **MachineGroup** som innehåller enhetens grupp i tabellen **DeviceInfo.** Här är alla händelser dekorerade med den här kolumnen. 
-
-
-
 
 ## <a name="data-types-mapping"></a>Mappning av datatyper
 
@@ -105,7 +104,7 @@ Så här hämtar du datatyperna för händelseegenskaper:
 1. Logga in på [Microsoft 365 säkerhetscenter](https://security.microsoft.com) och gå till [sidan Advanced Hunting](https://security.microsoft.com/hunting-package).
 
 2. Kör följande fråga för att hämta mappningen av datatyper för varje händelse:
- 
+
    ```kusto
    {EventType}
    | getschema
@@ -117,8 +116,9 @@ Så här hämtar du datatyperna för händelseegenskaper:
   ![Bild av Händelsehubben resurs-ID2](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Relaterade ämnen
+
 - [Översikt över Avancerad sökning](advanced-hunting-overview.md)
-- [Microsoft 365 Defender-streaming-API](streaming-api.md)
-- [Strömma Microsoft 365 Defender-händelser till ditt Azure Storage-konto](streaming-api-storage.md)
+- [Microsoft 365 Defender API för direktuppspelning](streaming-api.md)
+- [Strömma Microsoft 365 Defender till ditt Azure Storage-konto](streaming-api-storage.md)
 - [Azure Event Hub-dokumentation](/azure/event-hubs/)
 - [Felsöka anslutningsproblem – Azure Event Hub](/azure/event-hubs/troubleshooting-guide)

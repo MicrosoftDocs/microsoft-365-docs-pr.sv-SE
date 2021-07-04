@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Läs mer om Microsoft 365- och lösningskatalogen, inklusive vad den innehåller, hur du hämtar den och dina nästa steg.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 22110290f3d025a3e4c30b460a2381757fd481ca
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5118cf6ef80513f5c276f5635ab380bdc979db46
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52163034"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288305"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Lösningskatalog för Microsoft 365
 
@@ -24,7 +24,7 @@ Letar du efter ett sätt att snabbt komma igång med efterlevnadsuppgifter i Mic
 
 Efterlevnadslösningar i Microsoft 365 är samlingar av integrerade funktioner som du kan använda för att hjälpa dig att hantera scenarier för end-to-end-efterlevnad. Funktionerna och verktygen för en lösning kan innehålla en kombination av principer, aviseringar, rapporter med mera.
 
-Läs den här artikeln om du vill bekanta dig med den [](#how-do-i-get-this)nya lösningskatalogen i Microsoft 365 efterlevnadscenter, hur du hämtar [den,](#frequently-asked-questions)vanliga frågor och [nästa steg.](#next-steps)
+Läs den här artikeln om du vill bekanta dig med den nya lösningskatalogen i [Microsoft 365 Efterlevnadscenter,](#how-do-i-get-this)skaffa den, [vanliga](#frequently-asked-questions)frågor och [nästa steg](#next-steps).
 
 ## <a name="catalog-organization"></a>Katalogorganisation
 
@@ -84,11 +84,11 @@ För att besöka Microsoft 365-lösningskatalogen går du till och loggar in som
 
 Kontrollera först att du har rätt licenser och behörigheter. Logga sedan in som [https://compliance.microsoft.com](https://compliance.microsoft.com) global administratör, efterlevnadsadministratör eller efterlevnadsdataadministratör.
 
-**Vissa av efterlevnadsfunktionerna som visas på sidan för lösningskatalogen är inte tillgängliga Microsoft 365 kompatibilitetscentret. Vad ska jag göra?**
+**Vissa av efterlevnadsfunktionerna som visas på sidan för lösningskatalogen är inte tillgängliga i Microsoft 365 Efterlevnadscenter. Vad ska jag göra?**
 
-Vi arbetar ständigt med att lägga till nya funktioner Microsoft 365 kompatibilitetscentret och lösningskatalogen. Om du inte kan hitta en specifik lösning i navigeringsområdet är den tillgänglig när lösningen är tillgänglig i din prenumeration.
+Vi arbetar ständigt med att lägga till nya funktioner i Microsoft 365 Efterlevnadscenter och lösningskatalogen. Om du inte kan hitta en specifik lösning i navigeringsområdet är den tillgänglig när lösningen är tillgänglig i din prenumeration.
 
-Om du letar efter en befintlig efterlevnadslösning och den inte är tillgänglig i efterlevnadscentret för Microsoft 365 ännu, kan du alltid komma åt lösningar i det befintliga säkerhetsefterlevnadscentret genom att &amp; gå till [https://protection.office.com](https://protection.office.com) . Alternativt kan du klicka  på fliken Fler resurser i det vänstra navigeringsfältet i Microsoft 365 kompatibilitetscenter och välja kortet för Office 365 säkerhets- och efterlevnadscenter.  
+Om du letar efter en befintlig efterlevnadslösning och den inte är tillgänglig i Microsoft 365 Efterlevnadscenter ännu kan du alltid komma åt lösningar i det befintliga säkerhetsefterlevnadscentret genom att &amp; gå till [https://protection.office.com](https://protection.office.com) . Alternativt kan du klicka  på fliken Fler resurser i det vänstra navigeringsfältet i Microsoft 365 Efterlevnadscenter och välja kortet för Office 365 säkerhets- och efterlevnadscenter.  
 
 ## <a name="next-steps"></a>Nästa steg
 
@@ -98,7 +98,7 @@ Om du letar efter en befintlig efterlevnadslösning och den inte är tillgängli
 
 - **Lär dig mer om och skapa principer för** kommunikationsefterlevnad för att snabbt identifiera och åtgärda överträdelser av företagets regler och regler. Se [Kommunikationsefterlevnad.](communication-compliance.md)
 
-- **Microsoft Information Protection**, lär dig hur Microsoft 365 hjälper dig att upptäcka, klassificera och skydda känslig information var den än bor eller på resa.
+- **Microsoft Information Protection** kan du lära Microsoft 365 hur dina lösningar hjälper dig att upptäcka, klassificera och skydda känslig information oavsett var den bor eller reser.
     - **Bekanta dig med och konfigurera Microsoft Cloud App Security**. Läs [Snabbstart: Komma igång med Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
     - **Kom igång med klassificerare**. Att klassificera innehåll och sedan märka det så att det kan skyddas och hanteras på rätt sätt är utgångspunkten för informationsskyddsgrenen. Mer [information om utbildare (förhandsversion)](classifier-learn-about.md).
 

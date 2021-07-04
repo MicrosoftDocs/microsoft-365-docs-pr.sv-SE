@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: Använd PowerShell för Microsoft 365 om du vill hantera principer för Skype för företag – Online, principer för användare och mötesinställningar.
-ms.openlocfilehash: 4477dadf0ea38a81ac0ae282da3f74fc12f3406f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4ea4858e4ca334cdb0268312e69bef77bc9bbd86
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916686"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288989"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Hantera Skype för företag – Online med PowerShell
 
@@ -29,16 +29,15 @@ Administratörer av Skype för företag – Online ansvarar för hantering av pr
 
 ## <a name="before-you-start"></a>Innan du börjar
 
-  > [!Note]
-   > Skype för företag – Online-Connector är för närvarande en del av den senaste versionen av Teams PowerShell-modul. Om du använder den senaste versionen av Teams PowerShell, behöver du inte installera Skype för företag – Online-Connector.
-   
-Installera [Teams PowerShell-modul](/microsoftteams/teams-powershell-install).
+> [!NOTE]
+> Skype för företag – Online-Connector är för närvarande en del av den senaste versionen av Teams PowerShell-modul. Om du använder den senaste versionen av Teams PowerShell, behöver du inte installera Skype för företag – Online-Connector.
 
+Installera [Teams PowerShell-modul](/microsoftteams/teams-powershell-install).
 
 ## <a name="connect-using-admin-credentials"></a>Anslut med administratörsuppgifter.
 
 1. Öppna en Windows PowerShell kommandotolk och kör följande kommandon:
-    
+
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
@@ -46,7 +45,6 @@ Installera [Teams PowerShell-modul](/microsoftteams/teams-powershell-install).
    ```
 
 2. I dialogrutan **Begäran om autentiseringsuppgifter för Windows PowerShell** anger du användarnamnet och lösenordet för ditt administratörskonto och välj **OK**.
-
 
 ## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>Ansluta med ett administratörskonto med multifaktorautentisering
 
@@ -64,15 +62,15 @@ Installera [Teams PowerShell-modul](/microsoftteams/teams-powershell-install).
 4. I dialogrutan **Logga in på ditt konto** följ anvisningarna för att lägga till autentiseringsinformation, till exempel en verifieringskod, och välj sedan **Verifiera**.
 
 Mer information finns i:
-  
+
 - [Hantera Skype för företag – Onlineprinciper med PowerShell](manage-skype-for-business-online-policies-with-microsoft-365-powershell.md)
-    
+
 - [Tilldela per användare Skype för företag – Onlineprinciper med PowerShell](assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md)
-    
+
 ## <a name="see-also"></a>Se även
 
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
+
 [Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 
-[PowerShell cmdlet-referenser för Skype för företag](/powershell/module/skype/?view=skype-ps)
+[PowerShell cmdlet-referenser för Skype för företag](/powershell/module/skype/)

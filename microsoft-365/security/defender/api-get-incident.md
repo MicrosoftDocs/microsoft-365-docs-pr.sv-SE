@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c578a353501ac7b38ac541b0200ffaad1d6743e1
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 2e051803a4cd228e3b455ec08b30e5c2197ca9a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888458"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289613"
 ---
 # <a name="get-incident-information-api"></a>Hämta API för incidentinformation
 
@@ -38,27 +38,31 @@ ms.locfileid: "52888458"
 
 
 ## <a name="api-description"></a>API-beskrivning
+
 Hämtar ett specifikt incident med dess ID
 
-
 ## <a name="limitations"></a>Begränsningar
+
 1. Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.
 
 
 ## <a name="permissions"></a>Behörigheter
+
 En av följande behörigheter krävs för att anropa detta API. 
 
-Behörighetstyp |   Behörighet  |   Visningsnamn för behörighet
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
 :---|:---|:---
-Program |   Incident.Read.All | "Läs alla incidenter"
-Program |   Incident.ReadWrite.All |    "Läsa och skriva alla incidenter"
+Program | Incident.Read.All | "Läs alla incidenter"
+Program | Incident.ReadWrite.All | "Läsa och skriva alla incidenter"
 Delegerat (arbets- eller skolkonto) | Incident.Read | "Läs incidenter"
 Delegerat (arbets- eller skolkonto) | Incident.ReadWrite | "Läsa och skriva incidenter"
 
->[!Note]
+> [!NOTE]
+>
 > När du skaffar en token med hjälp av användarautentiseringsuppgifter:
->- Användaren måste ha minst följande rollbehörighet: 'Visa data'
->- Svaret inkluderar endast incidenter som användaren exponeras för
+>
+> - Användaren måste ha minst följande rollbehörighet: 'Visa data'
+> - Svaret inkluderar endast incidenter som användaren exponeras för
 
 ## <a name="http-request"></a>HTTP-begäran
 
@@ -66,14 +70,14 @@ Delegerat (arbets- eller skolkonto) | Incident.ReadWrite | "Läsa och skriva inc
 GET .../api/incidents/{id} 
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
 
+## <a name="request-body"></a>Frågebrödtext
 
-## <a name="request-body"></a>Begärans brödtext
 Tom
 
 ## <a name="response"></a>Svar

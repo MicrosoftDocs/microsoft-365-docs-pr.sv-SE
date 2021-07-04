@@ -11,12 +11,12 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: 734edbb462193291b6bd2fb4a8e6afc3a0b709cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8a1b61088d0a1594bf1a71542158ade389cce2ab
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928254"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288521"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importera en termuppsättning med ett SKOS-baserat format
 
@@ -29,16 +29,16 @@ Vi rekommenderar att du endast importerar filer med färre än 20 000 termer. St
 2. Välj den termgrupp där du vill importera termuppsättningen.
 
 3. Klicka på **Importera termuppsättning** i kommandofältet.
- 
-4.  Om du vill ladda ned en exempelfil och använda den som en mall klickar du på **sample-metadata.ttl** för att hämta en exempelfil som använder det SKOS-baserade formatet.
- 
-5.  Skapa importfilen innehållandes de termuppsättningar och termer du vill importera.
 
-6.  Under **Filformat** väljer du **SKOS (*.ttl)**.
+4. Om du vill ladda ned en exempelfil och använda den som en mall klickar du på **sample-metadata.ttl** för att hämta en exempelfil som använder det SKOS-baserade formatet.
 
-7.  Klicka på **Bläddra**, leta upp och lägg till din importfil.
+5. Skapa importfilen innehållandes de termuppsättningar och termer du vill importera.
 
-8.  Klicka på **Importera**. Stäng inte panelen förrän importen har slutförts.
+6. Under **Filformat** väljer du **SKOS (*.ttl)**.
+
+7. Klicka på **Bläddra**, leta upp och lägg till din importfil.
+
+8. Klicka på **Importera**. Stäng inte panelen förrän importen har slutförts.
 
 Vid import av filen visas ett meddelande om att importen lyckades och termlagringsplatsen uppdateras. Du kan nu gå till de nyskapade termuppsättningarna.
 

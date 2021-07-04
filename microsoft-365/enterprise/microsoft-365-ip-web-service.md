@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Lär dig hur du använder webbtjänsten Office 365 IP-adress and URL för att hjälpa dig att bättre identifiera och skilja Office 365 nätverkstrafik.
-ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0469070ed6d46b7695526697c255e23c0dc009ec
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918960"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286423"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Webbtjänsten Office 365 IP-adress och URL
 
@@ -66,7 +66,7 @@ Dessa parametrar är gemensamma för alla metoder i webbtjänsten:
 - **format–<JSON | CSV>** – Som standard är det returnerade dataformatet JSON. Använd den här valfria parametern för att returnera data i en fil med kommaavgränsade värden (CSV).
 - **ClientRequestId-\<guid>** – En obligatorisk GUID som du genererar för klientassociation. Generera ett unikt GUID för varje dator som anropar webbtjänsten (de skript som finns på den här sidan genererar ett GUID åt dig). Använd inte de GUID som visas i följande exempel eftersom de kan blockeras av webbtjänsten i framtiden. GUID-formatet är _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, där x representerar ett hexadecimalt tal.
 
-  Om du vill generera ett GUID kan du använda [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) Windows PowerShell-kommandot eller använda en onlinetjänst som [online GUID Generator](https://www.guidgenerator.com/).
+  Om du vill generera ett GUID kan du använda [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) Windows PowerShell-kommandot eller använda en onlinetjänst som [online GUID Generator](https://www.guidgenerator.com/).
 
 ## <a name="version-web-method"></a>Versionswebbmetod
 
@@ -133,7 +133,7 @@ Denna URI returnerar den senaste versionen av den angivna Office 365-tjänstinst
 
 Exempel 3 begär URI: [https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
-Denna URI visas resultatet i CSV-format. Exempelresultat:
+Denna URI visar resultatet i CSV-format. Exempelresultat:
 
 ```csv
 instance,latest
@@ -187,13 +187,13 @@ Parametrarna för slutpunktswebbmetoden är:
 
 Om du anropar webbmetoden för slutpunkter för många gånger från samma IP-adress för klient, kan det hända att du får HTTP-svarskod _429 (för många begäranden)_. Om du får svarskoden väntar du i en timme innan du upprepar begäran eller genererar ett nytt GUID för begäran. Som en allmän metod är att bara anropa webbmetoden för slutpunkter när versionswebbmetoden anger att en ny version är tillgänglig.
 
-Resultatet från slutpunktswebbmetoden är en matris med poster där varje post representerar en specifik slutpunktsuppsättning. Elementen för varje post är:
+Resultatet från slutpunktswebbmetoden är en matris med poster där varje post representerar en specifik slutpunktsuppsättning:
 
 - id – Det oföränderliga ID-numret för slutpunktsuppsättningen.
 - serviceArea – Tjänstområdet som detta är en del av: _Gemensamma_, _Exchange_, _SharePoint_ eller _Skype_.
 - URL:er – Webbadresser för slutpunktsuppsättningen. En JSON-matris med DNS-poster. Utelämnas om tomt.
 - tcpPorts – TCP-portar för slutpunktsuppsättningen. Alla portelement är formaterade som en kommaavgränsad lista med portar eller portintervaller avgränsade med ett bindestreck (-). Portar gäller för alla IP-adresser och alla URL-adresser i slutpunktsuppsättningen för en specifik kategori. Utelämnas om tomt.
-- udpPorts – UDP-portar för IP-adressintervallerna i den här slutpunktsuppsättningen. Utelämnas om tomt.
+- udpPorts – UDP-portar för IP-adressintervallen i den här slutpunktsuppsättningen. Utelämnas om tomt.
 - ips – IP-adressintervallen som är kopplade till den här slutpunktsuppsättningen som är kopplade till de angivna TCP- eller UDP-portarna. En JSON-matris med IP-adressintervall. Utelämnas om tomt.
 - kategori – Anslutningskategorin för slutpunktsuppsättningen. Giltiga värden är _Optimera_, _Tillåta_ och _Standard_. Om du söker i webbmetoden för slutpunkter för en viss IP-adress eller URL är det möjligt att frågan returnerar flera olika kategorier. I så fall följer du rekommendationer för kategorin med högsta prioritet. Om till exempel slutpunkten visas i båda _Optimera_ och _Tillåta_ ska du följa kraven för _Optimera_. Obligatoriskt.
 - expressRoute – _Sant_ om den här slutpunktsuppsättningen dirigeras över Microsoft Azure ExpressRoute annars _Falskt_.

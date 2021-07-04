@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Använd granskningsåtgärden MailItemsAccessed för postlådan till att utföra tekniska undersökningar av komprometterade användarkonton.
-ms.openlocfilehash: e9dda101b330f6632e66c226156df3497ac38453
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 64f3e5f3423f5182277fe7640199a39dc11068f2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52161850"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288785"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Undersöka komprometterade konton med hjälp av Avancerad granskning
 
@@ -37,7 +37,7 @@ Granskningsåtgärden MailItemsAccessed för postlådor omfattar alla e-postprot
 
 ### <a name="auditing-sync-access"></a>Granskning av synkroniseringsåtkomst
 
-Synkroniseringsåtgärder registreras bara när en postlåda används i en skrivbordsversion av Outlook-klienten för Windows eller Mac. Under synkroniseringen laddar dessa klienter vanligtvis ned en stor uppsättning e-postobjekt från molnet till en lokal dator. Granskningsvolymen för synkroniseringsåtgärder är enorm. I stället för att generera en granskningspost för varje e-postobjekt som synkroniseras, genererar vi bara en granskningshändelse för e-postmappen med de objekt som har synkroniserats. Det görs ett antagande att *alla* e-postobjekt i den synkroniserade mappen har komprometterats. Åtkomsttypen registreras i fältet OperationProperties i granskningsposten. 
+Synkroniseringsåtgärder registreras bara när en postlåda används i en skrivbordsversion av Outlook-klienten för Windows eller Mac. Under synkroniseringen laddar dessa klienter vanligtvis ned en stor uppsättning e-postobjekt från molnet till en lokal dator. Granskningsvolymen för synkroniseringsåtgärder är enorm. I stället för att generera en granskningspost för varje e-postobjekt som synkroniseras, genererar vi bara en granskningshändelse för e-postmappen med de objekt som har synkroniserats. Det görs ett antagande att *alla* e-postobjekt i den synkroniserade mappen har komprometterats. Åtkomsttypen registreras i fältet OperationProperties i granskningsposten.
 
 Se steg 2 i avsnittet [Använda MailItemsAccessed-granskningsposter för tekniska undersökningar](#use-mailitemsaccessed-audit-records-for-forensic-investigations) för ett exempel på hur du visar typen av synkroniseringsåtkomst i en granskningspost.
 
@@ -49,16 +49,13 @@ Se steg 4 i avsnittet [Använda MailItemsAccessed-granskningsposter för teknisk
 
 ### <a name="throttling-of-mailitemsaccessed-audit-records"></a>Begränsning av MailItemsAccessed-granskningsposter
 
-Om fler än 1 000 MailItemsAccessed-granskningsposter genereras på mindre än 24 timmar, kommer Exchange Online att sluta generera granskningsposter för MailItemsAccessed-aktivitet. När en postlåda begränsas loggas inte MailItemsAccessed-aktiviteten i 24 timmar efter att postlådan har begränsats. Om det inträffar finns det en risk att postlådan har komprometterats under perioden. Registreringen av MailItemsAccessed-aktivitet återupptas efter en 24-timmars period.  
+Om fler än 1 000 MailItemsAccessed-granskningsposter genereras på mindre än 24 timmar, kommer Exchange Online att sluta generera granskningsposter för MailItemsAccessed-aktivitet. När en postlåda begränsas loggas inte MailItemsAccessed-aktiviteten i 24 timmar efter att postlådan har begränsats. Om det inträffar finns det en risk att postlådan har komprometterats under perioden. Registreringen av MailItemsAccessed-aktivitet återupptas efter en 24-timmars period.
 
 Här är några saker att tänka på vid begränsning:
 
-- Mindre än 1 % av alla postlådor i Exchange Online är begränsade
-
+- Mindre än 1 % av alla postlådor i Exchange Online är begränsade
 - När en postlåda är begränsad är det bara granskningsposter för MailItemsAccessed-aktiviteten som inte granskas. Andra granskningsåtgärder för postlådan påverkas inte.
-
 - Postlådor begränsas endast för bindningsåtgärder. Granskningsposter för synkroniseringsåtgärder är inte begränsade.
-
 - Om en postlåda är begränsad kan du antagligen förutsätta att det fanns MailItemsAccessed-aktivitet som inte registrerades i granskningsloggarna.
 
 Se steg 1 i avsnittet [Använda MailItemsAccessed-granskningsposter för tekniska undersökningar](#use-mailitemsaccessed-audit-records-for-forensic-investigations) för ett exempel på hur du visar IsThrottled-egenskapen i en granskningspost.
@@ -67,17 +64,17 @@ Se steg 1 i avsnittet [Använda MailItemsAccessed-granskningsposter för teknisk
 
 En granskning av postlådor genererar granskningsposter för åtkomst till e-postmeddelanden, så att du kan vara säker på att e-postmeddelandena inte har komprometterats. När vi inte är säkra på att åtkomst har funnits till viss data, antar vi därför att detta har skett genom att registrera all e-poståtkomstaktivitet.
 
-Användningen av MailItemsAccessed-granskningsposter i tekniskt syfte utförs vanligtvis när ett dataintrång har åtgärdats och angriparen har avlägsnats. Påbörja undersökningen genom att identifiera den uppsättning postlådor som har komprometterats och fastställ tidsperioden då angriparen hade åtkomst till postlådor i organisationen. Du kan sedan använda cmdletarna **Search-UnifiedAuditLog** eller **Search-MailboxAuditLog** i [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) för att söka i granskningsposter som motsvarar dataintrånget. 
+Användningen av MailItemsAccessed-granskningsposter i tekniskt syfte utförs vanligtvis när ett dataintrång har åtgärdats och angriparen har avlägsnats. Påbörja undersökningen genom att identifiera den uppsättning postlådor som har komprometterats och fastställ tidsperioden då angriparen hade åtkomst till postlådor i organisationen. Du kan sedan använda cmdletarna **Search-UnifiedAuditLog** eller **Search-MailboxAuditLog** i [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) för att söka i granskningsposter som motsvarar dataintrånget.
 
 Du kan köra ett av följande kommandon för att söka efter MailItemsAccessed-granskningsposter:
 
-**Enhetlig granskningslogg**
+**Enhetlig granskningslogg**:
 
 ```powershell
 Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000
 ```
 
-**Granskningslogg för postlåda**
+**Granskningslogg för postlåda**:
 
 ```powershell
 Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/2020 -Operations MailItemsAccessed -ResultSize 1000 -ShowDetails
@@ -92,13 +89,13 @@ Här är stegen för att använda MailItemsAccessed-granskningsposter vid unders
 
    Om du vill söka efter MailItemsAccessed-poster där postlådan var begränsad kör du följande kommando:
 
-   **Enhetlig granskningslogg**
- 
+   **Enhetlig granskningslogg**:
+
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"IsThrottled","Value":"True"*'} | FL
    ```
 
-   **Granskningslogg för postlåda**
+   **Granskningslogg för postlåda**:
 
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*IsThrottled:True*"} | FL
@@ -108,13 +105,13 @@ Här är stegen för att använda MailItemsAccessed-granskningsposter vid unders
 
    Om du vill söka efter MailItemsAccessed-poster där e-postobjekten användes av en synkroniseringsåtgärd, kör du följande kommando:
 
-   **Enhetlig granskningslogg**
+   **Enhetlig granskningslogg**:
 
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 02/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"MailAccessType","Value":"Sync"*'} | FL
    ```
 
-   **Granskningslogg för postlåda**
+   **Granskningslogg för postlåda**:
 
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Sync*"} | FL
@@ -124,63 +121,74 @@ Här är stegen för att använda MailItemsAccessed-granskningsposter vid unders
 
    Använd egenskaperna nedan vid undersökningen. Egenskaperna finns i egenskapen AuditData eller OperationProperties. Om någon av synkroniseringarna sker i samma kontext som angriparens aktivitet, förutsätter du att angriparen har synkroniserat alla e-postobjekt till klienten, vilket innebär att hela postlådan troligen har komprometterats.
 
-   |Egenskap         | Beskrivning |
-   |:---------------- | :----------|
-   |ClientInfoString | Beskriver protokoll och klient (inkl. version)|
-   |ClientIPAddress  | IP-adressen till klientdatorn.|
-   |SessionId        | Med ett sessions-ID kan du skilja på angriparens åtgärder och dagliga användaraktiviteter på samma konto (om ett konto har komprometterats)|
-   |UserId           | UPN för användaren som läser meddelandet.|
-   |||
+   <br>
+
+   ****
+
+   |Egenskap|Beskrivning|
+   |---|---|
+   |ClientInfoString|Beskriver protokoll och klient (inkl. version)|
+   |ClientIPAddress|IP-adressen till klientdatorn.|
+   |SessionId|Med ett sessions-ID kan du skilja på angriparens åtgärder och dagliga användaraktiviteter på samma konto (om ett konto har komprometterats)|
+   |UserId|UPN för användaren som läser meddelandet.|
+   |
 
 4. Kontrollera om det finns bindningsaktiviteter. När du har utfört steg 2 och 3 kan du vara säker på att all annan åtkomst till e-postmeddelanden för angriparen fångas i granskningsposterna för MailItemsAccessed som har egenskapen MailAccessType med värdet ”Bindning”.
 
    Om du vill söka efter MailItemsAccessed-poster där e-postobjekten användes av en bindningsåtgärd kör du följande kommando.
 
-   **Enhetlig granskningslogg**
+   **Enhetlig granskningslogg**:
 
    ```powershell
    Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"MailAccessType","Value":"Bind"*'} | FL
    ```
- 
-   **Granskningslogg för postlåda**
-   
+
+   **Granskningslogg för postlåda**:
+
    ```powershell
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*MailAccessType:Bind*"} | FL
    ```
 
    E-postmeddelanden som har öppnats identifieras med sitt ID för Internetmeddelanden. Du kan också kontrollera om några granskningsposter har samma kontext som de i angriparens aktivitet. Mer information finns i avsnittet [Identifiera åtkomstkontexterna för olika granskningsposter](#identifying-the-access-contexts-of-different-audit-records).
- 
+
    Du kan använda granskningsdata för bindningsåtgärder på två olika sätt:
 
-     - Komma åt eller samla in alla e-postmeddelanden som angriparen fick åtkomst till med hjälp av InternetMessageId för att hitta dem och sedan kontrollera om något av dessa meddelanden innehåller känslig information.
-
-     - Använda InternetMessageId för att söka efter granskningsposter som är relaterade till en uppsättning potentiellt känsliga e-postmeddelanden. Det här är användbart om du bara är orolig för ett litet antal meddelanden.
+   - Komma åt eller samla in alla e-postmeddelanden som angriparen fick åtkomst till med hjälp av InternetMessageId för att hitta dem och sedan kontrollera om något av dessa meddelanden innehåller känslig information.
+   - Använda InternetMessageId för att söka efter granskningsposter som är relaterade till en uppsättning potentiellt känsliga e-postmeddelanden. Det här är användbart om du bara är orolig för ett litet antal meddelanden.
 
 ## <a name="filtering-of-duplicate-audit-records"></a>Filtrera dubbletter av granskningsposter
 
 Dubbletter av granskningsposter för samma bindningsåtgärder som inträffar inom en timme filtreras bort. Synkroniseringsåtgärder filtreras också bort med en timmes intervall. Undantag till dedupliceringsprocessen inträffar om någon av egenskaperna som beskrivs i tabellen nedan skiljer sig för samma InternetMessageId. Om en av de här egenskaperna skiljer sig åt vid en dubblettåtgärd genereras en ny granskningspost. Den här processen beskrivs mer ingående i nästa avsnitt.
 
-| Egenskap| Beskrivning|
-|:--------|:---------|
-|ClientIPAddress | IP-adressen till klientdatorn.|
-|ClientInfoString| Klientprotokollet som klienten använde för att komma åt postlådan.| 
-|ParentFolder    | Den fullständiga mappsökvägen till det e-postobjekt som öppnades. |
-|Logon_type      | Inloggningstypen för användaren som utförde åtgärden. Inloggningstyperna (och deras motsvarande uppräkningsvärde) är Ägare (0), Administratör (1) eller Ombud (2).|
-|MailAccessType  | Om åtkomsten är en bindnings- eller synkroniseringsåtgärd.|
-|MailboxUPN      | UPN för postlådan där det lästa meddelandet finns.|
-|Användare            | UPN för användaren som läser meddelandet.|
-|SessionId       | Sessions-ID:t används till att skilja på angriparens åtgärder och dagliga användaraktiviteter i samma postlåda (om kontot har komprometterats). Mer information om sessioner finns i [Sammanhangsberoende angreppsaktivitet i sessioner i Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801).|
-||||
+<br>
+
+****
+
+|Egenskap|Beskrivning|
+|---|---|
+|ClientIPAddress|IP-adressen till klientdatorn.|
+|ClientInfoString|Klientprotokollet som klienten använde för att komma åt postlådan.|
+|ParentFolder|Den fullständiga mappsökvägen till det e-postobjekt som öppnades.|
+|Logon_type|Inloggningstypen för användaren som utförde åtgärden. Inloggningstyperna (och deras motsvarande uppräkningsvärde) är Ägare (0), Administratör (1) eller Ombud (2).|
+|MailAccessType|Om åtkomsten är en bindnings- eller synkroniseringsåtgärd.|
+|MailboxUPN|UPN för postlådan där det lästa meddelandet finns.|
+|Användare|UPN för användaren som läser meddelandet.|
+|SessionId|Sessions-ID:t används till att skilja på angriparens åtgärder och dagliga användaraktiviteter i samma postlåda (om kontot har komprometterats). Mer information om sessioner finns i [Sammanhangsberoende angreppsaktivitet i sessioner i Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/contextualizing-attacker-activity-within-sessions-in-exchange/ba-p/608801).|
+|
 
 ## <a name="identifying-the-access-contexts-of-different-audit-records"></a>Identifiera åtkomstkontexterna för olika granskningsposter
 
 Det är vanligt att en angripare får åtkomst till en postlåda samtidigt som postlådans ägare öppnar den. Det finns granskningspostegenskaper som definierar åtkomstkontexten som används för att skilja mellan åtkomst av angriparen och postlådans ägare. Som tidigare beskrivits genereras separata granskningsposter när värdena för de här egenskaperna är olika, även om aktiviteten inträffar inom aggregeringsintervallet. I följande exempel finns det tre olika granskningsposter. Var och en differentieras med hjälp av sessions-ID och ClientIPAddress-egenskaper. De meddelanden som öppnas identifieras också.
 
-|Granskningspost 1  |Granskningspost 2  |Granskningspost 3|
-|---------|---------|---------|
+<br>
+
+****
+
+|Granskningspost 1|Granskningspost 2|Granskningspost 3|
+|---|---|---|
 |ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
-|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B** |
-||||
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B**|
+|
 
 Om någon av egenskaperna i tabellen i föregående [avsnitt](#filtering-of-duplicate-audit-records) skiljer sig åt, genereras en separat granskningspost för att kunna spåra den nya kontexten. Åtkomsterna sorteras i de separata granskningsposterna beroende på den kontext där aktiviteten ägde rum.
 

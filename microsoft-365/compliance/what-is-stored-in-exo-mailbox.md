@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Innehåll som skapas av molnbaserade appar i Microsoft 365 lagras eller associeras med en användares Exchange Online postlåda. Det här innehållet kan sökas med Microsofts verktyg för eDiscovery.
-ms.openlocfilehash: 3490571a31ea69c5a8ee641a4ccc46077aced014
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 975f4ac8be8c2cdeed8dea1d73699607662a1ce9
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311010"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288149"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>Innehåll som lagrats Exchange Online eDiscovery-postlådor
 
@@ -29,9 +29,13 @@ En postlåda i Exchange Online används främst för att lagra e-postrelaterade 
 
 I följande tabell visas de appar som antingen lagrar eller associerar data med en molnbaserad postlåda. Tabellen beskriver också vilken typ av innehåll som varje app skapar.
 
+<br>
+
+****
+
 |Microsoft 365 appen|Beskrivning|
-|:---------|:---------|
-|Formulär<sup>*</sup>|Formulär och svar i ett formulär lagras i filer som är bifogade i e-postmeddelanden och lagras i en dold mapp i postlådan för den användare som skapade formuläret. Formulär som har skapats före april 2020 lagras som en PDF-fil. Formulär som skapas efter 2020 lagras som en JSON-fil.  Svar på ett formulär lagras i en CSV-fil. När du exporterar innehåll från Formulär i en PST-fil finns dessa data i mappen **ApplicationDataRoot** i en undermapp med följande globalt unika identifierade (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87.** |
+|---|---|
+|Formulär<sup>*</sup>|Formulär och svar i ett formulär lagras i filer som är bifogade i e-postmeddelanden och lagras i en dold mapp i postlådan för den användare som skapade formuläret. Formulär som har skapats före april 2020 lagras som en PDF-fil. Formulär som skapas efter 2020 lagras som en JSON-fil. Svar på ett formulär lagras i en CSV-fil. När du exporterar innehåll från Formulär i en PST-fil finns dessa data i mappen **ApplicationDataRoot** i en undermapp med följande globalt unika identifierade (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87.**|
 |Microsoft 365-grupper|E-postmeddelanden, kalenderobjekt, kontakter (personer), anteckningar och uppgifter lagras i postlådan som är kopplad till en Microsoft 365 grupp.|
 |Outlook/Exchange Online|E-postmeddelanden, kalenderobjekt, kontakter (personer), anteckningar och uppgifter lagras i en användares postlåda.|
 |Kontakter|Kontakter i appen Kontakter (som är samma kontakter som de som är tillgängliga i Outlook) lagras i en användares postlåda.|
@@ -41,8 +45,8 @@ I följande tabell visas de appar som antingen lagrar eller associerar data med 
 |Uppgifter|Uppgifter i appen Uppgifter (som är samma uppgifter som de som är tillgängliga i Outlook) lagras i en användares postlåda.|
 |Teams|Konversationer som ingår i en Teams är kopplade till den Teams postlådan. Konversationer som ingår i chattlistan i Teams (kallas *även 1 x* N-chattar) kopplas till postlådan för de användare som deltar i chatten. Dessutom är sammanfattningsinformation för möten och samtal i en Teams kopplad till postlådor för användare som ringt in till mötet eller samtalet. När du söker efter Teams innehåll söker du efter innehåll i Teams-postlådan efter innehåll i kanalkonversationer och söker efter innehåll i användarpostlådor i 1 x N chattar.|
 |To-Do|Uppgifter (uppgifter som sparas i att göra-listor) i *To-Do-appen lagras* i en användares postlåda.|
-|Yammer|Konversationer och kommentarer i en Yammer-community är kopplade till Microsoft 365-gruppens postlåda, samt användarens postlåda för författaren och eventuella namngivna mottagare (@ omnämnda eller kopia till användare). Privata meddelanden som skickas utanför en Yammer-community lagras i postlådan för de användare som deltar i det privata meddelandet.|  
-||||
+|Yammer|Konversationer och kommentarer i en Yammer-community är kopplade till Microsoft 365-gruppens postlåda, samt användarens postlåda för författaren och eventuella namngivna mottagare (@ omnämnda eller kopia till användare). Privata meddelanden som skickas utanför en Yammer-community lagras i postlådan för de användare som deltar i det privata meddelandet.|
+|
 
 > [!NOTE]
 > <sup>*</sup>För närvarande bevaras inte innehåll från det här programmet om ett spärrat värde sätts på en postlåda (genom att använda innehåll som sätts i core-eDiscovery- eller Advanced eDiscovery-fall).

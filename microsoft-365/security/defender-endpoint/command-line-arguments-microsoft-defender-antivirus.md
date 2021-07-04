@@ -15,12 +15,12 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 25f038846f9dd9855823382d4e1babcf0547fed6
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: efeb49b2741bdc45f7924032c2deb8a27458ca29
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636176"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289421"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Konfigurera och Microsoft Defender Antivirus med mpcmdrun.exe-kommandoradsverktyget
 
@@ -31,7 +31,7 @@ ms.locfileid: "52636176"
 Du kan utföra olika funktioner Microsoft Defender Antivirus dedikerat kommandoradsverktyg i **mpcmdrun.exe**. Det här verktyget är användbart när du vill automatisera Microsoft Defender Antivirus uppgifter. Du hittar verktyget i `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Kör det från en kommandotolk.
 
 > [!TIP]
-> Du kan behöva öppna en version på administratörsnivå av kommandotolken. När du söker efter **Kommandotolken** på Start-menyn väljer du **Kör som administratör**. Om du kör en uppdaterad version av Microsoft Defender-plattformen körs `MpCmdRun` du från följande plats: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` . Mer information om program mot skadlig programvara finns Microsoft Defender Antivirus [uppdateringar och baslinjer.](manage-updates-baselines-microsoft-defender-antivirus.md)
+> Du kan behöva öppna en version på administratörsnivå av kommandotolken. När du söker efter **Kommandotolken** i Start-menyn väljer du **Kör som administratör**. Om du kör en uppdaterad version av Microsoft Defender-plattformen körs `MpCmdRun` du från följande plats: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` . Mer information om program mot skadlig programvara finns Microsoft Defender Antivirus [uppdateringar och baslinjer.](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 Verktyget MpCmdRun använder följande syntax:
 
@@ -51,7 +51,7 @@ I vårt exempel startar MpCmdRun-verktyget en fullständig antivirussökning på
 
 | Kommando  | Beskrivning   |
 |:----|:----|
-| `-?`**eller**`-h`   | Visar alla tillgängliga alternativ för verktyget MpCmdRun |
+| `-?` **eller** `-h`   | Visar alla tillgängliga alternativ för verktyget MpCmdRun |
 | `-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Söker efter skadlig programvara. Värdena för **ScanType** är:<p>**0** Standard, enligt din konfiguration<p>**1** Snabbsökning<p>**2** Fullständig sökning<p>**3 Anpassad** sökning i arkiv och katalog.<p>CpuThrottling körs enligt principkonfigurationer |
 | `-Trace [-Grouping #] [-Level #]` | Startar diagnostikspårning |
 | `-GetFiles [-SupportLogLocation <path>]` | Samlar in supportinformation. Se " insamling[av diagnostikdata](collect-diagnostic-data.md)"  |
@@ -73,7 +73,7 @@ I följande tabell visas vanliga fel som kan uppstå när du använder verktyget
 
 |Felmeddelande | Möjlig orsak |
 |:----|:----|
-| **ValidateMapsConnection failed (800106BA)** **eller 0x800106BA** | Tjänsten Microsoft Defender Antivirus inaktiveras. Aktivera tjänsten och försök igen. Om du behöver hjälp med att återaktivera Microsoft Defender Antivirus se [Installera om/aktivera Microsoft Defender Antivirus dina slutpunkter.](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)<p>   **TIPS!**  I Windows 10 1909 eller tidigare, och Windows Server 2019 eller äldre, hette tjänsten *tidigare Windows Defender Antivirus.* |
+| **ValidateMapsConnection failed (800106BA)** **eller 0x800106BA** | Tjänsten Microsoft Defender Antivirus inaktiveras. Aktivera tjänsten och försök igen. Om du behöver hjälp med att återaktivera Microsoft Defender Antivirus se [Installera om/aktivera Microsoft Defender Antivirus dina slutpunkter.](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)<p> **Tips!** Windows 10 1909 eller tidigare, och Windows Server 2019 eller tidigare, kallades tjänsten *för Windows Defender Antivirus.* |
 | **0x80070667** | Du kör kommandot från `-ValidateMapsConnection` en dator som är Windows 10 version 1607 eller äldre, eller från Windows Server 2016 eller äldre. Kör kommandot från en dator Windows 10 version 1703 eller senare, eller från Windows 2019 eller senare.|
 | **MpCmdRun kan inte identifieras som ett internt eller externt kommando, operabelt program eller en batchfil.** | Verktyget måste köras från antingen eller `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` (om plattformsuppdateringarna är olika `2012.4-0` varje månad, förutom i mars)|
 | **ValidateMapsConnection kunde inte upprätta en anslutning till KARTOR (hr=80070005 httpcode=450)** | Det här kommandot försöktes med otillräckliga behörigheter. Använd kommandotolken (cmd.exe) som administratör.|

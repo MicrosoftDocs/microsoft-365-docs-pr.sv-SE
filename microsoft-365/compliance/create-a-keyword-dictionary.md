@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig de grundläggande stegen för att skapa en nyckelordsordlista i Säkerhets- och efterlevnadscenter för Office 365.
-ms.openlocfilehash: 1e1aa45c3bf4d31e4c969b0bc0949109fa716467
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 661ca9e227e8583bb6b601792e178c1c366132cb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841168"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256717"
 ---
 # <a name="create-a-keyword-dictionary"></a>Skapa en nyckelordsordlista
 
@@ -181,3 +181,9 @@ Klistra in identiteten i XML-koden för din anpassade typ av känslig informatio
 > - Japanska
 >
 >Stödet är tillgängligt för typer av känslig information. Se [Viktig information gällande stöd i Information Protection för teckenuppsättningar med dubbla byte (förhandsversion)](mip-dbcs-relnotes.md) för mer information.
+
+> [!TIP]
+> Om du vill identifiera mönster som innehåller kinesiska/japanska tecken och en-byte-tecken eller för att identifiera mönster som innehåller kinesiska/japanska och engelska, definierar du två varianter av nyckelordet eller regex. Om du till exempel vill identifiera ett nyckelord som "机密的dokument" använder du två varianter av nyckelordet. en med ett blanksteg mellan den japanska och den engelska texten och en annan utan blanksteg mellan den japanska och den engelska texten. Nyckelorden som ska läggas till i SIT ska därför vara "dokumentet "机密的 dokument" och ""机密的dokument". På samma sätt bör två varianter användas för att identifiera frasen "東京オリンピック2020". "東京オリンピック 2020" och "東京オリンピック2020".
+> När du skapar ett regex med ett bindestreck med dubbla byte eller en period med dubbla byte ser du till att undanta båda tecknen som ett av bindestreck eller en punkt i ett regex. Här är ett exempel på regex som referens:
+    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+> Vi rekommenderar att du använder en strängmatchning i stället för en ordmatchning i en nyckelordslista.

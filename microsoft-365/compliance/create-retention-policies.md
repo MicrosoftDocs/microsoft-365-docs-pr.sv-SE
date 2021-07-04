@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd en kvarhållningsprincip för effektiv kontroll över innehåll som användare genererar med e-post, dokument och konversationer. Behåll det du vill ha och ta bort det du inte vill ha.
-ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169598"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256537"
 ---
 # <a name="create-and-configure-retention-policies"></a>Skapa och konfigurera kvarhållningsprinciper
 
@@ -70,13 +70,14 @@ Om du har fler än en kvarhållningsprincip och du också använder kvarhållnin
 
 2. Välj **Ny kvarhållningsprincip** för att starta guiden Skapa kvarhållningsprincip, och namnge den nya kvarhållningsprincipen.
 
-3. För sidan **Välj platser där principen ska tillämpas** väljer du en eller båda platserna för Teams: **Teams-kanalmeddelande** och **Teams-chattar**.
-
-   För **Teams-kanalmeddelanden** inkluderas meddelanden från standardkanaler men inte från [privata kanaler](/microsoftteams/private-channels). För närvarande stöds inte privata kanaler av kvarhållningsprinciper.
-
+3. För **Välj platser där principen ska tillämpas** sidan väljer du någon eller alla platser för Teams:
+    - **Kanalmeddelande i Teams**: Meddelanden från standardkanalchatt och standardkanalmöten, men inte från [privata kanaler](/microsoftteams/private-channels) som har sin egen principplats.
+    - **Teams-chattar**: Meddelanden från privata 1:1-chattar, gruppchatt och möteschatt.
+    - **Privata kanalmeddelanden i Teams**: Meddelanden från privata kanalchattar och privata kanalmöten. Det här alternativet lanseras för närvarande i förhandsversion och om du inte ser det kan du försöka igen om några dagar.
+    
    Som standard är [alla team och alla användare markerade](#a-policy-that-applies-to-entire-locations), men du kan förfina det genom att välja [alternativen **Välj** och **Exkludera**](#a-policy-with-specific-inclusions-or-exclusions). Innan du ändrar standardinställningen bör du tänka på följande konsekvenser för en kvarhållningsprincip som tar bort meddelanden när den konfigureras för att omfatta eller exkludera:
     
-    - För gruppchattar, eftersom en kopia av meddelanden sparas i varje användares postlåda som ingår i chatten, kommer kopior av meddelanden fortfarande att returneras i eDiscovery-resultat från användare som inte har tilldelats principen.
+    - För gruppchattmeddelanden och privata kanalmeddelanden, eftersom en kopia av meddelanden sparas i varje användares postlåda som ingår i chatten, fortsätter kopior av meddelanden att returneras i eDiscovery-resultat från användare som inte har tilldelats principen.
     - För användare som inte har tilldelats principen returneras borttagna meddelanden i sökresultat för Teams, men meddelandets innehåll visas inte som ett resultat av den permanenta borttagningen från principen som är tilldelad till användare.
 
 4. För sidan **Bestäm om du vill bevara innehållet och/eller ta bort det** i guiden anger du konfigurationsalternativ för att behålla eller ta bort innehåll.
@@ -182,11 +183,15 @@ Använd följande instruktioner för kvarhållningsprinciper som gäller för n�
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Konfigurationsinformation för Exchange-e-post och gemensamma Exchange-mappar
 
-Platsen **Exchange-e-post** har stöd för kvarhållning av användares e-post, kalender och andra postlådeobjekt genom att tillämpa kvarhållningsinställningar på nivån för en postlåda.
+Platsen **Exchange-e-post** har stöd för kvarhållning av användares e-post, kalender och andra postlådeobjekt genom att tillämpa kvarhållningsinställningar på nivån för en postlåda. Delade postlådor stöds också.
 
-Detaljerad information om vilka objekt som inkluderas och exkluderas när du konfigurerar kvarhållningsinställningar för Exchange finns i [Vad ingår för kvarhållning och borttagning](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+När du tillämpar kvarhållningsinställningarna på **Alla mottagare** inkluderas alla [inaktiva postlådor](create-and-manage-inactive-mailboxes.md) . Men om du ändrar den här standardinställningen och konfigurerar [specifika inkluderingar eller undantag](#a-policy-with-specific-inclusions-or-exclusions), stöds inte inaktiva postlådor och inställningar för bibehållande tillämpas eller exkluderas inte för dessa postlådor.
 
-Även om en Microsoft 365-grupp har en Exchange-postlåda så kommer en kvarhållningsprincip som inkluderar hela platsen **Exchange-e-post** inte att inkludera innehåll i Microsoft 365-gruppostlådor. För att behålla innehåll i dessa postlådor markerar du platsen **Microsoft 365-grupper**.
+Dessutom stöds inte resurspostlådor och Microsoft 365 grupppostlådor för **Alla mottagare** standard, eller för specifika inkluderingar eller undantag. För Microsoft 365 grupppostlådor väljer du istället **Microsoft 365-grupplats**.
+
+Om du väljer mottagare som ska inkluderas eller exkluderas kan du välja distributionsgrupper och e-postaktiverade säkerhetsgrupper. I bakgrunden expanderas dessa grupper automatiskt vid tidpunkten för konfigurationen för att välja postlådorna för användarna i gruppen. Om medlemskapet i dessa grupper ändras senare uppdateras inte en befintlig kvarhållningsprincip automatiskt.
+
+Detaljerad information om vilka e-postobjekt som inkluderas och exkluderas när du konfigurerar kvarhållningsinställningar för Exchange finns i [Vad ingår för kvarhållning och borttagning](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
 Platsen **Gemensamma Exchange-mappar** tillämpar kvarhållningsinställningar på alla gemensamma mappar och kan inte tillämpas på mapp- eller postlådenivå.
 

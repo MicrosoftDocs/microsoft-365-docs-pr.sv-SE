@@ -10,30 +10,30 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 31077b3ffbddb78ecac8841c22c77fa75f6e2c32
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: c2b0cc6db8ade434e94db92ae225140f7b1aec69
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203094"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289589"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Förutsättningar för Microsoft Hanterat skrivbord
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure); do not delete.-->
 <!--from Prerequisites -->
 
-I det här avsnittet beskrivs de infrastrukturkrav du måste uppfylla för att säkerställa framgång med Microsoft Hanterat skrivbord. 
+I det här avsnittet beskrivs de infrastrukturkrav du måste uppfylla för att säkerställa framgång med Microsoft Hanterat skrivbord.
 
 
 Område | Information som krävs
 --- | ---
 Licensiering |Microsoft Hanterat skrivbord krävs att Microsoft 365 E3 licens med Microsoft Defender för slutpunkt (eller motsvarande) som tilldelats dina användare.<br>Mer information om de specifika tjänstplanerna finns i [Mer om licenser i](#more-about-licenses) det här avsnittet.<br>Mer information om tillgängliga licenser finns i [Microsoft 365 licens](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
-Anslutning |  Alla Microsoft Hanterat skrivbord kräver anslutningar till flera Microsoft-tjänsteslutpunkter från företagsnätverket.<br><br>En fullständig lista över obligatoriska IP-adresser och URL-adresser finns i [Nätverkskonfiguration](../get-ready/network.md). 
-Azure Active Directory |    Azure Active Directory (Azure AD) måste antingen vara källan till behörighet för alla användarkonton eller så måste användarkonton synkroniseras från en lokal Active Directory med den senaste versionen av Azure AD Anslut.<br><br>Mer information finns i [Azure AD-Anslut](/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>Mer information om Azure AD-Anslut versioner finns i [Azure AD Anslut:Versionshistorik](/azure/active-directory/hybrid/reference-connect-version-history).
-Autentisering |    Om Azure AD inte är källan till primär autentisering för användarkonton måste du konfigurera någon av dessa i Azure AD Anslut:<br>- Synkronisering av lösenordshashar<br>- Direktautentisering<br>– En extern identitetsleverantör (inklusive Windows Server ADFS och icke-Microsoft-IDP:er) som konfigurerats för att uppfylla Azure AD-integreringskraven. Mer information [finns](https://www.microsoft.com/download/details.aspx?id=56843) i riktlinjerna. <br><br>När du anger autentiseringsalternativ med Azure AD Anslut, rekommenderas även tillbakaskrivning av lösenord. Mer information finns i [Tillbakaskrivning av lösenord.](/azure/active-directory/authentication/howto-sspr-writeback) <br><br>Om en extern identitetsprovider implementeras måste du verifiera lösningen:<br>- Uppfyller Krav för Azure AD-integrering<br>- Stöder villkorlig åtkomst i Azure AD, vilket Microsoft Hanterat skrivbord att enhetsefterlevnadsprincipen konfigureras<br>– Aktiverar enhetsregistrering och användning av Microsoft 365 tjänster eller funktioner som krävs som en del av Microsoft Hanterat skrivbord <br><br>Mer information om autentiseringsalternativ med Azure AD finns i [Azure AD Anslut för inloggningsalternativ för användare.](/azure/active-directory/connect/active-directory-aadconnect-user-signin)
+Anslutning | Alla Microsoft Hanterat skrivbord kräver anslutningar till flera Microsoft-tjänsteslutpunkter från företagsnätverket.<br><br>En fullständig lista över obligatoriska IP-adresser och URL-adresser finns i [Nätverkskonfiguration](../get-ready/network.md). 
+Azure Active Directory | Azure Active Directory (Azure AD) måste antingen vara källan till behörighet för alla användarkonton eller så måste användarkonton synkroniseras från en lokal Active Directory med den senaste versionen av Azure AD Anslut.<br><br>Mer information finns i [Azure AD-Anslut](/azure/active-directory/hybrid/whatis-azure-ad-connect).<br><br>Mer information om Azure AD-Anslut versioner finns i [Azure AD Anslut:Versionshistorik](/azure/active-directory/hybrid/reference-connect-version-history).
+Autentisering | Om Azure AD inte är källan till primär autentisering för användarkonton måste du konfigurera någon av dessa i Azure AD Anslut:<br>- Synkronisering av lösenordshashar<br>- Direktautentisering<br>– En extern identitetsleverantör (inklusive Windows Server ADFS och icke-Microsoft-IDP:er) som konfigurerats för att uppfylla Azure AD-integreringskraven. Mer information [finns](https://www.microsoft.com/download/details.aspx?id=56843) i riktlinjerna. <br><br>När du anger autentiseringsalternativ med Azure AD Anslut, rekommenderas även tillbakaskrivning av lösenord. Mer information finns i [Tillbakaskrivning av lösenord.](/azure/active-directory/authentication/howto-sspr-writeback) <br><br>Om en extern identitetsprovider implementeras måste du verifiera lösningen:<br>- Uppfyller Krav för Azure AD-integrering<br>- Stöder villkorlig åtkomst i Azure AD, vilket Microsoft Hanterat skrivbord att enhetsefterlevnadsprincipen konfigureras<br>– Aktiverar enhetsregistrering och användning av Microsoft 365 tjänster eller funktioner som krävs som en del av Microsoft Hanterat skrivbord <br><br>Mer information om autentiseringsalternativ med Azure AD finns i [Azure AD Anslut för inloggningsalternativ för användare.](/azure/active-directory/connect/active-directory-aadconnect-user-signin)
 Microsoft 365 | OneDrive för företag måste vara aktiverat Microsoft Hanterat skrivbord användarna.<br><br>Även om det inte krävs att registrera Microsoft Hanterat skrivbord rekommenderar vi att följande tjänster migreras till molnet:<br>- E-post: Migrera till molnbaserade postlådor Exchange online eller konfigurera med Exchange Online Hybrid med Exchange 2013 eller senare, lokalt.<br>- Filer och mappar: Migrera till OneDrive för företag eller SharePoint Online.<br>- Verktyg för onlinesamarbete: Migrera till Teams.
-Enhetshantering | Microsoft Hanterat skrivbord-enheter kräver hantering med hjälp av Microsoft Intune. Intune måste anges som utfärdare för hantering av mobila enheter.<br><br>Mer information finns i [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune). 
-Säkerhetskopiering och återställning av data |  Microsoft Hanterat skrivbord kräver att filerna synkroniseras för OneDrive för företag skydd. Filer som inte synkroniseras till OneDrive för företag omfattas inte av Microsoft Hanterat skrivbord och kan gå förlorade under enhetsutbyten eller supportsamtal som kräver återställning av enhet.<br><br>Även om det inte Microsoft Hanterat skrivbord rekommenderar vi starkt migrering från mappade nätverksenheter till lämplig molnlösning. Mer information finns i Förbereda [mappade enheter för Microsoft Hanterat skrivbord](mapped-drives.md)
+Enhetshantering | Microsoft Hanterat skrivbord-enheter kräver hantering med hjälp av Microsoft Intune. Intune måste anges som utfärdare för hantering av mobila enheter.<br><br>Mer information finns i [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
+Säkerhetskopiering och återställning av data | Microsoft Hanterat skrivbord kräver att filerna synkroniseras för OneDrive för företag skydd. Filer som inte synkroniseras till OneDrive för företag omfattas inte av Microsoft Hanterat skrivbord och kan gå förlorade under enhetsutbyten eller supportsamtal som kräver återställning av enhet.<br><br>Även om det inte Microsoft Hanterat skrivbord rekommenderar vi starkt migrering från mappade nätverksenheter till lämplig molnlösning. Mer information finns i Förbereda [mappade enheter för Microsoft Hanterat skrivbord](mapped-drives.md)
 
 När du är redo att börja använda Microsoft Hanterat skrivbord kontaktar du Microsoft Account Manager. 
 
@@ -45,14 +45,13 @@ Microsoft Hanterat skrivbord krävs vissa licensalternativ för att fungera. Se 
 > Om du vill tilldela licensalternativen till specifika användare rekommenderar vi att du utnyttjar funktionen för gruppbaserad [licensiering](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) i Azure Active Directory.
 
 - Azure Active Directory Premium P1
-- Microsoft Intune 
+- Microsoft Intune
 - Windows 10 Enterprise  
 - Microsoft Defender för Endpoint
 -  Microsoft 365 Apps för företag
 - Microsoft Teams
 - [SharePoint Online (abonnemang 2)](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
-- [Exchange Online-abonnemang 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans) 
-
+- [Exchange Online-abonnemang 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans)
 
 > [!TIP]
 > Med Microsoft Account Manager kan du granska dina aktuella licenser och tjänstplaner och hitta den effektivaste vägen för att få ytterligare licenser eller tjänstplaner som du kan behöva, samtidigt som du slipper duplicering.

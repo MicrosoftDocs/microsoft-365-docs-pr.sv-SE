@@ -16,12 +16,12 @@ ms.reviewer: tewchen, pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 05/08/2021
-ms.openlocfilehash: e4675626e9debf3ef3a295f7c797ac254e82395f
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: f03fab3f296f98b448693c6a5d0886f409201703
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926025"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288485"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender Antivirus kompatibilitet
 
@@ -79,7 +79,7 @@ Om du använder Windows Server, version 1803 eller senare eller Windows Server 2
 - Värde: `1`
 
 > [!NOTE]
-> Passiv form stöds inte i Windows Server 2016. Registernyckeln `ForcePassiveMode` kan användas på Windows Server, version 1803 eller senare eller i Windows Server 2019, men inte Windows Server 2016. 
+> Passiv form stöds inte i Windows Server 2016. Registernyckeln `ForceDefenderPassiveMode` kan användas på Windows Server, version 1803 eller senare eller i Windows Server 2019, men inte Windows Server 2016. 
 
 (<a id="fn2">2</a>) På Windows Server 2016 gäller att om du använder ett antivirusprogram som inte är ett Microsoft-antivirusprogram kan du inte Microsoft Defender Antivirus i antingen passivt läge eller aktivt läge. I sådana fall [inaktiverar/avinstallerar du Microsoft Defender Antivirus för](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016) att förhindra problem som orsakas av att flera antivirusprogram är installerade på en server.
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Apps för företag
-description: Hur du distribuerar Microsoft 365 program, hur de uppdateras och hur inställningar hanteras
+description: Hur du distribuerar Microsoft 365-applikationer, hur de uppdateras och hur inställningar hanteras
 keywords: ändringshistorik
 ms.service: m365-md
 ms.sitesec: library
@@ -11,12 +11,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: c3928b5814332f2585adc613e1e84cbe5cc883a0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925617"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287981"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a> Microsoft 365 Apps för företag
 
@@ -40,15 +40,15 @@ Den här metoden minimerar nätverkets påverkan och ser till att användarna ka
 
 ### <a name="available-deployment-to-users"></a>Tillgänglig distribution för användare
 
-Om en användare av någon Microsoft 365 har ett program på sin enhet kan du använda ett paket för att returnera enheten till det förväntade läget. Lägg till användaren i **gruppen Office-Office365_Install** och apparna blir tillgängliga för dem i Företagsportal.
+Om en användare av någon Microsoft 365-applikationer på sin enhet kan du använda ett paket för att returnera enheten till det förväntade läget. Lägg till användaren i **gruppen Office-Office365_Install** och apparna blir tillgängliga för dem i Företagsportal.
 
 ### <a name="microsoft-365-apps-for-enterprise-32-bit"></a>Microsoft 365-appar för företag (32-bitars)
 
 Microsoft Hanterat skrivbord stöder inte distributionen av 32-bitarsversionen av M365-program för företag.
 
-## <a name="updates-to-microsoft-365-apps"></a>Uppdateringar av Microsoft 365 program
+## <a name="updates-to-microsoft-365-apps"></a>Uppdateringar av Microsoft 365-applikationer
 
-Microsoft 365 Appar är inställda på uppdatering i [månadskanal för företag.](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Den här övningen ger användarna nya Office funktioner varje månad, men de får bara en uppdatering per månad på ett förutsägbart versionsschema. Uppdateringar släpps den andra tisdagen i månaden. dessa uppdateringar kan innehålla funktions-, säkerhets- och kvalitetsuppdateringar. Dessa uppdateringar görs automatiskt och hämtas direkt från Office CDN för den specifika kanalen.
+Microsoft 365-applikationer är inställt på uppdatering i [Månatlig Enterprise-kanal.](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Den här övningen ger användarna nya Office funktioner varje månad, men de får bara en uppdatering per månad på ett förutsägbart versionsschema. Uppdateringar släpps den andra tisdagen i månaden. dessa uppdateringar kan innehålla funktions-, säkerhets- och kvalitetsuppdateringar. Dessa uppdateringar görs automatiskt och hämtas direkt från Office CDN för den specifika kanalen.
 
 Microsoft Hanterat skrivbord för varje version så att du kan identifiera potentiella problem i din miljö. Lanseringen slutförs 28 dagar efter lanseringen från produktgruppen Microsoft 365 App. Microsoft Hanterat skrivbord schemalägger uppdaterings versioner till olika grupper för att ge tid för validering och testning enligt följande: 
 
@@ -57,13 +57,13 @@ Microsoft Hanterat skrivbord för varje version så att du kan identifiera poten
 - Snabbt: 3 dagar
 - Bred: 7 dagar
 
-Microsoft Hanterat skrivbord anger en tidsgräns på sju [dagar för uppdateringar](/deployoffice/configure-update-settings-microsoft-365-apps) för enheter. När uppdateringen är tillgänglig måste den installeras inom sju dagar. Användarna [meddelas](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) om att uppdateringar krävs på flera olika platser: programmet, i systemfältet 12 timmar före tidsgränsen, och de får en 15-minutersvarning före tidsgränsen. Alla Microsoft 365 måste vara stängda för att uppdateringen ska kunna slutföras.
+Microsoft Hanterat skrivbord anger en tidsgräns på sju [dagar för uppdateringar](/deployoffice/configure-update-settings-microsoft-365-apps) för enheter. När uppdateringen är tillgänglig måste den installeras inom sju dagar. Användarna [meddelas](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) om att uppdateringar krävs på flera olika platser: programmet, i systemfältet 12 timmar före tidsgränsen, och de får en 15-minutersvarning före tidsgränsen. Alla Microsoft 365-applikationer måste vara stängda för att uppdateringen ska kunna slutföras.
 
 ### <a name="pausing-or-rolling-back-an-update"></a>Pausa eller distribuera en uppdatering
 
 Om du av någon anledning behöver pausa eller återställa Microsoft 365 programuppdateringen kan du arkivera en [administratörssupportbegäran](../working-with-managed-desktop/admin-support.md) via Microsoft Hanterat skrivbord portalen.
 
-Under en version Microsoft Hanterat skrivbord vi felfrekvensen för alla Microsoft 365 appar. Om vi ser en betydande kvalitetsskillnad mellan den nya versionen och den föregående versionen kan vi kontakta dig via Microsoft Hanterat skrivbord-administratörsportalen. Beroende på hur allvarligt det är frågar vi dig om du vill pausa utgivningen eller informera dig om att vi har vidtagit åtgärder för att minimera ett problem. 
+Under en version Microsoft Hanterat skrivbord vi felfrekvensen för alla Microsoft 365-applikationer. Om vi ser en betydande kvalitetsskillnad mellan den nya versionen och den föregående versionen kan vi kontakta dig via Microsoft Hanterat skrivbord-administratörsportalen. Beroende på hur allvarligt det är frågar vi dig om du vill pausa utgivningen eller informera dig om att vi har vidtagit åtgärder för att minimera ett problem. 
 
 ### <a name="delivery-optimization"></a>Leveransoptimering
 
@@ -112,7 +112,7 @@ Inställningen "Dölj meddelanden om uppdateringar" är inställd på **Falskt**
 
 En kombination av **UpdatePath- och** **UpdateChannel-principerna** används vid behov för att uppnå uppdateringsschemat. De här principerna är inställda för att säkerställa att Office alla enheter får uppdateringar direkt från CDN för Månatlig Enterprise-kanal.
 
-### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Ange målversionen av Microsoft 365 program
+### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Ange målversionen av Microsoft 365-applikationer
 
 Principen målversion används ibland av Microsoft Hanterat skrivbord för att återställa eller fästa en viss version av Office. 
 
@@ -153,15 +153,15 @@ Vissa organisationer är bekymrade över att användare ska ha åtkomst till bå
 
 Det finns många andra principer Microsoft Hanterat skrivbord ännu inte angett som en del av vår tjänst. Du kan konfigurera de här Microsoft Intune med hjälp av tjänsten [Office Molnprincip.](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Följ de här anvisningarna om du vill ange dessa principer:
 
-1.  Logga in Microsoft Endpoint Manager administrationscentret.
-2.  Välj **Program > Principer för Office appar > Skapa**
-3.  Gör **följande på** sidan Skapa principkonfiguration:
+1. Logga in Microsoft Endpoint Manager administrationscentret.
+2. Välj **Program > Principer för Office appar > Skapa**
+3. Gör **följande på** sidan Skapa principkonfiguration:
     - Ange ett namn.
     - Ange en beskrivning (valfritt).
     - I **tilldelningar** väljer du om den här principen gäller för alla användare av Microsoft 365-appar för företag eller bara för användare som har anonym åtkomst till dokument med Office för webben.
     - Markera den AAD-baserade säkerhetsgrupp som har tilldelats till principkonfigurationen. Varje principkonfiguration kan bara tilldelas en grupp och varje grupp kan bara tilldelas en principkonfiguration.
     - Konfigurera principinställningarna så att de inkluderas i principkonfigurationen. Du kan söka efter principinställningsnamnet och hitta den principinställning som du vill konfigurera. Du kan också filtrera på programmet, på om principen är en rekommenderad säkerhetsbaslinje och på om principen har konfigurerats. Plattformskolumnen anger om principen tillämpas på Microsoft 365-appar för företag för Windows-enheter, Office för webben eller alla.
-4.  När du har gjort dina val väljer du **Skapa**.
+4. När du har gjort dina val väljer du **Skapa**.
 
 > [!NOTE]
 > Office Konfigurationsprinciper stöder endast användarbaserad distribution

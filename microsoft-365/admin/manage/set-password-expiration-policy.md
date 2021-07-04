@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Lär dig hur en administratör kan ange en förfalloprincip för lösenord för ditt företag, din skola eller en ideell förening i administrationscentret för Microsoft 365.
-ms.openlocfilehash: 7f12918211718b91313c0c89b11eaeb0a8cc3181
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: fdd219e4fc99e2388acb5b19eacb2fc470041f79
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635828"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286735"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Ange förfalloprincip för lösenord i organisationen
 
@@ -59,7 +59,7 @@ Följ anvisningarna nedan om du vill ställa in så att användarlösenorden ska
   
 5. Ange hur ofta lösenord ska upphöra att gälla. Välj ett antal dagar mellan 14 och 730.
   
-6. I den andra rutan anger du när användarna underrättas om att deras lösenord upphör att gälla och väljer sedan **Spara**. Du kan välja ett antal dagar mellan 1 och 30.
+6. I den andra rutan skriver du när användarna får ett meddelande om att deras lösenord upphör att gälla och väljer sedan **Spara**. Välj ett antal dagar mellan 1 och 30.
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>Viktiga saker du behöver veta om funktionen för lösenords giltighetstid
   
@@ -85,9 +85,10 @@ Du kan konfigurera fler lösenordsprinciper och begränsningar i Azure Active Di
 
 Den ange-MsolPasswordPolicy cmdlet uppdaterar lösenordsprincipen för en specifik domän eller klientorganisation. Två inställningar krävs; den första är att ange hur lång tid ett lösenord förblir giltigt innan det måste ändras och det andra är att ange antalet dagar innan lösenordets utgångsdatum som kommer att trigga när användare kommer att få sitt första meddelande om att deras lösenord snart kommer att löpa ut.
 
-Information om hur du uppdaterar lösenordspolicyn för en specifik domän eller hyresgäst finns i [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
+Information om hur du uppdaterar lösenordspolicyn för en specifik domän eller hyresgäst finns i [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy).
 
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Låt användare återställa sina egna lösenord](../add-users/let-users-reset-passwords.md) (artikel)\
+
 [Återställ lösenord](../add-users/reset-passwords.md) (artikel)

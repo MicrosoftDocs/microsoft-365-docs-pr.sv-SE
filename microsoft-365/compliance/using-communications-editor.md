@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Använd kommunikationsredigeraren för att ändra text- och kopplingsfältvariabler när du formaterar innehållet.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "52161774"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288125"
 ---
 # <a name="use-the-communications-editor"></a>Använda kommunikationsredigeraren
 
@@ -40,11 +40,15 @@ Du kan använda kopplingsinstruktioner för e-post **genom** att välja ikonerna
 
 ### <a name="list-of-merge-field-variables"></a>Lista över kopplingsinstruktionsvariabler
 
-| Fältnamn                  | Fältinformation |
-| :------------------- | :------------------- |
-| Visningsnamn  | Den som ger sig av för- och efternamn. | 
-| Bekräftelselänk | En anpassad länk för att registrera varje enskild persons bekräftelse.|                 |
-| Portallänk     | En anpassad länk för den uppsnadares efterlevnadsportal.|                |
-| Utfärdar officer                   | E-postadressen till den angivna utfärdaren.|                   |
-| Utgivningsdatum                   | Datumet då meddelandet utfärdades (UTC).              |
-|||
+<br>
+
+****
+
+|Fältnamn|Fältinformation|
+|---|---|
+|Visningsnamn|Den som ger sig av för- och efternamn.|
+|Bekräftelselänk|En anpassad länk för att registrera varje enskild persons bekräftelse.|
+|Portallänk|En anpassad länk för den uppsnadares efterlevnadsportal.|
+|Utfärdar officer|E-postadressen till den angivna utfärdaren.|
+|Utgivningsdatum|Datumet då meddelandet utfärdades (UTC).|
+|

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: df1a032ffab0490c41edc7d282f0f2cc60608870
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769815"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289685"
 ---
 # <a name="alert-resource-type"></a>Aviseringsresurstyp
 
@@ -52,14 +52,13 @@ Metod |Returtyp |Beskrivning
 [Skaffa relaterade datorer](get-alert-related-machine-info.md) | [Maskin](machine.md) | Den [dator](machine.md) som är kopplad till [aviseringen](alerts.md).
 [Skaffa relaterade användare](get-alert-related-user-info.md) | [Användare](user.md) | Användaren [som](user.md) är kopplad till [aviseringen](alerts.md).
 
-
 ## <a name="properties"></a>Egenskaper
 
 Egenskap |    Typ    |    Beskrivning
 :---|:---|:---
 id | Sträng | Aviserings-ID.
 rubrik | Sträng | Aviseringsrubrik.
-beskrivning | Sträng | Aviseringsbeskrivning.
+description | Sträng | Aviseringsbeskrivning.
 alertCreationTime | Nullable DateTimeOffset | Datum och tid (i UTC) som aviseringen skapades.
 lastEventTime | Nullable DateTimeOffset | Den sista förekomsten av händelsen som utlöste aviseringen på samma enhet.
 firstEventTime | Nullable DateTimeOffset | Den första förekomsten av händelsen som utlöste aviseringen på enheten.

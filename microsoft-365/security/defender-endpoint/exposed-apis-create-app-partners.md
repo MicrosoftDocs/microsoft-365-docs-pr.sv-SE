@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5546b69fa924025491e1762d199678fa549a9c7c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 695dfbec007b259b7daec2346201737d57c4ad30
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842152"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289781"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Partneråtkomst via Microsoft Defender för slutpunkts-API:er
 
@@ -60,13 +60,13 @@ Följande steg vägleder dig hur du skapar ett Azure AD-program, hämtar en åtk
 
 3. I registreringsformuläret:
 
-    - Välj ett namn på programmet.
+   - Välj ett namn på programmet.
 
-    - Kontotyper som stöds – konton i valfri organisationskatalog.
+   - Kontotyper som stöds – konton i valfri organisationskatalog.
 
-    - Omdirigera URI – typ: Webb, URI: https://portal.azure.com
+   - Omdirigera URI – typ: Webb, URI: https://portal.azure.com
 
-    ![Bild på registrering Microsoft Azure partnerprogram](images/atp-api-new-app-partner.png)
+   ![Bild på registrering Microsoft Azure partnerprogram](images/atp-api-new-app-partner.png)
 
 
 4. Tillåt att programmet får åtkomst till Microsoft Defender för Endpoint och tilldela det med minimal mängd behörigheter som krävs för att slutföra integreringen.
@@ -94,13 +94,13 @@ Följande steg vägleder dig hur du skapar ett Azure AD-program, hämtar en åtk
 
 5. Välj **Bevilja medgivande**
 
-    - **Obs!** Varje gång du lägger till behörighet måste du välja **Bevilja medgivande** för att den nya behörigheten ska gälla.
+   - **Obs!** Varje gång du lägger till behörighet måste du välja **Bevilja medgivande** för att den nya behörigheten ska gälla.
 
-    ![Bild av bevilja behörigheter](images/grant-consent.png)
+   ![Bild av bevilja behörigheter](images/grant-consent.png)
 
 6. Gör programmet hemligt.
 
-    - Välj **Certifikat & hemligheter ,** lägg till en beskrivning av hemligheten och välj Lägg **till**.
+   - Välj **Certifikat & hemligheter ,** lägg till en beskrivning av hemligheten och välj Lägg **till**.
 
     **Viktigt:** Efter att du klickat på Lägg **till kopierar du det genererade hemliga värdet**. Du kommer inte att kunna hämta igen när du har lämnat!
 
@@ -114,36 +114,36 @@ Följande steg vägleder dig hur du skapar ett Azure AD-program, hämtar en åtk
 
 8. Lägg till programmet i kundens klientorganisation.
 
-    Du behöver att programmet ska godkännas i varje kundklientorganisation där du tänker använda det. Det beror på att ditt program interagerar med Microsoft Defender för Endpoint-programmet åt din kund.
+   Du behöver att programmet ska godkännas i varje kundklientorganisation där du tänker använda det. Det beror på att ditt program interagerar med Microsoft Defender för Endpoint-programmet åt din kund.
 
-    En användare med **global administratör** från kundens klientorganisation måste välja medgivandelänken och godkänna programmet.
+   En användare med **global administratör** från kundens klientorganisation måste välja medgivandelänken och godkänna programmet.
 
-    Medgivandelänken är i formuläret:
+   Medgivandelänken är i formuläret:
 
-    ```
-    https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
-    ```
+   ```http
+   https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
+   ```
 
-    Där 00000000-0000-0000-0000-00000000000 ska ersättas med ditt Program-ID
+   Där 00000000-0000-0000-0000-00000000000 ska ersättas med ditt Program-ID
 
-    När du klickat på medgivandelänken loggar du in med den globala administratören för kundens klientorganisation och godkänner programmet.
+   När du klickat på medgivandelänken loggar du in med den globala administratören för kundens klientorganisation och godkänner programmet.
 
-    ![Bild av medgivande](images/app-consent-partner.png)
+   ![Bild av medgivande](images/app-consent-partner.png)
 
-    Dessutom måste du be kunden om deras klientorganisations-ID och spara det för framtida användning när du hämtar token.
+   Dessutom måste du be kunden om deras klientorganisations-ID och spara det för framtida användning när du hämtar token.
 
-- **Klart!** Du har registrerat ett program! 
+- **Klart!** Du har registrerat ett program!
 - Se exempel nedan för insamling och validering av token.
 
-## <a name="get-an-access-token-example"></a>Hämta ett exempel på åtkomsttoken:
+## <a name="get-an-access-token-example"></a>Exempel på åtkomsttoken
 
 **Obs!** Om du vill få åtkomsttoken åt kunden använder du kundens klientorganisations-ID vid följande tokeninköp.
 
-<br>Mer information om AAD token finns i [AAD-självstudiekursen](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Mer information om AAD token finns i [AAD-självstudiekursen](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-powershell"></a>Använda PowerShell
 
-```
+```powershell
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
 # Paste below your Tenant ID, App ID and App Secret (App key).
 
@@ -165,21 +165,21 @@ Out-File -FilePath "./Latest-token.txt" -InputObject $token
 return $token
 ```
 
-### <a name="using-c"></a>Med hjälp av C#:
+### <a name="using-c"></a>Använda C #
 
->Koden nedan testades med Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
+> Koden nedan testades med Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
 
 - Skapa ett nytt konsolprogram
 - Installera NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
 - Lägg till nedan med
 
-    ```
+    ```console
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-- Kopiera/klistra in nedanstående kod i programmet (glöm inte att uppdatera de tre variablerna: ```tenantId, appId, appSecret``` )
+- Kopiera/klistra in nedanstående kod i programmet (glöm inte att uppdatera de tre variablerna: `tenantId` `appId` , och `appSecret` )
 
-    ```
+    ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
@@ -192,7 +192,6 @@ return $token
     AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
     string token = authenticationResult.AccessToken;
     ```
-
 
 ### <a name="using-python"></a>Använda Python
 
@@ -209,19 +208,20 @@ Se Hämta [token med Python](run-advanced-query-sample-python.md#get-token)
 - Ange TENANT_ID azure-klientorganisations-ID för kunden som vill använda ditt program för att få åtkomst till Microsoft Defender för endpoint-programmet
 - Kör följande kommando:
 
-```
+```curl
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
 
 Du får ett svar på formuläret:
 
-```
+```console
 {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
 ```
 
 ## <a name="validate-the-token"></a>Verifiera token
 
 Sanity-kontroll för att kontrollera att du har fått ett korrekt token:
+
 - Kopiera/klistra in [i JWT](https://jwt.ms) den token du får i föregående steg för att avkoda den
 - Verifiera att du får ett anspråk om "roller" med rätt behörighet
 - På skärmbilden nedan kan du se en avkodad token som förvärvats från ett program med flera behörigheter till Microsoft Defender för Slutpunkt:
@@ -235,8 +235,9 @@ Sanity-kontroll för att kontrollera att du har fått ett korrekt token:
 - Ange rubriken Auktorisering i http-begäran som du skickar till "Bearer {token}" (Bearer är auktoriseringsschemat)
 - Förfallodatum för token är 1 timme (du kan skicka mer än en begäran med samma token)
 
-- Exempel på att skicka en begäran om att få en lista med aviseringar **med C#** 
-    ```
+- Exempel på att skicka en begäran om att få en lista med aviseringar **med C#**
+
+    ```csharp
     var httpClient = new HttpClient();
 
     var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
@@ -249,5 +250,6 @@ Sanity-kontroll för att kontrollera att du har fått ett korrekt token:
     ```
 
 ## <a name="see-also"></a>Se även
+
 - [Microsoft Defender för Endpoint API:er som stöds](exposed-apis-list.md)
 - [Åtkomst till Microsoft Defender för Endpoint åt en användare](exposed-apis-create-app-nativeapp.md)

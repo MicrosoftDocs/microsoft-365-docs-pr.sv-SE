@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 84ec1ad42f2cec2487debe7160a3f24e09bdd830
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226221"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288197"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Utbilda en prediktiv kodningsmodell (förhandsversion)
 
@@ -67,11 +67,15 @@ När du har genomför den första utbildningsomgången startas ett jobb som gör
 
 - Modellen tilldelar ett förutsägelseresultat till de 10 objekten i kontrolluppsättningen som du har angett under utbildningsomgången. Modellen jämför förutsägelseresultatet för dessa 10 objekt med den faktiska etikett som du har tilldelat till objektet under utbildningsomgången. Utifrån denna jämförelse identifierar modellen följande klassificering (kallas kontrolluppsättningens förväxlingsmatris) för att bedöma modellens prognosprestanda:
 
-  |          |Modell förutsägelser om att objekt är relevanta |Modell förutsägelser om att objekt inte är relevanta |
-  |:---------|:---------|:---------|
-  |**Granskaren ser objekt som relevant**| Sant positivt| Falskt positivt resultat |
-  |**Granskaren ser att objektet inte är relevant**| Falskt negativt |Sant negativt |
-  ||||
+  <br>
+
+  ****
+
+  |Etikett|Modell förutsägelser om att objekt är relevanta|Modell förutsägelser om att objekt inte är relevanta|
+  |---|---|---|
+  |**Granskaren ser objekt som relevant**|Sant positivt|Falskt positivt resultat|
+  |**Granskaren ser att objektet inte är relevant**|Falskt negativt|Sant negativt|
+  |
 
   Utifrån dessa jämförelser härleder modellen värden för måtten F-poäng, precision och återkallelse samt felmarginalen för var och en av dem. Resultat för dessa modellprestandamätvärden visas på en utfällbordssida för utbildningsomgången. En beskrivning av mätvärdena finns i [Prediktiv kodningsreferens](predictive-coding-reference.md).
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om de kvarhållningsprinciper som gäller för Microsoft Teams.
-ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: b459665d9b92705bd575a7a79a4d4d6adc2a3f68
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908275"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256321"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Mer information om kvarhållning för Microsoft Teams
 
@@ -44,8 +44,10 @@ För övriga arbetsbelastningar finns information i:
 ## <a name="whats-included-for-retention-and-deletion"></a>Vad omfattas för kvarhållning och borttagning
 
 Teams-chattmeddelanden och Teams-kanalmeddelanden kan tas bort med hjälp av kvarhållningsprinciper för Teams, och utöver texten i meddelandena kan följande objekt bevaras av efterlevnadsskäl: Inbäddade bilder, tabeller, hypertextlänkar, länkar till andra Teams-meddelanden och -filer och [kortinnehåll](/microsoftteams/platform/task-modules-and-cards/what-are-cards). I chattmeddelanden ingår alla namn på personer i chatten, och i kanalmeddelanden ingår teamets namn och meddelanderubriken (om de har angetts). 
+> [!NOTE]
+> Stöd för meddelanden i privata kanaler lanseras för närvarande i förhandsversion.
 
-Teams-meddelanden i privata kanaler stöds för närvarande inte för kvarhållningsprinciper. Kodfragment, inspelade röstmeddelanden från Teams-mobilklienten, miniatyrer, meddelandebilder och reaktioner från andra i form av uttryckssymboler bevaras inte när du använder kvarhållningsprinciper för Teams.
+Kodfragment, inspelade röstmeddelanden från Teams-mobilklienten, miniatyrer, meddelandebilder och reaktioner från andra i form av uttryckssymboler bevaras inte när du använder kvarhållningsprinciper för Teams.
 
 E-postmeddelanden och filer som du använder med Teams omfattas inte av kvarhållningsprinciper för Teams. De här föremålen har sina egna kvarhållningsprinciper.
 
@@ -59,7 +61,7 @@ Postlådorna visas med sitt RecipientTypeDetails-attribut:
 
 - **UserMailbox**: I de här postlådorna lagras meddelandedata för molnbaserade Teams-användare.
 - **MailUser**: I de här postlådorna lagras meddelandedata för [lokala Teams-användare](search-cloud-based-mailboxes-for-on-premises-users.md).
-- **GroupMailbox**: I de här postlådorna lagras meddelandedata för Teams-kanaler.
+- **GroupMailbox**: I de här postlådorna lagras meddelandedata för Teams-standardkanaler.
 
 Kvarhållningsprinciper för Teams kan inte användas med andra postlådetyper som RoomMailbox, som används för Teams-konferensrum.
 

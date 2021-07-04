@@ -11,8 +11,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid:
 - MOE150
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c4d4958c03bee7301465c16fef2cd4ff8adb1722
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246403"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288461"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Utvärdera din säkerhet med Microsoft Secure Score
 
@@ -36,9 +35,9 @@ Microsoft Secure Score är ett mått på en organisations säkerhetssäkerhet, m
 
 Åtgärder för Microsoft-förbättringar är ordnade i grupper så att du snabbare kan hitta den information du behöver:
 
-* Identitet (Azure Active Directory konton & roller)
-* Enhet (Microsoft Defender för slutpunkt, som kallas [Microsoft Secure Score för enheter](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-* Appar (e-post- och molnprogram, Office 365 och Microsoft Cloud App Security)
+- Identitet (Azure Active Directory konton & roller)
+- Enhet (Microsoft Defender för slutpunkt, som kallas [Microsoft Secure Score för enheter](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
+- Appar (e-post- och molnprogram, Office 365 och Microsoft Cloud App Security)
 
 >[!NOTE]
 >I den senaste versionen av Microsoft Secure Score har en förbättrad poängmodell släppts som gjort att Microsoft Secure Score tillfälligt inte är kompatibelt med Identity Secure Score och Graph API. [Visa information](microsoft-secure-score-whats-new.md)
@@ -106,7 +105,7 @@ Förbättringsåtgärder har statusen "slutförd" när alla möjliga punkter fö
 
 I avsnittet som **heter Kort sagt** får du veta kategorin, attacker den kan skydda mot och produkten.
 
-**Användarens** påverkan är vad användarna kommer att uppleva om  förbättringsåtgärden vidtas och Användare som påverkas är de personer som kommer att påverkas.
+**Användar påverkan** är vad användarna kommer att uppleva om förbättringsåtgärden vidtas och de användare som påverkas är de personer som kommer att påverkas. 
 
 ### <a name="implement-the-improvement-action"></a>Implementera förbättringsåtgärden
 

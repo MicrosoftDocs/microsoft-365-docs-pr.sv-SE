@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Förbered och distribuera Microsofts efterlevnadstillägg.
-ms.openlocfilehash: c20381b23a70fdf8e6571af65b74688cc57ea760
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: a76a4b1ab5b92a1e237663f65002b99d792b13bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226965"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288377"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>Kom igång med Microsofts efterlevnadstillägg
 
@@ -107,35 +107,34 @@ Detta är den rekommenderade metoden.
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
    ```
 
-2.  Gå till [Microsofts efterlevnadstillägg – Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+2. Gå till [Microsofts efterlevnadstillägg – Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
-3.  Installera tillägget med hjälp av anvisningarna på Chrome Web Store-sidan.
+3. Installera tillägget med hjälp av anvisningarna på Chrome Web Store-sidan.
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Distribuera med Microsoft Endpoint Manager
 
 Använd konfigurationsmetoden vid distributioner till hela organisationen.
 
-
 ##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>Aktivera den obligatoriska registernyckeln via Microsoft Endpoint Manager
 
-1.  Skapa ett PowerShell-skript med följande innehåll:
+1. Skapa ett PowerShell-skript med följande innehåll:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-2.  Logga in på [Administrationscenter för Microsoft Endpoint Manager](https://endpoint.microsoft.com).
+2. Logga in på [Administrationscenter för Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
-3.  Gå till **Enheter** > **Skript** och välj **Lägg till**.
+3. Gå till **Enheter** > **Skript** och välj **Lägg till**.
 
-4.  Bläddra till platsen för skriptet som skapades när du uppmanas till det.
+4. Bläddra till platsen för skriptet som skapades när du uppmanas till det.
 
-5.  Välj följande inställningar:
+5. Välj följande inställningar:
     1. Kör skriptet med de inloggade autentiseringsuppgifterna: JA
     1. Framtvinga signaturkontroll av skript: NEJ
     1. Kör skript i 64-bitars PowerShell-värd: JA
 
-6.  Välj enhetsgrupper och tillämpa principen.
+6. Välj enhetsgrupper och tillämpa principen.
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Installera alltid med Microsoft Endpoint Manager
 
@@ -143,27 +142,27 @@ Innan du lägger till Microsofts efterlevnadstillägg i listan med tillägg som 
 
  När du har matat in ADMX kan du följa stegen nedan för att skapa en konfigurationsprofil för tillägget.
 
-1.  Logga in på Administrationscenter för Microsoft Endpoint Manager (https://endpoint.microsoft.com).
+1. Logga in på Administrationscenter för Microsoft Endpoint Manager (https://endpoint.microsoft.com).
 
-2.  Gå till konfigurationsprofilerna.
+2. Gå till konfigurationsprofilerna.
 
-3.  Välj **Skapa profil**.
+3. Välj **Skapa profil**.
 
-4.  Välj **Windows 10** som plattform.
+4. Välj **Windows 10** som plattform.
 
-5.  Välj **Anpassad** som profiltyp.
+5. Välj **Anpassad** som profiltyp.
 
-6.  Välj fliken **Inställningar**.
+6. Välj fliken **Inställningar**.
 
-7.  Välj **Lägg till**.
+7. Välj **Lägg till**.
 
-8.  Ange nedanstående principinformation.
+8. Ange nedanstående principinformation.
 
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Datatyp: `String`<br/>
     Värde: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
-9.  Klicka på Skapa.
+9. Klicka på Skapa.
 
 ### <a name="deploy-using-group-policy"></a>Distribuera med grupprincip
 
@@ -171,25 +170,25 @@ Om du inte vill använda Microsoft Endpoint Manager kan du använda grupprincipe
 
 1. Enheterna måste vara hanterbara via grupprincipen och du måste importera alla Chrome ADMX till den centrala lagringsplatsen för grupprincipen. Mer information finns i [Skapa och hantera den centrala lagringsplatsen för grupprincipens administrativa mallar i Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
-2.  Skapa ett PowerShell-skript med PowerShell-kommandot:
+2. Skapa ett PowerShell-skript med PowerShell-kommandot:
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
     ```
 
-3.  Öppna **konsolen Grupprinciphantering** och gå till din organisationsenhet.
+3. Öppna **konsolen Grupprinciphantering** och gå till din organisationsenhet.
 
-4.  Högerklicka och välj **Skapa ett GPO på den här domänen och länka den här**. När du uppmanas till det tilldelar du ett beskrivande namn till grupprincipobjektet (GPO) och slutför.
+4. Högerklicka och välj **Skapa ett GPO på den här domänen och länka den här**. När du uppmanas till det tilldelar du ett beskrivande namn till grupprincipobjektet (GPO) och slutför.
 
-5.  Högerklicka på GPO:et och välj **Redigera**.
+5. Högerklicka på GPO:et och välj **Redigera**.
 
-6.  Gå till **Datorkonfiguration** > **Inställningar** > **Inställningar för Kontrollpanel** > **Schemalagda aktiviteter**.
+6. Gå till **Datorkonfiguration** > **Inställningar** > **Inställningar för Kontrollpanel** > **Schemalagda aktiviteter**.
 
-7.  Skapa en ny omedelbar aktivitet genom att högerklicka och välja **Nytt** > **Omedelbar aktivitet (minst Windows 7)**.
+7. Skapa en ny omedelbar aktivitet genom att högerklicka och välja **Nytt** > **Omedelbar aktivitet (minst Windows 7)**.
 
-8.  Ge uppgiften ett namn och en beskrivning.
+8. Ge uppgiften ett namn och en beskrivning.
 
-9.  Välj motsvarande konto för att köra den omedelbara aktiviteten, t.ex. NT Authority
+9. Välj motsvarande konto för att köra den omedelbara aktiviteten, t.ex. NT Authority
 
 10. Välj **Kör med högsta behörighet**.
 
@@ -203,21 +202,21 @@ Om du inte vill använda Microsoft Endpoint Manager kan du använda grupprincipe
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Lägga till Chrome-tillägget i ForceInstall-listan
 
-1.  Gå till organisationsenheten i redigeringsprogrammet för grupprinciphantering.
+1. Gå till organisationsenheten i redigeringsprogrammet för grupprinciphantering.
 
-2.  Expandera följande sökväg **Konfiguration av dator/användare** > **Principer** > **Administrativa mallar** > **Klassiska administrativa mallar** > **Google** > **Google Chrome** > **Tillägg**. Sökvägen kan variera beroende på din konfiguration.
+2. Expandera följande sökväg **Konfiguration av dator/användare** > **Principer** > **Administrativa mallar** > **Klassiska administrativa mallar** > **Google** > **Google Chrome** > **Tillägg**. Sökvägen kan variera beroende på din konfiguration.
 
-3.  Välj **Konfigurera listan med tillägg som alltid installeras**.
+3. Välj **Konfigurera listan med tillägg som alltid installeras**.
 
-4.  Högerklicka och välj **Redigera**.
+4. Högerklicka och välj **Redigera**.
 
-5.  Välj **Aktiverad**.
+5. Välj **Aktiverad**.
 
-6.  Välj **Visa**.
+6. Välj **Visa**.
 
-7.  Under **Värde** lägger du till följande post: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+7. Under **Värde** lägger du till följande post: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 
-8.  Välj **OK** och sedan **Använd**.
+8. Välj **OK** och sedan **Använd**.
 
 ### <a name="test-the-extension"></a>Testa tillägget
 

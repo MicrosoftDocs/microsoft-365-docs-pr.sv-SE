@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 850d7e6692d3ccbfda6e15c8d5ca95301bd4d094
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a66ad53faf1b38c3db4ab4446dbc1d175fbd99e4
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245618"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289541"
 ---
 # <a name="register-new-devices-yourself"></a>Registrera nya enheter själv
 
@@ -50,11 +50,10 @@ Microsoft Hanterat skrivbord identifierar varje enhet unikt genom att referera t
 
 Du kan använda [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell-skript på webbplatsen för PowerShell-galleriet. Mer information om enhetsidentifiering och maskinvaruhash finns i [Lägga till enheter på Windows Autopilot.](/mem/autopilot/add-devices#device-identification)
 
-1.  Öppna en PowerShell-fråga med administrativa rättigheter.
-2.  Kör `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.  Kör `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
-4.  Kör `powershell -ExecutionPolicy restricted` för att förhindra att efterföljande ändrings unrestricted skript körs.
-
+1. Öppna en PowerShell-fråga med administrativa rättigheter.
+2. Kör `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. Kör `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4. Kör `powershell -ExecutionPolicy restricted` för att förhindra att efterföljande ändrings unrestricted skript körs.
 
 #### <a name="flash-drive-method"></a>Flash-enhetsmetod
 
@@ -68,9 +67,8 @@ Du kan använda [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com
 8. Kör `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 9. Ta bort USB-enheten och stäng sedan av enheten genom att köra `shutdown -s -t 0`
 
->[!IMPORTANT]
->Ström inte på enheten som du registrerar igen förrän du har slutfört registreringen för den. 
-
+> [!IMPORTANT]
+> Ström inte på enheten som du registrerar igen förrän du har slutfört registreringen för den. 
 
 ### <a name="merge-hash-data"></a>Slå samman hash-data
 
@@ -78,16 +76,13 @@ Du måste ha data i CSV-filerna kombinerade i en enda fil för att slutföra reg
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
-
 ### <a name="register-devices-by-using-the-admin-portal"></a>Registrera enheter med hjälp av administrationsportalen
 
 I [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)väljer du **Enheter** i det vänstra navigeringsfönstret. Titta efter Microsoft Hanterat skrivbord i menyn och välj **Enheter**. I arbetsytan Microsoft Hanterat skrivbord Enheter väljer du **+ Registrera enheter,** som gör att du kan registrera nya enheter.
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
-
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 Gör så här:
 

@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Lär dig att optimera prestandan för anpassade tillägg i SharePoint moderna webbplatssidor online.
-ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: af3645274b800a4eb8090957fc62397465022343
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923069"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288953"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimera anpassade tilläggsprestanda i SharePoint moderna webbplatssidor online
 
@@ -55,7 +55,8 @@ Information som är tillgänglig i resultatet omfattar:
 - **Summa** visar den totala tiden för inläsning och initiering av modulen för tillägget. Det är den totala relativa tid som tillägget tar för att köras på sidan, från början till slutet.
 - **Modulladdning** visar den tid det tar att ladda ned, utvärdera och läsa in tilläggen JavaScript- och CSS-filer. Sedan startas Init-processen.
 - **Init** visar hur lång tid det tog för tillägget att initiera data.
-    Det är ett asynkront samtal och inittid är beräkningen av tid för funktionen onInit när den returnerade lovat har lösts.
+
+  Det är ett asynkront samtal och inittid är beräkningen av tid för funktionen onInit när den returnerade lovat har lösts.
 
 Den här informationen finns med för att hjälpa designers och utvecklare att felsöka problem. Den här informationen bör ges till din design- och utvecklingsteam.
 

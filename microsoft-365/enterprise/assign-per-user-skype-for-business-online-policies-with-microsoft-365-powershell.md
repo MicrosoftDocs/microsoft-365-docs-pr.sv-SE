@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: Sammanfattning Använd PowerShell för att Microsoft 365 tilldela kommunikationsinställningar per användare med hjälp Skype för företag onlineprinciper.
-ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d7f369e96f3db95c741e6d4f2178eaf9032ab0bb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905410"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288089"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Tilldela principer per användare Skype för företag Online-principer med PowerShell för Microsoft 365
 
@@ -102,11 +102,10 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
 Det här kommandot anger namnet på principen för extern åtkomst som tilldelats Alex till ett nullvärde ($Null). Null innebär "inget". Med andra ord har ingen policy för extern åtkomst tilldelats till Alex. När ingen princip för extern åtkomst är tilldelad till en användare hanteras den användaren av den globala principen.
-  
 
 ## <a name="managing-large-numbers-of-users"></a>Hantera stora antal användare
 
-Om du vill hantera stora antal användare (1 000 eller fler) måste du batcha kommandona via ett skriptblock med cmdleten [Invoke-Command.](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  I tidigare exempel måste samtalet konfigureras varje gång en cmdlet körs och sedan vänta på resultatet innan det skickas tillbaka.  När du använder ett skriptblock gör detta att cmdlet:arna kan köras på distans och när de har slutförts kan du skicka tillbaka data. 
+Om du vill hantera stora antal användare (1 000 eller fler) måste du batcha kommandona via ett skriptblock med cmdleten [Invoke-Command.](/powershell/module/microsoft.powershell.core/invoke-command)  I tidigare exempel måste samtalet konfigureras varje gång en cmdlet körs och sedan vänta på resultatet innan det skickas tillbaka.  När du använder ett skriptblock gör detta att cmdlet:arna kan köras på distans och när de har slutförts kan du skicka tillbaka data.
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Lär dig att granska användar- och administratörsaktiviteterna i din Microsoft 365-organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d4a753a640b98125bc6ad02bd6043f28336e29b7
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538524"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256765"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Granskningslösningar i Microsoft 365
 
@@ -165,4 +165,4 @@ Se [Konfigurera Avancerad granskning](set-up-advanced-audit.md) för mer detalje
 
 ## <a name="training"></a>Utbildning
 
-Genom att utbilda teamet, IT-administratörer och efterlevnadsteamet i Grundläggande granskning och Avancerad granskning kan organisationen komma igång snabbare med granskning, med hjälp av undersökningar. Microsoft 365 innehåller följande resurs som hjälper användarna i organisationen att komma igång med granskning: [Describe the audit capabilities in Microsoft 365](/learn/modules/describe-audit-capabilities-microsoft-365).
+Genom att utbilda teamet, IT-administratörer och efterlevnadsteamet i grunderna för Grundläggande granskning och Avancerad granskning kan organisationen komma igång snabbare med granskning, med hjälp av undersökningar. Microsoft 365 innehåller följande resurs som hjälper användarna i organisationen att komma igång med granskning: [Beskriv eDiscovery- och granskningsfunktionerna i Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Oavsett om det handlar om att lägga till nya lösningar till efterlevnadscentret, uppdatera befintliga funktioner baserat på din feedback eller distribuera ny och uppdaterad dokumentation hjälper Microsoft 365 dig att hålla dig uppdaterad om den föränderliga miljön för efterlevnad. Ta reda på vad vi har gjort den här månaden.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6cd82e66a0b01f4cd329d846cf43581759dec0b6
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228465"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288137"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nyheter i Microsoft 365 Efterlevnad
 

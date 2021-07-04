@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8a2a3f83995bf4248b2cb72a848a1def83ae9c50
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: d70bb133904a7bcc9c30721d3f723b0fd8b88512
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203274"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287969"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Teknologier i Microsoft Hanterat skrivbord
 
@@ -28,17 +28,17 @@ Microsoft 365 Enterprise krävs för alla Microsoft Hanterat skrivbord användar
 Den här artikeln sammanfattar komponenterna som ingår i de obligatoriska Enterprise-licenserna, med en beskrivning av hur respektive komponent används med Microsoft Hanterat skrivbord enheter. Specifika roller och ansvarsområden för varje område anges i Microsoft Hanterat skrivbord dokumentation. 
 
 ## <a name="office-365-e3-or-e5"></a>Office 365 E3 eller E5
+
 | Produkt |Information |
 --- |--- 
 Microsoft 365-appar för företag (64-bitar) | Följande Office-program levereras med enheten: Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype för företag, OneNote.<br><br>64-bitarsversionen av alla Microsoft Project och Microsoft Visio inte med. Men eftersom installationen av de här programmen beror på Microsoft 365-appar för företag-installationen har Microsoft Hanterat skrivbord skapat standarddistributioner och säkerhetsgrupper för Microsoft Intune som du sedan kan använda för att distribuera programmen till licensierade användare. Mer information finns i Installera [Microsoft Project eller Microsoft Visio på Microsoft Hanterat skrivbord enheter.](../get-started/project-visio.md)
 OneDrive |Azure Active Directory Enkel inloggning är aktiverad för användare när de först loggar in på OneDrive.<br><br>Omdirigering av kända mappar för "Skrivbord", "Dokument" och "Bilder" ingår. aktiverat och konfigurerat av Microsoft Hanterat skrivbord.
-Store-appar |    Microsoft Sway Power BI levereras inte med enheten. De här apparna kan laddas ned från Microsoft Store.
-Win32-program |    Teams levereras inte med enheten utan paketeras och tillhandahålls av Microsoft för Microsoft Hanterat skrivbord enheter. Azure Information Protection Client levereras inte med enheten, men du kan få den paketerad för distribution.
-Webbprogram |  Yammer Office i en webbläsare levereras Delve, Flow, StaffHub, PowerApps och Planner inte med enheten. Användarna kan komma åt webbversionen av de här programmen via en webbläsare.
-
-
+Store-appar | Microsoft Sway Power BI levereras inte med enheten. De här apparna kan laddas ned från Microsoft Store.
+Win32-program | Teams levereras inte med enheten utan paketeras och tillhandahålls av Microsoft för Microsoft Hanterat skrivbord enheter. Azure Information Protection Client levereras inte med enheten, men du kan få den paketerad för distribution.
+Webbprogram | Yammer Office i en webbläsare levereras Delve, Flow, StaffHub, PowerApps och Planner inte med enheten. Användarna kan komma åt webbversionen av de här programmen via en webbläsare.
 
 ## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 Enterprise E5 eller E3 med Microsoft Defender för Endpoint
+
 Vi rekommenderar att IT-administratörerna konfigurerar följande inställningar. De här inställningarna ingår inte och hanteras inte som en del av Microsoft Hanterat skrivbord.
 
 Produkt  |Information
@@ -47,11 +47,10 @@ Windows Hello för företag | Du bör implementera Windows Hello för företag f
 Application Virtualization | Du kan distribuera Application Virtualization (App-V) paket med Intune Win32-apphanteringsklienten. Mer information finns i [Application Virtualization](/windows/application-management/app-v/appv-technical-reference).
 Microsoft 365 skydd mot dataförlust | Du bör implementera Microsoft 365 skydd mot dataförlust för att övervaka de åtgärder som vidtas på objekt som du har fastställt vara känsliga och för att förhindra oavsiktlig delning av dessa objekt. Mer information finns i Microsoft 365 [skydd mot dataförlust.](../../compliance/endpoint-dlp-learn-about.md)
 
-
 Funktioner som ingår och hanteras som en del av Microsoft Hanterat skrivbord:
 
 Produkt |Information
---- |--- 
+--- |---
 BitLocker-diskkryptering | BitLocker-diskkryptering används för att kryptera alla systemenheter. Mer information finns i [BitLocker-diskkryptering.](/windows/security/information-protection/bitlocker/bitlocker-overview)
 Windows Defender System Guard | Skyddar systemintegriteten vid start och verifierar att systemintegriteten verkligen har bibehållas. Mer information finns i [Windows Defender System Guard.](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
 Windows Defender Credential Guard | Windows Defender Credential Guard använder virtualiseringsbaserad säkerhet för att isolera hemligheter så att endast privilegierad systemprogramvara kan komma åt dem. Mer information finns i [Windows Defender System Guard.](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
@@ -72,8 +71,8 @@ Användarkontokontroll | User Account Control växlar till Säkert skrivbord nä
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 
-Produkt |Information 
+Produkt |Information
  --- | ---
-Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Du kan använda alla funktioner i Enterprise Mobility + Security E3 för att hantera MDM-enheter. Du kan använda Azure Active Directory Premium P2 som en valfri funktion med Microsoft Hanterat skrivbord.
-Microsoft Cloud App Security |  Du kan använda den här valfria funktionen Microsoft Hanterat skrivbord.
+Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 | Du kan använda alla funktioner i Enterprise Mobility + Security E3 för att hantera MDM-enheter. Du kan använda Azure Active Directory Premium P2 som en valfri funktion med Microsoft Hanterat skrivbord.
+Microsoft Cloud App Security | Du kan använda den här valfria funktionen Microsoft Hanterat skrivbord.
 Azure Information Protection P2  | Du kan använda den här valfria funktionen Microsoft Hanterat skrivbord.

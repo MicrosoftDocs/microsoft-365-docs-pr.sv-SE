@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8b05dde015bc96e1ccd3f80e25c416a371e03199
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7f8d3b10cee0b3c4a561dfd1f7567fa9818e7686
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772395"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289469"
 ---
 # <a name="create-alert-api"></a>Skapa aviserings-API
 
@@ -39,46 +39,48 @@ ms.locfileid: "52772395"
 
 
 ## <a name="api-description"></a>API-beskrivning
-Skapar ny [avisering](alerts.md) ovanpå **händelse**.
-<br>**Microsoft Defender för Endpoint-händelse** krävs för att aviseringen ska kunna skapas.
-<br>Du måste ange 3 parametrar från händelsen i begäran: Händelsetid, **Maskin-ID** och  **Rapport-ID.** Se exemplet nedan.
-<br>Du kan använda en händelse i Advanced Hunting API eller Portal.
-<br>Om det finns en öppen avisering på samma enhet med samma rubrik, slås den nya skapade aviseringen ihop med den.
-<br>En automatisk undersökning startar automatiskt för aviseringar som skapas via API:t.
 
+Skapar ny [avisering](alerts.md) ovanpå **händelse**.
+
+- **Microsoft Defender för Endpoint-händelse** krävs för att aviseringen ska kunna skapas.
+- Du måste ange 3 parametrar från händelsen i begäran: Händelsetid, **Maskin-ID** och  **Rapport-ID.** Se exemplet nedan.
+- Du kan använda en händelse i Advanced Hunting API eller Portal.
+- Om det finns en öppen avisering på samma enhet med samma rubrik, slås den nya skapade aviseringen ihop med den.
+- En automatisk undersökning startar automatiskt för aviseringar som skapas via API:t.
 
 ## <a name="limitations"></a>Begränsningar
-1. Prisbegränsningar för detta API är 15 samtal per minut.
 
+1. Prisbegränsningar för detta API är 15 samtal per minut.
 
 ## <a name="permissions"></a>Behörigheter
 
 En av följande behörigheter krävs för att anropa detta API. Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)
 
-Behörighetstyp |   Behörighet  |   Visningsnamn för behörighet
+Behörighetstyp | Behörighet | Visningsnamn för behörighet
 :---|:---|:---
-Program |   Alerts.ReadWrite.All |  "Läs och skriv alla aviseringar"
+Program | Alerts.ReadWrite.All | "Läs och skriv alla aviseringar"
 Delegerat (arbets- eller skolkonto) | Alert.ReadWrite | "Aviseringar om läsning och skrivning"
 
->[!Note]
+> [!NOTE]
 > När du skaffar en token med hjälp av användarautentiseringsuppgifter:
->- Användaren måste ha minst följande rollbehörighet: "Undersökning av aviseringar" (mer information finns i [Skapa och](user-roles.md) hantera roller)
->- Användaren måste ha åtkomst till enheten som är kopplad till aviseringen, baserat på enhetsgruppinställningar (mer information finns i Skapa och hantera enhetsgrupper) [](machine-groups.md)
+>
+> - Användaren måste ha minst följande rollbehörighet: "Undersökning av aviseringar" (mer information finns i [Skapa och](user-roles.md) hantera roller)
+> - Användaren måste ha åtkomst till enheten som är kopplad till aviseringen, baserat på enhetsgruppinställningar (mer information finns i Skapa och hantera enhetsgrupper) [](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-begäran
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 ```
 
-## <a name="request-headers"></a>Begäran om rubriker
+## <a name="request-headers"></a>Frågerubriker
 
 Namn | Typ | Beskrivning
 :---|:---|:---
 Auktorisering | Sträng | Bearer {token}. **Obligatoriskt.**
-Innehållstyp | Sträng | application/json. **Obligatoriskt.**
+Content-Type | Sträng | application/json. **Obligatoriskt.**
 
-## <a name="request-body"></a>Begärans brödtext
+## <a name="request-body"></a>Frågebrödtext
 
 Ange följande värden i brödtexten för begäran (alla är obligatoriska):
 
@@ -89,7 +91,7 @@ reportId | Sträng | ReportId för händelsen, från avancerad sökning. **Oblig
 machineId | Sträng | ID för enheten där händelsen identifierades. **Obligatoriskt.**
 allvarlighetsgrad | Sträng | Aviseringens allvarlighetsgrad. Egenskapsvärdena är: "Låg", "Medel" och "Hög". **Obligatoriskt.**
 rubrik | Sträng | Rubrik för aviseringen. **Obligatoriskt.**
-beskrivning | Sträng | Beskrivning av aviseringen. **Obligatoriskt.**
+description | Sträng | Beskrivning av aviseringen. **Obligatoriskt.**
 recommendedAction| Sträng | En åtgärd som rekommenderas att vidtas av säkerhetsofficer när du analyserar aviseringen. **Obligatoriskt.**
 kategori| Sträng | Kategorin för aviseringen. Egenskapsvärdena är: "General", "CommandAndControl", "Collection", "CredentialAccess", "DefenseEvasion", "Discovery", "Exfiltration", "Exploit", "Execution", "InitialAccess", "Malware", "Malware", "Per persist", "PrivilegeEscalation", "Ransomware", "SuspiciousActivity" **Required**.
 
@@ -99,7 +101,7 @@ Om det lyckas returnerar den här metoden 200 OK och ett [nytt aviseringsobjekt]
 
 ## <a name="example"></a>Exempel
 
-**Begäran**
+### <a name="request"></a>Begäran
 
 Här är ett exempel på begäran.
 

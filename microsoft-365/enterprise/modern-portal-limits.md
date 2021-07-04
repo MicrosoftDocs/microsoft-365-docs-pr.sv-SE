@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Läs mer om prestandarekommendationer för moderna webbplatser i SharePoint Online, till exempel att begränsa samtal till Sharepoint och externa slutpunkter.
-ms.openlocfilehash: 28c32be276f6c27194d164708e268a5cd36ac957
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2429869c5397e0260876ee5a765ea18ae3fc42a1
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925326"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288881"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Gränser för moderna portalwebbplatser online
 
@@ -58,7 +58,7 @@ Många av riktlinjerna i den här artikeln fokuserar på att minimera och optime
 |Maximal bildstorlek  <br/> |300 kB per bild  <br/> |Vi rekommenderar att du begränsar storleken på bilderna till 300 eller mindre, och att du använder en CDN för bilder, formatmallar och skript. <br/>Mer information finns i [Optimera bilder i SharePoint sidor](modern-image-optimization.md) för moderna webbplatser online och Använda Office 365 Content Delivery Network [(CDN) med SharePoint Online.](use-microsoft-365-cdn-with-spo.md)  <br/> |
 |Användare med redigeringsrättigheter  <br/> |200 användare per webbplats  <br/> |SharePoint är optimerade för att visa och använda innehåll. Redigeringsbehörigheter på en portal bör vara begränsade till en begränsad grupp användare eftersom redigeringsbehörigheter laddar ned ytterligare kontroller och därför fungerar långsammare för dessa användare. Ett överflödigt antal användare med redigeringsbehörighet påverkar därför den övergripande upplevelsen. <br/> |
 |Tredjeparts-iFrames  <br/> |2 per sida  <br/> |iFrames är oförutsägbara långsamt eftersom de läser in en separat extern sida med allt associerat innehåll, till exempel javascript, CSS och framework-element. Om du måste använda iFrames begränsar du antalet till 2 eller färre per sida.<br/> Mer information finns i Optimera [iFrames i SharePoint moderna och klassiska publiceringswebbplatssidor.](modern-iframe-optimization.md) <br/> |
-|Samtal till UPA-tjänsten  <br/> |1 per användare per timme  <br/> |Vi rekommenderar att du inte _ringer per förfrågan_ till UPA-tjänsten (User Profile Application). [Microsoft Graph API och](/graph/call-api) [PageContext](/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest) kan användas för att söka efter användarinformation.  <br/> Om ett UPA-tjänstsamtal krävs kan du ringa ett samtal när det behövs och sedan cachelagra informationen för återanvändning i samma session. |
+|Samtal till UPA-tjänsten  <br/> |1 per användare per timme  <br/> |Vi rekommenderar att du inte _ringer per förfrågan_ till UPA-tjänsten (User Profile Application). [Microsoft Graph API och](/graph/call-api) [PageContext](/javascript/api/sp-page-context/pagecontext) kan användas för att söka efter användarinformation.  <br/> Om ett UPA-tjänstsamtal krävs kan du ringa ett samtal när det behövs och sedan cachelagra informationen för återanvändning i samma session. |
 |Samtal till taxonomitjänsten  <br/> |5 per användare per timme  <br/> |Vi rekommenderar att du inte _ringer några samtal per_ begäran till taxonomitjänsten. Om taxonomitjänstanrop behövs cachelagrar du informationen för återanvändning i samma session. <br/> Mer information finns i Optimera [sidsamtal i SharePoint moderna och klassiska publiceringswebbplatssidor](modern-page-call-optimization.md)online. <br/> |
 
 ## <a name="related-topics"></a>Relaterade ämnen

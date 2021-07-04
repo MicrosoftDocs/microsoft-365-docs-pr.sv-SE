@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Använd REST API för att ta bort en tillämpad dokumenttolkningsmodell från ett eller flera bibliotek.
-ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: bbd3e496b50d3fddb31342fbc07d30984544e744
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177243"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287459"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -47,6 +47,7 @@ Ingen
 |Publikationer|ja|MachineLearningPublicationEntityData[]|Samlingen MachineLearningPublicationEntityData som var och en anger modell- och måldokumentbiblioteket.|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Namn | Obligatoriskt | Typ | Beskrivning |
 |--------|-------|--------|------------|
 |ModelUniqueId|ja|sträng|Modellfilens unika ID.|
@@ -61,6 +62,7 @@ Ingen
 |200 OK||Det här är ett anpassat API som stöder borttagning av en modell från bibliotek med flera dokument. Vid delvis lyckad åtgärd kan 200 OK fortfarande returneras och anroparen måste inspektera svarstexten för att förstå om modellen har tagits bort från ett dokumentbibliotek.|
 
 ## <a name="response-body"></a>Svarstext
+
 | Namn   | Typ  | Beskrivning|
 |--------|-------|------------|
 |TotalSuccccis|int|Det totala antalet modeller som tas bort från ett dokumentbibliotek.|
@@ -68,6 +70,7 @@ Ingen
 |Information|MachineLearningPublicationResult[]|Samlingen MachineLearningPublicationResult som var och en anger det detaljerade resultatet av att ta bort modellen från ett dokumentbibliotek.|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | Namn   | Typ  | Beskrivning|
 |--------|-------|------------|
 |StatusCode|int|HTTP-statuskoden.|
@@ -75,6 +78,7 @@ Ingen
 |Publicering|MachineLearningPublicationEntityData|Den anger modellinformationen och måldokumentbiblioteket.| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Namn | Typ | Beskrivning |
 |--------|--------|------------|
 |ModelUniqueId|sträng|Modellfilens unika ID.|
@@ -102,7 +106,6 @@ I det här exemplet är ID:t för dokumenttolkningsmodellen i Contoso Contract `
     ] 
 } 
 ```
-
 
 #### <a name="sample-response"></a>Exempelsvar
 

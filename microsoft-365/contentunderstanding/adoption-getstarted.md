@@ -1,5 +1,5 @@
 ---
-title: 'Införande av Microsoft SharePoint Syntex: Komma igång'
+title: 'Införande av Microsoft SharePoint Syntex: Kom igång'
 description: Lär dig hur du använder och implementerar SharePoint Syntex i din organisation för att hjälpa dig att lösa affärsproblem.
 ms.author: samanro
 author: samanro
@@ -14,20 +14,20 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 62e65f9be25e2c482cca78577048d504ee93097a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 8a5442fcf8dd50cdee6be97ba7c9bbf5e21408a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698982"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288161"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Införande av Microsoft SharePoint Syntex: Komma igång
+# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Införande av Microsoft SharePoint Syntex: Kom igång
 
-Tänk på att de intelligenta innehållstjänster som finns SharePoint Syntex har tre delar:
+Tänk på att de intelligenta innehållstjänsterna som finns SharePoint Syntex ha tre delar:
 
 - **Innehållsförståelse:** Skapa AI-modeller utan kod för att klassificera och extrahera information från innehåll för att automatiskt tillämpa metadata för upptäckt och återanvändning av kunskap. Läs mer om [innehållsförståelse.](document-understanding-overview.md)
 - **Innehållsbearbetning:** Automatisera insamling, påtagande och kategorisering av innehåll och effektivisera innehållscentrerade processer med hjälp av Power Automate. Läs mer om [innehållsbearbetning](form-processing-overview.md).
-- **Innehållsefterlevnad:** Kontrollera och hantera innehåll för att förbättra säkerhet och styrning med integrering med Microsoft Information Protection.
+- **Innehållsefterlevnad:** Styr och hantera innehåll för att förbättra säkerhet och styrning med integrering med Microsoft Information Protection.
 
 Med nya AI-tjänster och funktioner kan du bygga in innehållsförståelse och klassificeringsappar direkt i innehållshanteringsflödet med hjälp av SharePoint Syntex. Det finns två olika sätt att förstå innehållet. Den modelltyp du använder baseras på filformat och användningsfall:
 
@@ -44,12 +44,12 @@ En mer fullständig jämförelse av funktionerna finns i Skillnaden [mellan doku
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>Identifiera pilotscenarion för att optimera
 
-För att förbereda för SharePoint och Syntex i organisationen måste du först förstå scenarier som kan vara användbara. Med hjälp av "varför" kan du avgöra vilken modell som kommer att användas och hur du strukturerar organisationen baserat på var modellen ska tillämpas. Här är några scenarier där dokument förstå kan hjälpa din organisation:
+För att förbereda SharePoint Syntex i organisationen måste du först förstå de scenarier där det kan vara användbart. Med hjälp av "varför" kan du avgöra vilken modell som kommer att användas och hur du strukturerar organisationen baserat på var modellen ska tillämpas. Här är några scenarier där dokument förstå kan hjälpa din organisation:
 
 - **Innehållsbearbetning:** Bearbeta kontrakt, arbetsutdrag och andra formulärliknande dokument. Sköta formulären, utbilda modellen för att förstå och mappa fälten och kör sedan dina formulär för att automatiskt samla in data. Mer information finns i [Översikt över formulärbearbetning](form-processing-overview.md).
 - **Fakturaanalys:** Hämta relevant information från dina fakturor och kontrollera att de följer principen eller behandlas på rätt sätt.
 
-Tänk på olika sätt som SharePoint Syntex kan hjälpa din organisation:
+Tänk på olika sätt SharePoint Syntex kan hjälpa din organisation:
 
 - Automatisera affärsprocesser
 - Förbättra sökprecisionen
@@ -64,13 +64,13 @@ När du funderar på vilka affärsscenarier du ska tänka på bör du ställa di
 
 Prioritera scenarier utifrån påverkan och enkelhet vid implementering. Gör ditt första fokusområde mer effekt scenarier som också kan enkelt implementeras. Av prioritera scenarier med lägre effekt som är svåra att implementera.
 
-Använd [exempelscenarier och använd ärenden](adoption-scenarios.md) för att visa en uppmaning om hur du kan SharePoint Syntex i organisationen.
+Använd [exempelscenarier och använd ärenden](adoption-scenarios.md) för att visa en uppmaning om hur du kan SharePoint Syntex din organisation.
 
 ## <a name="identify-roles--responsibilities"></a>Identifiera roller & ansvarsområden
 
 Vem i organisationen ska skapa och hantera modeller? Följande roller kan vara inblandade:
 
-| SharePoint-/Knowledge-administratör | Administratör för Power-plattformen | Knowledge Manager | Modellägare |
+| SharePoint-/Knowledge-administratör | Administratör för Power Platform | Knowledge Manager | Modellägare |
 |:-------|:-------|:-------|:-------|
 | AAD-roll| AAD-roll | AAD-roll | Mästare |
 | Konfigurera formulärbearbetning | Konfigurera common data service environment for form processing | Samla in användningsfall | Samla in användningsfall för företag |
@@ -116,7 +116,7 @@ Identifiera projektets intressenter.
 
 ## <a name="readiness-checklist"></a>Checklista för beredskap
 
-För att förbereda dig för SharePoint Syntex måste du:
+För att förbereda dig för SharePoint Syntex implementering måste du:
 
 ![Beredskap för innehållsförståelse](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
@@ -132,7 +132,7 @@ För att förbereda dig för SharePoint Syntex måste du:
     - Finns det några befintliga innehållstyper som tänkbara modeller?
     - Vilka befintliga processer skulle förbättras med metadata?
 3. Design
-    - Utforma din metod för informationsarkitektur, hanterade metadata och innehållstyper
+    - Utforma din metod för informationsarkitektur, hanterade metadata och innehållstyper.
     - Utforma processen för definition, skapande och hantering.
 
 ## <a name="engage-your-organization"></a>Engagera organisationen

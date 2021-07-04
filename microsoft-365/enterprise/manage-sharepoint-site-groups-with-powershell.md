@@ -20,22 +20,22 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: I den här artikeln hittar du procedurer för att använda PowerShell för Microsoft 365 att hantera SharePoint onlinewebbplatsgrupper.
-ms.openlocfilehash: bcc7a00a6114a6fa2ba8aa02520267bd03a0abf5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 383536a6ad5ac5742cf1e38081a9be984ce4806b
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909544"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289085"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Hantera SharePoint onlinewebbplatsgrupper med PowerShell
 
 *Denna artikel gäller för både Microsoft 365 Enterprise och Office 365 Enterprise.*
 
-Även om du kan använda Microsoft 365 administrationscenter kan du också använda PowerShell för Microsoft 365 hantera dina SharePoint Online-webbplatsgrupper.
+Även om du kan använda Administrationscenter för Microsoft 365 kan du också använda PowerShell för Microsoft 365 hantera dina SharePoint Online-webbplatsgrupper.
 
 ## <a name="before-you-begin"></a>Innan du börjar
 
-Procedurerna i den här artikeln kräver att du ansluter till SharePoint Online. Instruktioner finns i [Anslut för SharePoint PowerShell.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Procedurerna i den här artikeln kräver att du ansluter till SharePoint Online. Instruktioner finns i [Anslut för SharePoint PowerShell.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 ## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Visa SharePoint Online med PowerShell för Microsoft 365
 
@@ -84,22 +84,22 @@ foreach ($y in $x)
         $z = Get-SPOSiteGroup -Site $y.Url
         foreach ($a in $z)
             {
-                 $b = Get-SPOSiteGroup -Site $y.Url -Group $a.Title 
+                 $b = Get-SPOSiteGroup -Site $y.Url -Group $a.Title
                  Write-Host $b.Title -ForegroundColor "Cyan"
                  $b | Select-Object -ExpandProperty Users
                  Write-Host
             }
     }
 ```
-    
+
 ## <a name="see-also"></a>Se även
 
-[Anslut till SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Anslut till SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 [Skapa SharePoint onlinewebbplatser och lägga till användare med PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
 [Hantera SharePoint onlineanvändare och grupper med PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
 
 [Hantera Microsoft 365 med PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
-  
+
 [Börja använda PowerShell för Microsoft 365](getting-started-with-microsoft-365-powershell.md)

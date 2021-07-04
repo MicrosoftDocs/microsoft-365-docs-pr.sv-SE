@@ -1,5 +1,5 @@
 ---
-title: Prediktiv kodningsreferens
+title: Referens för förutsägande kodning
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 90c76fade54c109fc02e145a49bbe93d11ad8b79
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: ad9bf2ba40ede2d76246c56bf94b90e0e96aeeff
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822590"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288281"
 ---
 # <a name="predictive-coding-reference-preview"></a>Referens för prediktiv kodning (förhandsversion)
 
@@ -36,14 +36,18 @@ En kontrolluppsättning används under utbildningsprocessen för en prediktiv ko
 ## <a name="control-set-confusion-matrix"></a>Kontrolluppsättningsmatris för förvirring
 
 När du har slutfört en utbildningsomgång tilldelar modellen ett förutsägelseresultat till de 10 objekten i kontrolluppsättningen som du har etiketterat under utbildningsomgången. Modellen jämför förutsägelseresultatet för dessa 10 objekt med den faktiska etikett som du har tilldelat till objektet under utbildningsomgången. Utifrån den här jämförelsen identifierar modellen följande klassificeringar för att bedöma modellens prognosprestanda:
-  
-  |          |Modell förutsägelser om att objekt är relevanta |Modell förutsägelser om att objekt inte är relevanta |
-  |:---------|:---------|:---------|
-  |**Granskaren ser objekt som relevant**| Sant positivt| Falskt positivt resultat |
-  |**Granskaren ser att objektet inte är relevant**| Falskt negativt |Sant negativt |
-  ||||
 
-  Utifrån dessa jämförelser härleder modellen värden för måtten F-poäng, precision och återkallelse samt felmarginalen för var och en av dem. Antalet förväxlingstyper i matrisen visas på den utfällade sidan i en utbildningsrunda.
+<br>
+
+****
+
+|Etikett|Modell förutsägelser om att objekt är relevanta|Modell förutsägelser om att objekt inte är relevanta|
+|---|---|---|
+|**Granskaren ser objekt som relevant**|Sant positivt|Falskt positivt resultat|
+|**Granskaren ser att objektet inte är relevant**|Falskt negativt|Sant negativt|
+|
+
+Utifrån dessa jämförelser härleder modellen värden för måtten F-poäng, precision och återkallelse samt felmarginalen för var och en av dem. Antalet förväxlingstyper i matrisen visas på den utfällade sidan i en utbildningsrunda.
 
 ## <a name="f-score"></a>F-poäng
 

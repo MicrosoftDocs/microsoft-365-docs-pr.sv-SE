@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 17ad28121935adfc958629f7999311c11a8d784e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7ee431c88430916fcba60266a3a3a5180d830c0d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771459"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289265"
 ---
 # <a name="advanced-hunting-using-python"></a>Avancerad jakt med Python
 
@@ -30,7 +30,7 @@ ms.locfileid: "52771459"
 
 **Gäller för:** [Microsoft Defender för slutpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,14 +40,13 @@ Köra avancerade frågor med Python, se [Advanced Hunting API](run-advanced-quer
 
 I det här avsnittet delar vi Python-exempel för att hämta en token och använda den för att köra en fråga.
 
->**Nödvändiga:** Först måste du [skapa en app](apis-intro.md).
+> **Nödvändiga:** Först måste du [skapa en app](apis-intro.md).
 
 ## <a name="get-token"></a>Hämta token
 
 - Kör följande kommandon:
 
-```
-
+```python
 import json
 import urllib.request
 import urllib.parse
@@ -73,10 +72,10 @@ req = urllib.request.Request(url, data)
 response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 aadToken = jsonResponse["access_token"]
-
 ```
 
 var
+
 - tenantId: ID för den klientorganisation för vilken du vill köra frågan (d.v.s. att frågan körs på data för den här klientorganisationen)
 - appId: ID för din Azure AD-app (appen måste ha behörigheten Kör avancerade frågor till Microsoft Defender för Slutpunkt)
 - appSekret: Hemligt för din Azure AD-app
@@ -85,7 +84,7 @@ var
 
  Kör följande fråga:
 
-```
+```python
 query = 'RegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
@@ -102,7 +101,6 @@ response = urllib.request.urlopen(req)
 jsonResponse = json.loads(response.read())
 schema = jsonResponse["Schema"]
 results = jsonResponse["Results"]
-
 ```
 
 - schemat innehåller schemat för resultaten av frågan
@@ -112,7 +110,7 @@ results = jsonResponse["Results"]
 
 Om du vill köra komplexa frågor (eller flerradsfrågor) sparar du frågan i en fil och kör följande kommando i stället för den första raden i exemplet ovan:
 
-```
+```python
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
 query = queryFile.read()
 queryFile.close()
@@ -124,18 +122,15 @@ Nu kan du använda frågeresultatet.
 
 För att iterera över resultaten gör du följande:
 
-```
+```python
 for result in results:
     print(result) # Prints the whole result
     print(result["EventTime"]) # Prints only the property 'EventTime' from the result
-
-
 ```
-
 
 Så här sparar du frågeresultatet i CSV-format file1.csv filen:
 
-```
+```python
 import csv
 
 outputFile = open("D:\\Temp\\file1.csv", 'w')
@@ -149,14 +144,14 @@ outputFile.close()
 
 Om du vill spara frågeresultatet i JSON-format i file1.jspå gör du följande:
 
-```
+```python
 outputFile = open("D:\\Temp\\file1.json", 'w')
 json.dump(results, outputFile)
 outputFile.close()
 ```
 
-
 ## <a name="related-topic"></a>Relaterat ämne
+
 - [Microsoft Defender för slutpunkts-API:er](apis-intro.md)
-- [Advanced jakt-API](run-advanced-query-api.md)
+- [Avancerad jakt-API](run-advanced-query-api.md)
 - [Avancerad jakt med PowerShell](run-advanced-query-sample-powershell.md)

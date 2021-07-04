@@ -1,5 +1,5 @@
 ---
-title: Namnge ändringar i Microsoft 365 Defender avancerade sökschema
+title: Namnändringar i Microsoft 365 Defender avancerat sökschema
 description: Spåra och granska namnändringar – tabeller och kolumner i det avancerade sökschemat
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 9406653a2d16c83f974e2a0ce7597b5c4f833252
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470502"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289505"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Avancerat schema för sökning – Namnändringar
 
@@ -55,22 +55,22 @@ Namnändringar tillämpas automatiskt på frågor som sparas i säkerhetscentret
 
 | Kolumnnamn | Namn på det ursprungliga värdet | Namn på nytt värde | Orsak till ändring
 |--|--|--|--|
-| `DetectionSource` | MCAS |    Microsoft Cloud App Security | Rebranding |
-| `DetectionSource` | WindowsDefenderAtp|   Identifiering och åtgärd på slutpunkt| Rebranding |
+| `DetectionSource` | MCAS | Microsoft Cloud App Security | Rebranding |
+| `DetectionSource` | WindowsDefenderAtp| Identifiering och åtgärd på slutpunkt| Rebranding |
 | `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
 | `DetectionSource` | WindowsDefender SmartScreen |  SmartScreen | Rebranding |
-| `DetectionSource` | CustomerTI |  Anpassat TI | Rebranding |
+| `DetectionSource` | CustomerTI | Anpassat TI | Rebranding |
 | `DetectionSource` | OfficeATP | Microsoft Defender för Office 365 | Rebranding |
-| `DetectionSource` | MTP   | Microsoft 365 Defender | Rebranding |
-| `DetectionSource` | AzureATP |    Microsoft Defender for Identity | Rebranding |
-| `DetectionSource` | AnpassadDetection   | Anpassad identifiering | Rebranding |
+| `DetectionSource` | MTP | Microsoft 365 Defender | Rebranding |
+| `DetectionSource` | AzureATP | Microsoft Defender for Identity | Rebranding |
+| `DetectionSource` | AnpassadDetection | Anpassad identifiering | Rebranding |
 | `DetectionSource` | AutomatedInvestigation |Automatiserad undersökning | Rebranding |
 | `DetectionSource` | ThreatExperts | Microsoft Hotexperter | Rebranding |
 | `DetectionSource` | TREDJEPARTS TI | Tredjepartssensorer | Rebranding |
 | `ServiceSource` | Microsoft Defender Avancerat skydd| Microsoft Defender för Endpoint | Rebranding |
-|`ServiceSource` |Microsoft Hotskydd   | Microsoft 365 Defender | Rebranding |
-| `ServiceSource` | Skaffa Office 365 ATP  |Microsoft Defender för Office 365 | Rebranding |
-| `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | Rebranding |
+|`ServiceSource` |Microsoft Hotskydd | Microsoft 365 Defender | Rebranding |
+| `ServiceSource` | Skaffa Office 365 ATP |Microsoft Defender för Office 365 | Rebranding |
+| `ServiceSource` |Azure ATP |Microsoft Defender for Identity | Rebranding |
 
 `DetectionSource`är tillgänglig i [tabellen AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`är tillgängligt i [tabellerna AlertEvidence](advanced-hunting-alertevidence-table.md) [och AlertInfo.](advanced-hunting-alertinfo-table.md) 
 

@@ -1,5 +1,5 @@
 ---
-title: Viktig information om efterlevnadsstöd för Microsoft 365 för teckenuppsättning med dubbel byte ( förhandsversion)
+title: Viktig information om Microsoft 365 Efterlevnadscenter för teckenuppsättning med dubbel byte
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,23 +14,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Viktig information om stöd för teckenuppsättningar med dubbla byte.
-ms.openlocfilehash: 1c2244c49a92aa2c00fad06caa8194cf7e32220e
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: b7883495c5b187b98e6b0539eaa075e4f8d3af6e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "52161629"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256393"
 ---
 # <a name="support-for-double-byte-character-set-release-notes-preview"></a>Viktig information om stöd för teckenuppsättning med dubbel byte (förhandsversion)
 
- Microsoft 365 Information Protection har nu stöd för teckenuppsättningsspråk med dubbla byte i förhandsgranskning för:
+ Microsoft 365 Information Protection har nu stöd för teckenuppsättningsspråk med dubbla byte för:
 
 - Kinesiska (förenklad)
 - Kinesiska (traditionell)
-- Korean
-- Japanese
+- Koreanska
+- Japanska
 
-Det här stödet är tillgängligt för känsliga informationstyper och nyckelordsordlistor och kommer att återspeglas i dataförlustskydd, kommunikationsefterlevnad, Exchange Online, SharePoint Online, OneDrive för företag och Teams-lösningar.
+Det här stödet är tillgängligt för känsliga informationstyper och nyckelordsordlistor och kommer att återspeglas i dataförlustskydd (för Exchange Online, SharePoint Online, OneDrive för företag och Teams), kommunikationsefterlevnad, automatisk etikettering i Office-appar och Microsoft Cloud App Security.
 
 ## <a name="known-issues"></a>Kända problem
 
@@ -47,3 +47,5 @@ Det här stödet är tillgängligt för känsliga informationstyper och nyckelor
   - "Bifogad fil innehåller något av dessa ord"
 
 I stället rekommenderar vi att du skapar en anpassad typ av känslig information (SIT: Sensitive Information Type) med nyckelordsordlista som identifierar mönster i meddelanden och bilagor, och använder detta anpassade SIT som ett villkor för principen om kommunikation efterlevnad.
+
+

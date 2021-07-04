@@ -21,26 +21,26 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Lär dig hur du använder Siddiagnostik för att optimera prestanda för webbdelar i SharePoint moderna webbplatssidor online.
-ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fab5b0bc9d0b04ede0815856af7366e277dbf909
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929066"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288905"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimera webbdelsprestanda i SharePoint webbsidor med modern webbplats online
 
 SharePoint Moderna webbplatssidor online innehåller webbdelar som kan bidra till sidinläsningen. Den här artikeln hjälper dig att förstå hur webbdelar på sidorna påverkar användarens uppfattas fördröjning och hur du åtgärdar vanliga problem.
 
->[!NOTE]
->Mer information om prestanda i SharePoint moderna portaler finns i [Prestanda i det moderna SharePoint upplevelse.](/sharepoint/modern-experience-performance)
+> [!NOTE]
+> Mer information om prestanda i SharePoint moderna portaler finns i [Prestanda i det moderna SharePoint upplevelse.](/sharepoint/modern-experience-performance)
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Använd siddiagnostikverktyget för SharePoint för att analysera webbdelar
 
 Siddiagnostik för SharePoint är ett webbläsartillägg för nya Microsoft Edge ( och Chrome-webbläsare som analyserar både moderna SharePoint Online-portalen och klassiska https://www.microsoft.com/edge) publiceringswebbplatssidor. Verktyget innehåller en rapport för varje analyserad sida som visar hur sidan fungerar mot en definierad uppsättning prestandavillkor. Om du vill installera och lära dig mer SharePoint siddiagnostikverktyget går du till Använda [verktyget Siddiagnostik för SharePoint Online.](page-diagnostics-for-spo.md)
 
->[!NOTE]
->Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint systemsida.
+> [!NOTE]
+> Verktyget Siddiagnostik fungerar bara för SharePoint Online och kan inte användas på en SharePoint systemsida.
 
 När du analyserar en sida på en SharePoint-webbplats med verktyget Siddiagnostik för SharePoint kan du  se information om webbdelar som  överskrider baslinjemåttet i webbdelarna påverkar inläsningstiden för sidor i fönstret Diagnostiktest.
 
@@ -62,10 +62,13 @@ Information som är tillgänglig i resultatet omfattar:
 - **Modulladdning** visar den tid det tar att ladda ned, utvärdera och läsa in tilläggen JavaScript- och CSS-filer. Sedan startas Init-processen.
 - **I Lazy Load** visas tiden för uppskjuten inläsning av webbdelar som inte visas i huvudavsnittet på sidan. Det finns vissa villkor där det finns för många webbdelar för att återges och de är i kö för att återges för att minimera inläsningstiden för sidan.
 - **Init** visar hur lång tid det tar för webbdelen att initiera data.
-    Det är ett asynkront samtal och inittid är beräkningen av tid för funktionen onInit när den returnerade lovat har lösts.
+
+  Det är ett asynkront samtal och inittid är beräkningen av tid för funktionen onInit när den returnerade lovat har lösts.
+
 - **Återgivningen** visar tiden det tar att återge användargränssnittet (användargränssnittet) när modulläsningen och Init har slutförts.
-    Det är JavaScript-körningstiden för att installera DOM i dokumentet (sidan).
-    Återgivning av asynkrona resurser, till exempel bilder, kan ta ytterligare tid att slutföra.
+
+  Det är JavaScript-körningstiden för att installera DOM i dokumentet (sidan).
+  Återgivning av asynkrona resurser, till exempel bilder, kan ta ytterligare tid att slutföra.
 
 Den här informationen finns med för att hjälpa designers och utvecklare att felsöka problem. Den här informationen bör ges till din design- och utvecklingsteam.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 82052634b79bf433731d0afdab45e3d75e6497e0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007075"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289337"
 ---
 # <a name="live-response-command-examples"></a>Kommandoexempel för livesvar
 
@@ -38,8 +38,7 @@ Läs mer om vanliga kommandon som används i live-svar och se exempel på hur de
 
 Beroende på vilken roll du har beviljats kan du köra grundläggande eller avancerade kommandon för livesvar. Mer information om grundläggande och avancerade kommandon finns i Undersöka [enheter på enheter med live-svar.](live-response.md)
 
-
-## <a name="analyze"></a>analysera 
+## <a name="analyze"></a>analysera
 
 ```console
 # Analyze the file malware.txt
@@ -110,12 +109,12 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > Följande filtyper kan **inte laddas** ned med det här kommandot inifrån Live Response:
 >
-> * [Separera punktfiler](/windows/desktop/fileio/reparse-points/)
-> * [Sparsamta filer](/windows/desktop/fileio/sparse-files/)
-> * Tomma filer
-> * Virtuella filer eller filer som inte finns helt lokalt
+> - [Separera punktfiler](/windows/desktop/fileio/reparse-points/)
+> - [Sparsamta filer](/windows/desktop/fileio/sparse-files/)
+> - Tomma filer
+> - Virtuella filer eller filer som inte finns helt lokalt
 >
-> De här **filtyperna** stöds av [PowerShell.](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)
+> De här **filtyperna** stöds av [PowerShell.](/powershell/scripting/overview)
 >
 > Använd PowerShell som ett alternativ om du har problem med det här kommandot inifrån Live Response.
 
@@ -132,6 +131,7 @@ library delete script.ps1
 ```
 
 ## <a name="processes"></a>processer
+
 ```console
 # Show all processes
 processes
@@ -210,11 +210,12 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
+
 >[!NOTE]
 >
 > För långvariga kommandon som '**run**' eller '**getfile**' kanske du vill använda symbolen ' ' i slutet av kommandot för att utföra den **&** åtgärden i bakgrunden.
 > Det gör att du kan fortsätta att undersöka datorn och återgå till bakgrundskommandot när du är klar med '**fg**' [basic-kommandot](live-response.md#basic-commands).
->
+
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```console
@@ -232,7 +233,6 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-
 ## <a name="undo"></a>ångra
 
 ```console
@@ -249,4 +249,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 # Restore remediated file
 undo file c:\Users\user\Desktop\malware.exe
 ```
-

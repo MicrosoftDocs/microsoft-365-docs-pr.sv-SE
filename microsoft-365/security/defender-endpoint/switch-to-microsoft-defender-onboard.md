@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 832414e9b2a88114cafafbba78e22ea656cc7949
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 8fcf0491629a068f1ebc97e226a2c9b05e306cbf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930469"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289517"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Växla till Microsoft Defender för Slutpunkt – fas 3: Onboard
 
@@ -103,7 +103,7 @@ Om du Microsoft Defender Antivirus till passivt läge på Windows Server, versio
 1. Öppna Registereditorn och gå till <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
-2. Redigera (eller skapa) en DWORD-post **som heter ForcePassiveMode** och ange följande inställningar:
+2. Redigera (eller skapa) en DWORD-post som heter **ForceDefenderPassiveMode** och ange följande inställningar:
    - Ställ in DWORD-värdet på **1.**
    - Under **Bas** väljer du **Hexadecimal**.
 

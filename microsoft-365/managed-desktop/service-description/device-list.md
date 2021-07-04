@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fd378e6aba9ac9bf10dcd9633da503406ab7410a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230061"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287897"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Hanterat skrivbord enheter
 
@@ -32,9 +32,8 @@ För att registreras i Microsoft Hanterat skrivbord måste en enhet vara någon 
 
 Länkarna till enheterna här är endast till för referens. Om du vill beställa enheter kan du samarbeta med dina kommersiella kanalkontakter och se till att du väljer rätt konfigurationer. I den här tabellen *är arkiveringsdatumet* det datum då dessa modeller blir kortare Microsoft Hanterat skrivbord tjänstens livscykel. Alla sådana enheter som förs in efter detta datum får inte fullständig supportperiod på tre år från Microsoft Hanterat skrivbord. Arkiverade enheter visas också på Microsoft Hanterat skrivbord [arkiverade enheter.](archived-device-list.md) *Retirement date* is the date on which this model will no longer be supported by Microsoft Hanterat skrivbord alls. På det datumet tas alla registrerade enheter i den här modellen bort från Microsoft Hanterat skrivbord, oavsett när de registrerades.
 
->[!NOTE]
->Enheter kan läggas till i den här tabellen när som helst, men vi kommer att tillhandahålla 90 dagars förvarning för alla ändringar som påverkar arkivet eller retirement date. De senast tillagda enheterna är markerade med **\*** .
-
+> [!NOTE]
+> Enheter kan läggas till i den här tabellen när som helst, men vi kommer att tillhandahålla 90 dagars förvarning för alla ändringar som påverkar arkivet eller retirement date. De senast tillagda enheterna är markerade med **\*** .
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft Hanterat skrivbord Enheter
 
@@ -85,13 +84,14 @@ Enheten måste dessutom uppfylla följande villkor:
 - Inte har slutfört Windows första körningen.
 - Registreras med Microsoft Hanterat skrivbord med hjälp [av funktionen Enhetsregistrering](../get-started/register-devices-self.md)
 
->[!NOTE]
->Enheter med en 2,0 GHz-processor eller snabbare processor ger en mycket bättre upplevelse för användare som är inblandade i dessa aktiviteter:
->- Använda videokonferenser med Teams. Se [Maskinvarukrav för Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) mer information.
->-  Använda en enhet för flera olika arbetsbelastningar.
->- Använda flera bildskärmar.
+> [!NOTE]
+> Enheter med en 2,0 GHz-processor eller snabbare processor ger en mycket bättre upplevelse för användare som är inblandade i dessa aktiviteter:
+>
+> - Använda videokonferenser med Teams. Se [Maskinvarukrav för Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) mer information.
+> - Använda en enhet för flera olika arbetsbelastningar.
+> - Använda flera bildskärmar.
 
-**Mer hjälp**
+## <a name="more-help"></a>Mer hjälp
 
 De här resurserna kan hjälpa dig att besvara frågor som du kanske har om specifika enheter:
 

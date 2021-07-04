@@ -12,12 +12,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange support för 2010 har nu nåtts. Använd den här planeringsöversikten för att förbereda Exchange Online eller en nyare version Exchange Server lokalt.
-ms.openlocfilehash: f3531802283368e533ba6646415d4acc019687bd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bbc7fb83537621a47a866bf0ca129a38e21f055e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927000"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289133"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange översikt över slutet av 2010
 
@@ -81,17 +81,23 @@ Microsoft 365 är också först med att få nya funktioner och upplevelser, så 
 ### <a name="how-should-i-migrate-to-microsoft-365"></a>Hur ska jag migrera till Microsoft 365?
 
 Beroende på din organisation finns det några alternativ för att komma åt Microsoft 365. Först måste du tänka på några saker, till exempel:
+
 - Antalet platser eller postlådor som du behöver flytta.
 - Hur länge du vill att migreringen ska pågå.
 - Om du behöver en smidig integrering mellan din lokala installation och dina Microsoft 365 under migreringen.
- 
+
 I den här tabellen visas migreringsalternativen och de viktigaste faktorerna som avgör vilken metod du bör använda.
+
+<br>
+
+****
 
 |Migreringsalternativ|Organisationens storlek|Varaktighet|
 |---|---|---|
 |Snabb migrering|Färre än 150 platser|En vecka eller mindre|
 |Minimal hybridmigrering|Färre än 150 platser|Några veckor eller mindre|
 |Fullständig hybridmigrering|Fler än 150 platser|Ett par veckor eller mer|
+|
 
 I följande avsnitt får du en översikt över de här metoderna. Mer information finns i [Bestämma en migreringsväg](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27).
 
@@ -173,6 +179,10 @@ För bästa upplevelse rekommenderar vi att du uppgraderar din återstående lok
 
 Exchange 2016 innehåller alla funktioner i tidigare versioner av Exchange. Det motsvarar bäst den upplevelse som finns med Microsoft 365, även om vissa funktioner endast är tillgängliga i Microsoft 365. Ta bara en titta på några av de saker som du har missat:
 
+<br>
+
+****
+
 |Exchange version|Funktioner|
 |---|---|
 |**Exchange 2013**|Förenklad arkitektur minskar antalet serverroller till tre (postlåda, klientåtkomst, gränstransport)|
@@ -183,24 +193,29 @@ Exchange 2016 innehåller alla funktioner i tidigare versioner av Exchange. Det 
 ||Förbättrad DLP tillsammans med integrering med SharePoint|
 ||Förbättrad motståndskraft hos databaser|
 ||Dokumentsamarbete online|
+|
+
+<br>
+
+****
 
 |Att tänka på|Mer information|
 |---|---|
-|Supportdatum avslutas|Precis som Exchange 2010 har Exchange versionerna sitt eget supportdatum:<br/><br/>Exchange 2013– april 2023<br/>Exchange 2016 – oktober 2025<br/><br/>Ju tidigare supportdatumet för slutet av supporten in desto tidigare måste du utföra ytterligare en migrering. April 2023 är mycket närmare i tid än du tror!|
-|Migreringsväg till Exchange 2013 eller 2016|Migreringsprocessen från Exchange 2010 till en nyare version är densamma oavsett om du väljer Exchange 2013 eller Exchange 2016:<br/><br/>Installera Exchange 2013 eller 2016 i din befintliga Exchange 2010-organisation.<br/>Flytta tjänster och annan infrastruktur till Exchange 2013 eller 2016.<br/>Flytta postlådor och gemensamma mappar till Exchange 2013 eller 2016 Inaktivera återstående Exchange 2010-servrar.|
+|Supportdatum avslutas|Precis som Exchange 2010 har Exchange versionerna sitt eget supportdatum: <p> Exchange 2013– april 2023 <p> Exchange 2016 – oktober 2025 <p> Ju tidigare supportdatumet för slutet av supporten in desto tidigare måste du utföra ytterligare en migrering. April 2023 är mycket närmare i tid än du tror!|
+|Migreringsväg till Exchange 2013 eller 2016|Migreringsprocessen från Exchange 2010 till en nyare version är densamma oavsett om du väljer Exchange 2013 eller Exchange 2016: <p> Installera Exchange 2013 eller 2016 i din befintliga Exchange 2010-organisation. <p> Flytta tjänster och annan infrastruktur till Exchange 2013 eller 2016. <p> Flytta postlådor och gemensamma mappar till Exchange 2013 eller 2016 Inaktivera återstående Exchange 2010-servrar.|
 |Versionsexistens|Vid migrering till Exchange 2013 eller Exchange 2016 kan du installera någon av versionerna i en befintlig Exchange 2010-organisation. På så sätt kan du installera en eller flera Exchange 2013- Exchange 2016-servrar och göra migreringen.|
-|Servermaskinvara|Maskinvarukraven för servrar har ändrats från Exchange 2010. Kontrollera att maskinvaran är kompatibel. Mer information om maskinvarukraven för varje version finns här:<br/><br/>[Exchange systemkraven för 2016](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016)<br/>[Exchange systemkraven för 2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)<br/><br/>Med de betydande förbättringarna av Exchange prestanda och den ökade datorkraften och lagringskapaciteten i nyare servrar behöver du förmodligen färre servrar för att stödja samma antal postlådor.|
-|Operativsystemsversion|De lägsta operativsystemsversionerna som stöds för varje version är:<br/><br/>Exchange 2016 – Windows Server 2012<br/>Exchange 2013 – Windows Server 2008 R2 SP1<br/><br/>Du hittar mer information om operativsystemssupport på Exchange [Supportmatris.](/exchange/plan-and-deploy/supportability-matrix)|
-|Active Directory-skogsfunktionsnivån|De lägsta funktionsnivåerna för Active Directory-skogar som stöds för varje version är följande:<br/><br/>Exchange 2016 – Windows Server 2008 R2 SP1<br/>Exchange 2013 – Windows Server 2003<br/><br/>Mer information om support för skogsfunktionsnivån finns på Exchange [supportmatris.](/exchange/plan-and-deploy/supportability-matrix)|
-|Office klientversioner|Det lägsta antalet Office klientversionerna för varje version är:<br/><br/>Exchange 2016 – Office 2010 (med de senaste uppdateringarna)<br/>Exchange 2013 – Office 2007 SP3<br/><br/>Mer information om hur du Office klientsupport finns [Exchange matris med support.](/exchange/plan-and-deploy/supportability-matrix)||| 
-
+|Servermaskinvara|Maskinvarukraven för servrar har ändrats från Exchange 2010. Kontrollera att maskinvaran är kompatibel. Mer information om maskinvarukraven för varje version finns här: <p> [Exchange systemkraven för 2016](/Exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true) <p> [Exchange systemkraven för 2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help) <p> Med de betydande förbättringarna av Exchange prestanda och den ökade datorkraften och lagringskapaciteten i nyare servrar behöver du förmodligen färre servrar för att stödja samma antal postlådor.|
+|Operativsystemsversion|De lägsta operativsystemsversionerna som stöds för varje version är: <p> Exchange 2016 – Windows Server 2012 <p> Exchange 2013 – Windows Server 2008 R2 SP1 <p> Du hittar mer information om operativsystemssupport på Exchange [Supportmatris.](/exchange/plan-and-deploy/supportability-matrix)|
+|Active Directory-skogsfunktionsnivån|De lägsta funktionsnivåerna för Active Directory-skogar som stöds för varje version är följande: <p> Exchange 2016 – Windows Server 2008 R2 SP1 <p> Exchange 2013 – Windows Server 2003 <p> Mer information om support för skogsfunktionsnivån finns på Exchange [supportmatris.](/exchange/plan-and-deploy/supportability-matrix)|
+|Office klientversioner|Det lägsta antalet Office klientversionerna för varje version är: <p> Exchange 2016 – Office 2010 (med de senaste uppdateringarna) <p> Exchange 2013 – Office 2007 SP3 <p> Mer information om hur du Office klientsupport finns [Exchange matris med support.](/exchange/plan-and-deploy/supportability-matrix)|
+|
 
 Använd följande resurser för att hjälpa dig med migreringen:
 
 - [Exchange Distributionsassistenten](/exchange/exchange-deployment-assistant)
-- Ändringar i Active Directory-schemat Exchange [2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016), [2013](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
-- Systemkrav för Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016), [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
-- Krav för Exchange [2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016), [2013](/Exchange/exchange-2013-prerequisites-exchange-2013-help)
+- Ändringar i Active Directory-schemat Exchange [2016](/exchange/plan-and-deploy/active-directory/ad-schema-changes?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help)
+- Systemkrav för Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
+- Krav för Exchange [2016](/exchange/plan-and-deploy/prerequisites?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-prerequisites-exchange-2013-help)
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Sammanfattning av alternativ för Office 2010 klient och servrar och Windows 7
 

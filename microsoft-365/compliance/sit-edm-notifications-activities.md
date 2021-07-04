@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: Lär dig att skapa aviseringar för exakta datamatchningsaktiviteter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: da00c43ae9ba5b129129027df16f49ef80b8757d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007567"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288173"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Skapa aviseringar för exakta datamatchningsaktiviteter
 
-När du [skapar anpassade typer av känslig information med exakt datamatchning (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) finns det ett antal aktiviteter som har skapats i [granskningsloggen](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log). Du kan använda cmdleten [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) PowerShell för att skapa meddelande som visar när dessa aktiviteter inträffar:
+När du [skapar anpassade typer av känslig information med exakt datamatchning (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) finns det ett antal aktiviteter som har skapats i [granskningsloggen](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log). Du kan använda cmdleten [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell för att skapa meddelande som visar när dessa aktiviteter inträffar:
 
 - CreateSchema
 - EditSchema
@@ -55,7 +55,7 @@ Läs mer om DLP-licensiering i [licensieringsvägledning för Microsoft 365 för
 
 ## <a name="configure-notifications-for-edm-activities"></a>Konfigurera meddelande för EDM-aktiviteter
 
-1. Ansluta till [Säkerhets- och efterlevnadscenter PowerShell](/powershell/exchange/connect-to-scc-powershell?view=exchange-ps) 
+1. Ansluta till [Säkerhets- och efterlevnadscenter PowerShell](/powershell/exchange/connect-to-scc-powershell) 
 
 2. Kör cmdleten `New-ProtectionAlert` med den aktivitet som du vill skapa meddelande för.  Om du, till exempel, vill få ett meddelande när åtgärden inträffade i **UploadDataCompleted**, kör
 
@@ -72,4 +72,4 @@ New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUse
 ## <a name="related-articles"></a>Relaterade artiklar
 
 - [Skapa anpassade typer av känslig information med exakt datamatchning U(EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-- [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps)
+- [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert)

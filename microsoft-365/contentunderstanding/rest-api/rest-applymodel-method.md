@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Använd REST API för att tillämpa en dokumenttolkningsmodell på ett eller flera bibliotek.
-ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 04f1dfdb0c16110c9ba7de12f5f0735d498d50cf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177267"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286543"
 ---
 # <a name="batch-apply-model"></a>Batch-tillämpa modell
 
@@ -48,6 +48,7 @@ Ingen
 |Publikationer|ja|MachineLearningPublicationEntityData[]|Samlingen MachineLearningPublicationEntityData som var och en anger modell- och måldokumentbiblioteket.|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Namn | Obligatoriskt | Typ | Beskrivning |
 |--------|-------|--------|------------|
 |ModelUniqueId|ja|sträng|Modellfilens unika ID.|
@@ -63,6 +64,7 @@ Ingen
 |201 skapad||Det här är ett anpassat API som stöder tillämpning av en modell för flera dokumentbibliotek. Om det skulle lyckas delvis kan 201 som skapats fortfarande returneras och anroparen måste inspektera svarstexten för att förstå om modellen har tillämpats på ett dokumentbibliotek.|
 
 ## <a name="response-body"></a>Svarstext
+
 | Namn   | Typ  | Beskrivning|
 |--------|-------|------------|
 |TotalSuccccis|int|Det totala antalet modeller som har tillämpats på ett dokumentbibliotek.|
@@ -70,6 +72,7 @@ Ingen
 |Information|MachineLearningPublicationResult[]|Samlingen MachineLearningPublicationResult som var och en anger det detaljerade resultatet av att tillämpa modellen på dokumentbiblioteket.|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | Namn   | Typ  | Beskrivning|
 |--------|-------|------------|
 |StatusCode|int|HTTP-statuskoden.|
@@ -77,6 +80,7 @@ Ingen
 |Publicering|MachineLearningPublicationEntityData|Den anger modellinformationen och måldokumentbiblioteket.| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Namn | Typ | Beskrivning |
 |--------|--------|------------|
 |ModelUniqueId|sträng|Modellfilens unika ID.|

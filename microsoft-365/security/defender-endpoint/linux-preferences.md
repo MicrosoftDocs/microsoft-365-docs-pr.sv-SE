@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 00f6bdac66ae286bf55a875599f7097b14b06cb3
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 7998e878ad03fdfb64c314dc8b7234ece46164ce
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861557"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289499"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Ange inställningar för Microsoft Defender för Slutpunkt i Linux
 
@@ -36,8 +36,8 @@ ms.locfileid: "52861557"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
->[!IMPORTANT]
->Det här avsnittet innehåller instruktioner för hur du anger inställningar för Defender för Slutpunkt på Linux i företagsmiljöer. Om du är intresserad av att konfigurera produkten på en enhet från kommandoraden kan du gå till [Resurser](linux-resources.md#configure-from-the-command-line).
+> [!IMPORTANT]
+> Det här avsnittet innehåller instruktioner för hur du anger inställningar för Defender för Slutpunkt på Linux i företagsmiljöer. Om du är intresserad av att konfigurera produkten på en enhet från kommandoraden kan du gå till [Resurser](linux-resources.md#configure-from-the-command-line).
 
 I företagsmiljöer kan Defender för Slutpunkt i Linux hanteras via en konfigurationsprofil. Den här profilen distribueras från valfri hanteringsverktyg. Inställningar som hanteras av företaget har företräde framför inställningar som anges lokalt på enheten. Med andra ord kan användarna i företaget inte ändra inställningar som anges i den här konfigurationsprofilen.
 
@@ -55,169 +55,226 @@ Den översta nivån i konfigurationsprofilen omfattar produktomfattande inställ
 
 Avsnittet *antivirusEngine* i konfigurationsprofilen används för att hantera inställningarna för antiviruskomponenten i produkten.
 
-|||
-|:---|:---|
-| **Nyckel** | antivirusEngine |
-| **Datatyp** | Ordlista (kapslad inställning) |
-| **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|antivirusEngine|
+|**Datatyp**|Ordlista (kapslad inställning)|
+|**Kommentarer**|I följande avsnitt finns en beskrivning av innehållet i ordlistan.|
+|
 
 #### <a name="enable--disable-real-time-protection"></a>Aktivera/inaktivera realtidsskydd
 
 Avgör om realtidsskydd (genomsökning av filer när de används) är aktiverat eller inte.
 
-|||
-|:---|:---|
-| **Nyckel** | enableRealTimeProtection |
-| **Datatyp** | Boolesk |
-| **Möjliga värden** | true (standard) <br/> false |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|enableRealTimeProtection|
+|**Datatyp**|Boolesk|
+|**Möjliga värden**|true (standard) <p> false|
+|
 
 #### <a name="enable--disable-passive-mode"></a>Aktivera/inaktivera passivt läge
 
 Avgör om antivirusmotorn körs i passiv form eller inte. I passivt läge:
+
 - Realtidsskydd är inaktiverat.
 - Skanning på begäran är aktiverat.
 - Automatisk åtgärd för hot är inaktiverat.
 - Säkerhetsintelligensuppdateringar aktiveras.
 - Statusmenyikonen är dold.
 
-|||
-|:---|:---|
-| **Nyckel** | passivläge |
-| **Datatyp** | Boolesk |
-| **Möjliga värden** | false (standard) <br/> true |
-| **Kommentarer** | Tillgängligt i Defender för slutpunkt version 100.67.60 eller senare. |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|passivläge|
+|**Datatyp**|Boolesk|
+|**Möjliga värden**|false (standard) <p> true|
+|**Kommentarer**|Tillgängligt i Defender för slutpunkt version 100.67.60 eller senare.|
+|
 
 #### <a name="exclusion-merge-policy"></a>Princip för undantagskoppling
 
 Anger kopplingsprincipen för undantag. Det kan vara en kombination av administratörsdefinierade och användardefinierade undantag ( `merge` ) eller endast administratörsdefinierade undantag ( `admin_only` ). Den här inställningen kan användas för att begränsa lokala användare från att definiera sina egna undantag.
 
-|||
-|:---|:---|
-| **Nyckel** | exclusionsMergePolicy |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | koppla (standard) <br/> admin_only |
-| **Kommentarer** | Tillgängligt i Defender för slutpunkt version 100.83.73 eller senare. |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|exclusionsMergePolicy|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|koppla (standard) <p> admin_only|
+|**Kommentarer**|Tillgängligt i Defender för slutpunkt version 100.83.73 eller senare.|
+|
 
 #### <a name="scan-exclusions"></a>Undantag för skanning
 
 Enheter som har uteslutits från genomsökningen. Undantag kan anges med fullständiga sökvägar, filnamnstillägg eller filnamn.
 (Undantag anges som en matris med objekt, administratören kan ange så många element som behövs, i valfri ordning.)
 
-|||
-|:---|:---|
-| **Nyckel** | undantag |
-| **Datatyp** | Ordlista (kapslad inställning) |
-| **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
-|||
+<br>
 
-**Typ av undantag**
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|undantag|
+|**Datatyp**|Ordlista (kapslad inställning)|
+|**Kommentarer**|I följande avsnitt finns en beskrivning av innehållet i ordlistan.|
+|
+
+##### <a name="type-of-exclusion"></a>Typ av undantag
 
 Anger vilken typ av innehåll som undantas från genomsökningen.
 
-|||
-|:---|:---|
-| **Nyckel** | $type |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
-|||
+<br>
 
-**Sökväg till utelämnat innehåll**
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|$type|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|excludedPath <p> excludedFileExtension <p> excludedFileName|
+|
+
+##### <a name="path-to-excluded-content"></a>Sökväg till utelämnat innehåll
 
 Används för att utesluta innehåll från genomsökningen genom den fullständiga sökvägen.
 
-|||
-|:---|:---|
-| **Nyckel** | sökväg |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | giltiga sökvägar |
-| **Kommentarer** | Gäller endast om *$type* *är undantagenPath* |
-|||
+<br>
 
-**Sökvägstyp (fil/katalog)**
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|sökväg|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|giltiga sökvägar|
+|**Kommentarer**|Gäller endast om *$type* *är undantagenPath*|
+|
+
+##### <a name="path-type-file--directory"></a>Sökvägstyp (fil/katalog)
 
 Anger om *sökvägsegenskapen* refererar till en fil eller katalog.
 
-|||
-|:---|:---|
-| **Nyckel** | isDirectory |
-| **Datatyp** | Boolesk |
-| **Möjliga värden** | false (standard) <br/> true |
-| **Kommentarer** | Gäller endast om *$type* *är undantagenPath* |
-|||
+<br>
 
-**Filnamnstillägget är undantaget från genomsökningen**
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|isDirectory|
+|**Datatyp**|Boolesk|
+|**Möjliga värden**|false (standard) <p> true|
+|**Kommentarer**|Gäller endast om *$type* *är undantagenPath*|
+|
+
+##### <a name="file-extension-excluded-from-the-scan"></a>Filnamnstillägget är undantaget från genomsökningen
 
 Används för att utesluta innehåll från genomsökningen efter filnamnstillägget.
 
-|||
-|:---|:---|
-| **Nyckel** | tillägg |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | giltiga filnamnstillägg |
-| **Kommentarer** | Gäller endast om *$type* *är undantagenFileExtension* |
-|||
+<br>
 
-**Process som uteslutits från genomsökningen**
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|tillägg|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|giltiga filnamnstillägg|
+|**Kommentarer**|Gäller endast om *$type* *är undantagenFileExtension*|
+|
+
+##### <a name="process-excluded-from-the-scan"></a>Process som är undantagen från genomsökningen*
 
 Anger en process där all filaktivitet är undantagen från genomsökning. Processen kan antingen anges med sitt namn (till exempel `cat` ) eller med en fullständig sökväg (t.ex. `/bin/cat` ).
 
-|||
-|:---|:---|
-| **Nyckel** | Namn |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | valfri sträng |
-| **Kommentarer** | Gäller endast om *$type* *är undantagenFilnamn* |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|Namn|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|valfri sträng|
+|**Kommentarer**|Gäller endast om *$type* *är undantagenFilnamn*|
+|
 
 #### <a name="allowed-threats"></a>Tillåtna hot
 
 Lista över hot (identifieras med namnet) som inte blockeras av produkten och i stället får köras.
 
-|||
-|:---|:---|
-| **Nyckel** | allowedThreats |
-| **Datatyp** | Matris med strängar |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|allowedThreats|
+|**Datatyp**|Matris med strängar|
+|
 
 #### <a name="disallowed-threat-actions"></a>Otillåtna hotåtgärder
 
 Begränsar de åtgärder som den lokala användaren på en enhet kan vidta när hot upptäcks. De åtgärder som ingår i den här listan visas inte i användargränssnittet.
 
-|||
-|:---|:---|
-| **Nyckel** | disallowedThreatActions |
-| **Datatyp** | Matris med strängar |
-| **Möjliga värden** | tillåt (begränsar användare från att tillåta hot) <br/> återställning (hindrar användare från att återställa hot från karantän) |
-| **Kommentarer** | Tillgängligt i Defender för slutpunkt version 100.83.73 eller senare. |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|disallowedThreatActions|
+|**Datatyp**|Matris med strängar|
+|**Möjliga värden**|tillåt (begränsar användare från att tillåta hot) <p> återställning (hindrar användare från att återställa hot från karantän)|
+|**Kommentarer**|Tillgängligt i Defender för slutpunkt version 100.83.73 eller senare.|
+|
 
 #### <a name="threat-type-settings"></a>Inställningar för hottyp
 
 Inställningen *för threatTypeSettings* i antivirusmotorn används för att styra hur vissa hottyper hanteras av produkten.
 
-|||
-|:---|:---|
-| **Nyckel** | threatTypeSettings |
-| **Datatyp** | Ordlista (kapslad inställning) |
-| **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
-|||
+<br>
 
-**Hottyp**
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|threatTypeSettings|
+|**Datatyp**|Ordlista (kapslad inställning)|
+|**Kommentarer**|I följande avsnitt finns en beskrivning av innehållet i ordlistan.|
+|
+
+##### <a name="threat-type"></a>Hottyp
 
 Typ av hot som beteendet är konfigurerat för.
 
-|||
-|:---|:---|
-| **Nyckel** | tangent |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | potentially_unwanted_application <br/> archive_bomb |
-|||
+<br>
 
-**Åtgärd att vidta**
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|tangent|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|potentially_unwanted_application <p> archive_bomb|
+|
+
+##### <a name="action-to-take"></a>Åtgärd att vidta
 
 Åtgärd att vidta när de kommer över en typ av hot som anges i föregående avsnitt. Kan vara:
 
@@ -225,81 +282,109 @@ Typ av hot som beteendet är konfigurerat för.
 - **Blockering:** Enheten är skyddad mot den här typen av hot och du meddelas i säkerhetskonsolen.
 - **Av:** Enheten är inte skyddad mot den här typen av hot och inget loggas.
 
-|||
-|:---|:---|
-| **Nyckel** | värde |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | granskning (standard) <br/> blockera <br/> av |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|värde|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|granskning (standard) <p> blockera <p> av|
+|
 
 #### <a name="threat-type-settings-merge-policy"></a>Princip för sammanfogning av hottyper
 
 Anger kopplingsprincipen för inställningar av hottyper. Det kan vara en kombination av administratörsdefinierade och användardefinierade inställningar ( `merge` ) eller bara administratörsdefinierade inställningar ( `admin_only` ). Den här inställningen kan användas för att hindra lokala användare från att definiera sina egna inställningar för olika hottyper.
 
-|||
-|:---|:---|
-| **Nyckel** | threatTypeSettingsMergePolicy |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | koppla (standard) <br/> admin_only |
-| **Kommentarer** | Tillgängligt i Defender för slutpunkt version 100.83.73 eller senare. |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|threatTypeSettingsMergePolicy|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|koppla (standard) <p> admin_only|
+|**Kommentarer**|Tillgängligt i Defender för slutpunkt version 100.83.73 eller senare.|
+|
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Historik för antivirussökningshistorik kvar (i dagar)
 
 Ange antalet dagar som resultaten ska behållas i genomsökningshistoriken på enheten. Gamla genomsökningsresultat tas bort från historiken. Gamla filer i karantän som också har tagits bort från disken.
 
-|||
-|:---|:---|
-| **Nyckel** | scanResultsRetentionDays |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | 90 (standard). Tillåtna värden är 1 dag till 180 dagar. |
-| **Kommentarer** | Tillgängligt i Defender för slutpunkt version 101.04.76 eller senare. |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|scanResultsRetentionDays|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|90 (standard). Tillåtna värden är 1 dag till 180 dagar.|
+|**Kommentarer**|Tillgängligt i Defender för slutpunkt version 101.04.76 eller senare.|
+|
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Maximalt antal objekt i historiken för antivirussökning
 
 Ange det maximala antalet poster som ska behållas i genomsökningshistoriken. Posterna innehåller alla genomsökningar på begäran som utförts tidigare och alla antivirusprogramn.
 
-|||
-|:---|:---|
-| **Nyckel** | scanHistoryMaximumItems |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | 10000 (standard). Tillåtna värden är från 5 000 objekt till 1 5 000 objekt. |
-| **Kommentarer** | Tillgängligt i Defender för slutpunkt version 101.04.76 eller senare. |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|scanHistoryMaximumItems|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|10000 (standard). Tillåtna värden är från 5 000 objekt till 1 5 000 objekt.|
+|**Kommentarer**|Tillgängligt i Defender för slutpunkt version 101.04.76 eller senare.|
+|
 
 ### <a name="cloud-delivered-protection-preferences"></a>Inställningar för moln levererat skydd
 
 *CloudService-posten* i konfigurationsprofilen används för att konfigurera produktens molndrivna skyddsfunktion.
 
-|||
-|:---|:---|
-| **Nyckel** | cloudService |
-| **Datatyp** | Ordlista (kapslad inställning) |
-| **Kommentarer** | I följande avsnitt finns en beskrivning av innehållet i ordlistan. |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|cloudService|
+|**Datatyp**|Ordlista (kapslad inställning)|
+|**Kommentarer**|I följande avsnitt finns en beskrivning av innehållet i ordlistan.|
+|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Aktivera/inaktivera moln levererat skydd
 
 Avgör om moln levererat skydd är aktiverat på enheten eller inte. Vi rekommenderar att du behåller den här funktionen aktiverad för att förbättra säkerheten för dina tjänster.
 
-|||
-|:---|:---|
-| **Nyckel** | aktiverat |
-| **Datatyp** | Boolesk |
-| **Möjliga värden** | true (standard) <br/> false |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|aktiverat|
+|**Datatyp**|Boolesk|
+|**Möjliga värden**|true (standard) <p> false|
+|
 
 #### <a name="diagnostic-collection-level"></a>Diagnostiksamlingsnivå
 
 Diagnostikdata används för att hålla Defender för Slutpunkt säker och uppdaterad, identifiera, diagnostisera och åtgärda problem samt göra produktförbättringar. Den här inställningen bestämmer nivån för diagnostik som skickas av produkten till Microsoft.
 
-|||
-|:---|:---|
-| **Nyckel** | diagnosticLevel |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | valfritt (standard) <br/> obligatoriskt |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|diagnosticLevel|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|valfritt (standard) <p> obligatoriskt|
+|
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Aktivera/inaktivera automatiska exempelinskick
 
@@ -309,23 +394,31 @@ Avgör om misstänkta exempel (som troligen innehåller hot) skickas till Micros
 - **Valv**: endast misstänkta exempel som inte innehåller personligt identifierbar information skickas automatiskt. Det här är standardvärdet för den här inställningen.
 - **Alla**: alla misstänkta exempel skickas till Microsoft.
 
-|||
-|:---|:---|
-| **Nyckel** | automaticSampleSubmissionConsent |
-| **Datatyp** | Sträng |
-| **Möjliga värden** | none (ingen) <br/> kassaskåp (standard) <br/> alla |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|automaticSampleSubmissionConsent|
+|**Datatyp**|Sträng|
+|**Möjliga värden**|none (ingen) <p> kassaskåp (standard) <p> alla|
+|
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Aktivera/inaktivera automatiska säkerhetsintelligensuppdateringar
 
 Avgör om säkerhetsintelligensuppdateringar installeras automatiskt:
 
-|||
-|:---|:---|
-| **Nyckel** | automaticDefinitionUpdateEnabled |
-| **Datatyp** | Boolesk |
-| **Möjliga värden** | true (standard) <br/> false |
-|||
+<br>
+
+****
+
+|Beskrivning|Värde|
+|---|---|
+|**Nyckel**|automaticDefinitionUpdateEnabled|
+|**Datatyp**|Boolesk|
+|**Möjliga värden**|true (standard) <p> false|
+|
 
 ## <a name="recommended-configuration-profile"></a>Rekommenderad konfigurationsprofil
 
@@ -444,10 +537,12 @@ python -m json.tool mdatp_managed.json
 Om JSON-koden är rätt utformad matar kommandot ovan ut den tillbaka till terminalen och returnerar en utgångskod för `0` . Annars visas ett fel som beskriver problemet och kommandot returnerar en utgångskod för `1` .
 
 ## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Verifiera att filen mdatp_managed.jsfungerar som förväntat
+
 Kontrollera att din /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfungerar korrekt genom att se "[managed]" bredvid de här inställningarna:
+
 - cloud_enabled
 - cloud_automatic_sample_submission_consent
-- passice_mode_enabled
+- passive_mode_enabled
 - real_time_protection_enabled
 - automatic_definition_update_enabled
 
