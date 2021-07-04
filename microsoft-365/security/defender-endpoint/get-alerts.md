@@ -16,22 +16,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dcc8a9214e0a6d0a0ede3b08aa6a019f2f0c4d2c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769263"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289853"
 ---
-# <a name="list-alerts-api"></a><span data-ttu-id="e3a8d-104">API för listvarningar</span><span class="sxs-lookup"><span data-stu-id="e3a8d-104">List alerts API</span></span>
+# <a name="list-alerts-api"></a><span data-ttu-id="f1032-104">API för listvarningar</span><span class="sxs-lookup"><span data-stu-id="f1032-104">List alerts API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="e3a8d-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="e3a8d-105">**Applies to:**</span></span>
-- [<span data-ttu-id="e3a8d-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="e3a8d-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="e3a8d-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e3a8d-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="f1032-105">**Gäller för:**</span><span class="sxs-lookup"><span data-stu-id="f1032-105">**Applies to:**</span></span>
+- [<span data-ttu-id="f1032-106">Microsoft Defender för Endpoint</span><span class="sxs-lookup"><span data-stu-id="f1032-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="f1032-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f1032-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="e3a8d-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="e3a8d-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="e3a8d-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="f1032-108">Vill du uppleva Microsoft Defender för Slutpunkt?</span><span class="sxs-lookup"><span data-stu-id="f1032-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f1032-109">Registrera dig för en kostnadsfri utvärderingsversion.</span><span class="sxs-lookup"><span data-stu-id="f1032-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -39,74 +39,75 @@ ms.locfileid: "52769263"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="e3a8d-110">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="e3a8d-110">API description</span></span>
-<span data-ttu-id="e3a8d-111">Hämtar en samling aviseringar.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-111">Retrieves a collection of Alerts.</span></span>
-<br><span data-ttu-id="e3a8d-112">Stöder [OData V4-frågor.](https://www.odata.org/documentation/)</span><span class="sxs-lookup"><span data-stu-id="e3a8d-112">Supports [OData V4 queries](https://www.odata.org/documentation/).</span></span>
-<br><span data-ttu-id="e3a8d-113">Operatorer som stöds av OData:</span><span class="sxs-lookup"><span data-stu-id="e3a8d-113">OData supported operators:</span></span>
-<br><span data-ttu-id="e3a8d-114">```$filter``` på: ```alertCreationTime``` ```lastUpdateTime``` , , , , ```incidentId``` ```InvestigationId``` och ```status``` ```severity``` ```category``` egenskaper.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-114">```$filter``` on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category``` properties.</span></span>
-<br><span data-ttu-id="e3a8d-115">```$top``` med maxvärde på 10 000</span><span class="sxs-lookup"><span data-stu-id="e3a8d-115">```$top``` with max value of 10,000</span></span>
+## <a name="api-description"></a><span data-ttu-id="f1032-110">API-beskrivning</span><span class="sxs-lookup"><span data-stu-id="f1032-110">API description</span></span>
+<span data-ttu-id="f1032-111">Hämtar en samling aviseringar.</span><span class="sxs-lookup"><span data-stu-id="f1032-111">Retrieves a collection of Alerts.</span></span>
+<br><span data-ttu-id="f1032-112">Stöder [OData V4-frågor.](https://www.odata.org/documentation/)</span><span class="sxs-lookup"><span data-stu-id="f1032-112">Supports [OData V4 queries](https://www.odata.org/documentation/).</span></span>
+<br><span data-ttu-id="f1032-113">Operatorer som stöds av OData:</span><span class="sxs-lookup"><span data-stu-id="f1032-113">OData supported operators:</span></span>
+<br><span data-ttu-id="f1032-114">```$filter``` på: ```alertCreationTime``` ```lastUpdateTime``` , , , , ```incidentId``` ```InvestigationId``` och ```status``` ```severity``` ```category``` egenskaper.</span><span class="sxs-lookup"><span data-stu-id="f1032-114">```$filter``` on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category``` properties.</span></span>
+<br><span data-ttu-id="f1032-115">```$top``` med maxvärde på 10 000</span><span class="sxs-lookup"><span data-stu-id="f1032-115">```$top``` with max value of 10,000</span></span>
 <br>```$skip```
-<br><span data-ttu-id="e3a8d-116">```$expand``` av ```evidence```</span><span class="sxs-lookup"><span data-stu-id="e3a8d-116">```$expand``` of ```evidence```</span></span>
-<br><span data-ttu-id="e3a8d-117">Se exempel på [OData-frågor med Microsoft Defender för Slutpunkt](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="e3a8d-117">See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)</span></span>
+<br><span data-ttu-id="f1032-116">```$expand``` av ```evidence```</span><span class="sxs-lookup"><span data-stu-id="f1032-116">```$expand``` of ```evidence```</span></span>
+<br><span data-ttu-id="f1032-117">Se exempel på [OData-frågor med Microsoft Defender för Slutpunkt](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="f1032-117">See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="e3a8d-118">Begränsningar</span><span class="sxs-lookup"><span data-stu-id="e3a8d-118">Limitations</span></span>
-1. <span data-ttu-id="e3a8d-119">Du kan få aviseringar som senast uppdaterats enligt din konfigurerade lagringstid.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-119">You can get alerts last updated according to your configured retention period.</span></span>
-2. <span data-ttu-id="e3a8d-120">Maximal sidstorlek är 10 000.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-120">Maximum page size is 10,000.</span></span>
-3. <span data-ttu-id="e3a8d-121">Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-121">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span> 
+## <a name="limitations"></a><span data-ttu-id="f1032-118">Begränsningar</span><span class="sxs-lookup"><span data-stu-id="f1032-118">Limitations</span></span>
+1. <span data-ttu-id="f1032-119">Du kan få aviseringar som senast uppdaterats enligt din konfigurerade lagringstid.</span><span class="sxs-lookup"><span data-stu-id="f1032-119">You can get alerts last updated according to your configured retention period.</span></span>
+2. <span data-ttu-id="f1032-120">Maximal sidstorlek är 10 000.</span><span class="sxs-lookup"><span data-stu-id="f1032-120">Maximum page size is 10,000.</span></span>
+3. <span data-ttu-id="f1032-121">Prisbegränsningar för detta API är 100 samtal per minut och 1 500 samtal per timme.</span><span class="sxs-lookup"><span data-stu-id="f1032-121">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="e3a8d-122">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="e3a8d-122">Permissions</span></span>
-<span data-ttu-id="e3a8d-123">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-123">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="e3a8d-124">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="e3a8d-124">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="f1032-122">Behörigheter</span><span class="sxs-lookup"><span data-stu-id="f1032-122">Permissions</span></span>
+<span data-ttu-id="f1032-123">En av följande behörigheter krävs för att anropa detta API.</span><span class="sxs-lookup"><span data-stu-id="f1032-123">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="f1032-124">Mer information, inklusive hur du väljer behörigheter, finns i Använda [Microsoft Defender för slutpunkts-API:er](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="f1032-124">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="e3a8d-125">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="e3a8d-125">Permission type</span></span> |   <span data-ttu-id="e3a8d-126">Behörighet</span><span class="sxs-lookup"><span data-stu-id="e3a8d-126">Permission</span></span>  |   <span data-ttu-id="e3a8d-127">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="e3a8d-127">Permission display name</span></span>
+<span data-ttu-id="f1032-125">Behörighetstyp</span><span class="sxs-lookup"><span data-stu-id="f1032-125">Permission type</span></span> | <span data-ttu-id="f1032-126">Behörighet</span><span class="sxs-lookup"><span data-stu-id="f1032-126">Permission</span></span> | <span data-ttu-id="f1032-127">Visningsnamn för behörighet</span><span class="sxs-lookup"><span data-stu-id="f1032-127">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="e3a8d-128">Program</span><span class="sxs-lookup"><span data-stu-id="e3a8d-128">Application</span></span> |   <span data-ttu-id="e3a8d-129">Alert.Read.All</span><span class="sxs-lookup"><span data-stu-id="e3a8d-129">Alert.Read.All</span></span> |    <span data-ttu-id="e3a8d-130">"Läs alla aviseringar"</span><span class="sxs-lookup"><span data-stu-id="e3a8d-130">'Read all alerts'</span></span>
-<span data-ttu-id="e3a8d-131">Program</span><span class="sxs-lookup"><span data-stu-id="e3a8d-131">Application</span></span> |   <span data-ttu-id="e3a8d-132">Alert.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e3a8d-132">Alert.ReadWrite.All</span></span> |   <span data-ttu-id="e3a8d-133">"Läs och skriv alla aviseringar"</span><span class="sxs-lookup"><span data-stu-id="e3a8d-133">'Read and write all alerts'</span></span>
-<span data-ttu-id="e3a8d-134">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="e3a8d-134">Delegated (work or school account)</span></span> | <span data-ttu-id="e3a8d-135">Avisering.Läsa</span><span class="sxs-lookup"><span data-stu-id="e3a8d-135">Alert.Read</span></span> | <span data-ttu-id="e3a8d-136">Läsaviseringar</span><span class="sxs-lookup"><span data-stu-id="e3a8d-136">'Read alerts'</span></span>
-<span data-ttu-id="e3a8d-137">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="e3a8d-137">Delegated (work or school account)</span></span> | <span data-ttu-id="e3a8d-138">Alert.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e3a8d-138">Alert.ReadWrite</span></span> | <span data-ttu-id="e3a8d-139">"Aviseringar om läsning och skrivning"</span><span class="sxs-lookup"><span data-stu-id="e3a8d-139">'Read and write alerts'</span></span>
+<span data-ttu-id="f1032-128">Program</span><span class="sxs-lookup"><span data-stu-id="f1032-128">Application</span></span> | <span data-ttu-id="f1032-129">Alert.Read.All</span><span class="sxs-lookup"><span data-stu-id="f1032-129">Alert.Read.All</span></span> | <span data-ttu-id="f1032-130">"Läs alla aviseringar"</span><span class="sxs-lookup"><span data-stu-id="f1032-130">'Read all alerts'</span></span>
+<span data-ttu-id="f1032-131">Program</span><span class="sxs-lookup"><span data-stu-id="f1032-131">Application</span></span> | <span data-ttu-id="f1032-132">Alert.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1032-132">Alert.ReadWrite.All</span></span> | <span data-ttu-id="f1032-133">"Läs och skriv alla aviseringar"</span><span class="sxs-lookup"><span data-stu-id="f1032-133">'Read and write all alerts'</span></span>
+<span data-ttu-id="f1032-134">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="f1032-134">Delegated (work or school account)</span></span> | <span data-ttu-id="f1032-135">Avisering.Läsa</span><span class="sxs-lookup"><span data-stu-id="f1032-135">Alert.Read</span></span> | <span data-ttu-id="f1032-136">Läsaviseringar</span><span class="sxs-lookup"><span data-stu-id="f1032-136">'Read alerts'</span></span>
+<span data-ttu-id="f1032-137">Delegerat (arbets- eller skolkonto)</span><span class="sxs-lookup"><span data-stu-id="f1032-137">Delegated (work or school account)</span></span> | <span data-ttu-id="f1032-138">Alert.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f1032-138">Alert.ReadWrite</span></span> | <span data-ttu-id="f1032-139">"Aviseringar om läsning och skrivning"</span><span class="sxs-lookup"><span data-stu-id="f1032-139">'Read and write alerts'</span></span>
 
->[!Note]
-> <span data-ttu-id="e3a8d-140">När du skaffar en token med hjälp av användarautentiseringsuppgifter:</span><span class="sxs-lookup"><span data-stu-id="e3a8d-140">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="e3a8d-141">Användaren måste ha minst följande rollbehörighet: 'Visa data' (mer information finns i [Skapa och](user-roles.md) hantera roller)</span><span class="sxs-lookup"><span data-stu-id="e3a8d-141">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="e3a8d-142">Svaret tar bara med aviseringar som associeras med enheter som användaren kan [](machine-groups.md) komma åt, baserat på enhetsgruppsinställningar (mer information finns i Skapa och hantera enhetsgrupper)</span><span class="sxs-lookup"><span data-stu-id="e3a8d-142">The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> [!NOTE]
+> <span data-ttu-id="f1032-140">När du skaffar en token med hjälp av användarautentiseringsuppgifter:</span><span class="sxs-lookup"><span data-stu-id="f1032-140">When obtaining a token using user credentials:</span></span>
+>
+> - <span data-ttu-id="f1032-141">Användaren måste ha minst följande rollbehörighet: 'Visa data' (mer information finns i [Skapa och](user-roles.md) hantera roller)</span><span class="sxs-lookup"><span data-stu-id="f1032-141">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+> - <span data-ttu-id="f1032-142">Svaret tar bara med aviseringar som associeras med enheter som användaren kan [](machine-groups.md) komma åt, baserat på enhetsgruppsinställningar (mer information finns i Skapa och hantera enhetsgrupper)</span><span class="sxs-lookup"><span data-stu-id="f1032-142">The response will include only alerts that are associated with devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e3a8d-143">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="e3a8d-143">HTTP request</span></span>
-```
+## <a name="http-request"></a><span data-ttu-id="f1032-143">HTTP-begäran</span><span class="sxs-lookup"><span data-stu-id="f1032-143">HTTP request</span></span>
+
+```http
 GET /api/alerts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e3a8d-144">Begäran om rubriker</span><span class="sxs-lookup"><span data-stu-id="e3a8d-144">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f1032-144">Frågerubriker</span><span class="sxs-lookup"><span data-stu-id="f1032-144">Request headers</span></span>
 
-<span data-ttu-id="e3a8d-145">Namn</span><span class="sxs-lookup"><span data-stu-id="e3a8d-145">Name</span></span> | <span data-ttu-id="e3a8d-146">Typ</span><span class="sxs-lookup"><span data-stu-id="e3a8d-146">Type</span></span> | <span data-ttu-id="e3a8d-147">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="e3a8d-147">Description</span></span>
+<span data-ttu-id="f1032-145">Namn</span><span class="sxs-lookup"><span data-stu-id="f1032-145">Name</span></span> | <span data-ttu-id="f1032-146">Typ</span><span class="sxs-lookup"><span data-stu-id="f1032-146">Type</span></span> | <span data-ttu-id="f1032-147">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="f1032-147">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="e3a8d-148">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="e3a8d-148">Authorization</span></span> | <span data-ttu-id="e3a8d-149">Sträng</span><span class="sxs-lookup"><span data-stu-id="e3a8d-149">String</span></span> | <span data-ttu-id="e3a8d-150">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-150">Bearer {token}.</span></span> <span data-ttu-id="e3a8d-151">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="e3a8d-151">**Required**.</span></span>
+<span data-ttu-id="f1032-148">Auktorisering</span><span class="sxs-lookup"><span data-stu-id="f1032-148">Authorization</span></span> | <span data-ttu-id="f1032-149">Sträng</span><span class="sxs-lookup"><span data-stu-id="f1032-149">String</span></span> | <span data-ttu-id="f1032-150">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="f1032-150">Bearer {token}.</span></span> <span data-ttu-id="f1032-151">**Obligatoriskt.**</span><span class="sxs-lookup"><span data-stu-id="f1032-151">**Required**.</span></span>
 
+## <a name="request-body"></a><span data-ttu-id="f1032-152">Frågebrödtext</span><span class="sxs-lookup"><span data-stu-id="f1032-152">Request body</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="e3a8d-152">Begärans brödtext</span><span class="sxs-lookup"><span data-stu-id="e3a8d-152">Request body</span></span>
-<span data-ttu-id="e3a8d-153">Tom</span><span class="sxs-lookup"><span data-stu-id="e3a8d-153">Empty</span></span>
+<span data-ttu-id="f1032-153">Tom</span><span class="sxs-lookup"><span data-stu-id="f1032-153">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="e3a8d-154">Svar</span><span class="sxs-lookup"><span data-stu-id="e3a8d-154">Response</span></span>
-<span data-ttu-id="e3a8d-155">Om det lyckas returnerar den här metoden 200 OK och en lista med [aviseringsobjekt](alerts.md) i svarets brödtext.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-155">If successful, this method returns 200 OK, and a list of [alert](alerts.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f1032-154">Svar</span><span class="sxs-lookup"><span data-stu-id="f1032-154">Response</span></span>
 
+<span data-ttu-id="f1032-155">Om det lyckas returnerar den här metoden 200 OK och en lista med [aviseringsobjekt](alerts.md) i svarets brödtext.</span><span class="sxs-lookup"><span data-stu-id="f1032-155">If successful, this method returns 200 OK, and a list of [alert](alerts.md) objects in the response body.</span></span>
 
-## <a name="example-1---default"></a><span data-ttu-id="e3a8d-156">Exempel 1 – Standard</span><span class="sxs-lookup"><span data-stu-id="e3a8d-156">Example 1 - Default</span></span>
+## <a name="example-1---default"></a><span data-ttu-id="f1032-156">Exempel 1 – Standard</span><span class="sxs-lookup"><span data-stu-id="f1032-156">Example 1 - Default</span></span>
 
-<span data-ttu-id="e3a8d-157">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="e3a8d-157">**Request**</span></span>
+### <a name="request"></a><span data-ttu-id="f1032-157">Begäran</span><span class="sxs-lookup"><span data-stu-id="f1032-157">Request</span></span>
 
-<span data-ttu-id="e3a8d-158">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-158">Here is an example of the request.</span></span>
+<span data-ttu-id="f1032-158">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="f1032-158">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts
 ```
 
-<span data-ttu-id="e3a8d-159">**Svar**</span><span class="sxs-lookup"><span data-stu-id="e3a8d-159">**Response**</span></span>
+### <a name="response"></a><span data-ttu-id="f1032-159">Svar</span><span class="sxs-lookup"><span data-stu-id="f1032-159">Response</span></span>
 
-<span data-ttu-id="e3a8d-160">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-160">Here is an example of the response.</span></span>
+<span data-ttu-id="f1032-160">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="f1032-160">Here is an example of the response.</span></span>
 
->[!NOTE]
-><span data-ttu-id="e3a8d-161">Svarslistan som visas här kan trunkeras för att vara kort.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-161">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="e3a8d-162">Alla aviseringar returneras från ett faktiskt samtal.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-162">All alerts will be returned from an actual call.</span></span>
-
+> [!NOTE]
+> <span data-ttu-id="f1032-161">Svarslistan som visas här kan trunkeras för att vara kort.</span><span class="sxs-lookup"><span data-stu-id="f1032-161">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="f1032-162">Alla aviseringar returneras från ett faktiskt samtal.</span><span class="sxs-lookup"><span data-stu-id="f1032-162">All alerts will be returned from an actual call.</span></span>
 
 ```json
 {
@@ -160,24 +161,22 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 }
 ```
 
-## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a><span data-ttu-id="e3a8d-163">Exempel 2 – Få 10 senaste aviseringar med relaterade bevis</span><span class="sxs-lookup"><span data-stu-id="e3a8d-163">Example 2 - Get 10 latest Alerts with related Evidence</span></span>
+## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a><span data-ttu-id="f1032-163">Exempel 2 – Få 10 senaste aviseringar med relaterade bevis</span><span class="sxs-lookup"><span data-stu-id="f1032-163">Example 2 - Get 10 latest Alerts with related Evidence</span></span>
 
-<span data-ttu-id="e3a8d-164">**Begäran**</span><span class="sxs-lookup"><span data-stu-id="e3a8d-164">**Request**</span></span>
+### <a name="request"></a><span data-ttu-id="f1032-164">Begäran</span><span class="sxs-lookup"><span data-stu-id="f1032-164">Request</span></span>
 
-<span data-ttu-id="e3a8d-165">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-165">Here is an example of the request.</span></span>
+<span data-ttu-id="f1032-165">Här är ett exempel på begäran.</span><span class="sxs-lookup"><span data-stu-id="f1032-165">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
+### <a name="response"></a><span data-ttu-id="f1032-166">Svar</span><span class="sxs-lookup"><span data-stu-id="f1032-166">Response</span></span>
 
-<span data-ttu-id="e3a8d-166">**Svar**</span><span class="sxs-lookup"><span data-stu-id="e3a8d-166">**Response**</span></span>
+<span data-ttu-id="f1032-167">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="f1032-167">Here is an example of the response.</span></span>
 
-<span data-ttu-id="e3a8d-167">Här är ett exempel på svaret.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-167">Here is an example of the response.</span></span>
-
->[!NOTE]
-><span data-ttu-id="e3a8d-168">Svarslistan som visas här kan trunkeras för att vara kort.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-168">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="e3a8d-169">Alla aviseringar returneras från ett faktiskt samtal.</span><span class="sxs-lookup"><span data-stu-id="e3a8d-169">All alerts will be returned from an actual call.</span></span>
-
+> [!NOTE]
+> <span data-ttu-id="f1032-168">Svarslistan som visas här kan trunkeras för att vara kort.</span><span class="sxs-lookup"><span data-stu-id="f1032-168">The response list shown here may be truncated for brevity.</span></span> <span data-ttu-id="f1032-169">Alla aviseringar returneras från ett faktiskt samtal.</span><span class="sxs-lookup"><span data-stu-id="f1032-169">All alerts will be returned from an actual call.</span></span>
 
 ```json
 {
@@ -314,6 +313,6 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 }
 ```
 
+## <a name="see-also"></a><span data-ttu-id="f1032-170">Se även</span><span class="sxs-lookup"><span data-stu-id="f1032-170">See also</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="e3a8d-170">Se även</span><span class="sxs-lookup"><span data-stu-id="e3a8d-170">See also</span></span>
-- [<span data-ttu-id="e3a8d-171">OData-frågor med Microsoft Defender för Slutpunkt</span><span class="sxs-lookup"><span data-stu-id="e3a8d-171">OData queries with Microsoft Defender for Endpoint</span></span>](exposed-apis-odata-samples.md)
+[<span data-ttu-id="f1032-171">OData-frågor med Microsoft Defender för Slutpunkt</span><span class="sxs-lookup"><span data-stu-id="f1032-171">OData queries with Microsoft Defender for Endpoint</span></span>](exposed-apis-odata-samples.md)
