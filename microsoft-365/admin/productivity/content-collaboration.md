@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Information om samarbetet i innehåll – personer får produktivitetspoäng.
-ms.openlocfilehash: cca218d15af98925bf61bbb314cfd4d35aa0711a
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 2921cc738d1325416a0a5a8ab4a8eea9456b3269
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779741"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300092"
 ---
 # <a name="content-collaboration--people-experiences"></a>Innehållssamarbete – upplevelser av personer
 
@@ -112,7 +112,7 @@ Vi ger dig även information som hjälper dig att se hur din organisation samarb
 
 :::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Diagram som visar antalet personer som skapar filer i OneDrive eller SharePoint":::
 
-1. **Sidhuvud:** Höjdpunkter procentandel av de personer som är aktiva i Microsoft 365 Office program som skapar filer på OneDrive eller SharePoint.
+1. **Sidhuvud:** Markerar hur många procent av de personer som är aktiva Microsoft 365 Office program som skapar filer på OneDrive eller SharePoint.
 2. **Brödtext:** Innehåller information om värdet av att skapa innehåll i OneDrive och SharePoint.
 3. **Visualisering:** Fördelningen i visualiseringen visar i vilken utsträckning personer som använder Microsoft Office för att skapa filer i OneDrive och SharePoint enligt följande:
       - **OneDrive:** Den blå delen (färgad) av stapeln och bråket i stapeln representerar hur många personer som är aktiva i Office program som skapar innehåll OneDrive enligt följande:
@@ -126,9 +126,11 @@ Vi ger dig även information som hjälper dig att se hur din organisation samarb
 
 ### <a name="use-of-attachments-in-email"></a>Användning av bifogade filer i e-post
 
+**Användning av bifogade filer i e-post** Förstå hur många användare som bifogar fysiska filer i e-post i stället för länkar till innehåll i molnet, och övervaka hur talet kan minska med tiden.
+
 :::image type="content" source="../../media/emailattachments.png" alt-text="Användning av e-postbilagor.":::
 
-1. **Sidhuvud:** Höjdpunkter procentandel av personer som använder bifogade filer i e-postmeddelanden som inte har sparats i OneDrive eller SharePoint.
+1. **Sidhuvud:** Markerar procentandelen personer som använder bifogade filer i e-postmeddelanden som inte har sparats i OneDrive eller SharePoint.
 2. **Brödtext:** Innehåller information om värdet av att dela länkar till onlinefiler ur samarbets- och säkerhetsperspektiv.
 3. **Visualisering:** Fördelningen i visualiseringen är avsedd att representera i vilken utsträckning personer som bifogar innehåll i e-postmeddelanden använder olika lägen (filer som inte finns på OneDrive eller SharePoint, länkar till onlinefiler och länkar som är inbäddade i e-postmeddelandet):
       - **Bifoga filer:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i fältet representerar procentandelen personer som använder bifogade filer i e-postmeddelanden.
@@ -137,16 +139,13 @@ Vi ger dig även information som hjälper dig att se hur din organisation samarb
       - **Länkar till onlinefiler:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i fältet representerar procentandelen personer som använder bifogade filer och bifogar länkar till filer i e-postmeddelanden.
         - Täljare: Antalet personer som bifogar länkar till onlinefiler (sparas i OneDrive eller SharePoint) i e-postmeddelanden under de senaste 28 dagarna.
         - Nämnare: Antalet personer som har tillgång till e-Exchange OneDrive, SharePoint eller både och inom de senaste 28 dagarna.
-      - **Bädda in länkar i e-postmeddelanden:** Den blå delen (färgad) av stapeln och bråket i stapeln representerar procentandelen personer som bäddar in länkar i brödtexten i e-postmeddelandena.
-        - Täljare: Antalet personer som bäddar in länkar i brödtexten i e-postmeddelanden till onlinefiler (sparas i OneDrive eller SharePoint) under de senaste 28 dagarna.
-        - Nämnare: Antalet personer som har tillgång till e-Exchange OneDrive, SharePoint eller både och inom de senaste 28 dagarna.
 4. **Länk till resurser:** Välj den här länken om du vill visa hjälpinnehåll.
 
 ### <a name="sharing-of-online-files"></a>Delning av onlinefiler
 
 :::image type="content" source="../../media/sharingonlinefiles.png" alt-text="Diagram som visar antalet personer som delar filer online.":::
 
-1. **Sidhuvud:** Höjdpunkter procent av personer som har åtkomst till för de OneDrive eller SharePoint som delar filer externt.
+1. **Sidhuvud:** Markerar den procentandel av personer som har åtkomst till för OneDrive eller SharePoint som delar filer externt.
 2. **Brödtext:** Innehåller information om vilka administratörer&#39; möjlighet att ändra organisationens fildelningsinställningar för att göra det möjligt att samarbeta på det sätt som passar din organisation bäst.
 3. **Visualisering:** Visar i vilken utsträckning personer som har åtkomst till OneDrive eller SharePoint delar filer internt eller externt:
       - **Externt:** Den blå (färgade) delen av stapeln och bråket (täljare/nämnare) i fältet representerar den procentandel av personer som har åtkomst till OneDrive eller SharePoint och delar filer externt.
@@ -161,7 +160,7 @@ Vi ger dig även information som hjälper dig att se hur din organisation samarb
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="Diagram som visar hur många filer som samarbetades mest.":::
 
-1. **Sidhuvud:** Höjdpunkter procentandel av personer som har åtkomst till OneDrive eller SharePoint som samarbetar i 4 eller fler filer.
+1. **Sidhuvud:** Markerar procentandelen personer som har tillgång till e OneDrive eller SharePoint som samarbetar i 4 eller fler filer.
 2. **Brödtext:** Innehåller information om hur andra kan utnyttja onlinefiler för bättre samarbete.
 3. **Visualisering:** Visar en distribution av de personer som har åtkomst till OneDrive eller SharePoint, baserat på antalet filer som de samarbetar i. Detta visas i följande 4 kategorier (för var och en representerar den blå delen av stapeln och bråktalet den procentandel av personer som har åtkomst till OneDrive eller SharePoint som faller under den kategorin):
       - **Inget samarbete:**
@@ -183,7 +182,7 @@ Vi ger dig även information som hjälper dig att se hur din organisation samarb
 
 :::image type="content" source="../../media/networkperfstrength.png" alt-text="Diagram som visar nätverksprestanda för OneDrive och SharePoint.":::
 
-1. **Sidhuvud:** Höjdpunkter procentandel av alla enheter som testats som har dålig nätverksanslutning för att OneDrive och SharePoint. 
+1. **Sidhuvud:** Markerar procentandelen enheter av alla testade som har dålig nätverksanslutning för att OneDrive och SharePoint. 
 2. **Brödtext:** Innehåller information om varför nätverksanslutningsprestanda är viktig för samarbete. 
 3. **Visualisering:** Visar en procentandel enheter med olika nivåer av nätverksanslutningsprestanda relaterad till OneDrive och SharePoint:
       - **81-100 (bäst)**: Den mörkgröna delen (färgad) i stapeln representerar det procenttal enheter som har bäst prestanda.

@@ -26,45 +26,45 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visa hälsostatus för Microsoft 365 innan du ringer supporten för att se om det finns ett aktivt tjänsteavbrott.
-ms.openlocfilehash: 28ec578fa0f2321c459284519be62e6e8448b4a5
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 95ab260b4950d261eed1288b8fdf1f59883ff15f
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842044"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300411"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Så här kontrollerar du Microsoft 365 tjänstens hälsa
 
 [![Etikett som gör att du kan se att administrationscentret ändras och mer information finns på aka.ms/aboutM365preview.](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
-Du kan visa din Microsoft-tjänster, till exempel Office på webben, Yammer, Microsoft Dynamics CRM och molntjänster för hantering av mobila enheter, på sidan Tjänstens hälsa [i Microsoft 365-administrationscentret.](https://go.microsoft.com/fwlink/p/?linkid=2024339)  Om du har problem med en molnbaserad tjänst kan du kontrollera tjänstens hälsa för att ta reda på om det är ett känt problem där en lösning är på gång innan du ringer supporten eller ägnar tid åt felsökning.
+Du kan se din Microsoft-tjänster, inklusive Office på webben, Yammer, Microsoft Dynamics CRM och molntjänster för hantering av mobila enheter,  på sidan Tjänstens hälsa [i Administrationscenter för Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Om du har problem med en molnbaserad tjänst kan du kontrollera tjänstens hälsa för att ta reda på om det är ett känt problem där en lösning är på gång innan du ringer supporten eller ägnar tid åt felsökning.
 
 Om du inte kan logga in i administrationscentret kan du använda [tjänststatussidan](https://status.office365.com) till att kontrollera om det finns kända problem som hindrar dig att logga in i klientorganisationen.  Registrera dig även för att följa oss på [@MSFT365status](https://twitter.com/MSFT365Status) Twitter för att se information om vissa händelser.
 
 ## <a name="how-to-check-service-health"></a>Kontrollera tjänstens hälsa
 
-1. Gå till Microsoft 365 och logga [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) in med ett administratörskonto.
+1. Gå till Administrationscenter för Microsoft 365 och [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) logga in med ett administratörskonto.
 
     > [!NOTE]
     > Personer som har tilldelats rollen som global administratör eller tjänstsupportadministratör kan visa tjänstens hälsa. För att tillåta Exchange-, SharePoint- och Skype för företag-administratörer att visa tjänstens hälsa, måste de också tilldelas tjänstadministratörsrollen. Mer information om roller som kan visa tjänstens hälsa finns i [Om administratörsroller.](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)
 
-2. Om du inte använder det nya  administrationscentret går  du till startsidan och väljer växlingsknappen Prova det nya administrationscentret i det övre högra hörnet.
+2. Om du vill visa tjänstens hälsa går du till Tjänstens hälsa i administrationscentret eller väljer kortet  >   **Tjänstens hälsa** på **instrumentpanelen Start**. Instrumentpanelskortet anger om det finns ett aktivt problem med tjänsten och länkar till sidan med detaljerad **information om tjänstens** hälsa.
 
-3. Om du vill visa tjänstens hälsa går du till Tjänstens hälsa i administrationscentret eller väljer kortet  >   **Tjänstens hälsa** på **instrumentpanelen Start**. Instrumentpanelskortet anger om det finns ett aktivt problem med tjänsten och länkar till sidan med detaljerad **information om tjänstens** hälsa.
-
-4. På sidan **Tjänstens** hälsa visas hälsotillståndet för varje molntjänst i ett tabellformat.
+3. På sidan **Tjänstens** hälsa visas hälsotillståndet för varje molntjänst i ett tabellformat.
 
    ![View of current issues in service health](../media/service-health-all-services.png)
 
-På **fliken Alla** tjänster (standardvyn) visas alla tjänster och deras aktuella hälsotillstånd. En ikon och kolumnen **Status** anger status för varje tjänst.
+På **fliken Alla** tjänster (standardvyn) visas alla tjänster, deras aktuella hälsotillstånd och alla aktiva incidenter eller rådgivningar. En ikon och status i **kolumnen Hälsa** anger status för varje tjänst.
 
-Om du vill filtrera vyn efter tjänster där det för närvarande finns incidenter väljer du **fliken** Incidenter högst upp på sidan. Om du **väljer fliken Rådgivning** visas endast de tjänster där det för närvarande finns en rådgivning publicerad.
+Om det finns en aktiv incident eller rådgivning för en tjänst visas de direkt under tjänstnamnet i en kapslad tabell. Du kan dölja den kapslade tabellen om du vill dölja incidenterna eller råden i den här vyn genom att klicka på sparrikonen till vänster om tjänstnamnet.   
 
-På **fliken** Historik visas historik över incidenter och rekommendationer som har lösts.
+Om du vill filtrera vyn för att bara visa alla aktiva incidenter väljer du **fliken** Incidenter högst upp på sidan. Om du **väljer fliken Rådgivning** visas bara alla aktiva rådgivningar som publicerats.
 
-Om du har problem med en Microsoft 365-tjänst och du inte ser  den på sidan Tjänstens hälsa kan du berätta det genom att välja Rapportera ett problem och fylla i det korta formuläret. Vi tittar på relaterade data och rapporter från andra organisationer för att se hur omfattande problemet är och om det kommer till vår tjänst. Om den har det lägger vi till den som  en ny händelse eller rådgivning på sidan Tjänstens hälsa, där du kan spåra dess lösning. Om du inte ser den i listan inom ungefär 30 minuter kan du kontakta support för att lösa problemet.
+På **fliken** Historik visas alla incidenter och råd som har lösts de senaste sju eller 30 dagarna.
 
-Om du vill anpassa vyn för vilka tjänster som visas på instrumentpanelen väljer du Anpassad vy för inställningar och avmarkerar kryssrutorna för de tjänster som du vill filtrera bort från hälsoinstrumentpanelen.  >   Kontrollera att kryssrutan är markerad för varje tjänst som du vill övervaka.
+Om du har problem med en Microsoft 365-tjänst och du inte ser  den på sidan Tjänstens hälsa kan du berätta det genom att välja Rapportera ett problem och fylla i det korta formuläret. Vi tittar på relaterade data och rapporter från andra organisationer för att se hur omfattande problemet är och om det kommer till vår tjänst. Om den har det lägger vi till den som  en ny händelse eller rådgivning på sidan Tjänstens hälsa, där du kan spåra dess lösning. Sidan **Rapporterade problem** visar alla problem som din innehavare har rapporterat från det här formuläret och status.
+
+Om du vill anpassa vyn för vilka tjänster som visas på instrumentpanelen väljer du Inställningar anpassad vy och avmarkerar kryssrutorna för de tjänster som du vill filtrera bort från hälsoinstrumentpanelen.  >   Kontrollera att kryssrutan är markerad för varje tjänst som du vill övervaka.
 
 Om du vill registrera dig för e-postmeddelanden om nya incidenter som påverkar din klientorganisation och statusändringar för en aktiv incident väljer du Inställningar E-post , klickar på Skicka e-postaviseringar på tjänsten  >   **hedn** och anger sedan:
 
@@ -72,40 +72,37 @@ Om du vill registrera dig för e-postmeddelanden om nya incidenter som påverkar
 - Om du vill få aviseringar om incidenter eller rådgivning
 - De tjänster som du vill få aviseringar om
 
+Du kan även prenumerera på e-postaviseringar för enskilda händelser i stället för varje händelse för en tjänst. Det gör du genom att välja det aktiva problemet du vill få e-postaviseringsuppdateringar för, välja Hantera aviseringar för det **här** problemet och sedan ange: 
+- Upp till två e-postadresser.
+
 > [!NOTE]
 > Varje administratör kan ha sina inställningar inställda och ovanstående begränsning på två e-postadresser är per administratörskonto.
 
 > [!TIP]
-> Du kan också använda [Microsoft 365 Admin-appen](https://go.microsoft.com/fwlink/p/?linkid=627216) på din mobila enhet för att visa tjänstens hälsa, vilket är ett bra sätt att hålla dig aktuell med push-meddelanden.
+> Du kan också använda [Microsoft 365 Admin-appen](https://go.microsoft.com/fwlink/p/?linkid=627216) på din mobila enhet för att visa Tjänstens hälsa, vilket är ett bra sätt att hålla dig aktuell med push-meddelanden.
 
 ### <a name="view-details-of-posted-service-health"></a>Visa information om publicerad tjänsthälsa
 
-Om du **väljer tjänststatus** i vyn Alla tjänster öppnas en sammanfattning av rådgivningar och incidenter.
+I vyn **Alla tjänster** väljer du rubriken för problemet så visas informationssidan som visar mer information om problemet, inklusive en feed av alla meddelanden som publiceras när vi arbetar med en lösning. 
 
 [![En skärmbild som visar tjänstrådgivningen ](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 Sammanfattningen av rådgivningen eller incidenten innehåller följande information:
 
 - **Rubrik** – en sammanfattning av problemet.
-- **Tjänst** – Namnet på den aktuella tjänsten.
 - **ID** – En numerisk identifierare för problemet.
+- **Tjänst** – Namnet på den aktuella tjänsten.
+- **Senast uppdaterad** – den senaste gången som meddelandet om tjänstens hälsa uppdaterades.
+- **Beräknad starttid** – den uppskattade tiden då problemet började.
 - **Status** – Hur det här problemet påverkar tjänsten.
-- **Starttid** – tidpunkten då problemet började.
-- **Senast uppdaterad** – den senaste gången som meddelandet om tjänstens hälsa uppdaterades. Vi publicerar ofta meddelanden för att meddela dig om förloppet för att använda en lösning.
-
-Välj rubriken för problemet om du vill visa informationssidan som [](#history) visar mer information om problemet, inklusive historik över alla meddelanden som publicerats medan vi arbetar med en lösning.
+- **Användareffekter** – en kort beskrivning av hur problemet påverkar slutanvändaren.
+- **Alla uppdateringar** – Vi publicerar ofta meddelanden om vilka framsteg som görs för att använda en lösning.
 
 ![En skärmbild som visar information om problemet](../media/service-health-advisory-detail.png)
 
 ### <a name="translate-service-health-details"></a>Översätta information om tjänstens hälsa
 
-Eftersom förklaringar om tjänstens hälsa publiceras i realtid översätts de inte automatiskt till ditt språk, och information om en tjänsthändelse finns endast på engelska. Följ de här stegen om du vill översätta en förklaring:
-
-1. Gå till [Translator](https://www.bing.com/translator/).
-
-2. På sidan **Tjänstens hälsa** väljer du en händelse eller rådgivning. Kopiera texten om problemet under **Visa information**.
-
-3. Klistra in texten i Translator och välj **Översätt**.
+Vi använder maskinöversättning för att automatiskt visa meddelanden på det valda språket. Läs [Översättningar för inlägg i Meddelandecenter](/microsoft-365/admin/manage/language-translation-for-message-center-posts) om du vill ha mer information om hur du anger språk.
 
 ### <a name="definitions"></a>Definitioner
 
@@ -135,17 +132,16 @@ Oftast visas tjänsterna som felfria utan ytterligare information. Om ett proble
 |**Falskt positivt resultat** | Efter en detaljerad undersökning har vi bekräftat att tjänsten är felfri och fungerar som tänkt. Ingen påverkan på tjänsten har observerats eller orsaken till incidenten som uppstod utanför tjänsten. |
 |**Efterrapport av incident har publicerats** | Vi har publicerat en efterhändelserapport för ett specifikt problem som innehåller orsaksinformation och nästa steg för att säkerställa att ett liknande problem inte upprepas. |
 
+### <a name="message-post-types"></a>Posttyper för meddelanden
+
+| Typ | Definition |
+|:-----|:-----|
+|**Snabbuppdatering** | Korta och ofta inkrementella uppdateringar för incidenter med brett påverkan som är tillgängliga för alla kunder. |
+|**Ytterligare information** | De här ytterligare inläggen ger bättre teknisk information och lösningsinformation så att du bättre kan se hur incidenter hanteras. Detta är tillgängligt för klienter som uppfyller samma krav som beskrivs för [Exchange Online,](/microsoft-365/enterprise/microsoft-365-exchange-monitoring?view=o365-worldwide#requirements) |
+
 ### <a name="history"></a>Historik
 
-I Tjänstens hälsa kan du se den aktuella hälsostatusen och visa historik för rådgivningar och incidenter för tjänsten som har påverkat din klientorganisation under de senaste 30 dagarna. Om du vill visa tidigare hälsoläge för alla tjänster väljer **du Visa historik** på sidan med information om problemet.
-
-![Show link to health history](../media/service-health-view-history.png)
-
-En lista över alla meddelanden om tjänstens hälsa som publicerats inom den valda tidsramen visas enligt nedan:
-
-![View service health history](../media/service-health-history.png)
-
-Expandera valfri rad för att visa mer information om problemet.
+I Tjänstens hälsa kan du se den aktuella hälsostatusen och visa historik för rådgivningar och incidenter för tjänsten som har påverkat din klientorganisation under de senaste 30 dagarna. Om du vill visa tidigare hälsoläge för alla tjänster väljer du **Historikvy.**
 
 Mer information om vår utfästelse om drifttid finns [i Transparent drift från Microsoft 365.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Läs om hur DLP i Säkerhets- & efterlevnadscenter fungerar med DLP- och e-postflödesregler (transportregler) i Exchange administrationscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34ddee1c1f0997852b6e59295ab9b630acc3ba3c
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: a7cd4eaafbd334c8886e0e6aa72d8c0e4c53a81e
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177183"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300058"
 ---
 # <a name="how-dlp-works-between-the-microsoft-365-compliance-center-and-exchange-admin-center"></a>Hur DLP fungerar mellan efterlevnadscentret Microsoft 365 och Exchange administrationscenter
 
@@ -47,7 +47,7 @@ Det innebär följande:
   
 - Meddelanden som blockeras av Exchange genomsöks inte av DLP-regler som skapats i Säkerhets- och & säkerhets- och efterlevnadscenter.
 
-- Meddelanden som har satts i Exchange e-postflödesregler eller andra filter körs innan DLP genomsöks inte av DLP
+- Meddelanden som ligger i karantän Exchange genom e-postflödesregler eller andra filter körs innan DLP genomsöks inte av DLP.
     
 - Om en Exchange-e-postflödesregel ändrar ett meddelande på ett sätt som gör att det matchar en DLP-princip i Säkerhets- och efterlevnadscenter för & – som att lägga till externa användare – identifierar DLP-reglerna den här och tillämpar principen efter behov.
     

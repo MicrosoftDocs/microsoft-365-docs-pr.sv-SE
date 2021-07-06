@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276935"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300118"
 ---
 # <a name="device-images"></a>Enhetsbilder
 
@@ -31,7 +31,7 @@ När du beställer en [](device-requirements.md#minimum-requirements)ny enhet fr
 Arbeta direkt med Dell-säljrepresentanten, som ser till att den bild som godkänts av Microsoft Hanterat skrivbord tillämpas på enheter för din beställning. Om du har fler frågor om Dell-enheter, bilden och beställningsprocessen kontaktar du MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP 
-När du beställer nya enheter från HP ska du se till att använda den specifika SKU som listas i avsnittet Ytterligare krav för varje modell som finns på webbplatsen [för Handla Windows 10 Pro-företagsenheter](https://www.microsoft.com/windowsforbusiness/view-all-devices) (filtrera vyn för att visa Microsoft Hanterat skrivbord enheter).
+När du beställer nya enheter från HP ska du se till att använda den specifika SKU som listas i avsnittet Ytterligare krav för varje modell som finns på webbplatsen [för Handla Windows 10 Pro-företagsenheter](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter) (filtrera vyn för att visa Microsoft Hanterat skrivbord enheter).
 
 Om du beställer en enhet från HP som [](customizing.md) har godkänts som undantag men som för närvarande inte visas på sidan Enhetslista begär du att SKU:n används för din modell. Vi arbetar med HP för att hämta den här informationen till dig genom att använda din undantagsbegäran. Du kan också kontakta HP direkt om du har frågor om instruktionerna för enheter och enhetsbeställning genom att använda de här adresserna:
  

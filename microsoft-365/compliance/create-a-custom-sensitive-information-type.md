@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Lär dig hur du skapar, ändrar, tar bort och testar anpassade typer av känslig information för DLP i Säkerhets- & säkerhets- och efterlevnadscenter.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 0f65ba38c75cc1d9886cb4c3013d7f707912f72a
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287545"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300399"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Komma igång med anpassade typer av känslig information
 
@@ -186,7 +186,7 @@ Här finns definitioner och några exempel för tillgängliga ytterligare kontro
 
 
 > [!NOTE]
-> Microsoft 365 Informationsskydd har stöd för språk med dubbla byte-teckenuppsättning för:
+> Microsoft 365 Information Protection har stöd för teckenuppsättningsspråk med dubbla byte i förhandsgranskningen för:
 > - Kinesiska (förenklad)
 > - Kinesiska (traditionell)
 > - Koreanska
@@ -195,7 +195,12 @@ Här finns definitioner och några exempel för tillgängliga ytterligare kontro
 >Stödet är tillgängligt för typer av känslig information. Se [Viktig information gällande stöd i Information Protection för teckenuppsättningar med dubbla byte (förhandsversion)](mip-dbcs-relnotes.md) för mer information.
 
 > [!TIP]
-> Om du vill identifiera mönster som innehåller kinesiska/japanska tecken och single byte-tecken eller för att identifiera mönster som innehåller kinesiska/japanska och engelska definierar du två varianter av nyckelordet eller regex. Om du till exempel vill identifiera ett nyckelord som "机密的document" använder du två varianter av nyckelordet: En med ett blanksteg mellan japansk och engelsk text och en annan utan blanksteg mellan japansk och engelsk text. Nyckelorden som ska läggas till i SIT bör därför vara "机密的 document" och "机密的document". Om du vill hitta frasen "リ京オリンピック2020" bör du använda två varianter. "リ京オリンピック 2020" och "リ京オリンピック2020".
-> När du skapar ett regex med ett bindestreck med dubbla byte eller en punkt med dubbla byte, måste du undvika båda tecknen som ett bindestreck eller punkt i en regex. Här är ett exempel på en regex som referens:
-    - (?<!\d) ([4][0–9] {3} [ \- ?\-\t]*[0-9]{4}
-> Vi rekommenderar att du använder en strängmatchning i stället för en matchning mellan ord i en nyckelordslista.
+> Om du vill identifiera mönster som innehåller kinesiska/japanska tecken och en-byte-tecken eller för att identifiera mönster som innehåller kinesiska/japanska och engelska, definierar du två varianter av nyckelordet eller regex. 
+>
+> Om du till exempel vill identifiera ett nyckelord som "机密的dokument" använder du två varianter av nyckelordet. en med ett blanksteg mellan den japanska och den engelska texten och en annan utan blanksteg mellan den japanska och den engelska texten. Nyckelorden som ska läggas till i SIT ska därför vara "dokumentet "机密的 dokument" och ""机密的dokument". På samma sätt bör två varianter användas för att identifiera frasen "東京オリンピック2020". "東京オリンピック 2020" och "東京オリンピック2020".
+>
+> När du skapar ett regex med ett bindestreck med dubbla byte eller en period med dubbla byte ser du till att undanta båda tecknen som ett av bindestreck eller en punkt i ett regex. Här är ett exempel på regex som referens:
+>
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
+> Vi rekommenderar att du använder en strängmatchning i stället för en ordmatchning i en nyckelordslista.

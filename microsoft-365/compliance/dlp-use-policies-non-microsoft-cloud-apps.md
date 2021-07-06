@@ -1,5 +1,5 @@
 ---
-title: Använda principer för skydd mot dataförlust för molnappar som inte kommer från Microsoft (förhandsversion)
+title: Använda principer för skydd mot dataförlust för molnappar som inte kommer från Microsoft
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du använder dlp-principer för program som inte är Microsoft-molnappar.
-ms.openlocfilehash: 3c3c687bd1362182d35891ed1ebbfae12416d5d4
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226845"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300130"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Använda principer för skydd mot dataförlust för molnappar som inte kommer från Microsoft (förhandsversion)
 
@@ -42,6 +42,12 @@ Innan du börjar använda DLP-principer för andra program än Microsoft-molnapp
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance
 - Microsoft 365 E5 Security
+
+### <a name="permissions"></a>Behörigheter
+Den användare som skapar DLP-principen ska vara:
+- Global administratör
+- Efterlevnadsadministratör
+- Administratör för efterlevnadsdata
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>Förbereda din Cloud App Security miljö
 
@@ -81,7 +87,8 @@ När du skapar en regel i DLP-principen kan du välja en åtgärd för icke-Micr
 
 ![Begränsa appar från tredje part](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
-> [OBS] De DLP-principer som tillämpas på icke-Microsoft-appar Microsoft Cloud App Security. När DLP-principen för en app som inte är en Microsoft-app skapas samma princip automatiskt Microsoft Cloud App Security.
+> [!NOTE]
+> De DLP-principer som tillämpas på icke-Microsoft-appar Microsoft Cloud App Security. När DLP-principen för en app som inte är en Microsoft-app skapas samma princip automatiskt Microsoft Cloud App Security.
 
 Information om hur du skapar och konfigurerar DLP-principer finns [i Skapa testa och finjustera en DLP-princip.](./create-test-tune-dlp-policy.md)
 
