@@ -25,11 +25,6 @@
           href: service-description/device-images.md
         - name: Enhetsnamn
           href: service-description/device-names.md
-        - name: Programenheter
-          href: service-description/device-list.md
-          items:
-            - name: Arkiverade programenheter
-              href: service-description/archived-device-list.md
         - name: Enhetstjänster
           href: service-description/device-services.md
         - name: Enhetsprofiler
