@@ -14,12 +14,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 03d05966401c8f3a8bdcec413e85c9a6d2a3ec5c
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 98e4c80c2e0262712885f1e7a2da82886b2ebe80
+ms.sourcegitcommit: b6e63febe24ef1f1793dfb3ecc5ed41a4e730578
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926577"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53309374"
 ---
 # <a name="evaluate-network-protection"></a>Utvärdera nätverksskydd
 
@@ -40,7 +40,7 @@ Den här artikeln hjälper dig att utvärdera nätverksskydd genom att aktivera 
 
 Aktivera nätverksskydd i granskningsläge för att se vilka IP-adresser och domäner som skulle ha blockerats. Du kan kontrollera att det inte påverkar verksamhetsbaserade appar eller få en uppfattning om hur ofta block uppstår.
 
-1. Skriv **powershell** på Start-menyn, högerklicka på **Windows PowerShell** välj Kör **som administratör**
+1. Skriv **powershell** i Start-menyn, högerklicka på **Windows PowerShell** välj **Kör som administratör**
 2. Ange följande cmdlet:
 
     ```PowerShell
@@ -55,7 +55,7 @@ Aktivera nätverksskydd i granskningsläge för att se vilka IP-adresser och dom
 
 Nätverksanslutningen tillåts och ett testmeddelande visas.
 
-![Exempelmeddelande om att anslutningen är blockerad: IT-administratören orsakade Windows-säkerhet blockera den här nätverksanslutningen. Kontakta din IT-support.](/microsoft-365/security/defender-endpoint/images/np-notif)
+![Exempelmeddelande om att anslutningen är blockerad: IT-administratören orsakade Windows-säkerhet blockera den här nätverksanslutningen. Kontakta din IT-support.](images/np-notif.png)
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Granska nätverksskyddshändelser i Windows Loggboken
 

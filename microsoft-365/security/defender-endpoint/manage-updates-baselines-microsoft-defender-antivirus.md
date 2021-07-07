@@ -13,16 +13,16 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr
+ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 06/23/2021
-ms.openlocfilehash: 88be32a2c1e9204629682ec678f80ab6daf701f4
-ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
+ms.date: 07/06/2021
+ms.openlocfilehash: f64c71501a550aabdf16b9de2d7a5db93e48caef
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105338"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314470"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Hantera Microsoft Defender Antivirus uppdateringar och använda baslinjer
 
@@ -56,7 +56,7 @@ Motoruppdateringar ingår i säkerhetsintelligensuppdateringar och släpps varje
 
 ## <a name="product-updates"></a>Produktuppdateringar
 
-Microsoft Defender Antivirus kräver månatliga uppdateringar [(KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (kallas plattformsuppdateringar) och kommer att få större funktionsuppdateringar tillsammans med Windows 10 versioner. 
+Microsoft Defender Antivirus kräver [månatliga uppdateringar (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) som kallas *plattformsuppdateringar.*
 
 Du kan hantera distributionen av uppdateringar på något av följande sätt: 
 
@@ -67,7 +67,10 @@ Du kan hantera distributionen av uppdateringar på något av följande sätt:
 Mer information finns i [Hantera källor för Microsoft Defender Antivirus säkerhetsuppdateringar.](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 
 > [!NOTE]
-> Månatliga uppdateringar släpps i faser, vilket resulterar i att flera paket visas i [Window Server Update Services.](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+> - Månatliga uppdateringar släpps i faser, vilket resulterar i att flera paket visas i [Window Server Update Services.](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+> - I den här artikeln listas de ändringar som ingår i den breda utgivningskanalen. [Se den senaste versionen av den breda kanalen här](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info). 
+> - Mer information om den gradvisa lanseringsprocessen och mer information om nästa version finns i Hantera den gradvisa lanseringsprocessen [för Microsoft Defender-uppdateringar.](manage-gradual-rollout.md)
+> - Mer information om säkerhetsintelligensuppdateringar finns [i Säkerhetsintelligensuppdateringar för Microsoft Defender Antivirus andra Microsoft-program mot skadlig programvara.](https://www.microsoft.com/wdsi/defenderupdates) 
 
 ## <a name="monthly-platform-and-engine-versions"></a>Månadsplattform och motorversioner
 
@@ -77,8 +80,26 @@ Alla våra uppdateringar innehåller
 - prestandaförbättringar
 - förbättringar av användbarheten. och 
 - integreringsförbättringar (Moln, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
-<br/><br/>
+<br/>
 <details>
+<summary> Juni-2021 (plattform: 4.18.2106.5 | Motor: 1.1.18300.4)</summary>
+
+&ensp;Uppdateringsversion av säkerhetsinformation: **1.343.17.0**  
+&ensp;**Utgiven: 28 juni 2021**  
+&ensp;Plattform: **4.18.2106.5**  
+&ensp;Motor: **1.1.18300.4**  
+&ensp;Supportfas: **Säkerhets- och kritiska uppdateringar**
+    
+### <a name="whats-new"></a>Nyheter
+- Nya kontroller för hantering av den gradvisa utrullningsprocessen av Microsoft Defender-uppdateringar. Se [Hantera den stegvisa införandeprocessen för Microsoft Defender-uppdateringar.](manage-gradual-rollout.md)
+- Förbättring av funktionsövervakningsmotorn
+- Förbättringar av utrullningen av definitioner för program mot skadlig programvara
+- Extended Edge-nätverkshändelseinspektioner
+
+### <a name="known-issues"></a>Kända problem
+Inga kända problem  
+<br/>
+</details><details>
 <summary> Maj-2021 (plattform: 4.18.2105.4 | Motor: 1.1.18200.4)</summary>
 
 &ensp;Uppdateringsversion av säkerhetsinformation: **1.341.8.0**  
@@ -104,21 +125,26 @@ Inga kända problem
     
 ### <a name="whats-new"></a>Nyheter
 - Ytterligare logik för funktionsövervakning
-- Förbättrad identifiering av kernelläge
+- Förbättrad identifiering av kernellägesnyckel
 - Nya kontroller för hantering av den gradvisa utrullningsprocessen för [Microsoft Defender-uppdateringar har lagts till](manage-gradual-rollout.md)
 
 
 ### <a name="known-issues"></a>Kända problem
 Inga kända problem  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Tidigare versionsuppdateringar: Endast teknisk uppgraderingssupport
+
+När en ny paketversion har släppts begränsas stödet för de tidigare två versionerna till endast teknisk support. Versioner som är äldre än de som anges i det här avsnittet och tillhandahålls endast för teknisk uppgraderingssupport. 
+<details>
 <summary> Mars–2021 (plattform: 4.18.2103.7 | Motor: 1.1.18000.5)</summary>
 
 &ensp;Uppdateringsversion av säkerhetsinformation: **1.335.36.0**  
 &ensp;**Utgiven: 2 april 2021**  
 &ensp;Plattform: **4.18.2103.7**  
 &ensp;Motor: **1.1.18000.5**  
-&ensp;Supportfas: **Säkerhets- och kritiska uppdateringar**
+&ensp;Supportfas: **Teknisk uppgraderingssupport (endast)**
     
 ### <a name="whats-new"></a>Nyheter
 
@@ -129,13 +155,7 @@ Inga kända problem
 ### <a name="known-issues"></a>Kända problem
 Inga kända problem  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Tidigare versionsuppdateringar: Endast teknisk uppgraderingssupport
-
-När en ny paketversion har släppts begränsas stödet för de tidigare två versionerna till endast teknisk support. Versioner som är äldre än de som anges i det här avsnittet och tillhandahålls endast för teknisk uppgraderingssupport. 
-<br/><br/>
-<details>
+</details><details>
 <summary> Februari-2021 (Plattform: 4.18.2102.3 | Motor: 1.1.17900.7)</summary>
 
 &ensp;Uppdateringsversion av säkerhetsinformation: **1.333.7.0**  

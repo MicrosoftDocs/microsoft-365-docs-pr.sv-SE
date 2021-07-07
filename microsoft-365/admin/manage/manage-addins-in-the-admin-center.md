@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Läs mer om hur du använder centraliserade tillägg för att distribuera tillägg till användare och grupper i organisationen.
-ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ed9086c77cdf10435bae09f76493af6058d2d758
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636064"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314394"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Hantera tillägg i administrationscentret
 
@@ -121,6 +121,9 @@ Stöd för att stänga Office Store är tillgängligt i följande versioner:
 - Webben – tillgänglig.
     
 Det hindrar inte en administratör från att använda centraliserad distribution till att tilldela ett tillägg från Office Store.
+
+> [!NOTE] 
+> Tillägg som Visio Data visualizer, Bing-kartor och People Graph visas fortfarande i menyfliksområdet, även om en administratör har inaktiverat Store. Om du vill ta bort de här länkarna måste administratörer inaktivera Store via Group Policy Object (GPO).
   
 Du kan förhindra att en användare loggar in med ett Microsoft-konto genom att begränsa inloggning till organisationskontot. Mer information finns i [Identitet, autentisering och auktorisering i Office 2016.](/DeployOffice/security/identity-authentication-and-authorization-in-office)  
 

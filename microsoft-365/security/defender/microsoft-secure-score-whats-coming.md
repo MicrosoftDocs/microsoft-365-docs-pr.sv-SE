@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8880f045202fd1c4374e9cec3076144f81eb68d2
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: 8babc8c5e7464637e29ddacef50c92f252033d26
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657723"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314374"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Vad kommer till Microsoft Secure Score
 
@@ -35,11 +35,16 @@ Microsoft Secure Score hittar du på https://security.microsoft.com/securescore 
 
 Vi kommer att göra några ändringar i framtiden för att [microsoft Secure Score](microsoft-secure-score.md) ska bli en bättre representant för säkerheten och förbättra användbarheten. Ditt poängresultat och högsta möjliga poäng kan komma att ändras.
 
-### <a name="june-2021"></a>Juni 2021
+### <a name="july-2021"></a>Juli 2021
 
-#### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>Ta bort förbättringsåtgärd relaterad till Microsoft Cloud App Security
+#### <a name="add-improvement-action-related-to-microsoft-teams"></a>Lägg till förbättringsåtgärd relaterad till Microsoft Teams
 
-- Använd Cloud App Security för att upptäcka avvikande beteende
+- Begränsa uppringningsanvändare från att kringgå en möteslobby.
+- Begränsa externa deltagares möjlighet att ha kontroll i Teams möte.
+- Hindra anonyma användare från att Teams möten.
+- Kräv att samtalslobbyn konfigureras för Teams möten.
+- Konfigurera vilka användare som tillåts vara närvarande i Teams möten.
+
 
 ## <a name="related-resources"></a>Relaterade resurser
 

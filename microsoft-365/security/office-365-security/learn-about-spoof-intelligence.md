@@ -20,12 +20,12 @@ ms.custom:
 description: Administratörer kan få mer information om förfalskningsinformation i Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a0131266d5830988ed23fc11e01323025aa6d50a
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 0f2e1b59b1140b4ee5b187329dac51557ef4df87
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108529"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314398"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Falska intelligensinsikter i EOP
 
@@ -81,10 +81,9 @@ Resten av den här artikeln förklarar hur du använder förfalskningsinformatio
 
   Mer information finns under [Behörigheter i Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Anteckningar**:
-
-  - Genom att lägga till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna den nödvändiga behörigheten _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
-  - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
+  > [!NOTE]
+  > - Genom att lägga till användare i motsvarande Azure Active Directory-roll i administrationscentret för Microsoft 365 får användarna den nödvändiga behörigheten _och_ behörigheter för andra funktioner i Microsoft 365. Mer information finns i [Om administratörsroller](../../admin/add-users/about-admin-roles.md).
+  > - Rollgruppen **Skrivskyddad organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ger också skrivskyddad åtkomst till funktionen.
 
 - Du aktiverar och inaktiverar förfalskningsinformation i principer för nätfiske i EOP och Microsoft Defender för Office 365. Förfalskningsinformation är aktiverat som standard. Mer information finns i Konfigurera principer för skydd [mot nätfiske i EOP](configure-anti-phishing-policies-eop.md) eller Konfigurera principer för skydd mot nätfiske [i Microsoft Defender för Office 365.](configure-mdo-anti-phishing-policies.md)
 
@@ -92,9 +91,9 @@ Resten av den här artikeln förklarar hur du använder förfalskningsinformatio
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Öppna förfalskningsinformationsinsikten i Microsoft 365 Defender portalen
 
-1. I Microsoft 365 Defender-portalen går du till avsnittet **Principer för &-&** e-& principer för hot mot \>  \>  \>  \> **nätfiske.**
+1. I Microsoft 365 Defender-portalen går du till **E-& för** samarbete & principer för säkerhet mot hot på sidan \>  \>  \> **Klientorganisationslistor över tillåtna/blockerade.**
 
-2. På sidan **Mot nätfiske** ser förfalskningsinformation ut så här:
+2. På sidan **Listor över tillåtna/blockerade** klientorganisation ser förfalskningsinformation ut så här:
 
    ![Spoof intelligence-information på sidan Policy mot nätfiske](../../media/m365-sc-spoof-intelligence-insight.png)
 

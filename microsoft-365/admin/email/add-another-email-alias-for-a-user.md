@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Läs om hur du kan ha mer än en e-postadress, ett så kallat e-postalias, kopplat till ditt Microsoft 365 för företag-konto. '
-ms.openlocfilehash: ec5bc69a42c5183413f11649b7d7ec6baaf40b01
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: e6eac45c3ade3fd737f93c88c29b56ccd497212e
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572111"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314362"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Lägga till ytterligare ett e-postalias för en användare
   
@@ -70,7 +70,7 @@ Du måste ha [administratörsbehörighet för](../add-users/about-admin-roles.md
     Användaren har nu en primär adress och ett alias. Till exempel skickas all e-post som skickas till Erna Hanssons primära adress, Eliza@NodPublishers.com, och hennes alias, Sales@NodPublishers.com, till Ernas inkorg.
     
   
-7. **När användaren svarar beror *Av-adressen* på hennes egen Outlook klient. Outlook på webben använder aliaset som e-postmeddelandet togs emot från (vi kallar detta ping-principle). Outlook datorn kommer att använda hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet Outlook datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
+7. **När användaren svarar beror *Av-adressen* på hennes egen Outlook klient. Outlook på webben du använder alias som e-postmeddelandet togs emot från (vi kallar det för ping-principle). Outlook datorn kommer att använda hennes primära e-postalias.** Anta till exempel att ett meddelande skickas till Sales@NodPublishers.com och kommer till Ernas inkorg. När Erna svarar på meddelandet Outlook datorn visas hennes primära e-postadress Eliza@NodPublishers.com, inte Sales@NodPublishers.com.
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>Fick du meddelandet "Det hittades ingen parameter som matchar parameternamnet E-postadresser"?
 
@@ -83,7 +83,7 @@ Om du har köpt prenumerationen från GoDaddy eller från en annan partner och v
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Skicka enkelt e-post från proxyadressen
 
-En ny funktion lanseras i april 2021 som gör att användare enkelt kan skicka från sina alias när de Outlook på webben. När funktionen distribueras till ett innehavaradministratör som använder cmdleten får användare inom innehavarorganisationen tillgång till en lista med kryssrutor där varje post motsvarar ett alias i `Set-OrganizationConfig -SendFromAliasEnabled $true` Outlook inställningar. När du väljer ett alias visas det i listrutan Från i formuläret Skriv.
+En ny funktion lanseras i juli 2021 som gör att användare enkelt kan skicka från sina alias när de använder Outlook på webben. När funktionen distribueras till ett innehavaradministratör som använder cmdleten får användare inom innehavarorganisationen tillgång till en lista med kryssrutor där varje post motsvarar ett alias i `Set-OrganizationConfig -SendFromAliasEnabled $true` Outlook inställningar. När du väljer ett alias visas det i listrutan Från i formuläret Skriv.
   
 ## <a name="related-content"></a>Relaterat innehåll
 

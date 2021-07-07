@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286963"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314410"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Introducera Windows 10 enheter med grupprincip 
 
@@ -211,7 +211,7 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
 
 7. Markera **Kör om användaren är inloggad eller inte** och markera **kryssrutan** Kör med högst behörighet.
 
-8. Gå till fliken **Åtgärder** och klicka på **Nytt...**. Kontrollera att **Starta ett program** är markerat i **fältet** Åtgärd. Ange filnamn och plats för den delade filen *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd.*
+8. Gå till fliken **Åtgärder** och klicka på **Nytt...**. Kontrollera att **Starta ett program** är markerat i **fältet** Åtgärd. Ange NetBIOS sökvägen till den delade *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd-filen.*
 
 9. Klicka **på OK** och stäng alla öppna GPMC-fönster.
 
