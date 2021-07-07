@@ -380,7 +380,7 @@ ms.locfileid: "53226437"
 7. <span data-ttu-id="3afa9-599">Om du vill importera en lista över användare som ska läggas till i principerna väljer du **Importera** till importera en .csv-fil (kommaavgränsade värden).</span><span class="sxs-lookup"><span data-stu-id="3afa9-599">To import a list of users to add to the policies, select **Import** to import a .csv (comma-separated values) file.</span></span> <span data-ttu-id="3afa9-600">Filen måste ha följande format och du måste lista användarhuvudnamn i filen:</span><span class="sxs-lookup"><span data-stu-id="3afa9-600">The file must be in the following format and you must list the user principal names in the file:</span></span>
 
     ```csv
-    user principal name
+    användarhuvudnamn
     user1@domain.com
     user2@domain.com
     ```
