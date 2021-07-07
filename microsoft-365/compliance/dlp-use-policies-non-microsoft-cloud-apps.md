@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du använder dlp-principer för program som inte är Microsoft-molnappar.
-ms.openlocfilehash: fbba87fc5bb3bbca7e67ba374e202098a22f4a5c
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 4bda45a6da6b9626391da37eb9a806b3308c5e7f
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300130"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322323"
 ---
-# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Använda principer för skydd mot dataförlust för molnappar som inte kommer från Microsoft (förhandsversion)
+# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>Använda principer för skydd mot dataförlust för molnappar som inte kommer från Microsoft
 
 Principer för skydd mot dataförlust (DLP) för icke-Microsoft-molnappar är en del Microsoft 365 DLP-paketet med funktioner. med dessa funktioner kan du identifiera och skydda känsliga objekt i Microsoft 365 tjänster. Mer information om alla Microsoft DLP-erbjudanden finns i [Läs mer om skydd mot dataförlust.](dlp-learn-about-dlp.md)
 

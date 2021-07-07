@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratörer kan aktivera stöd för känslighetsetiketter för Word, Excel och PowerPoint filer i SharePoint och OneDrive.
-ms.openlocfilehash: 08ea7c88fffebd4466d81ca18f273281ff74c06a
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 67aa69ef8505290b6fde47c4e523a09870312b97
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286555"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322239"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivera känslighetsetiketter för Office-filer i SharePoint och OneDrive
 
@@ -241,7 +241,7 @@ Mer information om hur du använder hanterade egenskaper [finns i Hantera söksc
 
 ## <a name="remove-encryption-for-a-labeled-document"></a>Ta bort kryptering för ett etiketterat dokument
 
-Det kan hända sällsynta tillfällen när en SharePoint administratör behöver ta bort kryptering från ett dokument som lagras i SharePoint. Alla användare som [](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) har behörighetshanteringsanvändningen för Export eller Fullständig kontroll tilldelat till sig för dokumentet kan ta bort kryptering som tillämpats av Azure Rights Management-tjänsten från Azure Information Protection. Till exempel kan användare med någon av dessa användningsrättigheter ersätta en etikett som tillämpar kryptering med en etikett utan kryptering. En superanvändare [kan också ladda](/azure/information-protection/configure-super-users) ned filen och spara en lokal kopia utan kryptering.
+Det kan hända sällsynta tillfällen när en SharePoint administratör behöver ta bort kryptering från ett dokument som lagras i SharePoint. Alla användare som [](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) har behörighetshanteringsanvändningen för Export eller Fullständig kontroll tilldelat till sig för dokumentet kan ta bort kryptering som tillämpats av Azure Rights Management-tjänsten från Azure Information Protection. Till exempel kan användare med någon av dessa användningsrättigheter ersätta en etikett som tillämpar kryptering med en etikett utan kryptering. En [superanvändare](/azure/information-protection/configure-super-users) kan också ladda ned filen och spara en lokal kopia utan kryptering.
 
 Alternativt kan en global administratör eller [SharePoint-administratör](/sharepoint/sharepoint-admin-role) köra cmdleten [Unlock-SPOSensitivityLabelEncryptedFile,](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) som tar bort både känslighetsetiketten och krypteringen. Den här cmdleten körs även om administratören inte har åtkomstbehörighet till webbplatsen eller filen, eller om Azure Rights Management-tjänsten inte är tillgänglig.
 

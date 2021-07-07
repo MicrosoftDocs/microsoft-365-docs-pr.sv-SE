@@ -1,0 +1,62 @@
+### YamlMime:Landing
+title: Testbas för Microsoft 365 dokumentation
+summary: Testbas för Microsoft 365 är en Azure-tjänst som underlättar datadriven testning av program. Genom att utnyttja data och molnet kan IT-personal utnyttja intelligenta tester från var som helst i världen. Det hjälper dig att testa dina program utan besvär, tids åtagande och utgifter för att konfigurera och underhålla komplexa testmiljöer. Viktigast av allt är att den ger dig tillgång till förhandsuppdateringar Windows på säkra virtuella maskiner och förstklassig information för dina program.
+metadata:
+  title: Testbas för M365-dokumentation
+  description: Testbas för Microsoft 365 är en Azure-tjänst som underlättar datadriven testning av program. Genom att utnyttja data och molnet kan IT-personal utnyttja intelligenta tester från var som helst i världen.
+  ms.service: service
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: v-zhifufeng
+  ms.author: v-zhifufeng
+  ms.date: 03/29/2021
+  ms.openlocfilehash: 3833e05eea8f8598d228e261734fedb1b0cf2647
+  ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+  ms.translationtype: MT
+  ms.contentlocale: sv-SE
+  ms.lasthandoff: 07/07/2021
+  ms.locfileid: "53323038"
+landingContent:
+- title: Om testbas
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Vad är testbas?
+      url: overview.md
+  - linkListType: get-started
+    links:
+    - text: Skapa testbaskonto
+      url: createAccount.md
+  - linkListType: tutorial
+    links:
+    - text: additional-resources
+      url: faq.md
+- title: Komma igång
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Skapa testbaskonto
+      url: createAccount.md
+    - text: Upload ditt program
+      url: uploadApplication.md
+    - text: Upload dina binärfiler
+      url: binaries.md
+    - text: Ange testuppgifter
+      url: testtask.md
+    - text: Välj testalternativ
+      url: testoptions.md
+    - text: Granska dina val
+      url: review.md
+    - text: Riktlinjer för testpaket
+      url: contentguideline.md
+    - text: Minnes regressionsanalys
+      url: memory.md
+    - text: CPU-regressionsanalys
+      url: cpu.md
+- title: Hämta referenser
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Vanliga frågor
+      url: faq.md

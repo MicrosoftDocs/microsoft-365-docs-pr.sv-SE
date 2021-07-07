@@ -18,19 +18,16 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65edf54ea0bf5cb0a0210dd306db07c756149f65
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062128"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322431"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Förhandsversionsfunktioner i Microsoft Defender för slutpunkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
->[!IMPORTANT]
->Förhandsversionerna tillhandahålls utan ett servicenivåavtal och det rekommenderas inte för produktionsarbetsbelastningar. Vissa funktioner kanske inte stöds eller kan ha begränsade funktioner.
 
 **Gäller för:**
 - [Microsoft Defender för Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -47,6 +44,19 @@ Lär dig mer om nya funktioner i förhandsversionen av Defender för slutpunkt o
 >Få ett meddelande när sidan uppdateras genom att kopiera och klistra in följande URL i din feedläsare: `/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 Mer information om nya funktioner som är allmänt tillgängliga finns i [Vad är nytt i Defender för slutpunkt.](whats-new-in-microsoft-defender-atp.md)
+
+ ## <a name="what-you-need-to-know"></a>Det här behöver du veta
+
+När du arbetar med funktioner i offentlig förhandsversion kan dessa funktioner:
+
+- Kan ha begränsade eller begränsade funktioner. Funktionen kan till exempel bara användas på en plattform.
+- Vanligtvis går vi igenom funktionsändringar innan de blir allmänt tillgängliga (GA).
+- Microsoft har fullständigt stöd.
+- Kan bara vara tillgängligt i vissa geografiska regioner eller molnmiljöer. Funktionen kanske till exempel inte finns i myndighetsmoln.
+- Enskilda funktioner i förhandsversionen kan ha fler begränsningar för användning och support. I så fall antecknas informationen vanligtvis i funktionsdokumentationen.
+- Förhandsversionerna tillhandahålls med en standardsupportnivå och det rekommenderas för produktionsbelastningar. 
+
+
 
 ## <a name="turn-on-preview-features"></a>Aktivera förhandsgranskningsfunktioner
 

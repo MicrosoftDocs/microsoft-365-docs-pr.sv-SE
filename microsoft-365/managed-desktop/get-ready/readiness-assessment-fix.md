@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 866d1a2de820fca4c66537583dc5f55098149931
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286891"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327017"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Åtgärda problem som hittats av verktyget för bedömning av beredskap
 
@@ -212,6 +212,13 @@ Du har en säkerhetsbaslinjeprofil som riktar sig till alla användare, alla enh
 
 Kontrollera att eventuella principer för säkerhetsbaslinje som du har exkluderat Microsoft Hanterat skrivbord enheter. Instruktioner finns i Använda [säkerhetsbaslinjer för att konfigurera Windows 10 enheter i Intune.](/mem/intune/protect/security-baselines) Under registreringen används en ny säkerhetsbaslinje för alla Microsoft Hanterat skrivbord enheter. Gruppen **Moderna workplace-enheter – Alla** Azure AD är en dynamisk grupp som vi skapar när du registrerar dig i Microsoft Hanterat skrivbord, så du måste gå tillbaka och utesluta den här gruppen efter registreringen. 
 
+### <a name="unlicensed-admins"></a>Olicensierade administratörer
+
+Den här inställningen måste vara aktiverad för att undvika felet "brist på behörigheter" när vi interagerar med Azure AD-organisationen. 
+
+**Inte klar**
+
+**Tillåt åtkomst till olicensierade administratörer** ska vara aktiverat. Anvisningar finns i Förutsättningar [för gästkonton.](/microsoft-365/managed-desktop/get-ready/guest-accounts)
 
 ### <a name="windows-apps"></a>Windows appar
 

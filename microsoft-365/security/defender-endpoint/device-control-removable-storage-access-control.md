@@ -16,18 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0b0f7c5a4a75fdc80509dbc02a43d28f7c93fd7c
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229581"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327053"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender för endpoint-enhetskontroll, flyttbar Storage access-kontroll
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Med Microsoft Defender för Endpoint Device Control Storage och Access Control kan du göra följande:
+
 - granska, tillåta eller förhindra läsning, skriva eller köra åtkomst till flyttbara lagringsmedia med eller utan undantag
 
 |Behörighet |Behörighet  |
@@ -47,6 +48,8 @@ Distribuera Flyttbara Storage Access Control på Windows 10-enheter som har vers
 
 - **4.18.2105** eller senare: Lägg till stöd för jokertecken för HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, kombinationen av en specifik användare på en specifik dator, removeable SSD (en SanDisk Extreme SSD)/USB Attached MORD (UAS) stöd
 
+- **4.18.2107** eller senare: Lägga till stöd för Windows Portable Device (WPD) (för mobila enheter, till exempel surfplattor)
+
 :::image type="content" source="images/powershell.png" alt-text="PowerShell-gränssnittet":::
 
 > [!NOTE]
@@ -62,15 +65,14 @@ Du kan använda följande egenskaper till att skapa en flyttbar lagringsgrupp:
 
 **Egenskapsnamn: DescriptorIdList**
 
-1. Beskrivning: Lista över de enhetsegenskaper du vill använda för gruppen.
-Ange de enhetsegenskaper du vill använda i gruppen.
+2. Beskrivning: Lista över de enhetsegenskaper du vill använda för gruppen.
 Mer information om varje **enhetsegenskap finns** i avsnittet Enhetsegenskaper ovan.
 
-1. Alternativ:
-
-    - Primärt ID
+3. Alternativ:
+    - PrimaryId
         - FlyttbaraMediaDevices
         - CdRomDevices
+        - WpdDevices
     - DeviceId
     - HardwareId
     - InstancePathId: InstancePathId är en sträng som unikt identifierar enheten i systemet, till exempel USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. Numret på slutet (till exempel&**0**) representerar den tillgängliga platsen och kan ändras från enhet till enhet. För bästa resultat bör du använda ett jokertecken i slutet. Exempel: USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
@@ -87,7 +89,7 @@ Mer information om varje **enhetsegenskap finns** i avsnittet Enhetsegenskaper o
 
 1. Beskrivning: När det finns flera enhetsegenskaper som används i DescriptorIDList definierar MatchType relationen.
 
-1. Alternativ:
+2. Alternativ:
 
     - MatchAll: Attributen under DescriptorIdList blir **och relationen;** Om administratören till exempel placerar DeviceID och InstancePathID för varje ansluten USB kontrollerar systemet om USB-minnet uppfyller båda värdena.
     - MatchAny: Attributen under DescriptorIdList blir **Eller relationen;** Om administratören till exempel placerar DeviceID och InstancePathID, för varje anslutet USB-minne, kommer systemet att upprätthålla tillämpning så länge USB-minnet har antingen ett identiskt **DeviceID-** eller **InstanceID-värde.**
@@ -100,9 +102,9 @@ Här är egenskaperna för principegenskaper för åtkomstkontroll:
 
 **Egenskapsnamn: IncludedIdList**
 
-2. Beskrivning: De grupper som principen ska tillämpas på. Om flera grupper läggs till tillämpas principen på alla media i alla grupperna.
+1. Beskrivning: De grupper som principen ska tillämpas på. Om flera grupper läggs till tillämpas principen på alla media i alla grupperna.
 
-3. Alternativ: Grupp-ID/GUID måste användas i den här instansen.
+2. Alternativ: Grupp-ID/GUID måste användas i den här instansen.
 
 I följande exempel visas användningen av GroupID:
 
@@ -135,11 +137,11 @@ När det finns konflikttyper för samma media används den första i principen i
 
 **Egenskapsnamn: Sid**
 
-Beskrivning: Definierar om den här principen ska användas i en viss användare eller användargrupp. en post kan ha maximalt en Sid och en post utan sid innebär att principen tillämpas på datorn.
+Beskrivning: Lokal dators sid eller AD-objektets sid definierar om den här principen ska användas för en viss användare eller användargrupp. en post kan ha maximalt en Sid och en post utan sid innebär att principen tillämpas på datorn.
 
 **Egenskapsnamn: DatorSid**
 
-Beskrivning: Definierar om den här principen ska användas i en viss dator eller datorgrupp. En post kan ha maximalt en ComputerSid och en post utan ComputerSid innebär att principen tillämpas på datorn. Om du vill använda en Post för en viss användare och en viss dator lägger du till både Sid och DatorSid i samma Post.
+Beskrivning: Sid på den lokala datorn eller sid sid för AD-objektet, definierar om den här principen ska användas i en viss dator eller datorgrupp; En post kan ha maximalt en ComputerSid och en post utan ComputerSid innebär att principen tillämpas på datorn. Om du vill använda en Post för en viss användare och en viss dator lägger du till både Sid och DatorSid i samma Post.
 
 **Egenskapsnamn: Alternativ**
 
@@ -322,6 +324,7 @@ DeviceEvents
 :::image type="content" source="images/block-removable-storage.png" alt-text="Skärmen visar hur det flyttbara lagringsutrymmet blockeras":::
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor och svar
+
 **Vad är begränsningen för flyttbara lagringsmedia för det maximala antalet AMERIKANSKABB?**
 
 Vi har validerat en USB-grupp med 100 000 media – upp till 7 MB i storlek. Principen fungerar i både Intune och GPO utan prestandaproblem.
@@ -347,4 +350,3 @@ DeviceFileEvents
 | summarize dcount(DeviceName) by PlatformVersion // check how many machines are using which platformVersion
 | order by PlatformVersion desc
 ```
-

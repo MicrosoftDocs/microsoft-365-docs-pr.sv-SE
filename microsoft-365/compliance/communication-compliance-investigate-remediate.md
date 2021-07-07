@@ -18,20 +18,20 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 170955ebba633c1749423e11bb34f7bfbdba1f07
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: e24b59958e5ef933b42294636ce6a1cc11528bb8
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684117"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322251"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Undersöka och åtgärda aviseringar för kommunikationsefterlevnad
 
-När du har konfigurerat principer för kommunikationsefterlevnad kommer du att få aviseringar i Microsoft 365 efterlevnadscenter för meddelandeproblem som matchar dina policyvillkor. Följ arbetsflödesanvisningarna här för att undersöka och åtgärda aviseringsproblem.
+När du har konfigurerat principer för kommunikationsefterlevnad kommer du att få aviseringar i Microsoft 365 Efterlevnadscenter om meddelandeproblem som matchar dina policyvillkor. Följ arbetsflödesanvisningarna här för att undersöka och åtgärda aviseringsproblem.
 
 ## <a name="investigate-alerts"></a>Undersöka aviseringar
 
-Det första steget för att undersöka problem som upptäckts av dina principer är att granska aviseringar om kommunikationsefterlevnad i Microsoft 365 efterlevnadscenter. Det finns flera områden i området för kommunikationsefterlevnad för att hjälpa dig att snabbt undersöka aviseringar, beroende på hur du föredrar att visa aviseringsgrupperingar:
+Det första steget för att undersöka problem som upptäckts av dina principer är att granska aviseringar om kommunikationsefterlevnad i Microsoft 365 Efterlevnadscenter. Det finns flera områden i området för kommunikationsefterlevnad för att hjälpa dig att snabbt undersöka aviseringar, beroende på hur du föredrar att visa aviseringsgrupperingar:
 
 - **Sida för policy för** kommunikation som efterlevs: När du loggar in med autentiseringsuppgifter för ett administratörskonto i Microsoft 365-organisationen väljer du Kommunikationsefterlevnad för att visa sidan policy för [https://compliance.microsoft.com](https://compliance.microsoft.com) **kommunikation.**  På den här sidan visas principer för kommunikationsefterlevnad som Microsoft 365 organisationen har, samt länkar till rekommenderade principmallar. Varje princip som listas innehåller antalet aviseringar som behöver granskas, antalet eskalerade och lösta objekt, status för principen samt datum och tid för den senaste principsökningen. Om du väljer en princip visas alla väntande aviseringar för matchningar till principen, väljer du en specifik avisering för att starta sidan med principinformation och startar åtgärdsåtgärder.
 - **Varningar**: Navigera till aviseringar **om**  >  **kommunikationsefterlevnad** för att visa de senaste 30 dagarna av aviseringar grupperade efter principmatchningar. I den här vyn kan du snabbt se vilka principer för kommunikationsefterlevnad som genererar de mest varningar som ordnas efter allvarlighetsgrad. Om du vill starta åtgärdsåtgärder väljer du den princip som är kopplad till aviseringen för att starta **sidan Principinformation.** Från sidan **Principinformation** kan du granska en sammanfattning  av aktiviteterna på sidan Översikt, granska och agera på varningsmeddelanden på sidan Väntande eller granska **historiken** för stängda aviseringar på sidan **Löst.**
@@ -47,7 +47,7 @@ En fullständig lista över filter och fältinformation finns i [Filter](communi
 
 1. Logga in [https://compliance.microsoft.com](https://compliance.microsoft.com) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
 
-2. Gå till Microsoft 365 i **kompatibilitetscentret för kommunikation.**
+2. I Microsoft 365 Efterlevnadscenter du till **Kommunikationsefterlevnad.**
 
 3. Välj fliken **Principer** och välj sedan en princip för undersökning och dubbelklicka för att öppna **sidan** Princip.
 
@@ -71,7 +71,7 @@ Principer för kommunikationsefterlevnad söker automatiskt igenom och förgrupp
 
 1. Logga in [https://compliance.microsoft.com](https://compliance.microsoft.com) med autentiseringsuppgifter för ett administratörskonto i Microsoft 365 organisation.
 
-2. Gå till Microsoft 365 i **kompatibilitetscentret för kommunikation.**
+2. I Microsoft 365 Efterlevnadscenter du till **Kommunikationsefterlevnad.**
 
 3. Välj fliken **Principer** och välj sedan en princip för undersökning och dubbelklicka för att öppna **sidan** Princip.
 
@@ -93,7 +93,7 @@ Oavsett var du börjar granska aviseringar eller filtreringen du konfigurerar ä
 
 ### <a name="step-1-examine-the-message-basics"></a>Steg 1: Undersöka grunderna i meddelandet
 
- Ibland är det uppenbart för källan eller ämnet att ett meddelande kan åtgärdas omedelbart. Det kan vara så att meddelandet är fel eller felaktigt matchat med en princip och att det bör matchas som en falsk positiv inställning. Välj kontrollen **Falsk positiv för** att omedelbart lösa aviseringen och ta bort den från den väntande aviseringskön. Från käll- eller avsändarinformationen kanske du redan vet hur meddelandet ska dirigeras eller hanteras under dessa omständigheter. Överväg att använda **kontrollerna Tagga** som eller **Eskalera** för att tilldela en tagg till tillämpliga meddelanden eller skicka meddelanden till en för utsedd granskare.
+ Ibland är det uppenbart för källan eller ämnet att ett meddelande kan åtgärdas omedelbart. Det kan vara så att meddelandet är felstavat eller felaktigt matchat med en princip och att det bör lösas som felaktigt klassificerat. Välj kontrollen **Rapportera som felaktig för att** dela felklassificerat innehåll med Microsoft, lös omedelbart aviseringen och ta bort från den väntande aviseringskön. Från käll- eller avsändarinformationen kanske du redan vet hur meddelandet ska dirigeras eller hanteras under dessa omständigheter. Överväg att använda **kontrollerna Tagga** som eller **Eskalera** för att tilldela en tagg till tillämpliga meddelanden eller skicka meddelanden till en för utsedd granskare.
 
 ![Kontroller för åtgärder för kommunikationsefterlevnad](../media/communication-compliance-remediation-controls.png)
 
@@ -107,7 +107,7 @@ När du har gått igenom grunderna i meddelandet är det dags att öppna ett med
 - **Konversationsvyn (förhandsgranskning)**: Microsoft Teams-chattmeddelanden visas i den här vyn upp till fem meddelanden före och efter ett varningsmeddelande som hjälper granskare att se aktiviteten i konversationens sammanhang. Det här sammanhanget hjälper granskare att snabbt utvärdera meddelanden och fatta mer välgrundade beslut om meddelandeupplösning. Tilläggen till konversationer i realtid visas, inklusive alla infogade bilder, emojier och dekaler som finns i Teams. Bifogade filer, bilder eller text i meddelanden visas inte. Aviseringar visas automatiskt för meddelanden som har redigerats eller för meddelanden som har tagits bort från konversationsfönstret. När ett meddelande matchas behålls inte de tillhörande konversationsmeddelandena med det lösta meddelandet. Konversationsmeddelanden är tillgängliga i upp till 60 dagar efter att aviseringsmeddelandet har identifierats.
 - **Användarhistorik:** Vyn Användarhistorik visar alla andra aviseringar som genereras av en princip för kommunikationsefterlevnad för användaren som skickar meddelandet.
 - **Mönster som upptäckts** meddelande: Många trakasserings- och mobbningsåtgärder över tid och innebär att instanser av samma beteende upprepas av en användare. Det *mönster som upptäckts* aviseringen visas i aviseringsinformationen och uppmärksammar aviseringen. Identifiering av mönster per princip och utvärderar beteende under de senaste 30 dagarna när minst två meddelanden skickas till samma mottagare av en avsändare. Varningar och granskare kan använda det här meddelandet för att identifiera upprepat beteende för att utvärdera aviseringen efter behov.
-- **Visa översättningsvyn:** I den här vyn konverteras automatiskt  aviseringstexten till det språk som har konfigurerats i inställningen För visningsspråk i Microsoft 365-prenumerationen för varje granskare. Översättningsvyn hjälper till att bredda stödet för organisationer med flerspråkiga användare och eliminerar behovet av ytterligare översättningstjänster utanför granskningsprocessen för kommunikationsefterlevnad. Med Microsoft Translate-tjänster kan du, om det behövs, stänga av och stänga av översättningsvyn och använda en mängd olika språk. En fullständig lista över språk som stöds finns i [Microsoft Translator språk.](https://www.microsoft.com/translator/business/languages/) Språk som visas *Translator språklistan* stöds i vyn Översätt.
+- **Visa översättningsvyn:** I den här vyn konverteras automatiskt  aviseringstexten till det språk som har konfigurerats i inställningen För visningsspråk i Microsoft 365-prenumerationen för varje granskare. Översättningsvyn hjälper till att bredda stödet för organisationer med flerspråkiga användare och eliminerar behovet av ytterligare översättningstjänster utanför granskningsprocessen för kommunikationsefterlevnad. Med Microsoft Translate-tjänster kan du, om det behövs, stänga av och stänga av översättningsvyn och använda en mängd olika språk. En fullständig lista över språk som stöds finns i [Microsoft Translator Språk.](https://www.microsoft.com/translator/business/languages/) Språk som visas *Translator språklistan* stöds i vyn Översätt.
 
     ![Meddelandevykontroller för kommunikationsefterlevnad](../media/communication-compliance-message-views.png)
 
@@ -116,7 +116,7 @@ När du har gått igenom grunderna i meddelandet är det dags att öppna ett med
 Nu när du har granskat meddelandets information kan du välja flera åtgärder:
 
 - **Lös:** Om du **väljer** kontrollen Lös  tas meddelandet omedelbart bort från kön väntande aviseringar och inga ytterligare åtgärder kan vidtas på meddelandet. Genom att **välja Lös** har du i princip stängt aviseringen utan ytterligare klassificering och det går inte att öppna den igen för ytterligare åtgärder. Alla lösta meddelanden visas på fliken **Löst.**
-- **Falskt positivt** resultat: Du kan alltid lösa ett meddelande som en felaktig positiv inställning när som helst under arbetsflödet för meddelandegranskning. Falsk positiv innebär att aviseringen inte kunde åtgärdas eller att aviseringen genererades felaktigt av aviseringsprocessen. Meddelandet kan inte öppnas igen och alla falska positiva meddelanden visas på fliken **Löst.**
+- **Rapportera som felaktigt (förhandsversion)**: Du kan alltid lösa ett meddelande som felaktigt klassificerat när som helst under arbetsflödet för meddelandegranskning. Felaktig klassificering anger att aviseringen inte kunde hanteras eller att aviseringen genererades felaktigt av aviseringsprocessen och eventuella utbildare. När du löser objektet som felaktigt klassificerat skickas meddelandeinnehåll, bifogade filer och meddelandets ämne (inklusive metadata) till Microsoft för att förbättra utbildare. Data som skickas till Microsoft innehåller inte information som kan identifiera eller användas för att identifiera användare i din organisation. Ytterligare åtgärder kan inte vidtas på meddelandet och alla felklassificerade meddelanden visas på fliken **Löst.**
 - **Power Automate (förhandsversion)**: Använd ett Power Automate för att automatisera processuppgifter för ett varningsmeddelande. Som standard inkluderar kommunikationsefterlevnad meddelandehanteraren när en användare har en aviseringsflödesmall för kommunikationsefterlevnad som granskare kan använda för att automatisera meddelandeprocessen för användare med meddelandeaviseringar.  Mer information om hur du skapar och hanterar Power Automate flöden i kommunikationsefterlevnad finns i artikeln Om funktioner för [kommunikationsefterlevnad.](communication-compliance-feature-reference.md#power-automate-flows)
 - **Tagga** som: Tagga meddelandet som *kompatibelt,*  *icke-kompatibelt* eller som tveksamt i enlighet med organisationens principer och standarder. Om du lägger till taggar och kommentarer som taggar kan du mikrofiltreringsprincipaviseringar för eskalering eller som en del av andra interna granskningsprocesser. När taggningen är klar kan du också välja att lösa meddelandet och flytta det från den väntande granskningskön.
 - **Meddela:** Du kan använda kontrollen **Meddela** för att tilldela en anpassad meddelandemall till aviseringen och skicka ett varningsmeddelande till användaren. Välj lämplig meddelandemall som  konfigurerats i området  Inställningar för kommunikationsefterlevnad och välj Skicka för att skicka en påminnelse via e-post till den användare som har skickat meddelandet och för att lösa problemet.

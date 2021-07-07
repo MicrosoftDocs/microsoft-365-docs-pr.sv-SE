@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2bf40f5b1d89b7a232f86c1e186ca660db9f8bbc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 470b33ca3201151fb164640eeb93c50daf7bb458
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227289"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322371"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Läs mer om kommunikationsefterlevnad i Microsoft 365
 
@@ -79,7 +79,7 @@ Kommunikationsefterlevnad i Microsoft 365 erbjuder flera viktiga funktioner som 
 Med intelligenta anpassningsbara mallar för kommunikationsefterlevnad kan du använda maskininlärning för att intelligent identifiera kommunikationsbrott i organisationen.
 
 - **Anpassningsbara förkonfigurerade mallar:** Nya principmallar hjälper dig att hantera de vanligaste kommunikationsriskerna. Det går nu snabbare att skapa och följa upp nya policyer med fördefinierade mallar för skydd av trakasserier och anstötligt språk, känslig information, intressekonflikter och regelefterlevnad.
-- **Nytt stöd för** maskininlärning: Inbyggda hot, [](classifier-get-started-with.md) trakasserier, svordomar och bildklassare hjälper till att minska antalet falska positiva resultat i genomsökta meddelanden, vilket sparar granskares tid under undersökning och åtgärder.
+- **Nytt stöd för** maskininlärning : Inbyggda hot, hot, trakasserier, svordomar och bildklassificerare hjälper till att minska det felklassificerade innehållet i skannade meddelanden, spara granskarnas tid under undersökningen och åtgärdsprocessen. [](classifier-get-started-with.md)
 - **Bättre villkorsverktyget:** Konfigurering av principvillkor förenklas nu till en enda, integrerad miljö i principguiden, vilket minskar förvirringen i hur villkoren tillämpas för principer.
 
 ### <a name="flexible-remediation-workflows"></a>Flexibla arbetsflöden för åtgärder
@@ -154,11 +154,11 @@ I det här steget kan du titta närmare på de problem som identifierats när du
 
 Nästa steg är att åtgärda problem med kommunikationsefterlevnad som du har undersökt med hjälp av följande alternativ:
 
-- **Lös:** När du har granskat ett problem kan du åtgärda det genom att åtgärda aviseringen. När du löser en avisering tas den bort från den väntande aviseringskön, och åtgärden bevaras som en post i den lösta kön för matchande princip. Aviseringar matchas automatiskt när aviseringen markeras som en falsk positiv markering, ett meddelande skickas till en användare om aviseringen eller ett nytt ärende för aviseringen öppnas.
+- **Lös:** När du har granskat ett problem kan du åtgärda det genom att åtgärda aviseringen. När du löser en avisering tas den bort från den väntande aviseringskön, och åtgärden bevaras som en post i den *lösta kön* för matchande princip. Aviseringar löses automatiskt när aviseringen markeras som felaktigt klassificerad, skickar ett meddelande till en användare om aviseringen eller öppnar ett nytt ärende för aviseringen.
 - **Tagga** ett meddelande: Som en del av lösningen på ett problem kan du tagga det identifierade meddelandet som kompatibelt, icke-kompatibelt eller som tveksamt i enlighet med organisationens principer och standarder. Taggningen kan hjälpa dig att få policyaviseringar för mikrofilter vid eskalering eller som en del av andra interna granskningsprocesser.
 - **Meddela användaren:** Ofta av misstag eller av misstag bryter mot en princip för kommunikationsefterlevnad. Du kan använda meddelandefunktionen för att skicka ett varningsmeddelande till användaren och lösa problemet.
 - **Eskalera till en annan granskare**: Den som granskar ett problem behöver ibland input från andra granskare för att hjälpa till att lösa problemet. Du kan enkelt eskalera problem med meddelanden till granskare i andra delar av organisationen som en del av lösningsprocessen.
-- **Markera som felaktigt :** Meddelanden som felaktigt identifierats som matchningar av efterlevnadsprinciper kommer ibland att gå vidare till granskningsprocessen. Du kan markera dessa typer av aviseringar som falska positiva resultat och automatiskt lösa problemet.
+- **Rapport som felaktigt klassificerad:** Meddelanden som felaktigt identifieras som matchningar av efterlevnadsprinciper kommer ibland att gå vidare till granskningsprocessen. Du kan markera dessa typer av aviseringar som felklassificerade, skicka feedback till Microsoft om den felklassificering som hjälper till att förbättra globala klassificerare och automatiskt lösa problemet.
 - **Ta bort meddelanden i Teams (förhandsgranskning):** Olämpliga meddelanden kan tas bort från att visas Microsoft Teams personliga kanaler och gruppchattmeddelanden. Olämpliga meddelanden som tas bort ersätts med ett meddelande om att meddelandet har tagits bort för en principbrott.
 - **Eskalera för undersökning:** I de allvarligaste situationerna kan du behöva dela information om kommunikationsefterlevnad med andra granskare i organisationen. Kommunikationsefterlevnad är nära integrerat med Microsoft 365 funktioner för efterlevnad som hjälper dig med end-to-end risk resolution. Om du eskalerar ett ärende för undersökning kan du överföra data och hanteringen av ärendet Advanced eDiscovery i Microsoft 365. Advanced eDiscovery ett end-to-end-arbetsflöde för att bevara, samla in, granska, analysera och exportera innehåll som svarar på organisationens interna och externa undersökningar. Det gör att juridiska grupper kan hantera hela arbetsflödet för aviseringar om juridiska frågor. Mer information om Advanced eDiscovery fall finns i [Översikt över Advanced eDiscovery i Microsoft 365](overview-ediscovery-20.md).
 

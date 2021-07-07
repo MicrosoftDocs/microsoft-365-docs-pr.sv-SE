@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 localization_priority: None
 description: Läs mer Learning LTI (Tools Interoperability) Office-appar i M365, och hur de hjälper lärare när de integrerar Office-appar i sina LMS -system (Learning Management System).
-ms.openlocfilehash: 4fd7b25b6463eec4f681e3090bb65db8b00351a8
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 34956eac57a7e3af44ca1c8cf8ae2714327e3e96
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256688"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322347"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Integrera Microsoft-produkter med ditt Learning Management System (LMS)
 
@@ -78,3 +78,5 @@ Konfigurationssteg finns i [Använda Microsoft Teams möten med Canvas.](teams-m
 Med appen Microsoft Teams LTI-klassen kan lärare och elever navigera mellan sina LMS och Teams. Användare kan komma åt sina klassteam som är kopplade till kursen direkt från LMS. Konfigurationsstegen finns nedan:
 
 - **Teams Classes LTI med Canvas** [Use Microsoft Teams-klasser med Canvas](teams-classes-with-canvas.md).
+
+- **Teams Classes LTI med Blackboard** [Use Microsoft Teams classes with Blackboard Learn Ultra](teams-classes-with-blackboard.md)

@@ -1,0 +1,38 @@
+- name: Testbasdokumentation
+  href: index.yml
+- name: Översikt
+  items:
+    - name: Vad är testbas?
+      href: overview.md
+- name: Snabbstart
+  items:
+    - name: Skapa testbaskonto
+      href: createAccount.md
+    - name: Ladda upp ett paket
+      href: uploadApplication.md
+    - name: Upload Binärfiler & beroenden
+      href: binaries.md
+    - name: Ange testaktiviteter
+      href: testtask.md
+    - name: Ange testalternativ
+      href: testoptions.md
+    - name: Granska
+      href: review.md
+    - name: Riktlinjer för paket
+      href: contentguideline.md
+- name: Guider med anvisningar
+  items:
+    - name: Testa serverprogram
+      href: server.md
+    - name: Funktionstestning
+      href: functional.md
+    - name: Validering av funktionsuppdatering
+      href: feature.md
+    - name: Minnes regressionsanalys
+      href: memory.md
+    - name: CPU-regressionsanalys
+      href: cpu.md
+- name: Referens
+  items:
+    - name: Vanliga frågor
+      href: faq.md

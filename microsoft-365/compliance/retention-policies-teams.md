@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Läs mer om de kvarhållningsprinciper som gäller för Microsoft Teams.
-ms.openlocfilehash: b459665d9b92705bd575a7a79a4d4d6adc2a3f68
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 5d888232d94ccd6634fc6102c26958e20d88fb4d
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256321"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322407"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Mer information om kvarhållning för Microsoft Teams
 
@@ -196,12 +196,6 @@ När externa användare ingår i ett möte som organisationen är värd för:
 Om en användare som har en postlåda i Exchange Online lämnar organisationen och användarens Microsoft 365-konto tas bort lagras de chattmeddelanden som kan behållas i en inaktiv postlåda. Chattmeddelandena omfattas fortfarande av de kvarhållningsprinciper som angetts för användaren innan postlådan inaktiverades, och innehållet är tillgängligt för eDiscovery-sökningar. Mer information finns under [Inaktiva postlådor i Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 Om användaren har lagrat några filer i Teams kan du se [motsvarande avsnitt](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) för SharePoint och OneDrive.
-
-## <a name="limitations"></a>Begränsningar
-
-Vi jobbar ständigt med att optimera kvarhållningsfunktionen i Teams. Under tiden bör du vara medveten om följande begränsning när du använder kvarhållningsprinciper för Teams-kanalmeddelanden och Teams-chattar:
-
-- **Problem med felaktig visning i Outlook**. Om du skapar kvarhållningsprinciper för Skype- eller Teams-platser visas en av dessa principer som standardmapprincip när en användare visar egenskaperna för en postlådemapp i skrivbordsversionen av Outlook. Det här är en felaktig visning i Outlook och [ett känt problem](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). I stället bör du titta på kvarhållningsprincipen för postlådan som tillämpas på mappen. Kvarhållningsprincipen för Skype eller Teams tillämpas inte på användarens postlåda.
 
 ## <a name="configuration-guidance"></a>Konfigurationsvägledning
 

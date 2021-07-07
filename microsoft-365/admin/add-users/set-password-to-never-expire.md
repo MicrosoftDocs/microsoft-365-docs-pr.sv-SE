@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Logga in på ditt Microsoft 365 för att ange att vissa lösenord aldrig ska upphöra att gälla genom att använda Windows PowerShell.
-ms.openlocfilehash: a0b247f4b736ecccab57398e1e7131f0a06a2958
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c9f0c245aca0e028183c42f6a257068d74aa563d
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286279"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326729"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Ange att en enskild användares lösenord aldrig ska förfalla
 
@@ -43,8 +43,6 @@ En global administratör för en Microsoft-molntjänst kan använda [PowerShell]
 
 Den här guiden gäller för andra leverantörer, till exempel Intune och Microsoft 365, som också förlitar sig på Azure AD för identitet och katalogtjänster. Lösenordsförfallotid är den enda del av principen som kan ändras.
 
-> [!NOTE]
-> Endast lösenord för användarkonton som inte synkroniseras via katalogsynkronisering kan konfigureras så att de inte upphör att gälla. Mer information om katalogsynkronisering finns i [Anslut AD med Azure AD.](/azure/active-directory/connect/active-directory-aadconnect)
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Så här kontrollerar du förfalloprincipen för ett lösenord
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lär dig hur du skapar och importerar en anpassad typ av känslig information för principer i efterlevnadscentret.
-ms.openlocfilehash: ef63adc5fb4f032b6224e054950f8c40f5e78f5a
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: ab89104804fd1af781ca30ed8893bed60cd29e47
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287617"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322263"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Skapa en anpassad typ av känslig information med PowerShell
 
@@ -348,6 +348,86 @@ Versionselementet är också viktigt. När du laddar upp regelpaketet för förs
 När allt är klart bör ditt RulePack-element se ut så här.
   
 ![XML-kod som visar RulePack-elementet](../media/fd0f31a7-c3ee-43cd-a71b-6a3813b21155.png)
+
+## <a name="validators"></a>Validerare
+
+Microsoft 365 kan använda funktionsprocessorer för vanliga SITs som validatorer. Här är en lista över dem. 
+
+### <a name="list-of-validators-currently-available"></a>Lista över tillgängliga validerare
+
+- Func_credit_card
+- Func_ssn
+- Func_unformatted_ssn
+- Func_randomized_formatted_ssn
+- Func_randomized_unformatted_ssn
+- Func_aba_routing
+- Func_south_africa_identification_number
+- Func_brazil_cpf
+- Func_iban
+- Func_brazil_cnpj
+- Func_swedish_national_identifier
+- Func_india_aadhaar
+- Func_uk_nhs_number
+- Func_Turkish_National_Id
+- Func_australian_tax_file_number
+- Func_usa_uk_passport
+- Func_canadian_sin
+- Func_formatted_itin
+- Func_unformatted_itin
+- Func_dea_number_v2
+- Func_dea_number
+- Func_japanese_my_number_personal
+- Func_japanese_my_number_corporate
+
+På så sätt kan du definiera en egen regex och verifiera dem. Om du vill använda verifierare definierar du egna regex och när du definierar regex använder du egenskapen validator för att lägga till valfri funktionsbehandlare. När den är definierad kan du använda denna regex i en SIT. 
+
+I exemplet nedan har ett vanligt uttryck - Regex_credit_card_AdditionalDelimiters definierats för kreditkort som sedan valideras med funktionen checksumma för kreditkort genom att använda Func_credit_card som validerare.
+
+```xml
+<Regex id="Regex_credit_card_AdditionalDelimiters" validators="Func_credit_card"> (?:^|[\s,;\:\(\)\[\]"'])([0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4}[ -_][0-9]{4})(?:$|[\s,;\:\(\)\[\]"'])</Regex>
+<Entity id="675634eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
+<Pattern confidenceLevel="85">
+<IdMatch idRef="Regex_credit_card_AdditionalDelimiters" />
+<Any minMatches="1">
+<Match idRef="Keyword_cc_verification" />
+<Match idRef="Keyword_cc_name" />
+<Match idRef="Func_expiration_date" />
+</Any>
+</Pattern>
+</Entity>
+```
+
+Microsoft 365 finns två allmänna validerare
+
+### <a name="checksum-validator"></a>Kontrollerasummator
+
+I det här exemplet har en kontrollsumma för anställnings-ID definierats för att verifiera regex för EmployeeID.
+
+```xml
+<Validators id="EmployeeIDChecksumValidator">
+<Validator type="Checksum">
+<Param name="Weights">2, 2, 2, 2, 2, 1</Param>
+<Param name="Mod">28</Param>
+<Param name="CheckDigit">2</Param> <!-- Check 2nd digit -->
+<Param name="AllowAlphabets">1</Param> <!— 0 if no Alphabets -->
+</Validator>
+</Validators>
+<Regex id="Regex_EmployeeID" validators="ChecksumValidator">(\d{5}[A-Z])</Regex>
+<Entity id="675634eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
+<Pattern confidenceLevel="85">
+<IdMatch idRef="Regex_EmployeeID"/>
+</Pattern>
+</Entity>
+```
+
+### <a name="date-validator"></a>Datum giltiga
+
+I det här exemplet definieras ett datum validator för en regex-del som är datum.
+
+```xml
+<Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>
+<Regex id="date_regex_1" validators="date_validator_1">\d{8}</Regex>
+```
   
 ## <a name="changes-for-exchange-online"></a>Ändringar för Exchange Online
 
@@ -356,8 +436,6 @@ Tidigare kanske du använde Exchange Online PowerShell för att importera anpass
 Observera att du kan ladda upp ett regelpaket med cmdleten **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** i efterlevnadscentret. (Tidigare kunde du använda cmdleten **ClassificationRuleCollection** i administrationscentret för Exchange.) 
   
 ## <a name="upload-your-rule-package"></a>Ladda upp regelpaketet
-
-
 
 Gör så här om du vill ladda upp regelpaketet:
   
@@ -460,121 +538,6 @@ I Microsoft 365 används Search Crawler för att identifiera och klassificera k�
   
 I Microsoft 365 kan du inte begära en ny crawlning av en hel klientorganisation manuellt, men du kan göra det för en webbplatssamling, en lista eller ett bibliotek. Se [Manuellt begära crawlning och omindexering av en webbplats, ett bibliotek eller en lista](/sharepoint/crawl-site-content).
   
-## <a name="remove-a-custom-sensitive-information-type"></a>Ta bort en anpassad typ av känslig information
-
-> [!NOTE]
-> Innan du tar bort en anpassad typ av känslig information ska du kontrollera att inga DLP-principer eller e-postflödesregler i Exchange (kallas även transportregler) fortfarande refererar till den typ av känslig information som finns.
-
-Det finns två sätt att ta bort anpassade typer av känslig information i Compliance Center PowerShell:
-
-- **Ta bort enskilda anpassade typer av känslig information**: Använd den metod som beskrivs i [Ändra en anpassad typ av känslig information](#modify-a-custom-sensitive-information-type). Du kan exportera det anpassade regelpaketet som innehåller den anpassade typen av känslig information, ta bort typen av känslig information från XML-filen och importera den uppdaterade XML-filen tillbaka till det befintliga anpassade regelpaketet.
-
-- **Ta bort ett anpassat regelpaket och alla anpassade typer av känslig information som det innehåller**: Den här metoden beskrivs i det här avsnittet.
-
-1. [Ansluta till Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell)
-
-2. Om du vill ta bort ett anpassat regelpaket använder du cmdleten [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage):
-
-   ```powershell
-   Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
-   ```
-
-   Du kan använda namnvärdet (för vilket språk som helst) eller `RulePack id`-värdet (GUID) för att identifiera regelpaketet.
-
-   Det här exemplet tar bort regelpaketet med namnet ”Employee ID Custom Rule Pack”.
-
-   ```powershell
-   Remove-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
-   ```
-
-   Se [Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage) för detaljerad information om syntax och parametrar.
-
-3. Gör något av följande för att kontrollera att du har tagit bort en anpassad typ av känslig information:
-
-   - Kör cmdleten [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) och kontrollera att regelpaketet inte längre visas:
-
-     ```powershell
-     Get-DlpSensitiveInformationTypeRulePackage
-     ```
-
-   - Kör cmdleten [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) för att kontrollera att typerna av känslig information som ingick i det borttagna regelpaketet inte längre visas:
-
-     ```powershell
-     Get-DlpSensitiveInformationType
-     ```
-
-     För anpassade typer av känslig information är egenskapsvärdet för utgivare något annat än Microsoft Corporation.
-
-   - Ersätt \<Name\> med namnvärdet för typen av känslig information (till exempel Employee ID (medarbetar-ID)) och kör cmdleten [Get-DlpSensitiveInformationType](/powershell/module/exchange/get-dlpsensitiveinformationtype) för att kontrollera att typen av känslig information inte längre visas:
-
-     ```powershell
-     Get-DlpSensitiveInformationType -Identity "<Name>"
-     ```
-
-## <a name="modify-a-custom-sensitive-information-type"></a>Ändra en anpassad typ av känslig information
-
-För att ändra en anpassad typ av känslig information i Compliance Center PowerShell måste du:
-
-1. Exportera det befintliga regelpaketet som innehåller den anpassade typen av känslig information till en XML-fil (eller använda en befintlig XML-fil om du har en sådan).
-
-2. Ändra den anpassade typen av känslig information i den exporterade XML-filen.
-
-3. Importera den uppdaterade XML-filen tillbaka till det befintliga regelpaketet.
-
-Information om hur du ansluter till Compliance Center PowerShell finns i [Ansluta till Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell).
-
-### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>Steg 1: Exportera det befintliga regelpaketet till en XML-fil
-
-> [!NOTE]
-> Om du har en kopia av XML-filen (till exempel om du just har skapat och importerat den) kan du gå vidare till nästa steg och ändra XML-filen.
-
-1. Om du inte redan visste det kan du köra cmdleten [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtype) för att hitta namnet på det anpassade regelpaketet:
-
-   ```powershell
-   Get-DlpSensitiveInformationTypeRulePackage
-   ```
-
-   > [!NOTE]
-   > Det inbyggda regelpaketet som innehåller de inbyggda typerna av känslig information heter Regelpaket för Microsoft. Det regelpaket som innehåller anpassade typer av känslig information som du skapade i gränssnittet i efterlevnadscentret heter Microsoft.SCCManaged.CustomRulePack.
-
-2. Använd cmdleten [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) för att spara det anpassade regelpaketet i en variabel:
-
-   ```powershell
-   $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
-   ```
-
-   Om namnet på regelpaketet till exempel är "Employee ID Custom Rule Pack" kör du följande cmdlet:
-
-   ```powershell
-   $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
-   ```
-
-3. Exportera det anpassade regelpaketet till en XML-fil med hjälp av cmdleten [Set-Content](/powershell/module/microsoft.powershell.management/set-content):
-
-   ```powershell
-   Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
-   ```
-
-   I det här exemplet exporterar du regelpaketet till filen ExportedRulePackage.xml i mappen C:\My Documents.
-
-   ```powershell
-   Set-Content -Path "C:\My Documents\ExportedRulePackage.xml" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
-   ```
-
-#### <a name="step-2-modify-the-sensitive-information-type-in-the-exported-xml-file"></a>Steg 2: Ändra typen av känslig information i den exporterade XML-filen
-
-Typer av känslig information i XML-filen och andra element i filen beskrivs tidigare i det här avsnittet.
-
-#### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>Steg 3: Importera den uppdaterade XML-filen tillbaka till det befintliga regelpaketet
-
-Använd cmdleten [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) för att importera den uppdaterade XML-filen tillbaka till det befintliga regelpaketet:
-
-```powershell
-Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
-```
-
-Se [Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) för detaljerad information om syntax och parametrar.
-
 ## <a name="reference-rule-package-xml-schema-definition"></a>Referens: XML-schemadefinition för regelpaket
 
 Du kan kopiera den här koden, spara den som en XSD-fil och använda den för att verifiera XML-filen för regelpaketet.

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f94d2bbb8a65a4004ee05b9d740f94ae841f9a4e
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 8a81c65d65704262230e6eb6245d882b63a18bab
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227381"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322299"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referens för funktioner för kommunikationsefterlevnad
 
@@ -52,7 +52,7 @@ Kommunikationer skannas en gång per dygn från det att principerna har skapats.
 
 ## <a name="pausing-a-policy-preview"></a>Pausa en princip (förhandsversion)
 
-När du har skapat en princip för kommunikationsefterlevnad kan principen pausas tillfälligt om det behövs. Pausa en princip kan användas för att testa eller felsöka principmatchning eller för att optimera principvillkor. I stället för att ta bort en princip under de här omständigheterna bevarar en princip även befintliga policyvarningar och meddelanden för pågående undersökningar och granskningar. Om du pausar en princip förhindrar du att du kontrollerar och avisering generering av alla användarmeddelandevillkor som definierats i principen under den tid principen pausas. För att pausa eller starta om en princip måste användarna vara medlemmar i *rollgruppen* för administratör för kommunikationsefterlevnad.
+När du har skapat en princip för kommunikationsefterlevnad kan principen pausas tillfälligt om det behövs. Pausa en princip kan användas för att testa eller felsöka principmatchning eller för att optimera principvillkor. I stället för att ta bort en princip under de här omständigheterna bevarar en princip även befintliga policyvarningar och meddelanden för pågående undersökningar och granskningar. Om du pausar en princip förhindrar du att kontroll och avisering generering av alla användarmeddelandevillkor som definierats i principen visas under den tid principen pausas. För att pausa eller starta om en princip måste användarna vara medlemmar i *rollgruppen* för administratör för kommunikationsefterlevnad.
 
 Om du vill pausa en princip **går** du till sidan Princip, väljer en princip och sedan **Pausa princip** från åtgärdsverktygsfältet. I fönstret **Pausa** princip bekräftar du att du vill pausa principen genom att välja **Pausa**. I vissa fall kan det ta upp till 24 timmar för en princip att pausas. När principen har pausats skapas inga aviseringar om meddelanden som matchar principen. Men meddelanden som är associerade med aviseringar som skapades innan principen pausas förblir tillgängliga för undersökning, granskning och åtgärd.
 
@@ -188,12 +188,13 @@ Inbyggda utbildare och globala klassificerare söker igenom skickade eller motta
 
 Inbyggda, utbildande och globala klassificerare för kommunikationsefterlevnad söker igenom kommunikationen efter termer, bilder och känsla för följande typer av språk och innehåll:
 
-- **Hot:** Söker efter hot för att bekräfta våld eller fysisk skada för en person eller egendom.
-- **Riktade trakasserier**: Skanningar för stötande uppförande som riktar sig till personer inom etrering, färg, religion och nationella ursprung.
-- **Svordomar:** Söker efter svordomar som gör att de flesta människor inte kan läsa det.
 - **Vuxna bilder**: Söker efter bilder som är sexuellt explicita till sin natur.
-- **Racybilder:** Söker efter bilder som är sexuellt suggestiva i sin natur, men som innehåller mindre explicit innehåll än bilder som anses vara vuxna.
+- **Undervisning (förhandsversion)**: Genomsökningar för explicita språk och är särskilt känsligt för språk som är känsligt för den amerikanska/svarta communityn jämfört med andra communities.
 - **Gory images**: Skanningar efter bilder som beskriver våld och gore.
+- **Svordomar:** Söker efter svordomar som gör att de flesta människor inte kan läsa det.
+- **Racybilder:** Söker efter bilder som är sexuellt suggestiva i sin natur, men som innehåller mindre explicit innehåll än bilder som anses vara vuxna.
+- **Riktade trakasserier**: Skanningar för stötande uppförande som riktar sig till personer inom etrering, färg, religion och nationella ursprung.
+- **Hot:** Söker efter hot för att bekräfta våld eller fysisk skada för en person eller egendom.
 
 *Bildklassarna* *Vuxen, Racy* och *Gory* skannar filer i JPEG-, .png-, .gif- och .bmp format. Storleken på bildfiler måste vara mindre än 4 MB (megabyte) och storleken på bilderna måste vara större än 50 x 50 bildpunkter och större än 50 kB för att bilden ska vara berättigad till utvärdering. Bildidentifiering stöds för Exchange Online e-postmeddelanden och Microsoft Teams och chattar.
 
@@ -250,7 +251,7 @@ Varje ord som du anger och avgränsar med kommatecken tillämpas separat (endast
 
 > [!IMPORTANT]
 >
-> När du importerar en egen ordlistefil måste varje ord eller fras avgränsas med en vagnretur och på en separat rad. Ett exempel:
+> När du importerar en egen ordlistefil måste varje ord eller fras avgränsas med en vagnretur och på en separat rad. Till exempel:
 >
 > *bank* <br>
 > *konfidentiellt* <br>

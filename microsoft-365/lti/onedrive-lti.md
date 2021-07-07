@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Skapa och betygs gradera uppgifter, skapa och hantera kursinnehåll och samarbeta i filer i realtid med den nya appen Microsoft OneDrive Learning Tools Interoperability App.
-ms.openlocfilehash: 985a316bac689b9bc6c53ab65782d548fcad0db8
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: bcb374ed1666f23fa5f3d4692f43a4369670e891
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53257074"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322227"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Integrera Microsoft OneDrive LTI med Canvas
 
@@ -40,7 +40,11 @@ Att Microsoft OneDrive en LTI med Canvas är en process i två steg. Med det fö
 
 1. Logga in Microsoft OneDrive <a href="https://onedrivelti.microsoft.com/admin" target="_blank">LTI-registreringsportalen</a>
 1. Välj knappen **Administratörsmedgivande** och godkänn behörigheterna.
-1. Välj knappen **Skapa ny LTI-klient.** På sidan LTI Registration väljer du **Canvas** i listrutan och anger bas-URL-adressen för Canvas-instansen.
+
+> [!CAUTION]
+> Om det här steget inte utförs får du ett felmeddelande i följande steg och du kan inte utföra det här steget på en timme när du har fått felmeddelandet.
+
+3. Välj knappen **Skapa ny LTI-klient.** På sidan LTI Registration väljer du **Canvas** i listrutan och anger bas-URL-adressen för Canvas-instansen.
 
 > [!NOTE]
 > Om din Canvas-instans till exempel https://contoso.test.instructure.com är ]( https://contoso.test.instructure.com) ska den fullständiga webbadressen anges.
