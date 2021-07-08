@@ -54,8 +54,8 @@
           href: insider-risk-management-settings.md
         - name: Skapa och hantera principer för hantering av insiderrisker
           href: insider-risk-management-policies.md
-        - name: Undersöka aviseringar för insiderrisker
-          href: insider-risk-management-alerts.md
+        - name: Undersöka aktiviteter för interna risker
+          href: insider-risk-management-activities.md
         - name: Vidta åtgärder för insiderriskärenden
           href: insider-risk-management-cases.md
         - name: Granska aktiviteter med granskningsloggen för Insider-risker
@@ -118,6 +118,12 @@
           href: create-a-custom-sensitive-information-type.md
         - name: Skapa en anpassad känslig informationstyp – PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: Ta bort en anpassad känslig informationstyp – PowerShell
+          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+        - name: Ändra en anpassad känslig informationstyp – PowerShell
+          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+        - name: Filterreferens för anpassad känslig informationstyp
+          href: sit-custom-sit-filters.md
         - name: Skapa en nyckelordsordlista
           href: create-a-keyword-dictionary.md
         - name: Ändra en nyckelordsordlista
@@ -915,7 +921,7 @@
         - name: Compliance Configuration Analyzer-verktyget
           href: compliance-manager-mcca.md
         - name: Vanliga frågor (FAQ)
-          href: compliance-manager-faq.md
+          href: compliance-manager-faq.yml
         - name: Compliance Manager (klassisk)
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal

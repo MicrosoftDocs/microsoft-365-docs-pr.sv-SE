@@ -246,7 +246,8 @@
 #### [Använda granskningsläge för minskning av attackytan](audit-windows-defender.md)
 
 ### Nästa generations skydd
-#### [Översikt över Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+#### [Nästa generations skydd, översikt](next-generation-protection.md)
+##### [Översikt över Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 ##### [Microsoft Defender Antivirus på Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Bättre tillsammans: Microsoft Defender Antivirus och Microsoft Defender för Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Bättre tillsammans: Microsoft Defender Antivirus och Office 365](office-365-microsoft-defender-antivirus.md)
