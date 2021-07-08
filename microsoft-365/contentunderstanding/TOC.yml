@@ -46,6 +46,8 @@
       href: adoption-getstarted.md
     - name: Scenarier och användningsfall
       href: adoption-scenarios.md
+    - name: Kör en utvärderingsversion
+      href: trial-syntex.md
     - name: Hantera kontrakt i Microsoft 365
       items:
         - name: Översikt

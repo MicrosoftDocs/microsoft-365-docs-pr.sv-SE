@@ -48,3 +48,5 @@
   items:
     - name: Komma igång med införandet
       href: topics-adoption-getstarted.md
+    - name: Kör en utvärderingsversion
+      href: trial-topics.md
