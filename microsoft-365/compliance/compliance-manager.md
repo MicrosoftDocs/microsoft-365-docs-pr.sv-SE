@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager hjälper organisationer att förenkla och automatisera riskutvärderingar och föreslår rekommenderade åtgärder för att hantera risker.
-ms.openlocfilehash: cc1919f63716dfa79274a5cf7016ef07f2f36f92
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 536a1c02a820b0ea36fc4fe39ca1d0d31f7bc994
+ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53148956"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53330947"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft Compliance Manager
 
@@ -35,7 +35,7 @@ Efterlevnadshanteraren är nu allmänt tillgänglig (GA) som en punkt till punkt
 Det som började som den offentliga förhandsversionen av Efterlevnadsresultat har utvecklats till ett centralt verktyg med förbättrade funktioner för efterlevnadshantering och enklare användning.  Med GA-versionen får du en större samling färdiga bedömningar som hjälper dig att anpassa dina efterlevnadsaktiviteter.
 
 **Läs mer om GA-versionen:**
-- Våra [vanliga frågor går](compliance-manager-faq.md) igenom utvecklingen i detalj.
+- Våra [vanliga frågor går](compliance-manager-faq.yml) igenom utvecklingen i detalj.
 - Läs mer om förbättringar av GA-funktioner [i det här blogginlägget.](https://aka.ms/compliancemanager/GAblog)
 
 Titta på videon nedan för att lära dig hur Efterlevnadshanteraren kan förenkla hur organisationen hanterar efterlevnad:

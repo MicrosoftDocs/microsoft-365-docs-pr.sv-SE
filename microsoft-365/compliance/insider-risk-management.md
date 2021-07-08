@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1864c34f1e7bb17decfaeb2057dfff463a33b37c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 0dae2d65e88c8a5ad4bc6c39e8ea540f55d0f822
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226353"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326753"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Läs mer om Insider-riskhantering i Microsoft 365
 
@@ -86,7 +86,7 @@ Du kan välja bland följande principmallar för att snabbt komma igång med Ins
 
 ### <a name="alerts"></a>Varningar
 
-Varningar genereras automatiskt av riskindikatorer som matchar principvillkor och visas i instrumentpanelen [för aviseringar.](insider-risk-management-alerts.md) Med den här instrumentpanelen kan du snabbt se alla aviseringar som behöver granskas, öppna aviseringar med tiden och aviseringsstatistik för organisationen. Alla principaviseringar visas med följande information som hjälper dig att snabbt identifiera status för befintliga aviseringar och nya aviseringar som behöver åtgärd:
+Varningar genereras automatiskt av riskindikatorer som matchar principvillkor och visas i instrumentpanelen [för aviseringar.](insider-risk-management-activities.md#alert-dashboard) Med den här instrumentpanelen kan du snabbt se alla aviseringar som behöver granskas, öppna aviseringar med tiden och aviseringsstatistik för organisationen. Alla principaviseringar visas med följande information som hjälper dig att snabbt identifiera status för befintliga aviseringar och nya aviseringar som behöver åtgärd:
 
 - Status
 - Allvarlighetsgrad
@@ -105,6 +105,8 @@ Aviseringar löses genom att öppna ett nytt ärende, tilldela aviseringen till 
 ![Insider-hantering av riskhantering](../media/insider-risk-triage.png)
 
 ### <a name="investigate"></a>Undersöka
+
+Undersök snabbt alla aktiviteter för en vald användare med [användaraktivitetsrapporter (förhandsversion).](insider-risk-management-activities.md#user-activity-reports-preview) Med de här rapporterna kan företag i organisationen undersöka aktiviteter för specifika användare under en viss tidsperiod utan att behöva tilldela dem tillfälligt eller uttryckligen en princip för insiderriskhantering. När du granskat aktiviteter för en användare kan undantag från enskilda aktiviteter avvisas som enstaka aktiviteter som en enstaka aktivitet, dela eller skicka en länk till rapporten via e-post med andra affärsverksamheter, eller välja att tilldela användaren tillfälligt eller uttryckligen en princip för insider-riskhantering.
 
 [Ärenden](insider-risk-management-cases.md) skapas för aviseringar som kräver en djupare granskning och undersökning av aktivitetsinformation och omständigheter kring principmatchning. På **instrumentpanelen Ärende** finns en översikt över alla aktiva ärenden, öppna ärenden med tiden och ärendestatistik för organisationen. Granskare kan snabbt filtrera ärenden efter status, datumet då ärendet öppnades och datumet då ärendet uppdaterades senast.
 

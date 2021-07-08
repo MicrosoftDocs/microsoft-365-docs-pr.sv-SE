@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 8bcd9577308e31eb4bd48a5b1e0ad5748ef738e9
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f9cd78cb41a7cbe5011163d1f5734ff0b3c2261e
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256333"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326801"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Kom igång med hantering av insiderrisker
 
@@ -61,7 +61,7 @@ Beroende på strukturen hos ditt team för efterlevnadshantering finns alternati
 
 | **Rollgrupp** | **Rollbehörigheter** |
 | :------------- | :------------------- |
-| **Hantering av insiderrisk** | Använd den här rollgruppen för att hantera insider-riskhantering för organisationen i en enda grupp. Genom att lägga till alla användarkonton för angivna administratörer, analytiker, ekonomi och granskare kan du konfigurera behörigheter för Insider-riskhantering i en enda grupp. Den här rollgruppen innehåller alla behörighetsroller för Insider-riskhantering och associerade behörigheter. Den här konfigurationen är det enklaste sättet att snabbt komma igång med insider-riskhantering och är en god passform för organisationer som inte behöver separata behörigheter som definierats för separata användargrupper. När du använder den här konfigurationen bör du se till att alltid ha minst en användare tilldelad till den här rollgruppen för att säkerställa att dina principer fungerar som förväntat och så att användaren kan skapa och redigera principer, konfigurera lösningsinställningar och granska hälsovarningar för principer.|
+| **Insider-riskhantering** | Använd den här rollgruppen för att hantera insider-riskhantering för organisationen i en enda grupp. Genom att lägga till alla användarkonton för angivna administratörer, analytiker, ekonomi och granskare kan du konfigurera behörigheter för Insider-riskhantering i en enda grupp. Den här rollgruppen innehåller alla behörighetsroller för Insider-riskhantering och associerade behörigheter. Den här konfigurationen är det enklaste sättet att snabbt komma igång med insider-riskhantering och är en god passform för organisationer som inte behöver separata behörigheter som definierats för separata användargrupper. När du använder den här konfigurationen bör du se till att alltid ha minst en användare tilldelad till den här rollgruppen för att säkerställa att dina principer fungerar som förväntat och så att användaren kan skapa och redigera principer, konfigurera lösningsinställningar och granska hälsovarningar för principer.|
 | **Insider-riskhanteringsadministratör** | Använd den här rollgruppen till att först konfigurera Insider-riskhantering och senare för att dela upp Insider-riskadministratörer i en definierad grupp. Användare i den här rollgruppen kan aktivera och visa analysinsikter och skapa, läsa, uppdatera och ta bort principer för insider-riskhantering, globala inställningar och tilldelningar av rollgrupper. När du använder den här konfigurationen bör du se till att alltid ha minst en användare tilldelad till den här rollgruppen för att säkerställa att dina principer fungerar som förväntat och så att användaren kan skapa och redigera principer, konfigurera lösningsinställningar och granska hälsovarningar för principer. |
 | **Analytiker för hantering av interna risker** | Använd den här gruppen för att tilldela behörigheter till användare som fungerar som insider-riskfallsanalytiker. Användare i den här rollgruppen kan komma åt och visa alla varningar för Insider-riskhantering, fall, analysinsikter och meddelandemallar. De kan inte komma åt Insider-risken i Innehållsutforskaren. |
 | **Utredare för hantering av interna risker** | Använd den här gruppen för att tilldela behörigheter till användare som ska agera som insider-riskgruppsbehörigheter. Användare i den här rollgruppen kan komma åt alla varningar för insider-riskhantering, ärenden, meddelandemallar och Innehållsutforskaren för alla ärenden. |
@@ -251,4 +251,4 @@ Insider-riskhanteringsprinciper omfattar tilldelade användare och definierar vi
 
 När du har slutfört de här stegen för att skapa din första insider-riskhanteringspolicy börjar du få aviseringar från aktivitetsindikatorer efter ungefär 24 timmar. Konfigurera ytterligare principer efter behov med hjälp av anvisningarna i steg 4 i den här artikeln eller stegen i [Skapa en ny Insider-riskprincip.](insider-risk-management-policies.md#create-a-new-policy)
 
-Mer information om hur du undersöker insiderriskvarningar **och instrumentpanelen** aviseringar finns i [Varningar för Insider-riskhanteringsvarningar.](insider-risk-management-alerts.md)
+Mer information om hur du undersöker insiderriskvarningar och **instrumentpanelen för** aviseringar finns i [Aktiviteter för Insider-riskhantering.](insider-risk-management-activities.md#alert-dashboard)

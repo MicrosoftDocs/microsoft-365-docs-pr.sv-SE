@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 0cca5c517bf72601b469411bf83bedbbd8e50cdc
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 3e057677b7d8ef4e74abe705bc3b23e8ea539853
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "52161814"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326765"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Insider-riskhantering i Microsoft 365
 
@@ -44,5 +44,5 @@ Använd följande steg för att konfigurera Insider-riskhantering för din organ
 ## <a name="more-information-about-insider-risk-management"></a>Mer information om Insider-riskhantering
 
 - [Hantera insiderriskprinciper](insider-risk-management-policies.md)
-- [Undersöka aviseringar för insiderrisker](insider-risk-management-alerts.md)
+- [Undersöka Insider-riskaktiviteter](insider-risk-management-activities.md)
 - [Agera på Insider-riskärenden](insider-risk-management-cases.md)

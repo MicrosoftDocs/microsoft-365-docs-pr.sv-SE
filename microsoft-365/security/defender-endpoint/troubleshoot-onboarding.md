@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: b3ee2f2dcf13402e506b299935459e435fd2f89a
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929701"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326909"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Felsöka problem med Introduktion till Slutpunkt för Microsoft Defender
 
@@ -300,6 +300,9 @@ Om verifieringen misslyckas och miljön använder en proxyserver för att anslut
 
 ## <a name="troubleshoot-onboarding-issues-on-a-server"></a>Felsöka onboarding-problem på en server
 
+>[!NOTE]
+>Följande felsökningsvägledning gäller endast för Windows Server 2016 och lägre.
+
 Om du stöter på problem vid registrering av en server går du igenom följande verifieringssteg för att åtgärda möjliga problem.
 
 - [Kontrollera att Microsoft Monitoring Agent (MMA) är installerat och konfigurerat för att rapportera sensordata till tjänsten](configure-server-endpoints.md)
@@ -334,7 +337,7 @@ Anvisningarna nedan ger vägledning för följande scenario:
 - Enheten stängs av eller startas om innan slutanvändaren loggar in första gången
 - I det här scenariot startar INTE SENSE-tjänsten automatiskt även om onboarding-paketet har distribuerats
 
-<div class="alert"><b>OBS!</b> Användarens inloggning efter OOBE krävs inte längre för att SENSE-tjänsten ska starta med följande eller nyare Windows-versioner: Windows 10, version 1809 eller Windows Server 2019 med samlad uppdatering [från den 22 april 2021](https://support.microsoft.com/kb/5001384) </br> Windows 10, version 1909 med samlad uppdatering i april [2021](https://support.microsoft.com/kb/5001396) </br> Windows 10, version 2004/20H2 med samlad [uppdatering för april 28 2021](https://support.microsoft.com/kb/5001391) </div> 
+<div class="alert"><b>OBS!</b> Användarens inloggning efter OOBE krävs inte längre för att SENSE-tjänsten ska starta med följande eller nyare Windows-versioner: Windows 10 version 1809 eller Windows Server 2019 med samlad uppdatering från [den 22 april 2021](https://support.microsoft.com/kb/5001384) </br> Windows 10, version 1909 med samlad uppdatering i april [2021](https://support.microsoft.com/kb/5001396) </br> Windows 10, version 2004/20H2 med samlad [uppdatering för april 28 2021](https://support.microsoft.com/kb/5001391) </div> 
 <br></br>
 > [!NOTE]
 > Följande steg är bara relevanta när du använder Microsoft Endpoint Configuration Manager. Mer information om onboarding med hjälp Microsoft Endpoint Configuration Manager finns i [Microsoft Defender för Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).

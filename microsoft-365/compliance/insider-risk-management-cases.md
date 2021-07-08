@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 19fd44633f03a7797484ecaa6a15159e24da7fbf
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226533"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326825"
 ---
 # <a name="insider-risk-management-cases"></a>Insider-riskhanteringsärenden
 
@@ -147,7 +147,7 @@ Fliken **Användaraktivitet** är ett av de mest kraftfulla verktygen för inter
 
 På **fliken Aktivitetsutforskaren** kan riskanalytiker och experter granska aktivitetsinformation som är kopplad till riskvarningar. Som en del av åtgärderna för ärendehantering kan till exempel finansanalytiker och analytiker behöva granska alla riskaktiviteter som är associerade med ärendet för att få mer information. Med **Aktivitetsutforskaren** kan granskare snabbt granska en tidslinje med identifierade riskfyllda aktiviteter och identifiera och filtrera alla riskaktiviteter som är associerade med aviseringar.
 
-Mer information om Aktivitetsutforskaren finns i artikeln Varningar för [Insider-riskhantering.](insider-risk-management-alerts.md#activity-explorer-preview)
+Mer information om Aktivitetsutforskaren finns i artikeln Varningar för [Insider-riskhantering.](insider-risk-management-activities.md#activity-explorer-preview)
 
 ### <a name="content-explorer"></a>Innehållsutforskaren
 

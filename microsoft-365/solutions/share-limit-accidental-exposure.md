@@ -17,16 +17,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Lär dig hur du begränsar oavsiktlig exponering av information när du delar filer med personer utanför organisationen.
-ms.openlocfilehash: aed567e503fb2c615b183c6769c69248c149742a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1dffa40a0c21f5f611492d5a098a98f8aaa726a5
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539053"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326993"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Begränsa oavsiktlig exponering för filer när de delas med personer utanför organisationen
 
-När du delar filer och mappar med personer utanför organisationen finns det en mängd olika alternativ som du kan använda för att minska risken för att någon oavsiktligt delar känslig information. Du kan välja bland alternativen i den här artikeln för att uppfylla organisationens behov på bästa sätt.
+När filer och mappar delas med personer utanför organisationen finns det en mängd olika alternativ som kan användas för att minska risken för att någon oavsiktligt delar känslig information. Du kan välja bland alternativen i den här artikeln för att uppfylla organisationens behov på bästa sätt.
 
 ## <a name="use-best-practices-for-anyone-links"></a>Använda bästa metoder för Alla-länkar
 

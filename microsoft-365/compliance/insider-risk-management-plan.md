@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6884ec3b2bc7c24e4f7f6e62d9b24add3aeee2c0
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: a6a0ebb6ef15a6d4746d72a73feb16e53f89354e
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007351"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326789"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planera för hantering av insiderrisker
 
@@ -42,9 +42,9 @@ Om du har krav för att specifika intressenter ska vara inblandade i ärendeunde
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>Planera arbetsflödet för granskning och undersökning
 
-Välj dedikerade intressenter för att övervaka och granska aviseringar och ärenden regelbundet i kompatibilitetscentret för [Microsoft 365.](https://compliance.microsoft.com/) Se till att du förstår hur du tilldelar olika intressenter till de olika rollgrupperna som är tillgängliga i Insider-riskhantering.
+Välj dedikerade intressenter för att övervaka och granska aviseringar och ärenden regelbundet i [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com/). Se till att du förstår hur du tilldelar olika intressenter till de olika rollgrupperna som är tillgängliga i Insider-riskhantering.
 
-Beroende på strukturen hos ditt team för efterlevnadshantering finns alternativ för att tilldela användare till specifika rollgrupper för att hantera olika uppsättningar med insider-riskhanteringsfunktioner. Om du  vill visa fliken Behörigheter i Säkerhets- och efterlevnadscenter för Office 365  & och hantera rollgrupper, måste du vara tilldelad till rollgruppen Organisationshantering eller ha rollen *Rollhantering.* Välj bland de här rollgruppsalternativen när du konfigurerar insider-riskhantering:
+Beroende på strukturen hos ditt team för efterlevnadshantering finns alternativ för att tilldela användare till specifika rollgrupper för att hantera olika uppsättningar med insider-riskhanteringsfunktioner. Om du  vill visa fliken Behörigheter i Office 365 säkerhets- & Säkerhets- och efterlevnadscenter  i & och hantera rollgrupper, måste du vara tilldelad till rollgruppen Organisationshantering eller ha rollen *Rollhantering.* Välj bland de här rollgruppsalternativen när du konfigurerar insider-riskhantering:
 
 | **Rollgrupp** | **Rollbehörigheter** |
 | :------------- | :------------------- |
@@ -56,18 +56,18 @@ Beroende på strukturen hos ditt team för efterlevnadshantering finns alternati
 
 ## <a name="understand-requirements-and-dependencies"></a>Förstå krav och beroenden
 
-Beroende på hur du planerar att implementera principer för Insider-riskhantering måste du ha rätt Microsoft 365-licensprenumerationer och förstå och planera för vissa lösningsförutsättningarna.
+Beroende på hur du planerar att implementera principer för insider-riskhantering måste du ha rätt Microsoft 365 för licensieringsprenumerationer och förstå och planera för vissa lösningsförutsättningarna.
 
-**Licensiering:** Insider-riskhantering är tillgängligt som en del av ett brett urval av Microsoft 365-licensprenumerationer. Mer information finns i [artikeln Komma igång med insider-riskhantering.](insider-risk-management-configure.md#subscriptions-and-licensing)
+**Licensiering:** Insider-riskhantering finns tillgängligt som en del av ett brett urval Microsoft 365 licensprenumerationer. Mer information finns i [artikeln Komma igång med insider-riskhantering.](insider-risk-management-configure.md#subscriptions-and-licensing)
 
-Om du inte har ett befintligt Microsoft 365 Enterprise, E5-abonnemang och vill prova insider-riskhantering kan [](https://www.microsoft.com/microsoft-365/enterprise) du lägga till [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) i ditt befintliga abonnemang eller registrera dig för en utvärderingsversion av Microsoft 365 Enterprise E5.
+Om du inte har ett befintligt Microsoft 365 Enterprise E5-abonnemang och vill prova insider-riskhantering kan du lägga [](https://www.microsoft.com/microsoft-365/enterprise) till [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) i din befintliga prenumeration eller registrera dig för en utvärderingsversion av Microsoft 365 Enterprise E5.
 
 **Krav på principmall:** Beroende på vilken principmall du väljer finns det krav som du måste förstå och planera för innan du konfigurerar insiderriskhantering i organisationen:
 
-- När du använder **mallen Datastöld** genom avgående användare måste du konfigurera en Microsoft 365 HR-koppling för att regelbundet importera information om här och slutdatum för användarna i organisationen. Se artikeln [Importera data med HR-anslutning](import-hr-data.md) för steg-för-steg-vägledning för att konfigurera Microsoft 365 HR-anslutning för din organisation.
+- När du använder **mallen Datastöld** genom avgående användare måste du konfigurera en hr-Microsoft 365-koppling för att regelbundet importera information om här och slutdatum för användarna i organisationen. Se artikeln [Importera data med HR-anslutning](import-hr-data.md) för steg-för-steg-vägledning för att konfigurera Microsoft 365 HR-anslutning för din organisation.
 - När du **använder mallar för Dataläckor** måste du konfigurera minst en DLP-princip (Data Loss Prevention) för att definiera känslig information i organisationen och få varningar om insiderrisker för varningar om hög allvarlighetsgrad (DLP-princip). Se artikeln [Skapa, testa och ställa in en DLP-princip](create-test-tune-dlp-policy.md) för en steg-för-steg-vägledning för att konfigurera DLP-principer för din organisation.
 - När du **använder mallar för brott mot** säkerhetsprinciper måste du aktivera Microsoft Defender för Slutpunkt för integrering av insiderriskhantering i Defender Säkerhetscenter för att importera aviseringar om säkerhetsöverträdelser. Stegvisa anvisningar för hur du aktiverar Defender för slutpunktsintegrering med Insider-riskhantering finns i artikeln Konfigurera avancerade funktioner i [Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-atp/advanced-features)
-- När du **använder missnöjda** användarmallar måste du konfigurera en Microsoft 365 HR-koppling för att med jämna mellanrum importera prestanda- eller nedgraderingsstatusinformation för användare i organisationen. Se artikeln [Importera data med HR-anslutning](import-hr-data.md) för steg-för-steg-vägledning för att konfigurera Microsoft 365 HR-anslutning för din organisation.
+- När du **använder förvandrade** användarmallar måste du konfigurera en Microsoft 365 personalkontakt för att med jämna mellanrum importera prestanda- eller nedgraderingsstatusinformation för användare i organisationen. Se artikeln [Importera data med HR-anslutning](import-hr-data.md) för steg-för-steg-vägledning för att konfigurera Microsoft 365 HR-anslutning för din organisation.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Testa med en liten grupp användare i en produktionsmiljö
 
@@ -82,7 +82,7 @@ Om du inte ser några aviseringar direkt efter att du konfigurerat en princip f�
 Dela dokumentation om insider-riskhantering med intressenter i organisationen som ingår i ditt arbetsflöde för hantering och åtgärder:
 
 - [Skapa och hantera principer för hantering av insiderrisker](insider-risk-management-policies.md)
-- [Undersöka aviseringar för insiderrisker](insider-risk-management-alerts.md)
+- [Undersöka Insider-riskaktiviteter](insider-risk-management-activities.md)
 - [Vidta åtgärder för insiderriskärenden](insider-risk-management-cases.md)
 - [Granska ärendedata med Innehållsutforskaren för Insider-risk](insider-risk-management-content-explorer.md)
 - [Skapa mallar för insiderriskaviseringar](insider-risk-management-notices.md)
