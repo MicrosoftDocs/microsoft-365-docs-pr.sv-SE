@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6786d423d20ec90c12d2ea712003acc787ed599d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d82bffd6eea54256f2c6773f843030a19e27275d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165255"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339364"
 ---
 # <a name="configure-managed-security-service-provider-integration"></a>Konfigurera integrering med hanterad säkerhetstjänstleverantör
 
@@ -44,7 +44,7 @@ Du måste vidta följande konfigurationssteg för att aktivera mssp-integrering 
 
 Integreringen gör att MSSP kan utföra följande åtgärder:
 
-- Få åtkomst till MSSP-kundens Microsoft Defender Säkerhetscenter portal
+- Få åtkomst till MSSP-kundens Microsoft 365 Defender portal
 - Få e-postaviseringar och 
 - Hämta aviseringar via säkerhetsinformation och händelsehanteringsverktyg (SIEM)
 
@@ -57,7 +57,7 @@ Normalt sett använder MSSP-kunder de inledande konfigurationsstegen för att be
 I allmänhet måste du vidta följande konfigurationssteg:
 
 
-- **Ge MSSP åtkomst till Microsoft Defender Säkerhetscenter** <br>
+- **Ge MSSP åtkomst till Microsoft 365 Defender** <br>
 Den här åtgärden måste utföras av MSSP-kunden. Det ger MSSP-åtkomst till MSSP-kundens Defender för slutpunktsklientorganisationen.
  
 

@@ -1,6 +1,6 @@
 ---
 title: API-fält för identifiering av slutpunkter i Microsoft Defender
-description: Förstå hur API-fält för identifiering mappning till värden i Microsoft Defender Säkerhetscenter
+description: Förstå hur API-fält för identifiering mappning till värden i Microsoft 365 Defender
 keywords: identifieringar, identifieringsfält, fält, api, fält, dra identifieringar, rest api, begäran, svar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f9a0d4ddeee5c1dc49c53e324854cabccc5f79e5
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933643"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339556"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>API-fält för identifiering av slutpunkter i Microsoft Defender
 
@@ -33,11 +33,11 @@ ms.locfileid: "51933643"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-Förstå vilka datafält som visas som en del av api:t för identifiering och hur de mappas till Microsoft Defender Säkerhetscenter.
+Förstå vilka datafält som visas som en del av identifierings-API:t och hur de mappas till Microsoft 365 Defender.
 
 >[!Note]
 >- [Defender för Slutpunktsavisering](alerts.md) består av en eller flera identifieringar.
->- **Microsoft Defender ATP identifieringen** består av den misstänkta händelsen inträffade på enheten och tillhörande **aviseringsinformation.**
+>- **Microsoft Defender ATP Detection** består av den misstänkta händelsen som inträffade på enheten och tillhörande **aviseringsinformation.**
 >- Microsoft Defender för slutpunktsaviserings-API är det senaste API:t för aviseringsanvändning och innehåller en detaljerad lista med relaterade bevis för varje avisering. Mer information finns i [Aviseringsmetoder och egenskaper](alerts.md) och [Listaviseringar.](get-alerts.md)
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>Identifiering av API-fält och portalmappning
@@ -52,7 +52,7 @@ Fältnummer motsvarar talen i bilderna nedan.
 > | Portaletikett   | SIEM-fältnamn           | Fältet ArcSight      | Exempelvärde                                                                      | Beskrivning                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 > | 1                | AlertTitle                | Namn                | Microsoft Defender AV upptäckte "Mikatz" skadlig programvara med hög allvarlighetsgrad | Tillgängligt värde för varje identifiering.                                                                                                                                               |
-> | 2                | Allvarlighetsgrad                  | deviceSeverity      | Högsta                                                                             | Tillgängligt värde för varje identifiering.                                                                                                                                               |
+> | 2                | Allvarlighetsgrad                  | deviceSeverity      | Hög                                                                             | Tillgängligt värde för varje identifiering.                                                                                                                                               |
 > | 3                | Kategori                  | deviceEventCategory | Skadlig programvara                                                               | Tillgängligt värde för varje identifiering.                                                                                                                                               |
 > | 4                | Identifieringskälla                    | sourceServiceName   | Antivirus                                                                 | Microsoft Defender Antivirus eller Defender för Slutpunkt. Tillgängligt värde för varje identifiering.                                                                                         |
 > | 5                | Maskinnamn               | sourceHostName      | desktop-4a5ngd6                                                                           | Tillgängligt värde för varje identifiering.                                                                                                                                               |

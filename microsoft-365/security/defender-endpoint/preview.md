@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322431"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339496"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Förhandsversionsfunktioner i Microsoft Defender för slutpunkt
 
@@ -54,7 +54,7 @@ När du arbetar med funktioner i offentlig förhandsversion kan dessa funktioner
 - Microsoft har fullständigt stöd.
 - Kan bara vara tillgängligt i vissa geografiska regioner eller molnmiljöer. Funktionen kanske till exempel inte finns i myndighetsmoln.
 - Enskilda funktioner i förhandsversionen kan ha fler begränsningar för användning och support. I så fall antecknas informationen vanligtvis i funktionsdokumentationen.
-- Förhandsversionerna tillhandahålls med en standardsupportnivå och det rekommenderas för produktionsbelastningar. 
+- Förhandsversionerna tillhandahålls med en standardsupportnivå och kan användas för produktionsmiljöer. 
 
 
 

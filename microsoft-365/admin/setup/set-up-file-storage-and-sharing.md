@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Lär dig hur du OneDrive och en gruppwebbplats för Microsoft 365 och sparar Microsoft 365 fildelning.
-ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 5ab0a192cb5706b6aff6cdeb30fa566de74dd510
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924617"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338667"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Konfigurera fillagring och fildelning i Microsoft 365
 
@@ -44,7 +44,7 @@ Ett av de bästa sätten att konfigurera fillagring och delning för ditt föret
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../../business-video/index.yml).
+Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](../../business-video/index.yml).
 
 ## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365 lagring och hantering av dokument
 
@@ -62,7 +62,7 @@ Här är rekommendationer för vad du ska lagra på varje plats när du använde
 |Lagringsplats|Vad är det för|Vad jag kan lagra här|
 |:-----|:-----|:-----|
 |**OneDrive** |Att lagra innehåll i OneDrive är som att lagra filer på datorn. Ingen annan kan enkelt komma åt dem.<br/> Mer information finns i [Vad är OneDrive för företag?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Företagsfiler som andra gruppmedlemmar inte behöver samarbeta i eller ha tillgång till regelbundet.<br/> |
-|**SharePoint-gruppwebbplatser** <br/> |Samarbete. När du skapar en Microsoft 365-grupp (till exempel i administrationscentret för Microsoft 365, i Outlook eller genom att skapa ett team i Microsoft Teams) skapas en SharePoint-gruppwebbplats för den gruppen. På samma sätt skapas en SharePoint gruppwebbplats från startsidan i SharePoint eller från det nya administrationscentret för SharePoint också en Microsoft 365 grupp. Mer information finns i Vad [är en SharePoint gruppwebbplats?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) och [Skapa en gruppwebbplats i SharePoint Online.](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)  <br/> |Filer som har delat ägarskap. Vi rekommenderar separata gruppwebbplatser för varje arbetsenhet i organisationen. Skapa till exempel en separat gruppwebbplats för att hålla personal- och ekonomidokument privata för en liten grupp.  <br/> |
+|**SharePoint-gruppwebbplatser** <br/> |Samarbete. När du skapar en Microsoft 365-grupp (till exempel i Administrationscenter för Microsoft 365, i Outlook eller genom att skapa ett team i Microsoft Teams) skapas en SharePoint-gruppwebbplats för den gruppen. På samma sätt skapas en SharePoint gruppwebbplats från startsidan i SharePoint eller från det nya administrationscentret för SharePoint också en Microsoft 365 grupp. Mer information finns i Vad [är en SharePoint gruppwebbplats?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) och [Skapa en gruppwebbplats i SharePoint Online.](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)  <br/> |Filer som har delat ägarskap. Vi rekommenderar separata gruppwebbplatser för varje arbetsenhet i organisationen. Skapa till exempel en separat gruppwebbplats för att hålla personal- och ekonomidokument privata för en liten grupp.  <br/> |
 
 > [!NOTE]
 > SharePoint finns även andra typer av webbplatser som du kan använda för ditt företag. Du kan använda [kommunikationswebbplatser](https://support.microsoft.com/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) i intranätet för att publicera information för en bred målgrupp. Och du kan använda [navplatser](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f) för att ansluta webbplatser i ditt intranät.
@@ -77,7 +77,7 @@ Anställda kan också dela OneDrive och mappar. Om en anställd är borta eller 
   
 Här visar vi hur varje person i gruppen kan konfigurera och OneDrive dela filer.
 
-1. Gå till <a href="https://portal.office.com/ " target="_blank">Microsoft 365 och</a>logga in med ditt användarnamn och lösenord.
+1. Gå till <a href="https://admin.mirosoft.com/ " target="_blank">Administrationscenter för Microsoft 365</a>och logga in med ditt användarnamn och lösenord.
 
 2. I appstartaren väljer du **OneDrive**.
 
@@ -208,5 +208,5 @@ Du kan aktivera lagring från tredje part för användarna i Microsoft 365 så a
 ## <a name="related-content"></a>Relaterat innehåll
 
 [Lägga till lagringsutrymme för din prenumeration](../../commerce/add-storage-space.md) (artikel)\
-[Dela filer och mappar med Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (video)\
+[Dela filer och mappar med Microsoft 365](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (video)\
 [Anpassa gruppwebbplatsen för fillagring och delning](customize-team-site.md) (artikel)

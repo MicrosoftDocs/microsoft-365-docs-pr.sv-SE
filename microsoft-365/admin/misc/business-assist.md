@@ -16,18 +16,22 @@ ms.custom:
 search.appverid:
 - MET150
 description: Läs mer om Business Assist-programmet och hur det kan hjälpa din organisation med förbättrad hjälp och användning för Microsoft 365 för företag.
-ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 3715fcfcc24c647266bab36a764b3c8711e08bdd
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924593"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338607"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Business Assist för Microsoft 365
 
 Få ut mesta mesta av prenumerationen med expertråd från småföretags specialister.
 
 **Business Assist för Microsoft 365** har utformats för företag med färre än 5 användare som kan ge dig och dina anställda dygnet runt åtkomst till småföretagsspecialister när du växer företaget, från registrering till daglig användning.
+
+### <a name="watch-business-assist-for-microsoft-365"></a>Titta: Business Assist för Microsoft 365
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFTQl]
 
 ## <a name="business-assist-services"></a>Tjänster i Business Assist
 
@@ -51,7 +55,7 @@ Kunder med ett aktivt Microsoft 365 för företag-abonnemang kan använda Busine
 
 Endast organisationer som är kvalificerade ser alternativet att köpa Business Assist. Business Assist kostar 5 USD per användare per månad. Så här kan du köpa Business Assist.
 
-1. I den förenklade vyn för Microsoft 365 går du till fliken **Prenumerationer** och väljer Lägg **till produkter.**
+1. I den förenklade vyn för Administrationscenter för Microsoft 365 går du till fliken **Prenumerationer och** väljer Lägg **till produkter.**
 
 2. På sidan Köptjänster väljer du **Information på** Business Assist för **att Microsoft 365** slutföra ditt köp.
 

@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Läs mer Microsoft 365 för företag, hur du bereder det och hur du förbereder användarnas enheter och datorer för att säkerställa att de skyddas av Microsoft 365 för företag.
-ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2ab0079da7a8f30d481cdb3d3dc6d165b4a19e99
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706467"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339299"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Komma igång med Microsoft 365 för företag
 
@@ -57,20 +57,20 @@ Microsoft 365 för företag är avsedd för upp till 300 licenser. Om du behöve
 
  **Översikt över Microsoft 365 för företag-paketet**
   
-I följande diagram beskrivs hur administratörer konfigurerar Microsoft 365 för företag. Dessutom beskrivs stegen för att förbereda Windows för företag Microsoft 365. Du kan också lägga till nya enheter i Microsoft 365 administrationscenter med [Windows AutoPilot.](add-autopilot-devices-and-profile.md) Du kan använda AutoPilot för att konfigurera och förkonfigurera nya enheter så att de är redo för produktiv användning så snart en användare loggar in med sina inloggningsuppgifter för Microsoft 365 för företag.
+I följande diagram beskrivs hur administratörer konfigurerar Microsoft 365 för företag. Dessutom beskrivs stegen för att förbereda Windows för företag Microsoft 365. Du kan också lägga till nya enheter i Administrationscenter för Microsoft 365 med [Windows AutoPilot.](add-autopilot-devices-and-profile.md) Du kan använda AutoPilot för att konfigurera och förkonfigurera nya enheter så att de är redo för produktiv användning så snart en användare loggar in med sina inloggningsuppgifter för Microsoft 365 för företag.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-## <a name="watch-set-up-microsoft-365-business"></a>Titta: Konfigurera Microsoft 365 Business
+## <a name="watch-set-up-microsoft-365-business"></a>Titta: Konfigurera Microsoft 365 företag
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Om den här videon har hjälpt dig kan du ta en titt på den [fullständiga utbildningsserien för småföretag och nya användare av Microsoft 365](../business-video/index.yml).
+Om den här videon har hjälp dig kan du ta en titt på den[fullständiga utbildningsserien för småföretag och de som är nya för Microsoft 365](../business-video/index.yml).
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Konfigurera Microsoft 365 för företag (administratör)
 
-Logga in Microsoft 365 [administratörscentret](https://portal.office.com/adminportal/home) med dina autentiseringsuppgifter som global administratör och slutför följande steg för att konfigurera Microsoft 365 för företag. 
+Logga in på [Administrationscenter för Microsoft 365](https://admin.microsoft.com/adminportal/home) dina autentiseringsuppgifter som global administratör och slutför följande steg för att konfigurera Microsoft 365 för företag. 
   
 1. [Krav för att skydda data på enheter med Microsoft 365 för företag](pre-requisites-for-data-protection.md)
     
@@ -78,7 +78,7 @@ Logga in Microsoft 365 [administratörscentret](https://portal.office.com/adminp
     
 2. [Använda installationsguiden för att konfigurera Microsoft 365 för företag](set-up.md)
     
-    Om du flyttar permanent från en lokal **Active Directory-installation** till molnet kan du gå till administrationscentret i Microsoft 365 och använda installationsguiden för att lägga till användarna manuellt, eller göra en synkronisering bara en gång med Azure AD Anslut. Du kan göra det på två sätt: 
+    Om du flyttar permanent från en lokal **Active Directory-installation** till molnet kan du gå till Administrationscenter för Microsoft 365 och använda installationsguiden för att lägga till användarna manuellt eller göra en synkronisering för bara en gång med Azure AD Anslut. Du kan göra det på två sätt: 
     
     - Om du även har en Exchange 2010-, Exchange 2013- eller Exchange 2016-server kan du använda Minimal hybrid för att snabbt migrera Exchange-postlådor [till Microsoft 365.](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate) I de minimala hybridstegen ingår en synkronisering av användare till Azure AD och e-postmigrering från lokalt till molnet. När e-postmigrering är klar inaktiveras katalogsynkroniseringen automatiskt när du använder den här metoden.
     
@@ -112,4 +112,4 @@ Om du behåller en lokal Active Directory-fil som innehåller vissa lokala resur
 [Microsoft 365 dokumentation och resurser för för företag](./index.yml) (länksida)\
 [Hantera Microsoft 365 för företag](manage.md) (artikel)\
 [Migrera till Microsoft 365 för företag](migrate-to-microsoft-365-business.md) (artikel)\
-[Microsoft 365 om utbildningsvideor för företag](../business-video/index.yml) (länksida)
+[Utbildningsvideor för Microsoft 365 Business](../business-video/index.yml) (länksida)

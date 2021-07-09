@@ -17,12 +17,12 @@ ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 ms.custom:
 - seo-marvel-apr2020
 description: Använd Masssökningsredigeraren i säkerhets- och efterlevnadscentret för att snabbt ändra en fråga och innehållsplatser för en eller flera innehållssökningar.
-ms.openlocfilehash: f6331bad19e95fd1d7039d5da72349906d3614b8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: be7e37ec22966e16dfa3c6d1f37a34e6441e632a
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227393"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341038"
 ---
 # <a name="bulk-edit-content-searches"></a>Massredigera innehållssökningar
 
@@ -32,7 +32,7 @@ Mer information om hur du använder verktyget Sökstatistik finns i [Visa nyckel
 
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Använda Masssökningsredigeraren för att ändra frågor
 
-1. Gå till <https://protection.office.com> och välj sedan Sök **efter** \> **innehållsökning**.
+1. Gå till <https://compliance.microsoft.com> och välj sedan **Innehållssökning**.
 
 2. Markera en eller flera sökningar i listan med sökningar och välj sedan **Masssökningsredigeraren** Masssökning i ![ ](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png) Editor.
 

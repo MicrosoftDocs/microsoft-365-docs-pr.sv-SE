@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b22a3b8fc73ca1825f07dda5b84c85e2d2a68805
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a3be13624c3b3cc9d7be667e28e435c76c513fc3
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289745"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341730"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>För identitet och vidarestöld – En arkitekts byggnad
 
@@ -272,8 +272,6 @@ Som vi nämnt tidigare vill många kunder uppnå en mer detaljerad delegeringsmo
 - **Microsoft Cloud App Security** - (/cloud-app-security/manage-admins)
 - **Stream** – (/stream/assign-administrator-user-role)
 - **Informationsbarriärer** – (.. /compliance/information-barriers.md)
-
-I övrigt har sökningen i Docs varit riktigt bra den senaste tiden – <https://docs.microsoft.com/> .
 
 ### <a name="activity-logs"></a>Aktivitetsloggar
 

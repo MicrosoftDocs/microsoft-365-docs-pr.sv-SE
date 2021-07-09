@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7fd9ec25c21b2d70238bd5b0d6b58b60731088ea
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2448b95e5c5c5da25a916b659f6b49d04ba8f0c1
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845480"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339580"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurera avancerade funktioner i Defender för Slutpunkt
 
@@ -81,7 +81,7 @@ Identifiering och svar av slutpunkt (Identifiering och åtgärd på slutpunkt) i
 
 ## <a name="autoresolve-remediated-alerts"></a>Åtgärdat autoresole-aviseringar
 
-För klientprogram som skapats på eller efter Windows 10, version 1809, konfigureras automatisk undersökning och åtgärd som standard för att lösa varningar där status för automatisk analys är "Inga hot hittades" eller "Åtgärdat".  Om du inte vill att aviseringarna ska matchas automatiskt måste du inaktivera funktionen manuellt.
+För klientprogram som skapas på eller efter Windows 10 version 1809 konfigureras automatisk undersökning och åtgärd som standard för att lösa varningar där status för automatiserad analysresultat är "Inga hot hittades" eller "Åtgärdat".  Om du inte vill att aviseringarna ska matchas automatiskt måste du inaktivera funktionen manuellt.
 
 > [!TIP]
 > För klientorganisationen som skapats tidigare än den versionen måste du manuellt aktivera den här funktionen på sidan [Avancerade](https://securitycenter.windows.com/preferences2/integration) funktioner.
@@ -102,7 +102,7 @@ Med den här funktionen kan du blockera potentiellt skadliga filer i nätverket.
 
 Aktivera Tillåt **eller blockera** filer:
 
-1. Välj Tillåt eller blockera **fil Inställningar** avancerade funktioner i  >    >  **navigeringsfönstret.**
+1. Välj Tillåt eller blockera fil **Inställningar** Allmänna avancerade funktioner i  >    >    >    >  **navigeringsfönstret.**
 
 1. Ändra inställningen mellan **På och** **Av.**
 
@@ -160,9 +160,9 @@ Integreringen med Microsoft Defender för identitet gör att du kan pivotera dir
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365 Anslutning till Threat Intelligence
 
-Den här funktionen är endast tillgänglig om du har en Office 365 E5 eller tillägget Threat Intelligence. Mer information finns på sidan Office 365 Enterprise E5.
+Den här funktionen är endast tillgänglig om du har Office 365 E5 aktiva funktioner eller tillägget Threat Intelligence. Mer information finns på sidan Office 365 Enterprise E5.
 
-När du aktiverar den här funktionen kan du införliva data från Microsoft Defender för Office 365 i Microsoft Defender Säkerhetscenter för att genomföra en omfattande säkerhetsundersökning över alla Office 365 postlådor och Windows enheter.
+När du aktiverar den här funktionen kan du införliva data från Microsoft Defender för Office 365 i Microsoft 365 Defender för att genomföra en omfattande säkerhetsundersökning över alla Office 365 postlådor och Windows enheter.
 
 > [!NOTE]
 > Du måste ha rätt licens för att aktivera den här funktionen.
@@ -180,7 +180,7 @@ Av de två Microsoft Threat Expert-komponenterna är riktade attackmeddelanden i
 Om du aktiverar den här inställningen vidarebefordras Defender för Slutpunktssignaler Microsoft Cloud App Security bättre insyn i användningen av molnprogram. Vidarebefordrade data lagras och bearbetas på samma plats som dina Cloud App Security data.
 
 > [!NOTE]
-> Den här funktionen är tillgänglig med en E5-licens för [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) på enheter med Windows 10, version 1709 (OS-version 16299.1085 med [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, version 1803 (OS Version 17134.704 med [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 med [KB4489899](https://support.microsoft.com/help/4489899)) eller senare Windows 10 versioner.
+> Den här funktionen är tillgänglig med en E5-licens [för Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) på enheter med Windows 10 Version 1709 (OS Version 16299.1085 med [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 med [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10 version 1809 (OS-version 17763.379 med [KB4489899)](https://support.microsoft.com/help/4489899)eller senare Windows 10 versioner.
 
 ## <a name="microsoft-secure-score"></a>Microsoft Secure Score
 

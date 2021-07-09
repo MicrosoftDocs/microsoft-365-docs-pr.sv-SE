@@ -17,12 +17,12 @@ ms.collection:
 description: Administratörer kan lära sig hur de konfigurerar en postlåda för att samla in skräppost och nätfiske som rapporterats av användare.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 4f14f87355181e9b7f6c0b52aa6b122b560c5f23
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096162"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338691"
 ---
 # <a name="user-reported-message-settings"></a>Användarrapporterade meddelandeinställningar
 
@@ -69,8 +69,7 @@ När du har kontrollerat att din postlåda uppfyller alla tillämpliga krav kan 
 - Du måste vara medlem i någon av följande rollgrupper för att kunna ändra konfigurationen för användarinskick:
 
   - **Organisationshantering** eller **säkerhetsadministratör** i [behörigheter i Microsoft 365 Defender .](permissions-microsoft-365-security-center.md)
-  - **Organisationshantering** i [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
-
+  
 - Du behöver åtkomst till Exchange Online PowerShell. Om kontot som du försöker använda inte har åtkomst till Exchange Online PowerShell får du ett felmeddelande som ser ut så här när du anger postlådan för inskickade inskickningar:
 
   > Ange en e-postadress i din domän

@@ -1,6 +1,6 @@
 ---
 title: Registrera Windows 10-enheter med ett lokalt skript
-description: Använd ett lokalt skript för att distribuera konfigurationspaketet på enheter så att de introduceras till tjänsten.
+description: Använd ett lokalt skript för att distribuera konfigurationspaketet på enheter för att aktivera registrering av enheter i tjänsten.
 keywords: konfigurera enheter med ett lokalt skript, enhetshantering, konfigurera Microsoft Defender för slutpunktsenheter
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2510fb1a187bbe136669e11bc73103438b51d811
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e15a02753c7a1b346021a4351af24b8fd28315da
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842176"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339652"
 ---
-# <a name="onboard-windows-10-devices-using-a-local-script"></a>Registrera Windows 10-enheter med ett lokalt skript
+# <a name="onboard-the-windows-10-devices-using-a-local-script"></a>Registrera de Windows 10 med hjälp av ett lokalt skript
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ Du kan även manuellt registrera enskilda enheter i Defender för Endpoint. Du k
 Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) se de olika sökvägarna i distribuera Defender för Endpoint. 
 
 
-1.  Öppna filen för GP.zip konfigurationspaket *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för registrering av tjänster. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1.  Öppna filen för GP.zip konfigurationspaket *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för registrering av tjänster. Du kan också hämta paketet från [Microsoft 365 Defender-portalen:](https://security.microsoft.com/)
 
-    1. I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**.
+    1. I navigeringsfönstret väljer du **Inställningar**  >  **Endpoints**  >  **Device Management**  >  **Onboarding**.
 
     1. Välj Windows 10 som operativsystem.
 
@@ -66,7 +66,7 @@ Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public
 
     1.  Högerklicka på **Kommandotolken** och välj **Kör som administratör**.
 
-        ![Start-menyn i ett fönster som pekar på Kör som administratör](images/run-as-admin.png)
+        ![Fönster Start-menyn som pekar på Kör som administratör](images/run-as-admin.png)
 
 4.  Skriv skriptfilens plats. Om du kopierade filen till skrivbordet skriver du: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
@@ -79,7 +79,7 @@ Mer information om hur du manuellt kan verifiera att enheten är kompatibel och 
 > När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att en enhet är korrekt onboarded till tjänsten. Mer information finns i Köra [ett identifieringstest på en nyligen introducerad Microsoft Defender för slutpunktsslutpunkt.](run-detection-test.md)
 
 ## <a name="configure-sample-collection-settings"></a>Konfigurera exempelsamlingsinställningar
-För varje enhet kan du ange ett konfigurationsvärde för att ange om exempel kan samlas in från enheten när en förfrågan görs via Microsoft Defender Säkerhetscenter att skicka en fil för djupanalys.
+För varje enhet kan du ange ett konfigurationsvärde för att ange om exempel kan samlas in från enheten när en förfrågan görs via Microsoft 365 Defender för att skicka in en fil för djupanalys.
 
 Du kan manuellt konfigurera exempeldelningsinställningen på enheten genom att använda *regedit* eller skapa och köra en *REG-fil.*  
 
@@ -105,9 +105,9 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
 > [!NOTE]
 > Principer för onboarding och offboarding får inte distribueras på samma enhet samtidigt, annars kan det orsaka oförutsägbara tavlor.
 
-1. Hämta offboarding-paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1. Hämta offboarding-paketet från [Microsoft 365 Defender portalen:](https://security.microsoft.com/)
 
-    1. I navigeringsfönstret väljer du **Inställningar**  >  **Offboarding**.
+    1. I navigeringsfönstret väljer du **Inställningar**  >  **Ändpunkter**  >  **Enhetshantering**  > **Offboarding**.
 
     1. Välj Windows 10 som operativsystem.
 
@@ -123,7 +123,7 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
 
     1.  Högerklicka på **Kommandotolken** och välj **Kör som administratör**.
 
-        ![Start-menyn i ett fönster som pekar på Kör som administratör](images/run-as-admin.png)
+        ![Fönster Start-menyn som pekar på Kör som administratör](images/run-as-admin.png)
 
 4.  Skriv skriptfilens plats. Om du kopierade filen till skrivbordet skriver du: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -139,9 +139,9 @@ Du kan följa de olika verifieringsstegen i [Felsöka onboarding-problem](troubl
 Övervakning kan också utföras direkt i portalen eller med hjälp av de olika distributionsverktygen.
 
 ### <a name="monitor-devices-using-the-portal"></a>Övervaka enheter med hjälp av portalen
-1. Gå till Microsoft Defender Säkerhetscenter.
+1. Gå till Microsoft 365 Defender portalen.
 
-2. Klicka **på listan Enheter.**
+2. Klicka **på Inventering av enheter**.
 
 3. Kontrollera att enheter visas.
 

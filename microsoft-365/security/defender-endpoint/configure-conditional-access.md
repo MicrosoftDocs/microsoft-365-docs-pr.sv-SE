@@ -1,6 +1,6 @@
 ---
 title: Konfigurera villkorsstyrd åtkomst i Microsoft Defender för Slutpunkt
-description: Läs mer om steg som du måste göra i Intune, Microsoft Defender Säkerhetscenter och Azure för att implementera villkorsstyrd åtkomst
+description: Läs mer om steg som du måste göra i Intune, Microsoft 365 Defender och Azure för att implementera villkorsstyrd åtkomst
 keywords: villkorsstyrd åtkomst, villkorsstyrd, åtkomst, enhetsrisk, risknivå, integrering, intune-integrering
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ceb69d59dc5208c0908e33d0880d9352562ec140
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2c9462fa0d4be4d6ff78ba3e5db2cd4fa71fef0b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843980"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339520"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Konfigurera villkorsstyrd åtkomst i Microsoft Defender för Slutpunkt
 
@@ -50,10 +50,10 @@ Du måste se till att alla dina enheter är registrerade i Intune. Du kan använ
 
 
 
-Det finns åtgärder du måste vidta i Microsoft Defender Säkerhetscenter, Intune-portalen och Azure AD-portalen.
+Det finns åtgärder du måste vidta i Microsoft 365 Defender, Intune-portalen och Azure AD-portalen.
 
 Det är viktigt att observera de roller som krävs för att komma åt dessa portaler och implementera villkorsstyrd åtkomst:
-- **Microsoft Defender Säkerhetscenter** – Du måste logga in på portalen med en global administratörsroll för att aktivera integreringen.
+- **Microsoft 365 Defender** – Du måste logga in på portalen med en global administratörsroll för att aktivera integreringen.
 - **Intune** – Du måste logga in på portalen med behörigheten säkerhetsadministratör med hanteringsbehörighet. 
 - **Azure AD-portal** – Du måste logga in som global administratör, säkerhetsadministratör eller villkorsstyrd åtkomstadministratör.
 
@@ -62,7 +62,7 @@ Det är viktigt att observera de roller som krävs för att komma åt dessa port
 > Du behöver en miljö för Microsoft Intune med Intune hanterad och Azure AD-ansluten Windows 10 enheter.
 
 Gör följande för att aktivera villkorsstyrd åtkomst:
-- Steg 1: Aktivera Microsoft Intune från Microsoft Defender Säkerhetscenter
+- Steg 1: Aktivera Microsoft Intune från Microsoft 365 Defender
 - Steg 2: Aktivera Defender för slutpunktsintegrering i Intune
 - Steg 3: Skapa efterlevnadsprincipen i Intune
 - Steg 4: Tilldela principen 
@@ -70,7 +70,7 @@ Gör följande för att aktivera villkorsstyrd åtkomst:
 
 
 ### <a name="step-1-turn-on-the-microsoft-intune-connection"></a>Steg 1: Aktivera Microsoft Intune anslutning
-1. Välj Avancerade funktioner **Inställningar**  >  **i**  >  **Microsoft Intune .**
+1. I navigeringsfönstret väljer du Ange **Inställningar**  >  **Allmänna**  >  **avancerade funktioner** i  >  **Microsoft Intune**  >  **Slutpunkter.**
 2. Ändra inställningen Microsoft Intune till **På**.
 3. Klicka **på Spara inställningar.**
 
@@ -78,7 +78,7 @@ Gör följande för att aktivera villkorsstyrd åtkomst:
 ### <a name="step-2-turn-on-the-defender-for-endpoint-integration-in-intune"></a>Steg 2: Aktivera Defender för slutpunktsintegrering i Intune
 1. Logga in på [Azure-portalen](https://portal.azure.com).
 2. Välj **Enhetsefterlevnad**  >  **Microsoft Defender ATP**.
-3. Ställ **in Anslut Windows 10.0.15063+-enheter på Microsoft Defender Avancerat skydd** på **På**.
+3. Ställ **Anslut Windows 10.0.15063+-enheter på Microsoft Defender Avancerat skydd på** **På.**
 4. Klicka på **Spara**.
 
 

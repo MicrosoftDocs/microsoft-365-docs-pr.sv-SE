@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: I den här artikeln beskrivs hur du ställer in Avancerad granskning så att du kan utföra undersökningar av en forensisk undersökning när användarkonton har komprometterats eller undersöka andra säkerhetsrelaterade incidenter.
-ms.openlocfilehash: d1752ee7714056254a6c0e5c009aa9aa79ddff3b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 825dadee5260a263d005eb3a37f280381f9425a2
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314415"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339232"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>Konfigurera avancerad granskning i Microsoft 365
 
@@ -32,7 +32,7 @@ Om organisationen har en prenumeration och licensiering för slutanvändare som 
 
 ![Arbetsflöde för att konfigurera Avancerad granskning för användare](../media/AdvancedAuditWorkflow.png)
 
-## <a name="step1-set-up-advanced-audit-for-users"></a>Steg1: Konfigurera avancerad granskning för användare
+## <a name="step-1-set-up-advanced-audit-for-users"></a>Steg 1: Konfigurera avancerad granskning för användare
 
 För Avancerad granskning-funktioner som möjligheten att logga viktiga händelser, till exempel MailItemsAccessed och Send, måste användarna ha tilldelats rätt E5-licens. Dessutom måste appen/tjänstplanen Advanced Auditing vara aktiverad för dessa användare. Du kan kontrollera att appen Advanced Auditing har tilldelats användarna genom att utföra följande steg för varje användare:
 

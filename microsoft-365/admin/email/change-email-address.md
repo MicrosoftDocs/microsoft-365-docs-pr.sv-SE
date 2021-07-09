@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Ändra din e-postadress till en egen e-postadress som tom@fourthcoffee.com genom att köpa ett domännamn och lägga till det i Microsoft 365.
-ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7fb113c0efd6462c4c703956a20c390f2d555d5f
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635528"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341466"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändra din e-postadress så att en anpassad domän används
 
@@ -56,35 +56,37 @@ Den ursprungliga e-postadressen i Office 365 som drivs av 21Vianet innehåller p
 
 När du ändrar e-posten för din domän så att den ska komma till Microsoft 365, genom att uppdatera domänens MX-post vid konfigurationen, börjar ALL e-post som skickas till den domänen gå Microsoft 365. Kontrollera att du har lagt till användare och skapat postlådor i Microsoft 365 för alla som har e-post i din domän INNAN du ändrar MX-posten. Vill du inte flytta e-posten så att alla i din domän kan Microsoft 365? Då kan du i stället vidta [åtgärder Microsoft 365 pilottestning med bara några få e-postadresser.](../misc/pilot-microsoft-365-from-my-custom-domain.md)
   
-## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Ändra din e-postadress så att den använder din egen domän Microsoft 365 administrationscenter
+## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Ändra din e-postadress så att den använder din egen domän med hjälp av Administrationscenter för Microsoft 365
 
-Du måste ha ett globalt administratörskonto för att utföra de här stegen. 
+Du måste vara global administratör för att utföra de här stegen.
 
 ::: moniker range="o365-worldwide"
 
-1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. 
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
-   
+
 ::: moniker range="o365-germany"
-    
-1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>. 
-    
+
+1. Gå till administrationscentret på <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Gå till administrationscentret <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>på . 
+1. Gå till administrationscentret <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>på .
 
-::: moniker-end 
+::: moniker-end
 
-2. Gå till sidan **Konfigurera**  >   domäner. 
+2. Gå till sidan **Konfigurera**  >   domäner.
 
 3. På sidan **Domains** väljer du **Lägg till domän**.
-    
-4. Följ instruktionerna för att bekräfta att du äger domänen och för att ändra din e-postadress.
-    
-Du vägleds så att allt konfigureras korrekt med din domän i Microsoft 365.
+
+4. Följ anvisningarna för att bekräfta att du äger domänen. Du vägleds så att allt konfigureras korrekt med din domän i Microsoft 365.
+
+5. Gå till **Användare**  >  **aktiva användare.**
+
+6. Välj en användare för att redigera användarnamnet och ändra det till den domän som du just lagt till.
 
 > [!NOTE]
 > Om du inte använder en Exchange-licens kan du inte använda domänen för att skicka eller ta emot e-postmeddelanden Microsoft 365 klientorganisationen.

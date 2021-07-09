@@ -1,6 +1,6 @@
 ---
 title: Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter
-description: Använd verktyg för hantering av mobila enheter för att distribuera konfigurationspaketet på enheter så att de kan kommas in i tjänsten.
+description: Använd verktyg för hantering av mobila enheter och distribuera konfigurationspaketet på enheter så att enheterna förs in i tjänsten.
 keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45aa406212fe39f088f58bf311b1aed3fed16498
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f0a0a35d41d56abfcc7975c9e79ff7d537b72f40
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843440"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338583"
 ---
-# <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Registrera Windows 10-enheter med hanteringsverktyg för mobila enheter
+# <a name="onboard-the-windows-10-devices-using-mobile-device-management-tools"></a>Få igång Windows 10 enheter med hjälp av verktyg för hantering av mobila enheter
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -70,9 +70,9 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
 > [!NOTE]
 > Principer för onboarding och offboarding får inte distribueras på samma enhet samtidigt, annars kan det orsaka oförutsägbara tavlor.
 
-1. Hämta offboarding-paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1. Hämta offboarding-paketet från [Microsoft 365 Defender portalen:](https://security.microsoft.com/)
 
-   1. I navigeringsfönstret väljer du **Inställningar**  >  **Offboarding**.
+   1. I navigeringsfönstret väljer du **Inställningar**  >  **Ändpunkter**  >  **Enhetshantering**  >  **Offboarding**.
 
    1. Välj Windows 10 som operativsystem.
 

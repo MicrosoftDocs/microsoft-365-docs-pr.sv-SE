@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 402797b22e94129abbeb17f1a3454f95d5eae8fc
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: ae170ecf0fc0f354c9975300e5f2f7cd014b0c47
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908347"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339698"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Identifiering och svar av slutpunkt (Identifiering och åtgärd på slutpunkt) i blockeringsläge
 
@@ -43,7 +43,7 @@ ms.locfileid: "52908347"
 
 Identifiering och åtgärd på slutpunkt i blockeringsläge är också integrerat med [& hantering av säkerhetsrisker](next-gen-threat-and-vuln-mgt.md). Din organisations säkerhetsteam kommer att få en säkerhetsrekommendationer [om](tvm-security-recommendation.md) att aktivera Identifiering och åtgärd på slutpunkt i blockeringsläge om det inte redan är aktiverat. 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="rekommendation att aktivera Identifiering och åtgärd på slutpunkt i blockläge":::
+:::image type="content" source="images/enable-edr-in-block-mode.png" alt-text="rekommendation att aktivera Identifiering och åtgärd på slutpunkt i blockläge":::
 
 > [!NOTE]
 > För att få det bästa skyddet bör du distribuera **[Microsoft Defender för slutpunktsbaslinjer](configure-machines-security-baseline.md)**.
@@ -62,14 +62,14 @@ Följande bild visar en instans av oönskad programvara som har upptäckts och b
 > [!IMPORTANT]
 > Kontrollera att kraven [uppfylls](#requirements-for-edr-in-block-mode) innan du Identifiering och åtgärd på slutpunkt i blockläge.
 
-1. Gå till [Microsoft 365 Defender-portalen](microsoft-defender-security-center.md) och logga in. 
+1. Gå till [Microsoft 365 Defender och](microsoft-defender-security-center.md) logga in. 
 
 2. Välj **Inställningar**  >  **Avancerade funktioner**.
 
 3. Aktivera Identifiering och åtgärd på slutpunkt **i blockläge**.
 
 > [!NOTE]
-> Identifiering och åtgärd på slutpunkt i blockläge kan endast aktiveras i Microsoft Defender Säkerhetscenter. Du kan inte använda registernycklar, Intune eller grupprinciper för att aktivera eller Identifiering och åtgärd på slutpunkt i blockeringsläge.
+> Identifiering och åtgärd på slutpunkt i blockeringsläge kan endast aktiveras i Microsoft 365 Defender portalen. Du kan inte använda registernycklar, Intune eller grupprinciper för att aktivera eller Identifiering och åtgärd på slutpunkt i blockeringsläge.
 
 ## <a name="requirements-for-edr-in-block-mode"></a>Krav för Identifiering och åtgärd på slutpunkt i blockläge
 
@@ -115,8 +115,8 @@ Om du vill Microsoft Defender Antivirus i aktivt eller passivt läge kan du anv�
 
 |Metod  |Förfarande  |
 |---------|---------|
-| PowerShell     | 1. Välj Start-menyn, börja `PowerShell` skriva och öppna Windows PowerShell i resultatet. <p>2. Skriv `Get-MpComputerStatus` . <p>3. Leta efter något av följande värden i resultatlistan på raden **AMRunningMode:** <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>Mer information finns i [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).        |
-|Kommandotolken     | 1. Välj Start-menyn, börja skriva och öppna `Command Prompt` Windows Kommandotolken i resultatet. <p>2. Skriv `sc query windefend` . <p>3. I resultatlistan, på **raden DELSTAT,** bekräftar du att tjänsten körs.         |
+| PowerShell     | 1. Markera Start-menyn, börja skriva `PowerShell` och öppna Windows PowerShell i resultatet. <p>2. Skriv `Get-MpComputerStatus` . <p>3. Leta efter något av följande värden i resultatlistan på raden **AMRunningMode:** <br/>- `Normal` <br/>- `Passive Mode` <br/>- `SxS Passive Mode` <p>Mer information finns i [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).        |
+|Kommandotolken     | 1. Markera Start-menyn, börja skriva `Command Prompt` och öppna Windows kommandotolken i resultatet. <p>2. Skriv `sc query windefend` . <p>3. I resultatlistan, på **raden DELSTAT,** bekräftar du att tjänsten körs.         |
 
 ### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Hur lång tid tar det för Identifiering och åtgärd på slutpunkt i blockeringsläget att inaktiveras?
 
@@ -132,7 +132,7 @@ Om Microsoft Defender Antivirus i aktivt läge eller passivt läge stöds Identi
 
 Om Windows Server 2016 har Microsoft Defender Antivirus i aktivt läge och slutpunkten är onboarded till Defender för Endpoint stöds Identifiering och åtgärd på slutpunkt i blockeringsläge tekniskt. Men funktionen Identifiering och åtgärd på slutpunkt i blockläge är avsedd att vara extra skydd när Microsoft Defender Antivirus inte är den primära antiviruslösningen på en slutpunkt. I sådana fall Microsoft Defender Antivirus i passiv form. För närvarande stöds Microsoft Defender Antivirus i passivt läge inte på Windows Server 2016. Mer information finns i artikeln om Microsoft Defender Antivirus antivirus- och [antimalwarelösningar från Microsoft.](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Mer information finns även i
 
 - [Tech Community-blogg: Identifiering och åtgärd på slutpunkt i blockläge: stoppa attacker i deras spår](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Beteendeblockering och inneslutning](behavioral-blocking-containment.md)

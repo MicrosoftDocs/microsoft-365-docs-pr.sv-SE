@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: Administratören kan lära sig att använda delningsgranskning i Microsoft 365-granskningsloggen för att identifiera resurser som delas med användare utanför organisationen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 302ad7665c83ee9061b2e1965ef03ec25d0aab58
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "52161585"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341514"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Använda delningsgranskning i granskningsloggen
 
@@ -96,26 +96,26 @@ Ett vanligt krav för administratörer är att skapa en lista över alla resurse
 
 Det första steget är att söka i granskningsloggen efter delningshändelser. Mer information (inklusive vilka behörigheter som krävs) för att söka i granskningsloggen finns i Söka i granskningsloggen i [& Säkerhets- och efterlevnadscenter.](search-the-audit-log-in-security-and-compliance.md)
   
-1. Gå till [https://protection.office.com](https://protection.office.com).
-    
+1. Gå till <https://compliance.microsoft.com>.
+
 2. Logga in med ditt arbets- eller skolkonto.
-    
-3. I den vänstra rutan i säkerhets- & säkerhets- och efterlevnadscenter klickar du **på Sök i**   >  **granskningsloggsökning**.
-    
-    Sidan **Sökning i granskningslogg** visas. 
-    
+
+3. Klicka på Granska i Microsoft 365 Efterlevnadscenter vänstra **fönsterrutan.**
+
+    Sidan **Granska** visas.
+
 4. Under **Aktiviteter** klickar du på **Aktiviteter för delning och åtkomstbegäran** för att söka efter delningsrelaterade händelser. 
-    
+
     ![Under Aktiviteter väljer du Aktiviteter för delning och åtkomstbegäran](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  Välj ett datum- och tidsintervall för att hitta delningshändelserna som inträffat under perioden. 
-    
+5. Välj ett datum- och tidsintervall för att hitta delningshändelserna som inträffat under perioden. 
+
 6. Klicka **på Sök** för att köra sökningen. 
-    
+
 7. När sökningen har körts och resultatet visas klickar du på Exportera **resultat Ladda** ned \> **alla resultat.**
-    
+
     När du har valt exportalternativ uppmanas du att öppna eller spara CSV-filen i ett meddelande längst ned i fönstret.
-    
+
 8. Klicka **på** \> **Spara som** och spara CSV-filen i en mapp på den lokala datorn. 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>Steg 2: Använda PowerQuery-redigeraren för att formatera den exporterade granskningsloggen

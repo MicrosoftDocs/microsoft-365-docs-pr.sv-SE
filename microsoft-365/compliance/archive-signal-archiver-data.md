@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Administratörer kan konfigurera en TeleMessage-koppling för att importera och arkivera signalkommunikationsdata i Microsoft 365. På så sätt kan du arkivera data från datakällor från tredje part i Microsoft 365 så att du kan använda efterlevnadsfunktioner som bevarande av juridiska principer, innehållssökning och bevarandeprinciper för att hantera data från tredje part i organisationen.
-ms.openlocfilehash: a779cb312e20fdf5fac0987a33734e7e81ba9c74
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bce1788f2ce08ca8678c5ba29c01e1bec2d1c834
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054891"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339472"
 ---
-# <a name="set-up-a-connector-to-archive-signal-communications-data-preview"></a>Konfigurera en anslutare för att arkivera signalkommunikationsdata (förhandsversion)
+# <a name="set-up-a-connector-to-archive-signal-communications-data"></a>Konfigurera en anslutare för att arkivera signalkommunikationsdata
 
 Använd TeleMessage-kopplingen i Microsoft 365 Efterlevnadscenter för att importera och arkivera signalchattar, bifogade filer, filer samt borttagna meddelanden och samtal. När du har konfigurerat och konfigurerat en anslutning ansluts den till organisationens TeleMessage-konto och importerar mobilkommunikationen för anställda som använder TeleMessage Signal Archiver till postlådor i Microsoft 365.
 

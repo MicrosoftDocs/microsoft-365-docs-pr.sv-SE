@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Lägga till och hantera aktivitetsaviseringar i säkerhets- & säkerhets- och efterlevnadscenter så att Microsoft 365 skickar e-postmeddelanden när användare utför specifika aktiviteter
-ms.openlocfilehash: d0daa9249a8ea69c376ef7bbc8b7a90253e411db
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b48093de66fdefa9a298b6cdc0f0324ee720fbbf
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227169"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341610"
 ---
 # <a name="create-activity-alerts"></a>Skapa aktivitetsaviseringar
 
@@ -46,7 +46,7 @@ Du kan skapa en aktivitetsavisering som skickar ett e-postmeddelande när använ
 
 ## <a name="create-an-activity-alert"></a>Skapa en aktivitetsavisering
 
-1. Gå till [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
+1. Gå till <https://compliance.microsoft.com/managealerts>.
 
 2. Logga in med ditt arbets- eller skolkonto.
 
@@ -85,7 +85,7 @@ Du kan skapa en aktivitetsavisering som skickar ett e-postmeddelande när använ
 
 Du kan inaktivera en aktivitetsavisering så att en e-postavisering inte skickas. När du har inaktiverat aktivitetsaviseringen visas den fortfarande i listan med aktivitetsaviseringar för organisationen, och du kan fortfarande visa dess egenskaper.
 
-1. Gå till Gå till [https://protection.office.com/managealerts](https://protection.office.com/managealerts) .
+1. Gå till <https://compliance.microsoft.com/managealerts>.
 
 2. Logga in med ditt arbets- eller skolkonto.
 

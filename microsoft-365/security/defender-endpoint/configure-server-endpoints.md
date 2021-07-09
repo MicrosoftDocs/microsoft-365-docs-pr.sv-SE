@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47d57e51eca4950f7a8f4284fbc916e9d030b2c7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08fe4314c1461710d83ea7aeba1fdf9a60dd33a8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844340"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339244"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Introducera Windows-servrar till Microsoft Defender för slutpunktstjänsten
 
@@ -38,7 +38,7 @@ ms.locfileid: "52844340"
 
 > Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
-Defender för Endpoint utökar stödet till att även omfatta Windows Server-operativsystemet. Det här stödet ger avancerade funktioner för identifiering och undersökning av angrepp via Microsoft Defender Säkerhetscenter konsolen.
+Defender för Endpoint utökar stödet till att även omfatta Windows Server-operativsystemet. Det här stödet ger avancerade funktioner för identifiering och undersökning av attackerna via Microsoft 365 Defender konsolen.
 
 En praktisk vägledning om vad som måste finnas för licensiering och infrastruktur finns i Skydda [Windows-servrar med Defender för slutpunkt.](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128)
 
@@ -66,7 +66,7 @@ Om du redan använder System Center Operations Manager (SCOM) eller Azure Monito
 I allmänhet måste du göra följande:
 
 1. Uppfylla kraven för introduktion som beskrivs i **avsnittet Innan du börjar.**
-2. Aktivera serverövervakning från Microsoft Defender Säkerhetscenter.
+2. Aktivera serverövervakning från Microsoft 365 Defender portal.
 3. Installera och konfigurera MMA för servern för att rapportera sensordata till Defender för Slutpunkt.
 4. Konfigurera och uppdatera System Center Endpoint Protection klienter.
 
@@ -121,7 +121,7 @@ När den är klar bör du se Windows-servrar i portalen inom en timme.
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>Alternativ 2: Hantera Windows-servrar via Azure Säkerhetscenter
 
-1. Välj Microsoft Defender Säkerhetscenter i navigeringsfönstret **Inställningar**  >  **Registrering av**  >  **enhetshantering**.
+1. I Microsoft 365 Defender väljer du **Slutpunkter Inställningar**  >  **Registrering**  >  **av**  >  **enhetshantering.**
 
 2. Välj **Windows Server 2008 R2 SP1, 2012 R2 och 2016** som operativsystem.
 
@@ -200,7 +200,7 @@ Följande funktioner ingår i den här integreringen:
     > Integreringen mellan Azure Defender för servrar och Microsoft Defender för slutpunkt har utökats med stöd [för Windows Server 2019 och Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows servrar som övervakas av Azure Defender blir också tillgängliga i Defender för slutpunkt – Azure Defender ansluter sömlöst till Defender för slutpunktsklientorganisationen, vilket ger en enda vy mellan klienter och servrar.  Dessutom är Defender för slutpunktsaviseringar tillgängliga i Azure Defender-konsolen.
-- Serverundersökning – Azure Defender-kunder kan komma Microsoft Defender Säkerhetscenter att utföra detaljerad undersökning för att ta reda på omfattningen av en möjlig överträdelse.
+- Serverundersökning – Azure Defender-kunder kan komma Microsoft 365 Defender-portalen för att utföra detaljerad undersökning för att ta reda på omfattningen av en möjlig överträdelse.
 
 > [!IMPORTANT]
 > - När du använder Azure Defender för att övervaka servrar skapas automatiskt en Defender för slutpunktsklientorganisation (i USA för USA-användare i EU för europeiska och brittiska användare).<br>
@@ -255,7 +255,7 @@ Om du vill ta Windows server kan du använda någon av följande metoder:
 
 1. Skaffa ditt arbetsyte-ID:
 
-   1. I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**.
+   1. I Microsoft 365 Defender väljer du **Slutpunkter Inställningar**  >  **Registrering**  >  **av**  >  **enhetshantering.**
 
    1. Välj **Windows Server 2008 R2 SP1, 2012 R2 och 2016** som operativsystem och få ditt Arbetsyte-ID:
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: I den här artikeln beskrivs hur du skapar Advanced eDiscovery så att du kan börja skapa och hantera ärenden. Dessutom beskrivs Microsoft-prenumerationer och -licensiering som krävs. När du har slutfört några få snabbsteg är Advanced eDiscovery klar att använda.
-ms.openlocfilehash: 6c6aed482da8f203154d94313ec04519d6a330ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: be5e5aea03950d28889590004bd796455a71c5be
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162055"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341454"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>Konfigurera Microsoft 365 Advanced eDiscovery
 
@@ -46,7 +46,7 @@ För att Advanced eDiscovery komma åt eller läggas till som medlem i Advanced 
 
 Utför följande steg för att lägga till användare i rollgruppen för eDiscovery-hanteraren:
 
-1. Gå till <https://protection.office.com/permissions> och logga in med autentiseringsuppgifterna för ett administratörskonto i Microsoft 365 organisation.
+1. Gå till <https://compliance.microsoft.com/permissions> och logga in med autentiseringsuppgifterna för ett administratörskonto i Microsoft 365 organisation.
 
 2. På sidan **Behörigheter** väljer du **rollgruppen för eDiscovery-hanteraren.**
 

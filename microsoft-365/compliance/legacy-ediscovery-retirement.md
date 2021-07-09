@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place eDiscovery och In-Place Hold (och motsvarande PowerShell-cmdlets) i Exchange Online kommer att dras tillbaka under de första halvan av 2020. Både Search-Mailbox och Advanced eDiscovery v1.0 dras tillbaka inom samma tidsperiod.
-ms.openlocfilehash: 97be285ae348b018866e3f91f92be523b03e6616
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 77a7daf36c86cd302f774e5a4b934148d3dfd5a7
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055070"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341002"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Utfasning av äldre eDiscovery-verktyg
 
@@ -345,9 +345,9 @@ Advanced eDiscovery v1.0, som är den version av Advanced eDiscovery som är til
 
 Så här tar du reda på om din organisation använder Advanced eDiscovery v1.0:
 
-1. Gå till [säkerhets- Office 365 för & säkerhets- och efterlevnadscenter.](https://protection.office.com)
+1. Gå till [Microsoft 365 Efterlevnadscenter](https://compliance.microsoft.com).
 
-2. I det vänstra navigeringsfönstret i säkerhets- & efterlevnadscenter klickar du på **eDiscovery > eDiscovery** och öppnar ett Core eDiscovery-ärende.
+2. I det vänstra navigeringsfönstret i efterlevnadscentret klickar du på **eDiscovery > Core** och öppnar ett Core eDiscovery-ärende.
 
 3. Om du ser knappen **Advanced eDiscovery** till-Advanced eDiscovery kommer 1.0-versionen av Advanced eDiscovery att dras tillbaka. Möjligheten att skapa och hantera ärenden i Core eDiscovery påverkas inte. Endast möjligheten att lägga till och analysera ärendedata i Advanced eDiscovery v1.0 (genom att klicka på Växla till **Advanced eDiscovery**) dras tillbaka.
 

@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 9114a825ad011f0b2a17cea4929ab2a09bfa2172
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861185"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339484"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Registrera Windows 10-multisessionsenheter i det Windows Virtual Desktop 
 6 minuter att läsa 
@@ -54,7 +54,7 @@ Det finns flera sätt att introducera en WVD-värddator:
 #### <a name="scenario-1-using-local-group-policy"></a>*Scenario 1: Använda lokal grupprincip*
 Det här scenariot kräver att skriptet placeras i en gyllene bild och att lokala grupprinciper används för att köras tidigt i startprocessen.
 
-Följ anvisningarna i Hantera [icke-beständiga VDI-enheter med virtuell skrivbordsinfrastruktur.](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)
+Följ anvisningarna i [Hantera de icke-beständiga VDI-enheterna (Virtual Desktop Infrastructure).](configure-endpoints-vdi.md#onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices)
 
 Följ instruktionerna för en enskild post för varje enhet.
 

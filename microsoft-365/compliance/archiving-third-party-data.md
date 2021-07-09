@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du importerar data från tredje part från plattformar för sociala medier, snabbmeddelandeplattformar och dokumentsamarbete till Microsoft 365 postlådor.
-ms.openlocfilehash: 76df1ffa7afdeeda9a35744e9e4bfffae4576ca9
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: c5eebef3e2c6021efc08ff1ed41ba28bacc92487
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276959"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339436"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Arkivera data från tredje part i Microsoft 365
 
@@ -89,6 +89,7 @@ Innan du kan arkivera data från tredje part i Microsoft 365 måste du arbeta me
 |[RingCentral](archive-ringcentral-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
 |[Salesforce Chatter](archive-salesforcechatter-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
 |[ServiceNow](archive-servicenow-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
+|[Skype för företag](archive-skypeforbusiness-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
 |[EDiscovery för slack](archive-slack-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Symphony](archive-symphony-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Textavgränsad](archive-text-delimited-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|||
@@ -116,6 +117,8 @@ TeleMessage-dataanslutningar är också tillgängliga GCC miljöer i Microsoft 3
 |[Bell-nätverk](archive-bell-network-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Företagsnummer](archive-enterprise-number-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[O2-nätverk](archive-o2-network-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Signal](archive-signal-archiver-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
+|[Så här ser det ut](archive-telegram-archiver-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[TELUS-nätverk](archive-telus-network-data.md)    |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[Verizon-nätverk](archive-verizon-network-data.md)     |![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||
 |[WeChat](archive-wechat-data.md)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)||

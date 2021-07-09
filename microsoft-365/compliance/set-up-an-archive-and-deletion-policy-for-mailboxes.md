@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Lär dig hur du skapar en princip för arkivering och borttagning i Microsoft 365 som automatiskt flyttar objekt till en användares arkivpostlåda.
-ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 45d6428f5b0a856538d500b1d1f0447447b9dfe9
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062164"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341646"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Konfigurera en princip för arkivering och borttagning för postlådor i din organisation
 
@@ -63,11 +63,11 @@ Det första steget är att aktivera arkivpostlådan för varje användare i orga
 > [!NOTE]
 > Du kan aktivera arkivpostlådor när som helst under den här processen, så länge de är aktiverade någon gång innan du slutför processen. Om en arkivpostlåda inte är aktiverad så vidtas inga åtgärder på objekt som tilldelats en princip för arkivering eller borttagning.
   
-1. Gå till [https://protection.office.com](https://protection.office.com).
+1. Gå till <https://compliance.microsoft.com>.
 
 2. Logga in med ditt globala administratörskonto.
     
-3. Gå till Arkiv för & informationsstyrning i Säkerhets- **och efterlevnadscenter.** \> 
+3. I Microsoft 365 Efterlevnadscenter klickar du på **Informationsstyrning** och sedan på **fliken** Arkivera.
 
     En lista med postlådor i din organisation visas och om motsvarande arkivpostlåda är aktiverad eller inaktiverad.
 

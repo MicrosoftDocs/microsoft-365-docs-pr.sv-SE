@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: d3821f4f1f581da5353ee33bd406af8558c0e903
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 7da28ea308994663549c2c490f53a3e0e75a0857
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029963"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339268"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Åtgärda falska positiva/negativa i Microsoft Defender för Endpoint
 
@@ -141,7 +141,7 @@ När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or
 
 ### <a name="review-completed-actions"></a>Granska slutförda åtgärder
 
-1. Gå till Åtgärdscenter ( <https://security.microsoft.com/action-center> ) och logga in.
+1. Klicka på Åtgärdscenter i Microsoft 365 Defender **navigeringsportalen till vänster.**
 
 2. Välj fliken **Historik** för att visa en lista över åtgärder som har vidtagits.
 
@@ -149,7 +149,7 @@ När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or
 
 ### <a name="restore-a-quarantined-file-from-the-action-center"></a>Återställa en fil i karantän från Åtgärdscenter
 
-1. Gå till Åtgärdscenter ( <https://security.microsoft.com/action-center> ) och logga in.
+1. Klicka på Åtgärdscenter i Microsoft 365 Defender **navigeringsportalen till vänster.**
 
 2. Välj **en åtgärd** som du vill ångra på fliken Historik.
 
@@ -157,7 +157,7 @@ När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or
 
 ### <a name="undo-multiple-actions-at-one-time"></a>Ångra flera åtgärder samtidigt
 
-1. Gå till Åtgärdscenter ( <https://security.microsoft.com/action-center> ) och logga in.
+1. Klicka på Åtgärdscenter i Microsoft 365 Defender **navigeringsportalen till vänster.**
 
 2. Markera **de åtgärder** du vill ångra på fliken Historik.
 
@@ -168,7 +168,7 @@ När du har granskat och ångrat åtgärder som har [utförts](#part-3-review-or
 > [!div class="mx-imgBorder"]
 > ![Karantänfil](images/autoir-quarantine-file-1.png)
 
-1. Gå till Åtgärdscenter ( <https://security.microsoft.com/action-center> ) och logga in.
+1. Klicka på Åtgärdscenter i Microsoft 365 Defender **navigeringsportalen till vänster.**
 
 2. På fliken **Historik** väljer du en fil som har karantänfilen **Åtgärdstyp.**
 
@@ -344,7 +344,7 @@ Om du vill söka efter uppdateringar om din inskickning loggar du in Microsoft S
 
 Microsoft Defender för Slutpunkt har ett brett utbud av alternativ, bland annat möjligheten att finjustera inställningar för olika funktioner. Om du får flera falska positiva resultat bör du granska organisationens inställningar för skydd mot hot. Du kan behöva göra några justeringar för att:
 
-- [Moln levererat skydd](#cloud-delivered-protection)
+- [Molnbaserat skydd](#cloud-delivered-protection)
 - [Åtgärd för potentiellt oönskade program](#remediation-for-potentially-unwanted-applications)
 - [Automatiserad undersökning och åtgärder](#automated-investigation-and-remediation)
 
@@ -456,7 +456,7 @@ Kontakta teknisk support om du har gått igenom alla steg i den här artikeln oc
 
 3. Beskriv **problemet i** fönstret Supportassistenten och skicka sedan meddelandet. Därifrån kan du öppna en tjänstförfrågan.
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Mer information finns även i
 
 [Hantera Microsoft Defender för Slutpunkt](manage-atp-post-migration.md)
 

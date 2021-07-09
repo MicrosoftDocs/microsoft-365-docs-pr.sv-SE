@@ -1,6 +1,6 @@
 ---
 title: Registrera Windows 10-enheter med konfigurationshanteraren
-description: Använd Konfigurationshanteraren för att distribuera konfigurationspaketet på enheter så att de introduceras till tjänsten.
+description: Använd Konfigurationshanteraren för att distribuera konfigurationspaketet på enheter så att enheter kan kommas in i tjänsten.
 keywords: onboard devices using sccm, device management, configure Microsoft Defender for Endpoint devices
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: d827fb89a082286b1b7b77ea0a14e588ce171161
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d7c319e37fb804ee4dac3b6bff402942bbc2fa79
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842200"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339664"
 ---
-# <a name="onboard-windows-10-devices-using-configuration-manager"></a>Registrera Windows 10-enheter med konfigurationshanteraren
+# <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Få igång Windows 10 med konfigurationshanteraren
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -71,9 +71,9 @@ Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public
 
 
 
-1. Öppna konfigurationspaketet för Konfigurationshanteraren .zip *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för service onboarding. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1. Öppna konfigurationspaketet för Konfigurationshanteraren .zip *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för service onboarding. Du kan också hämta paketet från [Microsoft 365 Defender portal:](https://security.microsoft.com/)
 
-    1. I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**.
+    1. I navigeringsfönstret väljer du **Inställningar**  >  **Endpoints**  >  **Device Management**  >  **Onboarding**.
     
     1. Välj Windows 10 som operativsystem.
 
@@ -102,10 +102,10 @@ Mer information finns i Konfigurera [identifieringsmetoder i System Center 2012 
 
 ### <a name="configure-sample-collection-settings"></a>Konfigurera exempelsamlingsinställningar
 
-För varje enhet kan du ange ett konfigurationsvärde för att ange om exempel kan samlas in från enheten när en förfrågan görs via Microsoft Defender Säkerhetscenter att skicka en fil för djupanalys.
+För varje enhet kan du ange ett konfigurationsvärde för att ange om exempel kan samlas in från enheten när en förfrågan görs via Microsoft 365 Defender för att skicka in en fil för djupanalys.
 
 >[!NOTE]
->De här konfigurationsinställningarna görs vanligtvis via Konfigurationshanteraren. 
+>De här konfigurationsinställningarna görs vanligtvis via Konfigurationshanteraren.
 
 Du kan ange en regel för efterlevnad för konfigurationsobjektet i Konfigurationshanteraren om du vill ändra inställningen för exempelresursen på en enhet.
 
@@ -179,9 +179,9 @@ Om du använder Microsoft Endpoint Manager current branch, se [Skapa en konfigur
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Offboard-enheter med System Center 2012 R2 Configuration Manager
 
-1. Hämta offboarding-paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1. Hämta offboarding-paketet från [Microsoft 365 Defender portalen:](https://security.microsoft.com/)
 
-    1. I navigeringsfönstret väljer du **Inställningar**  >   **Offboarding**.
+    1. I navigeringsfönstret väljer du **Inställningar**  >  **Ändpunkter**  >  **Enhetshantering**  >   **Offboarding**.
 
     1. Välj Windows 10 som operativsystem.
 

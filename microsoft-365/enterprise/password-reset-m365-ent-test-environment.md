@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Sammanfattning: Konfigurera och testa återställning av lösenord i testmiljön för Microsoft 365.'
-ms.openlocfilehash: efcaaf9ed1873c0908bb0e64644b8e10de280a01
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13169824866e91c1a09d412a875d2f4ce4391fa8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921498"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339388"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Återställning av lösenord i testmiljön för Microsoft 365
 
@@ -90,7 +90,7 @@ Testa sedan återställning av lösenord för User 3-kontot.
 1. Ange användarkontots namn för User 3, ange tecknen från CAPTCHA och välj sedan **Nästa.**
 1. För **verifiering steg 1** väljer du Skicka **e-post med alternativ e-post** och väljer sedan **E-post**. När du får e-postmeddelandet anger du verifieringskoden och väljer **nästa**.
 1. Ange **ett nytt lösenord för Användarkontot** under Komma in på ditt konto igen och välj sedan **Slutför**. Notera det ändrade lösenordet för kontot Användare 3 och förvara det på en säker plats.
-1. Gå till [https://portal.office.com](https://portal.office.com) på en separat flik i samma webbläsare och logga sedan in med kontonamnet Användare 3 och det nya lösenordet. Du bör se **startsidan för Microsoft Office**.
+1. Gå till [https://admin.microsoft.com](https://admin.microsoft.com) på en separat flik i samma webbläsare och logga sedan in med kontonamnet Användare 3 och det nya lösenordet. Du bör se **startsidan för Microsoft Office**.
 
 ## <a name="next-step"></a>Nästa steg
 

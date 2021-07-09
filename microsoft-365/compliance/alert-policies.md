@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Skapa aviseringsprinciper i Microsoft 365 Efterlevnadscenter övervaka potentiella hot, dataförlust och behörighetsproblem.
-ms.openlocfilehash: a6f9b7dec1a147b9cd9b00b5516c77aea79437e9
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 4ae85f69eea5221945c531b2b63000be7eb43fb7
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054677"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341074"
 ---
 # <a name="alert-policies-in-the-microsoft-365-compliance-center"></a>Aviseringsprinciper i Microsoft 365 Efterlevnadscenter
 
@@ -83,7 +83,7 @@ En aviseringsprincip består av följande inställningar och villkor.
 
 - **Aviseringskategori**. För att underlätta uppföljning och hantering av aviseringar som genereras av en princip kan du tilldela en av följande kategorier till en princip.
 
-  - Skydd mot dataförlust
+  - Dataförlustskydd
 
   - Informationsstyrning
 
@@ -115,10 +115,10 @@ Tabellen anger också vilket Office 365 Enterprise och Office 365 för var och e
 | Standardaviseringsprincip | Beskrivning | Kategori | Enterprise-prenumeration |
 |:-----|:-----|:-----|:-----|
 |**Ett potentiellt skadligt URL-klick upptäcktes**|Genererar en avisering när en användare som skyddas [Valv länkar](../security/office-365-security/safe-links.md) i din organisation klickar på en skadlig länk. Händelsen utlöses när ändringar av URL-bedömning identifieras av Microsoft Defender för Office 365 eller när användare åsidosätter Valv-länksidorna (baserat på organisationens Microsoft 365 för företag Valv Links-policy). Den här aviseringsprincipen har **inställningen Hög** allvarlighetsgrad. För Defender för Office 365 P2-, E5- och G5-kunder utlöser den här aviseringen automatiskt automatisk undersökning och [svar i Office 365.](../security/office-365-security/office-365-air.md) Mer information om händelser som utlöser den här aviseringen finns [i Konfigurera Valv principer för länkar.](../security/office-365-security/set-up-safe-links-policies.md)|Hothantering|E5/G5 eller Defender Office 365 en P2-tilläggsprenumeration|
-|**Resultat av administratörsinskick slutfört**|Genererar en avisering när en [administratörs inskickad](../security/office-365-security/admin-submission.md) inskickad entitet har slutförts. En avisering utlöses varje gång ett återskanna resultat återges från en inskickad administratör. Dessa aviseringar är avsedda [](https://protection.office.com/reportsubmission)att påminna dig att granska resultaten av tidigare inskickade , skicka användarrapporterade meddelanden för att få den senaste principkontrollen och visa på nytt för att avgöra om filtreringsprinciperna i organisationen har den avsedda påverkan. Den här principen har inställningen **Informations** allvarlighetsgrad.|Hothantering|E1/F1, E3/F3 eller E5|
+|**Resultat av administratörsinskick slutfört**|Genererar en avisering när en [administratörs inskickad](../security/office-365-security/admin-submission.md) inskickad entitet har slutförts. En avisering utlöses varje gång ett återskanna resultat återges från en inskickad administratör. Dessa aviseringar är avsedda [](https://compliance.microsoft.com/reportsubmission)att påminna dig att granska resultaten av tidigare inskickade , skicka användarrapporterade meddelanden för att få den senaste principkontrollen och visa på nytt för att avgöra om filtreringsprinciperna i organisationen har den avsedda påverkan. Den här principen har inställningen **Informations** allvarlighetsgrad.|Hothantering|E1/F1, E3/F3 eller E5|
 |**Admin utlöst manuell undersökning av e-post**|Genererar en varning när en administratör utlöser manuell undersökning av ett e-postmeddelande från Hotutforskaren. Mer information finns i [Exempel: En säkerhetsadministratör utlöser en undersökning från Threat Explorer](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). Det här meddelandet meddelar organisationen att undersökningen har påbörjats. Aviseringen ger information om vem som utlöste den och innehåller en länk till undersökningen. Den här principen har inställningen **Allvarlighetsgrad** i information.|Hothantering| E5/G5 eller Microsoft Defender Office 365 en P2-tilläggsprenumeration| 
 |**Skapa regel för vidarebefordran / omdirigering**|Genererar en avisering när någon i organisationen skapar en inkorgsregel för sin postlåda som vidarebefordrar eller omdirigerar meddelanden till ett annat e-postkonto. Med den här principen spårar du bara inkorgsregler som skapats med Outlook på webben (tidigare kallat Outlook Web App) eller Exchange Online PowerShell. Den här principen har inställningen **Informations** allvarlighetsgrad. Mer information om hur du använder inkorgsregler för att vidarebefordra och omdirigera e-Outlook på webben finns i Använda regler i Outlook på webben för att automatiskt vidarebefordra [meddelanden till ett annat konto.](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)|Hothantering|E1/F1/G1, E3/F3/G3 eller E5/G5|
-|**eDiscovery-sökning startade eller exporterades**|Genererar en avisering när någon använder verktyget Innehållssökning i Säkerhets- och efterlevnadscenter. En avisering utlöses när följande aktiviteter för innehållssökning utförs: <br/><br/>* En innehållssökning startas<br/>* Resultatet av en innehållssökning exporteras<br/>* En rapport för innehållssökning exporteras<br/><br/>Aviseringar utlöses också när tidigare aktiviteter för innehållssökning utförs tillsammans med ett eDiscovery-ärende. Den här principen har inställningen **Informations** allvarlighetsgrad. Mer information om aktiviteter för innehållssökning finns i [Söka efter eDiscovery-aktiviteter i granskningsloggen.](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|Hothantering|E1/F1/G1, E3/F3/G3 eller E5/G5|
+|**eDiscovery-sökningen har startats eller exporterats**|Genererar en avisering när någon använder verktyget Innehållssökning i Säkerhets- och efterlevnadscenter. En avisering utlöses när följande aktiviteter för innehållssökning utförs: <br/><br/>* En innehållssökning startas<br/>* Resultatet av en innehållssökning exporteras<br/>* En rapport för innehållssökning exporteras<br/><br/>Aviseringar utlöses också när tidigare aktiviteter för innehållssökning utförs tillsammans med ett eDiscovery-ärende. Den här principen har inställningen **Informations** allvarlighetsgrad. Mer information om aktiviteter för innehållssökning finns i [Söka efter eDiscovery-aktiviteter i granskningsloggen.](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|Hothantering|E1/F1/G1, E3/F3/G3 eller E5/G5|
 |**Höjd på Exchange administratörsbehörighet**|Genererar en avisering när någon tilldelas administrativ behörighet i Exchange Online organisation. Till exempel när en användare läggs till i rollgruppen Organisationshantering i Exchange Online. Den här principen har **inställningen Låg** allvarlighetsgrad.|Behörigheter|E1/F1/G1, E3/F3/G3 eller E5/G5|
 |**E-postmeddelanden som innehåller skadlig kod har tagits bort efter leverans**|Genererar en avisering när meddelanden som innehåller skadlig programvara levereras till postlådor i organisationen. Om den här händelsen inträffar tar Microsoft bort de smittade meddelandena Exchange Online postlådor med automatisk [rensning på nolltimmar.](../security/office-365-security/zero-hour-auto-purge.md) Den här principen har en **inställning för** allvarlighetsgrad i information och utlöser automatiskt automatisk undersökning och svar [i Office 365](../security/office-365-security/office-365-air.md).|Hothantering|E5/G5 eller Microsoft Defender Office 365 en P2-tilläggsprenumeration|
 |**E-postmeddelanden med nätfiske togs bort efter leverans**|Genererar en avisering när några meddelanden som innehåller phish levereras till postlådor i din organisation. Om den här händelsen inträffar tar Microsoft bort de smittade meddelandena Exchange Online postlådor med automatisk [rensning på nolltimmar.](../security/office-365-security/zero-hour-auto-purge.md) Den här principen har en **inställning för** allvarlighetsgrad i information och utlöser automatiskt automatisk undersökning och svar [i Office 365](../security/office-365-security/office-365-air.md).|Hothantering|E5/G5 eller Defender Office 365 en P2-tilläggsprenumeration|
@@ -224,7 +224,7 @@ I följande tabell visas de roller som krävs för att visa aviseringar från de
 
 Du kan se vilken kategori en standardaviseringsprincip har tilldelats i tabellen i [Standardaviseringsprinciper.](#default-alert-policies)
 
-|Roll|Informationsstyrning|Skydd mot dataförlust|E-postflöde|Behörigheter|Hothantering|Andra|
+|Roll|Informationsstyrning|Dataförlustskydd|E-postflöde|Behörigheter|Hothantering|Andra|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Granskningsloggar|||||||
 |Ärendehantering|||||||

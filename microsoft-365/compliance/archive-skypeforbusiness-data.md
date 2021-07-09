@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Lär dig att konfigurera och använda en koppling i Microsoft 365 Efterlevnadscenter för att importera och arkivera data från Skype för företag till Microsoft 365.
-ms.openlocfilehash: 93128af0c7f305cb2bef55efd5520de77555a222
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 4a66ee19530860bd482168297a8c935153442fee
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054870"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339460"
 ---
-# <a name="set-up-a-connector-to-archive-skype-for-business-data-preview"></a>Konfigurera en koppling för att arkivera Skype för företag data (förhandsgranskning)
+# <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Konfigurera en koppling för att arkivera Skype för företag data
 
 Använd en Veritas-koppling i Microsoft 365 Efterlevnadscenter om du vill importera och arkivera data från Skype för företag-plattformen till användarpostlådor i Microsoft 365 organisation. Veritas innehåller [en Skype för företag-koppling](https://www.veritas.com/en/au/insights/merge1/skype-for-business) som har konfigurerats för att hämta objekt från tredje parts datakälla (regelbundet) och importera de objekten till Microsoft 365. Kopplingen konverterar innehåll, till exempel meddelanden mellan användare, fortlöpande chattar och konferensmeddelanden, från Skype för företag till ett e-postmeddelandeformat och importerar sedan objekten till användarens postlåda i Microsoft 365.
 

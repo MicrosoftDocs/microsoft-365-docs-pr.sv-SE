@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administratörer kan ta reda på hur de kan återställa efter utpressningstrojaner.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789057"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341442"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Återställ från en utpressningstrojanattack i Microsoft 365
 
@@ -49,7 +49,7 @@ Om du har säkerhetskopieringar offline kan du antagligen återställa krypterad
 
 Om du inte har några säkerhetskopior, eller om dina säkerhetskopior också påverkades av utpressningstrojanen, kan du hoppa över det här steget.
 
-## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Steg 2: Inaktivera Exchange ActiveSync och OneDrive synkronisering
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Steg 2: Inaktivera Exchange ActiveSync och OneDrive-synkronisering
 
 Det viktiga här är att stoppa uppslaget av datakryptering genom utpressningstrojanen.
 
@@ -63,7 +63,7 @@ Information om hur du inaktiverar andra typer av åtkomst till en postlåda finn
 
 - [Aktivera eller inaktivera åtkomst via POP3 eller IMAP4 för en användare](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-Om du pausar OneDrive av synkronisering skyddas dina molndata från att uppdateras med potentiellt smittade enheter. Mer information finns i [Pausa och återuppta synkronisering i OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
+Om du pausar OneDrive-synkronisering enheter skyddas dina molndata från att uppdateras av potentiellt smittade enheter. Mer information finns i [Pausa och återuppta synkronisering i OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Steg 3: Ta bort den skadlig programvara från de berörda enheterna
 
@@ -99,11 +99,11 @@ I de sällsynta fall som utpressningstrojanen tog bort alla dina e-postmeddeland
 
 - [Återskapa borttagna objekt i Outlook för Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Steg 7: Återaktivera Exchange ActiveSync och OneDrive synkronisering
+## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Steg 7: Återaktivera Exchange ActiveSync och OneDrive-synkronisering
 
-När du har rensat dina datorer och enheter och återskapat dina data kan du återaktivera Exchange ActiveSync och OneDrive som du inaktiverade tidigare i [steg 2.](#step-2-disable-exchange-activesync-and-onedrive-sync)
+När du har rensat dina datorer och enheter och återskapat dina data kan du återaktivera Exchange ActiveSync och OneDrive-synkronisering som du tidigare inaktiverade [i steg 2.](#step-2-disable-exchange-activesync-and-onedrive-sync)
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Steg 8 (valfritt): Blockera OneDrive synkronisering för specifika filnamnstillägg
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Steg 8 (valfritt): Blockera OneDrive-synkronisering för specifika filnamnstillägg
 
 När du har återställt kan du förhindra OneDrive för företag-klienter från att synkronisera de filtyper som påverkades av den här utpressningstrojanen. Mer information finns i [Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
@@ -141,30 +141,30 @@ Om ditt land inte finns med i listan kan du fråga ditt lokala eller federala my
 
 Du kan rapportera nätfiskemeddelanden som innehåller utpressningstrojaner på flera olika sätt. Mer informations finns i [Anmäla meddelanden och filer till Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Se även
+## <a name="additional-ransomware-resources"></a>Ytterligare resurser för utpressningstrojaner
 
-- [Utpressningstrojaner](/windows/security/threat-protection/intelligence/ransomware-malware)
+[Översikt över utpressningstrojaner som drivs av människor](/security/compass/human-operated-ransomware)
 
-- [Svar på utpressningstrojaner – för att betala eller inte betala?](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+[Skydda snabbt mot utpressningstrojaner och utpressning](/security/compass/protect-against-ransomware)
 
-- [NorskSon svarar på utpressningstrojaner med transparens](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+[Den senaste Microsoft Säkerhetsinsikter PDF-filen)](https://www.microsoft.com/securityinsights/) (sök efter "utpressningstrojaner")
+
+**Utpressningstrojan: En genomgående och pågående hotrapport** i noden **Hotanalys** i Microsoft 365 Defender portalen
+
+Microsoft 365 skydd:
 
 - [Identifiering av utpressningstrojaner och återställning av filer i OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
-
-- [Microsoft Säkerhetsinsikter Rapport](https://www.microsoft.com/securityinsights/)
-
 - [Aktivera eller inaktivera makron i Office filer](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
-
 - [Rekommenderade inställningar för EOP och Microsoft Defender för Office 365 säkerhet](recommended-settings-for-eop-and-office365.md)
 
-- [En värdig uppgradering: nästa generationens säkerhet på Windows 10 flexibelt mot utpressningstrojaner under 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+Blogginlägg för Microsoft Security-teamet:
 
-- [Inte mas, Samas: Vad finns i den här utpressningstrojanens modus operandi?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
+- [Att bli flexibel genom att förstå riskerna för cybersäkerhet: del 4 – navigering mot aktuella hot (maj 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
-- [Locky-skadlig programvara, tur att undvika det](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
+  Se **avsnittet Utpressningstrojaner.**
 
-- [MSRT juli 2016: Cerber-utpressningstrojan](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
+- [Human-operated ransomware attacks: A preventable disaster (March 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [Svar på utpressningstrojaner – för att betala eller inte betala? (december 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [NorskSon svarar på utpressningstrojaner med transparens (december 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [En värdig uppgradering: nästa generations säkerhet på Windows 10 bevisar flexibelt mot utpressningstrojaner under 2017 (januari 2018)](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
-- [De tre huvudena i Cerberus-liknande Cerber-utpressningstrojaner](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
-
-- [Troldesh-utpressningstrojanen påverkas av () Da Kod för DaKod](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)

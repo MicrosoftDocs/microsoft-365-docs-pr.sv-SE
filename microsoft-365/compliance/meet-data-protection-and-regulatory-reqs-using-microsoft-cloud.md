@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Lär dig hur du använder Efterlevnadshanteraren i Microsoft Service Trust Portal för att uppfylla dataskydds- och regelkrav.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e308de5bdf3441a602002e2fd6f216c361f64286
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5bb7e05a211c35f2b707e7282c6975b0049dce93
+ms.sourcegitcommit: 48e50a5445c63d397197af2bb7549cbec0bce790
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162225"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53330995"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft Efterlevnadshanteraren (klassisk)
 
 > [!IMPORTANT]
-> **Efterlevnadshanteraren (klassisk) kommer snart att tas bort från Microsoft Service Trust Portal.** Vi rekommenderar att du går över till den nya [Efterlevnadshanteraren i Efterlevnadscenter för Microsoft 365](https://compliance.microsoft.com/), som ger en bättre användarupplevelse och uppdaterad kontrollmappning. Kunder som har utvärderingar i den klassiska versionen måste skapa nya utvärderingar i den nya Efterlevnadshanteraren. Befintliga data, inklusive dina utvärderingar, kontroller och andra data, överförs inte till den nya Efterlevnadshanteraren. [Mer information om övergången](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal).
+> **Efterlevnadshanteraren (klassisk) kommer snart att tas bort från Microsoft Service Trust Portal.** Vi rekommenderar att du går över till den nya [Efterlevnadshanteraren i Efterlevnadscenter för Microsoft 365](https://compliance.microsoft.com/), som ger en bättre användarupplevelse och uppdaterad kontrollmappning. Kunder som har utvärderingar i den klassiska versionen måste skapa nya utvärderingar i den nya Efterlevnadshanteraren. Befintliga data, inklusive dina utvärderingar, kontroller och andra data, överförs inte till den nya Efterlevnadshanteraren. [Mer information om övergången](compliance-manager-faq.yml#what-s-happening-to-compliance-manager--classic--in-the-service-trust-portal-).
 
 *Efterlevnadshanteraren är inte tillgänglig i Office 365 som drivs av 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High) eller i Office 365 Department of Defense.*
 
@@ -59,31 +59,31 @@ Strukturen för en utvärdering baseras på det ansvar som delas mellan Microsof
 
 En utvärdering består av flera komponenter som är:
 
-- **Tjänsteomfång** – Varje utvärdering tillämpas på en specifik uppsättning Microsoft-tjänster, som anges i avsnittet Molntjänster som är i omfånget.
+- **Tjänsteomfång** – Varje utvärdering tillämpas på en specifik uppsättning Microsoft-tjänster, som anges i avsnittet Molntjänster som är i omfånget.
 
-- **Microsoft-hanterade kontroller** – För varje molntjänst implementerar och hanterar Microsoft en uppsättning *-kontroller* som en del av Microsofts efterlevnad av olika standarder och föreskrifter. Dessa kontroller är ordnade i *kontrollfamiljer som* anpassas till strukturen från motsvarande certifiering eller bestämmelser som utvärderingen är justerad efter. För varje kontroll som hanteras av Microsoft innehåller Efterlevnadshanteraren information om hur Microsoft implementerade kontrollen, samt hur och när implementeringen har testats och validerats av en oberoende tredjepartsgranskare.
+- **Microsoft-hanterade kontroller** – För varje molntjänst implementerar och hanterar Microsoft en uppsättning *-kontroller* som en del av Microsofts efterlevnad av olika standarder och föreskrifter. Dessa kontroller är ordnade i *kontrollfamiljer som* anpassas till strukturen från motsvarande certifiering eller bestämmelser som utvärderingen är justerad efter. För varje kontroll som hanteras av Microsoft innehåller Efterlevnadshanteraren information om hur Microsoft implementerade kontrollen, samt hur och när implementeringen har testats och validerats av en oberoende tredjepartsgranskare.
 
   Här är ett exempel på tre Microsoft-hanterade kontroller i **säkerhetskontrollfamiljen** från utvärderingen av Office 365 och GDPR.
 
-    ![Information om Microsoft-hanterade kontroller i Efterlevnadshanteraren](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
+  ![Information om Microsoft-hanterade kontroller i Efterlevnadshanteraren](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
 
-  a. Anger följande information från certifieringen eller föreskrifterna som mappar till den Microsoft-hanterade kontrollen.
+  1. Anger följande information från certifieringen eller föreskrifterna som mappar till den Microsoft-hanterade kontrollen.
 
-  - **Kontroll-ID** – Det avsnitts- eller artikelnummer från certifieringen eller bestämmelsen som kontrollen mappar till.
+     - **Kontroll-ID** – Det avsnitts- eller artikelnummer från certifieringen eller bestämmelsen som kontrollen mappar till.
 
-  - **Titel** – Titel från motsvarande certifiering eller bestämmelse.
+     - **Titel** – Titel från motsvarande certifiering eller bestämmelse.
 
-  - **Artikel-ID** – Det här fältet ingår endast för GDPR-utvärderingar, eftersom det anger motsvarande GDPR-artikelnummer.
+     - **Artikel-ID** – Det här fältet ingår endast för GDPR-utvärderingar, eftersom det anger motsvarande GDPR-artikelnummer.
 
-  - **Beskrivning** – Text i standarden eller förordningen som mappar till den valda Microsoft-hanterade kontrollen.
+     - **Beskrivning** – Text i standarden eller förordningen som mappar till den valda Microsoft-hanterade kontrollen.
 
-  b. Efterlevnadspoäng för kontrollen, som anger risknivån (på grund av bristande efterlevnad eller kontrollfel) som är associerad med varje Microsoft-hanterad kontroll. Mer information finns i [Förstå efterlevnadspoängen](#understanding-the-compliance-score). Observera att efterlevnadspoäng betygsätts från 1 till 10 och är färgkodade. Gult indikerar kontroller med låg risk, orange indikerar kontroller med medelhög risk och rött visar kontroller med hög risk.
+  1. Efterlevnadspoäng för kontrollen, som anger risknivån (på grund av bristande efterlevnad eller kontrollfel) som är associerad med varje Microsoft-hanterad kontroll. Mer information finns i [Förstå efterlevnadspoängen](#understanding-the-compliance-score). Observera att efterlevnadspoäng betygsätts från 1 till 10 och är färgkodade. Gult indikerar kontroller med låg risk, orange indikerar kontroller med medelhög risk och rött visar kontroller med hög risk.
 
-  c. Information om implementeringsstatus för en kontroll, det datum då kontrollen testades, vem som utförde testet och testresultatet.
+  1. Information om implementeringsstatus för en kontroll, det datum då kontrollen testades, vem som utförde testet och testresultatet.
 
-  d. För varje kontroll kan du klicka på **Mer** om du vill se ytterligare information, däribland information om Microsofts implementering av kontrollen och information om hur kontrollen har testats och validerats av en oberoende granskare från tredje part.
+  1. För varje kontroll kan du klicka på **Mer** om du vill se ytterligare information, däribland information om Microsofts implementering av kontrollen och information om hur kontrollen har testats och validerats av en oberoende granskare från tredje part.
 
-- **Kundhanterade kontroller** – Det här är samlingen med kontroller som hanteras av din organisation. Din organisation ansvarar för att implementera kontrollerna som en del av efterlevnadsprocessen för en viss standard eller regelefterlevnad. Kundhanterade kontroller är också ordnade i kontrollfamiljer för motsvarande certifiering eller bestämmelser. Använd de kundhanterade kontrollerna till att implementera de rekommenderade åtgärder som föreslås av Microsoft som en del av dina efterlevnadsaktiviteter. Organisationen kan använda vägledningen och rekommenderade kundåtgärder i varje kundhanterad kontroll för att hantera implementerings- och utvärderingsprocessen för den kontrollen.
+- **Kundhanterade kontroller** – Det här är samlingen med kontroller som hanteras av din organisation. Din organisation ansvarar för att implementera kontrollerna som en del av efterlevnadsprocessen för en viss standard eller regelefterlevnad. Kundhanterade kontroller är också ordnade i kontrollfamiljer för motsvarande certifiering eller bestämmelser. Använd de kundhanterade kontrollerna till att implementera de rekommenderade åtgärder som föreslås av Microsoft som en del av dina efterlevnadsaktiviteter. Organisationen kan använda vägledningen och rekommenderade kundåtgärder i varje kundhanterad kontroll för att hantera implementerings- och utvärderingsprocessen för den kontrollen.
 
   Kundhanterade kontroller i Utvärderingar har också inbyggda funktioner för arbetsflödeshantering som du kan använda för att hantera och spåra organisationens framsteg när det gäller att slutföra utvärderingen. En efterlevnadsansvarig i din organisation kan till exempel tilldela en uppgift till en IT-administratör som har ansvar för och nödvändiga behörigheter för att utföra de åtgärder som rekommenderas för kontrollen. När arbetet är klart kan IT-administratören ladda upp bevis på deras implementeringsuppgifter (till exempel skärmbilder av konfigurations- eller principinställningar) och sedan tilldela uppgiften till den som är efterlevnadsansvarig för att utvärdera insamlade bevis, testa implementeringen av kontrollen och registrera implementeringsdatum och testresultat i Efterlevnadshanteraren. Mer information finns i avsnittet [Hantera utvärderingsprocessen](#managing-the-assessment-process) i artikeln.
 
@@ -97,18 +97,18 @@ I följande tabell beskrivs varje behörighet i Efterlevnadshanteraren och vad a
 
 |Behörighet|Läsare i Efterlevnadshanteraren|Deltagare i Efterlevnadshanteraren|Bedömare i Efterlevnadshanteraren|Efterlevnadshanterarens administratör|Portaladministratör|
 |---|:---:|:---:|:---:|:---:|:---:|
-|**Läsa data** – användare kan läsa men inte redigera data.|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
-|**Redigera data** – Användare kan redigera alla fält, förutom fälten Testresultat och Testdatum.||![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
-|**Redigera testresultat** – Användare kan redigera fälten Testresultat och Testdatum.|||![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
-|**Hantera utvärderingar** – Användare kan skapa, arkivera och ta bort utvärderingar.||||![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
-|**Hantera användare** – Användare kan lägga till andra användare i organisationen i rollerna Läsare, Deltagare, Utvärderare och Administratör. Endast de användare som har rollen Global administratör i organisationen kan lägga till eller ta bort användare från rollen Portaladministratör.|||||![Bockmarkering](../media/checkmark.png)|
+|**Läsa data** – användare kan läsa men inte redigera data.|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
+|**Redigera data** – Användare kan redigera alla fält, förutom fälten Testresultat och Testdatum.||![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
+|**Redigera testresultat** – Användare kan redigera fälten Testresultat och Testdatum.|||![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
+|**Hantera utvärderingar** – Användare kan skapa, arkivera och ta bort utvärderingar.||||![Bockmarkering](../media/checkmark.png)|![Bockmarkering](../media/checkmark.png)|
+|**Hantera användare** – Användare kan lägga till andra användare i organisationen i rollerna Läsare, Deltagare, Utvärderare och Administratör. Endast de användare som har rollen Global administratör i organisationen kan lägga till eller ta bort användare från rollen Portaladministratör.|||||![Bockmarkering](../media/checkmark.png)|
 |
 
 ## <a name="understanding-the-compliance-score"></a>Förstå efterlevnadspoängen
 
 Efterlevnadshanteraren visar en total poäng för utvärderingsresultat i Office 365 i det övre högra hörnet av panelen på instrumentpanelen. Det här är det totala efterlevnadsresultatet för utvärderingen och antalet punkter som tagits emot för varje kontrollutvärdering som har markerats som Implementerad och Testad i utvärderingen. När du lägger till en utvärdering ser du att efterlevnadspoängen redan är på väg att slutföras eftersom punkterna för de Microsoft-hanterade kontrollerna som har implementerats av Microsoft och testats av oberoende tredje parter redan tillämpats.
 
-![Instrumentpanel för Efterlevnadshanteraren – Total efterlevnadspoäng](../media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
+![Instrumentpanel för Efterlevnadshanteraren – Total efterlevnadspoäng](../media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
 
 Resten av poängen kommer från den lyckade kundkontrollutvärderingen, från implementeringen och testningen av de kundhanterade kontrollerna, som var och en har ett specifikt värde som bidrar till den övergripande efterlevnadspoängen.
 
@@ -116,11 +116,11 @@ Varje utvärdering visar en riskbaserad efterlevnadspoäng för att hjälpa dig 
 
 Utvärderingskontrollen av användaråtkomsthantering som visas nedan har till exempel en mycket hög allvarlighetsrankning och visar det tilldelade värdet 10.
 
-![Efterlevnadshanteraren – hög allvarlighetsgrad för utvärderingskontroll – 10 poäng](../media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
+![Efterlevnadshanteraren – hög allvarlighetsgrad för utvärderingskontroll – 10 poäng](../media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
 
- I jämförelse har utvärderingskontrollen för säkerhetskopiering av information som visas nedan en lägre allvarlighetsrankning och visar det tilldelade värdet 3.
+I jämförelse har utvärderingskontrollen för säkerhetskopiering av information som visas nedan en lägre allvarlighetsrankning och visar det tilldelade värdet 3.
 
-![Efterlevnadshanteraren – låg allvarlighetsgrad för utvärderingskontroll – 3 poäng](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
+![Efterlevnadshanteraren – låg allvarlighetsgrad för utvärderingskontroll – 3 poäng](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
 
 Efterlevnadshanteraren tilldelar varje kontroll en standardnivå för allvarlighetsrakning. Riskrankningen beräknas utifrån följande kriterier:
 
@@ -136,15 +136,15 @@ De visade värdena för kontrollens efterlevnadspoäng tillämpas *i sin helhet*
 
 Viktigast av allt är att efterlevnadspoängen kan hjälpa dig att prioritera vilka kontroller du ska fokusera på för implementeringen genom att ange vilka kontroller som har en högre potentiell risk om det finns ett fel som rör en kontroll. När utvärderingskontroller är relaterade till andra kontroller (antingen inom samma utvärdering eller i en annan utvärderingsgrupp inom samma utvärderingsgrupp) kan ett lyckat slutförande av en enda kontroll, utöver riskbaserad prioritering, leda till en betydande minskning av arbetet baserat på synkroniseringen av kontrolltestresultaten.
 
-På bilden nedan ser vi till exempel att GDPR-utvärderingen för Office 365 för närvarande är 46 % utvärderad, och att 51 av 111 kontrollutvärderingar har slutförts för en total efterlevnadspoäng på 289 av möjliga 600.
+På bilden nedan ser vi till exempel att GDPR-utvärderingen för Office 365 för närvarande är 46 % utvärderad, och att 51 av 111 kontrollutvärderingar har slutförts för en total efterlevnadspoäng på 289 av möjliga 600.
 
-![Efterlevnadshanteraren – sammanfattning av utvärdering](../media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
+![Efterlevnadshanteraren – sammanfattning av utvärdering](../media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
 
 I GDPR-utvärderingskontrollen här 7.5.5 samman med fem andra kontroller (7.4.1, 7.4.3, 7.4.4, 7.4.8 och 7.4.9). Var och en har en måttlig till hög allvarlighetsrakning på 6 eller 8. Med hjälp av utvärderingsfiltret har vi valt alla de här kontrollerna, vilket gör dem synliga i utvärderingsvyn. Nedan kan vi se att ingen av dem har utvärderats.
 
-![Utvärderingsvyn i Efterlevnadshanteraren – Filterkontroller, inga utvärderade](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Eftersom de sex kontrollerna är relaterade leder slutförande av ett sådant testresultat till en synkronisering av dessa testresultat över de relaterade kontrollerna i den här utvärderingen (precis som för alla relaterade kontroller i en utvärdering som ingår i samma utvärderingsgruppering). När implementeringen och testningen av GDPR-kontrollen 7.5.5 har genomförts uppdateras kontrollinformationsområdet för att visa att alla sex kontrollerna har utvärderats, med en motsvarande ökning av antalet utvärderade kontroller till 57 och 51 % utvärderade och en ändring av den totala efterlevnadspoängen på +40.
+![Utvärderingsvyn i Efterlevnadshanteraren – Filterkontroller, inga utvärderade](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Eftersom de sex kontrollerna är relaterade leder slutförande av ett sådant testresultat till en synkronisering av dessa testresultat över de relaterade kontrollerna i den här utvärderingen (precis som för alla relaterade kontroller i en utvärdering som ingår i samma utvärderingsgruppering). När implementeringen och testningen av GDPR-kontrollen 7.5.5 har genomförts uppdateras kontrollinformationsområdet för att visa att alla sex kontrollerna har utvärderats, med en motsvarande ökning av antalet utvärderade kontroller till 57 och 51 % utvärderade och en ändring av den totala efterlevnadspoängen på +40.
 
-![Utvärderingsvyn i Efterlevnadshanteraren – kontrollresultat synkade](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
+![Utvärderingsvyn i Efterlevnadshanteraren – kontrollresultat synkade](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
 
 Den här bekräftelsedialogrutan för uppdateringar visas om du håller på att ändra implementeringsstatus för en relaterad kontroll på ett sätt som påverkar andra relaterade kontroller.
 
@@ -164,7 +164,7 @@ Utvärderingar i Efterlevnadshanteraren baseras på modellen med delat ansvar f�
 
 Som vi ser i GDPR-utvärderingen av Office 365 nedan är Microsoft och kunderna ansvariga för att utföra en mängd olika åtgärder som är avsedda att uppfylla kraven i den standard eller de bestämmelser som utvärderas. För att effektivisera och förstå det som krävs. Efterlevnadshanteraren behandlar alla standarder och föreskrifter som om de vore kontrollramverk för åtgärder i en mängd olika standarder och föreskrifter. Det innebär att de åtgärder som Microsoft och kunder utför för varje utvärdering innebär implementering och validering av olika kontroller.
 
-![Efterlevnadshanteraren – GDPR-utvärdering](../media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
+![Efterlevnadshanteraren – GDPR-utvärdering](../media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
 
 Här är det grundläggande arbetsflödet för en vanlig åtgärd:
 
@@ -200,7 +200,7 @@ Efterlevnadshanteraren använder en riskbaserad metodik för poängsättning med
 
 - De externa drivrutinerna för kontrollen
 
-![Efterlevnadshanteraren – metodik för efterlevnadspoäng](../media/e48764c4-828e-44b0-8636-fb3c352f2bac.png)
+![Efterlevnadshanteraren – metodik för efterlevnadspoäng](../media/e48764c4-828e-44b0-8636-fb3c352f2bac.png)
 
 ### <a name="essence-of-the-control"></a>Kontrollens natur
 
@@ -208,9 +208,9 @@ Kontrollens natur tilldelas baseras på om de är obligatoriska eller godtycklig
 
 ### <a name="mandatory-or-discretionary"></a>Obligatorisk eller godtycklig
 
- *Obligatoriska kontroller* är kontroller som inte kan kringgås avsiktligt eller oavsiktligt. Ett exempel på en vanlig obligatorisk kontroll är en centralt hanterad lösenordsprincip som ställer in krav på lösenordslängd, komplexitet och utgångsdatum. Användarna måste uppfylla de här kraven för att få åtkomst till systemet.
+*Obligatoriska kontroller* är kontroller som inte kan kringgås avsiktligt eller oavsiktligt. Ett exempel på en vanlig obligatorisk kontroll är en centralt hanterad lösenordsprincip som ställer in krav på lösenordslängd, komplexitet och utgångsdatum. Användarna måste uppfylla de här kraven för att få åtkomst till systemet.
 
- *Godtyckliga kontroller* förlitar sig på att användarna förstår principen och agerar därefter. En princip som till exempel kräver att användare låser sin dator när de lämnar den är en godtycklig kontroll eftersom den är beroende av användaren.
+*Godtyckliga kontroller* förlitar sig på att användarna förstår principen och agerar därefter. En princip som till exempel kräver att användare låser sin dator när de lämnar den är en godtycklig kontroll eftersom den är beroende av användaren.
 
 ### <a name="preventative-detective-or-corrective"></a>Förebyggande, upptäcktsbar eller korrigerande
 
@@ -279,7 +279,7 @@ När du skapar en ny utvärdering uppmanas du att skapa en grupp där du tilldel
 
 Du kan till exempel gruppera utvärderingar per år eller grupper, avdelningar eller institutioner inom organisationen eller gruppera dem per år. Här är några exempel på grupper och de utvärderingar som de kan innehålla.
 
-- GDPR-utvärderingar – 2018
+- GDPR-utvärderingar – 2018
 
   - Office 365 + GDPR
 
@@ -287,7 +287,7 @@ Du kan till exempel gruppera utvärderingar per år eller grupper, avdelningar e
 
   - Dynamics + GDPR
 
-- Azure-utvärderingar – 2018
+- Azure-utvärderingar – 2018
 
   - Azure + GDPR
 
@@ -318,17 +318,17 @@ När en utvärdering lagts till i en utvärderingsgruppering kan grupperingen in
 
 En viktig fördel med att använda grupper, som tidigare har förklarats, är att när två olika utvärderingar i samma grupp delar samma kundhanterade kontroll (och kundåtgärderna skulle vara desamma för varje kontroll), synkroniseras slutförandet av implementeringsinformation, testinformation och status för kontrollen i en utvärdering med samma kontroll i någon annan utvärdering i gruppen. Med andra ord, om utvärderingar har samma kontroll och de utvärderingarna finns i samma grupp behöver du bara hantera utvärderingsprocessen för kontrollen i en utvärdering. Resultatet för kontrollen synkroniseras automatiskt med andra utvärderingar. ISO 27001 och ISO 27018 har till exempel båda en kontroll som är relaterad till lösenordsprinciper. Om teststatusen för kontrollen är inställd på ”Godkänd” i en utvärdering uppdateras kontrollen (och markeras som ”Godkänd”) i den andra utvärderingen, så länge båda utvärderingarna ingår i samma utvärderingsgrupp.
 
-Som ett exempel kan du överväga dessa två relaterade utvärderingskontroller, som var och en har att göra med kryptering av data i offentliga nätverk, kontroll 6.10.1.2 i GDPR-utvärderingen av Office 365 och kontroll SC-13 i Office 365 – NIST 800-53-utvärderingen. Det här är relaterade utvärderingskontroller, i två olika utvärderingar, och båda är i standardgruppen. Till en början har ingen av utvärderingarna slutfört några kundkontrollutvärderingar, vilket visas på instrumentpanelen för Efterlevnadshanteraren som visar dessa två utvärderingar.
+Som ett exempel kan du överväga dessa två relaterade utvärderingskontroller, som var och en har att göra med kryptering av data i offentliga nätverk, kontroll 6.10.1.2 i GDPR-utvärderingen av Office 365 och kontroll SC-13 i Office 365 – NIST 800-53-utvärderingen. Det här är relaterade utvärderingskontroller, i två olika utvärderingar, och båda är i standardgruppen. Till en början har ingen av utvärderingarna slutfört några kundkontrollutvärderingar, vilket visas på instrumentpanelen för Efterlevnadshanteraren som visar dessa två utvärderingar.
 
-![Instrumentpanel för Efterlevnadshanteraren – grupperade utvärderingar – före](../media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
+![Instrumentpanel för Efterlevnadshanteraren – grupperade utvärderingar – före](../media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
 
-Genom att klicka på utvärderingen **Office 365 – GDPR** och använda filterkontrollerna för att visa GDPR-kontrollen 6.10.1.2 ser vi att NIST 800-53-kontrollen SC-13 visas som en relaterad kontroll.
+Genom att klicka på utvärderingen **Office 365 – GDPR** och använda filterkontrollerna för att visa GDPR-kontrollen 6.10.1.2 ser vi att NIST 800-53-kontrollen SC-13 visas som en relaterad kontroll.
 
-![Efterlevnadshanterarens utvärderingar – delade kontroller](../media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
+![Efterlevnadshanterarens utvärderingar – delade kontroller](../media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
 
- Här visar vi slutförande av implementering och testning av GDPR-kontroll 6.10.1.2.
+Här visar vi slutförande av implementering och testning av GDPR-kontroll 6.10.1.2.
 
-![Efterlevnadshanterarens utvärderingskontroll – GDPR 6.10.1.2 – godkänd](../media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
+![Efterlevnadshanterarens utvärderingskontroll – GDPR 6.10.1.2 – godkänd](../media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
 
 När vi navigerar till den relaterade kontrollen i den grupperade utvärderingen ser vi att NIST 800-53 SC-13 också har markerats som slutförd med samma datum och tid, utan ytterligare implementering eller testningsarbete.
 
@@ -336,7 +336,7 @@ När vi navigerar till den relaterade kontrollen i den grupperade utvärderingen
 
 På instrumentpanelen kan vi se att varje utvärdering har en slutförd kontrollutvärdering och att den totala efterlevnadspoängen för varje utvärdering har ökat med 8 (efterlevnadspoängens värde för den delade kontrollen).
 
-![Instrumentpanel för Efterlevnadshanteraren – synkronisering av förlopp för grupperade utvärderingar](../media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
+![Instrumentpanel för Efterlevnadshanteraren – synkronisering av förlopp för grupperade utvärderingar](../media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
 
 ## <a name="administrative-functions"></a>Administrativa funktioner
 
@@ -349,7 +349,7 @@ Det finns särskilda administrativa funktioner som bara är tillgängliga för k
 
 Varje roll i Efterlevnadshanteraren behörigheter som skiljer sig något åt. Du kan visa de behörigheter som tilldelats varje roll, se vilka användare som har vilka roller och lägga till eller ta bort användare från den rollen via Service Trust Portal genom att välja menyobjektet **Administratör** och sedan välja **Inställningar**.
 
-![STP-administratörsmenyn – Inställningar markerat](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![STP-administratörsmenyn – Inställningar markerat](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
 
 Lägga till eller ta bort användare från Efterlevnadshanterarens roller.
 
@@ -407,7 +407,7 @@ När användarkontot har identifierats vill du kanske generera en rapport över 
 
 1. Klicka på **Exportera** om du vill generera och ladda ned en rapport över kontrollåtgärden i Efterlevnadshanteraren som för närvarande är tilldelad till det returnerade användarkontot och listan med dokument som laddats upp av den användaren. Om det inte finns några tilldelade åtgärder eller uppladdade dokument visas felmeddelandet No data for this user (Inga data för den här användaren).
 
-2. Rapporten laddas ned i bakgrunden i det aktiva webbläsarfönstret – om du inte ser ett popup-fönster för nedladdning bör du kontrollera din webbläsares nedladdningshistorik.
+2. Rapporten laddas ned i bakgrunden i det aktiva webbläsarfönstret – om du inte ser ett popup-fönster för nedladdning bör du kontrollera din webbläsares nedladdningshistorik.
 
 3. Öppna dokumentet för att granska rapportdata.
 
@@ -443,7 +443,7 @@ Du måste använda en manuell process för att ändra historiken för dokumentup
 
 5. Ta bort dokumentet från lagringsplatsen för bevismaterial.
 
-6. Ladda upp dokumentet på nytt. Dokumentet får nu ett nytt uppladdningsdatum, tid och Uppladdat av-användarnamn.
+6. Ladda upp dokumentet igen. Dokumentet får nu ett nytt uppladdningsdatum, tid och Uppladdat av-användarnamn.
 
 ### <a name="delete-user-data-history"></a>Ta bort användardatahistorik
 
@@ -461,7 +461,7 @@ Detta ställer in att kontrollåtgärder inte ska tilldelas för alla åtgärder
 
 Efterlevnadshanteraren ger dig verktyg för att tilldela, spåra och registrera efterlevnads- och utvärderingsrelaterade aktiviteter, och för att hjälpa din organisation att komma över hinder i olika team för att uppnå organisationens efterlevnadsmål.
 
-![Instrumentpanel för Efterlevnadshanteraren – övre menyn – uppdaterad administratörsmeny](../media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
+![Instrumentpanel för Efterlevnadshanteraren – övre menyn – uppdaterad administratörsmeny](../media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
 
 ## <a name="accessing-compliance-manager"></a>Åtkomst till Efterlevnadshanteraren
 
@@ -487,7 +487,7 @@ Du kommer åt Efterlevnadshanteraren i Service Trust Portal. Alla som har ett Mi
 
 I Efterlevnadshanteraren finns en praktisk vy över alla dina tilldelade kontrollåtgärdsobjekt så att du snabbt och enkelt kan vidta åtgärder för dem. Du kan visa alla uppgifter eller välja de uppgifter som motsvarar en specifik certifiering genom att klicka på fliken som är kopplad till utvärderingen. I bilden nedan har till exempel fliken GDPR valts ut, som visar kontroller som är relaterade till GDPR-utvärderingen.
 
-![Efterlevnadshanteraren – listan Uppgifter med flera flikar – GDPR markerat](../media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
+![Efterlevnadshanteraren – listan Uppgifter med flera flikar – GDPR markerat](../media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
 
 Så här visar du dina uppgifter:
 
@@ -509,9 +509,9 @@ Så här lägger du till en utvärdering i Efterlevnadshanteraren:
 
 3. Klicka på **Nästa** och gör följande:
 
-   a. Välj en Microsoft-molntjänst att utvärdera efterlevnad för i listrutan **Välj en produkt**.
+   1. Välj en Microsoft-molntjänst att utvärdera efterlevnad för i listrutan **Välj en produkt**.
 
-   b. Välj en certifiering du vill utvärdera den valda molntjänsten mot från **Välj en produkt**.
+   1. Välj en certifiering du vill utvärdera den valda molntjänsten mot från **Välj en produkt**.
 
 4. Klicka på **Lägg till på instrumentpanelen** för att skapa utvärderingen. Utvärderingen läggs till i instrumentpanelen för Efterlevnadshanteraren som en ny panel i slutet av listan över befintliga paneler.
 
@@ -521,7 +521,7 @@ Så här lägger du till en utvärdering i Efterlevnadshanteraren:
 
 6. Klicka på **Åtgärder** om du vill visa tilldelade uppgifter, byt namn på utvärderingsgruppen, exportera utvärderingsrapporten eller arkivera utvärderingen.
 
-   ![Efterlevnadshanteraren – Panelen Utvärdering](../media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
+   ![Efterlevnadshanteraren – Panelen Utvärdering](../media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
 
 ## <a name="copying-information-from-existing-assessments"></a>Kopiera information från befintliga utvärderingar
 
@@ -541,7 +541,7 @@ På samma sätt synkroniseras information från delade kundhanterade kontroller 
 
 1. Leta reda på den utvärderingspanel som motsvarar utvärderingen du vill visa och klicka sedan på namnet på utvärderingen för att öppna den och visa de Microsoft- och kundhanterade kontrollerna som är kopplade till utvärderingen, tillsammans med en lista över de molntjänster som ingår i utvärderingen. Här är ett exempel på utvärderingen för Office 365 och GDPR.
 
-   ![Utvärderingsvyn i Efterlevnadshanteraren – helskärm med bildtext](../media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
+   ![Utvärderingsvyn i Efterlevnadshanteraren – helskärm med bildtext](../media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
 
 2. Det här avsnittet innehåller sammanfattningsinformation för utvärderingen, inklusive namnet på utvärderingens gruppering, produkt, utvärderingsnamn och antal kontroller för utvärdering
 
@@ -567,35 +567,35 @@ Här följer en lista över uppgifter som du kan utföra med hjälp av arbetsfl�
 
    Klicka på trattikonen till höger på sidan för att visa eller dölja **filteralternativkontrollerna**. Med de här kontrollerna kan du ange filtervillkor, och endast de utvärderingskontroller som passar dessa villkor visas nedan. ![Filterkontroller för Efterlevnadshanterarens utvärderingar](../media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
 
-   - **Artiklar** – filtrerar på artikelnamnet och returnerar de utvärderingskontroller som är kopplade till den artikeln. Om du till exempel skriver ”Artikel (5)” returneras en urvalslista med artiklar vars namn innehåller strängen, dvs. Artikel (5)(1)(a), Artikel (5)(1)(b), Artikel (5)(1)(c) osv. Om du väljer artikel (5)(1)(c) returneras kontrollerna som är kopplade till Artikel (5)(1)(c). Det här är flervalsfält som använder en ELLER-operator med flera värden – om du till exempel väljer Artikel (5)(1)(a) och sedan lägger till artikel (5)(1)(c) returnerar filtret kontroller som är kopplade till antingen Artikel (5)(1)(a) eller Artikel (5)(1)(c).
+   - **Artiklar** – filtrerar på artikelnamnet och returnerar de utvärderingskontroller som är kopplade till den artikeln. Om du till exempel skriver ”Artikel (5)” returneras en urvalslista med artiklar vars namn innehåller strängen, dvs. Artikel (5)(1)(a), Artikel (5)(1)(b), Artikel (5)(1)(c) osv. Om du väljer artikel (5)(1)(c) returneras kontrollerna som är kopplade till Artikel (5)(1)(c). Det här är flervalsfält som använder en ELLER-operator med flera värden – om du till exempel väljer Artikel (5)(1)(a) och sedan lägger till artikel (5)(1)(c) returnerar filtret kontroller som är kopplade till antingen Artikel (5)(1)(a) eller Artikel (5)(1)(c).
 
-     ![Utvärderingsvyn i Efterlevnadshanteraren – Filtrera på artikelnamn](../media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
+     ![Utvärderingsvyn i Efterlevnadshanteraren – Filtrera på artikelnamn](../media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
 
-   - **Kontroller** – returnerar listan med kontroller vars namn passar filtret, dvs. om du skriver i 7.3 returneras en urvalslista med objekt som 7.3.1, 7.3.4, 7.3.5 osv. Det här är ett flervalsfält som använder en ELLER-operator med flera värden. Om du till exempel väljer 7.3.1 och lägger till 7.3.4 returnerar filtret kontroller som är kopplade till antingen 7.3.1 eller 7.3.4.
+   - **Kontroller** – returnerar listan med kontroller vars namn passar filtret, dvs. om du skriver i 7.3 returneras en urvalslista med objekt som 7.3.1, 7.3.4, 7.3.5 osv. Det här är ett flervalsfält som använder en ELLER-operator med flera värden. Om du till exempel väljer 7.3.1 och lägger till 7.3.4 returnerar filtret kontroller som är kopplade till antingen 7.3.1 eller 7.3.4.
 
-     ![Utvärderingsvyn i Efterlevnadshanteraren – Filterkontroll, flerval](../media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
+     ![Utvärderingsvyn i Efterlevnadshanteraren – Filterkontroll, flerval](../media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
 
-   - **Tilldelade användare** – returnerar listan med kontroller som har tilldelats till den valda användaren.
+   - **Tilldelade användare** – returnerar listan med kontroller som har tilldelats till den valda användaren.
 
-   - **Status** – returnerar listan med kontroller med markerad status.
+   - **Status** – returnerar listan med kontroller med markerad status.
 
-   - **Testresultat** – returnerar listan med kontroller med markerat testresultat.
+   - **Testresultat** – returnerar listan med kontroller med markerat testresultat.
 
    När du tillämpar filtervillkor ändras vyn för tillämpliga kontroller så att den motsvarar dina filtervillkor. Expandera kontrollfamiljsavsnitten så att kontrollinformationen nedan visas.
 
-   ![Utvärderingsvyn i Efterlevnadshanteraren – Filtrera på artikelresultat](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
+   ![Utvärderingsvyn i Efterlevnadshanteraren – Filtrera på artikelresultat](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
 
 2. Om inga resultat visas när du har valt önskade filter innebär det att det inte finns några kontroller som motsvarar de angivna filtervillkoren. Om du till exempel väljer en viss **Tilldelad användare** och sedan väljer ett **kontrollnamn** som motsvarar kontrollen som tilldelats den användaren visas inga utvärderingar på sidan nedan.
 
-3. **Tilldela en uppgift till en användare** – Du kan tilldela en uppgift till en person för att implementera kraven för en certifiering/förordning eller för att testa, verifiera och dokumentera organisationens implementeringskrav. När du tilldelar en uppgift kan du välja att skicka ett e-postmeddelande till personen som innehåller information inklusive rekommenderade kundåtgärder och prioritet för uppgiften. Du kan också ta bort eller tilldela en uppgift till en annan person.
+3. **Tilldela en uppgift till en användare** – Du kan tilldela en uppgift till en person för att implementera kraven för en certifiering/förordning eller för att testa, verifiera och dokumentera organisationens implementeringskrav. När du tilldelar en uppgift kan du välja att skicka ett e-postmeddelande till personen som innehåller information inklusive rekommenderade kundåtgärder och prioritet för uppgiften. Du kan också ta bort eller tilldela en uppgift till en annan person.
 
-4. **Hantera dokument** – Kundhanterade kontroller har också en plats för att hantera dokument som är relaterade till att utföra implementeringsuppgifter och för att utföra testnings- och verifieringsuppgifter. Alla med behörighet att redigera data i Efterlevnadshanteraren kan ladda upp dokument genom att klicka på **Hantera dokument**. När en dokumentation har laddats upp kan du klicka på **Hantera dokument** för att visa och ladda ned filer.
+4. **Hantera dokument** – Kundhanterade kontroller har också en plats för att hantera dokument som är relaterade till att utföra implementeringsuppgifter och för att utföra testnings- och verifieringsuppgifter. Alla med behörighet att redigera data i Efterlevnadshanteraren kan ladda upp dokument genom att klicka på **Hantera dokument**. När en dokumentation har laddats upp kan du klicka på **Hantera dokument** för att visa och ladda ned filer.
 
-5. **Tillhandahåller implementerings- och testningsinformation** – Varje kundstyrd kontroll har ett redigerbart fält där användarna kan lägga till implementeringsinformation som dokumenterar de steg som din organisation har vidtagit för att uppfylla kraven i certifieringen/förordningarna och för att verifiera och dokumentera hur organisationen uppfyller kraven.
+5. **Tillhandahåller implementerings- och testningsinformation** – Varje kundstyrd kontroll har ett redigerbart fält där användarna kan lägga till implementeringsinformation som dokumenterar de steg som din organisation har vidtagit för att uppfylla kraven i certifieringen/förordningarna och för att verifiera och dokumentera hur organisationen uppfyller kraven.
 
-6. **Ange status** – Ange status för varje objekt som en del av utvärderingsprocessen. Tillgängliga statusvärden är **Implementerad**, **Alternativ implementering**, **Planerad** och **Inte i omfattningen**.
+6. **Ange status** – Ange status för varje objekt som en del av utvärderingsprocessen. Tillgängliga statusvärden är **Implementerad**, **Alternativ implementering**, **Planerad** och **Inte i omfattningen**.
 
-7. **Ange testdatum och testresultat** – Personen med rollen Efterlevnadshanterarens bedömare kan verifiera att korrekt testning har utförts, granska implementeringsinformation, testplan, testresultat och uppladdade bevis och sedan ange testdatum och testresultat. Tillgängliga testresultatvärden är **Godkänd**, **Misslyckades, låg risk**, **Misslyckades, medelhög risk** och **Misslyckades, hög risk**.
+7. **Ange testdatum och testresultat** – Personen med rollen Efterlevnadshanterarens bedömare kan verifiera att korrekt testning har utförts, granska implementeringsinformation, testplan, testresultat och uppladdade bevis och sedan ange testdatum och testresultat. Tillgängliga testresultatvärden är **Godkänd**, **Misslyckades, låg risk**, **Misslyckades, medelhög risk** och **Misslyckades, hög risk**.
 
 ## <a name="managing-action-items"></a>Tilldela uppgifter
 
@@ -668,7 +668,7 @@ När du visar en arkiverad utvärdering kommer ingen av de normalt redigerbara k
 
 ## <a name="using-search"></a>Använda sökning 
 
-![Service Trust Portal – sökinmatningsfältet](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![Service Trust Portal – sökinmatningsfältet](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
 
 Klicka på förstoringsglaset i sidans övre högra hörn om du vill expandera sökinmatningsfältet, ange dina söktermer och tryck på Enter. Sökkontrollen visas med sökordet i inmatningsfältet i sökfönstret och sökresultaten visas under.
 
@@ -678,7 +678,7 @@ Som standard returnerar sökningen dokumentresultat, och du kan använda listrut
 
 Klicka på länken Efterlevnadshanteraren för att visa sökresultat för efterlevnadshanterarens utvärderingskontroller. De sökresultat som visas i listan visar det datum då utvärderingen skapades, namnet på utvärderingsgruppen, den tillämpliga molntjänsten och om kontrollerna är Microsoft eller kundhanterade.
 
-![Service Trust Portal – Söka på kontroller för efterlevnadshantering](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal – Söka på kontroller för efterlevnadshantering](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > Rapporter och dokument från Service Trust Portal finns att ladda ned åtminstone t.o.m. tolv månader efter publicering eller tills en ny version av dokumentet blir tillgänglig.
@@ -687,7 +687,7 @@ Klicka på länken Efterlevnadshanteraren för att visa sökresultat för efterl
 
 På Security Trust Portal kan du visa sidans innehåll på olika språk. Om du vill ändra språk för sidan klickar du på globikonen i det nedre vänstra hörnet på sidan och väljer önskat språk.
 
-![Service Trust Portal – Alternativ för lokaliserat innehåll](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal – Alternativ för lokaliserat innehåll](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="change-log-for-customer-managed-controls"></a>Ändringslogg för kund hanterade kontroller
 
@@ -697,7 +697,7 @@ Efterlevnadshanteraren har utformats för att uppdateras regelbundet med ändrin
 
 - En **mindre** ändring är en mindre viktig ändring av kundåtgärder, till exempel att åtgärda stavfel eller formateringsproblem eller uppdatera eller korrigera hyperlänkar. Mindre ändringar kräver vanligtvis inte att kontrollen utvärderas på nytt, men vi rekommenderar att du granskar den uppdaterade kundåtgärden.
 
-### <a name="customer-managed-controls---change-log-for-july-2018"></a>Kundhanterade kontroller – ändringslogg för juli 2018
+### <a name="customer-managed-controls---change-log-for-july-2018"></a>Kundhanterade kontroller – ändringslogg för juli 2018
 
 |Kontroll-ID|Utvärdering|Ändringstyp|Beskrivning av ändring|Rekommenderade åtgärder för kunder|
 |---|---|---|---|---|---|---|---|---|
@@ -707,7 +707,7 @@ Efterlevnadshanteraren har utformats för att uppdateras regelbundet med ändrin
 45 C.F.R.  § 164.316(b)(2)(iii)| Office 365: HIPAA|Större|Lade till HITECH-kontroll i HIPAA-utvärdering för Office 365|Granska den tillagda kontrollen och rekommenderade kundåtgärder|
 |
 
-### <a name="customer-managed-controls---change-log-for-april-2018"></a>Kundhanterade kontroller – ändringslogg för april 2018
+### <a name="customer-managed-controls---change-log-for-april-2018"></a>Kundhanterade kontroller – ändringslogg för april 2018
 
 |GDPR|HIPAA|ISO 27001|ISO 27018|NIST 800-53|NIST 800-171|Ändringstyp|Beskrivning av ändring|Rekommenderade åtgärder för kunder|
 |---|---|---|---|---|---|---|---|---|
@@ -740,7 +740,7 @@ Efterlevnadshanteraren har utformats för att uppdateras regelbundet med ändrin
 ||45 C.F.R. § 164.308(a)(7)(ii)(E)|||RA-2(a)||Mindre|Länk till hjälpavsnitt för uppdaterad importtjänst för att använda FWLink.|Ingen åtgärd krävs.|
 |
 
-### <a name="gdpr-assessment-control-id-change-reference---change-log-for-february-2018"></a>ID-ändringsreferens för GDPR-utvärderingskontroll – ändringslogg för februari 2018
+### <a name="gdpr-assessment-control-id-change-reference---change-log-for-february-2018"></a>ID-ändringsreferens för GDPR-utvärderingskontroll – ändringslogg för februari 2018
 
 |Tidigare kontroll-ID<br>(Förhandsversion november 2017)|Nytt kontroll-ID<br>(GA-version februari 2018)|
 |---|---|

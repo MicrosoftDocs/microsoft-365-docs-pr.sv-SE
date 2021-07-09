@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Lär dig konfigurera en ny e-postadress för företaget.
-ms.openlocfilehash: df984cbee8bdd1bdd40ca8d9b87c71222db0f69d
-ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+ms.openlocfilehash: 004cdd3abf9b8f8dec34dbfe9739102af081c769
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52065189"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341550"
 ---
 # <a name="set-up-a-new-business-email-address"></a>Konfigurera en ny e-postadress för företaget
 
@@ -55,7 +55,7 @@ Köp ett nytt domännamn för din e-postadress och konfigurera e-postadresserna 
 
 Använd ett domännamn du redan äger, oavsett om du använder den för en webbadress eller en e-postadress hos en annan leverantör. 
 
-## <a name="try-it"></a>Prova själv!
+## <a name="give-it-a-try"></a>Prova själv!
  
 1. Logga in på webbplatsen som är värd för din domän. Klicka på en knapp för att verifiera automatiskt eller uppdatera domänen manuellt. 
 1. Anpassa e-postadressen eller lämna den som den är. 

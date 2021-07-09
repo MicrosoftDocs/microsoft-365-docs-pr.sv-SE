@@ -23,12 +23,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Lär dig hur du kontrollerar historiken för klientdatoranslutningar så att du kan upptäcka nya problem tidigt.
-ms.openlocfilehash: 87b1d43df560fc7fea5aadfbf1c422eb22883067
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928150"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339376"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Prestandajustering för Office 365 med baslinjer och prestandahistorik
 
@@ -54,7 +54,7 @@ Felsökning av prestandan handlar inte om att nå specifika mål och ha ett obes
 
 Först måste du se till att det verkligen handlar om ett prestandaproblem och inte ett problem med själva tjänsten. Prestandaproblem skiljer sig från tjänstproblem i Office 365. Så här skiljer du dem åt.
   
-Om Office 365 tjänst har problem är det ett tjänstproblem. Röda eller gula ikoner visas under Aktuell **status** i Microsoft 365-administrationscentret. Du kanske också märker långsam prestanda på klientdatorer som ansluter till Office 365. Om till exempel en röd ikon visas  under Aktuell status och Undersöker visas bredvid Exchange, kan du också få samtal från personer i organisationen som klagar på att klientpostlådor som använder Exchange Online fungerar dåligt. I så fall är det lämpligt att anta att prestandan Exchange Online hög nivå på tjänsten. 
+Om Office 365 tjänst har problem är det ett tjänstproblem. Röda eller gula ikoner visas under Aktuell **status** i Administrationscenter för Microsoft 365, men prestandan kan också gå långsammare på klientdatorer som ansluter till Office 365. Om till exempel en röd ikon visas  under Aktuell status och Undersöker visas bredvid Exchange, kan du också få samtal från personer i organisationen som klagar på att klientpostlådor som använder Exchange Online fungerar dåligt. I så fall är det lämpligt att anta att prestandan Exchange Online hög nivå på tjänsten. 
   
 ![I Office 365 Hälsa visas alla arbetsbelastningar med grönt, förutom Exchange, som visar Tjänsten har återställts.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -251,7 +251,7 @@ Du måste använda [PSPing](/sysinternals/downloads/psping) eller ett annat verk
     
 2. Gå till den mapp där verktyget (i det här fallet PsPing) är installerat och testa Office 365 URL:er:
     
-  - psping portal.office.com:443
+  - psping admin.microsoft.com:443
     
   - psping microsoft-my.sharepoint.com:443
     
@@ -327,6 +327,6 @@ Om du befinner dig mitt i ett prestandaproblem blir många av stegen desamma som
   
 För att ta itu med  *ett prestandaproblem*  just nu måste du göra en spårning när du upplever prestandaproblemet. Du måste ha tillgång till rätt verktyg för att samla in loggar och du behöver en handlingsplan, det vill säga en lista över felsökningsåtgärder för att samla in den bästa information som du kan. Det första du behöver göra är att registrera datum och tid för testet så att filerna kan sparas i en mapp som speglar tidsinställningen. Därefter går du vidare till själva problemstegen. Det här är de exakta steg du kommer att använda för att testa. Kom ihåg grunderna: om problemet endast är med Outlook ska du se till att problemet bara sker i en Office 365 tjänst. Genom att begränsa problemets omfattning kan du fokusera på något du kan lösa. 
   
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Mer information finns även i
 
 [Hantera Office 365-slutpunkter](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)

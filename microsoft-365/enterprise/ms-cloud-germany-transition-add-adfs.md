@@ -18,17 +18,17 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Ad FS-migreringssteg (Active Directory Federation Services) för migreringen från Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c8e784c8e582185b4bdebc0cb359cc4c19503d1a
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165663"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339616"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>AD FS-migreringssteg för migreringen från Microsoft Cloud Deutschland
 
 Den här konfigurationsändringen måste tillämpas när som helst innan fas 2 startar.
-När fas 2 är slutförd kommer konfigurationsändringen att fungera och du kan logga in via Office 365 globala slutpunkter som `https://portal.office.com` . Om du implementerar konfigurationsändringen före fas 2 fungerar  inte de globala Office 365-slutpunkterna ännu men det nya förtroende för den beroende parten är fortfarande en del av AD FS-konfigurationen (Active Directory Federation Services).
+När fas 2 är slutförd kommer konfigurationsändringen att fungera och du kan logga in via Office 365 globala slutpunkter som `https://admin.microsoft.com` . Om du implementerar konfigurationsändringen före fas 2 fungerar  inte de globala Office 365-slutpunkterna ännu men det nya förtroende för den beroende parten är fortfarande en del av AD FS-konfigurationen (Active Directory Federation Services).
 
 Kunder som använder federerad autentisering med AD FS (Active Directory Federation Services) bör inte göra ändringar i utfärdare AV URI:er som används för alla autentiseringar med AD DS (Lokal Active Directory Domain Services) under migreringen. Att ändra utfärdare-URI:er leder till autentiseringsfel för användare i domänen. Uri:er för utfärdare kan ändras direkt i  AD FS eller när en domän konverteras från hanterad _till federerad_ och tvärtom. Vi rekommenderar att du inte lägger till, tar bort eller konverterar en federerad domän i Azure AD-klientorganisationen som har migrerats. Uri:er för utfärdare kan ändras när migreringen är fullständig.
 

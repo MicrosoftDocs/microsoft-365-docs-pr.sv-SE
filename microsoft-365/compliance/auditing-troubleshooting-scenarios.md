@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Lär dig hur du använder verktyget Microsoft 365 granskningsloggsökning för att felsöka vanliga supportproblem för e-postkonton.
-ms.openlocfilehash: 5f753163b5d4d6c04c121a7ce3fae970690a57b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 22d511fa2ad538c4ec9729fb051caefad6c3e974
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52161924"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341060"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>Söka i granskningsloggen för att undersöka vanliga supportproblem
 
@@ -49,18 +49,18 @@ Du måste ha tilldelats rollen View-Only granskningsloggar eller granskningslogg
 
 I det här avsnittet beskrivs grunderna för att skapa och köra granskningsloggsökningar. Använd de här instruktionerna som utgångspunkt för varje felsökningsscenario i den här artikeln. Mer detaljerade anvisningar finns i Söka [i granskningsloggen](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Gå till [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) och logga in med ditt arbets- eller skolkonto.
+1. Gå till <https://compliance.microsoft.com/auditlogsearch> och logga in med ditt arbets- eller skolkonto.
     
-    Sidan **Sökning i granskningslogg** visas. 
+    Sidan **Granska** visas. 
     
-    ![Konfigurera villkor och välj sedan Sök för att köra sökningen](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Konfigurera villkor och välj sedan Sök för att köra sökningen](../media/AuditLogSearchPage1.png)
   
 4. Du kan konfigurera följande sökvillkor. Varje felsökningsscenario i den här artikeln rekommenderar särskild vägledning för hur du konfigurerar dessa fält.
     
-    a. **Aktiviteter:** Välj listrutan för att visa de aktiviteter som du kan söka efter. När du har kört sökningen visas bara granskningsposterna för de markerade aktiviteterna. Om **du markerar Visa resultat för alla** aktiviteter visas resultat för alla aktiviteter som uppfyller de andra sökvillkoren. Du måste också lämna fältet tomt i vissa felsökningsscenarier.
-    
-    b. **Startdatum och** **Slutdatum: Välj ett** datum- och tidsintervall för att visa händelser som inträffat inom den perioden. De senaste sju dagarna är valda som standard. Datum och tid presenteras i UTC-format (Coordinated Universal Time). Det maximala datumintervall som du kan ange är 90 dagar.
+   a. **Startdatum och** **Slutdatum: Välj ett** datum- och tidsintervall för att visa händelser som inträffat inom den perioden. De senaste sju dagarna är valda som standard. Datum och tid presenteras i UTC-format (Coordinated Universal Time). Det maximala datumintervall som du kan ange är 90 dagar.    
 
+   b. **Aktiviteter:** Välj listrutan för att visa de aktiviteter som du kan söka efter. När du har kört sökningen visas bara granskningsposterna för de markerade aktiviteterna. Om **du markerar Visa resultat för alla** aktiviteter visas resultat för alla aktiviteter som uppfyller de andra sökvillkoren. Du måste också lämna fältet tomt i vissa felsökningsscenarier.
+    
     c. **Användare:** Klicka i den här rutan och välj sedan en eller flera användare som du vill visa sökresultat för. Granskningsposter för den valda aktiviteten som utförts av de användare du väljer i den här rutan visas i resultatlistan. Lämna rutan tom för att returnera poster för alla användare (och tjänstkonton) i organisationen.
     
     d. **Fil, mapp eller webbplats:** Skriv en del av eller hela fil- eller mappnamnet för att söka efter aktivitet relaterad till filen i mappen som innehåller det angivna nyckelordet. Du kan också ange en URL-adress till en fil eller mapp. Om du använder en URL-adress måste du se till att skriva den fullständiga URL-sökvägen eller, om du bara skriver en del av URL-adressen, inte innehåller några specialtecken eller blanksteg. Lämna rutan tom för att returnera poster för alla filer eller mappar i organisationen. Det här fältet är tomt i alla felsökningsscenarier i den här artikeln.
@@ -164,7 +164,7 @@ När du har kört sökningen kan du filtrera sökresultatet och visa gransknings
 
 ### <a name="recover-deleted-email-items"></a>Återskapa borttagna e-postobjekt
 
-Användare kan återställa mjukt borttagna objekt om bevarandeperioden för borttagna objekt inte har gått ut. I Exchange Online är standardlagringstiden för borttagna objekt 14 dagar, men administratörer kan öka den här inställningen till högst 30 dagar. Peka på artikeln [Återskapa borttagna objekt eller e-Outlook](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) i webbartikeln om du vill ha anvisningar för hur du återställer borttagna objekt.
+Användare kan återställa mjukt borttagna objekt om bevarandeperioden för borttagna objekt inte har gått ut. I Exchange Online är standardlagringstiden för borttagna objekt 14 dagar, men administratörer kan öka den här inställningen till högst 30 dagar. I artikeln Återskapa [borttagna objekt eller e-post i Outlook på webben](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) finns anvisningar för hur du återställer borttagna objekt.
 
 Som tidigare förklarats kan administratörer eventuellt återställa permanent borttagna objekt om bevarandeperioden för borttagna objekt inte har gått ut eller om postlådan är undantaget. I sådana fall bevaras objekt tills bevarandetiden går ut. När du kör en innehållssökning returneras mjuka borttagna och permanent borttagna objekt i mappen Återställningsbara objekt i sökresultatet om de matchar sökfrågan. Mer information om hur du kör innehållssökningar finns i [Innehållssökning i Office 365](content-search.md).
 

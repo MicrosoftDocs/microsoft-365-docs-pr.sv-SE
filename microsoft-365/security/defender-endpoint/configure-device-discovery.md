@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ee56ed2949ea72771d8f08570d4352dbe7548d52
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7125a6953b9be46af9073b50c9268ce65dc0cd30
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286951"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339537"
 ---
 # <a name="configure-device-discovery"></a>Konfigurera enhetsidentifiering
 
@@ -43,8 +43,8 @@ Identifiering kan konfigureras att ske i standard- eller standardläge. Använd 
 Du kan anpassa listan med enheter som används för standardidentifiering. Du kan antingen aktivera standardidentifiering för alla enheter som har stöd för den här funktionen (för närvarande endast Windows 10-enheter) eller välja en delmängd eller delmängder av dina enheter genom att ange deras enhetstaggar.
 
 > [!IMPORTANT]
-> För förhandsgranskning måste du först aktivera förhandsgranskningsfunktionerna i Microsoft Defender Säkerhetscenter.
-> Du kan sedan komma åt konfigurationen för enhetsidentifiering Microsoft 365 säkerhetscenter. Listan över ohanterade enheter och säkerhetsrekommendationer blir tillgänglig i både säkerhetscentret i Microsoft Defender Säkerhetscenter och Microsoft 365, medan panelerna på instrumentpanelen bara är tillgängliga i Microsoft 365 säkerhetscenter.
+> För förhandsgranskning måste du först aktivera förhandsgranskningsfunktionerna i Microsoft 365 Defender.
+> Du kan sedan komma åt konfigurationen för enhetsidentifiering Microsoft 365 säkerhetscenter. Listan över ohanterade enheter och säkerhetsrekommendationer blir tillgänglig i både säkerhetscentret i Microsoft 365 Defender och Microsoft 365, medan instrumentpanelerna bara är tillgängliga i Microsoft 365 säkerhetscenter.
 
 Gör följande i Microsoft 365 säkerhetscenter:
 
@@ -111,7 +111,7 @@ DeviceNetworkInfo
 | where NetworkName == "<your network name here>"
 ```
 
-## <a name="see-also"></a>Se även
+## <a name="see-also"></a>Mer information finns även i
 
 - [Översikt över enhetsidentifiering](device-discovery.md)
 - [Vanliga frågor och svar om enhetsupptäckt](device-discovery-faq.md)

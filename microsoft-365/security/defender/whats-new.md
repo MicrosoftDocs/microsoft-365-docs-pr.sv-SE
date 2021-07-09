@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 78783ab98c50252115c28008680197256bfd7aa5
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: af5efb669b1f73b4008ac2c3fae251a4d08511dd
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114743"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53340990"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nyheter i Microsoft 365 Defender
 
@@ -38,8 +38,10 @@ RSS-feed: Få ett meddelande när sidan uppdateras genom att kopiera och klistra
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>Juni 2021
-- Hottaggar [Microsoft 365 Defender rapporten om hotanalys](threat-analytics.md) <br> Hottaggar hjälper dig att fokusera på specifika hotkategorier och granska de mest relevanta rapporterna. 
+
+## <a name="july-2021"></a>Juli 2021
+- [Katalog med professionella tjänster](https://sip.security.microsoft.com/interoperability/professional_services)<br>Förbättra plattformens funktioner för identifiering, undersökning och hotinformation med partneranslutningar som stöds.
+    
 
 ## <a name="may-2021"></a>Maj 2021
 

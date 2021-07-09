@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6d4845163996dcc00ccfcc6c87eb27aff87268fc
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228729"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339198"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Kontakta support för Microsoft Defender för Endpoint
 
@@ -58,9 +58,9 @@ Allmän information om administratörsroller finns i [Om administratörsroller.]
 
     ![Bild av widget när frågetecken markeras](images/support-widget.png)
 
-2. Klickar du på **behöver du hjälp?**  längst ned till höger i Microsoft Defender Säkerhetscenter:
+2. Klickar du på **behöver du hjälp?**  längst ned till höger på Microsoft 365 Defender portalen:
 
-    ![Bild av hjälpknappen som behövs](images/need-help.png)
+    ![Bild av hjälpknappen som behövs](images/need-help-option.png)
 
 I widgeten erbjuds du två alternativ:
 
@@ -70,7 +70,7 @@ I widgeten erbjuds du två alternativ:
 ## <a name="find-solutions-to-common-problems"></a>Hitta lösningar på vanliga problem
 Det här alternativet innehåller artiklar som kan vara relaterade till den fråga du kan ställa. Börja skriva frågan i sökrutan så visas artiklar relaterade till sökningen.
 
-![Bild på hjälpwidget som behövs](images/Support3.png)
+![Bild på hjälpwidget som behövs](images/information-on-help-screen.png)
 
 Om de föreslagna artiklarna inte är tillräckliga kan du öppna en tjänstbegäran.
 
@@ -85,7 +85,7 @@ Lär dig hur du öppnar supportärenden genom att kontakta Defender för Endpoin
 
 Du kan välja det här alternativet genom att klicka på ikonen som ser ut som ett headset. Du får sedan följande sida för att skicka ditt supportfall:
 
-![Bild av widgeten öppna en tjänstförfrågan](images/Support4.png)
+![Bild av widgeten öppna en tjänstförfrågan](images/contact-support-screen.png)
 
 1. Fyll i en titel och beskrivning av ditt problem, samt ett telefonnummer och en e-postadress som vi kan nå dig på.
 

@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Läs mer om grundläggande felsökningssteg du kan vidta för att lösa vanliga problem Office 365 eDiscovery.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 0b118a97df765321704a995905de797e06a60108
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822244"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339424"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Undersöka, felsöka och lösa vanliga eDiscovery-problem
 
@@ -99,7 +99,7 @@ Det felmeddelandet kan visas när du kör en eDiscovery-sökning som innehåller
 Den föreslagna lösningen är att indexera om webbplatsen manuellt eller vänta tills webbplatsen indexeras om av den automatiska bakgrundsprocessen.
 
 
-## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Fel/problem: Sökresultatet har inte laddats ned eftersom det är en mapp eller andra objekt som inte kan laddas ned själv, och objekt i mappen eller biblioteket laddas ned.
+## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artifact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Fel/problem: Sökresultatet laddades inte ned eftersom det är en mapp eller andra artefakter som inte kan laddas ned själva, inga objekt i mappen eller biblioteket laddas ned.
 
 Det felmeddelandet kan visas när du kör en eDiscovery-sökning som innehåller SharePoint Online- och One Drive för företag-platser. Det innebär att vi skulle försöka exportera objektet som rapporterats i indexet, men det visades vara en mapp så vi exporterade det inte. Som nämns i felet exporterar vi inte mappobjekt men vi exporterar innehållet.
 
@@ -122,7 +122,7 @@ En eDiscovery-sökning misslyckas och felmeddelandet `recipient not found` . Det
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>Fel/problem: Det går långsamt att exportera sökresultat
 
-När du exporterar sökresultat från eDiscovery eller innehållssökning i säkerhets- och efterlevnadscentret tar nedladdningen längre tid än väntat.  Du kan kontrollera hur mycket data som ska laddas ned och eventuellt öka exporthastigheten.
+När du exporterar sökresultat från bas-eDiscovery eller innehållssökning i Microsoft 365 Efterlevnadscenter tar nedladdningen längre tid än väntat.  Du kan kontrollera hur mycket data som ska laddas ned och eventuellt öka exporthastigheten.
 
 ### <a name="resolution"></a>Lösning
 
@@ -145,6 +145,16 @@ När du exporterar sökresultat från eDiscovery eller innehållssökning i säk
 5. Leta efter eventuella fel i filen trace.log i katalogen som du exporterade innehållet till.
 
 6. Om du fortfarande har problem kan du dela upp sökningar som returnerar en stor uppsättning resultat i mindre sökningar. Du kan till exempel använda datumintervall i sökfrågor för att returnera ett mindre antal resultat som kan laddas ned snabbare.
+
+## <a name="errorissue-export-process-not-progressing-or-is-stuck"></a>Fel/problem: Exporten fortskrider inte eller fastnar
+
+Vid export av sökresultat från bas-eDiscovery eller innehållssökning i Microsoft 365 Efterlevnadscenter, fortskrider exporten inte eller verkar ha fastnat.
+
+### <a name="resolution"></a>Lösning
+
+1. Om det behövs kör du sökningen igen. Om sökningen kördes senast för mer än sju dagar sedan måste du köra sökningen igen.
+
+2. Starta om exporten.
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>Fel/problem: "Internt serverfel (500) uppstod"
 
@@ -222,7 +232,7 @@ När exporten har slutförts visas noll filer i resultatet när nedladdningen sl
 
 ### <a name="resolution"></a>Lösning
 
-Det här är ett klientproblem och försök med följande steg för att åtgärda det:
+Det här är ett klientproblem. Så här åtgärdar du det:
 
 1. Prova att använda en annan klient/dator för att ladda ned.
 

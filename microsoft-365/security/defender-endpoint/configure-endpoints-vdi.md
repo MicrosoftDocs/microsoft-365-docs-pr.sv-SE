@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: d09967a18848365702f52f65a7f0624d2b2ae3d6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 555f96dc1f45fb6a406b5993d0b8e4a3745c283b
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843216"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339640"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Registrera icke beständiga enheter för virtual desktop infrastructure (VDI)
+# <a name="onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Hantera de icke-beständiga VDI-enheterna (Virtual Desktop Infrastructure)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -63,9 +63,9 @@ Följande steg vägleder dig genom introduktionen av VDI-enheter och visar steg 
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>För Windows 10 eller Windows Server 2019
 
-1.  Öppna filen för VDI-.zip *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för service onboarding. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1.  Öppna filen för VDI-.zip *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för service onboarding. Du kan också hämta paketet från [Microsoft 365 Defender portal:](https://security.microsoft.com/)
 
-    1.  I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**.
+    1. I navigeringsfönstret väljer du **Inställningar**  >  **Endpoints**  >  **Device Management**  >  **Onboarding**.
 
     1. Välj Windows 10 som operativsystem.
 
@@ -111,11 +111,11 @@ Följande steg vägleder dig genom introduktionen av VDI-enheter och visar steg 
    
       - För enskild inmatning för varje enhet: 
     
-        Markera bara en post i Microsoft Defender Säkerhetscenter.
+        Kontrollera bara en post i Microsoft 365 Defender portal.
 
       - För flera poster för varje enhet: 
        
-        Kontrollera flera poster i Microsoft Defender Säkerhetscenter.
+        Kontrollera flera poster i Microsoft 365 Defender portal.
 
 6. Klicka **på listan** Enheter i navigeringsfönstret.
 

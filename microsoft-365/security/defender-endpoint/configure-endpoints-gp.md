@@ -1,6 +1,6 @@
 ---
 title: Introducera Windows 10-enheter i Microsoft Defender för slutpunkt via grupprincip
-description: Använd grupprincip för att distribuera konfigurationspaketet på Windows 10-enheter så att de förs in i tjänsten.
+description: Använd grupprincip för att distribuera konfigurationspaketet på Windows 10-enheter så att de förs över till tjänsten.
 keywords: konfigurera enheter med grupprincip, enhetshantering, konfigurera Microsoft Defender för slutpunktsenheter, hantera Microsoft Defender för slutpunktsenheter, grupprincip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 26bdb0fbdb417d9e7fb01e4c3a863c44e57b7fb7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326969"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339628"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>Introducera Windows 10 enheter med grupprincip 
+# <a name="onboard-the-windows-10-devices-using-group-policy"></a>Få igång Windows 10-enheter med grupprincip 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "53326969"
 
 Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) se de olika sökvägarna i distribuera Defender för Endpoint.
 
-1. Öppna filen för GP.zip konfigurationspaket *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för registrering av tjänster. Du kan också hämta paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1. Öppna filen för GP.zip konfigurationspaket *(WindowsDefenderATPOnboardingPackage.zip)* som du laddade ned från guiden för registrering av tjänster. Du kan också hämta paketet från [Microsoft 365 Defender portal:](https://security.microsoft.com/)
 
-    1. I navigeringsfönstret väljer du **Inställningar**  >  **Onboarding**.
+    1. I navigeringsfönstret väljer du **Inställningar**  >  **Endpoints**  >  **Device Management**   >  **Onboarding**.
 
     1. Välj Windows 10 som operativsystem.
 
@@ -69,7 +69,7 @@ Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public
 
 7. Välj **Kör om användaren är inloggad eller inte** och markera kryssrutan Kör med **högst** behörighet.
 
-8. Gå till fliken **Åtgärder** och klicka på **Ny...** Kontrollera att **Starta ett program** är markerat i **fältet** Åtgärd. Ange filnamnet och platsen för den delade *filen WindowsDefenderATPOnboardingScript.cmd.*
+8. Gå till fliken **Åtgärder** och klicka på **Ny...** Kontrollera att **Starta ett program** är markerat i **fältet** Åtgärd. Ange NetBIOS-sökvägen till den delade *filen WindowsDefenderATPOnboardingScript.cmd.*
 
 9. Klicka **på OK** och stäng alla öppna GPMC-fönster.
 
@@ -77,7 +77,7 @@ Läs PDF- [eller](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public
 > När du har introducerat enheten kan du välja att köra ett identifieringstest för att verifiera att enheten är korrekt onboarded till tjänsten. Mer information finns i Köra [ett identifieringstest på en nyligen onboarded Defender för Slutpunkt-enhet](run-detection-test.md).
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Ytterligare Defender för konfigurationsinställningar för slutpunkt
-För varje enhet kan du ange om exempel kan samlas in från enheten när en begäran görs via Microsoft Defender Säkerhetscenter att skicka in en fil för djupanalys.
+För varje enhet kan du ange om exempel kan samlas in från enheten när en begäran görs via Microsoft 365 Defender för att skicka in en fil för djupanalys.
 
 Du kan använda Grupprincip (GP) för att konfigurera inställningar, till exempel inställningar för exempeldelningen som används i funktionen djupanalys.
 
@@ -189,9 +189,9 @@ Av säkerhetsskäl upphör paketet som används till Offboard-enheter 30 dagar e
 > [!NOTE]
 > Principer för onboarding och offboarding får inte distribueras på samma enhet samtidigt, annars kan det orsaka oförutsägbara tavlor.
 
-1. Hämta offboarding-paketet från [Microsoft Defender Säkerhetscenter:](https://securitycenter.windows.com/)
+1. Hämta offboarding-paketet från [Microsoft 365 Defender portalen:](https://security.microsoft.com/)
 
-    1. I navigeringsfönstret väljer du **Inställningar**  >  **Offboarding**.
+    1. I navigeringsfönstret väljer du **Inställningar**  >  **Ändpunkter**  >  **Enhetshantering**  >  **Offboarding**.
 
     1. Välj Windows 10 som operativsystem.
 
@@ -224,8 +224,8 @@ Med Grupprincip finns det inte något alternativ för att övervaka distribution
 
 ## <a name="monitor-devices-using-the-portal"></a>Övervaka enheter med hjälp av portalen
 
-1. Gå till [Microsoft Defender Säkerhetscenter](https://securitycenter.windows.com/).
-2. Klicka **på listan Enheter.**
+1. Gå till [Microsoft 365 Defender portalen](https://security.microsoft.com/).
+2. Klicka **på Inventering av enheter**.
 3. Kontrollera att enheter visas.
 
 > [!NOTE]

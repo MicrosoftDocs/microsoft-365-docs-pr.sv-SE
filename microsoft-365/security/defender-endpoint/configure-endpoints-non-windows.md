@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 265a7e9093638caa2111c7d1d82e51c8c2437d12
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845468"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339676"
 ---
 # <a name="onboard-non-windows-devices"></a>Introducera icke-Windows-enheter
 
@@ -38,7 +38,7 @@ ms.locfileid: "52845468"
 
 >Vill du använda Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-Defender för Endpoint tillhandahåller en centraliserad säkerhetsoperationer för både Windows och icke-Windows plattformar. Du kan se aviseringar från olika operativsystem som stöds (OS) i Microsoft Defender Säkerhetscenter och bättre skydda organisationens nätverk. 
+Defender för Endpoint tillhandahåller en centraliserad säkerhetsoperationer för både Windows och icke-Windows plattformar. Du kan se aviseringar från olika operativsystem som stöds (OS) i Microsoft 365 Defender och bättre skydda organisationens nätverk. 
 
 Du måste känna till exakt vilka Linux-distributioner och macOS-versioner som är kompatibla med Defender för Endpoint för att integreringen ska fungera. Mer information finns i:
 - [Systemkrav för Microsoft Defender för Slutpunkt på Linux](microsoft-defender-endpoint-linux.md#system-requirements)  

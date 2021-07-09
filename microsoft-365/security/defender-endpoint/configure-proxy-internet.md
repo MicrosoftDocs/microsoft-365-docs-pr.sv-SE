@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: af50e3c2a6db1a09d546bfa06b26c80dcf4481e5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290093"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338727"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurera enhetsproxy och internetanslutningsinställningar
 
@@ -170,7 +170,7 @@ Läs följande vägledning för att ta bort jokertecknet (*) för din specifika 
 
 1. Introducera ett tidigare operativsystem med Microsoft Monitoring Agent (MMA) i Defender för Slutpunkt (mer information finns i Hantera tidigare versioner av [Windows på Defender](https://go.microsoft.com/fwlink/p/?linkid=2010326) för slutpunkt och onboard [Windows-servrar](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
 
-2. Kontrollera att datorn rapporterar till Microsoft Defender Säkerhetscenter portalen.
+2. Kontrollera att datorn rapporterar till Microsoft 365 Defender portalen.
 
 3. Kör verktyget TestCloudConnection.exe C:\Program\Microsoft Monitoring Agent\Agent" för att verifiera anslutningen och visa de URL-adresser som krävs för den specifika arbetsytan.
 
@@ -178,7 +178,7 @@ Läs följande vägledning för att ta bort jokertecknet (*) för din specifika 
 
     ![Bild av administratör i Windows PowerShell](images/admin-powershell.png)
 
-De jokertecken ( ) som används i URL-slutpunkterna för .ods.opinsights.azure.com, .oms.opinsights.azure.com och .agentsvc.azure-automation.net kan ersättas med ditt \* \* specifika \* \* Arbetsyte-ID. Arbetsyte-ID:t är specifikt för din miljö och arbetsyta och finns i avsnittet Registrering för klientorganisationen i Microsoft Defender Säkerhetscenter portal.
+De jokertecken ( ) som används i URL-slutpunkterna för .ods.opinsights.azure.com, .oms.opinsights.azure.com och .agentsvc.azure-automation.net kan ersättas med ditt \* \* specifika \* \* Arbetsyte-ID. Arbetsyte-ID:t är specifikt för din miljö och arbetsyta och finns i avsnittet Registrering för klientorganisationen i Microsoft 365 Defender portalen.
 
 URL-slutpunkten .blob.core.windows.net kan ersättas med URL:erna som visas i \* avsnittet "Brandväggsregel: \* .blob.core.windows.net" i testresultaten.
 

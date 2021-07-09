@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b83e6682ce0c11d076e0bbef60fdef365c9be564
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: eb9e4b905112d3d144b10d68418695df3cda29cb
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471107"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339256"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Verifiera datalagringsplatsen och uppdatera datalagringsinställningarna för Microsoft Defender för Endpoint
 
@@ -42,13 +42,13 @@ När du har slutfört introduktionen kan du verifiera ditt val på sidan instäl
 ## <a name="verify-data-storage-location"></a>Verifiera datalagringsplatsen
 Under fasen [Konfigurera skulle](production-deployment.md)du ha valt plats för att lagra data. 
 
-Du kan verifiera dataplatsen genom att gå till **Inställningar**  >  **Datalagring**.
+Du kan verifiera dataplatsen genom att gå till **Inställningar**  >  **datalagringsslutpunkter.**  >  
 
 ## <a name="update-data-retention-settings"></a>Uppdatera inställningar för datalagring
 
 Du kan uppdatera inställningarna för datalagring. Bevarandetiden är som standard 180 dagar. 
 
-1. Välj Datalagring Inställningar   >  **i navigeringsfönstret.**
+1. Välj Datalagringsslutpunkter **Inställningar**  >  **navigeringsfönstret.**  >  
 
 2. Välj varaktigheten för datalagringen i listrutan.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Här beskrivs hur du kommer igång med Core eDiscovery i Microsoft 365. När du tilldelar eDiscovery-behörigheter och skapar ett ärende kan du lägga till medlemmar, skapa eDiscovery-innehåll som sätts i innehåll och sedan söka efter och exportera innehåll som är relevant för din undersökning.
-ms.openlocfilehash: 00506c2f072fff6aa30c7d96bffdc18eb5eda20b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 9466b2e3268a447a4008363e88290d4d02558c76
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311022"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341478"
 ---
 # <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Komma igång med Core eDiscovery i Microsoft 365
 
@@ -34,19 +34,19 @@ I den här artikeln beskrivs de steg som krävs för att konfigurera Bas-eDiscov
 
 Licensiering för bas-eDiscovery kräver rätt organisationsprenumeration och licensiering per användare.
 
-- **Organisationsprenumeration:** För att få tillgång till Grundläggande eDiscovery i efterlevnadscentret för Microsoft 365 eller efterlevnadscentret för Office 365 Security & och använda funktionerna för att hålla och exportera måste organisationen ha en Microsoft 365 E3- eller Office 365 E3-prenumeration eller senare.
+- **Organisationsprenumeration:** För att få tillgång till grundläggande eDiscovery i Microsoft 365 Efterlevnadscenter eller Office 365 Security & Compliance Center och använda funktionerna för att hålla och exportera måste organisationen ha en Microsoft 365 E3 eller Office 365 E3-prenumeration eller senare.
 
 - **Licensiering per användare:** För att kunna skapa ett eDiscovery-tillstånd för postlådor och webbplatser måste en användare tilldelas någon av följande licenser, beroende på organisationens prenumeration:
 
-  - En Microsoft 365 E3 eller Office 365 E3-licens eller senare
+  - En Microsoft 365 E3 licens Office 365 E3 eller senare
 
    ELLER
 
-  - Office 365 E1-licens med Exchange Online abonnemang 2 Exchange Online - arkivering eller en tilläggslicens
+  - Office 365 E1 licens med Exchange Online abonnemang 2 eller Exchange Online - arkivering med tilläggslicens
 
   OCH
 
-  - Office 365 E1-licens med SharePoint onlineabonnemang 2 eller OneDrive för företag abonnemang 2 med tilläggslicens
+  - Office 365 E1 licens med en tilläggslicens SharePoint Online abonnemang 2 OneDrive för företag abonnemang 2
   
   Mer information om hur du tilldelar licenser finns [i Tilldela licenser till användare.](../admin/manage/assign-licenses-to-users.md)
 
@@ -62,7 +62,7 @@ För att få åtkomst till grundläggande eDiscovery eller läggas till som medl
 
 Utför följande steg för att lägga till användare i rollgruppen för eDiscovery-hanteraren:
 
-1. Gå till [https://protection.office.com/permissions](https://protection.office.com/permissions) och logga in med autentiseringsuppgifterna för ett administratörskonto i din Microsoft 365 eller Office 365 organisation.
+1. Gå till <https://compliance.microsoft.com/permissions> och logga in med autentiseringsuppgifterna för ett administratörskonto i din Microsoft 365 eller Office 365 organisation.
 
 2. På sidan **Behörigheter** väljer du **rollgruppen för eDiscovery-hanteraren.**
 
@@ -100,7 +100,7 @@ Nästa steg är att skapa ett ärende och börja använda Core eDiscovery. Så h
 
 1. Gå till [https://compliance.microsoft.com](https://compliance.microsoft.com) och logga in med autentiseringsuppgifterna för ett användarkonto som har tilldelats lämpliga eDiscovery-behörigheter. Medlemmar i rollgruppen Organisationshantering kan också skapa grundläggande eDiscovery-ärenden.
 
-2. I det vänstra navigeringsfönstret i Microsoft 365 kompatibilitetscenter klickar du på Visa alla **och** sedan på **eDiscovery > Core**.
+2. I navigeringsfönstret till vänster på fliken Microsoft 365 Efterlevnadscenter på Visa **alla** och sedan på **eDiscovery > Core**.
 
 3. På sidan **Bas-eDiscovery** klickar du på **Skapa ett ärende.**
 
@@ -114,7 +114,7 @@ Nästa steg är att skapa ett ärende och börja använda Core eDiscovery. Så h
 
 Om du skapar ett ärende i steg 3 och är den enda personen som kommer att använda ärendet behöver du inte utföra det här steget. Du kan börja använda ärendet för att skapa eDiscovery-innehåll, söka efter innehåll och exportera sökresultat. Utför det här steget om du vill ge andra användare (eller rollgrupper) åtkomst till ärendet.
 
-1. På sidan **Bas-eDiscovery** i Microsoft 365 efterlevnadscenter klickar du på namnet på det ärende som du vill lägga till medlemmar i.
+1. På sidan **Bas-e-dataidentifiering** i Microsoft 365 Efterlevnadscenter klickar du på namnet på det ärende som du vill lägga till medlemmar i.
 
 2. På startsidan för ärendet väljer du fliken **Inställningar** och väljer sedan Access & **behörigheter.**
 

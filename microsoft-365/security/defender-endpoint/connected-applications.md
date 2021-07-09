@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06ef716e9deee7b20e8615bd22c93130ee18b77f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4b212acdf4bdf8fa53ef00763463190e204fc1ed
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845588"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339172"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Anslutna program i Microsoft Defender för Slutpunkt
 
@@ -42,7 +42,7 @@ Program använder standard-OAuth 2.0-protokollet för att autentisera och tillha
 Du måste följa de här [anvisningarna för att](/microsoft-365/security/defender-endpoint/apis-intro) använda API:erna med det anslutna programmet.
  
 ## <a name="access-the-connected-application-page"></a>Öppna sidan för det anslutna programmet
-I den vänstra navigeringsmenyn väljer du **Partners & API:er**  >  **anslutna AAD-program.**
+I den vänstra navigeringsmenyn väljer du **Slutpunkter**  >  **partners och API:er** anslutna  >  **program.**
 
  
 ## <a name="view-connected-application-details"></a>Visa information om anslutna program
