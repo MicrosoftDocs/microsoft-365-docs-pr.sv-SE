@@ -3,7 +3,7 @@ title: Prestandajustering för Office 365 med baslinjer och prestandahistorik
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 8/31/2017
+ms.date: 07/08/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -23,30 +23,32 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Lär dig hur du kontrollerar historiken för klientdatoranslutningar så att du kan upptäcka nya problem tidigt.
-ms.openlocfilehash: 314b1acea5935bfd6d93d1da3789657e21cd2d57
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 460bde30a0b292569b045c339066df2860c50989
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339376"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341586"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Prestandajustering för Office 365 med baslinjer och prestandahistorik
 
 Det finns några enkla sätt att kontrollera anslutningsprestandan mellan Office 365 och ditt företag som gör att du kan upprätta en ungefärlig baslinje för anslutningen. Det kan vara bra att känna till prestandahistoriken för klientdatoranslutningar för att kunna upptäcka och identifiera problem tidigt och förutse eventuella problem.
   
-Den här artikeln är avsedd för den som inte är van att arbeta med prestandaproblem, och hjälper till med vanliga frågor som: Hur vet jag att det jag ser är ett prestandaproblem och inte ett problem med Office 365-tjänsten? Hur planerar du bra prestanda på lång sikt? Hur kan jag hålla ett öga på prestandan? Om din grupp eller dina klienter har låg prestanda när Office 365 och du undrar över några av de här frågorna, så kan du läsa vidare.
+Om du inte är van att arbeta med prestandaproblem är den här artikeln utformad för att hjälpa dig att ta hänsyn till några vanliga frågor. Hur vet du att det problem du ser är ett prestandaproblem och inte ett problem Office 365 tjänsten? Hur planerar du bra prestanda på lång sikt? Hur kan jag hålla ett öga på prestandan? Om din grupp eller dina klienter har låg prestanda när Office 365 och du undrar över några av de här frågorna, så kan du läsa vidare.
   
 > [!IMPORTANT]
 > **Är det prestandaproblem mellan din klient och Office 365 just nu?** Följ stegen som beskrivs i planen [för prestandafelsökning för Office 365](performance-troubleshooting-plan.md). 
     
 ## <a name="something-you-should-know-about-office-365-performance"></a>Något du bör veta om Office 365 prestanda
 
-Office 365 finns i ett dedikerat Microsoft-nätverk med hög kapacitet, som inte bara övervakas automatiserat utan även av verkliga personer. En del av underhållet av Office 365 är att skapa prestandajustering och effektivisering där det är möjligt. Eftersom klienterna i Office 365 måste ansluta via Internet är det kontinuerligt viktigt att finjustera prestandan mellan Office 365 tjänster. Prestandaförbättringarna i molnet är ständig, och vi har samlat in mycket erfarenhet för att hålla molnet snabbt och felfritt. Om du upplever prestandaproblem när du ansluter från din plats till Office 365 är det bäst att inte börja med och vänta på ett supportfall. I stället bör du börja undersöka problemet "inifrån och ut". Det innebär att du börjar i ditt nätverk och jobbar dig ut för att Office 365. Innan du inöppnar ett ärende Office 365 supporten kan du samla in data och vidta åtgärder som utforskar problemet och som kan lösa det.
+Office 365 finns i ett dedikerat Microsoft-nätverk med hög kapacitet som övervakas av automatisering och verkliga personer. En del av underhållet Office 365 prestandajustering och effektivisering där det är möjligt. Eftersom klienterna i Office 365 måste ansluta via Internet har vi fortlöpande arbetet med att finjustera prestandan mellan Office 365 tjänster.
+
+Prestandaförbättringarna i molnet är aldrig så enkla att använda, så ni får heller inte uppleva att molnet är felfritt och snabbt. Om du har prestandaproblem med att ansluta från din plats till Office 365 är det bäst att inte börja med eller vänta på ett supportfall. I stället bör du börja undersöka problemet "inifrån och ut". Det innebär att du börjar i ditt nätverk och jobbar dig ut för att Office 365. Innan du inöppnar ett ärende hos supporten kan du samla in data och vidta åtgärder som utforskar och kan lösa problemet.
   
 > [!IMPORTANT]
-> Var uppmärksam på kapacitetsplanering och begränsningar i Office 365. Den informationen gör att du kommer kurvan när du försöker lösa ett prestandaproblem. Här är en länk till beskrivningarna [Microsoft 365 och Office 365 tjänstbeskrivningar](/office365/servicedescriptions/office-365-service-descriptions-technet-library). Det här är ett centralt nav, och alla tjänster som erbjuds Office 365 en länk som går till deras egna tjänstbeskrivningar härifrån. Det innebär att om du till exempel behöver se standardbegränsningarna för SharePoint Online klickar du på [SharePoint Onlinetjänstbeskrivning](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) och letar reda på SharePoint [onlinebegränsningar.](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) 
+> Var uppmärksam på kapacitetsplanering och begränsningar i Office 365. Den informationen gör att du kommer kurvan när du försöker lösa ett prestandaproblem. Här är en länk till beskrivningarna [Microsoft 365 och Office 365 tjänstbeskrivningar](/office365/servicedescriptions/office-365-service-descriptions-technet-library). Det här är ett centralt nav, och alla tjänster som erbjuds Office 365 en länk som går till deras egna tjänstbeskrivningar härifrån. Det innebär att om du till exempel behöver se standardbegränsningarna för SharePoint Online klickar du på [SharePoint Onlinetjänstbeskrivning](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-service-description) och letar reda på SharePoint [onlinebegränsningar.](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
   
-Se till att du går in i felsökningen och förstår att prestandan är en skjutskala, det handlar inte om att uppnå ett idealiserat värde och att underhålla det permanent (om du tror att det är så är det, så kommer tillfälliga uppgifter med hög bandbredd, som att göra ett stort antal användare, eller att göra stora datamigreringar vara mycket stressigt , så planera för prestandaeffekter då). Du kan och bör ha en grov uppfattning om dina prestandamål, men många variabler spelar in prestanda och därför varierar prestandan. Det är prestandan. 
+Se till att du går in i felsökningen och förstår att prestanda är en skjutskala. Det handlar inte om att uppnå ett idealiserat värde och att bevara det permanent. Tillfälliga uppgifter med hög bandbredd, t.ex. på boarding av ett stort antal  användare eller att utföra stora datamigreringar, kommer att vara stressiga, så planera för prestandaeffekter då. Du bör ha en ungefärlig uppfattning om dina prestandamål, men det finns många olika variabler som spelar in prestanda, så prestandan varierar.
   
 Felsökning av prestandan handlar inte om att nå specifika mål och ha ett obestämt antal, utan om att förbättra befintliga aktiviteter med alla variabler. 
   
@@ -54,45 +56,45 @@ Felsökning av prestandan handlar inte om att nå specifika mål och ha ett obes
 
 Först måste du se till att det verkligen handlar om ett prestandaproblem och inte ett problem med själva tjänsten. Prestandaproblem skiljer sig från tjänstproblem i Office 365. Så här skiljer du dem åt.
   
-Om Office 365 tjänst har problem är det ett tjänstproblem. Röda eller gula ikoner visas under Aktuell **status** i Administrationscenter för Microsoft 365, men prestandan kan också gå långsammare på klientdatorer som ansluter till Office 365. Om till exempel en röd ikon visas  under Aktuell status och Undersöker visas bredvid Exchange, kan du också få samtal från personer i organisationen som klagar på att klientpostlådor som använder Exchange Online fungerar dåligt. I så fall är det lämpligt att anta att prestandan Exchange Online hög nivå på tjänsten. 
+Tjänstincidenter inträffar Office 365 själva tjänsten har problem. Du kan se röda eller gula ikoner under **Aktuell status** i Administrationscenter för Microsoft 365. Du kanske märker att prestandan på klientdatorerna är långsam Office 365 datorn. Om till exempel en röd ikon visas  under Aktuell status och Undersöker visas bredvid Exchange kan du också få samtal från personer i organisationen som klagar på att klientpostlådor som använder Exchange Online är långsamma. I så fall är det lämpligt att anta att prestandan Exchange Online var låg på tjänstproblem.
   
 ![I Office 365 Hälsa visas alla arbetsbelastningar med grönt, förutom Exchange, som visar Tjänsten har återställts.](../media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
-I det här läget bör Office 365-administratören  kontrollera Aktuell status och sedan Visa information och historik ofta, för att hålla dig uppdaterad om det underhåll vi utför i systemet. Instrumentpanelen **Aktuell** status har gjorts för att uppdatera dig om ändringar och problem i tjänsten. De anteckningar och förklaringar som finns i hälsohistoriken admin till admin är till för att hjälpa dig avgöra hur du påverkas och hålla dig publicerad om det pågående arbetet. 
+I det här läget bör Office 365-administratören kontrollera  Aktuell status och sedan Visa information och historik , ofta för att hålla dig uppdaterad om underhåll i systemet. Instrumentpanelen **Aktuell** status har gjorts för att uppdatera dig om ändringar och problem i tjänsten. De anteckningar och förklaringar som finns i hälsohistoriken admin till admin är till för att hjälpa dig avgöra och hålla dig publicerad om det pågående arbetet.
   
 ![En bild av Office 365 hälsoinstrumentpanelen som förklarar att Exchange Online tjänsten har återställts och varför.](../media/66609554-426a-4448-8be6-ea09817f41ba.PNG)
   
 Ett prestandaproblem är inte ett tjänstproblem även om låg prestanda också kan orsaka tjänstproblem. Ett prestandaproblem ser ut så här:
   
-- Ett prestandaproblem uppstår oavsett vad som rapporterar aktuell **status** för tjänsten i administrationscentret. 
+- Ett prestandaproblem uppstår oavsett vad som rapporterar aktuell **status** för tjänsten i administrationscentret.
     
--  Ett beteende som tidigare var relativt sömlöst tar lång tid att slutföra eller slutförs aldrig. 
+-  En funktion som tidigare använts för att flöda tar lång tid att slutföra eller slutförs aldrig.
     
-- Du kan replikera problemet eller vet att det kan replikeras om du gör rätt serie med steg.
+- Du kan replikera problemet också eller veta att det kommer att inträffa om du gör rätt serie med steg.
     
--  Om problemet uppstår oregelbundet finns det fortfarande ett mönster. Du vet till exempel att du klockan 10:00 brukar få samtal från användare som inte har tillförlitlig åtkomst till Office 365, och att samtalen kommer att gå ut ungefär klockan 12:00. 
+-  Om problemet uppstår oregelbundet kan det fortfarande finnas ett mönster. Till exempel vet du att klockan 10:00 kommer du att ha samtal från användare som inte alltid har tillgång till Office 365. Samtalen avslutas omkring klockan 12:00.
     
-Det låter förmodligen bekant. kanske alltför bekant. När du vet att det är ett prestandaproblem uppstår frågan: "Vad gör du nu?" I resten av den här artikeln får du hjälp med att avgöra exakt det.
+Den här listan låter förmodligen bekant. kanske alltför bekant. När du är medveten om att det är ett prestandaproblem uppstår frågan: "Vad gör du nu?" I resten av den här artikeln får du hjälp med att avgöra exakt det.
   
 ## <a name="how-to-define-and-test-the-performance-problem"></a>Definiera och testa prestandaproblem
 
-Prestandaproblem uppstår ofta med tiden, så det kan vara svårt att definiera exakt vad problemet är. Du måste skapa en bra problemräkning och en god uppfattning om problemkontexten, och sedan måste du upprepa upprepade teststeg för att vinna dagen. Annars kan felet bli så att du förlorar det. Varför? Här är några exempel på problemrapporter som inte tillhandahåller tillräcklig information:
+Prestandaproblem uppstår ofta med tiden, så det kan vara svårt att definiera exakt vad problemet är. Skapa en bra problemräkning med en god uppfattning om problemkontext och sedan måste du upprepa teststeg. Här är några exempel på problemrapporter som inte ger tillräcklig information:
   
 - Det brukade vara så enkelt att växla från Inkorgen till kalendern att jag inte märkte det, men nu tar det hela kaffepausen. Kan du få det att fungera som det brukade?
     
 - Det tar evigheter att ladda upp SharePoint mina filer till SharePoint Online. Varför går det långsamt på eftermiddagen men snabbt vid andra tidpunkter? Kan det inte vara snabbt hela nu?
     
-Problemrapporterna ovan medför flera stora utmaningar. Det finns många tvetydigheter. till exempel:
+Problemrapporterna ovan medför flera stora utmaningar. De är specifikt för många tvetydiga. till exempel:
   
 - Det är oklart hur växlingen mellan Inkorgen och Kalendern brukade fungera på den bärbara datorn.
     
 - Vad är "snabbt" när användaren säger "Kan det inte bara vara snabbt"?
     
-- Hur länge är "evigheter"? Är det flera sekunder eller flera minuter, eller kan användaren gå på lunch och avslutas upp tio minuter efter att användaren kommit tillbaka?
+- Hur länge är "evigheter"? Är det flera sekunder? Eller många minuter? Eller kan användaren ta lunch och åtgärden slutförs i 10 minuter efter att han eller hon kommit tillbaka?
     
-Allt detta utan tanke på att administratören och felsökaren inte kan vara medvetna om så många detaljer från problemrapporter som dessa. Till exempel när problemet uppstod: Att användaren arbetar hemifrån och bara ser långsam växling när användaren är på ett hemnätverk. Att användaren måste köra flera andra RAM-resurskrävande program på den lokala klienten, eller så kör användaren ett äldre operativsystem eller inte har kört de senaste uppdateringarna.
+Administratören och felsökaren kan inte vara medvetna om information *om* problemet från allmänna satser som dessa. De vet till exempel inte när problemet började. Felsökaren vet kanske inte att användaren arbetar hemifrån och kan bara se långsam växling i hemnätverket. Eller att användaren kör andra ramintensiva program på den lokala klienten. Administratörer kanske inte vet om användaren kör ett äldre operativsystem eller inte har kört de senaste uppdateringarna.
   
-När användare rapporterar ett prestandaproblem finns det en mängd information att samla in. Att samla in den här informationen är en del av att undersöka problemet och undersöka problemet. Följande är en grundläggande lista som du kan använda för att samla in information om prestandaproblem. Listan är inte uttömmande men den ger dig något att utgå från när du startar en egen lista: 
+När användare rapporterar ett prestandaproblem finns det en mängd information att samla in. Att hämta och spela in information kallas för att ta fram problemet. Här är en grundläggande lista som du kan använda för att samla in information om prestandaproblem. Listan är inte uttömmande men den är en bra plats att börja på:
   
 - Vilket datum hände problemet, och ungefär vilken tid på dagen eller natten?
     
