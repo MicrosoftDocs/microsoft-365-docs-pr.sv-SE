@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f74972bcd5d0ddaab58d82b72a55991fda44e3b1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6aa709fe4534bf049c6f8c097bc4bd85a9d6793b
+ms.sourcegitcommit: 93eeaefc0d509c75e4c2210029155298ecca7583
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583550"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53347913"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -48,27 +48,27 @@ Information om andra tabeller i det avancerade sökschemat finns i [den avancera
 
 
 
-| Kolumnnamn     | Datatyp | Beskrivning   |
-| ----- | ----- | ---- |
-| `Timestamp` | datetime      | Datum och tid då posten skapades                                                                                                     |
-| `Application`          | sträng        | Program som utförde den inspelade åtgärden                                                                                                   |
-| `ApplicationId`        | sträng        | Unikt ID för programmet                                                                                                           |
-| `IsManagedIdentity`    | boolesk       | Anger om inloggningen initierades med en hanterad identitet                                                                               |
-| `ErrorCode`            | int        | Innehåller felkoden om ett inloggningsfel uppstår. Gå till för att hitta en beskrivning av en specifik <https://aka.ms/AADsigninsErrorCodes> felkod. |
-| `CorrelationId`        | sträng        | Unikt ID för inloggningshändelsen                                                                                                          |
-| `ServicePrincipalName` | sträng        | Namnet på tjänstens huvudnamn som startade inloggningen                                                                                        |
-| `ServicePrincipalId`   | sträng        | Unikt ID för tjänstens huvudnamn som initierade inloggningen                                                                           |
-| `ResourceDisplayName`  | sträng        | Visningsnamn för den resurs som har åtkomst                                                                                                           |
-| `ResourceId`           | sträng        | Unikt ID för den resurs som används                                                                                                      |
-| `ResourceTenantId`     | sträng        | Unikt ID för klientorganisationen för den resurs som används                                                                                        |
-| `IPAddress`            | sträng        | IP-adress tilldelad till slutpunkten och används under relaterad nätverkskommunikation                                                              |
-| `Country`          | sträng        | Kod med två bokstäver som anger landet där klientens IP-adress är geolocerad                                                                |
-| `State`                | sträng        | Delstat där inloggningen inträffade, om tillgänglig                                                                                                  |
-| `City`                 | sträng        | Ort där kontoanvändaren finns                                                                                                          |
-| `Latitude`             | sträng        | Koordinaterna för inloggning i nord till syd                                                                                          |
-| `Longitude`            | sträng        | Koordinaterna för inloggningsplatsen öst till väst                                                                                            |
-| `RequestId`            | sträng        | Unikt ID för begäran                                                                                                                |
-|`ReportId` | sträng | Unikt ID för händelsen | 
+| Kolumnnamn | Datatyp | Beskrivning |
+|-----|-----|-----|
+| `Timestamp` | datetime | Datum och tid då posten skapades |
+| `Application` | sträng | Program som utförde den inspelade åtgärden |
+| `ApplicationId` | sträng | Unikt ID för programmet |
+| `IsManagedIdentity`    | boolesk       | Anger om inloggningen initierades med en hanterad identitet |
+| `ErrorCode`    | int | Innehåller felkoden om ett inloggningsfel uppstår. Gå till för att hitta en beskrivning av en specifik <https://aka.ms/AADsigninsErrorCodes> felkod. |
+| `CorrelationId`        | sträng        | Unikt ID för inloggningshändelsen |
+| `ServicePrincipalName` | sträng        | Namnet på tjänstens huvudnamn som startade inloggningen  |
+| `ServicePrincipalId`   | sträng        | Unikt ID för tjänstens huvudnamn som initierade inloggningen  |
+| `ResourceDisplayName`  | sträng        | Visningsnamn för den resurs som har åtkomst  |
+| `ResourceId`           | sträng        | Unikt ID för den resurs som används  |
+| `ResourceTenantId`     | sträng        | Unikt ID för klientorganisationen för den resurs som används |
+| `IPAddress`            | sträng        | IP-adress tilldelad till slutpunkten och används under relaterad nätverkskommunikation  |
+| `Country`          | sträng        | Kod med två bokstäver som anger landet där klientens IP-adress är geolocerad |
+| `State`                | sträng        | Delstat där inloggningen inträffade, om tillgänglig |
+| `City`                 | sträng        | Ort där kontoanvändaren finns  |
+| `Latitude`             | sträng        | Koordinaterna för inloggning i nord till syd |
+| `Longitude`            | sträng        | Koordinaterna för inloggningsplatsen öst till väst |
+| `RequestId`            | sträng        | Unikt ID för begäran |
+|`ReportId` | sträng | Unikt ID för händelsen |
 
  
 
