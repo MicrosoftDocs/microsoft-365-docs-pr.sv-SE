@@ -1,7 +1,7 @@
 ---
 title: Få användarsupport för Microsoft Hanterat skrivbord
 description: Hur användare kan få hjälp med tjänsten och enheter
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,69 +9,67 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: abd1b681f3d5900f846fde7922f2f4a2ca5821ef
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 2eea02b0a891f65ccd7e4e993ca719b0f3aa1b8b
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841369"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362623"
 ---
-# <a name="getting-help-for-users"></a><span data-ttu-id="e7b4d-104">Få hjälp för användare</span><span class="sxs-lookup"><span data-stu-id="e7b4d-104">Getting help for users</span></span>
+# <a name="getting-help-for-users"></a><span data-ttu-id="08dd9-104">Få hjälp för användare</span><span class="sxs-lookup"><span data-stu-id="08dd9-104">Getting help for users</span></span>
 
-<span data-ttu-id="e7b4d-105">Det finns två sätt som användare i organisationen kan få hjälp med sina Microsoft Hanterat skrivbord-enheter: **Få hjälp-appen** eller telefonsupport.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-105">There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support.</span></span> <span data-ttu-id="e7b4d-106">Båda dessa supportalternativ är tillgängliga för användare 24 timmar om dygnet, 7 dagar i veckan.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-106">Both of these support options are available to users 24 hours a day, 7 days a week.</span></span>
+<span data-ttu-id="08dd9-105">Om du har kommit till [](../service-description/user-support.md) den punkt i arbetsflödet där du behöver begära utökad enhetsåtkomst eller eskalering till Microsoft gör du så här:</span><span class="sxs-lookup"><span data-stu-id="08dd9-105">If you've reached the point in the [workflow](../service-description/user-support.md) where you need to request elevated device access or escalation to Microsoft, follow these steps:</span></span>
  
 >[!NOTE]
-><span data-ttu-id="e7b4d-107">De här supportalternativen är inte tillgängliga för enheter i testgruppen.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-107">These support options are not available for devices in the Test group.</span></span>
+><span data-ttu-id="08dd9-106">De här supportalternativen är inte tillgängliga för enheter i testgruppen.</span><span class="sxs-lookup"><span data-stu-id="08dd9-106">These support options are not available for devices in the Test group.</span></span>
 
-## <a name="get-help-app"></a><span data-ttu-id="e7b4d-108">Få hjälp appen</span><span class="sxs-lookup"><span data-stu-id="e7b4d-108">Get Help app</span></span>
+## <a name="elevation-requests"></a><span data-ttu-id="08dd9-107">Höjdbegäranden</span><span class="sxs-lookup"><span data-stu-id="08dd9-107">Elevation requests</span></span>
 
-<span data-ttu-id="e7b4d-109">Den rekommenderade metoden för att ge support till **användarna är Få hjälp**, ett lätt användargränssnitt inbyggt i användarens enhet.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-109">The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the user device.</span></span>  
+<span data-ttu-id="08dd9-108">Innan du begär utökad åtkomst till en enhet bör du kontrollera vilka åtgärder som passar bäst.</span><span class="sxs-lookup"><span data-stu-id="08dd9-108">Before you request elevated access to a device, it's best to review which actions are best suited.</span></span>
 
-![Få hjälp appikon](../../media/get-help.png)
+- <span data-ttu-id="08dd9-109">**Vanliga åtgärder** är vad den här processen är avsedd för och som utförs regelbundet medan problem med e-Microsoft Hanterat skrivbord felsöks.</span><span class="sxs-lookup"><span data-stu-id="08dd9-109">**Typical actions** are what this process is intended for and would be performed routinely while troubleshooting problems with Microsoft Managed Desktop devices.</span></span> <span data-ttu-id="08dd9-110">Några exempel:</span><span class="sxs-lookup"><span data-stu-id="08dd9-110">Examples include:</span></span>
+    - <span data-ttu-id="08dd9-111">Höja upp inbyggda systemfelsökare, kommandotolken eller Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="08dd9-111">Elevating built-in system troubleshooters, the command prompt, or Windows PowerShell</span></span>
+    - <span data-ttu-id="08dd9-112">Felsöka verksamhetsbaserade program</span><span class="sxs-lookup"><span data-stu-id="08dd9-112">Troubleshooting line-of-business applications</span></span>
+    - <span data-ttu-id="08dd9-113">Använda en lösning för att korrigera något som ska fungera enligt design (t.ex. BitLocker-aktivering eller systemtid som inte uppdateras)</span><span class="sxs-lookup"><span data-stu-id="08dd9-113">Using a workaround to correct something that should function by design (such as BitLocker activation or system time not updating)</span></span>
+    - <span data-ttu-id="08dd9-114">Elevating Device Manager to do things like update drivers, uninstall a device, or scan for new changes</span><span class="sxs-lookup"><span data-stu-id="08dd9-114">Elevating Device Manager to do things like update drivers, uninstall a device, or scan for new changes</span></span>
 
-<span data-ttu-id="e7b4d-111">Få hjälp är ett program som är installerat på Microsoft Hanterat skrivbord enheter och är fäst i Aktivitetsfältet.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-111">Get Help is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar.</span></span> 
+- <span data-ttu-id="08dd9-115">**Åtgärder som inte rekommenderas** är bland annat följande:</span><span class="sxs-lookup"><span data-stu-id="08dd9-115">**Actions that aren't recommended** include the following:</span></span>
+    - <span data-ttu-id="08dd9-116">Installera programvara eller webbläsare</span><span class="sxs-lookup"><span data-stu-id="08dd9-116">Installing software or browsers</span></span>
+    - <span data-ttu-id="08dd9-117">Installera drivrutiner utanför Windows, inklusive för kringutrustning</span><span class="sxs-lookup"><span data-stu-id="08dd9-117">Installing drivers outside of Windows settings, including those for peripherals</span></span>
+    - <span data-ttu-id="08dd9-118">Installera .msi eller .exe filer</span><span class="sxs-lookup"><span data-stu-id="08dd9-118">Installing .msi or .exe files</span></span>
+    - <span data-ttu-id="08dd9-119">Installera Windows funktioner</span><span class="sxs-lookup"><span data-stu-id="08dd9-119">Installing Windows features</span></span>
 
-- <span data-ttu-id="e7b4d-112">Användare kan begära en uppringning till ett visst telefonnummer eller chatta online med en tjänstrepresentant.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-112">Users can request a callback to a provided phone number, or chat online with a service rep.</span></span>
-- <span data-ttu-id="e7b4d-113">Förfrågningar som faller utanför Microsoft Hanterat skrivbord supportomfattning omdirigeras till den lokala IT-supporten via telefonsamtal.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-113">Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.</span></span>
+- <span data-ttu-id="08dd9-120">**Åtgärder som inte stöds** är bland annat följande:</span><span class="sxs-lookup"><span data-stu-id="08dd9-120">**Actions that aren't supported** include the following:</span></span>
+    - <span data-ttu-id="08dd9-121">Installera programvara eller funktioner som står i konflikt Microsoft Hanterat skrivbord säkerhets- eller hanteringsfunktioner eller -åtgärder</span><span class="sxs-lookup"><span data-stu-id="08dd9-121">Installing software or features that conflict with Microsoft Managed Desktop security or management capabilities or operations</span></span>
+    - <span data-ttu-id="08dd9-122">Inaktivera en Windows som krävs för Microsoft Hanterat skrivbord, till exempel BitLocker</span><span class="sxs-lookup"><span data-stu-id="08dd9-122">Disabling a Windows feature that is required for Microsoft Managed Desktop, such as BitLocker</span></span>
+    - <span data-ttu-id="08dd9-123">Ändra inställningar som hanteras av din organisation</span><span class="sxs-lookup"><span data-stu-id="08dd9-123">Modifying settings managed by your org</span></span>
+
+### <a name="to-request-elevation"></a><span data-ttu-id="08dd9-124">Begära höjd</span><span class="sxs-lookup"><span data-stu-id="08dd9-124">To request elevation</span></span>
+
+1. <span data-ttu-id="08dd9-125">Gå till portalen och [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) logga in med dina inloggningsuppgifter Azure Active Directory autentiseringsuppgifter.</span><span class="sxs-lookup"><span data-stu-id="08dd9-125">Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.</span></span>
+2. <span data-ttu-id="08dd9-126">Välj **Ny begäran om höjd**.</span><span class="sxs-lookup"><span data-stu-id="08dd9-126">Select **New elevation request**.</span></span>
+3. <span data-ttu-id="08dd9-127">Ange följande information:</span><span class="sxs-lookup"><span data-stu-id="08dd9-127">Provide these details:</span></span>
+    - <span data-ttu-id="08dd9-128">**Support ticket ID** from your own support ticketing system.</span><span class="sxs-lookup"><span data-stu-id="08dd9-128">**Support ticket ID** from your own support ticketing system.</span></span>
+    - <span data-ttu-id="08dd9-129">**Enhetsnamn**: ange enhetens serienummer och välj sedan enheten på menyn.</span><span class="sxs-lookup"><span data-stu-id="08dd9-129">**Device name**: enter the device serial number and then select the device from the menu.</span></span>
+    - <span data-ttu-id="08dd9-130">**Kategori:** Välj den kategori som bäst passar ditt problem.</span><span class="sxs-lookup"><span data-stu-id="08dd9-130">**Category**: Select the category that best fits your issue.</span></span> <span data-ttu-id="08dd9-131">Om inget alternativ verkar vara nära väljer du **Annat** och ger mer information i **fälten** Rubrik och Plan **för** åtgärder.</span><span class="sxs-lookup"><span data-stu-id="08dd9-131">If no option seems close, then select **Other** and provide more info in the **Title** and **Plan of action** fields.</span></span> <span data-ttu-id="08dd9-132">Det är bäst att välja en kategori om det är möjligt.</span><span class="sxs-lookup"><span data-stu-id="08dd9-132">It's best to select a category if at all possible.</span></span>
+    - <span data-ttu-id="08dd9-133">**Underkategori:** Välj den som passar bäst för problemet.</span><span class="sxs-lookup"><span data-stu-id="08dd9-133">**Subcategory**: Select the one that best fits the issue.</span></span> <span data-ttu-id="08dd9-134">Om inget alternativ verkar vara nära väljer du **Annat** och ger en kort beskrivning i **Rubrik**.</span><span class="sxs-lookup"><span data-stu-id="08dd9-134">If no option seems close, then select **Other** and provide a short description in **Title**.</span></span> <span data-ttu-id="08dd9-135">Ange **de felsökningssteg** du planerar att vidta när höjd beviljas i Planera för åtgärd.</span><span class="sxs-lookup"><span data-stu-id="08dd9-135">In **Plan of action**, provide the troubleshooting steps you plan to take once elevation is granted.</span></span>
+4. <span data-ttu-id="08dd9-136">Välj **Skicka**.</span><span class="sxs-lookup"><span data-stu-id="08dd9-136">Select **Submit**.</span></span>
+
+
+## <a name="escalation-requests"></a><span data-ttu-id="08dd9-137">Eskaleringsförfrågningar</span><span class="sxs-lookup"><span data-stu-id="08dd9-137">Escalation requests</span></span>
+
+
+<span data-ttu-id="08dd9-138">Om du behöver [eskalera ett](../service-description/user-support.md#escalation-portal) problem till Microsoft gör du så här:</span><span class="sxs-lookup"><span data-stu-id="08dd9-138">If you need to [escalate](../service-description/user-support.md#escalation-portal) an issue to Microsoft, follow these steps:</span></span>
+
+1. <span data-ttu-id="08dd9-139">Gå till portalen och [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) logga in med dina inloggningsuppgifter Azure Active Directory autentiseringsuppgifter.</span><span class="sxs-lookup"><span data-stu-id="08dd9-139">Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.</span></span>
+2. <span data-ttu-id="08dd9-140">Välj **Eskaleringsförfrågningar** och välj sedan **Ny eskaleringsbegäran**.</span><span class="sxs-lookup"><span data-stu-id="08dd9-140">Select **Escalation requests**, and then select **New escalation request**.</span></span>
+3. <span data-ttu-id="08dd9-141">Ange följande information:</span><span class="sxs-lookup"><span data-stu-id="08dd9-141">Provide these details:</span></span>
+    - <span data-ttu-id="08dd9-142">**Kategori:** Välj den kategori som bäst passar ditt problem.</span><span class="sxs-lookup"><span data-stu-id="08dd9-142">**Category**: Select the category that best fits your issue.</span></span>
+    - <span data-ttu-id="08dd9-143">**Rubrik**: Ge en mycket kort beskrivning.</span><span class="sxs-lookup"><span data-stu-id="08dd9-143">**Title**: Provide a very brief description.</span></span>
+    - <span data-ttu-id="08dd9-144">**Beskrivning**: Lägg till ytterligare information som kan hjälpa vårt team att förstå problemet.</span><span class="sxs-lookup"><span data-stu-id="08dd9-144">**Description**: Add any additional details that could help our team understand the problem.</span></span> <span data-ttu-id="08dd9-145">Om du behöver bifoga filer kan du göra det genom att komma tillbaka till begäran efter att du skickat den.</span><span class="sxs-lookup"><span data-stu-id="08dd9-145">If you need to attach files, you can do that by coming back to the request after you submit it.</span></span>
+    - <span data-ttu-id="08dd9-146">**Primär kontaktinformation:** Ange information om hur du kontaktar huvudpersonen som ansvarar för att arbeta med vårt team.</span><span class="sxs-lookup"><span data-stu-id="08dd9-146">**Primary contact information**: Provide info about how to contact the main person responsible for working with our team.</span></span>
+4. <span data-ttu-id="08dd9-147">Välj **Skicka**.</span><span class="sxs-lookup"><span data-stu-id="08dd9-147">Select **Submit**.</span></span>
+5. <span data-ttu-id="08dd9-148">Gå tillbaka till biljetten i samma portal för att interagera med vårt team.</span><span class="sxs-lookup"><span data-stu-id="08dd9-148">Revisit the ticket in the same portal to interact with our team.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e7b4d-114">Visningsspråket för appen Få hjälp endast på engelska, även om en användare har valt ett annat språk vid inställning av enheten eller i enhetsinställningarna.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-114">The display language for the Get Help app is English only, even if a user has selected a different language when setting up their device or in device settings.</span></span> 
-
-### <a name="prerequisites"></a><span data-ttu-id="e7b4d-115">Förutsättningar</span><span class="sxs-lookup"><span data-stu-id="e7b4d-115">Prerequisites</span></span>
-<span data-ttu-id="e7b4d-116">Se till att följande krav uppfylls för att användarna ska kunna få hjälp via appen:</span><span class="sxs-lookup"><span data-stu-id="e7b4d-116">For your users to be able to get help through the app, make sure these prerequisites are met:</span></span>
-
-- <span data-ttu-id="e7b4d-117">Enheten måste vara registrerad med Microsoft Hanterat skrivbord någon av metoderna i [Konfigurera Microsoft Hanterat skrivbord,](../get-started/set-up-devices.md)till exempel [Registrera nya enheter själv.](../get-started/register-devices-self.md)</span><span class="sxs-lookup"><span data-stu-id="e7b4d-117">The device must be registered with Microsoft Managed Desktop using one of the methods in [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md), such as [Register new devices yourself](../get-started/register-devices-self.md).</span></span>
-- <span data-ttu-id="e7b4d-118">Visningsspråket för enheten måste vara inställt på något av följande engelska språk: en-us, en-gb, en-au, en-nz eller en-ca.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-118">The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.</span></span>
-- <span data-ttu-id="e7b4d-119">Appen Få hjälp ska vara uppdaterad.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-119">The Get Help app should be up to date.</span></span> <span data-ttu-id="e7b4d-120">Om du vill bekräfta dess status söker du efter programuppdateringar i Microsoft Store.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-120">To confirm its status, check for app updates in the Microsoft Store.</span></span>
-- <span data-ttu-id="e7b4d-121">Vissa [slutpunkter](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) måste vara tillgängliga från enheten.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-121">Certain [endpoints](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) must be accessible from the device.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="e7b4d-122">Det Få hjälp upp till en timme efter att en enhet distribuerats till att fungera fullt ut.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-122">The Get Help app can take up to one hour after a device is deployed to fully function.</span></span>
-
-<span data-ttu-id="e7b4d-123">Om du har kontrollerat dessa krav och Få hjälp appen fortfarande inte fungerar bör du som IT-administratör lämna in en [supportbegäran.](admin-support.md)</span><span class="sxs-lookup"><span data-stu-id="e7b4d-123">If you've checked these prerequisites and the Get Help app still isn't working, you as an IT admin should file a [support request](admin-support.md).</span></span>
-
-## <a name="phone-support"></a><span data-ttu-id="e7b4d-124">Telefonsupport</span><span class="sxs-lookup"><span data-stu-id="e7b4d-124">Phone support</span></span>
-
-<span data-ttu-id="e7b4d-125">Användare med Microsoft Hanterat skrivbord enheter har också tillgång till avgiftsfria telefonnummer som de kan ringa.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-125">Users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call.</span></span> <span data-ttu-id="e7b4d-126">Siffrorna är avsedda att användas när Få hjälp är inte tillgängligt.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-126">The numbers are meant to be used when Get Help isn’t available.</span></span> <span data-ttu-id="e7b4d-127">Till exempel om de inte kan logga in på enheten eller om enheten är sönder.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-127">For example, if they can’t sign in to the device, or the device is broken.</span></span> <span data-ttu-id="e7b4d-128">Här är telefonnumren för telefonsupport:</span><span class="sxs-lookup"><span data-stu-id="e7b4d-128">Here are the phone numbers for phone support:</span></span>
-
-- <span data-ttu-id="e7b4d-129">USA: +1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="e7b4d-129">United States: +1 855 425 0216</span></span>
-- <span data-ttu-id="e7b4d-130">Kanada (undantaget Quebec): +1 855 425 0216</span><span class="sxs-lookup"><span data-stu-id="e7b4d-130">Canada (excluding Quebec): +1 855 425 0216</span></span>
-- <span data-ttu-id="e7b4d-131">Storbritannien: +44 800 026 0698</span><span class="sxs-lookup"><span data-stu-id="e7b4d-131">United Kingdom: +44 800 026 0698</span></span>
-- <span data-ttu-id="e7b4d-132">Belgien: +32 800 58533</span><span class="sxs-lookup"><span data-stu-id="e7b4d-132">Belgium: +32 800 58533</span></span>
-- <span data-ttu-id="e7b4d-133">Luxemburg: +352 800 40119</span><span class="sxs-lookup"><span data-stu-id="e7b4d-133">Luxembourg: +352 800 40119</span></span>
-- <span data-ttu-id="e7b4d-134">Australien: +61 180 037 0619</span><span class="sxs-lookup"><span data-stu-id="e7b4d-134">Australia: +61 180 037 0619</span></span>
-- <span data-ttu-id="e7b4d-135">Nya Zeeland: +64 988 44380</span><span class="sxs-lookup"><span data-stu-id="e7b4d-135">New Zealand: +64 988 44380</span></span>
-- <span data-ttu-id="e7b4d-136">Sverige: +46 20 120 3554</span><span class="sxs-lookup"><span data-stu-id="e7b4d-136">Sweden: +46 20 120 3554</span></span>
-- <span data-ttu-id="e7b4d-137">Norge: +47 800 62584</span><span class="sxs-lookup"><span data-stu-id="e7b4d-137">Norway: +47 800 62584</span></span>
-- <span data-ttu-id="e7b4d-138">Island: +354 800 9006</span><span class="sxs-lookup"><span data-stu-id="e7b4d-138">Iceland: +354 800 9006</span></span>
-- <span data-ttu-id="e7b4d-139">Irland: +353 1 800 832272</span><span class="sxs-lookup"><span data-stu-id="e7b4d-139">Ireland: +353 1 800 832272</span></span>
-- <span data-ttu-id="e7b4d-140">Danmark: +45 80 40 04 01</span><span class="sxs-lookup"><span data-stu-id="e7b4d-140">Denmark: +45 80 40 04 01</span></span>
-- <span data-ttu-id="e7b4d-141">Finland: +358 800 525088</span><span class="sxs-lookup"><span data-stu-id="e7b4d-141">Finland: +358 800 525088</span></span>
-
->[!NOTE]
-><span data-ttu-id="e7b4d-142">Du måste ha din organisations e-postadress redo när du ringer för att verifiera din identitet.</span><span class="sxs-lookup"><span data-stu-id="e7b4d-142">You'll need to have your organizational email address ready when you call to verify your identity.</span></span> 
-
-## <a name="more-resources"></a><span data-ttu-id="e7b4d-143">Fler resurser</span><span class="sxs-lookup"><span data-stu-id="e7b4d-143">More resources</span></span>
-- <span data-ttu-id="e7b4d-144">[Administratörssupport för Microsoft Hanterat skrivbord](admin-support.md).</span><span class="sxs-lookup"><span data-stu-id="e7b4d-144">[Admin support for Microsoft Managed Desktop](admin-support.md).</span></span> 
-- <span data-ttu-id="e7b4d-145">[Support för Microsoft Hanterat skrivbord](../service-description/support.md).</span><span class="sxs-lookup"><span data-stu-id="e7b4d-145">[Support for Microsoft Managed Desktop](../service-description/support.md).</span></span>
-- <span data-ttu-id="e7b4d-146">Om du redan prenumererar på Microsoft Hanterat skrivbord hittar du detaljerade procedurer, processflöden, arbetsanvisningar och vanliga frågor och svar i administratörsguiden  för Microsoft Hanterat skrivbord i **Onlineresurser** under avsnittet Microsoft Hanterat skrivbord på menyn Klientadministration [i Microsoft Endpoint Manager.](https://endpoint.microsoft.com/)</span><span class="sxs-lookup"><span data-stu-id="e7b4d-146">If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** under the Microsoft Managed Desktop section of the **Tenant administration** menu in [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).</span></span>
+> <span data-ttu-id="08dd9-149">Endast problem med allvarlighetsgrad C kan eskaleras genom den här vägen.</span><span class="sxs-lookup"><span data-stu-id="08dd9-149">Only Severity C issues can be escalated through this path.</span></span> <span data-ttu-id="08dd9-150">Om det är andra problem kontaktar du IT-administratören och arkiverar begäran via administratörsportalen.</span><span class="sxs-lookup"><span data-stu-id="08dd9-150">For other issues, contact your IT admin to file the request through the Admin portal.</span></span>
