@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Läs mer om feedback som dina användare kan skicka till Microsoft om Microsoft-produkter.
-ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 7b8798847559e84a6ea10079aab010a08d8eaa42
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650076"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363937"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>Läs mer om Microsofts feedback för din organisation
 
@@ -84,13 +84,12 @@ När en användare skickar feedback samlas appinformationen vanligtvis in tillsa
 - **Bifogade filer**   Hade några bifogade filer (dvs. skärmbilder, filer) samlas in som en del av feedbacken? (Ja/Nej).
 - **TenantId**   Om feedback skickas från ett Azure Active Directory konto, som TenantId har kopplats till.
 
-## <a name="data-handling-and-privacy"></a>Datahantering och sekretess
-
-Vi arbetar för att skapa förtroende genom att se till att vi fokuserar på centrala principer för datahantering och datasekretess.
-Vi ser till att den feedback vi får lagras och hanteras under Microsofts hanteringsregler och att den bara kan användas för godkända användningsområden.
-
-Vi ger dig kontroll över din integritet med lättanvända verktyg och tydliga alternativ. Vi är transparenta om hur vi samlar in och använder data, så att du kan fatta välgrundade beslut om vad du vill dela. Vi skyddar de data som du litar på med stark säkerhet och kryptering. Vi respekterar lokala sekretesslagar och bekämpar det juridiska skyddet av din integritet som en mänsklig rättighet. Vi använder inte din e-post, chatt, filer eller annat personligt innehåll för att rikta annonser till dig. När vi samlar in data använder vi dem för att förbättra dina upplevelser. Läs mer om Microsofts metod för sekretess [här](https://privacy.microsoft.com/). Läs mer om vår [sekretessöversikt.](/compliance/assurance/assurance-privacy)
-
 ## <a name="how-can-i-see-my-users-feedback"></a>Hur kan jag se min användares feedback?
 
-Snart kommer vi att dela de feedbackdata vi samlar in för Microsoft-produkter till dig. Vi arbetar på en ny upplevelse i Microsoft 365 administrationscenter så att vi kan visa, ta bort och exportera feedbackdata för organisationen. På så sätt får du direkt transparens och användbar insyn i användarnas upplevelse av Microsoft 365 produkter.
+För att uppfylla Microsofts juridiska åtaganden mot kunder arbetar vi på en ny upplevelse i Administrationscenter för Microsoft 365 som administratörer kan visa, ta bort och exportera feedbackdata för sina organisationer. Som en del av sitt ansvar för datakontroll kommer kunder att äga alla data för användarfeedback och den här funktionen kommer att hjälpa administratörer att ge direkt insyn i sina användares upplevelse av Microsoft 365-produkter och göra det möjligt för användare att ge feedback som en del av en dataämnesbegäran. Globala administratörer och efterlevnadsdataadministratörer kan visa, exportera och ta bort feedback från användare. Alla andra administratörer, liksom läsare, kan visa och exportera feedbackdata men kan inte utföra efterlevnadsrelaterade uppgifter eller se information om vem som publicerat feedbacken (t.ex. användarnamn, e-post eller enhetsnamn). För att få åtkomst till din organisations feedbackdata, loggar du in på Administrationscenter för Microsoft 365 och anpassa navigeringen för att visa hälsonoden. Du kommer åt den här upplevelsen **genom att välja Produktfeedback** under noden Hälsa.
+
+## <a name="data-handling-and-privacy"></a>Datahantering och sekretess
+
+Vi förstår att när du använder våra molntjänster anförtror du oss med en av dina mest värdefulla tillgångar: dina data. Vi ser till att den feedback vi får lagras och hanteras under Microsofts hanteringsregler och att den bara kan användas för godkända användningsområden. Vi använder inte din e-post, chatt, filer eller annat personligt innehåll för att rikta annonser till dig. När vi samlar in data använder vi dem för att förbättra dina upplevelser.
+
+Om du vill veta mer om hur vi skyddar din datas integritet och sekretess och hur vi ser till att de endast används på ett sätt som stämmer överens med dina förväntningar kan du läsa igenom sekretessprinciperna i [Microsoft Säkerhetscenter.](https://www.microsoft.com/trust-center/privacy)

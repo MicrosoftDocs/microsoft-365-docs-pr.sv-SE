@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Lär dig hur du använder efterlevnadscentret för att aktivera arkivpostlådor som stöd för organisationens meddelandekvarhållning, eDiscovery och bevarandekrav.
-ms.openlocfilehash: 2bc80d347d1324a317cc2cc2712d475781adc492
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72aa3f194197140cd86463598a17ab07fbbd647a
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "52162229"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341694"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Aktivera arkivpostlådor i efterlevnadscentret
 
@@ -40,11 +40,9 @@ Du måste ha tilldelats rollen E-postmottagare i Exchange Online för att aktive
 
 ## <a name="enable-an-archive-mailbox"></a>Aktivera arkivpostlåda
 
-1. Gå till <https://protection.office.com>.
+1. Gå till <https://compliance.microsoft.com> och logga in om det behövs.
 
-2. Logga in med ditt arbets- eller skolkonto.
-
-3. Klicka på **Informationsstyrning** \>**Arkiv** i vänster fönsterruta i Säkerhets- och efterlevnadscentret.
+2. I den vänstra rutan i Microsoft 365 Efterlevnadscenter klickar du på **Informationsstyrning** och sedan på fliken **Arkiv**.
 
    Sidan **Arkiv** visas. Kolumnen för **Arkivpostlådan** anger om en arkivpostlåda är aktiverad eller inaktiverad för varje användare.
 
@@ -74,24 +72,22 @@ Standardarkiveringsprincipen som tilldelas användarnas postlådor flyttar objek
 
 Så här inaktiverar du en arkivpostlåda:
 
-1. Gå till <https://protection.office.com>.
+1. Gå till <https://compliance.microsoft.com> och logga in om det behövs.
 
-2. Logga in med ditt arbets- eller skolkonto.
-
-3. Klicka på **Informationsstyrning** \>**Arkiv** i vänster fönsterruta i Säkerhets- och efterlevnadscentret.
+2. I den vänstra rutan i Microsoft 365 Efterlevnadscenter klickar du på **Informationsstyrning** och sedan på fliken **Arkiv**.
 
    Sidan **Arkiv** visas. Kolumnen för **Arkivpostlådan** anger om en arkivpostlåda är aktiverad eller inaktiverad för varje användare.
 
    > [!NOTE]
    > Sidan **Arkiv** visar högst 500 användare.
 
-4. Markera användaren som du vill inaktivera arkivpostlådan för i listan över postlådor.
+3. Markera användaren som du vill inaktivera arkivpostlådan för i listan över postlådor.
 
-5. Klicka på **Inaktivera** i informationsfönstret.
+4. Klicka på **Inaktivera** i informationsfönstret.
 
    Ett varningsmeddelande informerar dig om att du har 30 dagar på dig att aktivera arkivpostlådan på nytt, och att all information i arkivet tas bort permanent efter 30 dagar.
 
-6. Klicka **Ja** för att inaktivera arkivpostlådan.
+5. Klicka **Ja** för att inaktivera arkivpostlådan.
 
    Det kan ta en stund att inaktivera arkivpostlådan. När den är inaktiverad visas **Arkivpostlåda: inaktiverad** i informationsfönstret för den valda användaren. Du kanske måste klicka på **Uppdatera** ![ikonen Uppdatera](../media/O365-MDM-Policy-RefreshIcon.gif) för att uppdatera informationen i informationsfönstret.
 

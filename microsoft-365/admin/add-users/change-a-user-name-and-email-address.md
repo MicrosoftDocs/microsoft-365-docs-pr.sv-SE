@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Mer information om hur en global administratör i Microsoft 365 kan ändra en användares e-postadress och visningsnamn när användarens namn ändras. '
-ms.openlocfilehash: fdba2191449bc3ea5aae5b5bde73fe5294b1f9d3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3215044f94d3b4e77860434ab28eed8a36754f12
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228369"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341026"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändra ett användarnamn och en e-postadress
 
@@ -64,7 +64,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 1. Välj användarens namn och gå sedan till fliken **Konto** och välj **Hantera användarnamn**.
 
-1. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 väljer du domänen för det nya e-postaliaset med listrutan.
+1. I den första rutan skriver du den första delen av den nya e-postadressen. Om du har lagt till din egen domän i Microsoft 365 väljer du domänen för det nya e-postaliaset med hjälp av listrutan. [Lär dig hur du lägger till en domän](../setup/add-domain.md).
 
 1. Välj **Spara ändringar**.
 
@@ -118,7 +118,7 @@ Du måste vara en [global administratör](about-admin-roles.md) för att utföra
 
 ::: moniker range="o365-worldwide"
 
-1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>.
+1. I administrationscentret går du till sidan **Användare** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktiva användare</a>. 
 
 ::: moniker-end
 
@@ -177,6 +177,7 @@ Om du vill veta hur du ändrar ett användarnamn i Active Directory i Windows Se
 
 ## <a name="related-content"></a>Relaterat innehåll
 
-[Administratörer: Återställa ett lösenord för en eller flera användare](reset-passwords.md) (artikel)\
-[Lägga till ytterligare en e-postadress för en användare](../email/add-another-email-alias-for-a-user.md) (artikel)\
-[Skapa en delad postlåda](../email/create-a-shared-mailbox.md) (artikel)
+[Lägga till en domän](../setup/add-domain.md)
+[Administratörer: Återställa ett lösenord för en eller flera användare](reset-passwords.md)
+[Lägga till en annan e-postadress till en användare](../email/add-another-email-alias-for-a-user.md)
+[Skapa en delad postlåda](../email/create-a-shared-mailbox.md)

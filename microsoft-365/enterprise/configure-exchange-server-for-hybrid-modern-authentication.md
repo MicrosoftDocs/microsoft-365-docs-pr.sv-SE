@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur du konfigurerar Exchange Server en lokal konfiguration för att använda modern hybridautentisering (HMA), som ger dig säkrare användarautentisering och auktorisering.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 21ffec620ac3e262679fc0e2385f6f0f1b31933b
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841636"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362264"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Så här konfigurerar Exchange Server lokal användning av modern hybridautentisering
 
@@ -171,7 +171,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 ## <a name="verify"></a>Verifiera
 
-När du har aktiverat HMA används det nya autentiseringsflödet för klientens nästa inloggning. Observera att endast aktivera HMA utlöser inte en nyauthentication för någon klient. Klienterna återauthenticate baserat på livslängden för autentiseringstoken och/eller certifikat de har.
+När du har aktiverat HMA används det nya autentiseringsflödet för klientens nästa inloggning. Observera att när du aktiverar HMA utlöses ingen nyauthentication för någon klient, och det kan ta en stund innan Exchange av de nya inställningarna.
 
 Du bör också hålla ned CTRL-tangenten samtidigt som du högerklickar på ikonen för Outlook-klienten (även i meddelandefältet i Windows) och klickar på "Anslutningsstatus". Leta efter klientens SMTP-adress mot typen "Authn" av typen "Bearer", som representerar den bearer-token som används \* i OAuth.
 

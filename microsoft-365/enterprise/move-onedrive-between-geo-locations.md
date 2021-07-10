@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Hitta information om hur du flyttar OneDrive en webbplats till en annan geo plats, till exempel hur du schemalägger flyttningar av webbplatser och kommunicerar förväntningar till användarna.
-ms.openlocfilehash: 59b3fb47fd195967e7af056c7a71fb4e736471d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9e75c8e4102f82d4ab6e0f99ea26e1c0ad8b4bab
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694295"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362252"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Flytta en OneDrive webbplats till en annan geoplats 
 
@@ -28,7 +28,7 @@ Med OneDrive geoflyttning kan du flytta en användares OneDrive till en annan ge
 
 Tjänsten OneDrive använder Azure Blob Storage för att lagra innehåll. Den Storage blob som är kopplad till användarens OneDrive kommer att flyttas från källan till den geoa målplatsen inom 40 dagar efter att OneDrive vara tillgänglig för användaren. Åtkomsten till användarens OneDrive återställs så snart måladressen OneDrive tillgänglig.
 
-Under OneDrive geoflyttningsfönster (ca 2–6 timmar) är användarens OneDrive skrivskyddade. Användaren kan fortfarande komma åt sina filer via OneDrive synkroniseringsklienten eller deras OneDrive på SharePoint Online. När OneDrive geoflyttning är klar ansluts användaren automatiskt till sin OneDrive på den geoplats där de navigerar till OneDrive i Microsoft 365-startprogrammet. Synkroniseringsklienten börjar automatiskt synkronisera från den nya platsen.
+Under OneDrive geoflyttningsfönster (ca 2–6 timmar) är användarens OneDrive skrivskyddade. Användaren kan fortfarande komma åt sina filer via OneDrive-synkronisering appen eller deras OneDrive på SharePoint Online. När OneDrive geoflyttning är klar ansluts användaren automatiskt till sin OneDrive på den geoplats där de navigerar till OneDrive i Microsoft 365-startprogrammet. Synkroniseringsappen börjar automatiskt synkronisera från den nya platsen.
 
 Procedurerna i den här artikeln [kräver Microsoft Office SharePoint Online PowerShell Module.](https://www.microsoft.com/download/details.aspx?id=35588)
 
@@ -123,8 +123,8 @@ Flyttningsstatusen beskrivs i följande tabell.
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Status</strong></th>
-<th align="left"><strong>Beskrivning</strong></th>
+<th align="left">Status</th>
+<th align="left">Beskrivning</th>
 </tr>
 </thead>
 <tbody>
@@ -137,7 +137,7 @@ Flyttningsstatusen beskrivs i följande tabell.
 <td align="left">Flyttningen pågår i ett av följande tillstånd: Verifiering (1/4), Säkerhetskopiering (2/4), Återställ (3/4), Rensning (4/4).</td>
 </tr>
 <tr class="odd">
-<td align="left">Lyckades</td>
+<td align="left">Klart</td>
 <td align="left">Flyttningen har slutförts.</td>
 </tr>
 <tr class="even">
@@ -161,7 +161,7 @@ Du kan också lägga till `-Verbose` parametern för fler utförliga beskrivning
 
 Användare av OneDrive märker minimal störning om deras OneDrive flyttas till en annan geoplats. Förutom ett kort skrivskyddad tillstånd under flyttningen kommer befintliga länkar och behörigheter att fungera som förväntat när flyttningen har slutförts.
 
-### <a name="onedrive-for-business"></a>OneDrive för företag
+### <a name="users-onedrive"></a>Användarens OneDrive
 
 Medan flytten pågår är användarens OneDrive skrivskydd. När flytten är slutförd dirigeras användaren till sin OneDrive på den nya geoplatsen när de navigerar till OneDrive Microsoft 365-startprogrammet eller en webbläsare.
 
@@ -169,11 +169,11 @@ Medan flytten pågår är användarens OneDrive skrivskydd. När flytten är slu
 
 Användare med behörighet OneDrive innehåll har fortsatt åtkomst till innehållet under flytten och när det är klart.
 
-### <a name="onedrive-sync-client"></a>OneDrive Synkroniseringsklient 
+### <a name="onedrive-sync-app"></a>OneDrive-synkronisering appen 
 
-Synkroniseringsklienten OneDrive automatiskt identifiera och överföra synkroniseringen till den nya OneDrive-platsen när OneDrive geoflyttningen är klar. Användaren behöver inte logga in igen eller vidta någon annan åtgärd.  (Version 17.3.6943.0625 eller senare av synkroniseringsklienten krävs.)
+Appen OneDrive-synkronisering automatiskt identifiera och överföra synkronisering till den nya OneDrive när OneDrive geoflyttningen är klar. Användaren behöver inte logga in igen eller vidta någon annan åtgärd.  (Version 17.3.6943.0625 eller senare av synkroniseringsappen krävs.)
 
-Om en användare uppdaterar en fil medan OneDrive geoflyttning pågår meddelar synkroniseringsklienten att filuppladdningar väntar medan flyttningen pågår.
+Om en användare uppdaterar en fil medan OneDrive geoflyttning pågår får de ett meddelande i synkroniseringsappen om att filuppladdningar väntar medan flytten pågår.
 
 ### <a name="sharing-links"></a>Delningslänkar 
 
@@ -193,7 +193,7 @@ OneNote hos win32-klienten och UWP-appen (Universell) identifierar och synkronis
 
 När OneDrive geoflyttning är klart har användarna åtkomst till sina OneDrive-filer i Teams programmet. Dessutom kommer filer som delas via Teams chatt från deras OneDrive innan geoflyttningen att fungera när flytten är klar.
 
-### <a name="onedrive-for-business-mobile-app-ios"></a>OneDrive för företag Mobilapp (iOS) 
+### <a name="onedrive-mobile-app-ios"></a>OneDrive Mobilapp (iOS) 
 
 När OneDrive geoflyttning är slutförd måste användaren logga ut och logga in igen i iOS-mobilappen för att synkronisera till den nya OneDrive platsen.
 

@@ -15,16 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Administratörer kan läsa mer om hur man SharePoint och OneDrive tjänster i en miljö med flera platser.
-ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c5215b855b8ca1840035b39fcfbddde419c13d8
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905606"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362324"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administrera en Multi-Geo-Miljö
 
 Här är en titt på hur Microsoft 365 fungerar i en geomiljö med flera tjänster.
+
+## <a name="administrator-experience"></a>Administratörsupplevelse
+
+I [SharePoint finns](https://admin.microsoft.com/sharepoint) fliken Geoplatser i det vänstra **navigeringsfältet.** I administrationscentret finns en geoplatskarta där du kan visa och hantera dina geografiska platser. På den här sidan kan du lägga till eller ta bort geoplatser för klientorganisationen.
 
 ## <a name="audit-log-search"></a>Granskningsloggsökning
 
@@ -34,7 +38,11 @@ En enhetlig [granskningslogg](https://support.office.com/article/0d4d0f35-390b-4
 
 BCS, Secure Store och Apps har alla separata instanser på varje satellitplats, och därför bör SharePoint Online-administratören hantera och konfigurera de här tjänsterna separat från varje satellitplats.
 
-## <a name="ediscovery"></a>eDiscovery 
+## <a name="compliance-admin-center"></a>Administrationscenter för efterlevnad
+
+Det finns ett centralt efterlevnadscenter för en fler geoklient: [administrationscentret Microsoft 365 efterlevnad.](https://compliance.microsoft.com/)
+
+## <a name="ediscovery"></a>eDiscovery
 
 Som standard kan en eDiscovery-hanterare eller administratör för en geoklient för flera platser endast utföra eDiscovery på den klientorganisationens centrala plats. Den globala Office 365-administratören måste tilldela eDiscovery Manager-behörigheter så att andra kan utföra eDiscovery och tilldela en "Region"-parameter i sitt tillämpliga säkerhetsfilter för efterlevnad för att ange området för eDiscovery som satellitplats, annars utförs ingen eDiscovery för satellitplatsen. Information om hur du konfigurerar efterlevnadssäkerhetsfiltret för en region [finns i Office 365 för multi-geo eDiscovery.](multi-geo-ediscovery-configuration.md)
 
@@ -50,21 +58,13 @@ DLP-principerna synkroniseras automatiskt utifrån deras tillämplighet på varj
 
 Att implementera principer för skydd mot informationsskydd och dataförlust för alla användare på en geoplats är inte ett alternativ som är tillgängligt i användargränssnittet. I stället måste du välja tillämpliga konton för principen eller tillämpa principen globalt på alla konton.
 
-## <a name="microsoft-flow"></a>Microsoft Flow
-
-Flöden som skapas för satellitplatsen använder ändpunkten på klientorganisationens standard geoplats.  Microsoft Flow är inte en Multi-Geo-tjänst. 
-
 ## <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
 PowerApps som skapats för satellitplatsen använder ändpunkten på den centrala platsen för klientorganisationen. Microsoft PowerApps är inte en Multi-Geo-tjänst. 
 
-## <a name="onedrive-administrator-experience"></a>OneDrive Administratörsupplevelse
+## <a name="power-automate"></a>Power Automate
 
-I [OneDrive finns](https://admin.onedrive.com) fliken Geoplatser i det vänstra **navigeringsfältet.** I administrationscentret finns en geoplatskarta där du kan visa och hantera dina geografiska platser. På den här sidan kan du lägga till eller ta bort geoplatser för klientorganisationen.
-
-## <a name="security-and-compliance-admin-center"></a>Administrationscenter för säkerhet och efterlevnad
-
-Det finns ett centralt efterlevnadscenter för en multigeoklient: Microsoft 365 [säkerhets- & efterlevnadscenter.](https://protection.office.com/?rfr=AdminCenter\#/homepage)
+Flöden som skapas för satellitplatsen använder ändpunkten på klientorganisationens standard geoplats.  Power Automate är inte en Multi-Geo-tjänst. 
 
 ## <a name="sharepoint-storage-quota"></a>SharePoint lagringskvot
 
@@ -73,6 +73,10 @@ Som standard delar alla geoplatser i en multigeomiljö den tillgängliga lagring
 ## <a name="sharing"></a>Delning
 
 Administratörer kan ange och hantera delningsprinciper för var och en av sina platser. I OneDrive och SharePoint-webbplatserna på varje geoplats används bara motsvarande geospecifika delningsinställningar. (Du kan till exempel tillåta [extern delning](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) för den centrala platsen, men inte för din satellitplats eller vice versa.) Observera att delningsinställningarna inte tillåter konfigurering av delningsbegränsningar mellan geografiska platser.
+
+## <a name="stream"></a>Stream
+
+Videor som laddas upp till Stream lagras i OneDrive för den person som laddar upp. Mötesinspelningar lagras i OneDrive för alla deltagare som spelar in mötet.
 
 ## <a name="taxonomy"></a>Taxonomi
 
@@ -87,23 +91,6 @@ Det finns ett [användarprofilprogram](/sharepoint/manage-user-profiles) på var
 Om du har anpassade profilegenskaper rekommenderar vi att du använder samma profilschema över geografiska områden och fyller i dina anpassade profilegenskaper antingen på alla geoplatser eller där det behövs. Anvisningar om hur du fyller i användarprofildata programmässigt finns i Api:t för uppdatering av [massanvändareprofiler.](/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)
 
 Mer [information och utvecklarvägledning finns i Arbeta](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience) med användarprofiler i en multigeoklientorganisation.
-
-## <a name="video-portal"></a>Videoportal
-
-I en multigeoklientorganisation används O365-videoportalen endast från standard geo, och alla användare omdirigeras till url:en till den centrala portalen. Remote Media Service (RMS) för det området kommer därför att användas, enligt följande baserat på din centrala plats.
-
-Stream är för närvarande tillgängligt i följande regioner:
-
-- Nordamerika, med USA som värd 
-- Europa
-- Asien/Stillahavsområdet
-
-Stream är dock ännu inte tillgängligt i följande regioner som stöds för närvarande för Microsoft 365 Video, och därför kommer vi att använda den RMS som ligger närmast det område som stöds för dessa lokala instanser.
-
-- Australien
-- Kanada
-- Indien
-- Storbritannien
 
 ## <a name="yammer"></a>Yammer
 

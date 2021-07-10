@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Sammanfattning: Azure Active Directory ytterligare information när du flyttar från Microsoft Cloud Germany (Microsoft Cloud Deutschland) till Office 365 tjänster i den nya tyska datacenterregion.'
-ms.openlocfilehash: 1e3871dc5a8a8a9ecbef29df21431aa3707871d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0e7abd68945a9b685a33c120ff1e92fda62b2c56
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923856"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362732"
 ---
 # <a name="additional-azure-active-directory-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Ytterligare Azure Active Directory för migreringen från Microsoft Cloud Deutschland
 
@@ -80,6 +80,10 @@ Ett program kan vara något av följande:
 **Vad gäller för program som jag publicerar?**
 
 Om du publicerar ett program som är tillgängligt för användare utanför klientorganisationen kan du behöva ändra programregistreringen för att säkerställa kontinuitet. Andra klientorganisationar som använder programmet kan flyttas vid en annan tidpunkt än klientorganisationen. Om du vill se till att de aldrig förlorar åtkomsten till ditt program måste du godkänna att appen synkroniseras från Azure Germany till azure public.
+
+**Hur lägger du till nya program för flera innehavare under migreringen?**
+
+Om du vill använda ett nytt program som publicerats av en annan organisation (program med flera klientorganisation) är du begränsad från att lägga till programmet under migreringsprocessen (fas 2 till och med fas 9).  Du kan utföra den här uppgiften när din organisation slutför fas 9 och är helt övergång till den offentliga Azure-instansen.
 
 ## <a name="additional-considerations"></a>Ytterligare överväganden
 

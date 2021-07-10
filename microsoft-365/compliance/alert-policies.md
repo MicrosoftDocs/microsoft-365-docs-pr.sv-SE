@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Skapa aviseringsprinciper i Microsoft 365 Efterlevnadscenter övervaka potentiella hot, dataförlust och behörighetsproblem.
-ms.openlocfilehash: 4ae85f69eea5221945c531b2b63000be7eb43fb7
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 02b5727f0c844fa6b825b4c0c032ea6c2633d6df
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341074"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363997"
 ---
 # <a name="alert-policies-in-the-microsoft-365-compliance-center"></a>Aviseringsprinciper i Microsoft 365 Efterlevnadscenter
 
@@ -62,6 +62,9 @@ En aviseringsprincip består av en uppsättning regler och villkor som definiera
 Gå till <https://compliance.microsoft.com> och välj sedan Principer **aviseringsprinciper** för  >    >  **avisering.** Alternativt kan du gå direkt till <https://compliance.microsoft.com/alertpolicies> .
 
 ![Välj Principer i efterlevnadscentret och under Avisering väljer du Aviseringsprinciper för att visa och skapa aviseringsprinciper](../media/LaunchAlertPoliciesMCC.png)
+
+> [!NOTE]
+> Du måste ha tilldelats rollen View-Only Hantera aviseringar för att kunna visa aviseringsprinciper i Microsoft 365 Efterlevnadscenter. Du måste ha tilldelats rollen Hantera aviseringar för att skapa och redigera aviseringsprinciper. Mer information finns i [Behörigheter i säkerhets- och efterlevnadscentret.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
 En aviseringsprincip består av följande inställningar och villkor.
 

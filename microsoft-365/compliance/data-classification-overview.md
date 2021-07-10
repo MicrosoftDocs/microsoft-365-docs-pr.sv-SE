@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrumentpanelen för dataklassificering ger dig insyn i hur mycket känslig data som har hittats och klassificerats i organisationen.
-ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c0343117251d169d0284c2fdb3fc3b8bca5ff0df
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244389"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362564"
 ---
 # <a name="learn-about-data-classification"></a>Mer information om dataklassificering
 
@@ -66,6 +66,9 @@ Ett antal olika prenumerationer har stöd för slutpunkts-DLP. Mer information o
 - Säkerhetsadministratör
 - Administratör för efterlevnadsdata
 
+> [!NOTE]
+> Vi rekommenderar att du alltid använder rollen med minsta möjliga behörighet för att bevilja åtkomst till Microsoft 365-dataklassificering.
+
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>De typer av känslig information som används mest i innehållet
 
 Microsoft 365 innehåller många definitioner av typer av känslig information, till exempel objekt som innehåller personnummer eller kreditkortsnummer. Mer information om typer av känslig information finns i [Entitetsdefinitioner av känsliga informationstyper](sensitive-information-type-entity-definitions.md).
@@ -100,7 +103,7 @@ Kortet för känslighetsetiketten visar antalet objekt (e-post eller dokument) e
 ![uppdelning av innehållet med känslighetsetikettens klassificeringsplatshållare, skärmbild](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> Om du inte har skapat eller publicerat några känslighetsetiketter eller om inget innehåll har använt en känslighetsetikett, visas meddelandet ”Inga känslighetsetiketter upptäcktes” på kortet. Kom igång med känslighetsetiketter:
+> Om du inte har skapat eller publicerat några känslighetsetiketter eller om inget innehåll har använt en känslighetsetikett visas meddelandet "Inga känslighetsetiketter har identifierats". Information om hur du kommer igång med känslighetsetiketter finns i:
 >- [Komma igång med känslighetsetiketter](get-started-with-sensitivity-labels.md) eller för AIP [Konfigurera Azure Information Protection-principen](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Vanligaste kvarhållningsetiketter som tillämpats på innehåll
@@ -120,7 +123,7 @@ På kortet med de vanligaste kvarhållningsetiketterna ser du hur många objekt 
 På kortet visas en snabb sammanfattning av de vanligaste åtgärderna som användare vidtar på de känsliga objekten. Du kan använda [aktivitetsutforskaren](data-classification-activity-explorer.md) för att se mer information om olika aktiviteter som Microsoft 365 spårar i etiketterat innehåll och innehåll som finns i Windows 10-slutpunkter.
 
 > [!NOTE]
-> Om meddelandet ”Ingen aktivitet upptäcktes” visas på kortet betyder det att det inte har skett någon aktivitet i filerna eller att användar- och administratörsgranskning inte har aktiverats. Information om att aktivera granskningsloggarna finns i:
+> Om meddelandet ”Ingen aktivitet upptäcktes” visas på kortet betyder det att det inte har skett någon aktivitet i filerna eller att användar- och administratörsgranskning inte har aktiverats. Information om hur du aktiverar granskningsloggarna finns i:
 >- [Söka i granskningsloggen i Säkerhets- och efterlevnadscenter](search-the-audit-log-in-security-and-compliance.md)
 
 ## <a name="sensitivity-and-retention-labeled-data-by-location"></a>Känslighets- och kvarhållningsetiketter på data efter plats
@@ -128,7 +131,7 @@ På kortet visas en snabb sammanfattning av de vanligaste åtgärderna som anvä
 Poängen med dataklassificeringsrapporteringen är att ge insyn i antalet objekt som har de olika etiketterna samt var de finns. På korten visas hur många etiketterade objekt som finns i Exchange, SharePoint, OneDrive osv.
 
 > [!NOTE]
-> Om meddelandet ”Inga platser upptäcktes” visas på kortet betyder det att du inte har skapat eller publicerat några känslighetsetiketter eller att inget innehåll har någon kvarhållningsetikett. Kom igång med känslighetsetiketter:
+> Om meddelandet ”Inga platser upptäcktes” visas på kortet betyder det att du inte har skapat eller publicerat några känslighetsetiketter eller att inget innehåll har någon kvarhållningsetikett. Information om hur du kommer igång med känslighetsetiketter finns i:
 >- [Känslighetsetiketter](sensitivity-labels.md)
 
 ## <a name="see-also"></a>Se även

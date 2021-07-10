@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Med vidarebefordran av e-post kan du vidarebefordra e-postmeddelanden som Microsoft 365 en användarpostlåda till en annan postlåda i eller utanför organisationen.
-ms.openlocfilehash: e0043fe75eefe224c63fd23f352d4bd3ddf2c326
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 9d645c2b36bdac2ab53dcb8af4ff6ebdbd0ee601
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228057"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363797"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurera vidarebefordran av e-post i Microsoft 365
 
@@ -49,6 +49,8 @@ Innan du konfigurerar vidarebefordran av e-post ska du observera följande:
 
 Du måste vara Exchange administratör eller global administratör i Microsoft 365 kunna göra det här. Mer information finns i avsnittet Om [administratörsroller.](../add-users/about-admin-roles.md)
 
+::: moniker range="o365-worldwide"
+
 1. I administrationscentret går du till **sidan Användare** \> **[aktiva](https://go.microsoft.com/fwlink/p/?linkid=834822)** användare.
 
 2. Välj namnet på den användare vars e-post du vill vidarebefordra och öppna sedan egenskapssidan.
@@ -59,8 +61,8 @@ Du måste vara Exchange administratör eller global administratör i Microsoft 3
 
     **Om du vill vidarebefordra till flera e-postadresser** kan du be användaren att konfigurera en regel i Outlook att vidarebefordra till adresserna. 
     
-    1.  Öppna **Outlook**  >    >   **Hemregler >** Välj **Hantera regler och & aviseringar**
-    1. Välj **Ny regel Välj** Använd regel för meddelanden som jag tar  >  **emot** nästan längst ned i listan och klicka sedan på **Nästa.**
+    1.  Öppna **Outlook** >  > **Hemregler >** Välj **Hantera regler och & aviseringar**  
+    1. Välj **Ny regel Välj** Använd regel för meddelanden som jag tar > **emot** nästan längst ned i listan och klicka sedan på **Nästa.**
     1. Klicka **på** Ja när du tillfrågas Om den här regeln tillämpas på alla meddelanden du får. 
     1. I nästa lista väljer du åtgärderna **omdirigerar den till personer eller offentlig grupp** och slutar bearbeta fler **regler**
     1. Klicka på den **understrukna frasen personer eller** offentlig grupp i den nedre delen av fönstret.

@@ -1,6 +1,6 @@
 ---
 title: Gör användarna redo att använda enheter
-description: Information som hjälper användarna att förbereda sig för att använda enheter.
+description: Information som hjälper användarna att förbereda sig för att använda enheter
 keywords: Microsoft Hanterat skrivbord, enhet, komma igång, Microsoft 365
 ms.service: m365-md
 author: jaimeo
@@ -11,24 +11,22 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: fd730017a20f121281c0aba2c2ecca4cbd23a8a7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8a20a7103be799826cb848c71cb285b0884e9540
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925725"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362576"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Gör användarna redo att använda enheter
 
 När en Microsoft Hanterat skrivbord enhet är i händerna på din användare går det snabbt och enkelt att komma igång med den. Enheter är förkonfigurerade med den aktuella versionen Windows och konfigurationer och appar installeras från molnet när användaren slutför konfigurationen. 
  
-För att göra det ännu enklare erbjuder vi en guide som vägleder användarna genom den första installationen och som innehåller hjälpresurser både för installationen och för senare användning, om det behövs. Du kan anpassa den här guiden så att den innehåller viss information som är specifik för din organisation. Sedan distribuerar du guiden direkt till användarna tillsammans med deras enhet. Det finns två versioner, en för organisationer som använder Microsofts supportsystem (Få hjälp-appen), en för dem som har alternativt stöd för sina användare.
+För att göra det ännu enklare erbjuder vi en guide som vägleder användarna genom den första installationen och som innehåller hjälpresurser både för installationen och för senare användning, om det behövs. Du kan anpassa den här guiden så att den innehåller viss information som är specifik för din organisation. Sedan distribuerar du guiden direkt till användarna tillsammans med deras enhet. 
 
 ## <a name="to-prepare-the-guide"></a>Förbereda guiden
 
-1. Ladda ned den version som är lämplig för din organisation:
-- Microsoft Hanterat skrivbord – Kom igång med din enhet [(Få hjälp version)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) – använd den här versionen om dina användare kommer att använda Microsofts supportsystem.
-- [Microsoft Hanterat skrivbord – Kom igång med din enhet](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) – använd den här versionen om användarna *inte* kommer att använda Microsofts supportsystem.
+1. Ladda ned guiden: [Microsoft Hanterat skrivbord - Komma igång med din enhet](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf).
 2. Använd alla program som kan öppna PDF-filer för att fylla i information som är relevant för din organisation:
     - Namnet på nätverket som användarna ska ansluta till för att kunna fortsätta installationen (steg 3 i guiden)
     - Namnet på organisationens Azure-klientkonto (steg 4 i guiden)
@@ -37,10 +35,9 @@ För att göra det ännu enklare erbjuder vi en guide som vägleder användarna 
 
 ## <a name="ready-to-use-guide"></a>"Guide för användningsklar"
 
-Vi har även en mer allmän version av guiden för de organisationer som inte behöver anpassa den. Det finns två versioner, en för organisationer som använder Microsofts supportsystem (Få hjälp-appen), en för dem som har alternativt stöd för sina användare. 
+Vi har även en mer allmän version av guiden för de organisationer som inte behöver anpassa den.
 
-- Microsoft Hanterat skrivbord – Kom igång med din enhet [(Få hjälp-version –](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) redo att använda) – använd den här versionen om dina användare kommer att använda Microsofts supportsystem.
-- [Microsoft Hanterat skrivbord – Kom igång](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) med din enhet (redo att använda) –  använd den här versionen om användarna inte kommer att använda Microsofts supportsystem.
+Ladda bara ned guiden: [Microsoft Hanterat skrivbord - Komma igång med din enhet (redo att använda).](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf)
 
 I det här läget är du redo att börja distribuera program:
 

@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Läs mer Microsoft 365 om Multi-Geo, hur multi-geo fungerar och vilka geoplatser som är tillgängliga för datalagring.
-ms.openlocfilehash: 9625d55015cc0f18801d59e82fc8ca7090b3b721
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 52c4bc8a23bdf89afb1a3f3eae3fe6348fed8009
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927538"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362720"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Planera för Microsoft 365 Multi-Geo
 
@@ -74,8 +74,6 @@ Om användarna synkroniseras från ett lokalt Active Directory-system till Azure
 Administrationen av en flera geoklienter kan skilja sig från en icke-geoklient, eftersom många av de SharePoint- OneDrive-inställningarna och -tjänsterna är geobaserade. Vi rekommenderar att du går [igenom Administrera en multigeomiljö](administering-a-multi-geo-environment.md) innan du fortsätter med konfigurationen.
 
 Läs [Användarupplevelse i en geomiljö för](multi-geo-user-experience.md) flera personer om du vill ha mer information om slutanvändarmiljön i en geomiljö med flera användare.
-
-Mer information om Teams upplevelse av ett Microsoft 365-geo innehavare finns i Teams upplevelse i ett Microsoft 365 OneDrive och SharePoint Online Multi-Geo aktiverat [innehavare.](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
 
 Information om hur du kommer Microsoft 365 multi-geo finns [i Microsoft 365 Multi-Geo.](multi-geo-tenant-configuration.md)
 

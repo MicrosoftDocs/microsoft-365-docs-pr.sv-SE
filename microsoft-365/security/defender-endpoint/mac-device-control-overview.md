@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 682f59729e06c63818491ad7540528d574380c8b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877842"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363985"
 ---
 # <a name="device-control-for-macos"></a>Enhetskontroll för macOS
 
@@ -35,38 +35,14 @@ ms.locfileid: "52877842"
 
 > Vill du uppleva Microsoft Defender för Slutpunkt? [Registrera dig för en kostnadsfri utvärderingsversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 ## <a name="requirements"></a>Krav
 
 Enhetskontroll för macOS har följande krav:
 
 >[!div class="checklist"]
 > - Microsoft Defender för slutpunktsberättigande (kan vara utvärderingsversion)
-> - Lägsta OS-version: macOS 10.15.4 eller senare
-> - Lägsta produktversion: 101.24.59
-> - Enheten måste köras med systemtillägg (det här är standardinställningen i macOS 11 Big Sur). 
-> 
->   Du kan kontrollera om enheten körs på systemtillägg genom att köra följande kommando och kontrollera att den skrivs ut `endpoint_security_extension` till konsolen: 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - Enheten måste finnas i `Beta` (kallades tidigare `InsiderFast` ) Uppdateringskanal för Microsoft AutoUpdate. Mer information finns i [Distribuera uppdateringar för Microsoft Defender för Slutpunkt på Mac.](mac-updates.md)
-> 
->   Du kan kontrollera uppdateringskanalen med hjälp av följande kommando: 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    Om kommandot ovan inte skriver ut något `Beta` av eller kör du följande kommando från `InsiderFast` terminalen. Kanaluppdateringen börjar gälla nästa gång produkten startar (när nästa produktuppdatering installeras eller när enheten startas om). 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    Om du befinner dig i en hanterad miljö (JAMF eller Intune) kan du även fjärrkonfigurera uppdateringskanalen. Mer information finns i [Distribuera uppdateringar för Microsoft Defender för Slutpunkt på Mac.](mac-updates.md) 
+> - Lägsta OS-version: macOS 11 eller senare
+> - Lägsta produktversion: 101.34.20
 
 ## <a name="device-control-policy"></a>Princip för enhetskontroll
 
@@ -142,6 +118,9 @@ Under avsnittet flyttbara media finns ett alternativ för att ställa in tilläm
 
 - `audit` – Om åtkomsten till en enhet är begränsad visas ett meddelande för användaren under den här tillämpningsnivån, men enheten kan fortfarande användas. Den här tillämpningsnivån kan vara användbar för att utvärdera en princips effektivitet.
 - `block` – Under den här tillämpningsnivån är åtgärderna som användaren kan utföra på enheten begränsade till vad som har definierats i principen. Dessutom skickas ett meddelande till användaren. 
+
+> [!NOTE] 
+> Som standard har tillämpningsnivån `audit` . 
 
 |Avsnitt|Värde|
 |:---|:---|

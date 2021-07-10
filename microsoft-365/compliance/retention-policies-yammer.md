@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mer information om de kvarhållningsprinciper som gäller för Yammer.
-ms.openlocfilehash: d4988eee419a38497d4fa35cdb3e2f7fec103688
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 1398bf385631967d92de760924ef94e2b3c16441
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53052933"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362300"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Mer information om kvarhållning för Yammer
 
@@ -39,17 +39,28 @@ För andra arbetsbelastningar, se:
 - [Mer information om kvarhållning för Microsoft Teams](retention-policies-teams.md)
 - [Lär dig mer om kvarhållning för Exchange](retention-policies-exchange.md)
 
-## <a name="whats-included-for-retention-and-deletion"></a>Vad ingår för kvarhållning och borttagning
+## <a name="whats-included-for-retention-and-deletion"></a>Vad omfattas för kvarhållning och borttagning
 
-Följande Yammer-objekt kan behållas och tas bort med kvarhållningsprinciper för Yammer: Communitymeddelanden och privata meddelanden.
+Följande Yammer-objekt kan behållas och tas bort med kvarhållningsprinciper för Yammer: Communitymeddelanden och användarmeddelanden.
 
 Reaktioner från andra i form av uttryckssymboler tas inte med i dessa meddelanden.
 
 ## <a name="how-retention-works-with-yammer"></a>Så fungerar kvarhållning för Yammer
 
-Du kan använda en kvarhållningsprincip för att behålla och ta bort communitymeddelanden och privata meddelanden i Yammer. Privata meddelanden lagras i en dold mapp i postlådan för varje användare som ingår i meddelandet och communitymeddelanden lagras i en liknande dold mapp i gruppostlådan för communityn.
+I det här avsnittet beskrivs hur lagringen och processerna på serverdelen uppfyller dina efterlevnadskrav, och varför de bör verifieras med eDiscovery-verktyg i stället för med de meddelanden som för närvarande visas i Yammer-appen.
 
-Yammer-meddelanden påverkas inte av kvarhållningsprinciper som har konfigurerats för användar- eller gruppostlådor. Även om Yammer-meddelanden lagras i Exchange omfattas dessa Yammer-data endast av en kvarhållningsprincip som är konfigurerad för platserna **Community-meddelanden i Yammer** och **Användarmeddelanden i Yammer**.
+Du kan använda en kvarhållningsprincip för att behålla data från community-meddelanden och användarmeddelanden i Yammer samt ta bort dessa meddelanden. Bakom kulisserna används Exchange-postlådor för att lagra data som kopieras från dessa meddelanden. Data från Yammer-användarmeddelanden lagras i en dold mapp i postlådan för varje användare som ingår i användarmeddelandet, och en liknande dold mapp i en gruppostlåda används för community-meddelanden.
+
+Kopior av community-meddelanden kan också lagras i den dolda mappen med användarpostlådor när de @omnämner användare eller meddelar användaren om ett svar. Även om dessa meddelanden kommer från ett community-meddelande innehåller en kvarhållningsprincip för Yammer-användarmeddelanden ofta kopior av community-meddelanden.
+
+De dolda mapparna är inte avsedda att vara direkt tillgängliga för användare eller administratörer, utan för att lagra data som efterlevnadsadministratörer kan söka i med eDiscovery-verktyg.
+
+> [!IMPORTANT]
+> Eftersom kopior av community-meddelanden också kan lagras i användarpostlådor kan en kvarhållningsprincip med en borttagningsåtgärd för Yammer-användarmeddelanden resultera i att det ursprungliga communitymeddelandet inte längre visas för användare i Yammer-appen.
+> 
+> En kopia av det ursprungliga meddelandet är dock fortfarande tillgänglig i den dolda mappen i gruppostlådan för communityn och är tillgänglig med eDiscovery-sökningar i efterlevnadssyfte.
+
+Yammer-meddelanden påverkas inte av kvarhållningsprinciper som har konfigurerats för Exchange-postlådor. Även om Yammer-meddelanden lagras i Exchange omfattas dessa Yammer-data endast av en kvarhållningsprincip som är konfigurerad för platserna **Community-meddelanden i Yammer** och **Användarmeddelanden i Yammer**.
 
 > [!NOTE]
 > Om en användare ingår i en aktiv kvarhållningsprincip som behåller Yammer-data och du tar bort postlådan för en användare som ingår i den principen, konverteras postlådan till en [inaktiv postlåda](inactive-mailboxes-in-office-365.md) för att Yammer-datan ska behållas. Om du inte behöver behålla Yammer-datan för användaren exkluderar du användarkontot från kvarhållningsprincipen innan du tar bort postlådan.
@@ -91,7 +102,7 @@ När kvarhållningsprincipen endast ska behålla eller endast ta bort, är inneh
 
 ## <a name="messages-and-external-users"></a>Meddelanden och externa användare
 
-Som standard gäller en kvarhållningsprincip för användarmeddelanden i Yammer alla användare i organisationen, men inte för externa användare. Du kan tillämpa en kvarhållningsprincip på externa användare om du använder **Välj användare** och anger deras konto. 
+Som standard gäller en kvarhållningsprincip för användarmeddelanden i Yammer alla användare i organisationen, men inte för externa användare. Du kan använda en kvarhållningsprincip för externa användare om du använder alternativet **Redigera** för användare som ingår och ange deras konto.
 
 För närvarande stöds inte Azure B2B-gästanvändare.
 
@@ -103,9 +114,9 @@ Om användaren har lagrat några filer i Yammer kan du se [motsvarande avsnitt](
 
 ## <a name="limitations"></a>Begränsningar
 
-För närvarande finns det en förhandsversion av Yammers kvarhållningsprinciper och vi arbetar kontinuerligt med att optimera kvarhållningsfunktionen. Under tiden bör du vara medveten om följande begränsning när du använder kvarhållning för Yammers communitymeddelanden och privata meddelanden:
+För närvarande finns det en förhandsversion av Yammers kvarhållningsprinciper och vi arbetar kontinuerligt med att optimera kvarhållningsfunktionen. Under tiden bör du vara medveten om följande begränsning när du använder kvarhållning för Yammer community-meddelanden och användarmeddelanden:
 
-- När du väljer **Välj användare** för platsen **Användarmeddelanden i Yammer** kan du se gäster och användare utan postlåda. Kvarhållningsprinciperna är inte avsedda för de här användarna, så välj dem inte.
+- När du väljer **Redigera** för platsen **Användarmeddelanden i Yammer** kan du se gäster och användare utan postlåda. Kvarhållningsprinciperna är inte avsedda för de här användarna, så välj dem inte.
 
 ## <a name="configuration-guidance"></a>Konfigurationsvägledning
 

@@ -1,7 +1,7 @@
 ---
 title: Roller och ansvar för Microsoft Hanterat skrivbord
 description: I den här artikeln beskrivs de roller och ansvarsområden som Microsoft tillhandahåller för Microsoft Hanterat skrivbord.
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 94389fbb9a13b9a880b0c4dcaf67d8adcaff0f98
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 7b9efe1a52c108e3de46429d64f9a5535ad13e4e
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841321"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362756"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Roller och ansvar för Microsoft Hanterat skrivbord
 
@@ -31,7 +31,7 @@ Microsoft tillhandahåller dessa viktiga roller och ansvarsområden:
 Roll eller ansvar | Beskrivning
 --- | ---
 MDM-policyhantering | Microsoft tillämpar MDM-principer i enlighet med metodtips och överväger förfrågningar om principändringar. Vi kommer också att göra ändringar i din klientorganisation på det sätt som bestämts [i enhetsprinciper.](../service-description/device-policies.md)
-användarsupport | Vi tillhandahåller användarsupport för enheter, Windows och Microsoft 365-appar för företag-produktpaketet för alla registrerade användare via Få hjälp-appen som är förinstallerad på alla Microsoft Hanterat skrivbord enheter. 
+Användarsupport | Vi tillhandahåller en mekanism för utökad åtkomst till enheter och för problem att eskalera om det behövs. Mer information finns i [Användarsupport.](../service-description/user-support.md)
 Microsoft Hanterat skrivbord tjänstsupport | Microsoft ger support till din IT-avdelning via ett Microsoft Hanterat skrivbord Operations Team. Det här teamet kommer att stödja teknisk felsökning, ändringsförfrågningar och incidenthantering för kundens Microsoft Hanterat skrivbord miljö. Mer information finns i [administratörssupport för Microsoft Hanterat skrivbord](../working-with-managed-desktop/admin-support.md).
 Säkerhetsövervakning | Microsoft övervakar dina e Microsoft Hanterat skrivbord enheter med hjälp av Microsoft Defender för Endpoint. Om Microsoft Hanterat skrivbord säkerhetsoperationscenter (SOC) upptäcker ett hot meddelar vi dig, isolerar enheten och åtgärdar problemet på distans. Mer information finns i [Säkerhet](../service-description/security.md).
 Uppdatera övervakning och hantering | Vi övervakar aktivt dina Microsoft Hanterat skrivbord enheter för att säkerställa att den senaste kvaliteten och funktionsuppdateringarna installeras för Microsoft Windows och Microsoft Office. Mer information finns i [Hur uppdateringar hanteras.](../service-description/updates.md)
@@ -45,8 +45,8 @@ Roll eller ansvar | Beskrivning
 --- | ---
 Ändringshantering | Microsoft meddelar kunderna i förväg när ändringar behöver göras i deras Microsoft Hanterat skrivbord miljö. Mer information finns i [tjänständringar och kommunikation.](../service-description/servicechanges.md)<br><br>Du måste ha en egen hanteringsprocess för ändringar och upprätta en kontakt med Microsoft Hanterat skrivbord Operations Team. Du måste också ha resurser för att granska och godkänna ändringarna. Mer information finns i [Åtgärder och övervakning](../service-description/operations-and-monitoring.md).  
 Identitetshantering | Du ansvarar för att skapa användarkonton, tilldela användare till grupper och hålla metadata uppdaterade. 
-Microsoft 365-appar för företag konfiguration och hantering | Microsoft ansvarar för Office att program distribueras till användare och att de hålls uppdaterade. <br><br> Du ansvarar för att Microsoft 365 tjänster och principer, Exchange Online bland annat administrativa ansvarsområden:<br>- E-postadministration<br>- Postlåde- och regelkonfiguration<br>- Exchange med lokal hantering<br><br>Du ansvarar även för samarbetsverktyg, SharePoint serveradministration, domänhantering och säkerhets- och informationsprinciper som konfigureras i Microsoft 365 administrationscentret. 
-Användarsupport | Du måste ge support för: <br>- Infrastruktur på plats: alla nätverk och Internetanslutning, VPN-infrastruktur och klientkonfiguration, lokal konferensrumsutrustning, skrivare, proxyserver och konfiguration samt brandväggar.<br><br>- Företagsomfattande molnresurser: e-SharePoint, SharePoint, samarbetstjänster och annan molninfrastruktur som relaterar till företagets teknikavtryck.<br><br>- Verksamhetsspecifika appar och andra företagsspecifika program.
+Microsoft 365-appar för företag konfiguration och hantering | Microsoft ansvarar för Office att program distribueras till användare och att de hålls uppdaterade. <br><br> Du ansvarar för att Microsoft 365 tjänster och principer, Exchange Online bland annat administrativa ansvarsområden:<br>- E-postadministration<br>- Postlåde- och regelkonfiguration<br>- Exchange med lokal hantering<br><br>Du ansvarar även för samarbetsverktyg, SharePoint serveradministration, domänhantering och säkerhets- och informationsprinciper som anges i Administrationscenter för Microsoft 365. 
+Användarsupport | Tillhandahålla all användarsupport och teknisk support från första kontakten till lösningen för användaren, antingen av dig eller via en angiven supportpartner. Du måste ge support direkt till användarna eller samarbeta med en partner för att ge support för dessa områden: <br><br>- Infrastruktur på plats: alla nätverk och Internetanslutning, VPN-infrastruktur och klientkonfiguration, lokal konferensrumsutrustning, skrivare, proxyserver och konfiguration samt brandväggar.<br><br>- Företagsomfattande molnresurser: e-SharePoint, SharePoint, samarbetstjänster och annan molninfrastruktur som relaterar till företagets teknikavtryck.<br><br>- Verksamhetsspecifika appar och andra företagsspecifika program.
 Appar | Roller och ansvarsområden varierar något för de appar som tillhandahålls som en del av Microsoft Hanterat skrivbord jämfört med de appar du tillhandahåller. <br><br>För appar som tillhandahålls av Microsoft (Microsoft 365-appar för företag som omfattar Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype för företag, Teams och OneNote) tillhandahåller **Microsoft** fullständiga tjänster för distribution, uppdatering och support. **Du** måste skaffa och tilldela licenser för programmen, lägga till användare i säkerhetsgrupper och hantera slutet av livscykeln och distribuera de tillägg du behöver.<br><br>För program som du tillhandahåller (till exempel verksamhetsbaserade appar), oavsett om du paketerar dem själv eller engagerar en leverantör som inte är Microsoft-leverantör **för** det, ansvarar du för följande åtgärder: <br><br>- Identifiering av program som krävs för riktade användargrupper<br>- Skapa och hantera Azure AD-grupper för appdistribution<br>- Paketera appar för att uppfylla Microsoft Intune för distribution<br>- Ladda upp appar till Microsoft Intune<br>- Testa appar i Microsoft Hanterat skrivbord miljö<br>- Testa appar med dina användare<br>- Hantera och tilldela användare till program<br>- Identifiera och distribuera programuppdateringar via Microsoft Intune<br>- Avinstallera och ta bort program när de har tagits bort<br>- Införskaffa och tilldela licenser<br>- Tillhandahållande av användarstöd för verksamhetsbaserade appar<br>- Hantera appinställningar på distans<br><br>**Microsoft** tillhandahåller Microsoft Intune för distributionsverktyg för att leverera programmen till fjärrklienter.<br><br>Mer information finns i [Program](../get-ready/apps.md).
 Säkerhetsövervakning och svar | Du ansvarar för att undersöka och lösa incidenter för enheter som inte är Microsoft Hanterat skrivbord-enheter och se till att Microsoft Hanterat skrivbord Operations Team är informerad om eventuella problem som kan påverka tjänsten.
 Stöd för åtgärder | Du måste ange en lista över önskade kontakter och ämnesexperter i organisationen. Vi behöver de här kontakterna om det finns en drifthändelse som inte är relaterad till Microsoft Hanterat skrivbord. <br><br>Du är också ansvarig för att undersöka och lösa incidenter för enheter och tjänster som inte finns i Microsoft Hanterat skrivbord och se till att Microsoft Hanterat skrivbord Operations Team alltid informeras.

@@ -429,7 +429,7 @@
               href: archive-salesforcechatter-data.md
             - name: ServiceNow
               href: archive-servicenow-data.md
-            - name: Skype för företag (förhandsversion)
+            - name: Skype för företag
               href: archive-skypeforbusiness-data.md
             - name: EDiscovery för slack
               href: archive-slack-data.md
@@ -463,9 +463,9 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS- och röstnätverksarkivering
               href: archive-o2-network-data.md
-            - name: Signal (förhandsversion)
+            - name: Signalarkivering
               href: archive-signal-archiver-data.md
-            - name: Telegram (förhandsversion)
+            - name: Telegram Archiver
               href: archive-telegram-archiver-data.md
             - name: TELUS-nätverk
               href: archive-telus-network-data.md

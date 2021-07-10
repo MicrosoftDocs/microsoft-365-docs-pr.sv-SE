@@ -1,7 +1,7 @@
 ---
-title: Support för Microsoft Hanterat skrivbord
+title: Support för administratörer
 description: Här beskrivs proaktiv och reaktiv hantering av incidenter för Microsoft Hanterat skrivbord.
-keywords: Microsoft Hanterat skrivbord, Microsoft 365, service, dokumentation
+keywords: Microsoft Hanterat skrivbord, Microsoft 365, tjänst, dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 90787ec28aa2c421df50757fc29bf20b2b5d55f7
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 1c4d94fb89aef76617ebd0995a6849de428afea4
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925509"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362480"
 ---
-# <a name="support-for-microsoft-managed-desktop"></a>Support för Microsoft Hanterat skrivbord
+# <a name="admin-support"></a>Support för administratörer
 
 Microsoft tillhandahåller proaktiv och reaktiv hantering av incidenter. Microsoft håller information om incidenter Microsoft Hanterat skrivbord administrationsportalen. De klassificeras enligt [allvarlighetsdefinitioner.](../working-with-managed-desktop/admin-support.md#sev)
 
@@ -38,7 +38,7 @@ Produkter som stöds:
 - Windows 10 med Microsoft Defender för Slutpunkt
 - Följande Microsoft 365-appar för företag appar: Outlook, Word, PowerPoint, Excel, Skype för företag-klient, Microsoft Teams 
 - Microsoft Store för företag 
-- OneDrive för företag klient 
+- OneDrive klient 
 
 Supportinformation:
 

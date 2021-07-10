@@ -19,18 +19,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Dataförlustskyddet för slutpunkter i Microsoft 365 utökar övervakningen av filaktiviteter och skyddsåtgärder för dessa filer till slutpunkter. Filerna visas i lösningarna för Microsoft 365 Efterlevnadscenter '
-ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c97368dd48515dc787dbac66aa93844889efbdbc
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226689"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314422"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Mer information om dataförlustskydd för slutpunkter i Microsoft 365
 
 Du kan använda dataförlustskyddet (DLP) i Microsoft 365 till att övervaka åtgärder som vidtas för objekt som du har fastställt vara känsliga och för att förhindra oavsiktlig delning av dessa objekt. Mer information om DLP finns i [Mer information om dataförlustskydd](dlp-learn-about-dlp.md).
 
 **Dataförlustskyddet för slutpunkter** (slutpunkts-DLP) utökar funktionerna för aktivitetsövervakning och säkerhet i DLP till känsliga objekt som finns på Windows 10-enheter. När enheter har registrerats i efterlevnadslösningarna för Microsoft 365 blir informationen om vad användare gör med känsliga objekt synlig i [aktivitetsutforskaren](data-classification-activity-explorer.md) och du kan vidta skyddsåtgärder för dessa objekt via [DLP-principer](create-test-tune-dlp-policy.md).
+
+> [!TIP]
+> Om du letar efter enhetskontroll för flyttbara lagringsmedia läser du [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Slutpunktsaktiviteter som du kan övervaka och vidta åtgärder för
 

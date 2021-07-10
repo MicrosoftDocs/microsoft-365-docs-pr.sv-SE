@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Lär dig hur du flyttar SharePoint en webbplats till en annan geoplats i din multigeobaserade miljö och kommunicerar förväntningar på ändringarna till användarna.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5a49098045dbce94ef1c474497b8da1b397ac0b0
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910936"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362360"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Flytta en SharePoint webbplats till en annan geoplats
 
@@ -28,7 +28,7 @@ Med SharePoint geoflyttning av webbplats kan du SharePoint till andra geoplatser
 
 Följande typer av webbplatser kan flyttas mellan geografiska platser:
 
-- Microsoft 365 Gruppanslutna webbplatser
+- Microsoft 365 Gruppanslutna webbplatser, inklusive de som är kopplade till Microsoft Teams
 - Moderna webbplatser utan Microsoft 365 för grupp
 - Klassiska SharePoint webbplatser
 - Kommunikationswebbplatser
@@ -159,7 +159,7 @@ Flyttningsstatusen beskrivs i följande tabell.
 |Redo att utlösare|Flyttningen har inte startat.|
 |Schemalagd|Flyttningen ligger i kö men har ännu inte påbörjats.|
 |InProgress (n/4)|Flyttningen pågår i ett av följande tillstånd: Verifiering (1/4), Säkerhetskopiering (2/4), Återställ (3/4), Rensning (4/4).|
-|Lyckades|Flyttningen har slutförts.|
+|Klart|Flyttningen har slutförts.|
 |Misslyckades|Flyttningen misslyckades.|
 |
 
@@ -177,11 +177,11 @@ Medan flytten pågår är webbplatsen skrivskyddd. När flytten är slutförd di
 
 Användare med behörighet till webbplatsen fortsätter att ha åtkomst till webbplatsen under flytten och efter att den är slutförd.
 
-### <a name="sync-client"></a>Synkroniseringsklient
+### <a name="sync-app"></a>Synkroniseringsapp
 
-Synkroniseringsklienten identifierar och överför automatiskt synkroniseringen till den nya webbplatsen när webbplatsflyttningen är klar. Användaren behöver inte logga in igen eller vidta någon annan åtgärd. (Version 17.3.6943.0625 eller senare av synkroniseringsklienten krävs.)
+Synkroniseringsappen identifierar och överför automatiskt synkronisering till den nya webbplatsen när webbplatsflyttningen är klar. Användaren behöver inte logga in igen eller vidta någon annan åtgärd. (Version 17.3.6943.0625 eller senare av synkroniseringsappen krävs.)
 
-Om en användare uppdaterar en fil medan flyttningen pågår meddelar synkroniseringsklienten att filuppladdningar väntar medan flyttningen pågår.
+Om en användare uppdaterar en fil medan flyttningen pågår meddelar synkroniseringsappen att filuppladdningar väntar medan flyttningen pågår.
 
 ### <a name="sharing-links"></a>Delningslänkar
 

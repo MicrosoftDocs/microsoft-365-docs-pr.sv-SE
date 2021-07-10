@@ -174,6 +174,7 @@
 #### [Allmänt]()
 ##### [Verifiera datalagringsplatsen och uppdatera inställningarna för datalagring](data-retention-settings.md)
 ##### [Konfigurera varningsaviseringar](configure-email-notifications.md)
+##### [Konfigurera e-postaviseringar om sårbarhet](configure-vulnerability-email-notifications.md)
 ##### [Konfigurera avancerade funktioner](advanced-features.md)
 
 #### [Behörigheter]()

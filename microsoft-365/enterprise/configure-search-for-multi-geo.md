@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Lär dig hur du konfigurerar sökning i en miljö med flera geoer. Endast vissa klienter, till exempel OneDrive för företag,kan returnera resultat i en geomiljö med flera funktioner.
-ms.openlocfilehash: 31e0c4ae3fe73f2f6e113dbc38989726eb1ca590
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+description: Lär dig hur du konfigurerar sökning i en miljö med flera geoer. Endast vissa klienter, till exempel OneDrive, kan returnera resultat i en geomiljö med flera funktioner.
+ms.openlocfilehash: dfc9e3dd986132810f363ba47ba18eae45666fc7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022336"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362276"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Konfigurera sökning efter Microsoft 365 multi-geo
 
@@ -30,13 +30,13 @@ En användare på en geoplats kan till exempel söka efter innehåll som lagrats
 
 Dessa klienter kan returnera resultat från alla geoplatser:
 
-- OneDrive för företag
+- OneDrive
 - Delve
 - Sidan SharePoint startsida
 - Sökcenter
 - Anpassade sökprogram som använder SharePoint Search API
 
-### <a name="onedrive-for-business"></a>OneDrive för företag
+### <a name="onedrive"></a>OneDrive
 
 Så snart multigeomiljön har ställts in kan användare som söker i OneDrive få resultat från alla geografiska platser.
 
@@ -65,9 +65,9 @@ Vissa sökfunktioner som du kanske är van vid fungerar annorlunda i en geomilj�
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Funktion</strong></th>
-<th align="left"><strong>Så här fungerar det</strong></th>
-<th align="left"><strong>Lösning</strong></th>
+<th align="left">Funktion</th>
+<th align="left">Så här fungerar det</th>
+<th align="left">Lösning</th>
 </tr>
 </thead>
 <tbody>
@@ -112,8 +112,8 @@ Vissa av de sökfunktioner du kanske är van vid stöds inte i en miljö med fle
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Sökfunktion</strong></th>
-<th align="left"><strong>Obs!</strong></th>
+<th align="left">Sökfunktion</th>
+<th align="left">Obs!</th>
 </tr>
 </thead>
 <tbody>
@@ -122,8 +122,8 @@ Vissa av de sökfunktioner du kanske är van vid stöds inte i en miljö med fle
 <td align="left">Endast programautentisering (behörighet från tjänster) stöds inte i Multi-Geo-sökning.</td>
 </tr>
 <tr class="even">
-<td align="left">Gästanvändare</td>
-<td align="left">Gästanvändare får bara resultat från den geoplats de söker från.</td>
+<td align="left">Gäster</td>
+<td align="left">Gäster får bara resultat från den geoplats de söker från.</td>
 </tr>
 </tbody>
 </table>
@@ -206,11 +206,11 @@ MultiGeoSearchConfiguration – Det här är en valfri lista över vilka geoplat
 </tbody>
 </table>
 
-Om du utelämnar DataLocation eller EndPoint, eller om en DataLocation dupliceras, misslyckas begäran. [Du kan få information om slutpunkten för en klientorganisations geografiska platser med hjälp av Microsoft Graph.](/sharepoint/dev/solution-guidance/multigeo-discovery)
+Om du utelämnar DataLocation eller EndPoint, eller om en DataLocation dupliceras, misslyckas begäran. [Du kan få information om slutpunkten för en klientorganisations geografiska platser med hjälp av Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Svarsdata
 
-MultiGeoSearchStatus – Det här är en egenskap som SharePoint Search API returnerar som svar på en begäran. Värdet för egenskapen är en sträng och ger följande information om de resultat som Sök-API:t för SharePoint returnerar:
+MultiGeoSearchStatus – Det här är en egenskap som SharePoint sök-API returnerar som svar på en begäran. Värdet för egenskapen är en sträng och ger följande information om de resultat som sök-API:t SharePoint returnerar:
 
 <table>
 <thead>
@@ -254,18 +254,22 @@ Med en HÄMTA-begäran anger du frågeparametrar i URL-adressen. Med en POST-beg
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Exempel på HÄMTA-begäran som är **bortskad från alla** geografiska platser
 
-https:// \<tenant\> / \_ api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my \_ client \_ id'
+```http
+https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+```
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Exempel på HÄMTA begäran att ta del **av en** del geografiska platser
 
-https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation \\ :"NAM" \\ ,Endpoint \\ :"https \\ ://contosoNAM.sharepoint.com" \\ ,SourceId \\ :"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ ,{DataLocation \\ :"CAN" \\ ,Endpoint \\ :"https \\ ://contosoCAN.sharepoint-df.com"}]'
+```http
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+```
 
 > [!NOTE]
 > Kommatecken och kolon i listan över geografiska platser för egenskapen MultiGeoSearchConfiguration föregås av **omstöpen** snedstreck. Det beror på att HÄMTA-begäranden använder kolon för att separera egenskaper och kommatecken för att separera egenskapsargument. Utan om baksnedstrecket som ett escape-tecken tolkas egenskapen MultiGeoSearchConfiguration felaktigt.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Exempel på EFTER-begäran som är **bortskad från alla** geografiska platser
 
-```text
+```http
     {
     "request": {
             "__metadata": {
@@ -290,7 +294,7 @@ https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>Exempel på INLÄGG-begäran som är **bortskad från vissa** geografiska platser
 
-```text
+```http
     {
         "request": {
             "Querytext": "SharePoint",
@@ -321,7 +325,7 @@ https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client
 
 Här är ett exempel på en CSOM-fråga som är borta **från alla** geoplatser:
 
-```text
+```CSOM
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;

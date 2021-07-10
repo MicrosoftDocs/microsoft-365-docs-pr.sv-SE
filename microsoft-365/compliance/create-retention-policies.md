@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Använd en kvarhållningsprincip för effektiv kontroll över innehåll som användare genererar med e-post, dokument och konversationer. Behåll det du vill ha och ta bort det du inte vill ha.
-ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 97b90cc84e2b14e5c63779ea8b941a5ffe64bcd7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256537"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362336"
 ---
 # <a name="create-and-configure-retention-policies"></a>Skapa och konfigurera kvarhållningsprinciper
 
@@ -75,7 +75,7 @@ Om du har fler än en kvarhållningsprincip och du också använder kvarhållnin
     - **Teams-chattar**: Meddelanden från privata 1:1-chattar, gruppchatt och möteschatt.
     - **Privata kanalmeddelanden i Teams**: Meddelanden från privata kanalchattar och privata kanalmöten. Det här alternativet lanseras för närvarande i förhandsversion och om du inte ser det kan du försöka igen om några dagar.
     
-   Som standard är [alla team och alla användare markerade](#a-policy-that-applies-to-entire-locations), men du kan förfina det genom att välja [alternativen **Välj** och **Exkludera**](#a-policy-with-specific-inclusions-or-exclusions). Innan du ändrar standardinställningen bör du tänka på följande konsekvenser för en kvarhållningsprincip som tar bort meddelanden när den konfigureras för att omfatta eller exkludera:
+   Som standard [markeras alla team och alla användare](#a-policy-that-applies-to-entire-locations), men du kan förfina detta genom att välja alternativen **Redigera** för att konfigurera en kvarhållningsprincip för [specifika inkluderingar eller undantag](#a-policy-with-specific-inclusions-or-exclusions). Innan du ändrar standardinställningen bör du tänka på följande konsekvenser för en kvarhållningsprincip som tar bort meddelanden när den konfigureras för att omfatta eller exkludera:
     
     - För gruppchattmeddelanden och privata kanalmeddelanden, eftersom en kopia av meddelanden sparas i varje användares postlåda som ingår i chatten, fortsätter kopior av meddelanden att returneras i eDiscovery-resultat från användare som inte har tilldelats principen.
     - För användare som inte har tilldelats principen returneras borttagna meddelanden i sökresultat för Teams, men meddelandets innehåll visas inte som ett resultat av den permanenta borttagningen från principen som är tilldelad till användare.
@@ -94,9 +94,9 @@ Teknisk information om hur kvarhållning fungerar för Teams, inklusive vilka de
 
 - Även om du kan välja att starta kvarhållningsperioden när objekten senast ändrades så används alltid värdet **När objekt skapades**. För meddelanden som redigeras sparas en kopia av det ursprungliga meddelandet med sin ursprungliga tidsstämpel för att identifiera när det här förredigerade meddelandet skapades, och det efterredigerade meddelandet har en nyare tidsstämpel.
 
-- När du väljer **Välj team** för platsen **Teams-kanalmeddelanden** kanske du ser Microsoft 365-grupper som inte också är team. Markera inte de här grupperna.
+- När du väljer **Redigera** för platsen **Teams-kanalmeddelanden** ser du eventuellt Microsoft 365-grupper som inte också är team. Markera inte de här grupperna.
 
-- När du väljer **Välj användare för platsen Teams-chattar** kan du se gäster och användare utan postlåda. Kvarhållningsprinciperna är inte avsedda för de här användarna, så välj dem inte.
+- När du väljer **Redigera** för platsen Teams chattar kan du se gäster och användare som inte har postlådor. Kvarhållningsprinciperna är inte avsedda för de här användarna, så välj dem inte.
 
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Ytterligare kvarhållningsprincip som behövs för att stödja Teams
@@ -125,17 +125,22 @@ Det är möjligt att en kvarhållningsprincip som används på Microsoft 365-gru
 
 2. Välj **Ny kvarhållningsprincip** för att skapa en ny kvarhållningsprincip.
 
-3. För sidan **Bestäm om du vill bevara innehållet och/eller ta bort det** i guiden anger du konfigurationsalternativ för att behålla och ta bort innehåll. 
+3. För sidan **Välj platser för att tillämpa principen** aktiverar du en eller båda platserna för Yammer: **Yammer-communitymeddelande** och **Yammer-användarmeddelanden**.
     
-    Du kan skapa en kvarhållningsprincip som bara behåller innehåll utan borttagning, som behåller och sedan tar bort efter en angiven tidsperiod eller som bara tar bort innehåll efter en angiven tidsperiod. Mer information finns i [Inställningar för att behålla och ta bort innehåll](#settings-for-retaining-and-deleting-content) på den här sidan.
-
-4. För sidan **Välj platser** väljer du **Låt mig välja specifika platser**. Aktivera sedan en eller båda platserna för Yammer: **Community-meddelanden i Yammer** och **Användarmeddelanden i Yammer**.
+    > [!IMPORTANT]
+    > Även om du kan skapa en kvarhållningsprincip för enbart Yammer-användarmeddelanden kan en kvarhållningsprincip för den här platsen ta bort community-meddelanden från Yammer-appen för alla community-medlemmar.
+    > 
+    > Om du väljer det här alternativet och kvarhållningsprincipen konfigureras för att ta bort användarmeddelanden ska du se till att du förstår detta. Mer information finns i [Hur kvarhållning fungerar med Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
     
     Som standard är alla communities och användare markerade, men du kan förfina detta genom att ange communities och användare som ska inkluderas eller exkluderas.
     
     För användarmeddelanden i Yammer: 
     - Om du lämnar standardvärdet som **Alla** inkluderas inte Azure B2B-gästanvändare. 
-    - Om du väljer **Välj användare** kan du tillämpa en kvarhållningsprincip på externa användare om du känner till deras konto.
+    - Om du väljer **Redigera** för kolumnen **Ingår** kan du använda en kvarhållningsprincip för externa användare om du känner till deras konto.
+
+4. För sidan **Bestäm om du vill bevara innehållet och/eller ta bort det** i guiden anger du konfigurationsalternativ för att behålla och ta bort innehåll. 
+    
+    Du kan skapa en kvarhållningsprincip som bara behåller innehåll utan borttagning, som behåller och sedan tar bort efter en angiven tidsperiod eller som bara tar bort innehåll efter en angiven tidsperiod. Mer information finns i [Inställningar för att behålla och ta bort innehåll](#settings-for-retaining-and-deleting-content) på den här sidan.
 
 5. Slutför guiden och spara inställningarna.
 
@@ -167,7 +172,7 @@ Använd följande instruktioner för kvarhållningsprinciper som gäller för n�
 
 2. Välj **Ny kvarhållningsprincip** för att starta guiden Skapa kvarhållningsprincip, och namnge den nya kvarhållningsprincipen.
 
-3. För sidan **Välj platser** aktiverar eller inaktiverar du valfria platser förutom platserna för Teams. Du kan för varje plats lämna den på standardvärdet för att [tillämpa principen på hela platsen](#a-policy-that-applies-to-entire-locations), eller så kan du [ange vilka som ska inkluderas eller exkluderas](#a-policy-with-specific-inclusions-or-exclusions).
+3. För sidan **Välj platser för att tillämpa principen** kan du aktivera eller inaktivera någon av platserna utom platserna för Teams. Du kan för varje plats lämna den på standardvärdet för att [tillämpa principen på hela platsen](#a-policy-that-applies-to-entire-locations), eller så kan du [ange vilka som ska inkluderas eller exkluderas](#a-policy-with-specific-inclusions-or-exclusions).
 
     Information som är specifik för platser:
     - [Exchange-e-post och gemensamma Exchange-mappar](#configuration-information-for-exchange-email-and-exchange-public-folders)
