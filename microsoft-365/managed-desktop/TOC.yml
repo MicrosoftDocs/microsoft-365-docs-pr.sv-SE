@@ -41,8 +41,10 @@
           href: service-description/privacy-personal-data.md
         - name: Uppdateringar
           href: service-description/updates.md
-        - name: Support
+        - name: Support för administratörer
           href: service-description/support.md
+        - name: Användarsupport
+          href: service-description/user-support.md
         - name: Drift och övervakning
           href: service-description/operations-and-monitoring.md
         - name: Diagnostikloggar
@@ -115,6 +117,8 @@
                   href: get-started/register-devices-partner.md
             - name: Registrera befintliga enheter själv
               href: get-started/register-reused-devices-self.md
+        - name: Aktivera funktioner för användarsupport
+          href: get-started/enable-support.md
         - name: Gör användarna redo att använda enheter
           href: get-started/get-started-devices.md
         - name: Välkomstprogrammet med Autopilot och sidan Registreringsstatus

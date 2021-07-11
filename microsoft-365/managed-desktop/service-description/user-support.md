@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8cb1b30da84ece597235d8eef674a12208ab6456
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8063e1b0e76241df946a29ef2c5115bc0dc39aad
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362684"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363773"
 ---
 # <a name="user-support"></a>Användarsupport
 
@@ -83,7 +83,7 @@ Om ett användarproblem behöver eskaleras till Microsoft Hanterat skrivbord kan
 
 ### <a name="elevation-portal"></a>Höjdportal 
 
-Eftersom Microsoft Hanterat skrivbord-enheter körs på standardanvändare som standard, kräver vissa uppgifter höjd på behörigheter. (Mer information om användarkontokontroll finns i [User Account Control](/windows/security/identity-protection/user-account-control/user-account-control-overview)) För att supportpersonalen ska [](../working-with-managed-desktop/end-user-support.md#elevation-requests) kunna utföra uppgifter medan problem felsökas för användarna ger vi "bara-i-tid" åtkomst till ett administratörskonto. Lösenordet kommer bara åt de du anger och roterar varannan timme.  
+Eftersom Microsoft Hanterat skrivbord-enheter körs på standardanvändare som standard, kräver vissa uppgifter höjd på behörigheter. Mer information om användarkontokontroll finns i [Användarkontokontroll](/windows/security/identity-protection/user-account-control/user-account-control-overview). För att supportpersonalen ska [](../working-with-managed-desktop/end-user-support.md#elevation-requests) kunna utföra uppgifter medan problem felsökas för användarna ger vi "bara-i-tid" åtkomst till ett administratörskonto. Lösenordet kommer bara åt de du anger och roterar varannan timme.  
 
 Anvisningar om hur du anger åtkomst för användare till den här portalen finns i [Aktivera användarstödfunktioner.](../get-started/enable-support.md)
 

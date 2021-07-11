@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Administratörer kan läsa mer om hur man SharePoint och OneDrive tjänster i en miljö med flera platser.
-ms.openlocfilehash: 4c5215b855b8ca1840035b39fcfbddde419c13d8
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 9ef22a34881ef5c9c2ed72835bc88c1dbfe835b5
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362324"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363949"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administrera en Multi-Geo-Miljö
 
@@ -76,7 +76,7 @@ Administratörer kan ange och hantera delningsprinciper för var och en av sina 
 
 ## <a name="stream"></a>Stream
 
-Videor som laddas upp till Stream lagras i OneDrive för den person som laddar upp. Mötesinspelningar lagras i OneDrive för alla deltagare som spelar in mötet.
+Videor som laddas upp till Stream i en privat chatt lagras i OneDrive för den person som laddar upp. Mötesinspelningar lagras i OneDrive för alla deltagare som spelar in mötet.
 
 ## <a name="taxonomy"></a>Taxonomi
 

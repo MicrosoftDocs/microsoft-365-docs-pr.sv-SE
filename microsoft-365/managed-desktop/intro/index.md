@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e70a67f9472dff155b8554d5d6ae26c79d49a67a
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841372"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362624"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Vad är Microsoft Hanterat skrivbord?
 
@@ -25,7 +25,6 @@ Microsoft Hanterat skrivbord är en molnbaserad tjänst som omfattar [Microsoft 
 - Distribution av användarenheter
 - IT-tjänsthantering och -drift
 - Säkerhetsövervakning och svar
-- Användarsupport
 
 Microsoft Hanterat skrivbord tillhandahåller en lösning på flera av de utmaningar som företag och medarbetare står inför idag:
 - Övergången till den smidiga världen med programvara som tjänst är överväldigande.
@@ -33,7 +32,7 @@ Microsoft Hanterat skrivbord tillhandahåller en lösning på flera av de utmani
 - Många av dagens processer för IT-hantering och säkerhet är inaktuella, tidskrävande och dyra.
 - Företag vill fokusera på det som gör dem unika och ger resultat, hellre än att underhålla den digitala infrastrukturen.
 
-Dina användare får tillgång till de senaste versionerna av Windows 10 och Microsoft 365-applikationer för företag (och fler dessutom) när de använder enheter och programvara som granskas och testas rigoröst för bästa prestanda och tillförlitlighet. Du behöver inte heller oroa dig för att hålla programvaran uppdaterad eftersom det sker automatiskt, enligt en noggrann distributionssekvens som övervakas i varje steg. Och registrerade enheter övervakas 24x7 för tekniska problem och säkerhetsproblem, så om något går fel är hjälp på väg.
+Dina användare får tillgång till de senaste versionerna av Windows 10 och Microsoft 365-applikationer för företag (och fler dessutom) när de använder enheter och programvara som granskas och testas rigoröst för bästa prestanda och tillförlitlighet. Du behöver inte heller oroa dig för att hålla programvaran uppdaterad eftersom det sker automatiskt, enligt en noggrann distributionssekvens som övervakas i varje steg. Och registrerade enheter övervakas 24 timmar om dygnet, sju dagar i veckan för tekniska problem och säkerhetsproblem, så om något går fel är hjälp på väg.
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Unikt för Microsoft Hanterat skrivbord

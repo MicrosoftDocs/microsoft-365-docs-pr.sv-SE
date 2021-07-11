@@ -123,7 +123,7 @@ ID | Kategori | ER | Adresser | Portar
 148 | Standard<BR>Obligatoriskt | Nej | `cdnprod.myanalytics.microsoft.com, myanalytics.microsoft.com, myanalytics-gcc.microsoft.com` | **TCP:** 443, 80
 149 | Standard<BR>Obligatoriskt | Nej | `workplaceanalytics.cdn.office.net` | **TCP:** 443, 80
 150 | Standard<BR>Valfritt<BR>**Anmärkningar:** Blockering av dessa slutpunkter påverkar möjligheten att komma åt Office 365 ProPlus-distributions- och hanteringsfunktioner via portalen. | Nej | `*.officeconfig.msocdn.com` | **TCP:** 443
-152 | Standard<BR>Valfritt<BR>**Anmärkningar:** Dessa slutpunkter möjliggör Office-skript-funktionalitet i Office-klienter tillgängliga via fliken Automatisera. Denna funktion kan också inaktiveras via Office 365 Admin-portalen. | Nej | `*.microsoftusercontent.com` | **TCP:** 443
+152 | Standard<BR>Valfritt<BR>**Anmärkningar:** Dessa slutpunkter möjliggör Office-skript-funktionalitet i Office-klienter tillgängliga via fliken Automatisera. Denna funktion kan också inaktiveras via Administrationscenter för Microsoft 365. | Nej | `*.microsoftusercontent.com` | **TCP:** 443
 153 | Standard<BR>Obligatoriskt | Nej | `*.azure-apim.net, *.flow.microsoft.com, *.powerapps.com` | **TCP:** 443
 156 | Standard<BR>Obligatoriskt | Nej | `activity.windows.com` | **TCP:** 443
 157 | Standard<BR>Obligatoriskt | Nej | `ocsp.int-x3.letsencrypt.org` | **TCP:** 80

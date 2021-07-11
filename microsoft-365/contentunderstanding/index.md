@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Lär dig hur du hittar resurser för Microsoft SharePoint Syntex.
-ms.openlocfilehash: a3bd14c379425573ee7ad57604cc4cbb706741b8
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 087cf7b21d00cef3711d8e5765161eaa98418437
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149016"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327065"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Introduktion till Microsoft SharePoint-Syntex
 
@@ -57,6 +57,7 @@ Läs mer om hur du använder och implementerar SharePoint-Syntex i din organisat
 |:-----|:-----|
 |Så börjar du planera för att använda SharePoint Syntex |[SharePoint Syntex-införande: komma igång](./adoption-getstarted.md)| 
 |Se exempelscenarier som ger dig idéer om hur du kan använda SharePoint Syntex i din organisation |[Scenarier och användningsfall för Microsoft SharePoint Syntex](./adoption-scenarios.md)| 
+|Konfigurera och köra ett utvärderingsprogram för SharePoint Syntex |[Kör en utvärderingsversion](./trial-syntex.md)|
 |Lär dig använda SharePoint Syntex för att automatisera dokumentprocesser |[Hantera kontrakt med en Microsoft 365-lösning](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>Konfigurera SharePoint Syntex
@@ -65,7 +66,7 @@ Resurserna i det här avsnittet hjälper din administratör i organisationen att
 
 | Om du letar efter den här informationen: | Gå till den här resursen: |
 |:-----|:-----|
-|Installera och konfigurera SharePoint Syntex|[Konfigurera Microsoft SharePoint Syntex](./set-up-content-understanding.md)|
+|Installera och konfigurera SharePoint Syntex|[Konfigurera SharePoint Syntex](./set-up-content-understanding.md)|
 |Lär dig mer om bildtaggning och inaktivering|[Bildtaggning i SharePoint Syntex](./image-tagging.md)|
 
 ## <a name="models"></a>Modeller
@@ -76,6 +77,7 @@ Resurserna i det här avsnittet hjälper dina användare att lära sig skapa och
 |:-----|:-----|
 |Lär dig att arbeta med modeller|[Skapa ett innehållscenter](./create-a-content-center.md)<br><br>[Skapa en klassificerare](./create-a-classifier.md)<br><br>[Skapa en extraherare](./create-an-extractor.md)<br><br>[Skapa en modell för formulärbearbetning](./create-a-form-processing-model.md)<br><br>[Förklaringstyper](./explanation-types-overview.md)<br><br>[Använda en modell för dokumenttolkning](./apply-a-model.md)<br><br>[Läs mer om modeller för dokumenttolkning genom exempel modellen](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Applicera en kvarhållningsetikett för din modell|[Använda kvarhållningsetiketter på modeller för dokumenttolkning](./apply-a-retention-label-to-a-model.md)|
+|Tillämpa en kvarhållningsetikett på din modell|[Tillämpa en känslighetsetikett på en modell för dokumenttolkning](./apply-a-sensitivity-label-to-a-model.md)|
 |Använd Hanterade Metadata-tjänster för termlagringstaxonomi vid skapande av en extraherare|[Använd termlagringstaxonomi vid skapande av extraherare](./leverage-term-store-taxonomy.md)|
 |Lär dig hur du kan se data om dina modeller|[Modell för användningsanalys](./model-usage-analytics.md)|
 |Lär dig hur du använder tillgänglighetsläge när du tränar en modell|[Tillgänglighetsläge för SharePoint Syntex ](./accessibility-mode.md)|
@@ -90,4 +92,3 @@ Med en SharePoint Syntex-licens får dina användare premiuminnehållstjänster 
 |Lär dig hur du kan göra innehållstyper mer konsekvent tillgängliga för SharePoint-bibliotek och listor|[Skicka innehållstyper till en hubb](./push-content-type-to-hub.md)|
 |Läs mer om termlagringsrapporter som är tillgängliga för dig|[Termlagringsrapporter ](./term-store-analytics.md)|
 
-## <a name="see-also"></a>Se även
