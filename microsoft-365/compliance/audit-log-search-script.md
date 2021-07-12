@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: Använd ett PowerShell-skript som kör cmdleten Search-UnifiedAuditLog i Exchange Online för att söka i granskningsloggen. Det här skriptet är optimerat för att returnera en stor uppsättning (upp till 50 000) granskningsposter. Skriptet exporterar dessa poster till en CSV-fil som du kan visa eller transformera med Power Query i Excel.
-ms.openlocfilehash: df5e675e5e36603a73078bd5ecf5e64bc7a76f95
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+description: Använd ett PowerShell-skript som kör cmdleten Search-UnifiedAuditLog i Exchange Online för att söka i granskningsloggen. Det här skriptet är optimerat för att returnera en stor uppsättning (upp till 50 000) granskningsposter. Skriptet exporterar dessa poster till en CSV-fil som du kan visa eller transformera med Power Query i Excel.
+ms.openlocfilehash: 8abea51bb1e7e1fa7bd513bea78708b06da62def
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: sv-SE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "52162802"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341014"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Använda ett PowerShell-skript för att söka i granskningsloggen
 
@@ -36,7 +36,7 @@ Säkerhet, efterlevnad och granskning har idag högsta prioritet för IT-adminis
 
 Om du regelbundet behöver hämta granskningsloggar bör du överväga en lösning som använder Office 365 Management Activity-API:et eftersom det ger stora organisationer skalbarhet och prestanda för att kontinuerligt hämta miljontals granskningsposter. Genom att använda verktyget för sökning i granskningslogg i Microsoft 365 Efterlevnadscenter kan du snabbt hitta granskningsposter för specifika åtgärder som inträffar under en kortare tidsperiod. Om du använder långa tidsintervall i verktyget för sökning i granskningslogg, särskilt om du har en stor organisation, kan så många poster returneras att de inte går att hantera eller exportera enkelt.
 
-I situationer där du behöver hämta granskningsdata för en viss undersökning eller incident manuellt kan det bästa alternativet vara att använda cmdleten **Search-UnifiedAuditLog**, särskilt för längre datumintervall i större organisationer. Den här artikeln innehåller ett PowerShell-skript som använder cmdleten för att hämta upp till 50 000 granskningsposter och sedan exportera dem till en CSV-fil som du kan formatera med Power Query i Excel som stöd för din granskning. Med hjälp av skriptet i den här artikeln minimeras också risken för att stora sökningar i granskningsloggen uppnår tidsgränsen i tjänsten.
+I situationer där du behöver hämta granskningsdata för en viss undersökning eller incident manuellt kan det bästa alternativet vara att använda cmdleten **Search-UnifiedAuditLog**, särskilt för längre datumintervall i större organisationer. Den här artikeln innehåller ett PowerShell-skript som använder cmdleten för att hämta upp till 50 000 granskningsposter och sedan exportera dem till en CSV-fil som du kan formatera med Power Query i Excel som stöd för din granskning. Med hjälp av skriptet i den här artikeln minimeras också risken för att stora sökningar i granskningsloggen uppnår tidsgränsen i tjänsten.
 
 ## <a name="before-you-run-the-script"></a>Innan du kör skriptet
 
@@ -48,7 +48,7 @@ I situationer där du behöver hämta granskningsdata för en viss undersökning
 
   Värdet `True` för egenskapen **UnifiedAuditLogIngestionEnabled** anger att sökning i granskningslogg är aktiverat.
 
-- Du måste ha tilldelats rollen för endast visning av granskningsloggar eller rollen för granskningsloggar i Exchange Online för att kunna köra skriptet. Som standard tilldelas de här rollerna till rollgrupperna Efterlevnadshantering och Organisationshantering på sidan Behörigheter i administrationscentret för Exchange. Mer information finns i avsnittet ”Krav för att söka i granskningsloggen” i [Söka i granskningsloggen i Efterlevnadscenter](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log).
+- Du måste ha tilldelats rollen för endast visning av granskningsloggar eller rollen för granskningsloggar i Exchange Online för att kunna köra skriptet. Som standard tilldelas de här rollerna till rollgrupperna Efterlevnadshantering och Organisationshantering på sidan Behörigheter i administrationscentret för Exchange. Mer information finns i avsnittet ”Krav för att söka i granskningsloggen” i [Söka i granskningsloggen i Efterlevnadscenter](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log).
 
 - Det kan ta lång tid för skriptet att slutföras. Hur lång tid det tar att köra beror på datumintervallet och storleken på det intervall som du konfigurerar att skriptet ska hämta granskningsposter för. Större datumintervall och mindre intervall ger långa körningstider. Se tabellen i steg 2 för mer information om datumintervall och intervall.
 
@@ -152,7 +152,7 @@ När du har anslutit till Exchange Online PowerShell är nästa steg att skapa, 
    |`[DateTime]$start` och `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Anger datumintervallet för sökningen i granskningsloggen. Skriptet returnerar poster för granskningsaktiviteter som inträffat inom det angivna datumintervallet. Om du till exempel vill returnera aktiviteter som har utförts i januari 2021 kan du använda startdatumet `"2021-01-01"` och slutdatumet `"2021-01-31"` (se till att omge värdena med dubbla citattecken). Exempelvärdet i skriptet returnerar poster för aktiviteter som utförts under de föregående 24 timmarna. Om du inte tar med en tidsstämpel i värdet är standardtidsstämpeln 00:00 (midnatt) på det angivna datumet.|
    |`$record`|"AzureActiveDirectory"|Anger posttypen för granskningsaktiviteterna (kallas även för *åtgärder*) som du vill söka efter. Den här egenskapen anger tjänsten eller funktionen som en aktivitet utlöstes i. En lista över posttyper som du kan använda för den här variabeln finns i [Posttyper i granskningsloggen](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). Du kan använda posttypsnamnet eller ENUM-värdet. <br/><br/>**Tips!** Om du vill returnera granskningsposter för alla posttyper använder du värdet `$null` (utan dubbla citattecken).|
    |`$resultSize`|5000|Anger antalet resultat som returneras varje gång cmdleten **Search-UnifiedAuditLog** anropas av skriptet (kallas för *resultatuppsättning*). Värdet på 5 000 är det största värde som stöds av cmdleten. Lämna det här värdet som det är.|
-   |`$intervalMinutes`|60|För att kringgå returneringsgränsen på 5 000 poster tar den här variabeln det dataintervall du har angett och delar upp det i mindre tidsintervall. Nu omfattas varje tidsintervall, inte hela datumintervallet, av kommandots utdatagräns på 5 000 poster. Standardvärdet på 5 000 poster per 60 minuters intervall inom datumintervallet borde vara tillräckligt för de flesta organisationer. Men om skriptet returnerar ett felmeddelande som säger `maximum results limitation reached` (gränsen för högsta antal resultat har nåtts), minskar du tidsintervallet (till exempel till 30 minuter eller 15 minuter) och kör sedan skriptet igen.|
+   |`$intervalMinutes`|60|För att kringgå returneringsgränsen på 5 000 poster tar den här variabeln det dataintervall du har angett och delar upp det i mindre tidsintervall. Nu omfattas varje tidsintervall, inte hela datumintervallet, av kommandots utdatagräns på 5 000 poster. Standardvärdet på 5 000 poster per 60 minuters intervall inom datumintervallet borde vara tillräckligt för de flesta organisationer. Men om skriptet returnerar ett felmeddelande som säger `maximum results limitation reached` (gränsen för högsta antal resultat har nåtts), minskar du tidsintervallet (till exempel till 30 minuter eller 15 minuter) och kör sedan skriptet igen.|
    ||||
 
    De flesta variablerna som anges i den föregående tabellen har motsvarande parametrar för cmdleten **Search-UnifiedAuditLog**. Mer information om de här parametrarna finns i [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
@@ -168,7 +168,7 @@ När du har anslutit till Exchange Online PowerShell är nästa steg att skapa, 
 Skriptet visar meddelanden om förloppet medan det körs. När skriptet har slutförts skapas loggfilen och CSV-filen som innehåller granskningsposterna. De sparas i de mappar som definieras av variablerna `$logFile` och `$outputFile`.
 
 > [!IMPORTANT]
-> Det finns en gräns på 50 000 för det maximala antalet granskningsposter som kan returneras varje gång du kör det här skriptet. Om du kör det här skriptet och det returnerar 50 000 resultat är det troligt att det finns granskningsposter för aktiviteter som inträffat inom datumintervallet som inte har tagits med. Om det här händer rekommenderar vi att du delar upp datumintervallet i kortare tidsperioder och sedan kör skriptet igen för varje datumintervall. Om till exempel ett datumintervall på 90 dagar returnerar 50 000 resultat kan du köra skriptet igen två gånger, en gång för de första 45 dagarna i datumintervallet och sedan en gång till för de följande 45 dagarna.
+> Det finns en gräns på 50 000 för det maximala antalet granskningsposter som kan returneras varje gång du kör det här skriptet. Om du kör det här skriptet och det returnerar 50 000 resultat är det troligt att det finns granskningsposter för aktiviteter som inträffat inom datumintervallet som inte har tagits med. Om det här händer rekommenderar vi att du delar upp datumintervallet i kortare tidsperioder och sedan kör skriptet igen för varje datumintervall. Om till exempel ett datumintervall på 90 dagar returnerar 50 000 resultat kan du köra skriptet igen två gånger, en gång för de första 45 dagarna i datumintervallet och sedan en gång till för de följande 45 dagarna.
 
 ## <a name="step-3-format-and-view-the-audit-records"></a>Steg 3: Formatera och visa granskningsposterna
 
